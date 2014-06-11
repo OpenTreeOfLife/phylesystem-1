@@ -15,16 +15,13 @@
 "^ot:agents": {
 "agent": [
 {
-"@description": "validator of NexSON constraints as well as constraints that would allow a study to be imported into the Open Tree of Life's phylogenetic synthesis tools", 
+"@description": "Open Tree NexSON validation", 
 "@id": "peyotl-validator", 
-"@name": "validate_ot_nexson.py", 
+"@name": "api.opentreeoflife.org/validate", 
 "@url": "https://github.com/OpenTreeOfLife/peyotl", 
 "@version": "0.0.4a", 
 "invocation": {
-"commandLine": [
-"--embed", 
-"--agent-only"
-], 
+"commandLine": [], 
 "otherProperty": [
 {
 "name": "pythonVersion", 
@@ -56,7 +53,10 @@
 "otus2885"
 ], 
 "^ot:studyId": "2885", 
-"^ot:studyPublicationReference": "Gu W., Li M., Xu Y., Wang T., Ko J., & Zhou T. 2014. The impact of RNA structure on coding sequence evolution in both bacteria and eukaryotes. BMC Evolutionary Biology, .", 
+"^ot:studyPublication": {
+"@href": "http://dx.doi.org/10.1186/1471-2148-14-87"
+}, 
+"^ot:studyPublicationReference": "Gu, W., M. Li, Y. Xu, T. Wang, J. Ko, and T. Zhou. 2014. The impact of RNA structure on coding sequence evolution in both bacteria and eukaryotes. BMC Evolutionary Biology 14: 87.", 
 "^ot:studyYear": 2014, 
 "^ot:tag": [], 
 "^ot:treesElementOrder": [
@@ -427,13 +427,15 @@
 "tree6690": {
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
-"^ot:branchLengthMode": "", 
+"^ot:branchLengthMode": "ot:substitutionCount", 
 "^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "tree 1", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1165456", 
 "^ot:specifiedRoot": "", 
-"^ot:tag": [], 
+"^ot:tag": [
+"Choose me"
+], 
 "edgeBySourceId": {
 "node1165456": {
 "edge1165457": {
