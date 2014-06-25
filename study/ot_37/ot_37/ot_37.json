@@ -66,13 +66,23 @@
 "substitutions": {
 "substitution": [
 {
-"@active": false, 
+"@active": true, 
 "@valid": true, 
 "new": {
 "$": ""
 }, 
 "old": {
-"$": ""
+"$": "\\b\\s+(\\w*)$"
+}
+}, 
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": "$1"
+}, 
+"old": {
+"$": ".*\\s+(\\w*)\\s*$"
 }
 }
 ]
@@ -101,7 +111,22 @@
 "data": {
 "@movedToPermanentArchive": false, 
 "files": {
-"file": []
+"file": [
+{
+"@filename": "<content provided as a string in a \"content\" rather than a file upload>", 
+"@size": "", 
+"@type": "newick", 
+"@url": "", 
+"description": {
+"$": ""
+}, 
+"sourceForTree": [
+{
+"$": "tree2"
+}
+]
+}
+]
 }
 }, 
 "refersTo": {
@@ -146,14 +171,291 @@
 }, 
 "otusById": {
 "otus1": {
-"otuById": {}
+"otuById": {
+"otu10": {
+"^ot:altLabel": "Albugo", 
+"^ot:originalLabel": "Albugo sp. ex Rorippa amphibia HQ377369"
+}, 
+"otu11": {
+"^ot:originalLabel": "Albugo sp. ex Rorippa palustris HQ377370"
+}, 
+"otu12": {
+"^ot:originalLabel": "Albugo sp. ex Barbarea vulgaris JQ277732"
+}, 
+"otu13": {
+"^ot:originalLabel": "Albugo sp. ex Barbarea vulgaris HQ377367"
+}, 
+"otu14": {
+"^ot:originalLabel": "Albugo sp. ex Barbarea vulgaris HQ377368"
+}, 
+"otu15": {
+"^ot:originalLabel": "Albugo sp. ex Alyssum caliacrae HQ377366"
+}, 
+"otu2": {
+"^ot:originalLabel": "A. candida ex Aribidopsis halleri DQ418502"
+}, 
+"otu3": {
+"^ot:originalLabel": "A. candida ex Sisymbrium leteum AY929844", 
+"^ot:ottId": 3970026, 
+"^ot:ottTaxonName": "Albuca candida"
+}, 
+"otu4": {
+"^ot:originalLabel": "A. candida ex Aubrietia deltoidea DQ418500"
+}, 
+"otu5": {
+"^ot:originalLabel": "A. candida ex Raphanus sativus AY929841"
+}, 
+"otu6": {
+"^ot:originalLabel": "A. candida ex Lunaria sp. DY929840"
+}, 
+"otu7": {
+"^ot:originalLabel": "A. candida ex Rapistrum rugosum GU292141"
+}, 
+"otu8": {
+"^ot:originalLabel": "Albugo sp. ex Armoracia rusticana HQ832468"
+}, 
+"otu9": {
+"^ot:altLabel": "Albugo sp. ", 
+"^ot:originalLabel": "Albugo sp. ex Rorippa palustris HQ377371"
+}
+}
 }
 }, 
 "treesById": {
 "trees1": {
 "@otus": "otus1", 
-"^ot:treeElementOrder": [], 
-"treeById": {}
+"^ot:treeElementOrder": [
+"tree2"
+], 
+"treeById": {
+"tree2": {
+"@label": "Untitled (tree2)", 
+"@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:messages": {
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@id": "messageu30efe404-cb0b-4c46-a71d-1663dbc7048d", 
+"@severity": "INFO", 
+"@wasGeneratedBy": "opentree.2nexml", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": [
+{
+"@filename": "<content provided as a string in a \"content\" rather than a file upload>", 
+"@size": 1034, 
+"@sourceForTree": "tree2", 
+"@type": "newick", 
+"@url": "/curator/default/to_nexson?output=input&uploadid=u30efe404-cb0b-4c46-a71d-1663dbc7048d", 
+"description": {
+"$": "Source data for tree 'tree2'"
+}
+}
+]
+}
+}
+}
+]
+}, 
+"^ot:outGroupEdge": "", 
+"^ot:rootNodeId": "node2", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
+"edgeBySourceId": {
+"node11": {
+"edge11": {
+"@length": 0.014266, 
+"@source": "node11", 
+"@target": "node12"
+}, 
+"edge12": {
+"@length": 0.006115, 
+"@source": "node11", 
+"@target": "node13"
+}
+}, 
+"node13": {
+"edge13": {
+"@length": 0.003808, 
+"@source": "node13", 
+"@target": "node14"
+}, 
+"edge19": {
+"@length": 0.007762, 
+"@source": "node13", 
+"@target": "node20"
+}
+}, 
+"node14": {
+"edge14": {
+"@length": 0.002381, 
+"@source": "node14", 
+"@target": "node15"
+}, 
+"edge15": {
+"@length": 0.005028, 
+"@source": "node14", 
+"@target": "node16"
+}
+}, 
+"node16": {
+"edge16": {
+"@length": 0.000963, 
+"@source": "node16", 
+"@target": "node17"
+}, 
+"edge17": {
+"@length": 0.000984, 
+"@source": "node16", 
+"@target": "node18"
+}, 
+"edge18": {
+"@length": 0.001432, 
+"@source": "node16", 
+"@target": "node19"
+}
+}, 
+"node2": {
+"edge2": {
+"@length": 0.117709, 
+"@source": "node2", 
+"@target": "node3"
+}, 
+"edge23": {
+"@length": 0.117709, 
+"@source": "node2", 
+"@target": "node24"
+}
+}, 
+"node20": {
+"edge20": {
+"@length": 0.001154, 
+"@source": "node20", 
+"@target": "node21"
+}, 
+"edge21": {
+"@length": 0.00098, 
+"@source": "node20", 
+"@target": "node22"
+}, 
+"edge22": {
+"@length": 0.000983, 
+"@source": "node20", 
+"@target": "node23"
+}
+}, 
+"node3": {
+"edge10": {
+"@length": 0.008846, 
+"@source": "node3", 
+"@target": "node11"
+}, 
+"edge3": {
+"@length": 0.009358, 
+"@source": "node3", 
+"@target": "node4"
+}
+}, 
+"node4": {
+"edge4": {
+"@length": 0.002691, 
+"@source": "node4", 
+"@target": "node5"
+}, 
+"edge7": {
+"@length": 0.000866, 
+"@source": "node4", 
+"@target": "node8"
+}, 
+"edge8": {
+"@length": 0.003236, 
+"@source": "node4", 
+"@target": "node9"
+}, 
+"edge9": {
+"@length": 0.019041, 
+"@source": "node4", 
+"@target": "node10"
+}
+}, 
+"node5": {
+"edge5": {
+"@length": 0.000856, 
+"@source": "node5", 
+"@target": "node6"
+}, 
+"edge6": {
+"@length": 0.002067, 
+"@source": "node5", 
+"@target": "node7"
+}
+}
+}, 
+"nodeById": {
+"node10": {
+"@otu": "otu6"
+}, 
+"node11": {}, 
+"node12": {
+"@otu": "otu7"
+}, 
+"node13": {}, 
+"node14": {}, 
+"node15": {
+"@otu": "otu8"
+}, 
+"node16": {}, 
+"node17": {
+"@otu": "otu9"
+}, 
+"node18": {
+"@otu": "otu10"
+}, 
+"node19": {
+"@otu": "otu11"
+}, 
+"node2": {
+"@root": true
+}, 
+"node20": {}, 
+"node21": {
+"@otu": "otu12"
+}, 
+"node22": {
+"@otu": "otu13"
+}, 
+"node23": {
+"@otu": "otu14"
+}, 
+"node24": {
+"@otu": "otu15"
+}, 
+"node3": {}, 
+"node4": {}, 
+"node5": {}, 
+"node6": {
+"@otu": "otu2"
+}, 
+"node7": {
+"@otu": "otu3"
+}, 
+"node8": {
+"@otu": "otu4"
+}, 
+"node9": {
+"@otu": "otu5"
+}
+}
+}
+}
 }
 }
 }
