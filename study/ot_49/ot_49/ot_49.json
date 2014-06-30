@@ -50,22 +50,129 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2014-06-30T01:46:12.521Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:curatorName": "Dail Laughinghouse", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}, 
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": "\\bsp(\\.|\\b)"
+}
+}, 
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": "\\b\\s+(\\w*)$"
+}
+}
+]
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2014-06-30T01:46:12.521Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Dail Laughinghouse"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S14082"
 }, 
+"^ot:focalClade": 775740, 
+"^ot:focalCladeOTTTaxonName": "Phytophthora", 
+"^ot:messages": {
+"message": []
+}, 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "Tls30471"
 ], 
 "^ot:studyId": "ot_49", 
-"^ot:studyPublicationReference": "Oh E.O., Gryzenhout M., Wingfield M.J., Wingfield B.D., & Burgess T.I. 2013. Surveys of soil and water reveal a goldmine of Phytophthora diversity in South African natural ecosystems. IMA Fungus, .", 
+"^ot:studyPublication": {
+"@href": "http://dx.doi.org/10.5598/imafungus.2013.04.01.12"
+}, 
+"^ot:studyPublicationReference": "Eunsung Oh, Marieka Gryzenhout, Brenda D. Wingfield, Michael J. Wingfield, Treena I. Burgess, 2013, 'Surveys of soil and water reveal a goldmine of <I>phytophthora</I> diversity in South African natural ecosystems', IMA Fungus, vol. 4, no. 1, pp. 123-131", 
 "^ot:studyYear": 2013, 
+"^ot:tag": [], 
 "^ot:taxonLinkPrefixes": {
 "@ubio": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:", 
 "@uniprot": "http://purl.uniprot.org/taxonomy/"
@@ -91,11 +198,13 @@
 "^skos:historyNote": "Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlOTUWriter@78e56da2 $Rev: 1040 $", 
 "otuById": {
 "Tl1073841": {
+"^ot:altLabel": "Phytophthora  emzansi ", 
 "^ot:originalLabel": "Phytophthora sp. emzansi STEU6269 GU191228"
 }, 
 "Tl1073842": {
-"^ot:altLabel": "Phytophthora cinnamomi", 
 "^ot:originalLabel": "Phytophthora cinnamomi CMW33384 HQ292650", 
+"^ot:ottId": 775735, 
+"^ot:ottTaxonName": "Phytophthora cinnamomi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22257, 
 "@tb:identifier.taxonVariant": 51792, 
@@ -111,6 +220,8 @@
 }, 
 "Tl1073845": {
 "^ot:originalLabel": "Phytophthora parsiana C25 AY659739-TYPE", 
+"^ot:ottId": 1084178, 
+"^ot:ottTaxonName": "Phytophthora parsiana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 480836, 
 "@tb:identifier.taxonVariant": 637050
@@ -118,20 +229,25 @@
 }, 
 "Tl1073846": {
 "^ot:originalLabel": "Phytophthora multivora CMW35217 KC855164", 
+"^ot:ottId": 648173, 
+"^ot:ottTaxonName": "Phytophthora multivora", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 516544, 
 "@tb:identifier.taxonVariant": 685198
 }
 }, 
 "Tl1073847": {
+"^ot:altLabel": "Phytophthora  zentmyerii ", 
 "^ot:originalLabel": "Phytophthora sp. zentmyerii P8618 EU164426"
 }, 
 "Tl1073848": {
+"^ot:altLabel": "Phytophthora  thermophilum", 
 "^ot:originalLabel": "Phytophthora sp. thermophilum EF680321"
 }, 
 "Tl1073849": {
-"^ot:altLabel": "Phytophthora gonapodyides", 
 "^ot:originalLabel": "Phytophthora gonapodyides CBS113346 HQ643236", 
+"^ot:ottId": 23193, 
+"^ot:ottTaxonName": "Phytophthora gonapodyides", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 617541, 
 "@tb:identifier.taxonVariant": 826600, 
@@ -140,11 +256,14 @@
 }
 }, 
 "Tl1073850": {
-"^ot:originalLabel": "Phytophthora amnicola VHS19503 KC855175"
+"^ot:originalLabel": "Phytophthora amnicola VHS19503 KC855175", 
+"^ot:ottId": 18110, 
+"^ot:ottTaxonName": "Phytophthora amnicola"
 }, 
 "Tl1073851": {
-"^ot:altLabel": "Phytophthora drechsleri", 
 "^ot:originalLabel": "Phytophthora drechsleri SCRP232 AY659442", 
+"^ot:ottId": 405025, 
+"^ot:ottTaxonName": "Phytophthora drechsleri", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22263, 
 "@tb:identifier.taxonVariant": 51805, 
@@ -163,11 +282,14 @@
 }
 }, 
 "Tl1073854": {
-"^ot:originalLabel": "Phytophthora lateralis ATCC MYA-3898 FJ196746"
+"^ot:originalLabel": "Phytophthora lateralis ATCC MYA-3898 FJ196746", 
+"^ot:ottId": 88499, 
+"^ot:ottTaxonName": "Phytophthora lateralis"
 }, 
 "Tl1073855": {
-"^ot:altLabel": "Phytophthora captiosa", 
 "^ot:originalLabel": "Phytophthora captiosa NZFS310.35 DQ297405", 
+"^ot:ottId": 505188, 
+"^ot:ottTaxonName": "Phytophthora captiosa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 315358, 
 "@tb:identifier.taxonVariant": 360637, 
@@ -179,11 +301,14 @@
 "^ot:originalLabel": "Phytophthora sp. xHennops CMW35283 KC855183"
 }, 
 "Tl1073857": {
-"^ot:originalLabel": "Phytophthora frigida CMW19433 DQ988179"
+"^ot:originalLabel": "Phytophthora frigida CMW19433 DQ988179", 
+"^ot:ottId": 291839, 
+"^ot:ottTaxonName": "Phytophthora frigida"
 }, 
 "Tl1073858": {
-"^ot:altLabel": "Phytophthora cryptogea", 
 "^ot:originalLabel": "Phytophthora cryptogea CMW35262 KC855180", 
+"^ot:ottId": 775732, 
+"^ot:ottTaxonName": "Phytophthora cryptogea", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22262, 
 "@tb:identifier.taxonVariant": 51803, 
@@ -205,14 +330,19 @@
 }
 }, 
 "Tl1073862": {
-"^ot:originalLabel": "Phytophthora fluvialis CBS129424 JF701436"
+"^ot:originalLabel": "Phytophthora fluvialis CBS129424 JF701436", 
+"^ot:ottId": 692904, 
+"^ot:ottTaxonName": "Phytophthora fluvialis"
 }, 
 "Tl1073863": {
-"^ot:originalLabel": "Phytophthora amnicola VHS19503 JQ029958"
+"^ot:originalLabel": "Phytophthora amnicola VHS19503 JQ029958", 
+"^ot:ottId": 18110, 
+"^ot:ottTaxonName": "Phytophthora amnicola"
 }, 
 "Tl1073864": {
-"^ot:altLabel": "Phytophthora cryptogea", 
 "^ot:originalLabel": "Phytophthora cryptogea IMI045168 AF266796", 
+"^ot:ottId": 775732, 
+"^ot:ottTaxonName": "Phytophthora cryptogea", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22262, 
 "@tb:identifier.taxonVariant": 51803, 
@@ -227,7 +357,9 @@
 "^ot:originalLabel": "Phytophthora cinnamomi var parvispora CBS41196 HQ643200"
 }, 
 "Tl1073867": {
-"^ot:originalLabel": "Phytophthora lacustris HSA1959 HQ012956"
+"^ot:originalLabel": "Phytophthora lacustris HSA1959 HQ012956", 
+"^ot:ottId": 626100, 
+"^ot:ottTaxonName": "Phytophthora lacustris"
 }, 
 "Tl1073868": {
 "^ot:originalLabel": "Phytophthora sp. Umtamvuna CMW35233 KC855181"
@@ -236,6 +368,7 @@
 "^ot:originalLabel": "Phytophthora sp. emzansi CMW35265 KC855169"
 }, 
 "Tl1073870": {
+"^ot:altLabel": "Phytophthora aquimorbida ", 
 "^ot:originalLabel": "Phytophthora aquimorbida 40A6 FJ666127-TYPE", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 518926, 
@@ -243,8 +376,9 @@
 }
 }, 
 "Tl1073871": {
-"^ot:altLabel": "Phytophthora cambivora", 
 "^ot:originalLabel": "Phytophthora cambivora PO592 GU259073", 
+"^ot:ottId": 152479, 
+"^ot:ottTaxonName": "Phytophthora cambivora", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22255, 
 "@tb:identifier.taxonVariant": 51789, 
@@ -253,8 +387,9 @@
 }
 }, 
 "Tl1073872": {
-"^ot:altLabel": "Phytophthora insolita", 
 "^ot:originalLabel": "Phytophthora insolita P6195 HQ261591", 
+"^ot:ottId": 1070126, 
+"^ot:ottTaxonName": "Phytophthora insolita", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22277, 
 "@tb:identifier.taxonVariant": 51837, 
@@ -263,8 +398,9 @@
 }
 }, 
 "Tl1073873": {
-"^ot:altLabel": "Phytophthora polonica", 
 "^ot:originalLabel": "Phytophthora polonica UASWS0198 DQ396410", 
+"^ot:ottId": 212631, 
+"^ot:ottTaxonName": "Phytophthora polonica", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 326716, 
 "@tb:identifier.taxonVariant": 368260, 
@@ -273,10 +409,14 @@
 }
 }, 
 "Tl1073874": {
-"^ot:originalLabel": "Phytophthora capensis CMW35268 KC855166"
+"^ot:originalLabel": "Phytophthora capensis CMW35268 KC855166", 
+"^ot:ottId": 917834, 
+"^ot:ottTaxonName": "Phytophthora capensis"
 }, 
 "Tl1073875": {
-"^ot:originalLabel": "Phytophthora elongata CBS125799 EU121961"
+"^ot:originalLabel": "Phytophthora elongata CBS125799 EU121961", 
+"^ot:ottId": 569798, 
+"^ot:ottTaxonName": "Phytophthora elongata"
 }, 
 "Tl1073876": {
 "^ot:originalLabel": "Phytophthora sp. xWS CMW35291 KC855176"
@@ -285,14 +425,18 @@
 "^ot:originalLabel": "Phytophthora litoralis CBS127953 HQ012948"
 }, 
 "Tl1073878": {
+"^ot:altLabel": "Phytophthora  canthium ", 
 "^ot:originalLabel": "Phytophthora sp. canthium CMW35236 KC855189"
 }, 
 "Tl1073879": {
-"^ot:originalLabel": "Phytophthora capensis CMW35225 KC855167"
+"^ot:originalLabel": "Phytophthora capensis CMW35225 KC855167", 
+"^ot:ottId": 917834, 
+"^ot:ottTaxonName": "Phytophthora capensis"
 }, 
 "Tl1073880": {
-"^ot:altLabel": "Phytophthora cinnamomi", 
 "^ot:originalLabel": "Phytophthora cinnamomi CMW33385 HQ292660", 
+"^ot:ottId": 775735, 
+"^ot:ottTaxonName": "Phytophthora cinnamomi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22257, 
 "@tb:identifier.taxonVariant": 51792, 
@@ -304,8 +448,9 @@
 "^ot:originalLabel": "Phytophthora sp. PgChlamydo CMW35278 KC855174"
 }, 
 "Tl1073882": {
-"^ot:altLabel": "Phytophthora richardiae", 
 "^ot:originalLabel": "Phytophthora richardiae RICH-P6875 AB367499", 
+"^ot:ottId": 1070127, 
+"^ot:ottTaxonName": "Phytophthora richardiae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22301, 
 "@tb:identifier.taxonVariant": 51883, 
@@ -314,8 +459,9 @@
 }
 }, 
 "Tl1073883": {
-"^ot:altLabel": "Phytophthora pini", 
 "^ot:originalLabel": "Phytophthora pini US10 FJ665235", 
+"^ot:ottId": 1054670, 
+"^ot:ottTaxonName": "Phytophthora pini", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 541519, 
 "@tb:identifier.taxonVariant": 718081, 
@@ -324,8 +470,9 @@
 }
 }, 
 "Tl1073884": {
-"^ot:altLabel": "Phytophthora citricola", 
 "^ot:originalLabel": "Phytophthora citricola CBS221.88 FJ237526", 
+"^ot:ottId": 152480, 
+"^ot:ottTaxonName": "Phytophthora citricola", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 617544, 
 "@tb:identifier.taxonVariant": 826784, 
@@ -334,8 +481,9 @@
 }
 }, 
 "Tl1073885": {
-"^ot:altLabel": "Phytophthora gallica", 
 "^ot:originalLabel": "Phytophthora gallica P16826 GU983636", 
+"^ot:ottId": 261630, 
+"^ot:ottTaxonName": "Phytophthora gallica", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 314390, 
 "@tb:identifier.taxonVariant": 359843, 
@@ -351,6 +499,8 @@
 }, 
 "Tl1073888": {
 "^ot:originalLabel": "Phytophthora morindae Ph701-P07.05 GQ166766", 
+"^ot:ottId": 391819, 
+"^ot:ottTaxonName": "Phytophthora morindae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 507571, 
 "@tb:identifier.taxonVariant": 672487
@@ -370,8 +520,9 @@
 }
 }, 
 "Tl1073892": {
-"^ot:altLabel": "Phytophthora cinnamomi", 
 "^ot:originalLabel": "Phytophthora cinnamomi P2129 AY302164", 
+"^ot:ottId": 775735, 
+"^ot:ottTaxonName": "Phytophthora cinnamomi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22257, 
 "@tb:identifier.taxonVariant": 51792, 
@@ -396,8 +547,9 @@
 "^ot:originalLabel": "Phytophthora sp. stellaris CMW35289 KC855185"
 }, 
 "Tl1073897": {
-"^ot:altLabel": "Phytophthora boehmeriae", 
 "^ot:originalLabel": "Phytophthora boehmeriae SCRP23 DQ297406", 
+"^ot:ottId": 189661, 
+"^ot:ottTaxonName": "Phytophthora boehmeriae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22250, 
 "@tb:identifier.taxonVariant": 51779, 
@@ -406,8 +558,9 @@
 }
 }, 
 "Tl1073898": {
-"^ot:altLabel": "Phytophthora macrochlamydospora", 
 "^ot:originalLabel": "Phytophthora macrochlamydospora PNG1 KC855188", 
+"^ot:ottId": 740154, 
+"^ot:ottTaxonName": "Phytophthora macrochlamydospora", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22282, 
 "@tb:identifier.taxonVariant": 51847, 
@@ -422,8 +575,9 @@
 "^ot:originalLabel": "Phytophthora sp. PgChlamydo CMW35276 KC855172"
 }, 
 "Tl1073901": {
-"^ot:altLabel": "Phytophthora kernoviae", 
 "^ot:originalLabel": "Phytophthora kernoviae P10958 FJ801530", 
+"^ot:ottId": 22095, 
+"^ot:ottTaxonName": "Phytophthora kernoviae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 285580, 
 "@tb:identifier.taxonVariant": 338209, 
@@ -438,7 +592,9 @@
 "^ot:originalLabel": "Phytophthora capensis CMW35271 KC855168"
 }, 
 "Tl1073904": {
-"^ot:originalLabel": "Phytophthora constricta CBS125801 HQ013225"
+"^ot:originalLabel": "Phytophthora constricta CBS125801 HQ013225", 
+"^ot:ottId": 22496, 
+"^ot:ottTaxonName": "Phytophthora constricta"
 }, 
 "Tl1073905": {
 "^ot:originalLabel": "Phytophthora sp. Kunnunara EF437222"
@@ -447,8 +603,9 @@
 "^ot:originalLabel": "Phytophthora hydropathica ATCC MYA-4461 FJ196761"
 }, 
 "Tl1073907": {
-"^ot:altLabel": "Phytophthora megasperma", 
 "^ot:originalLabel": "Phytophthora megasperma DDS3432 HQ012949", 
+"^ot:ottId": 775722, 
+"^ot:ottTaxonName": "Phytophthora megasperma", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22285, 
 "@tb:identifier.taxonVariant": 51853, 
@@ -458,6 +615,8 @@
 }, 
 "Tl1073908": {
 "^ot:originalLabel": "Phytophthora lagoariana P8223 EF590256", 
+"^ot:ottId": 864861, 
+"^ot:ottTaxonName": "Phytophthora lagoariana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 384604, 
 "@tb:identifier.taxonVariant": 526367
@@ -471,6 +630,7 @@
 }
 }, 
 "Tl1073910": {
+"^ot:altLabel": "Phytophthora  emzansi ", 
 "^ot:originalLabel": "Phytophthora sp. emzansi CMW35264 KC855171"
 }, 
 "Tl1073911": {
@@ -495,7 +655,9 @@
 "^ot:originalLabel": "Phytophthora fluvialis CBS129424 JF701441"
 }, 
 "Tl1073947": {
-"^ot:originalLabel": "Phytophthora bilorbang CBS161653 JQ256375"
+"^ot:originalLabel": "Phytophthora bilorbang CBS161653 JQ256375", 
+"^ot:ottId": 798197, 
+"^ot:ottTaxonName": "Phytophthora bilorbang"
 }, 
 "Tl1073948": {
 "^ot:originalLabel": "Phytophthora fluvialis VHS17350 JF701440"
@@ -591,11 +753,13 @@
 "^ot:originalLabel": "Phytophthora sp. xhennops CMW33364 GU799664"
 }, 
 "Tl1073979": {
+"^ot:altLabel": "Phytophthora  canthium ", 
 "^ot:originalLabel": "Phytophthora sp. canthium CMW35236 KC855134"
 }, 
 "Tl1073980": {
-"^ot:altLabel": "Phytophthora macrochlamydospora", 
 "^ot:originalLabel": "Phytophthora macrochlamydospora PNG1 KC855135", 
+"^ot:ottId": 740154, 
+"^ot:ottTaxonName": "Phytophthora macrochlamydospora", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22282, 
 "@tb:identifier.taxonVariant": 51847, 
@@ -607,8 +771,9 @@
 "^ot:originalLabel": "Phytophthora sp. xhennops CMW35284 KC855144"
 }, 
 "Tl1073982": {
-"^ot:altLabel": "Phytophthora insolita", 
 "^ot:originalLabel": "Phytophthora insolita HQ261337", 
+"^ot:ottId": 1070126, 
+"^ot:ottTaxonName": "Phytophthora insolita", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22277, 
 "@tb:identifier.taxonVariant": 51837, 
@@ -627,10 +792,14 @@
 "^ot:originalLabel": "Phytophthora sp. kununurra CMW33379 HQ292671"
 }, 
 "Tl1073985": {
-"^ot:originalLabel": "Phytophthora richardiae CBS 240.30 AY564201\t"
+"^ot:originalLabel": "Phytophthora richardiae CBS 240.30 AY564201\t", 
+"^ot:ottId": 1070127, 
+"^ot:ottTaxonName": "Phytophthora richardiae"
 }, 
 "Tl1073986": {
 "^ot:originalLabel": "Phytophthora parsiana HQ261386", 
+"^ot:ottId": 1084178, 
+"^ot:ottTaxonName": "Phytophthora parsiana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 480836, 
 "@tb:identifier.taxonVariant": 637050
@@ -640,8 +809,9 @@
 "^ot:originalLabel": "Phytophthora sp. xhennops CMW35232 KC855149"
 }, 
 "Tl1073988": {
-"^ot:altLabel": "Phytophthora captiosa", 
 "^ot:originalLabel": "Phytophthora captiosa CBS119107 KC855140", 
+"^ot:ottId": 505188, 
+"^ot:ottTaxonName": "Phytophthora captiosa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 315358, 
 "@tb:identifier.taxonVariant": 360637, 
@@ -650,11 +820,14 @@
 }
 }, 
 "Tl1073989": {
-"^ot:originalLabel": "Phytophthora constricta CBS125801"
+"^ot:originalLabel": "Phytophthora constricta CBS125801", 
+"^ot:ottId": 22496, 
+"^ot:ottTaxonName": "Phytophthora constricta"
 }, 
 "Tl1073990": {
-"^ot:altLabel": "Phytophthora insolita", 
 "^ot:originalLabel": "Phytophthora insolita IMI288805 AY564188", 
+"^ot:ottId": 1070126, 
+"^ot:ottTaxonName": "Phytophthora insolita", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22277, 
 "@tb:identifier.taxonVariant": 51837, 
@@ -663,8 +836,9 @@
 }
 }, 
 "Tl1073991": {
-"^ot:altLabel": "Phytophthora boehmeriae", 
 "^ot:originalLabel": "Phytophthora boehmeriae CBS291.29 AY564165 ", 
+"^ot:ottId": 189661, 
+"^ot:ottTaxonName": "Phytophthora boehmeriae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22250, 
 "@tb:identifier.taxonVariant": 51779, 
@@ -698,6 +872,7 @@
 }
 }, 
 "Tl1073999": {
+"^ot:altLabel": "Phytophthora aquimorbida ", 
 "^ot:originalLabel": "Phytophthora aquimorbida 40A6 KC855136", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 518926, 
@@ -708,8 +883,9 @@
 "^ot:originalLabel": "Phytophthora sp. stellaris CMW33376 GU799670"
 }, 
 "Tl1074001": {
-"^ot:altLabel": "Phytophthora quininea", 
 "^ot:originalLabel": "Phytophthora quininea CBS407.48 AY564200                   \t\t\t", 
+"^ot:ottId": 715674, 
+"^ot:ottTaxonName": "Phytophthora quininea", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 133174, 
 "@tb:identifier.taxonVariant": 210099, 
@@ -719,13 +895,17 @@
 }, 
 "Tl1074002": {
 "^ot:originalLabel": "Phytophthora parsiana Rf6 AY659760", 
+"^ot:ottId": 1084178, 
+"^ot:ottTaxonName": "Phytophthora parsiana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 480836, 
 "@tb:identifier.taxonVariant": 637050
 }
 }, 
 "Tl1074003": {
-"^ot:originalLabel": "Phytophthora hydropathica NDAR-F KC855139"
+"^ot:originalLabel": "Phytophthora hydropathica NDAR-F KC855139", 
+"^ot:ottId": 342767, 
+"^ot:ottTaxonName": "Phytophthora hydropathica"
 }, 
 "Tl1074004": {
 "^ot:originalLabel": "Phytophthora sp. xhennops CMW35286 KC855146"
@@ -734,9 +914,11 @@
 "^ot:originalLabel": "Phytophthora sp. xhennops CMW35230 KC855147"
 }, 
 "Tl1074006": {
+"^ot:altLabel": "Phytophthora  xhennops", 
 "^ot:originalLabel": "Phytophthora sp. xhennops CMW35231 KC855148"
 }, 
 "Tl1074007": {
+"^ot:altLabel": "Phytophthora  stellaris ", 
 "^ot:originalLabel": "Phytophthora sp. stellaris CMW33377 GU799671"
 }, 
 "Tl1074008": {
@@ -760,7 +942,16 @@
 "Tr62527": {
 "@label": "Fig. 1", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "Tn9996163", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 73, 
 "^tb:quality.tree": "Unrated", 
@@ -1723,7 +1914,16 @@
 "Tr62528": {
 "@label": "Fig. 1", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "Tn9996266", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 73, 
 "^tb:quality.tree": "Unrated", 
@@ -1731,31 +1931,31 @@
 "edgeBySourceId": {
 "Tn9996179": {
 "edge39916": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "Tn9996179", 
 "@target": "Tn9996278"
 }, 
 "edge39918": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "Tn9996179", 
 "@target": "Tn9996236"
 }
 }, 
 "Tn9996180": {
 "edge40054": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "Tn9996180", 
 "@target": "Tn9996182"
 }, 
 "edge40072": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "Tn9996180", 
 "@target": "Tn9996194"
 }
 }, 
 "Tn9996182": {
 "edge40056": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "Tn9996182", 
 "@target": "Tn9996208"
 }, 
@@ -1767,7 +1967,7 @@
 }, 
 "Tn9996189": {
 "edge39922": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "Tn9996189", 
 "@target": "Tn9996201"
 }, 
@@ -1791,19 +1991,19 @@
 }, 
 "Tn9996191": {
 "edge40062": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "Tn9996191", 
 "@target": "Tn9996229"
 }, 
 "edge40064": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "Tn9996191", 
 "@target": "Tn9996216"
 }
 }, 
 "Tn9996192": {
 "edge39906": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "Tn9996192", 
 "@target": "Tn9996301"
 }, 
@@ -1815,65 +2015,65 @@
 }, 
 "Tn9996197": {
 "edge40102": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "Tn9996197", 
 "@target": "Tn9996183"
 }, 
 "edge40104": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "Tn9996197", 
 "@target": "Tn9996273"
 }, 
 "edge40106": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "Tn9996197", 
 "@target": "Tn9996200"
 }
 }, 
 "Tn9996204": {
 "edge39900": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "Tn9996204", 
 "@target": "Tn9996258"
 }, 
 "edge40052": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "Tn9996204", 
 "@target": "Tn9996180"
 }
 }, 
 "Tn9996206": {
 "edge39996": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "Tn9996206", 
 "@target": "Tn9996198"
 }, 
 "edge39998": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "Tn9996206", 
 "@target": "Tn9996223"
 }
 }, 
 "Tn9996207": {
 "edge40110": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "Tn9996207", 
 "@target": "Tn9996269"
 }, 
 "edge40112": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "Tn9996207", 
 "@target": "Tn9996305"
 }, 
 "edge40114": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "Tn9996207", 
 "@target": "Tn9996271"
 }
 }, 
 "Tn9996209": {
 "edge40142": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "Tn9996209", 
 "@target": "Tn9996184"
 }, 
@@ -1885,7 +2085,7 @@
 }, 
 "Tn9996210": {
 "edge40126": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "Tn9996210", 
 "@target": "Tn9996253"
 }, 
@@ -1897,12 +2097,12 @@
 }, 
 "Tn9996213": {
 "edge39980": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "Tn9996213", 
 "@target": "Tn9996228"
 }, 
 "edge39982": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "Tn9996213", 
 "@target": "Tn9996288"
 }, 
@@ -1919,7 +2119,7 @@
 }, 
 "Tn9996217": {
 "edge39912": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "Tn9996217", 
 "@target": "Tn9996292"
 }, 
@@ -1931,12 +2131,12 @@
 }, 
 "Tn9996224": {
 "edge40150": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "Tn9996224", 
 "@target": "Tn9996219"
 }, 
 "edge40152": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "Tn9996224", 
 "@target": "Tn9996188"
 }
@@ -1948,7 +2148,7 @@
 "@target": "Tn9996235"
 }, 
 "edge40098": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "Tn9996225", 
 "@target": "Tn9996248"
 }, 
@@ -1972,19 +2172,19 @@
 }, 
 "Tn9996231": {
 "edge40046": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "Tn9996231", 
 "@target": "Tn9996295"
 }, 
 "edge40048": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "Tn9996231", 
 "@target": "Tn9996297"
 }
 }, 
 "Tn9996233": {
 "edge40018": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "Tn9996233", 
 "@target": "Tn9996306"
 }, 
@@ -2013,31 +2213,31 @@
 "@target": "Tn9996192"
 }, 
 "edge39968": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "Tn9996237", 
 "@target": "Tn9996243"
 }
 }, 
 "Tn9996239": {
 "edge39936": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "Tn9996239", 
 "@target": "Tn9996199"
 }, 
 "edge39938": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "Tn9996239", 
 "@target": "Tn9996234"
 }
 }, 
 "Tn9996241": {
 "edge39960": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "Tn9996241", 
 "@target": "Tn9996275"
 }, 
 "edge39962": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "Tn9996241", 
 "@target": "Tn9996211"
 }
@@ -2049,12 +2249,12 @@
 "@target": "Tn9996239"
 }, 
 "edge39940": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "Tn9996242", 
 "@target": "Tn9996289"
 }, 
 "edge39942": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "Tn9996242", 
 "@target": "Tn9996221"
 }, 
@@ -2071,14 +2271,14 @@
 "@target": "Tn9996230"
 }, 
 "edge40014": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "Tn9996243", 
 "@target": "Tn9996256"
 }
 }, 
 "Tn9996244": {
 "edge39992": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "Tn9996244", 
 "@target": "Tn9996212"
 }, 
@@ -2088,19 +2288,19 @@
 "@target": "Tn9996206"
 }, 
 "edge40000": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "Tn9996244", 
 "@target": "Tn9996232"
 }
 }, 
 "Tn9996250": {
 "edge39974": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "Tn9996250", 
 "@target": "Tn9996282"
 }, 
 "edge39976": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "Tn9996250", 
 "@target": "Tn9996195"
 }, 
@@ -2112,51 +2312,51 @@
 }, 
 "Tn9996251": {
 "edge39926": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "Tn9996251", 
 "@target": "Tn9996177"
 }, 
 "edge39928": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "Tn9996251", 
 "@target": "Tn9996202"
 }, 
 "edge39930": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "Tn9996251", 
 "@target": "Tn9996286"
 }
 }, 
 "Tn9996252": {
 "edge39946": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "Tn9996252", 
 "@target": "Tn9996279"
 }, 
 "edge39948": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "Tn9996252", 
 "@target": "Tn9996257"
 }, 
 "edge39950": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "Tn9996252", 
 "@target": "Tn9996296"
 }, 
 "edge39952": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "Tn9996252", 
 "@target": "Tn9996261"
 }
 }, 
 "Tn9996253": {
 "edge40128": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "Tn9996253", 
 "@target": "Tn9996240"
 }, 
 "edge40130": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "Tn9996253", 
 "@target": "Tn9996227"
 }
@@ -2175,12 +2375,12 @@
 }, 
 "Tn9996255": {
 "edge39986": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "Tn9996255", 
 "@target": "Tn9996178"
 }, 
 "edge39988": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "Tn9996255", 
 "@target": "Tn9996284"
 }
@@ -2199,19 +2399,19 @@
 }, 
 "Tn9996259": {
 "edge40032": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "Tn9996259", 
 "@target": "Tn9996214"
 }, 
 "edge40034": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "Tn9996259", 
 "@target": "Tn9996264"
 }
 }, 
 "Tn9996262": {
 "edge40146": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "Tn9996262", 
 "@target": "Tn9996181"
 }, 
@@ -2221,7 +2421,7 @@
 "@target": "Tn9996224"
 }, 
 "edge40154": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "Tn9996262", 
 "@target": "Tn9996291"
 }
@@ -2233,19 +2433,19 @@
 "@target": "Tn9996241"
 }, 
 "edge39964": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "Tn9996263", 
 "@target": "Tn9996247"
 }
 }, 
 "Tn9996265": {
 "edge40134": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "Tn9996265", 
 "@target": "Tn9996304"
 }, 
 "edge40140": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "Tn9996265", 
 "@target": "Tn9996209"
 }
@@ -2257,7 +2457,7 @@
 "@target": "Tn9996204"
 }, 
 "edge40074": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn9996266", 
 "@target": "Tn9996281"
 }
@@ -2276,36 +2476,36 @@
 }, 
 "Tn9996268": {
 "edge40078": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "Tn9996268", 
 "@target": "Tn9996294"
 }, 
 "edge40122": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "Tn9996268", 
 "@target": "Tn9996249"
 }
 }, 
 "Tn9996272": {
 "edge40118": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "Tn9996272", 
 "@target": "Tn9996270"
 }, 
 "edge40120": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "Tn9996272", 
 "@target": "Tn9996280"
 }
 }, 
 "Tn9996274": {
 "edge39956": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "Tn9996274", 
 "@target": "Tn9996263"
 }, 
 "edge39966": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "Tn9996274", 
 "@target": "Tn9996222"
 }
@@ -2317,14 +2517,14 @@
 "@target": "Tn9996300"
 }, 
 "edge40030": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "Tn9996276", 
 "@target": "Tn9996259"
 }
 }, 
 "Tn9996277": {
 "edge40004": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "Tn9996277", 
 "@target": "Tn9996245"
 }, 
@@ -2334,7 +2534,7 @@
 "@target": "Tn9996283"
 }, 
 "edge40012": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "Tn9996277", 
 "@target": "Tn9996238"
 }
@@ -2353,24 +2553,24 @@
 }, 
 "Tn9996283": {
 "edge40008": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "Tn9996283", 
 "@target": "Tn9996187"
 }, 
 "edge40010": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "Tn9996283", 
 "@target": "Tn9996220"
 }
 }, 
 "Tn9996285": {
 "edge40068": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "Tn9996285", 
 "@target": "Tn9996185"
 }, 
 "edge40070": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "Tn9996285", 
 "@target": "Tn9996226"
 }
@@ -2382,19 +2582,19 @@
 "@target": "Tn9996231"
 }, 
 "edge40050": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "Tn9996287", 
 "@target": "Tn9996186"
 }
 }, 
 "Tn9996290": {
 "edge40040": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "Tn9996290", 
 "@target": "Tn9996303"
 }, 
 "edge40042": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "Tn9996290", 
 "@target": "Tn9996287"
 }
@@ -2406,36 +2606,36 @@
 "@target": "Tn9996267"
 }, 
 "edge40116": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "Tn9996294", 
 "@target": "Tn9996272"
 }
 }, 
 "Tn9996298": {
 "edge40094": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "Tn9996298", 
 "@target": "Tn9996203"
 }, 
 "edge40096": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "Tn9996298", 
 "@target": "Tn9996196"
 }
 }, 
 "Tn9996300": {
 "edge40024": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "Tn9996300", 
 "@target": "Tn9996215"
 }, 
 "edge40026": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "Tn9996300", 
 "@target": "Tn9996218"
 }, 
 "edge40028": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "Tn9996300", 
 "@target": "Tn9996260"
 }
@@ -2454,24 +2654,24 @@
 }, 
 "Tn9996302": {
 "edge40088": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "Tn9996302", 
 "@target": "Tn9996193"
 }, 
 "edge40090": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "Tn9996302", 
 "@target": "Tn9996293"
 }
 }, 
 "Tn9996304": {
 "edge40136": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "Tn9996304", 
 "@target": "Tn9996246"
 }, 
 "edge40138": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "Tn9996304", 
 "@target": "Tn9996299"
 }
@@ -2483,7 +2683,7 @@
 "@target": "Tn9996276"
 }, 
 "edge40036": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "Tn9996306", 
 "@target": "Tn9996205"
 }
@@ -2773,7 +2973,16 @@
 "Tr62529": {
 "@label": "Fig. 2a", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "Tn9996348", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 29, 
 "^tb:quality.tree": "Unrated", 
@@ -3141,7 +3350,16 @@
 "Tr62530": {
 "@label": "Fig. 2b", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "Tn9996408", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 37, 
 "^tb:quality.tree": "Unrated", 
