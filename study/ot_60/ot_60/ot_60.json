@@ -45,22 +45,119 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2014-07-01T02:32:21.775Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:curatorName": "Dail Laughinghouse", 
+"substitutions": {
+"substitution": [
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": "\\b\\s+(\\w*)$"
+}
+}, 
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": "GI"
+}
+}
+]
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2014-07-01T02:32:21.775Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Dail Laughinghouse"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S14979"
 }, 
+"^ot:focalClade": 691846, 
+"^ot:focalCladeOTTTaxonName": "Metazoa", 
+"^ot:messages": {
+"message": []
+}, 
+"^ot:notIntendedForSynthesis": true, 
 "^ot:otusElementOrder": [
 "Tls36073"
 ], 
 "^ot:studyId": "ot_60", 
-"^ot:studyPublicationReference": "Cao L. 2014. Phylogenetic analysis of CDK and cyclin proteins in premetazoan lineages. BMC Evolutionary Biology, 14: 10.", 
+"^ot:studyPublication": {
+"@href": "http://dx.doi.org/10.1186/1471-2148-14-10"
+}, 
+"^ot:studyPublicationReference": "Lihuan Cao, Fang Chen, Xianmei Yang, Weijin Xu, Jun Xie, Long Yu, 2014, 'Phylogenetic analysis of CDK and cyclin proteins in premetazoan lineages', BMC Evolutionary Biology, vol. 14, no. 1, p. 10", 
 "^ot:studyYear": 2014, 
+"^ot:tag": [], 
 "^ot:taxonLinkPrefixes": {
 "@ubio": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:", 
 "@uniprot": "http://purl.uniprot.org/taxonomy/"
@@ -87,8 +184,9 @@
 "^skos:historyNote": "Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlOTUWriter@659f993e $Rev: 1040 $", 
 "otuById": {
 "Tl1410948": {
-"^ot:altLabel": "Homo sapiens", 
 "^ot:originalLabel": "Homo sapiens CDK4", 
+"^ot:ottId": 770315, 
+"^ot:ottTaxonName": "Homo sapiens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 13680, 
 "@tb:identifier.taxonVariant": 32274, 
@@ -97,8 +195,9 @@
 }
 }, 
 "Tl1410949": {
-"^ot:altLabel": "Monosiga brevicollis", 
 "^ot:originalLabel": "Monosiga brevicollis GI 167525607", 
+"^ot:ottId": 281703, 
+"^ot:ottTaxonName": "Monosiga brevicollis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 18059, 
 "@tb:identifier.taxonVariant": 42258, 
@@ -108,14 +207,17 @@
 }, 
 "Tl1410950": {
 "^ot:originalLabel": "Homo sapiens MAK", 
+"^ot:ottId": 770315, 
+"^ot:ottTaxonName": "Homo sapiens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 13680, 
 "@tb:identifier.taxonVariant": 834226
 }
 }, 
 "Tl1410951": {
-"^ot:altLabel": "Homo sapiens", 
 "^ot:originalLabel": "Homo sapiens CDK10", 
+"^ot:ottId": 770315, 
+"^ot:ottTaxonName": "Homo sapiens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 13680, 
 "@tb:identifier.taxonVariant": 32274, 
@@ -124,14 +226,18 @@
 }
 }, 
 "Tl1410952": {
-"^ot:originalLabel": "Amphimedon queenslandica GI 340379293"
+"^ot:originalLabel": "Amphimedon queenslandica GI 340379293", 
+"^ot:ottId": 707499, 
+"^ot:ottTaxonName": "Amphimedon queenslandica"
 }, 
 "Tl1410953": {
+"^ot:altLabel": "Salpingoeca ", 
 "^ot:originalLabel": "Salpingoeca rosetta GI 326434528"
 }, 
 "Tl1410954": {
-"^ot:altLabel": "Monosiga brevicollis", 
 "^ot:originalLabel": "Monosiga brevicollis GI 167525918", 
+"^ot:ottId": 281703, 
+"^ot:ottTaxonName": "Monosiga brevicollis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 18059, 
 "@tb:identifier.taxonVariant": 42258, 
@@ -140,8 +246,9 @@
 }
 }, 
 "Tl1410955": {
-"^ot:altLabel": "Homo sapiens", 
 "^ot:originalLabel": "Homo sapiens CDK15", 
+"^ot:ottId": 770315, 
+"^ot:ottTaxonName": "Homo sapiens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 13680, 
 "@tb:identifier.taxonVariant": 32274, 
@@ -153,8 +260,9 @@
 "^ot:originalLabel": "Salpingoeca rosetta GI 326436992"
 }, 
 "Tl1410957": {
-"^ot:altLabel": "Homo sapiens", 
 "^ot:originalLabel": "Homo sapiens CDK12", 
+"^ot:ottId": 770315, 
+"^ot:ottTaxonName": "Homo sapiens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 13680, 
 "@tb:identifier.taxonVariant": 32274, 
@@ -163,8 +271,9 @@
 }
 }, 
 "Tl1410958": {
-"^ot:altLabel": "Amphimedon queenslandica", 
 "^ot:originalLabel": "Amphimedon queenslandica GI 340369066", 
+"^ot:ottId": 707499, 
+"^ot:ottTaxonName": "Amphimedon queenslandica", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 349113, 
 "@tb:identifier.taxonVariant": 382624, 
@@ -176,8 +285,9 @@
 "^ot:originalLabel": "Thecamonas adhaerens GI 196003954"
 }, 
 "Tl1410960": {
-"^ot:altLabel": "Homo sapiens", 
 "^ot:originalLabel": "Homo sapiens CDK9", 
+"^ot:ottId": 770315, 
+"^ot:ottTaxonName": "Homo sapiens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 13680, 
 "@tb:identifier.taxonVariant": 32274, 
@@ -192,8 +302,9 @@
 "^ot:originalLabel": "Thecamonas adhaerens GI 196001193"
 }, 
 "Tl1410963": {
-"^ot:altLabel": "Monosiga brevicollis", 
 "^ot:originalLabel": "Monosiga brevicollis GI 167516962", 
+"^ot:ottId": 281703, 
+"^ot:ottTaxonName": "Monosiga brevicollis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 18059, 
 "@tb:identifier.taxonVariant": 42258, 
@@ -205,11 +316,14 @@
 "^ot:originalLabel": "Thecamonas adhaerens GI 196001971"
 }, 
 "Tl1410965": {
-"^ot:originalLabel": "Amphimedon queenslandica GI 340377126"
+"^ot:originalLabel": "Amphimedon queenslandica GI 340377126", 
+"^ot:ottId": 707499, 
+"^ot:ottTaxonName": "Amphimedon queenslandica"
 }, 
 "Tl1410966": {
-"^ot:altLabel": "Monosiga brevicollis", 
 "^ot:originalLabel": "Monosiga brevicollis GI 167522415", 
+"^ot:ottId": 281703, 
+"^ot:ottTaxonName": "Monosiga brevicollis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 18059, 
 "@tb:identifier.taxonVariant": 42258, 
@@ -221,8 +335,9 @@
 "^ot:originalLabel": "Thecamonas adhaerens GI 196015366"
 }, 
 "Tl1410968": {
-"^ot:altLabel": "Homo sapiens", 
 "^ot:originalLabel": "Homo sapiens CDK16", 
+"^ot:ottId": 770315, 
+"^ot:ottTaxonName": "Homo sapiens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 13680, 
 "@tb:identifier.taxonVariant": 32274, 
@@ -231,8 +346,9 @@
 }
 }, 
 "Tl1410969": {
-"^ot:altLabel": "Monosiga brevicollis", 
 "^ot:originalLabel": "Monosiga brevicollis GI 167538010", 
+"^ot:ottId": 281703, 
+"^ot:ottTaxonName": "Monosiga brevicollis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 18059, 
 "@tb:identifier.taxonVariant": 42258, 
@@ -241,8 +357,9 @@
 }
 }, 
 "Tl1410970": {
-"^ot:altLabel": "Nematostella vectensis", 
 "^ot:originalLabel": "Nematostella vectensis GI 156403969", 
+"^ot:ottId": 938118, 
+"^ot:ottTaxonName": "Nematostella vectensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 621648, 
 "@tb:identifier.taxonVariant": 832457, 
@@ -251,8 +368,9 @@
 }
 }, 
 "Tl1410971": {
-"^ot:altLabel": "Homo sapiens", 
 "^ot:originalLabel": "Homo sapiens CDK17", 
+"^ot:ottId": 770315, 
+"^ot:ottTaxonName": "Homo sapiens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 13680, 
 "@tb:identifier.taxonVariant": 32274, 
@@ -261,8 +379,9 @@
 }
 }, 
 "Tl1410972": {
-"^ot:altLabel": "Nematostella vectensis", 
 "^ot:originalLabel": "Nematostella vectensis GI 156360882", 
+"^ot:ottId": 938118, 
+"^ot:ottTaxonName": "Nematostella vectensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 621648, 
 "@tb:identifier.taxonVariant": 832457, 
@@ -271,14 +390,17 @@
 }
 }, 
 "Tl1410973": {
-"^ot:originalLabel": "Amphimedon queenslandica GI 340381980"
+"^ot:originalLabel": "Amphimedon queenslandica GI 340381980", 
+"^ot:ottId": 707499, 
+"^ot:ottTaxonName": "Amphimedon queenslandica"
 }, 
 "Tl1410974": {
 "^ot:originalLabel": "Thecamonas adhaerens GI 196015356"
 }, 
 "Tl1410975": {
-"^ot:altLabel": "Homo sapiens", 
 "^ot:originalLabel": "Homo sapiens CDK14", 
+"^ot:ottId": 770315, 
+"^ot:ottTaxonName": "Homo sapiens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 13680, 
 "@tb:identifier.taxonVariant": 32274, 
@@ -287,11 +409,14 @@
 }
 }, 
 "Tl1410976": {
-"^ot:originalLabel": "Amphimedon queenslandica GI 340384408"
+"^ot:originalLabel": "Amphimedon queenslandica GI 340384408", 
+"^ot:ottId": 707499, 
+"^ot:ottTaxonName": "Amphimedon queenslandica"
 }, 
 "Tl1410977": {
-"^ot:altLabel": "Homo sapiens", 
 "^ot:originalLabel": "Homo sapiens CDK1", 
+"^ot:ottId": 770315, 
+"^ot:ottTaxonName": "Homo sapiens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 13680, 
 "@tb:identifier.taxonVariant": 32274, 
@@ -300,8 +425,9 @@
 }
 }, 
 "Tl1410978": {
-"^ot:altLabel": "Nematostella vectensis", 
 "^ot:originalLabel": "Nematostella vectensis GI 156391793", 
+"^ot:ottId": 938118, 
+"^ot:ottTaxonName": "Nematostella vectensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 621648, 
 "@tb:identifier.taxonVariant": 832457, 
@@ -313,8 +439,9 @@
 "^ot:originalLabel": "Thecamonas adhaerens GI 195998898"
 }, 
 "Tl1410980": {
-"^ot:altLabel": "Homo sapiens", 
 "^ot:originalLabel": "Homo sapiens CDK19", 
+"^ot:ottId": 770315, 
+"^ot:ottTaxonName": "Homo sapiens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 13680, 
 "@tb:identifier.taxonVariant": 32274, 
@@ -323,11 +450,14 @@
 }
 }, 
 "Tl1410981": {
-"^ot:originalLabel": "Amphimedon queenslandica GI 340380476"
+"^ot:originalLabel": "Amphimedon queenslandica GI 340380476", 
+"^ot:ottId": 707499, 
+"^ot:ottTaxonName": "Amphimedon queenslandica"
 }, 
 "Tl1410982": {
-"^ot:altLabel": "Nematostella vectensis", 
 "^ot:originalLabel": "Nematostella vectensis GI 156408568", 
+"^ot:ottId": 938118, 
+"^ot:ottTaxonName": "Nematostella vectensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 621648, 
 "@tb:identifier.taxonVariant": 832457, 
@@ -336,8 +466,9 @@
 }
 }, 
 "Tl1410983": {
-"^ot:altLabel": "Nematostella vectensis", 
 "^ot:originalLabel": "Nematostella vectensis GI 156365870", 
+"^ot:ottId": 938118, 
+"^ot:ottTaxonName": "Nematostella vectensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 621648, 
 "@tb:identifier.taxonVariant": 832457, 
@@ -346,8 +477,9 @@
 }
 }, 
 "Tl1410984": {
-"^ot:altLabel": "Homo sapiens", 
 "^ot:originalLabel": "Homo sapiens CDK3", 
+"^ot:ottId": 770315, 
+"^ot:ottTaxonName": "Homo sapiens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 13680, 
 "@tb:identifier.taxonVariant": 32274, 
@@ -356,8 +488,9 @@
 }
 }, 
 "Tl1410985": {
-"^ot:altLabel": "Homo sapiens", 
 "^ot:originalLabel": "Homo sapiens CDK5", 
+"^ot:ottId": 770315, 
+"^ot:ottTaxonName": "Homo sapiens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 13680, 
 "@tb:identifier.taxonVariant": 32274, 
@@ -366,8 +499,9 @@
 }
 }, 
 "Tl1410986": {
-"^ot:altLabel": "Homo sapiens", 
 "^ot:originalLabel": "Homo sapiens CDK7", 
+"^ot:ottId": 770315, 
+"^ot:ottTaxonName": "Homo sapiens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 13680, 
 "@tb:identifier.taxonVariant": 32274, 
@@ -376,8 +510,9 @@
 }
 }, 
 "Tl1410987": {
-"^ot:altLabel": "Nematostella vectensis", 
 "^ot:originalLabel": "Nematostella vectensis GI 156349526", 
+"^ot:ottId": 938118, 
+"^ot:ottTaxonName": "Nematostella vectensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 621648, 
 "@tb:identifier.taxonVariant": 832457, 
@@ -386,8 +521,9 @@
 }
 }, 
 "Tl1410988": {
-"^ot:altLabel": "Nematostella vectensis", 
 "^ot:originalLabel": "Nematostella vectensis GI 156392090", 
+"^ot:ottId": 938118, 
+"^ot:ottTaxonName": "Nematostella vectensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 621648, 
 "@tb:identifier.taxonVariant": 832457, 
@@ -396,8 +532,9 @@
 }
 }, 
 "Tl1410989": {
-"^ot:altLabel": "Homo sapiens", 
 "^ot:originalLabel": "Homo sapiens CDK6", 
+"^ot:ottId": 770315, 
+"^ot:ottTaxonName": "Homo sapiens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 13680, 
 "@tb:identifier.taxonVariant": 32274, 
@@ -406,8 +543,9 @@
 }
 }, 
 "Tl1410990": {
-"^ot:altLabel": "Nematostella vectensis", 
 "^ot:originalLabel": "Nematostella vectensis GI 156383566", 
+"^ot:ottId": 938118, 
+"^ot:ottTaxonName": "Nematostella vectensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 621648, 
 "@tb:identifier.taxonVariant": 832457, 
@@ -416,7 +554,9 @@
 }
 }, 
 "Tl1410991": {
-"^ot:originalLabel": "Amphimedon queenslandica GI 340373367"
+"^ot:originalLabel": "Amphimedon queenslandica GI 340373367", 
+"^ot:ottId": 707499, 
+"^ot:ottTaxonName": "Amphimedon queenslandica"
 }, 
 "Tl1410992": {
 "^ot:originalLabel": "Thecamonas adhaerens GI 196000717"
@@ -425,7 +565,9 @@
 "^ot:originalLabel": "Salpingoeca rosetta GI 326436991"
 }, 
 "Tl1410994": {
-"^ot:originalLabel": "Amphimedon queenslandica GI 340369314"
+"^ot:originalLabel": "Amphimedon queenslandica GI 340369314", 
+"^ot:ottId": 707499, 
+"^ot:ottTaxonName": "Amphimedon queenslandica"
 }, 
 "Tl1410995": {
 "^ot:originalLabel": "Salpingoeca rosetta GI 326430756"
@@ -437,8 +579,9 @@
 "^ot:originalLabel": "Thecamonas adhaerens GI 195999760"
 }, 
 "Tl1410998": {
-"^ot:altLabel": "Monosiga brevicollis", 
 "^ot:originalLabel": "Monosiga brevicollis GI 167536606", 
+"^ot:ottId": 281703, 
+"^ot:ottTaxonName": "Monosiga brevicollis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 18059, 
 "@tb:identifier.taxonVariant": 42258, 
@@ -447,8 +590,9 @@
 }
 }, 
 "Tl1410999": {
-"^ot:altLabel": "Homo sapiens", 
 "^ot:originalLabel": "Homo sapiens CDKL1", 
+"^ot:ottId": 770315, 
+"^ot:ottTaxonName": "Homo sapiens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 13680, 
 "@tb:identifier.taxonVariant": 32274, 
@@ -460,11 +604,14 @@
 "^ot:originalLabel": "Thecamonas adhaerens GI 195996663"
 }, 
 "Tl1411001": {
-"^ot:originalLabel": "Amphimedon queenslandica GI 340381019"
+"^ot:originalLabel": "Amphimedon queenslandica GI 340381019", 
+"^ot:ottId": 707499, 
+"^ot:ottTaxonName": "Amphimedon queenslandica"
 }, 
 "Tl1411002": {
-"^ot:altLabel": "Homo sapiens", 
 "^ot:originalLabel": "Homo sapiens CDK8", 
+"^ot:ottId": 770315, 
+"^ot:ottTaxonName": "Homo sapiens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 13680, 
 "@tb:identifier.taxonVariant": 32274, 
@@ -473,8 +620,9 @@
 }
 }, 
 "Tl1411003": {
-"^ot:altLabel": "Monosiga brevicollis", 
 "^ot:originalLabel": "Monosiga brevicollis GI 167522771", 
+"^ot:ottId": 281703, 
+"^ot:ottTaxonName": "Monosiga brevicollis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 18059, 
 "@tb:identifier.taxonVariant": 42258, 
@@ -486,8 +634,9 @@
 "^ot:originalLabel": "Thecamonas adhaerens GI 195996637"
 }, 
 "Tl1411005": {
-"^ot:altLabel": "Nematostella vectensis", 
 "^ot:originalLabel": "Nematostella vectensis GI 156374066", 
+"^ot:ottId": 938118, 
+"^ot:ottTaxonName": "Nematostella vectensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 621648, 
 "@tb:identifier.taxonVariant": 832457, 
@@ -499,8 +648,9 @@
 "^ot:originalLabel": "Thecamonas adhaerens GI 196002669"
 }, 
 "Tl1411007": {
-"^ot:altLabel": "Homo sapiens", 
 "^ot:originalLabel": "Homo sapiens GSK3alpha", 
+"^ot:ottId": 770315, 
+"^ot:ottTaxonName": "Homo sapiens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 13680, 
 "@tb:identifier.taxonVariant": 32274, 
@@ -509,14 +659,16 @@
 }
 }, 
 "Tl1411008": {
+"^ot:altLabel": "Salpingoeca rosetta ", 
 "^ot:originalLabel": "Salpingoeca rosetta GI 326431660"
 }, 
 "Tl1411009": {
 "^ot:originalLabel": "Thecamonas adhaerens GI 196013334"
 }, 
 "Tl1411010": {
-"^ot:altLabel": "Monosiga brevicollis", 
 "^ot:originalLabel": "Monosiga brevicollis GI 167516210", 
+"^ot:ottId": 281703, 
+"^ot:ottTaxonName": "Monosiga brevicollis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 18059, 
 "@tb:identifier.taxonVariant": 42258, 
@@ -525,11 +677,13 @@
 }
 }, 
 "Tl1411011": {
+"^ot:altLabel": "Thecamonas adhaerens ", 
 "^ot:originalLabel": "Thecamonas adhaerens GI 196010283"
 }, 
 "Tl1411012": {
-"^ot:altLabel": "Monosiga brevicollis", 
 "^ot:originalLabel": "Monosiga brevicollis GI 167516186", 
+"^ot:ottId": 281703, 
+"^ot:ottTaxonName": "Monosiga brevicollis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 18059, 
 "@tb:identifier.taxonVariant": 42258, 
@@ -538,8 +692,9 @@
 }
 }, 
 "Tl1411013": {
-"^ot:altLabel": "Homo sapiens", 
 "^ot:originalLabel": "Homo sapiens CDK11B", 
+"^ot:ottId": 770315, 
+"^ot:ottTaxonName": "Homo sapiens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 13680, 
 "@tb:identifier.taxonVariant": 32274, 
@@ -548,8 +703,9 @@
 }
 }, 
 "Tl1411014": {
-"^ot:altLabel": "Homo sapiens", 
 "^ot:originalLabel": "Homo sapiens CDK20", 
+"^ot:ottId": 770315, 
+"^ot:ottTaxonName": "Homo sapiens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 13680, 
 "@tb:identifier.taxonVariant": 32274, 
@@ -558,8 +714,9 @@
 }
 }, 
 "Tl1411015": {
-"^ot:altLabel": "Nematostella vectensis", 
 "^ot:originalLabel": "Nematostella vectensis GI 156398520", 
+"^ot:ottId": 938118, 
+"^ot:ottTaxonName": "Nematostella vectensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 621648, 
 "@tb:identifier.taxonVariant": 832457, 
@@ -568,8 +725,9 @@
 }
 }, 
 "Tl1411016": {
-"^ot:altLabel": "Nematostella vectensis", 
 "^ot:originalLabel": "Nematostella vectensis GI 156385093", 
+"^ot:ottId": 938118, 
+"^ot:ottTaxonName": "Nematostella vectensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 621648, 
 "@tb:identifier.taxonVariant": 832457, 
@@ -578,8 +736,9 @@
 }
 }, 
 "Tl1411017": {
-"^ot:altLabel": "Nematostella vectensis", 
 "^ot:originalLabel": "Nematostella vectensis GI 156407302", 
+"^ot:ottId": 938118, 
+"^ot:ottTaxonName": "Nematostella vectensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 621648, 
 "@tb:identifier.taxonVariant": 832457, 
@@ -588,11 +747,14 @@
 }
 }, 
 "Tl1411018": {
-"^ot:originalLabel": "Amphimedon queenslandica GI 340383363"
+"^ot:originalLabel": "Amphimedon queenslandica GI 340383363", 
+"^ot:ottId": 707499, 
+"^ot:ottTaxonName": "Amphimedon queenslandica"
 }, 
 "Tl1411019": {
-"^ot:altLabel": "Homo sapiens", 
 "^ot:originalLabel": "Homo sapiens CDK18", 
+"^ot:ottId": 770315, 
+"^ot:ottTaxonName": "Homo sapiens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 13680, 
 "@tb:identifier.taxonVariant": 32274, 
@@ -601,11 +763,14 @@
 }
 }, 
 "Tl1411020": {
-"^ot:originalLabel": "Amphimedon queenslandica GI 340371337"
+"^ot:originalLabel": "Amphimedon queenslandica GI 340371337", 
+"^ot:ottId": 707499, 
+"^ot:ottTaxonName": "Amphimedon queenslandica"
 }, 
 "Tl1411021": {
-"^ot:altLabel": "Monosiga brevicollis", 
 "^ot:originalLabel": "Monosiga brevicollis GI 167517533", 
+"^ot:ottId": 281703, 
+"^ot:ottTaxonName": "Monosiga brevicollis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 18059, 
 "@tb:identifier.taxonVariant": 42258, 
@@ -614,8 +779,9 @@
 }
 }, 
 "Tl1411022": {
-"^ot:altLabel": "Homo sapiens", 
 "^ot:originalLabel": "Homo sapiens CDK13", 
+"^ot:ottId": 770315, 
+"^ot:ottTaxonName": "Homo sapiens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 13680, 
 "@tb:identifier.taxonVariant": 32274, 
@@ -624,8 +790,9 @@
 }
 }, 
 "Tl1411023": {
-"^ot:altLabel": "Homo sapiens", 
 "^ot:originalLabel": "Homo sapiens CDK2", 
+"^ot:ottId": 770315, 
+"^ot:ottTaxonName": "Homo sapiens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 13680, 
 "@tb:identifier.taxonVariant": 32274, 
@@ -634,11 +801,14 @@
 }
 }, 
 "Tl1411024": {
-"^ot:originalLabel": "Amphimedon queenslandica GI 340373128"
+"^ot:originalLabel": "Amphimedon queenslandica GI 340373128", 
+"^ot:ottId": 707499, 
+"^ot:ottTaxonName": "Amphimedon queenslandica"
 }, 
 "Tl1411025": {
-"^ot:altLabel": "Homo sapiens", 
 "^ot:originalLabel": "Homo sapiens CyclinJ", 
+"^ot:ottId": 770315, 
+"^ot:ottTaxonName": "Homo sapiens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 13680, 
 "@tb:identifier.taxonVariant": 32274, 
@@ -647,11 +817,14 @@
 }
 }, 
 "Tl1411026": {
-"^ot:originalLabel": "Amphimedon queenslandica GI 340376468"
+"^ot:originalLabel": "Amphimedon queenslandica GI 340376468", 
+"^ot:ottId": 707499, 
+"^ot:ottTaxonName": "Amphimedon queenslandica"
 }, 
 "Tl1411027": {
-"^ot:altLabel": "Homo sapiens", 
 "^ot:originalLabel": "Homo sapiens CyclinJL", 
+"^ot:ottId": 770315, 
+"^ot:ottTaxonName": "Homo sapiens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 13680, 
 "@tb:identifier.taxonVariant": 32274, 
@@ -660,8 +833,9 @@
 }
 }, 
 "Tl1411028": {
-"^ot:altLabel": "Homo sapiens", 
 "^ot:originalLabel": "Homo sapiens CyclinC", 
+"^ot:ottId": 770315, 
+"^ot:ottTaxonName": "Homo sapiens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 13680, 
 "@tb:identifier.taxonVariant": 32274, 
@@ -670,11 +844,13 @@
 }
 }, 
 "Tl1411029": {
+"^ot:altLabel": "Thecamonas adhaerens", 
 "^ot:originalLabel": "Thecamonas adhaerens GI 196007480"
 }, 
 "Tl1411030": {
-"^ot:altLabel": "Homo sapiens", 
 "^ot:originalLabel": "Homo sapiens CyclinL2", 
+"^ot:ottId": 770315, 
+"^ot:ottTaxonName": "Homo sapiens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 13680, 
 "@tb:identifier.taxonVariant": 32274, 
@@ -686,8 +862,9 @@
 "^ot:originalLabel": "Salpingoeca rosetta GI 326428978"
 }, 
 "Tl1411032": {
-"^ot:altLabel": "Homo sapiens", 
 "^ot:originalLabel": "Homo sapiens CyclinK", 
+"^ot:ottId": 770315, 
+"^ot:ottTaxonName": "Homo sapiens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 13680, 
 "@tb:identifier.taxonVariant": 32274, 
@@ -696,8 +873,9 @@
 }
 }, 
 "Tl1411033": {
-"^ot:altLabel": "Nematostella vectensis", 
 "^ot:originalLabel": "Nematostella vectensis GI 156406586", 
+"^ot:ottId": 938118, 
+"^ot:ottTaxonName": "Nematostella vectensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 621648, 
 "@tb:identifier.taxonVariant": 832457, 
@@ -706,8 +884,9 @@
 }
 }, 
 "Tl1411034": {
-"^ot:altLabel": "Nematostella vectensis", 
 "^ot:originalLabel": "Nematostella vectensis GI 156381346", 
+"^ot:ottId": 938118, 
+"^ot:ottTaxonName": "Nematostella vectensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 621648, 
 "@tb:identifier.taxonVariant": 832457, 
@@ -716,8 +895,9 @@
 }
 }, 
 "Tl1411035": {
-"^ot:altLabel": "Monosiga brevicollis", 
 "^ot:originalLabel": "Monosiga brevicollis GI 167526156", 
+"^ot:ottId": 281703, 
+"^ot:ottTaxonName": "Monosiga brevicollis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 18059, 
 "@tb:identifier.taxonVariant": 42258, 
@@ -729,8 +909,9 @@
 "^ot:originalLabel": "Thecamonas adhaerens GI 196001479"
 }, 
 "Tl1411037": {
-"^ot:altLabel": "Monosiga brevicollis", 
 "^ot:originalLabel": "Monosiga brevicollis GI 167517989", 
+"^ot:ottId": 281703, 
+"^ot:ottTaxonName": "Monosiga brevicollis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 18059, 
 "@tb:identifier.taxonVariant": 42258, 
@@ -739,8 +920,9 @@
 }
 }, 
 "Tl1411038": {
-"^ot:altLabel": "Homo sapiens", 
 "^ot:originalLabel": "Homo sapiens CyclinI2", 
+"^ot:ottId": 770315, 
+"^ot:ottTaxonName": "Homo sapiens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 13680, 
 "@tb:identifier.taxonVariant": 32274, 
@@ -749,8 +931,9 @@
 }
 }, 
 "Tl1411039": {
-"^ot:altLabel": "Monosiga brevicollis", 
 "^ot:originalLabel": "Monosiga brevicollis GI 167523717", 
+"^ot:ottId": 281703, 
+"^ot:ottTaxonName": "Monosiga brevicollis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 18059, 
 "@tb:identifier.taxonVariant": 42258, 
@@ -759,8 +942,9 @@
 }
 }, 
 "Tl1411040": {
-"^ot:altLabel": "Nematostella vectensis", 
 "^ot:originalLabel": "Nematostella vectensis GI 156359932", 
+"^ot:ottId": 938118, 
+"^ot:ottTaxonName": "Nematostella vectensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 621648, 
 "@tb:identifier.taxonVariant": 832457, 
@@ -769,11 +953,14 @@
 }
 }, 
 "Tl1411041": {
-"^ot:originalLabel": "Amphimedon queenslandica GI 340377763"
+"^ot:originalLabel": "Amphimedon queenslandica GI 340377763", 
+"^ot:ottId": 707499, 
+"^ot:ottTaxonName": "Amphimedon queenslandica"
 }, 
 "Tl1411042": {
-"^ot:altLabel": "Homo sapiens", 
 "^ot:originalLabel": "Homo sapiens CyclinD3", 
+"^ot:ottId": 770315, 
+"^ot:ottTaxonName": "Homo sapiens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 13680, 
 "@tb:identifier.taxonVariant": 32274, 
@@ -788,8 +975,9 @@
 "^ot:originalLabel": "Salpingoeca rosetta GI 326437823"
 }, 
 "Tl1411045": {
-"^ot:altLabel": "Nematostella vectensis", 
 "^ot:originalLabel": "Nematostella vectensis GI 156359300", 
+"^ot:ottId": 938118, 
+"^ot:ottTaxonName": "Nematostella vectensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 621648, 
 "@tb:identifier.taxonVariant": 832457, 
@@ -798,8 +986,9 @@
 }
 }, 
 "Tl1411046": {
-"^ot:altLabel": "Homo sapiens", 
 "^ot:originalLabel": "Homo sapiens Fam58A", 
+"^ot:ottId": 770315, 
+"^ot:ottTaxonName": "Homo sapiens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 13680, 
 "@tb:identifier.taxonVariant": 32274, 
@@ -814,8 +1003,9 @@
 "^ot:originalLabel": "Salpingoeca rosetta GI 326429298"
 }, 
 "Tl1411049": {
-"^ot:altLabel": "Homo sapiens", 
 "^ot:originalLabel": "Homo sapiens CyclinA1", 
+"^ot:ottId": 770315, 
+"^ot:ottTaxonName": "Homo sapiens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 13680, 
 "@tb:identifier.taxonVariant": 32274, 
@@ -824,14 +1014,19 @@
 }
 }, 
 "Tl1411050": {
-"^ot:originalLabel": "Amphimedon queenslandica GI 340373665"
+"^ot:originalLabel": "Amphimedon queenslandica GI 340373665", 
+"^ot:ottId": 707499, 
+"^ot:ottTaxonName": "Amphimedon queenslandica"
 }, 
 "Tl1411051": {
-"^ot:originalLabel": "Amphimedon queenslandica GI 340380250"
+"^ot:originalLabel": "Amphimedon queenslandica GI 340380250", 
+"^ot:ottId": 707499, 
+"^ot:ottTaxonName": "Amphimedon queenslandica"
 }, 
 "Tl1411052": {
-"^ot:altLabel": "Homo sapiens", 
 "^ot:originalLabel": "Homo sapiens CyclinI", 
+"^ot:ottId": 770315, 
+"^ot:ottTaxonName": "Homo sapiens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 13680, 
 "@tb:identifier.taxonVariant": 32274, 
@@ -840,8 +1035,9 @@
 }
 }, 
 "Tl1411053": {
-"^ot:altLabel": "Homo sapiens", 
 "^ot:originalLabel": "Homo sapiens CyclinY", 
+"^ot:ottId": 770315, 
+"^ot:ottTaxonName": "Homo sapiens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 13680, 
 "@tb:identifier.taxonVariant": 32274, 
@@ -850,8 +1046,9 @@
 }
 }, 
 "Tl1411054": {
-"^ot:altLabel": "Homo sapiens", 
 "^ot:originalLabel": "Homo sapiens CABLES2", 
+"^ot:ottId": 770315, 
+"^ot:ottTaxonName": "Homo sapiens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 13680, 
 "@tb:identifier.taxonVariant": 32274, 
@@ -863,13 +1060,17 @@
 "^ot:originalLabel": "Thecamonas adhaerens GI 196007260"
 }, 
 "Tl1411056": {
-"^ot:originalLabel": "Amphimedon queenslandica GI 340369567"
+"^ot:originalLabel": "Amphimedon queenslandica GI 340369567", 
+"^ot:ottId": 707499, 
+"^ot:ottTaxonName": "Amphimedon queenslandica"
 }, 
 "Tl1411057": {
 "^ot:originalLabel": "Thecamonas adhaerens GI 196011367"
 }, 
 "Tl1411058": {
-"^ot:originalLabel": "Homo sapiens CyclinYL"
+"^ot:originalLabel": "Homo sapiens CyclinYL", 
+"^ot:ottId": 770315, 
+"^ot:ottTaxonName": "Homo sapiens"
 }, 
 "Tl1411059": {
 "^ot:originalLabel": "Salpingoeca rosetta GI 326426811"
@@ -878,8 +1079,9 @@
 "^ot:originalLabel": "Thecamonas adhaerens GI 196005765"
 }, 
 "Tl1411061": {
-"^ot:altLabel": "Nematostella vectensis", 
 "^ot:originalLabel": "Nematostella vectensis GI 156405242", 
+"^ot:ottId": 938118, 
+"^ot:ottTaxonName": "Nematostella vectensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 621648, 
 "@tb:identifier.taxonVariant": 832457, 
@@ -888,8 +1090,9 @@
 }
 }, 
 "Tl1411062": {
-"^ot:altLabel": "Homo sapiens", 
 "^ot:originalLabel": "Homo sapiens CyclinD2", 
+"^ot:ottId": 770315, 
+"^ot:ottTaxonName": "Homo sapiens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 13680, 
 "@tb:identifier.taxonVariant": 32274, 
@@ -898,8 +1101,9 @@
 }
 }, 
 "Tl1411063": {
-"^ot:altLabel": "Homo sapiens", 
 "^ot:originalLabel": "Homo sapiens CyclinB1", 
+"^ot:ottId": 770315, 
+"^ot:ottTaxonName": "Homo sapiens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 13680, 
 "@tb:identifier.taxonVariant": 32274, 
@@ -908,8 +1112,9 @@
 }
 }, 
 "Tl1411064": {
-"^ot:altLabel": "Nematostella vectensis", 
 "^ot:originalLabel": "Nematostella vectensis GI 156389378", 
+"^ot:ottId": 938118, 
+"^ot:ottTaxonName": "Nematostella vectensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 621648, 
 "@tb:identifier.taxonVariant": 832457, 
@@ -918,8 +1123,9 @@
 }
 }, 
 "Tl1411065": {
-"^ot:altLabel": "Nematostella vectensis", 
 "^ot:originalLabel": "Nematostella vectensis GI 156364707", 
+"^ot:ottId": 938118, 
+"^ot:ottTaxonName": "Nematostella vectensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 621648, 
 "@tb:identifier.taxonVariant": 832457, 
@@ -928,8 +1134,9 @@
 }
 }, 
 "Tl1411066": {
-"^ot:altLabel": "Homo sapiens", 
 "^ot:originalLabel": "Homo sapiens CyclinA2", 
+"^ot:ottId": 770315, 
+"^ot:ottTaxonName": "Homo sapiens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 13680, 
 "@tb:identifier.taxonVariant": 32274, 
@@ -938,8 +1145,9 @@
 }
 }, 
 "Tl1411067": {
-"^ot:altLabel": "Homo sapiens", 
 "^ot:originalLabel": "Homo sapiens CyclinT1", 
+"^ot:ottId": 770315, 
+"^ot:ottTaxonName": "Homo sapiens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 13680, 
 "@tb:identifier.taxonVariant": 32274, 
@@ -948,8 +1156,9 @@
 }
 }, 
 "Tl1411068": {
-"^ot:altLabel": "Nematostella vectensis", 
 "^ot:originalLabel": "Nematostella vectensis GI 156350442", 
+"^ot:ottId": 938118, 
+"^ot:ottTaxonName": "Nematostella vectensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 621648, 
 "@tb:identifier.taxonVariant": 832457, 
@@ -958,8 +1167,9 @@
 }
 }, 
 "Tl1411069": {
-"^ot:altLabel": "Homo sapiens", 
 "^ot:originalLabel": "Homo sapiens Fam58B", 
+"^ot:ottId": 770315, 
+"^ot:ottTaxonName": "Homo sapiens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 13680, 
 "@tb:identifier.taxonVariant": 32274, 
@@ -968,14 +1178,19 @@
 }
 }, 
 "Tl1411070": {
-"^ot:originalLabel": "Amphimedon queenslandica GI 340379787"
+"^ot:originalLabel": "Amphimedon queenslandica GI 340379787", 
+"^ot:ottId": 707499, 
+"^ot:ottTaxonName": "Amphimedon queenslandica"
 }, 
 "Tl1411071": {
-"^ot:originalLabel": "Amphimedon queenslandica GI 340374274"
+"^ot:originalLabel": "Amphimedon queenslandica GI 340374274", 
+"^ot:ottId": 707499, 
+"^ot:ottTaxonName": "Amphimedon queenslandica"
 }, 
 "Tl1411072": {
-"^ot:altLabel": "Nematostella vectensis", 
 "^ot:originalLabel": "Nematostella vectensis GI 156407073", 
+"^ot:ottId": 938118, 
+"^ot:ottTaxonName": "Nematostella vectensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 621648, 
 "@tb:identifier.taxonVariant": 832457, 
@@ -990,8 +1205,9 @@
 "^ot:originalLabel": "Salpingoeca rosetta GI 326437566"
 }, 
 "Tl1411075": {
-"^ot:altLabel": "Homo sapiens", 
 "^ot:originalLabel": "Homo sapiens CyclinE2", 
+"^ot:ottId": 770315, 
+"^ot:ottTaxonName": "Homo sapiens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 13680, 
 "@tb:identifier.taxonVariant": 32274, 
@@ -1000,8 +1216,9 @@
 }
 }, 
 "Tl1411076": {
-"^ot:altLabel": "Homo sapiens", 
 "^ot:originalLabel": "Homo sapiens CyclinG2", 
+"^ot:ottId": 770315, 
+"^ot:ottTaxonName": "Homo sapiens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 13680, 
 "@tb:identifier.taxonVariant": 32274, 
@@ -1010,8 +1227,9 @@
 }
 }, 
 "Tl1411077": {
-"^ot:altLabel": "Nematostella vectensis", 
 "^ot:originalLabel": "Nematostella vectensis GI 156397054", 
+"^ot:ottId": 938118, 
+"^ot:ottTaxonName": "Nematostella vectensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 621648, 
 "@tb:identifier.taxonVariant": 832457, 
@@ -1020,11 +1238,14 @@
 }
 }, 
 "Tl1411078": {
-"^ot:originalLabel": "Amphimedon queenslandica GI 340379451"
+"^ot:originalLabel": "Amphimedon queenslandica GI 340379451", 
+"^ot:ottId": 707499, 
+"^ot:ottTaxonName": "Amphimedon queenslandica"
 }, 
 "Tl1411079": {
-"^ot:altLabel": "Nematostella vectensis", 
 "^ot:originalLabel": "Nematostella vectensis GI 156365799", 
+"^ot:ottId": 938118, 
+"^ot:ottTaxonName": "Nematostella vectensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 621648, 
 "@tb:identifier.taxonVariant": 832457, 
@@ -1033,14 +1254,17 @@
 }
 }, 
 "Tl1411080": {
-"^ot:originalLabel": "Amphimedon queenslandica GI 340378990"
+"^ot:originalLabel": "Amphimedon queenslandica GI 340378990", 
+"^ot:ottId": 707499, 
+"^ot:ottTaxonName": "Amphimedon queenslandica"
 }, 
 "Tl1411081": {
 "^ot:originalLabel": "Thecamonas adhaerens GI 196013209"
 }, 
 "Tl1411082": {
-"^ot:altLabel": "Nematostella vectensis", 
 "^ot:originalLabel": "Nematostella vectensis GI 156380901", 
+"^ot:ottId": 938118, 
+"^ot:ottTaxonName": "Nematostella vectensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 621648, 
 "@tb:identifier.taxonVariant": 832457, 
@@ -1049,8 +1273,9 @@
 }
 }, 
 "Tl1411083": {
-"^ot:altLabel": "Homo sapiens", 
 "^ot:originalLabel": "Homo sapiens CyclinG1", 
+"^ot:ottId": 770315, 
+"^ot:ottTaxonName": "Homo sapiens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 13680, 
 "@tb:identifier.taxonVariant": 32274, 
@@ -1059,8 +1284,9 @@
 }
 }, 
 "Tl1411084": {
-"^ot:altLabel": "Homo sapiens", 
 "^ot:originalLabel": "Homo sapiens CyclinL1", 
+"^ot:ottId": 770315, 
+"^ot:ottTaxonName": "Homo sapiens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 13680, 
 "@tb:identifier.taxonVariant": 32274, 
@@ -1069,8 +1295,9 @@
 }
 }, 
 "Tl1411085": {
-"^ot:altLabel": "Homo sapiens", 
 "^ot:originalLabel": "Homo sapiens CABLES1", 
+"^ot:ottId": 770315, 
+"^ot:ottTaxonName": "Homo sapiens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 13680, 
 "@tb:identifier.taxonVariant": 32274, 
@@ -1082,11 +1309,14 @@
 "^ot:originalLabel": "Salpingoeca rosetta GI 326437558"
 }, 
 "Tl1411087": {
-"^ot:originalLabel": "Amphimedon queenslandica GI 340380414"
+"^ot:originalLabel": "Amphimedon queenslandica GI 340380414", 
+"^ot:ottId": 707499, 
+"^ot:ottTaxonName": "Amphimedon queenslandica"
 }, 
 "Tl1411088": {
-"^ot:altLabel": "Homo sapiens", 
 "^ot:originalLabel": "Homo sapiens CyclinO", 
+"^ot:ottId": 770315, 
+"^ot:ottTaxonName": "Homo sapiens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 13680, 
 "@tb:identifier.taxonVariant": 32274, 
@@ -1095,8 +1325,9 @@
 }
 }, 
 "Tl1411089": {
-"^ot:altLabel": "Monosiga brevicollis", 
 "^ot:originalLabel": "Monosiga brevicollis GI 167524110", 
+"^ot:ottId": 281703, 
+"^ot:ottTaxonName": "Monosiga brevicollis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 18059, 
 "@tb:identifier.taxonVariant": 42258, 
@@ -1111,8 +1342,9 @@
 "^ot:originalLabel": "Thecamonas adhaerens GI 196000815"
 }, 
 "Tl1411092": {
-"^ot:altLabel": "Nematostella vectensis", 
 "^ot:originalLabel": "Nematostella vectensis GI 156408249", 
+"^ot:ottId": 938118, 
+"^ot:ottTaxonName": "Nematostella vectensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 621648, 
 "@tb:identifier.taxonVariant": 832457, 
@@ -1121,8 +1353,9 @@
 }
 }, 
 "Tl1411093": {
-"^ot:altLabel": "Nematostella vectensis", 
 "^ot:originalLabel": "Nematostella vectensis GI 156365937", 
+"^ot:ottId": 938118, 
+"^ot:ottTaxonName": "Nematostella vectensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 621648, 
 "@tb:identifier.taxonVariant": 832457, 
@@ -1131,8 +1364,9 @@
 }
 }, 
 "Tl1411094": {
-"^ot:altLabel": "Nematostella vectensis", 
 "^ot:originalLabel": "Nematostella vectensis GI 156363375", 
+"^ot:ottId": 938118, 
+"^ot:ottTaxonName": "Nematostella vectensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 621648, 
 "@tb:identifier.taxonVariant": 832457, 
@@ -1141,8 +1375,9 @@
 }
 }, 
 "Tl1411095": {
-"^ot:altLabel": "Homo sapiens", 
 "^ot:originalLabel": "Homo sapiens CyclinD1", 
+"^ot:ottId": 770315, 
+"^ot:ottTaxonName": "Homo sapiens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 13680, 
 "@tb:identifier.taxonVariant": 32274, 
@@ -1160,8 +1395,9 @@
 "^ot:originalLabel": "Salpingoeca rosetta GI 326435281"
 }, 
 "Tl1411099": {
-"^ot:altLabel": "Nematostella vectensis", 
 "^ot:originalLabel": "Nematostella vectensis GI 156375154", 
+"^ot:ottId": 938118, 
+"^ot:ottTaxonName": "Nematostella vectensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 621648, 
 "@tb:identifier.taxonVariant": 832457, 
@@ -1170,11 +1406,14 @@
 }
 }, 
 "Tl1411100": {
-"^ot:originalLabel": "Amphimedon queenslandica GI 340376480"
+"^ot:originalLabel": "Amphimedon queenslandica GI 340376480", 
+"^ot:ottId": 707499, 
+"^ot:ottTaxonName": "Amphimedon queenslandica"
 }, 
 "Tl1411101": {
-"^ot:altLabel": "Monosiga brevicollis", 
 "^ot:originalLabel": "Monosiga brevicollis GI 167526102", 
+"^ot:ottId": 281703, 
+"^ot:ottTaxonName": "Monosiga brevicollis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 18059, 
 "@tb:identifier.taxonVariant": 42258, 
@@ -1183,8 +1422,9 @@
 }
 }, 
 "Tl1411102": {
-"^ot:altLabel": "Homo sapiens", 
 "^ot:originalLabel": "Homo sapiens CyclinF", 
+"^ot:ottId": 770315, 
+"^ot:ottTaxonName": "Homo sapiens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 13680, 
 "@tb:identifier.taxonVariant": 32274, 
@@ -1193,8 +1433,9 @@
 }
 }, 
 "Tl1411103": {
-"^ot:altLabel": "Monosiga brevicollis", 
 "^ot:originalLabel": "Monosiga brevicollis GI 167522783", 
+"^ot:ottId": 281703, 
+"^ot:ottTaxonName": "Monosiga brevicollis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 18059, 
 "@tb:identifier.taxonVariant": 42258, 
@@ -1206,8 +1447,9 @@
 "^ot:originalLabel": "Thecamonas adhaerens GI 195998946"
 }, 
 "Tl1411105": {
-"^ot:altLabel": "Homo sapiens", 
 "^ot:originalLabel": "Homo sapiens CyclinE1", 
+"^ot:ottId": 770315, 
+"^ot:ottTaxonName": "Homo sapiens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 13680, 
 "@tb:identifier.taxonVariant": 32274, 
@@ -1216,14 +1458,18 @@
 }
 }, 
 "Tl1411106": {
-"^ot:originalLabel": "Amphimedon queenslandica GI 340370065"
+"^ot:originalLabel": "Amphimedon queenslandica GI 340370065", 
+"^ot:ottId": 707499, 
+"^ot:ottTaxonName": "Amphimedon queenslandica"
 }, 
 "Tl1411107": {
+"^ot:altLabel": "Thecamonas adhaerens", 
 "^ot:originalLabel": "Thecamonas adhaerens GI 196003740"
 }, 
 "Tl1411108": {
-"^ot:altLabel": "Homo sapiens", 
 "^ot:originalLabel": "Homo sapiens CyclinB2", 
+"^ot:ottId": 770315, 
+"^ot:ottTaxonName": "Homo sapiens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 13680, 
 "@tb:identifier.taxonVariant": 32274, 
@@ -1232,8 +1478,9 @@
 }
 }, 
 "Tl1411109": {
-"^ot:altLabel": "Homo sapiens", 
 "^ot:originalLabel": "Homo sapiens CyclinT2", 
+"^ot:ottId": 770315, 
+"^ot:ottTaxonName": "Homo sapiens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 13680, 
 "@tb:identifier.taxonVariant": 32274, 
@@ -1242,8 +1489,9 @@
 }
 }, 
 "Tl1411110": {
-"^ot:altLabel": "Homo sapiens", 
 "^ot:originalLabel": "Homo sapiens CyclinB3", 
+"^ot:ottId": 770315, 
+"^ot:ottTaxonName": "Homo sapiens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 13680, 
 "@tb:identifier.taxonVariant": 32274, 
@@ -1252,8 +1500,9 @@
 }
 }, 
 "Tl1411111": {
-"^ot:altLabel": "Homo sapiens", 
 "^ot:originalLabel": "Homo sapiens CyclinH", 
+"^ot:ottId": 770315, 
+"^ot:ottTaxonName": "Homo sapiens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 13680, 
 "@tb:identifier.taxonVariant": 32274, 
@@ -1277,7 +1526,15 @@
 "Tr70725": {
 "@label": "Fig. 1 BI", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "Tn11134760", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 76, 
 "^tb:quality.tree": "Unrated", 
@@ -2631,7 +2888,15 @@
 "Tr70726": {
 "@label": "Fig. 3 BI", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "Tn11134834", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 88, 
 "^tb:quality.tree": "Unrated", 
