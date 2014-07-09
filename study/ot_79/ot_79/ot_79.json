@@ -57,16 +57,101 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2014-07-09T21:05:45.285Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:curatorName": "Dail Laughinghouse", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2014-07-09T21:05:45.284Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"Tr75217"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Dail Laughinghouse"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S15865"
 }, 
+"^ot:focalClade": 210498, 
+"^ot:focalCladeOTTTaxonName": "Salinivibrio", 
+"^ot:messages": {
+"message": []
+}, 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "Tls37997"
 ], 
@@ -76,6 +161,7 @@
 }, 
 "^ot:studyPublicationReference": "Gorriti M.F., Dias G.M., Chimetto L.A., Trindade-silva A.E., Silva B.S., Mesquita M.M., Gregoracci G.B., Farias M.E., Thompson C.C., & Thompson F.L. 2014. Genomic and phenotypic attributes of novel Salinivibrios from Stromatolites, sediment and water from a high altitude lake. BMC Genomics, 15(473).", 
 "^ot:studyYear": 2014, 
+"^ot:tag": [], 
 "^ot:taxonLinkPrefixes": {
 "@ubio": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:", 
 "@uniprot": "http://purl.uniprot.org/taxonomy/"
@@ -104,7 +190,6 @@
 "^skos:historyNote": "Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlOTUWriter@2b789823 $Rev: 1040 $", 
 "otuById": {
 "Tl1506926": {
-"^ot:altLabel": "Salinivibrio costicola subsp. costicola", 
 "^ot:originalLabel": "Salinivibrio costicola subsp. costicola  ATCC 35508T (X74699)", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 144935, 
@@ -114,8 +199,9 @@
 }
 }, 
 "Tl1506927": {
-"^ot:altLabel": "Salinivibrio costicola subsp. alcaliphilus", 
 "^ot:originalLabel": "Salinivibrio costicola subsp. alcaliphilus 18AGT (AJ640132)", 
+"^ot:ottId": 723245, 
+"^ot:ottTaxonName": "Salinivibrio costicola subsp. alcaliphilus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 244349, 
 "@tb:identifier.taxonVariant": 305415, 
@@ -124,10 +210,11 @@
 }
 }, 
 "Tl1506928": {
-"^ot:originalLabel": "Salinivibrio sp. S35"
+"^ot:originalLabel": "Salinivibrio sp. S35", 
+"^ot:ottId": 5174124, 
+"^ot:ottTaxonName": "Salinivibrio sp. S35"
 }, 
 "Tl1506929": {
-"^ot:altLabel": "Salinivibrio siamensis", 
 "^ot:originalLabel": "Salinivibrio siamensis ND1-1T (AB285018)", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 360732, 
@@ -137,11 +224,14 @@
 }
 }, 
 "Tl1506930": {
-"^ot:originalLabel": "Salinivibrio sp. S10B"
+"^ot:originalLabel": "Salinivibrio sp. S10B", 
+"^ot:ottId": 611389, 
+"^ot:ottTaxonName": "Salinivibrio sp. S10B"
 }, 
 "Tl1506931": {
-"^ot:altLabel": "'Salinivibrio aegyptiaca subsp. sharmensis'", 
 "^ot:originalLabel": "Salinivibrio aegyptiaca subsp. sharmensis", 
+"^ot:ottId": 13662, 
+"^ot:ottTaxonName": "Salinivibrio sharmensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 340882, 
 "@tb:identifier.taxonVariant": 377566, 
@@ -151,7 +241,6 @@
 "^skos:prefLabel": "Salinivibrio aegyptiaca subsp. sharmensis"
 }, 
 "Tl1506932": {
-"^ot:altLabel": "Salinivibrio vallismortis", 
 "^ot:originalLabel": "Salinivibrio vallismortis DSM8285T (AF057016)", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 92835, 
@@ -169,13 +258,17 @@
 }
 }, 
 "Tl1506934": {
-"^ot:originalLabel": "Salinivibrio sp. S34"
+"^ot:originalLabel": "Salinivibrio sp. S34", 
+"^ot:ottId": 850229, 
+"^ot:ottTaxonName": "Salinivibrio sp. S34"
 }, 
 "Tl1506935": {
 "^ot:originalLabel": "Vibrio comitans GHG2-1T (DQ922915)"
 }, 
 "Tl1507108": {
 "^ot:originalLabel": "Gloeobacter violaceus", 
+"^ot:ottId": 108690, 
+"^ot:ottTaxonName": "Gloeobacter violaceus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 12211, 
 "@tb:identifier.taxonVariant": 29011, 
@@ -184,8 +277,9 @@
 }
 }, 
 "Tl1507109": {
-"^ot:altLabel": "Exiguobacterium antarcticum", 
 "^ot:originalLabel": "Exiguobacterium antarcticum B7", 
+"^ot:ottId": 203596, 
+"^ot:ottTaxonName": "Exiguobacterium antarcticum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 131809, 
 "@tb:identifier.taxonVariant": 837124, 
@@ -194,8 +288,9 @@
 }
 }, 
 "Tl1507110": {
-"^ot:altLabel": "Thermus sp.", 
 "^ot:originalLabel": "Thermus sp. CCB_US3_U1", 
+"^ot:ottId": 20955, 
+"^ot:ottTaxonName": "Thermus sp. 71", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 48621, 
 "@tb:identifier.taxonVariant": 115130, 
@@ -204,8 +299,9 @@
 }
 }, 
 "Tl1507111": {
-"^ot:altLabel": "Marinobacter sp.", 
 "^ot:originalLabel": "Marinobacter sp. ELB17", 
+"^ot:ottId": 370478, 
+"^ot:ottTaxonName": "Marinobacter sp. ELB17", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 71532, 
 "@tb:identifier.taxonVariant": 418028, 
@@ -215,6 +311,8 @@
 }, 
 "Tl1507112": {
 "^ot:originalLabel": "Salinibacter ruber", 
+"^ot:ottId": 212516, 
+"^ot:ottTaxonName": "Salinibacter ruber", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 142975, 
 "@tb:identifier.taxonVariant": 564823, 
@@ -224,6 +322,8 @@
 }, 
 "Tl1507113": {
 "^ot:originalLabel": "Candidatus Pelagibacter ubique", 
+"^ot:ottId": 4778179, 
+"^ot:ottTaxonName": "Candidatus Pelagibacter ubique (species ncbi:198252 in Surface 1)", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 182992, 
 "@tb:identifier.taxonVariant": 255789, 
@@ -235,10 +335,14 @@
 "^ot:originalLabel": "Actinobacterium SCGC AAA024-D14"
 }, 
 "Tl1507115": {
-"^ot:originalLabel": "Oscillatoriales cyanobacterium"
+"^ot:originalLabel": "Oscillatoriales cyanobacterium", 
+"^ot:ottId": 713793, 
+"^ot:ottTaxonName": "Aerosakkonema funiforme Lao28"
 }, 
 "Tl1507116": {
 "^ot:originalLabel": "Janthinobacterium lividum", 
+"^ot:ottId": 765251, 
+"^ot:ottTaxonName": "Janthinobacterium lividum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 57874, 
 "@tb:identifier.taxonVariant": 130462, 
@@ -248,6 +352,8 @@
 }, 
 "Tl1507117": {
 "^ot:originalLabel": "Krokinobacter eikastus", 
+"^ot:ottId": 718888, 
+"^ot:ottTaxonName": "Krokinobacter eikastus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 271009, 
 "@tb:identifier.taxonVariant": 326443, 
@@ -257,6 +363,8 @@
 }, 
 "Tl1507118": {
 "^ot:originalLabel": "Gillisia limnaea", 
+"^ot:ottId": 278097, 
+"^ot:ottTaxonName": "Gillisia limnaea", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 181045, 
 "@tb:identifier.taxonVariant": 253940, 
@@ -265,13 +373,14 @@
 }
 }, 
 "Tl1507119": {
-"^ot:originalLabel": "Exiguobacterium sp. S17"
+"^ot:originalLabel": "Exiguobacterium sp. S17", 
+"^ot:ottId": 1002149, 
+"^ot:ottTaxonName": "Exiguobacterium sp. S17"
 }, 
 "Tl1507120": {
 "^ot:originalLabel": "SAR86 cluster bacterium"
 }, 
 "Tl1507121": {
-"^ot:altLabel": "Halobacterium sp. AUS 2", 
 "^ot:originalLabel": "Halobacterium AUS-2", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 625090, 
@@ -287,7 +396,6 @@
 }
 }, 
 "Tl1507123": {
-"^ot:altLabel": "Halobacterium sp. AUS 1", 
 "^ot:originalLabel": "Halobacterium AUS-1 ", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 625091, 
@@ -297,14 +405,17 @@
 }, 
 "Tl1507124": {
 "^ot:originalLabel": "Candidatus Aquiluna rubra", 
+"^ot:ottId": 792524, 
+"^ot:ottTaxonName": "Candidatus Aquiluna rubra", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 468845, 
 "@tb:identifier.taxonVariant": 622848
 }
 }, 
 "Tl1507125": {
-"^ot:altLabel": "Polaribacter sp.", 
 "^ot:originalLabel": "Polaribacter sp. Hel1_33_49", 
+"^ot:ottId": 5234305, 
+"^ot:ottTaxonName": "Polaribacter sp. Hel1_33_49", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 71530, 
 "@tb:identifier.taxonVariant": 147852, 
@@ -314,7 +425,6 @@
 "^skos:prefLabel": "Polaribacter sp. CS05"
 }, 
 "Tl1507126": {
-"^ot:altLabel": "Halobacterium salinarum", 
 "^ot:originalLabel": "Halobacterium salinarum R1", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 621059, 
@@ -336,6 +446,8 @@
 }, 
 "Tl1507128": {
 "^ot:originalLabel": "Thermus thermophilus", 
+"^ot:ottId": 276534, 
+"^ot:ottTaxonName": "Thermus thermophilus (species ncbi:274 in family Thermaceae)", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 28964, 
 "@tb:identifier.taxonVariant": 67528, 
@@ -345,6 +457,8 @@
 }, 
 "Tl1507129": {
 "^ot:originalLabel": "Candidatus Rhodoluna planktonica", 
+"^ot:ottId": 538265, 
+"^ot:ottTaxonName": "Candidatus Rhodoluna planktonica", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 474015, 
 "@tb:identifier.taxonVariant": 628444
@@ -355,6 +469,8 @@
 }, 
 "Tl1507131": {
 "^ot:originalLabel": "Octadecabacter arcticus", 
+"^ot:ottId": 454967, 
+"^ot:ottTaxonName": "Octadecabacter arcticus (species silva:U73725 in family Rhodobacteraceae)", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 73740, 
 "@tb:identifier.taxonVariant": 150568, 
@@ -364,6 +480,8 @@
 }, 
 "Tl1507132": {
 "^ot:originalLabel": "Vibrio campbellii", 
+"^ot:ottId": 77949, 
+"^ot:ottTaxonName": "Vibrio campbellii (species in species group Vibrio harveyi group)", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 48888, 
 "@tb:identifier.taxonVariant": 115893, 
@@ -373,6 +491,8 @@
 }, 
 "Tl1507133": {
 "^ot:originalLabel": "Glaciecola pallidula", 
+"^ot:ottId": 722237, 
+"^ot:ottTaxonName": "Glaciecola pallidula", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 75710, 
 "@tb:identifier.taxonVariant": 152941, 
@@ -384,10 +504,11 @@
 "^ot:originalLabel": "Spiribacter salinus"
 }, 
 "Tl1507135": {
-"^ot:originalLabel": "Sphingomonas sp. ATCC 31555"
+"^ot:originalLabel": "Sphingomonas sp. ATCC 31555", 
+"^ot:ottId": 1092410, 
+"^ot:ottTaxonName": "Sphingomonas sp. ATCC 31555"
 }, 
 "Tl1507136": {
-"^ot:altLabel": "Exiguobacterium sibiricum", 
 "^ot:originalLabel": "Exiguobacterium sibiricum 255-15", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 291474, 
@@ -403,10 +524,14 @@
 "^ot:originalLabel": "Photobacterium sp. LC1-200"
 }, 
 "Tl1507139": {
-"^ot:originalLabel": "Dokdonia sp. PRO95"
+"^ot:originalLabel": "Dokdonia sp. PRO95", 
+"^ot:ottId": 565302, 
+"^ot:ottTaxonName": "Dokdonia sp. PRO95"
 }, 
 "Tl1507140": {
 "^ot:originalLabel": "Rhodonellum psychrophilum", 
+"^ot:ottId": 845686, 
+"^ot:ottTaxonName": "Rhodonellum psychrophilum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 295494, 
 "@tb:identifier.taxonVariant": 345663, 
@@ -415,11 +540,14 @@
 }
 }, 
 "Tl1507141": {
-"^ot:originalLabel": "Nonlabens dokdonensis"
+"^ot:originalLabel": "Nonlabens dokdonensis", 
+"^ot:ottId": 660693, 
+"^ot:ottTaxonName": "Nonlabens dokdonensis (species silva:EU000243 in family Flavobacteriaceae)"
 }, 
 "Tl1507142": {
-"^ot:altLabel": "Thermus oshimai", 
 "^ot:originalLabel": "Thermus oshimai ", 
+"^ot:ottId": 228656, 
+"^ot:ottTaxonName": "Thermus oshimai", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 75799, 
 "@tb:identifier.taxonVariant": 153029, 
@@ -428,7 +556,6 @@
 }
 }, 
 "Tl1511156": {
-"^ot:altLabel": "Vibrio alginolyticus", 
 "^ot:originalLabel": "Vibrio alginolyticus R-300", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 48876, 
@@ -438,7 +565,6 @@
 }
 }, 
 "Tl1511157": {
-"^ot:altLabel": "Vibrio cholerae", 
 "^ot:originalLabel": "Vibrio cholerae O395", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 30653, 
@@ -448,7 +574,6 @@
 }
 }, 
 "Tl1511158": {
-"^ot:altLabel": "Salinivibrio costicola subsp. costicola", 
 "^ot:originalLabel": "Salinivibrio costicola subsp. costicola LMG11651T", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 144935, 
@@ -458,7 +583,6 @@
 }
 }, 
 "Tl1511159": {
-"^ot:altLabel": "Vibrio campbellii", 
 "^ot:originalLabel": "Vibrio campbellii DS40M4", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 48888, 
@@ -484,7 +608,16 @@
 "Tr75215": {
 "@label": "Fig. 3", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "Tn11704046", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 10, 
 "^tb:quality.tree": "Unrated", 
@@ -663,7 +796,15 @@
 "Tr75217": {
 "@label": "Fig. 6", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "Tn11704172", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "Tn11704177", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:kind.tree": "Gene Tree", 
 "^tb:ntax.tree": 38, 
 "^tb:quality.tree": "Unrated", 
@@ -1351,7 +1492,16 @@
 "Tr75266": {
 "@label": "Fig. S1", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "Tn11725383", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 7, 
 "^tb:quality.tree": "Unrated", 
