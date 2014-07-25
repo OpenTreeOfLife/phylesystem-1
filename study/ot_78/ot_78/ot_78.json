@@ -1591,9 +1591,10 @@
 "@label": "rRNAop_PhyML", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:substitutionCount", 
 "^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Maximum likelihood ", 
-"^ot:inGroupClade": "", 
+"^ot:inGroupClade": "node1", 
 "^ot:messages": {
 "message": [
 {
@@ -1623,17 +1624,12 @@
 ]
 }, 
 "^ot:outGroupEdge": "", 
-"^ot:rootNodeId": "node1", 
-"^ot:specifiedRoot": "", 
+"^ot:rootNodeId": "tree1_ROOT", 
+"^ot:specifiedRoot": "tree1_ROOT", 
 "^ot:tag": [], 
-"^ot:unrootedTree": true, 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node1": {
-"edge1": {
-"@length": 0.010616, 
-"@source": "node1", 
-"@target": "node2"
-}, 
 "edge103": {
 "@length": 0.006137, 
 "@source": "node1", 
@@ -2460,12 +2456,21 @@
 "@source": "node98", 
 "@target": "node100"
 }
+}, 
+"tree1_ROOT": {
+"edge1": {
+"@length": 0.010616, 
+"@source": "tree1_ROOT", 
+"@target": "node1"
+}, 
+"tree1_ROOT_EDGE": {
+"@source": "tree1_ROOT", 
+"@target": "node2"
+}
 }
 }, 
 "nodeById": {
-"node1": {
-"@root": true
-}, 
+"node1": {}, 
 "node10": {
 "@label": "0.3130000000"
 }, 
@@ -2882,6 +2887,9 @@
 }, 
 "node99": {
 "@otu": "otu49"
+}, 
+"tree1_ROOT": {
+"@root": true
 }
 }
 }, 
