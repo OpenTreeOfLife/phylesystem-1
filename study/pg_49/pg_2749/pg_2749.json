@@ -36,14 +36,92 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2014-07-26T13:56:28.216Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:candidateTreeForSynthesis": [], 
-"^ot:curatorName": "Dail Laughinghouse", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2014-07-26T13:56:28.215Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree6353"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Dail Laughinghouse"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S940"
 }, 
@@ -52,12 +130,16 @@
 "^ot:messages": {
 "message": []
 }, 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "otus2749"
 ], 
 "^ot:studyId": "pg_2749", 
-"^ot:studyPublicationReference": "Tartar A., Boucias D., Becnel J., & Adams B. 2002. Comparison of plastid 16S rDNA (rrn16) genes from Helicosporidium spp.: evidence supporting the reclassification of Helicosporidia as green algae (Chlorophyta). International Journal of Systematic and Evolutionary Microbiology, 53(6): 1719-1723.", 
-"^ot:studyYear": 2002, 
+"^ot:studyPublication": {
+"@href": "http://dx.doi.org/10.1099/ijs.0.02559-0"
+}, 
+"^ot:studyPublicationReference": "A. Tartar, 2003, 'Comparison of plastid 16S rRNA (rrn16) genes from Helicosporidium spp.: evidence supporting the reclassification of Helicosporidia as green algae (Chlorophyta)', INTERNATIONAL JOURNAL OF SYSTEMATIC AND EVOLUTIONARY MICROBIOLOGY, vol. 53, no. 6, pp. 1719-1723", 
+"^ot:studyYear": 2003, 
 "^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees2749"
@@ -215,6 +297,7 @@
 ], 
 "treeById": {
 "tree6352": {
+"@label": "Untitled (tree6352)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
@@ -225,6 +308,7 @@
 "^ot:rootNodeId": "node1105606", 
 "^ot:specifiedRoot": "", 
 "^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node1105606": {
 "edge1105607": {
@@ -544,31 +628,29 @@
 }
 }, 
 "tree6353": {
+"@label": "Untitled (tree6353)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
 "^ot:branchLengthTimeUnit": "", 
-"^ot:curatedType": "MLtree", 
-"^ot:inGroupClade": "node1105654", 
+"^ot:curatedType": "Maximum likelihood ", 
+"^ot:inGroupClade": "node1105658", 
 "^ot:outGroupEdge": "", 
-"^ot:rootNodeId": "node1105651", 
-"^ot:specifiedRoot": "", 
+"^ot:rootNodeId": "tree6353_ROOT", 
+"^ot:specifiedRoot": "tree6353_ROOT", 
 "^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node1105651": {
 "edge1105652": {
 "@source": "node1105651", 
 "@target": "node1105652"
-}, 
-"edge1105653": {
-"@source": "node1105651", 
-"@target": "node1105653"
 }
 }, 
 "node1105653": {
-"edge1105654": {
+"edge1105653": {
 "@source": "node1105653", 
-"@target": "node1105654"
+"@target": "node1105651"
 }, 
 "edge1105693": {
 "@source": "node1105653", 
@@ -576,9 +658,9 @@
 }
 }, 
 "node1105654": {
-"edge1105655": {
+"edge1105654": {
 "@source": "node1105654", 
-"@target": "node1105655"
+"@target": "node1105653"
 }, 
 "edge1105692": {
 "@source": "node1105654", 
@@ -586,9 +668,9 @@
 }
 }, 
 "node1105655": {
-"edge1105656": {
+"edge1105655": {
 "@source": "node1105655", 
-"@target": "node1105656"
+"@target": "node1105654"
 }, 
 "edge1105689": {
 "@source": "node1105655", 
@@ -596,9 +678,9 @@
 }
 }, 
 "node1105656": {
-"edge1105657": {
+"edge1105656": {
 "@source": "node1105656", 
-"@target": "node1105657"
+"@target": "node1105655"
 }, 
 "edge1105688": {
 "@source": "node1105656", 
@@ -606,9 +688,9 @@
 }
 }, 
 "node1105657": {
-"edge1105658": {
+"edge1105657": {
 "@source": "node1105657", 
-"@target": "node1105658"
+"@target": "node1105656"
 }, 
 "edge1105687": {
 "@source": "node1105657", 
@@ -616,13 +698,13 @@
 }
 }, 
 "node1105658": {
+"edge1105658": {
+"@source": "node1105658", 
+"@target": "node1105657"
+}, 
 "edge1105659": {
 "@source": "node1105658", 
 "@target": "node1105659"
-}, 
-"edge1105686": {
-"@source": "node1105658", 
-"@target": "node1105686"
 }
 }, 
 "node1105659": {
@@ -774,12 +856,20 @@
 "@source": "node1105693", 
 "@target": "node1105695"
 }
+}, 
+"tree6353_ROOT": {
+"edge1105686": {
+"@source": "tree6353_ROOT", 
+"@target": "node1105686"
+}, 
+"tree6353_ROOT_EDGE": {
+"@source": "tree6353_ROOT", 
+"@target": "node1105658"
+}
 }
 }, 
 "nodeById": {
-"node1105651": {
-"@root": true
-}, 
+"node1105651": {}, 
 "node1105652": {
 "@otu": "otu409990"
 }, 
@@ -869,6 +959,9 @@
 }, 
 "node1105695": {
 "@otu": "otu409994"
+}, 
+"tree6353_ROOT": {
+"@root": true
 }
 }
 }
