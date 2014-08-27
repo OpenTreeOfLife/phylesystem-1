@@ -49,5 +49,7 @@ then you can create the content of this directory by:
 
 ## License
 
-The *data* in this repository is released under the [Create Commons Zero 1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/) license.
+Some of the *data* in this repository is released under the [Create Commons Zero 1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/) waiver; the rest is released
+to the public without any particular license or waiver.
 
+When using any of this data please cite the original source using a bibliographic reference and DOI for the study's publication, as given in each file, and Treebase or other data deposit identifier if available.
