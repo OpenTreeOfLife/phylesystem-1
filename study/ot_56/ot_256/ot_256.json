@@ -58,16 +58,100 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2015-05-20T17:41:59.742Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:curatorName": "danjmac3", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2015-05-20T17:41:59.742Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"danjmac3"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S11548"
 }, 
+"^ot:focalClade": 775128, 
+"^ot:focalCladeOTTTaxonName": "Etheostomatinae", 
+"^ot:messages": {
+"message": []
+}, 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "Tls21169"
 ], 
@@ -77,6 +161,7 @@
 }, 
 "^ot:studyPublicationReference": "Near T.J., Bossu C., Bradburd G.S., Carlson R.L., Harrington R.C., Hollingsworth jr. P.R., Keck B.P., & Etnier D.A. 2011. Phylogeny and temporal diversification of darters (Percidae:  Etheostomatinae). Systematic Biology, 60(5): 565?595.", 
 "^ot:studyYear": 2011, 
+"^ot:tag": [], 
 "^ot:taxonLinkPrefixes": {
 "@ubio": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:", 
 "@uniprot": "http://purl.uniprot.org/taxonomy/"
@@ -105,7 +190,9 @@
 "^skos:historyNote": "Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlOTUWriter@14d0e67e $Rev: 1040 $", 
 "otuById": {
 "Tl536912": {
-"^ot:originalLabel": "Etheostoma binotatum A"
+"^ot:originalLabel": "Etheostoma binotatum A", 
+"^ot:ottId": 846819, 
+"^ot:ottTaxonName": "Etheostoma binotatum"
 }, 
 "Tl536913": {
 "^ot:altLabel": "Etheostoma atripinne", 
@@ -119,8 +206,9 @@
 "^skos:prefLabel": "Etheostoma simoterum atripinne"
 }, 
 "Tl536914": {
-"^ot:altLabel": "Etheostoma percnurum", 
 "^ot:originalLabel": "Etheostoma percnurum A", 
+"^ot:ottId": 848624, 
+"^ot:ottTaxonName": "Etheostoma percnurum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 101011, 
 "@tb:identifier.taxonVariant": 180239, 
@@ -129,8 +217,9 @@
 }
 }, 
 "Tl536915": {
-"^ot:altLabel": "Etheostoma fonticola", 
 "^ot:originalLabel": "Etheostoma fonticola B", 
+"^ot:ottId": 339721, 
+"^ot:ottTaxonName": "Etheostoma fonticola", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 425822, 
 "@tb:identifier.taxonVariant": 559802, 
@@ -139,8 +228,9 @@
 }
 }, 
 "Tl536916": {
-"^ot:altLabel": "Crystallaria asprella", 
 "^ot:originalLabel": "Crystallaria asprella B", 
+"^ot:ottId": 340836, 
+"^ot:ottTaxonName": "Crystallaria asprella", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 73950, 
 "@tb:identifier.taxonVariant": 150867, 
@@ -149,11 +239,14 @@
 }
 }, 
 "Tl536917": {
-"^ot:originalLabel": "Etheostoma simoterum tenA"
+"^ot:originalLabel": "Etheostoma simoterum tenA", 
+"^ot:ottId": 618537, 
+"^ot:ottTaxonName": "Etheostoma simoterum"
 }, 
 "Tl536918": {
-"^ot:altLabel": "Percina nevisense", 
 "^ot:originalLabel": "Percina nevisense A", 
+"^ot:ottId": 751773, 
+"^ot:ottTaxonName": "Percina nevisense", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 155820, 
 "@tb:identifier.taxonVariant": 231086, 
@@ -162,8 +255,9 @@
 }
 }, 
 "Tl536919": {
-"^ot:altLabel": "Etheostoma baileyi", 
 "^ot:originalLabel": "Etheostoma baileyi B", 
+"^ot:ottId": 566478, 
+"^ot:ottTaxonName": "Etheostoma baileyi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 155078, 
 "@tb:identifier.taxonVariant": 230501, 
@@ -172,14 +266,19 @@
 }
 }, 
 "Tl536920": {
-"^ot:originalLabel": "Nothonotus sanguifluus O"
+"^ot:originalLabel": "Nothonotus sanguifluus O", 
+"^ot:ottId": 422649, 
+"^ot:ottTaxonName": "Etheostoma sanguifluum"
 }, 
 "Tl536921": {
-"^ot:originalLabel": "Etheostoma brevispinum B"
+"^ot:originalLabel": "Etheostoma brevispinum B", 
+"^ot:ottId": 432908, 
+"^ot:ottTaxonName": "Etheostoma brevispinum"
 }, 
 "Tl536922": {
-"^ot:altLabel": "Etheostoma whipplei", 
 "^ot:originalLabel": "Etheostoma whipplei A", 
+"^ot:ottId": 390063, 
+"^ot:ottTaxonName": "Etheostoma whipplei", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 73972, 
 "@tb:identifier.taxonVariant": 150915, 
@@ -188,8 +287,9 @@
 }
 }, 
 "Tl536923": {
-"^ot:altLabel": "Etheostoma zonale", 
 "^ot:originalLabel": "Etheostoma zonale B", 
+"^ot:ottId": 915663, 
+"^ot:ottTaxonName": "Etheostoma zonale", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 73976, 
 "@tb:identifier.taxonVariant": 150925, 
@@ -198,8 +298,9 @@
 }
 }, 
 "Tl536924": {
-"^ot:altLabel": "Etheostoma zonistium", 
 "^ot:originalLabel": "Etheostoma zonistium B", 
+"^ot:ottId": 350997, 
+"^ot:ottTaxonName": "Etheostoma zonistium", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 155104, 
 "@tb:identifier.taxonVariant": 230555, 
@@ -208,8 +309,9 @@
 }
 }, 
 "Tl536925": {
-"^ot:altLabel": "Etheostoma bellator", 
 "^ot:originalLabel": "Etheostoma cf bellator B", 
+"^ot:ottId": 566468, 
+"^ot:ottTaxonName": "Etheostoma bellator", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 155080, 
 "@tb:identifier.taxonVariant": 230505, 
@@ -218,8 +320,9 @@
 }
 }, 
 "Tl536926": {
-"^ot:altLabel": "Etheostoma thalassinum", 
 "^ot:originalLabel": "Etheostoma thalassinum B", 
+"^ot:ottId": 350989, 
+"^ot:ottTaxonName": "Etheostoma thalassinum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 155102, 
 "@tb:identifier.taxonVariant": 230549, 
@@ -228,8 +331,9 @@
 }
 }, 
 "Tl536927": {
-"^ot:altLabel": "Etheostoma chlorosoma", 
 "^ot:originalLabel": "Etheostoma chlorosoma A", 
+"^ot:ottId": 340825, 
+"^ot:ottTaxonName": "Etheostoma chlorosomum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 73945, 
 "@tb:identifier.taxonVariant": 150854, 
@@ -239,8 +343,9 @@
 "^skos:prefLabel": "Etheostoma chlorosomum"
 }, 
 "Tl536928": {
-"^ot:altLabel": "Ammocrypta beanii", 
 "^ot:originalLabel": "Ammocrypta cf beanii D", 
+"^ot:ottId": 367806, 
+"^ot:ottTaxonName": "Ammocrypta beanii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 229991, 
 "@tb:identifier.taxonVariant": 293292, 
@@ -249,8 +354,9 @@
 }
 }, 
 "Tl536929": {
-"^ot:altLabel": "Etheostoma sequatchiense", 
 "^ot:originalLabel": "Etheostoma sequatchiense B", 
+"^ot:ottId": 930919, 
+"^ot:ottTaxonName": "Etheostoma sequatchiense", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 609259, 
 "@tb:identifier.taxonVariant": 813883, 
@@ -258,8 +364,9 @@
 }
 }, 
 "Tl536930": {
-"^ot:altLabel": "Etheostoma artesiae", 
 "^ot:originalLabel": "Etheostoma artesiae B", 
+"^ot:ottId": 846810, 
+"^ot:ottTaxonName": "Etheostoma artesiae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 363485, 
 "@tb:identifier.taxonVariant": 390928, 
@@ -268,8 +375,9 @@
 }
 }, 
 "Tl536931": {
-"^ot:altLabel": "Etheostoma basilare", 
 "^ot:originalLabel": "Etheostoma cf basilare FA", 
+"^ot:ottId": 1028738, 
+"^ot:ottTaxonName": "Etheostoma basilare", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 207541, 
 "@tb:identifier.taxonVariant": 276549, 
@@ -278,8 +386,9 @@
 }
 }, 
 "Tl536932": {
-"^ot:altLabel": "Etheostoma swannanoa", 
 "^ot:originalLabel": "Etheostoma swannanoa A", 
+"^ot:ottId": 618534, 
+"^ot:ottTaxonName": "Etheostoma swannanoa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 155100, 
 "@tb:identifier.taxonVariant": 230545, 
@@ -288,8 +397,9 @@
 }
 }, 
 "Tl536933": {
-"^ot:altLabel": "Etheostoma lawrencei", 
 "^ot:originalLabel": "Etheostoma lawrencei A", 
+"^ot:ottId": 322388, 
+"^ot:ottTaxonName": "Etheostoma lawrencei", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 363500, 
 "@tb:identifier.taxonVariant": 390956, 
@@ -298,11 +408,14 @@
 }
 }, 
 "Tl536934": {
-"^ot:originalLabel": "Nothonotus douglasi B"
+"^ot:originalLabel": "Nothonotus douglasi B", 
+"^ot:ottId": 948317, 
+"^ot:ottTaxonName": "Etheostoma douglasi"
 }, 
 "Tl536935": {
-"^ot:altLabel": "Etheostoma phytophilum", 
 "^ot:originalLabel": "Etheostoma phytophilum A", 
+"^ot:ottId": 451605, 
+"^ot:ottTaxonName": "Etheostoma phytophilum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 609260, 
 "@tb:identifier.taxonVariant": 813884, 
@@ -310,11 +423,14 @@
 }
 }, 
 "Tl536936": {
-"^ot:originalLabel": "Nothonotus rufilineatus AC"
+"^ot:originalLabel": "Nothonotus rufilineatus AC", 
+"^ot:ottId": 951887, 
+"^ot:ottTaxonName": "Etheostoma rufilineatum"
 }, 
 "Tl536937": {
-"^ot:altLabel": "Etheostoma whipplei", 
 "^ot:originalLabel": "Etheostoma whipplei B", 
+"^ot:ottId": 390063, 
+"^ot:ottTaxonName": "Etheostoma whipplei", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 73972, 
 "@tb:identifier.taxonVariant": 150915, 
@@ -323,8 +439,9 @@
 }
 }, 
 "Tl536938": {
-"^ot:altLabel": "Etheostoma variatum", 
 "^ot:originalLabel": "Etheostoma variatum B", 
+"^ot:ottId": 350993, 
+"^ot:ottTaxonName": "Etheostoma variatum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 155103, 
 "@tb:identifier.taxonVariant": 230553, 
@@ -333,8 +450,9 @@
 }
 }, 
 "Tl536939": {
-"^ot:altLabel": "Etheostoma edwini", 
 "^ot:originalLabel": "Etheostoma edwini A", 
+"^ot:ottId": 340845, 
+"^ot:ottTaxonName": "Etheostoma edwini", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 73951, 
 "@tb:identifier.taxonVariant": 150870, 
@@ -343,8 +461,9 @@
 }
 }, 
 "Tl536940": {
-"^ot:altLabel": "Percina evides", 
 "^ot:originalLabel": "Percina cf evides L", 
+"^ot:ottId": 340811, 
+"^ot:ottTaxonName": "Percina evides", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 73953, 
 "@tb:identifier.taxonVariant": 150875, 
@@ -353,11 +472,14 @@
 }
 }, 
 "Tl536941": {
-"^ot:originalLabel": "Etheostoma erythrozonum A"
+"^ot:originalLabel": "Etheostoma erythrozonum A", 
+"^ot:ottId": 570638, 
+"^ot:ottTaxonName": "Etheostoma erythrozonum"
 }, 
 "Tl536942": {
-"^ot:altLabel": "Etheostoma artesiae", 
 "^ot:originalLabel": "Etheostoma artesiae A", 
+"^ot:ottId": 846810, 
+"^ot:ottTaxonName": "Etheostoma artesiae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 363485, 
 "@tb:identifier.taxonVariant": 390928, 
@@ -366,8 +488,9 @@
 }
 }, 
 "Tl536943": {
-"^ot:altLabel": "Sander vitreus", 
 "^ot:originalLabel": "Sander vitreus A", 
+"^ot:ottId": 557687, 
+"^ot:ottTaxonName": "Sander vitreus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 250319, 
 "@tb:identifier.taxonVariant": 310163, 
@@ -376,17 +499,23 @@
 }
 }, 
 "Tl536944": {
-"^ot:originalLabel": "Nothonotus juliae D"
+"^ot:originalLabel": "Nothonotus juliae D", 
+"^ot:ottId": 915659, 
+"^ot:ottTaxonName": "Etheostoma juliae"
 }, 
 "Tl536945": {
-"^ot:originalLabel": "Nothonotus aquali B"
+"^ot:originalLabel": "Nothonotus aquali B", 
+"^ot:ottId": 802521, 
+"^ot:ottTaxonName": "Etheostoma aquali"
 }, 
 "Tl536946": {
+"^ot:altLabel": "Etheostoma cf spectabile", 
 "^ot:originalLabel": "Etheostoma cf spectabile hdrD"
 }, 
 "Tl536947": {
-"^ot:altLabel": "Etheostoma punctulatum", 
 "^ot:originalLabel": "Etheostoma punctulatum K", 
+"^ot:ottId": 957687, 
+"^ot:ottTaxonName": "Etheostoma punctulatum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 229996, 
 "@tb:identifier.taxonVariant": 293305, 
@@ -395,8 +524,9 @@
 }
 }, 
 "Tl536948": {
-"^ot:altLabel": "Percina caprodes", 
 "^ot:originalLabel": "Percina caprodes D", 
+"^ot:ottId": 814721, 
+"^ot:ottTaxonName": "Percina caprodes", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 73942, 
 "@tb:identifier.taxonVariant": 150848, 
@@ -405,11 +535,14 @@
 }
 }, 
 "Tl536949": {
-"^ot:originalLabel": "Nothonotus acuticeps A"
+"^ot:originalLabel": "Nothonotus acuticeps A", 
+"^ot:ottId": 948330, 
+"^ot:ottTaxonName": "Etheostoma acuticeps"
 }, 
 "Tl536950": {
-"^ot:altLabel": "Percina maculata", 
 "^ot:originalLabel": "Percina maculata A", 
+"^ot:ottId": 104319, 
+"^ot:ottTaxonName": "Percina maculata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 76461, 
 "@tb:identifier.taxonVariant": 153777, 
@@ -418,8 +551,9 @@
 }
 }, 
 "Tl536951": {
-"^ot:altLabel": "Etheostoma saludae", 
 "^ot:originalLabel": "Etheostoma saludae B", 
+"^ot:ottId": 919572, 
+"^ot:ottTaxonName": "Etheostoma saludae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 532539, 
 "@tb:identifier.taxonVariant": 706460, 
@@ -428,14 +562,19 @@
 }
 }, 
 "Tl536952": {
-"^ot:originalLabel": "Etheostoma simoterum tenCM"
+"^ot:originalLabel": "Etheostoma simoterum tenCM", 
+"^ot:ottId": 618537, 
+"^ot:ottTaxonName": "Etheostoma simoterum"
 }, 
 "Tl536953": {
-"^ot:originalLabel": "Percina apristis B"
+"^ot:originalLabel": "Percina apristis B", 
+"^ot:ottId": 1009554, 
+"^ot:ottTaxonName": "Percina apristis"
 }, 
 "Tl536954": {
-"^ot:altLabel": "Etheostoma colorosum", 
 "^ot:originalLabel": "Etheostoma colorosum B", 
+"^ot:ottId": 96979, 
+"^ot:ottTaxonName": "Etheostoma colorosum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 155084, 
 "@tb:identifier.taxonVariant": 230512, 
@@ -444,8 +583,9 @@
 }
 }, 
 "Tl536955": {
-"^ot:altLabel": "Etheostoma uniporum", 
 "^ot:originalLabel": "Etheostoma uniporum R", 
+"^ot:ottId": 170650, 
+"^ot:ottTaxonName": "Etheostoma uniporum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 363513, 
 "@tb:identifier.taxonVariant": 390978, 
@@ -454,8 +594,9 @@
 }
 }, 
 "Tl536956": {
-"^ot:altLabel": "Etheostoma zonifer", 
 "^ot:originalLabel": "Etheostoma zonifer A", 
+"^ot:ottId": 451610, 
+"^ot:ottTaxonName": "Etheostoma zonifer", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 609261, 
 "@tb:identifier.taxonVariant": 813892, 
@@ -463,8 +604,9 @@
 }
 }, 
 "Tl536957": {
-"^ot:altLabel": "Etheostoma lepidum", 
 "^ot:originalLabel": "Etheostoma lepidum A", 
+"^ot:ottId": 865495, 
+"^ot:ottTaxonName": "Etheostoma lepidum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 73958, 
 "@tb:identifier.taxonVariant": 150885, 
@@ -473,8 +615,9 @@
 }
 }, 
 "Tl536958": {
-"^ot:altLabel": "Etheostoma zonale", 
 "^ot:originalLabel": "Etheostoma zonale A", 
+"^ot:ottId": 915663, 
+"^ot:ottTaxonName": "Etheostoma zonale", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 73976, 
 "@tb:identifier.taxonVariant": 150925, 
@@ -483,8 +626,9 @@
 }
 }, 
 "Tl536959": {
-"^ot:altLabel": "Etheostoma australe", 
 "^ot:originalLabel": "Etheostoma australe A", 
+"^ot:ottId": 846813, 
+"^ot:ottTaxonName": "Etheostoma australe", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 363486, 
 "@tb:identifier.taxonVariant": 390931, 
@@ -493,8 +637,9 @@
 }
 }, 
 "Tl536960": {
-"^ot:altLabel": "Etheostoma corona", 
 "^ot:originalLabel": "Etheostoma corona A", 
+"^ot:ottId": 399805, 
+"^ot:ottTaxonName": "Etheostoma corona", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 101003, 
 "@tb:identifier.taxonVariant": 180224, 
@@ -503,8 +648,9 @@
 }
 }, 
 "Tl536961": {
-"^ot:altLabel": "Etheostoma obeyense", 
 "^ot:originalLabel": "Etheostoma obeyense X", 
+"^ot:ottId": 84336, 
+"^ot:ottTaxonName": "Etheostoma obeyense", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 101008, 
 "@tb:identifier.taxonVariant": 180234, 
@@ -513,8 +659,9 @@
 }
 }, 
 "Tl536962": {
-"^ot:altLabel": "Etheostoma gracile", 
 "^ot:originalLabel": "Etheostoma gracile A", 
+"^ot:ottId": 865500, 
+"^ot:ottTaxonName": "Etheostoma gracile", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 73956, 
 "@tb:identifier.taxonVariant": 150881, 
@@ -523,8 +670,9 @@
 }
 }, 
 "Tl536963": {
-"^ot:altLabel": "Etheostoma artesiae", 
 "^ot:originalLabel": "Etheostoma artesiae C", 
+"^ot:ottId": 846810, 
+"^ot:ottTaxonName": "Etheostoma artesiae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 363485, 
 "@tb:identifier.taxonVariant": 390928, 
@@ -533,8 +681,9 @@
 }
 }, 
 "Tl536964": {
-"^ot:altLabel": "Percina caprodes", 
 "^ot:originalLabel": "Percina cf caprodes T", 
+"^ot:ottId": 814721, 
+"^ot:ottTaxonName": "Percina caprodes", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 73942, 
 "@tb:identifier.taxonVariant": 150848, 
@@ -543,11 +692,13 @@
 }
 }, 
 "Tl536965": {
+"^ot:altLabel": "Etheostoma cf spectabile", 
 "^ot:originalLabel": "Etheostoma cf spectabile ozdB"
 }, 
 "Tl536966": {
-"^ot:altLabel": "Etheostoma sagitta", 
 "^ot:originalLabel": "Etheostoma sagitta A", 
+"^ot:ottId": 378445, 
+"^ot:ottTaxonName": "Etheostoma sagitta", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 73967, 
 "@tb:identifier.taxonVariant": 150905, 
@@ -556,8 +707,9 @@
 }
 }, 
 "Tl536967": {
-"^ot:altLabel": "Etheostoma longimanum", 
 "^ot:originalLabel": "Etheostoma longimanum C", 
+"^ot:ottId": 26375, 
+"^ot:ottTaxonName": "Etheostoma longimanum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 545681, 
 "@tb:identifier.taxonVariant": 723547, 
@@ -566,11 +718,14 @@
 }
 }, 
 "Tl536968": {
-"^ot:originalLabel": "Etheostoma erythrozonum B"
+"^ot:originalLabel": "Etheostoma erythrozonum B", 
+"^ot:ottId": 570638, 
+"^ot:ottTaxonName": "Etheostoma erythrozonum"
 }, 
 "Tl536969": {
-"^ot:altLabel": "Etheostoma fricksium", 
 "^ot:originalLabel": "Etheostoma fricksium B", 
+"^ot:ottId": 322397, 
+"^ot:ottTaxonName": "Etheostoma fricksium", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 363495, 
 "@tb:identifier.taxonVariant": 390948, 
@@ -579,8 +734,9 @@
 }
 }, 
 "Tl536970": {
-"^ot:altLabel": "Etheostoma histrio", 
 "^ot:originalLabel": "Etheostoma histrio A", 
+"^ot:ottId": 865492, 
+"^ot:ottTaxonName": "Etheostoma histrio", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 73957, 
 "@tb:identifier.taxonVariant": 150883, 
@@ -589,8 +745,9 @@
 }
 }, 
 "Tl536971": {
-"^ot:altLabel": "Etheostoma davisoni", 
 "^ot:originalLabel": "Etheostoma davisoni A", 
+"^ot:ottId": 910804, 
+"^ot:ottTaxonName": "Etheostoma davisoni", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 609262, 
 "@tb:identifier.taxonVariant": 813898, 
@@ -598,8 +755,9 @@
 }
 }, 
 "Tl536972": {
-"^ot:altLabel": "Etheostoma saludae", 
 "^ot:originalLabel": "Etheostoma saludae A", 
+"^ot:ottId": 919572, 
+"^ot:ottTaxonName": "Etheostoma saludae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 532539, 
 "@tb:identifier.taxonVariant": 706460, 
@@ -608,8 +766,9 @@
 }
 }, 
 "Tl536973": {
-"^ot:altLabel": "Etheostoma virgatum", 
 "^ot:originalLabel": "Etheostoma virgatum E", 
+"^ot:ottId": 848589, 
+"^ot:ottTaxonName": "Etheostoma virgatum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 101016, 
 "@tb:identifier.taxonVariant": 180248, 
@@ -618,8 +777,9 @@
 }
 }, 
 "Tl536974": {
-"^ot:altLabel": "Percina nasuta", 
 "^ot:originalLabel": "Percina nasuta A", 
+"^ot:ottId": 865503, 
+"^ot:ottTaxonName": "Percina nasuta", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 73961, 
 "@tb:identifier.taxonVariant": 150892, 
@@ -628,8 +788,9 @@
 }
 }, 
 "Tl536975": {
-"^ot:altLabel": "Etheostoma luteovinctum", 
 "^ot:originalLabel": "Etheostoma luteovinctum D", 
+"^ot:ottId": 790866, 
+"^ot:ottTaxonName": "Etheostoma luteovinctum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 73959, 
 "@tb:identifier.taxonVariant": 150887, 
@@ -638,8 +799,9 @@
 }
 }, 
 "Tl536976": {
-"^ot:altLabel": "Etheostoma grahami", 
 "^ot:originalLabel": "Etheostoma grahami A", 
+"^ot:ottId": 322394, 
+"^ot:ottTaxonName": "Etheostoma grahami", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 363496, 
 "@tb:identifier.taxonVariant": 390950, 
@@ -648,8 +810,9 @@
 }
 }, 
 "Tl536977": {
-"^ot:altLabel": "Etheostoma cinereum", 
 "^ot:originalLabel": "Etheostoma cinereum A", 
+"^ot:ottId": 943011, 
+"^ot:ottTaxonName": "Etheostoma cinereum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 73946, 
 "@tb:identifier.taxonVariant": 150858, 
@@ -658,8 +821,9 @@
 }
 }, 
 "Tl536978": {
-"^ot:altLabel": "Etheostoma asprigene", 
 "^ot:originalLabel": "Etheostoma cf asprigene tomA", 
+"^ot:ottId": 892763, 
+"^ot:ottTaxonName": "Etheostoma asprigene", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 229992, 
 "@tb:identifier.taxonVariant": 293296, 
@@ -668,8 +832,9 @@
 }
 }, 
 "Tl536979": {
-"^ot:altLabel": "Etheostoma stigmaeum", 
 "^ot:originalLabel": "Etheostoma stigmaeum A", 
+"^ot:ottId": 390059, 
+"^ot:ottTaxonName": "Etheostoma stigmaeum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 73969, 
 "@tb:identifier.taxonVariant": 150909, 
@@ -678,8 +843,9 @@
 }
 }, 
 "Tl536980": {
-"^ot:altLabel": "Percina phoxocephala", 
 "^ot:originalLabel": "Percina phoxocephala A", 
+"^ot:ottId": 150578, 
+"^ot:ottTaxonName": "Percina phoxocephala", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 73965, 
 "@tb:identifier.taxonVariant": 150901, 
@@ -688,11 +854,14 @@
 }
 }, 
 "Tl536981": {
-"^ot:originalLabel": "Nothonotus microlepidus B"
+"^ot:originalLabel": "Nothonotus microlepidus B", 
+"^ot:ottId": 422662, 
+"^ot:ottTaxonName": "Etheostoma microlepidum"
 }, 
 "Tl536982": {
-"^ot:altLabel": "Percina peltata", 
 "^ot:originalLabel": "Percina peltata A", 
+"^ot:ottId": 751803, 
+"^ot:ottTaxonName": "Percina peltata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 155819, 
 "@tb:identifier.taxonVariant": 231083, 
@@ -701,8 +870,9 @@
 }
 }, 
 "Tl536983": {
-"^ot:altLabel": "Etheostoma fragi", 
 "^ot:originalLabel": "Etheostoma fragi B", 
+"^ot:ottId": 322411, 
+"^ot:ottTaxonName": "Etheostoma fragi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 363494, 
 "@tb:identifier.taxonVariant": 390945, 
@@ -711,8 +881,9 @@
 }
 }, 
 "Tl536984": {
-"^ot:altLabel": "Etheostoma proeliare", 
 "^ot:originalLabel": "Etheostoma proeliare A", 
+"^ot:ottId": 892758, 
+"^ot:ottTaxonName": "Etheostoma proeliare", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 229995, 
 "@tb:identifier.taxonVariant": 293303, 
@@ -721,8 +892,9 @@
 }
 }, 
 "Tl536985": {
-"^ot:altLabel": "Etheostoma barrenense", 
 "^ot:originalLabel": "Etheostoma barrenense A", 
+"^ot:ottId": 566471, 
+"^ot:ottTaxonName": "Etheostoma barrenense", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 155079, 
 "@tb:identifier.taxonVariant": 230503, 
@@ -731,8 +903,9 @@
 }
 }, 
 "Tl536986": {
-"^ot:altLabel": "Percina macrocephala", 
 "^ot:originalLabel": "Percina macrocephala B", 
+"^ot:ottId": 751796, 
+"^ot:ottTaxonName": "Percina macrocephala", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 155817, 
 "@tb:identifier.taxonVariant": 231078, 
@@ -741,8 +914,9 @@
 }
 }, 
 "Tl536987": {
-"^ot:altLabel": "Etheostoma segrex", 
 "^ot:originalLabel": "Etheostoma segrex B", 
+"^ot:ottId": 896993, 
+"^ot:ottTaxonName": "Etheostoma segrex", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 363508, 
 "@tb:identifier.taxonVariant": 390971, 
@@ -751,8 +925,9 @@
 }
 }, 
 "Tl536988": {
-"^ot:altLabel": "Etheostoma rupestre", 
 "^ot:originalLabel": "Etheostoma rupestre C", 
+"^ot:ottId": 618521, 
+"^ot:ottTaxonName": "Etheostoma rupestre", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 155096, 
 "@tb:identifier.taxonVariant": 230537, 
@@ -761,8 +936,9 @@
 }
 }, 
 "Tl536989": {
-"^ot:altLabel": "Percina burtoni", 
 "^ot:originalLabel": "Percina burtoni B", 
+"^ot:ottId": 1002460, 
+"^ot:ottTaxonName": "Percina burtoni", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 155809, 
 "@tb:identifier.taxonVariant": 231058, 
@@ -771,8 +947,9 @@
 }
 }, 
 "Tl536990": {
-"^ot:altLabel": "Etheostoma flavum", 
 "^ot:originalLabel": "Etheostoma flavum A", 
+"^ot:ottId": 96991, 
+"^ot:ottTaxonName": "Etheostoma flavum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 155088, 
 "@tb:identifier.taxonVariant": 230520, 
@@ -781,8 +958,9 @@
 }
 }, 
 "Tl536991": {
-"^ot:altLabel": "Etheostoma rupestre", 
 "^ot:originalLabel": "Etheostoma rupestre G", 
+"^ot:ottId": 618521, 
+"^ot:ottTaxonName": "Etheostoma rupestre", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 155096, 
 "@tb:identifier.taxonVariant": 230537, 
@@ -791,11 +969,14 @@
 }
 }, 
 "Tl536992": {
-"^ot:originalLabel": "Nothonotus tippecanoe B"
+"^ot:originalLabel": "Nothonotus tippecanoe B", 
+"^ot:ottId": 206192, 
+"^ot:ottTaxonName": "Etheostoma tippecanoe"
 }, 
 "Tl536993": {
-"^ot:altLabel": "Percina burtoni", 
 "^ot:originalLabel": "Percina burtoni A", 
+"^ot:ottId": 1002460, 
+"^ot:ottTaxonName": "Percina burtoni", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 155809, 
 "@tb:identifier.taxonVariant": 231058, 
@@ -804,11 +985,14 @@
 }
 }, 
 "Tl536994": {
-"^ot:originalLabel": "Percina williamsi A"
+"^ot:originalLabel": "Percina williamsi A", 
+"^ot:ottId": 25005, 
+"^ot:ottTaxonName": "Percina williamsi"
 }, 
 "Tl536995": {
-"^ot:altLabel": "Etheostoma pseudovulatum", 
 "^ot:originalLabel": "Etheostoma pseudovulatum B", 
+"^ot:ottId": 275986, 
+"^ot:ottTaxonName": "Etheostoma pseudovulatum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 101012, 
 "@tb:identifier.taxonVariant": 180241, 
@@ -817,11 +1001,14 @@
 }
 }, 
 "Tl536996": {
-"^ot:originalLabel": "Nothonotus moorei L"
+"^ot:originalLabel": "Nothonotus moorei L", 
+"^ot:ottId": 951883, 
+"^ot:ottTaxonName": "Etheostoma moorei"
 }, 
 "Tl536997": {
-"^ot:altLabel": "Percina sciera", 
 "^ot:originalLabel": "Percina sciera B", 
+"^ot:ottId": 177443, 
+"^ot:ottTaxonName": "Percina sciera", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 155828, 
 "@tb:identifier.taxonVariant": 231111, 
@@ -830,8 +1017,9 @@
 }
 }, 
 "Tl536998": {
-"^ot:altLabel": "Percina rex", 
 "^ot:originalLabel": "Percina rex A", 
+"^ot:ottId": 177451, 
+"^ot:ottTaxonName": "Percina rex", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 155826, 
 "@tb:identifier.taxonVariant": 231106, 
@@ -840,8 +1028,9 @@
 }
 }, 
 "Tl536999": {
-"^ot:altLabel": "Nothonotus juliae", 
 "^ot:originalLabel": "Nothonotus juliae A", 
+"^ot:ottId": 915659, 
+"^ot:ottTaxonName": "Etheostoma juliae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 73975, 
 "@tb:identifier.taxonVariant": 150923, 
@@ -851,8 +1040,9 @@
 "^skos:prefLabel": "Etheostoma juliae"
 }, 
 "Tl537000": {
-"^ot:altLabel": "Etheostoma burri", 
 "^ot:originalLabel": "Etheostoma burri B", 
+"^ot:ottId": 957690, 
+"^ot:ottTaxonName": "Etheostoma burri", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 229994, 
 "@tb:identifier.taxonVariant": 293301, 
@@ -861,8 +1051,9 @@
 }
 }, 
 "Tl537001": {
-"^ot:altLabel": "Etheostoma planasaxatile", 
 "^ot:originalLabel": "Etheostoma planasaxatile A", 
+"^ot:ottId": 961038, 
+"^ot:ottTaxonName": "Etheostoma planasaxatile", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 297351, 
 "@tb:identifier.taxonVariant": 347161, 
@@ -871,8 +1062,9 @@
 }
 }, 
 "Tl537002": {
-"^ot:altLabel": "Etheostoma chienense", 
 "^ot:originalLabel": "Etheostoma chienense B", 
+"^ot:ottId": 84222, 
+"^ot:ottTaxonName": "Etheostoma chienense", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 101002, 
 "@tb:identifier.taxonVariant": 180222, 
@@ -881,11 +1073,14 @@
 }
 }, 
 "Tl537003": {
-"^ot:originalLabel": "Nothonotus wapiti E"
+"^ot:originalLabel": "Nothonotus wapiti E", 
+"^ot:ottId": 897598, 
+"^ot:ottTaxonName": "Etheostoma wapiti"
 }, 
 "Tl537004": {
-"^ot:altLabel": "Etheostoma bellator", 
 "^ot:originalLabel": "Etheostoma cf bellator C", 
+"^ot:ottId": 566468, 
+"^ot:ottTaxonName": "Etheostoma bellator", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 155080, 
 "@tb:identifier.taxonVariant": 230505, 
@@ -894,8 +1089,9 @@
 }
 }, 
 "Tl537005": {
-"^ot:altLabel": "Percina crassa", 
 "^ot:originalLabel": "Percina crassa C", 
+"^ot:ottId": 262644, 
+"^ot:ottTaxonName": "Percina crassa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 155811, 
 "@tb:identifier.taxonVariant": 231064, 
@@ -904,8 +1100,9 @@
 }
 }, 
 "Tl537006": {
-"^ot:altLabel": "Percina macrolepida", 
 "^ot:originalLabel": "Percina macrolepida A", 
+"^ot:ottId": 751800, 
+"^ot:ottTaxonName": "Percina macrolepida", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 155818, 
 "@tb:identifier.taxonVariant": 231080, 
@@ -914,8 +1111,9 @@
 }
 }, 
 "Tl537007": {
-"^ot:altLabel": "Etheostoma basilare", 
 "^ot:originalLabel": "Etheostoma cf basilare AX", 
+"^ot:ottId": 1028738, 
+"^ot:ottTaxonName": "Etheostoma basilare", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 207541, 
 "@tb:identifier.taxonVariant": 276549, 
@@ -924,11 +1122,13 @@
 }
 }, 
 "Tl537008": {
+"^ot:altLabel": "Etheostoma cf spectabile", 
 "^ot:originalLabel": "Etheostoma cf spectabile mamB"
 }, 
 "Tl537009": {
-"^ot:altLabel": "Etheostoma sagitta", 
 "^ot:originalLabel": "Etheostoma sagittaC", 
+"^ot:ottId": 378445, 
+"^ot:ottTaxonName": "Etheostoma sagitta", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 73967, 
 "@tb:identifier.taxonVariant": 150905, 
@@ -937,14 +1137,17 @@
 }
 }, 
 "Tl537010": {
+"^ot:altLabel": "Etheostoma cf spectabile", 
 "^ot:originalLabel": "Etheostoma cf spectabile sheC"
 }, 
 "Tl537011": {
+"^ot:altLabel": "Etheostoma cf spectabile", 
 "^ot:originalLabel": "Etheostoma cf spectabile mamA"
 }, 
 "Tl537012": {
-"^ot:altLabel": "Etheostoma bellator", 
 "^ot:originalLabel": "Etheostoma cf bellator D", 
+"^ot:ottId": 566468, 
+"^ot:ottTaxonName": "Etheostoma bellator", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 155080, 
 "@tb:identifier.taxonVariant": 230505, 
@@ -953,8 +1156,9 @@
 }
 }, 
 "Tl537013": {
-"^ot:altLabel": "Etheostoma swaini", 
 "^ot:originalLabel": "Etheostoma swaini B", 
+"^ot:ottId": 896985, 
+"^ot:ottTaxonName": "Etheostoma swaini", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 363510, 
 "@tb:identifier.taxonVariant": 390972, 
@@ -974,8 +1178,9 @@
 "^skos:prefLabel": "Etheostoma simoterum atripinne"
 }, 
 "Tl537015": {
-"^ot:altLabel": "Percina aurora", 
 "^ot:originalLabel": "Percina aurora A", 
+"^ot:ottId": 262631, 
+"^ot:ottTaxonName": "Percina aurora", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 155806, 
 "@tb:identifier.taxonVariant": 231052, 
@@ -984,8 +1189,9 @@
 }
 }, 
 "Tl537016": {
-"^ot:altLabel": "Etheostoma basilare", 
 "^ot:originalLabel": "Etheostoma cf basilare AJ", 
+"^ot:ottId": 1028738, 
+"^ot:ottTaxonName": "Etheostoma basilare", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 207541, 
 "@tb:identifier.taxonVariant": 276549, 
@@ -994,8 +1200,9 @@
 }
 }, 
 "Tl537017": {
-"^ot:altLabel": "Etheostoma tallapoosae", 
 "^ot:originalLabel": "Etheostoma tallapoosae A", 
+"^ot:ottId": 1004127, 
+"^ot:ottTaxonName": "Etheostoma tallapoosae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 155110, 
 "@tb:identifier.taxonVariant": 230562, 
@@ -1004,8 +1211,9 @@
 }
 }, 
 "Tl537018": {
-"^ot:altLabel": "Percina smithvanizi", 
 "^ot:originalLabel": "Percina smithvanizi A", 
+"^ot:ottId": 1012110, 
+"^ot:ottTaxonName": "Percina smithvanizi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 386640, 
 "@tb:identifier.taxonVariant": 402826, 
@@ -1014,8 +1222,9 @@
 }
 }, 
 "Tl537019": {
-"^ot:altLabel": "Etheostoma serrifer", 
 "^ot:originalLabel": "Etheostoma serrifer A", 
+"^ot:ottId": 336737, 
+"^ot:ottTaxonName": "Etheostoma serrifer", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 532540, 
 "@tb:identifier.taxonVariant": 706463, 
@@ -1024,8 +1233,9 @@
 }
 }, 
 "Tl537020": {
-"^ot:altLabel": "Percina uranidea", 
 "^ot:originalLabel": "Percina uranidea A", 
+"^ot:ottId": 177455, 
+"^ot:ottTaxonName": "Percina uranidea", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 155833, 
 "@tb:identifier.taxonVariant": 231124, 
@@ -1034,8 +1244,9 @@
 }
 }, 
 "Tl537021": {
-"^ot:altLabel": "Percina shumardi", 
 "^ot:originalLabel": "Percina shumardi A", 
+"^ot:ottId": 177439, 
+"^ot:ottTaxonName": "Percina shumardi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 155829, 
 "@tb:identifier.taxonVariant": 231114, 
@@ -1044,8 +1255,9 @@
 }
 }, 
 "Tl537022": {
-"^ot:altLabel": "Etheostoma pyrrhogaster", 
 "^ot:originalLabel": "Etheostoma pyrrhogaster A", 
+"^ot:ottId": 618509, 
+"^ot:ottTaxonName": "Etheostoma pyrrhogaster", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 155092, 
 "@tb:identifier.taxonVariant": 230529, 
@@ -1054,11 +1266,14 @@
 }
 }, 
 "Tl537023": {
-"^ot:originalLabel": "Etheostoma erizonum B"
+"^ot:originalLabel": "Etheostoma erizonum B", 
+"^ot:ottId": 996888, 
+"^ot:ottTaxonName": "Etheostoma erizonum"
 }, 
 "Tl537024": {
-"^ot:altLabel": "Etheostoma whipplei", 
 "^ot:originalLabel": "Etheostoma whipplei C", 
+"^ot:ottId": 390063, 
+"^ot:ottTaxonName": "Etheostoma whipplei", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 73972, 
 "@tb:identifier.taxonVariant": 150915, 
@@ -1067,8 +1282,9 @@
 }
 }, 
 "Tl537025": {
-"^ot:altLabel": "Etheostoma punctulatum", 
 "^ot:originalLabel": "Etheostoma punctulatum L", 
+"^ot:ottId": 957687, 
+"^ot:ottTaxonName": "Etheostoma punctulatum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 229996, 
 "@tb:identifier.taxonVariant": 293305, 
@@ -1077,11 +1293,14 @@
 }
 }, 
 "Tl537026": {
-"^ot:originalLabel": "Nothonotus acuticeps B"
+"^ot:originalLabel": "Nothonotus acuticeps B", 
+"^ot:ottId": 948330, 
+"^ot:ottTaxonName": "Etheostoma acuticeps"
 }, 
 "Tl537027": {
-"^ot:altLabel": "Etheostoma kantuckeense", 
 "^ot:originalLabel": "Etheostoma kantuckeense A", 
+"^ot:ottId": 322391, 
+"^ot:ottTaxonName": "Etheostoma kantuckeense", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 363499, 
 "@tb:identifier.taxonVariant": 390954, 
@@ -1090,8 +1309,9 @@
 }
 }, 
 "Tl537028": {
-"^ot:altLabel": "Etheostoma fricksium", 
 "^ot:originalLabel": "Etheostoma fricksium A", 
+"^ot:ottId": 322397, 
+"^ot:ottTaxonName": "Etheostoma fricksium", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 363495, 
 "@tb:identifier.taxonVariant": 390948, 
@@ -1100,8 +1320,9 @@
 }
 }, 
 "Tl537029": {
-"^ot:altLabel": "Etheostoma barbouri", 
 "^ot:originalLabel": "Etheostoma barbouri A", 
+"^ot:ottId": 208154, 
+"^ot:ottTaxonName": "Etheostoma barbouri", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 101001, 
 "@tb:identifier.taxonVariant": 180220, 
@@ -1110,8 +1331,9 @@
 }
 }, 
 "Tl537030": {
-"^ot:altLabel": "Etheostoma pseudovulatum", 
 "^ot:originalLabel": "Etheostoma pseudovulatum A", 
+"^ot:ottId": 275986, 
+"^ot:ottTaxonName": "Etheostoma pseudovulatum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 101012, 
 "@tb:identifier.taxonVariant": 180241, 
@@ -1120,8 +1342,9 @@
 }
 }, 
 "Tl537031": {
-"^ot:altLabel": "Etheostoma kanawhae", 
 "^ot:originalLabel": "Etheostoma kanawhae A", 
+"^ot:ottId": 870843, 
+"^ot:ottTaxonName": "Etheostoma kanawhae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 171340, 
 "@tb:identifier.taxonVariant": 245456, 
@@ -1130,8 +1353,9 @@
 }
 }, 
 "Tl537032": {
-"^ot:altLabel": "Ammocrypta clara", 
 "^ot:originalLabel": "Ammocrypta clara A", 
+"^ot:ottId": 915550, 
+"^ot:ottTaxonName": "Ammocrypta clara", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 89644, 
 "@tb:identifier.taxonVariant": 168568, 
@@ -1140,8 +1364,9 @@
 }
 }, 
 "Tl537033": {
-"^ot:altLabel": "Etheostoma swaini", 
 "^ot:originalLabel": "Etheostoma swaini A", 
+"^ot:ottId": 896985, 
+"^ot:ottTaxonName": "Etheostoma swaini", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 363510, 
 "@tb:identifier.taxonVariant": 390972, 
@@ -1150,8 +1375,9 @@
 }
 }, 
 "Tl537034": {
-"^ot:altLabel": "Etheostoma jessiae", 
 "^ot:originalLabel": "Etheostoma jessiae C", 
+"^ot:ottId": 322401, 
+"^ot:ottTaxonName": "Etheostoma jessiae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 363498, 
 "@tb:identifier.taxonVariant": 390952, 
@@ -1160,8 +1386,9 @@
 }
 }, 
 "Tl537035": {
-"^ot:altLabel": "Etheostoma etnieri", 
 "^ot:originalLabel": "Etheostoma etnieri A", 
+"^ot:ottId": 96988, 
+"^ot:ottTaxonName": "Etheostoma etnieri", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 155087, 
 "@tb:identifier.taxonVariant": 230518, 
@@ -1170,8 +1397,9 @@
 }
 }, 
 "Tl537036": {
-"^ot:altLabel": "Ammocrypta vivax", 
 "^ot:originalLabel": "Ammocrypta vivax B", 
+"^ot:ottId": 748124, 
+"^ot:ottTaxonName": "Ammocrypta vivax", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 111087, 
 "@tb:identifier.taxonVariant": 189440, 
@@ -1180,8 +1408,9 @@
 }
 }, 
 "Tl537037": {
-"^ot:altLabel": "Percina notogramma", 
 "^ot:originalLabel": "Percina notogramma A", 
+"^ot:ottId": 751784, 
+"^ot:ottTaxonName": "Percina notogramma", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 155822, 
 "@tb:identifier.taxonVariant": 231093, 
@@ -1190,8 +1419,9 @@
 }
 }, 
 "Tl537038": {
-"^ot:altLabel": "Crystallaria asprella", 
 "^ot:originalLabel": "Crystallaria asprella A", 
+"^ot:ottId": 340836, 
+"^ot:ottTaxonName": "Crystallaria asprella", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 73950, 
 "@tb:identifier.taxonVariant": 150867, 
@@ -1200,11 +1430,14 @@
 }
 }, 
 "Tl537039": {
-"^ot:originalLabel": "Nothonotus bellus B"
+"^ot:originalLabel": "Nothonotus bellus B", 
+"^ot:ottId": 892766, 
+"^ot:ottTaxonName": "Etheostoma bellum"
 }, 
 "Tl537040": {
-"^ot:altLabel": "Etheostoma caeruleum", 
 "^ot:originalLabel": "Etheostoma cf caeruleum AB", 
+"^ot:ottId": 814726, 
+"^ot:ottTaxonName": "Etheostoma caeruleum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 73944, 
 "@tb:identifier.taxonVariant": 150852, 
@@ -1213,8 +1446,9 @@
 }
 }, 
 "Tl537041": {
-"^ot:altLabel": "Etheostoma bison", 
 "^ot:originalLabel": "Etheostoma bison D", 
+"^ot:ottId": 846824, 
+"^ot:ottTaxonName": "Etheostoma bison", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 363489, 
 "@tb:identifier.taxonVariant": 390935, 
@@ -1223,8 +1457,9 @@
 }
 }, 
 "Tl537042": {
-"^ot:altLabel": "Etheostoma fonticola", 
 "^ot:originalLabel": "Etheostoma fonticola A", 
+"^ot:ottId": 339721, 
+"^ot:ottTaxonName": "Etheostoma fonticola", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 425822, 
 "@tb:identifier.taxonVariant": 559802, 
@@ -1233,8 +1468,9 @@
 }
 }, 
 "Tl537043": {
-"^ot:altLabel": "Ammocrypta bifascia", 
 "^ot:originalLabel": "Ammocrypta bifascia B", 
+"^ot:ottId": 748112, 
+"^ot:ottTaxonName": "Ammocrypta bifascia", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 111084, 
 "@tb:identifier.taxonVariant": 189431, 
@@ -1243,14 +1479,19 @@
 }
 }, 
 "Tl537044": {
-"^ot:originalLabel": "Etheostoma spilotum F"
+"^ot:originalLabel": "Etheostoma spilotum F", 
+"^ot:ottId": 470349, 
+"^ot:ottTaxonName": "Etheostoma spilotum"
 }, 
 "Tl537045": {
-"^ot:originalLabel": "Etheostoma meadiae A"
+"^ot:originalLabel": "Etheostoma meadiae A", 
+"^ot:ottId": 474824, 
+"^ot:ottTaxonName": "Etheostoma meadiae"
 }, 
 "Tl537046": {
-"^ot:altLabel": "Etheostoma cinereum", 
 "^ot:originalLabel": "Etheostoma cinereum B", 
+"^ot:ottId": 943011, 
+"^ot:ottTaxonName": "Etheostoma cinereum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 73946, 
 "@tb:identifier.taxonVariant": 150858, 
@@ -1259,8 +1500,9 @@
 }
 }, 
 "Tl537047": {
-"^ot:altLabel": "Etheostoma longimanum", 
 "^ot:originalLabel": "Etheostoma longimanum A", 
+"^ot:ottId": 26375, 
+"^ot:ottTaxonName": "Etheostoma longimanum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 545681, 
 "@tb:identifier.taxonVariant": 723547, 
@@ -1269,8 +1511,9 @@
 }
 }, 
 "Tl537048": {
-"^ot:altLabel": "Percina stictogaster", 
 "^ot:originalLabel": "Percina stictogaster A", 
+"^ot:ottId": 390375, 
+"^ot:ottTaxonName": "Percina stictogaster", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 89638, 
 "@tb:identifier.taxonVariant": 168559, 
@@ -1279,8 +1522,9 @@
 }
 }, 
 "Tl537049": {
-"^ot:altLabel": "Etheostoma euzonum", 
 "^ot:originalLabel": "Etheostoma euzonum C", 
+"^ot:ottId": 340842, 
+"^ot:ottTaxonName": "Etheostoma euzonum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 73952, 
 "@tb:identifier.taxonVariant": 150873, 
@@ -1289,8 +1533,9 @@
 }
 }, 
 "Tl537050": {
-"^ot:altLabel": "Etheostoma pyrrhogaster", 
 "^ot:originalLabel": "Etheostoma pyrrhogaster B", 
+"^ot:ottId": 618509, 
+"^ot:ottTaxonName": "Etheostoma pyrrhogaster", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 155092, 
 "@tb:identifier.taxonVariant": 230529, 
@@ -1299,11 +1544,14 @@
 }
 }, 
 "Tl537051": {
-"^ot:originalLabel": "Etheostoma humerale A"
+"^ot:originalLabel": "Etheostoma humerale A", 
+"^ot:ottId": 958709, 
+"^ot:ottTaxonName": "Etheostoma humerale"
 }, 
 "Tl537052": {
-"^ot:altLabel": "Etheostoma variatum", 
 "^ot:originalLabel": "Etheostoma variatum D", 
+"^ot:ottId": 350993, 
+"^ot:ottTaxonName": "Etheostoma variatum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 155103, 
 "@tb:identifier.taxonVariant": 230553, 
@@ -1312,8 +1560,9 @@
 }
 }, 
 "Tl537053": {
-"^ot:altLabel": "Percina roanoka", 
 "^ot:originalLabel": "Percina roanoka A", 
+"^ot:ottId": 177446, 
+"^ot:ottTaxonName": "Percina roanoka", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 155827, 
 "@tb:identifier.taxonVariant": 231109, 
@@ -1322,8 +1571,9 @@
 }
 }, 
 "Tl537054": {
-"^ot:altLabel": "Etheostoma raneyi", 
 "^ot:originalLabel": "Etheostoma raneyi B", 
+"^ot:ottId": 618526, 
+"^ot:ottTaxonName": "Etheostoma raneyi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 155095, 
 "@tb:identifier.taxonVariant": 230535, 
@@ -1332,8 +1582,9 @@
 }
 }, 
 "Tl537055": {
-"^ot:altLabel": "Percina sipsi", 
 "^ot:originalLabel": "Percina sipsi C", 
+"^ot:ottId": 1012113, 
+"^ot:ottTaxonName": "Percina sipsi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 386639, 
 "@tb:identifier.taxonVariant": 402825, 
@@ -1342,8 +1593,9 @@
 }
 }, 
 "Tl537056": {
-"^ot:altLabel": "Etheostoma lachneri", 
 "^ot:originalLabel": "Etheostoma lachneri B", 
+"^ot:ottId": 97004, 
+"^ot:ottTaxonName": "Etheostoma lachneri", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 155090, 
 "@tb:identifier.taxonVariant": 230525, 
@@ -1352,8 +1604,9 @@
 }
 }, 
 "Tl537057": {
-"^ot:altLabel": "Etheostoma bellator", 
 "^ot:originalLabel": "Etheostoma bellator A", 
+"^ot:ottId": 566468, 
+"^ot:ottTaxonName": "Etheostoma bellator", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 155080, 
 "@tb:identifier.taxonVariant": 230505, 
@@ -1362,8 +1615,9 @@
 }
 }, 
 "Tl537058": {
-"^ot:altLabel": "Etheostoma coosae", 
 "^ot:originalLabel": "Etheostoma coosae C", 
+"^ot:ottId": 96994, 
+"^ot:ottTaxonName": "Etheostoma coosae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 155085, 
 "@tb:identifier.taxonVariant": 230515, 
@@ -1372,8 +1626,9 @@
 }
 }, 
 "Tl537059": {
-"^ot:altLabel": "Percina caprodes", 
 "^ot:originalLabel": "Percina cf caprodes P", 
+"^ot:ottId": 814721, 
+"^ot:ottTaxonName": "Percina caprodes", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 73942, 
 "@tb:identifier.taxonVariant": 150848, 
@@ -1382,11 +1637,14 @@
 }
 }, 
 "Tl537060": {
-"^ot:originalLabel": "Etheostoma lemniscatum Y"
+"^ot:originalLabel": "Etheostoma lemniscatum Y", 
+"^ot:ottId": 958715, 
+"^ot:ottTaxonName": "Etheostoma lemniscatum"
 }, 
 "Tl537061": {
-"^ot:altLabel": "Etheostoma podostemone", 
 "^ot:originalLabel": "Etheostoma podostemone B", 
+"^ot:ottId": 390358, 
+"^ot:ottTaxonName": "Etheostoma podostemone", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 89637, 
 "@tb:identifier.taxonVariant": 168557, 
@@ -1395,8 +1653,9 @@
 }
 }, 
 "Tl537062": {
-"^ot:altLabel": "Etheostoma microperca", 
 "^ot:originalLabel": "Etheostoma microperca A", 
+"^ot:ottId": 897009, 
+"^ot:ottTaxonName": "Etheostoma microperca", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 363502, 
 "@tb:identifier.taxonVariant": 390960, 
@@ -1405,8 +1664,9 @@
 }
 }, 
 "Tl537063": {
-"^ot:altLabel": "Etheostoma stigmaeum", 
 "^ot:originalLabel": "Etheostoma stigmaeum B", 
+"^ot:ottId": 390059, 
+"^ot:ottTaxonName": "Etheostoma stigmaeum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 73969, 
 "@tb:identifier.taxonVariant": 150909, 
@@ -1415,8 +1675,9 @@
 }
 }, 
 "Tl537064": {
-"^ot:altLabel": "Etheostoma nigrum", 
 "^ot:originalLabel": "Etheostoma nigrum A", 
+"^ot:ottId": 865507, 
+"^ot:ottTaxonName": "Etheostoma nigrum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 73962, 
 "@tb:identifier.taxonVariant": 150894, 
@@ -1425,8 +1686,9 @@
 }
 }, 
 "Tl537065": {
-"^ot:altLabel": "Percina copelandi", 
 "^ot:originalLabel": "Percina copelandi A", 
+"^ot:ottId": 340829, 
+"^ot:ottTaxonName": "Percina copelandi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 73948, 
 "@tb:identifier.taxonVariant": 150862, 
@@ -1435,8 +1697,9 @@
 }
 }, 
 "Tl537066": {
-"^ot:altLabel": "Etheostoma cervus", 
 "^ot:originalLabel": "Etheostoma cervus A", 
+"^ot:ottId": 617256, 
+"^ot:ottTaxonName": "Etheostoma cervus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 530271, 
 "@tb:identifier.taxonVariant": 703360, 
@@ -1445,11 +1708,14 @@
 }
 }, 
 "Tl537067": {
-"^ot:originalLabel": "Nothonotus vulneratus A"
+"^ot:originalLabel": "Nothonotus vulneratus A", 
+"^ot:ottId": 422653, 
+"^ot:ottTaxonName": "Etheostoma vulneratum"
 }, 
 "Tl537068": {
-"^ot:altLabel": "Etheostoma susanae", 
 "^ot:originalLabel": "Etheostoma susanae B", 
+"^ot:ottId": 26366, 
+"^ot:ottTaxonName": "Etheostoma susanae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 545680, 
 "@tb:identifier.taxonVariant": 723545, 
@@ -1458,8 +1724,9 @@
 }
 }, 
 "Tl537069": {
-"^ot:altLabel": "Etheostoma fusiforme", 
 "^ot:originalLabel": "Etheostoma fusiforme A", 
+"^ot:ottId": 585088, 
+"^ot:ottTaxonName": "Etheostoma fusiforme", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 532538, 
 "@tb:identifier.taxonVariant": 706457, 
@@ -1468,8 +1735,9 @@
 }
 }, 
 "Tl537070": {
-"^ot:altLabel": "Etheostoma nianguae", 
 "^ot:originalLabel": "Etheostoma nianguae D", 
+"^ot:ottId": 470346, 
+"^ot:ottTaxonName": "Etheostoma nianguae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 287869, 
 "@tb:identifier.taxonVariant": 339912, 
@@ -1478,8 +1746,9 @@
 }
 }, 
 "Tl537071": {
-"^ot:altLabel": "Etheostoma uniporum", 
 "^ot:originalLabel": "Etheostoma uniporum D", 
+"^ot:ottId": 170650, 
+"^ot:ottTaxonName": "Etheostoma uniporum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 363513, 
 "@tb:identifier.taxonVariant": 390978, 
@@ -1488,8 +1757,9 @@
 }
 }, 
 "Tl537072": {
-"^ot:altLabel": "Ammocrypta beanii", 
 "^ot:originalLabel": "Ammocrypta cf beanii B", 
+"^ot:ottId": 367806, 
+"^ot:ottTaxonName": "Ammocrypta beanii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 229991, 
 "@tb:identifier.taxonVariant": 293292, 
@@ -1498,8 +1768,9 @@
 }
 }, 
 "Tl537073": {
-"^ot:altLabel": "Etheostoma collis", 
 "^ot:originalLabel": "Etheostoma collis B", 
+"^ot:ottId": 322408, 
+"^ot:ottTaxonName": "Etheostoma collis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 363491, 
 "@tb:identifier.taxonVariant": 390940, 
@@ -1508,8 +1779,9 @@
 }
 }, 
 "Tl537074": {
-"^ot:altLabel": "Nothonotus camurum", 
 "^ot:originalLabel": "Nothonotus camurus A", 
+"^ot:ottId": 1095374, 
+"^ot:ottTaxonName": "Etheostoma camurum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 73974, 
 "@tb:identifier.taxonVariant": 150920, 
@@ -1519,8 +1791,9 @@
 "^skos:prefLabel": "Etheostoma camurum"
 }, 
 "Tl537075": {
-"^ot:altLabel": "Etheostoma olmstedi", 
 "^ot:originalLabel": "Etheostoma olmstedi C", 
+"^ot:ottId": 896996, 
+"^ot:ottTaxonName": "Etheostoma olmstedi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 363505, 
 "@tb:identifier.taxonVariant": 390966, 
@@ -1529,8 +1802,9 @@
 }
 }, 
 "Tl537076": {
-"^ot:altLabel": "Etheostoma ramseyi", 
 "^ot:originalLabel": "Etheostoma ramseyi A", 
+"^ot:ottId": 618515, 
+"^ot:ottTaxonName": "Etheostoma ramseyi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 155094, 
 "@tb:identifier.taxonVariant": 230534, 
@@ -1539,8 +1813,9 @@
 }
 }, 
 "Tl537077": {
-"^ot:altLabel": "Etheostoma rupestre", 
 "^ot:originalLabel": "Etheostoma rupestre F", 
+"^ot:ottId": 618521, 
+"^ot:ottTaxonName": "Etheostoma rupestre", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 155096, 
 "@tb:identifier.taxonVariant": 230537, 
@@ -1549,8 +1824,9 @@
 }
 }, 
 "Tl537078": {
-"^ot:altLabel": "Etheostoma simoterum", 
 "^ot:originalLabel": "Etheostoma simoterum H", 
+"^ot:ottId": 618537, 
+"^ot:ottTaxonName": "Etheostoma simoterum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 155099, 
 "@tb:identifier.taxonVariant": 230543, 
@@ -1559,8 +1835,9 @@
 }
 }, 
 "Tl537079": {
-"^ot:altLabel": "Percina gymnocephala", 
 "^ot:originalLabel": "Percina gymnocephala C", 
+"^ot:ottId": 228508, 
+"^ot:ottTaxonName": "Percina gymnocephala", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 155813, 
 "@tb:identifier.taxonVariant": 231070, 
@@ -1569,11 +1846,14 @@
 }
 }, 
 "Tl537080": {
-"^ot:originalLabel": "Etheostoma planasaxatile B"
+"^ot:originalLabel": "Etheostoma planasaxatile B", 
+"^ot:ottId": 961038, 
+"^ot:ottTaxonName": "Etheostoma planasaxatile"
 }, 
 "Tl537081": {
-"^ot:altLabel": "Etheostoma rupestre", 
 "^ot:originalLabel": "Etheostoma rupestre E", 
+"^ot:ottId": 618521, 
+"^ot:ottTaxonName": "Etheostoma rupestre", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 155096, 
 "@tb:identifier.taxonVariant": 230537, 
@@ -1582,8 +1862,9 @@
 }
 }, 
 "Tl537082": {
-"^ot:altLabel": "Percina nasuta", 
 "^ot:originalLabel": "Percina nasuta E", 
+"^ot:ottId": 865503, 
+"^ot:ottTaxonName": "Percina nasuta", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 73961, 
 "@tb:identifier.taxonVariant": 150892, 
@@ -1592,8 +1873,9 @@
 }
 }, 
 "Tl537083": {
-"^ot:altLabel": "Etheostoma hopkinsi", 
 "^ot:originalLabel": "Etheostoma hopkinsi D", 
+"^ot:ottId": 846816, 
+"^ot:ottTaxonName": "Etheostoma hopkinsi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 363487, 
 "@tb:identifier.taxonVariant": 390933, 
@@ -1602,8 +1884,9 @@
 }
 }, 
 "Tl537084": {
-"^ot:altLabel": "Etheostoma cragini", 
 "^ot:originalLabel": "Etheostoma cragini B", 
+"^ot:ottId": 322405, 
+"^ot:ottTaxonName": "Etheostoma cragini", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 363492, 
 "@tb:identifier.taxonVariant": 390942, 
@@ -1612,8 +1895,9 @@
 }
 }, 
 "Tl537085": {
-"^ot:altLabel": "Percina jenkinsi", 
 "^ot:originalLabel": "Percina jenkinsi A", 
+"^ot:ottId": 228491, 
+"^ot:ottTaxonName": "Percina jenkinsi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 155814, 
 "@tb:identifier.taxonVariant": 231072, 
@@ -1622,8 +1906,9 @@
 }
 }, 
 "Tl537086": {
-"^ot:altLabel": "Percina crassa", 
 "^ot:originalLabel": "Percina crassa B", 
+"^ot:ottId": 262644, 
+"^ot:ottTaxonName": "Percina crassa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 155811, 
 "@tb:identifier.taxonVariant": 231064, 
@@ -1632,8 +1917,9 @@
 }
 }, 
 "Tl537087": {
-"^ot:altLabel": "Etheostoma flavum", 
 "^ot:originalLabel": "Etheostoma flavum B", 
+"^ot:ottId": 96991, 
+"^ot:ottTaxonName": "Etheostoma flavum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 155088, 
 "@tb:identifier.taxonVariant": 230520, 
@@ -1642,11 +1928,14 @@
 }
 }, 
 "Tl537088": {
-"^ot:originalLabel": "Etheostoma cyanorum C"
+"^ot:originalLabel": "Etheostoma cyanorum C", 
+"^ot:ottId": 958718, 
+"^ot:ottTaxonName": "Etheostoma cyanorum"
 }, 
 "Tl537089": {
-"^ot:altLabel": "Etheostoma virgatum", 
 "^ot:originalLabel": "Etheostoma cf virgatum J", 
+"^ot:ottId": 848589, 
+"^ot:ottTaxonName": "Etheostoma virgatum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 101016, 
 "@tb:identifier.taxonVariant": 180248, 
@@ -1655,8 +1944,9 @@
 }
 }, 
 "Tl537090": {
-"^ot:altLabel": "Etheostoma caeruleum", 
 "^ot:originalLabel": "Etheostoma caeruleum A", 
+"^ot:ottId": 814726, 
+"^ot:ottTaxonName": "Etheostoma caeruleum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 73944, 
 "@tb:identifier.taxonVariant": 150852, 
@@ -1665,11 +1955,13 @@
 }
 }, 
 "Tl537091": {
+"^ot:altLabel": "Etheostoma cf spectabile", 
 "^ot:originalLabel": "Etheostoma cf spectabile kydB"
 }, 
 "Tl537092": {
-"^ot:altLabel": "Etheostoma nuchale", 
 "^ot:originalLabel": "Etheostoma nuchale A", 
+"^ot:ottId": 897003, 
+"^ot:ottTaxonName": "Etheostoma nuchale", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 363503, 
 "@tb:identifier.taxonVariant": 390962, 
@@ -1678,8 +1970,9 @@
 }
 }, 
 "Tl537093": {
-"^ot:altLabel": "Etheostoma tecumsehi", 
 "^ot:originalLabel": "Etheostoma tecumsehi A", 
+"^ot:ottId": 170657, 
+"^ot:ottTaxonName": "Etheostoma tecumsehi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 363511, 
 "@tb:identifier.taxonVariant": 390974, 
@@ -1688,8 +1981,9 @@
 }
 }, 
 "Tl537094": {
-"^ot:altLabel": "Etheostoma cragini", 
 "^ot:originalLabel": "Etheostoma cragini D", 
+"^ot:ottId": 322405, 
+"^ot:ottTaxonName": "Etheostoma cragini", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 363492, 
 "@tb:identifier.taxonVariant": 390942, 
@@ -1718,9 +2012,11 @@
 }
 }, 
 "Tl537097": {
+"^ot:altLabel": "Etheostoma binotatum", 
 "^ot:originalLabel": "Etheostoma binotatum B"
 }, 
 "Tl537098": {
+"^ot:altLabel": "Etheostoma autumnale", 
 "^ot:originalLabel": "Etheostoma autumnale F"
 }, 
 "Tl537099": {
@@ -1843,9 +2139,11 @@
 }
 }, 
 "Tl537111": {
+"^ot:altLabel": "Etheostoma mihileze", 
 "^ot:originalLabel": "Etheostoma mihileze C"
 }, 
 "Tl537112": {
+"^ot:altLabel": "Nothonotus maculatus", 
 "^ot:originalLabel": "Nothonotus maculatus A"
 }, 
 "Tl537113": {
@@ -1909,6 +2207,7 @@
 }
 }, 
 "Tl537119": {
+"^ot:altLabel": "Nothonotus tippecanoe", 
 "^ot:originalLabel": "Nothonotus tippecanoe A"
 }, 
 "Tl537120": {
@@ -1943,9 +2242,11 @@
 "^skos:prefLabel": "Etheostoma chlorosomum"
 }, 
 "Tl537123": {
+"^ot:altLabel": "Etheostoma cf stigmaeum", 
 "^ot:originalLabel": "Etheostoma cf stigmaeum lhdB"
 }, 
 "Tl537124": {
+"^ot:altLabel": "Nothonotus rufilineatus", 
 "^ot:originalLabel": "Nothonotus rufilineatus N"
 }, 
 "Tl537125": {
@@ -1959,6 +2260,7 @@
 }
 }, 
 "Tl537126": {
+"^ot:altLabel": "Etheostoma erizonum", 
 "^ot:originalLabel": "Etheostoma erizonum A"
 }, 
 "Tl537127": {
@@ -2093,6 +2395,7 @@
 }
 }, 
 "Tl537140": {
+"^ot:altLabel": "Etheostoma marmorpinnum", 
 "^ot:originalLabel": "Etheostoma marmorpinnum N"
 }, 
 "Tl537141": {
@@ -2106,6 +2409,7 @@
 }
 }, 
 "Tl537142": {
+"^ot:altLabel": "Etheostoma cf stigmaeum", 
 "^ot:originalLabel": "Etheostoma cf stigmaeum cldB"
 }, 
 "Tl537143": {
@@ -2139,6 +2443,7 @@
 }
 }, 
 "Tl537146": {
+"^ot:altLabel": "Etheostoma sitikuense", 
 "^ot:originalLabel": "Etheostoma sitikuense R"
 }, 
 "Tl537147": {
@@ -2173,6 +2478,7 @@
 "^skos:prefLabel": "Etheostoma jordani"
 }, 
 "Tl537150": {
+"^ot:altLabel": "Etheostoma cf stigmaeum", 
 "^ot:originalLabel": "Etheostoma cf stigmaeum cldA"
 }, 
 "Tl537151": {
@@ -2186,6 +2492,7 @@
 }
 }, 
 "Tl537152": {
+"^ot:altLabel": "Etheostoma akatulo", 
 "^ot:originalLabel": "Etheostoma akatulo A"
 }, 
 "Tl537153": {
@@ -2199,6 +2506,7 @@
 }
 }, 
 "Tl537154": {
+"^ot:altLabel": "Etheostoma pholidotum", 
 "^ot:originalLabel": "Etheostoma pholidotum A"
 }, 
 "Tl537155": {
@@ -2292,9 +2600,11 @@
 }
 }, 
 "Tl537164": {
+"^ot:altLabel": "Etheostoma newmani", 
 "^ot:originalLabel": "Etheostoma newmani E"
 }, 
 "Tl537165": {
+"^ot:altLabel": "Nothonotus denoncourti", 
 "^ot:originalLabel": "Nothonotus denoncourti A"
 }, 
 "Tl537166": {
@@ -2378,6 +2688,7 @@
 }
 }, 
 "Tl537174": {
+"^ot:altLabel": "Nothonotus douglasi", 
 "^ot:originalLabel": "Nothonotus douglasi A"
 }, 
 "Tl537175": {
@@ -2391,6 +2702,7 @@
 }
 }, 
 "Tl537176": {
+"^ot:altLabel": "Etheostoma cf spectabile", 
 "^ot:originalLabel": "Etheostoma cf spectabile kydA"
 }, 
 "Tl537177": {
@@ -2424,6 +2736,7 @@
 }
 }, 
 "Tl537180": {
+"^ot:altLabel": "Nothonotus sanguifluus", 
 "^ot:originalLabel": "Nothonotus sanguifluus A"
 }, 
 "Tl537181": {
@@ -2467,6 +2780,7 @@
 }
 }, 
 "Tl537185": {
+"^ot:altLabel": "Etheostoma cf newmani", 
 "^ot:originalLabel": "Etheostoma cf newmani A"
 }, 
 "Tl537186": {
@@ -2490,12 +2804,15 @@
 }
 }, 
 "Tl537188": {
+"^ot:altLabel": "Nothonotus denoncourti", 
 "^ot:originalLabel": "Nothonotus denoncourti B"
 }, 
 "Tl537189": {
+"^ot:altLabel": "Percina kusha", 
 "^ot:originalLabel": "Percina kusha E"
 }, 
 "Tl537190": {
+"^ot:altLabel": "Etheostoma cf stigmaeum", 
 "^ot:originalLabel": "Etheostoma cf stigmaeum bgdB"
 }, 
 "Tl537191": {
@@ -2529,6 +2846,7 @@
 }
 }, 
 "Tl537194": {
+"^ot:altLabel": "Nothonotus rufilineatus", 
 "^ot:originalLabel": "Nothonotus rufilineatus I"
 }, 
 "Tl537195": {
@@ -2563,6 +2881,7 @@
 "^skos:prefLabel": "Etheostoma simoterum atripinne"
 }, 
 "Tl537198": {
+"^ot:altLabel": "Percina crypta", 
 "^ot:originalLabel": "Percina crypta G"
 }, 
 "Tl537199": {
@@ -2586,6 +2905,7 @@
 }
 }, 
 "Tl537201": {
+"^ot:altLabel": "Nothonotus rubrus", 
 "^ot:originalLabel": "Nothonotus rubrus C"
 }, 
 "Tl537202": {
@@ -2599,6 +2919,7 @@
 }
 }, 
 "Tl537203": {
+"^ot:altLabel": "Etheostoma lemniscatum", 
 "^ot:originalLabel": "Etheostoma lemniscatum Z"
 }, 
 "Tl537204": {
@@ -2622,9 +2943,11 @@
 }
 }, 
 "Tl537206": {
+"^ot:altLabel": "Etheostoma squamosum", 
 "^ot:originalLabel": "Etheostoma squamosum D"
 }, 
 "Tl537207": {
+"^ot:altLabel": "Percina apristis", 
 "^ot:originalLabel": "Percina apristis A"
 }, 
 "Tl537208": {
@@ -2638,6 +2961,7 @@
 }
 }, 
 "Tl537209": {
+"^ot:altLabel": "Percina cf kusha", 
 "^ot:originalLabel": "Percina cf kusha S"
 }, 
 "Tl537210": {
@@ -2661,9 +2985,11 @@
 }
 }, 
 "Tl537212": {
+"^ot:altLabel": "Etheostoma cf newmani", 
 "^ot:originalLabel": "Etheostoma cf newmani B"
 }, 
 "Tl537213": {
+"^ot:altLabel": "Nothonotus chlorobranchius", 
 "^ot:originalLabel": "Nothonotus chlorobranchius A"
 }, 
 "Tl537214": {
@@ -2707,6 +3033,7 @@
 }
 }, 
 "Tl537218": {
+"^ot:altLabel": "Crystallaria cincotta", 
 "^ot:originalLabel": "Crystallaria cincotta C"
 }, 
 "Tl537219": {
@@ -2720,9 +3047,11 @@
 }
 }, 
 "Tl537220": {
+"^ot:altLabel": "Nothonotus etowahae", 
 "^ot:originalLabel": "Nothonotus etowahae C"
 }, 
 "Tl537221": {
+"^ot:altLabel": "Etheostoma mihileze", 
 "^ot:originalLabel": "Etheostoma mihileze I"
 }, 
 "Tl537222": {
@@ -2737,6 +3066,7 @@
 "^skos:prefLabel": "Etheostoma jordani"
 }, 
 "Tl537223": {
+"^ot:altLabel": "Etheostoma pulchellum", 
 "^ot:originalLabel": "Etheostoma pulchellum AZ"
 }, 
 "Tl537224": {
@@ -2770,12 +3100,15 @@
 }
 }, 
 "Tl537227": {
+"^ot:altLabel": "Etheostoma marmorpinnum", 
 "^ot:originalLabel": "Etheostoma marmorpinnum M"
 }, 
 "Tl537228": {
+"^ot:altLabel": "Etheostoma sitikuense", 
 "^ot:originalLabel": "Etheostoma sitikuense U"
 }, 
 "Tl537229": {
+"^ot:altLabel": "Etheostoma meadiae", 
 "^ot:originalLabel": "Etheostoma meadiae B"
 }, 
 "Tl537230": {
@@ -2820,12 +3153,15 @@
 }
 }, 
 "Tl537234": {
+"^ot:altLabel": "Etheostoma cf stigmaeum", 
 "^ot:originalLabel": "Etheostoma cf stigmaeum bgdA"
 }, 
 "Tl537235": {
+"^ot:altLabel": "Nothonotus aquali", 
 "^ot:originalLabel": "Nothonotus aquali A"
 }, 
 "Tl537236": {
+"^ot:altLabel": "Etheostoma akatulo", 
 "^ot:originalLabel": "Etheostoma akatulo B"
 }, 
 "Tl537237": {
@@ -2839,9 +3175,11 @@
 }
 }, 
 "Tl537238": {
+"^ot:altLabel": "Nothonotus vulneratus", 
 "^ot:originalLabel": "Nothonotus vulneratus B"
 }, 
 "Tl537239": {
+"^ot:altLabel": "Percina westfalli", 
 "^ot:originalLabel": "Percina westfalli K"
 }, 
 "Tl537240": {
@@ -2935,9 +3273,11 @@
 }
 }, 
 "Tl537249": {
+"^ot:altLabel": "Etheostoma pholidotum", 
 "^ot:originalLabel": "Etheostoma pholidotum B"
 }, 
 "Tl537250": {
+"^ot:altLabel": "Nothonotus microlepidus", 
 "^ot:originalLabel": "Nothonotus microlepidus A"
 }, 
 "Tl537251": {
@@ -2951,6 +3291,7 @@
 }
 }, 
 "Tl537252": {
+"^ot:altLabel": "Percina sipsi", 
 "^ot:originalLabel": "Percina sipsi D"
 }, 
 "Tl537253": {
@@ -2984,6 +3325,7 @@
 }
 }, 
 "Tl537256": {
+"^ot:altLabel": "Etheostoma barratti", 
 "^ot:originalLabel": "Etheostoma barratti B"
 }, 
 "Tl537257": {
@@ -3007,6 +3349,7 @@
 }
 }, 
 "Tl537259": {
+"^ot:altLabel": "Nothonotus cf sanguifluus", 
 "^ot:originalLabel": "Nothonotus cf sanguifluus B"
 }, 
 "Tl537260": {
@@ -3112,6 +3455,7 @@
 }
 }, 
 "Tl537270": {
+"^ot:altLabel": "Etheostoma cf spectabile", 
 "^ot:originalLabel": "Etheostoma cf spectabile sheF"
 }, 
 "Tl537271": {
@@ -3166,6 +3510,7 @@
 }
 }, 
 "Tl537276": {
+"^ot:altLabel": "Etheostoma newmani", 
 "^ot:originalLabel": "Etheostoma newmani C"
 }, 
 "Tl537277": {
@@ -3329,9 +3674,11 @@
 }
 }, 
 "Tl537293": {
+"^ot:altLabel": "Nothonotus chuckwachatte", 
 "^ot:originalLabel": "Nothonotus chuckwachatte A"
 }, 
 "Tl537294": {
+"^ot:altLabel": "Etheostoma cf stigmaeum", 
 "^ot:originalLabel": "Etheostoma cf stigmaeum lhdA"
 }, 
 "Tl537295": {
@@ -3425,6 +3772,7 @@
 }
 }, 
 "Tl537304": {
+"^ot:altLabel": "Etheostoma paludosum", 
 "^ot:originalLabel": "Etheostoma paludosum B"
 }, 
 "Tl537305": {
@@ -3458,6 +3806,7 @@
 }
 }, 
 "Tl537308": {
+"^ot:altLabel": "Nothonotus chuckwachatte", 
 "^ot:originalLabel": "Nothonotus chuckwachatte B"
 }, 
 "Tl537309": {
@@ -3471,6 +3820,7 @@
 }
 }, 
 "Tl537310": {
+"^ot:altLabel": "Percina smithvanizi", 
 "^ot:originalLabel": "Percina smithvanizi E"
 }, 
 "Tl537311": {
@@ -3504,9 +3854,11 @@
 }
 }, 
 "Tl537314": {
+"^ot:altLabel": "Etheostoma spilotum", 
 "^ot:originalLabel": "Etheostoma spilotum G"
 }, 
 "Tl537315": {
+"^ot:altLabel": "Nothonotus camurus", 
 "^ot:originalLabel": "Nothonotus camurus C"
 }, 
 "Tl537316": {
@@ -3553,7 +3905,18 @@
 "Tr46188": {
 "@label": "Fig. 3", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:undefined", 
+"^ot:branchLengthTimeUnit": "Myr", 
+"^ot:curatedType": "Bayesian inference ", 
+"^ot:inGroupClade": "Tn7839318", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "Tn7839403", 
+"^ot:specifiedRoot": "Tn7839403", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 407, 
 "^tb:quality.tree": "Preferred Tree", 
