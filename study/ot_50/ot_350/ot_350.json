@@ -58,16 +58,109 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2015-08-28T19:48:11.732Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:curatorName": "Romina Gazis", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}, 
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": "\\b\\s+(\\w*)$"
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2015-08-28T19:48:11.732Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Romina Gazis"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S12806"
 }, 
+"^ot:focalCladeOTTTaxonName": "", 
+"^ot:messages": {
+"message": []
+}, 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "Tls26112"
 ], 
@@ -77,6 +170,7 @@
 }, 
 "^ot:studyPublicationReference": "Crous P.W., Verkley G., Christensen M., Castaneda-ruiz R.F., & Groenewald J.Z. 2012. How important are conidial appendages?. Persoonia, 28: 126-137.", 
 "^ot:studyYear": 2012, 
+"^ot:tag": [], 
 "^ot:taxonLinkPrefixes": {
 "@ubio": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:", 
 "@uniprot": "http://purl.uniprot.org/taxonomy/"
@@ -104,8 +198,9 @@
 "^skos:historyNote": "Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlOTUWriter@7848ee8a $Rev: 1040 $", 
 "otuById": {
 "Tl805422": {
-"^ot:altLabel": "Thozetella acerosa", 
 "^ot:originalLabel": "Thozetella acerosa AY330996", 
+"^ot:ottId": 517518, 
+"^ot:ottTaxonName": "Thozetella acerosa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 216132, 
 "@tb:identifier.taxonVariant": 283182, 
@@ -114,8 +209,9 @@
 }
 }, 
 "Tl805423": {
-"^ot:altLabel": "Dictyochaeta simplex", 
 "^ot:originalLabel": "Dictyochaeta simplex EF029193", 
+"^ot:ottId": 824703, 
+"^ot:ottTaxonName": "Dictyochaeta simplex", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 9000, 
 "@tb:identifier.taxonVariant": 21649, 
@@ -124,11 +220,14 @@
 }
 }, 
 "Tl805424": {
-"^ot:originalLabel": "Dinemasporium americana CBS 127127"
+"^ot:originalLabel": "Dinemasporium americana CBS 127127", 
+"^ot:ottId": 1029188, 
+"^ot:ottTaxonName": "Dinemasporium americana"
 }, 
 "Tl805425": {
-"^ot:altLabel": "Dinemasporium strigosum", 
 "^ot:originalLabel": "Dinemasporium strigosum CPC 19796", 
+"^ot:ottId": 5308896, 
+"^ot:ottTaxonName": "Phomatospora dinemasporium", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 611741, 
 "@tb:identifier.taxonVariant": 817857, 
@@ -136,8 +235,9 @@
 }
 }, 
 "Tl805426": {
-"^ot:altLabel": "Chaetosphaeria callimorpha", 
 "^ot:originalLabel": "Chaetosphaeria callimorpha AF178555", 
+"^ot:ottId": 250260, 
+"^ot:ottTaxonName": "Chaetosphaeria callimorpha", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5608, 
 "@tb:identifier.taxonVariant": 13582, 
@@ -146,8 +246,9 @@
 }
 }, 
 "Tl805427": {
-"^ot:altLabel": "Thozetella havanensis", 
 "^ot:originalLabel": "Thozetella havanensis EF029184", 
+"^ot:ottId": 997458, 
+"^ot:ottTaxonName": "Thozetella havanensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 356437, 
 "@tb:identifier.taxonVariant": 510875, 
@@ -156,8 +257,9 @@
 }
 }, 
 "Tl805428": {
-"^ot:altLabel": "Menispora tortuosa", 
 "^ot:originalLabel": "Menispora tortuosa AF178558", 
+"^ot:ottId": 824706, 
+"^ot:ottTaxonName": "Menispora tortuosa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 17314, 
 "@tb:identifier.taxonVariant": 40541, 
@@ -166,8 +268,9 @@
 }
 }, 
 "Tl805429": {
-"^ot:altLabel": "Zignoella pulviscula", 
 "^ot:originalLabel": "Zignoella pulviscula AF178543", 
+"^ot:ottId": 773200, 
+"^ot:ottTaxonName": "Chaetosphaeria pulviscula", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5624, 
 "@tb:identifier.taxonVariant": 113108, 
@@ -176,8 +279,9 @@
 }
 }, 
 "Tl805430": {
-"^ot:altLabel": "Menispora manitobaensis", 
 "^ot:originalLabel": "Menispora manitobaensis EU488738", 
+"^ot:ottId": 579604, 
+"^ot:ottTaxonName": "Menispora manitobaensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 464705, 
 "@tb:identifier.taxonVariant": 616903, 
@@ -186,14 +290,19 @@
 }
 }, 
 "Tl805431": {
-"^ot:originalLabel": "Dinemasporium pseudostrigosum CBS 717.85"
+"^ot:originalLabel": "Dinemasporium pseudostrigosum CBS 717.85", 
+"^ot:ottId": 509897, 
+"^ot:ottTaxonName": "Dinemasporium pseudostrigosum"
 }, 
 "Tl805432": {
-"^ot:originalLabel": "Dinemasporium pseudoindicum CBS 127402"
+"^ot:originalLabel": "Dinemasporium pseudoindicum CBS 127402", 
+"^ot:ottId": 1029200, 
+"^ot:ottTaxonName": "Dinemasporium pseudoindicum"
 }, 
 "Tl805433": {
-"^ot:altLabel": "Codinaeopsis gonytrichoides", 
 "^ot:originalLabel": "Codinaeopsis gonytrichoides AF178556", 
+"^ot:ottId": 300280, 
+"^ot:ottTaxonName": "Dictyochaetopsis gonytrichoides", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6583, 
 "@tb:identifier.taxonVariant": 15958, 
@@ -202,11 +311,14 @@
 }
 }, 
 "Tl805434": {
-"^ot:originalLabel": "Brunneodinemasporium brasiliense CBS 112007"
+"^ot:originalLabel": "Brunneodinemasporium brasiliense CBS 112007", 
+"^ot:ottId": 209299, 
+"^ot:ottTaxonName": "Brunneodinemasporium brasiliense"
 }, 
 "Tl805435": {
-"^ot:altLabel": "Thozetella nivea", 
 "^ot:originalLabel": "Thozetella nivea EU825201", 
+"^ot:ottId": 169746, 
+"^ot:ottTaxonName": "Thozetella nivea", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 490888, 
 "@tb:identifier.taxonVariant": 650558, 
@@ -215,11 +327,14 @@
 }
 }, 
 "Tl805436": {
-"^ot:originalLabel": "Dinemasporium morbidum CBS 129.66"
+"^ot:originalLabel": "Dinemasporium morbidum CBS 129.66", 
+"^ot:ottId": 637763, 
+"^ot:ottTaxonName": "Dinemasporium morbidum"
 }, 
 "Tl805437": {
-"^ot:altLabel": "Dictyochaeta fertilis", 
 "^ot:originalLabel": "Dictyochaeta fertilis AF178540", 
+"^ot:ottId": 696865, 
+"^ot:ottTaxonName": "Dictyochaeta fertilis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 8999, 
 "@tb:identifier.taxonVariant": 21648, 
@@ -228,8 +343,9 @@
 }
 }, 
 "Tl805438": {
-"^ot:altLabel": "Menispora ciliata", 
 "^ot:originalLabel": "Menispora ciliata EU488737", 
+"^ot:ottId": 579603, 
+"^ot:ottTaxonName": "Menispora ciliata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 464704, 
 "@tb:identifier.taxonVariant": 616902, 
@@ -238,8 +354,9 @@
 }
 }, 
 "Tl805439": {
-"^ot:altLabel": "Thozetella falcata", 
 "^ot:originalLabel": "Thozetella falcata AY331004", 
+"^ot:ottId": 517516, 
+"^ot:ottTaxonName": "Thozetella falcata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 216134, 
 "@tb:identifier.taxonVariant": 283184, 
@@ -248,11 +365,14 @@
 }
 }, 
 "Tl805440": {
-"^ot:originalLabel": "Pseudolachnea fraxini CBS 113701"
+"^ot:originalLabel": "Pseudolachnea fraxini CBS 113701", 
+"^ot:ottId": 1029202, 
+"^ot:ottTaxonName": "Pseudolachnea fraxini"
 }, 
 "Tl805441": {
-"^ot:altLabel": "Dendrophoma cytisporoides", 
 "^ot:originalLabel": "Dendrophoma cytisporoides CBS 223.95", 
+"^ot:ottId": 590921, 
+"^ot:ottTaxonName": "Dendrophoma cytisporoides", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 611742, 
 "@tb:identifier.taxonVariant": 817858, 
@@ -260,14 +380,19 @@
 }
 }, 
 "Tl805442": {
-"^ot:originalLabel": "Dinemasporium morbidum CBS 995.97"
+"^ot:originalLabel": "Dinemasporium morbidum CBS 995.97", 
+"^ot:ottId": 637763, 
+"^ot:ottTaxonName": "Dinemasporium morbidum"
 }, 
 "Tl805443": {
-"^ot:originalLabel": "Dinemasporium pseudostrigosum CBS 825.91"
+"^ot:originalLabel": "Dinemasporium pseudostrigosum CBS 825.91", 
+"^ot:ottId": 509897, 
+"^ot:ottTaxonName": "Dinemasporium pseudostrigosum"
 }, 
 "Tl805444": {
-"^ot:altLabel": "Dinemasporium decipiens", 
 "^ot:originalLabel": "Dinemasporium decipiens CBS 592.73", 
+"^ot:ottId": 878252, 
+"^ot:ottTaxonName": "Dinemasporium decipiens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 611743, 
 "@tb:identifier.taxonVariant": 817859, 
@@ -275,8 +400,9 @@
 }
 }, 
 "Tl805445": {
-"^ot:altLabel": "Dinemasporium strigosum", 
 "^ot:originalLabel": "Dinemasporium strigosum CBS 828.84", 
+"^ot:ottId": 5308896, 
+"^ot:ottTaxonName": "Phomatospora dinemasporium", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 611741, 
 "@tb:identifier.taxonVariant": 817857, 
@@ -284,8 +410,9 @@
 }
 }, 
 "Tl805446": {
-"^ot:altLabel": "Chaetosphaeria hebetiseta", 
 "^ot:originalLabel": "Chaetosphaeria hebetiseta AF178549", 
+"^ot:ottId": 250255, 
+"^ot:ottTaxonName": "Chaetosphaeria hebetiseta", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5617, 
 "@tb:identifier.taxonVariant": 13598, 
@@ -294,14 +421,19 @@
 }
 }, 
 "Tl805447": {
-"^ot:originalLabel": "Dinemasporium polygonum CBS 516.95"
+"^ot:originalLabel": "Dinemasporium polygonum CBS 516.95", 
+"^ot:ottId": 1029184, 
+"^ot:ottTaxonName": "Dinemasporium polygonum"
 }, 
 "Tl805448": {
-"^ot:originalLabel": "Pyrigemmula aurantiaca HM241692"
+"^ot:originalLabel": "Pyrigemmula aurantiaca HM241692", 
+"^ot:ottId": 910985, 
+"^ot:ottTaxonName": "Pyrigemmula aurantiaca"
 }, 
 "Tl805449": {
-"^ot:altLabel": "Dinemasporium strigosum", 
 "^ot:originalLabel": "Dinemasporium strigosum CPC 18957", 
+"^ot:ottId": 5308896, 
+"^ot:ottTaxonName": "Phomatospora dinemasporium", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 611741, 
 "@tb:identifier.taxonVariant": 817857, 
@@ -309,8 +441,9 @@
 }
 }, 
 "Tl805450": {
-"^ot:altLabel": "Dinemasporium strigosum", 
 "^ot:originalLabel": "Dinemasporium strigosum CBS 520.78", 
+"^ot:ottId": 5308896, 
+"^ot:ottTaxonName": "Phomatospora dinemasporium", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 611741, 
 "@tb:identifier.taxonVariant": 817857, 
@@ -318,8 +451,9 @@
 }
 }, 
 "Tl805451": {
-"^ot:altLabel": "Cephalotheca sulfurea", 
 "^ot:originalLabel": "Cephalotheca sulfurea AB278194", 
+"^ot:ottId": 649022, 
+"^ot:ottTaxonName": "Cephalotheca sulfurea", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5331, 
 "@tb:identifier.taxonVariant": 12963, 
@@ -328,8 +462,9 @@
 }
 }, 
 "Tl805452": {
-"^ot:altLabel": "Dinemasporium strigosum", 
 "^ot:originalLabel": "Dinemasporium strigosum CPC 18898", 
+"^ot:ottId": 5308896, 
+"^ot:ottTaxonName": "Phomatospora dinemasporium", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 611741, 
 "@tb:identifier.taxonVariant": 817857, 
@@ -337,8 +472,9 @@
 }
 }, 
 "Tl805453": {
-"^ot:altLabel": "Lecythothecium duriligni", 
 "^ot:originalLabel": "Lecythothecium duriligni AF261071", 
+"^ot:ottId": 1026131, 
+"^ot:ottTaxonName": "Lecythothecium duriligni", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 150513, 
 "@tb:identifier.taxonVariant": 435786, 
@@ -347,8 +483,9 @@
 }
 }, 
 "Tl805454": {
-"^ot:altLabel": "Chaetosphaeria luquillensis", 
 "^ot:originalLabel": "Chaetosphaeria luquillensis AF466074", 
+"^ot:ottId": 943806, 
+"^ot:ottTaxonName": "Chaetosphaeria luquillensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 182495, 
 "@tb:identifier.taxonVariant": 255297, 
@@ -357,8 +494,9 @@
 }
 }, 
 "Tl805455": {
-"^ot:altLabel": "Melanopsammella gonytrichii", 
 "^ot:originalLabel": "Melanopsammella gonytrichii AF466085", 
+"^ot:ottId": 368155, 
+"^ot:ottTaxonName": "Melanopsammella gonytrichii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 182503, 
 "@tb:identifier.taxonVariant": 255305, 
@@ -367,8 +505,9 @@
 }
 }, 
 "Tl805456": {
-"^ot:altLabel": "Tainosphaeria crassiparies", 
 "^ot:originalLabel": "Tainosphaeria crassiparies AF466089", 
+"^ot:ottId": 368152, 
+"^ot:ottTaxonName": "Tainosphaeria crassiparies", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 182506, 
 "@tb:identifier.taxonVariant": 255306, 
@@ -377,8 +516,9 @@
 }
 }, 
 "Tl805457": {
-"^ot:altLabel": "Chaetosphaeria preussii", 
 "^ot:originalLabel": "Chaetosphaeria preussii AF178561", 
+"^ot:ottId": 773202, 
+"^ot:ottTaxonName": "Chaetosphaeria preussii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5623, 
 "@tb:identifier.taxonVariant": 13613, 
@@ -387,8 +527,9 @@
 }
 }, 
 "Tl805458": {
-"^ot:altLabel": "Chaetosphaeria tropicalis", 
 "^ot:originalLabel": "Chaetosphaeria tropicalis AF466080", 
+"^ot:ottId": 368151, 
+"^ot:ottTaxonName": "Chaetosphaeria tropicalis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 182500, 
 "@tb:identifier.taxonVariant": 255304, 
@@ -397,11 +538,14 @@
 }
 }, 
 "Tl805459": {
-"^ot:originalLabel": "Chaetosphaeria ciliata GU180637"
+"^ot:originalLabel": "Chaetosphaeria ciliata GU180637", 
+"^ot:ottId": 420569, 
+"^ot:ottTaxonName": "Chaetosphaeria ciliata"
 }, 
 "Tl805460": {
-"^ot:altLabel": "Zignoella pulviscula", 
 "^ot:originalLabel": "Zignoella pulviscula AF466090", 
+"^ot:ottId": 773200, 
+"^ot:ottTaxonName": "Chaetosphaeria pulviscula", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5624, 
 "@tb:identifier.taxonVariant": 113108, 
@@ -410,8 +554,9 @@
 }
 }, 
 "Tl805461": {
-"^ot:altLabel": "Thozetella nivea", 
 "^ot:originalLabel": "Thozetella nivea EU825200", 
+"^ot:ottId": 169746, 
+"^ot:ottTaxonName": "Thozetella nivea", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 490888, 
 "@tb:identifier.taxonVariant": 650558, 
@@ -420,8 +565,9 @@
 }
 }, 
 "Tl805462": {
-"^ot:altLabel": "Zignoella pulviscula", 
 "^ot:originalLabel": "Zignoella pulviscula AF466091", 
+"^ot:ottId": 773200, 
+"^ot:ottTaxonName": "Chaetosphaeria pulviscula", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5624, 
 "@tb:identifier.taxonVariant": 113108, 
@@ -430,8 +576,9 @@
 }
 }, 
 "Tl805463": {
-"^ot:altLabel": "Melanochaeta hemipsila", 
 "^ot:originalLabel": "Melanochaeta hemipsila AY346292", 
+"^ot:ottId": 368149, 
+"^ot:ottTaxonName": "Melanochaeta hemipsila", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 17219, 
 "@tb:identifier.taxonVariant": 40326, 
@@ -440,8 +587,9 @@
 }
 }, 
 "Tl805464": {
-"^ot:altLabel": "Chaetosphaeria capitata", 
 "^ot:originalLabel": "Chaetosphaeria capitata AF466061", 
+"^ot:ottId": 418010, 
+"^ot:ottTaxonName": "Chaetosphaeria capitata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 182488, 
 "@tb:identifier.taxonVariant": 255290, 
@@ -450,8 +598,9 @@
 }
 }, 
 "Tl805465": {
-"^ot:altLabel": "Chaetosphaeria ovoidea", 
 "^ot:originalLabel": "Chaetosphaeria ovoidea AF064641", 
+"^ot:ottId": 301828, 
+"^ot:ottTaxonName": "Chaetosphaeria ovoidea", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5622, 
 "@tb:identifier.taxonVariant": 13610, 
@@ -461,8 +610,9 @@
 "^skos:prefLabel": "Zignoella ovoidea"
 }, 
 "Tl805466": {
-"^ot:altLabel": "Chaetosphaeria callimorpha", 
 "^ot:originalLabel": "Chaetosphaeria callimorpha AF466062", 
+"^ot:ottId": 250260, 
+"^ot:ottTaxonName": "Chaetosphaeria callimorpha", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5608, 
 "@tb:identifier.taxonVariant": 13582, 
@@ -471,8 +621,9 @@
 }
 }, 
 "Tl805467": {
-"^ot:altLabel": "Melanopsammella vermicularioides", 
 "^ot:originalLabel": "Melanopsammella vermicularioides AF466087", 
+"^ot:ottId": 597718, 
+"^ot:ottTaxonName": "Chaetosphaeria vermicularioides", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 182504, 
 "@tb:identifier.taxonVariant": 444367, 
@@ -481,8 +632,9 @@
 }
 }, 
 "Tl805468": {
-"^ot:altLabel": "Chloridium lignicola", 
 "^ot:originalLabel": "Chloridium lignicola AF178544", 
+"^ot:ottId": 300282, 
+"^ot:ottTaxonName": "Chloridium lignicola", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5889, 
 "@tb:identifier.taxonVariant": 14254, 
@@ -491,8 +643,9 @@
 }
 }, 
 "Tl805469": {
-"^ot:altLabel": "Melanochaeta aotearoae", 
 "^ot:originalLabel": "Melanochaeta aotearoae AF466082", 
+"^ot:ottId": 368150, 
+"^ot:ottTaxonName": "Melanochaeta aotearoae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 182501, 
 "@tb:identifier.taxonVariant": 444365, 
@@ -501,11 +654,14 @@
 }
 }, 
 "Tl805470": {
-"^ot:originalLabel": "Rattania setulifera HM171322"
+"^ot:originalLabel": "Rattania setulifera HM171322", 
+"^ot:ottId": 63948, 
+"^ot:ottTaxonName": "Rattania setulifera"
 }, 
 "Tl805471": {
-"^ot:altLabel": "Umbrinosphaeria caesariata", 
 "^ot:originalLabel": "Umbrinosphaeria caesariata AF261069", 
+"^ot:ottId": 1026125, 
+"^ot:ottTaxonName": "Umbrinosphaeria caesariata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 150511, 
 "@tb:identifier.taxonVariant": 435784, 
@@ -514,8 +670,9 @@
 }
 }, 
 "Tl805472": {
-"^ot:altLabel": "Saccharomyces cerevisiae", 
 "^ot:originalLabel": "Saccharomyces cerevisiae Z73326", 
+"^ot:ottId": 908549, 
+"^ot:ottTaxonName": "Saccharomyces cerevisiae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 25995, 
 "@tb:identifier.taxonVariant": 60823, 
@@ -524,8 +681,9 @@
 }
 }, 
 "Tl805473": {
-"^ot:altLabel": "Infundibulomyces cupulata", 
 "^ot:originalLabel": "Infundibulomyces cupulata EF113979", 
+"^ot:ottId": 751650, 
+"^ot:ottTaxonName": "Infundibulomyces cupulata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 361393, 
 "@tb:identifier.taxonVariant": 389514, 
@@ -534,8 +692,9 @@
 }
 }, 
 "Tl805474": {
-"^ot:altLabel": "Chaetosphaeria innumera", 
 "^ot:originalLabel": "Chaetosphaeria innumera AY017375", 
+"^ot:ottId": 250265, 
+"^ot:ottTaxonName": "Chaetosphaeria innumera", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5619, 
 "@tb:identifier.taxonVariant": 13604, 
@@ -544,8 +703,9 @@
 }
 }, 
 "Tl805475": {
-"^ot:altLabel": "Ellisembia brachypus", 
 "^ot:originalLabel": "Ellisembia brachypus DQ408563", 
+"^ot:ottId": 1008023, 
+"^ot:ottTaxonName": "Ellisembia brachypus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 327838, 
 "@tb:identifier.taxonVariant": 369025, 
@@ -554,8 +714,9 @@
 }
 }, 
 "Tl805476": {
-"^ot:altLabel": "Striatosphaeria codinaeophora", 
 "^ot:originalLabel": "Striatosphaeria codinaeophora AF466088", 
+"^ot:ottId": 773196, 
+"^ot:ottTaxonName": "Striatosphaeria codinaeaphora", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 28098, 
 "@tb:identifier.taxonVariant": 65581, 
@@ -564,8 +725,9 @@
 }
 }, 
 "Tl805477": {
-"^ot:altLabel": "Chaetosphaeria conirostris", 
 "^ot:originalLabel": "Chaetosphaeria conirostris AF466066", 
+"^ot:ottId": 943809, 
+"^ot:ottTaxonName": "Chaetosphaeria conirostris", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 182490, 
 "@tb:identifier.taxonVariant": 255292, 
@@ -574,8 +736,9 @@
 }
 }, 
 "Tl805478": {
-"^ot:altLabel": "Chaetosphaeria fuegiana", 
 "^ot:originalLabel": "Chaetosphaeria fuegiana EF063574", 
+"^ot:ottId": 1088172, 
+"^ot:ottTaxonName": "Chaetosphaeria fuegiana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 370109, 
 "@tb:identifier.taxonVariant": 394937, 
@@ -599,7 +762,18 @@
 "Tr53296": {
 "@label": "Fig. 2", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "Tn8916095", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 31, 
 "^tb:quality.tree": "Unrated", 
@@ -1016,7 +1190,18 @@
 "Tr53297": {
 "@label": "Fig. 1", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "Tn8916210", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 42, 
 "^tb:quality.tree": "Unrated", 
