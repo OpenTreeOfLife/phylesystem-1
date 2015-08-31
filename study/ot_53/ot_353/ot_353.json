@@ -58,25 +58,120 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2015-08-31T14:52:00.854Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:curatorName": "Romina Gazis", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}, 
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": "\\b\\s+(\\w*)$"
+}
+}
+]
+}, 
+"useFuzzyMatching": true
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2015-08-31T14:52:00.854Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Romina Gazis"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S12948"
 }, 
+"^ot:focalClade": 4927643, 
+"^ot:focalCladeOTTTaxonName": "Sodiomyces alkalinus F11", 
+"^ot:messages": {
+"message": []
+}, 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "Tls26785"
 ], 
 "^ot:studyId": "ot_353", 
 "^ot:studyPublication": {
-"@href": "10.3767/003158513X673080"
+"@href": "http://dx.doi.org/10.3767/003158513x673080"
 }, 
 "^ot:studyPublicationReference": "Grum-grzhimaylo A.A., Debets A.J., Van diepeningen A.D., Georgieva M.L., & Bilanenko E.N. 2013. Sodiomyces alkalinus, a new holomorphic alkaliphilic ascomycete within the Plectosphaerellaceae. Persoonia, 31: 147-158.", 
 "^ot:studyYear": 2013, 
+"^ot:tag": [], 
 "^ot:taxonLinkPrefixes": {
 "@ubio": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:", 
 "@uniprot": "http://purl.uniprot.org/taxonomy/"
@@ -105,6 +200,8 @@
 "otuById": {
 "Tl836959": {
 "^ot:originalLabel": "Acremonium antarcticum", 
+"^ot:ottId": 556743, 
+"^ot:ottTaxonName": "Acremonium antarcticum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 435588, 
 "@tb:identifier.taxonVariant": 573716, 
@@ -113,11 +210,14 @@
 }
 }, 
 "Tl836960": {
-"^ot:originalLabel": "Plectosphaerella melonis"
+"^ot:originalLabel": "Plectosphaerella melonis", 
+"^ot:ottId": 738805, 
+"^ot:ottTaxonName": "Plectosphaerella melonis"
 }, 
 "Tl836961": {
-"^ot:altLabel": "Verticillium theobromae", 
 "^ot:originalLabel": "Verticillium theobromae Strain CBS458 51", 
+"^ot:ottId": 1090052, 
+"^ot:ottTaxonName": "Musicillium theobromae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 131325, 
 "@tb:identifier.taxonVariant": 208693, 
@@ -127,13 +227,19 @@
 "^skos:prefLabel": "Musicillium theobromae"
 }, 
 "Tl836962": {
-"^ot:originalLabel": "Verticillium zaregamsianum"
+"^ot:originalLabel": "Verticillium zaregamsianum", 
+"^ot:ottId": 33856, 
+"^ot:ottTaxonName": "Verticillium zaregamsianum"
 }, 
 "Tl836963": {
-"^ot:originalLabel": "Sodiomyces alkalinus F14"
+"^ot:originalLabel": "Sodiomyces alkalinus F14", 
+"^ot:ottId": 4927642, 
+"^ot:ottTaxonName": "Heleococcum alkalinum"
 }, 
 "Tl836964": {
 "^ot:originalLabel": "Glomerella acutata", 
+"^ot:ottId": 563425, 
+"^ot:ottTaxonName": "Colletotrichum acutatum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6679, 
 "@tb:identifier.taxonVariant": 29044, 
@@ -142,13 +248,19 @@
 }
 }, 
 "Tl836965": {
-"^ot:originalLabel": "Sodiomyces alkalinus F8"
+"^ot:originalLabel": "Sodiomyces alkalinus F8", 
+"^ot:ottId": 4927642, 
+"^ot:ottTaxonName": "Heleococcum alkalinum"
 }, 
 "Tl836966": {
-"^ot:originalLabel": "Verticillium isaacii"
+"^ot:originalLabel": "Verticillium isaacii", 
+"^ot:ottId": 922336, 
+"^ot:ottTaxonName": "Verticillium isaacii"
 }, 
 "Tl836967": {
 "^ot:originalLabel": "Acremonium restrictum", 
+"^ot:ottId": 24976, 
+"^ot:ottTaxonName": "Acremonium restrictum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 440794, 
 "@tb:identifier.taxonVariant": 581333, 
@@ -157,13 +269,19 @@
 }
 }, 
 "Tl836968": {
-"^ot:originalLabel": "Plectosphaerella ramiseptata"
+"^ot:originalLabel": "Plectosphaerella ramiseptata", 
+"^ot:ottId": 576493, 
+"^ot:ottTaxonName": "Plectosphaerella ramiseptata"
 }, 
 "Tl836969": {
-"^ot:originalLabel": "Sodiomyces alkalinus F16"
+"^ot:originalLabel": "Sodiomyces alkalinus F16", 
+"^ot:ottId": 4927642, 
+"^ot:ottTaxonName": "Heleococcum alkalinum"
 }, 
 "Tl836970": {
 "^ot:originalLabel": "Colletotrichum boninense", 
+"^ot:ottId": 332420, 
+"^ot:ottTaxonName": "Colletotrichum boninense", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6680, 
 "@tb:identifier.taxonVariant": 16213, 
@@ -172,10 +290,14 @@
 }
 }, 
 "Tl836971": {
-"^ot:originalLabel": "Verticillium alfalfae"
+"^ot:originalLabel": "Verticillium alfalfae", 
+"^ot:ottId": 922331, 
+"^ot:ottTaxonName": "Verticillium alfalfae"
 }, 
 "Tl836972": {
 "^ot:originalLabel": "Acremonium brunnescens", 
+"^ot:ottId": 24985, 
+"^ot:ottTaxonName": "Acremonium brunnescens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 440793, 
 "@tb:identifier.taxonVariant": 581332, 
@@ -184,10 +306,14 @@
 }
 }, 
 "Tl836973": {
-"^ot:originalLabel": "Sodiomyces alkalinus F19"
+"^ot:originalLabel": "Sodiomyces alkalinus F19", 
+"^ot:ottId": 4927642, 
+"^ot:ottTaxonName": "Heleococcum alkalinum"
 }, 
 "Tl836974": {
 "^ot:originalLabel": "Acremonium stromaticum", 
+"^ot:ottId": 209762, 
+"^ot:ottTaxonName": "Acremonium stromaticum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 435587, 
 "@tb:identifier.taxonVariant": 573715, 
@@ -196,10 +322,14 @@
 }
 }, 
 "Tl836975": {
-"^ot:originalLabel": "Sodiomyces alkalinus F9"
+"^ot:originalLabel": "Sodiomyces alkalinus F9", 
+"^ot:ottId": 4927642, 
+"^ot:ottTaxonName": "Heleococcum alkalinum"
 }, 
 "Tl836976": {
 "^ot:originalLabel": "Verticillium albo-atrum", 
+"^ot:ottId": 615472, 
+"^ot:ottTaxonName": "Verticillium albo-atrum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 56436, 
 "@tb:identifier.taxonVariant": 415322, 
@@ -208,8 +338,9 @@
 }
 }, 
 "Tl836977": {
-"^ot:altLabel": "Verticillium theobromae", 
 "^ot:originalLabel": "Verticillium theobromae Strain CBS968 72", 
+"^ot:ottId": 1090052, 
+"^ot:ottTaxonName": "Musicillium theobromae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 131325, 
 "@tb:identifier.taxonVariant": 208693, 
@@ -220,6 +351,8 @@
 }, 
 "Tl836978": {
 "^ot:originalLabel": "Acremonium nepalense", 
+"^ot:ottId": 1036085, 
+"^ot:ottTaxonName": "Acremonium nepalense", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 435589, 
 "@tb:identifier.taxonVariant": 573717, 
@@ -229,6 +362,8 @@
 }, 
 "Tl836979": {
 "^ot:originalLabel": "Gibellulopsis piscis", 
+"^ot:ottId": 724688, 
+"^ot:ottTaxonName": "Gibellulopsis piscis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 435591, 
 "@tb:identifier.taxonVariant": 573719, 
@@ -238,6 +373,8 @@
 }, 
 "Tl836980": {
 "^ot:originalLabel": "Verticillium dahliae", 
+"^ot:ottId": 615475, 
+"^ot:ottTaxonName": "Verticillium dahliae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 30630, 
 "@tb:identifier.taxonVariant": 71460, 
@@ -247,6 +384,8 @@
 }, 
 "Tl836981": {
 "^ot:originalLabel": "Acrostalagmus luteoalbus", 
+"^ot:ottId": 1090070, 
+"^ot:ottTaxonName": "Acrostalagmus luteoalbus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 131327, 
 "@tb:identifier.taxonVariant": 208694, 
@@ -255,19 +394,29 @@
 }
 }, 
 "Tl836982": {
-"^ot:originalLabel": "Plectosphaerella pauciseptata"
+"^ot:originalLabel": "Plectosphaerella pauciseptata", 
+"^ot:ottId": 576495, 
+"^ot:ottTaxonName": "Plectosphaerella pauciseptata"
 }, 
 "Tl836983": {
-"^ot:originalLabel": "Sodiomyces alkalinus F24"
+"^ot:originalLabel": "Sodiomyces alkalinus F24", 
+"^ot:ottId": 4927642, 
+"^ot:ottTaxonName": "Heleococcum alkalinum"
 }, 
 "Tl836984": {
-"^ot:originalLabel": "Sodiomyces alkalinus F23"
+"^ot:originalLabel": "Sodiomyces alkalinus F23", 
+"^ot:ottId": 4927642, 
+"^ot:ottTaxonName": "Heleococcum alkalinum"
 }, 
 "Tl836985": {
-"^ot:originalLabel": "Sodiomyces alkalinus F20"
+"^ot:originalLabel": "Sodiomyces alkalinus F20", 
+"^ot:ottId": 4927642, 
+"^ot:ottTaxonName": "Heleococcum alkalinum"
 }, 
 "Tl836986": {
 "^ot:originalLabel": "Colletotrichum gloeosporioides", 
+"^ot:ottId": 570883, 
+"^ot:ottTaxonName": "Colletotrichum gloeosporioides", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6689, 
 "@tb:identifier.taxonVariant": 16231, 
@@ -277,13 +426,19 @@
 "^skos:prefLabel": "Colletotrichum cf. gloeosporioides AR4031"
 }, 
 "Tl836987": {
-"^ot:originalLabel": "Sodiomyces alkalinus F11"
+"^ot:originalLabel": "Sodiomyces alkalinus F11", 
+"^ot:ottId": 4927643, 
+"^ot:ottTaxonName": "Sodiomyces alkalinus F11"
 }, 
 "Tl836988": {
-"^ot:originalLabel": "Plectosphaerella citrullae Strain189"
+"^ot:originalLabel": "Plectosphaerella citrullae Strain189", 
+"^ot:ottId": 738811, 
+"^ot:ottTaxonName": "Plectosphaerella citrullae"
 }, 
 "Tl836989": {
 "^ot:originalLabel": "Acremonium furcatum", 
+"^ot:ottId": 871254, 
+"^ot:ottTaxonName": "Acremonium furcatum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 67898, 
 "@tb:identifier.taxonVariant": 143360, 
@@ -292,13 +447,19 @@
 }
 }, 
 "Tl836990": {
-"^ot:originalLabel": "Gibellulopsis nigrescens"
+"^ot:originalLabel": "Gibellulopsis nigrescens", 
+"^ot:ottId": 420571, 
+"^ot:ottTaxonName": "Gibellulopsis nigrescens"
 }, 
 "Tl836991": {
-"^ot:originalLabel": "Plectosphaerella citrullae strain157"
+"^ot:originalLabel": "Plectosphaerella citrullae strain157", 
+"^ot:ottId": 738811, 
+"^ot:ottTaxonName": "Plectosphaerella citrullae"
 }, 
 "Tl836992": {
 "^ot:originalLabel": "Stachylidium bicolor", 
+"^ot:ottId": 420584, 
+"^ot:ottTaxonName": "Stachylidium bicolor", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 600522, 
 "@tb:identifier.taxonVariant": 800674, 
@@ -306,16 +467,24 @@
 }
 }, 
 "Tl836993": {
-"^ot:originalLabel": "Plectosphaerella alismatis"
+"^ot:originalLabel": "Plectosphaerella alismatis", 
+"^ot:ottId": 191670, 
+"^ot:ottTaxonName": "Plectosphaerella alismatis"
 }, 
 "Tl836994": {
-"^ot:originalLabel": "Sodiomyces alkalinus F10"
+"^ot:originalLabel": "Sodiomyces alkalinus F10", 
+"^ot:ottId": 4927642, 
+"^ot:ottTaxonName": "Heleococcum alkalinum"
 }, 
 "Tl836995": {
-"^ot:originalLabel": "Sodiomyces alkalinus F17"
+"^ot:originalLabel": "Sodiomyces alkalinus F17", 
+"^ot:ottId": 4927642, 
+"^ot:ottTaxonName": "Heleococcum alkalinum"
 }, 
 "Tl836996": {
 "^ot:originalLabel": "Plectosphaerella cucumerina", 
+"^ot:ottId": 193216, 
+"^ot:ottTaxonName": "Monographella cucumerina", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22781, 
 "@tb:identifier.taxonVariant": 53115, 
@@ -324,19 +493,29 @@
 }
 }, 
 "Tl836997": {
-"^ot:originalLabel": "Sodiomyces alkalinus F7"
+"^ot:originalLabel": "Sodiomyces alkalinus F7", 
+"^ot:ottId": 4927642, 
+"^ot:ottTaxonName": "Heleococcum alkalinum"
 }, 
 "Tl836998": {
-"^ot:originalLabel": "Sodiomyces alkalinus F15"
+"^ot:originalLabel": "Sodiomyces alkalinus F15", 
+"^ot:ottId": 4927642, 
+"^ot:ottTaxonName": "Heleococcum alkalinum"
 }, 
 "Tl836999": {
-"^ot:originalLabel": "Sodiomyces alkalinus F18"
+"^ot:originalLabel": "Sodiomyces alkalinus F18", 
+"^ot:ottId": 4927642, 
+"^ot:ottTaxonName": "Heleococcum alkalinum"
 }, 
 "Tl837000": {
-"^ot:originalLabel": "Sodiomyces alkalinus F21"
+"^ot:originalLabel": "Sodiomyces alkalinus F21", 
+"^ot:ottId": 4927642, 
+"^ot:ottTaxonName": "Heleococcum alkalinum"
 }, 
 "Tl837001": {
 "^ot:originalLabel": "Glomerella cingulata", 
+"^ot:ottId": 570883, 
+"^ot:ottTaxonName": "Colletotrichum gloeosporioides", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 12228, 
 "@tb:identifier.taxonVariant": 29045, 
@@ -345,13 +524,19 @@
 }
 }, 
 "Tl837002": {
-"^ot:originalLabel": "Acrostalagmus annulatus"
+"^ot:originalLabel": "Acrostalagmus annulatus", 
+"^ot:ottId": 800509, 
+"^ot:ottTaxonName": "Acrostalagmus annulatus"
 }, 
 "Tl837003": {
-"^ot:originalLabel": "Sodiomyces alkalinus F13"
+"^ot:originalLabel": "Sodiomyces alkalinus F13", 
+"^ot:ottId": 4927642, 
+"^ot:ottTaxonName": "Heleococcum alkalinum"
 }, 
 "Tl837004": {
 "^ot:originalLabel": "Acremonium alcalophilum", 
+"^ot:ottId": 495682, 
+"^ot:ottTaxonName": "Acremonium alcalophilum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 435586, 
 "@tb:identifier.taxonVariant": 573714, 
@@ -360,10 +545,14 @@
 }
 }, 
 "Tl837005": {
-"^ot:originalLabel": "Plectosphaerella plurivora"
+"^ot:originalLabel": "Plectosphaerella plurivora", 
+"^ot:ottId": 738801, 
+"^ot:ottTaxonName": "Plectosphaerella plurivora"
 }, 
 "Tl837006": {
 "^ot:originalLabel": "Acremonium cucurbitacearum", 
+"^ot:ottId": 842749, 
+"^ot:ottTaxonName": "Acremonium cucurbitacearum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 235325, 
 "@tb:identifier.taxonVariant": 462660, 
@@ -372,13 +561,19 @@
 }
 }, 
 "Tl837007": {
-"^ot:originalLabel": "Sodiomyces alkalinus F12"
+"^ot:originalLabel": "Sodiomyces alkalinus F12", 
+"^ot:ottId": 4927642, 
+"^ot:ottTaxonName": "Heleococcum alkalinum"
 }, 
 "Tl837008": {
-"^ot:originalLabel": "Sodiomyces alkalinus F22"
+"^ot:originalLabel": "Sodiomyces alkalinus F22", 
+"^ot:ottId": 4927642, 
+"^ot:ottTaxonName": "Heleococcum alkalinum"
 }, 
 "Tl843320": {
 "^ot:originalLabel": "Camarops microspora", 
+"^ot:ottId": 758070, 
+"^ot:ottTaxonName": "Camarops microspora", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 4633, 
 "@tb:identifier.taxonVariant": 11148, 
@@ -388,6 +583,8 @@
 }, 
 "Tl843321": {
 "^ot:originalLabel": "Bionectria ochroleuca", 
+"^ot:ottId": 5317399, 
+"^ot:ottTaxonName": "Bionectria ochroleuca", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3528, 
 "@tb:identifier.taxonVariant": 8464, 
@@ -397,6 +594,8 @@
 }, 
 "Tl843322": {
 "^ot:originalLabel": "Diatrype disciformis", 
+"^ot:ottId": 183727, 
+"^ot:ottTaxonName": "Diatrype disciformis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 8913, 
 "@tb:identifier.taxonVariant": 21441, 
@@ -406,6 +605,8 @@
 }, 
 "Tl843323": {
 "^ot:originalLabel": "Melanconis marginalis", 
+"^ot:ottId": 1082189, 
+"^ot:ottTaxonName": "Melanconis alni", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 17210, 
 "@tb:identifier.taxonVariant": 40301, 
@@ -415,6 +616,8 @@
 }, 
 "Tl843324": {
 "^ot:originalLabel": "Melanospora tiffanii", 
+"^ot:ottId": 871580, 
+"^ot:ottTaxonName": "Melanospora tiffanii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 147520, 
 "@tb:identifier.taxonVariant": 223593, 
@@ -424,6 +627,8 @@
 }, 
 "Tl843325": {
 "^ot:originalLabel": "Hypocrea lutea", 
+"^ot:ottId": 935193, 
+"^ot:ottTaxonName": "Hypocrea lutea", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 14127, 
 "@tb:identifier.taxonVariant": 33291, 
@@ -432,10 +637,14 @@
 }
 }, 
 "Tl843326": {
-"^ot:originalLabel": "Hypocrea americana"
+"^ot:originalLabel": "Hypocrea americana", 
+"^ot:ottId": 1072669, 
+"^ot:ottTaxonName": "Hypocrea americana"
 }, 
 "Tl843327": {
 "^ot:originalLabel": "Acanthonitschkea argentinensis", 
+"^ot:ottId": 819304, 
+"^ot:ottTaxonName": "Acanthonitschkea argentinensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 38289, 
 "@tb:identifier.taxonVariant": 88541, 
@@ -445,6 +654,8 @@
 }, 
 "Tl843328": {
 "^ot:originalLabel": "Varicosporina ramulosa", 
+"^ot:ottId": 483881, 
+"^ot:ottTaxonName": "Varicosporina ramulosa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 30510, 
 "@tb:identifier.taxonVariant": 71190, 
@@ -454,6 +665,8 @@
 }, 
 "Tl843329": {
 "^ot:originalLabel": "Epichloe typhina", 
+"^ot:ottId": 103011, 
+"^ot:ottTaxonName": "Epichloe typhina", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 31526, 
 "@tb:identifier.taxonVariant": 73396, 
@@ -463,6 +676,8 @@
 }, 
 "Tl843330": {
 "^ot:originalLabel": "Torrubiella alba", 
+"^ot:ottId": 90393, 
+"^ot:ottTaxonName": "Torrubiella alba", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 15432, 
 "@tb:identifier.taxonVariant": 113310, 
@@ -472,6 +687,8 @@
 }, 
 "Tl843331": {
 "^ot:originalLabel": "Lasiosphaeria ovina", 
+"^ot:ottId": 597716, 
+"^ot:ottTaxonName": "Lasiosphaeria ovina", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 15350, 
 "@tb:identifier.taxonVariant": 36032, 
@@ -481,6 +698,8 @@
 }, 
 "Tl843332": {
 "^ot:originalLabel": "Didymostilbe echinofibrosa", 
+"^ot:ottId": 131587, 
+"^ot:ottTaxonName": "Virgatospora echinofibrosa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 9070, 
 "@tb:identifier.taxonVariant": 21816, 
@@ -490,6 +709,8 @@
 }, 
 "Tl843333": {
 "^ot:originalLabel": "Coniochaeta ostrea", 
+"^ot:ottId": 103607, 
+"^ot:ottTaxonName": "Coniochaeta ostrea", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 271958, 
 "@tb:identifier.taxonVariant": 327209, 
@@ -499,6 +720,8 @@
 }, 
 "Tl843334": {
 "^ot:originalLabel": "Xylaria hypoxylon", 
+"^ot:ottId": 44255, 
+"^ot:ottTaxonName": "Xylaria hypoxylon", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 31118, 
 "@tb:identifier.taxonVariant": 72654, 
@@ -508,6 +731,8 @@
 }, 
 "Tl843335": {
 "^ot:originalLabel": "Gelasinospora tetrasperma", 
+"^ot:ottId": 424728, 
+"^ot:ottTaxonName": "Gelasinospora tetrasperma", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 11835, 
 "@tb:identifier.taxonVariant": 28173, 
@@ -517,6 +742,8 @@
 }, 
 "Tl843336": {
 "^ot:originalLabel": "Chaetosphaerella phaeostroma", 
+"^ot:ottId": 781652, 
+"^ot:ottTaxonName": "Chaetosphaerella phaeostroma", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5601, 
 "@tb:identifier.taxonVariant": 13562, 
@@ -526,6 +753,8 @@
 }, 
 "Tl843337": {
 "^ot:originalLabel": "Leucostoma niveum", 
+"^ot:ottId": 305248, 
+"^ot:ottTaxonName": "Valsa nivea", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 607136, 
 "@tb:identifier.taxonVariant": 810779, 
@@ -535,6 +764,8 @@
 }, 
 "Tl843338": {
 "^ot:originalLabel": "Acremonium strictum", 
+"^ot:ottId": 400308, 
+"^ot:ottTaxonName": "Sarocladium strictum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51216, 
 "@tb:identifier.taxonVariant": 120989, 
@@ -544,6 +775,8 @@
 }, 
 "Tl843339": {
 "^ot:originalLabel": "Cryptosporella hypodermia", 
+"^ot:ottId": 5319203, 
+"^ot:ottTaxonName": "Winterella hypodermia", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 7618, 
 "@tb:identifier.taxonVariant": 18377, 
@@ -553,6 +786,8 @@
 }, 
 "Tl843340": {
 "^ot:originalLabel": "Apiognomonia errabunda", 
+"^ot:ottId": 157305, 
+"^ot:ottTaxonName": "Apiognomonia errabunda", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 2007, 
 "@tb:identifier.taxonVariant": 4833, 
@@ -562,6 +797,8 @@
 }, 
 "Tl843341": {
 "^ot:originalLabel": "Roumegueriella rufula", 
+"^ot:ottId": 935178, 
+"^ot:ottTaxonName": "Roumegueriella rufula", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 25756, 
 "@tb:identifier.taxonVariant": 60265, 
@@ -571,6 +808,8 @@
 }, 
 "Tl843342": {
 "^ot:originalLabel": "Lulworthia grandispora", 
+"^ot:ottId": 618474, 
+"^ot:ottTaxonName": "Lulworthia grandispora", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 16431, 
 "@tb:identifier.taxonVariant": 38530, 
@@ -580,6 +819,8 @@
 }, 
 "Tl843343": {
 "^ot:originalLabel": "Eutypa lata", 
+"^ot:ottId": 855116, 
+"^ot:ottTaxonName": "Eutypa lata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 10979, 
 "@tb:identifier.taxonVariant": 26249, 
@@ -589,6 +830,8 @@
 }, 
 "Tl843344": {
 "^ot:originalLabel": "Melanospora zamiae", 
+"^ot:ottId": 90714, 
+"^ot:ottTaxonName": "Melanospora zamiae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 17234, 
 "@tb:identifier.taxonVariant": 40356, 
@@ -598,6 +841,8 @@
 }, 
 "Tl843345": {
 "^ot:originalLabel": "Gnomonia gnomon", 
+"^ot:ottId": 343688, 
+"^ot:ottTaxonName": "Gnomonia gnomon", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 12365, 
 "@tb:identifier.taxonVariant": 29359, 
@@ -607,6 +852,8 @@
 }, 
 "Tl843346": {
 "^ot:originalLabel": "Cordyceps cardinalis", 
+"^ot:ottId": 441948, 
+"^ot:ottTaxonName": "Cordyceps cardinalis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 46311, 
 "@tb:identifier.taxonVariant": 108547, 
@@ -616,6 +863,8 @@
 }, 
 "Tl843347": {
 "^ot:originalLabel": "Camarops ustulinoides", 
+"^ot:ottId": 538046, 
+"^ot:ottTaxonName": "Camarops ustulinoides", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 4636, 
 "@tb:identifier.taxonVariant": 11153, 
@@ -625,6 +874,8 @@
 }, 
 "Tl843348": {
 "^ot:originalLabel": "Podospora fimiseda", 
+"^ot:ottId": 963487, 
+"^ot:ottTaxonName": "Podospora fimiseda", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 23063, 
 "@tb:identifier.taxonVariant": 53919, 
@@ -634,6 +885,8 @@
 }, 
 "Tl843349": {
 "^ot:originalLabel": "Selinia pulchra", 
+"^ot:ottId": 828990, 
+"^ot:ottTaxonName": "Selinia pulchra", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 26688, 
 "@tb:identifier.taxonVariant": 62276, 
@@ -643,6 +896,8 @@
 }, 
 "Tl843350": {
 "^ot:originalLabel": "Cercophora caudata", 
+"^ot:ottId": 254784, 
+"^ot:ottTaxonName": "Immersiella caudata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 37362, 
 "@tb:identifier.taxonVariant": 86376, 
@@ -652,6 +907,8 @@
 }, 
 "Tl843351": {
 "^ot:originalLabel": "Melanconis stilbostoma", 
+"^ot:ottId": 1082188, 
+"^ot:ottTaxonName": "Melanconis stilbostoma", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 17211, 
 "@tb:identifier.taxonVariant": 40303, 
@@ -661,6 +918,8 @@
 }, 
 "Tl843352": {
 "^ot:originalLabel": "Melanopsamma pomiformis", 
+"^ot:ottId": 688535, 
+"^ot:ottTaxonName": "Melanopsamma pomiformis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 27744, 
 "@tb:identifier.taxonVariant": 80362, 
@@ -670,6 +929,8 @@
 }, 
 "Tl843353": {
 "^ot:originalLabel": "Peethambara spirostriata", 
+"^ot:ottId": 131579, 
+"^ot:ottTaxonName": "Nectria spirostriata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 34713, 
 "@tb:identifier.taxonVariant": 80356, 
@@ -679,6 +940,8 @@
 }, 
 "Tl843354": {
 "^ot:originalLabel": "Acremonium murorum", 
+"^ot:ottId": 1061330, 
+"^ot:ottTaxonName": "Gliomastix murorum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 356417, 
 "@tb:identifier.taxonVariant": 807911, 
@@ -689,6 +952,8 @@
 }, 
 "Tl843355": {
 "^ot:originalLabel": "Xylaria acuta", 
+"^ot:ottId": 1025261, 
+"^ot:ottTaxonName": "Xylaria acuta", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 31113, 
 "@tb:identifier.taxonVariant": 72645, 
@@ -698,6 +963,8 @@
 }, 
 "Tl843356": {
 "^ot:originalLabel": "Lignincola laevis", 
+"^ot:ottId": 150299, 
+"^ot:ottTaxonName": "Lignincola laevis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 15906, 
 "@tb:identifier.taxonVariant": 37281, 
@@ -707,6 +974,8 @@
 }, 
 "Tl843357": {
 "^ot:originalLabel": "Cryphonectria parasitica", 
+"^ot:ottId": 103005, 
+"^ot:ottTaxonName": "Cryphonectria parasitica", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 7570, 
 "@tb:identifier.taxonVariant": 18287, 
@@ -716,6 +985,8 @@
 }, 
 "Tl843358": {
 "^ot:originalLabel": "Heleococcum aurantiacum", 
+"^ot:ottId": 4059063, 
+"^ot:ottTaxonName": "Heleococcum aurantiacum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 612932, 
 "@tb:identifier.taxonVariant": 819696, 
@@ -724,6 +995,8 @@
 }, 
 "Tl843359": {
 "^ot:originalLabel": "Microascus trigonosporus", 
+"^ot:ottId": 737682, 
+"^ot:ottTaxonName": "Microascus trigonosporus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 17641, 
 "@tb:identifier.taxonVariant": 41278, 
@@ -733,6 +1006,8 @@
 }, 
 "Tl843360": {
 "^ot:originalLabel": "Melanconis alni", 
+"^ot:ottId": 1082189, 
+"^ot:ottTaxonName": "Melanconis alni", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 17208, 
 "@tb:identifier.taxonVariant": 40297, 
@@ -742,6 +1017,8 @@
 }, 
 "Tl843361": {
 "^ot:originalLabel": "Petriella setifera", 
+"^ot:ottId": 809132, 
+"^ot:ottTaxonName": "Petriella setifera", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 21309, 
 "@tb:identifier.taxonVariant": 49555, 
@@ -751,6 +1028,8 @@
 }, 
 "Tl843362": {
 "^ot:originalLabel": "Pleospora herbarum", 
+"^ot:ottId": 282723, 
+"^ot:ottTaxonName": "Pleospora herbarum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22837, 
 "@tb:identifier.taxonVariant": 53224, 
@@ -760,6 +1039,8 @@
 }, 
 "Tl843363": {
 "^ot:originalLabel": "Lindra thalassiae", 
+"^ot:ottId": 172400, 
+"^ot:ottTaxonName": "Lindra thalassiae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 16005, 
 "@tb:identifier.taxonVariant": 37507, 
@@ -769,6 +1050,8 @@
 }, 
 "Tl843364": {
 "^ot:originalLabel": "Heleococcum japonense", 
+"^ot:ottId": 716783, 
+"^ot:ottTaxonName": "Heleococcum japonense", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 13114, 
 "@tb:identifier.taxonVariant": 30962, 
@@ -777,6 +1060,8 @@
 }, 
 "Tl843365": {
 "^ot:originalLabel": "Diaporthe eres", 
+"^ot:ottId": 855272, 
+"^ot:ottTaxonName": "Phomopsis velata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 8889, 
 "@tb:identifier.taxonVariant": 21402, 
@@ -786,6 +1071,8 @@
 }, 
 "Tl843366": {
 "^ot:originalLabel": "Hydropisphaera erubescens", 
+"^ot:ottId": 505291, 
+"^ot:ottTaxonName": "Hydropisphaera erubescens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 13894, 
 "@tb:identifier.taxonVariant": 32773, 
@@ -795,6 +1082,8 @@
 }, 
 "Tl843367": {
 "^ot:originalLabel": "Fracchiaea broomeana", 
+"^ot:ottId": 1029321, 
+"^ot:ottTaxonName": "Nitschkia broomeana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 38287, 
 "@tb:identifier.taxonVariant": 88537, 
@@ -804,6 +1093,8 @@
 }, 
 "Tl843368": {
 "^ot:originalLabel": "Acremonium persicinum", 
+"^ot:ottId": 277139, 
+"^ot:ottTaxonName": "Acremonium persicinum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51217, 
 "@tb:identifier.taxonVariant": 120990, 
@@ -813,6 +1104,8 @@
 }, 
 "Tl843369": {
 "^ot:originalLabel": "Graphostroma platystoma", 
+"^ot:ottId": 1047409, 
+"^ot:ottTaxonName": "Graphostroma platystoma", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 12534, 
 "@tb:identifier.taxonVariant": 29726, 
@@ -838,7 +1131,18 @@
 "Tr54539": {
 "@label": "BI 2genes", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "Tn9025944", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 50, 
 "^tb:quality.tree": "Preferred Tree", 
@@ -1588,7 +1892,18 @@
 "Tr54540": {
 "@label": "ML 2 genes", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "Tn9026007", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 50, 
 "^tb:quality.tree": "Preferred Tree", 
@@ -2318,7 +2633,18 @@
 "Tr55240": {
 "@label": "BI 5 genes", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "Tn9077222", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 73, 
 "^tb:quality.tree": "Preferred Tree", 
@@ -3500,7 +3826,18 @@
 "Tr55241": {
 "@label": "ML 5 genes", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "Tn9077351", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 73, 
 "^tb:quality.tree": "Preferred Tree", 
