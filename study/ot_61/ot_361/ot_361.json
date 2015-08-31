@@ -57,22 +57,122 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2015-08-31T16:46:56.464Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:curatorName": "Romina Gazis", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}, 
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": "\\b\\s+(\\w*)$"
+}
+}
+]
+}, 
+"useFuzzyMatching": true
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2015-08-31T16:46:56.464Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"Tr57778"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Romina Gazis"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S13419"
 }, 
+"^ot:focalClade": 183729, 
+"^ot:focalCladeOTTTaxonName": "Diatrypaceae", 
+"^ot:messages": {
+"message": []
+}, 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "Tls27871"
 ], 
 "^ot:studyId": "ot_361", 
-"^ot:studyPublicationReference": "Chac?n S., D?rge D.D., Weisenborn J.L., & Piepenbring M. 2012. A new species and a new record of Diatrypaceae (Xylariales) from Panama. Mycologia, .", 
-"^ot:studyYear": 2012, 
+"^ot:studyPublication": {
+"@href": "http://dx.doi.org/10.3852/12-131"
+}, 
+"^ot:studyPublicationReference": "S. Chacon, D. Dorge, J. Weisenborn, M. Piepenbring, 2013, 'A new species and a new record of Diatrypaceae from Panama', Mycologia, vol. 105, no. 3, pp. 681-688", 
+"^ot:studyYear": 2013, 
+"^ot:tag": [], 
 "^ot:taxonLinkPrefixes": {
 "@ubio": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:", 
 "@uniprot": "http://purl.uniprot.org/taxonomy/"
@@ -95,11 +195,14 @@
 "^skos:historyNote": "Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlOTUWriter@477d67b4 $Rev: 1040 $", 
 "otuById": {
 "Tl908749": {
-"^ot:originalLabel": "Eutypa lata var. aceri CBS290.87"
+"^ot:originalLabel": "Eutypa lata var. aceri CBS290.87", 
+"^ot:ottId": 855116, 
+"^ot:ottTaxonName": "Eutypa lata"
 }, 
 "Tl908750": {
-"^ot:altLabel": "Cryptosphaeria ligniota", 
 "^ot:originalLabel": "Cryptosphaeria ligniota C2C", 
+"^ot:ottId": 168720, 
+"^ot:ottTaxonName": "Cryptosphaeria ligniota", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 7615, 
 "@tb:identifier.taxonVariant": 18372, 
@@ -108,8 +211,9 @@
 }
 }, 
 "Tl908751": {
-"^ot:altLabel": "Diatrypella verruciformis", 
 "^ot:originalLabel": "Diatrypella verruciformis UCR272", 
+"^ot:ottId": 691653, 
+"^ot:ottTaxonName": "Diatrypella favacea", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 553963, 
 "@tb:identifier.taxonVariant": 734041, 
@@ -118,8 +222,9 @@
 }
 }, 
 "Tl908752": {
-"^ot:altLabel": "Diatrypella quercina", 
 "^ot:originalLabel": "Diatrypella quercina DL30M", 
+"^ot:ottId": 849443, 
+"^ot:ottTaxonName": "Diatrypella quercina", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 8921, 
 "@tb:identifier.taxonVariant": 21457, 
@@ -128,8 +233,9 @@
 }
 }, 
 "Tl908753": {
-"^ot:altLabel": "Diatrype spilomea", 
 "^ot:originalLabel": "Diatrype spilomea D17C", 
+"^ot:ottId": 420105, 
+"^ot:ottTaxonName": "Diatrype spilomea", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 35486, 
 "@tb:identifier.taxonVariant": 82112, 
@@ -138,8 +244,9 @@
 }
 }, 
 "Tl908754": {
-"^ot:altLabel": "Eutypella leprosa", 
 "^ot:originalLabel": "Eutypella leprosa EL54C", 
+"^ot:ottId": 1043853, 
+"^ot:ottTaxonName": "Eutypella leprosa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 35347, 
 "@tb:identifier.taxonVariant": 81866, 
@@ -148,8 +255,9 @@
 }
 }, 
 "Tl908755": {
-"^ot:altLabel": "Eutypa laevata", 
 "^ot:originalLabel": "Eutypa laevata CBS291.87", 
+"^ot:ottId": 470231, 
+"^ot:ottTaxonName": "Eutypa laevata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 10978, 
 "@tb:identifier.taxonVariant": 26245, 
@@ -158,11 +266,14 @@
 }
 }, 
 "Tl908756": {
-"^ot:originalLabel": "Peroneutypa kochiana EL53M"
+"^ot:originalLabel": "Peroneutypa kochiana EL53M", 
+"^ot:ottId": 4051158, 
+"^ot:ottTaxonName": "Peroneutypa kochiana"
 }, 
 "Tl908757": {
-"^ot:altLabel": "Cryptosphaeria pullmanensis", 
 "^ot:originalLabel": "Cryptosphaeria pullmanensis UCD2373NV", 
+"^ot:ottId": 1001408, 
+"^ot:ottTaxonName": "Cryptosphaeria pullmanensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 7616, 
 "@tb:identifier.taxonVariant": 18374, 
@@ -171,8 +282,9 @@
 }
 }, 
 "Tl908758": {
-"^ot:altLabel": "Eutypa lata", 
 "^ot:originalLabel": "Eutypa lata PV2121", 
+"^ot:ottId": 855116, 
+"^ot:ottTaxonName": "Eutypa lata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 10979, 
 "@tb:identifier.taxonVariant": 26249, 
@@ -181,8 +293,9 @@
 }
 }, 
 "Tl908759": {
-"^ot:altLabel": "Eutypella caricae", 
 "^ot:originalLabel": "Eutypella caricae EL51C", 
+"^ot:ottId": 567860, 
+"^ot:ottTaxonName": "Eutypella caricae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 138030, 
 "@tb:identifier.taxonVariant": 214560, 
@@ -192,6 +305,8 @@
 }, 
 "Tl908760": {
 "^ot:originalLabel": "Peziza vesiculosa", 
+"^ot:ottId": 5298813, 
+"^ot:ottTaxonName": "Peziza", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 21408, 
 "@tb:identifier.taxonVariant": 49766, 
@@ -200,11 +315,14 @@
 }
 }, 
 "Tl908761": {
-"^ot:originalLabel": "Eutypella semicircularis MP4996"
+"^ot:originalLabel": "Eutypella semicircularis MP4996", 
+"^ot:ottId": 5219930, 
+"^ot:ottTaxonName": "Eutypella semicircularis"
 }, 
 "Tl908762": {
-"^ot:altLabel": "Cryptosphaeria subcutanea", 
 "^ot:originalLabel": "Cryptosphaeria subcutanea A56B", 
+"^ot:ottId": 691650, 
+"^ot:ottTaxonName": "Cryptosphaeria subcutanea", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 7617, 
 "@tb:identifier.taxonVariant": 18376, 
@@ -213,14 +331,19 @@
 }
 }, 
 "Tl908763": {
-"^ot:originalLabel": "Eutypella microtheca JL738"
+"^ot:originalLabel": "Eutypella microtheca JL738", 
+"^ot:ottId": 177819, 
+"^ot:ottTaxonName": "Eutypella microtheca"
 }, 
 "Tl908764": {
-"^ot:originalLabel": "Peroneutypa scoparia EL56C"
+"^ot:originalLabel": "Peroneutypa scoparia EL56C", 
+"^ot:ottId": 5317691, 
+"^ot:ottTaxonName": "Peroneutypa scoparia"
 }, 
 "Tl908765": {
-"^ot:altLabel": "Eutypella vitis", 
 "^ot:originalLabel": "Eutypella vitis UCD2291AR", 
+"^ot:ottId": 567866, 
+"^ot:ottTaxonName": "Eutypella vitis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 10986, 
 "@tb:identifier.taxonVariant": 26262, 
@@ -229,8 +352,9 @@
 }
 }, 
 "Tl908766": {
-"^ot:altLabel": "Diatrype disciformis", 
 "^ot:originalLabel": "Diatrype disciformis D8M", 
+"^ot:ottId": 183727, 
+"^ot:ottTaxonName": "Diatrype disciformis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 8913, 
 "@tb:identifier.taxonVariant": 21441, 
@@ -239,11 +363,14 @@
 }
 }, 
 "Tl908767": {
-"^ot:originalLabel": "Peroneutypa alsophila EL58C"
+"^ot:originalLabel": "Peroneutypa alsophila EL58C", 
+"^ot:ottId": 4051165, 
+"^ot:ottTaxonName": "Peroneutypa alsophila"
 }, 
 "Tl908768": {
-"^ot:altLabel": "Eutypella citricola", 
 "^ot:originalLabel": "Eutypella citricola JL734", 
+"^ot:ottId": 701161, 
+"^ot:ottTaxonName": "Eutypella citricola", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 615135, 
 "@tb:identifier.taxonVariant": 822685, 
@@ -251,11 +378,14 @@
 }
 }, 
 "Tl908769": {
-"^ot:originalLabel": "Eutypella cryptovalsoidea HVFIG05"
+"^ot:originalLabel": "Eutypella cryptovalsoidea HVFIG05", 
+"^ot:ottId": 701163, 
+"^ot:ottTaxonName": "Eutypella cryptovalsoidea"
 }, 
 "Tl908770": {
-"^ot:altLabel": "Eutypella cerviculata", 
 "^ot:originalLabel": "Eutypella cerviculata M68", 
+"^ot:ottId": 945941, 
+"^ot:ottTaxonName": "Eutypella cerviculata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 35490, 
 "@tb:identifier.taxonVariant": 82119, 
@@ -264,8 +394,9 @@
 }
 }, 
 "Tl908771": {
-"^ot:altLabel": "Eutypella prunastri", 
 "^ot:originalLabel": "Eutypella prunastri EL55C", 
+"^ot:ottId": 1043852, 
+"^ot:ottTaxonName": "Eutypella prunastri", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 10985, 
 "@tb:identifier.taxonVariant": 26260, 
@@ -288,7 +419,18 @@
 "Tr57778": {
 "@label": "Imported tree 0", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "Tn9459174", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 23, 
 "^tb:quality.tree": "Unrated", 
