@@ -57,25 +57,122 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2015-08-31T16:13:19.118Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:curatorName": "Romina Gazis", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}, 
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": "\\b\\s+(\\w*)$"
+}
+}
+]
+}, 
+"useFuzzyMatching": true
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2015-08-31T16:13:19.118Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"Tr56334"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Romina Gazis"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S13303"
 }, 
+"^ot:focalClade": 103002, 
+"^ot:focalCladeOTTTaxonName": "Diaporthales", 
+"^ot:messages": {
+"message": []
+}, 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "Tls27327"
 ], 
 "^ot:studyId": "ot_358", 
 "^ot:studyPublication": {
-"@href": "10.3767/003158512X642030"
+"@href": "http://dx.doi.org/10.3767/003158512x642030"
 }, 
-"^ot:studyPublicationReference": "Crous P.W., Summerell B., Alfenas A., Edwards J., Pascoe I.G., Porter I.J., & Groenewald J.Z. 2012. Genera of diaporthalean coelomycetes associated with leaf spots of tree hosts. Persoonia: Molecular Phylogeny and Evolution of Fungi, 28: 66-75.", 
+"^ot:studyPublicationReference": "P. W. Crous, B. A. Summerell, A. C. Alfenas, J. Edwards, I. G. Pascoe, I. J. Porter, J. Z. Groenewald, 2012, 'Genera of diaporthalean coelomycetes associated with leaf spots of tree hosts', Persoonia - Molecular Phylogeny and Evolution of Fungi, vol. 28, no. 1, pp. 66-75", 
 "^ot:studyYear": 2012, 
+"^ot:tag": [], 
 "^ot:taxonLinkPrefixes": {
 "@ubio": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:", 
 "@uniprot": "http://purl.uniprot.org/taxonomy/"
@@ -103,8 +200,9 @@
 "^skos:historyNote": "Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlOTUWriter@7742439c $Rev: 1040 $", 
 "otuById": {
 "Tl869447": {
-"^ot:altLabel": "Chrysoporthe inopina", 
 "^ot:originalLabel": "Chrysoporthe inopina JN942327", 
+"^ot:ottId": 88870, 
+"^ot:ottTaxonName": "Chrysoporthe inopina", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 326133, 
 "@tb:identifier.taxonVariant": 367827, 
@@ -113,8 +211,9 @@
 }
 }, 
 "Tl869448": {
-"^ot:altLabel": "Amphilogia gyrosa", 
 "^ot:originalLabel": "Amphilogia gyrosa EF026147", 
+"^ot:ottId": 1095058, 
+"^ot:ottTaxonName": "Amphilogia gyrosa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 35037, 
 "@tb:identifier.taxonVariant": 81117, 
@@ -124,14 +223,17 @@
 }, 
 "Tl869449": {
 "^ot:originalLabel": "Diaporthe cynaroidis EU552122", 
+"^ot:ottId": 931426, 
+"^ot:ottTaxonName": "Diaporthe cynaroidis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 470770, 
 "@tb:identifier.taxonVariant": 624948
 }
 }, 
 "Tl869450": {
-"^ot:altLabel": "Chrysoporthe doradensis", 
 "^ot:originalLabel": "Chrysoporthe doradensis JN942331", 
+"^ot:ottId": 623153, 
+"^ot:ottTaxonName": "Chrysoporthe doradensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 47756, 
 "@tb:identifier.taxonVariant": 111729, 
@@ -140,17 +242,24 @@
 }
 }, 
 "Tl869451": {
-"^ot:originalLabel": "Chrysoporthe hodgesiana JN942328"
+"^ot:originalLabel": "Chrysoporthe hodgesiana JN942328", 
+"^ot:ottId": 652406, 
+"^ot:ottTaxonName": "Chrysoporthe hodgesiana"
 }, 
 "Tl869452": {
-"^ot:originalLabel": "Auratiopycnidiella tristaniopsis CPC 16371"
+"^ot:originalLabel": "Auratiopycnidiella tristaniopsis CPC 16371", 
+"^ot:ottId": 466393, 
+"^ot:ottTaxonName": "Auratiopycnidiella tristaniopsis"
 }, 
 "Tl869453": {
-"^ot:originalLabel": "Diaporthe ceratozamiae JQ044420"
+"^ot:originalLabel": "Diaporthe ceratozamiae JQ044420", 
+"^ot:ottId": 114976, 
+"^ot:ottTaxonName": "Diaporthe ceratozamiae"
 }, 
 "Tl869454": {
-"^ot:altLabel": "Phaeocytostroma ambiguum", 
 "^ot:originalLabel": "Phaeocytostroma ambiguum FR748044", 
+"^ot:ottId": 33984, 
+"^ot:ottTaxonName": "Phaeocytostroma ambiguum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 607247, 
 "@tb:identifier.taxonVariant": 810975, 
@@ -158,8 +267,9 @@
 }
 }, 
 "Tl869455": {
-"^ot:altLabel": "Sydowiella fenestrans", 
 "^ot:originalLabel": "Sydowiella fenestrans JF681956", 
+"^ot:ottId": 1086873, 
+"^ot:ottTaxonName": "Sydowiella fenestrans", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 468532, 
 "@tb:identifier.taxonVariant": 622383, 
@@ -168,8 +278,9 @@
 }
 }, 
 "Tl869456": {
-"^ot:altLabel": "Harknessia fusiformis", 
 "^ot:originalLabel": "Harknessia fusiformis AY720721", 
+"^ot:ottId": 96864, 
+"^ot:ottTaxonName": "Harknessia fusiformis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 12976, 
 "@tb:identifier.taxonVariant": 30689, 
@@ -178,8 +289,9 @@
 }
 }, 
 "Tl869457": {
-"^ot:altLabel": "Phomopsis mali", 
 "^ot:originalLabel": "Phomopsis mali AB665315", 
+"^ot:ottId": 5277259, 
+"^ot:ottTaxonName": "Phomopsis prunorum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 614499, 
 "@tb:identifier.taxonVariant": 821638, 
@@ -187,11 +299,14 @@
 }
 }, 
 "Tl869458": {
-"^ot:originalLabel": "Aurantiosacculus acutatum CPC 13704"
+"^ot:originalLabel": "Aurantiosacculus acutatum CPC 13704", 
+"^ot:ottId": 46414, 
+"^ot:ottTaxonName": "Aurantiosacculus acutatus"
 }, 
 "Tl869459": {
-"^ot:altLabel": "Harknessia rhabdosphaera", 
 "^ot:originalLabel": "Harknessia rhabdosphaera DQ923532", 
+"^ot:ottId": 594105, 
+"^ot:ottTaxonName": "Harknessia rhabdosphaera", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 355424, 
 "@tb:identifier.taxonVariant": 386076, 
@@ -200,11 +315,14 @@
 }
 }, 
 "Tl869460": {
-"^ot:originalLabel": "Aurantiosacculus eucalyptorum CPC 13229"
+"^ot:originalLabel": "Aurantiosacculus eucalyptorum CPC 13229", 
+"^ot:ottId": 46417, 
+"^ot:ottTaxonName": "Aurantiosacculus eucalyptorum"
 }, 
 "Tl869461": {
-"^ot:altLabel": "Erythrogloeum hymenaeae", 
 "^ot:originalLabel": "Erythrogloeum hymenaeae CPC 18819", 
+"^ot:ottId": 608069, 
+"^ot:ottTaxonName": "Erythrogloeum hymenaeae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 614498, 
 "@tb:identifier.taxonVariant": 821637, 
@@ -212,21 +330,28 @@
 }
 }, 
 "Tl869462": {
-"^ot:originalLabel": "Disculoides eucalyptorum CPC 17648"
+"^ot:originalLabel": "Disculoides eucalyptorum CPC 17648", 
+"^ot:ottId": 466395, 
+"^ot:ottTaxonName": "Disculoides eucalyptorum"
 }, 
 "Tl869463": {
-"^ot:originalLabel": "Disculoides eucalypti CPC 17650"
+"^ot:originalLabel": "Disculoides eucalypti CPC 17650", 
+"^ot:ottId": 608067, 
+"^ot:ottTaxonName": "Disculoides eucalypti"
 }, 
 "Tl869464": {
 "^ot:originalLabel": "Harknessia ipereniae EF110614", 
+"^ot:ottId": 217072, 
+"^ot:ottTaxonName": "Harknessia ipereniae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 374091, 
 "@tb:identifier.taxonVariant": 519776
 }
 }, 
 "Tl869465": {
-"^ot:altLabel": "Amphiporthe leiphaemia", 
 "^ot:originalLabel": "Amphiporthe leiphaemia AJ293882", 
+"^ot:ottId": 363397, 
+"^ot:ottTaxonName": "Amphiporthe leiphaemia", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 134805, 
 "@tb:identifier.taxonVariant": 211608, 
@@ -235,8 +360,9 @@
 }
 }, 
 "Tl869466": {
-"^ot:altLabel": "Chrysoporthe cubensis", 
 "^ot:originalLabel": "Chrysoporthe cubensis JN942342", 
+"^ot:ottId": 1052899, 
+"^ot:ottTaxonName": "Chrysoporthe cubensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6069, 
 "@tb:identifier.taxonVariant": 14623, 
@@ -245,8 +371,9 @@
 }
 }, 
 "Tl869467": {
-"^ot:altLabel": "Harknessia renispora", 
 "^ot:originalLabel": "Harknessia renispora AY720737", 
+"^ot:ottId": 618364, 
+"^ot:ottTaxonName": "Harknessia renispora", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 12983, 
 "@tb:identifier.taxonVariant": 30702, 
@@ -255,8 +382,9 @@
 }
 }, 
 "Tl869468": {
-"^ot:altLabel": "Chrysoporthe cubensis", 
 "^ot:originalLabel": "Chrysoporthe cubensis JN940856", 
+"^ot:ottId": 1052899, 
+"^ot:ottTaxonName": "Chrysoporthe cubensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6069, 
 "@tb:identifier.taxonVariant": 14623, 
@@ -265,8 +393,9 @@
 }
 }, 
 "Tl869469": {
-"^ot:altLabel": "Cryphonectria nitschkei", 
 "^ot:originalLabel": "Cryphonectria nitschkei AF408341", 
+"^ot:ottId": 918891, 
+"^ot:ottTaxonName": "Cryphonectria nitschkei", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 7569, 
 "@tb:identifier.taxonVariant": 18286, 
@@ -275,8 +404,9 @@
 }
 }, 
 "Tl869470": {
-"^ot:altLabel": "Cryphonectria havanensis", 
 "^ot:originalLabel": "Cryphonectria havanensis AF408339", 
+"^ot:ottId": 412509, 
+"^ot:ottTaxonName": "Microthia havanensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 7567, 
 "@tb:identifier.taxonVariant": 18282, 
@@ -286,8 +416,9 @@
 "^skos:prefLabel": "Microthia havanensis"
 }, 
 "Tl869471": {
-"^ot:altLabel": "Chrysoporthe cubensis", 
 "^ot:originalLabel": "Chrysoporthe cubensis AF408338", 
+"^ot:ottId": 1052899, 
+"^ot:ottTaxonName": "Chrysoporthe cubensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6069, 
 "@tb:identifier.taxonVariant": 14623, 
@@ -296,11 +427,14 @@
 }
 }, 
 "Tl869472": {
-"^ot:originalLabel": "Harknessia australiensis JQ706211"
+"^ot:originalLabel": "Harknessia australiensis JQ706211", 
+"^ot:ottId": 334735, 
+"^ot:ottTaxonName": "Harknessia australiensis"
 }, 
 "Tl869473": {
-"^ot:altLabel": "Harknessia eucalyptorum", 
 "^ot:originalLabel": "Harknessia eucalyptorum AY720840", 
+"^ot:ottId": 618359, 
+"^ot:ottTaxonName": "Harknessia eucalyptorum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 12975, 
 "@tb:identifier.taxonVariant": 30687, 
@@ -309,17 +443,24 @@
 }
 }, 
 "Tl869474": {
-"^ot:originalLabel": "Chrysoporthe hodgesiana JN940842"
+"^ot:originalLabel": "Chrysoporthe hodgesiana JN940842", 
+"^ot:ottId": 652406, 
+"^ot:ottTaxonName": "Chrysoporthe hodgesiana"
 }, 
 "Tl869475": {
-"^ot:originalLabel": "Aurifilum marmelostoma HQ730873"
+"^ot:originalLabel": "Aurifilum marmelostoma HQ730873", 
+"^ot:ottId": 1064576, 
+"^ot:ottTaxonName": "Aurifilum marmelostoma"
 }, 
 "Tl869476": {
-"^ot:originalLabel": "Harknessia ellipsoidea JQ706214"
+"^ot:originalLabel": "Harknessia ellipsoidea JQ706214", 
+"^ot:ottId": 334736, 
+"^ot:ottTaxonName": "Harknessia ellipsoidea"
 }, 
 "Tl869477": {
-"^ot:altLabel": "Pilidiella granati", 
 "^ot:originalLabel": "Pilidiella granati AF408379", 
+"^ot:ottId": 228448, 
+"^ot:ottTaxonName": "Coniella granati", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22355, 
 "@tb:identifier.taxonVariant": 52020, 
@@ -328,8 +469,9 @@
 }
 }, 
 "Tl869478": {
-"^ot:altLabel": "Chromendothia citrina", 
 "^ot:originalLabel": "Chromendothia citrina AF408335", 
+"^ot:ottId": 918890, 
+"^ot:ottTaxonName": "Chromendothia citrina", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5979, 
 "@tb:identifier.taxonVariant": 14455, 
@@ -338,8 +480,9 @@
 }
 }, 
 "Tl869479": {
-"^ot:altLabel": "Pilidiella eucalyptorum", 
 "^ot:originalLabel": "Pilidiella eucalyptorum AF408391", 
+"^ot:ottId": 555726, 
+"^ot:ottTaxonName": "Pilidiella eucalyptorum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6827, 
 "@tb:identifier.taxonVariant": 113133, 
@@ -348,8 +491,9 @@
 }
 }, 
 "Tl869480": {
-"^ot:altLabel": "Greeneria uvicola", 
 "^ot:originalLabel": "Greeneria uvicola AF362570", 
+"^ot:ottId": 5311388, 
+"^ot:ottTaxonName": "Phyllosticta ampelicida", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 12558, 
 "@tb:identifier.taxonVariant": 29766, 
@@ -358,8 +502,9 @@
 }
 }, 
 "Tl869481": {
-"^ot:altLabel": "Cryphonectria macrospora", 
 "^ot:originalLabel": "Cryphonectria macrospora AF408340", 
+"^ot:ottId": 60069, 
+"^ot:ottTaxonName": "Cryphonectria macrospora", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 7568, 
 "@tb:identifier.taxonVariant": 18284, 
@@ -368,8 +513,9 @@
 }
 }, 
 "Tl869482": {
-"^ot:altLabel": "Melanconiella chrysostroma", 
 "^ot:originalLabel": "Melanconiella chrysostroma AF408369", 
+"^ot:ottId": 5316780, 
+"^ot:ottTaxonName": "Melanconis chrysostroma", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 174065, 
 "@tb:identifier.taxonVariant": 247928, 
@@ -378,8 +524,9 @@
 }
 }, 
 "Tl869483": {
-"^ot:altLabel": "Coniella musaiaensis", 
 "^ot:originalLabel": "Coniella musaiaensis AF408337", 
+"^ot:ottId": 868402, 
+"^ot:ottTaxonName": "Coniella musaiaensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6828, 
 "@tb:identifier.taxonVariant": 16560, 
@@ -388,8 +535,9 @@
 }
 }, 
 "Tl869484": {
-"^ot:altLabel": "Chrysoporthe inopina", 
 "^ot:originalLabel": "Chrysoporthe inopina JN940841", 
+"^ot:ottId": 88870, 
+"^ot:ottTaxonName": "Chrysoporthe inopina", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 326133, 
 "@tb:identifier.taxonVariant": 367827, 
@@ -398,8 +546,9 @@
 }
 }, 
 "Tl869485": {
-"^ot:altLabel": "Schizoparme botrytidis", 
 "^ot:originalLabel": "Schizoparme botrytidis AF408383", 
+"^ot:ottId": 817766, 
+"^ot:ottTaxonName": "Schizoparme botrytidis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 26373, 
 "@tb:identifier.taxonVariant": 61628, 
@@ -408,8 +557,9 @@
 }
 }, 
 "Tl869486": {
-"^ot:altLabel": "Endothia gyrosa", 
 "^ot:originalLabel": "Endothia gyrosa DQ470972", 
+"^ot:ottId": 1095058, 
+"^ot:ottTaxonName": "Amphilogia gyrosa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 10040, 
 "@tb:identifier.taxonVariant": 24005, 
@@ -418,8 +568,9 @@
 }
 }, 
 "Tl869487": {
-"^ot:altLabel": "Coniella australiensis", 
 "^ot:originalLabel": "Coniella australiensis AF408336", 
+"^ot:ottId": 868401, 
+"^ot:ottTaxonName": "Coniella australiensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6826, 
 "@tb:identifier.taxonVariant": 16556, 
@@ -428,8 +579,9 @@
 }
 }, 
 "Tl869488": {
-"^ot:altLabel": "Greeneria uvicola", 
 "^ot:originalLabel": "Greeneria uvicola JN547723", 
+"^ot:ottId": 5311388, 
+"^ot:ottTaxonName": "Phyllosticta ampelicida", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 12558, 
 "@tb:identifier.taxonVariant": 29766, 
@@ -438,8 +590,9 @@
 }
 }, 
 "Tl869489": {
-"^ot:altLabel": "Melanconiella spodiaea", 
 "^ot:originalLabel": "Melanconiella spodiaea AF408370", 
+"^ot:ottId": 499597, 
+"^ot:ottTaxonName": "Melanconiella spodiaea", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 174066, 
 "@tb:identifier.taxonVariant": 247929, 
@@ -448,8 +601,9 @@
 }
 }, 
 "Tl869490": {
-"^ot:altLabel": "Harknessia eucalypti", 
 "^ot:originalLabel": "Harknessia eucalypti AF408363", 
+"^ot:ottId": 868393, 
+"^ot:ottTaxonName": "Harknessia eucalypti", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 12974, 
 "@tb:identifier.taxonVariant": 30686, 
@@ -458,8 +612,9 @@
 }
 }, 
 "Tl869491": {
-"^ot:altLabel": "Endothiella gyrosa", 
 "^ot:originalLabel": "Endothiella gyrosa AF362555", 
+"^ot:ottId": 555720, 
+"^ot:ottTaxonName": "Endothiella gyrosa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 10043, 
 "@tb:identifier.taxonVariant": 24010, 
@@ -468,8 +623,9 @@
 }
 }, 
 "Tl869492": {
-"^ot:altLabel": "Chrysoporthe doradensis", 
 "^ot:originalLabel": "Chrysoporthe doradensis JN940845", 
+"^ot:ottId": 623153, 
+"^ot:ottTaxonName": "Chrysoporthe doradensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 47756, 
 "@tb:identifier.taxonVariant": 111729, 
@@ -478,8 +634,9 @@
 }
 }, 
 "Tl869493": {
-"^ot:altLabel": "Gnomonia dispora", 
 "^ot:originalLabel": "Gnomonia dispora EU199128", 
+"^ot:ottId": 982549, 
+"^ot:ottTaxonName": "Gnomonia dispora", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 414617, 
 "@tb:identifier.taxonVariant": 411717, 
@@ -488,8 +645,9 @@
 }
 }, 
 "Tl869494": {
-"^ot:altLabel": "Chromendothia citrina", 
 "^ot:originalLabel": "Chromendothia citrina EU255074", 
+"^ot:ottId": 918890, 
+"^ot:ottTaxonName": "Chromendothia citrina", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5979, 
 "@tb:identifier.taxonVariant": 14455, 
@@ -498,8 +656,9 @@
 }
 }, 
 "Tl869495": {
-"^ot:altLabel": "Celoporthe dispersa", 
 "^ot:originalLabel": "Celoporthe dispersa HQ730853", 
+"^ot:ottId": 145923, 
+"^ot:ottTaxonName": "Celoporthe dispersa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 204484, 
 "@tb:identifier.taxonVariant": 274107, 
@@ -524,7 +683,18 @@
 "Tr56333": {
 "@label": "Fig. 1b", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "Tn9203016", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 21, 
 "^tb:quality.tree": "Unrated", 
@@ -820,9 +990,20 @@
 }
 }, 
 "Tr56334": {
-"@label": "Fig. 1a", 
+"@label": "Fig. 1a. Molecular phylogenetic trees generated in this study. a. The first of 13 equally most parsimonious trees obtained from a heuristic search with 100 random taxon additions of the LSU sequence alignment. ", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:undefined", 
+"^ot:branchLengthTimeUnit": "Myr", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "Tn9203051", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "Tn9203034", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 34, 
 "^tb:quality.tree": "Unrated", 
@@ -1118,7 +1299,8 @@
 }, 
 "Tn9203031": {}, 
 "Tn9203032": {
-"@otu": "Tl869488"
+"@otu": "Tl869488", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn9203033": {}, 
 "Tn9203034": {
@@ -1131,7 +1313,8 @@
 "@otu": "Tl869490"
 }, 
 "Tn9203037": {
-"@otu": "Tl869471"
+"@otu": "Tl869471", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn9203038": {
 "@otu": "Tl869470"
@@ -1160,7 +1343,8 @@
 }, 
 "Tn9203049": {}, 
 "Tn9203050": {
-"@otu": "Tl869494"
+"@otu": "Tl869494", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn9203051": {}, 
 "Tn9203052": {}, 
@@ -1178,13 +1362,15 @@
 }, 
 "Tn9203059": {}, 
 "Tn9203060": {
-"@otu": "Tl869468"
+"@otu": "Tl869468", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn9203061": {
 "@otu": "Tl869477"
 }, 
 "Tn9203062": {
-"@otu": "Tl869478"
+"@otu": "Tl869478", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn9203063": {}, 
 "Tn9203064": {}, 
@@ -1198,7 +1384,8 @@
 "@otu": "Tl869462"
 }, 
 "Tn9203068": {
-"@otu": "Tl869480"
+"@otu": "Tl869480", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn9203069": {}, 
 "Tn9203070": {
@@ -1246,7 +1433,18 @@
 "Tr56335": {
 "@label": "Unpublished Bayesian tree", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "Tn9203105", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 34, 
 "^tb:quality.tree": "Unrated", 
