@@ -61,22 +61,112 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2015-09-01T20:29:28.603Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:curatorName": "Romina Gazis", 
+"substitutions": {
+"substitution": [
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": "$1"
+}, 
+"old": {
+"$": "^(\\S*\\s+\\S*).*"
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2015-09-01T20:29:28.603Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"Tr64869"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Romina Gazis"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S14387"
 }, 
+"^ot:focalClade": 33903, 
+"^ot:focalCladeOTTTaxonName": "Botryosphaeriaceae", 
+"^ot:messages": {
+"message": []
+}, 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "Tls31972"
 ], 
 "^ot:studyId": "ot_397", 
-"^ot:studyPublicationReference": "Marques M.W., Lima N.B., Junior M.M., Barbosa M.G., Michereff S.J., Phillips A., & Camara M.P. 2013. Botryosphaeria, Neofusicoccum, Neoscytalidium and Pseudofusicoccum species associated with mango in Brazil. Fungal Diversity, .", 
+"^ot:studyPublication": {
+"@href": "http://dx.doi.org/10.1007/s13225-013-0258-1"
+}, 
+"^ot:studyPublicationReference": "Mar\u00edlia W. Marques, Nelson B. Lima, Marcos A. de Morais, Sami J. Michereff, Alan J. L. Phillips, Marcos P. S. C\u00e2mara, 2013, 'Botryosphaeria, Neofusicoccum, Neoscytalidium and Pseudofusicoccum species associated with mango in Brazil', Fungal Diversity, vol. 61, no. 1, pp. 195-208", 
 "^ot:studyYear": 2013, 
+"^ot:tag": [], 
 "^ot:taxonLinkPrefixes": {
 "@ubio": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:", 
 "@uniprot": "http://purl.uniprot.org/taxonomy/"
@@ -100,6 +190,8 @@
 "otuById": {
 "Tl1146233": {
 "^ot:originalLabel": "Neofusicoccum kwambonambiense CMW14023", 
+"^ot:ottId": 486290, 
+"^ot:ottTaxonName": "Neofusicoccum kwambonambiense", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 530771, 
 "@tb:identifier.taxonVariant": 704124
@@ -107,6 +199,8 @@
 }, 
 "Tl1146234": {
 "^ot:originalLabel": "Neofusicoccum kwambonambiense CMW14140", 
+"^ot:ottId": 486290, 
+"^ot:ottTaxonName": "Neofusicoccum kwambonambiense", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 530771, 
 "@tb:identifier.taxonVariant": 704124
@@ -114,14 +208,17 @@
 }, 
 "Tl1146235": {
 "^ot:originalLabel": "Neofusicoccum cordaticola CMW13992", 
+"^ot:ottId": 486299, 
+"^ot:ottTaxonName": "Neofusicoccum cordaticola", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 530770, 
 "@tb:identifier.taxonVariant": 704122
 }
 }, 
 "Tl1146236": {
-"^ot:altLabel": "Neofusicoccum ribis", 
 "^ot:originalLabel": "Neofusicoccum ribis CMW7772", 
+"^ot:ottId": 33907, 
+"^ot:ottTaxonName": "Neofusicoccum ribis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3801, 
 "@tb:identifier.taxonVariant": 81838, 
@@ -131,8 +228,9 @@
 "^skos:prefLabel": "Botryosphaeria ribis"
 }, 
 "Tl1146237": {
-"^ot:altLabel": "Neofusicoccum ribis", 
 "^ot:originalLabel": "Neofusicoccum ribis CMW7054", 
+"^ot:ottId": 33907, 
+"^ot:ottTaxonName": "Neofusicoccum ribis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3801, 
 "@tb:identifier.taxonVariant": 81838, 
@@ -143,6 +241,8 @@
 }, 
 "Tl1146238": {
 "^ot:originalLabel": "Neofusicoccum parvum", 
+"^ot:ottId": 648285, 
+"^ot:ottTaxonName": "Neofusicoccum parvum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 35331, 
 "@tb:identifier.taxonVariant": 81837, 
@@ -151,14 +251,19 @@
 }
 }, 
 "Tl1146239": {
-"^ot:originalLabel": "Neofusicoccum macroclavatum WAC12445"
+"^ot:originalLabel": "Neofusicoccum macroclavatum WAC12445", 
+"^ot:ottId": 179695, 
+"^ot:ottTaxonName": "Neofusicoccum macroclavatum"
 }, 
 "Tl1146240": {
-"^ot:originalLabel": "Neofusicoccum sp. CMM1269"
+"^ot:originalLabel": "Neofusicoccum sp. CMM1269", 
+"^ot:ottId": 594104, 
+"^ot:ottTaxonName": "Neofusicoccum"
 }, 
 "Tl1146241": {
-"^ot:altLabel": "Neofusicoccum parvum", 
 "^ot:originalLabel": "Neofusicoccum parvum CMM1291", 
+"^ot:ottId": 648285, 
+"^ot:ottTaxonName": "Neofusicoccum parvum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 35331, 
 "@tb:identifier.taxonVariant": 81837, 
@@ -167,21 +272,28 @@
 }
 }, 
 "Tl1146242": {
-"^ot:originalLabel": "Neofusicoccum occulatum CBS_12"
+"^ot:originalLabel": "Neofusicoccum occulatum CBS_12", 
+"^ot:ottId": 100909, 
+"^ot:ottTaxonName": "Neofusicoccum occulatum"
 }, 
 "Tl1146243": {
-"^ot:originalLabel": "Neofusicoccum occulatumMUCC296"
+"^ot:originalLabel": "Neofusicoccum occulatumMUCC296", 
+"^ot:ottId": 100909, 
+"^ot:ottTaxonName": "Neofusicoccum occulatum"
 }, 
 "Tl1146244": {
 "^ot:originalLabel": "Neofusicoccum cordaticola CMW14056", 
+"^ot:ottId": 486299, 
+"^ot:ottTaxonName": "Neofusicoccum cordaticola", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 530770, 
 "@tb:identifier.taxonVariant": 704122
 }
 }, 
 "Tl1146245": {
-"^ot:altLabel": "Neofusicoccum parvum", 
 "^ot:originalLabel": "Neofusicoccum parvum PD106", 
+"^ot:ottId": 648285, 
+"^ot:ottTaxonName": "Neofusicoccum parvum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 35331, 
 "@tb:identifier.taxonVariant": 81837, 
@@ -190,34 +302,47 @@
 }
 }, 
 "Tl1146246": {
-"^ot:originalLabel": "Neofusicoccum batangarum CMW28363"
+"^ot:originalLabel": "Neofusicoccum batangarum CMW28363", 
+"^ot:ottId": 972342, 
+"^ot:ottTaxonName": "Neofusicoccum batangarum"
 }, 
 "Tl1146247": {
 "^ot:originalLabel": "Neofusicoccum umdonicola CMW14058", 
+"^ot:ottId": 486306, 
+"^ot:ottTaxonName": "Neofusicoccum umdonicola", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 530772, 
 "@tb:identifier.taxonVariant": 704127
 }
 }, 
 "Tl1146248": {
-"^ot:originalLabel": "Neofusicoccum batangarum CMW28315"
+"^ot:originalLabel": "Neofusicoccum batangarum CMW28315", 
+"^ot:ottId": 972342, 
+"^ot:ottTaxonName": "Neofusicoccum batangarum"
 }, 
 "Tl1146249": {
-"^ot:originalLabel": "Neofusicoccum sp. CMM1285"
+"^ot:originalLabel": "Neofusicoccum sp. CMM1285", 
+"^ot:ottId": 594104, 
+"^ot:ottTaxonName": "Neofusicoccum"
 }, 
 "Tl1146250": {
-"^ot:originalLabel": "Neofusicoccum macroclavatum WAC12446"
+"^ot:originalLabel": "Neofusicoccum macroclavatum WAC12446", 
+"^ot:ottId": 179695, 
+"^ot:ottTaxonName": "Neofusicoccum macroclavatum"
 }, 
 "Tl1146251": {
 "^ot:originalLabel": "Neofusicoccum umdonicola CMW14060", 
+"^ot:ottId": 486306, 
+"^ot:ottTaxonName": "Neofusicoccum umdonicola", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 530772, 
 "@tb:identifier.taxonVariant": 704127
 }
 }, 
 "Tl1146252": {
-"^ot:altLabel": "Neofusicoccum parvum", 
 "^ot:originalLabel": "Neofusicoccum parvum CMM3944", 
+"^ot:ottId": 648285, 
+"^ot:ottTaxonName": "Neofusicoccum parvum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 35331, 
 "@tb:identifier.taxonVariant": 81837, 
@@ -226,8 +351,9 @@
 }
 }, 
 "Tl1146253": {
-"^ot:altLabel": "Neofusicoccum parvum", 
 "^ot:originalLabel": "Neofusicoccum parvum CMM1465", 
+"^ot:ottId": 648285, 
+"^ot:ottTaxonName": "Neofusicoccum parvum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 35331, 
 "@tb:identifier.taxonVariant": 81837, 
@@ -236,11 +362,14 @@
 }
 }, 
 "Tl1146254": {
-"^ot:originalLabel": "Neofusicoccum sp. CMM1338"
+"^ot:originalLabel": "Neofusicoccum sp. CMM1338", 
+"^ot:ottId": 594104, 
+"^ot:ottTaxonName": "Neofusicoccum"
 }, 
 "Tl1146255": {
-"^ot:altLabel": "Neofusicoccum parvum", 
 "^ot:originalLabel": "Neofusicoccum parvum CMM3943", 
+"^ot:ottId": 648285, 
+"^ot:ottTaxonName": "Neofusicoccum parvum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 35331, 
 "@tb:identifier.taxonVariant": 81837, 
@@ -249,11 +378,14 @@
 }
 }, 
 "Tl1146256": {
-"^ot:originalLabel": "Neofusicoccum nonquaesitum PD484"
+"^ot:originalLabel": "Neofusicoccum nonquaesitum PD484", 
+"^ot:ottId": 65942, 
+"^ot:ottTaxonName": "Neofusicoccum nonquaesitum"
 }, 
 "Tl1146257": {
-"^ot:altLabel": "Neofusicoccum luteum", 
 "^ot:originalLabel": "Neofusicoccum luteum CMW9076", 
+"^ot:ottId": 958340, 
+"^ot:ottTaxonName": "Neofusicoccum luteum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3792, 
 "@tb:identifier.taxonVariant": 81832, 
@@ -263,8 +395,9 @@
 "^skos:prefLabel": "Botryosphaeria lutea"
 }, 
 "Tl1146258": {
-"^ot:altLabel": "Botryosphaeria dothidea", 
 "^ot:originalLabel": "Botryosphaeria dothidea CBS110302", 
+"^ot:ottId": 859795, 
+"^ot:ottTaxonName": "Botryosphaeria dothidea", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3789, 
 "@tb:identifier.taxonVariant": 9041, 
@@ -273,14 +406,19 @@
 }
 }, 
 "Tl1146259": {
-"^ot:originalLabel": "Neofusicoccum mangiferum CMW7024"
+"^ot:originalLabel": "Neofusicoccum mangiferum CMW7024", 
+"^ot:ottId": 463039, 
+"^ot:ottTaxonName": "Neofusicoccum mangiferae"
 }, 
 "Tl1146260": {
-"^ot:originalLabel": "Neofusicoccum eucalypticola CMW6217"
+"^ot:originalLabel": "Neofusicoccum eucalypticola CMW6217", 
+"^ot:ottId": 963754, 
+"^ot:ottTaxonName": "Neofusicoccum eucalypticola"
 }, 
 "Tl1146261": {
-"^ot:altLabel": "Neofusicoccum parvum", 
 "^ot:originalLabel": "Neofusicoccum parvum CMM1271", 
+"^ot:ottId": 648285, 
+"^ot:ottTaxonName": "Neofusicoccum parvum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 35331, 
 "@tb:identifier.taxonVariant": 81837, 
@@ -289,14 +427,19 @@
 }
 }, 
 "Tl1146262": {
-"^ot:originalLabel": "Neofusicoccum occulatum MUCC296"
+"^ot:originalLabel": "Neofusicoccum occulatum MUCC296", 
+"^ot:ottId": 100909, 
+"^ot:ottTaxonName": "Neofusicoccum occulatum"
 }, 
 "Tl1146263": {
-"^ot:originalLabel": "Neofusicoccum eucalypticola CMW6539"
+"^ot:originalLabel": "Neofusicoccum eucalypticola CMW6539", 
+"^ot:ottId": 963754, 
+"^ot:ottTaxonName": "Neofusicoccum eucalypticola"
 }, 
 "Tl1146264": {
-"^ot:altLabel": "Neofusicoccum australe", 
 "^ot:originalLabel": "Neofusicoccum australe CMW6837", 
+"^ot:ottId": 26868, 
+"^ot:ottTaxonName": "Neofusicoccum australe", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 418464, 
 "@tb:identifier.taxonVariant": 821180, 
@@ -305,14 +448,19 @@
 }
 }, 
 "Tl1146265": {
-"^ot:originalLabel": "Neofusicoccum eucalyptorum BOT16"
+"^ot:originalLabel": "Neofusicoccum eucalyptorum BOT16", 
+"^ot:ottId": 435694, 
+"^ot:ottTaxonName": "Neofusicoccum eucalyptorum"
 }, 
 "Tl1146266": {
-"^ot:originalLabel": "Neofusicoccum vitifusiforme STEU5041"
+"^ot:originalLabel": "Neofusicoccum vitifusiforme STEU5041", 
+"^ot:ottId": 1074384, 
+"^ot:ottTaxonName": "Neofusicoccum vitifusiforme"
 }, 
 "Tl1146267": {
-"^ot:altLabel": "Neofusicoccum andinum", 
 "^ot:originalLabel": "Neofusicoccum andinum PD252", 
+"^ot:ottId": 819307, 
+"^ot:ottTaxonName": "Neofusicoccum andinum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 269462, 
 "@tb:identifier.taxonVariant": 325041, 
@@ -322,14 +470,17 @@
 }, 
 "Tl1146268": {
 "^ot:originalLabel": "Neofusicoccum mediterraneum PD311", 
+"^ot:ottId": 597598, 
+"^ot:ottTaxonName": "Neofusicoccum mediterraneum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 400557, 
 "@tb:identifier.taxonVariant": 537953
 }
 }, 
 "Tl1146269": {
-"^ot:altLabel": "Neofusicoccum andinum", 
 "^ot:originalLabel": "Neofusicoccum andinum CBS117452", 
+"^ot:ottId": 819307, 
+"^ot:ottTaxonName": "Neofusicoccum andinum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 269462, 
 "@tb:identifier.taxonVariant": 325041, 
@@ -338,17 +489,24 @@
 }
 }, 
 "Tl1146270": {
-"^ot:originalLabel": "Neofusicoccum arbuti PD283"
+"^ot:originalLabel": "Neofusicoccum arbuti PD283", 
+"^ot:ottId": 732983, 
+"^ot:ottTaxonName": "Neofusicoccum arbuti"
 }, 
 "Tl1146271": {
-"^ot:originalLabel": "Neofusicoccum viticlavatum STEU5041"
+"^ot:originalLabel": "Neofusicoccum viticlavatum STEU5041", 
+"^ot:ottId": 1074386, 
+"^ot:ottTaxonName": "Neofusicoccum viticlavatum"
 }, 
 "Tl1146272": {
-"^ot:originalLabel": "Neofusicoccum nonquaesitum PD301"
+"^ot:originalLabel": "Neofusicoccum nonquaesitum PD301", 
+"^ot:ottId": 65942, 
+"^ot:ottTaxonName": "Neofusicoccum nonquaesitum"
 }, 
 "Tl1146273": {
-"^ot:altLabel": "Neofusicoccum australe", 
 "^ot:originalLabel": "Neofusicoccum australe CMW6853", 
+"^ot:ottId": 26868, 
+"^ot:ottTaxonName": "Neofusicoccum australe", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 418464, 
 "@tb:identifier.taxonVariant": 821180, 
@@ -357,14 +515,19 @@
 }
 }, 
 "Tl1146274": {
-"^ot:originalLabel": "Neofusicoccum mangiferum CMW7797"
+"^ot:originalLabel": "Neofusicoccum mangiferum CMW7797", 
+"^ot:ottId": 463039, 
+"^ot:ottTaxonName": "Neofusicoccum mangiferae"
 }, 
 "Tl1146275": {
-"^ot:originalLabel": "Neofusicoccum arbuti PD282"
+"^ot:originalLabel": "Neofusicoccum arbuti PD282", 
+"^ot:ottId": 732983, 
+"^ot:ottTaxonName": "Neofusicoccum arbuti"
 }, 
 "Tl1146276": {
-"^ot:altLabel": "Neofusicoccum parvum", 
 "^ot:originalLabel": "Neofusicoccum parvum ATCC58191", 
+"^ot:ottId": 648285, 
+"^ot:ottTaxonName": "Neofusicoccum parvum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 35331, 
 "@tb:identifier.taxonVariant": 81837, 
@@ -373,14 +536,19 @@
 }
 }, 
 "Tl1146277": {
-"^ot:originalLabel": "Neofusicoccum vitifusiforme STEU5252"
+"^ot:originalLabel": "Neofusicoccum vitifusiforme STEU5252", 
+"^ot:ottId": 1074384, 
+"^ot:ottTaxonName": "Neofusicoccum vitifusiforme"
 }, 
 "Tl1146278": {
-"^ot:originalLabel": "Neofusiocccum eucalyptorum BOT24"
+"^ot:originalLabel": "Neofusiocccum eucalyptorum BOT24", 
+"^ot:ottId": 435694, 
+"^ot:ottTaxonName": "Neofusicoccum eucalyptorum"
 }, 
 "Tl1146279": {
-"^ot:altLabel": "Neofusicoccum parvum", 
 "^ot:originalLabel": "Neofusicoccum parvum CBS110301", 
+"^ot:ottId": 648285, 
+"^ot:ottTaxonName": "Neofusicoccum parvum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 35331, 
 "@tb:identifier.taxonVariant": 81837, 
@@ -389,8 +557,9 @@
 }
 }, 
 "Tl1146280": {
-"^ot:altLabel": "Botryosphaeria dothidea", 
 "^ot:originalLabel": "Botryosphaeria dothidea CMW8000", 
+"^ot:ottId": 859795, 
+"^ot:ottTaxonName": "Botryosphaeria dothidea", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3789, 
 "@tb:identifier.taxonVariant": 9041, 
@@ -399,8 +568,9 @@
 }
 }, 
 "Tl1146281": {
-"^ot:altLabel": "Neofusicoccum parvum", 
 "^ot:originalLabel": "Neofusicoccum parvum CMM3945", 
+"^ot:ottId": 648285, 
+"^ot:ottTaxonName": "Neofusicoccum parvum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 35331, 
 "@tb:identifier.taxonVariant": 81837, 
@@ -409,8 +579,9 @@
 }
 }, 
 "Tl1146282": {
-"^ot:altLabel": "Neofusicoccum luteum", 
 "^ot:originalLabel": "Neofusicoccum luteum CBS110299", 
+"^ot:ottId": 958340, 
+"^ot:ottTaxonName": "Neofusicoccum luteum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3792, 
 "@tb:identifier.taxonVariant": 81832, 
@@ -420,17 +591,23 @@
 "^skos:prefLabel": "Botryosphaeria lutea"
 }, 
 "Tl1146283": {
-"^ot:originalLabel": "Neofusicoccum viticlavatum 5044"
+"^ot:originalLabel": "Neofusicoccum viticlavatum 5044", 
+"^ot:ottId": 1074386, 
+"^ot:ottTaxonName": "Neofusicoccum viticlavatum"
 }, 
 "Tl1146284": {
 "^ot:originalLabel": "Neofusicoccum mediterraneum PD312", 
+"^ot:ottId": 597598, 
+"^ot:ottTaxonName": "Neofusicoccum mediterraneum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 400557, 
 "@tb:identifier.taxonVariant": 537953
 }
 }, 
 "Tl1146285": {
-"^ot:originalLabel": "Neofusicoccum occulatum CBS12"
+"^ot:originalLabel": "Neofusicoccum occulatum CBS12", 
+"^ot:ottId": 100909, 
+"^ot:ottTaxonName": "Neofusicoccum occulatum"
 }
 }
 }
@@ -448,7 +625,18 @@
 "Tr64868": {
 "@label": "PAUP 1", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:undefined", 
+"^ot:branchLengthTimeUnit": "Myr", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "Tn10286560", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:ntax.tree": 22, 
 "edgeBySourceId": {
 "Tn10286553": {
@@ -470,7 +658,7 @@
 "@target": "Tn10286566"
 }, 
 "edge21444": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn10286554", 
 "@target": "Tn10286571"
 }
@@ -698,7 +886,7 @@
 "@target": "Tn10286567"
 }, 
 "edge21404": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn10286593", 
 "@target": "Tn10286569"
 }
@@ -797,9 +985,20 @@
 }
 }, 
 "Tr64869": {
-"@label": "PAUP 1", 
+"@label": "Fig. 1 One of 16 most parsimonious trees (TL=387; CI=0.902; RI=0.965; HI=0.098) obtained from combined ITS and EF1-\u03b1 sequence data. Maximum parsimony bootstrap support values from 1,000 replications and Bayesian posterior probability scores are shown at the nodes.", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:undefined", 
+"^ot:branchLengthTimeUnit": "Myr", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "Tn10286678", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:ntax.tree": 49, 
 "edgeBySourceId": {
 "Tn10286598": {
@@ -1381,39 +1580,48 @@
 }, 
 "nodeById": {
 "Tn10286596": {
-"@otu": "Tl1146236"
+"@otu": "Tl1146236", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn10286597": {
 "@otu": "Tl1146254"
 }, 
 "Tn10286598": {}, 
 "Tn10286599": {
-"@otu": "Tl1146277"
+"@otu": "Tl1146277", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn10286600": {}, 
 "Tn10286601": {
-"@otu": "Tl1146257"
+"@otu": "Tl1146257", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn10286602": {
-"@otu": "Tl1146239"
+"@otu": "Tl1146239", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn10286603": {}, 
 "Tn10286604": {}, 
 "Tn10286605": {
-"@otu": "Tl1146267"
+"@otu": "Tl1146267", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn10286606": {
-"@otu": "Tl1146255"
+"@otu": "Tl1146255", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn10286607": {
-"@otu": "Tl1146266"
+"@otu": "Tl1146266", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn10286608": {
-"@otu": "Tl1146282"
+"@otu": "Tl1146282", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn10286609": {}, 
 "Tn10286610": {
-"@otu": "Tl1146264"
+"@otu": "Tl1146264", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn10286611": {
 "@otu": "Tl1146249"
@@ -1421,89 +1629,111 @@
 "Tn10286612": {}, 
 "Tn10286613": {}, 
 "Tn10286614": {
-"@otu": "Tl1146261"
+"@otu": "Tl1146261", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn10286615": {}, 
 "Tn10286616": {}, 
 "Tn10286617": {
-"@otu": "Tl1146278"
+"@otu": "Tl1146278", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn10286618": {}, 
 "Tn10286619": {}, 
 "Tn10286620": {}, 
 "Tn10286621": {
-"@otu": "Tl1146276"
+"@otu": "Tl1146276", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn10286622": {
-"@otu": "Tl1146253"
+"@otu": "Tl1146253", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn10286623": {
-"@otu": "Tl1146251"
+"@otu": "Tl1146251", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn10286624": {
-"@otu": "Tl1146272"
+"@otu": "Tl1146272", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn10286625": {}, 
 "Tn10286626": {}, 
 "Tn10286627": {}, 
 "Tn10286628": {}, 
 "Tn10286629": {
-"@otu": "Tl1146269"
+"@otu": "Tl1146269", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn10286630": {}, 
 "Tn10286631": {
-"@otu": "Tl1146256"
+"@otu": "Tl1146256", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn10286632": {
-"@otu": "Tl1146268"
+"@otu": "Tl1146268", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn10286633": {
-"@otu": "Tl1146263"
+"@otu": "Tl1146263", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn10286634": {
-"@otu": "Tl1146271"
+"@otu": "Tl1146271", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn10286635": {}, 
 "Tn10286636": {}, 
 "Tn10286637": {
-"@otu": "Tl1146283"
+"@otu": "Tl1146283", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn10286638": {}, 
 "Tn10286639": {
-"@otu": "Tl1146235"
+"@otu": "Tl1146235", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn10286640": {
-"@otu": "Tl1146233"
+"@otu": "Tl1146233", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn10286641": {
-"@otu": "Tl1146270"
+"@otu": "Tl1146270", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn10286642": {}, 
 "Tn10286643": {}, 
 "Tn10286644": {
-"@otu": "Tl1146265"
+"@otu": "Tl1146265", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn10286645": {
-"@otu": "Tl1146241"
+"@otu": "Tl1146241", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn10286646": {}, 
 "Tn10286647": {
-"@otu": "Tl1146275"
+"@otu": "Tl1146275", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn10286648": {
-"@otu": "Tl1146244"
+"@otu": "Tl1146244", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn10286649": {
-"@otu": "Tl1146262"
+"@otu": "Tl1146262", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn10286650": {}, 
 "Tn10286651": {}, 
 "Tn10286652": {
-"@otu": "Tl1146280"
+"@otu": "Tl1146280", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn10286653": {}, 
 "Tn10286654": {
-"@otu": "Tl1146250"
+"@otu": "Tl1146250", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn10286655": {}, 
 "Tn10286656": {}, 
@@ -1514,18 +1744,22 @@
 "Tn10286661": {}, 
 "Tn10286662": {}, 
 "Tn10286663": {
-"@otu": "Tl1146246"
+"@otu": "Tl1146246", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn10286664": {}, 
 "Tn10286665": {
-"@otu": "Tl1146260"
+"@otu": "Tl1146260", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn10286666": {}, 
 "Tn10286667": {
-"@otu": "Tl1146285"
+"@otu": "Tl1146285", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn10286668": {
-"@otu": "Tl1146281"
+"@otu": "Tl1146281", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn10286669": {
 "@otu": "Tl1146240"
@@ -1533,49 +1767,60 @@
 "Tn10286670": {}, 
 "Tn10286671": {}, 
 "Tn10286672": {
-"@otu": "Tl1146237"
+"@otu": "Tl1146237", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn10286673": {
-"@otu": "Tl1146247"
+"@otu": "Tl1146247", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn10286674": {
-"@otu": "Tl1146252"
+"@otu": "Tl1146252", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn10286675": {}, 
 "Tn10286676": {}, 
 "Tn10286677": {
-"@otu": "Tl1146279"
+"@otu": "Tl1146279", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn10286678": {
 "@root": true
 }, 
 "Tn10286679": {
-"@otu": "Tl1146273"
+"@otu": "Tl1146273", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn10286680": {}, 
 "Tn10286681": {
-"@otu": "Tl1146234"
+"@otu": "Tl1146234", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn10286682": {}, 
 "Tn10286683": {}, 
 "Tn10286684": {
-"@otu": "Tl1146258"
+"@otu": "Tl1146258", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn10286685": {
-"@otu": "Tl1146248"
+"@otu": "Tl1146248", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn10286686": {}, 
 "Tn10286687": {
-"@otu": "Tl1146259"
+"@otu": "Tl1146259", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn10286688": {
-"@otu": "Tl1146274"
+"@otu": "Tl1146274", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn10286689": {}, 
 "Tn10286690": {}, 
 "Tn10286691": {}, 
 "Tn10286692": {
-"@otu": "Tl1146284"
+"@otu": "Tl1146284", 
+"^ot:isTaxonExemplar": true
 }
 }
 }
