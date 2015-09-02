@@ -57,25 +57,110 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2015-09-02T18:28:49.586Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:curatorName": "Romina Gazis", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2015-09-02T18:28:49.586Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Romina Gazis"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S14621"
 }, 
+"^ot:focalClade": 134753, 
+"^ot:focalCladeOTTTaxonName": "Mycena (genus in family Mycenaceae)", 
+"^ot:messages": {
+"message": []
+}, 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "Tls32479"
 ], 
 "^ot:studyId": "ot_413", 
 "^ot:studyPublication": {
-"@href": "10.3852/13-274"
+"@href": "http://dx.doi.org/10.3852/13-274"
 }, 
-"^ot:studyPublicationReference": "Chew A.L., Tan Y., Desjardin D.E., Yusoff M., & Vikineswary S. 2014. Four new bioluminescent taxa of Mycena sect. Calodontes from Peninsular Malaysia. Mycologia, 106(5): 976-988.", 
+"^ot:studyPublicationReference": "A. L. C. Chew, Y.-S. Tan, D. E. Desjardin, M. Y. Musa, V. Sabaratnam, 2014, 'Four new bioluminescent taxa of Mycena sect. Calodontes from Peninsular Malaysia', Mycologia, vol. 106, no. 5, pp. 976-988", 
 "^ot:studyYear": 2014, 
+"^ot:tag": [], 
 "^ot:taxonLinkPrefixes": {
 "@ubio": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:", 
 "@uniprot": "http://purl.uniprot.org/taxonomy/"
@@ -662,7 +747,18 @@
 "Tr65953": {
 "@label": "Fig. 1", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "Tn10532535", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 60, 
 "^tb:quality.tree": "Unrated", 
@@ -687,12 +783,12 @@
 "@target": "Tn10532559"
 }, 
 "edge48551": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn10532488", 
 "@target": "Tn10532499"
 }, 
 "edge48553": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn10532488", 
 "@target": "Tn10532518"
 }, 
@@ -709,7 +805,7 @@
 "@target": "Tn10532575"
 }, 
 "edge48485": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn10532493", 
 "@target": "Tn10532527"
 }
@@ -728,12 +824,12 @@
 }, 
 "Tn10532503": {
 "edge48467": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn10532503", 
 "@target": "Tn10532578"
 }, 
 "edge48469": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn10532503", 
 "@target": "Tn10532538"
 }
@@ -745,7 +841,7 @@
 "@target": "Tn10532556"
 }, 
 "edge48517": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn10532505", 
 "@target": "Tn10532543"
 }, 
@@ -755,29 +851,29 @@
 "@target": "Tn10532500"
 }, 
 "edge48521": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn10532505", 
 "@target": "Tn10532546"
 }, 
 "edge48523": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn10532505", 
 "@target": "Tn10532498"
 }
 }, 
 "Tn10532509": {
 "edge48537": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn10532509", 
 "@target": "Tn10532507"
 }, 
 "edge48539": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn10532509", 
 "@target": "Tn10532579"
 }, 
 "edge48541": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn10532509", 
 "@target": "Tn10532524"
 }, 
@@ -801,24 +897,24 @@
 }, 
 "Tn10532511": {
 "edge48565": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn10532511", 
 "@target": "Tn10532519"
 }, 
 "edge48567": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn10532511", 
 "@target": "Tn10532567"
 }, 
 "edge48569": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn10532511", 
 "@target": "Tn10532545"
 }
 }, 
 "Tn10532514": {
 "edge48493": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn10532514", 
 "@target": "Tn10532554"
 }, 
@@ -835,14 +931,14 @@
 "@target": "Tn10532562"
 }, 
 "edge48423": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn10532516", 
 "@target": "Tn10532508"
 }
 }, 
 "Tn10532517": {
 "edge48489": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn10532517", 
 "@target": "Tn10532555"
 }, 
@@ -852,7 +948,7 @@
 "@target": "Tn10532514"
 }, 
 "edge48561": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn10532517", 
 "@target": "Tn10532522"
 }
@@ -893,7 +989,7 @@
 }, 
 "Tn10532529": {
 "edge48511": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn10532529", 
 "@target": "Tn10532515"
 }, 
@@ -910,7 +1006,7 @@
 "@target": "Tn10532487"
 }, 
 "edge48475": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn10532531", 
 "@target": "Tn10532521"
 }, 
@@ -927,12 +1023,12 @@
 }, 
 "Tn10532532": {
 "edge48449": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn10532532", 
 "@target": "Tn10532548"
 }, 
 "edge48451": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn10532532", 
 "@target": "Tn10532561"
 }, 
@@ -942,19 +1038,19 @@
 "@target": "Tn10532560"
 }, 
 "edge48455": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn10532532", 
 "@target": "Tn10532492"
 }
 }, 
 "Tn10532534": {
 "edge48437": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn10532534", 
 "@target": "Tn10532542"
 }, 
 "edge48439": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn10532534", 
 "@target": "Tn10532496"
 }
@@ -983,7 +1079,7 @@
 "@target": "Tn10532490"
 }, 
 "edge48463": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn10532536", 
 "@target": "Tn10532547"
 }
@@ -1029,7 +1125,7 @@
 "@target": "Tn10532532"
 }, 
 "edge48457": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn10532541", 
 "@target": "Tn10532494"
 }
@@ -1048,12 +1144,12 @@
 }, 
 "Tn10532549": {
 "edge48431": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn10532549", 
 "@target": "Tn10532530"
 }, 
 "edge48433": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn10532549", 
 "@target": "Tn10532504"
 }, 
@@ -1077,17 +1173,17 @@
 }, 
 "Tn10532553": {
 "edge48397": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn10532553", 
 "@target": "Tn10532581"
 }, 
 "edge48399": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn10532553", 
 "@target": "Tn10532550"
 }, 
 "edge48401": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn10532553", 
 "@target": "Tn10532528"
 }
@@ -1106,19 +1202,19 @@
 }, 
 "Tn10532562": {
 "edge48419": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn10532562", 
 "@target": "Tn10532491"
 }, 
 "edge48421": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn10532562", 
 "@target": "Tn10532506"
 }
 }, 
 "Tn10532564": {
 "edge48499": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn10532564", 
 "@target": "Tn10532580"
 }, 
@@ -1130,12 +1226,12 @@
 }, 
 "Tn10532571": {
 "edge48503": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn10532571", 
 "@target": "Tn10532572"
 }, 
 "edge48505": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn10532571", 
 "@target": "Tn10532523"
 }
@@ -1159,12 +1255,12 @@
 }, 
 "Tn10532574": {
 "edge48529": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn10532574", 
 "@target": "Tn10532501"
 }, 
 "edge48531": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn10532574", 
 "@target": "Tn10532502"
 }, 
@@ -1193,7 +1289,7 @@
 "@target": "Tn10532488"
 }, 
 "edge48557": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn10532576", 
 "@target": "Tn10532489"
 }, 
@@ -1440,7 +1536,18 @@
 "Tr65954": {
 "@label": "PAUP 2", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "Tn10532668", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 60, 
 "^tb:quality.tree": "Unrated", 
@@ -1448,12 +1555,12 @@
 "edgeBySourceId": {
 "Tn10532582": {
 "edge48646": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn10532582", 
 "@target": "Tn10532631"
 }, 
 "edge48648": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn10532582", 
 "@target": "Tn10532604"
 }, 
@@ -1463,7 +1570,7 @@
 "@target": "Tn10532674"
 }, 
 "edge48652": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn10532582", 
 "@target": "Tn10532613"
 }
@@ -1494,7 +1601,7 @@
 }, 
 "Tn10532588": {
 "edge48696": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn10532588", 
 "@target": "Tn10532644"
 }, 
@@ -1506,7 +1613,7 @@
 }, 
 "Tn10532592": {
 "edge48690": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn10532592", 
 "@target": "Tn10532659"
 }, 
@@ -1518,29 +1625,29 @@
 }, 
 "Tn10532600": {
 "edge48700": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn10532600", 
 "@target": "Tn10532640"
 }, 
 "edge48702": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn10532600", 
 "@target": "Tn10532664"
 }
 }, 
 "Tn10532601": {
 "edge48594": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn10532601", 
 "@target": "Tn10532589"
 }, 
 "edge48596": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn10532601", 
 "@target": "Tn10532625"
 }, 
 "edge48598": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn10532601", 
 "@target": "Tn10532595"
 }
@@ -1569,19 +1676,19 @@
 "@target": "Tn10532611"
 }, 
 "edge48660": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn10532605", 
 "@target": "Tn10532651"
 }
 }, 
 "Tn10532606": {
 "edge48634": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn10532606", 
 "@target": "Tn10532677"
 }, 
 "edge48636": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn10532606", 
 "@target": "Tn10532675"
 }
@@ -1605,24 +1712,24 @@
 "@target": "Tn10532641"
 }, 
 "edge48620": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn10532615", 
 "@target": "Tn10532597"
 }
 }, 
 "Tn10532619": {
 "edge48762": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn10532619", 
 "@target": "Tn10532636"
 }, 
 "edge48764": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn10532619", 
 "@target": "Tn10532633"
 }, 
 "edge48766": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn10532619", 
 "@target": "Tn10532623"
 }
@@ -1634,7 +1741,7 @@
 "@target": "Tn10532582"
 }, 
 "edge48654": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn10532620", 
 "@target": "Tn10532599"
 }
@@ -1706,7 +1813,7 @@
 "@target": "Tn10532656"
 }, 
 "edge48748": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn10532637", 
 "@target": "Tn10532608"
 }, 
@@ -1718,29 +1825,29 @@
 }, 
 "Tn10532641": {
 "edge48616": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn10532641", 
 "@target": "Tn10532629"
 }, 
 "edge48618": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn10532641", 
 "@target": "Tn10532614"
 }
 }, 
 "Tn10532642": {
 "edge48734": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn10532642", 
 "@target": "Tn10532594"
 }, 
 "edge48736": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn10532642", 
 "@target": "Tn10532590"
 }, 
 "edge48738": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn10532642", 
 "@target": "Tn10532666"
 }, 
@@ -1752,12 +1859,12 @@
 }, 
 "Tn10532645": {
 "edge48628": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn10532645", 
 "@target": "Tn10532639"
 }, 
 "edge48630": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn10532645", 
 "@target": "Tn10532618"
 }, 
@@ -1769,12 +1876,12 @@
 }, 
 "Tn10532646": {
 "edge48726": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn10532646", 
 "@target": "Tn10532647"
 }, 
 "edge48728": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn10532646", 
 "@target": "Tn10532661"
 }, 
@@ -1815,12 +1922,12 @@
 }, 
 "Tn10532654": {
 "edge48664": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn10532654", 
 "@target": "Tn10532634"
 }, 
 "edge48666": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn10532654", 
 "@target": "Tn10532638"
 }
@@ -1832,7 +1939,7 @@
 "@target": "Tn10532624"
 }, 
 "edge48672": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn10532655", 
 "@target": "Tn10532635"
 }, 
@@ -1849,7 +1956,7 @@
 }, 
 "Tn10532657": {
 "edge48708": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn10532657", 
 "@target": "Tn10532627"
 }, 
@@ -1866,7 +1973,7 @@
 "@target": "Tn10532648"
 }, 
 "edge48714": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn10532658", 
 "@target": "Tn10532609"
 }, 
@@ -1876,12 +1983,12 @@
 "@target": "Tn10532667"
 }, 
 "edge48718": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn10532658", 
 "@target": "Tn10532643"
 }, 
 "edge48720": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn10532658", 
 "@target": "Tn10532621"
 }
@@ -1893,12 +2000,12 @@
 "@target": "Tn10532637"
 }, 
 "edge48752": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn10532660", 
 "@target": "Tn10532672"
 }, 
 "edge48754": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn10532660", 
 "@target": "Tn10532676"
 }, 
@@ -1915,7 +2022,7 @@
 "@target": "Tn10532622"
 }, 
 "edge48682": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn10532662", 
 "@target": "Tn10532598"
 }
@@ -1961,7 +2068,7 @@
 }, 
 "Tn10532670": {
 "edge48686": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn10532670", 
 "@target": "Tn10532665"
 }, 
@@ -1971,7 +2078,7 @@
 "@target": "Tn10532592"
 }, 
 "edge48758": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn10532670", 
 "@target": "Tn10532616"
 }
