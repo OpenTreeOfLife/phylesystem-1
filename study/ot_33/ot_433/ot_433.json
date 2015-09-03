@@ -59,22 +59,110 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2015-09-03T20:17:53.877Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:curatorName": "Romina Gazis", 
+"substitutions": {
+"substitution": [
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": "$1"
+}, 
+"old": {
+"$": "^(\\S*\\s+\\S*).*"
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2015-09-03T20:17:53.876Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Romina Gazis"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S15181"
 }, 
+"^ot:focalClade": 244193, 
+"^ot:focalCladeOTTTaxonName": "Trypetheliaceae", 
+"^ot:messages": {
+"message": []
+}, 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "Tls35021"
 ], 
 "^ot:studyId": "ot_433", 
-"^ot:studyPublicationReference": "Nelsen M., Luecking R., Aptroot A., Andrew C., Caceres M.E., Rivas plata E., Gueidan C., Can?z L., Knight A., Ludwig L.R., Mercado-d?az J., Parnmen S., & Lumbsch H.T. 2014. Elucidating phylogenetic relationships and genus-level classification within the fungal family Trypetheliaceae (Dothideomycetes: Ascomycota). Taxon, 63: 974-992.", 
+"^ot:studyPublication": {
+"@href": "http://dx.doi.org/10.12705/635.9"
+}, 
+"^ot:studyPublicationReference": "Matthew P. Nelsen, Robert L\u00fccking, Andr\u00e9 Aptroot, Carrie J. Andrew, Marcela C\u00e1ceres, Eimy Rivas Plata, C\u00e9cile Gueidan, Luciana da Silva Can\u00eaz, Allison Knight, Lars R. Ludwig, Joel A. Mercado-D\u00edaz, Sittiporn Parnmen, H. Thorsten Lumbsch, 2014, 'Elucidating phylogenetic relationships and genus-level classification within the fungal family Trypetheliaceae (Ascomycota: Dothideomycetes)', Taxon, vol. 63, no. 5, pp. 974-992", 
 "^ot:studyYear": 2014, 
+"^ot:tag": [], 
 "^ot:taxonLinkPrefixes": {
 "@ubio": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:", 
 "@uniprot": "http://purl.uniprot.org/taxonomy/"
@@ -101,8 +189,9 @@
 "^skos:historyNote": "Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlOTUWriter@6f656489 $Rev: 1040 $", 
 "otuById": {
 "Tl1353741": {
-"^ot:altLabel": "Trypethelium neogalbineum", 
 "^ot:originalLabel": "Trypethelium neogalbineum 711", 
+"^ot:ottId": 3744361, 
+"^ot:ottTaxonName": "Trypethelium neogalbineum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 622611, 
 "@tb:identifier.taxonVariant": 833620, 
@@ -110,8 +199,9 @@
 }
 }, 
 "Tl1353742": {
-"^ot:altLabel": "Pseudopyrenula diluta", 
 "^ot:originalLabel": "Pseudopyrenula diluta 362", 
+"^ot:ottId": 3744210, 
+"^ot:ottTaxonName": "Pseudopyrenula diluta", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 622612, 
 "@tb:identifier.taxonVariant": 833621, 
@@ -119,8 +209,9 @@
 }
 }, 
 "Tl1353743": {
-"^ot:altLabel": "Trypethelium virens", 
 "^ot:originalLabel": "Trypethelium virens 497", 
+"^ot:ottId": 199535, 
+"^ot:ottTaxonName": "Trypethelium virens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 607112, 
 "@tb:identifier.taxonVariant": 810725, 
@@ -128,8 +219,9 @@
 }
 }, 
 "Tl1353744": {
-"^ot:altLabel": "Astrothelium galbineum", 
 "^ot:originalLabel": "Astrothelium galbineum 260", 
+"^ot:ottId": 3744084, 
+"^ot:ottTaxonName": "Astrothelium galbineum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 622613, 
 "@tb:identifier.taxonVariant": 833622, 
@@ -137,8 +229,9 @@
 }
 }, 
 "Tl1353745": {
-"^ot:altLabel": "Trypethelium tropicum", 
 "^ot:originalLabel": "Trypethelium tropicum 130", 
+"^ot:ottId": 121087, 
+"^ot:ottTaxonName": "Trypethelium tropicum var. tropicum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 564563, 
 "@tb:identifier.taxonVariant": 785428, 
@@ -147,8 +240,9 @@
 }
 }, 
 "Tl1353746": {
-"^ot:altLabel": "Trypethelium scorioides", 
 "^ot:originalLabel": "Trypethelium aff scorioides 336", 
+"^ot:ottId": 3744319, 
+"^ot:ottTaxonName": "Trypethelium scorioides", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 622614, 
 "@tb:identifier.taxonVariant": 833623, 
@@ -156,11 +250,14 @@
 }
 }, 
 "Tl1353747": {
-"^ot:originalLabel": "Cryptothelium cecidiogenum 210"
+"^ot:originalLabel": "Cryptothelium cecidiogenum 210", 
+"^ot:ottId": 3744294, 
+"^ot:ottTaxonName": "Cryptothelium cecidiogenum"
 }, 
 "Tl1353748": {
-"^ot:altLabel": "Arthopyrenia cinchonae", 
 "^ot:originalLabel": "Arthopyrenia cinchonae 417", 
+"^ot:ottId": 1077826, 
+"^ot:ottTaxonName": "Arthopyrenia cinchonae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 608409, 
 "@tb:identifier.taxonVariant": 812764, 
@@ -168,8 +265,9 @@
 }
 }, 
 "Tl1353749": {
-"^ot:altLabel": "Cryptothelium sepultum", 
 "^ot:originalLabel": "Cryptothelium sepultum 52C", 
+"^ot:ottId": 480120, 
+"^ot:ottTaxonName": "Cryptothelium sepultum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 622615, 
 "@tb:identifier.taxonVariant": 833624, 
@@ -177,8 +275,9 @@
 }
 }, 
 "Tl1353750": {
-"^ot:altLabel": "Trypethelium ochroleucum", 
 "^ot:originalLabel": "Trypethelium aff ochroleucum 713", 
+"^ot:ottId": 3744439, 
+"^ot:ottTaxonName": "Trypethelium ochroleucum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 622616, 
 "@tb:identifier.taxonVariant": 833625, 
@@ -186,11 +285,14 @@
 }
 }, 
 "Tl1353751": {
-"^ot:originalLabel": "Marcelaria purpurina 323A"
+"^ot:originalLabel": "Marcelaria purpurina 323A", 
+"^ot:ottId": 5345956, 
+"^ot:ottTaxonName": "Marcelaria purpurina"
 }, 
 "Tl1353752": {
-"^ot:altLabel": "Trypethelium platyleucostomum", 
 "^ot:originalLabel": "Trypethelium aff platyleucostomum 349", 
+"^ot:ottId": 3744338, 
+"^ot:ottTaxonName": "Trypethelium platyleucostomum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 622617, 
 "@tb:identifier.taxonVariant": 833626, 
@@ -198,8 +300,9 @@
 }
 }, 
 "Tl1353753": {
-"^ot:altLabel": "Architrypethelium uberinum", 
 "^ot:originalLabel": "Architrypethelium uberinum 489", 
+"^ot:ottId": 3744551, 
+"^ot:ottTaxonName": "Architrypethelium uberinum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 622618, 
 "@tb:identifier.taxonVariant": 833627, 
@@ -207,8 +310,9 @@
 }
 }, 
 "Tl1353754": {
-"^ot:altLabel": "Pseudopyrenula subgregaria", 
 "^ot:originalLabel": "Pseudopyrenula subgregaria 106", 
+"^ot:ottId": 121096, 
+"^ot:ottTaxonName": "Pseudopyrenula subgregaria", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 564446, 
 "@tb:identifier.taxonVariant": 785286, 
@@ -217,8 +321,9 @@
 }
 }, 
 "Tl1353755": {
-"^ot:altLabel": "Polymeridium albocinereum", 
 "^ot:originalLabel": "Polymeridium albocinereum 439", 
+"^ot:ottId": 3744092, 
+"^ot:ottTaxonName": "Polymeridium albocinereum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 627816, 
 "@tb:identifier.taxonVariant": 841451, 
@@ -226,8 +331,9 @@
 }
 }, 
 "Tl1353756": {
-"^ot:altLabel": "Astrothelium confusum", 
 "^ot:originalLabel": "Astrothelium confusum 98", 
+"^ot:ottId": 252843, 
+"^ot:ottTaxonName": "Astrothelium confusum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 563971, 
 "@tb:identifier.taxonVariant": 784676, 
@@ -236,14 +342,19 @@
 }
 }, 
 "Tl1353757": {
-"^ot:originalLabel": "Bathelium aff feei 267"
+"^ot:originalLabel": "Bathelium aff feei 267", 
+"^ot:ottId": 244194, 
+"^ot:ottTaxonName": "Trypethelium"
 }, 
 "Tl1353758": {
-"^ot:originalLabel": "Cryptothelium sp 63C"
+"^ot:originalLabel": "Cryptothelium sp 63C", 
+"^ot:ottId": 919262, 
+"^ot:ottTaxonName": "Laurera"
 }, 
 "Tl1353759": {
-"^ot:altLabel": "Trypethelium cinereorosellum", 
 "^ot:originalLabel": "Trypethelium cinereorosellum 191", 
+"^ot:ottId": 3744432, 
+"^ot:ottTaxonName": "Trypethelium cinereorosellum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 627817, 
 "@tb:identifier.taxonVariant": 841452, 
@@ -251,8 +362,9 @@
 }
 }, 
 "Tl1353760": {
-"^ot:altLabel": "Bathelium tuberculosum", 
 "^ot:originalLabel": "Bathelium tuberculosum 81", 
+"^ot:ottId": 3744133, 
+"^ot:ottTaxonName": "Bathelium tuberculosum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 627818, 
 "@tb:identifier.taxonVariant": 841453, 
@@ -260,14 +372,19 @@
 }
 }, 
 "Tl1353761": {
-"^ot:originalLabel": "Mycomicrothelia sp nov 700"
+"^ot:originalLabel": "Mycomicrothelia sp nov 700", 
+"^ot:ottId": 695220, 
+"^ot:ottTaxonName": "Mycomicrothelia"
 }, 
 "Tl1353762": {
-"^ot:originalLabel": "Trypethelium sp nov 764"
+"^ot:originalLabel": "Trypethelium sp nov 764", 
+"^ot:ottId": 244194, 
+"^ot:ottTaxonName": "Trypethelium"
 }, 
 "Tl1353763": {
-"^ot:altLabel": "Campylothelium cartilagineum", 
 "^ot:originalLabel": "Campylothelium cartilagineum 268", 
+"^ot:ottId": 3744535, 
+"^ot:ottTaxonName": "Campylothelium cartilagineum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 627835, 
 "@tb:identifier.taxonVariant": 841470, 
@@ -275,11 +392,14 @@
 }
 }, 
 "Tl1353764": {
-"^ot:originalLabel": "Astrothelium cf robustum 754"
+"^ot:originalLabel": "Astrothelium cf robustum 754", 
+"^ot:ottId": 71301, 
+"^ot:ottTaxonName": "Astrothelium"
 }, 
 "Tl1353765": {
-"^ot:altLabel": "Astrothelium versicolor", 
 "^ot:originalLabel": "Astrothelium versicolor 259", 
+"^ot:ottId": 824847, 
+"^ot:ottTaxonName": "Astrothelium versicolor", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 608405, 
 "@tb:identifier.taxonVariant": 812760, 
@@ -287,8 +407,9 @@
 }
 }, 
 "Tl1353766": {
-"^ot:altLabel": "Bathelium madreporiforme", 
 "^ot:originalLabel": "Bathelium madreporiforme 354", 
+"^ot:ottId": 3744136, 
+"^ot:ottTaxonName": "Bathelium madreporiforme", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 627819, 
 "@tb:identifier.taxonVariant": 841454, 
@@ -296,8 +417,9 @@
 }
 }, 
 "Tl1353767": {
-"^ot:altLabel": "Astrothelium eustomum", 
 "^ot:originalLabel": "Astrothelium eustomum 258", 
+"^ot:ottId": 3744048, 
+"^ot:ottTaxonName": "Astrothelium eustomum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 627820, 
 "@tb:identifier.taxonVariant": 841455, 
@@ -305,11 +427,14 @@
 }
 }, 
 "Tl1353768": {
-"^ot:originalLabel": "Bathelium sp nov 743"
+"^ot:originalLabel": "Bathelium sp nov 743", 
+"^ot:ottId": 244194, 
+"^ot:ottTaxonName": "Trypethelium"
 }, 
 "Tl1353769": {
-"^ot:altLabel": "Trypethelium papulosum", 
 "^ot:originalLabel": "Trypethelium papulosum 97", 
+"^ot:ottId": 121092, 
+"^ot:ottTaxonName": "Trypethelium papulosum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 564561, 
 "@tb:identifier.taxonVariant": 785426, 
@@ -318,11 +443,14 @@
 }
 }, 
 "Tl1353770": {
-"^ot:originalLabel": "Architrypethelium nitens 257"
+"^ot:originalLabel": "Architrypethelium nitens 257", 
+"^ot:ottId": 3744542, 
+"^ot:ottTaxonName": "Architrypethelium nitens"
 }, 
 "Tl1353771": {
-"^ot:altLabel": "Pseudopyrenula diluta", 
 "^ot:originalLabel": "Pseudopyrenula diluta 697", 
+"^ot:ottId": 3744210, 
+"^ot:ottTaxonName": "Pseudopyrenula diluta", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 622612, 
 "@tb:identifier.taxonVariant": 833621, 
@@ -331,6 +459,8 @@
 }, 
 "Tl1353772": {
 "^ot:originalLabel": "Cladosporium cladosporioides", 
+"^ot:ottId": 187451, 
+"^ot:ottTaxonName": "Cladosporium cladosporioides", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6270, 
 "@tb:identifier.taxonVariant": 15173, 
@@ -339,8 +469,9 @@
 }
 }, 
 "Tl1353773": {
-"^ot:altLabel": "Julella fallaciosa", 
 "^ot:originalLabel": "Julella fallaciosa 547", 
+"^ot:ottId": 450742, 
+"^ot:ottTaxonName": "Julella fallaciosa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 608407, 
 "@tb:identifier.taxonVariant": 812762, 
@@ -348,11 +479,14 @@
 }
 }, 
 "Tl1353774": {
-"^ot:originalLabel": "Astrothelium sp nov 422"
+"^ot:originalLabel": "Astrothelium sp nov 422", 
+"^ot:ottId": 71301, 
+"^ot:ottTaxonName": "Astrothelium"
 }, 
 "Tl1353775": {
-"^ot:altLabel": "Astrothelium scorioides", 
 "^ot:originalLabel": "Astrothelium scorioides 770", 
+"^ot:ottId": 3744042, 
+"^ot:ottTaxonName": "Astrothelium scorioides", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 627830, 
 "@tb:identifier.taxonVariant": 841465, 
@@ -361,6 +495,8 @@
 }, 
 "Tl1353776": {
 "^ot:originalLabel": "Macrophomina phaseolina", 
+"^ot:ottId": 606632, 
+"^ot:ottTaxonName": "Macrophomina phaseolina", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 16697, 
 "@tb:identifier.taxonVariant": 39110, 
@@ -369,8 +505,9 @@
 }
 }, 
 "Tl1353777": {
-"^ot:altLabel": "Pseudopyrenula subgregaria", 
 "^ot:originalLabel": "Pseudopyrenula subgregaria 391", 
+"^ot:ottId": 121096, 
+"^ot:ottTaxonName": "Pseudopyrenula subgregaria", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 564446, 
 "@tb:identifier.taxonVariant": 785286, 
@@ -379,8 +516,9 @@
 }
 }, 
 "Tl1353778": {
-"^ot:altLabel": "Mycomicrothelia minutula", 
 "^ot:originalLabel": "Mycomicrothelia minutula 567", 
+"^ot:ottId": 3744011, 
+"^ot:ottTaxonName": "Mycomicrothelia minutula", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 627821, 
 "@tb:identifier.taxonVariant": 841456, 
@@ -388,8 +526,9 @@
 }
 }, 
 "Tl1353779": {
-"^ot:altLabel": "Laurera megasperma", 
 "^ot:originalLabel": "Laurera megasperma 190", 
+"^ot:ottId": 1042622, 
+"^ot:ottTaxonName": "Laurera megasperma", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 526739, 
 "@tb:identifier.taxonVariant": 698716, 
@@ -398,11 +537,14 @@
 }
 }, 
 "Tl1353780": {
-"^ot:originalLabel": "Dothiora cannabineae"
+"^ot:originalLabel": "Dothiora cannabineae", 
+"^ot:ottId": 162095, 
+"^ot:ottTaxonName": "Dothiora cannabinae"
 }, 
 "Tl1353781": {
-"^ot:altLabel": "Trypethelium ochroleucum", 
 "^ot:originalLabel": "Trypethelium aff ochroleucum 704", 
+"^ot:ottId": 3744439, 
+"^ot:ottTaxonName": "Trypethelium ochroleucum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 622616, 
 "@tb:identifier.taxonVariant": 833625, 
@@ -410,8 +552,9 @@
 }
 }, 
 "Tl1353782": {
-"^ot:altLabel": "Trypethelium nitidiusculum", 
 "^ot:originalLabel": "Trypethelium nitidiusculum 217", 
+"^ot:ottId": 3744041, 
+"^ot:ottTaxonName": "Trypethelium variolosum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 526738, 
 "@tb:identifier.taxonVariant": 698713, 
@@ -420,8 +563,9 @@
 }
 }, 
 "Tl1353783": {
-"^ot:altLabel": "Arthopyrenia cinchonae", 
 "^ot:originalLabel": "Arthopyrenia cinchonae 333", 
+"^ot:ottId": 1077826, 
+"^ot:ottTaxonName": "Arthopyrenia cinchonae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 608409, 
 "@tb:identifier.taxonVariant": 812764, 
@@ -429,8 +573,9 @@
 }
 }, 
 "Tl1353784": {
-"^ot:altLabel": "Trypethelium marcidum", 
 "^ot:originalLabel": "Trypethelium marcidum 304", 
+"^ot:ottId": 717006, 
+"^ot:ottTaxonName": "Trypethelium marcidum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 564560, 
 "@tb:identifier.taxonVariant": 785425, 
@@ -439,8 +584,9 @@
 }
 }, 
 "Tl1353785": {
-"^ot:altLabel": "Trypethelium ochroleucum", 
 "^ot:originalLabel": "Trypethelium ochroleucum 313", 
+"^ot:ottId": 3744439, 
+"^ot:ottTaxonName": "Trypethelium ochroleucum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 622616, 
 "@tb:identifier.taxonVariant": 833625, 
@@ -449,6 +595,8 @@
 }, 
 "Tl1353786": {
 "^ot:originalLabel": "Mycosphaerella punctiformis", 
+"^ot:ottId": 1051941, 
+"^ot:ottTaxonName": "Mycosphaerella punctiformis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 615613, 
 "@tb:identifier.taxonVariant": 826847, 
@@ -457,11 +605,14 @@
 }
 }, 
 "Tl1353787": {
-"^ot:originalLabel": "Trypethelium sp 351"
+"^ot:originalLabel": "Trypethelium sp 351", 
+"^ot:ottId": 244194, 
+"^ot:ottTaxonName": "Trypethelium"
 }, 
 "Tl1353788": {
-"^ot:altLabel": "Trypethelium platystomum", 
 "^ot:originalLabel": "Trypethelium aff platystomum 54", 
+"^ot:ottId": 3744404, 
+"^ot:ottTaxonName": "Trypethelium platystomum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 564562, 
 "@tb:identifier.taxonVariant": 785427, 
@@ -471,6 +622,8 @@
 }, 
 "Tl1353789": {
 "^ot:originalLabel": "Hortaea werneckii", 
+"^ot:ottId": 925789, 
+"^ot:ottTaxonName": "Hortaea werneckii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 13733, 
 "@tb:identifier.taxonVariant": 32432, 
@@ -479,8 +632,9 @@
 }
 }, 
 "Tl1353790": {
-"^ot:altLabel": "Astrothelium cinnamomeum", 
 "^ot:originalLabel": "Astrothelium cinnamomeum DUKE", 
+"^ot:ottId": 71297, 
+"^ot:ottTaxonName": "Astrothelium cinnamomeum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 563750, 
 "@tb:identifier.taxonVariant": 746620, 
@@ -489,8 +643,9 @@
 }
 }, 
 "Tl1353791": {
-"^ot:altLabel": "Campylothelium puiggarii", 
 "^ot:originalLabel": "Campylothelium puiggarii 399", 
+"^ot:ottId": 3744502, 
+"^ot:ottTaxonName": "Campylothelium puiggarii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 627822, 
 "@tb:identifier.taxonVariant": 841457, 
@@ -498,8 +653,9 @@
 }
 }, 
 "Tl1353792": {
-"^ot:altLabel": "Trypethelium inamoenum", 
 "^ot:originalLabel": "Trypethelium inamoenum 228", 
+"^ot:ottId": 3744451, 
+"^ot:ottTaxonName": "Trypethelium inamoenum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 627823, 
 "@tb:identifier.taxonVariant": 841458, 
@@ -507,17 +663,24 @@
 }
 }, 
 "Tl1353793": {
-"^ot:originalLabel": "Campylothelium sp nov 646"
+"^ot:originalLabel": "Campylothelium sp nov 646", 
+"^ot:ottId": 515243, 
+"^ot:ottTaxonName": "Campylothelium"
 }, 
 "Tl1353794": {
-"^ot:originalLabel": "Marcelaria cumingii 552"
+"^ot:originalLabel": "Marcelaria cumingii 552", 
+"^ot:ottId": 5345954, 
+"^ot:ottTaxonName": "Marcelaria cumingii"
 }, 
 "Tl1353795": {
-"^ot:originalLabel": "Aptrootia elatior 560B"
+"^ot:originalLabel": "Aptrootia elatior 560B", 
+"^ot:ottId": 3744252, 
+"^ot:ottTaxonName": "Laurera elatior"
 }, 
 "Tl1353796": {
-"^ot:altLabel": "Bathelium degenerans", 
 "^ot:originalLabel": "Bathelium degenerans 442", 
+"^ot:ottId": 344138, 
+"^ot:ottTaxonName": "Bathelium degenerans", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 319072, 
 "@tb:identifier.taxonVariant": 363136, 
@@ -526,8 +689,9 @@
 }
 }, 
 "Tl1353797": {
-"^ot:altLabel": "Laurera sanguinaria", 
 "^ot:originalLabel": "Laurera sanguinaria 765", 
+"^ot:ottId": 3744262, 
+"^ot:ottTaxonName": "Laurera sanguinaria", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 627824, 
 "@tb:identifier.taxonVariant": 841459, 
@@ -535,8 +699,9 @@
 }
 }, 
 "Tl1353798": {
-"^ot:altLabel": "Laurera megasperma", 
 "^ot:originalLabel": "Laurera aff megasperma 189", 
+"^ot:ottId": 1042622, 
+"^ot:ottTaxonName": "Laurera megasperma", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 526739, 
 "@tb:identifier.taxonVariant": 698716, 
@@ -545,8 +710,9 @@
 }
 }, 
 "Tl1353799": {
-"^ot:altLabel": "Trypethelium aeneum", 
 "^ot:originalLabel": "Trypethelium aeneum 62", 
+"^ot:ottId": 3744470, 
+"^ot:ottTaxonName": "Trypethelium aeneum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 627825, 
 "@tb:identifier.taxonVariant": 841460, 
@@ -554,8 +720,9 @@
 }
 }, 
 "Tl1353800": {
-"^ot:altLabel": "Bathelium lineare", 
 "^ot:originalLabel": "Bathelium lineare 741", 
+"^ot:ottId": 3744122, 
+"^ot:ottTaxonName": "Bathelium lineare", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 627826, 
 "@tb:identifier.taxonVariant": 841461, 
@@ -563,8 +730,9 @@
 }
 }, 
 "Tl1353801": {
-"^ot:altLabel": "Laurera gigantospora", 
 "^ot:originalLabel": "Laurera gigantospora 590", 
+"^ot:ottId": 3744221, 
+"^ot:ottTaxonName": "Laurera gigantospora", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 627827, 
 "@tb:identifier.taxonVariant": 841462, 
@@ -572,8 +740,9 @@
 }
 }, 
 "Tl1353802": {
-"^ot:altLabel": "Mycomicrothelia oleosa", 
 "^ot:originalLabel": "Mycomicrothelia oleosa 95", 
+"^ot:ottId": 1077828, 
+"^ot:ottTaxonName": "Mycomicrothelia oleosa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 608402, 
 "@tb:identifier.taxonVariant": 812757, 
@@ -581,11 +750,14 @@
 }
 }, 
 "Tl1353803": {
-"^ot:originalLabel": "Astrothelium crassum 335"
+"^ot:originalLabel": "Astrothelium crassum 335", 
+"^ot:ottId": 3744067, 
+"^ot:ottTaxonName": "Astrothelium crassum"
 }, 
 "Tl1353804": {
-"^ot:altLabel": "Astrothelium leucoconicum", 
 "^ot:originalLabel": "Astrothelium leucoconicum 42", 
+"^ot:ottId": 3744046, 
+"^ot:ottTaxonName": "Astrothelium leucoconicum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 627828, 
 "@tb:identifier.taxonVariant": 841463, 
@@ -594,6 +766,8 @@
 }, 
 "Tl1353805": {
 "^ot:originalLabel": "Myriangium duriaei", 
+"^ot:ottId": 870746, 
+"^ot:ottTaxonName": "Myriangium duriaei", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 18565, 
 "@tb:identifier.taxonVariant": 43326, 
@@ -602,11 +776,14 @@
 }
 }, 
 "Tl1353806": {
-"^ot:originalLabel": "Aptrootia terricola HTL1501"
+"^ot:originalLabel": "Aptrootia terricola HTL1501", 
+"^ot:ottId": 344128, 
+"^ot:ottTaxonName": "Aptrootia terricola"
 }, 
 "Tl1353807": {
-"^ot:altLabel": "Polymeridium catapastum", 
 "^ot:originalLabel": "Polymeridium catapastum 358", 
+"^ot:ottId": 450736, 
+"^ot:ottTaxonName": "Polymeridium catapastum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 608404, 
 "@tb:identifier.taxonVariant": 812759, 
@@ -614,8 +791,9 @@
 }
 }, 
 "Tl1353808": {
-"^ot:altLabel": "Polymeridium proponens", 
 "^ot:originalLabel": "Polymeridium proponens 359", 
+"^ot:ottId": 515304, 
+"^ot:ottTaxonName": "Polymeridium proponens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 608411, 
 "@tb:identifier.taxonVariant": 812766, 
@@ -623,8 +801,9 @@
 }
 }, 
 "Tl1353809": {
-"^ot:altLabel": "Arthopyrenia bifera", 
 "^ot:originalLabel": "Arthopyrenia bifera 574", 
+"^ot:ottId": 3739459, 
+"^ot:ottTaxonName": "Arthopyrenia bifera", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 627829, 
 "@tb:identifier.taxonVariant": 841464, 
@@ -632,8 +811,9 @@
 }
 }, 
 "Tl1353810": {
-"^ot:altLabel": "Astrothelium scorioides", 
 "^ot:originalLabel": "Astrothelium aff scorioides 703", 
+"^ot:ottId": 3744042, 
+"^ot:ottTaxonName": "Astrothelium scorioides", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 627830, 
 "@tb:identifier.taxonVariant": 841465, 
@@ -641,11 +821,14 @@
 }
 }, 
 "Tl1353811": {
-"^ot:originalLabel": "Bathelium feei 397"
+"^ot:originalLabel": "Bathelium feei 397", 
+"^ot:ottId": 3744109, 
+"^ot:ottTaxonName": "Bathelium feei"
 }, 
 "Tl1353812": {
-"^ot:altLabel": "Trypethelium eluteriae", 
 "^ot:originalLabel": "Trypethelium aff eluteriae 382", 
+"^ot:ottId": 344137, 
+"^ot:ottTaxonName": "Trypethelium eluteriae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 319073, 
 "@tb:identifier.taxonVariant": 492517, 
@@ -654,8 +837,9 @@
 }
 }, 
 "Tl1353813": {
-"^ot:altLabel": "Trypethelium subeluteriae", 
 "^ot:originalLabel": "Trypethelium subeluteriae 49C", 
+"^ot:ottId": 293977, 
+"^ot:ottTaxonName": "Trypethelium subeluteriae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 319088, 
 "@tb:identifier.taxonVariant": 363141, 
@@ -664,8 +848,9 @@
 }
 }, 
 "Tl1353814": {
-"^ot:altLabel": "Astrothelium variolosum", 
 "^ot:originalLabel": "Astrothelium variolosum 43", 
+"^ot:ottId": 3744041, 
+"^ot:ottTaxonName": "Trypethelium variolosum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 627831, 
 "@tb:identifier.taxonVariant": 841466, 
@@ -673,8 +858,9 @@
 }
 }, 
 "Tl1353815": {
-"^ot:altLabel": "Mycomicrothelia miculiformis", 
 "^ot:originalLabel": "Mycomicrothelia miculiformis 101B", 
+"^ot:ottId": 73383, 
+"^ot:ottTaxonName": "Mycomicrothelia miculiformis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 564303, 
 "@tb:identifier.taxonVariant": 785125, 
@@ -683,8 +869,9 @@
 }
 }, 
 "Tl1353816": {
-"^ot:altLabel": "Cryptothelium purpurascens", 
 "^ot:originalLabel": "Cryptothelium purpurascens 53C", 
+"^ot:ottId": 3744291, 
+"^ot:ottTaxonName": "Cryptothelium purpurascens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 627832, 
 "@tb:identifier.taxonVariant": 841467, 
@@ -692,8 +879,9 @@
 }
 }, 
 "Tl1353817": {
-"^ot:altLabel": "Pseudopyrenula subnudata", 
 "^ot:originalLabel": "Pseudopyrenula subnudata 292", 
+"^ot:ottId": 868898, 
+"^ot:ottTaxonName": "Pseudopyrenula subnudata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 319078, 
 "@tb:identifier.taxonVariant": 492521, 
@@ -702,8 +890,9 @@
 }
 }, 
 "Tl1353818": {
-"^ot:altLabel": "Arthopyrenia planorbis", 
 "^ot:originalLabel": "Arthopyrenia planorbis 334", 
+"^ot:ottId": 3739374, 
+"^ot:ottTaxonName": "Arthopyrenia planorbis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 608403, 
 "@tb:identifier.taxonVariant": 812758, 
@@ -711,11 +900,14 @@
 }
 }, 
 "Tl1353819": {
-"^ot:originalLabel": "Aptrootia robusta 235B"
+"^ot:originalLabel": "Aptrootia robusta 235B", 
+"^ot:ottId": 3744274, 
+"^ot:ottTaxonName": "Laurera robusta"
 }, 
 "Tl1353820": {
-"^ot:altLabel": "Mycomicrothelia hemisphaerica", 
 "^ot:originalLabel": "Mycomicrothelia hemisphaerica 102", 
+"^ot:ottId": 695221, 
+"^ot:ottTaxonName": "Mycomicrothelia hemisphaerica", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 564307, 
 "@tb:identifier.taxonVariant": 785129, 
@@ -724,8 +916,9 @@
 }
 }, 
 "Tl1353821": {
-"^ot:altLabel": "Bathelium endochryseum", 
 "^ot:originalLabel": "Bathelium endochryseum 436", 
+"^ot:ottId": 3744119, 
+"^ot:ottTaxonName": "Bathelium endochryseum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 627833, 
 "@tb:identifier.taxonVariant": 841468, 
@@ -733,8 +926,9 @@
 }
 }, 
 "Tl1353822": {
-"^ot:altLabel": "Trypethelium pupula", 
 "^ot:originalLabel": "Trypethelium pupula 224", 
+"^ot:ottId": 3744481, 
+"^ot:ottTaxonName": "Trypethelium pupula", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 627834, 
 "@tb:identifier.taxonVariant": 841469, 
@@ -742,8 +936,9 @@
 }
 }, 
 "Tl1353823": {
-"^ot:altLabel": "Trypethelium eluteriae", 
 "^ot:originalLabel": "Trypethelium eluteriae 111", 
+"^ot:ottId": 344137, 
+"^ot:ottTaxonName": "Trypethelium eluteriae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 319073, 
 "@tb:identifier.taxonVariant": 492517, 
@@ -752,8 +947,9 @@
 }
 }, 
 "Tl1353824": {
-"^ot:altLabel": "Pseudopyrenula subnudata", 
 "^ot:originalLabel": "Pseudopyrenula subnudata 293", 
+"^ot:ottId": 868898, 
+"^ot:ottTaxonName": "Pseudopyrenula subnudata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 319078, 
 "@tb:identifier.taxonVariant": 492521, 
@@ -762,7 +958,9 @@
 }
 }, 
 "Tl1353825": {
-"^ot:originalLabel": "Cryptothelium sp nov 438"
+"^ot:originalLabel": "Cryptothelium sp nov 438", 
+"^ot:ottId": 919262, 
+"^ot:ottTaxonName": "Laurera"
 }
 }
 }
@@ -779,7 +977,18 @@
 "Tr69615": {
 "@label": "tree 1", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "Tn11008963", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 85, 
 "^tb:quality.tree": "Unrated", 
