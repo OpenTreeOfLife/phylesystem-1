@@ -54,22 +54,116 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2015-09-29T02:26:19.313Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:curatorName": "Romina Gazis", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}, 
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": "$1"
+}, 
+"old": {
+"$": "^(\\S*\\s+\\S*).*"
+}
+}
+]
+}, 
+"useFuzzyMatching": true
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2015-09-29T02:26:19.313Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Romina Gazis"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S12515"
 }, 
+"^ot:focalCladeOTTTaxonName": "", 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "Tls47126"
 ], 
 "^ot:studyId": "ot_487", 
+"^ot:studyPublication": {
+"@href": ""
+}, 
 "^ot:studyPublicationReference": "Ota Y., Yamanaka T., Murata H., & Neda H. 2012. Phylogeny of the mycorrhizal gourmet mushrooms \"matsutake\" based on nucleotide sequences of multiple genes and genetic elements. Mycologia, .", 
 "^ot:studyYear": 2012, 
+"^ot:tag": [], 
 "^ot:taxonLinkPrefixes": {
 "@ubio": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:", 
 "@uniprot": "http://purl.uniprot.org/taxonomy/"
@@ -86,14 +180,19 @@
 "^skos:historyNote": "Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlDocumentWriter@11138d86 $Rev: 1060 $", 
 "^tb:identifier.study": "12515", 
 "^tb:title.study": "Tricholoma matsutake and allied species", 
+"^xhtml:license": {
+"@href": "http://creativecommons.org/publicdomain/zero/1.0/", 
+"@name": "CC0"
+}, 
 "otusById": {
 "Tls47126": {
 "@label": "Taxa", 
 "^skos:historyNote": "Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlOTUWriter@69451312 $Rev: 1040 $", 
 "otuById": {
 "Tl1994159": {
-"^ot:altLabel": "Tricholoma bakamatsutake", 
 "^ot:originalLabel": "Tricholoma bakamatsutake CBTb4", 
+"^ot:ottId": 189510, 
+"^ot:ottTaxonName": "Tricholoma bakamatsutake", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 71867, 
 "@tb:identifier.taxonVariant": 148228, 
@@ -102,8 +201,9 @@
 }
 }, 
 "Tl1994160": {
-"^ot:altLabel": "Tricholoma magnivelare", 
 "^ot:originalLabel": "Tricholoma magnivelare TM10 TpC3", 
+"^ot:ottId": 213946, 
+"^ot:ottTaxonName": "Tricholoma magnivelare", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 117346, 
 "@tb:identifier.taxonVariant": 195691, 
@@ -112,8 +212,9 @@
 }
 }, 
 "Tl1994161": {
-"^ot:altLabel": "Tricholoma matsutake", 
 "^ot:originalLabel": "Tricholoma matsutake NRBC6932", 
+"^ot:ottId": 831066, 
+"^ot:ottTaxonName": "Tricholoma matsutake", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 29504, 
 "@tb:identifier.taxonVariant": 68753, 
@@ -122,8 +223,9 @@
 }
 }, 
 "Tl1994162": {
-"^ot:altLabel": "Tricholoma matsutake", 
 "^ot:originalLabel": "Tricholoma matsutake CHHE3", 
+"^ot:ottId": 831066, 
+"^ot:ottTaxonName": "Tricholoma matsutake", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 29504, 
 "@tb:identifier.taxonVariant": 68753, 
@@ -132,8 +234,9 @@
 }
 }, 
 "Tl1994163": {
-"^ot:altLabel": "Tricholoma japonicum", 
 "^ot:originalLabel": "Tricholoma japonicum FKJ1", 
+"^ot:ottId": 213943, 
+"^ot:ottTaxonName": "Tricholoma japonicum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 117349, 
 "@tb:identifier.taxonVariant": 195693, 
@@ -142,8 +245,9 @@
 }
 }, 
 "Tl1994164": {
-"^ot:altLabel": "Tricholoma matsutake", 
 "^ot:originalLabel": "Tricholoma matsutake Tm029", 
+"^ot:ottId": 831066, 
+"^ot:ottTaxonName": "Tricholoma matsutake", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 29504, 
 "@tb:identifier.taxonVariant": 68753, 
@@ -152,8 +256,9 @@
 }
 }, 
 "Tl1994165": {
-"^ot:altLabel": "Tricholoma fulvocastaneum", 
 "^ot:originalLabel": "Tricholoma fulvocastaneum WKN1029", 
+"^ot:ottId": 189509, 
+"^ot:ottTaxonName": "Tricholoma fulvocastaneum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 71868, 
 "@tb:identifier.taxonVariant": 148229, 
@@ -162,8 +267,9 @@
 }
 }, 
 "Tl1994166": {
-"^ot:altLabel": "Tricholoma fulvocastaneum", 
 "^ot:originalLabel": "Tricholoma fulvocastaneum TfAM1", 
+"^ot:ottId": 189509, 
+"^ot:ottTaxonName": "Tricholoma fulvocastaneum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 71868, 
 "@tb:identifier.taxonVariant": 148229, 
@@ -172,8 +278,9 @@
 }
 }, 
 "Tl1994167": {
-"^ot:altLabel": "Tricholoma matsutake", 
 "^ot:originalLabel": "Tricholoma matsutake TNSF12850", 
+"^ot:ottId": 831066, 
+"^ot:ottTaxonName": "Tricholoma matsutake", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 29504, 
 "@tb:identifier.taxonVariant": 68753, 
@@ -182,8 +289,9 @@
 }
 }, 
 "Tl1994168": {
-"^ot:altLabel": "Tricholoma portentosum", 
 "^ot:originalLabel": "Tricholoma portentosum 615", 
+"^ot:ottId": 431740, 
+"^ot:ottTaxonName": "Tricholoma portentosum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 29507, 
 "@tb:identifier.taxonVariant": 68758, 
@@ -192,8 +300,9 @@
 }
 }, 
 "Tl1994169": {
-"^ot:altLabel": "Tricholoma fulvocastaneum", 
 "^ot:originalLabel": "Tricholoma fulvocastaneum WKN2027", 
+"^ot:ottId": 189509, 
+"^ot:ottTaxonName": "Tricholoma fulvocastaneum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 71868, 
 "@tb:identifier.taxonVariant": 148229, 
@@ -202,8 +311,9 @@
 }
 }, 
 "Tl1994170": {
-"^ot:altLabel": "Tricholoma caligatum", 
 "^ot:originalLabel": "Tricholoma caligatum SCMB5116", 
+"^ot:ottId": 295666, 
+"^ot:ottTaxonName": "Tricholoma caligatum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 29499, 
 "@tb:identifier.taxonVariant": 68741, 
@@ -212,8 +322,9 @@
 }
 }, 
 "Tl1994171": {
-"^ot:altLabel": "Tricholoma matsutake", 
 "^ot:originalLabel": "Tricholoma matsutake VLAM19537", 
+"^ot:ottId": 831066, 
+"^ot:ottTaxonName": "Tricholoma matsutake", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 29504, 
 "@tb:identifier.taxonVariant": 68753, 
@@ -222,8 +333,9 @@
 }
 }, 
 "Tl1994172": {
-"^ot:altLabel": "Tricholoma bakamatsutake", 
 "^ot:originalLabel": "Tricholoma bakamatsutake CBTb2", 
+"^ot:ottId": 189510, 
+"^ot:ottTaxonName": "Tricholoma bakamatsutake", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 71867, 
 "@tb:identifier.taxonVariant": 148228, 
@@ -232,8 +344,9 @@
 }
 }, 
 "Tl1994173": {
-"^ot:altLabel": "Tricholoma matsutake", 
 "^ot:originalLabel": "Tricholoma matsutake TM09", 
+"^ot:ottId": 831066, 
+"^ot:ottTaxonName": "Tricholoma matsutake", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 29504, 
 "@tb:identifier.taxonVariant": 68753, 
@@ -242,8 +355,9 @@
 }
 }, 
 "Tl1994174": {
-"^ot:altLabel": "Tricholoma bakamatsutake", 
 "^ot:originalLabel": "Tricholoma bakamatsutake 240211", 
+"^ot:ottId": 189510, 
+"^ot:ottTaxonName": "Tricholoma bakamatsutake", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 71867, 
 "@tb:identifier.taxonVariant": 148228, 
@@ -252,8 +366,9 @@
 }
 }, 
 "Tl1994175": {
-"^ot:altLabel": "Tricholoma flavovirens", 
 "^ot:originalLabel": "Tricholoma flavovirens 614", 
+"^ot:ottId": 382612, 
+"^ot:ottTaxonName": "Tricholoma equestre", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 29500, 
 "@tb:identifier.taxonVariant": 68743, 
@@ -262,8 +377,9 @@
 }
 }, 
 "Tl1994176": {
-"^ot:altLabel": "Tricholoma matsutake", 
 "^ot:originalLabel": "Tricholoma matsutake NRBC6933", 
+"^ot:ottId": 831066, 
+"^ot:ottTaxonName": "Tricholoma matsutake", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 29504, 
 "@tb:identifier.taxonVariant": 68753, 
@@ -272,8 +388,9 @@
 }
 }, 
 "Tl1994177": {
-"^ot:altLabel": "Tricholoma bakamatsutake", 
 "^ot:originalLabel": "Tricholoma bakamatsutake B2", 
+"^ot:ottId": 189510, 
+"^ot:ottTaxonName": "Tricholoma bakamatsutake", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 71867, 
 "@tb:identifier.taxonVariant": 148228, 
@@ -282,8 +399,9 @@
 }
 }, 
 "Tl1994178": {
-"^ot:altLabel": "Tricholoma anatolicum", 
 "^ot:originalLabel": "Tricholoma anatolicum TM5", 
+"^ot:ottId": 583988, 
+"^ot:ottTaxonName": "Tricholoma anatolicum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 419786, 
 "@tb:identifier.taxonVariant": 412802, 
@@ -292,8 +410,9 @@
 }
 }, 
 "Tl1994179": {
-"^ot:altLabel": "Tricholoma robustum", 
 "^ot:originalLabel": "Tricholoma robustum KB1", 
+"^ot:ottId": 189508, 
+"^ot:ottTaxonName": "Tricholoma robustum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 71869, 
 "@tb:identifier.taxonVariant": 418073, 
@@ -302,8 +421,9 @@
 }
 }, 
 "Tl1994180": {
-"^ot:altLabel": "Tricholoma matsutake", 
 "^ot:originalLabel": "Tricholoma matsutake CHJI1", 
+"^ot:ottId": 831066, 
+"^ot:ottTaxonName": "Tricholoma matsutake", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 29504, 
 "@tb:identifier.taxonVariant": 68753, 
@@ -312,8 +432,9 @@
 }
 }, 
 "Tl1994181": {
-"^ot:altLabel": "Tricholoma matsutake", 
 "^ot:originalLabel": "Tricholoma matsutake CHYU1", 
+"^ot:ottId": 831066, 
+"^ot:ottTaxonName": "Tricholoma matsutake", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 29504, 
 "@tb:identifier.taxonVariant": 68753, 
@@ -322,8 +443,9 @@
 }
 }, 
 "Tl1994182": {
-"^ot:altLabel": "Tricholoma matsutake", 
 "^ot:originalLabel": "Tricholoma matsutake TO1", 
+"^ot:ottId": 831066, 
+"^ot:ottTaxonName": "Tricholoma matsutake", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 29504, 
 "@tb:identifier.taxonVariant": 68753, 
@@ -332,8 +454,9 @@
 }
 }, 
 "Tl1994183": {
-"^ot:altLabel": "Armillaria ostoyae", 
 "^ot:originalLabel": "Armillaria ostoyae NC8", 
+"^ot:ottId": 376128, 
+"^ot:ottTaxonName": "Armillaria ostoyae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 2364, 
 "@tb:identifier.taxonVariant": 5649, 
@@ -342,8 +465,9 @@
 }
 }, 
 "Tl1994184": {
-"^ot:altLabel": "Tricholoma matsutake", 
 "^ot:originalLabel": "Tricholoma matsutake CHSI1", 
+"^ot:ottId": 831066, 
+"^ot:ottTaxonName": "Tricholoma matsutake", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 29504, 
 "@tb:identifier.taxonVariant": 68753, 
@@ -352,8 +476,9 @@
 }
 }, 
 "Tl1994185": {
-"^ot:altLabel": "Tricholoma matsutake", 
 "^ot:originalLabel": "Tricholoma matsutake BH1", 
+"^ot:ottId": 831066, 
+"^ot:ottTaxonName": "Tricholoma matsutake", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 29504, 
 "@tb:identifier.taxonVariant": 68753, 
@@ -362,8 +487,9 @@
 }
 }, 
 "Tl1994186": {
-"^ot:altLabel": "Tricholoma anatolicum", 
 "^ot:originalLabel": "Tricholoma anatolicum S23", 
+"^ot:ottId": 583988, 
+"^ot:ottTaxonName": "Tricholoma anatolicum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 419786, 
 "@tb:identifier.taxonVariant": 412802, 
@@ -372,8 +498,9 @@
 }
 }, 
 "Tl1994187": {
-"^ot:altLabel": "Tricholoma matsutake", 
 "^ot:originalLabel": "Tricholoma matsutake NKR05", 
+"^ot:ottId": 831066, 
+"^ot:ottTaxonName": "Tricholoma matsutake", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 29504, 
 "@tb:identifier.taxonVariant": 68753, 
@@ -382,8 +509,9 @@
 }
 }, 
 "Tl1994188": {
-"^ot:altLabel": "Tricholoma bakamatsutake", 
 "^ot:originalLabel": "Tricholoma bakamatsutake WkTb1", 
+"^ot:ottId": 189510, 
+"^ot:ottTaxonName": "Tricholoma bakamatsutake", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 71867, 
 "@tb:identifier.taxonVariant": 148228, 
@@ -392,8 +520,9 @@
 }
 }, 
 "Tl1994189": {
-"^ot:altLabel": "Tricholoma matsutake", 
 "^ot:originalLabel": "Tricholoma matsutake Y1", 
+"^ot:ottId": 831066, 
+"^ot:ottTaxonName": "Tricholoma matsutake", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 29504, 
 "@tb:identifier.taxonVariant": 68753, 
@@ -402,8 +531,9 @@
 }
 }, 
 "Tl1994190": {
-"^ot:altLabel": "Tricholoma fulvocastaneum", 
 "^ot:originalLabel": "Tricholoma fulvocastaneum NTfu3", 
+"^ot:ottId": 189509, 
+"^ot:ottTaxonName": "Tricholoma fulvocastaneum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 71868, 
 "@tb:identifier.taxonVariant": 148229, 
@@ -412,8 +542,9 @@
 }
 }, 
 "Tl1994191": {
-"^ot:altLabel": "Armillaria cepistipes", 
 "^ot:originalLabel": "Armillaria cepistipes ND1", 
+"^ot:ottId": 65592, 
+"^ot:ottTaxonName": "Armillaria cepistipes", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 69356, 
 "@tb:identifier.taxonVariant": 145132, 
@@ -422,11 +553,14 @@
 }
 }, 
 "Tl1994192": {
-"^ot:originalLabel": "Tricholoma portentosum HOLOT"
+"^ot:originalLabel": "Tricholoma portentosum HOLOT", 
+"^ot:ottId": 431740, 
+"^ot:ottTaxonName": "Tricholoma portentosum"
 }, 
 "Tl1994193": {
-"^ot:altLabel": "Tricholoma fulvocastaneum", 
 "^ot:originalLabel": "Tricholoma fulvocastaneum WKN3026", 
+"^ot:ottId": 189509, 
+"^ot:ottTaxonName": "Tricholoma fulvocastaneum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 71868, 
 "@tb:identifier.taxonVariant": 148229, 
@@ -435,8 +569,9 @@
 }
 }, 
 "Tl1994194": {
-"^ot:altLabel": "Tricholoma matsutake", 
 "^ot:originalLabel": "Tricholoma matsutake TnFIN1", 
+"^ot:ottId": 831066, 
+"^ot:ottTaxonName": "Tricholoma matsutake", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 29504, 
 "@tb:identifier.taxonVariant": 68753, 
@@ -445,8 +580,9 @@
 }
 }, 
 "Tl1994195": {
-"^ot:altLabel": "Tricholoma matsutake", 
 "^ot:originalLabel": "Tricholoma matsutake TM4", 
+"^ot:ottId": 831066, 
+"^ot:ottTaxonName": "Tricholoma matsutake", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 29504, 
 "@tb:identifier.taxonVariant": 68753, 
@@ -455,8 +591,9 @@
 }
 }, 
 "Tl1994196": {
-"^ot:altLabel": "Armillaria gallica", 
 "^ot:originalLabel": "Armillaria gallica NA4", 
+"^ot:ottId": 65596, 
+"^ot:ottTaxonName": "Armillaria gallica", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 34532, 
 "@tb:identifier.taxonVariant": 79824, 
@@ -465,8 +602,9 @@
 }
 }, 
 "Tl1994197": {
-"^ot:altLabel": "Tricholoma anatolicum", 
 "^ot:originalLabel": "Tricholoma anatolicum MC1", 
+"^ot:ottId": 583988, 
+"^ot:ottTaxonName": "Tricholoma anatolicum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 419786, 
 "@tb:identifier.taxonVariant": 412802, 
@@ -475,8 +613,9 @@
 }
 }, 
 "Tl1994198": {
-"^ot:altLabel": "Tricholoma matsutake", 
 "^ot:originalLabel": "Tricholoma matsutake MX1", 
+"^ot:ottId": 831066, 
+"^ot:ottTaxonName": "Tricholoma matsutake", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 29504, 
 "@tb:identifier.taxonVariant": 68753, 
@@ -485,8 +624,9 @@
 }
 }, 
 "Tl1994199": {
-"^ot:altLabel": "Armillaria nabsnona", 
 "^ot:originalLabel": "Armillaria nabsnona NB3", 
+"^ot:ottId": 341622, 
+"^ot:ottTaxonName": "Armillaria nabsnona", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 34533, 
 "@tb:identifier.taxonVariant": 79825, 
@@ -495,8 +635,9 @@
 }
 }, 
 "Tl1994200": {
-"^ot:altLabel": "Tricholoma matsutake", 
 "^ot:originalLabel": "Tricholoma matsutake Tm31", 
+"^ot:ottId": 831066, 
+"^ot:ottTaxonName": "Tricholoma matsutake", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 29504, 
 "@tb:identifier.taxonVariant": 68753, 
@@ -505,8 +646,9 @@
 }
 }, 
 "Tl1994201": {
-"^ot:altLabel": "Tricholoma focale", 
 "^ot:originalLabel": "Tricholoma focale SCMB3113", 
+"^ot:ottId": 805918, 
+"^ot:ottTaxonName": "Tricholoma focale", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 74118, 
 "@tb:identifier.taxonVariant": 418423, 
@@ -515,8 +657,9 @@
 }
 }, 
 "Tl1994202": {
-"^ot:altLabel": "Tricholoma anatolicum", 
 "^ot:originalLabel": "Tricholoma anatolicum S22", 
+"^ot:ottId": 583988, 
+"^ot:ottTaxonName": "Tricholoma anatolicum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 419786, 
 "@tb:identifier.taxonVariant": 412802, 
@@ -525,8 +668,9 @@
 }
 }, 
 "Tl1994203": {
-"^ot:altLabel": "Tricholoma magnivelare", 
 "^ot:originalLabel": "Tricholoma magnivelare TM10 TM10", 
+"^ot:ottId": 213946, 
+"^ot:ottTaxonName": "Tricholoma magnivelare", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 117346, 
 "@tb:identifier.taxonVariant": 195691, 
@@ -535,8 +679,9 @@
 }
 }, 
 "Tl1994204": {
-"^ot:altLabel": "Tricholoma matsutake", 
 "^ot:originalLabel": "Tricholoma matsutake O370282", 
+"^ot:ottId": 831066, 
+"^ot:ottTaxonName": "Tricholoma matsutake", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 29504, 
 "@tb:identifier.taxonVariant": 68753, 
@@ -545,8 +690,9 @@
 }
 }, 
 "Tl1994205": {
-"^ot:altLabel": "Tricholoma fulvocastaneum", 
 "^ot:originalLabel": "Tricholoma fulvocastaneum NRBC6942", 
+"^ot:ottId": 189509, 
+"^ot:ottTaxonName": "Tricholoma fulvocastaneum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 71868, 
 "@tb:identifier.taxonVariant": 148229, 
@@ -555,8 +701,9 @@
 }
 }, 
 "Tl1994206": {
-"^ot:altLabel": "Tricholoma matsutake", 
 "^ot:originalLabel": "Tricholoma matsutake O85552", 
+"^ot:ottId": 831066, 
+"^ot:ottTaxonName": "Tricholoma matsutake", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 29504, 
 "@tb:identifier.taxonVariant": 68753, 
@@ -565,8 +712,9 @@
 }
 }, 
 "Tl1994207": {
-"^ot:altLabel": "Tricholoma magnivelare", 
 "^ot:originalLabel": "Tricholoma magnivelare TM10 CA1", 
+"^ot:ottId": 213946, 
+"^ot:ottTaxonName": "Tricholoma magnivelare", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 117346, 
 "@tb:identifier.taxonVariant": 195691, 
@@ -575,8 +723,9 @@
 }
 }, 
 "Tl1994208": {
-"^ot:altLabel": "Tricholoma fulvocastaneum", 
 "^ot:originalLabel": "Tricholoma fulvocastaneum NRBC6947", 
+"^ot:ottId": 189509, 
+"^ot:ottTaxonName": "Tricholoma fulvocastaneum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 71868, 
 "@tb:identifier.taxonVariant": 148229, 
@@ -585,8 +734,9 @@
 }
 }, 
 "Tl1994209": {
-"^ot:altLabel": "Tricholoma flavovirens", 
 "^ot:originalLabel": "Tricholoma flavovirens 613", 
+"^ot:ottId": 382612, 
+"^ot:ottTaxonName": "Tricholoma equestre", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 29500, 
 "@tb:identifier.taxonVariant": 68743, 
@@ -595,8 +745,9 @@
 }
 }, 
 "Tl1994210": {
-"^ot:altLabel": "Tricholoma bakamatsutake", 
 "^ot:originalLabel": "Tricholoma bakamatsutake SFTb1", 
+"^ot:ottId": 189510, 
+"^ot:ottTaxonName": "Tricholoma bakamatsutake", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 71867, 
 "@tb:identifier.taxonVariant": 148228, 
@@ -605,8 +756,9 @@
 }
 }, 
 "Tl1994211": {
-"^ot:altLabel": "Tricholoma caligatum", 
 "^ot:originalLabel": "Tricholoma caligatum TFMML915a", 
+"^ot:ottId": 295666, 
+"^ot:ottTaxonName": "Tricholoma caligatum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 29499, 
 "@tb:identifier.taxonVariant": 68741, 
@@ -615,8 +767,9 @@
 }
 }, 
 "Tl1994212": {
-"^ot:altLabel": "Tricholoma anatolicum", 
 "^ot:originalLabel": "Tricholoma anatolicum S32", 
+"^ot:ottId": 583988, 
+"^ot:ottTaxonName": "Tricholoma anatolicum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 419786, 
 "@tb:identifier.taxonVariant": 412802, 
@@ -625,8 +778,9 @@
 }
 }, 
 "Tl1994213": {
-"^ot:altLabel": "Tricholoma matsutake", 
 "^ot:originalLabel": "Tricholoma matsutake Tm29", 
+"^ot:ottId": 831066, 
+"^ot:ottTaxonName": "Tricholoma matsutake", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 29504, 
 "@tb:identifier.taxonVariant": 68753, 
@@ -650,7 +804,18 @@
 "Tr90479": {
 "@label": "Fig. 1++", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "Tn13289510", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 54, 
 "^tb:quality.tree": "Unrated", 
@@ -658,12 +823,12 @@
 "edgeBySourceId": {
 "Tn13289485": {
 "edge9905": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn13289485", 
 "@target": "Tn13289551"
 }, 
 "edge9907": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn13289485", 
 "@target": "Tn13289576"
 }
@@ -682,7 +847,7 @@
 }, 
 "Tn13289490": {
 "edge9933": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn13289490", 
 "@target": "Tn13289570"
 }, 
@@ -742,19 +907,19 @@
 }, 
 "Tn13289497": {
 "edge9985": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn13289497", 
 "@target": "Tn13289540"
 }, 
 "edge9987": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn13289497", 
 "@target": "Tn13289529"
 }
 }, 
 "Tn13289499": {
 "edge9913": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn13289499", 
 "@target": "Tn13289514"
 }, 
@@ -766,12 +931,12 @@
 }, 
 "Tn13289500": {
 "edge9845": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn13289500", 
 "@target": "Tn13289548"
 }, 
 "edge9847": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn13289500", 
 "@target": "Tn13289512"
 }
@@ -790,12 +955,12 @@
 }, 
 "Tn13289505": {
 "edge9929": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn13289505", 
 "@target": "Tn13289503"
 }, 
 "edge9931": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn13289505", 
 "@target": "Tn13289490"
 }
@@ -814,12 +979,12 @@
 }, 
 "Tn13289508": {
 "edge9897": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn13289508", 
 "@target": "Tn13289578"
 }, 
 "edge9899": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn13289508", 
 "@target": "Tn13289591"
 }
@@ -850,7 +1015,7 @@
 }, 
 "Tn13289511": {
 "edge9969": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn13289511", 
 "@target": "Tn13289574"
 }, 
@@ -862,12 +1027,12 @@
 }, 
 "Tn13289513": {
 "edge9877": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn13289513", 
 "@target": "Tn13289582"
 }, 
 "edge9879": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn13289513", 
 "@target": "Tn13289542"
 }
@@ -898,12 +1063,12 @@
 }, 
 "Tn13289520": {
 "edge9865": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn13289520", 
 "@target": "Tn13289554"
 }, 
 "edge9867": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn13289520", 
 "@target": "Tn13289553"
 }
@@ -927,19 +1092,19 @@
 "@target": "Tn13289487"
 }, 
 "edge9963": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn13289524", 
 "@target": "Tn13289486"
 }
 }, 
 "Tn13289527": {
 "edge10015": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn13289527", 
 "@target": "Tn13289575"
 }, 
 "edge10017": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn13289527", 
 "@target": "Tn13289507"
 }
@@ -958,7 +1123,7 @@
 }, 
 "Tn13289529": {
 "edge9989": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn13289529", 
 "@target": "Tn13289559"
 }, 
@@ -970,7 +1135,7 @@
 }, 
 "Tn13289530": {
 "edge9997": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn13289530", 
 "@target": "Tn13289577"
 }, 
@@ -982,12 +1147,12 @@
 }, 
 "Tn13289531": {
 "edge9957": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn13289531", 
 "@target": "Tn13289525"
 }, 
 "edge9959": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn13289531", 
 "@target": "Tn13289524"
 }
@@ -1006,7 +1171,7 @@
 }, 
 "Tn13289534": {
 "edge9925": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn13289534", 
 "@target": "Tn13289563"
 }, 
@@ -1018,36 +1183,36 @@
 }, 
 "Tn13289536": {
 "edge9977": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn13289536", 
 "@target": "Tn13289504"
 }, 
 "edge9979": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn13289536", 
 "@target": "Tn13289585"
 }
 }, 
 "Tn13289541": {
 "edge10005": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn13289541", 
 "@target": "Tn13289580"
 }, 
 "edge9995": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn13289541", 
 "@target": "Tn13289530"
 }
 }, 
 "Tn13289542": {
 "edge9881": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn13289542", 
 "@target": "Tn13289488"
 }, 
 "edge9883": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn13289542", 
 "@target": "Tn13289556"
 }
@@ -1066,12 +1231,12 @@
 }, 
 "Tn13289553": {
 "edge9869": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn13289553", 
 "@target": "Tn13289538"
 }, 
 "edge9871": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn13289553", 
 "@target": "Tn13289569"
 }
@@ -1083,7 +1248,7 @@
 "@target": "Tn13289555"
 }, 
 "edge9955": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn13289557", 
 "@target": "Tn13289531"
 }
@@ -1107,31 +1272,31 @@
 "@target": "Tn13289537"
 }, 
 "edge9947": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn13289565", 
 "@target": "Tn13289517"
 }
 }, 
 "Tn13289567": {
 "edge9937": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn13289567", 
 "@target": "Tn13289568"
 }, 
 "edge9939": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn13289567", 
 "@target": "Tn13289515"
 }
 }, 
 "Tn13289569": {
 "edge9873": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn13289569", 
 "@target": "Tn13289561"
 }, 
 "edge9875": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn13289569", 
 "@target": "Tn13289513"
 }
@@ -1150,24 +1315,24 @@
 }, 
 "Tn13289572": {
 "edge9893": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn13289572", 
 "@target": "Tn13289522"
 }, 
 "edge9895": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn13289572", 
 "@target": "Tn13289508"
 }
 }, 
 "Tn13289574": {
 "edge9971": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn13289574", 
 "@target": "Tn13289573"
 }, 
 "edge9973": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn13289574", 
 "@target": "Tn13289502"
 }
@@ -1186,36 +1351,36 @@
 }, 
 "Tn13289580": {
 "edge10007": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn13289580", 
 "@target": "Tn13289545"
 }, 
 "edge10009": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn13289580", 
 "@target": "Tn13289532"
 }
 }, 
 "Tn13289581": {
 "edge9917": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn13289581", 
 "@target": "Tn13289560"
 }, 
 "edge9919": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn13289581", 
 "@target": "Tn13289544"
 }
 }, 
 "Tn13289583": {
 "edge9853": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn13289583", 
 "@target": "Tn13289526"
 }, 
 "edge9855": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn13289583", 
 "@target": "Tn13289588"
 }
@@ -1227,7 +1392,7 @@
 "@target": "Tn13289552"
 }, 
 "edge9891": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn13289584", 
 "@target": "Tn13289572"
 }
@@ -1239,7 +1404,7 @@
 "@target": "Tn13289495"
 }, 
 "edge9983": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn13289585", 
 "@target": "Tn13289497"
 }
@@ -1282,12 +1447,12 @@
 }, 
 "Tn13289591": {
 "edge9901": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn13289591", 
 "@target": "Tn13289546"
 }, 
 "edge9903": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn13289591", 
 "@target": "Tn13289485"
 }
@@ -1618,7 +1783,18 @@
 "Tr90480": {
 "@label": "Fig. 2+", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "Tn13289629", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 25, 
 "^tb:quality.tree": "Unrated", 
@@ -1626,7 +1802,7 @@
 "edgeBySourceId": {
 "Tn13289596": {
 "edge10069": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn13289596", 
 "@target": "Tn13289638"
 }, 
@@ -1655,7 +1831,7 @@
 "@target": "Tn13289611"
 }, 
 "edge10097": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn13289599", 
 "@target": "Tn13289614"
 }
@@ -1674,7 +1850,7 @@
 }, 
 "Tn13289604": {
 "edge10051": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn13289604", 
 "@target": "Tn13289637"
 }, 
@@ -1686,7 +1862,7 @@
 }, 
 "Tn13289605": {
 "edge10105": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn13289605", 
 "@target": "Tn13289627"
 }, 
@@ -1698,12 +1874,12 @@
 }, 
 "Tn13289606": {
 "edge10115": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn13289606", 
 "@target": "Tn13289592"
 }, 
 "edge10117": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn13289606", 
 "@target": "Tn13289640"
 }
@@ -1715,14 +1891,14 @@
 "@target": "Tn13289615"
 }, 
 "edge10037": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn13289608", 
 "@target": "Tn13289601"
 }
 }, 
 "Tn13289609": {
 "edge10059": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn13289609", 
 "@target": "Tn13289593"
 }, 
@@ -1751,14 +1927,14 @@
 "@target": "Tn13289600"
 }, 
 "edge10093": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn13289616", 
 "@target": "Tn13289599"
 }
 }, 
 "Tn13289617": {
 "edge10085": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn13289617", 
 "@target": "Tn13289594"
 }, 
@@ -1770,7 +1946,7 @@
 }, 
 "Tn13289618": {
 "edge10055": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn13289618", 
 "@target": "Tn13289607"
 }, 
@@ -1782,7 +1958,7 @@
 }, 
 "Tn13289620": {
 "edge10031": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn13289620", 
 "@target": "Tn13289622"
 }, 
@@ -1806,12 +1982,12 @@
 }, 
 "Tn13289625": {
 "edge10075": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn13289625", 
 "@target": "Tn13289603"
 }, 
 "edge10077": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn13289625", 
 "@target": "Tn13289633"
 }
@@ -1823,7 +1999,7 @@
 "@target": "Tn13289613"
 }, 
 "edge10109": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn13289627", 
 "@target": "Tn13289621"
 }
@@ -1866,12 +2042,12 @@
 }, 
 "Tn13289632": {
 "edge10063": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn13289632", 
 "@target": "Tn13289626"
 }, 
 "edge10065": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn13289632", 
 "@target": "Tn13289597"
 }
@@ -1890,24 +2066,24 @@
 }, 
 "Tn13289638": {
 "edge10071": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn13289638", 
 "@target": "Tn13289634"
 }, 
 "edge10073": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn13289638", 
 "@target": "Tn13289625"
 }
 }, 
 "Tn13289639": {
 "edge10101": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn13289639", 
 "@target": "Tn13289631"
 }, 
 "edge10103": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn13289639", 
 "@target": "Tn13289605"
 }
