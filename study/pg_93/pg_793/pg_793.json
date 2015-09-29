@@ -36,22 +36,107 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2015-09-29T15:12:17.437Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
+}, 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}, 
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": "$1"
+}, 
+"old": {
+"$": "^(\\S*\\s+\\S*).*"
+}
+}
+]
+}, 
+"useFuzzyMatching": true
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2015-09-29T15:12:17.437Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
 }, 
 "^ot:candidateTreeForSynthesis": [], 
-"^ot:curatorName": "Romina Gazis", 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Romina Gazis"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S2050"
 }, 
 "^ot:focalClade": 439373, 
 "^ot:focalCladeOTTTaxonName": "Ascomycota", 
-"^ot:messages": {
-"message": []
-}, 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "otus793"
 ], 
@@ -65,6 +150,10 @@
 "^ot:treesElementOrder": [
 "trees793"
 ], 
+"^xhtml:license": {
+"@href": "http://creativecommons.org/publicdomain/zero/1.0/", 
+"@name": "CC0"
+}, 
 "otusById": {
 "otus793": {
 "otuById": {
@@ -454,6 +543,8 @@
 }, 
 "otu195874": {
 "^ot:originalLabel": "Balansia epichloe AEG 96-15a", 
+"^ot:ottId": 4059003, 
+"^ot:ottTaxonName": "Balansia epichloe", 
 "^ot:treebaseOTUId": "Tl80082"
 }, 
 "otu195875": {
@@ -470,6 +561,8 @@
 }, 
 "otu195877": {
 "^ot:originalLabel": "Myrothecium leucotrichum AR 3506", 
+"^ot:ottId": 5291502, 
+"^ot:ottTaxonName": "Xepicula leucotricha", 
 "^ot:treebaseOTUId": "Tl80085"
 }, 
 "otu195878": {
@@ -492,6 +585,8 @@
 }, 
 "otu195881": {
 "^ot:originalLabel": "Hypocrea lutea ATCC 208838", 
+"^ot:ottId": 935193, 
+"^ot:ottTaxonName": "Hypocrea lutea", 
 "^ot:treebaseOTUId": "Tl80089"
 }, 
 "otu195882": {
@@ -562,6 +657,8 @@
 }, 
 "otu195893": {
 "^ot:originalLabel": "Pseudonectria rousseliana CBS 114049", 
+"^ot:ottId": 282351, 
+"^ot:ottTaxonName": "Pseudonectria buxi", 
 "^ot:treebaseOTUId": "Tl80101"
 }, 
 "otu195894": {
@@ -812,6 +909,8 @@
 }, 
 "otu195935": {
 "^ot:originalLabel": "Hypocrea rufa CBS 114374", 
+"^ot:ottId": 939823, 
+"^ot:ottTaxonName": "Hypocrea rufa", 
 "^ot:treebaseOTUId": "Tl80143"
 }, 
 "otu195936": {
@@ -958,15 +1057,20 @@
 ], 
 "treeById": {
 "tree1493": {
+"@label": "Untitled (tree1493)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "", 
 "^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML, SSU + LSU + EF-1 + RPB1 + RPB2", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node458676", 
 "^ot:specifiedRoot": "", 
 "^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node458676": {
 "edge458677": {
@@ -3036,17 +3140,22 @@
 }
 }, 
 "tree5659": {
+"@label": "Untitled (tree5659)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "", 
 "^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "ML, SSU + LSU + EF-1 + RPB1 + RPB2 (rooted)", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node976495", 
 "^ot:specifiedRoot": "", 
 "^ot:tag": [
 "EF-1"
 ], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node976495": {
 "edge976496": {
