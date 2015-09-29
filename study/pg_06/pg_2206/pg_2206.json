@@ -36,32 +36,124 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2015-09-29T19:56:30.281Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
+}, 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}, 
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": "$1"
+}, 
+"old": {
+"$": "^(\\S*\\s+\\S*).*"
+}
+}
+]
+}, 
+"useFuzzyMatching": true
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2015-09-29T19:56:30.281Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
 }, 
 "^ot:candidateTreeForSynthesis": [], 
-"^ot:curatorName": "Romina Gazis", 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Romina Gazis"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S1345"
 }, 
 "^ot:focalClade": 354187, 
 "^ot:focalCladeOTTTaxonName": "Cylindrocladiella", 
-"^ot:messages": {
-"message": []
-}, 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "otus2206"
 ], 
 "^ot:studyId": "pg_2206", 
+"^ot:studyPublication": {
+"@href": ""
+}, 
 "^ot:studyPublicationReference": "Van Coller, G. J., S. Denman, J. Z. Groenewald, S. C. Lamprecht, and P. W. Crous. \"Characterisation and pathogenicity of Cylindrocladiella spp. associated with root and cutting rot symptoms of grapevines in nurseries.\" Australasian Plant Pathology 34, no. 4 (2005): 489-498.", 
 "^ot:studyYear": 2005, 
 "^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees2206"
 ], 
+"^xhtml:license": {
+"@href": "http://creativecommons.org/publicdomain/zero/1.0/", 
+"@name": "CC0"
+}, 
 "otusById": {
 "otus2206": {
 "otuById": {
@@ -79,6 +171,8 @@
 }, 
 "otu320650": {
 "^ot:originalLabel": "Cylindrocladiella microcylindrica STE-U 10451", 
+"^ot:ottId": 5317082, 
+"^ot:ottTaxonName": "Nectricladiella viticola", 
 "^ot:treebaseOTUId": "Tl37205"
 }, 
 "otu320651": {
@@ -137,6 +231,8 @@
 }, 
 "otu320660": {
 "^ot:originalLabel": "Cylindrocladiella microcylindrica ATCC 38571", 
+"^ot:ottId": 5317082, 
+"^ot:ottTaxonName": "Nectricladiella viticola", 
 "^ot:treebaseOTUId": "Tl37215"
 }, 
 "otu320661": {
@@ -273,6 +369,8 @@
 }, 
 "otu320683": {
 "^ot:originalLabel": "Cylindrocladiella microcylindrica STE-U 10452", 
+"^ot:ottId": 5317082, 
+"^ot:ottTaxonName": "Nectricladiella viticola", 
 "^ot:treebaseOTUId": "Tl37238"
 }, 
 "otu320684": {
@@ -334,12 +432,15 @@
 ], 
 "treeById": {
 "tree4667": {
+"@label": "Untitled (tree4667)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "", 
 "^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, ITS + b-tubulin + histone", 
 "^ot:inGroupClade": "node825187", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node825183", 
 "^ot:specifiedRoot": "", 
@@ -347,6 +448,7 @@
 "MP", 
 "b-tub"
 ], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node825183": {
 "edge825184": {
