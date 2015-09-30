@@ -36,17 +36,106 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2015-09-30T18:18:44.728Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
+}, 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}, 
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": "$1"
+}, 
+"old": {
+"$": "^(\\S*\\s+\\S*).*"
+}
+}
+]
+}, 
+"useFuzzyMatching": true
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2015-09-30T18:18:44.728Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
 }, 
 "^ot:candidateTreeForSynthesis": [], 
-"^ot:curatorName": "Romina Gazis", 
-"^ot:messages": {
-"message": []
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Romina Gazis"
+], 
+"^ot:dataDeposit": {
+"@href": ""
 }, 
+"^ot:focalCladeOTTTaxonName": "", 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "otus1328"
 ], 
@@ -60,17 +149,27 @@
 "^ot:treesElementOrder": [
 "trees1328"
 ], 
+"^xhtml:license": {
+"@href": "http://creativecommons.org/publicdomain/zero/1.0/", 
+"@name": "CC0"
+}, 
 "otusById": {
 "otus1328": {
 "otuById": {
 "otu242889": {
-"^ot:originalLabel": "Epichloe baconii As"
+"^ot:originalLabel": "Epichloe baconii As", 
+"^ot:ottId": 128044, 
+"^ot:ottTaxonName": "Epichloe baconii"
 }, 
 "otu242890": {
-"^ot:originalLabel": "Epichloe baconii Cv"
+"^ot:originalLabel": "Epichloe baconii Cv", 
+"^ot:ottId": 128044, 
+"^ot:ottTaxonName": "Epichloe baconii"
 }, 
 "otu242891": {
-"^ot:originalLabel": "Epichloe amarillans So"
+"^ot:originalLabel": "Epichloe amarillans So", 
+"^ot:ottId": 369201, 
+"^ot:ottTaxonName": "Epichloe amarillans"
 }, 
 "otu242892": {
 "^ot:originalLabel": "Neotyphodium x canadensium CWR5 copy1", 
@@ -83,13 +182,19 @@
 "^ot:ottTaxonName": "Neotyphodium"
 }, 
 "otu242894": {
-"^ot:originalLabel": "Epichloe amarillans Ap"
+"^ot:originalLabel": "Epichloe amarillans Ap", 
+"^ot:ottId": 369201, 
+"^ot:ottTaxonName": "Epichloe amarillans"
 }, 
 "otu242895": {
-"^ot:originalLabel": "Epichloe glyceriae Gs"
+"^ot:originalLabel": "Epichloe glyceriae Gs", 
+"^ot:ottId": 89725, 
+"^ot:ottTaxonName": "Epichloe glyceriae"
 }, 
 "otu242896": {
-"^ot:originalLabel": "Epichloe glyceriae Gs2"
+"^ot:originalLabel": "Epichloe glyceriae Gs2", 
+"^ot:ottId": 89725, 
+"^ot:ottTaxonName": "Epichloe glyceriae"
 }, 
 "otu242897": {
 "^ot:originalLabel": "Epichloe elymi Em", 
@@ -117,7 +222,9 @@
 "^ot:ottTaxonName": "Epichloe yangzii"
 }, 
 "otu242902": {
-"^ot:originalLabel": "Epichloe bromicola Be"
+"^ot:originalLabel": "Epichloe bromicola Be", 
+"^ot:ottId": 905106, 
+"^ot:ottTaxonName": "Epichloe bromicola"
 }, 
 "otu242903": {
 "^ot:originalLabel": "Epichloe clarkii Hl", 
@@ -135,7 +242,9 @@
 "^ot:ottTaxonName": "Epichloe typhina"
 }, 
 "otu242906": {
-"^ot:originalLabel": "Epichloe sylvatica Bs"
+"^ot:originalLabel": "Epichloe sylvatica Bs", 
+"^ot:ottId": 380242, 
+"^ot:ottTaxonName": "Epichloe sylvatica"
 }, 
 "otu242907": {
 "^ot:originalLabel": "Epichloe typhina Pn", 
@@ -148,10 +257,14 @@
 "^ot:ottTaxonName": "Epichloe typhina"
 }, 
 "otu242909": {
-"^ot:originalLabel": "Epichloe brachyelytri Bee"
+"^ot:originalLabel": "Epichloe brachyelytri Bee", 
+"^ot:ottId": 905108, 
+"^ot:ottTaxonName": "Epichloe brachyelytri"
 }, 
 "otu242910": {
-"^ot:originalLabel": "Epichloe brachyelytri Bee2"
+"^ot:originalLabel": "Epichloe brachyelytri Bee2", 
+"^ot:ottId": 905108, 
+"^ot:ottTaxonName": "Epichloe brachyelytri"
 }, 
 "otu242911": {
 "^ot:originalLabel": "Epichloe festucae Frr", 
@@ -170,15 +283,20 @@
 ], 
 "treeById": {
 "tree2647": {
+"@label": "Untitled (tree2647)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "", 
 "^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, EF-1", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node589166", 
 "^ot:specifiedRoot": "", 
 "^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node589166": {
 "edge589167": {
@@ -484,16 +602,20 @@
 }
 }, 
 "tree5855": {
+"@label": "Untitled (tree5855)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "", 
 "^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, EF-1 (rooted)", 
 "^ot:inGroupClade": "node998328", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node998328", 
 "^ot:specifiedRoot": "", 
 "^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node998328": {
 "edge998329": {
