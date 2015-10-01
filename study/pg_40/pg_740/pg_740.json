@@ -36,22 +36,99 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2015-10-01T15:52:47.259Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:candidateTreeForSynthesis": [], 
-"^ot:curatorName": "Romina Gazis", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2015-10-01T15:52:47.259Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree1346"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Romina Gazis"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S2024"
 }, 
 "^ot:focalClade": 969668, 
 "^ot:focalCladeOTTTaxonName": "Clavicipitaceae", 
-"^ot:messages": {
-"message": []
-}, 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "otus740"
 ], 
@@ -65,6 +142,10 @@
 "^ot:treesElementOrder": [
 "trees740"
 ], 
+"^xhtml:license": {
+"@href": "http://creativecommons.org/publicdomain/zero/1.0/", 
+"@name": "CC0"
+}, 
 "otusById": {
 "otus740": {
 "otuById": {
@@ -322,6 +403,8 @@
 }, 
 "otu190809": {
 "^ot:originalLabel": "Echinopogon ovatus", 
+"^ot:ottId": 4730968, 
+"^ot:ottTaxonName": "Echinopogon ovatus", 
 "^ot:treebaseOTUId": "Tl77963"
 }, 
 "otu190810": {
@@ -390,15 +473,20 @@
 ], 
 "treeById": {
 "tree1345": {
+"@label": "Untitled (tree1345)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "", 
 "^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "MP, cp-DNA + IGS", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node442853", 
 "^ot:specifiedRoot": "", 
 "^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node442853": {
 "edge442854": {
@@ -753,18 +841,23 @@
 }
 }, 
 "tree1346": {
+"@label": "BI, EF-1 + b-tubulin", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
-"^ot:branchLengthMode": "", 
-"^ot:branchLengthTimeUnit": "", 
+"^ot:branchLengthMode": "ot:changesCount", 
+"^ot:branchLengthTimeUnit": "Myr", 
 "^ot:curatedType": "BI, EF-1 + b-tubulin", 
-"^ot:inGroupClade": "node442905", 
+"^ot:inGroupClade": "node442904", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node442903", 
-"^ot:specifiedRoot": "", 
+"^ot:specifiedRoot": "node442903", 
 "^ot:tag": [
-"BI"
+"BI", 
+"EF-1"
 ], 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node442903": {
 "edge442904": {
@@ -1005,39 +1098,48 @@
 }, 
 "node442912": {}, 
 "node442913": {
-"@otu": "otu190788"
+"@otu": "otu190788", 
+"^ot:isTaxonExemplar": false
 }, 
 "node442914": {
-"@otu": "otu190785"
+"@otu": "otu190785", 
+"^ot:isTaxonExemplar": true
 }, 
 "node442915": {
-"@otu": "otu190792"
+"@otu": "otu190792", 
+"^ot:isTaxonExemplar": false
 }, 
 "node442916": {
 "@otu": "otu190786"
 }, 
 "node442917": {}, 
 "node442918": {
-"@otu": "otu190783"
+"@otu": "otu190783", 
+"^ot:isTaxonExemplar": true
 }, 
 "node442919": {
-"@otu": "otu190793"
+"@otu": "otu190793", 
+"^ot:isTaxonExemplar": false
 }, 
 "node442920": {}, 
 "node442921": {
-"@otu": "otu190787"
+"@otu": "otu190787", 
+"^ot:isTaxonExemplar": true
 }, 
 "node442922": {
-"@otu": "otu190777"
+"@otu": "otu190777", 
+"^ot:isTaxonExemplar": false
 }, 
 "node442923": {
 "@otu": "otu190769"
 }, 
 "node442924": {
-"@otu": "otu190795"
+"@otu": "otu190795", 
+"^ot:isTaxonExemplar": false
 }, 
 "node442925": {
-"@otu": "otu190780"
+"@otu": "otu190780", 
+"^ot:isTaxonExemplar": true
 }, 
 "node442926": {}, 
 "node442927": {
@@ -1050,25 +1152,30 @@
 "node442930": {}, 
 "node442931": {}, 
 "node442932": {
-"@otu": "otu190775"
+"@otu": "otu190775", 
+"^ot:isTaxonExemplar": false
 }, 
 "node442933": {
 "@otu": "otu190790"
 }, 
 "node442934": {}, 
 "node442935": {
-"@otu": "otu190782"
+"@otu": "otu190782", 
+"^ot:isTaxonExemplar": false
 }, 
 "node442936": {}, 
 "node442937": {
-"@otu": "otu190797"
+"@otu": "otu190797", 
+"^ot:isTaxonExemplar": true
 }, 
 "node442938": {}, 
 "node442939": {
-"@otu": "otu190784"
+"@otu": "otu190784", 
+"^ot:isTaxonExemplar": false
 }, 
 "node442940": {
-"@otu": "otu190774"
+"@otu": "otu190774", 
+"^ot:isTaxonExemplar": false
 }, 
 "node442941": {}, 
 "node442942": {
@@ -1076,7 +1183,8 @@
 }, 
 "node442943": {}, 
 "node442944": {
-"@otu": "otu190794"
+"@otu": "otu190794", 
+"^ot:isTaxonExemplar": false
 }, 
 "node442945": {}, 
 "node442946": {
