@@ -58,16 +58,96 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2015-11-18T14:52:15.393Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:curatorName": "Karen Cranston", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2015-11-18T14:52:15.393Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Karen Cranston"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S17743"
 }, 
+"^ot:focalCladeOTTTaxonName": "", 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "Tls45067"
 ], 
@@ -77,6 +157,7 @@
 }, 
 "^ot:studyPublicationReference": "Chang E.S., Neuhof M., Rubinstein N., Diamant A., Philippe H., Huchon D., & Cartwright P. 2015. Genomic insights into the evolutionary origin of Myxozoa within Cnidaria. Proceedings of the National Academy of Sciences of the United States of America, .", 
 "^ot:studyYear": 2015, 
+"^ot:tag": [], 
 "^ot:taxonLinkPrefixes": {
 "@ubio": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:", 
 "@uniprot": "http://purl.uniprot.org/taxonomy/"
@@ -110,6 +191,8 @@
 }, 
 "Tl1895110": {
 "^ot:originalLabel": "Urticina eques", 
+"^ot:ottId": 737548, 
+"^ot:ottTaxonName": "Urticina eques", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 362807, 
 "@tb:identifier.taxonVariant": 390644, 
@@ -119,6 +202,8 @@
 }, 
 "Tl1895111": {
 "^ot:originalLabel": "Craspedacusta sowerbyi", 
+"^ot:ottId": 997627, 
+"^ot:ottTaxonName": "Craspedacusta sowerbyi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 7416, 
 "@tb:identifier.taxonVariant": 17965, 
@@ -128,6 +213,8 @@
 }, 
 "Tl1895112": {
 "^ot:originalLabel": "Thelohanellus kitauei", 
+"^ot:ottId": 1020233, 
+"^ot:ottTaxonName": "Thelohanellus kitauei", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 547797, 
 "@tb:identifier.taxonVariant": 726414, 
@@ -137,6 +224,8 @@
 }, 
 "Tl1895113": {
 "^ot:originalLabel": "Mnemiopsis leidyi", 
+"^ot:ottId": 161877, 
+"^ot:ottTaxonName": "Mnemiopsis leidyi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 17922, 
 "@tb:identifier.taxonVariant": 41935, 
@@ -145,8 +234,9 @@
 }
 }, 
 "Tl1895114": {
-"^ot:altLabel": "Sphaeroforma arctica", 
 "^ot:originalLabel": "Sphaeroforma arctica jp610", 
+"^ot:ottId": 380182, 
+"^ot:ottTaxonName": "Sphaeroforma arctica", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 47873, 
 "@tb:identifier.taxonVariant": 112012, 
@@ -156,6 +246,8 @@
 }, 
 "Tl1895115": {
 "^ot:originalLabel": "Stomolophus meleagris", 
+"^ot:ottId": 322240, 
+"^ot:ottTaxonName": "Stomolophus meleagris", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 28065, 
 "@tb:identifier.taxonVariant": 65505, 
@@ -165,6 +257,8 @@
 }, 
 "Tl1895116": {
 "^ot:originalLabel": "Pocillopora damicornis", 
+"^ot:ottId": 176783, 
+"^ot:ottTaxonName": "Pocillopora damicornis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 23019, 
 "@tb:identifier.taxonVariant": 53819, 
@@ -787,7 +881,18 @@
 "Tr88326": {
 "@label": "Bayesian CAT Model", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "Tn13024709", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 77, 
 "^tb:quality.tree": "Unrated", 
