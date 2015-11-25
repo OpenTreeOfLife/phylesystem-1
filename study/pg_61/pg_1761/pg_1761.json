@@ -36,28 +36,107 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2015-11-25T20:00:18.396Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
+}, 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2015-11-25T20:00:18.396Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
 }, 
 "^ot:candidateTreeForSynthesis": [
 "tree6151"
 ], 
-"^ot:curatorName": "Chris Owen", 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Chris Owen", 
+"Jonathan A Rees"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S13550"
 }, 
 "^ot:focalClade": 712383, 
 "^ot:focalCladeOTTTaxonName": "Scleractinia", 
-"^ot:messages": {
-"message": []
-}, 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "otus1761"
 ], 
 "^ot:studyId": "pg_1761", 
+"^ot:studyPublication": {
+"@href": ""
+}, 
 "^ot:studyPublicationReference": "Huang, D., & Roy K. 2013. Anthropogenic extinction threats and future loss of evolutionary history in reef corals. Ecology and Evolution, 3 (5): 1184\u20131193.", 
 "^ot:studyYear": 2013, 
 "^ot:tag": [], 
@@ -3522,9 +3601,8 @@
 "^ot:treebaseOTUId": "Tl1055573"
 }, 
 "otu274623": {
+"^ot:altLabel": "Scolymia australis", 
 "^ot:originalLabel": "Scolymia australis MUS", 
-"^ot:ottId": 3675993, 
-"^ot:ottTaxonName": "Scolymia australis", 
 "^ot:treebaseOTUId": "Tl1055574"
 }, 
 "otu274624": {
@@ -5586,12 +5664,15 @@
 ], 
 "treeById": {
 "tree6151": {
+"@label": "Untitled (tree6151)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "", 
 "^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Strict Consensus Supertree", 
 "^ot:inGroupClade": "node1049963", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node1049962", 
 "^ot:specifiedRoot": "node1049962", 
@@ -12916,7 +12997,8 @@
 "@otu": "otu274075"
 }, 
 "node1050241": {
-"@otu": "otu274540"
+"@otu": "otu274540", 
+"^ot:isTaxonExemplar": true
 }, 
 "node1050242": {
 "@otu": "otu274347"
@@ -12982,7 +13064,8 @@
 "@otu": "otu274304"
 }, 
 "node1050263": {
-"@otu": "otu274341"
+"@otu": "otu274341", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1050264": {
 "@otu": "otu274486"
@@ -13058,10 +13141,12 @@
 }, 
 "node1050288": {}, 
 "node1050289": {
-"@otu": "otu274604"
+"@otu": "otu274604", 
+"^ot:isTaxonExemplar": true
 }, 
 "node1050290": {
-"@otu": "otu274292"
+"@otu": "otu274292", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1050291": {
 "@otu": "otu274463"
@@ -13085,7 +13170,8 @@
 "@otu": "otu274835"
 }, 
 "node1050298": {
-"@otu": "otu274556"
+"@otu": "otu274556", 
+"^ot:isTaxonExemplar": false
 }, 
 "node1050299": {
 "@otu": "otu274031"
