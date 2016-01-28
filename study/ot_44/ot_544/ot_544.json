@@ -55,22 +55,108 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2016-01-28T16:55:10.084Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "Bacteria"
 }, 
-"^ot:curatorName": "Dail Laughinghouse", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2016-01-28T16:55:10.084Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"Tr81028"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Dail Laughinghouse"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S16971"
 }, 
+"^ot:focalCladeOTTTaxonName": "", 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "Tls42191"
 ], 
 "^ot:studyId": "ot_544", 
-"^ot:studyPublicationReference": "Kweon O., Kim S., Blom J., Kim S., Kim B., Baek D., Park S., Sutherland J.B., & Cerniglia C.E. 2015. Comparative functional pan-genome analyses to build connections between genomic dynamics and phenotypic evolution in polycyclic aromatic hydrocarbon metabolism in the genus Mycobacterium. BMC Evolutionary Biology, .", 
+"^ot:studyPublication": {
+"@href": "http://dx.doi.org/10.1186/s12862-015-0302-8"
+}, 
+"^ot:studyPublicationReference": "Ohgew Kweon, Seong-Jae Kim, Jochen Blom, Sung-Kwan Kim, Bong-Soo Kim, Dong-Heon Baek, Su Park, John B Sutherland, Carl E Cerniglia, 2015, 'Comparative functional pan-genome analyses to build connections between genomic dynamics and phenotypic evolution in polycyclic aromatic hydrocarbon metabolism in the genus Mycobacterium', BMC Evolutionary Biology, vol. 15, no. 1, p. 21", 
 "^ot:studyYear": 2015, 
+"^ot:tag": [], 
 "^ot:taxonLinkPrefixes": {
 "@ubio": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:", 
 "@uniprot": "http://purl.uniprot.org/taxonomy/"
@@ -93,8 +179,9 @@
 "^skos:historyNote": "Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlOTUWriter@5796729 $Rev: 1040 $", 
 "otuById": {
 "Tl1731548": {
-"^ot:altLabel": "Mycobacterium tuberculosis", 
 "^ot:originalLabel": "Mycobacterium tuberculosis F11 ", 
+"^ot:ottId": 713998, 
+"^ot:ottTaxonName": "Mycobacterium tuberculosis F11", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 18366, 
 "@tb:identifier.taxonVariant": 42905, 
@@ -104,6 +191,8 @@
 }, 
 "Tl1731549": {
 "^ot:originalLabel": "Mycobacterium bovis BCG Pasteur 1173P2", 
+"^ot:ottId": 57646, 
+"^ot:ottTaxonName": "Mycobacterium bovis BCG str. Pasteur 1173P2", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 357227, 
 "@tb:identifier.taxonVariant": 386916, 
@@ -114,6 +203,8 @@
 }, 
 "Tl1731550": {
 "^ot:originalLabel": "Mycobacterium sp. MCS", 
+"^ot:ottId": 150639, 
+"^ot:ottTaxonName": "Mycobacterium sp. MCS", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 156558, 
 "@tb:identifier.taxonVariant": 437291, 
@@ -123,14 +214,17 @@
 }, 
 "Tl1731551": {
 "^ot:originalLabel": "Mycobacterium bovis BCG Tokyo 172", 
+"^ot:ottId": 626291, 
+"^ot:ottTaxonName": "Mycobacterium bovis BCG str. Tokyo 172", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 493556, 
 "@tb:identifier.taxonVariant": 654177
 }
 }, 
 "Tl1731552": {
-"^ot:altLabel": "Mycobacterium avium", 
 "^ot:originalLabel": "Mycobacterium avium 104", 
+"^ot:ottId": 677345, 
+"^ot:ottTaxonName": "Mycobacterium avium 104", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 49652, 
 "@tb:identifier.taxonVariant": 118031, 
@@ -139,7 +233,7 @@
 }
 }, 
 "Tl1731553": {
-"^ot:altLabel": "Mycobacterium abscessus", 
+"^ot:altLabel": "Mycobacterium abscessus CIP ", 
 "^ot:originalLabel": "Mycobacterium abscessus CIP 104536", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 62158, 
@@ -149,8 +243,9 @@
 }
 }, 
 "Tl1731554": {
-"^ot:altLabel": "Mycobacterium africanum", 
 "^ot:originalLabel": "Mycobacterium africanum GM041182", 
+"^ot:ottId": 479815, 
+"^ot:ottTaxonName": "Mycobacterium africanum GM041182", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 60219, 
 "@tb:identifier.taxonVariant": 133449, 
@@ -159,8 +254,9 @@
 }
 }, 
 "Tl1731555": {
-"^ot:altLabel": "Mycobacterium leprae", 
 "^ot:originalLabel": "Mycobacterium leprae Br4923", 
+"^ot:ottId": 74212, 
+"^ot:ottTaxonName": "Mycobacterium leprae Br4923", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 18365, 
 "@tb:identifier.taxonVariant": 42902, 
@@ -170,14 +266,17 @@
 }, 
 "Tl1731556": {
 "^ot:originalLabel": "Mycobacterium tuberculosis KZN 1435", 
+"^ot:ottId": 878200, 
+"^ot:ottTaxonName": "Mycobacterium tuberculosis KZN 1435", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 406362, 
 "@tb:identifier.taxonVariant": 542228
 }
 }, 
 "Tl1731557": {
-"^ot:altLabel": "Mycobacterium tuberculosis", 
 "^ot:originalLabel": "Mycobacterium tuberculosis CCDC5180", 
+"^ot:ottId": 112502, 
+"^ot:ottTaxonName": "Mycobacterium tuberculosis CCDC5180", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 18366, 
 "@tb:identifier.taxonVariant": 42905, 
@@ -186,8 +285,9 @@
 }
 }, 
 "Tl1731558": {
-"^ot:altLabel": "Mycobacterium gilvum", 
 "^ot:originalLabel": "Mycobacterium gilvum Spyr1", 
+"^ot:ottId": 517916, 
+"^ot:ottTaxonName": "Mycobacterium gilvum Spyr1", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 49689, 
 "@tb:identifier.taxonVariant": 118134, 
@@ -196,8 +296,9 @@
 }
 }, 
 "Tl1731559": {
-"^ot:altLabel": "Mycobacterium ulcerans", 
 "^ot:originalLabel": "Mycobacterium ulcerans Agy99", 
+"^ot:ottId": 675335, 
+"^ot:ottTaxonName": "Mycobacterium ulcerans Agy99", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 49692, 
 "@tb:identifier.taxonVariant": 118143, 
@@ -207,6 +308,8 @@
 }, 
 "Tl1731560": {
 "^ot:originalLabel": "Mycobacterium sp. KMS", 
+"^ot:ottId": 173132, 
+"^ot:ottTaxonName": "Mycobacterium sp. KMS", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 176244, 
 "@tb:identifier.taxonVariant": 442386, 
@@ -215,8 +318,9 @@
 }
 }, 
 "Tl1731561": {
-"^ot:altLabel": "Mycobacterium canettii", 
 "^ot:originalLabel": "Mycobacterium canettii CIPT 140010059", 
+"^ot:ottId": 682464, 
+"^ot:ottTaxonName": "Mycobacterium canettii CIPT 140010059", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 90618, 
 "@tb:identifier.taxonVariant": 169532, 
@@ -225,7 +329,6 @@
 }
 }, 
 "Tl1731562": {
-"^ot:altLabel": "Mycobacterium vanbaalenii", 
 "^ot:originalLabel": "Mycobacterium vanbaalenii PYR-1", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 114971, 
@@ -235,7 +338,7 @@
 }
 }, 
 "Tl1731563": {
-"^ot:altLabel": "Mycobacterium avium paratuberculosis", 
+"^ot:altLabel": "Mycobacterium avium K-10", 
 "^ot:originalLabel": "Mycobacterium avium paratuberculosis K-10", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 235643, 
@@ -246,8 +349,9 @@
 "^skos:prefLabel": "Mycobacterium avium subsp. paratuberculosis K-10"
 }, 
 "Tl1731564": {
-"^ot:altLabel": "Mycobacterium tuberculosis", 
 "^ot:originalLabel": "Mycobacterium tuberculosis H37Rv ", 
+"^ot:ottId": 232551, 
+"^ot:ottTaxonName": "Mycobacterium tuberculosis H37Rv", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 18366, 
 "@tb:identifier.taxonVariant": 42905, 
@@ -256,8 +360,9 @@
 }
 }, 
 "Tl1731565": {
-"^ot:altLabel": "Mycobacterium smegmatis", 
 "^ot:originalLabel": "Mycobacterium smegmatis MC2 155", 
+"^ot:ottId": 351441, 
+"^ot:ottTaxonName": "Mycobacterium smegmatis str. MC2 155", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 49659, 
 "@tb:identifier.taxonVariant": 118067, 
@@ -266,8 +371,9 @@
 }
 }, 
 "Tl1731566": {
-"^ot:altLabel": "Mycobacterium marinum", 
 "^ot:originalLabel": "Mycobacterium marinum M, ATCC BAA-535", 
+"^ot:ottId": 256366, 
+"^ot:ottTaxonName": "Mycobacterium marinum M", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 49667, 
 "@tb:identifier.taxonVariant": 118082, 
@@ -276,11 +382,14 @@
 }
 }, 
 "Tl1731567": {
-"^ot:originalLabel": "Mycobacterium sp. JDM601"
+"^ot:originalLabel": "Mycobacterium sp. JDM601", 
+"^ot:ottId": 964614, 
+"^ot:ottTaxonName": "Mycobacterium sp. JDM601"
 }, 
 "Tl1731568": {
-"^ot:altLabel": "Mycobacterium tuberculosis", 
 "^ot:originalLabel": "Mycobacterium tuberculosis H37Ra", 
+"^ot:ottId": 351989, 
+"^ot:ottTaxonName": "Mycobacterium tuberculosis H37Ra", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 18366, 
 "@tb:identifier.taxonVariant": 42905, 
@@ -289,8 +398,9 @@
 }
 }, 
 "Tl1731569": {
-"^ot:altLabel": "Mycobacterium tuberculosis", 
 "^ot:originalLabel": "Mycobacterium tuberculosis CCDC5079", 
+"^ot:ottId": 246456, 
+"^ot:ottTaxonName": "Mycobacterium tuberculosis CCDC5079", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 18366, 
 "@tb:identifier.taxonVariant": 42905, 
@@ -299,8 +409,9 @@
 }
 }, 
 "Tl1731570": {
-"^ot:altLabel": "Mycobacterium tuberculosis", 
 "^ot:originalLabel": "Mycobacterium tuberculosis CDC1551", 
+"^ot:ottId": 232558, 
+"^ot:ottTaxonName": "Mycobacterium tuberculosis CDC1551", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 18366, 
 "@tb:identifier.taxonVariant": 42905, 
@@ -310,6 +421,8 @@
 }, 
 "Tl1731571": {
 "^ot:originalLabel": "Mycobacterium leprae TN", 
+"^ot:ottId": 795267, 
+"^ot:ottTaxonName": "Mycobacterium leprae TN", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 244225, 
 "@tb:identifier.taxonVariant": 305283, 
@@ -319,6 +432,8 @@
 }, 
 "Tl1731572": {
 "^ot:originalLabel": "Mycobacterium sp. JLS", 
+"^ot:ottId": 941230, 
+"^ot:ottTaxonName": "Mycobacterium sp. JLS", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 156559, 
 "@tb:identifier.taxonVariant": 437292, 
@@ -327,8 +442,9 @@
 }
 }, 
 "Tl1731573": {
-"^ot:altLabel": "Mycobacterium bovis", 
 "^ot:originalLabel": "Mycobacterium bovis AF2122/97", 
+"^ot:ottId": 1065267, 
+"^ot:ottTaxonName": "Mycobacterium bovis AF2122/97", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 49653, 
 "@tb:identifier.taxonVariant": 564806, 
@@ -337,7 +453,6 @@
 }
 }, 
 "Tl1731574": {
-"^ot:altLabel": "Mycobacterium gilvum", 
 "^ot:originalLabel": "Mycobacterium gilvum PYR-GCK", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 49689, 
@@ -361,7 +476,18 @@
 "Tr81028": {
 "@label": "Fig. 2A", 
 "@xsi:type": "nex:FloatTree", 
-"^ot:rootNodeId": "Tn12459274", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:undefined", 
+"^ot:branchLengthTimeUnit": "Myr", 
+"^ot:curatedType": "Maximum likelihood ", 
+"^ot:inGroupClade": "Tn12459274", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:rootNodeId": "Tr81028_ROOT", 
+"^ot:specifiedRoot": "Tr81028_ROOT", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 27, 
 "^tb:quality.tree": "Preferred Tree", 
@@ -388,10 +514,6 @@
 }
 }, 
 "Tn12459274": {
-"edge5561809": {
-"@source": "Tn12459274", 
-"@target": "Tn12459305"
-}, 
 "edge5561811": {
 "@source": "Tn12459274", 
 "@target": "Tn12459273"
@@ -614,6 +736,16 @@
 "@source": "Tn12459317", 
 "@target": "Tn12459288"
 }
+}, 
+"Tr81028_ROOT": {
+"Tr81028_ROOT_EDGE": {
+"@source": "Tr81028_ROOT", 
+"@target": "Tn12459274"
+}, 
+"edge5561809": {
+"@source": "Tr81028_ROOT", 
+"@target": "Tn12459305"
+}
 }
 }, 
 "nodeById": {
@@ -638,9 +770,7 @@
 "Tn12459273": {
 "@label": "100"
 }, 
-"Tn12459274": {
-"@root": true
-}, 
+"Tn12459274": {}, 
 "Tn12459275": {
 "@label": "90"
 }, 
@@ -769,6 +899,9 @@
 }, 
 "Tn12459317": {
 "@label": "100"
+}, 
+"Tr81028_ROOT": {
+"@root": true
 }
 }
 }
