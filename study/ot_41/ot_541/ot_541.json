@@ -52,25 +52,107 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2016-01-28T17:16:17.652Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:curatorName": "Dail Laughinghouse", 
+"substitutions": {
+"substitution": [
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": "$1"
+}, 
+"old": {
+"$": "^(\\S*\\s+\\S*).*"
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2016-01-28T17:16:17.652Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Dail Laughinghouse"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S16436"
 }, 
+"^ot:focalClade": 5342317, 
+"^ot:focalCladeOTTTaxonName": "Trypanosomatidae (inconsistent in Trypanosomatida)", 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "Tls42061"
 ], 
 "^ot:studyId": "ot_541", 
 "^ot:studyPublication": {
-"@href": "10.1111/jeu.12209-4607"
+"@href": "http://dx.doi.org/10.1111/jeu.12209"
 }, 
-"^ot:studyPublicationReference": "Schwarz R.S., Bauchan G.R., Murphy C.A., Ravoet J., De graaf D.C., & Evans J.D. 2015. Characterization of Two Species of Trypanosomatidae from the Honey Bee Apis mellifera: Crithidia mellificae Langridge and McGhee, 1967 and Lotmaria passim n. gen., n. sp. Journal of Eukaryotic Microbiology, .", 
+"^ot:studyPublicationReference": "Ryan S. Schwarz, Gary R. Bauchan, Charles A. Murphy, Jorgen Ravoet, Dirk C. de Graaf, Jay D. Evans, 2015, ' Characterization of Two Species of Trypanosomatidae from the Honey Bee Apis mellifera : Crithidia mellificae Langridge and McGhee, and Lotmaria passim n. gen., n. sp. ', Journal of Eukaryotic Microbiology, vol. 62, no. 5, pp. 567-583", 
 "^ot:studyYear": 2015, 
+"^ot:tag": [], 
 "^ot:taxonLinkPrefixes": {
 "@ubio": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:", 
 "@uniprot": "http://purl.uniprot.org/taxonomy/"
@@ -94,16 +176,19 @@
 "^skos:historyNote": "Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlOTUWriter@3c34512d $Rev: 1040 $", 
 "otuById": {
 "Tl1621308": {
-"^ot:originalLabel": "Leptomonas scantii JN036652.1 JN036654.1"
+"^ot:originalLabel": "Leptomonas scantii JN036652.1 JN036654.1", 
+"^ot:ottId": 92917, 
+"^ot:ottTaxonName": "Leptomonas scantii"
 }, 
 "Tl1621309": {
-"^ot:originalLabel": "Lotmaria passim JAPAN ex. APIS MELLIFERA AB716357.1"
+"^ot:originalLabel": "Lotmaria passim JAPAN ex. APIS MELLIFERA AB716357.1", 
+"^ot:ottId": 5669085, 
+"^ot:ottTaxonName": "Lotmaria passim"
 }, 
 "Tl1621310": {
 "^ot:originalLabel": "Crithidia otongatchiensis KF482061.1 KC205989.1"
 }, 
 "Tl1621311": {
-"^ot:altLabel": "Crithidia brevicula", 
 "^ot:originalLabel": "Crithidia brevicula AF316620.1 AF153045.2", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 627071, 
@@ -115,7 +200,6 @@
 "^ot:originalLabel": "Leptomonas jaderae EU076603.1 EU079123.1"
 }, 
 "Tl1621313": {
-"^ot:altLabel": "Leishmania braziliensis", 
 "^ot:originalLabel": "Leishmania braziliensis XM 001566870.1 JX030135.1", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51388, 
@@ -125,7 +209,6 @@
 }
 }, 
 "Tl1621314": {
-"^ot:altLabel": "Crithidia bombi", 
 "^ot:originalLabel": "Crithidia bombi GU321192.1 GU321194.1", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 255014, 
@@ -145,8 +228,9 @@
 }
 }, 
 "Tl1621317": {
-"^ot:altLabel": "Leptomonas pyrrhocoris", 
 "^ot:originalLabel": "Leptomonas pyrrhocoris JN036651.1 JN036653.1", 
+"^ot:ottId": 695743, 
+"^ot:ottTaxonName": "Leptomonas pyrrhocoris", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 151114, 
 "@tb:identifier.taxonVariant": 226703, 
@@ -155,8 +239,9 @@
 }
 }, 
 "Tl1621318": {
-"^ot:altLabel": "Leptomonas seymouri", 
 "^ot:originalLabel": "Leptomonas seymouri AF047495.1 AF153040.2", 
+"^ot:ottId": 1020023, 
+"^ot:ottTaxonName": "Leptomonas seymouri", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51406, 
 "@tb:identifier.taxonVariant": 121183, 
@@ -165,8 +250,9 @@
 }
 }, 
 "Tl1621319": {
-"^ot:altLabel": "Trypanosoma cruzi", 
 "^ot:originalLabel": "Trypanosoma cruzi XM 807045.1 X53917.1", 
+"^ot:ottId": 779555, 
+"^ot:ottTaxonName": "Trypanosoma cruzi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 30022, 
 "@tb:identifier.taxonVariant": 70153, 
@@ -176,8 +262,9 @@
 "^skos:prefLabel": "Trypanosoma cruzi strain Esmeraldo"
 }, 
 "Tl1621320": {
-"^ot:altLabel": "Leptomonas collosoma", 
 "^ot:originalLabel": "Leptomonas collosoma EU084898.1 AF153038.1", 
+"^ot:ottId": 1020025, 
+"^ot:ottTaxonName": "Leptomonas collosoma", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51408, 
 "@tb:identifier.taxonVariant": 121185, 
@@ -186,8 +273,9 @@
 }
 }, 
 "Tl1621321": {
-"^ot:altLabel": "Leptomonas podlipaevi", 
 "^ot:originalLabel": "Leptomonas podlipaevi EU076604.1 EU079124.1", 
+"^ot:ottId": 213456, 
+"^ot:ottTaxonName": "Leptomonas podlipaevi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 291711, 
 "@tb:identifier.taxonVariant": 342981, 
@@ -196,8 +284,9 @@
 }
 }, 
 "Tl1621322": {
-"^ot:altLabel": "Herpetomonas muscarum", 
 "^ot:originalLabel": "Herpetomonas muscarum DQ092548.1 L18872.1", 
+"^ot:ottId": 222227, 
+"^ot:ottTaxonName": "Herpetomonas muscarum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51433, 
 "@tb:identifier.taxonVariant": 121212, 
@@ -206,8 +295,9 @@
 }
 }, 
 "Tl1621323": {
-"^ot:altLabel": "Leptomonas lactosovorans", 
 "^ot:originalLabel": "Leptomonas lactosovorans EU076602.1 EU079122.1", 
+"^ot:ottId": 26815, 
+"^ot:ottTaxonName": "Leptomonas lactosovorans", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 96676, 
 "@tb:identifier.taxonVariant": 175996, 
@@ -216,20 +306,29 @@
 }
 }, 
 "Tl1621324": {
-"^ot:originalLabel": "Leptomonas tenua KF054086.1 KF054114.1"
+"^ot:originalLabel": "Leptomonas tenua KF054086.1 KF054114.1", 
+"^ot:ottId": 906466, 
+"^ot:ottTaxonName": "Leptomonas tenua"
 }, 
 "Tl1621325": {
-"^ot:originalLabel": "Leptomonas spiculata JF717833.1 JF717838.1"
+"^ot:originalLabel": "Leptomonas spiculata JF717833.1 JF717838.1", 
+"^ot:ottId": 906469, 
+"^ot:ottTaxonName": "Leptomonas spiculata"
 }, 
 "Tl1621328": {
-"^ot:originalLabel": "Crithidia brachyflagelli JF717835.1 JF717840.1"
+"^ot:originalLabel": "Crithidia brachyflagelli JF717835.1 JF717840.1", 
+"^ot:ottId": 906472, 
+"^ot:ottTaxonName": "Crithidia brachyflagelli"
 }, 
 "Tl1621329": {
-"^ot:originalLabel": "Crithidia insperata JF717831.1 JF717836.1"
+"^ot:originalLabel": "Crithidia insperata JF717831.1 JF717836.1", 
+"^ot:ottId": 1039379, 
+"^ot:ottTaxonName": "Crithidia insperata"
 }, 
 "Tl1621330": {
-"^ot:altLabel": "Leishmania major", 
 "^ot:originalLabel": "Leishmania major XM 001684852.1 GQ332361.1", 
+"^ot:ottId": 766613, 
+"^ot:ottTaxonName": "Leishmania major", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 15516, 
 "@tb:identifier.taxonVariant": 36412, 
@@ -239,8 +338,9 @@
 "^skos:prefLabel": "Leishmania major species complex"
 }, 
 "Tl1621331": {
-"^ot:altLabel": "Sergeia podlipaevi", 
 "^ot:originalLabel": "Sergeia podlipaevi DQ394365.1 DQ394362.1", 
+"^ot:ottId": 156671, 
+"^ot:ottTaxonName": "Sergeia podlipaevi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 369135, 
 "@tb:identifier.taxonVariant": 394307, 
@@ -249,8 +349,9 @@
 }
 }, 
 "Tl1621332": {
-"^ot:altLabel": "Leishmania donovani", 
 "^ot:originalLabel": "Leishmania donovani XM 003862962.1 X07773.1", 
+"^ot:ottId": 766598, 
+"^ot:ottTaxonName": "Leishmania donovani", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 63405, 
 "@tb:identifier.taxonVariant": 840500, 
@@ -260,8 +361,9 @@
 "^skos:prefLabel": "Leishmania donovani species complex"
 }, 
 "Tl1621333": {
-"^ot:altLabel": "Leishmania tarentolae", 
 "^ot:originalLabel": "Leishmania tarentolae DQ092549.1 M84225.1", 
+"^ot:ottId": 1020015, 
+"^ot:ottTaxonName": "Leishmania tarentolae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51410, 
 "@tb:identifier.taxonVariant": 121188, 
@@ -270,8 +372,9 @@
 }
 }, 
 "Tl1621334": {
-"^ot:altLabel": "Bodo saltans", 
 "^ot:originalLabel": "Bodo saltans DQ915847.1 AF208889.1", 
+"^ot:ottId": 722598, 
+"^ot:ottTaxonName": "Bodo saltans", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 88058, 
 "@tb:identifier.taxonVariant": 166870, 
@@ -280,14 +383,19 @@
 }
 }, 
 "Tl1621335": {
-"^ot:originalLabel": "Crithidia mellificae BELGIUM ex. OSMIA BICORNIS KM066211"
+"^ot:originalLabel": "Crithidia mellificae BELGIUM ex. OSMIA BICORNIS KM066211", 
+"^ot:ottId": 1047733, 
+"^ot:ottTaxonName": "Crithidia mellificae"
 }, 
 "Tl1621336": {
-"^ot:originalLabel": "Crithidia mellificae ATCC30862 KJ713364 KJ713379"
+"^ot:originalLabel": "Crithidia mellificae ATCC30862 KJ713364 KJ713379", 
+"^ot:ottId": 1047733, 
+"^ot:ottTaxonName": "Crithidia mellificae"
 }, 
 "Tl1621337": {
-"^ot:altLabel": "Trypanosoma rotatorium", 
 "^ot:originalLabel": "Trypanosoma rotatorium AJ620256.1 U39583.1", 
+"^ot:ottId": 441008, 
+"^ot:ottTaxonName": "Trypanosoma rotatorium", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 67014, 
 "@tb:identifier.taxonVariant": 142316, 
@@ -296,8 +404,9 @@
 }
 }, 
 "Tl1621338": {
-"^ot:altLabel": "Herpetomonas mariadeanei", 
 "^ot:originalLabel": "Herpetomonas mariadeanei JQ359741.1 JQ359714.1", 
+"^ot:ottId": 222229, 
+"^ot:ottTaxonName": "Herpetomonas mariadeanei", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51431, 
 "@tb:identifier.taxonVariant": 121210, 
@@ -307,6 +416,8 @@
 }, 
 "Tl1621339": {
 "^ot:originalLabel": "Leptomonas acus DQ910926.1 DQ910923.1", 
+"^ot:ottId": 535665, 
+"^ot:ottTaxonName": "Leptomonas acus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 358702, 
 "@tb:identifier.taxonVariant": 511994
@@ -314,14 +425,17 @@
 }, 
 "Tl1621340": {
 "^ot:originalLabel": "Leptomonas barvae FJ968529.1 FJ968532.1", 
+"^ot:ottId": 4744292, 
+"^ot:ottTaxonName": "Leptomonas sp. VY-2009a", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 534807, 
 "@tb:identifier.taxonVariant": 709516
 }
 }, 
 "Tl1621341": {
-"^ot:altLabel": "Blastocrithidia miridarum", 
 "^ot:originalLabel": "Blastocrithidia miridarum EU084896.1 EU079128.1", 
+"^ot:ottId": 238323, 
+"^ot:ottTaxonName": "Blastocrithidia miridarum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 238751, 
 "@tb:identifier.taxonVariant": 300722, 
@@ -330,11 +444,14 @@
 }
 }, 
 "Tl1621342": {
-"^ot:originalLabel": "Crithidia abscondita EU076606.1 EU079126.1"
+"^ot:originalLabel": "Crithidia abscondita EU076606.1 EU079126.1", 
+"^ot:ottId": 15524, 
+"^ot:ottTaxonName": "Crithidia abscondita"
 }, 
 "Tl1621344": {
-"^ot:altLabel": "Strigomonas oncopelti", 
 "^ot:originalLabel": "Strigomonas oncopelti EU079133.1 AF038025.1", 
+"^ot:ottId": 45716, 
+"^ot:ottTaxonName": "Strigomonas oncopelti", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 626843, 
 "@tb:identifier.taxonVariant": 840148, 
@@ -342,8 +459,9 @@
 }
 }, 
 "Tl1621345": {
-"^ot:altLabel": "Crithidia luciliae", 
 "^ot:originalLabel": "Crithidia luciliae AF053740.1", 
+"^ot:ottId": 896891, 
+"^ot:ottTaxonName": "Crithidia luciliae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 69052, 
 "@tb:identifier.taxonVariant": 144764, 
@@ -352,17 +470,24 @@
 }
 }, 
 "Tl1621347": {
-"^ot:originalLabel": "Leptomonas moramango KF482059.2 KC205990.1"
+"^ot:originalLabel": "Leptomonas moramango KF482059.2 KC205990.1", 
+"^ot:ottId": 5423224, 
+"^ot:ottTaxonName": "Leptomonas moramango"
 }, 
 "Tl1621348": {
-"^ot:originalLabel": "Crithidia confusa JF717832.1 JF717837.1"
+"^ot:originalLabel": "Crithidia confusa JF717832.1 JF717837.1", 
+"^ot:ottId": 906475, 
+"^ot:ottTaxonName": "Crithidia confusa"
 }, 
 "Tl1621349": {
-"^ot:originalLabel": "Crithidia expoeki GU321193.1 GU321195.1"
+"^ot:originalLabel": "Crithidia expoeki GU321193.1 GU321195.1", 
+"^ot:ottId": 1047729, 
+"^ot:ottTaxonName": "Crithidia expoeki"
 }, 
 "Tl1621350": {
-"^ot:altLabel": "Leishmania mexicana", 
 "^ot:originalLabel": "Leishmania mexicana XM 003877392.1 GQ332360.1", 
+"^ot:ottId": 766611, 
+"^ot:ottTaxonName": "Leishmania mexicana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51393, 
 "@tb:identifier.taxonVariant": 121167, 
@@ -372,6 +497,8 @@
 }, 
 "Tl1621351": {
 "^ot:originalLabel": "Leptomonas bifurcata DQ910928.1 DQ910925.1", 
+"^ot:ottId": 760052, 
+"^ot:ottTaxonName": "Leptomonas bifurcata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 397291, 
 "@tb:identifier.taxonVariant": 535490
@@ -379,17 +506,22 @@
 }, 
 "Tl1621352": {
 "^ot:originalLabel": "Leptomonas tarcoles EF546787.1 EF546786.1", 
+"^ot:ottId": 696876, 
+"^ot:ottTaxonName": "Leptomonas tarcoles", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 392072, 
 "@tb:identifier.taxonVariant": 784053
 }
 }, 
 "Tl1621353": {
-"^ot:originalLabel": "Crithidia permixta EU076607.1 EU079127.1"
+"^ot:originalLabel": "Crithidia permixta EU076607.1 EU079127.1", 
+"^ot:ottId": 15532, 
+"^ot:ottTaxonName": "Crithidia permixta"
 }, 
 "Tl1621354": {
-"^ot:altLabel": "Crithidia fasciculata", 
 "^ot:originalLabel": "Crithidia fasciculata AF047493.1 Y00055.1", 
+"^ot:ottId": 192253, 
+"^ot:ottTaxonName": "Crithidia fasciculata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51386, 
 "@tb:identifier.taxonVariant": 121155, 
@@ -398,8 +530,9 @@
 }
 }, 
 "Tl1621356": {
-"^ot:altLabel": "Phytomonas serpens", 
 "^ot:originalLabel": "Phytomonas serpens HQ685123.1 U39577.1", 
+"^ot:ottId": 796507, 
+"^ot:ottTaxonName": "Phytomonas serpens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51425, 
 "@tb:identifier.taxonVariant": 121203, 
@@ -408,8 +541,9 @@
 }
 }, 
 "Tl1621357": {
-"^ot:altLabel": "Leishmania infantum", 
 "^ot:originalLabel": "Leishmania infantum XM 001467109.1 GQ332359.1", 
+"^ot:ottId": 243214, 
+"^ot:ottTaxonName": "Leishmania infantum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 622848, 
 "@tb:identifier.taxonVariant": 840501, 
@@ -419,11 +553,14 @@
 "^skos:prefLabel": "\"/core/alerts/alerts.js\",\n      function ("
 }, 
 "Tl1621358": {
-"^ot:originalLabel": "Strigomonas culicis EU079137.1 U05679.1"
+"^ot:originalLabel": "Strigomonas culicis EU079137.1 U05679.1", 
+"^ot:ottId": 202773, 
+"^ot:ottTaxonName": "Strigomonas culicis"
 }, 
 "Tl1621359": {
-"^ot:altLabel": "Leptomonas costaricensis", 
 "^ot:originalLabel": "Leptomonas costaricensis DQ383650.1 DQ383648.1", 
+"^ot:ottId": 790969, 
+"^ot:ottTaxonName": "Leptomonas costaricensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 325115, 
 "@tb:identifier.taxonVariant": 367070, 
@@ -432,8 +569,9 @@
 }
 }, 
 "Tl1621360": {
-"^ot:altLabel": "Herpetomonas pessoai", 
 "^ot:originalLabel": "Herpetomonas pessoai AF047494.1 U01016.1", 
+"^ot:ottId": 222230, 
+"^ot:ottTaxonName": "Herpetomonas pessoai", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51430, 
 "@tb:identifier.taxonVariant": 121208, 
@@ -442,11 +580,14 @@
 }
 }, 
 "Tl1621366": {
-"^ot:originalLabel": "Crithidia mellificae 30862 KJ684966"
+"^ot:originalLabel": "Crithidia mellificae 30862 KJ684966", 
+"^ot:ottId": 1047733, 
+"^ot:ottTaxonName": "Crithidia mellificae"
 }, 
 "Tl1621367": {
-"^ot:altLabel": "Leishmania equatorensis", 
 "^ot:originalLabel": "Leishmania equatorensis AB434686.1", 
+"^ot:ottId": 533554, 
+"^ot:ottTaxonName": "Leishmania equatorensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 192146, 
 "@tb:identifier.taxonVariant": 263690, 
@@ -455,20 +596,29 @@
 }
 }, 
 "Tl1621371": {
-"^ot:originalLabel": "Crithidia mellificae 30862 KJ684968"
+"^ot:originalLabel": "Crithidia mellificae 30862 KJ684968", 
+"^ot:ottId": 1047733, 
+"^ot:ottTaxonName": "Crithidia mellificae"
 }, 
 "Tl1621372": {
-"^ot:originalLabel": "Crithidia mellificae 30254 KJ684954"
+"^ot:originalLabel": "Crithidia mellificae 30254 KJ684954", 
+"^ot:ottId": 1047733, 
+"^ot:ottTaxonName": "Crithidia mellificae"
 }, 
 "Tl1621373": {
-"^ot:originalLabel": "Crithidia mellificae 30254 KJ684951"
+"^ot:originalLabel": "Crithidia mellificae 30254 KJ684951", 
+"^ot:ottId": 1047733, 
+"^ot:ottTaxonName": "Crithidia mellificae"
 }, 
 "Tl1621376": {
-"^ot:originalLabel": "Crithidia expoeki GU321190.1"
+"^ot:originalLabel": "Crithidia expoeki GU321190.1", 
+"^ot:ottId": 1047729, 
+"^ot:ottTaxonName": "Crithidia expoeki"
 }, 
 "Tl1621377": {
-"^ot:altLabel": "Trypanosoma cruzi", 
 "^ot:originalLabel": "Trypanosoma cruzi DQ343646.1", 
+"^ot:ottId": 779555, 
+"^ot:ottTaxonName": "Trypanosoma cruzi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 625590, 
 "@tb:identifier.taxonVariant": 837931, 
@@ -476,14 +626,19 @@
 }
 }, 
 "Tl1621379": {
-"^ot:originalLabel": "Crithidia mellificae 30254 KJ684953"
+"^ot:originalLabel": "Crithidia mellificae 30254 KJ684953", 
+"^ot:ottId": 1047733, 
+"^ot:ottTaxonName": "Crithidia mellificae"
 }, 
 "Tl1621382": {
-"^ot:originalLabel": "Crithidia mellificae 30862 KJ684969"
+"^ot:originalLabel": "Crithidia mellificae 30862 KJ684969", 
+"^ot:ottId": 1047733, 
+"^ot:ottTaxonName": "Crithidia mellificae"
 }, 
 "Tl1621383": {
-"^ot:altLabel": "Crithidia bombi", 
 "^ot:originalLabel": "Crithidia bombi GU321188.1", 
+"^ot:ottId": 713799, 
+"^ot:ottTaxonName": "Crithidia bombi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 255014, 
 "@tb:identifier.taxonVariant": 313730, 
@@ -492,8 +647,9 @@
 }
 }, 
 "Tl1621386": {
-"^ot:altLabel": "Endotrypanum schaudinni", 
 "^ot:originalLabel": "Endotrypanum schaudinni AB434689.1", 
+"^ot:ottId": 796503, 
+"^ot:ottTaxonName": "Endotrypanum schaudinni", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51422, 
 "@tb:identifier.taxonVariant": 121200, 
@@ -502,11 +658,14 @@
 }
 }, 
 "Tl1621387": {
-"^ot:originalLabel": "Crithidia mellificae 30862 KJ684965"
+"^ot:originalLabel": "Crithidia mellificae 30862 KJ684965", 
+"^ot:ottId": 1047733, 
+"^ot:ottTaxonName": "Crithidia mellificae"
 }, 
 "Tl1621389": {
-"^ot:altLabel": "Crithidia bombi", 
 "^ot:originalLabel": "Crithidia bombi GU321187.1", 
+"^ot:ottId": 713799, 
+"^ot:ottTaxonName": "Crithidia bombi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 255014, 
 "@tb:identifier.taxonVariant": 313730, 
@@ -515,11 +674,14 @@
 }
 }, 
 "Tl1621391": {
-"^ot:originalLabel": "Crithidia mellificae BELGIUM ex. OSMIA BICORNIS KM066251"
+"^ot:originalLabel": "Crithidia mellificae BELGIUM ex. OSMIA BICORNIS KM066251", 
+"^ot:ottId": 1047733, 
+"^ot:ottTaxonName": "Crithidia mellificae"
 }, 
 "Tl1621392": {
-"^ot:altLabel": "Leishmania mexicana", 
 "^ot:originalLabel": "Leishmania mexicana M92828.1", 
+"^ot:ottId": 766611, 
+"^ot:ottTaxonName": "Leishmania mexicana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51393, 
 "@tb:identifier.taxonVariant": 121167, 
@@ -528,14 +690,19 @@
 }
 }, 
 "Tl1621394": {
-"^ot:originalLabel": "Crithidia expoeki GU321189.1"
+"^ot:originalLabel": "Crithidia expoeki GU321189.1", 
+"^ot:ottId": 1047729, 
+"^ot:ottTaxonName": "Crithidia expoeki"
 }, 
 "Tl1621396": {
-"^ot:originalLabel": "Crithidia mellificae 30862 KJ684967"
+"^ot:originalLabel": "Crithidia mellificae 30862 KJ684967", 
+"^ot:ottId": 1047733, 
+"^ot:ottTaxonName": "Crithidia mellificae"
 }, 
 "Tl1621397": {
-"^ot:altLabel": "Trypanosoma brucei", 
 "^ot:originalLabel": "Trypanosoma brucei M17998.1", 
+"^ot:ottId": 494245, 
+"^ot:ottTaxonName": "Trypanosoma brucei", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 30021, 
 "@tb:identifier.taxonVariant": 70152, 
@@ -544,11 +711,14 @@
 }
 }, 
 "Tl1621401": {
-"^ot:originalLabel": "Crithidia expoeki GU321191.1"
+"^ot:originalLabel": "Crithidia expoeki GU321191.1", 
+"^ot:ottId": 1047729, 
+"^ot:ottTaxonName": "Crithidia expoeki"
 }, 
 "Tl1621402": {
-"^ot:altLabel": "Leishmania braziliensis", 
 "^ot:originalLabel": "Leishmania braziliensis EF579900.1", 
+"^ot:ottId": 766601, 
+"^ot:ottTaxonName": "Leishmania braziliensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51388, 
 "@tb:identifier.taxonVariant": 121159, 
@@ -557,94 +727,154 @@
 }
 }, 
 "Tl1621405": {
-"^ot:originalLabel": "Crithidia mellificae 30254 KJ684952"
+"^ot:originalLabel": "Crithidia mellificae 30254 KJ684952", 
+"^ot:ottId": 1047733, 
+"^ot:ottTaxonName": "Crithidia mellificae"
 }, 
 "Tl1725043": {
-"^ot:originalLabel": "Lotmaria passim SF KJ684958"
+"^ot:originalLabel": "Lotmaria passim SF KJ684958", 
+"^ot:ottId": 5669085, 
+"^ot:ottTaxonName": "Lotmaria passim"
 }, 
 "Tl1725044": {
-"^ot:originalLabel": "Lotmaria passim SF KJ684956"
+"^ot:originalLabel": "Lotmaria passim SF KJ684956", 
+"^ot:ottId": 5669085, 
+"^ot:ottTaxonName": "Lotmaria passim"
 }, 
 "Tl1725045": {
-"^ot:originalLabel": "Lotmaria passim BELGIUM ex. APIS MELLIFERA KM066249"
+"^ot:originalLabel": "Lotmaria passim BELGIUM ex. APIS MELLIFERA KM066249", 
+"^ot:ottId": 5669085, 
+"^ot:ottTaxonName": "Lotmaria passim"
 }, 
 "Tl1725046": {
-"^ot:originalLabel": "Lotmaria passim BELGIUM ex. APIS MELLIFERA KM066250"
+"^ot:originalLabel": "Lotmaria passim BELGIUM ex. APIS MELLIFERA KM066250", 
+"^ot:ottId": 5669085, 
+"^ot:ottTaxonName": "Lotmaria passim"
 }, 
 "Tl1725047": {
-"^ot:originalLabel": "Lotmaria passim BELGIUM ex. APIS MELLIFERA KM066247"
+"^ot:originalLabel": "Lotmaria passim BELGIUM ex. APIS MELLIFERA KM066247", 
+"^ot:ottId": 5669085, 
+"^ot:ottTaxonName": "Lotmaria passim"
 }, 
 "Tl1725048": {
-"^ot:originalLabel": "Lotmaria passim BELGIUM ex. APIS MELLIFERA KM066245"
+"^ot:originalLabel": "Lotmaria passim BELGIUM ex. APIS MELLIFERA KM066245", 
+"^ot:ottId": 5669085, 
+"^ot:ottTaxonName": "Lotmaria passim"
 }, 
 "Tl1725049": {
-"^ot:originalLabel": "Lotmaria passim BRL KJ684960"
+"^ot:originalLabel": "Lotmaria passim BRL KJ684960", 
+"^ot:ottId": 5669085, 
+"^ot:ottTaxonName": "Lotmaria passim"
 }, 
 "Tl1725050": {
-"^ot:originalLabel": "Lotmaria passim BELGIUM ex. APIS MELLIFERA KM066246"
+"^ot:originalLabel": "Lotmaria passim BELGIUM ex. APIS MELLIFERA KM066246", 
+"^ot:ottId": 5669085, 
+"^ot:ottTaxonName": "Lotmaria passim"
 }, 
 "Tl1725051": {
-"^ot:originalLabel": "Lotmaria passim BELGIUM ex. APIS MELLIFERA KM066242"
+"^ot:originalLabel": "Lotmaria passim BELGIUM ex. APIS MELLIFERA KM066242", 
+"^ot:ottId": 5669085, 
+"^ot:ottTaxonName": "Lotmaria passim"
 }, 
 "Tl1725052": {
-"^ot:originalLabel": "Lotmaria passim BRL KJ684962"
+"^ot:originalLabel": "Lotmaria passim BRL KJ684962", 
+"^ot:ottId": 5669085, 
+"^ot:ottTaxonName": "Lotmaria passim"
 }, 
 "Tl1725053": {
-"^ot:originalLabel": "Lotmaria passim BELGIUM ex. APIS MELLIFERA KM066240"
+"^ot:originalLabel": "Lotmaria passim BELGIUM ex. APIS MELLIFERA KM066240", 
+"^ot:ottId": 5669085, 
+"^ot:ottTaxonName": "Lotmaria passim"
 }, 
 "Tl1725054": {
-"^ot:originalLabel": "Lotmaria passim BRL KJ684963"
+"^ot:originalLabel": "Lotmaria passim BRL KJ684963", 
+"^ot:ottId": 5669085, 
+"^ot:ottTaxonName": "Lotmaria passim"
 }, 
 "Tl1725055": {
-"^ot:originalLabel": "Lotmaria passim SF KJ684959"
+"^ot:originalLabel": "Lotmaria passim SF KJ684959", 
+"^ot:ottId": 5669085, 
+"^ot:ottTaxonName": "Lotmaria passim"
 }, 
 "Tl1725056": {
-"^ot:originalLabel": "Lotmaria passim JAPAN ex. APIS MELLIFERA HAPB AB716359.1"
+"^ot:originalLabel": "Lotmaria passim JAPAN ex. APIS MELLIFERA HAPB AB716359.1", 
+"^ot:ottId": 5669085, 
+"^ot:ottTaxonName": "Lotmaria passim"
 }, 
 "Tl1725057": {
-"^ot:originalLabel": "Lotmaria passim SF KJ684957"
+"^ot:originalLabel": "Lotmaria passim SF KJ684957", 
+"^ot:ottId": 5669085, 
+"^ot:ottTaxonName": "Lotmaria passim"
 }, 
 "Tl1725058": {
-"^ot:originalLabel": "Lotmaria passim BRL KJ684961"
+"^ot:originalLabel": "Lotmaria passim BRL KJ684961", 
+"^ot:ottId": 5669085, 
+"^ot:ottTaxonName": "Lotmaria passim"
 }, 
 "Tl1725059": {
-"^ot:originalLabel": "Lotmaria passim BELGIUM ex. APIS MELLIFERA KM066248"
+"^ot:originalLabel": "Lotmaria passim BELGIUM ex. APIS MELLIFERA KM066248", 
+"^ot:ottId": 5669085, 
+"^ot:ottTaxonName": "Lotmaria passim"
 }, 
 "Tl1725060": {
-"^ot:originalLabel": "Lotmaria passim BELGIUM ex. APIS MELLIFERA KM066243"
+"^ot:originalLabel": "Lotmaria passim BELGIUM ex. APIS MELLIFERA KM066243", 
+"^ot:ottId": 5669085, 
+"^ot:ottTaxonName": "Lotmaria passim"
 }, 
 "Tl1725061": {
-"^ot:originalLabel": "Lotmaria passim CHINA ex. APIS CERANA HAPC AB744129.1"
+"^ot:originalLabel": "Lotmaria passim CHINA ex. APIS CERANA HAPC AB744129.1", 
+"^ot:ottId": 5669085, 
+"^ot:ottTaxonName": "Lotmaria passim"
 }, 
 "Tl1725062": {
-"^ot:originalLabel": "Lotmaria passim BELGIUM ex. APIS MELLIFERA KM066241"
+"^ot:originalLabel": "Lotmaria passim BELGIUM ex. APIS MELLIFERA KM066241", 
+"^ot:ottId": 5669085, 
+"^ot:ottTaxonName": "Lotmaria passim"
 }, 
 "Tl1725063": {
-"^ot:originalLabel": "Lotmaria passim BELGIUM ex. APIS MELLIFERA KM066244"
+"^ot:originalLabel": "Lotmaria passim BELGIUM ex. APIS MELLIFERA KM066244", 
+"^ot:ottId": 5669085, 
+"^ot:ottTaxonName": "Lotmaria passim"
 }, 
 "Tl1725064": {
-"^ot:originalLabel": "Lotmaria passim SF KJ684955"
+"^ot:originalLabel": "Lotmaria passim SF KJ684955", 
+"^ot:ottId": 5669085, 
+"^ot:ottTaxonName": "Lotmaria passim"
 }, 
 "Tl1725065": {
-"^ot:originalLabel": "Lotmaria passim JAPAN ex. APIS MELLIFERA HAPA AB716358.1"
+"^ot:originalLabel": "Lotmaria passim JAPAN ex. APIS MELLIFERA HAPA AB716358.1", 
+"^ot:ottId": 5669085, 
+"^ot:ottTaxonName": "Lotmaria passim"
 }, 
 "Tl1725066": {
-"^ot:originalLabel": "Lotmaria passim BRL KJ684964"
+"^ot:originalLabel": "Lotmaria passim BRL KJ684964", 
+"^ot:ottId": 5669085, 
+"^ot:ottTaxonName": "Lotmaria passim"
 }, 
 "Tl1725067": {
-"^ot:originalLabel": "Lotmaria passim USA ex. APIS MELLIFERA JF423199.1"
+"^ot:originalLabel": "Lotmaria passim USA ex. APIS MELLIFERA JF423199.1", 
+"^ot:ottId": 5669085, 
+"^ot:ottTaxonName": "Lotmaria passim"
 }, 
 "Tl1725068": {
-"^ot:originalLabel": "Lotmaria passim BELGIUM ex. APIS MELLIFERA KM066212 KM066227"
+"^ot:originalLabel": "Lotmaria passim BELGIUM ex. APIS MELLIFERA KM066212 KM066227", 
+"^ot:ottId": 5669085, 
+"^ot:ottTaxonName": "Lotmaria passim"
 }, 
 "Tl1725069": {
-"^ot:originalLabel": "Lotmaria passim BRL KJ713353 KJ713377"
+"^ot:originalLabel": "Lotmaria passim BRL KJ713353 KJ713377", 
+"^ot:ottId": 5669085, 
+"^ot:ottTaxonName": "Lotmaria passim"
 }, 
 "Tl1725070": {
-"^ot:originalLabel": "Lotmaria passim CHINA ex. APIS CERANA AB745489.1"
+"^ot:originalLabel": "Lotmaria passim CHINA ex. APIS CERANA AB745489.1", 
+"^ot:ottId": 5669085, 
+"^ot:ottTaxonName": "Lotmaria passim"
 }, 
 "Tl1725071": {
-"^ot:originalLabel": "Lotmaria passim SF KJ713352 KJ713371"
+"^ot:originalLabel": "Lotmaria passim SF KJ713352 KJ713371", 
+"^ot:ottId": 5669085, 
+"^ot:ottTaxonName": "Lotmaria passim"
 }
 }
 }
@@ -664,7 +894,18 @@
 "Tr80846": {
 "@label": "Cytb MLT", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "Tn12444659", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:kind.tree": "Gene Tree", 
 "^tb:ntax.tree": 45, 
 "^tb:quality.tree": "Preferred Tree", 
@@ -672,24 +913,24 @@
 "edgeBySourceId": {
 "Tn12444652": {
 "edge4983337": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn12444652", 
 "@target": "Tn12444737"
 }, 
 "edge4983339": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn12444652", 
 "@target": "Tn12444681"
 }
 }, 
 "Tn12444656": {
 "edge4983257": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn12444656", 
 "@target": "Tn12444667"
 }, 
 "edge4983263": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn12444656", 
 "@target": "Tn12444701"
 }
@@ -701,7 +942,7 @@
 "@target": "Tn12444715"
 }, 
 "edge4983273": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn12444657", 
 "@target": "Tn12444719"
 }
@@ -749,7 +990,7 @@
 "@target": "Tn12444705"
 }, 
 "edge4983351": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn12444665", 
 "@target": "Tn12444709"
 }
@@ -768,7 +1009,7 @@
 }, 
 "Tn12444667": {
 "edge4983259": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn12444667", 
 "@target": "Tn12444670"
 }, 
@@ -785,7 +1026,7 @@
 "@target": "Tn12444654"
 }, 
 "edge4983323": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn12444668", 
 "@target": "Tn12444669"
 }
@@ -797,7 +1038,7 @@
 "@target": "Tn12444733"
 }, 
 "edge4983327": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn12444669", 
 "@target": "Tn12444672"
 }
@@ -809,19 +1050,19 @@
 "@target": "Tn12444674"
 }, 
 "edge4983331": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn12444672", 
 "@target": "Tn12444695"
 }
 }, 
 "Tn12444673": {
 "edge4983223": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn12444673", 
 "@target": "Tn12444694"
 }, 
 "edge4983225": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn12444673", 
 "@target": "Tn12444686"
 }
@@ -845,7 +1086,7 @@
 "@target": "Tn12444692"
 }, 
 "edge4983347": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn12444678", 
 "@target": "Tn12444665"
 }
@@ -864,12 +1105,12 @@
 }, 
 "Tn12444680": {
 "edge4983237": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn12444680", 
 "@target": "Tn12444698"
 }, 
 "edge4983239": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn12444680", 
 "@target": "Tn12444723"
 }
@@ -881,19 +1122,19 @@
 "@target": "Tn12444712"
 }, 
 "edge4983343": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn12444681", 
 "@target": "Tn12444678"
 }
 }, 
 "Tn12444682": {
 "edge4983377": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn12444682", 
 "@target": "Tn12444690"
 }, 
 "edge4983379": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn12444682", 
 "@target": "Tn12444718"
 }
@@ -924,12 +1165,12 @@
 }, 
 "Tn12444691": {
 "edge4983299": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn12444691", 
 "@target": "Tn12444721"
 }, 
 "edge4983301": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn12444691", 
 "@target": "Tn12444727"
 }
@@ -941,7 +1182,7 @@
 "@target": "Tn12444716"
 }, 
 "edge4983375": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn12444693", 
 "@target": "Tn12444682"
 }
@@ -953,7 +1194,7 @@
 "@target": "Tn12444729"
 }, 
 "edge4983335": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn12444695", 
 "@target": "Tn12444652"
 }
@@ -977,7 +1218,7 @@
 "@target": "Tn12444663"
 }, 
 "edge4983267": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn12444701", 
 "@target": "Tn12444689"
 }
@@ -989,7 +1230,7 @@
 "@target": "Tn12444700"
 }, 
 "edge4983319": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn12444703", 
 "@target": "Tn12444668"
 }
@@ -1001,7 +1242,7 @@
 "@target": "Tn12444707"
 }, 
 "edge4983297": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn12444704", 
 "@target": "Tn12444691"
 }
@@ -1013,7 +1254,7 @@
 "@target": "Tn12444662"
 }, 
 "edge4983355": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn12444709", 
 "@target": "Tn12444734"
 }
@@ -1025,7 +1266,7 @@
 "@target": "Tn12444702"
 }, 
 "edge4983255": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn12444710", 
 "@target": "Tn12444656"
 }
@@ -1037,7 +1278,7 @@
 "@target": "Tn12444660"
 }, 
 "edge4983309": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn12444711", 
 "@target": "Tn12444736"
 }
@@ -1061,7 +1302,7 @@
 "@target": "Tn12444696"
 }, 
 "edge4983371": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn12444717", 
 "@target": "Tn12444693"
 }
@@ -1073,7 +1314,7 @@
 "@target": "Tn12444685"
 }, 
 "edge4983277": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn12444719", 
 "@target": "Tn12444726"
 }
@@ -1085,7 +1326,7 @@
 "@target": "Tn12444728"
 }, 
 "edge4983367": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn12444720", 
 "@target": "Tn12444717"
 }
@@ -1116,24 +1357,24 @@
 }, 
 "Tn12444726": {
 "edge4983279": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn12444726", 
 "@target": "Tn12444671"
 }, 
 "edge4983281": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn12444726", 
 "@target": "Tn12444664"
 }
 }, 
 "Tn12444727": {
 "edge4983303": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn12444727", 
 "@target": "Tn12444687"
 }, 
 "edge4983305": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn12444727", 
 "@target": "Tn12444711"
 }
@@ -1145,7 +1386,7 @@
 "@target": "Tn12444677"
 }, 
 "edge4983363": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn12444732", 
 "@target": "Tn12444720"
 }
@@ -1157,7 +1398,7 @@
 "@target": "Tn12444731"
 }, 
 "edge4983359": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn12444734", 
 "@target": "Tn12444732"
 }
@@ -1176,7 +1417,7 @@
 }, 
 "Tn12444739": {
 "edge4983251": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn12444739", 
 "@target": "Tn12444710"
 }, 
@@ -1386,7 +1627,18 @@
 "Tr80847": {
 "@label": "Cytb NJT", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "Tn12444811", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:kind.tree": "Gene Tree", 
 "^tb:ntax.tree": 45, 
 "^tb:quality.tree": "Preferred Tree", 
@@ -1411,7 +1663,7 @@
 "@target": "Tn12444751"
 }, 
 "edge4983123": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn12444742", 
 "@target": "Tn12444749"
 }
@@ -1574,12 +1826,12 @@
 }, 
 "Tn12444763": {
 "edge4983037": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn12444763", 
 "@target": "Tn12444808"
 }, 
 "edge4983039": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn12444763", 
 "@target": "Tn12444825"
 }
@@ -1862,12 +2114,12 @@
 }, 
 "Tn12444813": {
 "edge4983051": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn12444813", 
 "@target": "Tn12444783"
 }, 
 "edge4983053": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn12444813", 
 "@target": "Tn12444790"
 }
@@ -2108,7 +2360,18 @@
 "Tr80848": {
 "@label": "gGAPDH+SSU MLT", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "Tn12444928", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 53, 
 "^tb:quality.tree": "Preferred Tree", 
@@ -2236,12 +2499,12 @@
 }, 
 "Tn12444848": {
 "edge4982971": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn12444848", 
 "@target": "Tn12444910"
 }, 
 "edge4982973": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn12444848", 
 "@target": "Tn12444871"
 }
@@ -2313,7 +2576,7 @@
 "@target": "Tn12444927"
 }, 
 "edge4982969": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn12444861", 
 "@target": "Tn12444848"
 }
@@ -2332,12 +2595,12 @@
 }, 
 "Tn12444864": {
 "edge4982959": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn12444864", 
 "@target": "Tn12444922"
 }, 
 "edge4982961": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn12444864", 
 "@target": "Tn12444891"
 }
@@ -2397,7 +2660,7 @@
 "@target": "Tn12444893"
 }, 
 "edge4982977": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn12444871", 
 "@target": "Tn12444903"
 }
@@ -2517,7 +2780,7 @@
 "@target": "Tn12444888"
 }, 
 "edge4982965": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn12444891", 
 "@target": "Tn12444861"
 }
@@ -2548,7 +2811,7 @@
 }, 
 "Tn12444899": {
 "edge4982951": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn12444899", 
 "@target": "Tn12444912"
 }, 
@@ -2565,7 +2828,7 @@
 "@target": "Tn12444864"
 }, 
 "edge4982979": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn12444900", 
 "@target": "Tn12444863"
 }
@@ -2958,7 +3221,18 @@
 "Tr80849": {
 "@label": "gGAPDH+SSU NJT", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:undefined", 
+"^ot:branchLengthTimeUnit": "Myr", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "Tn12444990", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 53, 
 "^tb:quality.tree": "Preferred Tree", 
