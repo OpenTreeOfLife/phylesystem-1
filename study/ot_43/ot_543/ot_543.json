@@ -56,22 +56,108 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2016-01-28T14:59:40.514Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "Bacteria"
 }, 
-"^ot:curatorName": "Dail Laughinghouse", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}, 
+"useFuzzyMatching": true
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2016-01-28T14:59:40.514Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"Tr86154"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Dail Laughinghouse"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S17238"
 }, 
+"^ot:focalCladeOTTTaxonName": "", 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "Tls43499"
 ], 
 "^ot:studyId": "ot_543", 
-"^ot:studyPublicationReference": "Campillo brocal J.C., Chacon verdu M.D., Lucas elio P., & Sanchez amat A. 2015. Distribution in microbial genomes of genes similar to lodA and goxA which encode a novel family of quinoproteins with amino acid oxidase activity. BMC Genomics, .", 
+"^ot:studyPublication": {
+"@href": "http://dx.doi.org/10.1186/s12864-015-1455-y"
+}, 
+"^ot:studyPublicationReference": "Jonatan C Campillo-Brocal, Mar\u00eda Dolores Chac\u00f3n-Verd\u00fa, Patricia Lucas-El\u00edo, Antonio S\u00e1nchez-Amat, 2015, 'Distribution in microbial genomes of genes similar to lodA and goxA which encode a novel family of quinoproteins with amino acid oxidase activity', BMC Genomics, vol. 16, no. 1", 
 "^ot:studyYear": 2015, 
+"^ot:tag": [], 
 "^ot:taxonLinkPrefixes": {
 "@ubio": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:", 
 "@uniprot": "http://purl.uniprot.org/taxonomy/"
@@ -94,8 +180,9 @@
 "^skos:historyNote": "Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlOTUWriter@20a10846 $Rev: 1040 $", 
 "otuById": {
 "Tl1784328": {
-"^ot:altLabel": "Delftia acidovorans", 
 "^ot:originalLabel": "Delftia acidovorans SPH.1 641298631 Daci 3528", 
+"^ot:ottId": 163788, 
+"^ot:ottTaxonName": "Delftia acidovorans SPH-1", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 92488, 
 "@tb:identifier.taxonVariant": 171373, 
@@ -104,8 +191,9 @@
 }
 }, 
 "Tl1784329": {
-"^ot:altLabel": "Chitinimonas koreensis", 
 "^ot:originalLabel": "Chitinimonas koreensis DSM 17726 2524916787 F559DRAFT 00293", 
+"^ot:ottId": 423181, 
+"^ot:ottTaxonName": "Chitinimonas koreensis DSM 17726", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 311682, 
 "@tb:identifier.taxonVariant": 358128, 
@@ -114,11 +202,14 @@
 }
 }, 
 "Tl1784330": {
-"^ot:originalLabel": "Rudanella lutea DSM 19387 2517151029 RudluDRAFT 3652"
+"^ot:originalLabel": "Rudanella lutea DSM 19387 2517151029 RudluDRAFT 3652", 
+"^ot:ottId": 416656, 
+"^ot:ottTaxonName": "Rudanella lutea DSM 19387"
 }, 
 "Tl1784331": {
-"^ot:altLabel": "Nitrobacter hamburgensis", 
 "^ot:originalLabel": "Nitrobacter hamburgensis X14 637969517 Nham 1019", 
+"^ot:ottId": 301225, 
+"^ot:ottTaxonName": "Nitrobacter hamburgensis X14", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 49034, 
 "@tb:identifier.taxonVariant": 116355, 
@@ -127,8 +218,9 @@
 }
 }, 
 "Tl1784332": {
-"^ot:altLabel": "Bradyrhizobium elkanii", 
 "^ot:originalLabel": "Bradyrhizobium elkanii WSM2783 2513671317 YY7DRAFT 00616", 
+"^ot:ottId": 416222, 
+"^ot:ottTaxonName": "Bradyrhizobium elkanii WSM2783", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 57776, 
 "@tb:identifier.taxonVariant": 130200, 
@@ -137,11 +229,14 @@
 }
 }, 
 "Tl1784333": {
-"^ot:originalLabel": "Fodinicurvata sediminis DSM 21159 2523907283 G502DRAFT 3288"
+"^ot:originalLabel": "Fodinicurvata sediminis DSM 21159 2523907283 G502DRAFT 3288", 
+"^ot:ottId": 821805, 
+"^ot:ottTaxonName": "Fodinicurvata sediminis DSM 21159"
 }, 
 "Tl1784334": {
-"^ot:altLabel": "Acinetobacter tjernbergiae", 
 "^ot:originalLabel": "Acinetobacter tjernbergiae DSM 14971 2518262899 C502DRAFT 01575", 
+"^ot:ottId": 225434, 
+"^ot:ottTaxonName": "Acinetobacter tjernbergiae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 186750, 
 "@tb:identifier.taxonVariant": 259054, 
@@ -150,8 +245,9 @@
 }
 }, 
 "Tl1784335": {
-"^ot:altLabel": "Ralstonia solanacearum", 
 "^ot:originalLabel": "Ralstonia solanacearum Po82 651230827 RSPO m00447", 
+"^ot:ottId": 5258040, 
+"^ot:ottTaxonName": "Ralstonia solanacearum Rs", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 47793, 
 "@tb:identifier.taxonVariant": 111853, 
@@ -160,8 +256,9 @@
 }
 }, 
 "Tl1784336": {
-"^ot:altLabel": "Saccharophagus degradans", 
 "^ot:originalLabel": "Saccharophagus degradans 2.40 637919379 Sde 0317", 
+"^ot:ottId": 340495, 
+"^ot:ottTaxonName": "Saccharophagus degradans 2-40", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 186843, 
 "@tb:identifier.taxonVariant": 561563, 
@@ -171,8 +268,9 @@
 "^skos:prefLabel": "Saccharophagus degradans 2-40"
 }, 
 "Tl1784337": {
-"^ot:altLabel": "Duganella zoogloeoides", 
 "^ot:originalLabel": "Duganella zoogloeoides ATCC 25935 2518931950 F460DRAFT 04769", 
+"^ot:ottId": 33417, 
+"^ot:ottTaxonName": "Duganella zoogloeoides ATCC 25935", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 88508, 
 "@tb:identifier.taxonVariant": 167359, 
@@ -181,8 +279,9 @@
 }
 }, 
 "Tl1784338": {
-"^ot:altLabel": "Corallococcus coralloides", 
 "^ot:originalLabel": "Corallococcus coralloides DSM 2259 2512829099 COCOR 02746", 
+"^ot:ottId": 852064, 
+"^ot:ottTaxonName": "Corallococcus coralloides DSM 2259", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 172201, 
 "@tb:identifier.taxonVariant": 246090, 
@@ -191,8 +290,9 @@
 }
 }, 
 "Tl1784339": {
-"^ot:altLabel": "Hahella ganghwensis", 
 "^ot:originalLabel": "Hahella ganghwensis DSM 17046 2520615829 F566DRAFT 05357", 
+"^ot:ottId": 1030526, 
+"^ot:ottTaxonName": "Hahella ganghwensis DSM 17046", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 253036, 
 "@tb:identifier.taxonVariant": 312262, 
@@ -201,8 +301,9 @@
 }
 }, 
 "Tl1784340": {
-"^ot:altLabel": "Pseudoalteromonas citrea", 
 "^ot:originalLabel": "Pseudoalteromonas citrea NCIMB 1889 2542023929 PCIT 22144", 
+"^ot:ottId": 794628, 
+"^ot:ottTaxonName": "Pseudoalteromonas citrea DSM 8771", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 66749, 
 "@tb:identifier.taxonVariant": 141973, 
@@ -211,11 +312,13 @@
 }
 }, 
 "Tl1784341": {
+"^ot:altLabel": "Arsenophonus sp. ArN ", 
 "^ot:originalLabel": "Arsenophonus sp. ArN 2510071413 ArN 00015340"
 }, 
 "Tl1784342": {
-"^ot:altLabel": "Owenweeksia hongkongensis", 
 "^ot:originalLabel": "Owenweeksia hongkongensis DSM 17368 2509012461 Oweho 2121", 
+"^ot:ottId": 226811, 
+"^ot:ottTaxonName": "Owenweeksia hongkongensis DSM 17368", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 228161, 
 "@tb:identifier.taxonVariant": 291762, 
@@ -224,8 +327,9 @@
 }
 }, 
 "Tl1784343": {
-"^ot:altLabel": "Pseudoalteromonas citrea", 
 "^ot:originalLabel": "Pseudoalteromonas citrea NCIMB 1889 2542024022 PCIT 22609", 
+"^ot:ottId": 794628, 
+"^ot:ottTaxonName": "Pseudoalteromonas citrea DSM 8771", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 66749, 
 "@tb:identifier.taxonVariant": 141973, 
@@ -234,11 +338,14 @@
 }
 }, 
 "Tl1784344": {
-"^ot:originalLabel": "Mesorhizobium sp. WSM4349 2515624897 B041DRAFT 00946"
+"^ot:originalLabel": "Mesorhizobium sp. WSM4349 2515624897 B041DRAFT 00946", 
+"^ot:ottId": 400156, 
+"^ot:ottTaxonName": "Bradyrhizobium sp. WSM4349"
 }, 
 "Tl1784345": {
-"^ot:altLabel": "Chromobacterium violaceum", 
 "^ot:originalLabel": "Chromobacterium violaceum ATCC 12472 637454099 CV3268", 
+"^ot:ottId": 602877, 
+"^ot:ottTaxonName": "Chromobacterium violaceum ATCC 12472", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5980, 
 "@tb:identifier.taxonVariant": 14465, 
@@ -247,8 +354,9 @@
 }
 }, 
 "Tl1784346": {
-"^ot:altLabel": "Lewinella cohaerens", 
 "^ot:originalLabel": "Lewinella cohaerens DSM 23179 2515281512 A3EUDRAFT 02929", 
+"^ot:ottId": 707660, 
+"^ot:ottTaxonName": "Lewinella cohaerens DSM 23179", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 85175, 
 "@tb:identifier.taxonVariant": 163839, 
@@ -257,8 +365,9 @@
 }
 }, 
 "Tl1784347": {
-"^ot:altLabel": "Tenacibaculum ovolyticum", 
 "^ot:originalLabel": "Tenacibaculum ovolyticum DSM 18103 2523673417 H518DRAFT 03559", 
+"^ot:ottId": 59774, 
+"^ot:ottTaxonName": "Tenacibaculum ovolyticum DSM 18103", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 110413, 
 "@tb:identifier.taxonVariant": 188733, 
@@ -267,8 +376,9 @@
 }
 }, 
 "Tl1784348": {
-"^ot:altLabel": "Delftia acidovorans", 
 "^ot:originalLabel": "Delftia acidovorans CCUG 274B 2541346198 HMPREF9701 00976", 
+"^ot:ottId": 944529, 
+"^ot:ottTaxonName": "Delftia acidovorans CCUG 274B", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 92488, 
 "@tb:identifier.taxonVariant": 171373, 
@@ -277,8 +387,9 @@
 }
 }, 
 "Tl1784349": {
-"^ot:altLabel": "Bradyrhizobium sp.", 
 "^ot:originalLabel": "Bradyrhizobium sp. CCGE.LA001 2520791139 BCCGELA001 11569", 
+"^ot:ottId": 1063658, 
+"^ot:ottTaxonName": "Bradyrhizobium sp. CCGE-LA001", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 48672, 
 "@tb:identifier.taxonVariant": 115252, 
@@ -287,11 +398,14 @@
 }
 }, 
 "Tl1784350": {
-"^ot:originalLabel": "Paenibacillus pinihumi DSM 23905 2524187775 H583DRAFT 01923"
+"^ot:originalLabel": "Paenibacillus pinihumi DSM 23905 2524187775 H583DRAFT 01923", 
+"^ot:ottId": 5392277, 
+"^ot:ottTaxonName": "Paenibacillus pinihumi DSM 23905 = JCM 16419"
 }, 
 "Tl1784351": {
-"^ot:altLabel": "Bradyrhizobium japonicum", 
 "^ot:originalLabel": "Bradyrhizobium japonicum USDA 6 2512000708 BJ6T 51940", 
+"^ot:ottId": 194476, 
+"^ot:ottTaxonName": "Bradyrhizobium japonicum USDA 6", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3945, 
 "@tb:identifier.taxonVariant": 9395, 
@@ -300,8 +414,9 @@
 }
 }, 
 "Tl1784352": {
-"^ot:altLabel": "Xanthobacter sp.", 
 "^ot:originalLabel": "Xanthobacter sp. 126 2517234183 XAN126DRAFT 4633", 
+"^ot:ottId": 164421, 
+"^ot:ottTaxonName": "Xanthobacter sp. 126", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 61440, 
 "@tb:identifier.taxonVariant": 135258, 
@@ -310,11 +425,14 @@
 }
 }, 
 "Tl1784353": {
-"^ot:originalLabel": "Rheinheimera sp. A13L 2512463316 Rhein 1334"
+"^ot:originalLabel": "Rheinheimera sp. A13L 2512463316 Rhein 1334", 
+"^ot:ottId": 900646, 
+"^ot:ottTaxonName": "Rheinheimera sp. A13L"
 }, 
 "Tl1784354": {
-"^ot:altLabel": "Streptomyces turgidiscabies", 
 "^ot:originalLabel": "Streptomyces turgidiscabies Car8 2541331106 STRTUCAR8 01195", 
+"^ot:ottId": 273028, 
+"^ot:ottTaxonName": "Streptomyces turgidiscabies Car8", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 96178, 
 "@tb:identifier.taxonVariant": 175440, 
@@ -323,8 +441,9 @@
 }
 }, 
 "Tl1784355": {
-"^ot:altLabel": "Xanthomonas translucens", 
 "^ot:originalLabel": "Xanthomonas translucens pv. graminis ART.Xtg29 2536428630 XTG29 02241", 
+"^ot:ottId": 523449, 
+"^ot:ottTaxonName": "Xanthomonas translucens pv. graminis ART-Xtg29", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 48656, 
 "@tb:identifier.taxonVariant": 115219, 
@@ -333,14 +452,19 @@
 }
 }, 
 "Tl1784356": {
-"^ot:originalLabel": "Geitlerinema sp. PCC 7105 2510099035 Gei7105DRAFT 0285"
+"^ot:originalLabel": "Geitlerinema sp. PCC 7105 2510099035 Gei7105DRAFT 0285", 
+"^ot:ottId": 28945, 
+"^ot:ottTaxonName": "Geitlerinema sp. PCC 7105"
 }, 
 "Tl1784357": {
-"^ot:originalLabel": "Marinomonas sp GOBB3.320 2507181465"
+"^ot:originalLabel": "Marinomonas sp GOBB3.320 2507181465", 
+"^ot:ottId": 152739, 
+"^ot:ottTaxonName": "Marinomonas sp. GOBB3-320"
 }, 
 "Tl1784358": {
-"^ot:altLabel": "Marinobacterium rhizophila", 
 "^ot:originalLabel": "Marinobacterium rhizophila DSM 18822 2519006291 F451DRAFT 01570", 
+"^ot:ottId": 828138, 
+"^ot:ottTaxonName": "Marinobacterium rhizophilum DSM 18822", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 365632, 
 "@tb:identifier.taxonVariant": 392304, 
@@ -350,8 +474,9 @@
 "^skos:prefLabel": "Marinobacterium rhizophilum"
 }, 
 "Tl1784359": {
-"^ot:altLabel": "Tenacibaculum ovolyticum", 
 "^ot:originalLabel": "Tenacibaculum ovolyticum DSM 18103 2523672835 H518DRAFT 02976", 
+"^ot:ottId": 59774, 
+"^ot:ottTaxonName": "Tenacibaculum ovolyticum DSM 18103", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 110413, 
 "@tb:identifier.taxonVariant": 188733, 
@@ -360,8 +485,9 @@
 }
 }, 
 "Tl1784360": {
-"^ot:altLabel": "Shewanella piezotolerans", 
 "^ot:originalLabel": "Shewanella piezotolerans WP3 643424060 swp 0649", 
+"^ot:ottId": 722465, 
+"^ot:ottTaxonName": "Shewanella piezotolerans WP3", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 351982, 
 "@tb:identifier.taxonVariant": 384324, 
@@ -370,8 +496,9 @@
 }
 }, 
 "Tl1784361": {
-"^ot:altLabel": "Pseudoalteromonas piscicida", 
 "^ot:originalLabel": "Pseudoalteromonas piscicida ATCC 15057 2520471309 G366DRAFT 00653", 
+"^ot:ottId": 550737, 
+"^ot:ottTaxonName": "Pseudoalteromonas piscicida ATCC 15057", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 66756, 
 "@tb:identifier.taxonVariant": 141991, 
@@ -380,8 +507,9 @@
 }
 }, 
 "Tl1784362": {
-"^ot:altLabel": "Pseudoalteromonas piscicida", 
 "^ot:originalLabel": "Pseudoalteromonas piscicida JCM 20779 2542029830 PPIS 10015", 
+"^ot:ottId": 794629, 
+"^ot:ottTaxonName": "Pseudoalteromonas piscicida JCM 20779", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 66756, 
 "@tb:identifier.taxonVariant": 141991, 
@@ -390,8 +518,9 @@
 }
 }, 
 "Tl1784363": {
-"^ot:altLabel": "Bradyrhizobium japonicum", 
 "^ot:originalLabel": "Bradyrhizobium japonicum USDA 123 2528856988 K287DRAFT 08450", 
+"^ot:ottId": 322369, 
+"^ot:ottTaxonName": "Bradyrhizobium japonicum USDA 123", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3945, 
 "@tb:identifier.taxonVariant": 9395, 
@@ -400,7 +529,7 @@
 }
 }, 
 "Tl1784364": {
-"^ot:altLabel": "Hypholoma sublateritium", 
+"^ot:altLabel": "Hypholoma sublateritium FD.334 ss.4", 
 "^ot:originalLabel": "Hypholoma sublateritium FD.334 SS.4 2509219408 e gw1.22.201.1.1", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 14071, 
@@ -410,11 +539,14 @@
 }
 }, 
 "Tl1784365": {
-"^ot:originalLabel": "Cupriavidus sp. UYPR2.512 2514031881 A3A5DRAFT 06866"
+"^ot:originalLabel": "Cupriavidus sp. UYPR2.512 2514031881 A3A5DRAFT 06866", 
+"^ot:ottId": 912659, 
+"^ot:ottTaxonName": "Cupriavidus sp. UYPR2.512"
 }, 
 "Tl1784366": {
-"^ot:altLabel": "Burkholderia sp.", 
 "^ot:originalLabel": "Burkholderia sp. CCGE1002 646771440 BC1002 7113", 
+"^ot:ottId": 365888, 
+"^ot:ottTaxonName": "Burkholderia sp. CCGE1002", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 62135, 
 "@tb:identifier.taxonVariant": 416345, 
@@ -423,8 +555,9 @@
 }
 }, 
 "Tl1784367": {
-"^ot:altLabel": "Streptomyces purpureus", 
 "^ot:originalLabel": "Streptomyces purpureus KA281 ATCC 21405 2516519010 StrpuDRAFT 3616", 
+"^ot:ottId": 1065353, 
+"^ot:ottTaxonName": "Streptomyces purpureus KA281", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 49810, 
 "@tb:identifier.taxonVariant": 118517, 
@@ -433,8 +566,9 @@
 }
 }, 
 "Tl1784368": {
-"^ot:altLabel": "Chitinimonas koreensis", 
 "^ot:originalLabel": "Chitinimonas koreensis DSM 17726 2524920575 F559DRAFT 04084", 
+"^ot:ottId": 423181, 
+"^ot:ottTaxonName": "Chitinimonas koreensis DSM 17726", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 311682, 
 "@tb:identifier.taxonVariant": 358128, 
@@ -443,8 +577,9 @@
 }
 }, 
 "Tl1784369": {
-"^ot:altLabel": "Halomonas anticariensis", 
 "^ot:originalLabel": "Halomonas anticariensis DSM 16096 2524952843 F567DRAFT 04168", 
+"^ot:ottId": 1030524, 
+"^ot:ottTaxonName": "Halomonas anticariensis FP35 = DSM 16096", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 232721, 
 "@tb:identifier.taxonVariant": 461954, 
@@ -453,8 +588,9 @@
 }
 }, 
 "Tl1784370": {
-"^ot:altLabel": "Marinomonas mediterranea", 
 "^ot:originalLabel": "Marinomonas mediterranea MMB.1 2506228520 Marme 1655 GoxA", 
+"^ot:ottId": 717179, 
+"^ot:ottTaxonName": "Marinomonas mediterranea MMB-1", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 122081, 
 "@tb:identifier.taxonVariant": 199912, 
@@ -463,14 +599,19 @@
 }
 }, 
 "Tl1784371": {
-"^ot:originalLabel": "Calothrix sp. PCC 7103 2507474092 Cal7103DRAFT 00009910"
+"^ot:originalLabel": "Calothrix sp. PCC 7103 2507474092 Cal7103DRAFT 00009910", 
+"^ot:ottId": 688778, 
+"^ot:ottTaxonName": "Calothrix sp. PCC 7103"
 }, 
 "Tl1784372": {
-"^ot:originalLabel": "Aquimarina latercula DSM 2041 2523972987 H526DRAFT 00682"
+"^ot:originalLabel": "Aquimarina latercula DSM 2041 2523972987 H526DRAFT 00682", 
+"^ot:ottId": 590269, 
+"^ot:ottTaxonName": "Aquimarina latercula DSM 2041"
 }, 
 "Tl1784373": {
-"^ot:altLabel": "Pseudoalteromonas piscicida", 
 "^ot:originalLabel": "Pseudoalteromonas piscicida ATCC 15057 2520473375 G366DRAFT 02721", 
+"^ot:ottId": 550737, 
+"^ot:ottTaxonName": "Pseudoalteromonas piscicida ATCC 15057", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 66756, 
 "@tb:identifier.taxonVariant": 141991, 
@@ -479,8 +620,9 @@
 }
 }, 
 "Tl1784374": {
-"^ot:altLabel": "Pseudoalteromonas flavipulchra", 
 "^ot:originalLabel": "Pseudoalteromonas flavipulchra 2ta6 2505176536 PflaDRAFT 00014030", 
+"^ot:ottId": 254494, 
+"^ot:ottTaxonName": "Pseudoalteromonas flavipulchra JG1", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 135881, 
 "@tb:identifier.taxonVariant": 212692, 
@@ -489,11 +631,14 @@
 }
 }, 
 "Tl1784375": {
-"^ot:originalLabel": "Marinomonas sp. MED121 638943768 MED121 12495"
+"^ot:originalLabel": "Marinomonas sp. MED121 638943768 MED121 12495", 
+"^ot:ottId": 1042520, 
+"^ot:ottTaxonName": "Marinomonas sp. MED121"
 }, 
 "Tl1784376": {
-"^ot:altLabel": "Shewanella woodyi", 
 "^ot:originalLabel": "Shewanella woodyi ATCC 51908 641635855 Swoo 4290", 
+"^ot:ottId": 794093, 
+"^ot:ottTaxonName": "Shewanella woodyi ATCC 51908", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 78608, 
 "@tb:identifier.taxonVariant": 156222, 
@@ -502,8 +647,9 @@
 }
 }, 
 "Tl1784377": {
-"^ot:altLabel": "Pseudoalteromonas rubra", 
 "^ot:originalLabel": "Pseudoalteromonas rubra ATCC 29570 2541428757 PRUB 24676", 
+"^ot:ottId": 379724, 
+"^ot:ottTaxonName": "Pseudoalteromonas rubra DSM 6842", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 66752, 
 "@tb:identifier.taxonVariant": 141980, 
@@ -512,7 +658,7 @@
 }
 }, 
 "Tl1784378": {
-"^ot:altLabel": "Alcaligenes faecalis subsp. phenolicus", 
+"^ot:altLabel": "Alcaligenes phenolicus", 
 "^ot:originalLabel": "Alcaligenes faecalis phenolicus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 629169, 
@@ -522,8 +668,9 @@
 }
 }, 
 "Tl1784379": {
-"^ot:altLabel": "Plesiocystis pacifica", 
 "^ot:originalLabel": "Plesiocystis pacifica SIR.1 641164698 PPSIR1 31258", 
+"^ot:ottId": 706738, 
+"^ot:ottTaxonName": "Plesiocystis pacifica SIR-1", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 177728, 
 "@tb:identifier.taxonVariant": 251281, 
@@ -532,7 +679,7 @@
 }
 }, 
 "Tl1784380": {
-"^ot:altLabel": "Gymnopus luxurians", 
+"^ot:altLabel": "Gymnopus luxurians M1 ", 
 "^ot:originalLabel": "Gymnopus luxurians FD.317 M1 2509255939 estExt Genewise1.C 160241.1", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 12703, 
@@ -542,8 +689,9 @@
 }
 }, 
 "Tl1784381": {
-"^ot:altLabel": "Aquimarina muelleri", 
 "^ot:originalLabel": "Aquimarina muelleri DSM 19832 2524103209 H527DRAFT 03370", 
+"^ot:ottId": 259916, 
+"^ot:ottTaxonName": "Aquimarina muelleri DSM 19832", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 247207, 
 "@tb:identifier.taxonVariant": 307668, 
@@ -552,11 +700,14 @@
 }
 }, 
 "Tl1784382": {
-"^ot:originalLabel": "Synechococcus sp. PCC 7336 2506749096 Syn7336 3773"
+"^ot:originalLabel": "Synechococcus sp. PCC 7336 2506749096 Syn7336 3773", 
+"^ot:ottId": 890237, 
+"^ot:ottTaxonName": "Synechococcus sp. PCC 7336"
 }, 
 "Tl1784383": {
-"^ot:altLabel": "Pseudoalteromonas tunicata", 
 "^ot:originalLabel": "Pseudoalteromonas tunicata D2 639009030 PTD2 20217", 
+"^ot:ottId": 873778, 
+"^ot:ottTaxonName": "Pseudoalteromonas tunicata D2", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 97731, 
 "@tb:identifier.taxonVariant": 564822, 
@@ -566,8 +717,9 @@
 "^skos:prefLabel": "Pseudoalteromonas tunicata D2"
 }, 
 "Tl1784384": {
-"^ot:altLabel": "Xanthobacter sp.", 
 "^ot:originalLabel": "Xanthobacter sp. 126 2517234373 XAN126DRAFT 4823", 
+"^ot:ottId": 164421, 
+"^ot:ottTaxonName": "Xanthobacter sp. 126", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 61440, 
 "@tb:identifier.taxonVariant": 135258, 
@@ -576,8 +728,9 @@
 }
 }, 
 "Tl1784385": {
-"^ot:altLabel": "Pseudomonas resinovorans", 
 "^ot:originalLabel": "Pseudomonas resinovorans DSM 21078 2525344494 G559DRAFT 00896", 
+"^ot:ottId": 45715, 
+"^ot:ottTaxonName": "Pseudomonas resinovorans DSM 21078", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 73408, 
 "@tb:identifier.taxonVariant": 150141, 
@@ -586,8 +739,9 @@
 }
 }, 
 "Tl1784386": {
-"^ot:altLabel": "Arsenophonus nasoniae", 
 "^ot:originalLabel": "Arsenophonus nasoniae DSM 15247 2526112037 G468DRAFT 01095", 
+"^ot:ottId": 69370, 
+"^ot:ottTaxonName": "Arsenophonus nasoniae DSM 15247", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 38733, 
 "@tb:identifier.taxonVariant": 89644, 
@@ -596,14 +750,19 @@
 }
 }, 
 "Tl1784387": {
-"^ot:originalLabel": "Citreicella sp. SE45 647844929 CSE45 3261"
+"^ot:originalLabel": "Citreicella sp. SE45 647844929 CSE45 3261", 
+"^ot:ottId": 17065, 
+"^ot:ottTaxonName": "Citreicella sp. SE45"
 }, 
 "Tl1784388": {
-"^ot:originalLabel": "Cyanothece sp. PCC 8802 644981411 Cyan8802 3478"
+"^ot:originalLabel": "Cyanothece sp. PCC 8802 644981411 Cyan8802 3478", 
+"^ot:ottId": 467268, 
+"^ot:ottTaxonName": "Cyanothece sp. PCC 8802"
 }, 
 "Tl1784389": {
-"^ot:altLabel": "Bradyrhizobium japonicum", 
 "^ot:originalLabel": "Bradyrhizobium japonicum USDA 38 2513943876 A3AODRAFT 06316", 
+"^ot:ottId": 92220, 
+"^ot:ottTaxonName": "Bradyrhizobium japonicum USDA 38", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3945, 
 "@tb:identifier.taxonVariant": 9395, 
@@ -612,8 +771,9 @@
 }
 }, 
 "Tl1784390": {
-"^ot:altLabel": "Pseudoalteromonas citrea", 
 "^ot:originalLabel": "Pseudoalteromonas citrea NCIMB 1889 2542023514 PCIT 20074", 
+"^ot:ottId": 794628, 
+"^ot:ottTaxonName": "Pseudoalteromonas citrea DSM 8771", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 66749, 
 "@tb:identifier.taxonVariant": 141973, 
@@ -622,8 +782,9 @@
 }
 }, 
 "Tl1784391": {
-"^ot:altLabel": "Marinomonas mediterranea", 
 "^ot:originalLabel": "Marinomonas mediterranea MMB.1 2506229543 Marme 2662 LodA", 
+"^ot:ottId": 717179, 
+"^ot:ottTaxonName": "Marinomonas mediterranea MMB-1", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 122081, 
 "@tb:identifier.taxonVariant": 199912, 
@@ -632,8 +793,9 @@
 }
 }, 
 "Tl1784392": {
-"^ot:altLabel": "Kordia algicida", 
 "^ot:originalLabel": "Kordia algicida OT.1 641460223 KAOT1 05622", 
+"^ot:ottId": 1064505, 
+"^ot:ottTaxonName": "Kordia algicida OT-1", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 201995, 
 "@tb:identifier.taxonVariant": 272243, 
@@ -642,8 +804,9 @@
 }
 }, 
 "Tl1784393": {
-"^ot:altLabel": "Rhodopirellula baltica", 
 "^ot:originalLabel": "Rhodopirellula baltica SH 1 637435365 RB4289", 
+"^ot:ottId": 298147, 
+"^ot:ottTaxonName": "Rhodopirellula baltica SH 1", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 238423, 
 "@tb:identifier.taxonVariant": 300453, 
@@ -652,8 +815,9 @@
 }
 }, 
 "Tl1784394": {
-"^ot:altLabel": "Flavobacterium soli", 
 "^ot:originalLabel": "Flavobacterium soli DSM 19725 2523123554 G508DRAFT 03147", 
+"^ot:ottId": 158125, 
+"^ot:ottTaxonName": "Flavobacterium soli DSM 19725", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 302561, 
 "@tb:identifier.taxonVariant": 351294, 
@@ -662,8 +826,9 @@
 }
 }, 
 "Tl1784395": {
-"^ot:altLabel": "Sphingomonas sp.", 
 "^ot:originalLabel": "Sphingomonas sp. S17 contig00002 651582060 SUS17 588", 
+"^ot:ottId": 837125, 
+"^ot:ottTaxonName": "Sphingomonas sp. S17", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 56986, 
 "@tb:identifier.taxonVariant": 415402, 
@@ -672,11 +837,14 @@
 }
 }, 
 "Tl1784396": {
-"^ot:originalLabel": "Synechococcus sp. WH 7805 639022017 WH7805 00980"
+"^ot:originalLabel": "Synechococcus sp. WH 7805 639022017 WH7805 00980", 
+"^ot:ottId": 739484, 
+"^ot:ottTaxonName": "Synechococcus sp. WH 7805"
 }, 
 "Tl1784397": {
-"^ot:altLabel": "Pseudoalteromonas flavipulchra", 
 "^ot:originalLabel": "Pseudoalteromonas flavipulchra JG1 2550715157 UY7DRAFT 04898", 
+"^ot:ottId": 254494, 
+"^ot:ottTaxonName": "Pseudoalteromonas flavipulchra JG1", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 135881, 
 "@tb:identifier.taxonVariant": 212692, 
@@ -685,18 +853,23 @@
 }
 }, 
 "Tl1784398": {
-"^ot:originalLabel": "Cyanothece sp. PCC 8801 643475666 PCC8801 2625"
+"^ot:originalLabel": "Cyanothece sp. PCC 8801 643475666 PCC8801 2625", 
+"^ot:ottId": 510224, 
+"^ot:ottTaxonName": "Cyanothece sp. PCC 8801"
 }, 
 "Tl1784399": {
 "^ot:originalLabel": "Streptomyces auratus AGR0001 2533914306 SU9 01650", 
+"^ot:ottId": 352807, 
+"^ot:ottTaxonName": "Streptomyces auratus AGR0001", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 117963, 
 "@tb:identifier.taxonVariant": 781893
 }
 }, 
 "Tl1784400": {
-"^ot:altLabel": "Pseudoalteromonas spongiae", 
 "^ot:originalLabel": "Pseudoalteromonas spongiae UST010723.006 2542035141 PSPO 13067", 
+"^ot:ottId": 794626, 
+"^ot:ottTaxonName": "Pseudoalteromonas spongiae UST010723-006", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 263033, 
 "@tb:identifier.taxonVariant": 320109, 
@@ -705,8 +878,9 @@
 }
 }, 
 "Tl1784401": {
-"^ot:altLabel": "Azospirillum lipoferum", 
 "^ot:originalLabel": "Azospirillum lipoferum 4B 2512035869 AZOLI p50417 18", 
+"^ot:ottId": 279481, 
+"^ot:ottTaxonName": "Azospirillum lipoferum 4B", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 48562, 
 "@tb:identifier.taxonVariant": 114962, 
@@ -715,8 +889,9 @@
 }
 }, 
 "Tl1784402": {
-"^ot:altLabel": "Pseudoalteromonas luteoviolacea", 
 "^ot:originalLabel": "Pseudoalteromonas luteoviolacea 2ta16 2578940767 PL2TA16 00557", 
+"^ot:ottId": 801329, 
+"^ot:ottTaxonName": "Pseudoalteromonas luteoviolacea", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 66751, 
 "@tb:identifier.taxonVariant": 141978, 
@@ -725,8 +900,9 @@
 }
 }, 
 "Tl1784403": {
-"^ot:altLabel": "Microlunatus phosphovorus", 
 "^ot:originalLabel": "Microlunatus phosphovorus NM.1 650913489 MLP 20440", 
+"^ot:ottId": 825808, 
+"^ot:ottTaxonName": "Microlunatus phosphovorus NM-1", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 57741, 
 "@tb:identifier.taxonVariant": 130141, 
@@ -735,11 +911,14 @@
 }
 }, 
 "Tl1784404": {
-"^ot:originalLabel": "Flavobacterium subsaxonicum DSM 21790 2525331177 G509DRAFT 1169"
+"^ot:originalLabel": "Flavobacterium subsaxonicum DSM 21790 2525331177 G509DRAFT 1169", 
+"^ot:ottId": 5258367, 
+"^ot:ottTaxonName": "Flavobacterium subsaxonicum WB 4.1-42 = DSM 21790"
 }, 
 "Tl1784405": {
-"^ot:altLabel": "Nisaea denitrificans", 
 "^ot:originalLabel": "Nisaea denitrificans DSM 18348 2525379171 K328DRAFT 3844", 
+"^ot:ottId": 4780521, 
+"^ot:ottTaxonName": "Nisaea denitrificans DSM 18348", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 340876, 
 "@tb:identifier.taxonVariant": 377558, 
@@ -748,10 +927,12 @@
 }
 }, 
 "Tl1784406": {
-"^ot:originalLabel": "Marinomonas sp. MWYL1 640806104 Mmwyl1 3721"
+"^ot:originalLabel": "Marinomonas sp. MWYL1 640806104 Mmwyl1 3721", 
+"^ot:ottId": 655012, 
+"^ot:ottTaxonName": "Marinomonas sp. MWYL1"
 }, 
 "Tl1784407": {
-"^ot:altLabel": "Laccaria bicolor", 
+"^ot:altLabel": "Laccaria bicolor S238N", 
 "^ot:originalLabel": "Laccaria bicolor S238N.H82 645819475 LACBIDRAFT 304964", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 15143, 
@@ -761,8 +942,9 @@
 }
 }, 
 "Tl1784408": {
-"^ot:altLabel": "Bradyrhizobium japonicum", 
 "^ot:originalLabel": "Bradyrhizobium japonicum USDA 6 2512002546 BJ6T 70320", 
+"^ot:ottId": 194476, 
+"^ot:ottTaxonName": "Bradyrhizobium japonicum USDA 6", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3945, 
 "@tb:identifier.taxonVariant": 9395, 
@@ -771,11 +953,14 @@
 }
 }, 
 "Tl1784409": {
-"^ot:originalLabel": "Pusillimonas sp. T7.7 650826134 PT7 3642"
+"^ot:originalLabel": "Pusillimonas sp. T7.7 650826134 PT7 3642", 
+"^ot:ottId": 837126, 
+"^ot:ottTaxonName": "Pusillimonas sp. T7-7"
 }, 
 "Tl1784410": {
-"^ot:altLabel": "Azohydromonas australica", 
 "^ot:originalLabel": "Azohydromonas australica DSM 1124 2527176977 H537DRAFT 05061", 
+"^ot:ottId": 106863, 
+"^ot:ottTaxonName": "Azohydromonas australica DSM 1124", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 318476, 
 "@tb:identifier.taxonVariant": 362674, 
@@ -784,8 +969,9 @@
 }
 }, 
 "Tl1784411": {
-"^ot:altLabel": "Pseudoalteromonas luteoviolacea", 
 "^ot:originalLabel": "Pseudoalteromonas luteoviolacea 2ta16 2505186349 PlutDRAFT 00032070", 
+"^ot:ottId": 5240938, 
+"^ot:ottTaxonName": "Pseudoalteromonas luteoviolacea 2ta16", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 66751, 
 "@tb:identifier.taxonVariant": 141978, 
@@ -794,11 +980,14 @@
 }
 }, 
 "Tl1784412": {
-"^ot:originalLabel": "Thalassobaculum salexigens DSM 19539 2523407328 G578DRAFT 2845"
+"^ot:originalLabel": "Thalassobaculum salexigens DSM 19539 2523407328 G578DRAFT 2845", 
+"^ot:ottId": 111287, 
+"^ot:ottTaxonName": "Thalassobaculum salexigens DSM 19539"
 }, 
 "Tl1784413": {
-"^ot:altLabel": "Marinimicrobium agarilyticum", 
 "^ot:originalLabel": "Marinimicrobium agarilyticum DSM 16975 2524121843 G547DRAFT 01229", 
+"^ot:ottId": 67673, 
+"^ot:ottTaxonName": "Marinimicrobium agarilyticum DSM 16975", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 269809, 
 "@tb:identifier.taxonVariant": 325395, 
@@ -807,8 +996,9 @@
 }
 }, 
 "Tl1784414": {
-"^ot:altLabel": "Agrobacterium vitis", 
 "^ot:originalLabel": "Agrobacterium vitis S4 643648894 Avi 5261", 
+"^ot:ottId": 486550, 
+"^ot:ottTaxonName": "Agrobacterium vitis S4", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 48670, 
 "@tb:identifier.taxonVariant": 115246, 
@@ -817,8 +1007,9 @@
 }
 }, 
 "Tl1784415": {
-"^ot:altLabel": "Rhizobium leguminosarum bv. viciae", 
 "^ot:originalLabel": "Rhizobium leguminosarum bv viciae 128C53 2515651856 B062DRAFT 04548", 
+"^ot:ottId": 680164, 
+"^ot:ottTaxonName": "Rhizobium leguminosarum bv. viciae 128C53", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 48680, 
 "@tb:identifier.taxonVariant": 115280, 
@@ -827,8 +1018,9 @@
 }
 }, 
 "Tl1784416": {
-"^ot:altLabel": "Burkholderia sp.", 
 "^ot:originalLabel": "Burkholderia sp. BT03 2563064354 PMI06 008727", 
+"^ot:ottId": 321637, 
+"^ot:ottTaxonName": "Burkholderia sp. BT03", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 62135, 
 "@tb:identifier.taxonVariant": 416345, 
@@ -837,8 +1029,9 @@
 }
 }, 
 "Tl1784417": {
-"^ot:altLabel": "Salipiger mucosus", 
 "^ot:originalLabel": "Salipiger mucosus DSM 16094 2523511524 salmuc 02447", 
+"^ot:ottId": 597339, 
+"^ot:ottTaxonName": "Salipiger mucosus DSM 16094", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 236583, 
 "@tb:identifier.taxonVariant": 462971, 
@@ -847,20 +1040,28 @@
 }
 }, 
 "Tl1784418": {
-"^ot:originalLabel": "Thalassobaculum salexigens DSM 19539 2523407709 G578DRAFT 3226"
+"^ot:originalLabel": "Thalassobaculum salexigens DSM 19539 2523407709 G578DRAFT 3226", 
+"^ot:ottId": 111287, 
+"^ot:ottTaxonName": "Thalassobaculum salexigens DSM 19539"
 }, 
 "Tl1784419": {
-"^ot:originalLabel": "Acinetobacter gyllenbergii MTCC 11365 2546621803 L293 0743"
+"^ot:originalLabel": "Acinetobacter gyllenbergii MTCC 11365 2546621803 L293 0743", 
+"^ot:ottId": 5171556, 
+"^ot:ottTaxonName": "Acinetobacter gyllenbergii MTCC 11365"
 }, 
 "Tl1784420": {
-"^ot:originalLabel": "Microvirga sp. WSM3557 2509073503 MicloDRAFT 00001400"
+"^ot:originalLabel": "Microvirga sp. WSM3557 2509073503 MicloDRAFT 00001400", 
+"^ot:ottId": 805431, 
+"^ot:ottTaxonName": "Microvirga sp. WSM3557"
 }, 
 "Tl1784421": {
+"^ot:altLabel": "Nisaea sp. BAL199 641432191", 
 "^ot:originalLabel": "Nisaea sp. BAL199 641432191 BAL199 14697"
 }, 
 "Tl1784422": {
-"^ot:altLabel": "Shewanella sp.", 
 "^ot:originalLabel": "Shewanella sp. 38A GOM.205m 2546918702 N512DRAFT 04273", 
+"^ot:ottId": 5377902, 
+"^ot:ottTaxonName": "Shewanella sp. H038", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 71324, 
 "@tb:identifier.taxonVariant": 147596, 
@@ -869,8 +1070,9 @@
 }
 }, 
 "Tl1784423": {
-"^ot:altLabel": "Bradyrhizobium sp.", 
 "^ot:originalLabel": "Bradyrhizobium sp. WSM3983 2513638820 YUADRAFT 02114", 
+"^ot:ottId": 416215, 
+"^ot:ottTaxonName": "Bradyrhizobium sp. WSM3983", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 48672, 
 "@tb:identifier.taxonVariant": 115252, 
@@ -879,7 +1081,7 @@
 }
 }, 
 "Tl1784424": {
-"^ot:altLabel": "Acidovorax avenae avenae", 
+"^ot:altLabel": "ATCC 19860 ", 
 "^ot:originalLabel": "Acidovorax avenae avenae ATCC 19860 650735002 Acav 2541", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 92492, 
@@ -890,7 +1092,7 @@
 "^skos:prefLabel": "Acidovorax avenae subsp. avenae"
 }, 
 "Tl1784425": {
-"^ot:altLabel": "Gymnopus luxurians", 
+"^ot:altLabel": "Gymnopus luxurians FD.317 M1 ", 
 "^ot:originalLabel": "Gymnopus luxurians FD.317 M1 2509255936 e gw1.16.416.1.1", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 12703, 
@@ -900,8 +1102,9 @@
 }
 }, 
 "Tl1784426": {
-"^ot:altLabel": "Caulobacter crescentus", 
 "^ot:originalLabel": "Caulobacter crescentus CB15 637086590 CC0556", 
+"^ot:ottId": 810549, 
+"^ot:ottTaxonName": "Caulobacter crescentus CB15", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5211, 
 "@tb:identifier.taxonVariant": 12659, 
@@ -911,8 +1114,9 @@
 "^skos:prefLabel": "Caulobacter vibrioides"
 }, 
 "Tl1784427": {
-"^ot:altLabel": "Nitrobacter sp.", 
 "^ot:originalLabel": "Nitrobacter sp. Nb.311A 638920629 NB311A 15287", 
+"^ot:ottId": 198096, 
+"^ot:ottTaxonName": "Nitrobacter sp. Nb-311A", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 57754, 
 "@tb:identifier.taxonVariant": 130155, 
@@ -921,8 +1125,9 @@
 }
 }, 
 "Tl1784428": {
-"^ot:altLabel": "Actinoplanes globisporus", 
 "^ot:originalLabel": "Actinoplanes globisporus DSM 43857 2515244410 A3CQDRAFT 07977", 
+"^ot:ottId": 739615, 
+"^ot:ottTaxonName": "Actinoplanes globisporus DSM 43857", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 117312, 
 "@tb:identifier.taxonVariant": 195650, 
@@ -931,8 +1136,9 @@
 }
 }, 
 "Tl1784429": {
-"^ot:altLabel": "Rhodopseudomonas palustris", 
 "^ot:originalLabel": "Rhodopseudomonas palustris CGA009 637475602 RPA2471", 
+"^ot:ottId": 822797, 
+"^ot:ottTaxonName": "Rhodopseudomonas palustris CGA009", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 25441, 
 "@tb:identifier.taxonVariant": 59520, 
@@ -941,8 +1147,9 @@
 }
 }, 
 "Tl1784430": {
-"^ot:altLabel": "Lyngbya majuscula", 
 "^ot:originalLabel": "Lyngbya majuscula 3L 2506481954 LYNGBM3L 45960", 
+"^ot:ottId": 359049, 
+"^ot:ottTaxonName": "Moorea producens 3L", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 152003, 
 "@tb:identifier.taxonVariant": 227577, 
@@ -951,8 +1158,9 @@
 }
 }, 
 "Tl1784431": {
-"^ot:altLabel": "Donghaeana dokdonensis", 
 "^ot:originalLabel": "Donghaeana dokdonensis DSW.6 2540718439 DDD 3116", 
+"^ot:ottId": 381917, 
+"^ot:ottTaxonName": "Nonlabens dokdonensis DSW-6", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 288086, 
 "@tb:identifier.taxonVariant": 340066, 
@@ -962,8 +1170,9 @@
 "^skos:prefLabel": "Persicivirga dokdonensis"
 }, 
 "Tl1784432": {
-"^ot:altLabel": "Microcystis aeruginosa", 
 "^ot:originalLabel": "Microcystis aeruginosa PCC 9701 2535024168", 
+"^ot:ottId": 89740, 
+"^ot:ottTaxonName": "Microcystis aeruginosa PCC 9701", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 17668, 
 "@tb:identifier.taxonVariant": 41338, 
@@ -972,8 +1181,9 @@
 }
 }, 
 "Tl1784433": {
-"^ot:altLabel": "Kitasatospora setae", 
 "^ot:originalLabel": "Kitasatospora setae KM.6054 NBRC 14216 2511595487 KSE 06200", 
+"^ot:ottId": 885000, 
+"^ot:ottTaxonName": "Kitasatospora setae KM-6054", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 49887, 
 "@tb:identifier.taxonVariant": 118746, 
@@ -982,8 +1192,9 @@
 }
 }, 
 "Tl1784434": {
-"^ot:altLabel": "Pseudoalteromonas piscicida", 
 "^ot:originalLabel": "Pseudoalteromonas piscicida JCM 20779 2542031718 PPIS 19511", 
+"^ot:ottId": 794629, 
+"^ot:ottTaxonName": "Pseudoalteromonas piscicida JCM 20779", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 66756, 
 "@tb:identifier.taxonVariant": 141991, 
@@ -992,14 +1203,19 @@
 }
 }, 
 "Tl1784435": {
-"^ot:originalLabel": "Ancylobacter sp. 501b 2520000086 D895DRAFT 0836"
+"^ot:originalLabel": "Ancylobacter sp. 501b 2520000086 D895DRAFT 0836", 
+"^ot:ottId": 4782976, 
+"^ot:ottTaxonName": "Xanthobacteraceae bacterium 501b"
 }, 
 "Tl1784436": {
-"^ot:originalLabel": "Terriglobus saanensis SP1PR4 649914559 AciPR4 2529"
+"^ot:originalLabel": "Terriglobus saanensis SP1PR4 649914559 AciPR4 2529", 
+"^ot:ottId": 343099, 
+"^ot:ottTaxonName": "Terriglobus saanensis SP1PR4"
 }, 
 "Tl1784437": {
-"^ot:altLabel": "Pseudomonas viridiflava", 
 "^ot:originalLabel": "Pseudomonas viridiflava CC1582 2506935211 CC1582 00022990", 
+"^ot:ottId": 5239071, 
+"^ot:ottTaxonName": "Pseudomonas viridiflava CC1582", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 59739, 
 "@tb:identifier.taxonVariant": 132859, 
@@ -1008,8 +1224,9 @@
 }
 }, 
 "Tl1784438": {
-"^ot:altLabel": "Streptomyces sp.", 
 "^ot:originalLabel": "Streptomyces sp. HPH0547 2541458761 HMPREF1486 04898", 
+"^ot:ottId": 474581, 
+"^ot:ottTaxonName": "Streptomyces sp. HPH0547", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 49792, 
 "@tb:identifier.taxonVariant": 413668, 
@@ -1018,11 +1235,14 @@
 }
 }, 
 "Tl1784439": {
-"^ot:originalLabel": "Nitrolancetus hollandicus Lb 2520384729"
+"^ot:originalLabel": "Nitrolancetus hollandicus Lb 2520384729", 
+"^ot:ottId": 54530, 
+"^ot:ottTaxonName": "Nitrolancetus hollandicus Lb"
 }, 
 "Tl1784440": {
-"^ot:altLabel": "Pseudomonas fluorescens", 
 "^ot:originalLabel": "Pseudomonas fluorescens NZ17 2506351877 PflNZI7 00013260", 
+"^ot:ottId": 610790, 
+"^ot:ottTaxonName": "Pseudomonas fluorescens NZI7", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 24055, 
 "@tb:identifier.taxonVariant": 56198, 
@@ -1031,8 +1251,9 @@
 }
 }, 
 "Tl1784441": {
-"^ot:altLabel": "Cystobacter fuscus", 
 "^ot:originalLabel": "Cystobacter fuscus DSM 2262 2538044953 D187 001636", 
+"^ot:ottId": 892578, 
+"^ot:ottTaxonName": "Cystobacter fuscus DSM 2262", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 48456, 
 "@tb:identifier.taxonVariant": 413532, 
@@ -1041,8 +1262,9 @@
 }
 }, 
 "Tl1784442": {
-"^ot:altLabel": "Ralstonia solanacearum", 
 "^ot:originalLabel": "Ralstonia solanacearum MolK2 2541798314", 
+"^ot:ottId": 511988, 
+"^ot:ottTaxonName": "Ralstonia solanacearum MolK2", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 47793, 
 "@tb:identifier.taxonVariant": 111853, 
@@ -1051,8 +1273,9 @@
 }
 }, 
 "Tl1784443": {
-"^ot:altLabel": "Amycolatopsis vancoresmycina", 
 "^ot:originalLabel": "Amycolatopsis vancoresmycina DSM 44592 2546378692 H480 25957", 
+"^ot:ottId": 572787, 
+"^ot:ottTaxonName": "Amycolatopsis vancoresmycina DSM 44592", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 191263, 
 "@tb:identifier.taxonVariant": 262892, 
@@ -1061,8 +1284,9 @@
 }
 }, 
 "Tl1784444": {
-"^ot:altLabel": "Pelagibaca bermudensis", 
 "^ot:originalLabel": "Pelagibaca bermudensis HTCC2601 648284617 R2601 05863", 
+"^ot:ottId": 97243, 
+"^ot:ottTaxonName": "Pelagibaca bermudensis HTCC2601", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 302428, 
 "@tb:identifier.taxonVariant": 351081, 
@@ -1071,8 +1295,9 @@
 }
 }, 
 "Tl1784445": {
-"^ot:altLabel": "Inquilinus limosus", 
 "^ot:originalLabel": "Inquilinus limosus DSM 16000 2523933296 G537DRAFT 06397", 
+"^ot:ottId": 66692, 
+"^ot:ottTaxonName": "Inquilinus limosus DSM 16000", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 161601, 
 "@tb:identifier.taxonVariant": 236576, 
@@ -1081,8 +1306,9 @@
 }
 }, 
 "Tl1784446": {
-"^ot:altLabel": "Pseudoalteromonas flavipulchra", 
 "^ot:originalLabel": "Pseudoalteromonas flavipulchra JG1 2550713913 UY7DRAFT 03653", 
+"^ot:ottId": 254494, 
+"^ot:ottTaxonName": "Pseudoalteromonas flavipulchra JG1", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 135881, 
 "@tb:identifier.taxonVariant": 212692, 
@@ -1091,8 +1317,9 @@
 }
 }, 
 "Tl1784447": {
-"^ot:altLabel": "Tistrella mobilis", 
 "^ot:originalLabel": "Tistrella mobilis KA081020.065 2519490909 TMO c0491", 
+"^ot:ottId": 428158, 
+"^ot:ottTaxonName": "Tistrella mobilis KA081020-065", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 161453, 
 "@tb:identifier.taxonVariant": 236421, 
@@ -1101,8 +1328,9 @@
 }
 }, 
 "Tl1784448": {
-"^ot:altLabel": "Pseudomonas viridiflava", 
 "^ot:originalLabel": "Pseudomonas viridiflava TA043 2506970397 TA043 00024900", 
+"^ot:ottId": 5239072, 
+"^ot:ottTaxonName": "Pseudomonas viridiflava TA043", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 59739, 
 "@tb:identifier.taxonVariant": 132859, 
@@ -1111,8 +1339,9 @@
 }
 }, 
 "Tl1784449": {
-"^ot:altLabel": "Methylomonas sp.", 
 "^ot:originalLabel": "Methylomonas sp. 11b 2516192574 Meth11bDRAFT 4055", 
+"^ot:ottId": 575930, 
+"^ot:ottTaxonName": "Methylomonas sp. 11b", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 48702, 
 "@tb:identifier.taxonVariant": 413566, 
@@ -1121,11 +1350,14 @@
 }
 }, 
 "Tl1784450": {
-"^ot:originalLabel": "Magnetococcus sp. MC.1 639721039 Mmc1 0290"
+"^ot:originalLabel": "Magnetococcus sp. MC.1 639721039 Mmc1 0290", 
+"^ot:ottId": 79418, 
+"^ot:ottTaxonName": "Magnetococcus marinus MC-1"
 }, 
 "Tl1784451": {
-"^ot:altLabel": "Acidovorax avenae avenae", 
 "^ot:originalLabel": "Acidovorax avenae avenae RS.1 2547287637 AASARDRAFT 02021", 
+"^ot:ottId": 1074474, 
+"^ot:ottTaxonName": "Acidovorax avenae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 92492, 
 "@tb:identifier.taxonVariant": 843419, 
@@ -1135,8 +1367,9 @@
 "^skos:prefLabel": "Acidovorax avenae subsp. avenae"
 }, 
 "Tl1784452": {
-"^ot:altLabel": "Bradyrhizobium sp.", 
 "^ot:originalLabel": "Bradyrhizobium sp. EC3.3 2513716746 YUUDRAFT 02264", 
+"^ot:ottId": 38618, 
+"^ot:ottTaxonName": "Bradyrhizobium sp. Ec3.3", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 48672, 
 "@tb:identifier.taxonVariant": 115252, 
@@ -1145,11 +1378,14 @@
 }
 }, 
 "Tl1784453": {
-"^ot:originalLabel": "Rhizobium leguminosarum bv viciae VF39 2513714293 YUSDRAFT 07289"
+"^ot:originalLabel": "Rhizobium leguminosarum bv viciae VF39 2513714293 YUSDRAFT 07289", 
+"^ot:ottId": 563877, 
+"^ot:ottTaxonName": "Rhizobium leguminosarum bv. viciae VF39"
 }, 
 "Tl1784454": {
-"^ot:altLabel": "Kordia algicida", 
 "^ot:originalLabel": "Kordia algicida OT.1 641459908 KAOT1 07778", 
+"^ot:ottId": 1064505, 
+"^ot:ottTaxonName": "Kordia algicida OT-1", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 201995, 
 "@tb:identifier.taxonVariant": 272243, 
@@ -1158,8 +1394,9 @@
 }
 }, 
 "Tl1784455": {
-"^ot:altLabel": "Cellvibrio japonicus", 
 "^ot:originalLabel": "Cellvibrio japonicus Ueda107 642705102 CJA 3778", 
+"^ot:ottId": 719578, 
+"^ot:ottTaxonName": "Cellvibrio japonicus Ueda107", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 149236, 
 "@tb:identifier.taxonVariant": 225046, 
@@ -1168,8 +1405,9 @@
 }
 }, 
 "Tl1784456": {
-"^ot:altLabel": "Streptomyces scabiei", 
 "^ot:originalLabel": "Streptomyces scabiei 87.22 646659180 SCAB 78081", 
+"^ot:ottId": 177258, 
+"^ot:ottTaxonName": "Streptomyces scabiei 87.22", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 49791, 
 "@tb:identifier.taxonVariant": 118466, 
@@ -1178,8 +1416,9 @@
 }
 }, 
 "Tl1784457": {
-"^ot:altLabel": "Streptomyces flavidovirens", 
 "^ot:originalLabel": "Streptomyces flavidovirens DSM 40150 2523212643 G412DRAFT 06355", 
+"^ot:ottId": 685320, 
+"^ot:ottTaxonName": "Streptomyces flavidovirens DSM 40150", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 82756, 
 "@tb:identifier.taxonVariant": 160973, 
@@ -1188,8 +1427,9 @@
 }
 }, 
 "Tl1784458": {
-"^ot:altLabel": "Delftia acidovorans", 
 "^ot:originalLabel": "Delftia acidovorans CCUG 15835 2541343206 HMPREF9702 04267", 
+"^ot:ottId": 944528, 
+"^ot:ottTaxonName": "Delftia acidovorans CCUG 15835", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 92488, 
 "@tb:identifier.taxonVariant": 171373, 
@@ -1198,8 +1438,9 @@
 }
 }, 
 "Tl1784459": {
-"^ot:altLabel": "Amycolatopsis balhimycina", 
 "^ot:originalLabel": "Amycolatopsis balhimycina DSM 44591 2517477565 A3CEDRAFT 0690", 
+"^ot:ottId": 416649, 
+"^ot:ottTaxonName": "Amycolatopsis balhimycina FH 1894", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 191262, 
 "@tb:identifier.taxonVariant": 262889, 
@@ -1208,8 +1449,9 @@
 }
 }, 
 "Tl1784460": {
-"^ot:altLabel": "Pseudoalteromonas sp.", 
 "^ot:originalLabel": "Pseudoalteromonas sp. Bsw20308 2540452162 D172 1358", 
+"^ot:ottId": 502168, 
+"^ot:ottTaxonName": "Pseudoalteromonas sp. Bsw20308", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 73273, 
 "@tb:identifier.taxonVariant": 418320, 
@@ -1218,11 +1460,14 @@
 }
 }, 
 "Tl1784461": {
-"^ot:originalLabel": "Citreicella sp. SE45 647843968 CSE45 2361"
+"^ot:originalLabel": "Citreicella sp. SE45 647843968 CSE45 2361", 
+"^ot:ottId": 17065, 
+"^ot:ottTaxonName": "Citreicella sp. SE45"
 }, 
 "Tl1784462": {
-"^ot:altLabel": "Hahella chejuensis", 
 "^ot:originalLabel": "Hahella chejuensis KCTC 2396 637833463 HCH 03141", 
+"^ot:ottId": 622304, 
+"^ot:ottTaxonName": "Hahella chejuensis KCTC 2396", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 151662, 
 "@tb:identifier.taxonVariant": 227242, 
@@ -1231,8 +1476,9 @@
 }
 }, 
 "Tl1784463": {
-"^ot:altLabel": "Nitrosococcus halophilus", 
 "^ot:originalLabel": "Nitrosococcus halophilus Nc4 646692023 Nhal 1391", 
+"^ot:ottId": 64875, 
+"^ot:ottTaxonName": "Nitrosococcus halophilus Nc 4", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 132356, 
 "@tb:identifier.taxonVariant": 209549, 
@@ -1241,14 +1487,19 @@
 }
 }, 
 "Tl1784464": {
-"^ot:originalLabel": "Delftia sp. Cs1.4 650860805 DelCs14 3291"
+"^ot:originalLabel": "Delftia sp. Cs1.4 650860805 DelCs14 3291", 
+"^ot:ottId": 627939, 
+"^ot:ottTaxonName": "Delftia sp. Cs1-4"
 }, 
 "Tl1784465": {
-"^ot:originalLabel": "Chryseobacterium gregarium DSM 19109 2523744441 H561DRAFT 01490"
+"^ot:originalLabel": "Chryseobacterium gregarium DSM 19109 2523744441 H561DRAFT 01490", 
+"^ot:ottId": 1000092, 
+"^ot:ottTaxonName": "Chryseobacterium gregarium DSM 19109"
 }, 
 "Tl1784466": {
-"^ot:altLabel": "Massilia timonae", 
 "^ot:originalLabel": "Massilia timonae CCUG 45783 2532942463 HMPREF9710 03282", 
+"^ot:ottId": 893784, 
+"^ot:ottTaxonName": "Massilia timonae CCUG 45783", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 69241, 
 "@tb:identifier.taxonVariant": 144970, 
@@ -1257,11 +1508,14 @@
 }
 }, 
 "Tl1784467": {
-"^ot:originalLabel": "Ferrimonas kyonanensis DSM 18153 2524104645 H598DRAFT 00619"
+"^ot:originalLabel": "Ferrimonas kyonanensis DSM 18153 2524104645 H598DRAFT 00619", 
+"^ot:ottId": 4057, 
+"^ot:ottTaxonName": "Ferrimonas kyonanensis DSM 18153"
 }, 
 "Tl1784468": {
-"^ot:altLabel": "Pseudoalteromonas rubra", 
 "^ot:originalLabel": "Pseudoalteromonas rubra ATCC 29570 2541424619 PRUB 04171", 
+"^ot:ottId": 379724, 
+"^ot:ottTaxonName": "Pseudoalteromonas rubra DSM 6842", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 66752, 
 "@tb:identifier.taxonVariant": 141980, 
@@ -1270,8 +1524,9 @@
 }
 }, 
 "Tl1784469": {
-"^ot:altLabel": "Bradyrhizobium sp.", 
 "^ot:originalLabel": "Bradyrhizobium sp. Cp5.3 2524441264 K289DRAFT 05852", 
+"^ot:ottId": 60425, 
+"^ot:ottTaxonName": "Bradyrhizobium sp. Cp5.3", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 48672, 
 "@tb:identifier.taxonVariant": 115252, 
@@ -1280,8 +1535,9 @@
 }
 }, 
 "Tl1784470": {
-"^ot:altLabel": "Burkholderia sp.", 
 "^ot:originalLabel": "Burkholderia sp. BT03 2563064361 PMI06 008734", 
+"^ot:ottId": 321637, 
+"^ot:ottTaxonName": "Burkholderia sp. BT03", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 62135, 
 "@tb:identifier.taxonVariant": 416345, 
@@ -1290,8 +1546,9 @@
 }
 }, 
 "Tl1784471": {
-"^ot:altLabel": "Nitrobacter hamburgensis", 
 "^ot:originalLabel": "Nitrobacter hamburgensis X14 637971096 Nham 2642", 
+"^ot:ottId": 301225, 
+"^ot:ottTaxonName": "Nitrobacter hamburgensis X14", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 49034, 
 "@tb:identifier.taxonVariant": 116355, 
@@ -1300,8 +1557,9 @@
 }
 }, 
 "Tl1784472": {
-"^ot:altLabel": "Sphingomonas elodea", 
 "^ot:originalLabel": "Sphingomonas elodea ATCC 31461 2547435671 KK7DRAFT 01671", 
+"^ot:ottId": 520949, 
+"^ot:ottTaxonName": "Sphingomonas elodea ATCC 31461", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 167942, 
 "@tb:identifier.taxonVariant": 242422, 
@@ -1310,11 +1568,14 @@
 }
 }, 
 "Tl1784473": {
-"^ot:originalLabel": "Leptolyngbya sp. PCC 7375 2509841119 Lepto7375DRAFT 1136"
+"^ot:originalLabel": "Leptolyngbya sp. PCC 7375 2509841119 Lepto7375DRAFT 1136", 
+"^ot:ottId": 177625, 
+"^ot:ottTaxonName": "Leptolyngbya sp. PCC 7375"
 }, 
 "Tl1784474": {
-"^ot:altLabel": "Bradyrhizobium japonicum", 
 "^ot:originalLabel": "Bradyrhizobium japonicum USDA 38 2513941113 A3AODRAFT 03549", 
+"^ot:ottId": 92220, 
+"^ot:ottTaxonName": "Bradyrhizobium japonicum USDA 38", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3945, 
 "@tb:identifier.taxonVariant": 9395, 
@@ -1323,7 +1584,7 @@
 }
 }, 
 "Tl1784475": {
-"^ot:altLabel": "Postia placenta", 
+"^ot:altLabel": "Postia placenta ", 
 "^ot:originalLabel": "Postia placenta Mad.698 645908373 POSPLDRAFT 96923", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 110455, 
@@ -1333,8 +1594,9 @@
 }
 }, 
 "Tl1784476": {
-"^ot:altLabel": "Herpetosiphon aurantiacus", 
 "^ot:originalLabel": "Herpetosiphon aurantiacus DSM 785 2509059539 Haur 00883", 
+"^ot:ottId": 187093, 
+"^ot:ottTaxonName": "Herpetosiphon aurantiacus DSM 785", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 48474, 
 "@tb:identifier.taxonVariant": 114766, 
@@ -1343,8 +1605,9 @@
 }
 }, 
 "Tl1784477": {
-"^ot:altLabel": "Pseudoalteromonas flavipulchra", 
 "^ot:originalLabel": "Pseudoalteromonas flavipulchra 2ta6 2505179241 PflaDRAFT 00041100", 
+"^ot:ottId": 254494, 
+"^ot:ottTaxonName": "Pseudoalteromonas flavipulchra JG1", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 135881, 
 "@tb:identifier.taxonVariant": 212692, 
@@ -1353,8 +1616,9 @@
 }
 }, 
 "Tl1784478": {
-"^ot:altLabel": "Oceanospirillum beijerinckii", 
 "^ot:originalLabel": "Oceanospirillum beijerinckii DSM 7166 2524095414 H579DRAFT 00201", 
+"^ot:ottId": 242338, 
+"^ot:ottTaxonName": "Oceanospirillum beijerinckii DSM 7166", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 81141, 
 "@tb:identifier.taxonVariant": 159110, 
@@ -1363,11 +1627,14 @@
 }
 }, 
 "Tl1784479": {
-"^ot:originalLabel": "Acinetobacter sp. NBRC 100985 2533901541"
+"^ot:originalLabel": "Acinetobacter sp. NBRC 100985 2533901541", 
+"^ot:ottId": 876140, 
+"^ot:ottTaxonName": "Acinetobacter sp. NBRC 100985"
 }, 
 "Tl1784480": {
-"^ot:altLabel": "Marinomonas mediterranea", 
 "^ot:originalLabel": "Marinomonas mediterranea MMB.1 2506229270 Marme 2396", 
+"^ot:ottId": 546719, 
+"^ot:ottTaxonName": "Marinomonas mediterranea", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 122081, 
 "@tb:identifier.taxonVariant": 199912, 
@@ -1376,8 +1643,9 @@
 }
 }, 
 "Tl1784481": {
-"^ot:altLabel": "Cellvibrio japonicus", 
 "^ot:originalLabel": "Cellvibrio japonicus Ueda107 642701566 CJA 0227", 
+"^ot:ottId": 719578, 
+"^ot:ottTaxonName": "Cellvibrio japonicus Ueda107", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 149236, 
 "@tb:identifier.taxonVariant": 225046, 
@@ -1386,8 +1654,9 @@
 }
 }, 
 "Tl1784482": {
-"^ot:altLabel": "Streptomyces afghaniensis", 
 "^ot:originalLabel": "Streptomyces afghaniensis 772 2546772914 STAFG 1983", 
+"^ot:ottId": 5235978, 
+"^ot:ottTaxonName": "Streptomyces afghaniensis 772", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 82604, 
 "@tb:identifier.taxonVariant": 160711, 
@@ -1396,8 +1665,9 @@
 }
 }, 
 "Tl1784483": {
-"^ot:altLabel": "Methylomonas sp.", 
 "^ot:originalLabel": "Methylomonas sp. MK1 2522499056 G006DRAFT 1989", 
+"^ot:ottId": 512444, 
+"^ot:ottTaxonName": "Methylomonas sp. MK1", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 48702, 
 "@tb:identifier.taxonVariant": 413566, 
@@ -1406,8 +1676,9 @@
 }
 }, 
 "Tl1784484": {
-"^ot:altLabel": "Burkholderia ambifaria", 
 "^ot:originalLabel": "Burkholderia ambifaria IOP40.10 642413908 BamIOP4010DRAFT 0033", 
+"^ot:ottId": 260325, 
+"^ot:ottTaxonName": "Burkholderia ambifaria IOP40-10", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 147290, 
 "@tb:identifier.taxonVariant": 223361, 
@@ -1416,11 +1687,14 @@
 }
 }, 
 "Tl1784485": {
-"^ot:originalLabel": "Rhodopirellula sp. SWK7 2534782291 RRSWK 06616"
+"^ot:originalLabel": "Rhodopirellula sp. SWK7 2534782291 RRSWK 06616", 
+"^ot:ottId": 396367, 
+"^ot:ottTaxonName": "Rhodopirellula sp. SWK7"
 }, 
 "Tl1784486": {
-"^ot:altLabel": "Methylobacterium sp.", 
 "^ot:originalLabel": "Methylobacterium sp. 10 2546997099 K368DRAFT 2874", 
+"^ot:ottId": 4782464, 
+"^ot:ottTaxonName": "Methylobacterium sp. 10", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 48694, 
 "@tb:identifier.taxonVariant": 115303, 
@@ -1429,8 +1703,9 @@
 }
 }, 
 "Tl1784487": {
-"^ot:altLabel": "Rhodopirellula baltica", 
 "^ot:originalLabel": "Rhodopirellula baltica SH28 2537186271 RBSH 01579", 
+"^ot:ottId": 177616, 
+"^ot:ottTaxonName": "Rhodopirellula baltica SH28", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 238423, 
 "@tb:identifier.taxonVariant": 300453, 
@@ -1439,11 +1714,14 @@
 }
 }, 
 "Tl1784488": {
-"^ot:originalLabel": "Rheinheimera sp. A13L 2512464576 Rhein 2598"
+"^ot:originalLabel": "Rheinheimera sp. A13L 2512464576 Rhein 2598", 
+"^ot:ottId": 900646, 
+"^ot:ottTaxonName": "Rheinheimera sp. A13L"
 }, 
 "Tl1784489": {
-"^ot:altLabel": "Oceanospirillum beijerinckii", 
 "^ot:originalLabel": "Oceanospirillum beijerinckii DSM 7166 2524097887 H579DRAFT 02675", 
+"^ot:ottId": 242338, 
+"^ot:ottTaxonName": "Oceanospirillum beijerinckii DSM 7166", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 81141, 
 "@tb:identifier.taxonVariant": 159110, 
@@ -1452,8 +1730,9 @@
 }
 }, 
 "Tl1784490": {
-"^ot:altLabel": "Cryptosporangium arvum", 
 "^ot:originalLabel": "Cryptosporangium arvum YU 629.21 DSM 44712 2510402938 CryarDRAFT 3973", 
+"^ot:ottId": 36782, 
+"^ot:ottTaxonName": "Cryptosporangium arvum DSM 44712", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 92493, 
 "@tb:identifier.taxonVariant": 171397, 
@@ -1462,8 +1741,9 @@
 }
 }, 
 "Tl1784491": {
-"^ot:altLabel": "Bradyrhizobium sp.", 
 "^ot:originalLabel": "Bradyrhizobium sp. YR681 2511394679 PMI42 01600", 
+"^ot:ottId": 421150, 
+"^ot:ottTaxonName": "Bradyrhizobium sp. YR681", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 48672, 
 "@tb:identifier.taxonVariant": 115252, 
@@ -1472,8 +1752,9 @@
 }
 }, 
 "Tl1784492": {
-"^ot:altLabel": "Azospirillum sp.", 
 "^ot:originalLabel": "Azospirillum sp. B510 646556648 AZL e04100", 
+"^ot:ottId": 490355, 
+"^ot:ottTaxonName": "Azospirillum sp. B510", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 60317, 
 "@tb:identifier.taxonVariant": 415983, 
@@ -1482,8 +1763,9 @@
 }
 }, 
 "Tl1784493": {
-"^ot:altLabel": "Pseudoalteromonas sp.", 
 "^ot:originalLabel": "Pseudoalteromonas sp. BSi20495 2540458794", 
+"^ot:ottId": 748080, 
+"^ot:ottTaxonName": "Pseudoalteromonas sp. BSi20495", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 73273, 
 "@tb:identifier.taxonVariant": 418320, 
@@ -1492,10 +1774,14 @@
 }
 }, 
 "Tl1784494": {
-"^ot:originalLabel": "Ancylobacter sp. FA202 2517476494 A3M1DRAFT 4583"
+"^ot:originalLabel": "Ancylobacter sp. FA202 2517476494 A3M1DRAFT 4583", 
+"^ot:ottId": 661433, 
+"^ot:ottTaxonName": "Ancylobacter sp. FA202"
 }, 
 "Tl1784495": {
-"^ot:originalLabel": "Rhizobium mesoamericanum STM6155 2513599306 YY3DRAFT 04971"
+"^ot:originalLabel": "Rhizobium mesoamericanum STM6155 2513599306 YY3DRAFT 04971", 
+"^ot:ottId": 400156, 
+"^ot:ottTaxonName": "Bradyrhizobium sp. WSM4349"
 }
 }
 }
@@ -1512,7 +1798,18 @@
 "Tr86154": {
 "@label": "tree1", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:undefined", 
+"^ot:branchLengthTimeUnit": "Myr", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "Tn12700366", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "Tn12700366", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 168, 
 "^tb:quality.tree": "Unrated", 
@@ -2168,12 +2465,12 @@
 }, 
 "Tn12700336": {
 "edge4134892": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn12700336", 
 "@target": "Tn12700239"
 }, 
 "edge4134894": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn12700336", 
 "@target": "Tn12700513"
 }
@@ -2612,24 +2909,24 @@
 }, 
 "Tn12700404": {
 "edge4135362": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn12700404", 
 "@target": "Tn12700250"
 }, 
 "edge4135364": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn12700404", 
 "@target": "Tn12700492"
 }
 }, 
 "Tn12700406": {
 "edge4134961": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn12700406", 
 "@target": "Tn12700405"
 }, 
 "edge4134963": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn12700406", 
 "@target": "Tn12700410"
 }
@@ -2852,12 +3149,12 @@
 }, 
 "Tn12700444": {
 "edge4135151": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn12700444", 
 "@target": "Tn12700314"
 }, 
 "edge4135153": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn12700444", 
 "@target": "Tn12700435"
 }
@@ -3529,13 +3826,15 @@
 "@otu": "Tl1784335"
 }, 
 "Tn12700216": {
-"@otu": "Tl1784412"
+"@otu": "Tl1784412", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12700217": {
 "@otu": "Tl1784483"
 }, 
 "Tn12700218": {
-"@otu": "Tl1784343"
+"@otu": "Tl1784343", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn12700219": {
 "@otu": "Tl1784431"
@@ -3548,10 +3847,12 @@
 "Tn12700223": {}, 
 "Tn12700224": {}, 
 "Tn12700225": {
-"@otu": "Tl1784389"
+"@otu": "Tl1784389", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn12700226": {
-"@otu": "Tl1784455"
+"@otu": "Tl1784455", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12700227": {
 "@otu": "Tl1784328"
@@ -3563,19 +3864,24 @@
 "Tn12700230": {}, 
 "Tn12700231": {}, 
 "Tn12700232": {
-"@otu": "Tl1784329"
+"@otu": "Tl1784329", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12700233": {
-"@otu": "Tl1784454"
+"@otu": "Tl1784454", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12700234": {
-"@otu": "Tl1784478"
+"@otu": "Tl1784478", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12700235": {
-"@otu": "Tl1784418"
+"@otu": "Tl1784418", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn12700236": {
-"@otu": "Tl1784377"
+"@otu": "Tl1784377", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12700237": {
 "@otu": "Tl1784350"
@@ -3585,7 +3891,8 @@
 "@otu": "Tl1784494"
 }, 
 "Tn12700240": {
-"@otu": "Tl1784408"
+"@otu": "Tl1784408", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12700241": {}, 
 "Tn12700242": {}, 
@@ -3601,7 +3908,8 @@
 "@otu": "Tl1784484"
 }, 
 "Tn12700250": {
-"@otu": "Tl1784434"
+"@otu": "Tl1784434", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn12700251": {
 "@otu": "Tl1784459"
@@ -3627,7 +3935,8 @@
 "@otu": "Tl1784354"
 }, 
 "Tn12700262": {
-"@otu": "Tl1784390"
+"@otu": "Tl1784390", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12700263": {}, 
 "Tn12700264": {}, 
@@ -3638,13 +3947,15 @@
 "@otu": "Tl1784360"
 }, 
 "Tn12700267": {
-"@otu": "Tl1784374"
+"@otu": "Tl1784374", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12700268": {
 "@otu": "Tl1784460"
 }, 
 "Tn12700269": {
-"@otu": "Tl1784392"
+"@otu": "Tl1784392", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn12700270": {}, 
 "Tn12700271": {}, 
@@ -3665,7 +3976,8 @@
 "Tn12700278": {}, 
 "Tn12700279": {}, 
 "Tn12700280": {
-"@otu": "Tl1784344"
+"@otu": "Tl1784344", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn12700281": {
 "@otu": "Tl1784385"
@@ -3733,7 +4045,8 @@
 "@otu": "Tl1784404"
 }, 
 "Tn12700311": {
-"@otu": "Tl1784391"
+"@otu": "Tl1784391", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn12700312": {
 "@otu": "Tl1784456"
@@ -3750,7 +4063,8 @@
 }, 
 "Tn12700317": {}, 
 "Tn12700318": {
-"@otu": "Tl1784488"
+"@otu": "Tl1784488", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12700319": {
 "@otu": "Tl1784367"
@@ -3778,7 +4092,8 @@
 }, 
 "Tn12700331": {}, 
 "Tn12700332": {
-"@otu": "Tl1784340"
+"@otu": "Tl1784340", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12700333": {}, 
 "Tn12700334": {}, 
@@ -3805,10 +4120,12 @@
 "Tn12700347": {}, 
 "Tn12700348": {}, 
 "Tn12700349": {
-"@otu": "Tl1784347"
+"@otu": "Tl1784347", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12700350": {
-"@otu": "Tl1784495"
+"@otu": "Tl1784495", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12700351": {}, 
 "Tn12700352": {}, 
@@ -3832,7 +4149,8 @@
 "Tn12700362": {}, 
 "Tn12700363": {}, 
 "Tn12700364": {
-"@otu": "Tl1784461"
+"@otu": "Tl1784461", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn12700365": {}, 
 "Tn12700366": {
@@ -3842,7 +4160,8 @@
 "@otu": "Tl1784398"
 }, 
 "Tn12700368": {
-"@otu": "Tl1784351"
+"@otu": "Tl1784351", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn12700369": {
 "@otu": "Tl1784430"
@@ -3856,11 +4175,13 @@
 "@otu": "Tl1784411"
 }, 
 "Tn12700374": {
-"@otu": "Tl1784446"
+"@otu": "Tl1784446", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12700375": {}, 
 "Tn12700376": {
-"@otu": "Tl1784416"
+"@otu": "Tl1784416", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12700377": {}, 
 "Tn12700378": {}, 
@@ -3884,10 +4205,12 @@
 }, 
 "Tn12700389": {}, 
 "Tn12700390": {
-"@otu": "Tl1784331"
+"@otu": "Tl1784331", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn12700391": {
-"@otu": "Tl1784384"
+"@otu": "Tl1784384", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12700392": {
 "@otu": "Tl1784464"
@@ -3897,7 +4220,8 @@
 "@otu": "Tl1784450"
 }, 
 "Tn12700395": {
-"@otu": "Tl1784470"
+"@otu": "Tl1784470", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn12700396": {}, 
 "Tn12700397": {}, 
@@ -3917,7 +4241,8 @@
 "Tn12700403": {}, 
 "Tn12700404": {}, 
 "Tn12700405": {
-"@otu": "Tl1784361"
+"@otu": "Tl1784361", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12700406": {}, 
 "Tn12700407": {}, 
@@ -3926,17 +4251,20 @@
 }, 
 "Tn12700409": {}, 
 "Tn12700410": {
-"@otu": "Tl1784362"
+"@otu": "Tl1784362", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12700411": {}, 
 "Tn12700412": {
-"@otu": "Tl1784481"
+"@otu": "Tl1784481", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn12700413": {
 "@otu": "Tl1784476"
 }, 
 "Tn12700414": {
-"@otu": "Tl1784397"
+"@otu": "Tl1784397", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12700415": {}, 
 "Tn12700416": {
@@ -3968,7 +4296,8 @@
 "@otu": "Tl1784429"
 }, 
 "Tn12700432": {
-"@otu": "Tl1784370"
+"@otu": "Tl1784370", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12700433": {
 "@otu": "Tl1784463"
@@ -3980,7 +4309,8 @@
 "@otu": "Tl1784386"
 }, 
 "Tn12700436": {
-"@otu": "Tl1784489"
+"@otu": "Tl1784489", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn12700437": {
 "@otu": "Tl1784449"
@@ -4033,7 +4363,8 @@
 "Tn12700465": {}, 
 "Tn12700466": {}, 
 "Tn12700467": {
-"@otu": "Tl1784359"
+"@otu": "Tl1784359", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn12700468": {
 "@otu": "Tl1784333"
@@ -4052,14 +4383,16 @@
 "@otu": "Tl1784369"
 }, 
 "Tn12700476": {
-"@otu": "Tl1784368"
+"@otu": "Tl1784368", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn12700477": {}, 
 "Tn12700478": {
 "@otu": "Tl1784491"
 }, 
 "Tn12700479": {
-"@otu": "Tl1784353"
+"@otu": "Tl1784353", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn12700480": {}, 
 "Tn12700481": {}, 
@@ -4075,7 +4408,8 @@
 "@otu": "Tl1784346"
 }, 
 "Tn12700488": {
-"@otu": "Tl1784352"
+"@otu": "Tl1784352", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn12700489": {
 "@otu": "Tl1784442"
@@ -4085,7 +4419,8 @@
 "@otu": "Tl1784413"
 }, 
 "Tn12700492": {
-"@otu": "Tl1784373"
+"@otu": "Tl1784373", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn12700493": {}, 
 "Tn12700494": {
@@ -4102,7 +4437,8 @@
 "@otu": "Tl1784467"
 }, 
 "Tn12700501": {
-"@otu": "Tl1784387"
+"@otu": "Tl1784387", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12700502": {
 "@otu": "Tl1784396"
@@ -4133,7 +4469,8 @@
 "Tn12700514": {}, 
 "Tn12700515": {}, 
 "Tn12700516": {
-"@otu": "Tl1784477"
+"@otu": "Tl1784477", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn12700517": {}, 
 "Tn12700518": {}, 
@@ -4150,7 +4487,8 @@
 "Tn12700523": {}, 
 "Tn12700524": {}, 
 "Tn12700525": {
-"@otu": "Tl1784468"
+"@otu": "Tl1784468", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn12700526": {}, 
 "Tn12700527": {
@@ -4168,7 +4506,8 @@
 "Tn12700531": {}, 
 "Tn12700532": {}, 
 "Tn12700533": {
-"@otu": "Tl1784474"
+"@otu": "Tl1784474", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12700534": {
 "@otu": "Tl1784485"
@@ -4196,7 +4535,8 @@
 }, 
 "Tn12700545": {}, 
 "Tn12700546": {
-"@otu": "Tl1784471"
+"@otu": "Tl1784471", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12700547": {}, 
 "Tn12700548": {}
