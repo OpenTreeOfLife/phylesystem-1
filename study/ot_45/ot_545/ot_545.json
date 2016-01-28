@@ -60,22 +60,107 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2016-01-28T17:11:27.287Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "Bacteria"
 }, 
-"^ot:curatorName": "Dail Laughinghouse", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2016-01-28T17:11:27.287Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Dail Laughinghouse"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S18090"
 }, 
+"^ot:focalClade": 844192, 
+"^ot:focalCladeOTTTaxonName": "Bacteria (domain silva:A16379/#1)", 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "Tls46381"
 ], 
 "^ot:studyId": "ot_545", 
-"^ot:studyPublicationReference": "Endo A., Tanizawa Y., Tanaka N., Maeno S., Kumar H., Shiwa Y., Okada S., Yoshikawa H., Dicks L., Nakagawa J., & Arita M. 2015. Comparative genomics of Fructobacillus spp. and Leuconostoc spp. reveals niche-specific evolution of Fructobacillus spp. BMC genomics, .", 
+"^ot:studyPublication": {
+"@href": "http://dx.doi.org/10.1186/s12864-015-2339-x"
+}, 
+"^ot:studyPublicationReference": "Akihito Endo, Yasuhiro Tanizawa, Naoto Tanaka, Shintaro Maeno, Himanshu Kumar, Yuh Shiwa, Sanae Okada, Hirofumi Yoshikawa, Leon Dicks, Junichi Nakagawa, Masanori Arita, 2015, 'Comparative genomics of Fructobacillus spp. and Leuconostoc spp. reveals niche-specific evolution of Fructobacillus spp.', BMC Genomics, vol. 16, no. 1", 
 "^ot:studyYear": 2015, 
+"^ot:tag": [], 
 "^ot:taxonLinkPrefixes": {
 "@ubio": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:", 
 "@uniprot": "http://purl.uniprot.org/taxonomy/"
@@ -98,7 +183,6 @@
 "^skos:historyNote": "Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlOTUWriter@407c985 $Rev: 1040 $", 
 "otuById": {
 "Tl1970982": {
-"^ot:altLabel": "Leuconostoc lactis", 
 "^ot:originalLabel": "Leuconostoc lactis KACC 91922", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 49254, 
@@ -108,11 +192,14 @@
 }
 }, 
 "Tl1970983": {
-"^ot:originalLabel": "Fructobacillus pseudoficulneus DSM 15468"
+"^ot:originalLabel": "Fructobacillus pseudoficulneus DSM 15468", 
+"^ot:ottId": 5657387, 
+"^ot:ottTaxonName": "Fructobacillus pseudoficulneus DSM 15468"
 }, 
 "Tl1970984": {
-"^ot:altLabel": "Leuconostoc fallax", 
 "^ot:originalLabel": "Leuconostoc fallax KCTC 3537", 
+"^ot:ottId": 108118, 
+"^ot:ottTaxonName": "Leuconostoc fallax KCTC 3537", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 49257, 
 "@tb:identifier.taxonVariant": 116867, 
@@ -121,10 +208,14 @@
 }
 }, 
 "Tl1970985": {
-"^ot:originalLabel": "Fructobacillus durionis DSM 19113"
+"^ot:originalLabel": "Fructobacillus durionis DSM 19113", 
+"^ot:ottId": 5657388, 
+"^ot:ottTaxonName": "Fructobacillus durionis DSM 19113"
 }, 
 "Tl1970986": {
 "^ot:originalLabel": "Lactobacillus delbrueckii subsp. bulgaricus ATCC 11842", 
+"^ot:ottId": 510255, 
+"^ot:ottTaxonName": "Lactobacillus delbrueckii subsp. bulgaricus ATCC 11842 = JCM 1002", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 340360, 
 "@tb:identifier.taxonVariant": 377090, 
@@ -133,7 +224,6 @@
 }
 }, 
 "Tl1970987": {
-"^ot:altLabel": "Leuconostoc mesenteroides", 
 "^ot:originalLabel": "Leuconostoc mesenteroides ATCC 8293", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 49253, 
@@ -143,8 +233,9 @@
 }
 }, 
 "Tl1970988": {
-"^ot:altLabel": "Leuconostoc inhae", 
 "^ot:originalLabel": "Leuconostoc inhae KCTC 3774", 
+"^ot:ottId": 1089234, 
+"^ot:ottTaxonName": "Leuconostoc inhae KCTC 3774", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 166447, 
 "@tb:identifier.taxonVariant": 241194, 
@@ -156,8 +247,9 @@
 "^ot:originalLabel": "Fructobacillus fructosus NRIC 1058"
 }, 
 "Tl1970990": {
-"^ot:altLabel": "Leuconostoc gelidum", 
 "^ot:originalLabel": "Leuconostoc gelidum JB7", 
+"^ot:ottId": 187445, 
+"^ot:ottTaxonName": "Leuconostoc gelidum JB7", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 49252, 
 "@tb:identifier.taxonVariant": 116851, 
@@ -166,8 +258,9 @@
 }
 }, 
 "Tl1970991": {
-"^ot:altLabel": "Leuconostoc citreum", 
 "^ot:originalLabel": "Leuconostoc citreum KM20", 
+"^ot:ottId": 151728, 
+"^ot:ottTaxonName": "Leuconostoc citreum KM20", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 60278, 
 "@tb:identifier.taxonVariant": 133607, 
@@ -176,8 +269,9 @@
 }
 }, 
 "Tl1970992": {
-"^ot:altLabel": "Leuconostoc carnosum", 
 "^ot:originalLabel": "Leuconostoc carnosum JB16", 
+"^ot:ottId": 187443, 
+"^ot:ottTaxonName": "Leuconostoc carnosum JB16", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 49258, 
 "@tb:identifier.taxonVariant": 116868, 
@@ -189,8 +283,9 @@
 "^ot:originalLabel": "Fructobacillus tropaeoli F214-1"
 }, 
 "Tl1970994": {
-"^ot:altLabel": "Leuconostoc pseudomesenteroides", 
 "^ot:originalLabel": "Leuconostoc pseudomesenteroides 1159", 
+"^ot:ottId": 5392367, 
+"^ot:ottTaxonName": "Leuconostoc pseudomesenteroides 1159", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 60282, 
 "@tb:identifier.taxonVariant": 133614, 
@@ -199,8 +294,9 @@
 }
 }, 
 "Tl1970995": {
-"^ot:altLabel": "Leuconostoc kimchii", 
 "^ot:originalLabel": "Leuconostoc kimchii IMSNU 11154", 
+"^ot:ottId": 555262, 
+"^ot:ottTaxonName": "Leuconostoc kimchii IMSNU 11154", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 134950, 
 "@tb:identifier.taxonVariant": 211757, 
@@ -226,7 +322,18 @@
 "Tr89557": {
 "@label": "MLT", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:undefined", 
+"^ot:branchLengthTimeUnit": "Myr", 
+"^ot:curatedType": "Maximum likelihood ", 
+"^ot:inGroupClade": "Tn13178598", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "Tn13178603", 
+"^ot:specifiedRoot": "Tn13178603", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 15, 
 "^tb:quality.tree": "Unrated", 
