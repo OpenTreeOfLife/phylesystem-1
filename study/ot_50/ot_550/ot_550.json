@@ -58,22 +58,109 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2016-02-01T16:58:21.913Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:curatorName": "Dail Laughinghouse", 
+"substitutions": {
+"substitution": [
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": "$1"
+}, 
+"old": {
+"$": "^(\\S*\\s+\\S*).*"
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2016-02-01T16:58:21.913Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"Tr79865"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Dail Laughinghouse"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S16716"
 }, 
+"^ot:focalClade": 5342313, 
+"^ot:focalCladeOTTTaxonName": "Embryophyta", 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "Tls41272"
 ], 
 "^ot:studyId": "ot_550", 
-"^ot:studyPublicationReference": "Singh R.K., Gase K., Baldwin I.T., & Pandey S.P. 2015. Molecular evolution and diversification of the Argonaute family of proteins in plants. BMC Plant Biology, .", 
+"^ot:studyPublication": {
+"@href": "http://dx.doi.org/10.1186/s12870-014-0364-6"
+}, 
+"^ot:studyPublicationReference": "Ravi K Singh, Klaus Gase, Ian T Baldwin, Shree P Pandey, 2015, 'Molecular evolution and diversification of the Argonaute family of proteins in plants', BMC Plant Biology, vol. 15, no. 1, p. 23", 
 "^ot:studyYear": 2015, 
+"^ot:tag": [], 
 "^ot:taxonLinkPrefixes": {
 "@ubio": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:", 
 "@uniprot": "http://purl.uniprot.org/taxonomy/"
@@ -96,8 +183,9 @@
 "^skos:historyNote": "Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlOTUWriter@31f25938 $Rev: 1040 $", 
 "otuById": {
 "Tl1666607": {
-"^ot:altLabel": "Vitis vinifera", 
 "^ot:originalLabel": "Vitis vinifera VvAGO5like", 
+"^ot:ottId": 756728, 
+"^ot:ottTaxonName": "Vitis vinifera", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 621749, 
 "@tb:identifier.taxonVariant": 834774, 
@@ -106,8 +194,9 @@
 }
 }, 
 "Tl1666608": {
-"^ot:altLabel": "Arabidopsis thaliana", 
 "^ot:originalLabel": "Arabidopsis thaliana AtAGO1", 
+"^ot:ottId": 309263, 
+"^ot:ottTaxonName": "Arabidopsis thaliana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 624067, 
 "@tb:identifier.taxonVariant": 836890, 
@@ -116,8 +205,9 @@
 }
 }, 
 "Tl1666609": {
-"^ot:altLabel": "Medicago truncatula Gaertn.", 
 "^ot:originalLabel": "Medicago truncatula MtAGO7", 
+"^ot:ottId": 1060499, 
+"^ot:ottTaxonName": "Medicago truncatula", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 17129, 
 "@tb:identifier.taxonVariant": 40133, 
@@ -127,8 +217,9 @@
 "^skos:prefLabel": "Medicago truncatula"
 }, 
 "Tl1666610": {
-"^ot:altLabel": "Prunus persica", 
 "^ot:originalLabel": "Prunus persica PprAGO1b", 
+"^ot:ottId": 259054, 
+"^ot:ottTaxonName": "Prunus persica", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 23921, 
 "@tb:identifier.taxonVariant": 55869, 
@@ -137,8 +228,9 @@
 }
 }, 
 "Tl1666611": {
-"^ot:altLabel": "Solanum lycopersicum", 
 "^ot:originalLabel": "Solanum lycopersicum SlAGOlike1", 
+"^ot:ottId": 378964, 
+"^ot:ottTaxonName": "Solanum lycopersicum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 16506, 
 "@tb:identifier.taxonVariant": 63526, 
@@ -147,8 +239,9 @@
 }
 }, 
 "Tl1666612": {
-"^ot:altLabel": "Brachypodium distachyon", 
 "^ot:originalLabel": "Brachypodium distachyon BdAGO1Clike", 
+"^ot:ottId": 413237, 
+"^ot:ottTaxonName": "Brachypodium distachyon", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3914, 
 "@tb:identifier.taxonVariant": 9330, 
@@ -157,8 +250,9 @@
 }
 }, 
 "Tl1666613": {
-"^ot:altLabel": "Homo sapiens", 
 "^ot:originalLabel": "Homo sapiens HsAGO2", 
+"^ot:ottId": 770315, 
+"^ot:ottTaxonName": "Homo sapiens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 13680, 
 "@tb:identifier.taxonVariant": 32274, 
@@ -167,8 +261,9 @@
 }
 }, 
 "Tl1666614": {
-"^ot:altLabel": "Ricinus communis", 
 "^ot:originalLabel": "Ricinus communis RcAGO1", 
+"^ot:ottId": 339346, 
+"^ot:ottTaxonName": "Ricinus communis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 34664, 
 "@tb:identifier.taxonVariant": 80254, 
@@ -177,8 +272,9 @@
 }
 }, 
 "Tl1666615": {
-"^ot:altLabel": "Thellungiella halophila", 
 "^ot:originalLabel": "Thellungiella halophila ThAGO2", 
+"^ot:ottId": 991618, 
+"^ot:ottTaxonName": "Eutrema halophilum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 33955, 
 "@tb:identifier.taxonVariant": 78387, 
@@ -188,8 +284,9 @@
 "^skos:prefLabel": "Eutrema salsugineum"
 }, 
 "Tl1666616": {
-"^ot:altLabel": "Volvox carteri", 
 "^ot:originalLabel": "Volvox carteri VcAGOlike", 
+"^ot:ottId": 391120, 
+"^ot:ottTaxonName": "Volvox carteri", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 30800, 
 "@tb:identifier.taxonVariant": 71911, 
@@ -198,8 +295,9 @@
 }
 }, 
 "Tl1666617": {
-"^ot:altLabel": "Manihot esculenta", 
 "^ot:originalLabel": "Manihot esculenta MeAGO10", 
+"^ot:ottId": 339369, 
+"^ot:ottTaxonName": "Manihot esculenta", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 50863, 
 "@tb:identifier.taxonVariant": 800312, 
@@ -208,8 +306,9 @@
 }
 }, 
 "Tl1666618": {
-"^ot:altLabel": "Medicago truncatula Gaertn.", 
 "^ot:originalLabel": "Medicago truncatula MtAGO4b", 
+"^ot:ottId": 1060499, 
+"^ot:ottTaxonName": "Medicago truncatula", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 17129, 
 "@tb:identifier.taxonVariant": 40133, 
@@ -219,8 +318,9 @@
 "^skos:prefLabel": "Medicago truncatula"
 }, 
 "Tl1666619": {
-"^ot:altLabel": "Citrus aurantium L. var. sinensis L.", 
 "^ot:originalLabel": "Citrus sinensis CsnAGO1", 
+"^ot:ottId": 3942433, 
+"^ot:ottTaxonName": "Citrus sinensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6225, 
 "@tb:identifier.taxonVariant": 15069, 
@@ -230,8 +330,9 @@
 "^skos:prefLabel": "Citrus sinensis"
 }, 
 "Tl1666620": {
-"^ot:altLabel": "Solanum lycopersicum", 
 "^ot:originalLabel": "Solanum lycopersicum SlAGOlike3", 
+"^ot:ottId": 378964, 
+"^ot:ottTaxonName": "Solanum lycopersicum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 16506, 
 "@tb:identifier.taxonVariant": 63526, 
@@ -240,8 +341,9 @@
 }
 }, 
 "Tl1666621": {
-"^ot:altLabel": "Malus domestica", 
 "^ot:originalLabel": "Malus domestica MdAGO1b", 
+"^ot:ottId": 3902985, 
+"^ot:ottTaxonName": "Malus domestica", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 627851, 
 "@tb:identifier.taxonVariant": 841487, 
@@ -250,8 +352,9 @@
 }
 }, 
 "Tl1666622": {
-"^ot:altLabel": "Vitis vinifera", 
 "^ot:originalLabel": "Vitis vinifera VvAGO10like", 
+"^ot:ottId": 756728, 
+"^ot:ottTaxonName": "Vitis vinifera", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 621749, 
 "@tb:identifier.taxonVariant": 834774, 
@@ -260,8 +363,9 @@
 }
 }, 
 "Tl1666623": {
-"^ot:altLabel": "Lotus japonicus", 
 "^ot:originalLabel": "Lotus japonicus LjAGO7", 
+"^ot:ottId": 1081728, 
+"^ot:ottTaxonName": "Lotus japonicus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 16370, 
 "@tb:identifier.taxonVariant": 38352, 
@@ -270,8 +374,9 @@
 }
 }, 
 "Tl1666624": {
-"^ot:altLabel": "Pisum sativum", 
 "^ot:originalLabel": "Pisum sativum PsAGO1", 
+"^ot:ottId": 359905, 
+"^ot:ottTaxonName": "Pisum sativum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22612, 
 "@tb:identifier.taxonVariant": 52745, 
@@ -280,8 +385,9 @@
 }
 }, 
 "Tl1666625": {
-"^ot:altLabel": "Carica papaya", 
 "^ot:originalLabel": "Carica papaya CpAGO4", 
+"^ot:ottId": 429474, 
+"^ot:ottTaxonName": "Carica papaya", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5051, 
 "@tb:identifier.taxonVariant": 12278, 
@@ -290,8 +396,9 @@
 }
 }, 
 "Tl1666626": {
-"^ot:altLabel": "Brachypodium distachyon", 
 "^ot:originalLabel": "Brachypodium distachyon BdAGO7like", 
+"^ot:ottId": 413237, 
+"^ot:ottTaxonName": "Brachypodium distachyon", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3914, 
 "@tb:identifier.taxonVariant": 9330, 
@@ -300,8 +407,9 @@
 }
 }, 
 "Tl1666627": {
-"^ot:altLabel": "Thellungiella halophila", 
 "^ot:originalLabel": "Thellungiella halophila ThAGO5", 
+"^ot:ottId": 991618, 
+"^ot:ottTaxonName": "Eutrema halophilum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 33955, 
 "@tb:identifier.taxonVariant": 78387, 
@@ -311,8 +419,9 @@
 "^skos:prefLabel": "Eutrema salsugineum"
 }, 
 "Tl1666628": {
-"^ot:altLabel": "Vitis vinifera", 
 "^ot:originalLabel": "Vitis vinifera VvPNH1", 
+"^ot:ottId": 756728, 
+"^ot:ottTaxonName": "Vitis vinifera", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 621749, 
 "@tb:identifier.taxonVariant": 834774, 
@@ -321,8 +430,9 @@
 }
 }, 
 "Tl1666629": {
-"^ot:altLabel": "Eucalyptus grandis", 
 "^ot:originalLabel": "Eucalyptus grandis EgAGO10b", 
+"^ot:ottId": 40959, 
+"^ot:ottTaxonName": "Eucalyptus grandis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 10679, 
 "@tb:identifier.taxonVariant": 25582, 
@@ -331,8 +441,9 @@
 }
 }, 
 "Tl1666630": {
-"^ot:altLabel": "Medicago truncatula Gaertn.", 
 "^ot:originalLabel": "Medicago truncatula MtAGO6", 
+"^ot:ottId": 1060499, 
+"^ot:ottTaxonName": "Medicago truncatula", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 17129, 
 "@tb:identifier.taxonVariant": 40133, 
@@ -342,8 +453,9 @@
 "^skos:prefLabel": "Medicago truncatula"
 }, 
 "Tl1666631": {
-"^ot:altLabel": "Sorghum bicolor", 
 "^ot:originalLabel": "Sorghum bicolor SbAGO4", 
+"^ot:ottId": 552986, 
+"^ot:ottTaxonName": "Sorghum bicolor", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 27354, 
 "@tb:identifier.taxonVariant": 63850, 
@@ -352,8 +464,9 @@
 }
 }, 
 "Tl1666632": {
-"^ot:altLabel": "Populus trichocarpa", 
 "^ot:originalLabel": "Populus trichocarpa PtAGO10", 
+"^ot:ottId": 8861, 
+"^ot:ottTaxonName": "Populus trichocarpa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 623778, 
 "@tb:identifier.taxonVariant": 836504, 
@@ -362,8 +475,9 @@
 }
 }, 
 "Tl1666633": {
-"^ot:altLabel": "Oryza sativa", 
 "^ot:originalLabel": "Oryza sativa OsMLE1", 
+"^ot:ottId": 709894, 
+"^ot:ottTaxonName": "Oryza sativa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 622369, 
 "@tb:identifier.taxonVariant": 835042, 
@@ -372,8 +486,9 @@
 }
 }, 
 "Tl1666634": {
-"^ot:altLabel": "Mimulus guttatus", 
 "^ot:originalLabel": "Mimulus guttatus MgAGO4", 
+"^ot:ottId": 596473, 
+"^ot:ottTaxonName": "Erythranthe guttata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 17834, 
 "@tb:identifier.taxonVariant": 41729, 
@@ -382,8 +497,9 @@
 }
 }, 
 "Tl1666635": {
-"^ot:altLabel": "Zea mays", 
 "^ot:originalLabel": "Zea mays ZmAGO1a", 
+"^ot:ottId": 605194, 
+"^ot:ottTaxonName": "Zea mays", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 31231, 
 "@tb:identifier.taxonVariant": 72895, 
@@ -392,8 +508,9 @@
 }
 }, 
 "Tl1666636": {
-"^ot:altLabel": "Chlamydomonas reinhardtii", 
 "^ot:originalLabel": "Chlamydomonas reinhardtii CrnAGO6", 
+"^ot:ottId": 33153, 
+"^ot:ottTaxonName": "Chlamydomonas reinhardtii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5860, 
 "@tb:identifier.taxonVariant": 14193, 
@@ -402,8 +519,9 @@
 }
 }, 
 "Tl1666637": {
-"^ot:altLabel": "Physcomitrella patens", 
 "^ot:originalLabel": "Physcomitrella patens PptAGOlike2", 
+"^ot:ottId": 821359, 
+"^ot:ottTaxonName": "Physcomitrella patens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22205, 
 "@tb:identifier.taxonVariant": 51642, 
@@ -412,8 +530,9 @@
 }
 }, 
 "Tl1666638": {
-"^ot:altLabel": "Capsella rubella", 
 "^ot:originalLabel": "Capsella rubella CrbAGO6", 
+"^ot:ottId": 19798, 
+"^ot:ottTaxonName": "Capsella rubella", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 4844, 
 "@tb:identifier.taxonVariant": 11671, 
@@ -422,8 +541,9 @@
 }
 }, 
 "Tl1666639": {
-"^ot:altLabel": "Linum usitatissimum", 
 "^ot:originalLabel": "Linum usitatissimum LuAGO4b", 
+"^ot:ottId": 1000262, 
+"^ot:ottTaxonName": "Linum usitatissimum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 50874, 
 "@tb:identifier.taxonVariant": 120418, 
@@ -432,8 +552,9 @@
 }
 }, 
 "Tl1666640": {
-"^ot:altLabel": "Nicotiana benthamiana", 
 "^ot:originalLabel": "Nicotiana benthamiana NbAGO1.1", 
+"^ot:ottId": 1020638, 
+"^ot:ottTaxonName": "Nicotiana benthamiana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 50909, 
 "@tb:identifier.taxonVariant": 120506, 
@@ -442,8 +563,9 @@
 }
 }, 
 "Tl1666641": {
-"^ot:altLabel": "Hordeum vulgare", 
 "^ot:originalLabel": "Hordeum vulgare HvAGO10", 
+"^ot:ottId": 657948, 
+"^ot:ottTaxonName": "Hordeum vulgare", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 13720, 
 "@tb:identifier.taxonVariant": 32404, 
@@ -452,8 +574,9 @@
 }
 }, 
 "Tl1666642": {
-"^ot:altLabel": "Glycine max", 
 "^ot:originalLabel": "Glycine max GmAGO16like", 
+"^ot:ottId": 681762, 
+"^ot:ottTaxonName": "Glycine max", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 627060, 
 "@tb:identifier.taxonVariant": 841435, 
@@ -462,8 +585,9 @@
 }
 }, 
 "Tl1666643": {
-"^ot:altLabel": "Malus domestica", 
 "^ot:originalLabel": "Malus domestica MdAGO9", 
+"^ot:ottId": 3902985, 
+"^ot:ottTaxonName": "Malus domestica", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 627851, 
 "@tb:identifier.taxonVariant": 841487, 
@@ -472,8 +596,9 @@
 }
 }, 
 "Tl1666644": {
-"^ot:altLabel": "Carica papaya", 
 "^ot:originalLabel": "Carica papaya CpAGO5", 
+"^ot:ottId": 429474, 
+"^ot:ottTaxonName": "Carica papaya", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5051, 
 "@tb:identifier.taxonVariant": 12278, 
@@ -482,8 +607,9 @@
 }
 }, 
 "Tl1666645": {
-"^ot:altLabel": "Nicotiana benthamiana", 
 "^ot:originalLabel": "Nicotiana benthamiana NbAGO1.2", 
+"^ot:ottId": 1020638, 
+"^ot:ottTaxonName": "Nicotiana benthamiana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 50909, 
 "@tb:identifier.taxonVariant": 120506, 
@@ -492,8 +618,9 @@
 }
 }, 
 "Tl1666646": {
-"^ot:altLabel": "Glycine max", 
 "^ot:originalLabel": "Glycine max GmPNH1like1", 
+"^ot:ottId": 681762, 
+"^ot:ottTaxonName": "Glycine max", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 627060, 
 "@tb:identifier.taxonVariant": 841435, 
@@ -502,8 +629,9 @@
 }
 }, 
 "Tl1666647": {
-"^ot:altLabel": "Manihot esculenta", 
 "^ot:originalLabel": "Manihot esculenta MeAGO1", 
+"^ot:ottId": 339369, 
+"^ot:ottTaxonName": "Manihot esculenta", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 50863, 
 "@tb:identifier.taxonVariant": 800312, 
@@ -512,8 +640,9 @@
 }
 }, 
 "Tl1666648": {
-"^ot:altLabel": "Brachypodium distachyon", 
 "^ot:originalLabel": "Brachypodium distachyon BdAGO4Alike", 
+"^ot:ottId": 413237, 
+"^ot:ottTaxonName": "Brachypodium distachyon", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3914, 
 "@tb:identifier.taxonVariant": 9330, 
@@ -522,8 +651,9 @@
 }
 }, 
 "Tl1666649": {
-"^ot:altLabel": "Physcomitrella patens", 
 "^ot:originalLabel": "Physcomitrella patens PptAGO10", 
+"^ot:ottId": 821359, 
+"^ot:ottTaxonName": "Physcomitrella patens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22205, 
 "@tb:identifier.taxonVariant": 51642, 
@@ -532,8 +662,9 @@
 }
 }, 
 "Tl1666650": {
-"^ot:altLabel": "Manihot esculenta", 
 "^ot:originalLabel": "Manihot esculenta MeAGO5", 
+"^ot:ottId": 339369, 
+"^ot:ottTaxonName": "Manihot esculenta", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 50863, 
 "@tb:identifier.taxonVariant": 800312, 
@@ -542,8 +673,9 @@
 }
 }, 
 "Tl1666651": {
-"^ot:altLabel": "Ricinus communis", 
 "^ot:originalLabel": "Ricinus communis RcAGO7", 
+"^ot:ottId": 339346, 
+"^ot:ottTaxonName": "Ricinus communis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 34664, 
 "@tb:identifier.taxonVariant": 80254, 
@@ -552,8 +684,9 @@
 }
 }, 
 "Tl1666652": {
-"^ot:altLabel": "Pelargonium hortorum", 
 "^ot:originalLabel": "Pelargonium hortorum PhAGO4like", 
+"^ot:ottId": 3942277, 
+"^ot:ottTaxonName": "Pelargonium x hortorum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 50881, 
 "@tb:identifier.taxonVariant": 120437, 
@@ -563,8 +696,9 @@
 "^skos:prefLabel": "Pelargonium x hortorum"
 }, 
 "Tl1666653": {
-"^ot:altLabel": "Brassica rapa", 
 "^ot:originalLabel": "Brassica rapa BrAGO4", 
+"^ot:ottId": 833632, 
+"^ot:ottTaxonName": "Brassica rapa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 624068, 
 "@tb:identifier.taxonVariant": 836901, 
@@ -573,8 +707,9 @@
 }
 }, 
 "Tl1666654": {
-"^ot:altLabel": "Citrus aurantium L. var. sinensis L.", 
 "^ot:originalLabel": "Citrus sinensis CsnAGO9", 
+"^ot:ottId": 3942433, 
+"^ot:ottTaxonName": "Citrus sinensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6225, 
 "@tb:identifier.taxonVariant": 15069, 
@@ -584,8 +719,9 @@
 "^skos:prefLabel": "Citrus sinensis"
 }, 
 "Tl1666655": {
-"^ot:altLabel": "Glycine max", 
 "^ot:originalLabel": "Glycine max GmAGOlike2", 
+"^ot:ottId": 681762, 
+"^ot:ottTaxonName": "Glycine max", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 627060, 
 "@tb:identifier.taxonVariant": 841435, 
@@ -594,8 +730,9 @@
 }
 }, 
 "Tl1666656": {
-"^ot:altLabel": "Medicago truncatula Gaertn.", 
 "^ot:originalLabel": "Medicago truncatula MtAGO2", 
+"^ot:ottId": 1060499, 
+"^ot:ottTaxonName": "Medicago truncatula", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 17129, 
 "@tb:identifier.taxonVariant": 40133, 
@@ -605,8 +742,9 @@
 "^skos:prefLabel": "Medicago truncatula"
 }, 
 "Tl1666657": {
-"^ot:altLabel": "Oryza sativa", 
 "^ot:originalLabel": "Oryza sativa OsSHL4", 
+"^ot:ottId": 709894, 
+"^ot:ottTaxonName": "Oryza sativa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 622369, 
 "@tb:identifier.taxonVariant": 835042, 
@@ -615,8 +753,9 @@
 }
 }, 
 "Tl1666658": {
-"^ot:altLabel": "Vitis vinifera", 
 "^ot:originalLabel": "Vitis vinifera VvAGO2like", 
+"^ot:ottId": 756728, 
+"^ot:ottTaxonName": "Vitis vinifera", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 621749, 
 "@tb:identifier.taxonVariant": 834774, 
@@ -625,8 +764,9 @@
 }
 }, 
 "Tl1666659": {
-"^ot:altLabel": "Phaseolus vulgaris", 
 "^ot:originalLabel": "Phaseolus vulgaris PvAGO4", 
+"^ot:ottId": 825707, 
+"^ot:ottTaxonName": "Phaseolus vulgaris", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 21733, 
 "@tb:identifier.taxonVariant": 50553, 
@@ -635,8 +775,9 @@
 }
 }, 
 "Tl1666660": {
-"^ot:altLabel": "Prunus persica", 
 "^ot:originalLabel": "Prunus persica PprAGO4a", 
+"^ot:ottId": 259054, 
+"^ot:ottTaxonName": "Prunus persica", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 23921, 
 "@tb:identifier.taxonVariant": 55869, 
@@ -645,8 +786,9 @@
 }
 }, 
 "Tl1666661": {
-"^ot:altLabel": "Arabidopsis lyrata", 
 "^ot:originalLabel": "Arabidopsis lyrata AlAGO6", 
+"^ot:ottId": 840257, 
+"^ot:ottTaxonName": "Arabidopsis lyrata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 33986, 
 "@tb:identifier.taxonVariant": 78500, 
@@ -655,8 +797,9 @@
 }
 }, 
 "Tl1666662": {
-"^ot:altLabel": "Sorghum bicolor", 
 "^ot:originalLabel": "Sorghum bicolor SbAGO10a", 
+"^ot:ottId": 552986, 
+"^ot:ottTaxonName": "Sorghum bicolor", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 27354, 
 "@tb:identifier.taxonVariant": 63850, 
@@ -665,8 +808,9 @@
 }
 }, 
 "Tl1666663": {
-"^ot:altLabel": "Oryza sativa", 
 "^ot:originalLabel": "Oryza sativa OsAGO13", 
+"^ot:ottId": 709894, 
+"^ot:ottTaxonName": "Oryza sativa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 622369, 
 "@tb:identifier.taxonVariant": 835042, 
@@ -675,8 +819,9 @@
 }
 }, 
 "Tl1666664": {
-"^ot:altLabel": "Sorghum bicolor", 
 "^ot:originalLabel": "Sorghum bicolor SbAGO7", 
+"^ot:ottId": 552986, 
+"^ot:ottTaxonName": "Sorghum bicolor", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 27354, 
 "@tb:identifier.taxonVariant": 63850, 
@@ -685,8 +830,9 @@
 }
 }, 
 "Tl1666665": {
-"^ot:altLabel": "Linum usitatissimum", 
 "^ot:originalLabel": "Linum usitatissimum LuAGO6", 
+"^ot:ottId": 1000262, 
+"^ot:ottTaxonName": "Linum usitatissimum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 50874, 
 "@tb:identifier.taxonVariant": 120418, 
@@ -695,8 +841,9 @@
 }
 }, 
 "Tl1666666": {
-"^ot:altLabel": "Oryza sativa", 
 "^ot:originalLabel": "Oryza sativa OsAGO1C", 
+"^ot:ottId": 709894, 
+"^ot:ottTaxonName": "Oryza sativa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 622369, 
 "@tb:identifier.taxonVariant": 835042, 
@@ -705,8 +852,9 @@
 }
 }, 
 "Tl1666667": {
-"^ot:altLabel": "Carica papaya", 
 "^ot:originalLabel": "Carica papaya CpAGO6", 
+"^ot:ottId": 429474, 
+"^ot:ottTaxonName": "Carica papaya", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5051, 
 "@tb:identifier.taxonVariant": 12278, 
@@ -715,8 +863,9 @@
 }
 }, 
 "Tl1666668": {
-"^ot:altLabel": "Citrus aurantium L. var. sinensis L.", 
 "^ot:originalLabel": "Citrus sinensis CsnAGO5", 
+"^ot:ottId": 3942433, 
+"^ot:ottTaxonName": "Citrus sinensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6225, 
 "@tb:identifier.taxonVariant": 15069, 
@@ -726,8 +875,9 @@
 "^skos:prefLabel": "Citrus sinensis"
 }, 
 "Tl1666669": {
-"^ot:altLabel": "Arabidopsis lyrata", 
 "^ot:originalLabel": "Arabidopsis lyrata AlAGO4", 
+"^ot:ottId": 840257, 
+"^ot:ottTaxonName": "Arabidopsis lyrata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 33986, 
 "@tb:identifier.taxonVariant": 78500, 
@@ -736,8 +886,9 @@
 }
 }, 
 "Tl1666670": {
-"^ot:altLabel": "Physcomitrella patens", 
 "^ot:originalLabel": "Physcomitrella patens PptAGOlike1", 
+"^ot:ottId": 821359, 
+"^ot:ottTaxonName": "Physcomitrella patens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22205, 
 "@tb:identifier.taxonVariant": 51642, 
@@ -746,8 +897,9 @@
 }
 }, 
 "Tl1666671": {
-"^ot:altLabel": "Capsella rubella", 
 "^ot:originalLabel": "Capsella rubella CrbAGO7", 
+"^ot:ottId": 19798, 
+"^ot:ottTaxonName": "Capsella rubella", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 4844, 
 "@tb:identifier.taxonVariant": 11671, 
@@ -756,8 +908,9 @@
 }
 }, 
 "Tl1666672": {
-"^ot:altLabel": "Picea glauca", 
 "^ot:originalLabel": "Picea glauca PgAGO", 
+"^ot:ottId": 771681, 
+"^ot:ottTaxonName": "Picea glauca", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 50633, 
 "@tb:identifier.taxonVariant": 119961, 
@@ -766,8 +919,9 @@
 }
 }, 
 "Tl1666673": {
-"^ot:altLabel": "Eucalyptus grandis", 
 "^ot:originalLabel": "Eucalyptus grandis EgAGO7", 
+"^ot:ottId": 40959, 
+"^ot:ottTaxonName": "Eucalyptus grandis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 10679, 
 "@tb:identifier.taxonVariant": 25582, 
@@ -776,8 +930,9 @@
 }
 }, 
 "Tl1666674": {
-"^ot:altLabel": "Vitis vinifera", 
 "^ot:originalLabel": "Vitis vinifera VvMEL1like", 
+"^ot:ottId": 756728, 
+"^ot:ottTaxonName": "Vitis vinifera", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 621749, 
 "@tb:identifier.taxonVariant": 834774, 
@@ -786,8 +941,9 @@
 }
 }, 
 "Tl1666675": {
-"^ot:altLabel": "Populus trichocarpa", 
 "^ot:originalLabel": "Populus trichocarpa PtAGO6", 
+"^ot:ottId": 8861, 
+"^ot:ottTaxonName": "Populus trichocarpa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 623778, 
 "@tb:identifier.taxonVariant": 836504, 
@@ -796,8 +952,9 @@
 }
 }, 
 "Tl1666676": {
-"^ot:altLabel": "Hordeum vulgare", 
 "^ot:originalLabel": "Hordeum vulgare HvAGO5", 
+"^ot:ottId": 657948, 
+"^ot:ottTaxonName": "Hordeum vulgare", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 13720, 
 "@tb:identifier.taxonVariant": 32404, 
@@ -806,8 +963,9 @@
 }
 }, 
 "Tl1666677": {
-"^ot:altLabel": "Oryza sativa", 
 "^ot:originalLabel": "Oryza sativa OsAGO17", 
+"^ot:ottId": 709894, 
+"^ot:ottTaxonName": "Oryza sativa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 622369, 
 "@tb:identifier.taxonVariant": 835042, 
@@ -816,8 +974,9 @@
 }
 }, 
 "Tl1666678": {
-"^ot:altLabel": "Phaseolus vulgaris", 
 "^ot:originalLabel": "Phaseolus vulgaris PvAGO10b", 
+"^ot:ottId": 825707, 
+"^ot:ottTaxonName": "Phaseolus vulgaris", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 21733, 
 "@tb:identifier.taxonVariant": 50553, 
@@ -826,8 +985,9 @@
 }
 }, 
 "Tl1666679": {
-"^ot:altLabel": "Linum usitatissimum", 
 "^ot:originalLabel": "Linum usitatissimum LuAGO10a", 
+"^ot:ottId": 1000262, 
+"^ot:ottTaxonName": "Linum usitatissimum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 50874, 
 "@tb:identifier.taxonVariant": 120418, 
@@ -836,8 +996,9 @@
 }
 }, 
 "Tl1666680": {
-"^ot:altLabel": "Medicago truncatula Gaertn.", 
 "^ot:originalLabel": "Medicago truncatula MtAGO4a", 
+"^ot:ottId": 1060499, 
+"^ot:ottTaxonName": "Medicago truncatula", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 17129, 
 "@tb:identifier.taxonVariant": 40133, 
@@ -847,8 +1008,9 @@
 "^skos:prefLabel": "Medicago truncatula"
 }, 
 "Tl1666681": {
-"^ot:altLabel": "Thellungiella halophila", 
 "^ot:originalLabel": "Thellungiella halophila ThAGO4", 
+"^ot:ottId": 991618, 
+"^ot:ottTaxonName": "Eutrema halophilum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 33955, 
 "@tb:identifier.taxonVariant": 78387, 
@@ -858,8 +1020,9 @@
 "^skos:prefLabel": "Eutrema salsugineum"
 }, 
 "Tl1666682": {
-"^ot:altLabel": "Carica papaya", 
 "^ot:originalLabel": "Carica papaya CpAGO7", 
+"^ot:ottId": 429474, 
+"^ot:ottTaxonName": "Carica papaya", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5051, 
 "@tb:identifier.taxonVariant": 12278, 
@@ -868,8 +1031,9 @@
 }
 }, 
 "Tl1666683": {
-"^ot:altLabel": "Thellungiella halophila", 
 "^ot:originalLabel": "Thellungiella halophila ThAGO8", 
+"^ot:ottId": 991618, 
+"^ot:ottTaxonName": "Eutrema halophilum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 33955, 
 "@tb:identifier.taxonVariant": 78387, 
@@ -879,8 +1043,9 @@
 "^skos:prefLabel": "Eutrema salsugineum"
 }, 
 "Tl1666684": {
-"^ot:altLabel": "Arabidopsis thaliana", 
 "^ot:originalLabel": "Arabidopsis thaliana AtAGOlike", 
+"^ot:ottId": 309263, 
+"^ot:ottTaxonName": "Arabidopsis thaliana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 624067, 
 "@tb:identifier.taxonVariant": 836890, 
@@ -889,8 +1054,9 @@
 }
 }, 
 "Tl1666685": {
-"^ot:altLabel": "Zea mays", 
 "^ot:originalLabel": "Zea mays ZmAGO1d", 
+"^ot:ottId": 605194, 
+"^ot:ottTaxonName": "Zea mays", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 31231, 
 "@tb:identifier.taxonVariant": 72895, 
@@ -899,8 +1065,9 @@
 }
 }, 
 "Tl1666686": {
-"^ot:altLabel": "Glycine max", 
 "^ot:originalLabel": "Glycine max GmPNH1like2", 
+"^ot:ottId": 681762, 
+"^ot:ottTaxonName": "Glycine max", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 627060, 
 "@tb:identifier.taxonVariant": 841435, 
@@ -909,8 +1076,9 @@
 }
 }, 
 "Tl1666687": {
-"^ot:altLabel": "Capsella rubella", 
 "^ot:originalLabel": "Capsella rubella CrbAGO5", 
+"^ot:ottId": 19798, 
+"^ot:ottTaxonName": "Capsella rubella", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 4844, 
 "@tb:identifier.taxonVariant": 11671, 
@@ -919,8 +1087,9 @@
 }
 }, 
 "Tl1666688": {
-"^ot:altLabel": "Populus trichocarpa", 
 "^ot:originalLabel": "Populus trichocarpa PtAGO7", 
+"^ot:ottId": 8861, 
+"^ot:ottTaxonName": "Populus trichocarpa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 623778, 
 "@tb:identifier.taxonVariant": 836504, 
@@ -929,8 +1098,9 @@
 }
 }, 
 "Tl1666689": {
-"^ot:altLabel": "Ricinus communis", 
 "^ot:originalLabel": "Ricinus communis RcAGO5", 
+"^ot:ottId": 339346, 
+"^ot:ottTaxonName": "Ricinus communis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 34664, 
 "@tb:identifier.taxonVariant": 80254, 
@@ -939,8 +1109,9 @@
 }
 }, 
 "Tl1666690": {
-"^ot:altLabel": "Physcomitrella patens", 
 "^ot:originalLabel": "Physcomitrella patens PptAGOlike3", 
+"^ot:ottId": 821359, 
+"^ot:ottTaxonName": "Physcomitrella patens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22205, 
 "@tb:identifier.taxonVariant": 51642, 
@@ -949,8 +1120,9 @@
 }
 }, 
 "Tl1666691": {
-"^ot:altLabel": "Malus domestica", 
 "^ot:originalLabel": "Malus domestica MdAGO10c", 
+"^ot:ottId": 3902985, 
+"^ot:ottTaxonName": "Malus domestica", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 627851, 
 "@tb:identifier.taxonVariant": 841487, 
@@ -959,8 +1131,9 @@
 }
 }, 
 "Tl1666692": {
-"^ot:altLabel": "Brachypodium distachyon", 
 "^ot:originalLabel": "Brachypodium distachyon BdAGO1Alike", 
+"^ot:ottId": 413237, 
+"^ot:ottTaxonName": "Brachypodium distachyon", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3914, 
 "@tb:identifier.taxonVariant": 9330, 
@@ -969,8 +1142,9 @@
 }
 }, 
 "Tl1666693": {
-"^ot:altLabel": "Capsella rubella", 
 "^ot:originalLabel": "Capsella rubella CrbAGO2", 
+"^ot:ottId": 19798, 
+"^ot:ottTaxonName": "Capsella rubella", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 4844, 
 "@tb:identifier.taxonVariant": 11671, 
@@ -979,8 +1153,9 @@
 }
 }, 
 "Tl1666694": {
-"^ot:altLabel": "Glycine max", 
 "^ot:originalLabel": "Glycine max GmAGO2like2", 
+"^ot:ottId": 681762, 
+"^ot:ottTaxonName": "Glycine max", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 627060, 
 "@tb:identifier.taxonVariant": 841435, 
@@ -989,8 +1164,9 @@
 }
 }, 
 "Tl1666695": {
-"^ot:altLabel": "Capsella rubella", 
 "^ot:originalLabel": "Capsella rubella CrbAGO1", 
+"^ot:ottId": 19798, 
+"^ot:ottTaxonName": "Capsella rubella", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 4844, 
 "@tb:identifier.taxonVariant": 11671, 
@@ -999,8 +1175,9 @@
 }
 }, 
 "Tl1666696": {
-"^ot:altLabel": "Medicago truncatula Gaertn.", 
 "^ot:originalLabel": "Medicago truncatula MtAGO4e", 
+"^ot:ottId": 1060499, 
+"^ot:ottTaxonName": "Medicago truncatula", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 17129, 
 "@tb:identifier.taxonVariant": 40133, 
@@ -1010,8 +1187,9 @@
 "^skos:prefLabel": "Medicago truncatula"
 }, 
 "Tl1666697": {
-"^ot:altLabel": "Vitis vinifera", 
 "^ot:originalLabel": "Vitis vinifera VvAGO4", 
+"^ot:ottId": 756728, 
+"^ot:ottTaxonName": "Vitis vinifera", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 621749, 
 "@tb:identifier.taxonVariant": 834774, 
@@ -1020,8 +1198,9 @@
 }
 }, 
 "Tl1666698": {
-"^ot:altLabel": "Brachypodium distachyon", 
 "^ot:originalLabel": "Brachypodium distachyon BdMELlike", 
+"^ot:ottId": 413237, 
+"^ot:ottTaxonName": "Brachypodium distachyon", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3914, 
 "@tb:identifier.taxonVariant": 9330, 
@@ -1030,8 +1209,9 @@
 }
 }, 
 "Tl1666699": {
-"^ot:altLabel": "Glycine max", 
 "^ot:originalLabel": "Glycine max GmAGO7like", 
+"^ot:ottId": 681762, 
+"^ot:ottTaxonName": "Glycine max", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 627060, 
 "@tb:identifier.taxonVariant": 841435, 
@@ -1040,8 +1220,9 @@
 }
 }, 
 "Tl1666700": {
-"^ot:altLabel": "Physcomitrella patens", 
 "^ot:originalLabel": "Physcomitrella patens PptAGO1", 
+"^ot:ottId": 821359, 
+"^ot:ottTaxonName": "Physcomitrella patens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22205, 
 "@tb:identifier.taxonVariant": 51642, 
@@ -1050,8 +1231,9 @@
 }
 }, 
 "Tl1666701": {
-"^ot:altLabel": "Brachypodium distachyon", 
 "^ot:originalLabel": "Brachypodium distachyon BdAGO12like", 
+"^ot:ottId": 413237, 
+"^ot:ottTaxonName": "Brachypodium distachyon", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3914, 
 "@tb:identifier.taxonVariant": 9330, 
@@ -1060,8 +1242,9 @@
 }
 }, 
 "Tl1666702": {
-"^ot:altLabel": "Brachypodium distachyon", 
 "^ot:originalLabel": "Brachypodium distachyon BdAGO1Blike", 
+"^ot:ottId": 413237, 
+"^ot:ottTaxonName": "Brachypodium distachyon", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3914, 
 "@tb:identifier.taxonVariant": 9330, 
@@ -1070,8 +1253,9 @@
 }
 }, 
 "Tl1666703": {
-"^ot:altLabel": "Medicago truncatula Gaertn.", 
 "^ot:originalLabel": "Medicago truncatula MtAGO3", 
+"^ot:ottId": 1060499, 
+"^ot:ottTaxonName": "Medicago truncatula", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 17129, 
 "@tb:identifier.taxonVariant": 40133, 
@@ -1081,8 +1265,9 @@
 "^skos:prefLabel": "Medicago truncatula"
 }, 
 "Tl1666704": {
-"^ot:altLabel": "Brassica rapa", 
 "^ot:originalLabel": "Brassica rapa BrAGO7", 
+"^ot:ottId": 833632, 
+"^ot:ottTaxonName": "Brassica rapa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 624068, 
 "@tb:identifier.taxonVariant": 836901, 
@@ -1091,8 +1276,9 @@
 }
 }, 
 "Tl1666705": {
-"^ot:altLabel": "Arabidopsis thaliana", 
 "^ot:originalLabel": "Arabidopsis thaliana AtAGO9", 
+"^ot:ottId": 309263, 
+"^ot:ottTaxonName": "Arabidopsis thaliana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 624067, 
 "@tb:identifier.taxonVariant": 836890, 
@@ -1101,8 +1287,9 @@
 }
 }, 
 "Tl1666706": {
-"^ot:altLabel": "Brassica rapa", 
 "^ot:originalLabel": "Brassica rapa BrAGO6", 
+"^ot:ottId": 833632, 
+"^ot:ottTaxonName": "Brassica rapa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 624068, 
 "@tb:identifier.taxonVariant": 836901, 
@@ -1111,8 +1298,9 @@
 }
 }, 
 "Tl1666707": {
-"^ot:altLabel": "Glycine max", 
 "^ot:originalLabel": "Glycine max GmAGOlike1", 
+"^ot:ottId": 681762, 
+"^ot:ottTaxonName": "Glycine max", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 627060, 
 "@tb:identifier.taxonVariant": 841435, 
@@ -1121,8 +1309,9 @@
 }
 }, 
 "Tl1666708": {
-"^ot:altLabel": "Carica papaya", 
 "^ot:originalLabel": "Carica papaya CpAGO2", 
+"^ot:ottId": 429474, 
+"^ot:ottTaxonName": "Carica papaya", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5051, 
 "@tb:identifier.taxonVariant": 12278, 
@@ -1131,8 +1320,9 @@
 }
 }, 
 "Tl1666709": {
-"^ot:altLabel": "Capsella rubella", 
 "^ot:originalLabel": "Capsella rubella CrbAGO4", 
+"^ot:ottId": 19798, 
+"^ot:ottTaxonName": "Capsella rubella", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 4844, 
 "@tb:identifier.taxonVariant": 11671, 
@@ -1141,8 +1331,9 @@
 }
 }, 
 "Tl1666710": {
-"^ot:altLabel": "Glycine max", 
 "^ot:originalLabel": "Glycine max GmAGO4like", 
+"^ot:ottId": 681762, 
+"^ot:ottTaxonName": "Glycine max", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 627060, 
 "@tb:identifier.taxonVariant": 841435, 
@@ -1151,8 +1342,9 @@
 }
 }, 
 "Tl1666711": {
-"^ot:altLabel": "Oryza sativa", 
 "^ot:originalLabel": "Oryza sativa OsAGO11", 
+"^ot:ottId": 709894, 
+"^ot:ottTaxonName": "Oryza sativa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 622369, 
 "@tb:identifier.taxonVariant": 835042, 
@@ -1161,8 +1353,9 @@
 }
 }, 
 "Tl1666712": {
-"^ot:altLabel": "Manihot esculenta", 
 "^ot:originalLabel": "Manihot esculenta MeAGO7b", 
+"^ot:ottId": 339369, 
+"^ot:ottTaxonName": "Manihot esculenta", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 50863, 
 "@tb:identifier.taxonVariant": 800312, 
@@ -1171,8 +1364,9 @@
 }
 }, 
 "Tl1666713": {
-"^ot:altLabel": "Brassica rapa", 
 "^ot:originalLabel": "Brassica rapa BrAGO9c", 
+"^ot:ottId": 833632, 
+"^ot:ottTaxonName": "Brassica rapa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 624068, 
 "@tb:identifier.taxonVariant": 836901, 
@@ -1181,8 +1375,9 @@
 }
 }, 
 "Tl1666714": {
-"^ot:altLabel": "Vitis vinifera", 
 "^ot:originalLabel": "Vitis vinifera VvAGO16like", 
+"^ot:ottId": 756728, 
+"^ot:ottTaxonName": "Vitis vinifera", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 621749, 
 "@tb:identifier.taxonVariant": 834774, 
@@ -1191,8 +1386,9 @@
 }
 }, 
 "Tl1666715": {
-"^ot:altLabel": "Pisum sativum", 
 "^ot:originalLabel": "Pisum sativum PsAGO2", 
+"^ot:ottId": 359905, 
+"^ot:ottTaxonName": "Pisum sativum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22612, 
 "@tb:identifier.taxonVariant": 52745, 
@@ -1201,8 +1397,9 @@
 }
 }, 
 "Tl1666716": {
-"^ot:altLabel": "Chlamydomonas reinhardtii", 
 "^ot:originalLabel": "Chlamydomonas reinhardtii CrnAGO2like", 
+"^ot:ottId": 33153, 
+"^ot:ottTaxonName": "Chlamydomonas reinhardtii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5860, 
 "@tb:identifier.taxonVariant": 14193, 
@@ -1211,8 +1408,9 @@
 }
 }, 
 "Tl1666717": {
-"^ot:altLabel": "Brachypodium distachyon", 
 "^ot:originalLabel": "Brachypodium distachyon BdAGO4Blike", 
+"^ot:ottId": 413237, 
+"^ot:ottTaxonName": "Brachypodium distachyon", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3914, 
 "@tb:identifier.taxonVariant": 9330, 
@@ -1221,8 +1419,9 @@
 }
 }, 
 "Tl1666718": {
-"^ot:altLabel": "Manihot esculenta", 
 "^ot:originalLabel": "Manihot esculenta MeAGOlike", 
+"^ot:ottId": 339369, 
+"^ot:ottTaxonName": "Manihot esculenta", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 50863, 
 "@tb:identifier.taxonVariant": 800312, 
@@ -1231,8 +1430,9 @@
 }
 }, 
 "Tl1666719": {
-"^ot:altLabel": "Brassica rapa", 
 "^ot:originalLabel": "Brassica rapa BrAGO1", 
+"^ot:ottId": 833632, 
+"^ot:ottTaxonName": "Brassica rapa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 624068, 
 "@tb:identifier.taxonVariant": 836901, 
@@ -1241,8 +1441,9 @@
 }
 }, 
 "Tl1666720": {
-"^ot:altLabel": "Brassica rapa", 
 "^ot:originalLabel": "Brassica rapa BrAGO9a", 
+"^ot:ottId": 833632, 
+"^ot:ottTaxonName": "Brassica rapa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 624068, 
 "@tb:identifier.taxonVariant": 836901, 
@@ -1251,8 +1452,9 @@
 }
 }, 
 "Tl1666721": {
-"^ot:altLabel": "Linum usitatissimum", 
 "^ot:originalLabel": "Linum usitatissimum LuAGO9", 
+"^ot:ottId": 1000262, 
+"^ot:ottTaxonName": "Linum usitatissimum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 50874, 
 "@tb:identifier.taxonVariant": 120418, 
@@ -1261,8 +1463,9 @@
 }
 }, 
 "Tl1666722": {
-"^ot:altLabel": "Vitis vinifera", 
 "^ot:originalLabel": "Vitis vinifera VvAGO1like", 
+"^ot:ottId": 756728, 
+"^ot:ottTaxonName": "Vitis vinifera", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 621749, 
 "@tb:identifier.taxonVariant": 834774, 
@@ -1271,8 +1474,9 @@
 }
 }, 
 "Tl1666723": {
-"^ot:altLabel": "Linum usitatissimum", 
 "^ot:originalLabel": "Linum usitatissimum LuAGO10b", 
+"^ot:ottId": 1000262, 
+"^ot:ottTaxonName": "Linum usitatissimum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 50874, 
 "@tb:identifier.taxonVariant": 120418, 
@@ -1281,8 +1485,9 @@
 }
 }, 
 "Tl1666724": {
-"^ot:altLabel": "Phaseolus vulgaris", 
 "^ot:originalLabel": "Phaseolus vulgaris PvAGO7", 
+"^ot:ottId": 825707, 
+"^ot:ottTaxonName": "Phaseolus vulgaris", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 21733, 
 "@tb:identifier.taxonVariant": 50553, 
@@ -1291,8 +1496,9 @@
 }
 }, 
 "Tl1666725": {
-"^ot:altLabel": "Carica papaya", 
 "^ot:originalLabel": "Carica papaya CpAGO1", 
+"^ot:ottId": 429474, 
+"^ot:ottTaxonName": "Carica papaya", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5051, 
 "@tb:identifier.taxonVariant": 12278, 
@@ -1301,8 +1507,9 @@
 }
 }, 
 "Tl1666726": {
-"^ot:altLabel": "Oryza sativa", 
 "^ot:originalLabel": "Oryza sativa OsAGO4A", 
+"^ot:ottId": 709894, 
+"^ot:ottTaxonName": "Oryza sativa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 622369, 
 "@tb:identifier.taxonVariant": 835042, 
@@ -1311,8 +1518,9 @@
 }
 }, 
 "Tl1666727": {
-"^ot:altLabel": "Malus domestica", 
 "^ot:originalLabel": "Malus domestica MdAGO7b", 
+"^ot:ottId": 3902985, 
+"^ot:ottTaxonName": "Malus domestica", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 627851, 
 "@tb:identifier.taxonVariant": 841487, 
@@ -1321,8 +1529,9 @@
 }
 }, 
 "Tl1666728": {
-"^ot:altLabel": "Prunus persica", 
 "^ot:originalLabel": "Prunus persica PprAGO10", 
+"^ot:ottId": 259054, 
+"^ot:ottTaxonName": "Prunus persica", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 23921, 
 "@tb:identifier.taxonVariant": 55869, 
@@ -1331,8 +1540,9 @@
 }
 }, 
 "Tl1666729": {
-"^ot:altLabel": "Brassica rapa", 
 "^ot:originalLabel": "Brassica rapa BrAGO9b", 
+"^ot:ottId": 833632, 
+"^ot:ottTaxonName": "Brassica rapa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 624068, 
 "@tb:identifier.taxonVariant": 836901, 
@@ -1341,8 +1551,9 @@
 }
 }, 
 "Tl1666730": {
-"^ot:altLabel": "Brachypodium distachyon", 
 "^ot:originalLabel": "Brachypodium distachyon BdMEL1like", 
+"^ot:ottId": 413237, 
+"^ot:ottTaxonName": "Brachypodium distachyon", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3914, 
 "@tb:identifier.taxonVariant": 9330, 
@@ -1351,8 +1562,9 @@
 }
 }, 
 "Tl1666731": {
-"^ot:altLabel": "Arabidopsis thaliana", 
 "^ot:originalLabel": "Arabidopsis thaliana AtAGO3", 
+"^ot:ottId": 309263, 
+"^ot:ottTaxonName": "Arabidopsis thaliana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 624067, 
 "@tb:identifier.taxonVariant": 836890, 
@@ -1361,8 +1573,9 @@
 }
 }, 
 "Tl1666732": {
-"^ot:altLabel": "Selaginella moellendorfii", 
 "^ot:originalLabel": "Selaginella moellendorfii SmAGO1a", 
+"^ot:ottId": 799880, 
+"^ot:ottTaxonName": "Selaginella moellendorffii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 98062, 
 "@tb:identifier.taxonVariant": 177199, 
@@ -1372,8 +1585,9 @@
 "^skos:prefLabel": "Selaginella moellendorffii"
 }, 
 "Tl1666733": {
-"^ot:altLabel": "Linum usitatissimum", 
 "^ot:originalLabel": "Linum usitatissimum LuAGO1", 
+"^ot:ottId": 1000262, 
+"^ot:ottTaxonName": "Linum usitatissimum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 50874, 
 "@tb:identifier.taxonVariant": 120418, 
@@ -1382,8 +1596,9 @@
 }
 }, 
 "Tl1666734": {
-"^ot:altLabel": "Nicotiana attenuata", 
 "^ot:originalLabel": "Nicotiana attenuata NaAGO8", 
+"^ot:ottId": 882065, 
+"^ot:ottTaxonName": "Nicotiana attenuata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 19089, 
 "@tb:identifier.taxonVariant": 44431, 
@@ -1392,8 +1607,9 @@
 }
 }, 
 "Tl1666735": {
-"^ot:altLabel": "Nicotiana attenuata", 
 "^ot:originalLabel": "Nicotiana attenuata NaAGO4a", 
+"^ot:ottId": 882065, 
+"^ot:ottTaxonName": "Nicotiana attenuata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 19089, 
 "@tb:identifier.taxonVariant": 44431, 
@@ -1402,8 +1618,9 @@
 }
 }, 
 "Tl1666736": {
-"^ot:altLabel": "Ricinus communis", 
 "^ot:originalLabel": "Ricinus communis RcAGO4a", 
+"^ot:ottId": 339346, 
+"^ot:ottTaxonName": "Ricinus communis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 34664, 
 "@tb:identifier.taxonVariant": 80254, 
@@ -1412,8 +1629,9 @@
 }
 }, 
 "Tl1666737": {
-"^ot:altLabel": "Zea mays", 
 "^ot:originalLabel": "Zea mays ZmAGO10b", 
+"^ot:ottId": 605194, 
+"^ot:ottTaxonName": "Zea mays", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 31231, 
 "@tb:identifier.taxonVariant": 72895, 
@@ -1422,8 +1640,9 @@
 }
 }, 
 "Tl1666738": {
-"^ot:altLabel": "Manihot esculenta", 
 "^ot:originalLabel": "Manihot esculenta MeAGO7a", 
+"^ot:ottId": 339369, 
+"^ot:ottTaxonName": "Manihot esculenta", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 50863, 
 "@tb:identifier.taxonVariant": 800312, 
@@ -1432,8 +1651,9 @@
 }
 }, 
 "Tl1666739": {
-"^ot:altLabel": "Oryza sativa", 
 "^ot:originalLabel": "Oryza sativa OsAGO1A", 
+"^ot:ottId": 709894, 
+"^ot:ottTaxonName": "Oryza sativa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 622369, 
 "@tb:identifier.taxonVariant": 835042, 
@@ -1442,8 +1662,9 @@
 }
 }, 
 "Tl1666740": {
-"^ot:altLabel": "Malus domestica", 
 "^ot:originalLabel": "Malus domestica MdAGO10b", 
+"^ot:ottId": 3902985, 
+"^ot:ottTaxonName": "Malus domestica", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 627851, 
 "@tb:identifier.taxonVariant": 841487, 
@@ -1452,8 +1673,9 @@
 }
 }, 
 "Tl1666741": {
-"^ot:altLabel": "Brassica rapa", 
 "^ot:originalLabel": "Brassica rapa BrAGO10", 
+"^ot:ottId": 833632, 
+"^ot:ottTaxonName": "Brassica rapa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 624068, 
 "@tb:identifier.taxonVariant": 836901, 
@@ -1462,8 +1684,9 @@
 }
 }, 
 "Tl1666742": {
-"^ot:altLabel": "Citrus aurantium L. var. sinensis L.", 
 "^ot:originalLabel": "Citrus sinensis CsnAGO6", 
+"^ot:ottId": 3942433, 
+"^ot:ottTaxonName": "Citrus sinensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6225, 
 "@tb:identifier.taxonVariant": 15069, 
@@ -1473,8 +1696,9 @@
 "^skos:prefLabel": "Citrus sinensis"
 }, 
 "Tl1666743": {
-"^ot:altLabel": "Linum usitatissimum", 
 "^ot:originalLabel": "Linum usitatissimum LuAGO4a", 
+"^ot:ottId": 1000262, 
+"^ot:ottTaxonName": "Linum usitatissimum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 50874, 
 "@tb:identifier.taxonVariant": 120418, 
@@ -1483,8 +1707,9 @@
 }
 }, 
 "Tl1666744": {
-"^ot:altLabel": "Citrus aurantium L. var. sinensis L.", 
 "^ot:originalLabel": "Citrus sinensis CsnAGO4", 
+"^ot:ottId": 3942433, 
+"^ot:ottTaxonName": "Citrus sinensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6225, 
 "@tb:identifier.taxonVariant": 15069, 
@@ -1494,8 +1719,9 @@
 "^skos:prefLabel": "Citrus sinensis"
 }, 
 "Tl1666745": {
-"^ot:altLabel": "Nicotiana attenuata", 
 "^ot:originalLabel": "Nicotiana attenuata NaAGO7", 
+"^ot:ottId": 882065, 
+"^ot:ottTaxonName": "Nicotiana attenuata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 19089, 
 "@tb:identifier.taxonVariant": 44431, 
@@ -1504,8 +1730,9 @@
 }
 }, 
 "Tl1666746": {
-"^ot:altLabel": "Medicago truncatula Gaertn.", 
 "^ot:originalLabel": "Medicago truncatula MtAGO4d", 
+"^ot:ottId": 1060499, 
+"^ot:ottTaxonName": "Medicago truncatula", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 17129, 
 "@tb:identifier.taxonVariant": 40133, 
@@ -1515,8 +1742,9 @@
 "^skos:prefLabel": "Medicago truncatula"
 }, 
 "Tl1666747": {
-"^ot:altLabel": "Thellungiella halophila", 
 "^ot:originalLabel": "Thellungiella halophila ThAGO9", 
+"^ot:ottId": 991618, 
+"^ot:ottTaxonName": "Eutrema halophilum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 33955, 
 "@tb:identifier.taxonVariant": 78387, 
@@ -1526,8 +1754,9 @@
 "^skos:prefLabel": "Eutrema salsugineum"
 }, 
 "Tl1666748": {
-"^ot:altLabel": "Zea mays", 
 "^ot:originalLabel": "Zea mays ZmAGO1c", 
+"^ot:ottId": 605194, 
+"^ot:ottTaxonName": "Zea mays", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 31231, 
 "@tb:identifier.taxonVariant": 72895, 
@@ -1536,8 +1765,9 @@
 }
 }, 
 "Tl1666749": {
-"^ot:altLabel": "Glycine max", 
 "^ot:originalLabel": "Glycine max GmAGO2like1", 
+"^ot:ottId": 681762, 
+"^ot:ottTaxonName": "Glycine max", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 627060, 
 "@tb:identifier.taxonVariant": 841435, 
@@ -1546,8 +1776,9 @@
 }
 }, 
 "Tl1666750": {
-"^ot:altLabel": "Kluyveromyces polysporus DSM 70294 klpo 541.16", 
 "^ot:originalLabel": "Kluyveromyces polysporus YeastAGO", 
+"^ot:ottId": 713057, 
+"^ot:ottTaxonName": "Vanderwaltozyma polyspora", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 622495, 
 "@tb:identifier.taxonVariant": 833440, 
@@ -1555,8 +1786,9 @@
 }
 }, 
 "Tl1666751": {
-"^ot:altLabel": "Arabidopsis lyrata", 
 "^ot:originalLabel": "Arabidopsis lyrata AlAGO5", 
+"^ot:ottId": 840257, 
+"^ot:ottTaxonName": "Arabidopsis lyrata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 33986, 
 "@tb:identifier.taxonVariant": 78500, 
@@ -1565,8 +1797,9 @@
 }
 }, 
 "Tl1666752": {
-"^ot:altLabel": "Malus domestica", 
 "^ot:originalLabel": "Malus domestica MdAGO5a", 
+"^ot:ottId": 3902985, 
+"^ot:ottTaxonName": "Malus domestica", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 627851, 
 "@tb:identifier.taxonVariant": 841487, 
@@ -1575,8 +1808,9 @@
 }
 }, 
 "Tl1666753": {
-"^ot:altLabel": "Linum usitatissimum", 
 "^ot:originalLabel": "Linum usitatissimum LuAGO5", 
+"^ot:ottId": 1000262, 
+"^ot:ottTaxonName": "Linum usitatissimum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 50874, 
 "@tb:identifier.taxonVariant": 120418, 
@@ -1585,8 +1819,9 @@
 }
 }, 
 "Tl1666754": {
-"^ot:altLabel": "Nicotiana attenuata", 
 "^ot:originalLabel": "Nicotiana attenuata NaAGO9", 
+"^ot:ottId": 882065, 
+"^ot:ottTaxonName": "Nicotiana attenuata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 19089, 
 "@tb:identifier.taxonVariant": 44431, 
@@ -1595,8 +1830,9 @@
 }
 }, 
 "Tl1666755": {
-"^ot:altLabel": "Brachypodium distachyon", 
 "^ot:originalLabel": "Brachypodium distachyon BdAGO18like", 
+"^ot:ottId": 413237, 
+"^ot:ottTaxonName": "Brachypodium distachyon", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3914, 
 "@tb:identifier.taxonVariant": 9330, 
@@ -1605,8 +1841,9 @@
 }
 }, 
 "Tl1666756": {
-"^ot:altLabel": "Thellungiella halophila", 
 "^ot:originalLabel": "Thellungiella halophila ThAGO7", 
+"^ot:ottId": 991618, 
+"^ot:ottTaxonName": "Eutrema halophilum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 33955, 
 "@tb:identifier.taxonVariant": 78387, 
@@ -1616,8 +1853,9 @@
 "^skos:prefLabel": "Eutrema salsugineum"
 }, 
 "Tl1666757": {
-"^ot:altLabel": "Nicotiana attenuata", 
 "^ot:originalLabel": "Nicotiana attenuata NaAGO1c", 
+"^ot:ottId": 882065, 
+"^ot:ottTaxonName": "Nicotiana attenuata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 19089, 
 "@tb:identifier.taxonVariant": 44431, 
@@ -1626,8 +1864,9 @@
 }
 }, 
 "Tl1666758": {
-"^ot:altLabel": "Eucalyptus grandis", 
 "^ot:originalLabel": "Eucalyptus grandis EgAGO1", 
+"^ot:ottId": 40959, 
+"^ot:ottTaxonName": "Eucalyptus grandis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 10679, 
 "@tb:identifier.taxonVariant": 25582, 
@@ -1636,8 +1875,9 @@
 }
 }, 
 "Tl1666759": {
-"^ot:altLabel": "Populus trichocarpa", 
 "^ot:originalLabel": "Populus trichocarpa PtAGO1", 
+"^ot:ottId": 8861, 
+"^ot:ottTaxonName": "Populus trichocarpa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 623778, 
 "@tb:identifier.taxonVariant": 836504, 
@@ -1646,8 +1886,9 @@
 }
 }, 
 "Tl1666760": {
-"^ot:altLabel": "Solanum lycopersicum", 
 "^ot:originalLabel": "Solanum lycopersicum SlAGO4b", 
+"^ot:ottId": 378964, 
+"^ot:ottTaxonName": "Solanum lycopersicum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 16506, 
 "@tb:identifier.taxonVariant": 63526, 
@@ -1656,8 +1897,9 @@
 }
 }, 
 "Tl1666761": {
-"^ot:altLabel": "Tribolium castaneum", 
 "^ot:originalLabel": "Tribolium castaneum TcAGO2a", 
+"^ot:ottId": 148904, 
+"^ot:ottTaxonName": "Tribolium castaneum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 621647, 
 "@tb:identifier.taxonVariant": 832564, 
@@ -1666,8 +1908,9 @@
 }
 }, 
 "Tl1666762": {
-"^ot:altLabel": "Sorghum bicolor", 
 "^ot:originalLabel": "Sorghum bicolor SbAGO10b", 
+"^ot:ottId": 552986, 
+"^ot:ottTaxonName": "Sorghum bicolor", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 27354, 
 "@tb:identifier.taxonVariant": 63850, 
@@ -1676,8 +1919,9 @@
 }
 }, 
 "Tl1666763": {
-"^ot:altLabel": "Phaseolus vulgaris", 
 "^ot:originalLabel": "Phaseolus vulgaris PvAGO10a", 
+"^ot:ottId": 825707, 
+"^ot:ottTaxonName": "Phaseolus vulgaris", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 21733, 
 "@tb:identifier.taxonVariant": 50553, 
@@ -1686,8 +1930,9 @@
 }
 }, 
 "Tl1666764": {
-"^ot:altLabel": "Arabidopsis lyrata", 
 "^ot:originalLabel": "Arabidopsis lyrata AlAGO8", 
+"^ot:ottId": 840257, 
+"^ot:ottTaxonName": "Arabidopsis lyrata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 33986, 
 "@tb:identifier.taxonVariant": 78500, 
@@ -1696,8 +1941,9 @@
 }
 }, 
 "Tl1666765": {
-"^ot:altLabel": "Mimulus guttatus", 
 "^ot:originalLabel": "Mimulus guttatus MgAGO9", 
+"^ot:ottId": 596473, 
+"^ot:ottTaxonName": "Erythranthe guttata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 17834, 
 "@tb:identifier.taxonVariant": 41729, 
@@ -1706,8 +1952,9 @@
 }
 }, 
 "Tl1666766": {
-"^ot:altLabel": "Populus trichocarpa", 
 "^ot:originalLabel": "Populus trichocarpa PtAGOlike2", 
+"^ot:ottId": 8861, 
+"^ot:ottTaxonName": "Populus trichocarpa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 623778, 
 "@tb:identifier.taxonVariant": 836504, 
@@ -1716,8 +1963,9 @@
 }
 }, 
 "Tl1666767": {
-"^ot:altLabel": "Tribolium castaneum", 
 "^ot:originalLabel": "Tribolium castaneum TcAGO1a", 
+"^ot:ottId": 148904, 
+"^ot:ottTaxonName": "Tribolium castaneum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 621647, 
 "@tb:identifier.taxonVariant": 832564, 
@@ -1726,8 +1974,9 @@
 }
 }, 
 "Tl1666768": {
-"^ot:altLabel": "Capsella rubella", 
 "^ot:originalLabel": "Capsella rubella CrbAGO10", 
+"^ot:ottId": 19798, 
+"^ot:ottTaxonName": "Capsella rubella", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 4844, 
 "@tb:identifier.taxonVariant": 11671, 
@@ -1736,8 +1985,9 @@
 }
 }, 
 "Tl1666769": {
-"^ot:altLabel": "Arabidopsis thaliana", 
 "^ot:originalLabel": "Arabidopsis thaliana AtAGO2", 
+"^ot:ottId": 309263, 
+"^ot:ottTaxonName": "Arabidopsis thaliana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 624067, 
 "@tb:identifier.taxonVariant": 836890, 
@@ -1746,8 +1996,9 @@
 }
 }, 
 "Tl1666770": {
-"^ot:altLabel": "Cucumis sativus", 
 "^ot:originalLabel": "Cucumis sativus CstAGO1a", 
+"^ot:ottId": 1006246, 
+"^ot:ottTaxonName": "Cucumis sativus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 7746, 
 "@tb:identifier.taxonVariant": 18647, 
@@ -1756,8 +2007,9 @@
 }
 }, 
 "Tl1666771": {
-"^ot:altLabel": "Brachypodium distachyon", 
 "^ot:originalLabel": "Brachypodium distachyon BdPNH1like", 
+"^ot:ottId": 413237, 
+"^ot:ottTaxonName": "Brachypodium distachyon", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3914, 
 "@tb:identifier.taxonVariant": 9330, 
@@ -1766,8 +2018,9 @@
 }
 }, 
 "Tl1666772": {
-"^ot:altLabel": "Cucumis sativus", 
 "^ot:originalLabel": "Cucumis sativus CstAGO4", 
+"^ot:ottId": 1006246, 
+"^ot:ottTaxonName": "Cucumis sativus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 7746, 
 "@tb:identifier.taxonVariant": 18647, 
@@ -1776,8 +2029,9 @@
 }
 }, 
 "Tl1666773": {
-"^ot:altLabel": "Zea mays", 
 "^ot:originalLabel": "Zea mays ZmAGO1b", 
+"^ot:ottId": 605194, 
+"^ot:ottTaxonName": "Zea mays", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 31231, 
 "@tb:identifier.taxonVariant": 72895, 
@@ -1786,8 +2040,9 @@
 }
 }, 
 "Tl1666774": {
-"^ot:altLabel": "Arabidopsis thaliana", 
 "^ot:originalLabel": "Arabidopsis thaliana AtAGO8", 
+"^ot:ottId": 309263, 
+"^ot:ottTaxonName": "Arabidopsis thaliana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 624067, 
 "@tb:identifier.taxonVariant": 836890, 
@@ -1796,8 +2051,9 @@
 }
 }, 
 "Tl1666775": {
-"^ot:altLabel": "Eucalyptus grandis", 
 "^ot:originalLabel": "Eucalyptus grandis EgAGO4c", 
+"^ot:ottId": 40959, 
+"^ot:ottTaxonName": "Eucalyptus grandis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 10679, 
 "@tb:identifier.taxonVariant": 25582, 
@@ -1806,8 +2062,9 @@
 }
 }, 
 "Tl1666776": {
-"^ot:altLabel": "Oryza sativa", 
 "^ot:originalLabel": "Oryza sativa OsAGO14", 
+"^ot:ottId": 709894, 
+"^ot:ottTaxonName": "Oryza sativa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 622369, 
 "@tb:identifier.taxonVariant": 835042, 
@@ -1816,8 +2073,9 @@
 }
 }, 
 "Tl1666777": {
-"^ot:altLabel": "Nicotiana attenuata", 
 "^ot:originalLabel": "Nicotiana attenuata NaAGO1a", 
+"^ot:ottId": 882065, 
+"^ot:ottTaxonName": "Nicotiana attenuata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 19089, 
 "@tb:identifier.taxonVariant": 44431, 
@@ -1826,8 +2084,9 @@
 }
 }, 
 "Tl1666778": {
-"^ot:altLabel": "Mimulus guttatus", 
 "^ot:originalLabel": "Mimulus guttatus MgAGO6", 
+"^ot:ottId": 596473, 
+"^ot:ottTaxonName": "Erythranthe guttata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 17834, 
 "@tb:identifier.taxonVariant": 41729, 
@@ -1836,8 +2095,9 @@
 }
 }, 
 "Tl1666779": {
-"^ot:altLabel": "Thellungiella halophila", 
 "^ot:originalLabel": "Thellungiella halophila ThAGO10", 
+"^ot:ottId": 991618, 
+"^ot:ottTaxonName": "Eutrema halophilum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 33955, 
 "@tb:identifier.taxonVariant": 78387, 
@@ -1847,8 +2107,9 @@
 "^skos:prefLabel": "Eutrema salsugineum"
 }, 
 "Tl1666780": {
-"^ot:altLabel": "Brassica rapa", 
 "^ot:originalLabel": "Brassica rapa BrAGO2b", 
+"^ot:ottId": 833632, 
+"^ot:ottTaxonName": "Brassica rapa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 624068, 
 "@tb:identifier.taxonVariant": 836901, 
@@ -1857,8 +2118,9 @@
 }
 }, 
 "Tl1666781": {
-"^ot:altLabel": "Populus trichocarpa", 
 "^ot:originalLabel": "Populus trichocarpa PtAGO4a", 
+"^ot:ottId": 8861, 
+"^ot:ottTaxonName": "Populus trichocarpa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 623778, 
 "@tb:identifier.taxonVariant": 836504, 
@@ -1867,8 +2129,9 @@
 }
 }, 
 "Tl1666782": {
-"^ot:altLabel": "Solanum lycopersicum", 
 "^ot:originalLabel": "Solanum lycopersicum SlAGOlike2", 
+"^ot:ottId": 378964, 
+"^ot:ottTaxonName": "Solanum lycopersicum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 16506, 
 "@tb:identifier.taxonVariant": 63526, 
@@ -1877,8 +2140,9 @@
 }
 }, 
 "Tl1666783": {
-"^ot:altLabel": "Vitis vinifera", 
 "^ot:originalLabel": "Vitis vinifera VvAGO4Alike", 
+"^ot:ottId": 756728, 
+"^ot:ottTaxonName": "Vitis vinifera", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 621749, 
 "@tb:identifier.taxonVariant": 834774, 
@@ -1887,8 +2151,9 @@
 }
 }, 
 "Tl1666784": {
-"^ot:altLabel": "Oryza sativa", 
 "^ot:originalLabel": "Oryza sativa OsAGO1D", 
+"^ot:ottId": 709894, 
+"^ot:ottTaxonName": "Oryza sativa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 622369, 
 "@tb:identifier.taxonVariant": 835042, 
@@ -1897,8 +2162,9 @@
 }
 }, 
 "Tl1666785": {
-"^ot:altLabel": "Hordeum vulgare", 
 "^ot:originalLabel": "Hordeum vulgare HvAGO1a", 
+"^ot:ottId": 657948, 
+"^ot:ottTaxonName": "Hordeum vulgare", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 13720, 
 "@tb:identifier.taxonVariant": 32404, 
@@ -1907,8 +2173,9 @@
 }
 }, 
 "Tl1666786": {
-"^ot:altLabel": "Selaginella moellendorfii", 
 "^ot:originalLabel": "Selaginella moellendorfii SmAGO1b", 
+"^ot:ottId": 799880, 
+"^ot:ottTaxonName": "Selaginella moellendorffii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 98062, 
 "@tb:identifier.taxonVariant": 177199, 
@@ -1918,8 +2185,9 @@
 "^skos:prefLabel": "Selaginella moellendorffii"
 }, 
 "Tl1666787": {
-"^ot:altLabel": "Nicotiana attenuata", 
 "^ot:originalLabel": "Nicotiana attenuata NaAGO2", 
+"^ot:ottId": 882065, 
+"^ot:ottTaxonName": "Nicotiana attenuata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 19089, 
 "@tb:identifier.taxonVariant": 44431, 
@@ -1928,8 +2196,9 @@
 }
 }, 
 "Tl1666788": {
-"^ot:altLabel": "Capsella rubella", 
 "^ot:originalLabel": "Capsella rubella CrbAGO8", 
+"^ot:ottId": 19798, 
+"^ot:ottTaxonName": "Capsella rubella", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 4844, 
 "@tb:identifier.taxonVariant": 11671, 
@@ -1938,8 +2207,9 @@
 }
 }, 
 "Tl1666789": {
-"^ot:altLabel": "Hordeum vulgare", 
 "^ot:originalLabel": "Hordeum vulgare HvAGO3", 
+"^ot:ottId": 657948, 
+"^ot:ottTaxonName": "Hordeum vulgare", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 13720, 
 "@tb:identifier.taxonVariant": 32404, 
@@ -1948,8 +2218,9 @@
 }
 }, 
 "Tl1666790": {
-"^ot:altLabel": "Oryza sativa", 
 "^ot:originalLabel": "Oryza sativa OsAGO2", 
+"^ot:ottId": 709894, 
+"^ot:ottTaxonName": "Oryza sativa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 622369, 
 "@tb:identifier.taxonVariant": 835042, 
@@ -1958,8 +2229,9 @@
 }
 }, 
 "Tl1666791": {
-"^ot:altLabel": "Brachypodium distachyon", 
 "^ot:originalLabel": "Brachypodium distachyon BdAGO1Dlike", 
+"^ot:ottId": 413237, 
+"^ot:ottTaxonName": "Brachypodium distachyon", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3914, 
 "@tb:identifier.taxonVariant": 9330, 
@@ -1968,8 +2240,9 @@
 }
 }, 
 "Tl1666792": {
-"^ot:altLabel": "Carica papaya", 
 "^ot:originalLabel": "Carica papaya CpAGO10", 
+"^ot:ottId": 429474, 
+"^ot:ottTaxonName": "Carica papaya", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5051, 
 "@tb:identifier.taxonVariant": 12278, 
@@ -1978,8 +2251,9 @@
 }
 }, 
 "Tl1666793": {
-"^ot:altLabel": "Oryza sativa", 
 "^ot:originalLabel": "Oryza sativa OsAGO3", 
+"^ot:ottId": 709894, 
+"^ot:ottTaxonName": "Oryza sativa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 622369, 
 "@tb:identifier.taxonVariant": 835042, 
@@ -1988,8 +2262,9 @@
 }
 }, 
 "Tl1666794": {
-"^ot:altLabel": "Prunus persica", 
 "^ot:originalLabel": "Prunus persica PprAGO4b", 
+"^ot:ottId": 259054, 
+"^ot:ottTaxonName": "Prunus persica", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 23921, 
 "@tb:identifier.taxonVariant": 55869, 
@@ -1998,8 +2273,9 @@
 }
 }, 
 "Tl1666795": {
-"^ot:altLabel": "Eucalyptus grandis", 
 "^ot:originalLabel": "Eucalyptus grandis EgAGO4b", 
+"^ot:ottId": 40959, 
+"^ot:ottTaxonName": "Eucalyptus grandis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 10679, 
 "@tb:identifier.taxonVariant": 25582, 
@@ -2008,8 +2284,9 @@
 }
 }, 
 "Tl1666796": {
-"^ot:altLabel": "Glycine max", 
 "^ot:originalLabel": "Glycine max GmAGO4Blike", 
+"^ot:ottId": 681762, 
+"^ot:ottTaxonName": "Glycine max", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 627060, 
 "@tb:identifier.taxonVariant": 841435, 
@@ -2018,8 +2295,9 @@
 }
 }, 
 "Tl1666797": {
-"^ot:altLabel": "Oryza sativa", 
 "^ot:originalLabel": "Oryza sativa OsAGO1B", 
+"^ot:ottId": 709894, 
+"^ot:ottTaxonName": "Oryza sativa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 622369, 
 "@tb:identifier.taxonVariant": 835042, 
@@ -2028,8 +2306,9 @@
 }
 }, 
 "Tl1666798": {
-"^ot:altLabel": "Thellungiella halophila", 
 "^ot:originalLabel": "Thellungiella halophila ThAGO6", 
+"^ot:ottId": 991618, 
+"^ot:ottTaxonName": "Eutrema halophilum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 33955, 
 "@tb:identifier.taxonVariant": 78387, 
@@ -2039,8 +2318,9 @@
 "^skos:prefLabel": "Eutrema salsugineum"
 }, 
 "Tl1666799": {
-"^ot:altLabel": "Capsella rubella", 
 "^ot:originalLabel": "Capsella rubella CrbAGO9", 
+"^ot:ottId": 19798, 
+"^ot:ottTaxonName": "Capsella rubella", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 4844, 
 "@tb:identifier.taxonVariant": 11671, 
@@ -2049,8 +2329,9 @@
 }
 }, 
 "Tl1666800": {
-"^ot:altLabel": "Brassica rapa", 
 "^ot:originalLabel": "Brassica rapa BrAGO5", 
+"^ot:ottId": 833632, 
+"^ot:ottTaxonName": "Brassica rapa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 624068, 
 "@tb:identifier.taxonVariant": 836901, 
@@ -2059,8 +2340,9 @@
 }
 }, 
 "Tl1666801": {
-"^ot:altLabel": "Physcomitrella patens", 
 "^ot:originalLabel": "Physcomitrella patens PptAGO5", 
+"^ot:ottId": 821359, 
+"^ot:ottTaxonName": "Physcomitrella patens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22205, 
 "@tb:identifier.taxonVariant": 51642, 
@@ -2069,8 +2351,9 @@
 }
 }, 
 "Tl1666802": {
-"^ot:altLabel": "Mimulus guttatus", 
 "^ot:originalLabel": "Mimulus guttatus MgAGO7", 
+"^ot:ottId": 596473, 
+"^ot:ottTaxonName": "Erythranthe guttata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 17834, 
 "@tb:identifier.taxonVariant": 41729, 
@@ -2079,8 +2362,9 @@
 }
 }, 
 "Tl1666803": {
-"^ot:altLabel": "Oryza sativa", 
 "^ot:originalLabel": "Oryza sativa OsAGO4B", 
+"^ot:ottId": 709894, 
+"^ot:ottTaxonName": "Oryza sativa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 622369, 
 "@tb:identifier.taxonVariant": 835042, 
@@ -2089,8 +2373,9 @@
 }
 }, 
 "Tl1666804": {
-"^ot:altLabel": "Thellungiella halophila", 
 "^ot:originalLabel": "Thellungiella halophila ThAGO1", 
+"^ot:ottId": 991618, 
+"^ot:ottTaxonName": "Eutrema halophilum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 33955, 
 "@tb:identifier.taxonVariant": 78387, 
@@ -2100,8 +2385,9 @@
 "^skos:prefLabel": "Eutrema salsugineum"
 }, 
 "Tl1666805": {
-"^ot:altLabel": "Oryza sativa", 
 "^ot:originalLabel": "Oryza sativa OsAGO18", 
+"^ot:ottId": 709894, 
+"^ot:ottTaxonName": "Oryza sativa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 622369, 
 "@tb:identifier.taxonVariant": 835042, 
@@ -2110,8 +2396,9 @@
 }
 }, 
 "Tl1666806": {
-"^ot:altLabel": "Phaseolus vulgaris", 
 "^ot:originalLabel": "Phaseolus vulgaris PvAGO1", 
+"^ot:ottId": 825707, 
+"^ot:ottTaxonName": "Phaseolus vulgaris", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 21733, 
 "@tb:identifier.taxonVariant": 50553, 
@@ -2120,8 +2407,9 @@
 }
 }, 
 "Tl1666807": {
-"^ot:altLabel": "Brassica rapa", 
 "^ot:originalLabel": "Brassica rapa BrAGO2a", 
+"^ot:ottId": 833632, 
+"^ot:ottTaxonName": "Brassica rapa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 624068, 
 "@tb:identifier.taxonVariant": 836901, 
@@ -2130,8 +2418,9 @@
 }
 }, 
 "Tl1666808": {
-"^ot:altLabel": "Arabidopsis lyrata", 
 "^ot:originalLabel": "Arabidopsis lyrata AlAGO3", 
+"^ot:ottId": 840257, 
+"^ot:ottTaxonName": "Arabidopsis lyrata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 33986, 
 "@tb:identifier.taxonVariant": 78500, 
@@ -2140,8 +2429,9 @@
 }
 }, 
 "Tl1666809": {
-"^ot:altLabel": "Sorghum bicolor", 
 "^ot:originalLabel": "Sorghum bicolor SbAGO1b", 
+"^ot:ottId": 552986, 
+"^ot:ottTaxonName": "Sorghum bicolor", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 27354, 
 "@tb:identifier.taxonVariant": 63850, 
@@ -2150,8 +2440,9 @@
 }
 }, 
 "Tl1666810": {
-"^ot:altLabel": "Oryza sativa", 
 "^ot:originalLabel": "Oryza sativa OsAGO12", 
+"^ot:ottId": 709894, 
+"^ot:ottTaxonName": "Oryza sativa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 622369, 
 "@tb:identifier.taxonVariant": 835042, 
@@ -2160,8 +2451,9 @@
 }
 }, 
 "Tl1666811": {
-"^ot:altLabel": "Vitis vinifera", 
 "^ot:originalLabel": "Vitis vinifera VvAGO7like", 
+"^ot:ottId": 756728, 
+"^ot:ottTaxonName": "Vitis vinifera", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 621749, 
 "@tb:identifier.taxonVariant": 834774, 
@@ -2170,8 +2462,9 @@
 }
 }, 
 "Tl1666812": {
-"^ot:altLabel": "Nicotiana attenuata", 
 "^ot:originalLabel": "Nicotiana attenuata NaAGO5", 
+"^ot:ottId": 882065, 
+"^ot:ottTaxonName": "Nicotiana attenuata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 19089, 
 "@tb:identifier.taxonVariant": 44431, 
@@ -2180,8 +2473,9 @@
 }
 }, 
 "Tl1666813": {
-"^ot:altLabel": "Populus trichocarpa", 
 "^ot:originalLabel": "Populus trichocarpa PtAGOlike3", 
+"^ot:ottId": 8861, 
+"^ot:ottTaxonName": "Populus trichocarpa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 623778, 
 "@tb:identifier.taxonVariant": 836504, 
@@ -2190,8 +2484,9 @@
 }
 }, 
 "Tl1666814": {
-"^ot:altLabel": "Zea mays", 
 "^ot:originalLabel": "Zea mays ZmAGO4", 
+"^ot:ottId": 605194, 
+"^ot:ottTaxonName": "Zea mays", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 31231, 
 "@tb:identifier.taxonVariant": 72895, 
@@ -2200,8 +2495,9 @@
 }
 }, 
 "Tl1666815": {
-"^ot:altLabel": "Ricinus communis", 
 "^ot:originalLabel": "Ricinus communis RcAGO10b", 
+"^ot:ottId": 339346, 
+"^ot:ottTaxonName": "Ricinus communis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 34664, 
 "@tb:identifier.taxonVariant": 80254, 
@@ -2210,8 +2506,9 @@
 }
 }, 
 "Tl1666816": {
-"^ot:altLabel": "Selaginella moellendorfii", 
 "^ot:originalLabel": "Selaginella moellendorfii SmAGO10", 
+"^ot:ottId": 799880, 
+"^ot:ottTaxonName": "Selaginella moellendorffii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 98062, 
 "@tb:identifier.taxonVariant": 177199, 
@@ -2221,8 +2518,9 @@
 "^skos:prefLabel": "Selaginella moellendorffii"
 }, 
 "Tl1666817": {
-"^ot:altLabel": "Arabidopsis thaliana", 
 "^ot:originalLabel": "Arabidopsis thaliana AtAGO5", 
+"^ot:ottId": 309263, 
+"^ot:ottTaxonName": "Arabidopsis thaliana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 624067, 
 "@tb:identifier.taxonVariant": 836890, 
@@ -2231,8 +2529,9 @@
 }
 }, 
 "Tl1666818": {
-"^ot:altLabel": "Prunus persica", 
 "^ot:originalLabel": "Prunus persica PprAGO7", 
+"^ot:ottId": 259054, 
+"^ot:ottTaxonName": "Prunus persica", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 23921, 
 "@tb:identifier.taxonVariant": 55869, 
@@ -2241,8 +2540,9 @@
 }
 }, 
 "Tl1666819": {
-"^ot:altLabel": "Oryza sativa", 
 "^ot:originalLabel": "Oryza sativa OsPNH1", 
+"^ot:ottId": 709894, 
+"^ot:ottTaxonName": "Oryza sativa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 622369, 
 "@tb:identifier.taxonVariant": 835042, 
@@ -2251,8 +2551,9 @@
 }
 }, 
 "Tl1666820": {
-"^ot:altLabel": "Glycine max", 
 "^ot:originalLabel": "Glycine max GmAGO10like", 
+"^ot:ottId": 681762, 
+"^ot:ottTaxonName": "Glycine max", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 627060, 
 "@tb:identifier.taxonVariant": 841435, 
@@ -2261,8 +2562,9 @@
 }
 }, 
 "Tl1666821": {
-"^ot:altLabel": "Ricinus communis", 
 "^ot:originalLabel": "Ricinus communis RcAGO10a", 
+"^ot:ottId": 339346, 
+"^ot:ottTaxonName": "Ricinus communis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 34664, 
 "@tb:identifier.taxonVariant": 80254, 
@@ -2271,8 +2573,9 @@
 }
 }, 
 "Tl1666822": {
-"^ot:altLabel": "Sorghum bicolor", 
 "^ot:originalLabel": "Sorghum bicolor SbAGO1a", 
+"^ot:ottId": 552986, 
+"^ot:ottTaxonName": "Sorghum bicolor", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 27354, 
 "@tb:identifier.taxonVariant": 63850, 
@@ -2281,8 +2584,9 @@
 }
 }, 
 "Tl1666823": {
-"^ot:altLabel": "Arabidopsis thaliana", 
 "^ot:originalLabel": "Arabidopsis thaliana AtAGO4", 
+"^ot:ottId": 309263, 
+"^ot:ottTaxonName": "Arabidopsis thaliana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 624067, 
 "@tb:identifier.taxonVariant": 836890, 
@@ -2291,8 +2595,9 @@
 }
 }, 
 "Tl1666824": {
-"^ot:altLabel": "Eucalyptus grandis", 
 "^ot:originalLabel": "Eucalyptus grandis EgAGO4a", 
+"^ot:ottId": 40959, 
+"^ot:ottTaxonName": "Eucalyptus grandis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 10679, 
 "@tb:identifier.taxonVariant": 25582, 
@@ -2301,8 +2606,9 @@
 }
 }, 
 "Tl1666825": {
-"^ot:altLabel": "Tribolium castaneum", 
 "^ot:originalLabel": "Tribolium castaneum TcAGO1b", 
+"^ot:ottId": 148904, 
+"^ot:ottTaxonName": "Tribolium castaneum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 621647, 
 "@tb:identifier.taxonVariant": 832564, 
@@ -2311,8 +2617,9 @@
 }
 }, 
 "Tl1666826": {
-"^ot:altLabel": "Linum usitatissimum", 
 "^ot:originalLabel": "Linum usitatissimum LuAGO7", 
+"^ot:ottId": 1000262, 
+"^ot:ottTaxonName": "Linum usitatissimum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 50874, 
 "@tb:identifier.taxonVariant": 120418, 
@@ -2321,8 +2628,9 @@
 }
 }, 
 "Tl1666827": {
-"^ot:altLabel": "Malus domestica", 
 "^ot:originalLabel": "Malus domestica MdAGO5b", 
+"^ot:ottId": 3902985, 
+"^ot:ottTaxonName": "Malus domestica", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 627851, 
 "@tb:identifier.taxonVariant": 841487, 
@@ -2331,8 +2639,9 @@
 }
 }, 
 "Tl1666828": {
-"^ot:altLabel": "Manihot esculenta", 
 "^ot:originalLabel": "Manihot esculenta MeAGO4", 
+"^ot:ottId": 339369, 
+"^ot:ottTaxonName": "Manihot esculenta", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 50863, 
 "@tb:identifier.taxonVariant": 800312, 
@@ -2341,8 +2650,9 @@
 }
 }, 
 "Tl1666829": {
-"^ot:altLabel": "Sorghum bicolor", 
 "^ot:originalLabel": "Sorghum bicolor SbAGO10c", 
+"^ot:ottId": 552986, 
+"^ot:ottTaxonName": "Sorghum bicolor", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 27354, 
 "@tb:identifier.taxonVariant": 63850, 
@@ -2351,8 +2661,9 @@
 }
 }, 
 "Tl1666830": {
-"^ot:altLabel": "Mimulus guttatus", 
 "^ot:originalLabel": "Mimulus guttatus MgAGO5", 
+"^ot:ottId": 596473, 
+"^ot:ottTaxonName": "Erythranthe guttata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 17834, 
 "@tb:identifier.taxonVariant": 41729, 
@@ -2361,8 +2672,9 @@
 }
 }, 
 "Tl1666831": {
-"^ot:altLabel": "Glycine max", 
 "^ot:originalLabel": "Glycine max GmAGO5like2", 
+"^ot:ottId": 681762, 
+"^ot:ottTaxonName": "Glycine max", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 627060, 
 "@tb:identifier.taxonVariant": 841435, 
@@ -2371,8 +2683,9 @@
 }
 }, 
 "Tl1666832": {
-"^ot:altLabel": "Populus trichocarpa", 
 "^ot:originalLabel": "Populus trichocarpa PtAGOlike1", 
+"^ot:ottId": 8861, 
+"^ot:ottTaxonName": "Populus trichocarpa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 623778, 
 "@tb:identifier.taxonVariant": 836504, 
@@ -2381,8 +2694,9 @@
 }
 }, 
 "Tl1666833": {
-"^ot:altLabel": "Malus domestica", 
 "^ot:originalLabel": "Malus domestica MdAGO1a", 
+"^ot:ottId": 3902985, 
+"^ot:ottTaxonName": "Malus domestica", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 627851, 
 "@tb:identifier.taxonVariant": 841487, 
@@ -2391,8 +2705,9 @@
 }
 }, 
 "Tl1666834": {
-"^ot:altLabel": "Arabidopsis lyrata", 
 "^ot:originalLabel": "Arabidopsis lyrata AlAGO2", 
+"^ot:ottId": 840257, 
+"^ot:ottTaxonName": "Arabidopsis lyrata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 33986, 
 "@tb:identifier.taxonVariant": 78500, 
@@ -2401,8 +2716,9 @@
 }
 }, 
 "Tl1666835": {
-"^ot:altLabel": "Nicotiana attenuata", 
 "^ot:originalLabel": "Nicotiana attenuata NaAGO4b", 
+"^ot:ottId": 882065, 
+"^ot:ottTaxonName": "Nicotiana attenuata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 19089, 
 "@tb:identifier.taxonVariant": 44431, 
@@ -2411,8 +2727,9 @@
 }
 }, 
 "Tl1666836": {
-"^ot:altLabel": "Hordeum vulgare", 
 "^ot:originalLabel": "Hordeum vulgare HvAGO1b", 
+"^ot:ottId": 657948, 
+"^ot:ottTaxonName": "Hordeum vulgare", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 13720, 
 "@tb:identifier.taxonVariant": 32404, 
@@ -2421,8 +2738,9 @@
 }
 }, 
 "Tl1666837": {
-"^ot:altLabel": "Mimulus guttatus", 
 "^ot:originalLabel": "Mimulus guttatus MgAGO1", 
+"^ot:ottId": 596473, 
+"^ot:ottTaxonName": "Erythranthe guttata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 17834, 
 "@tb:identifier.taxonVariant": 41729, 
@@ -2431,8 +2749,9 @@
 }
 }, 
 "Tl1666838": {
-"^ot:altLabel": "Populus trichocarpa", 
 "^ot:originalLabel": "Populus trichocarpa PtAGO4b", 
+"^ot:ottId": 8861, 
+"^ot:ottTaxonName": "Populus trichocarpa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 623778, 
 "@tb:identifier.taxonVariant": 836504, 
@@ -2441,8 +2760,9 @@
 }
 }, 
 "Tl1666839": {
-"^ot:altLabel": "Nicotiana benthamiana", 
 "^ot:originalLabel": "Nicotiana benthamiana NbAGO4.2", 
+"^ot:ottId": 1020638, 
+"^ot:ottTaxonName": "Nicotiana benthamiana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 50909, 
 "@tb:identifier.taxonVariant": 120506, 
@@ -2451,8 +2771,9 @@
 }
 }, 
 "Tl1666840": {
-"^ot:altLabel": "Arabidopsis thaliana", 
 "^ot:originalLabel": "Arabidopsis thaliana AtAGO10", 
+"^ot:ottId": 309263, 
+"^ot:ottTaxonName": "Arabidopsis thaliana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 624067, 
 "@tb:identifier.taxonVariant": 836890, 
@@ -2461,8 +2782,9 @@
 }
 }, 
 "Tl1666841": {
-"^ot:altLabel": "Vitis vinifera", 
 "^ot:originalLabel": "Vitis vinifera VvAGO1Blike", 
+"^ot:ottId": 756728, 
+"^ot:ottTaxonName": "Vitis vinifera", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 621749, 
 "@tb:identifier.taxonVariant": 834774, 
@@ -2471,8 +2793,9 @@
 }
 }, 
 "Tl1666842": {
-"^ot:altLabel": "Medicago truncatula Gaertn.", 
 "^ot:originalLabel": "Medicago truncatula MtAGO4c", 
+"^ot:ottId": 1060499, 
+"^ot:ottTaxonName": "Medicago truncatula", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 17129, 
 "@tb:identifier.taxonVariant": 40133, 
@@ -2482,8 +2805,9 @@
 "^skos:prefLabel": "Medicago truncatula"
 }, 
 "Tl1666843": {
-"^ot:altLabel": "Arabidopsis lyrata", 
 "^ot:originalLabel": "Arabidopsis lyrata AlAGO9", 
+"^ot:ottId": 840257, 
+"^ot:ottTaxonName": "Arabidopsis lyrata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 33986, 
 "@tb:identifier.taxonVariant": 78500, 
@@ -2492,8 +2816,9 @@
 }
 }, 
 "Tl1666844": {
-"^ot:altLabel": "Phaseolus vulgaris", 
 "^ot:originalLabel": "Phaseolus vulgaris PvAGO9", 
+"^ot:ottId": 825707, 
+"^ot:ottTaxonName": "Phaseolus vulgaris", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 21733, 
 "@tb:identifier.taxonVariant": 50553, 
@@ -2502,8 +2827,9 @@
 }
 }, 
 "Tl1666845": {
-"^ot:altLabel": "Cucumis sativus", 
 "^ot:originalLabel": "Cucumis sativus CstAGO1b", 
+"^ot:ottId": 1006246, 
+"^ot:ottTaxonName": "Cucumis sativus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 7746, 
 "@tb:identifier.taxonVariant": 18647, 
@@ -2512,8 +2838,9 @@
 }
 }, 
 "Tl1666846": {
-"^ot:altLabel": "Eucalyptus grandis", 
 "^ot:originalLabel": "Eucalyptus grandis EgAGO10a", 
+"^ot:ottId": 40959, 
+"^ot:ottTaxonName": "Eucalyptus grandis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 10679, 
 "@tb:identifier.taxonVariant": 25582, 
@@ -2522,8 +2849,9 @@
 }
 }, 
 "Tl1666847": {
-"^ot:altLabel": "Arabidopsis lyrata", 
 "^ot:originalLabel": "Arabidopsis lyrata AlAGO1", 
+"^ot:ottId": 840257, 
+"^ot:ottTaxonName": "Arabidopsis lyrata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 33986, 
 "@tb:identifier.taxonVariant": 78500, 
@@ -2532,8 +2860,9 @@
 }
 }, 
 "Tl1666848": {
-"^ot:altLabel": "Malus domestica", 
 "^ot:originalLabel": "Malus domestica MdAGO7a", 
+"^ot:ottId": 3902985, 
+"^ot:ottTaxonName": "Malus domestica", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 627851, 
 "@tb:identifier.taxonVariant": 841487, 
@@ -2542,8 +2871,9 @@
 }
 }, 
 "Tl1666849": {
-"^ot:altLabel": "Citrus aurantium L. var. sinensis L.", 
 "^ot:originalLabel": "Citrus sinensis CsnAGO10", 
+"^ot:ottId": 3942433, 
+"^ot:ottTaxonName": "Citrus sinensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6225, 
 "@tb:identifier.taxonVariant": 15069, 
@@ -2553,8 +2883,9 @@
 "^skos:prefLabel": "Citrus sinensis"
 }, 
 "Tl1666850": {
-"^ot:altLabel": "Chlamydomonas reinhardtii", 
 "^ot:originalLabel": "Chlamydomonas reinhardtii CrnAGO2", 
+"^ot:ottId": 33153, 
+"^ot:ottTaxonName": "Chlamydomonas reinhardtii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5860, 
 "@tb:identifier.taxonVariant": 14193, 
@@ -2563,8 +2894,9 @@
 }
 }, 
 "Tl1666851": {
-"^ot:altLabel": "Nicotiana attenuata", 
 "^ot:originalLabel": "Nicotiana attenuata NaAGO10", 
+"^ot:ottId": 882065, 
+"^ot:ottTaxonName": "Nicotiana attenuata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 19089, 
 "@tb:identifier.taxonVariant": 44431, 
@@ -2573,8 +2905,9 @@
 }
 }, 
 "Tl1666852": {
-"^ot:altLabel": "Nicotiana benthamiana", 
 "^ot:originalLabel": "Nicotiana benthamiana NbAGO4.1", 
+"^ot:ottId": 1020638, 
+"^ot:ottTaxonName": "Nicotiana benthamiana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 50909, 
 "@tb:identifier.taxonVariant": 120506, 
@@ -2583,8 +2916,9 @@
 }
 }, 
 "Tl1666853": {
-"^ot:altLabel": "Zea mays", 
 "^ot:originalLabel": "Zea mays ZmAGO10a", 
+"^ot:ottId": 605194, 
+"^ot:ottTaxonName": "Zea mays", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 31231, 
 "@tb:identifier.taxonVariant": 72895, 
@@ -2593,8 +2927,9 @@
 }
 }, 
 "Tl1666854": {
-"^ot:altLabel": "Brachypodium distachyon", 
 "^ot:originalLabel": "Brachypodium distachyon BdAGO2like", 
+"^ot:ottId": 413237, 
+"^ot:ottTaxonName": "Brachypodium distachyon", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3914, 
 "@tb:identifier.taxonVariant": 9330, 
@@ -2603,8 +2938,9 @@
 }
 }, 
 "Tl1666855": {
-"^ot:altLabel": "Malus domestica", 
 "^ot:originalLabel": "Malus domestica MdAGO10a", 
+"^ot:ottId": 3902985, 
+"^ot:ottTaxonName": "Malus domestica", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 627851, 
 "@tb:identifier.taxonVariant": 841487, 
@@ -2613,8 +2949,9 @@
 }
 }, 
 "Tl1666856": {
-"^ot:altLabel": "Arabidopsis lyrata", 
 "^ot:originalLabel": "Arabidopsis lyrata AlAGO7", 
+"^ot:ottId": 840257, 
+"^ot:ottTaxonName": "Arabidopsis lyrata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 33986, 
 "@tb:identifier.taxonVariant": 78500, 
@@ -2623,8 +2960,9 @@
 }
 }, 
 "Tl1666857": {
-"^ot:altLabel": "Tribolium castaneum", 
 "^ot:originalLabel": "Tribolium castaneum TcAGO3", 
+"^ot:ottId": 148904, 
+"^ot:ottTaxonName": "Tribolium castaneum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 621647, 
 "@tb:identifier.taxonVariant": 832564, 
@@ -2633,8 +2971,9 @@
 }
 }, 
 "Tl1666858": {
-"^ot:altLabel": "Citrus aurantium L. var. sinensis L.", 
 "^ot:originalLabel": "Citrus sinensis CsnAGO7", 
+"^ot:ottId": 3942433, 
+"^ot:ottTaxonName": "Citrus sinensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6225, 
 "@tb:identifier.taxonVariant": 15069, 
@@ -2644,8 +2983,9 @@
 "^skos:prefLabel": "Citrus sinensis"
 }, 
 "Tl1666859": {
-"^ot:altLabel": "Prunus persica", 
 "^ot:originalLabel": "Prunus persica PprAGO5", 
+"^ot:ottId": 259054, 
+"^ot:ottTaxonName": "Prunus persica", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 23921, 
 "@tb:identifier.taxonVariant": 55869, 
@@ -2654,8 +2994,9 @@
 }
 }, 
 "Tl1666860": {
-"^ot:altLabel": "Nicotiana tabacum", 
 "^ot:originalLabel": "Nicotiana tabacum NtAGO1", 
+"^ot:ottId": 222787, 
+"^ot:ottTaxonName": "Nicotiana tabacum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 19095, 
 "@tb:identifier.taxonVariant": 44449, 
@@ -2664,8 +3005,9 @@
 }
 }, 
 "Tl1666861": {
-"^ot:altLabel": "Nicotiana attenuata", 
 "^ot:originalLabel": "Nicotiana attenuata NaAGO1b", 
+"^ot:ottId": 882065, 
+"^ot:ottTaxonName": "Nicotiana attenuata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 19089, 
 "@tb:identifier.taxonVariant": 44431, 
@@ -2674,8 +3016,9 @@
 }
 }, 
 "Tl1666862": {
-"^ot:altLabel": "Medicago truncatula Gaertn.", 
 "^ot:originalLabel": "Medicago truncatula MtAGO10", 
+"^ot:ottId": 1060499, 
+"^ot:ottTaxonName": "Medicago truncatula", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 17129, 
 "@tb:identifier.taxonVariant": 40133, 
@@ -2685,8 +3028,9 @@
 "^skos:prefLabel": "Medicago truncatula"
 }, 
 "Tl1666863": {
-"^ot:altLabel": "Brachypodium distachyon", 
 "^ot:originalLabel": "Brachypodium distachyon BdAGO16like", 
+"^ot:ottId": 413237, 
+"^ot:ottTaxonName": "Brachypodium distachyon", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3914, 
 "@tb:identifier.taxonVariant": 9330, 
@@ -2695,8 +3039,9 @@
 }
 }, 
 "Tl1666864": {
-"^ot:altLabel": "Arabidopsis lyrata", 
 "^ot:originalLabel": "Arabidopsis lyrata AlAGO10", 
+"^ot:ottId": 840257, 
+"^ot:ottTaxonName": "Arabidopsis lyrata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 33986, 
 "@tb:identifier.taxonVariant": 78500, 
@@ -2705,8 +3050,9 @@
 }
 }, 
 "Tl1666865": {
-"^ot:altLabel": "Citrus aurantium L. var. sinensis L.", 
 "^ot:originalLabel": "Citrus sinensis CsnAGOlike", 
+"^ot:ottId": 3942433, 
+"^ot:ottTaxonName": "Citrus sinensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6225, 
 "@tb:identifier.taxonVariant": 15069, 
@@ -2716,8 +3062,9 @@
 "^skos:prefLabel": "Citrus sinensis"
 }, 
 "Tl1666866": {
-"^ot:altLabel": "Ricinus communis", 
 "^ot:originalLabel": "Ricinus communis RcAGO6", 
+"^ot:ottId": 339346, 
+"^ot:ottTaxonName": "Ricinus communis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 34664, 
 "@tb:identifier.taxonVariant": 80254, 
@@ -2726,8 +3073,9 @@
 }
 }, 
 "Tl1666867": {
-"^ot:altLabel": "Arabidopsis thaliana", 
 "^ot:originalLabel": "Arabidopsis thaliana AtAGO6", 
+"^ot:ottId": 309263, 
+"^ot:ottTaxonName": "Arabidopsis thaliana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 624067, 
 "@tb:identifier.taxonVariant": 836890, 
@@ -2736,8 +3084,9 @@
 }
 }, 
 "Tl1666868": {
-"^ot:altLabel": "Prunus persica", 
 "^ot:originalLabel": "Prunus persica PprAGO1a", 
+"^ot:ottId": 259054, 
+"^ot:ottTaxonName": "Prunus persica", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 23921, 
 "@tb:identifier.taxonVariant": 55869, 
@@ -2746,8 +3095,9 @@
 }
 }, 
 "Tl1666869": {
-"^ot:altLabel": "Mimulus guttatus", 
 "^ot:originalLabel": "Mimulus guttatus MgAGO10", 
+"^ot:ottId": 596473, 
+"^ot:ottTaxonName": "Erythranthe guttata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 17834, 
 "@tb:identifier.taxonVariant": 41729, 
@@ -2756,8 +3106,9 @@
 }
 }, 
 "Tl1666870": {
-"^ot:altLabel": "Ricinus communis", 
 "^ot:originalLabel": "Ricinus communis RcAGO4b", 
+"^ot:ottId": 339346, 
+"^ot:ottTaxonName": "Ricinus communis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 34664, 
 "@tb:identifier.taxonVariant": 80254, 
@@ -2766,8 +3117,9 @@
 }
 }, 
 "Tl1666871": {
-"^ot:altLabel": "Solanum lycopersicum", 
 "^ot:originalLabel": "Solanum lycopersicum SlAGO4a", 
+"^ot:ottId": 378964, 
+"^ot:ottTaxonName": "Solanum lycopersicum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 16506, 
 "@tb:identifier.taxonVariant": 63526, 
@@ -2776,8 +3128,9 @@
 }
 }, 
 "Tl1666872": {
-"^ot:altLabel": "Malus domestica", 
 "^ot:originalLabel": "Malus domestica MdAGO4", 
+"^ot:ottId": 3902985, 
+"^ot:ottTaxonName": "Malus domestica", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 627851, 
 "@tb:identifier.taxonVariant": 841487, 
@@ -2786,8 +3139,9 @@
 }
 }, 
 "Tl1666873": {
-"^ot:altLabel": "Arabidopsis thaliana", 
 "^ot:originalLabel": "Arabidopsis thaliana AtAGO7", 
+"^ot:ottId": 309263, 
+"^ot:ottTaxonName": "Arabidopsis thaliana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 624067, 
 "@tb:identifier.taxonVariant": 836890, 
@@ -2796,8 +3150,9 @@
 }
 }, 
 "Tl1666874": {
-"^ot:altLabel": "Capsella rubella", 
 "^ot:originalLabel": "Capsella rubella CrbAGO3", 
+"^ot:ottId": 19798, 
+"^ot:ottTaxonName": "Capsella rubella", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 4844, 
 "@tb:identifier.taxonVariant": 11671, 
@@ -2806,8 +3161,9 @@
 }
 }, 
 "Tl1666875": {
-"^ot:altLabel": "Tribolium castaneum", 
 "^ot:originalLabel": "Tribolium castaneum TcAGO2b", 
+"^ot:ottId": 148904, 
+"^ot:ottTaxonName": "Tribolium castaneum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 621647, 
 "@tb:identifier.taxonVariant": 832564, 
@@ -2816,8 +3172,9 @@
 }
 }, 
 "Tl1666876": {
-"^ot:altLabel": "Chlamydomonas reinhardtii", 
 "^ot:originalLabel": "Chlamydomonas reinhardtii CrnAGOlike", 
+"^ot:ottId": 33153, 
+"^ot:ottTaxonName": "Chlamydomonas reinhardtii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5860, 
 "@tb:identifier.taxonVariant": 14193, 
@@ -2826,8 +3183,9 @@
 }
 }, 
 "Tl1666877": {
-"^ot:altLabel": "Amphimedon queenslandica", 
 "^ot:originalLabel": "Amphimedon queenslandica AqAGO2like1", 
+"^ot:ottId": 707499, 
+"^ot:ottTaxonName": "Amphimedon queenslandica", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 349113, 
 "@tb:identifier.taxonVariant": 382624, 
@@ -2836,8 +3194,9 @@
 }
 }, 
 "Tl1666878": {
-"^ot:altLabel": "Xenopus laevis", 
 "^ot:originalLabel": "Xenopus laevis XlAGO2", 
+"^ot:ottId": 465096, 
+"^ot:ottTaxonName": "Xenopus laevis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 31035, 
 "@tb:identifier.taxonVariant": 72461, 
@@ -2846,8 +3205,9 @@
 }
 }, 
 "Tl1666879": {
-"^ot:altLabel": "Musca domestica", 
 "^ot:originalLabel": "Musca domestica MudAGO1like", 
+"^ot:ottId": 1011010, 
+"^ot:ottTaxonName": "Musca domestica", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 40632, 
 "@tb:identifier.taxonVariant": 94579, 
@@ -2856,8 +3216,9 @@
 }
 }, 
 "Tl1666880": {
-"^ot:altLabel": "Aedes aegypti", 
 "^ot:originalLabel": "Aedes aegypti AaAGO2", 
+"^ot:ottId": 269666, 
+"^ot:ottTaxonName": "Aedes aegypti", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 467, 
 "@tb:identifier.taxonVariant": 1135, 
@@ -2866,8 +3227,9 @@
 }
 }, 
 "Tl1666881": {
-"^ot:altLabel": "Bos taurus", 
 "^ot:originalLabel": "Bos taurus BtAGO2", 
+"^ot:ottId": 490099, 
+"^ot:ottTaxonName": "Bos taurus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3757, 
 "@tb:identifier.taxonVariant": 8956, 
@@ -2876,8 +3238,9 @@
 }
 }, 
 "Tl1666882": {
-"^ot:altLabel": "Spodoptera litura", 
 "^ot:originalLabel": "Spodoptera litura SplAGO1", 
+"^ot:ottId": 396568, 
+"^ot:ottTaxonName": "Spodoptera litura", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 84331, 
 "@tb:identifier.taxonVariant": 162917, 
@@ -2886,8 +3249,9 @@
 }
 }, 
 "Tl1666883": {
-"^ot:altLabel": "Sus scrofa", 
 "^ot:originalLabel": "Sus scrofa SsAGO2", 
+"^ot:ottId": 730013, 
+"^ot:ottTaxonName": "Sus scrofa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 28275, 
 "@tb:identifier.taxonVariant": 65944, 
@@ -2896,8 +3260,9 @@
 }
 }, 
 "Tl1666884": {
-"^ot:altLabel": "Strongylocentrotus purpuratus", 
 "^ot:originalLabel": "Strongylocentrotus purpuratus SpAGO1", 
+"^ot:ottId": 564702, 
+"^ot:ottTaxonName": "Strongylocentrotus purpuratus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 621709, 
 "@tb:identifier.taxonVariant": 832569, 
@@ -2906,8 +3271,9 @@
 }
 }, 
 "Tl1666885": {
-"^ot:altLabel": "Drosophila santomea", 
 "^ot:originalLabel": "Drosophila santomea DsAGO2", 
+"^ot:ottId": 549044, 
+"^ot:ottTaxonName": "Drosophila santomea", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 129121, 
 "@tb:identifier.taxonVariant": 206661, 
@@ -2916,8 +3282,9 @@
 }
 }, 
 "Tl1666886": {
-"^ot:altLabel": "Trichuris trichiura", 
 "^ot:originalLabel": "Trichuris trichiura TtAGO2", 
+"^ot:ottId": 206556, 
+"^ot:ottTaxonName": "Trichuris trichiura", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 29555, 
 "@tb:identifier.taxonVariant": 68872, 
@@ -2926,8 +3293,9 @@
 }
 }, 
 "Tl1666887": {
-"^ot:altLabel": "Oikopleura dioica", 
 "^ot:originalLabel": "Oikopleura dioica OdAGO2", 
+"^ot:ottId": 846401, 
+"^ot:ottTaxonName": "Oikopleura dioica", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 34273, 
 "@tb:identifier.taxonVariant": 79129, 
@@ -2936,8 +3304,9 @@
 }
 }, 
 "Tl1666888": {
-"^ot:altLabel": "Amphimedon queenslandica", 
 "^ot:originalLabel": "Amphimedon queenslandica AqAGO2like2", 
+"^ot:ottId": 707499, 
+"^ot:ottTaxonName": "Amphimedon queenslandica", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 349113, 
 "@tb:identifier.taxonVariant": 382624, 
@@ -2946,8 +3315,9 @@
 }
 }, 
 "Tl1666889": {
-"^ot:altLabel": "Nematostella vectensis", 
 "^ot:originalLabel": "Nematostella vectensis NvAGO1", 
+"^ot:ottId": 938118, 
+"^ot:ottTaxonName": "Nematostella vectensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 44259, 
 "@tb:identifier.taxonVariant": 103508, 
@@ -2956,8 +3326,9 @@
 }
 }, 
 "Tl1666890": {
-"^ot:altLabel": "Drosophila immigrans", 
 "^ot:originalLabel": "Drosophila immigrans DiAGO2", 
+"^ot:ottId": 138600, 
+"^ot:ottTaxonName": "Drosophila immigrans", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 52406, 
 "@tb:identifier.taxonVariant": 122478, 
@@ -2966,8 +3337,9 @@
 }
 }, 
 "Tl1666891": {
-"^ot:altLabel": "Bombyx mori", 
 "^ot:originalLabel": "Bombyx mori BmoAGO2", 
+"^ot:ottId": 440274, 
+"^ot:ottTaxonName": "Bombyx mori", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3719, 
 "@tb:identifier.taxonVariant": 8873, 
@@ -2976,8 +3348,9 @@
 }
 }, 
 "Tl1666892": {
-"^ot:altLabel": "Bombyx mori", 
 "^ot:originalLabel": "Bombyx mori BmoAGO1", 
+"^ot:ottId": 440274, 
+"^ot:ottTaxonName": "Bombyx mori", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3719, 
 "@tb:identifier.taxonVariant": 8873, 
@@ -2986,8 +3359,9 @@
 }
 }, 
 "Tl1666893": {
-"^ot:altLabel": "Anopheles darlingi", 
 "^ot:originalLabel": "Anopheles darlingi AdAGO2", 
+"^ot:ottId": 1040139, 
+"^ot:ottTaxonName": "Anopheles darlingi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 66414, 
 "@tb:identifier.taxonVariant": 141603, 
@@ -2996,8 +3370,9 @@
 }
 }, 
 "Tl1666894": {
-"^ot:altLabel": "Crassostrea gigas", 
 "^ot:originalLabel": "Crassostrea gigas CgAGO2", 
+"^ot:ottId": 987409, 
+"^ot:ottTaxonName": "Crassostrea gigas", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 57551, 
 "@tb:identifier.taxonVariant": 129769, 
@@ -3009,8 +3384,9 @@
 "^ot:originalLabel": "Isodiametrica pulchra IpPIWIlike2"
 }, 
 "Tl1666896": {
-"^ot:altLabel": "Nilaparvata lugens", 
 "^ot:originalLabel": "Nilaparvata lugens NlAGO2", 
+"^ot:ottId": 876508, 
+"^ot:ottTaxonName": "Nilaparvata lugens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 113837, 
 "@tb:identifier.taxonVariant": 426937, 
@@ -3019,8 +3395,9 @@
 }
 }, 
 "Tl1666897": {
-"^ot:altLabel": "Nilaparvata lugens", 
 "^ot:originalLabel": "Nilaparvata lugens NlAGO1", 
+"^ot:ottId": 876508, 
+"^ot:ottTaxonName": "Nilaparvata lugens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 113837, 
 "@tb:identifier.taxonVariant": 426937, 
@@ -3029,8 +3406,9 @@
 }
 }, 
 "Tl1666898": {
-"^ot:altLabel": "Spodoptera litura", 
 "^ot:originalLabel": "Spodoptera litura SplAGO2", 
+"^ot:ottId": 396568, 
+"^ot:ottTaxonName": "Spodoptera litura", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 84331, 
 "@tb:identifier.taxonVariant": 162917, 
@@ -3039,8 +3417,9 @@
 }
 }, 
 "Tl1666899": {
-"^ot:altLabel": "Hydra vulgaris", 
 "^ot:originalLabel": "Hydra vulgaris HyvAGO2like", 
+"^ot:ottId": 861536, 
+"^ot:ottTaxonName": "Hydra vulgaris", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 13855, 
 "@tb:identifier.taxonVariant": 32685, 
@@ -3049,8 +3428,9 @@
 }
 }, 
 "Tl1666900": {
-"^ot:altLabel": "Marsupenaeus japonicus", 
 "^ot:originalLabel": "Marsupenaeus japonicus MjAGO2", 
+"^ot:ottId": 5787510, 
+"^ot:ottTaxonName": "Penaeus japonicus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 56452, 
 "@tb:identifier.taxonVariant": 128051, 
@@ -3059,8 +3439,9 @@
 }
 }, 
 "Tl1666901": {
-"^ot:altLabel": "Danaus plexippus (L.)", 
 "^ot:originalLabel": "Danaus plexippus DpAGO1", 
+"^ot:ottId": 190091, 
+"^ot:ottTaxonName": "Danaus plexippus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 8373, 
 "@tb:identifier.taxonVariant": 20126, 
@@ -3070,8 +3451,9 @@
 "^skos:prefLabel": "Danaus plexippus"
 }, 
 "Tl1666902": {
-"^ot:altLabel": "Brugia malayi", 
 "^ot:originalLabel": "Brugia malayi BmaAGO2", 
+"^ot:ottId": 295367, 
+"^ot:ottTaxonName": "Brugia malayi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 4105, 
 "@tb:identifier.taxonVariant": 9943, 
@@ -3080,8 +3462,9 @@
 }
 }, 
 "Tl1666903": {
-"^ot:altLabel": "Drosophila melanogaster", 
 "^ot:originalLabel": "Drosophila melanogaster DmAGO2", 
+"^ot:ottId": 505714, 
+"^ot:ottTaxonName": "Drosophila melanogaster", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 625111, 
 "@tb:identifier.taxonVariant": 837544, 
@@ -3090,8 +3473,9 @@
 }
 }, 
 "Tl1666904": {
-"^ot:altLabel": "Drosophila melanogaster", 
 "^ot:originalLabel": "Drosophila melanogaster DmAGO1", 
+"^ot:ottId": 505714, 
+"^ot:ottTaxonName": "Drosophila melanogaster", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 625111, 
 "@tb:identifier.taxonVariant": 837544, 
@@ -3100,8 +3484,9 @@
 }
 }, 
 "Tl1666905": {
-"^ot:altLabel": "Nematostella vectensis", 
 "^ot:originalLabel": "Nematostella vectensis NvAGO2", 
+"^ot:ottId": 938118, 
+"^ot:ottTaxonName": "Nematostella vectensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 44259, 
 "@tb:identifier.taxonVariant": 103508, 
@@ -3110,8 +3495,9 @@
 }
 }, 
 "Tl1666906": {
-"^ot:altLabel": "Ephydatia fluviatilis", 
 "^ot:originalLabel": "Ephydatia fluviatilis EfAGO", 
+"^ot:ottId": 388857, 
+"^ot:ottTaxonName": "Ephydatia fluviatilis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 58791, 
 "@tb:identifier.taxonVariant": 131693, 
@@ -3128,8 +3514,9 @@
 }
 }, 
 "Tl1666908": {
-"^ot:altLabel": "Danio rerio", 
 "^ot:originalLabel": "Danio rerio DrAGO2", 
+"^ot:ottId": 1005914, 
+"^ot:ottTaxonName": "Danio rerio", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 621653, 
 "@tb:identifier.taxonVariant": 832565, 
@@ -3154,7 +3541,18 @@
 "Tr79864": {
 "@label": "Plant AGOs ML", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "Tn12342051", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:kind.tree": "Gene Tree", 
 "^tb:ntax.tree": 270, 
 "^tb:quality.tree": "Preferred Tree", 
@@ -7494,7 +7892,18 @@
 "Tr79865": {
 "@label": "Plant AGOs NJ", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:undefined", 
+"^ot:branchLengthTimeUnit": "Myr", 
+"^ot:curatedType": "Neighbor-joining ", 
+"^ot:inGroupClade": "Tn12342283", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "Tn12342576", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:kind.tree": "Gene Tree", 
 "^tb:ntax.tree": 270, 
 "^tb:quality.tree": "Preferred Tree", 
@@ -10746,7 +11155,8 @@
 "@otu": "Tl1666719"
 }, 
 "Tn12342112": {
-"@otu": "Tl1666634"
+"@otu": "Tl1666634", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12342113": {
 "@otu": "Tl1666799"
@@ -10758,10 +11168,12 @@
 "@label": "1.0000"
 }, 
 "Tn12342116": {
-"@otu": "Tl1666797"
+"@otu": "Tl1666797", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12342117": {
-"@otu": "Tl1666830"
+"@otu": "Tl1666830", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12342118": {
 "@label": "0.6500"
@@ -10776,19 +11188,22 @@
 "@label": "0.9100"
 }, 
 "Tn12342122": {
-"@otu": "Tl1666847"
+"@otu": "Tl1666847", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12342123": {
 "@label": "0.5900"
 }, 
 "Tn12342124": {
-"@otu": "Tl1666813"
+"@otu": "Tl1666813", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn12342125": {
 "@otu": "Tl1666780"
 }, 
 "Tn12342126": {
-"@otu": "Tl1666649"
+"@otu": "Tl1666649", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12342127": {
 "@label": "0.5700"
@@ -10797,7 +11212,8 @@
 "@label": "0.9700"
 }, 
 "Tn12342129": {
-"@otu": "Tl1666707"
+"@otu": "Tl1666707", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12342130": {
 "@otu": "Tl1666701"
@@ -10806,7 +11222,8 @@
 "@label": "0.9300"
 }, 
 "Tn12342132": {
-"@otu": "Tl1666823"
+"@otu": "Tl1666823", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12342133": {
 "@label": "0.3700"
@@ -10848,7 +11265,8 @@
 "@label": "0.5700"
 }, 
 "Tn12342146": {
-"@otu": "Tl1666861"
+"@otu": "Tl1666861", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12342147": {
 "@otu": "Tl1666704"
@@ -10861,16 +11279,19 @@
 }, 
 "Tn12342150": {
 "@label": "Citrus cinensis CsnAGO7", 
-"@otu": "Tl1666858"
+"@otu": "Tl1666858", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12342151": {
-"@otu": "Tl1666749"
+"@otu": "Tl1666749", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12342152": {
 "@otu": "Tl1666626"
 }, 
 "Tn12342153": {
-"@otu": "Tl1666803"
+"@otu": "Tl1666803", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12342154": {
 "@label": "1.0000"
@@ -10900,10 +11321,12 @@
 "@label": "0.9700"
 }, 
 "Tn12342163": {
-"@otu": "Tl1666793"
+"@otu": "Tl1666793", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn12342164": {
-"@otu": "Tl1666642"
+"@otu": "Tl1666642", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12342165": {
 "@label": "0.3900"
@@ -10930,7 +11353,8 @@
 "@label": "0.6300"
 }, 
 "Tn12342173": {
-"@otu": "Tl1666810"
+"@otu": "Tl1666810", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12342174": {
 "@label": "0.3200"
@@ -10939,7 +11363,8 @@
 "@label": "0.4600"
 }, 
 "Tn12342176": {
-"@otu": "Tl1666840"
+"@otu": "Tl1666840", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12342177": {
 "@label": "0.8800"
@@ -10963,7 +11388,8 @@
 "@label": "1.0000"
 }, 
 "Tn12342184": {
-"@otu": "Tl1666816"
+"@otu": "Tl1666816", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12342185": {
 "@label": "0.5300"
@@ -10984,7 +11410,8 @@
 "@otu": "Tl1666874"
 }, 
 "Tn12342191": {
-"@otu": "Tl1666646"
+"@otu": "Tl1666646", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12342192": {
 "@label": "1.0000"
@@ -11002,7 +11429,8 @@
 "@label": "1.0000"
 }, 
 "Tn12342197": {
-"@otu": "Tl1666740"
+"@otu": "Tl1666740", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12342198": {
 "@otu": "Tl1666821"
@@ -11011,10 +11439,12 @@
 "@label": "0.0800"
 }, 
 "Tn12342200": {
-"@otu": "Tl1666846"
+"@otu": "Tl1666846", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12342201": {
-"@otu": "Tl1666675"
+"@otu": "Tl1666675", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12342202": {
 "@otu": "Tl1666678"
@@ -11023,14 +11453,16 @@
 "@label": "0.5200"
 }, 
 "Tn12342204": {
-"@otu": "Tl1666817"
+"@otu": "Tl1666817", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12342205": {
 "@label": "Medicago tranculata MtAGO7", 
 "@otu": "Tl1666609"
 }, 
 "Tn12342206": {
-"@otu": "Tl1666670"
+"@otu": "Tl1666670", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12342207": {
 "@label": "0.5200"
@@ -11042,7 +11474,8 @@
 "@otu": "Tl1666798"
 }, 
 "Tn12342210": {
-"@otu": "Tl1666734"
+"@otu": "Tl1666734", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12342211": {
 "@label": "0.9800"
@@ -11081,10 +11514,12 @@
 "@label": "0.1000"
 }, 
 "Tn12342223": {
-"@otu": "Tl1666853"
+"@otu": "Tl1666853", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12342224": {
-"@otu": "Tl1666812"
+"@otu": "Tl1666812", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12342225": {
 "@label": "0.6600"
@@ -11099,7 +11534,8 @@
 "@label": "0.3800"
 }, 
 "Tn12342229": {
-"@otu": "Tl1666685"
+"@otu": "Tl1666685", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12342230": {
 "@label": "0.4300"
@@ -11108,7 +11544,8 @@
 "@label": "0.2000"
 }, 
 "Tn12342232": {
-"@otu": "Tl1666773"
+"@otu": "Tl1666773", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12342233": {
 "@otu": "Tl1666871"
@@ -11141,16 +11578,19 @@
 "@otu": "Tl1666692"
 }, 
 "Tn12342243": {
-"@otu": "Tl1666838"
+"@otu": "Tl1666838", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12342244": {
-"@otu": "Tl1666632"
+"@otu": "Tl1666632", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12342245": {
 "@label": "1.0000"
 }, 
 "Tn12342246": {
-"@otu": "Tl1666769"
+"@otu": "Tl1666769", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn12342247": {
 "@otu": "Tl1666783"
@@ -11166,13 +11606,15 @@
 "@label": "1.0000"
 }, 
 "Tn12342251": {
-"@otu": "Tl1666843"
+"@otu": "Tl1666843", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12342252": {
 "@otu": "Tl1666811"
 }, 
 "Tn12342253": {
-"@otu": "Tl1666839"
+"@otu": "Tl1666839", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12342254": {
 "@otu": "Tl1666836"
@@ -11181,7 +11623,8 @@
 "@label": "0.5600"
 }, 
 "Tn12342256": {
-"@otu": "Tl1666808"
+"@otu": "Tl1666808", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12342257": {
 "@label": "0.9900"
@@ -11208,7 +11651,8 @@
 "@label": "0.9800"
 }, 
 "Tn12342265": {
-"@otu": "Tl1666784"
+"@otu": "Tl1666784", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12342266": {
 "@otu": "Tl1666627"
@@ -11220,7 +11664,8 @@
 "@otu": "Tl1666763"
 }, 
 "Tn12342269": {
-"@otu": "Tl1666677"
+"@otu": "Tl1666677", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12342270": {
 "@otu": "Tl1666841"
@@ -11233,13 +11678,16 @@
 }, 
 "Tn12342273": {
 "@label": "Citrus cinensis CsnAGO1", 
-"@otu": "Tl1666619"
+"@otu": "Tl1666619", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12342274": {
-"@otu": "Tl1666795"
+"@otu": "Tl1666795", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12342275": {
-"@otu": "Tl1666661"
+"@otu": "Tl1666661", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12342276": {
 "@label": "1.0000"
@@ -11266,7 +11714,8 @@
 "@label": "0.0000"
 }, 
 "Tn12342284": {
-"@otu": "Tl1666786"
+"@otu": "Tl1666786", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12342285": {
 "@label": "0.9900"
@@ -11297,7 +11746,8 @@
 "@label": "0.1600"
 }, 
 "Tn12342294": {
-"@otu": "Tl1666640"
+"@otu": "Tl1666640", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12342295": {
 "@label": "0.9900"
@@ -11306,13 +11756,15 @@
 "@otu": "Tl1666612"
 }, 
 "Tn12342297": {
-"@otu": "Tl1666837"
+"@otu": "Tl1666837", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn12342298": {
 "@label": "1.0000"
 }, 
 "Tn12342299": {
-"@otu": "Tl1666833"
+"@otu": "Tl1666833", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12342300": {
 "@label": "0.9400"
@@ -11330,16 +11782,19 @@
 "@label": "0.8900"
 }, 
 "Tn12342305": {
-"@otu": "Tl1666856"
+"@otu": "Tl1666856", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12342306": {
-"@otu": "Tl1666690"
+"@otu": "Tl1666690", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12342307": {
 "@label": "0.9400"
 }, 
 "Tn12342308": {
-"@otu": "Tl1666718"
+"@otu": "Tl1666718", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn12342309": {
 "@label": "0.7400"
@@ -11348,7 +11803,8 @@
 "@otu": "Tl1666755"
 }, 
 "Tn12342311": {
-"@otu": "Tl1666684"
+"@otu": "Tl1666684", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12342312": {
 "@label": "1.0000"
@@ -11357,16 +11813,19 @@
 "@otu": "Tl1666709"
 }, 
 "Tn12342314": {
-"@otu": "Tl1666694"
+"@otu": "Tl1666694", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12342315": {
 "@otu": "Tl1666615"
 }, 
 "Tn12342316": {
-"@otu": "Tl1666738"
+"@otu": "Tl1666738", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12342317": {
-"@otu": "Tl1666700"
+"@otu": "Tl1666700", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn12342318": {
 "@label": "1.0000"
@@ -11396,7 +11855,8 @@
 "@label": "0.6200"
 }, 
 "Tn12342327": {
-"@otu": "Tl1666824"
+"@otu": "Tl1666824", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12342328": {
 "@label": "0.9700"
@@ -11420,16 +11880,20 @@
 "@label": "1.0000"
 }, 
 "Tn12342335": {
-"@otu": "Tl1666757"
+"@otu": "Tl1666757", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn12342336": {
-"@otu": "Tl1666790"
+"@otu": "Tl1666790", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12342337": {
-"@otu": "Tl1666781"
+"@otu": "Tl1666781", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12342338": {
-"@otu": "Tl1666867"
+"@otu": "Tl1666867", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12342339": {
 "@otu": "Tl1666809"
@@ -11448,22 +11912,27 @@
 }, 
 "Tn12342344": {
 "@label": "Citrus cinensis CsnAGO5", 
-"@otu": "Tl1666668"
+"@otu": "Tl1666668", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn12342345": {
-"@otu": "Tl1666825"
+"@otu": "Tl1666825", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12342346": {
-"@otu": "Tl1666805"
+"@otu": "Tl1666805", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12342347": {
-"@otu": "Tl1666608"
+"@otu": "Tl1666608", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12342348": {
 "@label": "0.9000"
 }, 
 "Tn12342349": {
-"@otu": "Tl1666737"
+"@otu": "Tl1666737", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn12342350": {
 "@otu": "Tl1666806"
@@ -11478,10 +11947,12 @@
 "@label": "1.0000"
 }, 
 "Tn12342354": {
-"@otu": "Tl1666835"
+"@otu": "Tl1666835", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12342355": {
-"@otu": "Tl1666850"
+"@otu": "Tl1666850", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn12342356": {
 "@otu": "Tl1666653"
@@ -11494,7 +11965,8 @@
 "@otu": "Tl1666842"
 }, 
 "Tn12342359": {
-"@otu": "Tl1666754"
+"@otu": "Tl1666754", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12342360": {
 "@label": "0.4600"
@@ -11503,13 +11975,15 @@
 "@label": "1.0000"
 }, 
 "Tn12342362": {
-"@otu": "Tl1666711"
+"@otu": "Tl1666711", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12342363": {
 "@label": "0.1100"
 }, 
 "Tn12342364": {
-"@otu": "Tl1666796"
+"@otu": "Tl1666796", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12342365": {
 "@otu": "Tl1666794"
@@ -11518,7 +11992,8 @@
 "@label": "1.0000"
 }, 
 "Tn12342367": {
-"@otu": "Tl1666766"
+"@otu": "Tl1666766", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12342368": {
 "@label": "0.7000"
@@ -11536,7 +12011,8 @@
 "@label": "0.8100"
 }, 
 "Tn12342373": {
-"@otu": "Tl1666635"
+"@otu": "Tl1666635", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12342374": {
 "@otu": "Tl1666789"
@@ -11545,7 +12021,8 @@
 "@label": "0.2400"
 }, 
 "Tn12342376": {
-"@otu": "Tl1666691"
+"@otu": "Tl1666691", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12342377": {
 "@label": "1.0000"
@@ -11560,7 +12037,8 @@
 "@label": "0.7000"
 }, 
 "Tn12342381": {
-"@otu": "Tl1666864"
+"@otu": "Tl1666864", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12342382": {
 "@label": "1.0000"
@@ -11569,16 +12047,19 @@
 "@label": "1.0000"
 }, 
 "Tn12342384": {
-"@otu": "Tl1666633"
+"@otu": "Tl1666633", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12342385": {
-"@otu": "Tl1666647"
+"@otu": "Tl1666647", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12342386": {
 "@label": "0.9700"
 }, 
 "Tn12342387": {
-"@otu": "Tl1666776"
+"@otu": "Tl1666776", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12342388": {
 "@label": "0.9600"
@@ -11603,7 +12084,8 @@
 "@otu": "Tl1666800"
 }, 
 "Tn12342395": {
-"@otu": "Tl1666832"
+"@otu": "Tl1666832", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12342396": {
 "@label": "0.9900"
@@ -11612,7 +12094,8 @@
 "@label": "0.2400"
 }, 
 "Tn12342398": {
-"@otu": "Tl1666872"
+"@otu": "Tl1666872", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12342399": {
 "@otu": "Tl1666721"
@@ -11621,7 +12104,8 @@
 "@label": "0.2000"
 }, 
 "Tn12342401": {
-"@otu": "Tl1666705"
+"@otu": "Tl1666705", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12342402": {
 "@otu": "Tl1666693"
@@ -11636,7 +12120,8 @@
 "@label": "1.0000"
 }, 
 "Tn12342406": {
-"@otu": "Tl1666759"
+"@otu": "Tl1666759", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12342407": {
 "@label": "0.2700"
@@ -11655,16 +12140,19 @@
 }, 
 "Tn12342412": {
 "@label": "Citrus cinensis CsnAGO10", 
-"@otu": "Tl1666849"
+"@otu": "Tl1666849", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12342413": {
-"@otu": "Tl1666852"
+"@otu": "Tl1666852", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12342414": {
 "@label": "1.0000"
 }, 
 "Tn12342415": {
-"@otu": "Tl1666752"
+"@otu": "Tl1666752", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12342416": {
 "@label": "0.9400"
@@ -11679,16 +12167,19 @@
 "@label": "0.1900"
 }, 
 "Tn12342420": {
-"@otu": "Tl1666624"
+"@otu": "Tl1666624", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12342421": {
-"@otu": "Tl1666802"
+"@otu": "Tl1666802", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12342422": {
 "@label": "0.1700"
 }, 
 "Tn12342423": {
-"@otu": "Tl1666643"
+"@otu": "Tl1666643", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12342424": {
 "@label": "0.2600"
@@ -11703,7 +12194,8 @@
 "@label": "0.4100"
 }, 
 "Tn12342428": {
-"@otu": "Tl1666673"
+"@otu": "Tl1666673", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12342429": {
 "@label": "Medicago tranculata MtAGO6", 
@@ -11746,19 +12238,23 @@
 "@label": "0.9800"
 }, 
 "Tn12342442": {
-"@otu": "Tl1666699"
+"@otu": "Tl1666699", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12342443": {
-"@otu": "Tl1666745"
+"@otu": "Tl1666745", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12342444": {
-"@otu": "Tl1666875"
+"@otu": "Tl1666875", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12342445": {
 "@label": "0.9600"
 }, 
 "Tn12342446": {
-"@otu": "Tl1666848"
+"@otu": "Tl1666848", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12342447": {
 "@label": "0.2200"
@@ -11770,7 +12266,8 @@
 "@label": "0.5200"
 }, 
 "Tn12342450": {
-"@otu": "Tl1666873"
+"@otu": "Tl1666873", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12342451": {
 "@label": "1.0000"
@@ -11792,7 +12289,8 @@
 "@label": "0.9900"
 }, 
 "Tn12342457": {
-"@otu": "Tl1666774"
+"@otu": "Tl1666774", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12342458": {
 "@otu": "Tl1666622"
@@ -11823,7 +12321,8 @@
 "@otu": "Tl1666644"
 }, 
 "Tn12342467": {
-"@otu": "Tl1666828"
+"@otu": "Tl1666828", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12342468": {
 "@label": "0.3600"
@@ -11844,11 +12343,13 @@
 "@otu": "Tl1666672"
 }, 
 "Tn12342474": {
-"@otu": "Tl1666617"
+"@otu": "Tl1666617", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12342475": {
 "@label": "Citrus cinensis CsnAGO4", 
-"@otu": "Tl1666744"
+"@otu": "Tl1666744", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12342476": {
 "@label": "0.3200"
@@ -11863,10 +12364,12 @@
 "@otu": "Tl1666860"
 }, 
 "Tn12342480": {
-"@otu": "Tl1666655"
+"@otu": "Tl1666655", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12342481": {
-"@otu": "Tl1666778"
+"@otu": "Tl1666778", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12342482": {
 "@label": "0.9000"
@@ -11887,7 +12390,8 @@
 "@label": "1.0000"
 }, 
 "Tn12342488": {
-"@otu": "Tl1666669"
+"@otu": "Tl1666669", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12342489": {
 "@label": "0.7300"
@@ -11908,7 +12412,8 @@
 "@otu": "Tl1666717"
 }, 
 "Tn12342495": {
-"@otu": "Tl1666764"
+"@otu": "Tl1666764", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12342496": {
 "@label": "1.0000"
@@ -11917,10 +12422,12 @@
 "@otu": "Tl1666728"
 }, 
 "Tn12342498": {
-"@otu": "Tl1666731"
+"@otu": "Tl1666731", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12342499": {
-"@otu": "Tl1666876"
+"@otu": "Tl1666876", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12342500": {
 "@otu": "Tl1666782"
@@ -11932,13 +12439,15 @@
 "@label": "0.0800"
 }, 
 "Tn12342503": {
-"@otu": "Tl1666775"
+"@otu": "Tl1666775", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12342504": {
 "@label": "0.1600"
 }, 
 "Tn12342505": {
-"@otu": "Tl1666851"
+"@otu": "Tl1666851", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12342506": {
 "@label": "0.5200"
@@ -11950,7 +12459,8 @@
 "@label": "0.1800"
 }, 
 "Tn12342509": {
-"@otu": "Tl1666855"
+"@otu": "Tl1666855", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn12342510": {
 "@otu": "Tl1666639"
@@ -11962,7 +12472,8 @@
 "@label": "0.9200"
 }, 
 "Tn12342513": {
-"@otu": "Tl1666637"
+"@otu": "Tl1666637", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12342514": {
 "@label": "1.0000"
@@ -11978,7 +12489,8 @@
 }, 
 "Tn12342518": {
 "@label": "Citrus cinensis CsnAGO6", 
-"@otu": "Tl1666742"
+"@otu": "Tl1666742", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12342519": {
 "@label": "0.6200"
@@ -11987,13 +12499,15 @@
 "@label": "0.5500"
 }, 
 "Tn12342521": {
-"@otu": "Tl1666787"
+"@otu": "Tl1666787", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12342522": {
 "@label": "1.0000"
 }, 
 "Tn12342523": {
-"@otu": "Tl1666777"
+"@otu": "Tl1666777", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12342524": {
 "@label": "0.4500"
@@ -12005,7 +12519,8 @@
 "@label": "0.6200"
 }, 
 "Tn12342527": {
-"@otu": "Tl1666819"
+"@otu": "Tl1666819", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12342528": {
 "@label": "0.3100"
@@ -12026,26 +12541,31 @@
 "@label": "0.6200"
 }, 
 "Tn12342534": {
-"@otu": "Tl1666621"
+"@otu": "Tl1666621", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12342535": {
 "@label": "0.9400"
 }, 
 "Tn12342536": {
-"@otu": "Tl1666732"
+"@otu": "Tl1666732", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn12342537": {
-"@otu": "Tl1666726"
+"@otu": "Tl1666726", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12342538": {
 "@otu": "Tl1666681"
 }, 
 "Tn12342539": {
-"@otu": "Tl1666827"
+"@otu": "Tl1666827", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12342540": {
 "@label": "Citrus cinensis CsnAGO9", 
-"@otu": "Tl1666654"
+"@otu": "Tl1666654", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12342541": {
 "@label": "0.6800"
@@ -12057,7 +12577,8 @@
 "@label": "0.6100"
 }, 
 "Tn12342544": {
-"@otu": "Tl1666712"
+"@otu": "Tl1666712", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12342545": {
 "@otu": "Tl1666725"
@@ -12066,7 +12587,8 @@
 "@label": "0.9600"
 }, 
 "Tn12342547": {
-"@otu": "Tl1666801"
+"@otu": "Tl1666801", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12342548": {
 "@label": "0.5800"
@@ -12099,7 +12621,8 @@
 "@otu": "Tl1666698"
 }, 
 "Tn12342558": {
-"@otu": "Tl1666814"
+"@otu": "Tl1666814", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12342559": {
 "@label": "1.0000"
@@ -12114,44 +12637,54 @@
 "@otu": "Tl1666658"
 }, 
 "Tn12342563": {
-"@otu": "Tl1666857"
+"@otu": "Tl1666857", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn12342564": {
-"@otu": "Tl1666715"
+"@otu": "Tl1666715", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn12342565": {
-"@otu": "Tl1666748"
+"@otu": "Tl1666748", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12342566": {
 "@label": "0.0900"
 }, 
 "Tn12342567": {
-"@otu": "Tl1666739"
+"@otu": "Tl1666739", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12342568": {
 "@label": "1.0000"
 }, 
 "Tn12342569": {
-"@otu": "Tl1666761"
+"@otu": "Tl1666761", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12342570": {
-"@otu": "Tl1666831"
+"@otu": "Tl1666831", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12342571": {
 "@label": "0.5400"
 }, 
 "Tn12342572": {
 "@label": "Citrus cinensis CsnAGOlike", 
-"@otu": "Tl1666865"
+"@otu": "Tl1666865", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12342573": {
-"@otu": "Tl1666710"
+"@otu": "Tl1666710", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12342574": {
-"@otu": "Tl1666727"
+"@otu": "Tl1666727", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12342575": {
-"@otu": "Tl1666869"
+"@otu": "Tl1666869", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12342576": {
 "@root": true
@@ -12160,7 +12693,8 @@
 "@otu": "Tl1666747"
 }, 
 "Tn12342578": {
-"@otu": "Tl1666767"
+"@otu": "Tl1666767", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12342579": {
 "@label": "0.8800"
@@ -12178,7 +12712,8 @@
 "@label": "0.9400"
 }, 
 "Tn12342584": {
-"@otu": "Tl1666758"
+"@otu": "Tl1666758", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn12342585": {
 "@label": "0.8900"
@@ -12190,16 +12725,19 @@
 "@label": "0.0400"
 }, 
 "Tn12342588": {
-"@otu": "Tl1666650"
+"@otu": "Tl1666650", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12342589": {
-"@otu": "Tl1666716"
+"@otu": "Tl1666716", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12342590": {
 "@label": "0.6100"
 }, 
 "Tn12342591": {
-"@otu": "Tl1666645"
+"@otu": "Tl1666645", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn12342592": {
 "@label": "1.0000"
@@ -12214,7 +12752,8 @@
 "@otu": "Tl1666724"
 }, 
 "Tn12342596": {
-"@otu": "Tl1666666"
+"@otu": "Tl1666666", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12342597": {
 "@label": "Medicago tranculata MtAGO2", 
@@ -12227,7 +12766,8 @@
 "@label": "0.5900"
 }, 
 "Tn12342600": {
-"@otu": "Tl1666820"
+"@otu": "Tl1666820", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12342601": {
 "@label": "1.0000"
@@ -12251,7 +12791,8 @@
 "@otu": "Tl1666733"
 }, 
 "Tn12342608": {
-"@otu": "Tl1666765"
+"@otu": "Tl1666765", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12342609": {
 "@label": "0.0900"
@@ -12269,16 +12810,19 @@
 "@otu": "Tl1666741"
 }, 
 "Tn12342614": {
-"@otu": "Tl1666629"
+"@otu": "Tl1666629", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12342615": {
-"@otu": "Tl1666636"
+"@otu": "Tl1666636", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12342616": {
 "@otu": "Tl1666818"
 }, 
 "Tn12342617": {
-"@otu": "Tl1666688"
+"@otu": "Tl1666688", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12342618": {
 "@otu": "Tl1666641"
@@ -12287,7 +12831,8 @@
 "@otu": "Tl1666610"
 }, 
 "Tn12342620": {
-"@otu": "Tl1666735"
+"@otu": "Tl1666735", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12342621": {
 "@otu": "Tl1666854"
@@ -12296,7 +12841,8 @@
 "@otu": "Tl1666652"
 }, 
 "Tn12342623": {
-"@otu": "Tl1666663"
+"@otu": "Tl1666663", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12342624": {
 "@otu": "Tl1666743"
@@ -12320,7 +12866,8 @@
 "@label": "1.0000"
 }, 
 "Tn12342631": {
-"@otu": "Tl1666834"
+"@otu": "Tl1666834", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12342632": {
 "@label": "0.0200"
@@ -12329,7 +12876,8 @@
 "@otu": "Tl1666772"
 }, 
 "Tn12342634": {
-"@otu": "Tl1666657"
+"@otu": "Tl1666657", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12342635": {
 "@label": "0.9700"
@@ -12338,7 +12886,8 @@
 "@otu": "Tl1666676"
 }, 
 "Tn12342637": {
-"@otu": "Tl1666751"
+"@otu": "Tl1666751", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn12342638": {
 "@label": "0.6200"
@@ -12360,7 +12909,8 @@
 "@label": "0.1000"
 }, 
 "Tn12342644": {
-"@otu": "Tl1666686"
+"@otu": "Tl1666686", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn12342645": {
 "@label": "1.0000"
@@ -12370,7 +12920,18 @@
 "Tr79866": {
 "@label": "All AGOs NJ", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "Tn12343007", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:kind.tree": "Gene Tree", 
 "^tb:ntax.tree": 302, 
 "^tb:quality.tree": "Preferred Tree", 
@@ -12383,7 +12944,7 @@
 "@target": "Tn12343245"
 }, 
 "edge297875": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn12342649", 
 "@target": "Tn12343054"
 }
@@ -12654,7 +13215,7 @@
 }, 
 "Tn12342693": {
 "edge298371": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn12342693", 
 "@target": "Tn12343219"
 }, 
@@ -12846,7 +13407,7 @@
 }, 
 "Tn12342724": {
 "edge297883": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn12342724", 
 "@target": "Tn12342691"
 }, 
@@ -12875,7 +13436,7 @@
 "@target": "Tn12342981"
 }, 
 "edge298487": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn12342728", 
 "@target": "Tn12342868"
 }
@@ -13278,7 +13839,7 @@
 }, 
 "Tn12342796": {
 "edge298345": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn12342796", 
 "@target": "Tn12342989"
 }, 
@@ -13614,7 +14175,7 @@
 }, 
 "Tn12342848": {
 "edge297839": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn12342848", 
 "@target": "Tn12342899"
 }, 
@@ -13643,14 +14204,14 @@
 "@target": "Tn12342984"
 }, 
 "edge298731": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn12342852", 
 "@target": "Tn12343243"
 }
 }, 
 "Tn12342853": {
 "edge297835": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn12342853", 
 "@target": "Tn12342739"
 }, 
@@ -13746,7 +14307,7 @@
 }, 
 "Tn12342871": {
 "edge298709": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn12342871", 
 "@target": "Tn12343124"
 }, 
@@ -14418,7 +14979,7 @@
 }, 
 "Tn12343009": {
 "edge298663": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn12343009", 
 "@target": "Tn12342997"
 }, 
@@ -14526,7 +15087,7 @@
 }, 
 "Tn12343023": {
 "edge298865": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn12343023", 
 "@target": "Tn12343014"
 }, 
@@ -14682,7 +15243,7 @@
 }, 
 "Tn12343046": {
 "edge298901": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn12343046", 
 "@target": "Tn12343213"
 }, 
@@ -15078,7 +15639,7 @@
 }, 
 "Tn12343103": {
 "edge298763": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn12343103", 
 "@target": "Tn12342647"
 }, 
@@ -15107,7 +15668,7 @@
 "@target": "Tn12343206"
 }, 
 "edge298013": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn12343105", 
 "@target": "Tn12342768"
 }
@@ -15294,7 +15855,7 @@
 }, 
 "Tn12343135": {
 "edge298331": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn12343135", 
 "@target": "Tn12343159"
 }, 
@@ -15726,7 +16287,7 @@
 }, 
 "Tn12343203": {
 "edge297975": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn12343203", 
 "@target": "Tn12342765"
 }, 
