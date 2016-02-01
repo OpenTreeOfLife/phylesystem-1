@@ -55,22 +55,109 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2016-02-01T21:02:40.516Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "SAR group"
 }, 
-"^ot:curatorName": "Dail Laughinghouse", 
+"substitutions": {
+"substitution": [
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": "$1"
+}, 
+"old": {
+"$": "^(\\S*\\s+\\S*).*"
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2016-02-01T21:02:40.516Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"Tr87126"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Dail Laughinghouse"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S17476"
 }, 
+"^ot:focalClade": 5246809, 
+"^ot:focalCladeOTTTaxonName": "Dinoflagellata", 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "Tls44093"
 ], 
 "^ot:studyId": "ot_552", 
-"^ot:studyPublicationReference": "Bachvaroff T.R., Williams E.P., Jagus R., & Place A.R. 2015. A noncryptic noncanonical multi-module PKS/NRPS found in dinoflagellates. Proceedings of the 16th International Conference on Harmful Algae. International Society for the Study of Harmful Algae 2015, .", 
+"^ot:studyPublication": {
+"@href": "http://dx.doi.org/10.1016/s1568-9883(15)00119-5"
+}, 
+"^ot:studyPublicationReference": "Bachvaroff T.R., Williams E.P., Jagus R., & Place A.R. 2015. A noncryptic noncanonical multi-module PKS/NRPS found in dinoflagellates. Proceedings of the 16th International Conference on Harmful Algae. International Society for the Study of Harmful Algae 2015, pg. 101-104", 
 "^ot:studyYear": 2015, 
+"^ot:tag": [], 
 "^ot:taxonLinkPrefixes": {
 "@ubio": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:", 
 "@uniprot": "http://purl.uniprot.org/taxonomy/"
@@ -93,7 +180,6 @@
 "^skos:historyNote": "Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlOTUWriter@3e54cda7 $Rev: 1040 $", 
 "otuById": {
 "Tl1828921": {
-"^ot:altLabel": "Nocardiopsis chromatogenes", 
 "^ot:originalLabel": "Nocardiopsis chromatogenes 750444593 ", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 629548, 
@@ -104,6 +190,8 @@
 }, 
 "Tl1828922": {
 "^ot:originalLabel": "Prorocentrum minimum", 
+"^ot:ottId": 1053285, 
+"^ot:ottTaxonName": "Prorocentrum minimum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 628292, 
 "@tb:identifier.taxonVariant": 842122, 
@@ -113,6 +201,8 @@
 }, 
 "Tl1828923": {
 "^ot:originalLabel": "Amphidinium carterae", 
+"^ot:ottId": 746949, 
+"^ot:ottTaxonName": "Amphidinium carterae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 50477, 
 "@tb:identifier.taxonVariant": 119784, 
@@ -122,6 +212,8 @@
 }, 
 "Tl1828924": {
 "^ot:originalLabel": "Polarella glacialis", 
+"^ot:ottId": 1088460, 
+"^ot:ottTaxonName": "Polarella glacialis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 628294, 
 "@tb:identifier.taxonVariant": 842124, 
@@ -138,7 +230,6 @@
 }
 }, 
 "Tl1828926": {
-"^ot:altLabel": "Pseudomonas pseudomallei", 
 "^ot:originalLabel": "Burkholderia pseudomallei MSHR346 237507683 ", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 4242, 
@@ -150,6 +241,8 @@
 }, 
 "Tl1828927": {
 "^ot:originalLabel": "Karlodinium veneficum", 
+"^ot:ottId": 101878, 
+"^ot:ottTaxonName": "Karlodinium veneficum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 354785, 
 "@tb:identifier.taxonVariant": 385991, 
@@ -159,6 +252,8 @@
 }, 
 "Tl1828928": {
 "^ot:originalLabel": "Alexandrium monilatum", 
+"^ot:ottId": 169805, 
+"^ot:ottTaxonName": "Alexandrium monilatum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 273584, 
 "@tb:identifier.taxonVariant": 328643, 
@@ -168,6 +263,8 @@
 }, 
 "Tl1828929": {
 "^ot:originalLabel": "Crypthecodinium cohnii", 
+"^ot:ottId": 621393, 
+"^ot:ottTaxonName": "Crypthecodinium cohnii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 7584, 
 "@tb:identifier.taxonVariant": 18306, 
@@ -176,8 +273,9 @@
 }
 }, 
 "Tl1828930": {
-"^ot:altLabel": "Ceratium fusus", 
 "^ot:originalLabel": "Ceratium fusus 6795", 
+"^ot:ottId": 172871, 
+"^ot:ottTaxonName": "Neoceratium fusus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 50450, 
 "@tb:identifier.taxonVariant": 119759, 
@@ -188,6 +286,8 @@
 }, 
 "Tl1828931": {
 "^ot:originalLabel": "Lingulodinium polyedrum", 
+"^ot:ottId": 837665, 
+"^ot:ottTaxonName": "Lingulodinium polyedrum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 628296, 
 "@tb:identifier.taxonVariant": 842126, 
@@ -196,7 +296,6 @@
 }
 }, 
 "Tl1828932": {
-"^ot:altLabel": "Burkholderia mallei 10229", 
 "^ot:originalLabel": "Burkholderia mallei NCTC 10229 124383231 ", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 358707, 
@@ -207,7 +306,6 @@
 "^skos:prefLabel": "Burkholderia mallei NCTC 10229"
 }, 
 "Tl1828933": {
-"^ot:altLabel": "Burkholderia pseudomallei 668", 
 "^ot:originalLabel": "Burkholderia pseudomallei 668 126442395 ", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 281197, 
@@ -217,8 +315,9 @@
 }
 }, 
 "Tl1828934": {
-"^ot:altLabel": "Gymnodinium instriatum", 
 "^ot:originalLabel": "Levanderina fissa", 
+"^ot:ottId": 943078, 
+"^ot:ottTaxonName": "Gymnodinium instriatum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 628302, 
 "@tb:identifier.taxonVariant": 842133, 
@@ -228,6 +327,8 @@
 }, 
 "Tl1828935": {
 "^ot:originalLabel": "Oxyrrhis marina", 
+"^ot:ottId": 746955, 
+"^ot:ottTaxonName": "Oxyrrhis marina", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 50483, 
 "@tb:identifier.taxonVariant": 119788, 
@@ -237,6 +338,8 @@
 }, 
 "Tl1828936": {
 "^ot:originalLabel": "Prorocentrum micans", 
+"^ot:ottId": 797786, 
+"^ot:ottTaxonName": "Prorocentrum micans", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 23806, 
 "@tb:identifier.taxonVariant": 55631, 
@@ -247,6 +350,8 @@
 }, 
 "Tl1828937": {
 "^ot:originalLabel": "Alexandrium tamarense", 
+"^ot:ottId": 643105, 
+"^ot:ottTaxonName": "Alexandrium tamarense", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 628298, 
 "@tb:identifier.taxonVariant": 842128, 
@@ -255,7 +360,6 @@
 }
 }, 
 "Tl1828938": {
-"^ot:altLabel": "Burkholderia mallei GB8 horse 4", 
 "^ot:originalLabel": "Burkholderia mallei GB8 horse 4 238561450 ", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 281212, 
@@ -265,7 +369,6 @@
 }
 }, 
 "Tl1828939": {
-"^ot:altLabel": "Nocardiopsis syringae", 
 "^ot:originalLabel": "Saccharothrix syringae 703476524 ", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 110028, 
@@ -276,8 +379,9 @@
 "^skos:prefLabel": "Saccharothrix syringae"
 }, 
 "Tl1828940": {
-"^ot:altLabel": "Prorocentrum C.G. Ehrenberg 1834", 
 "^ot:originalLabel": "Prorocentrum sp", 
+"^ot:ottId": 797787, 
+"^ot:ottTaxonName": "Prorocentrum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 23805, 
 "@tb:identifier.taxonVariant": 55626, 
@@ -288,6 +392,8 @@
 }, 
 "Tl1828941": {
 "^ot:originalLabel": "Azadinium spinosum", 
+"^ot:ottId": 574127, 
+"^ot:ottTaxonName": "Azadinium spinosum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 524859, 
 "@tb:identifier.taxonVariant": 696167
@@ -295,6 +401,8 @@
 }, 
 "Tl1828942": {
 "^ot:originalLabel": "Heterocapsa rotundata", 
+"^ot:ottId": 445957, 
+"^ot:ottTaxonName": "Heterocapsa rotundata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 13405, 
 "@tb:identifier.taxonVariant": 31631, 
@@ -303,7 +411,6 @@
 }
 }, 
 "Tl1828943": {
-"^ot:altLabel": "Burkholderia pseudomallei 1710b", 
 "^ot:originalLabel": "Burkholderia pseudomallei 1710b 76818692 ", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 281196, 
@@ -314,6 +421,8 @@
 }, 
 "Tl1828944": {
 "^ot:originalLabel": "Prorocentrum hoffmanianum", 
+"^ot:ottId": 97227, 
+"^ot:ottTaxonName": "Prorocentrum hoffmannianum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 213270, 
 "@tb:identifier.taxonVariant": 280789, 
@@ -324,6 +433,8 @@
 }, 
 "Tl1828945": {
 "^ot:originalLabel": "Akashiwo sanguinea", 
+"^ot:ottId": 83477, 
+"^ot:ottTaxonName": "Akashiwo sanguinea", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 628293, 
 "@tb:identifier.taxonVariant": 842123, 
@@ -332,8 +443,9 @@
 }
 }, 
 "Tl1828946": {
-"^ot:altLabel": "Scrippsiella trochoidea", 
 "^ot:originalLabel": "Scrippsiella trochoidea 0002656631", 
+"^ot:ottId": 943815, 
+"^ot:ottTaxonName": "Scrippsiella trochoidea", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 85746, 
 "@tb:identifier.taxonVariant": 164461, 
@@ -342,7 +454,6 @@
 }
 }, 
 "Tl1828947": {
-"^ot:altLabel": "Burkholderia mallei ATCC 23344", 
 "^ot:originalLabel": "Burkholderia mallei ATCC 23344 53717022 ", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 219487, 
@@ -352,7 +463,6 @@
 }
 }, 
 "Tl1828948": {
-"^ot:altLabel": "Burkholderia sp.", 
 "^ot:originalLabel": "Burkholderia sp MSHR3999 755821209 ", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 62135, 
@@ -363,6 +473,8 @@
 }, 
 "Tl1828949": {
 "^ot:originalLabel": "Karenia brevis", 
+"^ot:ottId": 93910, 
+"^ot:ottTaxonName": "Karenia brevis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 628299, 
 "@tb:identifier.taxonVariant": 842129, 
@@ -371,8 +483,9 @@
 }
 }, 
 "Tl1828950": {
-"^ot:altLabel": "Scrippsiella trochoidea", 
 "^ot:originalLabel": "Scrippsiella trochoidea 0002752433", 
+"^ot:ottId": 943815, 
+"^ot:ottTaxonName": "Scrippsiella trochoidea", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 85746, 
 "@tb:identifier.taxonVariant": 164461, 
@@ -381,8 +494,9 @@
 }
 }, 
 "Tl1828951": {
-"^ot:altLabel": "Ceratium fusus", 
 "^ot:originalLabel": "Ceratium fusus 34253", 
+"^ot:ottId": 172871, 
+"^ot:ottTaxonName": "Neoceratium fusus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 50450, 
 "@tb:identifier.taxonVariant": 119759, 
@@ -406,7 +520,18 @@
 "Tr87126": {
 "@label": "Imported tree 1+", 
 "@xsi:type": "nex:FloatTree", 
-"^ot:rootNodeId": "Tn12843075", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:bootstrapValues", 
+"^ot:branchLengthTimeUnit": "Myr", 
+"^ot:curatedType": "Maximum likelihood ", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:rootNodeId": "Tn12843074", 
+"^ot:specifiedRoot": "Tn12843074", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 31, 
 "^tb:quality.tree": "Unrated", 
@@ -665,6 +790,11 @@
 }
 }, 
 "Tn12843074": {
+"edge649817": {
+"@length": 0.36373835521666786, 
+"@source": "Tn12843074", 
+"@target": "Tn12843075"
+}, 
 "edge649819": {
 "@length": 0.6526192815644336, 
 "@source": "Tn12843074", 
@@ -681,11 +811,6 @@
 "@length": 0.4760688657236993, 
 "@source": "Tn12843075", 
 "@target": "Tn12843032"
-}, 
-"edge649817": {
-"@length": 0.36373835521666786, 
-"@source": "Tn12843075", 
-"@target": "Tn12843074"
 }, 
 "edge649931": {
 "@length": 0.40904631689020604, 
@@ -815,7 +940,8 @@
 "@otu": "Tl1828934"
 }, 
 "Tn12843044": {
-"@otu": "Tl1828950"
+"@otu": "Tl1828950", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn12843045": {
 "@label": "98"
@@ -838,7 +964,8 @@
 "@label": "99"
 }, 
 "Tn12843051": {
-"@otu": "Tl1828930"
+"@otu": "Tl1828930", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn12843052": {
 "@otu": "Tl1828942"
@@ -853,7 +980,8 @@
 "@label": "80"
 }, 
 "Tn12843056": {
-"@otu": "Tl1828946"
+"@otu": "Tl1828946", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12843057": {
 "@label": "100"
@@ -908,11 +1036,10 @@
 "@label": "100"
 }, 
 "Tn12843074": {
-"@label": "100"
-}, 
-"Tn12843075": {
+"@label": "100", 
 "@root": true
 }, 
+"Tn12843075": {}, 
 "Tn12843076": {
 "@label": "98"
 }, 
@@ -920,7 +1047,8 @@
 "@otu": "Tl1828935"
 }, 
 "Tn12843078": {
-"@otu": "Tl1828951"
+"@otu": "Tl1828951", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12843079": {
 "@label": "76818692 Burkholderia pseudomallei 1710b", 
