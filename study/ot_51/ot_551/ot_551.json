@@ -60,22 +60,109 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2016-02-01T19:15:41.559Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:curatorName": "Dail Laughinghouse", 
+"substitutions": {
+"substitution": [
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": "$1"
+}, 
+"old": {
+"$": "^(\\S*\\s+\\S*).*"
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2016-02-01T19:15:41.559Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"Tr89478"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Dail Laughinghouse"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S18080"
 }, 
+"^ot:focalClade": 4938651, 
+"^ot:focalCladeOTTTaxonName": "Paraphysoderma sedebokerense", 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "Tls46358"
 ], 
 "^ot:studyId": "ot_551", 
-"^ot:studyPublicationReference": "Letcher P.M., Lee P.A., Lopez S., Burnett M., Mcbride R.C., & Powell M.J. 2015. An ultrastructural study of Paraphysoderma sedebokerense (Blastocladiomycota), an epibiotic parasite of microalgae. Fungal Biology, .", 
+"^ot:studyPublication": {
+"@href": "http://dx.doi.org/10.1016/j.funbio.2015.11.003"
+}, 
+"^ot:studyPublicationReference": "Peter M. Letcher, Philip A. Lee, Salvador Lopez, Micheal Burnett, Robert C. McBride, Martha J. Powell, 2015, 'An ultrastructural study of Paraphysoderma sedebokerense (Blastocladiomycota), an epibiotic parasite of microalgae', Fungal Biology", 
 "^ot:studyYear": 2015, 
+"^ot:tag": [], 
 "^ot:taxonLinkPrefixes": {
 "@ubio": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:", 
 "@uniprot": "http://purl.uniprot.org/taxonomy/"
@@ -98,8 +185,9 @@
 "^skos:historyNote": "Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlOTUWriter@476761da $Rev: 1040 $", 
 "otuById": {
 "Tl1969576": {
-"^ot:altLabel": "Allomyces arbusculus", 
 "^ot:originalLabel": "Allomyces arbusculus HisB3Sc", 
+"^ot:ottId": 236005, 
+"^ot:ottTaxonName": "Allomyces arbusculus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 889, 
 "@tb:identifier.taxonVariant": 2257, 
@@ -109,8 +197,9 @@
 "^skos:prefLabel": "Allomyces arbuscula"
 }, 
 "Tl1969577": {
-"^ot:altLabel": "Allomyces moniliformis", 
 "^ot:originalLabel": "Allomyces moniliformis India3", 
+"^ot:ottId": 236003, 
+"^ot:ottTaxonName": "Allomyces moniliformis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 891, 
 "@tb:identifier.taxonVariant": 2262, 
@@ -119,23 +208,34 @@
 }
 }, 
 "Tl1969578": {
-"^ot:originalLabel": "Paraphysoderma sedebokerense TJ2007a"
+"^ot:originalLabel": "Paraphysoderma sedebokerense TJ2007a", 
+"^ot:ottId": 4938651, 
+"^ot:ottTaxonName": "Paraphysoderma sedebokerense"
 }, 
 "Tl1969579": {
-"^ot:originalLabel": "Catenaria sp. JEL339"
+"^ot:originalLabel": "Catenaria sp. JEL339", 
+"^ot:ottId": 1048542, 
+"^ot:ottTaxonName": "Catenaria"
 }, 
 "Tl1969580": {
-"^ot:originalLabel": "Microallomyces sp. CR74"
+"^ot:originalLabel": "Microallomyces sp. CR74", 
+"^ot:ottId": 934087, 
+"^ot:ottTaxonName": "Microallomyces"
 }, 
 "Tl1969581": {
-"^ot:originalLabel": "Paraphysoderma sedebokerense FD61"
+"^ot:originalLabel": "Paraphysoderma sedebokerense FD61", 
+"^ot:ottId": 4938651, 
+"^ot:ottTaxonName": "Paraphysoderma sedebokerense"
 }, 
 "Tl1969582": {
-"^ot:originalLabel": "Blastocladiella sp. JEL440"
+"^ot:originalLabel": "Blastocladiella sp. JEL440", 
+"^ot:ottId": 469428, 
+"^ot:ottTaxonName": "Blastocladiella"
 }, 
 "Tl1969583": {
-"^ot:altLabel": "Blastocladia ramosa", 
 "^ot:originalLabel": "Blastocladia ramosa WM101", 
+"^ot:ottId": 747552, 
+"^ot:ottTaxonName": "Blastocladia ramosa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 603418, 
 "@tb:identifier.taxonVariant": 805072, 
@@ -143,8 +243,9 @@
 }
 }, 
 "Tl1969584": {
-"^ot:altLabel": "Catenaria uncinata", 
 "^ot:originalLabel": "Catenaria uncinata WM103B", 
+"^ot:ottId": 747556, 
+"^ot:ottTaxonName": "Catenaria uncinata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 603417, 
 "@tb:identifier.taxonVariant": 805071, 
@@ -152,14 +253,19 @@
 }
 }, 
 "Tl1969585": {
-"^ot:originalLabel": "Urophlyctis pulposa SN"
+"^ot:originalLabel": "Urophlyctis pulposa SN", 
+"^ot:ottId": 3852979, 
+"^ot:ottTaxonName": "Physoderma pulposum"
 }, 
 "Tl1969586": {
-"^ot:originalLabel": "Coelomycidium sp. TP2011"
+"^ot:originalLabel": "Coelomycidium sp. TP2011", 
+"^ot:ottId": 173312, 
+"^ot:ottTaxonName": "Coelomycidium"
 }, 
 "Tl1969587": {
-"^ot:altLabel": "Physoderma dulichii", 
 "^ot:originalLabel": "Physoderma dulichii BL060", 
+"^ot:ottId": 665431, 
+"^ot:ottTaxonName": "Physoderma dulichii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 338992, 
 "@tb:identifier.taxonVariant": 376299, 
@@ -168,8 +274,9 @@
 }
 }, 
 "Tl1969588": {
-"^ot:altLabel": "Physoderma maculare", 
 "^ot:originalLabel": "Physoderma maculare BL135", 
+"^ot:ottId": 513359, 
+"^ot:ottTaxonName": "Physoderma maculare", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 338997, 
 "@tb:identifier.taxonVariant": 376302, 
@@ -178,8 +285,9 @@
 }
 }, 
 "Tl1969589": {
-"^ot:altLabel": "Nuclearia simplex", 
 "^ot:originalLabel": "Nuclearia simplex CCAP1552", 
+"^ot:ottId": 98036, 
+"^ot:ottTaxonName": "Nuclearia simplex", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 149155, 
 "@tb:identifier.taxonVariant": 224962, 
@@ -188,8 +296,9 @@
 }
 }, 
 "Tl1969590": {
-"^ot:altLabel": "Physoderma maydis", 
 "^ot:originalLabel": "Physoderma maydis BL004", 
+"^ot:ottId": 260279, 
+"^ot:ottTaxonName": "Physoderma maydis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 246237, 
 "@tb:identifier.taxonVariant": 306910, 
@@ -201,8 +310,9 @@
 "^ot:originalLabel": "Blastocladiella brittanica BR214"
 }, 
 "Tl1969592": {
-"^ot:altLabel": "Blastocladia pringsheimii", 
 "^ot:originalLabel": "Blastocladia pringsheimii WM102", 
+"^ot:ottId": 747550, 
+"^ot:ottTaxonName": "Blastocladia pringsheimii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 603419, 
 "@tb:identifier.taxonVariant": 805073, 
@@ -227,7 +337,18 @@
 "Tr89478": {
 "@label": "PAUP 1", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:bootstrapValues", 
+"^ot:branchLengthTimeUnit": "Myr", 
+"^ot:curatedType": "Maximum likelihood ", 
+"^ot:inGroupClade": "Tn13171397", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "Tn13171403", 
+"^ot:specifiedRoot": "Tn13171403", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 18, 
 "^tb:quality.tree": "Unrated", 
@@ -235,190 +356,190 @@
 "edgeBySourceId": {
 "Tn13171377": {
 "edge470198": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "Tn13171377", 
 "@target": "Tn13171376"
 }, 
 "edge470200": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "Tn13171377", 
 "@target": "Tn13171405"
 }
 }, 
 "Tn13171380": {
 "edge470156": {
-"@length": 75.0, 
+"@length": 75, 
 "@source": "Tn13171380", 
 "@target": "Tn13171384"
 }, 
 "edge470170": {
-"@length": 98.0, 
+"@length": 98, 
 "@source": "Tn13171380", 
 "@target": "Tn13171393"
 }
 }, 
 "Tn13171381": {
 "edge470208": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "Tn13171381", 
 "@target": "Tn13171400"
 }, 
 "edge470210": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "Tn13171381", 
 "@target": "Tn13171385"
 }
 }, 
 "Tn13171382": {
 "edge470166": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "Tn13171382", 
 "@target": "Tn13171386"
 }, 
 "edge470168": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "Tn13171382", 
 "@target": "Tn13171374"
 }
 }, 
 "Tn13171383": {
 "edge470178": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "Tn13171383", 
 "@target": "Tn13171391"
 }, 
 "edge470180": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "Tn13171383", 
 "@target": "Tn13171402"
 }
 }, 
 "Tn13171384": {
 "edge470158": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "Tn13171384", 
 "@target": "Tn13171390"
 }, 
 "edge470164": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "Tn13171384", 
 "@target": "Tn13171382"
 }
 }, 
 "Tn13171387": {
 "edge470154": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "Tn13171387", 
 "@target": "Tn13171380"
 }, 
 "edge470192": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "Tn13171387", 
 "@target": "Tn13171404"
 }
 }, 
 "Tn13171390": {
 "edge470160": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "Tn13171390", 
 "@target": "Tn13171388"
 }, 
 "edge470162": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "Tn13171390", 
 "@target": "Tn13171375"
 }
 }, 
 "Tn13171393": {
 "edge470172": {
-"@length": 99.0, 
+"@length": 99, 
 "@source": "Tn13171393", 
 "@target": "Tn13171399"
 }, 
 "edge470190": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "Tn13171393", 
 "@target": "Tn13171378"
 }
 }, 
 "Tn13171394": {
 "edge470184": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "Tn13171394", 
 "@target": "Tn13171379"
 }, 
 "edge470186": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "Tn13171394", 
 "@target": "Tn13171401"
 }
 }, 
 "Tn13171395": {
 "edge470204": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "Tn13171395", 
 "@target": "Tn13171398"
 }, 
 "edge470206": {
-"@length": 86.0, 
+"@length": 86, 
 "@source": "Tn13171395", 
 "@target": "Tn13171381"
 }, 
 "edge470212": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "Tn13171395", 
 "@target": "Tn13171392"
 }
 }, 
 "Tn13171396": {
 "edge470176": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "Tn13171396", 
 "@target": "Tn13171383"
 }, 
 "edge470182": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "Tn13171396", 
 "@target": "Tn13171394"
 }
 }, 
 "Tn13171397": {
 "edge470196": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "Tn13171397", 
 "@target": "Tn13171377"
 }, 
 "edge470202": {
-"@length": 74.0, 
+"@length": 74, 
 "@source": "Tn13171397", 
 "@target": "Tn13171395"
 }
 }, 
 "Tn13171399": {
 "edge470174": {
-"@length": 68.0, 
+"@length": 68, 
 "@source": "Tn13171399", 
 "@target": "Tn13171396"
 }, 
 "edge470188": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "Tn13171399", 
 "@target": "Tn13171406"
 }
 }, 
 "Tn13171403": {
 "edge470150": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "Tn13171403", 
 "@target": "Tn13171389"
 }, 
 "edge470152": {
-"@length": 99.0, 
+"@length": 99, 
 "@source": "Tn13171403", 
 "@target": "Tn13171387"
 }, 
 "edge470194": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "Tn13171403", 
 "@target": "Tn13171397"
 }
@@ -432,7 +553,8 @@
 "@otu": "Tl1969591"
 }, 
 "Tn13171376": {
-"@otu": "Tl1969578"
+"@otu": "Tl1969578", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn13171377": {}, 
 "Tn13171378": {
@@ -491,7 +613,8 @@
 "@otu": "Tl1969586"
 }, 
 "Tn13171405": {
-"@otu": "Tl1969581"
+"@otu": "Tl1969581", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn13171406": {
 "@otu": "Tl1969580"
