@@ -50,22 +50,109 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2016-02-01T15:57:46.958Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:curatorName": "Dail Laughinghouse", 
+"substitutions": {
+"substitution": [
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": "$1"
+}, 
+"old": {
+"$": "^(\\S*\\s+\\S*).*"
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2016-02-01T15:57:46.957Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"Tr93235"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Dail Laughinghouse"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S18612"
 }, 
+"^ot:focalClade": 843526, 
+"^ot:focalCladeOTTTaxonName": "Spirulina (genus in domain Bacteria (domain silva:A16379/#1))", 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "Tls49196"
 ], 
 "^ot:studyId": "ot_549", 
-"^ot:studyPublicationReference": "Nolla-ardevol V., Peces M., Strous M., & Tegetmeyer H.E. 2015. Metagenome from a Spirulina digesting biogas reactor: analysis via binning of contigs and classification of short reads. BMC Microbiology, .", 
+"^ot:studyPublication": {
+"@href": "http://dx.doi.org/10.1186/s12866-015-0615-1"
+}, 
+"^ot:studyPublicationReference": "Vimac Nolla-Ard\u00e8vol, Miriam Peces, Marc Strous, Halina E. Tegetmeyer, 2015, 'Metagenome from a Spirulina digesting biogas reactor: analysis via binning of contigs and classification of short reads', BMC Microbiology, vol. 15, no. 1", 
 "^ot:studyYear": 2015, 
+"^ot:tag": [], 
 "^ot:taxonLinkPrefixes": {
 "@ubio": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:", 
 "@uniprot": "http://purl.uniprot.org/taxonomy/"
@@ -89,6 +176,8 @@
 "otuById": {
 "Tl2139823": {
 "^ot:originalLabel": "Methanothermobacter marburgensis", 
+"^ot:ottId": 764100, 
+"^ot:ottTaxonName": "Methanothermobacter marburgensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 141665, 
 "@tb:identifier.taxonVariant": 217920, 
@@ -100,8 +189,9 @@
 "^ot:originalLabel": "Uncultured archaeon clone JF980548 SwineManureDigester"
 }, 
 "Tl2139825": {
-"^ot:altLabel": "Methanopyrus kandleri", 
 "^ot:originalLabel": "Methanopyrus kandleri av19", 
+"^ot:ottId": 530972, 
+"^ot:ottTaxonName": "Methanopyrus kandleri AV19", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 50064, 
 "@tb:identifier.taxonVariant": 119220, 
@@ -110,8 +200,9 @@
 }
 }, 
 "Tl2139826": {
-"^ot:altLabel": "Methanoculleus marisnigri", 
 "^ot:originalLabel": "Methanoculleus marisnigri jr1", 
+"^ot:ottId": 1011407, 
+"^ot:ottTaxonName": "Methanoculleus marisnigri JR1", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 17577, 
 "@tb:identifier.taxonVariant": 41124, 
@@ -123,8 +214,9 @@
 "^ot:originalLabel": "Uncultured archaeon BinJ contig06470 assemblyA"
 }, 
 "Tl2139828": {
-"^ot:altLabel": "Methanospirillum hungatei", 
 "^ot:originalLabel": "Methanospirillum hungatei jf-1", 
+"^ot:ottId": 993152, 
+"^ot:ottTaxonName": "Methanospirillum hungatei", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 49991, 
 "@tb:identifier.taxonVariant": 119037, 
@@ -133,10 +225,14 @@
 }
 }, 
 "Tl2139829": {
-"^ot:originalLabel": "Methanocorpusculum parvum "
+"^ot:originalLabel": "Methanocorpusculum parvum ", 
+"^ot:ottId": 44048, 
+"^ot:ottTaxonName": "Methanocorpusculum parvum"
 }, 
 "Tl2139830": {
 "^ot:originalLabel": "Methanosaeta concilii", 
+"^ot:ottId": 941879, 
+"^ot:ottTaxonName": "Methanosaeta concilii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 50003, 
 "@tb:identifier.taxonVariant": 119066, 
@@ -149,6 +245,8 @@
 }, 
 "Tl2139832": {
 "^ot:originalLabel": "Methanococcus maripaludis", 
+"^ot:ottId": 264456, 
+"^ot:ottTaxonName": "Methanococcus maripaludis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 63739, 
 "@tb:identifier.taxonVariant": 138178, 
@@ -164,6 +262,8 @@
 }, 
 "Tl2139835": {
 "^ot:originalLabel": "Methanolobus oregonensis", 
+"^ot:ottId": 184359, 
+"^ot:ottTaxonName": "Methanolobus oregonensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 62992, 
 "@tb:identifier.taxonVariant": 137321, 
@@ -172,10 +272,14 @@
 }
 }, 
 "Tl2139836": {
-"^ot:originalLabel": "Methanosarcina siciliae str.t4-m"
+"^ot:originalLabel": "Methanosarcina siciliae str.t4-m", 
+"^ot:ottId": 184379, 
+"^ot:ottTaxonName": "Methanosarcina siciliae"
 }, 
 "Tl2139837": {
 "^ot:originalLabel": "Gelria glutamica", 
+"^ot:ottId": 403403, 
+"^ot:ottTaxonName": "Gelria glutamica", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 152397, 
 "@tb:identifier.taxonVariant": 227926, 
@@ -184,25 +288,39 @@
 }
 }, 
 "Tl2139838": {
-"^ot:originalLabel": "Uncultured organism Contig13029 assemblyB"
+"^ot:originalLabel": "Uncultured organism Contig13029 assemblyB", 
+"^ot:ottId": 4917707, 
+"^ot:ottTaxonName": "uncultured organism"
 }, 
 "Tl2139839": {
-"^ot:originalLabel": "Moorella glycerini Str.JW"
+"^ot:originalLabel": "Moorella glycerini Str.JW", 
+"^ot:ottId": 389222, 
+"^ot:ottTaxonName": "Moorella glycerini"
 }, 
 "Tl2139840": {
-"^ot:originalLabel": "Uncultured organism AM500815 CompostingSample"
+"^ot:originalLabel": "Uncultured organism AM500815 CompostingSample", 
+"^ot:ottId": 4917707, 
+"^ot:ottTaxonName": "uncultured organism"
 }, 
 "Tl2139841": {
-"^ot:originalLabel": "Uncultured organism Contig04208 assemblyC"
+"^ot:originalLabel": "Uncultured organism Contig04208 assemblyC", 
+"^ot:ottId": 4917707, 
+"^ot:ottTaxonName": "uncultured organism"
 }, 
 "Tl2139842": {
-"^ot:originalLabel": "Uncultured organism Contig06164 assemblyB"
+"^ot:originalLabel": "Uncultured organism Contig06164 assemblyB", 
+"^ot:ottId": 4917707, 
+"^ot:ottTaxonName": "uncultured organism"
 }, 
 "Tl2139843": {
-"^ot:originalLabel": "Firmicutes sp. EM3"
+"^ot:originalLabel": "Firmicutes sp. EM3", 
+"^ot:ottId": 822769, 
+"^ot:ottTaxonName": "Firmicutes"
 }, 
 "Tl2139844": {
 "^ot:originalLabel": "Clostridium cellulolyticum", 
+"^ot:ottId": 68292, 
+"^ot:ottTaxonName": "Clostridium cellulolyticum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 49457, 
 "@tb:identifier.taxonVariant": 117351, 
@@ -212,6 +330,8 @@
 }, 
 "Tl2139845": {
 "^ot:originalLabel": "Bacillus subtilis", 
+"^ot:ottId": 1084928, 
+"^ot:ottTaxonName": "Bacillus subtilis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3075, 
 "@tb:identifier.taxonVariant": 7398, 
@@ -220,35 +340,54 @@
 }
 }, 
 "Tl2139846": {
-"^ot:originalLabel": "Uncultured organism Contig01659 assemblyA"
+"^ot:originalLabel": "Uncultured organism Contig01659 assemblyA", 
+"^ot:ottId": 4917707, 
+"^ot:ottTaxonName": "uncultured organism"
 }, 
 "Tl2139847": {
-"^ot:originalLabel": "Uncultured organism Contig06646 assemblyC"
+"^ot:originalLabel": "Uncultured organism Contig06646 assemblyC", 
+"^ot:ottId": 4917707, 
+"^ot:ottTaxonName": "uncultured organism"
 }, 
 "Tl2139848": {
-"^ot:originalLabel": "Firmicutes sp. EM2"
+"^ot:originalLabel": "Firmicutes sp. EM2", 
+"^ot:ottId": 822769, 
+"^ot:ottTaxonName": "Firmicutes"
 }, 
 "Tl2139849": {
-"^ot:originalLabel": "Uncultured organism GU320654 SludgeThermophilicEnvironmentalSite"
+"^ot:originalLabel": "Uncultured organism GU320654 SludgeThermophilicEnvironmentalSite", 
+"^ot:ottId": 4917707, 
+"^ot:ottTaxonName": "uncultured organism"
 }, 
 "Tl2139850": {
-"^ot:originalLabel": "Uncultured organism Contig13399 assemblyB"
+"^ot:originalLabel": "Uncultured organism Contig13399 assemblyB", 
+"^ot:ottId": 4917707, 
+"^ot:ottTaxonName": "uncultured organism"
 }, 
 "Tl2139851": {
-"^ot:originalLabel": "Clostridium ultunense Str.BS"
+"^ot:originalLabel": "Clostridium ultunense Str.BS", 
+"^ot:ottId": 5256520, 
+"^ot:ottTaxonName": "Clostridium ultunense"
 }, 
 "Tl2139852": {
-"^ot:originalLabel": "Tissierella praeacuta Str.NCTC"
+"^ot:originalLabel": "Tissierella praeacuta Str.NCTC", 
+"^ot:ottId": 887583, 
+"^ot:ottTaxonName": "Tissierella praeacuta"
 }, 
 "Tl2139853": {
-"^ot:originalLabel": "Uncultured organism CU919232 MesophilicAnaerobicDigesterMunicipalWastewaterSludge"
+"^ot:originalLabel": "Uncultured organism CU919232 MesophilicAnaerobicDigesterMunicipalWastewaterSludge", 
+"^ot:ottId": 4917707, 
+"^ot:ottTaxonName": "uncultured organism"
 }, 
 "Tl2139854": {
-"^ot:originalLabel": "Uncultured organism GQ134033 ASBRtreatingSwineWaste"
+"^ot:originalLabel": "Uncultured organism GQ134033 ASBRtreatingSwineWaste", 
+"^ot:ottId": 4917707, 
+"^ot:ottTaxonName": "uncultured organism"
 }, 
 "Tl2139855": {
-"^ot:altLabel": "Atopostipes suicloacalis", 
 "^ot:originalLabel": "Atopostipes suicloacalis Str.PPC79", 
+"^ot:ottId": 1072504, 
+"^ot:ottTaxonName": "Atopostipes suicloacalis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 168315, 
 "@tb:identifier.taxonVariant": 242809, 
@@ -257,10 +396,14 @@
 }
 }, 
 "Tl2139856": {
-"^ot:originalLabel": "Firmicutes sp. EM1"
+"^ot:originalLabel": "Firmicutes sp. EM1", 
+"^ot:ottId": 822769, 
+"^ot:ottTaxonName": "Firmicutes"
 }, 
 "Tl2139857": {
 "^ot:originalLabel": "Symbiobacterium thermophilum", 
+"^ot:ottId": 453925, 
+"^ot:ottTaxonName": "Symbiobacterium thermophilum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 50363, 
 "@tb:identifier.taxonVariant": 119620, 
@@ -269,8 +412,9 @@
 }
 }, 
 "Tl2139858": {
-"^ot:altLabel": "Clostridium thermocellum", 
 "^ot:originalLabel": "Clostridium thermocellum ATCC27405", 
+"^ot:ottId": 537439, 
+"^ot:ottTaxonName": "Ruminiclostridium thermocellum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 49452, 
 "@tb:identifier.taxonVariant": 117337, 
@@ -279,8 +423,9 @@
 }
 }, 
 "Tl2139859": {
-"^ot:altLabel": "Arthrospira platensis", 
 "^ot:originalLabel": "Arthrospira platensis C1", 
+"^ot:ottId": 834120, 
+"^ot:ottTaxonName": "Arthrospira platensis C1", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 121079, 
 "@tb:identifier.taxonVariant": 198895, 
@@ -290,6 +435,8 @@
 }, 
 "Tl2139860": {
 "^ot:originalLabel": "Tepidimicrobium ferriphilum", 
+"^ot:ottId": 749279, 
+"^ot:ottTaxonName": "Tepidimicrobium ferriphilum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 251950, 
 "@tb:identifier.taxonVariant": 311441, 
@@ -298,19 +445,29 @@
 }
 }, 
 "Tl2139861": {
-"^ot:originalLabel": "Uncultured organism FJ671904 BeefCattleFeedlot"
+"^ot:originalLabel": "Uncultured organism FJ671904 BeefCattleFeedlot", 
+"^ot:ottId": 4917707, 
+"^ot:ottTaxonName": "uncultured organism"
 }, 
 "Tl2139862": {
-"^ot:originalLabel": "Uncultured organism Contig20643 assemblyA"
+"^ot:originalLabel": "Uncultured organism Contig20643 assemblyA", 
+"^ot:ottId": 4917707, 
+"^ot:ottTaxonName": "uncultured organism"
 }, 
 "Tl2139863": {
-"^ot:originalLabel": "Uncultured organism Contig01612 assemblyC"
+"^ot:originalLabel": "Uncultured organism Contig01612 assemblyC", 
+"^ot:ottId": 4917707, 
+"^ot:ottTaxonName": "uncultured organism"
 }, 
 "Tl2139864": {
-"^ot:originalLabel": "Uncultured organism Contig04220 assemblyC"
+"^ot:originalLabel": "Uncultured organism Contig04220 assemblyC", 
+"^ot:ottId": 4917707, 
+"^ot:ottTaxonName": "uncultured organism"
 }, 
 "Tl2139865": {
 "^ot:originalLabel": "Alkaliphilus crotonoxidans", 
+"^ot:ottId": 343780, 
+"^ot:ottTaxonName": "Alkaliphilus crotonatoxidans", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 172801, 
 "@tb:identifier.taxonVariant": 246689, 
@@ -323,17 +480,24 @@
 "^ot:originalLabel": "Bacteroidetes paurosaccharolyticus"
 }, 
 "Tl2139867": {
-"^ot:originalLabel": "Uncultured organism CU922385 DigesterMunicip.Wastew.Sludge"
+"^ot:originalLabel": "Uncultured organism CU922385 DigesterMunicip.Wastew.Sludge", 
+"^ot:ottId": 4917707, 
+"^ot:ottTaxonName": "uncultured organism"
 }, 
 "Tl2139868": {
-"^ot:originalLabel": "Thermotoga lettingae Tmo"
+"^ot:originalLabel": "Thermotoga lettingae Tmo", 
+"^ot:ottId": 83398, 
+"^ot:ottTaxonName": "Pseudothermotoga lettingae TMO"
 }, 
 "Tl2139869": {
-"^ot:originalLabel": "Petrotoga mobilis Str sj95"
+"^ot:originalLabel": "Petrotoga mobilis Str sj95", 
+"^ot:ottId": 442795, 
+"^ot:ottTaxonName": "Petrotoga mobilis"
 }, 
 "Tl2139870": {
-"^ot:altLabel": "Fluviicola taffensis", 
 "^ot:originalLabel": "Fluviicola taffensis Dsm16823", 
+"^ot:ottId": 58628, 
+"^ot:ottTaxonName": "Fluviicola taffensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 177558, 
 "@tb:identifier.taxonVariant": 251125, 
@@ -342,23 +506,33 @@
 }
 }, 
 "Tl2139871": {
-"^ot:originalLabel": "Uncultured organism FirmicutesEM3"
+"^ot:originalLabel": "Uncultured organism FirmicutesEM3", 
+"^ot:ottId": 4917707, 
+"^ot:ottTaxonName": "uncultured organism"
 }, 
 "Tl2139872": {
-"^ot:originalLabel": "Uncultured organism JX575861 PitMud"
+"^ot:originalLabel": "Uncultured organism JX575861 PitMud", 
+"^ot:ottId": 4917707, 
+"^ot:ottTaxonName": "uncultured organism"
 }, 
 "Tl2139873": {
-"^ot:originalLabel": "Gelria glutamica Str tgo"
+"^ot:originalLabel": "Gelria glutamica Str tgo", 
+"^ot:ottId": 403403, 
+"^ot:ottTaxonName": "Gelria glutamica"
 }, 
 "Tl2139874": {
+"^ot:altLabel": "FirmicutesEM1", 
 "^ot:originalLabel": "Uncultured organism FirmicutesEM1"
 }, 
 "Tl2139875": {
-"^ot:originalLabel": "Moorella glycerini Str jw"
+"^ot:originalLabel": "Moorella glycerini Str jw", 
+"^ot:ottId": 389222, 
+"^ot:ottTaxonName": "Moorella glycerini"
 }, 
 "Tl2139876": {
-"^ot:altLabel": "Clostridium cellulolyticum", 
 "^ot:originalLabel": "Clostridium cellulolyticum H10", 
+"^ot:ottId": 340637, 
+"^ot:ottTaxonName": "[Clostridium] cellulolyticum H10", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 49457, 
 "@tb:identifier.taxonVariant": 117351, 
@@ -367,17 +541,22 @@
 }
 }, 
 "Tl2139877": {
-"^ot:originalLabel": "Uncultured organism CU919232 DigesterMunicip.Wastew.Sludge"
+"^ot:originalLabel": "Uncultured organism CU919232 DigesterMunicip.Wastew.Sludge", 
+"^ot:ottId": 4917707, 
+"^ot:ottTaxonName": "uncultured organism"
 }, 
 "Tl2139878": {
 "^ot:originalLabel": "Contig01659 AssemblyA"
 }, 
 "Tl2139879": {
-"^ot:originalLabel": "Bacillus subtilis Str bsp1"
+"^ot:originalLabel": "Bacillus subtilis Str bsp1", 
+"^ot:ottId": 1084928, 
+"^ot:ottTaxonName": "Bacillus subtilis"
 }, 
 "Tl2139880": {
-"^ot:altLabel": "Clostridium thermocellum", 
 "^ot:originalLabel": "Clostridium thermocellum Atcc27405", 
+"^ot:ottId": 537439, 
+"^ot:ottTaxonName": "Ruminiclostridium thermocellum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 49452, 
 "@tb:identifier.taxonVariant": 117337, 
@@ -386,22 +565,34 @@
 }
 }, 
 "Tl2139881": {
-"^ot:originalLabel": "Uncultured organism BinE Contig05284 AssemblyB abundance 7.6"
+"^ot:originalLabel": "Uncultured organism BinE Contig05284 AssemblyB abundance 7.6", 
+"^ot:ottId": 4917707, 
+"^ot:ottTaxonName": "uncultured organism"
 }, 
 "Tl2139882": {
-"^ot:originalLabel": "Uncultured organism BinF Contig03630 AssemblyA abundance 6.9"
+"^ot:originalLabel": "Uncultured organism BinF Contig03630 AssemblyA abundance 6.9", 
+"^ot:ottId": 4917707, 
+"^ot:ottTaxonName": "uncultured organism"
 }, 
 "Tl2139883": {
-"^ot:originalLabel": "Uncultured organism FirmicutesEM2"
+"^ot:originalLabel": "Uncultured organism FirmicutesEM2", 
+"^ot:ottId": 4917707, 
+"^ot:ottTaxonName": "uncultured organism"
 }, 
 "Tl2139884": {
-"^ot:originalLabel": "Uncultured organism FJ671904 BeefCattleFeedLot"
+"^ot:originalLabel": "Uncultured organism FJ671904 BeefCattleFeedLot", 
+"^ot:ottId": 4917707, 
+"^ot:ottTaxonName": "uncultured organism"
 }, 
 "Tl2139885": {
-"^ot:originalLabel": "Levilinea saccharolytica Str kibi1"
+"^ot:originalLabel": "Levilinea saccharolytica Str kibi1", 
+"^ot:ottId": 261148, 
+"^ot:ottTaxonName": "Levilinea saccharolytica"
 }, 
 "Tl2139886": {
 "^ot:originalLabel": "Arthrospira platensis", 
+"^ot:ottId": 5286661, 
+"^ot:ottTaxonName": "Arthrospira platensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 121079, 
 "@tb:identifier.taxonVariant": 198895, 
@@ -411,6 +602,8 @@
 }, 
 "Tl2139887": {
 "^ot:originalLabel": "Alistipes finegoldii", 
+"^ot:ottId": 682014, 
+"^ot:ottTaxonName": "Alistipes finegoldii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 196758, 
 "@tb:identifier.taxonVariant": 267896, 
@@ -419,11 +612,14 @@
 }
 }, 
 "Tl2139888": {
-"^ot:originalLabel": "Atopostipes suicloacalis Str ppc79"
+"^ot:originalLabel": "Atopostipes suicloacalis Str ppc79", 
+"^ot:ottId": 1072504, 
+"^ot:ottTaxonName": "Atopostipes suicloacalis"
 }, 
 "Tl2139889": {
-"^ot:altLabel": "Symbiobacterium thermophilum", 
 "^ot:originalLabel": "Symbiobacterium thermophilum Iam14863", 
+"^ot:ottId": 640453, 
+"^ot:ottTaxonName": "Symbiobacterium thermophilum IAM 14863", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 50363, 
 "@tb:identifier.taxonVariant": 119620, 
@@ -435,23 +631,32 @@
 "^ot:originalLabel": "Contig04220 AssemblyC"
 }, 
 "Tl2139891": {
-"^ot:originalLabel": "Proteiniphilum acetatigenes Str tb107"
+"^ot:originalLabel": "Proteiniphilum acetatigenes Str tb107", 
+"^ot:ottId": 880605, 
+"^ot:ottTaxonName": "Proteiniphilum acetatigenes"
 }, 
 "Tl2139892": {
-"^ot:originalLabel": "Uncultured organism BinH Contig03141 AssemblyA abundance 4.2"
+"^ot:originalLabel": "Uncultured organism BinH Contig03141 AssemblyA abundance 4.2", 
+"^ot:ottId": 4917707, 
+"^ot:ottTaxonName": "uncultured organism"
 }, 
 "Tl2139893": {
 "^ot:originalLabel": "Uncultured organism EU878320 ThermophilicAnaerobicDigester"
 }, 
 "Tl2139894": {
-"^ot:originalLabel": "Clostridium ultunense Str bs"
+"^ot:originalLabel": "Clostridium ultunense Str bs", 
+"^ot:ottId": 5256520, 
+"^ot:ottTaxonName": "Clostridium ultunense"
 }, 
 "Tl2139895": {
-"^ot:originalLabel": "Tissierella praeacuta Str nctc"
+"^ot:originalLabel": "Tissierella praeacuta Str nctc", 
+"^ot:ottId": 887583, 
+"^ot:ottTaxonName": "Tissierella praeacuta"
 }, 
 "Tl2139896": {
-"^ot:altLabel": "Owenweeksia hongkongensis", 
 "^ot:originalLabel": "Owenweeksia hongkongensis Dsm17368", 
+"^ot:ottId": 649439, 
+"^ot:ottTaxonName": "Owenweeksia hongkongensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 228161, 
 "@tb:identifier.taxonVariant": 291762, 
@@ -466,8 +671,9 @@
 "^ot:originalLabel": "Uncultured organism BinD Contig00447 AssemblyC abundance 9"
 }, 
 "Tl2139899": {
-"^ot:altLabel": "Anaerolinea thermophila", 
 "^ot:originalLabel": "Anaerolinea thermophila Uni1", 
+"^ot:ottId": 377130, 
+"^ot:ottTaxonName": "Anaerolinea thermophila", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 158929, 
 "@tb:identifier.taxonVariant": 234249, 
@@ -492,7 +698,18 @@
 "Tr93233": {
 "@label": "Tree1", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "Tn13748580", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 14, 
 "^tb:quality.tree": "Unrated", 
@@ -722,7 +939,18 @@
 "Tr93234": {
 "@label": "Tree1", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "Tn13748602", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 29, 
 "^tb:quality.tree": "Unrated", 
@@ -1232,7 +1460,18 @@
 "Tr93235": {
 "@label": "Tree1", 
 "@xsi:type": "nex:FloatTree", 
-"^ot:rootNodeId": "Tn13748648", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:bootstrapValues", 
+"^ot:branchLengthTimeUnit": "Myr", 
+"^ot:curatedType": "Maximum likelihood ", 
+"^ot:inGroupClade": "Tn13748705", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:rootNodeId": "Tr93235_ROOT", 
+"^ot:specifiedRoot": "Tr93235_ROOT", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 39, 
 "^tb:quality.tree": "Unrated", 
@@ -1268,11 +1507,6 @@
 "@source": "Tn13748648", 
 "@target": "Tn13748664"
 }, 
-"edge276630": {
-"@length": 0.02078, 
-"@source": "Tn13748648", 
-"@target": "Tn13748683"
-}, 
 "edge276716": {
 "@length": 0.01671, 
 "@source": "Tn13748648", 
@@ -1304,15 +1538,15 @@
 }
 }, 
 "Tn13748654": {
+"edge276638": {
+"@length": 0.02493, 
+"@source": "Tn13748654", 
+"@target": "Tn13748683"
+}, 
 "edge276640": {
 "@length": 0.07637, 
 "@source": "Tn13748654", 
 "@target": "Tn13748669"
-}, 
-"edge276646": {
-"@length": 0.02992, 
-"@source": "Tn13748654", 
-"@target": "Tn13748705"
 }
 }, 
 "Tn13748655": {
@@ -1508,15 +1742,15 @@
 }
 }, 
 "Tn13748683": {
+"edge276630": {
+"@length": 0.02078, 
+"@source": "Tn13748683", 
+"@target": "Tn13748648"
+}, 
 "edge276632": {
 "@length": 0.09105, 
 "@source": "Tn13748683", 
 "@target": "Tn13748652"
-}, 
-"edge276638": {
-"@length": 0.02493, 
-"@source": "Tn13748683", 
-"@target": "Tn13748654"
 }
 }, 
 "Tn13748685": {
@@ -1604,10 +1838,10 @@
 }
 }, 
 "Tn13748705": {
-"edge276648": {
-"@length": 0.16972, 
+"edge276646": {
+"@length": 0.02992, 
 "@source": "Tn13748705", 
-"@target": "Tn13748688"
+"@target": "Tn13748654"
 }, 
 "edge276650": {
 "@length": 0.02131, 
@@ -1686,6 +1920,17 @@
 "@source": "Tn13748718", 
 "@target": "Tn13748686"
 }
+}, 
+"Tr93235_ROOT": {
+"Tr93235_ROOT_EDGE": {
+"@source": "Tr93235_ROOT", 
+"@target": "Tn13748705"
+}, 
+"edge276648": {
+"@length": 0.16972, 
+"@source": "Tr93235_ROOT", 
+"@target": "Tn13748688"
+}
 }
 }, 
 "nodeById": {
@@ -1702,11 +1947,10 @@
 "@otu": "Tl2139869"
 }, 
 "Tn13748647": {
-"@otu": "Tl2139882"
+"@otu": "Tl2139882", 
+"^ot:isTaxonExemplar": true
 }, 
-"Tn13748648": {
-"@root": true
-}, 
+"Tn13748648": {}, 
 "Tn13748649": {
 "@label": "0.430"
 }, 
@@ -1735,7 +1979,8 @@
 "@label": "1.000"
 }, 
 "Tn13748658": {
-"@otu": "Tl2139871"
+"@otu": "Tl2139871", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn13748659": {
 "@label": "1.000"
@@ -1744,7 +1989,8 @@
 "@label": "0.998"
 }, 
 "Tn13748661": {
-"@otu": "Tl2139872"
+"@otu": "Tl2139872", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn13748662": {
 "@otu": "Tl2139888"
@@ -1780,7 +2026,8 @@
 "@otu": "Tl2139874"
 }, 
 "Tn13748673": {
-"@otu": "Tl2139881"
+"@otu": "Tl2139881", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn13748674": {
 "@otu": "Tl2139866"
@@ -1795,7 +2042,8 @@
 "@label": "0.944"
 }, 
 "Tn13748678": {
-"@otu": "Tl2139884"
+"@otu": "Tl2139884", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn13748679": {
 "@otu": "Tl2139868"
@@ -1813,7 +2061,8 @@
 "@label": "0.320"
 }, 
 "Tn13748684": {
-"@otu": "Tl2139877"
+"@otu": "Tl2139877", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn13748685": {
 "@label": "0.726"
@@ -1822,13 +2071,15 @@
 "@label": "1.000"
 }, 
 "Tn13748687": {
-"@otu": "Tl2139892"
+"@otu": "Tl2139892", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn13748688": {
 "@otu": "Tl2139886"
 }, 
 "Tn13748689": {
-"@otu": "Tl2139854"
+"@otu": "Tl2139854", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn13748690": {
 "@otu": "Tl2139860"
@@ -1840,13 +2091,15 @@
 "@otu": "Tl2139879"
 }, 
 "Tn13748693": {
-"@otu": "Tl2139840"
+"@otu": "Tl2139840", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn13748694": {
 "@otu": "Tl2139898"
 }, 
 "Tn13748695": {
-"@otu": "Tl2139849"
+"@otu": "Tl2139849", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn13748696": {
 "@label": "0.610"
@@ -1864,7 +2117,8 @@
 "@otu": "Tl2139899"
 }, 
 "Tn13748701": {
-"@otu": "Tl2139867"
+"@otu": "Tl2139867", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn13748702": {
 "@label": "1.000"
@@ -1906,7 +2160,8 @@
 "@label": "0.820"
 }, 
 "Tn13748715": {
-"@otu": "Tl2139883"
+"@otu": "Tl2139883", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn13748716": {
 "@otu": "Tl2139887"
@@ -1916,6 +2171,9 @@
 }, 
 "Tn13748718": {
 "@label": "0.996"
+}, 
+"Tr93235_ROOT": {
+"@root": true
 }
 }
 }
