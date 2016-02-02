@@ -50,25 +50,109 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2016-02-02T01:53:51.152Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:curatorName": "Dail Laughinghouse", 
+"substitutions": {
+"substitution": [
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": "$1"
+}, 
+"old": {
+"$": "^(\\S*\\s+\\S*).*"
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2016-02-02T01:53:51.152Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"Tr92138"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Dail Laughinghouse"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S18363"
 }, 
+"^ot:focalClade": 391126, 
+"^ot:focalCladeOTTTaxonName": "Volvox", 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "Tls48579"
 ], 
 "^ot:studyId": "ot_555", 
 "^ot:studyPublication": {
-"@href": "10.1371/journal.pone.0142632"
+"@href": "http://dx.doi.org/10.1371/journal.pone.0142632"
 }, 
-"^ot:studyPublicationReference": "Nozaki H., Matsuzaki R., Yamamoto K., Kawachi M., & Takahashi F. 2015. Delineating a New Heterothallic Species of Volvox (Volvocales, Chlorophyceae) Using New Strains of \"Volvox africanus\". PLoS ONE, 10(11): e0142632.", 
+"^ot:studyPublicationReference": "Hisayoshi Nozaki, Ryo Matsuzaki, Kayoko Yamamoto, Masanobu Kawachi, Fumio Takahashi, 2015, 'Delineating a New Heterothallic Species of Volvox (Volvocaceae, Chlorophyceae) Using New Strains of \u201cVolvox africanus\u201d', PLOS ONE, vol. 10, no. 11, p. e0142632", 
 "^ot:studyYear": 2015, 
+"^ot:tag": [], 
 "^ot:taxonLinkPrefixes": {
 "@ubio": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:", 
 "@uniprot": "http://purl.uniprot.org/taxonomy/"
@@ -95,6 +179,8 @@
 "otuById": {
 "Tl2097514": {
 "^ot:originalLabel": "Volvox obversus", 
+"^ot:ottId": 485482, 
+"^ot:ottTaxonName": "Volvox obversus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 69276, 
 "@tb:identifier.taxonVariant": 145027, 
@@ -103,13 +189,19 @@
 }
 }, 
 "Tl2097515": {
-"^ot:originalLabel": "Volvox dissipatrix UTEX 2184"
+"^ot:originalLabel": "Volvox dissipatrix UTEX 2184", 
+"^ot:ottId": 485480, 
+"^ot:ottTaxonName": "Volvox dissipatrix"
 }, 
 "Tl2097516": {
-"^ot:originalLabel": "Eudorina peripheralis UTEX 1215"
+"^ot:originalLabel": "Eudorina peripheralis UTEX 1215", 
+"^ot:ottId": 419170, 
+"^ot:ottTaxonName": "Eudorina peripheralis"
 }, 
 "Tl2097517": {
 "^ot:originalLabel": "Eudorina cylindrica", 
+"^ot:ottId": 359012, 
+"^ot:ottTaxonName": "Eudorina cylindrica", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 72165, 
 "@tb:identifier.taxonVariant": 148591, 
@@ -118,8 +210,9 @@
 }
 }, 
 "Tl2097518": {
-"^ot:altLabel": "Volvox tertius", 
 "^ot:originalLabel": "Volvox tertius NIES-544", 
+"^ot:ottId": 1061937, 
+"^ot:ottTaxonName": "Volvox tertius", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 69279, 
 "@tb:identifier.taxonVariant": 145033, 
@@ -129,6 +222,8 @@
 }, 
 "Tl2097519": {
 "^ot:originalLabel": "Pleodorina starrii", 
+"^ot:ottId": 130653, 
+"^ot:ottTaxonName": "Pleodorina starrii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 289755, 
 "@tb:identifier.taxonVariant": 341289, 
@@ -137,10 +232,14 @@
 }
 }, 
 "Tl2097520": {
-"^ot:originalLabel": "Eudorina elegans UTEX 1205"
+"^ot:originalLabel": "Eudorina elegans UTEX 1205", 
+"^ot:ottId": 485476, 
+"^ot:ottTaxonName": "Eudorina elegans"
 }, 
 "Tl2097521": {
 "^ot:originalLabel": "Pleodorina japonica", 
+"^ot:ottId": 256062, 
+"^ot:ottTaxonName": "Pleodorina japonica", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 69642, 
 "@tb:identifier.taxonVariant": 145531, 
@@ -150,6 +249,8 @@
 }, 
 "Tl2097522": {
 "^ot:originalLabel": "Platydorina caudata", 
+"^ot:ottId": 60479, 
+"^ot:ottTaxonName": "Platydorina caudata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 72175, 
 "@tb:identifier.taxonVariant": 148602, 
@@ -159,6 +260,8 @@
 }, 
 "Tl2097523": {
 "^ot:originalLabel": "Eudorina illinoisensis", 
+"^ot:ottId": 4003998, 
+"^ot:ottTaxonName": "Pleodorina illinoisensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 622956, 
 "@tb:identifier.taxonVariant": 834035, 
@@ -168,11 +271,14 @@
 "^skos:prefLabel": "Pleodorina illinoisensis"
 }, 
 "Tl2097524": {
-"^ot:originalLabel": "Colemanosphaera angeleri"
+"^ot:originalLabel": "Colemanosphaera angeleri", 
+"^ot:ottId": 5661763, 
+"^ot:ottTaxonName": "Colemanosphaera angeleri"
 }, 
 "Tl2097525": {
-"^ot:altLabel": "Eudorina elegans", 
 "^ot:originalLabel": "Eudorina elegans NIES-456", 
+"^ot:ottId": 485476, 
+"^ot:ottTaxonName": "Eudorina elegans", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 69269, 
 "@tb:identifier.taxonVariant": 145014, 
@@ -181,11 +287,14 @@
 }
 }, 
 "Tl2097526": {
-"^ot:originalLabel": "Yamagishiella unicocca UTEX 2430"
+"^ot:originalLabel": "Yamagishiella unicocca UTEX 2430", 
+"^ot:ottId": 590334, 
+"^ot:ottTaxonName": "Yamagishiella unicocca"
 }, 
 "Tl2097527": {
-"^ot:altLabel": "Volvox africanus", 
 "^ot:originalLabel": "Volvox africanus 2013-0703-VO4", 
+"^ot:ottId": 633711, 
+"^ot:ottTaxonName": "Volvox africanus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 72179, 
 "@tb:identifier.taxonVariant": 148608, 
@@ -195,6 +304,8 @@
 }, 
 "Tl2097528": {
 "^ot:originalLabel": "Pleodorina californica", 
+"^ot:ottId": 485473, 
+"^ot:ottTaxonName": "Pleodorina californica", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 69272, 
 "@tb:identifier.taxonVariant": 145018, 
@@ -203,8 +314,9 @@
 }
 }, 
 "Tl2097529": {
-"^ot:altLabel": "Volvox aureus", 
 "^ot:originalLabel": "Volvox aureus NIES-892", 
+"^ot:ottId": 5418732, 
+"^ot:ottTaxonName": "Volvox aureus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 69274, 
 "@tb:identifier.taxonVariant": 145023, 
@@ -214,6 +326,8 @@
 }, 
 "Tl2097530": {
 "^ot:originalLabel": "Volvox barberi", 
+"^ot:ottId": 633710, 
+"^ot:ottTaxonName": "Volvox barberi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 72180, 
 "@tb:identifier.taxonVariant": 148609, 
@@ -223,6 +337,8 @@
 }, 
 "Tl2097531": {
 "^ot:originalLabel": "Volvox globator", 
+"^ot:ottId": 633719, 
+"^ot:ottTaxonName": "Volvox globator", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 72183, 
 "@tb:identifier.taxonVariant": 148612, 
@@ -232,6 +348,8 @@
 }, 
 "Tl2097532": {
 "^ot:originalLabel": "Pleodorina indica", 
+"^ot:ottId": 633717, 
+"^ot:ottTaxonName": "Pleodorina indica", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 72176, 
 "@tb:identifier.taxonVariant": 148603, 
@@ -240,16 +358,24 @@
 }
 }, 
 "Tl2097533": {
-"^ot:originalLabel": "Volvox dissipatrix Marb. 2 RS 29"
+"^ot:originalLabel": "Volvox dissipatrix Marb. 2 RS 29", 
+"^ot:ottId": 485480, 
+"^ot:ottTaxonName": "Volvox dissipatrix"
 }, 
 "Tl2097534": {
-"^ot:originalLabel": "Volvox tertius UTEX 132"
+"^ot:originalLabel": "Volvox tertius UTEX 132", 
+"^ot:ottId": 1061937, 
+"^ot:ottTaxonName": "Volvox tertius"
 }, 
 "Tl2097535": {
-"^ot:originalLabel": "Eudorina unicocca UTEX 737"
+"^ot:originalLabel": "Eudorina unicocca UTEX 737", 
+"^ot:ottId": 958293, 
+"^ot:ottTaxonName": "Eudorina unicocca"
 }, 
 "Tl2097536": {
 "^ot:originalLabel": "Volvox powersii", 
+"^ot:ottId": 1061934, 
+"^ot:ottTaxonName": "Volvox powersii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 69277, 
 "@tb:identifier.taxonVariant": 145029, 
@@ -258,13 +384,17 @@
 }
 }, 
 "Tl2097537": {
-"^ot:originalLabel": "Volvox africanus UTEX 1891"
+"^ot:originalLabel": "Volvox africanus UTEX 1891", 
+"^ot:ottId": 633711, 
+"^ot:ottTaxonName": "Volvox africanus"
 }, 
 "Tl2097538": {
 "^ot:originalLabel": "Volvox reticuliferus 2013-0703-VO2"
 }, 
 "Tl2097539": {
 "^ot:originalLabel": "Volvox carteri f. kawasakiensis", 
+"^ot:ottId": 841027, 
+"^ot:ottTaxonName": "Volvox carteri f. kawasakiensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 72378, 
 "@tb:identifier.taxonVariant": 148801, 
@@ -274,6 +404,8 @@
 }, 
 "Tl2097540": {
 "^ot:originalLabel": "Pleodorina thompsonii", 
+"^ot:ottId": 849026, 
+"^ot:ottTaxonName": "Pleodorina thompsonii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 289754, 
 "@tb:identifier.taxonVariant": 341288, 
@@ -282,8 +414,9 @@
 }
 }, 
 "Tl2097541": {
-"^ot:altLabel": "Volvox aureus", 
 "^ot:originalLabel": "Volvox aureus NIES-541", 
+"^ot:ottId": 5418732, 
+"^ot:ottTaxonName": "Volvox aureus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 69274, 
 "@tb:identifier.taxonVariant": 145023, 
@@ -292,11 +425,14 @@
 }
 }, 
 "Tl2097542": {
-"^ot:originalLabel": "Eudorina elegans UTEX 1212"
+"^ot:originalLabel": "Eudorina elegans UTEX 1212", 
+"^ot:ottId": 485476, 
+"^ot:ottTaxonName": "Eudorina elegans"
 }, 
 "Tl2097543": {
-"^ot:altLabel": "Yamagishiella unicocca", 
 "^ot:originalLabel": "Yamagishiella unicocca NIES-872", 
+"^ot:ottId": 590334, 
+"^ot:ottTaxonName": "Yamagishiella unicocca", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 31169, 
 "@tb:identifier.taxonVariant": 72770, 
@@ -305,10 +441,14 @@
 }
 }, 
 "Tl2097544": {
-"^ot:originalLabel": "Yamagishiella unicocca UTEX 2428"
+"^ot:originalLabel": "Yamagishiella unicocca UTEX 2428", 
+"^ot:ottId": 590334, 
+"^ot:ottTaxonName": "Yamagishiella unicocca"
 }, 
 "Tl2097545": {
 "^ot:originalLabel": "Volvox carteri f. weismannia", 
+"^ot:ottId": 266342, 
+"^ot:ottTaxonName": "Volvox carteri f. weismannia", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 616664, 
 "@tb:identifier.taxonVariant": 825232, 
@@ -318,6 +458,8 @@
 }, 
 "Tl2097546": {
 "^ot:originalLabel": "Volvox gigas", 
+"^ot:ottId": 633708, 
+"^ot:ottTaxonName": "Volvox gigas", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 72182, 
 "@tb:identifier.taxonVariant": 148611, 
@@ -326,8 +468,9 @@
 }
 }, 
 "Tl2097547": {
-"^ot:altLabel": "Volvox aureus", 
 "^ot:originalLabel": "Volvox aureus NIES-891", 
+"^ot:ottId": 5418732, 
+"^ot:ottTaxonName": "Volvox aureus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 69274, 
 "@tb:identifier.taxonVariant": 145023, 
@@ -337,6 +480,8 @@
 }, 
 "Tl2097548": {
 "^ot:originalLabel": "Volvox rousseletii", 
+"^ot:ottId": 381980, 
+"^ot:ottTaxonName": "Volvox rousseletii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 69645, 
 "@tb:identifier.taxonVariant": 145534, 
@@ -346,6 +491,8 @@
 }, 
 "Tl2097549": {
 "^ot:originalLabel": "Volvox carteri f. nagariensis", 
+"^ot:ottId": 187583, 
+"^ot:ottTaxonName": "Volvox carteri f. nagariensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 616665, 
 "@tb:identifier.taxonVariant": 825233, 
@@ -354,13 +501,19 @@
 }
 }, 
 "Tl2097550": {
-"^ot:originalLabel": "Colemanosphaera charkowiensis"
+"^ot:originalLabel": "Colemanosphaera charkowiensis", 
+"^ot:ottId": 60476, 
+"^ot:ottTaxonName": "Colemanosphaera charkowiensis"
 }, 
 "Tl2097551": {
-"^ot:originalLabel": "Volvox ovalis"
+"^ot:originalLabel": "Volvox ovalis", 
+"^ot:ottId": 448158, 
+"^ot:ottTaxonName": "Volvox ovalis"
 }, 
 "Tl2097552": {
 "^ot:originalLabel": "Volvox tertius", 
+"^ot:ottId": 1061937, 
+"^ot:ottTaxonName": "Volvox tertius", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 69279, 
 "@tb:identifier.taxonVariant": 145033, 
@@ -369,25 +522,37 @@
 }
 }, 
 "Tl2097553": {
-"^ot:originalLabel": "Volvox africanus UTEX 1890, 1891"
+"^ot:originalLabel": "Volvox africanus UTEX 1890, 1891", 
+"^ot:ottId": 633711, 
+"^ot:ottTaxonName": "Volvox africanus"
 }, 
 "Tl2097554": {
 "^ot:originalLabel": "Volvox reticuliferus 2013-0703-VO1 VO2 VO3"
 }, 
 "Tl2097555": {
-"^ot:originalLabel": "Volvox africanus UTEX 1892"
+"^ot:originalLabel": "Volvox africanus UTEX 1892", 
+"^ot:ottId": 633711, 
+"^ot:ottTaxonName": "Volvox africanus"
 }, 
 "Tl2097556": {
-"^ot:originalLabel": "Volvox africanus UTEX 1893"
+"^ot:originalLabel": "Volvox africanus UTEX 1893", 
+"^ot:ottId": 633711, 
+"^ot:ottTaxonName": "Volvox africanus"
 }, 
 "Tl2097557": {
-"^ot:originalLabel": "Volvox africanus UTEX 1889"
+"^ot:originalLabel": "Volvox africanus UTEX 1889", 
+"^ot:ottId": 633711, 
+"^ot:ottTaxonName": "Volvox africanus"
 }, 
 "Tl2097558": {
-"^ot:originalLabel": "Volvox africanus UTEX 2907"
+"^ot:originalLabel": "Volvox africanus UTEX 2907", 
+"^ot:ottId": 633711, 
+"^ot:ottTaxonName": "Volvox africanus"
 }, 
 "Tl2097559": {
 "^ot:originalLabel": "Volvox spermatosphaera", 
+"^ot:ottId": 1061932, 
+"^ot:ottTaxonName": "Volvox spermatosphaera", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 69278, 
 "@tb:identifier.taxonVariant": 145031, 
@@ -397,6 +562,8 @@
 }, 
 "Tl2097560": {
 "^ot:originalLabel": "Volvox dissipatrix", 
+"^ot:ottId": 485480, 
+"^ot:ottTaxonName": "Volvox dissipatrix", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 69275, 
 "@tb:identifier.taxonVariant": 145025, 
@@ -420,7 +587,19 @@
 "Tr92138": {
 "@label": "Fig. 2", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:posteriorSupport", 
+"^ot:branchLengthTimeUnit": "Myr", 
+"^ot:curatedType": "Bayesian inference ", 
+"^ot:inGroupClade": "Tn13651632", 
+"^ot:nodeLabelDescription": "", 
+"^ot:nodeLabelMode": "ot:posteriorSupport", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "Tn13651655", 
+"^ot:specifiedRoot": "Tn13651655", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 38, 
 "^tb:quality.tree": "Unrated", 
@@ -430,12 +609,14 @@
 "edge714026": {
 "@length": 0.01547, 
 "@source": "Tn13651628", 
-"@target": "Tn13651642"
+"@target": "Tn13651642", 
+"^ot:posteriorSupport": 1
 }, 
 "edge714040": {
 "@length": 0.01588, 
 "@source": "Tn13651628", 
-"@target": "Tn13651685"
+"@target": "Tn13651685", 
+"^ot:posteriorSupport": 1
 }
 }, 
 "Tn13651629": {
@@ -447,7 +628,8 @@
 "edge713940": {
 "@length": 0.01708, 
 "@source": "Tn13651629", 
-"@target": "Tn13651693"
+"@target": "Tn13651693", 
+"^ot:posteriorSupport": 1
 }
 }, 
 "Tn13651630": {
@@ -471,19 +653,22 @@
 "edge714046": {
 "@length": 0.01497, 
 "@source": "Tn13651631", 
-"@target": "Tn13651644"
+"@target": "Tn13651644", 
+"^ot:posteriorSupport": 1
 }
 }, 
 "Tn13651632": {
 "edge713958": {
 "@length": 0.07312, 
 "@source": "Tn13651632", 
-"@target": "Tn13651630"
+"@target": "Tn13651630", 
+"^ot:posteriorSupport": 1
 }, 
 "edge713964": {
 "@length": 0.01188, 
 "@source": "Tn13651632", 
-"@target": "Tn13651658"
+"@target": "Tn13651658", 
+"^ot:posteriorSupport": 0.95
 }
 }, 
 "Tn13651634": {
@@ -507,7 +692,8 @@
 "edge714064": {
 "@length": 0.02958, 
 "@source": "Tn13651640", 
-"@target": "Tn13651673"
+"@target": "Tn13651673", 
+"^ot:posteriorSupport": 1
 }
 }, 
 "Tn13651641": {
@@ -531,7 +717,8 @@
 "edge714030": {
 "@length": 0.01962, 
 "@source": "Tn13651642", 
-"@target": "Tn13651674"
+"@target": "Tn13651674", 
+"^ot:posteriorSupport": 1
 }
 }, 
 "Tn13651644": {
@@ -567,7 +754,8 @@
 "edge713984": {
 "@length": 0.054, 
 "@source": "Tn13651654", 
-"@target": "Tn13651690"
+"@target": "Tn13651690", 
+"^ot:posteriorSupport": 1
 }
 }, 
 "Tn13651655": {
@@ -591,19 +779,22 @@
 "edge713970": {
 "@length": 0.01012, 
 "@source": "Tn13651656", 
-"@target": "Tn13651669"
+"@target": "Tn13651669", 
+"^ot:posteriorSupport": 1
 }
 }, 
 "Tn13651658": {
 "edge713966": {
 "@length": 0.00907, 
 "@source": "Tn13651658", 
-"@target": "Tn13651656"
+"@target": "Tn13651656", 
+"^ot:posteriorSupport": 0.971
 }, 
 "edge714004": {
 "@length": 0.01591, 
 "@source": "Tn13651658", 
-"@target": "Tn13651676"
+"@target": "Tn13651676", 
+"^ot:posteriorSupport": 1
 }
 }, 
 "Tn13651660": {
@@ -615,7 +806,8 @@
 "edge713950": {
 "@length": 0.02438, 
 "@source": "Tn13651660", 
-"@target": "Tn13651672"
+"@target": "Tn13651672", 
+"^ot:posteriorSupport": 1
 }
 }, 
 "Tn13651664": {
@@ -634,24 +826,28 @@
 "edge714008": {
 "@length": 0.04518, 
 "@source": "Tn13651668", 
-"@target": "Tn13651641"
+"@target": "Tn13651641", 
+"^ot:posteriorSupport": 1
 }, 
 "edge714014": {
 "@length": 0.09116, 
 "@source": "Tn13651668", 
-"@target": "Tn13651675"
+"@target": "Tn13651675", 
+"^ot:posteriorSupport": 1
 }
 }, 
 "Tn13651669": {
 "edge713972": {
 "@length": 0.04133, 
 "@source": "Tn13651669", 
-"@target": "Tn13651664"
+"@target": "Tn13651664", 
+"^ot:posteriorSupport": 1
 }, 
 "edge713978": {
 "@length": 0.00721, 
 "@source": "Tn13651669", 
-"@target": "Tn13651686"
+"@target": "Tn13651686", 
+"^ot:posteriorSupport": 0.999
 }
 }, 
 "Tn13651672": {
@@ -685,7 +881,7 @@
 "@target": "Tn13651670"
 }, 
 "edge714034": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn13651674", 
 "@target": "Tn13651651"
 }
@@ -699,43 +895,50 @@
 "edge714018": {
 "@length": 0.00197, 
 "@source": "Tn13651675", 
-"@target": "Tn13651679"
+"@target": "Tn13651679", 
+"^ot:posteriorSupport": 0.934
 }
 }, 
 "Tn13651676": {
 "edge714006": {
 "@length": 0.02615, 
 "@source": "Tn13651676", 
-"@target": "Tn13651668"
+"@target": "Tn13651668", 
+"^ot:posteriorSupport": 1
 }, 
 "edge714024": {
 "@length": 0.00421, 
 "@source": "Tn13651676", 
-"@target": "Tn13651628"
+"@target": "Tn13651628", 
+"^ot:posteriorSupport": 0.949
 }
 }, 
 "Tn13651677": {
 "edge713924": {
 "@length": 0.03515, 
 "@source": "Tn13651677", 
-"@target": "Tn13651694"
+"@target": "Tn13651694", 
+"^ot:posteriorSupport": 1
 }, 
 "edge713946": {
 "@length": 0.03371, 
 "@source": "Tn13651677", 
-"@target": "Tn13651660"
+"@target": "Tn13651660", 
+"^ot:posteriorSupport": 1
 }
 }, 
 "Tn13651678": {
 "edge713992": {
 "@length": 0.04063, 
 "@source": "Tn13651678", 
-"@target": "Tn13651634"
+"@target": "Tn13651634", 
+"^ot:posteriorSupport": 1
 }, 
 "edge713998": {
 "@length": 0.03218, 
 "@source": "Tn13651678", 
-"@target": "Tn13651684"
+"@target": "Tn13651684", 
+"^ot:posteriorSupport": 1
 }
 }, 
 "Tn13651679": {
@@ -790,31 +993,36 @@
 "edge714042": {
 "@length": 0.04442, 
 "@source": "Tn13651685", 
-"@target": "Tn13651631"
+"@target": "Tn13651631", 
+"^ot:posteriorSupport": 1
 }, 
 "edge714052": {
 "@length": 0.0117, 
 "@source": "Tn13651685", 
-"@target": "Tn13651688"
+"@target": "Tn13651688", 
+"^ot:posteriorSupport": 1
 }
 }, 
 "Tn13651686": {
 "edge713980": {
 "@length": 0.02446, 
 "@source": "Tn13651686", 
-"@target": "Tn13651654"
+"@target": "Tn13651654", 
+"^ot:posteriorSupport": 1
 }, 
 "edge713990": {
 "@length": 0.0059, 
 "@source": "Tn13651686", 
-"@target": "Tn13651678"
+"@target": "Tn13651678", 
+"^ot:posteriorSupport": 0.994
 }
 }, 
 "Tn13651687": {
 "edge713928": {
 "@length": 0.03911, 
 "@source": "Tn13651687", 
-"@target": "Tn13651683"
+"@target": "Tn13651683", 
+"^ot:posteriorSupport": 1
 }, 
 "edge713934": {
 "@length": 0.09333, 
@@ -826,12 +1034,14 @@
 "edge714054": {
 "@length": 0.06967, 
 "@source": "Tn13651688", 
-"@target": "Tn13651682"
+"@target": "Tn13651682", 
+"^ot:posteriorSupport": 1
 }, 
 "edge714060": {
 "@length": 0.04513, 
 "@source": "Tn13651688", 
-"@target": "Tn13651640"
+"@target": "Tn13651640", 
+"^ot:posteriorSupport": 1
 }
 }, 
 "Tn13651690": {
@@ -862,18 +1072,21 @@
 "edge713926": {
 "@length": 0.07331, 
 "@source": "Tn13651694", 
-"@target": "Tn13651687"
+"@target": "Tn13651687", 
+"^ot:posteriorSupport": 1
 }, 
 "edge713936": {
 "@length": 0.19307, 
 "@source": "Tn13651694", 
-"@target": "Tn13651629"
+"@target": "Tn13651629", 
+"^ot:posteriorSupport": 1
 }
 }
 }, 
 "nodeById": {
 "Tn13651624": {
-"@otu": "Tl2097534"
+"@otu": "Tl2097534", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn13651625": {
 "@otu": "Tl2097517"
@@ -882,27 +1095,18 @@
 "@otu": "Tl2097551"
 }, 
 "Tn13651627": {
-"@otu": "Tl2097543"
+"@otu": "Tl2097543", 
+"^ot:isTaxonExemplar": false
 }, 
-"Tn13651628": {
-"@label": "0.949"
-}, 
-"Tn13651629": {
-"@label": "1.000"
-}, 
-"Tn13651630": {
-"@label": "1.000"
-}, 
-"Tn13651631": {
-"@label": "1.000"
-}, 
+"Tn13651628": {}, 
+"Tn13651629": {}, 
+"Tn13651630": {}, 
+"Tn13651631": {}, 
 "Tn13651632": {}, 
 "Tn13651633": {
 "@otu": "Tl2097535"
 }, 
-"Tn13651634": {
-"@label": "1.000"
-}, 
+"Tn13651634": {}, 
 "Tn13651635": {
 "@otu": "Tl2097548"
 }, 
@@ -910,7 +1114,8 @@
 "@otu": "Tl2097538"
 }, 
 "Tn13651637": {
-"@otu": "Tl2097518"
+"@otu": "Tl2097518", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn13651638": {
 "@otu": "Tl2097530"
@@ -918,68 +1123,58 @@
 "Tn13651639": {
 "@otu": "Tl2097546"
 }, 
-"Tn13651640": {
-"@label": "1.000"
-}, 
-"Tn13651641": {
-"@label": "1.000"
-}, 
-"Tn13651642": {
-"@label": "1.000"
-}, 
+"Tn13651640": {}, 
+"Tn13651641": {}, 
+"Tn13651642": {}, 
 "Tn13651643": {
 "@otu": "Tl2097550"
 }, 
-"Tn13651644": {
-"@label": "1.000"
-}, 
+"Tn13651644": {}, 
 "Tn13651645": {
-"@otu": "Tl2097544"
+"@otu": "Tl2097544", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn13651646": {
 "@otu": "Tl2097536"
 }, 
 "Tn13651647": {
-"@otu": "Tl2097537"
+"@otu": "Tl2097537", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn13651648": {
 "@otu": "Tl2097539"
 }, 
 "Tn13651649": {
-"@otu": "Tl2097541"
+"@otu": "Tl2097541", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn13651650": {
 "@otu": "Tl2097519"
 }, 
 "Tn13651651": {}, 
 "Tn13651652": {
-"@otu": "Tl2097525"
+"@otu": "Tl2097525", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn13651653": {
-"@otu": "Tl2097520"
+"@otu": "Tl2097520", 
+"^ot:isTaxonExemplar": true
 }, 
-"Tn13651654": {
-"@label": "1.000"
-}, 
+"Tn13651654": {}, 
 "Tn13651655": {
 "@label": "1.000", 
 "@root": true
 }, 
-"Tn13651656": {
-"@label": "0.971"
-}, 
+"Tn13651656": {}, 
 "Tn13651657": {
-"@otu": "Tl2097527"
+"@otu": "Tl2097527", 
+"^ot:isTaxonExemplar": true
 }, 
-"Tn13651658": {
-"@label": "0.950"
-}, 
+"Tn13651658": {}, 
 "Tn13651659": {
 "@otu": "Tl2097540"
 }, 
-"Tn13651660": {
-"@label": "1.000"
-}, 
+"Tn13651660": {}, 
 "Tn13651661": {
 "@otu": "Tl2097545"
 }, 
@@ -987,99 +1182,64 @@
 "@otu": "Tl2097521"
 }, 
 "Tn13651663": {
-"@otu": "Tl2097515"
+"@otu": "Tl2097515", 
+"^ot:isTaxonExemplar": true
 }, 
-"Tn13651664": {
-"@label": "1.000"
-}, 
+"Tn13651664": {}, 
 "Tn13651665": {
-"@otu": "Tl2097542"
+"@otu": "Tl2097542", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn13651666": {
-"@otu": "Tl2097547"
+"@otu": "Tl2097547", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn13651667": {
 "@otu": "Tl2097524"
 }, 
-"Tn13651668": {
-"@label": "1.000"
-}, 
-"Tn13651669": {
-"@label": "1.000"
-}, 
+"Tn13651668": {}, 
+"Tn13651669": {}, 
 "Tn13651670": {
 "@otu": "Tl2097549"
 }, 
 "Tn13651671": {
 "@otu": "Tl2097523"
 }, 
-"Tn13651672": {
-"@label": "1.000"
-}, 
-"Tn13651673": {
-"@label": "1.000"
-}, 
-"Tn13651674": {
-"@label": "1.000"
-}, 
-"Tn13651675": {
-"@label": "1.000"
-}, 
-"Tn13651676": {
-"@label": "1.000"
-}, 
+"Tn13651672": {}, 
+"Tn13651673": {}, 
+"Tn13651674": {}, 
+"Tn13651675": {}, 
+"Tn13651676": {}, 
 "Tn13651677": {}, 
-"Tn13651678": {
-"@label": "0.994"
-}, 
-"Tn13651679": {
-"@label": "0.934"
-}, 
+"Tn13651678": {}, 
+"Tn13651679": {}, 
 "Tn13651680": {
 "@otu": "Tl2097532"
 }, 
 "Tn13651681": {
-"@otu": "Tl2097533"
+"@otu": "Tl2097533", 
+"^ot:isTaxonExemplar": false
 }, 
-"Tn13651682": {
-"@label": "1.000"
-}, 
-"Tn13651683": {
-"@label": "1.000"
-}, 
-"Tn13651684": {
-"@label": "1.000"
-}, 
-"Tn13651685": {
-"@label": "1.000"
-}, 
-"Tn13651686": {
-"@label": "0.999"
-}, 
-"Tn13651687": {
-"@label": "1.000"
-}, 
-"Tn13651688": {
-"@label": "1.000"
-}, 
+"Tn13651682": {}, 
+"Tn13651683": {}, 
+"Tn13651684": {}, 
+"Tn13651685": {}, 
+"Tn13651686": {}, 
+"Tn13651687": {}, 
+"Tn13651688": {}, 
 "Tn13651689": {
 "@otu": "Tl2097514"
 }, 
-"Tn13651690": {
-"@label": "1.000"
-}, 
+"Tn13651690": {}, 
 "Tn13651691": {
-"@otu": "Tl2097529"
+"@otu": "Tl2097529", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn13651692": {
 "@otu": "Tl2097522"
 }, 
-"Tn13651693": {
-"@label": "1.000"
-}, 
-"Tn13651694": {
-"@label": "1.000"
-}, 
+"Tn13651693": {}, 
+"Tn13651694": {}, 
 "Tn13651695": {
 "@otu": "Tl2097531"
 }, 
@@ -1087,7 +1247,8 @@
 "@otu": "Tl2097516"
 }, 
 "Tn13651697": {
-"@otu": "Tl2097526"
+"@otu": "Tl2097526", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn13651698": {
 "@otu": "Tl2097528"
@@ -1097,7 +1258,18 @@
 "Tr92139": {
 "@label": "Fig. 3", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "Tn13651707", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 11, 
 "^tb:quality.tree": "Unrated", 
