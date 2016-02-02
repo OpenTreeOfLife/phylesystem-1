@@ -52,25 +52,109 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2016-02-02T05:18:52.489Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "Excavata"
 }, 
-"^ot:curatorName": "Dail Laughinghouse", 
+"substitutions": {
+"substitution": [
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": "$1"
+}, 
+"old": {
+"$": "^(\\S*\\s+\\S*).*"
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2016-02-02T05:18:52.489Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"Tr80090"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Dail Laughinghouse"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S12291"
 }, 
+"^ot:focalClade": 2927065, 
+"^ot:focalCladeOTTTaxonName": "Excavata", 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "Tls41566"
 ], 
 "^ot:studyId": "ot_560", 
 "^ot:studyPublication": {
-"@href": "10.1111/jeu.12192"
+"@href": "http://dx.doi.org/10.1111/jeu.12192"
 }, 
-"^ot:studyPublicationReference": "Karnkowska A., Watza D., Bennett M., Kim J., Zakry&#347; B., & Triemer R. 2014. Phylogenetic relationships and character evolution of photosynthetic euglenoids (Euglenea) inferred from taxon-rich analyses of five genes. Journal of Eukarytoic Microbiology, .", 
+"^ot:studyPublicationReference": "Anna Karnkowska, Matthew S. Bennett, Donovan Watza, Jong Im Kim, Bo\u017cena Zakry\u015b, Richard E. Triemer, 2014, 'Phylogenetic Relationships and Morphological Character Evolution of Photosynthetic Euglenids (Excavata) Inferred from Taxon-rich Analyses of Five Genes', Journal of Eukaryotic Microbiology, vol. 62, no. 3, pp. 362-373", 
 "^ot:studyYear": 2014, 
+"^ot:tag": [], 
 "^ot:taxonLinkPrefixes": {
 "@ubio": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:", 
 "@uniprot": "http://purl.uniprot.org/taxonomy/"
@@ -94,8 +178,9 @@
 "^skos:historyNote": "Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlOTUWriter@7d8c49cc $Rev: 1040 $", 
 "otuById": {
 "Tl1678692": {
-"^ot:altLabel": "Phacus segretii", 
 "^ot:originalLabel": "Phacus segretii ACOI 1337", 
+"^ot:ottId": 501289, 
+"^ot:ottTaxonName": "Phacus segretii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 395120, 
 "@tb:identifier.taxonVariant": 533886, 
@@ -104,11 +189,14 @@
 }
 }, 
 "Tl1678693": {
-"^ot:originalLabel": "Monomorphina parapyrum ACOI 1295"
+"^ot:originalLabel": "Monomorphina parapyrum ACOI 1295", 
+"^ot:ottId": 5672938, 
+"^ot:ottTaxonName": "Monomorphina parapyrum"
 }, 
 "Tl1678694": {
-"^ot:altLabel": "Monomorphina pyrum", 
 "^ot:originalLabel": "Monomorphina pyrum ACOI 2778", 
+"^ot:ottId": 342791, 
+"^ot:ottTaxonName": "Monomorphina pyrum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 21486, 
 "@tb:identifier.taxonVariant": 101082, 
@@ -117,8 +205,9 @@
 }
 }, 
 "Tl1678695": {
-"^ot:altLabel": "Eutreptiella braarudii", 
 "^ot:originalLabel": "Eutreptiella braarudii CCMP 1594", 
+"^ot:ottId": 306339, 
+"^ot:ottTaxonName": "Eutreptiella braarudii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 197484, 
 "@tb:identifier.taxonVariant": 268466, 
@@ -127,8 +216,9 @@
 }
 }, 
 "Tl1678696": {
-"^ot:altLabel": "Eutreptiella pomquetensis", 
 "^ot:originalLabel": "Eutreptiella pomquetensis CCMP 1491", 
+"^ot:ottId": 306356, 
+"^ot:ottTaxonName": "Eutreptiella pomquetensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 197485, 
 "@tb:identifier.taxonVariant": 268467, 
@@ -137,8 +227,9 @@
 }
 }, 
 "Tl1678697": {
-"^ot:altLabel": "Trachelomonas similis", 
 "^ot:originalLabel": "Trachelomonas similis SAG 1283-14", 
+"^ot:ottId": 255568, 
+"^ot:ottTaxonName": "Trachelomonas similis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 43207, 
 "@tb:identifier.taxonVariant": 101033, 
@@ -147,8 +238,9 @@
 }
 }, 
 "Tl1678698": {
-"^ot:altLabel": "Euglena hiemalis", 
 "^ot:originalLabel": "Euglena hiemalis CCAP 1244-35", 
+"^ot:ottId": 85770, 
+"^ot:ottTaxonName": "Euglena hiemalis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 342628, 
 "@tb:identifier.taxonVariant": 378721, 
@@ -160,8 +252,9 @@
 "^ot:originalLabel": "Monomorphina piriformis ASW 08011"
 }, 
 "Tl1678700": {
-"^ot:altLabel": "Euglena cantabrica", 
 "^ot:originalLabel": "Euglena cantabrica SAG 1224-25", 
+"^ot:ottId": 820944, 
+"^ot:ottTaxonName": "Euglena cantabrica", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 10798, 
 "@tb:identifier.taxonVariant": 25855, 
@@ -170,11 +263,14 @@
 }
 }, 
 "Tl1678701": {
-"^ot:originalLabel": "Discoplastis adunca ASW 08039"
+"^ot:originalLabel": "Discoplastis adunca ASW 08039", 
+"^ot:ottId": 431412, 
+"^ot:ottTaxonName": "Discoplastis adunca"
 }, 
 "Tl1678702": {
-"^ot:altLabel": "Euglena laciniata", 
 "^ot:originalLabel": "Euglena laciniata SAG 1224-31", 
+"^ot:ottId": 515457, 
+"^ot:ottTaxonName": "Euglena laciniata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 10807, 
 "@tb:identifier.taxonVariant": 25885, 
@@ -183,14 +279,19 @@
 }
 }, 
 "Tl1678703": {
-"^ot:originalLabel": "Euglena pseudostellata ACOI 2956"
+"^ot:originalLabel": "Euglena pseudostellata ACOI 2956", 
+"^ot:ottId": 268615, 
+"^ot:ottTaxonName": "Euglena pseudostellata"
 }, 
 "Tl1678704": {
-"^ot:originalLabel": "Phacus limnophila ACOI 1026"
+"^ot:originalLabel": "Phacus limnophila ACOI 1026", 
+"^ot:ottId": 630929, 
+"^ot:ottTaxonName": "Phacus limnophila"
 }, 
 "Tl1678705": {
-"^ot:altLabel": "Lepocinclis spirogyroides", 
 "^ot:originalLabel": "Lepocinclis spirogyroides SAG 1224-10b", 
+"^ot:ottId": 467984, 
+"^ot:ottTaxonName": "Lepocinclis spirogyroides", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 10812, 
 "@tb:identifier.taxonVariant": 112651, 
@@ -199,8 +300,9 @@
 }
 }, 
 "Tl1678706": {
-"^ot:altLabel": "Trachelomonas planctonica", 
 "^ot:originalLabel": "Trachelomonas planctonica NJ WT1", 
+"^ot:ottId": 850149, 
+"^ot:ottTaxonName": "Trachelomonas planctonica", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 43211, 
 "@tb:identifier.taxonVariant": 101041, 
@@ -209,8 +311,9 @@
 }
 }, 
 "Tl1678707": {
-"^ot:altLabel": "Phacus triqueter", 
 "^ot:originalLabel": "Phacus triqueter SAG 1261-8", 
+"^ot:ottId": 363055, 
+"^ot:ottTaxonName": "Phacus triqueter", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 134090, 
 "@tb:identifier.taxonVariant": 210917, 
@@ -219,8 +322,9 @@
 }
 }, 
 "Tl1678708": {
-"^ot:altLabel": "Phacus hamelii", 
 "^ot:originalLabel": "Phacus hamelii ACOI 1088", 
+"^ot:ottId": 119300, 
+"^ot:ottTaxonName": "Phacus hamelii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 326219, 
 "@tb:identifier.taxonVariant": 495730, 
@@ -229,8 +333,9 @@
 }
 }, 
 "Tl1678709": {
-"^ot:altLabel": "Euglena viridis", 
 "^ot:originalLabel": "Euglena viridis ATCC PRA110", 
+"^ot:ottId": 347096, 
+"^ot:ottTaxonName": "Euglena viridis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 10815, 
 "@tb:identifier.taxonVariant": 25902, 
@@ -239,8 +344,9 @@
 }
 }, 
 "Tl1678710": {
-"^ot:altLabel": "Strombomonas costata", 
 "^ot:originalLabel": "Strombomonas costata ACOI 1273", 
+"^ot:ottId": 42148, 
+"^ot:ottTaxonName": "Strombomonas costata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 43225, 
 "@tb:identifier.taxonVariant": 101073, 
@@ -249,8 +355,9 @@
 }
 }, 
 "Tl1678711": {
-"^ot:altLabel": "Colacium mucronatum", 
 "^ot:originalLabel": "Colacium mucronatum SAG 1211-1", 
+"^ot:ottId": 515456, 
+"^ot:ottTaxonName": "Colacium mucronatum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6642, 
 "@tb:identifier.taxonVariant": 16107, 
@@ -259,8 +366,9 @@
 }
 }, 
 "Tl1678712": {
-"^ot:altLabel": "Euglena stellata", 
 "^ot:originalLabel": "Euglena stellata UTEX 372", 
+"^ot:ottId": 716812, 
+"^ot:ottTaxonName": "Euglena stellata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 10813, 
 "@tb:identifier.taxonVariant": 25900, 
@@ -269,8 +377,9 @@
 }
 }, 
 "Tl1678713": {
-"^ot:altLabel": "Monomorphina pyrum", 
 "^ot:originalLabel": "Monomorphina pyrum UTEX 2354", 
+"^ot:ottId": 342791, 
+"^ot:ottTaxonName": "Monomorphina pyrum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 21486, 
 "@tb:identifier.taxonVariant": 101082, 
@@ -279,11 +388,14 @@
 }
 }, 
 "Tl1678714": {
-"^ot:originalLabel": "Euglenaria anabaena UTEX 373"
+"^ot:originalLabel": "Euglenaria anabaena UTEX 373", 
+"^ot:ottId": 716816, 
+"^ot:ottTaxonName": "Euglenaria anabaena"
 }, 
 "Tl1678715": {
-"^ot:altLabel": "Phacus warszewiczii", 
 "^ot:originalLabel": "Phacus warszewiczii ASW 08064", 
+"^ot:ottId": 2832252, 
+"^ot:ottTaxonName": "Phacus warszewiczii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 482746, 
 "@tb:identifier.taxonVariant": 639601, 
@@ -292,8 +404,9 @@
 }
 }, 
 "Tl1678716": {
-"^ot:altLabel": "Cryptoglena skujai", 
 "^ot:originalLabel": "Cryptoglena skujai SAG 10.88", 
+"^ot:ottId": 402235, 
+"^ot:ottTaxonName": "Cryptoglena skujae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 625549, 
 "@tb:identifier.taxonVariant": 837885, 
@@ -303,8 +416,9 @@
 "^skos:prefLabel": "Cryptoglena skujae"
 }, 
 "Tl1678717": {
-"^ot:altLabel": "Euglena deses", 
 "^ot:originalLabel": "Euglena deses SAG 1224-19b", 
+"^ot:ottId": 968051, 
+"^ot:ottTaxonName": "Euglena deses", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 10802, 
 "@tb:identifier.taxonVariant": 25867, 
@@ -313,8 +427,9 @@
 }
 }, 
 "Tl1678718": {
-"^ot:altLabel": "Lepocinclis acus", 
 "^ot:originalLabel": "Lepocinclis acus UTEX 1316", 
+"^ot:ottId": 467990, 
+"^ot:ottTaxonName": "Lepocinclis acus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 43230, 
 "@tb:identifier.taxonVariant": 101089, 
@@ -323,11 +438,14 @@
 }
 }, 
 "Tl1678719": {
-"^ot:originalLabel": "Euglenaria clavta NJ CP"
+"^ot:originalLabel": "Euglenaria clavta NJ CP", 
+"^ot:ottId": 431414, 
+"^ot:ottTaxonName": "Euglenaria clavata"
 }, 
 "Tl1678720": {
-"^ot:altLabel": "Euglena clara", 
 "^ot:originalLabel": "Euglena clara SAG 25.98", 
+"^ot:ottId": 6244, 
+"^ot:ottTaxonName": "Euglena clara", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 10801, 
 "@tb:identifier.taxonVariant": 25863, 
@@ -336,8 +454,9 @@
 }
 }, 
 "Tl1678721": {
-"^ot:altLabel": "Euglena granulata", 
 "^ot:originalLabel": "Euglena granulata ACOI 921", 
+"^ot:ottId": 97765, 
+"^ot:ottTaxonName": "Euglena granulata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 10805, 
 "@tb:identifier.taxonVariant": 25882, 
@@ -346,8 +465,9 @@
 }
 }, 
 "Tl1678722": {
-"^ot:altLabel": "Euglena archaeoplastidiata", 
 "^ot:originalLabel": "Euglena archaeoplastidiata MI 67", 
+"^ot:ottId": 268617, 
+"^ot:ottTaxonName": "Euglena archaeoplastidiata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 609748, 
 "@tb:identifier.taxonVariant": 814723, 
@@ -355,8 +475,9 @@
 }
 }, 
 "Tl1678723": {
-"^ot:altLabel": "Trachelomonas zorensis", 
 "^ot:originalLabel": "Trachelomonas zorensis UTEX 1331", 
+"^ot:ottId": 255571, 
+"^ot:ottTaxonName": "Trachelomonas zorensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 43204, 
 "@tb:identifier.taxonVariant": 101020, 
@@ -365,11 +486,14 @@
 }
 }, 
 "Tl1678724": {
-"^ot:originalLabel": "Trachelomonas sp. T101"
+"^ot:originalLabel": "Trachelomonas sp. T101", 
+"^ot:ottId": 1053981, 
+"^ot:ottTaxonName": "Trachelomonas sp. T101"
 }, 
 "Tl1678725": {
-"^ot:altLabel": "Euglena laciniata", 
 "^ot:originalLabel": "Euglena laciniata SAG 1224-8c", 
+"^ot:ottId": 515457, 
+"^ot:ottTaxonName": "Euglena laciniata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 10807, 
 "@tb:identifier.taxonVariant": 25885, 
@@ -378,8 +502,9 @@
 }
 }, 
 "Tl1678726": {
-"^ot:altLabel": "Colacium vesiculosum", 
 "^ot:originalLabel": "Colacium vesiculosum CCAP 1211-3", 
+"^ot:ottId": 487008, 
+"^ot:ottTaxonName": "Colacium vesiculosum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6643, 
 "@tb:identifier.taxonVariant": 16109, 
@@ -388,8 +513,9 @@
 }
 }, 
 "Tl1678727": {
-"^ot:altLabel": "Euglena geniculata", 
 "^ot:originalLabel": "Euglena geniculata SAG 1224-4f", 
+"^ot:ottId": 716821, 
+"^ot:ottTaxonName": "Euglena geniculata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 10803, 
 "@tb:identifier.taxonVariant": 25872, 
@@ -398,8 +524,9 @@
 }
 }, 
 "Tl1678728": {
-"^ot:altLabel": "Phacus inflexus", 
 "^ot:originalLabel": "Phacus inflexus ACOI 1336", 
+"^ot:ottId": 715124, 
+"^ot:ottTaxonName": "Phacus inflexus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 396414, 
 "@tb:identifier.taxonVariant": 406220, 
@@ -411,8 +538,9 @@
 "^ot:originalLabel": "Monomorphina piriformis SAG 1244-5"
 }, 
 "Tl1678730": {
-"^ot:altLabel": "Euglena viridis", 
 "^ot:originalLabel": "Euglena viridis SAG 1224-17d", 
+"^ot:ottId": 347096, 
+"^ot:ottTaxonName": "Euglena viridis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 10815, 
 "@tb:identifier.taxonVariant": 25902, 
@@ -421,8 +549,9 @@
 }
 }, 
 "Tl1678731": {
-"^ot:altLabel": "Euglena sociabilis", 
 "^ot:originalLabel": "Euglena sociabilis ACOI 920", 
+"^ot:ottId": 1077939, 
+"^ot:ottTaxonName": "Euglena sociabilis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 395116, 
 "@tb:identifier.taxonVariant": 405851, 
@@ -431,8 +560,9 @@
 }
 }, 
 "Tl1678732": {
-"^ot:altLabel": "Strombomonas ovalis", 
 "^ot:originalLabel": "Strombomonas ovalis NJ S115", 
+"^ot:ottId": 829988, 
+"^ot:ottTaxonName": "Strombomonas ovalis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 43223, 
 "@tb:identifier.taxonVariant": 101066, 
@@ -441,8 +571,9 @@
 }
 }, 
 "Tl1678733": {
-"^ot:altLabel": "Eutreptia viridis", 
 "^ot:originalLabel": "Eutreptia viridis SAG 1226-1c", 
+"^ot:ottId": 211353, 
+"^ot:ottTaxonName": "Eutreptia viridis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 104937, 
 "@tb:identifier.taxonVariant": 183832, 
@@ -451,8 +582,9 @@
 }
 }, 
 "Tl1678734": {
-"^ot:altLabel": "Strombomonas acuminata", 
 "^ot:originalLabel": "Strombomonas acuminata NJ S716", 
+"^ot:ottId": 444296, 
+"^ot:ottTaxonName": "Strombomonas acuminata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 29263, 
 "@tb:identifier.taxonVariant": 101076, 
@@ -461,8 +593,9 @@
 }
 }, 
 "Tl1678735": {
-"^ot:altLabel": "Euglena pseudoviridis", 
 "^ot:originalLabel": "Euglena pseudoviridis SAG 1224-17c", 
+"^ot:ottId": 563182, 
+"^ot:ottTaxonName": "Euglena pseudoviridis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 456608, 
 "@tb:identifier.taxonVariant": 604726, 
@@ -471,8 +604,9 @@
 }
 }, 
 "Tl1678736": {
-"^ot:altLabel": "Lepocinclis tripteris", 
 "^ot:originalLabel": "Lepocinclis tripteris UTEX 1311", 
+"^ot:ottId": 845942, 
+"^ot:ottTaxonName": "Lepocinclis tripteris", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 134089, 
 "@tb:identifier.taxonVariant": 210915, 
@@ -481,11 +615,14 @@
 }
 }, 
 "Tl1678737": {
-"^ot:originalLabel": "Monomorphina pseudopyrum CCAC 0093"
+"^ot:originalLabel": "Monomorphina pseudopyrum CCAC 0093", 
+"^ot:ottId": 490390, 
+"^ot:ottTaxonName": "Monomorphina pseudopyrum"
 }, 
 "Tl1678738": {
-"^ot:altLabel": "Phacus hamatus", 
 "^ot:originalLabel": "Phacus hamatus ASW 08032", 
+"^ot:ottId": 600647, 
+"^ot:ottTaxonName": "Phacus hamatus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 609747, 
 "@tb:identifier.taxonVariant": 814722, 
@@ -493,8 +630,9 @@
 }
 }, 
 "Tl1678739": {
-"^ot:altLabel": "Euglena splendens", 
 "^ot:originalLabel": "Euglena splendens MI 47", 
+"^ot:ottId": 85772, 
+"^ot:ottTaxonName": "Euglena splendens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 342626, 
 "@tb:identifier.taxonVariant": 378720, 
@@ -503,8 +641,9 @@
 }
 }, 
 "Tl1678740": {
-"^ot:altLabel": "Trachelomonas ellipsoidalis", 
 "^ot:originalLabel": "Trachelomonas ellipsoidalis NJ ST1", 
+"^ot:ottId": 778713, 
+"^ot:ottTaxonName": "Trachelomonas ellipsoidalis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 43216, 
 "@tb:identifier.taxonVariant": 101051, 
@@ -513,8 +652,9 @@
 }
 }, 
 "Tl1678741": {
-"^ot:altLabel": "Euglena agilis", 
 "^ot:originalLabel": "Euglena agilis ACOI 1232", 
+"^ot:ottId": 292386, 
+"^ot:ottTaxonName": "Euglena agilis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 10797, 
 "@tb:identifier.taxonVariant": 25853, 
@@ -523,8 +663,9 @@
 }
 }, 
 "Tl1678742": {
-"^ot:altLabel": "Phacus pleuronectes", 
 "^ot:originalLabel": "Phacus pleuronectes SAG 1261-3b", 
+"^ot:ottId": 1063271, 
+"^ot:ottTaxonName": "Phacus pleuronectes", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 21483, 
 "@tb:identifier.taxonVariant": 49990, 
@@ -533,8 +674,9 @@
 }
 }, 
 "Tl1678743": {
-"^ot:altLabel": "Euglena laciniata", 
 "^ot:originalLabel": "Euglena laciniata SAG 1224-12b", 
+"^ot:ottId": 515457, 
+"^ot:ottTaxonName": "Euglena laciniata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 10807, 
 "@tb:identifier.taxonVariant": 25885, 
@@ -543,8 +685,9 @@
 }
 }, 
 "Tl1678744": {
-"^ot:altLabel": "Phacus smulkowskianus", 
 "^ot:originalLabel": "Phacus smulkowskianus SAG 58.81", 
+"^ot:ottId": 365128, 
+"^ot:ottTaxonName": "Phacus smulkowskianus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 134180, 
 "@tb:identifier.taxonVariant": 210958, 
@@ -553,8 +696,9 @@
 }
 }, 
 "Tl1678745": {
-"^ot:altLabel": "Phacus skujae", 
 "^ot:originalLabel": "Phacus skujae UTEX 1285", 
+"^ot:ottId": 674871, 
+"^ot:ottTaxonName": "Phacus skujae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 246272, 
 "@tb:identifier.taxonVariant": 306931, 
@@ -563,14 +707,19 @@
 }
 }, 
 "Tl1678746": {
-"^ot:originalLabel": "Euglenaformis proxima SAG 1224-11a"
+"^ot:originalLabel": "Euglenaformis proxima SAG 1224-11a", 
+"^ot:ottId": 663924, 
+"^ot:ottTaxonName": "Euglenaformis proxima"
 }, 
 "Tl1678747": {
-"^ot:originalLabel": "Discoplastis spathirhyncha SAG 1224-42"
+"^ot:originalLabel": "Discoplastis spathirhyncha SAG 1224-42", 
+"^ot:ottId": 630933, 
+"^ot:ottTaxonName": "Discoplastis spathirhyncha"
 }, 
 "Tl1678748": {
-"^ot:altLabel": "Euglena geniculata", 
 "^ot:originalLabel": "Euglena geniculata SAG 1224-21", 
+"^ot:ottId": 716821, 
+"^ot:ottTaxonName": "Euglena geniculata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 10803, 
 "@tb:identifier.taxonVariant": 25872, 
@@ -579,11 +728,14 @@
 }
 }, 
 "Tl1678749": {
-"^ot:originalLabel": "Lepocinclis ovum SAG 1244-8"
+"^ot:originalLabel": "Lepocinclis ovum SAG 1244-8", 
+"^ot:ottId": 597929, 
+"^ot:ottTaxonName": "Lepocinclis ovum"
 }, 
 "Tl1678750": {
-"^ot:altLabel": "Phacus acuminatus", 
 "^ot:originalLabel": "Phacus acuminatus UTEX 1288", 
+"^ot:ottId": 534529, 
+"^ot:ottTaxonName": "Phacus acuminatus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 21475, 
 "@tb:identifier.taxonVariant": 113432, 
@@ -592,8 +744,9 @@
 }
 }, 
 "Tl1678751": {
-"^ot:altLabel": "Euglena gracilis", 
 "^ot:originalLabel": "Euglena gracilis SAG 1224-5-15", 
+"^ot:ottId": 1073327, 
+"^ot:ottTaxonName": "Euglena gracilis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 10804, 
 "@tb:identifier.taxonVariant": 25876, 
@@ -602,14 +755,17 @@
 }
 }, 
 "Tl1678752": {
-"^ot:originalLabel": "Euglenaria anabaena NJ 05"
+"^ot:originalLabel": "Euglenaria anabaena NJ 05", 
+"^ot:ottId": 716816, 
+"^ot:ottTaxonName": "Euglenaria anabaena"
 }, 
 "Tl1678753": {
 "^ot:originalLabel": "Euglena undulata MI 03"
 }, 
 "Tl1678754": {
-"^ot:altLabel": "Cryptoglena pigra", 
 "^ot:originalLabel": "Cryptoglena pigra CCAP 1212-1", 
+"^ot:ottId": 312160, 
+"^ot:ottTaxonName": "Cryptoglena pigra", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 43232, 
 "@tb:identifier.taxonVariant": 101097, 
@@ -618,8 +774,9 @@
 }
 }, 
 "Tl1678755": {
-"^ot:altLabel": "Phacus platyaulax", 
 "^ot:originalLabel": "Phacus platyaulax ACOI 1120", 
+"^ot:ottId": 901599, 
+"^ot:ottTaxonName": "Phacus platyaulax", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 197559, 
 "@tb:identifier.taxonVariant": 268525, 
@@ -628,8 +785,9 @@
 }
 }, 
 "Tl1678756": {
-"^ot:altLabel": "Euglena chadefaudii", 
 "^ot:originalLabel": "Euglena chadefaudii IAM E-11", 
+"^ot:ottId": 249690, 
+"^ot:ottTaxonName": "Euglena chadefaudii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 302596, 
 "@tb:identifier.taxonVariant": 351314, 
@@ -638,8 +796,9 @@
 }
 }, 
 "Tl1678757": {
-"^ot:altLabel": "Phacus parvulus", 
 "^ot:originalLabel": "Phacus parvulus ASW 08060", 
+"^ot:ottId": 898602, 
+"^ot:ottTaxonName": "Phacus parvulus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 21482, 
 "@tb:identifier.taxonVariant": 49984, 
@@ -648,8 +807,9 @@
 }
 }, 
 "Tl1678758": {
-"^ot:altLabel": "Trachelomonas abrupta", 
 "^ot:originalLabel": "Trachelomonas abrupta NJ T801", 
+"^ot:ottId": 850146, 
+"^ot:ottTaxonName": "Trachelomonas abrupta", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 43220, 
 "@tb:identifier.taxonVariant": 101062, 
@@ -658,8 +818,9 @@
 }
 }, 
 "Tl1678759": {
-"^ot:altLabel": "Monomorphina aenigmatica", 
 "^ot:originalLabel": "Monomorphina aenigmatica SAG 1261-9", 
+"^ot:ottId": 850148, 
+"^ot:ottTaxonName": "Monomorphina aenigmatica", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 43228, 
 "@tb:identifier.taxonVariant": 101085, 
@@ -684,7 +845,18 @@
 "Tr80090": {
 "@label": "con 50 majrule", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:posteriorSupport", 
+"^ot:branchLengthTimeUnit": "Myr", 
+"^ot:curatedType": "Bayesian inference ", 
+"^ot:inGroupClade": "Tn12367105", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "Tn12367133", 
+"^ot:specifiedRoot": "Tn12367133", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 68, 
 "^tb:quality.tree": "Unrated", 
@@ -1503,7 +1675,8 @@
 "@otu": "Tl1678750"
 }, 
 "Tn12367017": {
-"@otu": "Tl1678709"
+"@otu": "Tl1678709", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn12367018": {
 "@otu": "Tl1678716"
@@ -1590,13 +1763,15 @@
 "@otu": "Tl1678706"
 }, 
 "Tn12367046": {
-"@otu": "Tl1678752"
+"@otu": "Tl1678752", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn12367047": {
 "@label": "1.00"
 }, 
 "Tn12367048": {
-"@otu": "Tl1678748"
+"@otu": "Tl1678748", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12367049": {
 "@otu": "Tl1678740"
@@ -1693,13 +1868,16 @@
 "@otu": "Tl1678744"
 }, 
 "Tn12367081": {
-"@otu": "Tl1678730"
+"@otu": "Tl1678730", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12367082": {
-"@otu": "Tl1678702"
+"@otu": "Tl1678702", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12367083": {
-"@otu": "Tl1678743"
+"@otu": "Tl1678743", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12367084": {
 "@label": "0.97"
@@ -1714,7 +1892,8 @@
 "@otu": "Tl1678717"
 }, 
 "Tn12367088": {
-"@otu": "Tl1678727"
+"@otu": "Tl1678727", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn12367089": {
 "@label": "0.95"
@@ -1747,7 +1926,8 @@
 "@otu": "Tl1678735"
 }, 
 "Tn12367099": {
-"@otu": "Tl1678714"
+"@otu": "Tl1678714", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12367100": {
 "@label": "1.00"
@@ -1756,7 +1936,8 @@
 "@label": "1.00"
 }, 
 "Tn12367102": {
-"@otu": "Tl1678713"
+"@otu": "Tl1678713", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12367103": {
 "@otu": "Tl1678726"
@@ -1819,7 +2000,8 @@
 "@otu": "Tl1678712"
 }, 
 "Tn12367123": {
-"@otu": "Tl1678694"
+"@otu": "Tl1678694", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn12367124": {
 "@otu": "Tl1678720"
@@ -1891,7 +2073,8 @@
 "@otu": "Tl1678692"
 }, 
 "Tn12367147": {
-"@otu": "Tl1678725"
+"@otu": "Tl1678725", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn12367148": {
 "@label": "1.00"
@@ -1904,7 +2087,18 @@
 "Tr80091": {
 "@label": "con 50 majrule", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "Tn12367155", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 68, 
 "^tb:quality.tree": "Unrated", 
@@ -2994,7 +3188,18 @@
 "Tr80092": {
 "@label": "Imported tree 0", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "Tn12367364", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 68, 
 "^tb:quality.tree": "Unrated", 
