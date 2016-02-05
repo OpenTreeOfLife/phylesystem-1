@@ -55,25 +55,109 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2016-02-05T17:32:03.506Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "Ascomycetes"
 }, 
-"^ot:curatorName": "Dail Laughinghouse", 
+"substitutions": {
+"substitution": [
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": "$1"
+}, 
+"old": {
+"$": "^(\\S*\\s+\\S*).*"
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2016-02-05T17:32:03.505Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"Tr43800"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Dail Laughinghouse"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S11443"
 }, 
+"^ot:focalClade": 422198, 
+"^ot:focalCladeOTTTaxonName": "Verrucaria (genus in phylum Opisthokonta)", 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "Tls20706"
 ], 
 "^ot:studyId": "ot_567", 
 "^ot:studyPublication": {
-"@href": "10.1639/0007-2745-114.3.563"
+"@href": "http://dx.doi.org/10.1639/0007-2745-114.3.563"
 }, 
-"^ot:studyPublicationReference": "Gueidan C., Thues H., & Perez-ortega S. 2011. Phylogenetic position of the brown algae-associated lichenized fungus Verrucaria tavaresiae (Verrucariaceae). The Bryologist, 114(3): 563-569.", 
+"^ot:studyPublicationReference": "C\u00e9cile Gueidan, Holger Th\u00fcs, Sergio P\u00e9rez-Ortega, 2011, 'Phylogenetic position of the brown algae-associated lichenized fungus Verrucaria tavaresiae (Verrucariaceae)', The Bryologist, vol. 114, no. 3, pp. 563-569", 
 "^ot:studyYear": 2011, 
+"^ot:tag": [], 
 "^ot:taxonLinkPrefixes": {
 "@ubio": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:", 
 "@uniprot": "http://purl.uniprot.org/taxonomy/"
@@ -102,8 +186,9 @@
 "^skos:historyNote": "Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlOTUWriter@4c9f194 $Rev: 1040 $", 
 "otuById": {
 "Tl514521": {
-"^ot:altLabel": "Polyblastia integrascens", 
 "^ot:originalLabel": "Polyblastia integrascens SS099", 
+"^ot:ottId": 234989, 
+"^ot:ottTaxonName": "Polyblastia integrascens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 470995, 
 "@tb:identifier.taxonVariant": 625215, 
@@ -116,16 +201,22 @@
 }, 
 "Tl514523": {
 "^ot:originalLabel": "Sporodictyon terrestre", 
+"^ot:ottId": 5310317, 
+"^ot:ottTaxonName": "Polyblastia terrestris", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 414975, 
 "@tb:identifier.taxonVariant": 784310
 }
 }, 
 "Tl514524": {
-"^ot:originalLabel": "Verrucula granulosaria2"
+"^ot:originalLabel": "Verrucula granulosaria2", 
+"^ot:ottId": 5459068, 
+"^ot:ottTaxonName": "Verrucula granulosaria"
 }, 
 "Tl514525": {
 "^ot:originalLabel": "Placopyrenium fuscellum", 
+"^ot:ottId": 3758005, 
+"^ot:ottTaxonName": "Verrucaria fuscella", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 400651, 
 "@tb:identifier.taxonVariant": 784134
@@ -133,6 +224,8 @@
 }, 
 "Tl514526": {
 "^ot:originalLabel": "Placidiopsis cinerascens", 
+"^ot:ottId": 275841, 
+"^ot:ottTaxonName": "Placidiopsis cinerascens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 400626, 
 "@tb:identifier.taxonVariant": 407599, 
@@ -142,6 +235,8 @@
 }, 
 "Tl514527": {
 "^ot:originalLabel": "Verrucaria hochstetteri2", 
+"^ot:ottId": 718633, 
+"^ot:ottTaxonName": "Verrucaria hochstetteri", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 625004, 
 "@tb:identifier.taxonVariant": 836921, 
@@ -150,6 +245,8 @@
 }, 
 "Tl514528": {
 "^ot:originalLabel": "Bagliettoa parmigerella", 
+"^ot:ottId": 5310423, 
+"^ot:ottTaxonName": "Verrucaria parmigerella", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 400659, 
 "@tb:identifier.taxonVariant": 407617, 
@@ -158,10 +255,14 @@
 }
 }, 
 "Tl514529": {
-"^ot:originalLabel": "Parabagliettoa cyanea"
+"^ot:originalLabel": "Parabagliettoa cyanea", 
+"^ot:ottId": 1016876, 
+"^ot:ottTaxonName": "Verrucaria cyanea"
 }, 
 "Tl514530": {
 "^ot:originalLabel": "Endocarpon petrolepideum", 
+"^ot:ottId": 850280, 
+"^ot:ottTaxonName": "Endocarpon petrolepideum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 400620, 
 "@tb:identifier.taxonVariant": 407594, 
@@ -171,6 +272,8 @@
 }, 
 "Tl514531": {
 "^ot:originalLabel": "Placidium lachneum", 
+"^ot:ottId": 440210, 
+"^ot:ottTaxonName": "Catapyrenium lachneum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 400628, 
 "@tb:identifier.taxonVariant": 407601, 
@@ -180,26 +283,36 @@
 }, 
 "Tl514532": {
 "^ot:originalLabel": "Henrica melaspora", 
+"^ot:ottId": 954145, 
+"^ot:ottTaxonName": "Polyblastia melaspora", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 525813, 
 "@tb:identifier.taxonVariant": 697457
 }
 }, 
 "Tl514533": {
-"^ot:originalLabel": "Placopyrenium canellum2"
+"^ot:originalLabel": "Placopyrenium canellum2", 
+"^ot:ottId": 5310410, 
+"^ot:ottTaxonName": "Verrucaria canella"
 }, 
 "Tl514534": {
 "^ot:originalLabel": "Wahlenbergiella striatula", 
+"^ot:ottId": 5310430, 
+"^ot:ottTaxonName": "Verrucaria striatula", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 400662, 
 "@tb:identifier.taxonVariant": 784137
 }
 }, 
 "Tl514535": {
-"^ot:originalLabel": "Hydropunctaria rheitrophila"
+"^ot:originalLabel": "Hydropunctaria rheitrophila", 
+"^ot:ottId": 5310426, 
+"^ot:ottTaxonName": "Verrucaria rheitrophila"
 }, 
 "Tl514536": {
 "^ot:originalLabel": "Staurothele drummondii", 
+"^ot:ottId": 490632, 
+"^ot:ottTaxonName": "Staurothele drummondii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 400638, 
 "@tb:identifier.taxonVariant": 407607, 
@@ -209,6 +322,8 @@
 }, 
 "Tl514537": {
 "^ot:originalLabel": "Polyblastia viridescens", 
+"^ot:ottId": 490629, 
+"^ot:ottTaxonName": "Polyblastia viridescens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 400635, 
 "@tb:identifier.taxonVariant": 407605, 
@@ -218,6 +333,8 @@
 }, 
 "Tl514538": {
 "^ot:originalLabel": "Endocarpon pusillum", 
+"^ot:ottId": 293974, 
+"^ot:ottTaxonName": "Endocarpon pusillum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 319091, 
 "@tb:identifier.taxonVariant": 492529, 
@@ -227,6 +344,8 @@
 }, 
 "Tl514539": {
 "^ot:originalLabel": "Placidium arboreum", 
+"^ot:ottId": 490633, 
+"^ot:ottTaxonName": "Placidium arboreum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 400631, 
 "@tb:identifier.taxonVariant": 407602, 
@@ -235,8 +354,9 @@
 }
 }, 
 "Tl514540": {
-"^ot:altLabel": "Polyblastia nidulans", 
 "^ot:originalLabel": "Polyblastia nidulans SS002", 
+"^ot:ottId": 234987, 
+"^ot:ottTaxonName": "Polyblastia nidulans", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 470997, 
 "@tb:identifier.taxonVariant": 625217, 
@@ -246,6 +366,8 @@
 }, 
 "Tl514541": {
 "^ot:originalLabel": "Endocarpon adscendens", 
+"^ot:ottId": 850279, 
+"^ot:ottTaxonName": "Endocarpon adscendens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 400619, 
 "@tb:identifier.taxonVariant": 538013, 
@@ -255,6 +377,8 @@
 }, 
 "Tl514542": {
 "^ot:originalLabel": "Verrucaria viridula", 
+"^ot:ottId": 195254, 
+"^ot:ottTaxonName": "Verrucaria viridula", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 400665, 
 "@tb:identifier.taxonVariant": 407621, 
@@ -263,10 +387,14 @@
 }
 }, 
 "Tl514543": {
-"^ot:originalLabel": "Endocarpon diffractellum"
+"^ot:originalLabel": "Endocarpon diffractellum", 
+"^ot:ottId": 763437, 
+"^ot:ottTaxonName": "Endocarpon diffractellum"
 }, 
 "Tl514544": {
 "^ot:originalLabel": "Dermatocarpon miniatum", 
+"^ot:ottId": 440205, 
+"^ot:ottTaxonName": "Dermatocarpon miniatum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 8748, 
 "@tb:identifier.taxonVariant": 21058, 
@@ -276,6 +404,8 @@
 }, 
 "Tl514545": {
 "^ot:originalLabel": "Thelidium umbilicatumT392", 
+"^ot:ottId": 520807, 
+"^ot:ottTaxonName": "Thelidium umbilicatum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 625003, 
 "@tb:identifier.taxonVariant": 836920, 
@@ -283,8 +413,9 @@
 }
 }, 
 "Tl514546": {
-"^ot:altLabel": "Sporodictyon schaererianum", 
 "^ot:originalLabel": "Sporodictyon schaererianum SS047", 
+"^ot:ottId": 5310316, 
+"^ot:ottTaxonName": "Polyblastia schaereriana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 471004, 
 "@tb:identifier.taxonVariant": 625230, 
@@ -293,8 +424,9 @@
 }
 }, 
 "Tl514547": {
-"^ot:altLabel": "Placopyrenium bucekii1", 
 "^ot:originalLabel": "Placopyrenium bucekii2", 
+"^ot:ottId": 490635, 
+"^ot:ottTaxonName": "Placopyrenium bucekii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 624995, 
 "@tb:identifier.taxonVariant": 836889, 
@@ -302,8 +434,9 @@
 }
 }, 
 "Tl514548": {
-"^ot:altLabel": "Polyblastia bryophila", 
 "^ot:originalLabel": "Polyblastia bryophila SS065", 
+"^ot:ottId": 5695506, 
+"^ot:ottTaxonName": "Polyblastia bryophila", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 470991, 
 "@tb:identifier.taxonVariant": 625211, 
@@ -313,6 +446,8 @@
 }, 
 "Tl514549": {
 "^ot:originalLabel": "Placidium umbrinum", 
+"^ot:ottId": 5459331, 
+"^ot:ottTaxonName": "Placidium umbrinum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 525819, 
 "@tb:identifier.taxonVariant": 697463
@@ -320,6 +455,8 @@
 }, 
 "Tl514550": {
 "^ot:originalLabel": "Verruculopsis poeltiana", 
+"^ot:ottId": 195251, 
+"^ot:ottTaxonName": "Verruculopsis poeltiana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 400668, 
 "@tb:identifier.taxonVariant": 784138
@@ -327,6 +464,8 @@
 }, 
 "Tl514551": {
 "^ot:originalLabel": "Staurothele areolata", 
+"^ot:ottId": 490630, 
+"^ot:ottTaxonName": "Staurothele areolata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 400636, 
 "@tb:identifier.taxonVariant": 407606, 
@@ -339,6 +478,8 @@
 }, 
 "Tl514553": {
 "^ot:originalLabel": "Verrucaria polysticta", 
+"^ot:ottId": 718624, 
+"^ot:ottTaxonName": "Verrucaria polysticta", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 400660, 
 "@tb:identifier.taxonVariant": 407618, 
@@ -347,8 +488,9 @@
 }
 }, 
 "Tl514554": {
-"^ot:altLabel": "Placidium lacinulatum", 
 "^ot:originalLabel": "Placidium lacinulatum1", 
+"^ot:ottId": 371608, 
+"^ot:ottTaxonName": "Placidium lacinulatum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 611413, 
 "@tb:identifier.taxonVariant": 817357, 
@@ -358,6 +500,8 @@
 }, 
 "Tl514555": {
 "^ot:originalLabel": "Verrucaria dolosa", 
+"^ot:ottId": 144833, 
+"^ot:ottTaxonName": "Verrucaria dolosa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 372765, 
 "@tb:identifier.taxonVariant": 518855, 
@@ -366,8 +510,9 @@
 }
 }, 
 "Tl514556": {
-"^ot:altLabel": "Polyblastia lutosa", 
 "^ot:originalLabel": "Polyblastia lutosa SS126", 
+"^ot:ottId": 520809, 
+"^ot:ottTaxonName": "Polyblastia lutosa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 473374, 
 "@tb:identifier.taxonVariant": 627694, 
@@ -377,6 +522,8 @@
 }, 
 "Tl514557": {
 "^ot:originalLabel": "Endocarpon pallidulum", 
+"^ot:ottId": 940869, 
+"^ot:ottTaxonName": "Endocarpon pallidulum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 345382, 
 "@tb:identifier.taxonVariant": 380361, 
@@ -386,6 +533,8 @@
 }, 
 "Tl514558": {
 "^ot:originalLabel": "Verrucaria caerulea", 
+"^ot:ottId": 1016879, 
+"^ot:ottTaxonName": "Verrucaria caerulea", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 400645, 
 "@tb:identifier.taxonVariant": 407610, 
@@ -395,6 +544,8 @@
 }, 
 "Tl514559": {
 "^ot:originalLabel": "Bagliettoa parmigera", 
+"^ot:ottId": 718629, 
+"^ot:ottTaxonName": "Bagliettoa parmigera", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 400658, 
 "@tb:identifier.taxonVariant": 407616, 
@@ -404,6 +555,8 @@
 }, 
 "Tl514560": {
 "^ot:originalLabel": "Verrucaria tavaresiae", 
+"^ot:ottId": 5459067, 
+"^ot:ottTaxonName": "Verrucaria tavaresiae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 611415, 
 "@tb:identifier.taxonVariant": 817359, 
@@ -411,8 +564,9 @@
 }
 }, 
 "Tl514561": {
-"^ot:altLabel": "Polyblastia fuscoargillacea", 
 "^ot:originalLabel": "Polyblastia fuscoargillacea SS102", 
+"^ot:ottId": 5695503, 
+"^ot:ottTaxonName": "Polyblastia fuscoargillacea", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 470992, 
 "@tb:identifier.taxonVariant": 625212, 
@@ -422,6 +576,8 @@
 }, 
 "Tl514562": {
 "^ot:originalLabel": "Wahlenbergiella mucosa", 
+"^ot:ottId": 718630, 
+"^ot:ottTaxonName": "Verrucaria mucosa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 400657, 
 "@tb:identifier.taxonVariant": 784136
@@ -429,6 +585,8 @@
 }, 
 "Tl514563": {
 "^ot:originalLabel": "Capronia munkii", 
+"^ot:ottId": 56765, 
+"^ot:ottTaxonName": "Capronia munkii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 4836, 
 "@tb:identifier.taxonVariant": 11650, 
@@ -438,6 +596,8 @@
 }, 
 "Tl514564": {
 "^ot:originalLabel": "Bagliettoa steineri", 
+"^ot:ottId": 195258, 
+"^ot:ottTaxonName": "Bagliettoa steineri", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 400661, 
 "@tb:identifier.taxonVariant": 538030, 
@@ -447,6 +607,8 @@
 }, 
 "Tl514565": {
 "^ot:originalLabel": "Thelidium incavatum", 
+"^ot:ottId": 1016875, 
+"^ot:ottTaxonName": "Thelidium incavatum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 400641, 
 "@tb:identifier.taxonVariant": 538019, 
@@ -456,6 +618,8 @@
 }, 
 "Tl514566": {
 "^ot:originalLabel": "Verrucaria tristis", 
+"^ot:ottId": 195257, 
+"^ot:ottTaxonName": "Verrucaria tristis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 400664, 
 "@tb:identifier.taxonVariant": 407620, 
@@ -465,6 +629,8 @@
 }, 
 "Tl514567": {
 "^ot:originalLabel": "Catapyrenium cinereum", 
+"^ot:ottId": 440211, 
+"^ot:ottTaxonName": "Catapyrenium cinereum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5172, 
 "@tb:identifier.taxonVariant": 12547, 
@@ -474,6 +640,8 @@
 }, 
 "Tl514568": {
 "^ot:originalLabel": "Verrucaria rupestris", 
+"^ot:ottId": 144839, 
+"^ot:ottTaxonName": "Verrucaria muralis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 471008, 
 "@tb:identifier.taxonVariant": 625234, 
@@ -482,8 +650,9 @@
 }
 }, 
 "Tl514569": {
-"^ot:altLabel": "Polyblastia moravica", 
 "^ot:originalLabel": "Polyblastia moravica SS086", 
+"^ot:ottId": 234988, 
+"^ot:ottTaxonName": "Polyblastia moravica", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 470996, 
 "@tb:identifier.taxonVariant": 625216, 
@@ -493,6 +662,8 @@
 }, 
 "Tl514570": {
 "^ot:originalLabel": "Verrucula biatorinaria", 
+"^ot:ottId": 195255, 
+"^ot:ottTaxonName": "Verrucula biatorinaria", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 400666, 
 "@tb:identifier.taxonVariant": 538032
@@ -500,6 +671,8 @@
 }, 
 "Tl514571": {
 "^ot:originalLabel": "Endocarpon psorodeum", 
+"^ot:ottId": 275846, 
+"^ot:ottTaxonName": "Endocarpon psorodeum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 400621, 
 "@tb:identifier.taxonVariant": 407595, 
@@ -508,8 +681,9 @@
 }
 }, 
 "Tl514572": {
-"^ot:altLabel": "Polyblastia abscondita", 
 "^ot:originalLabel": "Polyblastia abscondita SS068", 
+"^ot:ottId": 860408, 
+"^ot:ottTaxonName": "Polyblastia abscondita", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 470990, 
 "@tb:identifier.taxonVariant": 625210, 
@@ -519,6 +693,8 @@
 }, 
 "Tl514573": {
 "^ot:originalLabel": "Thelidium papulare", 
+"^ot:ottId": 868897, 
+"^ot:ottTaxonName": "Thelidium papulare", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 319085, 
 "@tb:identifier.taxonVariant": 492527, 
@@ -528,6 +704,8 @@
 }, 
 "Tl514574": {
 "^ot:originalLabel": "Staurothele fissa", 
+"^ot:ottId": 868895, 
+"^ot:ottTaxonName": "Staurothele fissa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 319083, 
 "@tb:identifier.taxonVariant": 363138, 
@@ -536,10 +714,14 @@
 }
 }, 
 "Tl514575": {
-"^ot:originalLabel": "Mastodia tessellata MAF16290"
+"^ot:originalLabel": "Mastodia tessellata MAF16290", 
+"^ot:ottId": 948364, 
+"^ot:ottTaxonName": "Mastodia tessellata"
 }, 
 "Tl514576": {
 "^ot:originalLabel": "Placidium chilense", 
+"^ot:ottId": 836688, 
+"^ot:ottTaxonName": "Placidium chilense", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 525817, 
 "@tb:identifier.taxonVariant": 697461, 
@@ -549,6 +731,8 @@
 }, 
 "Tl514577": {
 "^ot:originalLabel": "Staurothele frustulenta", 
+"^ot:ottId": 940868, 
+"^ot:ottTaxonName": "Staurothele frustulenta", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 345383, 
 "@tb:identifier.taxonVariant": 380362, 
@@ -558,6 +742,8 @@
 }, 
 "Tl514578": {
 "^ot:originalLabel": "Heteroplacidium contumescens", 
+"^ot:ottId": 275845, 
+"^ot:ottTaxonName": "Heteroplacidium contumescens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 400622, 
 "@tb:identifier.taxonVariant": 407596, 
@@ -567,6 +753,8 @@
 }, 
 "Tl514579": {
 "^ot:originalLabel": "Bagliettoa cazzae", 
+"^ot:ottId": 1016877, 
+"^ot:ottTaxonName": "Bagliettoa cazzae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 400647, 
 "@tb:identifier.taxonVariant": 407611, 
@@ -576,6 +764,8 @@
 }, 
 "Tl514580": {
 "^ot:originalLabel": "Verrucaria macrostoma", 
+"^ot:ottId": 718628, 
+"^ot:ottTaxonName": "Verrucaria macrostoma", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 400655, 
 "@tb:identifier.taxonVariant": 407614, 
@@ -584,10 +774,14 @@
 }
 }, 
 "Tl514581": {
-"^ot:originalLabel": "Mastodia tessellata MAF16295"
+"^ot:originalLabel": "Mastodia tessellata MAF16295", 
+"^ot:ottId": 948364, 
+"^ot:ottTaxonName": "Mastodia tessellata"
 }, 
 "Tl514582": {
 "^ot:originalLabel": "Placocarpus schaereri", 
+"^ot:ottId": 490634, 
+"^ot:ottTaxonName": "Placocarpus schaereri", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 400632, 
 "@tb:identifier.taxonVariant": 407603, 
@@ -597,6 +791,8 @@
 }, 
 "Tl514583": {
 "^ot:originalLabel": "Verrucaria transiliens", 
+"^ot:ottId": 3758185, 
+"^ot:ottTaxonName": "Verrucaria transiliens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 611412, 
 "@tb:identifier.taxonVariant": 817356, 
@@ -604,10 +800,14 @@
 }
 }, 
 "Tl514584": {
-"^ot:originalLabel": "Heteroplacidium fusculum"
+"^ot:originalLabel": "Heteroplacidium fusculum", 
+"^ot:ottId": 3759894, 
+"^ot:ottTaxonName": "Heteroplacidium fusculum"
 }, 
 "Tl514585": {
 "^ot:originalLabel": "Bagliettoa baldensis", 
+"^ot:ottId": 201423, 
+"^ot:ottTaxonName": "Verrucaria baldensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 369349, 
 "@tb:identifier.taxonVariant": 394446, 
@@ -618,6 +818,8 @@
 }, 
 "Tl514586": {
 "^ot:originalLabel": "Polyblastia cupularis", 
+"^ot:ottId": 490636, 
+"^ot:ottTaxonName": "Polyblastia cupularis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 400634, 
 "@tb:identifier.taxonVariant": 407604, 
@@ -627,6 +829,8 @@
 }, 
 "Tl514587": {
 "^ot:originalLabel": "Dermatocarpon luridum", 
+"^ot:ottId": 440209, 
+"^ot:ottTaxonName": "Dermatocarpon luridum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 8746, 
 "@tb:identifier.taxonVariant": 21052, 
@@ -636,6 +840,8 @@
 }, 
 "Tl514588": {
 "^ot:originalLabel": "Placidiopsis cartilaginea", 
+"^ot:ottId": 810953, 
+"^ot:ottTaxonName": "Placidiopsis custnani", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 400625, 
 "@tb:identifier.taxonVariant": 407598, 
@@ -645,6 +851,8 @@
 }, 
 "Tl514589": {
 "^ot:originalLabel": "Placidium squamulosum", 
+"^ot:ottId": 275850, 
+"^ot:ottTaxonName": "Catapyrenium squamulosum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 400630, 
 "@tb:identifier.taxonVariant": 538016, 
@@ -654,6 +862,8 @@
 }, 
 "Tl514590": {
 "^ot:originalLabel": "Thelidium pyrenophorum", 
+"^ot:ottId": 1016874, 
+"^ot:ottTaxonName": "Thelidium pyrenophorum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 400642, 
 "@tb:identifier.taxonVariant": 538020, 
@@ -663,6 +873,8 @@
 }, 
 "Tl514591": {
 "^ot:originalLabel": "Bagliettoa calciseda", 
+"^ot:ottId": 312093, 
+"^ot:ottTaxonName": "Verrucaria calciseda", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 525804, 
 "@tb:identifier.taxonVariant": 697448
@@ -670,14 +882,17 @@
 }, 
 "Tl514592": {
 "^ot:originalLabel": "Parabagliettoa dufourii", 
+"^ot:ottId": 604274, 
+"^ot:ottTaxonName": "Verrucaria dufourii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 400649, 
 "@tb:identifier.taxonVariant": 784133
 }
 }, 
 "Tl514593": {
-"^ot:altLabel": "Staurothele immersa 2a", 
 "^ot:originalLabel": "Staurothele immersa2a", 
+"^ot:ottId": 490627, 
+"^ot:ottTaxonName": "Staurothele immersa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 611418, 
 "@tb:identifier.taxonVariant": 817362, 
@@ -686,6 +901,8 @@
 }, 
 "Tl514594": {
 "^ot:originalLabel": "Neocatapyrenium rhizinosum", 
+"^ot:ottId": 275847, 
+"^ot:ottTaxonName": "Neocatapyrenium rhizinosum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 400624, 
 "@tb:identifier.taxonVariant": 538014, 
@@ -694,8 +911,9 @@
 }
 }, 
 "Tl514595": {
-"^ot:altLabel": "Polyblastia hyperborea", 
 "^ot:originalLabel": "Polyblastia hyperborea SS005", 
+"^ot:ottId": 234990, 
+"^ot:ottTaxonName": "Polyblastia hyperborea", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 470994, 
 "@tb:identifier.taxonVariant": 625214, 
@@ -704,8 +922,9 @@
 }
 }, 
 "Tl514596": {
-"^ot:altLabel": "Trimmatothele perquisita", 
 "^ot:originalLabel": "Trimmatothele perquisita T560", 
+"^ot:ottId": 520805, 
+"^ot:ottTaxonName": "Trimmatothele perquisita", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 473378, 
 "@tb:identifier.taxonVariant": 627698, 
@@ -715,6 +934,8 @@
 }, 
 "Tl514597": {
 "^ot:originalLabel": "Verrucaria submersella", 
+"^ot:ottId": 262050, 
+"^ot:ottTaxonName": "Verrucaria submersella", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 525821, 
 "@tb:identifier.taxonVariant": 697465, 
@@ -723,8 +944,9 @@
 }
 }, 
 "Tl514598": {
-"^ot:altLabel": "Thelidium decipiens 2a", 
 "^ot:originalLabel": "Thelidium decipiens2a", 
+"^ot:ottId": 490628, 
+"^ot:ottTaxonName": "Thelidium decipiens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 611414, 
 "@tb:identifier.taxonVariant": 817358, 
@@ -733,6 +955,8 @@
 }, 
 "Tl514599": {
 "^ot:originalLabel": "Placidium acarosporoides", 
+"^ot:ottId": 5459332, 
+"^ot:ottTaxonName": "Placidium acarosporoides", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 400627, 
 "@tb:identifier.taxonVariant": 407600, 
@@ -742,6 +966,8 @@
 }, 
 "Tl514600": {
 "^ot:originalLabel": "Verrucaria nigrescens", 
+"^ot:ottId": 293976, 
+"^ot:ottTaxonName": "Verrucaria nigrescens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 319089, 
 "@tb:identifier.taxonVariant": 492528, 
@@ -751,16 +977,22 @@
 }, 
 "Tl514601": {
 "^ot:originalLabel": "Hydropunctaria adriatica", 
+"^ot:ottId": 1016871, 
+"^ot:ottTaxonName": "Verrucaria adriatica", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 400643, 
 "@tb:identifier.taxonVariant": 784131
 }
 }, 
 "Tl514602": {
-"^ot:originalLabel": "Verrucula inconnexaria1"
+"^ot:originalLabel": "Verrucula inconnexaria1", 
+"^ot:ottId": 920534, 
+"^ot:ottTaxonName": "Verrucula inconnexaria"
 }, 
 "Tl514603": {
 "^ot:originalLabel": "Capronia pilosella", 
+"^ot:ottId": 666121, 
+"^ot:ottTaxonName": "Capronia pilosella", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 4838, 
 "@tb:identifier.taxonVariant": 11653, 
@@ -770,6 +1002,8 @@
 }, 
 "Tl514604": {
 "^ot:originalLabel": "Heteroplacidium imbricatum", 
+"^ot:ottId": 275848, 
+"^ot:ottTaxonName": "Heteroplacidium imbricatum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 400623, 
 "@tb:identifier.taxonVariant": 407597, 
@@ -778,8 +1012,9 @@
 }
 }, 
 "Tl514605": {
-"^ot:altLabel": "Polyblastia sendtneri", 
 "^ot:originalLabel": "Polyblastia sendtneri T557", 
+"^ot:ottId": 520806, 
+"^ot:ottTaxonName": "Polyblastia sendtneri", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 473375, 
 "@tb:identifier.taxonVariant": 627695, 
@@ -789,17 +1024,22 @@
 }, 
 "Tl514606": {
 "^ot:originalLabel": "Bagliettoa marmorea", 
+"^ot:ottId": 256838, 
+"^ot:ottTaxonName": "Bagliettoa marmorea", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 532824, 
 "@tb:identifier.taxonVariant": 706833
 }
 }, 
 "Tl514607": {
-"^ot:originalLabel": "Verruculopsis lecideoides"
+"^ot:originalLabel": "Verruculopsis lecideoides", 
+"^ot:ottId": 4062533, 
+"^ot:ottTaxonName": "Verruculopsis lecideoides"
 }, 
 "Tl514608": {
-"^ot:altLabel": "Sporodictyon cruentum", 
 "^ot:originalLabel": "Sporodictyon cruentum SS004", 
+"^ot:ottId": 809381, 
+"^ot:ottTaxonName": "Polyblastia cruenta", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 471003, 
 "@tb:identifier.taxonVariant": 625228, 
@@ -809,6 +1049,8 @@
 }, 
 "Tl514609": {
 "^ot:originalLabel": "Verrucaria praetermissa", 
+"^ot:ottId": 144840, 
+"^ot:ottTaxonName": "Verrucaria praetermissa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 372770, 
 "@tb:identifier.taxonVariant": 518859, 
@@ -818,6 +1060,8 @@
 }, 
 "Tl514610": {
 "^ot:originalLabel": "Hydropunctaria maura", 
+"^ot:ottId": 5310377, 
+"^ot:ottTaxonName": "Verrucaria maura", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 400656, 
 "@tb:identifier.taxonVariant": 784135
@@ -825,6 +1069,8 @@
 }, 
 "Tl514611": {
 "^ot:originalLabel": "Catapyrenium daedaleum", 
+"^ot:ottId": 850271, 
+"^ot:ottTaxonName": "Catapyrenium daedaleum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 400617, 
 "@tb:identifier.taxonVariant": 407592, 
@@ -833,8 +1079,9 @@
 }
 }, 
 "Tl514612": {
-"^ot:altLabel": "Polyblastia clandestina", 
 "^ot:originalLabel": "Polyblastia clandestina T403", 
+"^ot:ottId": 520808, 
+"^ot:ottTaxonName": "Polyblastia clandestina", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 473373, 
 "@tb:identifier.taxonVariant": 627693, 
@@ -843,8 +1090,9 @@
 }
 }, 
 "Tl514613": {
-"^ot:altLabel": "Polyblastia gotlandica", 
 "^ot:originalLabel": "Polyblastia gotlandica SS055", 
+"^ot:ottId": 234991, 
+"^ot:ottTaxonName": "Polyblastia gotlandica", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 470993, 
 "@tb:identifier.taxonVariant": 625213, 
@@ -868,7 +1116,18 @@
 "Tr43800": {
 "@label": "Best tree", 
 "@xsi:type": "nex:FloatTree", 
-"^ot:rootNodeId": "Tn6724819", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:bootstrapValues", 
+"^ot:branchLengthTimeUnit": "Myr", 
+"^ot:curatedType": "Maximum likelihood ", 
+"^ot:inGroupClade": "Tn6724941", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:rootNodeId": "Tn6724879", 
+"^ot:specifiedRoot": "Tn6724879", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "^tb:ntax.tree": 93, 
 "edgeBySourceId": {
 "Tn6724768": {
@@ -1212,11 +1471,6 @@
 "@length": 0.21955707596211876, 
 "@source": "Tn6724819", 
 "@target": "Tn6724907"
-}, 
-"edge99728": {
-"@length": 0.21955707596211876, 
-"@source": "Tn6724819", 
-"@target": "Tn6724879"
 }
 }, 
 "Tn6724820": {
@@ -1604,6 +1858,11 @@
 }
 }, 
 "Tn6724879": {
+"edge99728": {
+"@length": 0.21955707596211876, 
+"@source": "Tn6724879", 
+"@target": "Tn6724819"
+}, 
 "edge99730": {
 "@length": 0.09978315699031151, 
 "@source": "Tn6724879", 
@@ -2086,9 +2345,7 @@
 "Tn6724818": {
 "@otu": "Tl514553"
 }, 
-"Tn6724819": {
-"@root": true
-}, 
+"Tn6724819": {}, 
 "Tn6724820": {}, 
 "Tn6724821": {}, 
 "Tn6724822": {
@@ -2202,7 +2459,9 @@
 "Tn6724876": {}, 
 "Tn6724877": {}, 
 "Tn6724878": {}, 
-"Tn6724879": {}, 
+"Tn6724879": {
+"@root": true
+}, 
 "Tn6724880": {
 "@otu": "Tl514597"
 }, 
@@ -2355,7 +2614,18 @@
 "Tr43801": {
 "@label": "Imported tree 0", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "Tn6725019", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:ntax.tree": 93, 
 "edgeBySourceId": {
 "Tn6724949": {
