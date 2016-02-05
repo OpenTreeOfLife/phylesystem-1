@@ -60,22 +60,108 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2016-02-05T18:37:32.003Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:curatorName": "Dail Laughinghouse", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2016-02-05T18:37:32.002Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"Tr85884"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Dail Laughinghouse"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S17171"
 }, 
+"^ot:focalCladeOTTTaxonName": "", 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "Tls43221"
 ], 
 "^ot:studyId": "ot_570", 
-"^ot:studyPublicationReference": "Huysman M.J., Tanaka A., Bowler C., Vyverman W., & De veylder L. 2015. Functional characterization of the diatom cyclin-dependent kinase A2 as a mitotic regulator reveals plant-like properties in a non-green lineage. BMC Plant Biology, .", 
+"^ot:studyPublication": {
+"@href": "http://dx.doi.org/10.1186/s12870-015-0469-6"
+}, 
+"^ot:studyPublicationReference": "Marie JJ Huysman, Atsuko Tanaka, Chris Bowler, Wim Vyverman, Lieven De Veylder, 2015, 'Functional characterization of the diatom cyclin-dependent kinase A2 as a mitotic regulator reveals plant-like properties in a non-green lineage', BMC Plant Biology, vol. 15, no. 1", 
 "^ot:studyYear": 2015, 
+"^ot:tag": [], 
 "^ot:taxonLinkPrefixes": {
 "@ubio": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:", 
 "@uniprot": "http://purl.uniprot.org/taxonomy/"
@@ -98,8 +184,9 @@
 "^skos:historyNote": "Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlOTUWriter@c9b4312 $Rev: 1040 $", 
 "otuById": {
 "Tl1771930": {
-"^ot:altLabel": "Schizosaccharomyces pombe", 
 "^ot:originalLabel": "Schizosaccharomyces pombe CDC2", 
+"^ot:ottId": 990004, 
+"^ot:ottTaxonName": "Schizosaccharomyces pombe", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 26385, 
 "@tb:identifier.taxonVariant": 61651, 
@@ -108,8 +195,9 @@
 }
 }, 
 "Tl1771931": {
-"^ot:altLabel": "Nannochloropsis gaditana", 
 "^ot:originalLabel": "Nannochloropsis gaditana CDKA1;1", 
+"^ot:ottId": 749812, 
+"^ot:ottTaxonName": "Nannochloropsis gaditana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 39780, 
 "@tb:identifier.taxonVariant": 92291, 
@@ -118,8 +206,9 @@
 }
 }, 
 "Tl1771932": {
-"^ot:altLabel": "Cyanidioschyzon merolae", 
 "^ot:originalLabel": "Cyanidioschyzon merolae CDKB", 
+"^ot:ottId": 5662225, 
+"^ot:ottTaxonName": "Cyanidioschyzon merolae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 7843, 
 "@tb:identifier.taxonVariant": 18861, 
@@ -128,8 +217,9 @@
 }
 }, 
 "Tl1771933": {
-"^ot:altLabel": "Phaeodactylum tricornutum", 
 "^ot:originalLabel": "Phaeodactylum tricornutum CDKC2", 
+"^ot:ottId": 1095879, 
+"^ot:ottTaxonName": "Phaeodactylum tricornutum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 617696, 
 "@tb:identifier.taxonVariant": 842130, 
@@ -138,8 +228,9 @@
 }
 }, 
 "Tl1771934": {
-"^ot:altLabel": "Xenopus laevis", 
 "^ot:originalLabel": "Xenopus laevis CDK1", 
+"^ot:ottId": 465096, 
+"^ot:ottTaxonName": "Xenopus laevis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 31035, 
 "@tb:identifier.taxonVariant": 72461, 
@@ -148,8 +239,9 @@
 }
 }, 
 "Tl1771935": {
-"^ot:altLabel": "Ostreococcus tauri", 
 "^ot:originalLabel": "Ostreococcus tauri CDKC", 
+"^ot:ottId": 772469, 
+"^ot:ottTaxonName": "Ostreococcus tauri", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 20013, 
 "@tb:identifier.taxonVariant": 46581, 
@@ -158,8 +250,9 @@
 }
 }, 
 "Tl1771936": {
-"^ot:altLabel": "Drosophila melanogaster", 
 "^ot:originalLabel": "Drosophila melanogaster CDK4", 
+"^ot:ottId": 505714, 
+"^ot:ottTaxonName": "Drosophila melanogaster", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 625111, 
 "@tb:identifier.taxonVariant": 837544, 
@@ -168,8 +261,9 @@
 }
 }, 
 "Tl1771937": {
-"^ot:altLabel": "Arabidopsis thaliana", 
 "^ot:originalLabel": "Arabidopsis thaliana CDKB2;1", 
+"^ot:ottId": 309263, 
+"^ot:ottTaxonName": "Arabidopsis thaliana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 624067, 
 "@tb:identifier.taxonVariant": 836890, 
@@ -178,8 +272,9 @@
 }
 }, 
 "Tl1771938": {
-"^ot:altLabel": "Homo sapiens", 
 "^ot:originalLabel": "Homo sapiens CDK7", 
+"^ot:ottId": 770315, 
+"^ot:ottTaxonName": "Homo sapiens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 13680, 
 "@tb:identifier.taxonVariant": 32274, 
@@ -188,8 +283,9 @@
 }
 }, 
 "Tl1771939": {
-"^ot:altLabel": "Ostreococcus tauri", 
 "^ot:originalLabel": "Ostreococcus tauri CDKD", 
+"^ot:ottId": 772469, 
+"^ot:ottTaxonName": "Ostreococcus tauri", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 20013, 
 "@tb:identifier.taxonVariant": 46581, 
@@ -198,8 +294,9 @@
 }
 }, 
 "Tl1771940": {
-"^ot:altLabel": "Chlamydomonas reinhardtii", 
 "^ot:originalLabel": "Chlamydomonas reinhardtii CDKA", 
+"^ot:ottId": 33153, 
+"^ot:ottTaxonName": "Chlamydomonas reinhardtii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5860, 
 "@tb:identifier.taxonVariant": 14193, 
@@ -208,8 +305,9 @@
 }
 }, 
 "Tl1771941": {
-"^ot:altLabel": "Arabidopsis thaliana", 
 "^ot:originalLabel": "Arabidopsis thaliana CDKD1;1", 
+"^ot:ottId": 309263, 
+"^ot:ottTaxonName": "Arabidopsis thaliana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 624067, 
 "@tb:identifier.taxonVariant": 836890, 
@@ -218,8 +316,9 @@
 }
 }, 
 "Tl1771942": {
-"^ot:altLabel": "Micromonas sp. RCC299", 
 "^ot:originalLabel": "Micromonas sp. CDKA", 
+"^ot:ottId": 42076, 
+"^ot:ottTaxonName": "Micromonas sp. RCC299", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 261232, 
 "@tb:identifier.taxonVariant": 471214, 
@@ -228,8 +327,9 @@
 }
 }, 
 "Tl1771943": {
-"^ot:altLabel": "Micromonas pusilla", 
 "^ot:originalLabel": "Micromonas pusilla CDKB", 
+"^ot:ottId": 395942, 
+"^ot:ottTaxonName": "Micromonas pusilla", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 17700, 
 "@tb:identifier.taxonVariant": 41403, 
@@ -238,8 +338,9 @@
 }
 }, 
 "Tl1771944": {
-"^ot:altLabel": "Homo sapiens", 
 "^ot:originalLabel": "Homo sapiens CDK4", 
+"^ot:ottId": 770315, 
+"^ot:ottTaxonName": "Homo sapiens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 13680, 
 "@tb:identifier.taxonVariant": 32274, 
@@ -248,8 +349,9 @@
 }
 }, 
 "Tl1771945": {
-"^ot:altLabel": "Thalassiosira pseudonana", 
 "^ot:originalLabel": "Thalassiosira pseudonana CDKD1", 
+"^ot:ottId": 753596, 
+"^ot:ottTaxonName": "Thalassiosira pseudonana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 28842, 
 "@tb:identifier.taxonVariant": 67265, 
@@ -258,8 +360,9 @@
 }
 }, 
 "Tl1771946": {
-"^ot:altLabel": "Arabidopsis thaliana", 
 "^ot:originalLabel": "Arabidopsis thaliana CDK7", 
+"^ot:ottId": 309263, 
+"^ot:ottTaxonName": "Arabidopsis thaliana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 624067, 
 "@tb:identifier.taxonVariant": 836890, 
@@ -268,8 +371,9 @@
 }
 }, 
 "Tl1771947": {
-"^ot:altLabel": "Phaeodactylum tricornutum", 
 "^ot:originalLabel": "Phaeodactylum tricornutum CDKA2", 
+"^ot:ottId": 1095879, 
+"^ot:ottTaxonName": "Phaeodactylum tricornutum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 617696, 
 "@tb:identifier.taxonVariant": 842130, 
@@ -278,8 +382,9 @@
 }
 }, 
 "Tl1771948": {
-"^ot:altLabel": "Arabidopsis thaliana", 
 "^ot:originalLabel": "Arabidopsis thaliana CDKC2", 
+"^ot:ottId": 309263, 
+"^ot:ottTaxonName": "Arabidopsis thaliana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 624067, 
 "@tb:identifier.taxonVariant": 836890, 
@@ -288,8 +393,9 @@
 }
 }, 
 "Tl1771949": {
-"^ot:altLabel": "Phytophthora sojae", 
 "^ot:originalLabel": "Phytophthora sojae CDKA1;1", 
+"^ot:ottId": 740156, 
+"^ot:ottTaxonName": "Phytophthora sojae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22303, 
 "@tb:identifier.taxonVariant": 51888, 
@@ -298,8 +404,9 @@
 }
 }, 
 "Tl1771950": {
-"^ot:altLabel": "Homo sapiens", 
 "^ot:originalLabel": "Homo sapiens CDK10", 
+"^ot:ottId": 770315, 
+"^ot:ottTaxonName": "Homo sapiens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 13680, 
 "@tb:identifier.taxonVariant": 32274, 
@@ -308,8 +415,9 @@
 }
 }, 
 "Tl1771951": {
-"^ot:altLabel": "Phaeodactylum tricornutum", 
 "^ot:originalLabel": "Phaeodactylum tricornutum CDKD1", 
+"^ot:ottId": 1095879, 
+"^ot:ottTaxonName": "Phaeodactylum tricornutum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 617696, 
 "@tb:identifier.taxonVariant": 842130, 
@@ -318,8 +426,9 @@
 }
 }, 
 "Tl1771952": {
-"^ot:altLabel": "Homo sapiens", 
 "^ot:originalLabel": "Homo sapiens CDK6", 
+"^ot:ottId": 770315, 
+"^ot:ottTaxonName": "Homo sapiens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 13680, 
 "@tb:identifier.taxonVariant": 32274, 
@@ -328,8 +437,9 @@
 }
 }, 
 "Tl1771953": {
-"^ot:altLabel": "Chlamydomonas reinhardtii", 
 "^ot:originalLabel": "Chlamydomonas reinhardtii CDKB", 
+"^ot:ottId": 33153, 
+"^ot:ottTaxonName": "Chlamydomonas reinhardtii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5860, 
 "@tb:identifier.taxonVariant": 14193, 
@@ -338,8 +448,9 @@
 }
 }, 
 "Tl1771954": {
-"^ot:altLabel": "Micromonas sp. RCC299", 
 "^ot:originalLabel": "Micromonas sp. CDKB", 
+"^ot:ottId": 42076, 
+"^ot:ottTaxonName": "Micromonas sp. RCC299", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 261232, 
 "@tb:identifier.taxonVariant": 471214, 
@@ -348,8 +459,9 @@
 }
 }, 
 "Tl1771955": {
-"^ot:altLabel": "Fragilariopsis cylindrus", 
 "^ot:originalLabel": "Fragilariopsis cylindrus CDKA2", 
+"^ot:ottId": 1003869, 
+"^ot:ottTaxonName": "Fragilariopsis cylindrus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 173084, 
 "@tb:identifier.taxonVariant": 441624, 
@@ -358,8 +470,9 @@
 }
 }, 
 "Tl1771956": {
-"^ot:altLabel": "Thalassiosira pseudonana", 
 "^ot:originalLabel": "Thalassiosira pseudonana CDKA1", 
+"^ot:ottId": 753596, 
+"^ot:ottTaxonName": "Thalassiosira pseudonana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 28842, 
 "@tb:identifier.taxonVariant": 67265, 
@@ -368,8 +481,9 @@
 }
 }, 
 "Tl1771957": {
-"^ot:altLabel": "Micromonas pusilla", 
 "^ot:originalLabel": "Micromonas pusilla CDKA", 
+"^ot:ottId": 395942, 
+"^ot:ottTaxonName": "Micromonas pusilla", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 17700, 
 "@tb:identifier.taxonVariant": 41403, 
@@ -378,8 +492,9 @@
 }
 }, 
 "Tl1771958": {
-"^ot:altLabel": "Thalassiosira pseudonana", 
 "^ot:originalLabel": "Thalassiosira pseudonana CDKA2", 
+"^ot:ottId": 753596, 
+"^ot:ottTaxonName": "Thalassiosira pseudonana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 28842, 
 "@tb:identifier.taxonVariant": 67265, 
@@ -388,8 +503,9 @@
 }
 }, 
 "Tl1771959": {
-"^ot:altLabel": "Cyanidioschyzon merolae", 
 "^ot:originalLabel": "Cyanidioschyzon merolae CDKA", 
+"^ot:ottId": 5662225, 
+"^ot:ottTaxonName": "Cyanidioschyzon merolae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 7843, 
 "@tb:identifier.taxonVariant": 18861, 
@@ -398,8 +514,9 @@
 }
 }, 
 "Tl1771960": {
-"^ot:altLabel": "Arabidopsis thaliana", 
 "^ot:originalLabel": "Arabidopsis thaliana CDKA1", 
+"^ot:ottId": 309263, 
+"^ot:ottTaxonName": "Arabidopsis thaliana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 624067, 
 "@tb:identifier.taxonVariant": 836890, 
@@ -408,8 +525,9 @@
 }
 }, 
 "Tl1771961": {
-"^ot:altLabel": "Xenopus laevis", 
 "^ot:originalLabel": "Xenopus laevis CDK4", 
+"^ot:ottId": 465096, 
+"^ot:ottTaxonName": "Xenopus laevis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 31035, 
 "@tb:identifier.taxonVariant": 72461, 
@@ -418,8 +536,9 @@
 }
 }, 
 "Tl1771962": {
-"^ot:altLabel": "Nannochloropsis gaditana", 
 "^ot:originalLabel": "Nannochloropsis gaditana CDKA2", 
+"^ot:ottId": 749812, 
+"^ot:ottTaxonName": "Nannochloropsis gaditana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 39780, 
 "@tb:identifier.taxonVariant": 92291, 
@@ -428,8 +547,9 @@
 }
 }, 
 "Tl1771963": {
-"^ot:altLabel": "Ectocarpus siliculosus", 
 "^ot:originalLabel": "Ectocarpus siliculosus CDKB", 
+"^ot:ottId": 878345, 
+"^ot:ottTaxonName": "Ectocarpus siliculosus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 9741, 
 "@tb:identifier.taxonVariant": 23325, 
@@ -438,8 +558,9 @@
 }
 }, 
 "Tl1771964": {
-"^ot:altLabel": "Phytophthora sojae", 
 "^ot:originalLabel": "Phytophthora sojae CDKA2", 
+"^ot:ottId": 740156, 
+"^ot:ottTaxonName": "Phytophthora sojae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22303, 
 "@tb:identifier.taxonVariant": 51888, 
@@ -448,8 +569,9 @@
 }
 }, 
 "Tl1771965": {
-"^ot:altLabel": "Ectocarpus siliculosus", 
 "^ot:originalLabel": "Ectocarpus siliculosus CDKBlike", 
+"^ot:ottId": 878345, 
+"^ot:ottTaxonName": "Ectocarpus siliculosus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 9741, 
 "@tb:identifier.taxonVariant": 23325, 
@@ -458,8 +580,9 @@
 }
 }, 
 "Tl1771966": {
-"^ot:altLabel": "Phaeodactylum tricornutum", 
 "^ot:originalLabel": "Phaeodactylum tricornutum CDKC1", 
+"^ot:ottId": 1095879, 
+"^ot:ottTaxonName": "Phaeodactylum tricornutum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 617696, 
 "@tb:identifier.taxonVariant": 842130, 
@@ -468,8 +591,9 @@
 }
 }, 
 "Tl1771967": {
-"^ot:altLabel": "Ectocarpus siliculosus", 
 "^ot:originalLabel": "Ectocarpus siliculosus CDKA", 
+"^ot:ottId": 878345, 
+"^ot:ottTaxonName": "Ectocarpus siliculosus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 9741, 
 "@tb:identifier.taxonVariant": 23325, 
@@ -478,8 +602,9 @@
 }
 }, 
 "Tl1771968": {
-"^ot:altLabel": "Nannochloropsis gaditana", 
 "^ot:originalLabel": "Nannochloropsis gaditana CDKA1b", 
+"^ot:ottId": 749812, 
+"^ot:ottTaxonName": "Nannochloropsis gaditana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 39780, 
 "@tb:identifier.taxonVariant": 92291, 
@@ -488,8 +613,9 @@
 }
 }, 
 "Tl1771969": {
-"^ot:altLabel": "Arabidopsis thaliana", 
 "^ot:originalLabel": "Arabidopsis thaliana CDKB2;2", 
+"^ot:ottId": 309263, 
+"^ot:ottTaxonName": "Arabidopsis thaliana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 624067, 
 "@tb:identifier.taxonVariant": 836890, 
@@ -498,8 +624,9 @@
 }
 }, 
 "Tl1771970": {
-"^ot:altLabel": "Arabidopsis thaliana", 
 "^ot:originalLabel": "Arabidopsis thaliana CDKB1;1", 
+"^ot:ottId": 309263, 
+"^ot:ottTaxonName": "Arabidopsis thaliana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 624067, 
 "@tb:identifier.taxonVariant": 836890, 
@@ -508,8 +635,9 @@
 }
 }, 
 "Tl1771971": {
-"^ot:altLabel": "Fragilariopsis cylindrus", 
 "^ot:originalLabel": "Fragilariopsis cylindrus CDKA1", 
+"^ot:ottId": 1003869, 
+"^ot:ottTaxonName": "Fragilariopsis cylindrus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 173084, 
 "@tb:identifier.taxonVariant": 441624, 
@@ -518,8 +646,9 @@
 }
 }, 
 "Tl1771972": {
-"^ot:altLabel": "Ostreococcus tauri", 
 "^ot:originalLabel": "Ostreococcus tauri CDKA", 
+"^ot:ottId": 772469, 
+"^ot:ottTaxonName": "Ostreococcus tauri", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 20013, 
 "@tb:identifier.taxonVariant": 46581, 
@@ -528,8 +657,9 @@
 }
 }, 
 "Tl1771973": {
-"^ot:altLabel": "Homo sapiens", 
 "^ot:originalLabel": "Homo sapiens CDK1", 
+"^ot:ottId": 770315, 
+"^ot:ottTaxonName": "Homo sapiens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 13680, 
 "@tb:identifier.taxonVariant": 32274, 
@@ -538,8 +668,9 @@
 }
 }, 
 "Tl1771974": {
-"^ot:altLabel": "Xenopus laevis", 
 "^ot:originalLabel": "Xenopus laevis CDK2", 
+"^ot:ottId": 465096, 
+"^ot:ottTaxonName": "Xenopus laevis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 31035, 
 "@tb:identifier.taxonVariant": 72461, 
@@ -548,8 +679,9 @@
 }
 }, 
 "Tl1771975": {
-"^ot:altLabel": "Drosophila melanogaster", 
 "^ot:originalLabel": "Drosophila melanogaster CDK2", 
+"^ot:ottId": 505714, 
+"^ot:ottTaxonName": "Drosophila melanogaster", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 625111, 
 "@tb:identifier.taxonVariant": 837544, 
@@ -558,8 +690,9 @@
 }
 }, 
 "Tl1771976": {
-"^ot:altLabel": "Arabidopsis thaliana", 
 "^ot:originalLabel": "Arabidopsis thaliana CDKC1", 
+"^ot:ottId": 309263, 
+"^ot:ottTaxonName": "Arabidopsis thaliana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 624067, 
 "@tb:identifier.taxonVariant": 836890, 
@@ -568,8 +701,9 @@
 }
 }, 
 "Tl1771977": {
-"^ot:altLabel": "Ostreococcus 'lucimarinus'", 
 "^ot:originalLabel": "Ostreococcus lucimarinus CDKA", 
+"^ot:ottId": 851102, 
+"^ot:ottTaxonName": "Ostreococcus 'lucimarinus'", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 218718, 
 "@tb:identifier.taxonVariant": 285440, 
@@ -578,8 +712,9 @@
 }
 }, 
 "Tl1771978": {
-"^ot:altLabel": "Arabidopsis thaliana", 
 "^ot:originalLabel": "Arabidopsis thaliana CDKB1;2", 
+"^ot:ottId": 309263, 
+"^ot:ottTaxonName": "Arabidopsis thaliana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 624067, 
 "@tb:identifier.taxonVariant": 836890, 
@@ -588,8 +723,9 @@
 }
 }, 
 "Tl1771979": {
-"^ot:altLabel": "Phaeodactylum tricornutum", 
 "^ot:originalLabel": "Phaeodactylum tricornutum CDKA1", 
+"^ot:ottId": 1095879, 
+"^ot:ottTaxonName": "Phaeodactylum tricornutum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 617696, 
 "@tb:identifier.taxonVariant": 842130, 
@@ -598,8 +734,9 @@
 }
 }, 
 "Tl1771980": {
-"^ot:altLabel": "Xenopus laevis", 
 "^ot:originalLabel": "Xenopus laevis CDK7", 
+"^ot:ottId": 465096, 
+"^ot:ottTaxonName": "Xenopus laevis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 31035, 
 "@tb:identifier.taxonVariant": 72461, 
@@ -608,8 +745,9 @@
 }
 }, 
 "Tl1771981": {
-"^ot:altLabel": "Arabidopsis thaliana", 
 "^ot:originalLabel": "Arabidopsis thaliana CDKD1;2", 
+"^ot:ottId": 309263, 
+"^ot:ottTaxonName": "Arabidopsis thaliana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 624067, 
 "@tb:identifier.taxonVariant": 836890, 
@@ -618,8 +756,9 @@
 }
 }, 
 "Tl1771982": {
-"^ot:altLabel": "Thalassiosira pseudonana", 
 "^ot:originalLabel": "Thalassiosira pseudonana CDKC2", 
+"^ot:ottId": 753596, 
+"^ot:ottTaxonName": "Thalassiosira pseudonana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 28842, 
 "@tb:identifier.taxonVariant": 67265, 
@@ -628,8 +767,9 @@
 }
 }, 
 "Tl1771983": {
-"^ot:altLabel": "Homo sapiens", 
 "^ot:originalLabel": "Homo sapiens CDK2", 
+"^ot:ottId": 770315, 
+"^ot:ottTaxonName": "Homo sapiens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 13680, 
 "@tb:identifier.taxonVariant": 32274, 
@@ -638,8 +778,9 @@
 }
 }, 
 "Tl1771984": {
-"^ot:altLabel": "Saccharomyces cerevisiae", 
 "^ot:originalLabel": "Saccharomyces cerevisiae CDC28", 
+"^ot:ottId": 908549, 
+"^ot:ottTaxonName": "Saccharomyces cerevisiae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 25995, 
 "@tb:identifier.taxonVariant": 60823, 
@@ -648,8 +789,9 @@
 }
 }, 
 "Tl1771985": {
-"^ot:altLabel": "Thalassiosira pseudonana", 
 "^ot:originalLabel": "Thalassiosira pseudonana CDKC1", 
+"^ot:ottId": 753596, 
+"^ot:ottTaxonName": "Thalassiosira pseudonana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 28842, 
 "@tb:identifier.taxonVariant": 67265, 
@@ -658,8 +800,9 @@
 }
 }, 
 "Tl1771986": {
-"^ot:altLabel": "Ostreococcus tauri", 
 "^ot:originalLabel": "Ostreococcus tauri CDKB", 
+"^ot:ottId": 772469, 
+"^ot:ottTaxonName": "Ostreococcus tauri", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 20013, 
 "@tb:identifier.taxonVariant": 46581, 
@@ -668,8 +811,9 @@
 }
 }, 
 "Tl1771987": {
-"^ot:altLabel": "Arabidopsis thaliana", 
 "^ot:originalLabel": "Arabidopsis thaliana CDKE1", 
+"^ot:ottId": 309263, 
+"^ot:ottTaxonName": "Arabidopsis thaliana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 624067, 
 "@tb:identifier.taxonVariant": 836890, 
@@ -678,8 +822,9 @@
 }
 }, 
 "Tl1771988": {
-"^ot:altLabel": "Ostreococcus 'lucimarinus'", 
 "^ot:originalLabel": "Ostreococcus lucimarinus CDKB", 
+"^ot:ottId": 851102, 
+"^ot:ottTaxonName": "Ostreococcus 'lucimarinus'", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 218718, 
 "@tb:identifier.taxonVariant": 285440, 
@@ -688,8 +833,9 @@
 }
 }, 
 "Tl1771989": {
-"^ot:altLabel": "Phytophthora sojae", 
 "^ot:originalLabel": "Phytophthora sojae CDKA1;2", 
+"^ot:ottId": 740156, 
+"^ot:ottTaxonName": "Phytophthora sojae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22303, 
 "@tb:identifier.taxonVariant": 51888, 
@@ -712,7 +858,19 @@
 "Tr85884": {
 "@label": "treeML", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:bootstrapValues", 
+"^ot:branchLengthTimeUnit": "Myr", 
+"^ot:curatedType": "Maximum likelihood ", 
+"^ot:inGroupClade": "Tn12643811", 
+"^ot:nodeLabelDescription": "", 
+"^ot:nodeLabelMode": "ot:bootstrapValues", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "Tn12643795", 
+"^ot:specifiedRoot": "Tn12643795", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 60, 
 "^tb:quality.tree": "Unrated", 
@@ -734,24 +892,28 @@
 "edge123364": {
 "@length": 0.62076595, 
 "@source": "Tn12643761", 
-"@target": "Tn12643780"
+"@target": "Tn12643780", 
+"^ot:bootstrapValues": 1
 }, 
 "edge123370": {
 "@length": 0.17556287, 
 "@source": "Tn12643761", 
-"@target": "Tn12643798"
+"@target": "Tn12643798", 
+"^ot:bootstrapValues": 0.915
 }
 }, 
 "Tn12643762": {
 "edge123232": {
 "@length": 0.17971947, 
 "@source": "Tn12643762", 
-"@target": "Tn12643842"
+"@target": "Tn12643842", 
+"^ot:bootstrapValues": 1
 }, 
 "edge123238": {
 "@length": 0.10138431, 
 "@source": "Tn12643762", 
-"@target": "Tn12643809"
+"@target": "Tn12643809", 
+"^ot:bootstrapValues": 0.995
 }
 }, 
 "Tn12643763": {
@@ -799,7 +961,8 @@
 "edge123284": {
 "@length": 0.11864678, 
 "@source": "Tn12643770", 
-"@target": "Tn12643778"
+"@target": "Tn12643778", 
+"^ot:bootstrapValues": 0.895
 }
 }, 
 "Tn12643773": {
@@ -818,36 +981,42 @@
 "edge123310": {
 "@length": 0.11667803, 
 "@source": "Tn12643775", 
-"@target": "Tn12643838"
+"@target": "Tn12643838", 
+"^ot:bootstrapValues": 0.755
 }, 
 "edge123324": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn12643775", 
-"@target": "Tn12643808"
+"@target": "Tn12643808", 
+"^ot:bootstrapValues": 0.761
 }
 }, 
 "Tn12643776": {
 "edge123394": {
 "@length": 0.49399174, 
 "@source": "Tn12643776", 
-"@target": "Tn12643818"
+"@target": "Tn12643818", 
+"^ot:bootstrapValues": 0.999
 }, 
 "edge123400": {
 "@length": 0.11182075, 
 "@source": "Tn12643776", 
-"@target": "Tn12643876"
+"@target": "Tn12643876", 
+"^ot:bootstrapValues": 0.533
 }
 }, 
 "Tn12643778": {
 "edge123286": {
 "@length": 0.12875035, 
 "@source": "Tn12643778", 
-"@target": "Tn12643813"
+"@target": "Tn12643813", 
+"^ot:bootstrapValues": 0.48
 }, 
 "edge123292": {
 "@length": 0.0132974, 
 "@source": "Tn12643778", 
-"@target": "Tn12643783"
+"@target": "Tn12643783", 
+"^ot:bootstrapValues": 0.36
 }
 }, 
 "Tn12643780": {
@@ -866,24 +1035,28 @@
 "edge123198": {
 "@length": 0.04539995, 
 "@source": "Tn12643781", 
-"@target": "Tn12643848"
+"@target": "Tn12643848", 
+"^ot:bootstrapValues": 0.513
 }, 
 "edge123280": {
 "@length": 0.11555651, 
 "@source": "Tn12643781", 
-"@target": "Tn12643770"
+"@target": "Tn12643770", 
+"^ot:bootstrapValues": 0.918
 }
 }, 
 "Tn12643782": {
 "edge123204": {
 "@length": 0.05017599, 
 "@source": "Tn12643782", 
-"@target": "Tn12643828"
+"@target": "Tn12643828", 
+"^ot:bootstrapValues": 0.098
 }, 
 "edge123230": {
 "@length": 0.01617769, 
 "@source": "Tn12643782", 
-"@target": "Tn12643762"
+"@target": "Tn12643762", 
+"^ot:bootstrapValues": 0.286
 }
 }, 
 "Tn12643783": {
@@ -895,7 +1068,8 @@
 "edge123296": {
 "@length": 0.05629797, 
 "@source": "Tn12643783", 
-"@target": "Tn12643837"
+"@target": "Tn12643837", 
+"^ot:bootstrapValues": 0.9
 }
 }, 
 "Tn12643784": {
@@ -907,7 +1081,8 @@
 "edge123274": {
 "@length": 0.10254713, 
 "@source": "Tn12643784", 
-"@target": "Tn12643773"
+"@target": "Tn12643773", 
+"^ot:bootstrapValues": 0.697
 }
 }, 
 "Tn12643787": {
@@ -919,14 +1094,16 @@
 "edge123412": {
 "@length": 0.15624962, 
 "@source": "Tn12643787", 
-"@target": "Tn12643823"
+"@target": "Tn12643823", 
+"^ot:bootstrapValues": 1
 }
 }, 
 "Tn12643795": {
 "edge123184": {
 "@length": 0.14710248, 
 "@source": "Tn12643795", 
-"@target": "Tn12643811"
+"@target": "Tn12643811", 
+"^ot:bootstrapValues": 0
 }, 
 "edge123418": {
 "@length": 0.47186804, 
@@ -938,19 +1115,22 @@
 "edge123372": {
 "@length": 0.33757604, 
 "@source": "Tn12643798", 
-"@target": "Tn12643870"
+"@target": "Tn12643870", 
+"^ot:bootstrapValues": 1
 }, 
 "edge123382": {
 "@length": 0.07608824, 
 "@source": "Tn12643798", 
-"@target": "Tn12643831"
+"@target": "Tn12643831", 
+"^ot:bootstrapValues": 0.866
 }
 }, 
 "Tn12643800": {
 "edge123196": {
 "@length": 0.03870788, 
 "@source": "Tn12643800", 
-"@target": "Tn12643781"
+"@target": "Tn12643781", 
+"^ot:bootstrapValues": 0.207
 }, 
 "edge123306": {
 "@length": 0.28010012, 
@@ -962,12 +1142,14 @@
 "edge123190": {
 "@length": 0.10241894, 
 "@source": "Tn12643804", 
-"@target": "Tn12643824"
+"@target": "Tn12643824", 
+"^ot:bootstrapValues": 0.977
 }, 
 "edge123344": {
 "@length": 0.4251145, 
 "@source": "Tn12643804", 
-"@target": "Tn12643839"
+"@target": "Tn12643839", 
+"^ot:bootstrapValues": 0.811
 }
 }, 
 "Tn12643807": {
@@ -991,7 +1173,8 @@
 "edge123328": {
 "@length": 0.10148259, 
 "@source": "Tn12643808", 
-"@target": "Tn12643835"
+"@target": "Tn12643835", 
+"^ot:bootstrapValues": 1
 }
 }, 
 "Tn12643809": {
@@ -1003,19 +1186,22 @@
 "edge123242": {
 "@length": 0.11848053, 
 "@source": "Tn12643809", 
-"@target": "Tn12643830"
+"@target": "Tn12643830", 
+"^ot:bootstrapValues": 1
 }
 }, 
 "Tn12643811": {
 "edge123186": {
 "@length": 0.17892229, 
 "@source": "Tn12643811", 
-"@target": "Tn12643833"
+"@target": "Tn12643833", 
+"^ot:bootstrapValues": 0.752
 }, 
 "edge123392": {
 "@length": 0.14209787, 
 "@source": "Tn12643811", 
-"@target": "Tn12643776"
+"@target": "Tn12643776", 
+"^ot:bootstrapValues": 0.816
 }
 }, 
 "Tn12643812": {
@@ -1075,7 +1261,8 @@
 "edge123260": {
 "@length": 0.03651583, 
 "@source": "Tn12643820", 
-"@target": "Tn12643846"
+"@target": "Tn12643846", 
+"^ot:bootstrapValues": 0.871
 }
 }, 
 "Tn12643821": {
@@ -1085,9 +1272,10 @@
 "@target": "Tn12643797"
 }, 
 "edge123252": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn12643821", 
-"@target": "Tn12643861"
+"@target": "Tn12643861", 
+"^ot:bootstrapValues": 0.747
 }
 }, 
 "Tn12643823": {
@@ -1104,9 +1292,10 @@
 }, 
 "Tn12643824": {
 "edge123192": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn12643824", 
-"@target": "Tn12643865"
+"@target": "Tn12643865", 
+"^ot:bootstrapValues": 0.444
 }, 
 "edge123342": {
 "@length": 0.60250685, 
@@ -1130,12 +1319,14 @@
 "edge123206": {
 "@length": 0.05847273, 
 "@source": "Tn12643828", 
-"@target": "Tn12643867"
+"@target": "Tn12643867", 
+"^ot:bootstrapValues": 0.31
 }, 
 "edge123224": {
 "@length": 0.01992904, 
 "@source": "Tn12643828", 
-"@target": "Tn12643767"
+"@target": "Tn12643767", 
+"^ot:bootstrapValues": 0.46
 }
 }, 
 "Tn12643829": {
@@ -1147,7 +1338,8 @@
 "edge123362": {
 "@length": 0.15367614, 
 "@source": "Tn12643829", 
-"@target": "Tn12643761"
+"@target": "Tn12643761", 
+"^ot:bootstrapValues": 0.605
 }
 }, 
 "Tn12643830": {
@@ -1171,31 +1363,36 @@
 "edge123386": {
 "@length": 0.15278817, 
 "@source": "Tn12643831", 
-"@target": "Tn12643812"
+"@target": "Tn12643812", 
+"^ot:bootstrapValues": 1
 }
 }, 
 "Tn12643833": {
 "edge123188": {
 "@length": 0.16342575, 
 "@source": "Tn12643833", 
-"@target": "Tn12643804"
+"@target": "Tn12643804", 
+"^ot:bootstrapValues": 0.504
 }, 
 "edge123358": {
 "@length": 0.04979781, 
 "@source": "Tn12643833", 
-"@target": "Tn12643829"
+"@target": "Tn12643829", 
+"^ot:bootstrapValues": 0.596
 }
 }, 
 "Tn12643835": {
 "edge123330": {
 "@length": 0.05435555, 
 "@source": "Tn12643835", 
-"@target": "Tn12643815"
+"@target": "Tn12643815", 
+"^ot:bootstrapValues": 1
 }, 
 "edge123336": {
 "@length": 0.05928218, 
 "@source": "Tn12643835", 
-"@target": "Tn12643868"
+"@target": "Tn12643868", 
+"^ot:bootstrapValues": 1
 }
 }, 
 "Tn12643837": {
@@ -1207,19 +1404,22 @@
 "edge123300": {
 "@length": 0.02130761, 
 "@source": "Tn12643837", 
-"@target": "Tn12643765"
+"@target": "Tn12643765", 
+"^ot:bootstrapValues": 0.641
 }
 }, 
 "Tn12643838": {
 "edge123312": {
 "@length": 0.21693465, 
 "@source": "Tn12643838", 
-"@target": "Tn12643763"
+"@target": "Tn12643763", 
+"^ot:bootstrapValues": 1
 }, 
 "edge123318": {
 "@length": 0.10908754, 
 "@source": "Tn12643838", 
-"@target": "Tn12643847"
+"@target": "Tn12643847", 
+"^ot:bootstrapValues": 1
 }
 }, 
 "Tn12643839": {
@@ -1231,7 +1431,8 @@
 "edge123348": {
 "@length": 0.28593381, 
 "@source": "Tn12643839", 
-"@target": "Tn12643857"
+"@target": "Tn12643857", 
+"^ot:bootstrapValues": 0.999
 }
 }, 
 "Tn12643841": {
@@ -1267,7 +1468,8 @@
 "edge123264": {
 "@length": 0.03444603, 
 "@source": "Tn12643846", 
-"@target": "Tn12643807"
+"@target": "Tn12643807", 
+"^ot:bootstrapValues": 0.586
 }
 }, 
 "Tn12643847": {
@@ -1284,14 +1486,16 @@
 }, 
 "Tn12643848": {
 "edge123200": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn12643848", 
-"@target": "Tn12643852"
+"@target": "Tn12643852", 
+"^ot:bootstrapValues": 0.148
 }, 
 "edge123270": {
 "@length": 0.01956748, 
 "@source": "Tn12643848", 
-"@target": "Tn12643784"
+"@target": "Tn12643784", 
+"^ot:bootstrapValues": 0.268
 }
 }, 
 "Tn12643850": {
@@ -1310,12 +1514,14 @@
 "edge123202": {
 "@length": 0.00569228, 
 "@source": "Tn12643852", 
-"@target": "Tn12643782"
+"@target": "Tn12643782", 
+"^ot:bootstrapValues": 0.105
 }, 
 "edge123248": {
 "@length": 0.20554055, 
 "@source": "Tn12643852", 
-"@target": "Tn12643821"
+"@target": "Tn12643821", 
+"^ot:bootstrapValues": 1
 }
 }, 
 "Tn12643857": {
@@ -1327,7 +1533,8 @@
 "edge123352": {
 "@length": 0.12832348, 
 "@source": "Tn12643857", 
-"@target": "Tn12643841"
+"@target": "Tn12643841", 
+"^ot:bootstrapValues": 0.992
 }
 }, 
 "Tn12643861": {
@@ -1339,7 +1546,8 @@
 "edge123256": {
 "@length": 0.04534518, 
 "@source": "Tn12643861", 
-"@target": "Tn12643820"
+"@target": "Tn12643820", 
+"^ot:bootstrapValues": 0.845
 }
 }, 
 "Tn12643862": {
@@ -1358,19 +1566,22 @@
 "edge123194": {
 "@length": 0.00936794, 
 "@source": "Tn12643865", 
-"@target": "Tn12643800"
+"@target": "Tn12643800", 
+"^ot:bootstrapValues": 0.426
 }, 
 "edge123308": {
 "@length": 0.24155131, 
 "@source": "Tn12643865", 
-"@target": "Tn12643775"
+"@target": "Tn12643775", 
+"^ot:bootstrapValues": 1
 }
 }, 
 "Tn12643867": {
 "edge123208": {
 "@length": 0.11753478, 
 "@source": "Tn12643867", 
-"@target": "Tn12643875"
+"@target": "Tn12643875", 
+"^ot:bootstrapValues": 0.971
 }, 
 "edge123222": {
 "@length": 0.32688762, 
@@ -1394,7 +1605,8 @@
 "edge123374": {
 "@length": 0.03434723, 
 "@source": "Tn12643870", 
-"@target": "Tn12643760"
+"@target": "Tn12643760", 
+"^ot:bootstrapValues": 1
 }, 
 "edge123380": {
 "@length": 0.26676848, 
@@ -1406,112 +1618,85 @@
 "edge123210": {
 "@length": 0.16778241, 
 "@source": "Tn12643875", 
-"@target": "Tn12643850"
+"@target": "Tn12643850", 
+"^ot:bootstrapValues": 1
 }, 
 "edge123216": {
 "@length": 0.06974391, 
 "@source": "Tn12643875", 
-"@target": "Tn12643826"
+"@target": "Tn12643826", 
+"^ot:bootstrapValues": 0.997
 }
 }, 
 "Tn12643876": {
 "edge123402": {
 "@length": 0.63791515, 
 "@source": "Tn12643876", 
-"@target": "Tn12643862"
+"@target": "Tn12643862", 
+"^ot:bootstrapValues": 1
 }, 
 "edge123408": {
 "@length": 0.14745377, 
 "@source": "Tn12643876", 
-"@target": "Tn12643787"
+"@target": "Tn12643787", 
+"^ot:bootstrapValues": 1
 }
 }
 }, 
 "nodeById": {
-"Tn12643760": {
-"@label": "1.0000"
-}, 
-"Tn12643761": {
-"@label": "0.6050"
-}, 
-"Tn12643762": {
-"@label": "0.2860"
-}, 
-"Tn12643763": {
-"@label": "1.0000"
-}, 
+"Tn12643760": {}, 
+"Tn12643761": {}, 
+"Tn12643762": {}, 
+"Tn12643763": {}, 
 "Tn12643764": {
-"@otu": "Tl1771948"
+"@otu": "Tl1771948", 
+"^ot:isTaxonExemplar": false
 }, 
-"Tn12643765": {
-"@label": "0.6410"
-}, 
+"Tn12643765": {}, 
 "Tn12643766": {
-"@otu": "Tl1771987"
+"@otu": "Tl1771987", 
+"^ot:isTaxonExemplar": false
 }, 
-"Tn12643767": {
-"@label": "0.4600"
-}, 
+"Tn12643767": {}, 
 "Tn12643768": {
 "@otu": "Tl1771982"
 }, 
 "Tn12643769": {
-"@otu": "Tl1771970"
+"@otu": "Tl1771970", 
+"^ot:isTaxonExemplar": false
 }, 
-"Tn12643770": {
-"@label": "0.9180"
-}, 
+"Tn12643770": {}, 
 "Tn12643771": {
 "@otu": "Tl1771950"
 }, 
 "Tn12643772": {
 "@otu": "Tl1771980"
 }, 
-"Tn12643773": {
-"@label": "0.6970"
-}, 
+"Tn12643773": {}, 
 "Tn12643774": {
 "@otu": "Tl1771931"
 }, 
-"Tn12643775": {
-"@label": "1.0000"
-}, 
-"Tn12643776": {
-"@label": "0.8160"
-}, 
+"Tn12643775": {}, 
+"Tn12643776": {}, 
 "Tn12643777": {
 "@otu": "Tl1771988"
 }, 
-"Tn12643778": {
-"@label": "0.8950"
-}, 
+"Tn12643778": {}, 
 "Tn12643779": {
 "@otu": "Tl1771971"
 }, 
-"Tn12643780": {
-"@label": "1.0000"
-}, 
-"Tn12643781": {
-"@label": "0.2070"
-}, 
-"Tn12643782": {
-"@label": "0.1050"
-}, 
-"Tn12643783": {
-"@label": "0.3600"
-}, 
-"Tn12643784": {
-"@label": "0.2680"
-}, 
+"Tn12643780": {}, 
+"Tn12643781": {}, 
+"Tn12643782": {}, 
+"Tn12643783": {}, 
+"Tn12643784": {}, 
 "Tn12643785": {
 "@otu": "Tl1771972"
 }, 
 "Tn12643786": {
 "@otu": "Tl1771952"
 }, 
-"Tn12643787": {
-"@label": "1.0000"
-}, 
+"Tn12643787": {}, 
 "Tn12643788": {
 "@otu": "Tl1771955"
 }, 
@@ -1522,13 +1707,15 @@
 "@otu": "Tl1771956"
 }, 
 "Tn12643791": {
-"@otu": "Tl1771981"
+"@otu": "Tl1771981", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12643792": {
 "@otu": "Tl1771975"
 }, 
 "Tn12643793": {
-"@otu": "Tl1771941"
+"@otu": "Tl1771941", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12643794": {
 "@otu": "Tl1771944"
@@ -1537,20 +1724,17 @@
 "@root": true
 }, 
 "Tn12643796": {
-"@otu": "Tl1771937"
+"@otu": "Tl1771937", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12643797": {
 "@otu": "Tl1771967"
 }, 
-"Tn12643798": {
-"@label": "0.9150"
-}, 
+"Tn12643798": {}, 
 "Tn12643799": {
 "@otu": "Tl1771945"
 }, 
-"Tn12643800": {
-"@label": "0.4260"
-}, 
+"Tn12643800": {}, 
 "Tn12643801": {
 "@otu": "Tl1771939"
 }, 
@@ -1558,127 +1742,82 @@
 "@otu": "Tl1771964"
 }, 
 "Tn12643803": {
-"@otu": "Tl1771954"
+"@otu": "Tl1771954", 
+"^ot:isTaxonExemplar": false
 }, 
-"Tn12643804": {
-"@label": "0.5040"
-}, 
+"Tn12643804": {}, 
 "Tn12643805": {
 "@otu": "Tl1771965"
 }, 
 "Tn12643806": {
 "@otu": "Tl1771957"
 }, 
-"Tn12643807": {
-"@label": "0.5860"
-}, 
-"Tn12643808": {
-"@label": "0.7610"
-}, 
-"Tn12643809": {
-"@label": "0.9950"
-}, 
+"Tn12643807": {}, 
+"Tn12643808": {}, 
+"Tn12643809": {}, 
 "Tn12643810": {
-"@otu": "Tl1771976"
+"@otu": "Tl1771976", 
+"^ot:isTaxonExemplar": false
 }, 
-"Tn12643811": {
-"@label": "0.0000"
-}, 
-"Tn12643812": {
-"@label": "1.0000"
-}, 
-"Tn12643813": {
-"@label": "0.4800"
-}, 
+"Tn12643811": {}, 
+"Tn12643812": {}, 
+"Tn12643813": {}, 
 "Tn12643814": {
-"@otu": "Tl1771969"
+"@otu": "Tl1771969", 
+"^ot:isTaxonExemplar": false
 }, 
-"Tn12643815": {
-"@label": "1.0000"
-}, 
+"Tn12643815": {}, 
 "Tn12643816": {
 "@otu": "Tl1771968"
 }, 
 "Tn12643817": {
 "@otu": "Tl1771949"
 }, 
-"Tn12643818": {
-"@label": "0.9990"
-}, 
+"Tn12643818": {}, 
 "Tn12643819": {
 "@otu": "Tl1771933"
 }, 
-"Tn12643820": {
-"@label": "0.8450"
-}, 
-"Tn12643821": {
-"@label": "1.0000"
-}, 
+"Tn12643820": {}, 
+"Tn12643821": {}, 
 "Tn12643822": {
 "@otu": "Tl1771977"
 }, 
-"Tn12643823": {
-"@label": "1.0000"
-}, 
-"Tn12643824": {
-"@label": "0.9770"
-}, 
+"Tn12643823": {}, 
+"Tn12643824": {}, 
 "Tn12643825": {
 "@otu": "Tl1771984"
 }, 
-"Tn12643826": {
-"@label": "0.9970"
-}, 
+"Tn12643826": {}, 
 "Tn12643827": {
 "@otu": "Tl1771963"
 }, 
-"Tn12643828": {
-"@label": "0.0980"
-}, 
-"Tn12643829": {
-"@label": "0.5960"
-}, 
-"Tn12643830": {
-"@label": "1.0000"
-}, 
-"Tn12643831": {
-"@label": "0.8660"
-}, 
+"Tn12643828": {}, 
+"Tn12643829": {}, 
+"Tn12643830": {}, 
+"Tn12643831": {}, 
 "Tn12643832": {
 "@otu": "Tl1771930"
 }, 
-"Tn12643833": {
-"@label": "0.7520"
-}, 
+"Tn12643833": {}, 
 "Tn12643834": {
 "@otu": "Tl1771947"
 }, 
-"Tn12643835": {
-"@label": "1.0000"
-}, 
+"Tn12643835": {}, 
 "Tn12643836": {
 "@otu": "Tl1771962"
 }, 
-"Tn12643837": {
-"@label": "0.9000"
-}, 
-"Tn12643838": {
-"@label": "0.7550"
-}, 
-"Tn12643839": {
-"@label": "0.8110"
-}, 
+"Tn12643837": {}, 
+"Tn12643838": {}, 
+"Tn12643839": {}, 
 "Tn12643840": {
-"@otu": "Tl1771940"
+"@otu": "Tl1771940", 
+"^ot:isTaxonExemplar": true
 }, 
-"Tn12643841": {
-"@label": "0.9920"
-}, 
-"Tn12643842": {
-"@label": "1.0000"
-}, 
+"Tn12643841": {}, 
+"Tn12643842": {}, 
 "Tn12643843": {
-"@otu": "Tl1771960"
+"@otu": "Tl1771960", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn12643844": {
 "@otu": "Tl1771932"
@@ -1686,27 +1825,18 @@
 "Tn12643845": {
 "@otu": "Tl1771938"
 }, 
-"Tn12643846": {
-"@label": "0.8710"
-}, 
-"Tn12643847": {
-"@label": "1.0000"
-}, 
-"Tn12643848": {
-"@label": "0.5130"
-}, 
+"Tn12643846": {}, 
+"Tn12643847": {}, 
+"Tn12643848": {}, 
 "Tn12643849": {
-"@otu": "Tl1771942"
+"@otu": "Tl1771942", 
+"^ot:isTaxonExemplar": true
 }, 
-"Tn12643850": {
-"@label": "1.0000"
-}, 
+"Tn12643850": {}, 
 "Tn12643851": {
 "@otu": "Tl1771951"
 }, 
-"Tn12643852": {
-"@label": "0.1480"
-}, 
+"Tn12643852": {}, 
 "Tn12643853": {
 "@otu": "Tl1771974"
 }, 
@@ -1719,9 +1849,7 @@
 "Tn12643856": {
 "@otu": "Tl1771985"
 }, 
-"Tn12643857": {
-"@label": "0.9990"
-}, 
+"Tn12643857": {}, 
 "Tn12643858": {
 "@otu": "Tl1771935"
 }, 
@@ -1729,43 +1857,33 @@
 "@otu": "Tl1771959"
 }, 
 "Tn12643860": {
-"@otu": "Tl1771953"
+"@otu": "Tl1771953", 
+"^ot:isTaxonExemplar": false
 }, 
-"Tn12643861": {
-"@label": "0.7470"
-}, 
-"Tn12643862": {
-"@label": "1.0000"
-}, 
+"Tn12643861": {}, 
+"Tn12643862": {}, 
 "Tn12643863": {
 "@otu": "Tl1771973"
 }, 
 "Tn12643864": {
 "@otu": "Tl1771983"
 }, 
-"Tn12643865": {
-"@label": "0.4440"
-}, 
+"Tn12643865": {}, 
 "Tn12643866": {
 "@otu": "Tl1771961"
 }, 
-"Tn12643867": {
-"@label": "0.3100"
-}, 
-"Tn12643868": {
-"@label": "1.0000"
-}, 
+"Tn12643867": {}, 
+"Tn12643868": {}, 
 "Tn12643869": {
 "@otu": "Tl1771934"
 }, 
-"Tn12643870": {
-"@label": "1.0000"
-}, 
+"Tn12643870": {}, 
 "Tn12643871": {
 "@otu": "Tl1771986"
 }, 
 "Tn12643872": {
-"@otu": "Tl1771978"
+"@otu": "Tl1771978", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12643873": {
 "@otu": "Tl1771943"
@@ -1773,14 +1891,11 @@
 "Tn12643874": {
 "@otu": "Tl1771989"
 }, 
-"Tn12643875": {
-"@label": "0.9710"
-}, 
-"Tn12643876": {
-"@label": "0.5330"
-}, 
+"Tn12643875": {}, 
+"Tn12643876": {}, 
 "Tn12643877": {
-"@otu": "Tl1771946"
+"@otu": "Tl1771946", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12643878": {
 "@otu": "Tl1771979"
