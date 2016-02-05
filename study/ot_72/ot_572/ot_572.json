@@ -60,22 +60,116 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2016-02-05T20:52:54.448Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:curatorName": "Dail Laughinghouse", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}, 
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": "$1"
+}, 
+"old": {
+"$": "^(\\S*\\s+\\S*).*"
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2016-02-05T20:52:54.448Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Dail Laughinghouse"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S15522"
 }, 
+"^ot:focalCladeOTTTaxonName": "", 
+"^ot:notIntendedForSynthesis": true, 
 "^ot:otusElementOrder": [
 "Tls37086"
 ], 
 "^ot:studyId": "ot_572", 
-"^ot:studyPublicationReference": "Bellec L., Clerissi C., Edern R., Foulon E., Simon N., Grimsley N., & Desdevises Y. 2014. Cophylogenetic interactions between marine viruses and eukaryotic picophytoplankton. BMC Evolutionary Biology, In press.", 
+"^ot:studyPublication": {
+"@href": "http://dx.doi.org/10.1186/1471-2148-14-59"
+}, 
+"^ot:studyPublicationReference": "Laure Bellec, Camille Clerissi, Roseline Edern, Elodie Foulon, Nathalie Simon, Nigel Grimsley, Yves Desdevises, 2014, 'Cophylogenetic interactions between marine viruses and eukaryotic picophytoplankton', BMC Evolutionary Biology, vol. 14, no. 1, p. 59", 
 "^ot:studyYear": 2014, 
+"^ot:tag": [], 
 "^ot:taxonLinkPrefixes": {
 "@ubio": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:", 
 "@uniprot": "http://purl.uniprot.org/taxonomy/"
@@ -99,7 +193,7 @@
 "^skos:historyNote": "Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlOTUWriter@6551e3d1 $Rev: 1040 $", 
 "otuById": {
 "Tl1471663": {
-"^ot:altLabel": "Ostreococcus tauri", 
+"^ot:altLabel": "Ostreococcus tauri RCC745", 
 "^ot:originalLabel": "Ostreococcus tauri Strain RCC745", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 20013, 
@@ -109,11 +203,14 @@
 }
 }, 
 "Tl1471664": {
-"^ot:originalLabel": "Ostreococcus tauri Isolate RCC1108"
+"^ot:originalLabel": "Ostreococcus tauri Isolate RCC1108", 
+"^ot:ottId": 772469, 
+"^ot:ottTaxonName": "Ostreococcus tauri"
 }, 
 "Tl1471665": {
-"^ot:altLabel": "Micromonas pusilla", 
 "^ot:originalLabel": "Micromonas pusilla Isolate M_RCC658M", 
+"^ot:ottId": 395942, 
+"^ot:ottTaxonName": "Micromonas pusilla", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 17700, 
 "@tb:identifier.taxonVariant": 41403, 
@@ -122,8 +219,9 @@
 }
 }, 
 "Tl1471666": {
-"^ot:altLabel": "Micromonas pusilla", 
 "^ot:originalLabel": "Micromonas pusilla Isolate M_RCC461", 
+"^ot:ottId": 395942, 
+"^ot:ottTaxonName": "Micromonas pusilla", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 17700, 
 "@tb:identifier.taxonVariant": 41403, 
@@ -132,8 +230,9 @@
 }
 }, 
 "Tl1471667": {
-"^ot:altLabel": "Micromonas pusilla", 
 "^ot:originalLabel": "Micromonas pusilla Isolate M_RCC451", 
+"^ot:ottId": 395942, 
+"^ot:ottTaxonName": "Micromonas pusilla", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 17700, 
 "@tb:identifier.taxonVariant": 41403, 
@@ -142,8 +241,9 @@
 }
 }, 
 "Tl1471668": {
-"^ot:altLabel": "Micromonas pusilla", 
 "^ot:originalLabel": "Micromonas pusilla Isolate M_RCC629", 
+"^ot:ottId": 395942, 
+"^ot:ottTaxonName": "Micromonas pusilla", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 17700, 
 "@tb:identifier.taxonVariant": 41403, 
@@ -152,8 +252,9 @@
 }
 }, 
 "Tl1471669": {
-"^ot:altLabel": "Micromonas pusilla", 
 "^ot:originalLabel": "Micromonas pusilla Isolate M_RCC828", 
+"^ot:ottId": 395942, 
+"^ot:ottTaxonName": "Micromonas pusilla", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 17700, 
 "@tb:identifier.taxonVariant": 41403, 
@@ -162,17 +263,24 @@
 }
 }, 
 "Tl1471670": {
-"^ot:originalLabel": "Ostreococcus sp. RCC344"
+"^ot:originalLabel": "Ostreococcus sp. RCC344", 
+"^ot:ottId": 111612, 
+"^ot:ottTaxonName": "Ostreococcus sp. RCC344"
 }, 
 "Tl1471671": {
-"^ot:originalLabel": "Ostreococcus sp. RCC1107"
+"^ot:originalLabel": "Ostreococcus sp. RCC1107", 
+"^ot:ottId": 772475, 
+"^ot:ottTaxonName": "Ostreococcus"
 }, 
 "Tl1471672": {
-"^ot:originalLabel": "Ostreococcus sp. RCC356"
+"^ot:originalLabel": "Ostreococcus sp. RCC356", 
+"^ot:ottId": 111610, 
+"^ot:ottTaxonName": "Ostreococcus sp. RCC356"
 }, 
 "Tl1471673": {
-"^ot:altLabel": "Micromonas pusilla", 
 "^ot:originalLabel": "Micromonas pusilla Isolate M_RCC465", 
+"^ot:ottId": 395942, 
+"^ot:ottTaxonName": "Micromonas pusilla", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 17700, 
 "@tb:identifier.taxonVariant": 41403, 
@@ -181,8 +289,9 @@
 }
 }, 
 "Tl1471674": {
-"^ot:altLabel": "Micromonas pusilla", 
 "^ot:originalLabel": "Micromonas pusilla Isolate M_RCC418", 
+"^ot:ottId": 395942, 
+"^ot:ottTaxonName": "Micromonas pusilla", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 17700, 
 "@tb:identifier.taxonVariant": 41403, 
@@ -191,11 +300,14 @@
 }
 }, 
 "Tl1471675": {
-"^ot:originalLabel": "Bathycoccus sp. RCC464"
+"^ot:originalLabel": "Bathycoccus sp. RCC464", 
+"^ot:ottId": 300520, 
+"^ot:ottTaxonName": "Bathycoccus"
 }, 
 "Tl1471676": {
-"^ot:altLabel": "Micromonas pusilla", 
 "^ot:originalLabel": "Micromonas pusilla CCMP1545", 
+"^ot:ottId": 819225, 
+"^ot:ottTaxonName": "Micromonas pusilla CCMP1545", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 17700, 
 "@tb:identifier.taxonVariant": 41403, 
@@ -204,8 +316,9 @@
 }
 }, 
 "Tl1471677": {
-"^ot:altLabel": "Micromonas pusilla", 
 "^ot:originalLabel": "Micromonas pusilla Isolate M_RCC1109", 
+"^ot:ottId": 395942, 
+"^ot:ottTaxonName": "Micromonas pusilla", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 17700, 
 "@tb:identifier.taxonVariant": 41403, 
@@ -214,11 +327,14 @@
 }
 }, 
 "Tl1471678": {
-"^ot:originalLabel": "Ostreococcus sp. RCC789"
+"^ot:originalLabel": "Ostreococcus sp. RCC789", 
+"^ot:ottId": 568000, 
+"^ot:ottTaxonName": "Ostreococcus sp. RCC789"
 }, 
 "Tl1471679": {
-"^ot:altLabel": "Micromonas pusilla", 
 "^ot:originalLabel": "Micromonas pusilla Isolate M_RCC373", 
+"^ot:ottId": 395942, 
+"^ot:ottTaxonName": "Micromonas pusilla", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 17700, 
 "@tb:identifier.taxonVariant": 41403, 
@@ -227,8 +343,9 @@
 }
 }, 
 "Tl1471680": {
-"^ot:altLabel": "Micromonas pusilla", 
 "^ot:originalLabel": "Micromonas pusilla Isolate M_RCC497", 
+"^ot:ottId": 395942, 
+"^ot:ottTaxonName": "Micromonas pusilla", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 17700, 
 "@tb:identifier.taxonVariant": 41403, 
@@ -237,8 +354,9 @@
 }
 }, 
 "Tl1471681": {
-"^ot:altLabel": "Micromonas pusilla", 
 "^ot:originalLabel": "Micromonas pusilla Isolate M_RCC829", 
+"^ot:ottId": 395942, 
+"^ot:ottTaxonName": "Micromonas pusilla", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 17700, 
 "@tb:identifier.taxonVariant": 41403, 
@@ -247,8 +365,9 @@
 }
 }, 
 "Tl1471682": {
-"^ot:altLabel": "Ostreococcus lucimarinus", 
 "^ot:originalLabel": "Ostreococcus lucimarinus Strain CCE9901", 
+"^ot:ottId": 851102, 
+"^ot:ottTaxonName": "Ostreococcus 'lucimarinus'", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 218718, 
 "@tb:identifier.taxonVariant": 285441, 
@@ -258,11 +377,14 @@
 "^skos:prefLabel": "Ostreococcus 'lucimarinus'"
 }, 
 "Tl1471683": {
-"^ot:originalLabel": "Bathycoccus sp. RCC1105"
+"^ot:originalLabel": "Bathycoccus sp. RCC1105", 
+"^ot:ottId": 300520, 
+"^ot:ottTaxonName": "Bathycoccus"
 }, 
 "Tl1471684": {
-"^ot:altLabel": "Micromonas pusilla", 
 "^ot:originalLabel": "Micromonas pusilla Isolate M_RCC114", 
+"^ot:ottId": 395942, 
+"^ot:ottTaxonName": "Micromonas pusilla", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 17700, 
 "@tb:identifier.taxonVariant": 41403, 
@@ -277,10 +399,11 @@
 "^ot:originalLabel": "Micromonas Virus Strain MicAV34"
 }, 
 "Tl1471687": {
-"^ot:originalLabel": "Ostreococcus lucimarinus Virus OlV360"
+"^ot:originalLabel": "Ostreococcus lucimarinus Virus OlV360", 
+"^ot:ottId": 851102, 
+"^ot:ottTaxonName": "Ostreococcus 'lucimarinus'"
 }, 
 "Tl1471688": {
-"^ot:altLabel": "Ostreococcus sp. RCC343", 
 "^ot:originalLabel": "Ostreococcus Virus OtV343", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 244761, 
@@ -326,7 +449,9 @@
 "^ot:originalLabel": "Micromonas Virus Strain MicAV28"
 }, 
 "Tl1471701": {
-"^ot:originalLabel": "Ostreococcus lucimarinus Virus OlV536"
+"^ot:originalLabel": "Ostreococcus lucimarinus Virus OlV536", 
+"^ot:ottId": 851102, 
+"^ot:ottTaxonName": "Ostreococcus 'lucimarinus'"
 }, 
 "Tl1471702": {
 "^ot:originalLabel": "Micromonas Virus Strain MicCV28"
@@ -362,10 +487,14 @@
 "^ot:originalLabel": "Micromonas Virus 1109V4"
 }, 
 "Tl1471713": {
-"^ot:originalLabel": "Ostreococcus lucimarinus Virus OlV349"
+"^ot:originalLabel": "Ostreococcus lucimarinus Virus OlV349", 
+"^ot:ottId": 851102, 
+"^ot:ottTaxonName": "Ostreococcus 'lucimarinus'"
 }, 
 "Tl1471714": {
-"^ot:originalLabel": "Ostreococcus lucimarinus Virus OlV158"
+"^ot:originalLabel": "Ostreococcus lucimarinus Virus OlV158", 
+"^ot:ottId": 851102, 
+"^ot:ottTaxonName": "Ostreococcus 'lucimarinus'"
 }, 
 "Tl1471715": {
 "^ot:originalLabel": "Micromonas Virus Strain MicAV30"
@@ -413,7 +542,9 @@
 "^ot:originalLabel": "Ostreococcus Virus OtV344"
 }, 
 "Tl1471730": {
-"^ot:originalLabel": "Ostreococcus lucimarinus Virus OlV462"
+"^ot:originalLabel": "Ostreococcus lucimarinus Virus OlV462", 
+"^ot:ottId": 851102, 
+"^ot:ottTaxonName": "Ostreococcus 'lucimarinus'"
 }, 
 "Tl1471731": {
 "^ot:originalLabel": "Micromonas Virus Strain MicAV39"
@@ -446,7 +577,18 @@
 "Tr74436": {
 "@label": "tree 1", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:undefined", 
+"^ot:branchLengthTimeUnit": "Myr", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "Tn11607850", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 22, 
 "^tb:quality.tree": "Unrated", 
@@ -760,7 +902,18 @@
 "Tr74437": {
 "@label": "tree 1+", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "Tn11607900", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 51, 
 "^tb:quality.tree": "Unrated", 
