@@ -47,22 +47,109 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2016-02-08T18:46:35.307Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:curatorName": "Dail Laughinghouse", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2016-02-08T18:46:35.307Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"Tr4432"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Dail Laughinghouse"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S1289"
 }, 
+"^ot:focalClade": 823382, 
+"^ot:focalCladeOTTTaxonName": "Halimeda", 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "Tls11816"
 ], 
 "^ot:studyId": "ot_582", 
-"^ot:studyPublicationReference": "Kooistra W., & Verbruggen H. 2004. Genetic patterns in the calcified tropical seaweeds Halimeda opuntia, H. distorta, H. hederacea and H. minima (Bryopsidales, Chlorophyta) provide insights in species boundaries and inter-oceanic dispersal. Journal of Phycology, 41(1).", 
+"^ot:studyPublication": {
+"@href": "http://dx.doi.org/10.1111/j.1529-8817.2005.04095.x"
+}, 
+"^ot:studyPublicationReference": "Wiebe H. C. F. Kooistra, Heroen Verbruggen, 2005, 'GENETIC PATTERNS IN THE CALCIFIED TROPICAL SEAWEEDS HALIMEDA OPUNTIA, H. DISTORTA, H. HEDERACEA, AND H. MINIMA (BRYOPSIDALES, CHLOROPHYTA) PROVIDE INSIGHTS IN SPECIES BOUNDARIES AND INTEROCEANIC DISPERSAL', Journal of Phycology, vol. 41, no. 1, pp. 177-187", 
 "^ot:studyYear": 2004, 
+"^ot:tag": [], 
 "^ot:taxonLinkPrefixes": {
 "@ubio": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:", 
 "@uniprot": "http://purl.uniprot.org/taxonomy/"
@@ -87,8 +174,9 @@
 "^skos:historyNote": "Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlOTUWriter@3bf960f1 $Rev: 1040 $", 
 "otuById": {
 "Tl66817": {
-"^ot:altLabel": "Halimeda minima", 
 "^ot:originalLabel": "Halimeda minima 99 089", 
+"^ot:ottId": 1077532, 
+"^ot:ottTaxonName": "Halimeda minima", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 12842, 
 "@tb:identifier.taxonVariant": 30375, 
@@ -97,8 +185,9 @@
 }
 }, 
 "Tl66818": {
-"^ot:altLabel": "Halimeda minima", 
 "^ot:originalLabel": "Halimeda minima 98 128A", 
+"^ot:ottId": 1077532, 
+"^ot:ottTaxonName": "Halimeda minima", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 12842, 
 "@tb:identifier.taxonVariant": 30375, 
@@ -107,8 +196,9 @@
 }
 }, 
 "Tl66819": {
-"^ot:altLabel": "Halimeda distorta", 
 "^ot:originalLabel": "Halimeda cf distorta HV275", 
+"^ot:ottId": 206716, 
+"^ot:ottTaxonName": "Halimeda distorta", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 12836, 
 "@tb:identifier.taxonVariant": 30359, 
@@ -117,8 +207,9 @@
 }
 }, 
 "Tl66820": {
-"^ot:altLabel": "Halimeda distorta", 
 "^ot:originalLabel": "Halimeda cf distorta 99 151", 
+"^ot:ottId": 206716, 
+"^ot:ottTaxonName": "Halimeda distorta", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 12836, 
 "@tb:identifier.taxonVariant": 30359, 
@@ -127,8 +218,9 @@
 }
 }, 
 "Tl66821": {
-"^ot:altLabel": "Halimeda opuntia", 
 "^ot:originalLabel": "Halimeda opuntia 98 106", 
+"^ot:ottId": 823384, 
+"^ot:ottTaxonName": "Halimeda opuntia", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 12844, 
 "@tb:identifier.taxonVariant": 30381, 
@@ -137,8 +229,9 @@
 }
 }, 
 "Tl66822": {
-"^ot:altLabel": "Halimeda gracilis", 
 "^ot:originalLabel": "Halimeda gracilis 97 076", 
+"^ot:ottId": 206711, 
+"^ot:ottTaxonName": "Halimeda gracilis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 12837, 
 "@tb:identifier.taxonVariant": 30361, 
@@ -147,8 +240,9 @@
 }
 }, 
 "Tl66823": {
-"^ot:altLabel": "Halimeda minima", 
 "^ot:originalLabel": "Halimeda minima 99 075", 
+"^ot:ottId": 1077532, 
+"^ot:ottTaxonName": "Halimeda minima", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 12842, 
 "@tb:identifier.taxonVariant": 30375, 
@@ -157,8 +251,9 @@
 }
 }, 
 "Tl66824": {
-"^ot:altLabel": "Halimeda opuntia", 
 "^ot:originalLabel": "Halimeda opuntia 99 047", 
+"^ot:ottId": 823384, 
+"^ot:ottTaxonName": "Halimeda opuntia", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 12844, 
 "@tb:identifier.taxonVariant": 30381, 
@@ -167,8 +262,9 @@
 }
 }, 
 "Tl66825": {
-"^ot:altLabel": "Halimeda opuntia", 
 "^ot:originalLabel": "Halimeda opuntia 98 192", 
+"^ot:ottId": 823384, 
+"^ot:ottTaxonName": "Halimeda opuntia", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 12844, 
 "@tb:identifier.taxonVariant": 30381, 
@@ -177,8 +273,9 @@
 }
 }, 
 "Tl66826": {
-"^ot:altLabel": "Halimeda distorta", 
 "^ot:originalLabel": "Halimeda cf distorta 98 111 and 98 121", 
+"^ot:ottId": 206716, 
+"^ot:ottTaxonName": "Halimeda distorta", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 12836, 
 "@tb:identifier.taxonVariant": 30359, 
@@ -187,8 +284,9 @@
 }
 }, 
 "Tl66827": {
-"^ot:altLabel": "Halimeda minima", 
 "^ot:originalLabel": "Halimeda minima WLS169 02", 
+"^ot:ottId": 1077532, 
+"^ot:ottTaxonName": "Halimeda minima", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 12842, 
 "@tb:identifier.taxonVariant": 30375, 
@@ -197,8 +295,9 @@
 }
 }, 
 "Tl66828": {
-"^ot:altLabel": "Halimeda hederacea", 
 "^ot:originalLabel": "Halimeda cf hederacea 97 059", 
+"^ot:ottId": 206710, 
+"^ot:ottTaxonName": "Halimeda hederacea", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 12838, 
 "@tb:identifier.taxonVariant": 30365, 
@@ -207,8 +306,9 @@
 }
 }, 
 "Tl66829": {
-"^ot:altLabel": "Halimeda distorta", 
 "^ot:originalLabel": "Halimeda cf distorta 99 013", 
+"^ot:ottId": 206716, 
+"^ot:ottTaxonName": "Halimeda distorta", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 12836, 
 "@tb:identifier.taxonVariant": 30359, 
@@ -217,8 +317,9 @@
 }
 }, 
 "Tl66830": {
-"^ot:altLabel": "Halimeda gracilis", 
 "^ot:originalLabel": "Halimeda gracilis 98 093 and 99 109", 
+"^ot:ottId": 206711, 
+"^ot:ottTaxonName": "Halimeda gracilis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 12837, 
 "@tb:identifier.taxonVariant": 30361, 
@@ -227,8 +328,9 @@
 }
 }, 
 "Tl66831": {
-"^ot:altLabel": "Halimeda distorta", 
 "^ot:originalLabel": "Halimeda cf distorta 99 007", 
+"^ot:ottId": 206716, 
+"^ot:ottTaxonName": "Halimeda distorta", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 12836, 
 "@tb:identifier.taxonVariant": 30359, 
@@ -237,8 +339,9 @@
 }
 }, 
 "Tl66832": {
-"^ot:altLabel": "Halimeda minima", 
 "^ot:originalLabel": "Halimeda minima 99 025", 
+"^ot:ottId": 1077532, 
+"^ot:ottTaxonName": "Halimeda minima", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 12842, 
 "@tb:identifier.taxonVariant": 30375, 
@@ -247,8 +350,9 @@
 }
 }, 
 "Tl66833": {
-"^ot:altLabel": "Halimeda distorta", 
 "^ot:originalLabel": "Halimeda distorta hederacea 98 135", 
+"^ot:ottId": 206716, 
+"^ot:ottTaxonName": "Halimeda distorta", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 12836, 
 "@tb:identifier.taxonVariant": 30359, 
@@ -257,8 +361,9 @@
 }
 }, 
 "Tl66834": {
-"^ot:altLabel": "Halimeda opuntia", 
 "^ot:originalLabel": "Halimeda opuntia 98 144", 
+"^ot:ottId": 823384, 
+"^ot:ottTaxonName": "Halimeda opuntia", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 12844, 
 "@tb:identifier.taxonVariant": 30381, 
@@ -267,8 +372,9 @@
 }
 }, 
 "Tl66835": {
-"^ot:altLabel": "Halimeda gracilis", 
 "^ot:originalLabel": "Halimeda gracilis 97 089", 
+"^ot:ottId": 206711, 
+"^ot:ottTaxonName": "Halimeda gracilis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 12837, 
 "@tb:identifier.taxonVariant": 30361, 
@@ -277,8 +383,9 @@
 }
 }, 
 "Tl66836": {
-"^ot:altLabel": "Halimeda distorta", 
 "^ot:originalLabel": "Halimeda distorta WLS060 02", 
+"^ot:ottId": 206716, 
+"^ot:ottTaxonName": "Halimeda distorta", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 12836, 
 "@tb:identifier.taxonVariant": 30359, 
@@ -287,8 +394,9 @@
 }
 }, 
 "Tl66837": {
-"^ot:altLabel": "Halimeda distorta", 
 "^ot:originalLabel": "Halimeda cf distorta 99 012", 
+"^ot:ottId": 206716, 
+"^ot:ottTaxonName": "Halimeda distorta", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 12836, 
 "@tb:identifier.taxonVariant": 30359, 
@@ -297,8 +405,9 @@
 }
 }, 
 "Tl66838": {
-"^ot:altLabel": "Halimeda hederacea", 
 "^ot:originalLabel": "Halimeda cf hederacea 98 143", 
+"^ot:ottId": 206710, 
+"^ot:ottTaxonName": "Halimeda hederacea", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 12838, 
 "@tb:identifier.taxonVariant": 30365, 
@@ -307,8 +416,9 @@
 }
 }, 
 "Tl66839": {
-"^ot:altLabel": "Halimeda distorta", 
 "^ot:originalLabel": "Halimeda cf distorta WLS422 02", 
+"^ot:ottId": 206716, 
+"^ot:ottTaxonName": "Halimeda distorta", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 12836, 
 "@tb:identifier.taxonVariant": 30359, 
@@ -317,8 +427,9 @@
 }
 }, 
 "Tl66840": {
-"^ot:altLabel": "Halimeda opuntia", 
 "^ot:originalLabel": "Halimeda opuntia 99 096", 
+"^ot:ottId": 823384, 
+"^ot:ottTaxonName": "Halimeda opuntia", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 12844, 
 "@tb:identifier.taxonVariant": 30381, 
@@ -327,8 +438,9 @@
 }
 }, 
 "Tl66841": {
-"^ot:altLabel": "Halimeda opuntia", 
 "^ot:originalLabel": "Halimeda opuntia 98 189", 
+"^ot:ottId": 823384, 
+"^ot:ottTaxonName": "Halimeda opuntia", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 12844, 
 "@tb:identifier.taxonVariant": 30381, 
@@ -337,8 +449,9 @@
 }
 }, 
 "Tl66842": {
-"^ot:altLabel": "Halimeda opuntia", 
 "^ot:originalLabel": "Halimeda opuntia 98 126", 
+"^ot:ottId": 823384, 
+"^ot:ottTaxonName": "Halimeda opuntia", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 12844, 
 "@tb:identifier.taxonVariant": 30381, 
@@ -347,8 +460,9 @@
 }
 }, 
 "Tl66843": {
-"^ot:altLabel": "Halimeda distorta", 
 "^ot:originalLabel": "Halimeda cf distorta 99 011", 
+"^ot:ottId": 206716, 
+"^ot:ottTaxonName": "Halimeda distorta", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 12836, 
 "@tb:identifier.taxonVariant": 30359, 
@@ -357,8 +471,9 @@
 }
 }, 
 "Tl66844": {
-"^ot:altLabel": "Ctenolepisma longicaudata", 
 "^ot:originalLabel": "Halimeda hederacea L0238135", 
+"^ot:ottId": 445471, 
+"^ot:ottTaxonName": "Ctenolepisma longicaudata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 7638, 
 "@tb:identifier.taxonVariant": 18418, 
@@ -367,8 +482,9 @@
 }
 }, 
 "Tl66845": {
-"^ot:altLabel": "Halimeda opuntia", 
 "^ot:originalLabel": "Halimeda opuntia 99 044", 
+"^ot:ottId": 823384, 
+"^ot:ottTaxonName": "Halimeda opuntia", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 12844, 
 "@tb:identifier.taxonVariant": 30381, 
@@ -377,8 +493,9 @@
 }
 }, 
 "Tl66846": {
-"^ot:altLabel": "Halimeda opuntia", 
 "^ot:originalLabel": "Halimeda opuntia WLS090 02", 
+"^ot:ottId": 823384, 
+"^ot:ottTaxonName": "Halimeda opuntia", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 12844, 
 "@tb:identifier.taxonVariant": 30381, 
@@ -387,8 +504,9 @@
 }
 }, 
 "Tl66847": {
-"^ot:altLabel": "Halimeda opuntia", 
 "^ot:originalLabel": "Halimeda opuntia 95 HON07", 
+"^ot:ottId": 823384, 
+"^ot:ottTaxonName": "Halimeda opuntia", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 12844, 
 "@tb:identifier.taxonVariant": 30381, 
@@ -397,8 +515,9 @@
 }
 }, 
 "Tl66848": {
-"^ot:altLabel": "Halimeda hederacea", 
 "^ot:originalLabel": "Halimeda cf hederacea 99 005", 
+"^ot:ottId": 206710, 
+"^ot:ottTaxonName": "Halimeda hederacea", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 12838, 
 "@tb:identifier.taxonVariant": 30365, 
@@ -407,8 +526,9 @@
 }
 }, 
 "Tl66849": {
-"^ot:altLabel": "Halimeda minima", 
 "^ot:originalLabel": "Halimeda minima 99 093", 
+"^ot:ottId": 1077532, 
+"^ot:ottTaxonName": "Halimeda minima", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 12842, 
 "@tb:identifier.taxonVariant": 30375, 
@@ -417,8 +537,9 @@
 }
 }, 
 "Tl66850": {
-"^ot:altLabel": "Halimeda opuntia", 
 "^ot:originalLabel": "Halimeda opuntia 98 119", 
+"^ot:ottId": 823384, 
+"^ot:ottTaxonName": "Halimeda opuntia", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 12844, 
 "@tb:identifier.taxonVariant": 30381, 
@@ -427,8 +548,9 @@
 }
 }, 
 "Tl66851": {
-"^ot:altLabel": "Halimeda gracilis", 
 "^ot:originalLabel": "Halimeda gracilis HEC11839", 
+"^ot:ottId": 206711, 
+"^ot:ottTaxonName": "Halimeda gracilis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 12837, 
 "@tb:identifier.taxonVariant": 30361, 
@@ -437,8 +559,9 @@
 }
 }, 
 "Tl66852": {
-"^ot:altLabel": "Halimeda opuntia", 
 "^ot:originalLabel": "Halimeda opuntia HV61", 
+"^ot:ottId": 823384, 
+"^ot:ottTaxonName": "Halimeda opuntia", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 12844, 
 "@tb:identifier.taxonVariant": 30381, 
@@ -447,8 +570,9 @@
 }
 }, 
 "Tl66853": {
-"^ot:altLabel": "Halimeda opuntia", 
 "^ot:originalLabel": "Halimeda opuntia 96 io002", 
+"^ot:ottId": 823384, 
+"^ot:ottTaxonName": "Halimeda opuntia", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 12844, 
 "@tb:identifier.taxonVariant": 30381, 
@@ -457,8 +581,9 @@
 }
 }, 
 "Tl66854": {
-"^ot:altLabel": "Halimeda distorta", 
 "^ot:originalLabel": "Halimeda cf distorta 99 147", 
+"^ot:ottId": 206716, 
+"^ot:ottTaxonName": "Halimeda distorta", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 12836, 
 "@tb:identifier.taxonVariant": 30359, 
@@ -467,8 +592,9 @@
 }
 }, 
 "Tl66855": {
-"^ot:altLabel": "Halimeda opuntia", 
 "^ot:originalLabel": "Halimeda opuntia 99 185", 
+"^ot:ottId": 823384, 
+"^ot:ottTaxonName": "Halimeda opuntia", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 12844, 
 "@tb:identifier.taxonVariant": 30381, 
@@ -477,8 +603,9 @@
 }
 }, 
 "Tl66856": {
-"^ot:altLabel": "Halimeda opuntia", 
 "^ot:originalLabel": "Halimeda opuntia 99 131", 
+"^ot:ottId": 823384, 
+"^ot:ottTaxonName": "Halimeda opuntia", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 12844, 
 "@tb:identifier.taxonVariant": 30381, 
@@ -487,8 +614,9 @@
 }
 }, 
 "Tl66857": {
-"^ot:altLabel": "Halimeda distorta", 
 "^ot:originalLabel": "Halimeda distorta hederacea 98 142", 
+"^ot:ottId": 206716, 
+"^ot:ottTaxonName": "Halimeda distorta", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 12836, 
 "@tb:identifier.taxonVariant": 30359, 
@@ -497,8 +625,9 @@
 }
 }, 
 "Tl66858": {
-"^ot:altLabel": "Halimeda opuntia", 
 "^ot:originalLabel": "Halimeda opuntia 98 096", 
+"^ot:ottId": 823384, 
+"^ot:ottTaxonName": "Halimeda opuntia", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 12844, 
 "@tb:identifier.taxonVariant": 30381, 
@@ -507,8 +636,9 @@
 }
 }, 
 "Tl66859": {
-"^ot:altLabel": "Halimeda opuntia", 
 "^ot:originalLabel": "Halimeda opuntia 99 017", 
+"^ot:ottId": 823384, 
+"^ot:ottTaxonName": "Halimeda opuntia", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 12844, 
 "@tb:identifier.taxonVariant": 30381, 
@@ -517,8 +647,9 @@
 }
 }, 
 "Tl66860": {
-"^ot:altLabel": "Halimeda opuntia", 
 "^ot:originalLabel": "Halimeda opuntia HV450", 
+"^ot:ottId": 823384, 
+"^ot:ottTaxonName": "Halimeda opuntia", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 12844, 
 "@tb:identifier.taxonVariant": 30381, 
@@ -527,8 +658,9 @@
 }
 }, 
 "Tl66861": {
-"^ot:altLabel": "Halimeda opuntia", 
 "^ot:originalLabel": "Halimeda opuntia 95 GUAM1", 
+"^ot:ottId": 823384, 
+"^ot:ottTaxonName": "Halimeda opuntia", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 12844, 
 "@tb:identifier.taxonVariant": 30381, 
@@ -537,8 +669,9 @@
 }
 }, 
 "Tl66862": {
-"^ot:altLabel": "Halimeda distorta", 
 "^ot:originalLabel": "Halimeda cf distorta 98 152", 
+"^ot:ottId": 206716, 
+"^ot:ottTaxonName": "Halimeda distorta", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 12836, 
 "@tb:identifier.taxonVariant": 30359, 
@@ -547,8 +680,9 @@
 }
 }, 
 "Tl66863": {
-"^ot:altLabel": "Halimeda minima", 
 "^ot:originalLabel": "Halimeda minima WLS193 02", 
+"^ot:ottId": 1077532, 
+"^ot:ottTaxonName": "Halimeda minima", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 12842, 
 "@tb:identifier.taxonVariant": 30375, 
@@ -557,8 +691,9 @@
 }
 }, 
 "Tl66864": {
-"^ot:altLabel": "Halimeda hederacea", 
 "^ot:originalLabel": "Halimeda hederacea 99 045", 
+"^ot:ottId": 206710, 
+"^ot:ottTaxonName": "Halimeda hederacea", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 12838, 
 "@tb:identifier.taxonVariant": 30365, 
@@ -567,8 +702,9 @@
 }
 }, 
 "Tl66865": {
-"^ot:altLabel": "Halimeda minima", 
 "^ot:originalLabel": "Halimeda minima 99 026", 
+"^ot:ottId": 1077532, 
+"^ot:ottTaxonName": "Halimeda minima", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 12842, 
 "@tb:identifier.taxonVariant": 30375, 
@@ -577,8 +713,9 @@
 }
 }, 
 "Tl66866": {
-"^ot:altLabel": "Halimeda opuntia", 
 "^ot:originalLabel": "Halimeda opuntia 95 SA2", 
+"^ot:ottId": 823384, 
+"^ot:ottTaxonName": "Halimeda opuntia", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 12844, 
 "@tb:identifier.taxonVariant": 30381, 
@@ -587,8 +724,9 @@
 }
 }, 
 "Tl66867": {
-"^ot:altLabel": "Halimeda minima", 
 "^ot:originalLabel": "Halimeda minima 99 098", 
+"^ot:ottId": 1077532, 
+"^ot:ottTaxonName": "Halimeda minima", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 12842, 
 "@tb:identifier.taxonVariant": 30375, 
@@ -611,7 +749,18 @@
 "Tr4432": {
 "@label": "Fig. 3", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:undefined", 
+"^ot:branchLengthTimeUnit": "Myr", 
+"^ot:curatedType": "Maximum likelihood ", 
+"^ot:inGroupClade": "Tn307203", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "Tn307203", 
+"^ot:specifiedRoot": "Tn307203", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 51, 
 "^tb:quality.tree": "Unrated", 
@@ -1072,171 +1221,214 @@
 }, 
 "nodeById": {
 "Tn307169": {
-"@otu": "Tl66825"
+"@otu": "Tl66825", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn307170": {
-"@otu": "Tl66855"
+"@otu": "Tl66855", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn307171": {}, 
 "Tn307172": {}, 
 "Tn307173": {
-"@otu": "Tl66850"
+"@otu": "Tl66850", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn307174": {
-"@otu": "Tl66824"
+"@otu": "Tl66824", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn307175": {}, 
 "Tn307176": {
-"@otu": "Tl66837"
+"@otu": "Tl66837", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn307177": {}, 
 "Tn307178": {}, 
 "Tn307179": {
-"@otu": "Tl66860"
+"@otu": "Tl66860", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn307180": {
-"@otu": "Tl66866"
+"@otu": "Tl66866", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn307181": {}, 
 "Tn307182": {}, 
 "Tn307183": {}, 
 "Tn307184": {
-"@otu": "Tl66836"
+"@otu": "Tl66836", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn307185": {}, 
 "Tn307186": {}, 
 "Tn307187": {}, 
 "Tn307188": {
-"@otu": "Tl66834"
+"@otu": "Tl66834", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn307189": {}, 
 "Tn307190": {
-"@otu": "Tl66853"
+"@otu": "Tl66853", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn307191": {}, 
 "Tn307192": {}, 
 "Tn307193": {
-"@otu": "Tl66840"
+"@otu": "Tl66840", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn307194": {
-"@otu": "Tl66864"
+"@otu": "Tl66864", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn307195": {}, 
 "Tn307196": {
-"@otu": "Tl66861"
+"@otu": "Tl66861", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn307197": {
-"@otu": "Tl66822"
+"@otu": "Tl66822", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn307198": {}, 
 "Tn307199": {
-"@otu": "Tl66829"
+"@otu": "Tl66829", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn307200": {
-"@otu": "Tl66817"
+"@otu": "Tl66817", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn307201": {}, 
 "Tn307202": {
-"@otu": "Tl66827"
+"@otu": "Tl66827", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn307203": {
 "@root": true
 }, 
 "Tn307204": {
-"@otu": "Tl66826"
+"@otu": "Tl66826", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn307205": {
-"@otu": "Tl66859"
+"@otu": "Tl66859", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn307206": {
-"@otu": "Tl66820"
+"@otu": "Tl66820", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn307207": {}, 
 "Tn307208": {
-"@otu": "Tl66848"
+"@otu": "Tl66848", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn307209": {}, 
 "Tn307210": {}, 
 "Tn307211": {
-"@otu": "Tl66830"
+"@otu": "Tl66830", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn307212": {
-"@otu": "Tl66823"
+"@otu": "Tl66823", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn307213": {
-"@otu": "Tl66858"
+"@otu": "Tl66858", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn307214": {}, 
 "Tn307215": {
-"@otu": "Tl66842"
+"@otu": "Tl66842", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn307216": {
-"@otu": "Tl66821"
+"@otu": "Tl66821", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn307217": {
-"@otu": "Tl66862"
+"@otu": "Tl66862", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn307218": {}, 
 "Tn307219": {}, 
 "Tn307220": {
-"@otu": "Tl66849"
+"@otu": "Tl66849", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn307221": {
-"@otu": "Tl66828"
+"@otu": "Tl66828", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn307222": {}, 
 "Tn307223": {
-"@otu": "Tl66863"
+"@otu": "Tl66863", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn307224": {
-"@otu": "Tl66852"
+"@otu": "Tl66852", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn307225": {
-"@otu": "Tl66857"
+"@otu": "Tl66857", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn307226": {
-"@otu": "Tl66835"
+"@otu": "Tl66835", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn307227": {
-"@otu": "Tl66845"
+"@otu": "Tl66845", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn307228": {}, 
 "Tn307229": {}, 
 "Tn307230": {}, 
 "Tn307231": {
-"@otu": "Tl66867"
+"@otu": "Tl66867", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn307232": {}, 
 "Tn307233": {}, 
 "Tn307234": {
-"@otu": "Tl66846"
+"@otu": "Tl66846", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn307235": {
-"@otu": "Tl66843"
+"@otu": "Tl66843", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn307236": {
-"@otu": "Tl66865"
+"@otu": "Tl66865", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn307237": {}, 
 "Tn307238": {
-"@otu": "Tl66856"
+"@otu": "Tl66856", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn307239": {}, 
 "Tn307240": {
-"@otu": "Tl66854"
+"@otu": "Tl66854", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn307241": {}, 
 "Tn307242": {
-"@otu": "Tl66833"
+"@otu": "Tl66833", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn307243": {
 "@otu": "Tl66844"
 }, 
 "Tn307244": {
-"@otu": "Tl66839"
+"@otu": "Tl66839", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn307245": {
-"@otu": "Tl66832"
+"@otu": "Tl66832", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn307246": {}, 
 "Tn307247": {}, 
@@ -1246,27 +1438,34 @@
 "Tn307251": {}, 
 "Tn307252": {}, 
 "Tn307253": {
-"@otu": "Tl66851"
+"@otu": "Tl66851", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn307254": {
-"@otu": "Tl66838"
+"@otu": "Tl66838", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn307255": {
-"@otu": "Tl66831"
+"@otu": "Tl66831", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn307256": {}, 
 "Tn307257": {
-"@otu": "Tl66847"
+"@otu": "Tl66847", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn307258": {
-"@otu": "Tl66841"
+"@otu": "Tl66841", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn307259": {
-"@otu": "Tl66819"
+"@otu": "Tl66819", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn307260": {}, 
 "Tn307261": {
-"@otu": "Tl66818"
+"@otu": "Tl66818", 
+"^ot:isTaxonExemplar": false
 }
 }
 }
