@@ -60,22 +60,108 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2016-02-09T16:00:26.066Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "Annelids"
 }, 
-"^ot:curatorName": "Dail Laughinghouse", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2016-02-09T16:00:26.066Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"Tr67538"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Dail Laughinghouse"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S14056"
 }, 
+"^ot:focalCladeOTTTaxonName": "", 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "Tls33620"
 ], 
 "^ot:studyId": "ot_584", 
-"^ot:studyPublicationReference": "Zanol J., Halanych K., & Fauchald K. 2013. Reconciling taxonomy and phylogeny in the bristleworm family Eunicidae (polychaete, Annelida). Zoologica Scripta, .", 
+"^ot:studyPublication": {
+"@href": "http://dx.doi.org/10.1111/zsc.12034"
+}, 
+"^ot:studyPublicationReference": "Joana Zanol, Kenneth M. Halanych, Kristian Fauchald, 2013, 'Reconciling taxonomy and phylogeny in the bristleworm family Eunicidae (polychaete, Annelida)', Zoologica Scripta, vol. 43, no. 1, pp. 79-100", 
 "^ot:studyYear": 2013, 
+"^ot:tag": [], 
 "^ot:taxonLinkPrefixes": {
 "@ubio": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:", 
 "@uniprot": "http://purl.uniprot.org/taxonomy/"
@@ -98,16 +184,22 @@
 "^skos:historyNote": "Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlOTUWriter@14e0fc59 $Rev: 1040 $", 
 "otuById": {
 "Tl1261873": {
-"^ot:originalLabel": "Nicidion mikeli"
+"^ot:originalLabel": "Nicidion mikeli", 
+"^ot:ottId": 1070832, 
+"^ot:ottTaxonName": "Eunice mikeli"
 }, 
 "Tl1261874": {
-"^ot:originalLabel": "Leodice lucei"
+"^ot:originalLabel": "Leodice lucei", 
+"^ot:ottId": 934487, 
+"^ot:ottTaxonName": "Eunice lucei"
 }, 
 "Tl1261875": {
 "^ot:originalLabel": "Lysidice sp2"
 }, 
 "Tl1261876": {
 "^ot:originalLabel": "Palola siciliensis", 
+"^ot:ottId": 4978592, 
+"^ot:ottTaxonName": "Palola siciliensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 614738, 
 "@tb:identifier.taxonVariant": 822195, 
@@ -116,6 +208,8 @@
 }, 
 "Tl1261877": {
 "^ot:originalLabel": "Diopatra ornata", 
+"^ot:ottId": 4979828, 
+"^ot:ottTaxonName": "Diopatra ornata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 614739, 
 "@tb:identifier.taxonVariant": 822196, 
@@ -123,13 +217,17 @@
 }
 }, 
 "Tl1261878": {
-"^ot:originalLabel": "Diopatra dentata"
+"^ot:originalLabel": "Diopatra dentata", 
+"^ot:ottId": 773145, 
+"^ot:ottTaxonName": "Diopatra dentata"
 }, 
 "Tl1261879": {
 "^ot:originalLabel": "Lumbrineris latreille"
 }, 
 "Tl1261880": {
 "^ot:originalLabel": "Oenone fulgida", 
+"^ot:ottId": 140960, 
+"^ot:ottTaxonName": "Oenone fulgida", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 19434, 
 "@tb:identifier.taxonVariant": 45202, 
@@ -138,19 +236,28 @@
 }
 }, 
 "Tl1261881": {
-"^ot:originalLabel": "Nicidion insularis"
+"^ot:originalLabel": "Nicidion insularis", 
+"^ot:ottId": 4978555, 
+"^ot:ottTaxonName": "Nicidion insularis"
 }, 
 "Tl1261882": {
+"^ot:altLabel": "Eunice violacemaculata", 
 "^ot:originalLabel": "Eunice cf violacemaculata"
 }, 
 "Tl1261883": {
-"^ot:originalLabel": "Nicidion angeli"
+"^ot:originalLabel": "Nicidion angeli", 
+"^ot:ottId": 494516, 
+"^ot:ottTaxonName": "Marphysa angeli"
 }, 
 "Tl1261884": {
-"^ot:originalLabel": "Leodice rubra"
+"^ot:originalLabel": "Leodice rubra", 
+"^ot:ottId": 494520, 
+"^ot:ottTaxonName": "Eunice rubra"
 }, 
 "Tl1261885": {
 "^ot:originalLabel": "Paramphinome jeffreysii", 
+"^ot:ottId": 974915, 
+"^ot:ottTaxonName": "Paramphinome jeffreysii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 20446, 
 "@tb:identifier.taxonVariant": 47572, 
@@ -160,6 +267,8 @@
 }, 
 "Tl1261886": {
 "^ot:originalLabel": "Marphysa regalis", 
+"^ot:ottId": 1020329, 
+"^ot:ottTaxonName": "Marphysa regalis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 614742, 
 "@tb:identifier.taxonVariant": 822199, 
@@ -167,13 +276,19 @@
 }
 }, 
 "Tl1261887": {
-"^ot:originalLabel": "Leodice antennata"
+"^ot:originalLabel": "Leodice antennata", 
+"^ot:ottId": 687270, 
+"^ot:ottTaxonName": "Eunice antennata"
 }, 
 "Tl1261888": {
-"^ot:originalLabel": "Nicidion amoureuxi"
+"^ot:originalLabel": "Nicidion amoureuxi", 
+"^ot:ottId": 773149, 
+"^ot:ottTaxonName": "Eunice amoureuxi"
 }, 
 "Tl1261889": {
 "^ot:originalLabel": "Euniphysa aculeata", 
+"^ot:ottId": 4978722, 
+"^ot:ottTaxonName": "Euniphysa aculeata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 614763, 
 "@tb:identifier.taxonVariant": 822220, 
@@ -181,10 +296,14 @@
 }
 }, 
 "Tl1261890": {
-"^ot:originalLabel": "Leodice americana"
+"^ot:originalLabel": "Leodice americana", 
+"^ot:ottId": 773147, 
+"^ot:ottTaxonName": "Eunice americana"
 }, 
 "Tl1261891": {
 "^ot:originalLabel": "Marphysa sanguinea", 
+"^ot:ottId": 42379, 
+"^ot:ottTaxonName": "Marphysa sanguinea", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 16952, 
 "@tb:identifier.taxonVariant": 39707, 
@@ -196,10 +315,14 @@
 "^ot:originalLabel": "Palola sp A7Pohnpei142"
 }, 
 "Tl1261893": {
-"^ot:originalLabel": "Lysidice unicornisB"
+"^ot:originalLabel": "Lysidice unicornisB", 
+"^ot:ottId": 438821, 
+"^ot:ottTaxonName": "Nematonereis unicornis"
 }, 
 "Tl1261894": {
 "^ot:originalLabel": "Hipponoe gaudichaudi", 
+"^ot:ottId": 631823, 
+"^ot:ottTaxonName": "Hipponoe gaudichaudi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 13536, 
 "@tb:identifier.taxonVariant": 31939, 
@@ -214,10 +337,14 @@
 "^ot:originalLabel": "Palola sp B1"
 }, 
 "Tl1261897": {
-"^ot:originalLabel": "Leodice valens"
+"^ot:originalLabel": "Leodice valens", 
+"^ot:ottId": 494522, 
+"^ot:ottTaxonName": "Eunice valens"
 }, 
 "Tl1261898": {
 "^ot:originalLabel": "Lumbrineris inflata", 
+"^ot:ottId": 736740, 
+"^ot:ottTaxonName": "Lumbrineris inflata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 16445, 
 "@tb:identifier.taxonVariant": 38556, 
@@ -229,10 +356,14 @@
 "^ot:originalLabel": "Palola sp A9Kosrae161"
 }, 
 "Tl1261900": {
-"^ot:originalLabel": "Leodice antillensis"
+"^ot:originalLabel": "Leodice antillensis", 
+"^ot:ottId": 5705619, 
+"^ot:ottTaxonName": "Leodice antillensis"
 }, 
 "Tl1261901": {
 "^ot:originalLabel": "Onuphis iridescens", 
+"^ot:ottId": 1020333, 
+"^ot:ottTaxonName": "Onuphis iridescens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 602193, 
 "@tb:identifier.taxonVariant": 803056, 
@@ -241,6 +372,8 @@
 }, 
 "Tl1261902": {
 "^ot:originalLabel": "Onuphis elegans", 
+"^ot:ottId": 140961, 
+"^ot:ottTaxonName": "Onuphis elegans", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 19609, 
 "@tb:identifier.taxonVariant": 45654, 
@@ -249,13 +382,19 @@
 }
 }, 
 "Tl1261903": {
-"^ot:originalLabel": "Leodice miurai"
+"^ot:originalLabel": "Leodice miurai", 
+"^ot:ottId": 1070834, 
+"^ot:ottTaxonName": "Eunice miurai"
 }, 
 "Tl1261904": {
-"^ot:originalLabel": "Leodice gracilicirrata"
+"^ot:originalLabel": "Leodice gracilicirrata", 
+"^ot:ottId": 4978504, 
+"^ot:ottTaxonName": "Eunice gracilicirrata"
 }, 
 "Tl1261905": {
 "^ot:originalLabel": "Marphysa brevitentaculata", 
+"^ot:ottId": 1020323, 
+"^ot:ottTaxonName": "Marphysa brevitentaculata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 614747, 
 "@tb:identifier.taxonVariant": 822204, 
@@ -266,13 +405,19 @@
 "^ot:originalLabel": "Palola sp A3"
 }, 
 "Tl1261907": {
-"^ot:originalLabel": "Nicidion cariboea"
+"^ot:originalLabel": "Nicidion cariboea", 
+"^ot:ottId": 687273, 
+"^ot:ottTaxonName": "Eunice cariboea"
 }, 
 "Tl1261908": {
-"^ot:originalLabel": "Eunice fucata"
+"^ot:originalLabel": "Eunice fucata", 
+"^ot:ottId": 904521, 
+"^ot:ottTaxonName": "Eunice fucata"
 }, 
 "Tl1261909": {
 "^ot:originalLabel": "Arabella semimaculata", 
+"^ot:ottId": 392626, 
+"^ot:ottTaxonName": "Arabella semimaculata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 2128, 
 "@tb:identifier.taxonVariant": 5073, 
@@ -282,6 +427,8 @@
 }, 
 "Tl1261910": {
 "^ot:originalLabel": "Marphysa disjuncta", 
+"^ot:ottId": 1020325, 
+"^ot:ottTaxonName": "Marphysa disjuncta", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 614757, 
 "@tb:identifier.taxonVariant": 822214, 
@@ -290,6 +437,8 @@
 }, 
 "Tl1261911": {
 "^ot:originalLabel": "Nothria conchylega", 
+"^ot:ottId": 1025745, 
+"^ot:ottTaxonName": "Nothria conchylega", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 19198, 
 "@tb:identifier.taxonVariant": 44654, 
@@ -299,6 +448,8 @@
 }, 
 "Tl1261912": {
 "^ot:originalLabel": "Eunice aphroditois", 
+"^ot:ottId": 4978537, 
+"^ot:ottTaxonName": "Eunice aphroditois", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 614764, 
 "@tb:identifier.taxonVariant": 822221, 
@@ -307,6 +458,8 @@
 }, 
 "Tl1261913": {
 "^ot:originalLabel": "Eunice norvegica", 
+"^ot:ottId": 494524, 
+"^ot:ottTaxonName": "Eunice norvegica", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 614736, 
 "@tb:identifier.taxonVariant": 822193, 
@@ -314,13 +467,19 @@
 }
 }, 
 "Tl1261914": {
-"^ot:originalLabel": "Leodice harassii"
+"^ot:originalLabel": "Leodice harassii", 
+"^ot:ottId": 433143, 
+"^ot:ottTaxonName": "Eunice harassii"
 }, 
 "Tl1261915": {
-"^ot:originalLabel": "Nicidion samoae"
+"^ot:originalLabel": "Nicidion samoae", 
+"^ot:ottId": 5705611, 
+"^ot:ottTaxonName": "Eunice samoae"
 }, 
 "Tl1261916": {
 "^ot:originalLabel": "Onuphis eremita", 
+"^ot:ottId": 4979708, 
+"^ot:ottTaxonName": "Onuphis eremita", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 614741, 
 "@tb:identifier.taxonVariant": 822198, 
@@ -329,6 +488,8 @@
 }, 
 "Tl1261917": {
 "^ot:originalLabel": "Palola viridis", 
+"^ot:ottId": 1020335, 
+"^ot:ottTaxonName": "Palola viridis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 614758, 
 "@tb:identifier.taxonVariant": 822215, 
@@ -336,16 +497,22 @@
 }
 }, 
 "Tl1261918": {
-"^ot:originalLabel": "Lysidice unicornis"
+"^ot:originalLabel": "Lysidice unicornis", 
+"^ot:ottId": 438821, 
+"^ot:ottTaxonName": "Nematonereis unicornis"
 }, 
 "Tl1261919": {
 "^ot:originalLabel": "Marphysa novahollandiae"
 }, 
 "Tl1261920": {
-"^ot:originalLabel": "Eunice sp"
+"^ot:originalLabel": "Eunice sp", 
+"^ot:ottId": 162291, 
+"^ot:ottTaxonName": "Eunice"
 }, 
 "Tl1261921": {
 "^ot:originalLabel": "Lysidice collaris", 
+"^ot:ottId": 841195, 
+"^ot:ottTaxonName": "Lysidice collaris", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 332803, 
 "@tb:identifier.taxonVariant": 372515, 
@@ -355,6 +522,8 @@
 }, 
 "Tl1261922": {
 "^ot:originalLabel": "Dorvillea erucaeformis", 
+"^ot:ottId": 40426, 
+"^ot:ottTaxonName": "Dorvillea erucaeformis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 9504, 
 "@tb:identifier.taxonVariant": 22686, 
@@ -364,6 +533,8 @@
 }, 
 "Tl1261923": {
 "^ot:originalLabel": "Eunice filamentosa", 
+"^ot:ottId": 4978534, 
+"^ot:ottTaxonName": "Eunice filamentosa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 614759, 
 "@tb:identifier.taxonVariant": 822216, 
@@ -372,6 +543,8 @@
 }, 
 "Tl1261924": {
 "^ot:originalLabel": "Marphysa bellii", 
+"^ot:ottId": 438824, 
+"^ot:ottTaxonName": "Marphysa bellii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 16951, 
 "@tb:identifier.taxonVariant": 39706, 
@@ -384,6 +557,8 @@
 }, 
 "Tl1261926": {
 "^ot:originalLabel": "Glycera dibranchiata", 
+"^ot:ottId": 305734, 
+"^ot:ottTaxonName": "Glycera dibranchiata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 12294, 
 "@tb:identifier.taxonVariant": 29194, 
@@ -392,13 +567,19 @@
 }
 }, 
 "Tl1261927": {
-"^ot:originalLabel": "Leodice antarctica"
+"^ot:originalLabel": "Leodice antarctica", 
+"^ot:ottId": 773151, 
+"^ot:ottTaxonName": "Eunice antarctica"
 }, 
 "Tl1261928": {
-"^ot:originalLabel": "Hyalinoecia sp"
+"^ot:originalLabel": "Hyalinoecia sp", 
+"^ot:ottId": 1025752, 
+"^ot:ottTaxonName": "Hyalinoecia"
 }, 
 "Tl1261929": {
-"^ot:originalLabel": "Nicidion cincta"
+"^ot:originalLabel": "Nicidion cincta", 
+"^ot:ottId": 4978420, 
+"^ot:ottTaxonName": "Nicidion cincta"
 }, 
 "Tl1261930": {
 "^ot:originalLabel": "Palola sp B5"
@@ -408,6 +589,8 @@
 }, 
 "Tl1261932": {
 "^ot:originalLabel": "Eunice impexa", 
+"^ot:ottId": 934499, 
+"^ot:ottTaxonName": "Eunice impexa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 614756, 
 "@tb:identifier.taxonVariant": 822213, 
@@ -415,25 +598,37 @@
 }
 }, 
 "Tl1261933": {
-"^ot:originalLabel": "Marphysa californica"
+"^ot:originalLabel": "Marphysa californica", 
+"^ot:ottId": 476400, 
+"^ot:ottTaxonName": "Marphysa californica"
 }, 
 "Tl1261934": {
 "^ot:originalLabel": "Nidicion notata"
 }, 
 "Tl1261935": {
-"^ot:originalLabel": "Aciculomarphysa comes"
+"^ot:originalLabel": "Aciculomarphysa comes", 
+"^ot:ottId": 4978745, 
+"^ot:ottTaxonName": "Aciculomarphysa comes"
 }, 
 "Tl1261936": {
-"^ot:originalLabel": "Leodice limosa"
+"^ot:originalLabel": "Leodice limosa", 
+"^ot:ottId": 4978366, 
+"^ot:ottTaxonName": "Leodice limosa"
 }, 
 "Tl1261937": {
-"^ot:originalLabel": "Leodice thomasiana"
+"^ot:originalLabel": "Leodice thomasiana", 
+"^ot:ottId": 494518, 
+"^ot:ottTaxonName": "Eunice thomasiana"
 }, 
 "Tl1261938": {
-"^ot:originalLabel": "Marphysa viridis"
+"^ot:originalLabel": "Marphysa viridis", 
+"^ot:ottId": 476398, 
+"^ot:ottTaxonName": "Marphysa viridis"
 }, 
 "Tl1261939": {
 "^ot:originalLabel": "Eunice roussaei", 
+"^ot:ottId": 494528, 
+"^ot:ottTaxonName": "Eunice roussaei", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 614750, 
 "@tb:identifier.taxonVariant": 822207, 
@@ -442,6 +637,8 @@
 }, 
 "Tl1261940": {
 "^ot:originalLabel": "Mooreonuphis pallidula", 
+"^ot:ottId": 1020331, 
+"^ot:ottTaxonName": "Mooreonuphis pallidula", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 614746, 
 "@tb:identifier.taxonVariant": 822203, 
@@ -449,10 +646,14 @@
 }
 }, 
 "Tl1261941": {
-"^ot:originalLabel": "Leodice marcusi"
+"^ot:originalLabel": "Leodice marcusi", 
+"^ot:ottId": 934489, 
+"^ot:ottTaxonName": "Eunice marcusi"
 }, 
 "Tl1261942": {
 "^ot:originalLabel": "Dorvillea sociabilis", 
+"^ot:ottId": 4979544, 
+"^ot:ottTaxonName": "Dorvillea sociabilis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 614740, 
 "@tb:identifier.taxonVariant": 822197, 
@@ -460,16 +661,24 @@
 }
 }, 
 "Tl1261943": {
-"^ot:originalLabel": "Nicidion hentscheli"
+"^ot:originalLabel": "Nicidion hentscheli", 
+"^ot:ottId": 4978634, 
+"^ot:ottTaxonName": "Nicidion hentscheli"
 }, 
 "Tl1261944": {
-"^ot:originalLabel": "Marphysa sp"
+"^ot:originalLabel": "Marphysa sp", 
+"^ot:ottId": 260032, 
+"^ot:ottTaxonName": "Marphysa"
 }, 
 "Tl1261945": {
-"^ot:originalLabel": "Marphysa mossambica"
+"^ot:originalLabel": "Marphysa mossambica", 
+"^ot:ottId": 4978622, 
+"^ot:ottTaxonName": "Marphysa mossambica"
 }, 
 "Tl1261946": {
 "^ot:originalLabel": "Euniphysa tridontesa", 
+"^ot:ottId": 323719, 
+"^ot:ottTaxonName": "Euniphysa tridontesa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 614760, 
 "@tb:identifier.taxonVariant": 822217, 
@@ -478,6 +687,8 @@
 }, 
 "Tl1261947": {
 "^ot:originalLabel": "Lysidice ninetta", 
+"^ot:ottId": 438828, 
+"^ot:ottTaxonName": "Lysidice ninetta", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 16569, 
 "@tb:identifier.taxonVariant": 38854, 
@@ -486,10 +697,14 @@
 }
 }, 
 "Tl1261948": {
-"^ot:originalLabel": "Nicidion mutilata"
+"^ot:originalLabel": "Nicidion mutilata", 
+"^ot:ottId": 494526, 
+"^ot:ottTaxonName": "Eunice mutilata"
 }, 
 "Tl1261949": {
 "^ot:originalLabel": "Fauchaldius cyrtauloni", 
+"^ot:ottId": 4978740, 
+"^ot:ottTaxonName": "Fauchaldius cyrtauloni", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 614765, 
 "@tb:identifier.taxonVariant": 822222, 
@@ -497,8 +712,9 @@
 }
 }, 
 "Tl1261950": {
-"^ot:altLabel": "Marphysa bellii", 
 "^ot:originalLabel": "Marphysa cf bellii", 
+"^ot:ottId": 438824, 
+"^ot:ottTaxonName": "Marphysa bellii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 16951, 
 "@tb:identifier.taxonVariant": 39706, 
@@ -508,6 +724,8 @@
 }, 
 "Tl1261951": {
 "^ot:originalLabel": "Paradiopatra quadricuspis", 
+"^ot:ottId": 169917, 
+"^ot:ottTaxonName": "Paradiopatra quadricuspis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 614749, 
 "@tb:identifier.taxonVariant": 822206, 
@@ -515,10 +733,14 @@
 }
 }, 
 "Tl1261952": {
-"^ot:originalLabel": "Leodice torquata"
+"^ot:originalLabel": "Leodice torquata", 
+"^ot:ottId": 1086522, 
+"^ot:ottTaxonName": "Eunice torquata"
 }, 
 "Tl1261953": {
 "^ot:originalLabel": "Marphysa fallax", 
+"^ot:ottId": 1020327, 
+"^ot:ottTaxonName": "Marphysa fallax", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 614752, 
 "@tb:identifier.taxonVariant": 822209, 
@@ -527,6 +749,8 @@
 }, 
 "Tl1261954": {
 "^ot:originalLabel": "Eurythoe complanata", 
+"^ot:ottId": 615275, 
+"^ot:ottTaxonName": "Eurythoe complanata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 10942, 
 "@tb:identifier.taxonVariant": 26170, 
@@ -554,7 +778,18 @@
 "Tr67537": {
 "@label": "con 50 majrule", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:undefined", 
+"^ot:branchLengthTimeUnit": "Myr", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "Tn10737735", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 80, 
 "^tb:quality.tree": "Unrated", 
@@ -1952,7 +2187,19 @@
 "Tr67538": {
 "@label": "con 50 majrule", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:posteriorSupport", 
+"^ot:branchLengthTimeUnit": "Myr", 
+"^ot:curatedType": "Bayesian inference ", 
+"^ot:inGroupClade": "Tn10737867", 
+"^ot:nodeLabelDescription": "", 
+"^ot:nodeLabelMode": "ot:bootstrapValues", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "Tn10737858", 
+"^ot:specifiedRoot": "Tn10737858", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 82, 
 "^tb:quality.tree": "Unrated", 
@@ -1962,12 +2209,14 @@
 "edge615124": {
 "@length": 0.09428, 
 "@source": "Tn10737774", 
-"@target": "Tn10737923"
+"@target": "Tn10737923", 
+"^ot:bootstrapValues": 100
 }, 
 "edge615158": {
 "@length": 0.078908, 
 "@source": "Tn10737774", 
-"@target": "Tn10737787"
+"@target": "Tn10737787", 
+"^ot:bootstrapValues": 77
 }
 }, 
 "Tn10737777": {
@@ -1979,7 +2228,8 @@
 "edge615348": {
 "@length": 0.091232, 
 "@source": "Tn10737777", 
-"@target": "Tn10737903"
+"@target": "Tn10737903", 
+"^ot:bootstrapValues": 100
 }
 }, 
 "Tn10737781": {
@@ -2010,12 +2260,14 @@
 "edge615270": {
 "@length": 0.020305, 
 "@source": "Tn10737785", 
-"@target": "Tn10737877"
+"@target": "Tn10737877", 
+"^ot:bootstrapValues": 68
 }, 
 "edge615284": {
 "@length": 0.026983, 
 "@source": "Tn10737785", 
-"@target": "Tn10737913"
+"@target": "Tn10737913", 
+"^ot:bootstrapValues": 100
 }
 }, 
 "Tn10737786": {
@@ -2034,19 +2286,22 @@
 "edge615160": {
 "@length": 0.054669, 
 "@source": "Tn10737787", 
-"@target": "Tn10737807"
+"@target": "Tn10737807", 
+"^ot:bootstrapValues": 98
 }, 
 "edge615218": {
 "@length": 0.041438, 
 "@source": "Tn10737787", 
-"@target": "Tn10737855"
+"@target": "Tn10737855", 
+"^ot:bootstrapValues": 77
 }
 }, 
 "Tn10737791": {
 "edge615314": {
 "@length": 0.065352, 
 "@source": "Tn10737791", 
-"@target": "Tn10737841"
+"@target": "Tn10737841", 
+"^ot:bootstrapValues": 99
 }, 
 "edge615328": {
 "@length": 0.147506, 
@@ -2063,31 +2318,36 @@
 "edge615312": {
 "@length": 0.1265, 
 "@source": "Tn10737792", 
-"@target": "Tn10737791"
+"@target": "Tn10737791", 
+"^ot:bootstrapValues": 100
 }, 
 "edge615332": {
 "@length": 0.215585, 
 "@source": "Tn10737792", 
-"@target": "Tn10737850"
+"@target": "Tn10737850", 
+"^ot:bootstrapValues": 100
 }
 }, 
 "Tn10737793": {
 "edge615266": {
 "@length": 0.0575, 
 "@source": "Tn10737793", 
-"@target": "Tn10737881"
+"@target": "Tn10737881", 
+"^ot:bootstrapValues": 96
 }, 
 "edge615292": {
 "@length": 0.051393, 
 "@source": "Tn10737793", 
-"@target": "Tn10737828"
+"@target": "Tn10737828", 
+"^ot:bootstrapValues": 80
 }
 }, 
 "Tn10737794": {
 "edge615176": {
 "@length": 0.111683, 
 "@source": "Tn10737794", 
-"@target": "Tn10737878"
+"@target": "Tn10737878", 
+"^ot:bootstrapValues": 100
 }, 
 "edge615190": {
 "@length": 0.270673, 
@@ -2099,31 +2359,36 @@
 "edge615224": {
 "@length": 0.043955, 
 "@source": "Tn10737795", 
-"@target": "Tn10737822"
+"@target": "Tn10737822", 
+"^ot:bootstrapValues": 80
 }, 
 "edge615306": {
 "@length": 0.018375, 
 "@source": "Tn10737795", 
-"@target": "Tn10737796"
+"@target": "Tn10737796", 
+"^ot:bootstrapValues": 70
 }
 }, 
 "Tn10737796": {
 "edge615308": {
 "@length": 0.039448, 
 "@source": "Tn10737796", 
-"@target": "Tn10737802"
+"@target": "Tn10737802", 
+"^ot:bootstrapValues": 97
 }, 
 "edge615372": {
 "@length": 0.051918, 
 "@source": "Tn10737796", 
-"@target": "Tn10737869"
+"@target": "Tn10737869", 
+"^ot:bootstrapValues": 100
 }
 }, 
 "Tn10737800": {
 "edge615344": {
 "@length": 0.036703, 
 "@source": "Tn10737800", 
-"@target": "Tn10737777"
+"@target": "Tn10737777", 
+"^ot:bootstrapValues": 100
 }, 
 "edge615354": {
 "@length": 0.091625, 
@@ -2135,12 +2400,14 @@
 "edge615310": {
 "@length": 0.078892, 
 "@source": "Tn10737802", 
-"@target": "Tn10737792"
+"@target": "Tn10737792", 
+"^ot:bootstrapValues": 98
 }, 
 "edge615338": {
 "@length": 0.09642, 
 "@source": "Tn10737802", 
-"@target": "Tn10737925"
+"@target": "Tn10737925", 
+"^ot:bootstrapValues": 100
 }
 }, 
 "Tn10737803": {
@@ -2171,19 +2438,22 @@
 "edge615172": {
 "@length": 0.016228, 
 "@source": "Tn10737805", 
-"@target": "Tn10737848"
+"@target": "Tn10737848", 
+"^ot:bootstrapValues": 98
 }, 
 "edge615194": {
 "@length": 0.028442, 
 "@source": "Tn10737805", 
-"@target": "Tn10737809"
+"@target": "Tn10737809", 
+"^ot:bootstrapValues": 100
 }
 }, 
 "Tn10737807": {
 "edge615162": {
 "@length": 0.067006, 
 "@source": "Tn10737807", 
-"@target": "Tn10737852"
+"@target": "Tn10737852", 
+"^ot:bootstrapValues": 100
 }, 
 "edge615216": {
 "@length": 0.324466, 
@@ -2224,26 +2494,30 @@
 "edge615136": {
 "@length": 0.086897, 
 "@source": "Tn10737819", 
-"@target": "Tn10737904"
+"@target": "Tn10737904", 
+"^ot:bootstrapValues": 99
 }
 }, 
 "Tn10737822": {
 "edge615226": {
 "@length": 0.06961, 
 "@source": "Tn10737822", 
-"@target": "Tn10737888"
+"@target": "Tn10737888", 
+"^ot:bootstrapValues": 92
 }, 
 "edge615264": {
 "@length": 0.072278, 
 "@source": "Tn10737822", 
-"@target": "Tn10737793"
+"@target": "Tn10737793", 
+"^ot:bootstrapValues": 86
 }
 }, 
 "Tn10737823": {
 "edge615168": {
 "@length": 0.034716, 
 "@source": "Tn10737823", 
-"@target": "Tn10737907"
+"@target": "Tn10737907", 
+"^ot:bootstrapValues": 99
 }, 
 "edge615202": {
 "@length": 0.297262, 
@@ -2255,7 +2529,8 @@
 "edge615166": {
 "@length": 0.029298, 
 "@source": "Tn10737824", 
-"@target": "Tn10737823"
+"@target": "Tn10737823", 
+"^ot:bootstrapValues": 96
 }, 
 "edge615204": {
 "@length": 0.165247, 
@@ -2267,7 +2542,8 @@
 "edge615234": {
 "@length": 0.125626, 
 "@source": "Tn10737826", 
-"@target": "Tn10737900"
+"@target": "Tn10737900", 
+"^ot:bootstrapValues": 99
 }, 
 "edge615240": {
 "@length": 0.101932, 
@@ -2279,7 +2555,8 @@
 "edge615122": {
 "@length": 0.319273, 
 "@source": "Tn10737827", 
-"@target": "Tn10737774"
+"@target": "Tn10737774", 
+"^ot:bootstrapValues": 77
 }, 
 "edge615392": {
 "@length": 0.616205, 
@@ -2296,7 +2573,8 @@
 "edge615294": {
 "@length": 0.042387, 
 "@source": "Tn10737828", 
-"@target": "Tn10737783"
+"@target": "Tn10737783", 
+"^ot:bootstrapValues": 71
 }, 
 "edge615300": {
 "@length": 0.175969, 
@@ -2347,14 +2625,16 @@
 "edge615210": {
 "@length": 0.0624, 
 "@source": "Tn10737837", 
-"@target": "Tn10737920"
+"@target": "Tn10737920", 
+"^ot:bootstrapValues": 100
 }
 }, 
 "Tn10737841": {
 "edge615316": {
 "@length": 0.065344, 
 "@source": "Tn10737841", 
-"@target": "Tn10737875"
+"@target": "Tn10737875", 
+"^ot:bootstrapValues": 100
 }, 
 "edge615326": {
 "@length": 0.225139, 
@@ -2366,12 +2646,14 @@
 "edge615230": {
 "@length": 0.101807, 
 "@source": "Tn10737843", 
-"@target": "Tn10737901"
+"@target": "Tn10737901", 
+"^ot:bootstrapValues": 95
 }, 
 "edge615248": {
 "@length": 0.126778, 
 "@source": "Tn10737843", 
-"@target": "Tn10737921"
+"@target": "Tn10737921", 
+"^ot:bootstrapValues": 99
 }
 }, 
 "Tn10737844": {
@@ -2402,7 +2684,8 @@
 "edge615174": {
 "@length": 0.027864, 
 "@source": "Tn10737848", 
-"@target": "Tn10737794"
+"@target": "Tn10737794", 
+"^ot:bootstrapValues": 100
 }, 
 "edge615192": {
 "@length": 0.14661, 
@@ -2426,24 +2709,28 @@
 "edge615164": {
 "@length": 0.030769, 
 "@source": "Tn10737852", 
-"@target": "Tn10737824"
+"@target": "Tn10737824", 
+"^ot:bootstrapValues": 95
 }, 
 "edge615206": {
 "@length": 0.094533, 
 "@source": "Tn10737852", 
-"@target": "Tn10737837"
+"@target": "Tn10737837", 
+"^ot:bootstrapValues": 100
 }
 }, 
 "Tn10737855": {
 "edge615220": {
 "@length": 0.021685, 
 "@source": "Tn10737855", 
-"@target": "Tn10737882"
+"@target": "Tn10737882", 
+"^ot:bootstrapValues": 56.00000000000001
 }, 
 "edge615384": {
 "@length": 0.08403, 
 "@source": "Tn10737855", 
-"@target": "Tn10737922"
+"@target": "Tn10737922", 
+"^ot:bootstrapValues": 97
 }
 }, 
 "Tn10737858": {
@@ -2455,36 +2742,42 @@
 "edge615086": {
 "@length": 0.519064, 
 "@source": "Tn10737858", 
-"@target": "Tn10737905"
+"@target": "Tn10737905", 
+"^ot:bootstrapValues": 100
 }, 
 "edge615096": {
 "@length": 0.282366, 
 "@source": "Tn10737858", 
-"@target": "Tn10737859"
+"@target": "Tn10737859", 
+"^ot:bootstrapValues": 100
 }
 }, 
 "Tn10737859": {
 "edge615098": {
 "@length": 0.407862, 
 "@source": "Tn10737859", 
-"@target": "Tn10737917"
+"@target": "Tn10737917", 
+"^ot:bootstrapValues": 100
 }, 
 "edge615104": {
 "@length": 0.313686, 
 "@source": "Tn10737859", 
-"@target": "Tn10737867"
+"@target": "Tn10737867", 
+"^ot:bootstrapValues": 100
 }
 }, 
 "Tn10737860": {
 "edge615342": {
 "@length": 0.041542, 
 "@source": "Tn10737860", 
-"@target": "Tn10737800"
+"@target": "Tn10737800", 
+"^ot:bootstrapValues": 100
 }, 
 "edge615356": {
 "@length": 0.034546, 
 "@source": "Tn10737860", 
-"@target": "Tn10737864"
+"@target": "Tn10737864", 
+"^ot:bootstrapValues": 99
 }
 }, 
 "Tn10737862": {
@@ -2503,7 +2796,8 @@
 "edge615358": {
 "@length": 0.029848, 
 "@source": "Tn10737864", 
-"@target": "Tn10737786"
+"@target": "Tn10737786", 
+"^ot:bootstrapValues": 92
 }, 
 "edge615364": {
 "@length": 0.149717, 
@@ -2515,19 +2809,22 @@
 "edge615106": {
 "@length": 0.183442, 
 "@source": "Tn10737867", 
-"@target": "Tn10737899"
+"@target": "Tn10737899", 
+"^ot:bootstrapValues": 93
 }, 
 "edge615120": {
 "@length": 0.630171, 
 "@source": "Tn10737867", 
-"@target": "Tn10737827"
+"@target": "Tn10737827", 
+"^ot:bootstrapValues": 100
 }
 }, 
 "Tn10737869": {
 "edge615374": {
 "@length": 0.190079, 
 "@source": "Tn10737869", 
-"@target": "Tn10737845"
+"@target": "Tn10737845", 
+"^ot:bootstrapValues": 100
 }, 
 "edge615380": {
 "@length": 0.151948, 
@@ -2544,14 +2841,16 @@
 "edge615320": {
 "@length": 0.273606, 
 "@source": "Tn10737875", 
-"@target": "Tn10737804"
+"@target": "Tn10737804", 
+"^ot:bootstrapValues": 100
 }
 }, 
 "Tn10737877": {
 "edge615272": {
 "@length": 0.03132, 
 "@source": "Tn10737877", 
-"@target": "Tn10737909"
+"@target": "Tn10737909", 
+"^ot:bootstrapValues": 91
 }, 
 "edge615282": {
 "@length": 0.10548, 
@@ -2563,19 +2862,22 @@
 "edge615178": {
 "@length": 0.048919, 
 "@source": "Tn10737878", 
-"@target": "Tn10737781"
+"@target": "Tn10737781", 
+"^ot:bootstrapValues": 90
 }, 
 "edge615184": {
 "@length": 0.070192, 
 "@source": "Tn10737878", 
-"@target": "Tn10737898"
+"@target": "Tn10737898", 
+"^ot:bootstrapValues": 100
 }
 }, 
 "Tn10737881": {
 "edge615268": {
 "@length": 0.08024, 
 "@source": "Tn10737881", 
-"@target": "Tn10737785"
+"@target": "Tn10737785", 
+"^ot:bootstrapValues": 96
 }, 
 "edge615290": {
 "@length": 0.196448, 
@@ -2587,7 +2889,8 @@
 "edge615222": {
 "@length": 0.026105, 
 "@source": "Tn10737882", 
-"@target": "Tn10737795"
+"@target": "Tn10737795", 
+"^ot:bootstrapValues": 60
 }, 
 "edge615382": {
 "@length": 0.162035, 
@@ -2623,12 +2926,14 @@
 "edge615228": {
 "@length": 0.048954, 
 "@source": "Tn10737888", 
-"@target": "Tn10737843"
+"@target": "Tn10737843", 
+"^ot:bootstrapValues": 93
 }, 
 "edge615258": {
 "@length": 0.135492, 
 "@source": "Tn10737888", 
-"@target": "Tn10737803"
+"@target": "Tn10737803", 
+"^ot:bootstrapValues": 100
 }
 }, 
 "Tn10737889": {
@@ -2652,19 +2957,22 @@
 "edge615144": {
 "@length": 0.114834, 
 "@source": "Tn10737890", 
-"@target": "Tn10737919"
+"@target": "Tn10737919", 
+"^ot:bootstrapValues": 100
 }
 }, 
 "Tn10737893": {
 "edge615140": {
 "@length": 0.042877, 
 "@source": "Tn10737893", 
-"@target": "Tn10737890"
+"@target": "Tn10737890", 
+"^ot:bootstrapValues": 54
 }, 
 "edge615150": {
 "@length": 0.067955, 
 "@source": "Tn10737893", 
-"@target": "Tn10737835"
+"@target": "Tn10737835", 
+"^ot:bootstrapValues": 96
 }
 }, 
 "Tn10737898": {
@@ -2683,12 +2991,14 @@
 "edge615108": {
 "@length": 1.655259, 
 "@source": "Tn10737899", 
-"@target": "Tn10737834"
+"@target": "Tn10737834", 
+"^ot:bootstrapValues": 100
 }, 
 "edge615114": {
 "@length": 0.4452, 
 "@source": "Tn10737899", 
-"@target": "Tn10737883"
+"@target": "Tn10737883", 
+"^ot:bootstrapValues": 100
 }
 }, 
 "Tn10737900": {
@@ -2707,12 +3017,14 @@
 "edge615232": {
 "@length": 0.046795, 
 "@source": "Tn10737901", 
-"@target": "Tn10737826"
+"@target": "Tn10737826", 
+"^ot:bootstrapValues": 95
 }, 
 "edge615242": {
 "@length": 0.166154, 
 "@source": "Tn10737901", 
-"@target": "Tn10737811"
+"@target": "Tn10737811", 
+"^ot:bootstrapValues": 100
 }
 }, 
 "Tn10737903": {
@@ -2731,7 +3043,8 @@
 "edge615138": {
 "@length": 0.034414, 
 "@source": "Tn10737904", 
-"@target": "Tn10737893"
+"@target": "Tn10737893", 
+"^ot:bootstrapValues": 64
 }, 
 "edge615156": {
 "@length": 0.3125, 
@@ -2743,7 +3056,8 @@
 "edge615088": {
 "@length": 0.089771, 
 "@source": "Tn10737905", 
-"@target": "Tn10737887"
+"@target": "Tn10737887", 
+"^ot:bootstrapValues": 59
 }, 
 "edge615094": {
 "@length": 0.348058, 
@@ -2755,7 +3069,8 @@
 "edge615170": {
 "@length": 0.018738, 
 "@source": "Tn10737907", 
-"@target": "Tn10737805"
+"@target": "Tn10737805", 
+"^ot:bootstrapValues": 95
 }, 
 "edge615200": {
 "@length": 0.142058, 
@@ -2772,7 +3087,8 @@
 "edge615276": {
 "@length": 0.130619, 
 "@source": "Tn10737909", 
-"@target": "Tn10737911"
+"@target": "Tn10737911", 
+"^ot:bootstrapValues": 98
 }
 }, 
 "Tn10737911": {
@@ -2839,7 +3155,8 @@
 "edge615250": {
 "@length": 0.083755, 
 "@source": "Tn10737921", 
-"@target": "Tn10737844"
+"@target": "Tn10737844", 
+"^ot:bootstrapValues": 100
 }, 
 "edge615256": {
 "@length": 0.090789, 
@@ -2868,24 +3185,28 @@
 "edge615126": {
 "@length": 0.169336, 
 "@source": "Tn10737923", 
-"@target": "Tn10737862"
+"@target": "Tn10737862", 
+"^ot:bootstrapValues": 100
 }, 
 "edge615132": {
 "@length": 0.084997, 
 "@source": "Tn10737923", 
-"@target": "Tn10737819"
+"@target": "Tn10737819", 
+"^ot:bootstrapValues": 100
 }
 }, 
 "Tn10737925": {
 "edge615340": {
 "@length": 0.036528, 
 "@source": "Tn10737925", 
-"@target": "Tn10737860"
+"@target": "Tn10737860", 
+"^ot:bootstrapValues": 99
 }, 
 "edge615366": {
 "@length": 0.039413, 
 "@source": "Tn10737925", 
-"@target": "Tn10737889"
+"@target": "Tn10737889", 
+"^ot:bootstrapValues": 99
 }
 }
 }, 
@@ -2902,18 +3223,14 @@
 "Tn10737773": {
 "@otu": "Tl1261933"
 }, 
-"Tn10737774": {
-"@label": "0.77"
-}, 
+"Tn10737774": {}, 
 "Tn10737775": {
 "@otu": "Tl1261929"
 }, 
 "Tn10737776": {
 "@otu": "Tl1261900"
 }, 
-"Tn10737777": {
-"@label": "1.00"
-}, 
+"Tn10737777": {}, 
 "Tn10737778": {
 "@otu": "Tl1261946"
 }, 
@@ -2923,27 +3240,18 @@
 "Tn10737780": {
 "@otu": "Tl1261880"
 }, 
-"Tn10737781": {
-"@label": "0.90"
-}, 
+"Tn10737781": {}, 
 "Tn10737782": {
-"@otu": "Tl1261893"
+"@otu": "Tl1261893", 
+"^ot:isTaxonExemplar": false
 }, 
-"Tn10737783": {
-"@label": "0.71"
-}, 
+"Tn10737783": {}, 
 "Tn10737784": {
 "@otu": "Tl1261894"
 }, 
-"Tn10737785": {
-"@label": "0.96"
-}, 
-"Tn10737786": {
-"@label": "0.92"
-}, 
-"Tn10737787": {
-"@label": "0.77"
-}, 
+"Tn10737785": {}, 
+"Tn10737786": {}, 
+"Tn10737787": {}, 
 "Tn10737788": {
 "@otu": "Tl1261927"
 }, 
@@ -2953,24 +3261,12 @@
 "Tn10737790": {
 "@otu": "Tl1261879"
 }, 
-"Tn10737791": {
-"@label": "1.00"
-}, 
-"Tn10737792": {
-"@label": "0.98"
-}, 
-"Tn10737793": {
-"@label": "0.86"
-}, 
-"Tn10737794": {
-"@label": "1.00"
-}, 
-"Tn10737795": {
-"@label": "0.60"
-}, 
-"Tn10737796": {
-"@label": "0.70"
-}, 
+"Tn10737791": {}, 
+"Tn10737792": {}, 
+"Tn10737793": {}, 
+"Tn10737794": {}, 
+"Tn10737795": {}, 
+"Tn10737796": {}, 
 "Tn10737797": {
 "@otu": "Tl1261915"
 }, 
@@ -2980,42 +3276,26 @@
 "Tn10737799": {
 "@otu": "Tl1261905"
 }, 
-"Tn10737800": {
-"@label": "1.00"
-}, 
+"Tn10737800": {}, 
 "Tn10737801": {
 "@otu": "Tl1261884"
 }, 
-"Tn10737802": {
-"@label": "0.97"
-}, 
-"Tn10737803": {
-"@label": "1.00"
-}, 
-"Tn10737804": {
-"@label": "1.00"
-}, 
-"Tn10737805": {
-"@label": "0.95"
-}, 
+"Tn10737802": {}, 
+"Tn10737803": {}, 
+"Tn10737804": {}, 
+"Tn10737805": {}, 
 "Tn10737806": {
 "@otu": "Tl1261924"
 }, 
-"Tn10737807": {
-"@label": "0.98"
-}, 
+"Tn10737807": {}, 
 "Tn10737808": {
 "@otu": "Tl1261942"
 }, 
-"Tn10737809": {
-"@label": "1.00"
-}, 
+"Tn10737809": {}, 
 "Tn10737810": {
 "@otu": "Tl1261939"
 }, 
-"Tn10737811": {
-"@label": "1.00"
-}, 
+"Tn10737811": {}, 
 "Tn10737812": {
 "@otu": "Tl1261925"
 }, 
@@ -3037,36 +3317,22 @@
 "Tn10737818": {
 "@otu": "Tl1261941"
 }, 
-"Tn10737819": {
-"@label": "1.00"
-}, 
+"Tn10737819": {}, 
 "Tn10737820": {
 "@otu": "Tl1261928"
 }, 
 "Tn10737821": {
 "@otu": "Tl1261920"
 }, 
-"Tn10737822": {
-"@label": "0.80"
-}, 
-"Tn10737823": {
-"@label": "0.96"
-}, 
-"Tn10737824": {
-"@label": "0.95"
-}, 
+"Tn10737822": {}, 
+"Tn10737823": {}, 
+"Tn10737824": {}, 
 "Tn10737825": {
 "@otu": "Tl1261881"
 }, 
-"Tn10737826": {
-"@label": "0.95"
-}, 
-"Tn10737827": {
-"@label": "1.00"
-}, 
-"Tn10737828": {
-"@label": "0.80"
-}, 
+"Tn10737826": {}, 
+"Tn10737827": {}, 
+"Tn10737828": {}, 
 "Tn10737829": {
 "@otu": "Tl1261892"
 }, 
@@ -3082,18 +3348,12 @@
 "Tn10737833": {
 "@otu": "Tl1261949"
 }, 
-"Tn10737834": {
-"@label": "1.00"
-}, 
-"Tn10737835": {
-"@label": "0.96"
-}, 
+"Tn10737834": {}, 
+"Tn10737835": {}, 
 "Tn10737836": {
 "@otu": "Tl1261896"
 }, 
-"Tn10737837": {
-"@label": "1.00"
-}, 
+"Tn10737837": {}, 
 "Tn10737838": {
 "@otu": "Tl1261895"
 }, 
@@ -3103,51 +3363,35 @@
 "Tn10737840": {
 "@otu": "Tl1261878"
 }, 
-"Tn10737841": {
-"@label": "0.99"
-}, 
+"Tn10737841": {}, 
 "Tn10737842": {
 "@otu": "Tl1261947"
 }, 
-"Tn10737843": {
-"@label": "0.93"
-}, 
-"Tn10737844": {
-"@label": "1.00"
-}, 
-"Tn10737845": {
-"@label": "1.00"
-}, 
+"Tn10737843": {}, 
+"Tn10737844": {}, 
+"Tn10737845": {}, 
 "Tn10737846": {
 "@otu": "Tl1261952"
 }, 
 "Tn10737847": {
 "@otu": "Tl1261875"
 }, 
-"Tn10737848": {
-"@label": "0.98"
-}, 
+"Tn10737848": {}, 
 "Tn10737849": {
 "@otu": "Tl1261951"
 }, 
-"Tn10737850": {
-"@label": "1.00"
-}, 
+"Tn10737850": {}, 
 "Tn10737851": {
 "@otu": "Tl1261945"
 }, 
-"Tn10737852": {
-"@label": "1.00"
-}, 
+"Tn10737852": {}, 
 "Tn10737853": {
 "@otu": "Tl1261917"
 }, 
 "Tn10737854": {
 "@otu": "Tl1261883"
 }, 
-"Tn10737855": {
-"@label": "0.77"
-}, 
+"Tn10737855": {}, 
 "Tn10737856": {
 "@otu": "Tl1261911"
 }, 
@@ -3157,39 +3401,27 @@
 "Tn10737858": {
 "@root": true
 }, 
-"Tn10737859": {
-"@label": "1.00"
-}, 
-"Tn10737860": {
-"@label": "0.99"
-}, 
+"Tn10737859": {}, 
+"Tn10737860": {}, 
 "Tn10737861": {
 "@otu": "Tl1261912"
 }, 
-"Tn10737862": {
-"@label": "1.00"
-}, 
+"Tn10737862": {}, 
 "Tn10737863": {
 "@otu": "Tl1261943"
 }, 
-"Tn10737864": {
-"@label": "0.99"
-}, 
+"Tn10737864": {}, 
 "Tn10737865": {
 "@otu": "Tl1261953"
 }, 
 "Tn10737866": {
 "@otu": "Tl1261906"
 }, 
-"Tn10737867": {
-"@label": "1.00"
-}, 
+"Tn10737867": {}, 
 "Tn10737868": {
 "@otu": "Tl1261882"
 }, 
-"Tn10737869": {
-"@label": "1.00"
-}, 
+"Tn10737869": {}, 
 "Tn10737870": {
 "@otu": "Tl1261950"
 }, 
@@ -3205,33 +3437,21 @@
 "Tn10737874": {
 "@otu": "Tl1261907"
 }, 
-"Tn10737875": {
-"@label": "1.00"
-}, 
+"Tn10737875": {}, 
 "Tn10737876": {
 "@otu": "Tl1261948"
 }, 
-"Tn10737877": {
-"@label": "0.68"
-}, 
-"Tn10737878": {
-"@label": "1.00"
-}, 
+"Tn10737877": {}, 
+"Tn10737878": {}, 
 "Tn10737879": {
 "@otu": "Tl1261938"
 }, 
 "Tn10737880": {
 "@otu": "Tl1261934"
 }, 
-"Tn10737881": {
-"@label": "0.96"
-}, 
-"Tn10737882": {
-"@label": "0.56"
-}, 
-"Tn10737883": {
-"@label": "1.00"
-}, 
+"Tn10737881": {}, 
+"Tn10737882": {}, 
+"Tn10737883": {}, 
 "Tn10737884": {
 "@otu": "Tl1261930"
 }, 
@@ -3241,27 +3461,17 @@
 "Tn10737886": {
 "@otu": "Tl1261940"
 }, 
-"Tn10737887": {
-"@label": "0.59"
-}, 
-"Tn10737888": {
-"@label": "0.92"
-}, 
-"Tn10737889": {
-"@label": "0.99"
-}, 
-"Tn10737890": {
-"@label": "0.54"
-}, 
+"Tn10737887": {}, 
+"Tn10737888": {}, 
+"Tn10737889": {}, 
+"Tn10737890": {}, 
 "Tn10737891": {
 "@otu": "Tl1261922"
 }, 
 "Tn10737892": {
 "@otu": "Tl1261889"
 }, 
-"Tn10737893": {
-"@label": "0.64"
-}, 
+"Tn10737893": {}, 
 "Tn10737894": {
 "@otu": "Tl1261935"
 }, 
@@ -3274,54 +3484,33 @@
 "Tn10737897": {
 "@otu": "Tl1261937"
 }, 
-"Tn10737898": {
-"@label": "1.00"
-}, 
-"Tn10737899": {
-"@label": "0.93"
-}, 
-"Tn10737900": {
-"@label": "0.99"
-}, 
-"Tn10737901": {
-"@label": "0.95"
-}, 
+"Tn10737898": {}, 
+"Tn10737899": {}, 
+"Tn10737900": {}, 
+"Tn10737901": {}, 
 "Tn10737902": {
 "@otu": "Tl1261931"
 }, 
-"Tn10737903": {
-"@label": "1.00"
-}, 
-"Tn10737904": {
-"@label": "0.99"
-}, 
-"Tn10737905": {
-"@label": "1.00"
-}, 
+"Tn10737903": {}, 
+"Tn10737904": {}, 
+"Tn10737905": {}, 
 "Tn10737906": {
-"@otu": "Tl1261918"
+"@otu": "Tl1261918", 
+"^ot:isTaxonExemplar": true
 }, 
-"Tn10737907": {
-"@label": "0.99"
-}, 
+"Tn10737907": {}, 
 "Tn10737908": {
 "@otu": "Tl1261901"
 }, 
-"Tn10737909": {
-"@label": "0.91"
-}, 
+"Tn10737909": {}, 
 "Tn10737910": {
 "@otu": "Tl1261903"
 }, 
-"Tn10737911": {
-"@label": "0.98"
-}, 
+"Tn10737911": {}, 
 "Tn10737912": {
 "@otu": "Tl1261919"
 }, 
-"Tn10737913": {
-"@label": "1.00"
-}, 
+"Tn10737913": {}, 
 "Tn10737914": {
 "@otu": "Tl1261904"
 }, 
@@ -3331,33 +3520,19 @@
 "Tn10737916": {
 "@otu": "Tl1261874"
 }, 
-"Tn10737917": {
-"@label": "1.00"
-}, 
+"Tn10737917": {}, 
 "Tn10737918": {
 "@otu": "Tl1261908"
 }, 
-"Tn10737919": {
-"@label": "1.00"
-}, 
-"Tn10737920": {
-"@label": "1.00"
-}, 
-"Tn10737921": {
-"@label": "0.99"
-}, 
-"Tn10737922": {
-"@label": "0.97"
-}, 
-"Tn10737923": {
-"@label": "1.00"
-}, 
+"Tn10737919": {}, 
+"Tn10737920": {}, 
+"Tn10737921": {}, 
+"Tn10737922": {}, 
+"Tn10737923": {}, 
 "Tn10737924": {
 "@otu": "Tl1261890"
 }, 
-"Tn10737925": {
-"@label": "1.00"
-}, 
+"Tn10737925": {}, 
 "Tn10737926": {
 "@otu": "Tl1261898"
 }
@@ -3366,7 +3541,18 @@
 "Tr67539": {
 "@label": "Hennig 1+", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "Tn10738077", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 82, 
 "^tb:quality.tree": "Unrated", 
@@ -4434,7 +4620,18 @@
 "Tr67540": {
 "@label": "Hennig 1+", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "Tn10738106", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 80, 
 "^tb:quality.tree": "Unrated", 
@@ -5481,7 +5678,18 @@
 "Tr67541": {
 "@label": "Hennig 1+", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "Tn10738309", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 74, 
 "^tb:quality.tree": "Unrated", 
@@ -6227,7 +6435,18 @@
 "Tr67542": {
 "@label": "Hennig 1+", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "Tn10738376", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 72, 
 "^tb:quality.tree": "Unrated", 
