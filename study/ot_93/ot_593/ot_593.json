@@ -57,22 +57,109 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2016-02-10T20:41:06.844Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:curatorName": "Dail Laughinghouse", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2016-02-10T20:41:06.844Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"Tr76692"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Dail Laughinghouse"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S16144"
 }, 
+"^ot:focalClade": 34907, 
+"^ot:focalCladeOTTTaxonName": "Drosophila (genus in Holozoa)", 
+"^ot:notIntendedForSynthesis": true, 
 "^ot:otusElementOrder": [
 "Tls39085"
 ], 
 "^ot:studyId": "ot_593", 
-"^ot:studyPublicationReference": "Wallau G.L., Capy P., Loreto E.L., & Hua-van A. 2014. Genomic landscape and evolutionary dynamics of mariner transposable elements within the Drosophila genus. BMC Genomics, .", 
+"^ot:studyPublication": {
+"@href": "http://dx.doi.org/10.1186/1471-2164-15-727"
+}, 
+"^ot:studyPublicationReference": "Gabriel Wallau, Pierre Capy, Elgion Loreto, Aur\u00e9lie Hua-Van, 2014, 'Genomic landscape and evolutionary dynamics of mariner transposable elements within the Drosophila genus', BMC Genomics, vol. 15, no. 1, p. 727", 
 "^ot:studyYear": 2014, 
+"^ot:tag": [], 
 "^ot:taxonLinkPrefixes": {
 "@ubio": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:", 
 "@uniprot": "http://purl.uniprot.org/taxonomy/"
@@ -95,8 +182,9 @@
 "^skos:historyNote": "Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlOTUWriter@4dd1d4df $Rev: 1040 $", 
 "otuById": {
 "Tl1562982": {
-"^ot:altLabel": "Bombyx mori", 
 "^ot:originalLabel": "Bombyx mori Bmmar.gi95103114", 
+"^ot:ottId": 440274, 
+"^ot:ottTaxonName": "Bombyx mori", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3719, 
 "@tb:identifier.taxonVariant": 8873, 
@@ -105,8 +193,9 @@
 }
 }, 
 "Tl1562983": {
-"^ot:altLabel": "Trichomonas vaginalis", 
 "^ot:originalLabel": "Trichomonas vaginalis Tvmar1.gi33145915", 
+"^ot:ottId": 745845, 
+"^ot:ottTaxonName": "Trichomonas vaginalis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 29522, 
 "@tb:identifier.taxonVariant": 68793, 
@@ -115,8 +204,9 @@
 }
 }, 
 "Tl1562984": {
-"^ot:altLabel": "Drosophila sp.", 
 "^ot:originalLabel": "Drosophila sp. Dromar12", 
+"^ot:ottId": 34907, 
+"^ot:ottTaxonName": "Drosophila", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 52399, 
 "@tb:identifier.taxonVariant": 414110, 
@@ -125,8 +215,9 @@
 }
 }, 
 "Tl1562985": {
-"^ot:altLabel": "Homo sapiens", 
 "^ot:originalLabel": "Homo sapiens Hsmar1.gi1263081", 
+"^ot:ottId": 770315, 
+"^ot:ottTaxonName": "Homo sapiens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 13680, 
 "@tb:identifier.taxonVariant": 32274, 
@@ -135,8 +226,9 @@
 }
 }, 
 "Tl1562986": {
-"^ot:altLabel": "Drosophila sp.", 
 "^ot:originalLabel": "Drosophila sp. Dromar22", 
+"^ot:ottId": 34907, 
+"^ot:ottTaxonName": "Drosophila", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 52399, 
 "@tb:identifier.taxonVariant": 414110, 
@@ -145,8 +237,9 @@
 }
 }, 
 "Tl1562987": {
-"^ot:altLabel": "Drosophila sp.", 
 "^ot:originalLabel": "Drosophila sp. Dromar28", 
+"^ot:ottId": 34907, 
+"^ot:ottTaxonName": "Drosophila", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 52399, 
 "@tb:identifier.taxonVariant": 414110, 
@@ -155,8 +248,9 @@
 }
 }, 
 "Tl1562988": {
-"^ot:altLabel": "Drosophila sp.", 
 "^ot:originalLabel": "Drosophila sp. Dromar33", 
+"^ot:ottId": 34907, 
+"^ot:ottTaxonName": "Drosophila", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 52399, 
 "@tb:identifier.taxonVariant": 414110, 
@@ -165,8 +259,9 @@
 }
 }, 
 "Tl1562989": {
-"^ot:altLabel": "Adineta vaga", 
 "^ot:originalLabel": "Adineta vaga Avmar1.gi72256423", 
+"^ot:ottId": 681215, 
+"^ot:ottTaxonName": "Adineta vaga", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 110738, 
 "@tb:identifier.taxonVariant": 426344, 
@@ -175,8 +270,9 @@
 }
 }, 
 "Tl1562990": {
-"^ot:altLabel": "Forficula auricularia", 
 "^ot:originalLabel": "Forficula auricularia Famar1.gi75008822", 
+"^ot:ottId": 673084, 
+"^ot:ottTaxonName": "Forficula auricularia", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 55817, 
 "@tb:identifier.taxonVariant": 127320, 
@@ -185,8 +281,9 @@
 }
 }, 
 "Tl1562991": {
-"^ot:altLabel": "Ceratitis capitata", 
 "^ot:originalLabel": "Ceratitis capitata Ccmar1.gi1399036", 
+"^ot:ottId": 34902, 
+"^ot:ottTaxonName": "Ceratitis capitata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 52376, 
 "@tb:identifier.taxonVariant": 122440, 
@@ -195,8 +292,9 @@
 }
 }, 
 "Tl1562992": {
-"^ot:altLabel": "Drosophila sp.", 
 "^ot:originalLabel": "Drosophila sp. Dromar32", 
+"^ot:ottId": 34907, 
+"^ot:ottTaxonName": "Drosophila", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 52399, 
 "@tb:identifier.taxonVariant": 414110, 
@@ -205,8 +303,9 @@
 }
 }, 
 "Tl1562993": {
-"^ot:altLabel": "Drosophila sp.", 
 "^ot:originalLabel": "Drosophila sp. Dromar36", 
+"^ot:ottId": 34907, 
+"^ot:ottTaxonName": "Drosophila", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 52399, 
 "@tb:identifier.taxonVariant": 414110, 
@@ -215,8 +314,9 @@
 }
 }, 
 "Tl1562994": {
-"^ot:altLabel": "Chrysoperla plorabunda", 
 "^ot:originalLabel": "Chrysoperla plorabunda Cpmar1.gi600840", 
+"^ot:ottId": 337127, 
+"^ot:ottTaxonName": "Chrysoperla plorabunda", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6059, 
 "@tb:identifier.taxonVariant": 14608, 
@@ -225,8 +325,9 @@
 }
 }, 
 "Tl1562995": {
-"^ot:altLabel": "Bombyx mori", 
 "^ot:originalLabel": "Bombyx mori Bmmar1.gi1698453", 
+"^ot:ottId": 440274, 
+"^ot:ottTaxonName": "Bombyx mori", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3719, 
 "@tb:identifier.taxonVariant": 8873, 
@@ -235,8 +336,9 @@
 }
 }, 
 "Tl1562996": {
-"^ot:altLabel": "Homo sapiens", 
 "^ot:originalLabel": "Homo sapiens Hsmar2.gi1698155", 
+"^ot:ottId": 770315, 
+"^ot:ottTaxonName": "Homo sapiens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 13680, 
 "@tb:identifier.taxonVariant": 32274, 
@@ -245,8 +347,9 @@
 }
 }, 
 "Tl1562997": {
-"^ot:altLabel": "Caenorhabditis elegans", 
 "^ot:originalLabel": "Caenorhabditis elegans Cemar2.gi4263191", 
+"^ot:ottId": 395048, 
+"^ot:ottTaxonName": "Caenorhabditis elegans", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 4376, 
 "@tb:identifier.taxonVariant": 10528, 
@@ -255,8 +358,9 @@
 }
 }, 
 "Tl1562998": {
-"^ot:altLabel": "Drosophila sp.", 
 "^ot:originalLabel": "Drosophila sp. Dromar11", 
+"^ot:ottId": 34907, 
+"^ot:ottTaxonName": "Drosophila", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 52399, 
 "@tb:identifier.taxonVariant": 414110, 
@@ -265,8 +369,9 @@
 }
 }, 
 "Tl1562999": {
-"^ot:altLabel": "Portunus pelagicus", 
 "^ot:originalLabel": "Portunus pelagicus Porpmar1.gi189310186", 
+"^ot:ottId": 599991, 
+"^ot:ottTaxonName": "Portunus pelagicus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 92462, 
 "@tb:identifier.taxonVariant": 171324, 
@@ -275,8 +380,9 @@
 }
 }, 
 "Tl1563000": {
-"^ot:altLabel": "Ventiella sulfuris", 
 "^ot:originalLabel": "Ventiella sulfuris Vensmar1.gi56310238", 
+"^ot:ottId": 745362, 
+"^ot:ottTaxonName": "Ventiella sulfuris", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 76782, 
 "@tb:identifier.taxonVariant": 154177, 
@@ -285,8 +391,9 @@
 }
 }, 
 "Tl1563001": {
-"^ot:altLabel": "Metaseiulus occidentalis", 
 "^ot:originalLabel": "Metaseiulus occidentalis Momar4.gi520553", 
+"^ot:ottId": 1076355, 
+"^ot:ottTaxonName": "Metaseiulus occidentalis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 60713, 
 "@tb:identifier.taxonVariant": 134266, 
@@ -295,8 +402,9 @@
 }
 }, 
 "Tl1563002": {
-"^ot:altLabel": "Drosophila sp.", 
 "^ot:originalLabel": "Drosophila sp. Dromar5", 
+"^ot:ottId": 34907, 
+"^ot:ottTaxonName": "Drosophila", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 52399, 
 "@tb:identifier.taxonVariant": 414110, 
@@ -305,8 +413,9 @@
 }
 }, 
 "Tl1563003": {
-"^ot:altLabel": "Drosophila sp.", 
 "^ot:originalLabel": "Drosophila sp. Dromar9", 
+"^ot:ottId": 34907, 
+"^ot:ottTaxonName": "Drosophila", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 52399, 
 "@tb:identifier.taxonVariant": 414110, 
@@ -315,8 +424,9 @@
 }
 }, 
 "Tl1563004": {
-"^ot:altLabel": "Drosophila sp.", 
 "^ot:originalLabel": "Drosophila sp. Dromar29", 
+"^ot:ottId": 34907, 
+"^ot:ottTaxonName": "Drosophila", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 52399, 
 "@tb:identifier.taxonVariant": 414110, 
@@ -325,8 +435,9 @@
 }
 }, 
 "Tl1563005": {
-"^ot:altLabel": "Andrena erigeniae", 
 "^ot:originalLabel": "Andrena erigeniae Aemar3.gi2564367", 
+"^ot:ottId": 647451, 
+"^ot:ottTaxonName": "Andrena erigeniae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 76541, 
 "@tb:identifier.taxonVariant": 153872, 
@@ -335,8 +446,9 @@
 }
 }, 
 "Tl1563006": {
-"^ot:altLabel": "Drosophila sp.", 
 "^ot:originalLabel": "Drosophila sp. Dromar2", 
+"^ot:ottId": 34907, 
+"^ot:ottTaxonName": "Drosophila", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 52399, 
 "@tb:identifier.taxonVariant": 414110, 
@@ -345,8 +457,9 @@
 }
 }, 
 "Tl1563007": {
-"^ot:altLabel": "Meloidogyne chitwoodi", 
 "^ot:originalLabel": "Meloidogyne chitwoodi Mcmar1.gi75013508", 
+"^ot:ottId": 759061, 
+"^ot:ottTaxonName": "Meloidogyne chitwoodi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 77710, 
 "@tb:identifier.taxonVariant": 155195, 
@@ -355,8 +468,9 @@
 }
 }, 
 "Tl1563008": {
-"^ot:altLabel": "Drosophila sp.", 
 "^ot:originalLabel": "Drosophila sp. Dromar23", 
+"^ot:ottId": 34907, 
+"^ot:ottTaxonName": "Drosophila", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 52399, 
 "@tb:identifier.taxonVariant": 414110, 
@@ -365,8 +479,9 @@
 }
 }, 
 "Tl1563009": {
-"^ot:altLabel": "Drosophila sp.", 
 "^ot:originalLabel": "Drosophila sp. Dromar25", 
+"^ot:ottId": 34907, 
+"^ot:ottTaxonName": "Drosophila", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 52399, 
 "@tb:identifier.taxonVariant": 414110, 
@@ -375,8 +490,9 @@
 }
 }, 
 "Tl1563010": {
-"^ot:altLabel": "Drosophila sp.", 
 "^ot:originalLabel": "Drosophila sp. Dromar14", 
+"^ot:ottId": 34907, 
+"^ot:ottTaxonName": "Drosophila", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 52399, 
 "@tb:identifier.taxonVariant": 414110, 
@@ -385,8 +501,9 @@
 }
 }, 
 "Tl1563011": {
-"^ot:altLabel": "Drosophila sp.", 
 "^ot:originalLabel": "Drosophila sp. Dromar16", 
+"^ot:ottId": 34907, 
+"^ot:ottTaxonName": "Drosophila", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 52399, 
 "@tb:identifier.taxonVariant": 414110, 
@@ -395,8 +512,9 @@
 }
 }, 
 "Tl1563012": {
-"^ot:altLabel": "Hydra vulgaris", 
 "^ot:originalLabel": "Hydra vulgaris Hvmar1.gi1708663", 
+"^ot:ottId": 861536, 
+"^ot:ottTaxonName": "Hydra vulgaris", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 13855, 
 "@tb:identifier.taxonVariant": 32685, 
@@ -405,8 +523,9 @@
 }
 }, 
 "Tl1563013": {
-"^ot:altLabel": "Drosophila sp.", 
 "^ot:originalLabel": "Drosophila sp. Dromar4", 
+"^ot:ottId": 34907, 
+"^ot:ottTaxonName": "Drosophila", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 52399, 
 "@tb:identifier.taxonVariant": 414110, 
@@ -415,8 +534,9 @@
 }
 }, 
 "Tl1563014": {
-"^ot:altLabel": "Apis mellifera", 
 "^ot:originalLabel": "Apis mellifera Ammar1.gi27465075", 
+"^ot:ottId": 461645, 
+"^ot:ottTaxonName": "Apis mellifera", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 2021, 
 "@tb:identifier.taxonVariant": 4858, 
@@ -425,8 +545,9 @@
 }
 }, 
 "Tl1563015": {
-"^ot:altLabel": "Drosophila sp.", 
 "^ot:originalLabel": "Drosophila sp. Dromar35", 
+"^ot:ottId": 34907, 
+"^ot:ottTaxonName": "Drosophila", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 52399, 
 "@tb:identifier.taxonVariant": 414110, 
@@ -435,8 +556,9 @@
 }
 }, 
 "Tl1563016": {
-"^ot:altLabel": "Drosophila sp.", 
 "^ot:originalLabel": "Drosophila sp. Dromar30", 
+"^ot:ottId": 34907, 
+"^ot:ottTaxonName": "Drosophila", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 52399, 
 "@tb:identifier.taxonVariant": 414110, 
@@ -445,8 +567,9 @@
 }
 }, 
 "Tl1563017": {
-"^ot:altLabel": "Drosophila sp.", 
 "^ot:originalLabel": "Drosophila sp. Dromar19", 
+"^ot:ottId": 34907, 
+"^ot:ottTaxonName": "Drosophila", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 52399, 
 "@tb:identifier.taxonVariant": 414110, 
@@ -455,8 +578,9 @@
 }
 }, 
 "Tl1563018": {
-"^ot:altLabel": "Caenorhabditis elegans", 
 "^ot:originalLabel": "Caenorhabditis elegans Cemar1.gi4263169", 
+"^ot:ottId": 395048, 
+"^ot:ottTaxonName": "Caenorhabditis elegans", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 4376, 
 "@tb:identifier.taxonVariant": 10528, 
@@ -465,8 +589,9 @@
 }
 }, 
 "Tl1563019": {
-"^ot:altLabel": "Apis cerana", 
 "^ot:originalLabel": "Apis cerana Acmar1.gi19570323", 
+"^ot:ottId": 625771, 
+"^ot:ottTaxonName": "Apis cerana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 2017, 
 "@tb:identifier.taxonVariant": 4852, 
@@ -475,8 +600,9 @@
 }
 }, 
 "Tl1563020": {
-"^ot:altLabel": "Bactrocera neohumeralis", 
 "^ot:originalLabel": "Bactrocera neohumeralis Bnmar29.gi18033568", 
+"^ot:ottId": 684569, 
+"^ot:ottTaxonName": "Bactrocera neohumeralis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 106368, 
 "@tb:identifier.taxonVariant": 184933, 
@@ -485,8 +611,9 @@
 }
 }, 
 "Tl1563021": {
-"^ot:altLabel": "Drosophila sp.", 
 "^ot:originalLabel": "Drosophila sp. Dromar26", 
+"^ot:ottId": 34907, 
+"^ot:ottTaxonName": "Drosophila", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 52399, 
 "@tb:identifier.taxonVariant": 414110, 
@@ -495,8 +622,9 @@
 }
 }, 
 "Tl1563022": {
-"^ot:altLabel": "Drosophila sp.", 
 "^ot:originalLabel": "Drosophila sp. Dromar7", 
+"^ot:ottId": 34907, 
+"^ot:ottTaxonName": "Drosophila", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 52399, 
 "@tb:identifier.taxonVariant": 414110, 
@@ -505,8 +633,9 @@
 }
 }, 
 "Tl1563023": {
-"^ot:altLabel": "Bythograea thermydron", 
 "^ot:originalLabel": "Bythograea thermydron Bytmar1.gi56310220", 
+"^ot:ottId": 1097741, 
+"^ot:ottTaxonName": "Bythograea thermydron", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 120913, 
 "@tb:identifier.taxonVariant": 198782, 
@@ -515,8 +644,9 @@
 }
 }, 
 "Tl1563024": {
-"^ot:altLabel": "Drosophila sp.", 
 "^ot:originalLabel": "Drosophila sp. Dromar10", 
+"^ot:ottId": 34907, 
+"^ot:ottTaxonName": "Drosophila", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 52399, 
 "@tb:identifier.taxonVariant": 414110, 
@@ -525,8 +655,9 @@
 }
 }, 
 "Tl1563025": {
-"^ot:altLabel": "Drosophila sp.", 
 "^ot:originalLabel": "Drosophila sp. Dromar24", 
+"^ot:ottId": 34907, 
+"^ot:ottTaxonName": "Drosophila", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 52399, 
 "@tb:identifier.taxonVariant": 414110, 
@@ -535,8 +666,9 @@
 }
 }, 
 "Tl1563026": {
-"^ot:altLabel": "Bombyx mori", 
 "^ot:originalLabel": "Bombyx mori Bmmar.gi2627179", 
+"^ot:ottId": 440274, 
+"^ot:ottTaxonName": "Bombyx mori", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3719, 
 "@tb:identifier.taxonVariant": 8873, 
@@ -545,8 +677,9 @@
 }
 }, 
 "Tl1563027": {
-"^ot:altLabel": "Drosophila sp.", 
 "^ot:originalLabel": "Drosophila sp. Dromar31", 
+"^ot:ottId": 34907, 
+"^ot:ottTaxonName": "Drosophila", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 52399, 
 "@tb:identifier.taxonVariant": 414110, 
@@ -555,8 +688,9 @@
 }
 }, 
 "Tl1563028": {
-"^ot:altLabel": "Drosophila sp.", 
 "^ot:originalLabel": "Drosophila sp. Dromar8", 
+"^ot:ottId": 34907, 
+"^ot:ottTaxonName": "Drosophila", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 52399, 
 "@tb:identifier.taxonVariant": 414110, 
@@ -565,8 +699,9 @@
 }
 }, 
 "Tl1563029": {
-"^ot:altLabel": "Chymomyza amoena", 
 "^ot:originalLabel": "Chymomyza amoena Camar1.gi27465077", 
+"^ot:ottId": 930770, 
+"^ot:ottTaxonName": "Chymomyza amoena", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 52442, 
 "@tb:identifier.taxonVariant": 122525, 
@@ -575,8 +710,9 @@
 }
 }, 
 "Tl1563030": {
-"^ot:altLabel": "Epinotia vertumnana", 
 "^ot:originalLabel": "Epinotia vertumnana Evmar19.gi26986664", 
+"^ot:ottId": 1058337, 
+"^ot:ottTaxonName": "Epinotia vertumnana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 57486, 
 "@tb:identifier.taxonVariant": 129674, 
@@ -585,8 +721,9 @@
 }
 }, 
 "Tl1563031": {
-"^ot:altLabel": "Drosophila sp.", 
 "^ot:originalLabel": "Drosophila sp. Dromar20", 
+"^ot:ottId": 34907, 
+"^ot:ottTaxonName": "Drosophila", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 52399, 
 "@tb:identifier.taxonVariant": 414110, 
@@ -595,8 +732,9 @@
 }
 }, 
 "Tl1563032": {
-"^ot:altLabel": "Girardia tigrina", 
 "^ot:originalLabel": "Girardia tigrina Dgmar1.gi887424", 
+"^ot:ottId": 101228, 
+"^ot:ottTaxonName": "Girardia tigrina", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 40832, 
 "@tb:identifier.taxonVariant": 100265, 
@@ -605,8 +743,9 @@
 }
 }, 
 "Tl1563033": {
-"^ot:altLabel": "Mamestra brassicae", 
 "^ot:originalLabel": "Mamestra brassicae Mbmar1.gi18448946", 
+"^ot:ottId": 111041, 
+"^ot:ottTaxonName": "Mamestra brassicae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 74479, 
 "@tb:identifier.taxonVariant": 151522, 
@@ -615,8 +754,9 @@
 }
 }, 
 "Tl1563034": {
-"^ot:altLabel": "Hyalophora cecropia", 
 "^ot:originalLabel": "Hyalophora cecropia Hcmar1.gi159211", 
+"^ot:ottId": 691019, 
+"^ot:ottTaxonName": "Hyalophora cecropia", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 52319, 
 "@tb:identifier.taxonVariant": 122354, 
@@ -625,8 +765,9 @@
 }
 }, 
 "Tl1563035": {
-"^ot:altLabel": "Mayetiola destructor", 
 "^ot:originalLabel": "Mayetiola destructor Madmar1.gi805122", 
+"^ot:ottId": 348360, 
+"^ot:ottTaxonName": "Mayetiola destructor", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 64148, 
 "@tb:identifier.taxonVariant": 138695, 
@@ -635,8 +776,9 @@
 }
 }, 
 "Tl1563036": {
-"^ot:altLabel": "Attacus atlas", 
 "^ot:originalLabel": "Attacus atlas Attatmar1.gi2337769", 
+"^ot:ottId": 180964, 
+"^ot:ottTaxonName": "Attacus atlas", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 80473, 
 "@tb:identifier.taxonVariant": 158397, 
@@ -645,8 +787,9 @@
 }
 }, 
 "Tl1563037": {
-"^ot:altLabel": "Drosophila sp.", 
 "^ot:originalLabel": "Drosophila sp. Dromar27", 
+"^ot:ottId": 34907, 
+"^ot:ottTaxonName": "Drosophila", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 52399, 
 "@tb:identifier.taxonVariant": 414110, 
@@ -655,8 +798,9 @@
 }
 }, 
 "Tl1563038": {
-"^ot:altLabel": "Paromola bathyalis", 
 "^ot:originalLabel": "Paromola bathyalis Pabmar1.gi189310161", 
+"^ot:ottId": 613895, 
+"^ot:ottTaxonName": "Paromola bathyalis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 358446, 
 "@tb:identifier.taxonVariant": 387639, 
@@ -665,8 +809,9 @@
 }
 }, 
 "Tl1563039": {
-"^ot:altLabel": "Ceratitis capitata", 
 "^ot:originalLabel": "Ceratitis capitata Ccmar2.gi27465081", 
+"^ot:ottId": 34902, 
+"^ot:ottTaxonName": "Ceratitis capitata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 52376, 
 "@tb:identifier.taxonVariant": 122440, 
@@ -675,8 +820,9 @@
 }
 }, 
 "Tl1563040": {
-"^ot:altLabel": "Ceratitis capitata", 
 "^ot:originalLabel": "Ceratitis capitata Ccmar.gi450179", 
+"^ot:ottId": 34902, 
+"^ot:ottTaxonName": "Ceratitis capitata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 52376, 
 "@tb:identifier.taxonVariant": 122440, 
@@ -685,8 +831,9 @@
 }
 }, 
 "Tl1563041": {
-"^ot:altLabel": "Drosophila sp.", 
 "^ot:originalLabel": "Drosophila sp. Dromar15", 
+"^ot:ottId": 34907, 
+"^ot:ottTaxonName": "Drosophila", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 52399, 
 "@tb:identifier.taxonVariant": 414110, 
@@ -695,8 +842,9 @@
 }
 }, 
 "Tl1563042": {
-"^ot:altLabel": "Cancer pagurus", 
 "^ot:originalLabel": "Cancer pagurus Capmar1.gi56310249", 
+"^ot:ottId": 706444, 
+"^ot:ottTaxonName": "Cancer pagurus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 52068, 
 "@tb:identifier.taxonVariant": 121978, 
@@ -705,8 +853,9 @@
 }
 }, 
 "Tl1563043": {
-"^ot:altLabel": "Heterorhabditis bacteriophora", 
 "^ot:originalLabel": "Heterorhabditis bacteriophora Hbmar6.gi1546099", 
+"^ot:ottId": 493867, 
+"^ot:ottTaxonName": "Heterorhabditis bacteriophora", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 13444, 
 "@tb:identifier.taxonVariant": 31710, 
@@ -715,8 +864,9 @@
 }
 }, 
 "Tl1563044": {
-"^ot:altLabel": "Drosophila sp.", 
 "^ot:originalLabel": "Drosophila sp. Dromar21", 
+"^ot:ottId": 34907, 
+"^ot:ottTaxonName": "Drosophila", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 52399, 
 "@tb:identifier.taxonVariant": 414110, 
@@ -728,8 +878,9 @@
 "^ot:originalLabel": "Himar1-delivery and mutagenesis vector pFNLTP16 H3 Himar1.gi81175356"
 }, 
 "Tl1563046": {
-"^ot:altLabel": "Drosophila sp.", 
 "^ot:originalLabel": "Drosophila sp. Dromar6", 
+"^ot:ottId": 34907, 
+"^ot:ottTaxonName": "Drosophila", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 52399, 
 "@tb:identifier.taxonVariant": 414110, 
@@ -738,8 +889,9 @@
 }
 }, 
 "Tl1563047": {
-"^ot:altLabel": "Homo sapiens", 
 "^ot:originalLabel": "Homo sapiens Pacmar2.gi19692999", 
+"^ot:ottId": 770315, 
+"^ot:ottTaxonName": "Homo sapiens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 13680, 
 "@tb:identifier.taxonVariant": 32274, 
@@ -748,8 +900,9 @@
 }
 }, 
 "Tl1563048": {
-"^ot:altLabel": "Drosophila mauritiana", 
 "^ot:originalLabel": "Drosophila mauritiana Mos1.gi75009676", 
+"^ot:ottId": 505718, 
+"^ot:ottTaxonName": "Drosophila mauritiana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 52386, 
 "@tb:identifier.taxonVariant": 122455, 
@@ -758,8 +911,9 @@
 }
 }, 
 "Tl1563049": {
-"^ot:altLabel": "Drosophila sp.", 
 "^ot:originalLabel": "Drosophila sp. Dromar18", 
+"^ot:ottId": 34907, 
+"^ot:ottTaxonName": "Drosophila", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 52399, 
 "@tb:identifier.taxonVariant": 414110, 
@@ -768,8 +922,9 @@
 }
 }, 
 "Tl1563050": {
-"^ot:altLabel": "Drosophila sp.", 
 "^ot:originalLabel": "Drosophila sp. Dromar34", 
+"^ot:ottId": 34907, 
+"^ot:ottTaxonName": "Drosophila", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 52399, 
 "@tb:identifier.taxonVariant": 414110, 
@@ -778,8 +933,9 @@
 }
 }, 
 "Tl1563051": {
-"^ot:altLabel": "Eriphia verrucosa", 
 "^ot:originalLabel": "Eriphia verrucosa Erivmar1.gi189310153", 
+"^ot:ottId": 859115, 
+"^ot:ottTaxonName": "Eriphia verrucosa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 409296, 
 "@tb:identifier.taxonVariant": 544525, 
@@ -788,8 +944,9 @@
 }
 }, 
 "Tl1563052": {
-"^ot:altLabel": "Drosophila sp.", 
 "^ot:originalLabel": "Drosophila sp. Dromar1", 
+"^ot:ottId": 34907, 
+"^ot:ottTaxonName": "Drosophila", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 52399, 
 "@tb:identifier.taxonVariant": 414110, 
@@ -798,8 +955,9 @@
 }
 }, 
 "Tl1563053": {
-"^ot:altLabel": "Drosophila sp.", 
 "^ot:originalLabel": "Drosophila sp. Dromar3", 
+"^ot:ottId": 34907, 
+"^ot:ottTaxonName": "Drosophila", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 52399, 
 "@tb:identifier.taxonVariant": 414110, 
@@ -808,8 +966,9 @@
 }
 }, 
 "Tl1563054": {
-"^ot:altLabel": "Drosophila sp.", 
 "^ot:originalLabel": "Drosophila sp. Dromar17", 
+"^ot:ottId": 34907, 
+"^ot:ottTaxonName": "Drosophila", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 52399, 
 "@tb:identifier.taxonVariant": 414110, 
@@ -818,8 +977,9 @@
 }
 }, 
 "Tl1563055": {
-"^ot:altLabel": "Drosophila sp.", 
 "^ot:originalLabel": "Drosophila sp. Dromar13", 
+"^ot:ottId": 34907, 
+"^ot:ottTaxonName": "Drosophila", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 52399, 
 "@tb:identifier.taxonVariant": 414110, 
@@ -842,7 +1002,18 @@
 "Tr76692": {
 "@label": "con 50 majrule", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:undefined", 
+"^ot:branchLengthTimeUnit": "Myr", 
+"^ot:curatedType": "Bayesian inference ", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "Tn11948193", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 74, 
 "^tb:quality.tree": "Unrated", 
