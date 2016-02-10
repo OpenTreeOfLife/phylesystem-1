@@ -65,22 +65,118 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2016-02-10T17:33:19.528Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:curatorName": "Dail Laughinghouse", 
+"substitutions": {
+"substitution": [
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": "\\b\\s+(\\w*)$"
+}
+}, 
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": "$1"
+}, 
+"old": {
+"$": "^(\\S*\\s+\\S*).*"
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2016-02-10T17:33:19.528Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"Tr93845"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Dail Laughinghouse"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S18551"
 }, 
+"^ot:focalCladeOTTTaxonName": "", 
+"^ot:notIntendedForSynthesis": true, 
 "^ot:otusElementOrder": [
 "Tls49742"
 ], 
 "^ot:studyId": "ot_592", 
-"^ot:studyPublicationReference": "Moya A., Sakamaki K., Mason B.M., Huisman L., Foret S., Weiss Y., Bull T.E., Tomii K., Imai K., Hayward D.C., Ball E.E., & Miller D.J. 2015. Functional conservation of the apoptotic machinery from coral to man: the diverse and complex Bcl-2 and caspase repertoires of Acropora millepora. BMC Genomics, .", 
+"^ot:studyPublication": {
+"@href": "http://dx.doi.org/10.1186/s12864-015-2355-x"
+}, 
+"^ot:studyPublicationReference": "Aurelie Moya, Kazuhiro Sakamaki, Benjamin M. Mason, Lotte Huisman, Sylvain For\u00eat, Yvonne Weiss, Tara E. Bull, Kentaro Tomii, Kenichiro Imai, David C. Hayward, Eldon E. Ball, David J. Miller, 2016, 'Functional conservation of the apoptotic machinery from coral to man: the diverse and complex Bcl-2 and caspase repertoires of Acropora millepora', BMC Genomics, vol. 17, no. 1", 
 "^ot:studyYear": 2015, 
+"^ot:tag": [], 
 "^ot:taxonLinkPrefixes": {
 "@ubio": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:", 
 "@uniprot": "http://purl.uniprot.org/taxonomy/"
@@ -103,8 +199,9 @@
 "^skos:historyNote": "Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlOTUWriter@3993781a $Rev: 1040 $", 
 "otuById": {
 "Tl2183821": {
-"^ot:altLabel": "Tetraodon nigroviridis", 
 "^ot:originalLabel": "Tetraodon nigroviridis Tetngcasp8", 
+"^ot:ottId": 1085993, 
+"^ot:ottTaxonName": "Tetraodon nigroviridis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 107159, 
 "@tb:identifier.taxonVariant": 425318, 
@@ -113,8 +210,9 @@
 }
 }, 
 "Tl2183822": {
-"^ot:altLabel": "Homo sapiens", 
 "^ot:originalLabel": "Homo sapiens Humcasp10", 
+"^ot:ottId": 770315, 
+"^ot:ottTaxonName": "Homo sapiens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 13680, 
 "@tb:identifier.taxonVariant": 32274, 
@@ -123,14 +221,19 @@
 }
 }, 
 "Tl2183823": {
-"^ot:originalLabel": "Canis lupus familiaris Canfcasp14"
+"^ot:originalLabel": "Canis lupus familiaris Canfcasp14", 
+"^ot:ottId": 247333, 
+"^ot:ottTaxonName": "Canis lupus familiaris"
 }, 
 "Tl2183824": {
-"^ot:originalLabel": "Canis lupus familiaris Canfcasp2"
+"^ot:originalLabel": "Canis lupus familiaris Canfcasp2", 
+"^ot:ottId": 247333, 
+"^ot:ottTaxonName": "Canis lupus familiaris"
 }, 
 "Tl2183825": {
-"^ot:altLabel": "Acropora millepora", 
 "^ot:originalLabel": "Acropora millepora Amil26153", 
+"^ot:ottId": 3675115, 
+"^ot:ottTaxonName": "Acropora millepora", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 44270, 
 "@tb:identifier.taxonVariant": 103536, 
@@ -139,8 +242,9 @@
 }
 }, 
 "Tl2183826": {
-"^ot:altLabel": "Fugu rubripes", 
 "^ot:originalLabel": "Fugu rubripes Fugh2uky4", 
+"^ot:ottId": 65341, 
+"^ot:ottTaxonName": "Takifugu rubripes", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 11510, 
 "@tb:identifier.taxonVariant": 27477, 
@@ -150,11 +254,14 @@
 "^skos:prefLabel": "Takifugu rubripes"
 }, 
 "Tl2183827": {
-"^ot:originalLabel": "Canis lupus familiaris Canfcasp1"
+"^ot:originalLabel": "Canis lupus familiaris Canfcasp1", 
+"^ot:ottId": 247333, 
+"^ot:ottTaxonName": "Canis lupus familiaris"
 }, 
 "Tl2183828": {
-"^ot:altLabel": "Acropora digitifera", 
 "^ot:originalLabel": "Acropora digitifera Adicasp15", 
+"^ot:ottId": 366634, 
+"^ot:ottTaxonName": "Acropora digitifera", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 85048, 
 "@tb:identifier.taxonVariant": 163672, 
@@ -163,8 +270,9 @@
 }
 }, 
 "Tl2183829": {
-"^ot:altLabel": "Mus musculus", 
 "^ot:originalLabel": "Mus musculus Mousecas8", 
+"^ot:ottId": 542509, 
+"^ot:ottTaxonName": "Mus musculus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 18305, 
 "@tb:identifier.taxonVariant": 42783, 
@@ -173,8 +281,9 @@
 }
 }, 
 "Tl2183830": {
-"^ot:altLabel": "Xenopus tropicalis", 
 "^ot:originalLabel": "Xenopus tropicalis Xencasp1", 
+"^ot:ottId": 940184, 
+"^ot:ottTaxonName": "Xenopus (Silurana) tropicalis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 26945, 
 "@tb:identifier.taxonVariant": 62884, 
@@ -184,11 +293,14 @@
 "^skos:prefLabel": "Xenopus (Silurana) tropicalis"
 }, 
 "Tl2183831": {
-"^ot:originalLabel": "Canis lupus familiaris Canfcasp9"
+"^ot:originalLabel": "Canis lupus familiaris Canfcasp9", 
+"^ot:ottId": 247333, 
+"^ot:ottTaxonName": "Canis lupus familiaris"
 }, 
 "Tl2183832": {
-"^ot:altLabel": "Nematostella vectensis", 
 "^ot:originalLabel": "Nematostella vectensis Nemve203", 
+"^ot:ottId": 938118, 
+"^ot:ottTaxonName": "Nematostella vectensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 44259, 
 "@tb:identifier.taxonVariant": 103508, 
@@ -197,8 +309,9 @@
 }
 }, 
 "Tl2183833": {
-"^ot:altLabel": "Acropora millepora", 
 "^ot:originalLabel": "Acropora millepora Amil18519", 
+"^ot:ottId": 3675115, 
+"^ot:ottTaxonName": "Acropora millepora", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 44270, 
 "@tb:identifier.taxonVariant": 103536, 
@@ -207,8 +320,9 @@
 }
 }, 
 "Tl2183834": {
-"^ot:altLabel": "Mus musculus", 
 "^ot:originalLabel": "Mus musculus Mousecas14", 
+"^ot:ottId": 542509, 
+"^ot:ottTaxonName": "Mus musculus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 18305, 
 "@tb:identifier.taxonVariant": 42783, 
@@ -217,8 +331,9 @@
 }
 }, 
 "Tl2183835": {
-"^ot:altLabel": "Acropora digitifera", 
 "^ot:originalLabel": "Acropora digitifera Adicasp19", 
+"^ot:ottId": 366634, 
+"^ot:ottTaxonName": "Acropora digitifera", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 85048, 
 "@tb:identifier.taxonVariant": 163672, 
@@ -227,8 +342,9 @@
 }
 }, 
 "Tl2183836": {
-"^ot:altLabel": "Tetraodon nigroviridis", 
 "^ot:originalLabel": "Tetraodon nigroviridis Tetngcasp9", 
+"^ot:ottId": 1085993, 
+"^ot:ottTaxonName": "Tetraodon nigroviridis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 107159, 
 "@tb:identifier.taxonVariant": 425318, 
@@ -237,8 +353,9 @@
 }
 }, 
 "Tl2183837": {
-"^ot:altLabel": "Xenopus tropicalis", 
 "^ot:originalLabel": "Xenopus tropicalis Xencasp3", 
+"^ot:ottId": 940184, 
+"^ot:ottTaxonName": "Xenopus (Silurana) tropicalis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 26945, 
 "@tb:identifier.taxonVariant": 62884, 
@@ -248,11 +365,14 @@
 "^skos:prefLabel": "Xenopus (Silurana) tropicalis"
 }, 
 "Tl2183838": {
-"^ot:originalLabel": "Canis lupus familiaris Canfclar"
+"^ot:originalLabel": "Canis lupus familiaris Canfclar", 
+"^ot:ottId": 247333, 
+"^ot:ottTaxonName": "Canis lupus familiaris"
 }, 
 "Tl2183839": {
-"^ot:altLabel": "Acropora millepora", 
 "^ot:originalLabel": "Acropora millepora Amil12671", 
+"^ot:ottId": 3675115, 
+"^ot:ottTaxonName": "Acropora millepora", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 44270, 
 "@tb:identifier.taxonVariant": 103536, 
@@ -261,8 +381,9 @@
 }
 }, 
 "Tl2183840": {
-"^ot:altLabel": "Fugu rubripes", 
 "^ot:originalLabel": "Fugu rubripes Fugcasp3", 
+"^ot:ottId": 65341, 
+"^ot:ottTaxonName": "Takifugu rubripes", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 11510, 
 "@tb:identifier.taxonVariant": 27477, 
@@ -272,11 +393,14 @@
 "^skos:prefLabel": "Takifugu rubripes"
 }, 
 "Tl2183841": {
-"^ot:originalLabel": "Homo sapiens Humcaspc"
+"^ot:originalLabel": "Homo sapiens Humcaspc", 
+"^ot:ottId": 770315, 
+"^ot:ottTaxonName": "Homo sapiens"
 }, 
 "Tl2183842": {
-"^ot:altLabel": "Gallus gallus", 
 "^ot:originalLabel": "Gallus gallus Galcasp2", 
+"^ot:ottId": 153563, 
+"^ot:ottTaxonName": "Gallus gallus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 631380, 
 "@tb:identifier.taxonVariant": 846392, 
@@ -285,8 +409,9 @@
 }
 }, 
 "Tl2183843": {
-"^ot:altLabel": "Acropora millepora", 
 "^ot:originalLabel": "Acropora millepora Amil8447", 
+"^ot:ottId": 3675115, 
+"^ot:ottTaxonName": "Acropora millepora", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 44270, 
 "@tb:identifier.taxonVariant": 103536, 
@@ -295,11 +420,14 @@
 }
 }, 
 "Tl2183844": {
-"^ot:originalLabel": "Canis lupus familiaris Canfcasp12"
+"^ot:originalLabel": "Canis lupus familiaris Canfcasp12", 
+"^ot:ottId": 247333, 
+"^ot:ottTaxonName": "Canis lupus familiaris"
 }, 
 "Tl2183845": {
-"^ot:altLabel": "Acropora digitifera", 
 "^ot:originalLabel": "Acropora digitifera Adicasp4", 
+"^ot:ottId": 366634, 
+"^ot:ottTaxonName": "Acropora digitifera", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 85048, 
 "@tb:identifier.taxonVariant": 163672, 
@@ -308,8 +436,9 @@
 }
 }, 
 "Tl2183846": {
-"^ot:altLabel": "Acropora millepora", 
 "^ot:originalLabel": "Acropora millepora Amil8454", 
+"^ot:ottId": 3675115, 
+"^ot:ottTaxonName": "Acropora millepora", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 44270, 
 "@tb:identifier.taxonVariant": 103536, 
@@ -318,8 +447,9 @@
 }
 }, 
 "Tl2183847": {
-"^ot:altLabel": "Nematostella vectensis", 
 "^ot:originalLabel": "Nematostella vectensis Nemve210", 
+"^ot:ottId": 938118, 
+"^ot:ottTaxonName": "Nematostella vectensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 44259, 
 "@tb:identifier.taxonVariant": 103508, 
@@ -328,8 +458,9 @@
 }
 }, 
 "Tl2183848": {
-"^ot:altLabel": "Homo sapiens", 
 "^ot:originalLabel": "Homo sapiens Humcasp7", 
+"^ot:ottId": 770315, 
+"^ot:ottTaxonName": "Homo sapiens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 13680, 
 "@tb:identifier.taxonVariant": 32274, 
@@ -338,8 +469,9 @@
 }
 }, 
 "Tl2183849": {
-"^ot:altLabel": "Acropora millepora", 
 "^ot:originalLabel": "Acropora millepora Amil779", 
+"^ot:ottId": 3675115, 
+"^ot:ottTaxonName": "Acropora millepora", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 44270, 
 "@tb:identifier.taxonVariant": 103536, 
@@ -348,8 +480,9 @@
 }
 }, 
 "Tl2183850": {
-"^ot:altLabel": "Mus musculus", 
 "^ot:originalLabel": "Mus musculus Mousecas6", 
+"^ot:ottId": 542509, 
+"^ot:ottTaxonName": "Mus musculus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 18305, 
 "@tb:identifier.taxonVariant": 42783, 
@@ -358,8 +491,9 @@
 }
 }, 
 "Tl2183851": {
-"^ot:altLabel": "Fugu rubripes", 
 "^ot:originalLabel": "Fugu rubripes Fugh2sku3", 
+"^ot:ottId": 65341, 
+"^ot:ottTaxonName": "Takifugu rubripes", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 11510, 
 "@tb:identifier.taxonVariant": 27477, 
@@ -369,8 +503,9 @@
 "^skos:prefLabel": "Takifugu rubripes"
 }, 
 "Tl2183852": {
-"^ot:altLabel": "Homo sapiens", 
 "^ot:originalLabel": "Homo sapiens Humcasp2", 
+"^ot:ottId": 770315, 
+"^ot:ottTaxonName": "Homo sapiens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 13680, 
 "@tb:identifier.taxonVariant": 32274, 
@@ -379,8 +514,9 @@
 }
 }, 
 "Tl2183853": {
-"^ot:altLabel": "Acropora digitifera", 
 "^ot:originalLabel": "Acropora digitifera Adicasp5", 
+"^ot:ottId": 366634, 
+"^ot:ottTaxonName": "Acropora digitifera", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 85048, 
 "@tb:identifier.taxonVariant": 163672, 
@@ -389,11 +525,14 @@
 }
 }, 
 "Tl2183854": {
-"^ot:originalLabel": "Xenopus tropicalis Xencflar"
+"^ot:originalLabel": "Xenopus tropicalis Xencflar", 
+"^ot:ottId": 940184, 
+"^ot:ottTaxonName": "Xenopus (Silurana) tropicalis"
 }, 
 "Tl2183855": {
-"^ot:altLabel": "Acropora millepora", 
 "^ot:originalLabel": "Acropora millepora Amil2288", 
+"^ot:ottId": 3675115, 
+"^ot:ottTaxonName": "Acropora millepora", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 44270, 
 "@tb:identifier.taxonVariant": 103536, 
@@ -402,8 +541,9 @@
 }
 }, 
 "Tl2183856": {
-"^ot:altLabel": "Xenopus tropicalis", 
 "^ot:originalLabel": "Xenopus tropicalis Xencasp10", 
+"^ot:ottId": 940184, 
+"^ot:ottTaxonName": "Xenopus (Silurana) tropicalis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 26945, 
 "@tb:identifier.taxonVariant": 62884, 
@@ -413,14 +553,19 @@
 "^skos:prefLabel": "Xenopus (Silurana) tropicalis"
 }, 
 "Tl2183857": {
-"^ot:originalLabel": "Canis lupus familiaris Canfcasp10"
+"^ot:originalLabel": "Canis lupus familiaris Canfcasp10", 
+"^ot:ottId": 247333, 
+"^ot:ottTaxonName": "Canis lupus familiaris"
 }, 
 "Tl2183858": {
-"^ot:originalLabel": "Mus musculus Mouseclar"
+"^ot:originalLabel": "Mus musculus Mouseclar", 
+"^ot:ottId": 542509, 
+"^ot:ottTaxonName": "Mus musculus"
 }, 
 "Tl2183859": {
-"^ot:altLabel": "Fugu rubripes", 
 "^ot:originalLabel": "Fugu rubripes Fugh2v832", 
+"^ot:ottId": 65341, 
+"^ot:ottTaxonName": "Takifugu rubripes", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 11510, 
 "@tb:identifier.taxonVariant": 27477, 
@@ -430,8 +575,9 @@
 "^skos:prefLabel": "Takifugu rubripes"
 }, 
 "Tl2183860": {
-"^ot:altLabel": "Acropora digitifera", 
 "^ot:originalLabel": "Acropora digitifera Adicasp1", 
+"^ot:ottId": 366634, 
+"^ot:ottTaxonName": "Acropora digitifera", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 85048, 
 "@tb:identifier.taxonVariant": 163672, 
@@ -440,8 +586,9 @@
 }
 }, 
 "Tl2183861": {
-"^ot:altLabel": "Nematostella vectensis", 
 "^ot:originalLabel": "Nematostella vectensis Nemve202", 
+"^ot:ottId": 938118, 
+"^ot:ottTaxonName": "Nematostella vectensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 44259, 
 "@tb:identifier.taxonVariant": 103508, 
@@ -450,8 +597,9 @@
 }
 }, 
 "Tl2183862": {
-"^ot:altLabel": "Gallus gallus", 
 "^ot:originalLabel": "Gallus gallus Galcasp8", 
+"^ot:ottId": 153563, 
+"^ot:ottTaxonName": "Gallus gallus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 631380, 
 "@tb:identifier.taxonVariant": 846392, 
@@ -460,8 +608,9 @@
 }
 }, 
 "Tl2183863": {
-"^ot:altLabel": "Acropora digitifera", 
 "^ot:originalLabel": "Acropora digitifera Adicasp6", 
+"^ot:ottId": 366634, 
+"^ot:ottTaxonName": "Acropora digitifera", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 85048, 
 "@tb:identifier.taxonVariant": 163672, 
@@ -470,8 +619,9 @@
 }
 }, 
 "Tl2183864": {
-"^ot:altLabel": "Gallus gallus", 
 "^ot:originalLabel": "Gallus gallus Galcasp18", 
+"^ot:ottId": 153563, 
+"^ot:ottTaxonName": "Gallus gallus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 631380, 
 "@tb:identifier.taxonVariant": 846392, 
@@ -480,8 +630,9 @@
 }
 }, 
 "Tl2183865": {
-"^ot:altLabel": "Acropora digitifera", 
 "^ot:originalLabel": "Acropora digitifera Adicasp10", 
+"^ot:ottId": 366634, 
+"^ot:ottTaxonName": "Acropora digitifera", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 85048, 
 "@tb:identifier.taxonVariant": 163672, 
@@ -490,8 +641,9 @@
 }
 }, 
 "Tl2183866": {
-"^ot:altLabel": "Tetraodon nigroviridis", 
 "^ot:originalLabel": "Tetraodon nigroviridis Tetngcasp7", 
+"^ot:ottId": 1085993, 
+"^ot:ottTaxonName": "Tetraodon nigroviridis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 107159, 
 "@tb:identifier.taxonVariant": 425318, 
@@ -500,8 +652,9 @@
 }
 }, 
 "Tl2183867": {
-"^ot:altLabel": "Acropora digitifera", 
 "^ot:originalLabel": "Acropora digitifera Adicasp13", 
+"^ot:ottId": 366634, 
+"^ot:ottTaxonName": "Acropora digitifera", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 85048, 
 "@tb:identifier.taxonVariant": 163672, 
@@ -510,8 +663,9 @@
 }
 }, 
 "Tl2183868": {
-"^ot:altLabel": "Acropora millepora", 
 "^ot:originalLabel": "Acropora millepora Amil12678", 
+"^ot:ottId": 3675115, 
+"^ot:ottTaxonName": "Acropora millepora", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 44270, 
 "@tb:identifier.taxonVariant": 103536, 
@@ -520,8 +674,9 @@
 }
 }, 
 "Tl2183869": {
-"^ot:altLabel": "Homo sapiens", 
 "^ot:originalLabel": "Homo sapiens Humcasp1", 
+"^ot:ottId": 770315, 
+"^ot:ottTaxonName": "Homo sapiens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 13680, 
 "@tb:identifier.taxonVariant": 32274, 
@@ -530,8 +685,9 @@
 }
 }, 
 "Tl2183870": {
-"^ot:altLabel": "Acropora millepora", 
 "^ot:originalLabel": "Acropora millepora Amil9566", 
+"^ot:ottId": 3675115, 
+"^ot:ottTaxonName": "Acropora millepora", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 44270, 
 "@tb:identifier.taxonVariant": 103536, 
@@ -540,11 +696,14 @@
 }
 }, 
 "Tl2183871": {
-"^ot:originalLabel": "Canis lupus familiaris Canfcasp16"
+"^ot:originalLabel": "Canis lupus familiaris Canfcasp16", 
+"^ot:ottId": 247333, 
+"^ot:ottTaxonName": "Canis lupus familiaris"
 }, 
 "Tl2183872": {
-"^ot:altLabel": "Mus musculus", 
 "^ot:originalLabel": "Mus musculus Mousecas12", 
+"^ot:ottId": 542509, 
+"^ot:ottTaxonName": "Mus musculus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 18305, 
 "@tb:identifier.taxonVariant": 42783, 
@@ -553,8 +712,9 @@
 }
 }, 
 "Tl2183873": {
-"^ot:altLabel": "Xenopus tropicalis", 
 "^ot:originalLabel": "Xenopus tropicalis Xencasp6", 
+"^ot:ottId": 940184, 
+"^ot:ottTaxonName": "Xenopus (Silurana) tropicalis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 26945, 
 "@tb:identifier.taxonVariant": 62884, 
@@ -564,8 +724,9 @@
 "^skos:prefLabel": "Xenopus (Silurana) tropicalis"
 }, 
 "Tl2183874": {
-"^ot:altLabel": "Homo sapiens", 
 "^ot:originalLabel": "Homo sapiens Humcasp3", 
+"^ot:ottId": 770315, 
+"^ot:ottTaxonName": "Homo sapiens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 13680, 
 "@tb:identifier.taxonVariant": 32274, 
@@ -574,8 +735,9 @@
 }
 }, 
 "Tl2183875": {
-"^ot:altLabel": "Anemonia viridis", 
 "^ot:originalLabel": "Anemonia viridis Aviq09y99", 
+"^ot:ottId": 214124, 
+"^ot:ottTaxonName": "Anemonia viridis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 45774, 
 "@tb:identifier.taxonVariant": 107192, 
@@ -584,8 +746,9 @@
 }
 }, 
 "Tl2183876": {
-"^ot:altLabel": "Acropora digitifera", 
 "^ot:originalLabel": "Acropora digitifera Adicasp21", 
+"^ot:ottId": 366634, 
+"^ot:ottTaxonName": "Acropora digitifera", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 85048, 
 "@tb:identifier.taxonVariant": 163672, 
@@ -594,11 +757,14 @@
 }
 }, 
 "Tl2183877": {
-"^ot:originalLabel": "Acropora digitifera Adicaspx"
+"^ot:originalLabel": "Acropora digitifera Adicaspx", 
+"^ot:ottId": 366634, 
+"^ot:ottTaxonName": "Acropora digitifera"
 }, 
 "Tl2183878": {
-"^ot:altLabel": "Nematostella vectensis", 
 "^ot:originalLabel": "Nematostella vectensis Nemve207", 
+"^ot:ottId": 938118, 
+"^ot:ottTaxonName": "Nematostella vectensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 44259, 
 "@tb:identifier.taxonVariant": 103508, 
@@ -607,8 +773,9 @@
 }
 }, 
 "Tl2183879": {
-"^ot:altLabel": "Aiptasia pallida", 
 "^ot:originalLabel": "Aiptasia pallida Aipq3hl92", 
+"^ot:ottId": 135923, 
+"^ot:ottTaxonName": "Aiptasia pallida", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 647, 
 "@tb:identifier.taxonVariant": 1635, 
@@ -617,11 +784,14 @@
 }
 }, 
 "Tl2183880": {
-"^ot:originalLabel": "Tetraodon nigroviridis Tetncflar"
+"^ot:originalLabel": "Tetraodon nigroviridis Tetncflar", 
+"^ot:ottId": 1085993, 
+"^ot:ottTaxonName": "Tetraodon nigroviridis"
 }, 
 "Tl2183881": {
-"^ot:altLabel": "Homo sapiens", 
 "^ot:originalLabel": "Homo sapiens Humcasp5", 
+"^ot:ottId": 770315, 
+"^ot:ottTaxonName": "Homo sapiens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 13680, 
 "@tb:identifier.taxonVariant": 32274, 
@@ -630,8 +800,9 @@
 }
 }, 
 "Tl2183882": {
-"^ot:altLabel": "Nematostella vectensis", 
 "^ot:originalLabel": "Nematostella vectensis Nemve205", 
+"^ot:ottId": 938118, 
+"^ot:ottTaxonName": "Nematostella vectensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 44259, 
 "@tb:identifier.taxonVariant": 103508, 
@@ -640,11 +811,14 @@
 }
 }, 
 "Tl2183883": {
-"^ot:originalLabel": "Canis lupus familiaris Canfcasp3"
+"^ot:originalLabel": "Canis lupus familiaris Canfcasp3", 
+"^ot:ottId": 247333, 
+"^ot:ottTaxonName": "Canis lupus familiaris"
 }, 
 "Tl2183884": {
-"^ot:altLabel": "Homo sapiens", 
 "^ot:originalLabel": "Homo sapiens Humcasp4", 
+"^ot:ottId": 770315, 
+"^ot:ottTaxonName": "Homo sapiens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 13680, 
 "@tb:identifier.taxonVariant": 32274, 
@@ -653,11 +827,14 @@
 }
 }, 
 "Tl2183885": {
-"^ot:originalLabel": "Homo sapiens Humcflar"
+"^ot:originalLabel": "Homo sapiens Humcflar", 
+"^ot:ottId": 770315, 
+"^ot:ottTaxonName": "Homo sapiens"
 }, 
 "Tl2183886": {
-"^ot:altLabel": "Acropora millepora", 
 "^ot:originalLabel": "Acropora millepora Amil19957", 
+"^ot:ottId": 3675115, 
+"^ot:ottTaxonName": "Acropora millepora", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 44270, 
 "@tb:identifier.taxonVariant": 103536, 
@@ -666,8 +843,9 @@
 }
 }, 
 "Tl2183887": {
-"^ot:altLabel": "Acropora digitifera", 
 "^ot:originalLabel": "Acropora digitifera Adicasp22", 
+"^ot:ottId": 366634, 
+"^ot:ottTaxonName": "Acropora digitifera", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 85048, 
 "@tb:identifier.taxonVariant": 163672, 
@@ -676,8 +854,9 @@
 }
 }, 
 "Tl2183888": {
-"^ot:altLabel": "Acropora millepora", 
 "^ot:originalLabel": "Acropora millepora Amil8100", 
+"^ot:ottId": 3675115, 
+"^ot:ottTaxonName": "Acropora millepora", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 44270, 
 "@tb:identifier.taxonVariant": 103536, 
@@ -686,8 +865,9 @@
 }
 }, 
 "Tl2183889": {
-"^ot:altLabel": "Gallus gallus", 
 "^ot:originalLabel": "Gallus gallus Galcasp1", 
+"^ot:ottId": 153563, 
+"^ot:ottTaxonName": "Gallus gallus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 631380, 
 "@tb:identifier.taxonVariant": 846392, 
@@ -696,8 +876,9 @@
 }
 }, 
 "Tl2183890": {
-"^ot:altLabel": "Tetraodon nigroviridis", 
 "^ot:originalLabel": "Tetraodon nigroviridis Tetngcasp6", 
+"^ot:ottId": 1085993, 
+"^ot:ottTaxonName": "Tetraodon nigroviridis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 107159, 
 "@tb:identifier.taxonVariant": 425318, 
@@ -706,8 +887,9 @@
 }
 }, 
 "Tl2183891": {
-"^ot:altLabel": "Tetraodon nigroviridis", 
 "^ot:originalLabel": "Tetraodon nigroviridis Tetngcasp3", 
+"^ot:ottId": 1085993, 
+"^ot:ottTaxonName": "Tetraodon nigroviridis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 107159, 
 "@tb:identifier.taxonVariant": 425318, 
@@ -716,8 +898,9 @@
 }
 }, 
 "Tl2183892": {
-"^ot:altLabel": "Gallus gallus", 
 "^ot:originalLabel": "Gallus gallus Galcasp7", 
+"^ot:ottId": 153563, 
+"^ot:ottTaxonName": "Gallus gallus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 631380, 
 "@tb:identifier.taxonVariant": 846392, 
@@ -726,8 +909,9 @@
 }
 }, 
 "Tl2183893": {
-"^ot:altLabel": "Mus musculus", 
 "^ot:originalLabel": "Mus musculus Mousecas2", 
+"^ot:ottId": 542509, 
+"^ot:ottTaxonName": "Mus musculus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 18305, 
 "@tb:identifier.taxonVariant": 42783, 
@@ -736,8 +920,9 @@
 }
 }, 
 "Tl2183894": {
-"^ot:altLabel": "Homo sapiens", 
 "^ot:originalLabel": "Homo sapiens Humcasp8", 
+"^ot:ottId": 770315, 
+"^ot:ottTaxonName": "Homo sapiens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 13680, 
 "@tb:identifier.taxonVariant": 32274, 
@@ -746,8 +931,9 @@
 }
 }, 
 "Tl2183895": {
-"^ot:altLabel": "Acropora digitifera", 
 "^ot:originalLabel": "Acropora digitifera Adicasp8", 
+"^ot:ottId": 366634, 
+"^ot:ottTaxonName": "Acropora digitifera", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 85048, 
 "@tb:identifier.taxonVariant": 163672, 
@@ -756,8 +942,9 @@
 }
 }, 
 "Tl2183896": {
-"^ot:altLabel": "Acropora millepora", 
 "^ot:originalLabel": "Acropora millepora Amil12876", 
+"^ot:ottId": 3675115, 
+"^ot:ottTaxonName": "Acropora millepora", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 44270, 
 "@tb:identifier.taxonVariant": 103536, 
@@ -766,8 +953,9 @@
 }
 }, 
 "Tl2183897": {
-"^ot:altLabel": "Nematostella vectensis", 
 "^ot:originalLabel": "Nematostella vectensis Nemve201", 
+"^ot:ottId": 938118, 
+"^ot:ottTaxonName": "Nematostella vectensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 44259, 
 "@tb:identifier.taxonVariant": 103508, 
@@ -776,8 +964,9 @@
 }
 }, 
 "Tl2183898": {
-"^ot:altLabel": "Xenopus tropicalis", 
 "^ot:originalLabel": "Xenopus tropicalis Xencasp2", 
+"^ot:ottId": 940184, 
+"^ot:ottTaxonName": "Xenopus (Silurana) tropicalis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 26945, 
 "@tb:identifier.taxonVariant": 62884, 
@@ -787,8 +976,9 @@
 "^skos:prefLabel": "Xenopus (Silurana) tropicalis"
 }, 
 "Tl2183899": {
-"^ot:altLabel": "Gallus gallus", 
 "^ot:originalLabel": "Gallus gallus Galcasp10", 
+"^ot:ottId": 153563, 
+"^ot:ottTaxonName": "Gallus gallus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 631380, 
 "@tb:identifier.taxonVariant": 846392, 
@@ -797,8 +987,9 @@
 }
 }, 
 "Tl2183900": {
-"^ot:altLabel": "Acropora digitifera", 
 "^ot:originalLabel": "Acropora digitifera Adicasp2", 
+"^ot:ottId": 366634, 
+"^ot:ottTaxonName": "Acropora digitifera", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 85048, 
 "@tb:identifier.taxonVariant": 163672, 
@@ -807,8 +998,9 @@
 }
 }, 
 "Tl2183901": {
-"^ot:altLabel": "Acropora digitifera", 
 "^ot:originalLabel": "Acropora digitifera Adicasp3", 
+"^ot:ottId": 366634, 
+"^ot:ottTaxonName": "Acropora digitifera", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 85048, 
 "@tb:identifier.taxonVariant": 163672, 
@@ -817,8 +1009,9 @@
 }
 }, 
 "Tl2183902": {
-"^ot:altLabel": "Stylophora pistillata", 
 "^ot:originalLabel": "Stylophora pistillata Stpg8xqy3", 
+"^ot:ottId": 713802, 
+"^ot:ottTaxonName": "Stylophora pistillata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 71331, 
 "@tb:identifier.taxonVariant": 147600, 
@@ -827,8 +1020,9 @@
 }
 }, 
 "Tl2183903": {
-"^ot:altLabel": "Xenopus tropicalis", 
 "^ot:originalLabel": "Xenopus tropicalis Xencasp7", 
+"^ot:ottId": 940184, 
+"^ot:ottTaxonName": "Xenopus (Silurana) tropicalis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 26945, 
 "@tb:identifier.taxonVariant": 62884, 
@@ -838,8 +1032,9 @@
 "^skos:prefLabel": "Xenopus (Silurana) tropicalis"
 }, 
 "Tl2183904": {
-"^ot:altLabel": "Fugu rubripes", 
 "^ot:originalLabel": "Fugu rubripes Fugh2thl4", 
+"^ot:ottId": 65341, 
+"^ot:ottTaxonName": "Takifugu rubripes", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 11510, 
 "@tb:identifier.taxonVariant": 27477, 
@@ -849,8 +1044,9 @@
 "^skos:prefLabel": "Takifugu rubripes"
 }, 
 "Tl2183905": {
-"^ot:altLabel": "Mus musculus", 
 "^ot:originalLabel": "Mus musculus Mousecas1", 
+"^ot:ottId": 542509, 
+"^ot:ottTaxonName": "Mus musculus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 18305, 
 "@tb:identifier.taxonVariant": 42783, 
@@ -859,8 +1055,9 @@
 }
 }, 
 "Tl2183906": {
-"^ot:altLabel": "Acropora millepora", 
 "^ot:originalLabel": "Acropora millepora Amil12676", 
+"^ot:ottId": 3675115, 
+"^ot:ottTaxonName": "Acropora millepora", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 44270, 
 "@tb:identifier.taxonVariant": 103536, 
@@ -869,8 +1066,9 @@
 }
 }, 
 "Tl2183907": {
-"^ot:altLabel": "Acropora digitifera", 
 "^ot:originalLabel": "Acropora digitifera Adicasp20", 
+"^ot:ottId": 366634, 
+"^ot:ottTaxonName": "Acropora digitifera", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 85048, 
 "@tb:identifier.taxonVariant": 163672, 
@@ -879,8 +1077,9 @@
 }
 }, 
 "Tl2183908": {
-"^ot:altLabel": "Homo sapiens", 
 "^ot:originalLabel": "Homo sapiens Humcasp6", 
+"^ot:ottId": 770315, 
+"^ot:ottTaxonName": "Homo sapiens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 13680, 
 "@tb:identifier.taxonVariant": 32274, 
@@ -889,11 +1088,14 @@
 }
 }, 
 "Tl2183909": {
-"^ot:originalLabel": "Canis lupus familiaris Canfcasp8"
+"^ot:originalLabel": "Canis lupus familiaris Canfcasp8", 
+"^ot:ottId": 247333, 
+"^ot:ottTaxonName": "Canis lupus familiaris"
 }, 
 "Tl2183910": {
-"^ot:altLabel": "Acropora digitifera", 
 "^ot:originalLabel": "Acropora digitifera Adicasp12", 
+"^ot:ottId": 366634, 
+"^ot:ottTaxonName": "Acropora digitifera", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 85048, 
 "@tb:identifier.taxonVariant": 163672, 
@@ -902,8 +1104,9 @@
 }
 }, 
 "Tl2183911": {
-"^ot:altLabel": "Xenopus tropicalis", 
 "^ot:originalLabel": "Xenopus tropicalis Xencasp9", 
+"^ot:ottId": 940184, 
+"^ot:ottTaxonName": "Xenopus (Silurana) tropicalis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 26945, 
 "@tb:identifier.taxonVariant": 62884, 
@@ -913,8 +1116,9 @@
 "^skos:prefLabel": "Xenopus (Silurana) tropicalis"
 }, 
 "Tl2183912": {
-"^ot:altLabel": "Mus musculus", 
 "^ot:originalLabel": "Mus musculus Mousecas7", 
+"^ot:ottId": 542509, 
+"^ot:ottTaxonName": "Mus musculus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 18305, 
 "@tb:identifier.taxonVariant": 42783, 
@@ -923,8 +1127,9 @@
 }
 }, 
 "Tl2183913": {
-"^ot:altLabel": "Homo sapiens", 
 "^ot:originalLabel": "Homo sapiens Humcasp9", 
+"^ot:ottId": 770315, 
+"^ot:ottTaxonName": "Homo sapiens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 13680, 
 "@tb:identifier.taxonVariant": 32274, 
@@ -933,8 +1138,9 @@
 }
 }, 
 "Tl2183914": {
-"^ot:altLabel": "Homo sapiens", 
 "^ot:originalLabel": "Homo sapiens Humcasp14", 
+"^ot:ottId": 770315, 
+"^ot:ottTaxonName": "Homo sapiens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 13680, 
 "@tb:identifier.taxonVariant": 32274, 
@@ -943,8 +1149,9 @@
 }
 }, 
 "Tl2183915": {
-"^ot:altLabel": "Mus musculus", 
 "^ot:originalLabel": "Mus musculus Mousecas4", 
+"^ot:ottId": 542509, 
+"^ot:ottTaxonName": "Mus musculus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 18305, 
 "@tb:identifier.taxonVariant": 42783, 
@@ -953,8 +1160,9 @@
 }
 }, 
 "Tl2183916": {
-"^ot:altLabel": "Tetraodon nigroviridis", 
 "^ot:originalLabel": "Tetraodon nigroviridis Tetngcasp2", 
+"^ot:ottId": 1085993, 
+"^ot:ottTaxonName": "Tetraodon nigroviridis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 107159, 
 "@tb:identifier.taxonVariant": 425318, 
@@ -963,8 +1171,9 @@
 }
 }, 
 "Tl2183917": {
-"^ot:altLabel": "Acropora millepora", 
 "^ot:originalLabel": "Acropora millepora Amil9586", 
+"^ot:ottId": 3675115, 
+"^ot:ottTaxonName": "Acropora millepora", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 44270, 
 "@tb:identifier.taxonVariant": 103536, 
@@ -973,8 +1182,9 @@
 }
 }, 
 "Tl2183918": {
-"^ot:altLabel": "Nematostella vectensis", 
 "^ot:originalLabel": "Nematostella vectensis Nemve206", 
+"^ot:ottId": 938118, 
+"^ot:ottTaxonName": "Nematostella vectensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 44259, 
 "@tb:identifier.taxonVariant": 103508, 
@@ -983,8 +1193,9 @@
 }
 }, 
 "Tl2183919": {
-"^ot:altLabel": "Gallus gallus", 
 "^ot:originalLabel": "Gallus gallus Galcasp9", 
+"^ot:ottId": 153563, 
+"^ot:ottTaxonName": "Gallus gallus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 631380, 
 "@tb:identifier.taxonVariant": 846392, 
@@ -993,8 +1204,9 @@
 }
 }, 
 "Tl2183920": {
-"^ot:altLabel": "Mus musculus", 
 "^ot:originalLabel": "Mus musculus Mousecas9", 
+"^ot:ottId": 542509, 
+"^ot:ottTaxonName": "Mus musculus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 18305, 
 "@tb:identifier.taxonVariant": 42783, 
@@ -1003,11 +1215,14 @@
 }
 }, 
 "Tl2183921": {
-"^ot:originalLabel": "Canis lupus familiaris Canfcasp4"
+"^ot:originalLabel": "Canis lupus familiaris Canfcasp4", 
+"^ot:ottId": 247333, 
+"^ot:ottTaxonName": "Canis lupus familiaris"
 }, 
 "Tl2183922": {
-"^ot:altLabel": "Mus musculus", 
 "^ot:originalLabel": "Mus musculus Mousecas3", 
+"^ot:ottId": 542509, 
+"^ot:ottTaxonName": "Mus musculus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 18305, 
 "@tb:identifier.taxonVariant": 42783, 
@@ -1016,8 +1231,9 @@
 }
 }, 
 "Tl2183923": {
-"^ot:altLabel": "Gallus gallus", 
 "^ot:originalLabel": "Gallus gallus Galcasp3", 
+"^ot:ottId": 153563, 
+"^ot:ottTaxonName": "Gallus gallus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 631380, 
 "@tb:identifier.taxonVariant": 846392, 
@@ -1026,8 +1242,9 @@
 }
 }, 
 "Tl2183924": {
-"^ot:altLabel": "Nematostella vectensis", 
 "^ot:originalLabel": "Nematostella vectensis Nemv100278", 
+"^ot:ottId": 938118, 
+"^ot:ottTaxonName": "Nematostella vectensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 44259, 
 "@tb:identifier.taxonVariant": 103508, 
@@ -1036,14 +1253,19 @@
 }
 }, 
 "Tl2183925": {
-"^ot:originalLabel": "Homo sapiens HUMAN Bok"
+"^ot:originalLabel": "Homo sapiens HUMAN Bok", 
+"^ot:ottId": 770315, 
+"^ot:ottTaxonName": "Homo sapiens"
 }, 
 "Tl2183926": {
-"^ot:originalLabel": "Fugu rubripes TAKRU B2l1"
+"^ot:originalLabel": "Fugu rubripes TAKRU B2l1", 
+"^ot:ottId": 65341, 
+"^ot:ottTaxonName": "Takifugu rubripes"
 }, 
 "Tl2183927": {
-"^ot:altLabel": "Nematostella vectensis", 
 "^ot:originalLabel": "Nematostella vectensis Nemv208969", 
+"^ot:ottId": 938118, 
+"^ot:ottTaxonName": "Nematostella vectensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 44259, 
 "@tb:identifier.taxonVariant": 103508, 
@@ -1052,8 +1274,9 @@
 }
 }, 
 "Tl2183928": {
-"^ot:altLabel": "Acropora digitifera", 
 "^ot:originalLabel": "Acropora digitifera Adig09624", 
+"^ot:ottId": 366634, 
+"^ot:ottTaxonName": "Acropora digitifera", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 85048, 
 "@tb:identifier.taxonVariant": 163672, 
@@ -1062,14 +1285,19 @@
 }
 }, 
 "Tl2183929": {
-"^ot:originalLabel": "Homo sapiens HUMAN Mcl1"
+"^ot:originalLabel": "Homo sapiens HUMAN Mcl1", 
+"^ot:ottId": 770315, 
+"^ot:ottTaxonName": "Homo sapiens"
 }, 
 "Tl2183930": {
-"^ot:originalLabel": "Gallus gallus CHICK Bcl2"
+"^ot:originalLabel": "Gallus gallus CHICK Bcl2", 
+"^ot:ottId": 153563, 
+"^ot:ottTaxonName": "Gallus gallus"
 }, 
 "Tl2183931": {
-"^ot:altLabel": "Acropora millepora", 
 "^ot:originalLabel": "Acropora millepora Amil6211", 
+"^ot:ottId": 3675115, 
+"^ot:ottTaxonName": "Acropora millepora", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 44270, 
 "@tb:identifier.taxonVariant": 103536, 
@@ -1078,11 +1306,14 @@
 }
 }, 
 "Tl2183932": {
-"^ot:originalLabel": "Fugu rubripes TAKRU Bok"
+"^ot:originalLabel": "Fugu rubripes TAKRU Bok", 
+"^ot:ottId": 65341, 
+"^ot:ottTaxonName": "Takifugu rubripes"
 }, 
 "Tl2183933": {
-"^ot:altLabel": "Nematostella vectensis", 
 "^ot:originalLabel": "Nematostella vectensis Nemv100129", 
+"^ot:ottId": 938118, 
+"^ot:ottTaxonName": "Nematostella vectensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 44259, 
 "@tb:identifier.taxonVariant": 103508, 
@@ -1091,8 +1322,9 @@
 }
 }, 
 "Tl2183934": {
-"^ot:altLabel": "Acropora millepora", 
 "^ot:originalLabel": "Acropora millepora Amil26503", 
+"^ot:ottId": 3675115, 
+"^ot:ottTaxonName": "Acropora millepora", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 44270, 
 "@tb:identifier.taxonVariant": 103536, 
@@ -1101,8 +1333,9 @@
 }
 }, 
 "Tl2183935": {
-"^ot:altLabel": "Gallus gallus", 
 "^ot:originalLabel": "Gallus gallus Chickb2a1", 
+"^ot:ottId": 153563, 
+"^ot:ottTaxonName": "Gallus gallus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 631380, 
 "@tb:identifier.taxonVariant": 846392, 
@@ -1111,11 +1344,14 @@
 }
 }, 
 "Tl2183936": {
-"^ot:originalLabel": "Homo sapiens HUMAN Bcl2"
+"^ot:originalLabel": "Homo sapiens HUMAN Bcl2", 
+"^ot:ottId": 770315, 
+"^ot:ottTaxonName": "Homo sapiens"
 }, 
 "Tl2183937": {
-"^ot:altLabel": "Nematostella vectensis", 
 "^ot:originalLabel": "Nematostella vectensis Nemv196260", 
+"^ot:ottId": 938118, 
+"^ot:ottTaxonName": "Nematostella vectensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 44259, 
 "@tb:identifier.taxonVariant": 103508, 
@@ -1124,8 +1360,9 @@
 }
 }, 
 "Tl2183938": {
-"^ot:altLabel": "Acropora millepora", 
 "^ot:originalLabel": "Acropora millepora Amil6206", 
+"^ot:ottId": 3675115, 
+"^ot:ottTaxonName": "Acropora millepora", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 44270, 
 "@tb:identifier.taxonVariant": 103536, 
@@ -1134,8 +1371,9 @@
 }
 }, 
 "Tl2183939": {
-"^ot:altLabel": "Mus musculus", 
 "^ot:originalLabel": "Mus musculus Mouseb2l13", 
+"^ot:ottId": 542509, 
+"^ot:ottTaxonName": "Mus musculus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 18305, 
 "@tb:identifier.taxonVariant": 42783, 
@@ -1144,26 +1382,39 @@
 }
 }, 
 "Tl2183940": {
-"^ot:originalLabel": "Mus musculus MOUSE Bcl2"
+"^ot:originalLabel": "Mus musculus MOUSE Bcl2", 
+"^ot:ottId": 542509, 
+"^ot:ottTaxonName": "Mus musculus"
 }, 
 "Tl2183941": {
-"^ot:originalLabel": "Xenopus tropicalis XENTR b2l1"
+"^ot:originalLabel": "Xenopus tropicalis XENTR b2l1", 
+"^ot:ottId": 940184, 
+"^ot:ottTaxonName": "Xenopus (Silurana) tropicalis"
 }, 
 "Tl2183942": {
-"^ot:originalLabel": "Tetraodon nigroviridis TETNG B2l1"
+"^ot:originalLabel": "Tetraodon nigroviridis TETNG B2l1", 
+"^ot:ottId": 1085993, 
+"^ot:ottTaxonName": "Tetraodon nigroviridis"
 }, 
 "Tl2183943": {
-"^ot:originalLabel": "Canis lupus familiaris CANFA Bcl2"
+"^ot:originalLabel": "Canis lupus familiaris CANFA Bcl2", 
+"^ot:ottId": 247341, 
+"^ot:ottTaxonName": "Canis lupus"
 }, 
 "Tl2183944": {
-"^ot:originalLabel": "Xenopus tropicalis XENTR bcl2"
+"^ot:originalLabel": "Xenopus tropicalis XENTR bcl2", 
+"^ot:ottId": 940184, 
+"^ot:ottTaxonName": "Xenopus (Silurana) tropicalis"
 }, 
 "Tl2183945": {
-"^ot:originalLabel": "Canis lupus familiaris CANFA Bclx"
+"^ot:originalLabel": "Canis lupus familiaris CANFA Bclx", 
+"^ot:ottId": 247341, 
+"^ot:ottTaxonName": "Canis lupus"
 }, 
 "Tl2183946": {
-"^ot:altLabel": "Acropora digitifera", 
 "^ot:originalLabel": "Acropora digitifera Adig10817", 
+"^ot:ottId": 366634, 
+"^ot:ottTaxonName": "Acropora digitifera", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 85048, 
 "@tb:identifier.taxonVariant": 163672, 
@@ -1172,8 +1423,9 @@
 }
 }, 
 "Tl2183947": {
-"^ot:altLabel": "Nematostella vectensis", 
 "^ot:originalLabel": "Nematostella vectensis Nemv244968", 
+"^ot:ottId": 938118, 
+"^ot:ottTaxonName": "Nematostella vectensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 44259, 
 "@tb:identifier.taxonVariant": 103508, 
@@ -1182,8 +1434,9 @@
 }
 }, 
 "Tl2183948": {
-"^ot:altLabel": "Acropora millepora", 
 "^ot:originalLabel": "Acropora millepora Amil14607", 
+"^ot:ottId": 3675115, 
+"^ot:ottTaxonName": "Acropora millepora", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 44270, 
 "@tb:identifier.taxonVariant": 103536, 
@@ -1192,11 +1445,14 @@
 }
 }, 
 "Tl2183949": {
-"^ot:originalLabel": "Mus musculus MOUSE B2l2"
+"^ot:originalLabel": "Mus musculus MOUSE B2l2", 
+"^ot:ottId": 542509, 
+"^ot:ottTaxonName": "Mus musculus"
 }, 
 "Tl2183950": {
-"^ot:altLabel": "Acropora millepora", 
 "^ot:originalLabel": "Acropora millepora Amil8813", 
+"^ot:ottId": 3675115, 
+"^ot:ottTaxonName": "Acropora millepora", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 44270, 
 "@tb:identifier.taxonVariant": 103536, 
@@ -1205,8 +1461,9 @@
 }
 }, 
 "Tl2183951": {
-"^ot:altLabel": "Xenopus tropicalis", 
 "^ot:originalLabel": "Xenopus tropicalis Xentf7cwh6", 
+"^ot:ottId": 940184, 
+"^ot:ottTaxonName": "Xenopus (Silurana) tropicalis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 26945, 
 "@tb:identifier.taxonVariant": 62884, 
@@ -1216,11 +1473,14 @@
 "^skos:prefLabel": "Xenopus (Silurana) tropicalis"
 }, 
 "Tl2183952": {
-"^ot:originalLabel": "Canis lupus familiaris CANFA B2l2"
+"^ot:originalLabel": "Canis lupus familiaris CANFA B2l2", 
+"^ot:ottId": 247341, 
+"^ot:ottTaxonName": "Canis lupus"
 }, 
 "Tl2183953": {
-"^ot:altLabel": "Mus musculus", 
 "^ot:originalLabel": "Mus musculus Mouseb2l10", 
+"^ot:ottId": 542509, 
+"^ot:ottTaxonName": "Mus musculus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 18305, 
 "@tb:identifier.taxonVariant": 42783, 
@@ -1229,11 +1489,14 @@
 }
 }, 
 "Tl2183954": {
-"^ot:originalLabel": "Canis lupus familiaris CANFA Bax"
+"^ot:originalLabel": "Canis lupus familiaris CANFA Bax", 
+"^ot:ottId": 247341, 
+"^ot:ottTaxonName": "Canis lupus"
 }, 
 "Tl2183955": {
-"^ot:altLabel": "Gallus gallus", 
 "^ot:originalLabel": "Gallus gallus Chickb2l13", 
+"^ot:ottId": 153563, 
+"^ot:ottTaxonName": "Gallus gallus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 631380, 
 "@tb:identifier.taxonVariant": 846392, 
@@ -1242,11 +1505,14 @@
 }
 }, 
 "Tl2183956": {
-"^ot:originalLabel": "Xenopus tropicalis XENTR b2l2"
+"^ot:originalLabel": "Xenopus tropicalis XENTR b2l2", 
+"^ot:ottId": 940184, 
+"^ot:ottTaxonName": "Xenopus (Silurana) tropicalis"
 }, 
 "Tl2183957": {
-"^ot:altLabel": "Acropora millepora", 
 "^ot:originalLabel": "Acropora millepora Amil11921", 
+"^ot:ottId": 3675115, 
+"^ot:ottTaxonName": "Acropora millepora", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 44270, 
 "@tb:identifier.taxonVariant": 103536, 
@@ -1255,8 +1521,9 @@
 }
 }, 
 "Tl2183958": {
-"^ot:altLabel": "Acropora digitifera", 
 "^ot:originalLabel": "Acropora digitifera Adig17522", 
+"^ot:ottId": 366634, 
+"^ot:ottTaxonName": "Acropora digitifera", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 85048, 
 "@tb:identifier.taxonVariant": 163672, 
@@ -1265,17 +1532,24 @@
 }
 }, 
 "Tl2183959": {
-"^ot:originalLabel": "Xenopus tropicalis XENTR bax"
+"^ot:originalLabel": "Xenopus tropicalis XENTR bax", 
+"^ot:ottId": 940184, 
+"^ot:ottTaxonName": "Xenopus (Silurana) tropicalis"
 }, 
 "Tl2183960": {
-"^ot:originalLabel": "Mus musculus MOUSE Bok"
+"^ot:originalLabel": "Mus musculus MOUSE Bok", 
+"^ot:ottId": 542509, 
+"^ot:ottTaxonName": "Mus musculus"
 }, 
 "Tl2183961": {
-"^ot:originalLabel": "Mus musculus MOUSE Mcl1"
+"^ot:originalLabel": "Mus musculus MOUSE Mcl1", 
+"^ot:ottId": 542509, 
+"^ot:ottTaxonName": "Mus musculus"
 }, 
 "Tl2183962": {
-"^ot:altLabel": "Nematostella vectensis", 
 "^ot:originalLabel": "Nematostella vectensis Nemv37807", 
+"^ot:ottId": 938118, 
+"^ot:ottTaxonName": "Nematostella vectensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 44259, 
 "@tb:identifier.taxonVariant": 103508, 
@@ -1284,14 +1558,19 @@
 }
 }, 
 "Tl2183963": {
-"^ot:originalLabel": "Canis lupus familiaris CANFA Mcl1"
+"^ot:originalLabel": "Canis lupus familiaris CANFA Mcl1", 
+"^ot:ottId": 247341, 
+"^ot:ottTaxonName": "Canis lupus"
 }, 
 "Tl2183964": {
-"^ot:originalLabel": "Homo sapiens HUMAN B2a1"
+"^ot:originalLabel": "Homo sapiens HUMAN B2a1", 
+"^ot:ottId": 770315, 
+"^ot:ottTaxonName": "Homo sapiens"
 }, 
 "Tl2183965": {
-"^ot:altLabel": "Acropora digitifera", 
 "^ot:originalLabel": "Acropora digitifera Adig24441", 
+"^ot:ottId": 366634, 
+"^ot:ottTaxonName": "Acropora digitifera", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 85048, 
 "@tb:identifier.taxonVariant": 163672, 
@@ -1300,8 +1579,9 @@
 }
 }, 
 "Tl2183966": {
-"^ot:altLabel": "Canis familiaris", 
 "^ot:originalLabel": "Canis lupus familiaris Canfab2l13", 
+"^ot:ottId": 247333, 
+"^ot:ottTaxonName": "Canis lupus familiaris", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 4767, 
 "@tb:identifier.taxonVariant": 11502, 
@@ -1311,14 +1591,19 @@
 "^skos:prefLabel": "Canis lupus familiaris"
 }, 
 "Tl2183967": {
-"^ot:originalLabel": "Homo sapiens HUMAN Bax"
+"^ot:originalLabel": "Homo sapiens HUMAN Bax", 
+"^ot:ottId": 770315, 
+"^ot:ottTaxonName": "Homo sapiens"
 }, 
 "Tl2183968": {
-"^ot:originalLabel": "Stylophora pistillata STP G8xqy4"
+"^ot:originalLabel": "Stylophora pistillata STP G8xqy4", 
+"^ot:ottId": 713802, 
+"^ot:ottTaxonName": "Stylophora pistillata"
 }, 
 "Tl2183969": {
-"^ot:altLabel": "Acropora millepora", 
 "^ot:originalLabel": "Acropora millepora Amil7664", 
+"^ot:ottId": 3675115, 
+"^ot:ottTaxonName": "Acropora millepora", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 44270, 
 "@tb:identifier.taxonVariant": 103536, 
@@ -1327,8 +1612,9 @@
 }
 }, 
 "Tl2183970": {
-"^ot:altLabel": "Nematostella vectensis", 
 "^ot:originalLabel": "Nematostella vectensis Nemv246637", 
+"^ot:ottId": 938118, 
+"^ot:ottTaxonName": "Nematostella vectensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 44259, 
 "@tb:identifier.taxonVariant": 103508, 
@@ -1337,8 +1623,9 @@
 }
 }, 
 "Tl2183971": {
-"^ot:altLabel": "Acropora digitifera", 
 "^ot:originalLabel": "Acropora digitifera Adig00172", 
+"^ot:ottId": 366634, 
+"^ot:ottTaxonName": "Acropora digitifera", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 85048, 
 "@tb:identifier.taxonVariant": 163672, 
@@ -1347,11 +1634,14 @@
 }
 }, 
 "Tl2183972": {
-"^ot:originalLabel": "Gallus gallus CHICK Bok"
+"^ot:originalLabel": "Gallus gallus CHICK Bok", 
+"^ot:ottId": 153563, 
+"^ot:ottTaxonName": "Gallus gallus"
 }, 
 "Tl2183973": {
-"^ot:altLabel": "Acropora digitifera", 
 "^ot:originalLabel": "Acropora digitifera Adig00181", 
+"^ot:ottId": 366634, 
+"^ot:ottTaxonName": "Acropora digitifera", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 85048, 
 "@tb:identifier.taxonVariant": 163672, 
@@ -1360,11 +1650,14 @@
 }
 }, 
 "Tl2183974": {
-"^ot:originalLabel": "Tetraodon nigroviridis TETNG Bcl2"
+"^ot:originalLabel": "Tetraodon nigroviridis TETNG Bcl2", 
+"^ot:ottId": 1085993, 
+"^ot:ottTaxonName": "Tetraodon nigroviridis"
 }, 
 "Tl2183975": {
-"^ot:altLabel": "Nematostella vectensis", 
 "^ot:originalLabel": "Nematostella vectensis Nemv139409", 
+"^ot:ottId": 938118, 
+"^ot:ottTaxonName": "Nematostella vectensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 44259, 
 "@tb:identifier.taxonVariant": 103508, 
@@ -1373,8 +1666,9 @@
 }
 }, 
 "Tl2183976": {
-"^ot:altLabel": "Acropora digitifera", 
 "^ot:originalLabel": "Acropora digitifera Adig20703", 
+"^ot:ottId": 366634, 
+"^ot:ottTaxonName": "Acropora digitifera", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 85048, 
 "@tb:identifier.taxonVariant": 163672, 
@@ -1383,14 +1677,19 @@
 }
 }, 
 "Tl2183977": {
-"^ot:originalLabel": "Gallus gallus CHICK Bak1"
+"^ot:originalLabel": "Gallus gallus CHICK Bak1", 
+"^ot:ottId": 153563, 
+"^ot:ottTaxonName": "Gallus gallus"
 }, 
 "Tl2183978": {
-"^ot:originalLabel": "Mus musculus MOUSE B2l1"
+"^ot:originalLabel": "Mus musculus MOUSE B2l1", 
+"^ot:ottId": 542509, 
+"^ot:ottTaxonName": "Mus musculus"
 }, 
 "Tl2183979": {
-"^ot:altLabel": "Mus musculus", 
 "^ot:originalLabel": "Mus musculus Mouseb2la1", 
+"^ot:ottId": 542509, 
+"^ot:ottTaxonName": "Mus musculus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 18305, 
 "@tb:identifier.taxonVariant": 42783, 
@@ -1399,8 +1698,9 @@
 }
 }, 
 "Tl2183980": {
-"^ot:altLabel": "Acropora millepora", 
 "^ot:originalLabel": "Acropora millepora Amil2315", 
+"^ot:ottId": 3675115, 
+"^ot:ottTaxonName": "Acropora millepora", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 44270, 
 "@tb:identifier.taxonVariant": 103536, 
@@ -1409,14 +1709,19 @@
 }
 }, 
 "Tl2183981": {
-"^ot:originalLabel": "Fugu rubripes TAKRU Bcl2"
+"^ot:originalLabel": "Fugu rubripes TAKRU Bcl2", 
+"^ot:ottId": 65341, 
+"^ot:ottTaxonName": "Takifugu rubripes"
 }, 
 "Tl2183982": {
-"^ot:originalLabel": "Mus musculus MOUSE Bak"
+"^ot:originalLabel": "Mus musculus MOUSE Bak", 
+"^ot:ottId": 542509, 
+"^ot:ottTaxonName": "Mus musculus"
 }, 
 "Tl2183983": {
-"^ot:altLabel": "Acropora millepora", 
 "^ot:originalLabel": "Acropora millepora Amil2124", 
+"^ot:ottId": 3675115, 
+"^ot:ottTaxonName": "Acropora millepora", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 44270, 
 "@tb:identifier.taxonVariant": 103536, 
@@ -1425,8 +1730,9 @@
 }
 }, 
 "Tl2183984": {
-"^ot:altLabel": "Gallus gallus", 
 "^ot:originalLabel": "Gallus gallus Chickb2l1", 
+"^ot:ottId": 153563, 
+"^ot:ottTaxonName": "Gallus gallus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 631380, 
 "@tb:identifier.taxonVariant": 846392, 
@@ -1435,8 +1741,9 @@
 }
 }, 
 "Tl2183985": {
-"^ot:altLabel": "Nematostella vectensis", 
 "^ot:originalLabel": "Nematostella vectensis Nemv114394", 
+"^ot:ottId": 938118, 
+"^ot:ottTaxonName": "Nematostella vectensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 44259, 
 "@tb:identifier.taxonVariant": 103508, 
@@ -1445,8 +1752,9 @@
 }
 }, 
 "Tl2183986": {
-"^ot:altLabel": "Homo sapiens", 
 "^ot:originalLabel": "Homo sapiens Humanb2l10", 
+"^ot:ottId": 770315, 
+"^ot:ottTaxonName": "Homo sapiens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 13680, 
 "@tb:identifier.taxonVariant": 32274, 
@@ -1455,11 +1763,14 @@
 }
 }, 
 "Tl2183987": {
-"^ot:originalLabel": "Homo sapiens HUMAN B2l1"
+"^ot:originalLabel": "Homo sapiens HUMAN B2l1", 
+"^ot:ottId": 770315, 
+"^ot:ottTaxonName": "Homo sapiens"
 }, 
 "Tl2183988": {
-"^ot:altLabel": "Homo sapiens", 
 "^ot:originalLabel": "Homo sapiens Humanb2l13", 
+"^ot:ottId": 770315, 
+"^ot:ottTaxonName": "Homo sapiens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 13680, 
 "@tb:identifier.taxonVariant": 32274, 
@@ -1468,8 +1779,9 @@
 }
 }, 
 "Tl2183989": {
-"^ot:altLabel": "Acropora digitifera", 
 "^ot:originalLabel": "Acropora digitifera Adig05085", 
+"^ot:ottId": 366634, 
+"^ot:ottTaxonName": "Acropora digitifera", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 85048, 
 "@tb:identifier.taxonVariant": 163672, 
@@ -1478,8 +1790,9 @@
 }
 }, 
 "Tl2183990": {
-"^ot:altLabel": "Acropora millepora", 
 "^ot:originalLabel": "Acropora millepora Ami011480", 
+"^ot:ottId": 3675115, 
+"^ot:ottTaxonName": "Acropora millepora", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 44270, 
 "@tb:identifier.taxonVariant": 103536, 
@@ -1488,14 +1801,19 @@
 }
 }, 
 "Tl2183991": {
-"^ot:originalLabel": "Xenopus tropicalis XENTR mcl1"
+"^ot:originalLabel": "Xenopus tropicalis XENTR mcl1", 
+"^ot:ottId": 940184, 
+"^ot:ottTaxonName": "Xenopus (Silurana) tropicalis"
 }, 
 "Tl2183992": {
-"^ot:originalLabel": "Homo sapiens HUMAN B2l2"
+"^ot:originalLabel": "Homo sapiens HUMAN B2l2", 
+"^ot:ottId": 770315, 
+"^ot:ottTaxonName": "Homo sapiens"
 }, 
 "Tl2183993": {
-"^ot:altLabel": "Acropora millepora", 
 "^ot:originalLabel": "Acropora millepora Amil7024", 
+"^ot:ottId": 3675115, 
+"^ot:ottTaxonName": "Acropora millepora", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 44270, 
 "@tb:identifier.taxonVariant": 103536, 
@@ -1504,8 +1822,9 @@
 }
 }, 
 "Tl2183994": {
-"^ot:altLabel": "Nematostella vectensis", 
 "^ot:originalLabel": "Nematostella vectensis Nemv245329", 
+"^ot:ottId": 938118, 
+"^ot:ottTaxonName": "Nematostella vectensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 44259, 
 "@tb:identifier.taxonVariant": 103508, 
@@ -1514,11 +1833,14 @@
 }
 }, 
 "Tl2183995": {
-"^ot:originalLabel": "Canis lupus familiaris CANFA Bak"
+"^ot:originalLabel": "Canis lupus familiaris CANFA Bak", 
+"^ot:ottId": 247341, 
+"^ot:ottTaxonName": "Canis lupus"
 }, 
 "Tl2183996": {
-"^ot:altLabel": "Canis familiaris", 
 "^ot:originalLabel": "Canis lupus familiaris Canfab2a1", 
+"^ot:ottId": 247333, 
+"^ot:ottTaxonName": "Canis lupus familiaris", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 4767, 
 "@tb:identifier.taxonVariant": 11502, 
@@ -1528,11 +1850,14 @@
 "^skos:prefLabel": "Canis lupus familiaris"
 }, 
 "Tl2183997": {
-"^ot:originalLabel": "Homo sapiens HUMAN Bak"
+"^ot:originalLabel": "Homo sapiens HUMAN Bak", 
+"^ot:ottId": 770315, 
+"^ot:ottTaxonName": "Homo sapiens"
 }, 
 "Tl2183998": {
-"^ot:altLabel": "Nematostella vectensis", 
 "^ot:originalLabel": "Nematostella vectensis Nemv128814", 
+"^ot:ottId": 938118, 
+"^ot:ottTaxonName": "Nematostella vectensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 44259, 
 "@tb:identifier.taxonVariant": 103508, 
@@ -1541,13 +1866,19 @@
 }
 }, 
 "Tl2183999": {
-"^ot:originalLabel": "Mus musculus MOUSE Bax"
+"^ot:originalLabel": "Mus musculus MOUSE Bax", 
+"^ot:ottId": 542509, 
+"^ot:ottTaxonName": "Mus musculus"
 }, 
 "Tl2184000": {
-"^ot:originalLabel": "Tetraodon nigroviridis TETNG Mcl1"
+"^ot:originalLabel": "Tetraodon nigroviridis TETNG Mcl1", 
+"^ot:ottId": 1085993, 
+"^ot:ottTaxonName": "Tetraodon nigroviridis"
 }, 
 "Tl2184001": {
-"^ot:originalLabel": "Tetraodon nigroviridis TETNG Bok"
+"^ot:originalLabel": "Tetraodon nigroviridis TETNG Bok", 
+"^ot:ottId": 1085993, 
+"^ot:ottTaxonName": "Tetraodon nigroviridis"
 }
 }
 }
@@ -1565,7 +1896,18 @@
 "Tr93845": {
 "@label": "con 50 majrule", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:undefined", 
+"^ot:branchLengthTimeUnit": "Myr", 
+"^ot:curatedType": "Bayesian inference ", 
+"^ot:inGroupClade": "Tn13832523", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "Tn13832523", 
+"^ot:specifiedRoot": "Tn13832523", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 103, 
 "^tb:quality.tree": "Unrated", 
@@ -3207,7 +3549,18 @@
 "Tr93846": {
 "@label": "con 50 majrule", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "Tn13832716", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 78, 
 "^tb:quality.tree": "Unrated", 
