@@ -35,13 +35,114 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2016-02-20T21:26:04.685Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:curatorName": "Christine Ewers-Saucedo", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2016-02-20T21:26:04.685Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": [
+{
+"@filename": "conopea_carrison-stone2013.tre", 
+"@size": 98, 
+"@type": "newick", 
+"@url": "/curator/download/supporting_files.doc.8816c2518cc797ec.636f6e6f7065615f6361727269736f6e2d73746f6e65323031332e747265.tre", 
+"description": {
+"$": "Source data for tree(s) 'tree8'"
+}, 
+"sourceForTree": [
+{
+"$": "tree8"
+}
+]
+}
+]
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree8"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Christine Ewers-Saucedo"
+], 
+"^ot:dataDeposit": {
+"@href": ""
+}, 
+"^ot:focalClade": 1024428, 
+"^ot:focalCladeOTTTaxonName": "Conopea", 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "otus1"
 ], 
@@ -50,7 +151,8 @@
 "@href": "http://dx.doi.org/10.3897/zookeys.270.3736"
 }, 
 "^ot:studyPublicationReference": "Dana Carrison-Stone, Robert Van Syoc, Gary Williams, Brian Simison, 2013, 'Two new species of the gorgonian inhabiting barnacle, Conopea (Crustacea, Cirripedia, Thoracica), from the Gulf of Guinea', ZooKeys, vol. 270, pp. 1-20", 
-"^ot:studyYear": "2013", 
+"^ot:studyYear": 2013, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees1"
 ], 
@@ -59,14 +161,107 @@
 }, 
 "otusById": {
 "otus1": {
-"otuById": {}
+"otuById": {
+"otu10": {
+"^ot:originalLabel": "Conopea calceola"
+}, 
+"otu11": {
+"^ot:originalLabel": "Conopea fidelis"
+}, 
+"otu12": {
+"^ot:originalLabel": "Conopea saotomensis"
+}, 
+"otu8": {
+"^ot:originalLabel": "Semibalanus balanoides"
+}, 
+"otu9": {
+"^ot:originalLabel": "Conopea galeata"
+}
+}
 }
 }, 
 "treesById": {
 "trees1": {
 "@otus": "otus1", 
-"^ot:treeElementOrder": [], 
-"treeById": {}
+"^ot:treeElementOrder": [
+"tree8"
+], 
+"treeById": {
+"tree8": {
+"@label": "Figure 1", 
+"@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:undefined", 
+"^ot:branchLengthTimeUnit": "Myr", 
+"^ot:curatedType": "Bayesian inference ", 
+"^ot:inGroupClade": "node10", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:rootNodeId": "node8", 
+"^ot:specifiedRoot": "node8", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
+"edgeBySourceId": {
+"node10": {
+"edge10": {
+"@source": "node10", 
+"@target": "node11"
+}, 
+"edge11": {
+"@source": "node10", 
+"@target": "node12"
+}
+}, 
+"node12": {
+"edge12": {
+"@source": "node12", 
+"@target": "node13"
+}, 
+"edge13": {
+"@source": "node12", 
+"@target": "node14"
+}, 
+"edge14": {
+"@source": "node12", 
+"@target": "node15"
+}
+}, 
+"node8": {
+"edge8": {
+"@source": "node8", 
+"@target": "node9"
+}, 
+"edge9": {
+"@source": "node8", 
+"@target": "node10"
+}
+}
+}, 
+"nodeById": {
+"node10": {}, 
+"node11": {
+"@otu": "otu9"
+}, 
+"node12": {}, 
+"node13": {
+"@otu": "otu10"
+}, 
+"node14": {
+"@otu": "otu11"
+}, 
+"node15": {
+"@otu": "otu12"
+}, 
+"node8": {
+"@root": true
+}, 
+"node9": {
+"@otu": "otu8"
+}
+}
+}
+}
 }
 }
 }
