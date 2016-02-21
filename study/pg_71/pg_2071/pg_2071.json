@@ -36,22 +36,100 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2016-02-21T19:28:17.819Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "Vertebrates"
 }, 
-"^ot:candidateTreeForSynthesis": [], 
-"^ot:curatorName": "Chris Owen", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2016-02-21T19:28:17.819Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree4264"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Chris Owen", 
+"Wasila Dahdul"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S12851"
 }, 
 "^ot:focalClade": 87895, 
 "^ot:focalCladeOTTTaxonName": "Loricariidae", 
-"^ot:messages": {
-"message": []
-}, 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "otus2071"
 ], 
@@ -764,8 +842,6 @@
 }, 
 "otu310568": {
 "^ot:originalLabel": "Hypostomus sp. Round Snout 2", 
-"^ot:ottId": 452257, 
-"^ot:ottTaxonName": "Hypostomus sp. JWA-2005", 
 "^ot:treebaseOTUId": "Tl816388"
 }, 
 "otu310569": {
@@ -845,16 +921,20 @@
 ], 
 "treeById": {
 "tree4264": {
+"@label": "Untitled (tree4264)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
-"^ot:branchLengthMode": "", 
-"^ot:branchLengthTimeUnit": "", 
+"^ot:branchLengthMode": "ot:undefined", 
+"^ot:branchLengthTimeUnit": "Myr", 
 "^ot:curatedType": "Figs. 36-38", 
 "^ot:inGroupClade": "node789050", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node789044", 
-"^ot:specifiedRoot": "", 
+"^ot:specifiedRoot": "node789044", 
 "^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node789044": {
 "edge789045": {
@@ -2081,10 +2161,12 @@
 "node789072": {}, 
 "node789073": {}, 
 "node789074": {
-"@otu": "otu310507"
+"@otu": "otu310507", 
+"^ot:isTaxonExemplar": true
 }, 
 "node789075": {
-"@otu": "otu310534"
+"@otu": "otu310534", 
+"^ot:isTaxonExemplar": false
 }, 
 "node789076": {}, 
 "node789077": {
@@ -2254,10 +2336,12 @@
 "@otu": "otu310516"
 }, 
 "node789159": {
-"@otu": "otu310562"
+"@otu": "otu310562", 
+"^ot:isTaxonExemplar": true
 }, 
 "node789160": {
-"@otu": "otu310487"
+"@otu": "otu310487", 
+"^ot:isTaxonExemplar": false
 }, 
 "node789161": {
 "@otu": "otu310568"
