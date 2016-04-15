@@ -59,25 +59,119 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2016-04-15T20:15:29.857Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "Ascomycetes"
 }, 
-"^ot:curatorName": "Dail Laughinghouse", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}, 
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": "$1"
+}, 
+"old": {
+"$": "^(\\S*\\s+\\S*).*"
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2016-04-15T20:15:29.856Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"Tr90392"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Dail Laughinghouse"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S18070"
 }, 
+"^ot:focalClade": 794602, 
+"^ot:focalCladeOTTTaxonName": "Punctelia", 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "Tls47062"
 ], 
 "^ot:studyId": "ot_701", 
 "^ot:studyPublication": {
-"@href": "10.1371/journal.pone.0146537"
+"@href": "http://dx.doi.org/10.1371/journal.pone.0146537"
 }, 
-"^ot:studyPublicationReference": "Alors D., Lumbsch H.T., Divakar P.K., Leavitt S., & Crespo A. 2016. An Integrative Approach for Understanding Diversity in the Punctelia rudecta Species Complex (Parmeliaceae, Ascomycota). PLoS ONE, 11(2): e0146537.", 
+"^ot:studyPublicationReference": "David Alors, H. Thorsten Lumbsch, Pradeep K. Divakar, Steven D. Leavitt, Ana Crespo, 2016, 'An Integrative Approach for Understanding Diversity in the Punctelia rudecta Species Complex (Parmeliaceae, Ascomycota)', PLOS ONE, vol. 11, no. 2, p. e0146537", 
 "^ot:studyYear": 2016, 
+"^ot:tag": [], 
 "^ot:taxonLinkPrefixes": {
 "@ubio": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:", 
 "@uniprot": "http://purl.uniprot.org/taxonomy/"
@@ -106,8 +200,9 @@
 "^ot:originalLabel": "Punctelia appalachiensis 10253 K"
 }, 
 "Tl1991890": {
-"^ot:altLabel": "Punctelia subpraesignis", 
 "^ot:originalLabel": "Punctelia subpraesignis H", 
+"^ot:ottId": 510739, 
+"^ot:ottTaxonName": "Punctelia subpraesignis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 216073, 
 "@tb:identifier.taxonVariant": 283133, 
@@ -116,8 +211,9 @@
 }
 }, 
 "Tl1991891": {
-"^ot:altLabel": "Punctelia borreri", 
 "^ot:originalLabel": "Punctelia borreri 10237 I", 
+"^ot:ottId": 682353, 
+"^ot:ottTaxonName": "Punctelia borreri", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 24544, 
 "@tb:identifier.taxonVariant": 57484, 
@@ -126,8 +222,9 @@
 }
 }, 
 "Tl1991892": {
-"^ot:altLabel": "Punctelia rudecta", 
 "^ot:originalLabel": "Punctelia rudecta 3157 USA", 
+"^ot:ottId": 311283, 
+"^ot:ottTaxonName": "Punctelia subflava", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 24546, 
 "@tb:identifier.taxonVariant": 57488, 
@@ -137,8 +234,9 @@
 "^skos:prefLabel": "Punctelia aff. rudecta"
 }, 
 "Tl1991893": {
-"^ot:altLabel": "Punctelia hypoleucites", 
 "^ot:originalLabel": "Punctelia hypoleucites AFTOL B", 
+"^ot:ottId": 767392, 
+"^ot:ottTaxonName": "Punctelia hypoleucites", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 243598, 
 "@tb:identifier.taxonVariant": 304780, 
@@ -147,8 +245,9 @@
 }
 }, 
 "Tl1991894": {
-"^ot:altLabel": "Punctelia borreri", 
 "^ot:originalLabel": "Punctelia borreri 16125 I", 
+"^ot:ottId": 682353, 
+"^ot:ottTaxonName": "Punctelia borreri", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 24544, 
 "@tb:identifier.taxonVariant": 57484, 
@@ -157,8 +256,9 @@
 }
 }, 
 "Tl1991895": {
-"^ot:altLabel": "Punctelia rudecta", 
 "^ot:originalLabel": "Punctelia rudecta 1197 Kenya", 
+"^ot:ottId": 311283, 
+"^ot:ottTaxonName": "Punctelia subflava", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 24546, 
 "@tb:identifier.taxonVariant": 57488, 
@@ -168,8 +268,9 @@
 "^skos:prefLabel": "Punctelia aff. rudecta"
 }, 
 "Tl1991896": {
-"^ot:altLabel": "Punctelia rudecta", 
 "^ot:originalLabel": "Punctelia rudecta 7661 B", 
+"^ot:ottId": 311283, 
+"^ot:ottTaxonName": "Punctelia subflava", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 24546, 
 "@tb:identifier.taxonVariant": 57488, 
@@ -179,8 +280,9 @@
 "^skos:prefLabel": "Punctelia aff. rudecta"
 }, 
 "Tl1991897": {
-"^ot:altLabel": "Punctelia borreri", 
 "^ot:originalLabel": "Punctelia borreri 10240 I", 
+"^ot:ottId": 682353, 
+"^ot:ottTaxonName": "Punctelia borreri", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 24544, 
 "@tb:identifier.taxonVariant": 57484, 
@@ -189,8 +291,9 @@
 }
 }, 
 "Tl1991898": {
-"^ot:altLabel": "Punctelia rudecta", 
 "^ot:originalLabel": "Punctelia rudecta 3521 USA", 
+"^ot:ottId": 311283, 
+"^ot:ottTaxonName": "Punctelia subflava", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 24546, 
 "@tb:identifier.taxonVariant": 57488, 
@@ -200,8 +303,9 @@
 "^skos:prefLabel": "Punctelia aff. rudecta"
 }, 
 "Tl1991899": {
-"^ot:altLabel": "Punctelia rudecta", 
 "^ot:originalLabel": "Punctelia rudecta 3149 Japana", 
+"^ot:ottId": 311283, 
+"^ot:ottTaxonName": "Punctelia subflava", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 24546, 
 "@tb:identifier.taxonVariant": 57488, 
@@ -211,8 +315,9 @@
 "^skos:prefLabel": "Punctelia aff. rudecta"
 }, 
 "Tl1991900": {
-"^ot:altLabel": "Punctelia perreticulata", 
 "^ot:originalLabel": "Punctelia perreticulata 10 M", 
+"^ot:ottId": 311547, 
+"^ot:ottTaxonName": "Punctelia perreticulata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 255155, 
 "@tb:identifier.taxonVariant": 469198, 
@@ -221,8 +326,9 @@
 }
 }, 
 "Tl1991901": {
-"^ot:altLabel": "Punctelia subrudecta", 
 "^ot:originalLabel": "Punctelia subrudecta 10243 N", 
+"^ot:ottId": 872116, 
+"^ot:ottTaxonName": "Punctelia subrudecta", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 24548, 
 "@tb:identifier.taxonVariant": 57499, 
@@ -231,8 +337,9 @@
 }
 }, 
 "Tl1991902": {
-"^ot:altLabel": "Punctelia subrudecta", 
 "^ot:originalLabel": "Punctelia subrudecta 10241 N", 
+"^ot:ottId": 872116, 
+"^ot:ottTaxonName": "Punctelia subrudecta", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 24548, 
 "@tb:identifier.taxonVariant": 57499, 
@@ -241,8 +348,9 @@
 }
 }, 
 "Tl1991903": {
-"^ot:altLabel": "Punctelia hypoleucites", 
 "^ot:originalLabel": "Punctelia hypoleucites 1179 Kenya", 
+"^ot:ottId": 767392, 
+"^ot:ottTaxonName": "Punctelia hypoleucites", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 243598, 
 "@tb:identifier.taxonVariant": 304780, 
@@ -251,8 +359,9 @@
 }
 }, 
 "Tl1991904": {
-"^ot:altLabel": "Punctelia rudecta", 
 "^ot:originalLabel": "Punctelia rudecta 10256 A", 
+"^ot:ottId": 311283, 
+"^ot:ottTaxonName": "Punctelia subflava", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 24546, 
 "@tb:identifier.taxonVariant": 57488, 
@@ -262,8 +371,9 @@
 "^skos:prefLabel": "Punctelia aff. rudecta"
 }, 
 "Tl1991905": {
-"^ot:altLabel": "Punctelia rudecta", 
 "^ot:originalLabel": "Punctelia rudecta 1196 Kenya", 
+"^ot:ottId": 311283, 
+"^ot:ottTaxonName": "Punctelia subflava", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 24546, 
 "@tb:identifier.taxonVariant": 57488, 
@@ -274,14 +384,17 @@
 }, 
 "Tl1991906": {
 "^ot:originalLabel": "Punctelia jeckeri 10249 D", 
+"^ot:ottId": 340986, 
+"^ot:ottTaxonName": "Punctelia jeckeri", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 390466, 
 "@tb:identifier.taxonVariant": 530286
 }
 }, 
 "Tl1991907": {
-"^ot:altLabel": "Punctelia subflava", 
 "^ot:originalLabel": "Punctelia subflava E", 
+"^ot:ottId": 311283, 
+"^ot:ottTaxonName": "Punctelia subflava", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 24547, 
 "@tb:identifier.taxonVariant": 57491, 
@@ -290,8 +403,9 @@
 }
 }, 
 "Tl1991908": {
-"^ot:altLabel": "Punctelia reddenda", 
 "^ot:originalLabel": "Punctelia reddenda 10247 G", 
+"^ot:ottId": 311549, 
+"^ot:ottTaxonName": "Punctelia reddenda", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 255156, 
 "@tb:identifier.taxonVariant": 313905, 
@@ -300,8 +414,9 @@
 }
 }, 
 "Tl1991909": {
-"^ot:altLabel": "Punctelia borreri", 
 "^ot:originalLabel": "Punctelia borreri 3216 Australia", 
+"^ot:ottId": 682353, 
+"^ot:ottTaxonName": "Punctelia borreri", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 24544, 
 "@tb:identifier.taxonVariant": 57484, 
@@ -310,11 +425,14 @@
 }
 }, 
 "Tl1991910": {
-"^ot:originalLabel": "Punctelia caseana NY48 C"
+"^ot:originalLabel": "Punctelia caseana NY48 C", 
+"^ot:ottId": 926990, 
+"^ot:ottTaxonName": "Punctelia caseana"
 }, 
 "Tl1991911": {
-"^ot:altLabel": "Punctelia subrudecta", 
 "^ot:originalLabel": "Punctelia subrudecta 3219 Australia", 
+"^ot:ottId": 872116, 
+"^ot:ottTaxonName": "Punctelia subrudecta", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 24548, 
 "@tb:identifier.taxonVariant": 57499, 
@@ -323,8 +441,9 @@
 }
 }, 
 "Tl1991912": {
-"^ot:altLabel": "Punctelia rudecta", 
 "^ot:originalLabel": "Punctelia rudecta 3164 USA", 
+"^ot:ottId": 311283, 
+"^ot:ottTaxonName": "Punctelia subflava", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 24546, 
 "@tb:identifier.taxonVariant": 57488, 
@@ -334,8 +453,9 @@
 "^skos:prefLabel": "Punctelia aff. rudecta"
 }, 
 "Tl1991913": {
-"^ot:altLabel": "Punctelia borreri", 
 "^ot:originalLabel": "Punctelia borreri 10254 I", 
+"^ot:ottId": 682353, 
+"^ot:ottTaxonName": "Punctelia borreri", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 24544, 
 "@tb:identifier.taxonVariant": 57484, 
@@ -344,8 +464,9 @@
 }
 }, 
 "Tl1991914": {
-"^ot:altLabel": "Punctelia subrudecta", 
 "^ot:originalLabel": "Punctelia subrudecta PARS3 N", 
+"^ot:ottId": 872116, 
+"^ot:ottTaxonName": "Punctelia subrudecta", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 24548, 
 "@tb:identifier.taxonVariant": 57499, 
@@ -354,8 +475,9 @@
 }
 }, 
 "Tl1991915": {
-"^ot:altLabel": "Punctelia rudecta", 
 "^ot:originalLabel": "Punctelia rudecta AFTOL9 B", 
+"^ot:ottId": 311283, 
+"^ot:ottTaxonName": "Punctelia subflava", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 24546, 
 "@tb:identifier.taxonVariant": 57488, 
@@ -365,11 +487,14 @@
 "^skos:prefLabel": "Punctelia aff. rudecta"
 }, 
 "Tl1991916": {
-"^ot:originalLabel": "Punctelia caseana 3162 USA"
+"^ot:originalLabel": "Punctelia caseana 3162 USA", 
+"^ot:ottId": 926990, 
+"^ot:ottTaxonName": "Punctelia caseana"
 }, 
 "Tl1991917": {
-"^ot:altLabel": "Punctelia borreri", 
 "^ot:originalLabel": "Punctelia borreri 030736 I", 
+"^ot:ottId": 682353, 
+"^ot:ottTaxonName": "Punctelia borreri", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 24544, 
 "@tb:identifier.taxonVariant": 57484, 
@@ -378,8 +503,9 @@
 }
 }, 
 "Tl1991918": {
-"^ot:altLabel": "Punctelia toxodes", 
 "^ot:originalLabel": "Punctelia toxodes 1119 South Africa", 
+"^ot:ottId": 3768261, 
+"^ot:ottTaxonName": "Punctelia toxodes", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 631103, 
 "@tb:identifier.taxonVariant": 846036, 
@@ -387,8 +513,9 @@
 }
 }, 
 "Tl1991919": {
-"^ot:altLabel": "Punctelia subrudecta", 
 "^ot:originalLabel": "Punctelia subrudecta 10250 N", 
+"^ot:ottId": 872116, 
+"^ot:ottTaxonName": "Punctelia subrudecta", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 24548, 
 "@tb:identifier.taxonVariant": 57499, 
@@ -397,8 +524,9 @@
 }
 }, 
 "Tl1991920": {
-"^ot:altLabel": "Punctelia subrudecta", 
 "^ot:originalLabel": "Punctelia subrudecta 10242 N", 
+"^ot:ottId": 872116, 
+"^ot:ottTaxonName": "Punctelia subrudecta", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 24548, 
 "@tb:identifier.taxonVariant": 57499, 
@@ -407,8 +535,9 @@
 }
 }, 
 "Tl1991921": {
-"^ot:altLabel": "Punctelia rudecta", 
 "^ot:originalLabel": "Punctelia rudecta 1195 Kenya", 
+"^ot:ottId": 311283, 
+"^ot:ottTaxonName": "Punctelia subflava", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 24546, 
 "@tb:identifier.taxonVariant": 57488, 
@@ -418,8 +547,9 @@
 "^skos:prefLabel": "Punctelia aff. rudecta"
 }, 
 "Tl1991922": {
-"^ot:altLabel": "Punctelia pseudocoralloidea", 
 "^ot:originalLabel": "Punctelia pseudocoralloidea E", 
+"^ot:ottId": 872117, 
+"^ot:ottTaxonName": "Punctelia pseudocoralloidea", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 24545, 
 "@tb:identifier.taxonVariant": 57485, 
@@ -432,6 +562,8 @@
 }, 
 "Tl1991924": {
 "^ot:originalLabel": "Punctelia bolliana", 
+"^ot:ottId": 3768257, 
+"^ot:ottTaxonName": "Punctelia bolliana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 631085, 
 "@tb:identifier.taxonVariant": 846018, 
@@ -439,8 +571,9 @@
 }
 }, 
 "Tl1991925": {
-"^ot:altLabel": "Punctelia subrudecta", 
 "^ot:originalLabel": "Punctelia subrudecta 10244 N", 
+"^ot:ottId": 872116, 
+"^ot:ottTaxonName": "Punctelia subrudecta", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 24548, 
 "@tb:identifier.taxonVariant": 57499, 
@@ -449,11 +582,14 @@
 }
 }, 
 "Tl1991926": {
-"^ot:originalLabel": "Punctelia caseana 3163 USA"
+"^ot:originalLabel": "Punctelia caseana 3163 USA", 
+"^ot:ottId": 926990, 
+"^ot:ottTaxonName": "Punctelia caseana"
 }, 
 "Tl1991927": {
-"^ot:altLabel": "Punctelia rudecta", 
 "^ot:originalLabel": "Punctelia rudecta 3158 USA", 
+"^ot:ottId": 311283, 
+"^ot:ottTaxonName": "Punctelia subflava", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 24546, 
 "@tb:identifier.taxonVariant": 57488, 
@@ -463,8 +599,9 @@
 "^skos:prefLabel": "Punctelia aff. rudecta"
 }, 
 "Tl1991928": {
-"^ot:altLabel": "Punctelia rudecta", 
 "^ot:originalLabel": "Punctelia rudecta 3155 USA", 
+"^ot:ottId": 311283, 
+"^ot:ottTaxonName": "Punctelia subflava", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 24546, 
 "@tb:identifier.taxonVariant": 57488, 
@@ -477,8 +614,9 @@
 "^ot:originalLabel": "Punctelia guanchica 3142 Canary"
 }, 
 "Tl1991930": {
-"^ot:altLabel": "Punctelia rudecta", 
 "^ot:originalLabel": "Punctelia rudecta 3152 USA", 
+"^ot:ottId": 311283, 
+"^ot:ottTaxonName": "Punctelia subflava", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 24546, 
 "@tb:identifier.taxonVariant": 57488, 
@@ -488,8 +626,9 @@
 "^skos:prefLabel": "Punctelia aff. rudecta"
 }, 
 "Tl1991931": {
-"^ot:altLabel": "Punctelia borreri", 
 "^ot:originalLabel": "Punctelia borreri 10246 I", 
+"^ot:ottId": 682353, 
+"^ot:ottTaxonName": "Punctelia borreri", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 24544, 
 "@tb:identifier.taxonVariant": 57484, 
@@ -498,8 +637,9 @@
 }
 }, 
 "Tl1991932": {
-"^ot:altLabel": "Punctelia pseudocoralloidea", 
 "^ot:originalLabel": "Punctelia pseudocoralloidea 3217 Australia", 
+"^ot:ottId": 872117, 
+"^ot:ottTaxonName": "Punctelia pseudocoralloidea", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 24545, 
 "@tb:identifier.taxonVariant": 57485, 
@@ -512,6 +652,8 @@
 }, 
 "Tl1991934": {
 "^ot:originalLabel": "Punctelia jeckeri NY276 D", 
+"^ot:ottId": 340986, 
+"^ot:ottTaxonName": "Punctelia jeckeri", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 390466, 
 "@tb:identifier.taxonVariant": 530286
@@ -521,8 +663,9 @@
 "^ot:originalLabel": "Punctelia guanchica 3138 Canary"
 }, 
 "Tl1991936": {
-"^ot:altLabel": "Punctelia hypoleucites", 
 "^ot:originalLabel": "Punctelia hypoleucites 3911 Cuba", 
+"^ot:ottId": 767392, 
+"^ot:ottTaxonName": "Punctelia hypoleucites", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 243598, 
 "@tb:identifier.taxonVariant": 304780, 
@@ -534,8 +677,9 @@
 "^ot:originalLabel": "Punctelia guanchica 3136 Canary"
 }, 
 "Tl1991938": {
-"^ot:altLabel": "Punctelia pseudocoralloidea", 
 "^ot:originalLabel": "Punctelia pseudocoralloidea 3218 Australia", 
+"^ot:ottId": 872117, 
+"^ot:ottTaxonName": "Punctelia pseudocoralloidea", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 24545, 
 "@tb:identifier.taxonVariant": 57485, 
@@ -544,8 +688,9 @@
 }
 }, 
 "Tl1991939": {
-"^ot:altLabel": "Punctelia rudecta", 
 "^ot:originalLabel": "Punctelia rudecta 3146 India", 
+"^ot:ottId": 311283, 
+"^ot:ottTaxonName": "Punctelia subflava", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 24546, 
 "@tb:identifier.taxonVariant": 57488, 
@@ -555,8 +700,9 @@
 "^skos:prefLabel": "Punctelia aff. rudecta"
 }, 
 "Tl1991940": {
-"^ot:altLabel": "Punctelia rudecta", 
 "^ot:originalLabel": "Punctelia rudecta 1193 Kenya", 
+"^ot:ottId": 311283, 
+"^ot:ottTaxonName": "Punctelia subflava", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 24546, 
 "@tb:identifier.taxonVariant": 57488, 
@@ -566,8 +712,9 @@
 "^skos:prefLabel": "Punctelia aff. rudecta"
 }, 
 "Tl1991941": {
-"^ot:altLabel": "Punctelia rudecta", 
 "^ot:originalLabel": "Punctelia rudecta 3153 USA", 
+"^ot:ottId": 311283, 
+"^ot:ottTaxonName": "Punctelia subflava", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 24546, 
 "@tb:identifier.taxonVariant": 57488, 
@@ -577,8 +724,9 @@
 "^skos:prefLabel": "Punctelia aff. rudecta"
 }, 
 "Tl1991942": {
-"^ot:altLabel": "Punctelia rudecta", 
 "^ot:originalLabel": "Punctelia rudecta 3147 Japana", 
+"^ot:ottId": 311283, 
+"^ot:ottTaxonName": "Punctelia subflava", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 24546, 
 "@tb:identifier.taxonVariant": 57488, 
@@ -588,8 +736,9 @@
 "^skos:prefLabel": "Punctelia aff. rudecta"
 }, 
 "Tl1991943": {
-"^ot:altLabel": "Punctelia rudecta", 
 "^ot:originalLabel": "Punctelia rudecta 3910 Chile", 
+"^ot:ottId": 311283, 
+"^ot:ottTaxonName": "Punctelia subflava", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 24546, 
 "@tb:identifier.taxonVariant": 57488, 
@@ -599,8 +748,9 @@
 "^skos:prefLabel": "Punctelia aff. rudecta"
 }, 
 "Tl1991944": {
-"^ot:altLabel": "Punctelia rudecta", 
 "^ot:originalLabel": "Punctelia rudecta 3160 USA", 
+"^ot:ottId": 311283, 
+"^ot:ottTaxonName": "Punctelia subflava", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 24546, 
 "@tb:identifier.taxonVariant": 57488, 
@@ -610,8 +760,9 @@
 "^skos:prefLabel": "Punctelia aff. rudecta"
 }, 
 "Tl1991945": {
-"^ot:altLabel": "Punctelia rudecta", 
 "^ot:originalLabel": "Punctelia rudecta 3522 USA", 
+"^ot:ottId": 311283, 
+"^ot:ottTaxonName": "Punctelia subflava", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 24546, 
 "@tb:identifier.taxonVariant": 57488, 
@@ -624,8 +775,9 @@
 "^ot:originalLabel": "Punctelia appalachiensis 3520Us P"
 }, 
 "Tl1991947": {
-"^ot:altLabel": "Punctelia rudecta", 
 "^ot:originalLabel": "Punctelia rudecta 1190 USA", 
+"^ot:ottId": 311283, 
+"^ot:ottTaxonName": "Punctelia subflava", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 24546, 
 "@tb:identifier.taxonVariant": 57488, 
@@ -635,7 +787,9 @@
 "^skos:prefLabel": "Punctelia aff. rudecta"
 }, 
 "Tl1991948": {
-"^ot:originalLabel": "Punctelia caseana NY284 C"
+"^ot:originalLabel": "Punctelia caseana NY284 C", 
+"^ot:ottId": 926990, 
+"^ot:ottTaxonName": "Punctelia caseana"
 }, 
 "Tl1991949": {
 "^ot:originalLabel": "Punctelia guanchica 1189 Canary"
@@ -644,8 +798,9 @@
 "^ot:originalLabel": "Flavopunctelia soredicar T"
 }, 
 "Tl1991951": {
-"^ot:altLabel": "Punctelia rudecta", 
 "^ot:originalLabel": "Punctelia rudecta 3519 USA", 
+"^ot:ottId": 311283, 
+"^ot:ottTaxonName": "Punctelia subflava", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 24546, 
 "@tb:identifier.taxonVariant": 57488, 
@@ -659,14 +814,17 @@
 }, 
 "Tl1991953": {
 "^ot:originalLabel": "Punctelia jeckeri 10251 D", 
+"^ot:ottId": 340986, 
+"^ot:ottTaxonName": "Punctelia jeckeri", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 390466, 
 "@tb:identifier.taxonVariant": 530286
 }
 }, 
 "Tl1991954": {
-"^ot:altLabel": "Punctelia subrudecta", 
 "^ot:originalLabel": "Punctelia subrudecta 10245 N", 
+"^ot:ottId": 872116, 
+"^ot:ottTaxonName": "Punctelia subrudecta", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 24548, 
 "@tb:identifier.taxonVariant": 57499, 
@@ -675,8 +833,9 @@
 }
 }, 
 "Tl1991955": {
-"^ot:altLabel": "Punctelia rudecta", 
 "^ot:originalLabel": "Punctelia rudecta Normo B", 
+"^ot:ottId": 311283, 
+"^ot:ottTaxonName": "Punctelia subflava", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 243599, 
 "@tb:identifier.taxonVariant": 465241, 
@@ -685,8 +844,9 @@
 }
 }, 
 "Tl1991956": {
-"^ot:altLabel": "Punctelia borreri", 
 "^ot:originalLabel": "Punctelia borreri 10255 I", 
+"^ot:ottId": 682353, 
+"^ot:ottTaxonName": "Punctelia borreri", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 24544, 
 "@tb:identifier.taxonVariant": 57484, 
@@ -695,8 +855,9 @@
 }
 }, 
 "Tl1991957": {
-"^ot:altLabel": "Punctelia borreri", 
 "^ot:originalLabel": "Punctelia borreri 3215 Australia", 
+"^ot:ottId": 682353, 
+"^ot:ottTaxonName": "Punctelia borreri", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 24544, 
 "@tb:identifier.taxonVariant": 57484, 
@@ -708,11 +869,14 @@
 "^ot:originalLabel": "Punctelia guanchica 3139 Canary"
 }, 
 "Tl1991959": {
-"^ot:originalLabel": "Punctelia caseana 3161 USA"
+"^ot:originalLabel": "Punctelia caseana 3161 USA", 
+"^ot:ottId": 926990, 
+"^ot:ottTaxonName": "Punctelia caseana"
 }, 
 "Tl1991960": {
-"^ot:altLabel": "Punctelia missouriensis", 
 "^ot:originalLabel": "Punctelia missouriensis L", 
+"^ot:ottId": 649527, 
+"^ot:ottTaxonName": "Punctelia missouriensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 631086, 
 "@tb:identifier.taxonVariant": 846019, 
@@ -721,14 +885,17 @@
 }, 
 "Tl1991961": {
 "^ot:originalLabel": "Punctelia jeckeri NY323 D", 
+"^ot:ottId": 340986, 
+"^ot:ottTaxonName": "Punctelia jeckeri", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 390466, 
 "@tb:identifier.taxonVariant": 530286
 }
 }, 
 "Tl1991962": {
-"^ot:altLabel": "Punctelia perreticulata", 
 "^ot:originalLabel": "Punctelia perreticulata 16 M", 
+"^ot:ottId": 311547, 
+"^ot:ottTaxonName": "Punctelia perreticulata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 255155, 
 "@tb:identifier.taxonVariant": 469198, 
@@ -737,8 +904,9 @@
 }
 }, 
 "Tl1991963": {
-"^ot:altLabel": "Punctelia borreri", 
 "^ot:originalLabel": "Punctelia borreri 090011 J", 
+"^ot:ottId": 682353, 
+"^ot:ottTaxonName": "Punctelia borreri", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 24544, 
 "@tb:identifier.taxonVariant": 57484, 
@@ -747,8 +915,9 @@
 }
 }, 
 "Tl1991964": {
-"^ot:altLabel": "Punctelia rudecta", 
 "^ot:originalLabel": "Punctelia rudecta 1240 Japana", 
+"^ot:ottId": 311283, 
+"^ot:ottTaxonName": "Punctelia subflava", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 24546, 
 "@tb:identifier.taxonVariant": 57488, 
@@ -759,6 +928,8 @@
 }, 
 "Tl1991965": {
 "^ot:originalLabel": "Flavopunctelia flaventior", 
+"^ot:ottId": 733708, 
+"^ot:ottTaxonName": "Flavopunctelia flaventior", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 11383, 
 "@tb:identifier.taxonVariant": 27205, 
@@ -770,8 +941,9 @@
 "^ot:originalLabel": "Punctelia guanchica 3143 Canary"
 }, 
 "Tl1991967": {
-"^ot:altLabel": "Punctelia rudecta", 
 "^ot:originalLabel": "Punctelia rudecta 3156 USA", 
+"^ot:ottId": 311283, 
+"^ot:ottTaxonName": "Punctelia subflava", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 24546, 
 "@tb:identifier.taxonVariant": 57488, 
@@ -784,8 +956,9 @@
 "^ot:originalLabel": "Punctelia guanchica 3141 Canary"
 }, 
 "Tl1991969": {
-"^ot:altLabel": "Punctelia rudecta", 
 "^ot:originalLabel": "Punctelia rudecta 3150 Kenya", 
+"^ot:ottId": 311283, 
+"^ot:ottTaxonName": "Punctelia subflava", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 24546, 
 "@tb:identifier.taxonVariant": 57488, 
@@ -798,8 +971,9 @@
 "^ot:originalLabel": "Punctelia guanchica 1187 Canary"
 }, 
 "Tl1991971": {
-"^ot:altLabel": "Punctelia rudecta", 
 "^ot:originalLabel": "Punctelia rudecta 1343 Chile", 
+"^ot:ottId": 311283, 
+"^ot:ottTaxonName": "Punctelia subflava", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 24546, 
 "@tb:identifier.taxonVariant": 57488, 
@@ -809,8 +983,9 @@
 "^skos:prefLabel": "Punctelia aff. rudecta"
 }, 
 "Tl1991972": {
-"^ot:altLabel": "Punctelia rudecta", 
 "^ot:originalLabel": "Punctelia rudecta 1239 Japana", 
+"^ot:ottId": 311283, 
+"^ot:ottTaxonName": "Punctelia subflava", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 24546, 
 "@tb:identifier.taxonVariant": 57488, 
@@ -820,8 +995,9 @@
 "^skos:prefLabel": "Punctelia aff. rudecta"
 }, 
 "Tl1991973": {
-"^ot:altLabel": "Punctelia rudecta", 
 "^ot:originalLabel": "Punctelia rudecta 3159 USA", 
+"^ot:ottId": 311283, 
+"^ot:ottTaxonName": "Punctelia subflava", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 24546, 
 "@tb:identifier.taxonVariant": 57488, 
@@ -831,11 +1007,14 @@
 "^skos:prefLabel": "Punctelia aff. rudecta"
 }, 
 "Tl1991974": {
-"^ot:originalLabel": "Punctelia caseana NY160 C"
+"^ot:originalLabel": "Punctelia caseana NY160 C", 
+"^ot:ottId": 926990, 
+"^ot:ottTaxonName": "Punctelia caseana"
 }, 
 "Tl1991975": {
-"^ot:altLabel": "Punctelia rudecta", 
 "^ot:originalLabel": "Punctelia rudecta 3154 USA", 
+"^ot:ottId": 311283, 
+"^ot:ottTaxonName": "Punctelia subflava", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 24546, 
 "@tb:identifier.taxonVariant": 57488, 
@@ -845,8 +1024,9 @@
 "^skos:prefLabel": "Punctelia aff. rudecta"
 }, 
 "Tl1991976": {
-"^ot:altLabel": "Punctelia borreri", 
 "^ot:originalLabel": "Punctelia borreri 080105 I", 
+"^ot:ottId": 682353, 
+"^ot:ottTaxonName": "Punctelia borreri", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 24544, 
 "@tb:identifier.taxonVariant": 57484, 
@@ -855,8 +1035,9 @@
 }
 }, 
 "Tl1991977": {
-"^ot:altLabel": "Punctelia borreri", 
 "^ot:originalLabel": "Punctelia borreri 10238 I", 
+"^ot:ottId": 682353, 
+"^ot:ottTaxonName": "Punctelia borreri", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 24544, 
 "@tb:identifier.taxonVariant": 57484, 
@@ -879,7 +1060,18 @@
 "Tr90392": {
 "@label": "TREE1", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:posteriorSupport", 
+"^ot:branchLengthTimeUnit": "Myr", 
+"^ot:curatedType": "Bayesian inference ", 
+"^ot:inGroupClade": "Tn13283071", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "Tn13283059", 
+"^ot:specifiedRoot": "Tn13283059", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "^tb:ntax.tree": 89, 
 "edgeBySourceId": {
 "Tn13283005": {
@@ -1942,11 +2134,13 @@
 "nodeById": {
 "Tn13283005": {}, 
 "Tn13283006": {
-"@otu": "Tl1991905"
+"@otu": "Tl1991905", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn13283007": {}, 
 "Tn13283008": {
-"@otu": "Tl1991954"
+"@otu": "Tl1991954", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn13283009": {}, 
 "Tn13283010": {
@@ -1957,12 +2151,14 @@
 "Tn13283013": {}, 
 "Tn13283014": {}, 
 "Tn13283015": {
-"@otu": "Tl1991920"
+"@otu": "Tl1991920", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn13283016": {}, 
 "Tn13283017": {}, 
 "Tn13283018": {
-"@otu": "Tl1991922"
+"@otu": "Tl1991922", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn13283019": {}, 
 "Tn13283020": {
@@ -1973,16 +2169,19 @@
 "Tn13283023": {}, 
 "Tn13283024": {}, 
 "Tn13283025": {
-"@otu": "Tl1991895"
+"@otu": "Tl1991895", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn13283026": {}, 
 "Tn13283027": {
-"@otu": "Tl1991940"
+"@otu": "Tl1991940", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn13283028": {}, 
 "Tn13283029": {}, 
 "Tn13283030": {
-"@otu": "Tl1991926"
+"@otu": "Tl1991926", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn13283031": {
 "@otu": "Tl1991946"
@@ -1993,40 +2192,49 @@
 "@otu": "Tl1991908"
 }, 
 "Tn13283035": {
-"@otu": "Tl1991904"
+"@otu": "Tl1991904", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn13283036": {}, 
 "Tn13283037": {
-"@otu": "Tl1991900"
+"@otu": "Tl1991900", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn13283038": {
-"@otu": "Tl1991925"
+"@otu": "Tl1991925", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn13283039": {
-"@otu": "Tl1991906"
+"@otu": "Tl1991906", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn13283040": {}, 
 "Tn13283041": {}, 
 "Tn13283042": {
-"@otu": "Tl1991945"
+"@otu": "Tl1991945", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn13283043": {}, 
 "Tn13283044": {}, 
 "Tn13283045": {
-"@otu": "Tl1991917"
+"@otu": "Tl1991917", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn13283046": {
 "@otu": "Tl1991952"
 }, 
 "Tn13283047": {}, 
 "Tn13283048": {
-"@otu": "Tl1991936"
+"@otu": "Tl1991936", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn13283049": {
-"@otu": "Tl1991899"
+"@otu": "Tl1991899", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn13283050": {
-"@otu": "Tl1991941"
+"@otu": "Tl1991941", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn13283051": {}, 
 "Tn13283052": {}, 
@@ -2035,7 +2243,8 @@
 "Tn13283055": {}, 
 "Tn13283056": {}, 
 "Tn13283057": {
-"@otu": "Tl1991976"
+"@otu": "Tl1991976", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn13283058": {}, 
 "Tn13283059": {
@@ -2045,16 +2254,19 @@
 "@otu": "Tl1991937"
 }, 
 "Tn13283061": {
-"@otu": "Tl1991948"
+"@otu": "Tl1991948", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn13283062": {
 "@otu": "Tl1991966"
 }, 
 "Tn13283063": {
-"@otu": "Tl1991959"
+"@otu": "Tl1991959", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn13283064": {
-"@otu": "Tl1991942"
+"@otu": "Tl1991942", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn13283065": {}, 
 "Tn13283066": {}, 
@@ -2068,11 +2280,13 @@
 "Tn13283072": {}, 
 "Tn13283073": {}, 
 "Tn13283074": {
-"@otu": "Tl1991962"
+"@otu": "Tl1991962", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn13283075": {}, 
 "Tn13283076": {
-"@otu": "Tl1991909"
+"@otu": "Tl1991909", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn13283077": {}, 
 "Tn13283078": {
@@ -2081,63 +2295,77 @@
 "Tn13283079": {}, 
 "Tn13283080": {}, 
 "Tn13283081": {
-"@otu": "Tl1991919"
+"@otu": "Tl1991919", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn13283082": {
-"@otu": "Tl1991891"
+"@otu": "Tl1991891", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn13283083": {}, 
 "Tn13283084": {}, 
 "Tn13283085": {
-"@otu": "Tl1991896"
+"@otu": "Tl1991896", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn13283086": {
-"@otu": "Tl1991967"
+"@otu": "Tl1991967", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn13283087": {
-"@otu": "Tl1991971"
+"@otu": "Tl1991971", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn13283088": {}, 
 "Tn13283089": {
-"@otu": "Tl1991938"
+"@otu": "Tl1991938", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn13283090": {
-"@otu": "Tl1991953"
+"@otu": "Tl1991953", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn13283091": {}, 
 "Tn13283092": {}, 
 "Tn13283093": {
-"@otu": "Tl1991943"
+"@otu": "Tl1991943", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn13283094": {
 "@otu": "Tl1991958"
 }, 
 "Tn13283095": {}, 
 "Tn13283096": {
-"@otu": "Tl1991973"
+"@otu": "Tl1991973", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn13283097": {
 "@otu": "Tl1991970"
 }, 
 "Tn13283098": {}, 
 "Tn13283099": {
-"@otu": "Tl1991893"
+"@otu": "Tl1991893", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn13283100": {
-"@otu": "Tl1991955"
+"@otu": "Tl1991955", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn13283101": {}, 
 "Tn13283102": {}, 
 "Tn13283103": {
-"@otu": "Tl1991947"
+"@otu": "Tl1991947", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn13283104": {}, 
 "Tn13283105": {
-"@otu": "Tl1991932"
+"@otu": "Tl1991932", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn13283106": {}, 
 "Tn13283107": {
-"@otu": "Tl1991916"
+"@otu": "Tl1991916", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn13283108": {}, 
 "Tn13283109": {}, 
@@ -2146,21 +2374,25 @@
 }, 
 "Tn13283111": {}, 
 "Tn13283112": {
-"@otu": "Tl1991901"
+"@otu": "Tl1991901", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn13283113": {
 "@otu": "Tl1991929"
 }, 
 "Tn13283114": {}, 
 "Tn13283115": {
-"@otu": "Tl1991961"
+"@otu": "Tl1991961", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn13283116": {
-"@otu": "Tl1991913"
+"@otu": "Tl1991913", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn13283117": {}, 
 "Tn13283118": {
-"@otu": "Tl1991977"
+"@otu": "Tl1991977", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn13283119": {}, 
 "Tn13283120": {}, 
@@ -2176,17 +2408,20 @@
 "Tn13283126": {}, 
 "Tn13283127": {}, 
 "Tn13283128": {
-"@otu": "Tl1991931"
+"@otu": "Tl1991931", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn13283129": {
-"@otu": "Tl1991892"
+"@otu": "Tl1991892", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn13283130": {
 "@otu": "Tl1991918"
 }, 
 "Tn13283131": {}, 
 "Tn13283132": {
-"@otu": "Tl1991907"
+"@otu": "Tl1991907", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn13283133": {}, 
 "Tn13283134": {}, 
@@ -2199,103 +2434,129 @@
 "@otu": "Tl1991924"
 }, 
 "Tn13283139": {
-"@otu": "Tl1991975"
+"@otu": "Tl1991975", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn13283140": {
-"@otu": "Tl1991921"
+"@otu": "Tl1991921", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn13283141": {
-"@otu": "Tl1991897"
+"@otu": "Tl1991897", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn13283142": {
-"@otu": "Tl1991964"
+"@otu": "Tl1991964", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn13283143": {}, 
 "Tn13283144": {
-"@otu": "Tl1991915"
+"@otu": "Tl1991915", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn13283145": {
-"@otu": "Tl1991957"
+"@otu": "Tl1991957", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn13283146": {
-"@otu": "Tl1991930"
+"@otu": "Tl1991930", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn13283147": {
-"@otu": "Tl1991951"
+"@otu": "Tl1991951", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn13283148": {
-"@otu": "Tl1991934"
+"@otu": "Tl1991934", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn13283149": {}, 
 "Tn13283150": {}, 
 "Tn13283151": {}, 
 "Tn13283152": {
-"@otu": "Tl1991898"
+"@otu": "Tl1991898", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn13283153": {
-"@otu": "Tl1991939"
+"@otu": "Tl1991939", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn13283154": {}, 
 "Tn13283155": {}, 
 "Tn13283156": {
-"@otu": "Tl1991912"
+"@otu": "Tl1991912", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn13283157": {
-"@otu": "Tl1991894"
+"@otu": "Tl1991894", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn13283158": {}, 
 "Tn13283159": {
-"@otu": "Tl1991928"
+"@otu": "Tl1991928", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn13283160": {
-"@otu": "Tl1991914"
+"@otu": "Tl1991914", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn13283161": {
-"@otu": "Tl1991944"
+"@otu": "Tl1991944", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn13283162": {}, 
 "Tn13283163": {}, 
 "Tn13283164": {
-"@otu": "Tl1991963"
+"@otu": "Tl1991963", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn13283165": {}, 
 "Tn13283166": {}, 
 "Tn13283167": {
-"@otu": "Tl1991903"
+"@otu": "Tl1991903", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn13283168": {
-"@otu": "Tl1991902"
+"@otu": "Tl1991902", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn13283169": {}, 
 "Tn13283170": {
 "@otu": "Tl1991960"
 }, 
 "Tn13283171": {
-"@otu": "Tl1991974"
+"@otu": "Tl1991974", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn13283172": {
-"@otu": "Tl1991910"
+"@otu": "Tl1991910", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn13283173": {
-"@otu": "Tl1991956"
+"@otu": "Tl1991956", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn13283174": {
-"@otu": "Tl1991969"
+"@otu": "Tl1991969", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn13283175": {}, 
 "Tn13283176": {}, 
 "Tn13283177": {
-"@otu": "Tl1991927"
+"@otu": "Tl1991927", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn13283178": {
 "@otu": "Tl1991968"
 }, 
 "Tn13283179": {
-"@otu": "Tl1991911"
+"@otu": "Tl1991911", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn13283180": {}, 
 "Tn13283181": {
-"@otu": "Tl1991972"
+"@otu": "Tl1991972", 
+"^ot:isTaxonExemplar": false
 }
 }
 }
