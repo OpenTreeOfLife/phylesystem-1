@@ -54,25 +54,119 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2016-04-18T18:33:24.689Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "Ascomycetes"
 }, 
-"^ot:curatorName": "Dail Laughinghouse", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}, 
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": "\\b\\s+(\\w*)$"
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2016-04-18T18:33:24.689Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"Tr75370"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Dail Laughinghouse"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S15922"
 }, 
+"^ot:focalClade": 3659777, 
+"^ot:focalCladeOTTTaxonName": "Willeya (genus in Holozoa)", 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "Tls38072"
 ], 
 "^ot:studyId": "ot_704", 
 "^ot:studyPublication": {
-"@href": "10.1600/036364415X688808"
+"@href": "http://dx.doi.org/10.1600/036364415x688808"
 }, 
-"^ot:studyPublicationReference": "Gueidan C., & Lendemer J.C. 2015. Molecular Data Confirm Morphological and Ecological Plasticity within the North-American Endemic Willeya diffractella (Verrucariaceae). Systematic Botany, 40(2): 369-375.", 
+"^ot:studyPublicationReference": "C\u00e9cile Gueidan, James C. Lendemer, 2015, 'Molecular Data Confirm Morphological and Ecological Plasticity within the North-American Endemic Lichen <I>Willeya diffractella</I> (Verrucariaceae)', Systematic Botany, vol. 40, no. 2, pp. 369-375", 
 "^ot:studyYear": 2015, 
+"^ot:tag": [], 
 "^ot:taxonLinkPrefixes": {
 "@ubio": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:", 
 "@uniprot": "http://purl.uniprot.org/taxonomy/"
@@ -101,11 +195,14 @@
 "^skos:historyNote": "Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlOTUWriter@1c53d476 $Rev: 1040 $", 
 "otuById": {
 "Tl1515034": {
-"^ot:originalLabel": "Endocarpon tenuissimum JCL27013"
+"^ot:originalLabel": "Endocarpon tenuissimum JCL27013", 
+"^ot:ottId": 5310287, 
+"^ot:ottTaxonName": "Endocarpon tenuissimum"
 }, 
 "Tl1515035": {
-"^ot:altLabel": "Willeya diffractella", 
 "^ot:originalLabel": "Willeya diffractella JCL13548", 
+"^ot:ottId": 3757464, 
+"^ot:ottTaxonName": "Willeya diffractella", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 625301, 
 "@tb:identifier.taxonVariant": 837507, 
@@ -113,8 +210,9 @@
 }
 }, 
 "Tl1515036": {
-"^ot:altLabel": "Willeya diffractella", 
 "^ot:originalLabel": "Willeya diffractella RCH50736", 
+"^ot:ottId": 3757464, 
+"^ot:ottTaxonName": "Willeya diffractella", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 625301, 
 "@tb:identifier.taxonVariant": 837507, 
@@ -122,11 +220,14 @@
 }
 }, 
 "Tl1515037": {
-"^ot:originalLabel": "Willeya pallidopora CG1927"
+"^ot:originalLabel": "Willeya pallidopora CG1927", 
+"^ot:ottId": 3757415, 
+"^ot:ottTaxonName": "Staurothele pallidipora"
 }, 
 "Tl1515038": {
-"^ot:altLabel": "Willeya diffractella", 
 "^ot:originalLabel": "Willeya diffractella WRB45193", 
+"^ot:ottId": 3757464, 
+"^ot:ottTaxonName": "Willeya diffractella", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 625301, 
 "@tb:identifier.taxonVariant": 837507, 
@@ -134,8 +235,9 @@
 }
 }, 
 "Tl1515039": {
-"^ot:altLabel": "Willeya diffractella", 
 "^ot:originalLabel": "Willeya diffractella JCL11689", 
+"^ot:ottId": 3757464, 
+"^ot:ottTaxonName": "Willeya diffractella", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 625301, 
 "@tb:identifier.taxonVariant": 837507, 
@@ -143,14 +245,19 @@
 }
 }, 
 "Tl1515040": {
-"^ot:originalLabel": "Endocarpon tenuissimum JCL29447"
+"^ot:originalLabel": "Endocarpon tenuissimum JCL29447", 
+"^ot:ottId": 5310287, 
+"^ot:ottTaxonName": "Endocarpon tenuissimum"
 }, 
 "Tl1515041": {
-"^ot:originalLabel": "Willeya fusca CG1912"
+"^ot:originalLabel": "Willeya fusca CG1912", 
+"^ot:ottId": 5695498, 
+"^ot:ottTaxonName": "Willeya fusca"
 }, 
 "Tl1515042": {
-"^ot:altLabel": "Willeya diffractella", 
 "^ot:originalLabel": "Willeya diffractella RCH47375", 
+"^ot:ottId": 3757464, 
+"^ot:ottTaxonName": "Willeya diffractella", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 625301, 
 "@tb:identifier.taxonVariant": 837507, 
@@ -158,8 +265,9 @@
 }
 }, 
 "Tl1515043": {
-"^ot:altLabel": "Willeya diffractella", 
 "^ot:originalLabel": "Willeya diffractella WRB38264", 
+"^ot:ottId": 3757464, 
+"^ot:ottTaxonName": "Willeya diffractella", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 625301, 
 "@tb:identifier.taxonVariant": 837507, 
@@ -168,6 +276,8 @@
 }, 
 "Tl1515044": {
 "^ot:originalLabel": "Endocarpon petrolepideum", 
+"^ot:ottId": 850280, 
+"^ot:ottTaxonName": "Endocarpon petrolepideum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 400620, 
 "@tb:identifier.taxonVariant": 407594, 
@@ -176,8 +286,9 @@
 }
 }, 
 "Tl1515045": {
-"^ot:altLabel": "Willeya diffractella", 
 "^ot:originalLabel": "Willeya diffractella CAM12769a", 
+"^ot:ottId": 3757464, 
+"^ot:ottTaxonName": "Willeya diffractella", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 625301, 
 "@tb:identifier.taxonVariant": 837507, 
@@ -185,8 +296,9 @@
 }
 }, 
 "Tl1515046": {
-"^ot:altLabel": "Willeya diffractella", 
 "^ot:originalLabel": "Willeya diffractella WRB45341", 
+"^ot:ottId": 3757464, 
+"^ot:ottTaxonName": "Willeya diffractella", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 625301, 
 "@tb:identifier.taxonVariant": 837507, 
@@ -194,11 +306,14 @@
 }
 }, 
 "Tl1515047": {
-"^ot:originalLabel": "Willeya protrudens CG1922"
+"^ot:originalLabel": "Willeya protrudens CG1922", 
+"^ot:ottId": 5695499, 
+"^ot:ottTaxonName": "Willeya protrudens"
 }, 
 "Tl1515048": {
-"^ot:altLabel": "Willeya diffractella", 
 "^ot:originalLabel": "Willeya diffractella CG585", 
+"^ot:ottId": 3757464, 
+"^ot:ottTaxonName": "Willeya diffractella", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 625301, 
 "@tb:identifier.taxonVariant": 837507, 
@@ -206,8 +321,9 @@
 }
 }, 
 "Tl1515049": {
-"^ot:altLabel": "Willeya diffractella", 
 "^ot:originalLabel": "Willeya diffractella WRB27738", 
+"^ot:ottId": 3757464, 
+"^ot:ottTaxonName": "Willeya diffractella", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 625301, 
 "@tb:identifier.taxonVariant": 837507, 
@@ -215,8 +331,9 @@
 }
 }, 
 "Tl1515050": {
-"^ot:altLabel": "Willeya diffractella", 
 "^ot:originalLabel": "Willeya diffractella RCH25827", 
+"^ot:ottId": 3757464, 
+"^ot:ottTaxonName": "Willeya diffractella", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 625301, 
 "@tb:identifier.taxonVariant": 837507, 
@@ -224,17 +341,24 @@
 }
 }, 
 "Tl1515051": {
-"^ot:originalLabel": "Willeya protrudens CG1957b"
+"^ot:originalLabel": "Willeya protrudens CG1957b", 
+"^ot:ottId": 5695499, 
+"^ot:ottTaxonName": "Willeya protrudens"
 }, 
 "Tl1515052": {
-"^ot:originalLabel": "Willeya pallidopora CG1941"
+"^ot:originalLabel": "Willeya pallidopora CG1941", 
+"^ot:ottId": 3757415, 
+"^ot:ottTaxonName": "Staurothele pallidipora"
 }, 
 "Tl1515053": {
-"^ot:originalLabel": "Willeya pallidopora CG1948"
+"^ot:originalLabel": "Willeya pallidopora CG1948", 
+"^ot:ottId": 3757415, 
+"^ot:ottTaxonName": "Staurothele pallidipora"
 }, 
 "Tl1515054": {
-"^ot:altLabel": "Willeya diffractella", 
 "^ot:originalLabel": "Willeya diffractella WRB38858", 
+"^ot:ottId": 3757464, 
+"^ot:ottTaxonName": "Willeya diffractella", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 625301, 
 "@tb:identifier.taxonVariant": 837507, 
@@ -242,14 +366,19 @@
 }
 }, 
 "Tl1515055": {
-"^ot:originalLabel": "Willeya protrudens CG1943"
+"^ot:originalLabel": "Willeya protrudens CG1943", 
+"^ot:ottId": 5695499, 
+"^ot:ottTaxonName": "Willeya protrudens"
 }, 
 "Tl1515056": {
-"^ot:originalLabel": "Willeya pallidopora CG1908"
+"^ot:originalLabel": "Willeya pallidopora CG1908", 
+"^ot:ottId": 3757415, 
+"^ot:ottTaxonName": "Staurothele pallidipora"
 }, 
 "Tl1515057": {
-"^ot:altLabel": "Willeya diffractella", 
 "^ot:originalLabel": "Willeya diffractella RCH50548", 
+"^ot:ottId": 3757464, 
+"^ot:ottTaxonName": "Willeya diffractella", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 625301, 
 "@tb:identifier.taxonVariant": 837507, 
@@ -257,8 +386,9 @@
 }
 }, 
 "Tl1515058": {
-"^ot:altLabel": "Willeya diffractella", 
 "^ot:originalLabel": "Willeya diffractella RCH56340", 
+"^ot:ottId": 3757464, 
+"^ot:ottTaxonName": "Willeya diffractella", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 625301, 
 "@tb:identifier.taxonVariant": 837507, 
@@ -266,11 +396,14 @@
 }
 }, 
 "Tl1515059": {
-"^ot:originalLabel": "Willeya protrudens CG1940a"
+"^ot:originalLabel": "Willeya protrudens CG1940a", 
+"^ot:ottId": 5695499, 
+"^ot:ottTaxonName": "Willeya protrudens"
 }, 
 "Tl1515060": {
-"^ot:altLabel": "Willeya diffractella", 
 "^ot:originalLabel": "Willeya diffractella JCL28379", 
+"^ot:ottId": 3757464, 
+"^ot:ottTaxonName": "Willeya diffractella", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 625301, 
 "@tb:identifier.taxonVariant": 837507, 
@@ -278,8 +411,9 @@
 }
 }, 
 "Tl1515061": {
-"^ot:altLabel": "Willeya diffractella", 
 "^ot:originalLabel": "Willeya diffractella JCL26852", 
+"^ot:ottId": 3757464, 
+"^ot:ottTaxonName": "Willeya diffractella", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 625301, 
 "@tb:identifier.taxonVariant": 837507, 
@@ -287,17 +421,24 @@
 }
 }, 
 "Tl1515062": {
-"^ot:originalLabel": "Willeya pallidopora CG1926"
+"^ot:originalLabel": "Willeya pallidopora CG1926", 
+"^ot:ottId": 3757415, 
+"^ot:ottTaxonName": "Staurothele pallidipora"
 }, 
 "Tl1515063": {
-"^ot:originalLabel": "Willeya pallidopora PMC2546"
+"^ot:originalLabel": "Willeya pallidopora PMC2546", 
+"^ot:ottId": 3757415, 
+"^ot:ottTaxonName": "Staurothele pallidipora"
 }, 
 "Tl1515064": {
-"^ot:originalLabel": "Willeya protrudens CG1945"
+"^ot:originalLabel": "Willeya protrudens CG1945", 
+"^ot:ottId": 5695499, 
+"^ot:ottTaxonName": "Willeya protrudens"
 }, 
 "Tl1515065": {
-"^ot:altLabel": "Willeya diffractella", 
 "^ot:originalLabel": "Willeya diffractella AA1179", 
+"^ot:ottId": 3757464, 
+"^ot:ottTaxonName": "Willeya diffractella", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 625301, 
 "@tb:identifier.taxonVariant": 837507, 
@@ -305,8 +446,9 @@
 }
 }, 
 "Tl1515066": {
-"^ot:altLabel": "Willeya diffractella", 
 "^ot:originalLabel": "Willeya diffractella WRB30219", 
+"^ot:ottId": 3757464, 
+"^ot:ottTaxonName": "Willeya diffractella", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 625301, 
 "@tb:identifier.taxonVariant": 837507, 
@@ -314,10 +456,14 @@
 }
 }, 
 "Tl1515067": {
-"^ot:originalLabel": "Willeya protrudens CG1885"
+"^ot:originalLabel": "Willeya protrudens CG1885", 
+"^ot:ottId": 5695499, 
+"^ot:ottTaxonName": "Willeya protrudens"
 }, 
 "Tl1515068": {
 "^ot:originalLabel": "Endocarpon psorodeum", 
+"^ot:ottId": 275846, 
+"^ot:ottTaxonName": "Endocarpon psorodeum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 400621, 
 "@tb:identifier.taxonVariant": 407595, 
@@ -326,8 +472,9 @@
 }
 }, 
 "Tl1515069": {
-"^ot:altLabel": "Willeya diffractella", 
 "^ot:originalLabel": "Willeya diffractella CAM14069", 
+"^ot:ottId": 3757464, 
+"^ot:ottTaxonName": "Willeya diffractella", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 625301, 
 "@tb:identifier.taxonVariant": 837507, 
@@ -335,14 +482,19 @@
 }
 }, 
 "Tl1515070": {
-"^ot:originalLabel": "Willeya protrudens CG1957a"
+"^ot:originalLabel": "Willeya protrudens CG1957a", 
+"^ot:ottId": 5695499, 
+"^ot:ottTaxonName": "Willeya protrudens"
 }, 
 "Tl1515071": {
-"^ot:originalLabel": "Willeya fusca CG1877"
+"^ot:originalLabel": "Willeya fusca CG1877", 
+"^ot:ottId": 5695498, 
+"^ot:ottTaxonName": "Willeya fusca"
 }, 
 "Tl1515072": {
-"^ot:altLabel": "Willeya diffractella", 
 "^ot:originalLabel": "Willeya diffractella JCL17399", 
+"^ot:ottId": 3757464, 
+"^ot:ottTaxonName": "Willeya diffractella", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 625301, 
 "@tb:identifier.taxonVariant": 837507, 
@@ -350,11 +502,14 @@
 }
 }, 
 "Tl1515073": {
-"^ot:originalLabel": "Willeya pallidopora CG1940b"
+"^ot:originalLabel": "Willeya pallidopora CG1940b", 
+"^ot:ottId": 3757415, 
+"^ot:ottTaxonName": "Staurothele pallidipora"
 }, 
 "Tl1515074": {
-"^ot:altLabel": "Willeya diffractella", 
 "^ot:originalLabel": "Willeya diffractella RCH44093", 
+"^ot:ottId": 3757464, 
+"^ot:ottTaxonName": "Willeya diffractella", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 625301, 
 "@tb:identifier.taxonVariant": 837507, 
@@ -362,14 +517,19 @@
 }
 }, 
 "Tl1515075": {
-"^ot:originalLabel": "Willeya pallidopora CG1865"
+"^ot:originalLabel": "Willeya pallidopora CG1865", 
+"^ot:ottId": 3757415, 
+"^ot:ottTaxonName": "Staurothele pallidipora"
 }, 
 "Tl1515076": {
-"^ot:originalLabel": "Willeya pallidopora PMC2612"
+"^ot:originalLabel": "Willeya pallidopora PMC2612", 
+"^ot:ottId": 3757415, 
+"^ot:ottTaxonName": "Staurothele pallidipora"
 }, 
 "Tl1515077": {
-"^ot:altLabel": "Willeya diffractella", 
 "^ot:originalLabel": "Willeya diffractella JCL6513", 
+"^ot:ottId": 3757464, 
+"^ot:ottTaxonName": "Willeya diffractella", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 625301, 
 "@tb:identifier.taxonVariant": 837507, 
@@ -377,7 +537,9 @@
 }
 }, 
 "Tl1515078": {
-"^ot:originalLabel": "Willeya laevigata CG1852"
+"^ot:originalLabel": "Willeya laevigata CG1852", 
+"^ot:ottId": 5695497, 
+"^ot:ottTaxonName": "Willeya laevigata"
 }
 }
 }
@@ -394,7 +556,18 @@
 "Tr75370": {
 "@label": "ITS tree", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:undefined", 
+"^ot:branchLengthTimeUnit": "Myr", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "Tn11744499", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 45, 
 "^tb:quality.tree": "Unrated", 
@@ -933,108 +1106,134 @@
 "Tn11744471": {}, 
 "Tn11744472": {}, 
 "Tn11744473": {
-"@otu": "Tl1515057"
+"@otu": "Tl1515057", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn11744474": {
-"@otu": "Tl1515046"
+"@otu": "Tl1515046", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn11744475": {
-"@otu": "Tl1515058"
+"@otu": "Tl1515058", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn11744476": {
-"@otu": "Tl1515060"
+"@otu": "Tl1515060", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn11744477": {}, 
 "Tn11744478": {}, 
 "Tn11744479": {}, 
 "Tn11744480": {}, 
 "Tn11744481": {
-"@otu": "Tl1515066"
+"@otu": "Tl1515066", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn11744482": {}, 
 "Tn11744483": {}, 
 "Tn11744484": {
-"@otu": "Tl1515045"
+"@otu": "Tl1515045", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn11744485": {}, 
 "Tn11744486": {}, 
 "Tn11744487": {
-"@otu": "Tl1515034"
+"@otu": "Tl1515034", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn11744488": {
-"@otu": "Tl1515067"
+"@otu": "Tl1515067", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn11744489": {}, 
 "Tn11744490": {}, 
 "Tn11744491": {
-"@otu": "Tl1515069"
+"@otu": "Tl1515069", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn11744492": {
-"@otu": "Tl1515064"
+"@otu": "Tl1515064", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn11744493": {}, 
 "Tn11744494": {
-"@otu": "Tl1515050"
+"@otu": "Tl1515050", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn11744495": {
-"@otu": "Tl1515065"
+"@otu": "Tl1515065", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn11744496": {}, 
 "Tn11744497": {}, 
 "Tn11744498": {
-"@otu": "Tl1515061"
+"@otu": "Tl1515061", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn11744499": {
 "@root": true
 }, 
 "Tn11744500": {
-"@otu": "Tl1515072"
+"@otu": "Tl1515072", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn11744501": {
 "@otu": "Tl1515068"
 }, 
 "Tn11744502": {
-"@otu": "Tl1515062"
+"@otu": "Tl1515062", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn11744503": {}, 
 "Tn11744504": {}, 
 "Tn11744505": {
-"@otu": "Tl1515077"
+"@otu": "Tl1515077", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn11744506": {
-"@otu": "Tl1515054"
+"@otu": "Tl1515054", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn11744507": {
-"@otu": "Tl1515040"
+"@otu": "Tl1515040", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn11744508": {}, 
 "Tn11744509": {
-"@otu": "Tl1515048"
+"@otu": "Tl1515048", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn11744510": {}, 
 "Tn11744511": {
-"@otu": "Tl1515075"
+"@otu": "Tl1515075", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn11744512": {
-"@otu": "Tl1515073"
+"@otu": "Tl1515073", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn11744513": {
-"@otu": "Tl1515076"
+"@otu": "Tl1515076", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn11744514": {}, 
 "Tn11744515": {
-"@otu": "Tl1515047"
+"@otu": "Tl1515047", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn11744516": {
-"@otu": "Tl1515074"
+"@otu": "Tl1515074", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn11744517": {
-"@otu": "Tl1515049"
+"@otu": "Tl1515049", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn11744518": {}, 
 "Tn11744519": {}, 
 "Tn11744520": {
-"@otu": "Tl1515051"
+"@otu": "Tl1515051", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn11744521": {}, 
 "Tn11744522": {}, 
@@ -1043,50 +1242,63 @@
 "@otu": "Tl1515044"
 }, 
 "Tn11744525": {
-"@otu": "Tl1515056"
+"@otu": "Tl1515056", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn11744526": {}, 
 "Tn11744527": {
-"@otu": "Tl1515063"
+"@otu": "Tl1515063", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn11744528": {}, 
 "Tn11744529": {}, 
 "Tn11744530": {
-"@otu": "Tl1515041"
+"@otu": "Tl1515041", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn11744531": {
-"@otu": "Tl1515071"
+"@otu": "Tl1515071", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn11744532": {
-"@otu": "Tl1515037"
+"@otu": "Tl1515037", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn11744533": {}, 
 "Tn11744534": {
-"@otu": "Tl1515042"
+"@otu": "Tl1515042", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn11744535": {
-"@otu": "Tl1515038"
+"@otu": "Tl1515038", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn11744536": {}, 
 "Tn11744537": {}, 
 "Tn11744538": {
-"@otu": "Tl1515070"
+"@otu": "Tl1515070", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn11744539": {
-"@otu": "Tl1515036"
+"@otu": "Tl1515036", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn11744540": {
-"@otu": "Tl1515039"
+"@otu": "Tl1515039", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn11744541": {
-"@otu": "Tl1515035"
+"@otu": "Tl1515035", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn11744542": {}, 
 "Tn11744543": {
-"@otu": "Tl1515059"
+"@otu": "Tl1515059", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn11744544": {
-"@otu": "Tl1515043"
+"@otu": "Tl1515043", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn11744545": {
 "@otu": "Tl1515078"
@@ -1094,20 +1306,23 @@
 "Tn11744546": {}, 
 "Tn11744547": {}, 
 "Tn11744548": {
-"@otu": "Tl1515055"
+"@otu": "Tl1515055", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn11744549": {}, 
 "Tn11744550": {}, 
 "Tn11744551": {}, 
 "Tn11744552": {}, 
 "Tn11744553": {
-"@otu": "Tl1515052"
+"@otu": "Tl1515052", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn11744554": {}, 
 "Tn11744555": {}, 
 "Tn11744556": {}, 
 "Tn11744557": {
-"@otu": "Tl1515053"
+"@otu": "Tl1515053", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn11744558": {}, 
 "Tn11744559": {}
