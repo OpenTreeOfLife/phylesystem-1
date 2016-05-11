@@ -36,22 +36,100 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2016-05-11T14:14:23.764Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "Flowering plants"
 }, 
-"^ot:candidateTreeForSynthesis": [], 
-"^ot:curatorName": "William Wysocki", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2016-05-11T14:14:23.764Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree4130"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"William Wysocki", 
+"Jonathan A Rees"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S2181"
 }, 
 "^ot:focalClade": 1022514, 
 "^ot:focalCladeOTTTaxonName": "Piperales", 
-"^ot:messages": {
-"message": []
-}, 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "otus108"
 ], 
@@ -3914,21 +3992,22 @@
 ], 
 "treeById": {
 "tree4129": {
+"@label": "Untitled (tree4129)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
-"^ot:branchLengthMode": "", 
-"^ot:branchLengthTimeUnit": "", 
+"^ot:branchLengthMode": "ot:undefined", 
+"^ot:branchLengthTimeUnit": "Myr", 
 "^ot:curatedType": "Fig. 1 and sup.", 
+"^ot:inGroupClade": "tree4129_ROOT", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
-"^ot:rootNodeId": "node766582", 
-"^ot:specifiedRoot": "", 
+"^ot:rootNodeId": "tree4129_ROOT", 
+"^ot:specifiedRoot": "tree4129_ROOT", 
 "^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node766582": {
-"edge766583": {
-"@source": "node766582", 
-"@target": "node766583"
-}, 
 "edge767714": {
 "@source": "node766582", 
 "@target": "node767714"
@@ -3939,13 +4018,13 @@
 }
 }, 
 "node766583": {
+"edge766583": {
+"@source": "node766583", 
+"@target": "node766582"
+}, 
 "edge766584": {
 "@source": "node766583", 
 "@target": "node766584"
-}, 
-"edge766625": {
-"@source": "node766583", 
-"@target": "node766625"
 }
 }, 
 "node766584": {
@@ -4149,9 +4228,9 @@
 }
 }, 
 "node766625": {
-"edge766626": {
+"edge766625": {
 "@source": "node766625", 
-"@target": "node766626"
+"@target": "node766583"
 }, 
 "edge767193": {
 "@source": "node766625", 
@@ -4159,13 +4238,13 @@
 }
 }, 
 "node766626": {
+"edge766626": {
+"@source": "node766626", 
+"@target": "node766625"
+}, 
 "edge766627": {
 "@source": "node766626", 
 "@target": "node766627"
-}, 
-"edge766758": {
-"@source": "node766626", 
-"@target": "node766758"
 }
 }, 
 "node766627": {
@@ -4819,9 +4898,9 @@
 }
 }, 
 "node766758": {
-"edge766759": {
+"edge766758": {
 "@source": "node766758", 
-"@target": "node766759"
+"@target": "node766626"
 }, 
 "edge767190": {
 "@source": "node766758", 
@@ -4829,9 +4908,9 @@
 }
 }, 
 "node766759": {
-"edge766760": {
+"edge766759": {
 "@source": "node766759", 
-"@target": "node766760"
+"@target": "node766758"
 }, 
 "edge766957": {
 "@source": "node766759", 
@@ -4839,9 +4918,9 @@
 }
 }, 
 "node766760": {
-"edge766761": {
+"edge766760": {
 "@source": "node766760", 
-"@target": "node766761"
+"@target": "node766759"
 }, 
 "edge766786": {
 "@source": "node766760", 
@@ -9657,12 +9736,20 @@
 "@source": "node767727", 
 "@target": "node767729"
 }
+}, 
+"tree4129_ROOT": {
+"edge766761": {
+"@source": "tree4129_ROOT", 
+"@target": "node766761"
+}, 
+"tree4129_ROOT_EDGE": {
+"@source": "tree4129_ROOT", 
+"@target": "node766760"
+}
 }
 }, 
 "nodeById": {
-"node766582": {
-"@root": true
-}, 
+"node766582": {}, 
 "node766583": {}, 
 "node766584": {}, 
 "node766585": {}, 
@@ -11959,20 +12046,27 @@
 }, 
 "node767729": {
 "@otu": "otu301825"
+}, 
+"tree4129_ROOT": {
+"@root": true
 }
 }
 }, 
 "tree4130": {
+"@label": "Fig. 2b", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
-"^ot:branchLengthMode": "", 
-"^ot:branchLengthTimeUnit": "", 
+"^ot:branchLengthMode": "ot:undefined", 
+"^ot:branchLengthTimeUnit": "Myr", 
 "^ot:curatedType": "Fig. 2", 
-"^ot:inGroupClade": "node767730", 
+"^ot:inGroupClade": "tree4130_ROOT", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
-"^ot:rootNodeId": "node767730", 
-"^ot:specifiedRoot": "", 
+"^ot:rootNodeId": "tree4130_ROOT", 
+"^ot:specifiedRoot": "tree4130_ROOT", 
 "^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node767730": {
 "edge767731": {
@@ -11982,20 +12076,16 @@
 "edge767732": {
 "@source": "node767730", 
 "@target": "node767732"
-}, 
-"edge767733": {
-"@source": "node767730", 
-"@target": "node767733"
 }
 }, 
 "node767733": {
+"edge767733": {
+"@source": "node767733", 
+"@target": "node767730"
+}, 
 "edge767734": {
 "@source": "node767733", 
 "@target": "node767734"
-}, 
-"edge767769": {
-"@source": "node767733", 
-"@target": "node767769"
 }
 }, 
 "node767734": {
@@ -12169,13 +12259,13 @@
 }
 }, 
 "node767769": {
+"edge767769": {
+"@source": "node767769", 
+"@target": "node767733"
+}, 
 "edge767770": {
 "@source": "node767769", 
 "@target": "node767770"
-}, 
-"edge767797": {
-"@source": "node767769", 
-"@target": "node767797"
 }
 }, 
 "node767770": {
@@ -12309,9 +12399,9 @@
 }
 }, 
 "node767797": {
-"edge767798": {
+"edge767797": {
 "@source": "node767797", 
-"@target": "node767798"
+"@target": "node767769"
 }, 
 "edge768079": {
 "@source": "node767797", 
@@ -12319,9 +12409,9 @@
 }
 }, 
 "node767798": {
-"edge767799": {
+"edge767798": {
 "@source": "node767798", 
-"@target": "node767799"
+"@target": "node767797"
 }, 
 "edge768070": {
 "@source": "node767798", 
@@ -12329,9 +12419,9 @@
 }
 }, 
 "node767799": {
-"edge767800": {
+"edge767799": {
 "@source": "node767799", 
-"@target": "node767800"
+"@target": "node767798"
 }, 
 "edge767925": {
 "@source": "node767799", 
@@ -12339,9 +12429,9 @@
 }
 }, 
 "node767800": {
-"edge767801": {
+"edge767800": {
 "@source": "node767800", 
-"@target": "node767801"
+"@target": "node767799"
 }, 
 "edge767924": {
 "@source": "node767800", 
@@ -12349,13 +12439,13 @@
 }
 }, 
 "node767801": {
+"edge767801": {
+"@source": "node767801", 
+"@target": "node767800"
+}, 
 "edge767802": {
 "@source": "node767801", 
 "@target": "node767802"
-}, 
-"edge767813": {
-"@source": "node767801", 
-"@target": "node767813"
 }
 }, 
 "node767802": {
@@ -12409,13 +12499,13 @@
 }
 }, 
 "node767813": {
+"edge767813": {
+"@source": "node767813", 
+"@target": "node767801"
+}, 
 "edge767814": {
 "@source": "node767813", 
 "@target": "node767814"
-}, 
-"edge767829": {
-"@source": "node767813", 
-"@target": "node767829"
 }
 }, 
 "node767814": {
@@ -12489,9 +12579,9 @@
 }
 }, 
 "node767829": {
-"edge767830": {
+"edge767829": {
 "@source": "node767829", 
-"@target": "node767830"
+"@target": "node767813"
 }, 
 "edge767841": {
 "@source": "node767829", 
@@ -13767,12 +13857,20 @@
 "@source": "node768087", 
 "@target": "node768089"
 }
+}, 
+"tree4130_ROOT": {
+"edge767830": {
+"@source": "tree4130_ROOT", 
+"@target": "node767830"
+}, 
+"tree4130_ROOT_EDGE": {
+"@source": "tree4130_ROOT", 
+"@target": "node767829"
+}
 }
 }, 
 "nodeById": {
-"node767730": {
-"@root": true
-}, 
+"node767730": {}, 
 "node767731": {
 "@otu": "otu301808"
 }, 
@@ -14493,6 +14591,9 @@
 }, 
 "node768089": {
 "@otu": "otu301953"
+}, 
+"tree4130_ROOT": {
+"@root": true
 }
 }
 }
