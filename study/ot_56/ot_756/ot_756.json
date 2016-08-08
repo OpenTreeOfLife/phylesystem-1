@@ -59,22 +59,106 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2016-08-08T14:27:34.256Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "Bacteria"
 }, 
-"^ot:curatorName": "Dail Laughinghouse", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2016-08-08T14:27:34.256Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Dail Laughinghouse"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S19421"
 }, 
+"^ot:focalCladeOTTTaxonName": "", 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "Tls52572"
 ], 
 "^ot:studyId": "ot_756", 
-"^ot:studyPublicationReference": "Chrismas N.A., Barker G., Anesio A.M., & Sanchez-baracaldo P. 2016. Genomic mechanisms for cold tolerance and production of exopolysaccharides in the Arctic cyanobacterium Phormidesmis priestleyi BC1401. BMC Genomics, .", 
+"^ot:studyPublication": {
+"@href": "http://dx.doi.org/10.1186/s12864-016-2846-4"
+}, 
+"^ot:studyPublicationReference": "Nathan A. M. Chrismas, Gary Barker, Alexandre M. Anesio, Patricia S\u00e1nchez-Baracaldo, 2016, 'Genomic mechanisms for cold tolerance and production of exopolysaccharides in the Arctic cyanobacterium Phormidesmis priestleyi BC1401', BMC Genomics, vol. 17, no. 1", 
 "^ot:studyYear": 2016, 
+"^ot:tag": [], 
 "^ot:taxonLinkPrefixes": {
 "@ubio": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:", 
 "@uniprot": "http://purl.uniprot.org/taxonomy/"
@@ -100,17 +184,22 @@
 "^ot:originalLabel": "Oscillatoriales cyanobacterium JSC12"
 }, 
 "Tl2376949": {
-"^ot:originalLabel": "Prochlorococcus marinus Str AS9601"
+"^ot:originalLabel": "Prochlorococcus marinus Str AS9601", 
+"^ot:ottId": 771087, 
+"^ot:ottTaxonName": "Prochlorococcus marinus"
 }, 
 "Tl2376950": {
 "^ot:originalLabel": "Lyngbya sp PCC8106"
 }, 
 "Tl2376951": {
-"^ot:originalLabel": "Richelia intracellularis HH01"
+"^ot:originalLabel": "Richelia intracellularis HH01", 
+"^ot:ottId": 254502, 
+"^ot:ottTaxonName": "Richelia intracellularis HH01"
 }, 
 "Tl2376952": {
-"^ot:altLabel": "Dactylococcopsis salina", 
 "^ot:originalLabel": "Dactylococcopsis salina PCC8305", 
+"^ot:ottId": 1093198, 
+"^ot:ottTaxonName": "Dactylococcopsis salina", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 257969, 
 "@tb:identifier.taxonVariant": 316175, 
@@ -122,8 +211,9 @@
 "^ot:originalLabel": "Synechococcus sp RCC307"
 }, 
 "Tl2376954": {
-"^ot:altLabel": "Chamaesiphon minutus", 
 "^ot:originalLabel": "Chamaesiphon minutus PCC6605", 
+"^ot:ottId": 685622, 
+"^ot:ottTaxonName": "Chamaesiphon minutus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 631379, 
 "@tb:identifier.taxonVariant": 846391, 
@@ -137,8 +227,9 @@
 "^ot:originalLabel": "Prochlorococcus marinus Str MIT9215"
 }, 
 "Tl2376957": {
-"^ot:altLabel": "Crinalium epipsammum", 
 "^ot:originalLabel": "Crinalium epipsammum PCC9333", 
+"^ot:ottId": 528222, 
+"^ot:ottTaxonName": "Crinalium epipsammum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 218198, 
 "@tb:identifier.taxonVariant": 284893, 
@@ -147,8 +238,9 @@
 }
 }, 
 "Tl2376958": {
-"^ot:altLabel": "Microcystis aeruginosa", 
 "^ot:originalLabel": "Microcystis aeruginosa PCC9443", 
+"^ot:ottId": 269069, 
+"^ot:ottTaxonName": "Microcystis aeruginosa (species ncbi:1126)", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 17668, 
 "@tb:identifier.taxonVariant": 41338, 
@@ -166,7 +258,9 @@
 "^ot:originalLabel": "Prochlorococcus marinus Str MIT9211"
 }, 
 "Tl2376962": {
-"^ot:originalLabel": "Geminocystis herdmaniiPCC6308"
+"^ot:originalLabel": "Geminocystis herdmaniiPCC6308", 
+"^ot:ottId": 5376816, 
+"^ot:ottTaxonName": "Geminocystis herdmanii (merged with Cyanobacterium)"
 }, 
 "Tl2376963": {
 "^ot:originalLabel": "Xenococcus sp PCC7305"
@@ -175,8 +269,9 @@
 "^ot:originalLabel": "Synechococcus sp JA23Bprimea213"
 }, 
 "Tl2376965": {
-"^ot:altLabel": "Chroococcidiopsis thermalis", 
 "^ot:originalLabel": "Chroococcidiopsis thermalis PCC7203", 
+"^ot:ottId": 1088765, 
+"^ot:ottTaxonName": "Chroococcidiopsis thermalis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 73929, 
 "@tb:identifier.taxonVariant": 150829, 
@@ -188,8 +283,9 @@
 "^ot:originalLabel": "Leptolyngbya sp PCC7375"
 }, 
 "Tl2376967": {
-"^ot:altLabel": "Mastigocladopsis repens", 
 "^ot:originalLabel": "Mastigocladopsis repens PCC10914", 
+"^ot:ottId": 955423, 
+"^ot:ottTaxonName": "Mastigocladopsis repens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 202183, 
 "@tb:identifier.taxonVariant": 450136, 
@@ -198,8 +294,9 @@
 }
 }, 
 "Tl2376968": {
-"^ot:altLabel": "Prochlorothrix hollandica", 
 "^ot:originalLabel": "Prochlorothrix hollandica PCC9006", 
+"^ot:ottId": 248077, 
+"^ot:ottTaxonName": "Prochlorothrix hollandica", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 49240, 
 "@tb:identifier.taxonVariant": 116818, 
@@ -208,8 +305,9 @@
 }
 }, 
 "Tl2376969": {
-"^ot:altLabel": "Thermosynechococcus elongatus", 
 "^ot:originalLabel": "Thermosynechococcus elongatus BP1", 
+"^ot:ottId": 717455, 
+"^ot:ottTaxonName": "Thermosynechococcus elongatus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 28959, 
 "@tb:identifier.taxonVariant": 67513, 
@@ -218,8 +316,9 @@
 }
 }, 
 "Tl2376970": {
-"^ot:altLabel": "Stanieria cyanosphaera", 
 "^ot:originalLabel": "Stanieria cyanosphaera PCC7437", 
+"^ot:ottId": 602181, 
+"^ot:ottTaxonName": "Stanieria cyanosphaera", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 27779, 
 "@tb:identifier.taxonVariant": 64821, 
@@ -228,8 +327,9 @@
 }
 }, 
 "Tl2376971": {
-"^ot:altLabel": "Synechococcus elongatus", 
 "^ot:originalLabel": "Synechococcus elongatus PCC7942", 
+"^ot:ottId": 114641, 
+"^ot:ottTaxonName": "Synechococcus elongatus (merged with Synechococcus)", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 28363, 
 "@tb:identifier.taxonVariant": 66132, 
@@ -247,8 +347,9 @@
 "^ot:originalLabel": "Calothrix sp PCC7507"
 }, 
 "Tl2376975": {
-"^ot:altLabel": "Microcoleus vaginatus", 
 "^ot:originalLabel": "Microcoleus vaginatus FGP2", 
+"^ot:ottId": 648313, 
+"^ot:ottTaxonName": "Microcoleus vaginatus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 121780, 
 "@tb:identifier.taxonVariant": 199605, 
@@ -263,8 +364,9 @@
 "^ot:originalLabel": "Cyanothece sp ATCC51142"
 }, 
 "Tl2376978": {
-"^ot:altLabel": "Acaryochloris marina", 
 "^ot:originalLabel": "Acaryochloris marina MBIC11017", 
+"^ot:ottId": 673090, 
+"^ot:ottTaxonName": "Acaryochloris marina", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 149979, 
 "@tb:identifier.taxonVariant": 225649, 
@@ -276,8 +378,9 @@
 "^ot:originalLabel": "Microcoleus sp PCC7113"
 }, 
 "Tl2376980": {
-"^ot:altLabel": "Gloeobacter violaceus", 
 "^ot:originalLabel": "Gloeobacter violaceus PCC7421", 
+"^ot:ottId": 108690, 
+"^ot:ottTaxonName": "Gloeobacter violaceus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 12211, 
 "@tb:identifier.taxonVariant": 29011, 
@@ -292,8 +395,9 @@
 "^ot:originalLabel": "Geitlerinema sp PCC7105"
 }, 
 "Tl2376983": {
-"^ot:altLabel": "Spirulina subsalsa", 
 "^ot:originalLabel": "Spirulina subsalsa PCC9445", 
+"^ot:ottId": 814709, 
+"^ot:ottTaxonName": "Spirulina subsalsa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 27634, 
 "@tb:identifier.taxonVariant": 64519, 
@@ -314,8 +418,9 @@
 "^ot:originalLabel": "Pseudanabaena biceps PCC7429"
 }, 
 "Tl2376988": {
-"^ot:altLabel": "Prochloron didemni", 
 "^ot:originalLabel": "Prochloron didemni P2 Fiji", 
+"^ot:ottId": 771073, 
+"^ot:ottTaxonName": "Prochloron didemni", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 49235, 
 "@tb:identifier.taxonVariant": 116811, 
@@ -336,8 +441,9 @@
 "^ot:originalLabel": "Synechococcus sp PCC6312"
 }, 
 "Tl2376993": {
-"^ot:altLabel": "Microcystis aeruginosa", 
 "^ot:originalLabel": "Microcystis aeruginosa PCC9806", 
+"^ot:ottId": 269069, 
+"^ot:ottTaxonName": "Microcystis aeruginosa (species ncbi:1126)", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 17668, 
 "@tb:identifier.taxonVariant": 41338, 
@@ -352,8 +458,9 @@
 "^ot:originalLabel": "Synechococcus sp JA33Ab"
 }, 
 "Tl2376996": {
-"^ot:altLabel": "Anabaena cylindrica", 
 "^ot:originalLabel": "Anabaena cylindrica PCC7122", 
+"^ot:ottId": 368765, 
+"^ot:ottTaxonName": "Anabaena cylindrica (inconsistent in Anabaena)", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 1347, 
 "@tb:identifier.taxonVariant": 3391, 
@@ -362,8 +469,9 @@
 }
 }, 
 "Tl2376997": {
-"^ot:altLabel": "Crocosphaera watsonii", 
 "^ot:originalLabel": "Crocosphaera watsonii WH8501", 
+"^ot:ottId": 777927, 
+"^ot:ottTaxonName": "Crocosphaera watsonii (merged with FamilyI (in SubsectionI))", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 236709, 
 "@tb:identifier.taxonVariant": 298806, 
@@ -372,8 +480,9 @@
 }
 }, 
 "Tl2376998": {
-"^ot:altLabel": "Nodularia spumigena", 
 "^ot:originalLabel": "Nodularia spumigena CCY9414", 
+"^ot:ottId": 724264, 
+"^ot:ottTaxonName": "Nodularia spumigena", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 19141, 
 "@tb:identifier.taxonVariant": 44537, 
@@ -382,8 +491,9 @@
 }
 }, 
 "Tl2376999": {
-"^ot:altLabel": "Prochloron didemni", 
 "^ot:originalLabel": "Prochloron didemni P3 Solomon", 
+"^ot:ottId": 771073, 
+"^ot:ottTaxonName": "Prochloron didemni", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 49235, 
 "@tb:identifier.taxonVariant": 116811, 
@@ -399,6 +509,8 @@
 }, 
 "Tl2377002": {
 "^ot:originalLabel": "Raphidiopsis brookii D9", 
+"^ot:ottId": 625975, 
+"^ot:ottTaxonName": "Raphidiopsis brookii D9", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 547427, 
 "@tb:identifier.taxonVariant": 725975
@@ -408,8 +520,9 @@
 "^ot:originalLabel": "Geitlerinema sp PCC7407"
 }, 
 "Tl2377004": {
-"^ot:altLabel": "Fischerella muscicola", 
 "^ot:originalLabel": "Fischerella muscicola SAG14271", 
+"^ot:ottId": 76366, 
+"^ot:ottTaxonName": "Fischerella muscicola (species ncbi:92938)", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 11341, 
 "@tb:identifier.taxonVariant": 27118, 
@@ -433,8 +546,9 @@
 "^ot:originalLabel": "Cyanothece sp PCC8802"
 }, 
 "Tl2377010": {
-"^ot:altLabel": "Fischerella thermalis", 
 "^ot:originalLabel": "Fischerella thermalis PCC7521", 
+"^ot:ottId": 483775, 
+"^ot:ottTaxonName": "Fischerella thermalis (merged with Fischerella (genus in domain Bacteria (domain silva:A16379/#1)))", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 325586, 
 "@tb:identifier.taxonVariant": 367342, 
@@ -461,8 +575,9 @@
 "^ot:originalLabel": "Synechococcus sp CC9902"
 }, 
 "Tl2377017": {
-"^ot:altLabel": "Oscillatoria acuminata", 
 "^ot:originalLabel": "Oscillatoria acuminata PCC6304", 
+"^ot:ottId": 945416, 
+"^ot:ottTaxonName": "Oscillatoria acuminata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 120867, 
 "@tb:identifier.taxonVariant": 198735, 
@@ -474,8 +589,9 @@
 "^ot:originalLabel": "Nostoc sp PCC7107"
 }, 
 "Tl2377019": {
-"^ot:altLabel": "Cyanobium gracile", 
 "^ot:originalLabel": "Cyanobium gracile PCC6307", 
+"^ot:ottId": 739488, 
+"^ot:ottTaxonName": "Cyanobium gracile", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 7847, 
 "@tb:identifier.taxonVariant": 18868, 
@@ -484,7 +600,6 @@
 }
 }, 
 "Tl2377020": {
-"^ot:altLabel": "Synechocystis sp", 
 "^ot:originalLabel": "Synechocystis sp PCC7509", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 49189, 
@@ -495,8 +610,9 @@
 "^skos:prefLabel": "Synechocystis sp."
 }, 
 "Tl2377021": {
-"^ot:altLabel": "Arthrospira maxima", 
 "^ot:originalLabel": "Arthrospira maxima CS328", 
+"^ot:ottId": 145122, 
+"^ot:ottTaxonName": "Arthrospira maxima", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 129744, 
 "@tb:identifier.taxonVariant": 207257, 
@@ -511,8 +627,9 @@
 "^ot:originalLabel": "Synechococcus sp CC9605"
 }, 
 "Tl2377024": {
-"^ot:altLabel": "Cylindrospermum stagnale", 
 "^ot:originalLabel": "Cylindrospermum stagnale PCC7417", 
+"^ot:ottId": 5375734, 
+"^ot:ottTaxonName": "Cylindrospermum stagnale", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 7971, 
 "@tb:identifier.taxonVariant": 19162, 
@@ -524,8 +641,9 @@
 "^ot:originalLabel": "Synechococcus sp CC9311"
 }, 
 "Tl2377026": {
-"^ot:altLabel": "Microcoleus chthonoplastes", 
 "^ot:originalLabel": "Microcoleus chthonoplastes PCC7420", 
+"^ot:ottId": 478476, 
+"^ot:ottTaxonName": "Coleofasciculus chthonoplastes", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 80635, 
 "@tb:identifier.taxonVariant": 158537, 
@@ -534,8 +652,9 @@
 }
 }, 
 "Tl2377027": {
-"^ot:altLabel": "Synechocystis sp", 
 "^ot:originalLabel": "Synechocystis sp PCC6803", 
+"^ot:ottId": 319255, 
+"^ot:ottTaxonName": "Synechocystis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 49189, 
 "@tb:identifier.taxonVariant": 116756, 
@@ -566,7 +685,9 @@
 "^ot:originalLabel": "Nostoc sp PCC7120"
 }, 
 "Tl2377035": {
-"^ot:originalLabel": "Richelia intracellularis HM01"
+"^ot:originalLabel": "Richelia intracellularis HM01", 
+"^ot:ottId": 254501, 
+"^ot:ottTaxonName": "Richelia intracellularis HM01"
 }, 
 "Tl2377036": {
 "^ot:originalLabel": "Cyanothece sp PCC7425"
@@ -584,8 +705,9 @@
 "^ot:originalLabel": "Calothrix sp PCC7103"
 }, 
 "Tl2377041": {
-"^ot:altLabel": "Nostoc punctiforme", 
 "^ot:originalLabel": "Nostoc punctiforme PCC73102", 
+"^ot:ottId": 782567, 
+"^ot:ottTaxonName": "Nostoc punctiforme (inconsistent in Nostoc)", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 19179, 
 "@tb:identifier.taxonVariant": 44610, 
@@ -600,8 +722,9 @@
 "^ot:originalLabel": "Fischerella sp PCC9339"
 }, 
 "Tl2377044": {
-"^ot:altLabel": "Synechococcus elongatus", 
 "^ot:originalLabel": "Synechococcus elongatus PCC6301", 
+"^ot:ottId": 114641, 
+"^ot:ottTaxonName": "Synechococcus elongatus (merged with Synechococcus)", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 28363, 
 "@tb:identifier.taxonVariant": 66132, 
@@ -610,8 +733,9 @@
 }
 }, 
 "Tl2377045": {
-"^ot:altLabel": "Oscillatoria formosa", 
 "^ot:originalLabel": "Oscillatoria formosa PCC6407", 
+"^ot:ottId": 884422, 
+"^ot:ottTaxonName": "Kamptonema formosum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 291132, 
 "@tb:identifier.taxonVariant": 342471, 
@@ -632,7 +756,9 @@
 "^ot:originalLabel": "Synechococcus sp PCC7002"
 }, 
 "Tl2377050": {
-"^ot:originalLabel": "Nostoc azollae 0708"
+"^ot:originalLabel": "Nostoc azollae 0708", 
+"^ot:ottId": 64360, 
+"^ot:ottTaxonName": "'Nostoc azollae' 0708"
 }, 
 "Tl2377051": {
 "^ot:originalLabel": "Synechococcus sp CB0205"
@@ -644,8 +770,9 @@
 "^ot:originalLabel": "Acaryochloris sp CCMEE5410"
 }, 
 "Tl2377054": {
-"^ot:altLabel": "Crocosphaera watsonii", 
 "^ot:originalLabel": "Crocosphaera watsonii WH0003", 
+"^ot:ottId": 777927, 
+"^ot:ottTaxonName": "Crocosphaera watsonii (merged with FamilyI (in SubsectionI))", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 236709, 
 "@tb:identifier.taxonVariant": 298806, 
@@ -654,8 +781,9 @@
 }
 }, 
 "Tl2377055": {
-"^ot:altLabel": "Microcystis aeruginosa", 
 "^ot:originalLabel": "Microcystis aeruginosa NIES843", 
+"^ot:ottId": 269069, 
+"^ot:ottTaxonName": "Microcystis aeruginosa (species ncbi:1126)", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 17668, 
 "@tb:identifier.taxonVariant": 41338, 
@@ -664,8 +792,9 @@
 }
 }, 
 "Tl2377056": {
-"^ot:altLabel": "Prochloron didemni", 
 "^ot:originalLabel": "Prochloron didemni P4 Papua New Guinea", 
+"^ot:ottId": 771073, 
+"^ot:ottTaxonName": "Prochloron didemni", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 49235, 
 "@tb:identifier.taxonVariant": 116811, 
@@ -677,8 +806,9 @@
 "^ot:originalLabel": "Cyanothece sp PCC7424"
 }, 
 "Tl2377058": {
-"^ot:altLabel": "Lyngbya majuscula", 
 "^ot:originalLabel": "Lyngbya majuscula 3L", 
+"^ot:ottId": 588158, 
+"^ot:ottTaxonName": "Lyngbya majuscula", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 152003, 
 "@tb:identifier.taxonVariant": 227577, 
@@ -696,8 +826,9 @@
 "^ot:originalLabel": "Nodosilinea nodulosa PCC7104"
 }, 
 "Tl2377062": {
-"^ot:altLabel": "Leptolyngbya boryana", 
 "^ot:originalLabel": "Leptolyngbya boryana PCC6306", 
+"^ot:ottId": 5254267, 
+"^ot:ottTaxonName": "Leptolyngbya boryana (ncbi:411966)", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 49213, 
 "@tb:identifier.taxonVariant": 832607, 
@@ -709,8 +840,9 @@
 "^ot:originalLabel": "UCYNA2"
 }, 
 "Tl2377064": {
-"^ot:altLabel": "Trichodesmium erythraeum", 
 "^ot:originalLabel": "Trichodesmium erythraeum IMS101", 
+"^ot:ottId": 197000, 
+"^ot:ottTaxonName": "Trichodesmium erythraeum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 49227, 
 "@tb:identifier.taxonVariant": 116794, 
@@ -735,8 +867,9 @@
 "^ot:originalLabel": "Cyanothece sp PCC8801"
 }, 
 "Tl2377069": {
-"^ot:altLabel": "Prochloron didemni", 
 "^ot:originalLabel": "Prochloron didemni P1 Palau", 
+"^ot:ottId": 771073, 
+"^ot:ottTaxonName": "Prochloron didemni", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 49235, 
 "@tb:identifier.taxonVariant": 116811, 
@@ -745,8 +878,9 @@
 }
 }, 
 "Tl2377070": {
-"^ot:altLabel": "Fischerella muscicola", 
 "^ot:originalLabel": "Fischerella muscicola PCC7414", 
+"^ot:ottId": 76366, 
+"^ot:ottTaxonName": "Fischerella muscicola (species ncbi:92938)", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 11341, 
 "@tb:identifier.taxonVariant": 27118, 
@@ -758,8 +892,9 @@
 "^ot:originalLabel": "Synechococcus sp RS9917"
 }, 
 "Tl2377072": {
-"^ot:altLabel": "Cylindrospermopsis raciborskii", 
 "^ot:originalLabel": "Cylindrospermopsis raciborskii CS505", 
+"^ot:ottId": 480769, 
+"^ot:ottTaxonName": "Cylindrospermopsis raciborskii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 89547, 
 "@tb:identifier.taxonVariant": 168427, 
@@ -768,8 +903,9 @@
 }
 }, 
 "Tl2377073": {
-"^ot:altLabel": "Cyanobacterium stanieri", 
 "^ot:originalLabel": "Cyanobacterium stanieri PCC7202", 
+"^ot:ottId": 668149, 
+"^ot:ottTaxonName": "Cyanobacterium stanieri", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 108861, 
 "@tb:identifier.taxonVariant": 187256, 
@@ -781,8 +917,9 @@
 "^ot:originalLabel": "Pleurocapsa sp PCC7327"
 }, 
 "Tl2377075": {
-"^ot:altLabel": "Anabaena variabilis", 
 "^ot:originalLabel": "Anabaena variabilis ATCC29413", 
+"^ot:ottId": 893794, 
+"^ot:ottTaxonName": "Anabaena variabilis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 632029, 
 "@tb:identifier.taxonVariant": 847041, 
@@ -817,7 +954,17 @@
 "Tr97604": {
 "@label": "tree 1", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:undefined", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "Tn14262107", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 132, 
 "^tb:quality.tree": "Unrated", 
