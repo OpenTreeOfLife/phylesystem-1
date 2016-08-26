@@ -61,10 +61,20 @@
 "@severity": "INFO", 
 "data": {
 "searchContext": {
-"$": "All life"
+"$": "Birds"
 }, 
 "substitutions": {
 "substitution": [
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": "gi\\|\\d+\\|[a-z]+\\|\\w+\\.\\d\\|"
+}
+}, 
 {
 "@active": false, 
 "@valid": true, 
@@ -72,12 +82,22 @@
 "$": ""
 }, 
 "old": {
-"$": ""
+"$": "^(\\w*)\\s+\\b"
+}
+}, 
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": "$1"
+}, 
+"old": {
+"$": "^(\\S*\\s+\\S*).*"
 }
 }
 ]
 }, 
-"useFuzzyMatching": false
+"useFuzzyMatching": true
 }, 
 "refersTo": {
 "@top": {
@@ -160,196 +180,324 @@
 "otus1": {
 "otuById": {
 "otu1": {
-"^ot:originalLabel": "gi|24743482|emb|AJ003947.1| Athene noctua"
+"^ot:originalLabel": "gi|24743482|emb|AJ003947.1| Athene noctua", 
+"^ot:ottId": 427150, 
+"^ot:ottTaxonName": "Athene noctua"
 }, 
 "otu10": {
-"^ot:originalLabel": "gi|24743860|emb|AJ003999.1| Glaucidium nanum"
+"^ot:originalLabel": "gi|24743860|emb|AJ003999.1| Glaucidium nanum", 
+"^ot:ottId": 332037, 
+"^ot:ottTaxonName": "Glaucidium nanum"
 }, 
 "otu11": {
-"^ot:originalLabel": "gi|24743835|emb|AJ003994.1| Glaucidium gnoma"
+"^ot:originalLabel": "gi|24743835|emb|AJ003994.1| Glaucidium gnoma", 
+"^ot:ottId": 178693, 
+"^ot:ottTaxonName": "Glaucidium gnoma"
 }, 
 "otu12": {
-"^ot:originalLabel": "gi|22795722|emb|AJ003993.1| Glaucidium californicum"
+"^ot:originalLabel": "gi|22795722|emb|AJ003993.1| Glaucidium californicum", 
+"^ot:ottId": 332071, 
+"^ot:ottTaxonName": "Glaucidium californicum"
 }, 
 "otu13": {
-"^ot:originalLabel": "gi|22796185|emb|AJ004000.1| Glaucidium passerinum"
+"^ot:originalLabel": "gi|22796185|emb|AJ004000.1| Glaucidium passerinum", 
+"^ot:ottId": 1072145, 
+"^ot:ottTaxonName": "Glaucidium passerinum"
 }, 
 "otu14": {
-"^ot:originalLabel": "gi|22796195|emb|AJ004006.1| Glaucidium tephronotum"
+"^ot:originalLabel": "gi|22796195|emb|AJ004006.1| Glaucidium tephronotum", 
+"^ot:ottId": 546089, 
+"^ot:ottTaxonName": "Glaucidium tephronotum"
 }, 
 "otu15": {
-"^ot:originalLabel": "gi|22797318|emb|AJ004067.1| Surnia ulula"
+"^ot:originalLabel": "gi|22797318|emb|AJ004067.1| Surnia ulula", 
+"^ot:ottId": 440408, 
+"^ot:ottTaxonName": "Surnia ulula"
 }, 
 "otu16": {
-"^ot:originalLabel": "gi|9967710|emb|Y15686.1| Aegolius acadicus acadicus"
+"^ot:originalLabel": "gi|9967710|emb|Y15686.1| Aegolius acadicus acadicus", 
+"^ot:ottId": 951078, 
+"^ot:ottTaxonName": "Aegolius acadicus acadicus"
 }, 
 "otu17": {
-"^ot:originalLabel": "gi|22795456|emb|AJ003940.1| Aegolius harrisii"
+"^ot:originalLabel": "gi|22795456|emb|AJ003940.1| Aegolius harrisii", 
+"^ot:ottId": 546098, 
+"^ot:ottTaxonName": "Aegolius harrisii"
 }, 
 "otu18": {
-"^ot:originalLabel": "gi|9971044|emb|AJ004349.1| Aegolius funereus"
+"^ot:originalLabel": "gi|9971044|emb|AJ004349.1| Aegolius funereus", 
+"^ot:ottId": 735586, 
+"^ot:ottTaxonName": "Aegolius funereus"
 }, 
 "otu19": {
-"^ot:originalLabel": "gi|170787113|gb|EU348983.1| Ninox rufa"
+"^ot:originalLabel": "gi|170787113|gb|EU348983.1| Ninox rufa", 
+"^ot:ottId": 970646, 
+"^ot:ottTaxonName": "Ninox rufa"
 }, 
 "otu2": {
-"^ot:originalLabel": "gi|22795458|emb|AJ003944.1| Speotyto cunicularia"
+"^ot:originalLabel": "gi|22795458|emb|AJ003944.1| Speotyto cunicularia", 
+"^ot:ottId": 944695, 
+"^ot:ottTaxonName": "Athene cunicularia"
 }, 
 "otu20": {
-"^ot:originalLabel": "gi|170787115|gb|EU348984.1| Ninox strenua"
+"^ot:originalLabel": "gi|170787115|gb|EU348984.1| Ninox strenua", 
+"^ot:ottId": 525625, 
+"^ot:ottTaxonName": "Ninox strenua"
 }, 
 "otu21": {
-"^ot:originalLabel": "gi|170787111|gb|EU348982.1| Ninox rudolfi"
+"^ot:originalLabel": "gi|170787111|gb|EU348982.1| Ninox rudolfi", 
+"^ot:ottId": 475892, 
+"^ot:ottTaxonName": "Ninox rudolfi"
 }, 
 "otu22": {
-"^ot:originalLabel": "gi|170787109|gb|EU348981.1| Ninox connivens connivens"
+"^ot:originalLabel": "gi|170787109|gb|EU348981.1| Ninox connivens connivens", 
+"^ot:ottId": 669205, 
+"^ot:ottTaxonName": "Ninox connivens connivens"
 }, 
 "otu23": {
-"^ot:originalLabel": "gi|22796988|emb|AJ004007.1|_1 Ninox novaeseelandiae"
+"^ot:originalLabel": "gi|22796988|emb|AJ004007.1|_1 Ninox novaeseelandiae", 
+"^ot:ottId": 285637, 
+"^ot:ottTaxonName": "Ninox novaeseelandiae"
 }, 
 "otu24": {
-"^ot:originalLabel": "gi|22796988|emb|AJ004007.1|_2 Ninox novaeseelandiae"
+"^ot:originalLabel": "gi|22796988|emb|AJ004007.1|_2 Ninox novaeseelandiae", 
+"^ot:ottId": 285637, 
+"^ot:ottTaxonName": "Ninox novaeseelandiae"
 }, 
 "otu25": {
-"^ot:originalLabel": "LaughingOwl_ACAD16279_75pc_4r Sceloglaux"
+"^ot:originalLabel": "LaughingOwl_ACAD16279_75pc_4r Sceloglaux", 
+"^ot:ottId": 3595767, 
+"^ot:ottTaxonName": "Sceloglaux"
 }, 
 "otu26": {
-"^ot:originalLabel": "gi|22796990|emb|AJ004008.1|_1 Ninox scutulata"
+"^ot:originalLabel": "gi|22796990|emb|AJ004008.1|_1 Ninox scutulata", 
+"^ot:ottId": 546091, 
+"^ot:ottTaxonName": "Ninox scutulata"
 }, 
 "otu27": {
-"^ot:originalLabel": "gi|22796990|emb|AJ004008.1|_2 Ninox scutulata"
+"^ot:originalLabel": "gi|22796990|emb|AJ004008.1|_2 Ninox scutulata", 
+"^ot:ottId": 546091, 
+"^ot:ottTaxonName": "Ninox scutulata"
 }, 
 "otu28": {
-"^ot:originalLabel": "gi|511622160|gb|JX506430.1| Ninox japonica"
+"^ot:originalLabel": "gi|511622160|gb|JX506430.1| Ninox japonica", 
+"^ot:ottId": 3595710, 
+"^ot:ottTaxonName": "Ninox japonica"
 }, 
 "otu29": {
-"^ot:originalLabel": "gi|22797034|emb|AJ004031.1| Otus longicornis"
+"^ot:originalLabel": "gi|22797034|emb|AJ004031.1| Otus longicornis", 
+"^ot:ottId": 1086559, 
+"^ot:ottTaxonName": "Otus longicornis"
 }, 
 "otu3": {
-"^ot:originalLabel": "gi|22795696|emb|AJ003975.1| Glaucidium bolivianum"
+"^ot:originalLabel": "gi|22795696|emb|AJ003975.1| Glaucidium bolivianum", 
+"^ot:ottId": 226995, 
+"^ot:ottTaxonName": "Glaucidium bolivianum"
 }, 
 "otu30": {
-"^ot:originalLabel": "gi|22797046|emb|AJ004037.1| Otus scops"
+"^ot:originalLabel": "gi|22797046|emb|AJ004037.1| Otus scops", 
+"^ot:ottId": 921080, 
+"^ot:ottTaxonName": "Otus scops"
 }, 
 "otu31": {
-"^ot:originalLabel": "gi|22797008|emb|AJ004018.1| Otus bakkamoena"
+"^ot:originalLabel": "gi|22797008|emb|AJ004018.1| Otus bakkamoena", 
+"^ot:ottId": 546103, 
+"^ot:ottTaxonName": "Otus bakkamoena"
 }, 
 "otu32": {
-"^ot:originalLabel": "gi|22797024|emb|AJ004026.1| Otus lempiji"
+"^ot:originalLabel": "gi|22797024|emb|AJ004026.1| Otus lempiji", 
+"^ot:ottId": 1021966, 
+"^ot:ottTaxonName": "Otus lempiji"
 }, 
 "otu33": {
-"^ot:originalLabel": "gi|22797036|emb|AJ004032.1| Otus megalotis"
+"^ot:originalLabel": "gi|22797036|emb|AJ004032.1| Otus megalotis", 
+"^ot:ottId": 1086556, 
+"^ot:ottTaxonName": "Otus megalotis"
 }, 
 "otu34": {
-"^ot:originalLabel": "gi|22795666|emb|AJ003941.1| Asio otus"
+"^ot:originalLabel": "gi|22795666|emb|AJ003941.1| Asio otus", 
+"^ot:ottId": 1060752, 
+"^ot:ottTaxonName": "Asio otus"
 }, 
 "otu35": {
-"^ot:originalLabel": "gi|22797028|emb|AJ004028.1| Otus leucotis"
+"^ot:originalLabel": "gi|22797028|emb|AJ004028.1| Otus leucotis", 
+"^ot:ottId": 1052340, 
+"^ot:ottTaxonName": "Ptilopsis leucotis"
 }, 
 "otu36": {
-"^ot:originalLabel": "gi|22797016|emb|AJ004022.1| Otus flammeolus"
+"^ot:originalLabel": "gi|22797016|emb|AJ004022.1| Otus flammeolus", 
+"^ot:ottId": 178676, 
+"^ot:ottTaxonName": "Otus flammeolus"
 }, 
 "otu37": {
-"^ot:originalLabel": "gi|22797020|emb|AJ004024.1| Otus hoyi62"
+"^ot:originalLabel": "gi|22797020|emb|AJ004024.1| Otus hoyi62", 
+"^ot:ottId": 4806, 
+"^ot:ottTaxonName": "Megascops hoyi"
 }, 
 "otu38": {
-"^ot:originalLabel": "gi|22797018|emb|AJ004023.1| Otus guatemalae"
+"^ot:originalLabel": "gi|22797018|emb|AJ004023.1| Otus guatemalae", 
+"^ot:ottId": 921071, 
+"^ot:ottTaxonName": "Megascops guatemalae"
 }, 
 "otu39": {
-"^ot:originalLabel": "gi|22797044|emb|AJ004036.1| Otus sanctaecatarinae"
+"^ot:originalLabel": "gi|22797044|emb|AJ004036.1| Otus sanctaecatarinae", 
+"^ot:ottId": 1021962, 
+"^ot:ottTaxonName": "Otus sanctaecatarinae"
 }, 
 "otu4": {
-"^ot:originalLabel": "gi|22796183|emb|AJ003998.1| Glaucidium jardinii jardinii"
+"^ot:originalLabel": "gi|22796183|emb|AJ003998.1| Glaucidium jardinii jardinii", 
+"^ot:ottId": 332039, 
+"^ot:ottTaxonName": "Glaucidium jardinii"
 }, 
 "otu40": {
-"^ot:originalLabel": "gi|24744635|emb|AJ004013.1| Otus atricapillus"
+"^ot:originalLabel": "gi|24744635|emb|AJ004013.1| Otus atricapillus", 
+"^ot:ottId": 4792, 
+"^ot:ottTaxonName": "Megascops atricapilla"
 }, 
 "otu41": {
-"^ot:originalLabel": "gi|22797050|emb|AJ004039.1| Otus usta"
+"^ot:originalLabel": "gi|22797050|emb|AJ004039.1| Otus usta", 
+"^ot:ottId": 921084, 
+"^ot:ottTaxonName": "Otus usta"
 }, 
 "otu42": {
-"^ot:originalLabel": "gi|22797000|emb|AJ004014.1| Otus asio hasbroukii"
+"^ot:originalLabel": "gi|22797000|emb|AJ004014.1| Otus asio hasbroukii", 
+"^ot:ottId": 652701, 
+"^ot:ottTaxonName": "Megascops asio hasbroucki"
 }, 
 "otu43": {
-"^ot:originalLabel": "gi|22797042|emb|AJ004035.1| Otus roboratus"
+"^ot:originalLabel": "gi|22797042|emb|AJ004035.1| Otus roboratus", 
+"^ot:ottId": 1021964, 
+"^ot:ottTaxonName": "Otus roboratus"
 }, 
 "otu44": {
-"^ot:originalLabel": "gi|22797040|emb|AJ004034.1| Otus petersoni"
+"^ot:originalLabel": "gi|22797040|emb|AJ004034.1| Otus petersoni", 
+"^ot:ottId": 921082, 
+"^ot:ottTaxonName": "Otus petersoni"
 }, 
 "otu45": {
-"^ot:originalLabel": "gi|22796998|emb|AJ004012.1| Otus albogularis"
+"^ot:originalLabel": "gi|22796998|emb|AJ004012.1| Otus albogularis", 
+"^ot:ottId": 424112, 
+"^ot:ottTaxonName": "Megascops albogularis"
 }, 
 "otu46": {
-"^ot:originalLabel": "gi|22797014|emb|AJ004021.1| Otus choliba"
+"^ot:originalLabel": "gi|22797014|emb|AJ004021.1| Otus choliba", 
+"^ot:ottId": 4802, 
+"^ot:ottTaxonName": "Megascops choliba"
 }, 
 "otu47": {
-"^ot:originalLabel": "gi|22797272|emb|AJ004043.1| Pulsatrix perspicillata"
+"^ot:originalLabel": "gi|22797272|emb|AJ004043.1| Pulsatrix perspicillata", 
+"^ot:ottId": 116528, 
+"^ot:ottTaxonName": "Pulsatrix perspicillata"
 }, 
 "otu48": {
-"^ot:originalLabel": "gi|22797304|emb|AJ004060.1| Strix rufipes"
+"^ot:originalLabel": "gi|22797304|emb|AJ004060.1| Strix rufipes", 
+"^ot:ottId": 1021960, 
+"^ot:ottTaxonName": "Strix rufipes"
 }, 
 "otu49": {
-"^ot:originalLabel": "gi|22797312|emb|AJ004064.1| Strix woodfordii"
+"^ot:originalLabel": "gi|22797312|emb|AJ004064.1| Strix woodfordii", 
+"^ot:ottId": 752976, 
+"^ot:ottTaxonName": "Strix woodfordii"
 }, 
 "otu5": {
-"^ot:originalLabel": "gi|24743845|emb|AJ003996.1| Glaucidium hardyi"
+"^ot:originalLabel": "gi|24743845|emb|AJ003996.1| Glaucidium hardyi", 
+"^ot:ottId": 381785, 
+"^ot:ottTaxonName": "Glaucidium hardyi"
 }, 
 "otu50": {
-"^ot:originalLabel": "gi|24744882|emb|AJ004045.1| Strix aluco"
+"^ot:originalLabel": "gi|24744882|emb|AJ004045.1| Strix aluco", 
+"^ot:ottId": 116522, 
+"^ot:ottTaxonName": "Strix aluco"
 }, 
 "otu51": {
-"^ot:originalLabel": "gi|22797308|emb|AJ004062.1| Strix uralensis"
+"^ot:originalLabel": "gi|22797308|emb|AJ004062.1| Strix uralensis", 
+"^ot:ottId": 427903, 
+"^ot:ottTaxonName": "Strix uralensis"
 }, 
 "otu52": {
-"^ot:originalLabel": "gi|22797300|emb|AJ004058.1| Strix nebulosa"
+"^ot:originalLabel": "gi|22797300|emb|AJ004058.1| Strix nebulosa", 
+"^ot:ottId": 395196, 
+"^ot:ottTaxonName": "Strix nebulosa"
 }, 
 "otu53": {
-"^ot:originalLabel": "gi|22795678|emb|AJ003950.1| Bubo africanus"
+"^ot:originalLabel": "gi|22795678|emb|AJ003950.1| Bubo africanus", 
+"^ot:ottId": 971543, 
+"^ot:ottTaxonName": "Bubo africanus"
 }, 
 "otu54": {
-"^ot:originalLabel": "gi|22795684|emb|AJ003954.1| Bubo bengalensis"
+"^ot:originalLabel": "gi|22795684|emb|AJ003954.1| Bubo bengalensis", 
+"^ot:ottId": 971545, 
+"^ot:ottTaxonName": "Bubo bengalensis"
 }, 
 "otu55": {
-"^ot:originalLabel": "gi|24743591|emb|AJ003953.1| Bubo ascalaphus"
+"^ot:originalLabel": "gi|24743591|emb|AJ003953.1| Bubo ascalaphus", 
+"^ot:ottId": 971547, 
+"^ot:ottTaxonName": "Bubo ascalaphus"
 }, 
 "otu56": {
-"^ot:originalLabel": "gi|24743596|emb|AJ003955.1| Bubo bubo interpositus"
+"^ot:originalLabel": "gi|24743596|emb|AJ003955.1| Bubo bubo interpositus", 
+"^ot:ottId": 526156, 
+"^ot:ottTaxonName": "Bubo bubo interpositus"
 }, 
 "otu57": {
-"^ot:originalLabel": "gi|24743600|emb|AJ003956.1| Bubo bubo"
+"^ot:originalLabel": "gi|24743600|emb|AJ003956.1| Bubo bubo", 
+"^ot:ottId": 402453, 
+"^ot:ottTaxonName": "Bubo bubo"
 }, 
 "otu58": {
-"^ot:originalLabel": "gi|22795688|emb|AJ003971.1| Bubo magellanicus"
+"^ot:originalLabel": "gi|22795688|emb|AJ003971.1| Bubo magellanicus", 
+"^ot:ottId": 381747, 
+"^ot:ottTaxonName": "Bubo magellanicus"
 }, 
 "otu59": {
-"^ot:originalLabel": "gi|22795692|emb|AJ003973.1| Bubo virginianus lagophonus"
+"^ot:originalLabel": "gi|22795692|emb|AJ003973.1| Bubo virginianus lagophonus", 
+"^ot:ottId": 91515, 
+"^ot:ottTaxonName": "Bubo virginianus lagophonus"
 }, 
 "otu6": {
-"^ot:originalLabel": "gi|22795698|emb|AJ003976.1| Glaucidium brasilianum"
+"^ot:originalLabel": "gi|22795698|emb|AJ003976.1| Glaucidium brasilianum", 
+"^ot:ottId": 933120, 
+"^ot:ottTaxonName": "Glaucidium brasilianum"
 }, 
 "otu60": {
-"^ot:originalLabel": "gi|22796992|emb|AJ004009.1| Nyctea scandiaca"
+"^ot:originalLabel": "gi|22796992|emb|AJ004009.1| Nyctea scandiaca", 
+"^ot:ottId": 514178, 
+"^ot:ottTaxonName": "Bubo scandiacus"
 }, 
 "otu61": {
-"^ot:originalLabel": "gi|22795690|emb|AJ003972.1| Bubo nipalensis"
+"^ot:originalLabel": "gi|22795690|emb|AJ003972.1| Bubo nipalensis", 
+"^ot:ottId": 546095, 
+"^ot:ottTaxonName": "Bubo nipalensis"
 }, 
 "otu62": {
-"^ot:originalLabel": "gi|22795686|emb|AJ003970.1| Bubo lacteus"
+"^ot:originalLabel": "gi|22795686|emb|AJ003970.1| Bubo lacteus", 
+"^ot:ottId": 971551, 
+"^ot:ottTaxonName": "Bubo lacteus"
 }, 
 "otu63": {
-"^ot:originalLabel": "gi|22797054|emb|AJ004041.1| Phodilus badius"
+"^ot:originalLabel": "gi|22797054|emb|AJ004041.1| Phodilus badius", 
+"^ot:ottId": 842854, 
+"^ot:ottTaxonName": "Phodilus badius"
 }, 
 "otu64": {
-"^ot:originalLabel": "gi|22797681|emb|AJ004073.1| Tyto alba pratincola"
+"^ot:originalLabel": "gi|22797681|emb|AJ004073.1| Tyto alba pratincola", 
+"^ot:ottId": 768378, 
+"^ot:ottTaxonName": "Tyto alba pratincola"
 }, 
 "otu7": {
-"^ot:originalLabel": "gi|22796173|emb|AJ003988.1| Glaucidium tucumanum"
+"^ot:originalLabel": "gi|22796173|emb|AJ003988.1| Glaucidium tucumanum", 
+"^ot:ottId": 768376, 
+"^ot:ottTaxonName": "Glaucidium tucumanum"
 }, 
 "otu8": {
-"^ot:originalLabel": "gi|24743875|emb|AJ004005.1| Glaucidium peruanum"
+"^ot:originalLabel": "gi|24743875|emb|AJ004005.1| Glaucidium peruanum", 
+"^ot:ottId": 381775, 
+"^ot:ottTaxonName": "Glaucidium peruanum"
 }, 
 "otu9": {
-"^ot:originalLabel": "gi|24743840|emb|AJ003995.1| Glaucidium griseiceps"
+"^ot:originalLabel": "gi|24743840|emb|AJ003995.1| Glaucidium griseiceps", 
+"^ot:ottId": 533374, 
+"^ot:ottTaxonName": "Glaucidium griseiceps"
 }
 }
 }
