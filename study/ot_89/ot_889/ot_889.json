@@ -35,13 +35,112 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2016-10-10T17:10:29.692Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:curatorName": "Joseph W. Brown", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2016-10-10T17:10:29.692Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": [
+{
+"@filename": "PASTED.tre", 
+"@size": 89, 
+"@type": "newick", 
+"@url": "/curator/download/supporting_files.doc.b5ae2fdc56fe7397.5041535445442e747265.tre", 
+"description": {
+"$": "Source data for tree(s) 'tree3'"
+}, 
+"sourceForTree": [
+{
+"$": "tree3"
+}
+]
+}
+]
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Joseph W. Brown"
+], 
+"^ot:dataDeposit": {
+"@href": ""
+}, 
+"^ot:focalClade": 81461, 
+"^ot:focalCladeOTTTaxonName": "Aves", 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "otus1"
 ], 
@@ -49,6 +148,9 @@
 "^ot:studyPublication": {
 "@href": "http://www.faketree.org"
 }, 
+"^ot:studyPublicationReference": "fake. 2016.", 
+"^ot:studyYear": 2016, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees1"
 ], 
@@ -57,14 +159,123 @@
 }, 
 "otusById": {
 "otus1": {
-"otuById": {}
+"otuById": {
+"otu3": {
+"^ot:originalLabel": "Falco peregrinus", 
+"^ot:ottId": 786435, 
+"^ot:ottTaxonName": "Falco peregrinus"
+}, 
+"otu4": {
+"^ot:originalLabel": "Stellula calliope", 
+"^ot:ottId": 536234, 
+"^ot:ottTaxonName": "Selasphorus calliope"
+}, 
+"otu5": {
+"^ot:originalLabel": "Gallus gallus", 
+"^ot:ottId": 153563, 
+"^ot:ottTaxonName": "Gallus gallus"
+}, 
+"otu6": {
+"^ot:originalLabel": "Anhima cornuta", 
+"^ot:ottId": 767829, 
+"^ot:ottTaxonName": "Anhima cornuta"
+}, 
+"otu7": {
+"^ot:originalLabel": "Struthio camelus", 
+"^ot:ottId": 647692, 
+"^ot:ottTaxonName": "Struthio camelus"
+}
+}
 }
 }, 
 "treesById": {
 "trees1": {
 "@otus": "otus1", 
-"^ot:treeElementOrder": [], 
-"treeById": {}
+"^ot:treeElementOrder": [
+"tree3"
+], 
+"treeById": {
+"tree3": {
+"@label": "fake tree", 
+"@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:undefined", 
+"^ot:curatedType": "FAKE!", 
+"^ot:inGroupClade": "node3", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:rootNodeId": "node3", 
+"^ot:specifiedRoot": "node3", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
+"edgeBySourceId": {
+"node3": {
+"edge10": {
+"@source": "node3", 
+"@target": "node11"
+}, 
+"edge3": {
+"@source": "node3", 
+"@target": "node4"
+}
+}, 
+"node4": {
+"edge4": {
+"@source": "node4", 
+"@target": "node5"
+}, 
+"edge7": {
+"@source": "node4", 
+"@target": "node8"
+}
+}, 
+"node5": {
+"edge5": {
+"@source": "node5", 
+"@target": "node6"
+}, 
+"edge6": {
+"@source": "node5", 
+"@target": "node7"
+}
+}, 
+"node8": {
+"edge8": {
+"@source": "node8", 
+"@target": "node9"
+}, 
+"edge9": {
+"@source": "node8", 
+"@target": "node10"
+}
+}
+}, 
+"nodeById": {
+"node10": {
+"@otu": "otu6"
+}, 
+"node11": {
+"@otu": "otu7"
+}, 
+"node3": {
+"@root": true
+}, 
+"node4": {}, 
+"node5": {}, 
+"node6": {
+"@otu": "otu3"
+}, 
+"node7": {
+"@otu": "otu4"
+}, 
+"node8": {}, 
+"node9": {
+"@otu": "otu5"
+}
+}
+}
+}
 }
 }
 }
