@@ -35,13 +35,113 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2016-10-19T15:39:03.703Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:curatorName": "ningwang83", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2016-10-19T15:39:03.703Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": [
+{
+"@filename": "PASTED.tre", 
+"@size": 103, 
+"@type": "newick", 
+"@url": "/curator/download/supporting_files.doc.9b7906c399df555f.5041535445442e747265.tre", 
+"description": {
+"$": "Source data for tree(s) 'tree1'"
+}, 
+"sourceForTree": [
+{
+"$": "tree1"
+}
+]
+}
+]
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree1"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"ningwang83"
+], 
+"^ot:dataDeposit": {
+"@href": ""
+}, 
+"^ot:focalCladeOTTTaxonName": "", 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "otus1"
 ], 
@@ -50,20 +150,128 @@
 "@href": "http://dx.doi.org/10.1534/genetics.107.076422"
 }, 
 "^ot:studyPublicationReference": "M. D. Carling, R. T. Brumfield, 2008, 'Integrating Phylogenetic and Population Genetic Analyses of Multiple Loci to Test Species Divergence Hypotheses in Passerina Buntings', Genetics, vol. 178, no. 1, pp. 363-377", 
-"^ot:studyYear": "2008", 
+"^ot:studyYear": 2008, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees1"
 ], 
 "otusById": {
 "otus1": {
-"otuById": {}
+"otuById": {
+"otu1": {
+"^ot:originalLabel": "Cyanocompsa cyanoides"
+}, 
+"otu2": {
+"^ot:originalLabel": "Passerina amoena"
+}, 
+"otu3": {
+"^ot:originalLabel": "Passerina cyanea"
+}, 
+"otu4": {
+"^ot:originalLabel": "Passerina caerulea"
+}, 
+"otu5": {
+"^ot:originalLabel": "Passerina rositae"
+}
+}
 }
 }, 
 "treesById": {
 "trees1": {
 "@otus": "otus1", 
-"^ot:treeElementOrder": [], 
-"treeById": {}
+"^ot:treeElementOrder": [
+"tree1"
+], 
+"treeById": {
+"tree1": {
+"@label": "Untitled (tree1)", 
+"@xsi:type": "nex:IntTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:rootNodeId": "node1", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
+"edgeBySourceId": {
+"node1": {
+"edge1": {
+"@source": "node1", 
+"@target": "node2"
+}, 
+"edge2": {
+"@source": "node1", 
+"@target": "node3"
+}
+}, 
+"node3": {
+"edge3": {
+"@source": "node3", 
+"@target": "node4"
+}, 
+"edge6": {
+"@source": "node3", 
+"@target": "node7"
+}
+}, 
+"node4": {
+"edge4": {
+"@source": "node4", 
+"@target": "node5"
+}, 
+"edge5": {
+"@source": "node4", 
+"@target": "node6"
+}
+}, 
+"node7": {
+"edge7": {
+"@source": "node7", 
+"@target": "node8"
+}, 
+"edge8": {
+"@source": "node7", 
+"@target": "node9"
+}
+}
+}, 
+"nodeById": {
+"node1": {
+"@root": true
+}, 
+"node2": {
+"@otu": "otu1"
+}, 
+"node3": {}, 
+"node4": {}, 
+"node5": {
+"@otu": "otu2"
+}, 
+"node6": {
+"@otu": "otu3"
+}, 
+"node7": {}, 
+"node8": {
+"@otu": "otu4"
+}, 
+"node9": {
+"@otu": "otu5"
+}
+}, 
+"rootedge": [
+{
+"@id": "enode1", 
+"@length": "0", 
+"@target": "node1"
+}
+]
+}
+}
 }
 }
 }
