@@ -130,8 +130,10 @@
 }
 ]
 }, 
-"^ot:candidateTreeForSynthesis": [], 
-"^ot:comment": "", 
+"^ot:candidateTreeForSynthesis": [
+"tree1"
+], 
+"^ot:comment": "the root of the tree was mis-set by Davis and I have reroot the tree by viscivorus. \ntree from Davis 2014.", 
 "^ot:curatorName": [
 "ningwang83"
 ], 
@@ -466,17 +468,16 @@
 "@label": "Untitled (tree1)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
-"^ot:branchLengthMode": "", 
-"^ot:branchLengthTimeUnit": "", 
-"^ot:curatedType": "", 
-"^ot:inGroupClade": "", 
+"^ot:branchLengthMode": "ot:undefined", 
+"^ot:curatedType": "Bayesian inference ", 
+"^ot:inGroupClade": "node109", 
 "^ot:nodeLabelMode": "", 
 "^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
-"^ot:rootNodeId": "node1", 
-"^ot:specifiedRoot": "", 
+"^ot:rootNodeId": "tree1_ROOT", 
+"^ot:specifiedRoot": "tree1_ROOT", 
 "^ot:tag": [], 
-"^ot:unrootedTree": true, 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node1": {
 "edge1": {
@@ -486,10 +487,6 @@
 "edge2": {
 "@source": "node1", 
 "@target": "node3"
-}, 
-"edge87": {
-"@source": "node1", 
-"@target": "node88"
 }
 }, 
 "node10": {
@@ -533,13 +530,13 @@
 }
 }, 
 "node109": {
+"edge108": {
+"@source": "node109", 
+"@target": "node88"
+}, 
 "edge109": {
 "@source": "node109", 
 "@target": "node110"
-}, 
-"edge112": {
-"@source": "node109", 
-"@target": "node113"
 }
 }, 
 "node11": {
@@ -957,13 +954,13 @@
 "@source": "node88", 
 "@target": "node108"
 }, 
-"edge108": {
-"@source": "node88", 
-"@target": "node109"
-}, 
 "edge113": {
 "@source": "node88", 
 "@target": "node114"
+}, 
+"edge87": {
+"@source": "node88", 
+"@target": "node1"
 }, 
 "edge88": {
 "@source": "node88", 
@@ -1039,12 +1036,20 @@
 "@source": "node97", 
 "@target": "node99"
 }
+}, 
+"tree1_ROOT": {
+"edge112": {
+"@source": "tree1_ROOT", 
+"@target": "node113"
+}, 
+"tree1_ROOT_EDGE": {
+"@source": "tree1_ROOT", 
+"@target": "node109"
+}
 }
 }, 
 "nodeById": {
-"node1": {
-"@root": true
-}, 
+"node1": {}, 
 "node10": {}, 
 "node100": {}, 
 "node101": {}, 
@@ -1275,6 +1280,9 @@
 }, 
 "node99": {
 "@otu": "otu49"
+}, 
+"tree1_ROOT": {
+"@root": true
 }
 }
 }
