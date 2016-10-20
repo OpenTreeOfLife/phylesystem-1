@@ -56,22 +56,109 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2016-10-20T05:05:40.720Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "Cnidarians"
 }, 
-"^ot:curatorName": "James Davis Reimer", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2016-10-20T05:05:40.720Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"Tr97534"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"James Davis Reimer"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S19330"
 }, 
+"^ot:focalClade": 708619, 
+"^ot:focalCladeOTTTaxonName": "Zoantharia", 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "Tls52489"
 ], 
 "^ot:studyId": "ot_924", 
+"^ot:studyPublication": {
+"@href": "http://dx.doi.org/10.1111/zsc.12195"
+}, 
 "^ot:studyPublicationReference": "Swain T.D., Strimaitis A.M., Reuter K.E., & Boudreau W. 2016. Toward integrative systematics of Anthozoa (Cnidaria):  Evolution of form in the order Zoanthidea. Zoologica Scripta, .", 
 "^ot:studyYear": 2016, 
+"^ot:tag": [], 
 "^ot:taxonLinkPrefixes": {
 "@ubio": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:", 
 "@uniprot": "http://purl.uniprot.org/taxonomy/"
@@ -558,7 +645,17 @@
 "Tr97534": {
 "@label": "Augmented", 
 "@xsi:type": "nex:FloatTree", 
-"^ot:rootNodeId": "Tn14249587", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:undefined", 
+"^ot:curatedType": "Maximum likelihood ", 
+"^ot:inGroupClade": "Tn14249567", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:rootNodeId": "Tn14249530", 
+"^ot:specifiedRoot": "Tn14249530", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 97, 
 "^tb:quality.tree": "Unrated", 
@@ -839,6 +936,11 @@
 }
 }, 
 "Tn14249530": {
+"edge1064236": {
+"@length": 0.8494819394147398, 
+"@source": "Tn14249530", 
+"@target": "Tn14249587"
+}, 
 "edge1064238": {
 "@length": 0.1724145250333451, 
 "@source": "Tn14249530", 
@@ -1139,11 +1241,6 @@
 }
 }, 
 "Tn14249587": {
-"edge1064236": {
-"@length": 0.8494819394147398, 
-"@source": "Tn14249587", 
-"@target": "Tn14249530"
-}, 
 "edge1064242": {
 "@length": 0.8494819394147396, 
 "@source": "Tn14249587", 
@@ -1803,7 +1900,9 @@
 "Tn14249529": {
 "@otu": "Tl2371714"
 }, 
-"Tn14249530": {}, 
+"Tn14249530": {
+"@root": true
+}, 
 "Tn14249531": {}, 
 "Tn14249532": {}, 
 "Tn14249533": {
@@ -1924,9 +2023,7 @@
 "Tn14249586": {
 "@otu": "Tl2371695"
 }, 
-"Tn14249587": {
-"@root": true
-}, 
+"Tn14249587": {}, 
 "Tn14249588": {}, 
 "Tn14249589": {
 "@otu": "Tl2371790"
