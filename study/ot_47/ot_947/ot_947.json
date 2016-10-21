@@ -902,6 +902,7 @@
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:undefined", 
+"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "", 
 "^ot:inGroupClade": "", 
 "^ot:nodeLabelMode": "", 
@@ -2346,31 +2347,25 @@
 }
 }, 
 "tree2": {
-"@label": "bestREP2", 
+"@label": "Sarcophyton+Lobophytum", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
-"^ot:branchLengthMode": "", 
-"^ot:branchLengthTimeUnit": "", 
-"^ot:curatedType": "", 
-"^ot:inGroupClade": "", 
+"^ot:branchLengthMode": "ot:undefined", 
+"^ot:curatedType": "Maximum likelihood ", 
+"^ot:inGroupClade": "tree2_ROOT", 
 "^ot:nodeLabelMode": "", 
 "^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
-"^ot:rootNodeId": "node180", 
-"^ot:specifiedRoot": "", 
+"^ot:rootNodeId": "tree2_ROOT", 
+"^ot:specifiedRoot": "tree2_ROOT", 
 "^ot:tag": [], 
-"^ot:unrootedTree": true, 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node180": {
 "edge179": {
 "@length": 0, 
 "@source": "node180", 
 "@target": "node181"
-}, 
-"edge180": {
-"@length": 0.001254, 
-"@source": "node180", 
-"@target": "node182"
 }, 
 "edge297": {
 "@length": 0, 
@@ -2379,6 +2374,11 @@
 }
 }, 
 "node182": {
+"edge180": {
+"@length": 0.001254, 
+"@source": "node182", 
+"@target": "node180"
+}, 
 "edge181": {
 "@length": 0.001241, 
 "@source": "node182", 
@@ -2394,11 +2394,6 @@
 "@source": "node182", 
 "@target": "node185"
 }, 
-"edge184": {
-"@length": 0.001242, 
-"@source": "node182", 
-"@target": "node186"
-}, 
 "edge292": {
 "@length": 0.00131, 
 "@source": "node182", 
@@ -2411,15 +2406,15 @@
 }
 }, 
 "node186": {
+"edge184": {
+"@length": 0.001242, 
+"@source": "node186", 
+"@target": "node182"
+}, 
 "edge185": {
 "@length": 0.001239, 
 "@source": "node186", 
 "@target": "node187"
-}, 
-"edge201": {
-"@length": 0.006551, 
-"@source": "node186", 
-"@target": "node203"
 }
 }, 
 "node187": {
@@ -2504,15 +2499,15 @@
 }
 }, 
 "node203": {
+"edge201": {
+"@length": 0.006551, 
+"@source": "node203", 
+"@target": "node186"
+}, 
 "edge202": {
 "@length": 0.013629, 
 "@source": "node203", 
 "@target": "node204"
-}, 
-"edge203": {
-"@length": 0.025125, 
-"@source": "node203", 
-"@target": "node205"
 }
 }, 
 "node205": {
@@ -3031,12 +3026,21 @@
 "@source": "node294", 
 "@target": "node297"
 }
+}, 
+"tree2_ROOT": {
+"edge203": {
+"@length": 0.025125, 
+"@source": "tree2_ROOT", 
+"@target": "node203"
+}, 
+"tree2_ROOT_EDGE": {
+"@source": "tree2_ROOT", 
+"@target": "node205"
+}
 }
 }, 
 "nodeById": {
-"node180": {
-"@root": true
-}, 
+"node180": {}, 
 "node181": {
 "@otu": "otu191"
 }, 
@@ -3319,6 +3323,9 @@
 }, 
 "node299": {
 "@otu": "otu161"
+}, 
+"tree2_ROOT": {
+"@root": true
 }
 }
 }, 
