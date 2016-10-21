@@ -36,22 +36,98 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2016-10-21T15:38:37.098Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "Cnidarians"
+}, 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2016-10-21T15:38:37.098Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
 }, 
 "^ot:candidateTreeForSynthesis": [], 
-"^ot:curatorName": "Chris Owen", 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Chris Owen", 
+"pcart"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S13778"
 }, 
 "^ot:focalClade": 507958, 
 "^ot:focalCladeOTTTaxonName": "Cubozoa", 
-"^ot:messages": {
-"message": []
-}, 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "otus1951"
 ], 
@@ -437,25 +513,24 @@
 ], 
 "treeById": {
 "tree3974": {
+"@label": "Cubozoa (tree3974)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:substitutionCount", 
-"^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fig 1 ML", 
 "^ot:inGroupClade": "node743255", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
-"^ot:rootNodeId": "node743251", 
-"^ot:specifiedRoot": "", 
+"^ot:rootNodeId": "tree3974_ROOT", 
+"^ot:specifiedRoot": "tree3974_ROOT", 
 "^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node743251": {
 "edge743252": {
 "@source": "node743251", 
 "@target": "node743252"
-}, 
-"edge743255": {
-"@source": "node743251", 
-"@target": "node743255"
 }
 }, 
 "node743252": {
@@ -469,9 +544,9 @@
 }
 }, 
 "node743255": {
-"edge743256": {
+"edge743255": {
 "@source": "node743255", 
-"@target": "node743256"
+"@target": "node743251"
 }, 
 "edge743271": {
 "@source": "node743255", 
@@ -697,12 +772,20 @@
 "@source": "node743299", 
 "@target": "node743301"
 }
+}, 
+"tree3974_ROOT": {
+"edge743256": {
+"@source": "tree3974_ROOT", 
+"@target": "node743255"
+}, 
+"tree3974_ROOT_EDGE": {
+"@source": "tree3974_ROOT", 
+"@target": "node743256"
+}
 }
 }, 
 "nodeById": {
-"node743251": {
-"@root": true
-}, 
+"node743251": {}, 
 "node743252": {}, 
 "node743253": {
 "@otu": "otu294499"
@@ -804,6 +887,9 @@
 }, 
 "node743301": {
 "@otu": "otu294502"
+}, 
+"tree3974_ROOT": {
+"@root": true
 }
 }
 }
