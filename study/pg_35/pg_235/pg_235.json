@@ -36,17 +36,99 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2016-11-14T17:08:03.975Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:candidateTreeForSynthesis": [], 
-"^ot:curatorName": "Evgeny Mavrodiev", 
-"^ot:messages": {
-"message": []
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
 }, 
+"old": {
+"$": ""
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2016-11-14T17:08:03.975Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [
+"tree85"
+], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Evgeny Mavrodiev", 
+"Joseph W. Brown"
+], 
+"^ot:dataDeposit": {
+"@href": ""
+}, 
+"^ot:focalCladeOTTTaxonName": "", 
+"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "otus235"
 ], 
@@ -1250,22 +1332,21 @@
 ], 
 "treeById": {
 "tree85": {
+"@label": "Fig. 1 Phylogram from a ML analysis of the seven-gene 192-taxon matrix of land plants", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
-"^ot:branchLengthMode": "", 
-"^ot:branchLengthTimeUnit": "", 
-"^ot:curatedType": "Fig. 1 Phylogram from a ML analysis of the seven-gene 192-taxon matrix of land plants", 
+"^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:curatedType": "Maximum likelihood ", 
+"^ot:inGroupClade": "node148800", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
-"^ot:rootNodeId": "node148798", 
-"^ot:specifiedRoot": "", 
+"^ot:rootNodeId": "tree85_ROOT", 
+"^ot:specifiedRoot": "tree85_ROOT", 
 "^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node148798": {
-"edge148799": {
-"@length": 0.150234, 
-"@source": "node148798", 
-"@target": "node148799"
-}, 
 "edge149178": {
 "@length": 0.055477, 
 "@source": "node148798", 
@@ -1278,15 +1359,15 @@
 }
 }, 
 "node148799": {
+"edge148799": {
+"@length": 0.150234, 
+"@source": "node148799", 
+"@target": "node148798"
+}, 
 "edge148800": {
 "@length": 0.072849, 
 "@source": "node148799", 
 "@target": "node148800"
-}, 
-"edge149165": {
-"@length": 0.037399, 
-"@source": "node148799", 
-"@target": "node149165"
 }
 }, 
 "node148800": {
@@ -3473,10 +3554,10 @@
 }
 }, 
 "node149165": {
-"edge149166": {
-"@length": 0.012282, 
+"edge149165": {
+"@length": 0.037399, 
 "@source": "node149165", 
-"@target": "node149166"
+"@target": "node148799"
 }, 
 "edge149175": {
 "@length": 0.047199, 
@@ -3485,10 +3566,10 @@
 }
 }, 
 "node149166": {
-"edge149167": {
-"@length": 0.042434, 
+"edge149166": {
+"@length": 0.012282, 
 "@source": "node149166", 
-"@target": "node149167"
+"@target": "node149165"
 }, 
 "edge149174": {
 "@length": 0.288188, 
@@ -3497,10 +3578,10 @@
 }
 }, 
 "node149167": {
-"edge149168": {
-"@length": 0.071502, 
+"edge149167": {
+"@length": 0.042434, 
 "@source": "node149167", 
-"@target": "node149168"
+"@target": "node149166"
 }, 
 "edge149173": {
 "@length": 0.485589, 
@@ -3543,12 +3624,21 @@
 "@source": "node149175", 
 "@target": "node149177"
 }
+}, 
+"tree85_ROOT": {
+"edge149168": {
+"@length": 0.071502, 
+"@source": "tree85_ROOT", 
+"@target": "node149168"
+}, 
+"tree85_ROOT_EDGE": {
+"@source": "tree85_ROOT", 
+"@target": "node149167"
+}
 }
 }, 
 "nodeById": {
-"node148798": {
-"@root": true
-}, 
+"node148798": {}, 
 "node148799": {}, 
 "node148800": {}, 
 "node148801": {}, 
@@ -4313,19 +4403,27 @@
 }, 
 "node149179": {
 "@otu": "otu62920"
+}, 
+"tree85_ROOT": {
+"@root": true
 }
 }
 }, 
 "tree86": {
+"@label": "Untitled (tree86)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "", 
 "^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "First from 12 shortest trees resulted MP analysis of the seven-gene 192-taxon matrix of land plants", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node149180", 
 "^ot:specifiedRoot": "", 
 "^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node149180": {
 "edge149181": {
@@ -7011,15 +7109,20 @@
 }
 }, 
 "tree87": {
+"@label": "Untitled (tree87)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "", 
 "^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Second from 12 shortest trees resulted MP analysis of the seven-gene 192-taxon matrix of land plants", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node149563", 
 "^ot:specifiedRoot": "", 
 "^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node149563": {
 "edge149564": {
@@ -9705,15 +9808,20 @@
 }
 }, 
 "tree88": {
+"@label": "Untitled (tree88)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "", 
 "^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Third from 12 shortest trees resulted MP analysis of the seven-gene 192-taxon matrix of land plants", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node149946", 
 "^ot:specifiedRoot": "", 
 "^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node149946": {
 "edge149947": {
@@ -12399,15 +12507,20 @@
 }
 }, 
 "tree89": {
+"@label": "Untitled (tree89)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "", 
 "^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fourth from 12 shortest trees resulted MP analysis of the seven-gene 192-taxon matrix of land plants", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node150329", 
 "^ot:specifiedRoot": "", 
 "^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node150329": {
 "edge150330": {
@@ -15093,15 +15206,20 @@
 }
 }, 
 "tree90": {
+"@label": "Untitled (tree90)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "", 
 "^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Fifth from 12 shortest trees resulted MP analysis of the seven-gene 192-taxon matrix of land plants", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node150712", 
 "^ot:specifiedRoot": "", 
 "^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node150712": {
 "edge150713": {
@@ -17787,15 +17905,20 @@
 }
 }, 
 "tree91": {
+"@label": "Untitled (tree91)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "", 
 "^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Sixth from 12 shortest trees resulted MP analysis of the seven-gene 192-taxon matrix of land plants", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node151095", 
 "^ot:specifiedRoot": "", 
 "^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node151095": {
 "edge151096": {
@@ -20481,15 +20604,20 @@
 }
 }, 
 "tree92": {
+"@label": "Untitled (tree92)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "", 
 "^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Seventh from 12 shortest trees resulted MP analysis of the seven-gene 192-taxon matrix of land plants", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node151478", 
 "^ot:specifiedRoot": "", 
 "^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node151478": {
 "edge151479": {
@@ -23175,15 +23303,20 @@
 }
 }, 
 "tree93": {
+"@label": "Untitled (tree93)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "", 
 "^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Eighth from 12 shortest trees resulted MP analysis of the seven-gene 192-taxon matrix of land plants", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node151861", 
 "^ot:specifiedRoot": "", 
 "^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node151861": {
 "edge151862": {
@@ -25869,15 +26002,20 @@
 }
 }, 
 "tree94": {
+"@label": "Untitled (tree94)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "", 
 "^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Ninth from 12 shortest trees resulted MP analysis of the seven-gene 192-taxon matrix of land plants", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node152244", 
 "^ot:specifiedRoot": "", 
 "^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node152244": {
 "edge152245": {
@@ -28563,15 +28701,20 @@
 }
 }, 
 "tree95": {
+"@label": "Untitled (tree95)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "", 
 "^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Tenth from 12 shortest trees resulted MP analysis of the seven-gene 192-taxon matrix of land plants", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node152627", 
 "^ot:specifiedRoot": "", 
 "^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node152627": {
 "edge152628": {
@@ -31257,15 +31400,20 @@
 }
 }, 
 "tree96": {
+"@label": "Untitled (tree96)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "", 
 "^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Eleventh from 12 shortest trees resulted MP analysis of the seven-gene 192-taxon matrix of land plants", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node153010", 
 "^ot:specifiedRoot": "", 
 "^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node153010": {
 "edge153011": {
@@ -33951,15 +34099,20 @@
 }
 }, 
 "tree97": {
+"@label": "Untitled (tree97)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "", 
 "^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "Twelfth from 12 shortest trees resulted MP analysis of the seven-gene 192-taxon matrix of land plants", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:rootNodeId": "node153393", 
 "^ot:specifiedRoot": "", 
 "^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node153393": {
 "edge153394": {
