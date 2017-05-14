@@ -60,25 +60,115 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2017-05-14T19:47:40.063Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:curatorName": "Romina Gazis", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}, 
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": "$1"
+}, 
+"old": {
+"$": "^(\\S*\\s+\\S*).*"
+}
+}
+]
+}, 
+"useFuzzyMatching": true
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2017-05-14T19:47:40.063Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Romina Gazis"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S17208"
 }, 
+"^ot:focalCladeOTTTaxonName": "", 
 "^ot:otusElementOrder": [
 "Tls56779"
 ], 
 "^ot:studyId": "ot_1140", 
 "^ot:studyPublication": {
-"@href": "10.3852/15-194"
+"@href": "http://dx.doi.org/10.3852/15-194"
 }, 
 "^ot:studyPublicationReference": "Adamcik S., Slovak M., Eberhardt U., Ronikier A., Jairus T., Hampe F., & Verbeken A. 2016. Molecular inference, multivariate morphometrics and ecological assessment are applied in concert to delimit species in the Russula clavipes complex. Mycologia, 108(4): 716-730.", 
 "^ot:studyYear": 2016, 
+"^ot:tag": [], 
 "^ot:taxonLinkPrefixes": {
 "@ubio": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:", 
 "@uniprot": "http://purl.uniprot.org/taxonomy/"
@@ -110,17 +200,24 @@
 "^skos:historyNote": "Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlOTUWriter@5ec64aa3 $Rev: 1040 $", 
 "otuById": {
 "Tl2686554": {
-"^ot:originalLabel": "Russula clavipes TU_102006"
+"^ot:originalLabel": "Russula clavipes TU_102006", 
+"^ot:ottId": 3805872, 
+"^ot:ottTaxonName": "Russula clavipes"
 }, 
 "Tl2686555": {
-"^ot:originalLabel": "Russula subrubens C_JV98_294"
+"^ot:originalLabel": "Russula subrubens C_JV98_294", 
+"^ot:ottId": 5299315, 
+"^ot:ottTaxonName": "Russula subrubens"
 }, 
 "Tl2686556": {
-"^ot:originalLabel": "Russula clavipes TU_102004"
+"^ot:originalLabel": "Russula clavipes TU_102004", 
+"^ot:ottId": 3805872, 
+"^ot:ottTaxonName": "Russula clavipes"
 }, 
 "Tl2686557": {
-"^ot:altLabel": "Russula pascua", 
 "^ot:originalLabel": "Russula pascua SAV_F_1322", 
+"^ot:ottId": 965276, 
+"^ot:ottTaxonName": "Russula pascua", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 25923, 
 "@tb:identifier.taxonVariant": 60650, 
@@ -129,8 +226,9 @@
 }
 }, 
 "Tl2686558": {
-"^ot:altLabel": "Russula favrei", 
 "^ot:originalLabel": "Russula favrei SAV_F_1335", 
+"^ot:ottId": 829944, 
+"^ot:ottTaxonName": "Russula favrei", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 379900, 
 "@tb:identifier.taxonVariant": 400111, 
@@ -139,32 +237,49 @@
 }
 }, 
 "Tl2686559": {
-"^ot:originalLabel": "Russula clavipes FR_652"
+"^ot:originalLabel": "Russula clavipes FR_652", 
+"^ot:ottId": 3805872, 
+"^ot:ottTaxonName": "Russula clavipes"
 }, 
 "Tl2686560": {
-"^ot:originalLabel": "Russula amoenoides STU_UE2006_11_15_02"
+"^ot:originalLabel": "Russula amoenoides STU_UE2006_11_15_02", 
+"^ot:ottId": 3805925, 
+"^ot:ottTaxonName": "Russula amoenoides"
 }, 
 "Tl2686561": {
-"^ot:originalLabel": "Russula clavipes SAV_F_1328"
+"^ot:originalLabel": "Russula clavipes SAV_F_1328", 
+"^ot:ottId": 3805872, 
+"^ot:ottTaxonName": "Russula clavipes"
 }, 
 "Tl2686562": {
-"^ot:originalLabel": "Russula subrubens STU_UE19_08_2002_08"
+"^ot:originalLabel": "Russula subrubens STU_UE19_08_2002_08", 
+"^ot:ottId": 5299315, 
+"^ot:ottTaxonName": "Russula subrubens"
 }, 
 "Tl2686563": {
-"^ot:originalLabel": "Russula faginea C_JV02_386"
+"^ot:originalLabel": "Russula faginea C_JV02_386", 
+"^ot:ottId": 129159, 
+"^ot:ottTaxonName": "Russula faginea"
 }, 
 "Tl2686564": {
-"^ot:originalLabel": "Russula graveolens UPS_UE2005_08_10_04"
+"^ot:originalLabel": "Russula graveolens UPS_UE2005_08_10_04", 
+"^ot:ottId": 3806093, 
+"^ot:ottTaxonName": "Russula graveolens"
 }, 
 "Tl2686565": {
-"^ot:originalLabel": "Russula graveolens SAV_F_1342"
+"^ot:originalLabel": "Russula graveolens SAV_F_1342", 
+"^ot:ottId": 3806093, 
+"^ot:ottTaxonName": "Russula graveolens"
 }, 
 "Tl2686566": {
-"^ot:originalLabel": "Russula clavipes SAV_F_1324"
+"^ot:originalLabel": "Russula clavipes SAV_F_1324", 
+"^ot:ottId": 3805872, 
+"^ot:ottTaxonName": "Russula clavipes"
 }, 
 "Tl2686567": {
-"^ot:altLabel": "Russula xerampelina", 
 "^ot:originalLabel": "Russula xerampelina UPS_UE21_09_2003_17", 
+"^ot:ottId": 647038, 
+"^ot:ottTaxonName": "Russula xerampelina", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 25958, 
 "@tb:identifier.taxonVariant": 60719, 
@@ -173,11 +288,14 @@
 }
 }, 
 "Tl2686568": {
-"^ot:originalLabel": "Russula nuoljae SAV_F_1321"
+"^ot:originalLabel": "Russula nuoljae SAV_F_1321", 
+"^ot:ottId": 3806023, 
+"^ot:ottTaxonName": "Russula nuoljae"
 }, 
 "Tl2686569": {
-"^ot:altLabel": "Russula nitida", 
 "^ot:originalLabel": "Russula nitida UPS_UE08_07_2004_2", 
+"^ot:ottId": 439480, 
+"^ot:ottTaxonName": "Russula nitida", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 25916, 
 "@tb:identifier.taxonVariant": 60636, 
@@ -186,8 +304,9 @@
 }
 }, 
 "Tl2686570": {
-"^ot:altLabel": "Russula xerampelina", 
 "^ot:originalLabel": "Russula xerampelina SAV_F_3236", 
+"^ot:ottId": 647038, 
+"^ot:ottTaxonName": "Russula xerampelina", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 25958, 
 "@tb:identifier.taxonVariant": 60719, 
@@ -196,20 +315,29 @@
 }
 }, 
 "Tl2686571": {
-"^ot:originalLabel": "Russula graveolens SAV_F_1338"
+"^ot:originalLabel": "Russula graveolens SAV_F_1338", 
+"^ot:ottId": 3806093, 
+"^ot:ottTaxonName": "Russula graveolens"
 }, 
 "Tl2686572": {
-"^ot:originalLabel": "Russula clavipes SAV_F_1325"
+"^ot:originalLabel": "Russula clavipes SAV_F_1325", 
+"^ot:ottId": 3805872, 
+"^ot:ottTaxonName": "Russula clavipes"
 }, 
 "Tl2686573": {
-"^ot:originalLabel": "Russula amoenoides SAV_F_1340"
+"^ot:originalLabel": "Russula amoenoides SAV_F_1340", 
+"^ot:ottId": 3805925, 
+"^ot:ottTaxonName": "Russula amoenoides"
 }, 
 "Tl2686574": {
-"^ot:originalLabel": "Russula nuoljae SAV_F_3092"
+"^ot:originalLabel": "Russula nuoljae SAV_F_3092", 
+"^ot:ottId": 3806023, 
+"^ot:ottTaxonName": "Russula nuoljae"
 }, 
 "Tl2686575": {
-"^ot:altLabel": "Russula decolorans", 
 "^ot:originalLabel": "Russula decolorans TUB_HUE039", 
+"^ot:ottId": 760937, 
+"^ot:ottTaxonName": "Russula decolorans", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 25878, 
 "@tb:identifier.taxonVariant": 60557, 
@@ -218,11 +346,14 @@
 }
 }, 
 "Tl2686576": {
-"^ot:originalLabel": "Russula clavipes TU_102030"
+"^ot:originalLabel": "Russula clavipes TU_102030", 
+"^ot:ottId": 3805872, 
+"^ot:ottTaxonName": "Russula clavipes"
 }, 
 "Tl2686577": {
-"^ot:altLabel": "Russula favrei", 
 "^ot:originalLabel": "Russula favrei UPS_UE03_07_2003_10", 
+"^ot:ottId": 829944, 
+"^ot:ottTaxonName": "Russula favrei", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 379900, 
 "@tb:identifier.taxonVariant": 400111, 
@@ -231,11 +362,14 @@
 }
 }, 
 "Tl2686578": {
-"^ot:originalLabel": "Russula graveolens SAV_F_1339"
+"^ot:originalLabel": "Russula graveolens SAV_F_1339", 
+"^ot:ottId": 3806093, 
+"^ot:ottTaxonName": "Russula graveolens"
 }, 
 "Tl2686579": {
-"^ot:altLabel": "Russula nitida", 
 "^ot:originalLabel": "Russula nitida KR_0004221", 
+"^ot:ottId": 439480, 
+"^ot:ottTaxonName": "Russula nitida", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 25916, 
 "@tb:identifier.taxonVariant": 60636, 
@@ -244,11 +378,14 @@
 }
 }, 
 "Tl2686580": {
-"^ot:originalLabel": "Russula clavipes TU_102041"
+"^ot:originalLabel": "Russula clavipes TU_102041", 
+"^ot:ottId": 3805872, 
+"^ot:ottTaxonName": "Russula clavipes"
 }, 
 "Tl2686581": {
-"^ot:altLabel": "Russula pascua", 
 "^ot:originalLabel": "Russula pascua IB_2005_1153", 
+"^ot:ottId": 965276, 
+"^ot:ottTaxonName": "Russula pascua", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 25923, 
 "@tb:identifier.taxonVariant": 60650, 
@@ -257,14 +394,19 @@
 }
 }, 
 "Tl2686582": {
-"^ot:originalLabel": "Russula nuoljae STU_EE04_41"
+"^ot:originalLabel": "Russula nuoljae STU_EE04_41", 
+"^ot:ottId": 3806023, 
+"^ot:ottTaxonName": "Russula nuoljae"
 }, 
 "Tl2686583": {
-"^ot:originalLabel": "Russula faginea SAV_F_997"
+"^ot:originalLabel": "Russula faginea SAV_F_997", 
+"^ot:ottId": 129159, 
+"^ot:ottTaxonName": "Russula faginea"
 }, 
 "Tl2686584": {
-"^ot:altLabel": "Russula pascua", 
 "^ot:originalLabel": "Russula pascua KRAM_F_45044", 
+"^ot:ottId": 965276, 
+"^ot:ottTaxonName": "Russula pascua", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 25923, 
 "@tb:identifier.taxonVariant": 60650, 
@@ -273,11 +415,14 @@
 }
 }, 
 "Tl2686585": {
-"^ot:originalLabel": "Russula nuoljae TU102014"
+"^ot:originalLabel": "Russula nuoljae TU102014", 
+"^ot:ottId": 3806023, 
+"^ot:ottTaxonName": "Russula nuoljae"
 }, 
 "Tl2686586": {
-"^ot:altLabel": "Russula pascua", 
 "^ot:originalLabel": "Russula pascua KRAM_F_45045", 
+"^ot:ottId": 965276, 
+"^ot:ottTaxonName": "Russula pascua", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 25923, 
 "@tb:identifier.taxonVariant": 60650, 
@@ -286,8 +431,9 @@
 }
 }, 
 "Tl2686587": {
-"^ot:altLabel": "Russula xerampelina", 
 "^ot:originalLabel": "Russula xerampelina UPS_UE14_09_2004_3", 
+"^ot:ottId": 647038, 
+"^ot:ottTaxonName": "Russula xerampelina", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 25958, 
 "@tb:identifier.taxonVariant": 60719, 
@@ -296,8 +442,9 @@
 }
 }, 
 "Tl2686588": {
-"^ot:altLabel": "Russula pascua", 
 "^ot:originalLabel": "Russula pascua KRAM_F_45051", 
+"^ot:ottId": 965276, 
+"^ot:ottTaxonName": "Russula pascua", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 25923, 
 "@tb:identifier.taxonVariant": 60650, 
@@ -306,11 +453,14 @@
 }
 }, 
 "Tl2686589": {
-"^ot:originalLabel": "Russula faginea SAV_F_1336"
+"^ot:originalLabel": "Russula faginea SAV_F_1336", 
+"^ot:ottId": 129159, 
+"^ot:ottTaxonName": "Russula faginea"
 }, 
 "Tl2686590": {
-"^ot:altLabel": "Russula favrei", 
 "^ot:originalLabel": "Russula favrei SAV_F_1333", 
+"^ot:ottId": 829944, 
+"^ot:ottTaxonName": "Russula favrei", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 379900, 
 "@tb:identifier.taxonVariant": 400111, 
@@ -319,14 +469,19 @@
 }
 }, 
 "Tl2686591": {
-"^ot:originalLabel": "Russula faginea C_PH00_083"
+"^ot:originalLabel": "Russula faginea C_PH00_083", 
+"^ot:ottId": 129159, 
+"^ot:ottTaxonName": "Russula faginea"
 }, 
 "Tl2686592": {
-"^ot:originalLabel": "Russula nuoljae UPS_UE24_08_2004_09"
+"^ot:originalLabel": "Russula nuoljae UPS_UE24_08_2004_09", 
+"^ot:ottId": 3806023, 
+"^ot:ottTaxonName": "Russula nuoljae"
 }, 
 "Tl2686593": {
-"^ot:altLabel": "Russula favrei", 
 "^ot:originalLabel": "Russula favrei IB_1995_0098", 
+"^ot:ottId": 829944, 
+"^ot:ottTaxonName": "Russula favrei", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 379900, 
 "@tb:identifier.taxonVariant": 400111, 
@@ -335,20 +490,29 @@
 }
 }, 
 "Tl2686594": {
-"^ot:originalLabel": "Russula nuoljae TU_102011"
+"^ot:originalLabel": "Russula nuoljae TU_102011", 
+"^ot:ottId": 3806023, 
+"^ot:ottTaxonName": "Russula nuoljae"
 }, 
 "Tl2686595": {
-"^ot:originalLabel": "Russula clavipes SAV_F_1327"
+"^ot:originalLabel": "Russula clavipes SAV_F_1327", 
+"^ot:ottId": 3805872, 
+"^ot:ottTaxonName": "Russula clavipes"
 }, 
 "Tl2686596": {
-"^ot:originalLabel": "Russula amoenoides SAV_F_1341"
+"^ot:originalLabel": "Russula amoenoides SAV_F_1341", 
+"^ot:ottId": 3805925, 
+"^ot:ottTaxonName": "Russula amoenoides"
 }, 
 "Tl2686597": {
-"^ot:originalLabel": "Russula subrubens STU_UE20_08_2002_1"
+"^ot:originalLabel": "Russula subrubens STU_UE20_08_2002_1", 
+"^ot:ottId": 5299315, 
+"^ot:ottTaxonName": "Russula subrubens"
 }, 
 "Tl2686598": {
-"^ot:altLabel": "Russula pascua", 
 "^ot:originalLabel": "Russula pascua IB_2005_0022", 
+"^ot:ottId": 965276, 
+"^ot:ottTaxonName": "Russula pascua", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 25923, 
 "@tb:identifier.taxonVariant": 60650, 
@@ -357,8 +521,9 @@
 }
 }, 
 "Tl2686599": {
-"^ot:altLabel": "Russula pascua", 
 "^ot:originalLabel": "Russula pascua KRAM_F_45046", 
+"^ot:ottId": 965276, 
+"^ot:ottTaxonName": "Russula pascua", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 25923, 
 "@tb:identifier.taxonVariant": 60650, 
@@ -367,8 +532,9 @@
 }
 }, 
 "Tl2686600": {
-"^ot:altLabel": "Russula pascua", 
 "^ot:originalLabel": "Russula pascua KRAM_F_45052", 
+"^ot:ottId": 965276, 
+"^ot:ottTaxonName": "Russula pascua", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 25923, 
 "@tb:identifier.taxonVariant": 60650, 
@@ -377,20 +543,29 @@
 }
 }, 
 "Tl2686601": {
-"^ot:originalLabel": "Russula clavipes TU_102029"
+"^ot:originalLabel": "Russula clavipes TU_102029", 
+"^ot:ottId": 3805872, 
+"^ot:ottTaxonName": "Russula clavipes"
 }, 
 "Tl2686602": {
-"^ot:originalLabel": "Russula clavipes TU_102003"
+"^ot:originalLabel": "Russula clavipes TU_102003", 
+"^ot:ottId": 3805872, 
+"^ot:ottTaxonName": "Russula clavipes"
 }, 
 "Tl2686603": {
-"^ot:originalLabel": "Russula subrubens STU_UE19_08_2002_02"
+"^ot:originalLabel": "Russula subrubens STU_UE19_08_2002_02", 
+"^ot:ottId": 5299315, 
+"^ot:ottTaxonName": "Russula subrubens"
 }, 
 "Tl2686604": {
-"^ot:originalLabel": "Russula subrubens IB_1991_986"
+"^ot:originalLabel": "Russula subrubens IB_1991_986", 
+"^ot:ottId": 5299315, 
+"^ot:ottTaxonName": "Russula subrubens"
 }, 
 "Tl2686605": {
-"^ot:altLabel": "Russula pascua", 
 "^ot:originalLabel": "Russula pascua IB_1998_0124", 
+"^ot:ottId": 965276, 
+"^ot:ottTaxonName": "Russula pascua", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 25923, 
 "@tb:identifier.taxonVariant": 60650, 
@@ -399,8 +574,9 @@
 }
 }, 
 "Tl2686606": {
-"^ot:altLabel": "Russula pascua", 
 "^ot:originalLabel": "Russula pascua KRAM_F_45047", 
+"^ot:ottId": 965276, 
+"^ot:ottTaxonName": "Russula pascua", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 25923, 
 "@tb:identifier.taxonVariant": 60650, 
@@ -409,17 +585,24 @@
 }
 }, 
 "Tl2686607": {
-"^ot:originalLabel": "Russula clavipes UPS_UE22_08_2004_2"
+"^ot:originalLabel": "Russula clavipes UPS_UE22_08_2004_2", 
+"^ot:ottId": 3805872, 
+"^ot:ottTaxonName": "Russula clavipes"
 }, 
 "Tl2686608": {
-"^ot:originalLabel": "Russula clavipes SAV_F_1323"
+"^ot:originalLabel": "Russula clavipes SAV_F_1323", 
+"^ot:ottId": 3805872, 
+"^ot:ottTaxonName": "Russula clavipes"
 }, 
 "Tl2686609": {
-"^ot:originalLabel": "Russula subrubens C_JV02_624"
+"^ot:originalLabel": "Russula subrubens C_JV02_624", 
+"^ot:ottId": 5299315, 
+"^ot:ottTaxonName": "Russula subrubens"
 }, 
 "Tl2686610": {
-"^ot:altLabel": "Russula xerampelina", 
 "^ot:originalLabel": "Russula xerampelina TUB_FO46888", 
+"^ot:ottId": 647038, 
+"^ot:ottTaxonName": "Russula xerampelina", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 25958, 
 "@tb:identifier.taxonVariant": 60719, 
@@ -428,8 +611,9 @@
 }
 }, 
 "Tl2686611": {
-"^ot:altLabel": "Russula favrei", 
 "^ot:originalLabel": "Russula favrei UPS_UE06_09_2003_9", 
+"^ot:ottId": 829944, 
+"^ot:ottTaxonName": "Russula favrei", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 379900, 
 "@tb:identifier.taxonVariant": 400111, 
@@ -438,11 +622,14 @@
 }
 }, 
 "Tl2686612": {
-"^ot:originalLabel": "Russula nuoljae TU_102008"
+"^ot:originalLabel": "Russula nuoljae TU_102008", 
+"^ot:ottId": 3806023, 
+"^ot:ottTaxonName": "Russula nuoljae"
 }, 
 "Tl2686613": {
-"^ot:altLabel": "Russula favrei", 
 "^ot:originalLabel": "Russula favrei SAV_F_2263", 
+"^ot:ottId": 829944, 
+"^ot:ottTaxonName": "Russula favrei", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 379900, 
 "@tb:identifier.taxonVariant": 400111, 
@@ -451,14 +638,19 @@
 }
 }, 
 "Tl2686614": {
-"^ot:originalLabel": "Russula clavipes TU_102036"
+"^ot:originalLabel": "Russula clavipes TU_102036", 
+"^ot:ottId": 3805872, 
+"^ot:ottTaxonName": "Russula clavipes"
 }, 
 "Tl2686615": {
-"^ot:originalLabel": "Russula nuoljae SAV_F_1320"
+"^ot:originalLabel": "Russula nuoljae SAV_F_1320", 
+"^ot:ottId": 3806023, 
+"^ot:ottTaxonName": "Russula nuoljae"
 }, 
 "Tl2686616": {
-"^ot:altLabel": "Russula favrei", 
 "^ot:originalLabel": "Russula favrei SAV_F_1334", 
+"^ot:ottId": 829944, 
+"^ot:ottTaxonName": "Russula favrei", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 379900, 
 "@tb:identifier.taxonVariant": 400111, 
@@ -467,11 +659,14 @@
 }
 }, 
 "Tl2686617": {
-"^ot:originalLabel": "Russula nuoljae SAV_F_3022"
+"^ot:originalLabel": "Russula nuoljae SAV_F_3022", 
+"^ot:ottId": 3806023, 
+"^ot:ottTaxonName": "Russula nuoljae"
 }, 
 "Tl2686618": {
-"^ot:altLabel": "Russula favrei", 
 "^ot:originalLabel": "Russula favrei IB_1996_0021", 
+"^ot:ottId": 829944, 
+"^ot:ottTaxonName": "Russula favrei", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 379900, 
 "@tb:identifier.taxonVariant": 400111, 
@@ -480,11 +675,14 @@
 }
 }, 
 "Tl2686619": {
-"^ot:originalLabel": "Russula faginea SAV_F_354"
+"^ot:originalLabel": "Russula faginea SAV_F_354", 
+"^ot:ottId": 129159, 
+"^ot:ottTaxonName": "Russula faginea"
 }, 
 "Tl2686620": {
-"^ot:altLabel": "Russula favrei", 
 "^ot:originalLabel": "Russula favrei SAV_F_2254", 
+"^ot:ottId": 829944, 
+"^ot:ottTaxonName": "Russula favrei", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 379900, 
 "@tb:identifier.taxonVariant": 400111, 
@@ -493,14 +691,19 @@
 }
 }, 
 "Tl2686621": {
-"^ot:originalLabel": "Russula clavipes STU_UE2005_09_07_10"
+"^ot:originalLabel": "Russula clavipes STU_UE2005_09_07_10", 
+"^ot:ottId": 3805872, 
+"^ot:ottTaxonName": "Russula clavipes"
 }, 
 "Tl2686622": {
-"^ot:originalLabel": "Russula subrubens IB_1990_0076"
+"^ot:originalLabel": "Russula subrubens IB_1990_0076", 
+"^ot:ottId": 5299315, 
+"^ot:ottTaxonName": "Russula subrubens"
 }, 
 "Tl2686623": {
-"^ot:altLabel": "Russula pascua", 
 "^ot:originalLabel": "Russula pascua KRAM_F_45053", 
+"^ot:ottId": 965276, 
+"^ot:ottTaxonName": "Russula pascua", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 25923, 
 "@tb:identifier.taxonVariant": 60650, 
@@ -509,11 +712,14 @@
 }
 }, 
 "Tl2686624": {
-"^ot:originalLabel": "Russula subrubens G_KR73_332"
+"^ot:originalLabel": "Russula subrubens G_KR73_332", 
+"^ot:ottId": 5299315, 
+"^ot:ottTaxonName": "Russula subrubens"
 }, 
 "Tl2686625": {
-"^ot:altLabel": "Russula pascua", 
 "^ot:originalLabel": "Russula pascua IB_2004_0149", 
+"^ot:ottId": 965276, 
+"^ot:ottTaxonName": "Russula pascua", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 25923, 
 "@tb:identifier.taxonVariant": 60650, 
@@ -522,23 +728,34 @@
 }
 }, 
 "Tl2686626": {
-"^ot:originalLabel": "Russula graveolens SAV_F_1343"
+"^ot:originalLabel": "Russula graveolens SAV_F_1343", 
+"^ot:ottId": 3806093, 
+"^ot:ottTaxonName": "Russula graveolens"
 }, 
 "Tl2686627": {
-"^ot:originalLabel": "Russula faginea SAV_F_1337"
+"^ot:originalLabel": "Russula faginea SAV_F_1337", 
+"^ot:ottId": 129159, 
+"^ot:ottTaxonName": "Russula faginea"
 }, 
 "Tl2686628": {
-"^ot:originalLabel": "Russula clavipes SAV_F_1331"
+"^ot:originalLabel": "Russula clavipes SAV_F_1331", 
+"^ot:ottId": 3805872, 
+"^ot:ottTaxonName": "Russula clavipes"
 }, 
 "Tl2686629": {
-"^ot:originalLabel": "Russula graveolens UPS_UE20_09_2004_12"
+"^ot:originalLabel": "Russula graveolens UPS_UE20_09_2004_12", 
+"^ot:ottId": 3806093, 
+"^ot:ottTaxonName": "Russula graveolens"
 }, 
 "Tl2686630": {
-"^ot:originalLabel": "Russula nuoljae UPS_UE23_08_2004_10"
+"^ot:originalLabel": "Russula nuoljae UPS_UE23_08_2004_10", 
+"^ot:ottId": 3806023, 
+"^ot:ottTaxonName": "Russula nuoljae"
 }, 
 "Tl2686631": {
-"^ot:altLabel": "Russula pascua", 
 "^ot:originalLabel": "Russula pascua KRAM_F_45048", 
+"^ot:ottId": 965276, 
+"^ot:ottTaxonName": "Russula pascua", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 25923, 
 "@tb:identifier.taxonVariant": 60650, 
@@ -547,7 +764,9 @@
 }
 }, 
 "Tl2686632": {
-"^ot:originalLabel": "Russula nuoljae UPS_UE25_08_2004_06"
+"^ot:originalLabel": "Russula nuoljae UPS_UE25_08_2004_06", 
+"^ot:ottId": 3806023, 
+"^ot:ottTaxonName": "Russula nuoljae"
 }
 }
 }
@@ -564,7 +783,19 @@
 "Tr103257": {
 "@label": "PAUP_1", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn16124471", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 79, 
 "^tb:quality.tree": "Unrated", 
@@ -661,7 +892,7 @@
 "@target": "Tn16124560"
 }, 
 "edge1414": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16124481", 
 "@target": "Tn16124618"
 }
@@ -901,7 +1132,7 @@
 "@target": "Tn16124572"
 }, 
 "edge1358": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16124522", 
 "@target": "Tn16124531"
 }
@@ -1009,7 +1240,7 @@
 "@target": "Tn16124534"
 }, 
 "edge1274": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16124537", 
 "@target": "Tn16124538"
 }
@@ -1057,7 +1288,7 @@
 "@target": "Tn16124512"
 }, 
 "edge1430": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16124546", 
 "@target": "Tn16124556"
 }
@@ -1129,7 +1360,7 @@
 "@target": "Tn16124578"
 }, 
 "edge1434": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16124556", 
 "@target": "Tn16124604"
 }
@@ -1141,7 +1372,7 @@
 "@target": "Tn16124504"
 }, 
 "edge1354": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16124557", 
 "@target": "Tn16124522"
 }
@@ -1393,7 +1624,7 @@
 "@target": "Tn16124586"
 }, 
 "edge1438": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16124604", 
 "@target": "Tn16124498"
 }
@@ -1429,7 +1660,7 @@
 "@target": "Tn16124518"
 }, 
 "edge1334": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16124610", 
 "@target": "Tn16124598"
 }
@@ -1465,7 +1696,7 @@
 "@target": "Tn16124563"
 }, 
 "edge1418": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16124618", 
 "@target": "Tn16124523"
 }
@@ -1489,7 +1720,7 @@
 "@target": "Tn16124503"
 }, 
 "edge1270": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16124622", 
 "@target": "Tn16124537"
 }
