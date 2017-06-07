@@ -61,7 +61,7 @@
 "@severity": "INFO", 
 "data": {
 "searchContext": {
-"$": "All life"
+"$": "Mammals"
 }, 
 "substitutions": {
 "substitution": [
@@ -231,22 +231,17 @@
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "ot:undefined", 
 "^ot:curatedType": "", 
-"^ot:inGroupClade": "", 
+"^ot:inGroupClade": "node2", 
 "^ot:nodeLabelMode": "", 
 "^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:reasonsToExcludeFromSynthesis": [], 
-"^ot:rootNodeId": "node1", 
-"^ot:specifiedRoot": "", 
+"^ot:rootNodeId": "tree1_ROOT", 
+"^ot:specifiedRoot": "tree1_ROOT", 
 "^ot:tag": [], 
-"^ot:unrootedTree": true, 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node1": {
-"edge1": {
-"@length": 79.234861, 
-"@source": "node1", 
-"@target": "node2"
-}, 
 "edge2": {
 "@length": 2.76938, 
 "@source": "node1", 
@@ -461,12 +456,21 @@
 "@source": "node9", 
 "@target": "node10"
 }
+}, 
+"tree1_ROOT": {
+"edge1": {
+"@length": 79.234861, 
+"@source": "tree1_ROOT", 
+"@target": "node2"
+}, 
+"tree1_ROOT_EDGE": {
+"@source": "tree1_ROOT", 
+"@target": "node1"
+}
 }
 }, 
 "nodeById": {
-"node1": {
-"@root": true
-}, 
+"node1": {}, 
 "node10": {
 "@otu": "otu3"
 }, 
@@ -543,7 +547,10 @@
 "@otu": "otu2"
 }, 
 "node8": {}, 
-"node9": {}
+"node9": {}, 
+"tree1_ROOT": {
+"@root": true
+}
 }
 }
 }
