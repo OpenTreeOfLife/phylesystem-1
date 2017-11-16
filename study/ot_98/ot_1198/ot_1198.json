@@ -55,22 +55,108 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2017-11-16T21:29:36.964Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "Seed plants"
 }, 
-"^ot:curatorName": "Phylotreesftw", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2017-11-16T21:29:36.964Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Phylotreesftw"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S19389"
 }, 
+"^ot:focalClade": 994067, 
+"^ot:focalCladeOTTTaxonName": "Pinaceae", 
 "^ot:otusElementOrder": [
 "Tls52511"
 ], 
 "^ot:studyId": "ot_1198", 
+"^ot:studyPublication": {
+"@href": "https://doi.org/10.1139/cjb-2016-0064"
+}, 
 "^ot:studyPublicationReference": "Gernandt D.S., Holman G., Campbell C., Parks M., Mathews S., Raubeson L., Liston A., Stockey R., & Rothwell G. 2016. Phylogenetics of extant and fossil Pinaceae: methods for increasing topological stability. Botany, .", 
 "^ot:studyYear": 2016, 
+"^ot:tag": [
+"Pinaceae"
+], 
 "^ot:taxonLinkPrefixes": {
 "@ubio": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:", 
 "@uniprot": "http://purl.uniprot.org/taxonomy/"
@@ -93,8 +179,9 @@
 "^skos:historyNote": "Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlOTUWriter@23e0a1ee $Rev: 1040 $", 
 "otuById": {
 "Tl2373257": {
-"^ot:altLabel": "Pinus nelsonii", 
 "^ot:originalLabel": "Pinus nelsonii P1", 
+"^ot:ottId": 837873, 
+"^ot:ottTaxonName": "Pinus nelsonii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22453, 
 "@tb:identifier.taxonVariant": 52306, 
@@ -103,8 +190,9 @@
 }
 }, 
 "Tl2373258": {
-"^ot:altLabel": "Tsuga canadensis", 
 "^ot:originalLabel": "Tsuga canadensis P1", 
+"^ot:ottId": 117276, 
+"^ot:ottTaxonName": "Tsuga canadensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 30041, 
 "@tb:identifier.taxonVariant": 70194, 
@@ -113,8 +201,9 @@
 }
 }, 
 "Tl2373259": {
-"^ot:altLabel": "Abies lasiocarpa", 
 "^ot:originalLabel": "Abies lasiocarpa P2", 
+"^ot:ottId": 85998, 
+"^ot:ottTaxonName": "Abies lasiocarpa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 60539, 
 "@tb:identifier.taxonVariant": 134082, 
@@ -123,8 +212,9 @@
 }
 }, 
 "Tl2373260": {
-"^ot:altLabel": "Tsuga chinensis", 
 "^ot:originalLabel": "Tsuga chinensis P2", 
+"^ot:ottId": 608487, 
+"^ot:ottTaxonName": "Tsuga chinensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 102391, 
 "@tb:identifier.taxonVariant": 423919, 
@@ -133,8 +223,9 @@
 }
 }, 
 "Tl2373261": {
-"^ot:altLabel": "Larix laricina", 
 "^ot:originalLabel": "Larix laricina P2", 
+"^ot:ottId": 804263, 
+"^ot:ottTaxonName": "Larix laricina", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 50632, 
 "@tb:identifier.taxonVariant": 413757, 
@@ -143,8 +234,9 @@
 }
 }, 
 "Tl2373262": {
-"^ot:altLabel": "Pinus lambertiana", 
 "^ot:originalLabel": "Pinus lambertiana P1", 
+"^ot:ottId": 568626, 
+"^ot:ottTaxonName": "Pinus lambertiana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22437, 
 "@tb:identifier.taxonVariant": 52258, 
@@ -154,6 +246,8 @@
 }, 
 "Tl2373263": {
 "^ot:originalLabel": "Cryptomeria japonica", 
+"^ot:ottId": 620749, 
+"^ot:ottTaxonName": "Cryptomeria japonica", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 7606, 
 "@tb:identifier.taxonVariant": 18347, 
@@ -162,8 +256,9 @@
 }
 }, 
 "Tl2373264": {
-"^ot:altLabel": "Cedrus deodara", 
 "^ot:originalLabel": "Cedrus deodara P1", 
+"^ot:ottId": 924430, 
+"^ot:ottTaxonName": "Cedrus deodara", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5234, 
 "@tb:identifier.taxonVariant": 12714, 
@@ -172,8 +267,9 @@
 }
 }, 
 "Tl2373265": {
-"^ot:altLabel": "Larix decidua", 
 "^ot:originalLabel": "Larix decidua P1", 
+"^ot:ottId": 693251, 
+"^ot:ottTaxonName": "Larix decidua", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 15319, 
 "@tb:identifier.taxonVariant": 35967, 
@@ -182,8 +278,9 @@
 }
 }, 
 "Tl2373266": {
-"^ot:altLabel": "Picea sitchensis", 
 "^ot:originalLabel": "Picea sitchensis P1", 
+"^ot:ottId": 771664, 
+"^ot:ottTaxonName": "Picea sitchensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22323, 
 "@tb:identifier.taxonVariant": 51929, 
@@ -193,6 +290,8 @@
 }, 
 "Tl2373267": {
 "^ot:originalLabel": "Sciadopitys verticillata", 
+"^ot:ottId": 164658, 
+"^ot:ottTaxonName": "Sciadopitys verticillata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 26429, 
 "@tb:identifier.taxonVariant": 61743, 
@@ -201,8 +300,9 @@
 }
 }, 
 "Tl2373268": {
-"^ot:altLabel": "Pseudolarix amabilis", 
 "^ot:originalLabel": "Pseudolarix amabilis P1", 
+"^ot:ottId": 641107, 
+"^ot:ottTaxonName": "Pseudolarix amabilis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 24041, 
 "@tb:identifier.taxonVariant": 56163, 
@@ -212,6 +312,8 @@
 }, 
 "Tl2373269": {
 "^ot:originalLabel": "Ginkgo biloba", 
+"^ot:ottId": 994084, 
+"^ot:ottTaxonName": "Ginkgo biloba", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 12164, 
 "@tb:identifier.taxonVariant": 28883, 
@@ -220,8 +322,9 @@
 }
 }, 
 "Tl2373270": {
-"^ot:altLabel": "Cathaya argyrophylla", 
 "^ot:originalLabel": "Cathaya argyrophylla P2", 
+"^ot:ottId": 659110, 
+"^ot:ottTaxonName": "Cathaya argyrophylla", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5186, 
 "@tb:identifier.taxonVariant": 12601, 
@@ -230,8 +333,9 @@
 }
 }, 
 "Tl2373271": {
-"^ot:altLabel": "Pinus monophylla", 
 "^ot:originalLabel": "Pinus monophylla P1", 
+"^ot:ottId": 225275, 
+"^ot:ottTaxonName": "Pinus monophylla", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22447, 
 "@tb:identifier.taxonVariant": 52288, 
@@ -240,8 +344,9 @@
 }
 }, 
 "Tl2373272": {
-"^ot:altLabel": "Abies mariesii", 
 "^ot:originalLabel": "Abies mariesii P1", 
+"^ot:ottId": 648453, 
+"^ot:ottTaxonName": "Abies mariesii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 90552, 
 "@tb:identifier.taxonVariant": 169464, 
@@ -251,6 +356,8 @@
 }, 
 "Tl2373273": {
 "^ot:originalLabel": "Cephalotaxus sinensis", 
+"^ot:ottId": 386493, 
+"^ot:ottTaxonName": "Cephalotaxus sinensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 99201, 
 "@tb:identifier.taxonVariant": 178359, 
@@ -259,8 +366,9 @@
 }
 }, 
 "Tl2373274": {
-"^ot:altLabel": "Pinus contorta", 
 "^ot:originalLabel": "Pinus contorta P1", 
+"^ot:ottId": 1044477, 
+"^ot:ottTaxonName": "Pinus contorta", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22406, 
 "@tb:identifier.taxonVariant": 52175, 
@@ -269,8 +377,9 @@
 }
 }, 
 "Tl2373275": {
-"^ot:altLabel": "Pinus krempfii", 
 "^ot:originalLabel": "Pinus krempfii P1", 
+"^ot:ottId": 568623, 
+"^ot:ottTaxonName": "Pinus krempfii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22435, 
 "@tb:identifier.taxonVariant": 52255, 
@@ -280,6 +389,8 @@
 }, 
 "Tl2373276": {
 "^ot:originalLabel": "Podocarpus macrophyllus", 
+"^ot:ottId": 61780, 
+"^ot:ottTaxonName": "Podocarpus macrophyllus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 23037, 
 "@tb:identifier.taxonVariant": 53866, 
@@ -288,8 +399,9 @@
 }
 }, 
 "Tl2373277": {
-"^ot:altLabel": "Abies concolor", 
 "^ot:originalLabel": "Abies concolor P1", 
+"^ot:ottId": 876315, 
+"^ot:ottTaxonName": "Abies concolor", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 105137, 
 "@tb:identifier.taxonVariant": 184003, 
@@ -298,8 +410,9 @@
 }
 }, 
 "Tl2373278": {
-"^ot:altLabel": "Abies lasiocarpa", 
 "^ot:originalLabel": "Abies lasiocarpa P1", 
+"^ot:ottId": 85998, 
+"^ot:ottTaxonName": "Abies lasiocarpa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 60539, 
 "@tb:identifier.taxonVariant": 134082, 
@@ -308,8 +421,9 @@
 }
 }, 
 "Tl2373279": {
-"^ot:altLabel": "Abies concolor", 
 "^ot:originalLabel": "Abies concolor P2", 
+"^ot:ottId": 876315, 
+"^ot:ottTaxonName": "Abies concolor", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 105137, 
 "@tb:identifier.taxonVariant": 184003, 
@@ -318,8 +432,9 @@
 }
 }, 
 "Tl2373280": {
-"^ot:altLabel": "Pinus strobus", 
 "^ot:originalLabel": "Pinus strobus P2", 
+"^ot:ottId": 568616, 
+"^ot:ottTaxonName": "Pinus strobus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22480, 
 "@tb:identifier.taxonVariant": 52384, 
@@ -328,8 +443,9 @@
 }
 }, 
 "Tl2373281": {
-"^ot:altLabel": "Pinus thunbergii", 
 "^ot:originalLabel": "Pinus thunbergii P1", 
+"^ot:ottId": 1075728, 
+"^ot:ottTaxonName": "Pinus thunbergii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22486, 
 "@tb:identifier.taxonVariant": 52405, 
@@ -338,8 +454,9 @@
 }
 }, 
 "Tl2373282": {
-"^ot:altLabel": "Picea glauca", 
 "^ot:originalLabel": "Picea glauca P2", 
+"^ot:ottId": 771681, 
+"^ot:ottTaxonName": "Picea glauca", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 50633, 
 "@tb:identifier.taxonVariant": 119961, 
@@ -348,8 +465,9 @@
 }
 }, 
 "Tl2373283": {
-"^ot:altLabel": "Larix occidentalis", 
 "^ot:originalLabel": "Larix occidentalis P1", 
+"^ot:ottId": 994602, 
+"^ot:ottTaxonName": "Larix occidentalis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 15321, 
 "@tb:identifier.taxonVariant": 35971, 
@@ -358,8 +476,9 @@
 }
 }, 
 "Tl2373284": {
-"^ot:altLabel": "Pinus pinea", 
 "^ot:originalLabel": "Pinus pinea P1", 
+"^ot:ottId": 568639, 
+"^ot:ottTaxonName": "Pinus pinea", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22463, 
 "@tb:identifier.taxonVariant": 52340, 
@@ -368,8 +487,9 @@
 }
 }, 
 "Tl2373285": {
-"^ot:altLabel": "Picea abies", 
 "^ot:originalLabel": "Picea abies P2", 
+"^ot:ottId": 517943, 
+"^ot:ottTaxonName": "Picea abies", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22318, 
 "@tb:identifier.taxonVariant": 51916, 
@@ -378,8 +498,9 @@
 }
 }, 
 "Tl2373286": {
-"^ot:altLabel": "Cathaya argyrophylla", 
 "^ot:originalLabel": "Cathaya argyrophylla P1", 
+"^ot:ottId": 659110, 
+"^ot:ottTaxonName": "Cathaya argyrophylla", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5186, 
 "@tb:identifier.taxonVariant": 12601, 
@@ -388,8 +509,9 @@
 }
 }, 
 "Tl2373287": {
-"^ot:altLabel": "Keteleeria evelyniana", 
 "^ot:originalLabel": "Keteleeria evelyniana P1", 
+"^ot:ottId": 1080546, 
+"^ot:ottTaxonName": "Keteleeria evelyniana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 124843, 
 "@tb:identifier.taxonVariant": 202626, 
@@ -399,6 +521,8 @@
 }, 
 "Tl2373288": {
 "^ot:originalLabel": "Araucaria columnaris", 
+"^ot:ottId": 128566, 
+"^ot:ottTaxonName": "Araucaria columnaris", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 78523, 
 "@tb:identifier.taxonVariant": 156134, 
@@ -407,8 +531,9 @@
 }
 }, 
 "Tl2373289": {
-"^ot:altLabel": "Nothotsuga longibracteata", 
 "^ot:originalLabel": "Nothotsuga longibracteata P1", 
+"^ot:ottId": 39083, 
+"^ot:ottTaxonName": "Nothotsuga longibracteata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 46486, 
 "@tb:identifier.taxonVariant": 108889, 
@@ -417,8 +542,9 @@
 }
 }, 
 "Tl2373290": {
-"^ot:altLabel": "Picea abies", 
 "^ot:originalLabel": "Picea abies P1", 
+"^ot:ottId": 517943, 
+"^ot:ottTaxonName": "Picea abies", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22318, 
 "@tb:identifier.taxonVariant": 51916, 
@@ -427,8 +553,9 @@
 }
 }, 
 "Tl2373291": {
-"^ot:altLabel": "Picea glauca", 
 "^ot:originalLabel": "Picea glauca P1", 
+"^ot:ottId": 771681, 
+"^ot:ottTaxonName": "Picea glauca", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 50633, 
 "@tb:identifier.taxonVariant": 119961, 
@@ -437,8 +564,9 @@
 }
 }, 
 "Tl2373292": {
-"^ot:altLabel": "Pseudotsuga menziesii", 
 "^ot:originalLabel": "Pseudotsuga menziesii P1", 
+"^ot:ottId": 1075713, 
+"^ot:ottTaxonName": "Pseudotsuga menziesii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 24162, 
 "@tb:identifier.taxonVariant": 56492, 
@@ -447,8 +575,9 @@
 }
 }, 
 "Tl2373293": {
-"^ot:altLabel": "Pinus ponderosa", 
 "^ot:originalLabel": "Pinus ponderosa P1", 
+"^ot:ottId": 736900, 
+"^ot:ottTaxonName": "Pinus ponderosa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22464, 
 "@tb:identifier.taxonVariant": 52341, 
@@ -457,8 +586,9 @@
 }
 }, 
 "Tl2373294": {
-"^ot:altLabel": "Tsuga heterophylla", 
 "^ot:originalLabel": "Tsuga heterophylla P2", 
+"^ot:ottId": 1095217, 
+"^ot:ottTaxonName": "Tsuga heterophylla", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 50639, 
 "@tb:identifier.taxonVariant": 119971, 
@@ -468,6 +598,8 @@
 }, 
 "Tl2373295": {
 "^ot:originalLabel": "Abies lasiocarpa", 
+"^ot:ottId": 85998, 
+"^ot:ottTaxonName": "Abies lasiocarpa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 60539, 
 "@tb:identifier.taxonVariant": 134082, 
@@ -477,6 +609,8 @@
 }, 
 "Tl2373296": {
 "^ot:originalLabel": "Pinus lambertiana", 
+"^ot:ottId": 568626, 
+"^ot:ottTaxonName": "Pinus lambertiana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22437, 
 "@tb:identifier.taxonVariant": 52258, 
@@ -486,6 +620,8 @@
 }, 
 "Tl2373297": {
 "^ot:originalLabel": "Pinus ponderosa", 
+"^ot:ottId": 736900, 
+"^ot:ottTaxonName": "Pinus ponderosa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22464, 
 "@tb:identifier.taxonVariant": 52341, 
@@ -495,6 +631,8 @@
 }, 
 "Tl2373298": {
 "^ot:originalLabel": "Abies mariesii", 
+"^ot:ottId": 648453, 
+"^ot:ottTaxonName": "Abies mariesii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 90552, 
 "@tb:identifier.taxonVariant": 169464, 
@@ -504,6 +642,8 @@
 }, 
 "Tl2373299": {
 "^ot:originalLabel": "Cedrus deodara", 
+"^ot:ottId": 924430, 
+"^ot:ottTaxonName": "Cedrus deodara", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5234, 
 "@tb:identifier.taxonVariant": 12714, 
@@ -513,6 +653,8 @@
 }, 
 "Tl2373300": {
 "^ot:originalLabel": "Picea glauca", 
+"^ot:ottId": 771681, 
+"^ot:ottTaxonName": "Picea glauca", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 50633, 
 "@tb:identifier.taxonVariant": 119961, 
@@ -522,6 +664,8 @@
 }, 
 "Tl2373301": {
 "^ot:originalLabel": "Picea sitchensis", 
+"^ot:ottId": 771664, 
+"^ot:ottTaxonName": "Picea sitchensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22323, 
 "@tb:identifier.taxonVariant": 51929, 
@@ -531,6 +675,8 @@
 }, 
 "Tl2373302": {
 "^ot:originalLabel": "Pinus monophylla", 
+"^ot:ottId": 225275, 
+"^ot:ottTaxonName": "Pinus monophylla", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22447, 
 "@tb:identifier.taxonVariant": 52288, 
@@ -540,6 +686,8 @@
 }, 
 "Tl2373303": {
 "^ot:originalLabel": "Pinus thunbergii", 
+"^ot:ottId": 1075728, 
+"^ot:ottTaxonName": "Pinus thunbergii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22486, 
 "@tb:identifier.taxonVariant": 52405, 
@@ -549,6 +697,8 @@
 }, 
 "Tl2373304": {
 "^ot:originalLabel": "Pseudotsuga menziesii", 
+"^ot:ottId": 1075713, 
+"^ot:ottTaxonName": "Pseudotsuga menziesii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 24162, 
 "@tb:identifier.taxonVariant": 56492, 
@@ -558,6 +708,8 @@
 }, 
 "Tl2373305": {
 "^ot:originalLabel": "Pinus pinaster", 
+"^ot:ottId": 837883, 
+"^ot:ottTaxonName": "Pinus pinaster", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22461, 
 "@tb:identifier.taxonVariant": 52333, 
@@ -567,6 +719,8 @@
 }, 
 "Tl2373306": {
 "^ot:originalLabel": "Keteleeria evelyniana", 
+"^ot:ottId": 1080546, 
+"^ot:ottTaxonName": "Keteleeria evelyniana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 124843, 
 "@tb:identifier.taxonVariant": 202626, 
@@ -576,6 +730,8 @@
 }, 
 "Tl2373307": {
 "^ot:originalLabel": "Pseudolarix amabilis", 
+"^ot:ottId": 641107, 
+"^ot:ottTaxonName": "Pseudolarix amabilis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 24041, 
 "@tb:identifier.taxonVariant": 56163, 
@@ -585,6 +741,8 @@
 }, 
 "Tl2373308": {
 "^ot:originalLabel": "Pinus contorta", 
+"^ot:ottId": 1044477, 
+"^ot:ottTaxonName": "Pinus contorta", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22406, 
 "@tb:identifier.taxonVariant": 52175, 
@@ -594,6 +752,8 @@
 }, 
 "Tl2373309": {
 "^ot:originalLabel": "Pinus krempfii", 
+"^ot:ottId": 568623, 
+"^ot:ottTaxonName": "Pinus krempfii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22435, 
 "@tb:identifier.taxonVariant": 52255, 
@@ -603,6 +763,8 @@
 }, 
 "Tl2373310": {
 "^ot:originalLabel": "Nothotsuga longibracteata", 
+"^ot:ottId": 39083, 
+"^ot:ottTaxonName": "Nothotsuga longibracteata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 46486, 
 "@tb:identifier.taxonVariant": 108889, 
@@ -612,6 +774,8 @@
 }, 
 "Tl2373311": {
 "^ot:originalLabel": "Picea abies", 
+"^ot:ottId": 517943, 
+"^ot:ottTaxonName": "Picea abies", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22318, 
 "@tb:identifier.taxonVariant": 51916, 
@@ -621,6 +785,8 @@
 }, 
 "Tl2373312": {
 "^ot:originalLabel": "Tsuga canadensis", 
+"^ot:ottId": 117276, 
+"^ot:ottTaxonName": "Tsuga canadensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 30041, 
 "@tb:identifier.taxonVariant": 70194, 
@@ -630,6 +796,8 @@
 }, 
 "Tl2373313": {
 "^ot:originalLabel": "Cathaya argyrophylla", 
+"^ot:ottId": 659110, 
+"^ot:ottTaxonName": "Cathaya argyrophylla", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5186, 
 "@tb:identifier.taxonVariant": 12601, 
@@ -639,6 +807,8 @@
 }, 
 "Tl2373314": {
 "^ot:originalLabel": "Larix decidua", 
+"^ot:ottId": 693251, 
+"^ot:ottTaxonName": "Larix decidua", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 15319, 
 "@tb:identifier.taxonVariant": 35967, 
@@ -648,6 +818,8 @@
 }, 
 "Tl2373315": {
 "^ot:originalLabel": "Cephalotaxus harringtonia", 
+"^ot:ottId": 10224, 
+"^ot:ottTaxonName": "Cephalotaxus harringtonia", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5330, 
 "@tb:identifier.taxonVariant": 12961, 
@@ -657,6 +829,8 @@
 }, 
 "Tl2373316": {
 "^ot:originalLabel": "Pinus nelsonii", 
+"^ot:ottId": 837873, 
+"^ot:ottTaxonName": "Pinus nelsonii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22453, 
 "@tb:identifier.taxonVariant": 52306, 
@@ -666,6 +840,8 @@
 }, 
 "Tl2373317": {
 "^ot:originalLabel": "Larix occidentalis", 
+"^ot:ottId": 994602, 
+"^ot:ottTaxonName": "Larix occidentalis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 15321, 
 "@tb:identifier.taxonVariant": 35971, 
@@ -675,6 +851,8 @@
 }, 
 "Tl2373318": {
 "^ot:originalLabel": "Abies concolor", 
+"^ot:ottId": 876315, 
+"^ot:ottTaxonName": "Abies concolor", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 105137, 
 "@tb:identifier.taxonVariant": 184003, 
@@ -705,6 +883,8 @@
 }, 
 "Tl2373326": {
 "^ot:originalLabel": "Phyllocladus hypophyllus", 
+"^ot:ottId": 700840, 
+"^ot:ottTaxonName": "Phyllocladus hypophyllus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22008, 
 "@tb:identifier.taxonVariant": 51164, 
@@ -780,6 +960,8 @@
 }, 
 "Tl2373349": {
 "^ot:originalLabel": "Araucaria heterophylla", 
+"^ot:ottId": 85997, 
+"^ot:ottTaxonName": "Araucaria heterophylla", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 2186, 
 "@tb:identifier.taxonVariant": 5252, 
@@ -821,10 +1003,14 @@
 "^ot:originalLabel": "Pityostrobus lynnii"
 }, 
 "Tl2373361": {
-"^ot:originalLabel": "Pityostrobus beardii"
+"^ot:originalLabel": "Pityostrobus beardii", 
+"^ot:ottId": 6012113, 
+"^ot:ottTaxonName": "Pityostrobus beardii"
 }, 
 "Tl2373362": {
 "^ot:originalLabel": "Cephalotaxus harringtonii", 
+"^ot:ottId": 3866642, 
+"^ot:ottTaxonName": "Cephalotaxus harringtonii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5330, 
 "@tb:identifier.taxonVariant": 12959, 
@@ -865,7 +1051,20 @@
 "Tr97554": {
 "@label": "Fig. 1B", 
 "@xsi:type": "nex:FloatTree", 
-"^ot:rootNodeId": "Tn14256366", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:undefined", 
+"^ot:curatedType": "Maximum parsimony ", 
+"^ot:inGroupClade": "Tn14256340", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
+"^ot:rootNodeId": "Tn14256388", 
+"^ot:specifiedRoot": "Tn14256388", 
+"^ot:tag": [
+"Paralogs"
+], 
+"^ot:unrootedTree": false, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 38, 
 "^tb:quality.tree": "Unrated", 
@@ -1020,11 +1219,6 @@
 "@length": 0.0310065, 
 "@source": "Tn14256366", 
 "@target": "Tn14256393"
-}, 
-"edge859300": {
-"@length": 0.0310065, 
-"@source": "Tn14256366", 
-"@target": "Tn14256388"
 }
 }, 
 "Tn14256368": {
@@ -1182,6 +1376,11 @@
 }
 }, 
 "Tn14256388": {
+"edge859300": {
+"@length": 0.0310065, 
+"@source": "Tn14256388", 
+"@target": "Tn14256366"
+}, 
 "edge859302": {
 "@length": 0.109223, 
 "@source": "Tn14256388", 
@@ -1374,9 +1573,7 @@
 "@otu": "Tl2373267"
 }, 
 "Tn14256365": {}, 
-"Tn14256366": {
-"@root": true
-}, 
+"Tn14256366": {}, 
 "Tn14256367": {
 "@otu": "Tl2373262"
 }, 
@@ -1416,7 +1613,9 @@
 "Tn14256387": {
 "@otu": "Tl2373294"
 }, 
-"Tn14256388": {}, 
+"Tn14256388": {
+"@root": true
+}, 
 "Tn14256389": {
 "@otu": "Tl2373268"
 }, 
@@ -1451,7 +1650,18 @@
 "Tr97555": {
 "@label": "Fig. 1C", 
 "@xsi:type": "nex:FloatTree", 
-"^ot:rootNodeId": "Tn14256439", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:undefined", 
+"^ot:curatedType": "Maximum parsimony ", 
+"^ot:inGroupClade": "Tn14256454", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
+"^ot:rootNodeId": "Tn14256414", 
+"^ot:specifiedRoot": "Tn14256414", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 29, 
 "^tb:quality.tree": "Unrated", 
@@ -1518,6 +1728,11 @@
 }
 }, 
 "Tn14256414": {
+"edge859180": {
+"@length": 0.017374, 
+"@source": "Tn14256414", 
+"@target": "Tn14256439"
+}, 
 "edge859182": {
 "@length": 0.080539, 
 "@source": "Tn14256414", 
@@ -1678,11 +1893,6 @@
 "@length": 0.017374, 
 "@source": "Tn14256439", 
 "@target": "Tn14256456"
-}, 
-"edge859180": {
-"@length": 0.017374, 
-"@source": "Tn14256439", 
-"@target": "Tn14256414"
 }
 }, 
 "Tn14256441": {
@@ -1815,7 +2025,9 @@
 "Tn14256413": {
 "@otu": "Tl2373309"
 }, 
-"Tn14256414": {}, 
+"Tn14256414": {
+"@root": true
+}, 
 "Tn14256415": {
 "@otu": "Tl2373308"
 }, 
@@ -1864,9 +2076,7 @@
 }, 
 "Tn14256437": {}, 
 "Tn14256438": {}, 
-"Tn14256439": {
-"@root": true
-}, 
+"Tn14256439": {}, 
 "Tn14256440": {
 "@otu": "Tl2373302"
 }, 
@@ -1917,7 +2127,18 @@
 "Tr97556": {
 "@label": "Fig. S3", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:undefined", 
+"^ot:curatedType": "Maximum parsimony ", 
+"^ot:inGroupClade": "Tn14256545", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn14256563", 
+"^ot:specifiedRoot": "Tn14256563", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 75, 
 "^tb:quality.tree": "Unrated", 
