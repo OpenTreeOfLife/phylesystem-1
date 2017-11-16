@@ -48,25 +48,106 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2017-11-16T22:12:09.463Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "Eudicots"
 }, 
-"^ot:curatorName": "woodrow-churchill", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2017-11-16T22:12:09.463Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"woodrow-churchill"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S10828"
 }, 
+"^ot:focalClade": 33109, 
+"^ot:focalCladeOTTTaxonName": "Cactineae", 
 "^ot:otusElementOrder": [
 "Tls18151"
 ], 
 "^ot:studyId": "ot_1211", 
 "^ot:studyPublication": {
-"@href": "10.3732/ajb.1000227"
+"@href": "http://dx.doi.org/10.3732/ajb.1000227"
 }, 
 "^ot:studyPublicationReference": "Ocampo G.A., & Columbus J. 2010. Molecular phylogenetics of suborder Cactineae (Caryophyllales), including insights into photosynthetic diversification and historical biogeography. American Journal of Botany, 97(11): 1827-1847.", 
 "^ot:studyYear": 2010, 
+"^ot:tag": [], 
 "^ot:taxonLinkPrefixes": {
 "@ubio": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:", 
 "@uniprot": "http://purl.uniprot.org/taxonomy/"
@@ -113,6 +194,8 @@
 }, 
 "Tl410807": {
 "^ot:originalLabel": "Mirabilis sanguinea", 
+"^ot:ottId": 460321, 
+"^ot:ottTaxonName": "Mirabilis sanguinea", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 124087, 
 "@tb:identifier.taxonVariant": 201873, 
@@ -266,6 +349,8 @@
 }, 
 "Tl410825": {
 "^ot:originalLabel": "Sesuvium portulacastrum", 
+"^ot:ottId": 435710, 
+"^ot:ottTaxonName": "Sesuvium portulacastrum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 26832, 
 "@tb:identifier.taxonVariant": 62608, 
@@ -294,6 +379,8 @@
 }, 
 "Tl410828": {
 "^ot:originalLabel": "Rivinia humilis", 
+"^ot:ottId": 740446, 
+"^ot:ottTaxonName": "Rivina humilis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 601701, 
 "@tb:identifier.taxonVariant": 802272, 
@@ -571,9 +658,20 @@
 "^skos:historyNote": "Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlTreeBlockWriter@55e6e4ad $Rev: 1040 $", 
 "treeById": {
 "Tr21491": {
-"@label": "Bayesian", 
+"@label": "Bayesian (consensus type tree)", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:undefined", 
+"^ot:curatedType": "Bayesian inference ", 
+"^ot:inGroupClade": "Tn2864952", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn2864956", 
+"^ot:specifiedRoot": "Tn2864956", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 53, 
 "^tb:quality.tree": "Unrated", 
@@ -1422,9 +1520,20 @@
 }
 }, 
 "Tr21492": {
-"@label": "ML", 
+"@label": "ML (single type tree)", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:undefined", 
+"^ot:curatedType": "Maximum likelihood ", 
+"^ot:inGroupClade": "Tn2865082", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn2865072", 
+"^ot:specifiedRoot": "Tn2865072", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 53, 
 "^tb:quality.tree": "Unrated", 
@@ -1672,12 +1781,12 @@
 }, 
 "Tn2865062": {
 "edge983785": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn2865062", 
 "@target": "Tn2865041"
 }, 
 "edge983787": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn2865062", 
 "@target": "Tn2865106"
 }
@@ -1900,12 +2009,12 @@
 }, 
 "Tn2865106": {
 "edge983789": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn2865106", 
 "@target": "Tn2865035"
 }, 
 "edge983791": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn2865106", 
 "@target": "Tn2865086"
 }
@@ -2025,7 +2134,7 @@
 "@target": "Tn2865026"
 }, 
 "edge983727": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn2865125", 
 "@target": "Tn2865040"
 }
