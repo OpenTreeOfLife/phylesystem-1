@@ -51,22 +51,105 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2017-11-16T22:20:11.641Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "Vertebrates"
 }, 
-"^ot:curatorName": "rossynnatale", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2017-11-16T22:20:11.641Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"rossynnatale"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S20204"
 }, 
+"^ot:focalCladeOTTTaxonName": "", 
 "^ot:otusElementOrder": [
 "Tls54687"
 ], 
 "^ot:studyId": "ot_1208", 
+"^ot:studyPublication": {
+"@href": ""
+}, 
 "^ot:studyPublicationReference": "Portnoy D., Willis S., Hunt E., Swift D., Gold J., & Conway K.W. 2016. Molecular phylogenetics of New World searobins (Triglidae; Prionotinae). Molecular Phylogenetics and Evolution, .", 
 "^ot:studyYear": 2016, 
+"^ot:tag": [], 
 "^ot:taxonLinkPrefixes": {
 "@ubio": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:", 
 "@uniprot": "http://purl.uniprot.org/taxonomy/"
@@ -89,8 +172,9 @@
 "^skos:historyNote": "Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlOTUWriter@3319e7e3 $Rev: 1040 $", 
 "otuById": {
 "Tl2553668": {
-"^ot:altLabel": "Prionotus ophryas", 
 "^ot:originalLabel": "Prionotus ophryas 1", 
+"^ot:ottId": 235665, 
+"^ot:ottTaxonName": "Prionotus ophryas", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 509859, 
 "@tb:identifier.taxonVariant": 676037, 
@@ -99,32 +183,43 @@
 }
 }, 
 "Tl2553669": {
-"^ot:originalLabel": "Bellator militaris"
+"^ot:originalLabel": "Bellator militaris", 
+"^ot:ottId": 3631594, 
+"^ot:ottTaxonName": "Bellator militaris"
 }, 
 "Tl2553670": {
+"^ot:altLabel": "Prionotus rubio ", 
 "^ot:originalLabel": "Prionotus rubio 8"
 }, 
 "Tl2553671": {
+"^ot:altLabel": "Prionotus punctatus ", 
 "^ot:originalLabel": "Prionotus punctatus 1"
 }, 
 "Tl2553672": {
+"^ot:altLabel": "Prionotus paralatus ", 
 "^ot:originalLabel": "Prionotus paralatus 3"
 }, 
 "Tl2553673": {
+"^ot:altLabel": "Prionotus tribulus ", 
 "^ot:originalLabel": "Prionotus tribulus 6"
 }, 
 "Tl2553674": {
+"^ot:altLabel": "Prionotus paralatus ", 
 "^ot:originalLabel": "Prionotus paralatus 1"
 }, 
 "Tl2553675": {
+"^ot:altLabel": "Prionotus longispinosus", 
 "^ot:originalLabel": "Prionotus longispinosus 2"
 }, 
 "Tl2553676": {
-"^ot:originalLabel": "Prionotus albirostris"
+"^ot:originalLabel": "Prionotus albirostris", 
+"^ot:ottId": 3631674, 
+"^ot:ottTaxonName": "Prionotus albirostris"
 }, 
 "Tl2553677": {
-"^ot:altLabel": "Prionotus ophryas", 
 "^ot:originalLabel": "Prionotus ophryas 3", 
+"^ot:ottId": 235665, 
+"^ot:ottTaxonName": "Prionotus ophryas", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 509859, 
 "@tb:identifier.taxonVariant": 676037, 
@@ -133,11 +228,13 @@
 }
 }, 
 "Tl2553678": {
+"^ot:altLabel": "Prionotus martis ", 
 "^ot:originalLabel": "Prionotus martis 3"
 }, 
 "Tl2553679": {
-"^ot:altLabel": "Prionotus scitulus", 
 "^ot:originalLabel": "Prionotus scitulus 209B", 
+"^ot:ottId": 611748, 
+"^ot:ottTaxonName": "Prionotus scitulus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 409003, 
 "@tb:identifier.taxonVariant": 410250, 
@@ -146,14 +243,17 @@
 }
 }, 
 "Tl2553680": {
+"^ot:altLabel": "Prionotus rubio ", 
 "^ot:originalLabel": "Prionotus rubio 6"
 }, 
 "Tl2553681": {
+"^ot:altLabel": "Prionotus paralatus ", 
 "^ot:originalLabel": "Prionotus paralatus 6"
 }, 
 "Tl2553682": {
-"^ot:altLabel": "Lepidotrigla argus", 
 "^ot:originalLabel": "Lepidotrigla argus 2", 
+"^ot:ottId": 445772, 
+"^ot:ottTaxonName": "Lepidotrigla argus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 483682, 
 "@tb:identifier.taxonVariant": 640835, 
@@ -162,23 +262,29 @@
 }
 }, 
 "Tl2553683": {
+"^ot:altLabel": "Prionotus tribulus ", 
 "^ot:originalLabel": "Prionotus tribulus 4"
 }, 
 "Tl2553684": {
+"^ot:altLabel": "Prionotus paralatus ", 
 "^ot:originalLabel": "Prionotus paralatus 4"
 }, 
 "Tl2553685": {
+"^ot:altLabel": "Prionotus roseus ", 
 "^ot:originalLabel": "Prionotus roseus 3"
 }, 
 "Tl2553686": {
+"^ot:altLabel": "Prionotus alatus ", 
 "^ot:originalLabel": "Prionotus alatus 2"
 }, 
 "Tl2553687": {
+"^ot:altLabel": "Prionotus alatus ", 
 "^ot:originalLabel": "Prionotus alatus 1"
 }, 
 "Tl2553688": {
-"^ot:altLabel": "Prionotus stephanophrys", 
 "^ot:originalLabel": "Prionotus stephanophrys 1", 
+"^ot:ottId": 346696, 
+"^ot:ottTaxonName": "Prionotus stephanophrys", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 281388, 
 "@tb:identifier.taxonVariant": 334971, 
@@ -187,47 +293,61 @@
 }
 }, 
 "Tl2553689": {
+"^ot:altLabel": "Prionotus stearnsi ", 
 "^ot:originalLabel": "Prionotus stearnsi 1"
 }, 
 "Tl2553690": {
+"^ot:altLabel": "Prionotus roseus ", 
 "^ot:originalLabel": "Prionotus roseus 4"
 }, 
 "Tl2553691": {
+"^ot:altLabel": "Prionotus paralatus ", 
 "^ot:originalLabel": "Prionotus paralatus 7"
 }, 
 "Tl2553692": {
+"^ot:altLabel": "Prionotus lonispinosus ", 
 "^ot:originalLabel": "Prionotus lonispinosus 10"
 }, 
 "Tl2553693": {
+"^ot:altLabel": "Prionotus martis ", 
 "^ot:originalLabel": "Prionotus martis 1"
 }, 
 "Tl2553694": {
+"^ot:altLabel": "Prionotus rubio ", 
 "^ot:originalLabel": "Prionotus rubio 4"
 }, 
 "Tl2553695": {
+"^ot:altLabel": "Prionotus alatus ", 
 "^ot:originalLabel": "Prionotus alatus 4"
 }, 
 "Tl2553696": {
+"^ot:altLabel": "Prionotus ophrya ", 
 "^ot:originalLabel": "Prionotus ophrya 7"
 }, 
 "Tl2553697": {
+"^ot:altLabel": "Prionotus stearsi ", 
 "^ot:originalLabel": "Prionotus stearsi 4"
 }, 
 "Tl2553698": {
+"^ot:altLabel": "Pteridotrigla anderton", 
 "^ot:originalLabel": "Pteridotrigla andertoni"
 }, 
 "Tl2553699": {
+"^ot:altLabel": "Prionotus roseus ", 
 "^ot:originalLabel": "Prionotus roseus 5"
 }, 
 "Tl2553700": {
+"^ot:altLabel": "Prionotus carolinus ", 
 "^ot:originalLabel": "Prionotus carolinus 2"
 }, 
 "Tl2553701": {
+"^ot:altLabel": "Prionotus paralatus ", 
 "^ot:originalLabel": "Prionotus paralatus 2"
 }, 
 "Tl2553702": {
-"^ot:altLabel": "Prionotus scitulus", 
 "^ot:originalLabel": "Prionotus scitulus 11 14A", 
+"^ot:ottId": 611748, 
+"^ot:ottTaxonName": "Prionotus scitulus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 409003, 
 "@tb:identifier.taxonVariant": 410250, 
@@ -236,30 +356,39 @@
 }
 }, 
 "Tl2553703": {
+"^ot:altLabel": "Prionotus carolinus ", 
 "^ot:originalLabel": "Prionotus carolinus 1"
 }, 
 "Tl2553704": {
+"^ot:altLabel": "Prionotus longispinosus ", 
 "^ot:originalLabel": "Prionotus longispinosus 3"
 }, 
 "Tl2553705": {
+"^ot:altLabel": "Prionotus alatus ", 
 "^ot:originalLabel": "Prionotus alatus 3"
 }, 
 "Tl2553706": {
+"^ot:altLabel": "Prionotus alatus ", 
 "^ot:originalLabel": "Prionotus alatus 5"
 }, 
 "Tl2553707": {
+"^ot:altLabel": "Prionotus tribulus ", 
 "^ot:originalLabel": "Prionotus tribulus 7"
 }, 
 "Tl2553708": {
+"^ot:altLabel": "Prionotus stearnsi ", 
 "^ot:originalLabel": "Prionotus stearnsi 3"
 }, 
 "Tl2553709": {
+"^ot:altLabel": "Bellator militaris ", 
 "^ot:originalLabel": "Bellator militaris 2"
 }, 
 "Tl2553710": {
+"^ot:altLabel": "Platycephalus indicus", 
 "^ot:originalLabel": "Platycephalus indicus og 1"
 }, 
 "Tl2553711": {
+"^ot:altLabel": "Prionotus martis ", 
 "^ot:originalLabel": "Prionotus martis 2"
 }, 
 "Tl2553712": {
@@ -395,15 +524,25 @@
 "@label": "Prionotinae RAG1 from Beast relaxed clock", 
 "@otus": "Tls54687", 
 "^ot:treeElementOrder": [
-"Tr99854", 
-"Tr99855"
+"Tr99854"
 ], 
 "^skos:historyNote": "Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlTreeBlockWriter@3652f3ea $Rev: 1040 $", 
 "treeById": {
 "Tr99854": {
 "@label": "TREE1", 
 "@xsi:type": "nex:FloatTree", 
-"^ot:rootNodeId": "Tn14827513", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:time", 
+"^ot:curatedType": "Bayesian inference ", 
+"^ot:inGroupClade": "Tn14827499", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
+"^ot:rootNodeId": "Tr99854_ROOT", 
+"^ot:specifiedRoot": "Tr99854_ROOT", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 44, 
 "^tb:quality.tree": "Unrated", 
@@ -698,15 +837,15 @@
 }
 }, 
 "Tn14827499": {
+"edge964128": {
+"@length": 0.011370636781052872, 
+"@source": "Tn14827499", 
+"@target": "Tn14827513"
+}, 
 "edge964130": {
 "@length": 0.009932254728116843, 
 "@source": "Tn14827499", 
 "@target": "Tn14827469"
-}, 
-"edge964136": {
-"@length": 0.02083643872159057, 
-"@source": "Tn14827499", 
-"@target": "Tn14827533"
 }
 }, 
 "Tn14827504": {
@@ -786,11 +925,6 @@
 "@length": 0.009727871178452658, 
 "@source": "Tn14827513", 
 "@target": "Tn14827508"
-}, 
-"edge964128": {
-"@length": 0.011370636781052872, 
-"@source": "Tn14827513", 
-"@target": "Tn14827499"
 }
 }, 
 "Tn14827517": {
@@ -923,6 +1057,17 @@
 "@length": 0.0021009787458741444, 
 "@source": "Tn14827532", 
 "@target": "Tn14827453"
+}
+}, 
+"Tr99854_ROOT": {
+"Tr99854_ROOT_EDGE": {
+"@source": "Tr99854_ROOT", 
+"@target": "Tn14827499"
+}, 
+"edge964136": {
+"@length": 0.02083643872159057, 
+"@source": "Tr99854_ROOT", 
+"@target": "Tn14827533"
 }
 }
 }, 
@@ -1098,9 +1243,7 @@
 "@otu": "Tl2553681"
 }, 
 "Tn14827512": {}, 
-"Tn14827513": {
-"@root": true
-}, 
+"Tn14827513": {}, 
 "Tn14827514": {
 "@label": "P ala 2", 
 "@otu": "Tl2553686"
@@ -1147,994 +1290,9 @@
 "Tn14827533": {
 "@label": "Pindicus og", 
 "@otu": "Tl2553710"
-}
-}
 }, 
-"Tr99855": {
-"@label": "TREE1", 
-"@xsi:type": "nex:FloatTree", 
-"^ot:rootNodeId": "Tn14827585", 
-"^tb:kind.tree": "Species Tree", 
-"^tb:ntax.tree": 58, 
-"^tb:quality.tree": "Unrated", 
-"^tb:type.tree": "Single", 
-"edgeBySourceId": {
-"Tn14827535": {
-"edge964334": {
-"@length": 0.00039363083747274833, 
-"@source": "Tn14827535", 
-"@target": "Tn14827571"
-}, 
-"edge964336": {
-"@length": 0.00016910329092720551, 
-"@source": "Tn14827535", 
-"@target": "Tn14827593"
-}
-}, 
-"Tn14827537": {
-"edge964182": {
-"@length": 0.002777449144319089, 
-"@source": "Tn14827537", 
-"@target": "Tn14827542"
-}, 
-"edge964220": {
-"@length": 0.004169744156464716, 
-"@source": "Tn14827537", 
-"@target": "Tn14827561"
-}
-}, 
-"Tn14827539": {
-"edge964352": {
-"@length": 0.014990708786575211, 
-"@source": "Tn14827539", 
-"@target": "Tn14827557"
-}, 
-"edge964354": {
-"@length": 0.01478290751649848, 
-"@source": "Tn14827539", 
-"@target": "Tn14827597"
-}
-}, 
-"Tn14827540": {
-"edge964300": {
-"@length": 9.320638088185853e-05, 
-"@source": "Tn14827540", 
-"@target": "Tn14827630"
-}, 
-"edge964310": {
-"@length": 0.00031365548936551857, 
-"@source": "Tn14827540", 
-"@target": "Tn14827536"
-}
-}, 
-"Tn14827541": {
-"edge964322": {
-"@length": 0.00021533955916028832, 
-"@source": "Tn14827541", 
-"@target": "Tn14827638"
-}, 
-"edge964324": {
-"@length": 0.00021533955915773383, 
-"@source": "Tn14827541", 
-"@target": "Tn14827592"
-}
-}, 
-"Tn14827542": {
-"edge964184": {
-"@length": 0.003781994886628114, 
-"@source": "Tn14827542", 
-"@target": "Tn14827600"
-}, 
-"edge964210": {
-"@length": 0.009107298306604564, 
-"@source": "Tn14827542", 
-"@target": "Tn14827627"
-}
-}, 
-"Tn14827546": {
-"edge964254": {
-"@length": 0.01273872870250992, 
-"@source": "Tn14827546", 
-"@target": "Tn14827637"
-}, 
-"edge964272": {
-"@length": 0.017081969370572842, 
-"@source": "Tn14827546", 
-"@target": "Tn14827626"
-}
-}, 
-"Tn14827547": {
-"edge964370": {
-"@length": 0.0004037861312472807, 
-"@source": "Tn14827547", 
-"@target": "Tn14827572"
-}, 
-"edge964372": {
-"@length": 0.0004037861312472807, 
-"@source": "Tn14827547", 
-"@target": "Tn14827639"
-}
-}, 
-"Tn14827548": {
-"edge964158": {
-"@length": 0.006831437396559852, 
-"@source": "Tn14827548", 
-"@target": "Tn14827556"
-}, 
-"edge964168": {
-"@length": 0.013501165146572692, 
-"@source": "Tn14827548", 
-"@target": "Tn14827618"
-}
-}, 
-"Tn14827552": {
-"edge964150": {
-"@length": 0.00480936452124138, 
-"@source": "Tn14827552", 
-"@target": "Tn14827619"
-}, 
-"edge964292": {
-"@length": 0.031665859753748235, 
-"@source": "Tn14827552", 
-"@target": "Tn14827575"
-}
-}, 
-"Tn14827553": {
-"edge964286": {
-"@length": 0.001168901641008381, 
-"@source": "Tn14827553", 
-"@target": "Tn14827636"
-}, 
-"edge964288": {
-"@length": 0.00116890164102737, 
-"@source": "Tn14827553", 
-"@target": "Tn14827645"
-}
-}, 
-"Tn14827555": {
-"edge964156": {
-"@length": 0.012974106291285018, 
-"@source": "Tn14827555", 
-"@target": "Tn14827548"
-}, 
-"edge964178": {
-"@length": 0.006271977881106512, 
-"@source": "Tn14827555", 
-"@target": "Tn14827606"
-}
-}, 
-"Tn14827556": {
-"edge964160": {
-"@length": 0.007471044215156831, 
-"@source": "Tn14827556", 
-"@target": "Tn14827604"
-}, 
-"edge964162": {
-"@length": 0.007194674621633229, 
-"@source": "Tn14827556", 
-"@target": "Tn14827601"
-}
-}, 
-"Tn14827559": {
-"edge964244": {
-"@length": 0.015609192261675932, 
-"@source": "Tn14827559", 
-"@target": "Tn14827646"
-}, 
-"edge964246": {
-"@length": 0.015422929366001698, 
-"@source": "Tn14827559", 
-"@target": "Tn14827577"
-}
-}, 
-"Tn14827561": {
-"edge964222": {
-"@length": 0.008511648841787081, 
-"@source": "Tn14827561", 
-"@target": "Tn14827564"
-}, 
-"edge964232": {
-"@length": 0.008300680528537349, 
-"@source": "Tn14827561", 
-"@target": "Tn14827629"
-}
-}, 
-"Tn14827562": {
-"edge964264": {
-"@length": 0.00018576257340357203, 
-"@source": "Tn14827562", 
-"@target": "Tn14827625"
-}, 
-"edge964270": {
-"@length": 0.00032982565570401057, 
-"@source": "Tn14827562", 
-"@target": "Tn14827573"
-}
-}, 
-"Tn14827563": {
-"edge964172": {
-"@length": 0.00045535880947138554, 
-"@source": "Tn14827563", 
-"@target": "Tn14827543"
-}, 
-"edge964174": {
-"@length": 0.0004553588094485673, 
-"@source": "Tn14827563", 
-"@target": "Tn14827589"
-}
-}, 
-"Tn14827564": {
-"edge964224": {
-"@length": 0.00010386047818692464, 
-"@source": "Tn14827564", 
-"@target": "Tn14827616"
-}, 
-"edge964226": {
-"@length": 6.488806902947809e-05, 
-"@source": "Tn14827564", 
-"@target": "Tn14827602"
-}
-}, 
-"Tn14827565": {
-"edge964296": {
-"@length": 0.0002945995409391807, 
-"@source": "Tn14827565", 
-"@target": "Tn14827591"
-}, 
-"edge964318": {
-"@length": 0.0006446810095243775, 
-"@source": "Tn14827565", 
-"@target": "Tn14827644"
-}
-}, 
-"Tn14827569": {
-"edge964190": {
-"@length": 0.00041671015885013236, 
-"@source": "Tn14827569", 
-"@target": "Tn14827642"
-}, 
-"edge964192": {
-"@length": 0.00021970405019473388, 
-"@source": "Tn14827569", 
-"@target": "Tn14827641"
-}
-}, 
-"Tn14827570": {
-"edge964304": {
-"@length": 0.00015337043753250296, 
-"@source": "Tn14827570", 
-"@target": "Tn14827635"
-}, 
-"edge964306": {
-"@length": 0.00015337043754869018, 
-"@source": "Tn14827570", 
-"@target": "Tn14827647"
-}
-}, 
-"Tn14827574": {
-"edge964344": {
-"@length": 0.019350255860121547, 
-"@source": "Tn14827574", 
-"@target": "Tn14827580"
-}, 
-"edge964374": {
-"@length": 0.0628337452703669, 
-"@source": "Tn14827574", 
-"@target": "Tn14827549"
-}
-}, 
-"Tn14827575": {
-"edge964294": {
-"@length": 0.009774351725983425, 
-"@source": "Tn14827575", 
-"@target": "Tn14827565"
-}, 
-"edge964332": {
-"@length": 0.010485590691435625, 
-"@source": "Tn14827575", 
-"@target": "Tn14827535"
-}
-}, 
-"Tn14827577": {
-"edge964248": {
-"@length": 0.00018626289352283943, 
-"@source": "Tn14827577", 
-"@target": "Tn14827599"
-}, 
-"edge964250": {
-"@length": 0.00018626289352283943, 
-"@source": "Tn14827577", 
-"@target": "Tn14827578"
-}
-}, 
-"Tn14827580": {
-"edge964346": {
-"@length": 0.005482427694866961, 
-"@source": "Tn14827580", 
-"@target": "Tn14827623"
-}, 
-"edge964364": {
-"@length": 0.018373096475940848, 
-"@source": "Tn14827580", 
-"@target": "Tn14827582"
-}
-}, 
-"Tn14827582": {
-"edge964366": {
-"@length": 0.02511039293598175, 
-"@source": "Tn14827582", 
-"@target": "Tn14827622"
-}, 
-"edge964368": {
-"@length": 0.024706606808005675, 
-"@source": "Tn14827582", 
-"@target": "Tn14827547"
-}
-}, 
-"Tn14827583": {
-"edge964314": {
-"@length": 0.0004768314852891954, 
-"@source": "Tn14827583", 
-"@target": "Tn14827617"
-}, 
-"edge964316": {
-"@length": 0.00047683148528227865, 
-"@source": "Tn14827583", 
-"@target": "Tn14827579"
-}
-}, 
-"Tn14827584": {
-"edge964278": {
-"@length": 0.00031023579728352134, 
-"@source": "Tn14827584", 
-"@target": "Tn14827538"
-}, 
-"edge964280": {
-"@length": 0.0003102357972561262, 
-"@source": "Tn14827584", 
-"@target": "Tn14827551"
-}
-}, 
-"Tn14827585": {
-"edge964148": {
-"@length": 0.03486239660245532, 
-"@source": "Tn14827585", 
-"@target": "Tn14827552"
-}, 
-"edge964342": {
-"@length": 0.01457373260726573, 
-"@source": "Tn14827585", 
-"@target": "Tn14827574"
-}
-}, 
-"Tn14827588": {
-"edge964214": {
-"@length": 0.00040984096557609696, 
-"@source": "Tn14827588", 
-"@target": "Tn14827576"
-}, 
-"edge964216": {
-"@length": 0.00040984096558720163, 
-"@source": "Tn14827588", 
-"@target": "Tn14827633"
-}
-}, 
-"Tn14827591": {
-"edge964298": {
-"@length": 0.0004966147725161275, 
-"@source": "Tn14827591", 
-"@target": "Tn14827540"
-}, 
-"edge964312": {
-"@length": 0.00033343877656344764, 
-"@source": "Tn14827591", 
-"@target": "Tn14827583"
-}
-}, 
-"Tn14827593": {
-"edge964338": {
-"@length": 0.00022452754659123866, 
-"@source": "Tn14827593", 
-"@target": "Tn14827621"
-}, 
-"edge964340": {
-"@length": 0.00022452754657594943, 
-"@source": "Tn14827593", 
-"@target": "Tn14827607"
-}
-}, 
-"Tn14827595": {
-"edge964350": {
-"@length": 0.005838462368032522, 
-"@source": "Tn14827595", 
-"@target": "Tn14827539"
-}, 
-"edge964360": {
-"@length": 0.020829171150033868, 
-"@source": "Tn14827595", 
-"@target": "Tn14827632"
-}
-}, 
-"Tn14827597": {
-"edge964356": {
-"@length": 0.00020780127275323758, 
-"@source": "Tn14827597", 
-"@target": "Tn14827586"
-}, 
-"edge964358": {
-"@length": 0.00020780127275323758, 
-"@source": "Tn14827597", 
-"@target": "Tn14827567"
-}
-}, 
-"Tn14827600": {
-"edge964186": {
-"@length": 0.002805029746033142, 
-"@source": "Tn14827600", 
-"@target": "Tn14827608"
-}, 
-"edge964208": {
-"@length": 0.006225809446228842, 
-"@source": "Tn14827600", 
-"@target": "Tn14827560"
-}
-}, 
-"Tn14827601": {
-"edge964164": {
-"@length": 0.00027636959265578864, 
-"@source": "Tn14827601", 
-"@target": "Tn14827614"
-}, 
-"edge964166": {
-"@length": 0.00027636959265578864, 
-"@source": "Tn14827601", 
-"@target": "Tn14827568"
-}
-}, 
-"Tn14827602": {
-"edge964228": {
-"@length": 3.897240918860963e-05, 
-"@source": "Tn14827602", 
-"@target": "Tn14827581"
-}, 
-"edge964230": {
-"@length": 3.89724091671289e-05, 
-"@source": "Tn14827602", 
-"@target": "Tn14827554"
-}
-}, 
-"Tn14827603": {
-"edge964284": {
-"@length": 0.0005989618244660168, 
-"@source": "Tn14827603", 
-"@target": "Tn14827553"
-}, 
-"edge964290": {
-"@length": 0.001767863465620655, 
-"@source": "Tn14827603", 
-"@target": "Tn14827587"
-}
-}, 
-"Tn14827605": {
-"edge964202": {
-"@length": 0.00022695181415475222, 
-"@source": "Tn14827605", 
-"@target": "Tn14827590"
-}, 
-"edge964204": {
-"@length": 0.00022695181415475222, 
-"@source": "Tn14827605", 
-"@target": "Tn14827628"
-}
-}, 
-"Tn14827606": {
-"edge964180": {
-"@length": 0.008219356545817305, 
-"@source": "Tn14827606", 
-"@target": "Tn14827537"
-}, 
-"edge964238": {
-"@length": 0.02100461002529076, 
-"@source": "Tn14827606", 
-"@target": "Tn14827648"
-}
-}, 
-"Tn14827608": {
-"edge964188": {
-"@length": 0.003004069540893854, 
-"@source": "Tn14827608", 
-"@target": "Tn14827569"
-}, 
-"edge964198": {
-"@length": 0.0025420378958716603, 
-"@source": "Tn14827608", 
-"@target": "Tn14827640"
-}
-}, 
-"Tn14827609": {
-"edge964242": {
-"@length": 0.01276687640079754, 
-"@source": "Tn14827609", 
-"@target": "Tn14827559"
-}, 
-"edge964252": {
-"@length": 0.010616068598186725, 
-"@source": "Tn14827609", 
-"@target": "Tn14827546"
-}
-}, 
-"Tn14827613": {
-"edge964258": {
-"@length": 0.0010677681620502345, 
-"@source": "Tn14827613", 
-"@target": "Tn14827566"
-}, 
-"edge964260": {
-"@length": 0.0010677681620502345, 
-"@source": "Tn14827613", 
-"@target": "Tn14827611"
-}
-}, 
-"Tn14827618": {
-"edge964170": {
-"@length": 0.00034595765408032444, 
-"@source": "Tn14827618", 
-"@target": "Tn14827563"
-}, 
-"edge964176": {
-"@length": 0.0008013164633454208, 
-"@source": "Tn14827618", 
-"@target": "Tn14827634"
-}
-}, 
-"Tn14827619": {
-"edge964152": {
-"@length": 0.004436712113997376, 
-"@source": "Tn14827619", 
-"@target": "Tn14827631"
-}, 
-"edge964282": {
-"@length": 0.03596785329300069, 
-"@source": "Tn14827619", 
-"@target": "Tn14827603"
-}
-}, 
-"Tn14827620": {
-"edge964328": {
-"@length": 0.0003004817844512571, 
-"@source": "Tn14827620", 
-"@target": "Tn14827596"
-}, 
-"edge964330": {
-"@length": 0.0003004817844066598, 
-"@source": "Tn14827620", 
-"@target": "Tn14827598"
-}
-}, 
-"Tn14827623": {
-"edge964348": {
-"@length": 0.017171890564665664, 
-"@source": "Tn14827623", 
-"@target": "Tn14827595"
-}, 
-"edge964362": {
-"@length": 0.038001061719464796, 
-"@source": "Tn14827623", 
-"@target": "Tn14827544"
-}
-}, 
-"Tn14827625": {
-"edge964266": {
-"@length": 0.0001440630823708939, 
-"@source": "Tn14827625", 
-"@target": "Tn14827545"
-}, 
-"edge964268": {
-"@length": 0.0001440630824010401, 
-"@source": "Tn14827625", 
-"@target": "Tn14827594"
-}
-}, 
-"Tn14827626": {
-"edge964274": {
-"@length": 0.0006780306905016782, 
-"@source": "Tn14827626", 
-"@target": "Tn14827550"
-}, 
-"edge964276": {
-"@length": 0.00036779489327104915, 
-"@source": "Tn14827626", 
-"@target": "Tn14827584"
-}
-}, 
-"Tn14827627": {
-"edge964212": {
-"@length": 0.0004906650594857723, 
-"@source": "Tn14827627", 
-"@target": "Tn14827588"
-}, 
-"edge964218": {
-"@length": 0.0009005060252254204, 
-"@source": "Tn14827627", 
-"@target": "Tn14827612"
-}
-}, 
-"Tn14827629": {
-"edge964234": {
-"@length": 0.000314828791567905, 
-"@source": "Tn14827629", 
-"@target": "Tn14827558"
-}, 
-"edge964236": {
-"@length": 0.000314828791567905, 
-"@source": "Tn14827629", 
-"@target": "Tn14827643"
-}
-}, 
-"Tn14827630": {
-"edge964302": {
-"@length": 6.707867095672915e-05, 
-"@source": "Tn14827630", 
-"@target": "Tn14827570"
-}, 
-"edge964308": {
-"@length": 0.0002204491084856045, 
-"@source": "Tn14827630", 
-"@target": "Tn14827610"
-}
-}, 
-"Tn14827631": {
-"edge964154": {
-"@length": 0.00602241673751942, 
-"@source": "Tn14827631", 
-"@target": "Tn14827555"
-}, 
-"edge964240": {
-"@length": 0.004922935982649954, 
-"@source": "Tn14827631", 
-"@target": "Tn14827609"
-}
-}, 
-"Tn14827637": {
-"edge964256": {
-"@length": 0.003953503196310797, 
-"@source": "Tn14827637", 
-"@target": "Tn14827613"
-}, 
-"edge964262": {
-"@length": 0.004691445703164832, 
-"@source": "Tn14827637", 
-"@target": "Tn14827562"
-}
-}, 
-"Tn14827640": {
-"edge964200": {
-"@length": 0.000651789990236352, 
-"@source": "Tn14827640", 
-"@target": "Tn14827605"
-}, 
-"edge964206": {
-"@length": 0.0008787418043358989, 
-"@source": "Tn14827640", 
-"@target": "Tn14827534"
-}
-}, 
-"Tn14827641": {
-"edge964194": {
-"@length": 0.00019700610859878156, 
-"@source": "Tn14827641", 
-"@target": "Tn14827615"
-}, 
-"edge964196": {
-"@length": 0.00019700610856501505, 
-"@source": "Tn14827641", 
-"@target": "Tn14827624"
-}
-}, 
-"Tn14827644": {
-"edge964320": {
-"@length": 0.00024484923424380675, 
-"@source": "Tn14827644", 
-"@target": "Tn14827541"
-}, 
-"edge964326": {
-"@length": 0.00015970700899711705, 
-"@source": "Tn14827644", 
-"@target": "Tn14827620"
-}
-}
-}, 
-"nodeById": {
-"Tn14827534": {
-"@label": "P tri 7", 
-"@otu": "Tl2553707"
-}, 
-"Tn14827535": {}, 
-"Tn14827536": {
-"@label": "P ala 4", 
-"@otu": "Tl2553695"
-}, 
-"Tn14827537": {}, 
-"Tn14827538": {
-"@label": "P sci 2", 
-"@otu": "Tl2553736"
-}, 
-"Tn14827539": {}, 
-"Tn14827540": {}, 
-"Tn14827541": {}, 
-"Tn14827542": {}, 
-"Tn14827543": {
-"@label": "B mil 1", 
-"@otu": "Tl2553722"
-}, 
-"Tn14827544": {
-"@label": "P and", 
-"@otu": "Tl2553698"
-}, 
-"Tn14827545": {
-"@label": "P mar 1", 
-"@otu": "Tl2553693"
-}, 
-"Tn14827546": {}, 
-"Tn14827547": {}, 
-"Tn14827548": {}, 
-"Tn14827549": {
-"@label": "Pindicus og ", 
-"@otu": "Tl2553735"
-}, 
-"Tn14827550": {
-"@label": "P sci 1", 
-"@otu": "Tl2553714"
-}, 
-"Tn14827551": {
-"@label": "P sci 5", 
-"@otu": "Tl2553726"
-}, 
-"Tn14827552": {}, 
-"Tn14827553": {}, 
-"Tn14827554": {
-"@label": "P lon 3", 
-"@otu": "Tl2553704"
-}, 
-"Tn14827555": {}, 
-"Tn14827556": {}, 
-"Tn14827557": {
-"@label": "C luc", 
-"@otu": "Tl2553739"
-}, 
-"Tn14827558": {
-"@label": "P ster 1", 
-"@otu": "Tl2553689"
-}, 
-"Tn14827559": {}, 
-"Tn14827560": {
-"@label": "P rus", 
-"@otu": "Tl2553715"
-}, 
-"Tn14827561": {}, 
-"Tn14827562": {}, 
-"Tn14827563": {}, 
-"Tn14827564": {}, 
-"Tn14827565": {}, 
-"Tn14827566": {
-"@label": "P car 1", 
-"@otu": "Tl2553703"
-}, 
-"Tn14827567": {
-"@label": "L arg 2", 
-"@otu": "Tl2553682"
-}, 
-"Tn14827568": {
-"@label": "B lox 2", 
-"@otu": "Tl2553718"
-}, 
-"Tn14827569": {}, 
-"Tn14827570": {}, 
-"Tn14827571": {
-"@label": "P ros 3", 
-"@otu": "Tl2553685"
-}, 
-"Tn14827572": {
-"@label": "P gra 1", 
-"@otu": "Tl2553723"
-}, 
-"Tn14827573": {
-"@label": "P mar 3", 
-"@otu": "Tl2553678"
-}, 
-"Tn14827574": {}, 
-"Tn14827575": {}, 
-"Tn14827576": {
-"@label": "P rub 4", 
-"@otu": "Tl2553694"
-}, 
-"Tn14827577": {}, 
-"Tn14827578": {
-"@label": "P oph 3", 
-"@otu": "Tl2553677"
-}, 
-"Tn14827579": {
-"@label": "P ala 5", 
-"@otu": "Tl2553706"
-}, 
-"Tn14827580": {}, 
-"Tn14827581": {
-"@label": "P lon 2", 
-"@otu": "Tl2553675"
-}, 
-"Tn14827582": {}, 
-"Tn14827583": {}, 
-"Tn14827584": {}, 
-"Tn14827585": {
+"Tr99854_ROOT": {
 "@root": true
-}, 
-"Tn14827586": {
-"@label": "L arg 1", 
-"@otu": "Tl2553717"
-}, 
-"Tn14827587": {
-"@label": "P step 4", 
-"@otu": "Tl2553738"
-}, 
-"Tn14827588": {}, 
-"Tn14827589": {
-"@label": "B mil 3", 
-"@otu": "Tl2553669"
-}, 
-"Tn14827590": {
-"@label": "P tri 4", 
-"@otu": "Tl2553683"
-}, 
-"Tn14827591": {}, 
-"Tn14827592": {
-"@label": "P par 1", 
-"@otu": "Tl2553674"
-}, 
-"Tn14827593": {}, 
-"Tn14827594": {
-"@label": "P mar 2", 
-"@otu": "Tl2553711"
-}, 
-"Tn14827595": {}, 
-"Tn14827596": {
-"@label": "P par 2", 
-"@otu": "Tl2553701"
-}, 
-"Tn14827597": {}, 
-"Tn14827598": {
-"@label": "P par 3", 
-"@otu": "Tl2553672"
-}, 
-"Tn14827599": {
-"@label": "P oph 1", 
-"@otu": "Tl2553668"
-}, 
-"Tn14827600": {}, 
-"Tn14827601": {}, 
-"Tn14827602": {}, 
-"Tn14827603": {}, 
-"Tn14827604": {
-"@label": "B gym", 
-"@otu": "Tl2553720"
-}, 
-"Tn14827605": {}, 
-"Tn14827606": {}, 
-"Tn14827607": {
-"@label": "P ros 5", 
-"@otu": "Tl2553699"
-}, 
-"Tn14827608": {}, 
-"Tn14827609": {}, 
-"Tn14827610": {
-"@label": "P par 4", 
-"@otu": "Tl2553684"
-}, 
-"Tn14827611": {
-"@label": "P car 2", 
-"@otu": "Tl2553700"
-}, 
-"Tn14827612": {
-"@label": "P rub 8", 
-"@otu": "Tl2553670"
-}, 
-"Tn14827613": {}, 
-"Tn14827614": {
-"@label": "B lox 1", 
-"@otu": "Tl2553721"
-}, 
-"Tn14827615": {
-"@label": "P evo 2", 
-"@otu": "Tl2553716"
-}, 
-"Tn14827616": {
-"@label": "P lon 10", 
-"@otu": "Tl2553692"
-}, 
-"Tn14827617": {
-"@label": "P ala 2", 
-"@otu": "Tl2553686"
-}, 
-"Tn14827618": {}, 
-"Tn14827619": {}, 
-"Tn14827620": {}, 
-"Tn14827621": {
-"@label": "P ros 4", 
-"@otu": "Tl2553690"
-}, 
-"Tn14827622": {
-"@label": "P cat Gen", 
-"@otu": "Tl2553719"
-}, 
-"Tn14827623": {}, 
-"Tn14827624": {
-"@label": "P evo 3", 
-"@otu": "Tl2553712"
-}, 
-"Tn14827625": {}, 
-"Tn14827626": {}, 
-"Tn14827627": {}, 
-"Tn14827628": {
-"@label": "P tri 6", 
-"@otu": "Tl2553673"
-}, 
-"Tn14827629": {}, 
-"Tn14827630": {}, 
-"Tn14827631": {}, 
-"Tn14827632": {
-"@label": "T lyr Gen", 
-"@otu": "Tl2553731"
-}, 
-"Tn14827633": {
-"@label": "P rub 6", 
-"@otu": "Tl2553680"
-}, 
-"Tn14827634": {
-"@label": "B mil 2", 
-"@otu": "Tl2553709"
-}, 
-"Tn14827635": {
-"@label": "P ala 1", 
-"@otu": "Tl2553687"
-}, 
-"Tn14827636": {
-"@label": "P step 1", 
-"@otu": "Tl2553688"
-}, 
-"Tn14827637": {}, 
-"Tn14827638": {
-"@label": "P ala 3", 
-"@otu": "Tl2553705"
-}, 
-"Tn14827639": {
-"@label": "P gra 2", 
-"@otu": "Tl2553724"
-}, 
-"Tn14827640": {}, 
-"Tn14827641": {}, 
-"Tn14827642": {
-"@label": "P evo 1", 
-"@otu": "Tl2553730"
-}, 
-"Tn14827643": {
-"@label": "P ster 3", 
-"@otu": "Tl2553708"
-}, 
-"Tn14827644": {}, 
-"Tn14827645": {
-"@label": "P step 3", 
-"@otu": "Tl2553737"
-}, 
-"Tn14827646": {
-"@label": "P alb", 
-"@otu": "Tl2553676"
-}, 
-"Tn14827647": {
-"@label": "P par 6", 
-"@otu": "Tl2553681"
-}, 
-"Tn14827648": {
-"@label": "P pun", 
-"@otu": "Tl2553713"
 }
 }
 }
