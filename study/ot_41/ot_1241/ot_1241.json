@@ -59,22 +59,115 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2018-04-12T14:14:28.656Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:curatorName": "Luna Luisa Sanchez Reyes", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}, 
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": "$1"
+}, 
+"old": {
+"$": "^(\\S*\\s+\\S*).*"
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2018-04-12T14:14:28.656Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Luna Luisa Sanchez Reyes"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S20868"
 }, 
+"^ot:focalCladeOTTTaxonName": "", 
 "^ot:otusElementOrder": [
 "Tls57011"
 ], 
 "^ot:studyId": "ot_1241", 
+"^ot:studyPublication": {
+"@href": ""
+}, 
 "^ot:studyPublicationReference": "Chen C., Rothfels C.J., Mustapeng A.M., Gubilil M., Karger D.N., Kessler M., & Huang Y. 2017. End of an enigma: Aenigmopteris belongs in Tectaria (Tectariaceae: Polypodiopsida). Journal of Plant Research, .", 
 "^ot:studyYear": 2017, 
+"^ot:tag": [], 
 "^ot:taxonLinkPrefixes": {
 "@ubio": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:", 
 "@uniprot": "http://purl.uniprot.org/taxonomy/"
@@ -97,8 +190,9 @@
 "^skos:historyNote": "Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlOTUWriter@5492400 $Rev$", 
 "otuById": {
 "Tl2697379": {
-"^ot:altLabel": "Tectaria coadunata", 
 "^ot:originalLabel": "Tectaria coadunata Dong_3583", 
+"^ot:ottId": 3866398, 
+"^ot:ottTaxonName": "Tectaria coadunata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 624314, 
 "@tb:identifier.taxonVariant": 835975, 
@@ -106,8 +200,9 @@
 }
 }, 
 "Tl2697380": {
-"^ot:altLabel": "Tectaria subtriphylla", 
 "^ot:originalLabel": "Tectaria subtriphylla Dong_3841", 
+"^ot:ottId": 1091933, 
+"^ot:ottTaxonName": "Tectaria subtriphylla", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 439421, 
 "@tb:identifier.taxonVariant": 579264, 
@@ -116,8 +211,9 @@
 }
 }, 
 "Tl2697381": {
-"^ot:altLabel": "Tectaria griffithii", 
 "^ot:originalLabel": "Tectaria griffithii Dong_3846", 
+"^ot:ottId": 3866406, 
+"^ot:ottTaxonName": "Tectaria griffithii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 624319, 
 "@tb:identifier.taxonVariant": 836001, 
@@ -125,8 +221,9 @@
 }
 }, 
 "Tl2697382": {
-"^ot:altLabel": "Tectaria barberi", 
 "^ot:originalLabel": "Tectaria barberi Dong_3471", 
+"^ot:ottId": 5690266, 
+"^ot:ottTaxonName": "Tectaria barberi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 624332, 
 "@tb:identifier.taxonVariant": 836057, 
@@ -134,11 +231,14 @@
 }
 }, 
 "Tl2697383": {
-"^ot:originalLabel": "Tectaria subvariolosa Dong_3688"
+"^ot:originalLabel": "Tectaria subvariolosa Dong_3688", 
+"^ot:ottId": 5690244, 
+"^ot:ottTaxonName": "Tectaria subvariolosa"
 }, 
 "Tl2697384": {
-"^ot:altLabel": "Tectaria polymorpha", 
 "^ot:originalLabel": "Tectaria polymorpha Dong_3554", 
+"^ot:ottId": 3866402, 
+"^ot:ottTaxonName": "Tectaria polymorpha", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 624336, 
 "@tb:identifier.taxonVariant": 836066, 
@@ -146,14 +246,17 @@
 }
 }, 
 "Tl2697385": {
-"^ot:originalLabel": "Tectaria nayarii Wade"
+"^ot:originalLabel": "Tectaria nayarii Wade", 
+"^ot:ottId": 1005823, 
+"^ot:ottTaxonName": "Heterogonium pinnatum"
 }, 
 "Tl2697386": {
 "^ot:originalLabel": "Tectaria subvariolosa Chao_1979"
 }, 
 "Tl2697387": {
-"^ot:altLabel": "Arthropteris palisotii", 
 "^ot:originalLabel": "Arthropteris palisotii Dong_3607", 
+"^ot:ottId": 427585, 
+"^ot:ottTaxonName": "Arthropteris palisotii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 605714, 
 "@tb:identifier.taxonVariant": 808727, 
@@ -161,8 +264,9 @@
 }
 }, 
 "Tl2697388": {
-"^ot:altLabel": "Tectaria coadunata", 
 "^ot:originalLabel": "Tectaria coadunata Dong_1836", 
+"^ot:ottId": 3866398, 
+"^ot:ottTaxonName": "Tectaria coadunata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 624314, 
 "@tb:identifier.taxonVariant": 835975, 
@@ -170,8 +274,9 @@
 }
 }, 
 "Tl2697389": {
-"^ot:altLabel": "Tectaria decurrens", 
 "^ot:originalLabel": "Tectaria decurrens Dong_3559", 
+"^ot:ottId": 293145, 
+"^ot:ottTaxonName": "Tectaria decurrens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 435072, 
 "@tb:identifier.taxonVariant": 572949, 
@@ -180,14 +285,19 @@
 }
 }, 
 "Tl2697390": {
-"^ot:originalLabel": "Tectaria gigantea Dong_3380"
+"^ot:originalLabel": "Tectaria gigantea Dong_3380", 
+"^ot:ottId": 5690259, 
+"^ot:ottTaxonName": "Tectaria gigantea"
 }, 
 "Tl2697391": {
-"^ot:originalLabel": "Tectaria angulata Dong_3451"
+"^ot:originalLabel": "Tectaria angulata Dong_3451", 
+"^ot:ottId": 5690242, 
+"^ot:ottTaxonName": "Tectaria angulata"
 }, 
 "Tl2697392": {
-"^ot:altLabel": "Tectaria impressa", 
 "^ot:originalLabel": "Tectaria impressa Dong_3564", 
+"^ot:ottId": 5478575, 
+"^ot:ottTaxonName": "Tectaria impressa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 624329, 
 "@tb:identifier.taxonVariant": 836043, 
@@ -195,8 +305,9 @@
 }
 }, 
 "Tl2697393": {
-"^ot:altLabel": "Pteridrys microthecia", 
 "^ot:originalLabel": "Pteridrys microthecia Dong_3465", 
+"^ot:ottId": 5478557, 
+"^ot:ottTaxonName": "Pteridrys microthecia", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 624309, 
 "@tb:identifier.taxonVariant": 835952, 
@@ -204,8 +315,9 @@
 }
 }, 
 "Tl2697394": {
-"^ot:altLabel": "Tectaria tricuspis", 
 "^ot:originalLabel": "Tectaria tricuspis Chao_1978", 
+"^ot:ottId": 5690245, 
+"^ot:ottTaxonName": "Tectaria tricuspis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 624321, 
 "@tb:identifier.taxonVariant": 836013, 
@@ -213,8 +325,9 @@
 }
 }, 
 "Tl2697395": {
-"^ot:altLabel": "Tectaria simonsii", 
 "^ot:originalLabel": "Tectaria simonsii Dong_3639", 
+"^ot:ottId": 1011731, 
+"^ot:ottTaxonName": "Tectaria simonsii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 605744, 
 "@tb:identifier.taxonVariant": 808823, 
@@ -222,8 +335,9 @@
 }
 }, 
 "Tl2697396": {
-"^ot:altLabel": "Tectaria semipinnata", 
 "^ot:originalLabel": "Tectaria semipinnata Chao_1977", 
+"^ot:ottId": 5690253, 
+"^ot:ottTaxonName": "Tectaria semipinnata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 624324, 
 "@tb:identifier.taxonVariant": 836024, 
@@ -231,8 +345,9 @@
 }
 }, 
 "Tl2697397": {
-"^ot:altLabel": "Tectaria zeylanica", 
 "^ot:originalLabel": "Tectaria zeylanica Dong_3634", 
+"^ot:ottId": 975107, 
+"^ot:ottTaxonName": "Tectaria zeylanica", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 95988, 
 "@tb:identifier.taxonVariant": 175240, 
@@ -241,11 +356,14 @@
 }
 }, 
 "Tl2697398": {
-"^ot:originalLabel": "Tectaria macleanii Chao"
+"^ot:originalLabel": "Tectaria macleanii Chao", 
+"^ot:ottId": 5690262, 
+"^ot:ottTaxonName": "Tectaria macleanii"
 }, 
 "Tl2697399": {
-"^ot:altLabel": "Tectaria repanda", 
 "^ot:originalLabel": "Tectaria repanda SITW_0085", 
+"^ot:ottId": 5690248, 
+"^ot:ottTaxonName": "Tectaria repanda", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 624312, 
 "@tb:identifier.taxonVariant": 835970, 
@@ -253,8 +371,9 @@
 }
 }, 
 "Tl2697400": {
-"^ot:altLabel": "Tectaria morsei", 
 "^ot:originalLabel": "Tectaria morsei Dong_GZE219", 
+"^ot:ottId": 5690272, 
+"^ot:ottTaxonName": "Tectaria morsei", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 624333, 
 "@tb:identifier.taxonVariant": 836063, 
@@ -262,8 +381,9 @@
 }
 }, 
 "Tl2697401": {
-"^ot:altLabel": "Tectaria aurita", 
 "^ot:originalLabel": "Tectaria aurita Dong_3386", 
+"^ot:ottId": 5690271, 
+"^ot:ottTaxonName": "Tectaria aurita", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 624310, 
 "@tb:identifier.taxonVariant": 835962, 
@@ -274,8 +394,9 @@
 "^ot:originalLabel": "Tectaria austrosinensis Dong_3617"
 }, 
 "Tl2697403": {
-"^ot:altLabel": "Tectaria phaeocaulis", 
 "^ot:originalLabel": "Tectaria phaeocaulis Dong_1579", 
+"^ot:ottId": 171908, 
+"^ot:ottTaxonName": "Tectaria phaeocaulis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 299539, 
 "@tb:identifier.taxonVariant": 349058, 
@@ -284,11 +405,14 @@
 }
 }, 
 "Tl2697404": {
-"^ot:originalLabel": "Tectaria harlandii Ding_002"
+"^ot:originalLabel": "Tectaria harlandii Ding_002", 
+"^ot:ottId": 5478570, 
+"^ot:ottTaxonName": "Tectaria harlandii"
 }, 
 "Tl2697405": {
-"^ot:altLabel": "Tectaria heracleifolia", 
 "^ot:originalLabel": "Tectaria heracleifolia Sundue_2094", 
+"^ot:ottId": 3866407, 
+"^ot:ottTaxonName": "Tectaria heracleifolia", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 624315, 
 "@tb:identifier.taxonVariant": 835983, 
@@ -299,11 +423,14 @@
 "^ot:originalLabel": "Tectaria borneensis Dong_3438"
 }, 
 "Tl2697407": {
-"^ot:originalLabel": "Tectaria sagenioides Dong_3603"
+"^ot:originalLabel": "Tectaria sagenioides Dong_3603", 
+"^ot:ottId": 5149019, 
+"^ot:ottTaxonName": "Tectaria sagenioides"
 }, 
 "Tl2697408": {
-"^ot:altLabel": "Tectaria fuscipes", 
 "^ot:originalLabel": "Tectaria fuscipes Chao_1553", 
+"^ot:ottId": 817465, 
+"^ot:ottTaxonName": "Tectaria fuscipes", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 435068, 
 "@tb:identifier.taxonVariant": 748366, 
@@ -313,11 +440,14 @@
 "^skos:prefLabel": "Ctenitopsis fuscipes"
 }, 
 "Tl2697409": {
-"^ot:originalLabel": "Aenigmopteris elegans Wade_4705"
+"^ot:originalLabel": "Aenigmopteris elegans Wade_4705", 
+"^ot:ottId": 6008190, 
+"^ot:ottTaxonName": "Aenigmopteris elegans"
 }, 
 "Tl2697410": {
-"^ot:altLabel": "Tectaria devexa", 
 "^ot:originalLabel": "Tectaria devexa Dong_3570", 
+"^ot:ottId": 342379, 
+"^ot:ottTaxonName": "Tectaria devexa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 81725, 
 "@tb:identifier.taxonVariant": 159725, 
@@ -326,8 +456,9 @@
 }
 }, 
 "Tl2697411": {
-"^ot:altLabel": "Tectaria grossedentata", 
 "^ot:originalLabel": "Tectaria grossedentata Dong_3591", 
+"^ot:ottId": 5690255, 
+"^ot:ottTaxonName": "Tectaria grossedentata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 624327, 
 "@tb:identifier.taxonVariant": 836041, 
@@ -335,8 +466,9 @@
 }
 }, 
 "Tl2697412": {
-"^ot:altLabel": "Tectaria herpetocaulos", 
 "^ot:originalLabel": "Tectaria herpetocaulos Dong_3555", 
+"^ot:ottId": 5690273, 
+"^ot:ottTaxonName": "Tectaria herpetocaulos", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 624311, 
 "@tb:identifier.taxonVariant": 835969, 
@@ -344,8 +476,9 @@
 }
 }, 
 "Tl2697413": {
-"^ot:altLabel": "Tectaria melanocaula", 
 "^ot:originalLabel": "Tectaria melanocaula Wade_1865", 
+"^ot:ottId": 5690249, 
+"^ot:ottTaxonName": "Tectaria melanocaula", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 624316, 
 "@tb:identifier.taxonVariant": 835984, 
@@ -353,11 +486,14 @@
 }
 }, 
 "Tl2697414": {
-"^ot:originalLabel": "Tectaria sagenioides Dong_1599"
+"^ot:originalLabel": "Tectaria sagenioides Dong_1599", 
+"^ot:ottId": 5149019, 
+"^ot:ottTaxonName": "Tectaria sagenioides"
 }, 
 "Tl2697415": {
-"^ot:altLabel": "Tectaria luchunensis", 
 "^ot:originalLabel": "Tectaria luchunensis Dong_3582", 
+"^ot:ottId": 5690265, 
+"^ot:ottTaxonName": "Tectaria luchunensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 624326, 
 "@tb:identifier.taxonVariant": 836040, 
@@ -365,8 +501,9 @@
 }
 }, 
 "Tl2697416": {
-"^ot:altLabel": "Tectaria quinquefida", 
 "^ot:originalLabel": "Tectaria quinquefida Dong_1981", 
+"^ot:ottId": 5690247, 
+"^ot:ottTaxonName": "Tectaria quinquefida", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 624330, 
 "@tb:identifier.taxonVariant": 836047, 
@@ -377,8 +514,9 @@
 "^ot:originalLabel": "Tectaria austrosinensis Dong_3602"
 }, 
 "Tl2697418": {
-"^ot:altLabel": "Tectaria hekouensis", 
 "^ot:originalLabel": "Tectaria hekouensis Dong_3608", 
+"^ot:ottId": 5690238, 
+"^ot:ottTaxonName": "Tectaria hekouensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 624328, 
 "@tb:identifier.taxonVariant": 836042, 
@@ -386,8 +524,9 @@
 }
 }, 
 "Tl2697419": {
-"^ot:altLabel": "Tectaria hekouensis", 
 "^ot:originalLabel": "Tectaria hekouensis Dong_3596", 
+"^ot:ottId": 5690238, 
+"^ot:ottTaxonName": "Tectaria hekouensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 624328, 
 "@tb:identifier.taxonVariant": 836042, 
@@ -395,8 +534,9 @@
 }
 }, 
 "Tl2697420": {
-"^ot:altLabel": "Tectaria morsei", 
 "^ot:originalLabel": "Tectaria morsei Dong_2298", 
+"^ot:ottId": 5690272, 
+"^ot:ottTaxonName": "Tectaria morsei", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 624333, 
 "@tb:identifier.taxonVariant": 836063, 
@@ -404,14 +544,19 @@
 }
 }, 
 "Tl2697421": {
-"^ot:originalLabel": "Tectaria antioquoiana Schuettpelz_200"
+"^ot:originalLabel": "Tectaria antioquoiana Schuettpelz_200", 
+"^ot:ottId": 329521, 
+"^ot:ottTaxonName": "Tectaria antioquoiana"
 }, 
 "Tl2697422": {
-"^ot:originalLabel": "Tectaria psomiocarpa Wade"
+"^ot:originalLabel": "Tectaria psomiocarpa Wade", 
+"^ot:ottId": 5690252, 
+"^ot:ottTaxonName": "Tectaria psomiocarpa"
 }, 
 "Tl2697423": {
-"^ot:altLabel": "Tectaria phaeocaulis", 
 "^ot:originalLabel": "Tectaria phaeocaulis Dong_3656", 
+"^ot:ottId": 171908, 
+"^ot:ottTaxonName": "Tectaria phaeocaulis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 299539, 
 "@tb:identifier.taxonVariant": 349058, 
@@ -420,8 +565,9 @@
 }
 }, 
 "Tl2697424": {
-"^ot:altLabel": "Tectaria subtriphylla", 
 "^ot:originalLabel": "Tectaria subtriphylla Ding_001", 
+"^ot:ottId": 1091933, 
+"^ot:ottTaxonName": "Tectaria subtriphylla", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 439421, 
 "@tb:identifier.taxonVariant": 579264, 
@@ -433,8 +579,9 @@
 "^ot:originalLabel": "Triplophyllum crassifolium Tuomisto_15691"
 }, 
 "Tl2697426": {
-"^ot:altLabel": "Tectaria fuscipes", 
 "^ot:originalLabel": "Tectaria fuscipes Dong_3557", 
+"^ot:ottId": 817465, 
+"^ot:ottTaxonName": "Tectaria fuscipes", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 435068, 
 "@tb:identifier.taxonVariant": 748366, 
@@ -444,8 +591,9 @@
 "^skos:prefLabel": "Ctenitopsis fuscipes"
 }, 
 "Tl2697427": {
-"^ot:altLabel": "Tectaria labrusca", 
 "^ot:originalLabel": "Tectaria labrusca Chao_1981", 
+"^ot:ottId": 5690258, 
+"^ot:ottTaxonName": "Tectaria labrusca", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 624317, 
 "@tb:identifier.taxonVariant": 835989, 
@@ -456,8 +604,9 @@
 "^ot:originalLabel": "Aenigmopteris sp. DNK575"
 }, 
 "Tl2697429": {
-"^ot:altLabel": "Tectaria devexa", 
 "^ot:originalLabel": "Tectaria devexa Dong_3606", 
+"^ot:ottId": 342379, 
+"^ot:ottTaxonName": "Tectaria devexa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 81725, 
 "@tb:identifier.taxonVariant": 159725, 
@@ -466,8 +615,9 @@
 }
 }, 
 "Tl2697430": {
-"^ot:altLabel": "Tectaria luchunensis", 
 "^ot:originalLabel": "Tectaria luchunensis Dong_3579", 
+"^ot:ottId": 5690265, 
+"^ot:ottTaxonName": "Tectaria luchunensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 624326, 
 "@tb:identifier.taxonVariant": 836040, 
@@ -475,8 +625,9 @@
 }
 }, 
 "Tl2697431": {
-"^ot:altLabel": "Tectaria griffithii", 
 "^ot:originalLabel": "Tectaria griffithii Dong_3632", 
+"^ot:ottId": 3866406, 
+"^ot:ottTaxonName": "Tectaria griffithii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 624319, 
 "@tb:identifier.taxonVariant": 836001, 
@@ -484,8 +635,9 @@
 }
 }, 
 "Tl2697432": {
-"^ot:altLabel": "Triplophyllum funestum", 
 "^ot:originalLabel": "Triplophyllum funestum Christenhusz_4107", 
+"^ot:ottId": 222763, 
+"^ot:ottTaxonName": "Triplophyllum funestum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 388055, 
 "@tb:identifier.taxonVariant": 403707, 
@@ -494,8 +646,9 @@
 }
 }, 
 "Tl2697433": {
-"^ot:altLabel": "Tectaria impressa", 
 "^ot:originalLabel": "Tectaria impressa Dong_3615", 
+"^ot:ottId": 5478575, 
+"^ot:ottTaxonName": "Tectaria impressa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 624329, 
 "@tb:identifier.taxonVariant": 836043, 
@@ -503,11 +656,13 @@
 }
 }, 
 "Tl2697434": {
+"^ot:altLabel": "Tectaria subglabra", 
 "^ot:originalLabel": "Tectaria subglabra Dong_3450"
 }, 
 "Tl2697435": {
-"^ot:altLabel": "Tectaria vasta", 
 "^ot:originalLabel": "Tectaria vasta Dong_3567", 
+"^ot:ottId": 5324276, 
+"^ot:ottTaxonName": "Tectaria vasta", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 619761, 
 "@tb:identifier.taxonVariant": 829899, 
@@ -515,8 +670,9 @@
 }
 }, 
 "Tl2697436": {
-"^ot:altLabel": "Tectaria cicutaria", 
 "^ot:originalLabel": "Tectaria cicutaria Sundue_2095", 
+"^ot:ottId": 3866405, 
+"^ot:ottTaxonName": "Tectaria cicutaria", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 619766, 
 "@tb:identifier.taxonVariant": 829935, 
@@ -524,8 +680,9 @@
 }
 }, 
 "Tl2697437": {
-"^ot:altLabel": "Tectaria simonsii", 
 "^ot:originalLabel": "Tectaria simonsii Dong_3645", 
+"^ot:ottId": 1011731, 
+"^ot:ottTaxonName": "Tectaria simonsii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 605744, 
 "@tb:identifier.taxonVariant": 808823, 
@@ -533,8 +690,9 @@
 }
 }, 
 "Tl2697438": {
-"^ot:altLabel": "Tectaria polymorpha", 
 "^ot:originalLabel": "Tectaria polymorpha Dong_3590", 
+"^ot:ottId": 3866402, 
+"^ot:ottTaxonName": "Tectaria polymorpha", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 624336, 
 "@tb:identifier.taxonVariant": 836066, 
@@ -542,8 +700,9 @@
 }
 }, 
 "Tl2697439": {
-"^ot:altLabel": "Tectaria multicaudata", 
 "^ot:originalLabel": "Tectaria multicaudata Wade_1832", 
+"^ot:ottId": 5690260, 
+"^ot:ottTaxonName": "Tectaria multicaudata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 624331, 
 "@tb:identifier.taxonVariant": 836053, 
@@ -551,14 +710,19 @@
 }
 }, 
 "Tl2697440": {
-"^ot:originalLabel": "Tectaria wightii Fraser_Jenkins"
+"^ot:originalLabel": "Tectaria wightii Fraser_Jenkins", 
+"^ot:ottId": 5690263, 
+"^ot:ottTaxonName": "Tectaria wightii"
 }, 
 "Tl2697441": {
-"^ot:originalLabel": "Pteridrys syrmatica Dong_3439"
+"^ot:originalLabel": "Pteridrys syrmatica Dong_3439", 
+"^ot:ottId": 5478556, 
+"^ot:ottTaxonName": "Pteridrys syrmatica"
 }, 
 "Tl2697442": {
-"^ot:altLabel": "Tectaria zeylanica", 
 "^ot:originalLabel": "Tectaria zeylanica Dong_3642", 
+"^ot:ottId": 975107, 
+"^ot:ottTaxonName": "Tectaria zeylanica", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 95988, 
 "@tb:identifier.taxonVariant": 175240, 
@@ -567,8 +731,9 @@
 }
 }, 
 "Tl2697443": {
-"^ot:altLabel": "Tectaria decurrens", 
 "^ot:originalLabel": "Tectaria decurrens Dong_3594", 
+"^ot:ottId": 293145, 
+"^ot:ottTaxonName": "Tectaria decurrens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 435072, 
 "@tb:identifier.taxonVariant": 572949, 
@@ -577,11 +742,14 @@
 }
 }, 
 "Tl2697444": {
-"^ot:originalLabel": "Tectaria harlandii Chen_et_al_4846"
+"^ot:originalLabel": "Tectaria harlandii Chen_et_al_4846", 
+"^ot:ottId": 5478570, 
+"^ot:ottTaxonName": "Tectaria harlandii"
 }, 
 "Tl2697445": {
-"^ot:altLabel": "Tectaria fauriei", 
 "^ot:originalLabel": "Tectaria fauriei Dong_3572", 
+"^ot:ottId": 1011736, 
+"^ot:ottTaxonName": "Tectaria fauriei", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 605778, 
 "@tb:identifier.taxonVariant": 808937, 
@@ -589,8 +757,9 @@
 }
 }, 
 "Tl2697446": {
-"^ot:altLabel": "Pteridrys australis", 
 "^ot:originalLabel": "Pteridrys australis Dong_3560", 
+"^ot:ottId": 5149013, 
+"^ot:ottTaxonName": "Pteridrys australis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 624335, 
 "@tb:identifier.taxonVariant": 836065, 
@@ -598,8 +767,9 @@
 }
 }, 
 "Tl2697447": {
-"^ot:altLabel": "Tectaria fauriei", 
 "^ot:originalLabel": "Tectaria fauriei Dong_3553", 
+"^ot:ottId": 1011736, 
+"^ot:ottTaxonName": "Tectaria fauriei", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 605778, 
 "@tb:identifier.taxonVariant": 808937, 
@@ -607,8 +777,9 @@
 }
 }, 
 "Tl2697448": {
-"^ot:altLabel": "Tectaria kusukusensis", 
 "^ot:originalLabel": "Tectaria kusukusensis Dong_3834", 
+"^ot:ottId": 18533, 
+"^ot:ottTaxonName": "Tectaria kusukusensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 439274, 
 "@tb:identifier.taxonVariant": 579080, 
@@ -634,7 +805,18 @@
 "Tr103639": {
 "@label": "bestREP10", 
 "@xsi:type": "nex:FloatTree", 
-"^ot:rootNodeId": "Tn16171658", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:curatedType": "Maximum likelihood ", 
+"^ot:inGroupClade": "Tn16171779", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
+"^ot:rootNodeId": "Tr103639_ROOT", 
+"^ot:specifiedRoot": "Tr103639_ROOT", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 71, 
 "^tb:quality.tree": "Unrated", 
@@ -713,11 +895,6 @@
 }
 }, 
 "Tn16171658": {
-"edge668625": {
-"@length": 0.00534719, 
-"@source": "Tn16171658", 
-"@target": "Tn16171767"
-}, 
 "edge668641": {
 "@length": 0.00534719, 
 "@source": "Tn16171658", 
@@ -1465,6 +1642,17 @@
 "@source": "Tn16171784", 
 "@target": "Tn16171721"
 }
+}, 
+"Tr103639_ROOT": {
+"Tr103639_ROOT_EDGE": {
+"@source": "Tr103639_ROOT", 
+"@target": "Tn16171658"
+}, 
+"edge668625": {
+"@length": 0.00534719, 
+"@source": "Tr103639_ROOT", 
+"@target": "Tn16171767"
+}
 }
 }, 
 "nodeById": {
@@ -1472,17 +1660,17 @@
 "Tn16171651": {}, 
 "Tn16171652": {}, 
 "Tn16171653": {
-"@otu": "Tl2697408"
+"@otu": "Tl2697408", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn16171654": {}, 
 "Tn16171655": {}, 
 "Tn16171656": {
-"@otu": "Tl2697444"
+"@otu": "Tl2697444", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn16171657": {}, 
-"Tn16171658": {
-"@root": true
-}, 
+"Tn16171658": {}, 
 "Tn16171659": {
 "@otu": "Tl2697398"
 }, 
@@ -1503,7 +1691,8 @@
 }, 
 "Tn16171669": {}, 
 "Tn16171670": {
-"@otu": "Tl2697426"
+"@otu": "Tl2697426", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn16171671": {}, 
 "Tn16171672": {}, 
@@ -1513,13 +1702,16 @@
 "Tn16171674": {}, 
 "Tn16171675": {}, 
 "Tn16171676": {
-"@otu": "Tl2697395"
+"@otu": "Tl2697395", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn16171677": {
-"@otu": "Tl2697438"
+"@otu": "Tl2697438", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn16171678": {
-"@otu": "Tl2697418"
+"@otu": "Tl2697418", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn16171679": {
 "@otu": "Tl2697393"
@@ -1539,10 +1731,12 @@
 "@otu": "Tl2697409"
 }, 
 "Tn16171686": {
-"@otu": "Tl2697443"
+"@otu": "Tl2697443", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn16171687": {
-"@otu": "Tl2697381"
+"@otu": "Tl2697381", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn16171688": {}, 
 "Tn16171689": {
@@ -1554,14 +1748,17 @@
 }, 
 "Tn16171692": {}, 
 "Tn16171693": {
-"@otu": "Tl2697388"
+"@otu": "Tl2697388", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn16171694": {
-"@otu": "Tl2697424"
+"@otu": "Tl2697424", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn16171695": {}, 
 "Tn16171696": {
-"@otu": "Tl2697403"
+"@otu": "Tl2697403", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn16171697": {}, 
 "Tn16171698": {}, 
@@ -1570,7 +1767,8 @@
 }, 
 "Tn16171700": {}, 
 "Tn16171701": {
-"@otu": "Tl2697442"
+"@otu": "Tl2697442", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn16171702": {}, 
 "Tn16171703": {
@@ -1589,7 +1787,8 @@
 "Tn16171710": {}, 
 "Tn16171711": {}, 
 "Tn16171712": {
-"@otu": "Tl2697392"
+"@otu": "Tl2697392", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn16171713": {
 "@otu": "Tl2697386"
@@ -1599,7 +1798,8 @@
 }, 
 "Tn16171715": {}, 
 "Tn16171716": {
-"@otu": "Tl2697419"
+"@otu": "Tl2697419", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn16171717": {
 "@otu": "Tl2697427"
@@ -1611,7 +1811,8 @@
 "Tn16171722": {}, 
 "Tn16171723": {}, 
 "Tn16171724": {
-"@otu": "Tl2697407"
+"@otu": "Tl2697407", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn16171725": {}, 
 "Tn16171726": {
@@ -1628,10 +1829,12 @@
 "Tn16171731": {}, 
 "Tn16171732": {}, 
 "Tn16171733": {
-"@otu": "Tl2697423"
+"@otu": "Tl2697423", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn16171734": {
-"@otu": "Tl2697420"
+"@otu": "Tl2697420", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn16171735": {}, 
 "Tn16171736": {
@@ -1654,31 +1857,37 @@
 "@otu": "Tl2697402"
 }, 
 "Tn16171745": {
-"@otu": "Tl2697414"
+"@otu": "Tl2697414", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn16171746": {
-"@otu": "Tl2697397"
+"@otu": "Tl2697397", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn16171747": {
 "@otu": "Tl2697434"
 }, 
 "Tn16171748": {
-"@otu": "Tl2697430"
+"@otu": "Tl2697430", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn16171749": {
 "@otu": "Tl2697417"
 }, 
 "Tn16171750": {}, 
 "Tn16171751": {
-"@otu": "Tl2697384"
+"@otu": "Tl2697384", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn16171752": {
-"@otu": "Tl2697379"
+"@otu": "Tl2697379", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn16171753": {}, 
 "Tn16171754": {}, 
 "Tn16171755": {
-"@otu": "Tl2697431"
+"@otu": "Tl2697431", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn16171756": {}, 
 "Tn16171757": {
@@ -1690,13 +1899,15 @@
 "Tn16171759": {}, 
 "Tn16171760": {}, 
 "Tn16171761": {
-"@otu": "Tl2697389"
+"@otu": "Tl2697389", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn16171762": {
 "@otu": "Tl2697449"
 }, 
 "Tn16171763": {
-"@otu": "Tl2697404"
+"@otu": "Tl2697404", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn16171764": {}, 
 "Tn16171765": {}, 
@@ -1711,14 +1922,17 @@
 "@otu": "Tl2697439"
 }, 
 "Tn16171770": {
-"@otu": "Tl2697380"
+"@otu": "Tl2697380", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn16171771": {}, 
 "Tn16171772": {
-"@otu": "Tl2697437"
+"@otu": "Tl2697437", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn16171773": {
-"@otu": "Tl2697415"
+"@otu": "Tl2697415", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn16171774": {}, 
 "Tn16171775": {
@@ -1743,13 +1957,18 @@
 "@otu": "Tl2697405"
 }, 
 "Tn16171786": {
-"@otu": "Tl2697400"
+"@otu": "Tl2697400", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn16171787": {
-"@otu": "Tl2697433"
+"@otu": "Tl2697433", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn16171788": {
 "@otu": "Tl2697387"
+}, 
+"Tr103639_ROOT": {
+"@root": true
 }
 }
 }
