@@ -138,14 +138,15 @@
 ]
 }, 
 "^ot:candidateTreeForSynthesis": [], 
-"^ot:comment": "", 
+"^ot:comment": "Email from Philip Ward (12 April 2018) to AS indicates placement of root and consents to CC-0 license. ", 
 "^ot:curatorName": [
 "Arlin Stoltzfus"
 ], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S18604"
 }, 
-"^ot:focalCladeOTTTaxonName": "", 
+"^ot:focalClade": 256681, 
+"^ot:focalCladeOTTTaxonName": "Dolichoderinae", 
 "^ot:otusElementOrder": [
 "Tls48654"
 ], 
@@ -172,6 +173,10 @@
 "^skos:historyNote": "Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlDocumentWriter@1076cd24 $Rev$", 
 "^tb:identifier.study": "18604", 
 "^tb:title.study": "Out of the Neotropics: newly discovered relictual species sheds light on the biogeographic history of spider ants (Leptomyrmex, Dolichoderinae, Formicidae)", 
+"^xhtml:license": {
+"@href": "http://creativecommons.org/publicdomain/zero/1.0/", 
+"@name": "CC0"
+}, 
 "otusById": {
 "Tls48654": {
 "@label": "Taxa", 
@@ -253,7 +258,6 @@
 "^ot:ottTaxonName": "Leptomyrmex rufithorax"
 }, 
 "Tl2101121": {
-"^ot:altLabel": "Ochetellus clarithorax", 
 "^ot:originalLabel": "Ochetellus cf clarithorax"
 }, 
 "Tl2101122": {
@@ -448,8 +452,8 @@
 }, 
 "Tl2101142": {
 "^ot:originalLabel": "Arnoldius AU01", 
-"^ot:ottId": 554803, 
-"^ot:ottTaxonName": "Arnoldius"
+"^ot:ottId": 678432, 
+"^ot:ottTaxonName": "Arnoldius sp. AU01"
 }, 
 "Tl2101143": {
 "^ot:originalLabel": "Technomyrmex anterops", 
@@ -738,17 +742,18 @@
 "@label": "bestREP1", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
-"^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:branchLengthMode": "ot:time", 
+"^ot:branchLengthTimeUnit": "Relative time", 
 "^ot:curatedType": "Maximum likelihood ", 
 "^ot:inGroupClade": "Tn13656703", 
 "^ot:nodeLabelMode": "", 
 "^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:reasonsToExcludeFromSynthesis": [], 
-"^ot:rootNodeId": "Tn13656774", 
-"^ot:specifiedRoot": "", 
+"^ot:rootNodeId": "Tr92236_ROOT", 
+"^ot:specifiedRoot": "Tr92236_ROOT", 
 "^ot:tag": [], 
-"^ot:unrootedTree": true, 
+"^ot:unrootedTree": false, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 59, 
 "^tb:quality.tree": "Unrated", 
@@ -1348,11 +1353,6 @@
 "@source": "Tn13656774", 
 "@target": "Tn13656688"
 }, 
-"edge635897": {
-"@length": 0.00924874, 
-"@source": "Tn13656774", 
-"@target": "Tn13656678"
-}, 
 "edge636219": {
 "@length": 0.06822846, 
 "@source": "Tn13656774", 
@@ -1441,6 +1441,17 @@
 "@length": 0.00030175, 
 "@source": "Tn13656790", 
 "@target": "Tn13656720"
+}
+}, 
+"Tr92236_ROOT": {
+"Tr92236_ROOT_EDGE": {
+"@source": "Tr92236_ROOT", 
+"@target": "Tn13656774"
+}, 
+"edge635897": {
+"@length": 0.00924874, 
+"@source": "Tr92236_ROOT", 
+"@target": "Tn13656678"
 }
 }
 }, 
@@ -1635,9 +1646,7 @@
 "Tn13656773": {
 "@otu": "Tl2101160"
 }, 
-"Tn13656774": {
-"@root": true
-}, 
+"Tn13656774": {}, 
 "Tn13656775": {}, 
 "Tn13656776": {
 "@otu": "Tl2101156"
@@ -1680,6 +1689,9 @@
 }, 
 "Tn13656793": {
 "@otu": "Tl2101140"
+}, 
+"Tr92236_ROOT": {
+"@root": true
 }
 }
 }
