@@ -50,22 +50,105 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2018-05-29T05:44:14.365Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:curatorName": "sbyrum", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2018-05-29T05:44:14.364Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"sbyrum"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S11208"
 }, 
+"^ot:focalCladeOTTTaxonName": "", 
 "^ot:otusElementOrder": [
 "Tls19566"
 ], 
 "^ot:studyId": "ot_1301", 
+"^ot:studyPublication": {
+"@href": "https://doi.org/10.1186/1471-2148-11-331"
+}, 
 "^ot:studyPublicationReference": "Sekimoto S., Rochon D., Long J.E., Dee J.M., & Berbee M. 2011. A multigene phylogeny of Olpidium and its implications for early fungal evolution. BMC Evolutionary Biology, .", 
 "^ot:studyYear": 2011, 
+"^ot:tag": [], 
 "^ot:taxonLinkPrefixes": {
 "@ubio": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:", 
 "@uniprot": "http://purl.uniprot.org/taxonomy/"
@@ -668,16 +751,27 @@
 "Tr27545": {
 "@label": "Fig. 2", 
 "@xsi:type": "nex:FloatTree", 
-"^ot:rootNodeId": "Tn3724843", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:undefined", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "Tn3724841", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
+"^ot:rootNodeId": "Tn3724847", 
+"^ot:specifiedRoot": "Tn3724847", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 62, 
 "^tb:quality.tree": "Unrated", 
 "^tb:type.tree": "Single", 
 "edgeBySourceId": {
 "Tn3724742": {
-"edge336171": {
+"edge336169": {
 "@source": "Tn3724742", 
-"@target": "Tn3724862"
+"@target": "Tn3724843"
 }, 
 "edge336385": {
 "@source": "Tn3724742", 
@@ -785,9 +879,9 @@
 }
 }, 
 "Tn3724769": {
-"edge336259": {
+"edge336257": {
 "@source": "Tn3724769", 
-"@target": "Tn3724841"
+"@target": "Tn3724837"
 }, 
 "edge336309": {
 "@source": "Tn3724769", 
@@ -1135,9 +1229,9 @@
 }
 }, 
 "Tn3724837": {
-"edge336257": {
+"edge336255": {
 "@source": "Tn3724837", 
-"@target": "Tn3724769"
+"@target": "Tn3724862"
 }, 
 "edge336363": {
 "@source": "Tn3724837", 
@@ -1155,9 +1249,9 @@
 }
 }, 
 "Tn3724841": {
-"edge336261": {
+"edge336259": {
 "@source": "Tn3724841", 
-"@target": "Tn3724847"
+"@target": "Tn3724769"
 }, 
 "edge336295": {
 "@source": "Tn3724841", 
@@ -1165,10 +1259,6 @@
 }
 }, 
 "Tn3724843": {
-"edge336169": {
-"@source": "Tn3724843", 
-"@target": "Tn3724742"
-}, 
 "edge336399": {
 "@source": "Tn3724843", 
 "@target": "Tn3724780"
@@ -1199,6 +1289,10 @@
 }
 }, 
 "Tn3724847": {
+"edge336261": {
+"@source": "Tn3724847", 
+"@target": "Tn3724841"
+}, 
 "edge336263": {
 "@source": "Tn3724847", 
 "@target": "Tn3724756"
@@ -1259,13 +1353,13 @@
 }
 }, 
 "Tn3724862": {
+"edge336171": {
+"@source": "Tn3724862", 
+"@target": "Tn3724742"
+}, 
 "edge336173": {
 "@source": "Tn3724862", 
 "@target": "Tn3724777"
-}, 
-"edge336255": {
-"@source": "Tn3724862", 
-"@target": "Tn3724837"
 }
 }, 
 "Tn3724863": {
@@ -1485,15 +1579,15 @@
 "Tn3724842": {
 "@otu": "Tl465833"
 }, 
-"Tn3724843": {
-"@root": true
-}, 
+"Tn3724843": {}, 
 "Tn3724844": {}, 
 "Tn3724845": {}, 
 "Tn3724846": {
 "@otu": "Tl465825"
 }, 
-"Tn3724847": {}, 
+"Tn3724847": {
+"@root": true
+}, 
 "Tn3724848": {}, 
 "Tn3724849": {}, 
 "Tn3724850": {
@@ -1533,20 +1627,31 @@
 "Tr27546": {
 "@label": "Fig. 3", 
 "@xsi:type": "nex:FloatTree", 
-"^ot:rootNodeId": "Tn3724866", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:undefined", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "Tn3724972", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
+"^ot:rootNodeId": "Tr27546_ROOT", 
+"^ot:specifiedRoot": "Tr27546_ROOT", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 62, 
 "^tb:quality.tree": "Unrated", 
 "^tb:type.tree": "Consensus", 
 "edgeBySourceId": {
 "Tn3724864": {
+"edge335951": {
+"@source": "Tn3724864", 
+"@target": "Tn3724963"
+}, 
 "edge335953": {
 "@source": "Tn3724864", 
 "@target": "Tn3724977"
-}, 
-"edge336033": {
-"@source": "Tn3724864", 
-"@target": "Tn3724910"
 }
 }, 
 "Tn3724866": {
@@ -1557,10 +1662,6 @@
 "edge335925": {
 "@source": "Tn3724866", 
 "@target": "Tn3724872"
-}, 
-"edge335935": {
-"@source": "Tn3724866", 
-"@target": "Tn3724963"
 }
 }, 
 "Tn3724871": {
@@ -1688,6 +1789,10 @@
 }
 }, 
 "Tn3724892": {
+"edge336057": {
+"@source": "Tn3724892", 
+"@target": "Tn3724910"
+}, 
 "edge336059": {
 "@source": "Tn3724892", 
 "@target": "Tn3724890"
@@ -1695,10 +1800,6 @@
 "edge336061": {
 "@source": "Tn3724892", 
 "@target": "Tn3724888"
-}, 
-"edge336109": {
-"@source": "Tn3724892", 
-"@target": "Tn3724972"
 }
 }, 
 "Tn3724896": {
@@ -1772,13 +1873,13 @@
 }
 }, 
 "Tn3724910": {
+"edge336033": {
+"@source": "Tn3724910", 
+"@target": "Tn3724864"
+}, 
 "edge336035": {
 "@source": "Tn3724910", 
 "@target": "Tn3724964"
-}, 
-"edge336057": {
-"@source": "Tn3724910", 
-"@target": "Tn3724892"
 }
 }, 
 "Tn3724913": {
@@ -2016,13 +2117,13 @@
 }
 }, 
 "Tn3724963": {
+"edge335935": {
+"@source": "Tn3724963", 
+"@target": "Tn3724866"
+}, 
 "edge335937": {
 "@source": "Tn3724963", 
 "@target": "Tn3724876"
-}, 
-"edge335951": {
-"@source": "Tn3724963", 
-"@target": "Tn3724864"
 }
 }, 
 "Tn3724964": {
@@ -2046,13 +2147,13 @@
 }
 }, 
 "Tn3724968": {
+"edge336141": {
+"@source": "Tn3724968", 
+"@target": "Tn3724978"
+}, 
 "edge336143": {
 "@source": "Tn3724968", 
 "@target": "Tn3724924"
-}, 
-"edge336153": {
-"@source": "Tn3724968", 
-"@target": "Tn3724926"
 }
 }, 
 "Tn3724969": {
@@ -2076,13 +2177,13 @@
 }
 }, 
 "Tn3724972": {
+"edge336109": {
+"@source": "Tn3724972", 
+"@target": "Tn3724892"
+}, 
 "edge336111": {
 "@source": "Tn3724972", 
 "@target": "Tn3724914"
-}, 
-"edge336125": {
-"@source": "Tn3724972", 
-"@target": "Tn3724980"
 }
 }, 
 "Tn3724977": {
@@ -2096,23 +2197,23 @@
 }
 }, 
 "Tn3724978": {
+"edge336137": {
+"@source": "Tn3724978", 
+"@target": "Tn3724980"
+}, 
 "edge336139": {
 "@source": "Tn3724978", 
 "@target": "Tn3724887"
-}, 
-"edge336141": {
-"@source": "Tn3724978", 
-"@target": "Tn3724968"
 }
 }, 
 "Tn3724980": {
+"edge336125": {
+"@source": "Tn3724980", 
+"@target": "Tn3724972"
+}, 
 "edge336127": {
 "@source": "Tn3724980", 
 "@target": "Tn3724944"
-}, 
-"edge336137": {
-"@source": "Tn3724980", 
-"@target": "Tn3724978"
 }
 }, 
 "Tn3724982": {
@@ -2124,6 +2225,16 @@
 "@source": "Tn3724982", 
 "@target": "Tn3724927"
 }
+}, 
+"Tr27546_ROOT": {
+"Tr27546_ROOT_EDGE": {
+"@source": "Tr27546_ROOT", 
+"@target": "Tn3724968"
+}, 
+"edge336153": {
+"@source": "Tr27546_ROOT", 
+"@target": "Tn3724926"
+}
 }
 }, 
 "nodeById": {
@@ -2131,9 +2242,7 @@
 "Tn3724865": {
 "@otu": "Tl465844"
 }, 
-"Tn3724866": {
-"@root": true
-}, 
+"Tn3724866": {}, 
 "Tn3724867": {
 "@otu": "Tl465833"
 }, 
@@ -2371,7 +2480,10 @@
 "Tn3724981": {
 "@otu": "Tl465810"
 }, 
-"Tn3724982": {}
+"Tn3724982": {}, 
+"Tr27546_ROOT": {
+"@root": true
+}
 }
 }
 }
