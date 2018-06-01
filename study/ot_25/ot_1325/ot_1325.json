@@ -57,16 +57,106 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2018-06-01T16:43:59.454Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:curatorName": "Kaitlin Allen ", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}, 
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": "$1"
+}, 
+"old": {
+"$": "^(\\S*\\s+\\S*).*"
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2018-06-01T16:43:59.454Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Kaitlin Allen "
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S17607"
 }, 
+"^ot:focalClade": 580410, 
+"^ot:focalCladeOTTTaxonName": "Hyphodontia", 
 "^ot:otusElementOrder": [
 "Tls44521"
 ], 
@@ -76,6 +166,7 @@
 }, 
 "^ot:studyPublicationReference": "Riebesehl J., Langer E.J., Ordynets A., Striegel M.M., & Witzany C. 2015. Hyphodontia borbonica, a new species from La Reunion. Mycol Progress, 14: 104.", 
 "^ot:studyYear": 2015, 
+"^ot:tag": [], 
 "^ot:taxonLinkPrefixes": {
 "@ubio": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:", 
 "@uniprot": "http://purl.uniprot.org/taxonomy/"
@@ -100,20 +191,27 @@
 "^skos:historyNote": "Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlOTUWriter@5f785537 $Rev$", 
 "otuById": {
 "Tl1860281": {
-"^ot:originalLabel": "Hyphodontia heterocystidiata JX175046"
+"^ot:originalLabel": "Hyphodontia heterocystidiata JX175046", 
+"^ot:ottId": 3804887, 
+"^ot:ottTaxonName": "Hyphodontia heterocystidiata"
 }, 
 "Tl1860282": {
-"^ot:originalLabel": "Lagarobasidium calongei NR119737"
+"^ot:originalLabel": "Lagarobasidium calongei NR119737", 
+"^ot:ottId": 580394, 
+"^ot:ottTaxonName": "Lagarobasidium calongei"
 }, 
 "Tl1860283": {
-"^ot:originalLabel": "Hyphodontia vietnamensis JX175044"
+"^ot:originalLabel": "Hyphodontia vietnamensis JX175044", 
+"^ot:ottId": 4935416, 
+"^ot:ottTaxonName": "Hyphodontia vietnamensis"
 }, 
 "Tl1860284": {
 "^ot:originalLabel": "Hyphodontia barbajovis DQ873609"
 }, 
 "Tl1860285": {
-"^ot:altLabel": "Hyphodontia radula", 
 "^ot:originalLabel": "Hyphodontia radula AF145581", 
+"^ot:ottId": 3798976, 
+"^ot:ottTaxonName": "Hyphodontia radula", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 627425, 
 "@tb:identifier.taxonVariant": 840905, 
@@ -123,8 +221,9 @@
 "^skos:prefLabel": "Schizopora radula"
 }, 
 "Tl1860286": {
-"^ot:altLabel": "Hyphodontia tropica", 
 "^ot:originalLabel": "Hyphodontia tropica KC414243", 
+"^ot:ottId": 627480, 
+"^ot:ottTaxonName": "Hyphodontia tropica", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 103560, 
 "@tb:identifier.taxonVariant": 182667, 
@@ -133,8 +232,9 @@
 }
 }, 
 "Tl1860287": {
-"^ot:altLabel": "Lagarobasidium detriticum", 
 "^ot:originalLabel": "Lagarobasidium detriticum FM876211", 
+"^ot:ottId": 580411, 
+"^ot:ottTaxonName": "Lagarobasidium detriticum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 503014, 
 "@tb:identifier.taxonVariant": 666366, 
@@ -143,8 +243,9 @@
 }
 }, 
 "Tl1860288": {
-"^ot:altLabel": "Hyphodontia radula", 
 "^ot:originalLabel": "Hyphodontia radula AF145580", 
+"^ot:ottId": 3798976, 
+"^ot:ottTaxonName": "Hyphodontia radula", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 627425, 
 "@tb:identifier.taxonVariant": 840905, 
@@ -154,8 +255,9 @@
 "^skos:prefLabel": "Schizopora radula"
 }, 
 "Tl1860289": {
-"^ot:altLabel": "Hyphodontia niemelaei", 
 "^ot:originalLabel": "Hyphodontia niemelaei EU583422", 
+"^ot:ottId": 656760, 
+"^ot:ottTaxonName": "Hyphodontia niemelaei", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 136886, 
 "@tb:identifier.taxonVariant": 213592, 
@@ -164,8 +266,9 @@
 }
 }, 
 "Tl1860290": {
-"^ot:altLabel": "Hyphodontia cineracea", 
 "^ot:originalLabel": "Hyphodontia cineracea DQ340336", 
+"^ot:ottId": 134668, 
+"^ot:ottTaxonName": "Hyphodontia cineracea", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 136882, 
 "@tb:identifier.taxonVariant": 213588, 
@@ -174,11 +277,14 @@
 }
 }, 
 "Tl1860291": {
-"^ot:originalLabel": "Hyphodontia erastii JX857800"
+"^ot:originalLabel": "Hyphodontia erastii JX857800", 
+"^ot:ottId": 3804879, 
+"^ot:ottTaxonName": "Hyphodontia erastii"
 }, 
 "Tl1860292": {
-"^ot:altLabel": "Hyphodontia crustosa", 
 "^ot:originalLabel": "Hyphodontia crustosa KC460313", 
+"^ot:ottId": 5300246, 
+"^ot:ottTaxonName": "Hyphodontia crustosa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 136883, 
 "@tb:identifier.taxonVariant": 213589, 
@@ -187,8 +293,9 @@
 }
 }, 
 "Tl1860293": {
-"^ot:altLabel": "Hyphodontia arguta", 
 "^ot:originalLabel": "Hyphodontia arguta KR349242", 
+"^ot:ottId": 829904, 
+"^ot:ottTaxonName": "Hyphodontia arguta", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 354353, 
 "@tb:identifier.taxonVariant": 385756, 
@@ -197,8 +304,9 @@
 }
 }, 
 "Tl1860294": {
-"^ot:altLabel": "Hyphodontia tropica", 
 "^ot:originalLabel": "Hyphodontia tropica AF145587", 
+"^ot:ottId": 627480, 
+"^ot:ottTaxonName": "Hyphodontia tropica", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 103560, 
 "@tb:identifier.taxonVariant": 182667, 
@@ -207,8 +315,9 @@
 }
 }, 
 "Tl1860295": {
-"^ot:altLabel": "Hyphodontia juniperi", 
 "^ot:originalLabel": "Hyphodontia juniperi JX175047", 
+"^ot:ottId": 130389, 
+"^ot:ottTaxonName": "Hyphodontia juniperi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 320617, 
 "@tb:identifier.taxonVariant": 364146, 
@@ -217,11 +326,14 @@
 }
 }, 
 "Tl1860296": {
-"^ot:originalLabel": "Hyphodontia astrocystidiata JN129972"
+"^ot:originalLabel": "Hyphodontia astrocystidiata JN129972", 
+"^ot:ottId": 787114, 
+"^ot:ottTaxonName": "Hyphodontia astrocystidiata"
 }, 
 "Tl1860297": {
-"^ot:altLabel": "Hyphodontia arguta", 
 "^ot:originalLabel": "Hyphodontia arguta KR349243", 
+"^ot:ottId": 829904, 
+"^ot:ottTaxonName": "Hyphodontia arguta", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 354353, 
 "@tb:identifier.taxonVariant": 385756, 
@@ -230,8 +342,9 @@
 }
 }, 
 "Tl1860298": {
-"^ot:altLabel": "Hyphodontia abieticola", 
 "^ot:originalLabel": "Hyphodontia abieticola DQ873601", 
+"^ot:ottId": 773679, 
+"^ot:ottTaxonName": "Hyphodontia abieticola", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 320622, 
 "@tb:identifier.taxonVariant": 364148, 
@@ -240,8 +353,9 @@
 }
 }, 
 "Tl1860299": {
-"^ot:altLabel": "Schizopora flavipora", 
 "^ot:originalLabel": "Schizopora flavipora AF145585", 
+"^ot:ottId": 627478, 
+"^ot:ottTaxonName": "Schizopora flavipora", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 627281, 
 "@tb:identifier.taxonVariant": 840909, 
@@ -251,8 +365,9 @@
 "^skos:prefLabel": "Hyphodontia flavipora"
 }, 
 "Tl1860300": {
-"^ot:altLabel": "Hyphodontia nothofagi", 
 "^ot:originalLabel": "Hyphodontia nothofagi AF145583", 
+"^ot:ottId": 54598, 
+"^ot:ottTaxonName": "Hyphodontia nothofagi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 103562, 
 "@tb:identifier.taxonVariant": 182670, 
@@ -261,8 +376,9 @@
 }
 }, 
 "Tl1860301": {
-"^ot:altLabel": "Hyphodontia sambuci", 
 "^ot:originalLabel": "Hyphodontia sambuci DQ340326", 
+"^ot:ottId": 848934, 
+"^ot:ottTaxonName": "Hyphodontia sambuci", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 94541, 
 "@tb:identifier.taxonVariant": 173605, 
@@ -271,8 +387,9 @@
 }
 }, 
 "Tl1860302": {
-"^ot:altLabel": "Hyphodontia nothofagi", 
 "^ot:originalLabel": "Hyphodontia nothofagi GQ411524", 
+"^ot:ottId": 54598, 
+"^ot:ottTaxonName": "Hyphodontia nothofagi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 103562, 
 "@tb:identifier.taxonVariant": 182670, 
@@ -281,11 +398,14 @@
 }
 }, 
 "Tl1860303": {
-"^ot:originalLabel": "Hyphodontia borbonica L693 KR349241"
+"^ot:originalLabel": "Hyphodontia borbonica L693 KR349241", 
+"^ot:ottId": 5984724, 
+"^ot:ottTaxonName": "Hyphodontia borbonica"
 }, 
 "Tl1860304": {
-"^ot:altLabel": "Hyphodontia hastata", 
 "^ot:originalLabel": "Hyphodontia hastata DQ340311", 
+"^ot:ottId": 130395, 
+"^ot:ottTaxonName": "Hyphodontia hastata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 320619, 
 "@tb:identifier.taxonVariant": 364147, 
@@ -294,8 +414,9 @@
 }
 }, 
 "Tl1860305": {
-"^ot:altLabel": "Hyphodontia aspera", 
 "^ot:originalLabel": "Hyphodontia aspera DQ873606", 
+"^ot:ottId": 134667, 
+"^ot:ottTaxonName": "Hyphodontia aspera", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 136881, 
 "@tb:identifier.taxonVariant": 213587, 
@@ -304,11 +425,14 @@
 }
 }, 
 "Tl1860306": {
-"^ot:originalLabel": "Hyphodontia borbonica L93 KR349240"
+"^ot:originalLabel": "Hyphodontia borbonica L93 KR349240", 
+"^ot:ottId": 5984724, 
+"^ot:ottTaxonName": "Hyphodontia borbonica"
 }, 
 "Tl1860307": {
-"^ot:altLabel": "Hyphodontia pallidula", 
 "^ot:originalLabel": "Hyphodontia pallidula KJ140566", 
+"^ot:ottId": 656758, 
+"^ot:ottTaxonName": "Hyphodontia pallidula", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 136888, 
 "@tb:identifier.taxonVariant": 213594, 
@@ -317,14 +441,19 @@
 }
 }, 
 "Tl1860308": {
-"^ot:originalLabel": "Hyphodontia microfasciculata JN129976"
+"^ot:originalLabel": "Hyphodontia microfasciculata JN129976", 
+"^ot:ottId": 118877, 
+"^ot:ottTaxonName": "Hyphodontia microfasciculata"
 }, 
 "Tl1860309": {
-"^ot:originalLabel": "Hyphodontia heterocystidiata JX175045"
+"^ot:originalLabel": "Hyphodontia heterocystidiata JX175045", 
+"^ot:ottId": 3804887, 
+"^ot:ottTaxonName": "Hyphodontia heterocystidiata"
 }, 
 "Tl1860310": {
-"^ot:altLabel": "Hyphodontia pallidula", 
 "^ot:originalLabel": "Hyphodontia pallidula DQ340317", 
+"^ot:ottId": 656758, 
+"^ot:ottTaxonName": "Hyphodontia pallidula", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 136888, 
 "@tb:identifier.taxonVariant": 213594, 
@@ -333,8 +462,9 @@
 }
 }, 
 "Tl1860311": {
-"^ot:altLabel": "Hyphodontia abieticola", 
 "^ot:originalLabel": "Hyphodontia abieticola DQ340331", 
+"^ot:ottId": 773679, 
+"^ot:ottTaxonName": "Hyphodontia abieticola", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 320622, 
 "@tb:identifier.taxonVariant": 364148, 
@@ -343,8 +473,9 @@
 }
 }, 
 "Tl1860312": {
-"^ot:altLabel": "Schizopora paradoxa", 
 "^ot:originalLabel": "Schizopora paradoxa AF145571", 
+"^ot:ottId": 42575, 
+"^ot:ottTaxonName": "Schizopora paradoxa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 627424, 
 "@tb:identifier.taxonVariant": 840904, 
@@ -353,8 +484,9 @@
 }
 }, 
 "Tl1860313": {
-"^ot:altLabel": "Hyphodontia rimosissima", 
 "^ot:originalLabel": "Hyphodontia rimosissima KJ140600", 
+"^ot:ottId": 688189, 
+"^ot:ottTaxonName": "Hyphodontia rimosissima", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 354356, 
 "@tb:identifier.taxonVariant": 385758, 
@@ -363,8 +495,9 @@
 }
 }, 
 "Tl1860314": {
-"^ot:altLabel": "Hyphodontia alutaria", 
 "^ot:originalLabel": "Hyphodontia alutaria EU118631", 
+"^ot:ottId": 723272, 
+"^ot:ottTaxonName": "Hyphodontia alutaria", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 14067, 
 "@tb:identifier.taxonVariant": 33154, 
@@ -373,8 +506,9 @@
 }
 }, 
 "Tl1860315": {
-"^ot:altLabel": "Hyphodontia rimosissima", 
 "^ot:originalLabel": "Hyphodontia rimosissima DQ873627", 
+"^ot:ottId": 688189, 
+"^ot:ottTaxonName": "Hyphodontia rimosissima", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 354356, 
 "@tb:identifier.taxonVariant": 385758, 
@@ -383,8 +517,9 @@
 }
 }, 
 "Tl1860316": {
-"^ot:altLabel": "Hyphodontia floccosa", 
 "^ot:originalLabel": "Hyphodontia floccosa DQ873618", 
+"^ot:ottId": 688192, 
+"^ot:ottTaxonName": "Hyphodontia floccosa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 354355, 
 "@tb:identifier.taxonVariant": 509409, 
@@ -406,9 +541,21 @@
 "^skos:historyNote": "Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlTreeBlockWriter@21b6a4f4 $Rev$", 
 "treeById": {
 "Tr87612": {
-"@label": "Fig. 7", 
+"@label": "Bayesian", 
 "@xsi:type": "nex:FloatTree", 
-"^ot:rootNodeId": "Tn12922248", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:curatedType": "Bayesian inference ", 
+"^ot:inGroupClade": "Tn12922271", 
+"^ot:nodeLabelDescription": "", 
+"^ot:nodeLabelMode": "ot:posteriorSupport", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
+"^ot:rootNodeId": "Tr87612_ROOT", 
+"^ot:specifiedRoot": "Tr87612_ROOT", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 36, 
 "^tb:quality.tree": "Preferred Tree", 
@@ -418,19 +565,22 @@
 "edge1406613": {
 "@length": 0.009398000000000017, 
 "@source": "Tn12922236", 
-"@target": "Tn12922272"
+"@target": "Tn12922272", 
+"^ot:posteriorSupport": 0.6
 }, 
 "edge1406653": {
 "@length": 0.02701500000000001, 
 "@source": "Tn12922236", 
-"@target": "Tn12922302"
+"@target": "Tn12922302", 
+"^ot:posteriorSupport": 0.99
 }
 }, 
 "Tn12922238": {
 "edge1406713": {
 "@length": 0.002359, 
 "@source": "Tn12922238", 
-"@target": "Tn12922288"
+"@target": "Tn12922288", 
+"^ot:posteriorSupport": 0.68
 }, 
 "edge1406719": {
 "@length": 0.005241000000000051, 
@@ -447,7 +597,8 @@
 "edge1406693": {
 "@length": 0.04191, 
 "@source": "Tn12922239", 
-"@target": "Tn12922293"
+"@target": "Tn12922293", 
+"^ot:posteriorSupport": 0.85
 }
 }, 
 "Tn12922243": {
@@ -478,19 +629,16 @@
 "edge1406607": {
 "@length": 0.047661, 
 "@source": "Tn12922248", 
-"@target": "Tn12922271"
-}, 
-"edge1406739": {
-"@length": 0.047661000000000016, 
-"@source": "Tn12922248", 
-"@target": "Tn12922269"
+"@target": "Tn12922271", 
+"^ot:posteriorSupport": 1
 }
 }, 
 "Tn12922251": {
 "edge1406729": {
 "@length": 0.058418000000000025, 
 "@source": "Tn12922251", 
-"@target": "Tn12922294"
+"@target": "Tn12922294", 
+"^ot:posteriorSupport": 1
 }, 
 "edge1406735": {
 "@length": 0.14071300000000003, 
@@ -526,7 +674,8 @@
 "edge1406671": {
 "@length": 0.017642999999999964, 
 "@source": "Tn12922258", 
-"@target": "Tn12922267"
+"@target": "Tn12922267", 
+"^ot:posteriorSupport": 0.98
 }, 
 "edge1406677": {
 "@length": 0.05126900000000001, 
@@ -538,7 +687,8 @@
 "edge1406697": {
 "@length": 0.13288600000000006, 
 "@source": "Tn12922260", 
-"@target": "Tn12922245"
+"@target": "Tn12922245", 
+"^ot:posteriorSupport": 1
 }, 
 "edge1406703": {
 "@length": 0.07481899999999997, 
@@ -555,12 +705,14 @@
 "edge1406623": {
 "@length": 0.021179999999999977, 
 "@source": "Tn12922261", 
-"@target": "Tn12922278"
+"@target": "Tn12922278", 
+"^ot:posteriorSupport": 1
 }, 
 "edge1406629": {
 "@length": 0.020557999999999965, 
 "@source": "Tn12922261", 
-"@target": "Tn12922296"
+"@target": "Tn12922296", 
+"^ot:posteriorSupport": 1
 }
 }, 
 "Tn12922263": {
@@ -591,12 +743,14 @@
 "edge1406705": {
 "@length": 0.054584999999999995, 
 "@source": "Tn12922265", 
-"@target": "Tn12922300"
+"@target": "Tn12922300", 
+"^ot:posteriorSupport": 1
 }, 
 "edge1406711": {
 "@length": 0.022027999999999937, 
 "@source": "Tn12922265", 
-"@target": "Tn12922238"
+"@target": "Tn12922238", 
+"^ot:posteriorSupport": 1
 }
 }, 
 "Tn12922267": {
@@ -627,19 +781,22 @@
 "edge1406609": {
 "@length": 0.069129, 
 "@source": "Tn12922271", 
-"@target": "Tn12922291"
+"@target": "Tn12922291", 
+"^ot:posteriorSupport": 1
 }, 
 "edge1406689": {
 "@length": 0.06139800000000001, 
 "@source": "Tn12922271", 
-"@target": "Tn12922239"
+"@target": "Tn12922239", 
+"^ot:posteriorSupport": 0.86
 }
 }, 
 "Tn12922272": {
 "edge1406615": {
 "@length": 0.009939999999999949, 
 "@source": "Tn12922272", 
-"@target": "Tn12922285"
+"@target": "Tn12922285", 
+"^ot:posteriorSupport": 0.7
 }, 
 "edge1406651": {
 "@length": 0.02141700000000002, 
@@ -668,7 +825,8 @@
 "edge1406727": {
 "@length": 0.01638299999999998, 
 "@source": "Tn12922279", 
-"@target": "Tn12922251"
+"@target": "Tn12922251", 
+"^ot:posteriorSupport": 0.58
 }
 }, 
 "Tn12922280": {
@@ -680,38 +838,44 @@
 "edge1406683": {
 "@length": 0.019440000000000013, 
 "@source": "Tn12922280", 
-"@target": "Tn12922264"
+"@target": "Tn12922264", 
+"^ot:posteriorSupport": 0.98
 }
 }, 
 "Tn12922281": {
 "edge1406619": {
 "@length": 0.010171000000000041, 
 "@source": "Tn12922281", 
-"@target": "Tn12922261"
+"@target": "Tn12922261", 
+"^ot:posteriorSupport": 0.71
 }, 
 "edge1406639": {
 "@length": 0.015337999999999963, 
 "@source": "Tn12922281", 
-"@target": "Tn12922257"
+"@target": "Tn12922257", 
+"^ot:posteriorSupport": 1
 }
 }, 
 "Tn12922285": {
 "edge1406617": {
 "@length": 0.014043999999999945, 
 "@source": "Tn12922285", 
-"@target": "Tn12922281"
+"@target": "Tn12922281", 
+"^ot:posteriorSupport": 0.98
 }, 
 "edge1406645": {
 "@length": 0.02127800000000002, 
 "@source": "Tn12922285", 
-"@target": "Tn12922243"
+"@target": "Tn12922243", 
+"^ot:posteriorSupport": 1
 }
 }, 
 "Tn12922287": {
 "edge1406723": {
 "@length": 0.118703, 
 "@source": "Tn12922287", 
-"@target": "Tn12922279"
+"@target": "Tn12922279", 
+"^ot:posteriorSupport": 1
 }, 
 "edge1406737": {
 "@length": 0.13310699999999998, 
@@ -735,12 +899,14 @@
 "edge1406611": {
 "@length": 0.078598, 
 "@source": "Tn12922291", 
-"@target": "Tn12922236"
+"@target": "Tn12922236", 
+"^ot:posteriorSupport": 1
 }, 
 "edge1406667": {
 "@length": 0.037478999999999985, 
 "@source": "Tn12922291", 
-"@target": "Tn12922298"
+"@target": "Tn12922298", 
+"^ot:posteriorSupport": 1
 }
 }, 
 "Tn12922292": {
@@ -759,12 +925,14 @@
 "edge1406695": {
 "@length": 0.10501699999999992, 
 "@source": "Tn12922293", 
-"@target": "Tn12922260"
+"@target": "Tn12922260", 
+"^ot:posteriorSupport": 1
 }, 
 "edge1406721": {
 "@length": 0.10689800000000005, 
 "@source": "Tn12922293", 
-"@target": "Tn12922287"
+"@target": "Tn12922287", 
+"^ot:posteriorSupport": 1
 }
 }, 
 "Tn12922294": {
@@ -783,7 +951,8 @@
 "edge1406631": {
 "@length": 0.025963999999999987, 
 "@source": "Tn12922296", 
-"@target": "Tn12922292"
+"@target": "Tn12922292", 
+"^ot:posteriorSupport": 1
 }, 
 "edge1406637": {
 "@length": 0.021498000000000017, 
@@ -795,12 +964,14 @@
 "edge1406669": {
 "@length": 0.06604600000000005, 
 "@source": "Tn12922298", 
-"@target": "Tn12922258"
+"@target": "Tn12922258", 
+"^ot:posteriorSupport": 1
 }, 
 "edge1406679": {
 "@length": 0.07097200000000004, 
 "@source": "Tn12922298", 
-"@target": "Tn12922280"
+"@target": "Tn12922280", 
+"^ot:posteriorSupport": 1
 }
 }, 
 "Tn12922300": {
@@ -819,12 +990,26 @@
 "edge1406655": {
 "@length": 0.009453000000000045, 
 "@source": "Tn12922302", 
-"@target": "Tn12922263"
+"@target": "Tn12922263", 
+"^ot:posteriorSupport": 0.84
 }, 
 "edge1406661": {
 "@length": 0.08381000000000005, 
 "@source": "Tn12922302", 
-"@target": "Tn12922255"
+"@target": "Tn12922255", 
+"^ot:posteriorSupport": 1
+}
+}, 
+"Tr87612_ROOT": {
+"Tr87612_ROOT_EDGE": {
+"@source": "Tr87612_ROOT", 
+"@target": "Tn12922248"
+}, 
+"edge1406739": {
+"@length": 0.047661000000000016, 
+"@source": "Tr87612_ROOT", 
+"@target": "Tn12922269", 
+"^ot:posteriorSupport": 1
 }
 }
 }, 
@@ -832,18 +1017,12 @@
 "Tn12922235": {
 "@otu": "Tl1860309"
 }, 
-"Tn12922236": {
-"@label": "1"
-}, 
+"Tn12922236": {}, 
 "Tn12922237": {
 "@otu": "Tl1860301"
 }, 
-"Tn12922238": {
-"@label": "1"
-}, 
-"Tn12922239": {
-"@label": "0.86"
-}, 
+"Tn12922238": {}, 
+"Tn12922239": {}, 
 "Tn12922240": {
 "@otu": "Tl1860310"
 }, 
@@ -853,33 +1032,25 @@
 "Tn12922242": {
 "@otu": "Tl1860282"
 }, 
-"Tn12922243": {
-"@label": "1"
-}, 
+"Tn12922243": {}, 
 "Tn12922244": {
 "@otu": "Tl1860307"
 }, 
-"Tn12922245": {
-"@label": "1"
-}, 
+"Tn12922245": {}, 
 "Tn12922246": {
 "@otu": "Tl1860297"
 }, 
 "Tn12922247": {
 "@otu": "Tl1860305"
 }, 
-"Tn12922248": {
-"@root": true
-}, 
+"Tn12922248": {}, 
 "Tn12922249": {
 "@otu": "Tl1860313"
 }, 
 "Tn12922250": {
 "@otu": "Tl1860293"
 }, 
-"Tn12922251": {
-"@label": "0.58"
-}, 
+"Tn12922251": {}, 
 "Tn12922252": {
 "@otu": "Tl1860308"
 }, 
@@ -889,58 +1060,36 @@
 "Tn12922254": {
 "@otu": "Tl1860303"
 }, 
-"Tn12922255": {
-"@label": "1"
-}, 
+"Tn12922255": {}, 
 "Tn12922256": {
 "@otu": "Tl1860283"
 }, 
-"Tn12922257": {
-"@label": "1"
-}, 
-"Tn12922258": {
-"@label": "1"
-}, 
+"Tn12922257": {}, 
+"Tn12922258": {}, 
 "Tn12922259": {
 "@otu": "Tl1860291"
 }, 
-"Tn12922260": {
-"@label": "1"
-}, 
-"Tn12922261": {
-"@label": "0.71"
-}, 
+"Tn12922260": {}, 
+"Tn12922261": {}, 
 "Tn12922262": {
 "@otu": "Tl1860295"
 }, 
-"Tn12922263": {
-"@label": "0.84"
-}, 
-"Tn12922264": {
-"@label": "0.98"
-}, 
+"Tn12922263": {}, 
+"Tn12922264": {}, 
 "Tn12922265": {}, 
 "Tn12922266": {
 "@otu": "Tl1860302"
 }, 
-"Tn12922267": {
-"@label": "0.98"
-}, 
+"Tn12922267": {}, 
 "Tn12922268": {
 "@otu": "Tl1860285"
 }, 
-"Tn12922269": {
-"@label": "1"
-}, 
+"Tn12922269": {}, 
 "Tn12922270": {
 "@otu": "Tl1860281"
 }, 
-"Tn12922271": {
-"@label": "1"
-}, 
-"Tn12922272": {
-"@label": "0.6"
-}, 
+"Tn12922271": {}, 
+"Tn12922272": {}, 
 "Tn12922273": {
 "@otu": "Tl1860284"
 }, 
@@ -956,18 +1105,10 @@
 "Tn12922277": {
 "@otu": "Tl1860289"
 }, 
-"Tn12922278": {
-"@label": "1"
-}, 
-"Tn12922279": {
-"@label": "1"
-}, 
-"Tn12922280": {
-"@label": "1"
-}, 
-"Tn12922281": {
-"@label": "0.98"
-}, 
+"Tn12922278": {}, 
+"Tn12922279": {}, 
+"Tn12922280": {}, 
+"Tn12922281": {}, 
 "Tn12922282": {
 "@otu": "Tl1860300"
 }, 
@@ -977,72 +1118,65 @@
 "Tn12922284": {
 "@otu": "Tl1860311"
 }, 
-"Tn12922285": {
-"@label": "0.7"
-}, 
+"Tn12922285": {}, 
 "Tn12922286": {
 "@otu": "Tl1860316"
 }, 
-"Tn12922287": {
-"@label": "1"
-}, 
-"Tn12922288": {
-"@label": "0.68"
-}, 
+"Tn12922287": {}, 
+"Tn12922288": {}, 
 "Tn12922289": {
 "@otu": "Tl1860315"
 }, 
 "Tn12922290": {
 "@otu": "Tl1860286"
 }, 
-"Tn12922291": {
-"@label": "1"
-}, 
-"Tn12922292": {
-"@label": "1"
-}, 
-"Tn12922293": {
-"@label": "0.85"
-}, 
-"Tn12922294": {
-"@label": "1"
-}, 
+"Tn12922291": {}, 
+"Tn12922292": {}, 
+"Tn12922293": {}, 
+"Tn12922294": {}, 
 "Tn12922295": {
 "@otu": "Tl1860294"
 }, 
-"Tn12922296": {
-"@label": "1"
-}, 
+"Tn12922296": {}, 
 "Tn12922297": {
 "@otu": "Tl1860296"
 }, 
-"Tn12922298": {
-"@label": "1"
-}, 
+"Tn12922298": {}, 
 "Tn12922299": {
 "@otu": "Tl1860287"
 }, 
-"Tn12922300": {
-"@label": "1"
-}, 
+"Tn12922300": {}, 
 "Tn12922301": {
 "@otu": "Tl1860290"
 }, 
-"Tn12922302": {
-"@label": "0.99"
-}, 
+"Tn12922302": {}, 
 "Tn12922303": {
 "@otu": "Tl1860298"
 }, 
 "Tn12922304": {
 "@otu": "Tl1860312"
+}, 
+"Tr87612_ROOT": {
+"@root": true
 }
 }
 }, 
 "Tr87613": {
-"@label": "Fig. 6", 
+"@label": "Parsimony", 
 "@xsi:type": "nex:FloatTree", 
-"^ot:rootNodeId": "Tn12922314", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:changesCount", 
+"^ot:curatedType": "Maximum parsimony ", 
+"^ot:inGroupClade": "Tn12922321", 
+"^ot:nodeLabelDescription": "", 
+"^ot:nodeLabelMode": "ot:bootstrapValues", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
+"^ot:rootNodeId": "Tr87613_ROOT", 
+"^ot:specifiedRoot": "Tr87613_ROOT", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 36, 
 "^tb:quality.tree": "Preferred Tree", 
@@ -1050,26 +1184,30 @@
 "edgeBySourceId": {
 "Tn12922309": {
 "edge1406765": {
-"@length": 69.0, 
+"@length": 69, 
 "@source": "Tn12922309", 
-"@target": "Tn12922347"
+"@target": "Tn12922347", 
+"^ot:bootstrapValues": 69
 }, 
 "edge1406815": {
-"@length": 99.0, 
+"@length": 99, 
 "@source": "Tn12922309", 
-"@target": "Tn12922363"
+"@target": "Tn12922363", 
+"^ot:bootstrapValues": 99
 }
 }, 
 "Tn12922310": {
 "edge1406847": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "Tn12922310", 
-"@target": "Tn12922361"
+"@target": "Tn12922361", 
+"^ot:bootstrapValues": 100
 }, 
 "edge1406853": {
-"@length": 94.0, 
+"@length": 94, 
 "@source": "Tn12922310", 
-"@target": "Tn12922364"
+"@target": "Tn12922364", 
+"^ot:bootstrapValues": 94
 }
 }, 
 "Tn12922311": {
@@ -1088,21 +1226,18 @@
 "@target": "Tn12922317"
 }, 
 "edge1406837": {
-"@length": 53.0, 
+"@length": 53, 
 "@source": "Tn12922312", 
-"@target": "Tn12922372"
+"@target": "Tn12922372", 
+"^ot:bootstrapValues": 53
 }
 }, 
 "Tn12922314": {
 "edge1406755": {
-"@length": 79.0, 
+"@length": 79, 
 "@source": "Tn12922314", 
-"@target": "Tn12922321"
-}, 
-"edge1406889": {
-"@length": 79.0, 
-"@source": "Tn12922314", 
-"@target": "Tn12922319"
+"@target": "Tn12922321", 
+"^ot:bootstrapValues": 79
 }
 }, 
 "Tn12922315": {
@@ -1111,16 +1246,18 @@
 "@target": "Tn12922309"
 }, 
 "edge1406821": {
-"@length": 54.0, 
+"@length": 54, 
 "@source": "Tn12922315", 
-"@target": "Tn12922323"
+"@target": "Tn12922323", 
+"^ot:bootstrapValues": 54
 }
 }, 
 "Tn12922316": {
 "edge1406825": {
-"@length": 73.0, 
+"@length": 73, 
 "@source": "Tn12922316", 
-"@target": "Tn12922325"
+"@target": "Tn12922325", 
+"^ot:bootstrapValues": 73
 }, 
 "edge1406831": {
 "@source": "Tn12922316", 
@@ -1153,33 +1290,38 @@
 "@target": "Tn12922343"
 }, 
 "edge1406785": {
-"@length": 83.0, 
+"@length": 83, 
 "@source": "Tn12922320", 
-"@target": "Tn12922357"
+"@target": "Tn12922357", 
+"^ot:bootstrapValues": 83
 }
 }, 
 "Tn12922321": {
 "edge1406757": {
-"@length": 87.0, 
+"@length": 87, 
 "@source": "Tn12922321", 
-"@target": "Tn12922368"
+"@target": "Tn12922368", 
+"^ot:bootstrapValues": 87
 }, 
 "edge1406871": {
-"@length": 98.0, 
+"@length": 98, 
 "@source": "Tn12922321", 
-"@target": "Tn12922331"
+"@target": "Tn12922331", 
+"^ot:bootstrapValues": 98
 }
 }, 
 "Tn12922323": {
 "edge1406823": {
-"@length": 86.0, 
+"@length": 86, 
 "@source": "Tn12922323", 
-"@target": "Tn12922316"
+"@target": "Tn12922316", 
+"^ot:bootstrapValues": 86
 }, 
 "edge1406833": {
-"@length": 90.0, 
+"@length": 90, 
 "@source": "Tn12922323", 
-"@target": "Tn12922312"
+"@target": "Tn12922312", 
+"^ot:bootstrapValues": 90
 }
 }, 
 "Tn12922325": {
@@ -1208,9 +1350,10 @@
 "@target": "Tn12922327"
 }, 
 "edge1406875": {
-"@length": 89.0, 
+"@length": 89, 
 "@source": "Tn12922331", 
-"@target": "Tn12922369"
+"@target": "Tn12922369", 
+"^ot:bootstrapValues": 89
 }
 }, 
 "Tn12922333": {
@@ -1225,14 +1368,16 @@
 }, 
 "Tn12922343": {
 "edge1406773": {
-"@length": 99.0, 
+"@length": 99, 
 "@source": "Tn12922343", 
-"@target": "Tn12922345"
+"@target": "Tn12922345", 
+"^ot:bootstrapValues": 99
 }, 
 "edge1406779": {
-"@length": 54.0, 
+"@length": 54, 
 "@source": "Tn12922343", 
-"@target": "Tn12922367"
+"@target": "Tn12922367", 
+"^ot:bootstrapValues": 54
 }
 }, 
 "Tn12922344": {
@@ -1261,9 +1406,10 @@
 "@target": "Tn12922329"
 }, 
 "edge1406809": {
-"@length": 85.0, 
+"@length": 85, 
 "@source": "Tn12922347", 
-"@target": "Tn12922359"
+"@target": "Tn12922359", 
+"^ot:bootstrapValues": 85
 }
 }, 
 "Tn12922348": {
@@ -1298,9 +1444,10 @@
 }, 
 "Tn12922356": {
 "edge1406761": {
-"@length": 87.0, 
+"@length": 87, 
 "@source": "Tn12922356", 
-"@target": "Tn12922315"
+"@target": "Tn12922315", 
+"^ot:bootstrapValues": 87
 }, 
 "edge1406843": {
 "@source": "Tn12922356", 
@@ -1359,14 +1506,16 @@
 }, 
 "Tn12922364": {
 "edge1406855": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "Tn12922364", 
-"@target": "Tn12922333"
+"@target": "Tn12922333", 
+"^ot:bootstrapValues": 100
 }, 
 "edge1406861": {
-"@length": 61.0, 
+"@length": 61, 
 "@source": "Tn12922364", 
-"@target": "Tn12922351"
+"@target": "Tn12922351", 
+"^ot:bootstrapValues": 61
 }
 }, 
 "Tn12922367": {
@@ -1385,21 +1534,24 @@
 "@target": "Tn12922356"
 }, 
 "edge1406845": {
-"@length": 100.0, 
+"@length": 100, 
 "@source": "Tn12922368", 
-"@target": "Tn12922310"
+"@target": "Tn12922310", 
+"^ot:bootstrapValues": 100
 }
 }, 
 "Tn12922369": {
 "edge1406877": {
-"@length": 99.0, 
+"@length": 99, 
 "@source": "Tn12922369", 
-"@target": "Tn12922348"
+"@target": "Tn12922348", 
+"^ot:bootstrapValues": 99
 }, 
 "edge1406883": {
-"@length": 57.0, 
+"@length": 57, 
 "@source": "Tn12922369", 
-"@target": "Tn12922354"
+"@target": "Tn12922354", 
+"^ot:bootstrapValues": 57
 }
 }, 
 "Tn12922372": {
@@ -1421,6 +1573,18 @@
 "@source": "Tn12922374", 
 "@target": "Tn12922311"
 }
+}, 
+"Tr87613_ROOT": {
+"Tr87613_ROOT_EDGE": {
+"@source": "Tr87613_ROOT", 
+"@target": "Tn12922314"
+}, 
+"edge1406889": {
+"@length": 79, 
+"@source": "Tr87613_ROOT", 
+"@target": "Tn12922319", 
+"^ot:bootstrapValues": 79
+}
 }
 }, 
 "nodeById": {
@@ -1437,48 +1601,30 @@
 "@otu": "Tl1860293"
 }, 
 "Tn12922309": {}, 
-"Tn12922310": {
-"@label": "100.0"
-}, 
+"Tn12922310": {}, 
 "Tn12922311": {}, 
-"Tn12922312": {
-"@label": "90.0"
-}, 
+"Tn12922312": {}, 
 "Tn12922313": {
 "@otu": "Tl1860289"
 }, 
-"Tn12922314": {
-"@root": true
-}, 
-"Tn12922315": {
-"@label": "87.0"
-}, 
-"Tn12922316": {
-"@label": "86.0"
-}, 
+"Tn12922314": {}, 
+"Tn12922315": {}, 
+"Tn12922316": {}, 
 "Tn12922317": {
 "@otu": "Tl1860308"
 }, 
 "Tn12922318": {}, 
-"Tn12922319": {
-"@label": "79.0"
-}, 
+"Tn12922319": {}, 
 "Tn12922320": {}, 
-"Tn12922321": {
-"@label": "79.0"
-}, 
+"Tn12922321": {}, 
 "Tn12922322": {
 "@otu": "Tl1860288"
 }, 
-"Tn12922323": {
-"@label": "54.0"
-}, 
+"Tn12922323": {}, 
 "Tn12922324": {
 "@otu": "Tl1860309"
 }, 
-"Tn12922325": {
-"@label": "73.0"
-}, 
+"Tn12922325": {}, 
 "Tn12922326": {
 "@otu": "Tl1860302"
 }, 
@@ -1492,15 +1638,11 @@
 "Tn12922330": {
 "@otu": "Tl1860311"
 }, 
-"Tn12922331": {
-"@label": "98.0"
-}, 
+"Tn12922331": {}, 
 "Tn12922332": {
 "@otu": "Tl1860314"
 }, 
-"Tn12922333": {
-"@label": "100.0"
-}, 
+"Tn12922333": {}, 
 "Tn12922334": {
 "@otu": "Tl1860297"
 }, 
@@ -1530,92 +1672,67 @@
 }, 
 "Tn12922343": {}, 
 "Tn12922344": {}, 
-"Tn12922345": {
-"@label": "99.0"
-}, 
+"Tn12922345": {}, 
 "Tn12922346": {
 "@otu": "Tl1860304"
 }, 
-"Tn12922347": {
-"@label": "69.0"
-}, 
-"Tn12922348": {
-"@label": "99.0"
-}, 
+"Tn12922347": {}, 
+"Tn12922348": {}, 
 "Tn12922349": {
 "@otu": "Tl1860282"
 }, 
 "Tn12922350": {
 "@otu": "Tl1860285"
 }, 
-"Tn12922351": {
-"@label": "61.0"
-}, 
+"Tn12922351": {}, 
 "Tn12922352": {
 "@otu": "Tl1860300"
 }, 
 "Tn12922353": {
 "@otu": "Tl1860295"
 }, 
-"Tn12922354": {
-"@label": "57.0"
-}, 
+"Tn12922354": {}, 
 "Tn12922355": {
 "@otu": "Tl1860294"
 }, 
 "Tn12922356": {}, 
-"Tn12922357": {
-"@label": "83.0"
-}, 
+"Tn12922357": {}, 
 "Tn12922358": {
 "@otu": "Tl1860315"
 }, 
-"Tn12922359": {
-"@label": "85.0"
-}, 
+"Tn12922359": {}, 
 "Tn12922360": {
 "@otu": "Tl1860284"
 }, 
-"Tn12922361": {
-"@label": "100.0"
-}, 
+"Tn12922361": {}, 
 "Tn12922362": {}, 
-"Tn12922363": {
-"@label": "99.0"
-}, 
-"Tn12922364": {
-"@label": "94.0"
-}, 
+"Tn12922363": {}, 
+"Tn12922364": {}, 
 "Tn12922365": {
 "@otu": "Tl1860307"
 }, 
 "Tn12922366": {
 "@otu": "Tl1860291"
 }, 
-"Tn12922367": {
-"@label": "54.0"
-}, 
-"Tn12922368": {
-"@label": "87.0"
-}, 
-"Tn12922369": {
-"@label": "89.0"
-}, 
+"Tn12922367": {}, 
+"Tn12922368": {}, 
+"Tn12922369": {}, 
 "Tn12922370": {
 "@otu": "Tl1860305"
 }, 
 "Tn12922371": {
 "@otu": "Tl1860312"
 }, 
-"Tn12922372": {
-"@label": "53.0"
-}, 
+"Tn12922372": {}, 
 "Tn12922373": {
 "@otu": "Tl1860299"
 }, 
 "Tn12922374": {}, 
 "Tn12922375": {
 "@otu": "Tl1860281"
+}, 
+"Tr87613_ROOT": {
+"@root": true
 }
 }
 }
