@@ -55,16 +55,106 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2018-06-04T19:19:51.152Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "Ascomycetes"
 }, 
-"^ot:curatorName": "Kaitlin Allen ", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}, 
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": "$1"
+}, 
+"old": {
+"$": "^(\\S*\\s+\\S*).*"
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2018-06-04T19:19:51.152Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Kaitlin Allen "
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S18465"
 }, 
+"^ot:focalClade": 5281392, 
+"^ot:focalCladeOTTTaxonName": "Ascomycetes", 
 "^ot:otusElementOrder": [
 "Tls48533"
 ], 
@@ -74,6 +164,7 @@
 }, 
 "^ot:studyPublicationReference": "R\u00e9blov\u00e1 M., Fournier J., & Stepanek V. 2016. Two new lineages of aquatic ascomycetes: Atractospora gen. nov. and Rubellisphaeria gen. et sp. nov., and a sexual morph of Myrmecridium montsegurinum sp. nov. Mycological Progress, 15: 21.", 
 "^ot:studyYear": 2016, 
+"^ot:tag": [], 
 "^ot:taxonLinkPrefixes": {
 "@ubio": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:", 
 "@uniprot": "http://purl.uniprot.org/taxonomy/"
@@ -99,6 +190,8 @@
 "otuById": {
 "Tl2061736": {
 "^ot:originalLabel": "Fragosphaeria purpurea", 
+"^ot:ottId": 5316482, 
+"^ot:ottTaxonName": "Cephalotheca purpurea", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 11454, 
 "@tb:identifier.taxonVariant": 27359, 
@@ -107,13 +200,17 @@
 }
 }, 
 "Tl2061737": {
-"^ot:originalLabel": "Myrmecridium obovoideum"
+"^ot:originalLabel": "Myrmecridium obovoideum", 
+"^ot:ottId": 6380189, 
+"^ot:ottTaxonName": "Myrmecridium obovoideum"
 }, 
 "Tl2061738": {
 "^ot:originalLabel": "Atractospora reticulata"
 }, 
 "Tl2061739": {
 "^ot:originalLabel": "Ceratostomella cuspidata", 
+"^ot:ottId": 911772, 
+"^ot:ottTaxonName": "Ceratostomella cuspidata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 546137, 
 "@tb:identifier.taxonVariant": 724256, 
@@ -122,10 +219,14 @@
 }
 }, 
 "Tl2061740": {
-"^ot:originalLabel": "Myrmecridium iridis"
+"^ot:originalLabel": "Myrmecridium iridis", 
+"^ot:ottId": 5682588, 
+"^ot:ottTaxonName": "Myrmecridium iridis"
 }, 
 "Tl2061741": {
 "^ot:originalLabel": "Papulosa amerospora", 
+"^ot:ottId": 77437, 
+"^ot:ottTaxonName": "Papulosa amerospora", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 46310, 
 "@tb:identifier.taxonVariant": 108546, 
@@ -137,13 +238,19 @@
 "^ot:originalLabel": "Cataractispora recepticuli"
 }, 
 "Tl2061743": {
-"^ot:originalLabel": "Myrmecridium phragmitis"
+"^ot:originalLabel": "Myrmecridium phragmitis", 
+"^ot:ottId": 266113, 
+"^ot:ottTaxonName": "Myrmecridium phragmitis"
 }, 
 "Tl2061744": {
-"^ot:originalLabel": "Phaeoacremonium minimum"
+"^ot:originalLabel": "Phaeoacremonium minimum", 
+"^ot:ottId": 393534, 
+"^ot:ottTaxonName": "Phaeoacremonium aleophilum"
 }, 
 "Tl2061745": {
 "^ot:originalLabel": "Barbatosphaeria barbirostris", 
+"^ot:ottId": 129215, 
+"^ot:ottTaxonName": "Barbatosphaeria barbirostris", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 441191, 
 "@tb:identifier.taxonVariant": 582220
@@ -151,6 +258,8 @@
 }, 
 "Tl2061746": {
 "^ot:originalLabel": "Lentomitella cirrhosa", 
+"^ot:ottId": 950118, 
+"^ot:ottTaxonName": "Lentomitella cirrhosa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 274348, 
 "@tb:identifier.taxonVariant": 329078, 
@@ -159,22 +268,32 @@
 }
 }, 
 "Tl2061747": {
-"^ot:originalLabel": "Woswasia atropurpurea"
+"^ot:originalLabel": "Woswasia atropurpurea", 
+"^ot:ottId": 387627, 
+"^ot:ottTaxonName": "Woswasia atropurpurea"
 }, 
 "Tl2061748": {
-"^ot:originalLabel": "Macgarvieomyces borealis"
+"^ot:originalLabel": "Macgarvieomyces borealis", 
+"^ot:ottId": 992356, 
+"^ot:ottTaxonName": "Pyricularia borealis"
 }, 
 "Tl2061749": {
-"^ot:originalLabel": "Myrmecridium thailandicum"
+"^ot:originalLabel": "Myrmecridium thailandicum", 
+"^ot:ottId": 5298534, 
+"^ot:ottTaxonName": "Myrmecridium thailandicum"
 }, 
 "Tl2061750": {
 "^ot:originalLabel": "Atractospora ellipsoidea"
 }, 
 "Tl2061751": {
-"^ot:originalLabel": "Myrmecridium banksiae"
+"^ot:originalLabel": "Myrmecridium banksiae", 
+"^ot:ottId": 868960, 
+"^ot:ottTaxonName": "Myrmecridium banksiae"
 }, 
 "Tl2061752": {
 "^ot:originalLabel": "Diaporthe phaseolorum", 
+"^ot:ottId": 99968, 
+"^ot:ottTaxonName": "Phomopsis phaseoli", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 8901, 
 "@tb:identifier.taxonVariant": 21423, 
@@ -184,6 +303,8 @@
 }, 
 "Tl2061753": {
 "^ot:originalLabel": "Cornipulvina ellipsoides", 
+"^ot:ottId": 747084, 
+"^ot:ottTaxonName": "Cornipulvina ellipsoides", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 311010, 
 "@tb:identifier.taxonVariant": 357509, 
@@ -193,6 +314,8 @@
 }, 
 "Tl2061754": {
 "^ot:originalLabel": "Calosphaeria pulchella", 
+"^ot:ottId": 324855, 
+"^ot:ottTaxonName": "Calosphaeria pulchella", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 4559, 
 "@tb:identifier.taxonVariant": 10973, 
@@ -201,13 +324,19 @@
 }
 }, 
 "Tl2061755": {
-"^ot:originalLabel": "Togniniella microspora"
+"^ot:originalLabel": "Togniniella microspora", 
+"^ot:ottId": 324849, 
+"^ot:ottTaxonName": "Togniniella microspora"
 }, 
 "Tl2061756": {
-"^ot:originalLabel": "Atractospora reticulata"
+"^ot:originalLabel": "Atractospora reticulata", 
+"^ot:ottId": 5980603, 
+"^ot:ottTaxonName": "Atractospora reticulata"
 }, 
 "Tl2061757": {
 "^ot:originalLabel": "Camarops microspora", 
+"^ot:ottId": 758070, 
+"^ot:ottTaxonName": "Camarops microspora", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 4633, 
 "@tb:identifier.taxonVariant": 11148, 
@@ -220,6 +349,8 @@
 }, 
 "Tl2061759": {
 "^ot:originalLabel": "Leotia lubrica", 
+"^ot:ottId": 339442, 
+"^ot:ottTaxonName": "Leotia lubrica", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 15574, 
 "@tb:identifier.taxonVariant": 36529, 
@@ -229,6 +360,8 @@
 }, 
 "Tl2061760": {
 "^ot:originalLabel": "Chaetosphaeria curvispora", 
+"^ot:ottId": 95328, 
+"^ot:ottTaxonName": "Chaetosphaeria curvispora", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5611, 
 "@tb:identifier.taxonVariant": 13587, 
@@ -237,10 +370,14 @@
 }
 }, 
 "Tl2061761": {
-"^ot:originalLabel": "Barbatosphaeria dryina"
+"^ot:originalLabel": "Barbatosphaeria dryina", 
+"^ot:ottId": 3694600, 
+"^ot:ottTaxonName": "Calosphaeria dryina"
 }, 
 "Tl2061762": {
 "^ot:originalLabel": "Gaeumannomyces graminis", 
+"^ot:ottId": 209040, 
+"^ot:ottTaxonName": "Gaeumannomyces graminis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 11633, 
 "@tb:identifier.taxonVariant": 27702, 
@@ -249,8 +386,9 @@
 }
 }, 
 "Tl2061763": {
-"^ot:altLabel": "Raffaelea ambrosiae", 
 "^ot:originalLabel": "Raffaelea ambrosiae CBS18564", 
+"^ot:ottId": 412399, 
+"^ot:ottTaxonName": "Raffaelea ambrosiae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 67939, 
 "@tb:identifier.taxonVariant": 143392, 
@@ -259,10 +397,14 @@
 }
 }, 
 "Tl2061764": {
-"^ot:originalLabel": "Platytrachelon abietis"
+"^ot:originalLabel": "Platytrachelon abietis", 
+"^ot:ottId": 785844, 
+"^ot:ottTaxonName": "Ceratosphaeria abietis"
 }, 
 "Tl2061765": {
 "^ot:originalLabel": "Sordaria fimicola", 
+"^ot:ottId": 615465, 
+"^ot:ottTaxonName": "Sordaria fimicola", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 624583, 
 "@tb:identifier.taxonVariant": 841503, 
@@ -272,6 +414,8 @@
 }, 
 "Tl2061766": {
 "^ot:originalLabel": "Thyridium vestitum", 
+"^ot:ottId": 5298733, 
+"^ot:ottTaxonName": "Mycothyridium vestitum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 44060, 
 "@tb:identifier.taxonVariant": 103040, 
@@ -281,6 +425,8 @@
 }, 
 "Tl2061767": {
 "^ot:originalLabel": "Cryptadelphia groenendalensis", 
+"^ot:ottId": 194842, 
+"^ot:ottTaxonName": "Cryptadelphia groenendalensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 7572, 
 "@tb:identifier.taxonVariant": 18292, 
@@ -290,6 +436,8 @@
 }, 
 "Tl2061768": {
 "^ot:originalLabel": "Submersisphaeria aquatica", 
+"^ot:ottId": 89988, 
+"^ot:ottTaxonName": "Submersisphaeria aquatica", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 28222, 
 "@tb:identifier.taxonVariant": 65836, 
@@ -298,10 +446,14 @@
 }
 }, 
 "Tl2061769": {
-"^ot:originalLabel": "Chaetosphaeria ciliata"
+"^ot:originalLabel": "Chaetosphaeria ciliata", 
+"^ot:ottId": 420569, 
+"^ot:ottTaxonName": "Chaetosphaeria ciliata"
 }, 
 "Tl2061770": {
 "^ot:originalLabel": "Gelasinospora tetrasperma", 
+"^ot:ottId": 424728, 
+"^ot:ottTaxonName": "Gelasinospora tetrasperma", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 11835, 
 "@tb:identifier.taxonVariant": 28173, 
@@ -311,6 +463,8 @@
 }, 
 "Tl2061771": {
 "^ot:originalLabel": "Annulatascus velatisporus", 
+"^ot:ottId": 376724, 
+"^ot:ottTaxonName": "Annulatascus velatisporus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 1687, 
 "@tb:identifier.taxonVariant": 4183, 
@@ -319,10 +473,14 @@
 }
 }, 
 "Tl2061772": {
-"^ot:originalLabel": "Bullimyces communis"
+"^ot:originalLabel": "Bullimyces communis", 
+"^ot:ottId": 323877, 
+"^ot:ottTaxonName": "Bullimyces communis"
 }, 
 "Tl2061773": {
 "^ot:originalLabel": "Ceratocystiopsis minuta", 
+"^ot:ottId": 861697, 
+"^ot:ottTaxonName": "Ceratocystiopsis minuta", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 47865, 
 "@tb:identifier.taxonVariant": 111999, 
@@ -332,6 +490,8 @@
 }, 
 "Tl2061774": {
 "^ot:originalLabel": "Jattaea algeriensis", 
+"^ot:ottId": 3694623, 
+"^ot:ottTaxonName": "Jattaea algeriensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 609785, 
 "@tb:identifier.taxonVariant": 814768, 
@@ -340,6 +500,8 @@
 }, 
 "Tl2061775": {
 "^ot:originalLabel": "Cyanoannulus petersenii", 
+"^ot:ottId": 616475, 
+"^ot:ottTaxonName": "Cyanoannulus petersenii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 7846, 
 "@tb:identifier.taxonVariant": 18866, 
@@ -349,6 +511,8 @@
 }, 
 "Tl2061776": {
 "^ot:originalLabel": "Lasiosphaeria ovina", 
+"^ot:ottId": 597716, 
+"^ot:ottTaxonName": "Lasiosphaeria ovina", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 15350, 
 "@tb:identifier.taxonVariant": 36032, 
@@ -358,6 +522,8 @@
 }, 
 "Tl2061777": {
 "^ot:originalLabel": "Ascitendus austriacus", 
+"^ot:ottId": 163926, 
+"^ot:ottTaxonName": "Ascitendus austriacus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 258647, 
 "@tb:identifier.taxonVariant": 316711, 
@@ -369,10 +535,14 @@
 "^ot:originalLabel": "Pseudoproboscispora caudae suis"
 }, 
 "Tl2061779": {
-"^ot:originalLabel": "Fluminicola coronata"
+"^ot:originalLabel": "Fluminicola coronata", 
+"^ot:ottId": 5308607, 
+"^ot:ottTaxonName": "Fluminicola coronata"
 }, 
 "Tl2061780": {
 "^ot:originalLabel": "Phomatospora bellaminuta", 
+"^ot:ottId": 1086864, 
+"^ot:ottTaxonName": "Phomatospora bellaminuta", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 425218, 
 "@tb:identifier.taxonVariant": 558686, 
@@ -381,10 +551,14 @@
 }
 }, 
 "Tl2061781": {
-"^ot:originalLabel": "Ceratolenta caudata"
+"^ot:originalLabel": "Ceratolenta caudata", 
+"^ot:ottId": 785847, 
+"^ot:ottTaxonName": "Ceratolenta caudata"
 }, 
 "Tl2061782": {
 "^ot:originalLabel": "Lentomitella tropica", 
+"^ot:ottId": 987529, 
+"^ot:ottTaxonName": "Lentomitella tropica", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 455716, 
 "@tb:identifier.taxonVariant": 603398
@@ -392,6 +566,8 @@
 }, 
 "Tl2061783": {
 "^ot:originalLabel": "Vertexicola confusa", 
+"^ot:ottId": 652857, 
+"^ot:ottTaxonName": "Vertexicola confusa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 107041, 
 "@tb:identifier.taxonVariant": 185590, 
@@ -400,10 +576,14 @@
 }
 }, 
 "Tl2061784": {
-"^ot:originalLabel": "Xylochrysis lucida"
+"^ot:originalLabel": "Xylochrysis lucida", 
+"^ot:ottId": 5682592, 
+"^ot:ottTaxonName": "Xylochrysis lucida"
 }, 
 "Tl2061785": {
 "^ot:originalLabel": "Ceratostomella pyrenaica", 
+"^ot:ottId": 662125, 
+"^ot:ottTaxonName": "Ceratostomella pyrenaica", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 296016, 
 "@tb:identifier.taxonVariant": 346103, 
@@ -413,6 +593,8 @@
 }, 
 "Tl2061786": {
 "^ot:originalLabel": "Myrmecridium flexuosum", 
+"^ot:ottId": 1013075, 
+"^ot:ottTaxonName": "Myrmecridium flexuosum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 401788, 
 "@tb:identifier.taxonVariant": 538884
@@ -420,6 +602,8 @@
 }, 
 "Tl2061787": {
 "^ot:originalLabel": "Brunneosporella aquatica", 
+"^ot:ottId": 4054996, 
+"^ot:ottTaxonName": "Brunneosporella aquatica", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 610070, 
 "@tb:identifier.taxonVariant": 815165, 
@@ -428,6 +612,8 @@
 }, 
 "Tl2061788": {
 "^ot:originalLabel": "Myrmecridium schulzeri", 
+"^ot:ottId": 580717, 
+"^ot:ottTaxonName": "Myrmecridium schulzeri", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 401789, 
 "@tb:identifier.taxonVariant": 538885
@@ -435,6 +621,8 @@
 }, 
 "Tl2061789": {
 "^ot:originalLabel": "Valsa ambiens", 
+"^ot:ottId": 822584, 
+"^ot:ottTaxonName": "Valsa ambiens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 30434, 
 "@tb:identifier.taxonVariant": 71007, 
@@ -443,10 +631,14 @@
 }
 }, 
 "Tl2061790": {
-"^ot:originalLabel": "Atractospora ellipsoidea"
+"^ot:originalLabel": "Atractospora ellipsoidea", 
+"^ot:ottId": 616477, 
+"^ot:ottTaxonName": "Aquaticola ellipsoidea"
 }, 
 "Tl2061791": {
 "^ot:originalLabel": "Lentomitella pallibrunnea", 
+"^ot:ottId": 987527, 
+"^ot:ottTaxonName": "Lentomitella pallibrunnea", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 455717, 
 "@tb:identifier.taxonVariant": 603399
@@ -454,6 +646,8 @@
 }, 
 "Tl2061792": {
 "^ot:originalLabel": "Gnomonia gnomon", 
+"^ot:ottId": 343688, 
+"^ot:ottTaxonName": "Gnomonia gnomon", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 12365, 
 "@tb:identifier.taxonVariant": 29359, 
@@ -462,10 +656,14 @@
 }
 }, 
 "Tl2061793": {
-"^ot:originalLabel": "Rhamphoria pyriformis"
+"^ot:originalLabel": "Rhamphoria pyriformis", 
+"^ot:ottId": 3695786, 
+"^ot:ottTaxonName": "Rhamphoria pyriformis"
 }, 
 "Tl2061794": {
 "^ot:originalLabel": "Ophiostoma piliferum", 
+"^ot:ottId": 3699307, 
+"^ot:ottTaxonName": "Ceratocystis pilifera", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 19673, 
 "@tb:identifier.taxonVariant": 45778, 
@@ -474,10 +672,14 @@
 }
 }, 
 "Tl2061795": {
-"^ot:originalLabel": "Phaeoacremonium fraxinopennsylvanicum"
+"^ot:originalLabel": "Phaeoacremonium fraxinopennsylvanicum", 
+"^ot:ottId": 519058, 
+"^ot:ottTaxonName": "Phaeoacremonium mortoniae"
 }, 
 "Tl2061796": {
 "^ot:originalLabel": "Cryptadelphia polyseptata", 
+"^ot:ottId": 194848, 
+"^ot:ottTaxonName": "Cryptadelphia polyseptata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 7573, 
 "@tb:identifier.taxonVariant": 18293, 
@@ -487,6 +689,8 @@
 }, 
 "Tl2061797": {
 "^ot:originalLabel": "Lentomitella crinigera", 
+"^ot:ottId": 324850, 
+"^ot:ottTaxonName": "Lentomitella crinigera", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 274325, 
 "@tb:identifier.taxonVariant": 329055, 
@@ -496,6 +700,8 @@
 }, 
 "Tl2061798": {
 "^ot:originalLabel": "Natantiella ligneola", 
+"^ot:ottId": 911773, 
+"^ot:ottTaxonName": "Natantiella ligneola", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 546138, 
 "@tb:identifier.taxonVariant": 724257
@@ -503,6 +709,8 @@
 }, 
 "Tl2061799": {
 "^ot:originalLabel": "Magnaporthe grisea", 
+"^ot:ottId": 258235, 
+"^ot:ottTaxonName": "Magnaporthe grisea", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 16758, 
 "@tb:identifier.taxonVariant": 39253, 
@@ -511,10 +719,14 @@
 }
 }, 
 "Tl2061800": {
-"^ot:originalLabel": "Atractospora verruculosa"
+"^ot:originalLabel": "Atractospora verruculosa", 
+"^ot:ottId": 5980604, 
+"^ot:ottTaxonName": "Atractospora verruculosa"
 }, 
 "Tl2061801": {
 "^ot:originalLabel": "Clohiesia corticola", 
+"^ot:ottId": 652855, 
+"^ot:ottTaxonName": "Clohiesia corticola", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6458, 
 "@tb:identifier.taxonVariant": 15654, 
@@ -524,6 +736,8 @@
 }, 
 "Tl2061802": {
 "^ot:originalLabel": "Lanspora coronata", 
+"^ot:ottId": 121217, 
+"^ot:ottTaxonName": "Lanspora coronata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 46312, 
 "@tb:identifier.taxonVariant": 108548, 
@@ -533,6 +747,8 @@
 }, 
 "Tl2061803": {
 "^ot:originalLabel": "Microglossum rufum", 
+"^ot:ottId": 554275, 
+"^ot:ottTaxonName": "Microglossum rufum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 36460, 
 "@tb:identifier.taxonVariant": 84321, 
@@ -542,6 +758,8 @@
 }, 
 "Tl2061804": {
 "^ot:originalLabel": "Annulusmagnus triseptatus", 
+"^ot:ottId": 974230, 
+"^ot:ottTaxonName": "Annulusmagnus triseptatus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 258646, 
 "@tb:identifier.taxonVariant": 316710, 
@@ -551,6 +769,8 @@
 }, 
 "Tl2061805": {
 "^ot:originalLabel": "Camaropella pugillus", 
+"^ot:ottId": 144112, 
+"^ot:ottTaxonName": "Camaropella pugillus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 464391, 
 "@tb:identifier.taxonVariant": 616433, 
@@ -560,19 +780,27 @@
 }, 
 "Tl2061806": {
 "^ot:originalLabel": "Muraeriata africana", 
+"^ot:ottId": 4052053, 
+"^ot:ottTaxonName": "Muraeriata africana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 455852, 
 "@tb:identifier.taxonVariant": 603572
 }
 }, 
 "Tl2061807": {
-"^ot:originalLabel": "Atractospora decumbens"
+"^ot:originalLabel": "Atractospora decumbens", 
+"^ot:ottId": 5980602, 
+"^ot:ottTaxonName": "Atractospora decumbens"
 }, 
 "Tl2061808": {
-"^ot:originalLabel": "Myrmecridium montsegurinum"
+"^ot:originalLabel": "Myrmecridium montsegurinum", 
+"^ot:ottId": 5982358, 
+"^ot:ottTaxonName": "Myrmecridium montsegurinum"
 }, 
 "Tl2061809": {
 "^ot:originalLabel": "Xylomelasma sordida", 
+"^ot:ottId": 324852, 
+"^ot:ottTaxonName": "Xylomelasma sordida", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 274326, 
 "@tb:identifier.taxonVariant": 329056, 
@@ -582,16 +810,22 @@
 }, 
 "Tl2061810": {
 "^ot:originalLabel": "Rhodoveronaea varioseptata", 
+"^ot:ottId": 214854, 
+"^ot:ottTaxonName": "Rhodoveronaea varioseptata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 401802, 
 "@tb:identifier.taxonVariant": 538894
 }
 }, 
 "Tl2061811": {
-"^ot:originalLabel": "Rubellisphaeria abscondita"
+"^ot:originalLabel": "Rubellisphaeria abscondita", 
+"^ot:ottId": 5982429, 
+"^ot:ottTaxonName": "Rubellisphaeria abscondita"
 }, 
 "Tl2061812": {
 "^ot:originalLabel": "Rhamphoria delicatula", 
+"^ot:ottId": 645068, 
+"^ot:ottTaxonName": "Rhamphoria delicatula", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 25105, 
 "@tb:identifier.taxonVariant": 58805, 
@@ -600,8 +834,9 @@
 }
 }, 
 "Tl2096048": {
-"^ot:altLabel": "Lentomitella crinigera", 
 "^ot:originalLabel": "Lentomitella crinigera CBS131481", 
+"^ot:ottId": 324850, 
+"^ot:ottTaxonName": "Lentomitella crinigera", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 274325, 
 "@tb:identifier.taxonVariant": 329055, 
@@ -611,33 +846,46 @@
 }, 
 "Tl2096049": {
 "^ot:originalLabel": "Myrmecridium flexuosum CBS39876", 
+"^ot:ottId": 1013075, 
+"^ot:ottTaxonName": "Myrmecridium flexuosum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 401788, 
 "@tb:identifier.taxonVariant": 538884
 }
 }, 
 "Tl2096050": {
-"^ot:originalLabel": "Myrmecridium banksiae CBS132536"
+"^ot:originalLabel": "Myrmecridium banksiae CBS132536", 
+"^ot:ottId": 868960, 
+"^ot:ottTaxonName": "Myrmecridium banksiae"
 }, 
 "Tl2096051": {
-"^ot:originalLabel": "Myrmecridium montsegurinum JF13180"
+"^ot:originalLabel": "Myrmecridium montsegurinum JF13180", 
+"^ot:ottId": 5982358, 
+"^ot:ottTaxonName": "Myrmecridium montsegurinum"
 }, 
 "Tl2096052": {
-"^ot:originalLabel": "Myrmecridium thailandicum CPC21694"
+"^ot:originalLabel": "Myrmecridium thailandicum CPC21694", 
+"^ot:ottId": 5298534, 
+"^ot:ottTaxonName": "Myrmecridium thailandicum"
 }, 
 "Tl2096053": {
-"^ot:originalLabel": "Myrmecridium obovoideum HGUP0314"
+"^ot:originalLabel": "Myrmecridium obovoideum HGUP0314", 
+"^ot:ottId": 6380189, 
+"^ot:ottTaxonName": "Myrmecridium obovoideum"
 }, 
 "Tl2096054": {
 "^ot:originalLabel": "Myrmecridium schulzeri CBS10054", 
+"^ot:ottId": 580717, 
+"^ot:ottTaxonName": "Myrmecridium schulzeri", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 401789, 
 "@tb:identifier.taxonVariant": 538885
 }
 }, 
 "Tl2096055": {
-"^ot:altLabel": "Lentomitella cirrhosa", 
 "^ot:originalLabel": "Lentomitella cirrhosa ICMP15131", 
+"^ot:ottId": 950118, 
+"^ot:ottTaxonName": "Lentomitella cirrhosa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 274348, 
 "@tb:identifier.taxonVariant": 329078, 
@@ -646,10 +894,14 @@
 }
 }, 
 "Tl2096056": {
-"^ot:originalLabel": "Myrmecridium iridis CPC25084"
+"^ot:originalLabel": "Myrmecridium iridis CPC25084", 
+"^ot:ottId": 5682588, 
+"^ot:ottTaxonName": "Myrmecridium iridis"
 }, 
 "Tl2096057": {
-"^ot:originalLabel": "Myrmecridium phragmitis CBS131311"
+"^ot:originalLabel": "Myrmecridium phragmitis CBS131311", 
+"^ot:ottId": 266113, 
+"^ot:ottTaxonName": "Myrmecridium phragmitis"
 }
 }
 }
@@ -667,7 +919,18 @@
 "Tr92106": {
 "@label": "Fig. 1", 
 "@xsi:type": "nex:FloatTree", 
-"^ot:rootNodeId": "Tn13644724", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:changesCount", 
+"^ot:curatedType": "Bayesian inference ", 
+"^ot:inGroupClade": "Tn13644665", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
+"^ot:rootNodeId": "Tr92106_ROOT", 
+"^ot:specifiedRoot": "Tr92106_ROOT", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 75, 
 "^tb:quality.tree": "Preferred Tree", 
@@ -1398,11 +1661,6 @@
 "@length": 0.2849985112331029, 
 "@source": "Tn13644724", 
 "@target": "Tn13644665"
-}, 
-"edge35543": {
-"@length": 0.2849985112331029, 
-"@source": "Tn13644724", 
-"@target": "Tn13644692"
 }
 }, 
 "Tn13644726": {
@@ -1573,6 +1831,17 @@
 "@length": 0.02398382250937537, 
 "@source": "Tn13644752", 
 "@target": "Tn13644659"
+}
+}, 
+"Tr92106_ROOT": {
+"Tr92106_ROOT_EDGE": {
+"@source": "Tr92106_ROOT", 
+"@target": "Tn13644724"
+}, 
+"edge35543": {
+"@length": 0.2849985112331029, 
+"@source": "Tr92106_ROOT", 
+"@target": "Tn13644692"
 }
 }
 }, 
@@ -1823,9 +2092,7 @@
 "@otu": "Tl2061803"
 }, 
 "Tn13644723": {}, 
-"Tn13644724": {
-"@root": true
-}, 
+"Tn13644724": {}, 
 "Tn13644725": {
 "@otu": "Tl2061777"
 }, 
@@ -1879,13 +2146,27 @@
 "Tn13644751": {
 "@otu": "Tl2061765"
 }, 
-"Tn13644752": {}
+"Tn13644752": {}, 
+"Tr92106_ROOT": {
+"@root": true
+}
 }
 }, 
 "Tr92107": {
 "@label": "Fig. 2", 
 "@xsi:type": "nex:FloatTree", 
-"^ot:rootNodeId": "Tn13644758", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:changesCount", 
+"^ot:curatedType": "Bayesian inference ", 
+"^ot:inGroupClade": "Tn13644754", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
+"^ot:rootNodeId": "Tr92107_ROOT", 
+"^ot:specifiedRoot": "Tr92107_ROOT", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 10, 
 "^tb:quality.tree": "Preferred Tree", 
@@ -1920,11 +2201,6 @@
 "@length": 0.09510391969931827, 
 "@source": "Tn13644758", 
 "@target": "Tn13644754"
-}, 
-"edge35589": {
-"@length": 0.09510391969931827, 
-"@source": "Tn13644758", 
-"@target": "Tn13644761"
 }
 }, 
 "Tn13644761": {
@@ -1998,6 +2274,17 @@
 "@source": "Tn13644771", 
 "@target": "Tn13644757"
 }
+}, 
+"Tr92107_ROOT": {
+"Tr92107_ROOT_EDGE": {
+"@source": "Tr92107_ROOT", 
+"@target": "Tn13644758"
+}, 
+"edge35589": {
+"@length": 0.09510391969931827, 
+"@source": "Tr92107_ROOT", 
+"@target": "Tn13644761"
+}
 }
 }, 
 "nodeById": {
@@ -2012,9 +2299,7 @@
 "Tn13644757": {
 "@otu": "Tl2096056"
 }, 
-"Tn13644758": {
-"@root": true
-}, 
+"Tn13644758": {}, 
 "Tn13644759": {
 "@otu": "Tl2096057"
 }, 
@@ -2041,7 +2326,10 @@
 "@otu": "Tl2096048"
 }, 
 "Tn13644770": {}, 
-"Tn13644771": {}
+"Tn13644771": {}, 
+"Tr92107_ROOT": {
+"@root": true
+}
 }
 }
 }
