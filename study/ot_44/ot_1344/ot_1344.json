@@ -60,22 +60,105 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2018-06-05T17:53:23.703Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "Mammals"
 }, 
-"^ot:curatorName": "sbyrum", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2018-06-05T17:53:23.703Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"sbyrum"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S21191"
 }, 
+"^ot:focalCladeOTTTaxonName": "", 
 "^ot:otusElementOrder": [
 "Tls57970"
 ], 
 "^ot:studyId": "ot_1344", 
+"^ot:studyPublication": {
+"@href": ""
+}, 
 "^ot:studyPublicationReference": "Toljagi&#263; O., Voje K.L., Matschiner M., Liow L., & Hansen T.F. 2017. Millions of Years Behind: Slow Adaptation of Ruminants to Grasslands. Systematic Biology, .", 
 "^ot:studyYear": 2017, 
+"^ot:tag": [], 
 "^ot:taxonLinkPrefixes": {
 "@ubio": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:", 
 "@uniprot": "http://purl.uniprot.org/taxonomy/"
@@ -98,8 +181,9 @@
 "^skos:historyNote": "Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlOTUWriter@79065e63 $Rev$", 
 "otuById": {
 "Tl2829639": {
-"^ot:altLabel": "Ammotragus lervia", 
 "^ot:originalLabel": "Ammotragus lervia FJ207522", 
+"^ot:ottId": 768699, 
+"^ot:ottTaxonName": "Ammotragus lervia", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 1201, 
 "@tb:identifier.taxonVariant": 3143, 
@@ -108,8 +192,9 @@
 }
 }, 
 "Tl2829640": {
-"^ot:altLabel": "Sus scrofa", 
 "^ot:originalLabel": "Sus scrofa FJ237000", 
+"^ot:ottId": 730013, 
+"^ot:ottTaxonName": "Sus scrofa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 28275, 
 "@tb:identifier.taxonVariant": 65944, 
@@ -119,6 +204,8 @@
 }, 
 "Tl2829641": {
 "^ot:originalLabel": "Cephalorhynchus heavisidii", 
+"^ot:ottId": 860906, 
+"^ot:ottTaxonName": "Cephalorhynchus heavisidii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5323, 
 "@tb:identifier.taxonVariant": 12943, 
@@ -128,6 +215,8 @@
 }, 
 "Tl2829642": {
 "^ot:originalLabel": "Hydropotes inermis", 
+"^ot:ottId": 194504, 
+"^ot:ottTaxonName": "Hydropotes inermis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 13896, 
 "@tb:identifier.taxonVariant": 32777, 
@@ -136,8 +225,9 @@
 }
 }, 
 "Tl2829643": {
-"^ot:altLabel": "Rupicapra rupicapra", 
 "^ot:originalLabel": "Rupicapra rupicapra FJ207538", 
+"^ot:ottId": 798039, 
+"^ot:ottTaxonName": "Rupicapra rupicapra", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 25817, 
 "@tb:identifier.taxonVariant": 60413, 
@@ -147,6 +237,8 @@
 }, 
 "Tl2829644": {
 "^ot:originalLabel": "Nanger dama", 
+"^ot:ottId": 924742, 
+"^ot:ottTaxonName": "Nanger dama", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 425047, 
 "@tb:identifier.taxonVariant": 558387, 
@@ -154,8 +246,9 @@
 }
 }, 
 "Tl2829645": {
-"^ot:altLabel": "Balaenoptera bonaerensis", 
 "^ot:originalLabel": "Balaenoptera bonaerensis NC006926", 
+"^ot:ottId": 44568, 
+"^ot:ottTaxonName": "Balaenoptera bonaerensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 59967, 
 "@tb:identifier.taxonVariant": 133131, 
@@ -165,6 +258,8 @@
 }, 
 "Tl2829646": {
 "^ot:originalLabel": "Dorcatragus megalotis", 
+"^ot:ottId": 607102, 
+"^ot:ottTaxonName": "Dorcatragus megalotis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 9487, 
 "@tb:identifier.taxonVariant": 22653, 
@@ -173,6 +268,8 @@
 }, 
 "Tl2829647": {
 "^ot:originalLabel": "Antilocapra americana", 
+"^ot:ottId": 768683, 
+"^ot:ottTaxonName": "Antilocapra americana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 1889, 
 "@tb:identifier.taxonVariant": 4602, 
@@ -182,6 +279,8 @@
 }, 
 "Tl2829648": {
 "^ot:originalLabel": "Gazella spekei", 
+"^ot:ottId": 702498, 
+"^ot:ottTaxonName": "Gazella spekei", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 11806, 
 "@tb:identifier.taxonVariant": 28121, 
@@ -191,6 +290,8 @@
 }, 
 "Tl2829649": {
 "^ot:originalLabel": "Kobus ellipsiprymnus", 
+"^ot:ottId": 122645, 
+"^ot:ottTaxonName": "Kobus ellipsiprymnus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 15040, 
 "@tb:identifier.taxonVariant": 35330, 
@@ -200,6 +301,8 @@
 }, 
 "Tl2829650": {
 "^ot:originalLabel": "Cephalophus nigrifrons", 
+"^ot:ottId": 436155, 
+"^ot:ottTaxonName": "Cephalophus nigrifrons", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5312, 
 "@tb:identifier.taxonVariant": 12910, 
@@ -209,6 +312,8 @@
 }, 
 "Tl2829651": {
 "^ot:originalLabel": "Cephalophus leucogaster", 
+"^ot:ottId": 603124, 
+"^ot:ottTaxonName": "Cephalophus leucogaster", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5307, 
 "@tb:identifier.taxonVariant": 12899, 
@@ -217,8 +322,9 @@
 }
 }, 
 "Tl2829652": {
-"^ot:altLabel": "Eudorcas rufifrons", 
 "^ot:originalLabel": "Eudorcas rufifrons 2", 
+"^ot:ottId": 702506, 
+"^ot:ottTaxonName": "Eudorcas rufifrons", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 33129, 
 "@tb:identifier.taxonVariant": 76568, 
@@ -227,6 +333,8 @@
 }, 
 "Tl2829653": {
 "^ot:originalLabel": "Capreolus capreolus", 
+"^ot:ottId": 460517, 
+"^ot:ottTaxonName": "Capreolus capreolus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 4821, 
 "@tb:identifier.taxonVariant": 11621, 
@@ -235,8 +343,9 @@
 }
 }, 
 "Tl2829654": {
-"^ot:altLabel": "Capricornis swinhoei", 
 "^ot:originalLabel": "Capricornis swinhoei NC010640", 
+"^ot:ottId": 798024, 
+"^ot:ottTaxonName": "Capricornis swinhoei", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 4825, 
 "@tb:identifier.taxonVariant": 11630, 
@@ -246,8 +355,9 @@
 "^skos:prefLabel": "Capricornis crispus swinhoei"
 }, 
 "Tl2829655": {
-"^ot:altLabel": "Platanista gangetica", 
 "^ot:originalLabel": "Platanista gangetica NC005275", 
+"^ot:ottId": 5256, 
+"^ot:ottTaxonName": "Platanista gangetica", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22696, 
 "@tb:identifier.taxonVariant": 52918, 
@@ -256,8 +366,9 @@
 }
 }, 
 "Tl2829656": {
-"^ot:altLabel": "Muntiacus muntjak", 
 "^ot:originalLabel": "Muntiacus muntjak NC004563", 
+"^ot:ottId": 194523, 
+"^ot:ottTaxonName": "Muntiacus muntjak", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 18262, 
 "@tb:identifier.taxonVariant": 42700, 
@@ -267,6 +378,8 @@
 }, 
 "Tl2829657": {
 "^ot:originalLabel": "Pelea capreolus", 
+"^ot:ottId": 1090940, 
+"^ot:ottTaxonName": "Pelea capreolus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 20798, 
 "@tb:identifier.taxonVariant": 48429, 
@@ -276,6 +389,8 @@
 }, 
 "Tl2829658": {
 "^ot:originalLabel": "Pseudoryx nghetinhensis", 
+"^ot:ottId": 1054629, 
+"^ot:ottTaxonName": "Pseudoryx nghetinhensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 24138, 
 "@tb:identifier.taxonVariant": 56411, 
@@ -284,8 +399,9 @@
 }
 }, 
 "Tl2829659": {
-"^ot:altLabel": "Grampus griseus", 
 "^ot:originalLabel": "Grampus griseus NC012062", 
+"^ot:ottId": 154711, 
+"^ot:ottTaxonName": "Grampus griseus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 31553, 
 "@tb:identifier.taxonVariant": 73451, 
@@ -294,8 +410,9 @@
 }
 }, 
 "Tl2829660": {
-"^ot:altLabel": "Bos grunniens", 
 "^ot:originalLabel": "Bos grunniens NC006380", 
+"^ot:ottId": 381164, 
+"^ot:ottTaxonName": "Bos grunniens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3754, 
 "@tb:identifier.taxonVariant": 8945, 
@@ -305,6 +422,8 @@
 }, 
 "Tl2829661": {
 "^ot:originalLabel": "Hyemoschus aquaticus", 
+"^ot:ottId": 456395, 
+"^ot:ottTaxonName": "Hyemoschus aquaticus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 13909, 
 "@tb:identifier.taxonVariant": 32802, 
@@ -314,6 +433,8 @@
 }, 
 "Tl2829662": {
 "^ot:originalLabel": "Cephalophus jentinki", 
+"^ot:ottId": 436151, 
+"^ot:ottTaxonName": "Cephalophus jentinki", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5306, 
 "@tb:identifier.taxonVariant": 12897, 
@@ -323,6 +444,8 @@
 }, 
 "Tl2829663": {
 "^ot:originalLabel": "Nanger granti", 
+"^ot:ottId": 346068, 
+"^ot:ottTaxonName": "Nanger granti", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 601788, 
 "@tb:identifier.taxonVariant": 802376, 
@@ -331,8 +454,9 @@
 }
 }, 
 "Tl2829664": {
-"^ot:altLabel": "Mazama americana", 
 "^ot:originalLabel": "Mazama americana 2", 
+"^ot:ottId": 1030860, 
+"^ot:ottTaxonName": "Mazama americana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 17050, 
 "@tb:identifier.taxonVariant": 39914, 
@@ -342,6 +466,8 @@
 }, 
 "Tl2829665": {
 "^ot:originalLabel": "Gazella leptoceros", 
+"^ot:ottId": 702510, 
+"^ot:ottTaxonName": "Gazella leptoceros", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 11801, 
 "@tb:identifier.taxonVariant": 28111, 
@@ -350,8 +476,9 @@
 }
 }, 
 "Tl2829666": {
-"^ot:altLabel": "Raphicerus campestris", 
 "^ot:originalLabel": "Rahicerus campestris", 
+"^ot:ottId": 513789, 
+"^ot:ottTaxonName": "Raphicerus campestris", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 607592, 
 "@tb:identifier.taxonVariant": 811439, 
@@ -360,8 +487,9 @@
 }
 }, 
 "Tl2829667": {
-"^ot:altLabel": "Philantomba monticola", 
 "^ot:originalLabel": "Philantomba monticola 1", 
+"^ot:ottId": 128388, 
+"^ot:ottTaxonName": "Philantomba monticola", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 21781, 
 "@tb:identifier.taxonVariant": 50659, 
@@ -369,8 +497,9 @@
 }
 }, 
 "Tl2829668": {
-"^ot:altLabel": "Ovibos moschatus", 
 "^ot:originalLabel": "Ovibos moschatus FJ207536", 
+"^ot:ottId": 123197, 
+"^ot:ottTaxonName": "Ovibos moschatus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 20063, 
 "@tb:identifier.taxonVariant": 46707, 
@@ -379,8 +508,9 @@
 }
 }, 
 "Tl2829669": {
-"^ot:altLabel": "Cervus elaphus", 
 "^ot:originalLabel": "Cervus elaphus NC007704", 
+"^ot:ottId": 936014, 
+"^ot:ottTaxonName": "Cervus elaphus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5479, 
 "@tb:identifier.taxonVariant": 13280, 
@@ -389,8 +519,9 @@
 }
 }, 
 "Tl2829670": {
-"^ot:altLabel": "Capricornis milneedwardsii", 
 "^ot:originalLabel": "Capricornis milneedwardsii FJ207534", 
+"^ot:ottId": 1031891, 
+"^ot:ottTaxonName": "Capricornis milneedwardsii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 623719, 
 "@tb:identifier.taxonVariant": 835285, 
@@ -399,6 +530,8 @@
 }, 
 "Tl2829671": {
 "^ot:originalLabel": "Tragelaphus angasii", 
+"^ot:ottId": 40135, 
+"^ot:ottTaxonName": "Tragelaphus angasii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 29286, 
 "@tb:identifier.taxonVariant": 68275, 
@@ -407,8 +540,9 @@
 }
 }, 
 "Tl2829672": {
-"^ot:altLabel": "Rucervus duvaucelii", 
 "^ot:originalLabel": "Rucervus duvauceli", 
+"^ot:ottId": 504972, 
+"^ot:ottTaxonName": "Rucervus duvaucelii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 425319, 
 "@tb:identifier.taxonVariant": 558860, 
@@ -417,6 +551,8 @@
 }, 
 "Tl2829673": {
 "^ot:originalLabel": "Choeropsis liberiensis", 
+"^ot:ottId": 662806, 
+"^ot:ottTaxonName": "Hexaprotodon liberiensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 13472, 
 "@tb:identifier.taxonVariant": 565046, 
@@ -427,6 +563,8 @@
 }, 
 "Tl2829674": {
 "^ot:originalLabel": "Hippocamelus antisensis", 
+"^ot:ottId": 665508, 
+"^ot:ottTaxonName": "Hippocamelus antisensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 13531, 
 "@tb:identifier.taxonVariant": 31928, 
@@ -436,6 +574,8 @@
 }, 
 "Tl2829675": {
 "^ot:originalLabel": "Gazella gazella gazella", 
+"^ot:ottId": 21273, 
+"^ot:ottTaxonName": "Gazella gazella gazella", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 607562, 
 "@tb:identifier.taxonVariant": 811401, 
@@ -444,6 +584,8 @@
 }, 
 "Tl2829676": {
 "^ot:originalLabel": "Hippotragus equinus", 
+"^ot:ottId": 860772, 
+"^ot:ottTaxonName": "Hippotragus equinus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 13596, 
 "@tb:identifier.taxonVariant": 32068, 
@@ -452,8 +594,9 @@
 }
 }, 
 "Tl2829677": {
-"^ot:altLabel": "Pontoporia blainvillei", 
 "^ot:originalLabel": "Pontoporia blainvillei NC005277", 
+"^ot:ottId": 140448, 
+"^ot:ottTaxonName": "Pontoporia blainvillei", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 23423, 
 "@tb:identifier.taxonVariant": 54825, 
@@ -463,6 +606,8 @@
 }, 
 "Tl2829678": {
 "^ot:originalLabel": "Cephalophus dorsalis", 
+"^ot:ottId": 1054624, 
+"^ot:ottTaxonName": "Cephalophus dorsalis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5304, 
 "@tb:identifier.taxonVariant": 12893, 
@@ -472,6 +617,8 @@
 }, 
 "Tl2829679": {
 "^ot:originalLabel": "Tragelaphus derbianus", 
+"^ot:ottId": 147238, 
+"^ot:ottTaxonName": "Taurotragus derbianus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 28608, 
 "@tb:identifier.taxonVariant": 811400, 
@@ -482,6 +629,8 @@
 }, 
 "Tl2829680": {
 "^ot:originalLabel": "Neotragus batesi", 
+"^ot:ottId": 869854, 
+"^ot:ottTaxonName": "Neotragus batesi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 18966, 
 "@tb:identifier.taxonVariant": 44170, 
@@ -489,8 +638,9 @@
 }
 }, 
 "Tl2829681": {
-"^ot:altLabel": "Pseudois nayaur", 
 "^ot:originalLabel": "Pseudois nayaur FJ207537", 
+"^ot:ottId": 513791, 
+"^ot:ottTaxonName": "Pseudois nayaur", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 24039, 
 "@tb:identifier.taxonVariant": 56157, 
@@ -499,8 +649,9 @@
 }
 }, 
 "Tl2829682": {
-"^ot:altLabel": "Hippopotamus amphibius", 
 "^ot:originalLabel": "Hippopotamus amphibius NC000889", 
+"^ot:ottId": 510762, 
+"^ot:ottTaxonName": "Hippopotamus amphibius", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 31564, 
 "@tb:identifier.taxonVariant": 73471, 
@@ -509,8 +660,9 @@
 }
 }, 
 "Tl2829683": {
-"^ot:altLabel": "Delphinus capensis", 
 "^ot:originalLabel": "Delphinus capensis NC012061", 
+"^ot:ottId": 1094064, 
+"^ot:ottTaxonName": "Delphinus capensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 109904, 
 "@tb:identifier.taxonVariant": 188179, 
@@ -520,6 +672,8 @@
 }, 
 "Tl2829684": {
 "^ot:originalLabel": "Pudu puda", 
+"^ot:ottId": 853508, 
+"^ot:ottTaxonName": "Pudu puda", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 24509, 
 "@tb:identifier.taxonVariant": 57387, 
@@ -529,6 +683,8 @@
 }, 
 "Tl2829685": {
 "^ot:originalLabel": "Muntiacus vuquangensis", 
+"^ot:ottId": 57121, 
+"^ot:ottTaxonName": "Muntiacus vuquangensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 114082, 
 "@tb:identifier.taxonVariant": 192361, 
@@ -537,8 +693,9 @@
 }
 }, 
 "Tl2829686": {
-"^ot:altLabel": "Rangifer tarandus", 
 "^ot:originalLabel": "Rangifer tarandus NC007703", 
+"^ot:ottId": 410153, 
+"^ot:ottTaxonName": "Rangifer tarandus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 24844, 
 "@tb:identifier.taxonVariant": 58179, 
@@ -548,6 +705,8 @@
 }, 
 "Tl2829687": {
 "^ot:originalLabel": "Antidorcas marsupialis", 
+"^ot:ottId": 363040, 
+"^ot:ottTaxonName": "Antidorcas marsupialis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 1885, 
 "@tb:identifier.taxonVariant": 4594, 
@@ -557,6 +716,8 @@
 }, 
 "Tl2829688": {
 "^ot:originalLabel": "Philantomba maxwelli", 
+"^ot:ottId": 759981, 
+"^ot:ottTaxonName": "Philantomba maxwellii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 425220, 
 "@tb:identifier.taxonVariant": 558693, 
@@ -564,8 +725,9 @@
 }
 }, 
 "Tl2829689": {
-"^ot:altLabel": "Bos taurus taurus", 
 "^ot:originalLabel": "Bos taurus taurus EU177832", 
+"^ot:ottId": 490099, 
+"^ot:ottTaxonName": "Bos taurus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 607561, 
 "@tb:identifier.taxonVariant": 811399, 
@@ -574,6 +736,8 @@
 }, 
 "Tl2829690": {
 "^ot:originalLabel": "Cephalophus ogilbyi", 
+"^ot:ottId": 436163, 
+"^ot:ottTaxonName": "Cephalophus ogilbyi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5313, 
 "@tb:identifier.taxonVariant": 12912, 
@@ -583,6 +747,8 @@
 }, 
 "Tl2829691": {
 "^ot:originalLabel": "Camelus dromedarius", 
+"^ot:ottId": 510752, 
+"^ot:ottTaxonName": "Camelus dromedarius", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 631704, 
 "@tb:identifier.taxonVariant": 846716, 
@@ -591,8 +757,9 @@
 }
 }, 
 "Tl2829692": {
-"^ot:altLabel": "Odocoileus virginianus", 
 "^ot:originalLabel": "Odocoileus virginianus 3", 
+"^ot:ottId": 410145, 
+"^ot:ottTaxonName": "Odocoileus virginianus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 19402, 
 "@tb:identifier.taxonVariant": 45129, 
@@ -601,8 +768,9 @@
 }
 }, 
 "Tl2829693": {
-"^ot:altLabel": "Monodon monoceros", 
 "^ot:originalLabel": "Monodon monoceros NC005279", 
+"^ot:ottId": 306757, 
+"^ot:ottTaxonName": "Monodon monoceros", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 18043, 
 "@tb:identifier.taxonVariant": 42228, 
@@ -612,6 +780,8 @@
 }, 
 "Tl2829694": {
 "^ot:originalLabel": "Tragelaphus oryx", 
+"^ot:ottId": 70832, 
+"^ot:ottTaxonName": "Tragelaphus oryx", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 28609, 
 "@tb:identifier.taxonVariant": 113573, 
@@ -620,8 +790,9 @@
 }
 }, 
 "Tl2829695": {
-"^ot:altLabel": "Phocoena phocoena", 
 "^ot:originalLabel": "Phocoena phocoena NC005280", 
+"^ot:ottId": 851312, 
+"^ot:ottTaxonName": "Phocoena phocoena", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 21865, 
 "@tb:identifier.taxonVariant": 50833, 
@@ -631,6 +802,8 @@
 }, 
 "Tl2829696": {
 "^ot:originalLabel": "Naemorhedus baileyi", 
+"^ot:ottId": 869867, 
+"^ot:ottTaxonName": "Naemorhedus baileyi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 18667, 
 "@tb:identifier.taxonVariant": 43547, 
@@ -638,8 +811,9 @@
 }
 }, 
 "Tl2829697": {
-"^ot:altLabel": "Pecari tajacu", 
 "^ot:originalLabel": "Pecari tajacu 3", 
+"^ot:ottId": 1037242, 
+"^ot:ottTaxonName": "Pecari tajacu", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 20735, 
 "@tb:identifier.taxonVariant": 48302, 
@@ -649,6 +823,8 @@
 }, 
 "Tl2829698": {
 "^ot:originalLabel": "Tragelaphus imberbis", 
+"^ot:ottId": 70829, 
+"^ot:ottTaxonName": "Tragelaphus imberbis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 29289, 
 "@tb:identifier.taxonVariant": 68281, 
@@ -657,8 +833,9 @@
 }
 }, 
 "Tl2829699": {
-"^ot:altLabel": "Capra falconeri", 
 "^ot:originalLabel": "Capra falconeri FJ207525", 
+"^ot:ottId": 202967, 
+"^ot:ottTaxonName": "Capra falconeri", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 4814, 
 "@tb:identifier.taxonVariant": 11608, 
@@ -667,8 +844,9 @@
 }
 }, 
 "Tl2829700": {
-"^ot:altLabel": "Camelus ferus", 
 "^ot:originalLabel": "Camelus ferus NC009629", 
+"^ot:ottId": 596642, 
+"^ot:ottTaxonName": "Camelus ferus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 364974, 
 "@tb:identifier.taxonVariant": 392001, 
@@ -678,6 +856,8 @@
 }, 
 "Tl2829701": {
 "^ot:originalLabel": "Oryx leucoryx", 
+"^ot:ottId": 376064, 
+"^ot:ottTaxonName": "Oryx leucoryx", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 19979, 
 "@tb:identifier.taxonVariant": 46486, 
@@ -687,6 +867,8 @@
 }, 
 "Tl2829702": {
 "^ot:originalLabel": "Bison bonasus", 
+"^ot:ottId": 907684, 
+"^ot:ottTaxonName": "Bison bonasus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3564, 
 "@tb:identifier.taxonVariant": 8536, 
@@ -695,8 +877,9 @@
 }
 }, 
 "Tl2829703": {
-"^ot:altLabel": "Hyperoodon ampullatus", 
 "^ot:originalLabel": "Hyperoodon ampullatus NC005273", 
+"^ot:ottId": 1003913, 
+"^ot:ottTaxonName": "Hyperoodon ampullatus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 14057, 
 "@tb:identifier.taxonVariant": 33131, 
@@ -705,8 +888,9 @@
 }
 }, 
 "Tl2829704": {
-"^ot:altLabel": "Naemorhedus griseus evansi", 
 "^ot:originalLabel": "Naemorhedus griseus griseus FJ207532", 
+"^ot:ottId": 134543, 
+"^ot:ottTaxonName": "Naemorhedus griseus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 607603, 
 "@tb:identifier.taxonVariant": 811450, 
@@ -714,8 +898,9 @@
 }
 }, 
 "Tl2829705": {
-"^ot:altLabel": "Balaenoptera acutorostrata", 
 "^ot:originalLabel": "Balaenoptera acutorostrata NC005271", 
+"^ot:ottId": 800317, 
+"^ot:ottTaxonName": "Balaenoptera acutorostrata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3103, 
 "@tb:identifier.taxonVariant": 7473, 
@@ -724,8 +909,9 @@
 }
 }, 
 "Tl2829706": {
-"^ot:altLabel": "Ovis aries", 
 "^ot:originalLabel": "Ovis aries NC001941", 
+"^ot:ottId": 70819, 
+"^ot:ottTaxonName": "Ovis aries", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 20065, 
 "@tb:identifier.taxonVariant": 46710, 
@@ -735,6 +921,8 @@
 }, 
 "Tl2829707": {
 "^ot:originalLabel": "Elaphurus davidianus", 
+"^ot:ottId": 1030869, 
+"^ot:ottTaxonName": "Elaphurus davidianus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 9796, 
 "@tb:identifier.taxonVariant": 23459, 
@@ -744,6 +932,8 @@
 }, 
 "Tl2829708": {
 "^ot:originalLabel": "Litocranius walleri", 
+"^ot:ottId": 128285, 
+"^ot:ottTaxonName": "Litocranius walleri", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 16130, 
 "@tb:identifier.taxonVariant": 37780, 
@@ -753,6 +943,8 @@
 }, 
 "Tl2829709": {
 "^ot:originalLabel": "Mazama nemorivaga 1", 
+"^ot:ottId": 336838, 
+"^ot:ottTaxonName": "Mazama nemorivaga", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 346398, 
 "@tb:identifier.taxonVariant": 505316
@@ -760,6 +952,8 @@
 }, 
 "Tl2829710": {
 "^ot:originalLabel": "Okapia johnstoni", 
+"^ot:ottId": 207426, 
+"^ot:ottTaxonName": "Okapia johnstoni", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 19492, 
 "@tb:identifier.taxonVariant": 45382, 
@@ -768,8 +962,9 @@
 }
 }, 
 "Tl2829711": {
-"^ot:altLabel": "Muntiacus reevesi", 
 "^ot:originalLabel": "Muntiacus reevesi NC008491", 
+"^ot:ottId": 59206, 
+"^ot:ottTaxonName": "Muntiacus reevesi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 18264, 
 "@tb:identifier.taxonVariant": 42704, 
@@ -779,6 +974,8 @@
 }, 
 "Tl2829712": {
 "^ot:originalLabel": "Ourebia ourebi", 
+"^ot:ottId": 938432, 
+"^ot:ottTaxonName": "Ourebia ourebi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 20061, 
 "@tb:identifier.taxonVariant": 46702, 
@@ -788,6 +985,8 @@
 }, 
 "Tl2829713": {
 "^ot:originalLabel": "Alces alces", 
+"^ot:ottId": 460509, 
+"^ot:ottTaxonName": "Alces alces", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 761, 
 "@tb:identifier.taxonVariant": 1872, 
@@ -796,8 +995,9 @@
 }
 }, 
 "Tl2829714": {
-"^ot:altLabel": "Capra sibirica", 
 "^ot:originalLabel": "Capra sibirica FJ207529", 
+"^ot:ottId": 698623, 
+"^ot:ottTaxonName": "Capra sibirica", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 4819, 
 "@tb:identifier.taxonVariant": 11617, 
@@ -806,8 +1006,9 @@
 }
 }, 
 "Tl2829715": {
-"^ot:altLabel": "Capra nubiana", 
 "^ot:originalLabel": "Capra nubiana FJ207527", 
+"^ot:ottId": 698614, 
+"^ot:ottTaxonName": "Capra nubiana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 4817, 
 "@tb:identifier.taxonVariant": 11614, 
@@ -816,8 +1017,9 @@
 }
 }, 
 "Tl2829716": {
-"^ot:altLabel": "Lama guanicoe", 
 "^ot:originalLabel": "Lama guanicoe NC011822", 
+"^ot:ottId": 986965, 
+"^ot:ottTaxonName": "Lama guanicoe", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 631701, 
 "@tb:identifier.taxonVariant": 846713, 
@@ -827,6 +1029,8 @@
 }, 
 "Tl2829717": {
 "^ot:originalLabel": "Connochaetes gnou", 
+"^ot:ottId": 363047, 
+"^ot:ottTaxonName": "Connochaetes gnou", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6863, 
 "@tb:identifier.taxonVariant": 16622, 
@@ -835,8 +1039,9 @@
 }
 }, 
 "Tl2829718": {
-"^ot:altLabel": "Pteropus dasymallus", 
 "^ot:originalLabel": "Pteropus dasymallus NC002612", 
+"^ot:ottId": 608040, 
+"^ot:ottTaxonName": "Pteropus dasymallus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 24368, 
 "@tb:identifier.taxonVariant": 57042, 
@@ -845,8 +1050,9 @@
 }
 }, 
 "Tl2829719": {
-"^ot:altLabel": "Balaenoptera physalus", 
 "^ot:originalLabel": "Balaenoptera physalus NC001321", 
+"^ot:ottId": 226193, 
+"^ot:ottTaxonName": "Balaenoptera physalus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3107, 
 "@tb:identifier.taxonVariant": 7490, 
@@ -855,8 +1061,9 @@
 }
 }, 
 "Tl2829720": {
-"^ot:altLabel": "Tragelaphus scriptus", 
 "^ot:originalLabel": "Tragelaphus scriptus 3", 
+"^ot:ottId": 561121, 
+"^ot:ottTaxonName": "Tragelaphus scriptus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 29290, 
 "@tb:identifier.taxonVariant": 68284, 
@@ -866,6 +1073,8 @@
 }, 
 "Tl2829721": {
 "^ot:originalLabel": "Aepyceros melampus", 
+"^ot:ottId": 768679, 
+"^ot:ottTaxonName": "Aepyceros melampus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 488, 
 "@tb:identifier.taxonVariant": 1192, 
@@ -874,8 +1083,9 @@
 }
 }, 
 "Tl2829722": {
-"^ot:altLabel": "Giraffa camelopardalis angolensis", 
 "^ot:originalLabel": "Giraffa camelopardalis angolensis NC012100", 
+"^ot:ottId": 108130, 
+"^ot:ottTaxonName": "Giraffa camelopardalis angolensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 380330, 
 "@tb:identifier.taxonVariant": 400235, 
@@ -885,6 +1095,8 @@
 }, 
 "Tl2829723": {
 "^ot:originalLabel": "Axis axis", 
+"^ot:ottId": 906317, 
+"^ot:ottTaxonName": "Axis axis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 31396, 
 "@tb:identifier.taxonVariant": 73212, 
@@ -894,6 +1106,8 @@
 }, 
 "Tl2829724": {
 "^ot:originalLabel": "Bos javanicus javanicus", 
+"^ot:ottId": 662153, 
+"^ot:ottTaxonName": "Bos javanicus javanicus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 607567, 
 "@tb:identifier.taxonVariant": 811406, 
@@ -902,6 +1116,8 @@
 }, 
 "Tl2829725": {
 "^ot:originalLabel": "Mazama rufina", 
+"^ot:ottId": 716968, 
+"^ot:ottTaxonName": "Mazama rufina", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 17055, 
 "@tb:identifier.taxonVariant": 39925, 
@@ -910,6 +1126,8 @@
 }, 
 "Tl2829726": {
 "^ot:originalLabel": "Oryx gazella", 
+"^ot:ottId": 591985, 
+"^ot:ottTaxonName": "Oryx gazella", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 19978, 
 "@tb:identifier.taxonVariant": 46484, 
@@ -919,6 +1137,8 @@
 }, 
 "Tl2829727": {
 "^ot:originalLabel": "Tragelaphus eurycerus", 
+"^ot:ottId": 215885, 
+"^ot:ottTaxonName": "Tragelaphus eurycerus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 29288, 
 "@tb:identifier.taxonVariant": 68279, 
@@ -927,8 +1147,9 @@
 }
 }, 
 "Tl2829728": {
-"^ot:altLabel": "Physeter macrocephalus", 
 "^ot:originalLabel": "Physeter macrocephalus NC002503", 
+"^ot:ottId": 276851, 
+"^ot:ottTaxonName": "Physeter catodon", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22224, 
 "@tb:identifier.taxonVariant": 51703, 
@@ -939,6 +1160,8 @@
 }, 
 "Tl2829729": {
 "^ot:originalLabel": "Redunca fulvorufula", 
+"^ot:ottId": 1090928, 
+"^ot:ottTaxonName": "Redunca fulvorufula", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 24914, 
 "@tb:identifier.taxonVariant": 58346, 
@@ -947,8 +1170,9 @@
 }
 }, 
 "Tl2829730": {
-"^ot:altLabel": "Sousa chinensis", 
 "^ot:originalLabel": "Sousa chinensis NC012057", 
+"^ot:ottId": 187220, 
+"^ot:ottTaxonName": "Sousa chinensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 31797, 
 "@tb:identifier.taxonVariant": 73874, 
@@ -957,8 +1181,9 @@
 }
 }, 
 "Tl2829731": {
-"^ot:altLabel": "Hemitragus jayakari", 
 "^ot:originalLabel": "Arabitragus jayakari FJ207523", 
+"^ot:ottId": 1068706, 
+"^ot:ottTaxonName": "Hemitragus jayakari", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 607588, 
 "@tb:identifier.taxonVariant": 811435, 
@@ -968,6 +1193,8 @@
 }, 
 "Tl2829732": {
 "^ot:originalLabel": "Potamochoerus porcus", 
+"^ot:ottId": 995192, 
+"^ot:ottTaxonName": "Potamochoerus porcus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 23475, 
 "@tb:identifier.taxonVariant": 54930, 
@@ -976,8 +1203,9 @@
 }
 }, 
 "Tl2829733": {
-"^ot:altLabel": "Damaliscus pygargus", 
 "^ot:originalLabel": "Damaliscus pygargus FJ207530", 
+"^ot:ottId": 540238, 
+"^ot:ottTaxonName": "Damaliscus pygargus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 8367, 
 "@tb:identifier.taxonVariant": 20116, 
@@ -987,6 +1215,8 @@
 }, 
 "Tl2829734": {
 "^ot:originalLabel": "Antilope cervicapra", 
+"^ot:ottId": 363043, 
+"^ot:ottTaxonName": "Antilope cervicapra", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 1890, 
 "@tb:identifier.taxonVariant": 4604, 
@@ -995,8 +1225,9 @@
 }
 }, 
 "Tl2829735": {
-"^ot:altLabel": "Panthera tigris", 
 "^ot:originalLabel": "Panthera tigris NC010642", 
+"^ot:ottId": 42314, 
+"^ot:ottTaxonName": "Panthera tigris", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 20321, 
 "@tb:identifier.taxonVariant": 47317, 
@@ -1005,8 +1236,9 @@
 }
 }, 
 "Tl2829736": {
-"^ot:altLabel": "Rusa unicolor", 
 "^ot:originalLabel": "Rusa unicolor NC008414", 
+"^ot:ottId": 844145, 
+"^ot:ottTaxonName": "Rusa unicolor", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 25843, 
 "@tb:identifier.taxonVariant": 60472, 
@@ -1016,6 +1248,8 @@
 }, 
 "Tl2829737": {
 "^ot:originalLabel": "Boselaphus tragocamelus", 
+"^ot:ottId": 756060, 
+"^ot:ottTaxonName": "Boselaphus tragocamelus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3761, 
 "@tb:identifier.taxonVariant": 8967, 
@@ -1025,6 +1259,8 @@
 }, 
 "Tl2829738": {
 "^ot:originalLabel": "Tragulus kanchil", 
+"^ot:ottId": 532216, 
+"^ot:ottTaxonName": "Tragulus kanchil", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 607559, 
 "@tb:identifier.taxonVariant": 811397, 
@@ -1032,8 +1268,9 @@
 }
 }, 
 "Tl2829739": {
-"^ot:altLabel": "Inia geoffrensis", 
 "^ot:originalLabel": "Inia geoffrensis NC005276", 
+"^ot:ottId": 698411, 
+"^ot:ottTaxonName": "Inia geoffrensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 14558, 
 "@tb:identifier.taxonVariant": 34229, 
@@ -1043,6 +1280,8 @@
 }, 
 "Tl2829740": {
 "^ot:originalLabel": "Oreotragus oreotragus", 
+"^ot:ottId": 561128, 
+"^ot:ottTaxonName": "Oreotragus oreotragus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 19808, 
 "@tb:identifier.taxonVariant": 46053, 
@@ -1052,6 +1291,8 @@
 }, 
 "Tl2829741": {
 "^ot:originalLabel": "Nanger soemmerringii", 
+"^ot:ottId": 702501, 
+"^ot:ottTaxonName": "Nanger soemmerringii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 607596, 
 "@tb:identifier.taxonVariant": 811443, 
@@ -1061,6 +1302,8 @@
 }, 
 "Tl2829742": {
 "^ot:originalLabel": "Blastocerus dichotomus", 
+"^ot:ottId": 678842, 
+"^ot:ottTaxonName": "Blastocerus dichotomus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3586, 
 "@tb:identifier.taxonVariant": 8575, 
@@ -1071,6 +1314,8 @@
 }, 
 "Tl2829743": {
 "^ot:originalLabel": "Bos gaurus", 
+"^ot:ottId": 907680, 
+"^ot:ottTaxonName": "Bos gaurus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3753, 
 "@tb:identifier.taxonVariant": 8943, 
@@ -1079,8 +1324,9 @@
 }
 }, 
 "Tl2829744": {
-"^ot:altLabel": "Capra pyrenaica", 
 "^ot:originalLabel": "Capra pyrenaica FJ207528", 
+"^ot:ottId": 338215, 
+"^ot:ottTaxonName": "Capra pyrenaica", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 4818, 
 "@tb:identifier.taxonVariant": 11615, 
@@ -1089,8 +1335,9 @@
 }
 }, 
 "Tl2829745": {
-"^ot:altLabel": "Bubalus bubalis (Linnaeus, 1758)", 
 "^ot:originalLabel": "Bubalus bubalis bubalis AF547270", 
+"^ot:ottId": 641187, 
+"^ot:ottTaxonName": "Bubalus bubalis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 4166, 
 "@tb:identifier.taxonVariant": 10086, 
@@ -1101,6 +1348,8 @@
 }, 
 "Tl2829746": {
 "^ot:originalLabel": "Cephalophus spadix", 
+"^ot:ottId": 962017, 
+"^ot:ottTaxonName": "Cephalophus spadix", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5317, 
 "@tb:identifier.taxonVariant": 12921, 
@@ -1110,6 +1359,8 @@
 }, 
 "Tl2829747": {
 "^ot:originalLabel": "Gazella bennettii", 
+"^ot:ottId": 702517, 
+"^ot:ottTaxonName": "Gazella bennettii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 11794, 
 "@tb:identifier.taxonVariant": 28093, 
@@ -1118,8 +1369,9 @@
 }
 }, 
 "Tl2829748": {
-"^ot:altLabel": "Cephalophus callipygus", 
 "^ot:originalLabel": "Cephalophus callipygus 1", 
+"^ot:ottId": 436161, 
+"^ot:ottTaxonName": "Cephalophus callipygus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5303, 
 "@tb:identifier.taxonVariant": 12891, 
@@ -1128,8 +1380,9 @@
 }
 }, 
 "Tl2829749": {
-"^ot:altLabel": "Balaenoptera musculus", 
 "^ot:originalLabel": "Balaenoptera musculus NC001601", 
+"^ot:ottId": 226190, 
+"^ot:ottTaxonName": "Balaenoptera musculus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3106, 
 "@tb:identifier.taxonVariant": 7486, 
@@ -1138,8 +1391,9 @@
 }
 }, 
 "Tl2829750": {
-"^ot:altLabel": "Elaphodus cephalophus", 
 "^ot:originalLabel": "Elaphodus cephalophus N008749", 
+"^ot:ottId": 57105, 
+"^ot:ottTaxonName": "Elaphodus cephalophus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 9791, 
 "@tb:identifier.taxonVariant": 23445, 
@@ -1148,8 +1402,9 @@
 }
 }, 
 "Tl2829751": {
-"^ot:altLabel": "Cervus albirostris", 
 "^ot:originalLabel": "Przewalskium albirostris", 
+"^ot:ottId": 345531, 
+"^ot:ottTaxonName": "Przewalskium albirostris", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 607585, 
 "@tb:identifier.taxonVariant": 811432, 
@@ -1159,6 +1414,8 @@
 }, 
 "Tl2829752": {
 "^ot:originalLabel": "Tragelaphus spekii", 
+"^ot:ottId": 401076, 
+"^ot:ottTaxonName": "Tragelaphus spekii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 29291, 
 "@tb:identifier.taxonVariant": 68287, 
@@ -1168,6 +1425,8 @@
 }, 
 "Tl2829753": {
 "^ot:originalLabel": "Odocoileus hemionus", 
+"^ot:ottId": 410149, 
+"^ot:ottTaxonName": "Odocoileus hemionus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 19401, 
 "@tb:identifier.taxonVariant": 45127, 
@@ -1177,6 +1436,8 @@
 }, 
 "Tl2829754": {
 "^ot:originalLabel": "Capra hircus", 
+"^ot:ottId": 19017, 
+"^ot:ottTaxonName": "Capra hircus (species in domain Eukaryota)", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 4815, 
 "@tb:identifier.taxonVariant": 11610, 
@@ -1185,8 +1446,9 @@
 }
 }, 
 "Tl2829755": {
-"^ot:altLabel": "Eschrichtius robustus", 
 "^ot:originalLabel": "Eschrichtius robustus NC005270", 
+"^ot:ottId": 800320, 
+"^ot:ottTaxonName": "Eschrichtius robustus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 10613, 
 "@tb:identifier.taxonVariant": 25440, 
@@ -1195,8 +1457,9 @@
 }
 }, 
 "Tl2829756": {
-"^ot:altLabel": "Muntiacus crinifrons", 
 "^ot:originalLabel": "Muntiacus crinifrons NC004577", 
+"^ot:ottId": 418001, 
+"^ot:ottTaxonName": "Muntiacus crinifrons", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 18259, 
 "@tb:identifier.taxonVariant": 42694, 
@@ -1206,6 +1469,8 @@
 }, 
 "Tl2829757": {
 "^ot:originalLabel": "Addax nasomaculatus", 
+"^ot:ottId": 989805, 
+"^ot:ottTaxonName": "Addax nasomaculatus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 394, 
 "@tb:identifier.taxonVariant": 953, 
@@ -1214,8 +1479,9 @@
 }
 }, 
 "Tl2829758": {
-"^ot:altLabel": "Pantholops hodgsonii", 
 "^ot:originalLabel": "Pantholops hodgsonii NC007441", 
+"^ot:ottId": 938450, 
+"^ot:ottTaxonName": "Pantholops hodgsonii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 20323, 
 "@tb:identifier.taxonVariant": 47323, 
@@ -1224,8 +1490,9 @@
 }
 }, 
 "Tl2829759": {
-"^ot:altLabel": "Lagenorhynchus albirostris", 
 "^ot:originalLabel": "Lagenorhynchus albirostris NC005278", 
+"^ot:ottId": 825969, 
+"^ot:ottTaxonName": "Lagenorhynchus albirostris", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 15246, 
 "@tb:identifier.taxonVariant": 35793, 
@@ -1235,6 +1502,8 @@
 }, 
 "Tl2829760": {
 "^ot:originalLabel": "Tetracerus quadricornis", 
+"^ot:ottId": 374283, 
+"^ot:ottTaxonName": "Tetracerus quadricornis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 28717, 
 "@tb:identifier.taxonVariant": 66928, 
@@ -1243,8 +1512,9 @@
 }
 }, 
 "Tl2829761": {
-"^ot:altLabel": "Lipotes vexillifer", 
 "^ot:originalLabel": "Lipotes vexillifer NC007629", 
+"^ot:ottId": 5269, 
+"^ot:ottTaxonName": "Lipotes vexillifer", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 16085, 
 "@tb:identifier.taxonVariant": 37677, 
@@ -1254,6 +1524,8 @@
 }, 
 "Tl2829762": {
 "^ot:originalLabel": "Bison bison", 
+"^ot:ottId": 907693, 
+"^ot:ottTaxonName": "Bison bison", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3563, 
 "@tb:identifier.taxonVariant": 8533, 
@@ -1262,8 +1534,9 @@
 }
 }, 
 "Tl2829763": {
-"^ot:altLabel": "Rupicapra pyrenaica", 
 "^ot:originalLabel": "Rupicapra pyrenaica FJ207539", 
+"^ot:ottId": 698621, 
+"^ot:ottTaxonName": "Rupicapra pyrenaica", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 25816, 
 "@tb:identifier.taxonVariant": 60410, 
@@ -1272,8 +1545,9 @@
 }
 }, 
 "Tl2829764": {
-"^ot:altLabel": "Balaena mysticetus", 
 "^ot:originalLabel": "Balaena mysticetus NC005268", 
+"^ot:ottId": 397231, 
+"^ot:ottTaxonName": "Balaena mysticetus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3100, 
 "@tb:identifier.taxonVariant": 7456, 
@@ -1283,6 +1557,8 @@
 }, 
 "Tl2829765": {
 "^ot:originalLabel": "Cephalophus silvicultor", 
+"^ot:ottId": 380144, 
+"^ot:ottTaxonName": "Cephalophus silvicultor", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5316, 
 "@tb:identifier.taxonVariant": 12917, 
@@ -1291,8 +1567,9 @@
 }
 }, 
 "Tl2829766": {
-"^ot:altLabel": "Stenella attenuata", 
 "^ot:originalLabel": "Stenella attenuata NC012051", 
+"^ot:ottId": 124220, 
+"^ot:ottTaxonName": "Stenella attenuata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 27873, 
 "@tb:identifier.taxonVariant": 65007, 
@@ -1302,6 +1579,8 @@
 }, 
 "Tl2829767": {
 "^ot:originalLabel": "Gazella cuvieri", 
+"^ot:ottId": 702515, 
+"^ot:ottTaxonName": "Gazella cuvieri", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 11796, 
 "@tb:identifier.taxonVariant": 28098, 
@@ -1310,8 +1589,9 @@
 }
 }, 
 "Tl2829768": {
-"^ot:altLabel": "Balaenoptera edeni edeni", 
 "^ot:originalLabel": "Balaenoptera edeni edeni NC007938", 
+"^ot:ottId": 800331, 
+"^ot:ottTaxonName": "Balaenoptera edeni", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 607566, 
 "@tb:identifier.taxonVariant": 811405, 
@@ -1320,6 +1600,8 @@
 }, 
 "Tl2829769": {
 "^ot:originalLabel": "Rusa timorensis", 
+"^ot:ottId": 1069421, 
+"^ot:ottTaxonName": "Rusa timorensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 25842, 
 "@tb:identifier.taxonVariant": 60471, 
@@ -1328,6 +1610,8 @@
 }, 
 "Tl2829770": {
 "^ot:originalLabel": "Gazella subgutturosa subgutturosa", 
+"^ot:ottId": 917398, 
+"^ot:ottTaxonName": "Gazella subgutturosa subgutturosa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 607564, 
 "@tb:identifier.taxonVariant": 811403, 
@@ -1335,8 +1619,9 @@
 }
 }, 
 "Tl2829771": {
-"^ot:altLabel": "Balaenoptera omurai", 
 "^ot:originalLabel": "Balaenoptera omurai NC007937", 
+"^ot:ottId": 313151, 
+"^ot:ottTaxonName": "Balaenoptera omurai", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 229794, 
 "@tb:identifier.taxonVariant": 293179, 
@@ -1345,8 +1630,9 @@
 }
 }, 
 "Tl2829772": {
-"^ot:altLabel": "Connochaetes taurinus", 
 "^ot:originalLabel": "Connochaetes taurinus 1", 
+"^ot:ottId": 19028, 
+"^ot:ottTaxonName": "Connochaetes taurinus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6864, 
 "@tb:identifier.taxonVariant": 16625, 
@@ -1355,8 +1641,9 @@
 }
 }, 
 "Tl2829773": {
-"^ot:altLabel": "Caperea marginata", 
 "^ot:originalLabel": "Caperea marginata NC005269", 
+"^ot:ottId": 397243, 
+"^ot:ottTaxonName": "Caperea marginata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 4796, 
 "@tb:identifier.taxonVariant": 11569, 
@@ -1366,6 +1653,8 @@
 }, 
 "Tl2829774": {
 "^ot:originalLabel": "Hippotragus niger", 
+"^ot:ottId": 860770, 
+"^ot:ottTaxonName": "Hippotragus niger", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 13598, 
 "@tb:identifier.taxonVariant": 32072, 
@@ -1375,6 +1664,8 @@
 }, 
 "Tl2829775": {
 "^ot:originalLabel": "Tragelaphus strepsiceros", 
+"^ot:ottId": 70827, 
+"^ot:ottTaxonName": "Tragelaphus strepsiceros", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 29292, 
 "@tb:identifier.taxonVariant": 68288, 
@@ -1384,6 +1675,8 @@
 }, 
 "Tl2829776": {
 "^ot:originalLabel": "Kobus leche", 
+"^ot:ottId": 938443, 
+"^ot:ottTaxonName": "Kobus leche", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 15042, 
 "@tb:identifier.taxonVariant": 35334, 
@@ -1392,8 +1685,9 @@
 }
 }, 
 "Tl2829777": {
-"^ot:altLabel": "Neotragus moschatus", 
 "^ot:originalLabel": "Nesotragus moschatus", 
+"^ot:ottId": 561124, 
+"^ot:ottTaxonName": "Neotragus moschatus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 607602, 
 "@tb:identifier.taxonVariant": 811449, 
@@ -1402,8 +1696,9 @@
 }
 }, 
 "Tl2829778": {
-"^ot:altLabel": "Eubalaena australis", 
 "^ot:originalLabel": "Eubalaena australis NC006930", 
+"^ot:ottId": 699249, 
+"^ot:ottTaxonName": "Eubalaena australis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 10629, 
 "@tb:identifier.taxonVariant": 25468, 
@@ -1413,6 +1708,8 @@
 }, 
 "Tl2829779": {
 "^ot:originalLabel": "Madoqua saltiana", 
+"^ot:ottId": 1055459, 
+"^ot:ottTaxonName": "Madoqua saltiana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 16749, 
 "@tb:identifier.taxonVariant": 39239, 
@@ -1421,6 +1718,8 @@
 }, 
 "Tl2829780": {
 "^ot:originalLabel": "Mazama gouazoubira", 
+"^ot:ottId": 15447, 
+"^ot:ottTaxonName": "Mazama gouazoupira", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 17053, 
 "@tb:identifier.taxonVariant": 811396, 
@@ -1430,8 +1729,9 @@
 "^skos:prefLabel": "Mazama gouazoupira"
 }, 
 "Tl2829781": {
-"^ot:altLabel": "Hemitragus jemlahicus", 
 "^ot:originalLabel": "Hemitragus jemlahicus FJ207531", 
+"^ot:ottId": 123276, 
+"^ot:ottTaxonName": "Hemitragus jemlahicus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 13278, 
 "@tb:identifier.taxonVariant": 31357, 
@@ -1440,8 +1740,9 @@
 }
 }, 
 "Tl2829782": {
-"^ot:altLabel": "Stenella coeruleoalba", 
 "^ot:originalLabel": "Stenella coeruleoalba NC012053", 
+"^ot:ottId": 124224, 
+"^ot:ottTaxonName": "Stenella coeruleoalba", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 27876, 
 "@tb:identifier.taxonVariant": 65031, 
@@ -1451,6 +1752,8 @@
 }, 
 "Tl2829783": {
 "^ot:originalLabel": "Syncerus caffer", 
+"^ot:ottId": 644255, 
+"^ot:ottTaxonName": "Syncerus caffer", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 28358, 
 "@tb:identifier.taxonVariant": 66122, 
@@ -1459,8 +1762,9 @@
 }
 }, 
 "Tl2829784": {
-"^ot:altLabel": "Balaenoptera borealis", 
 "^ot:originalLabel": "Balaenoptera borealis NC006929", 
+"^ot:ottId": 800329, 
+"^ot:ottTaxonName": "Balaenoptera borealis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3104, 
 "@tb:identifier.taxonVariant": 7477, 
@@ -1469,8 +1773,9 @@
 }
 }, 
 "Tl2829785": {
-"^ot:altLabel": "Rucervus eldii", 
 "^ot:originalLabel": "Rucervus eldi", 
+"^ot:ottId": 438453, 
+"^ot:ottTaxonName": "Rucervus eldii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 425320, 
 "@tb:identifier.taxonVariant": 558861, 
@@ -1478,8 +1783,9 @@
 }
 }, 
 "Tl2829786": {
-"^ot:altLabel": "Equus asinus", 
 "^ot:originalLabel": "Equus asinus NC001788", 
+"^ot:ottId": 1068202, 
+"^ot:ottTaxonName": "Equus asinus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 10329, 
 "@tb:identifier.taxonVariant": 24669, 
@@ -1489,6 +1795,8 @@
 }, 
 "Tl2829787": {
 "^ot:originalLabel": "Madoqua kirkii", 
+"^ot:ottId": 40128, 
+"^ot:ottTaxonName": "Madoqua kirkii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 16747, 
 "@tb:identifier.taxonVariant": 39235, 
@@ -1498,6 +1806,8 @@
 }, 
 "Tl2829788": {
 "^ot:originalLabel": "Procapra gutturosa", 
+"^ot:ottId": 48576, 
+"^ot:ottTaxonName": "Procapra gutturosa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 23707, 
 "@tb:identifier.taxonVariant": 55430, 
@@ -1506,8 +1816,9 @@
 }
 }, 
 "Tl2829789": {
-"^ot:altLabel": "Eubalaena japonica", 
 "^ot:originalLabel": "Eubalaena japonica NC006931", 
+"^ot:ottId": 1072344, 
+"^ot:ottTaxonName": "Eubalaena japonica", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 265873, 
 "@tb:identifier.taxonVariant": 472919, 
@@ -1517,6 +1828,8 @@
 }, 
 "Tl2829790": {
 "^ot:originalLabel": "Saiga tatarica", 
+"^ot:ottId": 274566, 
+"^ot:ottTaxonName": "Saiga tatarica", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 26032, 
 "@tb:identifier.taxonVariant": 60911, 
@@ -1525,8 +1838,9 @@
 }
 }, 
 "Tl2829791": {
-"^ot:altLabel": "Sus barbatus", 
 "^ot:originalLabel": "Sus barbatus EF545592", 
+"^ot:ottId": 240565, 
+"^ot:ottTaxonName": "Sus barbatus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 28268, 
 "@tb:identifier.taxonVariant": 65930, 
@@ -1536,6 +1850,8 @@
 }, 
 "Tl2829792": {
 "^ot:originalLabel": "Ozotoceros bezoarcticus", 
+"^ot:ottId": 288443, 
+"^ot:ottTaxonName": "Ozotoceros bezoarticus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 607560, 
 "@tb:identifier.taxonVariant": 811398, 
@@ -1544,6 +1860,8 @@
 }, 
 "Tl2829793": {
 "^ot:originalLabel": "Capra caucasica", 
+"^ot:ottId": 698611, 
+"^ot:ottTaxonName": "Capra caucasica", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 4812, 
 "@tb:identifier.taxonVariant": 11602, 
@@ -1552,8 +1870,9 @@
 }
 }, 
 "Tl2829794": {
-"^ot:altLabel": "Moschus berezovskii", 
 "^ot:originalLabel": "Moschus berezovskii NC012694", 
+"^ot:ottId": 807545, 
+"^ot:ottTaxonName": "Moschus berezovskii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 18212, 
 "@tb:identifier.taxonVariant": 42580, 
@@ -1563,6 +1882,8 @@
 }, 
 "Tl2829795": {
 "^ot:originalLabel": "Moschus moschiferus", 
+"^ot:ottId": 233514, 
+"^ot:ottTaxonName": "Moschus moschiferus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 18216, 
 "@tb:identifier.taxonVariant": 42587, 
@@ -1571,8 +1892,9 @@
 }
 }, 
 "Tl2829796": {
-"^ot:altLabel": "Cervus alfredi", 
 "^ot:originalLabel": "Rusa alfredi", 
+"^ot:ottId": 543086, 
+"^ot:ottTaxonName": "Rusa alfredi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 607599, 
 "@tb:identifier.taxonVariant": 811446, 
@@ -1582,6 +1904,8 @@
 }, 
 "Tl2829797": {
 "^ot:originalLabel": "Oryx beisa", 
+"^ot:ottId": 98208, 
+"^ot:ottTaxonName": "Oryx beisa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 302437, 
 "@tb:identifier.taxonVariant": 485670, 
@@ -1591,6 +1915,8 @@
 }, 
 "Tl2829798": {
 "^ot:originalLabel": "Pudu mephistophiles", 
+"^ot:ottId": 345506, 
+"^ot:ottTaxonName": "Pudu mephistophiles", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 24508, 
 "@tb:identifier.taxonVariant": 57384, 
@@ -1599,6 +1925,8 @@
 }, 
 "Tl2829799": {
 "^ot:originalLabel": "Redunca arundinum", 
+"^ot:ottId": 1090930, 
+"^ot:ottTaxonName": "Redunca arundinum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 24913, 
 "@tb:identifier.taxonVariant": 58343, 
@@ -1608,6 +1936,8 @@
 }, 
 "Tl2829800": {
 "^ot:originalLabel": "Cephalophus adersi", 
+"^ot:ottId": 436159, 
+"^ot:ottTaxonName": "Cephalophus adersi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5302, 
 "@tb:identifier.taxonVariant": 12888, 
@@ -1617,6 +1947,8 @@
 }, 
 "Tl2829801": {
 "^ot:originalLabel": "Alcelaphus buselaphus buselaphus", 
+"^ot:ottId": 394645, 
+"^ot:ottTaxonName": "Alcelaphus buselaphus buselaphus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 138772, 
 "@tb:identifier.taxonVariant": 215282, 
@@ -1625,8 +1957,9 @@
 }
 }, 
 "Tl2829802": {
-"^ot:altLabel": "Cervus nippon centralis", 
 "^ot:originalLabel": "Cervus nippon centralis NC006993", 
+"^ot:ottId": 123444, 
+"^ot:ottTaxonName": "Cervus nippon centralis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 146450, 
 "@tb:identifier.taxonVariant": 222511, 
@@ -1636,6 +1969,8 @@
 }, 
 "Tl2829803": {
 "^ot:originalLabel": "Sylvicapra grimmia", 
+"^ot:ottId": 23046, 
+"^ot:ottTaxonName": "Sylvicapra grimmia", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 28306, 
 "@tb:identifier.taxonVariant": 66017, 
@@ -1644,8 +1979,9 @@
 }
 }, 
 "Tl2829804": {
-"^ot:altLabel": "Camelus bactrianus", 
 "^ot:originalLabel": "Camelus bactrianus NC009628", 
+"^ot:ottId": 510768, 
+"^ot:ottTaxonName": "Camelus bactrianus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 631703, 
 "@tb:identifier.taxonVariant": 846715, 
@@ -1654,8 +1990,9 @@
 }
 }, 
 "Tl2829805": {
-"^ot:altLabel": "Capra ibex", 
 "^ot:originalLabel": "Capra ibex FJ207526", 
+"^ot:ottId": 698617, 
+"^ot:ottTaxonName": "Capra ibex", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 4816, 
 "@tb:identifier.taxonVariant": 11612, 
@@ -1664,8 +2001,9 @@
 }
 }, 
 "Tl2829806": {
-"^ot:altLabel": "Tursiops aduncus", 
 "^ot:originalLabel": "Tursiops aduncus NC012058", 
+"^ot:ottId": 257323, 
+"^ot:ottTaxonName": "Tursiops aduncus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 91643, 
 "@tb:identifier.taxonVariant": 170527, 
@@ -1675,6 +2013,8 @@
 }, 
 "Tl2829807": {
 "^ot:originalLabel": "Dama dama dama", 
+"^ot:ottId": 906310, 
+"^ot:ottTaxonName": "Dama dama", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 607569, 
 "@tb:identifier.taxonVariant": 811408, 
@@ -1682,8 +2022,9 @@
 }
 }, 
 "Tl2829808": {
-"^ot:altLabel": "Berardius bairdii", 
 "^ot:originalLabel": "Berardius bairdii NC005274", 
+"^ot:ottId": 1003906, 
+"^ot:ottTaxonName": "Berardius bairdii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3413, 
 "@tb:identifier.taxonVariant": 8219, 
@@ -1693,6 +2034,8 @@
 }, 
 "Tl2829809": {
 "^ot:originalLabel": "Gazella dorcas pelzelnii", 
+"^ot:ottId": 4118899, 
+"^ot:ottTaxonName": "Gazella dorcas pelzelnii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 607595, 
 "@tb:identifier.taxonVariant": 811442, 
@@ -1701,6 +2044,8 @@
 }, 
 "Tl2829810": {
 "^ot:originalLabel": "Cephalophus natalensis", 
+"^ot:ottId": 401074, 
+"^ot:ottTaxonName": "Cephalophus natalensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5310, 
 "@tb:identifier.taxonVariant": 12905, 
@@ -1709,8 +2054,9 @@
 }
 }, 
 "Tl2829811": {
-"^ot:altLabel": "Vicugna pacos", 
 "^ot:originalLabel": "Vicugna pacos AJ566364", 
+"^ot:ottId": 906301, 
+"^ot:ottTaxonName": "Vicugna pacos", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 631623, 
 "@tb:identifier.taxonVariant": 846635, 
@@ -1719,8 +2065,9 @@
 }
 }, 
 "Tl2829812": {
-"^ot:altLabel": "Budorcas taxicolor", 
 "^ot:originalLabel": "Budorcas taxicolor FJ207524", 
+"^ot:ottId": 860784, 
+"^ot:ottTaxonName": "Budorcas taxicolor", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 4193, 
 "@tb:identifier.taxonVariant": 10140, 
@@ -1729,8 +2076,9 @@
 }
 }, 
 "Tl2829813": {
-"^ot:altLabel": "Tursiops truncatus", 
 "^ot:originalLabel": "Tursiops truncatus NC012059", 
+"^ot:ottId": 124230, 
+"^ot:ottTaxonName": "Tursiops truncatus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 30091, 
 "@tb:identifier.taxonVariant": 70298, 
@@ -1740,6 +2088,8 @@
 }, 
 "Tl2829814": {
 "^ot:originalLabel": "Axis porcinus", 
+"^ot:ottId": 525302, 
+"^ot:ottTaxonName": "Axis porcinus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 31399, 
 "@tb:identifier.taxonVariant": 73219, 
@@ -1748,8 +2098,9 @@
 }
 }, 
 "Tl2829815": {
-"^ot:altLabel": "Megaptera novaeangliae", 
 "^ot:originalLabel": "Megaptera novaeangliae NC006927", 
+"^ot:ottId": 226198, 
+"^ot:ottTaxonName": "Megaptera novaeangliae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 17180, 
 "@tb:identifier.taxonVariant": 40242, 
@@ -1758,8 +2109,9 @@
 }
 }, 
 "Tl2829816": {
-"^ot:altLabel": "Oreamnos americanus", 
 "^ot:originalLabel": "Oreamnos americanus FJ207535", 
+"^ot:ottId": 274550, 
+"^ot:ottTaxonName": "Oreamnos americanus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 19772, 
 "@tb:identifier.taxonVariant": 45978, 
@@ -1768,8 +2120,9 @@
 }
 }, 
 "Tl2829817": {
-"^ot:altLabel": "Phacochoerus africanus", 
 "^ot:originalLabel": "Phacochoerus africanus NC008830", 
+"^ot:ottId": 1036755, 
+"^ot:ottTaxonName": "Phacochoerus africanus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 21474, 
 "@tb:identifier.taxonVariant": 49970, 
@@ -1778,8 +2131,9 @@
 }
 }, 
 "Tl2829818": {
-"^ot:altLabel": "Capricornis crispus", 
 "^ot:originalLabel": "Capricornis crispus FJ207533", 
+"^ot:ottId": 122642, 
+"^ot:ottTaxonName": "Capricornis crispus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 4823, 
 "@tb:identifier.taxonVariant": 11628, 
@@ -1788,8 +2142,9 @@
 }
 }, 
 "Tl2829819": {
-"^ot:altLabel": "Kogia breviceps", 
 "^ot:originalLabel": "Kogia breviceps NC005272", 
+"^ot:ottId": 825964, 
+"^ot:ottTaxonName": "Kogia breviceps", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 15054, 
 "@tb:identifier.taxonVariant": 35359, 
@@ -1799,6 +2154,8 @@
 }, 
 "Tl2829820": {
 "^ot:originalLabel": "Oryx dammah", 
+"^ot:ottId": 938435, 
+"^ot:ottTaxonName": "Oryx dammah", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 19977, 
 "@tb:identifier.taxonVariant": 46482, 
@@ -1808,6 +2165,8 @@
 }, 
 "Tl2829821": {
 "^ot:originalLabel": "Cephalophus rufilatus", 
+"^ot:ottId": 962019, 
+"^ot:ottTaxonName": "Cephalophus rufilatus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5315, 
 "@tb:identifier.taxonVariant": 12916, 
@@ -1817,6 +2176,8 @@
 }, 
 "Tl2829822": {
 "^ot:originalLabel": "Bubalus depressicornis", 
+"^ot:ottId": 346060, 
+"^ot:ottTaxonName": "Bubalus depressicornis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 4167, 
 "@tb:identifier.taxonVariant": 10088, 
@@ -1839,7 +2200,19 @@
 "Tr105486": {
 "@label": "TREE1", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:time", 
+"^ot:branchLengthTimeUnit": "Myr", 
+"^ot:curatedType": "Bayesian inference ", 
+"^ot:inGroupClade": "Tn16531744", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn16531731", 
+"^ot:specifiedRoot": "Tn16531731", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 184, 
 "^tb:quality.tree": "Unrated", 
