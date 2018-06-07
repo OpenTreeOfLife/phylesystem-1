@@ -57,22 +57,116 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2018-06-07T00:12:06.442Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:curatorName": "Kaitlin Allen ", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}, 
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": "$1"
+}, 
+"old": {
+"$": "^(\\S*\\s+\\S*).*"
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2018-06-07T00:12:06.442Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Kaitlin Allen "
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S21156"
 }, 
+"^ot:focalClade": 432348, 
+"^ot:focalCladeOTTTaxonName": "Botrytis", 
 "^ot:otusElementOrder": [
 "Tls57841"
 ], 
 "^ot:studyId": "ot_1350", 
-"^ot:studyPublicationReference": "Garfinkel A.R., Lorenzini M., Zapparoli G., & Chastagner G.A. 2017. Botrytis euroamericana, a new species from peony and grape in North America and Europe. Mycologia , .", 
+"^ot:studyPublication": {
+"@href": "https://doi-org.www2.lib.ku.edu/10.1080/00275514.2017.1354169"
+}, 
+"^ot:studyPublicationReference": "Andrea R. Garfinkel, Marilinda Lorenzini, Giacomo Zapparoli, Gary A. Chastagner, 2017, 'Botrytis euroamericana, a new species from peony and grape in North America and Europe', Mycologia, vol. 109, no. 3, pp. 495-507", 
 "^ot:studyYear": 2017, 
+"^ot:tag": [], 
 "^ot:taxonLinkPrefixes": {
 "@ubio": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:", 
 "@uniprot": "http://purl.uniprot.org/taxonomy/"
@@ -95,8 +189,9 @@
 "^skos:historyNote": "Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlOTUWriter@642331d $Rev$", 
 "otuById": {
 "Tl2821822": {
-"^ot:altLabel": "Botrytis calthae", 
 "^ot:originalLabel": "Botrytis calthae MUCL2830", 
+"^ot:ottId": 968425, 
+"^ot:ottTaxonName": "Botryotinia calthae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3807, 
 "@tb:identifier.taxonVariant": 811068, 
@@ -106,8 +201,9 @@
 "^skos:prefLabel": "Botryotinia calthae"
 }, 
 "Tl2821823": {
-"^ot:altLabel": "Botrytis byssoidea", 
 "^ot:originalLabel": "Botrytis byssoidea MUCL94", 
+"^ot:ottId": 1049665, 
+"^ot:ottTaxonName": "Ciborinia allii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3821, 
 "@tb:identifier.taxonVariant": 9104, 
@@ -116,8 +212,9 @@
 }
 }, 
 "Tl2821824": {
-"^ot:altLabel": "Botrytis sphaerosperma", 
 "^ot:originalLabel": "Botrytis sphaerosperma MUCL21481", 
+"^ot:ottId": 929717, 
+"^ot:ottTaxonName": "Botryotinia sphaerosperma", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3817, 
 "@tb:identifier.taxonVariant": 811067, 
@@ -127,8 +224,9 @@
 "^skos:prefLabel": "Botryotinia sphaerosperma"
 }, 
 "Tl2821825": {
-"^ot:altLabel": "Botrytis tulipae", 
 "^ot:originalLabel": "Botrytis tulipae BT9830", 
+"^ot:ottId": 399496, 
+"^ot:ottTaxonName": "Botrytis tulipae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 97407, 
 "@tb:identifier.taxonVariant": 176639, 
@@ -137,8 +235,9 @@
 }
 }, 
 "Tl2821826": {
-"^ot:altLabel": "Botrytis globosa", 
 "^ot:originalLabel": "Botrytis globosa MUCL444", 
+"^ot:ottId": 929706, 
+"^ot:ottTaxonName": "Botryotinia globosa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3811, 
 "@tb:identifier.taxonVariant": 811066, 
@@ -151,8 +250,9 @@
 "^ot:originalLabel": "Botrytis euroamericana B83"
 }, 
 "Tl2821828": {
-"^ot:altLabel": "Botrytis convoluta", 
 "^ot:originalLabel": "Botrytis convoluta MUCL11595", 
+"^ot:ottId": 737684, 
+"^ot:ottTaxonName": "Botryotinia convoluta", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3808, 
 "@tb:identifier.taxonVariant": 811070, 
@@ -162,8 +262,9 @@
 "^skos:prefLabel": "Botryotinia convoluta"
 }, 
 "Tl2821829": {
-"^ot:altLabel": "Botrytis aclada", 
 "^ot:originalLabel": "Botrytis aclada MUCL8415", 
+"^ot:ottId": 434314, 
+"^ot:ottTaxonName": "Botrytis aclada", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3820, 
 "@tb:identifier.taxonVariant": 9103, 
@@ -172,8 +273,9 @@
 }
 }, 
 "Tl2821830": {
-"^ot:altLabel": "Botrytis squamosa", 
 "^ot:originalLabel": "Botrytis squamosa MUCL1107", 
+"^ot:ottId": 1010990, 
+"^ot:ottTaxonName": "Botryotinia squamosa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3818, 
 "@tb:identifier.taxonVariant": 9109, 
@@ -183,8 +285,9 @@
 "^skos:prefLabel": "Botryotinia squamosa"
 }, 
 "Tl2821831": {
-"^ot:altLabel": "Botrytis porri", 
 "^ot:originalLabel": "Botrytis porri MUCL3234", 
+"^ot:ottId": 957223, 
+"^ot:ottTaxonName": "Botryotinia porri", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3815, 
 "@tb:identifier.taxonVariant": 811065, 
@@ -197,8 +300,9 @@
 "^ot:originalLabel": "Botrytis eucalypti CERC7170"
 }, 
 "Tl2821833": {
-"^ot:altLabel": "Botrytis croci", 
 "^ot:originalLabel": "Botrytis croci MUCL436", 
+"^ot:ottId": 403844, 
+"^ot:ottTaxonName": "Botrytis croci", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 246863, 
 "@tb:identifier.taxonVariant": 307378, 
@@ -207,8 +311,9 @@
 }
 }, 
 "Tl2821834": {
-"^ot:altLabel": "Botrytis ranunculi", 
 "^ot:originalLabel": "Botrytis ranunculi CBS178.63", 
+"^ot:ottId": 929714, 
+"^ot:ottTaxonName": "Botryotinia ranunculi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3816, 
 "@tb:identifier.taxonVariant": 811071, 
@@ -218,8 +323,9 @@
 "^skos:prefLabel": "Botryotinia ranunculi"
 }, 
 "Tl2821835": {
-"^ot:altLabel": "Botrytis hyacinthi", 
 "^ot:originalLabel": "Botrytis hyacinthi MUCL442", 
+"^ot:ottId": 929709, 
+"^ot:ottTaxonName": "Botrytis hyacinthi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 246867, 
 "@tb:identifier.taxonVariant": 307384, 
@@ -228,8 +334,9 @@
 }
 }, 
 "Tl2821836": {
-"^ot:altLabel": "Botrytis paeoniae", 
 "^ot:originalLabel": "Botrytis paeoniae HA11", 
+"^ot:ottId": 929726, 
+"^ot:ottTaxonName": "Botrytis paeoniae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 246868, 
 "@tb:identifier.taxonVariant": 307385, 
@@ -238,11 +345,14 @@
 }
 }, 
 "Tl2821837": {
-"^ot:originalLabel": "Botrytis sinoallii OnionBC59"
+"^ot:originalLabel": "Botrytis sinoallii OnionBC59", 
+"^ot:ottId": 4926349, 
+"^ot:ottTaxonName": "Botrytis sinoallii"
 }, 
 "Tl2821838": {
-"^ot:altLabel": "Botrytis paeoniae", 
 "^ot:originalLabel": "Botrytis paeoniae MUCL16084", 
+"^ot:ottId": 929726, 
+"^ot:ottTaxonName": "Botrytis paeoniae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 246868, 
 "@tb:identifier.taxonVariant": 307385, 
@@ -251,8 +361,9 @@
 }
 }, 
 "Tl2821839": {
-"^ot:altLabel": "Botrytis cinerea", 
 "^ot:originalLabel": "Botrytis cinerea MUCL87", 
+"^ot:ottId": 17713, 
+"^ot:ottTaxonName": "Botrytis cinerea", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3810, 
 "@tb:identifier.taxonVariant": 9107, 
@@ -262,11 +373,14 @@
 "^skos:prefLabel": "Botryotinia fuckeliana"
 }, 
 "Tl2821840": {
-"^ot:originalLabel": "Botrytis californica X503"
+"^ot:originalLabel": "Botrytis californica X503", 
+"^ot:ottId": 5726922, 
+"^ot:ottTaxonName": "Botrytis californica"
 }, 
 "Tl2821841": {
-"^ot:altLabel": "Monilinia fructigena", 
 "^ot:originalLabel": "Monilinia fructigena 9201", 
+"^ot:ottId": 750839, 
+"^ot:ottTaxonName": "Monilinia fructigena", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 18002, 
 "@tb:identifier.taxonVariant": 42110, 
@@ -275,8 +389,9 @@
 }
 }, 
 "Tl2821842": {
-"^ot:altLabel": "Botrytis polyblastis", 
 "^ot:originalLabel": "Botrytis polyblastis CBS287.38", 
+"^ot:ottId": 929723, 
+"^ot:ottTaxonName": "Botryotinia polyblastis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3814, 
 "@tb:identifier.taxonVariant": 809463, 
@@ -286,8 +401,9 @@
 "^skos:prefLabel": "Botryotinia polyblastis"
 }, 
 "Tl2821843": {
-"^ot:altLabel": "Sclerotinia sclerotiorum", 
 "^ot:originalLabel": "Sclerotinia sclerotiorum 484", 
+"^ot:ottId": 880963, 
+"^ot:ottTaxonName": "Sclerotinia sclerotiorum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 26525, 
 "@tb:identifier.taxonVariant": 61938, 
@@ -299,8 +415,9 @@
 "^ot:originalLabel": "Botrytis fragariae U14P1"
 }, 
 "Tl2821845": {
-"^ot:altLabel": "Botrytis cinerea", 
 "^ot:originalLabel": "Botrytis cinerea MS05", 
+"^ot:ottId": 17713, 
+"^ot:ottTaxonName": "Botrytis cinerea", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3810, 
 "@tb:identifier.taxonVariant": 9107, 
@@ -310,8 +427,9 @@
 "^skos:prefLabel": "Botryotinia fuckeliana"
 }, 
 "Tl2821846": {
-"^ot:altLabel": "Botrytis elliptica", 
 "^ot:originalLabel": "Botrytis elliptica BE9714", 
+"^ot:ottId": 403852, 
+"^ot:ottTaxonName": "Botrytis elliptica", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 246864, 
 "@tb:identifier.taxonVariant": 307379, 
@@ -320,8 +438,9 @@
 }
 }, 
 "Tl2821847": {
-"^ot:altLabel": "Botrytis aclada", 
 "^ot:originalLabel": "Botrytis aclada BA5", 
+"^ot:ottId": 434314, 
+"^ot:ottTaxonName": "Botrytis aclada", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3820, 
 "@tb:identifier.taxonVariant": 9103, 
@@ -336,11 +455,14 @@
 "^ot:originalLabel": "Botrytis euroamericana HA06"
 }, 
 "Tl2821850": {
-"^ot:originalLabel": "Botrytis caroliniana CB15"
+"^ot:originalLabel": "Botrytis caroliniana CB15", 
+"^ot:ottId": 1009149, 
+"^ot:ottTaxonName": "Botrytis caroliniana"
 }, 
 "Tl2821851": {
-"^ot:altLabel": "Botrytis galanthina", 
 "^ot:originalLabel": "Botrytis galanthina MUCL435", 
+"^ot:ottId": 929710, 
+"^ot:ottTaxonName": "Botrytis galanthina", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 246865, 
 "@tb:identifier.taxonVariant": 307380, 
@@ -349,14 +471,19 @@
 }
 }, 
 "Tl2821852": {
-"^ot:originalLabel": "Botrytis sinoviticola GBC31c"
+"^ot:originalLabel": "Botrytis sinoviticola GBC31c", 
+"^ot:ottId": 18300, 
+"^ot:ottTaxonName": "Botrytis sinoviticola"
 }, 
 "Tl2821853": {
-"^ot:originalLabel": "Botrytis prunorum Bpru1.9"
+"^ot:originalLabel": "Botrytis prunorum Bpru1.9", 
+"^ot:ottId": 5726913, 
+"^ot:ottTaxonName": "Botrytis prunorum"
 }, 
 "Tl2821854": {
-"^ot:altLabel": "Botrytis fabae", 
 "^ot:originalLabel": "Botrytis fabae MUCL98", 
+"^ot:ottId": 1069551, 
+"^ot:ottTaxonName": "Botrytis fabae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 169863, 
 "@tb:identifier.taxonVariant": 440667, 
@@ -368,8 +495,9 @@
 "^ot:originalLabel": "Botrytis pyriformis SedsarBC1"
 }, 
 "Tl2821856": {
-"^ot:altLabel": "Botrytis gladiolorum", 
 "^ot:originalLabel": "Botrytis gladiolorum MUCL3865", 
+"^ot:ottId": 929711, 
+"^ot:ottTaxonName": "Botryotinia draytonii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 246866, 
 "@tb:identifier.taxonVariant": 307382, 
@@ -379,8 +507,9 @@
 "^skos:prefLabel": "Botryotinia draytonii"
 }, 
 "Tl2821857": {
-"^ot:altLabel": "Botrytis narcissicola", 
 "^ot:originalLabel": "Botrytis narcissicola MUCL2120", 
+"^ot:ottId": 929720, 
+"^ot:ottTaxonName": "Botryotinia narcissicola", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3812, 
 "@tb:identifier.taxonVariant": 809464, 
@@ -390,8 +519,9 @@
 "^skos:prefLabel": "Botryotinia narcissicola"
 }, 
 "Tl2821858": {
-"^ot:altLabel": "Botrytis pelargonii", 
 "^ot:originalLabel": "Botrytis pelargonii CBS497.50", 
+"^ot:ottId": 403845, 
+"^ot:ottTaxonName": "Botryotinia pelargonii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3813, 
 "@tb:identifier.taxonVariant": 811072, 
@@ -401,8 +531,9 @@
 "^skos:prefLabel": "Botryotinia pelargonii"
 }, 
 "Tl2821859": {
-"^ot:altLabel": "Botrytis ficariarum", 
 "^ot:originalLabel": "Botrytis ficariarum MUCL376", 
+"^ot:ottId": 403849, 
+"^ot:ottTaxonName": "Botryotinia ficariarum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3809, 
 "@tb:identifier.taxonVariant": 811069, 
@@ -412,8 +543,9 @@
 "^skos:prefLabel": "Botryotinia ficariarum"
 }, 
 "Tl2821860": {
-"^ot:altLabel": "Botrytis cinerea", 
 "^ot:originalLabel": "Botrytis cinerea HA08", 
+"^ot:ottId": 17713, 
+"^ot:ottTaxonName": "Botrytis cinerea", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3810, 
 "@tb:identifier.taxonVariant": 9107, 
@@ -423,11 +555,14 @@
 "^skos:prefLabel": "Botryotinia fuckeliana"
 }, 
 "Tl2821861": {
-"^ot:originalLabel": "Botrytis fabiopsis BC2"
+"^ot:originalLabel": "Botrytis fabiopsis BC2", 
+"^ot:ottId": 5309760, 
+"^ot:ottTaxonName": "Botrytis fabiopsis"
 }, 
 "Tl2821862": {
-"^ot:altLabel": "Botrytis paeoniae", 
 "^ot:originalLabel": "Botrytis paeoniae GBG22", 
+"^ot:ottId": 929726, 
+"^ot:ottTaxonName": "Botrytis paeoniae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 246868, 
 "@tb:identifier.taxonVariant": 307385, 
@@ -436,10 +571,14 @@
 }
 }, 
 "Tl2821863": {
-"^ot:originalLabel": "Botrytis pseudocinerea 10091"
+"^ot:originalLabel": "Botrytis pseudocinerea 10091", 
+"^ot:ottId": 346293, 
+"^ot:ottTaxonName": "Botrytis pseudocinerea"
 }, 
 "Tl2821864": {
-"^ot:originalLabel": "Botrytis deweyae CBS134649"
+"^ot:originalLabel": "Botrytis deweyae CBS134649", 
+"^ot:ottId": 6379342, 
+"^ot:ottTaxonName": "Botrytis deweyae"
 }, 
 "Tl2821865": {
 "^ot:originalLabel": "Botrytis byssoidae MUCL94"
@@ -547,10 +686,6 @@
 "@label": "Botrytis euroamericana NEP2", 
 "@otus": "Tls57841", 
 "^ot:treeElementOrder": [
-"Tr105261", 
-"Tr105257", 
-"Tr105262", 
-"Tr105260", 
 "Tr105259", 
 "Tr105256", 
 "Tr105258"
@@ -560,7 +695,19 @@
 "Tr105256": {
 "@label": "Imported tree 1", 
 "@xsi:type": "nex:FloatTree", 
-"^ot:rootNodeId": "Tn16461516", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:changesCount", 
+"^ot:curatedType": "Maximum likelihood ", 
+"^ot:inGroupClade": "Tn16461520", 
+"^ot:nodeLabelDescription": "", 
+"^ot:nodeLabelMode": "ot:bootstrapValues", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
+"^ot:rootNodeId": "Tr105256_ROOT", 
+"^ot:specifiedRoot": "Tr105256_ROOT", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 43, 
 "^tb:quality.tree": "Unrated", 
@@ -570,7 +717,8 @@
 "edge194644": {
 "@length": 0.00211755, 
 "@source": "Tn16461510", 
-"@target": "Tn16461580"
+"@target": "Tn16461580", 
+"^ot:bootstrapValues": 97.7
 }, 
 "edge194662": {
 "@length": 0.00145093, 
@@ -580,12 +728,13 @@
 }, 
 "Tn16461511": {
 "edge194648": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16461511", 
-"@target": "Tn16461578"
+"@target": "Tn16461578", 
+"^ot:bootstrapValues": 17
 }, 
 "edge194654": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16461511", 
 "@target": "Tn16461518"
 }
@@ -594,12 +743,14 @@
 "edge194724": {
 "@length": 0.01037131, 
 "@source": "Tn16461513", 
-"@target": "Tn16461588"
+"@target": "Tn16461588", 
+"^ot:bootstrapValues": 98.8
 }, 
 "edge194750": {
 "@length": 0.0139064, 
 "@source": "Tn16461513", 
-"@target": "Tn16461522"
+"@target": "Tn16461522", 
+"^ot:bootstrapValues": 100
 }
 }, 
 "Tn16461514": {
@@ -618,12 +769,8 @@
 "edge194628": {
 "@length": 0.02630823, 
 "@source": "Tn16461516", 
-"@target": "Tn16461520"
-}, 
-"edge194790": {
-"@length": 0.00356058, 
-"@source": "Tn16461516", 
-"@target": "Tn16461530"
+"@target": "Tn16461520", 
+"^ot:bootstrapValues": 97.39999999999999
 }
 }, 
 "Tn16461517": {
@@ -635,19 +782,22 @@
 "edge194780": {
 "@length": 0.00117008, 
 "@source": "Tn16461517", 
-"@target": "Tn16461583"
+"@target": "Tn16461583", 
+"^ot:bootstrapValues": 42.199999999999996
 }
 }, 
 "Tn16461520": {
 "edge194630": {
 "@length": 0.00100757, 
 "@source": "Tn16461520", 
-"@target": "Tn16461550"
+"@target": "Tn16461550", 
+"^ot:bootstrapValues": 1.7000000000000002
 }, 
 "edge194712": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16461520", 
-"@target": "Tn16461541"
+"@target": "Tn16461541", 
+"^ot:bootstrapValues": 3.8
 }
 }, 
 "Tn16461521": {
@@ -657,19 +807,20 @@
 "@target": "Tn16461533"
 }, 
 "edge194776": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16461521", 
-"@target": "Tn16461517"
+"@target": "Tn16461517", 
+"^ot:bootstrapValues": 10.5
 }
 }, 
 "Tn16461522": {
 "edge194752": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16461522", 
 "@target": "Tn16461575"
 }, 
 "edge194754": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16461522", 
 "@target": "Tn16461593"
 }
@@ -683,14 +834,16 @@
 "edge194688": {
 "@length": 0.00729876, 
 "@source": "Tn16461524", 
-"@target": "Tn16461544"
+"@target": "Tn16461544", 
+"^ot:bootstrapValues": 99.9
 }
 }, 
 "Tn16461526": {
 "edge194760": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16461526", 
-"@target": "Tn16461560"
+"@target": "Tn16461560", 
+"^ot:bootstrapValues": 80.9
 }, 
 "edge194766": {
 "@length": 0.00603418, 
@@ -702,12 +855,14 @@
 "edge194758": {
 "@length": 0.01267775, 
 "@source": "Tn16461527", 
-"@target": "Tn16461526"
+"@target": "Tn16461526", 
+"^ot:bootstrapValues": 100
 }, 
 "edge194768": {
 "@length": 0.00600663, 
 "@source": "Tn16461527", 
-"@target": "Tn16461572"
+"@target": "Tn16461572", 
+"^ot:bootstrapValues": 96.2
 }
 }, 
 "Tn16461528": {
@@ -719,14 +874,16 @@
 "edge194702": {
 "@length": 0.00735274, 
 "@source": "Tn16461528", 
-"@target": "Tn16461574"
+"@target": "Tn16461574", 
+"^ot:bootstrapValues": 100
 }
 }, 
 "Tn16461529": {
 "edge194642": {
 "@length": 0.00592902, 
 "@source": "Tn16461529", 
-"@target": "Tn16461510"
+"@target": "Tn16461510", 
+"^ot:bootstrapValues": 94.1
 }, 
 "edge194664": {
 "@length": 0.01853303, 
@@ -750,7 +907,8 @@
 "edge194638": {
 "@length": 0.00900366, 
 "@source": "Tn16461537", 
-"@target": "Tn16461542"
+"@target": "Tn16461542", 
+"^ot:bootstrapValues": 98.2
 }, 
 "edge194676": {
 "@length": 0.0164039, 
@@ -760,9 +918,10 @@
 }, 
 "Tn16461539": {
 "edge194728": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16461539", 
-"@target": "Tn16461581"
+"@target": "Tn16461581", 
+"^ot:bootstrapValues": 52.7
 }, 
 "edge194738": {
 "@length": 0.00720201, 
@@ -774,24 +933,28 @@
 "edge194714": {
 "@length": 0.01745898, 
 "@source": "Tn16461541", 
-"@target": "Tn16461559"
+"@target": "Tn16461559", 
+"^ot:bootstrapValues": 100
 }, 
 "edge194720": {
 "@length": 0.00241498, 
 "@source": "Tn16461541", 
-"@target": "Tn16461590"
+"@target": "Tn16461590", 
+"^ot:bootstrapValues": 36.9
 }
 }, 
 "Tn16461542": {
 "edge194640": {
 "@length": 0.00902526, 
 "@source": "Tn16461542", 
-"@target": "Tn16461529"
+"@target": "Tn16461529", 
+"^ot:bootstrapValues": 98.1
 }, 
 "edge194666": {
 "@length": 0.00131194, 
 "@source": "Tn16461542", 
-"@target": "Tn16461551"
+"@target": "Tn16461551", 
+"^ot:bootstrapValues": 52.7
 }
 }, 
 "Tn16461543": {
@@ -801,21 +964,23 @@
 "@target": "Tn16461545"
 }, 
 "edge194684": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16461543", 
-"@target": "Tn16461524"
+"@target": "Tn16461524", 
+"^ot:bootstrapValues": 11.3
 }
 }, 
 "Tn16461544": {
 "edge194690": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16461544", 
 "@target": "Tn16461561"
 }, 
 "edge194692": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16461544", 
-"@target": "Tn16461568"
+"@target": "Tn16461568", 
+"^ot:bootstrapValues": 7.6
 }
 }, 
 "Tn16461546": {
@@ -825,7 +990,7 @@
 "@target": "Tn16461570"
 }, 
 "edge194734": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16461546", 
 "@target": "Tn16461577"
 }
@@ -834,19 +999,22 @@
 "edge194634": {
 "@length": 0.00269121, 
 "@source": "Tn16461547", 
-"@target": "Tn16461549"
+"@target": "Tn16461549", 
+"^ot:bootstrapValues": 34.1
 }, 
 "edge194680": {
 "@length": 0.00708799, 
 "@source": "Tn16461547", 
-"@target": "Tn16461543"
+"@target": "Tn16461543", 
+"^ot:bootstrapValues": 52.7
 }
 }, 
 "Tn16461549": {
 "edge194636": {
 "@length": 0.00491649, 
 "@source": "Tn16461549", 
-"@target": "Tn16461537"
+"@target": "Tn16461537", 
+"^ot:bootstrapValues": 84.8
 }, 
 "edge194678": {
 "@length": 0.01072713, 
@@ -856,14 +1024,16 @@
 }, 
 "Tn16461550": {
 "edge194632": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16461550", 
-"@target": "Tn16461547"
+"@target": "Tn16461547", 
+"^ot:bootstrapValues": 0.7000000000000001
 }, 
 "edge194698": {
 "@length": 0.00098761, 
 "@source": "Tn16461550", 
-"@target": "Tn16461528"
+"@target": "Tn16461528", 
+"^ot:bootstrapValues": 43.5
 }
 }, 
 "Tn16461551": {
@@ -875,7 +1045,8 @@
 "edge194670": {
 "@length": 0.00254806, 
 "@source": "Tn16461551", 
-"@target": "Tn16461554"
+"@target": "Tn16461554", 
+"^ot:bootstrapValues": 74.1
 }
 }, 
 "Tn16461554": {
@@ -892,55 +1063,55 @@
 }, 
 "Tn16461556": {
 "edge194658": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16461556", 
 "@target": "Tn16461573"
 }, 
 "edge194660": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16461556", 
 "@target": "Tn16461564"
 }
 }, 
 "Tn16461559": {
 "edge194716": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16461559", 
 "@target": "Tn16461525"
 }, 
 "edge194718": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16461559", 
 "@target": "Tn16461540"
 }
 }, 
 "Tn16461560": {
 "edge194762": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16461560", 
 "@target": "Tn16461586"
 }, 
 "edge194764": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16461560", 
 "@target": "Tn16461584"
 }
 }, 
 "Tn16461565": {
 "edge194708": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16461565", 
 "@target": "Tn16461571"
 }, 
 "edge194710": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16461565", 
 "@target": "Tn16461535"
 }
 }, 
 "Tn16461568": {
 "edge194694": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16461568", 
 "@target": "Tn16461523"
 }, 
@@ -957,9 +1128,10 @@
 "@target": "Tn16461594"
 }, 
 "edge194744": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16461569", 
-"@target": "Tn16461514"
+"@target": "Tn16461514", 
+"^ot:bootstrapValues": 11.799999999999999
 }
 }, 
 "Tn16461572": {
@@ -971,50 +1143,55 @@
 "edge194772": {
 "@length": 0.0011984, 
 "@source": "Tn16461572", 
-"@target": "Tn16461521"
+"@target": "Tn16461521", 
+"^ot:bootstrapValues": 49.6
 }
 }, 
 "Tn16461574": {
 "edge194704": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16461574", 
 "@target": "Tn16461532"
 }, 
 "edge194706": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16461574", 
-"@target": "Tn16461565"
+"@target": "Tn16461565", 
+"^ot:bootstrapValues": 33.7
 }
 }, 
 "Tn16461578": {
 "edge194650": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16461578", 
 "@target": "Tn16461567"
 }, 
 "edge194652": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16461578", 
 "@target": "Tn16461589"
 }
 }, 
 "Tn16461580": {
 "edge194646": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16461580", 
-"@target": "Tn16461511"
+"@target": "Tn16461511", 
+"^ot:bootstrapValues": 7.6
 }, 
 "edge194656": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16461580", 
-"@target": "Tn16461556"
+"@target": "Tn16461556", 
+"^ot:bootstrapValues": 18.8
 }
 }, 
 "Tn16461581": {
 "edge194730": {
 "@length": 0.00478499, 
 "@source": "Tn16461581", 
-"@target": "Tn16461546"
+"@target": "Tn16461546", 
+"^ot:bootstrapValues": 81.89999999999999
 }, 
 "edge194736": {
 "@length": 0.00851417, 
@@ -1031,7 +1208,8 @@
 "edge194784": {
 "@length": 0.00218445, 
 "@source": "Tn16461583", 
-"@target": "Tn16461587"
+"@target": "Tn16461587", 
+"^ot:bootstrapValues": 74.9
 }
 }, 
 "Tn16461587": {
@@ -1050,91 +1228,77 @@
 "edge194726": {
 "@length": 0.00230905, 
 "@source": "Tn16461588", 
-"@target": "Tn16461539"
+"@target": "Tn16461539", 
+"^ot:bootstrapValues": 31.3
 }, 
 "edge194740": {
 "@length": 0.00362762, 
 "@source": "Tn16461588", 
-"@target": "Tn16461569"
+"@target": "Tn16461569", 
+"^ot:bootstrapValues": 71.3
 }
 }, 
 "Tn16461590": {
 "edge194722": {
 "@length": 0.00217278, 
 "@source": "Tn16461590", 
-"@target": "Tn16461513"
+"@target": "Tn16461513", 
+"^ot:bootstrapValues": 52.1
 }, 
 "edge194756": {
 "@length": 0.00208404, 
 "@source": "Tn16461590", 
-"@target": "Tn16461527"
+"@target": "Tn16461527", 
+"^ot:bootstrapValues": 43.9
+}
+}, 
+"Tr105256_ROOT": {
+"Tr105256_ROOT_EDGE": {
+"@source": "Tr105256_ROOT", 
+"@target": "Tn16461516"
+}, 
+"edge194790": {
+"@length": 0.00356058, 
+"@source": "Tr105256_ROOT", 
+"@target": "Tn16461530", 
+"^ot:bootstrapValues": 97.39999999999999
 }
 }
 }, 
 "nodeById": {
-"Tn16461510": {
-"@label": "0.9410"
-}, 
-"Tn16461511": {
-"@label": "0.0760"
-}, 
+"Tn16461510": {}, 
+"Tn16461511": {}, 
 "Tn16461512": {
 "@otu": "Tl2821854"
 }, 
-"Tn16461513": {
-"@label": "0.5210"
-}, 
-"Tn16461514": {
-"@label": "0.1180"
-}, 
+"Tn16461513": {}, 
+"Tn16461514": {}, 
 "Tn16461515": {
 "@otu": "Tl2821822"
 }, 
-"Tn16461516": {
-"@root": true
-}, 
-"Tn16461517": {
-"@label": "0.1050"
-}, 
+"Tn16461516": {}, 
+"Tn16461517": {}, 
 "Tn16461518": {
 "@otu": "Tl2821839"
 }, 
 "Tn16461519": {
 "@otu": "Tl2821844"
 }, 
-"Tn16461520": {
-"@label": "0.9740"
-}, 
-"Tn16461521": {
-"@label": "0.4960"
-}, 
-"Tn16461522": {
-"@label": "1.0000"
-}, 
+"Tn16461520": {}, 
+"Tn16461521": {}, 
+"Tn16461522": {}, 
 "Tn16461523": {
 "@otu": "Tl2821862"
 }, 
-"Tn16461524": {
-"@label": "0.1130"
-}, 
+"Tn16461524": {}, 
 "Tn16461525": {
 "@otu": "Tl2821847"
 }, 
-"Tn16461526": {
-"@label": "1.0000"
-}, 
-"Tn16461527": {
-"@label": "0.4390"
-}, 
-"Tn16461528": {
-"@label": "0.4350"
-}, 
-"Tn16461529": {
-"@label": "0.9810"
-}, 
-"Tn16461530": {
-"@label": "0.9740"
-}, 
+"Tn16461526": {}, 
+"Tn16461527": {}, 
+"Tn16461528": {}, 
+"Tn16461529": {}, 
+"Tn16461530": {}, 
 "Tn16461531": {
 "@otu": "Tl2821841"
 }, 
@@ -1153,78 +1317,48 @@
 "Tn16461536": {
 "@otu": "Tl2821828"
 }, 
-"Tn16461537": {
-"@label": "0.8480"
-}, 
+"Tn16461537": {}, 
 "Tn16461538": {
 "@otu": "Tl2821843"
 }, 
-"Tn16461539": {
-"@label": "0.3130"
-}, 
+"Tn16461539": {}, 
 "Tn16461540": {
 "@otu": "Tl2821829"
 }, 
-"Tn16461541": {
-"@label": "0.0380"
-}, 
-"Tn16461542": {
-"@label": "0.9820"
-}, 
-"Tn16461543": {
-"@label": "0.5270"
-}, 
-"Tn16461544": {
-"@label": "0.9990"
-}, 
+"Tn16461541": {}, 
+"Tn16461542": {}, 
+"Tn16461543": {}, 
+"Tn16461544": {}, 
 "Tn16461545": {
 "@otu": "Tl2821853"
 }, 
-"Tn16461546": {
-"@label": "0.8190"
-}, 
-"Tn16461547": {
-"@label": "0.0070"
-}, 
+"Tn16461546": {}, 
+"Tn16461547": {}, 
 "Tn16461548": {
 "@otu": "Tl2821864"
 }, 
-"Tn16461549": {
-"@label": "0.3410"
-}, 
-"Tn16461550": {
-"@label": "0.0170"
-}, 
-"Tn16461551": {
-"@label": "0.5270"
-}, 
+"Tn16461549": {}, 
+"Tn16461550": {}, 
+"Tn16461551": {}, 
 "Tn16461552": {
 "@otu": "Tl2821836"
 }, 
 "Tn16461553": {
 "@otu": "Tl2821846"
 }, 
-"Tn16461554": {
-"@label": "0.7410"
-}, 
+"Tn16461554": {}, 
 "Tn16461555": {
 "@otu": "Tl2821840"
 }, 
-"Tn16461556": {
-"@label": "0.1880"
-}, 
+"Tn16461556": {}, 
 "Tn16461557": {
 "@otu": "Tl2821852"
 }, 
 "Tn16461558": {
 "@otu": "Tl2821837"
 }, 
-"Tn16461559": {
-"@label": "1.0000"
-}, 
-"Tn16461560": {
-"@label": "0.8090"
-}, 
+"Tn16461559": {}, 
+"Tn16461560": {}, 
 "Tn16461561": {
 "@otu": "Tl2821838"
 }, 
@@ -1237,36 +1371,26 @@
 "Tn16461564": {
 "@otu": "Tl2821858"
 }, 
-"Tn16461565": {
-"@label": "0.3370"
-}, 
+"Tn16461565": {}, 
 "Tn16461566": {
 "@otu": "Tl2821823"
 }, 
 "Tn16461567": {
 "@otu": "Tl2821860"
 }, 
-"Tn16461568": {
-"@label": "0.0760"
-}, 
-"Tn16461569": {
-"@label": "0.7130"
-}, 
+"Tn16461568": {}, 
+"Tn16461569": {}, 
 "Tn16461570": {
 "@otu": "Tl2821826"
 }, 
 "Tn16461571": {
 "@otu": "Tl2821827"
 }, 
-"Tn16461572": {
-"@label": "0.9620"
-}, 
+"Tn16461572": {}, 
 "Tn16461573": {
 "@otu": "Tl2821832"
 }, 
-"Tn16461574": {
-"@label": "1.0000"
-}, 
+"Tn16461574": {}, 
 "Tn16461575": {
 "@otu": "Tl2821833"
 }, 
@@ -1276,24 +1400,16 @@
 "Tn16461577": {
 "@otu": "Tl2821824"
 }, 
-"Tn16461578": {
-"@label": "0.1700"
-}, 
+"Tn16461578": {}, 
 "Tn16461579": {
 "@otu": "Tl2821863"
 }, 
-"Tn16461580": {
-"@label": "0.9770"
-}, 
-"Tn16461581": {
-"@label": "0.5270"
-}, 
+"Tn16461580": {}, 
+"Tn16461581": {}, 
 "Tn16461582": {
 "@otu": "Tl2821855"
 }, 
-"Tn16461583": {
-"@label": "0.4220"
-}, 
+"Tn16461583": {}, 
 "Tn16461584": {
 "@otu": "Tl2821861"
 }, 
@@ -1303,18 +1419,12 @@
 "Tn16461586": {
 "@otu": "Tl2821850"
 }, 
-"Tn16461587": {
-"@label": "0.7490"
-}, 
-"Tn16461588": {
-"@label": "0.9880"
-}, 
+"Tn16461587": {}, 
+"Tn16461588": {}, 
 "Tn16461589": {
 "@otu": "Tl2821845"
 }, 
-"Tn16461590": {
-"@label": "0.3690"
-}, 
+"Tn16461590": {}, 
 "Tn16461591": {
 "@otu": "Tl2821834"
 }, 
@@ -1326,785 +1436,28 @@
 }, 
 "Tn16461594": {
 "@otu": "Tl2821856"
-}
-}
 }, 
-"Tr105257": {
-"@label": "Imported tree 1", 
-"@xsi:type": "nex:FloatTree", 
-"^ot:rootNodeId": "Tn16461619", 
-"^tb:kind.tree": "Species Tree", 
-"^tb:ntax.tree": 43, 
-"^tb:quality.tree": "Unrated", 
-"^tb:type.tree": "Single", 
-"edgeBySourceId": {
-"Tn16461595": {
-"edge194118": {
-"@length": 0.00108164, 
-"@source": "Tn16461595", 
-"@target": "Tn16461664"
-}, 
-"edge194124": {
-"@length": 0.00484263, 
-"@source": "Tn16461595", 
-"@target": "Tn16461634"
-}
-}, 
-"Tn16461596": {
-"edge194090": {
-"@length": 0.00451737, 
-"@source": "Tn16461596", 
-"@target": "Tn16461628"
-}, 
-"edge194092": {
-"@length": 0.0, 
-"@source": "Tn16461596", 
-"@target": "Tn16461676"
-}
-}, 
-"Tn16461597": {
-"edge194134": {
-"@length": 0.0, 
-"@source": "Tn16461597", 
-"@target": "Tn16461611"
-}, 
-"edge194140": {
-"@length": 0.0, 
-"@source": "Tn16461597", 
-"@target": "Tn16461646"
-}
-}, 
-"Tn16461599": {
-"edge194074": {
-"@length": 0.0, 
-"@source": "Tn16461599", 
-"@target": "Tn16461640"
-}, 
-"edge194076": {
-"@length": 0.0, 
-"@source": "Tn16461599", 
-"@target": "Tn16461603"
-}
-}, 
-"Tn16461600": {
-"edge194018": {
-"@length": 0.00690182, 
-"@source": "Tn16461600", 
-"@target": "Tn16461612"
-}, 
-"edge194024": {
-"@length": 0.01049539, 
-"@source": "Tn16461600", 
-"@target": "Tn16461607"
-}
-}, 
-"Tn16461601": {
-"edge194012": {
-"@length": 0.00112293, 
-"@source": "Tn16461601", 
-"@target": "Tn16461622"
-}, 
-"edge194030": {
-"@length": 0.01144136, 
-"@source": "Tn16461601", 
-"@target": "Tn16461639"
-}
-}, 
-"Tn16461604": {
-"edge194040": {
-"@length": 0.00454507, 
-"@source": "Tn16461604", 
-"@target": "Tn16461616"
-}, 
-"edge194042": {
-"@length": 0.00111, 
-"@source": "Tn16461604", 
-"@target": "Tn16461642"
-}
-}, 
-"Tn16461605": {
-"edge194058": {
-"@length": 0.02202766, 
-"@source": "Tn16461605", 
-"@target": "Tn16461636"
-}, 
-"edge194060": {
-"@length": 0.00591184, 
-"@source": "Tn16461605", 
-"@target": "Tn16461655"
-}
-}, 
-"Tn16461610": {
-"edge194072": {
-"@length": 0.01506557, 
-"@source": "Tn16461610", 
-"@target": "Tn16461599"
-}, 
-"edge194078": {
-"@length": 0.01264836, 
-"@source": "Tn16461610", 
-"@target": "Tn16461648"
-}
-}, 
-"Tn16461611": {
-"edge194136": {
-"@length": 0.00111627, 
-"@source": "Tn16461611", 
-"@target": "Tn16461626"
-}, 
-"edge194138": {
-"@length": 0.00111627, 
-"@source": "Tn16461611", 
-"@target": "Tn16461666"
-}
-}, 
-"Tn16461612": {
-"edge194020": {
-"@length": 0.0, 
-"@source": "Tn16461612", 
-"@target": "Tn16461618"
-}, 
-"edge194022": {
-"@length": 0.0, 
-"@source": "Tn16461612", 
-"@target": "Tn16461672"
-}
-}, 
-"Tn16461617": {
-"edge194084": {
-"@length": 0.0, 
-"@source": "Tn16461617", 
-"@target": "Tn16461649"
-}, 
-"edge194086": {
-"@length": 0.00111625, 
-"@source": "Tn16461617", 
-"@target": "Tn16461651"
-}
-}, 
-"Tn16461619": {
-"edge193988": {
-"@length": 0.01688661, 
-"@source": "Tn16461619", 
-"@target": "Tn16461623"
-}, 
-"edge194154": {
-"@length": 0.108931, 
-"@source": "Tn16461619", 
-"@target": "Tn16461598"
-}
-}, 
-"Tn16461621": {
-"edge194054": {
-"@length": 0.01106221, 
-"@source": "Tn16461621", 
-"@target": "Tn16461669"
-}, 
-"edge194056": {
-"@length": 0.00376834, 
-"@source": "Tn16461621", 
-"@target": "Tn16461605"
-}
-}, 
-"Tn16461622": {
-"edge194014": {
-"@length": 0.0, 
-"@source": "Tn16461622", 
-"@target": "Tn16461629"
-}, 
-"edge194028": {
-"@length": 0.01647874, 
-"@source": "Tn16461622", 
-"@target": "Tn16461638"
-}
-}, 
-"Tn16461623": {
-"edge193990": {
-"@length": 0.03290789, 
-"@source": "Tn16461623", 
-"@target": "Tn16461657"
-}, 
-"edge194152": {
-"@length": 0.09204439, 
-"@source": "Tn16461623", 
-"@target": "Tn16461635"
-}
-}, 
-"Tn16461627": {
-"edge194006": {
-"@length": 0.00333544, 
-"@source": "Tn16461627", 
-"@target": "Tn16461662"
-}, 
-"edge194044": {
-"@length": 0.0137377, 
-"@source": "Tn16461627", 
-"@target": "Tn16461630"
-}
-}, 
-"Tn16461629": {
-"edge194016": {
-"@length": 0.00457785, 
-"@source": "Tn16461629", 
-"@target": "Tn16461600"
-}, 
-"edge194026": {
-"@length": 0.00799567, 
-"@source": "Tn16461629", 
-"@target": "Tn16461624"
-}
-}, 
-"Tn16461630": {
-"edge194046": {
-"@length": 0.0, 
-"@source": "Tn16461630", 
-"@target": "Tn16461674"
-}, 
-"edge194048": {
-"@length": 0.0, 
-"@source": "Tn16461630", 
-"@target": "Tn16461631"
-}
-}, 
-"Tn16461634": {
-"edge194126": {
-"@length": 0.01007375, 
-"@source": "Tn16461634", 
-"@target": "Tn16461658"
-}, 
-"edge194128": {
-"@length": 0.00460103, 
-"@source": "Tn16461634", 
-"@target": "Tn16461652"
-}
-}, 
-"Tn16461637": {
-"edge194002": {
-"@length": 0.0, 
-"@source": "Tn16461637", 
-"@target": "Tn16461650"
-}, 
-"edge194052": {
-"@length": 0.00607316, 
-"@source": "Tn16461637", 
-"@target": "Tn16461621"
-}
-}, 
-"Tn16461641": {
-"edge194146": {
-"@length": 0.0, 
-"@source": "Tn16461641", 
-"@target": "Tn16461606"
-}, 
-"edge194148": {
-"@length": 0.0, 
-"@source": "Tn16461641", 
-"@target": "Tn16461670"
-}
-}, 
-"Tn16461643": {
-"edge194114": {
-"@length": 0.00694255, 
-"@source": "Tn16461643", 
-"@target": "Tn16461644"
-}, 
-"edge194116": {
-"@length": 0.001213, 
-"@source": "Tn16461643", 
-"@target": "Tn16461595"
-}
-}, 
-"Tn16461646": {
-"edge194142": {
-"@length": 0.0, 
-"@source": "Tn16461646", 
-"@target": "Tn16461609"
-}, 
-"edge194144": {
-"@length": 0.0, 
-"@source": "Tn16461646", 
-"@target": "Tn16461641"
-}
-}, 
-"Tn16461648": {
-"edge194080": {
-"@length": 0.00223869, 
-"@source": "Tn16461648", 
-"@target": "Tn16461659"
-}, 
-"edge194082": {
-"@length": 0.0, 
-"@source": "Tn16461648", 
-"@target": "Tn16461617"
-}
-}, 
-"Tn16461650": {
-"edge194004": {
-"@length": 0.00468659, 
-"@source": "Tn16461650", 
-"@target": "Tn16461627"
-}, 
-"edge194050": {
-"@length": 0.00369734, 
-"@source": "Tn16461650", 
-"@target": "Tn16461673"
-}
-}, 
-"Tn16461652": {
-"edge194130": {
-"@length": 0.00272891, 
-"@source": "Tn16461652", 
-"@target": "Tn16461620"
-}, 
-"edge194132": {
-"@length": 0.0017795, 
-"@source": "Tn16461652", 
-"@target": "Tn16461597"
-}
-}, 
-"Tn16461653": {
-"edge194066": {
-"@length": 0.0, 
-"@source": "Tn16461653", 
-"@target": "Tn16461608"
-}, 
-"edge194068": {
-"@length": 0.0, 
-"@source": "Tn16461653", 
-"@target": "Tn16461613"
-}
-}, 
-"Tn16461654": {
-"edge193996": {
-"@length": 0.00461186, 
-"@source": "Tn16461654", 
-"@target": "Tn16461668"
-}, 
-"edge194110": {
-"@length": 0.01750634, 
-"@source": "Tn16461654", 
-"@target": "Tn16461661"
-}
-}, 
-"Tn16461655": {
-"edge194062": {
-"@length": 0.0, 
-"@source": "Tn16461655", 
-"@target": "Tn16461602"
-}, 
-"edge194064": {
-"@length": 0.0, 
-"@source": "Tn16461655", 
-"@target": "Tn16461653"
-}
-}, 
-"Tn16461656": {
-"edge194102": {
-"@length": 0.0, 
-"@source": "Tn16461656", 
-"@target": "Tn16461632"
-}, 
-"edge194104": {
-"@length": 0.00111627, 
-"@source": "Tn16461656", 
-"@target": "Tn16461671"
-}
-}, 
-"Tn16461657": {
-"edge193992": {
-"@length": 0.00345141, 
-"@source": "Tn16461657", 
-"@target": "Tn16461678"
-}, 
-"edge194150": {
-"@length": 0.01851231, 
-"@source": "Tn16461657", 
-"@target": "Tn16461660"
-}
-}, 
-"Tn16461662": {
-"edge194008": {
-"@length": 0.00191805, 
-"@source": "Tn16461662", 
-"@target": "Tn16461677"
-}, 
-"edge194034": {
-"@length": 0.00853891, 
-"@source": "Tn16461662", 
-"@target": "Tn16461675"
-}
-}, 
-"Tn16461664": {
-"edge194120": {
-"@length": 0.00904709, 
-"@source": "Tn16461664", 
-"@target": "Tn16461614"
-}, 
-"edge194122": {
-"@length": 0.00591095, 
-"@source": "Tn16461664", 
-"@target": "Tn16461615"
-}
-}, 
-"Tn16461667": {
-"edge194096": {
-"@length": 0.0, 
-"@source": "Tn16461667", 
-"@target": "Tn16461625"
-}, 
-"edge194098": {
-"@length": 0.00338033, 
-"@source": "Tn16461667", 
-"@target": "Tn16461647"
-}
-}, 
-"Tn16461668": {
-"edge193998": {
-"@length": 0.00420971, 
-"@source": "Tn16461668", 
-"@target": "Tn16461679"
-}, 
-"edge194088": {
-"@length": 0.01097993, 
-"@source": "Tn16461668", 
-"@target": "Tn16461596"
-}
-}, 
-"Tn16461671": {
-"edge194106": {
-"@length": 0.00111625, 
-"@source": "Tn16461671", 
-"@target": "Tn16461645"
-}, 
-"edge194108": {
-"@length": 0.0, 
-"@source": "Tn16461671", 
-"@target": "Tn16461663"
-}
-}, 
-"Tn16461675": {
-"edge194036": {
-"@length": 0.00226333, 
-"@source": "Tn16461675", 
-"@target": "Tn16461665"
-}, 
-"edge194038": {
-"@length": 0.00340464, 
-"@source": "Tn16461675", 
-"@target": "Tn16461604"
-}
-}, 
-"Tn16461676": {
-"edge194094": {
-"@length": 0.00112636, 
-"@source": "Tn16461676", 
-"@target": "Tn16461667"
-}, 
-"edge194100": {
-"@length": 0.00450105, 
-"@source": "Tn16461676", 
-"@target": "Tn16461656"
-}
-}, 
-"Tn16461677": {
-"edge194010": {
-"@length": 0.0, 
-"@source": "Tn16461677", 
-"@target": "Tn16461601"
-}, 
-"edge194032": {
-"@length": 0.00915007, 
-"@source": "Tn16461677", 
-"@target": "Tn16461633"
-}
-}, 
-"Tn16461678": {
-"edge193994": {
-"@length": 0.002567, 
-"@source": "Tn16461678", 
-"@target": "Tn16461654"
-}, 
-"edge194112": {
-"@length": 0.01157943, 
-"@source": "Tn16461678", 
-"@target": "Tn16461643"
-}
-}, 
-"Tn16461679": {
-"edge194000": {
-"@length": 0.00276006, 
-"@source": "Tn16461679", 
-"@target": "Tn16461637"
-}, 
-"edge194070": {
-"@length": 0.01154815, 
-"@source": "Tn16461679", 
-"@target": "Tn16461610"
-}
-}
-}, 
-"nodeById": {
-"Tn16461595": {
-"@label": "0.5670"
-}, 
-"Tn16461596": {
-"@label": "0.9970"
-}, 
-"Tn16461597": {
-"@label": "0.9290"
-}, 
-"Tn16461598": {
-"@otu": "Tl2821841"
-}, 
-"Tn16461599": {
-"@label": "1.0000"
-}, 
-"Tn16461600": {
-"@label": "0.9200"
-}, 
-"Tn16461601": {
-"@label": "0.0400"
-}, 
-"Tn16461602": {
-"@otu": "Tl2821838"
-}, 
-"Tn16461603": {
-"@otu": "Tl2821829"
-}, 
-"Tn16461604": {
-"@label": "0.9670"
-}, 
-"Tn16461605": {
-"@label": "0.6670"
-}, 
-"Tn16461606": {
-"@otu": "Tl2821839"
-}, 
-"Tn16461607": {
-"@otu": "Tl2821842"
-}, 
-"Tn16461608": {
-"@otu": "Tl2821862"
-}, 
-"Tn16461609": {
-"@otu": "Tl2821845"
-}, 
-"Tn16461610": {
-"@label": "0.9890"
-}, 
-"Tn16461611": {
-"@label": "0.0190"
-}, 
-"Tn16461612": {
-"@label": "1.0000"
-}, 
-"Tn16461613": {
-"@otu": "Tl2821836"
-}, 
-"Tn16461614": {
-"@otu": "Tl2821822"
-}, 
-"Tn16461615": {
-"@otu": "Tl2821852"
-}, 
-"Tn16461616": {
-"@otu": "Tl2821850"
-}, 
-"Tn16461617": {
-"@label": "0.2200"
-}, 
-"Tn16461618": {
-"@otu": "Tl2821826"
-}, 
-"Tn16461619": {
+"Tr105256_ROOT": {
 "@root": true
-}, 
-"Tn16461620": {
-"@otu": "Tl2821854"
-}, 
-"Tn16461621": {
-"@label": "0.6700"
-}, 
-"Tn16461622": {
-"@label": "0.3120"
-}, 
-"Tn16461623": {
-"@label": "0.0000"
-}, 
-"Tn16461624": {
-"@otu": "Tl2821823"
-}, 
-"Tn16461625": {
-"@otu": "Tl2821859"
-}, 
-"Tn16461626": {
-"@otu": "Tl2821860"
-}, 
-"Tn16461627": {
-"@label": "0.8570"
-}, 
-"Tn16461628": {
-"@otu": "Tl2821837"
-}, 
-"Tn16461629": {
-"@label": "0.0960"
-}, 
-"Tn16461630": {
-"@label": "1.0000"
-}, 
-"Tn16461631": {
-"@otu": "Tl2821835"
-}, 
-"Tn16461632": {
-"@otu": "Tl2821864"
-}, 
-"Tn16461633": {
-"@otu": "Tl2821857"
-}, 
-"Tn16461634": {
-"@label": "0.9380"
-}, 
-"Tn16461635": {
-"@otu": "Tl2821843"
-}, 
-"Tn16461636": {
-"@otu": "Tl2821853"
-}, 
-"Tn16461637": {
-"@label": "0.2420"
-}, 
-"Tn16461638": {
-"@otu": "Tl2821856"
-}, 
-"Tn16461639": {
-"@otu": "Tl2821825"
-}, 
-"Tn16461640": {
-"@otu": "Tl2821847"
-}, 
-"Tn16461641": {
-"@label": "0.2360"
-}, 
-"Tn16461642": {
-"@otu": "Tl2821861"
-}, 
-"Tn16461643": {
-"@label": "0.9900"
-}, 
-"Tn16461644": {
-"@otu": "Tl2821840"
-}, 
-"Tn16461645": {
-"@otu": "Tl2821846"
-}, 
-"Tn16461646": {
-"@label": "0.4370"
-}, 
-"Tn16461647": {
-"@otu": "Tl2821834"
-}, 
-"Tn16461648": {
-"@label": "1.0000"
-}, 
-"Tn16461649": {
-"@otu": "Tl2821848"
-}, 
-"Tn16461650": {
-"@label": "0.3310"
-}, 
-"Tn16461651": {
-"@otu": "Tl2821827"
-}, 
-"Tn16461652": {
-"@label": "0.9200"
-}, 
-"Tn16461653": {
-"@label": "0.3220"
-}, 
-"Tn16461654": {
-"@label": "0.5210"
-}, 
-"Tn16461655": {
-"@label": "0.9970"
-}, 
-"Tn16461656": {
-"@label": "0.9400"
-}, 
-"Tn16461657": {
-"@label": "0.9080"
-}, 
-"Tn16461658": {
-"@otu": "Tl2821863"
-}, 
-"Tn16461659": {
-"@otu": "Tl2821849"
-}, 
-"Tn16461660": {
-"@otu": "Tl2821855"
-}, 
-"Tn16461661": {
-"@otu": "Tl2821831"
-}, 
-"Tn16461662": {
-"@label": "0.7580"
-}, 
-"Tn16461663": {
-"@otu": "Tl2821830"
-}, 
-"Tn16461664": {
-"@label": "0.4820"
-}, 
-"Tn16461665": {
-"@otu": "Tl2821851"
-}, 
-"Tn16461666": {
-"@otu": "Tl2821832"
-}, 
-"Tn16461667": {
-"@label": "0.7190"
-}, 
-"Tn16461668": {
-"@label": "0.3950"
-}, 
-"Tn16461669": {
-"@otu": "Tl2821844"
-}, 
-"Tn16461670": {
-"@otu": "Tl2821858"
-}, 
-"Tn16461671": {
-"@label": "0.7810"
-}, 
-"Tn16461672": {
-"@otu": "Tl2821824"
-}, 
-"Tn16461673": {
-"@otu": "Tl2821828"
-}, 
-"Tn16461674": {
-"@otu": "Tl2821833"
-}, 
-"Tn16461675": {
-"@label": "0.9980"
-}, 
-"Tn16461676": {
-"@label": "0.5600"
-}, 
-"Tn16461677": {
-"@label": "0.6900"
-}, 
-"Tn16461678": {
-"@label": "0.4320"
-}, 
-"Tn16461679": {
-"@label": "0.5900"
 }
 }
 }, 
 "Tr105258": {
 "@label": "Imported tree 1", 
 "@xsi:type": "nex:FloatTree", 
-"^ot:rootNodeId": "Tn16461727", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:changesCount", 
+"^ot:curatedType": "Maximum likelihood ", 
+"^ot:inGroupClade": "Tn16461693", 
+"^ot:nodeLabelDescription": "", 
+"^ot:nodeLabelMode": "ot:bootstrapValues", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
+"^ot:rootNodeId": "Tr105258_ROOT", 
+"^ot:specifiedRoot": "Tr105258_ROOT", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 43, 
 "^tb:quality.tree": "Unrated", 
@@ -2119,48 +1472,55 @@
 "edge194860": {
 "@length": 0.00318629, 
 "@source": "Tn16461680", 
-"@target": "Tn16461756"
+"@target": "Tn16461756", 
+"^ot:bootstrapValues": 99
 }
 }, 
 "Tn16461681": {
 "edge194822": {
 "@length": 0.01040261, 
 "@source": "Tn16461681", 
-"@target": "Tn16461743"
+"@target": "Tn16461743", 
+"^ot:bootstrapValues": 98.4
 }, 
 "edge194856": {
 "@length": 0.01880712, 
 "@source": "Tn16461681", 
-"@target": "Tn16461680"
+"@target": "Tn16461680", 
+"^ot:bootstrapValues": 100
 }
 }, 
 "Tn16461683": {
 "edge194812": {
 "@length": 0.00419264, 
 "@source": "Tn16461683", 
-"@target": "Tn16461747"
+"@target": "Tn16461747", 
+"^ot:bootstrapValues": 16.7
 }, 
 "edge194894": {
 "@length": 0.02509215, 
 "@source": "Tn16461683", 
-"@target": "Tn16461735"
+"@target": "Tn16461735", 
+"^ot:bootstrapValues": 100
 }
 }, 
 "Tn16461684": {
 "edge194810": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16461684", 
-"@target": "Tn16461683"
+"@target": "Tn16461683", 
+"^ot:bootstrapValues": 9.6
 }, 
 "edge194912": {
 "@length": 0.00206704, 
 "@source": "Tn16461684", 
-"@target": "Tn16461722"
+"@target": "Tn16461722", 
+"^ot:bootstrapValues": 20.3
 }
 }, 
 "Tn16461685": {
 "edge194888": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16461685", 
 "@target": "Tn16461688"
 }, 
@@ -2174,19 +1534,22 @@
 "edge194826": {
 "@length": 0.00303124, 
 "@source": "Tn16461687", 
-"@target": "Tn16461709"
+"@target": "Tn16461709", 
+"^ot:bootstrapValues": 79.5
 }, 
 "edge194840": {
 "@length": 0.00159813, 
 "@source": "Tn16461687", 
-"@target": "Tn16461739"
+"@target": "Tn16461739", 
+"^ot:bootstrapValues": 79.60000000000001
 }
 }, 
 "Tn16461693": {
 "edge194808": {
 "@length": 0.01220787, 
 "@source": "Tn16461693", 
-"@target": "Tn16461684"
+"@target": "Tn16461684", 
+"^ot:bootstrapValues": 65.3
 }, 
 "edge194966": {
 "@length": 0.0162873, 
@@ -2196,7 +1559,7 @@
 }, 
 "Tn16461696": {
 "edge194852": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16461696", 
 "@target": "Tn16461752"
 }, 
@@ -2210,7 +1573,8 @@
 "edge194916": {
 "@length": 0.00599299, 
 "@source": "Tn16461697", 
-"@target": "Tn16461751"
+"@target": "Tn16461751", 
+"^ot:bootstrapValues": 99.3
 }, 
 "edge194926": {
 "@length": 0.0108102, 
@@ -2225,9 +1589,10 @@
 "@target": "Tn16461682"
 }, 
 "edge194948": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16461703", 
-"@target": "Tn16461760"
+"@target": "Tn16461760", 
+"^ot:bootstrapValues": 4
 }
 }, 
 "Tn16461704": {
@@ -2239,24 +1604,26 @@
 "edge194940": {
 "@length": 0.00596977, 
 "@source": "Tn16461704", 
-"@target": "Tn16461724"
+"@target": "Tn16461724", 
+"^ot:bootstrapValues": 98.4
 }
 }, 
 "Tn16461705": {
 "edge194958": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16461705", 
 "@target": "Tn16461691"
 }, 
 "edge194960": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16461705", 
-"@target": "Tn16461762"
+"@target": "Tn16461762", 
+"^ot:bootstrapValues": 28.599999999999998
 }
 }, 
 "Tn16461707": {
 "edge194846": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16461707", 
 "@target": "Tn16461706"
 }, 
@@ -2268,21 +1635,23 @@
 }, 
 "Tn16461708": {
 "edge194954": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16461708", 
 "@target": "Tn16461718"
 }, 
 "edge194956": {
 "@length": 0.00207159, 
 "@source": "Tn16461708", 
-"@target": "Tn16461705"
+"@target": "Tn16461705", 
+"^ot:bootstrapValues": 87.4
 }
 }, 
 "Tn16461709": {
 "edge194828": {
 "@length": 0.00146641, 
 "@source": "Tn16461709", 
-"@target": "Tn16461741"
+"@target": "Tn16461741", 
+"^ot:bootstrapValues": 69.5
 }, 
 "edge194838": {
 "@length": 0.01597006, 
@@ -2292,33 +1661,37 @@
 }, 
 "Tn16461715": {
 "edge194816": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16461715", 
-"@target": "Tn16461723"
+"@target": "Tn16461723", 
+"^ot:bootstrapValues": 1.7999999999999998
 }, 
 "edge194870": {
 "@length": 0.02110182, 
 "@source": "Tn16461715", 
-"@target": "Tn16461750"
+"@target": "Tn16461750", 
+"^ot:bootstrapValues": 100
 }
 }, 
 "Tn16461719": {
 "edge194884": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16461719", 
 "@target": "Tn16461736"
 }, 
 "edge194886": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16461719", 
-"@target": "Tn16461685"
+"@target": "Tn16461685", 
+"^ot:bootstrapValues": 40.6
 }
 }, 
 "Tn16461720": {
 "edge194820": {
 "@length": 0.00636381, 
 "@source": "Tn16461720", 
-"@target": "Tn16461681"
+"@target": "Tn16461681", 
+"^ot:bootstrapValues": 93.10000000000001
 }, 
 "edge194866": {
 "@length": 0.01990535, 
@@ -2330,19 +1703,22 @@
 "edge194914": {
 "@length": 0.00165129, 
 "@source": "Tn16461722", 
-"@target": "Tn16461697"
+"@target": "Tn16461697", 
+"^ot:bootstrapValues": 41.199999999999996
 }, 
 "edge194928": {
 "@length": 0.02392808, 
 "@source": "Tn16461722", 
-"@target": "Tn16461740"
+"@target": "Tn16461740", 
+"^ot:bootstrapValues": 99.9
 }
 }, 
 "Tn16461723": {
 "edge194818": {
 "@length": 0.0031931, 
 "@source": "Tn16461723", 
-"@target": "Tn16461720"
+"@target": "Tn16461720", 
+"^ot:bootstrapValues": 18.6
 }, 
 "edge194868": {
 "@length": 0.00406239, 
@@ -2359,31 +1735,29 @@
 "edge194944": {
 "@length": 0.00094228, 
 "@source": "Tn16461724", 
-"@target": "Tn16461703"
+"@target": "Tn16461703", 
+"^ot:bootstrapValues": 94.69999999999999
 }
 }, 
 "Tn16461725": {
 "edge194876": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16461725", 
 "@target": "Tn16461731"
 }, 
 "edge194878": {
 "@length": 0.00089417, 
 "@source": "Tn16461725", 
-"@target": "Tn16461749"
+"@target": "Tn16461749", 
+"^ot:bootstrapValues": 41.9
 }
 }, 
 "Tn16461727": {
 "edge194806": {
 "@length": 0.03109213, 
 "@source": "Tn16461727", 
-"@target": "Tn16461693"
-}, 
-"edge194968": {
-"@length": 0.00701617, 
-"@source": "Tn16461727", 
-"@target": "Tn16461753"
+"@target": "Tn16461693", 
+"^ot:bootstrapValues": 99.6
 }
 }, 
 "Tn16461729": {
@@ -2393,7 +1767,7 @@
 "@target": "Tn16461700"
 }, 
 "edge194910": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16461729", 
 "@target": "Tn16461757"
 }
@@ -2402,22 +1776,24 @@
 "edge194896": {
 "@length": 0.00740776, 
 "@source": "Tn16461735", 
-"@target": "Tn16461759"
+"@target": "Tn16461759", 
+"^ot:bootstrapValues": 100
 }, 
 "edge194902": {
 "@length": 0.00770199, 
 "@source": "Tn16461735", 
-"@target": "Tn16461755"
+"@target": "Tn16461755", 
+"^ot:bootstrapValues": 100
 }
 }, 
 "Tn16461737": {
 "edge194920": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16461737", 
 "@target": "Tn16461692"
 }, 
 "edge194922": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16461737", 
 "@target": "Tn16461734"
 }
@@ -2431,26 +1807,30 @@
 "edge194844": {
 "@length": 0.00752429, 
 "@source": "Tn16461739", 
-"@target": "Tn16461707"
+"@target": "Tn16461707", 
+"^ot:bootstrapValues": 100
 }
 }, 
 "Tn16461740": {
 "edge194930": {
 "@length": 0.00090238, 
 "@source": "Tn16461740", 
-"@target": "Tn16461764"
+"@target": "Tn16461764", 
+"^ot:bootstrapValues": 77.10000000000001
 }, 
 "edge194936": {
 "@length": 0.00189072, 
 "@source": "Tn16461740", 
-"@target": "Tn16461704"
+"@target": "Tn16461704", 
+"^ot:bootstrapValues": 66.8
 }
 }, 
 "Tn16461741": {
 "edge194830": {
 "@length": 0.00309979, 
 "@source": "Tn16461741", 
-"@target": "Tn16461748"
+"@target": "Tn16461748", 
+"^ot:bootstrapValues": 83.6
 }, 
 "edge194836": {
 "@length": 0.00323456, 
@@ -2462,19 +1842,22 @@
 "edge194824": {
 "@length": 0.00472435, 
 "@source": "Tn16461743", 
-"@target": "Tn16461687"
+"@target": "Tn16461687", 
+"^ot:bootstrapValues": 89.7
 }, 
 "edge194850": {
 "@length": 0.00528447, 
 "@source": "Tn16461743", 
-"@target": "Tn16461696"
+"@target": "Tn16461696", 
+"^ot:bootstrapValues": 100
 }
 }, 
 "Tn16461747": {
 "edge194814": {
 "@length": 0.00416259, 
 "@source": "Tn16461747", 
-"@target": "Tn16461715"
+"@target": "Tn16461715", 
+"^ot:bootstrapValues": 16.6
 }, 
 "edge194892": {
 "@length": 0.01294751, 
@@ -2503,7 +1886,8 @@
 "edge194882": {
 "@length": 0.00392166, 
 "@source": "Tn16461749", 
-"@target": "Tn16461719"
+"@target": "Tn16461719", 
+"^ot:bootstrapValues": 98.1
 }
 }, 
 "Tn16461750": {
@@ -2515,17 +1899,19 @@
 "edge194874": {
 "@length": 0.00482014, 
 "@source": "Tn16461750", 
-"@target": "Tn16461725"
+"@target": "Tn16461725", 
+"^ot:bootstrapValues": 96.7
 }
 }, 
 "Tn16461751": {
 "edge194918": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16461751", 
-"@target": "Tn16461737"
+"@target": "Tn16461737", 
+"^ot:bootstrapValues": 30.8
 }, 
 "edge194924": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16461751", 
 "@target": "Tn16461745"
 }
@@ -2544,19 +1930,20 @@
 }, 
 "Tn16461755": {
 "edge194904": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16461755", 
 "@target": "Tn16461744"
 }, 
 "edge194906": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16461755", 
-"@target": "Tn16461729"
+"@target": "Tn16461729", 
+"^ot:bootstrapValues": 17.7
 }
 }, 
 "Tn16461756": {
 "edge194862": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16461756", 
 "@target": "Tn16461698"
 }, 
@@ -2568,12 +1955,12 @@
 }, 
 "Tn16461759": {
 "edge194898": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16461759", 
 "@target": "Tn16461713"
 }, 
 "edge194900": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16461759", 
 "@target": "Tn16461717"
 }
@@ -2585,19 +1972,20 @@
 "@target": "Tn16461732"
 }, 
 "edge194952": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16461760", 
-"@target": "Tn16461708"
+"@target": "Tn16461708", 
+"^ot:bootstrapValues": 1.6
 }
 }, 
 "Tn16461762": {
 "edge194962": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16461762", 
 "@target": "Tn16461689"
 }, 
 "edge194964": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16461762", 
 "@target": "Tn16461754"
 }
@@ -2613,33 +2001,33 @@
 "@source": "Tn16461764", 
 "@target": "Tn16461728"
 }
+}, 
+"Tr105258_ROOT": {
+"Tr105258_ROOT_EDGE": {
+"@source": "Tr105258_ROOT", 
+"@target": "Tn16461727"
+}, 
+"edge194968": {
+"@length": 0.00701617, 
+"@source": "Tr105258_ROOT", 
+"@target": "Tn16461753", 
+"^ot:bootstrapValues": 99.6
+}
 }
 }, 
 "nodeById": {
-"Tn16461680": {
-"@label": "1.0000"
-}, 
-"Tn16461681": {
-"@label": "0.9310"
-}, 
+"Tn16461680": {}, 
+"Tn16461681": {}, 
 "Tn16461682": {
 "@otu": "Tl2821858"
 }, 
-"Tn16461683": {
-"@label": "0.0960"
-}, 
-"Tn16461684": {
-"@label": "0.6530"
-}, 
-"Tn16461685": {
-"@label": "0.4060"
-}, 
+"Tn16461683": {}, 
+"Tn16461684": {}, 
+"Tn16461685": {}, 
 "Tn16461686": {
 "@otu": "Tl2821865"
 }, 
-"Tn16461687": {
-"@label": "0.8970"
-}, 
+"Tn16461687": {}, 
 "Tn16461688": {
 "@otu": "Tl2821864"
 }, 
@@ -2655,21 +2043,15 @@
 "Tn16461692": {
 "@otu": "Tl2821836"
 }, 
-"Tn16461693": {
-"@label": "0.9960"
-}, 
+"Tn16461693": {}, 
 "Tn16461694": {
 "@otu": "Tl2821844"
 }, 
 "Tn16461695": {
 "@otu": "Tl2821852"
 }, 
-"Tn16461696": {
-"@label": "1.0000"
-}, 
-"Tn16461697": {
-"@label": "0.4120"
-}, 
+"Tn16461696": {}, 
+"Tn16461697": {}, 
 "Tn16461698": {
 "@otu": "Tl2821850"
 }, 
@@ -2685,27 +2067,15 @@
 "Tn16461702": {
 "@otu": "Tl2821825"
 }, 
-"Tn16461703": {
-"@label": "0.9470"
-}, 
-"Tn16461704": {
-"@label": "0.6680"
-}, 
-"Tn16461705": {
-"@label": "0.8740"
-}, 
+"Tn16461703": {}, 
+"Tn16461704": {}, 
+"Tn16461705": {}, 
 "Tn16461706": {
 "@otu": "Tl2821826"
 }, 
-"Tn16461707": {
-"@label": "1.0000"
-}, 
-"Tn16461708": {
-"@label": "0.0160"
-}, 
-"Tn16461709": {
-"@label": "0.7950"
-}, 
+"Tn16461707": {}, 
+"Tn16461708": {}, 
+"Tn16461709": {}, 
 "Tn16461710": {
 "@otu": "Tl2821861"
 }, 
@@ -2721,9 +2091,7 @@
 "Tn16461714": {
 "@otu": "Tl2821842"
 }, 
-"Tn16461715": {
-"@label": "0.1660"
-}, 
+"Tn16461715": {}, 
 "Tn16461716": {
 "@otu": "Tl2821856"
 }, 
@@ -2733,39 +2101,23 @@
 "Tn16461718": {
 "@otu": "Tl2821832"
 }, 
-"Tn16461719": {
-"@label": "0.9810"
-}, 
-"Tn16461720": {
-"@label": "0.1860"
-}, 
+"Tn16461719": {}, 
+"Tn16461720": {}, 
 "Tn16461721": {
 "@otu": "Tl2821831"
 }, 
-"Tn16461722": {
-"@label": "0.2030"
-}, 
-"Tn16461723": {
-"@label": "0.0180"
-}, 
-"Tn16461724": {
-"@label": "0.9840"
-}, 
-"Tn16461725": {
-"@label": "0.9670"
-}, 
+"Tn16461722": {}, 
+"Tn16461723": {}, 
+"Tn16461724": {}, 
+"Tn16461725": {}, 
 "Tn16461726": {
 "@otu": "Tl2821863"
 }, 
-"Tn16461727": {
-"@root": true
-}, 
+"Tn16461727": {}, 
 "Tn16461728": {
 "@otu": "Tl2821822"
 }, 
-"Tn16461729": {
-"@label": "0.1770"
-}, 
+"Tn16461729": {}, 
 "Tn16461730": {
 "@otu": "Tl2821859"
 }, 
@@ -2781,33 +2133,21 @@
 "Tn16461734": {
 "@otu": "Tl2821838"
 }, 
-"Tn16461735": {
-"@label": "1.0000"
-}, 
+"Tn16461735": {}, 
 "Tn16461736": {
 "@otu": "Tl2821846"
 }, 
-"Tn16461737": {
-"@label": "0.3080"
-}, 
+"Tn16461737": {}, 
 "Tn16461738": {
 "@otu": "Tl2821828"
 }, 
-"Tn16461739": {
-"@label": "0.7960"
-}, 
-"Tn16461740": {
-"@label": "0.9990"
-}, 
-"Tn16461741": {
-"@label": "0.6950"
-}, 
+"Tn16461739": {}, 
+"Tn16461740": {}, 
+"Tn16461741": {}, 
 "Tn16461742": {
 "@otu": "Tl2821830"
 }, 
-"Tn16461743": {
-"@label": "0.9840"
-}, 
+"Tn16461743": {}, 
 "Tn16461744": {
 "@otu": "Tl2821848"
 }, 
@@ -2817,66 +2157,57 @@
 "Tn16461746": {
 "@otu": "Tl2821843"
 }, 
-"Tn16461747": {
-"@label": "0.1670"
-}, 
-"Tn16461748": {
-"@label": "0.8360"
-}, 
-"Tn16461749": {
-"@label": "0.4190"
-}, 
-"Tn16461750": {
-"@label": "1.0000"
-}, 
-"Tn16461751": {
-"@label": "0.9930"
-}, 
+"Tn16461747": {}, 
+"Tn16461748": {}, 
+"Tn16461749": {}, 
+"Tn16461750": {}, 
+"Tn16461751": {}, 
 "Tn16461752": {
 "@otu": "Tl2821833"
 }, 
-"Tn16461753": {
-"@label": "0.9960"
-}, 
+"Tn16461753": {}, 
 "Tn16461754": {
 "@otu": "Tl2821839"
 }, 
-"Tn16461755": {
-"@label": "1.0000"
-}, 
-"Tn16461756": {
-"@label": "0.9900"
-}, 
+"Tn16461755": {}, 
+"Tn16461756": {}, 
 "Tn16461757": {
 "@otu": "Tl2821849"
 }, 
 "Tn16461758": {
 "@otu": "Tl2821853"
 }, 
-"Tn16461759": {
-"@label": "1.0000"
-}, 
-"Tn16461760": {
-"@label": "0.0400"
-}, 
+"Tn16461759": {}, 
+"Tn16461760": {}, 
 "Tn16461761": {
 "@otu": "Tl2821824"
 }, 
-"Tn16461762": {
-"@label": "0.2860"
-}, 
+"Tn16461762": {}, 
 "Tn16461763": {
 "@otu": "Tl2821835"
 }, 
-"Tn16461764": {
-"@label": "0.7710"
+"Tn16461764": {}, 
+"Tr105258_ROOT": {
+"@root": true
 }
 }
 }, 
 "Tr105259": {
 "@label": "Imported tree 1", 
 "@xsi:type": "nex:FloatTree", 
-"^ot:rootNodeId": "Tn16461821", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:changesCount", 
+"^ot:curatedType": "Maximum likelihood ", 
+"^ot:inGroupClade": "Tn16461822", 
+"^ot:nodeLabelDescription": "", 
+"^ot:nodeLabelMode": "ot:bootstrapValues", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
+"^ot:rootNodeId": "Tr105259_ROOT", 
+"^ot:specifiedRoot": "Tr105259_ROOT", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 43, 
 "^tb:quality.tree": "Unrated", 
@@ -2898,12 +2229,14 @@
 "edge194470": {
 "@length": 0.00123468, 
 "@source": "Tn16461767", 
-"@target": "Tn16461809"
+"@target": "Tn16461809", 
+"^ot:bootstrapValues": 53
 }, 
 "edge194484": {
 "@length": 0.00230815, 
 "@source": "Tn16461767", 
-"@target": "Tn16461789"
+"@target": "Tn16461789", 
+"^ot:bootstrapValues": 93.4
 }
 }, 
 "Tn16461770": {
@@ -2913,9 +2246,10 @@
 "@target": "Tn16461828"
 }, 
 "edge194598": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16461770", 
-"@target": "Tn16461811"
+"@target": "Tn16461811", 
+"^ot:bootstrapValues": 77.7
 }
 }, 
 "Tn16461772": {
@@ -2939,43 +2273,50 @@
 "edge194594": {
 "@length": 0.00107975, 
 "@source": "Tn16461774", 
-"@target": "Tn16461770"
+"@target": "Tn16461770", 
+"^ot:bootstrapValues": 100
 }
 }, 
 "Tn16461776": {
 "edge194464": {
 "@length": 0.00453708, 
 "@source": "Tn16461776", 
-"@target": "Tn16461839"
+"@target": "Tn16461839", 
+"^ot:bootstrapValues": 100
 }, 
 "edge194510": {
 "@length": 0.01516399, 
 "@source": "Tn16461776", 
-"@target": "Tn16461793"
+"@target": "Tn16461793", 
+"^ot:bootstrapValues": 100
 }
 }, 
 "Tn16461777": {
 "edge194468": {
 "@length": 0.00585013, 
 "@source": "Tn16461777", 
-"@target": "Tn16461767"
+"@target": "Tn16461767", 
+"^ot:bootstrapValues": 100
 }, 
 "edge194494": {
 "@length": 0.0108986, 
 "@source": "Tn16461777", 
-"@target": "Tn16461847"
+"@target": "Tn16461847", 
+"^ot:bootstrapValues": 100
 }
 }, 
 "Tn16461780": {
 "edge194576": {
 "@length": 0.00058044, 
 "@source": "Tn16461780", 
-"@target": "Tn16461836"
+"@target": "Tn16461836", 
+"^ot:bootstrapValues": 71.2
 }, 
 "edge194586": {
 "@length": 0.00706177, 
 "@source": "Tn16461780", 
-"@target": "Tn16461819"
+"@target": "Tn16461819", 
+"^ot:bootstrapValues": 99.9
 }
 }, 
 "Tn16461783": {
@@ -2987,7 +2328,8 @@
 "edge194504": {
 "@length": 0.00213093, 
 "@source": "Tn16461783", 
-"@target": "Tn16461825"
+"@target": "Tn16461825", 
+"^ot:bootstrapValues": 99.9
 }
 }, 
 "Tn16461784": {
@@ -2999,7 +2341,8 @@
 "edge194526": {
 "@length": 0.00033699, 
 "@source": "Tn16461784", 
-"@target": "Tn16461808"
+"@target": "Tn16461808", 
+"^ot:bootstrapValues": 58.8
 }
 }, 
 "Tn16461787": {
@@ -3023,7 +2366,8 @@
 "edge194536": {
 "@length": 0.0062706, 
 "@source": "Tn16461788", 
-"@target": "Tn16461842"
+"@target": "Tn16461842", 
+"^ot:bootstrapValues": 92.7
 }
 }, 
 "Tn16461789": {
@@ -3035,7 +2379,8 @@
 "edge194488": {
 "@length": 0.00159221, 
 "@source": "Tn16461789", 
-"@target": "Tn16461835"
+"@target": "Tn16461835", 
+"^ot:bootstrapValues": 70.1
 }
 }, 
 "Tn16461793": {
@@ -3047,14 +2392,15 @@
 "edge194514": {
 "@length": 0.00111821, 
 "@source": "Tn16461793", 
-"@target": "Tn16461833"
+"@target": "Tn16461833", 
+"^ot:bootstrapValues": 94.69999999999999
 }
 }, 
 "Tn16461796": {
-"edge194452": {
-"@length": 0.0342856, 
+"edge194450": {
+"@length": 0.00821442, 
 "@source": "Tn16461796", 
-"@target": "Tn16461822"
+"@target": "Tn16461821"
 }, 
 "edge194614": {
 "@length": 0.07031569, 
@@ -3066,34 +2412,36 @@
 "edge194456": {
 "@length": 0.00407054, 
 "@source": "Tn16461797", 
-"@target": "Tn16461813"
+"@target": "Tn16461813", 
+"^ot:bootstrapValues": 95.7
 }, 
 "edge194574": {
 "@length": 0.01627488, 
 "@source": "Tn16461797", 
-"@target": "Tn16461780"
+"@target": "Tn16461780", 
+"^ot:bootstrapValues": 100
 }
 }, 
 "Tn16461798": {
 "edge194558": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16461798", 
 "@target": "Tn16461841"
 }, 
 "edge194560": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16461798", 
 "@target": "Tn16461786"
 }
 }, 
 "Tn16461800": {
 "edge194608": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16461800", 
 "@target": "Tn16461766"
 }, 
 "edge194610": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16461800", 
 "@target": "Tn16461831"
 }
@@ -3102,7 +2450,8 @@
 "edge194474": {
 "@length": 0.00667488, 
 "@source": "Tn16461801", 
-"@target": "Tn16461765"
+"@target": "Tn16461765", 
+"^ot:bootstrapValues": 100
 }, 
 "edge194480": {
 "@length": 0.01266578, 
@@ -3112,14 +2461,15 @@
 }, 
 "Tn16461807": {
 "edge194564": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16461807", 
 "@target": "Tn16461768"
 }, 
 "edge194566": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16461807", 
-"@target": "Tn16461772"
+"@target": "Tn16461772", 
+"^ot:bootstrapValues": 86.2
 }
 }, 
 "Tn16461808": {
@@ -3138,7 +2488,8 @@
 "edge194472": {
 "@length": 0.00163043, 
 "@source": "Tn16461809", 
-"@target": "Tn16461801"
+"@target": "Tn16461801", 
+"^ot:bootstrapValues": 93.10000000000001
 }, 
 "edge194482": {
 "@length": 0.00847609, 
@@ -3155,14 +2506,16 @@
 "edge194602": {
 "@length": 0.00071873, 
 "@source": "Tn16461811", 
-"@target": "Tn16461832"
+"@target": "Tn16461832", 
+"^ot:bootstrapValues": 87.6
 }
 }, 
 "Tn16461813": {
 "edge194458": {
 "@length": 0.00317726, 
 "@source": "Tn16461813", 
-"@target": "Tn16461840"
+"@target": "Tn16461840", 
+"^ot:bootstrapValues": 51.800000000000004
 }, 
 "edge194572": {
 "@length": 0.01548311, 
@@ -3179,7 +2532,8 @@
 "edge194590": {
 "@length": 0.00361274, 
 "@source": "Tn16461819", 
-"@target": "Tn16461774"
+"@target": "Tn16461774", 
+"^ot:bootstrapValues": 99.8
 }
 }, 
 "Tn16461820": {
@@ -3189,17 +2543,12 @@
 "@target": "Tn16461779"
 }, 
 "edge194552": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16461820", 
 "@target": "Tn16461799"
 }
 }, 
 "Tn16461821": {
-"edge194450": {
-"@length": 0.00821442, 
-"@source": "Tn16461821", 
-"@target": "Tn16461796"
-}, 
 "edge194616": {
 "@length": 0.08822207, 
 "@source": "Tn16461821", 
@@ -3210,7 +2559,8 @@
 "edge194454": {
 "@length": 0.00449313, 
 "@source": "Tn16461822", 
-"@target": "Tn16461797"
+"@target": "Tn16461797", 
+"^ot:bootstrapValues": 65.3
 }, 
 "edge194612": {
 "@length": 0.01784208, 
@@ -3222,12 +2572,14 @@
 "edge194462": {
 "@length": 0.00181229, 
 "@source": "Tn16461824", 
-"@target": "Tn16461776"
+"@target": "Tn16461776", 
+"^ot:bootstrapValues": 30
 }, 
 "edge194532": {
 "@length": 0.00057904, 
 "@source": "Tn16461824", 
-"@target": "Tn16461788"
+"@target": "Tn16461788", 
+"^ot:bootstrapValues": 31.3
 }
 }, 
 "Tn16461825": {
@@ -3261,21 +2613,24 @@
 "@target": "Tn16461773"
 }, 
 "edge194606": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16461832", 
-"@target": "Tn16461800"
+"@target": "Tn16461800", 
+"^ot:bootstrapValues": 68.30000000000001
 }
 }, 
 "Tn16461833": {
 "edge194516": {
 "@length": 0.00033342, 
 "@source": "Tn16461833", 
-"@target": "Tn16461830"
+"@target": "Tn16461830", 
+"^ot:bootstrapValues": 44.4
 }, 
 "edge194522": {
 "@length": 0.00354967, 
 "@source": "Tn16461833", 
-"@target": "Tn16461784"
+"@target": "Tn16461784", 
+"^ot:bootstrapValues": 99.8
 }
 }, 
 "Tn16461835": {
@@ -3294,7 +2649,8 @@
 "edge194578": {
 "@length": 0.00014192, 
 "@source": "Tn16461836", 
-"@target": "Tn16461787"
+"@target": "Tn16461787", 
+"^ot:bootstrapValues": 52.900000000000006
 }, 
 "edge194584": {
 "@length": 0.00996019, 
@@ -3306,12 +2662,14 @@
 "edge194556": {
 "@length": 0.01270894, 
 "@source": "Tn16461837", 
-"@target": "Tn16461798"
+"@target": "Tn16461798", 
+"^ot:bootstrapValues": 100
 }, 
 "edge194562": {
 "@length": 0.00909089, 
 "@source": "Tn16461837", 
-"@target": "Tn16461807"
+"@target": "Tn16461807", 
+"^ot:bootstrapValues": 100
 }
 }, 
 "Tn16461838": {
@@ -3323,31 +2681,36 @@
 "edge194544": {
 "@length": 0.00894464, 
 "@source": "Tn16461838", 
-"@target": "Tn16461844"
+"@target": "Tn16461844", 
+"^ot:bootstrapValues": 100
 }
 }, 
 "Tn16461839": {
 "edge194466": {
 "@length": 0.00501336, 
 "@source": "Tn16461839", 
-"@target": "Tn16461777"
+"@target": "Tn16461777", 
+"^ot:bootstrapValues": 95.19999999999999
 }, 
 "edge194500": {
 "@length": 0.01369782, 
 "@source": "Tn16461839", 
-"@target": "Tn16461783"
+"@target": "Tn16461783", 
+"^ot:bootstrapValues": 100
 }
 }, 
 "Tn16461840": {
 "edge194460": {
 "@length": 0.00123736, 
 "@source": "Tn16461840", 
-"@target": "Tn16461824"
+"@target": "Tn16461824", 
+"^ot:bootstrapValues": 13.900000000000002
 }, 
 "edge194554": {
 "@length": 0.01400561, 
 "@source": "Tn16461840", 
-"@target": "Tn16461837"
+"@target": "Tn16461837", 
+"^ot:bootstrapValues": 100
 }
 }, 
 "Tn16461842": {
@@ -3359,24 +2722,26 @@
 "edge194540": {
 "@length": 0.00048434, 
 "@source": "Tn16461842", 
-"@target": "Tn16461838"
+"@target": "Tn16461838", 
+"^ot:bootstrapValues": 69
 }
 }, 
 "Tn16461844": {
 "edge194546": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16461844", 
 "@target": "Tn16461794"
 }, 
 "edge194548": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16461844", 
-"@target": "Tn16461820"
+"@target": "Tn16461820", 
+"^ot:bootstrapValues": 38.800000000000004
 }
 }, 
 "Tn16461847": {
 "edge194496": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16461847", 
 "@target": "Tn16461817"
 }, 
@@ -3385,84 +2750,71 @@
 "@source": "Tn16461847", 
 "@target": "Tn16461802"
 }
+}, 
+"Tr105259_ROOT": {
+"Tr105259_ROOT_EDGE": {
+"@source": "Tr105259_ROOT", 
+"@target": "Tn16461796", 
+"^ot:bootstrapValues": 0
+}, 
+"edge194452": {
+"@length": 0.0342856, 
+"@source": "Tr105259_ROOT", 
+"@target": "Tn16461822", 
+"^ot:bootstrapValues": 100
+}
 }
 }, 
 "nodeById": {
-"Tn16461765": {
-"@label": "1.0000"
-}, 
+"Tn16461765": {}, 
 "Tn16461766": {
 "@otu": "Tl2821845"
 }, 
-"Tn16461767": {
-"@label": "1.0000"
-}, 
+"Tn16461767": {}, 
 "Tn16461768": {
 "@otu": "Tl2821848"
 }, 
 "Tn16461769": {
 "@otu": "Tl2821834"
 }, 
-"Tn16461770": {
-"@label": "1.0000"
-}, 
+"Tn16461770": {}, 
 "Tn16461771": {
 "@otu": "Tl2821827"
 }, 
-"Tn16461772": {
-"@label": "0.8620"
-}, 
+"Tn16461772": {}, 
 "Tn16461773": {
 "@otu": "Tl2821860"
 }, 
-"Tn16461774": {
-"@label": "0.9980"
-}, 
+"Tn16461774": {}, 
 "Tn16461775": {
 "@otu": "Tl2821849"
 }, 
-"Tn16461776": {
-"@label": "0.3000"
-}, 
-"Tn16461777": {
-"@label": "0.9520"
-}, 
+"Tn16461776": {}, 
+"Tn16461777": {}, 
 "Tn16461778": {
 "@otu": "Tl2821851"
 }, 
 "Tn16461779": {
 "@otu": "Tl2821836"
 }, 
-"Tn16461780": {
-"@label": "1.0000"
-}, 
+"Tn16461780": {}, 
 "Tn16461781": {
 "@otu": "Tl2821842"
 }, 
 "Tn16461782": {
 "@otu": "Tl2821825"
 }, 
-"Tn16461783": {
-"@label": "1.0000"
-}, 
-"Tn16461784": {
-"@label": "0.9980"
-}, 
+"Tn16461783": {}, 
+"Tn16461784": {}, 
 "Tn16461785": {
 "@otu": "Tl2821855"
 }, 
 "Tn16461786": {
 "@otu": "Tl2821829"
 }, 
-"Tn16461787": {
-"@label": "0.5290"
-}, 
-"Tn16461788": {
-"@label": "0.3130"
-}, 
-"Tn16461789": {
-"@label": "0.9340"
-}, 
+"Tn16461787": {}, 
+"Tn16461788": {}, 
+"Tn16461789": {}, 
 "Tn16461790": {
 "@otu": "Tl2821854"
 }, 
@@ -3472,33 +2824,21 @@
 "Tn16461792": {
 "@otu": "Tl2821822"
 }, 
-"Tn16461793": {
-"@label": "1.0000"
-}, 
+"Tn16461793": {}, 
 "Tn16461794": {
 "@otu": "Tl2821862"
 }, 
 "Tn16461795": {
 "@otu": "Tl2821843"
 }, 
-"Tn16461796": {
-"@label": "0.0000"
-}, 
-"Tn16461797": {
-"@label": "0.6530"
-}, 
-"Tn16461798": {
-"@label": "1.0000"
-}, 
+"Tn16461796": {}, 
+"Tn16461797": {}, 
+"Tn16461798": {}, 
 "Tn16461799": {
 "@otu": "Tl2821838"
 }, 
-"Tn16461800": {
-"@label": "0.6830"
-}, 
-"Tn16461801": {
-"@label": "0.9310"
-}, 
+"Tn16461800": {}, 
+"Tn16461801": {}, 
 "Tn16461802": {
 "@otu": "Tl2821835"
 }, 
@@ -3514,27 +2854,17 @@
 "Tn16461806": {
 "@otu": "Tl2821841"
 }, 
-"Tn16461807": {
-"@label": "1.0000"
-}, 
-"Tn16461808": {
-"@label": "0.5880"
-}, 
-"Tn16461809": {
-"@label": "0.5300"
-}, 
+"Tn16461807": {}, 
+"Tn16461808": {}, 
+"Tn16461809": {}, 
 "Tn16461810": {
 "@otu": "Tl2821850"
 }, 
-"Tn16461811": {
-"@label": "0.7770"
-}, 
+"Tn16461811": {}, 
 "Tn16461812": {
 "@otu": "Tl2821864"
 }, 
-"Tn16461813": {
-"@label": "0.9570"
-}, 
+"Tn16461813": {}, 
 "Tn16461814": {
 "@otu": "Tl2821840"
 }, 
@@ -3550,27 +2880,15 @@
 "Tn16461818": {
 "@otu": "Tl2821853"
 }, 
-"Tn16461819": {
-"@label": "0.9990"
-}, 
-"Tn16461820": {
-"@label": "0.3880"
-}, 
-"Tn16461821": {
-"@root": true
-}, 
-"Tn16461822": {
-"@label": "1.0000"
-}, 
+"Tn16461819": {}, 
+"Tn16461820": {}, 
+"Tn16461821": {}, 
+"Tn16461822": {}, 
 "Tn16461823": {
 "@otu": "Tl2821831"
 }, 
-"Tn16461824": {
-"@label": "0.1390"
-}, 
-"Tn16461825": {
-"@label": "0.9990"
-}, 
+"Tn16461824": {}, 
+"Tn16461825": {}, 
 "Tn16461826": {
 "@otu": "Tl2821852"
 }, 
@@ -3583,1895 +2901,44 @@
 "Tn16461829": {
 "@otu": "Tl2821823"
 }, 
-"Tn16461830": {
-"@label": "0.4440"
-}, 
+"Tn16461830": {}, 
 "Tn16461831": {
 "@otu": "Tl2821839"
 }, 
-"Tn16461832": {
-"@label": "0.8760"
-}, 
-"Tn16461833": {
-"@label": "0.9470"
-}, 
+"Tn16461832": {}, 
+"Tn16461833": {}, 
 "Tn16461834": {
 "@otu": "Tl2821863"
 }, 
-"Tn16461835": {
-"@label": "0.7010"
-}, 
-"Tn16461836": {
-"@label": "0.7120"
-}, 
-"Tn16461837": {
-"@label": "1.0000"
-}, 
-"Tn16461838": {
-"@label": "0.6900"
-}, 
-"Tn16461839": {
-"@label": "1.0000"
-}, 
-"Tn16461840": {
-"@label": "0.5180"
-}, 
+"Tn16461835": {}, 
+"Tn16461836": {}, 
+"Tn16461837": {}, 
+"Tn16461838": {}, 
+"Tn16461839": {}, 
+"Tn16461840": {}, 
 "Tn16461841": {
 "@otu": "Tl2821847"
 }, 
-"Tn16461842": {
-"@label": "0.9270"
-}, 
+"Tn16461842": {}, 
 "Tn16461843": {
 "@otu": "Tl2821859"
 }, 
-"Tn16461844": {
-"@label": "1.0000"
-}, 
+"Tn16461844": {}, 
 "Tn16461845": {
 "@otu": "Tl2821830"
 }, 
 "Tn16461846": {
 "@otu": "Tl2821828"
 }, 
-"Tn16461847": {
-"@label": "1.0000"
-}, 
+"Tn16461847": {}, 
 "Tn16461848": {
 "@otu": "Tl2821844"
 }, 
 "Tn16461849": {
 "@otu": "Tl2821826"
-}
-}
 }, 
-"Tr105260": {
-"@label": "Imported tree 1", 
-"@xsi:type": "nex:FloatTree", 
-"^ot:rootNodeId": "Tn16461878", 
-"^tb:kind.tree": "Species Tree", 
-"^tb:ntax.tree": 34, 
-"^tb:quality.tree": "Unrated", 
-"^tb:type.tree": "Single", 
-"edgeBySourceId": {
-"Tn16461851": {
-"edge194336": {
-"@length": 0.02306093, 
-"@source": "Tn16461851", 
-"@target": "Tn16461873"
-}, 
-"edge194342": {
-"@length": 0.01488235, 
-"@source": "Tn16461851", 
-"@target": "Tn16461887"
-}
-}, 
-"Tn16461852": {
-"edge194374": {
-"@length": 0.05084905, 
-"@source": "Tn16461852", 
-"@target": "Tn16461881"
-}, 
-"edge194384": {
-"@length": 0.04021547, 
-"@source": "Tn16461852", 
-"@target": "Tn16461882"
-}
-}, 
-"Tn16461853": {
-"edge194424": {
-"@length": 0.00146369, 
-"@source": "Tn16461853", 
-"@target": "Tn16461863"
-}, 
-"edge194426": {
-"@length": 0.0, 
-"@source": "Tn16461853", 
-"@target": "Tn16461905"
-}
-}, 
-"Tn16461854": {
-"edge194362": {
-"@length": 0.01392442, 
-"@source": "Tn16461854", 
-"@target": "Tn16461874"
-}, 
-"edge194364": {
-"@length": 0.00135259, 
-"@source": "Tn16461854", 
-"@target": "Tn16461860"
-}
-}, 
-"Tn16461856": {
-"edge194400": {
-"@length": 0.0, 
-"@source": "Tn16461856", 
-"@target": "Tn16461914"
-}, 
-"edge194402": {
-"@length": 0.0, 
-"@source": "Tn16461856", 
-"@target": "Tn16461909"
-}
-}, 
-"Tn16461860": {
-"edge194366": {
-"@length": 0.00323022, 
-"@source": "Tn16461860", 
-"@target": "Tn16461897"
-}, 
-"edge194368": {
-"@length": 0.00417013, 
-"@source": "Tn16461860", 
-"@target": "Tn16461857"
-}
-}, 
-"Tn16461866": {
-"edge194348": {
-"@length": 0.0, 
-"@source": "Tn16461866", 
-"@target": "Tn16461895"
-}, 
-"edge194350": {
-"@length": 0.0, 
-"@source": "Tn16461866", 
-"@target": "Tn16461859"
-}
-}, 
-"Tn16461872": {
-"edge194372": {
-"@length": 0.01452251, 
-"@source": "Tn16461872", 
-"@target": "Tn16461852"
-}, 
-"edge194390": {
-"@length": 0.00983297, 
-"@source": "Tn16461872", 
-"@target": "Tn16461877"
-}
-}, 
-"Tn16461873": {
-"edge194338": {
-"@length": 0.02818906, 
-"@source": "Tn16461873", 
-"@target": "Tn16461869"
-}, 
-"edge194340": {
-"@length": 0.02938175, 
-"@source": "Tn16461873", 
-"@target": "Tn16461855"
-}
-}, 
-"Tn16461875": {
-"edge194410": {
-"@length": 0.01314306, 
-"@source": "Tn16461875", 
-"@target": "Tn16461850"
-}, 
-"edge194412": {
-"@length": 0.01586475, 
-"@source": "Tn16461875", 
-"@target": "Tn16461888"
-}
-}, 
-"Tn16461876": {
-"edge194312": {
-"@length": 0.02846901, 
-"@source": "Tn16461876", 
-"@target": "Tn16461880"
-}, 
-"edge194370": {
-"@length": 0.0, 
-"@source": "Tn16461876", 
-"@target": "Tn16461872"
-}
-}, 
-"Tn16461877": {
-"edge194392": {
-"@length": 0.03138386, 
-"@source": "Tn16461877", 
-"@target": "Tn16461886"
-}, 
-"edge194394": {
-"@length": 0.01398864, 
-"@source": "Tn16461877", 
-"@target": "Tn16461879"
-}
-}, 
-"Tn16461878": {
-"edge194308": {
-"@length": 0.01205101, 
-"@source": "Tn16461878", 
-"@target": "Tn16461906"
-}, 
-"edge194434": {
-"@length": 0.06962047, 
-"@source": "Tn16461878", 
-"@target": "Tn16461907"
-}
-}, 
-"Tn16461879": {
-"edge194396": {
-"@length": 0.02130046, 
-"@source": "Tn16461879", 
-"@target": "Tn16461913"
-}, 
-"edge194398": {
-"@length": 0.04165363, 
-"@source": "Tn16461879", 
-"@target": "Tn16461856"
-}
-}, 
-"Tn16461880": {
-"edge194314": {
-"@length": 0.01190573, 
-"@source": "Tn16461880", 
-"@target": "Tn16461910"
-}, 
-"edge194352": {
-"@length": 0.02245351, 
-"@source": "Tn16461880", 
-"@target": "Tn16461904"
-}
-}, 
-"Tn16461881": {
-"edge194376": {
-"@length": 0.0, 
-"@source": "Tn16461881", 
-"@target": "Tn16461892"
-}, 
-"edge194382": {
-"@length": 0.00147068, 
-"@source": "Tn16461881", 
-"@target": "Tn16461915"
-}
-}, 
-"Tn16461882": {
-"edge194386": {
-"@length": 0.0, 
-"@source": "Tn16461882", 
-"@target": "Tn16461867"
-}, 
-"edge194388": {
-"@length": 0.0, 
-"@source": "Tn16461882", 
-"@target": "Tn16461900"
-}
-}, 
-"Tn16461883": {
-"edge194418": {
-"@length": 0.01959474, 
-"@source": "Tn16461883", 
-"@target": "Tn16461868"
-}, 
-"edge194420": {
-"@length": 0.0, 
-"@source": "Tn16461883", 
-"@target": "Tn16461890"
-}
-}, 
-"Tn16461887": {
-"edge194344": {
-"@length": 0.04511052, 
-"@source": "Tn16461887", 
-"@target": "Tn16461871"
-}, 
-"edge194346": {
-"@length": 0.01604076, 
-"@source": "Tn16461887", 
-"@target": "Tn16461866"
-}
-}, 
-"Tn16461888": {
-"edge194414": {
-"@length": 0.00730442, 
-"@source": "Tn16461888", 
-"@target": "Tn16461899"
-}, 
-"edge194416": {
-"@length": 0.00309862, 
-"@source": "Tn16461888", 
-"@target": "Tn16461883"
-}
-}, 
-"Tn16461890": {
-"edge194422": {
-"@length": 0.0, 
-"@source": "Tn16461890", 
-"@target": "Tn16461853"
-}, 
-"edge194428": {
-"@length": 0.00146373, 
-"@source": "Tn16461890", 
-"@target": "Tn16461898"
-}
-}, 
-"Tn16461891": {
-"edge194318": {
-"@length": 0.00401192, 
-"@source": "Tn16461891", 
-"@target": "Tn16461893"
-}, 
-"edge194328": {
-"@length": 0.0350367, 
-"@source": "Tn16461891", 
-"@target": "Tn16461916"
-}
-}, 
-"Tn16461892": {
-"edge194378": {
-"@length": 0.0, 
-"@source": "Tn16461892", 
-"@target": "Tn16461870"
-}, 
-"edge194380": {
-"@length": 0.0, 
-"@source": "Tn16461892", 
-"@target": "Tn16461862"
-}
-}, 
-"Tn16461893": {
-"edge194320": {
-"@length": 0.0, 
-"@source": "Tn16461893", 
-"@target": "Tn16461911"
-}, 
-"edge194326": {
-"@length": 0.02000717, 
-"@source": "Tn16461893", 
-"@target": "Tn16461885"
-}
-}, 
-"Tn16461898": {
-"edge194430": {
-"@length": 0.0, 
-"@source": "Tn16461898", 
-"@target": "Tn16461889"
-}, 
-"edge194432": {
-"@length": 0.00293307, 
-"@source": "Tn16461898", 
-"@target": "Tn16461865"
-}
-}, 
-"Tn16461901": {
-"edge194356": {
-"@length": 0.00789213, 
-"@source": "Tn16461901", 
-"@target": "Tn16461864"
-}, 
-"edge194358": {
-"@length": 0.00471457, 
-"@source": "Tn16461901", 
-"@target": "Tn16461902"
-}
-}, 
-"Tn16461904": {
-"edge194354": {
-"@length": 0.00700813, 
-"@source": "Tn16461904", 
-"@target": "Tn16461901"
-}, 
-"edge194360": {
-"@length": 0.00723798, 
-"@source": "Tn16461904", 
-"@target": "Tn16461854"
-}
-}, 
-"Tn16461906": {
-"edge194310": {
-"@length": 0.01653244, 
-"@source": "Tn16461906", 
-"@target": "Tn16461876"
-}, 
-"edge194408": {
-"@length": 0.03127381, 
-"@source": "Tn16461906", 
-"@target": "Tn16461875"
-}
-}, 
-"Tn16461907": {
-"edge194436": {
-"@length": 0.06333632, 
-"@source": "Tn16461907", 
-"@target": "Tn16461908"
-}, 
-"edge194438": {
-"@length": 0.04118363, 
-"@source": "Tn16461907", 
-"@target": "Tn16461861"
-}
-}, 
-"Tn16461909": {
-"edge194404": {
-"@length": 0.0, 
-"@source": "Tn16461909", 
-"@target": "Tn16461894"
-}, 
-"edge194406": {
-"@length": 0.00146375, 
-"@source": "Tn16461909", 
-"@target": "Tn16461896"
-}
-}, 
-"Tn16461910": {
-"edge194316": {
-"@length": 0.00337177, 
-"@source": "Tn16461910", 
-"@target": "Tn16461891"
-}, 
-"edge194334": {
-"@length": 0.00400573, 
-"@source": "Tn16461910", 
-"@target": "Tn16461851"
-}
-}, 
-"Tn16461911": {
-"edge194322": {
-"@length": 0.00554419, 
-"@source": "Tn16461911", 
-"@target": "Tn16461884"
-}, 
-"edge194324": {
-"@length": 0.01700545, 
-"@source": "Tn16461911", 
-"@target": "Tn16461903"
-}
-}, 
-"Tn16461916": {
-"edge194330": {
-"@length": 0.00290613, 
-"@source": "Tn16461916", 
-"@target": "Tn16461858"
-}, 
-"edge194332": {
-"@length": 0.0074972, 
-"@source": "Tn16461916", 
-"@target": "Tn16461912"
-}
-}
-}, 
-"nodeById": {
-"Tn16461850": {
-"@otu": "Tl2821822"
-}, 
-"Tn16461851": {
-"@label": "0.2150"
-}, 
-"Tn16461852": {
-"@label": "0.8550"
-}, 
-"Tn16461853": {
-"@label": "0.5480"
-}, 
-"Tn16461854": {
-"@label": "0.9640"
-}, 
-"Tn16461855": {
-"@otu": "Tl2821825"
-}, 
-"Tn16461856": {
-"@label": "1.0000"
-}, 
-"Tn16461857": {
-"@otu": "Tl2821830"
-}, 
-"Tn16461858": {
-"@otu": "Tl2821868"
-}, 
-"Tn16461859": {
-"@otu": "Tl2821871"
-}, 
-"Tn16461860": {
-"@label": "0.6870"
-}, 
-"Tn16461861": {
-"@otu": "Tl2821853"
-}, 
-"Tn16461862": {
-"@otu": "Tl2821849"
-}, 
-"Tn16461863": {
-"@otu": "Tl2821873"
-}, 
-"Tn16461864": {
-"@otu": "Tl2821867"
-}, 
-"Tn16461865": {
-"@otu": "Tl2821869"
-}, 
-"Tn16461866": {
-"@label": "0.9990"
-}, 
-"Tn16461867": {
-"@otu": "Tl2821847"
-}, 
-"Tn16461868": {
-"@otu": "Tl2821854"
-}, 
-"Tn16461869": {
-"@otu": "Tl2821842"
-}, 
-"Tn16461870": {
-"@otu": "Tl2821848"
-}, 
-"Tn16461871": {
-"@otu": "Tl2821866"
-}, 
-"Tn16461872": {
-"@label": "0.1300"
-}, 
-"Tn16461873": {
-"@label": "0.9970"
-}, 
-"Tn16461874": {
-"@otu": "Tl2821864"
-}, 
-"Tn16461875": {
-"@label": "0.9970"
-}, 
-"Tn16461876": {
-"@label": "0.5420"
-}, 
-"Tn16461877": {
-"@label": "0.3770"
-}, 
-"Tn16461878": {
+"Tr105259_ROOT": {
 "@root": true
-}, 
-"Tn16461879": {
-"@label": "0.9370"
-}, 
-"Tn16461880": {
-"@label": "0.9950"
-}, 
-"Tn16461881": {
-"@label": "1.0000"
-}, 
-"Tn16461882": {
-"@label": "1.0000"
-}, 
-"Tn16461883": {
-"@label": "0.4080"
-}, 
-"Tn16461884": {
-"@otu": "Tl2821823"
-}, 
-"Tn16461885": {
-"@otu": "Tl2821872"
-}, 
-"Tn16461886": {
-"@otu": "Tl2821828"
-}, 
-"Tn16461887": {
-"@label": "0.6140"
-}, 
-"Tn16461888": {
-"@label": "0.9290"
-}, 
-"Tn16461889": {
-"@otu": "Tl2821845"
-}, 
-"Tn16461890": {
-"@label": "0.7160"
-}, 
-"Tn16461891": {
-"@label": "0.6220"
-}, 
-"Tn16461892": {
-"@label": "0.5820"
-}, 
-"Tn16461893": {
-"@label": "0.5930"
-}, 
-"Tn16461894": {
-"@otu": "Tl2821870"
-}, 
-"Tn16461895": {
-"@otu": "Tl2821833"
-}, 
-"Tn16461896": {
-"@otu": "Tl2821836"
-}, 
-"Tn16461897": {
-"@otu": "Tl2821846"
-}, 
-"Tn16461898": {
-"@label": "0.6920"
-}, 
-"Tn16461899": {
-"@otu": "Tl2821860"
-}, 
-"Tn16461900": {
-"@otu": "Tl2821829"
-}, 
-"Tn16461901": {
-"@label": "0.4920"
-}, 
-"Tn16461902": {
-"@otu": "Tl2821834"
-}, 
-"Tn16461903": {
-"@otu": "Tl2821857"
-}, 
-"Tn16461904": {
-"@label": "0.9870"
-}, 
-"Tn16461905": {
-"@otu": "Tl2821832"
-}, 
-"Tn16461906": {
-"@label": "1.0000"
-}, 
-"Tn16461907": {
-"@label": "1.0000"
-}, 
-"Tn16461908": {
-"@otu": "Tl2821831"
-}, 
-"Tn16461909": {
-"@label": "0.2330"
-}, 
-"Tn16461910": {
-"@label": "0.4410"
-}, 
-"Tn16461911": {
-"@label": "0.0890"
-}, 
-"Tn16461912": {
-"@otu": "Tl2821824"
-}, 
-"Tn16461913": {
-"@otu": "Tl2821844"
-}, 
-"Tn16461914": {
-"@otu": "Tl2821862"
-}, 
-"Tn16461915": {
-"@otu": "Tl2821827"
-}, 
-"Tn16461916": {
-"@label": "1.0000"
-}
-}
-}, 
-"Tr105261": {
-"@label": "Imported tree 1", 
-"@xsi:type": "nex:FloatTree", 
-"^ot:rootNodeId": "Tn16461956", 
-"^tb:kind.tree": "Species Tree", 
-"^tb:ntax.tree": 34, 
-"^tb:quality.tree": "Unrated", 
-"^tb:type.tree": "Single", 
-"edgeBySourceId": {
-"Tn16461919": {
-"edge193934": {
-"@length": 0.05049311, 
-"@source": "Tn16461919", 
-"@target": "Tn16461961"
-}, 
-"edge193952": {
-"@length": 0.04962249, 
-"@source": "Tn16461919", 
-"@target": "Tn16461967"
-}
-}, 
-"Tn16461921": {
-"edge193872": {
-"@length": 0.02980269, 
-"@source": "Tn16461921", 
-"@target": "Tn16461981"
-}, 
-"edge193874": {
-"@length": 0.00471305, 
-"@source": "Tn16461921", 
-"@target": "Tn16461970"
-}
-}, 
-"Tn16461924": {
-"edge193852": {
-"@length": 0.0043677, 
-"@source": "Tn16461924", 
-"@target": "Tn16461930"
-}, 
-"edge193890": {
-"@length": 0.03063139, 
-"@source": "Tn16461924", 
-"@target": "Tn16461963"
-}
-}, 
-"Tn16461926": {
-"edge193958": {
-"@length": 0.00960986, 
-"@source": "Tn16461926", 
-"@target": "Tn16461949"
-}, 
-"edge193960": {
-"@length": 0.00303445, 
-"@source": "Tn16461926", 
-"@target": "Tn16461951"
-}
-}, 
-"Tn16461927": {
-"edge193940": {
-"@length": 0.0, 
-"@source": "Tn16461927", 
-"@target": "Tn16461938"
-}, 
-"edge193942": {
-"@length": 0.0, 
-"@source": "Tn16461927", 
-"@target": "Tn16461918"
-}
-}, 
-"Tn16461928": {
-"edge193912": {
-"@length": 0.05727735, 
-"@source": "Tn16461928", 
-"@target": "Tn16461946"
-}, 
-"edge193914": {
-"@length": 0.00386014, 
-"@source": "Tn16461928", 
-"@target": "Tn16461941"
-}
-}, 
-"Tn16461930": {
-"edge193854": {
-"@length": 0.01751377, 
-"@source": "Tn16461930", 
-"@target": "Tn16461940"
-}, 
-"edge193880": {
-"@length": 0.00668413, 
-"@source": "Tn16461930", 
-"@target": "Tn16461939"
-}
-}, 
-"Tn16461931": {
-"edge193898": {
-"@length": 0.00139419, 
-"@source": "Tn16461931", 
-"@target": "Tn16461948"
-}, 
-"edge193900": {
-"@length": 0.00873444, 
-"@source": "Tn16461931", 
-"@target": "Tn16461935"
-}
-}, 
-"Tn16461933": {
-"edge193862": {
-"@length": 0.00435858, 
-"@source": "Tn16461933", 
-"@target": "Tn16461978"
-}, 
-"edge193864": {
-"@length": 0.0028196, 
-"@source": "Tn16461933", 
-"@target": "Tn16461982"
-}
-}, 
-"Tn16461934": {
-"edge193896": {
-"@length": 0.00562485, 
-"@source": "Tn16461934", 
-"@target": "Tn16461931"
-}, 
-"edge193902": {
-"@length": 0.00859081, 
-"@source": "Tn16461934", 
-"@target": "Tn16461950"
-}
-}, 
-"Tn16461937": {
-"edge193948": {
-"@length": 0.0, 
-"@source": "Tn16461937", 
-"@target": "Tn16461922"
-}, 
-"edge193950": {
-"@length": 0.0, 
-"@source": "Tn16461937", 
-"@target": "Tn16461969"
-}
-}, 
-"Tn16461939": {
-"edge193882": {
-"@length": 0.01667223, 
-"@source": "Tn16461939", 
-"@target": "Tn16461932"
-}, 
-"edge193884": {
-"@length": 0.04987072, 
-"@source": "Tn16461939", 
-"@target": "Tn16461964"
-}
-}, 
-"Tn16461940": {
-"edge193856": {
-"@length": 0.01715752, 
-"@source": "Tn16461940", 
-"@target": "Tn16461957"
-}, 
-"edge193870": {
-"@length": 0.00597678, 
-"@source": "Tn16461940", 
-"@target": "Tn16461921"
-}
-}, 
-"Tn16461941": {
-"edge193916": {
-"@length": 0.03708895, 
-"@source": "Tn16461941", 
-"@target": "Tn16461962"
-}, 
-"edge193918": {
-"@length": 0.01663293, 
-"@source": "Tn16461941", 
-"@target": "Tn16461953"
-}
-}, 
-"Tn16461942": {
-"edge193850": {
-"@length": 0.00795032, 
-"@source": "Tn16461942", 
-"@target": "Tn16461924"
-}, 
-"edge193908": {
-"@length": 0.0585053, 
-"@source": "Tn16461942", 
-"@target": "Tn16461959"
-}
-}, 
-"Tn16461944": {
-"edge193966": {
-"@length": 0.00142589, 
-"@source": "Tn16461944", 
-"@target": "Tn16461958"
-}, 
-"edge193968": {
-"@length": 0.0, 
-"@source": "Tn16461944", 
-"@target": "Tn16461983"
-}
-}, 
-"Tn16461945": {
-"edge193930": {
-"@length": 0.03891924, 
-"@source": "Tn16461945", 
-"@target": "Tn16461925"
-}, 
-"edge193932": {
-"@length": 0.01231627, 
-"@source": "Tn16461945", 
-"@target": "Tn16461919"
-}
-}, 
-"Tn16461950": {
-"edge193904": {
-"@length": 0.01647453, 
-"@source": "Tn16461950", 
-"@target": "Tn16461968"
-}, 
-"edge193906": {
-"@length": 0.01057398, 
-"@source": "Tn16461950", 
-"@target": "Tn16461976"
-}
-}, 
-"Tn16461951": {
-"edge193962": {
-"@length": 0.00528429, 
-"@source": "Tn16461951", 
-"@target": "Tn16461923"
-}, 
-"edge193964": {
-"@length": 0.00191508, 
-"@source": "Tn16461951", 
-"@target": "Tn16461944"
-}
-}, 
-"Tn16461952": {
-"edge193924": {
-"@length": 0.0, 
-"@source": "Tn16461952", 
-"@target": "Tn16461920"
-}, 
-"edge193926": {
-"@length": 0.0, 
-"@source": "Tn16461952", 
-"@target": "Tn16461979"
-}
-}, 
-"Tn16461953": {
-"edge193920": {
-"@length": 0.0, 
-"@source": "Tn16461953", 
-"@target": "Tn16461929"
-}, 
-"edge193922": {
-"@length": 0.0, 
-"@source": "Tn16461953", 
-"@target": "Tn16461952"
-}
-}, 
-"Tn16461954": {
-"edge193848": {
-"@length": 0.02155129, 
-"@source": "Tn16461954", 
-"@target": "Tn16461942"
-}, 
-"edge193910": {
-"@length": 0.00703141, 
-"@source": "Tn16461954", 
-"@target": "Tn16461928"
-}
-}, 
-"Tn16461956": {
-"edge193846": {
-"@length": 0.00074889, 
-"@source": "Tn16461956", 
-"@target": "Tn16461954"
-}, 
-"edge193928": {
-"@length": 0.00325822, 
-"@source": "Tn16461956", 
-"@target": "Tn16461945"
-}
-}, 
-"Tn16461957": {
-"edge193858": {
-"@length": 0.00237308, 
-"@source": "Tn16461957", 
-"@target": "Tn16461972"
-}, 
-"edge193868": {
-"@length": 0.02323504, 
-"@source": "Tn16461957", 
-"@target": "Tn16461980"
-}
-}, 
-"Tn16461961": {
-"edge193936": {
-"@length": 0.02645693, 
-"@source": "Tn16461961", 
-"@target": "Tn16461966"
-}, 
-"edge193946": {
-"@length": 0.01441152, 
-"@source": "Tn16461961", 
-"@target": "Tn16461937"
-}
-}, 
-"Tn16461963": {
-"edge193892": {
-"@length": 0.0, 
-"@source": "Tn16461963", 
-"@target": "Tn16461917"
-}, 
-"edge193894": {
-"@length": 0.00182092, 
-"@source": "Tn16461963", 
-"@target": "Tn16461934"
-}
-}, 
-"Tn16461964": {
-"edge193886": {
-"@length": 0.0, 
-"@source": "Tn16461964", 
-"@target": "Tn16461943"
-}, 
-"edge193888": {
-"@length": 0.0, 
-"@source": "Tn16461964", 
-"@target": "Tn16461936"
-}
-}, 
-"Tn16461966": {
-"edge193938": {
-"@length": 0.0, 
-"@source": "Tn16461966", 
-"@target": "Tn16461927"
-}, 
-"edge193944": {
-"@length": 0.0, 
-"@source": "Tn16461966", 
-"@target": "Tn16461977"
-}
-}, 
-"Tn16461967": {
-"edge193954": {
-"@length": 0.01806956, 
-"@source": "Tn16461967", 
-"@target": "Tn16461973"
-}, 
-"edge193956": {
-"@length": 0.01126161, 
-"@source": "Tn16461967", 
-"@target": "Tn16461926"
-}
-}, 
-"Tn16461970": {
-"edge193876": {
-"@length": 0.02759302, 
-"@source": "Tn16461970", 
-"@target": "Tn16461974"
-}, 
-"edge193878": {
-"@length": 0.008026, 
-"@source": "Tn16461970", 
-"@target": "Tn16461965"
-}
-}, 
-"Tn16461971": {
-"edge193974": {
-"@length": 0.0, 
-"@source": "Tn16461971", 
-"@target": "Tn16461960"
-}, 
-"edge193976": {
-"@length": 0.0, 
-"@source": "Tn16461971", 
-"@target": "Tn16461975"
-}
-}, 
-"Tn16461972": {
-"edge193860": {
-"@length": 0.01524454, 
-"@source": "Tn16461972", 
-"@target": "Tn16461933"
-}, 
-"edge193866": {
-"@length": 0.01705325, 
-"@source": "Tn16461972", 
-"@target": "Tn16461947"
-}
-}, 
-"Tn16461983": {
-"edge193970": {
-"@length": 0.0, 
-"@source": "Tn16461983", 
-"@target": "Tn16461955"
-}, 
-"edge193972": {
-"@length": 0.0, 
-"@source": "Tn16461983", 
-"@target": "Tn16461971"
-}
-}
-}, 
-"nodeById": {
-"Tn16461917": {
-"@otu": "Tl2821830"
-}, 
-"Tn16461918": {
-"@otu": "Tl2821849"
-}, 
-"Tn16461919": {
-"@label": "0.6460"
-}, 
-"Tn16461920": {
-"@otu": "Tl2821870"
-}, 
-"Tn16461921": {
-"@label": "0.7450"
-}, 
-"Tn16461922": {
-"@otu": "Tl2821847"
-}, 
-"Tn16461923": {
-"@otu": "Tl2821832"
-}, 
-"Tn16461924": {
-"@label": "0.6260"
-}, 
-"Tn16461925": {
-"@otu": "Tl2821828"
-}, 
-"Tn16461926": {
-"@label": "0.9700"
-}, 
-"Tn16461927": {
-"@label": "0.3240"
-}, 
-"Tn16461928": {
-"@label": "0.3060"
-}, 
-"Tn16461929": {
-"@otu": "Tl2821836"
-}, 
-"Tn16461930": {
-"@label": "0.5190"
-}, 
-"Tn16461931": {
-"@label": "0.7480"
-}, 
-"Tn16461932": {
-"@otu": "Tl2821866"
-}, 
-"Tn16461933": {
-"@label": "1.0000"
-}, 
-"Tn16461934": {
-"@label": "0.5520"
-}, 
-"Tn16461935": {
-"@otu": "Tl2821846"
-}, 
-"Tn16461936": {
-"@otu": "Tl2821871"
-}, 
-"Tn16461937": {
-"@label": "1.0000"
-}, 
-"Tn16461938": {
-"@otu": "Tl2821848"
-}, 
-"Tn16461939": {
-"@label": "0.6850"
-}, 
-"Tn16461940": {
-"@label": "0.9940"
-}, 
-"Tn16461941": {
-"@label": "0.4900"
-}, 
-"Tn16461942": {
-"@label": "0.9220"
-}, 
-"Tn16461943": {
-"@otu": "Tl2821833"
-}, 
-"Tn16461944": {
-"@label": "0.9270"
-}, 
-"Tn16461945": {
-"@label": "0.2820"
-}, 
-"Tn16461946": {
-"@otu": "Tl2821831"
-}, 
-"Tn16461947": {
-"@otu": "Tl2821872"
-}, 
-"Tn16461948": {
-"@otu": "Tl2821864"
-}, 
-"Tn16461949": {
-"@otu": "Tl2821854"
-}, 
-"Tn16461950": {
-"@label": "0.8420"
-}, 
-"Tn16461951": {
-"@label": "0.7960"
-}, 
-"Tn16461952": {
-"@label": "0.3610"
-}, 
-"Tn16461953": {
-"@label": "1.0000"
-}, 
-"Tn16461954": {
-"@label": "0.2820"
-}, 
-"Tn16461955": {
-"@otu": "Tl2821860"
-}, 
-"Tn16461956": {
-"@root": true
-}, 
-"Tn16461957": {
-"@label": "0.9850"
-}, 
-"Tn16461958": {
-"@otu": "Tl2821873"
-}, 
-"Tn16461959": {
-"@otu": "Tl2821853"
-}, 
-"Tn16461960": {
-"@otu": "Tl2821845"
-}, 
-"Tn16461961": {
-"@label": "1.0000"
-}, 
-"Tn16461962": {
-"@otu": "Tl2821844"
-}, 
-"Tn16461963": {
-"@label": "1.0000"
-}, 
-"Tn16461964": {
-"@label": "1.0000"
-}, 
-"Tn16461965": {
-"@otu": "Tl2821857"
-}, 
-"Tn16461966": {
-"@label": "1.0000"
-}, 
-"Tn16461967": {
-"@label": "1.0000"
-}, 
-"Tn16461968": {
-"@otu": "Tl2821867"
-}, 
-"Tn16461969": {
-"@otu": "Tl2821829"
-}, 
-"Tn16461970": {
-"@label": "0.8110"
-}, 
-"Tn16461971": {
-"@label": "0.2790"
-}, 
-"Tn16461972": {
-"@label": "0.5980"
-}, 
-"Tn16461973": {
-"@otu": "Tl2821822"
-}, 
-"Tn16461974": {
-"@otu": "Tl2821823"
-}, 
-"Tn16461975": {
-"@otu": "Tl2821869"
-}, 
-"Tn16461976": {
-"@otu": "Tl2821874"
-}, 
-"Tn16461977": {
-"@otu": "Tl2821827"
-}, 
-"Tn16461978": {
-"@otu": "Tl2821868"
-}, 
-"Tn16461979": {
-"@otu": "Tl2821862"
-}, 
-"Tn16461980": {
-"@otu": "Tl2821842"
-}, 
-"Tn16461981": {
-"@otu": "Tl2821825"
-}, 
-"Tn16461982": {
-"@otu": "Tl2821824"
-}, 
-"Tn16461983": {
-"@label": "0.6760"
-}
-}
-}, 
-"Tr105262": {
-"@label": "Imported tree 1", 
-"@xsi:type": "nex:FloatTree", 
-"^ot:rootNodeId": "Tn16461994", 
-"^tb:kind.tree": "Species Tree", 
-"^tb:ntax.tree": 34, 
-"^tb:quality.tree": "Unrated", 
-"^tb:type.tree": "Single", 
-"edgeBySourceId": {
-"Tn16461984": {
-"edge194212": {
-"@length": 0.00072204, 
-"@source": "Tn16461984", 
-"@target": "Tn16461999"
-}, 
-"edge194214": {
-"@length": 6e-08, 
-"@source": "Tn16461984", 
-"@target": "Tn16462002"
-}
-}, 
-"Tn16461985": {
-"edge194230": {
-"@length": 6e-08, 
-"@source": "Tn16461985", 
-"@target": "Tn16462035"
-}, 
-"edge194232": {
-"@length": 0.00071933, 
-"@source": "Tn16461985", 
-"@target": "Tn16462025"
-}
-}, 
-"Tn16461986": {
-"edge194268": {
-"@length": 0.01164836, 
-"@source": "Tn16461986", 
-"@target": "Tn16461996"
-}, 
-"edge194274": {
-"@length": 0.00317202, 
-"@source": "Tn16461986", 
-"@target": "Tn16462005"
-}
-}, 
-"Tn16461988": {
-"edge194256": {
-"@length": 0.0094468, 
-"@source": "Tn16461988", 
-"@target": "Tn16462038"
-}, 
-"edge194266": {
-"@length": 0.01441195, 
-"@source": "Tn16461988", 
-"@target": "Tn16461986"
-}
-}, 
-"Tn16461994": {
-"edge194166": {
-"@length": 0.00741603, 
-"@source": "Tn16461994", 
-"@target": "Tn16462046"
-}, 
-"edge194292": {
-"@length": 0.03676587, 
-"@source": "Tn16461994", 
-"@target": "Tn16461998"
-}
-}, 
-"Tn16461995": {
-"edge194238": {
-"@length": 0.0035678, 
-"@source": "Tn16461995", 
-"@target": "Tn16462048"
-}, 
-"edge194248": {
-"@length": 0.00855804, 
-"@source": "Tn16461995", 
-"@target": "Tn16462018"
-}
-}, 
-"Tn16461996": {
-"edge194270": {
-"@length": 0.03424267, 
-"@source": "Tn16461996", 
-"@target": "Tn16462011"
-}, 
-"edge194272": {
-"@length": 0.03288627, 
-"@source": "Tn16461996", 
-"@target": "Tn16462024"
-}
-}, 
-"Tn16461998": {
-"edge194294": {
-"@length": 0.06152491, 
-"@source": "Tn16461998", 
-"@target": "Tn16461991"
-}, 
-"edge194296": {
-"@length": 0.04951869, 
-"@source": "Tn16461998", 
-"@target": "Tn16462027"
-}
-}, 
-"Tn16462000": {
-"edge194242": {
-"@length": 0.00786251, 
-"@source": "Tn16462000", 
-"@target": "Tn16462043"
-}, 
-"edge194244": {
-"@length": 0.006041, 
-"@source": "Tn16462000", 
-"@target": "Tn16461997"
-}
-}, 
-"Tn16462001": {
-"edge194182": {
-"@length": 0.00143541, 
-"@source": "Tn16462001", 
-"@target": "Tn16461990"
-}, 
-"edge194184": {
-"@length": 0.00504188, 
-"@source": "Tn16462001", 
-"@target": "Tn16462015"
-}
-}, 
-"Tn16462003": {
-"edge194218": {
-"@length": 0.03702262, 
-"@source": "Tn16462003", 
-"@target": "Tn16462020"
-}, 
-"edge194220": {
-"@length": 0.01099636, 
-"@source": "Tn16462003", 
-"@target": "Tn16462031"
-}
-}, 
-"Tn16462005": {
-"edge194276": {
-"@length": 0.0055114, 
-"@source": "Tn16462005", 
-"@target": "Tn16462017"
-}, 
-"edge194282": {
-"@length": 0.00818803, 
-"@source": "Tn16462005", 
-"@target": "Tn16462032"
-}
-}, 
-"Tn16462007": {
-"edge194174": {
-"@length": 0.01295278, 
-"@source": "Tn16462007", 
-"@target": "Tn16462023"
-}, 
-"edge194196": {
-"@length": 0.01673654, 
-"@source": "Tn16462007", 
-"@target": "Tn16462008"
-}
-}, 
-"Tn16462013": {
-"edge194226": {
-"@length": 1e-07, 
-"@source": "Tn16462013", 
-"@target": "Tn16461987"
-}, 
-"edge194228": {
-"@length": 6e-08, 
-"@source": "Tn16462013", 
-"@target": "Tn16461985"
-}
-}, 
-"Tn16462017": {
-"edge194278": {
-"@length": 0.01766497, 
-"@source": "Tn16462017", 
-"@target": "Tn16462010"
-}, 
-"edge194280": {
-"@length": 0.01123486, 
-"@source": "Tn16462017", 
-"@target": "Tn16462036"
-}
-}, 
-"Tn16462018": {
-"edge194250": {
-"@length": 0.01192125, 
-"@source": "Tn16462018", 
-"@target": "Tn16462045"
-}, 
-"edge194252": {
-"@length": 0.00775797, 
-"@source": "Tn16462018", 
-"@target": "Tn16462049"
-}
-}, 
-"Tn16462019": {
-"edge194202": {
-"@length": 1e-07, 
-"@source": "Tn16462019", 
-"@target": "Tn16462012"
-}, 
-"edge194204": {
-"@length": 8e-08, 
-"@source": "Tn16462019", 
-"@target": "Tn16462014"
-}
-}, 
-"Tn16462021": {
-"edge194178": {
-"@length": 0.00093306, 
-"@source": "Tn16462021", 
-"@target": "Tn16462050"
-}, 
-"edge194192": {
-"@length": 0.00268648, 
-"@source": "Tn16462021", 
-"@target": "Tn16462041"
-}
-}, 
-"Tn16462023": {
-"edge194176": {
-"@length": 0.00211607, 
-"@source": "Tn16462023", 
-"@target": "Tn16462021"
-}, 
-"edge194194": {
-"@length": 0.01384154, 
-"@source": "Tn16462023", 
-"@target": "Tn16461992"
-}
-}, 
-"Tn16462029": {
-"edge194208": {
-"@length": 1e-07, 
-"@source": "Tn16462029", 
-"@target": "Tn16462028"
-}, 
-"edge194210": {
-"@length": 1e-07, 
-"@source": "Tn16462029", 
-"@target": "Tn16461984"
-}
-}, 
-"Tn16462030": {
-"edge194172": {
-"@length": 0.04526275, 
-"@source": "Tn16462030", 
-"@target": "Tn16462007"
-}, 
-"edge194198": {
-"@length": 0.03258399, 
-"@source": "Tn16462030", 
-"@target": "Tn16462047"
-}
-}, 
-"Tn16462031": {
-"edge194222": {
-"@length": 0.02793792, 
-"@source": "Tn16462031", 
-"@target": "Tn16462006"
-}, 
-"edge194224": {
-"@length": 0.02987861, 
-"@source": "Tn16462031", 
-"@target": "Tn16462013"
-}
-}, 
-"Tn16462032": {
-"edge194284": {
-"@length": 0.01943103, 
-"@source": "Tn16462032", 
-"@target": "Tn16461993"
-}, 
-"edge194286": {
-"@length": 0.02627453, 
-"@source": "Tn16462032", 
-"@target": "Tn16462039"
-}
-}, 
-"Tn16462033": {
-"edge194188": {
-"@length": 1e-07, 
-"@source": "Tn16462033", 
-"@target": "Tn16462009"
-}, 
-"edge194190": {
-"@length": 0.00145806, 
-"@source": "Tn16462033", 
-"@target": "Tn16462026"
-}
-}, 
-"Tn16462034": {
-"edge194236": {
-"@length": 0.02675197, 
-"@source": "Tn16462034", 
-"@target": "Tn16461995"
-}, 
-"edge194254": {
-"@length": 0.00490773, 
-"@source": "Tn16462034", 
-"@target": "Tn16461988"
-}
-}, 
-"Tn16462038": {
-"edge194258": {
-"@length": 0.03481332, 
-"@source": "Tn16462038", 
-"@target": "Tn16462044"
-}, 
-"edge194264": {
-"@length": 0.02827912, 
-"@source": "Tn16462038", 
-"@target": "Tn16462022"
-}
-}, 
-"Tn16462039": {
-"edge194288": {
-"@length": 0.00356612, 
-"@source": "Tn16462039", 
-"@target": "Tn16462016"
-}, 
-"edge194290": {
-"@length": 0.00515624, 
-"@source": "Tn16462039", 
-"@target": "Tn16462037"
-}
-}, 
-"Tn16462042": {
-"edge194170": {
-"@length": 0.00740711, 
-"@source": "Tn16462042", 
-"@target": "Tn16462030"
-}, 
-"edge194216": {
-"@length": 0.00450386, 
-"@source": "Tn16462042", 
-"@target": "Tn16462003"
-}
-}, 
-"Tn16462044": {
-"edge194260": {
-"@length": 1e-07, 
-"@source": "Tn16462044", 
-"@target": "Tn16461989"
-}, 
-"edge194262": {
-"@length": 1e-07, 
-"@source": "Tn16462044", 
-"@target": "Tn16462040"
-}
-}, 
-"Tn16462046": {
-"edge194168": {
-"@length": 0.01141058, 
-"@source": "Tn16462046", 
-"@target": "Tn16462042"
-}, 
-"edge194234": {
-"@length": 0.01983378, 
-"@source": "Tn16462046", 
-"@target": "Tn16462034"
-}
-}, 
-"Tn16462047": {
-"edge194200": {
-"@length": 0.02616673, 
-"@source": "Tn16462047", 
-"@target": "Tn16462019"
-}, 
-"edge194206": {
-"@length": 0.03793644, 
-"@source": "Tn16462047", 
-"@target": "Tn16462029"
-}
-}, 
-"Tn16462048": {
-"edge194240": {
-"@length": 0.003699, 
-"@source": "Tn16462048", 
-"@target": "Tn16462000"
-}, 
-"edge194246": {
-"@length": 0.00234974, 
-"@source": "Tn16462048", 
-"@target": "Tn16462004"
-}
-}, 
-"Tn16462050": {
-"edge194180": {
-"@length": 5e-08, 
-"@source": "Tn16462050", 
-"@target": "Tn16462001"
-}, 
-"edge194186": {
-"@length": 0.00071847, 
-"@source": "Tn16462050", 
-"@target": "Tn16462033"
-}
-}
-}, 
-"nodeById": {
-"Tn16461984": {
-"@label": "0.2860"
-}, 
-"Tn16461985": {
-"@label": "0.3270"
-}, 
-"Tn16461986": {
-"@label": "0.9930"
-}, 
-"Tn16461987": {
-"@otu": "Tl2821862"
-}, 
-"Tn16461988": {
-"@label": "0.6340"
-}, 
-"Tn16461989": {
-"@otu": "Tl2821833"
-}, 
-"Tn16461990": {
-"@otu": "Tl2821873"
-}, 
-"Tn16461991": {
-"@otu": "Tl2821831"
-}, 
-"Tn16461992": {
-"@otu": "Tl2821854"
-}, 
-"Tn16461993": {
-"@otu": "Tl2821872"
-}, 
-"Tn16461994": {
-"@root": true
-}, 
-"Tn16461995": {
-"@label": "1.0000"
-}, 
-"Tn16461996": {
-"@label": "0.6450"
-}, 
-"Tn16461997": {
-"@otu": "Tl2821846"
-}, 
-"Tn16461998": {
-"@label": "1.0000"
-}, 
-"Tn16461999": {
-"@otu": "Tl2821827"
-}, 
-"Tn16462000": {
-"@label": "0.8160"
-}, 
-"Tn16462001": {
-"@label": "0.3130"
-}, 
-"Tn16462002": {
-"@otu": "Tl2821849"
-}, 
-"Tn16462003": {
-"@label": "0.3030"
-}, 
-"Tn16462004": {
-"@otu": "Tl2821830"
-}, 
-"Tn16462005": {
-"@label": "0.4950"
-}, 
-"Tn16462006": {
-"@otu": "Tl2821844"
-}, 
-"Tn16462007": {
-"@label": "1.0000"
-}, 
-"Tn16462008": {
-"@otu": "Tl2821822"
-}, 
-"Tn16462009": {
-"@otu": "Tl2821845"
-}, 
-"Tn16462010": {
-"@otu": "Tl2821823"
-}, 
-"Tn16462011": {
-"@otu": "Tl2821842"
-}, 
-"Tn16462012": {
-"@otu": "Tl2821847"
-}, 
-"Tn16462013": {
-"@label": "1.0000"
-}, 
-"Tn16462014": {
-"@otu": "Tl2821829"
-}, 
-"Tn16462015": {
-"@otu": "Tl2821860"
-}, 
-"Tn16462016": {
-"@otu": "Tl2821868"
-}, 
-"Tn16462017": {
-"@label": "0.7820"
-}, 
-"Tn16462018": {
-"@label": "0.9320"
-}, 
-"Tn16462019": {
-"@label": "1.0000"
-}, 
-"Tn16462020": {
-"@otu": "Tl2821828"
-}, 
-"Tn16462021": {
-"@label": "0.7630"
-}, 
-"Tn16462022": {
-"@otu": "Tl2821866"
-}, 
-"Tn16462023": {
-"@label": "0.9990"
-}, 
-"Tn16462024": {
-"@otu": "Tl2821825"
-}, 
-"Tn16462025": {
-"@otu": "Tl2821836"
-}, 
-"Tn16462026": {
-"@otu": "Tl2821869"
-}, 
-"Tn16462027": {
-"@otu": "Tl2821853"
-}, 
-"Tn16462028": {
-"@otu": "Tl2821848"
-}, 
-"Tn16462029": {
-"@label": "1.0000"
-}, 
-"Tn16462030": {
-"@label": "0.6650"
-}, 
-"Tn16462031": {
-"@label": "0.9610"
-}, 
-"Tn16462032": {
-"@label": "0.7370"
-}, 
-"Tn16462033": {
-"@label": "0.6380"
-}, 
-"Tn16462034": {
-"@label": "0.9980"
-}, 
-"Tn16462035": {
-"@otu": "Tl2821870"
-}, 
-"Tn16462036": {
-"@otu": "Tl2821857"
-}, 
-"Tn16462037": {
-"@otu": "Tl2821824"
-}, 
-"Tn16462038": {
-"@label": "0.9030"
-}, 
-"Tn16462039": {
-"@label": "1.0000"
-}, 
-"Tn16462040": {
-"@otu": "Tl2821871"
-}, 
-"Tn16462041": {
-"@otu": "Tl2821832"
-}, 
-"Tn16462042": {
-"@label": "0.6570"
-}, 
-"Tn16462043": {
-"@otu": "Tl2821864"
-}, 
-"Tn16462044": {
-"@label": "1.0000"
-}, 
-"Tn16462045": {
-"@otu": "Tl2821867"
-}, 
-"Tn16462046": {
-"@label": "1.0000"
-}, 
-"Tn16462047": {
-"@label": "1.0000"
-}, 
-"Tn16462048": {
-"@label": "0.6640"
-}, 
-"Tn16462049": {
-"@otu": "Tl2821834"
-}, 
-"Tn16462050": {
-"@label": "0.7220"
 }
 }
 }
