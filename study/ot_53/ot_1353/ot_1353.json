@@ -56,16 +56,106 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2018-06-07T01:20:57.947Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:curatorName": "Kaitlin Allen ", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}, 
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": "$1"
+}, 
+"old": {
+"$": "^(\\S*\\s+\\S*).*"
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2018-06-07T01:20:57.947Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Kaitlin Allen "
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S18703"
 }, 
+"^ot:focalClade": 633302, 
+"^ot:focalCladeOTTTaxonName": "Polyporales", 
 "^ot:otusElementOrder": [
 "Tls63392"
 ], 
@@ -73,8 +163,9 @@
 "^ot:studyPublication": {
 "@href": "http://dx.doi.org/10.1371/journal.pone.0159495"
 }, 
-"^ot:studyPublicationReference": "Zhou J., Zhu L., Chen H., & Cui B. 2016. Taxonomy and phylogeny of Polyporus group Melanopus (Polyporales, Basidiomycota) from China. PloS ONE, 11(8): e0159495.", 
+"^ot:studyPublicationReference": "Jun-Liang Zhou, Lin Zhu, Hong Chen, Bao-Kai Cui, 2016, 'Taxonomy and Phylogeny of Polyporus Group Melanopus (Polyporales, Basidiomycota) from China', PLOS ONE, vol. 11, no. 8, p. e0159495", 
 "^ot:studyYear": 2016, 
+"^ot:tag": [], 
 "^ot:taxonLinkPrefixes": {
 "@ubio": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:", 
 "@uniprot": "http://purl.uniprot.org/taxonomy/"
@@ -100,8 +191,9 @@
 "^skos:historyNote": "Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlOTUWriter@1dc1774c $Rev$", 
 "otuById": {
 "Tl3174354": {
-"^ot:altLabel": "Polyporus squamosus", 
 "^ot:originalLabel": "Polyporus squamosus Wang555", 
+"^ot:ottId": 715746, 
+"^ot:ottTaxonName": "Polyporus squamosus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 23369, 
 "@tb:identifier.taxonVariant": 54696, 
@@ -110,8 +202,9 @@
 }
 }, 
 "Tl3174355": {
-"^ot:altLabel": "Favolus roseus", 
 "^ot:originalLabel": "Favolus roseus PEN33_Malaysia", 
+"^ot:ottId": 5299751, 
+"^ot:ottTaxonName": "Favolus tenuiculus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 615854, 
 "@tb:identifier.taxonVariant": 823525, 
@@ -119,11 +212,14 @@
 }
 }, 
 "Tl3174356": {
-"^ot:originalLabel": "Polyporus austroandinus MR10701_Argentina"
+"^ot:originalLabel": "Polyporus austroandinus MR10701_Argentina", 
+"^ot:ottId": 6382142, 
+"^ot:ottTaxonName": "Polyporus austroandinus"
 }, 
 "Tl3174357": {
-"^ot:altLabel": "Polyporus leprieurii", 
 "^ot:originalLabel": "Polyporus leprieurii TENN58579_Costa_Rica", 
+"^ot:ottId": 273472, 
+"^ot:ottTaxonName": "Polyporus leprieurii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 23366, 
 "@tb:identifier.taxonVariant": 54689, 
@@ -132,8 +228,9 @@
 }
 }, 
 "Tl3174358": {
-"^ot:altLabel": "Polyporus virgatus", 
 "^ot:originalLabel": "Polyporus virgatus CulTENN11219_Argentina", 
+"^ot:ottId": 568729, 
+"^ot:ottTaxonName": "Polyporus virgatus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 23373, 
 "@tb:identifier.taxonVariant": 54702, 
@@ -145,8 +242,9 @@
 "^ot:originalLabel": "Polyporus subtubaeformis Cui10793"
 }, 
 "Tl3174360": {
-"^ot:altLabel": "Polyporus umbellatus", 
 "^ot:originalLabel": "Polyporus umbellatus Pen13513", 
+"^ot:ottId": 801654, 
+"^ot:ottTaxonName": "Polyporus umbellatus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 151649, 
 "@tb:identifier.taxonVariant": 227233, 
@@ -158,8 +256,9 @@
 "^ot:originalLabel": "Polyporus subtropicus Cui2662"
 }, 
 "Tl3174362": {
-"^ot:altLabel": "Polyporus badius", 
 "^ot:originalLabel": "Polyporus badius Cui10853", 
+"^ot:ottId": 5684995, 
+"^ot:ottTaxonName": "Polyporus badius", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 23361, 
 "@tb:identifier.taxonVariant": 54681, 
@@ -168,11 +267,14 @@
 }
 }, 
 "Tl3174363": {
-"^ot:originalLabel": "Polyporus hapalopus Yuan5809_China"
+"^ot:originalLabel": "Polyporus hapalopus Yuan5809_China", 
+"^ot:ottId": 5685065, 
+"^ot:ottTaxonName": "Polyporus hapalopus"
 }, 
 "Tl3174364": {
-"^ot:altLabel": "Favolus emerici", 
 "^ot:originalLabel": "Favolus emerici Cui10926", 
+"^ot:ottId": 273470, 
+"^ot:ottTaxonName": "Polyporus grammocephalus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 615855, 
 "@tb:identifier.taxonVariant": 823526, 
@@ -183,11 +285,14 @@
 "^ot:originalLabel": "Polyporus tibeticus Cui12215"
 }, 
 "Tl3174366": {
-"^ot:originalLabel": "Polyporus conifericola Dai11114_China"
+"^ot:originalLabel": "Polyporus conifericola Dai11114_China", 
+"^ot:ottId": 5222618, 
+"^ot:ottTaxonName": "Polyporus conifericola"
 }, 
 "Tl3174367": {
-"^ot:altLabel": "Polyporus squamosus", 
 "^ot:originalLabel": "Polyporus squamosus Cui10595", 
+"^ot:ottId": 715746, 
+"^ot:ottTaxonName": "Polyporus squamosus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 23369, 
 "@tb:identifier.taxonVariant": 54696, 
@@ -196,14 +301,19 @@
 }
 }, 
 "Tl3174368": {
-"^ot:originalLabel": "Polyporus fraxinicola Dai2494_China"
+"^ot:originalLabel": "Polyporus fraxinicola Dai2494_China", 
+"^ot:ottId": 5684888, 
+"^ot:ottTaxonName": "Polyporus fraxinicola"
 }, 
 "Tl3174369": {
-"^ot:originalLabel": "Favolus acervatus Cui11053"
+"^ot:originalLabel": "Favolus acervatus Cui11053", 
+"^ot:ottId": 5684821, 
+"^ot:ottTaxonName": "Favolus acervatus"
 }, 
 "Tl3174370": {
-"^ot:altLabel": "Polyporus melanopus", 
 "^ot:originalLabel": "Polyporus melanopus TENN59326_Austria", 
+"^ot:ottId": 417412, 
+"^ot:ottTaxonName": "Polyporus melanopus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 23367, 
 "@tb:identifier.taxonVariant": 54691, 
@@ -212,8 +322,9 @@
 }
 }, 
 "Tl3174371": {
-"^ot:altLabel": "Polyporus melanopus", 
 "^ot:originalLabel": "Polyporus melanopus MJ400_93_Czech", 
+"^ot:ottId": 417412, 
+"^ot:ottTaxonName": "Polyporus melanopus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 23367, 
 "@tb:identifier.taxonVariant": 54691, 
@@ -222,8 +333,9 @@
 }
 }, 
 "Tl3174372": {
-"^ot:altLabel": "Favolus spathulatus", 
 "^ot:originalLabel": "Favolus spathulatus Dai13615A", 
+"^ot:ottId": 6382119, 
+"^ot:ottTaxonName": "Favolus spathulatus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 615857, 
 "@tb:identifier.taxonVariant": 823528, 
@@ -231,17 +343,22 @@
 }
 }, 
 "Tl3174373": {
-"^ot:originalLabel": "Polyporus subvarius Yu2_China"
+"^ot:originalLabel": "Polyporus subvarius Yu2_China", 
+"^ot:ottId": 657566, 
+"^ot:ottTaxonName": "Polyporus subvarius"
 }, 
 "Tl3174374": {
 "^ot:originalLabel": "Polyporus subtropicus Li1928"
 }, 
 "Tl3174375": {
-"^ot:originalLabel": "Polyporus submelanopus Dai13296"
+"^ot:originalLabel": "Polyporus submelanopus Dai13296", 
+"^ot:ottId": 5437876, 
+"^ot:ottTaxonName": "Polyporus submelanopus"
 }, 
 "Tl3174376": {
-"^ot:altLabel": "Polyporus guianensis", 
 "^ot:originalLabel": "Polyporus guianensis TENN59093_Argentina", 
+"^ot:ottId": 273469, 
+"^ot:ottTaxonName": "Polyporus guianensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 23365, 
 "@tb:identifier.taxonVariant": 54687, 
@@ -250,11 +367,14 @@
 }
 }, 
 "Tl3174377": {
-"^ot:originalLabel": "Polyporus conifericola Cui9950"
+"^ot:originalLabel": "Polyporus conifericola Cui9950", 
+"^ot:ottId": 5222618, 
+"^ot:ottTaxonName": "Polyporus conifericola"
 }, 
 "Tl3174378": {
-"^ot:altLabel": "Polyporus tubaeformis", 
 "^ot:originalLabel": "Polyporus tubaeformis JV0309_1_USA", 
+"^ot:ottId": 958295, 
+"^ot:ottTaxonName": "Polyporus tubaeformis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 191728, 
 "@tb:identifier.taxonVariant": 263295, 
@@ -264,11 +384,14 @@
 "^skos:prefLabel": "Polyporus tubiformis"
 }, 
 "Tl3174379": {
-"^ot:originalLabel": "Neofavolus alveolaris Dai11290"
+"^ot:originalLabel": "Neofavolus alveolaris Dai11290", 
+"^ot:ottId": 357070, 
+"^ot:ottTaxonName": "Neofavolus alveolaris"
 }, 
 "Tl3174380": {
-"^ot:altLabel": "Trametes conchifer", 
 "^ot:originalLabel": "Trametes conchifer FP106793sp", 
+"^ot:ottId": 5299865, 
+"^ot:ottTaxonName": "Poronidulus conchifer", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 242348, 
 "@tb:identifier.taxonVariant": 464825, 
@@ -277,8 +400,9 @@
 }
 }, 
 "Tl3174381": {
-"^ot:altLabel": "Polyporus tubaeformis", 
 "^ot:originalLabel": "Polyporus tubaeformis Niemela6855_Finland", 
+"^ot:ottId": 958295, 
+"^ot:ottTaxonName": "Polyporus tubaeformis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 191728, 
 "@tb:identifier.taxonVariant": 263295, 
@@ -291,11 +415,14 @@
 "^ot:originalLabel": "Polyporus subtubaeformis Dai11870"
 }, 
 "Tl3174383": {
-"^ot:originalLabel": "Polyporus americanus JV0509149_USA"
+"^ot:originalLabel": "Polyporus americanus JV0509149_USA", 
+"^ot:ottId": 5685064, 
+"^ot:ottTaxonName": "Polyporus americanus"
 }, 
 "Tl3174384": {
-"^ot:altLabel": "Polyporus tuberaster", 
 "^ot:originalLabel": "Polyporus tuberaster Dai12462", 
+"^ot:ottId": 972282, 
+"^ot:ottTaxonName": "Polyporus tuberaster", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 23371, 
 "@tb:identifier.taxonVariant": 54700, 
@@ -304,11 +431,14 @@
 }
 }, 
 "Tl3174385": {
-"^ot:originalLabel": "Polyporus admirabilis Dai1127_China"
+"^ot:originalLabel": "Polyporus admirabilis Dai1127_China", 
+"^ot:ottId": 3801929, 
+"^ot:ottTaxonName": "Polyporus admirabilis"
 }, 
 "Tl3174386": {
-"^ot:altLabel": "Polyporus badius", 
 "^ot:originalLabel": "Polyporus badius Cui10484_China", 
+"^ot:ottId": 5684995, 
+"^ot:ottTaxonName": "Polyporus badius", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 23361, 
 "@tb:identifier.taxonVariant": 54681, 
@@ -320,14 +450,17 @@
 "^ot:originalLabel": "Polyporus tibeticus Cui12225"
 }, 
 "Tl3174388": {
-"^ot:originalLabel": "Neofavolus mikawai Cui11152"
+"^ot:originalLabel": "Neofavolus mikawai Cui11152", 
+"^ot:ottId": 1044013, 
+"^ot:ottTaxonName": "Neofavolus mikawai"
 }, 
 "Tl3174389": {
 "^ot:originalLabel": "Polyporus baishanzuensis Cui11395"
 }, 
 "Tl3174390": {
-"^ot:altLabel": "Polyporus ciliatus", 
 "^ot:originalLabel": "Polyporus ciliatus Wei1582", 
+"^ot:ottId": 787810, 
+"^ot:ottTaxonName": "Polyporus ciliatus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 23363, 
 "@tb:identifier.taxonVariant": 54683, 
@@ -336,8 +469,9 @@
 }
 }, 
 "Tl3174391": {
-"^ot:altLabel": "Polyporus guianensis", 
 "^ot:originalLabel": "Polyporus guianensis TENN58404_Venezuela", 
+"^ot:ottId": 273469, 
+"^ot:ottTaxonName": "Polyporus guianensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 23365, 
 "@tb:identifier.taxonVariant": 54687, 
@@ -346,8 +480,9 @@
 }
 }, 
 "Tl3174392": {
-"^ot:altLabel": "Polyporus badius", 
 "^ot:originalLabel": "Polyporus badius Cui11136", 
+"^ot:ottId": 5684995, 
+"^ot:ottTaxonName": "Polyporus badius", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 23361, 
 "@tb:identifier.taxonVariant": 54681, 
@@ -356,8 +491,9 @@
 }
 }, 
 "Tl3174393": {
-"^ot:altLabel": "Polyporus arcularius", 
 "^ot:originalLabel": "Polyporus arcularius Cui11398", 
+"^ot:ottId": 343966, 
+"^ot:ottTaxonName": "Polyporus arcularius", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 23360, 
 "@tb:identifier.taxonVariant": 54680, 
@@ -366,8 +502,9 @@
 }
 }, 
 "Tl3174394": {
-"^ot:altLabel": "Polyporus virgatus", 
 "^ot:originalLabel": "Polyporus virgatus CulTENN11406_Argentina", 
+"^ot:ottId": 568729, 
+"^ot:ottTaxonName": "Polyporus virgatus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 23373, 
 "@tb:identifier.taxonVariant": 54702, 
@@ -379,8 +516,9 @@
 "^ot:originalLabel": "Polyporus baishanzuensis Dai13418"
 }, 
 "Tl3174396": {
-"^ot:altLabel": "Polyporus tuberaster", 
 "^ot:originalLabel": "Polyporus tuberaster Dai11271", 
+"^ot:ottId": 972282, 
+"^ot:ottTaxonName": "Polyporus tuberaster", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 23371, 
 "@tb:identifier.taxonVariant": 54700, 
@@ -389,8 +527,9 @@
 }
 }, 
 "Tl3174397": {
-"^ot:altLabel": "Polyporus badius", 
 "^ot:originalLabel": "Polyporus badius Cui10501_China", 
+"^ot:ottId": 5684995, 
+"^ot:ottTaxonName": "Polyporus badius", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 23361, 
 "@tb:identifier.taxonVariant": 54681, 
@@ -399,8 +538,9 @@
 }
 }, 
 "Tl3174398": {
-"^ot:altLabel": "Polyporus dictyopus", 
 "^ot:originalLabel": "Polyporus dictyopus TENN59385_Belize", 
+"^ot:ottId": 273467, 
+"^ot:ottTaxonName": "Polyporus dictyopus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 181333, 
 "@tb:identifier.taxonVariant": 254186, 
@@ -409,8 +549,9 @@
 }
 }, 
 "Tl3174399": {
-"^ot:altLabel": "Polyporus rhizophilus", 
 "^ot:originalLabel": "Polyporus rhizophilus Dai11599_China", 
+"^ot:ottId": 897896, 
+"^ot:ottTaxonName": "Polyporus rhizophilus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 181336, 
 "@tb:identifier.taxonVariant": 254188, 
@@ -419,8 +560,9 @@
 }
 }, 
 "Tl3174400": {
-"^ot:altLabel": "Polyporus varius", 
 "^ot:originalLabel": "Polyporus varius Cui12249", 
+"^ot:ottId": 1044746, 
+"^ot:ottTaxonName": "Polyporus varius", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 23372, 
 "@tb:identifier.taxonVariant": 54701, 
@@ -429,14 +571,19 @@
 }
 }, 
 "Tl3174401": {
-"^ot:originalLabel": "Polyporus submelanopus Dai13294"
+"^ot:originalLabel": "Polyporus submelanopus Dai13294", 
+"^ot:ottId": 5437876, 
+"^ot:ottTaxonName": "Polyporus submelanopus"
 }, 
 "Tl3174402": {
-"^ot:originalLabel": "Polyporus taibaiensis Dai5741_China"
+"^ot:originalLabel": "Polyporus taibaiensis Dai5741_China", 
+"^ot:ottId": 5222619, 
+"^ot:ottTaxonName": "Polyporus taibaiensis"
 }, 
 "Tl3174403": {
-"^ot:altLabel": "Polyporus varius", 
 "^ot:originalLabel": "Polyporus varius Dai13874", 
+"^ot:ottId": 1044746, 
+"^ot:ottTaxonName": "Polyporus varius", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 23372, 
 "@tb:identifier.taxonVariant": 54701, 
@@ -445,8 +592,9 @@
 }
 }, 
 "Tl3174404": {
-"^ot:altLabel": "Polyporus brumalis", 
 "^ot:originalLabel": "Polyporus brumalis Cui10750", 
+"^ot:ottId": 1006004, 
+"^ot:ottTaxonName": "Polyporus brumalis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 23362, 
 "@tb:identifier.taxonVariant": 54682, 
@@ -469,7 +617,18 @@
 "Tr111812": {
 "@label": "PAUP 1", 
 "@xsi:type": "nex:FloatTree", 
-"^ot:rootNodeId": "Tn17510532", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:changesCount", 
+"^ot:curatedType": "Maximum likelihood ", 
+"^ot:inGroupClade": "Tn17510534", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
+"^ot:rootNodeId": "Tr111812_ROOT", 
+"^ot:specifiedRoot": "Tr111812_ROOT", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 51, 
 "^tb:quality.tree": "Unrated", 
@@ -477,7 +636,7 @@
 "edgeBySourceId": {
 "Tn17510529": {
 "edge216547": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17510529", 
 "@target": "Tn17510620"
 }, 
@@ -500,11 +659,6 @@
 }
 }, 
 "Tn17510532": {
-"edge216397": {
-"@length": 0.012929, 
-"@source": "Tn17510532", 
-"@target": "Tn17510534"
-}, 
 "edge216411": {
 "@length": 0.012929, 
 "@source": "Tn17510532", 
@@ -524,10 +678,10 @@
 }
 }, 
 "Tn17510534": {
-"edge216399": {
-"@length": 0.155315, 
+"edge216397": {
+"@length": 0.012929, 
 "@source": "Tn17510534", 
-"@target": "Tn17510548"
+"@target": "Tn17510532"
 }, 
 "edge216401": {
 "@length": 0.087866, 
@@ -542,7 +696,7 @@
 "@target": "Tn17510611"
 }, 
 "edge216543": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17510536", 
 "@target": "Tn17510540"
 }
@@ -578,14 +732,14 @@
 "@target": "Tn17510625"
 }, 
 "edge216581": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17510542", 
 "@target": "Tn17510570"
 }
 }, 
 "Tn17510545": {
 "edge216573": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17510545", 
 "@target": "Tn17510553"
 }, 
@@ -633,12 +787,12 @@
 }, 
 "Tn17510552": {
 "edge216555": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17510552", 
 "@target": "Tn17510601"
 }, 
 "edge216557": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17510552", 
 "@target": "Tn17510623"
 }
@@ -693,12 +847,12 @@
 }, 
 "Tn17510564": {
 "edge216507": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17510564", 
 "@target": "Tn17510591"
 }, 
 "edge216509": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17510564", 
 "@target": "Tn17510578"
 }
@@ -753,12 +907,12 @@
 }, 
 "Tn17510579": {
 "edge216529": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17510579", 
 "@target": "Tn17510568"
 }, 
 "edge216531": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17510579", 
 "@target": "Tn17510571"
 }
@@ -849,12 +1003,12 @@
 }, 
 "Tn17510590": {
 "edge216587": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17510590", 
 "@target": "Tn17510573"
 }, 
 "edge216589": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17510590", 
 "@target": "Tn17510627"
 }
@@ -878,7 +1032,7 @@
 "@target": "Tn17510558"
 }, 
 "edge216595": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17510593", 
 "@target": "Tn17510537"
 }
@@ -1074,6 +1228,17 @@
 "@source": "Tn17510629", 
 "@target": "Tn17510614"
 }
+}, 
+"Tr111812_ROOT": {
+"Tr111812_ROOT_EDGE": {
+"@source": "Tr111812_ROOT", 
+"@target": "Tn17510534"
+}, 
+"edge216399": {
+"@length": 0.155315, 
+"@source": "Tr111812_ROOT", 
+"@target": "Tn17510548"
+}
 }
 }, 
 "nodeById": {
@@ -1082,9 +1247,7 @@
 "Tn17510531": {
 "@otu": "Tl3174379"
 }, 
-"Tn17510532": {
-"@root": true
-}, 
+"Tn17510532": {}, 
 "Tn17510533": {}, 
 "Tn17510534": {}, 
 "Tn17510535": {
@@ -1281,7 +1444,10 @@
 "@otu": "Tl3174386"
 }, 
 "Tn17510628": {}, 
-"Tn17510629": {}
+"Tn17510629": {}, 
+"Tr111812_ROOT": {
+"@root": true
+}
 }
 }
 }
