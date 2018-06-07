@@ -57,16 +57,106 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2018-06-07T00:48:45.102Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:curatorName": "Kaitlin Allen ", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}, 
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": "$1"
+}, 
+"old": {
+"$": "^(\\S*\\s+\\S*).*"
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2018-06-07T00:48:45.102Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Kaitlin Allen "
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S13879"
 }, 
+"^ot:focalClade": 685643, 
+"^ot:focalCladeOTTTaxonName": "Boletus", 
 "^ot:otusElementOrder": [
 "Tls30022"
 ], 
@@ -76,6 +166,7 @@
 }, 
 "^ot:studyPublicationReference": "Arora D., & Frank J.L. 2014. Clarifying the Butter Boletes: a new genus, Butyriboletus, is established to accommodate Boletus sect. Appendiculati, and seven new species are described. Mycologia, 106(3): 464-480.", 
 "^ot:studyYear": 2014, 
+"^ot:tag": [], 
 "^ot:taxonLinkPrefixes": {
 "@ubio": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:", 
 "@uniprot": "http://purl.uniprot.org/taxonomy/"
@@ -107,8 +198,9 @@
 "^ot:originalLabel": "Boletus primiregius JLF2030"
 }, 
 "Tl1054618": {
-"^ot:altLabel": "Boletus abieticola", 
 "^ot:originalLabel": "Boletus abieticola Cooke38653", 
+"^ot:ottId": 4936330, 
+"^ot:ottTaxonName": "Boletus abieticola", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 617721, 
 "@tb:identifier.taxonVariant": 826828, 
@@ -125,8 +217,9 @@
 "^ot:originalLabel": "Boletus autumniregius Arora11096"
 }, 
 "Tl1054622": {
-"^ot:altLabel": "Boletus abieticola", 
 "^ot:originalLabel": "Boletus abieticola Arora11086", 
+"^ot:ottId": 4936330, 
+"^ot:ottTaxonName": "Boletus abieticola", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 617721, 
 "@tb:identifier.taxonVariant": 826828, 
@@ -134,14 +227,17 @@
 }
 }, 
 "Tl1054623": {
-"^ot:originalLabel": "Boletus speciosus v brunneus Arora11221"
+"^ot:originalLabel": "Boletus speciosus v brunneus Arora11221", 
+"^ot:ottId": 1001792, 
+"^ot:ottTaxonName": "Boletus speciosus"
 }, 
 "Tl1054624": {
 "^ot:originalLabel": "Boletus autumniregius HDT43782"
 }, 
 "Tl1054625": {
-"^ot:altLabel": "Boletus subappendiculatus", 
 "^ot:originalLabel": "Boletus subappendiculatus HM347653", 
+"^ot:ottId": 322935, 
+"^ot:ottTaxonName": "Boletus subappendiculatus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 617722, 
 "@tb:identifier.taxonVariant": 826829, 
@@ -149,8 +245,9 @@
 }
 }, 
 "Tl1054626": {
-"^ot:altLabel": "Boletus coniferarum", 
 "^ot:originalLabel": "Boletus coniferarum EF530923", 
+"^ot:ottId": 123434, 
+"^ot:ottTaxonName": "Boletus coniferarum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3679, 
 "@tb:identifier.taxonVariant": 8771, 
@@ -165,8 +262,9 @@
 "^ot:originalLabel": "Boletus querciregius Arora11098"
 }, 
 "Tl1054629": {
-"^ot:altLabel": "Boletus edulis", 
 "^ot:originalLabel": "Boletus edulis Arora11223", 
+"^ot:ottId": 110737, 
+"^ot:ottTaxonName": "Boletus edulis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3680, 
 "@tb:identifier.taxonVariant": 8776, 
@@ -175,8 +273,9 @@
 }
 }, 
 "Tl1054630": {
-"^ot:altLabel": "Boletus rubripes", 
 "^ot:originalLabel": "Boletus rubripes JLF2078", 
+"^ot:ottId": 4936083, 
+"^ot:ottTaxonName": "Boletus rubripes", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 617723, 
 "@tb:identifier.taxonVariant": 826830, 
@@ -184,8 +283,9 @@
 }
 }, 
 "Tl1054631": {
-"^ot:altLabel": "Boletus amygdalinus", 
 "^ot:originalLabel": "Boletus amygdalinus AY918960", 
+"^ot:ottId": 643800, 
+"^ot:ottTaxonName": "Boletus amygdalinus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 353534, 
 "@tb:identifier.taxonVariant": 385309, 
@@ -194,8 +294,9 @@
 }
 }, 
 "Tl1054632": {
-"^ot:altLabel": "Boletus zelleri", 
 "^ot:originalLabel": "Boletus zelleri DQ974704", 
+"^ot:ottId": 3836003, 
+"^ot:ottTaxonName": "Xerocomellus zelleri", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 261891, 
 "@tb:identifier.taxonVariant": 319118, 
@@ -204,8 +305,9 @@
 }
 }, 
 "Tl1054633": {
-"^ot:altLabel": "Paxillus involutus", 
 "^ot:originalLabel": "Paxillus involutus JF899567", 
+"^ot:ottId": 92696, 
+"^ot:ottTaxonName": "Paxillus involutus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 20727, 
 "@tb:identifier.taxonVariant": 48284, 
@@ -226,8 +328,9 @@
 "^ot:originalLabel": "Boletus querciregius Arora11100"
 }, 
 "Tl1054638": {
-"^ot:altLabel": "Boletus calopus", 
 "^ot:originalLabel": "Boletus calopus HM347645", 
+"^ot:ottId": 800233, 
+"^ot:ottTaxonName": "Boletus calopus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3677, 
 "@tb:identifier.taxonVariant": 8765, 
@@ -236,8 +339,9 @@
 }
 }, 
 "Tl1054639": {
-"^ot:altLabel": "Boletus appendiculatus", 
 "^ot:originalLabel": "Boletus appendiculatus HQ882196", 
+"^ot:ottId": 123439, 
+"^ot:ottTaxonName": "Boletus appendiculatus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3676, 
 "@tb:identifier.taxonVariant": 8764, 
@@ -252,8 +356,9 @@
 "^ot:originalLabel": "Boletus primiregius Arora11085"
 }, 
 "Tl1054642": {
-"^ot:altLabel": "Boletus abieticola", 
 "^ot:originalLabel": "Boletus abieticola HDT46430", 
+"^ot:ottId": 4936330, 
+"^ot:ottTaxonName": "Boletus abieticola", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 617721, 
 "@tb:identifier.taxonVariant": 826828, 
@@ -261,8 +366,9 @@
 }
 }, 
 "Tl1054643": {
-"^ot:altLabel": "Boletus barrowsii", 
 "^ot:originalLabel": "Boletus barrowsii Arora12009", 
+"^ot:ottId": 646012, 
+"^ot:ottTaxonName": "Boletus barrowsii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 450638, 
 "@tb:identifier.taxonVariant": 596063, 
@@ -271,8 +377,9 @@
 }
 }, 
 "Tl1054644": {
-"^ot:altLabel": "Boletus regius", 
 "^ot:originalLabel": "Boletus regius MG407a", 
+"^ot:ottId": 989352, 
+"^ot:ottTaxonName": "Boletus regius", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 339041, 
 "@tb:identifier.taxonVariant": 376329, 
@@ -287,8 +394,9 @@
 "^ot:originalLabel": "Boletus querciregius 01MWB120512"
 }, 
 "Tl1054647": {
-"^ot:altLabel": "Boletus radicans", 
 "^ot:originalLabel": "Boletus radicans JQ685716", 
+"^ot:ottId": 517663, 
+"^ot:ottTaxonName": "Boletus radicans", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3685, 
 "@tb:identifier.taxonVariant": 8788, 
@@ -300,8 +408,9 @@
 "^ot:originalLabel": "Boletus deliciosissimus Arora977"
 }, 
 "Tl1054649": {
-"^ot:altLabel": "Boletus regius", 
 "^ot:originalLabel": "Boletus regius MG408a", 
+"^ot:ottId": 989352, 
+"^ot:ottTaxonName": "Boletus regius", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 339041, 
 "@tb:identifier.taxonVariant": 376329, 
@@ -310,8 +419,9 @@
 }
 }, 
 "Tl1054650": {
-"^ot:altLabel": "Boletus abieticola", 
 "^ot:originalLabel": "Boletus abieticola HDT44741", 
+"^ot:ottId": 4936330, 
+"^ot:ottTaxonName": "Boletus abieticola", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 617721, 
 "@tb:identifier.taxonVariant": 826828, 
@@ -319,8 +429,9 @@
 }
 }, 
 "Tl1054651": {
-"^ot:altLabel": "Xerocomus chrysenteron", 
 "^ot:originalLabel": "Xerocomus chrysenteron DQ822793", 
+"^ot:ottId": 3835402, 
+"^ot:ottTaxonName": "Xerocomellus chrysenteron", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 31046, 
 "@tb:identifier.taxonVariant": 72482, 
@@ -329,14 +440,17 @@
 }
 }, 
 "Tl1054652": {
-"^ot:originalLabel": "Boletus regineus JLF2273"
+"^ot:originalLabel": "Boletus regineus JLF2273", 
+"^ot:ottId": 564685, 
+"^ot:ottTaxonName": "Boletus regineus"
 }, 
 "Tl1054653": {
 "^ot:originalLabel": "Boletus autumniregius Arora11113"
 }, 
 "Tl1054654": {
-"^ot:altLabel": "Boletus abieticola", 
 "^ot:originalLabel": "Boletus abieticola HDT52625", 
+"^ot:ottId": 4936330, 
+"^ot:ottTaxonName": "Boletus abieticola", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 617721, 
 "@tb:identifier.taxonVariant": 826828, 
@@ -347,8 +461,9 @@
 "^ot:originalLabel": "Boletus autumniregius Arora11108"
 }, 
 "Tl1054656": {
-"^ot:altLabel": "Boletus fuscoroseus", 
 "^ot:originalLabel": "Boletus fuscoroseus UDB000649", 
+"^ot:ottId": 4936065, 
+"^ot:ottTaxonName": "Boletus fuscoroseus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 617724, 
 "@tb:identifier.taxonVariant": 826831, 
@@ -368,8 +483,9 @@
 "^ot:originalLabel": "Boletus deliciosissimus Arora11054"
 }, 
 "Tl1054661": {
-"^ot:altLabel": "Boletus appendiculatus", 
 "^ot:originalLabel": "Boletus appendiculatus HM347642", 
+"^ot:ottId": 123439, 
+"^ot:ottTaxonName": "Boletus appendiculatus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3676, 
 "@tb:identifier.taxonVariant": 8764, 
@@ -378,8 +494,9 @@
 }
 }, 
 "Tl1054662": {
-"^ot:altLabel": "Boletus roseopurpureus", 
 "^ot:originalLabel": "Boletus roseopurpureus JLF2566", 
+"^ot:ottId": 4936321, 
+"^ot:ottTaxonName": "Boletus roseopurpureus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 617725, 
 "@tb:identifier.taxonVariant": 826832, 
@@ -387,8 +504,9 @@
 }
 }, 
 "Tl1054663": {
-"^ot:altLabel": "Boletus auripes", 
 "^ot:originalLabel": "Boletus auripes Arora11224", 
+"^ot:ottId": 4936539, 
+"^ot:ottTaxonName": "Boletus auripes", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 617726, 
 "@tb:identifier.taxonVariant": 826833, 
@@ -396,8 +514,9 @@
 }
 }, 
 "Tl1054664": {
-"^ot:altLabel": "Boletus mirabilis", 
 "^ot:originalLabel": "Boletus mirabilis JLF2235", 
+"^ot:ottId": 731269, 
+"^ot:ottTaxonName": "Boletellus mirabilis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3683, 
 "@tb:identifier.taxonVariant": 8782, 
@@ -406,8 +525,9 @@
 }
 }, 
 "Tl1054665": {
-"^ot:altLabel": "Boletus fuscoroseus", 
 "^ot:originalLabel": "Boletus fuscoroseus MG383a", 
+"^ot:ottId": 4936065, 
+"^ot:ottTaxonName": "Boletus fuscoroseus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 617724, 
 "@tb:identifier.taxonVariant": 826831, 
@@ -430,8 +550,9 @@
 "^ot:originalLabel": "Boletus primiregius JLF2097"
 }, 
 "Tl1054671": {
-"^ot:altLabel": "Boletus auripes", 
 "^ot:originalLabel": "Boletus auripes DW73672", 
+"^ot:ottId": 4936539, 
+"^ot:ottTaxonName": "Boletus auripes", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 617726, 
 "@tb:identifier.taxonVariant": 826833, 
@@ -439,8 +560,9 @@
 }
 }, 
 "Tl1054672": {
-"^ot:altLabel": "Boletus abieticola", 
 "^ot:originalLabel": "Boletus abieticola Arora11087", 
+"^ot:ottId": 4936330, 
+"^ot:ottTaxonName": "Boletus abieticola", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 617721, 
 "@tb:identifier.taxonVariant": 826828, 
@@ -451,8 +573,9 @@
 "^ot:originalLabel": "Boletus querciregius Arora12012"
 }, 
 "Tl1054674": {
-"^ot:altLabel": "Boletus abieticola", 
 "^ot:originalLabel": "Boletus abieticola OSC67698", 
+"^ot:ottId": 4936330, 
+"^ot:ottTaxonName": "Boletus abieticola", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 617721, 
 "@tb:identifier.taxonVariant": 826828, 
@@ -460,8 +583,9 @@
 }
 }, 
 "Tl1054675": {
-"^ot:altLabel": "Boletus bicolor", 
 "^ot:originalLabel": "Boletus bicolor GQ166889", 
+"^ot:ottId": 1029985, 
+"^ot:ottTaxonName": "Boletus bicolor", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 247340, 
 "@tb:identifier.taxonVariant": 307802, 
@@ -473,8 +597,9 @@
 "^ot:originalLabel": "Boletus querciregius Arora11099"
 }, 
 "Tl1054677": {
-"^ot:altLabel": "Boletus fechtneri", 
 "^ot:originalLabel": "Boletus fechtneri AT2003097", 
+"^ot:ottId": 650685, 
+"^ot:ottTaxonName": "Boletus fechtneri", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3681, 
 "@tb:identifier.taxonVariant": 8777, 
@@ -483,8 +608,9 @@
 }
 }, 
 "Tl1054678": {
-"^ot:altLabel": "Boletus regius", 
 "^ot:originalLabel": "Boletus regius PN40600", 
+"^ot:ottId": 989352, 
+"^ot:ottTaxonName": "Boletus regius", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 339041, 
 "@tb:identifier.taxonVariant": 376329, 
@@ -493,8 +619,9 @@
 }
 }, 
 "Tl1054679": {
-"^ot:altLabel": "Boletus roseopurpureus", 
 "^ot:originalLabel": "Boletus roseopurpureus JLF2565", 
+"^ot:ottId": 4936321, 
+"^ot:ottTaxonName": "Boletus roseopurpureus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 617725, 
 "@tb:identifier.taxonVariant": 826832, 
@@ -505,8 +632,9 @@
 "^ot:originalLabel": "Boletus primiregius AHS69419"
 }, 
 "Tl1054681": {
-"^ot:altLabel": "Boletus regius", 
 "^ot:originalLabel": "Boletus regius HM347661", 
+"^ot:ottId": 989352, 
+"^ot:ottTaxonName": "Boletus regius", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 339041, 
 "@tb:identifier.taxonVariant": 376329, 
@@ -515,8 +643,9 @@
 }
 }, 
 "Tl1054682": {
-"^ot:altLabel": "Boletus appendiculatus", 
 "^ot:originalLabel": "Boletus appendiculatus UDB000652", 
+"^ot:ottId": 123439, 
+"^ot:ottTaxonName": "Boletus appendiculatus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3676, 
 "@tb:identifier.taxonVariant": 8764, 
@@ -525,8 +654,9 @@
 }
 }, 
 "Tl1054683": {
-"^ot:altLabel": "Boletus edulis", 
 "^ot:originalLabel": "Boletus edulis HM579928", 
+"^ot:ottId": 110737, 
+"^ot:ottTaxonName": "Boletus edulis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3680, 
 "@tb:identifier.taxonVariant": 8776, 
@@ -535,8 +665,9 @@
 }
 }, 
 "Tl1054684": {
-"^ot:altLabel": "Boletus speciosus", 
 "^ot:originalLabel": "Boletus speciosus HQ882205", 
+"^ot:ottId": 1001792, 
+"^ot:ottTaxonName": "Boletus speciosus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 327268, 
 "@tb:identifier.taxonVariant": 368599, 
@@ -545,8 +676,9 @@
 }
 }, 
 "Tl1054685": {
-"^ot:altLabel": "Boletus fechtneri", 
 "^ot:originalLabel": "Boletus fechtneri HM347652", 
+"^ot:ottId": 650685, 
+"^ot:ottTaxonName": "Boletus fechtneri", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3681, 
 "@tb:identifier.taxonVariant": 8777, 
@@ -555,8 +687,9 @@
 }
 }, 
 "Tl1054686": {
-"^ot:altLabel": "Boletus abieticola", 
 "^ot:originalLabel": "Boletus abieticola JLF2564", 
+"^ot:ottId": 4936330, 
+"^ot:ottTaxonName": "Boletus abieticola", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 617721, 
 "@tb:identifier.taxonVariant": 826828, 
@@ -594,8 +727,9 @@
 "^ot:originalLabel": "Boletus autumniregius Arora11112"
 }, 
 "Tl1054697": {
-"^ot:altLabel": "Boletus amygdalinus", 
 "^ot:originalLabel": "Boletus amygdalinus DQ974705", 
+"^ot:ottId": 643800, 
+"^ot:ottTaxonName": "Boletus amygdalinus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 353534, 
 "@tb:identifier.taxonVariant": 385309, 
@@ -604,8 +738,9 @@
 }
 }, 
 "Tl1054698": {
-"^ot:altLabel": "Boletus fuscoroseus", 
 "^ot:originalLabel": "Boletus fuscoroseus JN903697", 
+"^ot:ottId": 4936065, 
+"^ot:ottTaxonName": "Boletus fuscoroseus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 617724, 
 "@tb:identifier.taxonVariant": 826831, 
@@ -619,11 +754,14 @@
 "^ot:originalLabel": "Boletus deliciosissimus Arora11077"
 }, 
 "Tl1054701": {
-"^ot:originalLabel": "Boletus speciosus v brunneus DW75591"
+"^ot:originalLabel": "Boletus speciosus v brunneus DW75591", 
+"^ot:ottId": 1001792, 
+"^ot:ottTaxonName": "Boletus speciosus"
 }, 
 "Tl1054702": {
-"^ot:altLabel": "Boletus fuscoroseus", 
 "^ot:originalLabel": "Boletus fuscoroseus SP613117", 
+"^ot:ottId": 4936065, 
+"^ot:ottTaxonName": "Boletus fuscoroseus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 617724, 
 "@tb:identifier.taxonVariant": 826831, 
@@ -634,8 +772,9 @@
 "^ot:originalLabel": "Boletus deliciosissimus Arora11076"
 }, 
 "Tl1054704": {
-"^ot:altLabel": "Boletus appendiculatus", 
 "^ot:originalLabel": "Boletus appendiculatus HQ882204", 
+"^ot:ottId": 123439, 
+"^ot:ottTaxonName": "Boletus appendiculatus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3676, 
 "@tb:identifier.taxonVariant": 8764, 
@@ -644,8 +783,9 @@
 }
 }, 
 "Tl1054705": {
-"^ot:altLabel": "Boletus smithii", 
 "^ot:originalLabel": "Boletus smithii JLF2240", 
+"^ot:ottId": 731270, 
+"^ot:ottTaxonName": "Boletus smithii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3690, 
 "@tb:identifier.taxonVariant": 8816, 
@@ -657,8 +797,9 @@
 "^ot:originalLabel": "Boletus primiregius JLF2139"
 }, 
 "Tl1054707": {
-"^ot:altLabel": "Boletus subappendiculatus", 
 "^ot:originalLabel": "Boletus subappendiculatus AT2010197", 
+"^ot:ottId": 322935, 
+"^ot:ottTaxonName": "Boletus subappendiculatus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 617722, 
 "@tb:identifier.taxonVariant": 826829, 
@@ -666,8 +807,9 @@
 }
 }, 
 "Tl1054708": {
-"^ot:altLabel": "Boletus coniferarum", 
 "^ot:originalLabel": "Boletus coniferarum AF456827", 
+"^ot:ottId": 123434, 
+"^ot:ottTaxonName": "Boletus coniferarum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3679, 
 "@tb:identifier.taxonVariant": 8771, 
@@ -676,8 +818,9 @@
 }
 }, 
 "Tl1054709": {
-"^ot:altLabel": "Boletus fechtneri", 
 "^ot:originalLabel": "Boletus fechtneri AF456821", 
+"^ot:ottId": 650685, 
+"^ot:ottTaxonName": "Boletus fechtneri", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3681, 
 "@tb:identifier.taxonVariant": 8777, 
@@ -686,8 +829,9 @@
 }
 }, 
 "Tl1054710": {
-"^ot:altLabel": "Boletus variipes", 
 "^ot:originalLabel": "Boletus variipes EU232003", 
+"^ot:ottId": 880097, 
+"^ot:ottTaxonName": "Boletus variipes", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 170442, 
 "@tb:identifier.taxonVariant": 244680, 
@@ -696,8 +840,9 @@
 }
 }, 
 "Tl1054711": {
-"^ot:altLabel": "Boletus appendiculatus", 
 "^ot:originalLabel": "Boletus appendiculatus AF456837", 
+"^ot:ottId": 123439, 
+"^ot:ottTaxonName": "Boletus appendiculatus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3676, 
 "@tb:identifier.taxonVariant": 8764, 
@@ -706,8 +851,9 @@
 }
 }, 
 "Tl1054712": {
-"^ot:altLabel": "Boletus pinophilus", 
 "^ot:originalLabel": "Boletus pinophilus AF462358", 
+"^ot:ottId": 940449, 
+"^ot:ottTaxonName": "Boletus pinophilus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 75957, 
 "@tb:identifier.taxonVariant": 418834, 
@@ -716,8 +862,9 @@
 }
 }, 
 "Tl1054713": {
-"^ot:altLabel": "Boletus luridus", 
 "^ot:originalLabel": "Boletus luridus AF139686", 
+"^ot:ottId": 52651, 
+"^ot:ottTaxonName": "Boletus luridus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 123020, 
 "@tb:identifier.taxonVariant": 429297, 
@@ -726,8 +873,9 @@
 }
 }, 
 "Tl1054714": {
-"^ot:altLabel": "Boletus roseopurpureus", 
 "^ot:originalLabel": "Boletus roseopurpureus JLF2567", 
+"^ot:ottId": 4936321, 
+"^ot:ottTaxonName": "Boletus roseopurpureus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 617725, 
 "@tb:identifier.taxonVariant": 826832, 
@@ -738,8 +886,9 @@
 "^ot:originalLabel": "Boletus rexveris EU232005"
 }, 
 "Tl1054716": {
-"^ot:altLabel": "Xerocomus chrysenteron", 
 "^ot:originalLabel": "Xerocomus chrysenteron AF050647", 
+"^ot:ottId": 3835402, 
+"^ot:ottTaxonName": "Xerocomellus chrysenteron", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 31046, 
 "@tb:identifier.taxonVariant": 72482, 
@@ -751,8 +900,9 @@
 "^ot:originalLabel": "Boletus autumniregius ARI063"
 }, 
 "Tl1054718": {
-"^ot:altLabel": "Boletus inedulis", 
 "^ot:originalLabel": "Boletus inedulis JQ327013", 
+"^ot:ottId": 1029994, 
+"^ot:ottTaxonName": "Boletus inedulis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 247342, 
 "@tb:identifier.taxonVariant": 307804, 
@@ -764,8 +914,9 @@
 "^ot:originalLabel": "Boletus primiregius DBB00606"
 }, 
 "Tl1054720": {
-"^ot:altLabel": "Boletus calopus", 
 "^ot:originalLabel": "Boletus calopus AF456833", 
+"^ot:ottId": 800233, 
+"^ot:ottTaxonName": "Boletus calopus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3677, 
 "@tb:identifier.taxonVariant": 8765, 
@@ -777,8 +928,9 @@
 "^ot:originalLabel": "Boletus persolidus Arora027"
 }, 
 "Tl1054722": {
-"^ot:altLabel": "Paxillus involutus", 
 "^ot:originalLabel": "Paxillus involutus AF098385", 
+"^ot:ottId": 92696, 
+"^ot:ottTaxonName": "Paxillus involutus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 20727, 
 "@tb:identifier.taxonVariant": 48284, 
@@ -787,8 +939,9 @@
 }
 }, 
 "Tl1054723": {
-"^ot:altLabel": "Boletus radicans", 
 "^ot:originalLabel": "Boletus radicans AF336241", 
+"^ot:ottId": 517663, 
+"^ot:ottTaxonName": "Boletus radicans", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3685, 
 "@tb:identifier.taxonVariant": 8788, 
@@ -797,11 +950,14 @@
 }
 }, 
 "Tl1054724": {
-"^ot:originalLabel": "Boletus edulis v grandedulis Arora12011a"
+"^ot:originalLabel": "Boletus edulis v grandedulis Arora12011a", 
+"^ot:ottId": 110737, 
+"^ot:ottTaxonName": "Boletus edulis"
 }, 
 "Tl1054725": {
-"^ot:altLabel": "Boletus frustosus", 
 "^ot:originalLabel": "Boletus frustosus Arora11116", 
+"^ot:ottId": 800233, 
+"^ot:ottTaxonName": "Boletus calopus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 617727, 
 "@tb:identifier.taxonVariant": 826834, 
@@ -809,8 +965,9 @@
 }
 }, 
 "Tl1054726": {
-"^ot:altLabel": "Boletus edulis", 
 "^ot:originalLabel": "Boletus edulis AF050643", 
+"^ot:ottId": 110737, 
+"^ot:ottTaxonName": "Boletus edulis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3680, 
 "@tb:identifier.taxonVariant": 8776, 
@@ -819,8 +976,9 @@
 }
 }, 
 "Tl1054727": {
-"^ot:altLabel": "Boletus satanas", 
 "^ot:originalLabel": "Boletus satanas AF336242", 
+"^ot:ottId": 111540, 
+"^ot:ottTaxonName": "Boletus satanas", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3689, 
 "@tb:identifier.taxonVariant": 8814, 
@@ -829,8 +987,9 @@
 }
 }, 
 "Tl1054728": {
-"^ot:altLabel": "Boletus subvelutipes", 
 "^ot:originalLabel": "Boletus subvelutipes AY612804", 
+"^ot:ottId": 1029993, 
+"^ot:ottTaxonName": "Boletus subvelutipes", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 247343, 
 "@tb:identifier.taxonVariant": 307805, 
@@ -839,8 +998,9 @@
 }
 }, 
 "Tl1054729": {
-"^ot:altLabel": "Boletus bicolor", 
 "^ot:originalLabel": "Boletus bicolor AY612800", 
+"^ot:ottId": 1029985, 
+"^ot:ottTaxonName": "Boletus bicolor", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 247340, 
 "@tb:identifier.taxonVariant": 307802, 
@@ -849,8 +1009,9 @@
 }
 }, 
 "Tl1054730": {
-"^ot:altLabel": "Melanogaster tuberiformis", 
 "^ot:originalLabel": "Melanogaster tuberiformis AF167679", 
+"^ot:ottId": 378887, 
+"^ot:ottTaxonName": "Melanogaster tuberiformis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 17222, 
 "@tb:identifier.taxonVariant": 40331, 
@@ -859,8 +1020,9 @@
 }
 }, 
 "Tl1054731": {
-"^ot:altLabel": "Boletus zelleri", 
 "^ot:originalLabel": "Boletus zelleri EU486447", 
+"^ot:ottId": 3836003, 
+"^ot:ottTaxonName": "Xerocomellus zelleri", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 261891, 
 "@tb:identifier.taxonVariant": 319118, 
@@ -884,7 +1046,18 @@
 "Tr61887": {
 "@label": "PAUP 1", 
 "@xsi:type": "nex:FloatTree", 
-"^ot:rootNodeId": "Tn9922633", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:changesCount", 
+"^ot:curatedType": "Maximum likelihood ", 
+"^ot:inGroupClade": "Tn9922606", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
+"^ot:rootNodeId": "Tr61887_ROOT", 
+"^ot:specifiedRoot": "Tr61887_ROOT", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 91, 
 "^tb:quality.tree": "Unrated", 
@@ -933,7 +1106,7 @@
 "@target": "Tn9922769"
 }, 
 "edge203967": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn9922607", 
 "@target": "Tn9922637"
 }
@@ -1063,11 +1236,6 @@
 "@length": 0.35499949, 
 "@source": "Tn9922633", 
 "@target": "Tn9922661"
-}, 
-"edge203863": {
-"@length": 0.35499949, 
-"@source": "Tn9922633", 
-"@target": "Tn9922606"
 }
 }, 
 "Tn9922634": {
@@ -1084,7 +1252,7 @@
 }, 
 "Tn9922635": {
 "edge204119": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn9922635", 
 "@target": "Tn9922726"
 }, 
@@ -1173,7 +1341,7 @@
 "@target": "Tn9922668"
 }, 
 "edge204081": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn9922650", 
 "@target": "Tn9922745"
 }
@@ -1204,7 +1372,7 @@
 }, 
 "Tn9922654": {
 "edge204031": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn9922654", 
 "@target": "Tn9922675"
 }, 
@@ -1221,7 +1389,7 @@
 "@target": "Tn9922719"
 }, 
 "edge203989": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn9922655", 
 "@target": "Tn9922634"
 }
@@ -1252,12 +1420,12 @@
 }, 
 "Tn9922665": {
 "edge204103": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn9922665", 
 "@target": "Tn9922701"
 }, 
 "edge204109": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn9922665", 
 "@target": "Tn9922674"
 }
@@ -1437,7 +1605,7 @@
 "@target": "Tn9922644"
 }, 
 "edge204149": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn9922691", 
 "@target": "Tn9922711"
 }
@@ -1605,7 +1773,7 @@
 "@target": "Tn9922659"
 }, 
 "edge204203": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn9922717", 
 "@target": "Tn9922742"
 }
@@ -1629,7 +1797,7 @@
 "@target": "Tn9922676"
 }, 
 "edge204067": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn9922725", 
 "@target": "Tn9922739"
 }
@@ -1641,7 +1809,7 @@
 "@target": "Tn9922636"
 }, 
 "edge204123": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn9922726", 
 "@target": "Tn9922698"
 }
@@ -1677,7 +1845,7 @@
 "@target": "Tn9922672"
 }, 
 "edge204187": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn9922734", 
 "@target": "Tn9922748"
 }
@@ -1725,7 +1893,7 @@
 "@target": "Tn9922751"
 }, 
 "edge204157": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn9922744", 
 "@target": "Tn9922673"
 }
@@ -1917,7 +2085,7 @@
 "@target": "Tn9922777"
 }, 
 "edge203941": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn9922776", 
 "@target": "Tn9922653"
 }
@@ -1968,6 +2136,17 @@
 "@length": 0.11458547, 
 "@source": "Tn9922783", 
 "@target": "Tn9922614"
+}
+}, 
+"Tr61887_ROOT": {
+"Tr61887_ROOT_EDGE": {
+"@source": "Tr61887_ROOT", 
+"@target": "Tn9922606"
+}, 
+"edge203863": {
+"@length": 0.35499949, 
+"@source": "Tr61887_ROOT", 
+"@target": "Tn9922633"
 }
 }
 }, 
@@ -2034,9 +2213,7 @@
 "Tn9922632": {
 "@otu": "Tl1054683"
 }, 
-"Tn9922633": {
-"@root": true
-}, 
+"Tn9922633": {}, 
 "Tn9922634": {}, 
 "Tn9922635": {}, 
 "Tn9922636": {
@@ -2336,13 +2513,27 @@
 "@otu": "Tl1054653"
 }, 
 "Tn9922782": {}, 
-"Tn9922783": {}
+"Tn9922783": {}, 
+"Tr61887_ROOT": {
+"@root": true
+}
 }
 }, 
 "Tr61888": {
 "@label": "PAUP 1", 
 "@xsi:type": "nex:FloatTree", 
-"^ot:rootNodeId": "Tn9922814", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:changesCount", 
+"^ot:curatedType": "Maximum likelihood ", 
+"^ot:inGroupClade": "Tn9922830", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
+"^ot:rootNodeId": "Tr61888_ROOT", 
+"^ot:specifiedRoot": "Tr61888_ROOT", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 49, 
 "^tb:quality.tree": "Unrated", 
@@ -2433,11 +2624,6 @@
 "@length": 0.02590454, 
 "@source": "Tn9922814", 
 "@target": "Tn9922793"
-}, 
-"edge203713": {
-"@length": 0.02590454, 
-"@source": "Tn9922814", 
-"@target": "Tn9922837"
 }
 }, 
 "Tn9922820": {
@@ -2570,15 +2756,15 @@
 }
 }, 
 "Tn9922837": {
+"edge203713": {
+"@length": 0.02590454, 
+"@source": "Tn9922837", 
+"@target": "Tn9922814"
+}, 
 "edge203715": {
 "@length": 0.03540496, 
 "@source": "Tn9922837", 
 "@target": "Tn9922839"
-}, 
-"edge203717": {
-"@length": 0.04768286, 
-"@source": "Tn9922837", 
-"@target": "Tn9922830"
 }
 }, 
 "Tn9922840": {
@@ -2741,6 +2927,17 @@
 "@source": "Tn9922854", 
 "@target": "Tn9922809"
 }
+}, 
+"Tr61888_ROOT": {
+"Tr61888_ROOT_EDGE": {
+"@source": "Tr61888_ROOT", 
+"@target": "Tn9922837"
+}, 
+"edge203717": {
+"@length": 0.04768286, 
+"@source": "Tr61888_ROOT", 
+"@target": "Tn9922830"
+}
 }
 }, 
 "nodeById": {
@@ -2824,9 +3021,7 @@
 "Tn9922813": {
 "@otu": "Tl1054723"
 }, 
-"Tn9922814": {
-"@root": true
-}, 
+"Tn9922814": {}, 
 "Tn9922815": {
 "@otu": "Tl1054724"
 }, 
@@ -2914,7 +3109,10 @@
 "Tn9922853": {
 "@otu": "Tl1054644"
 }, 
-"Tn9922854": {}
+"Tn9922854": {}, 
+"Tr61888_ROOT": {
+"@root": true
+}
 }
 }
 }
