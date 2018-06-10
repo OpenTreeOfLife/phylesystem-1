@@ -56,16 +56,105 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2018-06-10T20:33:44.033Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:curatorName": "Kaitlin Allen ", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}, 
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": "$1"
+}, 
+"old": {
+"$": "^(\\S*\\s+\\S*).*"
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2018-06-10T20:33:44.033Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Kaitlin Allen "
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S21308"
 }, 
+"^ot:focalCladeOTTTaxonName": "", 
 "^ot:otusElementOrder": [
 "Tls58260"
 ], 
@@ -75,6 +164,7 @@
 }, 
 "^ot:studyPublicationReference": "Voitk A., Saar I., Trudell S.A., Spirin V., Beug M.W., & Koljalg U. 2017. Polyozellus multiplex (Thelephorales) is a species complex containing four new species. Mycologia, 109(6): 975\u0096992.", 
 "^ot:studyYear": 2017, 
+"^ot:tag": [], 
 "^ot:taxonLinkPrefixes": {
 "@ubio": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:", 
 "@uniprot": "http://purl.uniprot.org/taxonomy/"
@@ -109,8 +199,9 @@
 "^ot:originalLabel": "Polyozellus purpureoniger TU103000 UDB023740 USA AK"
 }, 
 "Tl2841375": {
-"^ot:altLabel": "Polyozellus multiplex", 
 "^ot:originalLabel": "Polyozellus multiplex TU117454 UDB031421 USA ME", 
+"^ot:ottId": 921861, 
+"^ot:ottTaxonName": "Polyozellus multiplex", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 37657, 
 "@tb:identifier.taxonVariant": 87066, 
@@ -119,8 +210,9 @@
 }
 }, 
 "Tl2841376": {
-"^ot:altLabel": "Polyozellus multiplex", 
 "^ot:originalLabel": "Polyozellus multiplex TU117481 UDB032207 Can NL", 
+"^ot:ottId": 921861, 
+"^ot:ottTaxonName": "Polyozellus multiplex", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 37657, 
 "@tb:identifier.taxonVariant": 87066, 
@@ -129,8 +221,9 @@
 }
 }, 
 "Tl2841377": {
-"^ot:altLabel": "Polyozellus multiplex", 
 "^ot:originalLabel": "Polyozellus multiplex TU117479 UDB032730 Can NL", 
+"^ot:ottId": 921861, 
+"^ot:ottTaxonName": "Polyozellus multiplex", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 37657, 
 "@tb:identifier.taxonVariant": 87066, 
@@ -154,8 +247,9 @@
 "^ot:originalLabel": "Polyozellus atrolazulinus TU102998IT"
 }, 
 "Tl2841383": {
-"^ot:altLabel": "Polyozellus multiplex", 
 "^ot:originalLabel": "Polyozellus multiplex TU117480 UDB032731 Can NL", 
+"^ot:ottId": 921861, 
+"^ot:ottTaxonName": "Polyozellus multiplex", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 37657, 
 "@tb:identifier.taxonVariant": 87066, 
@@ -164,8 +258,9 @@
 }
 }, 
 "Tl2841384": {
-"^ot:altLabel": "Polyozellus multiplex", 
 "^ot:originalLabel": "Polyozellus multiplex TU117481", 
+"^ot:ottId": 921861, 
+"^ot:ottTaxonName": "Polyozellus multiplex", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 37657, 
 "@tb:identifier.taxonVariant": 87066, 
@@ -183,8 +278,9 @@
 "^ot:originalLabel": "Polyozellus atrolazulinus TU117478 UDB032206 Can NL"
 }, 
 "Tl2841388": {
-"^ot:altLabel": "Polyozellus multiplex", 
 "^ot:originalLabel": "Polyozellus multiplex MF686488 USA NC", 
+"^ot:ottId": 921861, 
+"^ot:ottTaxonName": "Polyozellus multiplex", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 37657, 
 "@tb:identifier.taxonVariant": 87066, 
@@ -193,8 +289,9 @@
 }
 }, 
 "Tl2841389": {
-"^ot:altLabel": "Polyozellus multiplex", 
 "^ot:originalLabel": "Polyozellus multiplex TU115323 UDB016203 Can NL", 
+"^ot:ottId": 921861, 
+"^ot:ottTaxonName": "Polyozellus multiplex", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 37657, 
 "@tb:identifier.taxonVariant": 87066, 
@@ -203,8 +300,9 @@
 }
 }, 
 "Tl2841390": {
-"^ot:altLabel": "Polyozellus multiplex", 
 "^ot:originalLabel": "Polyozellus multiplex TU115049 UDB018721 Chi", 
+"^ot:ottId": 921861, 
+"^ot:ottTaxonName": "Polyozellus multiplex", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 37657, 
 "@tb:identifier.taxonVariant": 87066, 
@@ -225,8 +323,9 @@
 "^ot:originalLabel": "Polyozellus purpureoniger TU117097"
 }, 
 "Tl2841395": {
-"^ot:altLabel": "Polyozellus multiplex", 
 "^ot:originalLabel": "Polyozellus multiplex TU115322", 
+"^ot:ottId": 921861, 
+"^ot:ottTaxonName": "Polyozellus multiplex", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 37657, 
 "@tb:identifier.taxonVariant": 87066, 
@@ -256,8 +355,9 @@
 "^ot:originalLabel": "Polyozellus purpureoniger H7021198 UDB033284 Rus FE"
 }, 
 "Tl2841403": {
-"^ot:altLabel": "Polyozellus multiplex", 
 "^ot:originalLabel": "Polyozellus multiplex TU115322 UDB016202 Can NL", 
+"^ot:ottId": 921861, 
+"^ot:ottTaxonName": "Polyozellus multiplex", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 37657, 
 "@tb:identifier.taxonVariant": 87066, 
@@ -266,8 +366,9 @@
 }
 }, 
 "Tl2841404": {
-"^ot:altLabel": "Polyozellus multiplex", 
 "^ot:originalLabel": "Polyozellus multiplex TU115323", 
+"^ot:ottId": 921861, 
+"^ot:ottTaxonName": "Polyozellus multiplex", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 37657, 
 "@tb:identifier.taxonVariant": 87066, 
@@ -297,8 +398,9 @@
 "^ot:originalLabel": "Polyozellus marymargaretae TU117347"
 }, 
 "Tl2841412": {
-"^ot:altLabel": "Polyozellus multiplex", 
 "^ot:originalLabel": "Polyozellus multiplex TU117454", 
+"^ot:ottId": 921861, 
+"^ot:ottTaxonName": "Polyozellus multiplex", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 37657, 
 "@tb:identifier.taxonVariant": 87066, 
@@ -310,8 +412,9 @@
 "^ot:originalLabel": "Polyozellus atrolazulinus TU117096 UDB023741 USA AK"
 }, 
 "Tl2841414": {
-"^ot:altLabel": "Pseudotomentella mucidula", 
 "^ot:originalLabel": "Pseudotomentella mucidula UDB018563", 
+"^ot:ottId": 49552, 
+"^ot:ottTaxonName": "Pseudotomentella mucidula", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 144004, 
 "@tb:identifier.taxonVariant": 220170, 
@@ -323,8 +426,9 @@
 "^ot:originalLabel": "Polyozellus purpureoniger TU103000"
 }, 
 "Tl2841416": {
-"^ot:altLabel": "Polyozellus multiplex", 
 "^ot:originalLabel": "Polyozellus multiplex NY808298 holotype", 
+"^ot:ottId": 921861, 
+"^ot:ottTaxonName": "Polyozellus multiplex", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 37657, 
 "@tb:identifier.taxonVariant": 87066, 
@@ -333,8 +437,9 @@
 }
 }, 
 "Tl2841417": {
-"^ot:altLabel": "Polyozellus multiplex", 
 "^ot:originalLabel": "Polyozellus multiplex AFTOL530 Chi", 
+"^ot:ottId": 921861, 
+"^ot:ottTaxonName": "Polyozellus multiplex", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 37657, 
 "@tb:identifier.taxonVariant": 87066, 
@@ -343,8 +448,9 @@
 }
 }, 
 "Tl2841418": {
-"^ot:altLabel": "Polyozellus multiplex", 
 "^ot:originalLabel": "Polyozellus multiplex TU117350IET", 
+"^ot:ottId": 921861, 
+"^ot:ottTaxonName": "Polyozellus multiplex", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 37657, 
 "@tb:identifier.taxonVariant": 87066, 
@@ -359,8 +465,9 @@
 "^ot:originalLabel": "Polyozellus marymargaretae TU119561A"
 }, 
 "Tl2841421": {
-"^ot:altLabel": "Polyozellus multiplex", 
 "^ot:originalLabel": "Polyozellus multiplex TU117350IET UDB032576 USA ME", 
+"^ot:ottId": 921861, 
+"^ot:ottTaxonName": "Polyozellus multiplex", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 37657, 
 "@tb:identifier.taxonVariant": 87066, 
@@ -375,8 +482,9 @@
 "^ot:originalLabel": "Polyozellus mariae TU117348IT"
 }, 
 "Tl2841424": {
-"^ot:altLabel": "Polyozellus multiplex", 
 "^ot:originalLabel": "Polyozellus multiplex TMI22322 UDB023429 Jap", 
+"^ot:ottId": 921861, 
+"^ot:ottTaxonName": "Polyozellus multiplex", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 37657, 
 "@tb:identifier.taxonVariant": 87066, 
@@ -412,8 +520,9 @@
 "^ot:originalLabel": "Polyozellus marymargaretae TU119561a UDB024597 USA WA"
 }, 
 "Tl2841434": {
-"^ot:altLabel": "Polyozellus multiplex", 
 "^ot:originalLabel": "Polyozellus multiplex TU117351 UDB032575 Can QC", 
+"^ot:ottId": 921861, 
+"^ot:ottTaxonName": "Polyozellus multiplex", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 37657, 
 "@tb:identifier.taxonVariant": 87066, 
@@ -431,8 +540,9 @@
 "^ot:originalLabel": "Polyozellus mariae TU117346 UDB031374 Can NL"
 }, 
 "Tl2841438": {
-"^ot:altLabel": "Polyozellus multiplex", 
 "^ot:originalLabel": "Polyozellus multiplex TU115049", 
+"^ot:ottId": 921861, 
+"^ot:ottTaxonName": "Polyozellus multiplex", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 37657, 
 "@tb:identifier.taxonVariant": 87066, 
@@ -441,8 +551,9 @@
 }
 }, 
 "Tl2841439": {
-"^ot:altLabel": "Polyozellus multiplex", 
 "^ot:originalLabel": "Polyozellus multiplex TU117351", 
+"^ot:ottId": 921861, 
+"^ot:ottTaxonName": "Polyozellus multiplex", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 37657, 
 "@tb:identifier.taxonVariant": 87066, 
@@ -466,7 +577,18 @@
 "Tr105796": {
 "@label": "Imported tree 1", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:changesCount", 
+"^ot:curatedType": "Maximum likelihood ", 
+"^ot:inGroupClade": "Tn16568291", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn16568291", 
+"^ot:specifiedRoot": "Tn16568291", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "^tb:ntax.tree": 25, 
 "edgeBySourceId": {
 "Tn16568257": {
@@ -754,7 +876,8 @@
 "nodeById": {
 "Tn16568257": {}, 
 "Tn16568258": {
-"@otu": "Tl2841395"
+"@otu": "Tl2841395", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn16568259": {
 "@otu": "Tl2841420"
@@ -766,7 +889,8 @@
 "@otu": "Tl2841391"
 }, 
 "Tn16568262": {
-"@otu": "Tl2841438"
+"@otu": "Tl2841438", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn16568263": {}, 
 "Tn16568264": {}, 
@@ -781,7 +905,8 @@
 "@otu": "Tl2841419"
 }, 
 "Tn16568271": {
-"@otu": "Tl2841418"
+"@otu": "Tl2841418", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn16568272": {}, 
 "Tn16568273": {}, 
@@ -812,17 +937,20 @@
 "Tn16568284": {}, 
 "Tn16568285": {
 "@label": "Polyozellus multiplex holotype", 
-"@otu": "Tl2841416"
+"@otu": "Tl2841416", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn16568286": {
 "@otu": "Tl2841397"
 }, 
 "Tn16568287": {}, 
 "Tn16568288": {
-"@otu": "Tl2841384"
+"@otu": "Tl2841384", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn16568289": {
-"@otu": "Tl2841404"
+"@otu": "Tl2841404", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn16568290": {
 "@otu": "Tl2841425"
@@ -833,14 +961,16 @@
 "Tn16568292": {}, 
 "Tn16568293": {}, 
 "Tn16568294": {
-"@otu": "Tl2841412"
+"@otu": "Tl2841412", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn16568295": {}, 
 "Tn16568296": {
 "@otu": "Tl2841436"
 }, 
 "Tn16568297": {
-"@otu": "Tl2841439"
+"@otu": "Tl2841439", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn16568298": {}, 
 "Tn16568299": {}, 
@@ -858,7 +988,18 @@
 "Tr105797": {
 "@label": "Imported tree 1", 
 "@xsi:type": "nex:FloatTree", 
-"^ot:rootNodeId": "Tn16568329", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:changesCount", 
+"^ot:curatedType": "Maximum likelihood ", 
+"^ot:inGroupClade": "Tn16568329", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
+"^ot:rootNodeId": "Tr105797_ROOT", 
+"^ot:specifiedRoot": "Tr105797_ROOT", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "^tb:ntax.tree": 43, 
 "edgeBySourceId": {
 "Tn16568305": {
@@ -991,11 +1132,6 @@
 "@length": 0.048604980610824126, 
 "@source": "Tn16568329", 
 "@target": "Tn16568314"
-}, 
-"edge181735": {
-"@length": 0.10553373969079231, 
-"@source": "Tn16568329", 
-"@target": "Tn16568306"
 }
 }, 
 "Tn16568332": {
@@ -1357,6 +1493,17 @@
 "@source": "Tn16568388", 
 "@target": "Tn16568387"
 }
+}, 
+"Tr105797_ROOT": {
+"Tr105797_ROOT_EDGE": {
+"@source": "Tr105797_ROOT", 
+"@target": "Tn16568329"
+}, 
+"edge181735": {
+"@length": 0.10553373969079231, 
+"@source": "Tr105797_ROOT", 
+"@target": "Tn16568306"
+}
 }
 }, 
 "nodeById": {
@@ -1424,9 +1571,7 @@
 "@otu": "Tl2841400"
 }, 
 "Tn16568328": {}, 
-"Tn16568329": {
-"@root": true
-}, 
+"Tn16568329": {}, 
 "Tn16568330": {
 "@otu": "Tl2841417"
 }, 
@@ -1563,7 +1708,10 @@
 "Tn16568387": {
 "@otu": "Tl2841401"
 }, 
-"Tn16568388": {}
+"Tn16568388": {}, 
+"Tr105797_ROOT": {
+"@root": true
+}
 }
 }
 }
