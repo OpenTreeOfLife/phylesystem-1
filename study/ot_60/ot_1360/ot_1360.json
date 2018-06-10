@@ -59,16 +59,105 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2018-06-10T20:52:16.892Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "Land plants"
 }, 
-"^ot:curatorName": "Kaitlin Allen ", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}, 
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": "$1"
+}, 
+"old": {
+"$": "^(\\S*\\s+\\S*).*"
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2018-06-10T20:52:16.892Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Kaitlin Allen "
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S18814"
 }, 
+"^ot:focalCladeOTTTaxonName": "", 
 "^ot:otusElementOrder": [
 "Tls49479"
 ], 
@@ -78,6 +167,7 @@
 }, 
 "^ot:studyPublicationReference": "Pascual B., El-azaz J., De la torre F., Canas R.A., Avila C., & Canovas F.M. 2016. Biosynthesis and metabolic fate of phenylalanine in conifers. Frontiers in Plant Science, 7: 1030.", 
 "^ot:studyYear": 2016, 
+"^ot:tag": [], 
 "^ot:taxonLinkPrefixes": {
 "@ubio": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:", 
 "@uniprot": "http://purl.uniprot.org/taxonomy/"
@@ -102,8 +192,9 @@
 "^skos:historyNote": "Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlOTUWriter@27084912 $Rev$", 
 "otuById": {
 "Tl2158576": {
-"^ot:altLabel": "Pinus pinaster", 
 "^ot:originalLabel": "Pinus pinaster PpOMT11", 
+"^ot:ottId": 837883, 
+"^ot:ottTaxonName": "Pinus pinaster", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22461, 
 "@tb:identifier.taxonVariant": 52333, 
@@ -112,8 +203,9 @@
 }
 }, 
 "Tl2158577": {
-"^ot:altLabel": "Arabidopsis thaliana", 
 "^ot:originalLabel": "Arabidopsis thaliana AT1G21110.1", 
+"^ot:ottId": 309263, 
+"^ot:ottTaxonName": "Arabidopsis thaliana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 2130, 
 "@tb:identifier.taxonVariant": 5084, 
@@ -122,8 +214,9 @@
 }
 }, 
 "Tl2158578": {
-"^ot:altLabel": "Pinus pinaster", 
 "^ot:originalLabel": "Pinus pinaster PpOMT16", 
+"^ot:ottId": 837883, 
+"^ot:ottTaxonName": "Pinus pinaster", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22461, 
 "@tb:identifier.taxonVariant": 52333, 
@@ -132,8 +225,9 @@
 }
 }, 
 "Tl2158579": {
-"^ot:altLabel": "Arabidopsis thaliana", 
 "^ot:originalLabel": "Arabidopsis thaliana AT1G33030.1", 
+"^ot:ottId": 309263, 
+"^ot:ottTaxonName": "Arabidopsis thaliana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 2130, 
 "@tb:identifier.taxonVariant": 5084, 
@@ -142,8 +236,9 @@
 }
 }, 
 "Tl2158580": {
-"^ot:altLabel": "Pinus pinaster", 
 "^ot:originalLabel": "Pinus pinaster PpOMT12", 
+"^ot:ottId": 837883, 
+"^ot:ottTaxonName": "Pinus pinaster", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22461, 
 "@tb:identifier.taxonVariant": 52333, 
@@ -152,8 +247,9 @@
 }
 }, 
 "Tl2158581": {
-"^ot:altLabel": "Pinus pinaster", 
 "^ot:originalLabel": "Pinus pinaster PpOMT17", 
+"^ot:ottId": 837883, 
+"^ot:ottTaxonName": "Pinus pinaster", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22461, 
 "@tb:identifier.taxonVariant": 52333, 
@@ -162,8 +258,9 @@
 }
 }, 
 "Tl2158582": {
-"^ot:altLabel": "Arabidopsis thaliana", 
 "^ot:originalLabel": "Arabidopsis thaliana AT4G26220.1", 
+"^ot:ottId": 309263, 
+"^ot:ottTaxonName": "Arabidopsis thaliana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 2130, 
 "@tb:identifier.taxonVariant": 5084, 
@@ -172,8 +269,9 @@
 }
 }, 
 "Tl2158583": {
-"^ot:altLabel": "Pinus pinaster", 
 "^ot:originalLabel": "Pinus pinaster PpOMT4", 
+"^ot:ottId": 837883, 
+"^ot:ottTaxonName": "Pinus pinaster", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22461, 
 "@tb:identifier.taxonVariant": 52333, 
@@ -183,6 +281,8 @@
 }, 
 "Tl2158584": {
 "^ot:originalLabel": "Amborella trichopoda", 
+"^ot:ottId": 303950, 
+"^ot:ottTaxonName": "Amborella trichopoda", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 1165, 
 "@tb:identifier.taxonVariant": 3058, 
@@ -191,8 +291,9 @@
 }
 }, 
 "Tl2158585": {
-"^ot:altLabel": "Pinus pinaster", 
 "^ot:originalLabel": "Pinus pinaster PpOMT19", 
+"^ot:ottId": 837883, 
+"^ot:ottTaxonName": "Pinus pinaster", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22461, 
 "@tb:identifier.taxonVariant": 52333, 
@@ -202,6 +303,8 @@
 }, 
 "Tl2158586": {
 "^ot:originalLabel": "Selaginella moellendorffii", 
+"^ot:ottId": 799880, 
+"^ot:ottTaxonName": "Selaginella moellendorffii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 98062, 
 "@tb:identifier.taxonVariant": 177197, 
@@ -210,8 +313,9 @@
 }
 }, 
 "Tl2158587": {
-"^ot:altLabel": "Arabidopsis thaliana", 
 "^ot:originalLabel": "Arabidopsis thaliana AT1G77530.1", 
+"^ot:ottId": 309263, 
+"^ot:ottTaxonName": "Arabidopsis thaliana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 2130, 
 "@tb:identifier.taxonVariant": 5084, 
@@ -221,6 +325,8 @@
 }, 
 "Tl2158588": {
 "^ot:originalLabel": "Medicago sativa", 
+"^ot:ottId": 1086789, 
+"^ot:ottTaxonName": "Medicago sativa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 17117, 
 "@tb:identifier.taxonVariant": 40101, 
@@ -229,8 +335,9 @@
 }
 }, 
 "Tl2158589": {
-"^ot:altLabel": "Arabidopsis thaliana", 
 "^ot:originalLabel": "Arabidopsis thaliana AT1G67990.1", 
+"^ot:ottId": 309263, 
+"^ot:ottTaxonName": "Arabidopsis thaliana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 2130, 
 "@tb:identifier.taxonVariant": 5084, 
@@ -240,6 +347,8 @@
 }, 
 "Tl2158590": {
 "^ot:originalLabel": "Physcomitrella patens", 
+"^ot:ottId": 821359, 
+"^ot:ottTaxonName": "Physcomitrella patens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22205, 
 "@tb:identifier.taxonVariant": 51642, 
@@ -248,8 +357,9 @@
 }
 }, 
 "Tl2158591": {
-"^ot:altLabel": "Pinus pinaster", 
 "^ot:originalLabel": "Pinus pinaster PpOMT2", 
+"^ot:ottId": 837883, 
+"^ot:ottTaxonName": "Pinus pinaster", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22461, 
 "@tb:identifier.taxonVariant": 52333, 
@@ -259,6 +369,8 @@
 }, 
 "Tl2158592": {
 "^ot:originalLabel": "Oryza sativa", 
+"^ot:ottId": 709894, 
+"^ot:ottTaxonName": "Oryza sativa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 19982, 
 "@tb:identifier.taxonVariant": 46499, 
@@ -267,8 +379,9 @@
 }
 }, 
 "Tl2158593": {
-"^ot:altLabel": "Pinus pinaster", 
 "^ot:originalLabel": "Pinus pinaster PpOMT10", 
+"^ot:ottId": 837883, 
+"^ot:ottTaxonName": "Pinus pinaster", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22461, 
 "@tb:identifier.taxonVariant": 52333, 
@@ -278,6 +391,8 @@
 }, 
 "Tl2158594": {
 "^ot:originalLabel": "Ginkgo biloba", 
+"^ot:ottId": 994084, 
+"^ot:ottTaxonName": "Ginkgo biloba", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 12164, 
 "@tb:identifier.taxonVariant": 28883, 
@@ -286,8 +401,9 @@
 }
 }, 
 "Tl2158595": {
-"^ot:altLabel": "Arabidopsis thaliana", 
 "^ot:originalLabel": "Arabidopsis thaliana COMT1", 
+"^ot:ottId": 309263, 
+"^ot:ottTaxonName": "Arabidopsis thaliana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 2130, 
 "@tb:identifier.taxonVariant": 5084, 
@@ -296,8 +412,9 @@
 }
 }, 
 "Tl2158596": {
-"^ot:altLabel": "Pinus pinaster", 
 "^ot:originalLabel": "Pinus pinaster PpOMT18", 
+"^ot:ottId": 837883, 
+"^ot:ottTaxonName": "Pinus pinaster", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22461, 
 "@tb:identifier.taxonVariant": 52333, 
@@ -307,6 +424,8 @@
 }, 
 "Tl2158597": {
 "^ot:originalLabel": "Liquidambar styraciflua", 
+"^ot:ottId": 62530, 
+"^ot:ottTaxonName": "Liquidambar styraciflua", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 45336, 
 "@tb:identifier.taxonVariant": 106171, 
@@ -316,6 +435,8 @@
 }, 
 "Tl2158598": {
 "^ot:originalLabel": "Zea mays", 
+"^ot:ottId": 605194, 
+"^ot:ottTaxonName": "Zea mays", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 31231, 
 "@tb:identifier.taxonVariant": 72895, 
@@ -324,8 +445,9 @@
 }
 }, 
 "Tl2158599": {
-"^ot:altLabel": "Arabidopsis thaliana", 
 "^ot:originalLabel": "Arabidopsis thaliana AT1G21100.1", 
+"^ot:ottId": 309263, 
+"^ot:ottTaxonName": "Arabidopsis thaliana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 2130, 
 "@tb:identifier.taxonVariant": 5084, 
@@ -334,8 +456,9 @@
 }
 }, 
 "Tl2158600": {
-"^ot:altLabel": "Sphagnum fallax", 
 "^ot:originalLabel": "Sphagnum fallax Sphfalx0052s0034", 
+"^ot:ottId": 108929, 
+"^ot:ottTaxonName": "Sphagnum fallax", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 46594, 
 "@tb:identifier.taxonVariant": 109117, 
@@ -344,8 +467,9 @@
 }
 }, 
 "Tl2158601": {
-"^ot:altLabel": "Arabidopsis thaliana", 
 "^ot:originalLabel": "Arabidopsis thaliana CCoAOMT1", 
+"^ot:ottId": 309263, 
+"^ot:ottTaxonName": "Arabidopsis thaliana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 2130, 
 "@tb:identifier.taxonVariant": 5084, 
@@ -354,8 +478,9 @@
 }
 }, 
 "Tl2158602": {
-"^ot:altLabel": "Arabidopsis thaliana", 
 "^ot:originalLabel": "Arabidopsis thaliana AT1G77520.1", 
+"^ot:ottId": 309263, 
+"^ot:ottTaxonName": "Arabidopsis thaliana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 2130, 
 "@tb:identifier.taxonVariant": 5084, 
@@ -364,8 +489,9 @@
 }
 }, 
 "Tl2158603": {
-"^ot:altLabel": "Arabidopsis thaliana", 
 "^ot:originalLabel": "Arabidopsis thaliana AT1G24735.1", 
+"^ot:ottId": 309263, 
+"^ot:ottTaxonName": "Arabidopsis thaliana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 2130, 
 "@tb:identifier.taxonVariant": 5084, 
@@ -374,8 +500,9 @@
 }
 }, 
 "Tl2158604": {
-"^ot:altLabel": "Pinus pinaster", 
 "^ot:originalLabel": "Pinus pinaster PpOMT3", 
+"^ot:ottId": 837883, 
+"^ot:ottTaxonName": "Pinus pinaster", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22461, 
 "@tb:identifier.taxonVariant": 52333, 
@@ -384,8 +511,9 @@
 }
 }, 
 "Tl2158605": {
-"^ot:altLabel": "Arabidopsis thaliana", 
 "^ot:originalLabel": "Arabidopsis thaliana AT3G62000.1", 
+"^ot:ottId": 309263, 
+"^ot:ottTaxonName": "Arabidopsis thaliana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 2130, 
 "@tb:identifier.taxonVariant": 5084, 
@@ -394,8 +522,9 @@
 }
 }, 
 "Tl2158606": {
-"^ot:altLabel": "Brachypodium distachyon", 
 "^ot:originalLabel": "Brachypodium distachyon Bradi3g1", 
+"^ot:ottId": 413237, 
+"^ot:ottTaxonName": "Brachypodium distachyon", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3914, 
 "@tb:identifier.taxonVariant": 9330, 
@@ -404,8 +533,9 @@
 }
 }, 
 "Tl2158607": {
-"^ot:altLabel": "Pinus pinaster", 
 "^ot:originalLabel": "Pinus pinaster PpOMT23", 
+"^ot:ottId": 837883, 
+"^ot:ottTaxonName": "Pinus pinaster", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22461, 
 "@tb:identifier.taxonVariant": 52333, 
@@ -414,8 +544,9 @@
 }
 }, 
 "Tl2158608": {
-"^ot:altLabel": "Pinus pinaster", 
 "^ot:originalLabel": "Pinus pinaster PpOMT15", 
+"^ot:ottId": 837883, 
+"^ot:ottTaxonName": "Pinus pinaster", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22461, 
 "@tb:identifier.taxonVariant": 52333, 
@@ -424,8 +555,9 @@
 }
 }, 
 "Tl2158609": {
-"^ot:altLabel": "Brachypodium distachyon", 
 "^ot:originalLabel": "Brachypodium distachyon Bradi1g1", 
+"^ot:ottId": 413237, 
+"^ot:ottTaxonName": "Brachypodium distachyon", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3914, 
 "@tb:identifier.taxonVariant": 9330, 
@@ -434,8 +566,9 @@
 }
 }, 
 "Tl2158610": {
-"^ot:altLabel": "Arabidopsis thaliana", 
 "^ot:originalLabel": "Arabidopsis thaliana AT1G21120.1", 
+"^ot:ottId": 309263, 
+"^ot:ottTaxonName": "Arabidopsis thaliana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 2130, 
 "@tb:identifier.taxonVariant": 5084, 
@@ -444,8 +577,9 @@
 }
 }, 
 "Tl2158611": {
-"^ot:altLabel": "Arabidopsis thaliana", 
 "^ot:originalLabel": "Arabidopsis thaliana AT5G53810", 
+"^ot:ottId": 309263, 
+"^ot:ottTaxonName": "Arabidopsis thaliana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 2130, 
 "@tb:identifier.taxonVariant": 5084, 
@@ -454,8 +588,9 @@
 }
 }, 
 "Tl2158612": {
-"^ot:altLabel": "Arabidopsis thaliana", 
 "^ot:originalLabel": "Arabidopsis thaliana AT4G35160.1", 
+"^ot:ottId": 309263, 
+"^ot:ottTaxonName": "Arabidopsis thaliana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 2130, 
 "@tb:identifier.taxonVariant": 5084, 
@@ -464,8 +599,9 @@
 }
 }, 
 "Tl2158613": {
-"^ot:altLabel": "Pinus pinaster", 
 "^ot:originalLabel": "Pinus pinaster PpOMT22", 
+"^ot:ottId": 837883, 
+"^ot:ottTaxonName": "Pinus pinaster", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22461, 
 "@tb:identifier.taxonVariant": 52333, 
@@ -474,8 +610,9 @@
 }
 }, 
 "Tl2158614": {
-"^ot:altLabel": "Pinus pinaster", 
 "^ot:originalLabel": "Pinus pinaster PpOMT8", 
+"^ot:ottId": 837883, 
+"^ot:ottTaxonName": "Pinus pinaster", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22461, 
 "@tb:identifier.taxonVariant": 52333, 
@@ -484,8 +621,9 @@
 }
 }, 
 "Tl2158615": {
-"^ot:altLabel": "Pinus pinaster", 
 "^ot:originalLabel": "Pinus pinaster PpOMT21", 
+"^ot:ottId": 837883, 
+"^ot:ottTaxonName": "Pinus pinaster", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22461, 
 "@tb:identifier.taxonVariant": 52333, 
@@ -494,8 +632,9 @@
 }
 }, 
 "Tl2158616": {
-"^ot:altLabel": "Pinus pinaster", 
 "^ot:originalLabel": "Pinus pinaster PpOMT20", 
+"^ot:ottId": 837883, 
+"^ot:ottTaxonName": "Pinus pinaster", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22461, 
 "@tb:identifier.taxonVariant": 52333, 
@@ -504,8 +643,9 @@
 }
 }, 
 "Tl2158617": {
-"^ot:altLabel": "Arabidopsis thaliana", 
 "^ot:originalLabel": "Arabidopsis thaliana AT1G51990.1", 
+"^ot:ottId": 309263, 
+"^ot:ottTaxonName": "Arabidopsis thaliana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 2130, 
 "@tb:identifier.taxonVariant": 5084, 
@@ -514,8 +654,9 @@
 }
 }, 
 "Tl2158618": {
-"^ot:altLabel": "Populus trichocarpa", 
 "^ot:originalLabel": "Populus trichocarpa Potri.012G00", 
+"^ot:ottId": 8861, 
+"^ot:ottTaxonName": "Populus trichocarpa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 50757, 
 "@tb:identifier.taxonVariant": 413789, 
@@ -524,8 +665,9 @@
 }
 }, 
 "Tl2158619": {
-"^ot:altLabel": "Sphagnum fallax", 
 "^ot:originalLabel": "Sphagnum fallax Sphfalx0189s0021", 
+"^ot:ottId": 108929, 
+"^ot:ottTaxonName": "Sphagnum fallax", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 46594, 
 "@tb:identifier.taxonVariant": 109117, 
@@ -534,8 +676,9 @@
 }
 }, 
 "Tl2158620": {
-"^ot:altLabel": "Pinus pinaster", 
 "^ot:originalLabel": "Pinus pinaster PpOMT1", 
+"^ot:ottId": 837883, 
+"^ot:ottTaxonName": "Pinus pinaster", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22461, 
 "@tb:identifier.taxonVariant": 52333, 
@@ -544,8 +687,9 @@
 }
 }, 
 "Tl2158621": {
-"^ot:altLabel": "Pinus pinaster", 
 "^ot:originalLabel": "Pinus pinaster PpOMT24", 
+"^ot:ottId": 837883, 
+"^ot:ottTaxonName": "Pinus pinaster", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22461, 
 "@tb:identifier.taxonVariant": 52333, 
@@ -554,8 +698,9 @@
 }
 }, 
 "Tl2158622": {
-"^ot:altLabel": "Populus trichocarpa", 
 "^ot:originalLabel": "Populus trichocarpa Potri.015G00", 
+"^ot:ottId": 8861, 
+"^ot:ottTaxonName": "Populus trichocarpa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 50757, 
 "@tb:identifier.taxonVariant": 413789, 
@@ -564,8 +709,9 @@
 }
 }, 
 "Tl2158623": {
-"^ot:altLabel": "Pinus pinaster", 
 "^ot:originalLabel": "Pinus pinaster PpOMT9", 
+"^ot:ottId": 837883, 
+"^ot:ottTaxonName": "Pinus pinaster", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22461, 
 "@tb:identifier.taxonVariant": 52333, 
@@ -574,8 +720,9 @@
 }
 }, 
 "Tl2158624": {
-"^ot:altLabel": "Pinus pinaster", 
 "^ot:originalLabel": "Pinus pinaster PpOMT7", 
+"^ot:ottId": 837883, 
+"^ot:ottTaxonName": "Pinus pinaster", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22461, 
 "@tb:identifier.taxonVariant": 52333, 
@@ -584,8 +731,9 @@
 }
 }, 
 "Tl2158625": {
-"^ot:altLabel": "Pinus pinaster", 
 "^ot:originalLabel": "Pinus pinaster PpOMT5", 
+"^ot:ottId": 837883, 
+"^ot:ottTaxonName": "Pinus pinaster", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22461, 
 "@tb:identifier.taxonVariant": 52333, 
@@ -594,8 +742,9 @@
 }
 }, 
 "Tl2158626": {
-"^ot:altLabel": "Pinus pinaster", 
 "^ot:originalLabel": "Pinus pinaster PpOMT6", 
+"^ot:ottId": 837883, 
+"^ot:ottTaxonName": "Pinus pinaster", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22461, 
 "@tb:identifier.taxonVariant": 52333, 
@@ -604,8 +753,9 @@
 }
 }, 
 "Tl2158627": {
-"^ot:altLabel": "Arabidopsis thaliana", 
 "^ot:originalLabel": "Arabidopsis thaliana AT1G21130.1", 
+"^ot:ottId": 309263, 
+"^ot:ottTaxonName": "Arabidopsis thaliana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 2130, 
 "@tb:identifier.taxonVariant": 5084, 
@@ -614,8 +764,9 @@
 }
 }, 
 "Tl2158628": {
-"^ot:altLabel": "Arabidopsis thaliana", 
 "^ot:originalLabel": "Arabidopsis thaliana AT1G76790.1", 
+"^ot:ottId": 309263, 
+"^ot:ottTaxonName": "Arabidopsis thaliana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 2130, 
 "@tb:identifier.taxonVariant": 5084, 
@@ -624,8 +775,9 @@
 }
 }, 
 "Tl2158629": {
-"^ot:altLabel": "Arabidopsis thaliana", 
 "^ot:originalLabel": "Arabidopsis thaliana AT3G61990.1", 
+"^ot:ottId": 309263, 
+"^ot:ottTaxonName": "Arabidopsis thaliana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 2130, 
 "@tb:identifier.taxonVariant": 5084, 
@@ -634,8 +786,9 @@
 }
 }, 
 "Tl2158630": {
-"^ot:altLabel": "Arabidopsis thaliana", 
 "^ot:originalLabel": "Arabidopsis thaliana AT3G53140.1", 
+"^ot:ottId": 309263, 
+"^ot:ottTaxonName": "Arabidopsis thaliana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 2130, 
 "@tb:identifier.taxonVariant": 5084, 
@@ -645,6 +798,8 @@
 }, 
 "Tl2158631": {
 "^ot:originalLabel": "Glycine max", 
+"^ot:ottId": 681762, 
+"^ot:ottTaxonName": "Glycine max", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 12307, 
 "@tb:identifier.taxonVariant": 29238, 
@@ -653,8 +808,9 @@
 }
 }, 
 "Tl2158632": {
-"^ot:altLabel": "Arabidopsis thaliana", 
 "^ot:originalLabel": "Arabidopsis thaliana AT1G67980.1", 
+"^ot:ottId": 309263, 
+"^ot:ottTaxonName": "Arabidopsis thaliana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 2130, 
 "@tb:identifier.taxonVariant": 5084, 
@@ -663,8 +819,9 @@
 }
 }, 
 "Tl2158633": {
-"^ot:altLabel": "Pinus pinaster", 
 "^ot:originalLabel": "Pinus pinaster PpOMT14", 
+"^ot:ottId": 837883, 
+"^ot:ottTaxonName": "Pinus pinaster", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22461, 
 "@tb:identifier.taxonVariant": 52333, 
@@ -673,8 +830,9 @@
 }
 }, 
 "Tl2158634": {
-"^ot:altLabel": "Pinus pinaster", 
 "^ot:originalLabel": "Pinus pinaster PpOMT13", 
+"^ot:ottId": 837883, 
+"^ot:ottTaxonName": "Pinus pinaster", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22461, 
 "@tb:identifier.taxonVariant": 52333, 
@@ -683,8 +841,9 @@
 }
 }, 
 "Tl2158635": {
-"^ot:altLabel": "Arabidopsis thaliana", 
 "^ot:originalLabel": "Arabidopsis thaliana AT5G37170.1", 
+"^ot:ottId": 309263, 
+"^ot:ottTaxonName": "Arabidopsis thaliana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 2130, 
 "@tb:identifier.taxonVariant": 5084, 
@@ -707,7 +866,19 @@
 "Tr93591": {
 "@label": "Fig. 2", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:undefined", 
+"^ot:curatedType": "Neighbor-joining ", 
+"^ot:inGroupClade": "Tn13791853", 
+"^ot:nodeLabelDescription": "", 
+"^ot:nodeLabelMode": "ot:bootstrapValues", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn13791853", 
+"^ot:specifiedRoot": "Tn13791853", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "^tb:kind.tree": "Gene Tree", 
 "^tb:ntax.tree": 60, 
 "^tb:quality.tree": "Preferred Tree", 
@@ -726,7 +897,8 @@
 "Tn13791751": {
 "edge349354": {
 "@source": "Tn13791751", 
-"@target": "Tn13791864"
+"@target": "Tn13791864", 
+"^ot:bootstrapValues": 63.2
 }, 
 "edge349360": {
 "@source": "Tn13791751", 
@@ -756,7 +928,8 @@
 "Tn13791756": {
 "edge349352": {
 "@source": "Tn13791756", 
-"@target": "Tn13791751"
+"@target": "Tn13791751", 
+"^ot:bootstrapValues": 99.8
 }, 
 "edge349362": {
 "@source": "Tn13791756", 
@@ -766,7 +939,8 @@
 "Tn13791757": {
 "edge349328": {
 "@source": "Tn13791757", 
-"@target": "Tn13791859"
+"@target": "Tn13791859", 
+"^ot:bootstrapValues": 99.9
 }, 
 "edge349334": {
 "@source": "Tn13791757", 
@@ -776,61 +950,73 @@
 "Tn13791759": {
 "edge349189": {
 "@source": "Tn13791759", 
-"@target": "Tn13791792"
+"@target": "Tn13791792", 
+"^ot:bootstrapValues": 16.900000000000002
 }, 
 "edge349324": {
 "@source": "Tn13791759", 
-"@target": "Tn13791786"
+"@target": "Tn13791786", 
+"^ot:bootstrapValues": 21.9
 }
 }, 
 "Tn13791760": {
 "edge349201": {
 "@source": "Tn13791760", 
-"@target": "Tn13791850"
+"@target": "Tn13791850", 
+"^ot:bootstrapValues": 72.1
 }, 
 "edge349233": {
 "@source": "Tn13791760", 
-"@target": "Tn13791847"
+"@target": "Tn13791847", 
+"^ot:bootstrapValues": 83.8
 }
 }, 
 "Tn13791761": {
 "edge349366": {
 "@source": "Tn13791761", 
-"@target": "Tn13791764"
+"@target": "Tn13791764", 
+"^ot:bootstrapValues": 30.8
 }, 
 "edge349384": {
 "@source": "Tn13791761", 
-"@target": "Tn13791863"
+"@target": "Tn13791863", 
+"^ot:bootstrapValues": 98
 }
 }, 
 "Tn13791762": {
 "edge349390": {
 "@source": "Tn13791762", 
-"@target": "Tn13791755"
+"@target": "Tn13791755", 
+"^ot:bootstrapValues": 100
 }, 
 "edge349396": {
 "@source": "Tn13791762", 
-"@target": "Tn13791785"
+"@target": "Tn13791785", 
+"^ot:bootstrapValues": 45.300000000000004
 }
 }, 
 "Tn13791764": {
 "edge349368": {
 "@source": "Tn13791764", 
-"@target": "Tn13791781"
+"@target": "Tn13791781", 
+"^ot:bootstrapValues": 100
 }, 
 "edge349378": {
 "@source": "Tn13791764", 
-"@target": "Tn13791806"
+"@target": "Tn13791806", 
+"^ot:bootstrapValues": 97.7
 }
 }, 
 "Tn13791765": {
 "edge349258": {
 "@source": "Tn13791765", 
-"@target": "Tn13791823"
+"@target": "Tn13791823", 
+"^ot:bootstrapValues": 58.3
 }, 
 "edge349270": {
 "@source": "Tn13791765", 
-"@target": "Tn13791772"
+"@target": "Tn13791772", 
+"^ot:bootstrapValues": 79.10000000000001
 }
 }, 
 "Tn13791770": {
@@ -850,7 +1036,8 @@
 }, 
 "edge349274": {
 "@source": "Tn13791772", 
-"@target": "Tn13791826"
+"@target": "Tn13791826", 
+"^ot:bootstrapValues": 75.6
 }
 }, 
 "Tn13791776": {
@@ -870,13 +1057,15 @@
 }, 
 "edge349430": {
 "@source": "Tn13791779", 
-"@target": "Tn13791776"
+"@target": "Tn13791776", 
+"^ot:bootstrapValues": 73.6
 }
 }, 
 "Tn13791781": {
 "edge349370": {
 "@source": "Tn13791781", 
-"@target": "Tn13791831"
+"@target": "Tn13791831", 
+"^ot:bootstrapValues": 88.7
 }, 
 "edge349376": {
 "@source": "Tn13791781", 
@@ -900,33 +1089,39 @@
 }, 
 "edge349400": {
 "@source": "Tn13791785", 
-"@target": "Tn13791799"
+"@target": "Tn13791799", 
+"^ot:bootstrapValues": 76.5
 }
 }, 
 "Tn13791786": {
 "edge349326": {
 "@source": "Tn13791786", 
-"@target": "Tn13791757"
+"@target": "Tn13791757", 
+"^ot:bootstrapValues": 70.89999999999999
 }, 
 "edge349336": {
 "@source": "Tn13791786", 
-"@target": "Tn13791866"
+"@target": "Tn13791866", 
+"^ot:bootstrapValues": 64.7
 }
 }, 
 "Tn13791790": {
 "edge349290": {
 "@source": "Tn13791790", 
-"@target": "Tn13791815"
+"@target": "Tn13791815", 
+"^ot:bootstrapValues": 91.7
 }, 
 "edge349304": {
 "@source": "Tn13791790", 
-"@target": "Tn13791846"
+"@target": "Tn13791846", 
+"^ot:bootstrapValues": 100
 }
 }, 
 "Tn13791792": {
 "edge349192": {
 "@source": "Tn13791792", 
-"@target": "Tn13791829"
+"@target": "Tn13791829", 
+"^ot:bootstrapValues": 30.099999999999998
 }, 
 "edge349322": {
 "@source": "Tn13791792", 
@@ -936,11 +1131,13 @@
 "Tn13791793": {
 "edge349208": {
 "@source": "Tn13791793", 
-"@target": "Tn13791817"
+"@target": "Tn13791817", 
+"^ot:bootstrapValues": 50.8
 }, 
 "edge349225": {
 "@source": "Tn13791793", 
-"@target": "Tn13791750"
+"@target": "Tn13791750", 
+"^ot:bootstrapValues": 41.6
 }
 }, 
 "Tn13791794": {
@@ -956,7 +1153,8 @@
 "Tn13791795": {
 "edge349294": {
 "@source": "Tn13791795", 
-"@target": "Tn13791754"
+"@target": "Tn13791754", 
+"^ot:bootstrapValues": 98.4
 }, 
 "edge349300": {
 "@source": "Tn13791795", 
@@ -980,17 +1178,20 @@
 }, 
 "edge349404": {
 "@source": "Tn13791799", 
-"@target": "Tn13791770"
+"@target": "Tn13791770", 
+"^ot:bootstrapValues": 51.7
 }
 }, 
 "Tn13791800": {
 "edge349182": {
 "@source": "Tn13791800", 
-"@target": "Tn13791858"
+"@target": "Tn13791858", 
+"^ot:bootstrapValues": 67.7
 }, 
 "edge349348": {
 "@source": "Tn13791800", 
-"@target": "Tn13791836"
+"@target": "Tn13791836", 
+"^ot:bootstrapValues": 28.4
 }
 }, 
 "Tn13791806": {
@@ -1006,11 +1207,13 @@
 "Tn13791809": {
 "edge349412": {
 "@source": "Tn13791809", 
-"@target": "Tn13791839"
+"@target": "Tn13791839", 
+"^ot:bootstrapValues": 100
 }, 
 "edge349418": {
 "@source": "Tn13791809", 
-"@target": "Tn13791861"
+"@target": "Tn13791861", 
+"^ot:bootstrapValues": 92.10000000000001
 }
 }, 
 "Tn13791812": {
@@ -1020,7 +1223,8 @@
 }, 
 "edge349316": {
 "@source": "Tn13791812", 
-"@target": "Tn13791794"
+"@target": "Tn13791794", 
+"^ot:bootstrapValues": 95
 }
 }, 
 "Tn13791814": {
@@ -1036,7 +1240,8 @@
 "Tn13791815": {
 "edge349292": {
 "@source": "Tn13791815", 
-"@target": "Tn13791795"
+"@target": "Tn13791795", 
+"^ot:bootstrapValues": 68
 }, 
 "edge349302": {
 "@source": "Tn13791815", 
@@ -1046,11 +1251,13 @@
 "Tn13791817": {
 "edge349211": {
 "@source": "Tn13791817", 
-"@target": "Tn13791824"
+"@target": "Tn13791824", 
+"^ot:bootstrapValues": 88.7
 }, 
 "edge349218": {
 "@source": "Tn13791817", 
-"@target": "Tn13791797"
+"@target": "Tn13791797", 
+"^ot:bootstrapValues": 69.5
 }
 }, 
 "Tn13791820": {
@@ -1066,7 +1273,8 @@
 "Tn13791823": {
 "edge349261": {
 "@source": "Tn13791823", 
-"@target": "Tn13791845"
+"@target": "Tn13791845", 
+"^ot:bootstrapValues": 95.89999999999999
 }, 
 "edge349268": {
 "@source": "Tn13791823", 
@@ -1086,11 +1294,13 @@
 "Tn13791825": {
 "edge349198": {
 "@source": "Tn13791825", 
-"@target": "Tn13791760"
+"@target": "Tn13791760", 
+"^ot:bootstrapValues": 51.5
 }, 
 "edge349247": {
 "@source": "Tn13791825", 
-"@target": "Tn13791841"
+"@target": "Tn13791841", 
+"^ot:bootstrapValues": 100
 }
 }, 
 "Tn13791826": {
@@ -1100,7 +1310,8 @@
 }, 
 "edge349280": {
 "@source": "Tn13791826", 
-"@target": "Tn13791842"
+"@target": "Tn13791842", 
+"^ot:bootstrapValues": 59.5
 }
 }, 
 "Tn13791828": {
@@ -1110,17 +1321,20 @@
 }, 
 "edge349255": {
 "@source": "Tn13791828", 
-"@target": "Tn13791765"
+"@target": "Tn13791765", 
+"^ot:bootstrapValues": 73.5
 }
 }, 
 "Tn13791829": {
 "edge349195": {
 "@source": "Tn13791829", 
-"@target": "Tn13791825"
+"@target": "Tn13791825", 
+"^ot:bootstrapValues": 77.3
 }, 
 "edge349288": {
 "@source": "Tn13791829", 
-"@target": "Tn13791790"
+"@target": "Tn13791790", 
+"^ot:bootstrapValues": 99.4
 }
 }, 
 "Tn13791831": {
@@ -1136,11 +1350,13 @@
 "Tn13791836": {
 "edge349350": {
 "@source": "Tn13791836", 
-"@target": "Tn13791756"
+"@target": "Tn13791756", 
+"^ot:bootstrapValues": 44.9
 }, 
 "edge349364": {
 "@source": "Tn13791836", 
-"@target": "Tn13791761"
+"@target": "Tn13791761", 
+"^ot:bootstrapValues": 11.5
 }
 }, 
 "Tn13791839": {
@@ -1160,7 +1376,8 @@
 }, 
 "edge349251": {
 "@source": "Tn13791841", 
-"@target": "Tn13791828"
+"@target": "Tn13791828", 
+"^ot:bootstrapValues": 78.5
 }
 }, 
 "Tn13791842": {
@@ -1190,7 +1407,8 @@
 }, 
 "edge349308": {
 "@source": "Tn13791846", 
-"@target": "Tn13791857"
+"@target": "Tn13791857", 
+"^ot:bootstrapValues": 100
 }
 }, 
 "Tn13791847": {
@@ -1200,7 +1418,8 @@
 }, 
 "edge349237": {
 "@source": "Tn13791847", 
-"@target": "Tn13791849"
+"@target": "Tn13791849", 
+"^ot:bootstrapValues": 94.39999999999999
 }
 }, 
 "Tn13791849": {
@@ -1210,13 +1429,15 @@
 }, 
 "edge349241": {
 "@source": "Tn13791849", 
-"@target": "Tn13791782"
+"@target": "Tn13791782", 
+"^ot:bootstrapValues": 43.4
 }
 }, 
 "Tn13791850": {
 "edge349205": {
 "@source": "Tn13791850", 
-"@target": "Tn13791793"
+"@target": "Tn13791793", 
+"^ot:bootstrapValues": 99.9
 }, 
 "edge349231": {
 "@source": "Tn13791850", 
@@ -1226,11 +1447,13 @@
 "Tn13791853": {
 "edge349179": {
 "@source": "Tn13791853", 
-"@target": "Tn13791800"
+"@target": "Tn13791800", 
+"^ot:bootstrapValues": 100
 }, 
 "edge349410": {
 "@source": "Tn13791853", 
-"@target": "Tn13791809"
+"@target": "Tn13791809", 
+"^ot:bootstrapValues": 100
 }
 }, 
 "Tn13791857": {
@@ -1240,13 +1463,15 @@
 }, 
 "edge349312": {
 "@source": "Tn13791857", 
-"@target": "Tn13791812"
+"@target": "Tn13791812", 
+"^ot:bootstrapValues": 59.599999999999994
 }
 }, 
 "Tn13791858": {
 "edge349186": {
 "@source": "Tn13791858", 
-"@target": "Tn13791759"
+"@target": "Tn13791759", 
+"^ot:bootstrapValues": 12.2
 }, 
 "edge349346": {
 "@source": "Tn13791858", 
@@ -1266,11 +1491,13 @@
 "Tn13791861": {
 "edge349420": {
 "@source": "Tn13791861", 
-"@target": "Tn13791820"
+"@target": "Tn13791820", 
+"^ot:bootstrapValues": 91.8
 }, 
 "edge349426": {
 "@source": "Tn13791861", 
-"@target": "Tn13791779"
+"@target": "Tn13791779", 
+"^ot:bootstrapValues": 93.5
 }
 }, 
 "Tn13791863": {
@@ -1280,7 +1507,8 @@
 }, 
 "edge349388": {
 "@source": "Tn13791863", 
-"@target": "Tn13791762"
+"@target": "Tn13791762", 
+"^ot:bootstrapValues": 100
 }
 }, 
 "Tn13791864": {
@@ -1300,7 +1528,8 @@
 }, 
 "edge349340": {
 "@source": "Tn13791866", 
-"@target": "Tn13791814"
+"@target": "Tn13791814", 
+"^ot:bootstrapValues": 100
 }
 }
 }, 
@@ -1311,54 +1540,30 @@
 "Tn13791749": {
 "@otu": "Tl2158630"
 }, 
-"Tn13791750": {
-"@label": "0.4160"
-}, 
-"Tn13791751": {
-"@label": "0.9980"
-}, 
+"Tn13791750": {}, 
+"Tn13791751": {}, 
 "Tn13791752": {
 "@otu": "Tl2158589"
 }, 
 "Tn13791753": {
 "@otu": "Tl2158600"
 }, 
-"Tn13791754": {
-"@label": "0.9840"
-}, 
-"Tn13791755": {
-"@label": "1.0000"
-}, 
-"Tn13791756": {
-"@label": "0.4490"
-}, 
-"Tn13791757": {
-"@label": "0.7090"
-}, 
+"Tn13791754": {}, 
+"Tn13791755": {}, 
+"Tn13791756": {}, 
+"Tn13791757": {}, 
 "Tn13791758": {
 "@otu": "Tl2158577"
 }, 
-"Tn13791759": {
-"@label": "0.1220"
-}, 
-"Tn13791760": {
-"@label": "0.5150"
-}, 
-"Tn13791761": {
-"@label": "0.1150"
-}, 
-"Tn13791762": {
-"@label": "1.0000"
-}, 
+"Tn13791759": {}, 
+"Tn13791760": {}, 
+"Tn13791761": {}, 
+"Tn13791762": {}, 
 "Tn13791763": {
 "@otu": "Tl2158619"
 }, 
-"Tn13791764": {
-"@label": "0.3080"
-}, 
-"Tn13791765": {
-"@label": "0.7350"
-}, 
+"Tn13791764": {}, 
+"Tn13791765": {}, 
 "Tn13791766": {
 "@otu": "Tl2158605"
 }, 
@@ -1371,15 +1576,11 @@
 "Tn13791769": {
 "@otu": "Tl2158622"
 }, 
-"Tn13791770": {
-"@label": "0.5170"
-}, 
+"Tn13791770": {}, 
 "Tn13791771": {
 "@otu": "Tl2158585"
 }, 
-"Tn13791772": {
-"@label": "0.7910"
-}, 
+"Tn13791772": {}, 
 "Tn13791773": {
 "@otu": "Tl2158580"
 }, 
@@ -1389,39 +1590,27 @@
 "Tn13791775": {
 "@otu": "Tl2158607"
 }, 
-"Tn13791776": {
-"@label": "0.7360"
-}, 
+"Tn13791776": {}, 
 "Tn13791777": {
 "@otu": "Tl2158584"
 }, 
 "Tn13791778": {
 "@otu": "Tl2158608"
 }, 
-"Tn13791779": {
-"@label": "0.9350"
-}, 
+"Tn13791779": {}, 
 "Tn13791780": {
 "@otu": "Tl2158623"
 }, 
-"Tn13791781": {
-"@label": "1.0000"
-}, 
-"Tn13791782": {
-"@label": "0.4340"
-}, 
+"Tn13791781": {}, 
+"Tn13791782": {}, 
 "Tn13791783": {
 "@otu": "Tl2158618"
 }, 
 "Tn13791784": {
 "@otu": "Tl2158613"
 }, 
-"Tn13791785": {
-"@label": "0.4530"
-}, 
-"Tn13791786": {
-"@label": "0.2190"
-}, 
+"Tn13791785": {}, 
+"Tn13791786": {}, 
 "Tn13791787": {
 "@otu": "Tl2158610"
 }, 
@@ -1431,39 +1620,23 @@
 "Tn13791789": {
 "@otu": "Tl2158583"
 }, 
-"Tn13791790": {
-"@label": "0.9940"
-}, 
+"Tn13791790": {}, 
 "Tn13791791": {
 "@otu": "Tl2158587"
 }, 
-"Tn13791792": {
-"@label": "0.1690"
-}, 
-"Tn13791793": {
-"@label": "0.9990"
-}, 
-"Tn13791794": {
-"@label": "0.9500"
-}, 
-"Tn13791795": {
-"@label": "0.6800"
-}, 
+"Tn13791792": {}, 
+"Tn13791793": {}, 
+"Tn13791794": {}, 
+"Tn13791795": {}, 
 "Tn13791796": {
 "@otu": "Tl2158595"
 }, 
-"Tn13791797": {
-"@label": "0.6950"
-}, 
+"Tn13791797": {}, 
 "Tn13791798": {
 "@otu": "Tl2158612"
 }, 
-"Tn13791799": {
-"@label": "0.7650"
-}, 
-"Tn13791800": {
-"@label": "1.0000"
-}, 
+"Tn13791799": {}, 
+"Tn13791800": {}, 
 "Tn13791801": {
 "@otu": "Tl2158634"
 }, 
@@ -1479,84 +1652,56 @@
 "Tn13791805": {
 "@otu": "Tl2158611"
 }, 
-"Tn13791806": {
-"@label": "0.9770"
-}, 
+"Tn13791806": {}, 
 "Tn13791807": {
 "@otu": "Tl2158603"
 }, 
 "Tn13791808": {
 "@otu": "Tl2158624"
 }, 
-"Tn13791809": {
-"@label": "1.0000"
-}, 
+"Tn13791809": {}, 
 "Tn13791810": {
 "@otu": "Tl2158588"
 }, 
 "Tn13791811": {
 "@otu": "Tl2158617"
 }, 
-"Tn13791812": {
-"@label": "0.5960"
-}, 
+"Tn13791812": {}, 
 "Tn13791813": {
 "@otu": "Tl2158614"
 }, 
-"Tn13791814": {
-"@label": "1.0000"
-}, 
-"Tn13791815": {
-"@label": "0.9170"
-}, 
+"Tn13791814": {}, 
+"Tn13791815": {}, 
 "Tn13791816": {
 "@otu": "Tl2158615"
 }, 
-"Tn13791817": {
-"@label": "0.5080"
-}, 
+"Tn13791817": {}, 
 "Tn13791818": {
 "@otu": "Tl2158586"
 }, 
 "Tn13791819": {
 "@otu": "Tl2158629"
 }, 
-"Tn13791820": {
-"@label": "0.9180"
-}, 
+"Tn13791820": {}, 
 "Tn13791821": {
 "@otu": "Tl2158597"
 }, 
 "Tn13791822": {
 "@otu": "Tl2158579"
 }, 
-"Tn13791823": {
-"@label": "0.5830"
-}, 
-"Tn13791824": {
-"@label": "0.8870"
-}, 
-"Tn13791825": {
-"@label": "0.7730"
-}, 
-"Tn13791826": {
-"@label": "0.7560"
-}, 
+"Tn13791823": {}, 
+"Tn13791824": {}, 
+"Tn13791825": {}, 
+"Tn13791826": {}, 
 "Tn13791827": {
 "@otu": "Tl2158620"
 }, 
-"Tn13791828": {
-"@label": "0.7850"
-}, 
-"Tn13791829": {
-"@label": "0.3010"
-}, 
+"Tn13791828": {}, 
+"Tn13791829": {}, 
 "Tn13791830": {
 "@otu": "Tl2158582"
 }, 
-"Tn13791831": {
-"@label": "0.8870"
-}, 
+"Tn13791831": {}, 
 "Tn13791832": {
 "@otu": "Tl2158602"
 }, 
@@ -1569,51 +1714,33 @@
 "Tn13791835": {
 "@otu": "Tl2158626"
 }, 
-"Tn13791836": {
-"@label": "0.2840"
-}, 
+"Tn13791836": {}, 
 "Tn13791837": {
 "@otu": "Tl2158596"
 }, 
 "Tn13791838": {
 "@otu": "Tl2158601"
 }, 
-"Tn13791839": {
-"@label": "1.0000"
-}, 
+"Tn13791839": {}, 
 "Tn13791840": {
 "@otu": "Tl2158633"
 }, 
-"Tn13791841": {
-"@label": "1.0000"
-}, 
-"Tn13791842": {
-"@label": "0.5950"
-}, 
+"Tn13791841": {}, 
+"Tn13791842": {}, 
 "Tn13791843": {
 "@otu": "Tl2158590"
 }, 
 "Tn13791844": {
 "@otu": "Tl2158576"
 }, 
-"Tn13791845": {
-"@label": "0.9590"
-}, 
-"Tn13791846": {
-"@label": "1.0000"
-}, 
-"Tn13791847": {
-"@label": "0.8380"
-}, 
+"Tn13791845": {}, 
+"Tn13791846": {}, 
+"Tn13791847": {}, 
 "Tn13791848": {
 "@otu": "Tl2158592"
 }, 
-"Tn13791849": {
-"@label": "0.9440"
-}, 
-"Tn13791850": {
-"@label": "0.7210"
-}, 
+"Tn13791849": {}, 
+"Tn13791850": {}, 
 "Tn13791851": {
 "@otu": "Tl2158627"
 }, 
@@ -1632,36 +1759,22 @@
 "Tn13791856": {
 "@otu": "Tl2158578"
 }, 
-"Tn13791857": {
-"@label": "1.0000"
-}, 
-"Tn13791858": {
-"@label": "0.6770"
-}, 
-"Tn13791859": {
-"@label": "0.9990"
-}, 
+"Tn13791857": {}, 
+"Tn13791858": {}, 
+"Tn13791859": {}, 
 "Tn13791860": {
 "@otu": "Tl2158632"
 }, 
-"Tn13791861": {
-"@label": "0.9210"
-}, 
+"Tn13791861": {}, 
 "Tn13791862": {
 "@otu": "Tl2158594"
 }, 
-"Tn13791863": {
-"@label": "0.9800"
-}, 
-"Tn13791864": {
-"@label": "0.6320"
-}, 
+"Tn13791863": {}, 
+"Tn13791864": {}, 
 "Tn13791865": {
 "@otu": "Tl2158593"
 }, 
-"Tn13791866": {
-"@label": "0.6470"
-}
+"Tn13791866": {}
 }
 }
 }
