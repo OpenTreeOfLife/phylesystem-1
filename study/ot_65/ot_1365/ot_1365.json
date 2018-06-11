@@ -50,16 +50,106 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2018-06-11T22:11:03.931Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:curatorName": "Kaitlin Allen ", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}, 
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": "$1"
+}, 
+"old": {
+"$": "^(\\S*\\s+\\S*).*"
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2018-06-11T22:11:03.931Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Kaitlin Allen "
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S19055"
 }, 
+"^ot:focalClade": 33903, 
+"^ot:focalCladeOTTTaxonName": "Botryosphaeriaceae", 
 "^ot:otusElementOrder": [
 "Tls50396"
 ], 
@@ -69,6 +159,7 @@
 }, 
 "^ot:studyPublicationReference": "Mehl J.W., Slippers B., Roux J., & Wingfield M.J. 2017. Overlap of latent pathogens in the Botryosphaeriaceae on a native and agricultural host. Fungal Biology, 121(4): 405-419.", 
 "^ot:studyYear": 2017, 
+"^ot:tag": [], 
 "^ot:taxonLinkPrefixes": {
 "@ubio": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:", 
 "@uniprot": "http://purl.uniprot.org/taxonomy/"
@@ -97,8 +188,9 @@
 "^skos:historyNote": "Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlOTUWriter@1cc048bc $Rev$", 
 "otuById": {
 "Tl2237112": {
-"^ot:altLabel": "Sclerocarya birrea", 
 "^ot:originalLabel": "Sclerocarya birrea CMW24080", 
+"^ot:ottId": 456294, 
+"^ot:ottTaxonName": "Sclerocarya birrea", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 433217, 
 "@tb:identifier.taxonVariant": 570458, 
@@ -110,8 +202,9 @@
 "^ot:originalLabel": "Melanops indica MAN25238"
 }, 
 "Tl2237114": {
-"^ot:altLabel": "Sclerocarya birrea", 
 "^ot:originalLabel": "Sclerocarya birrea CMW24117", 
+"^ot:ottId": 456294, 
+"^ot:ottTaxonName": "Sclerocarya birrea", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 433217, 
 "@tb:identifier.taxonVariant": 570458, 
@@ -120,8 +213,9 @@
 }
 }, 
 "Tl2237115": {
-"^ot:altLabel": "Sclerocarya birrea", 
 "^ot:originalLabel": "Sclerocarya birrea CMW24131", 
+"^ot:ottId": 456294, 
+"^ot:ottTaxonName": "Sclerocarya birrea", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 433217, 
 "@tb:identifier.taxonVariant": 570458, 
@@ -130,8 +224,9 @@
 }
 }, 
 "Tl2237116": {
-"^ot:altLabel": "Neofusicoccum australe", 
 "^ot:originalLabel": "Neofusicoccum australe CBS112872 V vinifera", 
+"^ot:ottId": 26868, 
+"^ot:ottTaxonName": "Neofusicoccum australe", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3786, 
 "@tb:identifier.taxonVariant": 104783, 
@@ -141,11 +236,14 @@
 "^skos:prefLabel": "Botryosphaeria australis"
 }, 
 "Tl2237117": {
-"^ot:originalLabel": "Botryosphaeria fabicerciana CMW27094 Eucalyptus sp"
+"^ot:originalLabel": "Botryosphaeria fabicerciana CMW27094 Eucalyptus sp", 
+"^ot:ottId": 22920, 
+"^ot:ottTaxonName": "Botryosphaeria fabicerciana"
 }, 
 "Tl2237118": {
-"^ot:altLabel": "Lasiodiplodia theobromae", 
 "^ot:originalLabel": "Lasiodiplodia theobromae CBS16496 Fruit coraLasiodiplodia reef coast", 
+"^ot:ottId": 33894, 
+"^ot:ottTaxonName": "Lasiodiplodia theobromae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3800, 
 "@tb:identifier.taxonVariant": 36011, 
@@ -174,8 +272,9 @@
 "^ot:originalLabel": "Melanops indica MAN22138"
 }, 
 "Tl2237123": {
-"^ot:altLabel": "Sclerocarya birrea", 
 "^ot:originalLabel": "Sclerocarya birrea CMW24125", 
+"^ot:ottId": 456294, 
+"^ot:ottTaxonName": "Sclerocarya birrea", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 433217, 
 "@tb:identifier.taxonVariant": 570458, 
@@ -184,8 +283,9 @@
 }
 }, 
 "Tl2237124": {
-"^ot:altLabel": "Melanops tulasnei", 
 "^ot:originalLabel": "Melanops tulasnei CBS116805 Q robur", 
+"^ot:ottId": 518725, 
+"^ot:ottTaxonName": "Botryosphaeria quercuum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 427314, 
 "@tb:identifier.taxonVariant": 562443, 
@@ -197,7 +297,9 @@
 "^ot:originalLabel": "Diplodia allocellula CMW36469 Ac karroo"
 }, 
 "Tl2237126": {
-"^ot:originalLabel": "Lasiodiplodia mahajangana CMW27818 T catappa"
+"^ot:originalLabel": "Lasiodiplodia mahajangana CMW27818 T catappa", 
+"^ot:ottId": 105065, 
+"^ot:ottTaxonName": "Lasiodiplodia mahajangana"
 }, 
 "Tl2237127": {
 "^ot:originalLabel": "Melanops indica CMW25215"
@@ -207,14 +309,17 @@
 }, 
 "Tl2237129": {
 "^ot:originalLabel": "Neofusicoccum mediterraneum CBS121558 O europaea", 
+"^ot:ottId": 597598, 
+"^ot:ottTaxonName": "Neofusicoccum mediterraneum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 400557, 
 "@tb:identifier.taxonVariant": 537953
 }
 }, 
 "Tl2237130": {
-"^ot:altLabel": "Lasiodiplodia gonubiensis", 
 "^ot:originalLabel": "Lasiodiplodia gonubiensis CMW14077 Syz cordatum", 
+"^ot:ottId": 349527, 
+"^ot:ottTaxonName": "Lasiodiplodia gonubiensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 15338, 
 "@tb:identifier.taxonVariant": 36010, 
@@ -229,8 +334,9 @@
 "^ot:originalLabel": "Melanops indica CMW28377"
 }, 
 "Tl2237133": {
-"^ot:altLabel": "Sclerocarya birrea", 
 "^ot:originalLabel": "Sclerocarya birrea CMW25232", 
+"^ot:ottId": 456294, 
+"^ot:ottTaxonName": "Sclerocarya birrea", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 433217, 
 "@tb:identifier.taxonVariant": 570458, 
@@ -243,14 +349,17 @@
 }, 
 "Tl2237135": {
 "^ot:originalLabel": "Neofusicoccum mediterraneum CBS121718 Eucalyptus sp", 
+"^ot:ottId": 597598, 
+"^ot:ottTaxonName": "Neofusicoccum mediterraneum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 400557, 
 "@tb:identifier.taxonVariant": 537953
 }
 }, 
 "Tl2237136": {
-"^ot:altLabel": "Neofusicoccum parvum", 
 "^ot:originalLabel": "Neofusicoccum parvum CMW9081 Populus nigra", 
+"^ot:ottId": 648285, 
+"^ot:ottTaxonName": "Neofusicoccum parvum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 35331, 
 "@tb:identifier.taxonVariant": 81837, 
@@ -259,8 +368,9 @@
 }
 }, 
 "Tl2237137": {
-"^ot:altLabel": "Sclerocarya birrea", 
 "^ot:originalLabel": "Sclerocarya birrea MAR25328", 
+"^ot:ottId": 456294, 
+"^ot:ottTaxonName": "Sclerocarya birrea", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 433217, 
 "@tb:identifier.taxonVariant": 570458, 
@@ -269,14 +379,17 @@
 }
 }, 
 "Tl2237138": {
-"^ot:originalLabel": "Lasiodiplodia iraniensis CBS124711 Juglans sp"
+"^ot:originalLabel": "Lasiodiplodia iraniensis CBS124711 Juglans sp", 
+"^ot:ottId": 896723, 
+"^ot:ottTaxonName": "Lasiodiplodia iraniensis"
 }, 
 "Tl2237139": {
 "^ot:originalLabel": "Melanops indica CMW25198"
 }, 
 "Tl2237140": {
-"^ot:altLabel": "Sclerocarya birrea", 
 "^ot:originalLabel": "Sclerocarya birrea MAR28238", 
+"^ot:ottId": 456294, 
+"^ot:ottTaxonName": "Sclerocarya birrea", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 433217, 
 "@tb:identifier.taxonVariant": 570458, 
@@ -285,8 +398,9 @@
 }
 }, 
 "Tl2237141": {
-"^ot:altLabel": "Neofusicoccum australe", 
 "^ot:originalLabel": "Neofusicoccum australe CBS112877 V vinifera", 
+"^ot:ottId": 26868, 
+"^ot:ottTaxonName": "Neofusicoccum australe", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3786, 
 "@tb:identifier.taxonVariant": 104783, 
@@ -300,6 +414,8 @@
 }, 
 "Tl2237143": {
 "^ot:originalLabel": "Lasiodiplodia pseudotheobromae CBS44762 C aurantium", 
+"^ot:ottId": 854380, 
+"^ot:ottTaxonName": "Lasiodiplodia pseudotheobromae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 399985, 
 "@tb:identifier.taxonVariant": 537547
@@ -309,8 +425,9 @@
 "^ot:originalLabel": "Melanops indica CMW28517"
 }, 
 "Tl2237145": {
-"^ot:altLabel": "Sclerocarya birrea", 
 "^ot:originalLabel": "Sclerocarya birrea CMW24112", 
+"^ot:ottId": 456294, 
+"^ot:ottTaxonName": "Sclerocarya birrea", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 433217, 
 "@tb:identifier.taxonVariant": 570458, 
@@ -319,17 +436,24 @@
 }
 }, 
 "Tl2237146": {
-"^ot:originalLabel": "Botryosphaeria fabicerciana CMW27108 Eucalyptus sp"
+"^ot:originalLabel": "Botryosphaeria fabicerciana CMW27108 Eucalyptus sp", 
+"^ot:ottId": 22920, 
+"^ot:ottTaxonName": "Botryosphaeria fabicerciana"
 }, 
 "Tl2237147": {
-"^ot:originalLabel": "Neofusicoccum vitifusiforme CBS110887 V vinifera"
+"^ot:originalLabel": "Neofusicoccum vitifusiforme CBS110887 V vinifera", 
+"^ot:ottId": 1074384, 
+"^ot:ottTaxonName": "Neofusicoccum vitifusiforme"
 }, 
 "Tl2237148": {
-"^ot:originalLabel": "Pseudofusicoccum olivaceum CMW22637 Pt angolensis"
+"^ot:originalLabel": "Pseudofusicoccum olivaceum CMW22637 Pt angolensis", 
+"^ot:ottId": 8301, 
+"^ot:ottTaxonName": "Pseudofusicoccum olivaceum"
 }, 
 "Tl2237149": {
-"^ot:altLabel": "Sclerocarya birrea", 
 "^ot:originalLabel": "Sclerocarya birrea CMW24127", 
+"^ot:ottId": 456294, 
+"^ot:ottTaxonName": "Sclerocarya birrea", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 433217, 
 "@tb:identifier.taxonVariant": 570458, 
@@ -338,8 +462,9 @@
 }
 }, 
 "Tl2237150": {
-"^ot:altLabel": "Melanops tulasnei", 
 "^ot:originalLabel": "Melanops tulasnei CBS116806 Q robur", 
+"^ot:ottId": 518725, 
+"^ot:ottTaxonName": "Botryosphaeria quercuum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 427314, 
 "@tb:identifier.taxonVariant": 562443, 
@@ -352,14 +477,17 @@
 }, 
 "Tl2237152": {
 "^ot:originalLabel": "Neofusicoccum kwambonambiense CMW14123 Syz cordatum", 
+"^ot:ottId": 486290, 
+"^ot:ottTaxonName": "Neofusicoccum kwambonambiense", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 530771, 
 "@tb:identifier.taxonVariant": 704124
 }
 }, 
 "Tl2237153": {
-"^ot:altLabel": "Sclerocarya birrea", 
 "^ot:originalLabel": "Sclerocarya birrea MAR21022", 
+"^ot:ottId": 456294, 
+"^ot:ottTaxonName": "Sclerocarya birrea", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 433217, 
 "@tb:identifier.taxonVariant": 570458, 
@@ -372,6 +500,8 @@
 }, 
 "Tl2237155": {
 "^ot:originalLabel": "Neofusicoccum kwambonambiense CMW14023 Syz cordatum", 
+"^ot:ottId": 486290, 
+"^ot:ottTaxonName": "Neofusicoccum kwambonambiense", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 530771, 
 "@tb:identifier.taxonVariant": 704124
@@ -381,21 +511,26 @@
 "^ot:originalLabel": "Melanops indica CMW25199"
 }, 
 "Tl2237157": {
-"^ot:originalLabel": "Lasiodiplodia mahajangana CMW27820 T catappa"
+"^ot:originalLabel": "Lasiodiplodia mahajangana CMW27820 T catappa", 
+"^ot:ottId": 105065, 
+"^ot:ottTaxonName": "Lasiodiplodia mahajangana"
 }, 
 "Tl2237158": {
 "^ot:originalLabel": "Diplodia allocellula CMW36468 Ac karroo"
 }, 
 "Tl2237159": {
 "^ot:originalLabel": "Lasiodiplodia pseudotheobromae CBS116459 G arborea", 
+"^ot:ottId": 854380, 
+"^ot:ottTaxonName": "Lasiodiplodia pseudotheobromae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 399985, 
 "@tb:identifier.taxonVariant": 537547
 }
 }, 
 "Tl2237160": {
-"^ot:altLabel": "Sclerocarya birrea", 
 "^ot:originalLabel": "Sclerocarya birrea CMW24111", 
+"^ot:ottId": 456294, 
+"^ot:ottTaxonName": "Sclerocarya birrea", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 433217, 
 "@tb:identifier.taxonVariant": 570458, 
@@ -404,8 +539,9 @@
 }
 }, 
 "Tl2237161": {
-"^ot:altLabel": "Lasiodiplodia crassispora", 
 "^ot:originalLabel": "Lasiodiplodia crassispora CMW13488 E urophylla", 
+"^ot:ottId": 349526, 
+"^ot:ottTaxonName": "Lasiodiplodia crassispora", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 44776, 
 "@tb:identifier.taxonVariant": 104786, 
@@ -414,8 +550,9 @@
 }
 }, 
 "Tl2237162": {
-"^ot:altLabel": "Sclerocarya birrea", 
 "^ot:originalLabel": "Sclerocarya birrea CMW24083", 
+"^ot:ottId": 456294, 
+"^ot:ottTaxonName": "Sclerocarya birrea", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 433217, 
 "@tb:identifier.taxonVariant": 570458, 
@@ -424,8 +561,9 @@
 }
 }, 
 "Tl2237163": {
-"^ot:altLabel": "Lasiodiplodia gonubiensis", 
 "^ot:originalLabel": "Lasiodiplodia gonubiensis CMW14078 Syz cordatum", 
+"^ot:ottId": 349527, 
+"^ot:ottTaxonName": "Lasiodiplodia gonubiensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 15338, 
 "@tb:identifier.taxonVariant": 36010, 
@@ -434,8 +572,9 @@
 }
 }, 
 "Tl2237164": {
-"^ot:altLabel": "Sclerocarya birrea", 
 "^ot:originalLabel": "Sclerocarya birrea CMW24123", 
+"^ot:ottId": 456294, 
+"^ot:ottTaxonName": "Sclerocarya birrea", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 433217, 
 "@tb:identifier.taxonVariant": 570458, 
@@ -444,11 +583,14 @@
 }
 }, 
 "Tl2237165": {
-"^ot:originalLabel": "Pseudofusicoccum olivaceum CMW20881 Pt angolensis"
+"^ot:originalLabel": "Pseudofusicoccum olivaceum CMW20881 Pt angolensis", 
+"^ot:ottId": 8301, 
+"^ot:ottTaxonName": "Pseudofusicoccum olivaceum"
 }, 
 "Tl2237166": {
-"^ot:altLabel": "Sclerocarya birrea", 
 "^ot:originalLabel": "Sclerocarya birrea CMW24068", 
+"^ot:ottId": 456294, 
+"^ot:ottTaxonName": "Sclerocarya birrea", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 433217, 
 "@tb:identifier.taxonVariant": 570458, 
@@ -457,11 +599,14 @@
 }
 }, 
 "Tl2237167": {
-"^ot:originalLabel": "Lasiodiplodia iraniensis CBS124710 SaLasiodiplodia persica"
+"^ot:originalLabel": "Lasiodiplodia iraniensis CBS124710 SaLasiodiplodia persica", 
+"^ot:ottId": 896723, 
+"^ot:ottTaxonName": "Lasiodiplodia iraniensis"
 }, 
 "Tl2237168": {
-"^ot:altLabel": "Sclerocarya birrea", 
 "^ot:originalLabel": "Sclerocarya birrea MAR1212", 
+"^ot:ottId": 456294, 
+"^ot:ottTaxonName": "Sclerocarya birrea", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 433217, 
 "@tb:identifier.taxonVariant": 570458, 
@@ -470,8 +615,9 @@
 }
 }, 
 "Tl2237169": {
-"^ot:altLabel": "Sclerocarya birrea", 
 "^ot:originalLabel": "Sclerocarya birrea CMW24122", 
+"^ot:ottId": 456294, 
+"^ot:ottTaxonName": "Sclerocarya birrea", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 433217, 
 "@tb:identifier.taxonVariant": 570458, 
@@ -480,11 +626,14 @@
 }
 }, 
 "Tl2237170": {
-"^ot:originalLabel": "Neofusicoccum vitifusiforme CBS110880 V vinifera"
+"^ot:originalLabel": "Neofusicoccum vitifusiforme CBS110880 V vinifera", 
+"^ot:ottId": 1074384, 
+"^ot:ottTaxonName": "Neofusicoccum vitifusiforme"
 }, 
 "Tl2237171": {
-"^ot:altLabel": "Neofusicoccum parvum", 
 "^ot:originalLabel": "Neofusicoccum parvum CBS110301 V vinifera", 
+"^ot:ottId": 648285, 
+"^ot:ottTaxonName": "Neofusicoccum parvum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 35331, 
 "@tb:identifier.taxonVariant": 81837, 
@@ -494,14 +643,17 @@
 }, 
 "Tl2237172": {
 "^ot:originalLabel": "Neofusicoccum umdonicola CMW14058 Syz cordatum", 
+"^ot:ottId": 486306, 
+"^ot:ottTaxonName": "Neofusicoccum umdonicola", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 530772, 
 "@tb:identifier.taxonVariant": 704127
 }
 }, 
 "Tl2237173": {
-"^ot:altLabel": "Sclerocarya birrea", 
 "^ot:originalLabel": "Sclerocarya birrea CMW24077", 
+"^ot:ottId": 456294, 
+"^ot:ottTaxonName": "Sclerocarya birrea", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 433217, 
 "@tb:identifier.taxonVariant": 570458, 
@@ -521,14 +673,17 @@
 }, 
 "Tl2237175": {
 "^ot:originalLabel": "Neofusicoccum umdonicola CMW14106 Syz cordatum", 
+"^ot:ottId": 486306, 
+"^ot:ottTaxonName": "Neofusicoccum umdonicola", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 530772, 
 "@tb:identifier.taxonVariant": 704127
 }
 }, 
 "Tl2237176": {
-"^ot:altLabel": "Lasiodiplodia theobromae", 
 "^ot:originalLabel": "Lasiodiplodia theobromae CMW10130 Vtx donniana", 
+"^ot:ottId": 33894, 
+"^ot:ottTaxonName": "Lasiodiplodia theobromae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3800, 
 "@tb:identifier.taxonVariant": 36011, 
@@ -538,7 +693,9 @@
 "^skos:prefLabel": "Botryosphaeria rhodina"
 }, 
 "Tl2237177": {
-"^ot:originalLabel": "Lasiodiplodia mahajangana CMW27801 T catappa"
+"^ot:originalLabel": "Lasiodiplodia mahajangana CMW27801 T catappa", 
+"^ot:ottId": 105065, 
+"^ot:ottTaxonName": "Lasiodiplodia mahajangana"
 }, 
 "Tl2237340": {
 "^ot:originalLabel": "Melanops indica MAN22312b"
@@ -582,7 +739,9 @@
 "^ot:originalLabel": "Lasiodiplodia iraniensis CBS124710"
 }, 
 "Tl2237351": {
-"^ot:originalLabel": "Diplodia allocellula CMW36468"
+"^ot:originalLabel": "Diplodia allocellula CMW36468", 
+"^ot:ottId": 593709, 
+"^ot:ottTaxonName": "Diplodia allocellula"
 }, 
 "Tl2237352": {
 "^ot:originalLabel": "Melanops indica MAN210236b"
@@ -594,7 +753,9 @@
 "^ot:originalLabel": "Melanops indica CMW25199b"
 }, 
 "Tl2237355": {
-"^ot:originalLabel": "Diplodia allocellula CMW36469 A karroo"
+"^ot:originalLabel": "Diplodia allocellula CMW36469 A karroo", 
+"^ot:ottId": 593709, 
+"^ot:ottTaxonName": "Diplodia allocellula"
 }, 
 "Tl2237356": {
 "^ot:originalLabel": "Melanops indica MAN2132b"
@@ -606,8 +767,9 @@
 "^ot:originalLabel": "Melanops indica CMW28517b"
 }, 
 "Tl2237464": {
-"^ot:altLabel": "Lasiodiplodia crassispora", 
 "^ot:originalLabel": "Lasiodiplodia crassispora CMW14691 SaNeofusicoccum album", 
+"^ot:ottId": 349526, 
+"^ot:ottTaxonName": "Lasiodiplodia crassispora", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 44776, 
 "@tb:identifier.taxonVariant": 104786, 
@@ -616,8 +778,9 @@
 }
 }, 
 "Tl2237465": {
-"^ot:altLabel": "Lasiodiplodia crassispora", 
 "^ot:originalLabel": "Lasiodiplodia crassispora CMW14688 SaNeofusicoccum album", 
+"^ot:ottId": 349526, 
+"^ot:ottTaxonName": "Lasiodiplodia crassispora", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 44776, 
 "@tb:identifier.taxonVariant": 104786, 
@@ -629,8 +792,9 @@
 "^ot:originalLabel": "Melanops indica MAN210316b"
 }, 
 "Tl2237577": {
-"^ot:altLabel": "Sclerocarya birrea", 
 "^ot:originalLabel": "Sclerocarya birrea MAR2134", 
+"^ot:ottId": 456294, 
+"^ot:ottTaxonName": "Sclerocarya birrea", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 433217, 
 "@tb:identifier.taxonVariant": 570458, 
@@ -642,8 +806,9 @@
 "^ot:originalLabel": "Melanops indica MAN27316b"
 }, 
 "Tl2237579": {
-"^ot:altLabel": "Sclerocarya birrea", 
 "^ot:originalLabel": "Sclerocarya birrea MAR11328", 
+"^ot:ottId": 456294, 
+"^ot:ottTaxonName": "Sclerocarya birrea", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 433217, 
 "@tb:identifier.taxonVariant": 570458, 
@@ -665,1080 +830,28 @@
 "@label": "Parvum-ribis complex ITS_TEF_BT MP tree", 
 "@otus": "Tls50396", 
 "^ot:treeElementOrder": [
-"Tr95002", 
 "Tr106908", 
-"Tr106907", 
-"Tr94998", 
 "Tr95003", 
-"Tr94996", 
-"Tr95000", 
 "Tr95001", 
-"Tr94997", 
-"Tr94901", 
-"Tr94900", 
-"Tr94999"
+"Tr94997"
 ], 
 "^skos:historyNote": "Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlTreeBlockWriter@65418b9f $Rev$", 
 "treeById": {
-"Tr106907": {
-"@label": "nj", 
-"@xsi:type": "nex:FloatTree", 
-"^ot:rootNodeId": "Tn16771291", 
-"^tb:ntax.tree": 66, 
-"edgeBySourceId": {
-"Tn16771231": {
-"edge81483": {
-"@length": 3.7998395e-05, 
-"@source": "Tn16771231", 
-"@target": "Tn16771322"
-}, 
-"edge81489": {
-"@length": 0.00215303, 
-"@source": "Tn16771231", 
-"@target": "Tn16771282"
-}
-}, 
-"Tn16771234": {
-"edge81369": {
-"@length": 0.00163024, 
-"@source": "Tn16771234", 
-"@target": "Tn16771240"
-}, 
-"edge81371": {
-"@length": 0.00140118, 
-"@source": "Tn16771234", 
-"@target": "Tn16771356"
-}
-}, 
-"Tn16771237": {
-"edge81375": {
-"@length": -0.00072835, 
-"@source": "Tn16771237", 
-"@target": "Tn16771250"
-}, 
-"edge81377": {
-"@length": 0.00073068, 
-"@source": "Tn16771237", 
-"@target": "Tn16771316"
-}
-}, 
-"Tn16771242": {
-"edge81477": {
-"@length": 0.0, 
-"@source": "Tn16771242", 
-"@target": "Tn16771283"
-}, 
-"edge81479": {
-"@length": 0.0, 
-"@source": "Tn16771242", 
-"@target": "Tn16771309"
-}
-}, 
-"Tn16771244": {
-"edge81409": {
-"@length": 0.00127442, 
-"@source": "Tn16771244", 
-"@target": "Tn16771330"
-}, 
-"edge81415": {
-"@length": 0.00277107, 
-"@source": "Tn16771244", 
-"@target": "Tn16771288"
-}
-}, 
-"Tn16771245": {
-"edge81323": {
-"@length": 0.0, 
-"@source": "Tn16771245", 
-"@target": "Tn16771247"
-}, 
-"edge81325": {
-"@length": 0.0, 
-"@source": "Tn16771245", 
-"@target": "Tn16771269"
-}
-}, 
-"Tn16771248": {
-"edge81407": {
-"@length": 0.00562115, 
-"@source": "Tn16771248", 
-"@target": "Tn16771244"
-}, 
-"edge81429": {
-"@length": 0.00349102, 
-"@source": "Tn16771248", 
-"@target": "Tn16771354"
-}
-}, 
-"Tn16771249": {
-"edge81561": {
-"@length": 0.0, 
-"@source": "Tn16771249", 
-"@target": "Tn16771238"
-}, 
-"edge81563": {
-"@length": 0.0, 
-"@source": "Tn16771249", 
-"@target": "Tn16771268"
-}
-}, 
-"Tn16771251": {
-"edge81329": {
-"@length": 0.02054802, 
-"@source": "Tn16771251", 
-"@target": "Tn16771343"
-}, 
-"edge81351": {
-"@length": 0.006772, 
-"@source": "Tn16771251", 
-"@target": "Tn16771336"
-}
-}, 
-"Tn16771253": {
-"edge81347": {
-"@length": -0.00017496, 
-"@source": "Tn16771253", 
-"@target": "Tn16771281"
-}, 
-"edge81349": {
-"@length": 0.00017496, 
-"@source": "Tn16771253", 
-"@target": "Tn16771341"
-}
-}, 
-"Tn16771255": {
-"edge81497": {
-"@length": 0.00131072, 
-"@source": "Tn16771255", 
-"@target": "Tn16771345"
-}, 
-"edge81527": {
-"@length": 0.00096034, 
-"@source": "Tn16771255", 
-"@target": "Tn16771325"
-}
-}, 
-"Tn16771257": {
-"edge81425": {
-"@length": 0.0, 
-"@source": "Tn16771257", 
-"@target": "Tn16771295"
-}, 
-"edge81427": {
-"@length": 0.0, 
-"@source": "Tn16771257", 
-"@target": "Tn16771235"
-}
-}, 
-"Tn16771260": {
-"edge81421": {
-"@length": 0.0, 
-"@source": "Tn16771260", 
-"@target": "Tn16771233"
-}, 
-"edge81423": {
-"@length": 0.0, 
-"@source": "Tn16771260", 
-"@target": "Tn16771257"
-}
-}, 
-"Tn16771266": {
-"edge81319": {
-"@length": 0.0, 
-"@source": "Tn16771266", 
-"@target": "Tn16771310"
-}, 
-"edge81321": {
-"@length": 0.0, 
-"@source": "Tn16771266", 
-"@target": "Tn16771245"
-}
-}, 
-"Tn16771267": {
-"edge81503": {
-"@length": -5.7939829e-07, 
-"@source": "Tn16771267", 
-"@target": "Tn16771324"
-}, 
-"edge81505": {
-"@length": 3.4763897e-07, 
-"@source": "Tn16771267", 
-"@target": "Tn16771353"
-}
-}, 
-"Tn16771272": {
-"edge81355": {
-"@length": 0.00946034, 
-"@source": "Tn16771272", 
-"@target": "Tn16771339"
-}, 
-"edge81365": {
-"@length": 0.00408707, 
-"@source": "Tn16771272", 
-"@target": "Tn16771349"
-}
-}, 
-"Tn16771276": {
-"edge81519": {
-"@length": -1.0863718e-07, 
-"@source": "Tn16771276", 
-"@target": "Tn16771338"
-}, 
-"edge81521": {
-"@length": 1.0863718e-07, 
-"@source": "Tn16771276", 
-"@target": "Tn16771297"
-}
-}, 
-"Tn16771277": {
-"edge81387": {
-"@length": 0.0016369, 
-"@source": "Tn16771277", 
-"@target": "Tn16771294"
-}, 
-"edge81389": {
-"@length": 0.00037315, 
-"@source": "Tn16771277", 
-"@target": "Tn16771311"
-}
-}, 
-"Tn16771278": {
-"edge81511": {
-"@length": -2.1727436e-07, 
-"@source": "Tn16771278", 
-"@target": "Tn16771230"
-}, 
-"edge81513": {
-"@length": 1.4484957e-07, 
-"@source": "Tn16771278", 
-"@target": "Tn16771298"
-}
-}, 
-"Tn16771279": {
-"edge81455": {
-"@length": 0.00233975, 
-"@source": "Tn16771279", 
-"@target": "Tn16771351"
-}, 
-"edge81457": {
-"@length": 0.00197991, 
-"@source": "Tn16771279", 
-"@target": "Tn16771303"
-}
-}, 
-"Tn16771282": {
-"edge81491": {
-"@length": -9.5753872e-05, 
-"@source": "Tn16771282", 
-"@target": "Tn16771232"
-}, 
-"edge81493": {
-"@length": 9.5753872e-05, 
-"@source": "Tn16771282", 
-"@target": "Tn16771273"
-}
-}, 
-"Tn16771285": {
-"edge81307": {
-"@length": 0.00087445, 
-"@source": "Tn16771285", 
-"@target": "Tn16771308"
-}, 
-"edge81309": {
-"@length": 0.00104126, 
-"@source": "Tn16771285", 
-"@target": "Tn16771243"
-}
-}, 
-"Tn16771288": {
-"edge81417": {
-"@length": 0.0, 
-"@source": "Tn16771288", 
-"@target": "Tn16771256"
-}, 
-"edge81419": {
-"@length": 0.0, 
-"@source": "Tn16771288", 
-"@target": "Tn16771260"
-}
-}, 
-"Tn16771290": {
-"edge81439": {
-"@length": 0.0, 
-"@source": "Tn16771290", 
-"@target": "Tn16771292"
-}, 
-"edge81441": {
-"@length": 0.0, 
-"@source": "Tn16771290", 
-"@target": "Tn16771302"
-}
-}, 
-"Tn16771291": {
-"edge81305": {
-"@length": 0.04991494, 
-"@source": "Tn16771291", 
-"@target": "Tn16771285"
-}, 
-"edge81311": {
-"@length": 0.04991494, 
-"@source": "Tn16771291", 
-"@target": "Tn16771333"
-}
-}, 
-"Tn16771293": {
-"edge81361": {
-"@length": 0.0, 
-"@source": "Tn16771293", 
-"@target": "Tn16771274"
-}, 
-"edge81363": {
-"@length": 0.0, 
-"@source": "Tn16771293", 
-"@target": "Tn16771321"
-}
-}, 
-"Tn16771296": {
-"edge81543": {
-"@length": 0.0, 
-"@source": "Tn16771296", 
-"@target": "Tn16771262"
-}, 
-"edge81545": {
-"@length": 0.0, 
-"@source": "Tn16771296", 
-"@target": "Tn16771306"
-}
-}, 
-"Tn16771297": {
-"edge81523": {
-"@length": 0.00217402, 
-"@source": "Tn16771297", 
-"@target": "Tn16771350"
-}, 
-"edge81525": {
-"@length": -1.0863718e-07, 
-"@source": "Tn16771297", 
-"@target": "Tn16771289"
-}
-}, 
-"Tn16771298": {
-"edge81515": {
-"@length": -1.4484957e-07, 
-"@source": "Tn16771298", 
-"@target": "Tn16771342"
-}, 
-"edge81517": {
-"@length": 1.0863718e-07, 
-"@source": "Tn16771298", 
-"@target": "Tn16771276"
-}
-}, 
-"Tn16771299": {
-"edge81471": {
-"@length": 0.02808803, 
-"@source": "Tn16771299", 
-"@target": "Tn16771357"
-}, 
-"edge81481": {
-"@length": 0.00836917, 
-"@source": "Tn16771299", 
-"@target": "Tn16771231"
-}
-}, 
-"Tn16771300": {
-"edge81397": {
-"@length": -0.00097831, 
-"@source": "Tn16771300", 
-"@target": "Tn16771241"
-}, 
-"edge81399": {
-"@length": 0.00097831, 
-"@source": "Tn16771300", 
-"@target": "Tn16771326"
-}
-}, 
-"Tn16771301": {
-"edge81433": {
-"@length": 0.0, 
-"@source": "Tn16771301", 
-"@target": "Tn16771359"
-}, 
-"edge81435": {
-"@length": 0.0, 
-"@source": "Tn16771301", 
-"@target": "Tn16771346"
-}
-}, 
-"Tn16771302": {
-"edge81443": {
-"@length": 0.0, 
-"@source": "Tn16771302", 
-"@target": "Tn16771275"
-}, 
-"edge81445": {
-"@length": 0.0, 
-"@source": "Tn16771302", 
-"@target": "Tn16771352"
-}
-}, 
-"Tn16771303": {
-"edge81459": {
-"@length": 0.00034819, 
-"@source": "Tn16771303", 
-"@target": "Tn16771259"
-}, 
-"edge81461": {
-"@length": 0.00181163, 
-"@source": "Tn16771303", 
-"@target": "Tn16771323"
-}
-}, 
-"Tn16771306": {
-"edge81547": {
-"@length": 0.0, 
-"@source": "Tn16771306", 
-"@target": "Tn16771284"
-}, 
-"edge81549": {
-"@length": 0.0, 
-"@source": "Tn16771306", 
-"@target": "Tn16771313"
-}
-}, 
-"Tn16771307": {
-"edge81385": {
-"@length": 0.00042231, 
-"@source": "Tn16771307", 
-"@target": "Tn16771277"
-}, 
-"edge81395": {
-"@length": 0.00372651, 
-"@source": "Tn16771307", 
-"@target": "Tn16771300"
-}
-}, 
-"Tn16771311": {
-"edge81391": {
-"@length": 0.00759215, 
-"@source": "Tn16771311", 
-"@target": "Tn16771271"
-}, 
-"edge81393": {
-"@length": 0.00047552, 
-"@source": "Tn16771311", 
-"@target": "Tn16771335"
-}
-}, 
-"Tn16771312": {
-"edge81453": {
-"@length": 0.01512651, 
-"@source": "Tn16771312", 
-"@target": "Tn16771279"
-}, 
-"edge81467": {
-"@length": 0.00750642, 
-"@source": "Tn16771312", 
-"@target": "Tn16771360"
-}
-}, 
-"Tn16771316": {
-"edge81379": {
-"@length": 0.00155665, 
-"@source": "Tn16771316", 
-"@target": "Tn16771246"
-}, 
-"edge81381": {
-"@length": 0.00052669, 
-"@source": "Tn16771316", 
-"@target": "Tn16771347"
-}
-}, 
-"Tn16771318": {
-"edge81333": {
-"@length": 0.01183441, 
-"@source": "Tn16771318", 
-"@target": "Tn16771261"
-}, 
-"edge81335": {
-"@length": 0.01032225, 
-"@source": "Tn16771318", 
-"@target": "Tn16771320"
-}
-}, 
-"Tn16771322": {
-"edge81485": {
-"@length": 0.0, 
-"@source": "Tn16771322", 
-"@target": "Tn16771263"
-}, 
-"edge81487": {
-"@length": 0.0, 
-"@source": "Tn16771322", 
-"@target": "Tn16771314"
-}
-}, 
-"Tn16771323": {
-"edge81463": {
-"@length": 0.00035846, 
-"@source": "Tn16771323", 
-"@target": "Tn16771252"
-}, 
-"edge81465": {
-"@length": 0.00612102, 
-"@source": "Tn16771323", 
-"@target": "Tn16771319"
-}
-}, 
-"Tn16771325": {
-"edge81529": {
-"@length": 0.00203949, 
-"@source": "Tn16771325", 
-"@target": "Tn16771358"
-}, 
-"edge81539": {
-"@length": 0.00229204, 
-"@source": "Tn16771325", 
-"@target": "Tn16771348"
-}
-}, 
-"Tn16771326": {
-"edge81401": {
-"@length": 0.0, 
-"@source": "Tn16771326", 
-"@target": "Tn16771317"
-}, 
-"edge81403": {
-"@length": 0.0, 
-"@source": "Tn16771326", 
-"@target": "Tn16771286"
-}
-}, 
-"Tn16771327": {
-"edge81315": {
-"@length": -9.0813409e-05, 
-"@source": "Tn16771327", 
-"@target": "Tn16771344"
-}, 
-"edge81317": {
-"@length": 9.0813409e-05, 
-"@source": "Tn16771327", 
-"@target": "Tn16771266"
-}
-}, 
-"Tn16771329": {
-"edge81557": {
-"@length": 0.0, 
-"@source": "Tn16771329", 
-"@target": "Tn16771239"
-}, 
-"edge81559": {
-"@length": 0.0, 
-"@source": "Tn16771329", 
-"@target": "Tn16771249"
-}
-}, 
-"Tn16771330": {
-"edge81411": {
-"@length": -0.00015983, 
-"@source": "Tn16771330", 
-"@target": "Tn16771236"
-}, 
-"edge81413": {
-"@length": 0.00428704, 
-"@source": "Tn16771330", 
-"@target": "Tn16771270"
-}
-}, 
-"Tn16771331": {
-"edge81553": {
-"@length": 0.0, 
-"@source": "Tn16771331", 
-"@target": "Tn16771340"
-}, 
-"edge81555": {
-"@length": 0.0, 
-"@source": "Tn16771331", 
-"@target": "Tn16771329"
-}
-}, 
-"Tn16771332": {
-"edge81343": {
-"@length": -8.9013763e-05, 
-"@source": "Tn16771332", 
-"@target": "Tn16771337"
-}, 
-"edge81345": {
-"@length": 8.9013763e-05, 
-"@source": "Tn16771332", 
-"@target": "Tn16771253"
-}
-}, 
-"Tn16771333": {
-"edge81313": {
-"@length": 0.06863357, 
-"@source": "Tn16771333", 
-"@target": "Tn16771327"
-}, 
-"edge81327": {
-"@length": 0.01285726, 
-"@source": "Tn16771333", 
-"@target": "Tn16771251"
-}
-}, 
-"Tn16771334": {
-"edge81339": {
-"@length": 0.00051481, 
-"@source": "Tn16771334", 
-"@target": "Tn16771315"
-}, 
-"edge81341": {
-"@length": 0.00148519, 
-"@source": "Tn16771334", 
-"@target": "Tn16771332"
-}
-}, 
-"Tn16771336": {
-"edge81353": {
-"@length": 0.02586296, 
-"@source": "Tn16771336", 
-"@target": "Tn16771272"
-}, 
-"edge81451": {
-"@length": 0.03004829, 
-"@source": "Tn16771336", 
-"@target": "Tn16771312"
-}
-}, 
-"Tn16771339": {
-"edge81357": {
-"@length": 0.00139607, 
-"@source": "Tn16771339", 
-"@target": "Tn16771287"
-}, 
-"edge81359": {
-"@length": 0.000616, 
-"@source": "Tn16771339", 
-"@target": "Tn16771293"
-}
-}, 
-"Tn16771343": {
-"edge81331": {
-"@length": 0.00270639, 
-"@source": "Tn16771343", 
-"@target": "Tn16771318"
-}, 
-"edge81337": {
-"@length": 0.00365943, 
-"@source": "Tn16771343", 
-"@target": "Tn16771334"
-}
-}, 
-"Tn16771345": {
-"edge81499": {
-"@length": 9.1207195e-05, 
-"@source": "Tn16771345", 
-"@target": "Tn16771254"
-}, 
-"edge81501": {
-"@length": 0.0042761, 
-"@source": "Tn16771345", 
-"@target": "Tn16771267"
-}
-}, 
-"Tn16771348": {
-"edge81541": {
-"@length": 0.00026683, 
-"@source": "Tn16771348", 
-"@target": "Tn16771296"
-}, 
-"edge81551": {
-"@length": 0.00425271, 
-"@source": "Tn16771348", 
-"@target": "Tn16771331"
-}
-}, 
-"Tn16771349": {
-"edge81367": {
-"@length": 0.01049332, 
-"@source": "Tn16771349", 
-"@target": "Tn16771234"
-}, 
-"edge81405": {
-"@length": 0.00192699, 
-"@source": "Tn16771349", 
-"@target": "Tn16771248"
-}
-}, 
-"Tn16771352": {
-"edge81447": {
-"@length": 0.0, 
-"@source": "Tn16771352", 
-"@target": "Tn16771280"
-}, 
-"edge81449": {
-"@length": 0.0, 
-"@source": "Tn16771352", 
-"@target": "Tn16771328"
-}
-}, 
-"Tn16771353": {
-"edge81507": {
-"@length": -3.4763897e-07, 
-"@source": "Tn16771353", 
-"@target": "Tn16771264"
-}, 
-"edge81509": {
-"@length": 2.1727436e-07, 
-"@source": "Tn16771353", 
-"@target": "Tn16771278"
-}
-}, 
-"Tn16771354": {
-"edge81431": {
-"@length": 0.00316906, 
-"@source": "Tn16771354", 
-"@target": "Tn16771301"
-}, 
-"edge81437": {
-"@length": 0.00085509, 
-"@source": "Tn16771354", 
-"@target": "Tn16771290"
-}
-}, 
-"Tn16771355": {
-"edge81535": {
-"@length": 0.0, 
-"@source": "Tn16771355", 
-"@target": "Tn16771304"
-}, 
-"edge81537": {
-"@length": 0.0, 
-"@source": "Tn16771355", 
-"@target": "Tn16771258"
-}
-}, 
-"Tn16771356": {
-"edge81373": {
-"@length": 0.00315812, 
-"@source": "Tn16771356", 
-"@target": "Tn16771237"
-}, 
-"edge81383": {
-"@length": 0.00095584, 
-"@source": "Tn16771356", 
-"@target": "Tn16771307"
-}
-}, 
-"Tn16771357": {
-"edge81473": {
-"@length": 0.0, 
-"@source": "Tn16771357", 
-"@target": "Tn16771305"
-}, 
-"edge81475": {
-"@length": 0.0, 
-"@source": "Tn16771357", 
-"@target": "Tn16771242"
-}
-}, 
-"Tn16771358": {
-"edge81531": {
-"@length": 0.0, 
-"@source": "Tn16771358", 
-"@target": "Tn16771265"
-}, 
-"edge81533": {
-"@length": 0.0, 
-"@source": "Tn16771358", 
-"@target": "Tn16771355"
-}
-}, 
-"Tn16771360": {
-"edge81469": {
-"@length": 0.00194802, 
-"@source": "Tn16771360", 
-"@target": "Tn16771299"
-}, 
-"edge81495": {
-"@length": 0.00464411, 
-"@source": "Tn16771360", 
-"@target": "Tn16771255"
-}
-}
-}, 
-"nodeById": {
-"Tn16771230": {
-"@otu": "Tl2237159"
-}, 
-"Tn16771231": {}, 
-"Tn16771232": {
-"@otu": "Tl2237164"
-}, 
-"Tn16771233": {
-"@otu": "Tl2237162"
-}, 
-"Tn16771234": {}, 
-"Tn16771235": {
-"@otu": "Tl2237112"
-}, 
-"Tn16771236": {
-"@otu": "Tl2237129"
-}, 
-"Tn16771237": {}, 
-"Tn16771238": {
-"@otu": "Tl2237156"
-}, 
-"Tn16771239": {
-"@otu": "Tl2237168"
-}, 
-"Tn16771240": {
-"@otu": "Tl2237136"
-}, 
-"Tn16771241": {
-"@otu": "Tl2237131"
-}, 
-"Tn16771242": {}, 
-"Tn16771243": {
-"@otu": "Tl2237150"
-}, 
-"Tn16771244": {}, 
-"Tn16771245": {}, 
-"Tn16771246": {
-"@otu": "Tl2237155"
-}, 
-"Tn16771247": {
-"@otu": "Tl2237122"
-}, 
-"Tn16771248": {}, 
-"Tn16771249": {}, 
-"Tn16771250": {
-"@otu": "Tl2237139"
-}, 
-"Tn16771251": {}, 
-"Tn16771252": {
-"@otu": "Tl2237121"
-}, 
-"Tn16771253": {}, 
-"Tn16771254": {
-"@otu": "Tl2237176"
-}, 
-"Tn16771255": {}, 
-"Tn16771256": {
-"@otu": "Tl2237169"
-}, 
-"Tn16771257": {}, 
-"Tn16771258": {
-"@otu": "Tl2237134"
-}, 
-"Tn16771259": {
-"@otu": "Tl2237174"
-}, 
-"Tn16771260": {}, 
-"Tn16771261": {
-"@otu": "Tl2237154"
-}, 
-"Tn16771262": {
-"@otu": "Tl2237157"
-}, 
-"Tn16771263": {
-"@otu": "Tl2237130"
-}, 
-"Tn16771264": {
-"@otu": "Tl2237138"
-}, 
-"Tn16771265": {
-"@otu": "Tl2237123"
-}, 
-"Tn16771266": {}, 
-"Tn16771267": {}, 
-"Tn16771268": {
-"@otu": "Tl2237128"
-}, 
-"Tn16771269": {
-"@otu": "Tl2237142"
-}, 
-"Tn16771270": {
-"@otu": "Tl2237135"
-}, 
-"Tn16771271": {
-"@otu": "Tl2237132"
-}, 
-"Tn16771272": {}, 
-"Tn16771273": {
-"@otu": "Tl2237149"
-}, 
-"Tn16771274": {
-"@otu": "Tl2237116"
-}, 
-"Tn16771275": {
-"@otu": "Tl2237145"
-}, 
-"Tn16771276": {}, 
-"Tn16771277": {}, 
-"Tn16771278": {}, 
-"Tn16771279": {}, 
-"Tn16771280": {
-"@otu": "Tl2237166"
-}, 
-"Tn16771281": {
-"@otu": "Tl2237117"
-}, 
-"Tn16771282": {}, 
-"Tn16771283": {
-"@otu": "Tl2237158"
-}, 
-"Tn16771284": {
-"@otu": "Tl2237177"
-}, 
-"Tn16771285": {}, 
-"Tn16771286": {
-"@otu": "Tl2237175"
-}, 
-"Tn16771287": {
-"@otu": "Tl2237151"
-}, 
-"Tn16771288": {}, 
-"Tn16771289": {
-"@otu": "Tl2237133"
-}, 
-"Tn16771290": {}, 
-"Tn16771291": {
-"@root": true
-}, 
-"Tn16771292": {
-"@otu": "Tl2237114"
-}, 
-"Tn16771293": {}, 
-"Tn16771294": {
-"@otu": "Tl2237171"
-}, 
-"Tn16771295": {
-"@otu": "Tl2237119"
-}, 
-"Tn16771296": {}, 
-"Tn16771297": {}, 
-"Tn16771298": {}, 
-"Tn16771299": {}, 
-"Tn16771300": {}, 
-"Tn16771301": {}, 
-"Tn16771302": {}, 
-"Tn16771303": {}, 
-"Tn16771304": {
-"@otu": "Tl2237118"
-}, 
-"Tn16771305": {
-"@otu": "Tl2237115"
-}, 
-"Tn16771306": {}, 
-"Tn16771307": {}, 
-"Tn16771308": {
-"@otu": "Tl2237124"
-}, 
-"Tn16771309": {
-"@otu": "Tl2237125"
-}, 
-"Tn16771310": {
-"@otu": "Tl2237148"
-}, 
-"Tn16771311": {}, 
-"Tn16771312": {}, 
-"Tn16771313": {
-"@otu": "Tl2237126"
-}, 
-"Tn16771314": {
-"@otu": "Tl2237163"
-}, 
-"Tn16771315": {
-"@otu": "Tl2237127"
-}, 
-"Tn16771316": {}, 
-"Tn16771317": {
-"@otu": "Tl2237172"
-}, 
-"Tn16771318": {}, 
-"Tn16771319": {
-"@otu": "Tl2237160"
-}, 
-"Tn16771320": {
-"@otu": "Tl2237140"
-}, 
-"Tn16771321": {
-"@otu": "Tl2237141"
-}, 
-"Tn16771322": {}, 
-"Tn16771323": {}, 
-"Tn16771324": {
-"@otu": "Tl2237167"
-}, 
-"Tn16771325": {}, 
-"Tn16771326": {}, 
-"Tn16771327": {}, 
-"Tn16771328": {
-"@otu": "Tl2237173"
-}, 
-"Tn16771329": {}, 
-"Tn16771330": {}, 
-"Tn16771331": {}, 
-"Tn16771332": {}, 
-"Tn16771333": {}, 
-"Tn16771334": {}, 
-"Tn16771335": {
-"@otu": "Tl2237153"
-}, 
-"Tn16771336": {}, 
-"Tn16771337": {
-"@otu": "Tl2237146"
-}, 
-"Tn16771338": {
-"@otu": "Tl2237144"
-}, 
-"Tn16771339": {}, 
-"Tn16771340": {
-"@otu": "Tl2237137"
-}, 
-"Tn16771341": {
-"@otu": "Tl2237113"
-}, 
-"Tn16771342": {
-"@otu": "Tl2237143"
-}, 
-"Tn16771343": {}, 
-"Tn16771344": {
-"@otu": "Tl2237165"
-}, 
-"Tn16771345": {}, 
-"Tn16771346": {
-"@otu": "Tl2237147"
-}, 
-"Tn16771347": {
-"@otu": "Tl2237152"
-}, 
-"Tn16771348": {}, 
-"Tn16771349": {}, 
-"Tn16771350": {
-"@otu": "Tl2237120"
-}, 
-"Tn16771351": {
-"@otu": "Tl2237161"
-}, 
-"Tn16771352": {}, 
-"Tn16771353": {}, 
-"Tn16771354": {}, 
-"Tn16771355": {}, 
-"Tn16771356": {}, 
-"Tn16771357": {}, 
-"Tn16771358": {}, 
-"Tn16771359": {
-"@otu": "Tl2237170"
-}, 
-"Tn16771360": {}
-}
-}, 
 "Tr106908": {
 "@label": "nj", 
 "@xsi:type": "nex:FloatTree", 
-"^ot:rootNodeId": "Tn16771480", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:changesCount", 
+"^ot:curatedType": "Maximum likelihood ", 
+"^ot:inGroupClade": "Tn16771487", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
+"^ot:rootNodeId": "Tr106908_ROOT", 
+"^ot:specifiedRoot": "Tr106908_ROOT", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "^tb:ntax.tree": 66, 
 "edgeBySourceId": {
 "Tn16771361": {
@@ -1839,12 +952,12 @@
 }, 
 "Tn16771382": {
 "edge81236": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16771382", 
 "@target": "Tn16771370"
 }, 
 "edge81238": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16771382", 
 "@target": "Tn16771449"
 }
@@ -1911,12 +1024,12 @@
 }, 
 "Tn16771390": {
 "edge81070": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16771390", 
 "@target": "Tn16771448"
 }, 
 "edge81072": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16771390", 
 "@target": "Tn16771404"
 }
@@ -1935,12 +1048,12 @@
 }, 
 "Tn16771395": {
 "edge81272": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16771395", 
 "@target": "Tn16771376"
 }, 
 "edge81274": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16771395", 
 "@target": "Tn16771380"
 }
@@ -1995,12 +1108,12 @@
 }, 
 "Tn16771405": {
 "edge81248": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16771405", 
 "@target": "Tn16771365"
 }, 
 "edge81250": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16771405", 
 "@target": "Tn16771445"
 }
@@ -2175,12 +1288,12 @@
 }, 
 "Tn16771438": {
 "edge81158": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16771438", 
 "@target": "Tn16771392"
 }, 
 "edge81160": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16771438", 
 "@target": "Tn16771470"
 }
@@ -2355,24 +1468,24 @@
 }, 
 "Tn16771467": {
 "edge81096": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16771467", 
 "@target": "Tn16771400"
 }, 
 "edge81098": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16771467", 
 "@target": "Tn16771469"
 }
 }, 
 "Tn16771470": {
 "edge81162": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16771470", 
 "@target": "Tn16771369"
 }, 
 "edge81164": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16771470", 
 "@target": "Tn16771393"
 }
@@ -2450,11 +1563,6 @@
 }
 }, 
 "Tn16771480": {
-"edge81038": {
-"@length": 0.076973185, 
-"@source": "Tn16771480", 
-"@target": "Tn16771399"
-}, 
 "edge81044": {
 "@length": 0.076973185, 
 "@source": "Tn16771480", 
@@ -2520,6 +1628,17 @@
 "@source": "Tn16771488", 
 "@target": "Tn16771378"
 }
+}, 
+"Tr106908_ROOT": {
+"Tr106908_ROOT_EDGE": {
+"@source": "Tr106908_ROOT", 
+"@target": "Tn16771480"
+}, 
+"edge81038": {
+"@length": 0.076973185, 
+"@source": "Tr106908_ROOT", 
+"@target": "Tn16771399"
+}
 }
 }, 
 "nodeById": {
@@ -2528,11 +1647,13 @@
 "@otu": "Tl2237341"
 }, 
 "Tn16771363": {
-"@otu": "Tl2237464"
+"@otu": "Tl2237464", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn16771364": {}, 
 "Tn16771365": {
-"@otu": "Tl2237116"
+"@otu": "Tl2237116", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn16771366": {}, 
 "Tn16771367": {}, 
@@ -2540,18 +1661,22 @@
 "@otu": "Tl2237356"
 }, 
 "Tn16771369": {
-"@otu": "Tl2237177"
+"@otu": "Tl2237177", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn16771370": {
-"@otu": "Tl2237172"
+"@otu": "Tl2237172", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn16771371": {}, 
 "Tn16771372": {
-"@otu": "Tl2237170"
+"@otu": "Tl2237170", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn16771373": {}, 
 "Tn16771374": {
-"@otu": "Tl2237148"
+"@otu": "Tl2237148", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn16771375": {
 "@otu": "Tl2237145"
@@ -2564,7 +1689,8 @@
 }, 
 "Tn16771378": {}, 
 "Tn16771379": {
-"@otu": "Tl2237117"
+"@otu": "Tl2237117", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn16771380": {
 "@otu": "Tl2237169"
@@ -2577,18 +1703,22 @@
 "Tn16771386": {}, 
 "Tn16771387": {}, 
 "Tn16771388": {
-"@otu": "Tl2237143"
+"@otu": "Tl2237143", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn16771389": {
-"@otu": "Tl2237465"
+"@otu": "Tl2237465", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn16771390": {}, 
 "Tn16771391": {}, 
 "Tn16771392": {
-"@otu": "Tl2237157"
+"@otu": "Tl2237157", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn16771393": {
-"@otu": "Tl2237126"
+"@otu": "Tl2237126", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn16771394": {
 "@otu": "Tl2237340"
@@ -2596,14 +1726,16 @@
 "Tn16771395": {}, 
 "Tn16771396": {}, 
 "Tn16771397": {
-"@otu": "Tl2237118"
+"@otu": "Tl2237118", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn16771398": {
 "@otu": "Tl2237357"
 }, 
 "Tn16771399": {}, 
 "Tn16771400": {
-"@otu": "Tl2237130"
+"@otu": "Tl2237130", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn16771401": {
 "@otu": "Tl2237140"
@@ -2611,14 +1743,16 @@
 "Tn16771402": {}, 
 "Tn16771403": {}, 
 "Tn16771404": {
-"@otu": "Tl2237355"
+"@otu": "Tl2237355", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn16771405": {}, 
 "Tn16771406": {
 "@otu": "Tl2237354"
 }, 
 "Tn16771407": {
-"@otu": "Tl2237136"
+"@otu": "Tl2237136", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn16771408": {}, 
 "Tn16771409": {
@@ -2626,38 +1760,45 @@
 }, 
 "Tn16771410": {}, 
 "Tn16771411": {
-"@otu": "Tl2237171"
+"@otu": "Tl2237171", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn16771412": {
-"@otu": "Tl2237155"
+"@otu": "Tl2237155", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn16771413": {}, 
 "Tn16771414": {
 "@otu": "Tl2237168"
 }, 
 "Tn16771415": {
-"@otu": "Tl2237146"
+"@otu": "Tl2237146", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn16771416": {}, 
 "Tn16771417": {}, 
 "Tn16771418": {}, 
 "Tn16771419": {
-"@otu": "Tl2237147"
+"@otu": "Tl2237147", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn16771420": {
 "@otu": "Tl2237112"
 }, 
 "Tn16771421": {
-"@otu": "Tl2237124"
+"@otu": "Tl2237124", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn16771422": {
 "@otu": "Tl2237153"
 }, 
 "Tn16771423": {
-"@otu": "Tl2237159"
+"@otu": "Tl2237159", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn16771424": {
-"@otu": "Tl2237138"
+"@otu": "Tl2237138", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn16771425": {}, 
 "Tn16771426": {
@@ -2668,7 +1809,8 @@
 }, 
 "Tn16771428": {}, 
 "Tn16771429": {
-"@otu": "Tl2237152"
+"@otu": "Tl2237152", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn16771430": {}, 
 "Tn16771431": {}, 
@@ -2677,7 +1819,8 @@
 "Tn16771434": {}, 
 "Tn16771435": {}, 
 "Tn16771436": {
-"@otu": "Tl2237167"
+"@otu": "Tl2237167", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn16771437": {
 "@otu": "Tl2237166"
@@ -2685,7 +1828,8 @@
 "Tn16771438": {}, 
 "Tn16771439": {}, 
 "Tn16771440": {
-"@otu": "Tl2237150"
+"@otu": "Tl2237150", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn16771441": {
 "@otu": "Tl2237344"
@@ -2696,19 +1840,23 @@
 "Tn16771443": {}, 
 "Tn16771444": {}, 
 "Tn16771445": {
-"@otu": "Tl2237141"
+"@otu": "Tl2237141", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn16771446": {
 "@otu": "Tl2237164"
 }, 
 "Tn16771447": {
-"@otu": "Tl2237129"
+"@otu": "Tl2237129", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn16771448": {
-"@otu": "Tl2237351"
+"@otu": "Tl2237351", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn16771449": {
-"@otu": "Tl2237175"
+"@otu": "Tl2237175", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn16771450": {}, 
 "Tn16771451": {}, 
@@ -2719,10 +1867,12 @@
 "@otu": "Tl2237342"
 }, 
 "Tn16771454": {
-"@otu": "Tl2237161"
+"@otu": "Tl2237161", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn16771455": {
-"@otu": "Tl2237176"
+"@otu": "Tl2237176", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn16771456": {
 "@otu": "Tl2237358"
@@ -2744,7 +1894,8 @@
 "@otu": "Tl2237343"
 }, 
 "Tn16771469": {
-"@otu": "Tl2237163"
+"@otu": "Tl2237163", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn16771470": {}, 
 "Tn16771471": {}, 
@@ -2759,12 +1910,11 @@
 "Tn16771476": {}, 
 "Tn16771477": {}, 
 "Tn16771478": {
-"@otu": "Tl2237165"
+"@otu": "Tl2237165", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn16771479": {}, 
-"Tn16771480": {
-"@root": true
-}, 
+"Tn16771480": {}, 
 "Tn16771481": {
 "@otu": "Tl2237137"
 }, 
@@ -2786,2256 +1936,30 @@
 "@otu": "Tl2237345"
 }, 
 "Tn16771491": {
-"@otu": "Tl2237135"
-}
-}
+"@otu": "Tl2237135", 
+"^ot:isTaxonExemplar": false
 }, 
-"Tr94900": {
-"@label": "TEF ML tree", 
-"@xsi:type": "nex:FloatTree", 
-"^ot:rootNodeId": "Tn13924658", 
-"^tb:kind.tree": "Gene Tree", 
-"^tb:ntax.tree": 66, 
-"^tb:quality.tree": "Preferred Tree", 
-"^tb:type.tree": "Single", 
-"edgeBySourceId": {
-"Tn13924542": {
-"edge82279": {
-"@length": 0.0725022013, 
-"@source": "Tn13924542", 
-"@target": "Tn13924561"
-}, 
-"edge82381": {
-"@length": 0.1417088079, 
-"@source": "Tn13924542", 
-"@target": "Tn13924602"
-}
-}, 
-"Tn13924543": {
-"edge82175": {
-"@length": 1e-10, 
-"@source": "Tn13924543", 
-"@target": "Tn13924579"
-}, 
-"edge82177": {
-"@length": 5.096e-07, 
-"@source": "Tn13924543", 
-"@target": "Tn13924613"
-}
-}, 
-"Tn13924547": {
-"edge82221": {
-"@length": 4.517e-07, 
-"@source": "Tn13924547", 
-"@target": "Tn13924599"
-}, 
-"edge82239": {
-"@length": 0.0054096902, 
-"@source": "Tn13924547", 
-"@target": "Tn13924646"
-}
-}, 
-"Tn13924552": {
-"edge82159": {
-"@length": 0.0377313712, 
-"@source": "Tn13924552", 
-"@target": "Tn13924610"
-}, 
-"edge82217": {
-"@length": 0.0125643107, 
-"@source": "Tn13924552", 
-"@target": "Tn13924609"
-}
-}, 
-"Tn13924554": {
-"edge82305": {
-"@length": 1.3435e-06, 
-"@source": "Tn13924554", 
-"@target": "Tn13924585"
-}, 
-"edge82307": {
-"@length": 0.0115854742, 
-"@source": "Tn13924554", 
-"@target": "Tn13924617"
-}
-}, 
-"Tn13924555": {
-"edge82283": {
-"@length": 0.0506338032, 
-"@source": "Tn13924555", 
-"@target": "Tn13924664"
-}, 
-"edge82353": {
-"@length": 0.0549262656, 
-"@source": "Tn13924555", 
-"@target": "Tn13924573"
-}
-}, 
-"Tn13924556": {
-"edge82331": {
-"@length": 1e-10, 
-"@source": "Tn13924556", 
-"@target": "Tn13924603"
-}, 
-"edge82333": {
-"@length": 1e-10, 
-"@source": "Tn13924556", 
-"@target": "Tn13924661"
-}
-}, 
-"Tn13924561": {
-"edge82281": {
-"@length": 0.010332958, 
-"@source": "Tn13924561", 
-"@target": "Tn13924555"
-}, 
-"edge82367": {
-"@length": 0.0956521371, 
-"@source": "Tn13924561", 
-"@target": "Tn13924611"
-}
-}, 
-"Tn13924565": {
-"edge82195": {
-"@length": 1e-10, 
-"@source": "Tn13924565", 
-"@target": "Tn13924580"
-}, 
-"edge82197": {
-"@length": 1e-10, 
-"@source": "Tn13924565", 
-"@target": "Tn13924666"
-}
-}, 
-"Tn13924569": {
-"edge82327": {
-"@length": 1e-10, 
-"@source": "Tn13924569", 
-"@target": "Tn13924626"
-}, 
-"edge82329": {
-"@length": 1e-10, 
-"@source": "Tn13924569", 
-"@target": "Tn13924556"
-}
-}, 
-"Tn13924570": {
-"edge82163": {
-"@length": 0.0187447396, 
-"@source": "Tn13924570", 
-"@target": "Tn13924615"
-}, 
-"edge82185": {
-"@length": 1.1336e-06, 
-"@source": "Tn13924570", 
-"@target": "Tn13924593"
-}
-}, 
-"Tn13924571": {
-"edge82267": {
-"@length": 0.0042346966, 
-"@source": "Tn13924571", 
-"@target": "Tn13924562"
-}, 
-"edge82269": {
-"@length": 4.755e-07, 
-"@source": "Tn13924571", 
-"@target": "Tn13924597"
-}
-}, 
-"Tn13924572": {
-"edge82337": {
-"@length": 0.0038429105, 
-"@source": "Tn13924572", 
-"@target": "Tn13924604"
-}, 
-"edge82343": {
-"@length": 1e-10, 
-"@source": "Tn13924572", 
-"@target": "Tn13924574"
-}
-}, 
-"Tn13924573": {
-"edge82355": {
-"@length": 3.967e-07, 
-"@source": "Tn13924573", 
-"@target": "Tn13924582"
-}, 
-"edge82357": {
-"@length": 0.013667243, 
-"@source": "Tn13924573", 
-"@target": "Tn13924595"
-}
-}, 
-"Tn13924575": {
-"edge82287": {
-"@length": 0.0395523469, 
-"@source": "Tn13924575", 
-"@target": "Tn13924548"
-}, 
-"edge82289": {
-"@length": 0.0264534322, 
-"@source": "Tn13924575", 
-"@target": "Tn13924625"
-}
-}, 
-"Tn13924576": {
-"edge82401": {
-"@length": 1e-10, 
-"@source": "Tn13924576", 
-"@target": "Tn13924637"
-}, 
-"edge82403": {
-"@length": 1e-10, 
-"@source": "Tn13924576", 
-"@target": "Tn13924559"
-}
-}, 
-"Tn13924581": {
-"edge82225": {
-"@length": 3.247e-07, 
-"@source": "Tn13924581", 
-"@target": "Tn13924630"
-}, 
-"edge82231": {
-"@length": 1e-10, 
-"@source": "Tn13924581", 
-"@target": "Tn13924568"
-}
-}, 
-"Tn13924584": {
-"edge82313": {
-"@length": 0.0078775751, 
-"@source": "Tn13924584", 
-"@target": "Tn13924667"
-}, 
-"edge82335": {
-"@length": 0.063073657, 
-"@source": "Tn13924584", 
-"@target": "Tn13924572"
-}
-}, 
-"Tn13924586": {
-"edge82171": {
-"@length": 1e-10, 
-"@source": "Tn13924586", 
-"@target": "Tn13924567"
-}, 
-"edge82173": {
-"@length": 4.755e-07, 
-"@source": "Tn13924586", 
-"@target": "Tn13924543"
-}
-}, 
-"Tn13924593": {
-"edge82187": {
-"@length": 0.0087828049, 
-"@source": "Tn13924593", 
-"@target": "Tn13924622"
-}, 
-"edge82189": {
-"@length": 0.0233895545, 
-"@source": "Tn13924593", 
-"@target": "Tn13924649"
-}
-}, 
-"Tn13924595": {
-"edge82359": {
-"@length": 0.0138397483, 
-"@source": "Tn13924595", 
-"@target": "Tn13924641"
-}, 
-"edge82361": {
-"@length": 0.0089777787, 
-"@source": "Tn13924595", 
-"@target": "Tn13924632"
-}
-}, 
-"Tn13924597": {
-"edge82271": {
-"@length": 0.0042244149, 
-"@source": "Tn13924597", 
-"@target": "Tn13924654"
-}, 
-"edge82273": {
-"@length": 1e-10, 
-"@source": "Tn13924597", 
-"@target": "Tn13924660"
-}
-}, 
-"Tn13924599": {
-"edge82223": {
-"@length": 0.004466443, 
-"@source": "Tn13924599", 
-"@target": "Tn13924581"
-}, 
-"edge82233": {
-"@length": 3.675e-07, 
-"@source": "Tn13924599", 
-"@target": "Tn13924605"
-}
-}, 
-"Tn13924600": {
-"edge82397": {
-"@length": 1e-10, 
-"@source": "Tn13924600", 
-"@target": "Tn13924643"
-}, 
-"edge82399": {
-"@length": 4.38e-07, 
-"@source": "Tn13924600", 
-"@target": "Tn13924576"
-}
-}, 
-"Tn13924601": {
-"edge82257": {
-"@length": 0.0176348652, 
-"@source": "Tn13924601", 
-"@target": "Tn13924657"
-}, 
-"edge82263": {
-"@length": 1.129e-06, 
-"@source": "Tn13924601", 
-"@target": "Tn13924652"
-}
-}, 
-"Tn13924602": {
-"edge82383": {
-"@length": 1e-10, 
-"@source": "Tn13924602", 
-"@target": "Tn13924645"
-}, 
-"edge82385": {
-"@length": 5.439e-07, 
-"@source": "Tn13924602", 
-"@target": "Tn13924634"
-}
-}, 
-"Tn13924604": {
-"edge82339": {
-"@length": 0.0038409363, 
-"@source": "Tn13924604", 
-"@target": "Tn13924642"
-}, 
-"edge82341": {
-"@length": 1e-10, 
-"@source": "Tn13924604", 
-"@target": "Tn13924644"
-}
-}, 
-"Tn13924605": {
-"edge82235": {
-"@length": 0.0044653718, 
-"@source": "Tn13924605", 
-"@target": "Tn13924647"
-}, 
-"edge82237": {
-"@length": 1e-10, 
-"@source": "Tn13924605", 
-"@target": "Tn13924591"
-}
-}, 
-"Tn13924606": {
-"edge82193": {
-"@length": 0.0010471488, 
-"@source": "Tn13924606", 
-"@target": "Tn13924565"
-}, 
-"edge82199": {
-"@length": 0.0045012959, 
-"@source": "Tn13924606", 
-"@target": "Tn13924669"
-}
-}, 
-"Tn13924607": {
-"edge82167": {
-"@length": 1e-10, 
-"@source": "Tn13924607", 
-"@target": "Tn13924596"
-}, 
-"edge82169": {
-"@length": 4.185e-07, 
-"@source": "Tn13924607", 
-"@target": "Tn13924586"
-}
-}, 
-"Tn13924608": {
-"edge82393": {
-"@length": 1e-10, 
-"@source": "Tn13924608", 
-"@target": "Tn13924640"
-}, 
-"edge82395": {
-"@length": 2.844e-07, 
-"@source": "Tn13924608", 
-"@target": "Tn13924600"
-}
-}, 
-"Tn13924609": {
-"edge82219": {
-"@length": 0.004417958, 
-"@source": "Tn13924609", 
-"@target": "Tn13924547"
-}, 
-"edge82241": {
-"@length": 0.0083348773, 
-"@source": "Tn13924609", 
-"@target": "Tn13924616"
-}
-}, 
-"Tn13924610": {
-"edge82161": {
-"@length": 0.0058650472, 
-"@source": "Tn13924610", 
-"@target": "Tn13924570"
-}, 
-"edge82207": {
-"@length": 0.0480454779, 
-"@source": "Tn13924610", 
-"@target": "Tn13924662"
-}
-}, 
-"Tn13924611": {
-"edge82369": {
-"@length": 1e-10, 
-"@source": "Tn13924611", 
-"@target": "Tn13924631"
-}, 
-"edge82371": {
-"@length": 4.641e-07, 
-"@source": "Tn13924611", 
-"@target": "Tn13924648"
-}
-}, 
-"Tn13924612": {
-"edge82245": {
-"@length": 0.0042907932, 
-"@source": "Tn13924612", 
-"@target": "Tn13924566"
-}, 
-"edge82247": {
-"@length": 4.952e-07, 
-"@source": "Tn13924612", 
-"@target": "Tn13924653"
-}
-}, 
-"Tn13924613": {
-"edge82179": {
-"@length": 1e-10, 
-"@source": "Tn13924613", 
-"@target": "Tn13924588"
-}, 
-"edge82181": {
-"@length": 3.628e-07, 
-"@source": "Tn13924613", 
-"@target": "Tn13924620"
-}
-}, 
-"Tn13924615": {
-"edge82165": {
-"@length": 4.185e-07, 
-"@source": "Tn13924615", 
-"@target": "Tn13924607"
-}, 
-"edge82183": {
-"@length": 1e-10, 
-"@source": "Tn13924615", 
-"@target": "Tn13924577"
-}
-}, 
-"Tn13924616": {
-"edge82243": {
-"@length": 0.008481218, 
-"@source": "Tn13924616", 
-"@target": "Tn13924612"
-}, 
-"edge82249": {
-"@length": 0.0043107659, 
-"@source": "Tn13924616", 
-"@target": "Tn13924627"
-}
-}, 
-"Tn13924617": {
-"edge82309": {
-"@length": 0.0038758261, 
-"@source": "Tn13924617", 
-"@target": "Tn13924629"
-}, 
-"edge82347": {
-"@length": 0.0039431767, 
-"@source": "Tn13924617", 
-"@target": "Tn13924638"
-}
-}, 
-"Tn13924618": {
-"edge82321": {
-"@length": 0.0038552079, 
-"@source": "Tn13924618", 
-"@target": "Tn13924563"
-}, 
-"edge82323": {
-"@length": 4.121e-07, 
-"@source": "Tn13924618", 
-"@target": "Tn13924545"
-}
-}, 
-"Tn13924625": {
-"edge82291": {
-"@length": 0.0193955547, 
-"@source": "Tn13924625", 
-"@target": "Tn13924636"
-}, 
-"edge82297": {
-"@length": 0.0669256618, 
-"@source": "Tn13924625", 
-"@target": "Tn13924639"
-}
-}, 
-"Tn13924627": {
-"edge82251": {
-"@length": 1e-10, 
-"@source": "Tn13924627", 
-"@target": "Tn13924619"
-}, 
-"edge82253": {
-"@length": 1e-10, 
-"@source": "Tn13924627", 
-"@target": "Tn13924553"
-}
-}, 
-"Tn13924629": {
-"edge82311": {
-"@length": 0.0037212354, 
-"@source": "Tn13924629", 
-"@target": "Tn13924584"
-}, 
-"edge82345": {
-"@length": 0.0039655543, 
-"@source": "Tn13924629", 
-"@target": "Tn13924583"
-}
-}, 
-"Tn13924630": {
-"edge82227": {
-"@length": 4.971e-07, 
-"@source": "Tn13924630", 
-"@target": "Tn13924589"
-}, 
-"edge82229": {
-"@length": 1e-10, 
-"@source": "Tn13924630", 
-"@target": "Tn13924564"
-}
-}, 
-"Tn13924632": {
-"edge82363": {
-"@length": 1e-10, 
-"@source": "Tn13924632", 
-"@target": "Tn13924651"
-}, 
-"edge82365": {
-"@length": 1e-10, 
-"@source": "Tn13924632", 
-"@target": "Tn13924665"
-}
-}, 
-"Tn13924633": {
-"edge82155": {
-"@length": 0.1017998517, 
-"@source": "Tn13924633", 
-"@target": "Tn13924663"
-}, 
-"edge82277": {
-"@length": 0.2940324483, 
-"@source": "Tn13924633", 
-"@target": "Tn13924542"
-}
-}, 
-"Tn13924634": {
-"edge82387": {
-"@length": 1e-10, 
-"@source": "Tn13924634", 
-"@target": "Tn13924623"
-}, 
-"edge82389": {
-"@length": 1e-10, 
-"@source": "Tn13924634", 
-"@target": "Tn13924624"
-}
-}, 
-"Tn13924635": {
-"edge82319": {
-"@length": 0.0038578852, 
-"@source": "Tn13924635", 
-"@target": "Tn13924618"
-}, 
-"edge82325": {
-"@length": 0.0040200458, 
-"@source": "Tn13924635", 
-"@target": "Tn13924569"
-}
-}, 
-"Tn13924636": {
-"edge82293": {
-"@length": 4.919e-07, 
-"@source": "Tn13924636", 
-"@target": "Tn13924557"
-}, 
-"edge82295": {
-"@length": 1e-10, 
-"@source": "Tn13924636", 
-"@target": "Tn13924546"
-}
-}, 
-"Tn13924638": {
-"edge82349": {
-"@length": 1e-10, 
-"@source": "Tn13924638", 
-"@target": "Tn13924544"
-}, 
-"edge82351": {
-"@length": 0.0038643819, 
-"@source": "Tn13924638", 
-"@target": "Tn13924594"
-}
-}, 
-"Tn13924639": {
-"edge82299": {
-"@length": 1.5203e-06, 
-"@source": "Tn13924639", 
-"@target": "Tn13924614"
-}, 
-"edge82301": {
-"@length": 0.01256861, 
-"@source": "Tn13924639", 
-"@target": "Tn13924551"
-}
-}, 
-"Tn13924648": {
-"edge82373": {
-"@length": 1e-10, 
-"@source": "Tn13924648", 
-"@target": "Tn13924656"
-}, 
-"edge82375": {
-"@length": 0.0045916932, 
-"@source": "Tn13924648", 
-"@target": "Tn13924668"
-}
-}, 
-"Tn13924649": {
-"edge82191": {
-"@length": 0.0080733847, 
-"@source": "Tn13924649", 
-"@target": "Tn13924606"
-}, 
-"edge82205": {
-"@length": 5.196e-07, 
-"@source": "Tn13924649", 
-"@target": "Tn13924655"
-}
-}, 
-"Tn13924650": {
-"edge82153": {
-"@length": 0.2049051854, 
-"@source": "Tn13924650", 
-"@target": "Tn13924633"
-}, 
-"edge82391": {
-"@length": 0.1438520914, 
-"@source": "Tn13924650", 
-"@target": "Tn13924608"
-}
-}, 
-"Tn13924652": {
-"edge82265": {
-"@length": 3.634e-07, 
-"@source": "Tn13924652", 
-"@target": "Tn13924571"
-}, 
-"edge82275": {
-"@length": 0.0128277124, 
-"@source": "Tn13924652", 
-"@target": "Tn13924560"
-}
-}, 
-"Tn13924657": {
-"edge82259": {
-"@length": 0.0372041354, 
-"@source": "Tn13924657", 
-"@target": "Tn13924558"
-}, 
-"edge82261": {
-"@length": 0.0081445225, 
-"@source": "Tn13924657", 
-"@target": "Tn13924549"
-}
-}, 
-"Tn13924658": {
-"edge82151": {
-"@length": 0.8879377967, 
-"@source": "Tn13924658", 
-"@target": "Tn13924650"
-}, 
-"edge82405": {
-"@length": 1e-10, 
-"@source": "Tn13924658", 
-"@target": "Tn13924550"
-}, 
-"edge82407": {
-"@length": 1e-10, 
-"@source": "Tn13924658", 
-"@target": "Tn13924628"
-}
-}, 
-"Tn13924659": {
-"edge82213": {
-"@length": 1e-10, 
-"@source": "Tn13924659", 
-"@target": "Tn13924541"
-}, 
-"edge82215": {
-"@length": 1e-10, 
-"@source": "Tn13924659", 
-"@target": "Tn13924590"
-}
-}, 
-"Tn13924662": {
-"edge82209": {
-"@length": 5.63e-07, 
-"@source": "Tn13924662", 
-"@target": "Tn13924598"
-}, 
-"edge82211": {
-"@length": 0.0088634256, 
-"@source": "Tn13924662", 
-"@target": "Tn13924659"
-}
-}, 
-"Tn13924663": {
-"edge82157": {
-"@length": 0.0943020239, 
-"@source": "Tn13924663", 
-"@target": "Tn13924552"
-}, 
-"edge82255": {
-"@length": 0.1473550851, 
-"@source": "Tn13924663", 
-"@target": "Tn13924601"
-}
-}, 
-"Tn13924664": {
-"edge82285": {
-"@length": 0.0518469277, 
-"@source": "Tn13924664", 
-"@target": "Tn13924575"
-}, 
-"edge82303": {
-"@length": 0.0280401003, 
-"@source": "Tn13924664", 
-"@target": "Tn13924554"
-}
-}, 
-"Tn13924667": {
-"edge82315": {
-"@length": 0.016766316, 
-"@source": "Tn13924667", 
-"@target": "Tn13924587"
-}, 
-"edge82317": {
-"@length": 4.963e-07, 
-"@source": "Tn13924667", 
-"@target": "Tn13924635"
-}
-}, 
-"Tn13924668": {
-"edge82377": {
-"@length": 1e-10, 
-"@source": "Tn13924668", 
-"@target": "Tn13924578"
-}, 
-"edge82379": {
-"@length": 1e-10, 
-"@source": "Tn13924668", 
-"@target": "Tn13924592"
-}
-}, 
-"Tn13924669": {
-"edge82201": {
-"@length": 0.1163768109, 
-"@source": "Tn13924669", 
-"@target": "Tn13924621"
-}, 
-"edge82203": {
-"@length": 0.0002371562, 
-"@source": "Tn13924669", 
-"@target": "Tn13924540"
-}
-}
-}, 
-"nodeById": {
-"Tn13924540": {
-"@otu": "Tl2237129"
-}, 
-"Tn13924541": {
-"@otu": "Tl2237141"
-}, 
-"Tn13924542": {
-"@label": "0.995"
-}, 
-"Tn13924543": {}, 
-"Tn13924544": {
-"@label": "Lasiodiplodia theobromae CBS16496 Fruit coral reef coast", 
-"@otu": "Tl2237349"
-}, 
-"Tn13924545": {
-"@label": "CMW25202 M indica", 
-"@otu": "Tl2237342"
-}, 
-"Tn13924546": {
-"@label": "CMW25203 M indica", 
-"@otu": "Tl2237346"
-}, 
-"Tn13924547": {
-"@label": "0.75"
-}, 
-"Tn13924548": {
-"@label": "MAR25328 S birrea", 
-"@otu": "Tl2237137"
-}, 
-"Tn13924549": {
-"@label": "CMW25215 M indica", 
-"@otu": "Tl2237341"
-}, 
-"Tn13924550": {
-"@otu": "Tl2237150"
-}, 
-"Tn13924551": {
-"@otu": "Tl2237143"
-}, 
-"Tn13924552": {
-"@label": "0.921"
-}, 
-"Tn13924553": {
-"@otu": "Tl2237136"
-}, 
-"Tn13924554": {}, 
-"Tn13924555": {}, 
-"Tn13924556": {}, 
-"Tn13924557": {
-"@label": "CMW28517 M indica", 
-"@otu": "Tl2237358"
-}, 
-"Tn13924558": {
-"@label": "MAR28238 S birrea", 
-"@otu": "Tl2237140"
-}, 
-"Tn13924559": {
-"@otu": "Tl2237165"
-}, 
-"Tn13924560": {
-"@label": "MAN2132 M indica", 
-"@otu": "Tl2237356"
-}, 
-"Tn13924561": {}, 
-"Tn13924562": {
-"@label": "MAN25238 M indica", 
-"@otu": "Tl2237353"
-}, 
-"Tn13924563": {
-"@label": "CMW25199 M indica", 
-"@otu": "Tl2237354"
-}, 
-"Tn13924564": {
-"@otu": "Tl2237172"
-}, 
-"Tn13924565": {}, 
-"Tn13924566": {
-"@label": "MAR21022 S birrea", 
-"@otu": "Tl2237153"
-}, 
-"Tn13924567": {
-"@label": "CMW24077 S birrea", 
-"@otu": "Tl2237173"
-}, 
-"Tn13924568": {
-"@otu": "Tl2237175"
-}, 
-"Tn13924569": {}, 
-"Tn13924570": {}, 
-"Tn13924571": {}, 
-"Tn13924572": {
-"@label": "1.0"
-}, 
-"Tn13924573": {
-"@label": "0.964"
-}, 
-"Tn13924574": {
-"@otu": "Tl2237138"
-}, 
-"Tn13924575": {
-"@label": "0.953"
-}, 
-"Tn13924576": {}, 
-"Tn13924577": {
-"@label": "CMW24117 S birrea", 
-"@otu": "Tl2237114"
-}, 
-"Tn13924578": {
-"@otu": "Tl2237163"
-}, 
-"Tn13924579": {
-"@label": "CMW24068 S birrea", 
-"@otu": "Tl2237166"
-}, 
-"Tn13924580": {
-"@label": "CMW24122 S birrea", 
-"@otu": "Tl2237169"
-}, 
-"Tn13924581": {
-"@label": "0.903"
-}, 
-"Tn13924582": {
-"@label": "CMW24111 S birrea", 
-"@otu": "Tl2237160"
-}, 
-"Tn13924583": {
-"@label": "CMW25212 M indica", 
-"@otu": "Tl2237357"
-}, 
-"Tn13924584": {
-"@label": "0.74"
-}, 
-"Tn13924585": {
-"@label": "CMW24125 S birrea", 
-"@otu": "Tl2237123"
-}, 
-"Tn13924586": {}, 
-"Tn13924587": {
-"@label": "MAR1212 S birrea", 
-"@otu": "Tl2237168"
-}, 
-"Tn13924588": {
-"@otu": "Tl2237147"
-}, 
-"Tn13924589": {
-"@label": "MAN210236 M indica", 
-"@otu": "Tl2237352"
-}, 
-"Tn13924590": {
-"@otu": "Tl2237116"
-}, 
-"Tn13924591": {
-"@otu": "Tl2237155"
-}, 
-"Tn13924592": {
-"@otu": "Tl2237130"
-}, 
-"Tn13924593": {}, 
-"Tn13924594": {
-"@otu": "Tl2237176"
-}, 
-"Tn13924595": {}, 
-"Tn13924596": {
-"@label": "CMW24112 S birrea", 
-"@otu": "Tl2237145"
-}, 
-"Tn13924597": {}, 
-"Tn13924598": {
-"@label": "CMW25211 M indica", 
-"@otu": "Tl2237343"
-}, 
-"Tn13924599": {}, 
-"Tn13924600": {}, 
-"Tn13924601": {
-"@label": "0.986"
-}, 
-"Tn13924602": {
-"@label": "0.978"
-}, 
-"Tn13924603": {
-"@otu": "Tl2237126"
-}, 
-"Tn13924604": {}, 
-"Tn13924605": {}, 
-"Tn13924606": {}, 
-"Tn13924607": {}, 
-"Tn13924608": {
-"@label": "0.84"
-}, 
-"Tn13924609": {
-"@label": "0.705"
-}, 
-"Tn13924610": {
-"@label": "0.877"
-}, 
-"Tn13924611": {
-"@label": "0.98"
-}, 
-"Tn13924612": {}, 
-"Tn13924613": {}, 
-"Tn13924614": {
-"@otu": "Tl2237159"
-}, 
-"Tn13924615": {
-"@label": "0.966"
-}, 
-"Tn13924616": {
-"@label": "0.853"
-}, 
-"Tn13924617": {
-"@label": "0.787"
-}, 
-"Tn13924618": {}, 
-"Tn13924619": {
-"@otu": "Tl2237171"
-}, 
-"Tn13924620": {
-"@otu": "Tl2237170"
-}, 
-"Tn13924621": {
-"@label": "CMW24080 S birrea", 
-"@otu": "Tl2237112"
-}, 
-"Tn13924622": {
-"@label": "MAN21312 M indica", 
-"@otu": "Tl2237347"
-}, 
-"Tn13924623": {
-"@otu": "Tl2237355"
-}, 
-"Tn13924624": {
-"@label": "Diplodia allocellula CMW36468 A karroo", 
-"@otu": "Tl2237351"
-}, 
-"Tn13924625": {
-"@label": "0.786"
-}, 
-"Tn13924626": {
-"@otu": "Tl2237157"
-}, 
-"Tn13924627": {}, 
-"Tn13924628": {
-"@otu": "Tl2237124"
-}, 
-"Tn13924629": {}, 
-"Tn13924630": {}, 
-"Tn13924631": {
-"@label": "CMW24127 S birrea", 
-"@otu": "Tl2237149"
-}, 
-"Tn13924632": {}, 
-"Tn13924633": {
-"@label": "0.901"
-}, 
-"Tn13924634": {}, 
-"Tn13924635": {}, 
-"Tn13924636": {
-"@label": "0.834"
-}, 
-"Tn13924637": {
-"@otu": "Tl2237148"
-}, 
-"Tn13924638": {}, 
-"Tn13924639": {
-"@label": "0.993"
-}, 
-"Tn13924640": {
-"@label": "MAN22312 M indica", 
-"@otu": "Tl2237340"
-}, 
-"Tn13924641": {
-"@otu": "Tl2237174"
-}, 
-"Tn13924642": {
-"@label": "CMW25232 S birrea", 
-"@otu": "Tl2237133"
-}, 
-"Tn13924643": {
-"@label": "MAN22138 M indica", 
-"@otu": "Tl2237345"
-}, 
-"Tn13924644": {
-"@label": "Lasiodiplodia iraniensis CBS124710 Sal persica", 
-"@otu": "Tl2237350"
-}, 
-"Tn13924645": {
-"@label": "CMW24131 S birrea", 
-"@otu": "Tl2237115"
-}, 
-"Tn13924646": {
-"@label": "CMW25198 M indica", 
-"@otu": "Tl2237348"
-}, 
-"Tn13924647": {
-"@otu": "Tl2237152"
-}, 
-"Tn13924648": {}, 
-"Tn13924649": {}, 
-"Tn13924650": {
-"@label": "1.0"
-}, 
-"Tn13924651": {
-"@otu": "Tl2237121"
-}, 
-"Tn13924652": {}, 
-"Tn13924653": {
-"@label": "CMW28377 M indica", 
-"@otu": "Tl2237344"
-}, 
-"Tn13924654": {
-"@otu": "Tl2237146"
-}, 
-"Tn13924655": {
-"@otu": "Tl2237135"
-}, 
-"Tn13924656": {
-"@label": "CMW24123 S birrea", 
-"@otu": "Tl2237164"
-}, 
-"Tn13924657": {}, 
-"Tn13924658": {
+"Tr106908_ROOT": {
 "@root": true
-}, 
-"Tn13924659": {}, 
-"Tn13924660": {
-"@otu": "Tl2237117"
-}, 
-"Tn13924661": {
-"@otu": "Tl2237177"
-}, 
-"Tn13924662": {
-"@label": "0.996"
-}, 
-"Tn13924663": {
-"@label": "0.889"
-}, 
-"Tn13924664": {
-"@label": "0.928"
-}, 
-"Tn13924665": {
-"@otu": "Tl2237161"
-}, 
-"Tn13924666": {
-"@label": "CMW24083 S birrea", 
-"@otu": "Tl2237162"
-}, 
-"Tn13924667": {
-"@label": "0.815"
-}, 
-"Tn13924668": {}, 
-"Tn13924669": {}
-}
-}, 
-"Tr94901": {
-"@label": "TEF MP tree", 
-"@xsi:type": "nex:FloatTree", 
-"^ot:rootNodeId": "Tn13924723", 
-"^tb:kind.tree": "Gene Tree", 
-"^tb:ntax.tree": 66, 
-"^tb:quality.tree": "Alternative Tree", 
-"^tb:type.tree": "Single", 
-"edgeBySourceId": {
-"Tn13924671": {
-"edge81965": {
-"@length": 99.0, 
-"@source": "Tn13924671", 
-"@target": "Tn13924748"
-}, 
-"edge81975": {
-"@length": 87.0, 
-"@source": "Tn13924671", 
-"@target": "Tn13924763"
-}, 
-"edge81987": {
-"@length": 92.0, 
-"@source": "Tn13924671", 
-"@target": "Tn13924753"
-}, 
-"edge82001": {
-"@length": 100.0, 
-"@source": "Tn13924671", 
-"@target": "Tn13924677"
-}
-}, 
-"Tn13924673": {
-"edge82063": {
-"@length": 100.0, 
-"@source": "Tn13924673", 
-"@target": "Tn13924708"
-}, 
-"edge82065": {
-"@length": 100.0, 
-"@source": "Tn13924673", 
-"@target": "Tn13924689"
-}
-}, 
-"Tn13924674": {
-"edge82075": {
-"@length": 100.0, 
-"@source": "Tn13924674", 
-"@target": "Tn13924715"
-}, 
-"edge82085": {
-"@length": 55.0, 
-"@source": "Tn13924674", 
-"@target": "Tn13924767"
-}
-}, 
-"Tn13924680": {
-"edge81941": {
-"@length": 73.0, 
-"@source": "Tn13924680", 
-"@target": "Tn13924718"
-}, 
-"edge82125": {
-"@length": 100.0, 
-"@source": "Tn13924680", 
-"@target": "Tn13924729"
-}
-}, 
-"Tn13924683": {
-"edge82051": {
-"@length": 100.0, 
-"@source": "Tn13924683", 
-"@target": "Tn13924768"
-}, 
-"edge82053": {
-"@length": 100.0, 
-"@source": "Tn13924683", 
-"@target": "Tn13924675"
-}
-}, 
-"Tn13924685": {
-"edge82037": {
-"@length": 100.0, 
-"@source": "Tn13924685", 
-"@target": "Tn13924732"
-}, 
-"edge82039": {
-"@length": 100.0, 
-"@source": "Tn13924685", 
-"@target": "Tn13924712"
-}, 
-"edge82041": {
-"@length": 100.0, 
-"@source": "Tn13924685", 
-"@target": "Tn13924744"
-}
-}, 
-"Tn13924686": {
-"edge82049": {
-"@length": 88.0, 
-"@source": "Tn13924686", 
-"@target": "Tn13924683"
-}, 
-"edge82055": {
-"@length": 100.0, 
-"@source": "Tn13924686", 
-"@target": "Tn13924741"
-}
-}, 
-"Tn13924690": {
-"edge82079": {
-"@length": 100.0, 
-"@source": "Tn13924690", 
-"@target": "Tn13924670"
-}, 
-"edge82081": {
-"@length": 100.0, 
-"@source": "Tn13924690", 
-"@target": "Tn13924755"
-}
-}, 
-"Tn13924692": {
-"edge82007": {
-"@length": 100.0, 
-"@source": "Tn13924692", 
-"@target": "Tn13924737"
-}, 
-"edge82009": {
-"@length": 100.0, 
-"@source": "Tn13924692", 
-"@target": "Tn13924721"
-}, 
-"edge82011": {
-"@length": 100.0, 
-"@source": "Tn13924692", 
-"@target": "Tn13924727"
-}, 
-"edge82013": {
-"@length": 100.0, 
-"@source": "Tn13924692", 
-"@target": "Tn13924738"
-}, 
-"edge82015": {
-"@length": 100.0, 
-"@source": "Tn13924692", 
-"@target": "Tn13924765"
-}, 
-"edge82017": {
-"@length": 100.0, 
-"@source": "Tn13924692", 
-"@target": "Tn13924762"
-}
-}, 
-"Tn13924693": {
-"edge82021": {
-"@length": 69.0, 
-"@source": "Tn13924693", 
-"@target": "Tn13924746"
-}, 
-"edge82027": {
-"@length": 82.0, 
-"@source": "Tn13924693", 
-"@target": "Tn13924719"
-}
-}, 
-"Tn13924694": {
-"edge81969": {
-"@length": 100.0, 
-"@source": "Tn13924694", 
-"@target": "Tn13924757"
-}, 
-"edge81971": {
-"@length": 100.0, 
-"@source": "Tn13924694", 
-"@target": "Tn13924733"
-}
-}, 
-"Tn13924697": {
-"edge81947": {
-"@length": 100.0, 
-"@source": "Tn13924697", 
-"@target": "Tn13924734"
-}, 
-"edge81949": {
-"@length": 100.0, 
-"@source": "Tn13924697", 
-"@target": "Tn13924698"
-}, 
-"edge81951": {
-"@length": 88.0, 
-"@source": "Tn13924697", 
-"@target": "Tn13924722"
-}, 
-"edge81957": {
-"@length": 100.0, 
-"@source": "Tn13924697", 
-"@target": "Tn13924679"
-}, 
-"edge81959": {
-"@length": 100.0, 
-"@source": "Tn13924697", 
-"@target": "Tn13924720"
-}
-}, 
-"Tn13924700": {
-"edge82045": {
-"@length": 98.0, 
-"@source": "Tn13924700", 
-"@target": "Tn13924716"
-}, 
-"edge82059": {
-"@length": 100.0, 
-"@source": "Tn13924700", 
-"@target": "Tn13924764"
-}, 
-"edge82071": {
-"@length": 58.0, 
-"@source": "Tn13924700", 
-"@target": "Tn13924745"
-}
-}, 
-"Tn13924711": {
-"edge82113": {
-"@length": 100.0, 
-"@source": "Tn13924711", 
-"@target": "Tn13924701"
-}, 
-"edge82115": {
-"@length": 100.0, 
-"@source": "Tn13924711", 
-"@target": "Tn13924724"
-}
-}, 
-"Tn13924714": {
-"edge82121": {
-"@length": 100.0, 
-"@source": "Tn13924714", 
-"@target": "Tn13924705"
-}, 
-"edge82123": {
-"@length": 100.0, 
-"@source": "Tn13924714", 
-"@target": "Tn13924696"
-}
-}, 
-"Tn13924715": {
-"edge82077": {
-"@length": 63.0, 
-"@source": "Tn13924715", 
-"@target": "Tn13924690"
-}, 
-"edge82083": {
-"@length": 100.0, 
-"@source": "Tn13924715", 
-"@target": "Tn13924749"
-}
-}, 
-"Tn13924716": {
-"edge82047": {
-"@length": 77.0, 
-"@source": "Tn13924716", 
-"@target": "Tn13924686"
-}, 
-"edge82057": {
-"@length": 100.0, 
-"@source": "Tn13924716", 
-"@target": "Tn13924730"
-}
-}, 
-"Tn13924717": {
-"edge82091": {
-"@length": 100.0, 
-"@source": "Tn13924717", 
-"@target": "Tn13924704"
-}, 
-"edge82093": {
-"@length": 100.0, 
-"@source": "Tn13924717", 
-"@target": "Tn13924709"
-}, 
-"edge82095": {
-"@length": 100.0, 
-"@source": "Tn13924717", 
-"@target": "Tn13924771"
-}
-}, 
-"Tn13924718": {
-"edge81943": {
-"@length": 87.0, 
-"@source": "Tn13924718", 
-"@target": "Tn13924725"
-}, 
-"edge82033": {
-"@length": 100.0, 
-"@source": "Tn13924718", 
-"@target": "Tn13924770"
-}
-}, 
-"Tn13924719": {
-"edge82029": {
-"@length": 100.0, 
-"@source": "Tn13924719", 
-"@target": "Tn13924769"
-}, 
-"edge82031": {
-"@length": 100.0, 
-"@source": "Tn13924719", 
-"@target": "Tn13924760"
-}
-}, 
-"Tn13924722": {
-"edge81953": {
-"@length": 100.0, 
-"@source": "Tn13924722", 
-"@target": "Tn13924710"
-}, 
-"edge81955": {
-"@length": 100.0, 
-"@source": "Tn13924722", 
-"@target": "Tn13924752"
-}
-}, 
-"Tn13924723": {
-"edge81939": {
-"@length": 50.0, 
-"@source": "Tn13924723", 
-"@target": "Tn13924680"
-}, 
-"edge82135": {
-"@length": 50.0, 
-"@source": "Tn13924723", 
-"@target": "Tn13924754"
-}
-}, 
-"Tn13924725": {
-"edge81945": {
-"@length": 100.0, 
-"@source": "Tn13924725", 
-"@target": "Tn13924697"
-}, 
-"edge81961": {
-"@length": 95.0, 
-"@source": "Tn13924725", 
-"@target": "Tn13924756"
-}
-}, 
-"Tn13924729": {
-"edge82127": {
-"@length": 100.0, 
-"@source": "Tn13924729", 
-"@target": "Tn13924736"
-}, 
-"edge82129": {
-"@length": 100.0, 
-"@source": "Tn13924729", 
-"@target": "Tn13924703"
-}, 
-"edge82131": {
-"@length": 100.0, 
-"@source": "Tn13924729", 
-"@target": "Tn13924684"
-}, 
-"edge82133": {
-"@length": 100.0, 
-"@source": "Tn13924729", 
-"@target": "Tn13924688"
-}
-}, 
-"Tn13924742": {
-"edge82089": {
-"@length": 61.0, 
-"@source": "Tn13924742", 
-"@target": "Tn13924717"
-}, 
-"edge82097": {
-"@length": 100.0, 
-"@source": "Tn13924742", 
-"@target": "Tn13924751"
-}, 
-"edge82099": {
-"@length": 100.0, 
-"@source": "Tn13924742", 
-"@target": "Tn13924713"
-}, 
-"edge82101": {
-"@length": 100.0, 
-"@source": "Tn13924742", 
-"@target": "Tn13924726"
-}
-}, 
-"Tn13924745": {
-"edge82073": {
-"@length": 69.0, 
-"@source": "Tn13924745", 
-"@target": "Tn13924674"
-}, 
-"edge82111": {
-"@length": 99.0, 
-"@source": "Tn13924745", 
-"@target": "Tn13924711"
-}, 
-"edge82117": {
-"@length": 100.0, 
-"@source": "Tn13924745", 
-"@target": "Tn13924687"
-}, 
-"edge82119": {
-"@length": 95.0, 
-"@source": "Tn13924745", 
-"@target": "Tn13924714"
-}
-}, 
-"Tn13924746": {
-"edge82023": {
-"@length": 100.0, 
-"@source": "Tn13924746", 
-"@target": "Tn13924731"
-}, 
-"edge82025": {
-"@length": 100.0, 
-"@source": "Tn13924746", 
-"@target": "Tn13924702"
-}
-}, 
-"Tn13924748": {
-"edge81967": {
-"@length": 84.0, 
-"@source": "Tn13924748", 
-"@target": "Tn13924694"
-}, 
-"edge81973": {
-"@length": 100.0, 
-"@source": "Tn13924748", 
-"@target": "Tn13924678"
-}
-}, 
-"Tn13924750": {
-"edge82005": {
-"@length": 53.0, 
-"@source": "Tn13924750", 
-"@target": "Tn13924692"
-}, 
-"edge82019": {
-"@length": 78.0, 
-"@source": "Tn13924750", 
-"@target": "Tn13924693"
-}
-}, 
-"Tn13924753": {
-"edge81989": {
-"@length": 100.0, 
-"@source": "Tn13924753", 
-"@target": "Tn13924740"
-}, 
-"edge81991": {
-"@length": 100.0, 
-"@source": "Tn13924753", 
-"@target": "Tn13924707"
-}, 
-"edge81993": {
-"@length": 100.0, 
-"@source": "Tn13924753", 
-"@target": "Tn13924747"
-}, 
-"edge81995": {
-"@length": 100.0, 
-"@source": "Tn13924753", 
-"@target": "Tn13924761"
-}, 
-"edge81997": {
-"@length": 100.0, 
-"@source": "Tn13924753", 
-"@target": "Tn13924758"
-}, 
-"edge81999": {
-"@length": 100.0, 
-"@source": "Tn13924753", 
-"@target": "Tn13924681"
-}
-}, 
-"Tn13924754": {
-"edge82137": {
-"@length": 100.0, 
-"@source": "Tn13924754", 
-"@target": "Tn13924695"
-}, 
-"edge82139": {
-"@length": 100.0, 
-"@source": "Tn13924754", 
-"@target": "Tn13924691"
-}
-}, 
-"Tn13924756": {
-"edge81963": {
-"@length": 61.0, 
-"@source": "Tn13924756", 
-"@target": "Tn13924671"
-}, 
-"edge82003": {
-"@length": 75.0, 
-"@source": "Tn13924756", 
-"@target": "Tn13924750"
-}
-}, 
-"Tn13924763": {
-"edge81977": {
-"@length": 100.0, 
-"@source": "Tn13924763", 
-"@target": "Tn13924676"
-}, 
-"edge81979": {
-"@length": 100.0, 
-"@source": "Tn13924763", 
-"@target": "Tn13924766"
-}, 
-"edge81981": {
-"@length": 100.0, 
-"@source": "Tn13924763", 
-"@target": "Tn13924706"
-}, 
-"edge81983": {
-"@length": 100.0, 
-"@source": "Tn13924763", 
-"@target": "Tn13924735"
-}, 
-"edge81985": {
-"@length": 100.0, 
-"@source": "Tn13924763", 
-"@target": "Tn13924728"
-}
-}, 
-"Tn13924764": {
-"edge82061": {
-"@length": 63.0, 
-"@source": "Tn13924764", 
-"@target": "Tn13924673"
-}, 
-"edge82067": {
-"@length": 100.0, 
-"@source": "Tn13924764", 
-"@target": "Tn13924739"
-}, 
-"edge82069": {
-"@length": 100.0, 
-"@source": "Tn13924764", 
-"@target": "Tn13924682"
-}
-}, 
-"Tn13924767": {
-"edge82087": {
-"@length": 61.0, 
-"@source": "Tn13924767", 
-"@target": "Tn13924742"
-}, 
-"edge82103": {
-"@length": 100.0, 
-"@source": "Tn13924767", 
-"@target": "Tn13924743"
-}, 
-"edge82105": {
-"@length": 100.0, 
-"@source": "Tn13924767", 
-"@target": "Tn13924759"
-}, 
-"edge82107": {
-"@length": 100.0, 
-"@source": "Tn13924767", 
-"@target": "Tn13924699"
-}, 
-"edge82109": {
-"@length": 100.0, 
-"@source": "Tn13924767", 
-"@target": "Tn13924672"
-}
-}, 
-"Tn13924770": {
-"edge82035": {
-"@length": 100.0, 
-"@source": "Tn13924770", 
-"@target": "Tn13924685"
-}, 
-"edge82043": {
-"@length": 88.0, 
-"@source": "Tn13924770", 
-"@target": "Tn13924700"
-}
-}
-}, 
-"nodeById": {
-"Tn13924670": {
-"@label": "Lasiodiplodia iraniensis CBS124710 Sal persica", 
-"@otu": "Tl2237350"
-}, 
-"Tn13924671": {}, 
-"Tn13924672": {
-"@label": "CMW25212 M indica", 
-"@otu": "Tl2237357"
-}, 
-"Tn13924673": {}, 
-"Tn13924674": {}, 
-"Tn13924675": {
-"@otu": "Tl2237121"
-}, 
-"Tn13924676": {
-"@otu": "Tl2237129"
-}, 
-"Tn13924677": {
-"@label": "MAN21312 M indica", 
-"@otu": "Tl2237347"
-}, 
-"Tn13924678": {
-"@label": "CMW25211 M indica", 
-"@otu": "Tl2237343"
-}, 
-"Tn13924679": {
-"@label": "MAN2132 M indica", 
-"@otu": "Tl2237356"
-}, 
-"Tn13924680": {}, 
-"Tn13924681": {
-"@label": "CMW24117 S birrea", 
-"@otu": "Tl2237114"
-}, 
-"Tn13924682": {
-"@label": "CMW24127 S birrea", 
-"@otu": "Tl2237149"
-}, 
-"Tn13924683": {}, 
-"Tn13924684": {
-"@label": "MAN22138 M indica", 
-"@otu": "Tl2237345"
-}, 
-"Tn13924685": {
-"@label": "100.0"
-}, 
-"Tn13924686": {}, 
-"Tn13924687": {
-"@label": "MAR25328 S birrea", 
-"@otu": "Tl2237137"
-}, 
-"Tn13924688": {
-"@label": "MAN22312 M indica", 
-"@otu": "Tl2237340"
-}, 
-"Tn13924689": {
-"@otu": "Tl2237163"
-}, 
-"Tn13924690": {}, 
-"Tn13924691": {
-"@otu": "Tl2237150"
-}, 
-"Tn13924692": {}, 
-"Tn13924693": {
-"@label": "78.0"
-}, 
-"Tn13924694": {}, 
-"Tn13924695": {
-"@otu": "Tl2237124"
-}, 
-"Tn13924696": {
-"@label": "CMW28517 M indica", 
-"@otu": "Tl2237358"
-}, 
-"Tn13924697": {
-"@label": "100.0"
-}, 
-"Tn13924698": {
-"@otu": "Tl2237146"
-}, 
-"Tn13924699": {
-"@label": "CMW24125 S birrea", 
-"@otu": "Tl2237123"
-}, 
-"Tn13924700": {
-"@label": "88.0"
-}, 
-"Tn13924701": {
-"@otu": "Tl2237143"
-}, 
-"Tn13924702": {
-"@otu": "Tl2237171"
-}, 
-"Tn13924703": {
-"@otu": "Tl2237148"
-}, 
-"Tn13924704": {
-"@otu": "Tl2237177"
-}, 
-"Tn13924705": {
-"@label": "CMW25203 M indica", 
-"@otu": "Tl2237346"
-}, 
-"Tn13924706": {
-"@label": "CMW24080 S birrea", 
-"@otu": "Tl2237112"
-}, 
-"Tn13924707": {
-"@otu": "Tl2237147"
-}, 
-"Tn13924708": {
-"@otu": "Tl2237130"
-}, 
-"Tn13924709": {
-"@otu": "Tl2237126"
-}, 
-"Tn13924710": {
-"@label": "CMW25215 M indica", 
-"@otu": "Tl2237341"
-}, 
-"Tn13924711": {}, 
-"Tn13924712": {
-"@otu": "Tl2237355"
-}, 
-"Tn13924713": {
-"@label": "CMW25202 M indica", 
-"@otu": "Tl2237342"
-}, 
-"Tn13924714": {}, 
-"Tn13924715": {
-"@label": "100.0"
-}, 
-"Tn13924716": {
-"@label": "98.0"
-}, 
-"Tn13924717": {}, 
-"Tn13924718": {
-"@label": "73.0"
-}, 
-"Tn13924719": {}, 
-"Tn13924720": {
-"@label": "MAN25238 M indica", 
-"@otu": "Tl2237353"
-}, 
-"Tn13924721": {
-"@otu": "Tl2237152"
-}, 
-"Tn13924722": {}, 
-"Tn13924723": {
-"@root": true
-}, 
-"Tn13924724": {
-"@otu": "Tl2237159"
-}, 
-"Tn13924725": {
-"@label": "87.0"
-}, 
-"Tn13924726": {
-"@label": "MAR1212 S birrea", 
-"@otu": "Tl2237168"
-}, 
-"Tn13924727": {
-"@otu": "Tl2237172"
-}, 
-"Tn13924728": {
-"@label": "CMW24122 S birrea", 
-"@otu": "Tl2237169"
-}, 
-"Tn13924729": {
-"@label": "100.0"
-}, 
-"Tn13924730": {
-"@label": "CMW24111 S birrea", 
-"@otu": "Tl2237160"
-}, 
-"Tn13924731": {
-"@otu": "Tl2237136"
-}, 
-"Tn13924732": {
-"@label": "Diplodia allocellula CMW36468 A karroo", 
-"@otu": "Tl2237351"
-}, 
-"Tn13924733": {
-"@otu": "Tl2237141"
-}, 
-"Tn13924734": {
-"@otu": "Tl2237117"
-}, 
-"Tn13924735": {
-"@label": "CMW24083 S birrea", 
-"@otu": "Tl2237162"
-}, 
-"Tn13924736": {
-"@otu": "Tl2237165"
-}, 
-"Tn13924737": {
-"@otu": "Tl2237155"
-}, 
-"Tn13924738": {
-"@otu": "Tl2237175"
-}, 
-"Tn13924739": {
-"@label": "CMW24123 S birrea", 
-"@otu": "Tl2237164"
-}, 
-"Tn13924740": {
-"@otu": "Tl2237170"
-}, 
-"Tn13924741": {
-"@otu": "Tl2237174"
-}, 
-"Tn13924742": {}, 
-"Tn13924743": {
-"@otu": "Tl2237176"
-}, 
-"Tn13924744": {
-"@label": "CMW24131 S birrea", 
-"@otu": "Tl2237115"
-}, 
-"Tn13924745": {}, 
-"Tn13924746": {}, 
-"Tn13924747": {
-"@label": "CMW24068 S birrea", 
-"@otu": "Tl2237166"
-}, 
-"Tn13924748": {
-"@label": "99.0"
-}, 
-"Tn13924749": {
-"@otu": "Tl2237138"
-}, 
-"Tn13924750": {
-"@label": "75.0"
-}, 
-"Tn13924751": {
-"@label": "CMW25199 M indica", 
-"@otu": "Tl2237354"
-}, 
-"Tn13924752": {
-"@label": "MAR28238 S birrea", 
-"@otu": "Tl2237140"
-}, 
-"Tn13924753": {}, 
-"Tn13924754": {
-"@label": "100.0"
-}, 
-"Tn13924755": {
-"@label": "CMW25232 S birrea", 
-"@otu": "Tl2237133"
-}, 
-"Tn13924756": {
-"@label": "95.0"
-}, 
-"Tn13924757": {
-"@otu": "Tl2237116"
-}, 
-"Tn13924758": {
-"@label": "CMW24112 S birrea", 
-"@otu": "Tl2237145"
-}, 
-"Tn13924759": {
-"@label": "Lasiodiplodia theobromae CBS16496 Fruit coral reef coast", 
-"@otu": "Tl2237349"
-}, 
-"Tn13924760": {
-"@label": "MAR21022 S birrea", 
-"@otu": "Tl2237153"
-}, 
-"Tn13924761": {
-"@label": "CMW24077 S birrea", 
-"@otu": "Tl2237173"
-}, 
-"Tn13924762": {
-"@label": "MAN210236 M indica", 
-"@otu": "Tl2237352"
-}, 
-"Tn13924763": {
-"@label": "87.0"
-}, 
-"Tn13924764": {
-"@label": "100.0"
-}, 
-"Tn13924765": {
-"@label": "CMW25198 M indica", 
-"@otu": "Tl2237348"
-}, 
-"Tn13924766": {
-"@otu": "Tl2237135"
-}, 
-"Tn13924767": {}, 
-"Tn13924768": {
-"@otu": "Tl2237161"
-}, 
-"Tn13924769": {
-"@label": "CMW28377 M indica", 
-"@otu": "Tl2237344"
-}, 
-"Tn13924770": {
-"@label": "100.0"
-}, 
-"Tn13924771": {
-"@otu": "Tl2237157"
-}
-}
-}, 
-"Tr94996": {
-"@label": "Parvum-ribis complex BT MP tree", 
-"@xsi:type": "nex:FloatTree", 
-"^ot:rootNodeId": "Tn13932571", 
-"^tb:kind.tree": "Gene Tree", 
-"^tb:ntax.tree": 16, 
-"^tb:quality.tree": "Alternative Tree", 
-"^tb:type.tree": "Single", 
-"edgeBySourceId": {
-"Tn13932566": {
-"edge81695": {
-"@length": 71.0, 
-"@source": "Tn13932566", 
-"@target": "Tn13932585"
-}, 
-"edge81721": {
-"@length": 70.0, 
-"@source": "Tn13932566", 
-"@target": "Tn13932587"
-}
-}, 
-"Tn13932569": {
-"edge81699": {
-"@length": 100.0, 
-"@source": "Tn13932569", 
-"@target": "Tn13932577"
-}, 
-"edge81701": {
-"@length": 100.0, 
-"@source": "Tn13932569", 
-"@target": "Tn13932575"
-}, 
-"edge81703": {
-"@length": 100.0, 
-"@source": "Tn13932569", 
-"@target": "Tn13932574"
-}, 
-"edge81705": {
-"@length": 100.0, 
-"@source": "Tn13932569", 
-"@target": "Tn13932582"
-}, 
-"edge81707": {
-"@length": 100.0, 
-"@source": "Tn13932569", 
-"@target": "Tn13932581"
-}, 
-"edge81709": {
-"@length": 100.0, 
-"@source": "Tn13932569", 
-"@target": "Tn13932580"
-}
-}, 
-"Tn13932570": {
-"edge81713": {
-"@length": 100.0, 
-"@source": "Tn13932570", 
-"@target": "Tn13932572"
-}, 
-"edge81715": {
-"@length": 100.0, 
-"@source": "Tn13932570", 
-"@target": "Tn13932579"
-}, 
-"edge81717": {
-"@length": 100.0, 
-"@source": "Tn13932570", 
-"@target": "Tn13932568"
-}, 
-"edge81719": {
-"@length": 100.0, 
-"@source": "Tn13932570", 
-"@target": "Tn13932578"
-}
-}, 
-"Tn13932571": {
-"edge81693": {
-"@length": 32.5, 
-"@source": "Tn13932571", 
-"@target": "Tn13932566"
-}, 
-"edge81729": {
-"@length": 32.5, 
-"@source": "Tn13932571", 
-"@target": "Tn13932586"
-}
-}, 
-"Tn13932585": {
-"edge81697": {
-"@length": 98.0, 
-"@source": "Tn13932585", 
-"@target": "Tn13932569"
-}, 
-"edge81711": {
-"@length": 70.0, 
-"@source": "Tn13932585", 
-"@target": "Tn13932570"
-}
-}, 
-"Tn13932586": {
-"edge81731": {
-"@length": 100.0, 
-"@source": "Tn13932586", 
-"@target": "Tn13932567"
-}, 
-"edge81733": {
-"@length": 100.0, 
-"@source": "Tn13932586", 
-"@target": "Tn13932583"
-}, 
-"edge81735": {
-"@length": 100.0, 
-"@source": "Tn13932586", 
-"@target": "Tn13932576"
-}
-}, 
-"Tn13932587": {
-"edge81723": {
-"@length": 100.0, 
-"@source": "Tn13932587", 
-"@target": "Tn13932584"
-}, 
-"edge81725": {
-"@length": 100.0, 
-"@source": "Tn13932587", 
-"@target": "Tn13932573"
-}, 
-"edge81727": {
-"@length": 100.0, 
-"@source": "Tn13932587", 
-"@target": "Tn13932565"
-}
-}
-}, 
-"nodeById": {
-"Tn13932565": {
-"@label": "MAR11328 S birrea", 
-"@otu": "Tl2237579"
-}, 
-"Tn13932566": {}, 
-"Tn13932567": {
-"@otu": "Tl2237172"
-}, 
-"Tn13932568": {
-"@label": "MAR21022 S birrea", 
-"@otu": "Tl2237153"
-}, 
-"Tn13932569": {
-"@label": "98.0"
-}, 
-"Tn13932570": {
-"@label": "70.0"
-}, 
-"Tn13932571": {
-"@root": true
-}, 
-"Tn13932572": {
-"@label": "CMW25214 M indica", 
-"@otu": "Tl2237581"
-}, 
-"Tn13932573": {
-"@otu": "Tl2237171"
-}, 
-"Tn13932574": {
-"@label": "CMW25198 M indica", 
-"@otu": "Tl2237348"
-}, 
-"Tn13932575": {
-"@otu": "Tl2237152"
-}, 
-"Tn13932576": {
-"@label": "MAN210236 M indica", 
-"@otu": "Tl2237352"
-}, 
-"Tn13932577": {
-"@otu": "Tl2237155"
-}, 
-"Tn13932578": {
-"@label": "MAR2134 S birrea", 
-"@otu": "Tl2237577"
-}, 
-"Tn13932579": {
-"@label": "CMW28377 M indica", 
-"@otu": "Tl2237344"
-}, 
-"Tn13932580": {
-"@label": "MAN27316 M indica", 
-"@otu": "Tl2237578"
-}, 
-"Tn13932581": {
-"@label": "MAN210316 M indica", 
-"@otu": "Tl2237576"
-}, 
-"Tn13932582": {
-"@label": "CMW28412 M indica", 
-"@otu": "Tl2237580"
-}, 
-"Tn13932583": {
-"@otu": "Tl2237175"
-}, 
-"Tn13932584": {
-"@otu": "Tl2237136"
-}, 
-"Tn13932585": {
-"@label": "71.0"
-}, 
-"Tn13932586": {}, 
-"Tn13932587": {
-"@label": "70.0"
 }
 }
 }, 
 "Tr94997": {
 "@label": "Parvum-ribis complex BT ML tree", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:changesCount", 
+"^ot:curatedType": "Bayesian inference ", 
+"^ot:inGroupClade": "Tn13932607", 
+"^ot:nodeLabelDescription": "", 
+"^ot:nodeLabelMode": "ot:bootstrapValues", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn13932607", 
+"^ot:specifiedRoot": "Tn13932607", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "^tb:kind.tree": "Gene Tree", 
 "^tb:ntax.tree": 16, 
 "^tb:quality.tree": "Preferred Tree", 
@@ -5146,7 +2070,8 @@
 "edge81919": {
 "@length": 0.0014553341, 
 "@source": "Tn13932607", 
-"@target": "Tn13932595"
+"@target": "Tn13932595", 
+"^ot:bootstrapValues": 78.10000000000001
 }
 }, 
 "Tn13932608": {
@@ -5201,7 +2126,8 @@
 "edge81871": {
 "@length": 0.0043013307, 
 "@source": "Tn13932617", 
-"@target": "Tn13932599"
+"@target": "Tn13932599", 
+"^ot:bootstrapValues": 82.8
 }, 
 "edge81881": {
 "@length": 0.0049163775, 
@@ -5213,12 +2139,14 @@
 "edge81883": {
 "@length": 0.0094101678, 
 "@source": "Tn13932618", 
-"@target": "Tn13932603"
+"@target": "Tn13932603", 
+"^ot:bootstrapValues": 93.4
 }, 
 "edge81905": {
 "@length": 0.0029012274, 
 "@source": "Tn13932618", 
-"@target": "Tn13932608"
+"@target": "Tn13932608", 
+"^ot:bootstrapValues": 75.7
 }
 }
 }, 
@@ -5235,7 +2163,8 @@
 "@otu": "Tl2237152"
 }, 
 "Tn13932592": {
-"@otu": "Tl2237175"
+"@otu": "Tl2237175", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn13932593": {
 "@label": "MAR11328 S birrea", 
@@ -5245,9 +2174,7 @@
 "@label": "MAN27316 M indica", 
 "@otu": "Tl2237578"
 }, 
-"Tn13932595": {
-"@label": "0.781"
-}, 
+"Tn13932595": {}, 
 "Tn13932596": {
 "@label": "CMW28377 M indica", 
 "@otu": "Tl2237344"
@@ -5257,20 +2184,18 @@
 "@label": "MAR21022 S birrea", 
 "@otu": "Tl2237153"
 }, 
-"Tn13932599": {
-"@label": "0.828"
-}, 
+"Tn13932599": {}, 
 "Tn13932600": {}, 
 "Tn13932601": {
-"@otu": "Tl2237171"
+"@otu": "Tl2237171", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn13932602": {}, 
-"Tn13932603": {
-"@label": "0.934"
-}, 
+"Tn13932603": {}, 
 "Tn13932604": {}, 
 "Tn13932605": {
-"@otu": "Tl2237172"
+"@otu": "Tl2237172", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn13932606": {
 "@label": "MAR2134 S birrea", 
@@ -5279,15 +2204,14 @@
 "Tn13932607": {
 "@root": true
 }, 
-"Tn13932608": {
-"@label": "0.757"
-}, 
+"Tn13932608": {}, 
 "Tn13932609": {
 "@label": "CMW25198 M indica", 
 "@otu": "Tl2237348"
 }, 
 "Tn13932610": {
-"@otu": "Tl2237136"
+"@otu": "Tl2237136", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn13932611": {}, 
 "Tn13932612": {}, 
@@ -5308,676 +2232,22 @@
 "Tn13932618": {}
 }
 }, 
-"Tr94998": {
-"@label": "Parvum-ribis complex ITS MP tree", 
-"@xsi:type": "nex:FloatTree", 
-"^ot:rootNodeId": "Tn13932625", 
-"^tb:kind.tree": "Gene Tree", 
-"^tb:ntax.tree": 16, 
-"^tb:quality.tree": "Alternative Tree", 
-"^tb:type.tree": "Single", 
-"edgeBySourceId": {
-"Tn13932622": {
-"edge81579": {
-"@length": 100.0, 
-"@source": "Tn13932622", 
-"@target": "Tn13932631"
-}, 
-"edge81581": {
-"@length": 100.0, 
-"@source": "Tn13932622", 
-"@target": "Tn13932627"
-}, 
-"edge81583": {
-"@length": 100.0, 
-"@source": "Tn13932622", 
-"@target": "Tn13932636"
-}, 
-"edge81585": {
-"@length": 100.0, 
-"@source": "Tn13932622", 
-"@target": "Tn13932637"
-}, 
-"edge81587": {
-"@length": 100.0, 
-"@source": "Tn13932622", 
-"@target": "Tn13932619"
-}, 
-"edge81589": {
-"@length": 100.0, 
-"@source": "Tn13932622", 
-"@target": "Tn13932628"
-}
-}, 
-"Tn13932623": {
-"edge81577": {
-"@length": 93.0, 
-"@source": "Tn13932623", 
-"@target": "Tn13932622"
-}, 
-"edge81591": {
-"@length": 70.0, 
-"@source": "Tn13932623", 
-"@target": "Tn13932632"
-}
-}, 
-"Tn13932625": {
-"edge81575": {
-"@length": 35.5, 
-"@source": "Tn13932625", 
-"@target": "Tn13932623"
-}, 
-"edge81607": {
-"@length": 35.5, 
-"@source": "Tn13932625", 
-"@target": "Tn13932634"
-}
-}, 
-"Tn13932632": {
-"edge81593": {
-"@length": 100.0, 
-"@source": "Tn13932632", 
-"@target": "Tn13932638"
-}, 
-"edge81595": {
-"@length": 100.0, 
-"@source": "Tn13932632", 
-"@target": "Tn13932639"
-}, 
-"edge81597": {
-"@length": 100.0, 
-"@source": "Tn13932632", 
-"@target": "Tn13932620"
-}, 
-"edge81599": {
-"@length": 100.0, 
-"@source": "Tn13932632", 
-"@target": "Tn13932633"
-}, 
-"edge81601": {
-"@length": 100.0, 
-"@source": "Tn13932632", 
-"@target": "Tn13932635"
-}, 
-"edge81603": {
-"@length": 100.0, 
-"@source": "Tn13932632", 
-"@target": "Tn13932624"
-}, 
-"edge81605": {
-"@length": 100.0, 
-"@source": "Tn13932632", 
-"@target": "Tn13932629"
-}
-}, 
-"Tn13932634": {
-"edge81609": {
-"@length": 100.0, 
-"@source": "Tn13932634", 
-"@target": "Tn13932626"
-}, 
-"edge81611": {
-"@length": 100.0, 
-"@source": "Tn13932634", 
-"@target": "Tn13932621"
-}, 
-"edge81613": {
-"@length": 100.0, 
-"@source": "Tn13932634", 
-"@target": "Tn13932630"
-}
-}
-}, 
-"nodeById": {
-"Tn13932619": {
-"@label": "CMW25214 M indica", 
-"@otu": "Tl2237581"
-}, 
-"Tn13932620": {
-"@label": "CMW28377 M indica", 
-"@otu": "Tl2237344"
-}, 
-"Tn13932621": {
-"@otu": "Tl2237175"
-}, 
-"Tn13932622": {
-"@label": "93.0"
-}, 
-"Tn13932623": {}, 
-"Tn13932624": {
-"@label": "MAR2134 S birrea", 
-"@otu": "Tl2237577"
-}, 
-"Tn13932625": {
-"@root": true
-}, 
-"Tn13932626": {
-"@otu": "Tl2237172"
-}, 
-"Tn13932627": {
-"@otu": "Tl2237152"
-}, 
-"Tn13932628": {
-"@label": "MAN210316 M indica", 
-"@otu": "Tl2237576"
-}, 
-"Tn13932629": {
-"@label": "MAR21022 S birrea", 
-"@otu": "Tl2237153"
-}, 
-"Tn13932630": {
-"@label": "MAN210236 M indica", 
-"@otu": "Tl2237352"
-}, 
-"Tn13932631": {
-"@otu": "Tl2237155"
-}, 
-"Tn13932632": {
-"@label": "70.0"
-}, 
-"Tn13932633": {
-"@label": "MAN27316 M indica", 
-"@otu": "Tl2237578"
-}, 
-"Tn13932634": {
-"@label": "71.0"
-}, 
-"Tn13932635": {
-"@label": "MAR11328 S birrea", 
-"@otu": "Tl2237579"
-}, 
-"Tn13932636": {
-"@label": "CMW28412 M indica", 
-"@otu": "Tl2237580"
-}, 
-"Tn13932637": {
-"@label": "CMW25198 M indica", 
-"@otu": "Tl2237348"
-}, 
-"Tn13932638": {
-"@otu": "Tl2237136"
-}, 
-"Tn13932639": {
-"@otu": "Tl2237171"
-}
-}
-}, 
-"Tr94999": {
-"@label": "Parvum-ribis complex ITS ML tree", 
-"@xsi:type": "nex:FloatTree", 
-"^ot:rootNodeId": "Tn13932664", 
-"^tb:kind.tree": "Gene Tree", 
-"^tb:ntax.tree": 16, 
-"^tb:quality.tree": "Preferred Tree", 
-"^tb:type.tree": "Single", 
-"edgeBySourceId": {
-"Tn13932640": {
-"edge82421": {
-"@length": 1e-10, 
-"@source": "Tn13932640", 
-"@target": "Tn13932643"
-}, 
-"edge82475": {
-"@length": 1e-10, 
-"@source": "Tn13932640", 
-"@target": "Tn13932647"
-}
-}, 
-"Tn13932641": {
-"edge82453": {
-"@length": 1e-10, 
-"@source": "Tn13932641", 
-"@target": "Tn13932656"
-}, 
-"edge82455": {
-"@length": 2.277e-07, 
-"@source": "Tn13932641", 
-"@target": "Tn13932660"
-}
-}, 
-"Tn13932643": {
-"edge82423": {
-"@length": 0.002012635, 
-"@source": "Tn13932643", 
-"@target": "Tn13932666"
-}, 
-"edge82473": {
-"@length": 1e-10, 
-"@source": "Tn13932643", 
-"@target": "Tn13932658"
-}
-}, 
-"Tn13932648": {
-"edge82447": {
-"@length": 0.0020101645, 
-"@source": "Tn13932648", 
-"@target": "Tn13932667"
-}, 
-"edge82449": {
-"@length": 0.0020123546, 
-"@source": "Tn13932648", 
-"@target": "Tn13932649"
-}
-}, 
-"Tn13932650": {
-"edge82439": {
-"@length": 1e-10, 
-"@source": "Tn13932650", 
-"@target": "Tn13932646"
-}, 
-"edge82441": {
-"@length": 0.00838765, 
-"@source": "Tn13932650", 
-"@target": "Tn13932659"
-}
-}, 
-"Tn13932655": {
-"edge82431": {
-"@length": 1e-10, 
-"@source": "Tn13932655", 
-"@target": "Tn13932644"
-}, 
-"edge82433": {
-"@length": 2.444e-07, 
-"@source": "Tn13932655", 
-"@target": "Tn13932665"
-}
-}, 
-"Tn13932657": {
-"edge82461": {
-"@length": 2.018e-07, 
-"@source": "Tn13932657", 
-"@target": "Tn13932662"
-}, 
-"edge82467": {
-"@length": 1e-10, 
-"@source": "Tn13932657", 
-"@target": "Tn13932652"
-}
-}, 
-"Tn13932660": {
-"edge82457": {
-"@length": 1.589e-07, 
-"@source": "Tn13932660", 
-"@target": "Tn13932663"
-}, 
-"edge82471": {
-"@length": 1e-10, 
-"@source": "Tn13932660", 
-"@target": "Tn13932668"
-}
-}, 
-"Tn13932661": {
-"edge82427": {
-"@length": 1.334e-07, 
-"@source": "Tn13932661", 
-"@target": "Tn13932670"
-}, 
-"edge82445": {
-"@length": 2.294e-07, 
-"@source": "Tn13932661", 
-"@target": "Tn13932648"
-}
-}, 
-"Tn13932662": {
-"edge82463": {
-"@length": 0.002010165, 
-"@source": "Tn13932662", 
-"@target": "Tn13932642"
-}, 
-"edge82465": {
-"@length": 0.002010165, 
-"@source": "Tn13932662", 
-"@target": "Tn13932669"
-}
-}, 
-"Tn13932663": {
-"edge82459": {
-"@length": 2.275e-07, 
-"@source": "Tn13932663", 
-"@target": "Tn13932657"
-}, 
-"edge82469": {
-"@length": 1e-10, 
-"@source": "Tn13932663", 
-"@target": "Tn13932645"
-}
-}, 
-"Tn13932664": {
-"edge82419": {
-"@length": 5e-11, 
-"@source": "Tn13932664", 
-"@target": "Tn13932640"
-}, 
-"edge82477": {
-"@length": 5e-11, 
-"@source": "Tn13932664", 
-"@target": "Tn13932651"
-}
-}, 
-"Tn13932665": {
-"edge82435": {
-"@length": 1e-10, 
-"@source": "Tn13932665", 
-"@target": "Tn13932654"
-}, 
-"edge82437": {
-"@length": 1.726e-07, 
-"@source": "Tn13932665", 
-"@target": "Tn13932650"
-}
-}, 
-"Tn13932666": {
-"edge82425": {
-"@length": 0.002012635, 
-"@source": "Tn13932666", 
-"@target": "Tn13932661"
-}, 
-"edge82451": {
-"@length": 0.004031778, 
-"@source": "Tn13932666", 
-"@target": "Tn13932641"
-}
-}, 
-"Tn13932670": {
-"edge82429": {
-"@length": 2.083e-07, 
-"@source": "Tn13932670", 
-"@target": "Tn13932655"
-}, 
-"edge82443": {
-"@length": 1e-10, 
-"@source": "Tn13932670", 
-"@target": "Tn13932653"
-}
-}
-}, 
-"nodeById": {
-"Tn13932640": {}, 
-"Tn13932641": {
-"@label": "0.898"
-}, 
-"Tn13932642": {
-"@label": "CMW25214 M indica", 
-"@otu": "Tl2237581"
-}, 
-"Tn13932643": {}, 
-"Tn13932644": {
-"@label": "MAR2134 S birrea", 
-"@otu": "Tl2237577"
-}, 
-"Tn13932645": {
-"@label": "CMW28412 M indica", 
-"@otu": "Tl2237580"
-}, 
-"Tn13932646": {
-"@label": "MAN27316 M indica", 
-"@otu": "Tl2237578"
-}, 
-"Tn13932647": {
-"@otu": "Tl2237175"
-}, 
-"Tn13932648": {}, 
-"Tn13932649": {
-"@otu": "Tl2237136"
-}, 
-"Tn13932650": {}, 
-"Tn13932651": {
-"@otu": "Tl2237172"
-}, 
-"Tn13932652": {
-"@otu": "Tl2237152"
-}, 
-"Tn13932653": {
-"@label": "MAR21022 S birrea", 
-"@otu": "Tl2237153"
-}, 
-"Tn13932654": {
-"@label": "MAR11328 S birrea", 
-"@otu": "Tl2237579"
-}, 
-"Tn13932655": {}, 
-"Tn13932656": {
-"@label": "MAN210316 M indica", 
-"@otu": "Tl2237576"
-}, 
-"Tn13932657": {}, 
-"Tn13932658": {
-"@label": "MAN210236 M indica", 
-"@otu": "Tl2237352"
-}, 
-"Tn13932659": {
-"@label": "CMW28377 M indica", 
-"@otu": "Tl2237344"
-}, 
-"Tn13932660": {}, 
-"Tn13932661": {
-"@label": "0.795"
-}, 
-"Tn13932662": {}, 
-"Tn13932663": {}, 
-"Tn13932664": {
-"@root": true
-}, 
-"Tn13932665": {}, 
-"Tn13932666": {
-"@label": "0.783"
-}, 
-"Tn13932667": {
-"@otu": "Tl2237171"
-}, 
-"Tn13932668": {
-"@label": "CMW25198 M indica", 
-"@otu": "Tl2237348"
-}, 
-"Tn13932669": {
-"@otu": "Tl2237155"
-}, 
-"Tn13932670": {}
-}
-}, 
-"Tr95000": {
-"@label": "Parvum-ribis complex TEF MP tree", 
-"@xsi:type": "nex:FloatTree", 
-"^ot:rootNodeId": "Tn13932692", 
-"^tb:kind.tree": "Gene Tree", 
-"^tb:ntax.tree": 16, 
-"^tb:quality.tree": "Alternative Tree", 
-"^tb:type.tree": "Single", 
-"edgeBySourceId": {
-"Tn13932671": {
-"edge81749": {
-"@length": 100.0, 
-"@source": "Tn13932671", 
-"@target": "Tn13932682"
-}, 
-"edge81751": {
-"@length": 100.0, 
-"@source": "Tn13932671", 
-"@target": "Tn13932684"
-}, 
-"edge81753": {
-"@length": 100.0, 
-"@source": "Tn13932671", 
-"@target": "Tn13932688"
-}, 
-"edge81755": {
-"@length": 100.0, 
-"@source": "Tn13932671", 
-"@target": "Tn13932683"
-}, 
-"edge81757": {
-"@length": 100.0, 
-"@source": "Tn13932671", 
-"@target": "Tn13932691"
-}, 
-"edge81759": {
-"@length": 100.0, 
-"@source": "Tn13932671", 
-"@target": "Tn13932676"
-}, 
-"edge81761": {
-"@length": 97.0, 
-"@source": "Tn13932671", 
-"@target": "Tn13932678"
-}
-}, 
-"Tn13932678": {
-"edge81763": {
-"@length": 68.0, 
-"@source": "Tn13932678", 
-"@target": "Tn13932690"
-}, 
-"edge81769": {
-"@length": 68.0, 
-"@source": "Tn13932678", 
-"@target": "Tn13932685"
-}, 
-"edge81779": {
-"@length": 100.0, 
-"@source": "Tn13932678", 
-"@target": "Tn13932680"
-}
-}, 
-"Tn13932679": {
-"edge81783": {
-"@length": 100.0, 
-"@source": "Tn13932679", 
-"@target": "Tn13932672"
-}, 
-"edge81785": {
-"@length": 100.0, 
-"@source": "Tn13932679", 
-"@target": "Tn13932689"
-}, 
-"edge81787": {
-"@length": 100.0, 
-"@source": "Tn13932679", 
-"@target": "Tn13932674"
-}
-}, 
-"Tn13932685": {
-"edge81771": {
-"@length": 100.0, 
-"@source": "Tn13932685", 
-"@target": "Tn13932677"
-}, 
-"edge81773": {
-"@length": 100.0, 
-"@source": "Tn13932685", 
-"@target": "Tn13932675"
-}, 
-"edge81775": {
-"@length": 100.0, 
-"@source": "Tn13932685", 
-"@target": "Tn13932673"
-}, 
-"edge81777": {
-"@length": 100.0, 
-"@source": "Tn13932685", 
-"@target": "Tn13932681"
-}
-}, 
-"Tn13932690": {
-"edge81765": {
-"@length": 100.0, 
-"@source": "Tn13932690", 
-"@target": "Tn13932687"
-}, 
-"edge81767": {
-"@length": 100.0, 
-"@source": "Tn13932690", 
-"@target": "Tn13932686"
-}
-}, 
-"Tn13932692": {
-"edge81747": {
-"@length": 33.5, 
-"@source": "Tn13932692", 
-"@target": "Tn13932671"
-}, 
-"edge81781": {
-"@length": 33.5, 
-"@source": "Tn13932692", 
-"@target": "Tn13932679"
-}
-}
-}, 
-"nodeById": {
-"Tn13932671": {}, 
-"Tn13932672": {
-"@otu": "Tl2237172"
-}, 
-"Tn13932673": {
-"@label": "MAR21022 S birrea", 
-"@otu": "Tl2237153"
-}, 
-"Tn13932674": {
-"@label": "MAN210236 M indica", 
-"@otu": "Tl2237352"
-}, 
-"Tn13932675": {
-"@label": "CMW28377 M indica", 
-"@otu": "Tl2237344"
-}, 
-"Tn13932676": {
-"@label": "MAN27316 M indica", 
-"@otu": "Tl2237578"
-}, 
-"Tn13932677": {
-"@label": "CMW25214 M indica", 
-"@otu": "Tl2237581"
-}, 
-"Tn13932678": {
-"@label": "97.0"
-}, 
-"Tn13932679": {}, 
-"Tn13932680": {
-"@label": "MAR11328 S birrea", 
-"@otu": "Tl2237579"
-}, 
-"Tn13932681": {
-"@label": "MAR2134 S birrea", 
-"@otu": "Tl2237577"
-}, 
-"Tn13932682": {
-"@otu": "Tl2237155"
-}, 
-"Tn13932683": {
-"@label": "CMW28412 M indica", 
-"@otu": "Tl2237580"
-}, 
-"Tn13932684": {
-"@otu": "Tl2237152"
-}, 
-"Tn13932685": {}, 
-"Tn13932686": {
-"@otu": "Tl2237171"
-}, 
-"Tn13932687": {
-"@otu": "Tl2237136"
-}, 
-"Tn13932688": {
-"@label": "CMW25198 M indica", 
-"@otu": "Tl2237348"
-}, 
-"Tn13932689": {
-"@otu": "Tl2237175"
-}, 
-"Tn13932690": {}, 
-"Tn13932691": {
-"@label": "MAN210316 M indica", 
-"@otu": "Tl2237576"
-}, 
-"Tn13932692": {
-"@root": true
-}
-}
-}, 
 "Tr95001": {
 "@label": "Parvum-ribis complex TEF ML tree", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:changesCount", 
+"^ot:curatedType": "Maximum likelihood ", 
+"^ot:inGroupClade": "Tn13932708", 
+"^ot:nodeLabelDescription": "", 
+"^ot:nodeLabelMode": "ot:bootstrapValues", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn13932708", 
+"^ot:specifiedRoot": "Tn13932708", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "^tb:kind.tree": "Gene Tree", 
 "^tb:ntax.tree": 16, 
 "^tb:quality.tree": "Preferred Tree", 
@@ -5999,7 +2269,8 @@
 "edge81803": {
 "@length": 0.0121505739, 
 "@source": "Tn13932694", 
-"@target": "Tn13932705"
+"@target": "Tn13932705", 
+"^ot:bootstrapValues": 95.19999999999999
 }, 
 "edge81829": {
 "@length": 1e-10, 
@@ -6064,7 +2335,8 @@
 "edge81823": {
 "@length": 0.0040194078, 
 "@source": "Tn13932705", 
-"@target": "Tn13932712"
+"@target": "Tn13932712", 
+"^ot:bootstrapValues": 77.4
 }
 }, 
 "Tn13932706": {
@@ -6088,7 +2360,8 @@
 "edge81849": {
 "@length": 0.0020142328, 
 "@source": "Tn13932708", 
-"@target": "Tn13932702"
+"@target": "Tn13932702", 
+"^ot:bootstrapValues": 91.3
 }
 }, 
 "Tn13932709": {
@@ -6107,7 +2380,8 @@
 "edge81807": {
 "@length": 0.0080914634, 
 "@source": "Tn13932710", 
-"@target": "Tn13932698"
+"@target": "Tn13932698", 
+"^ot:bootstrapValues": 85.3
 }, 
 "edge81821": {
 "@length": 0.0043018408, 
@@ -6173,32 +2447,29 @@
 "@label": "CMW28412 M indica", 
 "@otu": "Tl2237580"
 }, 
-"Tn13932698": {
-"@label": "0.853"
-}, 
+"Tn13932698": {}, 
 "Tn13932699": {
 "@label": "MAR2134 S birrea", 
 "@otu": "Tl2237577"
 }, 
 "Tn13932700": {
-"@otu": "Tl2237136"
+"@otu": "Tl2237136", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn13932701": {
 "@label": "MAN210316 M indica", 
 "@otu": "Tl2237576"
 }, 
-"Tn13932702": {
-"@label": "0.913"
-}, 
+"Tn13932702": {}, 
 "Tn13932703": {
-"@otu": "Tl2237171"
+"@otu": "Tl2237171", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn13932704": {
-"@otu": "Tl2237172"
+"@otu": "Tl2237172", 
+"^ot:isTaxonExemplar": false
 }, 
-"Tn13932705": {
-"@label": "0.952"
-}, 
+"Tn13932705": {}, 
 "Tn13932706": {}, 
 "Tn13932707": {
 "@label": "MAR21022 S birrea", 
@@ -6210,11 +2481,10 @@
 "Tn13932709": {}, 
 "Tn13932710": {}, 
 "Tn13932711": {}, 
-"Tn13932712": {
-"@label": "0.774"
-}, 
+"Tn13932712": {}, 
 "Tn13932713": {
-"@otu": "Tl2237175"
+"@otu": "Tl2237175", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn13932714": {
 "@label": "MAR11328 S birrea", 
@@ -6250,236 +2520,22 @@
 }
 }
 }, 
-"Tr95002": {
-"@label": "Parvum-ribis complex ITS_TEF_BT MP tree", 
-"@xsi:type": "nex:FloatTree", 
-"^ot:rootNodeId": "Tn13932730", 
-"^tb:kind.tree": "Species Tree", 
-"^tb:ntax.tree": 16, 
-"^tb:quality.tree": "Alternative Tree", 
-"^tb:type.tree": "Single", 
-"edgeBySourceId": {
-"Tn13932727": {
-"edge80985": {
-"@length": 85.0, 
-"@source": "Tn13932727", 
-"@target": "Tn13932738"
-}, 
-"edge81001": {
-"@length": 60.0, 
-"@source": "Tn13932727", 
-"@target": "Tn13932747"
-}
-}, 
-"Tn13932729": {
-"edge81015": {
-"@length": 100.0, 
-"@source": "Tn13932729", 
-"@target": "Tn13932748"
-}, 
-"edge81017": {
-"@length": 100.0, 
-"@source": "Tn13932729", 
-"@target": "Tn13932739"
-}, 
-"edge81019": {
-"@length": 100.0, 
-"@source": "Tn13932729", 
-"@target": "Tn13932746"
-}, 
-"edge81021": {
-"@length": 100.0, 
-"@source": "Tn13932729", 
-"@target": "Tn13932726"
-}
-}, 
-"Tn13932730": {
-"edge80983": {
-"@length": 49.0, 
-"@source": "Tn13932730", 
-"@target": "Tn13932727"
-}, 
-"edge81023": {
-"@length": 49.0, 
-"@source": "Tn13932730", 
-"@target": "Tn13932734"
-}
-}, 
-"Tn13932734": {
-"edge81025": {
-"@length": 100.0, 
-"@source": "Tn13932734", 
-"@target": "Tn13932731"
-}, 
-"edge81027": {
-"@length": 100.0, 
-"@source": "Tn13932734", 
-"@target": "Tn13932725"
-}, 
-"edge81029": {
-"@length": 100.0, 
-"@source": "Tn13932734", 
-"@target": "Tn13932737"
-}
-}, 
-"Tn13932738": {
-"edge80987": {
-"@length": 80.0, 
-"@source": "Tn13932738", 
-"@target": "Tn13932744"
-}, 
-"edge80999": {
-"@length": 100.0, 
-"@source": "Tn13932738", 
-"@target": "Tn13932735"
-}
-}, 
-"Tn13932742": {
-"edge81005": {
-"@length": 63.0, 
-"@source": "Tn13932742", 
-"@target": "Tn13932745"
-}, 
-"edge81011": {
-"@length": 100.0, 
-"@source": "Tn13932742", 
-"@target": "Tn13932740"
-}
-}, 
-"Tn13932744": {
-"edge80989": {
-"@length": 100.0, 
-"@source": "Tn13932744", 
-"@target": "Tn13932741"
-}, 
-"edge80991": {
-"@length": 100.0, 
-"@source": "Tn13932744", 
-"@target": "Tn13932728"
-}, 
-"edge80993": {
-"@length": 100.0, 
-"@source": "Tn13932744", 
-"@target": "Tn13932724"
-}, 
-"edge80995": {
-"@length": 100.0, 
-"@source": "Tn13932744", 
-"@target": "Tn13932743"
-}, 
-"edge80997": {
-"@length": 100.0, 
-"@source": "Tn13932744", 
-"@target": "Tn13932732"
-}
-}, 
-"Tn13932745": {
-"edge81007": {
-"@length": 100.0, 
-"@source": "Tn13932745", 
-"@target": "Tn13932736"
-}, 
-"edge81009": {
-"@length": 100.0, 
-"@source": "Tn13932745", 
-"@target": "Tn13932733"
-}
-}, 
-"Tn13932747": {
-"edge81003": {
-"@length": 81.0, 
-"@source": "Tn13932747", 
-"@target": "Tn13932742"
-}, 
-"edge81013": {
-"@length": 69.0, 
-"@source": "Tn13932747", 
-"@target": "Tn13932729"
-}
-}
-}, 
-"nodeById": {
-"Tn13932724": {
-"@label": "CMW25198 M indica", 
-"@otu": "Tl2237348"
-}, 
-"Tn13932725": {
-"@otu": "Tl2237175"
-}, 
-"Tn13932726": {
-"@label": "MAR2134 S birrea", 
-"@otu": "Tl2237577"
-}, 
-"Tn13932727": {}, 
-"Tn13932728": {
-"@otu": "Tl2237152"
-}, 
-"Tn13932729": {}, 
-"Tn13932730": {
-"@root": true
-}, 
-"Tn13932731": {
-"@otu": "Tl2237172"
-}, 
-"Tn13932732": {
-"@label": "MAN210316 M indica", 
-"@otu": "Tl2237576"
-}, 
-"Tn13932733": {
-"@otu": "Tl2237136"
-}, 
-"Tn13932734": {
-"@label": "98.0"
-}, 
-"Tn13932735": {
-"@label": "MAN27316 M indica", 
-"@otu": "Tl2237578"
-}, 
-"Tn13932736": {
-"@otu": "Tl2237171"
-}, 
-"Tn13932737": {
-"@label": "MAN210236 M indica", 
-"@otu": "Tl2237352"
-}, 
-"Tn13932738": {
-"@label": "85.0"
-}, 
-"Tn13932739": {
-"@label": "CMW28377 M indica", 
-"@otu": "Tl2237344"
-}, 
-"Tn13932740": {
-"@label": "MAR11328 S birrea", 
-"@otu": "Tl2237579"
-}, 
-"Tn13932741": {
-"@otu": "Tl2237155"
-}, 
-"Tn13932742": {
-"@label": "81.0"
-}, 
-"Tn13932743": {
-"@label": "CMW28412 M indica", 
-"@otu": "Tl2237580"
-}, 
-"Tn13932744": {}, 
-"Tn13932745": {}, 
-"Tn13932746": {
-"@label": "MAR21022 S birrea", 
-"@otu": "Tl2237153"
-}, 
-"Tn13932747": {}, 
-"Tn13932748": {
-"@label": "CMW25214 M indica", 
-"@otu": "Tl2237581"
-}
-}
-}, 
 "Tr95003": {
 "@label": "Parvum-ribis complex ITS_TEF_BT ML tree", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:changesCount", 
+"^ot:curatedType": "Maximum likelihood ", 
+"^ot:inGroupClade": "Tn13932756", 
+"^ot:nodeLabelDescription": "", 
+"^ot:nodeLabelMode": "ot:bootstrapValues", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn13932756", 
+"^ot:specifiedRoot": "Tn13932756", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 16, 
 "^tb:quality.tree": "Preferred Tree", 
@@ -6489,7 +2545,8 @@
 "edge81627": {
 "@length": 0.0045860895, 
 "@source": "Tn13932752", 
-"@target": "Tn13932768"
+"@target": "Tn13932768", 
+"^ot:bootstrapValues": 95.6
 }, 
 "edge81677": {
 "@length": 1e-10, 
@@ -6559,7 +2616,8 @@
 "edge81671": {
 "@length": 0.0008580587, 
 "@source": "Tn13932761", 
-"@target": "Tn13932767"
+"@target": "Tn13932767", 
+"^ot:bootstrapValues": 78.2
 }
 }, 
 "Tn13932764": {
@@ -6590,7 +2648,8 @@
 "edge81629": {
 "@length": 0.0042863478, 
 "@source": "Tn13932768", 
-"@target": "Tn13932754"
+"@target": "Tn13932754", 
+"^ot:bootstrapValues": 91.10000000000001
 }, 
 "edge81651": {
 "@length": 0.0026374563, 
@@ -6638,12 +2697,14 @@
 "edge81653": {
 "@length": 0.0048596108, 
 "@source": "Tn13932777", 
-"@target": "Tn13932759"
+"@target": "Tn13932759", 
+"^ot:bootstrapValues": 92.9
 }, 
 "edge81667": {
 "@length": 0.0013165517, 
 "@source": "Tn13932777", 
-"@target": "Tn13932761"
+"@target": "Tn13932761", 
+"^ot:bootstrapValues": 76.6
 }
 }, 
 "Tn13932778": {
@@ -6665,7 +2726,8 @@
 "@otu": "Tl2237344"
 }, 
 "Tn13932750": {
-"@otu": "Tl2237155"
+"@otu": "Tl2237155", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn13932751": {
 "@label": "MAR11328 S birrea", 
@@ -6676,9 +2738,7 @@
 "@label": "MAN210236 M indica", 
 "@otu": "Tl2237352"
 }, 
-"Tn13932754": {
-"@label": "0.911"
-}, 
+"Tn13932754": {}, 
 "Tn13932755": {
 "@label": "CMW25214 M indica", 
 "@otu": "Tl2237581"
@@ -6694,19 +2754,16 @@
 "@label": "MAN210316 M indica", 
 "@otu": "Tl2237576"
 }, 
-"Tn13932759": {
-"@label": "0.929"
-}, 
+"Tn13932759": {}, 
 "Tn13932760": {}, 
-"Tn13932761": {
-"@label": "0.766"
-}, 
+"Tn13932761": {}, 
 "Tn13932762": {
 "@label": "CMW28412 M indica", 
 "@otu": "Tl2237580"
 }, 
 "Tn13932763": {
-"@otu": "Tl2237172"
+"@otu": "Tl2237172", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn13932764": {}, 
 "Tn13932765": {
@@ -6714,17 +2771,15 @@
 "@otu": "Tl2237153"
 }, 
 "Tn13932766": {
-"@otu": "Tl2237152"
+"@otu": "Tl2237152", 
+"^ot:isTaxonExemplar": false
 }, 
-"Tn13932767": {
-"@label": "0.782"
-}, 
-"Tn13932768": {
-"@label": "0.956"
-}, 
+"Tn13932767": {}, 
+"Tn13932768": {}, 
 "Tn13932769": {}, 
 "Tn13932770": {
-"@otu": "Tl2237171"
+"@otu": "Tl2237171", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn13932771": {}, 
 "Tn13932772": {
@@ -6732,7 +2787,8 @@
 "@otu": "Tl2237348"
 }, 
 "Tn13932773": {
-"@otu": "Tl2237175"
+"@otu": "Tl2237175", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn13932774": {
 "@label": "MAR2134 S birrea", 
@@ -6740,7 +2796,8 @@
 }, 
 "Tn13932775": {}, 
 "Tn13932776": {
-"@otu": "Tl2237136"
+"@otu": "Tl2237136", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn13932777": {}, 
 "Tn13932778": {}
