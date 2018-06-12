@@ -55,16 +55,106 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2018-06-12T18:33:33.250Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:curatorName": "Kaitlin Allen ", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}, 
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": "$1"
+}, 
+"old": {
+"$": "^(\\S*\\s+\\S*).*"
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2018-06-12T18:33:33.250Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Kaitlin Allen "
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S21704"
 }, 
+"^ot:focalClade": 273389, 
+"^ot:focalCladeOTTTaxonName": "Erysiphe", 
 "^ot:otusElementOrder": [
 "Tls63382"
 ], 
@@ -74,6 +164,7 @@
 }, 
 "^ot:studyPublicationReference": "Abasova L., Aghayeva D., & Takamatsu S. 2018. Notes on powdery mildews of the genus Erysiphe from Azerbaijan. Current Research in Environmental & Applied Mycology, 8(1): 50-53 .", 
 "^ot:studyYear": 2018, 
+"^ot:tag": [], 
 "^ot:taxonLinkPrefixes": {
 "@ubio": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:", 
 "@uniprot": "http://purl.uniprot.org/taxonomy/"
@@ -102,8 +193,9 @@
 "^skos:historyNote": "Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlOTUWriter@e08f87d $Rev$", 
 "otuById": {
 "Tl3173206": {
-"^ot:altLabel": "Erysiphe euonymicola", 
 "^ot:originalLabel": "Erysiphe euonymicola Ex_Euonymus_japonicus_MUMH7012", 
+"^ot:ottId": 5309827, 
+"^ot:ottTaxonName": "Erysiphe euonymicola", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 633426, 
 "@tb:identifier.taxonVariant": 848438, 
@@ -111,8 +203,9 @@
 }
 }, 
 "Tl3173207": {
-"^ot:altLabel": "Erysiphe berberidis", 
 "^ot:originalLabel": "Erysiphe berberidis Ex_Berberis_vulgaris_MUMH7022", 
+"^ot:ottId": 3715831, 
+"^ot:ottTaxonName": "Erysiphe berberidis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 633297, 
 "@tb:identifier.taxonVariant": 848309, 
@@ -120,8 +213,9 @@
 }
 }, 
 "Tl3173208": {
-"^ot:altLabel": "Erysiphe syringae", 
 "^ot:originalLabel": "Erysiphe syringae Ex_Syringa_vulgaris_LC015612", 
+"^ot:ottId": 565184, 
+"^ot:ottTaxonName": "Erysiphe syringae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 10503, 
 "@tb:identifier.taxonVariant": 25121, 
@@ -130,8 +224,9 @@
 }
 }, 
 "Tl3173209": {
-"^ot:altLabel": "Erysiphe cruciferarum", 
 "^ot:originalLabel": "Erysiphe cruciferarum Ex_Brassica_juncea_MUMH7034", 
+"^ot:ottId": 392343, 
+"^ot:ottTaxonName": "Erysiphe cruciferarum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 10474, 
 "@tb:identifier.taxonVariant": 25062, 
@@ -140,8 +235,9 @@
 }
 }, 
 "Tl3173210": {
-"^ot:altLabel": "Erysiphe euonymicola", 
 "^ot:originalLabel": "Erysiphe euonymicola Ex_Euonymus_japonicus_AB250228", 
+"^ot:ottId": 5309827, 
+"^ot:ottTaxonName": "Erysiphe euonymicola", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 633426, 
 "@tb:identifier.taxonVariant": 848438, 
@@ -149,11 +245,14 @@
 }
 }, 
 "Tl3173211": {
-"^ot:originalLabel": "Erysiphe euonymi Ex_Euonymus_europeae_LC010050"
+"^ot:originalLabel": "Erysiphe euonymi Ex_Euonymus_europeae_LC010050", 
+"^ot:ottId": 3715087, 
+"^ot:ottTaxonName": "Erysiphe euonymi"
 }, 
 "Tl3173212": {
-"^ot:altLabel": "Erysiphe polygoni", 
 "^ot:originalLabel": "Erysiphe polygoni Ex_Polygonum_aviculare_MUMH7045", 
+"^ot:ottId": 712263, 
+"^ot:ottTaxonName": "Erysiphe polygoni", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 10494, 
 "@tb:identifier.taxonVariant": 25104, 
@@ -162,8 +261,9 @@
 }
 }, 
 "Tl3173213": {
-"^ot:altLabel": "Erysiphe trifoliorum", 
 "^ot:originalLabel": "Erysiphe trifoliorum Ex_Trifolium_pratense_MUMH7031", 
+"^ot:ottId": 3716344, 
+"^ot:ottTaxonName": "Erysiphe trifoliorum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 633430, 
 "@tb:identifier.taxonVariant": 848442, 
@@ -181,7 +281,9 @@
 }
 }, 
 "Tl3173215": {
-"^ot:originalLabel": "Golovinomyces ambrosiae AB769419"
+"^ot:originalLabel": "Golovinomyces ambrosiae AB769419", 
+"^ot:ottId": 138038, 
+"^ot:ottTaxonName": "Golovinomyces cichoracearum"
 }, 
 "Tl3173216": {
 "^ot:altLabel": "Erysiphe syringae-japonicae", 
@@ -195,14 +297,17 @@
 }, 
 "Tl3173217": {
 "^ot:originalLabel": "Erysiphe quercicola Ex_Castanea_sativa_MUMH7028", 
+"^ot:ottId": 252401, 
+"^ot:ottTaxonName": "Erysiphe quercicola", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 369361, 
 "@tb:identifier.taxonVariant": 517284
 }
 }, 
 "Tl3173218": {
-"^ot:altLabel": "Erysiphe corylacearum", 
 "^ot:originalLabel": "Erysiphe corylacearum Ex_Corylus_heterophylla_KR048061", 
+"^ot:ottId": 369784, 
+"^ot:ottTaxonName": "Erysiphe corylacearum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 628826, 
 "@tb:identifier.taxonVariant": 842946, 
@@ -210,8 +315,9 @@
 }
 }, 
 "Tl3173219": {
-"^ot:altLabel": "Erysiphe heraclei", 
 "^ot:originalLabel": "Erysiphe heraclei Ex_Conium_maculatum_LC010021", 
+"^ot:ottId": 622881, 
+"^ot:ottTaxonName": "Erysiphe heraclei", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 10481, 
 "@tb:identifier.taxonVariant": 25078, 
@@ -220,8 +326,9 @@
 }
 }, 
 "Tl3173220": {
-"^ot:altLabel": "Erysiphe arcuata", 
 "^ot:originalLabel": "Erysiphe arcuata Ex_Carpinus_betulus_AB252463", 
+"^ot:ottId": 727271, 
+"^ot:ottTaxonName": "Erysiphe arcuata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 38381, 
 "@tb:identifier.taxonVariant": 113775, 
@@ -230,8 +337,9 @@
 }
 }, 
 "Tl3173221": {
-"^ot:altLabel": "Erysiphe platani", 
 "^ot:originalLabel": "Erysiphe platani Ex_Platanus_orientalis_JQ365943", 
+"^ot:ottId": 405818, 
+"^ot:ottTaxonName": "Erysiphe platani", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 614300, 
 "@tb:identifier.taxonVariant": 821383, 
@@ -239,8 +347,9 @@
 }
 }, 
 "Tl3173222": {
-"^ot:altLabel": "Erysiphe polygoni", 
 "^ot:originalLabel": "Erysiphe polygoni Ex_Polygonum_aviculare_MUMH7036", 
+"^ot:ottId": 712263, 
+"^ot:ottTaxonName": "Erysiphe polygoni", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 10494, 
 "@tb:identifier.taxonVariant": 25104, 
@@ -252,8 +361,9 @@
 "^ot:originalLabel": "Erysiphe viciae-unijugae Ex_Vicia_angustifolia_LC009962"
 }, 
 "Tl3173224": {
-"^ot:altLabel": "Erysiphe alphitoides", 
 "^ot:originalLabel": "Erysiphe alphitoides Ex_Quercus_macranthera_MUMH7008", 
+"^ot:ottId": 689495, 
+"^ot:ottTaxonName": "Erysiphe alphitoides", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 36839, 
 "@tb:identifier.taxonVariant": 85202, 
@@ -262,8 +372,9 @@
 }
 }, 
 "Tl3173225": {
-"^ot:altLabel": "Erysiphe corylacearum", 
 "^ot:originalLabel": "Erysiphe corylacearum Ex_Corylus_avellana_MUMH7047", 
+"^ot:ottId": 369784, 
+"^ot:ottTaxonName": "Erysiphe corylacearum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 628826, 
 "@tb:identifier.taxonVariant": 842946, 
@@ -271,8 +382,9 @@
 }
 }, 
 "Tl3173226": {
-"^ot:altLabel": "Erysiphe euonymicola", 
 "^ot:originalLabel": "Erysiphe euonymicola Ex_Euonymus_japonicus_AB250229", 
+"^ot:ottId": 5309827, 
+"^ot:ottTaxonName": "Erysiphe euonymicola", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 633426, 
 "@tb:identifier.taxonVariant": 848438, 
@@ -280,8 +392,9 @@
 }
 }, 
 "Tl3173227": {
-"^ot:altLabel": "Erysiphe platani", 
 "^ot:originalLabel": "Erysiphe platani Ex_Platanus_orientalis_MUMH7050", 
+"^ot:ottId": 405818, 
+"^ot:ottTaxonName": "Erysiphe platani", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 614300, 
 "@tb:identifier.taxonVariant": 821383, 
@@ -289,8 +402,9 @@
 }
 }, 
 "Tl3173228": {
-"^ot:altLabel": "Erysiphe berberidis", 
 "^ot:originalLabel": "Erysiphe berberidis Ex_Berberis_vulgaris_MUMH7005", 
+"^ot:ottId": 3715831, 
+"^ot:ottTaxonName": "Erysiphe berberidis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 633297, 
 "@tb:identifier.taxonVariant": 848309, 
@@ -298,8 +412,9 @@
 }
 }, 
 "Tl3173229": {
-"^ot:altLabel": "Erysiphe trifoliorum", 
 "^ot:originalLabel": "Erysiphe trifoliorum Ex_Trifolium_pratense_MUMH7046", 
+"^ot:ottId": 3716344, 
+"^ot:ottTaxonName": "Erysiphe trifoliorum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 633430, 
 "@tb:identifier.taxonVariant": 848442, 
@@ -307,8 +422,9 @@
 }
 }, 
 "Tl3173230": {
-"^ot:altLabel": "Erysiphe syringae", 
 "^ot:originalLabel": "Erysiphe syringae Ex_Syringa_vulgaris_MUMH7018", 
+"^ot:ottId": 565184, 
+"^ot:ottTaxonName": "Erysiphe syringae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 10503, 
 "@tb:identifier.taxonVariant": 25121, 
@@ -317,8 +433,9 @@
 }
 }, 
 "Tl3173231": {
-"^ot:altLabel": "Erysiphe euonymicola", 
 "^ot:originalLabel": "Erysiphe euonymicola Ex_Euonymus_japonicus_MUMH6999", 
+"^ot:ottId": 5309827, 
+"^ot:ottTaxonName": "Erysiphe euonymicola", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 633426, 
 "@tb:identifier.taxonVariant": 848438, 
@@ -326,11 +443,14 @@
 }
 }, 
 "Tl3173232": {
-"^ot:originalLabel": "Erysiphe berberidicola Ex_Berberis_vulgaris_LC009951"
+"^ot:originalLabel": "Erysiphe berberidicola Ex_Berberis_vulgaris_LC009951", 
+"^ot:ottId": 3715146, 
+"^ot:ottTaxonName": "Erysiphe berberidicola"
 }, 
 "Tl3173233": {
-"^ot:altLabel": "Arthrocladiella mougeotii", 
 "^ot:originalLabel": "Arthrocladiella mougeotii AB329690", 
+"^ot:ottId": 829310, 
+"^ot:ottTaxonName": "Arthrocladiella mougeotii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 2400, 
 "@tb:identifier.taxonVariant": 5722, 
@@ -349,8 +469,9 @@
 }
 }, 
 "Tl3173235": {
-"^ot:altLabel": "Erysiphe heraclei", 
 "^ot:originalLabel": "Erysiphe heraclei Ex_Torilis_arvensis_MUMH7041", 
+"^ot:ottId": 622881, 
+"^ot:ottTaxonName": "Erysiphe heraclei", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 10481, 
 "@tb:identifier.taxonVariant": 25078, 
@@ -372,8 +493,9 @@
 "^ot:originalLabel": "Erysiphe viciae-unijugae Ex_Lathyrus_odorathus_MUMH7040"
 }, 
 "Tl3173238": {
-"^ot:altLabel": "Erysiphe cruciferarum", 
 "^ot:originalLabel": "Erysiphe cruciferarum Ex_Brassica_juncea_KM260718", 
+"^ot:ottId": 392343, 
+"^ot:ottTaxonName": "Erysiphe cruciferarum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 10474, 
 "@tb:identifier.taxonVariant": 25062, 
@@ -382,8 +504,9 @@
 }
 }, 
 "Tl3173239": {
-"^ot:altLabel": "Erysiphe trifoliorum", 
 "^ot:originalLabel": "Erysiphe trifoliorum Ex_Medicago_sativa_MUMH7038", 
+"^ot:ottId": 3716344, 
+"^ot:ottTaxonName": "Erysiphe trifoliorum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 633430, 
 "@tb:identifier.taxonVariant": 848442, 
@@ -391,8 +514,9 @@
 }
 }, 
 "Tl3173240": {
-"^ot:altLabel": "Erysiphe syringae", 
 "^ot:originalLabel": "Erysiphe syringae Ex_Syringa_vulgaris_MUMH7019", 
+"^ot:ottId": 565184, 
+"^ot:ottTaxonName": "Erysiphe syringae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 10503, 
 "@tb:identifier.taxonVariant": 25121, 
@@ -401,8 +525,9 @@
 }
 }, 
 "Tl3173241": {
-"^ot:altLabel": "Erysiphe alphitoides", 
 "^ot:originalLabel": "Erysiphe alphitoides Ex_Quercus_petrea_AB257435", 
+"^ot:ottId": 689495, 
+"^ot:ottTaxonName": "Erysiphe alphitoides", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 36839, 
 "@tb:identifier.taxonVariant": 85202, 
@@ -412,14 +537,17 @@
 }, 
 "Tl3173242": {
 "^ot:originalLabel": "Erysiphe quercicola Ex_Quercus_crispula_AB292691", 
+"^ot:ottId": 252401, 
+"^ot:ottTaxonName": "Erysiphe quercicola", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 369361, 
 "@tb:identifier.taxonVariant": 517284
 }
 }, 
 "Tl3173243": {
-"^ot:altLabel": "Erysiphe cruciferarum", 
 "^ot:originalLabel": "Erysiphe cruciferarum Ex_Brassica_rapa_EU140958", 
+"^ot:ottId": 392343, 
+"^ot:ottTaxonName": "Erysiphe cruciferarum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 10474, 
 "@tb:identifier.taxonVariant": 25062, 
@@ -428,8 +556,9 @@
 }
 }, 
 "Tl3173244": {
-"^ot:altLabel": "Erysiphe corylacearum", 
 "^ot:originalLabel": "Erysiphe corylacearum Ex_Corylus_sieboldiana_LC009928", 
+"^ot:ottId": 369784, 
+"^ot:ottTaxonName": "Erysiphe corylacearum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 628826, 
 "@tb:identifier.taxonVariant": 842946, 
@@ -437,8 +566,9 @@
 }
 }, 
 "Tl3173245": {
-"^ot:altLabel": "Erysiphe arcuata", 
 "^ot:originalLabel": "Erysiphe arcuata Ex_Carpinus_betulus_AB252459", 
+"^ot:ottId": 727271, 
+"^ot:ottTaxonName": "Erysiphe arcuata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 38381, 
 "@tb:identifier.taxonVariant": 113775, 
@@ -447,8 +577,9 @@
 }
 }, 
 "Tl3173246": {
-"^ot:altLabel": "Erysiphe arcuata", 
 "^ot:originalLabel": "Erysiphe arcuata Ex_Carpinus_orinetalis_MUMH7010", 
+"^ot:ottId": 727271, 
+"^ot:ottTaxonName": "Erysiphe arcuata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 38381, 
 "@tb:identifier.taxonVariant": 113775, 
@@ -457,8 +588,9 @@
 }
 }, 
 "Tl3173247": {
-"^ot:altLabel": "Erysiphe convolvuli", 
 "^ot:originalLabel": "Erysiphe convolvuli Ex_Convolvulus_arvensis_MUMH7030", 
+"^ot:ottId": 138041, 
+"^ot:ottTaxonName": "Erysiphe convolvuli", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 10473, 
 "@tb:identifier.taxonVariant": 25060, 
@@ -467,8 +599,9 @@
 }
 }, 
 "Tl3173248": {
-"^ot:altLabel": "Erysiphe trifoliorum", 
 "^ot:originalLabel": "Erysiphe trifoliorum Ex_Trifolium_arvense_LC009955", 
+"^ot:ottId": 3716344, 
+"^ot:ottTaxonName": "Erysiphe trifoliorum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 633430, 
 "@tb:identifier.taxonVariant": 848442, 
@@ -486,8 +619,9 @@
 }
 }, 
 "Tl3173250": {
-"^ot:altLabel": "Erysiphe convolvuli", 
 "^ot:originalLabel": "Erysiphe convolvuli Ex_Convolvulus_arvensis_MUMH7048", 
+"^ot:ottId": 138041, 
+"^ot:ottTaxonName": "Erysiphe convolvuli", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 10473, 
 "@tb:identifier.taxonVariant": 25060, 
@@ -496,8 +630,9 @@
 }
 }, 
 "Tl3173251": {
-"^ot:altLabel": "Erysiphe alphitoides", 
 "^ot:originalLabel": "Erysiphe alphitoides Ex_Quercus_serrata_AB292695", 
+"^ot:ottId": 689495, 
+"^ot:ottTaxonName": "Erysiphe alphitoides", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 36839, 
 "@tb:identifier.taxonVariant": 85202, 
@@ -506,8 +641,9 @@
 }
 }, 
 "Tl3173252": {
-"^ot:altLabel": "Erysiphe necator", 
 "^ot:originalLabel": "Erysiphe necator Ex_Vitis_vinifera_MUMH7027", 
+"^ot:ottId": 222742, 
+"^ot:ottTaxonName": "Erysiphe necator", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 38387, 
 "@tb:identifier.taxonVariant": 88770, 
@@ -519,8 +655,9 @@
 "^ot:originalLabel": "Erysiphe viciae-unijugae Ex_Vicia_bifolia_LC009977"
 }, 
 "Tl3173254": {
-"^ot:altLabel": "Erysiphe platani", 
 "^ot:originalLabel": "Erysiphe platani Ex_Platanus_orientalis_MUMH7006", 
+"^ot:ottId": 405818, 
+"^ot:ottTaxonName": "Erysiphe platani", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 614300, 
 "@tb:identifier.taxonVariant": 821383, 
@@ -528,8 +665,9 @@
 }
 }, 
 "Tl3173255": {
-"^ot:altLabel": "Erysiphe alphitoides", 
 "^ot:originalLabel": "Erysiphe alphitoides Ex_Quercus_robur_AB292710", 
+"^ot:ottId": 689495, 
+"^ot:ottTaxonName": "Erysiphe alphitoides", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 36839, 
 "@tb:identifier.taxonVariant": 85202, 
@@ -538,8 +676,9 @@
 }
 }, 
 "Tl3173256": {
-"^ot:altLabel": "Erysiphe pisi", 
 "^ot:originalLabel": "Erysiphe pisi Ex_Lathyrus_latifolium_AF011306", 
+"^ot:ottId": 865704, 
+"^ot:ottTaxonName": "Erysiphe pisi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 10493, 
 "@tb:identifier.taxonVariant": 25101, 
@@ -558,8 +697,9 @@
 }
 }, 
 "Tl3173258": {
-"^ot:altLabel": "Erysiphe polygoni", 
 "^ot:originalLabel": "Erysiphe polygoni Ex_Polygonum_arenastrum_AF011307", 
+"^ot:ottId": 712263, 
+"^ot:ottTaxonName": "Erysiphe polygoni", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 10494, 
 "@tb:identifier.taxonVariant": 25104, 
@@ -568,8 +708,9 @@
 }
 }, 
 "Tl3173259": {
-"^ot:altLabel": "Erysiphe berberidis", 
 "^ot:originalLabel": "Erysiphe berberidis Ex_Berberis_vulgaris_LC010057", 
+"^ot:ottId": 3715831, 
+"^ot:ottTaxonName": "Erysiphe berberidis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 633297, 
 "@tb:identifier.taxonVariant": 848309, 
@@ -577,8 +718,9 @@
 }
 }, 
 "Tl3173260": {
-"^ot:altLabel": "Erysiphe multappendicis", 
 "^ot:originalLabel": "Erysiphe multappendicis Ex_Berberis_vulgaris_AB104520", 
+"^ot:ottId": 1070262, 
+"^ot:ottTaxonName": "Erysiphe multappendicis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 201967, 
 "@tb:identifier.taxonVariant": 272209, 
@@ -587,8 +729,9 @@
 }
 }, 
 "Tl3173261": {
-"^ot:altLabel": "Erysiphe necator", 
 "^ot:originalLabel": "Erysiphe necator Ex_Vitis_vinifera_MUMH7026", 
+"^ot:ottId": 222742, 
+"^ot:ottTaxonName": "Erysiphe necator", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 38387, 
 "@tb:identifier.taxonVariant": 88770, 
@@ -597,8 +740,9 @@
 }
 }, 
 "Tl3173262": {
-"^ot:altLabel": "Erysiphe trifoliorum", 
 "^ot:originalLabel": "Erysiphe trifoliorum Ex_Medicago_sp._FJ378877", 
+"^ot:ottId": 3716344, 
+"^ot:ottTaxonName": "Erysiphe trifoliorum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 633430, 
 "@tb:identifier.taxonVariant": 848442, 
@@ -606,8 +750,9 @@
 }
 }, 
 "Tl3173263": {
-"^ot:altLabel": "Erysiphe convolvuli", 
 "^ot:originalLabel": "Erysiphe convolvuli Ex_Ipomoea_aquatica_KJ885178", 
+"^ot:ottId": 138041, 
+"^ot:ottTaxonName": "Erysiphe convolvuli", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 10473, 
 "@tb:identifier.taxonVariant": 25060, 
@@ -616,8 +761,9 @@
 }
 }, 
 "Tl3173264": {
-"^ot:altLabel": "Erysiphe convolvuli", 
 "^ot:originalLabel": "Erysiphe convolvuli Ex_Calystegia_sepium_MUMH7001", 
+"^ot:ottId": 138041, 
+"^ot:ottTaxonName": "Erysiphe convolvuli", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 10473, 
 "@tb:identifier.taxonVariant": 25060, 
@@ -627,14 +773,17 @@
 }, 
 "Tl3173265": {
 "^ot:originalLabel": "Erysiphe quercicola Ex_Castanea_sativa_MUMH7029", 
+"^ot:ottId": 252401, 
+"^ot:ottTaxonName": "Erysiphe quercicola", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 369361, 
 "@tb:identifier.taxonVariant": 517284
 }
 }, 
 "Tl3173266": {
-"^ot:altLabel": "Erysiphe necator", 
 "^ot:originalLabel": "Erysiphe necator Ex_Vitis_vinifera_LC028996", 
+"^ot:ottId": 222742, 
+"^ot:ottTaxonName": "Erysiphe necator", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 38387, 
 "@tb:identifier.taxonVariant": 88770, 
@@ -678,7 +827,18 @@
 "Tr111745": {
 "@label": "PAUP_1", 
 "@xsi:type": "nex:FloatTree", 
-"^ot:rootNodeId": "Tn17504962", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:changesCount", 
+"^ot:curatedType": "Maximum parsimony ", 
+"^ot:inGroupClade": "Tn17504961", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
+"^ot:rootNodeId": "Tr111745_ROOT", 
+"^ot:specifiedRoot": "Tr111745_ROOT", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 63, 
 "^tb:quality.tree": "Unrated", 
@@ -698,12 +858,12 @@
 }, 
 "Tn17504940": {
 "edge256239": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17504940", 
 "@target": "Tn17505042"
 }, 
 "edge256241": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17504940", 
 "@target": "Tn17504959"
 }
@@ -722,7 +882,7 @@
 }, 
 "Tn17504950": {
 "edge256186": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17504950", 
 "@target": "Tn17505045"
 }, 
@@ -734,12 +894,12 @@
 }, 
 "Tn17504951": {
 "edge256202": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17504951", 
 "@target": "Tn17504986"
 }, 
 "edge256204": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17504951", 
 "@target": "Tn17504985"
 }, 
@@ -751,41 +911,41 @@
 }, 
 "Tn17504952": {
 "edge256138": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17504952", 
 "@target": "Tn17505002"
 }, 
 "edge256140": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17504952", 
 "@target": "Tn17504948"
 }
 }, 
 "Tn17504956": {
 "edge256148": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17504956", 
 "@target": "Tn17505038"
 }, 
 "edge256150": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17504956", 
 "@target": "Tn17504979"
 }, 
 "edge256152": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17504956", 
 "@target": "Tn17505005"
 }
 }, 
 "Tn17504957": {
 "edge256156": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17504957", 
 "@target": "Tn17505001"
 }, 
 "edge256158": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17504957", 
 "@target": "Tn17504999"
 }
@@ -797,36 +957,36 @@
 "@target": "Tn17504982"
 }, 
 "edge256261": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17504958", 
 "@target": "Tn17504976"
 }
 }, 
 "Tn17504959": {
 "edge256243": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17504959", 
 "@target": "Tn17504966"
 }, 
 "edge256245": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17504959", 
 "@target": "Tn17505051"
 }
 }, 
 "Tn17504960": {
 "edge256229": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17504960", 
 "@target": "Tn17504984"
 }, 
 "edge256231": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17504960", 
 "@target": "Tn17504953"
 }, 
 "edge256233": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17504960", 
 "@target": "Tn17505000"
 }
@@ -844,11 +1004,6 @@
 }
 }, 
 "Tn17504962": {
-"edge256052": {
-"@length": 0.0538985, 
-"@source": "Tn17504962", 
-"@target": "Tn17504965"
-}, 
 "edge256058": {
 "@length": 0.0538985, 
 "@source": "Tn17504962", 
@@ -869,12 +1024,12 @@
 }, 
 "Tn17504964": {
 "edge256255": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17504964", 
 "@target": "Tn17505014"
 }, 
 "edge256257": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17504964", 
 "@target": "Tn17504958"
 }
@@ -893,12 +1048,12 @@
 }, 
 "Tn17504971": {
 "edge256122": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17504971", 
 "@target": "Tn17505040"
 }, 
 "edge256124": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17504971", 
 "@target": "Tn17505033"
 }
@@ -941,12 +1096,12 @@
 }, 
 "Tn17504981": {
 "edge256174": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17504981", 
 "@target": "Tn17505031"
 }, 
 "edge256176": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17504981", 
 "@target": "Tn17504967"
 }
@@ -977,12 +1132,12 @@
 }, 
 "Tn17504992": {
 "edge256196": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17504992", 
 "@target": "Tn17504995"
 }, 
 "edge256198": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17504992", 
 "@target": "Tn17504942"
 }
@@ -1013,12 +1168,12 @@
 }, 
 "Tn17504996": {
 "edge256265": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17504996", 
 "@target": "Tn17505037"
 }, 
 "edge256267": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17504996", 
 "@target": "Tn17505010"
 }, 
@@ -1030,34 +1185,34 @@
 }, 
 "Tn17504997": {
 "edge256168": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17504997", 
 "@target": "Tn17505032"
 }, 
 "edge256170": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17504997", 
 "@target": "Tn17505035"
 }, 
 "edge256172": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17504997", 
 "@target": "Tn17504981"
 }
 }, 
 "Tn17504999": {
 "edge256160": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17504999", 
 "@target": "Tn17504988"
 }, 
 "edge256162": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17504999", 
 "@target": "Tn17504975"
 }, 
 "edge256164": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17504999", 
 "@target": "Tn17505013"
 }, 
@@ -1081,12 +1236,12 @@
 }, 
 "Tn17505003": {
 "edge256134": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17505003", 
 "@target": "Tn17505026"
 }, 
 "edge256136": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17505003", 
 "@target": "Tn17504952"
 }
@@ -1098,7 +1253,7 @@
 "@target": "Tn17505016"
 }, 
 "edge256253": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17505004", 
 "@target": "Tn17504964"
 }
@@ -1122,19 +1277,19 @@
 "@target": "Tn17504941"
 }, 
 "edge256271": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17505010", 
 "@target": "Tn17504991"
 }
 }, 
 "Tn17505011": {
 "edge256074": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17505011", 
 "@target": "Tn17504945"
 }, 
 "edge256076": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17505011", 
 "@target": "Tn17505034"
 }
@@ -1146,7 +1301,7 @@
 "@target": "Tn17505019"
 }, 
 "edge256219": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17505012", 
 "@target": "Tn17504987"
 }
@@ -1158,7 +1313,7 @@
 "@target": "Tn17505036"
 }, 
 "edge256094": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17505015", 
 "@target": "Tn17505024"
 }
@@ -1182,19 +1337,19 @@
 "@target": "Tn17504998"
 }, 
 "edge256277": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17505025", 
 "@target": "Tn17505008"
 }
 }, 
 "Tn17505027": {
 "edge256102": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17505027", 
 "@target": "Tn17505023"
 }, 
 "edge256104": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17505027", 
 "@target": "Tn17505039"
 }
@@ -1237,24 +1392,24 @@
 }, 
 "Tn17505033": {
 "edge256126": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17505033", 
 "@target": "Tn17504954"
 }, 
 "edge256128": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17505033", 
 "@target": "Tn17505006"
 }
 }, 
 "Tn17505034": {
 "edge256078": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17505034", 
 "@target": "Tn17504968"
 }, 
 "edge256080": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17505034", 
 "@target": "Tn17504949"
 }
@@ -1266,39 +1421,39 @@
 "@target": "Tn17504969"
 }, 
 "edge256108": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17505039", 
 "@target": "Tn17504990"
 }, 
 "edge256110": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17505039", 
 "@target": "Tn17504973"
 }, 
 "edge256112": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17505039", 
 "@target": "Tn17504939"
 }, 
 "edge256114": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17505039", 
 "@target": "Tn17504980"
 }, 
 "edge256116": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17505039", 
 "@target": "Tn17505043"
 }
 }, 
 "Tn17505041": {
 "edge256062": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17505041", 
 "@target": "Tn17504944"
 }, 
 "edge256064": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17505041", 
 "@target": "Tn17505050"
 }
@@ -1317,31 +1472,31 @@
 }, 
 "Tn17505048": {
 "edge256182": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17505048", 
 "@target": "Tn17505007"
 }, 
 "edge256184": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17505048", 
 "@target": "Tn17504950"
 }
 }, 
 "Tn17505049": {
 "edge256098": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17505049", 
 "@target": "Tn17504972"
 }, 
 "edge256100": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17505049", 
 "@target": "Tn17505027"
 }
 }, 
 "Tn17505050": {
 "edge256066": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17505050", 
 "@target": "Tn17505021"
 }, 
@@ -1349,6 +1504,17 @@
 "@length": 0.001636, 
 "@source": "Tn17505050", 
 "@target": "Tn17505044"
+}
+}, 
+"Tr111745_ROOT": {
+"Tr111745_ROOT_EDGE": {
+"@source": "Tr111745_ROOT", 
+"@target": "Tn17504962"
+}, 
+"edge256052": {
+"@length": 0.0538985, 
+"@source": "Tr111745_ROOT", 
+"@target": "Tn17504965"
 }
 }
 }, 
@@ -1362,35 +1528,43 @@
 "@otu": "Tl3173232"
 }, 
 "Tn17504942": {
-"@otu": "Tl3173219"
+"@otu": "Tl3173219", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn17504943": {
 "@otu": "Tl3173215"
 }, 
 "Tn17504944": {
-"@otu": "Tl3173252"
+"@otu": "Tl3173252", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn17504945": {
-"@otu": "Tl3173246"
+"@otu": "Tl3173246", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn17504946": {}, 
 "Tn17504947": {
-"@otu": "Tl3173209"
+"@otu": "Tl3173209", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn17504948": {
-"@otu": "Tl3173208"
+"@otu": "Tl3173208", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn17504949": {
-"@otu": "Tl3173220"
+"@otu": "Tl3173220", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn17504950": {}, 
 "Tn17504951": {}, 
 "Tn17504952": {}, 
 "Tn17504953": {
-"@otu": "Tl3173262"
+"@otu": "Tl3173262", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn17504954": {
-"@otu": "Tl3173221"
+"@otu": "Tl3173221", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn17504955": {
 "@otu": "Tl3173256"
@@ -1401,20 +1575,21 @@
 "Tn17504959": {}, 
 "Tn17504960": {}, 
 "Tn17504961": {}, 
-"Tn17504962": {
-"@root": true
-}, 
+"Tn17504962": {}, 
 "Tn17504963": {}, 
 "Tn17504964": {}, 
 "Tn17504965": {}, 
 "Tn17504966": {
-"@otu": "Tl3173248"
+"@otu": "Tl3173248", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn17504967": {
-"@otu": "Tl3173206"
+"@otu": "Tl3173206", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn17504968": {
-"@otu": "Tl3173245"
+"@otu": "Tl3173245", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn17504969": {
 "@otu": "Tl3173268"
@@ -1431,105 +1606,128 @@
 }, 
 "Tn17504974": {}, 
 "Tn17504975": {
-"@otu": "Tl3173255"
+"@otu": "Tl3173255", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn17504976": {
-"@otu": "Tl3173247"
+"@otu": "Tl3173247", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn17504977": {}, 
 "Tn17504978": {}, 
 "Tn17504979": {
-"@otu": "Tl3173265"
+"@otu": "Tl3173265", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn17504980": {
 "@otu": "Tl3173249"
 }, 
 "Tn17504981": {}, 
 "Tn17504982": {
-"@otu": "Tl3173264"
+"@otu": "Tl3173264", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn17504983": {}, 
 "Tn17504984": {
-"@otu": "Tl3173239"
+"@otu": "Tl3173239", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn17504985": {
-"@otu": "Tl3173222"
+"@otu": "Tl3173222", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn17504986": {
-"@otu": "Tl3173212"
+"@otu": "Tl3173212", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn17504987": {
-"@otu": "Tl3173243"
+"@otu": "Tl3173243", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn17504988": {
-"@otu": "Tl3173241"
+"@otu": "Tl3173241", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn17504989": {}, 
 "Tn17504990": {
 "@otu": "Tl3173257"
 }, 
 "Tn17504991": {
-"@otu": "Tl3173228"
+"@otu": "Tl3173228", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn17504992": {}, 
 "Tn17504993": {}, 
 "Tn17504994": {}, 
 "Tn17504995": {
-"@otu": "Tl3173235"
+"@otu": "Tl3173235", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn17504996": {}, 
 "Tn17504997": {}, 
 "Tn17504998": {
-"@otu": "Tl3173259"
+"@otu": "Tl3173259", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn17504999": {}, 
 "Tn17505000": {}, 
 "Tn17505001": {
-"@otu": "Tl3173224"
+"@otu": "Tl3173224", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn17505002": {
-"@otu": "Tl3173230"
+"@otu": "Tl3173230", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn17505003": {}, 
 "Tn17505004": {}, 
 "Tn17505005": {
-"@otu": "Tl3173242"
+"@otu": "Tl3173242", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn17505006": {
-"@otu": "Tl3173254"
+"@otu": "Tl3173254", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn17505007": {
 "@otu": "Tl3173223"
 }, 
 "Tn17505008": {
-"@otu": "Tl3173207"
+"@otu": "Tl3173207", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn17505009": {}, 
 "Tn17505010": {}, 
 "Tn17505011": {}, 
 "Tn17505012": {}, 
 "Tn17505013": {
-"@otu": "Tl3173251"
+"@otu": "Tl3173251", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn17505014": {
-"@otu": "Tl3173250"
+"@otu": "Tl3173250", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn17505015": {}, 
 "Tn17505016": {
-"@otu": "Tl3173263"
+"@otu": "Tl3173263", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn17505017": {
 "@otu": "Tl3173233"
 }, 
 "Tn17505018": {
-"@otu": "Tl3173244"
+"@otu": "Tl3173244", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn17505019": {
-"@otu": "Tl3173238"
+"@otu": "Tl3173238", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn17505020": {}, 
 "Tn17505021": {
-"@otu": "Tl3173261"
+"@otu": "Tl3173261", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn17505022": {
 "@otu": "Tl3173237"
@@ -1538,69 +1736,95 @@
 "@otu": "Tl3173214"
 }, 
 "Tn17505024": {
-"@otu": "Tl3173225"
+"@otu": "Tl3173225", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn17505025": {}, 
 "Tn17505026": {
-"@otu": "Tl3173240"
+"@otu": "Tl3173240", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn17505027": {}, 
 "Tn17505028": {}, 
 "Tn17505029": {}, 
 "Tn17505030": {}, 
 "Tn17505031": {
-"@otu": "Tl3173231"
+"@otu": "Tl3173231", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn17505032": {
-"@otu": "Tl3173210"
+"@otu": "Tl3173210", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn17505033": {}, 
 "Tn17505034": {}, 
 "Tn17505035": {
-"@otu": "Tl3173226"
+"@otu": "Tl3173226", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn17505036": {
-"@otu": "Tl3173218"
+"@otu": "Tl3173218", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn17505037": {
 "@otu": "Tl3173260"
 }, 
 "Tn17505038": {
-"@otu": "Tl3173217"
+"@otu": "Tl3173217", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn17505039": {}, 
 "Tn17505040": {
-"@otu": "Tl3173227"
+"@otu": "Tl3173227", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn17505041": {}, 
 "Tn17505042": {
-"@otu": "Tl3173229"
+"@otu": "Tl3173229", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn17505043": {
 "@otu": "Tl3173236"
 }, 
 "Tn17505044": {
-"@otu": "Tl3173266"
+"@otu": "Tl3173266", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn17505045": {
 "@otu": "Tl3173253"
 }, 
 "Tn17505046": {
-"@otu": "Tl3173258"
+"@otu": "Tl3173258", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn17505047": {}, 
 "Tn17505048": {}, 
 "Tn17505049": {}, 
 "Tn17505050": {}, 
 "Tn17505051": {
-"@otu": "Tl3173213"
+"@otu": "Tl3173213", 
+"^ot:isTaxonExemplar": false
+}, 
+"Tr111745_ROOT": {
+"@root": true
 }
 }
 }, 
 "Tr111746": {
 "@label": "PAUP_2", 
 "@xsi:type": "nex:FloatTree", 
-"^ot:rootNodeId": "Tn17505094", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:changesCount", 
+"^ot:curatedType": "Maximum parsimony ", 
+"^ot:inGroupClade": "Tn17505065", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
+"^ot:rootNodeId": "Tr111746_ROOT", 
+"^ot:specifiedRoot": "Tr111746_ROOT", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 63, 
 "^tb:quality.tree": "Unrated", 
@@ -1608,36 +1832,36 @@
 "edgeBySourceId": {
 "Tn17505053": {
 "edge255958": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17505053", 
 "@target": "Tn17505165"
 }, 
 "edge255960": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17505053", 
 "@target": "Tn17505054"
 }
 }, 
 "Tn17505055": {
 "edge255877": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17505055", 
 "@target": "Tn17505151"
 }, 
 "edge255879": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17505055", 
 "@target": "Tn17505127"
 }
 }, 
 "Tn17505056": {
 "edge255848": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17505056", 
 "@target": "Tn17505085"
 }, 
 "edge255850": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17505056", 
 "@target": "Tn17505066"
 }
@@ -1680,19 +1904,19 @@
 }, 
 "Tn17505066": {
 "edge255853": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17505066", 
 "@target": "Tn17505144"
 }, 
 "edge255855": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17505066", 
 "@target": "Tn17505115"
 }
 }, 
 "Tn17505067": {
 "edge255809": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17505067", 
 "@target": "Tn17505097"
 }, 
@@ -1716,12 +1940,12 @@
 }, 
 "Tn17505073": {
 "edge256008": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17505073", 
 "@target": "Tn17505124"
 }, 
 "edge256010": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17505073", 
 "@target": "Tn17505084"
 }
@@ -1740,12 +1964,12 @@
 }, 
 "Tn17505076": {
 "edge255894": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17505076", 
 "@target": "Tn17505061"
 }, 
 "edge255896": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17505076", 
 "@target": "Tn17505107"
 }
@@ -1764,46 +1988,46 @@
 }, 
 "Tn17505082": {
 "edge255904": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17505082", 
 "@target": "Tn17505132"
 }, 
 "edge255906": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17505082", 
 "@target": "Tn17505109"
 }, 
 "edge255908": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17505082", 
 "@target": "Tn17505079"
 }
 }, 
 "Tn17505089": {
 "edge255990": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17505089", 
 "@target": "Tn17505078"
 }, 
 "edge255992": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17505089", 
 "@target": "Tn17505147"
 }, 
 "edge255994": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17505089", 
 "@target": "Tn17505145"
 }
 }, 
 "Tn17505091": {
 "edge255890": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17505091", 
 "@target": "Tn17505071"
 }, 
 "edge255892": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17505091", 
 "@target": "Tn17505076"
 }
@@ -1821,11 +2045,6 @@
 }
 }, 
 "Tn17505094": {
-"edge255788": {
-"@length": 0.053874, 
-"@source": "Tn17505094", 
-"@target": "Tn17505130"
-}, 
 "edge255796": {
 "@length": 0.053874, 
 "@source": "Tn17505094", 
@@ -1834,36 +2053,36 @@
 }, 
 "Tn17505095": {
 "edge255912": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17505095", 
 "@target": "Tn17505163"
 }, 
 "edge255914": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17505095", 
 "@target": "Tn17505155"
 }
 }, 
 "Tn17505096": {
 "edge255824": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17505096", 
 "@target": "Tn17505098"
 }, 
 "edge255826": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17505096", 
 "@target": "Tn17505143"
 }
 }, 
 "Tn17505100": {
 "edge255817": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17505100", 
 "@target": "Tn17505075"
 }, 
 "edge255819": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17505100", 
 "@target": "Tn17505096"
 }
@@ -1875,7 +2094,7 @@
 "@target": "Tn17505158"
 }, 
 "edge255947": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17505101", 
 "@target": "Tn17505162"
 }
@@ -1894,12 +2113,12 @@
 }, 
 "Tn17505105": {
 "edge256030": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17505105", 
 "@target": "Tn17505120"
 }, 
 "edge256033": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17505105", 
 "@target": "Tn17505123"
 }, 
@@ -1923,12 +2142,12 @@
 }, 
 "Tn17505110": {
 "edge255802": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17505110", 
 "@target": "Tn17505129"
 }, 
 "edge255805": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17505110", 
 "@target": "Tn17505067"
 }
@@ -1964,27 +2183,27 @@
 "@target": "Tn17505104"
 }, 
 "edge255863": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17505115", 
 "@target": "Tn17505160"
 }, 
 "edge255865": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17505115", 
 "@target": "Tn17505103"
 }, 
 "edge255867": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17505115", 
 "@target": "Tn17505138"
 }, 
 "edge255869": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17505115", 
 "@target": "Tn17505156"
 }, 
 "edge255871": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17505115", 
 "@target": "Tn17505135"
 }
@@ -1996,19 +2215,19 @@
 "@target": "Tn17505052"
 }, 
 "edge255844": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17505116", 
 "@target": "Tn17505161"
 }
 }, 
 "Tn17505118": {
 "edge255935": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17505118", 
 "@target": "Tn17505058"
 }, 
 "edge255937": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17505118", 
 "@target": "Tn17505122"
 }
@@ -2027,12 +2246,12 @@
 }, 
 "Tn17505121": {
 "edge256020": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17505121", 
 "@target": "Tn17505086"
 }, 
 "edge256022": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17505121", 
 "@target": "Tn17505154"
 }
@@ -2044,7 +2263,7 @@
 "@target": "Tn17505062"
 }, 
 "edge256037": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17505123", 
 "@target": "Tn17505159"
 }
@@ -2063,12 +2282,12 @@
 }, 
 "Tn17505127": {
 "edge255881": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17505127", 
 "@target": "Tn17505164"
 }, 
 "edge255883": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17505127", 
 "@target": "Tn17505057"
 }
@@ -2087,12 +2306,12 @@
 }, 
 "Tn17505131": {
 "edge255964": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17505131", 
 "@target": "Tn17505114"
 }, 
 "edge255966": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17505131", 
 "@target": "Tn17505090"
 }, 
@@ -2121,7 +2340,7 @@
 "@target": "Tn17505113"
 }, 
 "edge256018": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17505134", 
 "@target": "Tn17505121"
 }
@@ -2133,19 +2352,19 @@
 "@target": "Tn17505070"
 }, 
 "edge255980": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17505139", 
 "@target": "Tn17505063"
 }
 }, 
 "Tn17505140": {
 "edge256001": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17505140", 
 "@target": "Tn17505128"
 }, 
 "edge256004": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17505140", 
 "@target": "Tn17505073"
 }
@@ -2176,17 +2395,17 @@
 }, 
 "Tn17505146": {
 "edge255927": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17505146", 
 "@target": "Tn17505068"
 }, 
 "edge255929": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17505146", 
 "@target": "Tn17505150"
 }, 
 "edge255931": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17505146", 
 "@target": "Tn17505118"
 }
@@ -2210,7 +2429,7 @@
 "@target": "Tn17505080"
 }, 
 "edge256043": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17505149", 
 "@target": "Tn17505099"
 }
@@ -2234,24 +2453,24 @@
 "@target": "Tn17505157"
 }, 
 "edge256026": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17505154", 
 "@target": "Tn17505077"
 }
 }, 
 "Tn17505155": {
 "edge255918": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17505155", 
 "@target": "Tn17505072"
 }, 
 "edge255920": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17505155", 
 "@target": "Tn17505088"
 }, 
 "edge255922": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17505155", 
 "@target": "Tn17505137"
 }, 
@@ -2263,43 +2482,60 @@
 }, 
 "Tn17505162": {
 "edge255950": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17505162", 
 "@target": "Tn17505141"
 }, 
 "edge255952": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17505162", 
 "@target": "Tn17505117"
+}
+}, 
+"Tr111746_ROOT": {
+"Tr111746_ROOT_EDGE": {
+"@source": "Tr111746_ROOT", 
+"@target": "Tn17505094"
+}, 
+"edge255788": {
+"@length": 0.053874, 
+"@source": "Tr111746_ROOT", 
+"@target": "Tn17505130"
 }
 }
 }, 
 "nodeById": {
 "Tn17505052": {
-"@otu": "Tl3173218"
+"@otu": "Tl3173218", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn17505053": {}, 
 "Tn17505054": {
-"@otu": "Tl3173219"
+"@otu": "Tl3173219", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn17505055": {}, 
 "Tn17505056": {}, 
 "Tn17505057": {
-"@otu": "Tl3173254"
+"@otu": "Tl3173254", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn17505058": {
-"@otu": "Tl3173231"
+"@otu": "Tl3173231", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn17505059": {}, 
 "Tn17505060": {}, 
 "Tn17505061": {
-"@otu": "Tl3173230"
+"@otu": "Tl3173230", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn17505062": {
 "@otu": "Tl3173232"
 }, 
 "Tn17505063": {
-"@otu": "Tl3173243"
+"@otu": "Tl3173243", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn17505064": {
 "@otu": "Tl3173233"
@@ -2308,35 +2544,44 @@
 "Tn17505066": {}, 
 "Tn17505067": {}, 
 "Tn17505068": {
-"@otu": "Tl3173210"
+"@otu": "Tl3173210", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn17505069": {}, 
 "Tn17505070": {
-"@otu": "Tl3173238"
+"@otu": "Tl3173238", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn17505071": {
-"@otu": "Tl3173240"
+"@otu": "Tl3173240", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn17505072": {
-"@otu": "Tl3173241"
+"@otu": "Tl3173241", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn17505073": {}, 
 "Tn17505074": {}, 
 "Tn17505075": {
-"@otu": "Tl3173246"
+"@otu": "Tl3173246", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn17505076": {}, 
 "Tn17505077": {
-"@otu": "Tl3173247"
+"@otu": "Tl3173247", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn17505078": {
-"@otu": "Tl3173239"
+"@otu": "Tl3173239", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn17505079": {
-"@otu": "Tl3173242"
+"@otu": "Tl3173242", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn17505080": {
-"@otu": "Tl3173259"
+"@otu": "Tl3173259", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn17505081": {}, 
 "Tn17505082": {}, 
@@ -2344,42 +2589,49 @@
 "@otu": "Tl3173215"
 }, 
 "Tn17505084": {
-"@otu": "Tl3173213"
+"@otu": "Tl3173213", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn17505085": {
 "@otu": "Tl3173267"
 }, 
 "Tn17505086": {
-"@otu": "Tl3173250"
+"@otu": "Tl3173250", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn17505087": {
-"@otu": "Tl3173244"
+"@otu": "Tl3173244", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn17505088": {
-"@otu": "Tl3173255"
+"@otu": "Tl3173255", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn17505089": {}, 
 "Tn17505090": {
-"@otu": "Tl3173222"
+"@otu": "Tl3173222", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn17505091": {}, 
 "Tn17505092": {}, 
 "Tn17505093": {
-"@otu": "Tl3173209"
+"@otu": "Tl3173209", 
+"^ot:isTaxonExemplar": false
 }, 
-"Tn17505094": {
-"@root": true
-}, 
+"Tn17505094": {}, 
 "Tn17505095": {}, 
 "Tn17505096": {}, 
 "Tn17505097": {
-"@otu": "Tl3173261"
+"@otu": "Tl3173261", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn17505098": {
-"@otu": "Tl3173245"
+"@otu": "Tl3173245", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn17505099": {
-"@otu": "Tl3173207"
+"@otu": "Tl3173207", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn17505100": {}, 
 "Tn17505101": {}, 
@@ -2395,20 +2647,24 @@
 "@otu": "Tl3173256"
 }, 
 "Tn17505107": {
-"@otu": "Tl3173208"
+"@otu": "Tl3173208", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn17505108": {}, 
 "Tn17505109": {
-"@otu": "Tl3173265"
+"@otu": "Tl3173265", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn17505110": {}, 
 "Tn17505111": {}, 
 "Tn17505112": {}, 
 "Tn17505113": {
-"@otu": "Tl3173263"
+"@otu": "Tl3173263", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn17505114": {
-"@otu": "Tl3173212"
+"@otu": "Tl3173212", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn17505115": {}, 
 "Tn17505116": {}, 
@@ -2422,11 +2678,13 @@
 }, 
 "Tn17505121": {}, 
 "Tn17505122": {
-"@otu": "Tl3173206"
+"@otu": "Tl3173206", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn17505123": {}, 
 "Tn17505124": {
-"@otu": "Tl3173248"
+"@otu": "Tl3173248", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn17505125": {}, 
 "Tn17505126": {
@@ -2434,15 +2692,18 @@
 }, 
 "Tn17505127": {}, 
 "Tn17505128": {
-"@otu": "Tl3173229"
+"@otu": "Tl3173229", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn17505129": {
-"@otu": "Tl3173252"
+"@otu": "Tl3173252", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn17505130": {}, 
 "Tn17505131": {}, 
 "Tn17505132": {
-"@otu": "Tl3173217"
+"@otu": "Tl3173217", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn17505133": {}, 
 "Tn17505134": {}, 
@@ -2450,10 +2711,12 @@
 "@otu": "Tl3173236"
 }, 
 "Tn17505136": {
-"@otu": "Tl3173266"
+"@otu": "Tl3173266", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn17505137": {
-"@otu": "Tl3173251"
+"@otu": "Tl3173251", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn17505138": {
 "@otu": "Tl3173216"
@@ -2465,7 +2728,8 @@
 }, 
 "Tn17505142": {}, 
 "Tn17505143": {
-"@otu": "Tl3173220"
+"@otu": "Tl3173220", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn17505144": {
 "@otu": "Tl3173214"
@@ -2473,19 +2737,23 @@
 "Tn17505145": {}, 
 "Tn17505146": {}, 
 "Tn17505147": {
-"@otu": "Tl3173262"
+"@otu": "Tl3173262", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn17505148": {}, 
 "Tn17505149": {}, 
 "Tn17505150": {
-"@otu": "Tl3173226"
+"@otu": "Tl3173226", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn17505151": {
-"@otu": "Tl3173227"
+"@otu": "Tl3173227", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn17505152": {}, 
 "Tn17505153": {
-"@otu": "Tl3173258"
+"@otu": "Tl3173258", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn17505154": {}, 
 "Tn17505155": {}, 
@@ -2493,29 +2761,38 @@
 "@otu": "Tl3173249"
 }, 
 "Tn17505157": {
-"@otu": "Tl3173264"
+"@otu": "Tl3173264", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn17505158": {
 "@otu": "Tl3173237"
 }, 
 "Tn17505159": {
-"@otu": "Tl3173228"
+"@otu": "Tl3173228", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn17505160": {
 "@otu": "Tl3173257"
 }, 
 "Tn17505161": {
-"@otu": "Tl3173225"
+"@otu": "Tl3173225", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn17505162": {}, 
 "Tn17505163": {
-"@otu": "Tl3173224"
+"@otu": "Tl3173224", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn17505164": {
-"@otu": "Tl3173221"
+"@otu": "Tl3173221", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn17505165": {
-"@otu": "Tl3173235"
+"@otu": "Tl3173235", 
+"^ot:isTaxonExemplar": false
+}, 
+"Tr111746_ROOT": {
+"@root": true
 }
 }
 }
