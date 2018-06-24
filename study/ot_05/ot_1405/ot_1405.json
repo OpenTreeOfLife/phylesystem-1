@@ -48,16 +48,106 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2018-06-24T23:19:48.040Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "Eudicots"
 }, 
-"^ot:curatorName": "Walter1186", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}, 
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": "$1"
+}, 
+"old": {
+"$": "^(\\S*\\s+\\S*).*"
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2018-06-24T23:19:48.040Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Walter1186"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S21224"
 }, 
+"^ot:focalClade": 801072, 
+"^ot:focalCladeOTTTaxonName": "Hylocereeae", 
 "^ot:otusElementOrder": [
 "Tls62527"
 ], 
@@ -67,6 +157,7 @@
 }, 
 "^ot:studyPublicationReference": "Korotkova N., Borsch T., & Arias S. 2017. A phylogenetic framework for the Hylocereeae (Cactaceae) and implications for the circumscription of the genera. Phytotaxa, 327(1): 1-46.", 
 "^ot:studyYear": 2017, 
+"^ot:tag": [], 
 "^ot:taxonLinkPrefixes": {
 "@ubio": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:", 
 "@uniprot": "http://purl.uniprot.org/taxonomy/"
@@ -95,13 +186,19 @@
 "^skos:historyNote": "Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlOTUWriter@2e7728b8 $Rev$", 
 "otuById": {
 "Tl3108336": {
-"^ot:originalLabel": "Disocactus biformis CA281"
+"^ot:originalLabel": "Disocactus biformis CA281", 
+"^ot:ottId": 6034794, 
+"^ot:ottTaxonName": "Disocactus biformis"
 }, 
 "Tl3108337": {
-"^ot:originalLabel": "Pseudorhipsalis ramulosa CA214"
+"^ot:originalLabel": "Pseudorhipsalis ramulosa CA214", 
+"^ot:ottId": 5740381, 
+"^ot:ottTaxonName": "Pseudorhipsalis ramulosa"
 }, 
 "Tl3108338": {
 "^ot:originalLabel": "Corryocactus tenuiculus", 
+"^ot:ottId": 920676, 
+"^ot:ottTaxonName": "Corryocactus tenuiculus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 148342, 
 "@tb:identifier.taxonVariant": 224256, 
@@ -111,6 +208,8 @@
 }, 
 "Tl3108339": {
 "^ot:originalLabel": "Calymmanthium substerile", 
+"^ot:ottId": 1018999, 
+"^ot:ottTaxonName": "Calymmanthium substerile", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 4612, 
 "@tb:identifier.taxonVariant": 11090, 
@@ -120,6 +219,8 @@
 }, 
 "Tl3108340": {
 "^ot:originalLabel": "Myrtillocactus schenckii", 
+"^ot:ottId": 773135, 
+"^ot:ottTaxonName": "Myrtillocactus schenckii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 18625, 
 "@tb:identifier.taxonVariant": 43464, 
@@ -128,8 +229,9 @@
 }
 }, 
 "Tl3108341": {
-"^ot:altLabel": "Selenicereus grandiflorus", 
 "^ot:originalLabel": "Selenicereus grandiflorus CA371", 
+"^ot:ottId": 176900, 
+"^ot:ottTaxonName": "Selenicereus grandiflorus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 294887, 
 "@tb:identifier.taxonVariant": 345402, 
@@ -138,13 +240,19 @@
 }
 }, 
 "Tl3108342": {
-"^ot:originalLabel": "Disocactus speciosus ssp  bierianus CA304"
+"^ot:originalLabel": "Disocactus speciosus ssp  bierianus CA304", 
+"^ot:ottId": 423979, 
+"^ot:ottTaxonName": "Disocactus speciosus"
 }, 
 "Tl3108343": {
-"^ot:originalLabel": "Strophocactus wittii CA200"
+"^ot:originalLabel": "Strophocactus wittii CA200", 
+"^ot:ottId": 970484, 
+"^ot:ottTaxonName": "Selenicereus wittii"
 }, 
 "Tl3108344": {
 "^ot:originalLabel": "Corryocactus aureus", 
+"^ot:ottId": 1003802, 
+"^ot:ottTaxonName": "Corryocactus aureus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 602975, 
 "@tb:identifier.taxonVariant": 804416, 
@@ -152,17 +260,22 @@
 }
 }, 
 "Tl3108345": {
-"^ot:originalLabel": "Disocactus nelsonii ssp hondurensis CA297"
+"^ot:originalLabel": "Disocactus nelsonii ssp hondurensis CA297", 
+"^ot:ottId": 5761669, 
+"^ot:ottTaxonName": "Disocactus nelsonii"
 }, 
 "Tl3108346": {
-"^ot:originalLabel": "Selenicereus wercklei CA232"
+"^ot:originalLabel": "Selenicereus wercklei CA232", 
+"^ot:ottId": 5232190, 
+"^ot:ottTaxonName": "Selenicereus inermis"
 }, 
 "Tl3108347": {
 "^ot:originalLabel": "Epiphyllum aff phyllanthus CA213"
 }, 
 "Tl3108348": {
-"^ot:altLabel": "Selenicereus vagans", 
 "^ot:originalLabel": "Selenicereus vagans CA342", 
+"^ot:ottId": 219331, 
+"^ot:ottTaxonName": "Selenicereus vagans", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 607853, 
 "@tb:identifier.taxonVariant": 811852, 
@@ -171,6 +284,8 @@
 }, 
 "Tl3108349": {
 "^ot:originalLabel": "Pseudoacanthocereus sicariguensis", 
+"^ot:ottId": 700167, 
+"^ot:ottTaxonName": "Pseudoacanthocereus sicariguensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 294885, 
 "@tb:identifier.taxonVariant": 345400, 
@@ -179,14 +294,19 @@
 }
 }, 
 "Tl3108350": {
-"^ot:originalLabel": "Weberocereus frohningiorum CA340"
+"^ot:originalLabel": "Weberocereus frohningiorum CA340", 
+"^ot:ottId": 6034837, 
+"^ot:ottTaxonName": "Weberocereus frohningiorum"
 }, 
 "Tl3108351": {
-"^ot:originalLabel": "Epiphyllum chrysocardium CA434"
+"^ot:originalLabel": "Epiphyllum chrysocardium CA434", 
+"^ot:ottId": 6034832, 
+"^ot:ottTaxonName": "Selenicereus chrysocardium"
 }, 
 "Tl3108352": {
-"^ot:altLabel": "Epiphyllum phyllanthus", 
 "^ot:originalLabel": "Epiphyllum phyllanthus CA262", 
+"^ot:ottId": 699564, 
+"^ot:ottTaxonName": "Epiphyllum phyllanthus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 602940, 
 "@tb:identifier.taxonVariant": 804339, 
@@ -197,8 +317,9 @@
 "^ot:originalLabel": "Selenicereus cf grandiflorus CA319"
 }, 
 "Tl3108354": {
-"^ot:altLabel": "Copiapoa coquimbana", 
 "^ot:originalLabel": "Copiapoa coquimbana CA126", 
+"^ot:ottId": 494647, 
+"^ot:ottTaxonName": "Copiapoa coquimbana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 602938, 
 "@tb:identifier.taxonVariant": 804337, 
@@ -207,6 +328,8 @@
 }, 
 "Tl3108355": {
 "^ot:originalLabel": "Stenocereus eruca", 
+"^ot:ottId": 270413, 
+"^ot:ottTaxonName": "Stenocereus eruca", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 602952, 
 "@tb:identifier.taxonVariant": 804374, 
@@ -214,26 +337,39 @@
 }
 }, 
 "Tl3108356": {
-"^ot:originalLabel": "Epiphyllum baueri CA305"
+"^ot:originalLabel": "Epiphyllum baueri CA305", 
+"^ot:ottId": 6034809, 
+"^ot:ottTaxonName": "Epiphyllum baueri"
 }, 
 "Tl3108357": {
-"^ot:originalLabel": "Hylocereus calcaratus CA223"
+"^ot:originalLabel": "Hylocereus calcaratus CA223", 
+"^ot:ottId": 6034824, 
+"^ot:ottTaxonName": "Hylocereus calcaratus"
 }, 
 "Tl3108358": {
-"^ot:originalLabel": "Weberocereus tunilla ssp biolleyi CA288"
+"^ot:originalLabel": "Weberocereus tunilla ssp biolleyi CA288", 
+"^ot:ottId": 5761680, 
+"^ot:ottTaxonName": "Weberocereus tunilla"
 }, 
 "Tl3108359": {
-"^ot:originalLabel": "Hylocereus minutiflorus CA221"
+"^ot:originalLabel": "Hylocereus minutiflorus CA221", 
+"^ot:ottId": 6034826, 
+"^ot:ottTaxonName": "Hylocereus minutiflorus"
 }, 
 "Tl3108360": {
-"^ot:originalLabel": "Hylocereus setaceus CA234"
+"^ot:originalLabel": "Hylocereus setaceus CA234", 
+"^ot:ottId": 6034828, 
+"^ot:ottTaxonName": "Hylocereus setaceus"
 }, 
 "Tl3108361": {
-"^ot:originalLabel": "Selenicereus grandiflorus ssp donkelarii CA240"
+"^ot:originalLabel": "Selenicereus grandiflorus ssp donkelarii CA240", 
+"^ot:ottId": 176900, 
+"^ot:ottTaxonName": "Selenicereus grandiflorus"
 }, 
 "Tl3108362": {
-"^ot:altLabel": "Epiphyllum phyllanthus", 
 "^ot:originalLabel": "Epiphyllum phyllanthus CA243", 
+"^ot:ottId": 699564, 
+"^ot:ottTaxonName": "Epiphyllum phyllanthus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 602940, 
 "@tb:identifier.taxonVariant": 804339, 
@@ -241,11 +377,14 @@
 }
 }, 
 "Tl3108363": {
-"^ot:originalLabel": "Aporocactus flagelliformis CA241"
+"^ot:originalLabel": "Aporocactus flagelliformis CA241", 
+"^ot:ottId": 278471, 
+"^ot:ottTaxonName": "Disocactus flagelliformis"
 }, 
 "Tl3108364": {
-"^ot:altLabel": "Pfeiffera ianthothele", 
 "^ot:originalLabel": "Pfeiffera ianthothele CA084", 
+"^ot:ottId": 819450, 
+"^ot:ottTaxonName": "Pfeiffera ianthothele", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 148370, 
 "@tb:identifier.taxonVariant": 224280, 
@@ -254,13 +393,19 @@
 }
 }, 
 "Tl3108365": {
-"^ot:originalLabel": "Epiphyllum baueri CA206"
+"^ot:originalLabel": "Epiphyllum baueri CA206", 
+"^ot:ottId": 6034809, 
+"^ot:ottTaxonName": "Epiphyllum baueri"
 }, 
 "Tl3108366": {
-"^ot:originalLabel": "Weberocereus tonduzii CA201"
+"^ot:originalLabel": "Weberocereus tonduzii CA201", 
+"^ot:ottId": 6034840, 
+"^ot:ottTaxonName": "Weberocereus tonduzii"
 }, 
 "Tl3108367": {
 "^ot:originalLabel": "Escontria chiotilla", 
+"^ot:ottId": 295076, 
+"^ot:ottTaxonName": "Escontria chiotilla", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 10615, 
 "@tb:identifier.taxonVariant": 25444, 
@@ -269,17 +414,22 @@
 }
 }, 
 "Tl3108368": {
-"^ot:originalLabel": "Epiphyllum phyllanthus ssp rubrocoronatum CA292"
+"^ot:originalLabel": "Epiphyllum phyllanthus ssp rubrocoronatum CA292", 
+"^ot:ottId": 699564, 
+"^ot:ottTaxonName": "Epiphyllum phyllanthus"
 }, 
 "Tl3108369": {
 "^ot:originalLabel": "Selenicereus dorschianus HOLO CA395"
 }, 
 "Tl3108370": {
-"^ot:originalLabel": "Selenicereus inermis ssp tricae Hunt 7067 HOLO CA328"
+"^ot:originalLabel": "Selenicereus inermis ssp tricae Hunt 7067 HOLO CA328", 
+"^ot:ottId": 5232190, 
+"^ot:ottTaxonName": "Selenicereus inermis"
 }, 
 "Tl3108371": {
-"^ot:altLabel": "Epiphyllum cartagense", 
 "^ot:originalLabel": "Epiphyllum cartagense CA313", 
+"^ot:ottId": 5740210, 
+"^ot:ottTaxonName": "Epiphyllum cartagense", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 631546, 
 "@tb:identifier.taxonVariant": 846558, 
@@ -287,8 +437,9 @@
 }
 }, 
 "Tl3108372": {
-"^ot:altLabel": "Selenicereus pteranthus", 
 "^ot:originalLabel": "Selenicereus pteranthus CA391", 
+"^ot:ottId": 846426, 
+"^ot:ottTaxonName": "Selenicereus pteranthus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 607851, 
 "@tb:identifier.taxonVariant": 811850, 
@@ -297,6 +448,8 @@
 }, 
 "Tl3108373": {
 "^ot:originalLabel": "Leptocereus leonii", 
+"^ot:ottId": 870023, 
+"^ot:ottTaxonName": "Leptocereus leonii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 148359, 
 "@tb:identifier.taxonVariant": 224271, 
@@ -305,8 +458,9 @@
 }
 }, 
 "Tl3108374": {
-"^ot:altLabel": "Selenicereus inermis", 
 "^ot:originalLabel": "Selenicereus inermis CA309", 
+"^ot:ottId": 5232190, 
+"^ot:ottTaxonName": "Selenicereus inermis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 617123, 
 "@tb:identifier.taxonVariant": 825877, 
@@ -314,8 +468,9 @@
 }
 }, 
 "Tl3108375": {
-"^ot:altLabel": "Disocactus eichlamii", 
 "^ot:originalLabel": "Disocactus eichlamii CA300", 
+"^ot:ottId": 6034795, 
+"^ot:ottTaxonName": "Disocactus eichlamii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 631535, 
 "@tb:identifier.taxonVariant": 846547, 
@@ -323,11 +478,14 @@
 }
 }, 
 "Tl3108376": {
-"^ot:originalLabel": "Disocactus macdougallii CA269"
+"^ot:originalLabel": "Disocactus macdougallii CA269", 
+"^ot:ottId": 6034797, 
+"^ot:ottTaxonName": "Disocactus macdougallii"
 }, 
 "Tl3108377": {
-"^ot:altLabel": "Disocactus quezaltecus", 
 "^ot:originalLabel": "Disocactus quezaltecus CA284", 
+"^ot:ottId": 6034799, 
+"^ot:ottTaxonName": "Disocactus quezaltecus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 631536, 
 "@tb:identifier.taxonVariant": 846548, 
@@ -335,35 +493,54 @@
 }
 }, 
 "Tl3108378": {
-"^ot:originalLabel": "Hylocereus extensus CA205"
+"^ot:originalLabel": "Hylocereus extensus CA205", 
+"^ot:ottId": 6034825, 
+"^ot:ottTaxonName": "Hylocereus extensus"
 }, 
 "Tl3108379": {
-"^ot:originalLabel": "Weberocereus trichophorus CA354"
+"^ot:originalLabel": "Weberocereus trichophorus CA354", 
+"^ot:ottId": 6034841, 
+"^ot:ottTaxonName": "Weberocereus trichophorus"
 }, 
 "Tl3108380": {
-"^ot:originalLabel": "Aporocactus martianus CA318"
+"^ot:originalLabel": "Aporocactus martianus CA318", 
+"^ot:ottId": 355457, 
+"^ot:ottTaxonName": "Disocactus martianus"
 }, 
 "Tl3108381": {
-"^ot:originalLabel": "Selenicereus grandiflorus ssp lautneri CA367"
+"^ot:originalLabel": "Selenicereus grandiflorus ssp lautneri CA367", 
+"^ot:ottId": 176900, 
+"^ot:ottTaxonName": "Selenicereus grandiflorus"
 }, 
 "Tl3108382": {
-"^ot:originalLabel": "Epiphyllum thomasianum ssp costaricense CA285"
+"^ot:originalLabel": "Epiphyllum thomasianum ssp costaricense CA285", 
+"^ot:ottId": 5761674, 
+"^ot:ottTaxonName": "Epiphyllum thomasianum"
 }, 
 "Tl3108383": {
-"^ot:originalLabel": "Pseudorhipsalis amazonica ssp panamensis CA202"
+"^ot:originalLabel": "Pseudorhipsalis amazonica ssp panamensis CA202", 
+"^ot:ottId": 920673, 
+"^ot:ottTaxonName": "Disocactus amazonicus"
 }, 
 "Tl3108384": {
-"^ot:originalLabel": "Epiphyllum crenatum ssp kimnachii CA248"
+"^ot:originalLabel": "Epiphyllum crenatum ssp kimnachii CA248", 
+"^ot:ottId": 5761679, 
+"^ot:ottTaxonName": "Epiphyllum crenatum"
 }, 
 "Tl3108385": {
-"^ot:originalLabel": "Weberocereus trichophorus CA211"
+"^ot:originalLabel": "Weberocereus trichophorus CA211", 
+"^ot:ottId": 6034841, 
+"^ot:ottTaxonName": "Weberocereus trichophorus"
 }, 
 "Tl3108386": {
-"^ot:originalLabel": "Hylocereus extensus CA239"
+"^ot:originalLabel": "Hylocereus extensus CA239", 
+"^ot:ottId": 6034825, 
+"^ot:ottTaxonName": "Hylocereus extensus"
 }, 
 "Tl3108387": {
-"^ot:altLabel": "Disocactus nelsonii", 
 "^ot:originalLabel": "Disocactus nelsonii CA277", 
+"^ot:ottId": 5761669, 
+"^ot:ottTaxonName": "Disocactus nelsonii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 631539, 
 "@tb:identifier.taxonVariant": 846551, 
@@ -372,6 +549,8 @@
 }, 
 "Tl3108388": {
 "^ot:originalLabel": "Echinocereus cinerascens", 
+"^ot:ottId": 384758, 
+"^ot:ottTaxonName": "Echinocereus cinerascens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 602992, 
 "@tb:identifier.taxonVariant": 804445, 
@@ -380,6 +559,8 @@
 }, 
 "Tl3108389": {
 "^ot:originalLabel": "Frailea pumila", 
+"^ot:ottId": 298095, 
+"^ot:ottTaxonName": "Frailea pumila", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 602936, 
 "@tb:identifier.taxonVariant": 804335, 
@@ -387,8 +568,9 @@
 }
 }, 
 "Tl3108390": {
-"^ot:altLabel": "Hylocereus ocamponis", 
 "^ot:originalLabel": "Hylocereus ocamponis CA222", 
+"^ot:ottId": 815039, 
+"^ot:ottTaxonName": "Hylocereus ocamponis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 607644, 
 "@tb:identifier.taxonVariant": 811502, 
@@ -396,10 +578,14 @@
 }
 }, 
 "Tl3108391": {
-"^ot:originalLabel": "Selenicereus pteranthus f macdonaldiae CA235"
+"^ot:originalLabel": "Selenicereus pteranthus f macdonaldiae CA235", 
+"^ot:ottId": 846426, 
+"^ot:ottTaxonName": "Selenicereus pteranthus"
 }, 
 "Tl3108392": {
 "^ot:originalLabel": "Echinocereus pentalophus", 
+"^ot:ottId": 920683, 
+"^ot:ottTaxonName": "Echinocereus pentalophus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 148345, 
 "@tb:identifier.taxonVariant": 224259, 
@@ -408,14 +594,17 @@
 }
 }, 
 "Tl3108393": {
-"^ot:originalLabel": "Weberocereus tunilla CA379"
+"^ot:originalLabel": "Weberocereus tunilla CA379", 
+"^ot:ottId": 5761680, 
+"^ot:ottTaxonName": "Weberocereus tunilla"
 }, 
 "Tl3108394": {
 "^ot:originalLabel": "Epiphyllum cf crenatum CA228"
 }, 
 "Tl3108395": {
-"^ot:altLabel": "Disocactus speciosus", 
 "^ot:originalLabel": "Disocactus speciosus CA387", 
+"^ot:ottId": 423979, 
+"^ot:ottTaxonName": "Disocactus speciosus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 607728, 
 "@tb:identifier.taxonVariant": 811671, 
@@ -423,8 +612,9 @@
 }
 }, 
 "Tl3108396": {
-"^ot:altLabel": "Epiphyllum pumilum", 
 "^ot:originalLabel": "Epiphyllum pumilum CA199", 
+"^ot:ottId": 6034822, 
+"^ot:ottTaxonName": "Epiphyllum pumilum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 631534, 
 "@tb:identifier.taxonVariant": 846546, 
@@ -432,17 +622,22 @@
 }
 }, 
 "Tl3108397": {
-"^ot:originalLabel": "Weberocereus imitans CA276"
+"^ot:originalLabel": "Weberocereus imitans CA276", 
+"^ot:ottId": 6034838, 
+"^ot:ottTaxonName": "Weberocereus imitans"
 }, 
 "Tl3108398": {
-"^ot:originalLabel": "Disocactus ackermannii CA286"
+"^ot:originalLabel": "Disocactus ackermannii CA286", 
+"^ot:ottId": 5740285, 
+"^ot:ottTaxonName": "Disocactus ackermannii"
 }, 
 "Tl3108399": {
 "^ot:originalLabel": "Cephalocereus columna trajani"
 }, 
 "Tl3108400": {
-"^ot:altLabel": "Selenicereus atropilosus", 
 "^ot:originalLabel": "Selenicereus atropilosus CA217", 
+"^ot:ottId": 5232187, 
+"^ot:ottTaxonName": "Selenicereus atropilosus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 617124, 
 "@tb:identifier.taxonVariant": 825881, 
@@ -451,6 +646,8 @@
 }, 
 "Tl3108401": {
 "^ot:originalLabel": "Dendrocereus nudiflorus", 
+"^ot:ottId": 407394, 
+"^ot:ottTaxonName": "Dendrocereus nudiflorus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 294836, 
 "@tb:identifier.taxonVariant": 345350, 
@@ -462,8 +659,9 @@
 "^ot:originalLabel": "Pseudorhipsalis himanthoclada CA260"
 }, 
 "Tl3108403": {
-"^ot:altLabel": "Hylocereus monacanthus", 
 "^ot:originalLabel": "Hylocereus monacanthus CA385", 
+"^ot:ottId": 3943695, 
+"^ot:ottTaxonName": "Hylocereus monacanthus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 607643, 
 "@tb:identifier.taxonVariant": 811501, 
@@ -472,6 +670,8 @@
 }, 
 "Tl3108404": {
 "^ot:originalLabel": "Peniocereus serpentinus", 
+"^ot:ottId": 700171, 
+"^ot:ottTaxonName": "Peniocereus serpentinus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 294879, 
 "@tb:identifier.taxonVariant": 345396, 
@@ -480,8 +680,9 @@
 }
 }, 
 "Tl3108405": {
-"^ot:altLabel": "Strophocactus testudo", 
 "^ot:originalLabel": "Strophocactus testudo CA207", 
+"^ot:ottId": 5232206, 
+"^ot:ottTaxonName": "Strophocactus testudo", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 617128, 
 "@tb:identifier.taxonVariant": 825890, 
@@ -489,8 +690,9 @@
 }
 }, 
 "Tl3108406": {
-"^ot:altLabel": "Epiphyllum anguliger", 
 "^ot:originalLabel": "Epiphyllum anguliger CA229", 
+"^ot:ottId": 6034808, 
+"^ot:ottTaxonName": "Epiphyllum anguliger", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 631529, 
 "@tb:identifier.taxonVariant": 846541, 
@@ -498,16 +700,22 @@
 }
 }, 
 "Tl3108407": {
-"^ot:originalLabel": "Selenicereus grandiflorus ssp grandiflorus CA233"
+"^ot:originalLabel": "Selenicereus grandiflorus ssp grandiflorus CA233", 
+"^ot:ottId": 176900, 
+"^ot:ottTaxonName": "Selenicereus grandiflorus"
 }, 
 "Tl3108408": {
-"^ot:originalLabel": "Selenicereus anthonyanus CA261"
+"^ot:originalLabel": "Selenicereus anthonyanus CA261", 
+"^ot:ottId": 6034831, 
+"^ot:ottTaxonName": "Selenicereus anthonyanus"
 }, 
 "Tl3108409": {
 "^ot:originalLabel": "Selenicereus cf nelsonii CA378"
 }, 
 "Tl3108410": {
 "^ot:originalLabel": "Stenocereus stellatus", 
+"^ot:ottId": 824632, 
+"^ot:ottTaxonName": "Stenocereus stellatus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 27919, 
 "@tb:identifier.taxonVariant": 65153, 
@@ -516,10 +724,14 @@
 }
 }, 
 "Tl3108411": {
-"^ot:originalLabel": "Disocactus speciosus ssp blomianus CA312"
+"^ot:originalLabel": "Disocactus speciosus ssp blomianus CA312", 
+"^ot:ottId": 423979, 
+"^ot:ottTaxonName": "Disocactus speciosus"
 }, 
 "Tl3108412": {
 "^ot:originalLabel": "Carnegiea gigantea", 
+"^ot:ottId": 897402, 
+"^ot:ottTaxonName": "Carnegiea gigantea", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5075, 
 "@tb:identifier.taxonVariant": 12312, 
@@ -528,8 +740,9 @@
 }
 }, 
 "Tl3108413": {
-"^ot:altLabel": "Hylocereus monacanthus", 
 "^ot:originalLabel": "Hylocereus monacanthus CA227", 
+"^ot:ottId": 3943695, 
+"^ot:ottTaxonName": "Hylocereus monacanthus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 607643, 
 "@tb:identifier.taxonVariant": 811501, 
@@ -537,26 +750,39 @@
 }
 }, 
 "Tl3108414": {
-"^ot:originalLabel": "Selenicereus inermis ssp tricae CA366 Hunt 7170"
+"^ot:originalLabel": "Selenicereus inermis ssp tricae CA366 Hunt 7170", 
+"^ot:ottId": 5232190, 
+"^ot:ottTaxonName": "Selenicereus inermis"
 }, 
 "Tl3108415": {
-"^ot:originalLabel": "Disocactus ackermannii CA212"
+"^ot:originalLabel": "Disocactus ackermannii CA212", 
+"^ot:ottId": 5740285, 
+"^ot:ottTaxonName": "Disocactus ackermannii"
 }, 
 "Tl3108416": {
-"^ot:originalLabel": "Pseudorhipsalis amazonica ssp chocoensis Bauer 29 HOLO"
+"^ot:originalLabel": "Pseudorhipsalis amazonica ssp chocoensis Bauer 29 HOLO", 
+"^ot:ottId": 920673, 
+"^ot:ottTaxonName": "Disocactus amazonicus"
 }, 
 "Tl3108417": {
-"^ot:originalLabel": "Aporocactus martianus CA396 Lau 1275 MX"
+"^ot:originalLabel": "Aporocactus martianus CA396 Lau 1275 MX", 
+"^ot:ottId": 355457, 
+"^ot:ottTaxonName": "Disocactus martianus"
 }, 
 "Tl3108418": {
-"^ot:originalLabel": "Selenicereus grandiflorus ssp donkelaarii CA381"
+"^ot:originalLabel": "Selenicereus grandiflorus ssp donkelaarii CA381", 
+"^ot:ottId": 176900, 
+"^ot:ottTaxonName": "Selenicereus grandiflorus"
 }, 
 "Tl3108419": {
-"^ot:originalLabel": "Hylocereus stenopterus CA322"
+"^ot:originalLabel": "Hylocereus stenopterus CA322", 
+"^ot:ottId": 6034829, 
+"^ot:ottTaxonName": "Hylocereus stenopterus"
 }, 
 "Tl3108420": {
-"^ot:altLabel": "Selenicereus inermis", 
 "^ot:originalLabel": "Selenicereus inermis CA259", 
+"^ot:ottId": 5232190, 
+"^ot:ottTaxonName": "Selenicereus inermis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 617123, 
 "@tb:identifier.taxonVariant": 825877, 
@@ -564,16 +790,24 @@
 }
 }, 
 "Tl3108421": {
-"^ot:originalLabel": "Pseudorhipsalis amazonica ssp panamensis CA287"
+"^ot:originalLabel": "Pseudorhipsalis amazonica ssp panamensis CA287", 
+"^ot:ottId": 920673, 
+"^ot:ottTaxonName": "Disocactus amazonicus"
 }, 
 "Tl3108422": {
-"^ot:originalLabel": "Pfeiffera monacantha spp  kimnachii CA406"
+"^ot:originalLabel": "Pfeiffera monacantha spp  kimnachii CA406", 
+"^ot:ottId": 964559, 
+"^ot:ottTaxonName": "Pfeiffera monacantha"
 }, 
 "Tl3108423": {
-"^ot:originalLabel": "Epiphyllum hookeri ssp guatemalense CA251"
+"^ot:originalLabel": "Epiphyllum hookeri ssp guatemalense CA251", 
+"^ot:ottId": 5517960, 
+"^ot:ottTaxonName": "Epiphyllum hookeri"
 }, 
 "Tl3108424": {
 "^ot:originalLabel": "Eulychnia iquiquensis", 
+"^ot:ottId": 295072, 
+"^ot:ottTaxonName": "Eulychnia iquiquensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 148352, 
 "@tb:identifier.taxonVariant": 224264, 
@@ -582,8 +816,9 @@
 }
 }, 
 "Tl3108425": {
-"^ot:altLabel": "Epiphyllum phyllanthus", 
 "^ot:originalLabel": "Epiphyllum phyllanthus CA264", 
+"^ot:ottId": 699564, 
+"^ot:ottTaxonName": "Epiphyllum phyllanthus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 602940, 
 "@tb:identifier.taxonVariant": 804339, 
@@ -592,6 +827,8 @@
 }, 
 "Tl3108426": {
 "^ot:originalLabel": "Acanthocereus tetragonus", 
+"^ot:ottId": 278460, 
+"^ot:ottTaxonName": "Acanthocereus tetragonus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 294847, 
 "@tb:identifier.taxonVariant": 345361, 
@@ -600,8 +837,9 @@
 }
 }, 
 "Tl3108427": {
-"^ot:altLabel": "Selenicereus vagans", 
 "^ot:originalLabel": "Selenicereus vagans CA231", 
+"^ot:ottId": 219331, 
+"^ot:ottTaxonName": "Selenicereus vagans", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 607853, 
 "@tb:identifier.taxonVariant": 811852, 
@@ -609,14 +847,19 @@
 }
 }, 
 "Tl3108428": {
-"^ot:originalLabel": "Disocactus phyllanthoides CA273"
+"^ot:originalLabel": "Disocactus phyllanthoides CA273", 
+"^ot:ottId": 5761664, 
+"^ot:ottTaxonName": "Disocactus phyllanthoides"
 }, 
 "Tl3108429": {
-"^ot:originalLabel": "Disocactus ackermannii ssp  conzattianus CA301"
+"^ot:originalLabel": "Disocactus ackermannii ssp  conzattianus CA301", 
+"^ot:ottId": 5740285, 
+"^ot:ottTaxonName": "Disocactus ackermannii"
 }, 
 "Tl3108430": {
-"^ot:altLabel": "Eulychnia breviflora", 
 "^ot:originalLabel": "Eulychnia breviflora CA137", 
+"^ot:ottId": 1054490, 
+"^ot:ottTaxonName": "Eulychnia breviflora", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 240178, 
 "@tb:identifier.taxonVariant": 301828, 
@@ -625,8 +868,9 @@
 }
 }, 
 "Tl3108431": {
-"^ot:altLabel": "Hylocereus monacanthus", 
 "^ot:originalLabel": "Hylocereus monacanthus CA325", 
+"^ot:ottId": 3943695, 
+"^ot:ottTaxonName": "Hylocereus monacanthus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 607643, 
 "@tb:identifier.taxonVariant": 811501, 
@@ -634,8 +878,9 @@
 }
 }, 
 "Tl3108432": {
-"^ot:altLabel": "Selenicereus hamatus", 
 "^ot:originalLabel": "Selenicereus hamatus CA384", 
+"^ot:ottId": 176903, 
+"^ot:ottTaxonName": "Selenicereus hamatus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 294888, 
 "@tb:identifier.taxonVariant": 345404, 
@@ -644,10 +889,14 @@
 }
 }, 
 "Tl3108433": {
-"^ot:originalLabel": "Selenicereus validus CA397"
+"^ot:originalLabel": "Selenicereus validus CA397", 
+"^ot:ottId": 6034835, 
+"^ot:ottTaxonName": "Selenicereus validus"
 }, 
 "Tl3108434": {
 "^ot:originalLabel": "Lophocereus schottii", 
+"^ot:ottId": 870013, 
+"^ot:ottTaxonName": "Pachycereus schottii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 20169, 
 "@tb:identifier.taxonVariant": 804324, 
@@ -657,8 +906,9 @@
 "^skos:prefLabel": "Pachycereus schottii"
 }, 
 "Tl3108435": {
-"^ot:altLabel": "Hylocereus megalanthus", 
 "^ot:originalLabel": "Hylocereus megalanthus CA347", 
+"^ot:ottId": 5232197, 
+"^ot:ottTaxonName": "Hylocereus megalanthus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 617120, 
 "@tb:identifier.taxonVariant": 825869, 
@@ -666,8 +916,9 @@
 }
 }, 
 "Tl3108436": {
-"^ot:altLabel": "Hylocereus monacanthus", 
 "^ot:originalLabel": "Hylocereus monacanthus CA224", 
+"^ot:ottId": 3943695, 
+"^ot:ottTaxonName": "Hylocereus monacanthus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 607643, 
 "@tb:identifier.taxonVariant": 811501, 
@@ -675,8 +926,9 @@
 }
 }, 
 "Tl3108437": {
-"^ot:altLabel": "Weberocereus glaber", 
 "^ot:originalLabel": "Weberocereus glaber CA308", 
+"^ot:ottId": 801963, 
+"^ot:ottTaxonName": "Weberocereus glaber", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 294842, 
 "@tb:identifier.taxonVariant": 345354, 
@@ -685,14 +937,19 @@
 }
 }, 
 "Tl3108438": {
-"^ot:originalLabel": "Hylocereus calcaratus CA350"
+"^ot:originalLabel": "Hylocereus calcaratus CA350", 
+"^ot:ottId": 6034824, 
+"^ot:ottTaxonName": "Hylocereus calcaratus"
 }, 
 "Tl3108439": {
-"^ot:originalLabel": "Epiphyllum crenatum CA275"
+"^ot:originalLabel": "Epiphyllum crenatum CA275", 
+"^ot:ottId": 5761679, 
+"^ot:ottTaxonName": "Epiphyllum crenatum"
 }, 
 "Tl3108440": {
-"^ot:altLabel": "Hylocereus undatus", 
 "^ot:originalLabel": "Hylocereus undatus CA226", 
+"^ot:ottId": 334881, 
+"^ot:ottTaxonName": "Hylocereus undatus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 165082, 
 "@tb:identifier.taxonVariant": 239877, 
@@ -701,14 +958,19 @@
 }
 }, 
 "Tl3108441": {
-"^ot:originalLabel": "Pseudorhipsalis ramulosa CA203"
+"^ot:originalLabel": "Pseudorhipsalis ramulosa CA203", 
+"^ot:ottId": 5740381, 
+"^ot:ottTaxonName": "Pseudorhipsalis ramulosa"
 }, 
 "Tl3108442": {
-"^ot:originalLabel": "Hylocereus setaceus CA209"
+"^ot:originalLabel": "Hylocereus setaceus CA209", 
+"^ot:ottId": 6034828, 
+"^ot:ottTaxonName": "Hylocereus setaceus"
 }, 
 "Tl3108443": {
-"^ot:altLabel": "Epiphyllum oxypetalum", 
 "^ot:originalLabel": "Epiphyllum oxypetalum CA283", 
+"^ot:ottId": 3943506, 
+"^ot:ottTaxonName": "Epiphyllum oxypetalum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 617127, 
 "@tb:identifier.taxonVariant": 825884, 
@@ -716,8 +978,9 @@
 }
 }, 
 "Tl3108444": {
-"^ot:altLabel": "Hylocereus monacanthus", 
 "^ot:originalLabel": "Hylocereus monacanthus CA219", 
+"^ot:ottId": 3943695, 
+"^ot:ottTaxonName": "Hylocereus monacanthus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 607643, 
 "@tb:identifier.taxonVariant": 811501, 
@@ -725,14 +988,19 @@
 }
 }, 
 "Tl3108445": {
-"^ot:originalLabel": "Hylocereus setaceus CA358"
+"^ot:originalLabel": "Hylocereus setaceus CA358", 
+"^ot:ottId": 6034828, 
+"^ot:ottTaxonName": "Hylocereus setaceus"
 }, 
 "Tl3108446": {
-"^ot:originalLabel": "Epiphyllum lepidocarpum CA345"
+"^ot:originalLabel": "Epiphyllum lepidocarpum CA345", 
+"^ot:ottId": 6034818, 
+"^ot:ottTaxonName": "Epiphyllum lepidocarpum"
 }, 
 "Tl3108447": {
-"^ot:altLabel": "Hylocereus monacanthus", 
 "^ot:originalLabel": "Hylocereus monacanthus CA346", 
+"^ot:ottId": 3943695, 
+"^ot:ottTaxonName": "Hylocereus monacanthus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 607643, 
 "@tb:identifier.taxonVariant": 811501, 
@@ -740,13 +1008,19 @@
 }
 }, 
 "Tl3108448": {
-"^ot:originalLabel": "Weberocereus rosei CA247"
+"^ot:originalLabel": "Weberocereus rosei CA247", 
+"^ot:ottId": 6034839, 
+"^ot:ottTaxonName": "Weberocereus rosei"
 }, 
 "Tl3108449": {
-"^ot:originalLabel": "Disocactus macranthus CA298"
+"^ot:originalLabel": "Disocactus macranthus CA298", 
+"^ot:ottId": 5761666, 
+"^ot:ottTaxonName": "Disocactus macranthus"
 }, 
 "Tl3108450": {
 "^ot:originalLabel": "Armatocereus procerus", 
+"^ot:ottId": 477365, 
+"^ot:ottTaxonName": "Armatocereus procerus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 602972, 
 "@tb:identifier.taxonVariant": 804410, 
@@ -755,6 +1029,8 @@
 }, 
 "Tl3108451": {
 "^ot:originalLabel": "Peniocereus castellae", 
+"^ot:ottId": 801969, 
+"^ot:ottTaxonName": "Peniocereus castellae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 294838, 
 "@tb:identifier.taxonVariant": 482828, 
@@ -763,13 +1039,19 @@
 }
 }, 
 "Tl3108452": {
-"^ot:originalLabel": "Pseudorhipsalis acuminata CA246"
+"^ot:originalLabel": "Pseudorhipsalis acuminata CA246", 
+"^ot:ottId": 6034801, 
+"^ot:ottTaxonName": "Pseudorhipsalis acuminata"
 }, 
 "Tl3108453": {
-"^ot:originalLabel": "Pseudorhipsalis ramulosa ssp jamaicensis CA253"
+"^ot:originalLabel": "Pseudorhipsalis ramulosa ssp jamaicensis CA253", 
+"^ot:ottId": 5740381, 
+"^ot:ottTaxonName": "Pseudorhipsalis ramulosa"
 }, 
 "Tl3108454": {
 "^ot:originalLabel": "Polaskia chichipe", 
+"^ot:ottId": 904, 
+"^ot:ottTaxonName": "Polaskia chichipe", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 195336, 
 "@tb:identifier.taxonVariant": 266545, 
@@ -779,6 +1061,8 @@
 }, 
 "Tl3108455": {
 "^ot:originalLabel": "Monvillea spegazzinii", 
+"^ot:ottId": 477359, 
+"^ot:ottTaxonName": "Monvillea spegazzinii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 602925, 
 "@tb:identifier.taxonVariant": 804321, 
@@ -787,6 +1071,8 @@
 }, 
 "Tl3108456": {
 "^ot:originalLabel": "Castellanosia caineana", 
+"^ot:ottId": 345479, 
+"^ot:ottTaxonName": "Castellanosia caineana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 148338, 
 "@tb:identifier.taxonVariant": 435152, 
@@ -795,11 +1081,14 @@
 }
 }, 
 "Tl3108457": {
-"^ot:originalLabel": "Epiphyllum crenatum ssp kimnachii CA230"
+"^ot:originalLabel": "Epiphyllum crenatum ssp kimnachii CA230", 
+"^ot:ottId": 5761679, 
+"^ot:ottTaxonName": "Epiphyllum crenatum"
 }, 
 "Tl3108458": {
-"^ot:altLabel": "Hylocereus triangularis", 
 "^ot:originalLabel": "Hylocereus triangularis CA225", 
+"^ot:ottId": 815037, 
+"^ot:ottTaxonName": "Hylocereus triangularis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 607645, 
 "@tb:identifier.taxonVariant": 811506, 
@@ -807,17 +1096,24 @@
 }
 }, 
 "Tl3108459": {
-"^ot:originalLabel": "Selenicereus murrillii holo  CA349"
+"^ot:originalLabel": "Selenicereus murrillii holo  CA349", 
+"^ot:ottId": 6034833, 
+"^ot:ottTaxonName": "Selenicereus murrillii"
 }, 
 "Tl3108460": {
-"^ot:originalLabel": "Disocactus macranthus CA208"
+"^ot:originalLabel": "Disocactus macranthus CA208", 
+"^ot:ottId": 5761666, 
+"^ot:ottTaxonName": "Disocactus macranthus"
 }, 
 "Tl3108461": {
-"^ot:originalLabel": "Strophocactus chontalensis CA374"
+"^ot:originalLabel": "Strophocactus chontalensis CA374", 
+"^ot:ottId": 176898, 
+"^ot:ottTaxonName": "Selenicereus chontalensis"
 }, 
 "Tl3108462": {
-"^ot:altLabel": "Selenicereus spinulosus", 
 "^ot:originalLabel": "Selenicereus spinulosus CA238", 
+"^ot:ottId": 219317, 
+"^ot:ottTaxonName": "Selenicereus spinulosus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 607852, 
 "@tb:identifier.taxonVariant": 811851, 
@@ -825,8 +1121,9 @@
 }
 }, 
 "Tl3108463": {
-"^ot:altLabel": "Epiphyllum thomasianum", 
 "^ot:originalLabel": "Epiphyllum thomasianum CA274", 
+"^ot:ottId": 5761674, 
+"^ot:ottTaxonName": "Epiphyllum thomasianum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 631545, 
 "@tb:identifier.taxonVariant": 846557, 
@@ -834,23 +1131,32 @@
 }
 }, 
 "Tl3108464": {
-"^ot:originalLabel": "Selenicereus grandiflorus CU CA327"
+"^ot:originalLabel": "Selenicereus grandiflorus CU CA327", 
+"^ot:ottId": 176900, 
+"^ot:ottTaxonName": "Selenicereus grandiflorus"
 }, 
 "Tl3108465": {
-"^ot:originalLabel": "Weberocereus glaber ssp  mirandae CA307"
+"^ot:originalLabel": "Weberocereus glaber ssp  mirandae CA307", 
+"^ot:ottId": 801963, 
+"^ot:ottTaxonName": "Weberocereus glaber"
 }, 
 "Tl3108466": {
-"^ot:originalLabel": "Pseudorhipsalis alata CA263"
+"^ot:originalLabel": "Pseudorhipsalis alata CA263", 
+"^ot:ottId": 6034802, 
+"^ot:ottTaxonName": "Pseudorhipsalis alata"
 }, 
 "Tl3108467": {
-"^ot:originalLabel": "Weberocereus tunilla ssp biolleyi CA204"
+"^ot:originalLabel": "Weberocereus tunilla ssp biolleyi CA204", 
+"^ot:ottId": 5761680, 
+"^ot:ottTaxonName": "Weberocereus tunilla"
 }, 
 "Tl3108468": {
 "^ot:originalLabel": "Pachycereus pecten aboriginum"
 }, 
 "Tl3108469": {
-"^ot:altLabel": "Disocactus nelsonii", 
 "^ot:originalLabel": "Disocactus nelsonii CA215", 
+"^ot:ottId": 5761669, 
+"^ot:ottTaxonName": "Disocactus nelsonii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 631539, 
 "@tb:identifier.taxonVariant": 846551, 
@@ -858,8 +1164,9 @@
 }
 }, 
 "Tl3108470": {
-"^ot:altLabel": "Hylocereus ocamponis", 
 "^ot:originalLabel": "Hylocereus ocamponis CA375", 
+"^ot:ottId": 815039, 
+"^ot:ottTaxonName": "Hylocereus ocamponis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 607644, 
 "@tb:identifier.taxonVariant": 811502, 
@@ -868,6 +1175,8 @@
 }, 
 "Tl3108471": {
 "^ot:originalLabel": "Corryocactus brevistylus", 
+"^ot:ottId": 345466, 
+"^ot:ottTaxonName": "Corryocactus brevistylus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 148341, 
 "@tb:identifier.taxonVariant": 224255, 
@@ -876,8 +1185,9 @@
 }
 }, 
 "Tl3108472": {
-"^ot:altLabel": "Hylocereus costaricensis", 
 "^ot:originalLabel": "Hylocereus costaricensis CA377", 
+"^ot:ottId": 322905, 
+"^ot:ottTaxonName": "Hylocereus costaricensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 617121, 
 "@tb:identifier.taxonVariant": 825875, 
@@ -886,6 +1196,8 @@
 }, 
 "Tl3108473": {
 "^ot:originalLabel": "Pseudoacanthocereus brasiliensis", 
+"^ot:ottId": 801966, 
+"^ot:ottTaxonName": "Pseudoacanthocereus brasiliensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 294840, 
 "@tb:identifier.taxonVariant": 345352, 
@@ -894,14 +1206,17 @@
 }
 }, 
 "Tl3108474": {
-"^ot:originalLabel": "Strophocactus chontalensis CA218"
+"^ot:originalLabel": "Strophocactus chontalensis CA218", 
+"^ot:ottId": 176898, 
+"^ot:ottTaxonName": "Selenicereus chontalensis"
 }, 
 "Tl3108475": {
 "^ot:originalLabel": "Disocactus speciosis ssp cinnabarinus CA320"
 }, 
 "Tl3108476": {
-"^ot:altLabel": "Epiphyllum pumilum", 
 "^ot:originalLabel": "Epiphyllum pumilum CA250", 
+"^ot:ottId": 6034822, 
+"^ot:ottTaxonName": "Epiphyllum pumilum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 631534, 
 "@tb:identifier.taxonVariant": 846546, 
@@ -910,6 +1225,8 @@
 }, 
 "Tl3108477": {
 "^ot:originalLabel": "Acanthocereus pentagonus", 
+"^ot:ottId": 971070, 
+"^ot:ottTaxonName": "Acanthocereus pentagonus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 148331, 
 "@tb:identifier.taxonVariant": 224244, 
@@ -919,6 +1236,8 @@
 }, 
 "Tl3108478": {
 "^ot:originalLabel": "Echinocereus enneacanthus", 
+"^ot:ottId": 278473, 
+"^ot:ottTaxonName": "Echinocereus enneacanthus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 294853, 
 "@tb:identifier.taxonVariant": 482829, 
@@ -927,23 +1246,34 @@
 }
 }, 
 "Tl3108479": {
-"^ot:originalLabel": "Pseudorhipsalis lankesteri CA258"
+"^ot:originalLabel": "Pseudorhipsalis lankesteri CA258", 
+"^ot:ottId": 6034805, 
+"^ot:ottTaxonName": "Pseudorhipsalis lankesteri"
 }, 
 "Tl3108480": {
-"^ot:originalLabel": "Epiphyllum hookeri CA280"
+"^ot:originalLabel": "Epiphyllum hookeri CA280", 
+"^ot:ottId": 5517960, 
+"^ot:ottTaxonName": "Epiphyllum hookeri"
 }, 
 "Tl3108481": {
-"^ot:originalLabel": "Selenicereus grandiflorus ssp hondurensis CA369"
+"^ot:originalLabel": "Selenicereus grandiflorus ssp hondurensis CA369", 
+"^ot:ottId": 176900, 
+"^ot:ottTaxonName": "Selenicereus grandiflorus"
 }, 
 "Tl3108482": {
-"^ot:originalLabel": "Selenicereus murrillii CA392"
+"^ot:originalLabel": "Selenicereus murrillii CA392", 
+"^ot:ottId": 6034833, 
+"^ot:ottTaxonName": "Selenicereus murrillii"
 }, 
 "Tl3108483": {
-"^ot:originalLabel": "Epiphyllum hookeri ssp columbiense CA279"
+"^ot:originalLabel": "Epiphyllum hookeri ssp columbiense CA279", 
+"^ot:ottId": 5517960, 
+"^ot:ottTaxonName": "Epiphyllum hookeri"
 }, 
 "Tl3108484": {
-"^ot:altLabel": "Selenicereus pteranthus", 
 "^ot:originalLabel": "Selenicereus pteranthus CA210", 
+"^ot:ottId": 846426, 
+"^ot:ottTaxonName": "Selenicereus pteranthus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 607851, 
 "@tb:identifier.taxonVariant": 811850, 
@@ -952,6 +1282,8 @@
 }, 
 "Tl3108485": {
 "^ot:originalLabel": "Neobuxbaumia mezcalaensis", 
+"^ot:ottId": 773137, 
+"^ot:ottTaxonName": "Neobuxbaumia mezcalaensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 18851, 
 "@tb:identifier.taxonVariant": 43941, 
@@ -960,11 +1292,14 @@
 }
 }, 
 "Tl3108486": {
-"^ot:originalLabel": "Aporocactus flagelliformis CA389"
+"^ot:originalLabel": "Aporocactus flagelliformis CA389", 
+"^ot:ottId": 278471, 
+"^ot:ottTaxonName": "Disocactus flagelliformis"
 }, 
 "Tl3108487": {
-"^ot:altLabel": "Hylocereus ocamponis", 
 "^ot:originalLabel": "Hylocereus ocamponis CA220", 
+"^ot:ottId": 815039, 
+"^ot:ottTaxonName": "Hylocereus ocamponis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 607644, 
 "@tb:identifier.taxonVariant": 811502, 
@@ -972,10 +1307,14 @@
 }
 }, 
 "Tl3108488": {
-"^ot:originalLabel": "Hylocereus minutiflorus CA216"
+"^ot:originalLabel": "Hylocereus minutiflorus CA216", 
+"^ot:ottId": 6034826, 
+"^ot:ottTaxonName": "Hylocereus minutiflorus"
 }, 
 "Tl3108489": {
 "^ot:originalLabel": "Neoraimondia herzogiana", 
+"^ot:ottId": 334889, 
+"^ot:ottTaxonName": "Neoraimondia herzogiana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 40981, 
 "@tb:identifier.taxonVariant": 95330, 
@@ -985,6 +1324,8 @@
 }, 
 "Tl3108490": {
 "^ot:originalLabel": "Blossfeldia liliputana", 
+"^ot:ottId": 933406, 
+"^ot:ottTaxonName": "Blossfeldia liliputana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3636, 
 "@tb:identifier.taxonVariant": 8680, 
@@ -993,10 +1334,14 @@
 }
 }, 
 "Tl3108491": {
-"^ot:originalLabel": "Pseudorhipsalis amazonica ssp amazonica"
+"^ot:originalLabel": "Pseudorhipsalis amazonica ssp amazonica", 
+"^ot:ottId": 920673, 
+"^ot:ottTaxonName": "Disocactus amazonicus"
 }, 
 "Tl3108492": {
 "^ot:originalLabel": "Peniocereus chiapensis", 
+"^ot:ottId": 801957, 
+"^ot:ottTaxonName": "Peniocereus chiapensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 602991, 
 "@tb:identifier.taxonVariant": 804444, 
@@ -1005,6 +1350,8 @@
 }, 
 "Tl3108493": {
 "^ot:originalLabel": "Bergerocactus emoryi", 
+"^ot:ottId": 1019002, 
+"^ot:ottTaxonName": "Bergerocactus emoryi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 129883, 
 "@tb:identifier.taxonVariant": 207382, 
@@ -1013,7 +1360,9 @@
 }
 }, 
 "Tl3108494": {
-"^ot:originalLabel": "Aporocactus martianus CA317"
+"^ot:originalLabel": "Aporocactus martianus CA317", 
+"^ot:ottId": 355457, 
+"^ot:ottTaxonName": "Disocactus martianus"
 }
 }
 }
@@ -1030,7 +1379,18 @@
 "Tr110606": {
 "@label": "con 50 majrule", 
 "@xsi:type": "nex:FloatTree", 
-"^ot:rootNodeId": "Tn17404700", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:changesCount", 
+"^ot:curatedType": "Maximum likelihood ", 
+"^ot:inGroupClade": "Tn17404840", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
+"^ot:rootNodeId": "Tr110606_ROOT", 
+"^ot:specifiedRoot": "Tr110606_ROOT", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "^tb:ntax.tree": 159, 
 "edgeBySourceId": {
 "Tn17404631": {
@@ -1508,11 +1868,6 @@
 }
 }, 
 "Tn17404700": {
-"edge4313589": {
-"@length": 0.022158625, 
-"@source": "Tn17404700", 
-"@target": "Tn17404735"
-}, 
 "edge4313591": {
 "@length": 0.022158625, 
 "@source": "Tn17404700", 
@@ -2662,6 +3017,17 @@
 "@source": "Tn17404908", 
 "@target": "Tn17404698"
 }
+}, 
+"Tr110606_ROOT": {
+"Tr110606_ROOT_EDGE": {
+"@source": "Tr110606_ROOT", 
+"@target": "Tn17404700"
+}, 
+"edge4313589": {
+"@length": 0.022158625, 
+"@source": "Tr110606_ROOT", 
+"@target": "Tn17404735"
+}
 }
 }, 
 "nodeById": {
@@ -2801,9 +3167,7 @@
 "@otu": "Tl3108403"
 }, 
 "Tn17404699": {}, 
-"Tn17404700": {
-"@root": true
-}, 
+"Tn17404700": {}, 
 "Tn17404701": {
 "@otu": "Tl3108422"
 }, 
@@ -3263,7 +3627,10 @@
 "Tn17404907": {
 "@otu": "Tl3108391"
 }, 
-"Tn17404908": {}
+"Tn17404908": {}, 
+"Tr110606_ROOT": {
+"@root": true
+}
 }
 }
 }
