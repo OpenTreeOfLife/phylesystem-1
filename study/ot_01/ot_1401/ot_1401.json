@@ -58,16 +58,106 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2018-06-24T22:12:59.566Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:curatorName": "Walter1186", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}, 
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": "$1"
+}, 
+"old": {
+"$": "^(\\S*\\s+\\S*).*"
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2018-06-24T22:12:59.566Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Walter1186"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S20538"
 }, 
+"^ot:focalClade": 745058, 
+"^ot:focalCladeOTTTaxonName": "Cercosaura", 
 "^ot:otusElementOrder": [
 "Tls55924"
 ], 
@@ -77,6 +167,7 @@
 }, 
 "^ot:studyPublicationReference": "Sturaro M.J., Avila-pires T.C., & Rodrigues M.T. 2017. Molecular phylogenetic diversity in the widespread lizard <i>Cercosaura ocellata</i> (Reptilia: Gymnophthalmidae) in South America. Systematics and Biodiversity, .", 
 "^ot:studyYear": 2017, 
+"^ot:tag": [], 
 "^ot:taxonLinkPrefixes": {
 "@ubio": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:", 
 "@uniprot": "http://purl.uniprot.org/taxonomy/"
@@ -100,8 +191,9 @@
 "^skos:historyNote": "Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlOTUWriter@3c3e6c53 $Rev$", 
 "otuById": {
 "Tl2630051": {
-"^ot:altLabel": "Proctoporus bolivianus", 
 "^ot:originalLabel": "Proctoporus bolivianus UTA_R52944", 
+"^ot:ottId": 759342, 
+"^ot:ottTaxonName": "Proctoporus bolivianus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 206758, 
 "@tb:identifier.taxonVariant": 275975, 
@@ -110,8 +202,9 @@
 }
 }, 
 "Tl2630052": {
-"^ot:altLabel": "Cercosaura ocellata", 
 "^ot:originalLabel": "Cercosaura ocellata CORBIDI_11218", 
+"^ot:ottId": 846829, 
+"^ot:ottTaxonName": "Cercosaura ocellata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 45968, 
 "@tb:identifier.taxonVariant": 107610, 
@@ -120,11 +213,14 @@
 }
 }, 
 "Tl2630053": {
-"^ot:originalLabel": "Cercosaura schreibersii schreibersii LG_927"
+"^ot:originalLabel": "Cercosaura schreibersii schreibersii LG_927", 
+"^ot:ottId": 322425, 
+"^ot:ottTaxonName": "Cercosaura schreibersii"
 }, 
 "Tl2630054": {
-"^ot:altLabel": "Cercosaura ocellata", 
 "^ot:originalLabel": "Cercosaura ocellata VOCT_2108", 
+"^ot:ottId": 846829, 
+"^ot:ottTaxonName": "Cercosaura ocellata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 45968, 
 "@tb:identifier.taxonVariant": 107610, 
@@ -133,8 +229,9 @@
 }
 }, 
 "Tl2630055": {
-"^ot:altLabel": "Cercosaura oshaughnessyi", 
 "^ot:originalLabel": "Cercosaura oshaughnessyi QCAZ_7048", 
+"^ot:ottId": 967617, 
+"^ot:ottTaxonName": "Cercosaura oshaughnessyi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 624358, 
 "@tb:identifier.taxonVariant": 836091, 
@@ -142,8 +239,9 @@
 }
 }, 
 "Tl2630056": {
-"^ot:altLabel": "Cercosaura ocellata", 
 "^ot:originalLabel": "Cercosaura ocellata LG_2118", 
+"^ot:ottId": 846829, 
+"^ot:ottTaxonName": "Cercosaura ocellata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 45968, 
 "@tb:identifier.taxonVariant": 107610, 
@@ -152,8 +250,9 @@
 }
 }, 
 "Tl2630057": {
-"^ot:altLabel": "Cercosaura ocellata", 
 "^ot:originalLabel": "Cercosaura ocellata SMS_618", 
+"^ot:ottId": 846829, 
+"^ot:ottTaxonName": "Cercosaura ocellata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 45968, 
 "@tb:identifier.taxonVariant": 107610, 
@@ -162,8 +261,9 @@
 }
 }, 
 "Tl2630058": {
-"^ot:altLabel": "Cercosaura ocellata", 
 "^ot:originalLabel": "Cercosaura ocellata PEU_990001", 
+"^ot:ottId": 846829, 
+"^ot:ottTaxonName": "Cercosaura ocellata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 45968, 
 "@tb:identifier.taxonVariant": 107610, 
@@ -172,11 +272,14 @@
 }
 }, 
 "Tl2630059": {
-"^ot:originalLabel": "Cercosaura ocellata MTR_SN"
+"^ot:originalLabel": "Cercosaura ocellata MTR_SN", 
+"^ot:ottId": 846829, 
+"^ot:ottTaxonName": "Cercosaura ocellata"
 }, 
 "Tl2630060": {
-"^ot:altLabel": "Cercosaura ocellata", 
 "^ot:originalLabel": "Cercosaura ocellata SMS_653", 
+"^ot:ottId": 846829, 
+"^ot:ottTaxonName": "Cercosaura ocellata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 45968, 
 "@tb:identifier.taxonVariant": 107610, 
@@ -185,11 +288,14 @@
 }
 }, 
 "Tl2630061": {
-"^ot:originalLabel": "Cercosaura parkeri LG_1553"
+"^ot:originalLabel": "Cercosaura parkeri LG_1553", 
+"^ot:ottId": 322425, 
+"^ot:ottTaxonName": "Cercosaura schreibersii"
 }, 
 "Tl2630062": {
-"^ot:altLabel": "Cercosaura argulus", 
 "^ot:originalLabel": "Cercosaura argulus QCAZ_4888", 
+"^ot:ottId": 967619, 
+"^ot:ottTaxonName": "Cercosaura argulus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 624378, 
 "@tb:identifier.taxonVariant": 836111, 
@@ -197,8 +303,9 @@
 }
 }, 
 "Tl2630063": {
-"^ot:altLabel": "Cercosaura ocellata", 
 "^ot:originalLabel": "Cercosaura ocellata MTR_977406", 
+"^ot:ottId": 846829, 
+"^ot:ottTaxonName": "Cercosaura ocellata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 45968, 
 "@tb:identifier.taxonVariant": 107610, 
@@ -207,8 +314,9 @@
 }
 }, 
 "Tl2630064": {
-"^ot:altLabel": "Cercosaura ocellata", 
 "^ot:originalLabel": "Cercosaura ocellata LG_1038", 
+"^ot:ottId": 846829, 
+"^ot:ottTaxonName": "Cercosaura ocellata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 45968, 
 "@tb:identifier.taxonVariant": 107610, 
@@ -217,8 +325,9 @@
 }
 }, 
 "Tl2630065": {
-"^ot:altLabel": "Cercosaura oshaughnessyi", 
 "^ot:originalLabel": "Cercosaura oshaughnessyi QCAZ_10720", 
+"^ot:ottId": 967617, 
+"^ot:ottTaxonName": "Cercosaura oshaughnessyi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 624358, 
 "@tb:identifier.taxonVariant": 836091, 
@@ -226,8 +335,9 @@
 }
 }, 
 "Tl2630066": {
-"^ot:altLabel": "Cercosaura ocellata", 
 "^ot:originalLabel": "Cercosaura ocellata CORBIDI_6382", 
+"^ot:ottId": 846829, 
+"^ot:ottTaxonName": "Cercosaura ocellata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 45968, 
 "@tb:identifier.taxonVariant": 107610, 
@@ -236,8 +346,9 @@
 }
 }, 
 "Tl2630067": {
-"^ot:altLabel": "Cercosaura oshaughnessyi", 
 "^ot:originalLabel": "Cercosaura oshaughnessyi QCAZ_10526", 
+"^ot:ottId": 967617, 
+"^ot:ottTaxonName": "Cercosaura oshaughnessyi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 624358, 
 "@tb:identifier.taxonVariant": 836091, 
@@ -245,8 +356,9 @@
 }
 }, 
 "Tl2630068": {
-"^ot:altLabel": "Cercosaura ocellata", 
 "^ot:originalLabel": "Cercosaura ocellata MPEG_22946", 
+"^ot:ottId": 846829, 
+"^ot:ottTaxonName": "Cercosaura ocellata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 45968, 
 "@tb:identifier.taxonVariant": 107610, 
@@ -255,11 +367,14 @@
 }
 }, 
 "Tl2630069": {
-"^ot:originalLabel": "Cercosaura manicata QCAZ_5793"
+"^ot:originalLabel": "Cercosaura manicata QCAZ_5793", 
+"^ot:ottId": 4124386, 
+"^ot:ottTaxonName": "Cercosaura manicata"
 }, 
 "Tl2630070": {
-"^ot:altLabel": "Echinosaura sulcarostrum", 
 "^ot:originalLabel": "Echinosaura sulcarostrum ROM_22892", 
+"^ot:ottId": 4124443, 
+"^ot:ottTaxonName": "Echinosaura sulcarostrum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 630839, 
 "@tb:identifier.taxonVariant": 845608, 
@@ -267,8 +382,9 @@
 }
 }, 
 "Tl2630071": {
-"^ot:altLabel": "Cercosaura ocellata", 
 "^ot:originalLabel": "Cercosaura ocellata LG_2119", 
+"^ot:ottId": 846829, 
+"^ot:ottTaxonName": "Cercosaura ocellata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 45968, 
 "@tb:identifier.taxonVariant": 107610, 
@@ -277,8 +393,9 @@
 }
 }, 
 "Tl2630072": {
-"^ot:altLabel": "Cercosaura ocellata", 
 "^ot:originalLabel": "Cercosaura ocellata MPEG_25769", 
+"^ot:ottId": 846829, 
+"^ot:ottTaxonName": "Cercosaura ocellata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 45968, 
 "@tb:identifier.taxonVariant": 107610, 
@@ -287,8 +404,9 @@
 }
 }, 
 "Tl2630073": {
-"^ot:altLabel": "Cercosaura ocellata", 
 "^ot:originalLabel": "Cercosaura ocellata CORBIDI_6374", 
+"^ot:ottId": 846829, 
+"^ot:ottTaxonName": "Cercosaura ocellata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 45968, 
 "@tb:identifier.taxonVariant": 107610, 
@@ -297,8 +415,9 @@
 }
 }, 
 "Tl2630074": {
-"^ot:altLabel": "Cercosaura ocellata", 
 "^ot:originalLabel": "Cercosaura ocellata LG_0729", 
+"^ot:ottId": 846829, 
+"^ot:ottTaxonName": "Cercosaura ocellata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 45968, 
 "@tb:identifier.taxonVariant": 107610, 
@@ -307,8 +426,9 @@
 }
 }, 
 "Tl2630075": {
-"^ot:altLabel": "Cercosaura ocellata", 
 "^ot:originalLabel": "Cercosaura ocellata LOD_563", 
+"^ot:ottId": 846829, 
+"^ot:ottTaxonName": "Cercosaura ocellata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 45968, 
 "@tb:identifier.taxonVariant": 107610, 
@@ -317,8 +437,9 @@
 }
 }, 
 "Tl2630076": {
-"^ot:altLabel": "Cercosaura ocellata", 
 "^ot:originalLabel": "Cercosaura ocellata MPEG_25768", 
+"^ot:ottId": 846829, 
+"^ot:ottTaxonName": "Cercosaura ocellata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 45968, 
 "@tb:identifier.taxonVariant": 107610, 
@@ -327,8 +448,9 @@
 }
 }, 
 "Tl2630077": {
-"^ot:altLabel": "Cercosaura ocellata", 
 "^ot:originalLabel": "Cercosaura ocellata MTR_13260", 
+"^ot:ottId": 846829, 
+"^ot:ottTaxonName": "Cercosaura ocellata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 45968, 
 "@tb:identifier.taxonVariant": 107610, 
@@ -337,8 +459,9 @@
 }
 }, 
 "Tl2630078": {
-"^ot:altLabel": "Cercosaura ocellata", 
 "^ot:originalLabel": "Cercosaura ocellata LAJ_28", 
+"^ot:ottId": 846829, 
+"^ot:ottTaxonName": "Cercosaura ocellata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 45968, 
 "@tb:identifier.taxonVariant": 107610, 
@@ -347,8 +470,9 @@
 }
 }, 
 "Tl2630079": {
-"^ot:altLabel": "Cercosaura ocellata", 
 "^ot:originalLabel": "Cercosaura ocellata MPEG_29731", 
+"^ot:ottId": 846829, 
+"^ot:ottTaxonName": "Cercosaura ocellata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 45968, 
 "@tb:identifier.taxonVariant": 107610, 
@@ -357,8 +481,9 @@
 }
 }, 
 "Tl2630080": {
-"^ot:altLabel": "Cercosaura ocellata", 
 "^ot:originalLabel": "Cercosaura ocellata MTR_977762", 
+"^ot:ottId": 846829, 
+"^ot:ottTaxonName": "Cercosaura ocellata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 45968, 
 "@tb:identifier.taxonVariant": 107610, 
@@ -367,11 +492,14 @@
 }
 }, 
 "Tl2630081": {
-"^ot:originalLabel": "Cercosaura parkeri LG_1305"
+"^ot:originalLabel": "Cercosaura parkeri LG_1305", 
+"^ot:ottId": 322425, 
+"^ot:ottTaxonName": "Cercosaura schreibersii"
 }, 
 "Tl2630082": {
-"^ot:altLabel": "Cercosaura ocellata", 
 "^ot:originalLabel": "Cercosaura ocellata MPEG_24764", 
+"^ot:ottId": 846829, 
+"^ot:ottTaxonName": "Cercosaura ocellata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 45968, 
 "@tb:identifier.taxonVariant": 107610, 
@@ -380,8 +508,9 @@
 }
 }, 
 "Tl2630083": {
-"^ot:altLabel": "Cercosaura quadrilineata", 
 "^ot:originalLabel": "Cercosaura quadrilineata LG_936", 
+"^ot:ottId": 322424, 
+"^ot:ottTaxonName": "Cercosaura quadrilineata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 630862, 
 "@tb:identifier.taxonVariant": 845635, 
@@ -389,8 +518,9 @@
 }
 }, 
 "Tl2630084": {
-"^ot:altLabel": "Cercosaura ocellata", 
 "^ot:originalLabel": "Cercosaura ocellata MTR_10016", 
+"^ot:ottId": 846829, 
+"^ot:ottTaxonName": "Cercosaura ocellata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 45968, 
 "@tb:identifier.taxonVariant": 107610, 
@@ -402,8 +532,9 @@
 "^ot:originalLabel": "Cercosaura doanae CORBIDI_650"
 }, 
 "Tl2630086": {
-"^ot:altLabel": "Cercosaura eigenmanni", 
 "^ot:originalLabel": "Cercosaura eigenmanni MTR_976979", 
+"^ot:ottId": 967621, 
+"^ot:ottTaxonName": "Cercosaura eigenmanni", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 624377, 
 "@tb:identifier.taxonVariant": 836110, 
@@ -411,8 +542,9 @@
 }
 }, 
 "Tl2630087": {
-"^ot:altLabel": "Cercosaura ocellata", 
 "^ot:originalLabel": "Cercosaura ocellata LG_1367", 
+"^ot:ottId": 846829, 
+"^ot:ottTaxonName": "Cercosaura ocellata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 45968, 
 "@tb:identifier.taxonVariant": 107610, 
@@ -421,8 +553,9 @@
 }
 }, 
 "Tl2630088": {
-"^ot:altLabel": "Cercosaura ocellata", 
 "^ot:originalLabel": "Cercosaura ocellata MPEG_28458", 
+"^ot:ottId": 846829, 
+"^ot:ottTaxonName": "Cercosaura ocellata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 45968, 
 "@tb:identifier.taxonVariant": 107610, 
@@ -431,8 +564,9 @@
 }
 }, 
 "Tl2630089": {
-"^ot:altLabel": "Petracola ventrimaculatus", 
 "^ot:originalLabel": "Petracola ventrimaculatus CORBIDI_9235", 
+"^ot:ottId": 392217, 
+"^ot:ottTaxonName": "Petracola ventrimaculatus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 624372, 
 "@tb:identifier.taxonVariant": 836105, 
@@ -440,8 +574,9 @@
 }
 }, 
 "Tl2630090": {
-"^ot:altLabel": "Cercosaura ocellata", 
 "^ot:originalLabel": "Cercosaura ocellata MTR_10151", 
+"^ot:ottId": 846829, 
+"^ot:ottTaxonName": "Cercosaura ocellata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 45968, 
 "@tb:identifier.taxonVariant": 107610, 
@@ -450,8 +585,9 @@
 }
 }, 
 "Tl2630091": {
-"^ot:altLabel": "Cercosaura ocellata", 
 "^ot:originalLabel": "Cercosaura ocellata MTR_976686", 
+"^ot:ottId": 846829, 
+"^ot:ottTaxonName": "Cercosaura ocellata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 45968, 
 "@tb:identifier.taxonVariant": 107610, 
@@ -460,8 +596,9 @@
 }
 }, 
 "Tl2630092": {
-"^ot:altLabel": "Cercosaura ocellata", 
 "^ot:originalLabel": "Cercosaura ocellata MTR_10017", 
+"^ot:ottId": 846829, 
+"^ot:ottTaxonName": "Cercosaura ocellata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 45968, 
 "@tb:identifier.taxonVariant": 107610, 
@@ -470,8 +607,9 @@
 }
 }, 
 "Tl2630093": {
-"^ot:altLabel": "Cercosaura ocellata", 
 "^ot:originalLabel": "Cercosaura ocellata MTR_10069", 
+"^ot:ottId": 846829, 
+"^ot:ottTaxonName": "Cercosaura ocellata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 45968, 
 "@tb:identifier.taxonVariant": 107610, 
@@ -480,8 +618,9 @@
 }
 }, 
 "Tl2630094": {
-"^ot:altLabel": "Cercosaura ocellata", 
 "^ot:originalLabel": "Cercosaura ocellata UFRFGST_1960", 
+"^ot:ottId": 846829, 
+"^ot:ottTaxonName": "Cercosaura ocellata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 45968, 
 "@tb:identifier.taxonVariant": 107610, 
@@ -490,8 +629,9 @@
 }
 }, 
 "Tl2630095": {
-"^ot:altLabel": "Cercosaura ocellata", 
 "^ot:originalLabel": "Cercosaura ocellata SMS_664", 
+"^ot:ottId": 846829, 
+"^ot:ottTaxonName": "Cercosaura ocellata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 45968, 
 "@tb:identifier.taxonVariant": 107610, 
@@ -500,8 +640,9 @@
 }
 }, 
 "Tl2630096": {
-"^ot:altLabel": "Cercosaura ocellata", 
 "^ot:originalLabel": "Cercosaura ocellata LG_1091", 
+"^ot:ottId": 846829, 
+"^ot:ottTaxonName": "Cercosaura ocellata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 45968, 
 "@tb:identifier.taxonVariant": 107610, 
@@ -510,8 +651,9 @@
 }
 }, 
 "Tl2630097": {
-"^ot:altLabel": "Cercosaura ocellata", 
 "^ot:originalLabel": "Cercosaura ocellata CORBIDI_10711", 
+"^ot:ottId": 846829, 
+"^ot:ottTaxonName": "Cercosaura ocellata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 45968, 
 "@tb:identifier.taxonVariant": 107610, 
@@ -520,8 +662,9 @@
 }
 }, 
 "Tl2630098": {
-"^ot:altLabel": "Cercosaura ocellata", 
 "^ot:originalLabel": "Cercosaura ocellata MPEG_28457", 
+"^ot:ottId": 846829, 
+"^ot:ottTaxonName": "Cercosaura ocellata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 45968, 
 "@tb:identifier.taxonVariant": 107610, 
@@ -530,8 +673,9 @@
 }
 }, 
 "Tl2630099": {
-"^ot:altLabel": "Cercosaura oshaughnessyi", 
 "^ot:originalLabel": "Cercosaura oshaughnessyi QCAZ_4623", 
+"^ot:ottId": 967617, 
+"^ot:ottTaxonName": "Cercosaura oshaughnessyi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 624358, 
 "@tb:identifier.taxonVariant": 836091, 
@@ -539,8 +683,9 @@
 }
 }, 
 "Tl2630100": {
-"^ot:altLabel": "Cercosaura ocellata", 
 "^ot:originalLabel": "Cercosaura ocellata SMS_517", 
+"^ot:ottId": 846829, 
+"^ot:ottTaxonName": "Cercosaura ocellata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 45968, 
 "@tb:identifier.taxonVariant": 107610, 
@@ -549,8 +694,9 @@
 }
 }, 
 "Tl2630101": {
-"^ot:altLabel": "Cercosaura ocellata", 
 "^ot:originalLabel": "Cercosaura ocellata CORBIDI_6384", 
+"^ot:ottId": 846829, 
+"^ot:ottTaxonName": "Cercosaura ocellata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 45968, 
 "@tb:identifier.taxonVariant": 107610, 
@@ -559,8 +705,9 @@
 }
 }, 
 "Tl2630102": {
-"^ot:altLabel": "Potamites strangulatus", 
 "^ot:originalLabel": "Potamites strangulatus KU_21677", 
+"^ot:ottId": 549297, 
+"^ot:ottTaxonName": "Potamites strangulatus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 624352, 
 "@tb:identifier.taxonVariant": 836085, 
@@ -568,8 +715,9 @@
 }
 }, 
 "Tl2630103": {
-"^ot:altLabel": "Cercosaura ocellata", 
 "^ot:originalLabel": "Cercosaura ocellata LG_1074", 
+"^ot:ottId": 846829, 
+"^ot:ottTaxonName": "Cercosaura ocellata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 45968, 
 "@tb:identifier.taxonVariant": 107610, 
@@ -578,8 +726,9 @@
 }
 }, 
 "Tl2630104": {
-"^ot:altLabel": "Cercosaura ocellata", 
 "^ot:originalLabel": "Cercosaura ocellata MTR_10105", 
+"^ot:ottId": 846829, 
+"^ot:ottTaxonName": "Cercosaura ocellata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 45968, 
 "@tb:identifier.taxonVariant": 107610, 
@@ -588,8 +737,9 @@
 }
 }, 
 "Tl2630105": {
-"^ot:altLabel": "Cercosaura ocellata", 
 "^ot:originalLabel": "Cercosaura ocellata LG_1305", 
+"^ot:ottId": 846829, 
+"^ot:ottTaxonName": "Cercosaura ocellata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 45968, 
 "@tb:identifier.taxonVariant": 107610, 
@@ -598,11 +748,14 @@
 }
 }, 
 "Tl2630106": {
-"^ot:originalLabel": "Proctoporus chasqui MNCN_44408"
+"^ot:originalLabel": "Proctoporus chasqui MNCN_44408", 
+"^ot:ottId": 67811, 
+"^ot:ottTaxonName": "Proctoporus chasqui"
 }, 
 "Tl2630107": {
-"^ot:altLabel": "Cercosaura ocellata", 
 "^ot:originalLabel": "Cercosaura ocellata LG_1143", 
+"^ot:ottId": 846829, 
+"^ot:ottTaxonName": "Cercosaura ocellata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 45968, 
 "@tb:identifier.taxonVariant": 107610, 
@@ -611,8 +764,9 @@
 }
 }, 
 "Tl2630108": {
-"^ot:altLabel": "Cercosaura oshaughnessyi", 
 "^ot:originalLabel": "Cercosaura oshaughnessyi QCAZ_4842", 
+"^ot:ottId": 967617, 
+"^ot:ottTaxonName": "Cercosaura oshaughnessyi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 624358, 
 "@tb:identifier.taxonVariant": 836091, 
@@ -620,8 +774,9 @@
 }
 }, 
 "Tl2630109": {
-"^ot:altLabel": "Cercosaura oshaughnessyi", 
 "^ot:originalLabel": "Cercosaura oshaughnessyi QCAZ_4891", 
+"^ot:ottId": 967617, 
+"^ot:ottTaxonName": "Cercosaura oshaughnessyi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 624358, 
 "@tb:identifier.taxonVariant": 836091, 
@@ -629,8 +784,9 @@
 }
 }, 
 "Tl2630110": {
-"^ot:altLabel": "Cercosaura ocellata", 
 "^ot:originalLabel": "Cercosaura ocellata MPEG_20781", 
+"^ot:ottId": 846829, 
+"^ot:ottTaxonName": "Cercosaura ocellata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 45968, 
 "@tb:identifier.taxonVariant": 107610, 
@@ -639,8 +795,9 @@
 }
 }, 
 "Tl2630111": {
-"^ot:altLabel": "Cercosaura ocellata", 
 "^ot:originalLabel": "Cercosaura ocellata MPEG_27590", 
+"^ot:ottId": 846829, 
+"^ot:ottTaxonName": "Cercosaura ocellata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 45968, 
 "@tb:identifier.taxonVariant": 107610, 
@@ -649,14 +806,19 @@
 }
 }, 
 "Tl2630112": {
-"^ot:originalLabel": "Petracola waka KU_212687"
+"^ot:originalLabel": "Petracola waka KU_212687", 
+"^ot:ottId": 6156874, 
+"^ot:ottTaxonName": "Petracola waka"
 }, 
 "Tl2630113": {
-"^ot:originalLabel": "Anadia mcdiarmidi IRSNB_2674"
+"^ot:originalLabel": "Anadia mcdiarmidi IRSNB_2674", 
+"^ot:ottId": 132336, 
+"^ot:ottTaxonName": "Anadia mcdiarmidi"
 }, 
 "Tl2630114": {
-"^ot:altLabel": "Proctoporus sucullucu", 
 "^ot:originalLabel": "Proctoporus sucullucu MNCN_44476", 
+"^ot:ottId": 97224, 
+"^ot:ottTaxonName": "Proctoporus sucullucu", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 213265, 
 "@tb:identifier.taxonVariant": 280782, 
@@ -665,8 +827,9 @@
 }
 }, 
 "Tl2630115": {
-"^ot:altLabel": "Cercosaura argulus", 
 "^ot:originalLabel": "Cercosaura argulus MPEG_21540", 
+"^ot:ottId": 967619, 
+"^ot:ottTaxonName": "Cercosaura argulus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 624378, 
 "@tb:identifier.taxonVariant": 836111, 
@@ -674,8 +837,9 @@
 }
 }, 
 "Tl2630116": {
-"^ot:altLabel": "Cercosaura ocellata", 
 "^ot:originalLabel": "Cercosaura ocellata MPEG_29023", 
+"^ot:ottId": 846829, 
+"^ot:ottTaxonName": "Cercosaura ocellata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 45968, 
 "@tb:identifier.taxonVariant": 107610, 
@@ -684,8 +848,9 @@
 }
 }, 
 "Tl2630117": {
-"^ot:altLabel": "Cercosaura ocellata", 
 "^ot:originalLabel": "Cercosaura ocellata LG_0683", 
+"^ot:ottId": 846829, 
+"^ot:ottTaxonName": "Cercosaura ocellata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 45968, 
 "@tb:identifier.taxonVariant": 107610, 
@@ -694,8 +859,9 @@
 }
 }, 
 "Tl2630118": {
-"^ot:altLabel": "Potamites ecpleopus", 
 "^ot:originalLabel": "Potamites ecpleopus MTR_0472", 
+"^ot:ottId": 588798, 
+"^ot:ottTaxonName": "Potamites ecpleopus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 624373, 
 "@tb:identifier.taxonVariant": 836106, 
@@ -703,8 +869,9 @@
 }
 }, 
 "Tl2630119": {
-"^ot:altLabel": "Cercosaura ocellata", 
 "^ot:originalLabel": "Cercosaura ocellata MTR_976976", 
+"^ot:ottId": 846829, 
+"^ot:ottTaxonName": "Cercosaura ocellata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 45968, 
 "@tb:identifier.taxonVariant": 107610, 
@@ -713,11 +880,14 @@
 }
 }, 
 "Tl2630120": {
-"^ot:originalLabel": "Cercosaura manicata CORBIDI_8837"
+"^ot:originalLabel": "Cercosaura manicata CORBIDI_8837", 
+"^ot:ottId": 4124386, 
+"^ot:ottTaxonName": "Cercosaura manicata"
 }, 
 "Tl2630121": {
-"^ot:altLabel": "Cercosaura ocellata", 
 "^ot:originalLabel": "Cercosaura ocellata MPEG_25759", 
+"^ot:ottId": 846829, 
+"^ot:ottTaxonName": "Cercosaura ocellata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 45968, 
 "@tb:identifier.taxonVariant": 107610, 
@@ -726,8 +896,9 @@
 }
 }, 
 "Tl2630122": {
-"^ot:altLabel": "Cercosaura ocellata", 
 "^ot:originalLabel": "Cercosaura ocellata LG_1366", 
+"^ot:ottId": 846829, 
+"^ot:ottTaxonName": "Cercosaura ocellata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 45968, 
 "@tb:identifier.taxonVariant": 107610, 
@@ -736,8 +907,9 @@
 }
 }, 
 "Tl2630123": {
-"^ot:altLabel": "Cercosaura ocellata", 
 "^ot:originalLabel": "Cercosaura ocellata SMS_609", 
+"^ot:ottId": 846829, 
+"^ot:ottTaxonName": "Cercosaura ocellata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 45968, 
 "@tb:identifier.taxonVariant": 107610, 
@@ -746,8 +918,9 @@
 }
 }, 
 "Tl2630124": {
-"^ot:altLabel": "Cercosaura ocellata", 
 "^ot:originalLabel": "Cercosaura ocellata MPEG_25025", 
+"^ot:ottId": 846829, 
+"^ot:ottTaxonName": "Cercosaura ocellata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 45968, 
 "@tb:identifier.taxonVariant": 107610, 
@@ -756,11 +929,14 @@
 }
 }, 
 "Tl2630125": {
-"^ot:originalLabel": "Proctoporus xestus CBF_2331"
+"^ot:originalLabel": "Proctoporus xestus CBF_2331", 
+"^ot:ottId": 400791, 
+"^ot:ottTaxonName": "Proctoporus xestus"
 }, 
 "Tl2630126": {
-"^ot:altLabel": "Cercosaura ocellata", 
 "^ot:originalLabel": "Cercosaura ocellata LG_1395", 
+"^ot:ottId": 846829, 
+"^ot:ottTaxonName": "Cercosaura ocellata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 45968, 
 "@tb:identifier.taxonVariant": 107610, 
@@ -769,8 +945,9 @@
 }
 }, 
 "Tl2630127": {
-"^ot:altLabel": "Proctoporus guentheri", 
 "^ot:originalLabel": "Proctoporus guentheri UTA_R51517", 
+"^ot:ottId": 155332, 
+"^ot:ottTaxonName": "Proctoporus guentheri", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 211121, 
 "@tb:identifier.taxonVariant": 279546, 
@@ -779,8 +956,9 @@
 }
 }, 
 "Tl2630128": {
-"^ot:altLabel": "Cercosaura oshaughnessyi", 
 "^ot:originalLabel": "Cercosaura oshaughnessyi QCAZ_4809", 
+"^ot:ottId": 967617, 
+"^ot:ottTaxonName": "Cercosaura oshaughnessyi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 624358, 
 "@tb:identifier.taxonVariant": 836091, 
@@ -788,8 +966,9 @@
 }
 }, 
 "Tl2630129": {
-"^ot:altLabel": "Cercosaura ocellata", 
 "^ot:originalLabel": "Cercosaura ocellata MTR_7296", 
+"^ot:ottId": 846829, 
+"^ot:ottTaxonName": "Cercosaura ocellata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 45968, 
 "@tb:identifier.taxonVariant": 107610, 
@@ -798,8 +977,9 @@
 }
 }, 
 "Tl2630130": {
-"^ot:altLabel": "Cercosaura ocellata", 
 "^ot:originalLabel": "Cercosaura ocellata CORBIDI_9743", 
+"^ot:ottId": 846829, 
+"^ot:ottTaxonName": "Cercosaura ocellata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 45968, 
 "@tb:identifier.taxonVariant": 107610, 
@@ -808,8 +988,9 @@
 }
 }, 
 "Tl2630131": {
-"^ot:altLabel": "Cercosaura oshaughnessyi", 
 "^ot:originalLabel": "Cercosaura oshaughnessyi LSUMZ_H12591", 
+"^ot:ottId": 967617, 
+"^ot:ottTaxonName": "Cercosaura oshaughnessyi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 624358, 
 "@tb:identifier.taxonVariant": 836091, 
@@ -817,8 +998,9 @@
 }
 }, 
 "Tl2630132": {
-"^ot:altLabel": "Cercosaura ocellata", 
 "^ot:originalLabel": "Cercosaura ocellata MPEG_22945", 
+"^ot:ottId": 846829, 
+"^ot:ottTaxonName": "Cercosaura ocellata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 45968, 
 "@tb:identifier.taxonVariant": 107610, 
@@ -827,8 +1009,9 @@
 }
 }, 
 "Tl2630133": {
-"^ot:altLabel": "Cercosaura ocellata", 
 "^ot:originalLabel": "Cercosaura ocellata MPEG_28241", 
+"^ot:ottId": 846829, 
+"^ot:ottTaxonName": "Cercosaura ocellata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 45968, 
 "@tb:identifier.taxonVariant": 107610, 
@@ -837,8 +1020,9 @@
 }
 }, 
 "Tl2630134": {
-"^ot:altLabel": "Cercosaura ocellata", 
 "^ot:originalLabel": "Cercosaura ocellata LG_1368", 
+"^ot:ottId": 846829, 
+"^ot:ottTaxonName": "Cercosaura ocellata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 45968, 
 "@tb:identifier.taxonVariant": 107610, 
@@ -847,8 +1031,9 @@
 }
 }, 
 "Tl2630135": {
-"^ot:altLabel": "Proctoporus pachyurus", 
 "^ot:originalLabel": "Proctoporus pachyurus MHNC_11439", 
+"^ot:ottId": 779135, 
+"^ot:ottTaxonName": "Proctoporus pachyurus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 281772, 
 "@tb:identifier.taxonVariant": 335307, 
@@ -857,8 +1042,9 @@
 }
 }, 
 "Tl2630136": {
-"^ot:altLabel": "Cercosaura ocellata", 
 "^ot:originalLabel": "Cercosaura ocellata MTR_10236", 
+"^ot:ottId": 846829, 
+"^ot:ottTaxonName": "Cercosaura ocellata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 45968, 
 "@tb:identifier.taxonVariant": 107610, 
@@ -867,8 +1053,9 @@
 }
 }, 
 "Tl2630137": {
-"^ot:altLabel": "Cercosaura oshaughnessyi", 
 "^ot:originalLabel": "Cercosaura oshaughnessyi QCAZ_7337", 
+"^ot:ottId": 967617, 
+"^ot:ottTaxonName": "Cercosaura oshaughnessyi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 624358, 
 "@tb:identifier.taxonVariant": 836091, 
@@ -876,11 +1063,14 @@
 }
 }, 
 "Tl2630138": {
-"^ot:originalLabel": "Cercosaura manicata QCAZ_5821"
+"^ot:originalLabel": "Cercosaura manicata QCAZ_5821", 
+"^ot:ottId": 4124386, 
+"^ot:ottTaxonName": "Cercosaura manicata"
 }, 
 "Tl2630139": {
-"^ot:altLabel": "Cercosaura ocellata", 
 "^ot:originalLabel": "Cercosaura ocellata MBS_012", 
+"^ot:ottId": 846829, 
+"^ot:ottTaxonName": "Cercosaura ocellata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 45968, 
 "@tb:identifier.taxonVariant": 107610, 
@@ -889,8 +1079,9 @@
 }
 }, 
 "Tl2630140": {
-"^ot:altLabel": "Cercosaura ocellata", 
 "^ot:originalLabel": "Cercosaura ocellata MTR_9074", 
+"^ot:ottId": 846829, 
+"^ot:ottTaxonName": "Cercosaura ocellata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 45968, 
 "@tb:identifier.taxonVariant": 107610, 
@@ -899,8 +1090,9 @@
 }
 }, 
 "Tl2630141": {
-"^ot:altLabel": "Cercosaura ocellata", 
 "^ot:originalLabel": "Cercosaura ocellata MPEG_29080", 
+"^ot:ottId": 846829, 
+"^ot:ottTaxonName": "Cercosaura ocellata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 45968, 
 "@tb:identifier.taxonVariant": 107610, 
@@ -909,8 +1101,9 @@
 }
 }, 
 "Tl2630142": {
-"^ot:altLabel": "Cercosaura ocellata", 
 "^ot:originalLabel": "Cercosaura ocellata H_1114", 
+"^ot:ottId": 846829, 
+"^ot:ottTaxonName": "Cercosaura ocellata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 45968, 
 "@tb:identifier.taxonVariant": 107610, 
@@ -919,8 +1112,9 @@
 }
 }, 
 "Tl2630143": {
-"^ot:altLabel": "Cercosaura oshaughnessyi", 
 "^ot:originalLabel": "Cercosaura oshaughnessyi QCAZ_5195", 
+"^ot:ottId": 967617, 
+"^ot:ottTaxonName": "Cercosaura oshaughnessyi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 624358, 
 "@tb:identifier.taxonVariant": 836091, 
@@ -928,8 +1122,9 @@
 }
 }, 
 "Tl2630144": {
-"^ot:altLabel": "Cercosaura ocellata", 
 "^ot:originalLabel": "Cercosaura ocellata MPEG_20784", 
+"^ot:ottId": 846829, 
+"^ot:ottTaxonName": "Cercosaura ocellata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 45968, 
 "@tb:identifier.taxonVariant": 107610, 
@@ -938,8 +1133,9 @@
 }
 }, 
 "Tl2630145": {
-"^ot:altLabel": "Cercosaura ocellata", 
 "^ot:originalLabel": "Cercosaura ocellata LG_1073", 
+"^ot:ottId": 846829, 
+"^ot:ottTaxonName": "Cercosaura ocellata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 45968, 
 "@tb:identifier.taxonVariant": 107610, 
@@ -948,8 +1144,9 @@
 }
 }, 
 "Tl2630146": {
-"^ot:altLabel": "Potamites juruazensis", 
 "^ot:originalLabel": "Potamites juruazensis LSUMZ_H13823", 
+"^ot:ottId": 588797, 
+"^ot:ottTaxonName": "Potamites juruazensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 624363, 
 "@tb:identifier.taxonVariant": 836096, 
@@ -957,8 +1154,9 @@
 }
 }, 
 "Tl2630147": {
-"^ot:altLabel": "Cercosaura argulus", 
 "^ot:originalLabel": "Cercosaura argulus MPEG_21580", 
+"^ot:ottId": 967619, 
+"^ot:ottTaxonName": "Cercosaura argulus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 624378, 
 "@tb:identifier.taxonVariant": 836111, 
@@ -966,8 +1164,9 @@
 }
 }, 
 "Tl2630148": {
-"^ot:altLabel": "Cercosaura ocellata", 
 "^ot:originalLabel": "Cercosaura ocellata MPEG_22968", 
+"^ot:ottId": 846829, 
+"^ot:ottTaxonName": "Cercosaura ocellata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 45968, 
 "@tb:identifier.taxonVariant": 107610, 
@@ -976,8 +1175,9 @@
 }
 }, 
 "Tl2630149": {
-"^ot:altLabel": "Proctoporus bolivianus", 
 "^ot:originalLabel": "Proctoporus bolivianus MNCN_43663", 
+"^ot:ottId": 759342, 
+"^ot:ottTaxonName": "Proctoporus bolivianus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 206758, 
 "@tb:identifier.taxonVariant": 275975, 
@@ -986,8 +1186,9 @@
 }
 }, 
 "Tl2630150": {
-"^ot:altLabel": "Proctoporus unsaacae", 
 "^ot:originalLabel": "Proctoporus unsaacae UTA_R51477", 
+"^ot:ottId": 97223, 
+"^ot:ottTaxonName": "Proctoporus unsaacae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 213264, 
 "@tb:identifier.taxonVariant": 280781, 
@@ -996,8 +1197,9 @@
 }
 }, 
 "Tl2630151": {
-"^ot:altLabel": "Cercosaura eigenmanni", 
 "^ot:originalLabel": "Cercosaura eigenmanni MPEG_21550", 
+"^ot:ottId": 967621, 
+"^ot:ottTaxonName": "Cercosaura eigenmanni", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 624377, 
 "@tb:identifier.taxonVariant": 836110, 
@@ -1005,8 +1207,9 @@
 }
 }, 
 "Tl2630152": {
-"^ot:altLabel": "Cercosaura ocellata", 
 "^ot:originalLabel": "Cercosaura ocellata LG_3207", 
+"^ot:ottId": 846829, 
+"^ot:ottTaxonName": "Cercosaura ocellata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 45968, 
 "@tb:identifier.taxonVariant": 107610, 
@@ -1015,8 +1218,9 @@
 }
 }, 
 "Tl2630153": {
-"^ot:altLabel": "Cercosaura oshaughnessyi", 
 "^ot:originalLabel": "Cercosaura oshaughnessyi QCAZ_5828", 
+"^ot:ottId": 967617, 
+"^ot:ottTaxonName": "Cercosaura oshaughnessyi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 624358, 
 "@tb:identifier.taxonVariant": 836091, 
@@ -1024,8 +1228,9 @@
 }
 }, 
 "Tl2630154": {
-"^ot:altLabel": "Cercosaura ocellata", 
 "^ot:originalLabel": "Cercosaura ocellata MTR_977465", 
+"^ot:ottId": 846829, 
+"^ot:ottTaxonName": "Cercosaura ocellata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 45968, 
 "@tb:identifier.taxonVariant": 107610, 
@@ -1034,11 +1239,14 @@
 }
 }, 
 "Tl2630155": {
-"^ot:originalLabel": "Cercosaura schreibersii albostrigatus LG_1168"
+"^ot:originalLabel": "Cercosaura schreibersii albostrigatus LG_1168", 
+"^ot:ottId": 322425, 
+"^ot:ottTaxonName": "Cercosaura schreibersii"
 }, 
 "Tl2630156": {
-"^ot:altLabel": "Cercosaura ocellata", 
 "^ot:originalLabel": "Cercosaura ocellata MTR_976978", 
+"^ot:ottId": 846829, 
+"^ot:ottTaxonName": "Cercosaura ocellata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 45968, 
 "@tb:identifier.taxonVariant": 107610, 
@@ -1047,8 +1255,9 @@
 }
 }, 
 "Tl2630157": {
-"^ot:altLabel": "Cercosaura ocellata", 
 "^ot:originalLabel": "Cercosaura ocellata MPEG_29732", 
+"^ot:ottId": 846829, 
+"^ot:ottTaxonName": "Cercosaura ocellata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 45968, 
 "@tb:identifier.taxonVariant": 107610, 
@@ -1057,8 +1266,9 @@
 }
 }, 
 "Tl2630158": {
-"^ot:altLabel": "Cercosaura ocellata", 
 "^ot:originalLabel": "Cercosaura ocellata LG_3209", 
+"^ot:ottId": 846829, 
+"^ot:ottTaxonName": "Cercosaura ocellata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 45968, 
 "@tb:identifier.taxonVariant": 107610, 
@@ -1067,8 +1277,9 @@
 }
 }, 
 "Tl2630159": {
-"^ot:altLabel": "Cercosaura oshaughnessyi", 
 "^ot:originalLabel": "Cercosaura oshaughnessyi QCAZ_6750", 
+"^ot:ottId": 967617, 
+"^ot:ottTaxonName": "Cercosaura oshaughnessyi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 624358, 
 "@tb:identifier.taxonVariant": 836091, 
@@ -1076,8 +1287,9 @@
 }
 }, 
 "Tl2630160": {
-"^ot:altLabel": "Cercosaura argulus", 
 "^ot:originalLabel": "Cercosaura argulus QCAZ_5217", 
+"^ot:ottId": 967619, 
+"^ot:ottTaxonName": "Cercosaura argulus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 624378, 
 "@tb:identifier.taxonVariant": 836111, 
@@ -1085,8 +1297,9 @@
 }
 }, 
 "Tl2630161": {
-"^ot:altLabel": "Cercosaura oshaughnessyi", 
 "^ot:originalLabel": "Cercosaura oshaughnessyi LSUMZ_H13584", 
+"^ot:ottId": 967617, 
+"^ot:ottTaxonName": "Cercosaura oshaughnessyi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 624358, 
 "@tb:identifier.taxonVariant": 836091, 
@@ -1094,8 +1307,9 @@
 }
 }, 
 "Tl2630162": {
-"^ot:altLabel": "Cercosaura ocellata", 
 "^ot:originalLabel": "Cercosaura ocellata MPEG_22357", 
+"^ot:ottId": 846829, 
+"^ot:ottTaxonName": "Cercosaura ocellata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 45968, 
 "@tb:identifier.taxonVariant": 107610, 
@@ -1104,8 +1318,9 @@
 }
 }, 
 "Tl2630163": {
-"^ot:altLabel": "Cercosaura ocellata", 
 "^ot:originalLabel": "Cercosaura ocellata MPEG_22356", 
+"^ot:ottId": 846829, 
+"^ot:ottTaxonName": "Cercosaura ocellata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 45968, 
 "@tb:identifier.taxonVariant": 107610, 
@@ -1114,8 +1329,9 @@
 }
 }, 
 "Tl2630164": {
-"^ot:altLabel": "Cercosaura ocellata", 
 "^ot:originalLabel": "Cercosaura ocellata MTR_85", 
+"^ot:ottId": 846829, 
+"^ot:ottTaxonName": "Cercosaura ocellata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 45968, 
 "@tb:identifier.taxonVariant": 107610, 
@@ -1124,8 +1340,9 @@
 }
 }, 
 "Tl2630165": {
-"^ot:altLabel": "Cercosaura ocellata", 
 "^ot:originalLabel": "Cercosaura ocellata MTR_967897", 
+"^ot:ottId": 846829, 
+"^ot:ottTaxonName": "Cercosaura ocellata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 45968, 
 "@tb:identifier.taxonVariant": 107610, 
@@ -1148,7 +1365,19 @@
 "Tr102060": {
 "@label": "ML tree", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:changesCount", 
+"^ot:curatedType": "Maximum likelihood ", 
+"^ot:inGroupClade": "Tn15978227", 
+"^ot:nodeLabelDescription": "", 
+"^ot:nodeLabelMode": "ot:bootstrapValues", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn15978249", 
+"^ot:specifiedRoot": "Tn15978249", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "^tb:ntax.tree": 115, 
 "edgeBySourceId": {
 "Tn15978130": {
@@ -1167,24 +1396,28 @@
 "edge4042104": {
 "@length": 0.05213073131232036, 
 "@source": "Tn15978132", 
-"@target": "Tn15978273"
+"@target": "Tn15978273", 
+"^ot:bootstrapValues": 100
 }, 
 "edge4042110": {
 "@length": 0.021803934705707913, 
 "@source": "Tn15978132", 
-"@target": "Tn15978326"
+"@target": "Tn15978326", 
+"^ot:bootstrapValues": 100
 }
 }, 
 "Tn15978133": {
 "edge4042008": {
 "@length": 0.000758478675018579, 
 "@source": "Tn15978133", 
-"@target": "Tn15978151"
+"@target": "Tn15978151", 
+"^ot:bootstrapValues": 74
 }, 
 "edge4042018": {
 "@length": 0.0007434161890291294, 
 "@source": "Tn15978133", 
-"@target": "Tn15978173"
+"@target": "Tn15978173", 
+"^ot:bootstrapValues": 51
 }
 }, 
 "Tn15978140": {
@@ -1196,7 +1429,8 @@
 "edge4042235": {
 "@length": 0.0007025296296653634, 
 "@source": "Tn15978140", 
-"@target": "Tn15978280"
+"@target": "Tn15978280", 
+"^ot:bootstrapValues": 84
 }
 }, 
 "Tn15978144": {
@@ -1215,12 +1449,14 @@
 "edge4042054": {
 "@length": 0.014707318217404204, 
 "@source": "Tn15978145", 
-"@target": "Tn15978186"
+"@target": "Tn15978186", 
+"^ot:bootstrapValues": 100
 }, 
 "edge4042060": {
 "@length": 0.0052081429934706614, 
 "@source": "Tn15978145", 
-"@target": "Tn15978199"
+"@target": "Tn15978199", 
+"^ot:bootstrapValues": 73
 }
 }, 
 "Tn15978147": {
@@ -1244,31 +1480,36 @@
 "edge4042012": {
 "@length": 1.00000050002909e-06, 
 "@source": "Tn15978151", 
-"@target": "Tn15978130"
+"@target": "Tn15978130", 
+"^ot:bootstrapValues": 43
 }
 }, 
 "Tn15978152": {
 "edge4042269": {
 "@length": 0.0041585118777861555, 
 "@source": "Tn15978152", 
-"@target": "Tn15978147"
+"@target": "Tn15978147", 
+"^ot:bootstrapValues": 100
 }, 
 "edge4042275": {
 "@length": 0.004220245924299058, 
 "@source": "Tn15978152", 
-"@target": "Tn15978156"
+"@target": "Tn15978156", 
+"^ot:bootstrapValues": 100
 }
 }, 
 "Tn15978153": {
 "edge4042034": {
 "@length": 0.04268567837232997, 
 "@source": "Tn15978153", 
-"@target": "Tn15978223"
+"@target": "Tn15978223", 
+"^ot:bootstrapValues": 100
 }, 
 "edge4042040": {
 "@length": 0.030203547886292682, 
 "@source": "Tn15978153", 
-"@target": "Tn15978251"
+"@target": "Tn15978251", 
+"^ot:bootstrapValues": 100
 }
 }, 
 "Tn15978155": {
@@ -1292,7 +1533,8 @@
 "edge4042279": {
 "@length": 1.00000050002909e-06, 
 "@source": "Tn15978156", 
-"@target": "Tn15978166"
+"@target": "Tn15978166", 
+"^ot:bootstrapValues": 60
 }
 }, 
 "Tn15978157": {
@@ -1304,7 +1546,8 @@
 "edge4042297": {
 "@length": 0.0006533633524143823, 
 "@source": "Tn15978157", 
-"@target": "Tn15978356"
+"@target": "Tn15978356", 
+"^ot:bootstrapValues": 52
 }
 }, 
 "Tn15978160": {
@@ -1316,7 +1559,8 @@
 "edge4042309": {
 "@length": 0.0007366256332960888, 
 "@source": "Tn15978160", 
-"@target": "Tn15978270"
+"@target": "Tn15978270", 
+"^ot:bootstrapValues": 81
 }
 }, 
 "Tn15978161": {
@@ -1335,12 +1579,14 @@
 "edge4042251": {
 "@length": 0.0018408904194532408, 
 "@source": "Tn15978163", 
-"@target": "Tn15978155"
+"@target": "Tn15978155", 
+"^ot:bootstrapValues": 34
 }, 
 "edge4042257": {
 "@length": 0.0007654080322462163, 
 "@source": "Tn15978163", 
-"@target": "Tn15978346"
+"@target": "Tn15978346", 
+"^ot:bootstrapValues": 26
 }
 }, 
 "Tn15978166": {
@@ -1364,7 +1610,8 @@
 "edge4041982": {
 "@length": 0.028540224805165493, 
 "@source": "Tn15978167", 
-"@target": "Tn15978327"
+"@target": "Tn15978327", 
+"^ot:bootstrapValues": 100
 }
 }, 
 "Tn15978168": {
@@ -1383,12 +1630,14 @@
 "edge4042078": {
 "@length": 0.015920704836471452, 
 "@source": "Tn15978169", 
-"@target": "Tn15978209"
+"@target": "Tn15978209", 
+"^ot:bootstrapValues": 100
 }, 
 "edge4042084": {
 "@length": 0.0024268437574111873, 
 "@source": "Tn15978169", 
-"@target": "Tn15978290"
+"@target": "Tn15978290", 
+"^ot:bootstrapValues": 55
 }
 }, 
 "Tn15978170": {
@@ -1400,19 +1649,22 @@
 "edge4042179": {
 "@length": 0.0024421939108943505, 
 "@source": "Tn15978170", 
-"@target": "Tn15978328"
+"@target": "Tn15978328", 
+"^ot:bootstrapValues": 97
 }
 }, 
 "Tn15978171": {
 "edge4041964": {
 "@length": 0.01955038370323543, 
 "@source": "Tn15978171", 
-"@target": "Tn15978253"
+"@target": "Tn15978253", 
+"^ot:bootstrapValues": 98
 }, 
 "edge4041978": {
 "@length": 0.045194767651566846, 
 "@source": "Tn15978171", 
-"@target": "Tn15978167"
+"@target": "Tn15978167", 
+"^ot:bootstrapValues": 100
 }
 }, 
 "Tn15978173": {
@@ -1424,55 +1676,64 @@
 "edge4042022": {
 "@length": 0.0008992385060839948, 
 "@source": "Tn15978173", 
-"@target": "Tn15978185"
+"@target": "Tn15978185", 
+"^ot:bootstrapValues": 57
 }
 }, 
 "Tn15978174": {
 "edge4041870": {
 "@length": 0.014744153259020494, 
 "@source": "Tn15978174", 
-"@target": "Tn15978255"
+"@target": "Tn15978255", 
+"^ot:bootstrapValues": 44
 }, 
 "edge4041916": {
 "@length": 0.01928214976838952, 
 "@source": "Tn15978174", 
-"@target": "Tn15978227"
+"@target": "Tn15978227", 
+"^ot:bootstrapValues": 91
 }
 }, 
 "Tn15978175": {
 "edge4041896": {
 "@length": 0.06373333025876216, 
 "@source": "Tn15978175", 
-"@target": "Tn15978144"
+"@target": "Tn15978144", 
+"^ot:bootstrapValues": 100
 }, 
 "edge4041902": {
 "@length": 0.01973935046266174, 
 "@source": "Tn15978175", 
-"@target": "Tn15978212"
+"@target": "Tn15978212", 
+"^ot:bootstrapValues": 44
 }
 }, 
 "Tn15978177": {
 "edge4042199": {
 "@length": 0.0030822467916813067, 
 "@source": "Tn15978177", 
-"@target": "Tn15978319"
+"@target": "Tn15978319", 
+"^ot:bootstrapValues": 36
 }, 
 "edge4042217": {
 "@length": 0.003609718091244854, 
 "@source": "Tn15978177", 
-"@target": "Tn15978215"
+"@target": "Tn15978215", 
+"^ot:bootstrapValues": 42
 }
 }, 
 "Tn15978179": {
 "edge4042135": {
 "@length": 0.0023136948241723595, 
 "@source": "Tn15978179", 
-"@target": "Tn15978305"
+"@target": "Tn15978305", 
+"^ot:bootstrapValues": 100
 }, 
 "edge4042185": {
 "@length": 0.018738896390296626, 
 "@source": "Tn15978179", 
-"@target": "Tn15978323"
+"@target": "Tn15978323", 
+"^ot:bootstrapValues": 100
 }
 }, 
 "Tn15978180": {
@@ -1484,7 +1745,8 @@
 "edge4041876": {
 "@length": 0.008766488884474585, 
 "@source": "Tn15978180", 
-"@target": "Tn15978271"
+"@target": "Tn15978271", 
+"^ot:bootstrapValues": 15
 }
 }, 
 "Tn15978181": {
@@ -1496,7 +1758,8 @@
 "edge4041972": {
 "@length": 0.029437091693273826, 
 "@source": "Tn15978181", 
-"@target": "Tn15978236"
+"@target": "Tn15978236", 
+"^ot:bootstrapValues": 100
 }
 }, 
 "Tn15978183": {
@@ -1556,7 +1819,8 @@
 "edge4042169": {
 "@length": 0.0013676695427456943, 
 "@source": "Tn15978188", 
-"@target": "Tn15978202"
+"@target": "Tn15978202", 
+"^ot:bootstrapValues": 61
 }
 }, 
 "Tn15978189": {
@@ -1568,7 +1832,8 @@
 "edge4041990": {
 "@length": 0.0036345531338013875, 
 "@source": "Tn15978189", 
-"@target": "Tn15978210"
+"@target": "Tn15978210", 
+"^ot:bootstrapValues": 83
 }
 }, 
 "Tn15978190": {
@@ -1587,12 +1852,14 @@
 "edge4041946": {
 "@length": 0.01305793801836376, 
 "@source": "Tn15978191", 
-"@target": "Tn15978201"
+"@target": "Tn15978201", 
+"^ot:bootstrapValues": 55
 }, 
 "edge4042028": {
 "@length": 0.03515203945331574, 
 "@source": "Tn15978191", 
-"@target": "Tn15978341"
+"@target": "Tn15978341", 
+"^ot:bootstrapValues": 100
 }
 }, 
 "Tn15978193": {
@@ -1604,7 +1871,8 @@
 "edge4042191": {
 "@length": 0.002248912818171979, 
 "@source": "Tn15978193", 
-"@target": "Tn15978168"
+"@target": "Tn15978168", 
+"^ot:bootstrapValues": 94
 }
 }, 
 "Tn15978194": {
@@ -1616,7 +1884,8 @@
 "edge4042305": {
 "@length": 0.0013518258935467972, 
 "@source": "Tn15978194", 
-"@target": "Tn15978160"
+"@target": "Tn15978160", 
+"^ot:bootstrapValues": 83
 }
 }, 
 "Tn15978198": {
@@ -1640,7 +1909,8 @@
 "edge4042064": {
 "@length": 0.006749252748752325, 
 "@source": "Tn15978199", 
-"@target": "Tn15978284"
+"@target": "Tn15978284", 
+"^ot:bootstrapValues": 80
 }
 }, 
 "Tn15978200": {
@@ -1652,19 +1922,22 @@
 "edge4041922": {
 "@length": 0.045287301493919206, 
 "@source": "Tn15978200", 
-"@target": "Tn15978242"
+"@target": "Tn15978242", 
+"^ot:bootstrapValues": 100
 }
 }, 
 "Tn15978201": {
 "edge4041948": {
 "@length": 0.057919078129590275, 
 "@source": "Tn15978201", 
-"@target": "Tn15978226"
+"@target": "Tn15978226", 
+"^ot:bootstrapValues": 100
 }, 
 "edge4041962": {
 "@length": 0.030433001133379562, 
 "@source": "Tn15978201", 
-"@target": "Tn15978171"
+"@target": "Tn15978171", 
+"^ot:bootstrapValues": 100
 }
 }, 
 "Tn15978202": {
@@ -1688,7 +1961,8 @@
 "edge4042207": {
 "@length": 0.01962509564493049, 
 "@source": "Tn15978204", 
-"@target": "Tn15978350"
+"@target": "Tn15978350", 
+"^ot:bootstrapValues": 100
 }
 }, 
 "Tn15978206": {
@@ -1743,24 +2017,28 @@
 "edge4041904": {
 "@length": 0.04888808278571126, 
 "@source": "Tn15978212", 
-"@target": "Tn15978317"
+"@target": "Tn15978317", 
+"^ot:bootstrapValues": 57
 }, 
 "edge4041910": {
 "@length": 0.07027159952018766, 
 "@source": "Tn15978212", 
-"@target": "Tn15978313"
+"@target": "Tn15978313", 
+"^ot:bootstrapValues": 100
 }
 }, 
 "Tn15978215": {
 "edge4042219": {
 "@length": 0.015588572211696168, 
 "@source": "Tn15978215", 
-"@target": "Tn15978263"
+"@target": "Tn15978263", 
+"^ot:bootstrapValues": 96
 }, 
 "edge4042229": {
 "@length": 0.014820920475438768, 
 "@source": "Tn15978215", 
-"@target": "Tn15978311"
+"@target": "Tn15978311", 
+"^ot:bootstrapValues": 100
 }
 }, 
 "Tn15978217": {
@@ -1779,12 +2057,14 @@
 "edge4041938": {
 "@length": 0.089060341403013, 
 "@source": "Tn15978219", 
-"@target": "Tn15978286"
+"@target": "Tn15978286", 
+"^ot:bootstrapValues": 100
 }, 
 "edge4041944": {
 "@length": 0.00711967808800174, 
 "@source": "Tn15978219", 
-"@target": "Tn15978191"
+"@target": "Tn15978191", 
+"^ot:bootstrapValues": 99
 }
 }, 
 "Tn15978220": {
@@ -1796,7 +2076,8 @@
 "edge4041862": {
 "@length": 0.02487559088903247, 
 "@source": "Tn15978220", 
-"@target": "Tn15978190"
+"@target": "Tn15978190", 
+"^ot:bootstrapValues": 99
 }
 }, 
 "Tn15978223": {
@@ -1820,19 +2101,22 @@
 "edge4041952": {
 "@length": 0.008213135112566512, 
 "@source": "Tn15978226", 
-"@target": "Tn15978304"
+"@target": "Tn15978304", 
+"^ot:bootstrapValues": 78
 }
 }, 
 "Tn15978227": {
 "edge4041918": {
 "@length": 0.04028390445130324, 
 "@source": "Tn15978227", 
-"@target": "Tn15978200"
+"@target": "Tn15978200", 
+"^ot:bootstrapValues": 100
 }, 
 "edge4041932": {
 "@length": 0.015712586039442696, 
 "@source": "Tn15978227", 
-"@target": "Tn15978307"
+"@target": "Tn15978307", 
+"^ot:bootstrapValues": 100
 }
 }, 
 "Tn15978233": {
@@ -1880,19 +2164,22 @@
 "edge4042096": {
 "@length": 0.0006648418326573655, 
 "@source": "Tn15978238", 
-"@target": "Tn15978287"
+"@target": "Tn15978287", 
+"^ot:bootstrapValues": 91
 }
 }, 
 "Tn15978239": {
 "edge4042165": {
 "@length": 0.0024258799919753887, 
 "@source": "Tn15978239", 
-"@target": "Tn15978188"
+"@target": "Tn15978188", 
+"^ot:bootstrapValues": 80
 }, 
 "edge4042175": {
 "@length": 0.0016020623522712922, 
 "@source": "Tn15978239", 
-"@target": "Tn15978170"
+"@target": "Tn15978170", 
+"^ot:bootstrapValues": 90
 }
 }, 
 "Tn15978242": {
@@ -1904,7 +2191,8 @@
 "edge4041926": {
 "@length": 0.02908149782686143, 
 "@source": "Tn15978242", 
-"@target": "Tn15978187"
+"@target": "Tn15978187", 
+"^ot:bootstrapValues": 100
 }
 }, 
 "Tn15978248": {
@@ -1916,31 +2204,36 @@
 "edge4042243": {
 "@length": 1.00000050002909e-06, 
 "@source": "Tn15978248", 
-"@target": "Tn15978289"
+"@target": "Tn15978289", 
+"^ot:bootstrapValues": 55
 }
 }, 
 "Tn15978249": {
 "edge4041858": {
 "@length": 0.03058334649308797, 
 "@source": "Tn15978249", 
-"@target": "Tn15978220"
+"@target": "Tn15978220", 
+"^ot:bootstrapValues": 100
 }, 
 "edge4041868": {
 "@length": 0.03058334649308797, 
 "@source": "Tn15978249", 
-"@target": "Tn15978174"
+"@target": "Tn15978174", 
+"^ot:bootstrapValues": 89
 }
 }, 
 "Tn15978250": {
 "edge4041888": {
 "@length": 0.052806773415339375, 
 "@source": "Tn15978250", 
-"@target": "Tn15978183"
+"@target": "Tn15978183", 
+"^ot:bootstrapValues": 100
 }, 
 "edge4041894": {
 "@length": 0.00914931517633317, 
 "@source": "Tn15978250", 
-"@target": "Tn15978175"
+"@target": "Tn15978175", 
+"^ot:bootstrapValues": 11
 }
 }, 
 "Tn15978251": {
@@ -1952,19 +2245,22 @@
 "edge4042044": {
 "@length": 0.008897150045671176, 
 "@source": "Tn15978251", 
-"@target": "Tn15978198"
+"@target": "Tn15978198", 
+"^ot:bootstrapValues": 100
 }
 }, 
 "Tn15978252": {
 "edge4041986": {
 "@length": 0.0028111723635926116, 
 "@source": "Tn15978252", 
-"@target": "Tn15978189"
+"@target": "Tn15978189", 
+"^ot:bootstrapValues": 73
 }, 
 "edge4041996": {
 "@length": 0.003023585993245197, 
 "@source": "Tn15978252", 
-"@target": "Tn15978254"
+"@target": "Tn15978254", 
+"^ot:bootstrapValues": 80
 }
 }, 
 "Tn15978253": {
@@ -1976,7 +2272,8 @@
 "edge4041968": {
 "@length": 0.01329970335184614, 
 "@source": "Tn15978253", 
-"@target": "Tn15978181"
+"@target": "Tn15978181", 
+"^ot:bootstrapValues": 98
 }
 }, 
 "Tn15978254": {
@@ -1988,19 +2285,22 @@
 "edge4042000": {
 "@length": 0.006180420945854539, 
 "@source": "Tn15978254", 
-"@target": "Tn15978207"
+"@target": "Tn15978207", 
+"^ot:bootstrapValues": 100
 }
 }, 
 "Tn15978255": {
 "edge4041872": {
 "@length": 0.01759503096476645, 
 "@source": "Tn15978255", 
-"@target": "Tn15978180"
+"@target": "Tn15978180", 
+"^ot:bootstrapValues": 18
 }, 
 "edge4041886": {
 "@length": 0.005070227712780244, 
 "@source": "Tn15978255", 
-"@target": "Tn15978250"
+"@target": "Tn15978250", 
+"^ot:bootstrapValues": 4
 }
 }, 
 "Tn15978258": {
@@ -2019,12 +2319,14 @@
 "edge4042261": {
 "@length": 0.007072073968746934, 
 "@source": "Tn15978260", 
-"@target": "Tn15978233"
+"@target": "Tn15978233", 
+"^ot:bootstrapValues": 98
 }, 
 "edge4042267": {
 "@length": 0.0092155277019355, 
 "@source": "Tn15978260", 
-"@target": "Tn15978152"
+"@target": "Tn15978152", 
+"^ot:bootstrapValues": 100
 }
 }, 
 "Tn15978263": {
@@ -2036,7 +2338,8 @@
 "edge4042223": {
 "@length": 0.008958820408708965, 
 "@source": "Tn15978263", 
-"@target": "Tn15978315"
+"@target": "Tn15978315", 
+"^ot:bootstrapValues": 96
 }
 }, 
 "Tn15978270": {
@@ -2060,7 +2363,8 @@
 "edge4041880": {
 "@length": 0.01627371798999234, 
 "@source": "Tn15978271", 
-"@target": "Tn15978275"
+"@target": "Tn15978275", 
+"^ot:bootstrapValues": 27
 }
 }, 
 "Tn15978273": {
@@ -2096,19 +2400,22 @@
 "edge4042239": {
 "@length": 0.00275773565740856, 
 "@source": "Tn15978280", 
-"@target": "Tn15978248"
+"@target": "Tn15978248", 
+"^ot:bootstrapValues": 99
 }
 }, 
 "Tn15978281": {
 "edge4042121": {
 "@length": 0.0006630080116178994, 
 "@source": "Tn15978281", 
-"@target": "Tn15978161"
+"@target": "Tn15978161", 
+"^ot:bootstrapValues": 59
 }, 
 "edge4042127": {
 "@length": 0.0006837377244680093, 
 "@source": "Tn15978281", 
-"@target": "Tn15978358"
+"@target": "Tn15978358", 
+"^ot:bootstrapValues": 79
 }
 }, 
 "Tn15978284": {
@@ -2120,7 +2427,8 @@
 "edge4042068": {
 "@length": 0.0024092995110795625, 
 "@source": "Tn15978284", 
-"@target": "Tn15978258"
+"@target": "Tn15978258", 
+"^ot:bootstrapValues": 95
 }
 }, 
 "Tn15978286": {
@@ -2163,12 +2471,14 @@
 "edge4042086": {
 "@length": 0.015607114102909096, 
 "@source": "Tn15978290", 
-"@target": "Tn15978217"
+"@target": "Tn15978217", 
+"^ot:bootstrapValues": 100
 }, 
 "edge4042092": {
 "@length": 0.020095853875700734, 
 "@source": "Tn15978290", 
-"@target": "Tn15978238"
+"@target": "Tn15978238", 
+"^ot:bootstrapValues": 100
 }
 }, 
 "Tn15978291": {
@@ -2187,24 +2497,28 @@
 "edge4042032": {
 "@length": 0.01731572797789076, 
 "@source": "Tn15978295", 
-"@target": "Tn15978153"
+"@target": "Tn15978153", 
+"^ot:bootstrapValues": 99
 }, 
 "edge4042050": {
 "@length": 0.00640395911260767, 
 "@source": "Tn15978295", 
-"@target": "Tn15978296"
+"@target": "Tn15978296", 
+"^ot:bootstrapValues": 74
 }
 }, 
 "Tn15978296": {
 "edge4042052": {
 "@length": 0.024438373433275196, 
 "@source": "Tn15978296", 
-"@target": "Tn15978145"
+"@target": "Tn15978145", 
+"^ot:bootstrapValues": 100
 }, 
 "edge4042074": {
 "@length": 0.0018830335035948697, 
 "@source": "Tn15978296", 
-"@target": "Tn15978349"
+"@target": "Tn15978349", 
+"^ot:bootstrapValues": 41
 }
 }, 
 "Tn15978304": {
@@ -2216,19 +2530,22 @@
 "edge4041956": {
 "@length": 0.01451306252315534, 
 "@source": "Tn15978304", 
-"@target": "Tn15978333"
+"@target": "Tn15978333", 
+"^ot:bootstrapValues": 93
 }
 }, 
 "Tn15978305": {
 "edge4042137": {
 "@length": 0.01828251423243954, 
 "@source": "Tn15978305", 
-"@target": "Tn15978318"
+"@target": "Tn15978318", 
+"^ot:bootstrapValues": 100
 }, 
 "edge4042155": {
 "@length": 0.031289280830999334, 
 "@source": "Tn15978305", 
-"@target": "Tn15978351"
+"@target": "Tn15978351", 
+"^ot:bootstrapValues": 100
 }
 }, 
 "Tn15978306": {
@@ -2252,19 +2569,22 @@
 "edge4041936": {
 "@length": 0.03956697953844905, 
 "@source": "Tn15978307", 
-"@target": "Tn15978219"
+"@target": "Tn15978219", 
+"^ot:bootstrapValues": 56
 }
 }, 
 "Tn15978311": {
 "edge4042231": {
 "@length": 0.006254994668007597, 
 "@source": "Tn15978311", 
-"@target": "Tn15978140"
+"@target": "Tn15978140", 
+"^ot:bootstrapValues": 99
 }, 
 "edge4042249": {
 "@length": 0.0013018298134765186, 
 "@source": "Tn15978311", 
-"@target": "Tn15978163"
+"@target": "Tn15978163", 
+"^ot:bootstrapValues": 45
 }
 }, 
 "Tn15978313": {
@@ -2307,12 +2627,14 @@
 "edge4042139": {
 "@length": 0.017650477579020808, 
 "@source": "Tn15978318", 
-"@target": "Tn15978291"
+"@target": "Tn15978291", 
+"^ot:bootstrapValues": 100
 }, 
 "edge4042145": {
 "@length": 0.015159129861527553, 
 "@source": "Tn15978318", 
-"@target": "Tn15978332"
+"@target": "Tn15978332", 
+"^ot:bootstrapValues": 95
 }
 }, 
 "Tn15978319": {
@@ -2324,43 +2646,50 @@
 "edge4042203": {
 "@length": 0.0039771087455731545, 
 "@source": "Tn15978319", 
-"@target": "Tn15978204"
+"@target": "Tn15978204", 
+"^ot:bootstrapValues": 60
 }
 }, 
 "Tn15978323": {
 "edge4042187": {
 "@length": 0.046761681352611155, 
 "@source": "Tn15978323", 
-"@target": "Tn15978193"
+"@target": "Tn15978193", 
+"^ot:bootstrapValues": 100
 }, 
 "edge4042197": {
 "@length": 0.00649282017374924, 
 "@source": "Tn15978323", 
-"@target": "Tn15978177"
+"@target": "Tn15978177", 
+"^ot:bootstrapValues": 36
 }
 }, 
 "Tn15978326": {
 "edge4042113": {
 "@length": 0.0228650710726081, 
 "@source": "Tn15978326", 
-"@target": "Tn15978342"
+"@target": "Tn15978342", 
+"^ot:bootstrapValues": 100
 }, 
 "edge4042119": {
 "@length": 0.03560317307335055, 
 "@source": "Tn15978326", 
-"@target": "Tn15978281"
+"@target": "Tn15978281", 
+"^ot:bootstrapValues": 100
 }
 }, 
 "Tn15978327": {
 "edge4041984": {
 "@length": 0.00083342121712281, 
 "@source": "Tn15978327", 
-"@target": "Tn15978252"
+"@target": "Tn15978252", 
+"^ot:bootstrapValues": 45
 }, 
 "edge4042006": {
 "@length": 0.004676532701815998, 
 "@source": "Tn15978327", 
-"@target": "Tn15978133"
+"@target": "Tn15978133", 
+"^ot:bootstrapValues": 72
 }
 }, 
 "Tn15978328": {
@@ -2415,12 +2744,14 @@
 "edge4042030": {
 "@length": 0.047115244360840906, 
 "@source": "Tn15978341", 
-"@target": "Tn15978295"
+"@target": "Tn15978295", 
+"^ot:bootstrapValues": 100
 }, 
 "edge4042133": {
 "@length": 0.03951973414693487, 
 "@source": "Tn15978341", 
-"@target": "Tn15978179"
+"@target": "Tn15978179", 
+"^ot:bootstrapValues": 46
 }
 }, 
 "Tn15978342": {
@@ -2439,24 +2770,28 @@
 "edge4042259": {
 "@length": 0.0038371293802065775, 
 "@source": "Tn15978346", 
-"@target": "Tn15978260"
+"@target": "Tn15978260", 
+"^ot:bootstrapValues": 56
 }, 
 "edge4042285": {
 "@length": 0.007081680801336423, 
 "@source": "Tn15978346", 
-"@target": "Tn15978357"
+"@target": "Tn15978357", 
+"^ot:bootstrapValues": 96
 }
 }, 
 "Tn15978349": {
 "edge4042076": {
 "@length": 0.03775657722460108, 
 "@source": "Tn15978349", 
-"@target": "Tn15978169"
+"@target": "Tn15978169", 
+"^ot:bootstrapValues": 100
 }, 
 "edge4042102": {
 "@length": 0.006723986215921853, 
 "@source": "Tn15978349", 
-"@target": "Tn15978132"
+"@target": "Tn15978132", 
+"^ot:bootstrapValues": 72
 }
 }, 
 "Tn15978350": {
@@ -2468,19 +2803,22 @@
 "edge4042211": {
 "@length": 0.0036029101408770353, 
 "@source": "Tn15978350", 
-"@target": "Tn15978237"
+"@target": "Tn15978237", 
+"^ot:bootstrapValues": 97
 }
 }, 
 "Tn15978351": {
 "edge4042157": {
 "@length": 0.001410853347857587, 
 "@source": "Tn15978351", 
-"@target": "Tn15978306"
+"@target": "Tn15978306", 
+"^ot:bootstrapValues": 74
 }, 
 "edge4042163": {
 "@length": 0.0027715329761095757, 
 "@source": "Tn15978351", 
-"@target": "Tn15978239"
+"@target": "Tn15978239", 
+"^ot:bootstrapValues": 74
 }
 }, 
 "Tn15978356": {
@@ -2492,19 +2830,22 @@
 "edge4042301": {
 "@length": 0.0028723923425686437, 
 "@source": "Tn15978356", 
-"@target": "Tn15978194"
+"@target": "Tn15978194", 
+"^ot:bootstrapValues": 79
 }
 }, 
 "Tn15978357": {
 "edge4042287": {
 "@length": 0.006545049794942351, 
 "@source": "Tn15978357", 
-"@target": "Tn15978206"
+"@target": "Tn15978206", 
+"^ot:bootstrapValues": 100
 }, 
 "edge4042293": {
 "@length": 0.00037361989709779373, 
 "@source": "Tn15978357", 
-"@target": "Tn15978157"
+"@target": "Tn15978157", 
+"^ot:bootstrapValues": 52
 }
 }, 
 "Tn15978358": {
@@ -2521,18 +2862,12 @@
 }
 }, 
 "nodeById": {
-"Tn15978130": {
-"@label": "43"
-}, 
+"Tn15978130": {}, 
 "Tn15978131": {
 "@otu": "Tl2630059"
 }, 
-"Tn15978132": {
-"@label": "72"
-}, 
-"Tn15978133": {
-"@label": "72"
-}, 
+"Tn15978132": {}, 
+"Tn15978133": {}, 
 "Tn15978134": {
 "@otu": "Tl2630064"
 }, 
@@ -2551,9 +2886,7 @@
 "Tn15978139": {
 "@otu": "Tl2630056"
 }, 
-"Tn15978140": {
-"@label": "99"
-}, 
+"Tn15978140": {}, 
 "Tn15978141": {
 "@otu": "Tl2630069"
 }, 
@@ -2563,18 +2896,12 @@
 "Tn15978143": {
 "@otu": "Tl2630096"
 }, 
-"Tn15978144": {
-"@label": "100"
-}, 
-"Tn15978145": {
-"@label": "100"
-}, 
+"Tn15978144": {}, 
+"Tn15978145": {}, 
 "Tn15978146": {
 "@otu": "Tl2630072"
 }, 
-"Tn15978147": {
-"@label": "100"
-}, 
+"Tn15978147": {}, 
 "Tn15978148": {
 "@otu": "Tl2630105"
 }, 
@@ -2584,138 +2911,74 @@
 "Tn15978150": {
 "@otu": "Tl2630111"
 }, 
-"Tn15978151": {
-"@label": "74"
-}, 
-"Tn15978152": {
-"@label": "100"
-}, 
-"Tn15978153": {
-"@label": "99"
-}, 
+"Tn15978151": {}, 
+"Tn15978152": {}, 
+"Tn15978153": {}, 
 "Tn15978154": {
 "@otu": "Tl2630051"
 }, 
-"Tn15978155": {
-"@label": "34"
-}, 
-"Tn15978156": {
-"@label": "100"
-}, 
-"Tn15978157": {
-"@label": "52"
-}, 
+"Tn15978155": {}, 
+"Tn15978156": {}, 
+"Tn15978157": {}, 
 "Tn15978158": {
 "@otu": "Tl2630091"
 }, 
 "Tn15978159": {
 "@otu": "Tl2630076"
 }, 
-"Tn15978160": {
-"@label": "83"
-}, 
-"Tn15978161": {
-"@label": "59"
-}, 
+"Tn15978160": {}, 
+"Tn15978161": {}, 
 "Tn15978162": {
 "@otu": "Tl2630057"
 }, 
-"Tn15978163": {
-"@label": "45"
-}, 
+"Tn15978163": {}, 
 "Tn15978164": {
 "@otu": "Tl2630101"
 }, 
 "Tn15978165": {
 "@otu": "Tl2630097"
 }, 
-"Tn15978166": {
-"@label": "60"
-}, 
-"Tn15978167": {
-"@label": "100"
-}, 
-"Tn15978168": {
-"@label": "94"
-}, 
-"Tn15978169": {
-"@label": "100"
-}, 
-"Tn15978170": {
-"@label": "90"
-}, 
-"Tn15978171": {
-"@label": "100"
-}, 
+"Tn15978166": {}, 
+"Tn15978167": {}, 
+"Tn15978168": {}, 
+"Tn15978169": {}, 
+"Tn15978170": {}, 
+"Tn15978171": {}, 
 "Tn15978172": {
 "@otu": "Tl2630066"
 }, 
-"Tn15978173": {
-"@label": "51"
-}, 
-"Tn15978174": {
-"@label": "89"
-}, 
-"Tn15978175": {
-"@label": "11"
-}, 
+"Tn15978173": {}, 
+"Tn15978174": {}, 
+"Tn15978175": {}, 
 "Tn15978176": {
 "@otu": "Tl2630087"
 }, 
-"Tn15978177": {
-"@label": "36"
-}, 
+"Tn15978177": {}, 
 "Tn15978178": {
 "@otu": "Tl2630163"
 }, 
-"Tn15978179": {
-"@label": "46"
-}, 
-"Tn15978180": {
-"@label": "18"
-}, 
-"Tn15978181": {
-"@label": "98"
-}, 
+"Tn15978179": {}, 
+"Tn15978180": {}, 
+"Tn15978181": {}, 
 "Tn15978182": {
 "@otu": "Tl2630119"
 }, 
-"Tn15978183": {
-"@label": "100"
-}, 
+"Tn15978183": {}, 
 "Tn15978184": {
 "@otu": "Tl2630054"
 }, 
-"Tn15978185": {
-"@label": "57"
-}, 
-"Tn15978186": {
-"@label": "100"
-}, 
-"Tn15978187": {
-"@label": "100"
-}, 
-"Tn15978188": {
-"@label": "80"
-}, 
-"Tn15978189": {
-"@label": "73"
-}, 
-"Tn15978190": {
-"@label": "99"
-}, 
-"Tn15978191": {
-"@label": "99"
-}, 
+"Tn15978185": {}, 
+"Tn15978186": {}, 
+"Tn15978187": {}, 
+"Tn15978188": {}, 
+"Tn15978189": {}, 
+"Tn15978190": {}, 
+"Tn15978191": {}, 
 "Tn15978192": {
 "@otu": "Tl2630133"
 }, 
-"Tn15978193": {
-"@label": "100"
-}, 
-"Tn15978194": {
-"@label": "79"
-}, 
+"Tn15978193": {}, 
+"Tn15978194": {}, 
 "Tn15978195": {
 "@otu": "Tl2630081"
 }, 
@@ -2725,96 +2988,60 @@
 "Tn15978197": {
 "@otu": "Tl2630116"
 }, 
-"Tn15978198": {
-"@label": "100"
-}, 
-"Tn15978199": {
-"@label": "73"
-}, 
-"Tn15978200": {
-"@label": "100"
-}, 
-"Tn15978201": {
-"@label": "55"
-}, 
-"Tn15978202": {
-"@label": "61"
-}, 
+"Tn15978198": {}, 
+"Tn15978199": {}, 
+"Tn15978200": {}, 
+"Tn15978201": {}, 
+"Tn15978202": {}, 
 "Tn15978203": {
 "@otu": "Tl2630110"
 }, 
-"Tn15978204": {
-"@label": "60"
-}, 
+"Tn15978204": {}, 
 "Tn15978205": {
 "@otu": "Tl2630083"
 }, 
-"Tn15978206": {
-"@label": "100"
-}, 
-"Tn15978207": {
-"@label": "100"
-}, 
+"Tn15978206": {}, 
+"Tn15978207": {}, 
 "Tn15978208": {
 "@otu": "Tl2630157"
 }, 
-"Tn15978209": {
-"@label": "100"
-}, 
-"Tn15978210": {
-"@label": "83"
-}, 
+"Tn15978209": {}, 
+"Tn15978210": {}, 
 "Tn15978211": {
 "@otu": "Tl2630128"
 }, 
-"Tn15978212": {
-"@label": "44"
-}, 
+"Tn15978212": {}, 
 "Tn15978213": {
 "@otu": "Tl2630078"
 }, 
 "Tn15978214": {
 "@otu": "Tl2630139"
 }, 
-"Tn15978215": {
-"@label": "42"
-}, 
+"Tn15978215": {}, 
 "Tn15978216": {
 "@otu": "Tl2630143"
 }, 
-"Tn15978217": {
-"@label": "100"
-}, 
+"Tn15978217": {}, 
 "Tn15978218": {
 "@otu": "Tl2630080"
 }, 
-"Tn15978219": {
-"@label": "56"
-}, 
-"Tn15978220": {
-"@label": "100"
-}, 
+"Tn15978219": {}, 
+"Tn15978220": {}, 
 "Tn15978221": {
 "@otu": "Tl2630102"
 }, 
 "Tn15978222": {
 "@otu": "Tl2630162"
 }, 
-"Tn15978223": {
-"@label": "100"
-}, 
+"Tn15978223": {}, 
 "Tn15978224": {
 "@otu": "Tl2630121"
 }, 
 "Tn15978225": {
 "@otu": "Tl2630149"
 }, 
-"Tn15978226": {
-"@label": "100"
-}, 
-"Tn15978227": {
-"@label": "91"
-}, 
+"Tn15978226": {}, 
+"Tn15978227": {}, 
 "Tn15978228": {
 "@otu": "Tl2630058"
 }, 
@@ -2830,36 +3057,24 @@
 "Tn15978232": {
 "@otu": "Tl2630075"
 }, 
-"Tn15978233": {
-"@label": "98"
-}, 
+"Tn15978233": {}, 
 "Tn15978234": {
 "@otu": "Tl2630164"
 }, 
 "Tn15978235": {
 "@otu": "Tl2630159"
 }, 
-"Tn15978236": {
-"@label": "100"
-}, 
-"Tn15978237": {
-"@label": "97"
-}, 
-"Tn15978238": {
-"@label": "100"
-}, 
-"Tn15978239": {
-"@label": "74"
-}, 
+"Tn15978236": {}, 
+"Tn15978237": {}, 
+"Tn15978238": {}, 
+"Tn15978239": {}, 
 "Tn15978240": {
 "@otu": "Tl2630122"
 }, 
 "Tn15978241": {
 "@otu": "Tl2630088"
 }, 
-"Tn15978242": {
-"@label": "100"
-}, 
+"Tn15978242": {}, 
 "Tn15978243": {
 "@otu": "Tl2630107"
 }, 
@@ -2875,54 +3090,34 @@
 "Tn15978247": {
 "@otu": "Tl2630071"
 }, 
-"Tn15978248": {
-"@label": "99"
-}, 
+"Tn15978248": {}, 
 "Tn15978249": {
 "@root": true
 }, 
-"Tn15978250": {
-"@label": "4"
-}, 
-"Tn15978251": {
-"@label": "100"
-}, 
-"Tn15978252": {
-"@label": "45"
-}, 
-"Tn15978253": {
-"@label": "98"
-}, 
-"Tn15978254": {
-"@label": "80"
-}, 
-"Tn15978255": {
-"@label": "44"
-}, 
+"Tn15978250": {}, 
+"Tn15978251": {}, 
+"Tn15978252": {}, 
+"Tn15978253": {}, 
+"Tn15978254": {}, 
+"Tn15978255": {}, 
 "Tn15978256": {
 "@otu": "Tl2630098"
 }, 
 "Tn15978257": {
 "@otu": "Tl2630104"
 }, 
-"Tn15978258": {
-"@label": "95"
-}, 
+"Tn15978258": {}, 
 "Tn15978259": {
 "@otu": "Tl2630136"
 }, 
-"Tn15978260": {
-"@label": "56"
-}, 
+"Tn15978260": {}, 
 "Tn15978261": {
 "@otu": "Tl2630131"
 }, 
 "Tn15978262": {
 "@otu": "Tl2630077"
 }, 
-"Tn15978263": {
-"@label": "96"
-}, 
+"Tn15978263": {}, 
 "Tn15978264": {
 "@otu": "Tl2630151"
 }, 
@@ -2941,24 +3136,16 @@
 "Tn15978269": {
 "@otu": "Tl2630061"
 }, 
-"Tn15978270": {
-"@label": "81"
-}, 
-"Tn15978271": {
-"@label": "15"
-}, 
+"Tn15978270": {}, 
+"Tn15978271": {}, 
 "Tn15978272": {
 "@otu": "Tl2630114"
 }, 
-"Tn15978273": {
-"@label": "100"
-}, 
+"Tn15978273": {}, 
 "Tn15978274": {
 "@otu": "Tl2630055"
 }, 
-"Tn15978275": {
-"@label": "27"
-}, 
+"Tn15978275": {}, 
 "Tn15978276": {
 "@otu": "Tl2630135"
 }, 
@@ -2971,12 +3158,8 @@
 "Tn15978279": {
 "@otu": "Tl2630052"
 }, 
-"Tn15978280": {
-"@label": "84"
-}, 
-"Tn15978281": {
-"@label": "100"
-}, 
+"Tn15978280": {}, 
+"Tn15978281": {}, 
 "Tn15978282": {
 "@otu": "Tl2630147"
 }, 
@@ -2984,30 +3167,18 @@
 "@label": "Cercosaura schreibersii albostrigatus_LG_1168", 
 "@otu": "Tl2630155"
 }, 
-"Tn15978284": {
-"@label": "80"
-}, 
+"Tn15978284": {}, 
 "Tn15978285": {
 "@otu": "Tl2630130"
 }, 
-"Tn15978286": {
-"@label": "100"
-}, 
-"Tn15978287": {
-"@label": "91"
-}, 
+"Tn15978286": {}, 
+"Tn15978287": {}, 
 "Tn15978288": {
 "@otu": "Tl2630070"
 }, 
-"Tn15978289": {
-"@label": "55"
-}, 
-"Tn15978290": {
-"@label": "55"
-}, 
-"Tn15978291": {
-"@label": "100"
-}, 
+"Tn15978289": {}, 
+"Tn15978290": {}, 
+"Tn15978291": {}, 
 "Tn15978292": {
 "@otu": "Tl2630103"
 }, 
@@ -3017,12 +3188,8 @@
 "Tn15978294": {
 "@otu": "Tl2630113"
 }, 
-"Tn15978295": {
-"@label": "100"
-}, 
-"Tn15978296": {
-"@label": "74"
-}, 
+"Tn15978295": {}, 
+"Tn15978296": {}, 
 "Tn15978297": {
 "@otu": "Tl2630138"
 }, 
@@ -3044,18 +3211,10 @@
 "Tn15978303": {
 "@otu": "Tl2630065"
 }, 
-"Tn15978304": {
-"@label": "78"
-}, 
-"Tn15978305": {
-"@label": "100"
-}, 
-"Tn15978306": {
-"@label": "74"
-}, 
-"Tn15978307": {
-"@label": "100"
-}, 
+"Tn15978304": {}, 
+"Tn15978305": {}, 
+"Tn15978306": {}, 
+"Tn15978307": {}, 
 "Tn15978308": {
 "@otu": "Tl2630120"
 }, 
@@ -3065,33 +3224,21 @@
 "Tn15978310": {
 "@otu": "Tl2630106"
 }, 
-"Tn15978311": {
-"@label": "100"
-}, 
+"Tn15978311": {}, 
 "Tn15978312": {
 "@otu": "Tl2630089"
 }, 
-"Tn15978313": {
-"@label": "100"
-}, 
+"Tn15978313": {}, 
 "Tn15978314": {
 "@otu": "Tl2630156"
 }, 
-"Tn15978315": {
-"@label": "96"
-}, 
+"Tn15978315": {}, 
 "Tn15978316": {
 "@otu": "Tl2630165"
 }, 
-"Tn15978317": {
-"@label": "57"
-}, 
-"Tn15978318": {
-"@label": "100"
-}, 
-"Tn15978319": {
-"@label": "36"
-}, 
+"Tn15978317": {}, 
+"Tn15978318": {}, 
+"Tn15978319": {}, 
 "Tn15978320": {
 "@otu": "Tl2630086"
 }, 
@@ -3102,24 +3249,16 @@
 "Tn15978322": {
 "@otu": "Tl2630140"
 }, 
-"Tn15978323": {
-"@label": "100"
-}, 
+"Tn15978323": {}, 
 "Tn15978324": {
 "@otu": "Tl2630063"
 }, 
 "Tn15978325": {
 "@otu": "Tl2630115"
 }, 
-"Tn15978326": {
-"@label": "100"
-}, 
-"Tn15978327": {
-"@label": "100"
-}, 
-"Tn15978328": {
-"@label": "97"
-}, 
+"Tn15978326": {}, 
+"Tn15978327": {}, 
+"Tn15978328": {}, 
 "Tn15978329": {
 "@otu": "Tl2630148"
 }, 
@@ -3127,12 +3266,8 @@
 "Tn15978331": {
 "@otu": "Tl2630060"
 }, 
-"Tn15978332": {
-"@label": "95"
-}, 
-"Tn15978333": {
-"@label": "93"
-}, 
+"Tn15978332": {}, 
+"Tn15978333": {}, 
 "Tn15978334": {
 "@otu": "Tl2630137"
 }, 
@@ -3154,12 +3289,8 @@
 "Tn15978340": {
 "@otu": "Tl2630112"
 }, 
-"Tn15978341": {
-"@label": "100"
-}, 
-"Tn15978342": {
-"@label": "100"
-}, 
+"Tn15978341": {}, 
+"Tn15978342": {}, 
 "Tn15978343": {
 "@otu": "Tl2630082"
 }, 
@@ -3169,24 +3300,16 @@
 "Tn15978345": {
 "@otu": "Tl2630068"
 }, 
-"Tn15978346": {
-"@label": "26"
-}, 
+"Tn15978346": {}, 
 "Tn15978347": {
 "@otu": "Tl2630132"
 }, 
 "Tn15978348": {
 "@otu": "Tl2630146"
 }, 
-"Tn15978349": {
-"@label": "41"
-}, 
-"Tn15978350": {
-"@label": "100"
-}, 
-"Tn15978351": {
-"@label": "100"
-}, 
+"Tn15978349": {}, 
+"Tn15978350": {}, 
+"Tn15978351": {}, 
 "Tn15978352": {
 "@otu": "Tl2630090"
 }, 
@@ -3199,15 +3322,9 @@
 "Tn15978355": {
 "@otu": "Tl2630062"
 }, 
-"Tn15978356": {
-"@label": "52"
-}, 
-"Tn15978357": {
-"@label": "96"
-}, 
-"Tn15978358": {
-"@label": "79"
-}
+"Tn15978356": {}, 
+"Tn15978357": {}, 
+"Tn15978358": {}
 }
 }
 }
