@@ -52,22 +52,116 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2018-06-25T00:03:56.222Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:curatorName": "Walter1186", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}, 
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": "$1"
+}, 
+"old": {
+"$": "^(\\S*\\s+\\S*).*"
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2018-06-25T00:03:56.222Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Walter1186"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S20800"
 }, 
+"^ot:focalClade": 91081, 
+"^ot:focalCladeOTTTaxonName": "Phyllotis", 
 "^ot:otusElementOrder": [
 "Tls59393"
 ], 
 "^ot:studyId": "ot_1408", 
+"^ot:studyPublication": {
+"@href": "https://doi.org/10.1515/mammalia-2016-0138"
+}, 
 "^ot:studyPublicationReference": "Rengifo E.M., & Pacheco V. 2017. Phylogenetic position of the Ancash-eared mouse, Phyllotis definitus Osgood 1915 (Rodentia: Cricetidae). Mammalia, .", 
 "^ot:studyYear": 2017, 
+"^ot:tag": [], 
 "^ot:taxonLinkPrefixes": {
 "@ubio": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:", 
 "@uniprot": "http://purl.uniprot.org/taxonomy/"
@@ -90,8 +184,9 @@
 "^skos:historyNote": "Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlOTUWriter@56a587dd $Rev$", 
 "otuById": {
 "Tl2901277": {
-"^ot:altLabel": "Phyllotis anitae", 
 "^ot:originalLabel": "Phyllotis anitae AY627298", 
+"^ot:ottId": 138443, 
+"^ot:ottTaxonName": "Phyllotis anitae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 263101, 
 "@tb:identifier.taxonVariant": 320178, 
@@ -100,8 +195,9 @@
 }
 }, 
 "Tl2901278": {
-"^ot:altLabel": "Phyllotis andium", 
 "^ot:originalLabel": "Phyllotis andium KT203816", 
+"^ot:ottId": 739493, 
+"^ot:ottTaxonName": "Phyllotis andium", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22114, 
 "@tb:identifier.taxonVariant": 51440, 
@@ -110,11 +206,13 @@
 }
 }, 
 "Tl2901279": {
+"^ot:altLabel": "Phyllotis occidens", 
 "^ot:originalLabel": "Phyllotis occidens AY956703"
 }, 
 "Tl2901280": {
-"^ot:altLabel": "Phyllotis andium", 
 "^ot:originalLabel": "Phyllotis andium KT203817", 
+"^ot:ottId": 739493, 
+"^ot:ottTaxonName": "Phyllotis andium", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22114, 
 "@tb:identifier.taxonVariant": 51440, 
@@ -123,20 +221,26 @@
 }
 }, 
 "Tl2901281": {
+"^ot:altLabel": "Phyllotis occidens", 
 "^ot:originalLabel": "Phyllotis occidens AY956706"
 }, 
 "Tl2901282": {
+"^ot:altLabel": "Phyllotis pearsoni", 
 "^ot:originalLabel": "Phyllotis pearsoni AY956714"
 }, 
 "Tl2901283": {
-"^ot:originalLabel": "Phyllotis stenops KX793701"
+"^ot:originalLabel": "Phyllotis stenops KX793701", 
+"^ot:ottId": 6144796, 
+"^ot:ottTaxonName": "Phyllotis stenops"
 }, 
 "Tl2901284": {
+"^ot:altLabel": "Phyllotis vaccarum", 
 "^ot:originalLabel": "Phyllotis x vaccarum AY956736"
 }, 
 "Tl2901285": {
-"^ot:altLabel": "Phyllotis magister", 
 "^ot:originalLabel": "Phyllotis magister AY956717", 
+"^ot:ottId": 739490, 
+"^ot:ottTaxonName": "Phyllotis magister", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22120, 
 "@tb:identifier.taxonVariant": 51453, 
@@ -145,11 +249,13 @@
 }
 }, 
 "Tl2901286": {
+"^ot:altLabel": "Phyllotis vaccarum", 
 "^ot:originalLabel": "Phyllotis x vaccarum AY956735"
 }, 
 "Tl2901287": {
-"^ot:altLabel": "Phyllotis bonariensis", 
 "^ot:originalLabel": "Phyllotis bonariensis AY956731", 
+"^ot:ottId": 898083, 
+"^ot:ottTaxonName": "Phyllotis bonariensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 287260, 
 "@tb:identifier.taxonVariant": 339441, 
@@ -158,8 +264,9 @@
 }
 }, 
 "Tl2901288": {
-"^ot:altLabel": "Phyllotis gerbillus", 
 "^ot:originalLabel": "Phyllotis gerbillus AY956709", 
+"^ot:ottId": 898077, 
+"^ot:ottTaxonName": "Phyllotis gerbillus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22118, 
 "@tb:identifier.taxonVariant": 51448, 
@@ -168,8 +275,9 @@
 }
 }, 
 "Tl2901289": {
-"^ot:altLabel": "Phyllotis andium", 
 "^ot:originalLabel": "Phyllotis andium KT203815", 
+"^ot:ottId": 739493, 
+"^ot:ottTaxonName": "Phyllotis andium", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22114, 
 "@tb:identifier.taxonVariant": 51440, 
@@ -178,8 +286,9 @@
 }
 }, 
 "Tl2901290": {
-"^ot:altLabel": "Phyllotis bonariensis", 
 "^ot:originalLabel": "Phyllotis bonariensis AY956732", 
+"^ot:ottId": 898083, 
+"^ot:ottTaxonName": "Phyllotis bonariensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 287260, 
 "@tb:identifier.taxonVariant": 339441, 
@@ -188,11 +297,13 @@
 }
 }, 
 "Tl2901291": {
+"^ot:altLabel": "Phyllotis occidens", 
 "^ot:originalLabel": "Phyllotis occidens AY956702"
 }, 
 "Tl2901292": {
-"^ot:altLabel": "Phyllotis magister", 
 "^ot:originalLabel": "Phyllotis magister AY956719", 
+"^ot:ottId": 739490, 
+"^ot:ottTaxonName": "Phyllotis magister", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22120, 
 "@tb:identifier.taxonVariant": 51453, 
@@ -201,8 +312,9 @@
 }
 }, 
 "Tl2901293": {
-"^ot:altLabel": "Phyllotis amicus", 
 "^ot:originalLabel": "Phyllotis amicus AY956708", 
+"^ot:ottId": 739495, 
+"^ot:ottTaxonName": "Phyllotis amicus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22113, 
 "@tb:identifier.taxonVariant": 51438, 
@@ -211,26 +323,35 @@
 }
 }, 
 "Tl2901294": {
+"^ot:altLabel": "Phyllotis pearsoni", 
 "^ot:originalLabel": "Phyllotis pearsoni AY956715"
 }, 
 "Tl2901295": {
+"^ot:altLabel": "Phyllotis rupestris", 
 "^ot:originalLabel": "Phyllotis x rupestris AY956739"
 }, 
 "Tl2901296": {
+"^ot:altLabel": "Phyllotis vaccarum", 
 "^ot:originalLabel": "Phyllotis x vaccarum AY956734"
 }, 
 "Tl2901297": {
-"^ot:originalLabel": "Phyllotis stenops KX793702"
+"^ot:originalLabel": "Phyllotis stenops KX793702", 
+"^ot:ottId": 6144796, 
+"^ot:ottTaxonName": "Phyllotis stenops"
 }, 
 "Tl2901298": {
+"^ot:altLabel": "Phyllotis occidens", 
 "^ot:originalLabel": "Phyllotis occidens AY956705"
 }, 
 "Tl2901299": {
-"^ot:originalLabel": "Phyllotis alisosiensis GQ119626"
+"^ot:originalLabel": "Phyllotis alisosiensis GQ119626", 
+"^ot:ottId": 898287, 
+"^ot:ottTaxonName": "Phyllotis alisosiensis"
 }, 
 "Tl2901300": {
-"^ot:altLabel": "Phyllotis definitus", 
 "^ot:originalLabel": "Phyllotis definitus KX793700", 
+"^ot:ottId": 3608349, 
+"^ot:ottTaxonName": "Phyllotis definitus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22117, 
 "@tb:identifier.taxonVariant": 51446, 
@@ -238,8 +359,9 @@
 }
 }, 
 "Tl2901301": {
-"^ot:altLabel": "Phyllotis osilae", 
 "^ot:originalLabel": "Phyllotis osilae AY956700", 
+"^ot:ottId": 739497, 
+"^ot:ottTaxonName": "Phyllotis osilae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22121, 
 "@tb:identifier.taxonVariant": 51455, 
@@ -248,8 +370,9 @@
 }
 }, 
 "Tl2901302": {
-"^ot:altLabel": "Phyllotis definitus", 
 "^ot:originalLabel": "Phyllotis definitus KX793699", 
+"^ot:ottId": 3608349, 
+"^ot:ottTaxonName": "Phyllotis definitus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22117, 
 "@tb:identifier.taxonVariant": 51446, 
@@ -257,8 +380,9 @@
 }
 }, 
 "Tl2901303": {
-"^ot:altLabel": "Phyllotis magister", 
 "^ot:originalLabel": "Phyllotis magister AY956721", 
+"^ot:ottId": 739490, 
+"^ot:ottTaxonName": "Phyllotis magister", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22120, 
 "@tb:identifier.taxonVariant": 51453, 
@@ -267,8 +391,9 @@
 }
 }, 
 "Tl2901304": {
-"^ot:altLabel": "Calomys venustus", 
 "^ot:originalLabel": "Calomys venustus AY033176", 
+"^ot:ottId": 463094, 
+"^ot:ottTaxonName": "Calomys venustus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 153216, 
 "@tb:identifier.taxonVariant": 228710, 
@@ -277,8 +402,9 @@
 }
 }, 
 "Tl2901305": {
-"^ot:altLabel": "Calomys lepidus", 
 "^ot:originalLabel": "Calomys lepidus AF385606", 
+"^ot:ottId": 360776, 
+"^ot:ottTaxonName": "Calomys lepidus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 4524, 
 "@tb:identifier.taxonVariant": 10898, 
@@ -287,11 +413,14 @@
 }
 }, 
 "Tl2901306": {
-"^ot:originalLabel": "Phyllotis alisosiensis GQ119625"
+"^ot:originalLabel": "Phyllotis alisosiensis GQ119625", 
+"^ot:ottId": 898287, 
+"^ot:ottTaxonName": "Phyllotis alisosiensis"
 }, 
 "Tl2901307": {
-"^ot:altLabel": "Phyllotis darwini", 
 "^ot:originalLabel": "Phyllotis darwini AY956726", 
+"^ot:ottId": 91085, 
+"^ot:ottTaxonName": "Phyllotis darwini", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22116, 
 "@tb:identifier.taxonVariant": 51445, 
@@ -300,11 +429,14 @@
 }
 }, 
 "Tl2901308": {
-"^ot:originalLabel": "Phyllotis osilae phaeus AY956701"
+"^ot:originalLabel": "Phyllotis osilae phaeus AY956701", 
+"^ot:ottId": 739497, 
+"^ot:ottTaxonName": "Phyllotis osilae"
 }, 
 "Tl2901309": {
-"^ot:altLabel": "Phyllotis andium", 
 "^ot:originalLabel": "Phyllotis andium AY956707", 
+"^ot:ottId": 739493, 
+"^ot:ottTaxonName": "Phyllotis andium", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22114, 
 "@tb:identifier.taxonVariant": 51440, 
@@ -313,8 +445,9 @@
 }
 }, 
 "Tl2901310": {
-"^ot:altLabel": "Calomys sorellus", 
 "^ot:originalLabel": "Calomys sorellus AF385608", 
+"^ot:ottId": 360774, 
+"^ot:ottTaxonName": "Calomys sorellus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 4525, 
 "@tb:identifier.taxonVariant": 10900, 
@@ -323,8 +456,9 @@
 }
 }, 
 "Tl2901311": {
-"^ot:altLabel": "Phyllotis darwini", 
 "^ot:originalLabel": "Phyllotis darwini AY956722", 
+"^ot:ottId": 91085, 
+"^ot:ottTaxonName": "Phyllotis darwini", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22116, 
 "@tb:identifier.taxonVariant": 51445, 
@@ -333,8 +467,9 @@
 }
 }, 
 "Tl2901312": {
-"^ot:altLabel": "Phyllotis darwini", 
 "^ot:originalLabel": "Phyllotis darwini AY956725", 
+"^ot:ottId": 91085, 
+"^ot:ottTaxonName": "Phyllotis darwini", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22116, 
 "@tb:identifier.taxonVariant": 51445, 
@@ -343,8 +478,9 @@
 }
 }, 
 "Tl2901313": {
-"^ot:altLabel": "Phyllotis magister", 
 "^ot:originalLabel": "Phyllotis magister AY956716", 
+"^ot:ottId": 739490, 
+"^ot:ottTaxonName": "Phyllotis magister", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22120, 
 "@tb:identifier.taxonVariant": 51453, 
@@ -353,8 +489,9 @@
 }
 }, 
 "Tl2901314": {
-"^ot:altLabel": "Phyllotis andium", 
 "^ot:originalLabel": "Phyllotis andium KT203814", 
+"^ot:ottId": 739493, 
+"^ot:ottTaxonName": "Phyllotis andium", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22114, 
 "@tb:identifier.taxonVariant": 51440, 
@@ -363,11 +500,13 @@
 }
 }, 
 "Tl2901315": {
+"^ot:altLabel": "Phyllotis occidens", 
 "^ot:originalLabel": "Phyllotis occidens AY956704"
 }, 
 "Tl2901316": {
-"^ot:altLabel": "Phyllotis gerbillus", 
 "^ot:originalLabel": "Phyllotis gerbillus ORB59 AY956710", 
+"^ot:ottId": 898077, 
+"^ot:ottTaxonName": "Phyllotis gerbillus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22118, 
 "@tb:identifier.taxonVariant": 51448, 
@@ -376,8 +515,9 @@
 }
 }, 
 "Tl2901317": {
-"^ot:altLabel": "Phyllotis anitae", 
 "^ot:originalLabel": "Phyllotis anitae AY627299", 
+"^ot:ottId": 138443, 
+"^ot:ottTaxonName": "Phyllotis anitae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 263101, 
 "@tb:identifier.taxonVariant": 320178, 
@@ -386,11 +526,14 @@
 }
 }, 
 "Tl2901318": {
-"^ot:originalLabel": "Phyllotis x xanthopygus AY956737"
+"^ot:originalLabel": "Phyllotis x xanthopygus AY956737", 
+"^ot:ottId": 113710, 
+"^ot:ottTaxonName": "Phyllotis xanthopygus"
 }, 
 "Tl2901319": {
-"^ot:altLabel": "Phyllotis limatus", 
 "^ot:originalLabel": "Phyllotis limatus AY956740", 
+"^ot:ottId": 739492, 
+"^ot:ottTaxonName": "Phyllotis limatus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 77830, 
 "@tb:identifier.taxonVariant": 155371, 
@@ -399,11 +542,14 @@
 }
 }, 
 "Tl2905555": {
-"^ot:originalLabel": "Phyllotis xanthopygus vaccarum AY956735"
+"^ot:originalLabel": "Phyllotis xanthopygus vaccarum AY956735", 
+"^ot:ottId": 113710, 
+"^ot:ottTaxonName": "Phyllotis xanthopygus"
 }, 
 "Tl2905556": {
-"^ot:altLabel": "Phyllotis andium", 
 "^ot:originalLabel": "Phyllotis andium AY956704", 
+"^ot:ottId": 739493, 
+"^ot:ottTaxonName": "Phyllotis andium", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22114, 
 "@tb:identifier.taxonVariant": 51440, 
@@ -412,14 +558,19 @@
 }
 }, 
 "Tl2905557": {
-"^ot:originalLabel": "Phyllotis sp. SJS-2005.1 AY956714"
+"^ot:originalLabel": "Phyllotis sp. SJS-2005.1 AY956714", 
+"^ot:ottId": 91081, 
+"^ot:ottTaxonName": "Phyllotis"
 }, 
 "Tl2905558": {
-"^ot:originalLabel": "Phyllotis xanthopygus vaccarum AY956736"
+"^ot:originalLabel": "Phyllotis xanthopygus vaccarum AY956736", 
+"^ot:ottId": 113710, 
+"^ot:ottTaxonName": "Phyllotis xanthopygus"
 }, 
 "Tl2905559": {
-"^ot:altLabel": "Phyllotis andium", 
 "^ot:originalLabel": "Phyllotis andium AY956703", 
+"^ot:ottId": 739493, 
+"^ot:ottTaxonName": "Phyllotis andium", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22114, 
 "@tb:identifier.taxonVariant": 51440, 
@@ -428,14 +579,19 @@
 }
 }, 
 "Tl2905560": {
-"^ot:originalLabel": "Phyllotis xanthopygus xanthopygus AY956737"
+"^ot:originalLabel": "Phyllotis xanthopygus xanthopygus AY956737", 
+"^ot:ottId": 113710, 
+"^ot:ottTaxonName": "Phyllotis xanthopygus"
 }, 
 "Tl2905561": {
-"^ot:originalLabel": "Phyllotis xanthopygus rupestris AY956739"
+"^ot:originalLabel": "Phyllotis xanthopygus rupestris AY956739", 
+"^ot:ottId": 113710, 
+"^ot:ottTaxonName": "Phyllotis xanthopygus"
 }, 
 "Tl2905562": {
-"^ot:altLabel": "Phyllotis gerbillus", 
 "^ot:originalLabel": "Phyllotis gerbillus AY956710", 
+"^ot:ottId": 898077, 
+"^ot:ottTaxonName": "Phyllotis gerbillus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22118, 
 "@tb:identifier.taxonVariant": 51448, 
@@ -444,14 +600,19 @@
 }
 }, 
 "Tl2905563": {
-"^ot:originalLabel": "Phyllotis osilae phaeus AY956700"
+"^ot:originalLabel": "Phyllotis osilae phaeus AY956700", 
+"^ot:ottId": 739497, 
+"^ot:ottTaxonName": "Phyllotis osilae"
 }, 
 "Tl2905564": {
-"^ot:originalLabel": "Phyllotis xanthopygus vaccarum AY956734"
+"^ot:originalLabel": "Phyllotis xanthopygus vaccarum AY956734", 
+"^ot:ottId": 113710, 
+"^ot:ottTaxonName": "Phyllotis xanthopygus"
 }, 
 "Tl2905565": {
-"^ot:altLabel": "Phyllotis andium", 
 "^ot:originalLabel": "Phyllotis andium AY956705", 
+"^ot:ottId": 739493, 
+"^ot:ottTaxonName": "Phyllotis andium", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22114, 
 "@tb:identifier.taxonVariant": 51440, 
@@ -460,8 +621,9 @@
 }
 }, 
 "Tl2905566": {
-"^ot:altLabel": "Phyllotis andium", 
 "^ot:originalLabel": "Phyllotis andium AY956706", 
+"^ot:ottId": 739493, 
+"^ot:ottTaxonName": "Phyllotis andium", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22114, 
 "@tb:identifier.taxonVariant": 51440, 
@@ -470,11 +632,14 @@
 }
 }, 
 "Tl2905567": {
-"^ot:originalLabel": "Phyllotis sp. SJS-2005.1 AY956715"
+"^ot:originalLabel": "Phyllotis sp. SJS-2005.1 AY956715", 
+"^ot:ottId": 91081, 
+"^ot:ottTaxonName": "Phyllotis"
 }, 
 "Tl2905568": {
-"^ot:altLabel": "Phyllotis andium", 
 "^ot:originalLabel": "Phyllotis andium AY956702", 
+"^ot:ottId": 739493, 
+"^ot:ottTaxonName": "Phyllotis andium", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22114, 
 "@tb:identifier.taxonVariant": 51440, 
@@ -498,7 +663,18 @@
 "Tr106909": {
 "@label": "Fig. 2", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:changesCount", 
+"^ot:curatedType": "Maximum likelihood ", 
+"^ot:inGroupClade": "Tn16771552", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn16771523", 
+"^ot:specifiedRoot": "Tn16771523", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 43, 
 "^tb:quality.tree": "Unrated", 
@@ -1188,7 +1364,18 @@
 "Tr107089": {
 "@label": "Fig. 2", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:changesCount", 
+"^ot:curatedType": "Maximum likelihood ", 
+"^ot:inGroupClade": "Tn16794097", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn16794166", 
+"^ot:specifiedRoot": "Tn16794166", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 43, 
 "^tb:quality.tree": "Unrated", 
