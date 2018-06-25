@@ -49,22 +49,116 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2018-06-25T05:09:53.229Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:curatorName": "Walter1186", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}, 
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": "$1"
+}, 
+"old": {
+"$": "^(\\S*\\s+\\S*).*"
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2018-06-25T05:09:53.229Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Walter1186"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S19196"
 }, 
+"^ot:focalClade": 734544, 
+"^ot:focalCladeOTTTaxonName": "Phellinus", 
 "^ot:otusElementOrder": [
 "Tls51011"
 ], 
 "^ot:studyId": "ot_1416", 
+"^ot:studyPublication": {
+"@href": "https://doi.org/10.3852/15-173"
+}, 
 "^ot:studyPublicationReference": "De campos santana M., Amalfi M., Castillo G., & Decock C. 2016. Multilocus, DNA-based phylogenetic analysis reveal three new species lineages in the P. gabonensis - P. caribaeo-quercicola species complex, including Phellinus amazonicus sp. nov. Mycologia, .", 
 "^ot:studyYear": 2016, 
+"^ot:tag": [], 
 "^ot:taxonLinkPrefixes": {
 "@ubio": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:", 
 "@uniprot": "http://purl.uniprot.org/taxonomy/"
@@ -87,11 +181,14 @@
 "^skos:historyNote": "Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlOTUWriter@2d23b10c $Rev$", 
 "otuById": {
 "Tl2270338": {
-"^ot:originalLabel": "Phellinus castanopsidis CUI10157"
+"^ot:originalLabel": "Phellinus castanopsidis CUI10157", 
+"^ot:ottId": 1051328, 
+"^ot:ottTaxonName": "Phellinus castanopsidis"
 }, 
 "Tl2270339": {
-"^ot:altLabel": "Phellinus ellipsoideus MUCL47867", 
 "^ot:originalLabel": "Phellinus ellipsoideus MUCL47866", 
+"^ot:ottId": 897515, 
+"^ot:ottTaxonName": "Phellinus ellipsoideus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 632260, 
 "@tb:identifier.taxonVariant": 847272, 
@@ -99,16 +196,22 @@
 }
 }, 
 "Tl2270340": {
-"^ot:originalLabel": "Phellinus amazonicus MUCL53128"
+"^ot:originalLabel": "Phellinus amazonicus MUCL53128", 
+"^ot:ottId": 6381944, 
+"^ot:ottTaxonName": "Phellinus amazonicus"
 }, 
 "Tl2270341": {
-"^ot:originalLabel": "Phellinus castanopsidis CUI10153"
+"^ot:originalLabel": "Phellinus castanopsidis CUI10153", 
+"^ot:ottId": 1051328, 
+"^ot:ottTaxonName": "Phellinus castanopsidis"
 }, 
 "Tl2270342": {
-"^ot:originalLabel": "Phellinus amazonicus MUCL53056"
+"^ot:originalLabel": "Phellinus amazonicus MUCL53056", 
+"^ot:ottId": 6381944, 
+"^ot:ottTaxonName": "Phellinus amazonicus"
 }, 
 "Tl2270343": {
-"^ot:altLabel": "Phellinus caribaeo-quercicolus", 
+"^ot:altLabel": "Phellinus caribaeoquercicolus", 
 "^ot:originalLabel": "Phellinus caribaeo-quercicolus MUCL46005", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 301349, 
@@ -121,77 +224,122 @@
 "^ot:originalLabel": "Phellinus caribaeo quercicolus MUCL46004"
 }, 
 "Tl2270345": {
-"^ot:originalLabel": "Phellinus ellipsoideus MUCL47867"
+"^ot:originalLabel": "Phellinus ellipsoideus MUCL47867", 
+"^ot:ottId": 897515, 
+"^ot:ottTaxonName": "Phellinus ellipsoideus"
 }, 
 "Tl2270346": {
-"^ot:originalLabel": "Phellinus MUC51487"
+"^ot:originalLabel": "Phellinus MUC51487", 
+"^ot:ottId": 734544, 
+"^ot:ottTaxonName": "Phellinus"
 }, 
 "Tl2270347": {
-"^ot:originalLabel": "Phellinus ellipsoideus MUCL47822"
+"^ot:originalLabel": "Phellinus ellipsoideus MUCL47822", 
+"^ot:ottId": 897515, 
+"^ot:ottTaxonName": "Phellinus ellipsoideus"
 }, 
 "Tl2270348": {
-"^ot:originalLabel": "Phellinus gabonensis MUCL52070"
+"^ot:originalLabel": "Phellinus gabonensis MUCL52070", 
+"^ot:ottId": 815232, 
+"^ot:ottTaxonName": "Phellinus gabonensis"
 }, 
 "Tl2270349": {
-"^ot:originalLabel": "Phellinus amazonicus MUCL53036"
+"^ot:originalLabel": "Phellinus amazonicus MUCL53036", 
+"^ot:ottId": 6381944, 
+"^ot:ottTaxonName": "Phellinus amazonicus"
 }, 
 "Tl2270350": {
-"^ot:originalLabel": "Phellinus gabonensis MUCL51275"
+"^ot:originalLabel": "Phellinus gabonensis MUCL51275", 
+"^ot:ottId": 815232, 
+"^ot:ottTaxonName": "Phellinus gabonensis"
 }, 
 "Tl2270351": {
 "^ot:originalLabel": "Phellinus caribaeo quercicolus MUCL46003"
 }, 
 "Tl2270352": {
-"^ot:originalLabel": "Phellinus amazonicus "
+"^ot:originalLabel": "Phellinus amazonicus ", 
+"^ot:ottId": 6381944, 
+"^ot:ottTaxonName": "Phellinus amazonicus"
 }, 
 "Tl2270353": {
-"^ot:originalLabel": "Phellinus gabonensis MUCL52023 CL H"
+"^ot:originalLabel": "Phellinus gabonensis MUCL52023 CL H", 
+"^ot:ottId": 815232, 
+"^ot:ottTaxonName": "Phellinus gabonensis"
 }, 
 "Tl2270354": {
-"^ot:originalLabel": "Phellinus amazonicus MUCL53141"
+"^ot:originalLabel": "Phellinus amazonicus MUCL53141", 
+"^ot:ottId": 6381944, 
+"^ot:ottTaxonName": "Phellinus amazonicus"
 }, 
 "Tl2270355": {
-"^ot:originalLabel": "Phellinus ellipsoideus MUCL45929"
+"^ot:originalLabel": "Phellinus ellipsoideus MUCL45929", 
+"^ot:ottId": 897515, 
+"^ot:ottTaxonName": "Phellinus ellipsoideus"
 }, 
 "Tl2270356": {
-"^ot:originalLabel": "Phellinus gabonensis MUCL52012"
+"^ot:originalLabel": "Phellinus gabonensis MUCL52012", 
+"^ot:ottId": 815232, 
+"^ot:ottTaxonName": "Phellinus gabonensis"
 }, 
 "Tl2270357": {
-"^ot:originalLabel": "Phellinus gabonensis MUCL51277"
+"^ot:originalLabel": "Phellinus gabonensis MUCL51277", 
+"^ot:ottId": 815232, 
+"^ot:ottTaxonName": "Phellinus gabonensis"
 }, 
 "Tl2270358": {
-"^ot:originalLabel": "Phellinus amazonicus MUCL55075"
+"^ot:originalLabel": "Phellinus amazonicus MUCL55075", 
+"^ot:ottId": 6381944, 
+"^ot:ottTaxonName": "Phellinus amazonicus"
 }, 
 "Tl2270359": {
-"^ot:originalLabel": "Phellinus ellipsoideus MUCL47820"
+"^ot:originalLabel": "Phellinus ellipsoideus MUCL47820", 
+"^ot:ottId": 897515, 
+"^ot:ottTaxonName": "Phellinus ellipsoideus"
 }, 
 "Tl2270360": {
-"^ot:originalLabel": "Phellinus MUCL51334"
+"^ot:originalLabel": "Phellinus MUCL51334", 
+"^ot:ottId": 734544, 
+"^ot:ottTaxonName": "Phellinus"
 }, 
 "Tl2270361": {
-"^ot:originalLabel": "Phellinus amazonicus MUCL53685"
+"^ot:originalLabel": "Phellinus amazonicus MUCL53685", 
+"^ot:ottId": 6381944, 
+"^ot:ottTaxonName": "Phellinus amazonicus"
 }, 
 "Tl2270362": {
-"^ot:originalLabel": "Phellinus MUCL 52000"
+"^ot:originalLabel": "Phellinus MUCL 52000", 
+"^ot:ottId": 734544, 
+"^ot:ottTaxonName": "Phellinus"
 }, 
 "Tl2270363": {
-"^ot:originalLabel": "Phellinus amazonicus MUCL51483"
+"^ot:originalLabel": "Phellinus amazonicus MUCL51483", 
+"^ot:ottId": 6381944, 
+"^ot:ottTaxonName": "Phellinus amazonicus"
 }, 
 "Tl2270364": {
-"^ot:originalLabel": "Phellinus gabonensis MUCL52025 CL H"
+"^ot:originalLabel": "Phellinus gabonensis MUCL52025 CL H", 
+"^ot:ottId": 815232, 
+"^ot:ottTaxonName": "Phellinus gabonensis"
 }, 
 "Tl2270365": {
-"^ot:originalLabel": "Phellinus gabonensis MUCL52025 CL A"
+"^ot:originalLabel": "Phellinus gabonensis MUCL52025 CL A", 
+"^ot:ottId": 815232, 
+"^ot:ottTaxonName": "Phellinus gabonensis"
 }, 
 "Tl2270366": {
-"^ot:originalLabel": "Phellinus amazonicus MUCL51478"
+"^ot:originalLabel": "Phellinus amazonicus MUCL51478", 
+"^ot:ottId": 6381944, 
+"^ot:ottTaxonName": "Phellinus amazonicus"
 }, 
 "Tl2270367": {
-"^ot:originalLabel": "Phellinus amazonicus MUCL55050"
+"^ot:originalLabel": "Phellinus amazonicus MUCL55050", 
+"^ot:ottId": 6381944, 
+"^ot:ottTaxonName": "Phellinus amazonicus"
 }, 
 "Tl2270368": {
-"^ot:altLabel": "Phellinus spiculosus", 
 "^ot:originalLabel": "Phellinus spiculosus MUCL53634", 
+"^ot:ottId": 799200, 
+"^ot:ottTaxonName": "Phellinus spiculosus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 164638, 
 "@tb:identifier.taxonVariant": 439313, 
@@ -200,35 +348,54 @@
 }
 }, 
 "Tl2270369": {
-"^ot:originalLabel": "Phellinus amazonicus MUCL51476"
+"^ot:originalLabel": "Phellinus amazonicus MUCL51476", 
+"^ot:ottId": 6381944, 
+"^ot:ottTaxonName": "Phellinus amazonicus"
 }, 
 "Tl2270370": {
-"^ot:originalLabel": "Phellinus amazonicus MUCL55076"
+"^ot:originalLabel": "Phellinus amazonicus MUCL55076", 
+"^ot:ottId": 6381944, 
+"^ot:ottTaxonName": "Phellinus amazonicus"
 }, 
 "Tl2270371": {
-"^ot:originalLabel": "Phellinus gabonensis MUCL52023 CL A"
+"^ot:originalLabel": "Phellinus gabonensis MUCL52023 CL A", 
+"^ot:ottId": 815232, 
+"^ot:ottTaxonName": "Phellinus gabonensis"
 }, 
 "Tl2270372": {
-"^ot:originalLabel": "Phellinus gabonensis MUCL52014"
+"^ot:originalLabel": "Phellinus gabonensis MUCL52014", 
+"^ot:ottId": 815232, 
+"^ot:ottTaxonName": "Phellinus gabonensis"
 }, 
 "Tl2270373": {
-"^ot:originalLabel": "Phellinus gabonensis MUCL47562"
+"^ot:originalLabel": "Phellinus gabonensis MUCL47562", 
+"^ot:ottId": 815232, 
+"^ot:ottTaxonName": "Phellinus gabonensis"
 }, 
 "Tl2270374": {
-"^ot:originalLabel": "Phellinus amazonicus MUCL53117"
+"^ot:originalLabel": "Phellinus amazonicus MUCL53117", 
+"^ot:ottId": 6381944, 
+"^ot:ottTaxonName": "Phellinus amazonicus"
 }, 
 "Tl2270375": {
-"^ot:originalLabel": "Phellinus gabonensis MUCL52007"
+"^ot:originalLabel": "Phellinus gabonensis MUCL52007", 
+"^ot:ottId": 815232, 
+"^ot:ottTaxonName": "Phellinus gabonensis"
 }, 
 "Tl2270376": {
-"^ot:originalLabel": "Phellinus amazonicus MUCL53084"
+"^ot:originalLabel": "Phellinus amazonicus MUCL53084", 
+"^ot:ottId": 6381944, 
+"^ot:ottTaxonName": "Phellinus amazonicus"
 }, 
 "Tl2270377": {
-"^ot:originalLabel": "Phellinus MUCL 52001"
+"^ot:originalLabel": "Phellinus MUCL 52001", 
+"^ot:ottId": 734544, 
+"^ot:ottTaxonName": "Phellinus"
 }, 
 "Tl2270378": {
-"^ot:altLabel": "taxon 38", 
 "^ot:originalLabel": "Phellinus setulosus MUCL54670", 
+"^ot:ottId": 3808055, 
+"^ot:ottTaxonName": "Phellinus setulosus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 632259, 
 "@tb:identifier.taxonVariant": 847271, 
@@ -250,7 +417,19 @@
 "Tr95511": {
 "@label": "amazonicus", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:undefined", 
+"^ot:curatedType": "Bayesian inference ", 
+"^ot:inGroupClade": "Tn13998072", 
+"^ot:nodeLabelDescription": "", 
+"^ot:nodeLabelMode": "ot:bootstrapValues", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn13998081", 
+"^ot:specifiedRoot": "Tn13998081", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 41, 
 "^tb:quality.tree": "Unrated", 
@@ -259,7 +438,8 @@
 "Tn13998028": {
 "edge5545036": {
 "@source": "Tn13998028", 
-"@target": "Tn13998076"
+"@target": "Tn13998076", 
+"^ot:bootstrapValues": 100
 }, 
 "edge5545104": {
 "@source": "Tn13998028", 
@@ -273,17 +453,20 @@
 }, 
 "edge5545152": {
 "@source": "Tn13998029", 
-"@target": "Tn13998088"
+"@target": "Tn13998088", 
+"^ot:bootstrapValues": 45.182457
 }
 }, 
 "Tn13998030": {
 "edge5545034": {
 "@source": "Tn13998030", 
-"@target": "Tn13998028"
+"@target": "Tn13998028", 
+"^ot:bootstrapValues": 69.941399
 }, 
 "edge5545106": {
 "@source": "Tn13998030", 
-"@target": "Tn13998077"
+"@target": "Tn13998077", 
+"^ot:bootstrapValues": 100
 }
 }, 
 "Tn13998034": {
@@ -293,7 +476,8 @@
 }, 
 "edge5545064": {
 "@source": "Tn13998034", 
-"@target": "Tn13998063"
+"@target": "Tn13998063", 
+"^ot:bootstrapValues": 35.77401
 }
 }, 
 "Tn13998036": {
@@ -317,7 +501,8 @@
 }, 
 "edge5545124": {
 "@source": "Tn13998039", 
-"@target": "Tn13998101"
+"@target": "Tn13998101", 
+"^ot:bootstrapValues": 25.965836
 }
 }, 
 "Tn13998041": {
@@ -337,7 +522,8 @@
 }, 
 "edge5545160": {
 "@source": "Tn13998044", 
-"@target": "Tn13998069"
+"@target": "Tn13998069", 
+"^ot:bootstrapValues": 100
 }
 }, 
 "Tn13998046": {
@@ -353,7 +539,8 @@
 "Tn13998048": {
 "edge5545120": {
 "@source": "Tn13998048", 
-"@target": "Tn13998039"
+"@target": "Tn13998039", 
+"^ot:bootstrapValues": 23.799999
 }, 
 "edge5545134": {
 "@source": "Tn13998048", 
@@ -363,7 +550,8 @@
 "Tn13998050": {
 "edge5545096": {
 "@source": "Tn13998050", 
-"@target": "Tn13998087"
+"@target": "Tn13998087", 
+"^ot:bootstrapValues": 36.815498
 }, 
 "edge5545102": {
 "@source": "Tn13998050", 
@@ -377,7 +565,8 @@
 }, 
 "edge5545080": {
 "@source": "Tn13998053", 
-"@target": "Tn13998084"
+"@target": "Tn13998084", 
+"^ot:bootstrapValues": 10.035088
 }
 }, 
 "Tn13998054": {
@@ -387,13 +576,15 @@
 }, 
 "edge5545076": {
 "@source": "Tn13998054", 
-"@target": "Tn13998053"
+"@target": "Tn13998053", 
+"^ot:bootstrapValues": 38.599022
 }
 }, 
 "Tn13998057": {
 "edge5545058": {
 "@source": "Tn13998057", 
-"@target": "Tn13998078"
+"@target": "Tn13998078", 
+"^ot:bootstrapValues": 18.245613
 }, 
 "edge5545092": {
 "@source": "Tn13998057", 
@@ -403,7 +594,8 @@
 "Tn13998058": {
 "edge5545068": {
 "@source": "Tn13998058", 
-"@target": "Tn13998066"
+"@target": "Tn13998066", 
+"^ot:bootstrapValues": 13.113402
 }, 
 "edge5545086": {
 "@source": "Tn13998058", 
@@ -413,7 +605,8 @@
 "Tn13998060": {
 "edge5545114": {
 "@source": "Tn13998060", 
-"@target": "Tn13998064"
+"@target": "Tn13998064", 
+"^ot:bootstrapValues": 2.876831
 }, 
 "edge5545140": {
 "@source": "Tn13998060", 
@@ -423,7 +616,8 @@
 "Tn13998063": {
 "edge5545066": {
 "@source": "Tn13998063", 
-"@target": "Tn13998058"
+"@target": "Tn13998058", 
+"^ot:bootstrapValues": 22.017887
 }, 
 "edge5545088": {
 "@source": "Tn13998063", 
@@ -433,7 +627,8 @@
 "Tn13998064": {
 "edge5545116": {
 "@source": "Tn13998064", 
-"@target": "Tn13998082"
+"@target": "Tn13998082", 
+"^ot:bootstrapValues": 8.963918
 }, 
 "edge5545138": {
 "@source": "Tn13998064", 
@@ -447,7 +642,8 @@
 }, 
 "edge5545072": {
 "@source": "Tn13998066", 
-"@target": "Tn13998054"
+"@target": "Tn13998054", 
+"^ot:bootstrapValues": 22.626514
 }
 }, 
 "Tn13998069": {
@@ -463,7 +659,8 @@
 "Tn13998072": {
 "edge5545028": {
 "@source": "Tn13998072", 
-"@target": "Tn13998102"
+"@target": "Tn13998102", 
+"^ot:bootstrapValues": 100
 }, 
 "edge5545176": {
 "@source": "Tn13998072", 
@@ -477,33 +674,39 @@
 }, 
 "edge5545112": {
 "@source": "Tn13998074", 
-"@target": "Tn13998060"
+"@target": "Tn13998060", 
+"^ot:bootstrapValues": 7.285223
 }
 }, 
 "Tn13998076": {
 "edge5545038": {
 "@source": "Tn13998076", 
-"@target": "Tn13998089"
+"@target": "Tn13998089", 
+"^ot:bootstrapValues": 84.912277
 }, 
 "edge5545094": {
 "@source": "Tn13998076", 
-"@target": "Tn13998050"
+"@target": "Tn13998050", 
+"^ot:bootstrapValues": 100
 }
 }, 
 "Tn13998077": {
 "edge5545108": {
 "@source": "Tn13998077", 
-"@target": "Tn13998074"
+"@target": "Tn13998074", 
+"^ot:bootstrapValues": 50.549828
 }, 
 "edge5545142": {
 "@source": "Tn13998077", 
-"@target": "Tn13998090"
+"@target": "Tn13998090", 
+"^ot:bootstrapValues": 100
 }
 }, 
 "Tn13998078": {
 "edge5545060": {
 "@source": "Tn13998078", 
-"@target": "Tn13998034"
+"@target": "Tn13998034", 
+"^ot:bootstrapValues": 31.64035
 }, 
 "edge5545090": {
 "@source": "Tn13998078", 
@@ -513,7 +716,8 @@
 "Tn13998079": {
 "edge5545168": {
 "@source": "Tn13998079", 
-"@target": "Tn13998041"
+"@target": "Tn13998041", 
+"^ot:bootstrapValues": 100
 }, 
 "edge5545174": {
 "@source": "Tn13998079", 
@@ -523,17 +727,20 @@
 "Tn13998081": {
 "edge5545026": {
 "@source": "Tn13998081", 
-"@target": "Tn13998072"
+"@target": "Tn13998072", 
+"^ot:bootstrapValues": 100
 }, 
 "edge5545178": {
 "@source": "Tn13998081", 
-"@target": "Tn13998104"
+"@target": "Tn13998104", 
+"^ot:bootstrapValues": 0
 }
 }, 
 "Tn13998082": {
 "edge5545118": {
 "@source": "Tn13998082", 
-"@target": "Tn13998048"
+"@target": "Tn13998048", 
+"^ot:bootstrapValues": 15.478351
 }, 
 "edge5545136": {
 "@source": "Tn13998082", 
@@ -567,17 +774,20 @@
 }, 
 "edge5545156": {
 "@source": "Tn13998088", 
-"@target": "Tn13998044"
+"@target": "Tn13998044", 
+"^ot:bootstrapValues": 16.466667
 }
 }, 
 "Tn13998089": {
 "edge5545040": {
 "@source": "Tn13998089", 
-"@target": "Tn13998099"
+"@target": "Tn13998099", 
+"^ot:bootstrapValues": 65.333336
 }, 
 "edge5545056": {
 "@source": "Tn13998089", 
-"@target": "Tn13998057"
+"@target": "Tn13998057", 
+"^ot:bootstrapValues": 32
 }
 }, 
 "Tn13998090": {
@@ -593,11 +803,13 @@
 "Tn13998091": {
 "edge5545032": {
 "@source": "Tn13998091", 
-"@target": "Tn13998030"
+"@target": "Tn13998030", 
+"^ot:bootstrapValues": 100
 }, 
 "edge5545148": {
 "@source": "Tn13998091", 
-"@target": "Tn13998029"
+"@target": "Tn13998029", 
+"^ot:bootstrapValues": 100
 }
 }, 
 "Tn13998097": {
@@ -613,11 +825,13 @@
 "Tn13998099": {
 "edge5545042": {
 "@source": "Tn13998099", 
-"@target": "Tn13998036"
+"@target": "Tn13998036", 
+"^ot:bootstrapValues": 32.41201
 }, 
 "edge5545050": {
 "@source": "Tn13998099", 
-"@target": "Tn13998046"
+"@target": "Tn13998046", 
+"^ot:bootstrapValues": 100
 }
 }, 
 "Tn13998101": {
@@ -627,17 +841,20 @@
 }, 
 "edge5545128": {
 "@source": "Tn13998101", 
-"@target": "Tn13998097"
+"@target": "Tn13998097", 
+"^ot:bootstrapValues": 72.226929
 }
 }, 
 "Tn13998102": {
 "edge5545030": {
 "@source": "Tn13998102", 
-"@target": "Tn13998091"
+"@target": "Tn13998091", 
+"^ot:bootstrapValues": 100
 }, 
 "edge5545166": {
 "@source": "Tn13998102", 
-"@target": "Tn13998079"
+"@target": "Tn13998079", 
+"^ot:bootstrapValues": 53.789474
 }
 }, 
 "Tn13998104": {
@@ -658,15 +875,9 @@
 "Tn13998027": {
 "@otu": "Tl2270340"
 }, 
-"Tn13998028": {
-"@label": "69.941399"
-}, 
-"Tn13998029": {
-"@label": "100.000000"
-}, 
-"Tn13998030": {
-"@label": "100.000000"
-}, 
+"Tn13998028": {}, 
+"Tn13998029": {}, 
+"Tn13998030": {}, 
 "Tn13998031": {
 "@otu": "Tl2270353"
 }, 
@@ -676,15 +887,11 @@
 "Tn13998033": {
 "@otu": "Tl2270363"
 }, 
-"Tn13998034": {
-"@label": "31.640350"
-}, 
+"Tn13998034": {}, 
 "Tn13998035": {
 "@otu": "Tl2270357"
 }, 
-"Tn13998036": {
-"@label": "32.412010"
-}, 
+"Tn13998036": {}, 
 "Tn13998037": {
 "@otu": "Tl2270354"
 }, 
@@ -692,129 +899,87 @@
 "@label": "Phellinus caribaeo quercicolus MUCL46005", 
 "@otu": "Tl2270343"
 }, 
-"Tn13998039": {
-"@label": "23.799999"
-}, 
+"Tn13998039": {}, 
 "Tn13998040": {
 "@otu": "Tl2270358"
 }, 
-"Tn13998041": {
-"@label": "100.000000"
-}, 
+"Tn13998041": {}, 
 "Tn13998042": {
 "@otu": "Tl2270376"
 }, 
 "Tn13998043": {
 "@otu": "Tl2270338"
 }, 
-"Tn13998044": {
-"@label": "16.466667"
-}, 
+"Tn13998044": {}, 
 "Tn13998045": {
 "@otu": "Tl2270367"
 }, 
-"Tn13998046": {
-"@label": "100.000000"
-}, 
+"Tn13998046": {}, 
 "Tn13998047": {
 "@otu": "Tl2270362"
 }, 
-"Tn13998048": {
-"@label": "15.478351"
-}, 
+"Tn13998048": {}, 
 "Tn13998049": {
 "@otu": "Tl2270372"
 }, 
-"Tn13998050": {
-"@label": "100.000000"
-}, 
+"Tn13998050": {}, 
 "Tn13998051": {
 "@otu": "Tl2270346"
 }, 
 "Tn13998052": {
 "@otu": "Tl2270360"
 }, 
-"Tn13998053": {
-"@label": "38.599022"
-}, 
-"Tn13998054": {
-"@label": "22.626514"
-}, 
+"Tn13998053": {}, 
+"Tn13998054": {}, 
 "Tn13998055": {
 "@otu": "Tl2270371"
 }, 
 "Tn13998056": {
 "@otu": "Tl2270341"
 }, 
-"Tn13998057": {
-"@label": "32.000000"
-}, 
-"Tn13998058": {
-"@label": "22.017887"
-}, 
+"Tn13998057": {}, 
+"Tn13998058": {}, 
 "Tn13998059": {
 "@otu": "Tl2270348"
 }, 
-"Tn13998060": {
-"@label": "7.285223"
-}, 
+"Tn13998060": {}, 
 "Tn13998061": {
 "@otu": "Tl2270361"
 }, 
 "Tn13998062": {
 "@otu": "Tl2270364"
 }, 
-"Tn13998063": {
-"@label": "35.774010"
-}, 
-"Tn13998064": {
-"@label": "2.876831"
-}, 
+"Tn13998063": {}, 
+"Tn13998064": {}, 
 "Tn13998065": {
 "@otu": "Tl2270370"
 }, 
-"Tn13998066": {
-"@label": "13.113402"
-}, 
+"Tn13998066": {}, 
 "Tn13998067": {
 "@otu": "Tl2270349"
 }, 
 "Tn13998068": {
 "@otu": "Tl2270350"
 }, 
-"Tn13998069": {
-"@label": "100.000000"
-}, 
+"Tn13998069": {}, 
 "Tn13998070": {
 "@otu": "Tl2270375"
 }, 
 "Tn13998071": {
 "@otu": "Tl2270345"
 }, 
-"Tn13998072": {
-"@label": "100.000000"
-}, 
+"Tn13998072": {}, 
 "Tn13998073": {
 "@otu": "Tl2270352"
 }, 
-"Tn13998074": {
-"@label": "50.549828"
-}, 
+"Tn13998074": {}, 
 "Tn13998075": {
 "@otu": "Tl2270366"
 }, 
-"Tn13998076": {
-"@label": "100.000000"
-}, 
-"Tn13998077": {
-"@label": "100.000000"
-}, 
-"Tn13998078": {
-"@label": "18.245613"
-}, 
-"Tn13998079": {
-"@label": "53.789474"
-}, 
+"Tn13998076": {}, 
+"Tn13998077": {}, 
+"Tn13998078": {}, 
+"Tn13998079": {}, 
 "Tn13998080": {
 "@otu": "Tl2270374"
 }, 
@@ -822,36 +987,22 @@
 "@label": "0", 
 "@root": true
 }, 
-"Tn13998082": {
-"@label": "8.963918"
-}, 
+"Tn13998082": {}, 
 "Tn13998083": {
 "@otu": "Tl2270356"
 }, 
-"Tn13998084": {
-"@label": "10.035088"
-}, 
+"Tn13998084": {}, 
 "Tn13998085": {
 "@otu": "Tl2270344"
 }, 
 "Tn13998086": {
 "@otu": "Tl2270373"
 }, 
-"Tn13998087": {
-"@label": "36.815498"
-}, 
-"Tn13998088": {
-"@label": "45.182457"
-}, 
-"Tn13998089": {
-"@label": "84.912277"
-}, 
-"Tn13998090": {
-"@label": "100.000000"
-}, 
-"Tn13998091": {
-"@label": "100.000000"
-}, 
+"Tn13998087": {}, 
+"Tn13998088": {}, 
+"Tn13998089": {}, 
+"Tn13998090": {}, 
+"Tn13998091": {}, 
 "Tn13998092": {
 "@otu": "Tl2270347"
 }, 
@@ -867,30 +1018,20 @@
 "Tn13998096": {
 "@otu": "Tl2270339"
 }, 
-"Tn13998097": {
-"@label": "72.226929"
-}, 
+"Tn13998097": {}, 
 "Tn13998098": {
 "@otu": "Tl2270359"
 }, 
-"Tn13998099": {
-"@label": "65.333336"
-}, 
+"Tn13998099": {}, 
 "Tn13998100": {
 "@otu": "Tl2270378"
 }, 
-"Tn13998101": {
-"@label": "25.965836"
-}, 
-"Tn13998102": {
-"@label": "100.000000"
-}, 
+"Tn13998101": {}, 
+"Tn13998102": {}, 
 "Tn13998103": {
 "@otu": "Tl2270365"
 }, 
-"Tn13998104": {
-"@label": "0"
-}, 
+"Tn13998104": {}, 
 "Tn13998105": {
 "@otu": "Tl2270368"
 }
