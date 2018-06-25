@@ -54,16 +54,106 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2018-06-25T04:13:18.437Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "Basidiomycetes"
 }, 
-"^ot:curatorName": "Walter1186", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}, 
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": "$1"
+}, 
+"old": {
+"$": "^(\\S*\\s+\\S*).*"
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2018-06-25T04:13:18.437Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Walter1186"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S20975"
 }, 
+"^ot:focalClade": 309208, 
+"^ot:focalCladeOTTTaxonName": "Phakopsora", 
 "^ot:otusElementOrder": [
 "Tls58124"
 ], 
@@ -73,6 +163,7 @@
 }, 
 "^ot:studyPublicationReference": "Okane I., & Ono Y. 2017. Phylogenetic study of indigenous grapevine leaf rust fungi in North America and biological identity of an invasive grapevine leaf rust fungus in Brazil. Mycoscience, .", 
 "^ot:studyYear": 2017, 
+"^ot:tag": [], 
 "^ot:taxonLinkPrefixes": {
 "@ubio": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:", 
 "@uniprot": "http://purl.uniprot.org/taxonomy/"
@@ -99,7 +190,9 @@
 "^ot:originalLabel": "Phakopsora muscadiniae IBAR10546"
 }, 
 "Tl2833864": {
-"^ot:originalLabel": "Phakopsora sp. IBAR10217"
+"^ot:originalLabel": "Phakopsora sp. IBAR10217", 
+"^ot:ottId": 309208, 
+"^ot:ottTaxonName": "Phakopsora"
 }, 
 "Tl2833865": {
 "^ot:originalLabel": "Phakopsora meliosmae-myrianthae IBAR10239"
@@ -111,8 +204,9 @@
 "^ot:originalLabel": "Phakopsora muscadiniae IBAR10611"
 }, 
 "Tl2833868": {
-"^ot:altLabel": "Phakopsora vitis", 
 "^ot:originalLabel": "Phakopsora vitis IBAR10125", 
+"^ot:ottId": 417479, 
+"^ot:ottTaxonName": "Phakopsora vitis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 395959, 
 "@tb:identifier.taxonVariant": 406118, 
@@ -124,17 +218,24 @@
 "^ot:originalLabel": "Phakopsora hornotina IBAR10590"
 }, 
 "Tl2833870": {
-"^ot:originalLabel": "Phakopsora sp. IBAR10043"
+"^ot:originalLabel": "Phakopsora sp. IBAR10043", 
+"^ot:ottId": 309208, 
+"^ot:ottTaxonName": "Phakopsora"
 }, 
 "Tl2833871": {
-"^ot:originalLabel": "Phakopsora montana IBAR10124"
+"^ot:originalLabel": "Phakopsora montana IBAR10124", 
+"^ot:ottId": 5439001, 
+"^ot:ottTaxonName": "Phakopsora montana"
 }, 
 "Tl2833872": {
-"^ot:originalLabel": "Phakopsora uva IBAR10542"
+"^ot:originalLabel": "Phakopsora uva IBAR10542", 
+"^ot:ottId": 3850536, 
+"^ot:ottTaxonName": "Phakopsora uva"
 }, 
 "Tl2833873": {
-"^ot:altLabel": "Phakopsora ampelopsidis", 
 "^ot:originalLabel": "Phakopsora ampelopsidis IBAR8419", 
+"^ot:ottId": 883768, 
+"^ot:ottTaxonName": "Phakopsora ampelopsidis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 395956, 
 "@tb:identifier.taxonVariant": 406115, 
@@ -143,14 +244,19 @@
 }
 }, 
 "Tl2833874": {
-"^ot:originalLabel": "Phakopsora sp. IBAR10218"
+"^ot:originalLabel": "Phakopsora sp. IBAR10218", 
+"^ot:ottId": 309208, 
+"^ot:ottTaxonName": "Phakopsora"
 }, 
 "Tl2833875": {
-"^ot:originalLabel": "Phakopsora sp. IBAR8810"
+"^ot:originalLabel": "Phakopsora sp. IBAR8810", 
+"^ot:ottId": 309208, 
+"^ot:ottTaxonName": "Phakopsora"
 }, 
 "Tl2833876": {
-"^ot:altLabel": "Phakopsora meliosmae", 
 "^ot:originalLabel": "Phakopsora meliosmae IBAR10058", 
+"^ot:ottId": 417478, 
+"^ot:ottTaxonName": "Phakopsora meliosmae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 395958, 
 "@tb:identifier.taxonVariant": 406117, 
@@ -159,8 +265,9 @@
 }
 }, 
 "Tl2833877": {
-"^ot:altLabel": "Phakopsora ampelopsidis", 
 "^ot:originalLabel": "Phakopsora ampelopsidis IBAR10115", 
+"^ot:ottId": 883768, 
+"^ot:ottTaxonName": "Phakopsora ampelopsidis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 395956, 
 "@tb:identifier.taxonVariant": 406115, 
@@ -172,26 +279,35 @@
 "^ot:originalLabel": "Phakopsora muscadiniae IBAR10758"
 }, 
 "Tl2833879": {
-"^ot:originalLabel": "Phakopsora sp. IBAR10225"
+"^ot:originalLabel": "Phakopsora sp. IBAR10225", 
+"^ot:ottId": 309208, 
+"^ot:ottTaxonName": "Phakopsora"
 }, 
 "Tl2833880": {
 "^ot:originalLabel": "Phakopsora meliosmae-myrianthae IBAR8584"
 }, 
 "Tl2833881": {
-"^ot:originalLabel": "Phakopsora sp. IBAR10229"
+"^ot:originalLabel": "Phakopsora sp. IBAR10229", 
+"^ot:ottId": 309208, 
+"^ot:ottTaxonName": "Phakopsora"
 }, 
 "Tl2833882": {
-"^ot:originalLabel": "Phakopsora orientalis IBAR10080"
+"^ot:originalLabel": "Phakopsora orientalis IBAR10080", 
+"^ot:ottId": 5300916, 
+"^ot:ottTaxonName": "Phakopsora orientalis"
 }, 
 "Tl2833883": {
 "^ot:originalLabel": "Phakopsora hornotina IBAR10726"
 }, 
 "Tl2833884": {
-"^ot:originalLabel": "Phakopsora montana IBAR9682"
+"^ot:originalLabel": "Phakopsora montana IBAR9682", 
+"^ot:ottId": 5439001, 
+"^ot:ottTaxonName": "Phakopsora montana"
 }, 
 "Tl2833885": {
-"^ot:altLabel": "Phakopsora meliosmae", 
 "^ot:originalLabel": "Phakopsora meliosmae IBAR9906", 
+"^ot:ottId": 417478, 
+"^ot:ottTaxonName": "Phakopsora meliosmae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 395958, 
 "@tb:identifier.taxonVariant": 406117, 
@@ -200,14 +316,19 @@
 }
 }, 
 "Tl2833886": {
-"^ot:originalLabel": "Phakopsora montana IBAR8556"
+"^ot:originalLabel": "Phakopsora montana IBAR8556", 
+"^ot:ottId": 5439001, 
+"^ot:ottTaxonName": "Phakopsora montana"
 }, 
 "Tl2833887": {
-"^ot:originalLabel": "Phakopsora montana IBAR9545"
+"^ot:originalLabel": "Phakopsora montana IBAR9545", 
+"^ot:ottId": 5439001, 
+"^ot:ottTaxonName": "Phakopsora montana"
 }, 
 "Tl2833888": {
-"^ot:altLabel": "Phakopsora ampelopsidis", 
 "^ot:originalLabel": "Phakopsora ampelopsidis IBAR8633", 
+"^ot:ottId": 883768, 
+"^ot:ottTaxonName": "Phakopsora ampelopsidis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 395956, 
 "@tb:identifier.taxonVariant": 406115, 
@@ -225,14 +346,19 @@
 "^ot:originalLabel": "Phakopsora muscadiniae IBAR10746"
 }, 
 "Tl2833892": {
-"^ot:originalLabel": "Phakopsora uva IBAR10617"
+"^ot:originalLabel": "Phakopsora uva IBAR10617", 
+"^ot:ottId": 3850536, 
+"^ot:ottTaxonName": "Phakopsora uva"
 }, 
 "Tl2833893": {
-"^ot:originalLabel": "Phakopsora montana IBAR10309"
+"^ot:originalLabel": "Phakopsora montana IBAR10309", 
+"^ot:ottId": 5439001, 
+"^ot:ottTaxonName": "Phakopsora montana"
 }, 
 "Tl2833894": {
-"^ot:altLabel": "Phakopsora ampelopsidis", 
 "^ot:originalLabel": "Phakopsora ampelopsidis IBAR10116", 
+"^ot:ottId": 883768, 
+"^ot:ottTaxonName": "Phakopsora ampelopsidis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 395956, 
 "@tb:identifier.taxonVariant": 406115, 
@@ -241,17 +367,22 @@
 }
 }, 
 "Tl2833895": {
-"^ot:originalLabel": "Phakopsora sp. IBAR8758"
+"^ot:originalLabel": "Phakopsora sp. IBAR8758", 
+"^ot:ottId": 309208, 
+"^ot:ottTaxonName": "Phakopsora"
 }, 
 "Tl2833896": {
 "^ot:originalLabel": "Phakopsora meliosmae-myrianthae IBAR9668"
 }, 
 "Tl2833897": {
-"^ot:originalLabel": "Phakopsora sp. IBAR10223"
+"^ot:originalLabel": "Phakopsora sp. IBAR10223", 
+"^ot:ottId": 309208, 
+"^ot:ottTaxonName": "Phakopsora"
 }, 
 "Tl2833898": {
-"^ot:altLabel": "Phakopsora meliosmae", 
 "^ot:originalLabel": "Phakopsora meliosmae IBAR10037", 
+"^ot:ottId": 417478, 
+"^ot:ottTaxonName": "Phakopsora meliosmae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 395958, 
 "@tb:identifier.taxonVariant": 406117, 
@@ -263,20 +394,25 @@
 "^ot:originalLabel": "Phakopsora meliosmae-myrianthae IBAR10121"
 }, 
 "Tl2833900": {
-"^ot:originalLabel": "Phakopsora uva IBAR10612"
+"^ot:originalLabel": "Phakopsora uva IBAR10612", 
+"^ot:ottId": 3850536, 
+"^ot:ottTaxonName": "Phakopsora uva"
 }, 
 "Tl2833901": {
 "^ot:originalLabel": "Phakopsora muscadiniae IBAR10548"
 }, 
 "Tl2833902": {
-"^ot:originalLabel": "Phakopsora sp. IBAR10219"
+"^ot:originalLabel": "Phakopsora sp. IBAR10219", 
+"^ot:ottId": 309208, 
+"^ot:ottTaxonName": "Phakopsora"
 }, 
 "Tl2833903": {
 "^ot:originalLabel": "Phakopsora hornotina IBAR10582"
 }, 
 "Tl2833904": {
-"^ot:altLabel": "Phakopsora vitis", 
 "^ot:originalLabel": "Phakopsora vitis IBAR10108", 
+"^ot:ottId": 417479, 
+"^ot:ottTaxonName": "Phakopsora vitis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 395959, 
 "@tb:identifier.taxonVariant": 406118, 
@@ -288,8 +424,9 @@
 "^ot:originalLabel": "Phakopsora muscadiniae IBAR10755"
 }, 
 "Tl2833906": {
-"^ot:altLabel": "Phakopsora meliosmae", 
 "^ot:originalLabel": "Phakopsora meliosmae IBAR10057", 
+"^ot:ottId": 417478, 
+"^ot:ottTaxonName": "Phakopsora meliosmae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 395958, 
 "@tb:identifier.taxonVariant": 406117, 
@@ -298,11 +435,14 @@
 }
 }, 
 "Tl2833907": {
-"^ot:originalLabel": "Phakopsora uva IBAR10618"
+"^ot:originalLabel": "Phakopsora uva IBAR10618", 
+"^ot:ottId": 3850536, 
+"^ot:ottTaxonName": "Phakopsora uva"
 }, 
 "Tl2833908": {
-"^ot:altLabel": "Phakopsora meliosmae", 
 "^ot:originalLabel": "Phakopsora meliosmae IBAR10060", 
+"^ot:ottId": 417478, 
+"^ot:ottTaxonName": "Phakopsora meliosmae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 395958, 
 "@tb:identifier.taxonVariant": 406117, 
@@ -311,8 +451,9 @@
 }
 }, 
 "Tl2833909": {
-"^ot:altLabel": "Phakopsora meliosmae", 
 "^ot:originalLabel": "Phakopsora meliosmae IBAR8085", 
+"^ot:ottId": 417478, 
+"^ot:ottTaxonName": "Phakopsora meliosmae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 395958, 
 "@tb:identifier.taxonVariant": 406117, 
@@ -321,16 +462,24 @@
 }
 }, 
 "Tl2833910": {
-"^ot:originalLabel": "Phakopsora uva IBAR10627"
+"^ot:originalLabel": "Phakopsora uva IBAR10627", 
+"^ot:ottId": 3850536, 
+"^ot:ottTaxonName": "Phakopsora uva"
 }, 
 "Tl2833911": {
-"^ot:originalLabel": "Phakopsora sp. IBAR10044"
+"^ot:originalLabel": "Phakopsora sp. IBAR10044", 
+"^ot:ottId": 309208, 
+"^ot:ottTaxonName": "Phakopsora"
 }, 
 "Tl2833912": {
-"^ot:originalLabel": "Phakopsora sp. IBAR8755"
+"^ot:originalLabel": "Phakopsora sp. IBAR8755", 
+"^ot:ottId": 309208, 
+"^ot:ottTaxonName": "Phakopsora"
 }, 
 "Tl2833913": {
-"^ot:originalLabel": "Phakopsora sp. IBAR10042"
+"^ot:originalLabel": "Phakopsora sp. IBAR10042", 
+"^ot:ottId": 309208, 
+"^ot:ottTaxonName": "Phakopsora"
 }, 
 "Tl2833914": {
 "^ot:originalLabel": "Phakopsora hornotina IBAR10717"
@@ -340,6 +489,8 @@
 }, 
 "Tl2833916": {
 "^ot:originalLabel": "Phakopsora pachyrhizi", 
+"^ot:ottId": 865791, 
+"^ot:ottTaxonName": "Phakopsora pachyrhizi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 21601, 
 "@tb:identifier.taxonVariant": 50249, 
@@ -348,8 +499,9 @@
 }
 }, 
 "Tl2833917": {
-"^ot:altLabel": "Phakopsora ampelopsidis", 
 "^ot:originalLabel": "Phakopsora ampelopsidis IBAR10128", 
+"^ot:ottId": 883768, 
+"^ot:ottTaxonName": "Phakopsora ampelopsidis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 395956, 
 "@tb:identifier.taxonVariant": 406115, 
@@ -361,17 +513,24 @@
 "^ot:originalLabel": "Phakopsora meliosmae-myrianthae IBAR9679"
 }, 
 "Tl2833919": {
-"^ot:originalLabel": "Phakopsora uva IBAR10530"
+"^ot:originalLabel": "Phakopsora uva IBAR10530", 
+"^ot:ottId": 3850536, 
+"^ot:ottTaxonName": "Phakopsora uva"
 }, 
 "Tl2833920": {
-"^ot:originalLabel": "Phakopsora uva IBAR10613"
+"^ot:originalLabel": "Phakopsora uva IBAR10613", 
+"^ot:ottId": 3850536, 
+"^ot:ottTaxonName": "Phakopsora uva"
 }, 
 "Tl2833921": {
-"^ot:originalLabel": "Phakopsora sp. IBAR10228"
+"^ot:originalLabel": "Phakopsora sp. IBAR10228", 
+"^ot:ottId": 309208, 
+"^ot:ottTaxonName": "Phakopsora"
 }, 
 "Tl2833922": {
-"^ot:altLabel": "Phakopsora vitis", 
 "^ot:originalLabel": "Phakopsora vitis IBAR10117", 
+"^ot:ottId": 417479, 
+"^ot:ottTaxonName": "Phakopsora vitis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 395959, 
 "@tb:identifier.taxonVariant": 406118, 
@@ -383,8 +542,9 @@
 "^ot:originalLabel": "Phakopsora hornotina IBAR10722"
 }, 
 "Tl2833924": {
-"^ot:altLabel": "Phakopsora vitis", 
 "^ot:originalLabel": "Phakopsora vitis IBAR10101", 
+"^ot:ottId": 417479, 
+"^ot:ottTaxonName": "Phakopsora vitis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 395959, 
 "@tb:identifier.taxonVariant": 406118, 
@@ -396,7 +556,9 @@
 "^ot:originalLabel": "Phakopsora muscadiniae IBAR10628"
 }, 
 "Tl2833926": {
-"^ot:originalLabel": "Phakopsora orientalis IBAR7612"
+"^ot:originalLabel": "Phakopsora orientalis IBAR7612", 
+"^ot:ottId": 5300916, 
+"^ot:ottTaxonName": "Phakopsora orientalis"
 }, 
 "Tl2833927": {
 "^ot:originalLabel": "Phakopsora hornotina IBAR10714"
@@ -405,7 +567,9 @@
 "^ot:originalLabel": "Phakopsora hornotina IBAR10538"
 }, 
 "Tl2833929": {
-"^ot:originalLabel": "Phakopsora sp. IBAR10231"
+"^ot:originalLabel": "Phakopsora sp. IBAR10231", 
+"^ot:ottId": 309208, 
+"^ot:ottTaxonName": "Phakopsora"
 }, 
 "Tl2833930": {
 "^ot:originalLabel": "Phakopsora meliosmae-myrianthae IBAR10240"
@@ -414,8 +578,9 @@
 "^ot:originalLabel": "Phakopsora meliosmae-myrianthae IBAR10123"
 }, 
 "Tl2833932": {
-"^ot:altLabel": "Phakopsora ampelopsidis", 
 "^ot:originalLabel": "Phakopsora ampelopsidis IBAR10127", 
+"^ot:ottId": 883768, 
+"^ot:ottTaxonName": "Phakopsora ampelopsidis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 395956, 
 "@tb:identifier.taxonVariant": 406115, 
@@ -424,11 +589,14 @@
 }
 }, 
 "Tl2833933": {
-"^ot:originalLabel": "Phakopsora montana IBAR10312"
+"^ot:originalLabel": "Phakopsora montana IBAR10312", 
+"^ot:ottId": 5439001, 
+"^ot:ottTaxonName": "Phakopsora montana"
 }, 
 "Tl2833934": {
-"^ot:altLabel": "Phakopsora meliosmae", 
 "^ot:originalLabel": "Phakopsora meliosmae IBAR9912", 
+"^ot:ottId": 417478, 
+"^ot:ottTaxonName": "Phakopsora meliosmae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 395958, 
 "@tb:identifier.taxonVariant": 406117, 
@@ -446,14 +614,17 @@
 "^ot:originalLabel": "Phakopsora meliosmae-myrianthae IBAR8695"
 }, 
 "Tl2833938": {
-"^ot:originalLabel": "Phakopsora montana IBAR10089"
+"^ot:originalLabel": "Phakopsora montana IBAR10089", 
+"^ot:ottId": 5439001, 
+"^ot:ottTaxonName": "Phakopsora montana"
 }, 
 "Tl2833939": {
 "^ot:originalLabel": "Phakopsora muscadiniae IBAR10631"
 }, 
 "Tl2833940": {
-"^ot:altLabel": "Phakopsora ampelopsidis", 
 "^ot:originalLabel": "Phakopsora ampelopsidis IBAR8618", 
+"^ot:ottId": 883768, 
+"^ot:ottTaxonName": "Phakopsora ampelopsidis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 395956, 
 "@tb:identifier.taxonVariant": 406115, 
@@ -462,8 +633,9 @@
 }
 }, 
 "Tl2833941": {
-"^ot:altLabel": "Phakopsora meliosmae", 
 "^ot:originalLabel": "Phakopsora meliosmae IBAR9977", 
+"^ot:ottId": 417478, 
+"^ot:ottTaxonName": "Phakopsora meliosmae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 395958, 
 "@tb:identifier.taxonVariant": 406117, 
@@ -472,11 +644,14 @@
 }
 }, 
 "Tl2833942": {
-"^ot:originalLabel": "Phakopsora sp. IBAR8808"
+"^ot:originalLabel": "Phakopsora sp. IBAR8808", 
+"^ot:ottId": 309208, 
+"^ot:ottTaxonName": "Phakopsora"
 }, 
 "Tl2833943": {
-"^ot:altLabel": "Phakopsora meliosmae", 
 "^ot:originalLabel": "Phakopsora meliosmae IBAR9911", 
+"^ot:ottId": 417478, 
+"^ot:ottTaxonName": "Phakopsora meliosmae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 395958, 
 "@tb:identifier.taxonVariant": 406117, 
@@ -497,8 +672,9 @@
 "^ot:originalLabel": "Phakopsora muscadiniae IBAR10525"
 }, 
 "Tl2833948": {
-"^ot:altLabel": "Phakopsora ampelopsidis", 
 "^ot:originalLabel": "Phakopsora ampelopsidis IBAR7988", 
+"^ot:ottId": 883768, 
+"^ot:ottTaxonName": "Phakopsora ampelopsidis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 395956, 
 "@tb:identifier.taxonVariant": 406115, 
@@ -507,17 +683,22 @@
 }
 }, 
 "Tl2833949": {
-"^ot:originalLabel": "Phakopsora montana IBAR9547"
+"^ot:originalLabel": "Phakopsora montana IBAR9547", 
+"^ot:ottId": 5439001, 
+"^ot:ottTaxonName": "Phakopsora montana"
 }, 
 "Tl2833950": {
 "^ot:originalLabel": "Phakopsora hornotina IBAR10721"
 }, 
 "Tl2833951": {
-"^ot:originalLabel": "Phakopsora sp. IBAR10230"
+"^ot:originalLabel": "Phakopsora sp. IBAR10230", 
+"^ot:ottId": 309208, 
+"^ot:ottTaxonName": "Phakopsora"
 }, 
 "Tl2833952": {
-"^ot:altLabel": "Phakopsora vitis", 
 "^ot:originalLabel": "Phakopsora vitis IBAR8105", 
+"^ot:ottId": 417479, 
+"^ot:ottTaxonName": "Phakopsora vitis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 395959, 
 "@tb:identifier.taxonVariant": 406118, 
@@ -529,26 +710,39 @@
 "^ot:originalLabel": "Phakopsora muscadiniae IBAR10522"
 }, 
 "Tl2833954": {
-"^ot:originalLabel": "Phakopsora orientalis IBAR9942"
+"^ot:originalLabel": "Phakopsora orientalis IBAR9942", 
+"^ot:ottId": 5300916, 
+"^ot:ottTaxonName": "Phakopsora orientalis"
 }, 
 "Tl2833955": {
-"^ot:originalLabel": "Phakopsora montana IBAR10303"
+"^ot:originalLabel": "Phakopsora montana IBAR10303", 
+"^ot:ottId": 5439001, 
+"^ot:ottTaxonName": "Phakopsora montana"
 }, 
 "Tl2833956": {
-"^ot:originalLabel": "Phakopsora montana IBAR10085"
+"^ot:originalLabel": "Phakopsora montana IBAR10085", 
+"^ot:ottId": 5439001, 
+"^ot:ottTaxonName": "Phakopsora montana"
 }, 
 "Tl2833957": {
-"^ot:originalLabel": "Phakopsora sp. IBAR10227"
+"^ot:originalLabel": "Phakopsora sp. IBAR10227", 
+"^ot:ottId": 309208, 
+"^ot:ottTaxonName": "Phakopsora"
 }, 
 "Tl2833958": {
-"^ot:originalLabel": "Phakopsora sp. IBAR9657"
+"^ot:originalLabel": "Phakopsora sp. IBAR9657", 
+"^ot:ottId": 309208, 
+"^ot:ottTaxonName": "Phakopsora"
 }, 
 "Tl2833959": {
-"^ot:originalLabel": "Phakopsora montana IBAR10082"
+"^ot:originalLabel": "Phakopsora montana IBAR10082", 
+"^ot:ottId": 5439001, 
+"^ot:ottTaxonName": "Phakopsora montana"
 }, 
 "Tl2833960": {
-"^ot:altLabel": "Phakopsora vitis", 
 "^ot:originalLabel": "Phakopsora vitis IBAR9894", 
+"^ot:ottId": 417479, 
+"^ot:ottTaxonName": "Phakopsora vitis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 395959, 
 "@tb:identifier.taxonVariant": 406118, 
@@ -557,11 +751,14 @@
 }
 }, 
 "Tl2833961": {
-"^ot:originalLabel": "Phakopsora sp. IBAR10578"
+"^ot:originalLabel": "Phakopsora sp. IBAR10578", 
+"^ot:ottId": 309208, 
+"^ot:ottTaxonName": "Phakopsora"
 }, 
 "Tl2833962": {
-"^ot:altLabel": "Phakopsora meliosmae", 
 "^ot:originalLabel": "Phakopsora meliosmae IBAR10038", 
+"^ot:ottId": 417478, 
+"^ot:ottTaxonName": "Phakopsora meliosmae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 395958, 
 "@tb:identifier.taxonVariant": 406117, 
@@ -573,11 +770,14 @@
 "^ot:originalLabel": "Phakopsora hornotina IBAR10434"
 }, 
 "Tl2833964": {
-"^ot:originalLabel": "Phakopsora uva IBAR10544"
+"^ot:originalLabel": "Phakopsora uva IBAR10544", 
+"^ot:ottId": 3850536, 
+"^ot:ottTaxonName": "Phakopsora uva"
 }, 
 "Tl2833965": {
-"^ot:altLabel": "Phakopsora ampelopsidis", 
 "^ot:originalLabel": "Phakopsora ampelopsidis IBAR8613", 
+"^ot:ottId": 883768, 
+"^ot:ottTaxonName": "Phakopsora ampelopsidis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 395956, 
 "@tb:identifier.taxonVariant": 406115, 
@@ -586,14 +786,19 @@
 }
 }, 
 "Tl2833966": {
-"^ot:originalLabel": "Phakopsora uva IBAR10540"
+"^ot:originalLabel": "Phakopsora uva IBAR10540", 
+"^ot:ottId": 3850536, 
+"^ot:ottTaxonName": "Phakopsora uva"
 }, 
 "Tl2833967": {
-"^ot:originalLabel": "Phakopsora sp. IBAR10220"
+"^ot:originalLabel": "Phakopsora sp. IBAR10220", 
+"^ot:ottId": 309208, 
+"^ot:ottTaxonName": "Phakopsora"
 }, 
 "Tl2833968": {
-"^ot:altLabel": "Phakopsora meliosmae", 
 "^ot:originalLabel": "Phakopsora meliosmae IBAR7582", 
+"^ot:ottId": 417478, 
+"^ot:ottTaxonName": "Phakopsora meliosmae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 395958, 
 "@tb:identifier.taxonVariant": 406117, 
@@ -608,8 +813,9 @@
 "^ot:originalLabel": "Phakopsora muscadiniae IBAR10519"
 }, 
 "Tl2833971": {
-"^ot:altLabel": "Phakopsora meliosmae", 
 "^ot:originalLabel": "Phakopsora meliosmae IBAR9946", 
+"^ot:ottId": 417478, 
+"^ot:ottTaxonName": "Phakopsora meliosmae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 395958, 
 "@tb:identifier.taxonVariant": 406117, 
@@ -618,14 +824,17 @@
 }
 }, 
 "Tl2833972": {
-"^ot:originalLabel": "Phakopsora sp. IBAR9676"
+"^ot:originalLabel": "Phakopsora sp. IBAR9676", 
+"^ot:ottId": 309208, 
+"^ot:ottTaxonName": "Phakopsora"
 }, 
 "Tl2833973": {
 "^ot:originalLabel": "Phakopsora meliosmae-myrianthae IBAR10118"
 }, 
 "Tl2833974": {
-"^ot:altLabel": "Phakopsora meliosmae", 
 "^ot:originalLabel": "Phakopsora meliosmae IBAR9943", 
+"^ot:ottId": 417478, 
+"^ot:ottTaxonName": "Phakopsora meliosmae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 395958, 
 "@tb:identifier.taxonVariant": 406117, 
@@ -634,8 +843,9 @@
 }
 }, 
 "Tl2833975": {
-"^ot:altLabel": "Phakopsora vitis", 
 "^ot:originalLabel": "Phakopsora vitis IBAR8107", 
+"^ot:ottId": 417479, 
+"^ot:ottTaxonName": "Phakopsora vitis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 395959, 
 "@tb:identifier.taxonVariant": 406118, 
@@ -644,8 +854,9 @@
 }
 }, 
 "Tl2833976": {
-"^ot:altLabel": "Phakopsora meliosmae", 
 "^ot:originalLabel": "Phakopsora meliosmae IBAR10059", 
+"^ot:ottId": 417478, 
+"^ot:ottTaxonName": "Phakopsora meliosmae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 395958, 
 "@tb:identifier.taxonVariant": 406117, 
@@ -657,8 +868,9 @@
 "^ot:originalLabel": "Phakopsora muscadiniae IBAR10516"
 }, 
 "Tl2833978": {
-"^ot:altLabel": "Phakopsora vitis", 
 "^ot:originalLabel": "Phakopsora vitis IBAR7143", 
+"^ot:ottId": 417479, 
+"^ot:ottTaxonName": "Phakopsora vitis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 395959, 
 "@tb:identifier.taxonVariant": 406118, 
@@ -667,11 +879,14 @@
 }
 }, 
 "Tl2833979": {
-"^ot:originalLabel": "Phakopsora uva IBAR10615"
+"^ot:originalLabel": "Phakopsora uva IBAR10615", 
+"^ot:ottId": 3850536, 
+"^ot:ottTaxonName": "Phakopsora uva"
 }, 
 "Tl2833980": {
-"^ot:altLabel": "Phakopsora ampelopsidis", 
 "^ot:originalLabel": "Phakopsora ampelopsidis IBAR10126", 
+"^ot:ottId": 883768, 
+"^ot:ottTaxonName": "Phakopsora ampelopsidis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 395956, 
 "@tb:identifier.taxonVariant": 406115, 
@@ -680,8 +895,9 @@
 }
 }, 
 "Tl2833981": {
-"^ot:altLabel": "Phakopsora vitis", 
 "^ot:originalLabel": "Phakopsora vitis IBAR10098", 
+"^ot:ottId": 417479, 
+"^ot:ottTaxonName": "Phakopsora vitis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 395959, 
 "@tb:identifier.taxonVariant": 406118, 
@@ -690,7 +906,9 @@
 }
 }, 
 "Tl2833982": {
-"^ot:originalLabel": "Phakopsora uva IBAR10534"
+"^ot:originalLabel": "Phakopsora uva IBAR10534", 
+"^ot:ottId": 3850536, 
+"^ot:ottTaxonName": "Phakopsora uva"
 }, 
 "Tl2833983": {
 "^ot:originalLabel": "Phakopsora meliosmae-myrianthae IBAR8106"
@@ -699,11 +917,14 @@
 "^ot:originalLabel": "Phakopsora meliosmae-myrianthae IBAR7720"
 }, 
 "Tl2833985": {
-"^ot:originalLabel": "Phakopsora sp. IBAR10221"
+"^ot:originalLabel": "Phakopsora sp. IBAR10221", 
+"^ot:ottId": 309208, 
+"^ot:ottTaxonName": "Phakopsora"
 }, 
 "Tl2833986": {
-"^ot:altLabel": "Phakopsora vitis", 
 "^ot:originalLabel": "Phakopsora vitis IBAR8732", 
+"^ot:ottId": 417479, 
+"^ot:ottTaxonName": "Phakopsora vitis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 395959, 
 "@tb:identifier.taxonVariant": 406118, 
@@ -712,7 +933,9 @@
 }
 }, 
 "Tl2833987": {
-"^ot:originalLabel": "Phakopsora sp. IBAR10226"
+"^ot:originalLabel": "Phakopsora sp. IBAR10226", 
+"^ot:ottId": 309208, 
+"^ot:ottTaxonName": "Phakopsora"
 }, 
 "Tl2833988": {
 "^ot:originalLabel": "Phakopsora hornotina IBAR10587"
@@ -721,17 +944,22 @@
 "^ot:originalLabel": "Phakopsora meliosmae-myrianthae IBAR8084"
 }, 
 "Tl2833990": {
-"^ot:originalLabel": "Phakopsora sp IBAR10041"
+"^ot:originalLabel": "Phakopsora sp IBAR10041", 
+"^ot:ottId": 309208, 
+"^ot:ottTaxonName": "Phakopsora"
 }, 
 "Tl2833991": {
 "^ot:originalLabel": "Phakopsora meliosmae-myrianthae IBAR10122"
 }, 
 "Tl2833992": {
-"^ot:originalLabel": "Phakopsora montana IBAR10314"
+"^ot:originalLabel": "Phakopsora montana IBAR10314", 
+"^ot:ottId": 5439001, 
+"^ot:ottTaxonName": "Phakopsora montana"
 }, 
 "Tl2833993": {
-"^ot:altLabel": "Phakopsora vitis", 
 "^ot:originalLabel": "Phakopsora vitis IBAR8047", 
+"^ot:ottId": 417479, 
+"^ot:ottTaxonName": "Phakopsora vitis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 395959, 
 "@tb:identifier.taxonVariant": 406118, 
@@ -743,8 +971,9 @@
 "^ot:originalLabel": "Phakopsora muscadiniae IBAR10547"
 }, 
 "Tl2833995": {
-"^ot:altLabel": "Phakopsora ampelopsidis", 
 "^ot:originalLabel": "Phakopsora ampelopsidis IBAR8597", 
+"^ot:ottId": 883768, 
+"^ot:ottTaxonName": "Phakopsora ampelopsidis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 395956, 
 "@tb:identifier.taxonVariant": 406115, 
@@ -753,8 +982,9 @@
 }
 }, 
 "Tl2833996": {
-"^ot:altLabel": "Phakopsora vitis", 
 "^ot:originalLabel": "Phakopsora vitis IBAR7682", 
+"^ot:ottId": 417479, 
+"^ot:ottTaxonName": "Phakopsora vitis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 395959, 
 "@tb:identifier.taxonVariant": 406118, 
@@ -780,7 +1010,18 @@
 "Tr105655": {
 "@label": "PHYLIP 1+", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:changesCount", 
+"^ot:curatedType": "Maximum likelihood ", 
+"^ot:inGroupClade": "Tn16546541", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn16546431", 
+"^ot:specifiedRoot": "Tn16546431", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 135, 
 "^tb:quality.tree": "Unrated", 
