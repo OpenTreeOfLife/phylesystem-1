@@ -54,22 +54,116 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2018-06-25T04:48:45.091Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "Eudicots"
 }, 
-"^ot:curatorName": "Walter1186", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}, 
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": "$1"
+}, 
+"old": {
+"$": "^(\\S*\\s+\\S*).*"
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2018-06-25T04:48:45.091Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Walter1186"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S18491"
 }, 
+"^ot:focalClade": 438628, 
+"^ot:focalCladeOTTTaxonName": "Cissus", 
 "^ot:otusElementOrder": [
 "Tls48357"
 ], 
 "^ot:studyId": "ot_1414", 
+"^ot:studyPublication": {
+"@href": "http://dx.doi.org/10.3732/ajb.1600177"
+}, 
 "^ot:studyPublicationReference": "Adams N.F., Collinson M.E., Smith S.Y., Bamford M.K., Forest F., Malakasi P., Marone F., & Sykes D. 2016. X-rays and virtual taphonomy reveal the first fossil record of Cissus (Vitaceae) in Africa: phylogenetic, biogeographic and paleoenvironmental implications. American Journal of Botany, .", 
 "^ot:studyYear": 2016, 
+"^ot:tag": [], 
 "^ot:taxonLinkPrefixes": {
 "@ubio": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:", 
 "@uniprot": "http://purl.uniprot.org/taxonomy/"
@@ -92,10 +186,14 @@
 "^skos:historyNote": "Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlOTUWriter@722276cd $Rev$", 
 "otuById": {
 "Tl2064562": {
-"^ot:originalLabel": "Cissus auricoma"
+"^ot:originalLabel": "Cissus auricoma", 
+"^ot:ottId": 593139, 
+"^ot:ottTaxonName": "Cissus auricoma"
 }, 
 "Tl2064563": {
 "^ot:originalLabel": "Cissus pentaclada", 
+"^ot:ottId": 913891, 
+"^ot:ottTaxonName": "Cissus pentaclada", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 144720, 
 "@tb:identifier.taxonVariant": 220855, 
@@ -105,6 +203,8 @@
 }, 
 "Tl2064564": {
 "^ot:originalLabel": "Cissus sulcicaulis", 
+"^ot:ottId": 5233270, 
+"^ot:ottTaxonName": "Cissus sulcicaulis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 623643, 
 "@tb:identifier.taxonVariant": 835112, 
@@ -113,6 +213,8 @@
 }, 
 "Tl2064565": {
 "^ot:originalLabel": "Cissus rotundifolia", 
+"^ot:ottId": 810313, 
+"^ot:ottTaxonName": "Cissus rotundifolia", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 362048, 
 "@tb:identifier.taxonVariant": 390075, 
@@ -122,6 +224,8 @@
 }, 
 "Tl2064566": {
 "^ot:originalLabel": "Clematicissus angustissima", 
+"^ot:ottId": 901762, 
+"^ot:ottTaxonName": "Clematicissus angustissima", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 156974, 
 "@tb:identifier.taxonVariant": 232227, 
@@ -130,13 +234,19 @@
 }
 }, 
 "Tl2064567": {
-"^ot:originalLabel": "Parthenocissus suberosa"
+"^ot:originalLabel": "Parthenocissus suberosa", 
+"^ot:ottId": 941929, 
+"^ot:ottTaxonName": "Parthenocissus suberosa"
 }, 
 "Tl2064568": {
-"^ot:originalLabel": "Ampelocissus ascendiflora"
+"^ot:originalLabel": "Ampelocissus ascendiflora", 
+"^ot:ottId": 240260, 
+"^ot:ottTaxonName": "Ampelocissus ascendiflora"
 }, 
 "Tl2064569": {
 "^ot:originalLabel": "Ampelopsis delavayana", 
+"^ot:ottId": 769627, 
+"^ot:ottTaxonName": "Ampelopsis delavayana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 302758, 
 "@tb:identifier.taxonVariant": 485744, 
@@ -146,6 +256,8 @@
 }, 
 "Tl2064570": {
 "^ot:originalLabel": "Vitis aestivalis", 
+"^ot:ottId": 329911, 
+"^ot:ottTaxonName": "Vitis aestivalis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 36918, 
 "@tb:identifier.taxonVariant": 85369, 
@@ -155,6 +267,8 @@
 }, 
 "Tl2064571": {
 "^ot:originalLabel": "Tetrastigma laxum", 
+"^ot:ottId": 1024911, 
+"^ot:ottTaxonName": "Tetrastigma laxum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 623664, 
 "@tb:identifier.taxonVariant": 835166, 
@@ -163,6 +277,8 @@
 }, 
 "Tl2064572": {
 "^ot:originalLabel": "Cissus serroniana", 
+"^ot:ottId": 5233283, 
+"^ot:ottTaxonName": "Cissus serroniana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 623641, 
 "@tb:identifier.taxonVariant": 835107, 
@@ -170,10 +286,14 @@
 }
 }, 
 "Tl2064573": {
-"^ot:originalLabel": "Cissus welwitschii"
+"^ot:originalLabel": "Cissus welwitschii", 
+"^ot:ottId": 514156, 
+"^ot:ottTaxonName": "Cissus welwitschii"
 }, 
 "Tl2064574": {
 "^ot:originalLabel": "Cissus tinctoria", 
+"^ot:ottId": 5233275, 
+"^ot:ottTaxonName": "Cissus tinctoria", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 623671, 
 "@tb:identifier.taxonVariant": 835173, 
@@ -182,6 +302,8 @@
 }, 
 "Tl2064575": {
 "^ot:originalLabel": "Ampelopsis cordata", 
+"^ot:ottId": 769606, 
+"^ot:ottTaxonName": "Ampelopsis cordata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 302757, 
 "@tb:identifier.taxonVariant": 351447, 
@@ -191,6 +313,8 @@
 }, 
 "Tl2064576": {
 "^ot:originalLabel": "Cissus penninervis", 
+"^ot:ottId": 913893, 
+"^ot:ottTaxonName": "Cissus penninervis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 144719, 
 "@tb:identifier.taxonVariant": 220854, 
@@ -200,6 +324,8 @@
 }, 
 "Tl2064577": {
 "^ot:originalLabel": "Vitis heyneana", 
+"^ot:ottId": 568884, 
+"^ot:ottTaxonName": "Vitis heyneana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 302806, 
 "@tb:identifier.taxonVariant": 351500, 
@@ -209,6 +335,8 @@
 }, 
 "Tl2064578": {
 "^ot:originalLabel": "Pterisanthes eriopoda", 
+"^ot:ottId": 211705, 
+"^ot:ottTaxonName": "Pterisanthes eriopoda", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 302789, 
 "@tb:identifier.taxonVariant": 351481, 
@@ -218,6 +346,8 @@
 }, 
 "Tl2064579": {
 "^ot:originalLabel": "Rhoicissus tomentosa", 
+"^ot:ottId": 582650, 
+"^ot:ottTaxonName": "Rhoicissus tomentosa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 167056, 
 "@tb:identifier.taxonVariant": 241713, 
@@ -227,6 +357,8 @@
 }, 
 "Tl2064580": {
 "^ot:originalLabel": "Cissus pseudoverticillata", 
+"^ot:ottId": 1091337, 
+"^ot:ottTaxonName": "Cissus pseudoverticillata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 623669, 
 "@tb:identifier.taxonVariant": 835171, 
@@ -235,6 +367,8 @@
 }, 
 "Tl2064581": {
 "^ot:originalLabel": "Vitis flexuosa", 
+"^ot:ottId": 175159, 
+"^ot:ottTaxonName": "Vitis flexuosa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 148032, 
 "@tb:identifier.taxonVariant": 435054, 
@@ -244,6 +378,8 @@
 }, 
 "Tl2064582": {
 "^ot:originalLabel": "Tetrastigma lenticellatum", 
+"^ot:ottId": 448289, 
+"^ot:ottTaxonName": "Tetrastigma lenticellatum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 623658, 
 "@tb:identifier.taxonVariant": 835154, 
@@ -251,10 +387,14 @@
 }
 }, 
 "Tl2064583": {
-"^ot:originalLabel": "Ampelocissus elephantina"
+"^ot:originalLabel": "Ampelocissus elephantina", 
+"^ot:ottId": 793133, 
+"^ot:ottTaxonName": "Ampelocissus elephantina"
 }, 
 "Tl2064584": {
 "^ot:originalLabel": "Cayratia gracilis", 
+"^ot:ottId": 515813, 
+"^ot:ottTaxonName": "Cayratia gracilis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 623650, 
 "@tb:identifier.taxonVariant": 835127, 
@@ -263,6 +403,8 @@
 }, 
 "Tl2064585": {
 "^ot:originalLabel": "Cissus repanda", 
+"^ot:ottId": 603680, 
+"^ot:ottTaxonName": "Cissus repanda", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 302768, 
 "@tb:identifier.taxonVariant": 351460, 
@@ -272,6 +414,8 @@
 }, 
 "Tl2064586": {
 "^ot:originalLabel": "Cissus reniformis", 
+"^ot:ottId": 913889, 
+"^ot:ottTaxonName": "Cissus reniformis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 144721, 
 "@tb:identifier.taxonVariant": 220857, 
@@ -281,6 +425,8 @@
 }, 
 "Tl2064587": {
 "^ot:originalLabel": "Cissus assamica", 
+"^ot:ottId": 515811, 
+"^ot:ottTaxonName": "Cissus assamica", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 623648, 
 "@tb:identifier.taxonVariant": 835122, 
@@ -289,6 +435,8 @@
 }, 
 "Tl2064588": {
 "^ot:originalLabel": "Rhoicissus rhomboidea", 
+"^ot:ottId": 582635, 
+"^ot:ottTaxonName": "Rhoicissus rhomboidea", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 167054, 
 "@tb:identifier.taxonVariant": 241711, 
@@ -298,6 +446,8 @@
 }, 
 "Tl2064589": {
 "^ot:originalLabel": "Cissus integrifolia", 
+"^ot:ottId": 862166, 
+"^ot:ottTaxonName": "Cissus integrifolia", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 362045, 
 "@tb:identifier.taxonVariant": 390071, 
@@ -307,6 +457,8 @@
 }, 
 "Tl2064590": {
 "^ot:originalLabel": "Cissus vinosa", 
+"^ot:ottId": 388373, 
+"^ot:ottTaxonName": "Cissus vinosa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 144724, 
 "@tb:identifier.taxonVariant": 220863, 
@@ -315,10 +467,14 @@
 }
 }, 
 "Tl2064591": {
-"^ot:originalLabel": "Cissus diffusa"
+"^ot:originalLabel": "Cissus diffusa", 
+"^ot:ottId": 463793, 
+"^ot:ottTaxonName": "Cissus diffusa"
 }, 
 "Tl2064592": {
 "^ot:originalLabel": "Cissus oblonga", 
+"^ot:ottId": 913899, 
+"^ot:ottTaxonName": "Cissus oblonga", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 144717, 
 "@tb:identifier.taxonVariant": 220851, 
@@ -328,6 +484,8 @@
 }, 
 "Tl2064593": {
 "^ot:originalLabel": "Cissus neei", 
+"^ot:ottId": 5233284, 
+"^ot:ottTaxonName": "Cissus neei", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 623640, 
 "@tb:identifier.taxonVariant": 835106, 
@@ -335,19 +493,29 @@
 }
 }, 
 "Tl2064594": {
-"^ot:originalLabel": "Cissus decidua"
+"^ot:originalLabel": "Cissus decidua", 
+"^ot:ottId": 5233278, 
+"^ot:ottTaxonName": "Cissus decidua"
 }, 
 "Tl2064595": {
-"^ot:originalLabel": "Cissus faucicola"
+"^ot:originalLabel": "Cissus faucicola", 
+"^ot:ottId": 463789, 
+"^ot:ottTaxonName": "Cissus faucicola"
 }, 
 "Tl2064596": {
-"^ot:originalLabel": "Cissus polyantha"
+"^ot:originalLabel": "Cissus polyantha", 
+"^ot:ottId": 6044986, 
+"^ot:ottTaxonName": "Cissus polyantha"
 }, 
 "Tl2064597": {
-"^ot:originalLabel": "Cissus leucophlea"
+"^ot:originalLabel": "Cissus leucophlea", 
+"^ot:ottId": 1091329, 
+"^ot:ottTaxonName": "Cissus leucophlea"
 }, 
 "Tl2064598": {
 "^ot:originalLabel": "Cissus hastata", 
+"^ot:ottId": 913903, 
+"^ot:ottTaxonName": "Cissus hastata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 144715, 
 "@tb:identifier.taxonVariant": 220848, 
@@ -357,6 +525,8 @@
 }, 
 "Tl2064599": {
 "^ot:originalLabel": "Cissus anisophylla", 
+"^ot:ottId": 467957, 
+"^ot:ottTaxonName": "Cissus anisophylla", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 302766, 
 "@tb:identifier.taxonVariant": 351457, 
@@ -366,6 +536,8 @@
 }, 
 "Tl2064600": {
 "^ot:originalLabel": "Vitis betulifolia", 
+"^ot:ottId": 568880, 
+"^ot:ottTaxonName": "Vitis betulifolia", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 302805, 
 "@tb:identifier.taxonVariant": 351498, 
@@ -375,6 +547,8 @@
 }, 
 "Tl2064601": {
 "^ot:originalLabel": "Pterisanthes heterantha", 
+"^ot:ottId": 465274, 
+"^ot:ottTaxonName": "Pterisanthes heterantha", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 302791, 
 "@tb:identifier.taxonVariant": 351484, 
@@ -383,10 +557,14 @@
 }
 }, 
 "Tl2064602": {
-"^ot:originalLabel": "Cissus lanea"
+"^ot:originalLabel": "Cissus lanea", 
+"^ot:ottId": 1091331, 
+"^ot:ottTaxonName": "Cissus lanea"
 }, 
 "Tl2064603": {
 "^ot:originalLabel": "Clematicissus opaca", 
+"^ot:ottId": 913895, 
+"^ot:ottTaxonName": "Clematicissus opaca", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 144718, 
 "@tb:identifier.taxonVariant": 220853, 
@@ -396,6 +574,8 @@
 }, 
 "Tl2064604": {
 "^ot:originalLabel": "Cayratia maritima", 
+"^ot:ottId": 438630, 
+"^ot:ottTaxonName": "Cayratia maritima", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 144709, 
 "@tb:identifier.taxonVariant": 220836, 
@@ -405,6 +585,8 @@
 }, 
 "Tl2064605": {
 "^ot:originalLabel": "Cayratia saponaria", 
+"^ot:ottId": 438632, 
+"^ot:ottTaxonName": "Cayratia saponaria", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 144710, 
 "@tb:identifier.taxonVariant": 220838, 
@@ -413,10 +595,14 @@
 }
 }, 
 "Tl2064606": {
-"^ot:originalLabel": "Cissus madecassa"
+"^ot:originalLabel": "Cissus madecassa", 
+"^ot:ottId": 1091327, 
+"^ot:ottTaxonName": "Cissus madecassa"
 }, 
 "Tl2064607": {
 "^ot:originalLabel": "Cissus paraensis", 
+"^ot:ottId": 5233276, 
+"^ot:ottTaxonName": "Cissus paraensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 623668, 
 "@tb:identifier.taxonVariant": 835170, 
@@ -425,6 +611,8 @@
 }, 
 "Tl2064608": {
 "^ot:originalLabel": "Cissus aralioides", 
+"^ot:ottId": 507392, 
+"^ot:ottTaxonName": "Cissus aralioides", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 362041, 
 "@tb:identifier.taxonVariant": 390065, 
@@ -434,6 +622,8 @@
 }, 
 "Tl2064609": {
 "^ot:originalLabel": "Cayratia clematidea", 
+"^ot:ottId": 438641, 
+"^ot:ottTaxonName": "Cayratia clematidea", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 144706, 
 "@tb:identifier.taxonVariant": 220832, 
@@ -443,6 +633,8 @@
 }, 
 "Tl2064610": {
 "^ot:originalLabel": "Cissus phymatocarpa", 
+"^ot:ottId": 810309, 
+"^ot:ottTaxonName": "Cissus phymatocarpa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 362046, 
 "@tb:identifier.taxonVariant": 390072, 
@@ -452,6 +644,8 @@
 }, 
 "Tl2064611": {
 "^ot:originalLabel": "Cyphostemma montagnacii", 
+"^ot:ottId": 773264, 
+"^ot:ottTaxonName": "Cyphostemma montagnacii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 302779, 
 "@tb:identifier.taxonVariant": 351467, 
@@ -461,6 +655,8 @@
 }, 
 "Tl2064612": {
 "^ot:originalLabel": "Cissus trifoliata", 
+"^ot:ottId": 514154, 
+"^ot:ottTaxonName": "Cissus trifoliata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 623674, 
 "@tb:identifier.taxonVariant": 835182, 
@@ -468,16 +664,24 @@
 }
 }, 
 "Tl2064613": {
-"^ot:originalLabel": "Cissus rubiginosa"
+"^ot:originalLabel": "Cissus rubiginosa", 
+"^ot:ottId": 514163, 
+"^ot:ottTaxonName": "Cissus rubiginosa"
 }, 
 "Tl2064614": {
-"^ot:originalLabel": "Cissus rondoensis"
+"^ot:originalLabel": "Cissus rondoensis", 
+"^ot:ottId": 6044999, 
+"^ot:ottTaxonName": "Cissus rondoensis"
 }, 
 "Tl2064615": {
-"^ot:originalLabel": "Cissus oliveri"
+"^ot:originalLabel": "Cissus oliveri", 
+"^ot:ottId": 507384, 
+"^ot:ottTaxonName": "Cissus oliveri"
 }, 
 "Tl2064616": {
 "^ot:originalLabel": "Leea macrophylla", 
+"^ot:ottId": 417317, 
+"^ot:ottTaxonName": "Leea macrophylla", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 302783, 
 "@tb:identifier.taxonVariant": 351475, 
@@ -487,6 +691,8 @@
 }, 
 "Tl2064617": {
 "^ot:originalLabel": "Cissus cactiformis", 
+"^ot:ottId": 507388, 
+"^ot:ottTaxonName": "Cissus cactiformis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 362042, 
 "@tb:identifier.taxonVariant": 390066, 
@@ -496,6 +702,8 @@
 }, 
 "Tl2064618": {
 "^ot:originalLabel": "Cayratia debilis", 
+"^ot:ottId": 660776, 
+"^ot:ottTaxonName": "Cayratia debilis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 623656, 
 "@tb:identifier.taxonVariant": 835143, 
@@ -504,6 +712,8 @@
 }, 
 "Tl2064619": {
 "^ot:originalLabel": "Cissus sterculiifolia", 
+"^ot:ottId": 913884, 
+"^ot:ottTaxonName": "Cissus sterculiifolia", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 144723, 
 "@tb:identifier.taxonVariant": 220862, 
@@ -513,6 +723,8 @@
 }, 
 "Tl2064620": {
 "^ot:originalLabel": "Tetrastigma sichouense", 
+"^ot:ottId": 873765, 
+"^ot:ottTaxonName": "Tetrastigma sichouense", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 623652, 
 "@tb:identifier.taxonVariant": 835133, 
@@ -521,6 +733,8 @@
 }, 
 "Tl2064621": {
 "^ot:originalLabel": "Cissus cornifolia", 
+"^ot:ottId": 507386, 
+"^ot:ottTaxonName": "Cissus cornifolia", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 362043, 
 "@tb:identifier.taxonVariant": 390068, 
@@ -530,6 +744,8 @@
 }, 
 "Tl2064622": {
 "^ot:originalLabel": "Cissus erosa", 
+"^ot:ottId": 862164, 
+"^ot:ottTaxonName": "Cissus erosa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 362044, 
 "@tb:identifier.taxonVariant": 390069, 
@@ -539,6 +755,8 @@
 }, 
 "Tl2064623": {
 "^ot:originalLabel": "Cissus trothae", 
+"^ot:ottId": 810307, 
+"^ot:ottTaxonName": "Cissus trothae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 362053, 
 "@tb:identifier.taxonVariant": 390083, 
@@ -548,6 +766,8 @@
 }, 
 "Tl2064624": {
 "^ot:originalLabel": "Nothocissus spicifera", 
+"^ot:ottId": 302224, 
+"^ot:ottTaxonName": "Nothocissus spicifera", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 288767, 
 "@tb:identifier.taxonVariant": 340624, 
@@ -557,6 +777,8 @@
 }, 
 "Tl2064625": {
 "^ot:originalLabel": "Parthenocissus henryana", 
+"^ot:ottId": 194298, 
+"^ot:ottTaxonName": "Parthenocissus henryana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 178604, 
 "@tb:identifier.taxonVariant": 252031, 
@@ -566,6 +788,8 @@
 }, 
 "Tl2064626": {
 "^ot:originalLabel": "Cissus rhombifolia", 
+"^ot:ottId": 194302, 
+"^ot:ottTaxonName": "Cissus rhombifolia", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 178605, 
 "@tb:identifier.taxonVariant": 252032, 
@@ -575,6 +799,8 @@
 }, 
 "Tl2064627": {
 "^ot:originalLabel": "Leea indica", 
+"^ot:ottId": 600604, 
+"^ot:ottTaxonName": "Leea indica", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 156978, 
 "@tb:identifier.taxonVariant": 232236, 
@@ -583,10 +809,14 @@
 }
 }, 
 "Tl2064628": {
-"^ot:originalLabel": "Cissus aphyllantha"
+"^ot:originalLabel": "Cissus aphyllantha", 
+"^ot:ottId": 463800, 
+"^ot:ottTaxonName": "Cissus aphyllantha"
 }, 
 "Tl2064629": {
 "^ot:originalLabel": "Parthenocissus himalayana", 
+"^ot:ottId": 10050, 
+"^ot:ottTaxonName": "Parthenocissus himalayana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 167057, 
 "@tb:identifier.taxonVariant": 439809, 
@@ -596,6 +826,8 @@
 }, 
 "Tl2064630": {
 "^ot:originalLabel": "Tetrastigma triphyllum", 
+"^ot:ottId": 568890, 
+"^ot:ottTaxonName": "Tetrastigma triphyllum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 302802, 
 "@tb:identifier.taxonVariant": 351494, 
@@ -605,6 +837,8 @@
 }, 
 "Tl2064631": {
 "^ot:originalLabel": "Tetrastigma voinierianum", 
+"^ot:ottId": 568888, 
+"^ot:ottTaxonName": "Tetrastigma voinierianum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 302803, 
 "@tb:identifier.taxonVariant": 351495, 
@@ -614,6 +848,8 @@
 }, 
 "Tl2064632": {
 "^ot:originalLabel": "Cayratia triternata", 
+"^ot:ottId": 269623, 
+"^ot:ottTaxonName": "Cayratia triternata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 623657, 
 "@tb:identifier.taxonVariant": 835149, 
@@ -621,10 +857,14 @@
 }
 }, 
 "Tl2064633": {
-"^ot:originalLabel": "Tetrastigma lanyuense"
+"^ot:originalLabel": "Tetrastigma lanyuense", 
+"^ot:ottId": 1024913, 
+"^ot:ottTaxonName": "Tetrastigma lanyuense"
 }, 
 "Tl2064634": {
 "^ot:originalLabel": "Cissus rostrata", 
+"^ot:ottId": 603658, 
+"^ot:ottTaxonName": "Cissus rostrata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 302769, 
 "@tb:identifier.taxonVariant": 351462, 
@@ -637,6 +877,8 @@
 }, 
 "Tl2064636": {
 "^ot:originalLabel": "Yua thomsonii", 
+"^ot:ottId": 841343, 
+"^ot:ottTaxonName": "Yua thomsonii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 192917, 
 "@tb:identifier.taxonVariant": 264388, 
@@ -646,6 +888,8 @@
 }, 
 "Tl2064637": {
 "^ot:originalLabel": "Cissus stipulata", 
+"^ot:ottId": 5233265, 
+"^ot:ottTaxonName": "Cissus stipulata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 623670, 
 "@tb:identifier.taxonVariant": 835172, 
@@ -654,6 +898,8 @@
 }, 
 "Tl2064638": {
 "^ot:originalLabel": "Tetrastigma glabratum", 
+"^ot:ottId": 398400, 
+"^ot:ottTaxonName": "Tetrastigma glabratum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 623662, 
 "@tb:identifier.taxonVariant": 835159, 
@@ -662,6 +908,8 @@
 }, 
 "Tl2064639": {
 "^ot:originalLabel": "Cissus amazonica", 
+"^ot:ottId": 898875, 
+"^ot:ottTaxonName": "Cissus amazonica", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 375391, 
 "@tb:identifier.taxonVariant": 397958, 
@@ -670,13 +918,19 @@
 }
 }, 
 "Tl2064640": {
-"^ot:originalLabel": "Cissus pseudoguerkeana"
+"^ot:originalLabel": "Cissus pseudoguerkeana", 
+"^ot:ottId": 1091339, 
+"^ot:ottTaxonName": "Cissus pseudoguerkeana"
 }, 
 "Tl2064641": {
-"^ot:originalLabel": "Cyphostemma bainesii "
+"^ot:originalLabel": "Cyphostemma bainesii ", 
+"^ot:ottId": 773364, 
+"^ot:ottTaxonName": "Cyphostemma bainesii"
 }, 
 "Tl2064642": {
 "^ot:originalLabel": "Cissus tuberosa", 
+"^ot:ottId": 752486, 
+"^ot:ottTaxonName": "Cissus tuberosa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 291492, 
 "@tb:identifier.taxonVariant": 342754, 
@@ -688,13 +942,19 @@
 "^ot:originalLabel": "Cissus polpunea"
 }, 
 "Tl2064644": {
-"^ot:originalLabel": "Cyphostemma duparquetii"
+"^ot:originalLabel": "Cyphostemma duparquetii", 
+"^ot:ottId": 515804, 
+"^ot:ottTaxonName": "Cyphostemma duparquetii"
 }, 
 "Tl2064645": {
-"^ot:originalLabel": "Cissus microcarpa"
+"^ot:originalLabel": "Cissus microcarpa", 
+"^ot:ottId": 1091325, 
+"^ot:ottTaxonName": "Cissus microcarpa"
 }, 
 "Tl2064646": {
 "^ot:originalLabel": "Parthenocissus vitacea", 
+"^ot:ottId": 235833, 
+"^ot:ottTaxonName": "Parthenocissus vitacea", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 362067, 
 "@tb:identifier.taxonVariant": 835158, 
@@ -704,13 +964,19 @@
 "^skos:prefLabel": "Parthenocissus cf. vitacea 7312"
 }, 
 "Tl2064647": {
-"^ot:originalLabel": "Ampelocissus obtusata"
+"^ot:originalLabel": "Ampelocissus obtusata", 
+"^ot:ottId": 240262, 
+"^ot:ottTaxonName": "Ampelocissus obtusata"
 }, 
 "Tl2064648": {
-"^ot:originalLabel": "Vitis mengziensis"
+"^ot:originalLabel": "Vitis mengziensis", 
+"^ot:ottId": 941927, 
+"^ot:ottTaxonName": "Vitis mengziensis"
 }, 
 "Tl2064649": {
 "^ot:originalLabel": "Cissus trianae", 
+"^ot:ottId": 665801, 
+"^ot:ottTaxonName": "Cissus trianae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 623675, 
 "@tb:identifier.taxonVariant": 835188, 
@@ -719,6 +985,8 @@
 }, 
 "Tl2064650": {
 "^ot:originalLabel": "Cissus sylvicola", 
+"^ot:ottId": 810305, 
+"^ot:ottTaxonName": "Cissus sylvicola", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 362052, 
 "@tb:identifier.taxonVariant": 390082, 
@@ -728,6 +996,8 @@
 }, 
 "Tl2064651": {
 "^ot:originalLabel": "Ampelopsis cantoniensis", 
+"^ot:ottId": 769612, 
+"^ot:ottTaxonName": "Nekemias cantoniensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 302755, 
 "@tb:identifier.taxonVariant": 351445, 
@@ -736,13 +1006,19 @@
 }
 }, 
 "Tl2064652": {
-"^ot:originalLabel": "Tetrastigma pachyphyllum"
+"^ot:originalLabel": "Tetrastigma pachyphyllum", 
+"^ot:ottId": 448295, 
+"^ot:ottTaxonName": "Tetrastigma pachyphyllum"
 }, 
 "Tl2064653": {
-"^ot:originalLabel": "Cissus sagittifera"
+"^ot:originalLabel": "Cissus sagittifera", 
+"^ot:ottId": 514165, 
+"^ot:ottTaxonName": "Cissus sagittifera"
 }, 
 "Tl2064654": {
 "^ot:originalLabel": "Tetrastigma loheri", 
+"^ot:ottId": 448291, 
+"^ot:ottTaxonName": "Tetrastigma loheri", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 623649, 
 "@tb:identifier.taxonVariant": 835126, 
@@ -750,10 +1026,14 @@
 }
 }, 
 "Tl2064655": {
-"^ot:originalLabel": "Cyphostemma jiguu"
+"^ot:originalLabel": "Cyphostemma jiguu", 
+"^ot:ottId": 514167, 
+"^ot:ottTaxonName": "Cyphostemma jiguu"
 }, 
 "Tl2064656": {
 "^ot:originalLabel": "Ampelopsis bodinieri", 
+"^ot:ottId": 769615, 
+"^ot:ottTaxonName": "Ampelopsis bodinieri", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 302754, 
 "@tb:identifier.taxonVariant": 485743, 
@@ -763,6 +1043,8 @@
 }, 
 "Tl2064657": {
 "^ot:originalLabel": "Cissus apendiculata", 
+"^ot:ottId": 5233279, 
+"^ot:ottTaxonName": "Cissus apendiculata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 623645, 
 "@tb:identifier.taxonVariant": 835114, 
@@ -771,6 +1053,8 @@
 }, 
 "Tl2064658": {
 "^ot:originalLabel": "Cayratia pedata", 
+"^ot:ottId": 603858, 
+"^ot:ottTaxonName": "Cayratia pedata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 302762, 
 "@tb:identifier.taxonVariant": 351453, 
@@ -780,6 +1064,8 @@
 }, 
 "Tl2064659": {
 "^ot:originalLabel": "Tetrastigma obtectum", 
+"^ot:ottId": 994401, 
+"^ot:ottTaxonName": "Tetrastigma obtectum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 302796, 
 "@tb:identifier.taxonVariant": 485756, 
@@ -788,13 +1074,19 @@
 }
 }, 
 "Tl2064660": {
-"^ot:originalLabel": "Cissus granulosa"
+"^ot:originalLabel": "Cissus granulosa", 
+"^ot:ottId": 665799, 
+"^ot:ottTaxonName": "Cissus granulosa"
 }, 
 "Tl2064661": {
-"^ot:originalLabel": "Cissus polita"
+"^ot:originalLabel": "Cissus polita", 
+"^ot:ottId": 1091319, 
+"^ot:ottTaxonName": "Cissus polita"
 }, 
 "Tl2064662": {
 "^ot:originalLabel": "Vitis vinifera", 
+"^ot:ottId": 756728, 
+"^ot:ottTaxonName": "Vitis vinifera", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 621749, 
 "@tb:identifier.taxonVariant": 834774, 
@@ -804,6 +1096,8 @@
 }, 
 "Tl2064663": {
 "^ot:originalLabel": "Cyphostemma horombense", 
+"^ot:ottId": 269631, 
+"^ot:ottTaxonName": "Cyphostemma horombense", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 623659, 
 "@tb:identifier.taxonVariant": 835155, 
@@ -812,6 +1106,8 @@
 }, 
 "Tl2064664": {
 "^ot:originalLabel": "Vitis rotundifolia", 
+"^ot:ottId": 650748, 
+"^ot:ottTaxonName": "Vitis rotundifolia", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 109709, 
 "@tb:identifier.taxonVariant": 187952, 
@@ -820,10 +1116,14 @@
 }
 }, 
 "Tl2064665": {
-"^ot:originalLabel": "Cissus microdonta"
+"^ot:originalLabel": "Cissus microdonta", 
+"^ot:ottId": 1091323, 
+"^ot:ottTaxonName": "Cissus microdonta"
 }, 
 "Tl2064666": {
 "^ot:originalLabel": "Cissus repens", 
+"^ot:ottId": 913887, 
+"^ot:ottTaxonName": "Cissus repens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 144722, 
 "@tb:identifier.taxonVariant": 220859, 
@@ -832,10 +1132,14 @@
 }
 }, 
 "Tl2064667": {
-"^ot:originalLabel": "Cissus smithiana"
+"^ot:originalLabel": "Cissus smithiana", 
+"^ot:ottId": 6044918, 
+"^ot:ottTaxonName": "Cissus glaucophylla"
 }, 
 "Tl2064668": {
 "^ot:originalLabel": "Cissus incisa", 
+"^ot:ottId": 467954, 
+"^ot:ottTaxonName": "Cissus incisa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 302767, 
 "@tb:identifier.taxonVariant": 351459, 
@@ -845,6 +1149,8 @@
 }, 
 "Tl2064669": {
 "^ot:originalLabel": "Parthenocissus chinensis", 
+"^ot:ottId": 235831, 
+"^ot:ottTaxonName": "Parthenocissus chinensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 362058, 
 "@tb:identifier.taxonVariant": 390088, 
@@ -854,6 +1160,8 @@
 }, 
 "Tl2064670": {
 "^ot:originalLabel": "Cissus cardiophylla", 
+"^ot:ottId": 913905, 
+"^ot:ottTaxonName": "Cissus cardiophylla", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 144714, 
 "@tb:identifier.taxonVariant": 220846, 
@@ -863,6 +1171,8 @@
 }, 
 "Tl2064671": {
 "^ot:originalLabel": "Cissus nodosa", 
+"^ot:ottId": 269637, 
+"^ot:ottTaxonName": "Cissus nodosa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 623672, 
 "@tb:identifier.taxonVariant": 835177, 
@@ -871,6 +1181,8 @@
 }, 
 "Tl2064672": {
 "^ot:originalLabel": "Cissus striata", 
+"^ot:ottId": 773352, 
+"^ot:ottTaxonName": "Cissus striata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 302776, 
 "@tb:identifier.taxonVariant": 351463, 
@@ -880,6 +1192,8 @@
 }, 
 "Tl2064673": {
 "^ot:originalLabel": "Cissus verticillata", 
+"^ot:ottId": 578906, 
+"^ot:ottTaxonName": "Cissus verticillata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 255770, 
 "@tb:identifier.taxonVariant": 782867, 
@@ -889,6 +1203,8 @@
 }, 
 "Tl2064674": {
 "^ot:originalLabel": "Cissus obliqua", 
+"^ot:ottId": 1091321, 
+"^ot:ottTaxonName": "Cissus obliqua", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 623647, 
 "@tb:identifier.taxonVariant": 835121, 
@@ -897,6 +1213,8 @@
 }, 
 "Tl2064675": {
 "^ot:originalLabel": "Cissus adnata", 
+"^ot:ottId": 438647, 
+"^ot:ottTaxonName": "Cissus adnata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 144712, 
 "@tb:identifier.taxonVariant": 220840, 
@@ -906,6 +1224,8 @@
 }, 
 "Tl2064676": {
 "^ot:originalLabel": "Vitis popenoei", 
+"^ot:ottId": 235835, 
+"^ot:ottTaxonName": "Vitis popenoei", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 362062, 
 "@tb:identifier.taxonVariant": 390093, 
@@ -915,6 +1235,8 @@
 }, 
 "Tl2064677": {
 "^ot:originalLabel": "Cayratia imerinensis", 
+"^ot:ottId": 269625, 
+"^ot:ottTaxonName": "Cayratia imerinensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 623663, 
 "@tb:identifier.taxonVariant": 835160, 
@@ -923,6 +1245,8 @@
 }, 
 "Tl2064678": {
 "^ot:originalLabel": "Parthenocissus heptaphylla", 
+"^ot:ottId": 941920, 
+"^ot:ottTaxonName": "Parthenocissus heptaphylla", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 623660, 
 "@tb:identifier.taxonVariant": 835156, 
@@ -931,6 +1255,8 @@
 }, 
 "Tl2064679": {
 "^ot:originalLabel": "Ampelocissus javalensis", 
+"^ot:ottId": 246514, 
+"^ot:ottTaxonName": "Ampelocissus javalensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 302749, 
 "@tb:identifier.taxonVariant": 351441, 
@@ -940,6 +1266,8 @@
 }, 
 "Tl2064680": {
 "^ot:originalLabel": "Vitis riparia", 
+"^ot:ottId": 785481, 
+"^ot:ottTaxonName": "Vitis riparia", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 30782, 
 "@tb:identifier.taxonVariant": 71873, 
@@ -949,6 +1277,8 @@
 }, 
 "Tl2064681": {
 "^ot:originalLabel": "Cissus simsiana", 
+"^ot:ottId": 810301, 
+"^ot:ottTaxonName": "Cissus simsiana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 362050, 
 "@tb:identifier.taxonVariant": 390079, 
@@ -957,10 +1287,14 @@
 }
 }, 
 "Tl2064682": {
-"^ot:originalLabel": "Cyphostemma adenocaule"
+"^ot:originalLabel": "Cyphostemma adenocaule", 
+"^ot:ottId": 900761, 
+"^ot:ottTaxonName": "Cyphostemma adenocaule"
 }, 
 "Tl2064683": {
 "^ot:originalLabel": "Cissus duarteana", 
+"^ot:ottId": 5233274, 
+"^ot:ottTaxonName": "Cissus duarteana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 623638, 
 "@tb:identifier.taxonVariant": 835101, 
@@ -969,6 +1303,8 @@
 }, 
 "Tl2064684": {
 "^ot:originalLabel": "Ampelocissus gracilis", 
+"^ot:ottId": 369618, 
+"^ot:ottTaxonName": "Ampelocissus gracilis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 302748, 
 "@tb:identifier.taxonVariant": 351439, 
@@ -977,10 +1313,14 @@
 }
 }, 
 "Tl2064685": {
-"^ot:originalLabel": "Cissus tiliifolia"
+"^ot:originalLabel": "Cissus tiliifolia", 
+"^ot:ottId": 6045023, 
+"^ot:ottTaxonName": "Cissus tiliifolia"
 }, 
 "Tl2064686": {
 "^ot:originalLabel": "Cayratia acris", 
+"^ot:ottId": 964515, 
+"^ot:ottTaxonName": "Cayratia acris", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 144704, 
 "@tb:identifier.taxonVariant": 220829, 
@@ -990,6 +1330,8 @@
 }, 
 "Tl2064687": {
 "^ot:originalLabel": "Cyphostemma simulans", 
+"^ot:ottId": 417325, 
+"^ot:ottTaxonName": "Cyphostemma simulans", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 302780, 
 "@tb:identifier.taxonVariant": 351469, 
@@ -999,6 +1341,8 @@
 }, 
 "Tl2064688": {
 "^ot:originalLabel": "Leea spinea", 
+"^ot:ottId": 269641, 
+"^ot:ottTaxonName": "Leea spinea", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 609256, 
 "@tb:identifier.taxonVariant": 813843, 
@@ -1006,13 +1350,19 @@
 }
 }, 
 "Tl2064689": {
-"^ot:originalLabel": "Ampelocissus erdwendbergiana"
+"^ot:originalLabel": "Ampelocissus erdwendbergiana", 
+"^ot:ottId": 1042193, 
+"^ot:ottTaxonName": "Ampelocissus erdwendbergiana"
 }, 
 "Tl2064690": {
-"^ot:originalLabel": "Cissus biformifolia"
+"^ot:originalLabel": "Cissus biformifolia", 
+"^ot:ottId": 463797, 
+"^ot:ottTaxonName": "Cissus biformifolia"
 }, 
 "Tl2064691": {
 "^ot:originalLabel": "Leea guineensis", 
+"^ot:ottId": 355961, 
+"^ot:ottTaxonName": "Leea guineensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 43551, 
 "@tb:identifier.taxonVariant": 101863, 
@@ -1021,13 +1371,17 @@
 }
 }, 
 "Tl2064692": {
-"^ot:originalLabel": "Cissus barbeyana"
+"^ot:originalLabel": "Cissus barbeyana", 
+"^ot:ottId": 6044867, 
+"^ot:ottTaxonName": "Cissus barbeyana"
 }, 
 "Tl2064693": {
 "^ot:originalLabel": "Yua austro orientalis"
 }, 
 "Tl2064694": {
 "^ot:originalLabel": "Parthenocissus tricuspidata", 
+"^ot:ottId": 417328, 
+"^ot:ottTaxonName": "Parthenocissus tricuspidata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 302787, 
 "@tb:identifier.taxonVariant": 351478, 
@@ -1037,6 +1391,8 @@
 }, 
 "Tl2064695": {
 "^ot:originalLabel": "Cissus tiliacea", 
+"^ot:ottId": 5233267, 
+"^ot:ottTaxonName": "Cissus tiliacea", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 623646, 
 "@tb:identifier.taxonVariant": 835115, 
@@ -1044,16 +1400,24 @@
 }
 }, 
 "Tl2064696": {
-"^ot:originalLabel": "Cayratia cordifolia"
+"^ot:originalLabel": "Cayratia cordifolia", 
+"^ot:ottId": 269629, 
+"^ot:ottTaxonName": "Cayratia cordifolia"
 }, 
 "Tl2064697": {
-"^ot:originalLabel": "Cissus paullinifolia"
+"^ot:originalLabel": "Cissus paullinifolia", 
+"^ot:ottId": 5233271, 
+"^ot:ottTaxonName": "Cissus paullinifolia"
 }, 
 "Tl2064698": {
-"^ot:originalLabel": "Cissus elongata"
+"^ot:originalLabel": "Cissus elongata", 
+"^ot:ottId": 695164, 
+"^ot:ottTaxonName": "Cissus elongata"
 }, 
 "Tl2064699": {
 "^ot:originalLabel": "Cissus spinosa", 
+"^ot:ottId": 5233269, 
+"^ot:ottTaxonName": "Cissus spinosa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 623642, 
 "@tb:identifier.taxonVariant": 835108, 
@@ -1062,6 +1426,8 @@
 }, 
 "Tl2064700": {
 "^ot:originalLabel": "Vitis labrusca", 
+"^ot:ottId": 683964, 
+"^ot:ottTaxonName": "Vitis labrusca", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 109715, 
 "@tb:identifier.taxonVariant": 187971, 
@@ -1070,10 +1436,14 @@
 }
 }, 
 "Tl2064701": {
-"^ot:originalLabel": "Cissus quarrei"
+"^ot:originalLabel": "Cissus quarrei", 
+"^ot:ottId": 514159, 
+"^ot:ottTaxonName": "Cissus quarrei"
 }, 
 "Tl2064702": {
 "^ot:originalLabel": "Ampelocissus costaricensis", 
+"^ot:ottId": 369605, 
+"^ot:ottTaxonName": "Ampelocissus costaricensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 302745, 
 "@tb:identifier.taxonVariant": 351433, 
@@ -1082,10 +1452,14 @@
 }
 }, 
 "Tl2064703": {
-"^ot:originalLabel": "Cissus annamica"
+"^ot:originalLabel": "Cissus annamica", 
+"^ot:ottId": 463804, 
+"^ot:ottTaxonName": "Cissus annamica"
 }, 
 "Tl2064704": {
 "^ot:originalLabel": "Pterisanthes stonei", 
+"^ot:ottId": 994414, 
+"^ot:ottTaxonName": "Pterisanthes stonei", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 302792, 
 "@tb:identifier.taxonVariant": 351486, 
@@ -1095,6 +1469,8 @@
 }, 
 "Tl2064705": {
 "^ot:originalLabel": "Leea aculeata", 
+"^ot:ottId": 417323, 
+"^ot:ottTaxonName": "Leea aculeata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 302781, 
 "@tb:identifier.taxonVariant": 351470, 
@@ -1103,13 +1479,19 @@
 }
 }, 
 "Tl2064706": {
-"^ot:originalLabel": "Vitis vulpina"
+"^ot:originalLabel": "Vitis vulpina", 
+"^ot:ottId": 602495, 
+"^ot:ottTaxonName": "Vitis vulpina"
 }, 
 "Tl2064707": {
-"^ot:originalLabel": "Cissus floribunda"
+"^ot:originalLabel": "Cissus floribunda", 
+"^ot:ottId": 463791, 
+"^ot:ottTaxonName": "Cissus floribunda"
 }, 
 "Tl2064708": {
 "^ot:originalLabel": "Cissus bahiensis", 
+"^ot:ottId": 5233281, 
+"^ot:ottTaxonName": "Cissus bahiensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 623636, 
 "@tb:identifier.taxonVariant": 835099, 
@@ -1118,6 +1500,8 @@
 }, 
 "Tl2064709": {
 "^ot:originalLabel": "Cissus blanchetiana", 
+"^ot:ottId": 5233285, 
+"^ot:ottTaxonName": "Cissus blanchetiana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 623639, 
 "@tb:identifier.taxonVariant": 835105, 
@@ -1126,6 +1510,8 @@
 }, 
 "Tl2064710": {
 "^ot:originalLabel": "Cissus wenshanensis", 
+"^ot:ottId": 269633, 
+"^ot:ottTaxonName": "Cissus wenshanensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 623673, 
 "@tb:identifier.taxonVariant": 835181, 
@@ -1134,6 +1520,8 @@
 }, 
 "Tl2064711": {
 "^ot:originalLabel": "Cissus ulmifolia", 
+"^ot:ottId": 457246, 
+"^ot:ottTaxonName": "Cissus ulmifolia", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 362054, 
 "@tb:identifier.taxonVariant": 390084, 
@@ -1143,6 +1531,8 @@
 }, 
 "Tl2064712": {
 "^ot:originalLabel": "Cissus hypoglauca", 
+"^ot:ottId": 913901, 
+"^ot:ottTaxonName": "Cissus hypoglauca", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 144716, 
 "@tb:identifier.taxonVariant": 220850, 
@@ -1152,6 +1542,8 @@
 }, 
 "Tl2064713": {
 "^ot:originalLabel": "Cissus sciaphila", 
+"^ot:ottId": 810315, 
+"^ot:ottTaxonName": "Cissus sciaphila", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 362049, 
 "@tb:identifier.taxonVariant": 390077, 
@@ -1161,6 +1553,8 @@
 }, 
 "Tl2064714": {
 "^ot:originalLabel": "Cissus subtetragona", 
+"^ot:ottId": 269635, 
+"^ot:ottTaxonName": "Cissus subtetragona", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 600994, 
 "@tb:identifier.taxonVariant": 801254, 
@@ -1169,6 +1563,8 @@
 }, 
 "Tl2064715": {
 "^ot:originalLabel": "Cissus descoingsii", 
+"^ot:ottId": 5233273, 
+"^ot:ottTaxonName": "Cissus descoingsii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 623666, 
 "@tb:identifier.taxonVariant": 835168, 
@@ -1177,6 +1573,8 @@
 }, 
 "Tl2064716": {
 "^ot:originalLabel": "Cissus araguainensis", 
+"^ot:ottId": 5233280, 
+"^ot:ottTaxonName": "Cissus araguainensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 623635, 
 "@tb:identifier.taxonVariant": 835098, 
@@ -1185,6 +1583,8 @@
 }, 
 "Tl2064717": {
 "^ot:originalLabel": "Cissus campestris", 
+"^ot:ottId": 5233277, 
+"^ot:ottTaxonName": "Cissus campestris", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 623637, 
 "@tb:identifier.taxonVariant": 835100, 
@@ -1193,6 +1593,8 @@
 }, 
 "Tl2064718": {
 "^ot:originalLabel": "Cissus discolor", 
+"^ot:ottId": 901764, 
+"^ot:ottTaxonName": "Cissus discolor", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 156977, 
 "@tb:identifier.taxonVariant": 232234, 
@@ -1202,6 +1604,8 @@
 }, 
 "Tl2064719": {
 "^ot:originalLabel": "Parthenocissus quinquefolia", 
+"^ot:ottId": 329904, 
+"^ot:ottTaxonName": "Parthenocissus quinquefolia", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 50728, 
 "@tb:identifier.taxonVariant": 120123, 
@@ -1210,10 +1614,14 @@
 }
 }, 
 "Tl2064720": {
-"^ot:originalLabel": "Ampelocissus africana"
+"^ot:originalLabel": "Ampelocissus africana", 
+"^ot:ottId": 820261, 
+"^ot:ottTaxonName": "Ampelocissus africana"
 }, 
 "Tl2064721": {
 "^ot:originalLabel": "Ampelocissus filipes", 
+"^ot:ottId": 246539, 
+"^ot:ottTaxonName": "Ampelocissus filipes", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 302747, 
 "@tb:identifier.taxonVariant": 351437, 
@@ -1223,6 +1631,8 @@
 }, 
 "Tl2064722": {
 "^ot:originalLabel": "Cissus surinamensis", 
+"^ot:ottId": 5233266, 
+"^ot:ottTaxonName": "Cissus surinamensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 623644, 
 "@tb:identifier.taxonVariant": 835113, 
@@ -1231,6 +1641,8 @@
 }, 
 "Tl2064723": {
 "^ot:originalLabel": "Tetrastigma pyriforme", 
+"^ot:ottId": 448297, 
+"^ot:ottTaxonName": "Tetrastigma pyriforme", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 623651, 
 "@tb:identifier.taxonVariant": 835132, 
@@ -1239,6 +1651,8 @@
 }, 
 "Tl2064724": {
 "^ot:originalLabel": "Ampelopsis chaffanjonii", 
+"^ot:ottId": 769608, 
+"^ot:ottTaxonName": "Nekemias chaffanjonii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 623661, 
 "@tb:identifier.taxonVariant": 835157, 
@@ -1247,10 +1661,14 @@
 }
 }, 
 "Tl2064725": {
-"^ot:originalLabel": "Cissus javana"
+"^ot:originalLabel": "Cissus javana", 
+"^ot:ottId": 665797, 
+"^ot:ottTaxonName": "Cissus javana"
 }, 
 "Tl2064726": {
 "^ot:originalLabel": "Vitis thunbergii", 
+"^ot:ottId": 175164, 
+"^ot:ottTaxonName": "Vitis thunbergii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 148034, 
 "@tb:identifier.taxonVariant": 435055, 
@@ -1259,10 +1677,14 @@
 }
 }, 
 "Tl2064727": {
-"^ot:originalLabel": "Tetrastigma hemsleyanum"
+"^ot:originalLabel": "Tetrastigma hemsleyanum", 
+"^ot:ottId": 1024906, 
+"^ot:ottTaxonName": "Tetrastigma hemsleyanum"
 }, 
 "Tl2064728": {
 "^ot:originalLabel": "Cissus albiporcata", 
+"^ot:ottId": 507390, 
+"^ot:ottTaxonName": "Cissus albiporcata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 362040, 
 "@tb:identifier.taxonVariant": 390064, 
@@ -1272,6 +1694,8 @@
 }, 
 "Tl2064729": {
 "^ot:originalLabel": "Cissus producta", 
+"^ot:ottId": 810311, 
+"^ot:ottTaxonName": "Cissus producta", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 362047, 
 "@tb:identifier.taxonVariant": 390073, 
@@ -1281,6 +1705,8 @@
 }, 
 "Tl2064730": {
 "^ot:originalLabel": "Cissus antarctica", 
+"^ot:ottId": 438649, 
+"^ot:ottTaxonName": "Cissus antarctica", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 144713, 
 "@tb:identifier.taxonVariant": 220842, 
@@ -1290,6 +1716,8 @@
 }, 
 "Tl2064731": {
 "^ot:originalLabel": "Cayratia eurynema", 
+"^ot:ottId": 438634, 
+"^ot:ottTaxonName": "Cayratia eurynema", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 144707, 
 "@tb:identifier.taxonVariant": 220833, 
@@ -1299,6 +1727,8 @@
 }, 
 "Tl2064732": {
 "^ot:originalLabel": "Parthenocissus laetevirens", 
+"^ot:ottId": 941913, 
+"^ot:ottTaxonName": "Parthenocissus laetevirens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 623654, 
 "@tb:identifier.taxonVariant": 835138, 
@@ -1307,6 +1737,8 @@
 }, 
 "Tl2064733": {
 "^ot:originalLabel": "Tetrastigma petraeum", 
+"^ot:ottId": 388380, 
+"^ot:ottTaxonName": "Tetrastigma petraeum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 144727, 
 "@tb:identifier.taxonVariant": 220868, 
@@ -1316,6 +1748,8 @@
 }, 
 "Tl2064734": {
 "^ot:originalLabel": "Rhoicissus digitata", 
+"^ot:ottId": 582648, 
+"^ot:ottTaxonName": "Rhoicissus digitata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 167055, 
 "@tb:identifier.taxonVariant": 241712, 
@@ -1325,6 +1759,8 @@
 }, 
 "Tl2064735": {
 "^ot:originalLabel": "Cissus tweediana", 
+"^ot:ottId": 302228, 
+"^ot:ottTaxonName": "Cissus tweediana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 288769, 
 "@tb:identifier.taxonVariant": 340627, 
@@ -1333,10 +1769,14 @@
 }
 }, 
 "Tl2064736": {
-"^ot:originalLabel": "Cissus bosseri"
+"^ot:originalLabel": "Cissus bosseri", 
+"^ot:ottId": 6044872, 
+"^ot:ottTaxonName": "Cissus bosseri"
 }, 
 "Tl2064737": {
 "^ot:originalLabel": "Cyphostemma maranguense", 
+"^ot:ottId": 235820, 
+"^ot:ottTaxonName": "Cyphostemma maranguense", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 362056, 
 "@tb:identifier.taxonVariant": 390086, 
@@ -1346,6 +1786,8 @@
 }, 
 "Tl2064738": {
 "^ot:originalLabel": "Cissus pulcherrima", 
+"^ot:ottId": 5233282, 
+"^ot:ottTaxonName": "Cissus pulcherrima", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 623653, 
 "@tb:identifier.taxonVariant": 835134, 
@@ -1354,6 +1796,8 @@
 }, 
 "Tl2064739": {
 "^ot:originalLabel": "Cissus quadrangularis", 
+"^ot:ottId": 901767, 
+"^ot:ottTaxonName": "Cissus quadrangularis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 156976, 
 "@tb:identifier.taxonVariant": 232230, 
@@ -1363,6 +1807,8 @@
 }, 
 "Tl2064740": {
 "^ot:originalLabel": "Ampelocissus thyrsiflora", 
+"^ot:ottId": 292770, 
+"^ot:ottTaxonName": "Ampelocissus thyrsiflora", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 129203, 
 "@tb:identifier.taxonVariant": 206741, 
@@ -1372,6 +1818,8 @@
 }, 
 "Tl2064741": {
 "^ot:originalLabel": "Ampelopsis rubifolia", 
+"^ot:ottId": 515807, 
+"^ot:ottTaxonName": "Nekemias rubifolia", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 623655, 
 "@tb:identifier.taxonVariant": 835139, 
@@ -1380,6 +1828,8 @@
 }, 
 "Tl2064742": {
 "^ot:originalLabel": "Rhoicissus tridentata", 
+"^ot:ottId": 417488, 
+"^ot:ottTaxonName": "Rhoicissus tridentata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 288768, 
 "@tb:identifier.taxonVariant": 340625, 
@@ -1389,6 +1839,8 @@
 }, 
 "Tl2064743": {
 "^ot:originalLabel": "Cayratia japonica", 
+"^ot:ottId": 438636, 
+"^ot:ottTaxonName": "Cayratia japonica", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 144708, 
 "@tb:identifier.taxonVariant": 220834, 
@@ -1398,6 +1850,8 @@
 }, 
 "Tl2064744": {
 "^ot:originalLabel": "Cayratia trifolia", 
+"^ot:ottId": 438626, 
+"^ot:ottTaxonName": "Cayratia trifolia", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 144711, 
 "@tb:identifier.taxonVariant": 220839, 
@@ -1407,6 +1861,8 @@
 }, 
 "Tl2064745": {
 "^ot:originalLabel": "Cissus gongylodes", 
+"^ot:ottId": 1091333, 
+"^ot:ottTaxonName": "Cissus gongylodes", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 623667, 
 "@tb:identifier.taxonVariant": 835169, 
@@ -1414,10 +1870,14 @@
 }
 }, 
 "Tl2064746": {
-"^ot:originalLabel": "Cissus pileata"
+"^ot:originalLabel": "Cissus pileata", 
+"^ot:ottId": 665803, 
+"^ot:ottTaxonName": "Cissus pileata"
 }, 
 "Tl2064747": {
 "^ot:originalLabel": "Cyphostemma kilimandscharicum", 
+"^ot:ottId": 235823, 
+"^ot:ottTaxonName": "Cyphostemma kilimandscharicum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 362055, 
 "@tb:identifier.taxonVariant": 390085, 
@@ -1426,13 +1886,19 @@
 }
 }, 
 "Tl2064748": {
-"^ot:originalLabel": "Ampelocissus acapulcensis"
+"^ot:originalLabel": "Ampelocissus acapulcensis", 
+"^ot:ottId": 1042191, 
+"^ot:ottTaxonName": "Ampelocissus acapulcensis"
 }, 
 "Tl2064749": {
-"^ot:originalLabel": "Cissus rhodotricha"
+"^ot:originalLabel": "Cissus rhodotricha", 
+"^ot:ottId": 514161, 
+"^ot:ottTaxonName": "Cissus rhodotricha"
 }, 
 "Tl2064750": {
 "^ot:originalLabel": "Cayratia mollissima", 
+"^ot:ottId": 618151, 
+"^ot:ottTaxonName": "Cayratia mollissima", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 302761, 
 "@tb:identifier.taxonVariant": 351451, 
@@ -1442,6 +1908,8 @@
 }, 
 "Tl2064751": {
 "^ot:originalLabel": "Cyphostemma mappia", 
+"^ot:ottId": 773262, 
+"^ot:ottTaxonName": "Cyphostemma mappia", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 302778, 
 "@tb:identifier.taxonVariant": 351466, 
@@ -1450,7 +1918,9 @@
 }
 }, 
 "Tl2064752": {
-"^ot:originalLabel": "Cissus diffusiflora"
+"^ot:originalLabel": "Cissus diffusiflora", 
+"^ot:ottId": 463795, 
+"^ot:ottTaxonName": "Cissus diffusiflora"
 }
 }
 }
@@ -1468,7 +1938,18 @@
 "Tr91919": {
 "@label": "RAxML", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:changesCount", 
+"^ot:curatedType": "Maximum likelihood ", 
+"^ot:inGroupClade": "Tn13630642", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn13630628", 
+"^ot:specifiedRoot": "Tn13630628", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 191, 
 "^tb:quality.tree": "Unrated", 
@@ -4526,7 +5007,18 @@
 "Tr91920": {
 "@label": "BEAST dated", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:changesCount", 
+"^ot:curatedType": "Maximum likelihood ", 
+"^ot:inGroupClade": "Tn13631052", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn13631197", 
+"^ot:specifiedRoot": "Tn13631197", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 191, 
 "^tb:quality.tree": "Unrated", 
