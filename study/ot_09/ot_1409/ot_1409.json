@@ -56,16 +56,95 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2018-06-25T00:09:26.948Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "Mammals"
 }, 
-"^ot:curatorName": "sbyrum", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2018-06-25T00:09:26.948Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"sbyrum"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S17602"
 }, 
+"^ot:focalCladeOTTTaxonName": "", 
 "^ot:otusElementOrder": [
 "Tls44468"
 ], 
@@ -75,6 +154,7 @@
 }, 
 "^ot:studyPublicationReference": "Rojas D., Warsi O., & Davalos L.M. 2016. Bats (Chiroptera: Noctilionoidea) challenge a recent origin of extant neotropical diversity. Systematic Biology, 65(3): 432-448.", 
 "^ot:studyYear": 2016, 
+"^ot:tag": [], 
 "^ot:taxonLinkPrefixes": {
 "@ubio": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:", 
 "@uniprot": "http://purl.uniprot.org/taxonomy/"
@@ -104,6 +184,8 @@
 "otuById": {
 "Tl1858867": {
 "^ot:originalLabel": "Artibeus hirsutus", 
+"^ot:ottId": 805978, 
+"^ot:ottTaxonName": "Artibeus hirsutus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 2424, 
 "@tb:identifier.taxonVariant": 5771, 
@@ -113,6 +195,8 @@
 }, 
 "Tl1858868": {
 "^ot:originalLabel": "Carollia castanea", 
+"^ot:ottId": 941606, 
+"^ot:ottTaxonName": "Carollia castanea", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5079, 
 "@tb:identifier.taxonVariant": 12323, 
@@ -122,6 +206,8 @@
 }, 
 "Tl1858869": {
 "^ot:originalLabel": "Lonchophylla chocoana", 
+"^ot:ottId": 471374, 
+"^ot:ottTaxonName": "Lonchophylla chocoana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 215449, 
 "@tb:identifier.taxonVariant": 282549, 
@@ -130,10 +216,14 @@
 }
 }, 
 "Tl1858870": {
-"^ot:originalLabel": "Pteronotus davyi davyi"
+"^ot:originalLabel": "Pteronotus davyi davyi", 
+"^ot:ottId": 759858, 
+"^ot:ottTaxonName": "Pteronotus davyi"
 }, 
 "Tl1858871": {
 "^ot:originalLabel": "Lonchophylla mordax", 
+"^ot:ottId": 248895, 
+"^ot:ottTaxonName": "Lonchophylla mordax", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 16238, 
 "@tb:identifier.taxonVariant": 38041, 
@@ -146,6 +236,8 @@
 }, 
 "Tl1858873": {
 "^ot:originalLabel": "Anoura geoffroyi", 
+"^ot:ottId": 688667, 
+"^ot:ottTaxonName": "Anoura geoffroyi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 1782, 
 "@tb:identifier.taxonVariant": 4362, 
@@ -155,16 +247,22 @@
 }, 
 "Tl1858874": {
 "^ot:originalLabel": "Platyrrhinus matapalensis", 
+"^ot:ottId": 498259, 
+"^ot:ottTaxonName": "Platyrrhinus matapalensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 502318, 
 "@tb:identifier.taxonVariant": 665491
 }
 }, 
 "Tl1858875": {
-"^ot:originalLabel": "Sturnira paulsoni"
+"^ot:originalLabel": "Sturnira paulsoni", 
+"^ot:ottId": 526955, 
+"^ot:ottTaxonName": "Sturnira lilium paulsoni"
 }, 
 "Tl1858876": {
 "^ot:originalLabel": "Thyroptera lavali", 
+"^ot:ottId": 263938, 
+"^ot:ottTaxonName": "Thyroptera lavali", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 266172, 
 "@tb:identifier.taxonVariant": 322306, 
@@ -174,6 +272,8 @@
 }, 
 "Tl1858877": {
 "^ot:originalLabel": "Thyroptera discifera", 
+"^ot:ottId": 579473, 
+"^ot:ottTaxonName": "Thyroptera discifera", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 149216, 
 "@tb:identifier.taxonVariant": 225014, 
@@ -183,6 +283,8 @@
 }, 
 "Tl1858878": {
 "^ot:originalLabel": "Artibeus concolor", 
+"^ot:ottId": 513416, 
+"^ot:ottTaxonName": "Artibeus concolor", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 2419, 
 "@tb:identifier.taxonVariant": 5761, 
@@ -192,6 +294,8 @@
 }, 
 "Tl1858879": {
 "^ot:originalLabel": "Diaemus youngi", 
+"^ot:ottId": 1060472, 
+"^ot:ottTaxonName": "Diaemus youngi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 8867, 
 "@tb:identifier.taxonVariant": 21354, 
@@ -201,6 +305,8 @@
 }, 
 "Tl1858880": {
 "^ot:originalLabel": "Tonatia saurophila", 
+"^ot:ottId": 1074690, 
+"^ot:ottTaxonName": "Tonatia saurophila", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 161225, 
 "@tb:identifier.taxonVariant": 236164, 
@@ -210,6 +316,8 @@
 }, 
 "Tl1858881": {
 "^ot:originalLabel": "Choeronycteris mexicana", 
+"^ot:ottId": 658354, 
+"^ot:ottTaxonName": "Choeronycteris mexicana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5926, 
 "@tb:identifier.taxonVariant": 14351, 
@@ -219,6 +327,8 @@
 }, 
 "Tl1858882": {
 "^ot:originalLabel": "Pteronotus parnellii pusillus", 
+"^ot:ottId": 167316, 
+"^ot:ottTaxonName": "Pteronotus pusillus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 248598, 
 "@tb:identifier.taxonVariant": 308892, 
@@ -229,6 +339,8 @@
 }, 
 "Tl1858883": {
 "^ot:originalLabel": "Sturnira magna", 
+"^ot:ottId": 756132, 
+"^ot:ottTaxonName": "Sturnira magna", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 28153, 
 "@tb:identifier.taxonVariant": 65697, 
@@ -238,6 +350,8 @@
 }, 
 "Tl1858884": {
 "^ot:originalLabel": "Lonchophylla robusta", 
+"^ot:ottId": 248894, 
+"^ot:ottTaxonName": "Lonchophylla robusta", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 621053, 
 "@tb:identifier.taxonVariant": 831616, 
@@ -247,6 +361,8 @@
 }, 
 "Tl1858885": {
 "^ot:originalLabel": "Carollia subrufa", 
+"^ot:ottId": 587100, 
+"^ot:ottTaxonName": "Carollia subrufa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5081, 
 "@tb:identifier.taxonVariant": 12328, 
@@ -255,10 +371,14 @@
 }
 }, 
 "Tl1858886": {
-"^ot:originalLabel": "Sturnira burtonlimi"
+"^ot:originalLabel": "Sturnira burtonlimi", 
+"^ot:ottId": 6146468, 
+"^ot:ottTaxonName": "Sturnira burtonlimi"
 }, 
 "Tl1858887": {
 "^ot:originalLabel": "Centurio senex", 
+"^ot:ottId": 351782, 
+"^ot:ottTaxonName": "Centurio senex", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5284, 
 "@tb:identifier.taxonVariant": 12850, 
@@ -268,6 +388,8 @@
 }, 
 "Tl1858888": {
 "^ot:originalLabel": "Vampyriscus bidens", 
+"^ot:ottId": 842098, 
+"^ot:ottTaxonName": "Vampyressa bidens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 600952, 
 "@tb:identifier.taxonVariant": 801203, 
@@ -276,6 +398,8 @@
 }, 
 "Tl1858889": {
 "^ot:originalLabel": "Lonchorhina aurita", 
+"^ot:ottId": 218142, 
+"^ot:ottTaxonName": "Lonchorhina aurita", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 16241, 
 "@tb:identifier.taxonVariant": 38047, 
@@ -285,6 +409,8 @@
 }, 
 "Tl1858890": {
 "^ot:originalLabel": "Chiroderma doriae", 
+"^ot:ottId": 565588, 
+"^ot:ottTaxonName": "Chiroderma doriae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5825, 
 "@tb:identifier.taxonVariant": 14118, 
@@ -294,6 +420,8 @@
 }, 
 "Tl1858891": {
 "^ot:originalLabel": "Artibeus obscurus", 
+"^ot:ottId": 513451, 
+"^ot:ottTaxonName": "Artibeus obscurus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 2428, 
 "@tb:identifier.taxonVariant": 5779, 
@@ -303,6 +431,8 @@
 }, 
 "Tl1858892": {
 "^ot:originalLabel": "Rhinophylla alethina", 
+"^ot:ottId": 941570, 
+"^ot:ottTaxonName": "Rhinophylla alethina", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 25200, 
 "@tb:identifier.taxonVariant": 59017, 
@@ -312,6 +442,8 @@
 }, 
 "Tl1858893": {
 "^ot:originalLabel": "Lophostoma brasiliense", 
+"^ot:ottId": 78017, 
+"^ot:ottTaxonName": "Lophostoma brasiliense", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 356235, 
 "@tb:identifier.taxonVariant": 386389, 
@@ -321,6 +453,8 @@
 }, 
 "Tl1858894": {
 "^ot:originalLabel": "Chiroderma villosum", 
+"^ot:ottId": 565586, 
+"^ot:ottTaxonName": "Chiroderma villosum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5829, 
 "@tb:identifier.taxonVariant": 14127, 
@@ -330,6 +464,8 @@
 }, 
 "Tl1858895": {
 "^ot:originalLabel": "Micronycteris brosseti", 
+"^ot:ottId": 989361, 
+"^ot:ottTaxonName": "Micronycteris brosseti", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 231733, 
 "@tb:identifier.taxonVariant": 294465, 
@@ -339,6 +475,8 @@
 }, 
 "Tl1858896": {
 "^ot:originalLabel": "Micronycteris microtis", 
+"^ot:ottId": 596443, 
+"^ot:ottTaxonName": "Micronycteris microtis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 224440, 
 "@tb:identifier.taxonVariant": 289914, 
@@ -348,6 +486,8 @@
 }, 
 "Tl1858897": {
 "^ot:originalLabel": "Platyrrhinus albericoi", 
+"^ot:ottId": 873030, 
+"^ot:ottTaxonName": "Platyrrhinus albericoi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 502312, 
 "@tb:identifier.taxonVariant": 665482
@@ -355,6 +495,8 @@
 }, 
 "Tl1858898": {
 "^ot:originalLabel": "Glyphonycteris daviesi", 
+"^ot:ottId": 201779, 
+"^ot:ottTaxonName": "Glyphonycteris daviesi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 17708, 
 "@tb:identifier.taxonVariant": 113357, 
@@ -364,6 +506,8 @@
 }, 
 "Tl1858899": {
 "^ot:originalLabel": "Artibeus inopinatus", 
+"^ot:ottId": 431860, 
+"^ot:ottTaxonName": "Artibeus inopinatus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 2425, 
 "@tb:identifier.taxonVariant": 5772, 
@@ -373,6 +517,8 @@
 }, 
 "Tl1858900": {
 "^ot:originalLabel": "Brachyphylla cavernarum", 
+"^ot:ottId": 456526, 
+"^ot:ottTaxonName": "Brachyphylla cavernarum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3911, 
 "@tb:identifier.taxonVariant": 9318, 
@@ -382,6 +528,8 @@
 }, 
 "Tl1858901": {
 "^ot:originalLabel": "Lampronycteris brachyotis", 
+"^ot:ottId": 201782, 
+"^ot:ottTaxonName": "Micronycteris brachyotis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 17707, 
 "@tb:identifier.taxonVariant": 801188, 
@@ -392,6 +540,8 @@
 }, 
 "Tl1858902": {
 "^ot:originalLabel": "Thyroptera tricolor", 
+"^ot:ottId": 267977, 
+"^ot:ottTaxonName": "Thyroptera tricolor", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 125727, 
 "@tb:identifier.taxonVariant": 203362, 
@@ -401,6 +551,8 @@
 }, 
 "Tl1858903": {
 "^ot:originalLabel": "Phyllonycteris aphylla", 
+"^ot:ottId": 546391, 
+"^ot:ottTaxonName": "Phyllonycteris aphylla", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22096, 
 "@tb:identifier.taxonVariant": 51400, 
@@ -409,10 +561,14 @@
 }
 }, 
 "Tl1858904": {
-"^ot:originalLabel": "Micronycteris sp."
+"^ot:originalLabel": "Micronycteris sp.", 
+"^ot:ottId": 658344, 
+"^ot:ottTaxonName": "Micronycteris"
 }, 
 "Tl1858905": {
 "^ot:originalLabel": "Sturnira parvidens", 
+"^ot:ottId": 655351, 
+"^ot:ottTaxonName": "Sturnira parvidens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 181667, 
 "@tb:identifier.taxonVariant": 254466, 
@@ -422,6 +578,8 @@
 }, 
 "Tl1858906": {
 "^ot:originalLabel": "Trachops cirrhosus", 
+"^ot:ottId": 792613, 
+"^ot:ottTaxonName": "Trachops cirrhosus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 29272, 
 "@tb:identifier.taxonVariant": 68244, 
@@ -431,6 +589,8 @@
 }, 
 "Tl1858907": {
 "^ot:originalLabel": "Phyllostomus elongatus", 
+"^ot:ottId": 1011474, 
+"^ot:ottTaxonName": "Phyllostomus elongatus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22109, 
 "@tb:identifier.taxonVariant": 51432, 
@@ -440,6 +600,8 @@
 }, 
 "Tl1858908": {
 "^ot:originalLabel": "Artibeus cinereus", 
+"^ot:ottId": 513419, 
+"^ot:ottTaxonName": "Artibeus cinereus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 2418, 
 "@tb:identifier.taxonVariant": 5758, 
@@ -449,6 +611,8 @@
 }, 
 "Tl1858909": {
 "^ot:originalLabel": "Mormoops blainvillei", 
+"^ot:ottId": 554248, 
+"^ot:ottTaxonName": "Mormoops blainvillei", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 611208, 
 "@tb:identifier.taxonVariant": 817016, 
@@ -457,6 +621,8 @@
 }, 
 "Tl1858910": {
 "^ot:originalLabel": "Carollia brevicauda", 
+"^ot:ottId": 758569, 
+"^ot:ottTaxonName": "Carollia brevicauda", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5078, 
 "@tb:identifier.taxonVariant": 12321, 
@@ -466,6 +632,8 @@
 }, 
 "Tl1858911": {
 "^ot:originalLabel": "Sturnira ludovici", 
+"^ot:ottId": 136687, 
+"^ot:ottTaxonName": "Sturnira ludovici", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 28151, 
 "@tb:identifier.taxonVariant": 65693, 
@@ -475,6 +643,8 @@
 }, 
 "Tl1858912": {
 "^ot:originalLabel": "Vampyriscus brocki", 
+"^ot:ottId": 655347, 
+"^ot:ottTaxonName": "Vampyressa brocki", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 605561, 
 "@tb:identifier.taxonVariant": 808130, 
@@ -483,6 +653,8 @@
 }, 
 "Tl1858913": {
 "^ot:originalLabel": "Artibeus phaeotis", 
+"^ot:ottId": 513447, 
+"^ot:ottTaxonName": "Artibeus phaeotis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 2429, 
 "@tb:identifier.taxonVariant": 5781, 
@@ -492,6 +664,8 @@
 }, 
 "Tl1858914": {
 "^ot:originalLabel": "Phylloderma stenops", 
+"^ot:ottId": 792612, 
+"^ot:ottTaxonName": "Phylloderma stenops", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22012, 
 "@tb:identifier.taxonVariant": 51174, 
@@ -500,10 +674,14 @@
 }
 }, 
 "Tl1858915": {
-"^ot:originalLabel": "Sturnira angeli"
+"^ot:originalLabel": "Sturnira angeli", 
+"^ot:ottId": 6146466, 
+"^ot:ottTaxonName": "Sturnira angeli"
 }, 
 "Tl1858916": {
 "^ot:originalLabel": "Sturnira mordax", 
+"^ot:ottId": 756141, 
+"^ot:ottTaxonName": "Sturnira mordax", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 28154, 
 "@tb:identifier.taxonVariant": 65700, 
@@ -513,6 +691,8 @@
 }, 
 "Tl1858917": {
 "^ot:originalLabel": "Erophylla sezekorni", 
+"^ot:ottId": 534168, 
+"^ot:ottTaxonName": "Erophylla sezekorni", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 10432, 
 "@tb:identifier.taxonVariant": 24969, 
@@ -522,6 +702,8 @@
 }, 
 "Tl1858918": {
 "^ot:originalLabel": "Uroderma bilobatum", 
+"^ot:ottId": 401290, 
+"^ot:ottTaxonName": "Uroderma bilobatum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 30304, 
 "@tb:identifier.taxonVariant": 70724, 
@@ -531,6 +713,8 @@
 }, 
 "Tl1858919": {
 "^ot:originalLabel": "Glossophaga leachii", 
+"^ot:ottId": 227303, 
+"^ot:ottTaxonName": "Glossophaga leachii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 12273, 
 "@tb:identifier.taxonVariant": 29145, 
@@ -539,6 +723,8 @@
 }, 
 "Tl1858920": {
 "^ot:originalLabel": "Sturnira aratathomasi", 
+"^ot:ottId": 756133, 
+"^ot:ottTaxonName": "Sturnira aratathomasi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 28146, 
 "@tb:identifier.taxonVariant": 65683, 
@@ -551,6 +737,8 @@
 }, 
 "Tl1858922": {
 "^ot:originalLabel": "Monophyllus plethodon", 
+"^ot:ottId": 227309, 
+"^ot:ottTaxonName": "Monophyllus plethodon", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 18049, 
 "@tb:identifier.taxonVariant": 42241, 
@@ -560,6 +748,8 @@
 }, 
 "Tl1858923": {
 "^ot:originalLabel": "Carollia sowelli", 
+"^ot:ottId": 958288, 
+"^ot:ottTaxonName": "Carollia sowelli", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 191730, 
 "@tb:identifier.taxonVariant": 263301, 
@@ -569,6 +759,8 @@
 }, 
 "Tl1858924": {
 "^ot:originalLabel": "Lonchorhina orinocensis", 
+"^ot:ottId": 295631, 
+"^ot:ottTaxonName": "Lonchorhina orinocensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 16244, 
 "@tb:identifier.taxonVariant": 38052, 
@@ -578,6 +770,8 @@
 }, 
 "Tl1858925": {
 "^ot:originalLabel": "Artibeus glaucus", 
+"^ot:ottId": 513426, 
+"^ot:ottTaxonName": "Artibeus glaucus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 2422, 
 "@tb:identifier.taxonVariant": 5767, 
@@ -590,6 +784,8 @@
 }, 
 "Tl1858927": {
 "^ot:originalLabel": "Vampyressa pusilla", 
+"^ot:ottId": 269233, 
+"^ot:ottTaxonName": "Vampyressa pusilla", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 30449, 
 "@tb:identifier.taxonVariant": 71036, 
@@ -599,6 +795,8 @@
 }, 
 "Tl1858928": {
 "^ot:originalLabel": "Sturnira bidens", 
+"^ot:ottId": 756134, 
+"^ot:ottTaxonName": "Sturnira bidens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 28147, 
 "@tb:identifier.taxonVariant": 65685, 
@@ -608,6 +806,8 @@
 }, 
 "Tl1858929": {
 "^ot:originalLabel": "Sturnira luisi", 
+"^ot:ottId": 756131, 
+"^ot:ottTaxonName": "Sturnira luisi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 28152, 
 "@tb:identifier.taxonVariant": 65696, 
@@ -617,6 +817,8 @@
 }, 
 "Tl1858930": {
 "^ot:originalLabel": "Pteronotus gymnonotus", 
+"^ot:ottId": 554240, 
+"^ot:ottTaxonName": "Pteronotus gymnonotus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 24351, 
 "@tb:identifier.taxonVariant": 57005, 
@@ -629,6 +831,8 @@
 }, 
 "Tl1858932": {
 "^ot:originalLabel": "Mormoops megalophylla", 
+"^ot:ottId": 342713, 
+"^ot:ottTaxonName": "Mormoops megalophylla", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 18173, 
 "@tb:identifier.taxonVariant": 42496, 
@@ -638,6 +842,8 @@
 }, 
 "Tl1858933": {
 "^ot:originalLabel": "Choeroniscus godmani", 
+"^ot:ottId": 503371, 
+"^ot:ottTaxonName": "Choeroniscus godmani", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5922, 
 "@tb:identifier.taxonVariant": 14341, 
@@ -647,6 +853,8 @@
 }, 
 "Tl1858934": {
 "^ot:originalLabel": "Noctilio albiventris", 
+"^ot:ottId": 604407, 
+"^ot:ottTaxonName": "Noctilio albiventris", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 103339, 
 "@tb:identifier.taxonVariant": 182439, 
@@ -656,6 +864,8 @@
 }, 
 "Tl1858935": {
 "^ot:originalLabel": "Mimon cozumelae", 
+"^ot:ottId": 860220, 
+"^ot:ottTaxonName": "Mimon cozumelae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 617649, 
 "@tb:identifier.taxonVariant": 826733, 
@@ -664,6 +874,8 @@
 }, 
 "Tl1858936": {
 "^ot:originalLabel": "Lonchophylla handleyi", 
+"^ot:ottId": 248893, 
+"^ot:ottTaxonName": "Lonchophylla handleyi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 621054, 
 "@tb:identifier.taxonVariant": 831613, 
@@ -673,6 +885,8 @@
 }, 
 "Tl1858937": {
 "^ot:originalLabel": "Platyrrhinus aurarius", 
+"^ot:ottId": 132184, 
+"^ot:ottTaxonName": "Platyrrhinus aurarius", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22747, 
 "@tb:identifier.taxonVariant": 53049, 
@@ -682,6 +896,8 @@
 }, 
 "Tl1858938": {
 "^ot:originalLabel": "Glossophaga longirostris", 
+"^ot:ottId": 227307, 
+"^ot:ottTaxonName": "Glossophaga longirostris", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 12274, 
 "@tb:identifier.taxonVariant": 29148, 
@@ -691,6 +907,8 @@
 }, 
 "Tl1858939": {
 "^ot:originalLabel": "Erophylla bombifrons", 
+"^ot:ottId": 120236, 
+"^ot:ottTaxonName": "Erophylla bombifrons", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 256420, 
 "@tb:identifier.taxonVariant": 314811, 
@@ -700,6 +918,8 @@
 }, 
 "Tl1858940": {
 "^ot:originalLabel": "Micronycteris schmidtorum", 
+"^ot:ottId": 218135, 
+"^ot:ottTaxonName": "Micronycteris schmidtorum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 17714, 
 "@tb:identifier.taxonVariant": 41433, 
@@ -709,6 +929,8 @@
 }, 
 "Tl1858941": {
 "^ot:originalLabel": "Artibeus amplus", 
+"^ot:ottId": 900091, 
+"^ot:ottTaxonName": "Artibeus amplus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 2415, 
 "@tb:identifier.taxonVariant": 5753, 
@@ -718,6 +940,8 @@
 }, 
 "Tl1858942": {
 "^ot:originalLabel": "Artibeus fimbriatus", 
+"^ot:ottId": 805974, 
+"^ot:ottTaxonName": "Artibeus fimbriatus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 2420, 
 "@tb:identifier.taxonVariant": 5762, 
@@ -727,6 +951,8 @@
 }, 
 "Tl1858943": {
 "^ot:originalLabel": "Tonatia bidens", 
+"^ot:ottId": 761780, 
+"^ot:ottTaxonName": "Tonatia bidens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 29197, 
 "@tb:identifier.taxonVariant": 68023, 
@@ -735,23 +961,33 @@
 }
 }, 
 "Tl1858944": {
-"^ot:originalLabel": "Sturnira hondurensis"
+"^ot:originalLabel": "Sturnira hondurensis", 
+"^ot:ottId": 136686, 
+"^ot:ottTaxonName": "Sturnira hondurensis"
 }, 
 "Tl1858945": {
 "^ot:originalLabel": "Platyrrhinus masu", 
+"^ot:ottId": 498257, 
+"^ot:ottTaxonName": "Platyrrhinus masu", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 502317, 
 "@tb:identifier.taxonVariant": 665489
 }
 }, 
 "Tl1858946": {
-"^ot:originalLabel": "Pteronotus parnellii portoricensis"
+"^ot:originalLabel": "Pteronotus parnellii portoricensis", 
+"^ot:ottId": 6146439, 
+"^ot:ottTaxonName": "Pteronotus parnellii portoricensis"
 }, 
 "Tl1858947": {
-"^ot:originalLabel": "Vampyrodes major"
+"^ot:originalLabel": "Vampyrodes major", 
+"^ot:ottId": 569768, 
+"^ot:ottTaxonName": "Vampyrodes major"
 }, 
 "Tl1858948": {
 "^ot:originalLabel": "Uroderma magnirostrum", 
+"^ot:ottId": 605658, 
+"^ot:ottTaxonName": "Uroderma magnirostrum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 30305, 
 "@tb:identifier.taxonVariant": 70727, 
@@ -761,6 +997,8 @@
 }, 
 "Tl1858949": {
 "^ot:originalLabel": "Mystacina tuberculata", 
+"^ot:ottId": 604409, 
+"^ot:ottTaxonName": "Mystacina tuberculata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 103338, 
 "@tb:identifier.taxonVariant": 182438, 
@@ -770,6 +1008,8 @@
 }, 
 "Tl1858950": {
 "^ot:originalLabel": "Artibeus toltecus", 
+"^ot:ottId": 362821, 
+"^ot:ottTaxonName": "Artibeus toltecus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 2431, 
 "@tb:identifier.taxonVariant": 5787, 
@@ -779,6 +1019,8 @@
 }, 
 "Tl1858951": {
 "^ot:originalLabel": "Phyllostomus discolor", 
+"^ot:ottId": 459982, 
+"^ot:ottTaxonName": "Phyllostomus discolor", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22108, 
 "@tb:identifier.taxonVariant": 51430, 
@@ -788,6 +1030,8 @@
 }, 
 "Tl1858952": {
 "^ot:originalLabel": "Lionycteris spurrelli", 
+"^ot:ottId": 534170, 
+"^ot:ottTaxonName": "Lionycteris spurrelli", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 621051, 
 "@tb:identifier.taxonVariant": 831610, 
@@ -797,6 +1041,8 @@
 }, 
 "Tl1858953": {
 "^ot:originalLabel": "Phyllostomus hastatus", 
+"^ot:ottId": 761775, 
+"^ot:ottTaxonName": "Phyllostomus hastatus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22110, 
 "@tb:identifier.taxonVariant": 51434, 
@@ -806,6 +1052,8 @@
 }, 
 "Tl1858954": {
 "^ot:originalLabel": "Sturnira erythromos", 
+"^ot:ottId": 136691, 
+"^ot:ottTaxonName": "Sturnira erythromos", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 28149, 
 "@tb:identifier.taxonVariant": 65688, 
@@ -822,13 +1070,17 @@
 }
 }, 
 "Tl1858956": {
-"^ot:originalLabel": "Sturnira koopmanhilli"
+"^ot:originalLabel": "Sturnira koopmanhilli", 
+"^ot:ottId": 6146469, 
+"^ot:ottTaxonName": "Sturnira koopmanhilli"
 }, 
 "Tl1858957": {
 "^ot:originalLabel": "Pteronotus parnellii rubiginosus 2"
 }, 
 "Tl1858958": {
 "^ot:originalLabel": "Glossophaga commissarisi", 
+"^ot:ottId": 801225, 
+"^ot:ottTaxonName": "Glossophaga commissarisi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 12272, 
 "@tb:identifier.taxonVariant": 29144, 
@@ -837,10 +1089,14 @@
 }
 }, 
 "Tl1858959": {
-"^ot:originalLabel": "Sturnira sp."
+"^ot:originalLabel": "Sturnira sp.", 
+"^ot:ottId": 927278, 
+"^ot:ottTaxonName": "Sturnira"
 }, 
 "Tl1858960": {
 "^ot:originalLabel": "Leptonycteris curasoae", 
+"^ot:ottId": 111030, 
+"^ot:ottTaxonName": "Leptonycteris curasoae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 15688, 
 "@tb:identifier.taxonVariant": 36785, 
@@ -850,6 +1106,8 @@
 }, 
 "Tl1858961": {
 "^ot:originalLabel": "Carollia perspicillata", 
+"^ot:ottId": 1039980, 
+"^ot:ottTaxonName": "Carollia perspicillata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5080, 
 "@tb:identifier.taxonVariant": 12325, 
@@ -862,6 +1120,8 @@
 }, 
 "Tl1858963": {
 "^ot:originalLabel": "Platyrrhinus dorsalis", 
+"^ot:ottId": 981722, 
+"^ot:ottTaxonName": "Platyrrhinus dorsalis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22750, 
 "@tb:identifier.taxonVariant": 53054, 
@@ -871,6 +1131,8 @@
 }, 
 "Tl1858964": {
 "^ot:originalLabel": "Pteronotus personatus psilotis", 
+"^ot:ottId": 6146440, 
+"^ot:ottTaxonName": "Pteronotus personatus psilotis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 611330, 
 "@tb:identifier.taxonVariant": 817168, 
@@ -879,6 +1141,8 @@
 }, 
 "Tl1858965": {
 "^ot:originalLabel": "Lophostoma carrikeri", 
+"^ot:ottId": 856239, 
+"^ot:ottTaxonName": "Lophostoma carrikeri", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 356236, 
 "@tb:identifier.taxonVariant": 386390, 
@@ -888,6 +1152,8 @@
 }, 
 "Tl1858966": {
 "^ot:originalLabel": "Phyllops falcatus", 
+"^ot:ottId": 1066070, 
+"^ot:ottTaxonName": "Phyllops falcatus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22104, 
 "@tb:identifier.taxonVariant": 51414, 
@@ -897,6 +1163,8 @@
 }, 
 "Tl1858967": {
 "^ot:originalLabel": "Pteronotus quadridens", 
+"^ot:ottId": 554242, 
+"^ot:ottTaxonName": "Pteronotus quadridens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 24355, 
 "@tb:identifier.taxonVariant": 57017, 
@@ -906,6 +1174,8 @@
 }, 
 "Tl1858968": {
 "^ot:originalLabel": "Choeroniscus minor", 
+"^ot:ottId": 596426, 
+"^ot:ottTaxonName": "Choeroniscus minor", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5924, 
 "@tb:identifier.taxonVariant": 14347, 
@@ -914,13 +1184,17 @@
 }
 }, 
 "Tl1858969": {
-"^ot:originalLabel": "Hsunycteris thomasi"
+"^ot:originalLabel": "Hsunycteris thomasi", 
+"^ot:ottId": 546392, 
+"^ot:ottTaxonName": "Hsunycteris thomasi"
 }, 
 "Tl1858970": {
 "^ot:originalLabel": "Phyllonycteris poeyi obtusa"
 }, 
 "Tl1858971": {
 "^ot:originalLabel": "Sturnira nana", 
+"^ot:ottId": 352930, 
+"^ot:ottTaxonName": "Sturnira nana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 28155, 
 "@tb:identifier.taxonVariant": 65702, 
@@ -930,6 +1204,8 @@
 }, 
 "Tl1858972": {
 "^ot:originalLabel": "Vampyressa melissa", 
+"^ot:ottId": 393952, 
+"^ot:ottTaxonName": "Vampyressa melissa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 30447, 
 "@tb:identifier.taxonVariant": 71032, 
@@ -939,6 +1215,8 @@
 }, 
 "Tl1858973": {
 "^ot:originalLabel": "Artibeus aztecus", 
+"^ot:ottId": 1039987, 
+"^ot:ottTaxonName": "Artibeus aztecus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 2417, 
 "@tb:identifier.taxonVariant": 5757, 
@@ -948,6 +1226,8 @@
 }, 
 "Tl1858974": {
 "^ot:originalLabel": "Musonycteris harrisoni", 
+"^ot:ottId": 658353, 
+"^ot:ottTaxonName": "Musonycteris harrisoni", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 18321, 
 "@tb:identifier.taxonVariant": 42811, 
@@ -957,6 +1237,8 @@
 }, 
 "Tl1858975": {
 "^ot:originalLabel": "Chiroderma improvisum", 
+"^ot:ottId": 565590, 
+"^ot:ottTaxonName": "Chiroderma improvisum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5826, 
 "@tb:identifier.taxonVariant": 14120, 
@@ -966,6 +1248,8 @@
 }, 
 "Tl1858976": {
 "^ot:originalLabel": "Platyrrhinus infuscus", 
+"^ot:ottId": 348435, 
+"^ot:ottTaxonName": "Platyrrhinus infuscus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22752, 
 "@tb:identifier.taxonVariant": 53059, 
@@ -975,6 +1259,8 @@
 }, 
 "Tl1858977": {
 "^ot:originalLabel": "Vampyressa thyone", 
+"^ot:ottId": 393959, 
+"^ot:ottTaxonName": "Vampyressa thyone", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 317366, 
 "@tb:identifier.taxonVariant": 361954, 
@@ -984,6 +1270,8 @@
 }, 
 "Tl1858978": {
 "^ot:originalLabel": "Platyrrhinus incarum", 
+"^ot:ottId": 873032, 
+"^ot:ottTaxonName": "Platyrrhinus helleri incarum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 502311, 
 "@tb:identifier.taxonVariant": 665481
@@ -991,6 +1279,8 @@
 }, 
 "Tl1858979": {
 "^ot:originalLabel": "Micronycteris megalotis", 
+"^ot:ottId": 218140, 
+"^ot:ottTaxonName": "Micronycteris megalotis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 17710, 
 "@tb:identifier.taxonVariant": 41424, 
@@ -1000,6 +1290,8 @@
 }, 
 "Tl1858980": {
 "^ot:originalLabel": "Platyrrhinus lineatus", 
+"^ot:ottId": 780066, 
+"^ot:ottTaxonName": "Platyrrhinus lineatus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22753, 
 "@tb:identifier.taxonVariant": 53060, 
@@ -1009,6 +1301,8 @@
 }, 
 "Tl1858981": {
 "^ot:originalLabel": "Artibeus anderseni", 
+"^ot:ottId": 805983, 
+"^ot:ottTaxonName": "Artibeus anderseni", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 2416, 
 "@tb:identifier.taxonVariant": 5755, 
@@ -1018,6 +1312,8 @@
 }, 
 "Tl1858982": {
 "^ot:originalLabel": "Micronycteris minuta", 
+"^ot:ottId": 218139, 
+"^ot:ottTaxonName": "Micronycteris minuta", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 17711, 
 "@tb:identifier.taxonVariant": 41427, 
@@ -1027,6 +1323,8 @@
 }, 
 "Tl1858983": {
 "^ot:originalLabel": "Artibeus watsoni", 
+"^ot:ottId": 805986, 
+"^ot:ottTaxonName": "Artibeus glaucus watsoni", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 71719, 
 "@tb:identifier.taxonVariant": 148052, 
@@ -1037,6 +1335,8 @@
 }, 
 "Tl1858984": {
 "^ot:originalLabel": "Chiroderma trinitatum", 
+"^ot:ottId": 351787, 
+"^ot:ottTaxonName": "Chiroderma trinitatum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5828, 
 "@tb:identifier.taxonVariant": 14126, 
@@ -1049,6 +1349,8 @@
 }, 
 "Tl1858986": {
 "^ot:originalLabel": "Sturnira oporaphilum", 
+"^ot:ottId": 1080435, 
+"^ot:ottTaxonName": "Sturnira oporaphilum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 178291, 
 "@tb:identifier.taxonVariant": 251844, 
@@ -1058,6 +1360,8 @@
 }, 
 "Tl1858987": {
 "^ot:originalLabel": "Rhinophylla pumilio", 
+"^ot:ottId": 546394, 
+"^ot:ottTaxonName": "Rhinophylla pumilio", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 25202, 
 "@tb:identifier.taxonVariant": 59020, 
@@ -1067,6 +1371,8 @@
 }, 
 "Tl1858988": {
 "^ot:originalLabel": "Ectophylla alba", 
+"^ot:ottId": 842061, 
+"^ot:ottTaxonName": "Ectophylla alba", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 9743, 
 "@tb:identifier.taxonVariant": 23328, 
@@ -1076,6 +1382,8 @@
 }, 
 "Tl1858989": {
 "^ot:originalLabel": "Phyllostomus latifolius", 
+"^ot:ottId": 860216, 
+"^ot:ottTaxonName": "Phyllostomus latifolius", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22111, 
 "@tb:identifier.taxonVariant": 51435, 
@@ -1084,6 +1392,8 @@
 }, 
 "Tl1858990": {
 "^ot:originalLabel": "Lophostoma schulzi", 
+"^ot:ottId": 78020, 
+"^ot:ottTaxonName": "Lophostoma schulzi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 356237, 
 "@tb:identifier.taxonVariant": 386391, 
@@ -1093,6 +1403,8 @@
 }, 
 "Tl1858991": {
 "^ot:originalLabel": "Noctilio leporinus", 
+"^ot:ottId": 604404, 
+"^ot:ottTaxonName": "Noctilio leporinus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 103340, 
 "@tb:identifier.taxonVariant": 182441, 
@@ -1102,6 +1414,8 @@
 }, 
 "Tl1858992": {
 "^ot:originalLabel": "Glyphonycteris sylvestris", 
+"^ot:ottId": 599548, 
+"^ot:ottTaxonName": "Glyphonycteris sylvestris", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 17715, 
 "@tb:identifier.taxonVariant": 112676, 
@@ -1111,6 +1425,8 @@
 }, 
 "Tl1858993": {
 "^ot:originalLabel": "Artibeus planirostris", 
+"^ot:ottId": 1039982, 
+"^ot:ottTaxonName": "Artibeus planirostris", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 2430, 
 "@tb:identifier.taxonVariant": 5782, 
@@ -1120,6 +1436,8 @@
 }, 
 "Tl1858994": {
 "^ot:originalLabel": "Pygoderma bilabiatum", 
+"^ot:ottId": 894971, 
+"^ot:ottTaxonName": "Pygoderma bilabiatum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 24575, 
 "@tb:identifier.taxonVariant": 57555, 
@@ -1129,6 +1447,8 @@
 }, 
 "Tl1858995": {
 "^ot:originalLabel": "Artibeus lituratus", 
+"^ot:ottId": 857633, 
+"^ot:ottTaxonName": "Artibeus lituratus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 2427, 
 "@tb:identifier.taxonVariant": 5777, 
@@ -1138,6 +1458,8 @@
 }, 
 "Tl1858996": {
 "^ot:originalLabel": "Vampyrum spectrum", 
+"^ot:ottId": 353066, 
+"^ot:ottTaxonName": "Vampyrum spectrum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 30451, 
 "@tb:identifier.taxonVariant": 71040, 
@@ -1147,6 +1469,8 @@
 }, 
 "Tl1858997": {
 "^ot:originalLabel": "Sturnira tildae", 
+"^ot:ottId": 401295, 
+"^ot:ottTaxonName": "Sturnira tildae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 28157, 
 "@tb:identifier.taxonVariant": 65708, 
@@ -1156,6 +1480,8 @@
 }, 
 "Tl1858998": {
 "^ot:originalLabel": "Artibeus fraterculus", 
+"^ot:ottId": 805976, 
+"^ot:ottTaxonName": "Artibeus fraterculus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 2421, 
 "@tb:identifier.taxonVariant": 5765, 
@@ -1168,6 +1494,8 @@
 }, 
 "Tl1859000": {
 "^ot:originalLabel": "Monophyllus redmani", 
+"^ot:ottId": 658352, 
+"^ot:ottTaxonName": "Monophyllus redmani", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 18050, 
 "@tb:identifier.taxonVariant": 42242, 
@@ -1177,6 +1505,8 @@
 }, 
 "Tl1859001": {
 "^ot:originalLabel": "Platyrrhinus nigellus", 
+"^ot:ottId": 348442, 
+"^ot:ottTaxonName": "Platyrrhinus lineatus nigellus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 502306, 
 "@tb:identifier.taxonVariant": 665470, 
@@ -1187,6 +1517,8 @@
 }, 
 "Tl1859002": {
 "^ot:originalLabel": "Artibeus jamaicensis", 
+"^ot:ottId": 289157, 
+"^ot:ottTaxonName": "Artibeus jamaicensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 622418, 
 "@tb:identifier.taxonVariant": 837128, 
@@ -1196,6 +1528,8 @@
 }, 
 "Tl1859003": {
 "^ot:originalLabel": "Micronycteris matses", 
+"^ot:ottId": 456416, 
+"^ot:ottTaxonName": "Micronycteris matses", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 296895, 
 "@tb:identifier.taxonVariant": 346748, 
@@ -1205,6 +1539,8 @@
 }, 
 "Tl1859004": {
 "^ot:originalLabel": "Stenoderma rufum", 
+"^ot:ottId": 534169, 
+"^ot:ottTaxonName": "Stenoderma rufum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 27923, 
 "@tb:identifier.taxonVariant": 65161, 
@@ -1214,6 +1550,8 @@
 }, 
 "Tl1859005": {
 "^ot:originalLabel": "Micronycteris hirsuta", 
+"^ot:ottId": 218141, 
+"^ot:ottTaxonName": "Micronycteris hirsuta", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 17709, 
 "@tb:identifier.taxonVariant": 41423, 
@@ -1223,6 +1561,8 @@
 }, 
 "Tl1859006": {
 "^ot:originalLabel": "Lonchophylla dekeyseri", 
+"^ot:ottId": 3613606, 
+"^ot:ottTaxonName": "Lonchophylla dekeyseri", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 16235, 
 "@tb:identifier.taxonVariant": 38035, 
@@ -1231,6 +1571,8 @@
 }, 
 "Tl1859007": {
 "^ot:originalLabel": "Platalina genovensium", 
+"^ot:ottId": 823391, 
+"^ot:ottTaxonName": "Platalina genovensium", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 621052, 
 "@tb:identifier.taxonVariant": 831611, 
@@ -1240,6 +1582,8 @@
 }, 
 "Tl1859008": {
 "^ot:originalLabel": "Lichonycteris obscura", 
+"^ot:ottId": 633519, 
+"^ot:ottTaxonName": "Lichonycteris obscura", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 15902, 
 "@tb:identifier.taxonVariant": 37274, 
@@ -1248,6 +1592,8 @@
 }, 
 "Tl1859009": {
 "^ot:originalLabel": "Macrotus californicus", 
+"^ot:ottId": 289162, 
+"^ot:ottTaxonName": "Macrotus californicus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 16736, 
 "@tb:identifier.taxonVariant": 39206, 
@@ -1257,6 +1603,8 @@
 }, 
 "Tl1859010": {
 "^ot:originalLabel": "Micronycteris giovanniae", 
+"^ot:ottId": 296450, 
+"^ot:ottTaxonName": "Micronycteris giovanniae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 234514, 
 "@tb:identifier.taxonVariant": 296820, 
@@ -1266,6 +1614,8 @@
 }, 
 "Tl1859011": {
 "^ot:originalLabel": "Mimon bennettii", 
+"^ot:ottId": 780064, 
+"^ot:ottTaxonName": "Mimon bennettii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 17817, 
 "@tb:identifier.taxonVariant": 41681, 
@@ -1274,10 +1624,14 @@
 }
 }, 
 "Tl1859012": {
-"^ot:originalLabel": "Sturnira perla"
+"^ot:originalLabel": "Sturnira perla", 
+"^ot:ottId": 270258, 
+"^ot:ottTaxonName": "Sturnira perla"
 }, 
 "Tl1859013": {
 "^ot:originalLabel": "Vampyrodes caraccioli", 
+"^ot:ottId": 269230, 
+"^ot:ottTaxonName": "Vampyrodes caraccioli", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 623049, 
 "@tb:identifier.taxonVariant": 834228, 
@@ -1287,6 +1641,8 @@
 }, 
 "Tl1859014": {
 "^ot:originalLabel": "Glossophaga soricina", 
+"^ot:ottId": 876514, 
+"^ot:ottTaxonName": "Glossophaga soricina", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 12276, 
 "@tb:identifier.taxonVariant": 29154, 
@@ -1296,6 +1652,8 @@
 }, 
 "Tl1859015": {
 "^ot:originalLabel": "Pteronotus parnellii parnellii", 
+"^ot:ottId": 867405, 
+"^ot:ottTaxonName": "Pteronotus parnellii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 611329, 
 "@tb:identifier.taxonVariant": 817167, 
@@ -1307,6 +1665,8 @@
 }, 
 "Tl1859017": {
 "^ot:originalLabel": "Glossophaga morenoi", 
+"^ot:ottId": 227308, 
+"^ot:ottTaxonName": "Glossophaga morenoi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 12275, 
 "@tb:identifier.taxonVariant": 29151, 
@@ -1316,6 +1676,8 @@
 }, 
 "Tl1859018": {
 "^ot:originalLabel": "Trinycteris nicefori", 
+"^ot:ottId": 218136, 
+"^ot:ottTaxonName": "Micronycteris nicefori", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 605559, 
 "@tb:identifier.taxonVariant": 808128, 
@@ -1324,6 +1686,8 @@
 }, 
 "Tl1859019": {
 "^ot:originalLabel": "Ardops nichollsi", 
+"^ot:ottId": 894926, 
+"^ot:ottTaxonName": "Ardops nichollsi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 2271, 
 "@tb:identifier.taxonVariant": 5454, 
@@ -1333,6 +1697,8 @@
 }, 
 "Tl1859020": {
 "^ot:originalLabel": "Platyrrhinus recifinus", 
+"^ot:ottId": 348438, 
+"^ot:ottTaxonName": "Platyrrhinus recifinus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22754, 
 "@tb:identifier.taxonVariant": 53062, 
@@ -1342,6 +1708,8 @@
 }, 
 "Tl1859021": {
 "^ot:originalLabel": "Artibeus intermedius", 
+"^ot:ottId": 805981, 
+"^ot:ottTaxonName": "Artibeus intermedius", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 71718, 
 "@tb:identifier.taxonVariant": 148049, 
@@ -1351,6 +1719,8 @@
 }, 
 "Tl1859022": {
 "^ot:originalLabel": "Macrophyllum macrophyllum", 
+"^ot:ottId": 201785, 
+"^ot:ottTaxonName": "Macrophyllum macrophyllum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 16699, 
 "@tb:identifier.taxonVariant": 39114, 
@@ -1360,6 +1730,8 @@
 }, 
 "Tl1859023": {
 "^ot:originalLabel": "Platyrrhinus helleri", 
+"^ot:ottId": 927279, 
+"^ot:ottTaxonName": "Platyrrhinus helleri", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22751, 
 "@tb:identifier.taxonVariant": 53056, 
@@ -1369,6 +1741,8 @@
 }, 
 "Tl1859024": {
 "^ot:originalLabel": "Chrotopterus auritus", 
+"^ot:ottId": 1060474, 
+"^ot:ottTaxonName": "Chrotopterus auritus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6021, 
 "@tb:identifier.taxonVariant": 14526, 
@@ -1378,6 +1752,8 @@
 }, 
 "Tl1859025": {
 "^ot:originalLabel": "Enchisthenes hartii", 
+"^ot:ottId": 927292, 
+"^ot:ottTaxonName": "Artibeus hartii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 2423, 
 "@tb:identifier.taxonVariant": 801187, 
@@ -1388,6 +1764,8 @@
 }, 
 "Tl1859026": {
 "^ot:originalLabel": "Micronycteris homezi", 
+"^ot:ottId": 596437, 
+"^ot:ottTaxonName": "Micronycteris homezi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 224439, 
 "@tb:identifier.taxonVariant": 289913, 
@@ -1397,6 +1775,8 @@
 }, 
 "Tl1859027": {
 "^ot:originalLabel": "Sturnira bogotensis", 
+"^ot:ottId": 136690, 
+"^ot:ottTaxonName": "Sturnira bogotensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 28148, 
 "@tb:identifier.taxonVariant": 65686, 
@@ -1406,6 +1786,8 @@
 }, 
 "Tl1859028": {
 "^ot:originalLabel": "Pteronotus macleayii", 
+"^ot:ottId": 554244, 
+"^ot:ottTaxonName": "Pteronotus macleayii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 24352, 
 "@tb:identifier.taxonVariant": 57009, 
@@ -1415,6 +1797,8 @@
 }, 
 "Tl1859029": {
 "^ot:originalLabel": "Anoura cultrata", 
+"^ot:ottId": 485774, 
+"^ot:ottTaxonName": "Anoura cultrata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 1781, 
 "@tb:identifier.taxonVariant": 4360, 
@@ -1423,6 +1807,8 @@
 }, 
 "Tl1859030": {
 "^ot:originalLabel": "Platyrrhinus brachycephalus", 
+"^ot:ottId": 295643, 
+"^ot:ottTaxonName": "Platyrrhinus brachycephalus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22748, 
 "@tb:identifier.taxonVariant": 53051, 
@@ -1432,6 +1818,8 @@
 }, 
 "Tl1859031": {
 "^ot:originalLabel": "Artibeus gnomus", 
+"^ot:ottId": 513423, 
+"^ot:ottTaxonName": "Artibeus glaucus gnomus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 64463, 
 "@tb:identifier.taxonVariant": 139203, 
@@ -1441,10 +1829,14 @@
 "^skos:prefLabel": "Artibeus glaucus gnomus"
 }, 
 "Tl1859032": {
-"^ot:originalLabel": "Vampyriscus nymphaea"
+"^ot:originalLabel": "Vampyriscus nymphaea", 
+"^ot:ottId": 981726, 
+"^ot:ottTaxonName": "Vampyressa nymphaea"
 }, 
 "Tl1859033": {
 "^ot:originalLabel": "Pteronotus davyi fulvus", 
+"^ot:ottId": 6146435, 
+"^ot:ottTaxonName": "Pteronotus davyi fulvus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 611227, 
 "@tb:identifier.taxonVariant": 817063, 
@@ -1453,6 +1845,8 @@
 }, 
 "Tl1859034": {
 "^ot:originalLabel": "Desmodus rotundus", 
+"^ot:ottId": 238431, 
+"^ot:ottTaxonName": "Desmodus rotundus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 8838, 
 "@tb:identifier.taxonVariant": 21298, 
@@ -1462,6 +1856,8 @@
 }, 
 "Tl1859035": {
 "^ot:originalLabel": "Ariteus flavescens", 
+"^ot:ottId": 842058, 
+"^ot:ottTaxonName": "Ariteus flavescens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 2353, 
 "@tb:identifier.taxonVariant": 5628, 
@@ -1471,6 +1867,8 @@
 }, 
 "Tl1859036": {
 "^ot:originalLabel": "Carollia benkeithi", 
+"^ot:ottId": 992663, 
+"^ot:ottTaxonName": "Carollia benkeithi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 305724, 
 "@tb:identifier.taxonVariant": 353891, 
@@ -1480,6 +1878,8 @@
 }, 
 "Tl1859037": {
 "^ot:originalLabel": "Mesophylla macconnelli", 
+"^ot:ottId": 534178, 
+"^ot:ottTaxonName": "Mesophylla macconnelli", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 17463, 
 "@tb:identifier.taxonVariant": 40855, 
@@ -1489,6 +1889,8 @@
 }, 
 "Tl1859038": {
 "^ot:originalLabel": "Lonchorhina inusitata", 
+"^ot:ottId": 856227, 
+"^ot:ottTaxonName": "Lonchorhina inusitata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 356234, 
 "@tb:identifier.taxonVariant": 386388, 
@@ -1498,6 +1900,8 @@
 }, 
 "Tl1859039": {
 "^ot:originalLabel": "Furipterus horrens", 
+"^ot:ottId": 1060469, 
+"^ot:ottTaxonName": "Furipterus horrens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 143804, 
 "@tb:identifier.taxonVariant": 219971, 
@@ -1507,6 +1911,8 @@
 }, 
 "Tl1859040": {
 "^ot:originalLabel": "Platyrrhinus vittatus", 
+"^ot:ottId": 348440, 
+"^ot:ottTaxonName": "Platyrrhinus vittatus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22756, 
 "@tb:identifier.taxonVariant": 53067, 
@@ -1516,6 +1922,8 @@
 }, 
 "Tl1859041": {
 "^ot:originalLabel": "Hylonycteris underwoodi", 
+"^ot:ottId": 658357, 
+"^ot:ottTaxonName": "Hylonycteris underwoodi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 13930, 
 "@tb:identifier.taxonVariant": 32847, 
@@ -1525,6 +1933,8 @@
 }, 
 "Tl1859042": {
 "^ot:originalLabel": "Diphylla ecaudata", 
+"^ot:ottId": 1060475, 
+"^ot:ottTaxonName": "Diphylla ecaudata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 9217, 
 "@tb:identifier.taxonVariant": 22085, 
@@ -1534,6 +1944,8 @@
 }, 
 "Tl1859043": {
 "^ot:originalLabel": "Artibeus bogotensis", 
+"^ot:ottId": 130225, 
+"^ot:ottTaxonName": "Artibeus bogotensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 356226, 
 "@tb:identifier.taxonVariant": 386378, 
@@ -1544,6 +1956,8 @@
 }, 
 "Tl1859044": {
 "^ot:originalLabel": "Ametrida centurio", 
+"^ot:ottId": 895014, 
+"^ot:ottTaxonName": "Ametrida centurio", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 623048, 
 "@tb:identifier.taxonVariant": 834227, 
@@ -1552,13 +1966,19 @@
 }
 }, 
 "Tl1859045": {
-"^ot:originalLabel": "Phyllonycteris poeyi poeyi"
+"^ot:originalLabel": "Phyllonycteris poeyi poeyi", 
+"^ot:ottId": 1066076, 
+"^ot:ottTaxonName": "Phyllonycteris poeyi"
 }, 
 "Tl1859046": {
-"^ot:originalLabel": "Pteronotus personatus personatus"
+"^ot:originalLabel": "Pteronotus personatus personatus", 
+"^ot:ottId": 554238, 
+"^ot:ottTaxonName": "Pteronotus personatus"
 }, 
 "Tl1859047": {
 "^ot:originalLabel": "Sturnira lilium", 
+"^ot:ottId": 401293, 
+"^ot:ottTaxonName": "Sturnira lilium", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 28150, 
 "@tb:identifier.taxonVariant": 65690, 
@@ -1567,10 +1987,14 @@
 }
 }, 
 "Tl1859048": {
-"^ot:originalLabel": "Sturnira bakeri"
+"^ot:originalLabel": "Sturnira bakeri", 
+"^ot:ottId": 6146467, 
+"^ot:ottTaxonName": "Sturnira bakeri"
 }, 
 "Tl1859049": {
 "^ot:originalLabel": "Lophostoma evotis", 
+"^ot:ottId": 375137, 
+"^ot:ottTaxonName": "Lophostoma evotis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 502285, 
 "@tb:identifier.taxonVariant": 665443, 
@@ -1580,6 +2004,8 @@
 }, 
 "Tl1859050": {
 "^ot:originalLabel": "Artibeus schwartzi", 
+"^ot:ottId": 62481, 
+"^ot:ottTaxonName": "Artibeus schwartzi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 354342, 
 "@tb:identifier.taxonVariant": 509403
@@ -1587,6 +2013,8 @@
 }, 
 "Tl1859051": {
 "^ot:originalLabel": "Platyrrhinus ismaeli", 
+"^ot:ottId": 873028, 
+"^ot:ottTaxonName": "Platyrrhinus ismaeli", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 502313, 
 "@tb:identifier.taxonVariant": 665484
@@ -1594,6 +2022,8 @@
 }, 
 "Tl1859052": {
 "^ot:originalLabel": "Anoura caudifer", 
+"^ot:ottId": 351792, 
+"^ot:ottTaxonName": "Anoura caudifer", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 1780, 
 "@tb:identifier.taxonVariant": 4359, 
@@ -1603,6 +2033,8 @@
 }, 
 "Tl1859053": {
 "^ot:originalLabel": "Anoura latidens", 
+"^ot:ottId": 130223, 
+"^ot:ottTaxonName": "Anoura latidens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 1783, 
 "@tb:identifier.taxonVariant": 4366, 
@@ -1612,6 +2044,8 @@
 }, 
 "Tl1859054": {
 "^ot:originalLabel": "Sphaeronycteris toxophyllum", 
+"^ot:ottId": 690455, 
+"^ot:ottTaxonName": "Sphaeronycteris toxophyllum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 27496, 
 "@tb:identifier.taxonVariant": 64170, 
@@ -1621,6 +2055,8 @@
 }, 
 "Tl1859055": {
 "^ot:originalLabel": "Artibeus incomitatus", 
+"^ot:ottId": 658640, 
+"^ot:ottTaxonName": "Dermanura incomitata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 515188, 
 "@tb:identifier.taxonVariant": 683713, 
@@ -1631,6 +2067,8 @@
 }, 
 "Tl1859056": {
 "^ot:originalLabel": "Leptonycteris yerbabuenae", 
+"^ot:ottId": 626271, 
+"^ot:ottTaxonName": "Leptonycteris yerbabuenae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 605571, 
 "@tb:identifier.taxonVariant": 808140, 
@@ -1639,6 +2077,8 @@
 }, 
 "Tl1859057": {
 "^ot:originalLabel": "Lonchophylla hesperia", 
+"^ot:ottId": 3613607, 
+"^ot:ottTaxonName": "Lonchophylla hesperia", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 16237, 
 "@tb:identifier.taxonVariant": 38039, 
@@ -1647,6 +2087,8 @@
 }, 
 "Tl1859058": {
 "^ot:originalLabel": "Myzopoda aurita", 
+"^ot:ottId": 6794, 
+"^ot:ottTaxonName": "Myzopoda aurita", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 149215, 
 "@tb:identifier.taxonVariant": 225013, 
@@ -1656,6 +2098,8 @@
 }, 
 "Tl1859059": {
 "^ot:originalLabel": "Rhinophylla fischerae", 
+"^ot:ottId": 546395, 
+"^ot:ottTaxonName": "Rhinophylla fischerae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 25201, 
 "@tb:identifier.taxonVariant": 59018, 
@@ -1665,6 +2109,8 @@
 }, 
 "Tl1859060": {
 "^ot:originalLabel": "Chiroderma salvini", 
+"^ot:ottId": 351785, 
+"^ot:ottTaxonName": "Chiroderma salvini", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5827, 
 "@tb:identifier.taxonVariant": 14123, 
@@ -1688,7 +2134,18 @@
 "Tr87541": {
 "@label": "Fig. 2", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:undefined", 
+"^ot:curatedType": "Bayesian inference ", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn12916690", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 194, 
 "^tb:quality.tree": "Preferred Tree", 
@@ -4794,7 +5251,18 @@
 "Tr87542": {
 "@label": "Fig. 1", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:bootstrapValues", 
+"^ot:curatedType": "Maximum likelihood ", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn12917060", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 194, 
 "^tb:quality.tree": "Preferred Tree", 
