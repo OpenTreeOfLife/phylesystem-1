@@ -43,22 +43,105 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2018-06-28T00:21:13.446Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "Tetrapods"
 }, 
-"^ot:curatorName": "sbyrum", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2018-06-28T00:21:13.446Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"sbyrum"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S13189"
 }, 
+"^ot:focalCladeOTTTaxonName": "", 
 "^ot:otusElementOrder": [
 "Tls27105"
 ], 
 "^ot:studyId": "ot_1430", 
+"^ot:studyPublication": {
+"@href": ""
+}, 
 "^ot:studyPublicationReference": "Sereno P.C. 2010. \"Taxonomy, cranial morphology, and relationships of parrot-beaked dinosaurs.\" In: , eds. New Perspectives on Horned Dinosaurs. pp. 21-58. Bloomington, University of Indiana Press.", 
 "^ot:studyYear": 2010, 
+"^ot:tag": [], 
 "^ot:taxonLinkPrefixes": {
 "@ubio": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:"
 }, 
@@ -90,10 +173,14 @@
 }
 }, 
 "Tl861454": {
-"^ot:originalLabel": "Psittacosaurus lujiatunensis"
+"^ot:originalLabel": "Psittacosaurus lujiatunensis", 
+"^ot:ottId": 4126870, 
+"^ot:ottTaxonName": "Psittacosaurus lujiatunensis"
 }, 
 "Tl861455": {
-"^ot:originalLabel": "Psittacosaurus neimongoliensis"
+"^ot:originalLabel": "Psittacosaurus neimongoliensis", 
+"^ot:ottId": 4126875, 
+"^ot:ottTaxonName": "Psittacosaurus neimongoliensis"
 }, 
 "Tl861456": {
 "^ot:originalLabel": "Liaoceratops", 
@@ -105,6 +192,8 @@
 }, 
 "Tl861457": {
 "^ot:originalLabel": "Psittacosaurus sinensis", 
+"^ot:ottId": 4126873, 
+"^ot:ottTaxonName": "Psittacosaurus sinensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 613671, 
 "@tb:identifier.taxonVariant": 820723, 
@@ -112,19 +201,27 @@
 }
 }, 
 "Tl861458": {
-"^ot:originalLabel": "Psittacosaurus sp."
+"^ot:originalLabel": "Psittacosaurus sp.", 
+"^ot:ottId": 4126864, 
+"^ot:ottTaxonName": "Psittacosaurus"
 }, 
 "Tl861459": {
-"^ot:originalLabel": "Psittacosaurus sibiricus"
+"^ot:originalLabel": "Psittacosaurus sibiricus", 
+"^ot:ottId": 4126868, 
+"^ot:ottTaxonName": "Psittacosaurus sibiricus"
 }, 
 "Tl861460": {
-"^ot:originalLabel": "Psittacosaurus meileyingensis"
+"^ot:originalLabel": "Psittacosaurus meileyingensis", 
+"^ot:ottId": 4126876, 
+"^ot:ottTaxonName": "Psittacosaurus meileyingensis"
 }, 
 "Tl861461": {
 "^ot:originalLabel": "Yinlong"
 }, 
 "Tl861462": {
 "^ot:originalLabel": "Psittacosaurus mongoliensis", 
+"^ot:ottId": 4126866, 
+"^ot:ottTaxonName": "Psittacosaurus mongoliensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 613672, 
 "@tb:identifier.taxonVariant": 820724, 
@@ -135,7 +232,9 @@
 "^ot:originalLabel": "Psittacosaurus xinjiangensis"
 }, 
 "Tl861464": {
-"^ot:originalLabel": "Psittacosaurus major"
+"^ot:originalLabel": "Psittacosaurus major", 
+"^ot:ottId": 4126877, 
+"^ot:ottTaxonName": "Psittacosaurus major"
 }
 }
 }
@@ -152,7 +251,18 @@
 "Tr55885": {
 "@label": "Figure 2.23 E", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:undefined", 
+"^ot:curatedType": "Maximum parsimony ", 
+"^ot:inGroupClade": "Tn9169954", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn9169954", 
+"^ot:specifiedRoot": "Tn9169954", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 8, 
 "^tb:quality.tree": "Unrated", 
