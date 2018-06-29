@@ -51,16 +51,106 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2018-06-28T23:51:55.170Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "Rosids"
 }, 
-"^ot:curatorName": "Walter1186", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}, 
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": "$1"
+}, 
+"old": {
+"$": "^(\\S*\\s+\\S*).*"
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2018-06-28T23:51:55.170Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Walter1186"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S21451"
 }, 
+"^ot:focalClade": 829308, 
+"^ot:focalCladeOTTTaxonName": "Zieria", 
 "^ot:otusElementOrder": [
 "Tls58850"
 ], 
@@ -70,6 +160,9 @@
 }, 
 "^ot:studyPublicationReference": "Barrett R., Bayly M.J., Duretto M., Forster P.I., Ladiges P.Y., & Cantrill D.J. 2018. Phylogenetic analysis of Zieria (Rutaceae) in Australia and New Caledonia based on nuclear ribosomal DNA shows species polyphyly, divergent paralogues and incongruence with chloroplast DNA. Australian Systematic Botany, 31: 16-47.", 
 "^ot:studyYear": 2018, 
+"^ot:tag": [
+"nrDNA"
+], 
 "^ot:taxonLinkPrefixes": {
 "@ubio": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:", 
 "@uniprot": "http://purl.uniprot.org/taxonomy/"
@@ -97,14 +190,19 @@
 "^skos:historyNote": "Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlOTUWriter@8b607fb $Rev$", 
 "otuById": {
 "Tl2868756": {
-"^ot:originalLabel": "Zieria graniticola MTM479"
+"^ot:originalLabel": "Zieria graniticola MTM479", 
+"^ot:ottId": 5747599, 
+"^ot:ottTaxonName": "Zieria graniticola"
 }, 
 "Tl2868757": {
-"^ot:originalLabel": "Zieria whitei AF5486"
+"^ot:originalLabel": "Zieria whitei AF5486", 
+"^ot:ottId": 5747585, 
+"^ot:ottTaxonName": "Zieria whitei"
 }, 
 "Tl2868758": {
-"^ot:altLabel": "Zieria laevigata PIF34475", 
 "^ot:originalLabel": "Zieria laevigata MTM258", 
+"^ot:ottId": 879924, 
+"^ot:ottTaxonName": "Zieria laevigata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 629617, 
 "@tb:identifier.taxonVariant": 843987, 
@@ -112,8 +210,9 @@
 }
 }, 
 "Tl2868759": {
-"^ot:altLabel": "Zieria smithii", 
 "^ot:originalLabel": "Zieria smithii DJO327", 
+"^ot:ottId": 404874, 
+"^ot:ottTaxonName": "Zieria smithii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 629599, 
 "@tb:identifier.taxonVariant": 843969, 
@@ -121,8 +220,9 @@
 }
 }, 
 "Tl2868760": {
-"^ot:altLabel": "Zieria cytisoides", 
 "^ot:originalLabel": "Zieria cytisoides AF5451", 
+"^ot:ottId": 355093, 
+"^ot:ottTaxonName": "Zieria cytisoides", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 629600, 
 "@tb:identifier.taxonVariant": 843970, 
@@ -131,6 +231,8 @@
 }, 
 "Tl2868761": {
 "^ot:originalLabel": "Zieria adenophora MJB2010", 
+"^ot:ottId": 829304, 
+"^ot:ottTaxonName": "Zieria adenophora", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 629633, 
 "@tb:identifier.taxonVariant": 844003, 
@@ -138,8 +240,9 @@
 }
 }, 
 "Tl2868762": {
-"^ot:altLabel": "Zieria arborescens", 
 "^ot:originalLabel": "Zieria arborescens DJO110", 
+"^ot:ottId": 829302, 
+"^ot:ottTaxonName": "Zieria arborescens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 446523, 
 "@tb:identifier.taxonVariant": 590085, 
@@ -148,14 +251,19 @@
 }
 }, 
 "Tl2868763": {
-"^ot:originalLabel": "Zieria distans MTM287"
+"^ot:originalLabel": "Zieria distans MTM287", 
+"^ot:ottId": 5747582, 
+"^ot:ottTaxonName": "Zieria distans"
 }, 
 "Tl2868764": {
-"^ot:originalLabel": "Zieria vagans PIF34832"
+"^ot:originalLabel": "Zieria vagans PIF34832", 
+"^ot:ottId": 5747604, 
+"^ot:ottTaxonName": "Zieria vagans"
 }, 
 "Tl2868765": {
-"^ot:altLabel": "Zieria arborescens", 
 "^ot:originalLabel": "Zieria arborescens RAB512a", 
+"^ot:ottId": 829302, 
+"^ot:ottTaxonName": "Zieria arborescens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 446523, 
 "@tb:identifier.taxonVariant": 590085, 
@@ -164,8 +272,9 @@
 }
 }, 
 "Tl2868766": {
-"^ot:altLabel": "Zieria smithii", 
 "^ot:originalLabel": "Zieria smithii RAB511", 
+"^ot:ottId": 404874, 
+"^ot:ottTaxonName": "Zieria smithii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 629599, 
 "@tb:identifier.taxonVariant": 843969, 
@@ -173,14 +282,19 @@
 }
 }, 
 "Tl2868767": {
-"^ot:originalLabel": "Zieria oreocena RAB581"
+"^ot:originalLabel": "Zieria oreocena RAB581", 
+"^ot:ottId": 5747594, 
+"^ot:ottTaxonName": "Zieria oreocena"
 }, 
 "Tl2868768": {
-"^ot:originalLabel": "Zieria oreocena RAB580a"
+"^ot:originalLabel": "Zieria oreocena RAB580a", 
+"^ot:ottId": 5747594, 
+"^ot:ottTaxonName": "Zieria oreocena"
 }, 
 "Tl2868769": {
-"^ot:altLabel": "Zieria smithii", 
 "^ot:originalLabel": "Zieria smithii MTM926", 
+"^ot:ottId": 404874, 
+"^ot:ottTaxonName": "Zieria smithii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 629599, 
 "@tb:identifier.taxonVariant": 843969, 
@@ -189,6 +303,8 @@
 }, 
 "Tl2868770": {
 "^ot:originalLabel": "Zieria aspalathoides Bean27984", 
+"^ot:ottId": 829288, 
+"^ot:ottTaxonName": "Zieria aspalathoides", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 633863, 
 "@tb:identifier.taxonVariant": 848875, 
@@ -196,8 +312,9 @@
 }
 }, 
 "Tl2868771": {
-"^ot:altLabel": "Zieria ingramii 795202", 
 "^ot:originalLabel": "Zieria ingramii IRT613", 
+"^ot:ottId": 879926, 
+"^ot:ottTaxonName": "Zieria ingramii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 629612, 
 "@tb:identifier.taxonVariant": 843982, 
@@ -206,6 +323,8 @@
 }, 
 "Tl2868772": {
 "^ot:originalLabel": "Zieria minutiflora trichocarpa KRM8283", 
+"^ot:ottId": 879934, 
+"^ot:ottTaxonName": "Zieria minutiflora", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 629625, 
 "@tb:identifier.taxonVariant": 843995, 
@@ -214,6 +333,8 @@
 }, 
 "Tl2868773": {
 "^ot:originalLabel": "Neobyrnesia suberosa", 
+"^ot:ottId": 829294, 
+"^ot:ottTaxonName": "Neobyrnesia suberosa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 629578, 
 "@tb:identifier.taxonVariant": 843948, 
@@ -221,8 +342,9 @@
 }
 }, 
 "Tl2868774": {
-"^ot:altLabel": "Zieria arborescens", 
 "^ot:originalLabel": "Zieria arborescens MFD2035", 
+"^ot:ottId": 829302, 
+"^ot:ottTaxonName": "Zieria arborescens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 446523, 
 "@tb:identifier.taxonVariant": 590085, 
@@ -232,6 +354,8 @@
 }, 
 "Tl2868775": {
 "^ot:originalLabel": "Zieria caducibracteata IRT9585", 
+"^ot:ottId": 355085, 
+"^ot:ottTaxonName": "Zieria caducibracteata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 633864, 
 "@tb:identifier.taxonVariant": 848876, 
@@ -239,8 +363,9 @@
 }
 }, 
 "Tl2868776": {
-"^ot:altLabel": "Zieria arborescens glabrifolia MBT213", 
 "^ot:originalLabel": "Zieria arborescens glabrifolia MTM213", 
+"^ot:ottId": 829302, 
+"^ot:ottTaxonName": "Zieria arborescens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 629639, 
 "@tb:identifier.taxonVariant": 844009, 
@@ -248,8 +373,9 @@
 }
 }, 
 "Tl2868777": {
-"^ot:altLabel": "Zieria smithii", 
 "^ot:originalLabel": "Zieria smithii PIF38466", 
+"^ot:ottId": 404874, 
+"^ot:ottTaxonName": "Zieria smithii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 629599, 
 "@tb:identifier.taxonVariant": 843969, 
@@ -258,6 +384,8 @@
 }, 
 "Tl2868778": {
 "^ot:originalLabel": "Zieria baeuerlenii MJB2011", 
+"^ot:ottId": 829286, 
+"^ot:ottTaxonName": "Zieria baeuerlenii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 629619, 
 "@tb:identifier.taxonVariant": 843989, 
@@ -265,11 +393,14 @@
 }
 }, 
 "Tl2868779": {
-"^ot:originalLabel": "Zieria tenuis Bean4609"
+"^ot:originalLabel": "Zieria tenuis Bean4609", 
+"^ot:ottId": 5747591, 
+"^ot:ottTaxonName": "Zieria tenuis"
 }, 
 "Tl2868780": {
-"^ot:altLabel": "Zieria arborescens", 
 "^ot:originalLabel": "Zieria arborescens RAB504", 
+"^ot:ottId": 829302, 
+"^ot:ottTaxonName": "Zieria arborescens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 446523, 
 "@tb:identifier.taxonVariant": 590085, 
@@ -278,8 +409,9 @@
 }
 }, 
 "Tl2868781": {
-"^ot:altLabel": "Zieria involucrata", 
 "^ot:originalLabel": "Zieria involucrata 506074", 
+"^ot:ottId": 5747584, 
+"^ot:ottTaxonName": "Zieria involucrata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 629608, 
 "@tb:identifier.taxonVariant": 843978, 
@@ -287,16 +419,24 @@
 }
 }, 
 "Tl2868782": {
-"^ot:originalLabel": "Zieria parrisiae RJ1899"
+"^ot:originalLabel": "Zieria parrisiae RJ1899", 
+"^ot:ottId": 879940, 
+"^ot:ottTaxonName": "Zieria parrisiae"
 }, 
 "Tl2868783": {
-"^ot:originalLabel": "Zieria bifida MTM537"
+"^ot:originalLabel": "Zieria bifida MTM537", 
+"^ot:ottId": 5747592, 
+"^ot:ottTaxonName": "Zieria bifida"
 }, 
 "Tl2868784": {
-"^ot:originalLabel": "Zieria boolbunda KMS616"
+"^ot:originalLabel": "Zieria boolbunda KMS616", 
+"^ot:ottId": 5747602, 
+"^ot:ottTaxonName": "Zieria boolbunda"
 }, 
 "Tl2868785": {
 "^ot:originalLabel": "Zieria littoralis MJB2017", 
+"^ot:ottId": 879928, 
+"^ot:ottTaxonName": "Zieria littoralis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 629613, 
 "@tb:identifier.taxonVariant": 843983, 
@@ -304,8 +444,9 @@
 }
 }, 
 "Tl2868786": {
-"^ot:altLabel": "Zieria smithii", 
 "^ot:originalLabel": "Zieria smithii PIF38231", 
+"^ot:ottId": 404874, 
+"^ot:ottTaxonName": "Zieria smithii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 629599, 
 "@tb:identifier.taxonVariant": 843969, 
@@ -313,8 +454,9 @@
 }
 }, 
 "Tl2868787": {
-"^ot:altLabel": "Zieria smithii", 
 "^ot:originalLabel": "Zieria smithii MTM275", 
+"^ot:ottId": 404874, 
+"^ot:ottTaxonName": "Zieria smithii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 629599, 
 "@tb:identifier.taxonVariant": 843969, 
@@ -322,8 +464,9 @@
 }
 }, 
 "Tl2868788": {
-"^ot:altLabel": "Zieria odororifera warrabahensis  599824", 
 "^ot:originalLabel": "Zieria odorifera 2706 2678", 
+"^ot:ottId": 879942, 
+"^ot:ottTaxonName": "Zieria odorifera", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 629627, 
 "@tb:identifier.taxonVariant": 843997, 
@@ -331,8 +474,9 @@
 }
 }, 
 "Tl2868789": {
-"^ot:altLabel": "Zieria collina MJB2012", 
 "^ot:originalLabel": "Zieria collina MTM507", 
+"^ot:ottId": 355081, 
+"^ot:ottTaxonName": "Zieria collina", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 629615, 
 "@tb:identifier.taxonVariant": 843985, 
@@ -340,8 +484,9 @@
 }
 }, 
 "Tl2868790": {
-"^ot:altLabel": "Zieria prostrata MJB2019", 
 "^ot:originalLabel": "Zieria prostrata 2701 2667", 
+"^ot:ottId": 404870, 
+"^ot:ottTaxonName": "Zieria prostrata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 629614, 
 "@tb:identifier.taxonVariant": 843984, 
@@ -350,6 +495,8 @@
 }, 
 "Tl2868791": {
 "^ot:originalLabel": "Zieria laevigata PIF34475", 
+"^ot:ottId": 879924, 
+"^ot:ottTaxonName": "Zieria laevigata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 629617, 
 "@tb:identifier.taxonVariant": 843987, 
@@ -357,11 +504,14 @@
 }
 }, 
 "Tl2868792": {
-"^ot:originalLabel": "Zieria madida AF5320"
+"^ot:originalLabel": "Zieria madida AF5320", 
+"^ot:ottId": 5233157, 
+"^ot:ottTaxonName": "Zieria madida"
 }, 
 "Tl2868793": {
-"^ot:altLabel": "Zieria pilosa", 
 "^ot:originalLabel": "Zieria pilosa MD2008", 
+"^ot:ottId": 404868, 
+"^ot:ottTaxonName": "Zieria pilosa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 629601, 
 "@tb:identifier.taxonVariant": 843971, 
@@ -369,8 +519,9 @@
 }
 }, 
 "Tl2868794": {
-"^ot:altLabel": "Zieria smithii", 
 "^ot:originalLabel": "Zieria smithii PIF34139", 
+"^ot:ottId": 404874, 
+"^ot:ottTaxonName": "Zieria smithii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 629599, 
 "@tb:identifier.taxonVariant": 843969, 
@@ -378,8 +529,9 @@
 }
 }, 
 "Tl2868795": {
-"^ot:altLabel": "Zieria obcordata 608324", 
 "^ot:originalLabel": "Zieria obcordata RJC106", 
+"^ot:ottId": 879936, 
+"^ot:ottTaxonName": "Zieria obcordata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 629632, 
 "@tb:identifier.taxonVariant": 844002, 
@@ -387,8 +539,9 @@
 }
 }, 
 "Tl2868796": {
-"^ot:altLabel": "Zieria covenyi", 
 "^ot:originalLabel": "Zieria covenyi MJB2013", 
+"^ot:ottId": 355091, 
+"^ot:ottTaxonName": "Zieria covenyi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 629602, 
 "@tb:identifier.taxonVariant": 843972, 
@@ -396,11 +549,14 @@
 }
 }, 
 "Tl2868797": {
-"^ot:originalLabel": "Zieria insularis 2656 2681"
+"^ot:originalLabel": "Zieria insularis 2656 2681", 
+"^ot:ottId": 5747601, 
+"^ot:ottTaxonName": "Zieria insularis"
 }, 
 "Tl2868798": {
-"^ot:altLabel": "Zieria southwellii", 
 "^ot:originalLabel": "Zieria southwellii MTM251", 
+"^ot:ottId": 404876, 
+"^ot:ottTaxonName": "Zieria southwellii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 629605, 
 "@tb:identifier.taxonVariant": 843975, 
@@ -408,8 +564,9 @@
 }
 }, 
 "Tl2868799": {
-"^ot:altLabel": "Zieria smithii", 
 "^ot:originalLabel": "Zieria smithii MTM303", 
+"^ot:ottId": 404874, 
+"^ot:ottTaxonName": "Zieria smithii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 629599, 
 "@tb:identifier.taxonVariant": 843969, 
@@ -417,11 +574,14 @@
 }
 }, 
 "Tl2868800": {
-"^ot:originalLabel": "Zieria oreocena MJB1982"
+"^ot:originalLabel": "Zieria oreocena MJB1982", 
+"^ot:ottId": 5747594, 
+"^ot:ottTaxonName": "Zieria oreocena"
 }, 
 "Tl2868801": {
-"^ot:altLabel": "Zieria furfuracea euthadenia  MTM280", 
 "^ot:originalLabel": "Zieria furfuracea euthadenia MTM280", 
+"^ot:ottId": 355096, 
+"^ot:ottTaxonName": "Zieria furfuracea", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 629629, 
 "@tb:identifier.taxonVariant": 843999, 
@@ -429,8 +589,9 @@
 }
 }, 
 "Tl2868802": {
-"^ot:altLabel": "Zieria odororifera warrabahensis  599824", 
 "^ot:originalLabel": "Zieria odorifera 2705 2679", 
+"^ot:ottId": 879942, 
+"^ot:ottTaxonName": "Zieria odorifera", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 629627, 
 "@tb:identifier.taxonVariant": 843997, 
@@ -438,8 +599,9 @@
 }
 }, 
 "Tl2868803": {
-"^ot:altLabel": "Zieria cytisoides", 
 "^ot:originalLabel": "Zieria cytisoides DJO416", 
+"^ot:ottId": 355093, 
+"^ot:ottTaxonName": "Zieria cytisoides", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 629600, 
 "@tb:identifier.taxonVariant": 843970, 
@@ -448,6 +610,8 @@
 }, 
 "Tl2868804": {
 "^ot:originalLabel": "Zieria buxijugum RJ1897", 
+"^ot:ottId": 355083, 
+"^ot:ottTaxonName": "Zieria buxijugum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 629630, 
 "@tb:identifier.taxonVariant": 844000, 
@@ -455,8 +619,9 @@
 }
 }, 
 "Tl2868805": {
-"^ot:altLabel": "Zieria smithii", 
 "^ot:originalLabel": "Zieria smithii MJB2184", 
+"^ot:ottId": 404874, 
+"^ot:ottTaxonName": "Zieria smithii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 629599, 
 "@tb:identifier.taxonVariant": 843969, 
@@ -465,6 +630,8 @@
 }, 
 "Tl2868806": {
 "^ot:originalLabel": "Zieria granulata MJB2016", 
+"^ot:ottId": 355098, 
+"^ot:ottTaxonName": "Zieria granulata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 629636, 
 "@tb:identifier.taxonVariant": 844006, 
@@ -472,10 +639,14 @@
 }
 }, 
 "Tl2868807": {
-"^ot:originalLabel": "Zieria alata KM629212"
+"^ot:originalLabel": "Zieria alata KM629212", 
+"^ot:ottId": 5747583, 
+"^ot:ottTaxonName": "Zieria alata"
 }, 
 "Tl2868808": {
 "^ot:originalLabel": "Zieria minutiflora minutiflora ABP2356", 
+"^ot:ottId": 879934, 
+"^ot:ottTaxonName": "Zieria minutiflora", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 633865, 
 "@tb:identifier.taxonVariant": 848877, 
@@ -483,8 +654,9 @@
 }
 }, 
 "Tl2868809": {
-"^ot:altLabel": "Zieria prostrata MJB2019", 
 "^ot:originalLabel": "Zieria prostrata 2714 2668", 
+"^ot:ottId": 404870, 
+"^ot:ottTaxonName": "Zieria prostrata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 629614, 
 "@tb:identifier.taxonVariant": 843984, 
@@ -492,8 +664,9 @@
 }
 }, 
 "Tl2868810": {
-"^ot:altLabel": "Zieria lasiocaulis PG7908", 
 "^ot:originalLabel": "Zieria lasiocaulisPG7908", 
+"^ot:ottId": 5747595, 
+"^ot:ottTaxonName": "Zieria lasiocaulis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 629624, 
 "@tb:identifier.taxonVariant": 843994, 
@@ -501,8 +674,9 @@
 }
 }, 
 "Tl2868811": {
-"^ot:altLabel": "Zieria rimulosa JRC5802", 
 "^ot:originalLabel": "Zieria rimulosa JRC8002", 
+"^ot:ottId": 5747581, 
+"^ot:ottTaxonName": "Zieria rimulosa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 629621, 
 "@tb:identifier.taxonVariant": 843991, 
@@ -510,8 +684,9 @@
 }
 }, 
 "Tl2868812": {
-"^ot:altLabel": "Zieria citriodora", 
 "^ot:originalLabel": "Zieria citriodora NGW2038", 
+"^ot:ottId": 355079, 
+"^ot:ottTaxonName": "Zieria citriodora", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 629606, 
 "@tb:identifier.taxonVariant": 843976, 
@@ -519,8 +694,9 @@
 }
 }, 
 "Tl2868813": {
-"^ot:altLabel": "Zieria smithii", 
 "^ot:originalLabel": "Zieria smithii RAB548", 
+"^ot:ottId": 404874, 
+"^ot:ottTaxonName": "Zieria smithii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 629599, 
 "@tb:identifier.taxonVariant": 843969, 
@@ -528,8 +704,9 @@
 }
 }, 
 "Tl2868814": {
-"^ot:altLabel": "Zieria smithii", 
 "^ot:originalLabel": "Zieria smithii SPP2032", 
+"^ot:ottId": 404874, 
+"^ot:ottTaxonName": "Zieria smithii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 629599, 
 "@tb:identifier.taxonVariant": 843969, 
@@ -537,8 +714,9 @@
 }
 }, 
 "Tl2868815": {
-"^ot:altLabel": "Zieria smithii", 
 "^ot:originalLabel": "Zieria smithii PIF38266", 
+"^ot:ottId": 404874, 
+"^ot:ottTaxonName": "Zieria smithii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 629599, 
 "@tb:identifier.taxonVariant": 843969, 
@@ -547,6 +725,8 @@
 }, 
 "Tl2868816": {
 "^ot:originalLabel": "Zieria tuberculata RAB505", 
+"^ot:ottId": 404878, 
+"^ot:ottTaxonName": "Zieria tuberculata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 629622, 
 "@tb:identifier.taxonVariant": 843992, 
@@ -554,8 +734,9 @@
 }
 }, 
 "Tl2868817": {
-"^ot:altLabel": "Zieria smithii", 
 "^ot:originalLabel": "Zieria smithii PIF33151", 
+"^ot:ottId": 404874, 
+"^ot:ottTaxonName": "Zieria smithii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 629599, 
 "@tb:identifier.taxonVariant": 843969, 
@@ -564,6 +745,8 @@
 }, 
 "Tl2868818": {
 "^ot:originalLabel": "Zieria montana PIF36219", 
+"^ot:ottId": 879932, 
+"^ot:ottTaxonName": "Zieria montana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 629634, 
 "@tb:identifier.taxonVariant": 844004, 
@@ -571,8 +754,9 @@
 }
 }, 
 "Tl2868819": {
-"^ot:altLabel": "Zieria arborescens", 
 "^ot:originalLabel": "Zieria arborescens MJB1868", 
+"^ot:ottId": 829302, 
+"^ot:ottTaxonName": "Zieria arborescens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 446523, 
 "@tb:identifier.taxonVariant": 590085, 
@@ -581,8 +765,9 @@
 }
 }, 
 "Tl2868820": {
-"^ot:altLabel": "Zieria smithii", 
 "^ot:originalLabel": "Zieria smithii PIF36221", 
+"^ot:ottId": 404874, 
+"^ot:ottTaxonName": "Zieria smithii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 629599, 
 "@tb:identifier.taxonVariant": 843969, 
@@ -591,6 +776,8 @@
 }, 
 "Tl2868821": {
 "^ot:originalLabel": "Zieria caducibracteata 745482", 
+"^ot:ottId": 355085, 
+"^ot:ottTaxonName": "Zieria caducibracteata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 629620, 
 "@tb:identifier.taxonVariant": 843990, 
@@ -598,8 +785,9 @@
 }
 }, 
 "Tl2868822": {
-"^ot:altLabel": "Zieria smithii", 
 "^ot:originalLabel": "Zieria smithii MTM1127", 
+"^ot:ottId": 404874, 
+"^ot:ottTaxonName": "Zieria smithii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 629599, 
 "@tb:identifier.taxonVariant": 843969, 
@@ -607,8 +795,9 @@
 }
 }, 
 "Tl2868823": {
-"^ot:altLabel": "Zieria smithii", 
 "^ot:originalLabel": "Zieria smithii KRM8282", 
+"^ot:ottId": 404874, 
+"^ot:ottTaxonName": "Zieria smithii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 629599, 
 "@tb:identifier.taxonVariant": 843969, 
@@ -617,6 +806,8 @@
 }, 
 "Tl2868824": {
 "^ot:originalLabel": "Zieria collina MJB2012", 
+"^ot:ottId": 355081, 
+"^ot:ottTaxonName": "Zieria collina", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 629615, 
 "@tb:identifier.taxonVariant": 843985, 
@@ -624,8 +815,9 @@
 }
 }, 
 "Tl2868825": {
-"^ot:altLabel": "Zieria pilosa", 
 "^ot:originalLabel": "Zieria pilosa RAB502", 
+"^ot:ottId": 404868, 
+"^ot:ottTaxonName": "Zieria pilosa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 629601, 
 "@tb:identifier.taxonVariant": 843971, 
@@ -634,6 +826,8 @@
 }, 
 "Tl2868826": {
 "^ot:originalLabel": "Zieria veronicea veronicea MJB1980", 
+"^ot:ottId": 5747600, 
+"^ot:ottTaxonName": "Zieria veronicea", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 633945, 
 "@tb:identifier.taxonVariant": 848957, 
@@ -641,8 +835,9 @@
 }
 }, 
 "Tl2868827": {
-"^ot:altLabel": "Zieria laxiflora", 
 "^ot:originalLabel": "Zieria laxiflora MTM385", 
+"^ot:ottId": 879930, 
+"^ot:ottTaxonName": "Zieria laxiflora", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 629610, 
 "@tb:identifier.taxonVariant": 843980, 
@@ -651,6 +846,8 @@
 }, 
 "Tl2868828": {
 "^ot:originalLabel": "Zieria compacta PIF34479", 
+"^ot:ottId": 5747590, 
+"^ot:ottTaxonName": "Zieria compacta", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 629626, 
 "@tb:identifier.taxonVariant": 843996, 
@@ -658,8 +855,9 @@
 }
 }, 
 "Tl2868829": {
-"^ot:altLabel": "Zieria prostrata MJB2019", 
 "^ot:originalLabel": "Zieria prostrata 758677", 
+"^ot:ottId": 404870, 
+"^ot:ottTaxonName": "Zieria prostrata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 629614, 
 "@tb:identifier.taxonVariant": 843984, 
@@ -667,8 +865,9 @@
 }
 }, 
 "Tl2868830": {
-"^ot:altLabel": "Zieria smithii", 
 "^ot:originalLabel": "Zieria smithii MTM929", 
+"^ot:ottId": 404874, 
+"^ot:ottTaxonName": "Zieria smithii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 629599, 
 "@tb:identifier.taxonVariant": 843969, 
@@ -676,8 +875,9 @@
 }
 }, 
 "Tl2868831": {
-"^ot:altLabel": "Zieria murphyi 440349", 
 "^ot:originalLabel": "Zieria murphyi JA1356", 
+"^ot:ottId": 879938, 
+"^ot:ottTaxonName": "Zieria murphyi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 629618, 
 "@tb:identifier.taxonVariant": 843988, 
@@ -685,8 +885,9 @@
 }
 }, 
 "Tl2868832": {
-"^ot:altLabel": "Zieria arborescens", 
 "^ot:originalLabel": "Zieria arborescens MBT270", 
+"^ot:ottId": 829302, 
+"^ot:ottTaxonName": "Zieria arborescens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 446523, 
 "@tb:identifier.taxonVariant": 590085, 
@@ -695,11 +896,14 @@
 }
 }, 
 "Tl2868833": {
-"^ot:originalLabel": "Zieria inexpectata CMH201"
+"^ot:originalLabel": "Zieria inexpectata CMH201", 
+"^ot:ottId": 5747586, 
+"^ot:ottTaxonName": "Zieria inexpectata"
 }, 
 "Tl2868834": {
-"^ot:altLabel": "Zieria smithii", 
 "^ot:originalLabel": "Zieria smithii MJB2023", 
+"^ot:ottId": 404874, 
+"^ot:ottTaxonName": "Zieria smithii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 629599, 
 "@tb:identifier.taxonVariant": 843969, 
@@ -708,6 +912,8 @@
 }, 
 "Tl2868835": {
 "^ot:originalLabel": "Zieria furfuracea furfuracea 466549", 
+"^ot:ottId": 355096, 
+"^ot:ottTaxonName": "Zieria furfuracea", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 629628, 
 "@tb:identifier.taxonVariant": 843998, 
@@ -715,8 +921,9 @@
 }
 }, 
 "Tl2868836": {
-"^ot:altLabel": "Zieria robusta", 
 "^ot:originalLabel": "Zieria robusta MFD2049", 
+"^ot:ottId": 404872, 
+"^ot:ottTaxonName": "Zieria robusta", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 629604, 
 "@tb:identifier.taxonVariant": 843974, 
@@ -724,8 +931,9 @@
 }
 }, 
 "Tl2868837": {
-"^ot:altLabel": "Zieria chevalieri", 
 "^ot:originalLabel": "Zieria chevalieri MJB2119", 
+"^ot:ottId": 5233158, 
+"^ot:ottTaxonName": "Zieria chevalieri", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 629603, 
 "@tb:identifier.taxonVariant": 843973, 
@@ -733,8 +941,9 @@
 }
 }, 
 "Tl2868838": {
-"^ot:altLabel": "Zieria minutiflora minutiflora ABP2356", 
 "^ot:originalLabel": "Zieria minutiflora minutiflora PIF34313", 
+"^ot:ottId": 879934, 
+"^ot:ottTaxonName": "Zieria minutiflora", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 633865, 
 "@tb:identifier.taxonVariant": 848877, 
@@ -742,8 +951,9 @@
 }
 }, 
 "Tl2868839": {
-"^ot:altLabel": "Zieria robertsiorum AF3549", 
 "^ot:originalLabel": "Zieria robertsiorum AF5349", 
+"^ot:ottId": 5747588, 
+"^ot:ottTaxonName": "Zieria robertsiorum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 629637, 
 "@tb:identifier.taxonVariant": 844007, 
@@ -751,10 +961,14 @@
 }
 }, 
 "Tl2868840": {
-"^ot:originalLabel": "Zieria fraseri robusta MTB3739"
+"^ot:originalLabel": "Zieria fraseri robusta MTB3739", 
+"^ot:ottId": 355089, 
+"^ot:ottTaxonName": "Zieria fraseri"
 }, 
 "Tl2868841": {
 "^ot:originalLabel": "Zieria furfuracea gymnocarpa PIF34232", 
+"^ot:ottId": 355096, 
+"^ot:ottTaxonName": "Zieria furfuracea", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 629635, 
 "@tb:identifier.taxonVariant": 844005, 
@@ -762,8 +976,9 @@
 }
 }, 
 "Tl2868842": {
-"^ot:altLabel": "Zieria fraseri", 
 "^ot:originalLabel": "Zieria fraseri fraseri SPP1995", 
+"^ot:ottId": 355089, 
+"^ot:ottTaxonName": "Zieria fraseri", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 629555, 
 "@tb:identifier.taxonVariant": 843925, 
@@ -772,6 +987,8 @@
 }, 
 "Tl2868843": {
 "^ot:originalLabel": "Zieria formosa MJB2014", 
+"^ot:ottId": 355087, 
+"^ot:ottTaxonName": "Zieria formosa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 629623, 
 "@tb:identifier.taxonVariant": 843993, 
@@ -779,11 +996,14 @@
 }
 }, 
 "Tl2868844": {
-"^ot:originalLabel": "Zieria cephalophila TH339"
+"^ot:originalLabel": "Zieria cephalophila TH339", 
+"^ot:ottId": 5747603, 
+"^ot:ottTaxonName": "Zieria cephalophila"
 }, 
 "Tl2868845": {
-"^ot:altLabel": "Zieria littoralis MJB2017", 
 "^ot:originalLabel": "Zieria littoralis RAB508", 
+"^ot:ottId": 879928, 
+"^ot:ottTaxonName": "Zieria littoralis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 629613, 
 "@tb:identifier.taxonVariant": 843983, 
@@ -792,6 +1012,8 @@
 }, 
 "Tl2868846": {
 "^ot:originalLabel": "Zieria hindii 413359", 
+"^ot:ottId": 5747589, 
+"^ot:ottTaxonName": "Zieria hindii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 629616, 
 "@tb:identifier.taxonVariant": 843986, 
@@ -799,8 +1021,9 @@
 }
 }, 
 "Tl2868847": {
-"^ot:altLabel": "Zieria arborescens", 
 "^ot:originalLabel": "Zieria arborescens MJB2251a", 
+"^ot:ottId": 829302, 
+"^ot:ottTaxonName": "Zieria arborescens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 446523, 
 "@tb:identifier.taxonVariant": 590085, 
@@ -809,11 +1032,14 @@
 }
 }, 
 "Tl2868848": {
-"^ot:originalLabel": "Zieria oreocena DJO222"
+"^ot:originalLabel": "Zieria oreocena DJO222", 
+"^ot:ottId": 5747594, 
+"^ot:ottTaxonName": "Zieria oreocena"
 }, 
 "Tl2868849": {
-"^ot:altLabel": "Zieria smithii", 
 "^ot:originalLabel": "Zieria smithii MJB2029", 
+"^ot:ottId": 404874, 
+"^ot:ottTaxonName": "Zieria smithii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 629599, 
 "@tb:identifier.taxonVariant": 843969, 
@@ -821,8 +1047,9 @@
 }
 }, 
 "Tl2868850": {
-"^ot:altLabel": "Zieria smithii", 
 "^ot:originalLabel": "Zieria smithii PIF38276", 
+"^ot:ottId": 404874, 
+"^ot:ottTaxonName": "Zieria smithii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 629599, 
 "@tb:identifier.taxonVariant": 843969, 
@@ -830,8 +1057,9 @@
 }
 }, 
 "Tl2868851": {
-"^ot:altLabel": "Zieria ingramii 795202", 
 "^ot:originalLabel": "Zieria ingramii 759202", 
+"^ot:ottId": 879926, 
+"^ot:ottTaxonName": "Zieria ingramii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 629612, 
 "@tb:identifier.taxonVariant": 843982, 
@@ -839,8 +1067,9 @@
 }
 }, 
 "Tl2868852": {
-"^ot:altLabel": "Zieria smithii", 
 "^ot:originalLabel": "Zieria smithii AF5659", 
+"^ot:ottId": 404874, 
+"^ot:ottTaxonName": "Zieria smithii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 629599, 
 "@tb:identifier.taxonVariant": 843969, 
@@ -848,10 +1077,14 @@
 }
 }, 
 "Tl2868853": {
-"^ot:originalLabel": "Zieria eungellaensis Bean4435"
+"^ot:originalLabel": "Zieria eungellaensis Bean4435", 
+"^ot:ottId": 5747587, 
+"^ot:ottTaxonName": "Zieria eungellaensis"
 }, 
 "Tl2868854": {
 "^ot:originalLabel": "Zieria veronicea insularis WN14AE", 
+"^ot:ottId": 5747600, 
+"^ot:ottTaxonName": "Zieria veronicea", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 629631, 
 "@tb:identifier.taxonVariant": 844001, 
@@ -859,8 +1092,9 @@
 }
 }, 
 "Tl2868855": {
-"^ot:altLabel": "Zieria involucrata", 
 "^ot:originalLabel": "Zieria involucrata LMD143", 
+"^ot:ottId": 5747584, 
+"^ot:ottTaxonName": "Zieria involucrata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 629608, 
 "@tb:identifier.taxonVariant": 843978, 
@@ -868,10 +1102,14 @@
 }
 }, 
 "Tl2868856": {
-"^ot:originalLabel": "Zieria exsul 2659 2691"
+"^ot:originalLabel": "Zieria exsul 2659 2691", 
+"^ot:ottId": 5747593, 
+"^ot:ottTaxonName": "Zieria exsul"
 }, 
 "Tl2868857": {
 "^ot:originalLabel": "Zieria murphyi 440349", 
+"^ot:ottId": 879938, 
+"^ot:ottTaxonName": "Zieria murphyi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 629618, 
 "@tb:identifier.taxonVariant": 843988, 
@@ -879,8 +1117,9 @@
 }
 }, 
 "Tl2868858": {
-"^ot:altLabel": "Zieria robusta", 
 "^ot:originalLabel": "Zieria robusta DEA s.n.", 
+"^ot:ottId": 404872, 
+"^ot:ottTaxonName": "Zieria robusta", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 629604, 
 "@tb:identifier.taxonVariant": 843974, 
@@ -888,20 +1127,29 @@
 }
 }, 
 "Tl2868859": {
-"^ot:originalLabel": "Zieria obovata KRM8071"
+"^ot:originalLabel": "Zieria obovata KRM8071", 
+"^ot:ottId": 5747597, 
+"^ot:ottTaxonName": "Zieria obovata"
 }, 
 "Tl2868860": {
-"^ot:originalLabel": "Zieria distans CMH157"
+"^ot:originalLabel": "Zieria distans CMH157", 
+"^ot:ottId": 5747582, 
+"^ot:ottTaxonName": "Zieria distans"
 }, 
 "Tl2868861": {
-"^ot:originalLabel": "Zieria scopulus SPP1980"
+"^ot:originalLabel": "Zieria scopulus SPP1980", 
+"^ot:ottId": 5747596, 
+"^ot:ottTaxonName": "Zieria scopulus"
 }, 
 "Tl2868862": {
-"^ot:originalLabel": "Zieria hydroscopica PIF38247"
+"^ot:originalLabel": "Zieria hydroscopica PIF38247", 
+"^ot:ottId": 5747605, 
+"^ot:ottTaxonName": "Zieria hydroscopica"
 }, 
 "Tl2868863": {
-"^ot:altLabel": "Zieria baeuerlenii MJB2011", 
 "^ot:originalLabel": "Zieria baeuerlenii 275527", 
+"^ot:ottId": 829286, 
+"^ot:ottTaxonName": "Zieria baeuerlenii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 629619, 
 "@tb:identifier.taxonVariant": 843989, 
@@ -909,11 +1157,14 @@
 }
 }, 
 "Tl2868864": {
-"^ot:originalLabel": "Zieria insularis 2653 2682"
+"^ot:originalLabel": "Zieria insularis 2653 2682", 
+"^ot:ottId": 5747601, 
+"^ot:ottTaxonName": "Zieria insularis"
 }, 
 "Tl2868865": {
-"^ot:altLabel": "Zieria adenodonta", 
 "^ot:originalLabel": "Zieria adenodonta MTM764", 
+"^ot:ottId": 829306, 
+"^ot:ottTaxonName": "Zieria adenodonta", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 629611, 
 "@tb:identifier.taxonVariant": 843981, 
@@ -921,8 +1172,9 @@
 }
 }, 
 "Tl2868866": {
-"^ot:altLabel": "Zieria lasiocaulis PG7908", 
 "^ot:originalLabel": "Zieria lasiocaulis 492944", 
+"^ot:ottId": 5747595, 
+"^ot:ottTaxonName": "Zieria lasiocaulis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 629624, 
 "@tb:identifier.taxonVariant": 843994, 
@@ -930,11 +1182,14 @@
 }
 }, 
 "Tl2868867": {
-"^ot:originalLabel": "Zieria exsul 2661 2698"
+"^ot:originalLabel": "Zieria exsul 2661 2698", 
+"^ot:ottId": 5747593, 
+"^ot:ottTaxonName": "Zieria exsul"
 }, 
 "Tl2868868": {
-"^ot:altLabel": "Zieria verrucosa", 
 "^ot:originalLabel": "Zieria verrucosa PIF34734", 
+"^ot:ottId": 404880, 
+"^ot:ottTaxonName": "Zieria verrucosa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 629607, 
 "@tb:identifier.taxonVariant": 843977, 
@@ -957,7 +1212,18 @@
 "Tr106414": {
 "@label": "MP Strict", 
 "@xsi:type": "nex:FloatTree", 
-"^ot:rootNodeId": "Tn16661331", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:undefined", 
+"^ot:curatedType": "Bayesian inference ", 
+"^ot:inGroupClade": "Tn16661331", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
+"^ot:rootNodeId": "Tr106414_ROOT", 
+"^ot:specifiedRoot": "Tr106414_ROOT", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 113, 
 "^tb:quality.tree": "Unrated", 
@@ -1496,10 +1762,6 @@
 }
 }, 
 "Tn16661331": {
-"edge2174968": {
-"@source": "Tn16661331", 
-"@target": "Tn16661223"
-}, 
 "edge2174970": {
 "@source": "Tn16661331", 
 "@target": "Tn16661244"
@@ -1788,6 +2050,16 @@
 "@source": "Tn16661380", 
 "@target": "Tn16661391"
 }
+}, 
+"Tr106414_ROOT": {
+"Tr106414_ROOT_EDGE": {
+"@source": "Tr106414_ROOT", 
+"@target": "Tn16661331"
+}, 
+"edge2174968": {
+"@source": "Tr106414_ROOT", 
+"@target": "Tn16661223"
+}
 }
 }, 
 "nodeById": {
@@ -2051,9 +2323,7 @@
 "Tn16661330": {
 "@otu": "Tl2868858"
 }, 
-"Tn16661331": {
-"@root": true
-}, 
+"Tn16661331": {}, 
 "Tn16661332": {
 "@otu": "Tl2868833"
 }, 
@@ -2196,13 +2466,27 @@
 }, 
 "Tn16661393": {
 "@otu": "Tl2868808"
+}, 
+"Tr106414_ROOT": {
+"@root": true
 }
 }
 }, 
 "Tr106415": {
 "@label": "Bayes con 50 majrule", 
 "@xsi:type": "nex:FloatTree", 
-"^ot:rootNodeId": "Tn16661469", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:changesCount", 
+"^ot:curatedType": "Bayesian inference ", 
+"^ot:inGroupClade": "Tn16661469", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
+"^ot:rootNodeId": "Tr106415_ROOT", 
+"^ot:specifiedRoot": "Tr106415_ROOT", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 113, 
 "^tb:quality.tree": "Unrated", 
@@ -2668,11 +2952,6 @@
 }
 }, 
 "Tn16661469": {
-"edge2175325": {
-"@length": 4.12404688332894, 
-"@source": "Tn16661469", 
-"@target": "Tn16661487"
-}, 
 "edge2175327": {
 "@length": 0.4146747272520409, 
 "@source": "Tn16661469", 
@@ -3250,6 +3529,17 @@
 "@source": "Tn16661572", 
 "@target": "Tn16661571"
 }
+}, 
+"Tr106415_ROOT": {
+"Tr106415_ROOT_EDGE": {
+"@source": "Tr106415_ROOT", 
+"@target": "Tn16661469"
+}, 
+"edge2175325": {
+"@length": 4.12404688332894, 
+"@source": "Tr106415_ROOT", 
+"@target": "Tn16661487"
+}
 }
 }, 
 "nodeById": {
@@ -3415,9 +3705,7 @@
 "@otu": "Tl2868768"
 }, 
 "Tn16661468": {}, 
-"Tn16661469": {
-"@root": true
-}, 
+"Tn16661469": {}, 
 "Tn16661470": {
 "@otu": "Tl2868775"
 }, 
@@ -3664,6 +3952,9 @@
 }, 
 "Tn16661575": {
 "@otu": "Tl2868762"
+}, 
+"Tr106415_ROOT": {
+"@root": true
 }
 }
 }
