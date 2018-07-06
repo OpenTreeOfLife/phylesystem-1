@@ -56,22 +56,116 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2018-07-06T03:48:44.056Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:curatorName": "Kaitlin Allen ", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}, 
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": "$1"
+}, 
+"old": {
+"$": "^(\\S*\\s+\\S*).*"
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2018-07-06T03:48:44.056Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Kaitlin Allen "
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S15898"
 }, 
+"^ot:focalClade": 460570, 
+"^ot:focalCladeOTTTaxonName": "Aponogetonaceae", 
 "^ot:otusElementOrder": [
 "Tls38005"
 ], 
 "^ot:studyId": "ot_1466", 
-"^ot:studyPublicationReference": "Chen L., Grimm G., Wang Q., & Renner S.S. 2015. A phylogeny and biogeographic analysis for the Cape-Pondweed family Aponogetonaceae (Alismatales). Molecular Phylogenetics and Evolution, 82: 111\u00e2\u0080\u0093117.", 
+"^ot:studyPublication": {
+"@href": "http://dx.doi.org/10.1016/j.ympev.2014.10.007"
+}, 
+"^ot:studyPublicationReference": "Ling-Yun Chen, Guido W. Grimm, Qing-Feng Wang, Susanne S. Renner, 2015, 'A phylogeny and biogeographic analysis for the Cape-Pondweed family Aponogetonaceae (Alismatales)', Molecular Phylogenetics and Evolution, vol. 82, pp. 111-117", 
 "^ot:studyYear": 2015, 
+"^ot:tag": [], 
 "^ot:taxonLinkPrefixes": {
 "@ubio": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:", 
 "@uniprot": "http://purl.uniprot.org/taxonomy/"
@@ -95,8 +189,9 @@
 "^skos:historyNote": "Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlOTUWriter@3d166c42 $Rev$", 
 "otuById": {
 "Tl1511724": {
-"^ot:altLabel": "Aponogeton queenslandicus", 
 "^ot:originalLabel": "Aponogeton queenslandicus D Les 552 CONN", 
+"^ot:ottId": 990440, 
+"^ot:ottTaxonName": "Aponogeton queenslandicus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 48011, 
 "@tb:identifier.taxonVariant": 112326, 
@@ -105,8 +200,9 @@
 }
 }, 
 "Tl1511725": {
-"^ot:altLabel": "Aponogeton queenslandicus", 
 "^ot:originalLabel": "Aponogeton queenslandicus D Les 550 CONN", 
+"^ot:ottId": 990440, 
+"^ot:ottTaxonName": "Aponogeton queenslandicus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 48011, 
 "@tb:identifier.taxonVariant": 112326, 
@@ -116,6 +212,8 @@
 }, 
 "Tl1511726": {
 "^ot:originalLabel": "Aponogeton capuronii HWE van Bruggen sn CONN", 
+"^ot:ottId": 208917, 
+"^ot:ottTaxonName": "Aponogeton capuronii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 625174, 
 "@tb:identifier.taxonVariant": 837343, 
@@ -123,11 +221,14 @@
 }
 }, 
 "Tl1511727": {
-"^ot:originalLabel": "Aponogeton masoalaensis J Bogner 2087 M"
+"^ot:originalLabel": "Aponogeton masoalaensis J Bogner 2087 M", 
+"^ot:ottId": 680133, 
+"^ot:ottTaxonName": "Aponogeton masoalaensis"
 }, 
 "Tl1511728": {
-"^ot:altLabel": "Aponogeton lancesmithii", 
 "^ot:originalLabel": "Aponogeton lancesmithii SWL Jacobs 8567 D Les 590 CONN", 
+"^ot:ottId": 363604, 
+"^ot:ottTaxonName": "Aponogeton lancesmithii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 2071, 
 "@tb:identifier.taxonVariant": 4948, 
@@ -136,8 +237,9 @@
 }
 }, 
 "Tl1511729": {
-"^ot:altLabel": "Aponogeton undulatus", 
 "^ot:originalLabel": "Aponogeton undulatus SWL Jacobs 8539 D Les 565 CONN", 
+"^ot:ottId": 363596, 
+"^ot:ottTaxonName": "Aponogeton undulatus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 2076, 
 "@tb:identifier.taxonVariant": 4954, 
@@ -146,8 +248,9 @@
 }
 }, 
 "Tl1511730": {
-"^ot:altLabel": "Aponogeton distachyos", 
 "^ot:originalLabel": "Aponogeton distachyos D Les sn CONN", 
+"^ot:ottId": 242984, 
+"^ot:ottTaxonName": "Aponogeton distachyos", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 625193, 
 "@tb:identifier.taxonVariant": 837362, 
@@ -156,14 +259,19 @@
 }
 }, 
 "Tl1511731": {
-"^ot:originalLabel": "Aponogeton bruggenii SR Yadav sn M"
+"^ot:originalLabel": "Aponogeton bruggenii SR Yadav sn M", 
+"^ot:ottId": 208919, 
+"^ot:ottTaxonName": "Aponogeton bruggenii"
 }, 
 "Tl1511732": {
-"^ot:originalLabel": "Aponogeton fugax JC Manning et al 3105 NBG MO"
+"^ot:originalLabel": "Aponogeton fugax JC Manning et al 3105 NBG MO", 
+"^ot:ottId": 4001332, 
+"^ot:ottTaxonName": "Aponogeton fugax"
 }, 
 "Tl1511733": {
-"^ot:altLabel": "Aponogeton satarensis", 
 "^ot:originalLabel": "Aponogeton satarensis SR Yadav sn M", 
+"^ot:ottId": 4001336, 
+"^ot:ottTaxonName": "Aponogeton satarensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 625186, 
 "@tb:identifier.taxonVariant": 837355, 
@@ -171,8 +279,9 @@
 }
 }, 
 "Tl1511734": {
-"^ot:altLabel": "Aponogeton elongatus", 
 "^ot:originalLabel": "Aponogeton elongatus D Les 551 CONN", 
+"^ot:ottId": 881397, 
+"^ot:ottTaxonName": "Aponogeton elongatus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 48008, 
 "@tb:identifier.taxonVariant": 112320, 
@@ -181,8 +290,9 @@
 }
 }, 
 "Tl1511735": {
-"^ot:altLabel": "Aponogeton ulvaceus", 
 "^ot:originalLabel": "Aponogeton ulvaceus SWL Jacobs 8543 D Les 569 CONN", 
+"^ot:ottId": 990437, 
+"^ot:ottTaxonName": "Aponogeton ulvaceus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 2075, 
 "@tb:identifier.taxonVariant": 4953, 
@@ -191,8 +301,9 @@
 }
 }, 
 "Tl1511736": {
-"^ot:altLabel": "Aponogeton longiplumulosus", 
 "^ot:originalLabel": "Aponogeton longiplumulosus D Les 560 CONN", 
+"^ot:ottId": 261522, 
+"^ot:ottTaxonName": "Aponogeton longiplumulosus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 2072, 
 "@tb:identifier.taxonVariant": 4949, 
@@ -201,8 +312,9 @@
 }
 }, 
 "Tl1511737": {
-"^ot:altLabel": "Aponogeton lakhonensis", 
 "^ot:originalLabel": "Aponogeton lakhonensis LY Chen cly2013001 HIB", 
+"^ot:ottId": 342482, 
+"^ot:ottTaxonName": "Aponogeton lakhonensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 199192, 
 "@tb:identifier.taxonVariant": 269869, 
@@ -211,11 +323,14 @@
 }
 }, 
 "Tl1511738": {
-"^ot:originalLabel": "Aponogeton ranunculiflorus M Chase 14232 K"
+"^ot:originalLabel": "Aponogeton ranunculiflorus M Chase 14232 K", 
+"^ot:ottId": 4001321, 
+"^ot:ottTaxonName": "Aponogeton ranunculiflorus"
 }, 
 "Tl1511739": {
-"^ot:altLabel": "Aponogeton undulatus", 
 "^ot:originalLabel": "Aponogeton undulatus D Les 564 CONN", 
+"^ot:ottId": 363596, 
+"^ot:ottTaxonName": "Aponogeton undulatus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 2076, 
 "@tb:identifier.taxonVariant": 4954, 
@@ -224,8 +339,9 @@
 }
 }, 
 "Tl1511740": {
-"^ot:altLabel": "Aponogeton tenuispicatus", 
 "^ot:originalLabel": "Aponogeton tenuispicatus J Bogner 275 M", 
+"^ot:ottId": 4001339, 
+"^ot:ottTaxonName": "Aponogeton tenuispicatus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 625180, 
 "@tb:identifier.taxonVariant": 837349, 
@@ -233,8 +349,9 @@
 }
 }, 
 "Tl1511741": {
-"^ot:altLabel": "Aponogeton rigidifolius", 
 "^ot:originalLabel": "Aponogeton rigidifolius Berger sn M", 
+"^ot:ottId": 261520, 
+"^ot:ottTaxonName": "Aponogeton rigidifolius", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 48012, 
 "@tb:identifier.taxonVariant": 112327, 
@@ -243,8 +360,9 @@
 }
 }, 
 "Tl1511742": {
-"^ot:altLabel": "Aponogeton crispus", 
 "^ot:originalLabel": "Aponogeton crispus SWL Jacobs 8537 D Les 563 CONN", 
+"^ot:ottId": 323763, 
+"^ot:ottTaxonName": "Aponogeton crispus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 2066, 
 "@tb:identifier.taxonVariant": 4942, 
@@ -253,8 +371,9 @@
 }
 }, 
 "Tl1511743": {
-"^ot:altLabel": "Aponogeton boivinianus", 
 "^ot:originalLabel": "Aponogeton boivinianus Collector unknown M", 
+"^ot:ottId": 208913, 
+"^ot:ottTaxonName": "Aponogeton boivinianus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 625177, 
 "@tb:identifier.taxonVariant": 837346, 
@@ -262,8 +381,9 @@
 }
 }, 
 "Tl1511744": {
-"^ot:altLabel": "Aponogeton stuhlmannii", 
 "^ot:originalLabel": "Aponogeton stuhlmannii EA Robinson 5902 M", 
+"^ot:ottId": 4001310, 
+"^ot:ottTaxonName": "Aponogeton stuhlmannii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 625194, 
 "@tb:identifier.taxonVariant": 837363, 
@@ -271,8 +391,9 @@
 }
 }, 
 "Tl1511745": {
-"^ot:altLabel": "Aponogeton robinsonii", 
 "^ot:originalLabel": "Aponogeton robinsonii J Bogner 2314 M", 
+"^ot:ottId": 363602, 
+"^ot:ottTaxonName": "Aponogeton robinsonii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 2074, 
 "@tb:identifier.taxonVariant": 4952, 
@@ -281,8 +402,9 @@
 }
 }, 
 "Tl1511746": {
-"^ot:altLabel": "Aponogeton proliferus", 
 "^ot:originalLabel": "Aponogeton proliferus D Les 549 CONN", 
+"^ot:ottId": 363606, 
+"^ot:ottTaxonName": "Aponogeton prolifer", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 625195, 
 "@tb:identifier.taxonVariant": 837364, 
@@ -292,8 +414,9 @@
 "^skos:prefLabel": "Aponogeton prolifer"
 }, 
 "Tl1511747": {
-"^ot:altLabel": "Aponogeton natans", 
 "^ot:originalLabel": "Aponogeton natans J Bogner 1857 M", 
+"^ot:ottId": 4001333, 
+"^ot:ottTaxonName": "Aponogeton natans", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 625196, 
 "@tb:identifier.taxonVariant": 837365, 
@@ -301,8 +424,9 @@
 }
 }, 
 "Tl1511748": {
-"^ot:altLabel": "Aponogeton angustifolius", 
 "^ot:originalLabel": "Aponogeton angustifolius JJ Bos 270 M", 
+"^ot:ottId": 4001331, 
+"^ot:ottTaxonName": "Aponogeton angustifolius", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 625175, 
 "@tb:identifier.taxonVariant": 837344, 
@@ -310,8 +434,9 @@
 }
 }, 
 "Tl1511749": {
-"^ot:altLabel": "Aponogeton euryspermus", 
 "^ot:originalLabel": "Aponogeton euryspermus C Kasselmann sn CONN", 
+"^ot:ottId": 1041157, 
+"^ot:ottTaxonName": "Aponogeton euryspermus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 48009, 
 "@tb:identifier.taxonVariant": 112321, 
@@ -320,11 +445,14 @@
 }
 }, 
 "Tl1511750": {
-"^ot:originalLabel": "Aponogeton womersleyi H Bleher sn M"
+"^ot:originalLabel": "Aponogeton womersleyi H Bleher sn M", 
+"^ot:ottId": 680131, 
+"^ot:ottTaxonName": "Aponogeton womersleyi"
 }, 
 "Tl1511751": {
-"^ot:altLabel": "Aponogeton vanbruggenii", 
 "^ot:originalLabel": "Aponogeton vanbruggenii SWL Jacobs 8542 D Les 568 CONN", 
+"^ot:ottId": 1083376, 
+"^ot:ottTaxonName": "Aponogeton vanbruggenii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 48013, 
 "@tb:identifier.taxonVariant": 112328, 
@@ -333,8 +461,9 @@
 }
 }, 
 "Tl1511752": {
-"^ot:altLabel": "Aponogeton euryspermus", 
 "^ot:originalLabel": "Aponogeton euryspermus SWL Jacobs 8839 NSW", 
+"^ot:ottId": 1041157, 
+"^ot:ottTaxonName": "Aponogeton euryspermus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 48009, 
 "@tb:identifier.taxonVariant": 112321, 
@@ -343,8 +472,9 @@
 }
 }, 
 "Tl1511753": {
-"^ot:altLabel": "Aponogeton crispus", 
 "^ot:originalLabel": "Aponogeton crispus H Heine sn M", 
+"^ot:ottId": 323763, 
+"^ot:ottTaxonName": "Aponogeton crispus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 2066, 
 "@tb:identifier.taxonVariant": 4942, 
@@ -353,11 +483,14 @@
 }
 }, 
 "Tl1511754": {
-"^ot:originalLabel": "Aponogeton gottlebei C Kasselmann 955c M"
+"^ot:originalLabel": "Aponogeton gottlebei C Kasselmann 955c M", 
+"^ot:ottId": 4001324, 
+"^ot:ottTaxonName": "Aponogeton gottlebei"
 }, 
 "Tl1511755": {
-"^ot:altLabel": "Aponogeton abyssinicus", 
 "^ot:originalLabel": "Aponogeton abyssinicus QF Wang 20128364 HIB", 
+"^ot:ottId": 4001322, 
+"^ot:ottTaxonName": "Aponogeton abyssinicus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 625179, 
 "@tb:identifier.taxonVariant": 837348, 
@@ -365,8 +498,9 @@
 }
 }, 
 "Tl1511756": {
-"^ot:altLabel": "Aponogeton rehmannii", 
 "^ot:originalLabel": "Aponogeton rehmannii H Merxmuller 2138 M", 
+"^ot:ottId": 4001320, 
+"^ot:ottTaxonName": "Aponogeton rehmannii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 625197, 
 "@tb:identifier.taxonVariant": 837366, 
@@ -374,8 +508,9 @@
 }
 }, 
 "Tl1511757": {
-"^ot:altLabel": "Aponogeton azureus", 
 "^ot:originalLabel": "Aponogeton azureus H Merxmuller W Giess 30642 M", 
+"^ot:ottId": 4001315, 
+"^ot:ottTaxonName": "Aponogeton azureus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 625187, 
 "@tb:identifier.taxonVariant": 837356, 
@@ -383,8 +518,9 @@
 }
 }, 
 "Tl1511758": {
-"^ot:altLabel": "Aponogeton jacobsenii", 
 "^ot:originalLabel": "Aponogeton jacobsenii C Kasselmann 24 M", 
+"^ot:ottId": 4001311, 
+"^ot:ottTaxonName": "Aponogeton jacobsenii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 625181, 
 "@tb:identifier.taxonVariant": 837350, 
@@ -393,6 +529,8 @@
 }, 
 "Tl1511759": {
 "^ot:originalLabel": "Aponogeton desertorum RDA Bayliss 6799 M", 
+"^ot:ottId": 4001334, 
+"^ot:ottTaxonName": "Aponogeton desertorum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 625172, 
 "@tb:identifier.taxonVariant": 837341, 
@@ -400,8 +538,9 @@
 }
 }, 
 "Tl1511760": {
-"^ot:altLabel": "Aponogeton decaryi", 
 "^ot:originalLabel": "Aponogeton decaryi J Bogner 2056 M", 
+"^ot:ottId": 487919, 
+"^ot:ottTaxonName": "Aponogeton decaryi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 625178, 
 "@tb:identifier.taxonVariant": 837347, 
@@ -409,8 +548,9 @@
 }
 }, 
 "Tl1511761": {
-"^ot:altLabel": "Aponogeton dioecus", 
 "^ot:originalLabel": "Aponogeton dioecus J Bogner 210 M", 
+"^ot:ottId": 4001327, 
+"^ot:ottTaxonName": "Aponogeton dioecus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 2067, 
 "@tb:identifier.taxonVariant": 4944, 
@@ -418,8 +558,9 @@
 }
 }, 
 "Tl1511762": {
-"^ot:altLabel": "Aponogeton eggersii", 
 "^ot:originalLabel": "Aponogeton eggersii H Schoepfel sn voucher unclear", 
+"^ot:ottId": 781419, 
+"^ot:ottTaxonName": "Aponogeton eggersii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 625198, 
 "@tb:identifier.taxonVariant": 837367, 
@@ -427,8 +568,9 @@
 }
 }, 
 "Tl1511763": {
-"^ot:altLabel": "Aponogeton hexatepalus", 
 "^ot:originalLabel": "Aponogeton hexatepalus G Sainty 434337 NSW", 
+"^ot:ottId": 898504, 
+"^ot:ottTaxonName": "Aponogeton hexatepalus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 2069, 
 "@tb:identifier.taxonVariant": 4946, 
@@ -437,8 +579,9 @@
 }
 }, 
 "Tl1511764": {
-"^ot:altLabel": "Aponogeton subconjugatus", 
 "^ot:originalLabel": "Aponogeton subconjugatus GS Perrottet 1009 M", 
+"^ot:ottId": 4001314, 
+"^ot:ottTaxonName": "Aponogeton subconjugatus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 625176, 
 "@tb:identifier.taxonVariant": 837345, 
@@ -446,8 +589,9 @@
 }
 }, 
 "Tl1511765": {
-"^ot:altLabel": "Aponogeton madagascariensis", 
 "^ot:originalLabel": "Aponogeton madagascariensis SWL Jacobs 8535 D Les 561 CONN", 
+"^ot:ottId": 457863, 
+"^ot:ottTaxonName": "Aponogeton madagascariensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 48010, 
 "@tb:identifier.taxonVariant": 112324, 
@@ -456,8 +600,9 @@
 }
 }, 
 "Tl1511766": {
-"^ot:altLabel": "Aponogeton bullosus", 
 "^ot:originalLabel": "Aponogeton bullosus SWL Jacobs 8572 D Les 595 CONN", 
+"^ot:ottId": 1083379, 
+"^ot:ottTaxonName": "Aponogeton bullosus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 2065, 
 "@tb:identifier.taxonVariant": 4941, 
@@ -466,8 +611,9 @@
 }
 }, 
 "Tl1511767": {
-"^ot:altLabel": "Aponogeton kimberleyensis", 
 "^ot:originalLabel": "Aponogeton kimberleyensis SWL Jacobs 8831 NSW", 
+"^ot:ottId": 363592, 
+"^ot:ottTaxonName": "Aponogeton kimberleyensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 2070, 
 "@tb:identifier.taxonVariant": 4947, 
@@ -477,6 +623,8 @@
 }, 
 "Tl1511768": {
 "^ot:originalLabel": "Aponogeton junceus C Viljoen sn CONN", 
+"^ot:ottId": 680123, 
+"^ot:ottTaxonName": "Aponogeton junceus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 625173, 
 "@tb:identifier.taxonVariant": 837342, 
@@ -498,7 +646,19 @@
 "Tr75272": {
 "@label": "MLT", 
 "@xsi:type": "nex:FloatTree", 
-"^ot:rootNodeId": "Tn11727044", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:changesCount", 
+"^ot:curatedType": "Maximum likelihood ", 
+"^ot:inGroupClade": "Tn11727027", 
+"^ot:nodeLabelDescription": "", 
+"^ot:nodeLabelMode": "ot:bootstrapValues", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
+"^ot:rootNodeId": "Tr75272_ROOT", 
+"^ot:specifiedRoot": "Tr75272_ROOT", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 45, 
 "^tb:quality.tree": "Unrated", 
@@ -513,19 +673,22 @@
 "edge1074193": {
 "@length": 0.03079477598454496, 
 "@source": "Tn11726966", 
-"@target": "Tn11727016"
+"@target": "Tn11727016", 
+"^ot:bootstrapValues": 100
 }
 }, 
 "Tn11726968": {
 "edge1074173": {
 "@length": 0.009041032274929523, 
 "@source": "Tn11726968", 
-"@target": "Tn11726993"
+"@target": "Tn11726993", 
+"^ot:bootstrapValues": 97
 }, 
 "edge1074187": {
 "@length": 0.008443256053139024, 
 "@source": "Tn11726968", 
-"@target": "Tn11726984"
+"@target": "Tn11726984", 
+"^ot:bootstrapValues": 95
 }
 }, 
 "Tn11726970": {
@@ -556,12 +719,14 @@
 "edge1074285": {
 "@length": 0.005293665840564309, 
 "@source": "Tn11726975", 
-"@target": "Tn11727006"
+"@target": "Tn11727006", 
+"^ot:bootstrapValues": 54
 }, 
 "edge1074299": {
 "@length": 0.0012141158198298704, 
 "@source": "Tn11726975", 
-"@target": "Tn11726991"
+"@target": "Tn11726991", 
+"^ot:bootstrapValues": 62
 }
 }, 
 "Tn11726977": {
@@ -590,26 +755,30 @@
 "edge1074325": {
 "@length": 0.0012422593882958693, 
 "@source": "Tn11726978", 
-"@target": "Tn11727043"
+"@target": "Tn11727043", 
+"^ot:bootstrapValues": 70
 }
 }, 
 "Tn11726979": {
 "edge1074243": {
 "@length": 0.0024303891893512975, 
 "@source": "Tn11726979", 
-"@target": "Tn11727037"
+"@target": "Tn11727037", 
+"^ot:bootstrapValues": 91
 }, 
 "edge1074249": {
 "@length": 0.0006668614932855466, 
 "@source": "Tn11726979", 
-"@target": "Tn11726994"
+"@target": "Tn11726994", 
+"^ot:bootstrapValues": 74
 }
 }, 
 "Tn11726980": {
 "edge1074233": {
 "@length": 0.00239765033172993, 
 "@source": "Tn11726980", 
-"@target": "Tn11726970"
+"@target": "Tn11726970", 
+"^ot:bootstrapValues": 69
 }, 
 "edge1074239": {
 "@length": 0.004205160309012022, 
@@ -633,12 +802,14 @@
 "edge1074189": {
 "@length": 0.0026389133570897797, 
 "@source": "Tn11726984", 
-"@target": "Tn11726966"
+"@target": "Tn11726966", 
+"^ot:bootstrapValues": 100
 }, 
 "edge1074205": {
 "@length": 0.013666495238038982, 
 "@source": "Tn11726984", 
-"@target": "Tn11727001"
+"@target": "Tn11727001", 
+"^ot:bootstrapValues": 100
 }
 }, 
 "Tn11726985": {
@@ -681,7 +852,8 @@
 "edge1074265": {
 "@length": 0.007471967874889396, 
 "@source": "Tn11726990", 
-"@target": "Tn11727002"
+"@target": "Tn11727002", 
+"^ot:bootstrapValues": 97
 }, 
 "edge1074339": {
 "@length": 0.04324039316570843, 
@@ -693,7 +865,8 @@
 "edge1074301": {
 "@length": 0.004684005229713601, 
 "@source": "Tn11726991", 
-"@target": "Tn11727025"
+"@target": "Tn11727025", 
+"^ot:bootstrapValues": 94
 }, 
 "edge1074307": {
 "@length": 5.4057765151057e-07, 
@@ -710,14 +883,16 @@
 "edge1074177": {
 "@length": 0.032319507487374756, 
 "@source": "Tn11726993", 
-"@target": "Tn11727015"
+"@target": "Tn11727015", 
+"^ot:bootstrapValues": 100
 }
 }, 
 "Tn11726994": {
 "edge1074251": {
 "@length": 0.0015467774068281767, 
 "@source": "Tn11726994", 
-"@target": "Tn11727046"
+"@target": "Tn11727046", 
+"^ot:bootstrapValues": 89
 }, 
 "edge1074261": {
 "@length": 0.00319209365787604, 
@@ -753,12 +928,14 @@
 "edge1074267": {
 "@length": 0.010571524966960084, 
 "@source": "Tn11727002", 
-"@target": "Tn11727039"
+"@target": "Tn11727039", 
+"^ot:bootstrapValues": 99
 }, 
 "edge1074309": {
 "@length": 0.003524549210034982, 
 "@source": "Tn11727002", 
-"@target": "Tn11727024"
+"@target": "Tn11727024", 
+"^ot:bootstrapValues": 76
 }
 }, 
 "Tn11727006": {
@@ -770,7 +947,8 @@
 "edge1074289": {
 "@length": 5.4057765151057e-07, 
 "@source": "Tn11727006", 
-"@target": "Tn11727026"
+"@target": "Tn11727026", 
+"^ot:bootstrapValues": 16
 }
 }, 
 "Tn11727007": {
@@ -782,7 +960,8 @@
 "edge1074321": {
 "@length": 0.009775620050581031, 
 "@source": "Tn11727007", 
-"@target": "Tn11726978"
+"@target": "Tn11726978", 
+"^ot:bootstrapValues": 97
 }
 }, 
 "Tn11727008": {
@@ -794,7 +973,8 @@
 "edge1074283": {
 "@length": 0.000773162880335485, 
 "@source": "Tn11727008", 
-"@target": "Tn11726975"
+"@target": "Tn11726975", 
+"^ot:bootstrapValues": 42
 }
 }, 
 "Tn11727011": {
@@ -813,24 +993,28 @@
 "edge1074231": {
 "@length": 0.0033495462234412565, 
 "@source": "Tn11727012", 
-"@target": "Tn11726980"
+"@target": "Tn11726980", 
+"^ot:bootstrapValues": 77
 }, 
 "edge1074241": {
 "@length": 0.023628128463328565, 
 "@source": "Tn11727012", 
-"@target": "Tn11726979"
+"@target": "Tn11726979", 
+"^ot:bootstrapValues": 93
 }
 }, 
 "Tn11727014": {
 "edge1074221": {
 "@length": 0.032904487193586004, 
 "@source": "Tn11727014", 
-"@target": "Tn11727042"
+"@target": "Tn11727042", 
+"^ot:bootstrapValues": 99
 }, 
 "edge1074227": {
 "@length": 0.02338440238422428, 
 "@source": "Tn11727014", 
-"@target": "Tn11727030"
+"@target": "Tn11727030", 
+"^ot:bootstrapValues": 99
 }
 }, 
 "Tn11727015": {
@@ -842,14 +1026,16 @@
 "edge1074181": {
 "@length": 0.008686742571554894, 
 "@source": "Tn11727015", 
-"@target": "Tn11726985"
+"@target": "Tn11726985", 
+"^ot:bootstrapValues": 97
 }
 }, 
 "Tn11727016": {
 "edge1074195": {
 "@length": 0.0208610098415136, 
 "@source": "Tn11727016", 
-"@target": "Tn11726977"
+"@target": "Tn11726977", 
+"^ot:bootstrapValues": 100
 }, 
 "edge1074203": {
 "@length": 0.021404732098712898, 
@@ -861,24 +1047,28 @@
 "edge1074213": {
 "@length": 0.04369215262126501, 
 "@source": "Tn11727022", 
-"@target": "Tn11726982"
+"@target": "Tn11726982", 
+"^ot:bootstrapValues": 100
 }, 
 "edge1074219": {
 "@length": 0.0265009384817258, 
 "@source": "Tn11727022", 
-"@target": "Tn11727014"
+"@target": "Tn11727014", 
+"^ot:bootstrapValues": 99
 }
 }, 
 "Tn11727024": {
 "edge1074311": {
 "@length": 0.007798951417169482, 
 "@source": "Tn11727024", 
-"@target": "Tn11726973"
+"@target": "Tn11726973", 
+"^ot:bootstrapValues": 100
 }, 
 "edge1074317": {
 "@length": 0.005816639339905993, 
 "@source": "Tn11727024", 
-"@target": "Tn11727007"
+"@target": "Tn11727007", 
+"^ot:bootstrapValues": 94
 }
 }, 
 "Tn11727025": {
@@ -902,31 +1092,36 @@
 "edge1074293": {
 "@length": 5.4057765151057e-07, 
 "@source": "Tn11727026", 
-"@target": "Tn11726997"
+"@target": "Tn11726997", 
+"^ot:bootstrapValues": 59
 }
 }, 
 "Tn11727027": {
 "edge1074171": {
 "@length": 5.4057765151057e-07, 
 "@source": "Tn11727027", 
-"@target": "Tn11726968"
+"@target": "Tn11726968", 
+"^ot:bootstrapValues": 99
 }, 
 "edge1074211": {
 "@length": 0.0037615592207328264, 
 "@source": "Tn11727027", 
-"@target": "Tn11727022"
+"@target": "Tn11727022", 
+"^ot:bootstrapValues": 47
 }
 }, 
 "Tn11727030": {
 "edge1074229": {
 "@length": 0.008584281065482384, 
 "@source": "Tn11727030", 
-"@target": "Tn11727012"
+"@target": "Tn11727012", 
+"^ot:bootstrapValues": 94
 }, 
 "edge1074263": {
 "@length": 0.004056701870974473, 
 "@source": "Tn11727030", 
-"@target": "Tn11726990"
+"@target": "Tn11726990", 
+"^ot:bootstrapValues": 87
 }
 }, 
 "Tn11727034": {
@@ -962,19 +1157,22 @@
 "edge1074271": {
 "@length": 0.006068903973156346, 
 "@source": "Tn11727039", 
-"@target": "Tn11727041"
+"@target": "Tn11727041", 
+"^ot:bootstrapValues": 97
 }
 }, 
 "Tn11727041": {
 "edge1074273": {
 "@length": 0.0068183571569399755, 
 "@source": "Tn11727041", 
-"@target": "Tn11727034"
+"@target": "Tn11727034", 
+"^ot:bootstrapValues": 99
 }, 
 "edge1074279": {
 "@length": 5.4057765151057e-07, 
 "@source": "Tn11727041", 
-"@target": "Tn11727008"
+"@target": "Tn11727008", 
+"^ot:bootstrapValues": 18
 }
 }, 
 "Tn11727042": {
@@ -993,24 +1191,22 @@
 "edge1074327": {
 "@length": 0.00928770867815485, 
 "@source": "Tn11727043", 
-"@target": "Tn11726989"
+"@target": "Tn11726989", 
+"^ot:bootstrapValues": 100
 }, 
 "edge1074333": {
 "@length": 0.008153934495913475, 
 "@source": "Tn11727043", 
-"@target": "Tn11726987"
+"@target": "Tn11726987", 
+"^ot:bootstrapValues": 100
 }
 }, 
 "Tn11727044": {
 "edge1074169": {
 "@length": 0.054561312376167743, 
 "@source": "Tn11727044", 
-"@target": "Tn11727027"
-}, 
-"edge1074341": {
-"@length": 0.054561312376167743, 
-"@source": "Tn11727044", 
-"@target": "Tn11726971"
+"@target": "Tn11727027", 
+"^ot:bootstrapValues": 29
 }
 }, 
 "Tn11727046": {
@@ -1022,7 +1218,19 @@
 "edge1074255": {
 "@length": 5.4057765151057e-07, 
 "@source": "Tn11727046", 
-"@target": "Tn11727011"
+"@target": "Tn11727011", 
+"^ot:bootstrapValues": 77
+}
+}, 
+"Tr75272_ROOT": {
+"Tr75272_ROOT_EDGE": {
+"@source": "Tr75272_ROOT", 
+"@target": "Tn11727044"
+}, 
+"edge1074341": {
+"@length": 0.054561312376167743, 
+"@source": "Tr75272_ROOT", 
+"@target": "Tn11726971"
 }
 }
 }, 
@@ -1039,102 +1247,66 @@
 "Tn11726965": {
 "@otu": "Tl1511755"
 }, 
-"Tn11726966": {
-"@label": "100"
-}, 
+"Tn11726966": {}, 
 "Tn11726967": {
 "@otu": "Tl1511749"
 }, 
-"Tn11726968": {
-"@label": "99"
-}, 
+"Tn11726968": {}, 
 "Tn11726969": {
 "@otu": "Tl1511746"
 }, 
-"Tn11726970": {
-"@label": "69"
-}, 
+"Tn11726970": {}, 
 "Tn11726971": {
 "@otu": "Tl1511763"
 }, 
 "Tn11726972": {
 "@otu": "Tl1511733"
 }, 
-"Tn11726973": {
-"@label": "100"
-}, 
+"Tn11726973": {}, 
 "Tn11726974": {
 "@otu": "Tl1511747"
 }, 
-"Tn11726975": {
-"@label": "42"
-}, 
+"Tn11726975": {}, 
 "Tn11726976": {
 "@otu": "Tl1511768"
 }, 
-"Tn11726977": {
-"@label": "100"
-}, 
-"Tn11726978": {
-"@label": "97"
-}, 
-"Tn11726979": {
-"@label": "93"
-}, 
-"Tn11726980": {
-"@label": "77"
-}, 
+"Tn11726977": {}, 
+"Tn11726978": {}, 
+"Tn11726979": {}, 
+"Tn11726980": {}, 
 "Tn11726981": {
 "@otu": "Tl1511735"
 }, 
-"Tn11726982": {
-"@label": "100"
-}, 
+"Tn11726982": {}, 
 "Tn11726983": {
-"@otu": "Tl1511742"
+"@otu": "Tl1511742", 
+"^ot:isTaxonExemplar": false
 }, 
-"Tn11726984": {
-"@label": "95"
-}, 
-"Tn11726985": {
-"@label": "97"
-}, 
+"Tn11726984": {}, 
+"Tn11726985": {}, 
 "Tn11726986": {
-"@otu": "Tl1511753"
+"@otu": "Tl1511753", 
+"^ot:isTaxonExemplar": true
 }, 
-"Tn11726987": {
-"@label": "100"
-}, 
+"Tn11726987": {}, 
 "Tn11726988": {
 "@otu": "Tl1511754"
 }, 
-"Tn11726989": {
-"@label": "100"
-}, 
-"Tn11726990": {
-"@label": "87"
-}, 
-"Tn11726991": {
-"@label": "62"
-}, 
+"Tn11726989": {}, 
+"Tn11726990": {}, 
+"Tn11726991": {}, 
 "Tn11726992": {
 "@otu": "Tl1511731"
 }, 
-"Tn11726993": {
-"@label": "97"
-}, 
-"Tn11726994": {
-"@label": "74"
-}, 
+"Tn11726993": {}, 
+"Tn11726994": {}, 
 "Tn11726995": {
 "@otu": "Tl1511740"
 }, 
 "Tn11726996": {
 "@otu": "Tl1511725"
 }, 
-"Tn11726997": {
-"@label": "59"
-}, 
+"Tn11726997": {}, 
 "Tn11726998": {
 "@otu": "Tl1511727"
 }, 
@@ -1144,12 +1316,8 @@
 "Tn11727000": {
 "@otu": "Tl1511764"
 }, 
-"Tn11727001": {
-"@label": "100"
-}, 
-"Tn11727002": {
-"@label": "97"
-}, 
+"Tn11727001": {}, 
+"Tn11727002": {}, 
 "Tn11727003": {
 "@otu": "Tl1511748"
 }, 
@@ -1159,39 +1327,23 @@
 "Tn11727005": {
 "@otu": "Tl1511737"
 }, 
-"Tn11727006": {
-"@label": "54"
-}, 
-"Tn11727007": {
-"@label": "94"
-}, 
-"Tn11727008": {
-"@label": "18"
-}, 
+"Tn11727006": {}, 
+"Tn11727007": {}, 
+"Tn11727008": {}, 
 "Tn11727009": {
 "@otu": "Tl1511766"
 }, 
 "Tn11727010": {
 "@otu": "Tl1511738"
 }, 
-"Tn11727011": {
-"@label": "77"
-}, 
-"Tn11727012": {
-"@label": "94"
-}, 
+"Tn11727011": {}, 
+"Tn11727012": {}, 
 "Tn11727013": {
 "@otu": "Tl1511757"
 }, 
-"Tn11727014": {
-"@label": "99"
-}, 
-"Tn11727015": {
-"@label": "100"
-}, 
-"Tn11727016": {
-"@label": "100"
-}, 
+"Tn11727014": {}, 
+"Tn11727015": {}, 
+"Tn11727016": {}, 
 "Tn11727017": {
 "@otu": "Tl1511761"
 }, 
@@ -1207,81 +1359,55 @@
 "Tn11727021": {
 "@otu": "Tl1511736"
 }, 
-"Tn11727022": {
-"@label": "47"
-}, 
+"Tn11727022": {}, 
 "Tn11727023": {
-"@otu": "Tl1511739"
+"@otu": "Tl1511739", 
+"^ot:isTaxonExemplar": false
 }, 
-"Tn11727024": {
-"@label": "76"
-}, 
-"Tn11727025": {
-"@label": "94"
-}, 
-"Tn11727026": {
-"@label": "16"
-}, 
-"Tn11727027": {
-"@label": "29"
-}, 
+"Tn11727024": {}, 
+"Tn11727025": {}, 
+"Tn11727026": {}, 
+"Tn11727027": {}, 
 "Tn11727028": {
 "@otu": "Tl1511741"
 }, 
 "Tn11727029": {
 "@otu": "Tl1511756"
 }, 
-"Tn11727030": {
-"@label": "99"
-}, 
+"Tn11727030": {}, 
 "Tn11727031": {
 "@otu": "Tl1511732"
 }, 
 "Tn11727032": {
-"@otu": "Tl1511729"
+"@otu": "Tl1511729", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn11727033": {
 "@otu": "Tl1511734"
 }, 
-"Tn11727034": {
-"@label": "99"
-}, 
+"Tn11727034": {}, 
 "Tn11727035": {
 "@otu": "Tl1511744"
 }, 
 "Tn11727036": {
 "@otu": "Tl1511767"
 }, 
-"Tn11727037": {
-"@label": "91"
-}, 
+"Tn11727037": {}, 
 "Tn11727038": {
 "@otu": "Tl1511758"
 }, 
-"Tn11727039": {
-"@label": "99"
-}, 
+"Tn11727039": {}, 
 "Tn11727040": {
 "@otu": "Tl1511728"
 }, 
-"Tn11727041": {
-"@label": "97"
-}, 
-"Tn11727042": {
-"@label": "99"
-}, 
-"Tn11727043": {
-"@label": "70"
-}, 
-"Tn11727044": {
-"@root": true
-}, 
+"Tn11727041": {}, 
+"Tn11727042": {}, 
+"Tn11727043": {}, 
+"Tn11727044": {}, 
 "Tn11727045": {
 "@otu": "Tl1511760"
 }, 
-"Tn11727046": {
-"@label": "89"
-}, 
+"Tn11727046": {}, 
 "Tn11727047": {
 "@otu": "Tl1511751"
 }, 
@@ -1290,6 +1416,9 @@
 }, 
 "Tn11727049": {
 "@otu": "Tl1511750"
+}, 
+"Tr75272_ROOT": {
+"@root": true
 }
 }
 }
