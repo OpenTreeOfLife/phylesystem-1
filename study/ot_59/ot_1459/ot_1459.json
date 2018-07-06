@@ -54,16 +54,116 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2018-07-06T01:11:09.525Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:curatorName": "Kaitlin Allen ", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}, 
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}, 
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": "$1"
+}, 
+"old": {
+"$": "^(\\S*\\s+\\S*).*"
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2018-07-06T01:11:09.525Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Kaitlin Allen "
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S15710"
 }, 
+"^ot:focalClade": 728374, 
+"^ot:focalCladeOTTTaxonName": "Erysiphales", 
 "^ot:otusElementOrder": [
 "Tls37181"
 ], 
@@ -73,6 +173,7 @@
 }, 
 "^ot:studyPublicationReference": "Meeboon J., & Takamatsu S. 2014. Notes on the powdery mildews (Erysiphales) in Japan II. Erysiphe sect. Microsphaera. Mycoscience, 56(1): 230-236.", 
 "^ot:studyYear": 2014, 
+"^ot:tag": [], 
 "^ot:taxonLinkPrefixes": {
 "@ubio": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:", 
 "@uniprot": "http://purl.uniprot.org/taxonomy/"
@@ -101,8 +202,9 @@
 "^skos:historyNote": "Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlOTUWriter@7ca19df3 $Rev$", 
 "otuById": {
 "Tl1476906": {
-"^ot:altLabel": "Erysiphe aquilegiae", 
 "^ot:originalLabel": "Erysiphe aquilegiae ex Cimicifuga AB022405", 
+"^ot:ottId": 152639, 
+"^ot:ottTaxonName": "Erysiphe aquilegiae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 10464, 
 "@tb:identifier.taxonVariant": 25038, 
@@ -111,8 +213,9 @@
 }
 }, 
 "Tl1476907": {
-"^ot:altLabel": "Erysiphe heraclei", 
 "^ot:originalLabel": "Erysiphe heraclei ex Chaerophyllum AB103067", 
+"^ot:ottId": 622881, 
+"^ot:ottTaxonName": "Erysiphe heraclei", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 10481, 
 "@tb:identifier.taxonVariant": 25078, 
@@ -121,11 +224,14 @@
 }
 }, 
 "Tl1476908": {
-"^ot:originalLabel": "Erysiphe pulchra var. pulchra ex Cornus AB015935"
+"^ot:originalLabel": "Erysiphe pulchra var. pulchra ex Cornus AB015935", 
+"^ot:ottId": 1065851, 
+"^ot:ottTaxonName": "Erysiphe pulchra"
 }, 
 "Tl1476909": {
-"^ot:altLabel": "Erysiphe wallrothii", 
 "^ot:originalLabel": "Erysiphe wallrothii ex Leucothoe MUMH4752", 
+"^ot:ottId": 152651, 
+"^ot:ottTaxonName": "Erysiphe wallrothii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 10507, 
 "@tb:identifier.taxonVariant": 25131, 
@@ -134,11 +240,14 @@
 }
 }, 
 "Tl1476910": {
-"^ot:originalLabel": "Erysiphe vanbruntina ex Sambucus AB015925"
+"^ot:originalLabel": "Erysiphe vanbruntina ex Sambucus AB015925", 
+"^ot:ottId": 152642, 
+"^ot:ottTaxonName": "Erysiphe vanbruntiana"
 }, 
 "Tl1476911": {
-"^ot:altLabel": "Erysiphe wallrothii", 
 "^ot:originalLabel": "Erysiphe wallrothii ex Vaccinium AB015930", 
+"^ot:ottId": 152651, 
+"^ot:ottTaxonName": "Erysiphe wallrothii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 10507, 
 "@tb:identifier.taxonVariant": 25131, 
@@ -147,11 +256,14 @@
 }
 }, 
 "Tl1476912": {
-"^ot:originalLabel": "Erysiphe trifoliorum ex Trifolium AB103078"
+"^ot:originalLabel": "Erysiphe trifoliorum ex Trifolium AB103078", 
+"^ot:ottId": 3716344, 
+"^ot:ottTaxonName": "Erysiphe trifoliorum"
 }, 
 "Tl1476913": {
-"^ot:altLabel": "Erysiphe staphyleae", 
 "^ot:originalLabel": "Erysiphe staphyleae ex Staphylea AB015922", 
+"^ot:ottId": 727225, 
+"^ot:ottTaxonName": "Erysiphe staphyleae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 10501, 
 "@tb:identifier.taxonVariant": 25117, 
@@ -160,8 +272,9 @@
 }
 }, 
 "Tl1476914": {
-"^ot:altLabel": "Erysiphe platani", 
 "^ot:originalLabel": "Erysiphe platani ex Platanus MUMH5657", 
+"^ot:ottId": 405818, 
+"^ot:ottTaxonName": "Erysiphe platani", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 614300, 
 "@tb:identifier.taxonVariant": 821383, 
@@ -169,8 +282,9 @@
 }
 }, 
 "Tl1476915": {
-"^ot:altLabel": "Erysiphe friesii", 
 "^ot:originalLabel": "Erysiphe friesii ex Rhamnus AB022382", 
+"^ot:ottId": 622876, 
+"^ot:ottTaxonName": "Erysiphe friesii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 10475, 
 "@tb:identifier.taxonVariant": 25064, 
@@ -179,8 +293,9 @@
 }
 }, 
 "Tl1476916": {
-"^ot:altLabel": "Erysiphe nomurae", 
 "^ot:originalLabel": "Erysiphe nomurae ex Symplocos AB331648", 
+"^ot:ottId": 863550, 
+"^ot:ottTaxonName": "Erysiphe nomurae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 44201, 
 "@tb:identifier.taxonVariant": 103351, 
@@ -189,8 +304,9 @@
 }
 }, 
 "Tl1476917": {
-"^ot:altLabel": "Erysiphe multappendicis", 
 "^ot:originalLabel": "Erysiphe multappendicis ex Berberis AB103076", 
+"^ot:ottId": 1070262, 
+"^ot:ottTaxonName": "Erysiphe multappendicis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 201967, 
 "@tb:identifier.taxonVariant": 272209, 
@@ -199,11 +315,14 @@
 }
 }, 
 "Tl1476918": {
-"^ot:originalLabel": "Erysiphe hypogena ex Quercus AB292727"
+"^ot:originalLabel": "Erysiphe hypogena ex Quercus AB292727", 
+"^ot:ottId": 252397, 
+"^ot:ottTaxonName": "Erysiphe hypogena"
 }, 
 "Tl1476919": {
-"^ot:altLabel": "Erysiphe lycopsidis", 
 "^ot:originalLabel": "Erysiphe lycopsidis ex Anchusa AB103072", 
+"^ot:ottId": 1032944, 
+"^ot:ottTaxonName": "Erysiphe lycopsidis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 201966, 
 "@tb:identifier.taxonVariant": 272208, 
@@ -212,23 +331,32 @@
 }
 }, 
 "Tl1476920": {
-"^ot:originalLabel": "Erysiphe hypophylla ex Quercus AB292716"
+"^ot:originalLabel": "Erysiphe hypophylla ex Quercus AB292716", 
+"^ot:ottId": 1053740, 
+"^ot:ottTaxonName": "Erysiphe hypophylla"
 }, 
 "Tl1476921": {
-"^ot:originalLabel": "Erysiphe quercicola ex Quercus AB292694"
+"^ot:originalLabel": "Erysiphe quercicola ex Quercus AB292694", 
+"^ot:ottId": 252401, 
+"^ot:ottTaxonName": "Erysiphe quercicola"
 }, 
 "Tl1476922": {
 "^ot:originalLabel": "Pseudoidium sp. ex Medicago AB102942"
 }, 
 "Tl1476923": {
-"^ot:originalLabel": "Erysiphe corylopsidis ex Corylopsis AB478988"
+"^ot:originalLabel": "Erysiphe corylopsidis ex Corylopsis AB478988", 
+"^ot:ottId": 540535, 
+"^ot:ottTaxonName": "Erysiphe corylopsidis"
 }, 
 "Tl1476924": {
-"^ot:originalLabel": "Erysiphe pulchra var. japonica ex Cornus AB022389"
+"^ot:originalLabel": "Erysiphe pulchra var. japonica ex Cornus AB022389", 
+"^ot:ottId": 1065851, 
+"^ot:ottTaxonName": "Erysiphe pulchra"
 }, 
 "Tl1476925": {
-"^ot:altLabel": "Erysiphe glycines", 
 "^ot:originalLabel": "Erysiphe glycines ex Desmodium AB022397", 
+"^ot:ottId": 727243, 
+"^ot:ottTaxonName": "Erysiphe glycines (merged with Erysiphe)", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 10477, 
 "@tb:identifier.taxonVariant": 25068, 
@@ -237,11 +365,14 @@
 }
 }, 
 "Tl1476926": {
-"^ot:originalLabel": "Erysiphe monascogera ex Styrax AB331645"
+"^ot:originalLabel": "Erysiphe monascogera ex Styrax AB331645", 
+"^ot:ottId": 716874, 
+"^ot:ottTaxonName": "Erysiphe monascogera"
 }, 
 "Tl1476927": {
-"^ot:altLabel": "Erysiphe heraclei", 
 "^ot:originalLabel": "Erysiphe heraclei ex Daucus AB022391", 
+"^ot:ottId": 622881, 
+"^ot:ottTaxonName": "Erysiphe heraclei", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 10481, 
 "@tb:identifier.taxonVariant": 25078, 
@@ -250,8 +381,9 @@
 }
 }, 
 "Tl1476928": {
-"^ot:altLabel": "Erysiphe abbreviata", 
 "^ot:originalLabel": "Erysiphe abbreviata ex Quercus AB271785", 
+"^ot:ottId": 88918, 
+"^ot:ottTaxonName": "Erysiphe abbreviata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 42711, 
 "@tb:identifier.taxonVariant": 99678, 
@@ -260,8 +392,9 @@
 }
 }, 
 "Tl1476929": {
-"^ot:altLabel": "Erysiphe alphitoides", 
 "^ot:originalLabel": "Erysiphe alphitoides ex Quercus AB257431", 
+"^ot:ottId": 689495, 
+"^ot:ottTaxonName": "Erysiphe alphitoides", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 36839, 
 "@tb:identifier.taxonVariant": 85202, 
@@ -270,8 +403,9 @@
 }
 }, 
 "Tl1476930": {
-"^ot:altLabel": "Erysiphe cruciferarum", 
 "^ot:originalLabel": "Erysiphe cruciferarum ex Cardaria AB102944", 
+"^ot:ottId": 392343, 
+"^ot:ottTaxonName": "Erysiphe cruciferarum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 10474, 
 "@tb:identifier.taxonVariant": 25062, 
@@ -280,8 +414,9 @@
 }
 }, 
 "Tl1476931": {
-"^ot:altLabel": "Erysiphe syringae", 
 "^ot:originalLabel": "Erysiphe syringae ex Syringa AB015920", 
+"^ot:ottId": 565184, 
+"^ot:ottTaxonName": "Erysiphe syringae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 10503, 
 "@tb:identifier.taxonVariant": 25121, 
@@ -290,8 +425,9 @@
 }
 }, 
 "Tl1476932": {
-"^ot:altLabel": "Erysiphe paeoniae", 
 "^ot:originalLabel": "Erysiphe paeoniae ex Paeonia AB257438", 
+"^ot:ottId": 1053741, 
+"^ot:ottTaxonName": "Erysiphe paeoniae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 37425, 
 "@tb:identifier.taxonVariant": 86523, 
@@ -300,11 +436,14 @@
 }
 }, 
 "Tl1476933": {
-"^ot:originalLabel": "Erysiphe epigena ex Quercus AB292722"
+"^ot:originalLabel": "Erysiphe epigena ex Quercus AB292722", 
+"^ot:ottId": 252399, 
+"^ot:ottTaxonName": "Erysiphe epigena"
 }, 
 "Tl1476934": {
-"^ot:altLabel": "Erysiphe ligustri", 
 "^ot:originalLabel": "Erysiphe ligustri ex Ligustrum AB015917", 
+"^ot:ottId": 279916, 
+"^ot:ottTaxonName": "Erysiphe ligustri", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 44420, 
 "@tb:identifier.taxonVariant": 104055, 
@@ -313,11 +452,14 @@
 }
 }, 
 "Tl1476935": {
-"^ot:originalLabel": "Pseudoidium hortensiae ex Hydrangea MUMH281"
+"^ot:originalLabel": "Pseudoidium hortensiae ex Hydrangea MUMH281", 
+"^ot:ottId": 557388, 
+"^ot:ottTaxonName": "Pseudoidium hortensiae"
 }, 
 "Tl1476936": {
-"^ot:altLabel": "Erysiphe bremeri", 
 "^ot:originalLabel": "Erysiphe bremeri ex Alhagi AB103077", 
+"^ot:ottId": 1032941, 
+"^ot:ottTaxonName": "Erysiphe bremeri", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 201968, 
 "@tb:identifier.taxonVariant": 272211, 
@@ -327,6 +469,8 @@
 }, 
 "Tl1476937": {
 "^ot:originalLabel": "Erysiphe quercicola AB292694", 
+"^ot:ottId": 252401, 
+"^ot:ottTaxonName": "Erysiphe quercicola", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 369361, 
 "@tb:identifier.taxonVariant": 517284
@@ -336,8 +480,9 @@
 "^ot:originalLabel": "Erysiphe circeae ex Circaea AB104517"
 }, 
 "Tl1476939": {
-"^ot:altLabel": "Erysiphe pseudolonicerae", 
 "^ot:originalLabel": "Erysiphe pseudolonicerae AB015915", 
+"^ot:ottId": 727240, 
+"^ot:ottTaxonName": "Erysiphe pseudolonicerae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 10495, 
 "@tb:identifier.taxonVariant": 25106, 
@@ -346,8 +491,9 @@
 }
 }, 
 "Tl1476940": {
-"^ot:altLabel": "Erysiphe aquilegiae", 
 "^ot:originalLabel": "Erysiphe aquilegiae ex Clematis AF154322", 
+"^ot:ottId": 152639, 
+"^ot:ottTaxonName": "Erysiphe aquilegiae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 10464, 
 "@tb:identifier.taxonVariant": 25038, 
@@ -356,8 +502,9 @@
 }
 }, 
 "Tl1476941": {
-"^ot:altLabel": "Erysiphe aquilegiae", 
 "^ot:originalLabel": "Erysiphe aquilegiae ex Clematis AB015929", 
+"^ot:ottId": 152639, 
+"^ot:ottTaxonName": "Erysiphe aquilegiae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 10464, 
 "@tb:identifier.taxonVariant": 25038, 
@@ -366,8 +513,9 @@
 }
 }, 
 "Tl1476942": {
-"^ot:altLabel": "Erysiphe macleayae", 
 "^ot:originalLabel": "Erysiphe macleayae ex Macleaya AB016048", 
+"^ot:ottId": 590263, 
+"^ot:ottTaxonName": "Erysiphe macleayae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 10488, 
 "@tb:identifier.taxonVariant": 25092, 
@@ -377,17 +525,22 @@
 }, 
 "Tl1476943": {
 "^ot:originalLabel": "Erysiphe quercicola AB292691", 
+"^ot:ottId": 252401, 
+"^ot:ottTaxonName": "Erysiphe quercicola", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 369361, 
 "@tb:identifier.taxonVariant": 517284
 }
 }, 
 "Tl1476944": {
-"^ot:originalLabel": "Pseudoidium hortensiae ex Hydrangea JQ669944"
+"^ot:originalLabel": "Pseudoidium hortensiae ex Hydrangea JQ669944", 
+"^ot:ottId": 557388, 
+"^ot:ottTaxonName": "Pseudoidium hortensiae"
 }, 
 "Tl1476945": {
-"^ot:altLabel": "Erysiphe platani", 
 "^ot:originalLabel": "Erysiphe platani ex Platanus JX997805", 
+"^ot:ottId": 405818, 
+"^ot:ottTaxonName": "Erysiphe platani", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 614300, 
 "@tb:identifier.taxonVariant": 821383, 
@@ -395,8 +548,9 @@
 }
 }, 
 "Tl1476946": {
-"^ot:altLabel": "Erysiphe liriodendri", 
 "^ot:originalLabel": "Erysiphe liriodendri AF011302", 
+"^ot:ottId": 712255, 
+"^ot:ottTaxonName": "Erysiphe liriodendri", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 10487, 
 "@tb:identifier.taxonVariant": 25090, 
@@ -405,8 +559,9 @@
 }
 }, 
 "Tl1476947": {
-"^ot:altLabel": "Erysiphe magnifica", 
 "^ot:originalLabel": "Erysiphe magnifica ex Magnolia AF011312", 
+"^ot:ottId": 781484, 
+"^ot:ottTaxonName": "Erysiphe magnifica", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 10490, 
 "@tb:identifier.taxonVariant": 25096, 
@@ -414,8 +569,9 @@
 }
 }, 
 "Tl1476948": {
-"^ot:altLabel": "Erysiphe glycines", 
 "^ot:originalLabel": "Erysiphe glycines ex Desmodium AB015927", 
+"^ot:ottId": 727243, 
+"^ot:ottTaxonName": "Erysiphe glycines (merged with Erysiphe)", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 10477, 
 "@tb:identifier.taxonVariant": 25068, 
@@ -424,8 +580,9 @@
 }
 }, 
 "Tl1476949": {
-"^ot:altLabel": "Erysiphe paeoniae", 
 "^ot:originalLabel": "Erysiphe paeoniae ex Paeonia AB257437", 
+"^ot:ottId": 1053741, 
+"^ot:ottTaxonName": "Erysiphe paeoniae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 37425, 
 "@tb:identifier.taxonVariant": 86523, 
@@ -434,8 +591,9 @@
 }
 }, 
 "Tl1476950": {
-"^ot:altLabel": "Erysiphe platani", 
 "^ot:originalLabel": "Erysiphe platani ex Platanus KF499270", 
+"^ot:ottId": 405818, 
+"^ot:ottTaxonName": "Erysiphe platani", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 614300, 
 "@tb:identifier.taxonVariant": 821383, 
@@ -444,20 +602,27 @@
 }, 
 "Tl1476951": {
 "^ot:originalLabel": "Erysiphe hypogena AB292724", 
+"^ot:ottId": 252397, 
+"^ot:ottTaxonName": "Erysiphe hypogena", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 369363, 
 "@tb:identifier.taxonVariant": 517286
 }
 }, 
 "Tl1476952": {
-"^ot:originalLabel": "Pseudoidium neolycopersici ex Lycopersicon AB034722"
+"^ot:originalLabel": "Pseudoidium neolycopersici ex Lycopersicon AB034722", 
+"^ot:ottId": 1039536, 
+"^ot:ottTaxonName": "Pseudoidium neolycopersici"
 }, 
 "Tl1476953": {
-"^ot:originalLabel": "Erysiphe castaneigena AF298545"
+"^ot:originalLabel": "Erysiphe castaneigena AF298545", 
+"^ot:ottId": 1057756, 
+"^ot:ottTaxonName": "Erysiphe castaneigena"
 }, 
 "Tl1476954": {
-"^ot:altLabel": "Erysiphe sedi", 
 "^ot:originalLabel": "Erysiphe sedi ex Sidum JX173290", 
+"^ot:ottId": 113400, 
+"^ot:ottTaxonName": "Erysiphe sedi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 623464, 
 "@tb:identifier.taxonVariant": 834790, 
@@ -465,8 +630,9 @@
 }
 }, 
 "Tl1476955": {
-"^ot:altLabel": "Erysiphe aquilegiae", 
 "^ot:originalLabel": "Erysiphe aquilegiae ex Cimicifuga AB000944", 
+"^ot:ottId": 152639, 
+"^ot:ottTaxonName": "Erysiphe aquilegiae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 10464, 
 "@tb:identifier.taxonVariant": 25038, 
@@ -476,24 +642,31 @@
 }, 
 "Tl1476956": {
 "^ot:originalLabel": "Erysiphe monascogera AB331646", 
+"^ot:ottId": 716874, 
+"^ot:ottTaxonName": "Erysiphe monascogera", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 439614, 
 "@tb:identifier.taxonVariant": 579579
 }
 }, 
 "Tl1476957": {
-"^ot:originalLabel": "Pseudoidium neolycopersici ex Lycopersicon AB032484"
+"^ot:originalLabel": "Pseudoidium neolycopersici ex Lycopersicon AB032484", 
+"^ot:ottId": 1039536, 
+"^ot:ottTaxonName": "Pseudoidium neolycopersici"
 }, 
 "Tl1476958": {
 "^ot:originalLabel": "Erysiphe epigena AB292720", 
+"^ot:ottId": 252399, 
+"^ot:ottTaxonName": "Erysiphe epigena", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 369362, 
 "@tb:identifier.taxonVariant": 517285
 }
 }, 
 "Tl1476959": {
-"^ot:altLabel": "Erysiphe hypophylla", 
 "^ot:originalLabel": "Erysiphe hypophylla AB292715", 
+"^ot:ottId": 1053740, 
+"^ot:ottTaxonName": "Erysiphe hypophylla", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 332439, 
 "@tb:identifier.taxonVariant": 372358, 
@@ -502,8 +675,9 @@
 }
 }, 
 "Tl1476960": {
-"^ot:altLabel": "Erysiphe paeoniae", 
 "^ot:originalLabel": "Erysiphe paeoniae ex Paeonia AB257436", 
+"^ot:ottId": 1053741, 
+"^ot:ottTaxonName": "Erysiphe paeoniae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 37425, 
 "@tb:identifier.taxonVariant": 86523, 
@@ -512,8 +686,9 @@
 }
 }, 
 "Tl1476961": {
-"^ot:altLabel": "Erysiphe syringae", 
 "^ot:originalLabel": "Erysiphe syringae ex Ligustrum AB295461", 
+"^ot:ottId": 565184, 
+"^ot:ottTaxonName": "Erysiphe syringae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 10503, 
 "@tb:identifier.taxonVariant": 25121, 
@@ -522,8 +697,9 @@
 }
 }, 
 "Tl1476962": {
-"^ot:altLabel": "Erysiphe alphitoides", 
 "^ot:originalLabel": "Erysiphe alphitoides AB237783", 
+"^ot:ottId": 689495, 
+"^ot:ottTaxonName": "Erysiphe alphitoides", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 36839, 
 "@tb:identifier.taxonVariant": 85202, 
@@ -532,8 +708,9 @@
 }
 }, 
 "Tl1476963": {
-"^ot:altLabel": "Erysiphe magnifica", 
 "^ot:originalLabel": "Erysiphe magnifica ex Magnolia GU195046", 
+"^ot:ottId": 781484, 
+"^ot:ottTaxonName": "Erysiphe magnifica", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 10490, 
 "@tb:identifier.taxonVariant": 25096, 
@@ -541,8 +718,9 @@
 }
 }, 
 "Tl1476964": {
-"^ot:altLabel": "Erysiphe abbreviata", 
 "^ot:originalLabel": "Erysiphe abbreviata AB271785", 
+"^ot:ottId": 88918, 
+"^ot:ottTaxonName": "Erysiphe abbreviata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 42711, 
 "@tb:identifier.taxonVariant": 99678, 
@@ -566,7 +744,18 @@
 "Tr74506": {
 "@label": "Fig. 1", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:undefined", 
+"^ot:curatedType": "Maximum likelihood ", 
+"^ot:inGroupClade": "Tn11616778", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn11616778", 
+"^ot:specifiedRoot": "Tn11616778", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 31, 
 "^tb:quality.tree": "Unrated", 
@@ -1004,7 +1193,18 @@
 "Tr74507": {
 "@label": "Fig. 2", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:undefined", 
+"^ot:curatedType": "Maximum likelihood ", 
+"^ot:inGroupClade": "Tn11616807", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn11616807", 
+"^ot:specifiedRoot": "Tn11616807", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 33, 
 "^tb:quality.tree": "Unrated", 
