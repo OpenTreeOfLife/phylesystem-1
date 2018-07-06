@@ -53,22 +53,116 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2018-07-06T05:10:50.252Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "Mammals"
 }, 
-"^ot:curatorName": "Walter1186", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}, 
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": "$1"
+}, 
+"old": {
+"$": "^(\\S*\\s+\\S*).*"
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2018-07-06T05:10:50.252Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Walter1186"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S19712"
 }, 
+"^ot:focalClade": 268324, 
+"^ot:focalCladeOTTTaxonName": "Macaca", 
 "^ot:otusElementOrder": [
 "Tls54856"
 ], 
 "^ot:studyId": "ot_1468", 
+"^ot:studyPublication": {
+"@href": "http://dx.doi.org/10.1016/j.ympev.2016.10.012"
+}, 
 "^ot:studyPublicationReference": "Fan P., Liu Y., Zhang Z., Zhao C., Li C., Liu W., & Li M. 2016. Phylogenetic position of the white-cheeked macaque (Macaca leucogenys), a newly described primate from Southeastern Tibet. Molecular Phylogentics and Evolution, .", 
 "^ot:studyYear": 2016, 
+"^ot:tag": [], 
 "^ot:taxonLinkPrefixes": {
 "@ubio": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:", 
 "@uniprot": "http://purl.uniprot.org/taxonomy/"
@@ -91,8 +185,9 @@
 "^skos:historyNote": "Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlOTUWriter@280ce0cb $Rev$", 
 "otuById": {
 "Tl2564555": {
-"^ot:altLabel": "Macaca assamenses", 
 "^ot:originalLabel": "Macaca assamenses Yunnan4", 
+"^ot:ottId": 115440, 
+"^ot:ottTaxonName": "Macaca assamensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 53843, 
 "@tb:identifier.taxonVariant": 124492, 
@@ -102,8 +197,9 @@
 "^skos:prefLabel": "Macaca assamensis"
 }, 
 "Tl2564556": {
-"^ot:altLabel": "Macaca assamenses", 
 "^ot:originalLabel": "Macaca assamenses Yunnan3", 
+"^ot:ottId": 115440, 
+"^ot:ottTaxonName": "Macaca assamensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 53843, 
 "@tb:identifier.taxonVariant": 124492, 
@@ -113,8 +209,9 @@
 "^skos:prefLabel": "Macaca assamensis"
 }, 
 "Tl2564557": {
-"^ot:altLabel": "Macaca sylvanus", 
 "^ot:originalLabel": "Macaca sylvanus 2", 
+"^ot:ottId": 689645, 
+"^ot:ottTaxonName": "Macaca sylvanus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 16641, 
 "@tb:identifier.taxonVariant": 38987, 
@@ -123,11 +220,14 @@
 }
 }, 
 "Tl2564558": {
-"^ot:originalLabel": "Macaca leucogenys XKL"
+"^ot:originalLabel": "Macaca leucogenys XKL", 
+"^ot:ottId": 6145111, 
+"^ot:ottTaxonName": "Macaca leucogenys"
 }, 
 "Tl2564559": {
-"^ot:altLabel": "Macaca assamenses", 
 "^ot:originalLabel": "Macaca assamenses Yunnan1", 
+"^ot:ottId": 115440, 
+"^ot:ottTaxonName": "Macaca assamensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 53843, 
 "@tb:identifier.taxonVariant": 124492, 
@@ -137,8 +237,9 @@
 "^skos:prefLabel": "Macaca assamensis"
 }, 
 "Tl2564560": {
-"^ot:altLabel": "Macaca thibetana", 
 "^ot:originalLabel": "Macaca thibetana Sichuan4", 
+"^ot:ottId": 111859, 
+"^ot:ottTaxonName": "Macaca thibetana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 74170, 
 "@tb:identifier.taxonVariant": 151174, 
@@ -147,8 +248,9 @@
 }
 }, 
 "Tl2564561": {
-"^ot:altLabel": "Papio hamadryas", 
 "^ot:originalLabel": "Papio hamadryas P.hamad2", 
+"^ot:ottId": 115463, 
+"^ot:ottTaxonName": "Papio hamadryas", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 53849, 
 "@tb:identifier.taxonVariant": 124512, 
@@ -157,8 +259,9 @@
 }
 }, 
 "Tl2564562": {
-"^ot:altLabel": "Macaca arctoides", 
 "^ot:originalLabel": "Macaca arctoides 2", 
+"^ot:ottId": 689665, 
+"^ot:ottTaxonName": "Macaca arctoides", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 53838, 
 "@tb:identifier.taxonVariant": 124483, 
@@ -167,8 +270,9 @@
 }
 }, 
 "Tl2564563": {
-"^ot:altLabel": "Macaca fascicularis", 
 "^ot:originalLabel": "Macaca fascicularis Vietnam2", 
+"^ot:ottId": 689668, 
+"^ot:ottTaxonName": "Macaca fascicularis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 16638, 
 "@tb:identifier.taxonVariant": 38980, 
@@ -177,11 +281,14 @@
 }
 }, 
 "Tl2564564": {
-"^ot:originalLabel": "Macaca leucogenys CQKL"
+"^ot:originalLabel": "Macaca leucogenys CQKL", 
+"^ot:ottId": 6145111, 
+"^ot:ottTaxonName": "Macaca leucogenys"
 }, 
 "Tl2564565": {
-"^ot:altLabel": "Macaca thibetana", 
 "^ot:originalLabel": "Macaca thibetana Sichuan3", 
+"^ot:ottId": 111859, 
+"^ot:ottTaxonName": "Macaca thibetana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 74170, 
 "@tb:identifier.taxonVariant": 151174, 
@@ -190,8 +297,9 @@
 }
 }, 
 "Tl2564566": {
-"^ot:altLabel": "Macaca nigra", 
 "^ot:originalLabel": "Macaca nigra Sulawesi2", 
+"^ot:ottId": 111862, 
+"^ot:ottTaxonName": "Macaca nigra", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 74168, 
 "@tb:identifier.taxonVariant": 151171, 
@@ -200,8 +308,9 @@
 }
 }, 
 "Tl2564567": {
-"^ot:altLabel": "Macaca fascicularis", 
 "^ot:originalLabel": "Macaca fascicularis China2", 
+"^ot:ottId": 689668, 
+"^ot:ottTaxonName": "Macaca fascicularis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 16638, 
 "@tb:identifier.taxonVariant": 38980, 
@@ -210,8 +319,9 @@
 }
 }, 
 "Tl2564568": {
-"^ot:altLabel": "Macaca nigra", 
 "^ot:originalLabel": "Macaca nigra Sulawesi1", 
+"^ot:ottId": 111862, 
+"^ot:ottTaxonName": "Macaca nigra", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 74168, 
 "@tb:identifier.taxonVariant": 151171, 
@@ -220,8 +330,9 @@
 }
 }, 
 "Tl2564569": {
-"^ot:altLabel": "Macaca arctoides", 
 "^ot:originalLabel": "Macaca arctoides 3", 
+"^ot:ottId": 689665, 
+"^ot:ottTaxonName": "Macaca arctoides", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 53838, 
 "@tb:identifier.taxonVariant": 124483, 
@@ -230,8 +341,9 @@
 }
 }, 
 "Tl2564570": {
-"^ot:altLabel": "Macaca arctoides", 
 "^ot:originalLabel": "Macaca arctoides Vietnam1", 
+"^ot:ottId": 689665, 
+"^ot:ottTaxonName": "Macaca arctoides", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 53838, 
 "@tb:identifier.taxonVariant": 124483, 
@@ -240,8 +352,9 @@
 }
 }, 
 "Tl2564571": {
-"^ot:altLabel": "Macaca thibetana", 
 "^ot:originalLabel": "Macaca thibetana Sichuan1", 
+"^ot:ottId": 111859, 
+"^ot:ottTaxonName": "Macaca thibetana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 74170, 
 "@tb:identifier.taxonVariant": 151174, 
@@ -250,8 +363,9 @@
 }
 }, 
 "Tl2564572": {
-"^ot:altLabel": "Macaca radiata", 
 "^ot:originalLabel": "Macaca radiata Karnata2", 
+"^ot:ottId": 837392, 
+"^ot:ottTaxonName": "Macaca radiata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 53841, 
 "@tb:identifier.taxonVariant": 414458, 
@@ -260,8 +374,9 @@
 }
 }, 
 "Tl2564573": {
-"^ot:altLabel": "Macaca radiata", 
 "^ot:originalLabel": "Macaca radiata Karnata1", 
+"^ot:ottId": 837392, 
+"^ot:ottTaxonName": "Macaca radiata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 53841, 
 "@tb:identifier.taxonVariant": 414458, 
@@ -270,8 +385,9 @@
 }
 }, 
 "Tl2564574": {
-"^ot:altLabel": "Macaca sylvanus", 
 "^ot:originalLabel": "Macaca sylvanus 1", 
+"^ot:ottId": 689645, 
+"^ot:ottTaxonName": "Macaca sylvanus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 16641, 
 "@tb:identifier.taxonVariant": 38987, 
@@ -280,8 +396,9 @@
 }
 }, 
 "Tl2564575": {
-"^ot:altLabel": "Macaca arctoides", 
 "^ot:originalLabel": "Macaca arctoides 1", 
+"^ot:ottId": 689665, 
+"^ot:ottTaxonName": "Macaca arctoides", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 53838, 
 "@tb:identifier.taxonVariant": 124483, 
@@ -290,8 +407,9 @@
 }
 }, 
 "Tl2564576": {
-"^ot:altLabel": "Papio hamadryas", 
 "^ot:originalLabel": "Papio hamadryas P.hamad1", 
+"^ot:ottId": 115463, 
+"^ot:ottTaxonName": "Papio hamadryas", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 53849, 
 "@tb:identifier.taxonVariant": 124512, 
@@ -300,8 +418,9 @@
 }
 }, 
 "Tl2564577": {
-"^ot:altLabel": "Macaca assamenses", 
 "^ot:originalLabel": "Macaca assamenses Myanmar3", 
+"^ot:ottId": 115440, 
+"^ot:ottTaxonName": "Macaca assamensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 53843, 
 "@tb:identifier.taxonVariant": 124492, 
@@ -311,8 +430,9 @@
 "^skos:prefLabel": "Macaca assamensis"
 }, 
 "Tl2564578": {
-"^ot:altLabel": "Macaca assamenses", 
 "^ot:originalLabel": "Macaca assamenses Yunnan2", 
+"^ot:ottId": 115440, 
+"^ot:ottTaxonName": "Macaca assamensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 53843, 
 "@tb:identifier.taxonVariant": 124492, 
@@ -322,8 +442,9 @@
 "^skos:prefLabel": "Macaca assamensis"
 }, 
 "Tl2564579": {
-"^ot:altLabel": "Macaca silenus", 
 "^ot:originalLabel": "Macaca silenus 1", 
+"^ot:ottId": 111864, 
+"^ot:ottTaxonName": "Macaca silenus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 74169, 
 "@tb:identifier.taxonVariant": 151172, 
@@ -332,8 +453,9 @@
 }
 }, 
 "Tl2564580": {
-"^ot:altLabel": "Macaca thibetana", 
 "^ot:originalLabel": "Macaca thibetana Sichuan5", 
+"^ot:ottId": 111859, 
+"^ot:ottTaxonName": "Macaca thibetana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 74170, 
 "@tb:identifier.taxonVariant": 151174, 
@@ -342,8 +464,9 @@
 }
 }, 
 "Tl2564581": {
-"^ot:altLabel": "Macaca assamenses", 
 "^ot:originalLabel": "Macaca assamenses Myanmar1", 
+"^ot:ottId": 115440, 
+"^ot:ottTaxonName": "Macaca assamensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 53843, 
 "@tb:identifier.taxonVariant": 124492, 
@@ -353,8 +476,9 @@
 "^skos:prefLabel": "Macaca assamensis"
 }, 
 "Tl2564582": {
-"^ot:altLabel": "Macaca fascicularis", 
 "^ot:originalLabel": "Macaca fascicularis China3", 
+"^ot:ottId": 689668, 
+"^ot:ottTaxonName": "Macaca fascicularis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 16638, 
 "@tb:identifier.taxonVariant": 38980, 
@@ -363,11 +487,14 @@
 }
 }, 
 "Tl2564583": {
-"^ot:originalLabel": "Macaca leucogenys CQKS"
+"^ot:originalLabel": "Macaca leucogenys CQKS", 
+"^ot:ottId": 6145111, 
+"^ot:ottTaxonName": "Macaca leucogenys"
 }, 
 "Tl2564584": {
-"^ot:altLabel": "Macaca silenus", 
 "^ot:originalLabel": "Macaca silenus 2", 
+"^ot:ottId": 111864, 
+"^ot:ottTaxonName": "Macaca silenus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 74169, 
 "@tb:identifier.taxonVariant": 151172, 
@@ -376,8 +503,9 @@
 }
 }, 
 "Tl2564585": {
-"^ot:altLabel": "Macaca assamenses", 
 "^ot:originalLabel": "Macaca assamenses Myanmar4", 
+"^ot:ottId": 115440, 
+"^ot:ottTaxonName": "Macaca assamensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 53843, 
 "@tb:identifier.taxonVariant": 124492, 
@@ -387,8 +515,9 @@
 "^skos:prefLabel": "Macaca assamensis"
 }, 
 "Tl2564586": {
-"^ot:altLabel": "Macaca fascicularis", 
 "^ot:originalLabel": "Macaca fascicularis China1", 
+"^ot:ottId": 689668, 
+"^ot:ottTaxonName": "Macaca fascicularis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 16638, 
 "@tb:identifier.taxonVariant": 38980, 
@@ -397,8 +526,9 @@
 }
 }, 
 "Tl2564587": {
-"^ot:altLabel": "Macaca fuscata", 
 "^ot:originalLabel": "Macaca fuscata Japan2", 
+"^ot:ottId": 689660, 
+"^ot:ottTaxonName": "Macaca fuscata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 16639, 
 "@tb:identifier.taxonVariant": 38983, 
@@ -407,8 +537,9 @@
 }
 }, 
 "Tl2564588": {
-"^ot:altLabel": "Macaca mulatta", 
 "^ot:originalLabel": "Macaca mulatta Germany2", 
+"^ot:ottId": 689650, 
+"^ot:ottTaxonName": "Macaca mulatta", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 16640, 
 "@tb:identifier.taxonVariant": 38984, 
@@ -417,8 +548,9 @@
 }
 }, 
 "Tl2564589": {
-"^ot:altLabel": "Macaca thibetana", 
 "^ot:originalLabel": "Macaca thibetana Sichuan2", 
+"^ot:ottId": 111859, 
+"^ot:ottTaxonName": "Macaca thibetana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 74170, 
 "@tb:identifier.taxonVariant": 151174, 
@@ -427,8 +559,9 @@
 }
 }, 
 "Tl2564590": {
-"^ot:altLabel": "Macaca fuscata", 
 "^ot:originalLabel": "Macaca fuscata Japan1", 
+"^ot:ottId": 689660, 
+"^ot:ottTaxonName": "Macaca fuscata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 16639, 
 "@tb:identifier.taxonVariant": 38983, 
@@ -437,8 +570,9 @@
 }
 }, 
 "Tl2564591": {
-"^ot:altLabel": "Macaca nemestrina", 
 "^ot:originalLabel": "Macaca nemestrina 2", 
+"^ot:ottId": 689656, 
+"^ot:ottTaxonName": "Macaca nemestrina", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 53840, 
 "@tb:identifier.taxonVariant": 124487, 
@@ -447,8 +581,9 @@
 }
 }, 
 "Tl2564592": {
-"^ot:altLabel": "Macaca assamenses", 
 "^ot:originalLabel": "Macaca assamenses Vietnam3", 
+"^ot:ottId": 115440, 
+"^ot:ottTaxonName": "Macaca assamensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 53843, 
 "@tb:identifier.taxonVariant": 124492, 
@@ -458,8 +593,9 @@
 "^skos:prefLabel": "Macaca assamensis"
 }, 
 "Tl2564593": {
-"^ot:altLabel": "Macaca tonkeana", 
 "^ot:originalLabel": "Macaca tonkeana Sulawesi4", 
+"^ot:ottId": 407753, 
+"^ot:ottTaxonName": "Macaca tonkeana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 64851, 
 "@tb:identifier.taxonVariant": 139702, 
@@ -468,8 +604,9 @@
 }
 }, 
 "Tl2564594": {
-"^ot:altLabel": "Macaca mulatta", 
 "^ot:originalLabel": "Macaca mulatta Germany1", 
+"^ot:ottId": 689650, 
+"^ot:ottTaxonName": "Macaca mulatta", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 16640, 
 "@tb:identifier.taxonVariant": 38984, 
@@ -478,8 +615,9 @@
 }
 }, 
 "Tl2564595": {
-"^ot:altLabel": "Macaca tonkeana", 
 "^ot:originalLabel": "Macaca tonkeana Sulawesi3", 
+"^ot:ottId": 407753, 
+"^ot:ottTaxonName": "Macaca tonkeana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 64851, 
 "@tb:identifier.taxonVariant": 139702, 
@@ -488,8 +626,9 @@
 }
 }, 
 "Tl2564596": {
-"^ot:altLabel": "Macaca mulatta", 
 "^ot:originalLabel": "Macaca mulatta USA2", 
+"^ot:ottId": 689650, 
+"^ot:ottTaxonName": "Macaca mulatta", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 16640, 
 "@tb:identifier.taxonVariant": 38984, 
@@ -498,14 +637,19 @@
 }
 }, 
 "Tl2564597": {
-"^ot:originalLabel": "Macaca assamenses South Chi"
+"^ot:originalLabel": "Macaca assamenses South Chi", 
+"^ot:ottId": 115440, 
+"^ot:ottTaxonName": "Macaca assamensis"
 }, 
 "Tl2564598": {
-"^ot:originalLabel": "Macaca leucogenys XKS"
+"^ot:originalLabel": "Macaca leucogenys XKS", 
+"^ot:ottId": 6145111, 
+"^ot:ottTaxonName": "Macaca leucogenys"
 }, 
 "Tl2564599": {
-"^ot:altLabel": "Macaca munzala", 
 "^ot:originalLabel": "Macaca munzala Tawang1", 
+"^ot:ottId": 927559, 
+"^ot:ottTaxonName": "Macaca munzala", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 350992, 
 "@tb:identifier.taxonVariant": 383869, 
@@ -514,8 +658,9 @@
 }
 }, 
 "Tl2564600": {
-"^ot:altLabel": "Macaca munzala", 
 "^ot:originalLabel": "Macaca munzala Tawang2", 
+"^ot:ottId": 927559, 
+"^ot:ottTaxonName": "Macaca munzala", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 350992, 
 "@tb:identifier.taxonVariant": 383869, 
@@ -524,8 +669,9 @@
 }
 }, 
 "Tl2564601": {
-"^ot:altLabel": "Macaca assamenses", 
 "^ot:originalLabel": "Macaca assamenses Myanmar2", 
+"^ot:ottId": 115440, 
+"^ot:ottTaxonName": "Macaca assamensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 53843, 
 "@tb:identifier.taxonVariant": 124492, 
@@ -535,8 +681,9 @@
 "^skos:prefLabel": "Macaca assamensis"
 }, 
 "Tl2564602": {
-"^ot:altLabel": "Macaca nemestrina", 
 "^ot:originalLabel": "Macaca nemestrina 1", 
+"^ot:ottId": 689656, 
+"^ot:ottTaxonName": "Macaca nemestrina", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 53840, 
 "@tb:identifier.taxonVariant": 124487, 
@@ -545,8 +692,9 @@
 }
 }, 
 "Tl2564603": {
-"^ot:altLabel": "Macaca mulatta", 
 "^ot:originalLabel": "Macaca mulatta USA1", 
+"^ot:ottId": 689650, 
+"^ot:ottTaxonName": "Macaca mulatta", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 16640, 
 "@tb:identifier.taxonVariant": 38984, 
@@ -555,8 +703,9 @@
 }
 }, 
 "Tl2564604": {
-"^ot:altLabel": "Macaca munzala", 
 "^ot:originalLabel": "Macaca munzala Tawang3", 
+"^ot:ottId": 927559, 
+"^ot:ottTaxonName": "Macaca munzala", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 350992, 
 "@tb:identifier.taxonVariant": 383869, 
@@ -565,8 +714,9 @@
 }
 }, 
 "Tl2564605": {
-"^ot:altLabel": "Macaca thibetana", 
 "^ot:originalLabel": "Macaca thibetana 1", 
+"^ot:ottId": 111859, 
+"^ot:ottTaxonName": "Macaca thibetana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 74170, 
 "@tb:identifier.taxonVariant": 151174, 
@@ -575,8 +725,9 @@
 }
 }, 
 "Tl2564606": {
-"^ot:altLabel": "Macaca fascicularis", 
 "^ot:originalLabel": "Macaca fascicularis 1", 
+"^ot:ottId": 689668, 
+"^ot:ottTaxonName": "Macaca fascicularis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 16638, 
 "@tb:identifier.taxonVariant": 38980, 
@@ -586,6 +737,8 @@
 }, 
 "Tl2564607": {
 "^ot:originalLabel": "Papio hamadryas", 
+"^ot:ottId": 115463, 
+"^ot:ottTaxonName": "Papio hamadryas", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 53849, 
 "@tb:identifier.taxonVariant": 124512, 
@@ -594,8 +747,9 @@
 }
 }, 
 "Tl2564608": {
-"^ot:altLabel": "Macaca radiata", 
 "^ot:originalLabel": "Macaca radiata 1", 
+"^ot:ottId": 837392, 
+"^ot:ottTaxonName": "Macaca radiata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 53841, 
 "@tb:identifier.taxonVariant": 414458, 
@@ -604,8 +758,9 @@
 }
 }, 
 "Tl2564609": {
-"^ot:altLabel": "Macaca tonkeana", 
 "^ot:originalLabel": "Macaca tonkeana 2", 
+"^ot:ottId": 407753, 
+"^ot:ottTaxonName": "Macaca tonkeana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 64851, 
 "@tb:identifier.taxonVariant": 139702, 
@@ -614,8 +769,9 @@
 }
 }, 
 "Tl2564610": {
-"^ot:altLabel": "Macaca munzala", 
 "^ot:originalLabel": "Macaca munzala 3", 
+"^ot:ottId": 927559, 
+"^ot:ottTaxonName": "Macaca munzala", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 350992, 
 "@tb:identifier.taxonVariant": 383869, 
@@ -624,11 +780,14 @@
 }
 }, 
 "Tl2564611": {
-"^ot:originalLabel": "Macaca leucogenys 3"
+"^ot:originalLabel": "Macaca leucogenys 3", 
+"^ot:ottId": 6145111, 
+"^ot:ottTaxonName": "Macaca leucogenys"
 }, 
 "Tl2564612": {
-"^ot:altLabel": "Macaca fascicularis", 
 "^ot:originalLabel": "Macaca fascicularis 3", 
+"^ot:ottId": 689668, 
+"^ot:ottTaxonName": "Macaca fascicularis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 16638, 
 "@tb:identifier.taxonVariant": 38980, 
@@ -637,8 +796,9 @@
 }
 }, 
 "Tl2564613": {
-"^ot:altLabel": "Macaca fuscata", 
 "^ot:originalLabel": "Macaca fuscata 2", 
+"^ot:ottId": 689660, 
+"^ot:ottTaxonName": "Macaca fuscata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 16639, 
 "@tb:identifier.taxonVariant": 38983, 
@@ -647,8 +807,9 @@
 }
 }, 
 "Tl2564614": {
-"^ot:altLabel": "Macaca mulatta", 
 "^ot:originalLabel": "Macaca mulatta 1", 
+"^ot:ottId": 689650, 
+"^ot:ottTaxonName": "Macaca mulatta", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 16640, 
 "@tb:identifier.taxonVariant": 38984, 
@@ -657,14 +818,19 @@
 }
 }, 
 "Tl2564615": {
-"^ot:originalLabel": "Macaca leucogenys 2"
+"^ot:originalLabel": "Macaca leucogenys 2", 
+"^ot:ottId": 6145111, 
+"^ot:ottTaxonName": "Macaca leucogenys"
 }, 
 "Tl2564616": {
-"^ot:originalLabel": "Macaca leucogenys 1"
+"^ot:originalLabel": "Macaca leucogenys 1", 
+"^ot:ottId": 6145111, 
+"^ot:ottTaxonName": "Macaca leucogenys"
 }, 
 "Tl2564617": {
-"^ot:altLabel": "Macaca fascicularis", 
 "^ot:originalLabel": "Macaca fascicularis 2", 
+"^ot:ottId": 689668, 
+"^ot:ottTaxonName": "Macaca fascicularis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 16638, 
 "@tb:identifier.taxonVariant": 38980, 
@@ -673,8 +839,9 @@
 }
 }, 
 "Tl2564618": {
-"^ot:altLabel": "Macaca mulatta", 
 "^ot:originalLabel": "Macaca mulatta 3", 
+"^ot:ottId": 689650, 
+"^ot:ottTaxonName": "Macaca mulatta", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 16640, 
 "@tb:identifier.taxonVariant": 38984, 
@@ -683,8 +850,9 @@
 }
 }, 
 "Tl2564619": {
-"^ot:altLabel": "Macaca thibetana", 
 "^ot:originalLabel": "Macaca thibetana 2", 
+"^ot:ottId": 111859, 
+"^ot:ottTaxonName": "Macaca thibetana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 74170, 
 "@tb:identifier.taxonVariant": 151174, 
@@ -693,8 +861,9 @@
 }
 }, 
 "Tl2564620": {
-"^ot:altLabel": "Macaca fuscata", 
 "^ot:originalLabel": "Macaca fuscata 1", 
+"^ot:ottId": 689660, 
+"^ot:ottTaxonName": "Macaca fuscata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 16639, 
 "@tb:identifier.taxonVariant": 38983, 
@@ -703,8 +872,9 @@
 }
 }, 
 "Tl2564621": {
-"^ot:altLabel": "Macaca mulatta", 
 "^ot:originalLabel": "Macaca mulatta 2", 
+"^ot:ottId": 689650, 
+"^ot:ottTaxonName": "Macaca mulatta", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 16640, 
 "@tb:identifier.taxonVariant": 38984, 
@@ -713,8 +883,9 @@
 }
 }, 
 "Tl2564622": {
-"^ot:altLabel": "Macaca munzala", 
 "^ot:originalLabel": "Macaca munzala 2", 
+"^ot:ottId": 927559, 
+"^ot:ottTaxonName": "Macaca munzala", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 350992, 
 "@tb:identifier.taxonVariant": 383869, 
@@ -723,8 +894,9 @@
 }
 }, 
 "Tl2564623": {
-"^ot:altLabel": "Macaca tonkeana", 
 "^ot:originalLabel": "Macaca tonkeana 1", 
+"^ot:ottId": 407753, 
+"^ot:ottTaxonName": "Macaca tonkeana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 64851, 
 "@tb:identifier.taxonVariant": 139702, 
@@ -733,8 +905,9 @@
 }
 }, 
 "Tl2564624": {
-"^ot:altLabel": "Macaca assamenses", 
 "^ot:originalLabel": "Macaca assamenses 1", 
+"^ot:ottId": 115440, 
+"^ot:ottTaxonName": "Macaca assamensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 53843, 
 "@tb:identifier.taxonVariant": 124492, 
@@ -744,8 +917,9 @@
 "^skos:prefLabel": "Macaca assamensis"
 }, 
 "Tl2564625": {
-"^ot:altLabel": "Macaca radiata", 
 "^ot:originalLabel": "Macaca radiata 2", 
+"^ot:ottId": 837392, 
+"^ot:ottTaxonName": "Macaca radiata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 53841, 
 "@tb:identifier.taxonVariant": 414458, 
@@ -754,8 +928,9 @@
 }
 }, 
 "Tl2564626": {
-"^ot:altLabel": "Macaca mulatta", 
 "^ot:originalLabel": "Macaca mulatta 4", 
+"^ot:ottId": 689650, 
+"^ot:ottTaxonName": "Macaca mulatta", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 16640, 
 "@tb:identifier.taxonVariant": 38984, 
@@ -764,8 +939,9 @@
 }
 }, 
 "Tl2564627": {
-"^ot:altLabel": "Macaca munzala", 
 "^ot:originalLabel": "Macaca munzala 1", 
+"^ot:ottId": 927559, 
+"^ot:ottTaxonName": "Macaca munzala", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 350992, 
 "@tb:identifier.taxonVariant": 383869, 
@@ -774,8 +950,9 @@
 }
 }, 
 "Tl2564628": {
-"^ot:altLabel": "Macaca nigra", 
 "^ot:originalLabel": "Macaca nigra 1", 
+"^ot:ottId": 111862, 
+"^ot:ottTaxonName": "Macaca nigra", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 74168, 
 "@tb:identifier.taxonVariant": 151171, 
@@ -784,8 +961,9 @@
 }
 }, 
 "Tl2564629": {
-"^ot:altLabel": "Macaca fuscata", 
 "^ot:originalLabel": "Macaca fuscata Japan4", 
+"^ot:ottId": 689660, 
+"^ot:ottTaxonName": "Macaca fuscata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 16639, 
 "@tb:identifier.taxonVariant": 38983, 
@@ -794,8 +972,9 @@
 }
 }, 
 "Tl2564630": {
-"^ot:altLabel": "Macaca fascicularis", 
 "^ot:originalLabel": "Macaca fascicularis Songkhla1", 
+"^ot:ottId": 689668, 
+"^ot:ottTaxonName": "Macaca fascicularis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 16638, 
 "@tb:identifier.taxonVariant": 38980, 
@@ -804,8 +983,9 @@
 }
 }, 
 "Tl2564631": {
-"^ot:altLabel": "Macaca assamenses", 
 "^ot:originalLabel": "Macaca assamenses S.China2", 
+"^ot:ottId": 115440, 
+"^ot:ottTaxonName": "Macaca assamensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 53843, 
 "@tb:identifier.taxonVariant": 124492, 
@@ -815,8 +995,9 @@
 "^skos:prefLabel": "Macaca assamensis"
 }, 
 "Tl2564632": {
-"^ot:altLabel": "Macaca sylvanus", 
 "^ot:originalLabel": "Macaca sylvanus M.sylvan5", 
+"^ot:ottId": 689645, 
+"^ot:ottTaxonName": "Macaca sylvanus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 16641, 
 "@tb:identifier.taxonVariant": 38987, 
@@ -825,8 +1006,9 @@
 }
 }, 
 "Tl2564633": {
-"^ot:altLabel": "Macaca thibetana", 
 "^ot:originalLabel": "Macaca thibetana SEChina2", 
+"^ot:ottId": 111859, 
+"^ot:ottTaxonName": "Macaca thibetana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 74170, 
 "@tb:identifier.taxonVariant": 151174, 
@@ -835,8 +1017,9 @@
 }
 }, 
 "Tl2564634": {
-"^ot:altLabel": "Macaca sinica", 
 "^ot:originalLabel": "Macaca sinica Sri_Lan3", 
+"^ot:ottId": 115446, 
+"^ot:ottTaxonName": "Macaca sinica", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 53844, 
 "@tb:identifier.taxonVariant": 124494, 
@@ -845,11 +1028,14 @@
 }
 }, 
 "Tl2564635": {
-"^ot:originalLabel": "Macaca arctoides Unknown"
+"^ot:originalLabel": "Macaca arctoides Unknown", 
+"^ot:ottId": 689665, 
+"^ot:ottTaxonName": "Macaca arctoides"
 }, 
 "Tl2564636": {
-"^ot:altLabel": "Macaca arctoides", 
 "^ot:originalLabel": "Macaca arctoides Thaila1", 
+"^ot:ottId": 689665, 
+"^ot:ottTaxonName": "Macaca arctoides", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 53838, 
 "@tb:identifier.taxonVariant": 124483, 
@@ -858,8 +1044,9 @@
 }
 }, 
 "Tl2564637": {
-"^ot:altLabel": "Macaca sinica", 
 "^ot:originalLabel": "Macaca sinica Sri_Lan2", 
+"^ot:ottId": 115446, 
+"^ot:ottTaxonName": "Macaca sinica", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 53844, 
 "@tb:identifier.taxonVariant": 124494, 
@@ -868,8 +1055,9 @@
 }
 }, 
 "Tl2564638": {
-"^ot:altLabel": "Macaca nemestrina", 
 "^ot:originalLabel": "Macaca nemestrina Kaliman2", 
+"^ot:ottId": 689656, 
+"^ot:ottTaxonName": "Macaca nemestrina", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 53840, 
 "@tb:identifier.taxonVariant": 124487, 
@@ -878,8 +1066,9 @@
 }
 }, 
 "Tl2564639": {
-"^ot:altLabel": "Macaca sylvanus", 
 "^ot:originalLabel": "Macaca sylvanus M.sylvan4", 
+"^ot:ottId": 689645, 
+"^ot:ottTaxonName": "Macaca sylvanus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 16641, 
 "@tb:identifier.taxonVariant": 38987, 
@@ -888,8 +1077,9 @@
 }
 }, 
 "Tl2564640": {
-"^ot:altLabel": "Macaca radiata", 
 "^ot:originalLabel": "Macaca radiata Karnata3", 
+"^ot:ottId": 837392, 
+"^ot:ottTaxonName": "Macaca radiata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 53841, 
 "@tb:identifier.taxonVariant": 414458, 
@@ -898,8 +1088,9 @@
 }
 }, 
 "Tl2564641": {
-"^ot:altLabel": "Macaca cyclopis", 
 "^ot:originalLabel": "Macaca cyclopis M.cyclop1", 
+"^ot:ottId": 1067495, 
+"^ot:ottTaxonName": "Macaca cyclopis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 90694, 
 "@tb:identifier.taxonVariant": 169606, 
@@ -908,8 +1099,9 @@
 }
 }, 
 "Tl2564642": {
-"^ot:altLabel": "Macaca ochreata", 
 "^ot:originalLabel": "Macaca ochreata Sulawe11", 
+"^ot:ottId": 575293, 
+"^ot:ottTaxonName": "Macaca ochreata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 99843, 
 "@tb:identifier.taxonVariant": 179007, 
@@ -918,11 +1110,14 @@
 }
 }, 
 "Tl2564643": {
-"^ot:originalLabel": "Macaca fascicularis TumChompo"
+"^ot:originalLabel": "Macaca fascicularis TumChompo", 
+"^ot:ottId": 689668, 
+"^ot:ottTaxonName": "Macaca fascicularis"
 }, 
 "Tl2564644": {
-"^ot:altLabel": "Macaca mulatta", 
 "^ot:originalLabel": "Macaca mulatta N.India1", 
+"^ot:ottId": 689650, 
+"^ot:ottTaxonName": "Macaca mulatta", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 16640, 
 "@tb:identifier.taxonVariant": 38984, 
@@ -931,8 +1126,9 @@
 }
 }, 
 "Tl2564645": {
-"^ot:altLabel": "Macaca tonkeana", 
 "^ot:originalLabel": "Macaca tonkeana Sulawe8", 
+"^ot:ottId": 407753, 
+"^ot:ottTaxonName": "Macaca tonkeana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 64851, 
 "@tb:identifier.taxonVariant": 139702, 
@@ -941,8 +1137,9 @@
 }
 }, 
 "Tl2564646": {
-"^ot:altLabel": "Macaca sinica", 
 "^ot:originalLabel": "Macaca sinica Sri_Lan1", 
+"^ot:ottId": 115446, 
+"^ot:ottTaxonName": "Macaca sinica", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 53844, 
 "@tb:identifier.taxonVariant": 124494, 
@@ -951,8 +1148,9 @@
 }
 }, 
 "Tl2564647": {
-"^ot:altLabel": "Macaca nigra", 
 "^ot:originalLabel": "Macaca nigra Sulawe5", 
+"^ot:ottId": 111862, 
+"^ot:ottTaxonName": "Macaca nigra", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 74168, 
 "@tb:identifier.taxonVariant": 151171, 
@@ -961,8 +1159,9 @@
 }
 }, 
 "Tl2564648": {
-"^ot:altLabel": "Macaca assamenses", 
 "^ot:originalLabel": "Macaca assamenses S.China1", 
+"^ot:ottId": 115440, 
+"^ot:ottTaxonName": "Macaca assamensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 53843, 
 "@tb:identifier.taxonVariant": 124492, 
@@ -972,8 +1171,9 @@
 "^skos:prefLabel": "Macaca assamensis"
 }, 
 "Tl2564649": {
-"^ot:altLabel": "Macaca arctoides", 
 "^ot:originalLabel": "Macaca arctoides Malaysia1", 
+"^ot:ottId": 689665, 
+"^ot:ottTaxonName": "Macaca arctoides", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 53838, 
 "@tb:identifier.taxonVariant": 124483, 
@@ -982,8 +1182,9 @@
 }
 }, 
 "Tl2564650": {
-"^ot:altLabel": "Papio hamadryas", 
 "^ot:originalLabel": "Papio hamadryas P.hamadr3", 
+"^ot:ottId": 115463, 
+"^ot:ottTaxonName": "Papio hamadryas", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 53849, 
 "@tb:identifier.taxonVariant": 124512, 
@@ -992,8 +1193,9 @@
 }
 }, 
 "Tl2564651": {
-"^ot:altLabel": "Macaca fuscata", 
 "^ot:originalLabel": "Macaca fuscata Japan3", 
+"^ot:ottId": 689660, 
+"^ot:ottTaxonName": "Macaca fuscata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 16639, 
 "@tb:identifier.taxonVariant": 38983, 
@@ -1002,8 +1204,9 @@
 }
 }, 
 "Tl2564652": {
-"^ot:altLabel": "Macaca mulatta", 
 "^ot:originalLabel": "Macaca mulatta N.India2", 
+"^ot:ottId": 689650, 
+"^ot:ottTaxonName": "Macaca mulatta", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 16640, 
 "@tb:identifier.taxonVariant": 38984, 
@@ -1012,11 +1215,14 @@
 }
 }, 
 "Tl2564653": {
-"^ot:originalLabel": "Macaca mulatta S.E.China"
+"^ot:originalLabel": "Macaca mulatta S.E.China", 
+"^ot:ottId": 689650, 
+"^ot:ottTaxonName": "Macaca mulatta"
 }, 
 "Tl2564654": {
-"^ot:altLabel": "Macaca silenus", 
 "^ot:originalLabel": "Macaca silenus M.silen2", 
+"^ot:ottId": 111864, 
+"^ot:ottTaxonName": "Macaca silenus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 74169, 
 "@tb:identifier.taxonVariant": 151172, 
@@ -1025,8 +1231,9 @@
 }
 }, 
 "Tl2564655": {
-"^ot:altLabel": "Macaca cyclopis", 
 "^ot:originalLabel": "Macaca cyclopis M.cyclop2", 
+"^ot:ottId": 1067495, 
+"^ot:ottTaxonName": "Macaca cyclopis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 90694, 
 "@tb:identifier.taxonVariant": 169606, 
@@ -1035,8 +1242,9 @@
 }
 }, 
 "Tl2564656": {
-"^ot:altLabel": "Macaca radiata", 
 "^ot:originalLabel": "Macaca radiata India2", 
+"^ot:ottId": 837392, 
+"^ot:ottTaxonName": "Macaca radiata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 53841, 
 "@tb:identifier.taxonVariant": 414458, 
@@ -1045,8 +1253,9 @@
 }
 }, 
 "Tl2564657": {
-"^ot:altLabel": "Macaca fuscata", 
 "^ot:originalLabel": "Macaca fuscata Japan5", 
+"^ot:ottId": 689660, 
+"^ot:ottTaxonName": "Macaca fuscata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 16639, 
 "@tb:identifier.taxonVariant": 38983, 
@@ -1055,8 +1264,9 @@
 }
 }, 
 "Tl2564658": {
-"^ot:altLabel": "Macaca radiata", 
 "^ot:originalLabel": "Macaca radiata India1", 
+"^ot:ottId": 837392, 
+"^ot:ottTaxonName": "Macaca radiata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 53841, 
 "@tb:identifier.taxonVariant": 414458, 
@@ -1065,8 +1275,9 @@
 }
 }, 
 "Tl2564659": {
-"^ot:altLabel": "Macaca sylvanus", 
 "^ot:originalLabel": "Macaca sylvanus M.sylvan3", 
+"^ot:ottId": 689645, 
+"^ot:ottTaxonName": "Macaca sylvanus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 16641, 
 "@tb:identifier.taxonVariant": 38987, 
@@ -1075,8 +1286,9 @@
 }
 }, 
 "Tl2564660": {
-"^ot:altLabel": "Macaca maura", 
 "^ot:originalLabel": "Macaca maura Sulawe10", 
+"^ot:ottId": 169928, 
+"^ot:ottTaxonName": "Macaca maura", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 632789, 
 "@tb:identifier.taxonVariant": 847801, 
@@ -1085,8 +1297,9 @@
 }
 }, 
 "Tl2564661": {
-"^ot:altLabel": "Macaca tonkeana", 
 "^ot:originalLabel": "Macaca tonkeana Sulawe9", 
+"^ot:ottId": 407753, 
+"^ot:ottTaxonName": "Macaca tonkeana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 64851, 
 "@tb:identifier.taxonVariant": 139702, 
@@ -1095,8 +1308,9 @@
 }
 }, 
 "Tl2564662": {
-"^ot:altLabel": "Macaca thibetana", 
 "^ot:originalLabel": "Macaca thibetana SEChina1", 
+"^ot:ottId": 111859, 
+"^ot:ottTaxonName": "Macaca thibetana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 74170, 
 "@tb:identifier.taxonVariant": 151174, 
@@ -1105,8 +1319,9 @@
 }
 }, 
 "Tl2564663": {
-"^ot:altLabel": "Macaca silenus", 
 "^ot:originalLabel": "Macaca silenus M.silen1", 
+"^ot:ottId": 111864, 
+"^ot:ottTaxonName": "Macaca silenus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 74169, 
 "@tb:identifier.taxonVariant": 151172, 
@@ -1115,8 +1330,9 @@
 }
 }, 
 "Tl2564664": {
-"^ot:altLabel": "Macaca hecki", 
 "^ot:originalLabel": "Macaca hecki Sulawe7", 
+"^ot:ottId": 575296, 
+"^ot:ottTaxonName": "Macaca hecki", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 99840, 
 "@tb:identifier.taxonVariant": 179002, 
@@ -1125,8 +1341,9 @@
 }
 }, 
 "Tl2564665": {
-"^ot:altLabel": "Macaca nemestrina", 
 "^ot:originalLabel": "Macaca nemestrina Kaliman1", 
+"^ot:ottId": 689656, 
+"^ot:ottTaxonName": "Macaca nemestrina", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 53840, 
 "@tb:identifier.taxonVariant": 124487, 
@@ -1135,8 +1352,9 @@
 }
 }, 
 "Tl2564666": {
-"^ot:altLabel": "Macaca mulatta", 
 "^ot:originalLabel": "Macaca mulatta Burma1", 
+"^ot:ottId": 689650, 
+"^ot:ottTaxonName": "Macaca mulatta", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 16640, 
 "@tb:identifier.taxonVariant": 38984, 
@@ -1145,8 +1363,9 @@
 }
 }, 
 "Tl2564667": {
-"^ot:altLabel": "Macaca nigrescens", 
 "^ot:originalLabel": "Macaca nigrescens Sulawe6", 
+"^ot:ottId": 169927, 
+"^ot:ottTaxonName": "Macaca nigrescens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 99842, 
 "@tb:identifier.taxonVariant": 179006, 
@@ -1155,8 +1374,9 @@
 }
 }, 
 "Tl2564668": {
-"^ot:altLabel": "Macaca nemestrina", 
 "^ot:originalLabel": "Macaca nemestrina Kaliman3", 
+"^ot:ottId": 689656, 
+"^ot:ottTaxonName": "Macaca nemestrina", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 53840, 
 "@tb:identifier.taxonVariant": 124487, 
@@ -1181,7 +1401,18 @@
 "Tr100261": {
 "@label": "con 50 majrule", 
 "@xsi:type": "nex:FloatTree", 
-"^ot:rootNodeId": "Tn14944147", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:changesCount", 
+"^ot:curatedType": "Bayesian inference ", 
+"^ot:inGroupClade": "Tn14944134", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
+"^ot:rootNodeId": "Tr100261_ROOT", 
+"^ot:specifiedRoot": "Tr100261_ROOT", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 50, 
 "^tb:quality.tree": "Unrated", 
@@ -1482,11 +1713,6 @@
 }
 }, 
 "Tn14944147": {
-"edge1337829": {
-"@length": 0.831262, 
-"@source": "Tn14944147", 
-"@target": "Tn14944173"
-}, 
 "edge1337835": {
 "@length": 0.831262, 
 "@source": "Tn14944147", 
@@ -1732,56 +1958,79 @@
 "@source": "Tn14944195", 
 "@target": "Tn14944155"
 }
+}, 
+"Tr100261_ROOT": {
+"Tr100261_ROOT_EDGE": {
+"@source": "Tr100261_ROOT", 
+"@target": "Tn14944147"
+}, 
+"edge1337829": {
+"@length": 0.831262, 
+"@source": "Tr100261_ROOT", 
+"@target": "Tn14944173"
+}
 }
 }, 
 "nodeById": {
 "Tn14944103": {}, 
 "Tn14944104": {
-"@otu": "Tl2564558"
+"@otu": "Tl2564558", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn14944105": {}, 
 "Tn14944106": {
-"@otu": "Tl2564560"
+"@otu": "Tl2564560", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn14944107": {
-"@otu": "Tl2564591"
+"@otu": "Tl2564591", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn14944108": {}, 
 "Tn14944109": {}, 
 "Tn14944110": {}, 
 "Tn14944111": {
-"@otu": "Tl2564571"
+"@otu": "Tl2564571", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn14944112": {
-"@otu": "Tl2564567"
+"@otu": "Tl2564567", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn14944113": {}, 
 "Tn14944114": {
-"@otu": "Tl2564576"
+"@otu": "Tl2564576", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn14944115": {}, 
 "Tn14944116": {}, 
 "Tn14944117": {
-"@otu": "Tl2564603"
+"@otu": "Tl2564603", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn14944118": {
-"@otu": "Tl2564556"
+"@otu": "Tl2564556", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn14944119": {}, 
 "Tn14944120": {
-"@otu": "Tl2564596"
+"@otu": "Tl2564596", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn14944121": {}, 
 "Tn14944122": {
-"@otu": "Tl2564582"
+"@otu": "Tl2564582", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn14944123": {}, 
 "Tn14944124": {
-"@otu": "Tl2564602"
+"@otu": "Tl2564602", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn14944125": {}, 
 "Tn14944126": {
-"@otu": "Tl2564585"
+"@otu": "Tl2564585", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn14944127": {}, 
 "Tn14944128": {}, 
@@ -1789,153 +2038,203 @@
 "Tn14944130": {}, 
 "Tn14944131": {}, 
 "Tn14944132": {
-"@otu": "Tl2564557"
+"@otu": "Tl2564557", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn14944133": {
-"@otu": "Tl2564600"
+"@otu": "Tl2564600", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn14944134": {}, 
 "Tn14944135": {
-"@otu": "Tl2564589"
+"@otu": "Tl2564589", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn14944136": {}, 
 "Tn14944137": {
-"@otu": "Tl2564583"
+"@otu": "Tl2564583", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn14944138": {
-"@otu": "Tl2564570"
+"@otu": "Tl2564570", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn14944139": {}, 
 "Tn14944140": {
-"@otu": "Tl2564573"
+"@otu": "Tl2564573", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn14944141": {}, 
 "Tn14944142": {
-"@otu": "Tl2564592"
+"@otu": "Tl2564592", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn14944143": {
-"@otu": "Tl2564601"
+"@otu": "Tl2564601", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn14944144": {
-"@otu": "Tl2564593"
+"@otu": "Tl2564593", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn14944145": {
-"@otu": "Tl2564569"
+"@otu": "Tl2564569", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn14944146": {}, 
-"Tn14944147": {
-"@root": true
-}, 
+"Tn14944147": {}, 
 "Tn14944148": {}, 
 "Tn14944149": {
-"@otu": "Tl2564564"
+"@otu": "Tl2564564", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn14944150": {}, 
 "Tn14944151": {
-"@otu": "Tl2564563"
+"@otu": "Tl2564563", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn14944152": {}, 
 "Tn14944153": {}, 
 "Tn14944154": {
-"@otu": "Tl2564598"
+"@otu": "Tl2564598", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn14944155": {}, 
 "Tn14944156": {
-"@otu": "Tl2564574"
+"@otu": "Tl2564574", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn14944157": {}, 
 "Tn14944158": {}, 
 "Tn14944159": {}, 
 "Tn14944160": {}, 
 "Tn14944161": {
-"@otu": "Tl2564565"
+"@otu": "Tl2564565", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn14944162": {
-"@otu": "Tl2564581"
+"@otu": "Tl2564581", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn14944163": {
-"@otu": "Tl2564578"
+"@otu": "Tl2564578", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn14944164": {
-"@otu": "Tl2564561"
+"@otu": "Tl2564561", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn14944165": {}, 
 "Tn14944166": {
-"@otu": "Tl2564566"
+"@otu": "Tl2564566", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn14944167": {}, 
 "Tn14944168": {
-"@otu": "Tl2564584"
+"@otu": "Tl2564584", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn14944169": {
-"@otu": "Tl2564599"
+"@otu": "Tl2564599", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn14944170": {}, 
 "Tn14944171": {}, 
 "Tn14944172": {
-"@otu": "Tl2564575"
+"@otu": "Tl2564575", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn14944173": {}, 
 "Tn14944174": {}, 
 "Tn14944175": {
-"@otu": "Tl2564562"
+"@otu": "Tl2564562", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn14944176": {
-"@otu": "Tl2564594"
+"@otu": "Tl2564594", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn14944177": {
-"@otu": "Tl2564587"
+"@otu": "Tl2564587", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn14944178": {
-"@otu": "Tl2564559"
+"@otu": "Tl2564559", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn14944179": {}, 
 "Tn14944180": {
-"@otu": "Tl2564579"
+"@otu": "Tl2564579", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn14944181": {
-"@otu": "Tl2564572"
+"@otu": "Tl2564572", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn14944182": {}, 
 "Tn14944183": {
-"@otu": "Tl2564604"
+"@otu": "Tl2564604", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn14944184": {
-"@otu": "Tl2564588"
+"@otu": "Tl2564588", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn14944185": {
-"@otu": "Tl2564555"
+"@otu": "Tl2564555", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn14944186": {
-"@otu": "Tl2564580"
+"@otu": "Tl2564580", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn14944187": {
-"@otu": "Tl2564595"
+"@otu": "Tl2564595", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn14944188": {
-"@otu": "Tl2564586"
+"@otu": "Tl2564586", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn14944189": {
-"@otu": "Tl2564597"
+"@otu": "Tl2564597", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn14944190": {}, 
 "Tn14944191": {
-"@otu": "Tl2564568"
+"@otu": "Tl2564568", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn14944192": {
-"@otu": "Tl2564590"
+"@otu": "Tl2564590", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn14944193": {
-"@otu": "Tl2564577"
+"@otu": "Tl2564577", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn14944194": {}, 
-"Tn14944195": {}
+"Tn14944195": {}, 
+"Tr100261_ROOT": {
+"@root": true
+}
 }
 }, 
 "Tr100262": {
 "@label": "TREE1", 
 "@xsi:type": "nex:FloatTree", 
-"^ot:rootNodeId": "Tn14944205", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:changesCount", 
+"^ot:curatedType": "Maximum likelihood ", 
+"^ot:inGroupClade": "Tn14944211", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
+"^ot:rootNodeId": "Tr100262_ROOT", 
+"^ot:specifiedRoot": "Tr100262_ROOT", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 33, 
 "^tb:quality.tree": "Unrated", 
@@ -2002,11 +2301,6 @@
 }
 }, 
 "Tn14944205": {
-"edge1338023": {
-"@length": 2.4826677407879014, 
-"@source": "Tn14944205", 
-"@target": "Tn14944211"
-}, 
 "edge1338033": {
 "@length": 1.6618229661969464, 
 "@source": "Tn14944205", 
@@ -2050,10 +2344,10 @@
 }
 }, 
 "Tn14944211": {
-"edge1338025": {
-"@length": 5.41105347930405, 
+"edge1338023": {
+"@length": 2.4826677407879014, 
 "@source": "Tn14944211", 
-"@target": "Tn14944220"
+"@target": "Tn14944205"
 }, 
 "edge1338027": {
 "@length": 5.313118248122289, 
@@ -2324,6 +2618,17 @@
 "@source": "Tn14944260", 
 "@target": "Tn14944241"
 }
+}, 
+"Tr100262_ROOT": {
+"Tr100262_ROOT_EDGE": {
+"@source": "Tr100262_ROOT", 
+"@target": "Tn14944211"
+}, 
+"edge1338025": {
+"@length": 5.41105347930405, 
+"@source": "Tr100262_ROOT", 
+"@target": "Tn14944220"
+}
 }
 }, 
 "nodeById": {
@@ -2344,9 +2649,7 @@
 "@otu": "Tl2564624"
 }, 
 "Tn14944204": {}, 
-"Tn14944205": {
-"@root": true
-}, 
+"Tn14944205": {}, 
 "Tn14944206": {
 "@otu": "Tl2564612"
 }, 
@@ -2459,13 +2762,27 @@
 "@otu": "Tl2564621"
 }, 
 "Tn14944259": {}, 
-"Tn14944260": {}
+"Tn14944260": {}, 
+"Tr100262_ROOT": {
+"@root": true
+}
 }
 }, 
 "Tr100263": {
 "@label": "con 50 majrule", 
 "@xsi:type": "nex:FloatTree", 
-"^ot:rootNodeId": "Tn14944307", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:changesCount", 
+"^ot:curatedType": "Bayesian inference ", 
+"^ot:inGroupClade": "Tn14944310", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
+"^ot:rootNodeId": "Tr100263_ROOT", 
+"^ot:specifiedRoot": "Tr100263_ROOT", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 49, 
 "^tb:quality.tree": "Unrated", 
@@ -2786,11 +3103,6 @@
 }
 }, 
 "Tn14944307": {
-"edge1337677": {
-"@length": 0.47879335, 
-"@source": "Tn14944307", 
-"@target": "Tn14944285"
-}, 
 "edge1337679": {
 "@length": 0.47879335, 
 "@source": "Tn14944307", 
@@ -2871,36 +3183,55 @@
 "@source": "Tn14944327", 
 "@target": "Tn14944314"
 }
+}, 
+"Tr100263_ROOT": {
+"Tr100263_ROOT_EDGE": {
+"@source": "Tr100263_ROOT", 
+"@target": "Tn14944307"
+}, 
+"edge1337677": {
+"@length": 0.47879335, 
+"@source": "Tr100263_ROOT", 
+"@target": "Tn14944285"
+}
 }
 }, 
 "nodeById": {
 "Tn14944261": {
-"@otu": "Tl2564600"
+"@otu": "Tl2564600", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn14944262": {
-"@otu": "Tl2564665"
+"@otu": "Tl2564665", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn14944263": {
-"@otu": "Tl2564662"
+"@otu": "Tl2564662", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn14944264": {
-"@otu": "Tl2564637"
+"@otu": "Tl2564637", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn14944265": {}, 
 "Tn14944266": {
-"@otu": "Tl2564651"
+"@otu": "Tl2564651", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn14944267": {}, 
 "Tn14944268": {}, 
 "Tn14944269": {
-"@otu": "Tl2564645"
+"@otu": "Tl2564645", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn14944270": {
-"@otu": "Tl2564654"
+"@otu": "Tl2564654", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn14944271": {}, 
 "Tn14944272": {
-"@otu": "Tl2564649"
+"@otu": "Tl2564649", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn14944273": {}, 
 "Tn14944274": {
@@ -2908,54 +3239,66 @@
 }, 
 "Tn14944275": {}, 
 "Tn14944276": {
-"@otu": "Tl2564668"
+"@otu": "Tl2564668", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn14944277": {}, 
 "Tn14944278": {}, 
 "Tn14944279": {
-"@otu": "Tl2564598"
+"@otu": "Tl2564598", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn14944280": {}, 
 "Tn14944281": {}, 
 "Tn14944282": {
-"@otu": "Tl2564644"
+"@otu": "Tl2564644", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn14944283": {
-"@otu": "Tl2564604"
+"@otu": "Tl2564604", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn14944284": {}, 
 "Tn14944285": {
 "@otu": "Tl2564650"
 }, 
 "Tn14944286": {
-"@otu": "Tl2564666"
+"@otu": "Tl2564666", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn14944287": {
-"@otu": "Tl2564658"
+"@otu": "Tl2564658", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn14944288": {
-"@otu": "Tl2564663"
+"@otu": "Tl2564663", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn14944289": {
-"@otu": "Tl2564563"
+"@otu": "Tl2564563", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn14944290": {
-"@otu": "Tl2564558"
+"@otu": "Tl2564558", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn14944291": {
 "@otu": "Tl2564667"
 }, 
 "Tn14944292": {}, 
 "Tn14944293": {
-"@otu": "Tl2564659"
+"@otu": "Tl2564659", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn14944294": {}, 
 "Tn14944295": {
-"@otu": "Tl2564652"
+"@otu": "Tl2564652", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn14944296": {}, 
 "Tn14944297": {
-"@otu": "Tl2564629"
+"@otu": "Tl2564629", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn14944298": {}, 
 "Tn14944299": {}, 
@@ -2964,28 +3307,33 @@
 "@otu": "Tl2564660"
 }, 
 "Tn14944302": {
-"@otu": "Tl2564656"
+"@otu": "Tl2564656", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn14944303": {
-"@otu": "Tl2564633"
+"@otu": "Tl2564633", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn14944304": {
-"@otu": "Tl2564599"
+"@otu": "Tl2564599", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn14944305": {
-"@otu": "Tl2564573"
+"@otu": "Tl2564573", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn14944306": {
-"@otu": "Tl2564646"
+"@otu": "Tl2564646", 
+"^ot:isTaxonExemplar": true
 }, 
-"Tn14944307": {
-"@root": true
-}, 
+"Tn14944307": {}, 
 "Tn14944308": {
-"@otu": "Tl2564638"
+"@otu": "Tl2564638", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn14944309": {
-"@otu": "Tl2564643"
+"@otu": "Tl2564643", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn14944310": {}, 
 "Tn14944311": {
@@ -2993,58 +3341,77 @@
 }, 
 "Tn14944312": {}, 
 "Tn14944313": {
-"@otu": "Tl2564657"
+"@otu": "Tl2564657", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn14944314": {}, 
 "Tn14944315": {
-"@otu": "Tl2564655"
+"@otu": "Tl2564655", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn14944316": {
-"@otu": "Tl2564570"
+"@otu": "Tl2564570", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn14944317": {
-"@otu": "Tl2564634"
+"@otu": "Tl2564634", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn14944318": {}, 
 "Tn14944319": {
-"@otu": "Tl2564661"
+"@otu": "Tl2564661", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn14944320": {
-"@otu": "Tl2564640"
+"@otu": "Tl2564640", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn14944321": {
-"@otu": "Tl2564653"
+"@otu": "Tl2564653", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn14944322": {
-"@otu": "Tl2564648"
+"@otu": "Tl2564648", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn14944323": {
-"@otu": "Tl2564631"
+"@otu": "Tl2564631", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn14944324": {
-"@otu": "Tl2564564"
+"@otu": "Tl2564564", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn14944325": {
-"@otu": "Tl2564636"
+"@otu": "Tl2564636", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn14944326": {
-"@otu": "Tl2564641"
+"@otu": "Tl2564641", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn14944327": {}, 
 "Tn14944328": {
-"@otu": "Tl2564639"
+"@otu": "Tl2564639", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn14944329": {
 "@otu": "Tl2564647"
 }, 
 "Tn14944330": {
-"@otu": "Tl2564632"
+"@otu": "Tl2564632", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn14944331": {
-"@otu": "Tl2564635"
+"@otu": "Tl2564635", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn14944332": {
-"@otu": "Tl2564630"
+"@otu": "Tl2564630", 
+"^ot:isTaxonExemplar": true
+}, 
+"Tr100263_ROOT": {
+"@root": true
 }
 }
 }
