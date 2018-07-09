@@ -63,16 +63,105 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2018-07-09T02:38:12.582Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:curatorName": "Kaitlin Allen ", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}, 
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": "$1"
+}, 
+"old": {
+"$": "^(\\S*\\s+\\S*).*"
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2018-07-09T02:38:12.582Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Kaitlin Allen "
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S11288"
 }, 
+"^ot:focalCladeOTTTaxonName": "", 
 "^ot:otusElementOrder": [
 "Tls19937"
 ], 
@@ -80,8 +169,9 @@
 "^ot:studyPublication": {
 "@href": "http://dx.doi.org/10.3767/003158511X574532"
 }, 
-"^ot:studyPublicationReference": "Crous P.W., & Groenewald J.Z. 2011. Why everlastings don\u0092t last. Persoonia, 26: 70-84.", 
+"^ot:studyPublicationReference": "P.W. Crous, J.Z. Groenewald, 2011, 'Why everlastings don't last', Persoonia - Molecular Phylogeny and Evolution of Fungi, vol. 26, no. 1, pp. 70-84", 
 "^ot:studyYear": 2011, 
+"^ot:tag": [], 
 "^ot:taxonLinkPrefixes": {
 "@ubio": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:", 
 "@uniprot": "http://purl.uniprot.org/taxonomy/"
@@ -109,11 +199,14 @@
 "^skos:historyNote": "Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlOTUWriter@4a9bc3f4 $Rev$", 
 "otuById": {
 "Tl481392": {
-"^ot:originalLabel": "Cladosporium perangustum CBS 125996"
+"^ot:originalLabel": "Cladosporium perangustum CBS 125996", 
+"^ot:ottId": 732148, 
+"^ot:ottTaxonName": "Cladosporium perangustum"
 }, 
 "Tl481393": {
-"^ot:altLabel": "Cladosporium cladosporioides", 
 "^ot:originalLabel": "Cladosporium cladosporioides CBS 112388", 
+"^ot:ottId": 187451, 
+"^ot:ottTaxonName": "Cladosporium cladosporioides", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6270, 
 "@tb:identifier.taxonVariant": 15173, 
@@ -122,14 +215,19 @@
 }
 }, 
 "Tl481394": {
-"^ot:originalLabel": "Cladosporium perangustum CPC 13774"
+"^ot:originalLabel": "Cladosporium perangustum CPC 13774", 
+"^ot:ottId": 732148, 
+"^ot:ottTaxonName": "Cladosporium perangustum"
 }, 
 "Tl481395": {
-"^ot:originalLabel": "Cladosporium ramotenellum CPC 18224"
+"^ot:originalLabel": "Cladosporium ramotenellum CPC 18224", 
+"^ot:ottId": 890664, 
+"^ot:ottTaxonName": "Cladosporium ramotenellum"
 }, 
 "Tl481396": {
-"^ot:altLabel": "Cladosporium cladosporioides", 
 "^ot:originalLabel": "Cladosporium cladosporioides CPC 14019", 
+"^ot:ottId": 187451, 
+"^ot:ottTaxonName": "Cladosporium cladosporioides", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6270, 
 "@tb:identifier.taxonVariant": 15173, 
@@ -138,17 +236,24 @@
 }
 }, 
 "Tl481397": {
-"^ot:originalLabel": "Cladosporium iranicum CBS 126346"
+"^ot:originalLabel": "Cladosporium iranicum CBS 126346", 
+"^ot:ottId": 732129, 
+"^ot:ottTaxonName": "Cladosporium iranicum"
 }, 
 "Tl481398": {
-"^ot:originalLabel": "Cladosporium ramotenellum CPC 12047"
+"^ot:originalLabel": "Cladosporium ramotenellum CPC 12047", 
+"^ot:ottId": 890664, 
+"^ot:ottTaxonName": "Cladosporium ramotenellum"
 }, 
 "Tl481399": {
-"^ot:originalLabel": "Cladosporium perangustum CPC 14247"
+"^ot:originalLabel": "Cladosporium perangustum CPC 14247", 
+"^ot:ottId": 732148, 
+"^ot:ottTaxonName": "Cladosporium perangustum"
 }, 
 "Tl481400": {
-"^ot:altLabel": "Cladosporium cladosporioides", 
 "^ot:originalLabel": "Cladosporium cladosporioides CPC 12214", 
+"^ot:ottId": 187451, 
+"^ot:ottTaxonName": "Cladosporium cladosporioides", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6270, 
 "@tb:identifier.taxonVariant": 15173, 
@@ -157,11 +262,14 @@
 }
 }, 
 "Tl481401": {
-"^ot:originalLabel": "Cladosporium phaenocomae CPC 18221"
+"^ot:originalLabel": "Cladosporium phaenocomae CPC 18221", 
+"^ot:ottId": 408218, 
+"^ot:ottTaxonName": "Cladosporium phaenocomae"
 }, 
 "Tl481402": {
-"^ot:altLabel": "Cladosporium cladosporioides", 
 "^ot:originalLabel": "Cladosporium cladosporioides CPC 14018", 
+"^ot:ottId": 187451, 
+"^ot:ottTaxonName": "Cladosporium cladosporioides", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6270, 
 "@tb:identifier.taxonVariant": 15173, 
@@ -170,8 +278,9 @@
 }
 }, 
 "Tl481403": {
-"^ot:altLabel": "Cladosporium cladosporioides", 
 "^ot:originalLabel": "Cladosporium cladosporioides CPC 18230", 
+"^ot:ottId": 187451, 
+"^ot:ottTaxonName": "Cladosporium cladosporioides", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6270, 
 "@tb:identifier.taxonVariant": 15173, 
@@ -180,38 +289,59 @@
 }
 }, 
 "Tl481404": {
-"^ot:originalLabel": "Cladosporium australiense CBS 125984"
+"^ot:originalLabel": "Cladosporium australiense CBS 125984", 
+"^ot:ottId": 157468, 
+"^ot:ottTaxonName": "Cladosporium australiense"
 }, 
 "Tl481405": {
-"^ot:originalLabel": "Cladosporium pseudocladosporioides CBS 125993"
+"^ot:originalLabel": "Cladosporium pseudocladosporioides CBS 125993", 
+"^ot:ottId": 1029782, 
+"^ot:ottTaxonName": "Cladosporium pseudocladosporioides"
 }, 
 "Tl481406": {
-"^ot:originalLabel": "Cladosporium exile CBS 125987"
+"^ot:originalLabel": "Cladosporium exile CBS 125987", 
+"^ot:ottId": 732135, 
+"^ot:ottTaxonName": "Cladosporium exile"
 }, 
 "Tl481407": {
-"^ot:originalLabel": "Cladosporium pseudocladosporioides CPC 14001"
+"^ot:originalLabel": "Cladosporium pseudocladosporioides CPC 14001", 
+"^ot:ottId": 1029782, 
+"^ot:ottTaxonName": "Cladosporium pseudocladosporioides"
 }, 
 "Tl481408": {
-"^ot:originalLabel": "Cladosporium phaenocomae CPC 18223"
+"^ot:originalLabel": "Cladosporium phaenocomae CPC 18223", 
+"^ot:ottId": 408218, 
+"^ot:ottTaxonName": "Cladosporium phaenocomae"
 }, 
 "Tl481409": {
-"^ot:originalLabel": "Cladosporium perangustum CPC 15192"
+"^ot:originalLabel": "Cladosporium perangustum CPC 15192", 
+"^ot:ottId": 732148, 
+"^ot:ottTaxonName": "Cladosporium perangustum"
 }, 
 "Tl481410": {
-"^ot:originalLabel": "Cladosporium perangustum CPC 18229"
+"^ot:originalLabel": "Cladosporium perangustum CPC 18229", 
+"^ot:ottId": 732148, 
+"^ot:ottTaxonName": "Cladosporium perangustum"
 }, 
 "Tl481411": {
-"^ot:originalLabel": "Cladosporium perangustum CPC 18228"
+"^ot:originalLabel": "Cladosporium perangustum CPC 18228", 
+"^ot:ottId": 732148, 
+"^ot:ottTaxonName": "Cladosporium perangustum"
 }, 
 "Tl481412": {
-"^ot:originalLabel": "Cladosporium ramotenellum CPC 12043"
+"^ot:originalLabel": "Cladosporium ramotenellum CPC 12043", 
+"^ot:ottId": 890664, 
+"^ot:ottTaxonName": "Cladosporium ramotenellum"
 }, 
 "Tl481413": {
-"^ot:originalLabel": "Cladosporium perangustum CPC 11819"
+"^ot:originalLabel": "Cladosporium perangustum CPC 11819", 
+"^ot:ottId": 732148, 
+"^ot:ottTaxonName": "Cladosporium perangustum"
 }, 
 "Tl481414": {
-"^ot:altLabel": "Cercospora beticola", 
 "^ot:originalLabel": "Cercospora beticola CPC 11557", 
+"^ot:ottId": 444411, 
+"^ot:ottTaxonName": "Cercospora beticola", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5431, 
 "@tb:identifier.taxonVariant": 13183, 
@@ -220,8 +350,9 @@
 }
 }, 
 "Tl481415": {
-"^ot:altLabel": "Cladosporium cladosporioides", 
 "^ot:originalLabel": "Cladosporium cladosporioides CPC 11161", 
+"^ot:ottId": 187451, 
+"^ot:ottTaxonName": "Cladosporium cladosporioides", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6270, 
 "@tb:identifier.taxonVariant": 15173, 
@@ -230,14 +361,17 @@
 }
 }, 
 "Tl481416": {
-"^ot:originalLabel": "Cladosporium pseudocladosporioides CPC 14193"
+"^ot:originalLabel": "Cladosporium pseudocladosporioides CPC 14193", 
+"^ot:ottId": 1029782, 
+"^ot:ottTaxonName": "Cladosporium pseudocladosporioides"
 }, 
 "Tl481417": {
 "^ot:originalLabel": "Teratosphaeria sp. EU707888"
 }, 
 "Tl481418": {
-"^ot:altLabel": "Cladosporium bruhnei", 
 "^ot:originalLabel": "Cladosporium bruhnei AY251078", 
+"^ot:ottId": 5714734, 
+"^ot:ottTaxonName": "Cladosporium bruhnei", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 43979, 
 "@tb:identifier.taxonVariant": 102884, 
@@ -246,14 +380,17 @@
 }
 }, 
 "Tl481419": {
-"^ot:originalLabel": "Xenophacidiella pseudocatenata CPC 18279"
+"^ot:originalLabel": "Xenophacidiella pseudocatenata CPC 18279", 
+"^ot:ottId": 411385, 
+"^ot:ottTaxonName": "Xenophacidiella pseudocatenata"
 }, 
 "Tl481420": {
 "^ot:originalLabel": "Teratosphaeria cf. bellula CPC 18280"
 }, 
 "Tl481421": {
-"^ot:altLabel": "Exophiala nigra", 
 "^ot:originalLabel": "Exophiala nigra FJ358244", 
+"^ot:ottId": 851143, 
+"^ot:ottTaxonName": "Nadsoniella nigra", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 18661, 
 "@tb:identifier.taxonVariant": 113371, 
@@ -262,14 +399,19 @@
 }
 }, 
 "Tl481422": {
-"^ot:originalLabel": "Xenophacidiella pseudocatenata CPC 18472"
+"^ot:originalLabel": "Xenophacidiella pseudocatenata CPC 18472", 
+"^ot:ottId": 411385, 
+"^ot:ottTaxonName": "Xenophacidiella pseudocatenata"
 }, 
 "Tl481423": {
-"^ot:originalLabel": "Teratosphaeria karinae CPC 18255"
+"^ot:originalLabel": "Teratosphaeria karinae CPC 18255", 
+"^ot:ottId": 108061, 
+"^ot:ottTaxonName": "Teratosphaeria karinae"
 }, 
 "Tl481424": {
-"^ot:altLabel": "Devriesia acadiensis", 
 "^ot:originalLabel": "Devriesia acadiensis EU040226", 
+"^ot:ottId": 927741, 
+"^ot:ottTaxonName": "Devriesia acadiensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 44008, 
 "@tb:identifier.taxonVariant": 102939, 
@@ -279,6 +421,8 @@
 }, 
 "Tl481425": {
 "^ot:originalLabel": "Teratosphaeria maxii DQ885898", 
+"^ot:ottId": 305936, 
+"^ot:ottTaxonName": "Teratosphaeria maxii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 470707, 
 "@tb:identifier.taxonVariant": 624871
@@ -286,17 +430,22 @@
 }, 
 "Tl481426": {
 "^ot:originalLabel": "Penidiella columbiana EU019274", 
+"^ot:ottId": 316147, 
+"^ot:ottTaxonName": "Penidiella columbiana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 401827, 
 "@tb:identifier.taxonVariant": 538910
 }
 }, 
 "Tl481427": {
-"^ot:originalLabel": "Penidiella ellipsoidea CPC 18317"
+"^ot:originalLabel": "Penidiella ellipsoidea CPC 18317", 
+"^ot:ottId": 408222, 
+"^ot:ottTaxonName": "Penidiella ellipsoidea"
 }, 
 "Tl481428": {
-"^ot:altLabel": "Exophiala xenobiotica", 
 "^ot:originalLabel": "Exophiala xenobiotica FJ358246", 
+"^ot:ottId": 335331, 
+"^ot:ottTaxonName": "Exophiala xenobiotica", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 305907, 
 "@tb:identifier.taxonVariant": 353980, 
@@ -305,8 +454,9 @@
 }
 }, 
 "Tl481429": {
-"^ot:altLabel": "Batcheloromyces leucadendri", 
 "^ot:originalLabel": "Batcheloromyces leucadendri EU552103", 
+"^ot:ottId": 733751, 
+"^ot:ottTaxonName": "Batcheloromyces leucadendri", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 43984, 
 "@tb:identifier.taxonVariant": 102893, 
@@ -315,18 +465,23 @@
 }
 }, 
 "Tl481430": {
-"^ot:originalLabel": "Teratosphaeria bellula EU019301"
+"^ot:originalLabel": "Teratosphaeria bellula EU019301", 
+"^ot:ottId": 733764, 
+"^ot:ottTaxonName": "Teratosphaeria bellula"
 }, 
 "Tl481431": {
 "^ot:originalLabel": "Toxicocladosporium irritans EU040243", 
+"^ot:ottId": 82135, 
+"^ot:ottTaxonName": "Toxicocladosporium irritans", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 401769, 
 "@tb:identifier.taxonVariant": 538865
 }
 }, 
 "Tl481432": {
-"^ot:altLabel": "Devriesia staurophora", 
 "^ot:originalLabel": "Devriesia staurophora GU214416", 
+"^ot:ottId": 66454, 
+"^ot:ottTaxonName": "Devriesia staurophora", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 8861, 
 "@tb:identifier.taxonVariant": 21342, 
@@ -335,8 +490,9 @@
 }
 }, 
 "Tl481433": {
-"^ot:altLabel": "Batcheloromyces leucadendri", 
 "^ot:originalLabel": "Batcheloromyces leucadendri CPC 18277", 
+"^ot:ottId": 733751, 
+"^ot:ottTaxonName": "Batcheloromyces leucadendri", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 43984, 
 "@tb:identifier.taxonVariant": 102893, 
@@ -346,6 +502,8 @@
 }, 
 "Tl481434": {
 "^ot:originalLabel": "Phaeophleospora stonei FJ493210", 
+"^ot:ottId": 829042, 
+"^ot:ottTaxonName": "Phaeophleospora stonei", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 384417, 
 "@tb:identifier.taxonVariant": 526213
@@ -355,13 +513,19 @@
 "^ot:originalLabel": "Chaetothyriales sp. FJ358263"
 }, 
 "Tl481436": {
-"^ot:originalLabel": "Penidiella aggregata CPC 18278"
+"^ot:originalLabel": "Penidiella aggregata CPC 18278", 
+"^ot:ottId": 408223, 
+"^ot:ottTaxonName": "Penidiella aggregata"
 }, 
 "Tl481437": {
-"^ot:originalLabel": "Exophiala capensis CPC 18473"
+"^ot:originalLabel": "Exophiala capensis CPC 18473", 
+"^ot:ottId": 408216, 
+"^ot:ottTaxonName": "Exophiala capensis"
 }, 
 "Tl481438": {
 "^ot:originalLabel": "Catenulostroma chromoblastomycosum EU019251", 
+"^ot:ottId": 789264, 
+"^ot:ottTaxonName": "Catenulostroma chromoblastomycosum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 401820, 
 "@tb:identifier.taxonVariant": 538906
@@ -369,6 +533,8 @@
 }, 
 "Tl481439": {
 "^ot:originalLabel": "Teratosphaeria miniata GQ852711", 
+"^ot:ottId": 755755, 
+"^ot:ottTaxonName": "Teratosphaeria miniata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 560299, 
 "@tb:identifier.taxonVariant": 742091
@@ -379,6 +545,8 @@
 }, 
 "Tl481441": {
 "^ot:originalLabel": "Toxicocladosporium chlamydosporum FJ790302", 
+"^ot:ottId": 553532, 
+"^ot:ottTaxonName": "Toxicocladosporium chlamydosporum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 526309, 
 "@tb:identifier.taxonVariant": 698199
@@ -386,26 +554,37 @@
 }, 
 "Tl481442": {
 "^ot:originalLabel": "Toxicocladosporium veloxum FJ790306", 
+"^ot:ottId": 553529, 
+"^ot:ottTaxonName": "Toxicocladosporium veloxum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 526311, 
 "@tb:identifier.taxonVariant": 698203
 }
 }, 
 "Tl481443": {
-"^ot:originalLabel": "Toxicocladosporium pseudoveloxum CPC 18274"
+"^ot:originalLabel": "Toxicocladosporium pseudoveloxum CPC 18274", 
+"^ot:ottId": 934223, 
+"^ot:ottTaxonName": "Toxicocladosporium pseudoveloxum"
 }, 
 "Tl481444": {
-"^ot:originalLabel": "Catenulostroma elginense EU019252"
+"^ot:originalLabel": "Catenulostroma elginense EU019252", 
+"^ot:ottId": 733766, 
+"^ot:ottTaxonName": "Catenulostroma elginense"
 }, 
 "Tl481445": {
-"^ot:originalLabel": "Toxicocladosporium pseudoveloxum CPC 18471"
+"^ot:originalLabel": "Toxicocladosporium pseudoveloxum CPC 18471", 
+"^ot:ottId": 934223, 
+"^ot:ottTaxonName": "Toxicocladosporium pseudoveloxum"
 }, 
 "Tl481446": {
-"^ot:originalLabel": "Catenulostroma hermanusense CPC 18276"
+"^ot:originalLabel": "Catenulostroma hermanusense CPC 18276", 
+"^ot:ottId": 408219, 
+"^ot:ottTaxonName": "Catenulostroma hermanusense"
 }, 
 "Tl481447": {
-"^ot:altLabel": "Rhinocladiella atrovirens", 
 "^ot:originalLabel": "Rhinocladiella atrovirens AF050289", 
+"^ot:ottId": 1041480, 
+"^ot:ottTaxonName": "Rhinocladiella atrovirens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 25124, 
 "@tb:identifier.taxonVariant": 58837, 
@@ -414,24 +593,33 @@
 }
 }, 
 "Tl481448": {
-"^ot:originalLabel": "Teratosphaeria alistairii DQ885901"
+"^ot:originalLabel": "Teratosphaeria alistairii DQ885901", 
+"^ot:ottId": 353746, 
+"^ot:ottTaxonName": "Teratosphaeria alistairii"
 }, 
 "Tl481449": {
 "^ot:originalLabel": "Readeriella brunneotingens EU019286", 
+"^ot:ottId": 241871, 
+"^ot:ottTaxonName": "Teratosphaeria brunneotingens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 401812, 
 "@tb:identifier.taxonVariant": 538903
 }
 }, 
 "Tl481450": {
-"^ot:originalLabel": "Devriesia tardicrescens CPC 18259"
+"^ot:originalLabel": "Devriesia tardicrescens CPC 18259", 
+"^ot:ottId": 408217, 
+"^ot:ottTaxonName": "Devriesia tardicrescens"
 }, 
 "Tl481451": {
-"^ot:originalLabel": "Toxicocladosporium pseudoveloxum CPC 18257"
+"^ot:originalLabel": "Toxicocladosporium pseudoveloxum CPC 18257", 
+"^ot:ottId": 934223, 
+"^ot:ottTaxonName": "Toxicocladosporium pseudoveloxum"
 }, 
 "Tl481452": {
-"^ot:altLabel": "Devriesia shelburniensis", 
 "^ot:originalLabel": "Devriesia shelburniensis EU040228", 
+"^ot:ottId": 66473, 
+"^ot:ottTaxonName": "Devriesia shelburniensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 44009, 
 "@tb:identifier.taxonVariant": 102940, 
@@ -441,14 +629,17 @@
 }, 
 "Tl481453": {
 "^ot:originalLabel": "Toxicocladosporium rubrigenum FJ790304", 
+"^ot:ottId": 553534, 
+"^ot:ottTaxonName": "Toxicocladosporium rubrigenum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 526310, 
 "@tb:identifier.taxonVariant": 698201
 }
 }, 
 "Tl481454": {
-"^ot:altLabel": "Colletogloeopsis dimorpha", 
 "^ot:originalLabel": "Colletogloeopsis dimorpha DQ923528", 
+"^ot:ottId": 72708, 
+"^ot:ottTaxonName": "Colletogloeopsis dimorpha", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 355416, 
 "@tb:identifier.taxonVariant": 386071, 
@@ -460,8 +651,9 @@
 "^ot:originalLabel": "Chaetothyriales sp. FJ358264"
 }, 
 "Tl481456": {
-"^ot:altLabel": "Exophiala bergeri", 
 "^ot:originalLabel": "Exophiala bergeri FJ358240", 
+"^ot:ottId": 115563, 
+"^ot:ottTaxonName": "Exophiala bergeri", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 147512, 
 "@tb:identifier.taxonVariant": 223584, 
@@ -471,14 +663,17 @@
 }, 
 "Tl481457": {
 "^ot:originalLabel": "Teratosphaeria profusa FJ493220", 
+"^ot:ottId": 438920, 
+"^ot:ottTaxonName": "Teratosphaeria profusa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 523925, 
 "@tb:identifier.taxonVariant": 695002
 }
 }, 
 "Tl481458": {
-"^ot:altLabel": "Batcheloromyces proteae", 
 "^ot:originalLabel": "Batcheloromyces proteae EU019247", 
+"^ot:ottId": 765851, 
+"^ot:ottTaxonName": "Batcheloromyces proteae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3226, 
 "@tb:identifier.taxonVariant": 7776, 
@@ -487,8 +682,9 @@
 }
 }, 
 "Tl481459": {
-"^ot:altLabel": "Saccharomyces cerevisiae", 
 "^ot:originalLabel": "Saccharomyces cerevisiae Z73326", 
+"^ot:ottId": 356221, 
+"^ot:ottTaxonName": "Saccharomyces cerevisiae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 25995, 
 "@tb:identifier.taxonVariant": 60823, 
@@ -498,6 +694,8 @@
 }, 
 "Tl481460": {
 "^ot:originalLabel": "Toxicocladosporium chlamydosporum FJ790301", 
+"^ot:ottId": 553532, 
+"^ot:ottTaxonName": "Toxicocladosporium chlamydosporum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 526309, 
 "@tb:identifier.taxonVariant": 698199
@@ -505,14 +703,17 @@
 }, 
 "Tl481461": {
 "^ot:originalLabel": "Teratosphaeria hortaea FJ790299", 
+"^ot:ottId": 553525, 
+"^ot:ottTaxonName": "Teratosphaeria hortaea", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 526308, 
 "@tb:identifier.taxonVariant": 698197
 }
 }, 
 "Tl481462": {
-"^ot:altLabel": "Exophiala oligosperma", 
 "^ot:originalLabel": "Exophiala oligosperma FJ358245", 
+"^ot:ottId": 288202, 
+"^ot:ottTaxonName": "Exophiala oligosperma", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 44013, 
 "@tb:identifier.taxonVariant": 102945, 
@@ -522,6 +723,8 @@
 }, 
 "Tl481463": {
 "^ot:originalLabel": "Penidiella rigidophora EU019276", 
+"^ot:ottId": 316150, 
+"^ot:ottTaxonName": "Penidiella rigidophora", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 401829, 
 "@tb:identifier.taxonVariant": 538912
@@ -531,24 +734,33 @@
 "^ot:originalLabel": "Teratosphaeria sp. GQ852713"
 }, 
 "Tl481465": {
-"^ot:originalLabel": "Catenulostroma protearum GU214402"
+"^ot:originalLabel": "Catenulostroma protearum GU214402", 
+"^ot:ottId": 1092117, 
+"^ot:ottTaxonName": "Catenulostroma protearum"
 }, 
 "Tl481466": {
 "^ot:originalLabel": "Teratosphaeria dimorpha FJ493215", 
+"^ot:ottId": 763736, 
+"^ot:ottTaxonName": "Teratosphaeria dimorpha", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 514997, 
 "@tb:identifier.taxonVariant": 683492
 }
 }, 
 "Tl481467": {
-"^ot:originalLabel": "Phaeothecoidea melaleuca HQ599595"
+"^ot:originalLabel": "Phaeothecoidea melaleuca HQ599595", 
+"^ot:ottId": 26887, 
+"^ot:ottTaxonName": "Phaeothecoidea melaleuca"
 }, 
 "Tl481468": {
-"^ot:originalLabel": "Teratosphaeria molleriana EU167583"
+"^ot:originalLabel": "Teratosphaeria molleriana EU167583", 
+"^ot:ottId": 514694, 
+"^ot:ottTaxonName": "Teratosphaeria molleriana (merged with Teratosphaeria)"
 }, 
 "Tl481469": {
-"^ot:altLabel": "Devriesia shelburniensis", 
 "^ot:originalLabel": "Devriesia shelburniensis AY692094", 
+"^ot:ottId": 66473, 
+"^ot:ottTaxonName": "Devriesia shelburniensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 44009, 
 "@tb:identifier.taxonVariant": 102940, 
@@ -557,17 +769,22 @@
 }
 }, 
 "Tl481470": {
-"^ot:originalLabel": "Teratosphaeria bellula EU707861"
+"^ot:originalLabel": "Teratosphaeria bellula EU707861", 
+"^ot:ottId": 733764, 
+"^ot:ottTaxonName": "Teratosphaeria bellula"
 }, 
 "Tl481471": {
 "^ot:originalLabel": "Teratosphaeria bellulaAY260092"
 }, 
 "Tl481472": {
-"^ot:originalLabel": "Teratosphaeria bellula EU707859"
+"^ot:originalLabel": "Teratosphaeria bellula EU707859", 
+"^ot:ottId": 733764, 
+"^ot:ottTaxonName": "Teratosphaeria bellula"
 }, 
 "Tl481473": {
-"^ot:altLabel": "Cladosporium cladosporioides", 
 "^ot:originalLabel": "Cladosporium cladosporioides GU566222", 
+"^ot:ottId": 187451, 
+"^ot:ottTaxonName": "Cladosporium cladosporioides", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6270, 
 "@tb:identifier.taxonVariant": 15173, 
@@ -576,10 +793,14 @@
 }
 }, 
 "Tl481474": {
-"^ot:originalLabel": "Catenulostroma protearum GU214628"
+"^ot:originalLabel": "Catenulostroma protearum GU214628", 
+"^ot:ottId": 1092117, 
+"^ot:ottTaxonName": "Catenulostroma protearum"
 }, 
 "Tl481475": {
 "^ot:originalLabel": "Teratosphaeria persoonii EU707881", 
+"^ot:ottId": 305935, 
+"^ot:ottTaxonName": "Teratosphaeria persoonii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 470708, 
 "@tb:identifier.taxonVariant": 624872
@@ -587,24 +808,31 @@
 }, 
 "Tl481476": {
 "^ot:originalLabel": "Teratosphaeria marasasii EU707868", 
+"^ot:ottId": 305953, 
+"^ot:ottTaxonName": "Teratosphaeria marasasii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 470706, 
 "@tb:identifier.taxonVariant": 624870
 }
 }, 
 "Tl481477": {
-"^ot:originalLabel": "Catenulostroma abietis FJ372387"
+"^ot:originalLabel": "Catenulostroma abietis FJ372387", 
+"^ot:ottId": 1093432, 
+"^ot:ottTaxonName": "Catenulostroma abietis"
 }, 
 "Tl481478": {
 "^ot:originalLabel": "Phaeothecoidea proteae EU707898", 
+"^ot:ottId": 668460, 
+"^ot:ottTaxonName": "Phaeothecoidea proteae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 470333, 
 "@tb:identifier.taxonVariant": 624493
 }
 }, 
 "Tl481479": {
-"^ot:altLabel": "Batcheloromyces leucadendri", 
 "^ot:originalLabel": "Batcheloromyces leucadendri EU707890", 
+"^ot:ottId": 733751, 
+"^ot:ottTaxonName": "Batcheloromyces leucadendri", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 43984, 
 "@tb:identifier.taxonVariant": 102893, 
@@ -613,19 +841,29 @@
 }
 }, 
 "Tl481480": {
-"^ot:originalLabel": "Catenulostroma protearum GU214629"
+"^ot:originalLabel": "Catenulostroma protearum GU214629", 
+"^ot:ottId": 1092117, 
+"^ot:ottTaxonName": "Catenulostroma protearum"
 }, 
 "Tl481481": {
-"^ot:originalLabel": "Catenulostroma protearum GU214627"
+"^ot:originalLabel": "Catenulostroma protearum GU214627", 
+"^ot:ottId": 1092117, 
+"^ot:ottTaxonName": "Catenulostroma protearum"
 }, 
 "Tl481482": {
-"^ot:originalLabel": "Teratosphaeria bellula EU707860"
+"^ot:originalLabel": "Teratosphaeria bellula EU707860", 
+"^ot:ottId": 733764, 
+"^ot:ottTaxonName": "Teratosphaeria bellula"
 }, 
 "Tl481483": {
-"^ot:originalLabel": "Teratosphaeria altensteinii  FJ372394"
+"^ot:originalLabel": "Teratosphaeria altensteinii  FJ372394", 
+"^ot:ottId": 730412, 
+"^ot:ottTaxonName": "Teratosphaeria altensteinii"
 }, 
 "Tl481484": {
 "^ot:originalLabel": "Teratosphaeria persoonii EU707880", 
+"^ot:ottId": 305935, 
+"^ot:ottTaxonName": "Teratosphaeria persoonii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 470708, 
 "@tb:identifier.taxonVariant": 624872
@@ -648,7 +886,18 @@
 "Tr31125": {
 "@label": "Fig. 3", 
 "@xsi:type": "nex:FloatTree", 
-"^ot:rootNodeId": "Tn5700113", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:undefined", 
+"^ot:curatedType": "Maximum parsimony ", 
+"^ot:inGroupClade": "Tn5700097", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
+"^ot:rootNodeId": "Tr31125_ROOT", 
+"^ot:specifiedRoot": "Tr31125_ROOT", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 25, 
 "^tb:quality.tree": "Unrated", 
@@ -859,10 +1108,6 @@
 }
 }, 
 "Tn5700113": {
-"edge444634": {
-"@source": "Tn5700113", 
-"@target": "Tn5700118"
-}, 
 "edge444636": {
 "@source": "Tn5700113", 
 "@target": "Tn5700097"
@@ -886,6 +1131,16 @@
 "edge444704": {
 "@source": "Tn5700119", 
 "@target": "Tn5700099"
+}
+}, 
+"Tr31125_ROOT": {
+"Tr31125_ROOT_EDGE": {
+"@source": "Tr31125_ROOT", 
+"@target": "Tn5700113"
+}, 
+"edge444634": {
+"@source": "Tr31125_ROOT", 
+"@target": "Tn5700118"
 }
 }
 }, 
@@ -970,9 +1225,7 @@
 }, 
 "Tn5700111": {}, 
 "Tn5700112": {}, 
-"Tn5700113": {
-"@root": true
-}, 
+"Tn5700113": {}, 
 "Tn5700114": {
 "@otu": "Tl481392"
 }, 
@@ -989,13 +1242,27 @@
 "Tn5700119": {}, 
 "Tn5700120": {
 "@otu": "Tl481400"
+}, 
+"Tr31125_ROOT": {
+"@root": true
 }
 }
 }, 
 "Tr31126": {
 "@label": "Fig. 1", 
 "@xsi:type": "nex:FloatTree", 
-"^ot:rootNodeId": "Tn5700217", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:undefined", 
+"^ot:curatedType": "Maximum parsimony ", 
+"^ot:inGroupClade": "Tn5700155", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
+"^ot:rootNodeId": "Tr31126_ROOT", 
+"^ot:specifiedRoot": "Tr31126_ROOT", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 57, 
 "^tb:quality.tree": "Unrated", 
@@ -1472,10 +1739,6 @@
 }
 }, 
 "Tn5700217": {
-"edge444860": {
-"@source": "Tn5700217", 
-"@target": "Tn5700212"
-}, 
 "edge444862": {
 "@source": "Tn5700217", 
 "@target": "Tn5700155"
@@ -1511,6 +1774,16 @@
 "edge445066": {
 "@source": "Tn5700225", 
 "@target": "Tn5700132"
+}
+}, 
+"Tr31126_ROOT": {
+"Tr31126_ROOT_EDGE": {
+"@source": "Tr31126_ROOT", 
+"@target": "Tn5700217"
+}, 
+"edge444860": {
+"@source": "Tr31126_ROOT", 
+"@target": "Tn5700212"
 }
 }
 }, 
@@ -1713,9 +1986,7 @@
 "@otu": "Tl481454"
 }, 
 "Tn5700216": {}, 
-"Tn5700217": {
-"@root": true
-}, 
+"Tn5700217": {}, 
 "Tn5700218": {
 "@otu": "Tl481408"
 }, 
@@ -1735,13 +2006,27 @@
 "Tn5700224": {
 "@otu": "Tl481463"
 }, 
-"Tn5700225": {}
+"Tn5700225": {}, 
+"Tr31126_ROOT": {
+"@root": true
+}
 }
 }, 
 "Tr31127": {
 "@label": "Fig. 2", 
 "@xsi:type": "nex:FloatTree", 
-"^ot:rootNodeId": "Tn5700245", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:undefined", 
+"^ot:curatedType": "Maximum parsimony ", 
+"^ot:inGroupClade": "Tn5700226", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
+"^ot:rootNodeId": "Tr31127_ROOT", 
+"^ot:specifiedRoot": "Tr31127_ROOT", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 29, 
 "^tb:quality.tree": "Unrated", 
@@ -1858,10 +2143,6 @@
 }
 }, 
 "Tn5700245": {
-"edge444738": {
-"@source": "Tn5700245", 
-"@target": "Tn5700268"
-}, 
 "edge444740": {
 "@source": "Tn5700245", 
 "@target": "Tn5700226"
@@ -2026,6 +2307,16 @@
 "@source": "Tn5700278", 
 "@target": "Tn5700266"
 }
+}, 
+"Tr31127_ROOT": {
+"Tr31127_ROOT_EDGE": {
+"@source": "Tr31127_ROOT", 
+"@target": "Tn5700245"
+}, 
+"edge444738": {
+"@source": "Tr31127_ROOT", 
+"@target": "Tn5700268"
+}
 }
 }, 
 "nodeById": {
@@ -2064,9 +2355,7 @@
 "Tn5700242": {}, 
 "Tn5700243": {}, 
 "Tn5700244": {}, 
-"Tn5700245": {
-"@root": true
-}, 
+"Tn5700245": {}, 
 "Tn5700246": {}, 
 "Tn5700247": {}, 
 "Tn5700248": {}, 
@@ -2145,6 +2434,9 @@
 }, 
 "Tn5700282": {
 "@otu": "Tl481479"
+}, 
+"Tr31127_ROOT": {
+"@root": true
 }
 }
 }
