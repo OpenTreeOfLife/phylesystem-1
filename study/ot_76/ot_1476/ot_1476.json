@@ -57,16 +57,106 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2018-07-09T03:33:36.596Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:curatorName": "Kaitlin Allen ", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}, 
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": "$1"
+}, 
+"old": {
+"$": "^(\\S*\\s+\\S*).*"
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2018-07-09T03:33:36.596Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Kaitlin Allen "
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S16754"
 }, 
+"^ot:focalClade": 514686, 
+"^ot:focalCladeOTTTaxonName": "Ramularia (genus in Opisthokonta)", 
 "^ot:otusElementOrder": [
 "Tls41377"
 ], 
@@ -76,6 +166,7 @@
 }, 
 "^ot:studyPublicationReference": "Videira S.I., Groenewald J.Z., Kolecka A., Van haren L., Boekhout T., & Crous P.W. 2015. Elucidating the Ramularia eucalypti species complex. Persoonia: Molecular Phylogeny and Evolution of Fungi, 34: 50-64.", 
 "^ot:studyYear": 2015, 
+"^ot:tag": [], 
 "^ot:taxonLinkPrefixes": {
 "@ubio": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:", 
 "@uniprot": "http://purl.uniprot.org/taxonomy/"
@@ -103,17 +194,24 @@
 "^skos:historyNote": "Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlOTUWriter@6cb3bcce $Rev$", 
 "otuById": {
 "Tl1670208": {
-"^ot:originalLabel": "Ramularia eucalypti CBS 120726"
+"^ot:originalLabel": "Ramularia eucalypti CBS 120726", 
+"^ot:ottId": 829039, 
+"^ot:ottTaxonName": "Ramularia eucalypti"
 }, 
 "Tl1670209": {
-"^ot:originalLabel": "Ramularia eucalypti CBS 120728"
+"^ot:originalLabel": "Ramularia eucalypti CBS 120728", 
+"^ot:ottId": 829039, 
+"^ot:ottTaxonName": "Ramularia eucalypti"
 }, 
 "Tl1670210": {
-"^ot:originalLabel": "Ramularia plurivora CBS 118693"
+"^ot:originalLabel": "Ramularia plurivora CBS 118693", 
+"^ot:ottId": 5714387, 
+"^ot:ottTaxonName": "Ramularia plurivora"
 }, 
 "Tl1670211": {
-"^ot:altLabel": "Ramularia calcea", 
 "^ot:originalLabel": "Ramularia calcea CBS 101612", 
+"^ot:ottId": 3719041, 
+"^ot:ottTaxonName": "Ramularia calcea", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 627913, 
 "@tb:identifier.taxonVariant": 841550, 
@@ -121,8 +219,9 @@
 }
 }, 
 "Tl1670212": {
-"^ot:altLabel": "Ramularia major", 
 "^ot:originalLabel": "Ramularia major CPC 12543", 
+"^ot:ottId": 3719272, 
+"^ot:ottTaxonName": "Ramularia major", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 627915, 
 "@tb:identifier.taxonVariant": 841552, 
@@ -130,17 +229,24 @@
 }
 }, 
 "Tl1670213": {
-"^ot:originalLabel": "Ramularia glennii CPC 16560"
+"^ot:originalLabel": "Ramularia glennii CPC 16560", 
+"^ot:ottId": 5714385, 
+"^ot:ottTaxonName": "Ramularia glennii"
 }, 
 "Tl1670214": {
-"^ot:originalLabel": "Ramularia plurivora CPC 11517"
+"^ot:originalLabel": "Ramularia plurivora CPC 11517", 
+"^ot:ottId": 5714387, 
+"^ot:ottTaxonName": "Ramularia plurivora"
 }, 
 "Tl1670215": {
-"^ot:originalLabel": "Ramularia miae CPC 19770"
+"^ot:originalLabel": "Ramularia miae CPC 19770", 
+"^ot:ottId": 409045, 
+"^ot:ottTaxonName": "Ramularia miae"
 }, 
 "Tl1670216": {
-"^ot:altLabel": "Ramularia decipiens", 
 "^ot:originalLabel": "Ramularia decipiens CBS 114300", 
+"^ot:ottId": 3718895, 
+"^ot:ottTaxonName": "Ramularia decipiens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 627914, 
 "@tb:identifier.taxonVariant": 841551, 
@@ -148,11 +254,14 @@
 }
 }, 
 "Tl1670217": {
-"^ot:originalLabel": "Ramularia nyssicola CBS 127665"
+"^ot:originalLabel": "Ramularia nyssicola CBS 127665", 
+"^ot:ottId": 368752, 
+"^ot:ottTaxonName": "Mycosphaerella nyssicola"
 }, 
 "Tl1670218": {
-"^ot:altLabel": "Ramularia tovarae", 
 "^ot:originalLabel": "Ramularia tovarae CBS 113305", 
+"^ot:ottId": 3719351, 
+"^ot:ottTaxonName": "Ramularia tovarae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 627916, 
 "@tb:identifier.taxonVariant": 841553, 
@@ -160,8 +269,9 @@
 }
 }, 
 "Tl1670219": {
-"^ot:altLabel": "Ramularia pratensis", 
 "^ot:originalLabel": "Ramularia pratensis CBS 136.23", 
+"^ot:ottId": 265791, 
+"^ot:ottTaxonName": "Ramularia pratensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 401815, 
 "@tb:identifier.taxonVariant": 407939, 
@@ -170,34 +280,52 @@
 }
 }, 
 "Tl1670220": {
-"^ot:originalLabel": "Ramularia eucalypti CBS 356.69"
+"^ot:originalLabel": "Ramularia eucalypti CBS 356.69", 
+"^ot:ottId": 829039, 
+"^ot:ottTaxonName": "Ramularia eucalypti"
 }, 
 "Tl1670221": {
-"^ot:originalLabel": "Ramularia vizellae CBS 130601"
+"^ot:originalLabel": "Ramularia vizellae CBS 130601", 
+"^ot:ottId": 274914, 
+"^ot:ottTaxonName": "Ramularia vizellae"
 }, 
 "Tl1670222": {
 "^ot:originalLabel": "Ramularia sp. CBS 114568"
 }, 
 "Tl1670223": {
-"^ot:originalLabel": "Ramularia plurivora CBS 118743"
+"^ot:originalLabel": "Ramularia plurivora CBS 118743", 
+"^ot:ottId": 5714387, 
+"^ot:ottTaxonName": "Ramularia plurivora"
 }, 
 "Tl1670224": {
-"^ot:originalLabel": "Ramularia eucalypti CPC 19187"
+"^ot:originalLabel": "Ramularia eucalypti CPC 19187", 
+"^ot:ottId": 829039, 
+"^ot:ottTaxonName": "Ramularia eucalypti"
 }, 
 "Tl1670225": {
-"^ot:originalLabel": "Ramularia haroldporteri CBS 137272"
+"^ot:originalLabel": "Ramularia haroldporteri CBS 137272", 
+"^ot:ottId": 5714388, 
+"^ot:ottTaxonName": "Ramularia haroldporteri"
 }, 
 "Tl1670226": {
-"^ot:originalLabel": "Ramularia glennii CBS 129441"
+"^ot:originalLabel": "Ramularia glennii CBS 129441", 
+"^ot:ottId": 5714385, 
+"^ot:ottTaxonName": "Ramularia glennii"
 }, 
 "Tl1670227": {
-"^ot:originalLabel": "Ramularia plurivora CPC 16123"
+"^ot:originalLabel": "Ramularia plurivora CPC 16123", 
+"^ot:ottId": 5714387, 
+"^ot:ottTaxonName": "Ramularia plurivora"
 }, 
 "Tl1670228": {
-"^ot:originalLabel": "Ramularia eucalypti CBS 101045"
+"^ot:originalLabel": "Ramularia eucalypti CBS 101045", 
+"^ot:ottId": 829039, 
+"^ot:ottTaxonName": "Ramularia eucalypti"
 }, 
 "Tl1670229": {
-"^ot:originalLabel": "Ramularia glennii CPC 16565"
+"^ot:originalLabel": "Ramularia glennii CPC 16565", 
+"^ot:ottId": 5714385, 
+"^ot:ottTaxonName": "Ramularia glennii"
 }, 
 "Tl1670230": {
 "^ot:altLabel": "Ramularia collo-cygni", 
@@ -210,23 +338,34 @@
 }
 }, 
 "Tl1670231": {
-"^ot:originalLabel": "Ramularia eucalypti CBS 155.82"
+"^ot:originalLabel": "Ramularia eucalypti CBS 155.82", 
+"^ot:ottId": 829039, 
+"^ot:ottTaxonName": "Ramularia eucalypti"
 }, 
 "Tl1670232": {
-"^ot:originalLabel": "Ramularia eucalypti CPC 16804"
+"^ot:originalLabel": "Ramularia eucalypti CPC 16804", 
+"^ot:ottId": 829039, 
+"^ot:ottTaxonName": "Ramularia eucalypti"
 }, 
 "Tl1670233": {
-"^ot:originalLabel": "Ramularia glennii CBS 120727"
+"^ot:originalLabel": "Ramularia glennii CBS 120727", 
+"^ot:ottId": 5714385, 
+"^ot:ottTaxonName": "Ramularia glennii"
 }, 
 "Tl1670234": {
-"^ot:originalLabel": "Ramularia miae CBS 120121"
+"^ot:originalLabel": "Ramularia miae CBS 120121", 
+"^ot:ottId": 409045, 
+"^ot:ottTaxonName": "Ramularia miae"
 }, 
 "Tl1670235": {
-"^ot:originalLabel": "Ramularia plurivora CPC 16124"
+"^ot:originalLabel": "Ramularia plurivora CPC 16124", 
+"^ot:ottId": 5714387, 
+"^ot:ottTaxonName": "Ramularia plurivora"
 }, 
 "Tl1670236": {
-"^ot:altLabel": "Ramularia glechomatis", 
 "^ot:originalLabel": "Ramularia glechomatis CBS 108979", 
+"^ot:ottId": 418455, 
+"^ot:ottTaxonName": "Ramularia glechomatis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 490885, 
 "@tb:identifier.taxonVariant": 650555, 
@@ -235,11 +374,14 @@
 }
 }, 
 "Tl1670237": {
-"^ot:originalLabel": "Ramularia glennii CPC 18468"
+"^ot:originalLabel": "Ramularia glennii CPC 18468", 
+"^ot:ottId": 5714385, 
+"^ot:ottTaxonName": "Ramularia glennii"
 }, 
 "Tl1670238": {
-"^ot:altLabel": "Ramularia agrimoniae", 
 "^ot:originalLabel": "Ramularia agrimoniae CPC 11653", 
+"^ot:ottId": 3719331, 
+"^ot:ottTaxonName": "Ramularia agrimoniae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 627912, 
 "@tb:identifier.taxonVariant": 841549, 
@@ -247,10 +389,14 @@
 }
 }, 
 "Tl1670239": {
-"^ot:originalLabel": "Ramularia glennii CBS 122989"
+"^ot:originalLabel": "Ramularia glennii CBS 122989", 
+"^ot:ottId": 5714385, 
+"^ot:ottTaxonName": "Ramularia glennii"
 }, 
 "Tl1670240": {
-"^ot:originalLabel": "Ramularia mali CBS 129581"
+"^ot:originalLabel": "Ramularia mali CBS 129581", 
+"^ot:ottId": 5714386, 
+"^ot:ottTaxonName": "Ramularia mali"
 }
 }
 }
@@ -267,7 +413,18 @@
 "Tr79968": {
 "@label": "Fig. 3", 
 "@xsi:type": "nex:FloatTree", 
-"^ot:rootNodeId": "Tn12354506", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:changesCount", 
+"^ot:curatedType": "Bayesian inference ", 
+"^ot:inGroupClade": "Tn12354506", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
+"^ot:rootNodeId": "Tr79968_ROOT", 
+"^ot:specifiedRoot": "Tr79968_ROOT", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 33, 
 "^tb:quality.tree": "Unrated", 
@@ -615,11 +772,6 @@
 }
 }, 
 "Tn12354506": {
-"edge498245": {
-"@length": 0.2773870999948805, 
-"@source": "Tn12354506", 
-"@target": "Tn12354460"
-}, 
 "edge498247": {
 "@length": 0.03661851974987729, 
 "@source": "Tn12354506", 
@@ -641,6 +793,17 @@
 "@length": 0.0003848814010074258, 
 "@source": "Tn12354509", 
 "@target": "Tn12354485"
+}
+}, 
+"Tr79968_ROOT": {
+"Tr79968_ROOT_EDGE": {
+"@source": "Tr79968_ROOT", 
+"@target": "Tn12354506"
+}, 
+"edge498245": {
+"@length": 0.2773870999948805, 
+"@source": "Tr79968_ROOT", 
+"@target": "Tn12354460"
 }
 }
 }, 
@@ -760,9 +923,7 @@
 "Tn12354503": {}, 
 "Tn12354504": {}, 
 "Tn12354505": {}, 
-"Tn12354506": {
-"@root": true
-}, 
+"Tn12354506": {}, 
 "Tn12354507": {
 "@otu": "Tl1670223"
 }, 
@@ -775,6 +936,9 @@
 }, 
 "Tn12354511": {
 "@otu": "Tl1670216"
+}, 
+"Tr79968_ROOT": {
+"@root": true
 }
 }
 }
