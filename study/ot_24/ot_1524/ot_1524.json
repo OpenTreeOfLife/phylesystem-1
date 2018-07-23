@@ -49,16 +49,106 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2018-07-23T01:23:32.994Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "Tetrapods"
 }, 
-"^ot:curatorName": "Kaitlin Allen ", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}, 
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": "$1"
+}, 
+"old": {
+"$": "^(\\S*\\s+\\S*).*"
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2018-07-23T01:23:32.994Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Kaitlin Allen "
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S9967"
 }, 
+"^ot:focalClade": 587319, 
+"^ot:focalCladeOTTTaxonName": "Emydidae", 
 "^ot:otusElementOrder": [
 "Tls15410"
 ], 
@@ -68,6 +158,7 @@
 }, 
 "^ot:studyPublicationReference": "Spinks P., Thomson R.C., Lovely G., & Bradley shaffer H. 2009. Assessing what is needed to resolve a molecular phylogeny: simulations and empirical data from Emydid turtles. BMC Evolutionary Biology, 9(56): 56.", 
 "^ot:studyYear": 2009, 
+"^ot:tag": [], 
 "^ot:taxonLinkPrefixes": {
 "@ubio": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:", 
 "@uniprot": "http://purl.uniprot.org/taxonomy/"
@@ -94,6 +185,8 @@
 "otuById": {
 "Tl241216": {
 "^ot:originalLabel": "Malaclemys terrapin", 
+"^ot:ottId": 1064070, 
+"^ot:ottTaxonName": "Malaclemys terrapin", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 53190, 
 "@tb:identifier.taxonVariant": 123608, 
@@ -103,6 +196,8 @@
 }, 
 "Tl241224": {
 "^ot:originalLabel": "Heosemys spinosa", 
+"^ot:ottId": 619859, 
+"^ot:ottTaxonName": "Heosemys spinosa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 13291, 
 "@tb:identifier.taxonVariant": 31385, 
@@ -112,6 +207,8 @@
 }, 
 "Tl241235": {
 "^ot:originalLabel": "Pseudemys concinna", 
+"^ot:ottId": 1003485, 
+"^ot:ottTaxonName": "Pseudemys concinna", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 242330, 
 "@tb:identifier.taxonVariant": 303715, 
@@ -121,6 +218,8 @@
 }, 
 "Tl241265": {
 "^ot:originalLabel": "Psammobates pardalis", 
+"^ot:ottId": 776504, 
+"^ot:ottTaxonName": "Stigmochelys pardalis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 426548, 
 "@tb:identifier.taxonVariant": 560876, 
@@ -130,6 +229,8 @@
 }, 
 "Tl241289": {
 "^ot:originalLabel": "Chelonia mydas", 
+"^ot:ottId": 559133, 
+"^ot:ottTaxonName": "Chelonia mydas", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5762, 
 "@tb:identifier.taxonVariant": 13990, 
@@ -139,6 +240,8 @@
 }, 
 "Tl241300": {
 "^ot:originalLabel": "Pseudemys nelsoni", 
+"^ot:ottId": 526264, 
+"^ot:ottTaxonName": "Pseudemys nelsoni", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 265374, 
 "@tb:identifier.taxonVariant": 321802, 
@@ -148,6 +251,8 @@
 }, 
 "Tl242308": {
 "^ot:originalLabel": "Platysternon megacephalum", 
+"^ot:ottId": 619860, 
+"^ot:ottTaxonName": "Platysternon megacephalum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 42184, 
 "@tb:identifier.taxonVariant": 98387, 
@@ -156,8 +261,9 @@
 }
 }, 
 "Tl256254": {
-"^ot:altLabel": "Terrapene carolina", 
 "^ot:originalLabel": "Terrapene carolina 1", 
+"^ot:ottId": 848786, 
+"^ot:ottTaxonName": "Terrapene carolina", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 152030, 
 "@tb:identifier.taxonVariant": 227599, 
@@ -166,8 +272,9 @@
 }
 }, 
 "Tl256255": {
-"^ot:altLabel": "Emys marmorata", 
 "^ot:originalLabel": "Emys marmorata 4", 
+"^ot:ottId": 743507, 
+"^ot:ottTaxonName": "Actinemys marmorata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 10002, 
 "@tb:identifier.taxonVariant": 23943, 
@@ -177,8 +284,9 @@
 "^skos:prefLabel": "Actinemys marmorata"
 }, 
 "Tl256256": {
-"^ot:altLabel": "Graptemys geographica", 
 "^ot:originalLabel": "Graptemys geographica 2", 
+"^ot:ottId": 1064023, 
+"^ot:ottTaxonName": "Graptemys geographica", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 53188, 
 "@tb:identifier.taxonVariant": 123605, 
@@ -187,8 +295,9 @@
 }
 }, 
 "Tl256257": {
-"^ot:altLabel": "Terrapene ornata", 
 "^ot:originalLabel": "Terrapene ornata leuteola", 
+"^ot:ottId": 1013359, 
+"^ot:ottTaxonName": "Terrapene ornata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 28708, 
 "@tb:identifier.taxonVariant": 66908, 
@@ -197,8 +306,9 @@
 }
 }, 
 "Tl256258": {
-"^ot:altLabel": "Glyptemys insculpta", 
 "^ot:originalLabel": "Glyptemys insculpta 2", 
+"^ot:ottId": 743503, 
+"^ot:ottTaxonName": "Glyptemys insculpta", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 12332, 
 "@tb:identifier.taxonVariant": 29291, 
@@ -207,8 +317,9 @@
 }
 }, 
 "Tl256259": {
-"^ot:altLabel": "Terrapene ornata", 
 "^ot:originalLabel": "Terrapene ornata 1", 
+"^ot:ottId": 1013359, 
+"^ot:ottTaxonName": "Terrapene ornata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 28708, 
 "@tb:identifier.taxonVariant": 66908, 
@@ -217,8 +328,9 @@
 }
 }, 
 "Tl256260": {
-"^ot:altLabel": "Clemmys guttata", 
 "^ot:originalLabel": "Clemmys guttata 3", 
+"^ot:ottId": 436621, 
+"^ot:ottTaxonName": "Clemmys guttata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6384, 
 "@tb:identifier.taxonVariant": 15473, 
@@ -227,8 +339,9 @@
 }
 }, 
 "Tl256261": {
-"^ot:altLabel": "Emys blandingii", 
 "^ot:originalLabel": "Emys blandingii 1", 
+"^ot:ottId": 1013355, 
+"^ot:ottTaxonName": "Emydoidea blandingii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 10001, 
 "@tb:identifier.taxonVariant": 23940, 
@@ -238,8 +351,9 @@
 "^skos:prefLabel": "Emydoidea blandingii"
 }, 
 "Tl256262": {
-"^ot:altLabel": "Chrysemys picta", 
 "^ot:originalLabel": "Chrysemys picta 2", 
+"^ot:ottId": 587300, 
+"^ot:ottTaxonName": "Chrysemys picta", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6028, 
 "@tb:identifier.taxonVariant": 14552, 
@@ -248,8 +362,9 @@
 }
 }, 
 "Tl256263": {
-"^ot:altLabel": "Mauremys mutica", 
 "^ot:originalLabel": "Mauremys mutica 1", 
+"^ot:ottId": 679467, 
+"^ot:ottTaxonName": "Mauremys mutica", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 17026, 
 "@tb:identifier.taxonVariant": 39869, 
@@ -258,8 +373,9 @@
 }
 }, 
 "Tl256264": {
-"^ot:altLabel": "Glyptemys insculpta", 
 "^ot:originalLabel": "Glyptemys insculpta 3", 
+"^ot:ottId": 743503, 
+"^ot:ottTaxonName": "Glyptemys insculpta", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 12332, 
 "@tb:identifier.taxonVariant": 29291, 
@@ -268,8 +384,9 @@
 }
 }, 
 "Tl256265": {
-"^ot:altLabel": "Trachemys stejnegeri", 
 "^ot:originalLabel": "Trachemys stejnegeri 1", 
+"^ot:ottId": 608016, 
+"^ot:ottTaxonName": "Trachemys stejnegeri", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 426880, 
 "@tb:identifier.taxonVariant": 561516, 
@@ -278,8 +395,9 @@
 }
 }, 
 "Tl256266": {
-"^ot:altLabel": "Trachemys taylori", 
 "^ot:originalLabel": "Trachemys taylori 1", 
+"^ot:ottId": 455436, 
+"^ot:ottTaxonName": "Trachemys taylori", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 426881, 
 "@tb:identifier.taxonVariant": 561517, 
@@ -288,8 +406,9 @@
 }
 }, 
 "Tl256267": {
-"^ot:altLabel": "Emys marmorata", 
 "^ot:originalLabel": "Emys marmorata 3", 
+"^ot:ottId": 743507, 
+"^ot:ottTaxonName": "Actinemys marmorata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 10002, 
 "@tb:identifier.taxonVariant": 23943, 
@@ -299,8 +418,9 @@
 "^skos:prefLabel": "Actinemys marmorata"
 }, 
 "Tl256268": {
-"^ot:altLabel": "Emys blandingii", 
 "^ot:originalLabel": "Emys blandingii 2", 
+"^ot:ottId": 1013355, 
+"^ot:ottTaxonName": "Emydoidea blandingii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 10001, 
 "@tb:identifier.taxonVariant": 23940, 
@@ -310,8 +430,9 @@
 "^skos:prefLabel": "Emydoidea blandingii"
 }, 
 "Tl256269": {
-"^ot:altLabel": "Glyptemys muhlenbergii", 
 "^ot:originalLabel": "Glyptemys muhlenbergii 1", 
+"^ot:ottId": 743501, 
+"^ot:ottTaxonName": "Glyptemys muhlenbergii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 12333, 
 "@tb:identifier.taxonVariant": 29292, 
@@ -320,8 +441,9 @@
 }
 }, 
 "Tl256270": {
-"^ot:altLabel": "Emys orbicularis", 
 "^ot:originalLabel": "Emys orbicularis 3", 
+"^ot:ottId": 733093, 
+"^ot:ottTaxonName": "Emys orbicularis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 10003, 
 "@tb:identifier.taxonVariant": 23946, 
@@ -330,8 +452,9 @@
 }
 }, 
 "Tl256271": {
-"^ot:altLabel": "Trachemys taylori", 
 "^ot:originalLabel": "Trachemys taylori 2", 
+"^ot:ottId": 455436, 
+"^ot:ottTaxonName": "Trachemys taylori", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 426881, 
 "@tb:identifier.taxonVariant": 561517, 
@@ -340,8 +463,9 @@
 }
 }, 
 "Tl256272": {
-"^ot:altLabel": "Pseudemys concinna floridana", 
 "^ot:originalLabel": "Pseudemys concinna floridana 1", 
+"^ot:ottId": 448198, 
+"^ot:ottTaxonName": "Pseudemys floridana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 426878, 
 "@tb:identifier.taxonVariant": 561514, 
@@ -350,8 +474,9 @@
 }
 }, 
 "Tl256273": {
-"^ot:altLabel": "Emys marmorata", 
 "^ot:originalLabel": "Emys marmorata 2", 
+"^ot:ottId": 743507, 
+"^ot:ottTaxonName": "Actinemys marmorata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 10002, 
 "@tb:identifier.taxonVariant": 23943, 
@@ -361,8 +486,9 @@
 "^skos:prefLabel": "Actinemys marmorata"
 }, 
 "Tl256274": {
-"^ot:altLabel": "Terrapene coahuila", 
 "^ot:originalLabel": "Terrapene coahuila 2", 
+"^ot:ottId": 444150, 
+"^ot:ottTaxonName": "Terrapene coahuila", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 152031, 
 "@tb:identifier.taxonVariant": 227600, 
@@ -371,8 +497,9 @@
 }
 }, 
 "Tl256275": {
-"^ot:altLabel": "Trachemys scripta elegans", 
 "^ot:originalLabel": "Trachemys scripta elegans 2", 
+"^ot:ottId": 735228, 
+"^ot:ottTaxonName": "Trachemys scripta elegans", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 29270, 
 "@tb:identifier.taxonVariant": 68241, 
@@ -381,8 +508,9 @@
 }
 }, 
 "Tl256276": {
-"^ot:altLabel": "Glyptemys muhlenbergii", 
 "^ot:originalLabel": "Glyptemys muhlenbergii 2", 
+"^ot:ottId": 743501, 
+"^ot:ottTaxonName": "Glyptemys muhlenbergii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 12333, 
 "@tb:identifier.taxonVariant": 29292, 
@@ -391,8 +519,9 @@
 }
 }, 
 "Tl256277": {
-"^ot:altLabel": "Trachemys scripta scripta", 
 "^ot:originalLabel": "Trachemys scripta scripta 1", 
+"^ot:ottId": 34957, 
+"^ot:ottTaxonName": "Trachemys scripta scripta", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 426882, 
 "@tb:identifier.taxonVariant": 561518, 
@@ -401,8 +530,9 @@
 }
 }, 
 "Tl256278": {
-"^ot:altLabel": "Graptemys caglei", 
 "^ot:originalLabel": "Graptemys caglei 2", 
+"^ot:ottId": 515020, 
+"^ot:ottTaxonName": "Graptemys caglei", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 59971, 
 "@tb:identifier.taxonVariant": 133136, 
@@ -411,8 +541,9 @@
 }
 }, 
 "Tl256279": {
-"^ot:altLabel": "Emys trinacris", 
 "^ot:originalLabel": "Emys trinacris 1", 
+"^ot:ottId": 592138, 
+"^ot:ottTaxonName": "Emys trinacris", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 293458, 
 "@tb:identifier.taxonVariant": 344181, 
@@ -421,8 +552,9 @@
 }
 }, 
 "Tl256280": {
-"^ot:altLabel": "Terrapene carolina", 
 "^ot:originalLabel": "Terrapene carolina 4", 
+"^ot:ottId": 848786, 
+"^ot:ottTaxonName": "Terrapene carolina", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 152030, 
 "@tb:identifier.taxonVariant": 227599, 
@@ -431,8 +563,9 @@
 }
 }, 
 "Tl256281": {
-"^ot:altLabel": "Clemmys guttata", 
 "^ot:originalLabel": "Clemmys guttata 1", 
+"^ot:ottId": 436621, 
+"^ot:ottTaxonName": "Clemmys guttata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6384, 
 "@tb:identifier.taxonVariant": 15473, 
@@ -441,8 +574,9 @@
 }
 }, 
 "Tl256282": {
-"^ot:altLabel": "Clemmys guttata", 
 "^ot:originalLabel": "Clemmys guttata 2", 
+"^ot:ottId": 436621, 
+"^ot:ottTaxonName": "Clemmys guttata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6384, 
 "@tb:identifier.taxonVariant": 15473, 
@@ -451,8 +585,9 @@
 }
 }, 
 "Tl256283": {
-"^ot:altLabel": "Terrapene coahuila", 
 "^ot:originalLabel": "Terrapene coahuila 1", 
+"^ot:ottId": 444150, 
+"^ot:ottTaxonName": "Terrapene coahuila", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 152031, 
 "@tb:identifier.taxonVariant": 227600, 
@@ -461,8 +596,9 @@
 }
 }, 
 "Tl256284": {
-"^ot:altLabel": "Emys orbicularis", 
 "^ot:originalLabel": "Emys orbicularis 2", 
+"^ot:ottId": 733093, 
+"^ot:ottTaxonName": "Emys orbicularis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 10003, 
 "@tb:identifier.taxonVariant": 23946, 
@@ -471,8 +607,9 @@
 }
 }, 
 "Tl256285": {
-"^ot:altLabel": "Glyptemys muhlenbergii", 
 "^ot:originalLabel": "Glyptemys muhlenbergii 3", 
+"^ot:ottId": 743501, 
+"^ot:ottTaxonName": "Glyptemys muhlenbergii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 12333, 
 "@tb:identifier.taxonVariant": 29292, 
@@ -481,8 +618,9 @@
 }
 }, 
 "Tl256286": {
-"^ot:altLabel": "Terrapene carolina triunguis", 
 "^ot:originalLabel": "Terrapene carolina triunguis 2", 
+"^ot:ottId": 256160, 
+"^ot:ottTaxonName": "Terrapene mexicana triunguis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 341281, 
 "@tb:identifier.taxonVariant": 377821, 
@@ -491,8 +629,9 @@
 }
 }, 
 "Tl256287": {
-"^ot:altLabel": "Graptemys caglei", 
 "^ot:originalLabel": "Graptemys caglei 1", 
+"^ot:ottId": 515020, 
+"^ot:ottTaxonName": "Graptemys caglei", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 59971, 
 "@tb:identifier.taxonVariant": 133136, 
@@ -501,8 +640,9 @@
 }
 }, 
 "Tl256288": {
-"^ot:altLabel": "Graptemys ouachitensis", 
 "^ot:originalLabel": "Graptemys ouachatensis", 
+"^ot:ottId": 480212, 
+"^ot:ottTaxonName": "Graptemys ouachitensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 59977, 
 "@tb:identifier.taxonVariant": 133142, 
@@ -511,8 +651,9 @@
 }
 }, 
 "Tl256289": {
-"^ot:altLabel": "Graptemys pseudogeographica", 
 "^ot:originalLabel": "Graptemys pseudogeographica 2", 
+"^ot:ottId": 1092200, 
+"^ot:ottTaxonName": "Graptemys pseudogeographica", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 59978, 
 "@tb:identifier.taxonVariant": 133143, 
@@ -521,8 +662,9 @@
 }
 }, 
 "Tl256290": {
-"^ot:altLabel": "Emys orbicularis", 
 "^ot:originalLabel": "Emys orbicularis 4", 
+"^ot:ottId": 733093, 
+"^ot:ottTaxonName": "Emys orbicularis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 10003, 
 "@tb:identifier.taxonVariant": 23946, 
@@ -531,8 +673,9 @@
 }
 }, 
 "Tl256291": {
-"^ot:altLabel": "Chrysemys picta", 
 "^ot:originalLabel": "Chrysemys picta 1", 
+"^ot:ottId": 587300, 
+"^ot:ottTaxonName": "Chrysemys picta", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6028, 
 "@tb:identifier.taxonVariant": 14552, 
@@ -551,8 +694,9 @@
 }
 }, 
 "Tl256293": {
-"^ot:altLabel": "Pseudemys peninsularis", 
 "^ot:originalLabel": "Pseudemys peninsularis 2", 
+"^ot:ottId": 351865, 
+"^ot:ottTaxonName": "Pseudemys peninsularis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 426879, 
 "@tb:identifier.taxonVariant": 561515, 
@@ -561,8 +705,9 @@
 }
 }, 
 "Tl256294": {
-"^ot:altLabel": "Graptemys pseudogeographica", 
 "^ot:originalLabel": "Graptemys pseudogeographica 1", 
+"^ot:ottId": 1092200, 
+"^ot:ottTaxonName": "Graptemys pseudogeographica", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 59978, 
 "@tb:identifier.taxonVariant": 133143, 
@@ -571,8 +716,9 @@
 }
 }, 
 "Tl256295": {
-"^ot:altLabel": "Deirochelys reticularia", 
 "^ot:originalLabel": "Deirochelys reticularia 1", 
+"^ot:ottId": 848781, 
+"^ot:ottTaxonName": "Deirochelys reticularia", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 40018, 
 "@tb:identifier.taxonVariant": 92939, 
@@ -581,8 +727,9 @@
 }
 }, 
 "Tl256296": {
-"^ot:altLabel": "Glyptemys insculpta", 
 "^ot:originalLabel": "Glyptemys insculpta 1", 
+"^ot:ottId": 743503, 
+"^ot:ottTaxonName": "Glyptemys insculpta", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 12332, 
 "@tb:identifier.taxonVariant": 29291, 
@@ -591,8 +738,9 @@
 }
 }, 
 "Tl256297": {
-"^ot:altLabel": "Graptemys geographica", 
 "^ot:originalLabel": "Graptemys geographica 1", 
+"^ot:ottId": 1064023, 
+"^ot:ottTaxonName": "Graptemys geographica", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 53188, 
 "@tb:identifier.taxonVariant": 123605, 
@@ -601,8 +749,9 @@
 }
 }, 
 "Tl256298": {
-"^ot:altLabel": "Mauremys mutica", 
 "^ot:originalLabel": "Mauremys mutica 3", 
+"^ot:ottId": 679467, 
+"^ot:ottTaxonName": "Mauremys mutica", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 17026, 
 "@tb:identifier.taxonVariant": 39869, 
@@ -611,8 +760,9 @@
 }
 }, 
 "Tl256299": {
-"^ot:altLabel": "Emys orbicularis", 
 "^ot:originalLabel": "Emys orbicularis 1", 
+"^ot:ottId": 733093, 
+"^ot:ottTaxonName": "Emys orbicularis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 10003, 
 "@tb:identifier.taxonVariant": 23946, 
@@ -621,8 +771,9 @@
 }
 }, 
 "Tl256300": {
-"^ot:altLabel": "Pseudemys peninsularis", 
 "^ot:originalLabel": "Pseudemys peninsularis 1", 
+"^ot:ottId": 351865, 
+"^ot:ottTaxonName": "Pseudemys peninsularis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 426879, 
 "@tb:identifier.taxonVariant": 561515, 
@@ -631,8 +782,9 @@
 }
 }, 
 "Tl256301": {
-"^ot:altLabel": "Emys marmorata", 
 "^ot:originalLabel": "Emys marmorata 1", 
+"^ot:ottId": 743507, 
+"^ot:ottTaxonName": "Actinemys marmorata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 10002, 
 "@tb:identifier.taxonVariant": 23943, 
@@ -642,11 +794,14 @@
 "^skos:prefLabel": "Actinemys marmorata"
 }, 
 "Tl256302": {
-"^ot:originalLabel": "Emys trinacris 2"
+"^ot:originalLabel": "Emys trinacris 2", 
+"^ot:ottId": 592138, 
+"^ot:ottTaxonName": "Emys trinacris"
 }, 
 "Tl256303": {
-"^ot:altLabel": "Trachemys taylori", 
 "^ot:originalLabel": "Trachemys taylori 3", 
+"^ot:ottId": 455436, 
+"^ot:ottTaxonName": "Trachemys taylori", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 426881, 
 "@tb:identifier.taxonVariant": 561517, 
@@ -655,11 +810,14 @@
 }
 }, 
 "Tl256304": {
-"^ot:originalLabel": "Trachemys scripta scripta 2"
+"^ot:originalLabel": "Trachemys scripta scripta 2", 
+"^ot:ottId": 725741, 
+"^ot:ottTaxonName": "Trachemys scripta"
 }, 
 "Tl256305": {
-"^ot:altLabel": "Chrysemys picta", 
 "^ot:originalLabel": "Chrysemys picta 3", 
+"^ot:ottId": 587300, 
+"^ot:ottTaxonName": "Chrysemys picta", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6028, 
 "@tb:identifier.taxonVariant": 14552, 
@@ -668,8 +826,9 @@
 }
 }, 
 "Tl256306": {
-"^ot:altLabel": "Trachemys scripta elegans", 
 "^ot:originalLabel": "Trachemys scripta elegans 1", 
+"^ot:ottId": 735228, 
+"^ot:ottTaxonName": "Trachemys scripta elegans", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 29270, 
 "@tb:identifier.taxonVariant": 68241, 
@@ -678,8 +837,9 @@
 }
 }, 
 "Tl256307": {
-"^ot:altLabel": "Chrysemys picta", 
 "^ot:originalLabel": "Chrysemys picta 4", 
+"^ot:ottId": 587300, 
+"^ot:ottTaxonName": "Chrysemys picta", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6028, 
 "@tb:identifier.taxonVariant": 14552, 
@@ -688,8 +848,9 @@
 }
 }, 
 "Tl256308": {
-"^ot:altLabel": "Trachemys stejnegeri", 
 "^ot:originalLabel": "Trachemys stejnegeri 2", 
+"^ot:ottId": 608016, 
+"^ot:ottTaxonName": "Trachemys stejnegeri", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 426880, 
 "@tb:identifier.taxonVariant": 561516, 
@@ -698,8 +859,9 @@
 }
 }, 
 "Tl256309": {
-"^ot:altLabel": "Deirochelys reticularia", 
 "^ot:originalLabel": "Deirochelys reticularia 2", 
+"^ot:ottId": 848781, 
+"^ot:ottTaxonName": "Deirochelys reticularia", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 40018, 
 "@tb:identifier.taxonVariant": 92939, 
@@ -708,8 +870,9 @@
 }
 }, 
 "Tl256310": {
-"^ot:altLabel": "Graptemys pseudogeographica", 
 "^ot:originalLabel": "Graptemys pseudogeographica 3", 
+"^ot:ottId": 1092200, 
+"^ot:ottTaxonName": "Graptemys pseudogeographica", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 59978, 
 "@tb:identifier.taxonVariant": 133143, 
@@ -718,8 +881,9 @@
 }
 }, 
 "Tl256311": {
-"^ot:altLabel": "Pseudemys concinna floridana", 
 "^ot:originalLabel": "Pseudemys concinna floridana 2", 
+"^ot:ottId": 448198, 
+"^ot:ottTaxonName": "Pseudemys floridana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 426878, 
 "@tb:identifier.taxonVariant": 561514, 
@@ -728,8 +892,9 @@
 }
 }, 
 "Tl256312": {
-"^ot:altLabel": "Terrapene ornata", 
 "^ot:originalLabel": "Terrapene ornata 2", 
+"^ot:ottId": 1013359, 
+"^ot:ottTaxonName": "Terrapene ornata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 28708, 
 "@tb:identifier.taxonVariant": 66908, 
@@ -738,8 +903,9 @@
 }
 }, 
 "Tl256313": {
-"^ot:altLabel": "Emys blandingii", 
 "^ot:originalLabel": "Emys blandingii 3", 
+"^ot:ottId": 1013355, 
+"^ot:ottTaxonName": "Emydoidea blandingii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 10001, 
 "@tb:identifier.taxonVariant": 23940, 
@@ -749,8 +915,9 @@
 "^skos:prefLabel": "Emydoidea blandingii"
 }, 
 "Tl256314": {
-"^ot:altLabel": "Terrapene coahuila", 
 "^ot:originalLabel": "Terrapene coahuila 3", 
+"^ot:ottId": 444150, 
+"^ot:ottTaxonName": "Terrapene coahuila", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 152031, 
 "@tb:identifier.taxonVariant": 227600, 
@@ -759,8 +926,9 @@
 }
 }, 
 "Tl256315": {
-"^ot:altLabel": "Terrapene carolina", 
 "^ot:originalLabel": "Terrapene carolina 3", 
+"^ot:ottId": 848786, 
+"^ot:ottTaxonName": "Terrapene carolina", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 152030, 
 "@tb:identifier.taxonVariant": 227599, 
@@ -769,8 +937,9 @@
 }
 }, 
 "Tl256316": {
-"^ot:altLabel": "Terrapene carolina", 
 "^ot:originalLabel": "Terrapene carolina 2", 
+"^ot:ottId": 848786, 
+"^ot:ottTaxonName": "Terrapene carolina", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 152030, 
 "@tb:identifier.taxonVariant": 227599, 
@@ -779,11 +948,14 @@
 }
 }, 
 "Tl266150": {
-"^ot:originalLabel": "Trachemys s scripta 2"
+"^ot:originalLabel": "Trachemys s scripta 2", 
+"^ot:ottId": 725741, 
+"^ot:ottTaxonName": "Trachemys scripta"
 }, 
 "Tl266151": {
-"^ot:altLabel": "Trachemys scripta scripta", 
 "^ot:originalLabel": "Trachemys s scripta 1", 
+"^ot:ottId": 34957, 
+"^ot:ottTaxonName": "Trachemys scripta scripta", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 426882, 
 "@tb:identifier.taxonVariant": 561518, 
@@ -807,7 +979,18 @@
 "Tr6135": {
 "@label": "nuDNA", 
 "@xsi:type": "nex:FloatTree", 
-"^ot:rootNodeId": "Tn470429", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:undefined", 
+"^ot:curatedType": "Maximum likelihood ", 
+"^ot:inGroupClade": "Tn470429", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
+"^ot:rootNodeId": "Tr6135_ROOT", 
+"^ot:specifiedRoot": "Tr6135_ROOT", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 70, 
 "^tb:quality.tree": "Unrated", 
@@ -984,10 +1167,6 @@
 }
 }, 
 "Tn470429": {
-"edge106328": {
-"@source": "Tn470429", 
-"@target": "Tn470494"
-}, 
 "edge106330": {
 "@source": "Tn470429", 
 "@target": "Tn470480"
@@ -1478,44 +1657,65 @@
 "@source": "Tn470518", 
 "@target": "Tn470478"
 }
+}, 
+"Tr6135_ROOT": {
+"Tr6135_ROOT_EDGE": {
+"@source": "Tr6135_ROOT", 
+"@target": "Tn470429"
+}, 
+"edge106328": {
+"@source": "Tr6135_ROOT", 
+"@target": "Tn470494"
+}
 }
 }, 
 "nodeById": {
 "Tn470385": {
-"@otu": "Tl256260"
+"@otu": "Tl256260", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn470386": {}, 
 "Tn470387": {
-"@otu": "Tl256306"
+"@otu": "Tl256306", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn470388": {
-"@otu": "Tl256269"
+"@otu": "Tl256269", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn470389": {
-"@otu": "Tl256301"
+"@otu": "Tl256301", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn470390": {
-"@otu": "Tl256275"
+"@otu": "Tl256275", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn470391": {
-"@otu": "Tl256309"
+"@otu": "Tl256309", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn470392": {}, 
 "Tn470393": {
-"@otu": "Tl256308"
+"@otu": "Tl256308", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn470394": {
-"@otu": "Tl256305"
+"@otu": "Tl256305", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn470395": {
-"@otu": "Tl256285"
+"@otu": "Tl256285", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn470396": {
-"@otu": "Tl256281"
+"@otu": "Tl256281", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn470397": {}, 
 "Tn470398": {
-"@otu": "Tl256264"
+"@otu": "Tl256264", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn470399": {}, 
 "Tn470400": {
@@ -1523,7 +1723,8 @@
 }, 
 "Tn470401": {}, 
 "Tn470402": {
-"@otu": "Tl256256"
+"@otu": "Tl256256", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn470403": {}, 
 "Tn470404": {}, 
@@ -1533,7 +1734,8 @@
 "Tn470406": {}, 
 "Tn470407": {}, 
 "Tn470408": {
-"@otu": "Tl256300"
+"@otu": "Tl256300", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn470409": {
 "@otu": "Tl256286"
@@ -1544,27 +1746,33 @@
 "Tn470411": {}, 
 "Tn470412": {}, 
 "Tn470413": {
-"@otu": "Tl256261"
+"@otu": "Tl256261", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn470414": {
-"@otu": "Tl256314"
+"@otu": "Tl256314", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn470415": {
-"@otu": "Tl256316"
+"@otu": "Tl256316", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn470416": {}, 
 "Tn470417": {
-"@otu": "Tl256255"
+"@otu": "Tl256255", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn470418": {
 "@otu": "Tl241300"
 }, 
 "Tn470419": {
-"@otu": "Tl256296"
+"@otu": "Tl256296", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn470420": {}, 
 "Tn470421": {
-"@otu": "Tl256297"
+"@otu": "Tl256297", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn470422": {}, 
 "Tn470423": {}, 
@@ -1574,54 +1782,63 @@
 "@otu": "Tl256304"
 }, 
 "Tn470427": {
-"@otu": "Tl256282"
+"@otu": "Tl256282", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn470428": {
-"@otu": "Tl256291"
+"@otu": "Tl256291", 
+"^ot:isTaxonExemplar": false
 }, 
-"Tn470429": {
-"@root": true
-}, 
+"Tn470429": {}, 
 "Tn470430": {
-"@otu": "Tl256283"
+"@otu": "Tl256283", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn470431": {}, 
 "Tn470432": {}, 
 "Tn470433": {
-"@otu": "Tl256259"
+"@otu": "Tl256259", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn470434": {
 "@otu": "Tl241216"
 }, 
 "Tn470435": {}, 
 "Tn470436": {
-"@otu": "Tl256287"
+"@otu": "Tl256287", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn470437": {
-"@otu": "Tl256268"
+"@otu": "Tl256268", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn470438": {
-"@otu": "Tl256310"
+"@otu": "Tl256310", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn470439": {
-"@otu": "Tl256263"
+"@otu": "Tl256263", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn470440": {}, 
 "Tn470441": {
-"@otu": "Tl256271"
+"@otu": "Tl256271", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn470442": {}, 
 "Tn470443": {
 "@otu": "Tl241224"
 }, 
 "Tn470444": {
-"@otu": "Tl256290"
+"@otu": "Tl256290", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn470445": {}, 
 "Tn470446": {}, 
 "Tn470447": {}, 
 "Tn470448": {
-"@otu": "Tl256302"
+"@otu": "Tl256302", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn470449": {}, 
 "Tn470450": {}, 
@@ -1629,75 +1846,93 @@
 "@otu": "Tl241265"
 }, 
 "Tn470452": {
-"@otu": "Tl256254"
+"@otu": "Tl256254", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn470453": {
-"@otu": "Tl256267"
+"@otu": "Tl256267", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn470454": {
-"@otu": "Tl256298"
+"@otu": "Tl256298", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn470455": {}, 
 "Tn470456": {
-"@otu": "Tl256311"
+"@otu": "Tl256311", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn470457": {
-"@otu": "Tl256270"
+"@otu": "Tl256270", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn470458": {}, 
 "Tn470459": {
 "@otu": "Tl256277"
 }, 
 "Tn470460": {
-"@otu": "Tl256299"
+"@otu": "Tl256299", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn470461": {}, 
 "Tn470462": {
-"@otu": "Tl256262"
+"@otu": "Tl256262", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn470463": {
-"@otu": "Tl256258"
+"@otu": "Tl256258", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn470464": {
-"@otu": "Tl256280"
+"@otu": "Tl256280", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn470465": {}, 
 "Tn470466": {}, 
 "Tn470467": {}, 
 "Tn470468": {
-"@otu": "Tl256272"
+"@otu": "Tl256272", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn470469": {}, 
 "Tn470470": {}, 
 "Tn470471": {
-"@otu": "Tl256273"
+"@otu": "Tl256273", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn470472": {}, 
 "Tn470473": {}, 
 "Tn470474": {
-"@otu": "Tl256313"
+"@otu": "Tl256313", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn470475": {
-"@otu": "Tl256276"
+"@otu": "Tl256276", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn470476": {
-"@otu": "Tl256257"
+"@otu": "Tl256257", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn470477": {
-"@otu": "Tl256279"
+"@otu": "Tl256279", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn470478": {
-"@otu": "Tl256303"
+"@otu": "Tl256303", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn470479": {}, 
 "Tn470480": {}, 
 "Tn470481": {
-"@otu": "Tl256266"
+"@otu": "Tl256266", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn470482": {}, 
 "Tn470483": {}, 
 "Tn470484": {
-"@otu": "Tl256315"
+"@otu": "Tl256315", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn470485": {}, 
 "Tn470486": {}, 
@@ -1706,7 +1941,8 @@
 "Tn470489": {}, 
 "Tn470490": {}, 
 "Tn470491": {
-"@otu": "Tl256284"
+"@otu": "Tl256284", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn470492": {}, 
 "Tn470493": {}, 
@@ -1717,16 +1953,19 @@
 "Tn470496": {}, 
 "Tn470497": {}, 
 "Tn470498": {
-"@otu": "Tl256312"
+"@otu": "Tl256312", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn470499": {}, 
 "Tn470500": {}, 
 "Tn470501": {
-"@otu": "Tl256274"
+"@otu": "Tl256274", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn470502": {}, 
 "Tn470503": {
-"@otu": "Tl256294"
+"@otu": "Tl256294", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn470504": {}, 
 "Tn470505": {
@@ -1734,36 +1973,56 @@
 }, 
 "Tn470506": {}, 
 "Tn470507": {
-"@otu": "Tl256265"
+"@otu": "Tl256265", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn470508": {
-"@otu": "Tl256295"
+"@otu": "Tl256295", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn470509": {}, 
 "Tn470510": {}, 
 "Tn470511": {}, 
 "Tn470512": {}, 
 "Tn470513": {
-"@otu": "Tl256278"
+"@otu": "Tl256278", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn470514": {
-"@otu": "Tl256289"
+"@otu": "Tl256289", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn470515": {
-"@otu": "Tl256293"
+"@otu": "Tl256293", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn470516": {}, 
 "Tn470517": {}, 
 "Tn470518": {}, 
 "Tn470519": {
-"@otu": "Tl256307"
+"@otu": "Tl256307", 
+"^ot:isTaxonExemplar": false
+}, 
+"Tr6135_ROOT": {
+"@root": true
 }
 }
 }, 
 "Tr6600": {
 "@label": "cyt b", 
 "@xsi:type": "nex:FloatTree", 
-"^ot:rootNodeId": "Tn527133", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:undefined", 
+"^ot:curatedType": "Maximum likelihood ", 
+"^ot:inGroupClade": "Tn527133", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
+"^ot:rootNodeId": "Tr6600_ROOT", 
+"^ot:specifiedRoot": "Tr6600_ROOT", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 66, 
 "^tb:quality.tree": "Unrated", 
@@ -2018,10 +2277,6 @@
 }
 }, 
 "Tn527133": {
-"edge106606": {
-"@source": "Tn527133", 
-"@target": "Tn527099"
-}, 
 "edge106608": {
 "@source": "Tn527133", 
 "@target": "Tn527121"
@@ -2370,18 +2625,31 @@
 "@source": "Tn527200", 
 "@target": "Tn527154"
 }
+}, 
+"Tr6600_ROOT": {
+"Tr6600_ROOT_EDGE": {
+"@source": "Tr6600_ROOT", 
+"@target": "Tn527133"
+}, 
+"edge106606": {
+"@source": "Tr6600_ROOT", 
+"@target": "Tn527099"
+}
 }
 }, 
 "nodeById": {
 "Tn527079": {}, 
 "Tn527080": {
-"@otu": "Tl256314"
+"@otu": "Tl256314", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn527081": {
-"@otu": "Tl256264"
+"@otu": "Tl256264", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn527082": {
-"@otu": "Tl256302"
+"@otu": "Tl256302", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn527083": {}, 
 "Tn527084": {}, 
@@ -2389,13 +2657,16 @@
 "@otu": "Tl256256"
 }, 
 "Tn527086": {
-"@otu": "Tl256276"
+"@otu": "Tl256276", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn527087": {
-"@otu": "Tl256255"
+"@otu": "Tl256255", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn527088": {
-"@otu": "Tl256299"
+"@otu": "Tl256299", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn527089": {}, 
 "Tn527090": {}, 
@@ -2405,16 +2676,20 @@
 "@otu": "Tl256292"
 }, 
 "Tn527094": {
-"@otu": "Tl256267"
+"@otu": "Tl256267", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn527095": {
-"@otu": "Tl256284"
+"@otu": "Tl256284", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn527096": {
-"@otu": "Tl256272"
+"@otu": "Tl256272", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn527097": {
-"@otu": "Tl256290"
+"@otu": "Tl256290", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn527098": {}, 
 "Tn527099": {
@@ -2423,100 +2698,119 @@
 "Tn527100": {}, 
 "Tn527101": {}, 
 "Tn527102": {
-"@otu": "Tl256298"
+"@otu": "Tl256298", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn527103": {
-"@otu": "Tl256305"
+"@otu": "Tl256305", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn527104": {
-"@otu": "Tl256296"
+"@otu": "Tl256296", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn527105": {
-"@otu": "Tl256259"
+"@otu": "Tl256259", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn527106": {
-"@otu": "Tl256306"
+"@otu": "Tl256306", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn527107": {
-"@otu": "Tl256300"
+"@otu": "Tl256300", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn527108": {}, 
 "Tn527109": {}, 
 "Tn527110": {
-"@otu": "Tl256275"
+"@otu": "Tl256275", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn527111": {
-"@otu": "Tl256289"
+"@otu": "Tl256289", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn527112": {}, 
 "Tn527113": {}, 
 "Tn527114": {}, 
 "Tn527115": {}, 
 "Tn527116": {
-"@otu": "Tl256285"
+"@otu": "Tl256285", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn527117": {
-"@otu": "Tl256313"
+"@otu": "Tl256313", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn527118": {}, 
 "Tn527119": {
-"@otu": "Tl256282"
+"@otu": "Tl256282", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn527120": {}, 
 "Tn527121": {
 "@otu": "Tl242308"
 }, 
 "Tn527122": {
-"@otu": "Tl256263"
+"@otu": "Tl256263", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn527123": {}, 
 "Tn527124": {
-"@otu": "Tl256309"
+"@otu": "Tl256309", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn527125": {}, 
 "Tn527126": {}, 
 "Tn527127": {
-"@otu": "Tl256271"
+"@otu": "Tl256271", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn527128": {}, 
 "Tn527129": {}, 
 "Tn527130": {}, 
 "Tn527131": {
-"@otu": "Tl256280"
+"@otu": "Tl256280", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn527132": {
 "@otu": "Tl241235"
 }, 
-"Tn527133": {
-"@root": true
-}, 
+"Tn527133": {}, 
 "Tn527134": {}, 
 "Tn527135": {
 "@otu": "Tl256288"
 }, 
 "Tn527136": {
-"@otu": "Tl256295"
+"@otu": "Tl256295", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn527137": {
-"@otu": "Tl256294"
+"@otu": "Tl256294", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn527138": {
-"@otu": "Tl256307"
+"@otu": "Tl256307", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn527139": {}, 
 "Tn527140": {
-"@otu": "Tl256315"
+"@otu": "Tl256315", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn527141": {}, 
 "Tn527142": {}, 
 "Tn527143": {}, 
 "Tn527144": {
-"@otu": "Tl256270"
+"@otu": "Tl256270", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn527145": {}, 
 "Tn527146": {}, 
 "Tn527147": {
-"@otu": "Tl256269"
+"@otu": "Tl256269", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn527148": {
 "@otu": "Tl241216"
@@ -2524,7 +2818,8 @@
 "Tn527149": {}, 
 "Tn527150": {}, 
 "Tn527151": {
-"@otu": "Tl256268"
+"@otu": "Tl256268", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn527152": {}, 
 "Tn527153": {
@@ -2533,46 +2828,56 @@
 "Tn527154": {}, 
 "Tn527155": {}, 
 "Tn527156": {
-"@otu": "Tl256257"
+"@otu": "Tl256257", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn527157": {
-"@otu": "Tl256261"
+"@otu": "Tl256261", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn527158": {}, 
 "Tn527159": {
-"@otu": "Tl256265"
+"@otu": "Tl256265", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn527160": {
-"@otu": "Tl256279"
+"@otu": "Tl256279", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn527161": {}, 
 "Tn527162": {
-"@otu": "Tl256303"
+"@otu": "Tl256303", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn527163": {}, 
 "Tn527164": {}, 
 "Tn527165": {
-"@otu": "Tl256273"
+"@otu": "Tl256273", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn527166": {}, 
 "Tn527167": {
-"@otu": "Tl256262"
+"@otu": "Tl256262", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn527168": {}, 
 "Tn527169": {}, 
 "Tn527170": {}, 
 "Tn527171": {
-"@otu": "Tl256260"
+"@otu": "Tl256260", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn527172": {
-"@otu": "Tl256291"
+"@otu": "Tl256291", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn527173": {
 "@otu": "Tl241265"
 }, 
 "Tn527174": {}, 
 "Tn527175": {
-"@otu": "Tl256274"
+"@otu": "Tl256274", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn527176": {
 "@otu": "Tl256286"
@@ -2583,52 +2888,67 @@
 }, 
 "Tn527179": {}, 
 "Tn527180": {
-"@otu": "Tl256308"
+"@otu": "Tl256308", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn527181": {
-"@otu": "Tl256311"
+"@otu": "Tl256311", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn527182": {
-"@otu": "Tl256310"
+"@otu": "Tl256310", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn527183": {
-"@otu": "Tl256293"
+"@otu": "Tl256293", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn527184": {
-"@otu": "Tl256266"
+"@otu": "Tl256266", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn527185": {
-"@otu": "Tl256258"
+"@otu": "Tl256258", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn527186": {}, 
 "Tn527187": {}, 
 "Tn527188": {}, 
 "Tn527189": {}, 
 "Tn527190": {
-"@otu": "Tl256281"
+"@otu": "Tl256281", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn527191": {}, 
 "Tn527192": {}, 
 "Tn527193": {}, 
 "Tn527194": {
-"@otu": "Tl256254"
+"@otu": "Tl256254", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn527195": {
 "@otu": "Tl266151"
 }, 
 "Tn527196": {
-"@otu": "Tl256301"
+"@otu": "Tl256301", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn527197": {}, 
 "Tn527198": {
-"@otu": "Tl256283"
+"@otu": "Tl256283", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn527199": {
-"@otu": "Tl256312"
+"@otu": "Tl256312", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn527200": {}, 
 "Tn527201": {
-"@otu": "Tl256316"
+"@otu": "Tl256316", 
+"^ot:isTaxonExemplar": false
+}, 
+"Tr6600_ROOT": {
+"@root": true
 }
 }
 }
