@@ -48,16 +48,106 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2018-07-26T00:08:47.547Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:curatorName": "Kaitlin Allen ", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}, 
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": "$1"
+}, 
+"old": {
+"$": "^(\\S*\\s+\\S*).*"
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2018-07-26T00:08:47.547Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Kaitlin Allen "
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S20338"
 }, 
+"^ot:focalClade": 569043, 
+"^ot:focalCladeOTTTaxonName": "Hymenochaetaceae", 
 "^ot:otusElementOrder": [
 "Tls59622"
 ], 
@@ -67,6 +157,7 @@
 }, 
 "^ot:studyPublicationReference": "Yombiyeni P., & Decock C. 2017. Hymenochaetaceae (Hymenochaetales) from the Guineo-Congolian phytochorion: Phylloporia littoralis sp. nov. from coastal vegetation in Gabon and an identification key to the local species. Plant Ecology and Evolution, 150(2): 160-172.", 
 "^ot:studyYear": 2017, 
+"^ot:tag": [], 
 "^ot:taxonLinkPrefixes": {
 "@ubio": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:", 
 "@uniprot": "http://purl.uniprot.org/taxonomy/"
@@ -95,8 +186,9 @@
 "^skos:historyNote": "Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlOTUWriter@1223c2a $Rev$", 
 "otuById": {
 "Tl2918712": {
-"^ot:altLabel": "Phylloporia pectinata", 
 "^ot:originalLabel": "Phylloporia pectinata ME_GA12_812_GA", 
+"^ot:ottId": 863926, 
+"^ot:ottTaxonName": "Phylloporia pectinata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22099, 
 "@tb:identifier.taxonVariant": 51406, 
@@ -105,7 +197,9 @@
 }
 }, 
 "Tl2918713": {
-"^ot:originalLabel": "Phylloporia fulva KJ743247_T_GA"
+"^ot:originalLabel": "Phylloporia fulva KJ743247_T_GA", 
+"^ot:ottId": 5984660, 
+"^ot:ottTaxonName": "Phylloporia fulva"
 }, 
 "Tl2918714": {
 "^ot:originalLabel": "Phylloporia sp KJ743284_CU"
@@ -114,14 +208,19 @@
 "^ot:originalLabel": "Phylloporia sp KJ743261_FG"
 }, 
 "Tl2918716": {
-"^ot:originalLabel": "Phylloporia oreophila JF712933_CH"
+"^ot:originalLabel": "Phylloporia oreophila JF712933_CH", 
+"^ot:ottId": 340805, 
+"^ot:ottTaxonName": "Phylloporia oreophila"
 }, 
 "Tl2918717": {
-"^ot:originalLabel": "Phylloporia gutta JF712927_CH"
+"^ot:originalLabel": "Phylloporia gutta JF712927_CH", 
+"^ot:ottId": 340795, 
+"^ot:ottTaxonName": "Phylloporia gutta"
 }, 
 "Tl2918718": {
-"^ot:altLabel": "Fulvifomes robiniae", 
 "^ot:originalLabel": "Fulvifomes robiniae AF411825_USA", 
+"^ot:ottId": 56276, 
+"^ot:ottTaxonName": "Phellinus robiniae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 174932, 
 "@tb:identifier.taxonVariant": 248718, 
@@ -133,8 +232,9 @@
 "^ot:originalLabel": "Phylloporia frutica HM635669_MX"
 }, 
 "Tl2918720": {
-"^ot:altLabel": "Inonotus micantissimus", 
 "^ot:originalLabel": "Inonotus micantissimus HM635663_MX", 
+"^ot:ottId": 926387, 
+"^ot:ottTaxonName": "Inonotus micantissimus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 623799, 
 "@tb:identifier.taxonVariant": 835382, 
@@ -145,8 +245,9 @@
 "^ot:originalLabel": "Phylloporia sp CU05_249_CU"
 }, 
 "Tl2918722": {
-"^ot:altLabel": "Phylloporia chrysites", 
 "^ot:originalLabel": "Phylloporia chrysites CCPHY09_MX", 
+"^ot:ottId": 3807368, 
+"^ot:ottTaxonName": "Phylloporia chrysites", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 617142, 
 "@tb:identifier.taxonVariant": 825935, 
@@ -157,7 +258,9 @@
 "^ot:originalLabel": "Phylloporia sp KJ743279_FG"
 }, 
 "Tl2918724": {
-"^ot:originalLabel": "Phylloporia dependens KP698746_T_CH"
+"^ot:originalLabel": "Phylloporia dependens KP698746_T_CH", 
+"^ot:ottId": 5685239, 
+"^ot:ottTaxonName": "Phylloporia dependens"
 }, 
 "Tl2918725": {
 "^ot:originalLabel": "Phylloporia sp KJ743264_FG"
@@ -172,19 +275,27 @@
 "^ot:originalLabel": "Phylloporia sp KJ743274_BR"
 }, 
 "Tl2918729": {
-"^ot:originalLabel": "Phylloporia afrospathulata KJ743249_GA"
+"^ot:originalLabel": "Phylloporia afrospathulata KJ743249_GA", 
+"^ot:ottId": 5984657, 
+"^ot:ottTaxonName": "Phylloporia afrospathulata"
 }, 
 "Tl2918730": {
 "^ot:originalLabel": "Phylloporia sp KJ743268_BR"
 }, 
 "Tl2918731": {
-"^ot:originalLabel": "Phylloporia ulloai HM635677_MX"
+"^ot:originalLabel": "Phylloporia ulloai HM635677_MX", 
+"^ot:ottId": 815218, 
+"^ot:ottTaxonName": "Phylloporia ulloai"
 }, 
 "Tl2918732": {
-"^ot:originalLabel": "Phylloporia fontanesiae JF712924_CH"
+"^ot:originalLabel": "Phylloporia fontanesiae JF712924_CH", 
+"^ot:ottId": 340798, 
+"^ot:ottTaxonName": "Phylloporia fontanesiae"
 }, 
 "Tl2918733": {
-"^ot:originalLabel": "Phylloporia yuchengii KM264324_T_UZ"
+"^ot:originalLabel": "Phylloporia yuchengii KM264324_T_UZ", 
+"^ot:ottId": 5685238, 
+"^ot:ottTaxonName": "Phylloporia yuchengii"
 }, 
 "Tl2918734": {
 "^ot:originalLabel": "Phylloporia radiata KU904470_CH"
@@ -193,11 +304,14 @@
 "^ot:originalLabel": "Phylloporia sp CMA16_223VS"
 }, 
 "Tl2918736": {
-"^ot:originalLabel": "Phylloporia crataegi JF712923_CH"
+"^ot:originalLabel": "Phylloporia crataegi JF712923_CH", 
+"^ot:ottId": 340801, 
+"^ot:ottTaxonName": "Phylloporia crataegi"
 }, 
 "Tl2918737": {
-"^ot:altLabel": "Phylloporia weberiana", 
 "^ot:originalLabel": "Phylloporia weberiana JF712936_CH", 
+"^ot:ottId": 908409, 
+"^ot:ottTaxonName": "Ganoderma weberianum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 617953, 
 "@tb:identifier.taxonVariant": 827146, 
@@ -208,14 +322,19 @@
 "^ot:originalLabel": "Phylloporia cylindrispora KJ787798_T_CH"
 }, 
 "Tl2918739": {
-"^ot:originalLabel": "Phylloporia yuchengii KM264325_UZ"
+"^ot:originalLabel": "Phylloporia yuchengii KM264325_UZ", 
+"^ot:ottId": 5685238, 
+"^ot:ottTaxonName": "Phylloporia yuchengii"
 }, 
 "Tl2918740": {
-"^ot:originalLabel": "Phylloporia gabonensis KU198352_GA"
+"^ot:originalLabel": "Phylloporia gabonensis KU198352_GA", 
+"^ot:ottId": 5984661, 
+"^ot:ottTaxonName": "Phylloporia gabonensis"
 }, 
 "Tl2918741": {
-"^ot:altLabel": "Inocutis rheades", 
 "^ot:originalLabel": "Inocutis rheades AF311019_GE", 
+"^ot:ottId": 931698, 
+"^ot:ottTaxonName": "Inocutis rheades", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 14624, 
 "@tb:identifier.taxonVariant": 113295, 
@@ -227,19 +346,25 @@
 "^ot:originalLabel": "Phylloporia sp KJ743262_FG"
 }, 
 "Tl2918743": {
-"^ot:originalLabel": "Phylloporia nandinae JF712930_T_CH"
+"^ot:originalLabel": "Phylloporia nandinae JF712930_T_CH", 
+"^ot:ottId": 340792, 
+"^ot:ottTaxonName": "Phylloporia nandinae"
 }, 
 "Tl2918744": {
 "^ot:originalLabel": "Phylloporia sp GA_Rinorea"
 }, 
 "Tl2918745": {
-"^ot:originalLabel": "Phylloporia terrestris KC778784_T_CH"
+"^ot:originalLabel": "Phylloporia terrestris KC778784_T_CH", 
+"^ot:ottId": 5685240, 
+"^ot:ottTaxonName": "Phylloporia terrestris"
 }, 
 "Tl2918746": {
 "^ot:originalLabel": "Phylloporia flacourtiae KJ787802_CH"
 }, 
 "Tl2918747": {
-"^ot:originalLabel": "Phylloporia clausenae KJ787795_CH"
+"^ot:originalLabel": "Phylloporia clausenae KJ787795_CH", 
+"^ot:ottId": 5984658, 
+"^ot:ottTaxonName": "Phylloporia clausenae"
 }, 
 "Tl2918748": {
 "^ot:originalLabel": "Phylloporia flabelliformis KU198351_GA"
@@ -248,20 +373,27 @@
 "^ot:originalLabel": "Phylloporia flabelliformis KU198349_T_GA"
 }, 
 "Tl2918750": {
-"^ot:originalLabel": "Phylloporia nandinae JF712931_CH"
+"^ot:originalLabel": "Phylloporia nandinae JF712931_CH", 
+"^ot:ottId": 340792, 
+"^ot:ottTaxonName": "Phylloporia nandinae"
 }, 
 "Tl2918751": {
 "^ot:originalLabel": "Phylloporia flacourtiae KJ787801_T_CH"
 }, 
 "Tl2918752": {
-"^ot:originalLabel": "Phylloporia pulla KU904468_CH"
+"^ot:originalLabel": "Phylloporia pulla KU904468_CH", 
+"^ot:ottId": 3801029, 
+"^ot:ottTaxonName": "Fulvifomes pullus"
 }, 
 "Tl2918753": {
-"^ot:originalLabel": "Phylloporia resupinata JF712935_CA"
+"^ot:originalLabel": "Phylloporia resupinata JF712935_CA", 
+"^ot:ottId": 881212, 
+"^ot:ottTaxonName": "Phylloporia resupinata"
 }, 
 "Tl2918754": {
-"^ot:altLabel": "Phylloporia spathulata", 
 "^ot:originalLabel": "Phylloporia spathulata ME_KJ743259_FG", 
+"^ot:ottId": 863925, 
+"^ot:ottTaxonName": "Phylloporia spathulata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 174936, 
 "@tb:identifier.taxonVariant": 248722, 
@@ -270,8 +402,9 @@
 }
 }, 
 "Tl2918755": {
-"^ot:altLabel": "Phylloporia pectinata", 
 "^ot:originalLabel": "Phylloporia pectinata ME_GA12_816_GA", 
+"^ot:ottId": 863926, 
+"^ot:ottTaxonName": "Phylloporia pectinata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22099, 
 "@tb:identifier.taxonVariant": 51406, 
@@ -289,8 +422,9 @@
 "^ot:originalLabel": "Phylloporia frutica HM635668_MX"
 }, 
 "Tl2918759": {
-"^ot:altLabel": "Fulvifomes kawakamii", 
 "^ot:originalLabel": "Fulvifomes kawakamii AY059028_USA", 
+"^ot:ottId": 577318, 
+"^ot:ottTaxonName": "Fulvifomes kawakamii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 164617, 
 "@tb:identifier.taxonVariant": 239454, 
@@ -305,10 +439,14 @@
 "^ot:originalLabel": "Phylloporia sp KJ743269_BR"
 }, 
 "Tl2918762": {
-"^ot:originalLabel": "Phylloporia pulla KU904469_CH"
+"^ot:originalLabel": "Phylloporia pulla KU904469_CH", 
+"^ot:ottId": 3801029, 
+"^ot:ottTaxonName": "Fulvifomes pullus"
 }, 
 "Tl2918763": {
-"^ot:originalLabel": "Phylloporia afrospathulata KJ743248_T_GA"
+"^ot:originalLabel": "Phylloporia afrospathulata KJ743248_T_GA", 
+"^ot:ottId": 5984657, 
+"^ot:ottTaxonName": "Phylloporia afrospathulata"
 }, 
 "Tl2918764": {
 "^ot:originalLabel": "Phylloporia elegans KJ631409_BR"
@@ -320,13 +458,17 @@
 "^ot:originalLabel": "Phylloporia sp KJ743278_CU"
 }, 
 "Tl2918767": {
-"^ot:originalLabel": "Phylloporia tiliae KJ787805_T_CH"
+"^ot:originalLabel": "Phylloporia tiliae KJ787805_T_CH", 
+"^ot:ottId": 5344802, 
+"^ot:ottTaxonName": "Phylloporia tiliae"
 }, 
 "Tl2918768": {
 "^ot:originalLabel": "Phylloporia minutipora KU904465_CH"
 }, 
 "Tl2918769": {
-"^ot:originalLabel": "Phylloporia nouraguensis FG11_400_FG"
+"^ot:originalLabel": "Phylloporia nouraguensis FG11_400_FG", 
+"^ot:ottId": 5262074, 
+"^ot:ottTaxonName": "Phylloporia nouraguensis"
 }, 
 "Tl2918770": {
 "^ot:originalLabel": "Phylloporia pusilla MX01"
@@ -341,8 +483,9 @@
 "^ot:originalLabel": "Phylloporia osmanti KF729938_T_CH"
 }, 
 "Tl2918774": {
-"^ot:altLabel": "Phylloporia chrysita", 
 "^ot:originalLabel": "Phylloporia chrysita AF411821", 
+"^ot:ottId": 863924, 
+"^ot:ottTaxonName": "Phylloporia chrysita", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 174934, 
 "@tb:identifier.taxonVariant": 248720, 
@@ -351,8 +494,9 @@
 }
 }, 
 "Tl2918775": {
-"^ot:altLabel": "Coltricia stuckertiana", 
 "^ot:originalLabel": "Coltricia stuckertiana KC136226_AG", 
+"^ot:ottId": 763866, 
+"^ot:ottTaxonName": "Trametes stuckertiana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 622067, 
 "@tb:identifier.taxonVariant": 832955, 
@@ -360,11 +504,14 @@
 }
 }, 
 "Tl2918776": {
-"^ot:originalLabel": "Phylloporia gabonensis KU198353_T_GA"
+"^ot:originalLabel": "Phylloporia gabonensis KU198353_T_GA", 
+"^ot:ottId": 5984661, 
+"^ot:ottTaxonName": "Phylloporia gabonensis"
 }, 
 "Tl2918777": {
-"^ot:altLabel": "Phylloporia spathulata", 
 "^ot:originalLabel": "Phylloporia spathulata ME_MUCL52864", 
+"^ot:ottId": 863925, 
+"^ot:ottTaxonName": "Phylloporia spathulata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 174936, 
 "@tb:identifier.taxonVariant": 248722, 
@@ -379,14 +526,19 @@
 "^ot:originalLabel": "Phylloporia sp FG_10_238_FG"
 }, 
 "Tl2918780": {
-"^ot:originalLabel": "Phylloporia nouraguensis FG11_404_FG"
+"^ot:originalLabel": "Phylloporia nouraguensis FG11_404_FG", 
+"^ot:ottId": 5262074, 
+"^ot:ottTaxonName": "Phylloporia nouraguensis"
 }, 
 "Tl2918781": {
-"^ot:originalLabel": "Phylloporia minutispora JF712929_IT_UG"
+"^ot:originalLabel": "Phylloporia minutispora JF712929_IT_UG", 
+"^ot:ottId": 815222, 
+"^ot:ottTaxonName": "Phylloporia minutispora"
 }, 
 "Tl2918782": {
-"^ot:altLabel": "Phylloporia bibulosa", 
 "^ot:originalLabel": "Phylloporia bibulosa AF411824_PA", 
+"^ot:ottId": 863921, 
+"^ot:ottTaxonName": "Phylloporia bibulosa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 174933, 
 "@tb:identifier.taxonVariant": 248719, 
@@ -395,8 +547,9 @@
 }
 }, 
 "Tl2918783": {
-"^ot:altLabel": "Coltricia stuckertiana", 
 "^ot:originalLabel": "Coltricia stuckertiana KC136220_AG", 
+"^ot:ottId": 763866, 
+"^ot:ottTaxonName": "Trametes stuckertiana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 622067, 
 "@tb:identifier.taxonVariant": 832955, 
@@ -404,20 +557,25 @@
 }
 }, 
 "Tl2918784": {
-"^ot:originalLabel": "Phylloporia oblongospora JF712932_T_CH"
+"^ot:originalLabel": "Phylloporia oblongospora JF712932_T_CH", 
+"^ot:ottId": 881214, 
+"^ot:ottTaxonName": "Phylloporia oblongospora"
 }, 
 "Tl2918785": {
 "^ot:originalLabel": "Phylloporia sp MA_15_127_MA"
 }, 
 "Tl2918786": {
-"^ot:originalLabel": "Phylloporia clausenae KJ787796_T_CH"
+"^ot:originalLabel": "Phylloporia clausenae KJ787796_T_CH", 
+"^ot:ottId": 5984658, 
+"^ot:ottTaxonName": "Phylloporia clausenae"
 }, 
 "Tl2918787": {
 "^ot:originalLabel": "Phylloporicia sp photocrypta_AG"
 }, 
 "Tl2918788": {
-"^ot:altLabel": "Phylloporia pectinata", 
 "^ot:originalLabel": "Phylloporia pectinata ME_GA12_815_GA", 
+"^ot:ottId": 863926, 
+"^ot:ottTaxonName": "Phylloporia pectinata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22099, 
 "@tb:identifier.taxonVariant": 51406, 
@@ -435,7 +593,9 @@
 "^ot:originalLabel": "Phylloporia sp KJ743280_FG"
 }, 
 "Tl2918792": {
-"^ot:originalLabel": "Phylloporia capucina KJ651919_AG"
+"^ot:originalLabel": "Phylloporia capucina KJ651919_AG", 
+"^ot:ottId": 5300324, 
+"^ot:ottTaxonName": "Phylloporia capucina"
 }, 
 "Tl2918793": {
 "^ot:originalLabel": "Phylloporia sp MA15_96_MA"
@@ -447,8 +607,9 @@
 "^ot:originalLabel": "Phylloporia sp CMA16_219VS"
 }, 
 "Tl2918796": {
-"^ot:altLabel": "Phylloporia spathulata", 
 "^ot:originalLabel": "Phylloporia spathulata ME_KJ743260_FG", 
+"^ot:ottId": 863925, 
+"^ot:ottTaxonName": "Phylloporia spathulata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 174936, 
 "@tb:identifier.taxonVariant": 248722, 
@@ -457,8 +618,9 @@
 }
 }, 
 "Tl2918797": {
-"^ot:altLabel": "Phylloporia spathulata", 
 "^ot:originalLabel": "Phylloporia spathulata ME_KC136277_FG", 
+"^ot:ottId": 863925, 
+"^ot:ottTaxonName": "Phylloporia spathulata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 174936, 
 "@tb:identifier.taxonVariant": 248722, 
@@ -467,8 +629,9 @@
 }
 }, 
 "Tl2918798": {
-"^ot:altLabel": "Phylloporia spathulata", 
 "^ot:originalLabel": "Phylloporia spathulata ME_FG15_932_FG", 
+"^ot:ottId": 863925, 
+"^ot:ottTaxonName": "Phylloporia spathulata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 174936, 
 "@tb:identifier.taxonVariant": 248722, 
@@ -477,8 +640,9 @@
 }
 }, 
 "Tl2918799": {
-"^ot:altLabel": "Phylloporia chrysites", 
 "^ot:originalLabel": "Phylloporia chrysites CMX13_MX", 
+"^ot:ottId": 3807368, 
+"^ot:ottTaxonName": "Phylloporia chrysites", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 617142, 
 "@tb:identifier.taxonVariant": 825935, 
@@ -486,8 +650,9 @@
 }
 }, 
 "Tl2918800": {
-"^ot:altLabel": "Inocutis jamaicensis", 
 "^ot:originalLabel": "Inocutis jamaicensis AY059048_USA", 
+"^ot:ottId": 764601, 
+"^ot:ottTaxonName": "Inocutis jamaicensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 32646, 
 "@tb:identifier.taxonVariant": 113654, 
@@ -502,20 +667,27 @@
 "^ot:originalLabel": "Phylloporia sp KC136219"
 }, 
 "Tl2918803": {
-"^ot:originalLabel": "Phylloporia inonotoides KJ743250_T_GA"
+"^ot:originalLabel": "Phylloporia inonotoides KJ743250_T_GA", 
+"^ot:ottId": 5984662, 
+"^ot:ottTaxonName": "Phylloporia inonotoides"
 }, 
 "Tl2918804": {
 "^ot:originalLabel": "Phylloporia sp KJ651916_AG"
 }, 
 "Tl2918805": {
-"^ot:originalLabel": "Phylloporia rzedowskii HM635674_MX"
+"^ot:originalLabel": "Phylloporia rzedowskii HM635674_MX", 
+"^ot:ottId": 815220, 
+"^ot:ottTaxonName": "Phylloporia rzedowskii"
 }, 
 "Tl2918806": {
-"^ot:originalLabel": "Phylloporia minutispora HM635671_RDC"
+"^ot:originalLabel": "Phylloporia minutispora HM635671_RDC", 
+"^ot:ottId": 815222, 
+"^ot:ottTaxonName": "Phylloporia minutispora"
 }, 
 "Tl2918807": {
-"^ot:altLabel": "Phylloporia pectinata", 
 "^ot:originalLabel": "Phylloporia pectinata ME_KJ651920_AG", 
+"^ot:ottId": 863926, 
+"^ot:ottTaxonName": "Phylloporia pectinata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22099, 
 "@tb:identifier.taxonVariant": 51406, 
@@ -524,7 +696,9 @@
 }
 }, 
 "Tl2918808": {
-"^ot:originalLabel": "Phylloporia hainaniana JF712928_T_CH"
+"^ot:originalLabel": "Phylloporia hainaniana JF712928_T_CH", 
+"^ot:ottId": 306379, 
+"^ot:ottTaxonName": "Phylloporia hainaniana"
 }, 
 "Tl2918809": {
 "^ot:originalLabel": "Phylloporia homocarnica KJ787804_CH"
@@ -533,8 +707,9 @@
 "^ot:originalLabel": "Phylloporia homocarnica KJ787803_T_CH"
 }, 
 "Tl2918811": {
-"^ot:altLabel": "Phylloporia pectinata", 
 "^ot:originalLabel": "Phylloporia pectinata ME_KJ651917_AG", 
+"^ot:ottId": 863926, 
+"^ot:ottTaxonName": "Phylloporia pectinata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22099, 
 "@tb:identifier.taxonVariant": 51406, 
@@ -543,16 +718,22 @@
 }
 }, 
 "Tl2918812": {
-"^ot:originalLabel": "Phylloporia rzedowskii HM635672_T_MX"
+"^ot:originalLabel": "Phylloporia rzedowskii HM635672_T_MX", 
+"^ot:ottId": 815220, 
+"^ot:ottTaxonName": "Phylloporia rzedowskii"
 }, 
 "Tl2918813": {
-"^ot:originalLabel": "Phylloporia crataegi JF712922_T_CH"
+"^ot:originalLabel": "Phylloporia crataegi JF712922_T_CH", 
+"^ot:ottId": 340801, 
+"^ot:ottTaxonName": "Phylloporia crataegi"
 }, 
 "Tl2918814": {
 "^ot:originalLabel": "Phylloporia elegans KJ631408_T_BR"
 }, 
 "Tl2918815": {
-"^ot:originalLabel": "Phylloporia fontanesiae JF712925_T_CH"
+"^ot:originalLabel": "Phylloporia fontanesiae JF712925_T_CH", 
+"^ot:ottId": 340798, 
+"^ot:ottTaxonName": "Phylloporia fontanesiae"
 }, 
 "Tl2918816": {
 "^ot:originalLabel": "Phylloporia sp CMA16_217VS"
@@ -561,8 +742,9 @@
 "^ot:originalLabel": "Phylloporia nodostipitata KJ631412_T_BR"
 }, 
 "Tl2918818": {
-"^ot:altLabel": "Phylloporia spathulata", 
 "^ot:originalLabel": "Phylloporia spathulata AF411822_MX", 
+"^ot:ottId": 863925, 
+"^ot:ottTaxonName": "Phylloporia spathulata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 174936, 
 "@tb:identifier.taxonVariant": 248722, 
@@ -571,8 +753,9 @@
 }
 }, 
 "Tl2918819": {
-"^ot:altLabel": "Phylloporia pectinata", 
 "^ot:originalLabel": "Phylloporia pectinata AF411823_AU", 
+"^ot:ottId": 863926, 
+"^ot:ottTaxonName": "Phylloporia pectinata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22099, 
 "@tb:identifier.taxonVariant": 51406, 
@@ -581,7 +764,9 @@
 }
 }, 
 "Tl2918820": {
-"^ot:originalLabel": "Phylloporia inonotoides KJ743251_GA"
+"^ot:originalLabel": "Phylloporia inonotoides KJ743251_GA", 
+"^ot:ottId": 5984662, 
+"^ot:ottTaxonName": "Phylloporia inonotoides"
 }, 
 "Tl2918821": {
 "^ot:originalLabel": "Phylloporia sp KE_16_109_KE"
@@ -599,8 +784,9 @@
 "^ot:originalLabel": "Coltricia sturckertiana HM635663_AG"
 }, 
 "Tl2918826": {
-"^ot:altLabel": "Phylloporia spathulata", 
 "^ot:originalLabel": "Phylloporia spathulata ME_FG11_462_FG", 
+"^ot:ottId": 863925, 
+"^ot:ottTaxonName": "Phylloporia spathulata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 174936, 
 "@tb:identifier.taxonVariant": 248722, 
@@ -612,8 +798,9 @@
 "^ot:originalLabel": "Phylloporia sp KE_15_02_KE"
 }, 
 "Tl2918828": {
-"^ot:altLabel": "Coltricia stuckertiana", 
 "^ot:originalLabel": "Coltricia stuckertiana KC136221_AG", 
+"^ot:ottId": 763866, 
+"^ot:ottTaxonName": "Trametes stuckertiana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 622067, 
 "@tb:identifier.taxonVariant": 832955, 
@@ -621,8 +808,9 @@
 }
 }, 
 "Tl2918829": {
-"^ot:altLabel": "Fomitiporella caryophylli", 
 "^ot:originalLabel": "Fomitiporella caryophylli AY059021_IN", 
+"^ot:ottId": 367559, 
+"^ot:ottTaxonName": "Phellinus caryophylli", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 164611, 
 "@tb:identifier.taxonVariant": 239445, 
@@ -631,20 +819,25 @@
 }
 }, 
 "Tl2918830": {
-"^ot:originalLabel": "Phylloporia oreophila JF712934_CH"
+"^ot:originalLabel": "Phylloporia oreophila JF712934_CH", 
+"^ot:ottId": 340805, 
+"^ot:ottTaxonName": "Phylloporia oreophila"
 }, 
 "Tl2918831": {
 "^ot:originalLabel": "Phylloporia sp ISA54226_BR"
 }, 
 "Tl2918832": {
-"^ot:originalLabel": "Phylloporia ulloai HM635678_T_MX"
+"^ot:originalLabel": "Phylloporia ulloai HM635678_T_MX", 
+"^ot:ottId": 815218, 
+"^ot:ottTaxonName": "Phylloporia ulloai"
 }, 
 "Tl2918833": {
 "^ot:originalLabel": "Phylloporia littoralis 3_GA"
 }, 
 "Tl2918834": {
-"^ot:altLabel": "Phylloporia pectinata", 
 "^ot:originalLabel": "Phylloporia pectinata ME_GA12_814_GA", 
+"^ot:ottId": 863926, 
+"^ot:ottTaxonName": "Phylloporia pectinata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22099, 
 "@tb:identifier.taxonVariant": 51406, 
@@ -659,8 +852,9 @@
 "^ot:originalLabel": "Phylloporia radiata KU904471_T_CH"
 }, 
 "Tl2918837": {
-"^ot:altLabel": "Phylloporia ribis", 
 "^ot:originalLabel": "Phylloporia ribis AF311040_GE", 
+"^ot:ottId": 137433, 
+"^ot:ottTaxonName": "Phylloporia ribis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22100, 
 "@tb:identifier.taxonVariant": 51408, 
@@ -681,8 +875,9 @@
 "^ot:originalLabel": "Phylloporia sp CMA16_218VS"
 }, 
 "Tl2918842": {
-"^ot:altLabel": "Phylloporia spathulata", 
 "^ot:originalLabel": "Phylloporia spathulata ME_KJ651921_AG", 
+"^ot:ottId": 863925, 
+"^ot:ottTaxonName": "Phylloporia spathulata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 174936, 
 "@tb:identifier.taxonVariant": 248722, 
@@ -691,8 +886,9 @@
 }
 }, 
 "Tl2918843": {
-"^ot:altLabel": "Phylloporia spathulata", 
 "^ot:originalLabel": "Phylloporia spathulata ME_KJ651918_AG", 
+"^ot:ottId": 863925, 
+"^ot:ottTaxonName": "Phylloporia spathulata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 174936, 
 "@tb:identifier.taxonVariant": 248722, 
@@ -701,8 +897,9 @@
 }
 }, 
 "Tl2918844": {
-"^ot:altLabel": "Phylloporia ephedrae", 
 "^ot:originalLabel": "Phylloporia ephedrae AF411826_TU", 
+"^ot:ottId": 863923, 
+"^ot:ottTaxonName": "Phylloporia ephedrae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 174935, 
 "@tb:identifier.taxonVariant": 248721, 
@@ -711,17 +908,22 @@
 }
 }, 
 "Tl2918845": {
-"^ot:originalLabel": "Phylloporia gutta JF712926_CH"
+"^ot:originalLabel": "Phylloporia gutta JF712926_CH", 
+"^ot:ottId": 340795, 
+"^ot:ottTaxonName": "Phylloporia gutta"
 }, 
 "Tl2918846": {
-"^ot:originalLabel": "Phylloporia nouraguensis FG11_409_FG"
+"^ot:originalLabel": "Phylloporia nouraguensis FG11_409_FG", 
+"^ot:ottId": 5262074, 
+"^ot:ottTaxonName": "Phylloporia nouraguensis"
 }, 
 "Tl2918847": {
 "^ot:originalLabel": "Phylloporia sp KE_15_19_KE"
 }, 
 "Tl2918848": {
-"^ot:altLabel": "Phylloporia spathulata", 
 "^ot:originalLabel": "Phylloporia spathulata ME_FG15_930_FG", 
+"^ot:ottId": 863925, 
+"^ot:ottTaxonName": "Phylloporia spathulata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 174936, 
 "@tb:identifier.taxonVariant": 248722, 
@@ -744,7 +946,18 @@
 "Tr107329": {
 "@label": "tree 1", 
 "@xsi:type": "nex:FloatTree", 
-"^ot:rootNodeId": "Tn16832847", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:changesCount", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "Tn16832728", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
+"^ot:rootNodeId": "Tr107329_ROOT", 
+"^ot:specifiedRoot": "Tr107329_ROOT", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 137, 
 "^tb:quality.tree": "Unrated", 
@@ -757,7 +970,7 @@
 "@target": "Tn16832880"
 }, 
 "edge423399": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16832640", 
 "@target": "Tn16832841"
 }
@@ -776,24 +989,24 @@
 }, 
 "Tn16832642": {
 "edge423259": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16832642", 
 "@target": "Tn16832784"
 }, 
 "edge423261": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16832642", 
 "@target": "Tn16832707"
 }
 }, 
 "Tn16832643": {
 "edge422959": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16832643", 
 "@target": "Tn16832821"
 }, 
 "edge422961": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16832643", 
 "@target": "Tn16832741"
 }
@@ -817,7 +1030,7 @@
 "@target": "Tn16832661"
 }, 
 "edge423043": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16832646", 
 "@target": "Tn16832762"
 }
@@ -848,12 +1061,12 @@
 }, 
 "Tn16832654": {
 "edge423107": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16832654", 
 "@target": "Tn16832709"
 }, 
 "edge423109": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16832654", 
 "@target": "Tn16832782"
 }
@@ -865,14 +1078,14 @@
 "@target": "Tn16832692"
 }, 
 "edge423271": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16832657", 
 "@target": "Tn16832696"
 }
 }, 
 "Tn16832658": {
 "edge423203": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16832658", 
 "@target": "Tn16832674"
 }, 
@@ -884,12 +1097,12 @@
 }, 
 "Tn16832660": {
 "edge423103": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16832660", 
 "@target": "Tn16832691"
 }, 
 "edge423105": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16832660", 
 "@target": "Tn16832654"
 }
@@ -1028,12 +1241,12 @@
 }, 
 "Tn16832686": {
 "edge422987": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16832686", 
 "@target": "Tn16832790"
 }, 
 "edge422989": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16832686", 
 "@target": "Tn16832712"
 }
@@ -1064,7 +1277,7 @@
 }, 
 "Tn16832689": {
 "edge422917": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16832689", 
 "@target": "Tn16832670"
 }, 
@@ -1076,24 +1289,24 @@
 }, 
 "Tn16832693": {
 "edge423217": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16832693", 
 "@target": "Tn16832873"
 }, 
 "edge423219": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16832693", 
 "@target": "Tn16832842"
 }
 }, 
 "Tn16832695": {
 "edge423211": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16832695", 
 "@target": "Tn16832907"
 }, 
 "edge423213": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16832695", 
 "@target": "Tn16832811"
 }
@@ -1112,12 +1325,12 @@
 }, 
 "Tn16832701": {
 "edge423391": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16832701", 
 "@target": "Tn16832637"
 }, 
 "edge423393": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16832701", 
 "@target": "Tn16832668"
 }
@@ -1136,24 +1349,24 @@
 }, 
 "Tn16832703": {
 "edge423097": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16832703", 
 "@target": "Tn16832860"
 }, 
 "edge423099": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16832703", 
 "@target": "Tn16832777"
 }
 }, 
 "Tn16832705": {
 "edge423057": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16832705", 
 "@target": "Tn16832829"
 }, 
 "edge423059": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16832705", 
 "@target": "Tn16832840"
 }
@@ -1165,7 +1378,7 @@
 "@target": "Tn16832650"
 }, 
 "edge422927": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16832710", 
 "@target": "Tn16832682"
 }
@@ -1189,7 +1402,7 @@
 "@target": "Tn16832903"
 }, 
 "edge423253": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16832714", 
 "@target": "Tn16832869"
 }
@@ -1208,7 +1421,7 @@
 }, 
 "Tn16832719": {
 "edge422973": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16832719", 
 "@target": "Tn16832726"
 }, 
@@ -1232,12 +1445,12 @@
 }, 
 "Tn16832724": {
 "edge423237": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16832724", 
 "@target": "Tn16832671"
 }, 
 "edge423239": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16832724", 
 "@target": "Tn16832837"
 }
@@ -1304,12 +1517,12 @@
 }, 
 "Tn16832734": {
 "edge423175": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16832734", 
 "@target": "Tn16832721"
 }, 
 "edge423177": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16832734", 
 "@target": "Tn16832667"
 }
@@ -1381,7 +1594,7 @@
 "@target": "Tn16832774"
 }, 
 "edge423367": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16832744", 
 "@target": "Tn16832725"
 }
@@ -1400,12 +1613,12 @@
 }, 
 "Tn16832748": {
 "edge422993": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16832748", 
 "@target": "Tn16832700"
 }, 
 "edge422995": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16832748", 
 "@target": "Tn16832786"
 }
@@ -1424,12 +1637,12 @@
 }, 
 "Tn16832751": {
 "edge423017": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16832751", 
 "@target": "Tn16832839"
 }, 
 "edge423019": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16832751", 
 "@target": "Tn16832881"
 }
@@ -1484,12 +1697,12 @@
 }, 
 "Tn16832757": {
 "edge423081": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16832757", 
 "@target": "Tn16832772"
 }, 
 "edge423083": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16832757", 
 "@target": "Tn16832833"
 }
@@ -1532,7 +1745,7 @@
 }, 
 "Tn16832764": {
 "edge423389": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16832764", 
 "@target": "Tn16832701"
 }, 
@@ -1580,12 +1793,12 @@
 }, 
 "Tn16832769": {
 "edge423169": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16832769", 
 "@target": "Tn16832690"
 }, 
 "edge423171": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16832769", 
 "@target": "Tn16832770"
 }
@@ -1664,7 +1877,7 @@
 }, 
 "Tn16832780": {
 "edge422935": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16832780", 
 "@target": "Tn16832676"
 }, 
@@ -1712,12 +1925,12 @@
 }, 
 "Tn16832791": {
 "edge423051": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16832791", 
 "@target": "Tn16832715"
 }, 
 "edge423053": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16832791", 
 "@target": "Tn16832818"
 }
@@ -1741,7 +1954,7 @@
 "@target": "Tn16832905"
 }, 
 "edge423323": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16832793", 
 "@target": "Tn16832694"
 }
@@ -1796,24 +2009,24 @@
 }, 
 "Tn16832804": {
 "edge423189": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16832804", 
 "@target": "Tn16832904"
 }, 
 "edge423191": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16832804", 
 "@target": "Tn16832652"
 }
 }, 
 "Tn16832806": {
 "edge423311": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16832806", 
 "@target": "Tn16832819"
 }, 
 "edge423313": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16832806", 
 "@target": "Tn16832879"
 }
@@ -1825,19 +2038,19 @@
 "@target": "Tn16832720"
 }, 
 "edge422943": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16832807", 
 "@target": "Tn16832832"
 }
 }, 
 "Tn16832809": {
 "edge423307": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16832809", 
 "@target": "Tn16832672"
 }, 
 "edge423309": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16832809", 
 "@target": "Tn16832806"
 }
@@ -1916,7 +2129,7 @@
 }, 
 "Tn16832825": {
 "edge423011": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16832825", 
 "@target": "Tn16832888"
 }, 
@@ -1928,12 +2141,12 @@
 }, 
 "Tn16832830": {
 "edge423289": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16832830", 
 "@target": "Tn16832729"
 }, 
 "edge423291": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16832830", 
 "@target": "Tn16832808"
 }
@@ -1945,14 +2158,14 @@
 "@target": "Tn16832886"
 }, 
 "edge423353": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16832831", 
 "@target": "Tn16832859"
 }
 }, 
 "Tn16832832": {
 "edge422945": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16832832", 
 "@target": "Tn16832749"
 }, 
@@ -1964,7 +2177,7 @@
 }, 
 "Tn16832833": {
 "edge423085": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16832833", 
 "@target": "Tn16832789"
 }, 
@@ -2023,11 +2236,6 @@
 }
 }, 
 "Tn16832847": {
-"edge422857": {
-"@length": 0.010754389999999999, 
-"@source": "Tn16832847", 
-"@target": "Tn16832788"
-}, 
 "edge422883": {
 "@length": 0.010754389999999999, 
 "@source": "Tn16832847", 
@@ -2072,19 +2280,19 @@
 }, 
 "Tn16832867": {
 "edge423363": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16832867", 
 "@target": "Tn16832648"
 }, 
 "edge423365": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16832867", 
 "@target": "Tn16832902"
 }
 }, 
 "Tn16832869": {
 "edge423255": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16832869", 
 "@target": "Tn16832656"
 }, 
@@ -2120,7 +2328,7 @@
 }, 
 "Tn16832874": {
 "edge423129": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16832874", 
 "@target": "Tn16832823"
 }, 
@@ -2137,7 +2345,7 @@
 "@target": "Tn16832799"
 }, 
 "edge423279": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16832875", 
 "@target": "Tn16832651"
 }
@@ -2161,19 +2369,19 @@
 "@target": "Tn16832909"
 }, 
 "edge423111": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16832878", 
 "@target": "Tn16832778"
 }
 }, 
 "Tn16832881": {
 "edge423021": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16832881", 
 "@target": "Tn16832891"
 }, 
 "edge423023": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16832881", 
 "@target": "Tn16832889"
 }
@@ -2192,12 +2400,12 @@
 }, 
 "Tn16832883": {
 "edge423337": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16832883", 
 "@target": "Tn16832828"
 }, 
 "edge423339": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16832883", 
 "@target": "Tn16832740"
 }
@@ -2300,12 +2508,12 @@
 }, 
 "Tn16832898": {
 "edge422903": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16832898", 
 "@target": "Tn16832846"
 }, 
 "edge422905": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16832898", 
 "@target": "Tn16832897"
 }
@@ -2341,14 +2549,14 @@
 "@target": "Tn16832826"
 }, 
 "edge423251": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16832903", 
 "@target": "Tn16832754"
 }
 }, 
 "Tn16832906": {
 "edge423233": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16832906", 
 "@target": "Tn16832665"
 }, 
@@ -2360,19 +2568,19 @@
 }, 
 "Tn16832908": {
 "edge423077": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16832908", 
 "@target": "Tn16832864"
 }, 
 "edge423079": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16832908", 
 "@target": "Tn16832757"
 }
 }, 
 "Tn16832909": {
 "edge422891": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16832909", 
 "@target": "Tn16832824"
 }, 
@@ -2380,6 +2588,17 @@
 "@length": 0.00378025, 
 "@source": "Tn16832909", 
 "@target": "Tn16832802"
+}
+}, 
+"Tr107329_ROOT": {
+"Tr107329_ROOT_EDGE": {
+"@source": "Tr107329_ROOT", 
+"@target": "Tn16832847"
+}, 
+"edge422857": {
+"@length": 0.010754389999999999, 
+"@source": "Tr107329_ROOT", 
+"@target": "Tn16832788"
 }
 }
 }, 
@@ -2391,14 +2610,16 @@
 "@otu": "Tl2918753"
 }, 
 "Tn16832639": {
-"@otu": "Tl2918750"
+"@otu": "Tl2918750", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn16832640": {}, 
 "Tn16832641": {}, 
 "Tn16832642": {}, 
 "Tn16832643": {}, 
 "Tn16832644": {
-"@otu": "Tl2918777"
+"@otu": "Tl2918777", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn16832645": {}, 
 "Tn16832646": {}, 
@@ -2408,10 +2629,12 @@
 }, 
 "Tn16832649": {}, 
 "Tn16832650": {
-"@otu": "Tl2918845"
+"@otu": "Tl2918845", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn16832651": {
-"@otu": "Tl2918786"
+"@otu": "Tl2918786", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn16832652": {
 "@otu": "Tl2918821"
@@ -2421,21 +2644,25 @@
 }, 
 "Tn16832654": {}, 
 "Tn16832655": {
-"@otu": "Tl2918781"
+"@otu": "Tl2918781", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn16832656": {
-"@otu": "Tl2918797"
+"@otu": "Tl2918797", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn16832657": {}, 
 "Tn16832658": {}, 
 "Tn16832659": {
-"@otu": "Tl2918842"
+"@otu": "Tl2918842", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn16832660": {}, 
 "Tn16832661": {}, 
 "Tn16832662": {}, 
 "Tn16832663": {
-"@otu": "Tl2918826"
+"@otu": "Tl2918826", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn16832664": {}, 
 "Tn16832665": {
@@ -2445,7 +2672,8 @@
 "@otu": "Tl2918714"
 }, 
 "Tn16832667": {
-"@otu": "Tl2918740"
+"@otu": "Tl2918740", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn16832668": {
 "@otu": "Tl2918841"
@@ -2458,7 +2686,8 @@
 "@otu": "Tl2918840"
 }, 
 "Tn16832672": {
-"@otu": "Tl2918769"
+"@otu": "Tl2918769", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn16832673": {}, 
 "Tn16832674": {
@@ -2468,7 +2697,8 @@
 "@otu": "Tl2918744"
 }, 
 "Tn16832676": {
-"@otu": "Tl2918743"
+"@otu": "Tl2918743", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn16832677": {
 "@otu": "Tl2918713"
@@ -2478,7 +2708,8 @@
 "Tn16832680": {}, 
 "Tn16832681": {}, 
 "Tn16832682": {
-"@otu": "Tl2918717"
+"@otu": "Tl2918717", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn16832683": {}, 
 "Tn16832684": {
@@ -2496,21 +2727,25 @@
 "@otu": "Tl2918804"
 }, 
 "Tn16832692": {
-"@otu": "Tl2918732"
+"@otu": "Tl2918732", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn16832693": {}, 
 "Tn16832694": {
-"@otu": "Tl2918812"
+"@otu": "Tl2918812", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn16832695": {}, 
 "Tn16832696": {
-"@otu": "Tl2918815"
+"@otu": "Tl2918815", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn16832697": {
 "@otu": "Tl2918730"
 }, 
 "Tn16832698": {
-"@otu": "Tl2918775"
+"@otu": "Tl2918775", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn16832699": {}, 
 "Tn16832700": {
@@ -2527,7 +2762,8 @@
 "@otu": "Tl2918794"
 }, 
 "Tn16832707": {
-"@otu": "Tl2918796"
+"@otu": "Tl2918796", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn16832708": {
 "@otu": "Tl2918773"
@@ -2541,14 +2777,16 @@
 "@otu": "Tl2918738"
 }, 
 "Tn16832713": {
-"@otu": "Tl2918716"
+"@otu": "Tl2918716", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn16832714": {}, 
 "Tn16832715": {
 "@otu": "Tl2918824"
 }, 
 "Tn16832716": {
-"@otu": "Tl2918843"
+"@otu": "Tl2918843", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn16832717": {
 "@otu": "Tl2918791"
@@ -2556,10 +2794,12 @@
 "Tn16832718": {}, 
 "Tn16832719": {}, 
 "Tn16832720": {
-"@otu": "Tl2918811"
+"@otu": "Tl2918811", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn16832721": {
-"@otu": "Tl2918776"
+"@otu": "Tl2918776", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn16832722": {}, 
 "Tn16832723": {
@@ -2587,15 +2827,18 @@
 "Tn16832735": {}, 
 "Tn16832736": {}, 
 "Tn16832737": {
-"@otu": "Tl2918830"
+"@otu": "Tl2918830", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn16832738": {}, 
 "Tn16832739": {}, 
 "Tn16832740": {
-"@otu": "Tl2918832"
+"@otu": "Tl2918832", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn16832741": {
-"@otu": "Tl2918762"
+"@otu": "Tl2918762", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn16832742": {
 "@otu": "Tl2918715"
@@ -2607,18 +2850,21 @@
 "@otu": "Tl2918817"
 }, 
 "Tn16832747": {
-"@otu": "Tl2918783"
+"@otu": "Tl2918783", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn16832748": {}, 
 "Tn16832749": {
-"@otu": "Tl2918807"
+"@otu": "Tl2918807", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn16832750": {}, 
 "Tn16832751": {}, 
 "Tn16832752": {}, 
 "Tn16832753": {}, 
 "Tn16832754": {
-"@otu": "Tl2918798"
+"@otu": "Tl2918798", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn16832755": {}, 
 "Tn16832756": {}, 
@@ -2654,10 +2900,12 @@
 "Tn16832774": {}, 
 "Tn16832775": {}, 
 "Tn16832776": {
-"@otu": "Tl2918819"
+"@otu": "Tl2918819", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn16832777": {
-"@otu": "Tl2918820"
+"@otu": "Tl2918820", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn16832778": {}, 
 "Tn16832779": {}, 
@@ -2670,7 +2918,8 @@
 }, 
 "Tn16832783": {}, 
 "Tn16832784": {
-"@otu": "Tl2918754"
+"@otu": "Tl2918754", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn16832785": {}, 
 "Tn16832786": {
@@ -2690,7 +2939,8 @@
 "Tn16832792": {}, 
 "Tn16832793": {}, 
 "Tn16832794": {
-"@otu": "Tl2918733"
+"@otu": "Tl2918733", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn16832795": {}, 
 "Tn16832796": {}, 
@@ -2699,7 +2949,8 @@
 "@otu": "Tl2918774"
 }, 
 "Tn16832799": {
-"@otu": "Tl2918747"
+"@otu": "Tl2918747", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn16832800": {
 "@otu": "Tl2918816"
@@ -2709,7 +2960,8 @@
 }, 
 "Tn16832802": {}, 
 "Tn16832803": {
-"@otu": "Tl2918736"
+"@otu": "Tl2918736", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn16832804": {}, 
 "Tn16832805": {
@@ -2741,28 +2993,34 @@
 "@otu": "Tl2918727"
 }, 
 "Tn16832819": {
-"@otu": "Tl2918780"
+"@otu": "Tl2918780", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn16832820": {}, 
 "Tn16832821": {
-"@otu": "Tl2918752"
+"@otu": "Tl2918752", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn16832822": {
-"@otu": "Tl2918739"
+"@otu": "Tl2918739", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn16832823": {
-"@otu": "Tl2918813"
+"@otu": "Tl2918813", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn16832824": {}, 
 "Tn16832825": {}, 
 "Tn16832826": {
-"@otu": "Tl2918848"
+"@otu": "Tl2918848", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn16832827": {
 "@otu": "Tl2918767"
 }, 
 "Tn16832828": {
-"@otu": "Tl2918731"
+"@otu": "Tl2918731", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn16832829": {
 "@otu": "Tl2918814"
@@ -2773,7 +3031,8 @@
 "Tn16832833": {}, 
 "Tn16832834": {}, 
 "Tn16832835": {
-"@otu": "Tl2918763"
+"@otu": "Tl2918763", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn16832836": {
 "@otu": "Tl2918718"
@@ -2783,7 +3042,8 @@
 }, 
 "Tn16832838": {}, 
 "Tn16832839": {
-"@otu": "Tl2918834"
+"@otu": "Tl2918834", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn16832840": {
 "@otu": "Tl2918764"
@@ -2800,16 +3060,16 @@
 "@otu": "Tl2918835"
 }, 
 "Tn16832846": {
-"@otu": "Tl2918722"
+"@otu": "Tl2918722", 
+"^ot:isTaxonExemplar": false
 }, 
-"Tn16832847": {
-"@root": true
-}, 
+"Tn16832847": {}, 
 "Tn16832848": {
 "@otu": "Tl2918836"
 }, 
 "Tn16832849": {
-"@otu": "Tl2918712"
+"@otu": "Tl2918712", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn16832850": {
 "@otu": "Tl2918827"
@@ -2838,13 +3098,15 @@
 "@otu": "Tl2918823"
 }, 
 "Tn16832860": {
-"@otu": "Tl2918803"
+"@otu": "Tl2918803", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn16832861": {
 "@otu": "Tl2918800"
 }, 
 "Tn16832862": {
-"@otu": "Tl2918729"
+"@otu": "Tl2918729", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn16832863": {
 "@otu": "Tl2918792"
@@ -2864,7 +3126,8 @@
 "Tn16832870": {}, 
 "Tn16832871": {}, 
 "Tn16832872": {
-"@otu": "Tl2918818"
+"@otu": "Tl2918818", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn16832873": {
 "@otu": "Tl2918838"
@@ -2877,7 +3140,8 @@
 "Tn16832877": {}, 
 "Tn16832878": {}, 
 "Tn16832879": {
-"@otu": "Tl2918846"
+"@otu": "Tl2918846", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn16832880": {
 "@otu": "Tl2918795"
@@ -2892,24 +3156,29 @@
 }, 
 "Tn16832887": {}, 
 "Tn16832888": {
-"@otu": "Tl2918806"
+"@otu": "Tl2918806", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn16832889": {
-"@otu": "Tl2918788"
+"@otu": "Tl2918788", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn16832890": {}, 
 "Tn16832891": {
-"@otu": "Tl2918755"
+"@otu": "Tl2918755", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn16832892": {}, 
 "Tn16832893": {}, 
 "Tn16832894": {}, 
 "Tn16832895": {}, 
 "Tn16832896": {
-"@otu": "Tl2918828"
+"@otu": "Tl2918828", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn16832897": {
-"@otu": "Tl2918799"
+"@otu": "Tl2918799", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn16832898": {}, 
 "Tn16832899": {
@@ -2925,14 +3194,18 @@
 "@otu": "Tl2918765"
 }, 
 "Tn16832905": {
-"@otu": "Tl2918805"
+"@otu": "Tl2918805", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn16832906": {}, 
 "Tn16832907": {
 "@otu": "Tl2918751"
 }, 
 "Tn16832908": {}, 
-"Tn16832909": {}
+"Tn16832909": {}, 
+"Tr107329_ROOT": {
+"@root": true
+}
 }
 }
 }
