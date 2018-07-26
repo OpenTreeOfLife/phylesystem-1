@@ -65,16 +65,116 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2018-07-26T02:05:19.446Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:curatorName": "Kaitlin Allen ", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}, 
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}, 
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": "$1"
+}, 
+"old": {
+"$": "^(\\S*\\s+\\S*).*"
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2018-07-26T02:05:19.446Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Kaitlin Allen "
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S16033"
 }, 
+"^ot:focalClade": 105574, 
+"^ot:focalCladeOTTTaxonName": "Cyperaceae", 
 "^ot:otusElementOrder": [
 "Tls38564"
 ], 
@@ -84,6 +184,7 @@
 }, 
 "^ot:studyPublicationReference": "L\u00e9veill\u00e9-bourret \u00c9., Gilmour C.N., Starr J.R., Naczi R.F., Daniel S., & Sytsma K.J. 2014. Searching for the sister to sedges (Carex): resolving relationships within the Cariceae-Dulichieae-Scirpeae clade (Cyperaceae). Botanical Journal of the Linnean Society, 176(1): 1-21.", 
 "^ot:studyYear": 2014, 
+"^ot:tag": [], 
 "^ot:taxonLinkPrefixes": {
 "@ubio": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:", 
 "@uniprot": "http://purl.uniprot.org/taxonomy/"
@@ -113,6 +214,8 @@
 "otuById": {
 "Tl1531680": {
 "^ot:originalLabel": "Eriophorum russeolum subsp albidum STA1788", 
+"^ot:ottId": 913639, 
+"^ot:ottTaxonName": "Eriophorum russeolum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 625570, 
 "@tb:identifier.taxonVariant": 837911, 
@@ -120,8 +223,9 @@
 }
 }, 
 "Tl1531681": {
-"^ot:altLabel": "Carex acicularis", 
 "^ot:originalLabel": "Carex acicularis STA84", 
+"^ot:ottId": 193247, 
+"^ot:ottTaxonName": "Carex acicularis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 4883, 
 "@tb:identifier.taxonVariant": 11750, 
@@ -131,6 +235,8 @@
 }, 
 "Tl1531682": {
 "^ot:originalLabel": "Blysmus sinocompressus var sinocompressus STA1904", 
+"^ot:ottId": 3961206, 
+"^ot:ottTaxonName": "Blysmus sinocompressus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 625571, 
 "@tb:identifier.taxonVariant": 837912, 
@@ -139,6 +245,8 @@
 }, 
 "Tl1531683": {
 "^ot:originalLabel": "Scirpus atrovirens dS043", 
+"^ot:ottId": 1074610, 
+"^ot:ottTaxonName": "Scirpus atrovirens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 625572, 
 "@tb:identifier.taxonVariant": 837913, 
@@ -146,8 +254,9 @@
 }
 }, 
 "Tl1531684": {
-"^ot:altLabel": "Scirpus hattorianus", 
 "^ot:originalLabel": "Scirpus hattorianus STA1984", 
+"^ot:ottId": 228169, 
+"^ot:ottTaxonName": "Scirpus hattorianus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 437966, 
 "@tb:identifier.taxonVariant": 577213, 
@@ -156,8 +265,9 @@
 }
 }, 
 "Tl1531685": {
-"^ot:altLabel": "Trichophorum cespitosum", 
 "^ot:originalLabel": "Trichophorum cespitosum STA1819", 
+"^ot:ottId": 612688, 
+"^ot:ottTaxonName": "Trichophorum cespitosum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 29530, 
 "@tb:identifier.taxonVariant": 113587, 
@@ -166,8 +276,9 @@
 }
 }, 
 "Tl1531686": {
-"^ot:altLabel": "Carex siderosticta", 
 "^ot:originalLabel": "Carex siderosticta STA733", 
+"^ot:ottId": 274858, 
+"^ot:ottTaxonName": "Carex siderosticta", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 436474, 
 "@tb:identifier.taxonVariant": 575023, 
@@ -176,8 +287,9 @@
 }
 }, 
 "Tl1531687": {
-"^ot:altLabel": "Eriophorum brachyantherum", 
 "^ot:originalLabel": "Eriophorum brachyantherum STA1910", 
+"^ot:ottId": 453215, 
+"^ot:ottTaxonName": "Eriophorum brachyantherum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 189039, 
 "@tb:identifier.taxonVariant": 260997, 
@@ -187,6 +299,8 @@
 }, 
 "Tl1531688": {
 "^ot:originalLabel": "Eriophorum angustifolium subsp komarovii STA1790", 
+"^ot:ottId": 580889, 
+"^ot:ottTaxonName": "Eriophorum angustifolium", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 625573, 
 "@tb:identifier.taxonVariant": 837914, 
@@ -194,8 +308,9 @@
 }
 }, 
 "Tl1531689": {
-"^ot:altLabel": "Scirpus radicans", 
 "^ot:originalLabel": "Scirpus radicans STA1915", 
+"^ot:ottId": 262872, 
+"^ot:ottTaxonName": "Scirpus radicans", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 256849, 
 "@tb:identifier.taxonVariant": 315182, 
@@ -205,6 +320,8 @@
 }, 
 "Tl1531690": {
 "^ot:originalLabel": "Scirpus polyphyllus dS050", 
+"^ot:ottId": 3959134, 
+"^ot:ottTaxonName": "Scirpus polyphyllus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 625574, 
 "@tb:identifier.taxonVariant": 837915, 
@@ -212,8 +329,9 @@
 }
 }, 
 "Tl1531691": {
-"^ot:altLabel": "Carex aphylla", 
 "^ot:originalLabel": "Carex aphylla STA1279", 
+"^ot:ottId": 397245, 
+"^ot:ottTaxonName": "Carex aphylla", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 4890, 
 "@tb:identifier.taxonVariant": 11772, 
@@ -222,8 +340,9 @@
 }
 }, 
 "Tl1531692": {
-"^ot:altLabel": "Scirpus flaccidifolius", 
 "^ot:originalLabel": "Scirpus flaccidifolius dS045", 
+"^ot:ottId": 228165, 
+"^ot:ottTaxonName": "Scirpus flaccidifolius", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 437964, 
 "@tb:identifier.taxonVariant": 577209, 
@@ -232,8 +351,9 @@
 }
 }, 
 "Tl1531693": {
-"^ot:altLabel": "Zameioscirpus muticus", 
 "^ot:originalLabel": "Zameioscirpus muticus STA2062", 
+"^ot:ottId": 430732, 
+"^ot:ottTaxonName": "Zameioscirpus muticus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 215222, 
 "@tb:identifier.taxonVariant": 282293, 
@@ -242,8 +362,9 @@
 }
 }, 
 "Tl1531694": {
-"^ot:altLabel": "Scirpus expansus", 
 "^ot:originalLabel": "Scirpus expansus dS024", 
+"^ot:ottId": 228163, 
+"^ot:ottTaxonName": "Scirpus expansus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 437963, 
 "@tb:identifier.taxonVariant": 577207, 
@@ -252,8 +373,9 @@
 }
 }, 
 "Tl1531695": {
-"^ot:altLabel": "Scirpus atrocinctus", 
 "^ot:originalLabel": "Scirpus atrocinctus dS057", 
+"^ot:ottId": 493923, 
+"^ot:ottTaxonName": "Scirpus atrocinctus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 437961, 
 "@tb:identifier.taxonVariant": 577203, 
@@ -263,6 +385,8 @@
 }, 
 "Tl1531696": {
 "^ot:originalLabel": "Eriophorum angustifolium subsp angustifolium d537", 
+"^ot:ottId": 580889, 
+"^ot:ottTaxonName": "Eriophorum angustifolium", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 625575, 
 "@tb:identifier.taxonVariant": 837916, 
@@ -270,8 +394,9 @@
 }
 }, 
 "Tl1531697": {
-"^ot:altLabel": "Oreobolopsis tepalifera", 
 "^ot:originalLabel": "Oreobolopsis tepalifera STA2038", 
+"^ot:ottId": 430748, 
+"^ot:ottTaxonName": "Oreobolopsis tepalifera", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 215226, 
 "@tb:identifier.taxonVariant": 282298, 
@@ -280,8 +405,9 @@
 }
 }, 
 "Tl1531698": {
-"^ot:altLabel": "Scirpus microcarpus", 
 "^ot:originalLabel": "Scirpus microcarpus STA1976", 
+"^ot:ottId": 883168, 
+"^ot:ottTaxonName": "Scirpus microcarpus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 107427, 
 "@tb:identifier.taxonVariant": 425367, 
@@ -290,8 +416,9 @@
 }
 }, 
 "Tl1531699": {
-"^ot:altLabel": "Trichophorum subcapitatum", 
 "^ot:originalLabel": "Trichophorum subcapitatum STA2070", 
+"^ot:ottId": 262886, 
+"^ot:ottTaxonName": "Trichophorum subcapitatum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 256846, 
 "@tb:identifier.taxonVariant": 315179, 
@@ -300,8 +427,9 @@
 }
 }, 
 "Tl1531700": {
-"^ot:altLabel": "Scirpus pendulus", 
 "^ot:originalLabel": "Scirpus pendulus STA1978", 
+"^ot:ottId": 228171, 
+"^ot:ottTaxonName": "Scirpus pendulus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 437967, 
 "@tb:identifier.taxonVariant": 577215, 
@@ -310,8 +438,9 @@
 }
 }, 
 "Tl1531701": {
-"^ot:altLabel": "Scirpus wichurae", 
 "^ot:originalLabel": "Scirpus wichurae dS003", 
+"^ot:ottId": 172461, 
+"^ot:ottTaxonName": "Scirpus wichurae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 338786, 
 "@tb:identifier.taxonVariant": 376097, 
@@ -320,8 +449,9 @@
 }
 }, 
 "Tl1531702": {
-"^ot:altLabel": "Eriophorum viridicarinatum", 
 "^ot:originalLabel": "Eriophorum viridicarinatum STA1780", 
+"^ot:ottId": 790597, 
+"^ot:ottTaxonName": "Eriophorum viridicarinatum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 68647, 
 "@tb:identifier.taxonVariant": 144269, 
@@ -330,8 +460,9 @@
 }
 }, 
 "Tl1531703": {
-"^ot:altLabel": "Eriophorum gracile", 
 "^ot:originalLabel": "Eriophorum gracile STA393", 
+"^ot:ottId": 172456, 
+"^ot:ottTaxonName": "Eriophorum gracile", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 338778, 
 "@tb:identifier.taxonVariant": 501745, 
@@ -341,6 +472,8 @@
 }, 
 "Tl1531704": {
 "^ot:originalLabel": "Eriophorum scheuchzeri subsp scheuchzeri STA1798", 
+"^ot:ottId": 913641, 
+"^ot:ottTaxonName": "Eriophorum scheuchzeri", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 625576, 
 "@tb:identifier.taxonVariant": 837917, 
@@ -348,8 +481,9 @@
 }
 }, 
 "Tl1531705": {
-"^ot:altLabel": "Uncinia banksii", 
 "^ot:originalLabel": "Uncinia banskii STA68", 
+"^ot:ottId": 265965, 
+"^ot:ottTaxonName": "Uncinia banksii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 625577, 
 "@tb:identifier.taxonVariant": 837918, 
@@ -359,6 +493,8 @@
 }, 
 "Tl1531706": {
 "^ot:originalLabel": "Trichophorum uniflorum STA1917", 
+"^ot:ottId": 3959190, 
+"^ot:ottTaxonName": "Trichophorum uniflorum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 625578, 
 "@tb:identifier.taxonVariant": 837919, 
@@ -366,8 +502,9 @@
 }
 }, 
 "Tl1531707": {
-"^ot:altLabel": "Abildgaardia ovata", 
 "^ot:originalLabel": "Abildgaardia ovata STA328", 
+"^ot:ottId": 113177, 
+"^ot:ottTaxonName": "Abildgaardia ovata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 11, 
 "@tb:identifier.taxonVariant": 30, 
@@ -377,6 +514,8 @@
 }, 
 "Tl1531708": {
 "^ot:originalLabel": "Scirpus maximowiczii STA1919", 
+"^ot:ottId": 3959165, 
+"^ot:ottTaxonName": "Scirpus maximowiczii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 625579, 
 "@tb:identifier.taxonVariant": 837920, 
@@ -384,8 +523,9 @@
 }
 }, 
 "Tl1531709": {
-"^ot:altLabel": "Blysmus rufus", 
 "^ot:originalLabel": "Blysmus rufus STA1913", 
+"^ot:ottId": 289335, 
+"^ot:ottTaxonName": "Blysmopsis rufa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 617321, 
 "@tb:identifier.taxonVariant": 826209, 
@@ -393,8 +533,9 @@
 }
 }, 
 "Tl1531710": {
-"^ot:altLabel": "Carex stipata", 
 "^ot:originalLabel": "Carex stipata STA1808", 
+"^ot:ottId": 193874, 
+"^ot:ottTaxonName": "Carex stipata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 217513, 
 "@tb:identifier.taxonVariant": 455733, 
@@ -403,8 +544,9 @@
 }
 }, 
 "Tl1531711": {
-"^ot:altLabel": "Fimbristylis dichotoma", 
 "^ot:originalLabel": "Fimbristylis dichotoma STA320", 
+"^ot:ottId": 215121, 
+"^ot:ottTaxonName": "Fimbristylis dichotoma", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 11334, 
 "@tb:identifier.taxonVariant": 27095, 
@@ -413,8 +555,9 @@
 }
 }, 
 "Tl1531712": {
-"^ot:altLabel": "Schoenoxiphium lanceum", 
 "^ot:originalLabel": "Schoenoxiphium lanceum STA710", 
+"^ot:ottId": 973453, 
+"^ot:ottTaxonName": "Schoenoxiphium lanceum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 26410, 
 "@tb:identifier.taxonVariant": 61707, 
@@ -423,8 +566,9 @@
 }
 }, 
 "Tl1531713": {
-"^ot:altLabel": "Eriophorum scheuchzeri subsp scheuchzeri STA1798", 
 "^ot:originalLabel": "Eriophorum scheuchzeri subsp scheuchzeri STA1796", 
+"^ot:ottId": 913641, 
+"^ot:ottTaxonName": "Eriophorum scheuchzeri", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 625576, 
 "@tb:identifier.taxonVariant": 837917, 
@@ -432,8 +576,9 @@
 }
 }, 
 "Tl1531714": {
-"^ot:altLabel": "Carex camptoglochin", 
 "^ot:originalLabel": "Carex camptoglochin STA27", 
+"^ot:ottId": 544899, 
+"^ot:ottTaxonName": "Carex camptoglochin", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 423158, 
 "@tb:identifier.taxonVariant": 413420, 
@@ -442,11 +587,14 @@
 }
 }, 
 "Tl1531715": {
-"^ot:originalLabel": "Cypringlea evadens STA2053"
+"^ot:originalLabel": "Cypringlea evadens STA2053", 
+"^ot:ottId": 3961608, 
+"^ot:ottTaxonName": "Cypringlea evadens"
 }, 
 "Tl1531716": {
-"^ot:altLabel": "Scirpus maximowiczii STA1919", 
 "^ot:originalLabel": "Scirpus maximowiczii STA1920", 
+"^ot:ottId": 3959165, 
+"^ot:ottTaxonName": "Scirpus maximowiczii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 625579, 
 "@tb:identifier.taxonVariant": 837920, 
@@ -454,8 +602,9 @@
 }
 }, 
 "Tl1531717": {
-"^ot:altLabel": "Phylloscirpus deserticola", 
 "^ot:originalLabel": "Phylloscirpus deserticola STA2101", 
+"^ot:ottId": 547351, 
+"^ot:ottTaxonName": "Phylloscirpus deserticola", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 215218, 
 "@tb:identifier.taxonVariant": 282289, 
@@ -464,8 +613,9 @@
 }
 }, 
 "Tl1531718": {
-"^ot:altLabel": "Eleocharis acicularis", 
 "^ot:originalLabel": "Eleocharis acicularis d484", 
+"^ot:ottId": 925324, 
+"^ot:ottTaxonName": "Eleocharis acicularis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 247820, 
 "@tb:identifier.taxonVariant": 466589, 
@@ -474,8 +624,9 @@
 }
 }, 
 "Tl1531719": {
-"^ot:altLabel": "Uncinia ecuadorensis", 
 "^ot:originalLabel": "Uncinia ecuadorensis STA148", 
+"^ot:ottId": 692334, 
+"^ot:ottTaxonName": "Uncinia ecuadorensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 30231, 
 "@tb:identifier.taxonVariant": 70575, 
@@ -484,8 +635,9 @@
 }
 }, 
 "Tl1531720": {
-"^ot:altLabel": "Khaosokia caricoides", 
 "^ot:originalLabel": "Khaosokia caricoides STA387", 
+"^ot:ottId": 957772, 
+"^ot:ottTaxonName": "Khaosokia caricoides", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 269878, 
 "@tb:identifier.taxonVariant": 325471, 
@@ -494,8 +646,9 @@
 }
 }, 
 "Tl1531721": {
-"^ot:altLabel": "Eriophorum latifolium", 
 "^ot:originalLabel": "Eriophorum latifolium STA2051", 
+"^ot:ottId": 444743, 
+"^ot:ottTaxonName": "Eriophorum latifolium", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 617315, 
 "@tb:identifier.taxonVariant": 826201, 
@@ -503,8 +656,9 @@
 }
 }, 
 "Tl1531722": {
-"^ot:altLabel": "Eriophorum scheuchzeri subsp scheuchzeri STA1798", 
 "^ot:originalLabel": "Eriophorum scheuchzeri subsp scheuchzeri STA1794", 
+"^ot:ottId": 913641, 
+"^ot:ottTaxonName": "Eriophorum scheuchzeri", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 625576, 
 "@tb:identifier.taxonVariant": 837917, 
@@ -512,8 +666,9 @@
 }
 }, 
 "Tl1531723": {
-"^ot:altLabel": "Calliscirpus criniger STA1898", 
 "^ot:originalLabel": "Calliscirpus criniger STA1899", 
+"^ot:ottId": 476791, 
+"^ot:ottTaxonName": "Calliscirpus criniger", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 627079, 
 "@tb:identifier.taxonVariant": 840509, 
@@ -522,6 +677,8 @@
 }, 
 "Tl1531724": {
 "^ot:originalLabel": "Eriophorum vaginatum subsp vaginatum STA112", 
+"^ot:ottId": 738895, 
+"^ot:ottTaxonName": "Eriophorum vaginatum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 625580, 
 "@tb:identifier.taxonVariant": 837921, 
@@ -529,8 +686,9 @@
 }
 }, 
 "Tl1531725": {
-"^ot:altLabel": "Oreobolopsis tepalifera", 
 "^ot:originalLabel": "Oreobolopsis tepalifera STA2067", 
+"^ot:ottId": 430748, 
+"^ot:ottTaxonName": "Oreobolopsis tepalifera", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 215226, 
 "@tb:identifier.taxonVariant": 282298, 
@@ -539,11 +697,14 @@
 }
 }, 
 "Tl1531726": {
-"^ot:originalLabel": "Calliscirpus brachythrix STA2134"
+"^ot:originalLabel": "Calliscirpus brachythrix STA2134", 
+"^ot:ottId": 5148277, 
+"^ot:ottTaxonName": "Calliscirpus brachythrix"
 }, 
 "Tl1531727": {
-"^ot:altLabel": "Carex pulicaris", 
 "^ot:originalLabel": "Carex pulicaris STA105", 
+"^ot:ottId": 973463, 
+"^ot:ottTaxonName": "Carex pulicaris", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5009, 
 "@tb:identifier.taxonVariant": 12139, 
@@ -552,8 +713,9 @@
 }
 }, 
 "Tl1531728": {
-"^ot:altLabel": "Dulichium arundinaceum", 
 "^ot:originalLabel": "Dulichium arundinaceum STA154", 
+"^ot:ottId": 580886, 
+"^ot:ottTaxonName": "Dulichium arundinaceum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 107418, 
 "@tb:identifier.taxonVariant": 185979, 
@@ -563,6 +725,8 @@
 }, 
 "Tl1531729": {
 "^ot:originalLabel": "Eriophorum tenellum STA1928", 
+"^ot:ottId": 3959185, 
+"^ot:ottTaxonName": "Eriophorum tenellum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 625581, 
 "@tb:identifier.taxonVariant": 837922, 
@@ -570,8 +734,9 @@
 }
 }, 
 "Tl1531730": {
-"^ot:altLabel": "Trichophorum rigidum", 
 "^ot:originalLabel": "Trichophorum rigidum subsp rigidum STA2043", 
+"^ot:ottId": 888786, 
+"^ot:ottTaxonName": "Trichophorum rigidum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 133232, 
 "@tb:identifier.taxonVariant": 210130, 
@@ -580,8 +745,9 @@
 }
 }, 
 "Tl1531731": {
-"^ot:altLabel": "Carex polystachya", 
 "^ot:originalLabel": "Carex polystachya STA210", 
+"^ot:ottId": 511549, 
+"^ot:ottTaxonName": "Carex polystachya", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5002, 
 "@tb:identifier.taxonVariant": 12124, 
@@ -590,8 +756,9 @@
 }
 }, 
 "Tl1531732": {
-"^ot:altLabel": "Eriophorum callitrix", 
 "^ot:originalLabel": "Eriophorum callitrix STA1786", 
+"^ot:ottId": 940359, 
+"^ot:ottTaxonName": "Eriophorum callitrix", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 548153, 
 "@tb:identifier.taxonVariant": 726945, 
@@ -600,8 +767,9 @@
 }
 }, 
 "Tl1531733": {
-"^ot:altLabel": "Blysmus compressus", 
 "^ot:originalLabel": "Blysmus compressus STA1903", 
+"^ot:ottId": 428624, 
+"^ot:ottTaxonName": "Blysmus compressus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 130568, 
 "@tb:identifier.taxonVariant": 430916, 
@@ -610,8 +778,9 @@
 }
 }, 
 "Tl1531734": {
-"^ot:altLabel": "Scirpus polystachyus", 
 "^ot:originalLabel": "Scirpus polystachyus STA349", 
+"^ot:ottId": 541289, 
+"^ot:ottTaxonName": "Scirpus polystachyus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 26459, 
 "@tb:identifier.taxonVariant": 61807, 
@@ -620,8 +789,9 @@
 }
 }, 
 "Tl1531735": {
-"^ot:altLabel": "Bulbostylis atrosanguinea", 
 "^ot:originalLabel": "Bulbostylis atrosanguinea STA321", 
+"^ot:ottId": 976663, 
+"^ot:ottTaxonName": "Bulbostylis atrosanguinea", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 4208, 
 "@tb:identifier.taxonVariant": 10164, 
@@ -630,8 +800,9 @@
 }
 }, 
 "Tl1531736": {
-"^ot:altLabel": "Eriophorum brachyantherum", 
 "^ot:originalLabel": "Eriophorum brachyantherum STA1781", 
+"^ot:ottId": 453215, 
+"^ot:ottTaxonName": "Eriophorum brachyantherum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 189039, 
 "@tb:identifier.taxonVariant": 260997, 
@@ -640,8 +811,9 @@
 }
 }, 
 "Tl1531737": {
-"^ot:altLabel": "Kobresia myosuroides", 
 "^ot:originalLabel": "Kobresia myosuroides B1518", 
+"^ot:ottId": 980217, 
+"^ot:ottTaxonName": "Kobresia myosuroides", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 15035, 
 "@tb:identifier.taxonVariant": 35316, 
@@ -651,6 +823,8 @@
 }, 
 "Tl1531738": {
 "^ot:originalLabel": "Cypringlea analecta STA2052", 
+"^ot:ottId": 3961606, 
+"^ot:ottTaxonName": "Cypringlea analecta", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 625582, 
 "@tb:identifier.taxonVariant": 837923, 
@@ -658,8 +832,9 @@
 }
 }, 
 "Tl1531739": {
-"^ot:altLabel": "Eriophorum callitrix", 
 "^ot:originalLabel": "Eriophorum callitrix STA1783", 
+"^ot:ottId": 940359, 
+"^ot:ottTaxonName": "Eriophorum callitrix", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 548153, 
 "@tb:identifier.taxonVariant": 726945, 
@@ -669,6 +844,8 @@
 }, 
 "Tl1531740": {
 "^ot:originalLabel": "Scirpus pallidus STA1983", 
+"^ot:ottId": 3959145, 
+"^ot:ottTaxonName": "Scirpus pallidus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 625583, 
 "@tb:identifier.taxonVariant": 837924, 
@@ -676,8 +853,9 @@
 }
 }, 
 "Tl1531741": {
-"^ot:altLabel": "Trichophorum alpinum", 
 "^ot:originalLabel": "Trichophorum alpinum STA1815", 
+"^ot:ottId": 262878, 
+"^ot:ottTaxonName": "Trichophorum alpinum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 256843, 
 "@tb:identifier.taxonVariant": 315177, 
@@ -686,8 +864,9 @@
 }
 }, 
 "Tl1531742": {
-"^ot:altLabel": "Eriophorum viridicarinatum", 
 "^ot:originalLabel": "Eriophorum viridicarinatum STA1779", 
+"^ot:ottId": 790597, 
+"^ot:ottTaxonName": "Eriophorum viridicarinatum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 68647, 
 "@tb:identifier.taxonVariant": 144269, 
@@ -696,8 +875,9 @@
 }
 }, 
 "Tl1531743": {
-"^ot:altLabel": "Carex gynocrates", 
 "^ot:originalLabel": "Carex gynocrates STA817", 
+"^ot:ottId": 907201, 
+"^ot:ottTaxonName": "Carex gynocrates", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 4951, 
 "@tb:identifier.taxonVariant": 11963, 
@@ -706,8 +886,9 @@
 }
 }, 
 "Tl1531744": {
-"^ot:altLabel": "Trichophorum alpinum", 
 "^ot:originalLabel": "Trichophorum alpinum STA2047", 
+"^ot:ottId": 262878, 
+"^ot:ottTaxonName": "Trichophorum alpinum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 256843, 
 "@tb:identifier.taxonVariant": 315177, 
@@ -717,6 +898,8 @@
 }, 
 "Tl1531745": {
 "^ot:originalLabel": "Eriophorum angustifolium subsp angustifolium STA1777", 
+"^ot:ottId": 580889, 
+"^ot:ottTaxonName": "Eriophorum angustifolium", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 625584, 
 "@tb:identifier.taxonVariant": 837925, 
@@ -725,6 +908,8 @@
 }, 
 "Tl1531746": {
 "^ot:originalLabel": "Scirpus pedicellatus STA1775", 
+"^ot:ottId": 3959137, 
+"^ot:ottTaxonName": "Scirpus pedicellatus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 625585, 
 "@tb:identifier.taxonVariant": 837926, 
@@ -732,11 +917,14 @@
 }
 }, 
 "Tl1531747": {
-"^ot:originalLabel": "Calliscirpus brachythrix STA2132"
+"^ot:originalLabel": "Calliscirpus brachythrix STA2132", 
+"^ot:ottId": 5148277, 
+"^ot:ottTaxonName": "Calliscirpus brachythrix"
 }, 
 "Tl1531748": {
-"^ot:altLabel": "Isolepis aucklandica", 
 "^ot:originalLabel": "Isolepis aucklandica STA1906", 
+"^ot:ottId": 414074, 
+"^ot:ottTaxonName": "Isolepis aucklandica", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 130572, 
 "@tb:identifier.taxonVariant": 207960, 
@@ -745,8 +933,9 @@
 }
 }, 
 "Tl1531749": {
-"^ot:altLabel": "Phylloscirpus deserticola", 
 "^ot:originalLabel": "Phylloscirpus deserticola STA2146", 
+"^ot:ottId": 547351, 
+"^ot:ottTaxonName": "Phylloscirpus deserticola", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 215218, 
 "@tb:identifier.taxonVariant": 282289, 
@@ -755,8 +944,9 @@
 }
 }, 
 "Tl1531750": {
-"^ot:altLabel": "Eriophorum brachyantherum", 
 "^ot:originalLabel": "Eriophorum brachyantherum STA1785", 
+"^ot:ottId": 453215, 
+"^ot:ottTaxonName": "Eriophorum brachyantherum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 189039, 
 "@tb:identifier.taxonVariant": 260997, 
@@ -765,8 +955,9 @@
 }
 }, 
 "Tl1531751": {
-"^ot:altLabel": "Scirpus cyperinus", 
 "^ot:originalLabel": "Scirpus cyperinus dS026", 
+"^ot:ottId": 228161, 
+"^ot:ottTaxonName": "Scirpus cyperinus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 437962, 
 "@tb:identifier.taxonVariant": 577205, 
@@ -775,8 +966,9 @@
 }
 }, 
 "Tl1531752": {
-"^ot:altLabel": "Scirpus cyperinus", 
 "^ot:originalLabel": "Scirpus cyperinus STA1773", 
+"^ot:ottId": 228161, 
+"^ot:ottTaxonName": "Scirpus cyperinus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 437962, 
 "@tb:identifier.taxonVariant": 577205, 
@@ -786,6 +978,8 @@
 }, 
 "Tl1531753": {
 "^ot:originalLabel": "Eriophorum vaginatum subsp spissum dS028", 
+"^ot:ottId": 738895, 
+"^ot:ottTaxonName": "Eriophorum vaginatum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 625586, 
 "@tb:identifier.taxonVariant": 837927, 
@@ -793,8 +987,9 @@
 }
 }, 
 "Tl1531754": {
-"^ot:altLabel": "Scirpus hattorianus", 
 "^ot:originalLabel": "Scirpus hattorianus STA1982", 
+"^ot:ottId": 228169, 
+"^ot:ottTaxonName": "Scirpus hattorianus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 437966, 
 "@tb:identifier.taxonVariant": 577213, 
@@ -803,8 +998,9 @@
 }
 }, 
 "Tl1531755": {
-"^ot:altLabel": "Amphiscirpus nevadensis", 
 "^ot:originalLabel": "Amphiscirpus nevadensis STA2141", 
+"^ot:ottId": 980225, 
+"^ot:ottTaxonName": "Amphiscirpus nevadensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 26458, 
 "@tb:identifier.taxonVariant": 112716, 
@@ -813,8 +1009,9 @@
 }
 }, 
 "Tl1531756": {
-"^ot:altLabel": "Kobresia simpliciuscula", 
 "^ot:originalLabel": "Kobresia simpliciuscula STA1801", 
+"^ot:ottId": 267271, 
+"^ot:ottTaxonName": "Kobresia simpliciuscula", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 15039, 
 "@tb:identifier.taxonVariant": 35326, 
@@ -824,6 +1021,8 @@
 }, 
 "Tl1531757": {
 "^ot:originalLabel": "Eriophorum virginicum STA1807", 
+"^ot:ottId": 3959174, 
+"^ot:ottTaxonName": "Eriophorum virginicum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 625587, 
 "@tb:identifier.taxonVariant": 837928, 
@@ -831,8 +1030,9 @@
 }
 }, 
 "Tl1531758": {
-"^ot:altLabel": "Scirpus georgianus", 
 "^ot:originalLabel": "Scirpus georgianus STA1909", 
+"^ot:ottId": 228167, 
+"^ot:ottTaxonName": "Scirpus georgianus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 437965, 
 "@tb:identifier.taxonVariant": 577211, 
@@ -842,6 +1042,8 @@
 }, 
 "Tl1531759": {
 "^ot:originalLabel": "Scirpus longii dS052", 
+"^ot:ottId": 3959147, 
+"^ot:ottTaxonName": "Scirpus longii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 625588, 
 "@tb:identifier.taxonVariant": 837929, 
@@ -849,8 +1051,9 @@
 }
 }, 
 "Tl1531760": {
-"^ot:altLabel": "Schoenoxiphium sparteum", 
 "^ot:originalLabel": "Schoenoxiphium sparteum STA53", 
+"^ot:ottId": 973455, 
+"^ot:ottTaxonName": "Schoenoxiphium sparteum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 26412, 
 "@tb:identifier.taxonVariant": 61709, 
@@ -859,8 +1062,9 @@
 }
 }, 
 "Tl1531761": {
-"^ot:altLabel": "Carex rupestris", 
 "^ot:originalLabel": "Carex rupestris STA1581", 
+"^ot:ottId": 8152, 
+"^ot:ottTaxonName": "Carex rupestris", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5016, 
 "@tb:identifier.taxonVariant": 12167, 
@@ -869,8 +1073,9 @@
 }
 }, 
 "Tl1531762": {
-"^ot:altLabel": "Trichophorum uniflorum", 
 "^ot:originalLabel": "Trichophorum uniflorum STA1918", 
+"^ot:ottId": 3959190, 
+"^ot:ottTaxonName": "Trichophorum uniflorum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 627083, 
 "@tb:identifier.taxonVariant": 840513, 
@@ -878,8 +1083,9 @@
 }
 }, 
 "Tl1531763": {
-"^ot:altLabel": "Carex monostachya", 
 "^ot:originalLabel": "Carex monostachya STA340", 
+"^ot:ottId": 164308, 
+"^ot:ottTaxonName": "Carex monostachya", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 4976, 
 "@tb:identifier.taxonVariant": 12050, 
@@ -888,8 +1094,9 @@
 }
 }, 
 "Tl1531764": {
-"^ot:altLabel": "Scirpus microcarpus", 
 "^ot:originalLabel": "Scirpus microcarpus dS058", 
+"^ot:ottId": 883168, 
+"^ot:ottTaxonName": "Scirpus microcarpus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 107427, 
 "@tb:identifier.taxonVariant": 425367, 
@@ -898,8 +1105,9 @@
 }
 }, 
 "Tl1531765": {
-"^ot:altLabel": "Zameioscirpus atacamensis", 
 "^ot:originalLabel": "Zameioscirpus atacamensis STA2105 2143", 
+"^ot:ottId": 430722, 
+"^ot:ottTaxonName": "Zameioscirpus atacamensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 215224, 
 "@tb:identifier.taxonVariant": 282296, 
@@ -908,8 +1116,9 @@
 }
 }, 
 "Tl1531766": {
-"^ot:altLabel": "Carex capitata", 
 "^ot:originalLabel": "Carex capitata STA395", 
+"^ot:ottId": 4161, 
+"^ot:ottTaxonName": "Carex capitata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 4911, 
 "@tb:identifier.taxonVariant": 11845, 
@@ -918,8 +1127,9 @@
 }
 }, 
 "Tl1531767": {
-"^ot:altLabel": "Trichophorum pumilum", 
 "^ot:originalLabel": "Trichophorum pumilum STA1820", 
+"^ot:ottId": 262890, 
+"^ot:ottTaxonName": "Trichophorum pumilum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 256844, 
 "@tb:identifier.taxonVariant": 469771, 
@@ -928,8 +1138,9 @@
 }
 }, 
 "Tl1531768": {
-"^ot:altLabel": "Scirpus ancistrochaetus", 
 "^ot:originalLabel": "Scirpus ancistrochaetus dS035", 
+"^ot:ottId": 261078, 
+"^ot:ottTaxonName": "Scirpus ancistrochaetus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 437847, 
 "@tb:identifier.taxonVariant": 577026, 
@@ -938,8 +1149,9 @@
 }
 }, 
 "Tl1531769": {
-"^ot:altLabel": "Carex conferta", 
 "^ot:originalLabel": "Carex conferta STA341", 
+"^ot:ottId": 164302, 
+"^ot:ottTaxonName": "Carex conferta", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 4917, 
 "@tb:identifier.taxonVariant": 11866, 
@@ -949,6 +1161,8 @@
 }, 
 "Tl1531770": {
 "^ot:originalLabel": "Trichophorum cespitosum subsp cespitosum STA1817", 
+"^ot:ottId": 612688, 
+"^ot:ottTaxonName": "Trichophorum cespitosum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 627085, 
 "@tb:identifier.taxonVariant": 840515, 
@@ -957,6 +1171,8 @@
 }, 
 "Tl1531771": {
 "^ot:originalLabel": "Eriophorum vaginatum subsp spissum STA1804", 
+"^ot:ottId": 738895, 
+"^ot:ottTaxonName": "Eriophorum vaginatum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 627081, 
 "@tb:identifier.taxonVariant": 840511, 
@@ -964,8 +1180,9 @@
 }
 }, 
 "Tl1531772": {
-"^ot:altLabel": "Scirpus sylvaticus", 
 "^ot:originalLabel": "Scirpus sylvaticus dS005", 
+"^ot:ottId": 835720, 
+"^ot:ottTaxonName": "Scirpus sylvaticus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 437850, 
 "@tb:identifier.taxonVariant": 577033, 
@@ -974,8 +1191,9 @@
 }
 }, 
 "Tl1531773": {
-"^ot:altLabel": "Trichophorum pumilum", 
 "^ot:originalLabel": "Trichophorum pumilum STA1922", 
+"^ot:ottId": 262890, 
+"^ot:ottTaxonName": "Trichophorum pumilum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 256844, 
 "@tb:identifier.taxonVariant": 469771, 
@@ -985,6 +1203,8 @@
 }, 
 "Tl1531774": {
 "^ot:originalLabel": "Scirpus divaricatus dS014", 
+"^ot:ottId": 3959139, 
+"^ot:ottTaxonName": "Scirpus divaricatus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 627084, 
 "@tb:identifier.taxonVariant": 840514, 
@@ -992,8 +1212,9 @@
 }
 }, 
 "Tl1531775": {
-"^ot:altLabel": "Eriophorum gracile", 
 "^ot:originalLabel": "Eriophorum gracile STA1792", 
+"^ot:ottId": 172456, 
+"^ot:ottTaxonName": "Eriophorum gracile", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 338778, 
 "@tb:identifier.taxonVariant": 501745, 
@@ -1002,8 +1223,9 @@
 }
 }, 
 "Tl1531776": {
-"^ot:altLabel": "Scirpus karuisawensis", 
 "^ot:originalLabel": "Scirpus karuisawensis dS004", 
+"^ot:ottId": 110697, 
+"^ot:ottTaxonName": "Scirpus karuizawensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 536817, 
 "@tb:identifier.taxonVariant": 712107, 
@@ -1013,8 +1235,9 @@
 "^skos:prefLabel": "Scirpus karuizawensis"
 }, 
 "Tl1531777": {
-"^ot:altLabel": "Trichophorum clintonii", 
 "^ot:originalLabel": "Trichophorum clintonii STA1822", 
+"^ot:ottId": 612675, 
+"^ot:ottTaxonName": "Trichophorum clintonii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 29531, 
 "@tb:identifier.taxonVariant": 68816, 
@@ -1024,6 +1247,8 @@
 }, 
 "Tl1531778": {
 "^ot:originalLabel": "Erioscirpus comosus STA2092", 
+"^ot:ottId": 645549, 
+"^ot:ottTaxonName": "Erioscirpus comosus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 627082, 
 "@tb:identifier.taxonVariant": 840512, 
@@ -1031,8 +1256,9 @@
 }
 }, 
 "Tl1531779": {
-"^ot:altLabel": "Carex ursina", 
 "^ot:originalLabel": "Carex ursina STA1810", 
+"^ot:ottId": 144247, 
+"^ot:ottTaxonName": "Carex ursina", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 543673, 
 "@tb:identifier.taxonVariant": 720876, 
@@ -1041,8 +1267,9 @@
 }
 }, 
 "Tl1531780": {
-"^ot:altLabel": "Scirpus hattorianus", 
 "^ot:originalLabel": "Scirpus hattorianus STA1979", 
+"^ot:ottId": 228169, 
+"^ot:ottTaxonName": "Scirpus hattorianus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 437966, 
 "@tb:identifier.taxonVariant": 577213, 
@@ -1051,8 +1278,9 @@
 }
 }, 
 "Tl1531781": {
-"^ot:altLabel": "Blysmus compressus", 
 "^ot:originalLabel": "Blysmus compressus STA1902", 
+"^ot:ottId": 428624, 
+"^ot:ottTaxonName": "Blysmus compressus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 130568, 
 "@tb:identifier.taxonVariant": 430916, 
@@ -1061,8 +1289,9 @@
 }
 }, 
 "Tl1531782": {
-"^ot:altLabel": "Scirpus georgianus", 
 "^ot:originalLabel": "Scirpus georgianus dS011", 
+"^ot:ottId": 228167, 
+"^ot:ottTaxonName": "Scirpus georgianus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 437965, 
 "@tb:identifier.taxonVariant": 577211, 
@@ -1071,8 +1300,9 @@
 }
 }, 
 "Tl1531783": {
-"^ot:altLabel": "Scirpus radicans", 
 "^ot:originalLabel": "Scirpus radicans dS001", 
+"^ot:ottId": 262872, 
+"^ot:ottTaxonName": "Scirpus radicans", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 256849, 
 "@tb:identifier.taxonVariant": 315182, 
@@ -1081,8 +1311,9 @@
 }
 }, 
 "Tl1531784": {
-"^ot:altLabel": "Scirpus atrovirens dS043", 
 "^ot:originalLabel": "Scirpus atrovirens dS042", 
+"^ot:ottId": 1074610, 
+"^ot:ottTaxonName": "Scirpus atrovirens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 625572, 
 "@tb:identifier.taxonVariant": 837913, 
@@ -1090,8 +1321,9 @@
 }
 }, 
 "Tl1531785": {
-"^ot:altLabel": "Eriophorum angustifolium subsp angustifolium d537", 
 "^ot:originalLabel": "Eriophorum angustifolium subsp angustifolium STA2006", 
+"^ot:ottId": 580889, 
+"^ot:ottTaxonName": "Eriophorum angustifolium", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 625575, 
 "@tb:identifier.taxonVariant": 837916, 
@@ -1100,6 +1332,8 @@
 }, 
 "Tl1531786": {
 "^ot:originalLabel": "Calliscirpus criniger STA1898", 
+"^ot:ottId": 476791, 
+"^ot:ottTaxonName": "Calliscirpus criniger", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 627079, 
 "@tb:identifier.taxonVariant": 840509, 
@@ -1107,8 +1341,9 @@
 }
 }, 
 "Tl1531787": {
-"^ot:altLabel": "Eriophorum virginicum STA1807", 
 "^ot:originalLabel": "Eriophorum virginicum STA1802", 
+"^ot:ottId": 3959174, 
+"^ot:ottTaxonName": "Eriophorum virginicum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 625587, 
 "@tb:identifier.taxonVariant": 837928, 
@@ -1117,6 +1352,8 @@
 }, 
 "Tl1531788": {
 "^ot:originalLabel": "Eriophorum russeolum subsp russeolum STA1793", 
+"^ot:ottId": 913639, 
+"^ot:ottTaxonName": "Eriophorum russeolum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 627080, 
 "@tb:identifier.taxonVariant": 840510, 
@@ -1124,8 +1361,9 @@
 }
 }, 
 "Tl1531789": {
-"^ot:altLabel": "Carex blanda", 
 "^ot:originalLabel": "Carex blanda STA183", 
+"^ot:ottId": 1038087, 
+"^ot:ottTaxonName": "Carex blanda", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 4903, 
 "@tb:identifier.taxonVariant": 11802, 
@@ -1134,8 +1372,9 @@
 }
 }, 
 "Tl1531790": {
-"^ot:altLabel": "Trichophorum rigidum", 
 "^ot:originalLabel": "Trichophorum rigidum subsp rigidum STA2078", 
+"^ot:ottId": 888786, 
+"^ot:ottTaxonName": "Trichophorum rigidum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 133232, 
 "@tb:identifier.taxonVariant": 210130, 
@@ -1144,8 +1383,9 @@
 }
 }, 
 "Tl1531791": {
-"^ot:altLabel": "Scirpus cyperinus", 
 "^ot:originalLabel": "Scirpus cyperinus dS044", 
+"^ot:ottId": 228161, 
+"^ot:ottTaxonName": "Scirpus cyperinus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 437962, 
 "@tb:identifier.taxonVariant": 577205, 
@@ -1161,1389 +1401,25 @@
 "@label": "Carex Strict consensus", 
 "@otus": "Tls38564", 
 "^ot:treeElementOrder": [
-"Tr75838", 
 "Tr78321"
 ], 
 "^skos:historyNote": "Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlTreeBlockWriter@3b2c7a0 $Rev$", 
 "treeById": {
-"Tr75838": {
-"@label": "Strict", 
-"@xsi:type": "nex:FloatTree", 
-"^ot:rootNodeId": "Tn11798212", 
-"^tb:ntax.tree": 112, 
-"edgeBySourceId": {
-"Tn11798038": {
-"edge501252": {
-"@source": "Tn11798038", 
-"@target": "Tn11798140"
-}, 
-"edge501254": {
-"@source": "Tn11798038", 
-"@target": "Tn11798061"
-}
-}, 
-"Tn11798045": {
-"edge501046": {
-"@source": "Tn11798045", 
-"@target": "Tn11798068"
-}, 
-"edge501062": {
-"@source": "Tn11798045", 
-"@target": "Tn11798128"
-}, 
-"edge501068": {
-"@source": "Tn11798045", 
-"@target": "Tn11798039"
-}
-}, 
-"Tn11798048": {
-"edge501248": {
-"@source": "Tn11798048", 
-"@target": "Tn11798215"
-}, 
-"edge501258": {
-"@source": "Tn11798048", 
-"@target": "Tn11798041"
-}
-}, 
-"Tn11798049": {
-"edge501076": {
-"@source": "Tn11798049", 
-"@target": "Tn11798084"
-}, 
-"edge501078": {
-"@source": "Tn11798049", 
-"@target": "Tn11798123"
-}
-}, 
-"Tn11798052": {
-"edge500900": {
-"@source": "Tn11798052", 
-"@target": "Tn11798145"
-}, 
-"edge501228": {
-"@source": "Tn11798052", 
-"@target": "Tn11798097"
-}
-}, 
-"Tn11798055": {
-"edge501156": {
-"@source": "Tn11798055", 
-"@target": "Tn11798096"
-}, 
-"edge501162": {
-"@source": "Tn11798055", 
-"@target": "Tn11798138"
-}
-}, 
-"Tn11798057": {
-"edge501110": {
-"@source": "Tn11798057", 
-"@target": "Tn11798225"
-}, 
-"edge501120": {
-"@source": "Tn11798057", 
-"@target": "Tn11798160"
-}
-}, 
-"Tn11798058": {
-"edge501264": {
-"@source": "Tn11798058", 
-"@target": "Tn11798180"
-}, 
-"edge501266": {
-"@source": "Tn11798058", 
-"@target": "Tn11798054"
-}
-}, 
-"Tn11798059": {
-"edge500924": {
-"@source": "Tn11798059", 
-"@target": "Tn11798091"
-}, 
-"edge501094": {
-"@source": "Tn11798059", 
-"@target": "Tn11798053"
-}
-}, 
-"Tn11798060": {
-"edge500990": {
-"@source": "Tn11798060", 
-"@target": "Tn11798216"
-}, 
-"edge500992": {
-"@source": "Tn11798060", 
-"@target": "Tn11798188"
-}
-}, 
-"Tn11798063": {
-"edge500904": {
-"@source": "Tn11798063", 
-"@target": "Tn11798211"
-}, 
-"edge500920": {
-"@source": "Tn11798063", 
-"@target": "Tn11798098"
-}
-}, 
-"Tn11798064": {
-"edge500950": {
-"@source": "Tn11798064", 
-"@target": "Tn11798210"
-}, 
-"edge500956": {
-"@source": "Tn11798064", 
-"@target": "Tn11798106"
-}, 
-"edge500958": {
-"@source": "Tn11798064", 
-"@target": "Tn11798074"
-}, 
-"edge500960": {
-"@source": "Tn11798064", 
-"@target": "Tn11798103"
-}
-}, 
-"Tn11798068": {
-"edge501048": {
-"@source": "Tn11798068", 
-"@target": "Tn11798134"
-}, 
-"edge501060": {
-"@source": "Tn11798068", 
-"@target": "Tn11798067"
-}
-}, 
-"Tn11798069": {
-"edge501214": {
-"@source": "Tn11798069", 
-"@target": "Tn11798197"
-}, 
-"edge501216": {
-"@source": "Tn11798069", 
-"@target": "Tn11798199"
-}
-}, 
-"Tn11798070": {
-"edge500896": {
-"@source": "Tn11798070", 
-"@target": "Tn11798125"
-}, 
-"edge501244": {
-"@source": "Tn11798070", 
-"@target": "Tn11798227"
-}
-}, 
-"Tn11798071": {
-"edge500972": {
-"@source": "Tn11798071", 
-"@target": "Tn11798040"
-}, 
-"edge500974": {
-"@source": "Tn11798071", 
-"@target": "Tn11798132"
-}, 
-"edge500976": {
-"@source": "Tn11798071", 
-"@target": "Tn11798139"
-}
-}, 
-"Tn11798073": {
-"edge501106": {
-"@source": "Tn11798073", 
-"@target": "Tn11798198"
-}, 
-"edge501128": {
-"@source": "Tn11798073", 
-"@target": "Tn11798201"
-}
-}, 
-"Tn11798076": {
-"edge501014": {
-"@source": "Tn11798076", 
-"@target": "Tn11798046"
-}, 
-"edge501016": {
-"@source": "Tn11798076", 
-"@target": "Tn11798229"
-}, 
-"edge501042": {
-"@source": "Tn11798076", 
-"@target": "Tn11798093"
-}
-}, 
-"Tn11798078": {
-"edge501136": {
-"@source": "Tn11798078", 
-"@target": "Tn11798147"
-}, 
-"edge501142": {
-"@source": "Tn11798078", 
-"@target": "Tn11798217"
-}
-}, 
-"Tn11798083": {
-"edge501238": {
-"@source": "Tn11798083", 
-"@target": "Tn11798194"
-}, 
-"edge501240": {
-"@source": "Tn11798083", 
-"@target": "Tn11798119"
-}
-}, 
-"Tn11798085": {
-"edge501134": {
-"@source": "Tn11798085", 
-"@target": "Tn11798078"
-}, 
-"edge501144": {
-"@source": "Tn11798085", 
-"@target": "Tn11798142"
-}
-}, 
-"Tn11798087": {
-"edge500916": {
-"@source": "Tn11798087", 
-"@target": "Tn11798136"
-}, 
-"edge500918": {
-"@source": "Tn11798087", 
-"@target": "Tn11798226"
-}
-}, 
-"Tn11798090": {
-"edge501232": {
-"@source": "Tn11798090", 
-"@target": "Tn11798065"
-}, 
-"edge501234": {
-"@source": "Tn11798090", 
-"@target": "Tn11798191"
-}
-}, 
-"Tn11798091": {
-"edge500926": {
-"@source": "Tn11798091", 
-"@target": "Tn11798196"
-}, 
-"edge501012": {
-"@source": "Tn11798091", 
-"@target": "Tn11798076"
-}, 
-"edge501044": {
-"@source": "Tn11798091", 
-"@target": "Tn11798045"
-}, 
-"edge501070": {
-"@source": "Tn11798091", 
-"@target": "Tn11798173"
-}, 
-"edge501082": {
-"@source": "Tn11798091", 
-"@target": "Tn11798105"
-}, 
-"edge501088": {
-"@source": "Tn11798091", 
-"@target": "Tn11798109"
-}
-}, 
-"Tn11798092": {
-"edge501000": {
-"@source": "Tn11798092", 
-"@target": "Tn11798152"
-}, 
-"edge501002": {
-"@source": "Tn11798092", 
-"@target": "Tn11798077"
-}
-}, 
-"Tn11798094": {
-"edge501114": {
-"@source": "Tn11798094", 
-"@target": "Tn11798082"
-}, 
-"edge501116": {
-"@source": "Tn11798094", 
-"@target": "Tn11798050"
-}
-}, 
-"Tn11798095": {
-"edge500930": {
-"@source": "Tn11798095", 
-"@target": "Tn11798179"
-}, 
-"edge500944": {
-"@source": "Tn11798095", 
-"@target": "Tn11798129"
-}, 
-"edge500986": {
-"@source": "Tn11798095", 
-"@target": "Tn11798120"
-}, 
-"edge500988": {
-"@source": "Tn11798095", 
-"@target": "Tn11798060"
-}
-}, 
-"Tn11798096": {
-"edge501158": {
-"@source": "Tn11798096", 
-"@target": "Tn11798099"
-}, 
-"edge501160": {
-"@source": "Tn11798096", 
-"@target": "Tn11798171"
-}
-}, 
-"Tn11798097": {
-"edge501230": {
-"@source": "Tn11798097", 
-"@target": "Tn11798090"
-}, 
-"edge501236": {
-"@source": "Tn11798097", 
-"@target": "Tn11798083"
-}
-}, 
-"Tn11798098": {
-"edge500922": {
-"@source": "Tn11798098", 
-"@target": "Tn11798059"
-}, 
-"edge501096": {
-"@source": "Tn11798098", 
-"@target": "Tn11798195"
-}
-}, 
-"Tn11798101": {
-"edge501028": {
-"@source": "Tn11798101", 
-"@target": "Tn11798144"
-}, 
-"edge501030": {
-"@source": "Tn11798101", 
-"@target": "Tn11798086"
-}
-}, 
-"Tn11798102": {
-"edge500998": {
-"@source": "Tn11798102", 
-"@target": "Tn11798092"
-}, 
-"edge501004": {
-"@source": "Tn11798102", 
-"@target": "Tn11798184"
-}
-}, 
-"Tn11798105": {
-"edge501084": {
-"@source": "Tn11798105", 
-"@target": "Tn11798143"
-}, 
-"edge501086": {
-"@source": "Tn11798105", 
-"@target": "Tn11798079"
-}
-}, 
-"Tn11798108": {
-"edge500894": {
-"@source": "Tn11798108", 
-"@target": "Tn11798070"
-}, 
-"edge501262": {
-"@source": "Tn11798108", 
-"@target": "Tn11798058"
-}
-}, 
-"Tn11798109": {
-"edge501090": {
-"@source": "Tn11798109", 
-"@target": "Tn11798116"
-}, 
-"edge501092": {
-"@source": "Tn11798109", 
-"@target": "Tn11798035"
-}
-}, 
-"Tn11798110": {
-"edge501184": {
-"@source": "Tn11798110", 
-"@target": "Tn11798100"
-}, 
-"edge501186": {
-"@source": "Tn11798110", 
-"@target": "Tn11798037"
-}
-}, 
-"Tn11798111": {
-"edge500892": {
-"@source": "Tn11798111", 
-"@target": "Tn11798108"
-}, 
-"edge501268": {
-"@source": "Tn11798111", 
-"@target": "Tn11798104"
-}
-}, 
-"Tn11798112": {
-"edge500890": {
-"@source": "Tn11798112", 
-"@target": "Tn11798111"
-}, 
-"edge501270": {
-"@source": "Tn11798112", 
-"@target": "Tn11798044"
-}
-}, 
-"Tn11798115": {
-"edge500936": {
-"@source": "Tn11798115", 
-"@target": "Tn11798156"
-}, 
-"edge500938": {
-"@source": "Tn11798115", 
-"@target": "Tn11798137"
-}
-}, 
-"Tn11798117": {
-"edge501104": {
-"@source": "Tn11798117", 
-"@target": "Tn11798073"
-}, 
-"edge501154": {
-"@source": "Tn11798117", 
-"@target": "Tn11798055"
-}
-}, 
-"Tn11798121": {
-"edge501170": {
-"@source": "Tn11798121", 
-"@target": "Tn11798183"
-}, 
-"edge501172": {
-"@source": "Tn11798121", 
-"@target": "Tn11798220"
-}
-}, 
-"Tn11798125": {
-"edge500898": {
-"@source": "Tn11798125", 
-"@target": "Tn11798052"
-}, 
-"edge501242": {
-"@source": "Tn11798125", 
-"@target": "Tn11798075"
-}
-}, 
-"Tn11798128": {
-"edge501064": {
-"@source": "Tn11798128", 
-"@target": "Tn11798178"
-}, 
-"edge501066": {
-"@source": "Tn11798128", 
-"@target": "Tn11798221"
-}
-}, 
-"Tn11798129": {
-"edge500946": {
-"@source": "Tn11798129", 
-"@target": "Tn11798174"
-}, 
-"edge500970": {
-"@source": "Tn11798129", 
-"@target": "Tn11798071"
-}
-}, 
-"Tn11798134": {
-"edge501050": {
-"@source": "Tn11798134", 
-"@target": "Tn11798214"
-}, 
-"edge501052": {
-"@source": "Tn11798134", 
-"@target": "Tn11798047"
-}, 
-"edge501054": {
-"@source": "Tn11798134", 
-"@target": "Tn11798169"
-}, 
-"edge501056": {
-"@source": "Tn11798134", 
-"@target": "Tn11798051"
-}, 
-"edge501058": {
-"@source": "Tn11798134", 
-"@target": "Tn11798186"
-}
-}, 
-"Tn11798135": {
-"edge500980": {
-"@source": "Tn11798135", 
-"@target": "Tn11798224"
-}, 
-"edge500982": {
-"@source": "Tn11798135", 
-"@target": "Tn11798165"
-}
-}, 
-"Tn11798138": {
-"edge501164": {
-"@source": "Tn11798138", 
-"@target": "Tn11798043"
-}, 
-"edge501166": {
-"@source": "Tn11798138", 
-"@target": "Tn11798162"
-}
-}, 
-"Tn11798139": {
-"edge500978": {
-"@source": "Tn11798139", 
-"@target": "Tn11798135"
-}, 
-"edge500984": {
-"@source": "Tn11798139", 
-"@target": "Tn11798167"
-}
-}, 
-"Tn11798142": {
-"edge501146": {
-"@source": "Tn11798142", 
-"@target": "Tn11798177"
-}, 
-"edge501148": {
-"@source": "Tn11798142", 
-"@target": "Tn11798113"
-}
-}, 
-"Tn11798145": {
-"edge500902": {
-"@source": "Tn11798145", 
-"@target": "Tn11798063"
-}, 
-"edge501098": {
-"@source": "Tn11798145", 
-"@target": "Tn11798190"
-}
-}, 
-"Tn11798146": {
-"edge501220": {
-"@source": "Tn11798146", 
-"@target": "Tn11798157"
-}, 
-"edge501226": {
-"@source": "Tn11798146", 
-"@target": "Tn11798148"
-}
-}, 
-"Tn11798147": {
-"edge501138": {
-"@source": "Tn11798147", 
-"@target": "Tn11798114"
-}, 
-"edge501140": {
-"@source": "Tn11798147", 
-"@target": "Tn11798164"
-}
-}, 
-"Tn11798149": {
-"edge501208": {
-"@source": "Tn11798149", 
-"@target": "Tn11798168"
-}, 
-"edge501210": {
-"@source": "Tn11798149", 
-"@target": "Tn11798122"
-}
-}, 
-"Tn11798150": {
-"edge501102": {
-"@source": "Tn11798150", 
-"@target": "Tn11798117"
-}, 
-"edge501176": {
-"@source": "Tn11798150", 
-"@target": "Tn11798176"
-}
-}, 
-"Tn11798151": {
-"edge500996": {
-"@source": "Tn11798151", 
-"@target": "Tn11798102"
-}, 
-"edge501006": {
-"@source": "Tn11798151", 
-"@target": "Tn11798181"
-}
-}, 
-"Tn11798157": {
-"edge501222": {
-"@source": "Tn11798157", 
-"@target": "Tn11798209"
-}, 
-"edge501224": {
-"@source": "Tn11798157", 
-"@target": "Tn11798228"
-}
-}, 
-"Tn11798159": {
-"edge500964": {
-"@source": "Tn11798159", 
-"@target": "Tn11798200"
-}, 
-"edge500966": {
-"@source": "Tn11798159", 
-"@target": "Tn11798193"
-}, 
-"edge500968": {
-"@source": "Tn11798159", 
-"@target": "Tn11798154"
-}
-}, 
-"Tn11798160": {
-"edge501122": {
-"@source": "Tn11798160", 
-"@target": "Tn11798155"
-}, 
-"edge501124": {
-"@source": "Tn11798160", 
-"@target": "Tn11798131"
-}
-}, 
-"Tn11798161": {
-"edge501020": {
-"@source": "Tn11798161", 
-"@target": "Tn11798213"
-}, 
-"edge501022": {
-"@source": "Tn11798161", 
-"@target": "Tn11798202"
-}
-}, 
-"Tn11798162": {
-"edge501168": {
-"@source": "Tn11798162", 
-"@target": "Tn11798121"
-}, 
-"edge501174": {
-"@source": "Tn11798162", 
-"@target": "Tn11798062"
-}
-}, 
-"Tn11798163": {
-"edge501200": {
-"@source": "Tn11798163", 
-"@target": "Tn11798133"
-}, 
-"edge501202": {
-"@source": "Tn11798163", 
-"@target": "Tn11798223"
-}
-}, 
-"Tn11798166": {
-"edge501190": {
-"@source": "Tn11798166", 
-"@target": "Tn11798118"
-}, 
-"edge501192": {
-"@source": "Tn11798166", 
-"@target": "Tn11798208"
-}, 
-"edge501194": {
-"@source": "Tn11798166", 
-"@target": "Tn11798158"
-}, 
-"edge501196": {
-"@source": "Tn11798166", 
-"@target": "Tn11798127"
-}
-}, 
-"Tn11798172": {
-"edge501180": {
-"@source": "Tn11798172", 
-"@target": "Tn11798185"
-}, 
-"edge501218": {
-"@source": "Tn11798172", 
-"@target": "Tn11798146"
-}
-}, 
-"Tn11798173": {
-"edge501072": {
-"@source": "Tn11798173", 
-"@target": "Tn11798036"
-}, 
-"edge501074": {
-"@source": "Tn11798173", 
-"@target": "Tn11798049"
-}, 
-"edge501080": {
-"@source": "Tn11798173", 
-"@target": "Tn11798222"
-}
-}, 
-"Tn11798174": {
-"edge500948": {
-"@source": "Tn11798174", 
-"@target": "Tn11798064"
-}, 
-"edge500962": {
-"@source": "Tn11798174", 
-"@target": "Tn11798159"
-}
-}, 
-"Tn11798175": {
-"edge500934": {
-"@source": "Tn11798175", 
-"@target": "Tn11798115"
-}, 
-"edge500940": {
-"@source": "Tn11798175", 
-"@target": "Tn11798126"
-}
-}, 
-"Tn11798179": {
-"edge500932": {
-"@source": "Tn11798179", 
-"@target": "Tn11798175"
-}, 
-"edge500942": {
-"@source": "Tn11798179", 
-"@target": "Tn11798192"
-}
-}, 
-"Tn11798181": {
-"edge501008": {
-"@source": "Tn11798181", 
-"@target": "Tn11798170"
-}, 
-"edge501010": {
-"@source": "Tn11798181", 
-"@target": "Tn11798080"
-}
-}, 
-"Tn11798182": {
-"edge500910": {
-"@source": "Tn11798182", 
-"@target": "Tn11798203"
-}, 
-"edge500912": {
-"@source": "Tn11798182", 
-"@target": "Tn11798088"
-}
-}, 
-"Tn11798185": {
-"edge501182": {
-"@source": "Tn11798185", 
-"@target": "Tn11798110"
-}, 
-"edge501188": {
-"@source": "Tn11798185", 
-"@target": "Tn11798166"
-}, 
-"edge501198": {
-"@source": "Tn11798185", 
-"@target": "Tn11798163"
-}, 
-"edge501204": {
-"@source": "Tn11798185", 
-"@target": "Tn11798189"
-}, 
-"edge501206": {
-"@source": "Tn11798185", 
-"@target": "Tn11798149"
-}, 
-"edge501212": {
-"@source": "Tn11798185", 
-"@target": "Tn11798069"
-}
-}, 
-"Tn11798190": {
-"edge501100": {
-"@source": "Tn11798190", 
-"@target": "Tn11798150"
-}, 
-"edge501178": {
-"@source": "Tn11798190", 
-"@target": "Tn11798172"
-}
-}, 
-"Tn11798196": {
-"edge500928": {
-"@source": "Tn11798196", 
-"@target": "Tn11798095"
-}, 
-"edge500994": {
-"@source": "Tn11798196", 
-"@target": "Tn11798151"
-}
-}, 
-"Tn11798198": {
-"edge501108": {
-"@source": "Tn11798198", 
-"@target": "Tn11798057"
-}, 
-"edge501126": {
-"@source": "Tn11798198", 
-"@target": "Tn11798081"
-}
-}, 
-"Tn11798201": {
-"edge501130": {
-"@source": "Tn11798201", 
-"@target": "Tn11798219"
-}, 
-"edge501152": {
-"@source": "Tn11798201", 
-"@target": "Tn11798153"
-}
-}, 
-"Tn11798210": {
-"edge500952": {
-"@source": "Tn11798210", 
-"@target": "Tn11798124"
-}, 
-"edge500954": {
-"@source": "Tn11798210", 
-"@target": "Tn11798042"
-}
-}, 
-"Tn11798211": {
-"edge500906": {
-"@source": "Tn11798211", 
-"@target": "Tn11798204"
-}, 
-"edge500908": {
-"@source": "Tn11798211", 
-"@target": "Tn11798182"
-}, 
-"edge500914": {
-"@source": "Tn11798211", 
-"@target": "Tn11798087"
-}
-}, 
-"Tn11798212": {
-"edge500886": {
-"@source": "Tn11798212", 
-"@target": "Tn11798205"
-}, 
-"edge500888": {
-"@source": "Tn11798212", 
-"@target": "Tn11798112"
-}, 
-"edge501272": {
-"@source": "Tn11798212", 
-"@target": "Tn11798187"
-}
-}, 
-"Tn11798215": {
-"edge501250": {
-"@source": "Tn11798215", 
-"@target": "Tn11798038"
-}, 
-"edge501256": {
-"@source": "Tn11798215", 
-"@target": "Tn11798107"
-}
-}, 
-"Tn11798218": {
-"edge501034": {
-"@source": "Tn11798218", 
-"@target": "Tn11798206"
-}, 
-"edge501036": {
-"@source": "Tn11798218", 
-"@target": "Tn11798089"
-}, 
-"edge501038": {
-"@source": "Tn11798218", 
-"@target": "Tn11798141"
-}
-}, 
-"Tn11798219": {
-"edge501132": {
-"@source": "Tn11798219", 
-"@target": "Tn11798085"
-}, 
-"edge501150": {
-"@source": "Tn11798219", 
-"@target": "Tn11798207"
-}
-}, 
-"Tn11798225": {
-"edge501112": {
-"@source": "Tn11798225", 
-"@target": "Tn11798094"
-}, 
-"edge501118": {
-"@source": "Tn11798225", 
-"@target": "Tn11798072"
-}
-}, 
-"Tn11798227": {
-"edge501246": {
-"@source": "Tn11798227", 
-"@target": "Tn11798048"
-}, 
-"edge501260": {
-"@source": "Tn11798227", 
-"@target": "Tn11798130"
-}
-}, 
-"Tn11798229": {
-"edge501018": {
-"@source": "Tn11798229", 
-"@target": "Tn11798161"
-}, 
-"edge501024": {
-"@source": "Tn11798229", 
-"@target": "Tn11798066"
-}, 
-"edge501026": {
-"@source": "Tn11798229", 
-"@target": "Tn11798101"
-}, 
-"edge501032": {
-"@source": "Tn11798229", 
-"@target": "Tn11798218"
-}, 
-"edge501040": {
-"@source": "Tn11798229", 
-"@target": "Tn11798056"
-}
-}
-}, 
-"nodeById": {
-"Tn11798035": {
-"@otu": "Tl1531689"
-}, 
-"Tn11798036": {
-"@otu": "Tl1531694"
-}, 
-"Tn11798037": {
-"@otu": "Tl1531715"
-}, 
-"Tn11798038": {}, 
-"Tn11798039": {
-"@otu": "Tl1531701"
-}, 
-"Tn11798040": {
-"@otu": "Tl1531680"
-}, 
-"Tn11798041": {
-"@otu": "Tl1531709"
-}, 
-"Tn11798042": {
-"@otu": "Tl1531750"
-}, 
-"Tn11798043": {
-"@otu": "Tl1531769"
-}, 
-"Tn11798044": {
-"@otu": "Tl1531735"
-}, 
-"Tn11798045": {}, 
-"Tn11798046": {
-"@otu": "Tl1531768"
-}, 
-"Tn11798047": {
-"@otu": "Tl1531751"
-}, 
-"Tn11798048": {}, 
-"Tn11798049": {}, 
-"Tn11798050": {
-"@otu": "Tl1531714"
-}, 
-"Tn11798051": {
-"@otu": "Tl1531752"
-}, 
-"Tn11798052": {}, 
-"Tn11798053": {
-"@otu": "Tl1531700"
-}, 
-"Tn11798054": {
-"@otu": "Tl1531748"
-}, 
-"Tn11798055": {}, 
-"Tn11798056": {
-"@otu": "Tl1531740"
-}, 
-"Tn11798057": {}, 
-"Tn11798058": {}, 
-"Tn11798059": {}, 
-"Tn11798060": {}, 
-"Tn11798061": {
-"@otu": "Tl1531733"
-}, 
-"Tn11798062": {
-"@otu": "Tl1531710"
-}, 
-"Tn11798063": {}, 
-"Tn11798064": {}, 
-"Tn11798065": {
-"@otu": "Tl1531747"
-}, 
-"Tn11798066": {
-"@otu": "Tl1531692"
-}, 
-"Tn11798067": {
-"@otu": "Tl1531759"
-}, 
-"Tn11798068": {}, 
-"Tn11798069": {}, 
-"Tn11798070": {}, 
-"Tn11798071": {}, 
-"Tn11798072": {
-"@otu": "Tl1531691"
-}, 
-"Tn11798073": {}, 
-"Tn11798074": {
-"@otu": "Tl1531739"
-}, 
-"Tn11798075": {
-"@otu": "Tl1531720"
-}, 
-"Tn11798076": {}, 
-"Tn11798077": {
-"@otu": "Tl1531703"
-}, 
-"Tn11798078": {}, 
-"Tn11798079": {
-"@otu": "Tl1531716"
-}, 
-"Tn11798080": {
-"@otu": "Tl1531757"
-}, 
-"Tn11798081": {
-"@label": "Carex pulicharis STA105", 
-"@otu": "Tl1531727"
-}, 
-"Tn11798082": {
-"@otu": "Tl1531681"
-}, 
-"Tn11798083": {}, 
-"Tn11798084": {
-"@otu": "Tl1531764"
-}, 
-"Tn11798085": {}, 
-"Tn11798086": {
-"@otu": "Tl1531758"
-}, 
-"Tn11798087": {}, 
-"Tn11798088": {
-"@otu": "Tl1531749"
-}, 
-"Tn11798089": {
-"@otu": "Tl1531754"
-}, 
-"Tn11798090": {}, 
-"Tn11798091": {}, 
-"Tn11798092": {}, 
-"Tn11798093": {
-"@otu": "Tl1531690"
-}, 
-"Tn11798094": {}, 
-"Tn11798095": {}, 
-"Tn11798096": {}, 
-"Tn11798097": {}, 
-"Tn11798098": {}, 
-"Tn11798099": {
-"@otu": "Tl1531789"
-}, 
-"Tn11798100": {
-"@otu": "Tl1531738"
-}, 
-"Tn11798101": {}, 
-"Tn11798102": {}, 
-"Tn11798103": {
-"@otu": "Tl1531732"
-}, 
-"Tn11798104": {
-"@otu": "Tl1531718"
-}, 
-"Tn11798105": {}, 
-"Tn11798106": {
-"@otu": "Tl1531687"
-}, 
-"Tn11798107": {
-"@otu": "Tl1531682"
-}, 
-"Tn11798108": {}, 
-"Tn11798109": {}, 
-"Tn11798110": {}, 
-"Tn11798111": {}, 
-"Tn11798112": {}, 
-"Tn11798113": {
-"@otu": "Tl1531719"
-}, 
-"Tn11798114": {
-"@otu": "Tl1531766"
-}, 
-"Tn11798115": {}, 
-"Tn11798116": {
-"@otu": "Tl1531783"
-}, 
-"Tn11798117": {}, 
-"Tn11798118": {
-"@otu": "Tl1531697"
-}, 
-"Tn11798119": {
-"@otu": "Tl1531723"
-}, 
-"Tn11798120": {
-"@otu": "Tl1531721"
-}, 
-"Tn11798121": {}, 
-"Tn11798122": {
-"@otu": "Tl1531773"
-}, 
-"Tn11798123": {
-"@otu": "Tl1531698"
-}, 
-"Tn11798124": {
-"@otu": "Tl1531736"
-}, 
-"Tn11798125": {}, 
-"Tn11798126": {
-"@otu": "Tl1531745"
-}, 
-"Tn11798127": {
-"@otu": "Tl1531790"
-}, 
-"Tn11798128": {}, 
-"Tn11798129": {}, 
-"Tn11798130": {
-"@otu": "Tl1531728"
-}, 
-"Tn11798131": {
-"@otu": "Tl1531760"
-}, 
-"Tn11798132": {
-"@otu": "Tl1531788"
-}, 
-"Tn11798133": {
-"@otu": "Tl1531685"
-}, 
-"Tn11798134": {}, 
-"Tn11798135": {}, 
-"Tn11798136": {
-"@otu": "Tl1531765"
-}, 
-"Tn11798137": {
-"@otu": "Tl1531785"
-}, 
-"Tn11798138": {}, 
-"Tn11798139": {}, 
-"Tn11798140": {
-"@otu": "Tl1531781"
-}, 
-"Tn11798141": {
-"@otu": "Tl1531684"
-}, 
-"Tn11798142": {}, 
-"Tn11798143": {
-"@otu": "Tl1531708"
-}, 
-"Tn11798144": {
-"@otu": "Tl1531782"
-}, 
-"Tn11798145": {}, 
-"Tn11798146": {}, 
-"Tn11798147": {}, 
-"Tn11798148": {
-"@otu": "Tl1531699"
-}, 
-"Tn11798149": {}, 
-"Tn11798150": {}, 
-"Tn11798151": {}, 
-"Tn11798152": {
-"@otu": "Tl1531775"
-}, 
-"Tn11798153": {
-"@otu": "Tl1531737"
-}, 
-"Tn11798154": {
-"@otu": "Tl1531724"
-}, 
-"Tn11798155": {
-"@otu": "Tl1531712"
-}, 
-"Tn11798156": {
-"@otu": "Tl1531696"
-}, 
-"Tn11798157": {}, 
-"Tn11798158": {
-"@otu": "Tl1531730"
-}, 
-"Tn11798159": {}, 
-"Tn11798160": {}, 
-"Tn11798161": {}, 
-"Tn11798162": {}, 
-"Tn11798163": {}, 
-"Tn11798164": {
-"@otu": "Tl1531763"
-}, 
-"Tn11798165": {
-"@otu": "Tl1531704"
-}, 
-"Tn11798166": {}, 
-"Tn11798167": {
-"@otu": "Tl1531713"
-}, 
-"Tn11798168": {
-"@otu": "Tl1531767"
-}, 
-"Tn11798169": {
-"@otu": "Tl1531791"
-}, 
-"Tn11798170": {
-"@otu": "Tl1531787"
-}, 
-"Tn11798171": {
-"@otu": "Tl1531731"
-}, 
-"Tn11798172": {}, 
-"Tn11798173": {}, 
-"Tn11798174": {}, 
-"Tn11798175": {}, 
-"Tn11798176": {
-"@otu": "Tl1531686"
-}, 
-"Tn11798177": {
-"@otu": "Tl1531705"
-}, 
-"Tn11798178": {
-"@otu": "Tl1531776"
-}, 
-"Tn11798179": {}, 
-"Tn11798180": {
-"@otu": "Tl1531778"
-}, 
-"Tn11798181": {}, 
-"Tn11798182": {}, 
-"Tn11798183": {
-"@otu": "Tl1531743"
-}, 
-"Tn11798184": {
-"@otu": "Tl1531729"
-}, 
-"Tn11798185": {}, 
-"Tn11798186": {
-"@otu": "Tl1531746"
-}, 
-"Tn11798187": {
-"@otu": "Tl1531711"
-}, 
-"Tn11798188": {
-"@otu": "Tl1531702"
-}, 
-"Tn11798189": {
-"@otu": "Tl1531777"
-}, 
-"Tn11798190": {}, 
-"Tn11798191": {
-"@otu": "Tl1531726"
-}, 
-"Tn11798192": {
-"@otu": "Tl1531688"
-}, 
-"Tn11798193": {
-"@otu": "Tl1531771"
-}, 
-"Tn11798194": {
-"@otu": "Tl1531786"
-}, 
-"Tn11798195": {
-"@otu": "Tl1531774"
-}, 
-"Tn11798196": {}, 
-"Tn11798197": {
-"@otu": "Tl1531706"
-}, 
-"Tn11798198": {}, 
-"Tn11798199": {
-"@otu": "Tl1531762"
-}, 
-"Tn11798200": {
-"@otu": "Tl1531753"
-}, 
-"Tn11798201": {}, 
-"Tn11798202": {
-"@otu": "Tl1531683"
-}, 
-"Tn11798203": {
-"@otu": "Tl1531717"
-}, 
-"Tn11798204": {
-"@otu": "Tl1531755"
-}, 
-"Tn11798205": {
-"@otu": "Tl1531707"
-}, 
-"Tn11798206": {
-"@otu": "Tl1531780"
-}, 
-"Tn11798207": {
-"@otu": "Tl1531756"
-}, 
-"Tn11798208": {
-"@otu": "Tl1531725"
-}, 
-"Tn11798209": {
-"@otu": "Tl1531741"
-}, 
-"Tn11798210": {}, 
-"Tn11798211": {}, 
-"Tn11798212": {
-"@root": true
-}, 
-"Tn11798213": {
-"@otu": "Tl1531784"
-}, 
-"Tn11798214": {
-"@otu": "Tl1531695"
-}, 
-"Tn11798215": {}, 
-"Tn11798216": {
-"@otu": "Tl1531742"
-}, 
-"Tn11798217": {
-"@otu": "Tl1531761"
-}, 
-"Tn11798218": {}, 
-"Tn11798219": {}, 
-"Tn11798220": {
-"@otu": "Tl1531779"
-}, 
-"Tn11798221": {
-"@otu": "Tl1531734"
-}, 
-"Tn11798222": {
-"@otu": "Tl1531772"
-}, 
-"Tn11798223": {
-"@otu": "Tl1531770"
-}, 
-"Tn11798224": {
-"@otu": "Tl1531722"
-}, 
-"Tn11798225": {}, 
-"Tn11798226": {
-"@otu": "Tl1531693"
-}, 
-"Tn11798227": {}, 
-"Tn11798228": {
-"@otu": "Tl1531744"
-}, 
-"Tn11798229": {}
-}
-}, 
 "Tr78321": {
 "@label": "TREE1", 
 "@xsi:type": "nex:FloatTree", 
-"^ot:rootNodeId": "Tn12183086", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:changesCount", 
+"^ot:curatedType": "Maximum parsimony ", 
+"^ot:inGroupClade": "Tn12183008", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
+"^ot:rootNodeId": "Tr78321_ROOT", 
+"^ot:specifiedRoot": "Tr78321_ROOT", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "^tb:ntax.tree": 112, 
 "edgeBySourceId": {
 "Tn12183006": {
@@ -3020,11 +1896,6 @@
 "@source": "Tn12183086", 
 "@target": "Tn12183011"
 }, 
-"edge501283": {
-"@length": 0.02736309942729448, 
-"@source": "Tn12183086", 
-"@target": "Tn12183106"
-}, 
 "edge501721": {
 "@length": 0.016916110464187367, 
 "@source": "Tn12183086", 
@@ -3068,10 +1939,10 @@
 }
 }, 
 "Tn12183094": {
-"edge501291": {
-"@length": 0.042054741611363994, 
+"edge501289": {
+"@length": 0.011892652284889033, 
 "@source": "Tn12183094", 
-"@target": "Tn12183008"
+"@target": "Tn12183192"
 }, 
 "edge501713": {
 "@length": 0.025645245474056555, 
@@ -3176,15 +2047,15 @@
 }
 }, 
 "Tn12183106": {
+"edge501283": {
+"@length": 0.02736309942729448, 
+"@source": "Tn12183106", 
+"@target": "Tn12183086"
+}, 
 "edge501285": {
 "@length": 0.04310926536100618, 
 "@source": "Tn12183106", 
 "@target": "Tn12183174"
-}, 
-"edge501287": {
-"@length": 0.025445011428396225, 
-"@source": "Tn12183106", 
-"@target": "Tn12183192"
 }
 }, 
 "Tn12183107": {
@@ -3668,10 +2539,10 @@
 }
 }, 
 "Tn12183192": {
-"edge501289": {
-"@length": 0.011892652284889033, 
+"edge501287": {
+"@length": 0.025445011428396225, 
 "@source": "Tn12183192", 
-"@target": "Tn12183094"
+"@target": "Tn12183106"
 }, 
 "edge501719": {
 "@length": 0.06032577843885541, 
@@ -3870,6 +2741,17 @@
 "@source": "Tn12183226", 
 "@target": "Tn12183123"
 }
+}, 
+"Tr78321_ROOT": {
+"Tr78321_ROOT_EDGE": {
+"@source": "Tr78321_ROOT", 
+"@target": "Tn12183094"
+}, 
+"edge501291": {
+"@length": 0.042054741611363994, 
+"@source": "Tr78321_ROOT", 
+"@target": "Tn12183008"
+}
 }
 }, 
 "nodeById": {
@@ -3883,15 +2765,18 @@
 }, 
 "Tn12183012": {}, 
 "Tn12183013": {
-"@otu": "Tl1531698"
+"@otu": "Tl1531698", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12183014": {}, 
 "Tn12183015": {}, 
 "Tn12183016": {
-"@otu": "Tl1531787"
+"@otu": "Tl1531787", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12183017": {
-"@otu": "Tl1531717"
+"@otu": "Tl1531717", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12183018": {
 "@otu": "Tl1531776"
@@ -3916,7 +2801,8 @@
 "@otu": "Tl1531699"
 }, 
 "Tn12183026": {
-"@otu": "Tl1531696"
+"@otu": "Tl1531696", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12183027": {}, 
 "Tn12183028": {}, 
@@ -3929,13 +2815,15 @@
 "@otu": "Tl1531759"
 }, 
 "Tn12183033": {
-"@otu": "Tl1531713"
+"@otu": "Tl1531713", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12183034": {
 "@otu": "Tl1531772"
 }, 
 "Tn12183035": {
-"@otu": "Tl1531758"
+"@otu": "Tl1531758", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn12183036": {}, 
 "Tn12183037": {}, 
@@ -3943,65 +2831,77 @@
 "@otu": "Tl1531701"
 }, 
 "Tn12183039": {
-"@otu": "Tl1531767"
+"@otu": "Tl1531767", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12183040": {
 "@otu": "Tl1531748"
 }, 
 "Tn12183041": {
-"@otu": "Tl1531680"
+"@otu": "Tl1531680", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn12183042": {}, 
 "Tn12183043": {}, 
 "Tn12183044": {
-"@otu": "Tl1531732"
+"@otu": "Tl1531732", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn12183045": {
 "@otu": "Tl1531710"
 }, 
 "Tn12183046": {}, 
 "Tn12183047": {
-"@otu": "Tl1531683"
+"@otu": "Tl1531683", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn12183048": {
-"@otu": "Tl1531697"
+"@otu": "Tl1531697", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12183049": {}, 
 "Tn12183050": {}, 
 "Tn12183051": {}, 
 "Tn12183052": {
-"@otu": "Tl1531790"
+"@otu": "Tl1531790", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12183053": {
 "@otu": "Tl1531743"
 }, 
 "Tn12183054": {
-"@otu": "Tl1531784"
+"@otu": "Tl1531784", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12183055": {}, 
 "Tn12183056": {
-"@otu": "Tl1531783"
+"@otu": "Tl1531783", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12183057": {}, 
 "Tn12183058": {}, 
 "Tn12183059": {}, 
 "Tn12183060": {
-"@otu": "Tl1531749"
+"@otu": "Tl1531749", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn12183061": {
-"@otu": "Tl1531744"
+"@otu": "Tl1531744", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn12183062": {}, 
 "Tn12183063": {}, 
 "Tn12183064": {
-"@otu": "Tl1531724"
+"@otu": "Tl1531724", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12183065": {
 "@otu": "Tl1531686"
 }, 
 "Tn12183066": {}, 
 "Tn12183067": {
-"@otu": "Tl1531687"
+"@otu": "Tl1531687", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12183068": {
 "@otu": "Tl1531718"
@@ -4014,7 +2914,8 @@
 "Tn12183074": {}, 
 "Tn12183075": {}, 
 "Tn12183076": {
-"@otu": "Tl1531775"
+"@otu": "Tl1531775", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12183077": {
 "@otu": "Tl1531681"
@@ -4026,27 +2927,29 @@
 "@otu": "Tl1531695"
 }, 
 "Tn12183080": {
-"@otu": "Tl1531706"
+"@otu": "Tl1531706", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn12183081": {}, 
 "Tn12183082": {}, 
 "Tn12183083": {
-"@otu": "Tl1531741"
+"@otu": "Tl1531741", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12183084": {}, 
 "Tn12183085": {}, 
-"Tn12183086": {
-"@root": true
-}, 
+"Tn12183086": {}, 
 "Tn12183087": {
 "@otu": "Tl1531719"
 }, 
 "Tn12183088": {}, 
 "Tn12183089": {
-"@otu": "Tl1531689"
+"@otu": "Tl1531689", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn12183090": {
-"@otu": "Tl1531757"
+"@otu": "Tl1531757", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn12183091": {}, 
 "Tn12183092": {}, 
@@ -4064,7 +2967,8 @@
 "Tn12183100": {}, 
 "Tn12183101": {}, 
 "Tn12183102": {
-"@otu": "Tl1531730"
+"@otu": "Tl1531730", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn12183103": {}, 
 "Tn12183104": {}, 
@@ -4076,10 +2980,12 @@
 "Tn12183108": {}, 
 "Tn12183109": {}, 
 "Tn12183110": {
-"@otu": "Tl1531785"
+"@otu": "Tl1531785", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12183111": {
-"@otu": "Tl1531742"
+"@otu": "Tl1531742", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12183112": {
 "@otu": "Tl1531752"
@@ -4093,18 +2999,22 @@
 }, 
 "Tn12183116": {}, 
 "Tn12183117": {
-"@otu": "Tl1531764"
+"@otu": "Tl1531764", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn12183118": {}, 
 "Tn12183119": {
-"@otu": "Tl1531771"
+"@otu": "Tl1531771", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12183120": {
-"@otu": "Tl1531733"
+"@otu": "Tl1531733", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn12183121": {}, 
 "Tn12183122": {
-"@otu": "Tl1531782"
+"@otu": "Tl1531782", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12183123": {
 "@otu": "Tl1531763"
@@ -4117,10 +3027,12 @@
 "@otu": "Tl1531705"
 }, 
 "Tn12183127": {
-"@otu": "Tl1531685"
+"@otu": "Tl1531685", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12183128": {
-"@otu": "Tl1531684"
+"@otu": "Tl1531684", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12183129": {
 "@otu": "Tl1531691"
@@ -4136,14 +3048,17 @@
 "@otu": "Tl1531789"
 }, 
 "Tn12183134": {
-"@otu": "Tl1531716"
+"@otu": "Tl1531716", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12183135": {
-"@otu": "Tl1531745"
+"@otu": "Tl1531745", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn12183136": {}, 
 "Tn12183137": {
-"@otu": "Tl1531754"
+"@otu": "Tl1531754", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn12183138": {}, 
 "Tn12183139": {
@@ -4151,20 +3066,24 @@
 }, 
 "Tn12183140": {}, 
 "Tn12183141": {
-"@otu": "Tl1531702"
+"@otu": "Tl1531702", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn12183142": {}, 
 "Tn12183143": {
-"@otu": "Tl1531722"
+"@otu": "Tl1531722", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12183144": {
-"@otu": "Tl1531781"
+"@otu": "Tl1531781", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12183145": {
 "@otu": "Tl1531779"
 }, 
 "Tn12183146": {
-"@otu": "Tl1531688"
+"@otu": "Tl1531688", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12183147": {
 "@otu": "Tl1531692"
@@ -4172,7 +3091,8 @@
 "Tn12183148": {}, 
 "Tn12183149": {}, 
 "Tn12183150": {
-"@otu": "Tl1531780"
+"@otu": "Tl1531780", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12183151": {}, 
 "Tn12183152": {}, 
@@ -4180,7 +3100,8 @@
 "Tn12183154": {}, 
 "Tn12183155": {}, 
 "Tn12183156": {
-"@otu": "Tl1531736"
+"@otu": "Tl1531736", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn12183157": {
 "@otu": "Tl1531727"
@@ -4194,13 +3115,15 @@
 "Tn12183162": {}, 
 "Tn12183163": {}, 
 "Tn12183164": {
-"@otu": "Tl1531704"
+"@otu": "Tl1531704", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn12183165": {
 "@otu": "Tl1531765"
 }, 
 "Tn12183166": {
-"@otu": "Tl1531747"
+"@otu": "Tl1531747", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn12183167": {}, 
 "Tn12183168": {}, 
@@ -4233,23 +3156,27 @@
 }, 
 "Tn12183182": {}, 
 "Tn12183183": {
-"@otu": "Tl1531703"
+"@otu": "Tl1531703", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn12183184": {}, 
 "Tn12183185": {}, 
 "Tn12183186": {
-"@otu": "Tl1531725"
+"@otu": "Tl1531725", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn12183187": {}, 
 "Tn12183188": {}, 
 "Tn12183189": {
-"@otu": "Tl1531739"
+"@otu": "Tl1531739", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12183190": {}, 
 "Tn12183191": {}, 
 "Tn12183192": {}, 
 "Tn12183193": {
-"@otu": "Tl1531786"
+"@otu": "Tl1531786", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12183194": {}, 
 "Tn12183195": {
@@ -4261,20 +3188,24 @@
 "@otu": "Tl1531774"
 }, 
 "Tn12183199": {
-"@otu": "Tl1531770"
+"@otu": "Tl1531770", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn12183200": {
-"@otu": "Tl1531750"
+"@otu": "Tl1531750", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12183201": {}, 
 "Tn12183202": {
 "@otu": "Tl1531734"
 }, 
 "Tn12183203": {
-"@otu": "Tl1531753"
+"@otu": "Tl1531753", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn12183204": {
-"@otu": "Tl1531726"
+"@otu": "Tl1531726", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12183205": {}, 
 "Tn12183206": {
@@ -4290,10 +3221,12 @@
 }, 
 "Tn12183211": {}, 
 "Tn12183212": {
-"@otu": "Tl1531788"
+"@otu": "Tl1531788", 
+"^ot:isTaxonExemplar": false
 }, 
 "Tn12183213": {
-"@otu": "Tl1531708"
+"@otu": "Tl1531708", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn12183214": {
 "@otu": "Tl1531700"
@@ -4303,11 +3236,13 @@
 "@otu": "Tl1531682"
 }, 
 "Tn12183217": {
-"@otu": "Tl1531773"
+"@otu": "Tl1531773", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn12183218": {}, 
 "Tn12183219": {
-"@otu": "Tl1531723"
+"@otu": "Tl1531723", 
+"^ot:isTaxonExemplar": true
 }, 
 "Tn12183220": {}, 
 "Tn12183221": {}, 
@@ -4319,7 +3254,11 @@
 }, 
 "Tn12183226": {}, 
 "Tn12183227": {
-"@otu": "Tl1531762"
+"@otu": "Tl1531762", 
+"^ot:isTaxonExemplar": false
+}, 
+"Tr78321_ROOT": {
+"@root": true
 }
 }
 }
