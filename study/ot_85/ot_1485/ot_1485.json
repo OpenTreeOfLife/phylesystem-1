@@ -56,22 +56,106 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2018-07-28T23:48:37.588Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "Monocots"
 }, 
-"^ot:curatorName": "Walter1186", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2018-07-28T23:48:37.588Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Walter1186"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S17312"
 }, 
+"^ot:focalClade": 862624, 
+"^ot:focalCladeOTTTaxonName": "Campynemataceae", 
 "^ot:otusElementOrder": [
 "Tls43634"
 ], 
 "^ot:studyId": "ot_1485", 
+"^ot:studyPublication": {
+"@href": "https://doi.org/10.1007/s11105-015-0914-6"
+}, 
 "^ot:studyPublicationReference": "Bodin S.S., Kim J., & Kim J. 2015. Phylogenetic Inferences and the Evolution of Plastid DNA in Campynemataceae and the Mycoheterotrophic Corsia dispar D.L Jones & B. Gray (Corsiaceae). Plant Molecular Biology Reporter, .", 
 "^ot:studyYear": 2015, 
+"^ot:tag": [], 
 "^ot:taxonLinkPrefixes": {
 "@ubio": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:", 
 "@uniprot": "http://purl.uniprot.org/taxonomy/"
@@ -472,7 +556,19 @@
 "Tr86222": {
 "@label": "75 gene ML", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn12709418", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 27, 
 "^tb:quality.tree": "Unrated", 
@@ -943,7 +1039,18 @@
 "Tr86223": {
 "@label": "75gene Bayesian", 
 "@xsi:type": "nex:FloatTree", 
-"^ot:rootNodeId": "Tn12709455", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:changesCount", 
+"^ot:curatedType": "Bayesian inference ", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
+"^ot:rootNodeId": "Tr86223_ROOT", 
+"^ot:specifiedRoot": "Tr86223_ROOT", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 28, 
 "^tb:quality.tree": "Unrated", 
@@ -1074,11 +1181,6 @@
 "@length": 0.018778778369275554, 
 "@source": "Tn12709455", 
 "@target": "Tn12709441"
-}, 
-"edge865585": {
-"@length": 0.018778778369275554, 
-"@source": "Tn12709455", 
-"@target": "Tn12709471"
 }
 }, 
 "Tn12709456": {
@@ -1190,10 +1292,10 @@
 }
 }, 
 "Tn12709471": {
-"edge865587": {
-"@length": 0.039955902524807, 
+"edge865585": {
+"@length": 0.018778778369275554, 
 "@source": "Tn12709471", 
-"@target": "Tn12709437"
+"@target": "Tn12709455"
 }, 
 "edge865589": {
 "@length": 0.01184732744635001, 
@@ -1272,6 +1374,17 @@
 "@source": "Tn12709480", 
 "@target": "Tn12709479"
 }
+}, 
+"Tr86223_ROOT": {
+"Tr86223_ROOT_EDGE": {
+"@source": "Tr86223_ROOT", 
+"@target": "Tn12709471"
+}, 
+"edge865587": {
+"@length": 0.039955902524807, 
+"@source": "Tr86223_ROOT", 
+"@target": "Tn12709437"
+}
 }
 }, 
 "nodeById": {
@@ -1342,9 +1455,7 @@
 "Tn12709454": {
 "@otu": "Tl1790980"
 }, 
-"Tn12709455": {
-"@root": true
-}, 
+"Tn12709455": {}, 
 "Tn12709456": {}, 
 "Tn12709457": {
 "@otu": "Tl1790972"
@@ -1387,13 +1498,28 @@
 "@otu": "Tl1790991"
 }, 
 "Tn12709479": {}, 
-"Tn12709480": {}
+"Tn12709480": {}, 
+"Tr86223_ROOT": {
+"@root": true
+}
 }
 }, 
 "Tr86224": {
 "@label": "5gene Bayesian", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn12709511", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 41, 
 "^tb:quality.tree": "Unrated", 
@@ -2035,7 +2161,19 @@
 "Tr86225": {
 "@label": "5gene ML", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn12709569", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 41, 
 "^tb:quality.tree": "Unrated", 
