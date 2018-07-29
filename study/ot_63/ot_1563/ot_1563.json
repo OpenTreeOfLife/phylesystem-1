@@ -45,16 +45,95 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2018-07-29T03:20:11.058Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "Arthropods"
 }, 
-"^ot:curatorName": "sbyrum", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2018-07-29T03:20:11.058Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"sbyrum"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S860"
 }, 
+"^ot:focalCladeOTTTaxonName": "", 
 "^ot:otusElementOrder": [
 "Tls10849"
 ], 
@@ -64,6 +143,7 @@
 }, 
 "^ot:studyPublicationReference": "Cotton T. 2001. The phylogeny and systematics of blind Cambrian ptychoparioid trilobites. Palaeontology, 44(1): 167-207.", 
 "^ot:studyYear": 2001, 
+"^ot:tag": [], 
 "^ot:taxonLinkPrefixes": {
 "@ubio": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:", 
 "@uniprot": "http://purl.uniprot.org/taxonomy/"
@@ -93,6 +173,8 @@
 "otuById": {
 "Tl7832": {
 "^ot:originalLabel": "Bailiaspis venusta", 
+"^ot:ottId": 5128978, 
+"^ot:ottTaxonName": "Bailiaspis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3099, 
 "@tb:identifier.taxonVariant": 7455, 
@@ -100,14 +182,19 @@
 }
 }, 
 "Tl7833": {
-"^ot:originalLabel": "Hartshillia inflata"
+"^ot:originalLabel": "Hartshillia inflata", 
+"^ot:ottId": 5128965, 
+"^ot:ottTaxonName": "Hartshillia inflata"
 }, 
 "Tl7834": {
-"^ot:originalLabel": "Dasometopus granulatus"
+"^ot:originalLabel": "Dasometopus granulatus", 
+"^ot:ottId": 5128953, 
+"^ot:ottTaxonName": "Dasometopus"
 }, 
 "Tl7835": {
-"^ot:altLabel": "Ctenocephalus", 
 "^ot:originalLabel": "Ctenocephalus Hartella antiquus", 
+"^ot:ottId": 4722120, 
+"^ot:ottTaxonName": "Ctenocephalus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 32625, 
 "@tb:identifier.taxonVariant": 75397, 
@@ -115,13 +202,16 @@
 }
 }, 
 "Tl7836": {
-"^ot:originalLabel": "Atops trilineatus"
+"^ot:originalLabel": "Atops trilineatus", 
+"^ot:ottId": 5128983, 
+"^ot:ottTaxonName": "Atops"
 }, 
 "Tl7837": {
+"^ot:altLabel": "Holocephalites", 
 "^ot:originalLabel": "Holocephalites incertus"
 }, 
 "Tl7838": {
-"^ot:altLabel": "Sdzuyella HAJRULLINA in REPINA et al. 1975", 
+"^ot:altLabel": "Sdzuyella ", 
 "^ot:originalLabel": "Sdzuyella stremina", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 32623, 
@@ -131,6 +221,8 @@
 }, 
 "Tl7839": {
 "^ot:originalLabel": "Elrathia kingii", 
+"^ot:ottId": 5131015, 
+"^ot:ottTaxonName": "Elrathia", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 9941, 
 "@tb:identifier.taxonVariant": 23786, 
@@ -138,11 +230,13 @@
 }
 }, 
 "Tl7840": {
+"^ot:altLabel": "Ptychoparia ", 
 "^ot:originalLabel": "Ptychoparia striata"
 }, 
 "Tl7841": {
-"^ot:altLabel": "Hartshillia spinata", 
 "^ot:originalLabel": "Hartshillina spinata", 
+"^ot:ottId": 5128964, 
+"^ot:ottTaxonName": "Hartshillia", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 424704, 
 "@tb:identifier.taxonVariant": 557759, 
@@ -150,7 +244,7 @@
 }
 }, 
 "Tl7842": {
-"^ot:altLabel": "Aconthea", 
+"^ot:altLabel": "Acontheus", 
 "^ot:originalLabel": "Acontheus sp. nov.", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 32620, 
@@ -159,10 +253,14 @@
 }
 }, 
 "Tl7843": {
-"^ot:originalLabel": "Bailiella baileyi"
+"^ot:originalLabel": "Bailiella baileyi", 
+"^ot:ottId": 5128975, 
+"^ot:ottTaxonName": "Bailiella baileyi"
 }, 
 "Tl7844": {
 "^ot:originalLabel": "Holocephalina leve", 
+"^ot:ottId": 5128955, 
+"^ot:ottTaxonName": "Holocephalina", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 32624, 
 "@tb:identifier.taxonVariant": 75395, 
@@ -170,8 +268,9 @@
 }
 }, 
 "Tl7845": {
-"^ot:altLabel": "Conocoryphe sulzeri sulzeri", 
 "^ot:originalLabel": "Conocoryphe sulzeri", 
+"^ot:ottId": 5130330, 
+"^ot:ottTaxonName": "Conocoryphe sulzeri", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 424359, 
 "@tb:identifier.taxonVariant": 557244, 
@@ -179,8 +278,9 @@
 }
 }, 
 "Tl7846": {
-"^ot:altLabel": "Ctenocephalus", 
 "^ot:originalLabel": "Ctenocephalus Ctenocephalus cor", 
+"^ot:ottId": 4722120, 
+"^ot:ottTaxonName": "Ctenocephalus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 32625, 
 "@tb:identifier.taxonVariant": 75397, 
@@ -188,8 +288,9 @@
 }
 }, 
 "Tl7847": {
-"^ot:altLabel": "Melanoloma viatrix", 
 "^ot:originalLabel": "Meneviella viatrix", 
+"^ot:ottId": 4408630, 
+"^ot:ottTaxonName": "Melanoloma viatrix", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 425027, 
 "@tb:identifier.taxonVariant": 558352, 
@@ -197,8 +298,9 @@
 }
 }, 
 "Tl7848": {
-"^ot:altLabel": "Bailiaspis RESSER 1936", 
 "^ot:originalLabel": "Bailiaspis bobrovi", 
+"^ot:ottId": 5128978, 
+"^ot:ottTaxonName": "Bailiaspis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3098, 
 "@tb:identifier.taxonVariant": 7452, 
@@ -206,8 +308,9 @@
 }
 }, 
 "Tl7849": {
-"^ot:altLabel": "Ctenocephalus", 
 "^ot:originalLabel": "Ctenocephalus Hartella exsulans", 
+"^ot:ottId": 4722120, 
+"^ot:ottTaxonName": "Ctenocephalus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 32625, 
 "@tb:identifier.taxonVariant": 75397, 
@@ -215,8 +318,9 @@
 }
 }, 
 "Tl7850": {
-"^ot:altLabel": "Dasometopus RESSER 1936", 
 "^ot:originalLabel": "Dasometopus maensis", 
+"^ot:ottId": 5128953, 
+"^ot:ottTaxonName": "Dasometopus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 8415, 
 "@tb:identifier.taxonVariant": 20245, 
@@ -224,6 +328,7 @@
 }
 }, 
 "Tl7851": {
+"^ot:altLabel": "Cornucoryphe ", 
 "^ot:originalLabel": "Cornucoryphe schirmi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 32626, 
@@ -232,6 +337,7 @@
 }
 }, 
 "Tl7852": {
+"^ot:altLabel": "Clavigellus ", 
 "^ot:originalLabel": "Clavigellus annulus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 32616, 
@@ -240,8 +346,9 @@
 }
 }, 
 "Tl7853": {
-"^ot:altLabel": "Bailiella MATTHEW 1885", 
 "^ot:originalLabel": "Bailiella levyi", 
+"^ot:ottId": 5128972, 
+"^ot:ottTaxonName": "Bailiella", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 48018, 
 "@tb:identifier.taxonVariant": 112341, 
@@ -249,13 +356,15 @@
 }
 }, 
 "Tl7854": {
+"^ot:altLabel": "Atopina ", 
 "^ot:originalLabel": "Atopina antiqua"
 }, 
 "Tl7855": {
+"^ot:altLabel": "Parabailiella", 
 "^ot:originalLabel": "Parabailiella languedocensis"
 }, 
 "Tl7856": {
-"^ot:altLabel": "Mandevilla venulosa", 
+"^ot:altLabel": "Mandevilla ", 
 "^ot:originalLabel": "Meneviella venulosa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 48068, 
@@ -274,13 +383,19 @@
 }
 }, 
 "Tl7858": {
-"^ot:originalLabel": "Bailiaspis dalmani"
+"^ot:originalLabel": "Bailiaspis dalmani", 
+"^ot:ottId": 5128978, 
+"^ot:ottTaxonName": "Bailiaspis"
 }, 
 "Tl7859": {
-"^ot:originalLabel": "Holocephalina primordialis"
+"^ot:originalLabel": "Holocephalina primordialis", 
+"^ot:ottId": 5128955, 
+"^ot:ottTaxonName": "Holocephalina"
 }, 
 "Tl7860": {
 "^ot:originalLabel": "Protolenidae", 
+"^ot:ottId": 5131110, 
+"^ot:ottTaxonName": "Protolenidae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 23883, 
 "@tb:identifier.taxonVariant": 55777, 
@@ -289,6 +404,8 @@
 }, 
 "Tl7861": {
 "^ot:originalLabel": "Conocoryphe caecigena", 
+"^ot:ottId": 5130329, 
+"^ot:ottTaxonName": "Conocoryphe", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6869, 
 "@tb:identifier.taxonVariant": 16631, 
@@ -297,6 +414,8 @@
 }, 
 "Tl7862": {
 "^ot:originalLabel": "Bailiella lantenoisi", 
+"^ot:ottId": 6176128, 
+"^ot:ottTaxonName": "Bailiella lantenoisi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 32627, 
 "@tb:identifier.taxonVariant": 75400, 
@@ -304,8 +423,9 @@
 }
 }, 
 "Tl7863": {
-"^ot:altLabel": "Ctenocephalus", 
 "^ot:originalLabel": "Ctenocephalus Ctenocephalus ber", 
+"^ot:ottId": 4722120, 
+"^ot:ottTaxonName": "Ctenocephalus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 32625, 
 "@tb:identifier.taxonVariant": 75397, 
@@ -313,10 +433,13 @@
 }
 }, 
 "Tl7864": {
+"^ot:altLabel": "Tchaiaspis ", 
 "^ot:originalLabel": "Tchaiaspis sdzuyi"
 }, 
 "Tl7865": {
 "^ot:originalLabel": "Atops rupertensis", 
+"^ot:ottId": 5128984, 
+"^ot:ottTaxonName": "Atops rupertensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 32628, 
 "@tb:identifier.taxonVariant": 75401, 
@@ -324,10 +447,14 @@
 }
 }, 
 "Tl7866": {
-"^ot:originalLabel": "Elyx laticeps"
+"^ot:originalLabel": "Elyx laticeps", 
+"^ot:ottId": 5128981, 
+"^ot:ottTaxonName": "Elyx laticeps"
 }, 
 "Tl7867": {
 "^ot:originalLabel": "Olenoides serratus", 
+"^ot:ottId": 4704615, 
+"^ot:ottTaxonName": "Olenoides serratus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 32617, 
 "@tb:identifier.taxonVariant": 75378, 
@@ -336,6 +463,8 @@
 }, 
 "Tl7868": {
 "^ot:originalLabel": "Eoredlichia intermedia", 
+"^ot:ottId": 6176387, 
+"^ot:ottTaxonName": "Eoredlichia intermedia", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 32621, 
 "@tb:identifier.taxonVariant": 75389, 
@@ -343,19 +472,29 @@
 }
 }, 
 "Tl7869": {
-"^ot:originalLabel": "Bailiella emarginata"
+"^ot:originalLabel": "Bailiella emarginata", 
+"^ot:ottId": 5128972, 
+"^ot:ottTaxonName": "Bailiella"
 }, 
 "Tl7870": {
-"^ot:originalLabel": "Hartshillia clivosa"
+"^ot:originalLabel": "Hartshillia clivosa", 
+"^ot:ottId": 5128967, 
+"^ot:ottTaxonName": "Hartshillia clivosa"
 }, 
 "Tl7871": {
-"^ot:originalLabel": "Bailiaspis glabrata"
+"^ot:originalLabel": "Bailiaspis glabrata", 
+"^ot:ottId": 5128979, 
+"^ot:ottTaxonName": "Bailiaspis glabrata"
 }, 
 "Tl7872": {
-"^ot:originalLabel": "Bailiella aequalis"
+"^ot:originalLabel": "Bailiella aequalis", 
+"^ot:ottId": 5128972, 
+"^ot:ottTaxonName": "Bailiella"
 }, 
 "Tl7873": {
 "^ot:originalLabel": "Olenellus thompsoni", 
+"^ot:ottId": 4705294, 
+"^ot:ottTaxonName": "Olenellus thompsoni", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 32619, 
 "@tb:identifier.taxonVariant": 75382, 
@@ -363,8 +502,9 @@
 }
 }, 
 "Tl7874": {
-"^ot:altLabel": "Ctenocephalus", 
 "^ot:originalLabel": "Ctenocephalus Hartella matthewi", 
+"^ot:ottId": 4722120, 
+"^ot:ottTaxonName": "Ctenocephalus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 32625, 
 "@tb:identifier.taxonVariant": 75397, 
@@ -372,8 +512,9 @@
 }
 }, 
 "Tl7875": {
-"^ot:altLabel": "Agraulos HAWLE & CORDA 1847", 
 "^ot:originalLabel": "Agraulos ceticephalus", 
+"^ot:ottId": 5130356, 
+"^ot:ottTaxonName": "Agraulos", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 32618, 
 "@tb:identifier.taxonVariant": 75379, 
@@ -381,8 +522,9 @@
 }
 }, 
 "Tl7876": {
-"^ot:altLabel": "Couloumania THORAL 1946", 
 "^ot:originalLabel": "Couloumania heberti", 
+"^ot:ottId": 5128969, 
+"^ot:ottTaxonName": "Couloumania", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 48032, 
 "@tb:identifier.taxonVariant": 112384, 
@@ -390,11 +532,14 @@
 }
 }, 
 "Tl7877": {
-"^ot:originalLabel": "Elyx matthewi"
+"^ot:originalLabel": "Elyx matthewi", 
+"^ot:ottId": 5128980, 
+"^ot:ottTaxonName": "Elyx"
 }, 
 "Tl7878": {
-"^ot:altLabel": "Ctenocephalus", 
 "^ot:originalLabel": "Ctenocephalus Hartella terranov", 
+"^ot:ottId": 4722120, 
+"^ot:ottTaxonName": "Ctenocephalus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 32625, 
 "@tb:identifier.taxonVariant": 75397, 
@@ -402,10 +547,14 @@
 }
 }, 
 "Tl7879": {
-"^ot:originalLabel": "Dasometopus breviceps"
+"^ot:originalLabel": "Dasometopus breviceps", 
+"^ot:ottId": 5128954, 
+"^ot:ottTaxonName": "Dasometopus breviceps"
 }, 
 "Tl7880": {
-"^ot:originalLabel": "Pseudatops reticulatus"
+"^ot:originalLabel": "Pseudatops reticulatus", 
+"^ot:ottId": 5128976, 
+"^ot:ottTaxonName": "Pseudatops"
 }
 }
 }
@@ -415,565 +564,26 @@
 "@label": "Tb6203", 
 "@otus": "Tls10849", 
 "^ot:treeElementOrder": [
-"Tr4005", 
 "Tr4006"
 ], 
 "^skos:historyNote": "Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlTreeBlockWriter@73774fb9 $Rev$", 
 "treeById": {
-"Tr4005": {
-"@label": "Text Fig. 2", 
-"@xsi:type": "nex:FloatTree", 
-"^ot:rootNodeId": "Tn279160", 
-"^tb:kind.tree": "Species Tree", 
-"^tb:ntax.tree": 40, 
-"^tb:quality.tree": "Unrated", 
-"^tb:type.tree": "Consensus", 
-"edgeBySourceId": {
-"Tn279160": {
-"edge1141214": {
-"@source": "Tn279160", 
-"@target": "Tn279173"
-}, 
-"edge1141228": {
-"@source": "Tn279160", 
-"@target": "Tn279168"
-}
-}, 
-"Tn279162": {
-"edge1141322": {
-"@source": "Tn279162", 
-"@target": "Tn279222"
-}, 
-"edge1141348": {
-"@source": "Tn279162", 
-"@target": "Tn279221"
-}
-}, 
-"Tn279164": {
-"edge1141344": {
-"@source": "Tn279164", 
-"@target": "Tn279209"
-}, 
-"edge1141346": {
-"@source": "Tn279164", 
-"@target": "Tn279230"
-}
-}, 
-"Tn279167": {
-"edge1141276": {
-"@source": "Tn279167", 
-"@target": "Tn279176"
-}, 
-"edge1141290": {
-"@source": "Tn279167", 
-"@target": "Tn279196"
-}
-}, 
-"Tn279168": {
-"edge1141230": {
-"@source": "Tn279168", 
-"@target": "Tn279177"
-}, 
-"edge1141320": {
-"@source": "Tn279168", 
-"@target": "Tn279162"
-}
-}, 
-"Tn279169": {
-"edge1141234": {
-"@source": "Tn279169", 
-"@target": "Tn279217"
-}, 
-"edge1141308": {
-"@source": "Tn279169", 
-"@target": "Tn279201"
-}
-}, 
-"Tn279171": {
-"edge1141218": {
-"@source": "Tn279171", 
-"@target": "Tn279187"
-}, 
-"edge1141220": {
-"@source": "Tn279171", 
-"@target": "Tn279207"
-}
-}, 
-"Tn279173": {
-"edge1141216": {
-"@source": "Tn279173", 
-"@target": "Tn279171"
-}, 
-"edge1141226": {
-"@source": "Tn279173", 
-"@target": "Tn279215"
-}
-}, 
-"Tn279174": {
-"edge1141332": {
-"@source": "Tn279174", 
-"@target": "Tn279195"
-}, 
-"edge1141334": {
-"@source": "Tn279174", 
-"@target": "Tn279210"
-}
-}, 
-"Tn279176": {
-"edge1141278": {
-"@source": "Tn279176", 
-"@target": "Tn279190"
-}, 
-"edge1141288": {
-"@source": "Tn279176", 
-"@target": "Tn279166"
-}
-}, 
-"Tn279177": {
-"edge1141232": {
-"@source": "Tn279177", 
-"@target": "Tn279169"
-}, 
-"edge1141318": {
-"@source": "Tn279177", 
-"@target": "Tn279231"
-}
-}, 
-"Tn279179": {
-"edge1141282": {
-"@source": "Tn279179", 
-"@target": "Tn279211"
-}, 
-"edge1141284": {
-"@source": "Tn279179", 
-"@target": "Tn279204"
-}
-}, 
-"Tn279183": {
-"edge1141304": {
-"@source": "Tn279183", 
-"@target": "Tn279157"
-}, 
-"edge1141306": {
-"@source": "Tn279183", 
-"@target": "Tn279199"
-}
-}, 
-"Tn279185": {
-"edge1141360": {
-"@source": "Tn279185", 
-"@target": "Tn279229"
-}, 
-"edge1141362": {
-"@source": "Tn279185", 
-"@target": "Tn279163"
-}
-}, 
-"Tn279186": {
-"edge1141272": {
-"@source": "Tn279186", 
-"@target": "Tn279213"
-}, 
-"edge1141300": {
-"@source": "Tn279186", 
-"@target": "Tn279172"
-}, 
-"edge1141302": {
-"@source": "Tn279186", 
-"@target": "Tn279183"
-}
-}, 
-"Tn279190": {
-"edge1141280": {
-"@source": "Tn279190", 
-"@target": "Tn279179"
-}, 
-"edge1141286": {
-"@source": "Tn279190", 
-"@target": "Tn279159"
-}
-}, 
-"Tn279192": {
-"edge1141296": {
-"@source": "Tn279192", 
-"@target": "Tn279156"
-}, 
-"edge1141298": {
-"@source": "Tn279192", 
-"@target": "Tn279214"
-}
-}, 
-"Tn279193": {
-"edge1141246": {
-"@source": "Tn279193", 
-"@target": "Tn279200"
-}, 
-"edge1141248": {
-"@source": "Tn279193", 
-"@target": "Tn279198"
-}
-}, 
-"Tn279197": {
-"edge1141262": {
-"@source": "Tn279197", 
-"@target": "Tn279178"
-}, 
-"edge1141264": {
-"@source": "Tn279197", 
-"@target": "Tn279203"
-}
-}, 
-"Tn279201": {
-"edge1141310": {
-"@source": "Tn279201", 
-"@target": "Tn279223"
-}, 
-"edge1141316": {
-"@source": "Tn279201", 
-"@target": "Tn279184"
-}
-}, 
-"Tn279203": {
-"edge1141266": {
-"@source": "Tn279203", 
-"@target": "Tn279165"
-}, 
-"edge1141268": {
-"@source": "Tn279203", 
-"@target": "Tn279158"
-}
-}, 
-"Tn279206": {
-"edge1141242": {
-"@source": "Tn279206", 
-"@target": "Tn279170"
-}, 
-"edge1141244": {
-"@source": "Tn279206", 
-"@target": "Tn279193"
-}
-}, 
-"Tn279207": {
-"edge1141222": {
-"@source": "Tn279207", 
-"@target": "Tn279202"
-}, 
-"edge1141224": {
-"@source": "Tn279207", 
-"@target": "Tn279228"
-}
-}, 
-"Tn279208": {
-"edge1141330": {
-"@source": "Tn279208", 
-"@target": "Tn279174"
-}, 
-"edge1141336": {
-"@source": "Tn279208", 
-"@target": "Tn279155"
-}
-}, 
-"Tn279212": {
-"edge1141238": {
-"@source": "Tn279212", 
-"@target": "Tn279216"
-}, 
-"edge1141256": {
-"@source": "Tn279212", 
-"@target": "Tn279224"
-}
-}, 
-"Tn279213": {
-"edge1141274": {
-"@source": "Tn279213", 
-"@target": "Tn279167"
-}, 
-"edge1141292": {
-"@source": "Tn279213", 
-"@target": "Tn279205"
-}, 
-"edge1141294": {
-"@source": "Tn279213", 
-"@target": "Tn279192"
-}
-}, 
-"Tn279216": {
-"edge1141240": {
-"@source": "Tn279216", 
-"@target": "Tn279206"
-}, 
-"edge1141250": {
-"@source": "Tn279216", 
-"@target": "Tn279218"
-}
-}, 
-"Tn279217": {
-"edge1141236": {
-"@source": "Tn279217", 
-"@target": "Tn279212"
-}, 
-"edge1141270": {
-"@source": "Tn279217", 
-"@target": "Tn279186"
-}
-}, 
-"Tn279218": {
-"edge1141252": {
-"@source": "Tn279218", 
-"@target": "Tn279191"
-}, 
-"edge1141254": {
-"@source": "Tn279218", 
-"@target": "Tn279188"
-}
-}, 
-"Tn279219": {
-"edge1141326": {
-"@source": "Tn279219", 
-"@target": "Tn279225"
-}, 
-"edge1141340": {
-"@source": "Tn279219", 
-"@target": "Tn279161"
-}
-}, 
-"Tn279220": {
-"edge1141358": {
-"@source": "Tn279220", 
-"@target": "Tn279185"
-}, 
-"edge1141364": {
-"@source": "Tn279220", 
-"@target": "Tn279181"
-}
-}, 
-"Tn279221": {
-"edge1141350": {
-"@source": "Tn279221", 
-"@target": "Tn279226"
-}, 
-"edge1141356": {
-"@source": "Tn279221", 
-"@target": "Tn279220"
-}
-}, 
-"Tn279222": {
-"edge1141324": {
-"@source": "Tn279222", 
-"@target": "Tn279219"
-}, 
-"edge1141342": {
-"@source": "Tn279222", 
-"@target": "Tn279164"
-}
-}, 
-"Tn279223": {
-"edge1141312": {
-"@source": "Tn279223", 
-"@target": "Tn279194"
-}, 
-"edge1141314": {
-"@source": "Tn279223", 
-"@target": "Tn279189"
-}
-}, 
-"Tn279224": {
-"edge1141258": {
-"@source": "Tn279224", 
-"@target": "Tn279227"
-}, 
-"edge1141260": {
-"@source": "Tn279224", 
-"@target": "Tn279197"
-}
-}, 
-"Tn279225": {
-"edge1141328": {
-"@source": "Tn279225", 
-"@target": "Tn279208"
-}, 
-"edge1141338": {
-"@source": "Tn279225", 
-"@target": "Tn279180"
-}
-}, 
-"Tn279226": {
-"edge1141352": {
-"@source": "Tn279226", 
-"@target": "Tn279175"
-}, 
-"edge1141354": {
-"@source": "Tn279226", 
-"@target": "Tn279182"
-}
-}
-}, 
-"nodeById": {
-"Tn279155": {
-"@otu": "Tl7833"
-}, 
-"Tn279156": {
-"@otu": "Tl7866"
-}, 
-"Tn279157": {
-"@otu": "Tl7876"
-}, 
-"Tn279158": {
-"@otu": "Tl7871"
-}, 
-"Tn279159": {
-"@otu": "Tl7835"
-}, 
-"Tn279160": {
-"@root": true
-}, 
-"Tn279161": {
-"@otu": "Tl7838"
-}, 
-"Tn279162": {}, 
-"Tn279163": {
-"@otu": "Tl7850"
-}, 
-"Tn279164": {}, 
-"Tn279165": {
-"@otu": "Tl7853"
-}, 
-"Tn279166": {
-"@otu": "Tl7878"
-}, 
-"Tn279167": {}, 
-"Tn279168": {}, 
-"Tn279169": {}, 
-"Tn279170": {
-"@otu": "Tl7848"
-}, 
-"Tn279171": {}, 
-"Tn279172": {
-"@otu": "Tl7855"
-}, 
-"Tn279173": {}, 
-"Tn279174": {}, 
-"Tn279175": {
-"@otu": "Tl7856"
-}, 
-"Tn279176": {}, 
-"Tn279177": {}, 
-"Tn279178": {
-"@otu": "Tl7869"
-}, 
-"Tn279179": {}, 
-"Tn279180": {
-"@otu": "Tl7837"
-}, 
-"Tn279181": {
-"@otu": "Tl7834"
-}, 
-"Tn279182": {
-"@otu": "Tl7847"
-}, 
-"Tn279183": {}, 
-"Tn279184": {
-"@otu": "Tl7861"
-}, 
-"Tn279185": {}, 
-"Tn279186": {}, 
-"Tn279187": {
-"@otu": "Tl7854"
-}, 
-"Tn279188": {
-"@otu": "Tl7858"
-}, 
-"Tn279189": {
-"@otu": "Tl7851"
-}, 
-"Tn279190": {}, 
-"Tn279191": {
-"@otu": "Tl7832"
-}, 
-"Tn279192": {}, 
-"Tn279193": {}, 
-"Tn279194": {
-"@otu": "Tl7862"
-}, 
-"Tn279195": {
-"@otu": "Tl7870"
-}, 
-"Tn279196": {
-"@otu": "Tl7874"
-}, 
-"Tn279197": {}, 
-"Tn279198": {
-"@otu": "Tl7857"
-}, 
-"Tn279199": {
-"@otu": "Tl7845"
-}, 
-"Tn279200": {
-"@otu": "Tl7864"
-}, 
-"Tn279201": {}, 
-"Tn279202": {
-"@otu": "Tl7865"
-}, 
-"Tn279203": {}, 
-"Tn279204": {
-"@otu": "Tl7846"
-}, 
-"Tn279205": {
-"@otu": "Tl7849"
-}, 
-"Tn279206": {}, 
-"Tn279207": {}, 
-"Tn279208": {}, 
-"Tn279209": {
-"@otu": "Tl7844"
-}, 
-"Tn279210": {
-"@otu": "Tl7841"
-}, 
-"Tn279211": {
-"@otu": "Tl7863"
-}, 
-"Tn279212": {}, 
-"Tn279213": {}, 
-"Tn279214": {
-"@otu": "Tl7877"
-}, 
-"Tn279215": {
-"@otu": "Tl7880"
-}, 
-"Tn279216": {}, 
-"Tn279217": {}, 
-"Tn279218": {}, 
-"Tn279219": {}, 
-"Tn279220": {}, 
-"Tn279221": {}, 
-"Tn279222": {}, 
-"Tn279223": {}, 
-"Tn279224": {}, 
-"Tn279225": {}, 
-"Tn279226": {}, 
-"Tn279227": {
-"@otu": "Tl7843"
-}, 
-"Tn279228": {
-"@otu": "Tl7836"
-}, 
-"Tn279229": {
-"@otu": "Tl7879"
-}, 
-"Tn279230": {
-"@otu": "Tl7859"
-}, 
-"Tn279231": {
-"@otu": "Tl7872"
-}
-}
-}, 
 "Tr4006": {
 "@label": "Text Fig. 3", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:undefined", 
+"^ot:curatedType": "Maximum parsimony ", 
+"^ot:inGroupClade": "Tn279239", 
+"^ot:nodeLabelDescription": "", 
+"^ot:nodeLabelMode": "ot:bootstrapValues", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn279272", 
+"^ot:specifiedRoot": "Tn279272", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 49, 
 "^tb:quality.tree": "Unrated", 
