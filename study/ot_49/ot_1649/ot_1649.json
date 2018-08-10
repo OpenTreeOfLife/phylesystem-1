@@ -55,22 +55,116 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2018-08-10T14:29:32.235Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:curatorName": "Pietro de Mello", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}, 
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": "\\b\\s+(\\S*)$"
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2018-08-10T14:29:32.235Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Pietro de Mello"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S17711"
 }, 
+"^ot:focalClade": 95157, 
+"^ot:focalCladeOTTTaxonName": "Hygromiidae", 
 "^ot:otusElementOrder": [
 "Tls44910"
 ], 
 "^ot:studyId": "ot_1649", 
+"^ot:studyPublication": {
+"@href": ""
+}, 
 "^ot:studyPublicationReference": "Neiber M.T., & Hausdorf B. 2015. Phylogeography of the land snail genus Circassina Hesse, 1921 (Gastropoda: Hygromiidae) implies multiple Pleistocene refugia in the western Caucasus region. Molecular Phylogentics and Evolution, 93: 129-142.", 
 "^ot:studyYear": 2015, 
+"^ot:tag": [], 
 "^ot:taxonLinkPrefixes": {
 "@ubio": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:"
 }, 
@@ -96,8 +190,9 @@
 "^skos:historyNote": "Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlOTUWriter@5a92e50c $Rev$", 
 "otuById": {
 "Tl1887342": {
-"^ot:altLabel": "Circassina frutis circassica", 
 "^ot:originalLabel": "Circassina frutis circassica 1535", 
+"^ot:ottId": 5782995, 
+"^ot:ottTaxonName": "Circassina frutis circassica", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 630210, 
 "@tb:identifier.taxonVariant": 844850, 
@@ -105,14 +200,17 @@
 }
 }, 
 "Tl1887343": {
-"^ot:originalLabel": "Circassina frutis frutis 1730"
+"^ot:originalLabel": "Circassina frutis frutis 1730", 
+"^ot:ottId": 5782994, 
+"^ot:ottTaxonName": "Circassina frutis frutis"
 }, 
 "Tl1887344": {
 "^ot:originalLabel": "Circassina frutis frutis 1735"
 }, 
 "Tl1887345": {
-"^ot:altLabel": "Circassina frutis veselyi", 
 "^ot:originalLabel": "Circassina frutis veselyi 1522", 
+"^ot:ottId": 5782996, 
+"^ot:ottTaxonName": "Circassina frutis veselyi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 630211, 
 "@tb:identifier.taxonVariant": 844851, 
@@ -120,8 +218,9 @@
 }
 }, 
 "Tl1887346": {
-"^ot:altLabel": "Circassina frutis veselyi", 
 "^ot:originalLabel": "Circassina frutis veselyi 1661", 
+"^ot:ottId": 5782996, 
+"^ot:ottTaxonName": "Circassina frutis veselyi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 630211, 
 "@tb:identifier.taxonVariant": 844851, 
@@ -135,8 +234,9 @@
 "^ot:originalLabel": "Circassina frutis frutis 1523"
 }, 
 "Tl1887349": {
-"^ot:altLabel": "Circassina lasistana", 
 "^ot:originalLabel": "Circassina lasistana 2195", 
+"^ot:ottId": 5757741, 
+"^ot:ottTaxonName": "Circassina lasistana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 630212, 
 "@tb:identifier.taxonVariant": 844852, 
@@ -144,8 +244,9 @@
 }
 }, 
 "Tl1887350": {
-"^ot:altLabel": "Circassina lasistana", 
 "^ot:originalLabel": "Circassina lasistana 1512", 
+"^ot:ottId": 5757741, 
+"^ot:ottTaxonName": "Circassina lasistana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 630212, 
 "@tb:identifier.taxonVariant": 844852, 
@@ -153,8 +254,9 @@
 }
 }, 
 "Tl1887351": {
-"^ot:altLabel": "Circassina frutis veselyi", 
 "^ot:originalLabel": "Circassina frutis veselyi 1736", 
+"^ot:ottId": 5782996, 
+"^ot:ottTaxonName": "Circassina frutis veselyi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 630211, 
 "@tb:identifier.taxonVariant": 844851, 
@@ -162,8 +264,9 @@
 }
 }, 
 "Tl1887352": {
-"^ot:altLabel": "Circassina lasistana", 
 "^ot:originalLabel": "Circassina lasistana 2196", 
+"^ot:ottId": 5757741, 
+"^ot:ottTaxonName": "Circassina lasistana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 630212, 
 "@tb:identifier.taxonVariant": 844852, 
@@ -195,8 +298,9 @@
 "^ot:originalLabel": "Circassina frutis frutis 1571"
 }, 
 "Tl1887357": {
-"^ot:altLabel": "Circassina frutis veselyi", 
 "^ot:originalLabel": "Circassina frutis veselyi 1742", 
+"^ot:ottId": 5782996, 
+"^ot:ottTaxonName": "Circassina frutis veselyi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 630211, 
 "@tb:identifier.taxonVariant": 844851, 
@@ -204,8 +308,9 @@
 }
 }, 
 "Tl1887358": {
-"^ot:altLabel": "Circassina frutis veselyi", 
 "^ot:originalLabel": "Circassina frutis veselyi 1592", 
+"^ot:ottId": 5782996, 
+"^ot:ottTaxonName": "Circassina frutis veselyi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 630211, 
 "@tb:identifier.taxonVariant": 844851, 
@@ -243,8 +348,9 @@
 }
 }, 
 "Tl1887365": {
-"^ot:altLabel": "Circassina frutis veselyi", 
 "^ot:originalLabel": "Circassina frutis veselyi 1741", 
+"^ot:ottId": 5782996, 
+"^ot:ottTaxonName": "Circassina frutis veselyi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 630211, 
 "@tb:identifier.taxonVariant": 844851, 
@@ -252,11 +358,14 @@
 }
 }, 
 "Tl1887366": {
-"^ot:originalLabel": "Kokotschashvilia holotricha 1616"
+"^ot:originalLabel": "Kokotschashvilia holotricha 1616", 
+"^ot:ottId": 5757723, 
+"^ot:ottTaxonName": "Kokotschashvilia holotricha"
 }, 
 "Tl1887367": {
-"^ot:altLabel": "Circassina frutis veselyi", 
 "^ot:originalLabel": "Circassina frutis veselyi 1672", 
+"^ot:ottId": 5782996, 
+"^ot:ottTaxonName": "Circassina frutis veselyi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 630211, 
 "@tb:identifier.taxonVariant": 844851, 
@@ -267,8 +376,9 @@
 "^ot:originalLabel": "Circassina frutis frutis 1531"
 }, 
 "Tl1887369": {
-"^ot:altLabel": "Circassina frutis veselyi", 
 "^ot:originalLabel": "Circassina frutis veselyi 1593", 
+"^ot:ottId": 5782996, 
+"^ot:ottTaxonName": "Circassina frutis veselyi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 630211, 
 "@tb:identifier.taxonVariant": 844851, 
@@ -276,8 +386,9 @@
 }
 }, 
 "Tl1887370": {
-"^ot:altLabel": "Circassina frutis veselyi", 
 "^ot:originalLabel": "Circassina frutis veselyi 1519", 
+"^ot:ottId": 5782996, 
+"^ot:ottTaxonName": "Circassina frutis veselyi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 630211, 
 "@tb:identifier.taxonVariant": 844851, 
@@ -285,8 +396,9 @@
 }
 }, 
 "Tl1887371": {
-"^ot:altLabel": "Circassina lasistana", 
 "^ot:originalLabel": "Circassina lasistana 2198", 
+"^ot:ottId": 5757741, 
+"^ot:ottTaxonName": "Circassina lasistana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 630212, 
 "@tb:identifier.taxonVariant": 844852, 
@@ -306,8 +418,9 @@
 }
 }, 
 "Tl1887374": {
-"^ot:altLabel": "Circassina frutis veselyi", 
 "^ot:originalLabel": "Circassina frutis veselyi 1538", 
+"^ot:ottId": 5782996, 
+"^ot:ottTaxonName": "Circassina frutis veselyi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 630211, 
 "@tb:identifier.taxonVariant": 844851, 
@@ -315,7 +428,9 @@
 }
 }, 
 "Tl1887375": {
-"^ot:originalLabel": "Circassina frutis frutis 1524"
+"^ot:originalLabel": "Circassina frutis frutis 1524", 
+"^ot:ottId": 5782994, 
+"^ot:ottTaxonName": "Circassina frutis frutis"
 }, 
 "Tl1887376": {
 "^ot:altLabel": "Circassina frutis circassica", 
@@ -327,11 +442,14 @@
 }
 }, 
 "Tl1887377": {
-"^ot:originalLabel": "Circassina frutis frutis 1732"
+"^ot:originalLabel": "Circassina frutis frutis 1732", 
+"^ot:ottId": 5782994, 
+"^ot:ottTaxonName": "Circassina frutis frutis"
 }, 
 "Tl1887378": {
-"^ot:altLabel": "Circassina frutis circassica", 
 "^ot:originalLabel": "Circassina frutis circassica 1734", 
+"^ot:ottId": 5782995, 
+"^ot:ottTaxonName": "Circassina frutis circassica", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 630210, 
 "@tb:identifier.taxonVariant": 844850, 
@@ -354,8 +472,9 @@
 }
 }, 
 "Tl1887382": {
-"^ot:altLabel": "Circassina frutis veselyi", 
 "^ot:originalLabel": "Circassina frutis veselyi 1518", 
+"^ot:ottId": 5782996, 
+"^ot:ottTaxonName": "Circassina frutis veselyi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 630211, 
 "@tb:identifier.taxonVariant": 844851, 
@@ -372,8 +491,9 @@
 }
 }, 
 "Tl1887384": {
-"^ot:altLabel": "Circassina frutis veselyi", 
 "^ot:originalLabel": "Circassina frutis veselyi 1591", 
+"^ot:ottId": 5782996, 
+"^ot:ottTaxonName": "Circassina frutis veselyi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 630211, 
 "@tb:identifier.taxonVariant": 844851, 
@@ -381,7 +501,9 @@
 }
 }, 
 "Tl1887385": {
-"^ot:originalLabel": "Circassina frutis frutis 1738"
+"^ot:originalLabel": "Circassina frutis frutis 1738", 
+"^ot:ottId": 5782994, 
+"^ot:ottTaxonName": "Circassina frutis frutis"
 }, 
 "Tl1887386": {
 "^ot:altLabel": "Circassina frutis veselyi", 
@@ -393,8 +515,9 @@
 }
 }, 
 "Tl1887387": {
-"^ot:altLabel": "Circassina frutis veselyi", 
 "^ot:originalLabel": "Circassina frutis veselyi 1665", 
+"^ot:ottId": 5782996, 
+"^ot:ottTaxonName": "Circassina frutis veselyi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 630211, 
 "@tb:identifier.taxonVariant": 844851, 
@@ -438,7 +561,9 @@
 }
 }, 
 "Tl1887392": {
-"^ot:originalLabel": "Circassina frutis frutis 1729"
+"^ot:originalLabel": "Circassina frutis frutis 1729", 
+"^ot:ottId": 5782994, 
+"^ot:ottTaxonName": "Circassina frutis frutis"
 }, 
 "Tl1887393": {
 "^ot:originalLabel": "Circassina frutis frutis 1568"
@@ -447,8 +572,9 @@
 "^ot:originalLabel": "Circassina frutis frutis 1541"
 }, 
 "Tl1887395": {
-"^ot:altLabel": "Circassina frutis circassica", 
 "^ot:originalLabel": "Circassina frutis circassica 1515", 
+"^ot:ottId": 5782995, 
+"^ot:ottTaxonName": "Circassina frutis circassica", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 630210, 
 "@tb:identifier.taxonVariant": 844850, 
@@ -483,8 +609,9 @@
 }
 }, 
 "Tl1887399": {
-"^ot:altLabel": "Circassina frutis veselyi", 
 "^ot:originalLabel": "Circassina frutis veselyi 1520", 
+"^ot:ottId": 5782996, 
+"^ot:ottTaxonName": "Circassina frutis veselyi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 630211, 
 "@tb:identifier.taxonVariant": 844851, 
@@ -501,11 +628,14 @@
 }
 }, 
 "Tl1887401": {
-"^ot:originalLabel": "Circassina frutis frutis 1743"
+"^ot:originalLabel": "Circassina frutis frutis 1743", 
+"^ot:ottId": 5782994, 
+"^ot:ottTaxonName": "Circassina frutis frutis"
 }, 
 "Tl1887402": {
-"^ot:altLabel": "Circassina frutis veselyi", 
 "^ot:originalLabel": "Circassina frutis veselyi 1737", 
+"^ot:ottId": 5782996, 
+"^ot:ottTaxonName": "Circassina frutis veselyi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 630211, 
 "@tb:identifier.taxonVariant": 844851, 
@@ -519,16 +649,24 @@
 "^ot:originalLabel": "Circassina frutis frutis 1542"
 }, 
 "Tl1887405": {
-"^ot:originalLabel": "Fruticocampylaea narzanensis 1719"
+"^ot:originalLabel": "Fruticocampylaea narzanensis 1719", 
+"^ot:ottId": 5757740, 
+"^ot:ottTaxonName": "Fruticocampylaea narzanensis"
 }, 
 "Tl1887406": {
-"^ot:originalLabel": "Circassina frutis frutis 1525"
+"^ot:originalLabel": "Circassina frutis frutis 1525", 
+"^ot:ottId": 5782994, 
+"^ot:ottTaxonName": "Circassina frutis frutis"
 }, 
 "Tl1887407": {
-"^ot:originalLabel": "Circassina frutis frutis 1567"
+"^ot:originalLabel": "Circassina frutis frutis 1567", 
+"^ot:ottId": 5782994, 
+"^ot:ottTaxonName": "Circassina frutis frutis"
 }, 
 "Tl1887408": {
-"^ot:originalLabel": "Circassina frutis frutis 2208"
+"^ot:originalLabel": "Circassina frutis frutis 2208", 
+"^ot:ottId": 5782994, 
+"^ot:ottTaxonName": "Circassina frutis frutis"
 }, 
 "Tl1887409": {
 "^ot:altLabel": "Circassina frutis veselyi", 
@@ -540,11 +678,14 @@
 }
 }, 
 "Tl1887410": {
-"^ot:originalLabel": "Caucasigena eichwaldi 1783"
+"^ot:originalLabel": "Caucasigena eichwaldi 1783", 
+"^ot:ottId": 5757744, 
+"^ot:ottTaxonName": "Caucasigena eichwaldi"
 }, 
 "Tl1887411": {
-"^ot:altLabel": "Circassina frutis veselyi", 
 "^ot:originalLabel": "Circassina frutis veselyi 1521", 
+"^ot:ottId": 5782996, 
+"^ot:ottTaxonName": "Circassina frutis veselyi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 630211, 
 "@tb:identifier.taxonVariant": 844851, 
@@ -567,8 +708,9 @@
 }
 }, 
 "Tl1887415": {
-"^ot:altLabel": "Circassina frutis veselyi", 
 "^ot:originalLabel": "Circassina frutis veselyi 1566", 
+"^ot:ottId": 5782996, 
+"^ot:ottTaxonName": "Circassina frutis veselyi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 630211, 
 "@tb:identifier.taxonVariant": 844851, 
@@ -576,8 +718,9 @@
 }
 }, 
 "Tl1887513": {
-"^ot:altLabel": "Circassina frutis circassica", 
 "^ot:originalLabel": "Circassina frutis circassica 2095", 
+"^ot:ottId": 5782995, 
+"^ot:ottTaxonName": "Circassina frutis circassica", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 630210, 
 "@tb:identifier.taxonVariant": 844850, 
@@ -585,14 +728,19 @@
 }
 }, 
 "Tl1887514": {
-"^ot:originalLabel": "Circassina frutis frutis 1993"
+"^ot:originalLabel": "Circassina frutis frutis 1993", 
+"^ot:ottId": 5782994, 
+"^ot:ottTaxonName": "Circassina frutis frutis"
 }, 
 "Tl1887515": {
-"^ot:originalLabel": "Circassina frutis frutis 2035"
+"^ot:originalLabel": "Circassina frutis frutis 2035", 
+"^ot:ottId": 5782994, 
+"^ot:ottTaxonName": "Circassina frutis frutis"
 }, 
 "Tl1887516": {
-"^ot:altLabel": "Circassina lasistana", 
 "^ot:originalLabel": "Circassina lasistana 2391", 
+"^ot:ottId": 5757741, 
+"^ot:ottTaxonName": "Circassina lasistana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 630212, 
 "@tb:identifier.taxonVariant": 844852, 
@@ -600,14 +748,19 @@
 }
 }, 
 "Tl1887517": {
-"^ot:originalLabel": "Circassina frutis frutis 2039"
+"^ot:originalLabel": "Circassina frutis frutis 2039", 
+"^ot:ottId": 5782994, 
+"^ot:ottTaxonName": "Circassina frutis frutis"
 }, 
 "Tl1887518": {
-"^ot:originalLabel": "Circassina frutis frutis 2406"
+"^ot:originalLabel": "Circassina frutis frutis 2406", 
+"^ot:ottId": 5782994, 
+"^ot:ottTaxonName": "Circassina frutis frutis"
 }, 
 "Tl1887519": {
-"^ot:altLabel": "Circassina frutis veselyi", 
 "^ot:originalLabel": "Circassina frutis veselyi 2027", 
+"^ot:ottId": 5782996, 
+"^ot:ottTaxonName": "Circassina frutis veselyi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 630211, 
 "@tb:identifier.taxonVariant": 844851, 
@@ -615,8 +768,9 @@
 }
 }, 
 "Tl1887520": {
-"^ot:altLabel": "Circassina frutis veselyi", 
 "^ot:originalLabel": "Circassina frutis veselyi 2018", 
+"^ot:ottId": 5782996, 
+"^ot:ottTaxonName": "Circassina frutis veselyi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 630211, 
 "@tb:identifier.taxonVariant": 844851, 
@@ -624,8 +778,9 @@
 }
 }, 
 "Tl1887521": {
-"^ot:altLabel": "Circassina frutis veselyi", 
 "^ot:originalLabel": "Circassina frutis veselyi 2074", 
+"^ot:ottId": 5782996, 
+"^ot:ottTaxonName": "Circassina frutis veselyi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 630211, 
 "@tb:identifier.taxonVariant": 844851, 
@@ -633,8 +788,9 @@
 }
 }, 
 "Tl1887522": {
-"^ot:altLabel": "Circassina frutis circassica", 
 "^ot:originalLabel": "Circassina frutis circassica 2049", 
+"^ot:ottId": 5782995, 
+"^ot:ottTaxonName": "Circassina frutis circassica", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 630210, 
 "@tb:identifier.taxonVariant": 844850, 
@@ -642,8 +798,9 @@
 }
 }, 
 "Tl1887523": {
-"^ot:altLabel": "Circassina frutis circassica", 
 "^ot:originalLabel": "Circassina frutis circassica 2094", 
+"^ot:ottId": 5782995, 
+"^ot:ottTaxonName": "Circassina frutis circassica", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 630210, 
 "@tb:identifier.taxonVariant": 844850, 
@@ -651,8 +808,9 @@
 }
 }, 
 "Tl1887524": {
-"^ot:altLabel": "Circassina frutis circassica", 
 "^ot:originalLabel": "Circassina frutis circassica 1973", 
+"^ot:ottId": 5782995, 
+"^ot:ottTaxonName": "Circassina frutis circassica", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 630210, 
 "@tb:identifier.taxonVariant": 844850, 
@@ -660,8 +818,9 @@
 }
 }, 
 "Tl1887525": {
-"^ot:altLabel": "Circassina lasistana", 
 "^ot:originalLabel": "Circassina lasistana 2393", 
+"^ot:ottId": 5757741, 
+"^ot:ottTaxonName": "Circassina lasistana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 630212, 
 "@tb:identifier.taxonVariant": 844852, 
@@ -669,8 +828,9 @@
 }
 }, 
 "Tl1887526": {
-"^ot:altLabel": "Circassina frutis veselyi", 
 "^ot:originalLabel": "Circassina frutis veselyi 2029", 
+"^ot:ottId": 5782996, 
+"^ot:ottTaxonName": "Circassina frutis veselyi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 630211, 
 "@tb:identifier.taxonVariant": 844851, 
@@ -678,8 +838,9 @@
 }
 }, 
 "Tl1887527": {
-"^ot:altLabel": "Circassina frutis veselyi", 
 "^ot:originalLabel": "Circassina frutis veselyi 1976", 
+"^ot:ottId": 5782996, 
+"^ot:ottTaxonName": "Circassina frutis veselyi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 630211, 
 "@tb:identifier.taxonVariant": 844851, 
@@ -687,8 +848,9 @@
 }
 }, 
 "Tl1887528": {
-"^ot:altLabel": "Circassina lasistana", 
 "^ot:originalLabel": "Circassina lasistana 2398", 
+"^ot:ottId": 5757741, 
+"^ot:ottTaxonName": "Circassina lasistana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 630212, 
 "@tb:identifier.taxonVariant": 844852, 
@@ -696,14 +858,19 @@
 }
 }, 
 "Tl1887529": {
-"^ot:originalLabel": "Circassina frutis frutis 2067"
+"^ot:originalLabel": "Circassina frutis frutis 2067", 
+"^ot:ottId": 5782994, 
+"^ot:ottTaxonName": "Circassina frutis frutis"
 }, 
 "Tl1887530": {
-"^ot:originalLabel": "Circassina frutis frutis 2403"
+"^ot:originalLabel": "Circassina frutis frutis 2403", 
+"^ot:ottId": 5782994, 
+"^ot:ottTaxonName": "Circassina frutis frutis"
 }, 
 "Tl1887531": {
-"^ot:altLabel": "Circassina frutis veselyi", 
 "^ot:originalLabel": "Circassina frutis veselyi 2019", 
+"^ot:ottId": 5782996, 
+"^ot:ottTaxonName": "Circassina frutis veselyi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 630211, 
 "@tb:identifier.taxonVariant": 844851, 
@@ -711,17 +878,24 @@
 }
 }, 
 "Tl1887532": {
-"^ot:originalLabel": "Circassina frutis frutis 2037"
+"^ot:originalLabel": "Circassina frutis frutis 2037", 
+"^ot:ottId": 5782994, 
+"^ot:ottTaxonName": "Circassina frutis frutis"
 }, 
 "Tl1887533": {
-"^ot:originalLabel": "Circassina frutis frutis 2013"
+"^ot:originalLabel": "Circassina frutis frutis 2013", 
+"^ot:ottId": 5782994, 
+"^ot:ottTaxonName": "Circassina frutis frutis"
 }, 
 "Tl1887534": {
-"^ot:originalLabel": "Circassina frutis frutis 2033"
+"^ot:originalLabel": "Circassina frutis frutis 2033", 
+"^ot:ottId": 5782994, 
+"^ot:ottTaxonName": "Circassina frutis frutis"
 }, 
 "Tl1887535": {
-"^ot:altLabel": "Circassina frutis veselyi", 
 "^ot:originalLabel": "Circassina frutis veselyi 2025", 
+"^ot:ottId": 5782996, 
+"^ot:ottTaxonName": "Circassina frutis veselyi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 630211, 
 "@tb:identifier.taxonVariant": 844851, 
@@ -729,8 +903,9 @@
 }
 }, 
 "Tl1887536": {
-"^ot:altLabel": "Circassina frutis veselyi", 
 "^ot:originalLabel": "Circassina frutis veselyi 2009", 
+"^ot:ottId": 5782996, 
+"^ot:ottTaxonName": "Circassina frutis veselyi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 630211, 
 "@tb:identifier.taxonVariant": 844851, 
@@ -738,8 +913,9 @@
 }
 }, 
 "Tl1887537": {
-"^ot:altLabel": "Circassina frutis veselyi", 
 "^ot:originalLabel": "Circassina frutis veselyi 2089", 
+"^ot:ottId": 5782996, 
+"^ot:ottTaxonName": "Circassina frutis veselyi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 630211, 
 "@tb:identifier.taxonVariant": 844851, 
@@ -747,8 +923,9 @@
 }
 }, 
 "Tl1887538": {
-"^ot:altLabel": "Circassina frutis veselyi", 
 "^ot:originalLabel": "Circassina frutis veselyi 2026", 
+"^ot:ottId": 5782996, 
+"^ot:ottTaxonName": "Circassina frutis veselyi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 630211, 
 "@tb:identifier.taxonVariant": 844851, 
@@ -756,8 +933,9 @@
 }
 }, 
 "Tl1887539": {
-"^ot:altLabel": "Circassina lasistana", 
 "^ot:originalLabel": "Circassina lasistana 2399", 
+"^ot:ottId": 5757741, 
+"^ot:ottTaxonName": "Circassina lasistana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 630212, 
 "@tb:identifier.taxonVariant": 844852, 
@@ -765,8 +943,9 @@
 }
 }, 
 "Tl1887540": {
-"^ot:altLabel": "Circassina frutis veselyi", 
 "^ot:originalLabel": "Circassina frutis veselyi 2073", 
+"^ot:ottId": 5782996, 
+"^ot:ottTaxonName": "Circassina frutis veselyi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 630211, 
 "@tb:identifier.taxonVariant": 844851, 
@@ -774,8 +953,9 @@
 }
 }, 
 "Tl1887541": {
-"^ot:altLabel": "Circassina frutis veselyi", 
 "^ot:originalLabel": "Circassina frutis veselyi 2072", 
+"^ot:ottId": 5782996, 
+"^ot:ottTaxonName": "Circassina frutis veselyi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 630211, 
 "@tb:identifier.taxonVariant": 844851, 
@@ -783,20 +963,29 @@
 }
 }, 
 "Tl1887542": {
-"^ot:originalLabel": "Circassina frutis frutis 2012"
+"^ot:originalLabel": "Circassina frutis frutis 2012", 
+"^ot:ottId": 5782994, 
+"^ot:ottTaxonName": "Circassina frutis frutis"
 }, 
 "Tl1887543": {
-"^ot:originalLabel": "Circassina frutis frutis 2401"
+"^ot:originalLabel": "Circassina frutis frutis 2401", 
+"^ot:ottId": 5782994, 
+"^ot:ottTaxonName": "Circassina frutis frutis"
 }, 
 "Tl1887544": {
-"^ot:originalLabel": "Circassina frutis frutis 2011"
+"^ot:originalLabel": "Circassina frutis frutis 2011", 
+"^ot:ottId": 5782994, 
+"^ot:ottTaxonName": "Circassina frutis frutis"
 }, 
 "Tl1887545": {
-"^ot:originalLabel": "Circassina frutis frutis 2038"
+"^ot:originalLabel": "Circassina frutis frutis 2038", 
+"^ot:ottId": 5782994, 
+"^ot:ottTaxonName": "Circassina frutis frutis"
 }, 
 "Tl1887546": {
-"^ot:altLabel": "Circassina frutis veselyi", 
 "^ot:originalLabel": "Circassina frutis veselyi 1979", 
+"^ot:ottId": 5782996, 
+"^ot:ottTaxonName": "Circassina frutis veselyi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 630211, 
 "@tb:identifier.taxonVariant": 844851, 
@@ -804,11 +993,14 @@
 }
 }, 
 "Tl1887547": {
-"^ot:originalLabel": "Circassina frutis frutis 2004"
+"^ot:originalLabel": "Circassina frutis frutis 2004", 
+"^ot:ottId": 5782994, 
+"^ot:ottTaxonName": "Circassina frutis frutis"
 }, 
 "Tl1887548": {
-"^ot:altLabel": "Circassina lasistana", 
 "^ot:originalLabel": "Circassina lasistana 2392", 
+"^ot:ottId": 5757741, 
+"^ot:ottTaxonName": "Circassina lasistana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 630212, 
 "@tb:identifier.taxonVariant": 844852, 
@@ -816,14 +1008,19 @@
 }
 }, 
 "Tl1887549": {
-"^ot:originalLabel": "Circassina frutis frutis 1983"
+"^ot:originalLabel": "Circassina frutis frutis 1983", 
+"^ot:ottId": 5782994, 
+"^ot:ottTaxonName": "Circassina frutis frutis"
 }, 
 "Tl1887550": {
-"^ot:originalLabel": "Circassina frutis frutis 1992"
+"^ot:originalLabel": "Circassina frutis frutis 1992", 
+"^ot:ottId": 5782994, 
+"^ot:ottTaxonName": "Circassina frutis frutis"
 }, 
 "Tl1887551": {
-"^ot:altLabel": "Circassina frutis circassica", 
 "^ot:originalLabel": "Circassina frutis circassica 2093", 
+"^ot:ottId": 5782995, 
+"^ot:ottTaxonName": "Circassina frutis circassica", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 630210, 
 "@tb:identifier.taxonVariant": 844850, 
@@ -831,8 +1028,9 @@
 }
 }, 
 "Tl1887552": {
-"^ot:altLabel": "Circassina frutis veselyi", 
 "^ot:originalLabel": "Circassina frutis veselyi 2017", 
+"^ot:ottId": 5782996, 
+"^ot:ottTaxonName": "Circassina frutis veselyi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 630211, 
 "@tb:identifier.taxonVariant": 844851, 
@@ -840,8 +1038,9 @@
 }
 }, 
 "Tl1887553": {
-"^ot:altLabel": "Circassina frutis veselyi", 
 "^ot:originalLabel": "Circassina frutis veselyi 2088", 
+"^ot:ottId": 5782996, 
+"^ot:ottTaxonName": "Circassina frutis veselyi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 630211, 
 "@tb:identifier.taxonVariant": 844851, 
@@ -849,8 +1048,9 @@
 }
 }, 
 "Tl1887554": {
-"^ot:altLabel": "Circassina frutis veselyi", 
 "^ot:originalLabel": "Circassina frutis veselyi 2071", 
+"^ot:ottId": 5782996, 
+"^ot:ottTaxonName": "Circassina frutis veselyi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 630211, 
 "@tb:identifier.taxonVariant": 844851, 
@@ -858,14 +1058,19 @@
 }
 }, 
 "Tl1887555": {
-"^ot:originalLabel": "Circassina frutis frutis 1982"
+"^ot:originalLabel": "Circassina frutis frutis 1982", 
+"^ot:ottId": 5782994, 
+"^ot:ottTaxonName": "Circassina frutis frutis"
 }, 
 "Tl1887556": {
-"^ot:originalLabel": "Circassina frutis frutis 2044"
+"^ot:originalLabel": "Circassina frutis frutis 2044", 
+"^ot:ottId": 5782994, 
+"^ot:ottTaxonName": "Circassina frutis frutis"
 }, 
 "Tl1887557": {
-"^ot:altLabel": "Circassina frutis veselyi", 
 "^ot:originalLabel": "Circassina frutis veselyi 2028", 
+"^ot:ottId": 5782996, 
+"^ot:ottTaxonName": "Circassina frutis veselyi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 630211, 
 "@tb:identifier.taxonVariant": 844851, 
@@ -873,8 +1078,9 @@
 }
 }, 
 "Tl1887558": {
-"^ot:altLabel": "Circassina frutis veselyi", 
 "^ot:originalLabel": "Circassina frutis veselyi 1975", 
+"^ot:ottId": 5782996, 
+"^ot:ottTaxonName": "Circassina frutis veselyi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 630211, 
 "@tb:identifier.taxonVariant": 844851, 
@@ -882,11 +1088,14 @@
 }
 }, 
 "Tl1887559": {
-"^ot:originalLabel": "Circassina frutis frutis 2404"
+"^ot:originalLabel": "Circassina frutis frutis 2404", 
+"^ot:ottId": 5782994, 
+"^ot:ottTaxonName": "Circassina frutis frutis"
 }, 
 "Tl1887560": {
-"^ot:altLabel": "Circassina frutis veselyi", 
 "^ot:originalLabel": "Circassina frutis veselyi 2087", 
+"^ot:ottId": 5782996, 
+"^ot:ottTaxonName": "Circassina frutis veselyi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 630211, 
 "@tb:identifier.taxonVariant": 844851, 
@@ -894,11 +1103,14 @@
 }
 }, 
 "Tl1887561": {
-"^ot:originalLabel": "Circassina frutis frutis 2021"
+"^ot:originalLabel": "Circassina frutis frutis 2021", 
+"^ot:ottId": 5782994, 
+"^ot:ottTaxonName": "Circassina frutis frutis"
 }, 
 "Tl1887562": {
-"^ot:altLabel": "Circassina lasistana", 
 "^ot:originalLabel": "Circassina lasistana 2394", 
+"^ot:ottId": 5757741, 
+"^ot:ottTaxonName": "Circassina lasistana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 630212, 
 "@tb:identifier.taxonVariant": 844852, 
@@ -906,11 +1118,14 @@
 }
 }, 
 "Tl1887563": {
-"^ot:originalLabel": "Circassina frutis frutis 2036"
+"^ot:originalLabel": "Circassina frutis frutis 2036", 
+"^ot:ottId": 5782994, 
+"^ot:ottTaxonName": "Circassina frutis frutis"
 }, 
 "Tl1887564": {
-"^ot:altLabel": "Circassina lasistana", 
 "^ot:originalLabel": "Circassina lasistana 2397", 
+"^ot:ottId": 5757741, 
+"^ot:ottTaxonName": "Circassina lasistana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 630212, 
 "@tb:identifier.taxonVariant": 844852, 
@@ -918,11 +1133,14 @@
 }
 }, 
 "Tl1887565": {
-"^ot:originalLabel": "Circassina frutis frutis 2045"
+"^ot:originalLabel": "Circassina frutis frutis 2045", 
+"^ot:ottId": 5782994, 
+"^ot:ottTaxonName": "Circassina frutis frutis"
 }, 
 "Tl1887566": {
-"^ot:altLabel": "Circassina lasistana", 
 "^ot:originalLabel": "Circassina lasistana 2395", 
+"^ot:ottId": 5757741, 
+"^ot:ottTaxonName": "Circassina lasistana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 630212, 
 "@tb:identifier.taxonVariant": 844852, 
@@ -930,8 +1148,9 @@
 }
 }, 
 "Tl1887567": {
-"^ot:altLabel": "Circassina frutis veselyi", 
 "^ot:originalLabel": "Circassina frutis veselyi 2090", 
+"^ot:ottId": 5782996, 
+"^ot:ottTaxonName": "Circassina frutis veselyi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 630211, 
 "@tb:identifier.taxonVariant": 844851, 
@@ -939,8 +1158,9 @@
 }
 }, 
 "Tl1887568": {
-"^ot:altLabel": "Circassina lasistana", 
 "^ot:originalLabel": "Circassina lasistana 2396", 
+"^ot:ottId": 5757741, 
+"^ot:ottTaxonName": "Circassina lasistana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 630212, 
 "@tb:identifier.taxonVariant": 844852, 
@@ -948,8 +1168,9 @@
 }
 }, 
 "Tl1887569": {
-"^ot:altLabel": "Circassina frutis veselyi", 
 "^ot:originalLabel": "Circassina frutis veselyi 2024", 
+"^ot:ottId": 5782996, 
+"^ot:ottTaxonName": "Circassina frutis veselyi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 630211, 
 "@tb:identifier.taxonVariant": 844851, 
@@ -957,8 +1178,9 @@
 }
 }, 
 "Tl1887570": {
-"^ot:altLabel": "Circassina frutis circassica", 
 "^ot:originalLabel": "Circassina frutis circassica 2048", 
+"^ot:ottId": 5782995, 
+"^ot:ottTaxonName": "Circassina frutis circassica", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 630210, 
 "@tb:identifier.taxonVariant": 844850, 
@@ -966,10 +1188,14 @@
 }
 }, 
 "Tl1887571": {
-"^ot:originalLabel": "Circassina frutis frutis 1981"
+"^ot:originalLabel": "Circassina frutis frutis 1981", 
+"^ot:ottId": 5782994, 
+"^ot:ottTaxonName": "Circassina frutis frutis"
 }, 
 "Tl1887572": {
-"^ot:originalLabel": "Circassina frutis frutis 2010"
+"^ot:originalLabel": "Circassina frutis frutis 2010", 
+"^ot:ottId": 5782994, 
+"^ot:ottTaxonName": "Circassina frutis frutis"
 }
 }
 }
@@ -979,2293 +1205,37 @@
 "@label": "Circassina cox1 16S ML", 
 "@otus": "Tls44910", 
 "^ot:treeElementOrder": [
-"Tr88212", 
-"Tr88213", 
-"Tr88211"
+"Tr88213"
 ], 
 "^skos:historyNote": "Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlTreeBlockWriter@3817d2c2 $Rev$", 
 "treeById": {
-"Tr88211": {
-"@label": "con 50 majrule", 
-"@xsi:type": "nex:FloatTree", 
-"^ot:rootNodeId": "Tn13012849", 
-"^tb:kind.tree": "Species Tree", 
-"^tb:ntax.tree": 74, 
-"^tb:quality.tree": "Unrated", 
-"^tb:type.tree": "Consensus", 
-"edgeBySourceId": {
-"Tn13012828": {
-"edge2132203": {
-"@length": 0.00311122, 
-"@source": "Tn13012828", 
-"@target": "Tn13012867"
-}, 
-"edge2132217": {
-"@length": 0.00633671, 
-"@source": "Tn13012828", 
-"@target": "Tn13012863"
-}
-}, 
-"Tn13012831": {
-"edge2132323": {
-"@length": 0.01074415, 
-"@source": "Tn13012831", 
-"@target": "Tn13012910"
-}, 
-"edge2132325": {
-"@length": 0.00502626, 
-"@source": "Tn13012831", 
-"@target": "Tn13012944"
-}
-}, 
-"Tn13012835": {
-"edge2132175": {
-"@length": 0.02049307, 
-"@source": "Tn13012835", 
-"@target": "Tn13012932"
-}, 
-"edge2132197": {
-"@length": 0.01621452, 
-"@source": "Tn13012835", 
-"@target": "Tn13012859"
-}
-}, 
-"Tn13012836": {
-"edge2132171": {
-"@length": 0.06027281, 
-"@source": "Tn13012836", 
-"@target": "Tn13012877"
-}, 
-"edge2132265": {
-"@length": 0.03475259, 
-"@source": "Tn13012836", 
-"@target": "Tn13012925"
-}
-}, 
-"Tn13012837": {
-"edge2132315": {
-"@length": 0.001087661, 
-"@source": "Tn13012837", 
-"@target": "Tn13012851"
-}, 
-"edge2132317": {
-"@length": 0.003793308, 
-"@source": "Tn13012837", 
-"@target": "Tn13012872"
-}
-}, 
-"Tn13012839": {
-"edge2132399": {
-"@length": 0.005154617, 
-"@source": "Tn13012839", 
-"@target": "Tn13012893"
-}, 
-"edge2132411": {
-"@length": 0.005600308, 
-"@source": "Tn13012839", 
-"@target": "Tn13012865"
-}
-}, 
-"Tn13012841": {
-"edge2132269": {
-"@length": 0.02497649, 
-"@source": "Tn13012841", 
-"@target": "Tn13012926"
-}, 
-"edge2132307": {
-"@length": 0.01800225, 
-"@source": "Tn13012841", 
-"@target": "Tn13012939"
-}
-}, 
-"Tn13012842": {
-"edge2132355": {
-"@length": 0.004755897, 
-"@source": "Tn13012842", 
-"@target": "Tn13012883"
-}, 
-"edge2132357": {
-"@length": 0.0005295862, 
-"@source": "Tn13012842", 
-"@target": "Tn13012931"
-}
-}, 
-"Tn13012847": {
-"edge2132223": {
-"@length": 0.002333858, 
-"@source": "Tn13012847", 
-"@target": "Tn13012843"
-}, 
-"edge2132225": {
-"@length": 0.001040739, 
-"@source": "Tn13012847", 
-"@target": "Tn13012938"
-}
-}, 
-"Tn13012848": {
-"edge2132229": {
-"@length": 0.003422503, 
-"@source": "Tn13012848", 
-"@target": "Tn13012856"
-}, 
-"edge2132243": {
-"@length": 0.002571478, 
-"@source": "Tn13012848", 
-"@target": "Tn13012862"
-}
-}, 
-"Tn13012849": {
-"edge2132163": {
-"@length": 0.1494848, 
-"@source": "Tn13012849", 
-"@target": "Tn13012833"
-}, 
-"edge2132165": {
-"@length": 0.1436066, 
-"@source": "Tn13012849", 
-"@target": "Tn13012908"
-}, 
-"edge2132167": {
-"@length": 0.04062414, 
-"@source": "Tn13012849", 
-"@target": "Tn13012854"
-}
-}, 
-"Tn13012850": {
-"edge2132277": {
-"@length": 0.00283951, 
-"@source": "Tn13012850", 
-"@target": "Tn13012826"
-}, 
-"edge2132279": {
-"@length": 0.002263312, 
-"@source": "Tn13012850", 
-"@target": "Tn13012900"
-}
-}, 
-"Tn13012852": {
-"edge2132331": {
-"@length": 0.006260016, 
-"@source": "Tn13012852", 
-"@target": "Tn13012895"
-}, 
-"edge2132333": {
-"@length": 0.001724666, 
-"@source": "Tn13012852", 
-"@target": "Tn13012903"
-}
-}, 
-"Tn13012854": {
-"edge2132169": {
-"@length": 0.09538831, 
-"@source": "Tn13012854", 
-"@target": "Tn13012836"
-}, 
-"edge2132425": {
-"@length": 0.1615036, 
-"@source": "Tn13012854", 
-"@target": "Tn13012838"
-}
-}, 
-"Tn13012856": {
-"edge2132231": {
-"@length": 0.001071355, 
-"@source": "Tn13012856", 
-"@target": "Tn13012871"
-}, 
-"edge2132237": {
-"@length": 0.000455285, 
-"@source": "Tn13012856", 
-"@target": "Tn13012870"
-}, 
-"edge2132239": {
-"@length": 0.0004454063, 
-"@source": "Tn13012856", 
-"@target": "Tn13012917"
-}, 
-"edge2132241": {
-"@length": 0.0004522207, 
-"@source": "Tn13012856", 
-"@target": "Tn13012861"
-}
-}, 
-"Tn13012857": {
-"edge2132345": {
-"@length": 0.0005037529, 
-"@source": "Tn13012857", 
-"@target": "Tn13012873"
-}, 
-"edge2132347": {
-"@length": 0.001101761, 
-"@source": "Tn13012857", 
-"@target": "Tn13012827"
-}, 
-"edge2132349": {
-"@length": 0.0005047056, 
-"@source": "Tn13012857", 
-"@target": "Tn13012864"
-}
-}, 
-"Tn13012858": {
-"edge2132275": {
-"@length": 0.001031015, 
-"@source": "Tn13012858", 
-"@target": "Tn13012850"
-}, 
-"edge2132285": {
-"@length": 0.003880683, 
-"@source": "Tn13012858", 
-"@target": "Tn13012952"
-}, 
-"edge2132291": {
-"@length": 0.003407115, 
-"@source": "Tn13012858", 
-"@target": "Tn13012840"
-}
-}, 
-"Tn13012859": {
-"edge2132199": {
-"@length": 0.005433141, 
-"@source": "Tn13012859", 
-"@target": "Tn13012880"
-}, 
-"edge2132245": {
-"@length": 0.01301419, 
-"@source": "Tn13012859", 
-"@target": "Tn13012911"
-}
-}, 
-"Tn13012865": {
-"edge2132413": {
-"@length": 0.004519967, 
-"@source": "Tn13012865", 
-"@target": "Tn13012945"
-}, 
-"edge2132415": {
-"@length": 0.003011692, 
-"@source": "Tn13012865", 
-"@target": "Tn13012890"
-}
-}, 
-"Tn13012866": {
-"edge2132221": {
-"@length": 0.004525349, 
-"@source": "Tn13012866", 
-"@target": "Tn13012847"
-}, 
-"edge2132227": {
-"@length": 0.001823598, 
-"@source": "Tn13012866", 
-"@target": "Tn13012848"
-}
-}, 
-"Tn13012867": {
-"edge2132205": {
-"@length": 0.001709111, 
-"@source": "Tn13012867", 
-"@target": "Tn13012928"
-}, 
-"edge2132211": {
-"@length": 0.001749218, 
-"@source": "Tn13012867", 
-"@target": "Tn13012902"
-}
-}, 
-"Tn13012869": {
-"edge2132381": {
-"@length": 0.001059924, 
-"@source": "Tn13012869", 
-"@target": "Tn13012935"
-}, 
-"edge2132395": {
-"@length": 0.002806522, 
-"@source": "Tn13012869", 
-"@target": "Tn13012921"
-}
-}, 
-"Tn13012871": {
-"edge2132233": {
-"@length": 0.0004533958, 
-"@source": "Tn13012871", 
-"@target": "Tn13012892"
-}, 
-"edge2132235": {
-"@length": 0.0004530122, 
-"@source": "Tn13012871", 
-"@target": "Tn13012845"
-}
-}, 
-"Tn13012875": {
-"edge2132341": {
-"@length": 0.009696038, 
-"@source": "Tn13012875", 
-"@target": "Tn13012953"
-}, 
-"edge2132353": {
-"@length": 0.01199818, 
-"@source": "Tn13012875", 
-"@target": "Tn13012842"
-}
-}, 
-"Tn13012876": {
-"edge2132181": {
-"@length": 0.00255642, 
-"@source": "Tn13012876", 
-"@target": "Tn13012937"
-}, 
-"edge2132187": {
-"@length": 0.003646828, 
-"@source": "Tn13012876", 
-"@target": "Tn13012942"
-}
-}, 
-"Tn13012877": {
-"edge2132173": {
-"@length": 0.01438525, 
-"@source": "Tn13012877", 
-"@target": "Tn13012835"
-}, 
-"edge2132259": {
-"@length": 0.02930314, 
-"@source": "Tn13012877", 
-"@target": "Tn13012924"
-}
-}, 
-"Tn13012880": {
-"edge2132201": {
-"@length": 0.001317081, 
-"@source": "Tn13012880", 
-"@target": "Tn13012828"
-}, 
-"edge2132219": {
-"@length": 0.003838457, 
-"@source": "Tn13012880", 
-"@target": "Tn13012866"
-}
-}, 
-"Tn13012881": {
-"edge2132339": {
-"@length": 0.003525215, 
-"@source": "Tn13012881", 
-"@target": "Tn13012875"
-}, 
-"edge2132359": {
-"@length": 0.009539107, 
-"@source": "Tn13012881", 
-"@target": "Tn13012918"
-}
-}, 
-"Tn13012882": {
-"edge2132419": {
-"@length": 0.001214554, 
-"@source": "Tn13012882", 
-"@target": "Tn13012846"
-}, 
-"edge2132421": {
-"@length": 0.0005008174, 
-"@source": "Tn13012882", 
-"@target": "Tn13012914"
-}, 
-"edge2132423": {
-"@length": 0.0004956802, 
-"@source": "Tn13012882", 
-"@target": "Tn13012907"
-}
-}, 
-"Tn13012885": {
-"edge2132367": {
-"@length": 0.00546279, 
-"@source": "Tn13012885", 
-"@target": "Tn13012905"
-}, 
-"edge2132369": {
-"@length": 0.01355425, 
-"@source": "Tn13012885", 
-"@target": "Tn13012891"
-}, 
-"edge2132371": {
-"@length": 0.001295511, 
-"@source": "Tn13012885", 
-"@target": "Tn13012927"
-}
-}, 
-"Tn13012886": {
-"edge2132255": {
-"@length": 0.001745787, 
-"@source": "Tn13012886", 
-"@target": "Tn13012906"
-}, 
-"edge2132257": {
-"@length": 0.0004445539, 
-"@source": "Tn13012886", 
-"@target": "Tn13012899"
-}
-}, 
-"Tn13012889": {
-"edge2132295": {
-"@length": 0.0004187603, 
-"@source": "Tn13012889", 
-"@target": "Tn13012868"
-}, 
-"edge2132297": {
-"@length": 0.0004161601, 
-"@source": "Tn13012889", 
-"@target": "Tn13012879"
-}, 
-"edge2132299": {
-"@length": 0.001033999, 
-"@source": "Tn13012889", 
-"@target": "Tn13012948"
-}
-}, 
-"Tn13012893": {
-"edge2132401": {
-"@length": 0.001952994, 
-"@source": "Tn13012893", 
-"@target": "Tn13012919"
-}, 
-"edge2132409": {
-"@length": 0.003576366, 
-"@source": "Tn13012893", 
-"@target": "Tn13012894"
-}
-}, 
-"Tn13012900": {
-"edge2132281": {
-"@length": 0.001025491, 
-"@source": "Tn13012900", 
-"@target": "Tn13012888"
-}, 
-"edge2132283": {
-"@length": 0.0004250889, 
-"@source": "Tn13012900", 
-"@target": "Tn13012904"
-}
-}, 
-"Tn13012902": {
-"edge2132213": {
-"@length": 0.0004404427, 
-"@source": "Tn13012902", 
-"@target": "Tn13012860"
-}, 
-"edge2132215": {
-"@length": 0.0004396016, 
-"@source": "Tn13012902", 
-"@target": "Tn13012829"
-}
-}, 
-"Tn13012911": {
-"edge2132247": {
-"@length": 0.001065116, 
-"@source": "Tn13012911", 
-"@target": "Tn13012916"
-}, 
-"edge2132249": {
-"@length": 0.001711244, 
-"@source": "Tn13012911", 
-"@target": "Tn13012912"
-}, 
-"edge2132251": {
-"@length": 0.001729132, 
-"@source": "Tn13012911", 
-"@target": "Tn13012943"
-}, 
-"edge2132253": {
-"@length": 0.003418473, 
-"@source": "Tn13012911", 
-"@target": "Tn13012886"
-}
-}, 
-"Tn13012913": {
-"edge2132179": {
-"@length": 0.005939109, 
-"@source": "Tn13012913", 
-"@target": "Tn13012876"
-}, 
-"edge2132189": {
-"@length": 0.007511636, 
-"@source": "Tn13012913", 
-"@target": "Tn13012957"
-}
-}, 
-"Tn13012915": {
-"edge2132313": {
-"@length": 0.002109221, 
-"@source": "Tn13012915", 
-"@target": "Tn13012837"
-}, 
-"edge2132319": {
-"@length": 0.001774443, 
-"@source": "Tn13012915", 
-"@target": "Tn13012901"
-}
-}, 
-"Tn13012918": {
-"edge2132361": {
-"@length": 0.00345755, 
-"@source": "Tn13012918", 
-"@target": "Tn13012929"
-}, 
-"edge2132397": {
-"@length": 0.00251744, 
-"@source": "Tn13012918", 
-"@target": "Tn13012839"
-}
-}, 
-"Tn13012919": {
-"edge2132403": {
-"@length": 0.003053312, 
-"@source": "Tn13012919", 
-"@target": "Tn13012940"
-}, 
-"edge2132405": {
-"@length": 0.000592383, 
-"@source": "Tn13012919", 
-"@target": "Tn13012930"
-}, 
-"edge2132407": {
-"@length": 0.007513564, 
-"@source": "Tn13012919", 
-"@target": "Tn13012898"
-}
-}, 
-"Tn13012920": {
-"edge2132337": {
-"@length": 0.007633266, 
-"@source": "Tn13012920", 
-"@target": "Tn13012881"
-}, 
-"edge2132417": {
-"@length": 0.02119677, 
-"@source": "Tn13012920", 
-"@target": "Tn13012882"
-}
-}, 
-"Tn13012922": {
-"edge2132365": {
-"@length": 0.001497696, 
-"@source": "Tn13012922", 
-"@target": "Tn13012885"
-}, 
-"edge2132377": {
-"@length": 0.005005786, 
-"@source": "Tn13012922", 
-"@target": "Tn13012897"
-}
-}, 
-"Tn13012924": {
-"edge2132261": {
-"@length": 0.0004646191, 
-"@source": "Tn13012924", 
-"@target": "Tn13012832"
-}, 
-"edge2132263": {
-"@length": 0.0004646339, 
-"@source": "Tn13012924", 
-"@target": "Tn13012933"
-}
-}, 
-"Tn13012925": {
-"edge2132267": {
-"@length": 0.0468517, 
-"@source": "Tn13012925", 
-"@target": "Tn13012841"
-}, 
-"edge2132309": {
-"@length": 0.02008311, 
-"@source": "Tn13012925", 
-"@target": "Tn13012954"
-}, 
-"edge2132335": {
-"@length": 0.02415455, 
-"@source": "Tn13012925", 
-"@target": "Tn13012920"
-}
-}, 
-"Tn13012926": {
-"edge2132271": {
-"@length": 0.006156144, 
-"@source": "Tn13012926", 
-"@target": "Tn13012955"
-}, 
-"edge2132301": {
-"@length": 0.00802326, 
-"@source": "Tn13012926", 
-"@target": "Tn13012947"
-}
-}, 
-"Tn13012927": {
-"edge2132373": {
-"@length": 0.004421789, 
-"@source": "Tn13012927", 
-"@target": "Tn13012909"
-}, 
-"edge2132375": {
-"@length": 0.004484879, 
-"@source": "Tn13012927", 
-"@target": "Tn13012887"
-}
-}, 
-"Tn13012928": {
-"edge2132207": {
-"@length": 0.001866017, 
-"@source": "Tn13012928", 
-"@target": "Tn13012874"
-}, 
-"edge2132209": {
-"@length": 0.001831801, 
-"@source": "Tn13012928", 
-"@target": "Tn13012941"
-}
-}, 
-"Tn13012929": {
-"edge2132363": {
-"@length": 0.001300318, 
-"@source": "Tn13012929", 
-"@target": "Tn13012922"
-}, 
-"edge2132379": {
-"@length": 0.00127153, 
-"@source": "Tn13012929", 
-"@target": "Tn13012869"
-}
-}, 
-"Tn13012932": {
-"edge2132177": {
-"@length": 0.01008056, 
-"@source": "Tn13012932", 
-"@target": "Tn13012913"
-}, 
-"edge2132195": {
-"@length": 0.0190104, 
-"@source": "Tn13012932", 
-"@target": "Tn13012878"
-}
-}, 
-"Tn13012935": {
-"edge2132383": {
-"@length": 0.002809653, 
-"@source": "Tn13012935", 
-"@target": "Tn13012949"
-}, 
-"edge2132393": {
-"@length": 0.003693641, 
-"@source": "Tn13012935", 
-"@target": "Tn13012958"
-}
-}, 
-"Tn13012937": {
-"edge2132183": {
-"@length": 0.0004489608, 
-"@source": "Tn13012937", 
-"@target": "Tn13012950"
-}, 
-"edge2132185": {
-"@length": 0.0004482699, 
-"@source": "Tn13012937", 
-"@target": "Tn13012934"
-}
-}, 
-"Tn13012944": {
-"edge2132327": {
-"@length": 0.01104425, 
-"@source": "Tn13012944", 
-"@target": "Tn13012956"
-}, 
-"edge2132329": {
-"@length": 0.006471007, 
-"@source": "Tn13012944", 
-"@target": "Tn13012852"
-}
-}, 
-"Tn13012947": {
-"edge2132303": {
-"@length": 0.0004281562, 
-"@source": "Tn13012947", 
-"@target": "Tn13012834"
-}, 
-"edge2132305": {
-"@length": 0.0004283303, 
-"@source": "Tn13012947", 
-"@target": "Tn13012896"
-}
-}, 
-"Tn13012949": {
-"edge2132385": {
-"@length": 0.001933871, 
-"@source": "Tn13012949", 
-"@target": "Tn13012830"
-}, 
-"edge2132387": {
-"@length": 0.001173817, 
-"@source": "Tn13012949", 
-"@target": "Tn13012855"
-}, 
-"edge2132389": {
-"@length": 0.000498719, 
-"@source": "Tn13012949", 
-"@target": "Tn13012884"
-}, 
-"edge2132391": {
-"@length": 0.002669003, 
-"@source": "Tn13012949", 
-"@target": "Tn13012923"
-}
-}, 
-"Tn13012952": {
-"edge2132287": {
-"@length": 0.0004136777, 
-"@source": "Tn13012952", 
-"@target": "Tn13012946"
-}, 
-"edge2132289": {
-"@length": 0.0004185179, 
-"@source": "Tn13012952", 
-"@target": "Tn13012936"
-}
-}, 
-"Tn13012953": {
-"edge2132343": {
-"@length": 0.001255711, 
-"@source": "Tn13012953", 
-"@target": "Tn13012857"
-}, 
-"edge2132351": {
-"@length": 0.001330098, 
-"@source": "Tn13012953", 
-"@target": "Tn13012951"
-}
-}, 
-"Tn13012954": {
-"edge2132311": {
-"@length": 0.05354145, 
-"@source": "Tn13012954", 
-"@target": "Tn13012915"
-}, 
-"edge2132321": {
-"@length": 0.02432806, 
-"@source": "Tn13012954", 
-"@target": "Tn13012831"
-}
-}, 
-"Tn13012955": {
-"edge2132273": {
-"@length": 0.00192193, 
-"@source": "Tn13012955", 
-"@target": "Tn13012858"
-}, 
-"edge2132293": {
-"@length": 0.007136358, 
-"@source": "Tn13012955", 
-"@target": "Tn13012889"
-}
-}, 
-"Tn13012957": {
-"edge2132191": {
-"@length": 0.002556576, 
-"@source": "Tn13012957", 
-"@target": "Tn13012853"
-}, 
-"edge2132193": {
-"@length": 0.001568796, 
-"@source": "Tn13012957", 
-"@target": "Tn13012844"
-}
-}
-}, 
-"nodeById": {
-"Tn13012826": {
-"@otu": "Tl1887381"
-}, 
-"Tn13012827": {
-"@otu": "Tl1887406"
-}, 
-"Tn13012828": {}, 
-"Tn13012829": {
-"@otu": "Tl1887391"
-}, 
-"Tn13012830": {
-"@otu": "Tl1887361"
-}, 
-"Tn13012831": {}, 
-"Tn13012832": {
-"@otu": "Tl1887402"
-}, 
-"Tn13012833": {
-"@otu": "Tl1887410"
-}, 
-"Tn13012834": {
-"@otu": "Tl1887396"
-}, 
-"Tn13012835": {}, 
-"Tn13012836": {}, 
-"Tn13012837": {}, 
-"Tn13012838": {
-"@otu": "Tl1887366"
-}, 
-"Tn13012839": {}, 
-"Tn13012840": {
-"@otu": "Tl1887390"
-}, 
-"Tn13012841": {}, 
-"Tn13012842": {}, 
-"Tn13012843": {
-"@otu": "Tl1887398"
-}, 
-"Tn13012844": {
-"@otu": "Tl1887397"
-}, 
-"Tn13012845": {
-"@otu": "Tl1887358"
-}, 
-"Tn13012846": {
-"@otu": "Tl1887404"
-}, 
-"Tn13012847": {}, 
-"Tn13012848": {}, 
-"Tn13012849": {
-"@root": true
-}, 
-"Tn13012850": {}, 
-"Tn13012851": {
-"@otu": "Tl1887348"
-}, 
-"Tn13012852": {}, 
-"Tn13012853": {
-"@otu": "Tl1887354"
-}, 
-"Tn13012854": {}, 
-"Tn13012855": {
-"@otu": "Tl1887368"
-}, 
-"Tn13012856": {}, 
-"Tn13012857": {}, 
-"Tn13012858": {}, 
-"Tn13012859": {}, 
-"Tn13012860": {
-"@otu": "Tl1887342"
-}, 
-"Tn13012861": {
-"@otu": "Tl1887351"
-}, 
-"Tn13012862": {
-"@otu": "Tl1887345"
-}, 
-"Tn13012863": {
-"@otu": "Tl1887378"
-}, 
-"Tn13012864": {
-"@otu": "Tl1887401"
-}, 
-"Tn13012865": {}, 
-"Tn13012866": {}, 
-"Tn13012867": {}, 
-"Tn13012868": {
-"@otu": "Tl1887400"
-}, 
-"Tn13012869": {}, 
-"Tn13012870": {
-"@otu": "Tl1887415"
-}, 
-"Tn13012871": {}, 
-"Tn13012872": {
-"@otu": "Tl1887393"
-}, 
-"Tn13012873": {
-"@otu": "Tl1887375"
-}, 
-"Tn13012874": {
-"@otu": "Tl1887383"
-}, 
-"Tn13012875": {}, 
-"Tn13012876": {}, 
-"Tn13012877": {}, 
-"Tn13012878": {
-"@otu": "Tl1887388"
-}, 
-"Tn13012879": {
-"@otu": "Tl1887389"
-}, 
-"Tn13012880": {}, 
-"Tn13012881": {}, 
-"Tn13012882": {}, 
-"Tn13012883": {
-"@otu": "Tl1887352"
-}, 
-"Tn13012884": {
-"@otu": "Tl1887392"
-}, 
-"Tn13012885": {}, 
-"Tn13012886": {}, 
-"Tn13012887": {
-"@otu": "Tl1887385"
-}, 
-"Tn13012888": {
-"@otu": "Tl1887386"
-}, 
-"Tn13012889": {}, 
-"Tn13012890": {
-"@otu": "Tl1887408"
-}, 
-"Tn13012891": {
-"@otu": "Tl1887343"
-}, 
-"Tn13012892": {
-"@otu": "Tl1887411"
-}, 
-"Tn13012893": {}, 
-"Tn13012894": {
-"@otu": "Tl1887371"
-}, 
-"Tn13012895": {
-"@otu": "Tl1887360"
-}, 
-"Tn13012896": {
-"@otu": "Tl1887374"
-}, 
-"Tn13012897": {
-"@otu": "Tl1887347"
-}, 
-"Tn13012898": {
-"@otu": "Tl1887353"
-}, 
-"Tn13012899": {
-"@otu": "Tl1887387"
-}, 
-"Tn13012900": {}, 
-"Tn13012901": {
-"@otu": "Tl1887394"
-}, 
-"Tn13012902": {}, 
-"Tn13012903": {
-"@otu": "Tl1887407"
-}, 
-"Tn13012904": {
-"@otu": "Tl1887373"
-}, 
-"Tn13012905": {
-"@otu": "Tl1887363"
-}, 
-"Tn13012906": {
-"@otu": "Tl1887346"
-}, 
-"Tn13012907": {
-"@otu": "Tl1887372"
-}, 
-"Tn13012908": {
-"@otu": "Tl1887405"
-}, 
-"Tn13012909": {
-"@otu": "Tl1887377"
-}, 
-"Tn13012910": {
-"@otu": "Tl1887359"
-}, 
-"Tn13012911": {}, 
-"Tn13012912": {
-"@otu": "Tl1887399"
-}, 
-"Tn13012913": {}, 
-"Tn13012914": {
-"@otu": "Tl1887356"
-}, 
-"Tn13012915": {}, 
-"Tn13012916": {
-"@otu": "Tl1887382"
-}, 
-"Tn13012917": {
-"@otu": "Tl1887384"
-}, 
-"Tn13012918": {}, 
-"Tn13012919": {}, 
-"Tn13012920": {}, 
-"Tn13012921": {
-"@otu": "Tl1887349"
-}, 
-"Tn13012922": {}, 
-"Tn13012923": {
-"@otu": "Tl1887344"
-}, 
-"Tn13012924": {}, 
-"Tn13012925": {}, 
-"Tn13012926": {}, 
-"Tn13012927": {}, 
-"Tn13012928": {}, 
-"Tn13012929": {}, 
-"Tn13012930": {
-"@otu": "Tl1887413"
-}, 
-"Tn13012931": {
-"@otu": "Tl1887364"
-}, 
-"Tn13012932": {}, 
-"Tn13012933": {
-"@otu": "Tl1887357"
-}, 
-"Tn13012934": {
-"@otu": "Tl1887414"
-}, 
-"Tn13012935": {}, 
-"Tn13012936": {
-"@otu": "Tl1887365"
-}, 
-"Tn13012937": {}, 
-"Tn13012938": {
-"@otu": "Tl1887367"
-}, 
-"Tn13012939": {
-"@otu": "Tl1887409"
-}, 
-"Tn13012940": {
-"@otu": "Tl1887412"
-}, 
-"Tn13012941": {
-"@otu": "Tl1887355"
-}, 
-"Tn13012942": {
-"@otu": "Tl1887395"
-}, 
-"Tn13012943": {
-"@otu": "Tl1887369"
-}, 
-"Tn13012944": {}, 
-"Tn13012945": {
-"@otu": "Tl1887403"
-}, 
-"Tn13012946": {
-"@otu": "Tl1887370"
-}, 
-"Tn13012947": {}, 
-"Tn13012948": {
-"@otu": "Tl1887362"
-}, 
-"Tn13012949": {}, 
-"Tn13012950": {
-"@otu": "Tl1887376"
-}, 
-"Tn13012951": {
-"@otu": "Tl1887379"
-}, 
-"Tn13012952": {}, 
-"Tn13012953": {}, 
-"Tn13012954": {}, 
-"Tn13012955": {}, 
-"Tn13012956": {
-"@otu": "Tl1887380"
-}, 
-"Tn13012957": {}, 
-"Tn13012958": {
-"@otu": "Tl1887350"
-}
-}
-}, 
-"Tr88212": {
-"@label": "con 50 majrule", 
-"@xsi:type": "nex:FloatTree", 
-"^ot:rootNodeId": "Tn13013039", 
-"^tb:kind.tree": "Species Tree", 
-"^tb:ntax.tree": 74, 
-"^tb:quality.tree": "Unrated", 
-"^tb:type.tree": "Single", 
-"edgeBySourceId": {
-"Tn13012959": {
-"edge2131576": {
-"@length": 0.002333858, 
-"@source": "Tn13012959", 
-"@target": "Tn13013081"
-}, 
-"edge2131578": {
-"@length": 0.001040739, 
-"@source": "Tn13012959", 
-"@target": "Tn13013015"
-}
-}, 
-"Tn13012960": {
-"edge2131574": {
-"@length": 0.004525349, 
-"@source": "Tn13012960", 
-"@target": "Tn13012959"
-}, 
-"edge2131580": {
-"@length": 0.001823598, 
-"@source": "Tn13012960", 
-"@target": "Tn13013000"
-}
-}, 
-"Tn13012963": {
-"edge2131560": {
-"@length": 0.001866017, 
-"@source": "Tn13012963", 
-"@target": "Tn13013088"
-}, 
-"edge2131562": {
-"@length": 0.001831801, 
-"@source": "Tn13012963", 
-"@target": "Tn13012997"
-}
-}, 
-"Tn13012964": {
-"edge2131664": {
-"@length": 0.05354145, 
-"@source": "Tn13012964", 
-"@target": "Tn13013003"
-}, 
-"edge2131674": {
-"@length": 0.02432806, 
-"@source": "Tn13012964", 
-"@target": "Tn13012988"
-}
-}, 
-"Tn13012965": {
-"edge2131558": {
-"@length": 0.001709111, 
-"@source": "Tn13012965", 
-"@target": "Tn13012963"
-}, 
-"edge2131564": {
-"@length": 0.001749218, 
-"@source": "Tn13012965", 
-"@target": "Tn13013054"
-}
-}, 
-"Tn13012967": {
-"edge2131554": {
-"@length": 0.001317081, 
-"@source": "Tn13012967", 
-"@target": "Tn13013061"
-}, 
-"edge2131572": {
-"@length": 0.003838457, 
-"@source": "Tn13012967", 
-"@target": "Tn13012960"
-}
-}, 
-"Tn13012968": {
-"edge2131668": {
-"@length": 0.001087661, 
-"@source": "Tn13012968", 
-"@target": "Tn13012966"
-}, 
-"edge2131670": {
-"@length": 0.003793308, 
-"@source": "Tn13012968", 
-"@target": "Tn13013082"
-}
-}, 
-"Tn13012971": {
-"edge2131738": {
-"@length": 0.001933871, 
-"@source": "Tn13012971", 
-"@target": "Tn13013089"
-}, 
-"edge2131740": {
-"@length": 0.001173817, 
-"@source": "Tn13012971", 
-"@target": "Tn13013034"
-}, 
-"edge2131742": {
-"@length": 0.000498719, 
-"@source": "Tn13012971", 
-"@target": "Tn13013028"
-}, 
-"edge2131744": {
-"@length": 0.002669003, 
-"@source": "Tn13012971", 
-"@target": "Tn13013002"
-}
-}, 
-"Tn13012973": {
-"edge2131532": {
-"@length": 0.005939109, 
-"@source": "Tn13012973", 
-"@target": "Tn13013084"
-}, 
-"edge2131542": {
-"@length": 0.007511636, 
-"@source": "Tn13012973", 
-"@target": "Tn13013020"
-}
-}, 
-"Tn13012974": {
-"edge2131528": {
-"@length": 0.02049307, 
-"@source": "Tn13012974", 
-"@target": "Tn13013057"
-}, 
-"edge2131550": {
-"@length": 0.01621452, 
-"@source": "Tn13012974", 
-"@target": "Tn13012996"
-}
-}, 
-"Tn13012976": {
-"edge2131698": {
-"@length": 0.0005037529, 
-"@source": "Tn13012976", 
-"@target": "Tn13012985"
-}, 
-"edge2131700": {
-"@length": 0.001101761, 
-"@source": "Tn13012976", 
-"@target": "Tn13013060"
-}, 
-"edge2131702": {
-"@length": 0.0005047056, 
-"@source": "Tn13012976", 
-"@target": "Tn13013048"
-}
-}, 
-"Tn13012980": {
-"edge2131640": {
-"@length": 0.0004136777, 
-"@source": "Tn13012980", 
-"@target": "Tn13012989"
-}, 
-"edge2131642": {
-"@length": 0.0004185179, 
-"@source": "Tn13012980", 
-"@target": "Tn13012990"
-}
-}, 
-"Tn13012981": {
-"edge2131608": {
-"@length": 0.001745787, 
-"@source": "Tn13012981", 
-"@target": "Tn13012994"
-}, 
-"edge2131610": {
-"@length": 0.0004445539, 
-"@source": "Tn13012981", 
-"@target": "Tn13013004"
-}
-}, 
-"Tn13012983": {
-"edge2131694": {
-"@length": 0.009696038, 
-"@source": "Tn13012983", 
-"@target": "Tn13013056"
-}, 
-"edge2131706": {
-"@length": 0.01199818, 
-"@source": "Tn13012983", 
-"@target": "Tn13013019"
-}
-}, 
-"Tn13012984": {
-"edge2131586": {
-"@length": 0.0004533958, 
-"@source": "Tn13012984", 
-"@target": "Tn13013041"
-}, 
-"edge2131588": {
-"@length": 0.0004530122, 
-"@source": "Tn13012984", 
-"@target": "Tn13012969"
-}
-}, 
-"Tn13012986": {
-"edge2131720": {
-"@length": 0.00546279, 
-"@source": "Tn13012986", 
-"@target": "Tn13013026"
-}, 
-"edge2131722": {
-"@length": 0.01355425, 
-"@source": "Tn13012986", 
-"@target": "Tn13013014"
-}, 
-"edge2131724": {
-"@length": 0.001295511, 
-"@source": "Tn13012986", 
-"@target": "Tn13013043"
-}
-}, 
-"Tn13012988": {
-"edge2131676": {
-"@length": 0.01074415, 
-"@source": "Tn13012988", 
-"@target": "Tn13013050"
-}, 
-"edge2131678": {
-"@length": 0.00502626, 
-"@source": "Tn13012988", 
-"@target": "Tn13013075"
-}
-}, 
-"Tn13012996": {
-"edge2131552": {
-"@length": 0.005433141, 
-"@source": "Tn13012996", 
-"@target": "Tn13012967"
-}, 
-"edge2131598": {
-"@length": 0.01301419, 
-"@source": "Tn13012996", 
-"@target": "Tn13013079"
-}
-}, 
-"Tn13012998": {
-"edge2131584": {
-"@length": 0.001071355, 
-"@source": "Tn13012998", 
-"@target": "Tn13012984"
-}, 
-"edge2131590": {
-"@length": 0.000455285, 
-"@source": "Tn13012998", 
-"@target": "Tn13013073"
-}, 
-"edge2131592": {
-"@length": 0.0004454063, 
-"@source": "Tn13012998", 
-"@target": "Tn13013070"
-}, 
-"edge2131594": {
-"@length": 0.0004522207, 
-"@source": "Tn13012998", 
-"@target": "Tn13012978"
-}
-}, 
-"Tn13012999": {
-"edge2131628": {
-"@length": 0.001031015, 
-"@source": "Tn13012999", 
-"@target": "Tn13013053"
-}, 
-"edge2131638": {
-"@length": 0.003880683, 
-"@source": "Tn13012999", 
-"@target": "Tn13012980"
-}, 
-"edge2131644": {
-"@length": 0.003407115, 
-"@source": "Tn13012999", 
-"@target": "Tn13013049"
-}
-}, 
-"Tn13013000": {
-"edge2131582": {
-"@length": 0.003422503, 
-"@source": "Tn13013000", 
-"@target": "Tn13012998"
-}, 
-"edge2131596": {
-"@length": 0.002571478, 
-"@source": "Tn13013000", 
-"@target": "Tn13013051"
-}
-}, 
-"Tn13013001": {
-"edge2131620": {
-"@length": 0.0468517, 
-"@source": "Tn13013001", 
-"@target": "Tn13013038"
-}, 
-"edge2131662": {
-"@length": 0.02008311, 
-"@source": "Tn13013001", 
-"@target": "Tn13012964"
-}, 
-"edge2131688": {
-"@length": 0.02415455, 
-"@source": "Tn13013001", 
-"@target": "Tn13013025"
-}
-}, 
-"Tn13013003": {
-"edge2131666": {
-"@length": 0.002109221, 
-"@source": "Tn13013003", 
-"@target": "Tn13012968"
-}, 
-"edge2131672": {
-"@length": 0.001774443, 
-"@source": "Tn13013003", 
-"@target": "Tn13013035"
-}
-}, 
-"Tn13013005": {
-"edge2131772": {
-"@length": 0.001214554, 
-"@source": "Tn13013005", 
-"@target": "Tn13013007"
-}, 
-"edge2131774": {
-"@length": 0.0005008174, 
-"@source": "Tn13013005", 
-"@target": "Tn13013058"
-}, 
-"edge2131776": {
-"@length": 0.0004956802, 
-"@source": "Tn13013005", 
-"@target": "Tn13013024"
-}
-}, 
-"Tn13013008": {
-"edge2131624": {
-"@length": 0.006156144, 
-"@source": "Tn13013008", 
-"@target": "Tn13013029"
-}, 
-"edge2131654": {
-"@length": 0.00802326, 
-"@source": "Tn13013008", 
-"@target": "Tn13013080"
-}
-}, 
-"Tn13013009": {
-"edge2131716": {
-"@length": 0.001300318, 
-"@source": "Tn13013009", 
-"@target": "Tn13013030"
-}, 
-"edge2131732": {
-"@length": 0.00127153, 
-"@source": "Tn13013009", 
-"@target": "Tn13013012"
-}
-}, 
-"Tn13013010": {
-"edge2131684": {
-"@length": 0.006260016, 
-"@source": "Tn13013010", 
-"@target": "Tn13012993"
-}, 
-"edge2131686": {
-"@length": 0.001724666, 
-"@source": "Tn13013010", 
-"@target": "Tn13013091"
-}
-}, 
-"Tn13013012": {
-"edge2131734": {
-"@length": 0.001059924, 
-"@source": "Tn13013012", 
-"@target": "Tn13013068"
-}, 
-"edge2131748": {
-"@length": 0.002806522, 
-"@source": "Tn13013012", 
-"@target": "Tn13013052"
-}
-}, 
-"Tn13013013": {
-"edge2131714": {
-"@length": 0.00345755, 
-"@source": "Tn13013013", 
-"@target": "Tn13013009"
-}, 
-"edge2131750": {
-"@length": 0.00251744, 
-"@source": "Tn13013013", 
-"@target": "Tn13013066"
-}
-}, 
-"Tn13013019": {
-"edge2131708": {
-"@length": 0.004755897, 
-"@source": "Tn13013019", 
-"@target": "Tn13012962"
-}, 
-"edge2131710": {
-"@length": 0.0005295862, 
-"@source": "Tn13013019", 
-"@target": "Tn13013085"
-}
-}, 
-"Tn13013020": {
-"edge2131544": {
-"@length": 0.002556576, 
-"@source": "Tn13013020", 
-"@target": "Tn13013037"
-}, 
-"edge2131546": {
-"@length": 0.001568796, 
-"@source": "Tn13013020", 
-"@target": "Tn13013072"
-}
-}, 
-"Tn13013025": {
-"edge2131690": {
-"@length": 0.007633266, 
-"@source": "Tn13013025", 
-"@target": "Tn13013040"
-}, 
-"edge2131770": {
-"@length": 0.02119677, 
-"@source": "Tn13013025", 
-"@target": "Tn13013005"
-}
-}, 
-"Tn13013029": {
-"edge2131626": {
-"@length": 0.00192193, 
-"@source": "Tn13013029", 
-"@target": "Tn13012999"
-}, 
-"edge2131646": {
-"@length": 0.007136358, 
-"@source": "Tn13013029", 
-"@target": "Tn13013044"
-}
-}, 
-"Tn13013030": {
-"edge2131718": {
-"@length": 0.001497696, 
-"@source": "Tn13013030", 
-"@target": "Tn13012986"
-}, 
-"edge2131730": {
-"@length": 0.005005786, 
-"@source": "Tn13013030", 
-"@target": "Tn13013062"
-}
-}, 
-"Tn13013038": {
-"edge2131622": {
-"@length": 0.02497649, 
-"@source": "Tn13013038", 
-"@target": "Tn13013008"
-}, 
-"edge2131660": {
-"@length": 0.01800225, 
-"@source": "Tn13013038", 
-"@target": "Tn13013059"
-}
-}, 
-"Tn13013039": {
-"edge2131516": {
-"@length": 0.1494848, 
-"@source": "Tn13013039", 
-"@target": "Tn13012961"
-}, 
-"edge2131518": {
-"@length": 0.1436066, 
-"@source": "Tn13013039", 
-"@target": "Tn13013032"
-}, 
-"edge2131520": {
-"@length": 0.04062414, 
-"@source": "Tn13013039", 
-"@target": "Tn13013045"
-}
-}, 
-"Tn13013040": {
-"edge2131692": {
-"@length": 0.003525215, 
-"@source": "Tn13013040", 
-"@target": "Tn13012983"
-}, 
-"edge2131712": {
-"@length": 0.009539107, 
-"@source": "Tn13013040", 
-"@target": "Tn13013013"
-}
-}, 
-"Tn13013043": {
-"edge2131726": {
-"@length": 0.004421789, 
-"@source": "Tn13013043", 
-"@target": "Tn13013046"
-}, 
-"edge2131728": {
-"@length": 0.004484879, 
-"@source": "Tn13013043", 
-"@target": "Tn13013006"
-}
-}, 
-"Tn13013044": {
-"edge2131648": {
-"@length": 0.0004187603, 
-"@source": "Tn13013044", 
-"@target": "Tn13013042"
-}, 
-"edge2131650": {
-"@length": 0.0004161601, 
-"@source": "Tn13013044", 
-"@target": "Tn13013018"
-}, 
-"edge2131652": {
-"@length": 0.001033999, 
-"@source": "Tn13013044", 
-"@target": "Tn13013011"
-}
-}, 
-"Tn13013045": {
-"edge2131522": {
-"@length": 0.09538831, 
-"@source": "Tn13013045", 
-"@target": "Tn13013087"
-}, 
-"edge2131778": {
-"@length": 0.1615036, 
-"@source": "Tn13013045", 
-"@target": "Tn13013021"
-}
-}, 
-"Tn13013053": {
-"edge2131630": {
-"@length": 0.00283951, 
-"@source": "Tn13013053", 
-"@target": "Tn13013047"
-}, 
-"edge2131632": {
-"@length": 0.002263312, 
-"@source": "Tn13013053", 
-"@target": "Tn13013071"
-}
-}, 
-"Tn13013054": {
-"edge2131566": {
-"@length": 0.0004404427, 
-"@source": "Tn13013054", 
-"@target": "Tn13013023"
-}, 
-"edge2131568": {
-"@length": 0.0004396016, 
-"@source": "Tn13013054", 
-"@target": "Tn13013074"
-}
-}, 
-"Tn13013055": {
-"edge2131756": {
-"@length": 0.003053312, 
-"@source": "Tn13013055", 
-"@target": "Tn13013031"
-}, 
-"edge2131758": {
-"@length": 0.000592383, 
-"@source": "Tn13013055", 
-"@target": "Tn13012995"
-}, 
-"edge2131760": {
-"@length": 0.007513564, 
-"@source": "Tn13013055", 
-"@target": "Tn13012991"
-}
-}, 
-"Tn13013056": {
-"edge2131696": {
-"@length": 0.001255711, 
-"@source": "Tn13013056", 
-"@target": "Tn13012976"
-}, 
-"edge2131704": {
-"@length": 0.001330098, 
-"@source": "Tn13013056", 
-"@target": "Tn13012982"
-}
-}, 
-"Tn13013057": {
-"edge2131530": {
-"@length": 0.01008056, 
-"@source": "Tn13013057", 
-"@target": "Tn13012973"
-}, 
-"edge2131548": {
-"@length": 0.0190104, 
-"@source": "Tn13013057", 
-"@target": "Tn13013077"
-}
-}, 
-"Tn13013061": {
-"edge2131556": {
-"@length": 0.00311122, 
-"@source": "Tn13013061", 
-"@target": "Tn13012965"
-}, 
-"edge2131570": {
-"@length": 0.00633671, 
-"@source": "Tn13013061", 
-"@target": "Tn13012992"
-}
-}, 
-"Tn13013063": {
-"edge2131614": {
-"@length": 0.0004646191, 
-"@source": "Tn13013063", 
-"@target": "Tn13012979"
-}, 
-"edge2131616": {
-"@length": 0.0004646339, 
-"@source": "Tn13013063", 
-"@target": "Tn13012975"
-}
-}, 
-"Tn13013065": {
-"edge2131526": {
-"@length": 0.01438525, 
-"@source": "Tn13013065", 
-"@target": "Tn13012974"
-}, 
-"edge2131612": {
-"@length": 0.02930314, 
-"@source": "Tn13013065", 
-"@target": "Tn13013063"
-}
-}, 
-"Tn13013066": {
-"edge2131752": {
-"@length": 0.005154617, 
-"@source": "Tn13013066", 
-"@target": "Tn13013067"
-}, 
-"edge2131764": {
-"@length": 0.005600308, 
-"@source": "Tn13013066", 
-"@target": "Tn13013090"
-}
-}, 
-"Tn13013067": {
-"edge2131754": {
-"@length": 0.001952994, 
-"@source": "Tn13013067", 
-"@target": "Tn13013055"
-}, 
-"edge2131762": {
-"@length": 0.003576366, 
-"@source": "Tn13013067", 
-"@target": "Tn13013016"
-}
-}, 
-"Tn13013068": {
-"edge2131736": {
-"@length": 0.002809653, 
-"@source": "Tn13013068", 
-"@target": "Tn13012971"
-}, 
-"edge2131746": {
-"@length": 0.003693641, 
-"@source": "Tn13013068", 
-"@target": "Tn13013036"
-}
-}, 
-"Tn13013071": {
-"edge2131634": {
-"@length": 0.001025491, 
-"@source": "Tn13013071", 
-"@target": "Tn13013069"
-}, 
-"edge2131636": {
-"@length": 0.0004250889, 
-"@source": "Tn13013071", 
-"@target": "Tn13012987"
-}
-}, 
-"Tn13013075": {
-"edge2131680": {
-"@length": 0.01104425, 
-"@source": "Tn13013075", 
-"@target": "Tn13013017"
-}, 
-"edge2131682": {
-"@length": 0.006471007, 
-"@source": "Tn13013075", 
-"@target": "Tn13013010"
-}
-}, 
-"Tn13013076": {
-"edge2131536": {
-"@length": 0.0004489608, 
-"@source": "Tn13013076", 
-"@target": "Tn13013033"
-}, 
-"edge2131538": {
-"@length": 0.0004482699, 
-"@source": "Tn13013076", 
-"@target": "Tn13012977"
-}
-}, 
-"Tn13013079": {
-"edge2131600": {
-"@length": 0.001065116, 
-"@source": "Tn13013079", 
-"@target": "Tn13013083"
-}, 
-"edge2131602": {
-"@length": 0.001711244, 
-"@source": "Tn13013079", 
-"@target": "Tn13013027"
-}, 
-"edge2131604": {
-"@length": 0.001729132, 
-"@source": "Tn13013079", 
-"@target": "Tn13013064"
-}, 
-"edge2131606": {
-"@length": 0.003418473, 
-"@source": "Tn13013079", 
-"@target": "Tn13012981"
-}
-}, 
-"Tn13013080": {
-"edge2131656": {
-"@length": 0.0004281562, 
-"@source": "Tn13013080", 
-"@target": "Tn13012972"
-}, 
-"edge2131658": {
-"@length": 0.0004283303, 
-"@source": "Tn13013080", 
-"@target": "Tn13013022"
-}
-}, 
-"Tn13013084": {
-"edge2131534": {
-"@length": 0.00255642, 
-"@source": "Tn13013084", 
-"@target": "Tn13013076"
-}, 
-"edge2131540": {
-"@length": 0.003646828, 
-"@source": "Tn13013084", 
-"@target": "Tn13013078"
-}
-}, 
-"Tn13013087": {
-"edge2131524": {
-"@length": 0.06027281, 
-"@source": "Tn13013087", 
-"@target": "Tn13013065"
-}, 
-"edge2131618": {
-"@length": 0.03475259, 
-"@source": "Tn13013087", 
-"@target": "Tn13013001"
-}
-}, 
-"Tn13013090": {
-"edge2131766": {
-"@length": 0.004519967, 
-"@source": "Tn13013090", 
-"@target": "Tn13012970"
-}, 
-"edge2131768": {
-"@length": 0.003011692, 
-"@source": "Tn13013090", 
-"@target": "Tn13013086"
-}
-}
-}, 
-"nodeById": {
-"Tn13012959": {
-"@label": "98"
-}, 
-"Tn13012960": {
-"@label": "87"
-}, 
-"Tn13012961": {
-"@otu": "Tl1887410"
-}, 
-"Tn13012962": {
-"@otu": "Tl1887352"
-}, 
-"Tn13012963": {
-"@label": "85"
-}, 
-"Tn13012964": {
-"@label": "72"
-}, 
-"Tn13012965": {
-"@label": "90"
-}, 
-"Tn13012966": {
-"@otu": "Tl1887348"
-}, 
-"Tn13012967": {
-"@label": "78"
-}, 
-"Tn13012968": {
-"@label": "66"
-}, 
-"Tn13012969": {
-"@otu": "Tl1887358"
-}, 
-"Tn13012970": {
-"@otu": "Tl1887403"
-}, 
-"Tn13012971": {
-"@label": "76"
-}, 
-"Tn13012972": {
-"@otu": "Tl1887396"
-}, 
-"Tn13012973": {
-"@label": "92"
-}, 
-"Tn13012974": {
-"@label": "68"
-}, 
-"Tn13012975": {
-"@otu": "Tl1887357"
-}, 
-"Tn13012976": {
-"@label": "57"
-}, 
-"Tn13012977": {
-"@otu": "Tl1887414"
-}, 
-"Tn13012978": {
-"@otu": "Tl1887351"
-}, 
-"Tn13012979": {
-"@otu": "Tl1887402"
-}, 
-"Tn13012980": {
-"@label": "99"
-}, 
-"Tn13012981": {
-"@label": "97"
-}, 
-"Tn13012982": {
-"@otu": "Tl1887379"
-}, 
-"Tn13012983": {
-"@label": "88"
-}, 
-"Tn13012984": {
-"@label": "63"
-}, 
-"Tn13012985": {
-"@otu": "Tl1887375"
-}, 
-"Tn13012986": {
-"@label": "46"
-}, 
-"Tn13012987": {
-"@otu": "Tl1887373"
-}, 
-"Tn13012988": {
-"@label": "100"
-}, 
-"Tn13012989": {
-"@otu": "Tl1887370"
-}, 
-"Tn13012990": {
-"@otu": "Tl1887365"
-}, 
-"Tn13012991": {
-"@otu": "Tl1887353"
-}, 
-"Tn13012992": {
-"@otu": "Tl1887378"
-}, 
-"Tn13012993": {
-"@otu": "Tl1887360"
-}, 
-"Tn13012994": {
-"@otu": "Tl1887346"
-}, 
-"Tn13012995": {
-"@otu": "Tl1887413"
-}, 
-"Tn13012996": {
-"@label": "95"
-}, 
-"Tn13012997": {
-"@otu": "Tl1887355"
-}, 
-"Tn13012998": {
-"@label": "95"
-}, 
-"Tn13012999": {
-"@label": "71"
-}, 
-"Tn13013000": {
-"@label": "46"
-}, 
-"Tn13013001": {
-"@label": "76"
-}, 
-"Tn13013002": {
-"@otu": "Tl1887344"
-}, 
-"Tn13013003": {
-"@label": "98"
-}, 
-"Tn13013004": {
-"@otu": "Tl1887387"
-}, 
-"Tn13013005": {
-"@label": "100"
-}, 
-"Tn13013006": {
-"@otu": "Tl1887385"
-}, 
-"Tn13013007": {
-"@otu": "Tl1887404"
-}, 
-"Tn13013008": {
-"@label": "100"
-}, 
-"Tn13013009": {
-"@label": "65"
-}, 
-"Tn13013010": {
-"@label": "89"
-}, 
-"Tn13013011": {
-"@otu": "Tl1887362"
-}, 
-"Tn13013012": {
-"@label": "27"
-}, 
-"Tn13013013": {
-"@label": "99"
-}, 
-"Tn13013014": {
-"@otu": "Tl1887343"
-}, 
-"Tn13013015": {
-"@otu": "Tl1887367"
-}, 
-"Tn13013016": {
-"@otu": "Tl1887371"
-}, 
-"Tn13013017": {
-"@otu": "Tl1887380"
-}, 
-"Tn13013018": {
-"@otu": "Tl1887389"
-}, 
-"Tn13013019": {
-"@label": "100"
-}, 
-"Tn13013020": {
-"@label": "99"
-}, 
-"Tn13013021": {
-"@otu": "Tl1887366"
-}, 
-"Tn13013022": {
-"@otu": "Tl1887374"
-}, 
-"Tn13013023": {
-"@otu": "Tl1887342"
-}, 
-"Tn13013024": {
-"@otu": "Tl1887372"
-}, 
-"Tn13013025": {
-"@label": "100"
-}, 
-"Tn13013026": {
-"@otu": "Tl1887363"
-}, 
-"Tn13013027": {
-"@otu": "Tl1887399"
-}, 
-"Tn13013028": {
-"@otu": "Tl1887392"
-}, 
-"Tn13013029": {
-"@label": "62"
-}, 
-"Tn13013030": {
-"@label": "19"
-}, 
-"Tn13013031": {
-"@otu": "Tl1887412"
-}, 
-"Tn13013032": {
-"@otu": "Tl1887405"
-}, 
-"Tn13013033": {
-"@otu": "Tl1887376"
-}, 
-"Tn13013034": {
-"@otu": "Tl1887368"
-}, 
-"Tn13013035": {
-"@otu": "Tl1887394"
-}, 
-"Tn13013036": {
-"@otu": "Tl1887350"
-}, 
-"Tn13013037": {
-"@otu": "Tl1887354"
-}, 
-"Tn13013038": {
-"@label": "100"
-}, 
-"Tn13013039": {
-"@label": "100", 
-"@root": true
-}, 
-"Tn13013040": {
-"@label": "67"
-}, 
-"Tn13013041": {
-"@otu": "Tl1887411"
-}, 
-"Tn13013042": {
-"@otu": "Tl1887400"
-}, 
-"Tn13013043": {
-"@label": "39"
-}, 
-"Tn13013044": {
-"@label": "96"
-}, 
-"Tn13013045": {
-"@label": "81"
-}, 
-"Tn13013046": {
-"@otu": "Tl1887377"
-}, 
-"Tn13013047": {
-"@otu": "Tl1887381"
-}, 
-"Tn13013048": {
-"@otu": "Tl1887401"
-}, 
-"Tn13013049": {
-"@otu": "Tl1887390"
-}, 
-"Tn13013050": {
-"@otu": "Tl1887359"
-}, 
-"Tn13013051": {
-"@otu": "Tl1887345"
-}, 
-"Tn13013052": {
-"@otu": "Tl1887349"
-}, 
-"Tn13013053": {
-"@label": "64"
-}, 
-"Tn13013054": {
-"@label": "79"
-}, 
-"Tn13013055": {
-"@label": "51"
-}, 
-"Tn13013056": {
-"@label": "100"
-}, 
-"Tn13013057": {
-"@label": "97"
-}, 
-"Tn13013058": {
-"@otu": "Tl1887356"
-}, 
-"Tn13013059": {
-"@otu": "Tl1887409"
-}, 
-"Tn13013060": {
-"@otu": "Tl1887406"
-}, 
-"Tn13013061": {
-"@label": "60"
-}, 
-"Tn13013062": {
-"@otu": "Tl1887347"
-}, 
-"Tn13013063": {
-"@label": "100"
-}, 
-"Tn13013064": {
-"@otu": "Tl1887369"
-}, 
-"Tn13013065": {
-"@label": "100"
-}, 
-"Tn13013066": {
-"@label": "49"
-}, 
-"Tn13013067": {
-"@label": "84"
-}, 
-"Tn13013068": {
-"@label": "11"
-}, 
-"Tn13013069": {
-"@otu": "Tl1887386"
-}, 
-"Tn13013070": {
-"@otu": "Tl1887384"
-}, 
-"Tn13013071": {
-"@label": "94"
-}, 
-"Tn13013072": {
-"@otu": "Tl1887397"
-}, 
-"Tn13013073": {
-"@otu": "Tl1887415"
-}, 
-"Tn13013074": {
-"@otu": "Tl1887391"
-}, 
-"Tn13013075": {
-"@label": "48"
-}, 
-"Tn13013076": {
-"@label": "94"
-}, 
-"Tn13013077": {
-"@otu": "Tl1887388"
-}, 
-"Tn13013078": {
-"@otu": "Tl1887395"
-}, 
-"Tn13013079": {
-"@label": "98"
-}, 
-"Tn13013080": {
-"@label": "100"
-}, 
-"Tn13013081": {
-"@otu": "Tl1887398"
-}, 
-"Tn13013082": {
-"@otu": "Tl1887393"
-}, 
-"Tn13013083": {
-"@otu": "Tl1887382"
-}, 
-"Tn13013084": {
-"@label": "97"
-}, 
-"Tn13013085": {
-"@otu": "Tl1887364"
-}, 
-"Tn13013086": {
-"@otu": "Tl1887408"
-}, 
-"Tn13013087": {
-"@label": "100"
-}, 
-"Tn13013088": {
-"@otu": "Tl1887383"
-}, 
-"Tn13013089": {
-"@otu": "Tl1887361"
-}, 
-"Tn13013090": {
-"@label": "95"
-}, 
-"Tn13013091": {
-"@otu": "Tl1887407"
-}
-}
-}, 
 "Tr88213": {
-"@label": "con 50 majrule aflp", 
+"@label": "Neiber & Hausdorf, 2015  Maximum Likelihood AFLP", 
 "@xsi:type": "nex:FloatTree", 
-"^ot:rootNodeId": "Tn13013271", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:undefined", 
+"^ot:curatedType": "Maximum likelihood ", 
+"^ot:inGroupClade": "Tn13013096", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
+"^ot:rootNodeId": "Tr88213_ROOT", 
+"^ot:specifiedRoot": "Tr88213_ROOT", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "^tb:ntax.tree": 96, 
 "edgeBySourceId": {
 "Tn13013096": {
+"edge2131803": {
+"@length": 0.03163576, 
+"@source": "Tn13013096", 
+"@target": "Tn13013120"
+}, 
 "edge2131805": {
 "@length": 0.02137808, 
 "@source": "Tn13013096", 
 "@target": "Tn13013111"
-}, 
-"edge2131989": {
-"@length": 0.0990345, 
-"@source": "Tn13013096", 
-"@target": "Tn13013099"
 }
 }, 
 "Tn13013098": {
@@ -3305,10 +1275,10 @@
 }
 }, 
 "Tn13013101": {
-"edge2131801": {
-"@length": 0.02915498, 
+"edge2131799": {
+"@length": 0.01000986, 
 "@source": "Tn13013101", 
-"@target": "Tn13013120"
+"@target": "Tn13013189"
 }, 
 "edge2132017": {
 "@length": 0.009319744, 
@@ -3437,10 +1407,10 @@
 }
 }, 
 "Tn13013120": {
-"edge2131803": {
-"@length": 0.03163576, 
+"edge2131801": {
+"@length": 0.02915498, 
 "@source": "Tn13013120", 
-"@target": "Tn13013096"
+"@target": "Tn13013101"
 }, 
 "edge2131999": {
 "@length": 0.02955937, 
@@ -3884,10 +1854,10 @@
 }
 }, 
 "Tn13013189": {
-"edge2131799": {
-"@length": 0.01000986, 
+"edge2131797": {
+"@length": 0.01432541, 
 "@source": "Tn13013189", 
-"@target": "Tn13013101"
+"@target": "Tn13013191"
 }, 
 "edge2132051": {
 "@length": 0.01512763, 
@@ -3908,10 +1878,10 @@
 }
 }, 
 "Tn13013191": {
-"edge2131797": {
-"@length": 0.01432541, 
+"edge2131795": {
+"@length": 0.02342032, 
 "@source": "Tn13013191", 
-"@target": "Tn13013189"
+"@target": "Tn13013246"
 }, 
 "edge2132081": {
 "@length": 0.01859294, 
@@ -4218,10 +2188,10 @@
 }
 }, 
 "Tn13013245": {
-"edge2131793": {
-"@length": 0.012429, 
+"edge2131791": {
+"@length": 0.0408081, 
 "@source": "Tn13013245", 
-"@target": "Tn13013246"
+"@target": "Tn13013271"
 }, 
 "edge2132145": {
 "@length": 0.02093265, 
@@ -4235,10 +2205,10 @@
 }
 }, 
 "Tn13013246": {
-"edge2131795": {
-"@length": 0.02342032, 
+"edge2131793": {
+"@length": 0.012429, 
 "@source": "Tn13013246", 
-"@target": "Tn13013191"
+"@target": "Tn13013245"
 }, 
 "edge2132139": {
 "@length": 0.03253122, 
@@ -4328,11 +2298,6 @@
 "@length": 0.09259894, 
 "@source": "Tn13013271", 
 "@target": "Tn13013209"
-}, 
-"edge2131791": {
-"@length": 0.0408081, 
-"@source": "Tn13013271", 
-"@target": "Tn13013245"
 }
 }, 
 "Tn13013272": {
@@ -4345,6 +2310,17 @@
 "@length": 0.01946592, 
 "@source": "Tn13013272", 
 "@target": "Tn13013192"
+}
+}, 
+"Tr88213_ROOT": {
+"Tr88213_ROOT_EDGE": {
+"@source": "Tr88213_ROOT", 
+"@target": "Tn13013096"
+}, 
+"edge2131989": {
+"@length": 0.0990345, 
+"@source": "Tr88213_ROOT", 
+"@target": "Tn13013099"
 }
 }
 }, 
@@ -4714,9 +2690,7 @@
 "Tn13013270": {
 "@otu": "Tl1887556"
 }, 
-"Tn13013271": {
-"@root": true
-}, 
+"Tn13013271": {}, 
 "Tn13013272": {}, 
 "Tn13013273": {
 "@otu": "Tl1887402"
@@ -4726,6 +2700,9 @@
 }, 
 "Tn13013275": {
 "@otu": "Tl1887530"
+}, 
+"Tr88213_ROOT": {
+"@root": true
 }
 }
 }
