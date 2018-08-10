@@ -47,16 +47,106 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2018-08-10T14:33:50.413Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:curatorName": "Pietro de Mello", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}, 
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": "\\b\\s+(\\S*)$"
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2018-08-10T14:33:50.413Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Pietro de Mello"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S16222"
 }, 
+"^ot:focalClade": 997082, 
+"^ot:focalCladeOTTTaxonName": "Helicidae", 
 "^ot:otusElementOrder": [
 "Tls47697"
 ], 
@@ -66,6 +156,7 @@
 }, 
 "^ot:studyPublicationReference": "Neiber M.T., & Hausdorf B. 2015. Molecular phylogeny reveals the polyphyly of the banded snail genus Cepaea (Gastropoda: Helicidae). Molecular Phylogentics and Evolution, 93: 143-149.", 
 "^ot:studyYear": 2015, 
+"^ot:tag": [], 
 "^ot:taxonLinkPrefixes": {
 "@ubio": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:", 
 "@uniprot": "http://purl.uniprot.org/taxonomy/"
@@ -93,8 +184,9 @@
 "^skos:historyNote": "Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlOTUWriter@2bcb0e7f $Rev$", 
 "otuById": {
 "Tl1573435": {
-"^ot:altLabel": "Cepaea nemoralis", 
 "^ot:originalLabel": "Cepaea nemoralis nemoralis MN006", 
+"^ot:ottId": 891883, 
+"^ot:ottTaxonName": "Cepaea nemoralis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 626314, 
 "@tb:identifier.taxonVariant": 839198, 
@@ -103,14 +195,19 @@
 }
 }, 
 "Tl1573436": {
-"^ot:originalLabel": "Lindholmia christophi 2381"
+"^ot:originalLabel": "Lindholmia christophi 2381", 
+"^ot:ottId": 5757776, 
+"^ot:ottTaxonName": "Helix christophi"
 }, 
 "Tl1573438": {
-"^ot:originalLabel": "Tacheocampylaea carotii MN510"
+"^ot:originalLabel": "Tacheocampylaea carotii MN510", 
+"^ot:ottId": 2879978, 
+"^ot:ottTaxonName": "Tacheocampylaea carotii"
 }, 
 "Tl1573439": {
-"^ot:altLabel": "Cepaea hortensis", 
 "^ot:originalLabel": "Cepaea hortensis MN038", 
+"^ot:ottId": 983300, 
+"^ot:ottTaxonName": "Cepaea hortensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 105163, 
 "@tb:identifier.taxonVariant": 184032, 
@@ -119,8 +216,9 @@
 }
 }, 
 "Tl1573440": {
-"^ot:altLabel": "Cepaea nemoralis", 
 "^ot:originalLabel": "Cepaea nemoralis nemoralis MN026", 
+"^ot:ottId": 891883, 
+"^ot:ottTaxonName": "Cepaea nemoralis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 626314, 
 "@tb:identifier.taxonVariant": 839198, 
@@ -130,6 +228,8 @@
 }, 
 "Tl1573442": {
 "^ot:originalLabel": "Theba pisana pisana MN001", 
+"^ot:ottId": 413727, 
+"^ot:ottTaxonName": "Theba pisana pisana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 626317, 
 "@tb:identifier.taxonVariant": 839201, 
@@ -137,8 +237,9 @@
 }
 }, 
 "Tl1573445": {
-"^ot:altLabel": "Cepaea nemoralis", 
 "^ot:originalLabel": "Cepaea nemoralis nemoralis MN005", 
+"^ot:ottId": 891883, 
+"^ot:ottTaxonName": "Cepaea nemoralis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 626314, 
 "@tb:identifier.taxonVariant": 839198, 
@@ -147,8 +248,9 @@
 }
 }, 
 "Tl1573451": {
-"^ot:altLabel": "Iberus gualterianus gualterianus", 
 "^ot:originalLabel": "Iberus gualtieranus gualtieranus SP331", 
+"^ot:ottId": 714248, 
+"^ot:ottTaxonName": "Iberus gualtierianus gualtierianus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 277868, 
 "@tb:identifier.taxonVariant": 331601, 
@@ -159,6 +261,8 @@
 }, 
 "Tl1573452": {
 "^ot:originalLabel": "Cornu aspersum aspersum MN008", 
+"^ot:ottId": 978328, 
+"^ot:ottTaxonName": "Helix aspersa aspersa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 626315, 
 "@tb:identifier.taxonVariant": 839199, 
@@ -167,6 +271,8 @@
 }, 
 "Tl1573453": {
 "^ot:originalLabel": "Trissexodon constrictus SP110", 
+"^ot:ottId": 777516, 
+"^ot:ottTaxonName": "Trissexodon constrictus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 626313, 
 "@tb:identifier.taxonVariant": 839197, 
@@ -174,8 +280,9 @@
 }
 }, 
 "Tl1573454": {
-"^ot:altLabel": "Cepaea nemoralis", 
 "^ot:originalLabel": "Cepaea nemoralis nemoralis MN007", 
+"^ot:ottId": 891883, 
+"^ot:ottTaxonName": "Cepaea nemoralis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 626314, 
 "@tb:identifier.taxonVariant": 839198, 
@@ -184,8 +291,9 @@
 }
 }, 
 "Tl1573460": {
-"^ot:altLabel": "Pseudotachea splendida", 
 "^ot:originalLabel": "Pseudotachea splendida SP241", 
+"^ot:ottId": 600165, 
+"^ot:ottTaxonName": "Pseudotachea splendida", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 238781, 
 "@tb:identifier.taxonVariant": 300758, 
@@ -194,8 +302,9 @@
 }
 }, 
 "Tl1573461": {
-"^ot:altLabel": "Eobania vermiculata", 
 "^ot:originalLabel": "Eobania vermiculata MN103", 
+"^ot:ottId": 672839, 
+"^ot:ottTaxonName": "Eobania vermiculata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 194882, 
 "@tb:identifier.taxonVariant": 266116, 
@@ -204,11 +313,14 @@
 }
 }, 
 "Tl1573463": {
-"^ot:originalLabel": "Eremina dillwyniana MN161"
+"^ot:originalLabel": "Eremina dillwyniana MN161", 
+"^ot:ottId": 5757761, 
+"^ot:ottTaxonName": "Eremina dillwyniana"
 }, 
 "Tl1573464": {
-"^ot:altLabel": "Cepaea hortensis", 
 "^ot:originalLabel": "Cepaea hortensis MN107", 
+"^ot:ottId": 983300, 
+"^ot:ottTaxonName": "Cepaea hortensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 105163, 
 "@tb:identifier.taxonVariant": 184032, 
@@ -217,8 +329,9 @@
 }
 }, 
 "Tl1573466": {
-"^ot:altLabel": "Cepaea nemoralis", 
 "^ot:originalLabel": "Cepaea nemoralis nemoralis MN013", 
+"^ot:ottId": 891883, 
+"^ot:ottTaxonName": "Cepaea nemoralis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 626314, 
 "@tb:identifier.taxonVariant": 839198, 
@@ -227,11 +340,14 @@
 }
 }, 
 "Tl1573467": {
-"^ot:originalLabel": "Macularia niciensis niciensis MN218"
+"^ot:originalLabel": "Macularia niciensis niciensis MN218", 
+"^ot:ottId": 5757805, 
+"^ot:ottTaxonName": "Macularia niciensis"
 }, 
 "Tl1573469": {
-"^ot:altLabel": "Cylindrus obtusus", 
 "^ot:originalLabel": "Cylindrus obtusus JN107636", 
+"^ot:ottId": 775264, 
+"^ot:ottTaxonName": "Cylindrus obtusus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 535326, 
 "@tb:identifier.taxonVariant": 710226, 
@@ -240,11 +356,14 @@
 }
 }, 
 "Tl1573470": {
-"^ot:originalLabel": "Rossmaessleria sicanoides MN153"
+"^ot:originalLabel": "Rossmaessleria sicanoides MN153", 
+"^ot:ottId": 5757768, 
+"^ot:ottTaxonName": "Rossmaessleria sicanoides"
 }, 
 "Tl1573472": {
-"^ot:altLabel": "Macularia sylvatica 2842", 
 "^ot:originalLabel": "Macularia sylvatica 2843", 
+"^ot:ottId": 96680, 
+"^ot:ottTaxonName": "Macularia sylvatica", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 626318, 
 "@tb:identifier.taxonVariant": 839202, 
@@ -252,11 +371,14 @@
 }
 }, 
 "Tl1573473": {
-"^ot:originalLabel": "Lindholmia nordmanni 1724"
+"^ot:originalLabel": "Lindholmia nordmanni 1724", 
+"^ot:ottId": 5757775, 
+"^ot:ottTaxonName": "Helix nordmanni"
 }, 
 "Tl1573474": {
-"^ot:altLabel": "Helicodonta obvoluta", 
 "^ot:originalLabel": "Helicodonta obvoluta 2646", 
+"^ot:ottId": 1011327, 
+"^ot:ottTaxonName": "Helicodonta obvoluta", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 626312, 
 "@tb:identifier.taxonVariant": 839196, 
@@ -266,6 +388,8 @@
 }, 
 "Tl1573475": {
 "^ot:originalLabel": "Macularia sylvatica 2842", 
+"^ot:ottId": 96680, 
+"^ot:ottTaxonName": "Macularia sylvatica", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 626318, 
 "@tb:identifier.taxonVariant": 839202, 
@@ -273,8 +397,9 @@
 }
 }, 
 "Tl1573476": {
-"^ot:altLabel": "Arianta arbustorum arbustorum", 
 "^ot:originalLabel": "Arianta arbustorum arbustorum MN036", 
+"^ot:ottId": 1000530, 
+"^ot:ottTaxonName": "Arianta arbustorum arbustorum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 101027, 
 "@tb:identifier.taxonVariant": 180260, 
@@ -283,32 +408,47 @@
 }
 }, 
 "Tl2027298": {
-"^ot:originalLabel": "Allognathus grateloupi SP645"
+"^ot:originalLabel": "Allognathus grateloupi SP645", 
+"^ot:ottId": 5757825, 
+"^ot:ottTaxonName": "Allognathus grateloupi"
 }, 
 "Tl2027299": {
-"^ot:originalLabel": "Helix albescens 1725"
+"^ot:originalLabel": "Helix albescens 1725", 
+"^ot:ottId": 5757780, 
+"^ot:ottTaxonName": "Helix albescens"
 }, 
 "Tl2027300": {
-"^ot:originalLabel": "Austrotachea vindobonensis MN327"
+"^ot:originalLabel": "Austrotachea vindobonensis MN327", 
+"^ot:ottId": 5757810, 
+"^ot:ottTaxonName": "Caucasotachea vindobonensis"
 }, 
 "Tl2027301": {
-"^ot:originalLabel": "Austrotachea vindobonensis 2368"
+"^ot:originalLabel": "Austrotachea vindobonensis 2368", 
+"^ot:ottId": 5757810, 
+"^ot:ottTaxonName": "Caucasotachea vindobonensis"
 }, 
 "Tl2027302": {
-"^ot:originalLabel": "Hemicycla plicaria MN017"
+"^ot:originalLabel": "Hemicycla plicaria MN017", 
+"^ot:ottId": 431304, 
+"^ot:ottTaxonName": "Hemicycla plicaria"
 }, 
 "Tl2027303": {
 "^ot:originalLabel": "Levantina lithophaga 467"
 }, 
 "Tl2027304": {
-"^ot:originalLabel": "Caucasotachea leucoranea MN207"
+"^ot:originalLabel": "Caucasotachea leucoranea MN207", 
+"^ot:ottId": 5757811, 
+"^ot:ottTaxonName": "Caucasotachea leucoranea"
 }, 
 "Tl2027305": {
-"^ot:originalLabel": "Caucasotachea atrolabiata 1721"
+"^ot:originalLabel": "Caucasotachea atrolabiata 1721", 
+"^ot:ottId": 5757808, 
+"^ot:ottTaxonName": "Caucasotachea atrolabiata"
 }, 
 "Tl2027306": {
-"^ot:altLabel": "Helix lucorum", 
 "^ot:originalLabel": "Helix lucorum MN193", 
+"^ot:ottId": 182108, 
+"^ot:ottTaxonName": "Helix lucorum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 626326, 
 "@tb:identifier.taxonVariant": 839210, 
@@ -317,29 +457,43 @@
 }
 }, 
 "Tl2027307": {
-"^ot:originalLabel": "Neocrassa neocrassa MN145"
+"^ot:originalLabel": "Neocrassa neocrassa MN145", 
+"^ot:ottId": 445877, 
+"^ot:ottTaxonName": "Codringtonia neocrassa"
 }, 
 "Tl2027308": {
-"^ot:originalLabel": "Caucasotachea calligera 1722"
+"^ot:originalLabel": "Caucasotachea calligera 1722", 
+"^ot:ottId": 1035557, 
+"^ot:ottTaxonName": "Caucasotachea calligera"
 }, 
 "Tl2027309": {
+"^ot:altLabel": "Iberellus hispanicus", 
 "^ot:originalLabel": "Iberellus hispanicus hispanicus SP648"
 }, 
 "Tl2027310": {
-"^ot:originalLabel": "Caucasotachea intercedens 2259"
+"^ot:originalLabel": "Caucasotachea intercedens 2259", 
+"^ot:ottId": 5757809, 
+"^ot:ottTaxonName": "Caucasotachea intercedens"
 }, 
 "Tl2027311": {
-"^ot:originalLabel": "Austrotachea vindobonensis 2369"
+"^ot:originalLabel": "Austrotachea vindobonensis 2369", 
+"^ot:ottId": 5757810, 
+"^ot:ottTaxonName": "Caucasotachea vindobonensis"
 }, 
 "Tl2027312": {
-"^ot:originalLabel": "Murella muralis muralis MN503"
+"^ot:originalLabel": "Murella muralis muralis MN503", 
+"^ot:ottId": 376835, 
+"^ot:ottTaxonName": "Murella muralis"
 }, 
 "Tl2027313": {
-"^ot:originalLabel": "Helix nicaeensis 2876"
+"^ot:originalLabel": "Helix nicaeensis 2876", 
+"^ot:ottId": 5757787, 
+"^ot:ottTaxonName": "Helix nicaeensis"
 }, 
 "Tl2027314": {
-"^ot:altLabel": "Helix pomatia", 
 "^ot:originalLabel": "Helix pomatia MN012", 
+"^ot:ottId": 349693, 
+"^ot:ottTaxonName": "Helix pomatia", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 626325, 
 "@tb:identifier.taxonVariant": 839209, 
@@ -360,9 +514,20 @@
 "^skos:historyNote": "Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlTreeBlockWriter@5dceddc7 $Rev$", 
 "treeById": {
 "Tr91045": {
-"@label": "con 50 majrule", 
+"@label": "Neiber & Hausdorf, 2015 Maximum Likelihood Concatenated", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:undefined", 
+"^ot:curatedType": "Maximum likelihood ", 
+"^ot:inGroupClade": "Tn13379369", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn13379362", 
+"^ot:specifiedRoot": "Tn13379362", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 41, 
 "^tb:quality.tree": "Unrated", 
