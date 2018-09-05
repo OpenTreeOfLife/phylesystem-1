@@ -54,16 +54,105 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2018-09-05T18:23:39.770Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "Asterids"
 }, 
-"^ot:curatorName": "Jesseholmes", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}, 
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": "$1"
+}, 
+"old": {
+"$": "^(\\S*\\s+\\S*).*"
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2018-09-05T18:23:39.770Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Jesseholmes"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S18982"
 }, 
+"^ot:focalCladeOTTTaxonName": "", 
 "^ot:otusElementOrder": [
 "Tls50372"
 ], 
@@ -73,6 +162,7 @@
 }, 
 "^ot:studyPublicationReference": "Lawrence T.J., & Datwyler S. 2016. Testing the Hypothesis of Allopolyploidy in the Origin of Penstemon azureus (PLANTAGINACEAE). Frontiers in Ecology and Evolution, 4(60).", 
 "^ot:studyYear": 2016, 
+"^ot:tag": [], 
 "^ot:taxonLinkPrefixes": {
 "@ubio": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:", 
 "@uniprot": "http://purl.uniprot.org/taxonomy/"
@@ -98,8 +188,9 @@
 "^skos:historyNote": "Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlOTUWriter@330adfa2 $Rev$", 
 "otuById": {
 "Tl2216351": {
-"^ot:altLabel": "Penstemon cardwellii", 
 "^ot:originalLabel": "Penstemon cardwellii 96", 
+"^ot:ottId": 22142, 
+"^ot:ottTaxonName": "Penstemon cardwellii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 20974, 
 "@tb:identifier.taxonVariant": 48806, 
@@ -108,8 +199,9 @@
 }
 }, 
 "Tl2216352": {
-"^ot:altLabel": "Penstemon heterophyllus", 
 "^ot:originalLabel": "Penstemon heterophyllus 101", 
+"^ot:ottId": 851269, 
+"^ot:ottTaxonName": "Penstemon heterophyllus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 20985, 
 "@tb:identifier.taxonVariant": 48841, 
@@ -118,8 +210,9 @@
 }
 }, 
 "Tl2216353": {
-"^ot:altLabel": "Penstemon laetus", 
 "^ot:originalLabel": "Penstemon laetus 127", 
+"^ot:ottId": 455464, 
+"^ot:ottTaxonName": "Penstemon laetus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 338481, 
 "@tb:identifier.taxonVariant": 375811, 
@@ -129,6 +222,8 @@
 }, 
 "Tl2216354": {
 "^ot:originalLabel": "Penstemon filiformis 86", 
+"^ot:ottId": 3883319, 
+"^ot:ottTaxonName": "Penstemon filiformis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 631854, 
 "@tb:identifier.taxonVariant": 846866, 
@@ -136,8 +231,9 @@
 }
 }, 
 "Tl2216355": {
-"^ot:altLabel": "Penstemon azureus", 
 "^ot:originalLabel": "Penstemon azureus 1113", 
+"^ot:ottId": 899958, 
+"^ot:ottTaxonName": "Penstemon azureus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 153146, 
 "@tb:identifier.taxonVariant": 228631, 
@@ -146,8 +242,9 @@
 }
 }, 
 "Tl2216356": {
-"^ot:altLabel": "Penstemon laetus", 
 "^ot:originalLabel": "Penstemon laetus 119", 
+"^ot:ottId": 455464, 
+"^ot:ottTaxonName": "Penstemon laetus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 338481, 
 "@tb:identifier.taxonVariant": 375811, 
@@ -156,8 +253,9 @@
 }
 }, 
 "Tl2216357": {
-"^ot:altLabel": "Penstemon azureus", 
 "^ot:originalLabel": "Penstemon azureus 83", 
+"^ot:ottId": 899958, 
+"^ot:ottTaxonName": "Penstemon azureus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 153146, 
 "@tb:identifier.taxonVariant": 228631, 
@@ -166,8 +264,9 @@
 }
 }, 
 "Tl2216358": {
-"^ot:altLabel": "Penstemon neotericus", 
 "^ot:originalLabel": "Penstemon neotericus 118", 
+"^ot:ottId": 421342, 
+"^ot:ottTaxonName": "Penstemon neotericus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 238052, 
 "@tb:identifier.taxonVariant": 300112, 
@@ -176,8 +275,9 @@
 }
 }, 
 "Tl2216359": {
-"^ot:altLabel": "Penstemon laetus", 
 "^ot:originalLabel": "Penstemon laetus 129", 
+"^ot:ottId": 455464, 
+"^ot:ottTaxonName": "Penstemon laetus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 338481, 
 "@tb:identifier.taxonVariant": 375811, 
@@ -186,8 +286,9 @@
 }
 }, 
 "Tl2216360": {
-"^ot:altLabel": "Penstemon parvulus", 
 "^ot:originalLabel": "Penstemon parvulus 1210", 
+"^ot:ottId": 241141, 
+"^ot:ottTaxonName": "Penstemon parvulus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 338498, 
 "@tb:identifier.taxonVariant": 375840, 
@@ -196,8 +297,9 @@
 }
 }, 
 "Tl2216361": {
-"^ot:altLabel": "Penstemon parvulus", 
 "^ot:originalLabel": "Penstemon parvulus 811", 
+"^ot:ottId": 241141, 
+"^ot:ottTaxonName": "Penstemon parvulus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 338498, 
 "@tb:identifier.taxonVariant": 375840, 
@@ -206,8 +308,9 @@
 }
 }, 
 "Tl2216362": {
-"^ot:altLabel": "Penstemon laetus", 
 "^ot:originalLabel": "Penstemon laetus 126", 
+"^ot:ottId": 455464, 
+"^ot:ottTaxonName": "Penstemon laetus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 338481, 
 "@tb:identifier.taxonVariant": 375811, 
@@ -216,8 +319,9 @@
 }
 }, 
 "Tl2216363": {
-"^ot:altLabel": "Penstemon heterophyllus", 
 "^ot:originalLabel": "Penstemon heterophyllus 4x 84", 
+"^ot:ottId": 851269, 
+"^ot:ottTaxonName": "Penstemon heterophyllus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 20985, 
 "@tb:identifier.taxonVariant": 48841, 
@@ -226,8 +330,9 @@
 }
 }, 
 "Tl2216364": {
-"^ot:altLabel": "Penstemon heterophyllus", 
 "^ot:originalLabel": "Penstemon heterophyllus 114", 
+"^ot:ottId": 851269, 
+"^ot:ottTaxonName": "Penstemon heterophyllus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 20985, 
 "@tb:identifier.taxonVariant": 48841, 
@@ -236,8 +341,9 @@
 }
 }, 
 "Tl2216365": {
-"^ot:altLabel": "Penstemon laetus", 
 "^ot:originalLabel": "Penstemon laetus 82", 
+"^ot:ottId": 455464, 
+"^ot:ottTaxonName": "Penstemon laetus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 338481, 
 "@tb:identifier.taxonVariant": 375811, 
@@ -246,8 +352,9 @@
 }
 }, 
 "Tl2216366": {
-"^ot:altLabel": "Penstemon neotericus", 
 "^ot:originalLabel": "Penstemon neotericus 125", 
+"^ot:ottId": 421342, 
+"^ot:ottTaxonName": "Penstemon neotericus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 238052, 
 "@tb:identifier.taxonVariant": 300112, 
@@ -256,8 +363,9 @@
 }
 }, 
 "Tl2216367": {
-"^ot:altLabel": "Penstemon heterophyllus", 
 "^ot:originalLabel": "Penstemon heterophyllus 4x 85", 
+"^ot:ottId": 851269, 
+"^ot:ottTaxonName": "Penstemon heterophyllus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 20985, 
 "@tb:identifier.taxonVariant": 48841, 
@@ -266,8 +374,9 @@
 }
 }, 
 "Tl2216368": {
-"^ot:altLabel": "Penstemon azureus", 
 "^ot:originalLabel": "Penstemon azureus 810", 
+"^ot:ottId": 899958, 
+"^ot:ottTaxonName": "Penstemon azureus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 153146, 
 "@tb:identifier.taxonVariant": 228631, 
@@ -276,8 +385,9 @@
 }
 }, 
 "Tl2216369": {
-"^ot:altLabel": "Penstemon heterophyllus", 
 "^ot:originalLabel": "Penstemon heterophyllus 1112", 
+"^ot:ottId": 851269, 
+"^ot:ottTaxonName": "Penstemon heterophyllus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 20985, 
 "@tb:identifier.taxonVariant": 48841, 
@@ -286,8 +396,9 @@
 }
 }, 
 "Tl2216370": {
-"^ot:altLabel": "Penstemon azureus", 
 "^ot:originalLabel": "Penstemon azureus 1111", 
+"^ot:ottId": 899958, 
+"^ot:ottTaxonName": "Penstemon azureus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 153146, 
 "@tb:identifier.taxonVariant": 228631, 
@@ -296,8 +407,9 @@
 }
 }, 
 "Tl2216371": {
-"^ot:altLabel": "Penstemon azureus", 
 "^ot:originalLabel": "Penstemon azureus 81", 
+"^ot:ottId": 899958, 
+"^ot:ottTaxonName": "Penstemon azureus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 153146, 
 "@tb:identifier.taxonVariant": 228631, 
@@ -306,8 +418,9 @@
 }
 }, 
 "Tl2216490": {
-"^ot:altLabel": "Penstemon laetus", 
 "^ot:originalLabel": "Penstemon laetus 119 B", 
+"^ot:ottId": 455464, 
+"^ot:ottTaxonName": "Penstemon laetus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 338481, 
 "@tb:identifier.taxonVariant": 375811, 
@@ -316,8 +429,9 @@
 }
 }, 
 "Tl2216491": {
-"^ot:altLabel": "Penstemon azureus", 
 "^ot:originalLabel": "Penstemon azureus 81 E", 
+"^ot:ottId": 899958, 
+"^ot:ottTaxonName": "Penstemon azureus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 153146, 
 "@tb:identifier.taxonVariant": 228631, 
@@ -326,8 +440,9 @@
 }
 }, 
 "Tl2216492": {
-"^ot:altLabel": "Penstemon heterophyllus", 
 "^ot:originalLabel": "Penstemon heterophyllus 114 D", 
+"^ot:ottId": 851269, 
+"^ot:ottTaxonName": "Penstemon heterophyllus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 20985, 
 "@tb:identifier.taxonVariant": 48841, 
@@ -336,8 +451,9 @@
 }
 }, 
 "Tl2216493": {
-"^ot:altLabel": "Penstemon azureus", 
 "^ot:originalLabel": "Penstemon azureus 810 C", 
+"^ot:ottId": 899958, 
+"^ot:ottTaxonName": "Penstemon azureus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 153146, 
 "@tb:identifier.taxonVariant": 228631, 
@@ -346,8 +462,9 @@
 }
 }, 
 "Tl2216494": {
-"^ot:altLabel": "Penstemon azureus", 
 "^ot:originalLabel": "Penstemon azureus 810 A", 
+"^ot:ottId": 899958, 
+"^ot:ottTaxonName": "Penstemon azureus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 153146, 
 "@tb:identifier.taxonVariant": 228631, 
@@ -356,8 +473,9 @@
 }
 }, 
 "Tl2216495": {
-"^ot:altLabel": "Penstemon laetus", 
 "^ot:originalLabel": "Penstemon laetus 82 A", 
+"^ot:ottId": 455464, 
+"^ot:ottTaxonName": "Penstemon laetus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 338481, 
 "@tb:identifier.taxonVariant": 375811, 
@@ -366,8 +484,9 @@
 }
 }, 
 "Tl2216496": {
-"^ot:altLabel": "Penstemon parvulus", 
 "^ot:originalLabel": "Penstemon parvulus 1210 H", 
+"^ot:ottId": 241141, 
+"^ot:ottTaxonName": "Penstemon parvulus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 338498, 
 "@tb:identifier.taxonVariant": 375840, 
@@ -379,8 +498,9 @@
 "^ot:originalLabel": "Keckellia cordifolia 1115 C"
 }, 
 "Tl2216498": {
-"^ot:altLabel": "Penstemon azureus", 
 "^ot:originalLabel": "Penstemon azureus 910 B", 
+"^ot:ottId": 899958, 
+"^ot:ottTaxonName": "Penstemon azureus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 153146, 
 "@tb:identifier.taxonVariant": 228631, 
@@ -389,8 +509,9 @@
 }
 }, 
 "Tl2216499": {
-"^ot:altLabel": "Penstemon azureus", 
 "^ot:originalLabel": "Penstemon azureus 83 G", 
+"^ot:ottId": 899958, 
+"^ot:ottTaxonName": "Penstemon azureus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 153146, 
 "@tb:identifier.taxonVariant": 228631, 
@@ -399,8 +520,9 @@
 }
 }, 
 "Tl2216500": {
-"^ot:altLabel": "Penstemon heterophyllus", 
 "^ot:originalLabel": "Penstemon heterophyllus 114 A", 
+"^ot:ottId": 851269, 
+"^ot:ottTaxonName": "Penstemon heterophyllus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 20985, 
 "@tb:identifier.taxonVariant": 48841, 
@@ -409,8 +531,9 @@
 }
 }, 
 "Tl2216501": {
-"^ot:altLabel": "Penstemon azureus", 
 "^ot:originalLabel": "Penstemon azureus 810 F", 
+"^ot:ottId": 899958, 
+"^ot:ottTaxonName": "Penstemon azureus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 153146, 
 "@tb:identifier.taxonVariant": 228631, 
@@ -419,8 +542,9 @@
 }
 }, 
 "Tl2216502": {
-"^ot:altLabel": "Penstemon neotericus", 
 "^ot:originalLabel": "Penstemon neotericus 125 D", 
+"^ot:ottId": 421342, 
+"^ot:ottTaxonName": "Penstemon neotericus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 238052, 
 "@tb:identifier.taxonVariant": 300112, 
@@ -429,8 +553,9 @@
 }
 }, 
 "Tl2216503": {
-"^ot:altLabel": "Penstemon azureus", 
 "^ot:originalLabel": "Penstemon azureus 83 A", 
+"^ot:ottId": 899958, 
+"^ot:ottTaxonName": "Penstemon azureus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 153146, 
 "@tb:identifier.taxonVariant": 228631, 
@@ -439,8 +564,9 @@
 }
 }, 
 "Tl2216504": {
-"^ot:altLabel": "Penstemon azureus", 
 "^ot:originalLabel": "Penstemon azureus 81 G", 
+"^ot:ottId": 899958, 
+"^ot:ottTaxonName": "Penstemon azureus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 153146, 
 "@tb:identifier.taxonVariant": 228631, 
@@ -449,8 +575,9 @@
 }
 }, 
 "Tl2216505": {
-"^ot:altLabel": "Penstemon neotericus", 
 "^ot:originalLabel": "Penstemon neotericus 118 B", 
+"^ot:ottId": 421342, 
+"^ot:ottTaxonName": "Penstemon neotericus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 238052, 
 "@tb:identifier.taxonVariant": 300112, 
@@ -459,8 +586,9 @@
 }
 }, 
 "Tl2216506": {
-"^ot:altLabel": "Penstemon neotericus", 
 "^ot:originalLabel": "Penstemon neotericus 118 D", 
+"^ot:ottId": 421342, 
+"^ot:ottTaxonName": "Penstemon neotericus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 238052, 
 "@tb:identifier.taxonVariant": 300112, 
@@ -469,8 +597,9 @@
 }
 }, 
 "Tl2216507": {
-"^ot:altLabel": "Penstemon heterophyllus", 
 "^ot:originalLabel": "Penstemon heterophyllus 114 B", 
+"^ot:ottId": 851269, 
+"^ot:ottTaxonName": "Penstemon heterophyllus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 20985, 
 "@tb:identifier.taxonVariant": 48841, 
@@ -479,8 +608,9 @@
 }
 }, 
 "Tl2216508": {
-"^ot:altLabel": "Penstemon heterophyllus", 
 "^ot:originalLabel": "Penstemon heterophyllus 4x 84 B", 
+"^ot:ottId": 851269, 
+"^ot:ottTaxonName": "Penstemon heterophyllus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 20985, 
 "@tb:identifier.taxonVariant": 48841, 
@@ -489,8 +619,9 @@
 }
 }, 
 "Tl2216509": {
-"^ot:altLabel": "Penstemon heterophyllus", 
 "^ot:originalLabel": "Penstemon heterophyllus 101 C", 
+"^ot:ottId": 851269, 
+"^ot:ottTaxonName": "Penstemon heterophyllus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 20985, 
 "@tb:identifier.taxonVariant": 48841, 
@@ -499,8 +630,9 @@
 }
 }, 
 "Tl2216510": {
-"^ot:altLabel": "Penstemon neotericus", 
 "^ot:originalLabel": "Penstemon neotericus 125 F", 
+"^ot:ottId": 421342, 
+"^ot:ottTaxonName": "Penstemon neotericus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 238052, 
 "@tb:identifier.taxonVariant": 300112, 
@@ -509,8 +641,9 @@
 }
 }, 
 "Tl2216511": {
-"^ot:altLabel": "Penstemon neotericus", 
 "^ot:originalLabel": "Penstemon neotericus 125 I", 
+"^ot:ottId": 421342, 
+"^ot:ottTaxonName": "Penstemon neotericus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 238052, 
 "@tb:identifier.taxonVariant": 300112, 
@@ -519,8 +652,9 @@
 }
 }, 
 "Tl2216512": {
-"^ot:altLabel": "Penstemon parvulus", 
 "^ot:originalLabel": "Penstemon parvulus 1210 B", 
+"^ot:ottId": 241141, 
+"^ot:ottTaxonName": "Penstemon parvulus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 338498, 
 "@tb:identifier.taxonVariant": 375840, 
@@ -529,8 +663,9 @@
 }
 }, 
 "Tl2216513": {
-"^ot:altLabel": "Penstemon heterophyllus", 
 "^ot:originalLabel": "Penstemon heterophyllus 101 G", 
+"^ot:ottId": 851269, 
+"^ot:ottTaxonName": "Penstemon heterophyllus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 20985, 
 "@tb:identifier.taxonVariant": 48841, 
@@ -539,8 +674,9 @@
 }
 }, 
 "Tl2216514": {
-"^ot:altLabel": "Penstemon azureus", 
 "^ot:originalLabel": "Penstemon azureus 1113 A", 
+"^ot:ottId": 899958, 
+"^ot:ottTaxonName": "Penstemon azureus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 153146, 
 "@tb:identifier.taxonVariant": 228631, 
@@ -549,8 +685,9 @@
 }
 }, 
 "Tl2216515": {
-"^ot:altLabel": "Penstemon heterophyllus", 
 "^ot:originalLabel": "Penstemon heterophyllus 4x 85 A", 
+"^ot:ottId": 851269, 
+"^ot:ottTaxonName": "Penstemon heterophyllus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 20985, 
 "@tb:identifier.taxonVariant": 48841, 
@@ -559,8 +696,9 @@
 }
 }, 
 "Tl2216516": {
-"^ot:altLabel": "Penstemon azureus", 
 "^ot:originalLabel": "Penstemon azureus 1111 E", 
+"^ot:ottId": 899958, 
+"^ot:ottTaxonName": "Penstemon azureus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 153146, 
 "@tb:identifier.taxonVariant": 228631, 
@@ -569,8 +707,9 @@
 }
 }, 
 "Tl2216517": {
-"^ot:altLabel": "Penstemon neotericus", 
 "^ot:originalLabel": "Penstemon neotericus 118 K", 
+"^ot:ottId": 421342, 
+"^ot:ottTaxonName": "Penstemon neotericus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 238052, 
 "@tb:identifier.taxonVariant": 300112, 
@@ -579,8 +718,9 @@
 }
 }, 
 "Tl2216518": {
-"^ot:altLabel": "Penstemon azureus", 
 "^ot:originalLabel": "Penstemon azureus 1113 B", 
+"^ot:ottId": 899958, 
+"^ot:ottTaxonName": "Penstemon azureus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 153146, 
 "@tb:identifier.taxonVariant": 228631, 
@@ -589,8 +729,9 @@
 }
 }, 
 "Tl2216519": {
-"^ot:altLabel": "Penstemon heterophyllus", 
 "^ot:originalLabel": "Penstemon heterophyllus 4x 84 F", 
+"^ot:ottId": 851269, 
+"^ot:ottTaxonName": "Penstemon heterophyllus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 20985, 
 "@tb:identifier.taxonVariant": 48841, 
@@ -599,8 +740,9 @@
 }
 }, 
 "Tl2216520": {
-"^ot:altLabel": "Penstemon laetus", 
 "^ot:originalLabel": "Penstemon laetus 82 C", 
+"^ot:ottId": 455464, 
+"^ot:ottTaxonName": "Penstemon laetus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 338481, 
 "@tb:identifier.taxonVariant": 375811, 
@@ -609,8 +751,9 @@
 }
 }, 
 "Tl2216521": {
-"^ot:altLabel": "Penstemon heterophyllus", 
 "^ot:originalLabel": "Penstemon heterophyllus 4x 84 DB", 
+"^ot:ottId": 851269, 
+"^ot:ottTaxonName": "Penstemon heterophyllus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 20985, 
 "@tb:identifier.taxonVariant": 48841, 
@@ -619,8 +762,9 @@
 }
 }, 
 "Tl2216522": {
-"^ot:altLabel": "Penstemon azureus", 
 "^ot:originalLabel": "Penstemon azureus 81 A", 
+"^ot:ottId": 899958, 
+"^ot:ottTaxonName": "Penstemon azureus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 153146, 
 "@tb:identifier.taxonVariant": 228631, 
@@ -629,8 +773,9 @@
 }
 }, 
 "Tl2216523": {
-"^ot:altLabel": "Penstemon heterophyllus", 
 "^ot:originalLabel": "Penstemon heterophyllus 101 E", 
+"^ot:ottId": 851269, 
+"^ot:ottTaxonName": "Penstemon heterophyllus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 20985, 
 "@tb:identifier.taxonVariant": 48841, 
@@ -639,8 +784,9 @@
 }
 }, 
 "Tl2216524": {
-"^ot:altLabel": "Penstemon parvulus", 
 "^ot:originalLabel": "Penstemon parvulus 811 A", 
+"^ot:ottId": 241141, 
+"^ot:ottTaxonName": "Penstemon parvulus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 338498, 
 "@tb:identifier.taxonVariant": 375840, 
@@ -649,8 +795,9 @@
 }
 }, 
 "Tl2216525": {
-"^ot:altLabel": "Penstemon laetus", 
 "^ot:originalLabel": "Penstemon laetus 119 A", 
+"^ot:ottId": 455464, 
+"^ot:ottTaxonName": "Penstemon laetus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 338481, 
 "@tb:identifier.taxonVariant": 375811, 
@@ -659,8 +806,9 @@
 }
 }, 
 "Tl2216526": {
-"^ot:altLabel": "Penstemon azureus", 
 "^ot:originalLabel": "Penstemon azureus 810 H", 
+"^ot:ottId": 899958, 
+"^ot:ottTaxonName": "Penstemon azureus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 153146, 
 "@tb:identifier.taxonVariant": 228631, 
@@ -669,8 +817,9 @@
 }
 }, 
 "Tl2216527": {
-"^ot:altLabel": "Penstemon laetus", 
 "^ot:originalLabel": "Penstemon laetus 119 C", 
+"^ot:ottId": 455464, 
+"^ot:ottTaxonName": "Penstemon laetus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 338481, 
 "@tb:identifier.taxonVariant": 375811, 
@@ -679,8 +828,9 @@
 }
 }, 
 "Tl2216528": {
-"^ot:altLabel": "Penstemon parvulus", 
 "^ot:originalLabel": "Penstemon parvulus 1210 D", 
+"^ot:ottId": 241141, 
+"^ot:ottTaxonName": "Penstemon parvulus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 338498, 
 "@tb:identifier.taxonVariant": 375840, 
@@ -689,8 +839,9 @@
 }
 }, 
 "Tl2216529": {
-"^ot:altLabel": "Penstemon heterophyllus", 
 "^ot:originalLabel": "Penstemon heterophyllus 4x 84 C", 
+"^ot:ottId": 851269, 
+"^ot:ottTaxonName": "Penstemon heterophyllus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 20985, 
 "@tb:identifier.taxonVariant": 48841, 
@@ -699,8 +850,9 @@
 }
 }, 
 "Tl2216530": {
-"^ot:altLabel": "Penstemon azureus", 
 "^ot:originalLabel": "Penstemon azureus 1111 B", 
+"^ot:ottId": 899958, 
+"^ot:ottTaxonName": "Penstemon azureus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 153146, 
 "@tb:identifier.taxonVariant": 228631, 
@@ -709,8 +861,9 @@
 }
 }, 
 "Tl2216531": {
-"^ot:altLabel": "Penstemon heterophyllus", 
 "^ot:originalLabel": "Penstemon heterophyllus 4x 85 H", 
+"^ot:ottId": 851269, 
+"^ot:ottTaxonName": "Penstemon heterophyllus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 20985, 
 "@tb:identifier.taxonVariant": 48841, 
@@ -719,8 +872,9 @@
 }
 }, 
 "Tl2216532": {
-"^ot:altLabel": "Penstemon heterophyllus", 
 "^ot:originalLabel": "Penstemon heterophyllus 1112 B", 
+"^ot:ottId": 851269, 
+"^ot:ottTaxonName": "Penstemon heterophyllus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 20985, 
 "@tb:identifier.taxonVariant": 48841, 
@@ -729,8 +883,9 @@
 }
 }, 
 "Tl2216533": {
-"^ot:altLabel": "Penstemon neotericus", 
 "^ot:originalLabel": "Penstemon neotericus 118 A", 
+"^ot:ottId": 421342, 
+"^ot:ottTaxonName": "Penstemon neotericus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 238052, 
 "@tb:identifier.taxonVariant": 300112, 
@@ -739,8 +894,9 @@
 }
 }, 
 "Tl2216534": {
-"^ot:altLabel": "Penstemon azureus", 
 "^ot:originalLabel": "Penstemon azureus 83 F", 
+"^ot:ottId": 899958, 
+"^ot:ottTaxonName": "Penstemon azureus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 153146, 
 "@tb:identifier.taxonVariant": 228631, 
@@ -749,8 +905,9 @@
 }
 }, 
 "Tl2216535": {
-"^ot:altLabel": "Penstemon parvulus", 
 "^ot:originalLabel": "Penstemon parvulus 811 D", 
+"^ot:ottId": 241141, 
+"^ot:ottTaxonName": "Penstemon parvulus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 338498, 
 "@tb:identifier.taxonVariant": 375840, 
@@ -759,8 +916,9 @@
 }
 }, 
 "Tl2216536": {
-"^ot:altLabel": "Penstemon neotericus", 
 "^ot:originalLabel": "Penstemon neotericus 125 H", 
+"^ot:ottId": 421342, 
+"^ot:ottTaxonName": "Penstemon neotericus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 238052, 
 "@tb:identifier.taxonVariant": 300112, 
@@ -769,8 +927,9 @@
 }
 }, 
 "Tl2216537": {
-"^ot:altLabel": "Penstemon neotericus", 
 "^ot:originalLabel": "Penstemon neotericus 125 C", 
+"^ot:ottId": 421342, 
+"^ot:ottTaxonName": "Penstemon neotericus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 238052, 
 "@tb:identifier.taxonVariant": 300112, 
@@ -779,8 +938,9 @@
 }
 }, 
 "Tl2216538": {
-"^ot:altLabel": "Penstemon heterophyllus", 
 "^ot:originalLabel": "Penstemon heterophyllus 4x 85 D", 
+"^ot:ottId": 851269, 
+"^ot:ottTaxonName": "Penstemon heterophyllus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 20985, 
 "@tb:identifier.taxonVariant": 48841, 
@@ -789,8 +949,9 @@
 }
 }, 
 "Tl2216539": {
-"^ot:altLabel": "Penstemon neotericus", 
 "^ot:originalLabel": "Penstemon neotericus 118 H", 
+"^ot:ottId": 421342, 
+"^ot:ottTaxonName": "Penstemon neotericus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 238052, 
 "@tb:identifier.taxonVariant": 300112, 
@@ -799,8 +960,9 @@
 }
 }, 
 "Tl2216540": {
-"^ot:altLabel": "Penstemon azureus", 
 "^ot:originalLabel": "Penstemon azureus 81 D", 
+"^ot:ottId": 899958, 
+"^ot:ottTaxonName": "Penstemon azureus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 153146, 
 "@tb:identifier.taxonVariant": 228631, 
@@ -809,8 +971,9 @@
 }
 }, 
 "Tl2216541": {
-"^ot:altLabel": "Penstemon heterophyllus", 
 "^ot:originalLabel": "Penstemon heterophyllus 114 C", 
+"^ot:ottId": 851269, 
+"^ot:ottTaxonName": "Penstemon heterophyllus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 20985, 
 "@tb:identifier.taxonVariant": 48841, 
@@ -819,8 +982,9 @@
 }
 }, 
 "Tl2216542": {
-"^ot:altLabel": "Penstemon parvulus", 
 "^ot:originalLabel": "Penstemon parvulus 811 E", 
+"^ot:ottId": 241141, 
+"^ot:ottTaxonName": "Penstemon parvulus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 338498, 
 "@tb:identifier.taxonVariant": 375840, 
@@ -829,8 +993,9 @@
 }
 }, 
 "Tl2216543": {
-"^ot:altLabel": "Penstemon neotericus", 
 "^ot:originalLabel": "Penstemon neotericus 118 E", 
+"^ot:ottId": 421342, 
+"^ot:ottTaxonName": "Penstemon neotericus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 238052, 
 "@tb:identifier.taxonVariant": 300112, 
@@ -839,8 +1004,9 @@
 }
 }, 
 "Tl2216544": {
-"^ot:altLabel": "Penstemon azureus", 
 "^ot:originalLabel": "Penstemon azureus 810 I", 
+"^ot:ottId": 899958, 
+"^ot:ottTaxonName": "Penstemon azureus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 153146, 
 "@tb:identifier.taxonVariant": 228631, 
@@ -849,8 +1015,9 @@
 }
 }, 
 "Tl2216545": {
-"^ot:altLabel": "Penstemon laetus", 
 "^ot:originalLabel": "Penstemon laetus 119 D", 
+"^ot:ottId": 455464, 
+"^ot:ottTaxonName": "Penstemon laetus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 338481, 
 "@tb:identifier.taxonVariant": 375811, 
@@ -859,11 +1026,14 @@
 }
 }, 
 "Tl2216546": {
-"^ot:originalLabel": "Penstemon filiformis 86 D"
+"^ot:originalLabel": "Penstemon filiformis 86 D", 
+"^ot:ottId": 3883319, 
+"^ot:ottTaxonName": "Penstemon filiformis"
 }, 
 "Tl2216547": {
-"^ot:altLabel": "Penstemon neotericus", 
 "^ot:originalLabel": "Penstemon neotericus 118 I", 
+"^ot:ottId": 421342, 
+"^ot:ottTaxonName": "Penstemon neotericus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 238052, 
 "@tb:identifier.taxonVariant": 300112, 
@@ -872,8 +1042,9 @@
 }
 }, 
 "Tl2216548": {
-"^ot:altLabel": "Penstemon azureus", 
 "^ot:originalLabel": "Penstemon azureus 81 C", 
+"^ot:ottId": 899958, 
+"^ot:ottTaxonName": "Penstemon azureus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 153146, 
 "@tb:identifier.taxonVariant": 228631, 
@@ -882,8 +1053,9 @@
 }
 }, 
 "Tl2216549": {
-"^ot:altLabel": "Penstemon azureus", 
 "^ot:originalLabel": "Penstemon azureus 81 H", 
+"^ot:ottId": 899958, 
+"^ot:ottTaxonName": "Penstemon azureus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 153146, 
 "@tb:identifier.taxonVariant": 228631, 
@@ -892,8 +1064,9 @@
 }
 }, 
 "Tl2216550": {
-"^ot:altLabel": "Penstemon heterophyllus", 
 "^ot:originalLabel": "Penstemon heterophyllus 101 A", 
+"^ot:ottId": 851269, 
+"^ot:ottTaxonName": "Penstemon heterophyllus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 20985, 
 "@tb:identifier.taxonVariant": 48841, 
@@ -902,8 +1075,9 @@
 }
 }, 
 "Tl2216551": {
-"^ot:altLabel": "Penstemon laetus", 
 "^ot:originalLabel": "Penstemon laetus 127 D", 
+"^ot:ottId": 455464, 
+"^ot:ottTaxonName": "Penstemon laetus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 338481, 
 "@tb:identifier.taxonVariant": 375811, 
@@ -912,8 +1086,9 @@
 }
 }, 
 "Tl2216552": {
-"^ot:altLabel": "Penstemon azureus", 
 "^ot:originalLabel": "Penstemon azureus 81 FA", 
+"^ot:ottId": 899958, 
+"^ot:ottTaxonName": "Penstemon azureus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 153146, 
 "@tb:identifier.taxonVariant": 228631, 
@@ -922,8 +1097,9 @@
 }
 }, 
 "Tl2216553": {
-"^ot:altLabel": "Penstemon heterophyllus", 
 "^ot:originalLabel": "Penstemon heterophyllus 101 B", 
+"^ot:ottId": 851269, 
+"^ot:ottTaxonName": "Penstemon heterophyllus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 20985, 
 "@tb:identifier.taxonVariant": 48841, 
@@ -932,8 +1108,9 @@
 }
 }, 
 "Tl2216554": {
-"^ot:altLabel": "Penstemon azureus", 
 "^ot:originalLabel": "Penstemon azureus 1111 G", 
+"^ot:ottId": 899958, 
+"^ot:ottTaxonName": "Penstemon azureus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 153146, 
 "@tb:identifier.taxonVariant": 228631, 
@@ -942,8 +1119,9 @@
 }
 }, 
 "Tl2216555": {
-"^ot:altLabel": "Penstemon heterophyllus", 
 "^ot:originalLabel": "Penstemon heterophyllus 101 D", 
+"^ot:ottId": 851269, 
+"^ot:ottTaxonName": "Penstemon heterophyllus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 20985, 
 "@tb:identifier.taxonVariant": 48841, 
@@ -952,8 +1130,9 @@
 }
 }, 
 "Tl2216556": {
-"^ot:altLabel": "Penstemon azureus", 
 "^ot:originalLabel": "Penstemon azureus 810 G", 
+"^ot:ottId": 899958, 
+"^ot:ottTaxonName": "Penstemon azureus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 153146, 
 "@tb:identifier.taxonVariant": 228631, 
@@ -962,8 +1141,9 @@
 }
 }, 
 "Tl2216557": {
-"^ot:altLabel": "Penstemon heterophyllus", 
 "^ot:originalLabel": "Penstemon heterophyllus 4x 84 G", 
+"^ot:ottId": 851269, 
+"^ot:ottTaxonName": "Penstemon heterophyllus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 20985, 
 "@tb:identifier.taxonVariant": 48841, 
@@ -975,8 +1155,9 @@
 "^ot:originalLabel": "Keckellia cordifolia 1115 B"
 }, 
 "Tl2216559": {
-"^ot:altLabel": "Penstemon azureus", 
 "^ot:originalLabel": "Penstemon azureus 81 I", 
+"^ot:ottId": 899958, 
+"^ot:ottTaxonName": "Penstemon azureus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 153146, 
 "@tb:identifier.taxonVariant": 228631, 
@@ -985,8 +1166,9 @@
 }
 }, 
 "Tl2216560": {
-"^ot:altLabel": "Penstemon heterophyllus", 
 "^ot:originalLabel": "Penstemon heterophyllus 1112 A", 
+"^ot:ottId": 851269, 
+"^ot:ottTaxonName": "Penstemon heterophyllus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 20985, 
 "@tb:identifier.taxonVariant": 48841, 
@@ -995,8 +1177,9 @@
 }
 }, 
 "Tl2216561": {
-"^ot:altLabel": "Penstemon parvulus", 
 "^ot:originalLabel": "Penstemon parvulus 1210 G", 
+"^ot:ottId": 241141, 
+"^ot:ottTaxonName": "Penstemon parvulus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 338498, 
 "@tb:identifier.taxonVariant": 375840, 
@@ -1005,8 +1188,9 @@
 }
 }, 
 "Tl2216562": {
-"^ot:altLabel": "Penstemon laetus", 
 "^ot:originalLabel": "Penstemon laetus 82 B", 
+"^ot:ottId": 455464, 
+"^ot:ottTaxonName": "Penstemon laetus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 338481, 
 "@tb:identifier.taxonVariant": 375811, 
@@ -1015,8 +1199,9 @@
 }
 }, 
 "Tl2216563": {
-"^ot:altLabel": "Penstemon neotericus", 
 "^ot:originalLabel": "Penstemon neotericus 118 G", 
+"^ot:ottId": 421342, 
+"^ot:ottTaxonName": "Penstemon neotericus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 238052, 
 "@tb:identifier.taxonVariant": 300112, 
@@ -1025,8 +1210,9 @@
 }
 }, 
 "Tl2216564": {
-"^ot:altLabel": "Penstemon parvulus", 
 "^ot:originalLabel": "Penstemon parvulus 1210 C", 
+"^ot:ottId": 241141, 
+"^ot:ottTaxonName": "Penstemon parvulus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 338498, 
 "@tb:identifier.taxonVariant": 375840, 
@@ -1035,8 +1221,9 @@
 }
 }, 
 "Tl2216565": {
-"^ot:altLabel": "Penstemon azureus", 
 "^ot:originalLabel": "Penstemon azureus 81 B", 
+"^ot:ottId": 899958, 
+"^ot:ottTaxonName": "Penstemon azureus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 153146, 
 "@tb:identifier.taxonVariant": 228631, 
@@ -1045,8 +1232,9 @@
 }
 }, 
 "Tl2216566": {
-"^ot:altLabel": "Penstemon azureus", 
 "^ot:originalLabel": "Penstemon azureus 83 HA", 
+"^ot:ottId": 899958, 
+"^ot:ottTaxonName": "Penstemon azureus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 153146, 
 "@tb:identifier.taxonVariant": 228631, 
@@ -1055,8 +1243,9 @@
 }
 }, 
 "Tl2216567": {
-"^ot:altLabel": "Penstemon neotericus", 
 "^ot:originalLabel": "Penstemon neotericus 125 K", 
+"^ot:ottId": 421342, 
+"^ot:ottTaxonName": "Penstemon neotericus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 238052, 
 "@tb:identifier.taxonVariant": 300112, 
@@ -1065,8 +1254,9 @@
 }
 }, 
 "Tl2216568": {
-"^ot:altLabel": "Penstemon parvulus", 
 "^ot:originalLabel": "Penstemon parvulus 1210 E", 
+"^ot:ottId": 241141, 
+"^ot:ottTaxonName": "Penstemon parvulus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 338498, 
 "@tb:identifier.taxonVariant": 375840, 
@@ -1075,8 +1265,9 @@
 }
 }, 
 "Tl2216569": {
-"^ot:altLabel": "Penstemon laetus", 
 "^ot:originalLabel": "Penstemon laetus 119 E", 
+"^ot:ottId": 455464, 
+"^ot:ottTaxonName": "Penstemon laetus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 338481, 
 "@tb:identifier.taxonVariant": 375811, 
@@ -1085,8 +1276,9 @@
 }
 }, 
 "Tl2216570": {
-"^ot:altLabel": "Penstemon heterophyllus", 
 "^ot:originalLabel": "Penstemon heterophyllus 4x 85 B", 
+"^ot:ottId": 851269, 
+"^ot:ottTaxonName": "Penstemon heterophyllus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 20985, 
 "@tb:identifier.taxonVariant": 48841, 
@@ -1095,8 +1287,9 @@
 }
 }, 
 "Tl2216571": {
-"^ot:altLabel": "Penstemon laetus", 
 "^ot:originalLabel": "Penstemon laetus 82 D", 
+"^ot:ottId": 455464, 
+"^ot:ottTaxonName": "Penstemon laetus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 338481, 
 "@tb:identifier.taxonVariant": 375811, 
@@ -1105,8 +1298,9 @@
 }
 }, 
 "Tl2216572": {
-"^ot:altLabel": "Penstemon heterophyllus", 
 "^ot:originalLabel": "Penstemon heterophyllus 101 F", 
+"^ot:ottId": 851269, 
+"^ot:ottTaxonName": "Penstemon heterophyllus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 20985, 
 "@tb:identifier.taxonVariant": 48841, 
@@ -1115,8 +1309,9 @@
 }
 }, 
 "Tl2216573": {
-"^ot:altLabel": "Penstemon neotericus", 
 "^ot:originalLabel": "Penstemon neotericus 125 B", 
+"^ot:ottId": 421342, 
+"^ot:ottTaxonName": "Penstemon neotericus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 238052, 
 "@tb:identifier.taxonVariant": 300112, 
@@ -1125,8 +1320,9 @@
 }
 }, 
 "Tl2216574": {
-"^ot:altLabel": "Penstemon neotericus", 
 "^ot:originalLabel": "Penstemon neotericus 125 G", 
+"^ot:ottId": 421342, 
+"^ot:ottTaxonName": "Penstemon neotericus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 238052, 
 "@tb:identifier.taxonVariant": 300112, 
@@ -1135,8 +1331,9 @@
 }
 }, 
 "Tl2216575": {
-"^ot:altLabel": "Penstemon neotericus", 
 "^ot:originalLabel": "Penstemon neotericus 118 J", 
+"^ot:ottId": 421342, 
+"^ot:ottTaxonName": "Penstemon neotericus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 238052, 
 "@tb:identifier.taxonVariant": 300112, 
@@ -1145,8 +1342,9 @@
 }
 }, 
 "Tl2216576": {
-"^ot:altLabel": "Penstemon azureus", 
 "^ot:originalLabel": "Penstemon azureus 83 D", 
+"^ot:ottId": 899958, 
+"^ot:ottTaxonName": "Penstemon azureus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 153146, 
 "@tb:identifier.taxonVariant": 228631, 
@@ -1155,8 +1353,9 @@
 }
 }, 
 "Tl2216577": {
-"^ot:altLabel": "Penstemon filiformis 86", 
 "^ot:originalLabel": "Penstemon filiformis 86 A", 
+"^ot:ottId": 3883319, 
+"^ot:ottTaxonName": "Penstemon filiformis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 631854, 
 "@tb:identifier.taxonVariant": 846866, 
@@ -1164,8 +1363,9 @@
 }
 }, 
 "Tl2216578": {
-"^ot:altLabel": "Penstemon neotericus", 
 "^ot:originalLabel": "Penstemon neotericus 118 F", 
+"^ot:ottId": 421342, 
+"^ot:ottTaxonName": "Penstemon neotericus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 238052, 
 "@tb:identifier.taxonVariant": 300112, 
@@ -1174,8 +1374,9 @@
 }
 }, 
 "Tl2216579": {
-"^ot:altLabel": "Penstemon neotericus", 
 "^ot:originalLabel": "Penstemon neotericus 125 A", 
+"^ot:ottId": 421342, 
+"^ot:ottTaxonName": "Penstemon neotericus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 238052, 
 "@tb:identifier.taxonVariant": 300112, 
@@ -1184,8 +1385,9 @@
 }
 }, 
 "Tl2236868": {
-"^ot:altLabel": "Penstemon neotericus", 
 "^ot:originalLabel": "Penstemon neotericus 118 f", 
+"^ot:ottId": 421342, 
+"^ot:ottTaxonName": "Penstemon neotericus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 238052, 
 "@tb:identifier.taxonVariant": 300112, 
@@ -1194,8 +1396,9 @@
 }
 }, 
 "Tl2236869": {
-"^ot:altLabel": "Penstemon neotericus", 
 "^ot:originalLabel": "Penstemon neotericus 125 L", 
+"^ot:ottId": 421342, 
+"^ot:ottTaxonName": "Penstemon neotericus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 238052, 
 "@tb:identifier.taxonVariant": 300112, 
@@ -1204,8 +1407,9 @@
 }
 }, 
 "Tl2236870": {
-"^ot:altLabel": "Penstemon azureus", 
 "^ot:originalLabel": "Penstemon azureus 081 b", 
+"^ot:ottId": 899958, 
+"^ot:ottTaxonName": "Penstemon azureus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 153146, 
 "@tb:identifier.taxonVariant": 228631, 
@@ -1214,8 +1418,9 @@
 }
 }, 
 "Tl2236871": {
-"^ot:altLabel": "Penstemon azureus", 
 "^ot:originalLabel": "Penstemon azureus 1113 K", 
+"^ot:ottId": 899958, 
+"^ot:ottTaxonName": "Penstemon azureus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 153146, 
 "@tb:identifier.taxonVariant": 228631, 
@@ -1224,8 +1429,9 @@
 }
 }, 
 "Tl2236872": {
-"^ot:altLabel": "Penstemon neotericus", 
 "^ot:originalLabel": "Penstemon neotericus 118 a", 
+"^ot:ottId": 421342, 
+"^ot:ottTaxonName": "Penstemon neotericus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 238052, 
 "@tb:identifier.taxonVariant": 300112, 
@@ -1234,8 +1440,9 @@
 }
 }, 
 "Tl2236873": {
-"^ot:altLabel": "Penstemon neotericus", 
 "^ot:originalLabel": "Penstemon neotericus 118 b", 
+"^ot:ottId": 421342, 
+"^ot:ottTaxonName": "Penstemon neotericus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 238052, 
 "@tb:identifier.taxonVariant": 300112, 
@@ -1244,8 +1451,9 @@
 }
 }, 
 "Tl2236874": {
-"^ot:altLabel": "Penstemon heterophyllus", 
 "^ot:originalLabel": "Penstemon heterophyllus 101 c", 
+"^ot:ottId": 851269, 
+"^ot:ottTaxonName": "Penstemon heterophyllus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 20985, 
 "@tb:identifier.taxonVariant": 48841, 
@@ -1254,8 +1462,9 @@
 }
 }, 
 "Tl2236875": {
-"^ot:altLabel": "Penstemon laetus", 
 "^ot:originalLabel": "Penstemon laetus 126 D", 
+"^ot:ottId": 455464, 
+"^ot:ottTaxonName": "Penstemon laetus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 338481, 
 "@tb:identifier.taxonVariant": 375811, 
@@ -1264,8 +1473,9 @@
 }
 }, 
 "Tl2236876": {
-"^ot:altLabel": "Penstemon laetus", 
 "^ot:originalLabel": "Penstemon laetus 082 b", 
+"^ot:ottId": 455464, 
+"^ot:ottTaxonName": "Penstemon laetus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 338481, 
 "@tb:identifier.taxonVariant": 375811, 
@@ -1275,6 +1485,8 @@
 }, 
 "Tl2236877": {
 "^ot:originalLabel": "Penstemon dissectus", 
+"^ot:ottId": 899976, 
+"^ot:ottTaxonName": "Penstemon dissectus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 20981, 
 "@tb:identifier.taxonVariant": 48827, 
@@ -1283,8 +1495,9 @@
 }
 }, 
 "Tl2236878": {
-"^ot:altLabel": "Penstemon heterophyllus", 
 "^ot:originalLabel": "Penstemon heterophyllus 101 e", 
+"^ot:ottId": 851269, 
+"^ot:ottTaxonName": "Penstemon heterophyllus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 20985, 
 "@tb:identifier.taxonVariant": 48841, 
@@ -1293,8 +1506,9 @@
 }
 }, 
 "Tl2236879": {
-"^ot:altLabel": "Penstemon neotericus", 
 "^ot:originalLabel": "Penstemon neotericus 118 i", 
+"^ot:ottId": 421342, 
+"^ot:ottTaxonName": "Penstemon neotericus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 238052, 
 "@tb:identifier.taxonVariant": 300112, 
@@ -1303,8 +1517,9 @@
 }
 }, 
 "Tl2236880": {
-"^ot:altLabel": "Penstemon heterophyllus", 
 "^ot:originalLabel": "Penstemon heterophyllus 4x 84 H", 
+"^ot:ottId": 851269, 
+"^ot:ottTaxonName": "Penstemon heterophyllus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 20985, 
 "@tb:identifier.taxonVariant": 48841, 
@@ -1313,8 +1528,9 @@
 }
 }, 
 "Tl2236881": {
-"^ot:altLabel": "Penstemon azureus", 
 "^ot:originalLabel": "Penstemon azureus 83 E", 
+"^ot:ottId": 899958, 
+"^ot:ottTaxonName": "Penstemon azureus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 153146, 
 "@tb:identifier.taxonVariant": 228631, 
@@ -1323,8 +1539,9 @@
 }
 }, 
 "Tl2236882": {
-"^ot:altLabel": "Penstemon laetus", 
 "^ot:originalLabel": "Penstemon laetus 082 e", 
+"^ot:ottId": 455464, 
+"^ot:ottTaxonName": "Penstemon laetus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 338481, 
 "@tb:identifier.taxonVariant": 375811, 
@@ -1333,8 +1550,9 @@
 }
 }, 
 "Tl2236883": {
-"^ot:altLabel": "Penstemon azureus", 
 "^ot:originalLabel": "Penstemon azureus 1113 D", 
+"^ot:ottId": 899958, 
+"^ot:ottTaxonName": "Penstemon azureus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 153146, 
 "@tb:identifier.taxonVariant": 228631, 
@@ -1343,8 +1561,9 @@
 }
 }, 
 "Tl2236884": {
-"^ot:altLabel": "Penstemon heterophyllus", 
 "^ot:originalLabel": "Penstemon heterophyllus 101 a", 
+"^ot:ottId": 851269, 
+"^ot:ottTaxonName": "Penstemon heterophyllus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 20985, 
 "@tb:identifier.taxonVariant": 48841, 
@@ -1353,8 +1572,9 @@
 }
 }, 
 "Tl2236885": {
-"^ot:altLabel": "Penstemon azureus", 
 "^ot:originalLabel": "Penstemon azureus 810 E", 
+"^ot:ottId": 899958, 
+"^ot:ottTaxonName": "Penstemon azureus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 153146, 
 "@tb:identifier.taxonVariant": 228631, 
@@ -1363,8 +1583,9 @@
 }
 }, 
 "Tl2236886": {
-"^ot:altLabel": "Penstemon laetus", 
 "^ot:originalLabel": "Penstemon laetus 082 c", 
+"^ot:ottId": 455464, 
+"^ot:ottTaxonName": "Penstemon laetus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 338481, 
 "@tb:identifier.taxonVariant": 375811, 
@@ -1373,8 +1594,9 @@
 }
 }, 
 "Tl2236887": {
-"^ot:altLabel": "Penstemon heterophyllus", 
 "^ot:originalLabel": "Penstemon heterophyllus 4x 84 E", 
+"^ot:ottId": 851269, 
+"^ot:ottTaxonName": "Penstemon heterophyllus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 20985, 
 "@tb:identifier.taxonVariant": 48841, 
@@ -1383,8 +1605,9 @@
 }
 }, 
 "Tl2236888": {
-"^ot:altLabel": "Penstemon azureus", 
 "^ot:originalLabel": "Penstemon azureus 83 C", 
+"^ot:ottId": 899958, 
+"^ot:ottTaxonName": "Penstemon azureus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 153146, 
 "@tb:identifier.taxonVariant": 228631, 
@@ -1393,8 +1616,9 @@
 }
 }, 
 "Tl2236889": {
-"^ot:altLabel": "Penstemon heterophyllus", 
 "^ot:originalLabel": "Penstemon heterophyllus 4x 84 A", 
+"^ot:ottId": 851269, 
+"^ot:ottTaxonName": "Penstemon heterophyllus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 20985, 
 "@tb:identifier.taxonVariant": 48841, 
@@ -1403,8 +1627,9 @@
 }
 }, 
 "Tl2236890": {
-"^ot:altLabel": "Penstemon azureus", 
 "^ot:originalLabel": "Penstemon azureus 1113 I", 
+"^ot:ottId": 899958, 
+"^ot:ottTaxonName": "Penstemon azureus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 153146, 
 "@tb:identifier.taxonVariant": 228631, 
@@ -1413,8 +1638,9 @@
 }
 }, 
 "Tl2236891": {
-"^ot:altLabel": "Penstemon neotericus", 
 "^ot:originalLabel": "Penstemon neotericus 118 d", 
+"^ot:ottId": 421342, 
+"^ot:ottTaxonName": "Penstemon neotericus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 238052, 
 "@tb:identifier.taxonVariant": 300112, 
@@ -1423,8 +1649,9 @@
 }
 }, 
 "Tl2236892": {
-"^ot:altLabel": "Penstemon azureus", 
 "^ot:originalLabel": "Penstemon azureus 081 a", 
+"^ot:ottId": 899958, 
+"^ot:ottTaxonName": "Penstemon azureus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 153146, 
 "@tb:identifier.taxonVariant": 228631, 
@@ -1433,8 +1660,9 @@
 }
 }, 
 "Tl2236893": {
-"^ot:altLabel": "Penstemon neotericus", 
 "^ot:originalLabel": "Penstemon neotericus 125 E", 
+"^ot:ottId": 421342, 
+"^ot:ottTaxonName": "Penstemon neotericus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 238052, 
 "@tb:identifier.taxonVariant": 300112, 
@@ -1443,8 +1671,9 @@
 }
 }, 
 "Tl2236894": {
-"^ot:altLabel": "Penstemon neotericus", 
 "^ot:originalLabel": "Penstemon neotericus 118 k", 
+"^ot:ottId": 421342, 
+"^ot:ottTaxonName": "Penstemon neotericus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 238052, 
 "@tb:identifier.taxonVariant": 300112, 
@@ -1453,8 +1682,9 @@
 }
 }, 
 "Tl2236895": {
-"^ot:altLabel": "Penstemon parvulus", 
 "^ot:originalLabel": "Penstemon parvulus 0811 b", 
+"^ot:ottId": 241141, 
+"^ot:ottTaxonName": "Penstemon parvulus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 338498, 
 "@tb:identifier.taxonVariant": 375840, 
@@ -1463,8 +1693,9 @@
 }
 }, 
 "Tl2236896": {
-"^ot:altLabel": "Penstemon laetus", 
 "^ot:originalLabel": "Penstemon laetus 129 A", 
+"^ot:ottId": 455464, 
+"^ot:ottTaxonName": "Penstemon laetus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 338481, 
 "@tb:identifier.taxonVariant": 375811, 
@@ -1473,8 +1704,9 @@
 }
 }, 
 "Tl2236897": {
-"^ot:altLabel": "Penstemon laetus", 
 "^ot:originalLabel": "Penstemon laetus 082 a", 
+"^ot:ottId": 455464, 
+"^ot:ottTaxonName": "Penstemon laetus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 338481, 
 "@tb:identifier.taxonVariant": 375811, 
@@ -1483,8 +1715,9 @@
 }
 }, 
 "Tl2236898": {
-"^ot:altLabel": "Penstemon azureus", 
 "^ot:originalLabel": "Penstemon azureus 1111 A", 
+"^ot:ottId": 899958, 
+"^ot:ottTaxonName": "Penstemon azureus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 153146, 
 "@tb:identifier.taxonVariant": 228631, 
@@ -1493,8 +1726,9 @@
 }
 }, 
 "Tl2236899": {
-"^ot:altLabel": "Penstemon neotericus", 
 "^ot:originalLabel": "Penstemon neotericus 125 J", 
+"^ot:ottId": 421342, 
+"^ot:ottTaxonName": "Penstemon neotericus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 238052, 
 "@tb:identifier.taxonVariant": 300112, 
@@ -1503,8 +1737,9 @@
 }
 }, 
 "Tl2236900": {
-"^ot:altLabel": "Penstemon azureus", 
 "^ot:originalLabel": "Penstemon azureus 1113 C", 
+"^ot:ottId": 899958, 
+"^ot:ottTaxonName": "Penstemon azureus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 153146, 
 "@tb:identifier.taxonVariant": 228631, 
@@ -1513,8 +1748,9 @@
 }
 }, 
 "Tl2236901": {
-"^ot:altLabel": "Penstemon heterophyllus", 
 "^ot:originalLabel": "Penstemon heterophyllus 1112 C", 
+"^ot:ottId": 851269, 
+"^ot:ottTaxonName": "Penstemon heterophyllus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 20985, 
 "@tb:identifier.taxonVariant": 48841, 
@@ -1523,8 +1759,9 @@
 }
 }, 
 "Tl2236902": {
-"^ot:altLabel": "Penstemon azureus", 
 "^ot:originalLabel": "Penstemon azureus 810 J", 
+"^ot:ottId": 899958, 
+"^ot:ottTaxonName": "Penstemon azureus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 153146, 
 "@tb:identifier.taxonVariant": 228631, 
@@ -1533,8 +1770,9 @@
 }
 }, 
 "Tl2236903": {
-"^ot:altLabel": "Penstemon heterophyllus", 
 "^ot:originalLabel": "Penstemon heterophyllus 1112 D", 
+"^ot:ottId": 851269, 
+"^ot:ottTaxonName": "Penstemon heterophyllus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 20985, 
 "@tb:identifier.taxonVariant": 48841, 
@@ -1543,8 +1781,9 @@
 }
 }, 
 "Tl2236904": {
-"^ot:altLabel": "Penstemon azureus", 
 "^ot:originalLabel": "Penstemon azureus 83 I", 
+"^ot:ottId": 899958, 
+"^ot:ottTaxonName": "Penstemon azureus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 153146, 
 "@tb:identifier.taxonVariant": 228631, 
@@ -1553,8 +1792,9 @@
 }
 }, 
 "Tl2236905": {
-"^ot:altLabel": "Penstemon heterophyllus", 
 "^ot:originalLabel": "Penstemon heterophyllus 101 f", 
+"^ot:ottId": 851269, 
+"^ot:ottTaxonName": "Penstemon heterophyllus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 20985, 
 "@tb:identifier.taxonVariant": 48841, 
@@ -1563,8 +1803,9 @@
 }
 }, 
 "Tl2236906": {
-"^ot:altLabel": "Penstemon heterophyllus", 
 "^ot:originalLabel": "Penstemon heterophyllus 101 d", 
+"^ot:ottId": 851269, 
+"^ot:ottTaxonName": "Penstemon heterophyllus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 20985, 
 "@tb:identifier.taxonVariant": 48841, 
@@ -1573,8 +1814,9 @@
 }
 }, 
 "Tl2236907": {
-"^ot:altLabel": "Penstemon parvulus", 
 "^ot:originalLabel": "Penstemon parvulus 1210 A", 
+"^ot:ottId": 241141, 
+"^ot:ottTaxonName": "Penstemon parvulus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 338498, 
 "@tb:identifier.taxonVariant": 375840, 
@@ -1583,11 +1825,14 @@
 }
 }, 
 "Tl2236908": {
-"^ot:originalLabel": "Penstemon filiformis 086 a"
+"^ot:originalLabel": "Penstemon filiformis 086 a", 
+"^ot:ottId": 3883319, 
+"^ot:ottTaxonName": "Penstemon filiformis"
 }, 
 "Tl2236909": {
-"^ot:altLabel": "Penstemon parvulus", 
 "^ot:originalLabel": "Penstemon parvulus 1210 F", 
+"^ot:ottId": 241141, 
+"^ot:ottTaxonName": "Penstemon parvulus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 338498, 
 "@tb:identifier.taxonVariant": 375840, 
@@ -1596,8 +1841,9 @@
 }
 }, 
 "Tl2236910": {
-"^ot:altLabel": "Penstemon neotericus", 
 "^ot:originalLabel": "Penstemon neotericus 118 g", 
+"^ot:ottId": 421342, 
+"^ot:ottTaxonName": "Penstemon neotericus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 238052, 
 "@tb:identifier.taxonVariant": 300112, 
@@ -1606,8 +1852,9 @@
 }
 }, 
 "Tl2236911": {
-"^ot:altLabel": "Penstemon laetus", 
 "^ot:originalLabel": "Penstemon laetus 126 B", 
+"^ot:ottId": 455464, 
+"^ot:ottTaxonName": "Penstemon laetus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 338481, 
 "@tb:identifier.taxonVariant": 375811, 
@@ -1616,8 +1863,9 @@
 }
 }, 
 "Tl2236912": {
-"^ot:altLabel": "Penstemon laetus", 
 "^ot:originalLabel": "Penstemon laetus 127 B", 
+"^ot:ottId": 455464, 
+"^ot:ottTaxonName": "Penstemon laetus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 338481, 
 "@tb:identifier.taxonVariant": 375811, 
@@ -1626,8 +1874,9 @@
 }
 }, 
 "Tl2236913": {
-"^ot:altLabel": "Penstemon azureus", 
 "^ot:originalLabel": "Penstemon azureus 810 D", 
+"^ot:ottId": 899958, 
+"^ot:ottTaxonName": "Penstemon azureus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 153146, 
 "@tb:identifier.taxonVariant": 228631, 
@@ -1636,8 +1885,9 @@
 }
 }, 
 "Tl2236914": {
-"^ot:altLabel": "Penstemon heterophyllus", 
 "^ot:originalLabel": "Penstemon heterophyllus 101 b", 
+"^ot:ottId": 851269, 
+"^ot:ottTaxonName": "Penstemon heterophyllus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 20985, 
 "@tb:identifier.taxonVariant": 48841, 
@@ -1646,8 +1896,9 @@
 }
 }, 
 "Tl2236915": {
-"^ot:altLabel": "Penstemon neotericus", 
 "^ot:originalLabel": "Penstemon neotericus 118 j", 
+"^ot:ottId": 421342, 
+"^ot:ottTaxonName": "Penstemon neotericus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 238052, 
 "@tb:identifier.taxonVariant": 300112, 
@@ -1656,8 +1907,9 @@
 }
 }, 
 "Tl2236916": {
-"^ot:altLabel": "Penstemon laetus", 
 "^ot:originalLabel": "Penstemon laetus 126 C", 
+"^ot:ottId": 455464, 
+"^ot:ottTaxonName": "Penstemon laetus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 338481, 
 "@tb:identifier.taxonVariant": 375811, 
@@ -1666,8 +1918,9 @@
 }
 }, 
 "Tl2236917": {
-"^ot:altLabel": "Penstemon azureus", 
 "^ot:originalLabel": "Penstemon azureus 810 B", 
+"^ot:ottId": 899958, 
+"^ot:ottTaxonName": "Penstemon azureus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 153146, 
 "@tb:identifier.taxonVariant": 228631, 
@@ -1676,8 +1929,9 @@
 }
 }, 
 "Tl2236918": {
-"^ot:altLabel": "Penstemon azureus", 
 "^ot:originalLabel": "Penstemon azureus 1113 G", 
+"^ot:ottId": 899958, 
+"^ot:ottTaxonName": "Penstemon azureus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 153146, 
 "@tb:identifier.taxonVariant": 228631, 
@@ -1686,8 +1940,9 @@
 }
 }, 
 "Tl2236919": {
-"^ot:altLabel": "Penstemon azureus", 
 "^ot:originalLabel": "Penstemon azureus 081 e", 
+"^ot:ottId": 899958, 
+"^ot:ottTaxonName": "Penstemon azureus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 153146, 
 "@tb:identifier.taxonVariant": 228631, 
@@ -1696,8 +1951,9 @@
 }
 }, 
 "Tl2236920": {
-"^ot:altLabel": "Penstemon laetus", 
 "^ot:originalLabel": "Penstemon laetus 082 d", 
+"^ot:ottId": 455464, 
+"^ot:ottTaxonName": "Penstemon laetus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 338481, 
 "@tb:identifier.taxonVariant": 375811, 
@@ -1706,8 +1962,9 @@
 }
 }, 
 "Tl2236921": {
-"^ot:altLabel": "Penstemon azureus", 
 "^ot:originalLabel": "Penstemon azureus 1113 H", 
+"^ot:ottId": 899958, 
+"^ot:ottTaxonName": "Penstemon azureus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 153146, 
 "@tb:identifier.taxonVariant": 228631, 
@@ -1716,8 +1973,9 @@
 }
 }, 
 "Tl2236922": {
-"^ot:altLabel": "Penstemon azureus", 
 "^ot:originalLabel": "Penstemon azureus 081 c", 
+"^ot:ottId": 899958, 
+"^ot:ottTaxonName": "Penstemon azureus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 153146, 
 "@tb:identifier.taxonVariant": 228631, 
@@ -1726,8 +1984,9 @@
 }
 }, 
 "Tl2236923": {
-"^ot:altLabel": "Penstemon azureus", 
 "^ot:originalLabel": "Penstemon azureus 081 d", 
+"^ot:ottId": 899958, 
+"^ot:ottTaxonName": "Penstemon azureus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 153146, 
 "@tb:identifier.taxonVariant": 228631, 
@@ -1736,8 +1995,9 @@
 }
 }, 
 "Tl2236924": {
-"^ot:altLabel": "Penstemon azureus", 
 "^ot:originalLabel": "Penstemon azureus 081 f", 
+"^ot:ottId": 899958, 
+"^ot:ottTaxonName": "Penstemon azureus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 153146, 
 "@tb:identifier.taxonVariant": 228631, 
@@ -1746,11 +2006,14 @@
 }
 }, 
 "Tl2236925": {
-"^ot:originalLabel": "Penstemon filiformis 086 c"
+"^ot:originalLabel": "Penstemon filiformis 086 c", 
+"^ot:ottId": 3883319, 
+"^ot:ottTaxonName": "Penstemon filiformis"
 }, 
 "Tl2236926": {
-"^ot:altLabel": "Penstemon azureus", 
 "^ot:originalLabel": "Penstemon azureus 83 B", 
+"^ot:ottId": 899958, 
+"^ot:ottTaxonName": "Penstemon azureus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 153146, 
 "@tb:identifier.taxonVariant": 228631, 
@@ -1759,8 +2022,9 @@
 }
 }, 
 "Tl2236927": {
-"^ot:altLabel": "Penstemon neotericus", 
 "^ot:originalLabel": "Penstemon neotericus 118 c", 
+"^ot:ottId": 421342, 
+"^ot:ottTaxonName": "Penstemon neotericus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 238052, 
 "@tb:identifier.taxonVariant": 300112, 
@@ -1791,7 +2055,18 @@
 "Tr94573": {
 "@label": "Imported tree 1", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:undefined", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn13887420", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 21, 
 "^tb:quality.tree": "Unrated", 
@@ -2033,7 +2308,18 @@
 "Tr94574": {
 "@label": "bestREP13", 
 "@xsi:type": "nex:FloatTree", 
-"^ot:rootNodeId": "Tn13887441", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:curatedType": "Bayesian inference ", 
+"^ot:inGroupClade": "Tn13887445", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
+"^ot:rootNodeId": "Tr94574_ROOT", 
+"^ot:specifiedRoot": "Tr94574_ROOT", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "^tb:ntax.tree": 21, 
 "edgeBySourceId": {
 "Tn13887441": {
@@ -2041,11 +2327,6 @@
 "@length": 1e-08, 
 "@source": "Tn13887441", 
 "@target": "Tn13887470"
-}, 
-"edge11771": {
-"@length": 0.00030892, 
-"@source": "Tn13887441", 
-"@target": "Tn13887458"
 }, 
 "edge11827": {
 "@length": 1e-08, 
@@ -2064,15 +2345,15 @@
 }
 }, 
 "Tn13887445": {
+"edge11811": {
+"@length": 0.00092955, 
+"@source": "Tn13887445", 
+"@target": "Tn13887467"
+}, 
 "edge11813": {
 "@length": 0.00128148, 
 "@source": "Tn13887445", 
 "@target": "Tn13887447"
-}, 
-"edge11825": {
-"@length": 0.00740722, 
-"@source": "Tn13887445", 
-"@target": "Tn13887469"
 }
 }, 
 "Tn13887447": {
@@ -2122,39 +2403,39 @@
 }
 }, 
 "Tn13887455": {
+"edge11795": {
+"@length": 0.00094099, 
+"@source": "Tn13887455", 
+"@target": "Tn13887457"
+}, 
 "edge11797": {
 "@length": 0.00129186, 
 "@source": "Tn13887455", 
 "@target": "Tn13887460"
-}, 
-"edge11807": {
-"@length": 0.00044834, 
-"@source": "Tn13887455", 
-"@target": "Tn13887467"
 }
 }, 
 "Tn13887457": {
+"edge11779": {
+"@length": 0.00068846, 
+"@source": "Tn13887457", 
+"@target": "Tn13887462"
+}, 
 "edge11781": {
 "@length": 0.00124173, 
 "@source": "Tn13887457", 
 "@target": "Tn13887466"
-}, 
-"edge11795": {
-"@length": 0.00094099, 
-"@source": "Tn13887457", 
-"@target": "Tn13887455"
 }
 }, 
 "Tn13887458": {
+"edge11771": {
+"@length": 0.00030892, 
+"@source": "Tn13887458", 
+"@target": "Tn13887441"
+}, 
 "edge11773": {
 "@length": 0.00030817, 
 "@source": "Tn13887458", 
 "@target": "Tn13887472"
-}, 
-"edge11775": {
-"@length": 0.00054898, 
-"@source": "Tn13887458", 
-"@target": "Tn13887462"
 }
 }, 
 "Tn13887460": {
@@ -2170,15 +2451,15 @@
 }
 }, 
 "Tn13887462": {
+"edge11775": {
+"@length": 0.00054898, 
+"@source": "Tn13887462", 
+"@target": "Tn13887458"
+}, 
 "edge11777": {
 "@length": 0.01210026, 
 "@source": "Tn13887462", 
 "@target": "Tn13887450"
-}, 
-"edge11779": {
-"@length": 0.00068846, 
-"@source": "Tn13887462", 
-"@target": "Tn13887457"
 }
 }, 
 "Tn13887464": {
@@ -2211,15 +2492,15 @@
 }
 }, 
 "Tn13887467": {
+"edge11807": {
+"@length": 0.00044834, 
+"@source": "Tn13887467", 
+"@target": "Tn13887455"
+}, 
 "edge11809": {
 "@length": 0.00150572, 
 "@source": "Tn13887467", 
 "@target": "Tn13887448"
-}, 
-"edge11811": {
-"@length": 0.00092955, 
-"@source": "Tn13887467", 
-"@target": "Tn13887445"
 }
 }, 
 "Tn13887471": {
@@ -2233,12 +2514,21 @@
 "@source": "Tn13887471", 
 "@target": "Tn13887444"
 }
+}, 
+"Tr94574_ROOT": {
+"Tr94574_ROOT_EDGE": {
+"@source": "Tr94574_ROOT", 
+"@target": "Tn13887445"
+}, 
+"edge11825": {
+"@length": 0.00740722, 
+"@source": "Tr94574_ROOT", 
+"@target": "Tn13887469"
+}
 }
 }, 
 "nodeById": {
-"Tn13887441": {
-"@root": true
-}, 
+"Tn13887441": {}, 
 "Tn13887442": {
 "@otu": "Tl2216357"
 }, 
@@ -2314,13 +2604,27 @@
 }, 
 "Tn13887475": {
 "@otu": "Tl2216371"
+}, 
+"Tr94574_ROOT": {
+"@root": true
 }
 }
 }, 
 "Tr94605": {
 "@label": "con 50 majrule", 
 "@xsi:type": "nex:FloatTree", 
-"^ot:rootNodeId": "Tn13888496", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:curatedType": "Bayesian inference ", 
+"^ot:inGroupClade": "Tn13888496", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
+"^ot:rootNodeId": "Tr94605_ROOT", 
+"^ot:specifiedRoot": "Tr94605_ROOT", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "^tb:ntax.tree": 21, 
 "edgeBySourceId": {
 "Tn13888479": {
@@ -2394,11 +2698,6 @@
 }
 }, 
 "Tn13888496": {
-"edge10335": {
-"@length": 0.007343989767226407, 
-"@source": "Tn13888496", 
-"@target": "Tn13888499"
-}, 
 "edge10337": {
 "@length": 0.001484168761265007, 
 "@source": "Tn13888496", 
@@ -2513,6 +2812,17 @@
 "@source": "Tn13888512", 
 "@target": "Tn13888482"
 }
+}, 
+"Tr94605_ROOT": {
+"Tr94605_ROOT_EDGE": {
+"@source": "Tr94605_ROOT", 
+"@target": "Tn13888496"
+}, 
+"edge10335": {
+"@length": 0.007343989767226407, 
+"@source": "Tr94605_ROOT", 
+"@target": "Tn13888499"
+}
 }
 }, 
 "nodeById": {
@@ -2557,9 +2867,7 @@
 "Tn13888495": {
 "@otu": "Tl2216366"
 }, 
-"Tn13888496": {
-"@root": true
-}, 
+"Tn13888496": {}, 
 "Tn13888497": {
 "@otu": "Tl2216369"
 }, 
@@ -2593,13 +2901,28 @@
 "Tn13888511": {
 "@otu": "Tl2216357"
 }, 
-"Tn13888512": {}
+"Tn13888512": {}, 
+"Tr94605_ROOT": {
+"@root": true
+}
 }
 }, 
 "Tr94668": {
 "@label": "con 50 majrule", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn13891148", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:ntax.tree": 90, 
 "edgeBySourceId": {
 "Tn13891099": {
@@ -3790,7 +4113,19 @@
 "Tr94669": {
 "@label": "Imported tree 1", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn13891362", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 90, 
 "^tb:quality.tree": "Unrated", 
@@ -5054,7 +5389,19 @@
 "Tr94670": {
 "@label": "bestREP6", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn13891460", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:ntax.tree": 90, 
 "edgeBySourceId": {
 "Tn13891427": {
@@ -6333,7 +6680,19 @@
 "Tr94882": {
 "@label": "bestREP8", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn13922379", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:ntax.tree": 98, 
 "edgeBySourceId": {
 "Tn13922368": {
@@ -7588,7 +7947,19 @@
 "Tr94883": {
 "@label": "con 50 majrule", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn13922606", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:ntax.tree": 98, 
 "edgeBySourceId": {
 "Tn13922521": {
@@ -8723,7 +9094,19 @@
 "Tr94884": {
 "@label": "Imported tree 1", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn13922764", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:ntax.tree": 98, 
 "edgeBySourceId": {
 "Tn13922665": {
