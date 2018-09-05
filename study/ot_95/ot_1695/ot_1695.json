@@ -62,22 +62,115 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2018-09-05T17:51:54.451Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "Fungi"
 }, 
-"^ot:curatorName": "Jesseholmes", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}, 
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": "\\b\\s+(\\S*)$"
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2018-09-05T17:51:54.451Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Jesseholmes"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S15347"
 }, 
+"^ot:focalCladeOTTTaxonName": "", 
 "^ot:otusElementOrder": [
 "Tls54873"
 ], 
 "^ot:studyId": "ot_1695", 
-"^ot:studyPublicationReference": "Martin L.A., Lloyd evans D., Castlebury L.A., Sifundza J.T., Comstock J.C., Rutherford R.S., & Mcfarlane S.A. 2016. Macruropyxis fulva sp. nov., a new rust (Pucciniales) infecting sugarcane in southern Africa. Australasian Plant Pathology Journal, .", 
+"^ot:studyPublication": {
+"@href": "http://dx.doi.org/10.1007/s13313-016-0460-1"
+}, 
+"^ot:studyPublicationReference": "L. A. Martin, D. Lloyd Evans, L. A. Castlebury, J. T. Sifundza, J. C. Comstock, R. S. Rutherford, S. A. McFarlane, 2017, 'Macruropyxis fulva sp. nov., a new rust (Pucciniales) infecting sugarcane in southern Africa', Australasian Plant Pathology, vol. 46, no. 1, pp. 63-74", 
 "^ot:studyYear": 2016, 
+"^ot:tag": [], 
 "^ot:taxonLinkPrefixes": {
 "@ubio": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:", 
 "@uniprot": "http://purl.uniprot.org/taxonomy/"
@@ -100,11 +193,14 @@
 "^skos:historyNote": "Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlOTUWriter@52cbfa27 $Rev$", 
 "otuById": {
 "Tl2565488": {
-"^ot:originalLabel": "Puccinia komarovii KC460225"
+"^ot:originalLabel": "Puccinia komarovii KC460225", 
+"^ot:ottId": 3841419, 
+"^ot:ottTaxonName": "Puccinia komarovii"
 }, 
 "Tl2565489": {
-"^ot:altLabel": "Puccinia kuehnii", 
 "^ot:originalLabel": "Puccinia kuehnii KP201840", 
+"^ot:ottId": 156375, 
+"^ot:ottTaxonName": "Puccinia kuehnii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 132536, 
 "@tb:identifier.taxonVariant": 431434, 
@@ -113,11 +209,14 @@
 }
 }, 
 "Tl2565490": {
-"^ot:originalLabel": "Sphenospora smilacina KM217354"
+"^ot:originalLabel": "Sphenospora smilacina KM217354", 
+"^ot:ottId": 4095085, 
+"^ot:ottTaxonName": "Sphenospora smilacina"
 }, 
 "Tl2565491": {
-"^ot:altLabel": "Dasyspora gregaria", 
 "^ot:originalLabel": "Dasyspora gregaria JF263477", 
+"^ot:ottId": 767600, 
+"^ot:ottTaxonName": "Dasyspora gregaria", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 621630, 
 "@tb:identifier.taxonVariant": 832431, 
@@ -125,11 +224,14 @@
 }
 }, 
 "Tl2565492": {
-"^ot:originalLabel": "Dasyspora ferrugineae JF263467"
+"^ot:originalLabel": "Dasyspora ferrugineae JF263467", 
+"^ot:ottId": 567038, 
+"^ot:ottTaxonName": "Dasyspora ferrugineae"
 }, 
 "Tl2565493": {
-"^ot:altLabel": "Tranzschelia discolor", 
 "^ot:originalLabel": "Tranzschelia discolor DQ354542", 
+"^ot:ottId": 286675, 
+"^ot:ottTaxonName": "Tranzschelia discolor", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 29305, 
 "@tb:identifier.taxonVariant": 68317, 
@@ -139,17 +241,22 @@
 }, 
 "Tl2565494": {
 "^ot:originalLabel": "Puccinia sparganioidis GU058027", 
+"^ot:ottId": 1093780, 
+"^ot:ottTaxonName": "Puccinia sparganioidis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 558352, 
 "@tb:identifier.taxonVariant": 739698
 }
 }, 
 "Tl2565495": {
-"^ot:originalLabel": "Puccinia miscanthidii KX908214"
+"^ot:originalLabel": "Puccinia miscanthidii KX908214", 
+"^ot:ottId": 3841481, 
+"^ot:ottTaxonName": "Puccinia miscanthidii"
 }, 
 "Tl2565496": {
-"^ot:altLabel": "Cumminsiella mirabilissima", 
 "^ot:originalLabel": "Cumminsiella mirabilissima DQ354531", 
+"^ot:ottId": 134335, 
+"^ot:ottTaxonName": "Cumminsiella mirabilissima", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 7774, 
 "@tb:identifier.taxonVariant": 18705, 
@@ -164,7 +271,9 @@
 "^ot:originalLabel": "Puccinia coronata var gibberosa KT827286"
 }, 
 "Tl2565499": {
-"^ot:originalLabel": "Puccinia argentata KC433399"
+"^ot:originalLabel": "Puccinia argentata KC433399", 
+"^ot:ottId": 5301000, 
+"^ot:ottTaxonName": "Puccinia argentata"
 }, 
 "Tl2565500": {
 "^ot:originalLabel": "Puccinia graminis f sp tritici New assembly"
@@ -173,8 +282,9 @@
 "^ot:originalLabel": "Uromyces setariae italicae HQ412654"
 }, 
 "Tl2565502": {
-"^ot:altLabel": "Puccinia emaculata", 
 "^ot:originalLabel": "Puccinia emaculata EU915294", 
+"^ot:ottId": 819831, 
+"^ot:ottTaxonName": "Puccinia emaculata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 507933, 
 "@tb:identifier.taxonVariant": 673039, 
@@ -186,21 +296,28 @@
 "^ot:originalLabel": "Aecidium klufaistianum HQ699078"
 }, 
 "Tl2565504": {
-"^ot:originalLabel": "Puccinia mysuruensis KC847089"
+"^ot:originalLabel": "Puccinia mysuruensis KC847089", 
+"^ot:ottId": 5689417, 
+"^ot:ottTaxonName": "Puccinia mysuruensis"
 }, 
 "Tl2565505": {
 "^ot:originalLabel": "Puccinia polysora HQ189432 GU058024", 
+"^ot:ottId": 672074, 
+"^ot:ottTaxonName": "Puccinia polysora", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 558348, 
 "@tb:identifier.taxonVariant": 739693
 }
 }, 
 "Tl2565506": {
-"^ot:originalLabel": "Aecidium sp. KF528007"
+"^ot:originalLabel": "Aecidium sp. KF528007", 
+"^ot:ottId": 309212, 
+"^ot:ottTaxonName": "Aecidium"
 }, 
 "Tl2565507": {
-"^ot:altLabel": "Aecidium kalanchoe", 
 "^ot:originalLabel": "Aecidium kalanchoe AY463163", 
+"^ot:ottId": 317634, 
+"^ot:ottTaxonName": "Aecidium kalanchoes", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 236793, 
 "@tb:identifier.taxonVariant": 298872, 
@@ -209,11 +326,14 @@
 }
 }, 
 "Tl2565508": {
-"^ot:originalLabel": "Puccorchidium polyalthiae JF263493"
+"^ot:originalLabel": "Puccorchidium polyalthiae JF263493", 
+"^ot:ottId": 3846653, 
+"^ot:ottTaxonName": "Aecidium polyalthiae"
 }, 
 "Tl2565509": {
-"^ot:altLabel": "Ravenelia havanensis", 
 "^ot:originalLabel": "Ravenelia havanensis DQ354557", 
+"^ot:ottId": 700648, 
+"^ot:ottTaxonName": "Ravenelia havanensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 37627, 
 "@tb:identifier.taxonVariant": 87018, 
@@ -222,11 +342,14 @@
 }
 }, 
 "Tl2565510": {
-"^ot:originalLabel": "Phakopsora phyllanthi KF528025"
+"^ot:originalLabel": "Phakopsora phyllanthi KF528025", 
+"^ot:ottId": 3850556, 
+"^ot:ottTaxonName": "Phakopsora phyllanthi"
 }, 
 "Tl2565511": {
-"^ot:altLabel": "Phakopsora cherimoliae", 
 "^ot:originalLabel": "Phakopsora cherimoliae KF528012", 
+"^ot:ottId": 5439003, 
+"^ot:ottTaxonName": "Phakopsora cherimoliae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 630646, 
 "@tb:identifier.taxonVariant": 845397, 
@@ -234,11 +357,14 @@
 }
 }, 
 "Tl2565512": {
-"^ot:originalLabel": "Phakopsora rolliniae KF528032"
+"^ot:originalLabel": "Phakopsora rolliniae KF528032", 
+"^ot:ottId": 3850170, 
+"^ot:ottTaxonName": "Uredo rolliniae"
 }, 
 "Tl2565513": {
-"^ot:altLabel": "Puccinia melanocephala", 
 "^ot:originalLabel": "Puccinia melanocephala JX036025", 
+"^ot:ottId": 156374, 
+"^ot:ottTaxonName": "Puccinia melanocephala", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 132537, 
 "@tb:identifier.taxonVariant": 209723, 
@@ -247,14 +373,19 @@
 }
 }, 
 "Tl2565514": {
-"^ot:originalLabel": "Macruropyxis fraxini KP858145"
+"^ot:originalLabel": "Macruropyxis fraxini KP858145", 
+"^ot:ottId": 3851533, 
+"^ot:ottTaxonName": "Macruropyxis fraxini"
 }, 
 "Tl2565515": {
-"^ot:originalLabel": "Porotenus biporus JF263494"
+"^ot:originalLabel": "Porotenus biporus JF263494", 
+"^ot:ottId": 767604, 
+"^ot:ottTaxonName": "Porotenus biporus"
 }, 
 "Tl2565516": {
-"^ot:altLabel": "Gymnosporangium clavipes", 
 "^ot:originalLabel": "Gymnosporangium clavipes DQ354545", 
+"^ot:ottId": 12713, 
+"^ot:ottTaxonName": "Gymnosporangium clavipes", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 12718, 
 "@tb:identifier.taxonVariant": 30121, 
@@ -263,8 +394,9 @@
 }
 }, 
 "Tl2565517": {
-"^ot:altLabel": "Puccinia malvacearum", 
 "^ot:originalLabel": "Puccinia malvacearum EF561641", 
+"^ot:ottId": 134330, 
+"^ot:ottTaxonName": "Puccinia malvacearum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 24483, 
 "@tb:identifier.taxonVariant": 57337, 
@@ -273,11 +405,14 @@
 }
 }, 
 "Tl2565518": {
-"^ot:originalLabel": "Dasyspora guianensis JF263479"
+"^ot:originalLabel": "Dasyspora guianensis JF263479", 
+"^ot:ottId": 567044, 
+"^ot:ottTaxonName": "Dasyspora guianensis"
 }, 
 "Tl2565519": {
-"^ot:altLabel": "Pucciniastrum epilobii", 
 "^ot:originalLabel": "Pucciniastrum epilobii DQ445906 AF522178", 
+"^ot:ottId": 656406, 
+"^ot:ottTaxonName": "Pucciniastrum epilobii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 24504, 
 "@tb:identifier.taxonVariant": 57378, 
@@ -286,8 +421,9 @@
 }
 }, 
 "Tl2565520": {
-"^ot:altLabel": "Dasyspora emarginatae", 
 "^ot:originalLabel": "Dasyspora emarginatae JF263465", 
+"^ot:ottId": 567041, 
+"^ot:ottTaxonName": "Dasyspora emarginatae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 621627, 
 "@tb:identifier.taxonVariant": 832428, 
@@ -295,17 +431,22 @@
 }
 }, 
 "Tl2565521": {
-"^ot:originalLabel": "Sphenorchidium xylopiae KM217355"
+"^ot:originalLabel": "Sphenorchidium xylopiae KM217355", 
+"^ot:ottId": 4095084, 
+"^ot:ottTaxonName": "Sphenospora xylopiae"
 }, 
 "Tl2565522": {
-"^ot:originalLabel": "Sphenorchidium deightonii KM217350"
+"^ot:originalLabel": "Sphenorchidium deightonii KM217350", 
+"^ot:ottId": 3846518, 
+"^ot:ottTaxonName": "Aecidium deightonii"
 }, 
 "Tl2565523": {
 "^ot:originalLabel": "Macruropyxis fulva JX036026"
 }, 
 "Tl2565524": {
-"^ot:altLabel": "Puccinia heucherae", 
 "^ot:originalLabel": "Puccinia heucherae DQ359702", 
+"^ot:ottId": 813977, 
+"^ot:ottTaxonName": "Puccinia heucherae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 322970, 
 "@tb:identifier.taxonVariant": 365606, 
@@ -314,11 +455,14 @@
 }
 }, 
 "Tl2565525": {
-"^ot:originalLabel": "Diorchidium woodii KM217352"
+"^ot:originalLabel": "Diorchidium woodii KM217352", 
+"^ot:ottId": 3841250, 
+"^ot:ottTaxonName": "Diorchidium woodii"
 }, 
 "Tl2565526": {
-"^ot:altLabel": "Puccinia hemerocallidis", 
 "^ot:originalLabel": "Puccinia hemerocallidis DQ354519", 
+"^ot:ottId": 778526, 
+"^ot:ottTaxonName": "Puccinia hemerocallidis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 184888, 
 "@tb:identifier.taxonVariant": 444987, 
@@ -328,14 +472,17 @@
 }, 
 "Tl2565527": {
 "^ot:originalLabel": "Uromyces acuminatus GU109282", 
+"^ot:ottId": 1093778, 
+"^ot:ottTaxonName": "Uromyces acuminatus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 558358, 
 "@tb:identifier.taxonVariant": 739704
 }
 }, 
 "Tl2565528": {
-"^ot:altLabel": "Sphenospora kevorkianii", 
 "^ot:originalLabel": "Sphenospora kevorkianii DQ354521", 
+"^ot:ottId": 177350, 
+"^ot:ottTaxonName": "Sphenospora kevorkianii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 37639, 
 "@tb:identifier.taxonVariant": 87037, 
@@ -344,8 +491,9 @@
 }
 }, 
 "Tl2565529": {
-"^ot:altLabel": "Tranzschelia fusca", 
 "^ot:originalLabel": "Tranzschelia fusca DQ425054", 
+"^ot:ottId": 5301218, 
+"^ot:ottTaxonName": "Tranzschelia anemones", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 29306, 
 "@tb:identifier.taxonVariant": 68318, 
@@ -354,8 +502,9 @@
 }
 }, 
 "Tl2565530": {
-"^ot:altLabel": "Puccinia physalidis", 
 "^ot:originalLabel": "Puccinia physalidis DQ354522", 
+"^ot:ottId": 177351, 
+"^ot:ottTaxonName": "Micropuccinia physalidis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 321673, 
 "@tb:identifier.taxonVariant": 364809, 
@@ -364,8 +513,9 @@
 }
 }, 
 "Tl2565531": {
-"^ot:altLabel": "Cronartium ribicola", 
 "^ot:originalLabel": "Cronartium ribicola HQ317509", 
+"^ot:ottId": 563451, 
+"^ot:ottTaxonName": "Cronartium ribicola", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 7524, 
 "@tb:identifier.taxonVariant": 18196, 
@@ -374,13 +524,17 @@
 }
 }, 
 "Tl2565532": {
-"^ot:originalLabel": "Dasyspora segregaria JF263488"
+"^ot:originalLabel": "Dasyspora segregaria JF263488", 
+"^ot:ottId": 1042984, 
+"^ot:ottTaxonName": "Dasyspora segregaria"
 }, 
 "Tl2565533": {
 "^ot:originalLabel": "Tranzschelia pruni spinosae var americana DQ425031"
 }, 
 "Tl2565534": {
-"^ot:originalLabel": "Puccinia acroptili JN204187"
+"^ot:originalLabel": "Puccinia acroptili JN204187", 
+"^ot:ottId": 822822, 
+"^ot:ottTaxonName": "Puccinia acroptili"
 }
 }
 }
@@ -397,7 +551,18 @@
 "Tr100282": {
 "@label": " 1", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:curatedType": "Maximum likelihood ", 
+"^ot:inGroupClade": "Tn14946594", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn14946549", 
+"^ot:specifiedRoot": "Tn14946549", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 47, 
 "^tb:quality.tree": "Unrated", 
