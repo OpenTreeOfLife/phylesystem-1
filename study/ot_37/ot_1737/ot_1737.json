@@ -63,16 +63,105 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2018-09-18T19:30:25.392Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "Ascomycetes"
 }, 
-"^ot:curatorName": "Matt Girard", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}, 
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": "\\b\\s+(\\S*)$"
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2018-09-18T19:30:25.392Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Matt Girard"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S21115"
 }, 
+"^ot:focalCladeOTTTaxonName": "", 
 "^ot:otusElementOrder": [
 "Tls64927"
 ], 
@@ -82,6 +171,7 @@
 }, 
 "^ot:studyPublicationReference": "Valenzuela-lopez N., Cano-lira J.F., Guarro J., Sutton D., Wiederhold N.P., Crous P.W., & Stchigel A.M. 2018. Coelomycetous Dothideomycetes with emphasis on the families Cucurbitariaceae and Didymellaceae. Studies in Mycology, 90: 1-69.", 
 "^ot:studyYear": 2018, 
+"^ot:tag": [], 
 "^ot:taxonLinkPrefixes": {
 "@ubio": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:", 
 "@uniprot": "http://purl.uniprot.org/taxonomy/"
@@ -127,8 +217,9 @@
 "^ot:originalLabel": "Epicoccum dendrobii LC_8146"
 }, 
 "Tl3299844": {
-"^ot:altLabel": "Paraconiothyrium estuarinum", 
 "^ot:originalLabel": "Paraconiothyrium estuarinum CBS_109850", 
+"^ot:ottId": 616737, 
+"^ot:ottTaxonName": "Paraconiothyrium estuarinum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 20383, 
 "@tb:identifier.taxonVariant": 47457, 
@@ -137,7 +228,9 @@
 }
 }, 
 "Tl3299845": {
-"^ot:originalLabel": "Neomicrosphaeropsis italica MFLUCC_15_0485"
+"^ot:originalLabel": "Neomicrosphaeropsis italica MFLUCC_15_0485", 
+"^ot:ottId": 6377638, 
+"^ot:ottTaxonName": "Neomicrosphaeropsis italica"
 }, 
 "Tl3299846": {
 "^ot:originalLabel": "Didymella heteroderae CBS_109.92T"
@@ -146,8 +239,9 @@
 "^ot:originalLabel": "Didymella heteroderae UTHSC_DI16_235"
 }, 
 "Tl3299848": {
-"^ot:altLabel": "Neophaeosphaeria filamentosa", 
 "^ot:originalLabel": "Neophaeosphaeria filamentosa CBS_102202", 
+"^ot:ottId": 645496, 
+"^ot:ottTaxonName": "Neophaeosphaeria filamentosa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 18927, 
 "@tb:identifier.taxonVariant": 44082, 
@@ -174,8 +268,9 @@
 "^ot:originalLabel": "Didymella sinensis LC_8142"
 }, 
 "Tl3299855": {
-"^ot:altLabel": "Ascochyta pisi", 
 "^ot:originalLabel": "Ascochyta pisi CBS_126.54", 
+"^ot:ottId": 780680, 
+"^ot:ottTaxonName": "Ascochyta pisi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 42418, 
 "@tb:identifier.taxonVariant": 98911, 
@@ -226,8 +321,9 @@
 "^ot:originalLabel": "Didymella heteroderae UTHSC_DI16_227"
 }, 
 "Tl3299870": {
-"^ot:altLabel": "Cucurbitaria berberidis", 
 "^ot:originalLabel": "Cucurbitaria berberidis MFLUCC_11_0387", 
+"^ot:ottId": 659811, 
+"^ot:ottTaxonName": "Cucurbitaria berberidis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 7753, 
 "@tb:identifier.taxonVariant": 18661, 
@@ -269,8 +365,9 @@
 "^ot:originalLabel": "Xenodidymella asphodeli CBS_375.62T"
 }, 
 "Tl3299882": {
-"^ot:altLabel": "Phoma herbarum", 
 "^ot:originalLabel": "Phoma herbarum CBS_377.92", 
+"^ot:ottId": 437937, 
+"^ot:ottTaxonName": "Phoma herbarum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 21903, 
 "@tb:identifier.taxonVariant": 50939, 
@@ -282,8 +379,9 @@
 "^ot:originalLabel": "Didymella molleriana CBS_229.79"
 }, 
 "Tl3299884": {
-"^ot:altLabel": "Epicoccum nigrum", 
 "^ot:originalLabel": "Epicoccum nigrum CBS_125.82", 
+"^ot:ottId": 846222, 
+"^ot:ottTaxonName": "Epicoccum nigrum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 111443, 
 "@tb:identifier.taxonVariant": 189829, 
@@ -295,11 +393,14 @@
 "^ot:originalLabel": "Didymella gardeniae UTHSC_DI16_226"
 }, 
 "Tl3299886": {
-"^ot:originalLabel": "Camarosporium clematidis MFLUCC_13_0336"
+"^ot:originalLabel": "Camarosporium clematidis MFLUCC_13_0336", 
+"^ot:ottId": 5697191, 
+"^ot:ottTaxonName": "Camarosporium clematidis"
 }, 
 "Tl3299887": {
-"^ot:altLabel": "Camarosporium quaternatum", 
 "^ot:originalLabel": "Camarosporium quaternatum CPC_31518", 
+"^ot:ottId": 539389, 
+"^ot:ottTaxonName": "Camarosporium quaternatum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 324412, 
 "@tb:identifier.taxonVariant": 366627, 
@@ -311,8 +412,9 @@
 "^ot:originalLabel": "Didymella arachidicola CBS_333.75"
 }, 
 "Tl3299889": {
-"^ot:altLabel": "Pyrenochaeta nobilis", 
 "^ot:originalLabel": "Pyrenochaeta nobilis CBS_407.76T", 
+"^ot:ottId": 494428, 
+"^ot:ottTaxonName": "Pyrenochaeta nobilis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 42400, 
 "@tb:identifier.taxonVariant": 98871, 
@@ -330,7 +432,9 @@
 "^ot:originalLabel": "Allophoma zantedeschiae CBS_229.32"
 }, 
 "Tl3299893": {
-"^ot:originalLabel": "Alternariaster bidentis CBS_134021"
+"^ot:originalLabel": "Alternariaster bidentis CBS_134021", 
+"^ot:ottId": 5318971, 
+"^ot:ottTaxonName": "Alternariaster bidentis"
 }, 
 "Tl3299894": {
 "^ot:originalLabel": "Parapyrenochaeta protearum CBS_131315T"
@@ -339,8 +443,9 @@
 "^ot:originalLabel": "Neopyrenochaeta acicola CBS_812.95"
 }, 
 "Tl3299896": {
-"^ot:altLabel": "Coniothyrium palmarum", 
 "^ot:originalLabel": "Coniothyrium palmarum CBS_758.73", 
+"^ot:ottId": 43686, 
+"^ot:ottTaxonName": "Coniothyrium palmarum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6854, 
 "@tb:identifier.taxonVariant": 16606, 
@@ -349,8 +454,9 @@
 }
 }, 
 "Tl3299897": {
-"^ot:altLabel": "Leptosphaeria doliolum", 
 "^ot:originalLabel": "Leptosphaeria doliolum CBS_505.75T", 
+"^ot:ottId": 422785, 
+"^ot:ottTaxonName": "Leptosphaeria doliolum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 15705, 
 "@tb:identifier.taxonVariant": 36822, 
@@ -362,14 +468,17 @@
 "^ot:originalLabel": "Didymella glomerata UTHSC_DI16_205"
 }, 
 "Tl3299899": {
-"^ot:originalLabel": "Briansuttonomyces eucalypti CBS_114887"
+"^ot:originalLabel": "Briansuttonomyces eucalypti CBS_114887", 
+"^ot:ottId": 6377899, 
+"^ot:ottTaxonName": "Briansuttonomyces eucalypti"
 }, 
 "Tl3299900": {
 "^ot:originalLabel": "Epicoccum layuense CGMCC_3_18362T"
 }, 
 "Tl3299901": {
-"^ot:altLabel": "Phoma herbarum", 
 "^ot:originalLabel": "Phoma herbarum UTHSC_DI16_319", 
+"^ot:ottId": 437937, 
+"^ot:ottTaxonName": "Phoma herbarum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 21903, 
 "@tb:identifier.taxonVariant": 50939, 
@@ -411,7 +520,9 @@
 "^ot:originalLabel": "Xenodidymella applanata CBS_205.63"
 }, 
 "Tl3299911": {
-"^ot:originalLabel": "Camarosporium arezzoensis MFLUCC_140238"
+"^ot:originalLabel": "Camarosporium arezzoensis MFLUCC_140238", 
+"^ot:ottId": 5697194, 
+"^ot:ottTaxonName": "Camarosporium arezzoensis"
 }, 
 "Tl3299912": {
 "^ot:originalLabel": "Neocucurbitaria quercina CBS_115095T"
@@ -438,7 +549,9 @@
 "^ot:originalLabel": "Didymella ellipsoidea CGMCC_3_18350T"
 }, 
 "Tl3299920": {
-"^ot:originalLabel": "Allophoma nicaraguensis CBS_506.91T"
+"^ot:originalLabel": "Allophoma nicaraguensis CBS_506.91T", 
+"^ot:ottId": 5978000, 
+"^ot:ottTaxonName": "Allophoma nicaraguensis"
 }, 
 "Tl3299921": {
 "^ot:originalLabel": "Didymella macrophylla CGMCC_3_18357T"
@@ -453,7 +566,9 @@
 "^ot:originalLabel": "Pyrenochaetopsis uberiformis CBS_142461T"
 }, 
 "Tl3299925": {
-"^ot:originalLabel": "Neocamarosporium goegapense CPC_23676"
+"^ot:originalLabel": "Neocamarosporium goegapense CPC_23676", 
+"^ot:ottId": 5713504, 
+"^ot:ottTaxonName": "Neocamarosporium goegapense"
 }, 
 "Tl3299926": {
 "^ot:originalLabel": "Epicoccum camelliae LC_4862"
@@ -468,8 +583,9 @@
 "^ot:originalLabel": "Didymella sancta CBS_281.83T"
 }, 
 "Tl3299930": {
-"^ot:altLabel": "Cucurbitaria elongata", 
 "^ot:originalLabel": "Cucurbitaria elongata MFLUCC_14_0260", 
+"^ot:ottId": 659810, 
+"^ot:ottTaxonName": "Cucurbitaria elongata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 7754, 
 "@tb:identifier.taxonVariant": 18663, 
@@ -481,7 +597,9 @@
 "^ot:originalLabel": "Neoascochyta soli LC_8166"
 }, 
 "Tl3299932": {
-"^ot:originalLabel": "Pyrenochaetopsis indica CBS_124454T"
+"^ot:originalLabel": "Pyrenochaetopsis indica CBS_124454T", 
+"^ot:ottId": 1070568, 
+"^ot:ottTaxonName": "Pyrenochaetopsis indica"
 }, 
 "Tl3299933": {
 "^ot:originalLabel": "Neoascochyta triticicola CBS_544.74T"
@@ -499,7 +617,9 @@
 "^ot:originalLabel": "Didymella pteridis CBS_379.96T"
 }, 
 "Tl3299938": {
-"^ot:originalLabel": "Camarosporium spartii MFLUCC_13_0548"
+"^ot:originalLabel": "Camarosporium spartii MFLUCC_13_0548", 
+"^ot:ottId": 3737203, 
+"^ot:ottTaxonName": "Camarosporium spartii"
 }, 
 "Tl3299939": {
 "^ot:originalLabel": "Didymella segeticola CGMCC_3_17498"
@@ -523,7 +643,9 @@
 "^ot:originalLabel": "Didymella heteroderae UTHSC_DI16_231"
 }, 
 "Tl3299946": {
-"^ot:originalLabel": "Libertasomyces myopori CPC_27354"
+"^ot:originalLabel": "Libertasomyces myopori CPC_27354", 
+"^ot:ottId": 6377747, 
+"^ot:ottTaxonName": "Libertasomyces myopori"
 }, 
 "Tl3299947": {
 "^ot:originalLabel": "Neoascochyta paspali CBS_560.81T"
@@ -535,7 +657,9 @@
 "^ot:originalLabel": "Epicoccum camelliae UTHSC_DI16_202"
 }, 
 "Tl3299950": {
-"^ot:originalLabel": "Stagonosporopsis dorenboschii CBS_426.90T"
+"^ot:originalLabel": "Stagonosporopsis dorenboschii CBS_426.90T", 
+"^ot:ottId": 209699, 
+"^ot:ottTaxonName": "Stagonosporopsis dorenboschii"
 }, 
 "Tl3299951": {
 "^ot:originalLabel": "Didymella heteroderae UTHSC_DI16_190"
@@ -553,8 +677,9 @@
 "^ot:originalLabel": "Didymella ocimicola LC_8138"
 }, 
 "Tl3299956": {
-"^ot:altLabel": "Phaeosphaeria oryzae", 
 "^ot:originalLabel": "Phaeosphaeria oryzae CBS_110110", 
+"^ot:ottId": 593504, 
+"^ot:ottTaxonName": "Phaeosphaeria oryzae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 21570, 
 "@tb:identifier.taxonVariant": 50182, 
@@ -563,11 +688,14 @@
 }
 }, 
 "Tl3299957": {
-"^ot:originalLabel": "Phaeomycocentrospora cantuariensis CBS_132014"
+"^ot:originalLabel": "Phaeomycocentrospora cantuariensis CBS_132014", 
+"^ot:ottId": 419534, 
+"^ot:ottTaxonName": "Phaeomycocentrospora cantuariensis"
 }, 
 "Tl3299958": {
-"^ot:altLabel": "Macroventuria anomochaeta", 
 "^ot:originalLabel": "Macroventuria anomochaeta CBS_525.71T", 
+"^ot:ottId": 25864, 
+"^ot:ottTaxonName": "Macroventuria anomochaeta", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 35289, 
 "@tb:identifier.taxonVariant": 81751, 
@@ -591,8 +719,9 @@
 "^ot:originalLabel": "Neopyrenochaetopsis hominis UTHSC_DI16_238T"
 }, 
 "Tl3299964": {
-"^ot:altLabel": "Shiraia bambusicola", 
 "^ot:originalLabel": "Shiraia bambusicola NBRC_30771", 
+"^ot:ottId": 1090232, 
+"^ot:ottTaxonName": "Shiraia bambusicola", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 42297, 
 "@tb:identifier.taxonVariant": 98615, 
@@ -620,8 +749,9 @@
 "^ot:originalLabel": "Vaciviphoma bulgarica CBS_357.84T"
 }, 
 "Tl3299969": {
-"^ot:altLabel": "Dothidotthia aspera", 
 "^ot:originalLabel": "Dothidotthia aspera CPC_12932", 
+"^ot:ottId": 449236, 
+"^ot:ottTaxonName": "Dothidotthia aspera", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 483924, 
 "@tb:identifier.taxonVariant": 641182, 
@@ -639,7 +769,9 @@
 "^ot:originalLabel": "Epicoccum sorghinum CBS_179.80"
 }, 
 "Tl3299973": {
-"^ot:originalLabel": "Coniothyrium carteri CBS_105.91"
+"^ot:originalLabel": "Coniothyrium carteri CBS_105.91", 
+"^ot:ottId": 928511, 
+"^ot:ottTaxonName": "Coniothyrium carteri"
 }, 
 "Tl3299974": {
 "^ot:originalLabel": "Neodidymelliopsis achlydis CBS_256_77T"
@@ -654,8 +786,9 @@
 "^ot:originalLabel": "Paracucurbitaria italica CBS_234.92T"
 }, 
 "Tl3299978": {
-"^ot:altLabel": "Ophiosphaerella herpotricha", 
 "^ot:originalLabel": "Ophiosphaerella herpotricha AFTOL_ID_1569", 
+"^ot:ottId": 282728, 
+"^ot:ottTaxonName": "Ophiosphaerella herpotricha", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 19652, 
 "@tb:identifier.taxonVariant": 45733, 
@@ -691,8 +824,9 @@
 "^ot:originalLabel": "Xenodidymella catariae CBS_102635"
 }, 
 "Tl3299988": {
-"^ot:altLabel": "Curreya pityophila", 
 "^ot:originalLabel": "Curreya pityophila CBS_149.32", 
+"^ot:ottId": 659813, 
+"^ot:ottTaxonName": "Curreya pityophila", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 7748, 
 "@tb:identifier.taxonVariant": 113182, 
@@ -707,11 +841,14 @@
 "^ot:originalLabel": "Epicoccum hordei LC_8149"
 }, 
 "Tl3299991": {
-"^ot:originalLabel": "Phaeomycocentrospora cantuariensis CPC_10157"
+"^ot:originalLabel": "Phaeomycocentrospora cantuariensis CPC_10157", 
+"^ot:ottId": 419534, 
+"^ot:ottTaxonName": "Phaeomycocentrospora cantuariensis"
 }, 
 "Tl3299992": {
-"^ot:altLabel": "Leptosphaerulina australis", 
 "^ot:originalLabel": "Leptosphaerulina australis CBS_317.83", 
+"^ot:ottId": 343430, 
+"^ot:ottTaxonName": "Leptosphaerulina australis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 35291, 
 "@tb:identifier.taxonVariant": 81758, 
@@ -726,8 +863,9 @@
 "^ot:originalLabel": "Epicoccum camelliae UTHSC_DI16_201"
 }, 
 "Tl3299995": {
-"^ot:altLabel": "Shiraia bambusicola", 
 "^ot:originalLabel": "Shiraia bambusicola NBRC_30753", 
+"^ot:ottId": 1090232, 
+"^ot:ottTaxonName": "Shiraia bambusicola", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 42297, 
 "@tb:identifier.taxonVariant": 98615, 
@@ -739,8 +877,9 @@
 "^ot:originalLabel": "Hazslinszkyomyces aptrootii CBS_483.95"
 }, 
 "Tl3299997": {
-"^ot:altLabel": "Shiraia bambusicola", 
 "^ot:originalLabel": "Shiraia bambusicola NBRC_30772", 
+"^ot:ottId": 1090232, 
+"^ot:ottTaxonName": "Shiraia bambusicola", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 42297, 
 "@tb:identifier.taxonVariant": 98615, 
@@ -752,8 +891,9 @@
 "^ot:originalLabel": "Iuxtiphoma eupyrena CBS_374.91"
 }, 
 "Tl3299999": {
-"^ot:altLabel": "Macroventuria wentii", 
 "^ot:originalLabel": "Macroventuria wentii CBS_526.71T", 
+"^ot:ottId": 343431, 
+"^ot:ottTaxonName": "Macroventuria wentii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 35288, 
 "@tb:identifier.taxonVariant": 81749, 
@@ -771,8 +911,9 @@
 "^ot:originalLabel": "Allophoma coffeae arabicae_CBS_497.91"
 }, 
 "Tl3300003": {
-"^ot:altLabel": "Phoma herbarum", 
 "^ot:originalLabel": "Phoma herbarum FMR_UTHSC_DI16_204", 
+"^ot:ottId": 437937, 
+"^ot:ottTaxonName": "Phoma herbarum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 21903, 
 "@tb:identifier.taxonVariant": 50939, 
@@ -784,8 +925,9 @@
 "^ot:originalLabel": "Didymella aquatica CGMCC_3_18349T"
 }, 
 "Tl3300005": {
-"^ot:altLabel": "Preussia terricola", 
 "^ot:originalLabel": "Preussia terricola AFTOL_ID_282", 
+"^ot:ottId": 227033, 
+"^ot:ottTaxonName": "Preussia terricola", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 34903, 
 "@tb:identifier.taxonVariant": 80842, 
@@ -803,7 +945,9 @@
 }
 }, 
 "Tl3300007": {
-"^ot:originalLabel": "Neoplatysporoides aloicola CBS_139901"
+"^ot:originalLabel": "Neoplatysporoides aloicola CBS_139901", 
+"^ot:ottId": 5713502, 
+"^ot:ottTaxonName": "Neoplatysporoides aloicola"
 }, 
 "Tl3300008": {
 "^ot:originalLabel": "Epicoccum keratinophilum UTHSC_DI16_258"
@@ -824,14 +968,17 @@
 "^ot:originalLabel": "Epicoccum proteae CBS_114179T"
 }, 
 "Tl3300014": {
-"^ot:originalLabel": "Paraepicoccum amazonense MFLUCC_15_0493"
+"^ot:originalLabel": "Paraepicoccum amazonense MFLUCC_15_0493", 
+"^ot:ottId": 4093342, 
+"^ot:ottTaxonName": "Paraepicoccum amazonense"
 }, 
 "Tl3300015": {
 "^ot:originalLabel": "Neocucurbitaria hakeae CPC_28920T"
 }, 
 "Tl3300016": {
-"^ot:altLabel": "Pleospora herbarum", 
 "^ot:originalLabel": "Pleospora herbarum CBS_191.86", 
+"^ot:ottId": 282723, 
+"^ot:ottTaxonName": "Pleospora herbarum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22837, 
 "@tb:identifier.taxonVariant": 53224, 
@@ -843,8 +990,9 @@
 "^ot:originalLabel": "Didymella rumicicola CBS_683.79T"
 }, 
 "Tl3300018": {
-"^ot:altLabel": "Epicoccum nigrum", 
 "^ot:originalLabel": "Epicoccum nigrum CBS_173.73T", 
+"^ot:ottId": 846222, 
+"^ot:ottTaxonName": "Epicoccum nigrum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 111443, 
 "@tb:identifier.taxonVariant": 189829, 
@@ -856,7 +1004,9 @@
 "^ot:originalLabel": "Heterophoma nobilis CBS_507.91"
 }, 
 "Tl3300020": {
-"^ot:originalLabel": "Coniothyrium telephii CBS_188.71"
+"^ot:originalLabel": "Coniothyrium telephii CBS_188.71", 
+"^ot:ottId": 948561, 
+"^ot:ottTaxonName": "Coniothyrium telephii"
 }, 
 "Tl3300021": {
 "^ot:originalLabel": "Neoascochyta soli CGMCC_3_18365T"
@@ -868,13 +1018,17 @@
 "^ot:originalLabel": "Didymella aeria CGMCC_3_18353T"
 }, 
 "Tl3300024": {
-"^ot:originalLabel": "Neodidymelliopsis polemonii CBS_109181T"
+"^ot:originalLabel": "Neodidymelliopsis polemonii CBS_109181T", 
+"^ot:ottId": 5978050, 
+"^ot:ottTaxonName": "Neodidymelliopsis polemonii"
 }, 
 "Tl3300025": {
 "^ot:originalLabel": "Phomatodes nebulosa CBS_100191"
 }, 
 "Tl3300026": {
-"^ot:originalLabel": "Neophaeosphaeria agaves CPC_21264"
+"^ot:originalLabel": "Neophaeosphaeria agaves CPC_21264", 
+"^ot:ottId": 5310990, 
+"^ot:ottTaxonName": "Neophaeosphaeria agaves"
 }, 
 "Tl3300027": {
 "^ot:originalLabel": "Didymella gardeniae UTHSC_DI16_211"
@@ -891,13 +1045,19 @@
 "^skos:prefLabel": "Didymella rabiei"
 }, 
 "Tl3300029": {
-"^ot:originalLabel": "Camarosporium aborescentis MFLUCC_14_0604"
+"^ot:originalLabel": "Camarosporium aborescentis MFLUCC_14_0604", 
+"^ot:ottId": 5697192, 
+"^ot:ottTaxonName": "Camarosporium aborescentis"
 }, 
 "Tl3300030": {
-"^ot:originalLabel": "Boeremia exigua CBS_119.38"
+"^ot:originalLabel": "Boeremia exigua CBS_119.38", 
+"^ot:ottId": 30694, 
+"^ot:ottTaxonName": "Boeremia exigua"
 }, 
 "Tl3300031": {
 "^ot:originalLabel": "Ochrocladosporium elatum CBS_146.33", 
+"^ot:ottId": 860034, 
+"^ot:ottTaxonName": "Ochrocladosporium elatum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 537705, 
 "@tb:identifier.taxonVariant": 713209
@@ -925,11 +1085,14 @@
 "^ot:originalLabel": "Didymella heteroderae UTHSC_DI16_232"
 }, 
 "Tl3300039": {
-"^ot:originalLabel": "Pyrenochaetopsis microspora CBS_102876T"
+"^ot:originalLabel": "Pyrenochaetopsis microspora CBS_102876T", 
+"^ot:ottId": 1070579, 
+"^ot:ottTaxonName": "Pyrenochaetopsis microspora"
 }, 
 "Tl3300040": {
-"^ot:altLabel": "Dothidotthia symphoricarpi", 
 "^ot:originalLabel": "Dothidotthia symphoricarpi CPC_12929", 
+"^ot:ottId": 975532, 
+"^ot:ottTaxonName": "Dothidotthia symphoricarpi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 483923, 
 "@tb:identifier.taxonVariant": 641180, 
@@ -938,8 +1101,9 @@
 }
 }, 
 "Tl3300041": {
-"^ot:altLabel": "Phoma herbarum", 
 "^ot:originalLabel": "Phoma herbarum UTHSC_DI16_306", 
+"^ot:ottId": 437937, 
+"^ot:ottTaxonName": "Phoma herbarum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 21903, 
 "@tb:identifier.taxonVariant": 50939, 
@@ -951,11 +1115,14 @@
 "^ot:originalLabel": "Ectophoma multirostrata CBS_368.65"
 }, 
 "Tl3300043": {
-"^ot:originalLabel": "Pyrenochaetopsis leptospora CBS_122787"
+"^ot:originalLabel": "Pyrenochaetopsis leptospora CBS_122787", 
+"^ot:ottId": 1070573, 
+"^ot:ottTaxonName": "Pyrenochaetopsis leptospora"
 }, 
 "Tl3300044": {
-"^ot:altLabel": "Camarosporium quaternatum", 
 "^ot:originalLabel": "Camarosporium quaternatum CPC_31081T", 
+"^ot:ottId": 539389, 
+"^ot:ottTaxonName": "Camarosporium quaternatum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 324412, 
 "@tb:identifier.taxonVariant": 366627, 
@@ -964,10 +1131,14 @@
 }
 }, 
 "Tl3300045": {
-"^ot:originalLabel": "Camarosporium robiniicola MFLUCC_13_0527"
+"^ot:originalLabel": "Camarosporium robiniicola MFLUCC_13_0527", 
+"^ot:ottId": 5697188, 
+"^ot:ottTaxonName": "Camarosporium robiniicola"
 }, 
 "Tl3300046": {
-"^ot:originalLabel": "Neomicrosphaeropsis italica MFLUCC_15_0484"
+"^ot:originalLabel": "Neomicrosphaeropsis italica MFLUCC_15_0484", 
+"^ot:ottId": 6377638, 
+"^ot:ottTaxonName": "Neomicrosphaeropsis italica"
 }, 
 "Tl3300047": {
 "^ot:originalLabel": "Didymella microchlamydospora CBS_105.95T"
@@ -976,7 +1147,9 @@
 "^ot:originalLabel": "Neopyrenochaeta fragariae CBS_101634"
 }, 
 "Tl3300049": {
-"^ot:originalLabel": "Boeremia exigua CBS_118.38"
+"^ot:originalLabel": "Boeremia exigua CBS_118.38", 
+"^ot:ottId": 30694, 
+"^ot:ottTaxonName": "Boeremia exigua"
 }, 
 "Tl3300050": {
 "^ot:originalLabel": "Ascochyta versabilis CBS_876.97"
@@ -988,8 +1161,9 @@
 "^ot:originalLabel": "Neodidymelliopsis cannabis CBS_234.37"
 }, 
 "Tl3300053": {
-"^ot:altLabel": "Sporormiella minima", 
 "^ot:originalLabel": "Sporormiella minima CBS_524.50", 
+"^ot:ottId": 1071356, 
+"^ot:ottTaxonName": "Sporormiella minima", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 32934, 
 "@tb:identifier.taxonVariant": 76109, 
@@ -1005,7 +1179,9 @@
 "^ot:originalLabel": "Epicoccum catenisporum CBS_181.80T"
 }, 
 "Tl3300056": {
-"^ot:originalLabel": "Camarosporium aureum MFLUCC_14_0620"
+"^ot:originalLabel": "Camarosporium aureum MFLUCC_14_0620", 
+"^ot:ottId": 5697190, 
+"^ot:ottTaxonName": "Camarosporium aureum"
 }, 
 "Tl3300057": {
 "^ot:originalLabel": "Heterophoma verbascicola CGMCC_3_18364T"
@@ -1032,7 +1208,9 @@
 "^ot:originalLabel": "Pyrenochaetopsis botulispora UTHSC_DI16_289"
 }, 
 "Tl3300065": {
-"^ot:originalLabel": "Pyrenochaetopsis poae CBS_136769T"
+"^ot:originalLabel": "Pyrenochaetopsis poae CBS_136769T", 
+"^ot:ottId": 5714206, 
+"^ot:ottTaxonName": "Pyrenochaetopsis poae"
 }, 
 "Tl3300066": {
 "^ot:originalLabel": "Allocucurbitaria botulispora CBS_142453T"
@@ -1071,7 +1249,9 @@
 "^ot:originalLabel": "Didymella curtisii PD_92_1460"
 }, 
 "Tl3300078": {
-"^ot:originalLabel": "Coniothyrium telephii CBS_856.97"
+"^ot:originalLabel": "Coniothyrium telephii CBS_856.97", 
+"^ot:ottId": 948561, 
+"^ot:ottTaxonName": "Coniothyrium telephii"
 }, 
 "Tl3300079": {
 "^ot:originalLabel": "Epicoccum hordei CGMCC_3_18360T"
@@ -1099,8 +1279,9 @@
 "^ot:originalLabel": "Didymella negriana CBS_358.71"
 }, 
 "Tl3300085": {
-"^ot:altLabel": "Phoma herbarum", 
 "^ot:originalLabel": "Phoma herbarum UTHSC_DI16_307", 
+"^ot:ottId": 437937, 
+"^ot:ottTaxonName": "Phoma herbarum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 21903, 
 "@tb:identifier.taxonVariant": 50939, 
@@ -1109,20 +1290,25 @@
 }
 }, 
 "Tl3300086": {
-"^ot:originalLabel": "Halojulella avicenniae BCC_18422"
+"^ot:originalLabel": "Halojulella avicenniae BCC_18422", 
+"^ot:ottId": 709740, 
+"^ot:ottTaxonName": "Halojulella avicenniae"
 }, 
 "Tl3300087": {
 "^ot:originalLabel": "Didymella anserina CBS_253.80"
 }, 
 "Tl3300088": {
-"^ot:originalLabel": "Halojulella avicenniae BCC_20173"
+"^ot:originalLabel": "Halojulella avicenniae BCC_20173", 
+"^ot:ottId": 709740, 
+"^ot:ottTaxonName": "Halojulella avicenniae"
 }, 
 "Tl3300089": {
 "^ot:originalLabel": "Didymella boeremae CBS_109942T"
 }, 
 "Tl3300090": {
-"^ot:altLabel": "Phoma herbarum", 
 "^ot:originalLabel": "Phoma herbarum UTHSC_DI16_212", 
+"^ot:ottId": 437937, 
+"^ot:ottTaxonName": "Phoma herbarum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 21903, 
 "@tb:identifier.taxonVariant": 50939, 
@@ -1140,7 +1326,9 @@
 "^ot:originalLabel": "Didymella protuberans CBS_381.96T"
 }, 
 "Tl3300094": {
-"^ot:originalLabel": "Alternariaster helianthi CBS_327.69"
+"^ot:originalLabel": "Alternariaster helianthi CBS_327.69", 
+"^ot:ottId": 4081336, 
+"^ot:ottTaxonName": "Alternariaster helianthi"
 }, 
 "Tl3300095": {
 "^ot:originalLabel": "Cumuliphoma indica CBS_654.77"
@@ -1181,14 +1369,17 @@
 "^ot:originalLabel": "Didymella subglomerata CBS_110.92"
 }, 
 "Tl3300105": {
-"^ot:originalLabel": "Pyrenochaetopsis microspora UTHSC_DI16_198"
+"^ot:originalLabel": "Pyrenochaetopsis microspora UTHSC_DI16_198", 
+"^ot:ottId": 1070579, 
+"^ot:ottTaxonName": "Pyrenochaetopsis microspora"
 }, 
 "Tl3300106": {
 "^ot:originalLabel": "Neocucurbitaria aquatica CBS_297.74T"
 }, 
 "Tl3300107": {
-"^ot:altLabel": "Leptosphaerulina americana", 
 "^ot:originalLabel": "Leptosphaerulina americana CBS_213.55", 
+"^ot:ottId": 201609, 
+"^ot:ottTaxonName": "Leptosphaerulina americana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 209023, 
 "@tb:identifier.taxonVariant": 277896, 
@@ -1212,11 +1403,14 @@
 "^ot:originalLabel": "Didymella glomerata CBS_528.66"
 }, 
 "Tl3300113": {
-"^ot:originalLabel": "Microsphaeropsis proteae CBS_111319"
+"^ot:originalLabel": "Microsphaeropsis proteae CBS_111319", 
+"^ot:ottId": 40751, 
+"^ot:ottTaxonName": "Microsphaeropsis proteae"
 }, 
 "Tl3300114": {
-"^ot:altLabel": "Camarosporium quaternatum", 
 "^ot:originalLabel": "Camarosporium quaternatum CPC_23216", 
+"^ot:ottId": 539389, 
+"^ot:ottTaxonName": "Camarosporium quaternatum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 324412, 
 "@tb:identifier.taxonVariant": 366627, 
@@ -1243,7 +1437,9 @@
 "^ot:originalLabel": "Didymella macrostoma CBS_223.69"
 }, 
 "Tl3300121": {
-"^ot:originalLabel": "Neoascochyta exitialis CBS_389.86"
+"^ot:originalLabel": "Neoascochyta exitialis CBS_389.86", 
+"^ot:ottId": 257646, 
+"^ot:ottTaxonName": "Neoascochyta exitialis"
 }, 
 "Tl3300122": {
 "^ot:originalLabel": "Ascochyta viciae CBS_451.68"
@@ -1273,8 +1469,9 @@
 "^ot:originalLabel": "Calophoma clematidina CBS_102.66"
 }, 
 "Tl3300131": {
-"^ot:altLabel": "Pleiochaeta setosa", 
 "^ot:originalLabel": "Pleiochaeta setosa CBS_496.63", 
+"^ot:ottId": 257645, 
+"^ot:ottTaxonName": "Pleiochaeta setosa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 411662, 
 "@tb:identifier.taxonVariant": 410869, 
@@ -1286,14 +1483,17 @@
 "^ot:originalLabel": "Epicoccum pneumoniae UTHSC_DI16_257"
 }, 
 "Tl3300133": {
-"^ot:originalLabel": "Paraepicoccum amazonense MFLUCC_15_0491"
+"^ot:originalLabel": "Paraepicoccum amazonense MFLUCC_15_0491", 
+"^ot:ottId": 4093342, 
+"^ot:ottTaxonName": "Paraepicoccum amazonense"
 }, 
 "Tl3300134": {
 "^ot:originalLabel": "Calophoma aquilegiicola CBS_107.96"
 }, 
 "Tl3300135": {
-"^ot:altLabel": "Phoma herbarum", 
 "^ot:originalLabel": "Phoma herbarum CBS_615.75", 
+"^ot:ottId": 437937, 
+"^ot:ottTaxonName": "Phoma herbarum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 21903, 
 "@tb:identifier.taxonVariant": 50939, 
@@ -1302,13 +1502,17 @@
 }
 }, 
 "Tl3300136": {
-"^ot:originalLabel": "Neoascochyta exitialis CBS_118.40"
+"^ot:originalLabel": "Neoascochyta exitialis CBS_118.40", 
+"^ot:ottId": 257646, 
+"^ot:ottTaxonName": "Neoascochyta exitialis"
 }, 
 "Tl3300137": {
 "^ot:originalLabel": "Epicoccum duchesneae CGMCC_3_18345T"
 }, 
 "Tl3300138": {
-"^ot:originalLabel": "Pyrenochaetopsis decipiens CBS_343.85T"
+"^ot:originalLabel": "Pyrenochaetopsis decipiens CBS_343.85T", 
+"^ot:ottId": 494418, 
+"^ot:ottTaxonName": "Pyrenochaetopsis decipiens"
 }, 
 "Tl3300139": {
 "^ot:altLabel": "Stagonosporopsis hortensis", 
@@ -1336,13 +1540,17 @@
 }, 
 "Tl3300145": {
 "^ot:originalLabel": "Ochrocladosporium frigidarii CBS_103.81", 
+"^ot:ottId": 82125, 
+"^ot:ottTaxonName": "Ochrocladosporium frigidarii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 401767, 
 "@tb:identifier.taxonVariant": 538863
 }
 }, 
 "Tl3300146": {
-"^ot:originalLabel": "Pyrenochaetopsis leptospora CBS_101635T"
+"^ot:originalLabel": "Pyrenochaetopsis leptospora CBS_101635T", 
+"^ot:ottId": 1070573, 
+"^ot:ottTaxonName": "Pyrenochaetopsis leptospora"
 }, 
 "Tl3300147": {
 "^ot:originalLabel": "Remotididymella destructiva CBS_133.93"
@@ -1357,8 +1565,9 @@
 "^ot:originalLabel": "Epicoccum sorghinum UTHSC_DI16_288"
 }, 
 "Tl3300151": {
-"^ot:altLabel": "Didymella exigua", 
 "^ot:originalLabel": "Didymella exigua CBS_183.55T", 
+"^ot:ottId": 139339, 
+"^ot:ottTaxonName": "Didymella exigua", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 9034, 
 "@tb:identifier.taxonVariant": 21727, 
@@ -1367,8 +1576,9 @@
 }
 }, 
 "Tl3300152": {
-"^ot:altLabel": "Cucurbitaria elongata", 
 "^ot:originalLabel": "Cucurbitaria elongata AFTOL_ID_1568", 
+"^ot:ottId": 659810, 
+"^ot:ottTaxonName": "Cucurbitaria elongata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 7754, 
 "@tb:identifier.taxonVariant": 18663, 
@@ -1398,8 +1608,9 @@
 "^ot:originalLabel": "Epicoccum henningsii CBS_104.80"
 }, 
 "Tl3300160": {
-"^ot:altLabel": "Shiraia bambusicola", 
 "^ot:originalLabel": "Shiraia bambusicola NBRC_30754", 
+"^ot:ottId": 1090232, 
+"^ot:ottTaxonName": "Shiraia bambusicola", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 42297, 
 "@tb:identifier.taxonVariant": 98615, 
@@ -1432,7 +1643,9 @@
 "^ot:originalLabel": "Didymella viburnicola CBS_523.73"
 }, 
 "Tl3300169": {
-"^ot:originalLabel": "Paraleptosphaeria dryadis CBS_643.86"
+"^ot:originalLabel": "Paraleptosphaeria dryadis CBS_643.86", 
+"^ot:ottId": 309134, 
+"^ot:ottTaxonName": "Paraleptosphaeria dryadis"
 }, 
 "Tl3300170": {
 "^ot:originalLabel": "Epicoccum pimprinum PD_77_1028"
@@ -1479,8 +1692,9 @@
 "^ot:originalLabel": "Didymella heteroderae UTHSC_DI16_224"
 }, 
 "Tl3300182": {
-"^ot:altLabel": "Cucurbitaria berberidis", 
 "^ot:originalLabel": "Cucurbitaria berberidis CBS_130007T", 
+"^ot:ottId": 659811, 
+"^ot:ottTaxonName": "Cucurbitaria berberidis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 7753, 
 "@tb:identifier.taxonVariant": 18661, 
@@ -1489,7 +1703,9 @@
 }
 }, 
 "Tl3300183": {
-"^ot:originalLabel": "Boeremia lycopersici CBS_378.67"
+"^ot:originalLabel": "Boeremia lycopersici CBS_378.67", 
+"^ot:ottId": 337819, 
+"^ot:ottTaxonName": "Boeremia lycopersici"
 }, 
 "Tl3300184": {
 "^ot:originalLabel": "Didymella aurea CBS_269.93T"
@@ -1498,8 +1714,9 @@
 "^ot:originalLabel": "Allophoma oligotrophica CGMCC_3_18114T"
 }, 
 "Tl3300186": {
-"^ot:altLabel": "Coniothyrium palmarum", 
 "^ot:originalLabel": "Coniothyrium palmarum CBS_400.71", 
+"^ot:ottId": 43686, 
+"^ot:ottTaxonName": "Coniothyrium palmarum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6854, 
 "@tb:identifier.taxonVariant": 16606, 
@@ -1517,7 +1734,9 @@
 "^ot:originalLabel": "Hazslinszkyomyces lycii CPC_30998"
 }, 
 "Tl3300190": {
-"^ot:originalLabel": "Briansuttonomyces eucalypti CBS_114879T"
+"^ot:originalLabel": "Briansuttonomyces eucalypti CBS_114879T", 
+"^ot:ottId": 6377899, 
+"^ot:ottTaxonName": "Briansuttonomyces eucalypti"
 }, 
 "Tl3300191": {
 "^ot:originalLabel": "Epicoccum latusicollum UTHSC_DI16_197"
@@ -1529,8 +1748,9 @@
 "^ot:originalLabel": "Epicoccum camelliae UTHSC_DI16_338"
 }, 
 "Tl3300194": {
-"^ot:altLabel": "Phoma herbarum", 
 "^ot:originalLabel": "Phoma herbarum CBS_502.91", 
+"^ot:ottId": 437937, 
+"^ot:ottTaxonName": "Phoma herbarum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 21903, 
 "@tb:identifier.taxonVariant": 50939, 
@@ -1556,7 +1776,18 @@
 "Tr113426": {
 "@label": "Fig. 1", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:changesCount", 
+"^ot:curatedType": "Maximum likelihood ", 
+"^ot:inGroupClade": "Tn17717672", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn17717769", 
+"^ot:specifiedRoot": "Tn17717769", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 357, 
 "^tb:quality.tree": "Unrated", 
