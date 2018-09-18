@@ -53,22 +53,125 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2018-09-18T19:36:29.731Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "Eudicots"
 }, 
-"^ot:curatorName": "Matt Girard", 
+"substitutions": {
+"substitution": [
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": "Var"
+}
+}, 
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": "\\b\\s+(\\S*)$"
+}
+}, 
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": "\\b\\s+(\\S*)$"
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2018-09-18T19:36:29.731Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Matt Girard"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S23259"
 }, 
+"^ot:focalCladeOTTTaxonName": "", 
 "^ot:otusElementOrder": [
 "Tls65049"
 ], 
 "^ot:studyId": "ot_1738", 
+"^ot:studyPublication": {
+"@href": ""
+}, 
 "^ot:studyPublicationReference": "Schurr F.M., Bond W.J., Tonnabel J., Midgley G.F., Rebelo T., Ronce O., & Higgins S.I. 2018. Evolution of long-distance seed dispersal and population extinction: why fire-killed nonsprouters disperse further than fire-persistent resprouters. New Phytologist, .", 
 "^ot:studyYear": 2018, 
+"^ot:tag": [], 
 "^ot:taxonLinkPrefixes": {
 "@ubio": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:", 
 "@uniprot": "http://purl.uniprot.org/taxonomy/"
@@ -91,8 +194,9 @@
 "^skos:historyNote": "Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlOTUWriter@91c6801 $Rev$", 
 "otuById": {
 "Tl3307085": {
-"^ot:altLabel": "Protea susannae", 
 "^ot:originalLabel": "Protea susannae Nr.1.2840", 
+"^ot:ottId": 967317, 
+"^ot:ottTaxonName": "Protea susannae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 244993, 
 "@tb:identifier.taxonVariant": 305889, 
@@ -101,10 +205,14 @@
 }
 }, 
 "Tl3307086": {
-"^ot:originalLabel": "Persoonia  Nr.1.4837"
+"^ot:originalLabel": "Persoonia  Nr.1.4837", 
+"^ot:ottId": 29551, 
+"^ot:ottTaxonName": "Persoonia"
 }, 
 "Tl3307087": {
 "^ot:originalLabel": "Leucadendron orientale Nr.2010.56.4.1.3447", 
+"^ot:ottId": 5716270, 
+"^ot:ottTaxonName": "Leucadendron orientale", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 635586, 
 "@tb:identifier.taxonVariant": 850598, 
@@ -112,8 +220,9 @@
 }
 }, 
 "Tl3307088": {
-"^ot:altLabel": "Leucadendron uliginosum uliginosum", 
 "^ot:originalLabel": "Leucadendron uliginosum uliginosum Nr.2010.70.2.1.3933", 
+"^ot:ottId": 678172, 
+"^ot:ottTaxonName": "Leucadendron uliginosum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 635533, 
 "@tb:identifier.taxonVariant": 850545, 
@@ -121,8 +230,9 @@
 }
 }, 
 "Tl3307089": {
-"^ot:altLabel": "Protea intonsa", 
 "^ot:originalLabel": "Protea intonsa Nr.1.2998", 
+"^ot:ottId": 1068277, 
+"^ot:ottTaxonName": "Protea intonsa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 245037, 
 "@tb:identifier.taxonVariant": 305933, 
@@ -131,8 +241,9 @@
 }
 }, 
 "Tl3307090": {
-"^ot:altLabel": "Leucadendron dregei", 
 "^ot:originalLabel": "Leucadendron dregei Nr.2010.511.3.1.2923", 
+"^ot:ottId": 600533, 
+"^ot:ottTaxonName": "Leucadendron dregei", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 264042, 
 "@tb:identifier.taxonVariant": 320842, 
@@ -141,8 +252,9 @@
 }
 }, 
 "Tl3307091": {
-"^ot:altLabel": "Protea lacticolor", 
 "^ot:originalLabel": "Protea lacticolor Nr.1.773", 
+"^ot:ottId": 308183, 
+"^ot:ottTaxonName": "Protea lacticolor", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 245001, 
 "@tb:identifier.taxonVariant": 305897, 
@@ -151,8 +263,9 @@
 }
 }, 
 "Tl3307092": {
-"^ot:altLabel": "Leucadendron radiatum Nr.2010.145.4.1.2722", 
 "^ot:originalLabel": "Leucadendron radiatum Nr.2010.145.2.1.3402", 
+"^ot:ottId": 5716255, 
+"^ot:ottTaxonName": "Leucadendron radiatum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 635605, 
 "@tb:identifier.taxonVariant": 850617, 
@@ -160,8 +273,9 @@
 }
 }, 
 "Tl3307093": {
-"^ot:altLabel": "Protea convexa", 
 "^ot:originalLabel": "Protea convexa Nr.1.3357", 
+"^ot:ottId": 1068271, 
+"^ot:ottTaxonName": "Protea convexa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 245034, 
 "@tb:identifier.taxonVariant": 305930, 
@@ -170,11 +284,14 @@
 }
 }, 
 "Tl3307094": {
-"^ot:originalLabel": "Faurea  Nr.1.4166"
+"^ot:originalLabel": "Faurea  Nr.1.4166", 
+"^ot:ottId": 500480, 
+"^ot:ottTaxonName": "Faurea (genus in kingdom Archaeplastida)"
 }, 
 "Tl3307095": {
-"^ot:altLabel": "Protea pityphylla", 
 "^ot:originalLabel": "Protea pityphylla Nr.1.3711", 
+"^ot:ottId": 1018035, 
+"^ot:ottTaxonName": "Protea pityphylla", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 245017, 
 "@tb:identifier.taxonVariant": 305913, 
@@ -183,11 +300,14 @@
 }
 }, 
 "Tl3307096": {
-"^ot:originalLabel": "Adenanthos  Nr.1.5735"
+"^ot:originalLabel": "Adenanthos  Nr.1.5735", 
+"^ot:ottId": 555272, 
+"^ot:ottTaxonName": "Adenanthos"
 }, 
 "Tl3307097": {
-"^ot:altLabel": "Leucadendron arcuatum", 
 "^ot:originalLabel": "Leucadendron arcuatum Nr.2010.47.1.1.3999", 
+"^ot:ottId": 27421, 
+"^ot:ottTaxonName": "Leucadendron arcuatum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 264031, 
 "@tb:identifier.taxonVariant": 320831, 
@@ -196,8 +316,9 @@
 }
 }, 
 "Tl3307098": {
-"^ot:altLabel": "Protea wentzeliana", 
 "^ot:originalLabel": "Protea wentzeliana Nr.1.2394", 
+"^ot:ottId": 599779, 
+"^ot:ottTaxonName": "Protea wentzeliana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 245060, 
 "@tb:identifier.taxonVariant": 305959, 
@@ -206,8 +327,9 @@
 }
 }, 
 "Tl3307099": {
-"^ot:altLabel": "Leucadendron dubium", 
 "^ot:originalLabel": "Leucadendron dubium Nr.2010.34.4.1.2936", 
+"^ot:ottId": 600532, 
+"^ot:ottTaxonName": "Leucadendron dubium", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 264043, 
 "@tb:identifier.taxonVariant": 320843, 
@@ -216,8 +338,9 @@
 }
 }, 
 "Tl3307100": {
-"^ot:altLabel": "Protea coronata", 
 "^ot:originalLabel": "Protea coronata Nr.1.3684", 
+"^ot:ottId": 1018033, 
+"^ot:ottTaxonName": "Protea coronata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 245021, 
 "@tb:identifier.taxonVariant": 305917, 
@@ -226,8 +349,9 @@
 }
 }, 
 "Tl3307101": {
-"^ot:altLabel": "Leucadendron rubrum", 
 "^ot:originalLabel": "Leucadendron rubrum Nr.2010.44.14.1.3139", 
+"^ot:ottId": 615598, 
+"^ot:ottTaxonName": "Leucadendron rubrum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 264073, 
 "@tb:identifier.taxonVariant": 320876, 
@@ -236,11 +360,14 @@
 }
 }, 
 "Tl3307102": {
-"^ot:originalLabel": "Conospermum  Nr.1.5323"
+"^ot:originalLabel": "Conospermum  Nr.1.5323", 
+"^ot:ottId": 551494, 
+"^ot:ottTaxonName": "Conospermum"
 }, 
 "Tl3307103": {
-"^ot:altLabel": "Protea odorata", 
 "^ot:originalLabel": "Protea odorata Nr.1.3352", 
+"^ot:ottId": 542013, 
+"^ot:ottTaxonName": "Protea odorata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 245045, 
 "@tb:identifier.taxonVariant": 305943, 
@@ -249,8 +376,9 @@
 }
 }, 
 "Tl3307104": {
-"^ot:altLabel": "Leucadendron glaberrimum subsp. glaberrimum", 
 "^ot:originalLabel": "Leucadendron glaberrimum glaberrimum Nr.2010.41.1.1.3970", 
+"^ot:ottId": 652978, 
+"^ot:ottTaxonName": "Leucadendron glaberrimum subsp. glaberrimum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 628172, 
 "@tb:identifier.taxonVariant": 841896, 
@@ -259,8 +387,9 @@
 }
 }, 
 "Tl3307105": {
-"^ot:altLabel": "Protea pruinosa", 
 "^ot:originalLabel": "Protea pruinosa Nr.1.3637", 
+"^ot:ottId": 441586, 
+"^ot:ottTaxonName": "Protea pruinosa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 245004, 
 "@tb:identifier.taxonVariant": 305900, 
@@ -270,6 +399,8 @@
 }, 
 "Tl3307106": {
 "^ot:originalLabel": "Leucadendron stelligerum Nr.2011.604.1.1.4000", 
+"^ot:ottId": 5716268, 
+"^ot:ottTaxonName": "Leucadendron stelligerum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 635584, 
 "@tb:identifier.taxonVariant": 850596, 
@@ -277,11 +408,14 @@
 }
 }, 
 "Tl3307107": {
-"^ot:originalLabel": "Franklandia  Nr.1.4554"
+"^ot:originalLabel": "Franklandia  Nr.1.4554", 
+"^ot:ottId": 1078103, 
+"^ot:ottTaxonName": "Franklandia"
 }, 
 "Tl3307108": {
-"^ot:altLabel": "Protea neriifolia", 
 "^ot:originalLabel": "Protea neriifolia Nr.1.3461", 
+"^ot:ottId": 30327, 
+"^ot:ottTaxonName": "Protea neriifolia", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 94685, 
 "@tb:identifier.taxonVariant": 173777, 
@@ -290,8 +424,9 @@
 }
 }, 
 "Tl3307109": {
-"^ot:altLabel": "Leucadendron singulare", 
 "^ot:originalLabel": "Leucadendron singulare Nr.2010.132.4.1.1871", 
+"^ot:ottId": 615590, 
+"^ot:ottTaxonName": "Leucadendron singulare", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 264077, 
 "@tb:identifier.taxonVariant": 320880, 
@@ -300,8 +435,9 @@
 }
 }, 
 "Tl3307110": {
-"^ot:altLabel": "Leucadendron chamelaea", 
 "^ot:originalLabel": "Leucadendron chamelaea Nr.2007.25.1.1.2696", 
+"^ot:ottId": 29321, 
+"^ot:ottTaxonName": "Leucadendron chamelaea", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 189491, 
 "@tb:identifier.taxonVariant": 261409, 
@@ -310,8 +446,9 @@
 }
 }, 
 "Tl3307111": {
-"^ot:altLabel": "Protea grandiceps", 
 "^ot:originalLabel": "Protea grandiceps Nr.1.3630", 
+"^ot:ottId": 542009, 
+"^ot:ottTaxonName": "Protea grandiceps", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 245049, 
 "@tb:identifier.taxonVariant": 305947, 
@@ -320,8 +457,9 @@
 }
 }, 
 "Tl3307112": {
-"^ot:altLabel": "Leucadendron coniferum", 
 "^ot:originalLabel": "Leucadendron coniferum Nr.269.1479", 
+"^ot:ottId": 600535, 
+"^ot:ottTaxonName": "Leucadendron coniferum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 264038, 
 "@tb:identifier.taxonVariant": 320838, 
@@ -330,10 +468,14 @@
 }
 }, 
 "Tl3307113": {
-"^ot:originalLabel": "Dilobeia  Nr.1.2354"
+"^ot:originalLabel": "Dilobeia  Nr.1.2354", 
+"^ot:ottId": 1058171, 
+"^ot:ottTaxonName": "Dilobeia"
 }, 
 "Tl3307114": {
 "^ot:originalLabel": "Leucadendron lanigerum laevigatum Nr.2010.15.3.1.3066", 
+"^ot:ottId": 652975, 
+"^ot:ottTaxonName": "Leucadendron lanigerum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 635595, 
 "@tb:identifier.taxonVariant": 850607, 
@@ -341,8 +483,9 @@
 }
 }, 
 "Tl3307115": {
-"^ot:altLabel": "Protea parvula", 
 "^ot:originalLabel": "Protea parvula Nr.1.3625", 
+"^ot:ottId": 1018037, 
+"^ot:ottTaxonName": "Protea parvula", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 245019, 
 "@tb:identifier.taxonVariant": 305915, 
@@ -351,8 +494,9 @@
 }
 }, 
 "Tl3307116": {
-"^ot:altLabel": "Protea cynaroides", 
 "^ot:originalLabel": "Protea cynaroides Nr.606.2994", 
+"^ot:ottId": 967321, 
+"^ot:ottTaxonName": "Protea cynaroides", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 244992, 
 "@tb:identifier.taxonVariant": 305887, 
@@ -361,8 +505,9 @@
 }
 }, 
 "Tl3307117": {
-"^ot:altLabel": "Leucadendron dubium", 
 "^ot:originalLabel": "Leucadendron dubium Nr.2010.34.1.1.2918", 
+"^ot:ottId": 600532, 
+"^ot:ottTaxonName": "Leucadendron dubium", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 264043, 
 "@tb:identifier.taxonVariant": 320843, 
@@ -372,6 +517,8 @@
 }, 
 "Tl3307118": {
 "^ot:originalLabel": "Leucadendron radiatum Nr.2010.145.4.1.2722", 
+"^ot:ottId": 5716255, 
+"^ot:ottTaxonName": "Leucadendron radiatum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 635605, 
 "@tb:identifier.taxonVariant": 850617, 
@@ -379,8 +526,9 @@
 }
 }, 
 "Tl3307119": {
-"^ot:altLabel": "Protea scolymocephala", 
 "^ot:originalLabel": "Protea scolymocephala Nr.1.2870", 
+"^ot:ottId": 599773, 
+"^ot:ottTaxonName": "Protea scolymocephala", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 245055, 
 "@tb:identifier.taxonVariant": 305953, 
@@ -389,8 +537,9 @@
 }
 }, 
 "Tl3307120": {
-"^ot:altLabel": "Protea vogtsiae", 
 "^ot:originalLabel": "Protea vogtsiae Nr.1.3700", 
+"^ot:ottId": 1018038, 
+"^ot:ottTaxonName": "Protea vogtsiae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 245018, 
 "@tb:identifier.taxonVariant": 305914, 
@@ -399,8 +548,9 @@
 }
 }, 
 "Tl3307121": {
-"^ot:altLabel": "Leucadendron flexuosum", 
 "^ot:originalLabel": "Leucadendron flexuosum Nr.2010.16.3.1.4756", 
+"^ot:ottId": 78973, 
+"^ot:ottTaxonName": "Leucadendron flexuosum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 264049, 
 "@tb:identifier.taxonVariant": 320851, 
@@ -409,11 +559,14 @@
 }
 }, 
 "Tl3307122": {
-"^ot:originalLabel": "Beauprea  Nr.1.5748"
+"^ot:originalLabel": "Beauprea  Nr.1.5748", 
+"^ot:ottId": 551484, 
+"^ot:ottTaxonName": "Beauprea"
 }, 
 "Tl3307123": {
-"^ot:altLabel": "Protea longifolia", 
 "^ot:originalLabel": "Protea longifolia Nr.1.3693", 
+"^ot:ottId": 491843, 
+"^ot:ottTaxonName": "Protea longifolia", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 245028, 
 "@tb:identifier.taxonVariant": 305924, 
@@ -422,11 +575,14 @@
 }
 }, 
 "Tl3307124": {
-"^ot:originalLabel": "Isopogon  Nr.1.5723"
+"^ot:originalLabel": "Isopogon  Nr.1.5723", 
+"^ot:ottId": 537411, 
+"^ot:ottTaxonName": "Isopogon (genus in kingdom Archaeplastida)"
 }, 
 "Tl3307125": {
-"^ot:altLabel": "Protea angustata", 
 "^ot:originalLabel": "Protea angustata Nr.1.3700", 
+"^ot:ottId": 441591, 
+"^ot:ottTaxonName": "Protea angustata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 245009, 
 "@tb:identifier.taxonVariant": 305905, 
@@ -435,8 +591,9 @@
 }
 }, 
 "Tl3307126": {
-"^ot:altLabel": "Leucadendron corymbosum", 
 "^ot:originalLabel": "Leucadendron corymbosum Nr.2007.44.1.1.3106", 
+"^ot:ottId": 600534, 
+"^ot:ottTaxonName": "Leucadendron corymbosum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 264039, 
 "@tb:identifier.taxonVariant": 320839, 
@@ -445,8 +602,9 @@
 }
 }, 
 "Tl3307127": {
-"^ot:altLabel": "Leucadendron nitidum", 
 "^ot:originalLabel": "Leucadendron nitidum Nr.2010.122.2.1.4615", 
+"^ot:ottId": 131068, 
+"^ot:ottTaxonName": "Leucadendron nitidum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 264068, 
 "@tb:identifier.taxonVariant": 320871, 
@@ -455,8 +613,9 @@
 }
 }, 
 "Tl3307128": {
-"^ot:altLabel": "Leucadendron burchellii", 
 "^ot:originalLabel": "Leucadendron burchellii Nr.2010.506.3.1.2740", 
+"^ot:ottId": 600538, 
+"^ot:ottTaxonName": "Leucadendron burchellii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 264035, 
 "@tb:identifier.taxonVariant": 320835, 
@@ -465,8 +624,9 @@
 }
 }, 
 "Tl3307129": {
-"^ot:altLabel": "Leucadendron loeriense", 
 "^ot:originalLabel": "Leucadendron loeriense Nr.2010.57.3.1.4263", 
+"^ot:ottId": 652980, 
+"^ot:ottTaxonName": "Leucadendron loeriense", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 264060, 
 "@tb:identifier.taxonVariant": 320863, 
@@ -475,8 +635,9 @@
 }
 }, 
 "Tl3307130": {
-"^ot:altLabel": "Leucadendron cryptocephalum", 
 "^ot:originalLabel": "Leucadendron cryptocephalum Nr.2010.505.2.1.3450", 
+"^ot:ottId": 5716266, 
+"^ot:ottTaxonName": "Leucadendron cryptocephalum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 635535, 
 "@tb:identifier.taxonVariant": 850547, 
@@ -484,11 +645,14 @@
 }
 }, 
 "Tl3307131": {
-"^ot:originalLabel": "Beaupreopsis  Nr.1.2107"
+"^ot:originalLabel": "Beaupreopsis  Nr.1.2107", 
+"^ot:ottId": 882535, 
+"^ot:ottTaxonName": "Beaupreopsis"
 }, 
 "Tl3307132": {
-"^ot:altLabel": "Leucadendron galpinii", 
 "^ot:originalLabel": "Leucadendron galpinii Nr.2010.140.1.1.3568", 
+"^ot:ottId": 78969, 
+"^ot:ottTaxonName": "Leucadendron galpinii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 264051, 
 "@tb:identifier.taxonVariant": 320853, 
@@ -497,11 +661,14 @@
 }
 }, 
 "Tl3307133": {
-"^ot:originalLabel": "Eidothea  Nr.1.3591"
+"^ot:originalLabel": "Eidothea  Nr.1.3591", 
+"^ot:ottId": 899410, 
+"^ot:ottTaxonName": "Eidothea"
 }, 
 "Tl3307134": {
-"^ot:altLabel": "Protea heckmanniana", 
 "^ot:originalLabel": "Protea heckmanniana Nr.1.826", 
+"^ot:ottId": 576834, 
+"^ot:ottTaxonName": "Protea heckmanniana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 427678, 
 "@tb:identifier.taxonVariant": 563125, 
@@ -510,8 +677,9 @@
 }
 }, 
 "Tl3307135": {
-"^ot:altLabel": "Protea aristata", 
 "^ot:originalLabel": "Protea aristata Nr.1.3696", 
+"^ot:ottId": 390959, 
+"^ot:ottTaxonName": "Protea aristata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 244987, 
 "@tb:identifier.taxonVariant": 305882, 
@@ -520,8 +688,9 @@
 }
 }, 
 "Tl3307136": {
-"^ot:altLabel": "Leucadendron cryptocephalum", 
 "^ot:originalLabel": "Leucadendron cryptocephalum Nr.2010.503.3.1.3487", 
+"^ot:ottId": 5716266, 
+"^ot:ottTaxonName": "Leucadendron cryptocephalum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 635535, 
 "@tb:identifier.taxonVariant": 850547, 
@@ -530,6 +699,8 @@
 }, 
 "Tl3307137": {
 "^ot:originalLabel": "Leucadendron uliginosum glabratum Nr.2010.58.4.1.3981", 
+"^ot:ottId": 678172, 
+"^ot:ottTaxonName": "Leucadendron uliginosum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 635588, 
 "@tb:identifier.taxonVariant": 850600, 
@@ -537,11 +708,14 @@
 }
 }, 
 "Tl3307138": {
-"^ot:originalLabel": "Leucadendron touwsbergensis Nr.2010.51.4.1.4763"
+"^ot:originalLabel": "Leucadendron touwsbergensis Nr.2010.51.4.1.4763", 
+"^ot:ottId": 29543, 
+"^ot:ottTaxonName": "Leucadendron"
 }, 
 "Tl3307139": {
-"^ot:altLabel": "Leucadendron pubibracteolatum Nr.2010.138.2.1.3401", 
 "^ot:originalLabel": "Leucadendron pubibracteolatum Nr.2010.138.1.1.4740", 
+"^ot:ottId": 5716269, 
+"^ot:ottTaxonName": "Leucadendron pubibracteolatum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 635591, 
 "@tb:identifier.taxonVariant": 850603, 
@@ -549,11 +723,14 @@
 }
 }, 
 "Tl3307140": {
-"^ot:originalLabel": "Roupala  Nr.1.2266"
+"^ot:originalLabel": "Roupala  Nr.1.2266", 
+"^ot:ottId": 550710, 
+"^ot:ottTaxonName": "Roupala"
 }, 
 "Tl3307141": {
-"^ot:altLabel": "Leucadendron orientale Nr.2010.56.4.1.3447", 
 "^ot:originalLabel": "Leucadendron orientale Nr.2010.56.2.1.3464", 
+"^ot:ottId": 5716270, 
+"^ot:ottTaxonName": "Leucadendron orientale", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 635586, 
 "@tb:identifier.taxonVariant": 850598, 
@@ -561,11 +738,14 @@
 }
 }, 
 "Tl3307142": {
-"^ot:originalLabel": "Symphionema  Nr.1.5741"
+"^ot:originalLabel": "Symphionema  Nr.1.5741", 
+"^ot:ottId": 513978, 
+"^ot:ottTaxonName": "Symphionema"
 }, 
 "Tl3307143": {
-"^ot:altLabel": "Leucadendron spissifolium fragrans Nr.2010.130.1.1.4725", 
 "^ot:originalLabel": "Leucadendron spissifolium fragrans Nr.2010.130.2.1.2918", 
+"^ot:ottId": 104284, 
+"^ot:ottTaxonName": "Leucadendron spissifolium", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 635589, 
 "@tb:identifier.taxonVariant": 850601, 
@@ -573,8 +753,9 @@
 }
 }, 
 "Tl3307144": {
-"^ot:altLabel": "Leucadendron meyerianum", 
 "^ot:originalLabel": "Leucadendron meyerianum Nr.2010.24.3.1.2721", 
+"^ot:ottId": 131071, 
+"^ot:ottTaxonName": "Leucadendron meyerianum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 264063, 
 "@tb:identifier.taxonVariant": 320866, 
@@ -583,8 +764,9 @@
 }
 }, 
 "Tl3307145": {
-"^ot:altLabel": "Protea inopina", 
 "^ot:originalLabel": "Protea inopina Nr.1.3687", 
+"^ot:ottId": 542010, 
+"^ot:ottTaxonName": "Protea inopina", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 245042, 
 "@tb:identifier.taxonVariant": 305940, 
@@ -593,8 +775,9 @@
 }
 }, 
 "Tl3307146": {
-"^ot:altLabel": "Protea mucronifolia", 
 "^ot:originalLabel": "Protea mucronifolia Nr.1.3674", 
+"^ot:ottId": 1018042, 
+"^ot:ottTaxonName": "Protea mucronifolia", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 245014, 
 "@tb:identifier.taxonVariant": 305910, 
@@ -604,6 +787,8 @@
 }, 
 "Tl3307147": {
 "^ot:originalLabel": "Leucadendron brunioides brunioides Nr.2010.174.1.1.4765", 
+"^ot:ottId": 600539, 
+"^ot:ottTaxonName": "Leucadendron brunioides", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 635592, 
 "@tb:identifier.taxonVariant": 850604, 
@@ -611,11 +796,14 @@
 }
 }, 
 "Tl3307148": {
-"^ot:originalLabel": "Synaphea  Nr.1.4886"
+"^ot:originalLabel": "Synaphea  Nr.1.4886", 
+"^ot:ottId": 450925, 
+"^ot:ottTaxonName": "Synaphea"
 }, 
 "Tl3307149": {
-"^ot:altLabel": "Leucadendron argenteum", 
 "^ot:originalLabel": "Leucadendron argenteum Nr.2010.103.1.1.3443", 
+"^ot:ottId": 27414, 
+"^ot:ottTaxonName": "Leucadendron argenteum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 264032, 
 "@tb:identifier.taxonVariant": 320832, 
@@ -624,8 +812,9 @@
 }
 }, 
 "Tl3307150": {
-"^ot:altLabel": "Protea sulphurea", 
 "^ot:originalLabel": "Protea sulphurea Nr.1.3637", 
+"^ot:ottId": 599778, 
+"^ot:ottTaxonName": "Protea sulphurea", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 245059, 
 "@tb:identifier.taxonVariant": 305958, 
@@ -634,11 +823,14 @@
 }
 }, 
 "Tl3307151": {
-"^ot:originalLabel": "Bellendena  Nr.1.5418"
+"^ot:originalLabel": "Bellendena  Nr.1.5418", 
+"^ot:ottId": 81202, 
+"^ot:ottTaxonName": "Bellendena"
 }, 
 "Tl3307152": {
-"^ot:altLabel": "Leucadendron microcephalum", 
 "^ot:originalLabel": "Leucadendron microcephalum Nr.2010.508.1.1.2740", 
+"^ot:ottId": 131072, 
+"^ot:ottTaxonName": "Leucadendron microcephalum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 264064, 
 "@tb:identifier.taxonVariant": 320867, 
@@ -647,8 +839,9 @@
 }
 }, 
 "Tl3307153": {
-"^ot:altLabel": "Protea cryophila", 
 "^ot:originalLabel": "Protea cryophila Nr.1.3645", 
+"^ot:ottId": 1018040, 
+"^ot:ottTaxonName": "Protea cryophila", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 245012, 
 "@tb:identifier.taxonVariant": 305908, 
@@ -657,8 +850,9 @@
 }
 }, 
 "Tl3307154": {
-"^ot:altLabel": "Leucadendron olens", 
 "^ot:originalLabel": "Leucadendron olens Nr.2010.73.3.1.3343", 
+"^ot:ottId": 5716253, 
+"^ot:ottTaxonName": "Leucadendron olens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 628211, 
 "@tb:identifier.taxonVariant": 841979, 
@@ -666,8 +860,9 @@
 }
 }, 
 "Tl3307155": {
-"^ot:altLabel": "Leucadendron stellare", 
 "^ot:originalLabel": "Leucadendron stellare Nr.2010.12.3.1.2933", 
+"^ot:ottId": 104281, 
+"^ot:ottTaxonName": "Leucadendron stellare", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 264081, 
 "@tb:identifier.taxonVariant": 320884, 
@@ -676,11 +871,14 @@
 }
 }, 
 "Tl3307156": {
-"^ot:originalLabel": "Aulax  Nr.1.4983"
+"^ot:originalLabel": "Aulax  Nr.1.4983", 
+"^ot:ottId": 947516, 
+"^ot:ottTaxonName": "Aulax"
 }, 
 "Tl3307157": {
-"^ot:altLabel": "Leucadendron burchellii", 
 "^ot:originalLabel": "Leucadendron burchellii Nr.2010.506.1.1.3487", 
+"^ot:ottId": 600538, 
+"^ot:ottTaxonName": "Leucadendron burchellii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 264035, 
 "@tb:identifier.taxonVariant": 320835, 
@@ -689,8 +887,9 @@
 }
 }, 
 "Tl3307158": {
-"^ot:altLabel": "Leucadendron loranthifolium", 
 "^ot:originalLabel": "Leucadendron loranthifolium Nr.2010.53.1.1.4763", 
+"^ot:ottId": 29330, 
+"^ot:ottTaxonName": "Leucadendron loranthifolium", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 189493, 
 "@tb:identifier.taxonVariant": 261411, 
@@ -699,11 +898,14 @@
 }
 }, 
 "Tl3307159": {
-"^ot:originalLabel": "Vexatorella  Nr.1.3542"
+"^ot:originalLabel": "Vexatorella  Nr.1.3542", 
+"^ot:ottId": 103142, 
+"^ot:ottTaxonName": "Vexatorella"
 }, 
 "Tl3307160": {
-"^ot:altLabel": "Protea dracomontana", 
 "^ot:originalLabel": "Protea dracomontana Nr.1.3510", 
+"^ot:ottId": 491847, 
+"^ot:ottTaxonName": "Protea dracomontana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 245026, 
 "@tb:identifier.taxonVariant": 305922, 
@@ -712,8 +914,9 @@
 }
 }, 
 "Tl3307161": {
-"^ot:altLabel": "Leucadendron laureolum", 
 "^ot:originalLabel": "Leucadendron laureolum Nr.2010.4.1.1.4013", 
+"^ot:ottId": 29541, 
+"^ot:ottTaxonName": "Leucadendron laureolum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 74389, 
 "@tb:identifier.taxonVariant": 151441, 
@@ -722,8 +925,9 @@
 }
 }, 
 "Tl3307162": {
-"^ot:altLabel": "Protea rubropilosa", 
 "^ot:originalLabel": "Protea rubropilosa Nr.1.388", 
+"^ot:ottId": 599777, 
+"^ot:ottTaxonName": "Protea rubropilosa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 245058, 
 "@tb:identifier.taxonVariant": 305957, 
@@ -733,6 +937,8 @@
 }, 
 "Tl3307163": {
 "^ot:originalLabel": "Leucadendron spissifolium fragrans Nr.2010.130.1.1.4725", 
+"^ot:ottId": 104284, 
+"^ot:ottTaxonName": "Leucadendron spissifolium", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 635589, 
 "@tb:identifier.taxonVariant": 850601, 
@@ -740,8 +946,9 @@
 }
 }, 
 "Tl3307164": {
-"^ot:altLabel": "Leucadendron salignum", 
 "^ot:originalLabel": "Leucadendron salignum Nr.2010.74.1.1.2918", 
+"^ot:ottId": 603572, 
+"^ot:ottTaxonName": "Leucadendron salignum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 94671, 
 "@tb:identifier.taxonVariant": 173762, 
@@ -750,11 +957,14 @@
 }
 }, 
 "Tl3307165": {
-"^ot:originalLabel": "Austromuellera  Nr.1.6286"
+"^ot:originalLabel": "Austromuellera  Nr.1.6286", 
+"^ot:ottId": 947519, 
+"^ot:ottTaxonName": "Austromuellera"
 }, 
 "Tl3307166": {
-"^ot:altLabel": "Leucadendron cinereum", 
 "^ot:originalLabel": "Leucadendron cinereum Nr.2010.111.2.1.3335", 
+"^ot:ottId": 5716256, 
+"^ot:ottTaxonName": "Leucadendron cinereum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 635534, 
 "@tb:identifier.taxonVariant": 850546, 
@@ -762,8 +972,9 @@
 }
 }, 
 "Tl3307167": {
-"^ot:altLabel": "Leucadendron eucalyptifolium", 
 "^ot:originalLabel": "Leucadendron eucalyptifolium Nr.231.2179", 
+"^ot:ottId": 78977, 
+"^ot:ottTaxonName": "Leucadendron eucalyptifolium", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 264048, 
 "@tb:identifier.taxonVariant": 320850, 
@@ -772,8 +983,9 @@
 }
 }, 
 "Tl3307168": {
-"^ot:altLabel": "Leucadendron verticillatum", 
 "^ot:originalLabel": "Leucadendron verticillatum Nr.2010.22.1.1.4763", 
+"^ot:ottId": 678173, 
+"^ot:ottTaxonName": "Leucadendron verticillatum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 264086, 
 "@tb:identifier.taxonVariant": 320889, 
@@ -782,13 +994,19 @@
 }
 }, 
 "Tl3307169": {
-"^ot:originalLabel": "Nelumbo  Nr.1.4320"
+"^ot:originalLabel": "Nelumbo  Nr.1.4320", 
+"^ot:ottId": 532286, 
+"^ot:ottTaxonName": "Nelumbo"
 }, 
 "Tl3307170": {
-"^ot:originalLabel": "Macadamia  Nr.1.6180"
+"^ot:originalLabel": "Macadamia  Nr.1.6180", 
+"^ot:ottId": 575524, 
+"^ot:ottTaxonName": "Macadamia"
 }, 
 "Tl3307171": {
 "^ot:originalLabel": "Leucadendron coriaceum Nr.2010.504.3.1.2711", 
+"^ot:ottId": 5716260, 
+"^ot:ottTaxonName": "Leucadendron coriaceum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 635590, 
 "@tb:identifier.taxonVariant": 850602, 
@@ -796,11 +1014,14 @@
 }
 }, 
 "Tl3307172": {
-"^ot:originalLabel": "Paranomus  Nr.1.3543"
+"^ot:originalLabel": "Paranomus  Nr.1.3543", 
+"^ot:ottId": 604825, 
+"^ot:ottTaxonName": "Paranomus"
 }, 
 "Tl3307173": {
-"^ot:altLabel": "Protea eximia", 
 "^ot:originalLabel": "Protea eximia Nr.1.2552", 
+"^ot:ottId": 441583, 
+"^ot:ottTaxonName": "Protea eximia", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 245002, 
 "@tb:identifier.taxonVariant": 305898, 
@@ -809,8 +1030,9 @@
 }
 }, 
 "Tl3307174": {
-"^ot:altLabel": "Protea scabriuscula", 
 "^ot:originalLabel": "Protea scabriuscula Nr.1.2831", 
+"^ot:ottId": 390953, 
+"^ot:ottTaxonName": "Protea scabriuscula", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 244985, 
 "@tb:identifier.taxonVariant": 305880, 
@@ -819,8 +1041,9 @@
 }
 }, 
 "Tl3307175": {
-"^ot:altLabel": "Leucadendron thymifolium", 
 "^ot:originalLabel": "Leucadendron thymifolium Nr.2010.11.1.1.4674", 
+"^ot:ottId": 678170, 
+"^ot:ottTaxonName": "Leucadendron thymifolium", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 264083, 
 "@tb:identifier.taxonVariant": 320886, 
@@ -829,8 +1052,9 @@
 }
 }, 
 "Tl3307176": {
-"^ot:altLabel": "Leucadendron chamelaea", 
 "^ot:originalLabel": "Leucadendron chamelaea Nr.2007.25.3.1.2701", 
+"^ot:ottId": 29321, 
+"^ot:ottTaxonName": "Leucadendron chamelaea", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 189491, 
 "@tb:identifier.taxonVariant": 261409, 
@@ -839,8 +1063,9 @@
 }
 }, 
 "Tl3307177": {
-"^ot:altLabel": "Leucadendron nervosum", 
 "^ot:originalLabel": "Leucadendron nervosum Nr.2010.507.2.1.3958", 
+"^ot:ottId": 131067, 
+"^ot:ottTaxonName": "Leucadendron nervosum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 264067, 
 "@tb:identifier.taxonVariant": 320870, 
@@ -849,8 +1074,9 @@
 }
 }, 
 "Tl3307178": {
-"^ot:altLabel": "Protea obtusifolia", 
 "^ot:originalLabel": "Protea obtusifolia Nr.1.3696", 
+"^ot:ottId": 491844, 
+"^ot:ottTaxonName": "Protea obtusifolia", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 245029, 
 "@tb:identifier.taxonVariant": 305925, 
@@ -859,11 +1085,14 @@
 }
 }, 
 "Tl3307179": {
-"^ot:originalLabel": "Spatalla  Nr.1.1778"
+"^ot:originalLabel": "Spatalla  Nr.1.1778", 
+"^ot:ottId": 809297, 
+"^ot:ottTaxonName": "Spatalla"
 }, 
 "Tl3307180": {
-"^ot:altLabel": "Leucadendron cinereum", 
 "^ot:originalLabel": "Leucadendron cinereum Nr.2010.8.4.1.3393", 
+"^ot:ottId": 5716256, 
+"^ot:ottTaxonName": "Leucadendron cinereum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 635534, 
 "@tb:identifier.taxonVariant": 850546, 
@@ -871,8 +1100,9 @@
 }
 }, 
 "Tl3307181": {
-"^ot:altLabel": "Leucadendron diemontianum Nr.2010.125.2.1.4642", 
 "^ot:originalLabel": "Leucadendron diemontianum Nr.2010.125.1.1.2542", 
+"^ot:ottId": 5716264, 
+"^ot:ottTaxonName": "Leucadendron diemontianum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 635585, 
 "@tb:identifier.taxonVariant": 850597, 
@@ -880,8 +1110,9 @@
 }
 }, 
 "Tl3307182": {
-"^ot:altLabel": "Leucadendron floridum", 
 "^ot:originalLabel": "Leucadendron floridum Nr.2010.2.2.1.4480", 
+"^ot:ottId": 78974, 
+"^ot:ottTaxonName": "Leucadendron floridum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 264050, 
 "@tb:identifier.taxonVariant": 320852, 
@@ -890,8 +1121,9 @@
 }
 }, 
 "Tl3307183": {
-"^ot:altLabel": "Protea pendula", 
 "^ot:originalLabel": "Protea pendula Nr.1.3322", 
+"^ot:ottId": 308138, 
+"^ot:ottTaxonName": "Protea pendula", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 244999, 
 "@tb:identifier.taxonVariant": 305895, 
@@ -900,11 +1132,14 @@
 }
 }, 
 "Tl3307184": {
-"^ot:originalLabel": "Sphalmium  Nr.1.4006"
+"^ot:originalLabel": "Sphalmium  Nr.1.4006", 
+"^ot:ottId": 30344, 
+"^ot:ottTaxonName": "Sphalmium"
 }, 
 "Tl3307185": {
-"^ot:altLabel": "Leucadendron cryptocephalum", 
 "^ot:originalLabel": "Leucadendron cryptocephalum Nr.2010.505.1.1.3151", 
+"^ot:ottId": 5716266, 
+"^ot:ottTaxonName": "Leucadendron cryptocephalum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 635535, 
 "@tb:identifier.taxonVariant": 850547, 
@@ -912,8 +1147,9 @@
 }
 }, 
 "Tl3307186": {
-"^ot:altLabel": "Leucadendron spissifolium fragrans Nr.2010.130.1.1.4725", 
 "^ot:originalLabel": "Leucadendron spissifolium fragrans Nr.2010.69.2.1.2911", 
+"^ot:ottId": 104284, 
+"^ot:ottTaxonName": "Leucadendron spissifolium", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 635589, 
 "@tb:identifier.taxonVariant": 850601, 
@@ -921,8 +1157,9 @@
 }
 }, 
 "Tl3307187": {
-"^ot:altLabel": "Leucadendron osbornei", 
 "^ot:originalLabel": "Leucadendron osbornei Nr.2010.82.2.1.4747", 
+"^ot:ottId": 131069, 
+"^ot:ottTaxonName": "Leucadendron osbornei", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 264069, 
 "@tb:identifier.taxonVariant": 320872, 
@@ -931,8 +1168,9 @@
 }
 }, 
 "Tl3307188": {
-"^ot:altLabel": "Leucadendron pondoense", 
 "^ot:originalLabel": "Leucadendron pondoense Nr.2007.57.2.1.3441", 
+"^ot:ottId": 131076, 
+"^ot:ottTaxonName": "Leucadendron pondoense", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 264071, 
 "@tb:identifier.taxonVariant": 320874, 
@@ -941,8 +1179,9 @@
 }
 }, 
 "Tl3307189": {
-"^ot:altLabel": "Leucadendron conicum", 
 "^ot:originalLabel": "Leucadendron conicum Nr.2010.68.1.1.2920", 
+"^ot:ottId": 600540, 
+"^ot:ottTaxonName": "Leucadendron conicum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 264037, 
 "@tb:identifier.taxonVariant": 320837, 
@@ -951,8 +1190,9 @@
 }
 }, 
 "Tl3307190": {
-"^ot:altLabel": "Leucadendron platyspermum", 
 "^ot:originalLabel": "Leucadendron platyspermum Nr.2011.603.1.1.2946", 
+"^ot:ottId": 131070, 
+"^ot:ottTaxonName": "Leucadendron platyspermum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 264070, 
 "@tb:identifier.taxonVariant": 320873, 
@@ -961,8 +1201,9 @@
 }
 }, 
 "Tl3307191": {
-"^ot:altLabel": "Leucadendron chamelaea", 
 "^ot:originalLabel": "Leucadendron chamelaea Nr.2010.43.1.1.4759", 
+"^ot:ottId": 29321, 
+"^ot:ottTaxonName": "Leucadendron chamelaea", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 189491, 
 "@tb:identifier.taxonVariant": 261409, 
@@ -971,8 +1212,9 @@
 }
 }, 
 "Tl3307192": {
-"^ot:altLabel": "Protea venusta", 
 "^ot:originalLabel": "Protea venusta Nr.1.3642", 
+"^ot:ottId": 967316, 
+"^ot:ottTaxonName": "Protea venusta", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 244994, 
 "@tb:identifier.taxonVariant": 305890, 
@@ -981,8 +1223,9 @@
 }
 }, 
 "Tl3307193": {
-"^ot:altLabel": "Protea lacticolor", 
 "^ot:originalLabel": "Protea lacticolor Nr.1.1096", 
+"^ot:ottId": 308183, 
+"^ot:ottTaxonName": "Protea lacticolor", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 245001, 
 "@tb:identifier.taxonVariant": 305897, 
@@ -991,10 +1234,14 @@
 }
 }, 
 "Tl3307194": {
-"^ot:originalLabel": "Buckinghamia  Nr.1.6423"
+"^ot:originalLabel": "Buckinghamia  Nr.1.6423", 
+"^ot:ottId": 551478, 
+"^ot:ottTaxonName": "Buckinghamia"
 }, 
 "Tl3307195": {
 "^ot:originalLabel": "Leucadendron glaberrimum erubescens Nr.2010.112.2.1.4134", 
+"^ot:ottId": 652979, 
+"^ot:ottTaxonName": "Leucadendron glaberrimum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 635587, 
 "@tb:identifier.taxonVariant": 850599, 
@@ -1002,8 +1249,9 @@
 }
 }, 
 "Tl3307196": {
-"^ot:altLabel": "Leucadendron ericifolium", 
 "^ot:originalLabel": "Leucadendron ericifolium Nr.2010.72.2.1.3918", 
+"^ot:ottId": 29322, 
+"^ot:ottTaxonName": "Leucadendron ericifolium", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 189492, 
 "@tb:identifier.taxonVariant": 261410, 
@@ -1012,8 +1260,9 @@
 }
 }, 
 "Tl3307197": {
-"^ot:altLabel": "Leucadendron stellare", 
 "^ot:originalLabel": "Leucadendron stellare Nr.2010.12.1.1.4628", 
+"^ot:ottId": 104281, 
+"^ot:ottTaxonName": "Leucadendron stellare", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 264081, 
 "@tb:identifier.taxonVariant": 320884, 
@@ -1022,11 +1271,14 @@
 }
 }, 
 "Tl3307198": {
-"^ot:originalLabel": "Leucospermum  Nr.1.3541"
+"^ot:originalLabel": "Leucospermum  Nr.1.3541", 
+"^ot:ottId": 29328, 
+"^ot:ottTaxonName": "Leucospermum"
 }, 
 "Tl3307199": {
-"^ot:altLabel": "Leucadendron foedum Nr.2010.117.3.1.4752", 
 "^ot:originalLabel": "Leucadendron foedum Nr.2010.509.1.1.2734", 
+"^ot:ottId": 5716267, 
+"^ot:ottTaxonName": "Leucadendron foedum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 635603, 
 "@tb:identifier.taxonVariant": 850615, 
@@ -1034,8 +1286,9 @@
 }
 }, 
 "Tl3307200": {
-"^ot:altLabel": "Leucadendron pubibracteolatum Nr.2010.138.2.1.3401", 
 "^ot:originalLabel": "Leucadendron pubibracteolatum Nr.2010.138.3.1.3443", 
+"^ot:ottId": 5716269, 
+"^ot:ottTaxonName": "Leucadendron pubibracteolatum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 635591, 
 "@tb:identifier.taxonVariant": 850603, 
@@ -1044,6 +1297,8 @@
 }, 
 "Tl3307201": {
 "^ot:originalLabel": "Leucadendron lanigerum lanigerum Nr.2010.13.3.1.2892", 
+"^ot:ottId": 652975, 
+"^ot:ottTaxonName": "Leucadendron lanigerum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 635594, 
 "@tb:identifier.taxonVariant": 850606, 
@@ -1051,8 +1306,9 @@
 }
 }, 
 "Tl3307202": {
-"^ot:altLabel": "Leucadendron olens", 
 "^ot:originalLabel": "Leucadendron olens Nr.2010.73.2.1.4533", 
+"^ot:ottId": 5716253, 
+"^ot:ottTaxonName": "Leucadendron olens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 628211, 
 "@tb:identifier.taxonVariant": 841979, 
@@ -1060,8 +1316,9 @@
 }
 }, 
 "Tl3307203": {
-"^ot:altLabel": "Protea lorea", 
 "^ot:originalLabel": "Protea lorea Nr.1.3635", 
+"^ot:ottId": 1068275, 
+"^ot:ottTaxonName": "Protea lorea", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 245039, 
 "@tb:identifier.taxonVariant": 305935, 
@@ -1070,8 +1327,9 @@
 }
 }, 
 "Tl3307204": {
-"^ot:altLabel": "Faurea rubriflora", 
 "^ot:originalLabel": "Faurea rubriflora Nr.1.2352", 
+"^ot:ottId": 26782, 
+"^ot:ottTaxonName": "Faurea rubriflora", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 245069, 
 "@tb:identifier.taxonVariant": 305969, 
@@ -1081,6 +1339,8 @@
 }, 
 "Tl3307205": {
 "^ot:originalLabel": "Leucadendron rourkei Nr.2010.64.3.1.3907", 
+"^ot:ottId": 5716271, 
+"^ot:ottTaxonName": "Leucadendron rourkei", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 635606, 
 "@tb:identifier.taxonVariant": 850618, 
@@ -1088,8 +1348,9 @@
 }
 }, 
 "Tl3307206": {
-"^ot:altLabel": "Protea roupelliae", 
 "^ot:originalLabel": "Protea roupelliae Nr.1.3573", 
+"^ot:ottId": 604834, 
+"^ot:ottTaxonName": "Protea roupelliae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 189514, 
 "@tb:identifier.taxonVariant": 261434, 
@@ -1099,8 +1360,9 @@
 "^skos:prefLabel": "Protea rouppelliae"
 }, 
 "Tl3307207": {
-"^ot:altLabel": "Leucadendron foedum Nr.2010.117.3.1.4752", 
 "^ot:originalLabel": "Leucadendron foedum Nr.2010.509.3.1.3337", 
+"^ot:ottId": 5716267, 
+"^ot:ottTaxonName": "Leucadendron foedum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 635603, 
 "@tb:identifier.taxonVariant": 850615, 
@@ -1108,11 +1370,14 @@
 }
 }, 
 "Tl3307208": {
-"^ot:originalLabel": "Agastachys  Nr.1.5364"
+"^ot:originalLabel": "Agastachys  Nr.1.5364", 
+"^ot:ottId": 947514, 
+"^ot:ottTaxonName": "Agastachys"
 }, 
 "Tl3307209": {
-"^ot:altLabel": "Leucadendron chamelaea", 
 "^ot:originalLabel": "Leucadendron chamelaea Nr.2010.43.2.1.3091", 
+"^ot:ottId": 29321, 
+"^ot:ottTaxonName": "Leucadendron chamelaea", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 189491, 
 "@tb:identifier.taxonVariant": 261409, 
@@ -1122,6 +1387,8 @@
 }, 
 "Tl3307210": {
 "^ot:originalLabel": "Leucadendron cadens Nr.2010.83.2.1.4376", 
+"^ot:ottId": 5716262, 
+"^ot:ottTaxonName": "Leucadendron cadens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 635602, 
 "@tb:identifier.taxonVariant": 850614, 
@@ -1129,8 +1396,9 @@
 }
 }, 
 "Tl3307211": {
-"^ot:altLabel": "Leucadendron verticillatum", 
 "^ot:originalLabel": "Leucadendron verticillatum Nr.2010.22.3.1.3336", 
+"^ot:ottId": 678173, 
+"^ot:ottTaxonName": "Leucadendron verticillatum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 264086, 
 "@tb:identifier.taxonVariant": 320889, 
@@ -1139,8 +1407,9 @@
 }
 }, 
 "Tl3307212": {
-"^ot:altLabel": "Leucadendron singulare", 
 "^ot:originalLabel": "Leucadendron singulare Nr.2010.132.2.1.3208", 
+"^ot:ottId": 615590, 
+"^ot:ottTaxonName": "Leucadendron singulare", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 264077, 
 "@tb:identifier.taxonVariant": 320880, 
@@ -1149,8 +1418,9 @@
 }
 }, 
 "Tl3307213": {
-"^ot:altLabel": "Leucadendron microcephalum", 
 "^ot:originalLabel": "Leucadendron microcephalum Nr.2010.20.4.1.2740", 
+"^ot:ottId": 131072, 
+"^ot:ottTaxonName": "Leucadendron microcephalum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 264064, 
 "@tb:identifier.taxonVariant": 320867, 
@@ -1159,8 +1429,9 @@
 }
 }, 
 "Tl3307214": {
-"^ot:altLabel": "Leucadendron nitidum", 
 "^ot:originalLabel": "Leucadendron nitidum Nr.2010.122.3.1.2819", 
+"^ot:ottId": 131068, 
+"^ot:ottTaxonName": "Leucadendron nitidum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 264068, 
 "@tb:identifier.taxonVariant": 320871, 
@@ -1169,8 +1440,9 @@
 }
 }, 
 "Tl3307215": {
-"^ot:altLabel": "Protea stokoei", 
 "^ot:originalLabel": "Protea stokoei Nr.1.3662", 
+"^ot:ottId": 441585, 
+"^ot:ottTaxonName": "Protea stokoei", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 245003, 
 "@tb:identifier.taxonVariant": 305899, 
@@ -1179,8 +1451,9 @@
 }
 }, 
 "Tl3307216": {
-"^ot:altLabel": "Leucadendron sericeum", 
 "^ot:originalLabel": "Leucadendron sericeum Nr.2010.42.3.1.3530", 
+"^ot:ottId": 615596, 
+"^ot:ottTaxonName": "Leucadendron sericeum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 635579, 
 "@tb:identifier.taxonVariant": 850591, 
@@ -1188,8 +1461,9 @@
 }
 }, 
 "Tl3307217": {
-"^ot:altLabel": "Leucadendron lanigerum lanigerum Nr.2010.13.3.1.2892", 
 "^ot:originalLabel": "Leucadendron lanigerum lanigerum Nr.2010.13.1.1.2763", 
+"^ot:ottId": 652975, 
+"^ot:ottTaxonName": "Leucadendron lanigerum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 635594, 
 "@tb:identifier.taxonVariant": 850606, 
@@ -1197,8 +1471,9 @@
 }
 }, 
 "Tl3307218": {
-"^ot:altLabel": "Protea acuminata", 
 "^ot:originalLabel": "Protea acuminata Nr.1.3652", 
+"^ot:ottId": 441590, 
+"^ot:ottTaxonName": "Protea acuminata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 245008, 
 "@tb:identifier.taxonVariant": 305904, 
@@ -1207,8 +1482,9 @@
 }
 }, 
 "Tl3307219": {
-"^ot:altLabel": "Protea magnifica", 
 "^ot:originalLabel": "Protea magnifica Nr.1.2520", 
+"^ot:ottId": 919111, 
+"^ot:ottTaxonName": "Protea magnifica", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 245041, 
 "@tb:identifier.taxonVariant": 305937, 
@@ -1217,8 +1493,9 @@
 }
 }, 
 "Tl3307220": {
-"^ot:altLabel": "Protea lepidocarpodendron", 
 "^ot:originalLabel": "Protea lepidocarpodendron Nr.1.3694", 
+"^ot:ottId": 1018039, 
+"^ot:ottTaxonName": "Protea lepidocarpodendron", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 245013, 
 "@tb:identifier.taxonVariant": 305909, 
@@ -1227,8 +1504,9 @@
 }
 }, 
 "Tl3307221": {
-"^ot:altLabel": "Protea restionifolia", 
 "^ot:originalLabel": "Protea restionifolia Nr.1.3680", 
+"^ot:ottId": 308139, 
+"^ot:ottTaxonName": "Protea restionifolia", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 244998, 
 "@tb:identifier.taxonVariant": 305894, 
@@ -1237,8 +1515,9 @@
 }
 }, 
 "Tl3307222": {
-"^ot:altLabel": "Leucadendron flexuosum", 
 "^ot:originalLabel": "Leucadendron flexuosum Nr.2010.16.1.1.2561", 
+"^ot:ottId": 78973, 
+"^ot:ottTaxonName": "Leucadendron flexuosum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 264049, 
 "@tb:identifier.taxonVariant": 320851, 
@@ -1247,8 +1526,9 @@
 }
 }, 
 "Tl3307223": {
-"^ot:altLabel": "Protea punctata", 
 "^ot:originalLabel": "Protea punctata Nr.1.3424", 
+"^ot:ottId": 441588, 
+"^ot:ottTaxonName": "Protea punctata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 245006, 
 "@tb:identifier.taxonVariant": 305902, 
@@ -1257,8 +1537,9 @@
 }
 }, 
 "Tl3307224": {
-"^ot:altLabel": "Leucadendron diemontianum Nr.2010.125.2.1.4642", 
 "^ot:originalLabel": "Leucadendron diemontianum Nr.2010.125.4.1.2907", 
+"^ot:ottId": 5716264, 
+"^ot:ottTaxonName": "Leucadendron diemontianum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 635585, 
 "@tb:identifier.taxonVariant": 850597, 
@@ -1266,8 +1547,9 @@
 }
 }, 
 "Tl3307225": {
-"^ot:altLabel": "Leucadendron conicum", 
 "^ot:originalLabel": "Leucadendron conicum Nr.2010.60.2.1.4512", 
+"^ot:ottId": 600540, 
+"^ot:ottTaxonName": "Leucadendron conicum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 264037, 
 "@tb:identifier.taxonVariant": 320837, 
@@ -1276,8 +1558,9 @@
 }
 }, 
 "Tl3307226": {
-"^ot:altLabel": "Protea amplexicaulis", 
 "^ot:originalLabel": "Protea amplexicaulis Nr.1.3673", 
+"^ot:ottId": 458050, 
+"^ot:ottTaxonName": "Protea amplexicaulis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 245010, 
 "@tb:identifier.taxonVariant": 305906, 
@@ -1286,8 +1569,9 @@
 }
 }, 
 "Tl3307227": {
-"^ot:altLabel": "Leucadendron roodii", 
 "^ot:originalLabel": "Leucadendron roodii Nr.2010.29.4.1.2931", 
+"^ot:ottId": 131077, 
+"^ot:ottTaxonName": "Leucadendron roodii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 264072, 
 "@tb:identifier.taxonVariant": 320875, 
@@ -1296,8 +1580,9 @@
 }
 }, 
 "Tl3307228": {
-"^ot:altLabel": "Protea lanceolata", 
 "^ot:originalLabel": "Protea lanceolata Nr.1.3352", 
+"^ot:ottId": 599776, 
+"^ot:ottTaxonName": "Protea lanceolata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 245057, 
 "@tb:identifier.taxonVariant": 305956, 
@@ -1307,6 +1592,8 @@
 }, 
 "Tl3307229": {
 "^ot:originalLabel": "Leucadendron stelligerum Nr.2011.604.2.1.2638", 
+"^ot:ottId": 5716268, 
+"^ot:ottTaxonName": "Leucadendron stelligerum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 635599, 
 "@tb:identifier.taxonVariant": 850611, 
@@ -1314,11 +1601,14 @@
 }
 }, 
 "Tl3307230": {
-"^ot:originalLabel": "Orothamnus  Nr.1.1778"
+"^ot:originalLabel": "Orothamnus  Nr.1.1778", 
+"^ot:ottId": 56127, 
+"^ot:ottTaxonName": "Orothamnus"
 }, 
 "Tl3307231": {
-"^ot:altLabel": "Faurea saligna", 
 "^ot:originalLabel": "Faurea saligna Nr.1.2991", 
+"^ot:ottId": 26780, 
+"^ot:ottTaxonName": "Faurea saligna", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 47494, 
 "@tb:identifier.taxonVariant": 111114, 
@@ -1327,8 +1617,9 @@
 }
 }, 
 "Tl3307232": {
-"^ot:altLabel": "Leucadendron meridianum", 
 "^ot:originalLabel": "Leucadendron meridianum Nr.2011.606.3.1.3502", 
+"^ot:ottId": 652984, 
+"^ot:ottTaxonName": "Leucadendron meridianum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 264062, 
 "@tb:identifier.taxonVariant": 320865, 
@@ -1337,8 +1628,9 @@
 }
 }, 
 "Tl3307233": {
-"^ot:altLabel": "Leucadendron coriaceum Nr.2010.504.3.1.2711", 
 "^ot:originalLabel": "Leucadendron coriaceum Nr.2010.504.2.1.4142", 
+"^ot:ottId": 5716260, 
+"^ot:ottTaxonName": "Leucadendron coriaceum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 635590, 
 "@tb:identifier.taxonVariant": 850602, 
@@ -1346,8 +1638,9 @@
 }
 }, 
 "Tl3307234": {
-"^ot:altLabel": "Protea speciosa", 
 "^ot:originalLabel": "Protea speciosa Nr.1.3654", 
+"^ot:ottId": 459042, 
+"^ot:ottTaxonName": "Protea speciosa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 245047, 
 "@tb:identifier.taxonVariant": 305945, 
@@ -1356,8 +1649,9 @@
 }
 }, 
 "Tl3307235": {
-"^ot:altLabel": "Protea comptonii", 
 "^ot:originalLabel": "Protea comptonii Nr.1.3644", 
+"^ot:ottId": 542008, 
+"^ot:ottTaxonName": "Protea comptonii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 245048, 
 "@tb:identifier.taxonVariant": 305946, 
@@ -1366,8 +1660,9 @@
 }
 }, 
 "Tl3307236": {
-"^ot:altLabel": "Protea repens", 
 "^ot:originalLabel": "Protea repens Nr.5.3684", 
+"^ot:ottId": 486218, 
+"^ot:ottTaxonName": "Protea repens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 23837, 
 "@tb:identifier.taxonVariant": 55708, 
@@ -1376,8 +1671,9 @@
 }
 }, 
 "Tl3307237": {
-"^ot:altLabel": "Protea caffra", 
 "^ot:originalLabel": "Protea caffra Nr.1.2995", 
+"^ot:ottId": 491849, 
+"^ot:ottTaxonName": "Protea caffra", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 245024, 
 "@tb:identifier.taxonVariant": 305920, 
@@ -1387,6 +1683,8 @@
 }, 
 "Tl3307238": {
 "^ot:originalLabel": "Leucadendron remotum Nr.2010.23.1.1.3237", 
+"^ot:ottId": 5716258, 
+"^ot:ottTaxonName": "Leucadendron remotum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 635598, 
 "@tb:identifier.taxonVariant": 850610, 
@@ -1394,8 +1692,9 @@
 }
 }, 
 "Tl3307239": {
-"^ot:altLabel": "Leucadendron linifolium", 
 "^ot:originalLabel": "Leucadendron linifolium Nr.2007.22.4.1.4198", 
+"^ot:ottId": 652981, 
+"^ot:ottTaxonName": "Leucadendron linifolium", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 264059, 
 "@tb:identifier.taxonVariant": 320862, 
@@ -1404,8 +1703,9 @@
 }
 }, 
 "Tl3307240": {
-"^ot:altLabel": "Leucadendron muirii", 
 "^ot:originalLabel": "Leucadendron muirii Nr.2011.602.3.1.3118", 
+"^ot:ottId": 131074, 
+"^ot:ottTaxonName": "Leucadendron muirii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 264066, 
 "@tb:identifier.taxonVariant": 320869, 
@@ -1414,8 +1714,9 @@
 }
 }, 
 "Tl3307241": {
-"^ot:altLabel": "Protea recondita", 
 "^ot:originalLabel": "Protea recondita Nr.1.2922", 
+"^ot:ottId": 542004, 
+"^ot:ottTaxonName": "Protea recondita", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 245046, 
 "@tb:identifier.taxonVariant": 305944, 
@@ -1424,8 +1725,9 @@
 }
 }, 
 "Tl3307242": {
-"^ot:altLabel": "Protea nitida", 
 "^ot:originalLabel": "Protea nitida Nr.1.2997", 
+"^ot:ottId": 542014, 
+"^ot:ottTaxonName": "Protea nitida", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 245050, 
 "@tb:identifier.taxonVariant": 305948, 
@@ -1434,8 +1736,9 @@
 }
 }, 
 "Tl3307243": {
-"^ot:altLabel": "Leucadendron sorocephalodes Nr.2010.63.2.1.4576", 
 "^ot:originalLabel": "Leucadendron sorocephalodes Nr.2010.63.3.1.3217", 
+"^ot:ottId": 5716261, 
+"^ot:ottTaxonName": "Leucadendron sorocephalodes", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 635601, 
 "@tb:identifier.taxonVariant": 850613, 
@@ -1443,8 +1746,9 @@
 }
 }, 
 "Tl3307244": {
-"^ot:altLabel": "Protea angolensis", 
 "^ot:originalLabel": "Protea angolensis Nr.1.3333", 
+"^ot:ottId": 26793, 
+"^ot:ottTaxonName": "Protea angolensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 245062, 
 "@tb:identifier.taxonVariant": 305961, 
@@ -1453,8 +1757,9 @@
 }
 }, 
 "Tl3307245": {
-"^ot:altLabel": "Protea compacta", 
 "^ot:originalLabel": "Protea compacta Nr.1.3443", 
+"^ot:ottId": 1068273, 
+"^ot:ottTaxonName": "Protea compacta", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 245032, 
 "@tb:identifier.taxonVariant": 305928, 
@@ -1463,8 +1768,9 @@
 }
 }, 
 "Tl3307246": {
-"^ot:altLabel": "Protea namaquana", 
 "^ot:originalLabel": "Protea namaquana Nr.1.3672", 
+"^ot:ottId": 1018041, 
+"^ot:ottTaxonName": "Protea namaquana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 245015, 
 "@tb:identifier.taxonVariant": 305911, 
@@ -1473,8 +1779,9 @@
 }
 }, 
 "Tl3307247": {
-"^ot:altLabel": "Protea subvestita", 
 "^ot:originalLabel": "Protea subvestita Nr.1.3582", 
+"^ot:ottId": 390955, 
+"^ot:ottTaxonName": "Protea subvestita", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 244983, 
 "@tb:identifier.taxonVariant": 305878, 
@@ -1483,8 +1790,9 @@
 }
 }, 
 "Tl3307248": {
-"^ot:altLabel": "Leucadendron lanigerum laevigatum Nr.2010.15.3.1.3066", 
 "^ot:originalLabel": "Leucadendron lanigerum laevigatum Nr.2010.15.2.1.2115", 
+"^ot:ottId": 652975, 
+"^ot:ottTaxonName": "Leucadendron lanigerum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 635595, 
 "@tb:identifier.taxonVariant": 850607, 
@@ -1492,8 +1800,9 @@
 }
 }, 
 "Tl3307249": {
-"^ot:altLabel": "Protea revoluta", 
 "^ot:originalLabel": "Protea revoluta Nr.1.2968", 
+"^ot:ottId": 441587, 
+"^ot:ottTaxonName": "Protea revoluta", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 245005, 
 "@tb:identifier.taxonVariant": 305901, 
@@ -1502,8 +1811,9 @@
 }
 }, 
 "Tl3307250": {
-"^ot:altLabel": "Protea witzenbergiana", 
 "^ot:originalLabel": "Protea witzenbergiana Nr.1.3435", 
+"^ot:ottId": 441589, 
+"^ot:ottTaxonName": "Protea witzenbergiana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 245007, 
 "@tb:identifier.taxonVariant": 305903, 
@@ -1512,8 +1822,9 @@
 }
 }, 
 "Tl3307251": {
-"^ot:altLabel": "Leucadendron cordatum Nr.2010.512.1.1.4752", 
 "^ot:originalLabel": "Leucadendron cordatum Nr.2010.146.3.1.2920", 
+"^ot:ottId": 5716265, 
+"^ot:ottTaxonName": "Leucadendron cordatum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 635596, 
 "@tb:identifier.taxonVariant": 850608, 
@@ -1521,8 +1832,9 @@
 }
 }, 
 "Tl3307252": {
-"^ot:altLabel": "Protea aurea", 
 "^ot:originalLabel": "Protea aurea Nr.1.2058", 
+"^ot:ottId": 599771, 
+"^ot:ottTaxonName": "Protea aurea", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 245053, 
 "@tb:identifier.taxonVariant": 305951, 
@@ -1531,8 +1843,9 @@
 }
 }, 
 "Tl3307253": {
-"^ot:altLabel": "Leucadendron cadens Nr.2010.83.2.1.4376", 
 "^ot:originalLabel": "Leucadendron cadens Nr.2010.83.4.1.2829", 
+"^ot:ottId": 5716262, 
+"^ot:ottTaxonName": "Leucadendron cadens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 635602, 
 "@tb:identifier.taxonVariant": 850614, 
@@ -1540,11 +1853,14 @@
 }
 }, 
 "Tl3307254": {
-"^ot:originalLabel": "Diastella  Nr.1.4027"
+"^ot:originalLabel": "Diastella  Nr.1.4027", 
+"^ot:ottId": 820549, 
+"^ot:ottTaxonName": "Diastella (genus in kingdom Archaeplastida)"
 }, 
 "Tl3307255": {
-"^ot:altLabel": "Leucadendron coriaceum Nr.2010.504.3.1.2711", 
 "^ot:originalLabel": "Leucadendron coriaceum Nr.2010.54.2.1.2362", 
+"^ot:ottId": 5716260, 
+"^ot:ottTaxonName": "Leucadendron coriaceum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 635590, 
 "@tb:identifier.taxonVariant": 850602, 
@@ -1552,11 +1868,14 @@
 }
 }, 
 "Tl3307256": {
-"^ot:originalLabel": "Petrophile  Nr.1.5328"
+"^ot:originalLabel": "Petrophile  Nr.1.5328", 
+"^ot:ottId": 29555, 
+"^ot:ottTaxonName": "Petrophile"
 }, 
 "Tl3307257": {
-"^ot:altLabel": "Leucadendron xanthoconus", 
 "^ot:originalLabel": "Leucadendron xanthoconus Nr.2010.5.1.1.4041", 
+"^ot:ottId": 678174, 
+"^ot:ottTaxonName": "Leucadendron xanthoconus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 264087, 
 "@tb:identifier.taxonVariant": 320890, 
@@ -1565,8 +1884,9 @@
 }
 }, 
 "Tl3307258": {
-"^ot:altLabel": "Leucadendron cryptocephalum", 
 "^ot:originalLabel": "Leucadendron cryptocephalum Nr.2010.505.3.1.4105", 
+"^ot:ottId": 5716266, 
+"^ot:ottTaxonName": "Leucadendron cryptocephalum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 635535, 
 "@tb:identifier.taxonVariant": 850547, 
@@ -1574,8 +1894,9 @@
 }
 }, 
 "Tl3307259": {
-"^ot:altLabel": "Leucadendron salicifolium", 
 "^ot:originalLabel": "Leucadendron salicifolium Nr.2010.37.1.1.4207", 
+"^ot:ottId": 104288, 
+"^ot:ottTaxonName": "Leucadendron salicifolium", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 264074, 
 "@tb:identifier.taxonVariant": 320877, 
@@ -1584,8 +1905,9 @@
 }
 }, 
 "Tl3307260": {
-"^ot:altLabel": "Protea caespitosa", 
 "^ot:originalLabel": "Protea caespitosa Nr.1.2997", 
+"^ot:ottId": 599775, 
+"^ot:ottTaxonName": "Protea caespitosa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 245056, 
 "@tb:identifier.taxonVariant": 305955, 
@@ -1594,8 +1916,9 @@
 }
 }, 
 "Tl3307261": {
-"^ot:altLabel": "Leucadendron platyspermum", 
 "^ot:originalLabel": "Leucadendron platyspermum Nr.2011.603.2.1.3055", 
+"^ot:ottId": 131070, 
+"^ot:ottTaxonName": "Leucadendron platyspermum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 264070, 
 "@tb:identifier.taxonVariant": 320873, 
@@ -1604,11 +1927,14 @@
 }
 }, 
 "Tl3307262": {
-"^ot:originalLabel": "Cenarrhenes  Nr.1.3513"
+"^ot:originalLabel": "Cenarrhenes  Nr.1.3513", 
+"^ot:ottId": 551486, 
+"^ot:ottTaxonName": "Cenarrhenes"
 }, 
 "Tl3307263": {
-"^ot:altLabel": "Protea enervis", 
 "^ot:originalLabel": "Protea enervis Nr.1.3353", 
+"^ot:ottId": 390958, 
+"^ot:ottTaxonName": "Protea enervis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 244986, 
 "@tb:identifier.taxonVariant": 305881, 
@@ -1617,8 +1943,9 @@
 }
 }, 
 "Tl3307264": {
-"^ot:altLabel": "Leucadendron strobilinum", 
 "^ot:originalLabel": "Leucadendron strobilinum Nr.2010.3.1.1.2801", 
+"^ot:ottId": 29327, 
+"^ot:ottTaxonName": "Leucadendron strobilinum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 189495, 
 "@tb:identifier.taxonVariant": 261413, 
@@ -1627,8 +1954,9 @@
 }
 }, 
 "Tl3307265": {
-"^ot:altLabel": "Protea lorifolia", 
 "^ot:originalLabel": "Protea lorifolia Nr.1.2852", 
+"^ot:ottId": 542012, 
+"^ot:ottTaxonName": "Protea lorifolia", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 245044, 
 "@tb:identifier.taxonVariant": 305942, 
@@ -1638,6 +1966,8 @@
 }, 
 "Tl3307266": {
 "^ot:originalLabel": "Leucadendron cordatum Nr.2010.512.1.1.4752", 
+"^ot:ottId": 5716265, 
+"^ot:ottTaxonName": "Leucadendron cordatum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 635596, 
 "@tb:identifier.taxonVariant": 850608, 
@@ -1645,8 +1975,9 @@
 }
 }, 
 "Tl3307267": {
-"^ot:altLabel": "Protea foliosa", 
 "^ot:originalLabel": "Protea foliosa Nr.1.3603", 
+"^ot:ottId": 390952, 
+"^ot:ottTaxonName": "Protea foliosa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 244984, 
 "@tb:identifier.taxonVariant": 305879, 
@@ -1655,8 +1986,9 @@
 }
 }, 
 "Tl3307268": {
-"^ot:altLabel": "Leucadendron pubescens", 
 "^ot:originalLabel": "Leucadendron pubescens Nr.2010.32.2.1.3646", 
+"^ot:ottId": 5232073, 
+"^ot:ottTaxonName": "Leucadendron pubescens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 628212, 
 "@tb:identifier.taxonVariant": 841980, 
@@ -1664,8 +1996,9 @@
 }
 }, 
 "Tl3307269": {
-"^ot:altLabel": "Protea cordata", 
 "^ot:originalLabel": "Protea cordata Nr.1.2824", 
+"^ot:ottId": 1068272, 
+"^ot:ottTaxonName": "Protea cordata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 245033, 
 "@tb:identifier.taxonVariant": 305929, 
@@ -1674,8 +2007,9 @@
 }
 }, 
 "Tl3307270": {
-"^ot:altLabel": "Leucadendron procerum", 
 "^ot:originalLabel": "Leucadendron procerum Nr.2010.31.1.1.4749", 
+"^ot:ottId": 32525, 
+"^ot:ottTaxonName": "Leucadendron procerum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 312702, 
 "@tb:identifier.taxonVariant": 358883, 
@@ -1684,8 +2018,9 @@
 }
 }, 
 "Tl3307271": {
-"^ot:altLabel": "Leucadendron burchellii", 
 "^ot:originalLabel": "Leucadendron burchellii Nr.2010.506.2.1.4137", 
+"^ot:ottId": 600538, 
+"^ot:ottTaxonName": "Leucadendron burchellii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 264035, 
 "@tb:identifier.taxonVariant": 320835, 
@@ -1694,8 +2029,9 @@
 }
 }, 
 "Tl3307272": {
-"^ot:altLabel": "Leucadendron sericeum", 
 "^ot:originalLabel": "Leucadendron sericeum Nr.2010.42.4.1.4427", 
+"^ot:ottId": 615596, 
+"^ot:ottTaxonName": "Leucadendron sericeum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 635579, 
 "@tb:identifier.taxonVariant": 850591, 
@@ -1703,8 +2039,9 @@
 }
 }, 
 "Tl3307273": {
-"^ot:altLabel": "Protea laurifolia", 
 "^ot:originalLabel": "Protea laurifolia Nr.1.3699", 
+"^ot:ottId": 660890, 
+"^ot:ottTaxonName": "Protea laurifolia", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 220194, 
 "@tb:identifier.taxonVariant": 286518, 
@@ -1713,8 +2050,9 @@
 }
 }, 
 "Tl3307274": {
-"^ot:altLabel": "Protea scabra", 
 "^ot:originalLabel": "Protea scabra Nr.1.3667", 
+"^ot:ottId": 26788, 
+"^ot:ottTaxonName": "Protea scabra", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 245067, 
 "@tb:identifier.taxonVariant": 305966, 
@@ -1723,8 +2061,9 @@
 }
 }, 
 "Tl3307275": {
-"^ot:altLabel": "Leucadendron dubium", 
 "^ot:originalLabel": "Leucadendron dubium Nr.2010.34.3.1.4712", 
+"^ot:ottId": 600532, 
+"^ot:ottTaxonName": "Leucadendron dubium", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 264043, 
 "@tb:identifier.taxonVariant": 320843, 
@@ -1733,8 +2072,9 @@
 }
 }, 
 "Tl3307276": {
-"^ot:altLabel": "Protea laevis", 
 "^ot:originalLabel": "Protea laevis Nr.1.3636", 
+"^ot:ottId": 1068276, 
+"^ot:ottTaxonName": "Protea laevis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 245038, 
 "@tb:identifier.taxonVariant": 305934, 
@@ -1743,8 +2083,9 @@
 }
 }, 
 "Tl3307277": {
-"^ot:altLabel": "Leucadendron meyerianum", 
 "^ot:originalLabel": "Leucadendron meyerianum Nr.2010.30.1.1.2721", 
+"^ot:ottId": 131071, 
+"^ot:ottTaxonName": "Leucadendron meyerianum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 264063, 
 "@tb:identifier.taxonVariant": 320866, 
@@ -1753,8 +2094,9 @@
 }
 }, 
 "Tl3307278": {
-"^ot:altLabel": "Protea acaulos", 
 "^ot:originalLabel": "Protea acaulos Nr.1.3699", 
+"^ot:ottId": 808966, 
+"^ot:ottTaxonName": "Protea acaulos", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 245052, 
 "@tb:identifier.taxonVariant": 305950, 
@@ -1763,8 +2105,9 @@
 }
 }, 
 "Tl3307279": {
-"^ot:altLabel": "Leucadendron platyspermum", 
 "^ot:originalLabel": "Leucadendron platyspermum Nr.2011.603.3.1.2612", 
+"^ot:ottId": 131070, 
+"^ot:ottTaxonName": "Leucadendron platyspermum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 264070, 
 "@tb:identifier.taxonVariant": 320873, 
@@ -1774,6 +2117,8 @@
 }, 
 "Tl3307280": {
 "^ot:originalLabel": "Leucadendron brunioides Var flumenlupinum Nr.2007.46.2.1.4027", 
+"^ot:ottId": 600539, 
+"^ot:ottTaxonName": "Leucadendron brunioides", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 635593, 
 "@tb:identifier.taxonVariant": 850605, 
@@ -1781,8 +2126,9 @@
 }
 }, 
 "Tl3307281": {
-"^ot:altLabel": "Leucadendron radiatum Nr.2010.145.4.1.2722", 
 "^ot:originalLabel": "Leucadendron radiatum Nr.2010.145.1.1.4419", 
+"^ot:ottId": 5716255, 
+"^ot:ottTaxonName": "Leucadendron radiatum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 635605, 
 "@tb:identifier.taxonVariant": 850617, 
@@ -1790,8 +2136,9 @@
 }
 }, 
 "Tl3307282": {
-"^ot:altLabel": "Protea gaguedi", 
 "^ot:originalLabel": "Protea gaguedi Nr.1.3620", 
+"^ot:ottId": 542015, 
+"^ot:ottTaxonName": "Protea gaguedi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 245051, 
 "@tb:identifier.taxonVariant": 305949, 
@@ -1800,8 +2147,9 @@
 }
 }, 
 "Tl3307283": {
-"^ot:altLabel": "Leucadendron sorocephalodes Nr.2010.63.2.1.4576", 
 "^ot:originalLabel": "Leucadendron sorocephalodes Nr.2010.63.4.1.2872", 
+"^ot:ottId": 5716261, 
+"^ot:ottTaxonName": "Leucadendron sorocephalodes", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 635601, 
 "@tb:identifier.taxonVariant": 850613, 
@@ -1809,8 +2157,9 @@
 }
 }, 
 "Tl3307284": {
-"^ot:altLabel": "Leucadendron levisanus", 
 "^ot:originalLabel": "Leucadendron levisanus Nr.2010.21.1.1.3698", 
+"^ot:ottId": 652982, 
+"^ot:ottTaxonName": "Leucadendron levisanus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 264058, 
 "@tb:identifier.taxonVariant": 320861, 
@@ -1819,8 +2168,9 @@
 }
 }, 
 "Tl3307285": {
-"^ot:altLabel": "Protea piscina", 
 "^ot:originalLabel": "Protea piscina Nr.1.3664", 
+"^ot:ottId": 1018034, 
+"^ot:ottTaxonName": "Protea piscina", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 245020, 
 "@tb:identifier.taxonVariant": 305916, 
@@ -1829,8 +2179,9 @@
 }
 }, 
 "Tl3307286": {
-"^ot:altLabel": "Protea subulifolia", 
 "^ot:originalLabel": "Protea subulifolia Nr.1.3691", 
+"^ot:ottId": 491842, 
+"^ot:ottTaxonName": "Protea subulifolia", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 245031, 
 "@tb:identifier.taxonVariant": 305927, 
@@ -1839,8 +2190,9 @@
 }
 }, 
 "Tl3307287": {
-"^ot:altLabel": "Protea effusa", 
 "^ot:originalLabel": "Protea effusa Nr.1.3009", 
+"^ot:ottId": 916657, 
+"^ot:ottTaxonName": "Protea effusa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 244981, 
 "@tb:identifier.taxonVariant": 305876, 
@@ -1849,8 +2201,9 @@
 }
 }, 
 "Tl3307288": {
-"^ot:altLabel": "Protea mundii", 
 "^ot:originalLabel": "Protea mundii Nr.1.3655", 
+"^ot:ottId": 967311, 
+"^ot:ottTaxonName": "Protea mundii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 244997, 
 "@tb:identifier.taxonVariant": 305893, 
@@ -1859,8 +2212,9 @@
 }
 }, 
 "Tl3307289": {
-"^ot:altLabel": "Leucadendron elimense subsp. vyeboomense", 
 "^ot:originalLabel": "Leucadendron elimense Var vyeboomense Nr.2010.19.1.1.3997", 
+"^ot:ottId": 78975, 
+"^ot:ottTaxonName": "Leucadendron elimense subsp. vyeboomense", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 628170, 
 "@tb:identifier.taxonVariant": 841894, 
@@ -1869,11 +2223,14 @@
 }
 }, 
 "Tl3307290": {
-"^ot:originalLabel": "Mimetes  Nr.1.3540"
+"^ot:originalLabel": "Mimetes  Nr.1.3540", 
+"^ot:ottId": 550450, 
+"^ot:ottTaxonName": "Mimetes (genus in kingdom Archaeplastida)"
 }, 
 "Tl3307291": {
-"^ot:altLabel": "Leucadendron barkerae", 
 "^ot:originalLabel": "Leucadendron barkerae Nr.2010.78.2.1.4587", 
+"^ot:ottId": 27415, 
+"^ot:ottTaxonName": "Leucadendron barkerae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 264033, 
 "@tb:identifier.taxonVariant": 320833, 
@@ -1882,10 +2239,14 @@
 }
 }, 
 "Tl3307292": {
-"^ot:originalLabel": "Serruria  Nr.1.3546"
+"^ot:originalLabel": "Serruria  Nr.1.3546", 
+"^ot:ottId": 285572, 
+"^ot:ottTaxonName": "Serruria"
 }, 
 "Tl3307293": {
 "^ot:originalLabel": "Leucadendron tradouwense Nr.2010.55.1.1.3732", 
+"^ot:ottId": 5716272, 
+"^ot:ottTaxonName": "Leucadendron tradouwense", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 635611, 
 "@tb:identifier.taxonVariant": 850623, 
@@ -1893,11 +2254,14 @@
 }
 }, 
 "Tl3307294": {
-"^ot:originalLabel": "Carnarvonia  Nr.1.5274"
+"^ot:originalLabel": "Carnarvonia  Nr.1.5274", 
+"^ot:ottId": 602836, 
+"^ot:ottTaxonName": "Carnarvonia"
 }, 
 "Tl3307295": {
-"^ot:altLabel": "Leucadendron corymbosum", 
 "^ot:originalLabel": "Leucadendron corymbosum Nr.2010.14.1.1.4573", 
+"^ot:ottId": 600534, 
+"^ot:ottTaxonName": "Leucadendron corymbosum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 264039, 
 "@tb:identifier.taxonVariant": 320839, 
@@ -1906,10 +2270,14 @@
 }
 }, 
 "Tl3307296": {
-"^ot:originalLabel": "Floydia  Nr.1.4183"
+"^ot:originalLabel": "Floydia  Nr.1.4183", 
+"^ot:ottId": 297608, 
+"^ot:ottTaxonName": "Floydia"
 }, 
 "Tl3307297": {
 "^ot:originalLabel": "Leucadendron spissifolium spissifolium Nr.2010.152.2.1.3995", 
+"^ot:ottId": 104284, 
+"^ot:ottTaxonName": "Leucadendron spissifolium", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 635610, 
 "@tb:identifier.taxonVariant": 850622, 
@@ -1917,8 +2285,9 @@
 }
 }, 
 "Tl3307298": {
-"^ot:altLabel": "Protea simplex", 
 "^ot:originalLabel": "Protea simplex Nr.1.3455", 
+"^ot:ottId": 1068278, 
+"^ot:ottTaxonName": "Protea simplex", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 245036, 
 "@tb:identifier.taxonVariant": 305932, 
@@ -1927,8 +2296,9 @@
 }
 }, 
 "Tl3307299": {
-"^ot:altLabel": "Leucadendron lanigerum laevigatum Nr.2010.15.3.1.3066", 
 "^ot:originalLabel": "Leucadendron lanigerum laevigatum Nr.2010.15.4.1.2986", 
+"^ot:ottId": 652975, 
+"^ot:ottTaxonName": "Leucadendron lanigerum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 635595, 
 "@tb:identifier.taxonVariant": 850607, 
@@ -1936,8 +2306,9 @@
 }
 }, 
 "Tl3307300": {
-"^ot:altLabel": "Leucadendron lanigerum lanigerum Nr.2010.13.3.1.2892", 
 "^ot:originalLabel": "Leucadendron lanigerum lanigerum Nr.2010.9.3.1.4671", 
+"^ot:ottId": 652975, 
+"^ot:ottTaxonName": "Leucadendron lanigerum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 635594, 
 "@tb:identifier.taxonVariant": 850606, 
@@ -1945,8 +2316,9 @@
 }
 }, 
 "Tl3307301": {
-"^ot:altLabel": "Leucadendron elimense subsp. vyeboomense", 
 "^ot:originalLabel": "Leucadendron elimense Var vyeboomense Nr.2010.151.1.1.2552", 
+"^ot:ottId": 78975, 
+"^ot:ottTaxonName": "Leucadendron elimense subsp. vyeboomense", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 628170, 
 "@tb:identifier.taxonVariant": 841894, 
@@ -1955,8 +2327,9 @@
 }
 }, 
 "Tl3307302": {
-"^ot:altLabel": "Leucadendron sheilae Nr.2010.27.2.1.2722", 
 "^ot:originalLabel": "Leucadendron sheilae Nr.2010.27.1.1.4753", 
+"^ot:ottId": 5716259, 
+"^ot:ottTaxonName": "Leucadendron sheilae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 635597, 
 "@tb:identifier.taxonVariant": 850609, 
@@ -1964,8 +2337,9 @@
 }
 }, 
 "Tl3307303": {
-"^ot:altLabel": "Leucadendron elimense subsp. salteri", 
 "^ot:originalLabel": "Leucadendron elimense salteri Nr.2010.502.2.1.4406", 
+"^ot:ottId": 78978, 
+"^ot:ottTaxonName": "Leucadendron elimense subsp. salteri", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 628169, 
 "@tb:identifier.taxonVariant": 841893, 
@@ -1974,8 +2348,9 @@
 }
 }, 
 "Tl3307304": {
-"^ot:altLabel": "Leucadendron radiatum Nr.2010.145.4.1.2722", 
 "^ot:originalLabel": "Leucadendron radiatum Nr.2010.145.3.1.2552", 
+"^ot:ottId": 5716255, 
+"^ot:ottTaxonName": "Leucadendron radiatum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 635605, 
 "@tb:identifier.taxonVariant": 850617, 
@@ -1983,11 +2358,14 @@
 }
 }, 
 "Tl3307305": {
-"^ot:originalLabel": "Sabia  Nr.1.3457"
+"^ot:originalLabel": "Sabia  Nr.1.3457", 
+"^ot:ottId": 643946, 
+"^ot:ottTaxonName": "Sabia (genus in kingdom Archaeplastida)"
 }, 
 "Tl3307306": {
-"^ot:altLabel": "Leucadendron singulare", 
 "^ot:originalLabel": "Leucadendron singulare Nr.2010.132.3.1.4655", 
+"^ot:ottId": 615590, 
+"^ot:ottTaxonName": "Leucadendron singulare", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 264077, 
 "@tb:identifier.taxonVariant": 320880, 
@@ -1996,8 +2374,9 @@
 }
 }, 
 "Tl3307307": {
-"^ot:altLabel": "Faurea galpinii", 
 "^ot:originalLabel": "Faurea galpinii Nr.1.2990", 
+"^ot:ottId": 26786, 
+"^ot:ottTaxonName": "Faurea galpinii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 245068, 
 "@tb:identifier.taxonVariant": 305967, 
@@ -2006,8 +2385,9 @@
 }
 }, 
 "Tl3307308": {
-"^ot:altLabel": "Leucadendron corymbosum", 
 "^ot:originalLabel": "Leucadendron corymbosum Nr.2010.14.3.1.2934", 
+"^ot:ottId": 600534, 
+"^ot:ottTaxonName": "Leucadendron corymbosum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 264039, 
 "@tb:identifier.taxonVariant": 320839, 
@@ -2016,8 +2396,9 @@
 }
 }, 
 "Tl3307309": {
-"^ot:altLabel": "Leucadendron muirii", 
 "^ot:originalLabel": "Leucadendron muirii Nr.2011.602.2.1.3824", 
+"^ot:ottId": 131074, 
+"^ot:ottTaxonName": "Leucadendron muirii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 264066, 
 "@tb:identifier.taxonVariant": 320869, 
@@ -2026,8 +2407,9 @@
 }
 }, 
 "Tl3307310": {
-"^ot:altLabel": "Leucadendron cordatum Nr.2010.512.1.1.4752", 
 "^ot:originalLabel": "Leucadendron cordatum Nr.2010.512.2.1.3488", 
+"^ot:ottId": 5716265, 
+"^ot:ottTaxonName": "Leucadendron cordatum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 635596, 
 "@tb:identifier.taxonVariant": 850608, 
@@ -2035,8 +2417,9 @@
 }
 }, 
 "Tl3307311": {
-"^ot:altLabel": "Protea scolopendriifolia", 
 "^ot:originalLabel": "Protea scolopendriifolia Nr.1.3549", 
+"^ot:ottId": 967313, 
+"^ot:ottTaxonName": "Protea scolopendriifolia", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 244995, 
 "@tb:identifier.taxonVariant": 305891, 
@@ -2045,8 +2428,9 @@
 }
 }, 
 "Tl3307312": {
-"^ot:altLabel": "Protea curvata", 
 "^ot:originalLabel": "Protea curvata Nr.1.3646", 
+"^ot:ottId": 967312, 
+"^ot:ottTaxonName": "Protea curvata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 244996, 
 "@tb:identifier.taxonVariant": 305892, 
@@ -2056,6 +2440,8 @@
 }, 
 "Tl3307313": {
 "^ot:originalLabel": "Leucadendron foedum Nr.2010.117.3.1.4752", 
+"^ot:ottId": 5716267, 
+"^ot:ottTaxonName": "Leucadendron foedum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 635603, 
 "@tb:identifier.taxonVariant": 850615, 
@@ -2063,8 +2449,9 @@
 }
 }, 
 "Tl3307314": {
-"^ot:altLabel": "Protea scorzonerifolia", 
 "^ot:originalLabel": "Protea scorzonerifolia Nr.1.2947", 
+"^ot:ottId": 390960, 
+"^ot:ottTaxonName": "Protea scorzonerifolia", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 244990, 
 "@tb:identifier.taxonVariant": 305885, 
@@ -2073,8 +2460,9 @@
 }
 }, 
 "Tl3307315": {
-"^ot:altLabel": "Leucadendron stelligerum Nr.2011.604.2.1.2638", 
 "^ot:originalLabel": "Leucadendron stelligerum Nr.2011.604.3.1.2621", 
+"^ot:ottId": 5716268, 
+"^ot:ottTaxonName": "Leucadendron stelligerum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 635599, 
 "@tb:identifier.taxonVariant": 850611, 
@@ -2082,8 +2470,9 @@
 }
 }, 
 "Tl3307316": {
-"^ot:altLabel": "Protea canaliculata", 
 "^ot:originalLabel": "Protea canaliculata Nr.1.3337", 
+"^ot:ottId": 21919, 
+"^ot:ottTaxonName": "Protea canaliculata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 245000, 
 "@tb:identifier.taxonVariant": 305896, 
@@ -2092,8 +2481,9 @@
 }
 }, 
 "Tl3307317": {
-"^ot:altLabel": "Leucadendron glaberrimum erubescens Nr.2010.112.2.1.4134", 
 "^ot:originalLabel": "Leucadendron glaberrimum erubescens Nr.2010.112.1.1.2739", 
+"^ot:ottId": 652979, 
+"^ot:ottTaxonName": "Leucadendron glaberrimum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 635587, 
 "@tb:identifier.taxonVariant": 850599, 
@@ -2101,8 +2491,9 @@
 }
 }, 
 "Tl3307318": {
-"^ot:altLabel": "Leucadendron microcephalum", 
 "^ot:originalLabel": "Leucadendron microcephalum Nr.2010.20.1.1.4763", 
+"^ot:ottId": 131072, 
+"^ot:ottTaxonName": "Leucadendron microcephalum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 264064, 
 "@tb:identifier.taxonVariant": 320867, 
@@ -2111,8 +2502,9 @@
 }
 }, 
 "Tl3307319": {
-"^ot:altLabel": "Protea welwitschii", 
 "^ot:originalLabel": "Protea welwitschii Nr.1.3341", 
+"^ot:ottId": 491852, 
+"^ot:ottTaxonName": "Protea welwitschii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 245023, 
 "@tb:identifier.taxonVariant": 305919, 
@@ -2121,11 +2513,14 @@
 }
 }, 
 "Tl3307320": {
-"^ot:originalLabel": "Platanus  Nr.1.5267"
+"^ot:originalLabel": "Platanus  Nr.1.5267", 
+"^ot:ottId": 62539, 
+"^ot:ottTaxonName": "Platanus"
 }, 
 "Tl3307321": {
-"^ot:altLabel": "Protea holosericea", 
 "^ot:originalLabel": "Protea holosericea Nr.1.2996", 
+"^ot:ottId": 390957, 
+"^ot:ottTaxonName": "Protea holosericea", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 244989, 
 "@tb:identifier.taxonVariant": 305884, 
@@ -2135,6 +2530,8 @@
 }, 
 "Tl3307322": {
 "^ot:originalLabel": "Leucadendron sorocephalodes Nr.2010.63.2.1.4576", 
+"^ot:ottId": 5716261, 
+"^ot:ottTaxonName": "Leucadendron sorocephalodes", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 635601, 
 "@tb:identifier.taxonVariant": 850613, 
@@ -2142,8 +2539,9 @@
 }
 }, 
 "Tl3307323": {
-"^ot:altLabel": "Leucadendron sheilae Nr.2010.27.2.1.2722", 
 "^ot:originalLabel": "Leucadendron sheilae Nr.2010.27.3.1.3487", 
+"^ot:ottId": 5716259, 
+"^ot:ottTaxonName": "Leucadendron sheilae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 635597, 
 "@tb:identifier.taxonVariant": 850609, 
@@ -2151,8 +2549,9 @@
 }
 }, 
 "Tl3307324": {
-"^ot:altLabel": "Leucadendron barkerae", 
 "^ot:originalLabel": "Leucadendron barkerae Nr.2010.175.2.1.3148", 
+"^ot:ottId": 27415, 
+"^ot:ottTaxonName": "Leucadendron barkerae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 264033, 
 "@tb:identifier.taxonVariant": 320833, 
@@ -2162,6 +2561,8 @@
 }, 
 "Tl3307325": {
 "^ot:originalLabel": "Leucadendron spissifolium phillipsii Nr.2010.66.2.1.4655", 
+"^ot:ottId": 104284, 
+"^ot:ottTaxonName": "Leucadendron spissifolium", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 635609, 
 "@tb:identifier.taxonVariant": 850621, 
@@ -2169,8 +2570,9 @@
 }
 }, 
 "Tl3307326": {
-"^ot:altLabel": "Protea glabra", 
 "^ot:originalLabel": "Protea glabra Nr.1.3703", 
+"^ot:ottId": 491848, 
+"^ot:ottTaxonName": "Protea glabra", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 245027, 
 "@tb:identifier.taxonVariant": 305923, 
@@ -2179,8 +2581,9 @@
 }
 }, 
 "Tl3307327": {
-"^ot:altLabel": "Protea decurrens", 
 "^ot:originalLabel": "Protea decurrens Nr.1.3628", 
+"^ot:ottId": 491851, 
+"^ot:ottTaxonName": "Protea decurrens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 245022, 
 "@tb:identifier.taxonVariant": 305918, 
@@ -2189,11 +2592,14 @@
 }
 }, 
 "Tl3307328": {
-"^ot:originalLabel": "Buxus  Nr.1.5388"
+"^ot:originalLabel": "Buxus  Nr.1.5388", 
+"^ot:ottId": 1000250, 
+"^ot:ottTaxonName": "Buxus"
 }, 
 "Tl3307329": {
-"^ot:altLabel": "Leucadendron album", 
 "^ot:originalLabel": "Leucadendron album Nr.2010.65.2.1.4763", 
+"^ot:ottId": 27420, 
+"^ot:ottTaxonName": "Leucadendron album", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 264030, 
 "@tb:identifier.taxonVariant": 320830, 
@@ -2202,8 +2608,9 @@
 }
 }, 
 "Tl3307330": {
-"^ot:altLabel": "Protea aspera", 
 "^ot:originalLabel": "Protea aspera Nr.1.2571", 
+"^ot:ottId": 390961, 
+"^ot:ottTaxonName": "Protea aspera", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 244991, 
 "@tb:identifier.taxonVariant": 305886, 
@@ -2213,6 +2620,8 @@
 }, 
 "Tl3307331": {
 "^ot:originalLabel": "Leucadendron crassulaefolium Nr.2010.48.1.1.4199", 
+"^ot:ottId": 5716252, 
+"^ot:ottTaxonName": "Leucadendron crassulifolium", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 635608, 
 "@tb:identifier.taxonVariant": 850620, 
@@ -2220,8 +2629,9 @@
 }
 }, 
 "Tl3307332": {
-"^ot:altLabel": "Leucadendron loranthifolium", 
 "^ot:originalLabel": "Leucadendron loranthifolium Nr.2010.53.2.1.2931", 
+"^ot:ottId": 29330, 
+"^ot:ottTaxonName": "Leucadendron loranthifolium", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 189493, 
 "@tb:identifier.taxonVariant": 261411, 
@@ -2231,6 +2641,8 @@
 }, 
 "Tl3307333": {
 "^ot:originalLabel": "Leucadendron comosum comosum Nr.2010.67.2.1.3901", 
+"^ot:ottId": 600541, 
+"^ot:ottTaxonName": "Leucadendron comosum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 635600, 
 "@tb:identifier.taxonVariant": 850612, 
@@ -2238,8 +2650,9 @@
 }
 }, 
 "Tl3307334": {
-"^ot:altLabel": "Leucadendron orientale Nr.2010.56.4.1.3447", 
 "^ot:originalLabel": "Leucadendron orientale Nr.2010.56.1.1.4588", 
+"^ot:ottId": 5716270, 
+"^ot:ottTaxonName": "Leucadendron orientale", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 635586, 
 "@tb:identifier.taxonVariant": 850598, 
@@ -2247,11 +2660,14 @@
 }
 }, 
 "Tl3307335": {
-"^ot:originalLabel": "Stirlingia  Nr.1.5698"
+"^ot:originalLabel": "Stirlingia  Nr.1.5698", 
+"^ot:ottId": 450928, 
+"^ot:ottTaxonName": "Stirlingia"
 }, 
 "Tl3307336": {
-"^ot:altLabel": "Leucadendron brunioides brunioides Nr.2010.174.1.1.4765", 
 "^ot:originalLabel": "Leucadendron brunioides brunioides Nr.2010.174.2.1.3489", 
+"^ot:ottId": 600539, 
+"^ot:ottTaxonName": "Leucadendron brunioides", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 635592, 
 "@tb:identifier.taxonVariant": 850604, 
@@ -2259,8 +2675,9 @@
 }
 }, 
 "Tl3307337": {
-"^ot:altLabel": "Leucadendron modestum", 
 "^ot:originalLabel": "Leucadendron modestum Nr.2011.607.2.1.3550", 
+"^ot:ottId": 131073, 
+"^ot:ottTaxonName": "Leucadendron modestum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 264065, 
 "@tb:identifier.taxonVariant": 320868, 
@@ -2269,8 +2686,9 @@
 }
 }, 
 "Tl3307338": {
-"^ot:altLabel": "Protea humiflora", 
 "^ot:originalLabel": "Protea humiflora Nr.1.3617", 
+"^ot:ottId": 1068283, 
+"^ot:ottTaxonName": "Protea humiflora", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 245040, 
 "@tb:identifier.taxonVariant": 305936, 
@@ -2279,8 +2697,9 @@
 }
 }, 
 "Tl3307339": {
-"^ot:altLabel": "Leucadendron gydoense Nr.2010.126.1.1.3394", 
 "^ot:originalLabel": "Leucadendron gydoense Nr.2010.46.1.1.2706", 
+"^ot:ottId": 5716254, 
+"^ot:ottTaxonName": "Leucadendron gydoense", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 635607, 
 "@tb:identifier.taxonVariant": 850619, 
@@ -2288,8 +2707,9 @@
 }
 }, 
 "Tl3307340": {
-"^ot:altLabel": "Leucadendron meyerianum", 
 "^ot:originalLabel": "Leucadendron meyerianum Nr.2010.24.1.1.4382", 
+"^ot:ottId": 131071, 
+"^ot:ottTaxonName": "Leucadendron meyerianum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 264063, 
 "@tb:identifier.taxonVariant": 320866, 
@@ -2298,11 +2718,14 @@
 }
 }, 
 "Tl3307341": {
-"^ot:originalLabel": "Sorocephalus  Nr.1.1758"
+"^ot:originalLabel": "Sorocephalus  Nr.1.1758", 
+"^ot:ottId": 809304, 
+"^ot:ottTaxonName": "Sorocephalus"
 }, 
 "Tl3307342": {
-"^ot:altLabel": "Protea nana", 
 "^ot:originalLabel": "Protea nana Nr.1.3654", 
+"^ot:ottId": 1018036, 
+"^ot:ottTaxonName": "Protea nana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 245016, 
 "@tb:identifier.taxonVariant": 305912, 
@@ -2311,8 +2734,9 @@
 }
 }, 
 "Tl3307343": {
-"^ot:altLabel": "Protea pudens", 
 "^ot:originalLabel": "Protea pudens Nr.1.3690", 
+"^ot:ottId": 491841, 
+"^ot:ottTaxonName": "Protea pudens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 245030, 
 "@tb:identifier.taxonVariant": 305926, 
@@ -2321,8 +2745,9 @@
 }
 }, 
 "Tl3307344": {
-"^ot:altLabel": "Leucadendron discolor", 
 "^ot:originalLabel": "Leucadendron discolor Nr.2010.510.3.1.4662", 
+"^ot:ottId": 600536, 
+"^ot:ottTaxonName": "Leucadendron discolor", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 264041, 
 "@tb:identifier.taxonVariant": 320841, 
@@ -2331,8 +2756,9 @@
 }
 }, 
 "Tl3307345": {
-"^ot:altLabel": "Protea rupicola", 
 "^ot:originalLabel": "Protea rupicola Nr.1.3648", 
+"^ot:ottId": 390956, 
+"^ot:ottTaxonName": "Protea rupicola", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 244988, 
 "@tb:identifier.taxonVariant": 305883, 
@@ -2341,8 +2767,9 @@
 }
 }, 
 "Tl3307346": {
-"^ot:altLabel": "Leucadendron dregei", 
 "^ot:originalLabel": "Leucadendron dregei Nr.2010.511.4.1.4055", 
+"^ot:ottId": 600533, 
+"^ot:ottTaxonName": "Leucadendron dregei", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 264042, 
 "@tb:identifier.taxonVariant": 320842, 
@@ -2351,8 +2778,9 @@
 }
 }, 
 "Tl3307347": {
-"^ot:altLabel": "Leucadendron thymifolium", 
 "^ot:originalLabel": "Leucadendron thymifolium Nr.2010.6.3.1.2822", 
+"^ot:ottId": 678170, 
+"^ot:ottTaxonName": "Leucadendron thymifolium", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 264083, 
 "@tb:identifier.taxonVariant": 320886, 
@@ -2361,8 +2789,9 @@
 }
 }, 
 "Tl3307348": {
-"^ot:altLabel": "Leucadendron lanigerum laevigatum Nr.2010.15.3.1.3066", 
 "^ot:originalLabel": "Leucadendron lanigerum laevigatum Nr.2010.15.1.1.3637", 
+"^ot:ottId": 652975, 
+"^ot:ottTaxonName": "Leucadendron lanigerum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 635595, 
 "@tb:identifier.taxonVariant": 850607, 
@@ -2370,8 +2799,9 @@
 }
 }, 
 "Tl3307349": {
-"^ot:altLabel": "Leucadendron cinereum", 
 "^ot:originalLabel": "Leucadendron cinereum Nr.2010.111.3.1.2735", 
+"^ot:ottId": 5716256, 
+"^ot:ottTaxonName": "Leucadendron cinereum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 635534, 
 "@tb:identifier.taxonVariant": 850546, 
@@ -2379,8 +2809,9 @@
 }
 }, 
 "Tl3307350": {
-"^ot:altLabel": "Leucadendron nervosum", 
 "^ot:originalLabel": "Leucadendron nervosum Nr.2010.507.3.1.2545", 
+"^ot:ottId": 131067, 
+"^ot:ottTaxonName": "Leucadendron nervosum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 264067, 
 "@tb:identifier.taxonVariant": 320870, 
@@ -2389,8 +2820,9 @@
 }
 }, 
 "Tl3307351": {
-"^ot:altLabel": "Leucadendron microcephalum", 
 "^ot:originalLabel": "Leucadendron microcephalum Nr.2010.508.2.1.2905", 
+"^ot:ottId": 131072, 
+"^ot:ottTaxonName": "Leucadendron microcephalum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 264064, 
 "@tb:identifier.taxonVariant": 320867, 
@@ -2399,11 +2831,14 @@
 }
 }, 
 "Tl3307352": {
-"^ot:originalLabel": "Leucadendron touwsbergensis Nr.2010.51.3.1.3281"
+"^ot:originalLabel": "Leucadendron touwsbergensis Nr.2010.51.3.1.3281", 
+"^ot:ottId": 29543, 
+"^ot:ottTaxonName": "Leucadendron"
 }, 
 "Tl3307353": {
-"^ot:altLabel": "Protea tenax", 
 "^ot:originalLabel": "Protea tenax Nr.1.2922", 
+"^ot:ottId": 390954, 
+"^ot:ottTaxonName": "Protea tenax", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 244982, 
 "@tb:identifier.taxonVariant": 305877, 
@@ -2412,8 +2847,9 @@
 }
 }, 
 "Tl3307354": {
-"^ot:altLabel": "Protea denticulata", 
 "^ot:originalLabel": "Protea denticulata Nr.1.644", 
+"^ot:ottId": 576832, 
+"^ot:ottTaxonName": "Protea denticulata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 427677, 
 "@tb:identifier.taxonVariant": 563124, 
@@ -2422,8 +2858,9 @@
 }
 }, 
 "Tl3307355": {
-"^ot:altLabel": "Protea burchellii", 
 "^ot:originalLabel": "Protea burchellii Nr.1.3675", 
+"^ot:ottId": 458052, 
+"^ot:ottTaxonName": "Protea burchellii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 245011, 
 "@tb:identifier.taxonVariant": 305907, 
@@ -2433,6 +2870,8 @@
 }, 
 "Tl3307356": {
 "^ot:originalLabel": "Leucadendron sheilae Nr.2010.27.2.1.2722", 
+"^ot:ottId": 5716259, 
+"^ot:ottTaxonName": "Leucadendron sheilae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 635597, 
 "@tb:identifier.taxonVariant": 850609, 
@@ -2440,8 +2879,9 @@
 }
 }, 
 "Tl3307357": {
-"^ot:altLabel": "Leucadendron cinereum", 
 "^ot:originalLabel": "Leucadendron cinereum Nr.2010.8.3.1.4041", 
+"^ot:ottId": 5716256, 
+"^ot:ottTaxonName": "Leucadendron cinereum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 635534, 
 "@tb:identifier.taxonVariant": 850546, 
@@ -2450,6 +2890,8 @@
 }, 
 "Tl3307358": {
 "^ot:originalLabel": "Leucadendron gydoense Nr.2010.126.1.1.3394", 
+"^ot:ottId": 5716254, 
+"^ot:ottTaxonName": "Leucadendron gydoense", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 635607, 
 "@tb:identifier.taxonVariant": 850619, 
@@ -2457,8 +2899,9 @@
 }
 }, 
 "Tl3307359": {
-"^ot:altLabel": "Faurea macnaughtonii", 
 "^ot:originalLabel": "Faurea macnaughtonii Nr.1.3477", 
+"^ot:ottId": 500478, 
+"^ot:ottTaxonName": "Faurea macnaughtonii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 189488, 
 "@tb:identifier.taxonVariant": 261403, 
@@ -2467,8 +2910,9 @@
 }
 }, 
 "Tl3307360": {
-"^ot:altLabel": "Leucadendron album", 
 "^ot:originalLabel": "Leucadendron album Nr.2010.137.2.1.2916", 
+"^ot:ottId": 27420, 
+"^ot:ottTaxonName": "Leucadendron album", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 264030, 
 "@tb:identifier.taxonVariant": 320830, 
@@ -2477,8 +2921,9 @@
 }
 }, 
 "Tl3307361": {
-"^ot:altLabel": "Leucadendron elimense", 
 "^ot:originalLabel": "Leucadendron elimense Ssp. nova Nr.2010.150.1.1.3906", 
+"^ot:ottId": 78979, 
+"^ot:ottTaxonName": "Leucadendron elimense", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 264044, 
 "@tb:identifier.taxonVariant": 320844, 
@@ -2488,6 +2933,8 @@
 }, 
 "Tl3307362": {
 "^ot:originalLabel": "Leucadendron concavum Nr.2007.33.44.1.3859", 
+"^ot:ottId": 5716263, 
+"^ot:ottTaxonName": "Leucadendron concavum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 635604, 
 "@tb:identifier.taxonVariant": 850616, 
@@ -2496,6 +2943,8 @@
 }, 
 "Tl3307363": {
 "^ot:originalLabel": "Leucadendron pubibracteolatum Nr.2010.138.2.1.3401", 
+"^ot:ottId": 5716269, 
+"^ot:ottTaxonName": "Leucadendron pubibracteolatum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 635591, 
 "@tb:identifier.taxonVariant": 850603, 
@@ -2503,8 +2952,9 @@
 }
 }, 
 "Tl3307364": {
-"^ot:altLabel": "Protea laetans", 
 "^ot:originalLabel": "Protea laetans Nr.1.2990", 
+"^ot:ottId": 26789, 
+"^ot:ottTaxonName": "Protea laetans", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 245066, 
 "@tb:identifier.taxonVariant": 305965, 
@@ -2513,8 +2963,9 @@
 }
 }, 
 "Tl3307365": {
-"^ot:altLabel": "Leucadendron teretifolium", 
 "^ot:originalLabel": "Leucadendron teretifolium Nr.2010.52.1.1.3009", 
+"^ot:ottId": 104280, 
+"^ot:ottTaxonName": "Leucadendron teretifolium", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 264082, 
 "@tb:identifier.taxonVariant": 320885, 
@@ -2523,8 +2974,9 @@
 }
 }, 
 "Tl3307366": {
-"^ot:altLabel": "Leucadendron roodii", 
 "^ot:originalLabel": "Leucadendron roodii Nr.2010.29.1.1.4639", 
+"^ot:ottId": 131077, 
+"^ot:ottTaxonName": "Leucadendron roodii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 264072, 
 "@tb:identifier.taxonVariant": 320875, 
@@ -2533,8 +2985,9 @@
 }
 }, 
 "Tl3307367": {
-"^ot:altLabel": "Leucadendron nervosum", 
 "^ot:originalLabel": "Leucadendron nervosum Nr.2010.507.4.1.2540", 
+"^ot:ottId": 131067, 
+"^ot:ottTaxonName": "Leucadendron nervosum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 264067, 
 "@tb:identifier.taxonVariant": 320870, 
@@ -2543,8 +2996,9 @@
 }
 }, 
 "Tl3307368": {
-"^ot:altLabel": "Leucadendron brunioides brunioides Nr.2010.174.1.1.4765", 
 "^ot:originalLabel": "Leucadendron brunioides brunioides Nr.2010.25.1.1.4577", 
+"^ot:ottId": 600539, 
+"^ot:ottTaxonName": "Leucadendron brunioides", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 635592, 
 "@tb:identifier.taxonVariant": 850604, 
@@ -2552,8 +3006,9 @@
 }
 }, 
 "Tl3307369": {
-"^ot:altLabel": "Faurea rochetiana", 
 "^ot:originalLabel": "Faurea rochetiana Nr.1.2927", 
+"^ot:ottId": 26784, 
+"^ot:ottTaxonName": "Faurea rochetiana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 47495, 
 "@tb:identifier.taxonVariant": 111116, 
@@ -2563,6 +3018,8 @@
 }, 
 "Tl3307370": {
 "^ot:originalLabel": "Leucadendron diemontianum Nr.2010.125.2.1.4642", 
+"^ot:ottId": 5716264, 
+"^ot:ottTaxonName": "Leucadendron diemontianum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 635585, 
 "@tb:identifier.taxonVariant": 850597, 
@@ -2570,8 +3027,9 @@
 }
 }, 
 "Tl3307371": {
-"^ot:altLabel": "Leucadendron sheilae Nr.2010.27.2.1.2722", 
 "^ot:originalLabel": "Leucadendron sheilae Nr.2010.27.4.1.3487", 
+"^ot:ottId": 5716259, 
+"^ot:ottTaxonName": "Leucadendron sheilae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 635597, 
 "@tb:identifier.taxonVariant": 850609, 
@@ -2579,8 +3037,9 @@
 }
 }, 
 "Tl3307372": {
-"^ot:altLabel": "Protea montana", 
 "^ot:originalLabel": "Protea montana Nr.1.3671", 
+"^ot:ottId": 1068270, 
+"^ot:ottTaxonName": "Protea montana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 245035, 
 "@tb:identifier.taxonVariant": 305931, 
@@ -2589,8 +3048,9 @@
 }
 }, 
 "Tl3307373": {
-"^ot:altLabel": "Leucadendron sessile", 
 "^ot:originalLabel": "Leucadendron sessile Nr.2010.501.2.1.4016", 
+"^ot:ottId": 104286, 
+"^ot:ottTaxonName": "Leucadendron sessile", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 264076, 
 "@tb:identifier.taxonVariant": 320879, 
@@ -2599,8 +3059,9 @@
 }
 }, 
 "Tl3307374": {
-"^ot:altLabel": "Leucadendron salignum", 
 "^ot:originalLabel": "Leucadendron salignum Nr.2010.139.1.1.3411", 
+"^ot:ottId": 603572, 
+"^ot:ottTaxonName": "Leucadendron salignum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 94671, 
 "@tb:identifier.taxonVariant": 173762, 
@@ -2609,8 +3070,9 @@
 }
 }, 
 "Tl3307375": {
-"^ot:altLabel": "Protea nubigena", 
 "^ot:originalLabel": "Protea nubigena Nr.1.2158", 
+"^ot:ottId": 542011, 
+"^ot:ottTaxonName": "Protea nubigena", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 245043, 
 "@tb:identifier.taxonVariant": 305941, 
@@ -2633,7 +3095,18 @@
 "Tr113900": {
 "@label": "UNTITLED", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:undefined", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn17811608", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 291, 
 "^tb:quality.tree": "Unrated", 
@@ -2651,12 +3124,12 @@
 "@target": "Tn17811615"
 }, 
 "edge23596": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17811221", 
 "@target": "Tn17811271"
 }, 
 "edge23598": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17811221", 
 "@target": "Tn17811602"
 }
@@ -2695,7 +3168,7 @@
 "@target": "Tn17811735"
 }, 
 "edge23490": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17811225", 
 "@target": "Tn17811526"
 }
@@ -2736,7 +3209,7 @@
 "@target": "Tn17811443"
 }, 
 "edge23868": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17811235", 
 "@target": "Tn17811514"
 }
@@ -2784,7 +3257,7 @@
 "@target": "Tn17811745"
 }, 
 "edge23506": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17811242", 
 "@target": "Tn17811549"
 }, 
@@ -2916,17 +3389,17 @@
 }, 
 "Tn17811265": {
 "edge23702": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17811265", 
 "@target": "Tn17811670"
 }, 
 "edge23704": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17811265", 
 "@target": "Tn17811324"
 }, 
 "edge23706": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17811265", 
 "@target": "Tn17811233"
 }
@@ -2972,7 +3445,7 @@
 "@target": "Tn17811226"
 }, 
 "edge24060": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17811270", 
 "@target": "Tn17811500"
 }, 
@@ -3080,17 +3553,17 @@
 }, 
 "Tn17811284": {
 "edge23840": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17811284", 
 "@target": "Tn17811563"
 }, 
 "edge23842": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17811284", 
 "@target": "Tn17811354"
 }, 
 "edge23844": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17811284", 
 "@target": "Tn17811703"
 }, 
@@ -3114,12 +3587,12 @@
 }, 
 "Tn17811287": {
 "edge23374": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17811287", 
 "@target": "Tn17811421"
 }, 
 "edge23376": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17811287", 
 "@target": "Tn17811707"
 }
@@ -3162,7 +3635,7 @@
 }, 
 "Tn17811298": {
 "edge23326": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17811298", 
 "@target": "Tn17811623"
 }, 
@@ -3220,12 +3693,12 @@
 "@target": "Tn17811281"
 }, 
 "edge23480": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17811304", 
 "@target": "Tn17811444"
 }, 
 "edge23482": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17811304", 
 "@target": "Tn17811290"
 }
@@ -3237,7 +3710,7 @@
 "@target": "Tn17811532"
 }, 
 "edge24126": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17811306", 
 "@target": "Tn17811738"
 }
@@ -3285,7 +3758,7 @@
 "@target": "Tn17811676"
 }, 
 "edge23292": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17811318", 
 "@target": "Tn17811554"
 }
@@ -3321,7 +3794,7 @@
 "@target": "Tn17811697"
 }, 
 "edge23750": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17811322", 
 "@target": "Tn17811669"
 }, 
@@ -3338,36 +3811,36 @@
 "@target": "Tn17811455"
 }, 
 "edge23464": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17811323", 
 "@target": "Tn17811621"
 }
 }, 
 "Tn17811326": {
 "edge23522": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17811326", 
 "@target": "Tn17811547"
 }, 
 "edge23524": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17811326", 
 "@target": "Tn17811567"
 }
 }, 
 "Tn17811327": {
 "edge23820": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17811327", 
 "@target": "Tn17811498"
 }, 
 "edge23822": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17811327", 
 "@target": "Tn17811576"
 }, 
 "edge23824": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17811327", 
 "@target": "Tn17811496"
 }
@@ -3410,12 +3883,12 @@
 }, 
 "Tn17811342": {
 "edge23566": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17811342", 
 "@target": "Tn17811234"
 }, 
 "edge23568": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17811342", 
 "@target": "Tn17811435"
 }
@@ -3427,7 +3900,7 @@
 "@target": "Tn17811477"
 }, 
 "edge23576": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17811344", 
 "@target": "Tn17811368"
 }
@@ -3446,7 +3919,7 @@
 }, 
 "Tn17811348": {
 "edge23878": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17811348", 
 "@target": "Tn17811713"
 }, 
@@ -3530,12 +4003,12 @@
 }, 
 "Tn17811357": {
 "edge23348": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17811357", 
 "@target": "Tn17811632"
 }, 
 "edge23350": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17811357", 
 "@target": "Tn17811726"
 }, 
@@ -3665,7 +4138,7 @@
 "@target": "Tn17811736"
 }, 
 "edge23788": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17811375", 
 "@target": "Tn17811237"
 }
@@ -3797,12 +4270,12 @@
 }, 
 "Tn17811397": {
 "edge23918": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17811397", 
 "@target": "Tn17811297"
 }, 
 "edge23920": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17811397", 
 "@target": "Tn17811254"
 }
@@ -4014,7 +4487,7 @@
 "@target": "Tn17811543"
 }, 
 "edge23858": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17811440", 
 "@target": "Tn17811437"
 }
@@ -4033,12 +4506,12 @@
 }, 
 "Tn17811443": {
 "edge23864": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17811443", 
 "@target": "Tn17811386"
 }, 
 "edge23866": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17811443", 
 "@target": "Tn17811542"
 }
@@ -4057,7 +4530,7 @@
 }, 
 "Tn17811446": {
 "edge23780": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17811446", 
 "@target": "Tn17811668"
 }, 
@@ -4069,12 +4542,12 @@
 }, 
 "Tn17811454": {
 "edge23418": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17811454", 
 "@target": "Tn17811746"
 }, 
 "edge23420": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17811454", 
 "@target": "Tn17811310"
 }
@@ -4093,17 +4566,17 @@
 }, 
 "Tn17811461": {
 "edge23656": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17811461", 
 "@target": "Tn17811244"
 }, 
 "edge23658": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17811461", 
 "@target": "Tn17811405"
 }, 
 "edge23660": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17811461", 
 "@target": "Tn17811464"
 }
@@ -4170,7 +4643,7 @@
 }, 
 "Tn17811469": {
 "edge23550": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17811469", 
 "@target": "Tn17811483"
 }, 
@@ -4182,7 +4655,7 @@
 }, 
 "Tn17811470": {
 "edge23672": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17811470", 
 "@target": "Tn17811578"
 }, 
@@ -4230,7 +4703,7 @@
 }, 
 "Tn17811477": {
 "edge23560": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17811477", 
 "@target": "Tn17811499"
 }, 
@@ -4240,7 +4713,7 @@
 "@target": "Tn17811525"
 }, 
 "edge23572": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17811477", 
 "@target": "Tn17811291"
 }, 
@@ -4317,7 +4790,7 @@
 }, 
 "Tn17811489": {
 "edge23680": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17811489", 
 "@target": "Tn17811362"
 }, 
@@ -4327,12 +4800,12 @@
 "@target": "Tn17811436"
 }, 
 "edge23684": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17811489", 
 "@target": "Tn17811256"
 }, 
 "edge23686": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17811489", 
 "@target": "Tn17811662"
 }
@@ -4390,22 +4863,22 @@
 }, 
 "Tn17811501": {
 "edge23452": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17811501", 
 "@target": "Tn17811524"
 }, 
 "edge23454": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17811501", 
 "@target": "Tn17811693"
 }, 
 "edge23456": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17811501", 
 "@target": "Tn17811251"
 }, 
 "edge23458": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17811501", 
 "@target": "Tn17811317"
 }
@@ -4441,7 +4914,7 @@
 }, 
 "Tn17811508": {
 "edge23512": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17811508", 
 "@target": "Tn17811696"
 }, 
@@ -4554,7 +5027,7 @@
 "@target": "Tn17811342"
 }, 
 "edge23570": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17811525", 
 "@target": "Tn17811227"
 }
@@ -4573,19 +5046,19 @@
 }, 
 "Tn17811530": {
 "edge24218": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17811530", 
 "@target": "Tn17811737"
 }, 
 "edge24220": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17811530", 
 "@target": "Tn17811607"
 }
 }, 
 "Tn17811535": {
 "edge23754": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17811535", 
 "@target": "Tn17811229"
 }, 
@@ -4768,7 +5241,7 @@
 }, 
 "Tn17811568": {
 "edge23580": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17811568", 
 "@target": "Tn17811341"
 }, 
@@ -4881,7 +5354,7 @@
 "@target": "Tn17811262"
 }, 
 "edge24192": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17811588", 
 "@target": "Tn17811374"
 }
@@ -5011,7 +5484,7 @@
 "@target": "Tn17811537"
 }, 
 "edge23518": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17811612", 
 "@target": "Tn17811505"
 }
@@ -5040,7 +5513,7 @@
 "@target": "Tn17811323"
 }, 
 "edge23466": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17811617", 
 "@target": "Tn17811627"
 }, 
@@ -5124,12 +5597,12 @@
 }, 
 "Tn17811636": {
 "edge23766": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17811636", 
 "@target": "Tn17811305"
 }, 
 "edge23768": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17811636", 
 "@target": "Tn17811442"
 }
@@ -5172,24 +5645,24 @@
 }, 
 "Tn17811650": {
 "edge23800": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17811650", 
 "@target": "Tn17811706"
 }, 
 "edge23802": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17811650", 
 "@target": "Tn17811392"
 }
 }, 
 "Tn17811651": {
 "edge23408": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17811651", 
 "@target": "Tn17811400"
 }, 
 "edge23410": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17811651", 
 "@target": "Tn17811410"
 }
@@ -5288,7 +5761,7 @@
 "@target": "Tn17811609"
 }, 
 "edge23388": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17811671", 
 "@target": "Tn17811633"
 }
@@ -5300,7 +5773,7 @@
 "@target": "Tn17811424"
 }, 
 "edge24096": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17811672", 
 "@target": "Tn17811408"
 }
@@ -5528,34 +6001,34 @@
 }, 
 "Tn17811714": {
 "edge23852": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17811714", 
 "@target": "Tn17811648"
 }, 
 "edge23854": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17811714", 
 "@target": "Tn17811423"
 }, 
 "edge23856": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17811714", 
 "@target": "Tn17811654"
 }
 }, 
 "Tn17811716": {
 "edge23496": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17811716", 
 "@target": "Tn17811239"
 }, 
 "edge23498": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17811716", 
 "@target": "Tn17811523"
 }, 
 "edge23500": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17811716", 
 "@target": "Tn17811230"
 }
@@ -5706,19 +6179,19 @@
 }, 
 "Tn17811734": {
 "edge23330": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17811734", 
 "@target": "Tn17811558"
 }, 
 "edge23332": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17811734", 
 "@target": "Tn17811379"
 }
 }, 
 "Tn17811735": {
 "edge23486": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17811735", 
 "@target": "Tn17811522"
 }, 
@@ -5735,7 +6208,7 @@
 "@target": "Tn17811660"
 }, 
 "edge23830": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17811740", 
 "@target": "Tn17811733"
 }, 
