@@ -51,22 +51,116 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2018-09-19T14:11:18.095Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "Ascomycetes"
 }, 
-"^ot:curatorName": "Matt Girard", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}, 
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": "\\b\\s+(\\S*)$"
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2018-09-19T14:11:18.095Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Matt Girard"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S19058"
 }, 
+"^ot:focalClade": 4052334, 
+"^ot:focalCladeOTTTaxonName": "Cytospora", 
 "^ot:otusElementOrder": [
 "Tls59363"
 ], 
 "^ot:studyId": "ot_1745", 
+"^ot:studyPublication": {
+"@href": "https://doi.org/10.1111/ppa.12621"
+}, 
 "^ot:studyPublicationReference": "Lawrence D.P., Travadon R., Pouzoulet J., Wilcox W.F., Rolshausen P.E., & Baumgartner K. 2017. Characterization of Cytospora isolates from wood cankers of declining grapevine in North America, with the descriptions of two new Cytospora species. Plant Pathology, 66: 713-725.", 
 "^ot:studyYear": 2017, 
+"^ot:tag": [], 
 "^ot:taxonLinkPrefixes": {
 "@ubio": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:", 
 "@uniprot": "http://purl.uniprot.org/taxonomy/"
@@ -93,8 +187,9 @@
 "^skos:historyNote": "Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlOTUWriter@64236406 $Rev$", 
 "otuById": {
 "Tl2904538": {
-"^ot:altLabel": "Cytospora berkeleyi", 
 "^ot:originalLabel": "Cytospora berkeleyi StanfordT3", 
+"^ot:ottId": 542820, 
+"^ot:ottTaxonName": "Cytospora berkeleyi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 307934, 
 "@tb:identifier.taxonVariant": 355505, 
@@ -103,8 +198,9 @@
 }
 }, 
 "Tl2904539": {
-"^ot:altLabel": "Valsa myrtagena", 
 "^ot:originalLabel": "Valsa myrtagena HiloTib1", 
+"^ot:ottId": 1069174, 
+"^ot:ottTaxonName": "Valsa myrtagena", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 307947, 
 "@tb:identifier.taxonVariant": 355521, 
@@ -113,8 +209,9 @@
 }
 }, 
 "Tl2904540": {
-"^ot:altLabel": "Cytospora sp.", 
 "^ot:originalLabel": "Cytospora sp. Cyt17", 
+"^ot:ottId": 4052334, 
+"^ot:ottTaxonName": "Cytospora", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 622522, 
 "@tb:identifier.taxonVariant": 833476, 
@@ -122,8 +219,9 @@
 }
 }, 
 "Tl2904541": {
-"^ot:altLabel": "Cytospora ribis", 
 "^ot:originalLabel": "Cytospora ribis CFCC_50026", 
+"^ot:ottId": 802629, 
+"^ot:ottTaxonName": "Cytospora ribis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 312238, 
 "@tb:identifier.taxonVariant": 358563, 
@@ -132,8 +230,9 @@
 }
 }, 
 "Tl2904542": {
-"^ot:altLabel": "Valsa fabianae", 
 "^ot:originalLabel": "Valsa fabianae ATCC_96150", 
+"^ot:ottId": 559923, 
+"^ot:ottTaxonName": "Valsa fabianae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 216898, 
 "@tb:identifier.taxonVariant": 283744, 
@@ -142,8 +241,9 @@
 }
 }, 
 "Tl2904543": {
-"^ot:altLabel": "Cytospora sp.", 
 "^ot:originalLabel": "Cytospora sp. Cyt14", 
+"^ot:ottId": 4052334, 
+"^ot:ottTaxonName": "Cytospora", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 622522, 
 "@tb:identifier.taxonVariant": 833476, 
@@ -151,8 +251,9 @@
 }
 }, 
 "Tl2904544": {
-"^ot:altLabel": "Cytospora sp.", 
 "^ot:originalLabel": "Cytospora sp. Cyt6", 
+"^ot:ottId": 4052334, 
+"^ot:ottTaxonName": "Cytospora", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 622522, 
 "@tb:identifier.taxonVariant": 833476, 
@@ -160,8 +261,9 @@
 }
 }, 
 "Tl2904545": {
-"^ot:altLabel": "Cytospora atrocirrhata", 
 "^ot:originalLabel": "Cytospora atrocirrhata HMBF156", 
+"^ot:ottId": 365232, 
+"^ot:ottTaxonName": "Cytospora atrocirrhata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 386842, 
 "@tb:identifier.taxonVariant": 403023, 
@@ -170,8 +272,9 @@
 }
 }, 
 "Tl2904546": {
-"^ot:altLabel": "Cytospora sp.", 
 "^ot:originalLabel": "Cytospora sp. Cyt1", 
+"^ot:ottId": 4052334, 
+"^ot:ottTaxonName": "Cytospora", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 622522, 
 "@tb:identifier.taxonVariant": 833476, 
@@ -179,8 +282,9 @@
 }
 }, 
 "Tl2904547": {
-"^ot:altLabel": "Cytospora sacculus", 
 "^ot:originalLabel": "Cytospora sacculus HMBF281", 
+"^ot:ottId": 382305, 
+"^ot:ottTaxonName": "Cytospora sacculus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 227794, 
 "@tb:identifier.taxonVariant": 291384, 
@@ -189,8 +293,9 @@
 }
 }, 
 "Tl2904548": {
-"^ot:altLabel": "Cytospora sp.", 
 "^ot:originalLabel": "Cytospora sp. Cyt11", 
+"^ot:ottId": 4052334, 
+"^ot:ottTaxonName": "Cytospora", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 622522, 
 "@tb:identifier.taxonVariant": 833476, 
@@ -198,11 +303,14 @@
 }
 }, 
 "Tl2904549": {
-"^ot:originalLabel": "Diaporthe ampelina"
+"^ot:originalLabel": "Diaporthe ampelina", 
+"^ot:ottId": 5708854, 
+"^ot:ottTaxonName": "Diaporthe ampelina"
 }, 
 "Tl2904550": {
-"^ot:altLabel": "Valsa ambiens", 
 "^ot:originalLabel": "Valsa ambiens CBS_191_42", 
+"^ot:ottId": 822584, 
+"^ot:ottTaxonName": "Valsa ambiens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 30434, 
 "@tb:identifier.taxonVariant": 71007, 
@@ -211,8 +319,9 @@
 }
 }, 
 "Tl2904551": {
-"^ot:altLabel": "Cytospora sp.", 
 "^ot:originalLabel": "Cytospora sp. Cyt22", 
+"^ot:ottId": 4052334, 
+"^ot:ottTaxonName": "Cytospora", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 622522, 
 "@tb:identifier.taxonVariant": 833476, 
@@ -220,8 +329,9 @@
 }
 }, 
 "Tl2904552": {
-"^ot:altLabel": "Cytospora sp.", 
 "^ot:originalLabel": "Cytospora sp. Cyt8", 
+"^ot:ottId": 4052334, 
+"^ot:ottTaxonName": "Cytospora", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 622522, 
 "@tb:identifier.taxonVariant": 833476, 
@@ -229,8 +339,9 @@
 }
 }, 
 "Tl2904553": {
-"^ot:altLabel": "Valsa ceratosperma", 
 "^ot:originalLabel": "Valsa ceratosperma CBS_192_42", 
+"^ot:ottId": 63074, 
+"^ot:ottTaxonName": "Valsa ceratosperma", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 30437, 
 "@tb:identifier.taxonVariant": 71011, 
@@ -239,8 +350,9 @@
 }
 }, 
 "Tl2904554": {
-"^ot:altLabel": "Valsa malicola", 
 "^ot:originalLabel": "Valsa malicola CBS_118570", 
+"^ot:ottId": 279073, 
+"^ot:ottTaxonName": "Valsa malicola", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 312228, 
 "@tb:identifier.taxonVariant": 358556, 
@@ -249,14 +361,17 @@
 }
 }, 
 "Tl2904555": {
-"^ot:originalLabel": "Cytospora sophoricola CFCC_89595"
+"^ot:originalLabel": "Cytospora sophoricola CFCC_89595", 
+"^ot:ottId": 5219979, 
+"^ot:ottTaxonName": "Cytospora sophoricola"
 }, 
 "Tl2904556": {
 "^ot:originalLabel": "Valsa populina CFCC_89644"
 }, 
 "Tl2904557": {
-"^ot:altLabel": "Cytospora sp.", 
 "^ot:originalLabel": "Cytospora sp. Cyt19", 
+"^ot:ottId": 4052334, 
+"^ot:ottTaxonName": "Cytospora", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 622522, 
 "@tb:identifier.taxonVariant": 833476, 
@@ -264,11 +379,14 @@
 }
 }, 
 "Tl2904558": {
-"^ot:originalLabel": "Cytospora gigalocus HMBF155"
+"^ot:originalLabel": "Cytospora gigalocus HMBF155", 
+"^ot:ottId": 5495315, 
+"^ot:ottTaxonName": "Cytospora gigalocus"
 }, 
 "Tl2904559": {
-"^ot:altLabel": "Cytospora sp.", 
 "^ot:originalLabel": "Cytospora sp. Cyt9", 
+"^ot:ottId": 4052334, 
+"^ot:ottTaxonName": "Cytospora", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 622522, 
 "@tb:identifier.taxonVariant": 833476, 
@@ -276,8 +394,9 @@
 }
 }, 
 "Tl2904560": {
-"^ot:altLabel": "Valsa pini", 
 "^ot:originalLabel": "Valsa pini CBS_197_42", 
+"^ot:ottId": 465759, 
+"^ot:ottTaxonName": "Valsa pini", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 218997, 
 "@tb:identifier.taxonVariant": 285606, 
@@ -286,11 +405,14 @@
 }
 }, 
 "Tl2904561": {
-"^ot:originalLabel": "Cytospora davidiana CXY1350"
+"^ot:originalLabel": "Cytospora davidiana CXY1350", 
+"^ot:ottId": 5708757, 
+"^ot:ottTaxonName": "Cytospora davidiana"
 }, 
 "Tl2904562": {
-"^ot:altLabel": "Cytospora sp.", 
 "^ot:originalLabel": "Cytospora sp. Cyt21", 
+"^ot:ottId": 4052334, 
+"^ot:ottTaxonName": "Cytospora", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 622522, 
 "@tb:identifier.taxonVariant": 833476, 
@@ -301,7 +423,9 @@
 "^ot:originalLabel": "Cytospora notastroma Cottonwood16"
 }, 
 "Tl2904564": {
-"^ot:originalLabel": "Cytospora sibiraeae CFCC_50045"
+"^ot:originalLabel": "Cytospora sibiraeae CFCC_50045", 
+"^ot:ottId": 5708756, 
+"^ot:ottTaxonName": "Cytospora sibiraeae"
 }, 
 "Tl2904565": {
 "^ot:altLabel": "Valsa friesii", 
@@ -314,8 +438,9 @@
 }
 }, 
 "Tl2904566": {
-"^ot:altLabel": "Cytospora diatrypelloidea", 
 "^ot:originalLabel": "Cytospora diatrypelloidea CMW8549", 
+"^ot:ottId": 321758, 
+"^ot:ottTaxonName": "Cytospora diatrypelloidea", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 307954, 
 "@tb:identifier.taxonVariant": 355524, 
@@ -334,8 +459,9 @@
 }
 }, 
 "Tl2904568": {
-"^ot:altLabel": "Cytospora sp.", 
 "^ot:originalLabel": "Cytospora sp. Cyt2", 
+"^ot:ottId": 4052334, 
+"^ot:ottTaxonName": "Cytospora", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 622522, 
 "@tb:identifier.taxonVariant": 833476, 
@@ -343,8 +469,9 @@
 }
 }, 
 "Tl2904569": {
-"^ot:altLabel": "Valsa brevispora", 
 "^ot:originalLabel": "Valsa brevispora CBS_116811", 
+"^ot:ottId": 237085, 
+"^ot:ottTaxonName": "Valsa brevispora", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 31884, 
 "@tb:identifier.taxonVariant": 113632, 
@@ -353,8 +480,9 @@
 }
 }, 
 "Tl2904570": {
-"^ot:altLabel": "Valsa eucalypti", 
 "^ot:originalLabel": "Valsa eucalypti CBS_116815", 
+"^ot:ottId": 562222, 
+"^ot:ottTaxonName": "Valsa eucalypti", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 312385, 
 "@tb:identifier.taxonVariant": 358662, 
@@ -363,8 +491,9 @@
 }
 }, 
 "Tl2904571": {
-"^ot:altLabel": "Cytospora sp.", 
 "^ot:originalLabel": "Cytospora sp. Cyt20", 
+"^ot:ottId": 4052334, 
+"^ot:ottTaxonName": "Cytospora", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 622522, 
 "@tb:identifier.taxonVariant": 833476, 
@@ -372,14 +501,19 @@
 }
 }, 
 "Tl2904572": {
-"^ot:originalLabel": "Cytospora pruinopsis CFCC_50034"
+"^ot:originalLabel": "Cytospora pruinopsis CFCC_50034", 
+"^ot:ottId": 5980932, 
+"^ot:ottTaxonName": "Cytospora pruinopsis"
 }, 
 "Tl2904573": {
-"^ot:originalLabel": "Cytospora rostrata Ls251"
+"^ot:originalLabel": "Cytospora rostrata Ls251", 
+"^ot:ottId": 5708752, 
+"^ot:ottTaxonName": "Cytospora rostrata"
 }, 
 "Tl2904574": {
-"^ot:altLabel": "Cytospora sp.", 
 "^ot:originalLabel": "Cytospora sp. Cyt16", 
+"^ot:ottId": 4052334, 
+"^ot:ottTaxonName": "Cytospora", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 622522, 
 "@tb:identifier.taxonVariant": 833476, 
@@ -387,8 +521,9 @@
 }
 }, 
 "Tl2904575": {
-"^ot:altLabel": "Cytospora sp.", 
 "^ot:originalLabel": "Cytospora sp. Cyt7", 
+"^ot:ottId": 4052334, 
+"^ot:ottTaxonName": "Cytospora", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 622522, 
 "@tb:identifier.taxonVariant": 833476, 
@@ -396,7 +531,9 @@
 }
 }, 
 "Tl2904576": {
-"^ot:originalLabel": "Cytospora berberidis CFCC_89927"
+"^ot:originalLabel": "Cytospora berberidis CFCC_89927", 
+"^ot:ottId": 5708755, 
+"^ot:ottTaxonName": "Cytospora berberidis"
 }, 
 "Tl2904577": {
 "^ot:altLabel": "Cytospora palm", 
@@ -408,8 +545,9 @@
 }
 }, 
 "Tl2904578": {
-"^ot:altLabel": "Valseutypella multicollis", 
 "^ot:originalLabel": "Valseutypella multicollis CBS_105_89", 
+"^ot:ottId": 279076, 
+"^ot:ottTaxonName": "Valseutypella multicollis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 312231, 
 "@tb:identifier.taxonVariant": 358557, 
@@ -418,8 +556,9 @@
 }
 }, 
 "Tl2904579": {
-"^ot:altLabel": "Cytospora variostromatica", 
 "^ot:originalLabel": "Cytospora variostromatica CMW6766", 
+"^ot:ottId": 150442, 
+"^ot:ottTaxonName": "Cytospora variostromatica", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 216899, 
 "@tb:identifier.taxonVariant": 283746, 
@@ -428,8 +567,9 @@
 }
 }, 
 "Tl2904580": {
-"^ot:altLabel": "Valsa salicina", 
 "^ot:originalLabel": "Valsa salicina CBS_203_42", 
+"^ot:ottId": 382308, 
+"^ot:ottTaxonName": "Valsa salicina", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 40066, 
 "@tb:identifier.taxonVariant": 93054, 
@@ -438,8 +578,9 @@
 }
 }, 
 "Tl2904581": {
-"^ot:altLabel": "Valsa eugeniae", 
 "^ot:originalLabel": "Valsa eugeniae CMW8648", 
+"^ot:ottId": 948233, 
+"^ot:ottTaxonName": "Valsa eugeniae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 218995, 
 "@tb:identifier.taxonVariant": 285603, 
@@ -448,8 +589,9 @@
 }
 }, 
 "Tl2904582": {
-"^ot:altLabel": "Cytospora abyssinica", 
 "^ot:originalLabel": "Cytospora abyssinica CMW10181", 
+"^ot:ottId": 477651, 
+"^ot:ottTaxonName": "Cytospora abyssinica", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 219050, 
 "@tb:identifier.taxonVariant": 285680, 
@@ -458,8 +600,9 @@
 }
 }, 
 "Tl2904583": {
-"^ot:altLabel": "Valsa subclypeata", 
 "^ot:originalLabel": "Valsa subclypeata CBS_117_67", 
+"^ot:ottId": 382303, 
+"^ot:ottTaxonName": "Valsa subclypeata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 227793, 
 "@tb:identifier.taxonVariant": 291383, 
@@ -468,8 +611,9 @@
 }
 }, 
 "Tl2904584": {
-"^ot:altLabel": "Cytospora sp.", 
 "^ot:originalLabel": "Cytospora sp. Cyt18", 
+"^ot:ottId": 4052334, 
+"^ot:ottTaxonName": "Cytospora", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 622522, 
 "@tb:identifier.taxonVariant": 833476, 
@@ -477,8 +621,9 @@
 }
 }, 
 "Tl2904585": {
-"^ot:altLabel": "Cytospora eriobotryae", 
 "^ot:originalLabel": "Cytospora eriobotryae IMI136523", 
+"^ot:ottId": 382310, 
+"^ot:ottTaxonName": "Cytospora eriobotryae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 227791, 
 "@tb:identifier.taxonVariant": 291381, 
@@ -488,6 +633,8 @@
 }, 
 "Tl2904586": {
 "^ot:originalLabel": "Cytospora valsoidea", 
+"^ot:ottId": 5957, 
+"^ot:ottTaxonName": "Cytospora valsoidea", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 217161, 
 "@tb:identifier.taxonVariant": 283986, 
@@ -496,8 +643,9 @@
 }
 }, 
 "Tl2904587": {
-"^ot:altLabel": "Cytospora nitschkii", 
 "^ot:originalLabel": "Cytospora nitschkii CMW10180", 
+"^ot:ottId": 542823, 
+"^ot:ottTaxonName": "Cytospora nitschkii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 307941, 
 "@tb:identifier.taxonVariant": 355512, 
@@ -506,8 +654,9 @@
 }
 }, 
 "Tl2904588": {
-"^ot:altLabel": "Cytospora disciformis", 
 "^ot:originalLabel": "Cytospora disciformis CMW6509", 
+"^ot:ottId": 923680, 
+"^ot:ottTaxonName": "Cytospora disciformis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 307943, 
 "@tb:identifier.taxonVariant": 355515, 
@@ -516,11 +665,14 @@
 }
 }, 
 "Tl2904589": {
-"^ot:originalLabel": "Cytospora hippophaes CFCC_89639"
+"^ot:originalLabel": "Cytospora hippophaes CFCC_89639", 
+"^ot:ottId": 3698037, 
+"^ot:ottTaxonName": "Cytospora hippophaes"
 }, 
 "Tl2904590": {
-"^ot:altLabel": "Cytospora kantschavelii", 
 "^ot:originalLabel": "Cytospora kantschavelii CXY1386", 
+"^ot:ottId": 365236, 
+"^ot:ottTaxonName": "Cytospora kantschavelii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 386846, 
 "@tb:identifier.taxonVariant": 403027, 
@@ -529,8 +681,9 @@
 }
 }, 
 "Tl2904591": {
-"^ot:altLabel": "Cytospora sp.", 
 "^ot:originalLabel": "Cytospora sp. Cyt4", 
+"^ot:ottId": 4052334, 
+"^ot:ottTaxonName": "Cytospora", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 622522, 
 "@tb:identifier.taxonVariant": 833476, 
@@ -538,8 +691,9 @@
 }
 }, 
 "Tl2904592": {
-"^ot:altLabel": "Valsa sordida", 
 "^ot:originalLabel": "Valsa sordida CBS_197_50", 
+"^ot:ottId": 382306, 
+"^ot:ottTaxonName": "Valsa sordida", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 227790, 
 "@tb:identifier.taxonVariant": 291380, 
@@ -548,8 +702,9 @@
 }
 }, 
 "Tl2904593": {
-"^ot:altLabel": "Cytospora sp.", 
 "^ot:originalLabel": "Cytospora sp. Cyt5", 
+"^ot:ottId": 4052334, 
+"^ot:ottTaxonName": "Cytospora", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 622522, 
 "@tb:identifier.taxonVariant": 833476, 
@@ -557,8 +712,9 @@
 }
 }, 
 "Tl2904594": {
-"^ot:altLabel": "Cytospora carbonacea", 
 "^ot:originalLabel": "Cytospora carbonacea CFCC_50055", 
+"^ot:ottId": 279078, 
+"^ot:ottTaxonName": "Cytospora carbonacea", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 312233, 
 "@tb:identifier.taxonVariant": 358559, 
@@ -567,8 +723,9 @@
 }
 }, 
 "Tl2904595": {
-"^ot:altLabel": "Valsa nivea", 
 "^ot:originalLabel": "Valsa nivea CFCC_89642", 
+"^ot:ottId": 305248, 
+"^ot:ottTaxonName": "Valsa nivea", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 603140, 
 "@tb:identifier.taxonVariant": 804644, 
@@ -576,8 +733,9 @@
 }
 }, 
 "Tl2904596": {
-"^ot:altLabel": "Cytospora eucalyptina", 
 "^ot:originalLabel": "Cytospora eucalyptina CMW5882", 
+"^ot:ottId": 405550, 
+"^ot:ottTaxonName": "Cytospora eucalyptina", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 218996, 
 "@tb:identifier.taxonVariant": 285604, 
@@ -596,8 +754,9 @@
 }
 }, 
 "Tl2904598": {
-"^ot:altLabel": "Cytospora sp.", 
 "^ot:originalLabel": "Cytospora sp. Cyt3", 
+"^ot:ottId": 4052334, 
+"^ot:ottTaxonName": "Cytospora", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 622522, 
 "@tb:identifier.taxonVariant": 833476, 
@@ -605,11 +764,14 @@
 }
 }, 
 "Tl2904599": {
-"^ot:originalLabel": "Cytospora elaeagni CFCC_89632"
+"^ot:originalLabel": "Cytospora elaeagni CFCC_89632", 
+"^ot:ottId": 3698090, 
+"^ot:ottTaxonName": "Cytospora elaeagni"
 }, 
 "Tl2904600": {
-"^ot:altLabel": "Cytospora sacculus", 
 "^ot:originalLabel": "Cytospora sacculus CFCC_89624", 
+"^ot:ottId": 382305, 
+"^ot:ottTaxonName": "Cytospora sacculus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 227794, 
 "@tb:identifier.taxonVariant": 291384, 
@@ -618,8 +780,9 @@
 }
 }, 
 "Tl2904601": {
-"^ot:altLabel": "Valsa cinereostroma", 
 "^ot:originalLabel": "Valsa cinereostroma CMW5700", 
+"^ot:ottId": 321745, 
+"^ot:ottTaxonName": "Valsa cinereostroma", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 307957, 
 "@tb:identifier.taxonVariant": 355527, 
@@ -628,8 +791,9 @@
 }
 }, 
 "Tl2904602": {
-"^ot:altLabel": "Leucostoma translucens", 
 "^ot:originalLabel": "Leucostoma translucens CBS_152_42", 
+"^ot:ottId": 5316812, 
+"^ot:ottTaxonName": "Leucostoma translucens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 111274, 
 "@tb:identifier.taxonVariant": 426425, 
@@ -638,8 +802,9 @@
 }
 }, 
 "Tl2904603": {
-"^ot:altLabel": "Valsa cypri", 
 "^ot:originalLabel": "Valsa cypri CBS_118555", 
+"^ot:ottId": 279070, 
+"^ot:ottTaxonName": "Valsa cypri", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 312226, 
 "@tb:identifier.taxonVariant": 358554, 
@@ -648,8 +813,9 @@
 }
 }, 
 "Tl2904604": {
-"^ot:altLabel": "Cytospora sp.", 
 "^ot:originalLabel": "Cytospora sp. Cyt12", 
+"^ot:ottId": 4052334, 
+"^ot:ottTaxonName": "Cytospora", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 622522, 
 "@tb:identifier.taxonVariant": 833476, 
@@ -657,8 +823,9 @@
 }
 }, 
 "Tl2904605": {
-"^ot:altLabel": "Cytospora sp.", 
 "^ot:originalLabel": "Cytospora sp. Cyt13", 
+"^ot:ottId": 4052334, 
+"^ot:ottTaxonName": "Cytospora", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 622522, 
 "@tb:identifier.taxonVariant": 833476, 
@@ -666,8 +833,9 @@
 }
 }, 
 "Tl2904606": {
-"^ot:altLabel": "Cytospora sp.", 
 "^ot:originalLabel": "Cytospora sp. Cyt15", 
+"^ot:ottId": 4052334, 
+"^ot:ottTaxonName": "Cytospora", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 622522, 
 "@tb:identifier.taxonVariant": 833476, 
@@ -675,8 +843,9 @@
 }
 }, 
 "Tl2904607": {
-"^ot:altLabel": "Valsa ceratosperma", 
 "^ot:originalLabel": "Valsa ceratosperma CBS_116_21", 
+"^ot:ottId": 63074, 
+"^ot:ottTaxonName": "Valsa ceratosperma", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 30437, 
 "@tb:identifier.taxonVariant": 71011, 
@@ -685,8 +854,9 @@
 }
 }, 
 "Tl2904608": {
-"^ot:altLabel": "Leucostoma persoonii", 
 "^ot:originalLabel": "Leucostoma persoonii T28_1", 
+"^ot:ottId": 829405, 
+"^ot:ottTaxonName": "Leucostoma persoonii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 15866, 
 "@tb:identifier.taxonVariant": 37198, 
@@ -695,8 +865,9 @@
 }
 }, 
 "Tl2904609": {
-"^ot:altLabel": "Cytospora austromontana", 
 "^ot:originalLabel": "Cytospora austromontana CMW6735", 
+"^ot:ottId": 1069175, 
+"^ot:ottTaxonName": "Cytospora austromontana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 307946, 
 "@tb:identifier.taxonVariant": 355520, 
@@ -706,6 +877,8 @@
 }, 
 "Tl2904610": {
 "^ot:originalLabel": "Cytospora cedri", 
+"^ot:ottId": 636475, 
+"^ot:ottTaxonName": "Cytospora cedri", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 120257, 
 "@tb:identifier.taxonVariant": 198247, 
@@ -728,7 +901,18 @@
 "Tr107019": {
 "@label": "PAUP_1", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:curatedType": "Maximum likelihood ", 
+"^ot:inGroupClade": "Tn16787835", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn16787879", 
+"^ot:specifiedRoot": "Tn16787879", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "^tb:ntax.tree": 73, 
 "edgeBySourceId": {
 "Tn16787780": {
@@ -757,7 +941,7 @@
 }, 
 "Tn16787782": {
 "edge288384": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16787782", 
 "@target": "Tn16787875"
 }, 
@@ -793,12 +977,12 @@
 }, 
 "Tn16787790": {
 "edge288628": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16787790", 
 "@target": "Tn16787846"
 }, 
 "edge288634": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16787790", 
 "@target": "Tn16787808"
 }
@@ -870,31 +1054,31 @@
 "@target": "Tn16787864"
 }, 
 "edge288586": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16787799", 
 "@target": "Tn16787885"
 }
 }, 
 "Tn16787801": {
 "edge288392": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16787801", 
 "@target": "Tn16787900"
 }, 
 "edge288394": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16787801", 
 "@target": "Tn16787823"
 }
 }, 
 "Tn16787803": {
 "edge288602": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16787803", 
 "@target": "Tn16787870"
 }, 
 "edge288604": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16787803", 
 "@target": "Tn16787802"
 }
@@ -913,48 +1097,48 @@
 }, 
 "Tn16787808": {
 "edge288636": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16787808", 
 "@target": "Tn16787839"
 }, 
 "edge288642": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16787808", 
 "@target": "Tn16787815"
 }
 }, 
 "Tn16787809": {
 "edge288608": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16787809", 
 "@target": "Tn16787874"
 }, 
 "edge288610": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16787809", 
 "@target": "Tn16787887"
 }
 }, 
 "Tn16787814": {
 "edge288480": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16787814", 
 "@target": "Tn16787842"
 }, 
 "edge288482": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16787814", 
 "@target": "Tn16787892"
 }
 }, 
 "Tn16787815": {
 "edge288644": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16787815", 
 "@target": "Tn16787794"
 }, 
 "edge288646": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16787815", 
 "@target": "Tn16787785"
 }
@@ -1069,12 +1253,12 @@
 }, 
 "Tn16787839": {
 "edge288638": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16787839", 
 "@target": "Tn16787897"
 }, 
 "edge288640": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16787839", 
 "@target": "Tn16787858"
 }
@@ -1093,12 +1277,12 @@
 }, 
 "Tn16787841": {
 "edge288590": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16787841", 
 "@target": "Tn16787878"
 }, 
 "edge288592": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16787841", 
 "@target": "Tn16787883"
 }
@@ -1117,12 +1301,12 @@
 }, 
 "Tn16787846": {
 "edge288630": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16787846", 
 "@target": "Tn16787811"
 }, 
 "edge288632": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16787846", 
 "@target": "Tn16787863"
 }
@@ -1146,7 +1330,7 @@
 "@target": "Tn16787780"
 }, 
 "edge288500": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16787849", 
 "@target": "Tn16787792"
 }
@@ -1189,12 +1373,12 @@
 }, 
 "Tn16787859": {
 "edge288574": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16787859", 
 "@target": "Tn16787854"
 }, 
 "edge288576": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16787859", 
 "@target": "Tn16787787"
 }
@@ -1206,7 +1390,7 @@
 "@target": "Tn16787826"
 }, 
 "edge288440": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16787860", 
 "@target": "Tn16787855"
 }
@@ -1225,12 +1409,12 @@
 }, 
 "Tn16787864": {
 "edge288582": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16787864", 
 "@target": "Tn16787857"
 }, 
 "edge288584": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16787864", 
 "@target": "Tn16787843"
 }
@@ -1285,12 +1469,12 @@
 }, 
 "Tn16787877": {
 "edge288598": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16787877", 
 "@target": "Tn16787895"
 }, 
 "edge288600": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16787877", 
 "@target": "Tn16787803"
 }
@@ -1309,12 +1493,12 @@
 }, 
 "Tn16787883": {
 "edge288594": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16787883", 
 "@target": "Tn16787880"
 }, 
 "edge288596": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16787883", 
 "@target": "Tn16787877"
 }
@@ -1326,7 +1510,7 @@
 "@target": "Tn16787841"
 }, 
 "edge288606": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16787885", 
 "@target": "Tn16787809"
 }
@@ -1338,19 +1522,19 @@
 "@target": "Tn16787894"
 }, 
 "edge288512": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16787886", 
 "@target": "Tn16787911"
 }
 }, 
 "Tn16787887": {
 "edge288612": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16787887", 
 "@target": "Tn16787890"
 }, 
 "edge288618": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16787887", 
 "@target": "Tn16787912"
 }
@@ -1369,12 +1553,12 @@
 }, 
 "Tn16787890": {
 "edge288614": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16787890", 
 "@target": "Tn16787834"
 }, 
 "edge288616": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16787890", 
 "@target": "Tn16787821"
 }
@@ -1405,7 +1589,7 @@
 }, 
 "Tn16787899": {
 "edge288572": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16787899", 
 "@target": "Tn16787859"
 }, 
@@ -1429,12 +1613,12 @@
 }, 
 "Tn16787904": {
 "edge288388": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16787904", 
 "@target": "Tn16787783"
 }, 
 "edge288390": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16787904", 
 "@target": "Tn16787801"
 }
@@ -1453,7 +1637,7 @@
 }, 
 "Tn16787908": {
 "edge288472": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16787908", 
 "@target": "Tn16787788"
 }, 
@@ -1501,12 +1685,12 @@
 }, 
 "Tn16787912": {
 "edge288620": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16787912", 
 "@target": "Tn16787919"
 }, 
 "edge288626": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16787912", 
 "@target": "Tn16787790"
 }
@@ -1549,19 +1733,19 @@
 }, 
 "Tn16787919": {
 "edge288622": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16787919", 
 "@target": "Tn16787807"
 }, 
 "edge288624": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16787919", 
 "@target": "Tn16787825"
 }
 }, 
 "Tn16787920": {
 "edge288504": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16787920", 
 "@target": "Tn16787882"
 }, 
@@ -1573,7 +1757,7 @@
 }, 
 "Tn16787922": {
 "edge288540": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16787922", 
 "@target": "Tn16787829"
 }, 
@@ -1590,7 +1774,7 @@
 "@target": "Tn16787810"
 }, 
 "edge288568": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn16787923", 
 "@target": "Tn16787873"
 }
