@@ -58,16 +58,116 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2018-09-19T13:58:50.123Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "Ascomycetes"
 }, 
-"^ot:curatorName": "Matt Girard", 
+"substitutions": {
+"substitution": [
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": " 0"
+}
+}, 
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": " 1"
+}
+}, 
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": " 2"
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2018-09-19T13:58:50.123Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Matt Girard"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S22802"
 }, 
+"^ot:focalClade": 6377603, 
+"^ot:focalCladeOTTTaxonName": "Dictyosporiaceae", 
 "^ot:otusElementOrder": [
 "Tls64853"
 ], 
@@ -77,6 +177,7 @@
 }, 
 "^ot:studyPublicationReference": "Yang J., Liu J., Hyde K., Jones E.G., & Liu Z. 2018. New species in Dictyosporium, new combinations in Dictyocheirospora and an updated backbone tree for Dictyosporiaceae. MycoKeys, 36: 83-105.", 
 "^ot:studyYear": 2018, 
+"^ot:tag": [], 
 "^ot:taxonLinkPrefixes": {
 "@ubio": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:", 
 "@uniprot": "http://purl.uniprot.org/taxonomy/"
@@ -104,7 +205,9 @@
 "^skos:historyNote": "Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlOTUWriter@6da253e7 $Rev$", 
 "otuById": {
 "Tl3297161": {
-"^ot:originalLabel": "Dictyosporium sp."
+"^ot:originalLabel": "Dictyosporium sp.", 
+"^ot:ottId": 1063362, 
+"^ot:ottTaxonName": "Dictyosporium"
 }, 
 "Tl3297162": {
 "^ot:originalLabel": "Dictyocheirospora heptaspora"
@@ -116,10 +219,14 @@
 "^ot:originalLabel": "Jalapriya pulchra 1"
 }, 
 "Tl3297165": {
-"^ot:originalLabel": "Dictyocheirospora bannica 0"
+"^ot:originalLabel": "Dictyocheirospora bannica 0", 
+"^ot:ottId": 5977987, 
+"^ot:ottTaxonName": "Dictyocheirospora bannica"
 }, 
 "Tl3297166": {
 "^ot:originalLabel": "Digitodesmium bambusicola", 
+"^ot:ottId": 536832, 
+"^ot:ottTaxonName": "Digitodesmium bambusicola", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 288360, 
 "@tb:identifier.taxonVariant": 340294, 
@@ -128,13 +235,19 @@
 }
 }, 
 "Tl3297167": {
-"^ot:originalLabel": "Dictyosporium thailandicum"
+"^ot:originalLabel": "Dictyosporium thailandicum", 
+"^ot:ottId": 5696913, 
+"^ot:ottTaxonName": "Dictyosporium thailandicum"
 }, 
 "Tl3297168": {
-"^ot:originalLabel": "Dictyocheirospora pseudomusae"
+"^ot:originalLabel": "Dictyocheirospora pseudomusae", 
+"^ot:ottId": 5977990, 
+"^ot:ottTaxonName": "Dictyocheirospora pseudomusae"
 }, 
 "Tl3297169": {
 "^ot:originalLabel": "Cheirosporium triseriale", 
+"^ot:ottId": 632898, 
+"^ot:ottTaxonName": "Cheirosporium triseriale", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 460640, 
 "@tb:identifier.taxonVariant": 611287
@@ -163,20 +276,29 @@
 "^ot:originalLabel": "Dictyocheirospora garethjonesii 1"
 }, 
 "Tl3297175": {
-"^ot:originalLabel": "Pseudocoleophoma calamagrostidis"
+"^ot:originalLabel": "Pseudocoleophoma calamagrostidis", 
+"^ot:ottId": 5978879, 
+"^ot:ottTaxonName": "Pseudocoleophoma calamagrostidis"
 }, 
 "Tl3297176": {
-"^ot:originalLabel": "Dictyosporium hughesii"
+"^ot:originalLabel": "Dictyosporium hughesii", 
+"^ot:ottId": 5311083, 
+"^ot:ottTaxonName": "Dictyosporium hughesii"
 }, 
 "Tl3297177": {
-"^ot:originalLabel": "Dictyosporium olivaceosporum"
+"^ot:originalLabel": "Dictyosporium olivaceosporum", 
+"^ot:ottId": 5977988, 
+"^ot:ottTaxonName": "Dictyosporium olivaceosporum"
 }, 
 "Tl3297178": {
-"^ot:originalLabel": "Dictyocheirospora rotunda 1"
+"^ot:originalLabel": "Dictyocheirospora rotunda 1", 
+"^ot:ottId": 6377605, 
+"^ot:ottTaxonName": "Dictyocheirospora rotunda"
 }, 
 "Tl3297179": {
-"^ot:altLabel": "Dictyosporium digitatum", 
 "^ot:originalLabel": "Dictyosporium digitatum 1", 
+"^ot:ottId": 536826, 
+"^ot:ottTaxonName": "Dictyosporium digitatum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 288358, 
 "@tb:identifier.taxonVariant": 340292, 
@@ -188,14 +310,17 @@
 "^ot:originalLabel": "Dictyosporium sexualis"
 }, 
 "Tl3297181": {
-"^ot:originalLabel": "Dictyocheirospora bannica 1"
+"^ot:originalLabel": "Dictyocheirospora bannica 1", 
+"^ot:ottId": 5977987, 
+"^ot:ottTaxonName": "Dictyocheirospora bannica"
 }, 
 "Tl3297182": {
 "^ot:originalLabel": "Vikalpa australiense"
 }, 
 "Tl3297183": {
-"^ot:altLabel": "Pseudodictyosporium wauense", 
 "^ot:originalLabel": "Pseudodictyosporium wauense 0", 
+"^ot:ottId": 220076, 
+"^ot:ottTaxonName": "Pseudodictyosporium wauense", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 288354, 
 "@tb:identifier.taxonVariant": 340288, 
@@ -204,7 +329,9 @@
 }
 }, 
 "Tl3297184": {
-"^ot:originalLabel": "Pseudodictyosporium elegans"
+"^ot:originalLabel": "Pseudodictyosporium elegans", 
+"^ot:ottId": 536827, 
+"^ot:ottTaxonName": "Pseudodictyosporium elegans"
 }, 
 "Tl3297185": {
 "^ot:altLabel": "Periconia igniaria", 
@@ -220,24 +347,33 @@
 "^ot:originalLabel": "Jalapriya toruloides"
 }, 
 "Tl3297187": {
-"^ot:originalLabel": "Dictyocheirospora vinaya"
+"^ot:originalLabel": "Dictyocheirospora vinaya", 
+"^ot:ottId": 6377606, 
+"^ot:ottTaxonName": "Dictyocheirospora vinaya"
 }, 
 "Tl3297188": {
 "^ot:originalLabel": "Dictyosporium strelitziae", 
+"^ot:ottId": 960161, 
+"^ot:ottTaxonName": "Dictyosporium strelitziae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 536918, 
 "@tb:identifier.taxonVariant": 712258
 }
 }, 
 "Tl3297189": {
-"^ot:originalLabel": "Dictyosporium aquaticum"
+"^ot:originalLabel": "Dictyosporium aquaticum", 
+"^ot:ottId": 5696912, 
+"^ot:ottTaxonName": "Dictyosporium aquaticum"
 }, 
 "Tl3297190": {
-"^ot:originalLabel": "Pseudocoleophoma typhicola"
+"^ot:originalLabel": "Pseudocoleophoma typhicola", 
+"^ot:ottId": 6377609, 
+"^ot:ottTaxonName": "Pseudocoleophoma typhicola"
 }, 
 "Tl3297191": {
-"^ot:altLabel": "Dictyosporium digitatum", 
 "^ot:originalLabel": "Dictyosporium digitatum 0", 
+"^ot:ottId": 536826, 
+"^ot:ottTaxonName": "Dictyosporium digitatum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 288358, 
 "@tb:identifier.taxonVariant": 340292, 
@@ -249,26 +385,33 @@
 "^ot:originalLabel": "Dictyosporium wuyiense"
 }, 
 "Tl3297193": {
-"^ot:originalLabel": "Dictyosporium stellatum"
+"^ot:originalLabel": "Dictyosporium stellatum", 
+"^ot:ottId": 33712, 
+"^ot:ottTaxonName": "Dictyosporium stellatum"
 }, 
 "Tl3297194": {
 "^ot:originalLabel": "Dictyocheirospora garethjonesii 0"
 }, 
 "Tl3297195": {
-"^ot:originalLabel": "Aquaticheirospora lignicola"
+"^ot:originalLabel": "Aquaticheirospora lignicola", 
+"^ot:ottId": 4079364, 
+"^ot:ottTaxonName": "Aquaticheirospora lignicola"
 }, 
 "Tl3297196": {
 "^ot:originalLabel": "Dictyosporium tubulatum 1"
 }, 
 "Tl3297197": {
-"^ot:originalLabel": "Dictyosporium zhejiangense"
+"^ot:originalLabel": "Dictyosporium zhejiangense", 
+"^ot:ottId": 5311077, 
+"^ot:ottTaxonName": "Dictyosporium zhejiangense"
 }, 
 "Tl3297198": {
 "^ot:originalLabel": "Dictyocheirospora subramanianii"
 }, 
 "Tl3297199": {
-"^ot:altLabel": "Pseudodictyosporium wauense", 
 "^ot:originalLabel": "Pseudodictyosporium wauense 1", 
+"^ot:ottId": 220076, 
+"^ot:ottTaxonName": "Pseudodictyosporium wauense", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 288354, 
 "@tb:identifier.taxonVariant": 340288, 
@@ -278,6 +421,8 @@
 }, 
 "Tl3297200": {
 "^ot:originalLabel": "Dictyosporium alatum", 
+"^ot:ottId": 1063368, 
+"^ot:ottTaxonName": "Dictyosporium alatum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 288351, 
 "@tb:identifier.taxonVariant": 340286, 
@@ -286,8 +431,9 @@
 }
 }, 
 "Tl3297201": {
-"^ot:altLabel": "Dictyosporium nigroapice", 
 "^ot:originalLabel": "Dictyosporium nigroapice 0", 
+"^ot:ottId": 536828, 
+"^ot:ottTaxonName": "Dictyosporium nigroapice", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 288356, 
 "@tb:identifier.taxonVariant": 340290, 
@@ -296,8 +442,9 @@
 }
 }, 
 "Tl3297202": {
-"^ot:altLabel": "Dictyosporium nigroapice", 
 "^ot:originalLabel": "Dictyosporium nigroapice 1", 
+"^ot:ottId": 536828, 
+"^ot:ottTaxonName": "Dictyosporium nigroapice", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 288356, 
 "@tb:identifier.taxonVariant": 340290, 
@@ -316,6 +463,8 @@
 }, 
 "Tl3297206": {
 "^ot:originalLabel": "Dictyosporium elegans", 
+"^ot:ottId": 1063365, 
+"^ot:ottTaxonName": "Dictyosporium elegans", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 288350, 
 "@tb:identifier.taxonVariant": 340285, 
@@ -324,22 +473,32 @@
 }
 }, 
 "Tl3297207": {
-"^ot:originalLabel": "Dictyocheirospora rotunda 0"
+"^ot:originalLabel": "Dictyocheirospora rotunda 0", 
+"^ot:ottId": 6377605, 
+"^ot:ottTaxonName": "Dictyocheirospora rotunda"
 }, 
 "Tl3297208": {
-"^ot:originalLabel": "Gregarithecium curvisporum"
+"^ot:originalLabel": "Gregarithecium curvisporum", 
+"^ot:ottId": 5978876, 
+"^ot:ottTaxonName": "Gregarithecium curvisporum"
 }, 
 "Tl3297209": {
 "^ot:originalLabel": "Pseudodictyosporium indicum"
 }, 
 "Tl3297210": {
-"^ot:originalLabel": "Dendryphiella paravinosa"
+"^ot:originalLabel": "Dendryphiella paravinosa", 
+"^ot:ottId": 6377913, 
+"^ot:ottTaxonName": "Dendryphiella paravinosa"
 }, 
 "Tl3297211": {
-"^ot:originalLabel": "Pseudocoleophoma polygonicola"
+"^ot:originalLabel": "Pseudocoleophoma polygonicola", 
+"^ot:ottId": 5978869, 
+"^ot:ottTaxonName": "Pseudocoleophoma polygonicola"
 }, 
 "Tl3297212": {
 "^ot:originalLabel": "Dictyosporium bulbosum", 
+"^ot:ottId": 536825, 
+"^ot:ottTaxonName": "Dictyosporium bulbosum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 288357, 
 "@tb:identifier.taxonVariant": 340291, 
@@ -348,10 +507,14 @@
 }
 }, 
 "Tl3297213": {
-"^ot:originalLabel": "Dictyosporium tetrasporum"
+"^ot:originalLabel": "Dictyosporium tetrasporum", 
+"^ot:ottId": 3735814, 
+"^ot:ottTaxonName": "Dictyosporium tetrasporum"
 }, 
 "Tl3297214": {
-"^ot:originalLabel": "Dendryphiella eucalyptorum"
+"^ot:originalLabel": "Dendryphiella eucalyptorum", 
+"^ot:ottId": 5713492, 
+"^ot:ottTaxonName": "Dendryphiella eucalyptorum"
 }, 
 "Tl3297215": {
 "^ot:originalLabel": "Dictyocheirospora aquatica"
@@ -363,10 +526,14 @@
 "^ot:originalLabel": "Dictyocheirospora indica"
 }, 
 "Tl3297218": {
-"^ot:originalLabel": "Dictyosporium meiosporum"
+"^ot:originalLabel": "Dictyosporium meiosporum", 
+"^ot:ottId": 5696914, 
+"^ot:ottTaxonName": "Dictyosporium meiosporum"
 }, 
 "Tl3297219": {
-"^ot:originalLabel": "Dictyocheirospora rotunda 2"
+"^ot:originalLabel": "Dictyocheirospora rotunda 2", 
+"^ot:ottId": 6377605, 
+"^ot:ottTaxonName": "Dictyocheirospora rotunda"
 }
 }
 }
@@ -383,7 +550,18 @@
 "Tr113331": {
 "@label": "Imported tree 1", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:curatedType": "Maximum likelihood ", 
+"^ot:inGroupClade": "Tn17711371", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn17711325", 
+"^ot:specifiedRoot": "Tn17711325", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 59, 
 "^tb:quality.tree": "Unrated", 
