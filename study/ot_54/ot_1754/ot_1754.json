@@ -54,16 +54,105 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2018-09-21T16:21:00.755Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:curatorName": "Matt Girard", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}, 
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": "\\b\\s+(\\S*)$"
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2018-09-21T16:21:00.755Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Matt Girard"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S22346"
 }, 
+"^ot:focalCladeOTTTaxonName": "", 
 "^ot:otusElementOrder": [
 "Tls64560"
 ], 
@@ -73,6 +162,7 @@
 }, 
 "^ot:studyPublicationReference": "Desjardin D.E., & Perry B.A. 2018. The genus Pluteus (Basidiomycota, Agaricales, Pluteaceae) from Republic of S\u00e3o Tom\u00e9 and Pr\u00edncipe, West Africa. Mycosphere, 9(3): 598-617.", 
 "^ot:studyYear": 2018, 
+"^ot:tag": [], 
 "^ot:taxonLinkPrefixes": {
 "@ubio": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:", 
 "@uniprot": "http://purl.uniprot.org/taxonomy/"
@@ -104,8 +194,9 @@
 "^ot:originalLabel": "Pluteus hirtellus MG968804"
 }, 
 "Tl3069113": {
-"^ot:altLabel": "Pluteus chrysaegis", 
 "^ot:originalLabel": "Pluteus chrysaegis MG968799", 
+"^ot:ottId": 3833006, 
+"^ot:ottTaxonName": "Pluteus chrysaegis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 615111, 
 "@tb:identifier.taxonVariant": 822658, 
@@ -116,20 +207,25 @@
 "^ot:originalLabel": "Pluteus thomensis MG968800"
 }, 
 "Tl3069126": {
-"^ot:originalLabel": "Pluteus albidus MG968798"
+"^ot:originalLabel": "Pluteus albidus MG968798", 
+"^ot:ottId": 3832937, 
+"^ot:ottTaxonName": "Pluteus albidus"
 }, 
 "Tl3069154": {
 "^ot:originalLabel": "Pluteus albostipatus MG968801"
 }, 
 "Tl3069166": {
-"^ot:originalLabel": "Pluteus losulus MG968803"
+"^ot:originalLabel": "Pluteus losulus MG968803", 
+"^ot:ottId": 432997, 
+"^ot:ottTaxonName": "Pluteus losulus"
 }, 
 "Tl3069168": {
 "^ot:originalLabel": "Pluteus albostipatus MG968802"
 }, 
 "Tl3276431": {
-"^ot:altLabel": "Pluteus cervinus", 
 "^ot:originalLabel": "Pluteus cervinus 13661_Germany", 
+"^ot:ottId": 307633, 
+"^ot:ottTaxonName": "Pluteus cervinus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22920, 
 "@tb:identifier.taxonVariant": 53403, 
@@ -138,8 +234,9 @@
 }
 }, 
 "Tl3276432": {
-"^ot:altLabel": "Pluteus glaucotinctus", 
 "^ot:originalLabel": "Pluteus glaucotinctus SP394380_Brazil", 
+"^ot:ottId": 711466, 
+"^ot:ottTaxonName": "Pluteus glaucotinctus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 600844, 
 "@tb:identifier.taxonVariant": 801067, 
@@ -147,8 +244,9 @@
 }
 }, 
 "Tl3276433": {
-"^ot:altLabel": "Pluteus albostipitatus", 
 "^ot:originalLabel": "Pluteus albostipitatus AJ187_Florida", 
+"^ot:ottId": 1021530, 
+"^ot:ottTaxonName": "Pluteus albostipitatus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 529026, 
 "@tb:identifier.taxonVariant": 701737, 
@@ -157,8 +255,9 @@
 }
 }, 
 "Tl3276434": {
-"^ot:altLabel": "Pluteus spegazzinianus", 
 "^ot:originalLabel": "Pluteus spegazzinianus SingerM3377_Argentina", 
+"^ot:ottId": 382500, 
+"^ot:ottTaxonName": "Pluteus spegazzinianus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 600977, 
 "@tb:identifier.taxonVariant": 801228, 
@@ -166,8 +265,9 @@
 }
 }, 
 "Tl3276435": {
-"^ot:altLabel": "Pluteus atromarginatus", 
 "^ot:originalLabel": "Pluteus atromarginatus AJ75_Spain", 
+"^ot:ottId": 433945, 
+"^ot:ottTaxonName": "Pluteus atromarginatus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 169405, 
 "@tb:identifier.taxonVariant": 440501, 
@@ -176,11 +276,14 @@
 }
 }, 
 "Tl3276436": {
-"^ot:originalLabel": "Pluteus densifibrillosus SP393696_Brazil"
+"^ot:originalLabel": "Pluteus densifibrillosus SP393696_Brazil", 
+"^ot:ottId": 711456, 
+"^ot:ottTaxonName": "Pluteus densifibrillosus"
 }, 
 "Tl3276437": {
-"^ot:altLabel": "Pluteus albostipitatus", 
 "^ot:originalLabel": "Pluteus albostipitatus Brazil_FJ816656", 
+"^ot:ottId": 1021530, 
+"^ot:ottTaxonName": "Pluteus albostipitatus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 529026, 
 "@tb:identifier.taxonVariant": 701737, 
@@ -189,14 +292,17 @@
 }
 }, 
 "Tl3276438": {
-"^ot:originalLabel": "Pluteus subcervinus TNSF12371_Japan"
+"^ot:originalLabel": "Pluteus subcervinus TNSF12371_Japan", 
+"^ot:ottId": 3832953, 
+"^ot:ottTaxonName": "Pluteus subcervinus"
 }, 
 "Tl3276439": {
 "^ot:originalLabel": "Pluteus aff nothopellitus AH42452_Michigan"
 }, 
 "Tl3276440": {
-"^ot:altLabel": "Pluteus albostipitatus", 
 "^ot:originalLabel": "Pluteus albostipitatus AJ154_Florida", 
+"^ot:ottId": 1021530, 
+"^ot:ottTaxonName": "Pluteus albostipitatus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 529026, 
 "@tb:identifier.taxonVariant": 701737, 
@@ -205,8 +311,9 @@
 }
 }, 
 "Tl3276441": {
-"^ot:altLabel": "Pluteus pellitus", 
 "^ot:originalLabel": "Pluteus pellitus AJ202_Spain", 
+"^ot:ottId": 1010503, 
+"^ot:ottTaxonName": "Pluteus pellitus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 169411, 
 "@tb:identifier.taxonVariant": 440502, 
@@ -215,8 +322,9 @@
 }
 }, 
 "Tl3276442": {
-"^ot:altLabel": "Pluteus glaucotinctus", 
 "^ot:originalLabel": "Pluteus glaucotinctus Thoen5646_Congo", 
+"^ot:ottId": 711466, 
+"^ot:ottTaxonName": "Pluteus glaucotinctus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 600844, 
 "@tb:identifier.taxonVariant": 801067, 
@@ -224,8 +332,9 @@
 }
 }, 
 "Tl3276443": {
-"^ot:altLabel": "Pluteus salicinus", 
 "^ot:originalLabel": "Pluteus salicinus SF2_Michigan", 
+"^ot:ottId": 1010501, 
+"^ot:ottTaxonName": "Pluteus salicinus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 169412, 
 "@tb:identifier.taxonVariant": 440503, 
@@ -237,8 +346,9 @@
 "^ot:originalLabel": "Pluteus aff cervinus TNSF12347_Japan"
 }, 
 "Tl3276445": {
-"^ot:altLabel": "Pluteus sandalioticus", 
 "^ot:originalLabel": "Pluteus sandalioticus AJ200_Spain", 
+"^ot:ottId": 958678, 
+"^ot:ottTaxonName": "Pluteus sandalioticus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 600842, 
 "@tb:identifier.taxonVariant": 801065, 
@@ -246,8 +356,9 @@
 }
 }, 
 "Tl3276446": {
-"^ot:altLabel": "Pluteus albostipitatus", 
 "^ot:originalLabel": "Pluteus albostipitatus GF5374_Congo", 
+"^ot:ottId": 1021530, 
+"^ot:ottTaxonName": "Pluteus albostipitatus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 529026, 
 "@tb:identifier.taxonVariant": 701737, 
@@ -256,8 +367,9 @@
 }
 }, 
 "Tl3276447": {
-"^ot:altLabel": "Pluteus sandalioticus", 
 "^ot:originalLabel": "Pluteus sandalioticus AJ60_Spain", 
+"^ot:ottId": 958678, 
+"^ot:ottTaxonName": "Pluteus sandalioticus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 600842, 
 "@tb:identifier.taxonVariant": 801065, 
@@ -265,8 +377,9 @@
 }
 }, 
 "Tl3276448": {
-"^ot:altLabel": "Pluteus petasatus", 
 "^ot:originalLabel": "Pluteus petasatus Czech_Rep_AF085495", 
+"^ot:ottId": 684078, 
+"^ot:ottTaxonName": "Pluteus petasatus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22921, 
 "@tb:identifier.taxonVariant": 53404, 
@@ -275,11 +388,14 @@
 }
 }, 
 "Tl3276449": {
-"^ot:originalLabel": "Pluteus nothopellitus AJ58_Spain"
+"^ot:originalLabel": "Pluteus nothopellitus AJ58_Spain", 
+"^ot:ottId": 432978, 
+"^ot:ottTaxonName": "Pluteus nothopellitus"
 }, 
 "Tl3276450": {
-"^ot:altLabel": "Pluteus harrisii", 
 "^ot:originalLabel": "Pluteus harrisii Brazil_FJ816654", 
+"^ot:ottId": 843682, 
+"^ot:ottTaxonName": "Pluteus harrisii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 525270, 
 "@tb:identifier.taxonVariant": 696749, 
@@ -288,8 +404,9 @@
 }
 }, 
 "Tl3276451": {
-"^ot:altLabel": "Pluteus cinereofuscus", 
 "^ot:originalLabel": "Pluteus cinereofuscus AJ229_Portugal", 
+"^ot:ottId": 711450, 
+"^ot:ottTaxonName": "Pluteus cinereofuscus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 600836, 
 "@tb:identifier.taxonVariant": 801059, 
@@ -300,8 +417,9 @@
 "^ot:originalLabel": "Pluteus aff cervinus SF7_Illinois"
 }, 
 "Tl3276453": {
-"^ot:altLabel": "Pluteus harrisii", 
 "^ot:originalLabel": "Pluteus harrisii Brazil_FJ816666", 
+"^ot:ottId": 843682, 
+"^ot:ottTaxonName": "Pluteus harrisii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 525270, 
 "@tb:identifier.taxonVariant": 696749, 
@@ -313,8 +431,9 @@
 "^ot:originalLabel": "Pluteus aff cervinus TNSF16091_Japan"
 }, 
 "Tl3276455": {
-"^ot:altLabel": "Pluteus phaeoleucus", 
 "^ot:originalLabel": "Pluteus phaeoleucus GF5102_Congo", 
+"^ot:ottId": 432976, 
+"^ot:ottTaxonName": "Pluteus phaeoleucus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 600972, 
 "@tb:identifier.taxonVariant": 801223, 
@@ -322,8 +441,9 @@
 }
 }, 
 "Tl3276456": {
-"^ot:altLabel": "Pluteus atropungens", 
 "^ot:originalLabel": "Pluteus atropungens AHS62033_Michigan", 
+"^ot:ottId": 137363, 
+"^ot:ottTaxonName": "Pluteus atropungens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 600976, 
 "@tb:identifier.taxonVariant": 801227, 
@@ -331,8 +451,9 @@
 }
 }, 
 "Tl3276457": {
-"^ot:altLabel": "Pluteus xylophilus", 
 "^ot:originalLabel": "Pluteus xylophilus SP393707_Brazil", 
+"^ot:ottId": 843673, 
+"^ot:ottTaxonName": "Pluteus xylophilus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 525277, 
 "@tb:identifier.taxonVariant": 696756, 
@@ -341,8 +462,9 @@
 }
 }, 
 "Tl3276458": {
-"^ot:altLabel": "Pluteus viscidulus", 
 "^ot:originalLabel": "Pluteus viscidulus T997_Argentina", 
+"^ot:ottId": 907697, 
+"^ot:ottTaxonName": "Pluteus viscidulus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 600975, 
 "@tb:identifier.taxonVariant": 801226, 
@@ -356,8 +478,9 @@
 "^ot:originalLabel": "Pluteus cervinus var scaber Smith_39846_Washington"
 }, 
 "Tl3276461": {
-"^ot:altLabel": "Pluteus albostipitatus", 
 "^ot:originalLabel": "Pluteus albostipitatus Brazil_FJ816661", 
+"^ot:ottId": 1021530, 
+"^ot:ottTaxonName": "Pluteus albostipitatus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 529026, 
 "@tb:identifier.taxonVariant": 701737, 
@@ -369,8 +492,9 @@
 "^ot:originalLabel": "Pluteus aff nothopellitus SF5_Michigan"
 }, 
 "Tl3276463": {
-"^ot:altLabel": "Pluteus salicinus", 
 "^ot:originalLabel": "Pluteus salicinus Russia_FJ774087", 
+"^ot:ottId": 1010501, 
+"^ot:ottTaxonName": "Pluteus salicinus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 169412, 
 "@tb:identifier.taxonVariant": 440503, 
@@ -379,14 +503,19 @@
 }
 }, 
 "Tl3276464": {
-"^ot:originalLabel": "Pluteus losulus GF5273_Congo"
+"^ot:originalLabel": "Pluteus losulus GF5273_Congo", 
+"^ot:ottId": 432997, 
+"^ot:ottTaxonName": "Pluteus losulus"
 }, 
 "Tl3276465": {
-"^ot:originalLabel": "Pluteus subcervinus TNSF12348_Japan"
+"^ot:originalLabel": "Pluteus subcervinus TNSF12348_Japan", 
+"^ot:ottId": 3832953, 
+"^ot:ottTaxonName": "Pluteus subcervinus"
 }, 
 "Tl3276466": {
-"^ot:altLabel": "Pluteus chrysophlebius", 
 "^ot:originalLabel": "Pluteus chrysophlebius AJ45_Spain", 
+"^ot:ottId": 433952, 
+"^ot:ottTaxonName": "Pluteus chrysophlebius", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 169408, 
 "@tb:identifier.taxonVariant": 243803, 
@@ -395,8 +524,9 @@
 }
 }, 
 "Tl3276467": {
-"^ot:altLabel": "Pluteus atromarginatus", 
 "^ot:originalLabel": "Pluteus atromarginatus Sundberg3657_Oregon", 
+"^ot:ottId": 433945, 
+"^ot:ottTaxonName": "Pluteus atromarginatus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 169405, 
 "@tb:identifier.taxonVariant": 440501, 
@@ -405,14 +535,19 @@
 }
 }, 
 "Tl3276468": {
-"^ot:originalLabel": "Pluteus saupei ILLS42441_Illinois"
+"^ot:originalLabel": "Pluteus saupei ILLS42441_Illinois", 
+"^ot:ottId": 958680, 
+"^ot:ottTaxonName": "Pluteus saupei"
 }, 
 "Tl3276469": {
-"^ot:originalLabel": "Pluteus puttemansii SP393698_Brazil"
+"^ot:originalLabel": "Pluteus puttemansii SP393698_Brazil", 
+"^ot:ottId": 958674, 
+"^ot:ottTaxonName": "Pluteus puttemansii"
 }, 
 "Tl3276470": {
-"^ot:altLabel": "Pluteus magnus", 
 "^ot:originalLabel": "Pluteus magnus CBF36790_Japan", 
+"^ot:ottId": 432995, 
+"^ot:ottTaxonName": "Pluteus magnus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 600843, 
 "@tb:identifier.taxonVariant": 801066, 
@@ -420,8 +555,9 @@
 }
 }, 
 "Tl3276471": {
-"^ot:altLabel": "Pluteus xylophilus", 
 "^ot:originalLabel": "Pluteus xylophilus Brazil_FJ816660", 
+"^ot:ottId": 843673, 
+"^ot:ottTaxonName": "Pluteus xylophilus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 525277, 
 "@tb:identifier.taxonVariant": 696756, 
@@ -433,8 +569,9 @@
 "^ot:originalLabel": "Pluteus aff pouzarianus 13683_Germany"
 }, 
 "Tl3276473": {
-"^ot:altLabel": "Pluteus petasatus", 
 "^ot:originalLabel": "Pluteus petasatus SF3_Illinois", 
+"^ot:ottId": 684078, 
+"^ot:ottTaxonName": "Pluteus petasatus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22921, 
 "@tb:identifier.taxonVariant": 53404, 
@@ -443,8 +580,9 @@
 }
 }, 
 "Tl3276474": {
-"^ot:altLabel": "Pluteus brunneidiscus", 
 "^ot:originalLabel": "Pluteus brunneidiscus AJ61_Spain", 
+"^ot:ottId": 137346, 
+"^ot:ottTaxonName": "Pluteus brunneidiscus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 600971, 
 "@tb:identifier.taxonVariant": 801222, 
@@ -452,11 +590,14 @@
 }
 }, 
 "Tl3276475": {
-"^ot:originalLabel": "Pluteus subcervinus Thiers39341_California"
+"^ot:originalLabel": "Pluteus subcervinus Thiers39341_California", 
+"^ot:ottId": 3832953, 
+"^ot:ottTaxonName": "Pluteus subcervinus"
 }, 
 "Tl3276476": {
-"^ot:altLabel": "Pluteus pellitus", 
 "^ot:originalLabel": "Pluteus pellitus AJ74_Spain", 
+"^ot:ottId": 1010503, 
+"^ot:ottTaxonName": "Pluteus pellitus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 169411, 
 "@tb:identifier.taxonVariant": 440502, 
@@ -465,8 +606,9 @@
 }
 }, 
 "Tl3276477": {
-"^ot:altLabel": "Pluteus pallidus", 
 "^ot:originalLabel": "Pluteus pallidus Smith62487_Michigan", 
+"^ot:ottId": 1010502, 
+"^ot:ottTaxonName": "Pluteus pallidus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 169410, 
 "@tb:identifier.taxonVariant": 243805, 
@@ -475,8 +617,9 @@
 }
 }, 
 "Tl3276478": {
-"^ot:altLabel": "Pluteus eliae", 
 "^ot:originalLabel": "Pluteus eliae Isaacs_2460_Florida", 
+"^ot:ottId": 711461, 
+"^ot:ottTaxonName": "Pluteus eliae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 600967, 
 "@tb:identifier.taxonVariant": 801218, 
@@ -493,8 +636,9 @@
 "^ot:originalLabel": "Pluteus cf nanus AJ216_Spain"
 }, 
 "Tl3276482": {
-"^ot:altLabel": "Pluteus dietrichii", 
 "^ot:originalLabel": "Pluteus dietrichii JLS1624_Spain", 
+"^ot:ottId": 711458, 
+"^ot:ottTaxonName": "Pluteus diettrichii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 600845, 
 "@tb:identifier.taxonVariant": 801068, 
@@ -505,8 +649,9 @@
 "^ot:originalLabel": "Pluteus sp IV SP394383_Brazil"
 }, 
 "Tl3276484": {
-"^ot:altLabel": "Pluteus thomsonii", 
 "^ot:originalLabel": "Pluteus thomsonii AJ206_Spain", 
+"^ot:ottId": 1021549, 
+"^ot:ottTaxonName": "Pluteus thomsonii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 529031, 
 "@tb:identifier.taxonVariant": 701743, 
@@ -521,18 +666,23 @@
 "^ot:originalLabel": "Pluteus dominicanus var hyalinus Brazil_FJ816665"
 }, 
 "Tl3276487": {
-"^ot:originalLabel": "Pluteus aureovenatus Brazil_FJ816663"
+"^ot:originalLabel": "Pluteus aureovenatus Brazil_FJ816663", 
+"^ot:ottId": 137348, 
+"^ot:ottTaxonName": "Pluteus aureovenatus"
 }, 
 "Tl3276488": {
 "^ot:originalLabel": "Pluteus fenzlii Russia_FJ774082", 
+"^ot:ottId": 1052936, 
+"^ot:ottTaxonName": "Pluteus fenzlii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 548791, 
 "@tb:identifier.taxonVariant": 727954
 }
 }, 
 "Tl3276489": {
-"^ot:altLabel": "Pluteus podospileus", 
 "^ot:originalLabel": "Pluteus podospileus AJ204_Spain", 
+"^ot:ottId": 1052932, 
+"^ot:ottTaxonName": "Pluteus podospileus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 548795, 
 "@tb:identifier.taxonVariant": 727958, 
@@ -544,8 +694,9 @@
 "^ot:originalLabel": "Pluteus riberaltensis var conquistensis SP393704_Brazil"
 }, 
 "Tl3276491": {
-"^ot:altLabel": "Pluteus phlebophorus", 
 "^ot:originalLabel": "Pluteus phlebophorus AJ193_Spain", 
+"^ot:ottId": 432974, 
+"^ot:ottTaxonName": "Pluteus phlebophorus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 600838, 
 "@tb:identifier.taxonVariant": 801061, 
@@ -553,8 +704,9 @@
 }
 }, 
 "Tl3276492": {
-"^ot:altLabel": "Pluteus rugosidiscus", 
 "^ot:originalLabel": "Pluteus rugosidiscus Homola109_Michigan", 
+"^ot:ottId": 958676, 
+"^ot:ottTaxonName": "Pluteus rugosidiscus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 600974, 
 "@tb:identifier.taxonVariant": 801225, 
@@ -562,8 +714,9 @@
 }
 }, 
 "Tl3276493": {
-"^ot:altLabel": "Pluteus cinereofuscus", 
 "^ot:originalLabel": "Pluteus cinereofuscus AJ34_Spain", 
+"^ot:ottId": 711450, 
+"^ot:ottTaxonName": "Pluteus cinereofuscus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 600836, 
 "@tb:identifier.taxonVariant": 801059, 
@@ -571,8 +724,9 @@
 }
 }, 
 "Tl3276494": {
-"^ot:altLabel": "Pluteus mammillatus", 
 "^ot:originalLabel": "Pluteus mammillatus ASM7916_Missouri", 
+"^ot:ottId": 1029130, 
+"^ot:ottTaxonName": "Pluteus mammillatus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 331373, 
 "@tb:identifier.taxonVariant": 371652, 
@@ -581,8 +735,9 @@
 }
 }, 
 "Tl3276495": {
-"^ot:altLabel": "Pluteus phlebophorus", 
 "^ot:originalLabel": "Pluteus phlebophorus Homola1849_Michigan", 
+"^ot:ottId": 432974, 
+"^ot:ottTaxonName": "Pluteus phlebophorus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 600838, 
 "@tb:identifier.taxonVariant": 801061, 
@@ -602,11 +757,14 @@
 "^ot:originalLabel": "Pluteus sp VI DrewU_Illinois"
 }, 
 "Tl3276500": {
-"^ot:originalLabel": "Pluteus eludens SF15_Illinois"
+"^ot:originalLabel": "Pluteus eludens SF15_Illinois", 
+"^ot:ottId": 711463, 
+"^ot:ottTaxonName": "Pluteus eludens"
 }, 
 "Tl3276501": {
-"^ot:altLabel": "Pluteus aurantiorugosus", 
 "^ot:originalLabel": "Pluteus aurantiorugosus Hoseny_1740_Michigan", 
+"^ot:ottId": 433944, 
+"^ot:ottTaxonName": "Pluteus aurantiorugosus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 169406, 
 "@tb:identifier.taxonVariant": 243801, 
@@ -615,8 +773,9 @@
 }
 }, 
 "Tl3276502": {
-"^ot:altLabel": "Pluteus thomsonii", 
 "^ot:originalLabel": "Pluteus thomsonii AMD120_Illinois", 
+"^ot:ottId": 1021549, 
+"^ot:ottTaxonName": "Pluteus thomsonii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 529031, 
 "@tb:identifier.taxonVariant": 701743, 
@@ -626,14 +785,17 @@
 }, 
 "Tl3276503": {
 "^ot:originalLabel": "Pluteus fluminensis Brazil_FJ816664", 
+"^ot:ottId": 843680, 
+"^ot:ottTaxonName": "Pluteus fluminensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 525269, 
 "@tb:identifier.taxonVariant": 696748
 }
 }, 
 "Tl3276504": {
-"^ot:altLabel": "Pluteus romellii", 
 "^ot:originalLabel": "Pluteus romellii TNSF12387_Japan", 
+"^ot:ottId": 1010500, 
+"^ot:ottTaxonName": "Pluteus romellii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 37064, 
 "@tb:identifier.taxonVariant": 85729, 
@@ -642,8 +804,9 @@
 }
 }, 
 "Tl3276505": {
-"^ot:altLabel": "Pluteus chrysophlebius", 
 "^ot:originalLabel": "Pluteus chrysophlebius TNSF12388_Japan", 
+"^ot:ottId": 433952, 
+"^ot:ottTaxonName": "Pluteus chrysophlebius", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 169408, 
 "@tb:identifier.taxonVariant": 243803, 
@@ -656,6 +819,8 @@
 }, 
 "Tl3276507": {
 "^ot:originalLabel": "Pluteus fluminensis Brazil_FJ816655", 
+"^ot:ottId": 843680, 
+"^ot:ottTaxonName": "Pluteus fluminensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 525269, 
 "@tb:identifier.taxonVariant": 696748
@@ -668,8 +833,9 @@
 "^ot:originalLabel": "Pluteus aff podospileus Lundell2541_Sweden"
 }, 
 "Tl3276510": {
-"^ot:altLabel": "Pluteus fuligineovenosus", 
 "^ot:originalLabel": "Pluteus fuligineovenosus Brazil_FJ816662", 
+"^ot:ottId": 167439, 
+"^ot:ottTaxonName": "Pluteus fuligineovenosus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 525278, 
 "@tb:identifier.taxonVariant": 696757, 
@@ -678,8 +844,9 @@
 }
 }, 
 "Tl3276511": {
-"^ot:altLabel": "Pluteus jamaicensis", 
 "^ot:originalLabel": "Pluteus jamaicensis Brazil_FJ816657", 
+"^ot:ottId": 167440, 
+"^ot:ottTaxonName": "Pluteus jamaicensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 525279, 
 "@tb:identifier.taxonVariant": 696758, 
@@ -688,8 +855,9 @@
 }
 }, 
 "Tl3276512": {
-"^ot:altLabel": "Pluteus aurantiorugosus", 
 "^ot:originalLabel": "Pluteus aurantiorugosus TNSF12391_Japan", 
+"^ot:ottId": 433944, 
+"^ot:ottTaxonName": "Pluteus aurantiorugosus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 169406, 
 "@tb:identifier.taxonVariant": 243801, 
@@ -698,8 +866,9 @@
 }
 }, 
 "Tl3276513": {
-"^ot:altLabel": "Pluteus mammillatus", 
 "^ot:originalLabel": "Pluteus mammillatus Singer244A_Florida", 
+"^ot:ottId": 1029130, 
+"^ot:ottTaxonName": "Pluteus mammillatus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 331373, 
 "@tb:identifier.taxonVariant": 371652, 
@@ -708,8 +877,9 @@
 }
 }, 
 "Tl3276514": {
-"^ot:altLabel": "Pluteus ephebeus", 
 "^ot:originalLabel": "Pluteus ephebeus AJ234_Spain", 
+"^ot:ottId": 433949, 
+"^ot:ottTaxonName": "Pluteus ephebeus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 169409, 
 "@tb:identifier.taxonVariant": 243804, 
@@ -721,7 +891,9 @@
 "^ot:originalLabel": "Pluteus cf nanus Russia_FJ774081"
 }, 
 "Tl3276516": {
-"^ot:originalLabel": "Pluteus multiformis AC4249_Spain"
+"^ot:originalLabel": "Pluteus multiformis AC4249_Spain", 
+"^ot:ottId": 432980, 
+"^ot:ottTaxonName": "Pluteus multiformis"
 }, 
 "Tl3276517": {
 "^ot:altLabel": "Pluteus seticeps", 
@@ -733,8 +905,9 @@
 }
 }, 
 "Tl3276518": {
-"^ot:altLabel": "Pluteus romellii", 
 "^ot:originalLabel": "Pluteus romellii 248112_Missouri", 
+"^ot:ottId": 1010500, 
+"^ot:ottTaxonName": "Pluteus romellii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 37064, 
 "@tb:identifier.taxonVariant": 85729, 
@@ -743,8 +916,9 @@
 }
 }, 
 "Tl3276519": {
-"^ot:altLabel": "Pluteus chrysophlebius", 
 "^ot:originalLabel": "Pluteus chrysophlebius SF12_Illinois", 
+"^ot:ottId": 433952, 
+"^ot:ottTaxonName": "Pluteus chrysophlebius", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 169408, 
 "@tb:identifier.taxonVariant": 243803, 
@@ -753,8 +927,9 @@
 }
 }, 
 "Tl3276520": {
-"^ot:altLabel": "Pluteus podospileus", 
 "^ot:originalLabel": "Pluteus podospileus TNSF12398_Japan", 
+"^ot:ottId": 1052932, 
+"^ot:ottTaxonName": "Pluteus podospileus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 548795, 
 "@tb:identifier.taxonVariant": 727958, 
@@ -764,6 +939,8 @@
 }, 
 "Tl3276521": {
 "^ot:originalLabel": "Pluteus fenzlii TNSF12376_Japan", 
+"^ot:ottId": 1052936, 
+"^ot:ottTaxonName": "Pluteus fenzlii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 548791, 
 "@tb:identifier.taxonVariant": 727954
@@ -773,7 +950,9 @@
 "^ot:originalLabel": "Pluteus aff ephebeus Shaffer4673_France"
 }, 
 "Tl3276523": {
-"^ot:originalLabel": "Pluteus sublaevigatus Brazil_FJ816667"
+"^ot:originalLabel": "Pluteus sublaevigatus Brazil_FJ816667", 
+"^ot:ottId": 4935867, 
+"^ot:ottTaxonName": "Pluteus sublaevigatus"
 }, 
 "Tl3276524": {
 "^ot:altLabel": "Pluteus pallescens", 
@@ -785,10 +964,14 @@
 }
 }, 
 "Tl3276525": {
-"^ot:originalLabel": "Pluteus eludens MA50497_Madeira"
+"^ot:originalLabel": "Pluteus eludens MA50497_Madeira", 
+"^ot:ottId": 711463, 
+"^ot:ottTaxonName": "Pluteus eludens"
 }, 
 "Tl3276526": {
-"^ot:originalLabel": "Pluteus aureovenatus SP394388_Brazil"
+"^ot:originalLabel": "Pluteus aureovenatus SP394388_Brazil", 
+"^ot:ottId": 137348, 
+"^ot:ottTaxonName": "Pluteus aureovenatus"
 }, 
 "Tl3276527": {
 "^ot:altLabel": "Pluteus granulatus", 
@@ -804,8 +987,9 @@
 "^ot:originalLabel": "Pluteus castri TNSF17081_Japan"
 }, 
 "Tl3276529": {
-"^ot:altLabel": "Pluteus semibulbosus", 
 "^ot:originalLabel": "Pluteus semibulbosus Russia_FJ774080", 
+"^ot:ottId": 1052931, 
+"^ot:ottTaxonName": "Pluteus semibulbosus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 548796, 
 "@tb:identifier.taxonVariant": 727959, 
@@ -814,8 +998,9 @@
 }
 }, 
 "Tl3276530": {
-"^ot:altLabel": "Pluteus chrysaegis", 
 "^ot:originalLabel": "Pluteus chrysaegis JN603206", 
+"^ot:ottId": 3833006, 
+"^ot:ottTaxonName": "Pluteus chrysaegis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 615111, 
 "@tb:identifier.taxonVariant": 822658, 
@@ -823,8 +1008,9 @@
 }
 }, 
 "Tl3276531": {
-"^ot:altLabel": "Pluteus plautus", 
 "^ot:originalLabel": "Pluteus plautus AJ209_Spain", 
+"^ot:ottId": 1052937, 
+"^ot:ottTaxonName": "Pluteus plautus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 548794, 
 "@tb:identifier.taxonVariant": 727957, 
@@ -833,8 +1019,9 @@
 }
 }, 
 "Tl3276532": {
-"^ot:altLabel": "Pluteus granularis", 
 "^ot:originalLabel": "Pluteus granularis SF20_Illinois", 
+"^ot:ottId": 711468, 
+"^ot:ottTaxonName": "Pluteus granularis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 600966, 
 "@tb:identifier.taxonVariant": 801217, 
@@ -845,14 +1032,19 @@
 "^ot:originalLabel": "Pluteus conizatus var africanus Thoen5250_Congo"
 }, 
 "Tl3276534": {
-"^ot:originalLabel": "Pluteus leoninus Josserand_sn_France"
+"^ot:originalLabel": "Pluteus leoninus Josserand_sn_France", 
+"^ot:ottId": 678473, 
+"^ot:ottTaxonName": "Pluteus leoninus"
 }, 
 "Tl3276535": {
-"^ot:originalLabel": "Pluteus heteromarginatus AJ172_Florida"
+"^ot:originalLabel": "Pluteus heteromarginatus AJ172_Florida", 
+"^ot:ottId": 1009620, 
+"^ot:ottTaxonName": "Pluteus heteromarginatus"
 }, 
 "Tl3276536": {
-"^ot:altLabel": "Pluteus leoninus", 
 "^ot:originalLabel": "Pluteus leoninus Halling6546_NewYork", 
+"^ot:ottId": 678473, 
+"^ot:ottTaxonName": "Pluteus leoninus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 538770, 
 "@tb:identifier.taxonVariant": 714582, 
@@ -864,8 +1056,9 @@
 "^ot:originalLabel": "Pluteus aff leoninus II_TNSF11908_Japan"
 }, 
 "Tl3276538": {
-"^ot:altLabel": "Pluteus pantherinus", 
 "^ot:originalLabel": "Pluteus pantherinus TNSF12882_Japan", 
+"^ot:ottId": 432983, 
+"^ot:ottTaxonName": "Pluteus pantherinus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 600968, 
 "@tb:identifier.taxonVariant": 801219, 
@@ -873,8 +1066,9 @@
 }
 }, 
 "Tl3276539": {
-"^ot:altLabel": "Pluteus plautus", 
 "^ot:originalLabel": "Pluteus plautus Russia_FJ774076", 
+"^ot:ottId": 1052937, 
+"^ot:ottTaxonName": "Pluteus plautus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 548794, 
 "@tb:identifier.taxonVariant": 727957, 
@@ -883,8 +1077,9 @@
 }
 }, 
 "Tl3276540": {
-"^ot:altLabel": "Pluteus longistriatus", 
 "^ot:originalLabel": "Pluteus longistriatus SP393700_Brazil", 
+"^ot:ottId": 558818, 
+"^ot:ottTaxonName": "Pluteus longistriatus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 600970, 
 "@tb:identifier.taxonVariant": 801221, 
@@ -892,8 +1087,9 @@
 }
 }, 
 "Tl3276541": {
-"^ot:altLabel": "Pluteus chrysaegis", 
 "^ot:originalLabel": "Pluteus chrysaegis MF153092", 
+"^ot:ottId": 3833006, 
+"^ot:ottTaxonName": "Pluteus chrysaegis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 615111, 
 "@tb:identifier.taxonVariant": 822658, 
@@ -910,8 +1106,9 @@
 "^ot:originalLabel": "Pluteus aff semibulbosu TNSF12393_Japan"
 }, 
 "Tl3276545": {
-"^ot:altLabel": "Pluteus umbrosus", 
 "^ot:originalLabel": "Pluteus umbrosus AJ213_Spain", 
+"^ot:ottId": 1010505, 
+"^ot:ottTaxonName": "Pluteus umbrosus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 169413, 
 "@tb:identifier.taxonVariant": 243806, 
@@ -920,8 +1117,9 @@
 }
 }, 
 "Tl3276546": {
-"^ot:altLabel": "Pluteus longistriatus", 
 "^ot:originalLabel": "Pluteus longistriatus Minnis309203_Missouri", 
+"^ot:ottId": 558818, 
+"^ot:ottTaxonName": "Pluteus longistriatus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 600970, 
 "@tb:identifier.taxonVariant": 801221, 
@@ -945,7 +1143,18 @@
 "Tr113062": {
 "@label": "Imported tree 1", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:undefined", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn17678739", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 49, 
 "^tb:quality.tree": "Unrated", 
@@ -1731,7 +1940,19 @@
 "Tr113063": {
 "@label": "Imported tree 1", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn17678773", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 54, 
 "^tb:quality.tree": "Unrated", 
@@ -2595,9 +2816,20 @@
 }
 }, 
 "Tr113064": {
-"@label": "Imported tree 1", 
+"@label": "Figure 1", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:curatedType": "Maximum likelihood ", 
+"^ot:inGroupClade": "Tn17678900", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn17678900", 
+"^ot:specifiedRoot": "Tn17678900", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 25, 
 "^tb:quality.tree": "Unrated", 
