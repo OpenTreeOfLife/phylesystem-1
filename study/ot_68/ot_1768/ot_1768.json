@@ -49,22 +49,115 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2018-09-24T15:55:42.790Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "Insects"
 }, 
-"^ot:curatorName": "Matt Girard", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}, 
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": "\\b\\s+(\\S*)$"
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2018-09-24T15:55:42.790Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Matt Girard"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S23291"
 }, 
+"^ot:focalCladeOTTTaxonName": "", 
 "^ot:otusElementOrder": [
 "Tls65168"
 ], 
 "^ot:studyId": "ot_1768", 
+"^ot:studyPublication": {
+"@href": ""
+}, 
 "^ot:studyPublicationReference": "Hofmann M.M., Zohner C.M., & Renner S.S. 2018. Habitat restriction and late-summer emergence increase extinction vulnerability in German bees, implicating agriculture not climate warming. Proceedings of the National Academy of Sciences of the United States of America, .", 
 "^ot:studyYear": 2018, 
+"^ot:tag": [], 
 "^ot:taxonLinkPrefixes": {
 "@ubio": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:", 
 "@uniprot": "http://purl.uniprot.org/taxonomy/"
@@ -87,14 +180,19 @@
 "^skos:historyNote": "Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlOTUWriter@7642cb0e $Rev$", 
 "otuById": {
 "Tl3319492": {
-"^ot:originalLabel": "Osmia melanogaster Megachilidae_HM401210"
+"^ot:originalLabel": "Osmia melanogaster Megachilidae_HM401210", 
+"^ot:ottId": 3265853, 
+"^ot:ottTaxonName": "Osmia melanogaster"
 }, 
 "Tl3319493": {
-"^ot:originalLabel": "Megachile apicalis Megachilidae_KJ837288"
+"^ot:originalLabel": "Megachile apicalis Megachilidae_KJ837288", 
+"^ot:ottId": 3265160, 
+"^ot:ottTaxonName": "Megachile apicalis"
 }, 
 "Tl3319494": {
-"^ot:altLabel": "Nomada stigma", 
 "^ot:originalLabel": "Nomada stigma Apidae_KJ837336", 
+"^ot:ottId": 882992, 
+"^ot:ottTaxonName": "Nomada stigma", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 443999, 
 "@tb:identifier.taxonVariant": 586239, 
@@ -103,11 +201,14 @@
 }
 }, 
 "Tl3319495": {
-"^ot:originalLabel": "Andrena granulosa Andrenidae_HQ954767"
+"^ot:originalLabel": "Andrena granulosa Andrenidae_HQ954767", 
+"^ot:ottId": 3262266, 
+"^ot:ottTaxonName": "Andrena granulosa"
 }, 
 "Tl3319496": {
-"^ot:altLabel": "Colletes fodiens", 
 "^ot:originalLabel": "Colletes fodiens Colletidae_HM401156", 
+"^ot:ottId": 1392, 
+"^ot:ottTaxonName": "Colletes fodiens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 365879, 
 "@tb:identifier.taxonVariant": 392517, 
@@ -116,23 +217,34 @@
 }
 }, 
 "Tl3319497": {
-"^ot:originalLabel": "Megachile analis Megachilidae_M401190"
+"^ot:originalLabel": "Megachile analis Megachilidae_M401190", 
+"^ot:ottId": 3265361, 
+"^ot:ottTaxonName": "Megachile analis"
 }, 
 "Tl3319498": {
-"^ot:originalLabel": "Stelis minuta Megachilidae_KJ836896"
+"^ot:originalLabel": "Stelis minuta Megachilidae_KJ836896", 
+"^ot:ottId": 3266226, 
+"^ot:ottTaxonName": "Stelis minuta"
 }, 
 "Tl3319499": {
-"^ot:originalLabel": "Nomada moeschleri Apidae_HM401079"
+"^ot:originalLabel": "Nomada moeschleri Apidae_HM401079", 
+"^ot:ottId": 3269144, 
+"^ot:ottTaxonName": "Nomada moeschleri"
 }, 
 "Tl3319500": {
-"^ot:originalLabel": "Hylaeus difformis Colletidae_HM401166"
+"^ot:originalLabel": "Hylaeus difformis Colletidae_HM401166", 
+"^ot:ottId": 3274025, 
+"^ot:ottTaxonName": "Hylaeus difformis"
 }, 
 "Tl3319501": {
-"^ot:originalLabel": "Nomada facilis Apidae_HM401068"
+"^ot:originalLabel": "Nomada facilis Apidae_HM401068", 
+"^ot:ottId": 3269046, 
+"^ot:ottTaxonName": "Nomada facilis"
 }, 
 "Tl3319502": {
-"^ot:altLabel": "Lasioglossum politum", 
 "^ot:originalLabel": "Lasioglossum politum Halictidae_KJ838762", 
+"^ot:ottId": 1006436, 
+"^ot:ottTaxonName": "Lasioglossum politum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 98428, 
 "@tb:identifier.taxonVariant": 177608, 
@@ -141,23 +253,34 @@
 }
 }, 
 "Tl3319503": {
-"^ot:originalLabel": "Lasioglossum convexiusculum Halictidae_KJ837411"
+"^ot:originalLabel": "Lasioglossum convexiusculum Halictidae_KJ837411", 
+"^ot:ottId": 3271340, 
+"^ot:ottTaxonName": "Lasioglossum convexiusculum"
 }, 
 "Tl3319504": {
-"^ot:originalLabel": "Megachile pyrenaica Megachilidae_KJ838168"
+"^ot:originalLabel": "Megachile pyrenaica Megachilidae_KJ838168", 
+"^ot:ottId": 3265316, 
+"^ot:ottTaxonName": "Megachile pyrenaica"
 }, 
 "Tl3319505": {
-"^ot:originalLabel": "Andrena enslinella Andrenidae_KJ838020"
+"^ot:originalLabel": "Andrena enslinella Andrenidae_KJ838020", 
+"^ot:ottId": 3262184, 
+"^ot:ottTaxonName": "Andrena enslinella"
 }, 
 "Tl3319506": {
-"^ot:originalLabel": "Andrena nigroaenea Andrenidae_KJ836732"
+"^ot:originalLabel": "Andrena nigroaenea Andrenidae_KJ836732", 
+"^ot:ottId": 33862, 
+"^ot:ottTaxonName": "Andrena nigroaenea"
 }, 
 "Tl3319507": {
-"^ot:originalLabel": "Nomada atroscutellaris Apidae_KJ838079"
+"^ot:originalLabel": "Nomada atroscutellaris Apidae_KJ838079", 
+"^ot:ottId": 3268575, 
+"^ot:ottTaxonName": "Nomada atroscutellaris"
 }, 
 "Tl3319508": {
-"^ot:altLabel": "Sphecodes niger", 
 "^ot:originalLabel": "Sphecodes niger Halictidae_KJ836693", 
+"^ot:ottId": 3272940, 
+"^ot:ottTaxonName": "Sphecodes niger", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 613221, 
 "@tb:identifier.taxonVariant": 820171, 
@@ -165,8 +288,9 @@
 }
 }, 
 "Tl3319509": {
-"^ot:altLabel": "Osmia cornuta", 
 "^ot:originalLabel": "Osmia cornuta Megachilidae_KJ836461", 
+"^ot:ottId": 897459, 
+"^ot:ottTaxonName": "Osmia cornuta", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 172710, 
 "@tb:identifier.taxonVariant": 246602, 
@@ -175,14 +299,19 @@
 }
 }, 
 "Tl3319510": {
-"^ot:originalLabel": "Andrena sericata Andrenidae_KJ836715"
+"^ot:originalLabel": "Andrena sericata Andrenidae_KJ836715", 
+"^ot:ottId": 3262827, 
+"^ot:ottTaxonName": "Andrena sericata"
 }, 
 "Tl3319511": {
-"^ot:originalLabel": "Lasioglossum smeathmanellum Halictidae_KT074061"
+"^ot:originalLabel": "Lasioglossum smeathmanellum Halictidae_KT074061", 
+"^ot:ottId": 3272127, 
+"^ot:ottTaxonName": "Lasioglossum smeathmanellum"
 }, 
 "Tl3319512": {
-"^ot:altLabel": "Anthidium oblongatum", 
 "^ot:originalLabel": "Anthidium oblongatum Megachilidae_GU706008", 
+"^ot:ottId": 524514, 
+"^ot:ottTaxonName": "Anthidium oblongatum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 37481, 
 "@tb:identifier.taxonVariant": 86621, 
@@ -192,29 +321,42 @@
 }, 
 "Tl3319513": {
 "^ot:originalLabel": "Camptopoeum frontale Apidae_KJ837986", 
+"^ot:ottId": 624838, 
+"^ot:ottTaxonName": "Camptopoeum frontale", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 441878, 
 "@tb:identifier.taxonVariant": 583267
 }
 }, 
 "Tl3319514": {
-"^ot:originalLabel": "Anthophora aestivalis Apidae_HM376217"
+"^ot:originalLabel": "Anthophora aestivalis Apidae_HM376217", 
+"^ot:ottId": 3267687, 
+"^ot:ottTaxonName": "Anthophora aestivalis"
 }, 
 "Tl3319515": {
-"^ot:originalLabel": "Lasioglossum rufitarse Halictidae_JN272460"
+"^ot:originalLabel": "Lasioglossum rufitarse Halictidae_JN272460", 
+"^ot:ottId": 3271692, 
+"^ot:ottTaxonName": "Lasioglossum rufitarse"
 }, 
 "Tl3319516": {
-"^ot:originalLabel": "Nomada integra Apidae_KJ837492"
+"^ot:originalLabel": "Nomada integra Apidae_KJ837492", 
+"^ot:ottId": 3268830, 
+"^ot:ottTaxonName": "Nomada integra"
 }, 
 "Tl3319517": {
-"^ot:originalLabel": "Andrena ventralis Andrenidae_KJ839138"
+"^ot:originalLabel": "Andrena ventralis Andrenidae_KJ839138", 
+"^ot:ottId": 3262985, 
+"^ot:ottTaxonName": "Andrena ventralis"
 }, 
 "Tl3319518": {
-"^ot:originalLabel": "Andrena similis Andrenidae_KJ839751"
+"^ot:originalLabel": "Andrena similis Andrenidae_KJ839751", 
+"^ot:ottId": 3263158, 
+"^ot:ottTaxonName": "Andrena similis"
 }, 
 "Tl3319519": {
-"^ot:altLabel": "Sphecodes croaticus", 
 "^ot:originalLabel": "Sphecodes croaticus Halictidae_KJ836647", 
+"^ot:ottId": 3272859, 
+"^ot:ottTaxonName": "Sphecodes croaticus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 613213, 
 "@tb:identifier.taxonVariant": 820163, 
@@ -222,8 +364,9 @@
 }
 }, 
 "Tl3319520": {
-"^ot:altLabel": "Stelis punctulatissima", 
 "^ot:originalLabel": "Stelis punctulatissima Megachilidae_HM401242", 
+"^ot:ottId": 149005, 
+"^ot:ottTaxonName": "Stelis punctulatissima", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 484259, 
 "@tb:identifier.taxonVariant": 641650, 
@@ -232,8 +375,9 @@
 }
 }, 
 "Tl3319521": {
-"^ot:altLabel": "Hoplitis tridentata", 
 "^ot:originalLabel": "Hoplitis tridentata Megachilidae_GU705987", 
+"^ot:ottId": 855098, 
+"^ot:ottTaxonName": "Hoplitis tridentata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 484228, 
 "@tb:identifier.taxonVariant": 641588, 
@@ -242,8 +386,9 @@
 }
 }, 
 "Tl3319522": {
-"^ot:altLabel": "Ceratina cyanea", 
 "^ot:originalLabel": "Ceratina cyanea Apidae_GU705965", 
+"^ot:ottId": 1092304, 
+"^ot:ottTaxonName": "Ceratina cyanea", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 610739, 
 "@tb:identifier.taxonVariant": 816153, 
@@ -251,20 +396,29 @@
 }
 }, 
 "Tl3319523": {
-"^ot:originalLabel": "Tetraloniella dentata Apidae_KJ836577"
+"^ot:originalLabel": "Tetraloniella dentata Apidae_KJ836577", 
+"^ot:ottId": 4529440, 
+"^ot:ottTaxonName": "Tetraloniella dentata"
 }, 
 "Tl3319524": {
-"^ot:originalLabel": "Andrena praecox Andrenidae_HM376224"
+"^ot:originalLabel": "Andrena praecox Andrenidae_HM376224", 
+"^ot:ottId": 747471, 
+"^ot:ottTaxonName": "Andrena praecox"
 }, 
 "Tl3319525": {
-"^ot:originalLabel": "Nomada flavopicta Apidae_HM401073"
+"^ot:originalLabel": "Nomada flavopicta Apidae_HM401073", 
+"^ot:ottId": 3269118, 
+"^ot:ottTaxonName": "Nomada flavopicta"
 }, 
 "Tl3319526": {
-"^ot:originalLabel": "Hylaeus lineolatus Colletidae_HM401173"
+"^ot:originalLabel": "Hylaeus lineolatus Colletidae_HM401173", 
+"^ot:ottId": 3274248, 
+"^ot:ottTaxonName": "Hylaeus lineolatus"
 }, 
 "Tl3319527": {
-"^ot:altLabel": "Sphecodes cristatus", 
 "^ot:originalLabel": "Sphecodes cristatus Halictidae_JX256667", 
+"^ot:ottId": 3272870, 
+"^ot:ottTaxonName": "Sphecodes cristatus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 613219, 
 "@tb:identifier.taxonVariant": 820169, 
@@ -272,11 +426,14 @@
 }
 }, 
 "Tl3319528": {
-"^ot:originalLabel": "Andrena niveata Andrenidae_KJ836650"
+"^ot:originalLabel": "Andrena niveata Andrenidae_KJ836650", 
+"^ot:ottId": 3262544, 
+"^ot:ottTaxonName": "Andrena niveata"
 }, 
 "Tl3319529": {
-"^ot:altLabel": "Bombus soroeensis", 
 "^ot:originalLabel": "Bombus soroeensis Apidae_GU705936", 
+"^ot:ottId": 551135, 
+"^ot:ottTaxonName": "Bombus soroeensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 44529, 
 "@tb:identifier.taxonVariant": 104341, 
@@ -285,8 +442,9 @@
 }
 }, 
 "Tl3319530": {
-"^ot:altLabel": "Bombus flavidus", 
 "^ot:originalLabel": "Bombus flavidus Apidae_AY181184", 
+"^ot:ottId": 980417, 
+"^ot:ottTaxonName": "Bombus flavidus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 44556, 
 "@tb:identifier.taxonVariant": 104377, 
@@ -295,8 +453,9 @@
 }
 }, 
 "Tl3319531": {
-"^ot:altLabel": "Megachile pilidens", 
 "^ot:originalLabel": "Megachile pilidens Megachilidae_GU705996", 
+"^ot:ottId": 280582, 
+"^ot:ottTaxonName": "Megachile pilidens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 425003, 
 "@tb:identifier.taxonVariant": 558254, 
@@ -305,8 +464,9 @@
 }
 }, 
 "Tl3319532": {
-"^ot:altLabel": "Megachile albisecta", 
 "^ot:originalLabel": "Megachile albisecta Megachilidae_KJ839743", 
+"^ot:ottId": 855107, 
+"^ot:ottTaxonName": "Megachile albisecta", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 484233, 
 "@tb:identifier.taxonVariant": 641598, 
@@ -315,8 +475,9 @@
 }
 }, 
 "Tl3319533": {
-"^ot:altLabel": "Biastes truncatus", 
 "^ot:originalLabel": "Biastes truncatus Apidae_KJ837962", 
+"^ot:ottId": 662832, 
+"^ot:ottTaxonName": "Biastes truncatus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 619832, 
 "@tb:identifier.taxonVariant": 830014, 
@@ -324,8 +485,9 @@
 }
 }, 
 "Tl3319534": {
-"^ot:altLabel": "Macropis fulvipes", 
 "^ot:originalLabel": "Macropis fulvipes Melittidae_KJ838021", 
+"^ot:ottId": 153920, 
+"^ot:ottTaxonName": "Macropis fulvipes (species in superclass Hexapoda)", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 441909, 
 "@tb:identifier.taxonVariant": 583300, 
@@ -334,8 +496,9 @@
 }
 }, 
 "Tl3319535": {
-"^ot:altLabel": "Megachile parietina", 
 "^ot:originalLabel": "Megachile parietina Megachilidae_HM401125", 
+"^ot:ottId": 280584, 
+"^ot:ottTaxonName": "Megachile parietina", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 484234, 
 "@tb:identifier.taxonVariant": 641600, 
@@ -344,8 +507,9 @@
 }
 }, 
 "Tl3319536": {
-"^ot:altLabel": "Bombus sichelii", 
 "^ot:originalLabel": "Bombus sichelii Apidae_HQ563811", 
+"^ot:ottId": 329926, 
+"^ot:ottTaxonName": "Bombus sichelii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 44607, 
 "@tb:identifier.taxonVariant": 104466, 
@@ -354,8 +518,9 @@
 }
 }, 
 "Tl3319537": {
-"^ot:altLabel": "Sphecodes gibbus", 
 "^ot:originalLabel": "Sphecodes gibbus Halictidae_KJ836803", 
+"^ot:ottId": 752762, 
+"^ot:ottTaxonName": "Sphecodes gibbus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 613251, 
 "@tb:identifier.taxonVariant": 820201, 
@@ -363,14 +528,19 @@
 }
 }, 
 "Tl3319538": {
-"^ot:originalLabel": "Andrena agilissima Andrenidae_KT960836"
+"^ot:originalLabel": "Andrena agilissima Andrenidae_KT960836", 
+"^ot:ottId": 3262801, 
+"^ot:ottTaxonName": "Andrena agilissima"
 }, 
 "Tl3319539": {
-"^ot:originalLabel": "Nomada opaca Apidae_HM401080"
+"^ot:originalLabel": "Nomada opaca Apidae_HM401080", 
+"^ot:ottId": 3269093, 
+"^ot:ottTaxonName": "Nomada opaca"
 }, 
 "Tl3319540": {
-"^ot:altLabel": "Lithurgus chrysurus", 
 "^ot:originalLabel": "Lithurgus chrysurus _Megachilidae_KJ836731", 
+"^ot:ottId": 855105, 
+"^ot:ottTaxonName": "Lithurgus chrysurus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 424883, 
 "@tb:identifier.taxonVariant": 558025, 
@@ -379,8 +549,9 @@
 }
 }, 
 "Tl3319541": {
-"^ot:altLabel": "Melitta dimidiata", 
 "^ot:originalLabel": "Melitta dimidiata Melittidae_KJ837102", 
+"^ot:ottId": 153919, 
+"^ot:ottTaxonName": "Melitta dimidiata (species in superclass Hexapoda)", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 441910, 
 "@tb:identifier.taxonVariant": 583301, 
@@ -389,8 +560,9 @@
 }
 }, 
 "Tl3319542": {
-"^ot:altLabel": "Lasioglossum pauxillum", 
 "^ot:originalLabel": "Lasioglossum pauxillum Halictidae_KT164647", 
+"^ot:ottId": 1006440, 
+"^ot:ottTaxonName": "Lasioglossum pauxillum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 98426, 
 "@tb:identifier.taxonVariant": 177606, 
@@ -399,11 +571,14 @@
 }
 }, 
 "Tl3319543": {
-"^ot:originalLabel": "Anthophora balneorum Apidae_KJ839342"
+"^ot:originalLabel": "Anthophora balneorum Apidae_KJ839342", 
+"^ot:ottId": 3267997, 
+"^ot:ottTaxonName": "Anthophora balneorum"
 }, 
 "Tl3319544": {
-"^ot:altLabel": "Bombus campestris", 
 "^ot:originalLabel": "Bombus campestris Apidae_GU705893", 
+"^ot:ottId": 713462, 
+"^ot:ottTaxonName": "Bombus campestris", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 44554, 
 "@tb:identifier.taxonVariant": 104373, 
@@ -412,8 +587,9 @@
 }
 }, 
 "Tl3319545": {
-"^ot:altLabel": "Lasioglossum majus", 
 "^ot:originalLabel": "Lasioglossum majus Halictidae_KJ839149", 
+"^ot:ottId": 1056550, 
+"^ot:ottTaxonName": "Lasioglossum majus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 98443, 
 "@tb:identifier.taxonVariant": 177624, 
@@ -422,23 +598,34 @@
 }
 }, 
 "Tl3319546": {
-"^ot:originalLabel": "Halictus langobardicus Halictidae_HM401091"
+"^ot:originalLabel": "Halictus langobardicus Halictidae_HM401091", 
+"^ot:ottId": 3272336, 
+"^ot:ottTaxonName": "Halictus langobardicus"
 }, 
 "Tl3319547": {
-"^ot:originalLabel": "Osmia saxicola Megachilidae_KJ836508"
+"^ot:originalLabel": "Osmia saxicola Megachilidae_KJ836508", 
+"^ot:ottId": 3265912, 
+"^ot:ottTaxonName": "Osmia saxicola"
 }, 
 "Tl3319548": {
-"^ot:originalLabel": "Hylaeus gibbus Colletidae_KJ837435"
+"^ot:originalLabel": "Hylaeus gibbus Colletidae_KJ837435", 
+"^ot:ottId": 3273882, 
+"^ot:ottTaxonName": "Hylaeus gibbus"
 }, 
 "Tl3319549": {
-"^ot:originalLabel": "Osmia mustelina Megachilidae_KJ838242"
+"^ot:originalLabel": "Osmia mustelina Megachilidae_KJ838242", 
+"^ot:ottId": 3265640, 
+"^ot:ottTaxonName": "Osmia mustelina"
 }, 
 "Tl3319550": {
-"^ot:originalLabel": "Nomada conjungens Apidae_KJ837916"
+"^ot:originalLabel": "Nomada conjungens Apidae_KJ837916", 
+"^ot:ottId": 3268599, 
+"^ot:ottTaxonName": "Nomada conjungens"
 }, 
 "Tl3319551": {
-"^ot:altLabel": "Osmia xanthomelana", 
 "^ot:originalLabel": "Osmia xanthomelana Megachilidae_KJ836953", 
+"^ot:ottId": 885114, 
+"^ot:ottTaxonName": "Osmia xanthomelana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 484257, 
 "@tb:identifier.taxonVariant": 641646, 
@@ -447,8 +634,9 @@
 }
 }, 
 "Tl3319552": {
-"^ot:altLabel": "Andrena haemorrhoa", 
 "^ot:originalLabel": "Andrena haemorrhoa Andrenidae_KJ839483", 
+"^ot:ottId": 462726, 
+"^ot:ottTaxonName": "Andrena haemorrhoa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 383691, 
 "@tb:identifier.taxonVariant": 401787, 
@@ -457,11 +645,14 @@
 }
 }, 
 "Tl3319553": {
-"^ot:originalLabel": "Osmia bicornis Megachilidae_GU705983"
+"^ot:originalLabel": "Osmia bicornis Megachilidae_GU705983", 
+"^ot:ottId": 755644, 
+"^ot:ottTaxonName": "Osmia bicornis"
 }, 
 "Tl3319554": {
-"^ot:altLabel": "Andrena carantonica", 
 "^ot:originalLabel": "Andrena carantonica Andrenidae_KT074022", 
+"^ot:ottId": 1053843, 
+"^ot:ottTaxonName": "Andrena carantonica", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 70265, 
 "@tb:identifier.taxonVariant": 146305, 
@@ -470,8 +661,9 @@
 }
 }, 
 "Tl3319555": {
-"^ot:altLabel": "Megachile melanopyga", 
 "^ot:originalLabel": "Megachile melanopyga Megachilidae_HM401121", 
+"^ot:ottId": 843425, 
+"^ot:ottTaxonName": "Megachile melanopyga", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 619865, 
 "@tb:identifier.taxonVariant": 830048, 
@@ -479,8 +671,9 @@
 }
 }, 
 "Tl3319556": {
-"^ot:altLabel": "Lasioglossum lineare", 
 "^ot:originalLabel": "Lasioglossum lineare Halictidae_KJ837027", 
+"^ot:ottId": 1006450, 
+"^ot:ottTaxonName": "Lasioglossum lineare", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 98421, 
 "@tb:identifier.taxonVariant": 177601, 
@@ -489,11 +682,14 @@
 }
 }, 
 "Tl3319557": {
-"^ot:originalLabel": "Andrena alutacea Andrenidae_KJ836974"
+"^ot:originalLabel": "Andrena alutacea Andrenidae_KJ836974", 
+"^ot:ottId": 3263314, 
+"^ot:ottTaxonName": "Andrena alutacea"
 }, 
 "Tl3319558": {
-"^ot:altLabel": "Nomada goodeniana", 
 "^ot:originalLabel": "Nomada goodeniana Apidae_KT164660", 
+"^ot:ottId": 406977, 
+"^ot:ottTaxonName": "Nomada goodeniana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 480880, 
 "@tb:identifier.taxonVariant": 637109, 
@@ -502,8 +698,9 @@
 }
 }, 
 "Tl3319559": {
-"^ot:altLabel": "Trachusa byssina", 
 "^ot:originalLabel": "Trachusa byssina Megachilidae_KJ838247", 
+"^ot:ottId": 567108, 
+"^ot:ottTaxonName": "Trachusa byssina", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 484282, 
 "@tb:identifier.taxonVariant": 641686, 
@@ -512,11 +709,14 @@
 }
 }, 
 "Tl3319560": {
-"^ot:originalLabel": "Coelioxys argentea Megachilidae_KJ837998"
+"^ot:originalLabel": "Coelioxys argentea Megachilidae_KJ837998", 
+"^ot:ottId": 3264023, 
+"^ot:ottTaxonName": "Coelioxys argentea"
 }, 
 "Tl3319561": {
-"^ot:altLabel": "Hoplitis adunca", 
 "^ot:originalLabel": "Hoplitis adunca Megachilidae_HM401196", 
+"^ot:ottId": 495677, 
+"^ot:ottTaxonName": "Hoplitis adunca", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 424717, 
 "@tb:identifier.taxonVariant": 557787, 
@@ -525,14 +725,19 @@
 }
 }, 
 "Tl3319562": {
-"^ot:originalLabel": "Andrena aberrans Andrenidae_KJ837129"
+"^ot:originalLabel": "Andrena aberrans Andrenidae_KJ837129", 
+"^ot:ottId": 3262859, 
+"^ot:ottTaxonName": "Andrena aberrans"
 }, 
 "Tl3319563": {
-"^ot:originalLabel": "Megachile opacifrons Megachilidae_KJ838937"
+"^ot:originalLabel": "Megachile opacifrons Megachilidae_KJ838937", 
+"^ot:ottId": 3264296, 
+"^ot:ottTaxonName": "Megachile opacifrons"
 }, 
 "Tl3319564": {
-"^ot:altLabel": "Bombus rupestris", 
 "^ot:originalLabel": "Bombus rupestris Apidae_GU705932", 
+"^ot:ottId": 507833, 
+"^ot:ottTaxonName": "Bombus rupestris", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 24205, 
 "@tb:identifier.taxonVariant": 104365, 
@@ -541,8 +746,9 @@
 }
 }, 
 "Tl3319565": {
-"^ot:altLabel": "Anthidium montanum", 
 "^ot:originalLabel": "Anthidium montanum Megachilidae_KJ837682", 
+"^ot:ottId": 3266541, 
+"^ot:ottTaxonName": "Anthidium montanum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 617872, 
 "@tb:identifier.taxonVariant": 827009, 
@@ -550,14 +756,19 @@
 }
 }, 
 "Tl3319566": {
-"^ot:originalLabel": "Hylaeus paulus Colletidae_KJ837780"
+"^ot:originalLabel": "Hylaeus paulus Colletidae_KJ837780", 
+"^ot:ottId": 3273977, 
+"^ot:ottTaxonName": "Hylaeus paulus"
 }, 
 "Tl3319567": {
-"^ot:originalLabel": "Andrena strohmella Andrenidae_KJ839737"
+"^ot:originalLabel": "Andrena strohmella Andrenidae_KJ839737", 
+"^ot:ottId": 3262264, 
+"^ot:ottTaxonName": "Andrena strohmella"
 }, 
 "Tl3319568": {
-"^ot:altLabel": "Lasioglossum sexnotatum", 
 "^ot:originalLabel": "Lasioglossum sexnotatum Halictidae_KJ838091", 
+"^ot:ottId": 1056554, 
+"^ot:ottTaxonName": "Lasioglossum sexnotatum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 98445, 
 "@tb:identifier.taxonVariant": 177626, 
@@ -566,17 +777,24 @@
 }
 }, 
 "Tl3319569": {
-"^ot:originalLabel": "Stelis breviuscula Megachilidae_KJ838642"
+"^ot:originalLabel": "Stelis breviuscula Megachilidae_KJ838642", 
+"^ot:ottId": 3266227, 
+"^ot:ottTaxonName": "Stelis breviuscula"
 }, 
 "Tl3319570": {
-"^ot:originalLabel": "Andrena floricola Andrenidae_KJ837140"
+"^ot:originalLabel": "Andrena floricola Andrenidae_KJ837140", 
+"^ot:ottId": 3262817, 
+"^ot:ottTaxonName": "Andrena floricola"
 }, 
 "Tl3319571": {
-"^ot:originalLabel": "Nomada distinguenda Apidae_KJ836592"
+"^ot:originalLabel": "Nomada distinguenda Apidae_KJ836592", 
+"^ot:ottId": 3268907, 
+"^ot:ottTaxonName": "Nomada distinguenda"
 }, 
 "Tl3319572": {
-"^ot:altLabel": "Epeolus variegatus", 
 "^ot:originalLabel": "Epeolus variegatus Apidae_HM401155", 
+"^ot:ottId": 447790, 
+"^ot:ottTaxonName": "Epeolus variegatus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 619857, 
 "@tb:identifier.taxonVariant": 830040, 
@@ -584,8 +802,9 @@
 }
 }, 
 "Tl3319573": {
-"^ot:altLabel": "Halictus rubicundus", 
 "^ot:originalLabel": "Halictus rubicundus Halictidae_KJ837973", 
+"^ot:ottId": 6354, 
+"^ot:ottTaxonName": "Halictus rubicundus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 37506, 
 "@tb:identifier.taxonVariant": 86662, 
@@ -594,27 +813,38 @@
 }
 }, 
 "Tl3319574": {
-"^ot:originalLabel": "Lasioglossum minutulum Halictidae_KJ838016"
+"^ot:originalLabel": "Lasioglossum minutulum Halictidae_KJ838016", 
+"^ot:ottId": 3271799, 
+"^ot:ottTaxonName": "Lasioglossum minutulum"
 }, 
 "Tl3319575": {
 "^ot:originalLabel": "Osmia andrenoides Megachilidae_HM401197", 
+"^ot:ottId": 280586, 
+"^ot:ottTaxonName": "Osmia andrenoides", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 484236, 
 "@tb:identifier.taxonVariant": 641604
 }
 }, 
 "Tl3319576": {
-"^ot:originalLabel": "Nomada femoralis Apidae_HM401070"
+"^ot:originalLabel": "Nomada femoralis Apidae_HM401070", 
+"^ot:ottId": 3268995, 
+"^ot:ottTaxonName": "Nomada femoralis"
 }, 
 "Tl3319577": {
-"^ot:originalLabel": "Nomada leucophthalma Apidae_GU706027"
+"^ot:originalLabel": "Nomada leucophthalma Apidae_GU706027", 
+"^ot:ottId": 376683, 
+"^ot:ottTaxonName": "Nomada leucophthalma"
 }, 
 "Tl3319578": {
-"^ot:originalLabel": "Andrena semilaevis Andrenidae_KJ839157"
+"^ot:originalLabel": "Andrena semilaevis Andrenidae_KJ839157", 
+"^ot:ottId": 3263299, 
+"^ot:ottTaxonName": "Andrena semilaevis"
 }, 
 "Tl3319579": {
-"^ot:altLabel": "Lasioglossum albocinctum", 
 "^ot:originalLabel": "Lasioglossum albocinctum Halictidae_KJ838953", 
+"^ot:ottId": 212245, 
+"^ot:ottTaxonName": "Lasioglossum albocinctum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 153366, 
 "@tb:identifier.taxonVariant": 228852, 
@@ -623,14 +853,17 @@
 }
 }, 
 "Tl3319580": {
-"^ot:originalLabel": "Andrena rufula Andrenidae_KJ838498"
+"^ot:originalLabel": "Andrena rufula Andrenidae_KJ838498", 
+"^ot:ottId": 3262378, 
+"^ot:ottTaxonName": "Andrena rufula"
 }, 
 "Tl3319581": {
 "^ot:originalLabel": "Andrena confinis Andrenidae_HM401263"
 }, 
 "Tl3319582": {
-"^ot:altLabel": "Sphecodes alternatus", 
 "^ot:originalLabel": "Sphecodes alternatus Halictidae_KJ837938", 
+"^ot:ottId": 3273029, 
+"^ot:ottTaxonName": "Sphecodes alternatus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 613256, 
 "@tb:identifier.taxonVariant": 820206, 
@@ -638,14 +871,19 @@
 }
 }, 
 "Tl3319583": {
-"^ot:originalLabel": "Pseudoanthidium melanurum Megachilidae_KJ838568"
+"^ot:originalLabel": "Pseudoanthidium melanurum Megachilidae_KJ838568", 
+"^ot:ottId": 4530024, 
+"^ot:ottTaxonName": "Pseudoanthidium melanurum"
 }, 
 "Tl3319584": {
-"^ot:originalLabel": "Lasioglossum marginellum Halictidae_KJ838806"
+"^ot:originalLabel": "Lasioglossum marginellum Halictidae_KJ838806", 
+"^ot:ottId": 3272131, 
+"^ot:ottTaxonName": "Lasioglossum marginellum"
 }, 
 "Tl3319585": {
-"^ot:altLabel": "Halictus pollinosus", 
 "^ot:originalLabel": "Halictus pollinosus Halictidae_KJ838192", 
+"^ot:ottId": 484269, 
+"^ot:ottTaxonName": "Halictus pollinosus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 118270, 
 "@tb:identifier.taxonVariant": 196613, 
@@ -654,14 +892,19 @@
 }
 }, 
 "Tl3319586": {
-"^ot:originalLabel": "Andrena rogenhoferi Andrenidae_KJ838541"
+"^ot:originalLabel": "Andrena rogenhoferi Andrenidae_KJ838541", 
+"^ot:ottId": 3263192, 
+"^ot:ottTaxonName": "Andrena rogenhoferi"
 }, 
 "Tl3319587": {
-"^ot:originalLabel": "Stelis franconica Megachilidae_KJ838642"
+"^ot:originalLabel": "Stelis franconica Megachilidae_KJ838642", 
+"^ot:ottId": 3266248, 
+"^ot:ottTaxonName": "Stelis franconica"
 }, 
 "Tl3319588": {
-"^ot:altLabel": "Panurgus banksianus", 
 "^ot:originalLabel": "Panurgus banksianus Andrenidae_KJ837192", 
+"^ot:ottId": 624841, 
+"^ot:ottTaxonName": "Panurgus banksianus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 441880, 
 "@tb:identifier.taxonVariant": 583270, 
@@ -670,29 +913,44 @@
 }
 }, 
 "Tl3319589": {
-"^ot:originalLabel": "Lasioglossum minutissimum Halictidae_KJ837045"
+"^ot:originalLabel": "Lasioglossum minutissimum Halictidae_KJ837045", 
+"^ot:ottId": 3271249, 
+"^ot:ottTaxonName": "Lasioglossum minutissimum"
 }, 
 "Tl3319590": {
-"^ot:originalLabel": "Hylaeus rinki Colletidae_GU705973"
+"^ot:originalLabel": "Hylaeus rinki Colletidae_GU705973", 
+"^ot:ottId": 3273838, 
+"^ot:ottTaxonName": "Hylaeus rinki"
 }, 
 "Tl3319591": {
-"^ot:originalLabel": "Lasioglossum lissonotum Halictidae_KJ839702"
+"^ot:originalLabel": "Lasioglossum lissonotum Halictidae_KJ839702", 
+"^ot:ottId": 3271395, 
+"^ot:ottTaxonName": "Lasioglossum lissonotum"
 }, 
 "Tl3319592": {
-"^ot:originalLabel": "Lasioglossum clypeare Halictidae_KJ837961"
+"^ot:originalLabel": "Lasioglossum clypeare Halictidae_KJ837961", 
+"^ot:ottId": 3270819, 
+"^ot:ottTaxonName": "Lasioglossum clypeare"
 }, 
 "Tl3319593": {
-"^ot:originalLabel": "Hoplitis papaveris Megachilidae_KJ836470"
+"^ot:originalLabel": "Hoplitis papaveris Megachilidae_KJ836470", 
+"^ot:ottId": 3266025, 
+"^ot:ottTaxonName": "Hoplitis papaveris"
 }, 
 "Tl3319594": {
-"^ot:originalLabel": "Dufourea alpina Halictidae_KJ839615"
+"^ot:originalLabel": "Dufourea alpina Halictidae_KJ839615", 
+"^ot:ottId": 3270475, 
+"^ot:ottTaxonName": "Dufourea alpina"
 }, 
 "Tl3319595": {
-"^ot:originalLabel": "Megachile deceptoria Megachilidae_KJ836416"
+"^ot:originalLabel": "Megachile deceptoria Megachilidae_KJ836416", 
+"^ot:ottId": 3264153, 
+"^ot:ottTaxonName": "Megachile deceptoria"
 }, 
 "Tl3319596": {
-"^ot:altLabel": "Osmia inermis", 
 "^ot:originalLabel": "Osmia inermis Megachilidae_HM401203", 
+"^ot:ottId": 214445, 
+"^ot:ottTaxonName": "Osmia inermis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 509936, 
 "@tb:identifier.taxonVariant": 676243, 
@@ -701,13 +959,19 @@
 }
 }, 
 "Tl3319597": {
-"^ot:originalLabel": "Andrena nitidula Andrenidae_KJ836688"
+"^ot:originalLabel": "Andrena nitidula Andrenidae_KJ836688", 
+"^ot:ottId": 3263302, 
+"^ot:ottTaxonName": "Andrena nitidula"
 }, 
 "Tl3319598": {
-"^ot:originalLabel": "Ceratina chalybea Apidae_KJ836933"
+"^ot:originalLabel": "Ceratina chalybea Apidae_KJ836933", 
+"^ot:ottId": 829234, 
+"^ot:ottTaxonName": "Ceratina chalybea"
 }, 
 "Tl3319599": {
-"^ot:originalLabel": "Hylaeus variegatus Colletidae_HM401187"
+"^ot:originalLabel": "Hylaeus variegatus Colletidae_HM401187", 
+"^ot:ottId": 3274406, 
+"^ot:ottTaxonName": "Hylaeus variegatus"
 }, 
 "Tl3319600": {
 "^ot:altLabel": "Halictus subauratus", 
@@ -720,11 +984,14 @@
 }
 }, 
 "Tl3319601": {
-"^ot:originalLabel": "Andrena limata Andrenidae_KJ837654"
+"^ot:originalLabel": "Andrena limata Andrenidae_KJ837654", 
+"^ot:ottId": 3262550, 
+"^ot:ottTaxonName": "Andrena limata"
 }, 
 "Tl3319602": {
-"^ot:altLabel": "Sphecodes longulus", 
 "^ot:originalLabel": "Sphecodes longulus Halictidae_KJ836681", 
+"^ot:ottId": 3272872, 
+"^ot:ottTaxonName": "Sphecodes longulus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 613242, 
 "@tb:identifier.taxonVariant": 820192, 
@@ -735,8 +1002,9 @@
 "^ot:originalLabel": "Coelioxys alatav Megachilidae_HM401246"
 }, 
 "Tl3319604": {
-"^ot:altLabel": "Lasioglossum laticeps", 
 "^ot:originalLabel": "Lasioglossum laticeps Halictidae_KJ837829", 
+"^ot:ottId": 1006452, 
+"^ot:ottTaxonName": "Lasioglossum laticeps", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 98420, 
 "@tb:identifier.taxonVariant": 177600, 
@@ -745,41 +1013,62 @@
 }
 }, 
 "Tl3319605": {
-"^ot:originalLabel": "Coelioxys aurolimbata Megachilidae_KJ838074"
+"^ot:originalLabel": "Coelioxys aurolimbata Megachilidae_KJ838074", 
+"^ot:ottId": 3263828, 
+"^ot:ottTaxonName": "Coelioxys aurolimbata"
 }, 
 "Tl3319606": {
-"^ot:originalLabel": "Biastes emarginatus Apidae_KJ839184"
+"^ot:originalLabel": "Biastes emarginatus Apidae_KJ839184", 
+"^ot:ottId": 3269177, 
+"^ot:ottTaxonName": "Biastes emarginatus"
 }, 
 "Tl3319607": {
-"^ot:originalLabel": "Andrena nasuta Andrenidae_KJ839710"
+"^ot:originalLabel": "Andrena nasuta Andrenidae_KJ839710", 
+"^ot:ottId": 3262146, 
+"^ot:ottTaxonName": "Andrena nasuta"
 }, 
 "Tl3319608": {
-"^ot:originalLabel": "Hoplitis ravouxi Megachilidae_KJ839378"
+"^ot:originalLabel": "Hoplitis ravouxi Megachilidae_KJ839378", 
+"^ot:ottId": 746109, 
+"^ot:ottTaxonName": "Hoplitis ravouxi"
 }, 
 "Tl3319609": {
 "^ot:originalLabel": "Hylaeus intermedius Colletidae_KJ838687"
 }, 
 "Tl3319610": {
-"^ot:originalLabel": "Andrena ampla Andrenidae_KJ836817"
+"^ot:originalLabel": "Andrena ampla Andrenidae_KJ836817", 
+"^ot:ottId": 3262513, 
+"^ot:ottTaxonName": "Andrena ampla"
 }, 
 "Tl3319611": {
-"^ot:originalLabel": "Nomada kohli Apidae_HQ948035"
+"^ot:originalLabel": "Nomada kohli Apidae_HQ948035", 
+"^ot:ottId": 3268923, 
+"^ot:ottTaxonName": "Nomada kohli"
 }, 
 "Tl3319612": {
-"^ot:originalLabel": "Andrena fulva Andrenidae_GU705958"
+"^ot:originalLabel": "Andrena fulva Andrenidae_GU705958", 
+"^ot:ottId": 3262273, 
+"^ot:ottTaxonName": "Andrena fulva"
 }, 
 "Tl3319613": {
-"^ot:originalLabel": "Lasioglossum semilucens Halictidae_KJ837659"
+"^ot:originalLabel": "Lasioglossum semilucens Halictidae_KJ837659", 
+"^ot:ottId": 3271615, 
+"^ot:ottTaxonName": "Lasioglossum semilucens"
 }, 
 "Tl3319614": {
-"^ot:originalLabel": "Lasioglossum pleurospeculum Halictidae_HQ948114"
+"^ot:originalLabel": "Lasioglossum pleurospeculum Halictidae_HQ948114", 
+"^ot:ottId": 3271676, 
+"^ot:ottTaxonName": "Lasioglossum pleurospeculum"
 }, 
 "Tl3319615": {
-"^ot:originalLabel": "Anthophora plagiata Apidae_KJ839757"
+"^ot:originalLabel": "Anthophora plagiata Apidae_KJ839757", 
+"^ot:ottId": 3267698, 
+"^ot:ottTaxonName": "Anthophora plagiata"
 }, 
 "Tl3319616": {
-"^ot:altLabel": "Lasioglossum calceatum", 
 "^ot:originalLabel": "Lasioglossum calceatum Halictidae_KT074051", 
+"^ot:ottId": 969296, 
+"^ot:ottTaxonName": "Lasioglossum calceatum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 98414, 
 "@tb:identifier.taxonVariant": 177594, 
@@ -788,17 +1077,24 @@
 }
 }, 
 "Tl3319617": {
-"^ot:originalLabel": "Nomada lathburiana Apidae_KJ837412"
+"^ot:originalLabel": "Nomada lathburiana Apidae_KJ837412", 
+"^ot:ottId": 3268720, 
+"^ot:ottTaxonName": "Nomada lathburiana"
 }, 
 "Tl3319618": {
-"^ot:originalLabel": "Megachile pyrenaea Megachilidae_HM401130"
+"^ot:originalLabel": "Megachile pyrenaea Megachilidae_HM401130", 
+"^ot:ottId": 3265266, 
+"^ot:ottTaxonName": "Megachile pyrenaea"
 }, 
 "Tl3319619": {
-"^ot:originalLabel": "Nomada villosa Apidae_KJ836467"
+"^ot:originalLabel": "Nomada villosa Apidae_KJ836467", 
+"^ot:ottId": 3269002, 
+"^ot:ottTaxonName": "Nomada villosa"
 }, 
 "Tl3319620": {
-"^ot:altLabel": "Hoplitis leucomelana", 
 "^ot:originalLabel": "Hoplitis leucomelana Megachilidae_HM401205", 
+"^ot:ottId": 633863, 
+"^ot:ottTaxonName": "Hoplitis leucomelana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 484220, 
 "@tb:identifier.taxonVariant": 641572, 
@@ -807,8 +1103,9 @@
 }
 }, 
 "Tl3319621": {
-"^ot:altLabel": "Lasioglossum leucozonium", 
 "^ot:originalLabel": "Lasioglossum leucozonium Halictidae_KT074054", 
+"^ot:ottId": 1056552, 
+"^ot:ottTaxonName": "Lasioglossum leucozonium", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 98442, 
 "@tb:identifier.taxonVariant": 177623, 
@@ -817,17 +1114,24 @@
 }
 }, 
 "Tl3319622": {
-"^ot:originalLabel": "Nomada fabriciana Apidae_GU706016"
+"^ot:originalLabel": "Nomada fabriciana Apidae_GU706016", 
+"^ot:ottId": 940562, 
+"^ot:ottTaxonName": "Nomada fabriciana"
 }, 
 "Tl3319623": {
-"^ot:originalLabel": "Andrena viridescens Andrenidae_KJ836441"
+"^ot:originalLabel": "Andrena viridescens Andrenidae_KJ836441", 
+"^ot:ottId": 3262969, 
+"^ot:ottTaxonName": "Andrena viridescens"
 }, 
 "Tl3319624": {
-"^ot:originalLabel": "Andrena nycthemera Andrenidae_KJ836417"
+"^ot:originalLabel": "Andrena nycthemera Andrenidae_KJ836417", 
+"^ot:ottId": 3262939, 
+"^ot:ottTaxonName": "Andrena nycthemera"
 }, 
 "Tl3319625": {
-"^ot:altLabel": "Colletes halophilus", 
 "^ot:originalLabel": "Colletes halophilus Colletidae_DQ085542", 
+"^ot:ottId": 198852, 
+"^ot:ottTaxonName": "Colletes halophilus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 297169, 
 "@tb:identifier.taxonVariant": 347052, 
@@ -836,8 +1140,9 @@
 }
 }, 
 "Tl3319626": {
-"^ot:altLabel": "Bombus hortorum", 
 "^ot:originalLabel": "Bombus hortorum Apidae_KT164676", 
+"^ot:ottId": 386322, 
+"^ot:ottTaxonName": "Bombus hortorum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 44538, 
 "@tb:identifier.taxonVariant": 104351, 
@@ -846,8 +1151,9 @@
 }
 }, 
 "Tl3319627": {
-"^ot:altLabel": "Nomada fucata", 
 "^ot:originalLabel": "Nomada fucata Apidae_KT074069", 
+"^ot:ottId": 293571, 
+"^ot:ottTaxonName": "Nomada fucata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 47940, 
 "@tb:identifier.taxonVariant": 112121, 
@@ -856,11 +1162,14 @@
 }
 }, 
 "Tl3319628": {
-"^ot:originalLabel": "Megachile circumcincta Megachilidae_GU705984"
+"^ot:originalLabel": "Megachile circumcincta Megachilidae_GU705984", 
+"^ot:ottId": 3265492, 
+"^ot:ottTaxonName": "Megachile circumcincta"
 }, 
 "Tl3319629": {
-"^ot:altLabel": "Bombus semenoviellus", 
 "^ot:originalLabel": "Bombus semenoviellus Apidae_HQ563810", 
+"^ot:ottId": 916358, 
+"^ot:ottTaxonName": "Bombus semenoviellus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 44614, 
 "@tb:identifier.taxonVariant": 104478, 
@@ -869,11 +1178,14 @@
 }
 }, 
 "Tl3319630": {
-"^ot:originalLabel": "Hylaeus styriacus Colletidae_KJ837075"
+"^ot:originalLabel": "Hylaeus styriacus Colletidae_KJ837075", 
+"^ot:ottId": 3274156, 
+"^ot:ottTaxonName": "Hylaeus styriacus"
 }, 
 "Tl3319631": {
-"^ot:altLabel": "Colletes brevigena", 
 "^ot:originalLabel": "Colletes brevigena Colletidae_KJ839788", 
+"^ot:ottId": 198850, 
+"^ot:ottTaxonName": "Colletes brevigena", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 297170, 
 "@tb:identifier.taxonVariant": 347054, 
@@ -882,8 +1194,9 @@
 }
 }, 
 "Tl3319632": {
-"^ot:altLabel": "Osmia gallarum", 
 "^ot:originalLabel": "Osmia gallarum Megachilidae_KJ836777", 
+"^ot:ottId": 671857, 
+"^ot:ottTaxonName": "Osmia gallarum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 484244, 
 "@tb:identifier.taxonVariant": 641620, 
@@ -892,11 +1205,14 @@
 }
 }, 
 "Tl3319633": {
-"^ot:originalLabel": "Lasioglossum setulosum Halictidae_KJ837830"
+"^ot:originalLabel": "Lasioglossum setulosum Halictidae_KJ837830", 
+"^ot:ottId": 3271534, 
+"^ot:ottTaxonName": "Lasioglossum setulosum"
 }, 
 "Tl3319634": {
-"^ot:altLabel": "Lasioglossum villosulum", 
 "^ot:originalLabel": "Lasioglossum villosulum Halictidae_GU705888", 
+"^ot:ottId": 480217, 
+"^ot:ottTaxonName": "Lasioglossum villosulum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 98433, 
 "@tb:identifier.taxonVariant": 177613, 
@@ -905,33 +1221,48 @@
 }
 }, 
 "Tl3319635": {
-"^ot:originalLabel": "Ammobatoides abdominalis Apidae_KJ83805"
+"^ot:originalLabel": "Ammobatoides abdominalis Apidae_KJ83805", 
+"^ot:ottId": 4528931, 
+"^ot:ottTaxonName": "Ammobatoides abdominalis"
 }, 
 "Tl3319636": {
-"^ot:originalLabel": "Nomada hirtipes Apidae_GU706039"
+"^ot:originalLabel": "Nomada hirtipes Apidae_GU706039", 
+"^ot:ottId": 3268885, 
+"^ot:ottTaxonName": "Nomada hirtipes"
 }, 
 "Tl3319637": {
-"^ot:originalLabel": "Megachile ligniseca Megachilidae_GU705995"
+"^ot:originalLabel": "Megachile ligniseca Megachilidae_GU705995", 
+"^ot:ottId": 3264351, 
+"^ot:ottTaxonName": "Megachile ligniseca"
 }, 
 "Tl3319638": {
-"^ot:originalLabel": "Andrena tarsata Andrenidae_JQ909697"
+"^ot:originalLabel": "Andrena tarsata Andrenidae_JQ909697", 
+"^ot:ottId": 858092, 
+"^ot:ottTaxonName": "Andrena tarsata"
 }, 
 "Tl3319639": {
-"^ot:originalLabel": "Andrena susterai Andrenidae_KJ838537"
+"^ot:originalLabel": "Andrena susterai Andrenidae_KJ838537", 
+"^ot:ottId": 3263031, 
+"^ot:ottTaxonName": "Andrena susterai"
 }, 
 "Tl3319640": {
 "^ot:originalLabel": "Hoplitis villosa Megachilidae_HM401232", 
+"^ot:ottId": 855088, 
+"^ot:ottTaxonName": "Hoplitis villosa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 484231, 
 "@tb:identifier.taxonVariant": 641594
 }
 }, 
 "Tl3319641": {
-"^ot:originalLabel": "Colletes nasutus Colletidae_HM401158"
+"^ot:originalLabel": "Colletes nasutus Colletidae_HM401158", 
+"^ot:ottId": 3275278, 
+"^ot:ottTaxonName": "Colletes nasutus"
 }, 
 "Tl3319642": {
-"^ot:altLabel": "Lasioglossum limbellum", 
 "^ot:originalLabel": "Lasioglossum limbellum Halictidae_KJ839645", 
+"^ot:ottId": 186824, 
+"^ot:ottTaxonName": "Lasioglossum limbellum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 166451, 
 "@tb:identifier.taxonVariant": 241200, 
@@ -943,8 +1274,9 @@
 "^ot:originalLabel": "Nomada minuscula Apidae_KJ837068"
 }, 
 "Tl3319644": {
-"^ot:altLabel": "Bombus confusus", 
 "^ot:originalLabel": "Bombus confusus Apidae_KJ836795", 
+"^ot:ottId": 454371, 
+"^ot:ottTaxonName": "Bombus confusus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 44526, 
 "@tb:identifier.taxonVariant": 104336, 
@@ -953,8 +1285,9 @@
 }
 }, 
 "Tl3319645": {
-"^ot:altLabel": "Andrena decipiens", 
 "^ot:originalLabel": "Andrena decipiens Andrenidae_KJ837637", 
+"^ot:ottId": 882989, 
+"^ot:ottTaxonName": "Andrena decipiens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 444000, 
 "@tb:identifier.taxonVariant": 586242, 
@@ -963,8 +1296,9 @@
 }
 }, 
 "Tl3319646": {
-"^ot:altLabel": "Colletes floralis", 
 "^ot:originalLabel": "Colletes floralis Colletidae_HQ948116", 
+"^ot:ottId": 96073, 
+"^ot:ottTaxonName": "Colletes floralis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 344865, 
 "@tb:identifier.taxonVariant": 380196, 
@@ -973,8 +1307,9 @@
 }
 }, 
 "Tl3319647": {
-"^ot:altLabel": "Bombus distinguendus", 
 "^ot:originalLabel": "Bombus distinguendus Apidae_KJ837828", 
+"^ot:ottId": 815395, 
+"^ot:ottTaxonName": "Bombus distinguendus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 44547, 
 "@tb:identifier.taxonVariant": 104362, 
@@ -983,8 +1318,9 @@
 }
 }, 
 "Tl3319648": {
-"^ot:altLabel": "Xylocopa violacea", 
 "^ot:originalLabel": "Xylocopa violacea Apidae_KJ836969", 
+"^ot:ottId": 664851, 
+"^ot:ottTaxonName": "Xylocopa violacea", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 31154, 
 "@tb:identifier.taxonVariant": 72731, 
@@ -993,17 +1329,24 @@
 }
 }, 
 "Tl3319649": {
-"^ot:originalLabel": "Tetraloniella salicariae Apidae_KJ836760"
+"^ot:originalLabel": "Tetraloniella salicariae Apidae_KJ836760", 
+"^ot:ottId": 4529439, 
+"^ot:ottTaxonName": "Tetraloniella salicariae"
 }, 
 "Tl3319650": {
-"^ot:originalLabel": "Stelis nasuta Megachilidae_KJ839749"
+"^ot:originalLabel": "Stelis nasuta Megachilidae_KJ839749", 
+"^ot:ottId": 3266247, 
+"^ot:ottTaxonName": "Stelis nasuta"
 }, 
 "Tl3319651": {
-"^ot:originalLabel": "Hylaeus gracilicornis Colletidae_HM401171"
+"^ot:originalLabel": "Hylaeus gracilicornis Colletidae_HM401171", 
+"^ot:ottId": 3274426, 
+"^ot:ottTaxonName": "Hylaeus gracilicornis"
 }, 
 "Tl3319652": {
-"^ot:altLabel": "Rhodanthidium septemdentatum", 
 "^ot:originalLabel": "Rhodanthidium septemdentatum Megachilidae_KJ838285", 
+"^ot:ottId": 687422, 
+"^ot:ottTaxonName": "Rhodanthidium septemdentatum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 622188, 
 "@tb:identifier.taxonVariant": 833091, 
@@ -1011,14 +1354,19 @@
 }
 }, 
 "Tl3319653": {
-"^ot:originalLabel": "Coelioxys rufescens Megachilidae_KJ837496"
+"^ot:originalLabel": "Coelioxys rufescens Megachilidae_KJ837496", 
+"^ot:ottId": 3263701, 
+"^ot:ottTaxonName": "Coelioxys rufescens"
 }, 
 "Tl3319654": {
-"^ot:originalLabel": "Hylaeus incongruus Colletidae_KJ837097"
+"^ot:originalLabel": "Hylaeus incongruus Colletidae_KJ837097", 
+"^ot:ottId": 5828257, 
+"^ot:ottTaxonName": "Hylaeus incongruus"
 }, 
 "Tl3319655": {
-"^ot:altLabel": "Halictus quadricinctus", 
 "^ot:originalLabel": "Halictus quadricinctus Halictidae_KJ836586", 
+"^ot:ottId": 720812, 
+"^ot:ottTaxonName": "Halictus quadricinctus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 118276, 
 "@tb:identifier.taxonVariant": 196619, 
@@ -1027,10 +1375,14 @@
 }
 }, 
 "Tl3319656": {
-"^ot:originalLabel": "Andrena hattorfiana Andrenidae_KJ837424"
+"^ot:originalLabel": "Andrena hattorfiana Andrenidae_KJ837424", 
+"^ot:ottId": 3262814, 
+"^ot:ottTaxonName": "Andrena hattorfiana"
 }, 
 "Tl3319657": {
-"^ot:originalLabel": "Andrena proxima Andrenidae_HM401052"
+"^ot:originalLabel": "Andrena proxima Andrenidae_HM401052", 
+"^ot:ottId": 3263053, 
+"^ot:ottTaxonName": "Andrena proxima"
 }, 
 "Tl3319658": {
 "^ot:altLabel": "Halictus tumulorum", 
@@ -1043,11 +1395,14 @@
 }
 }, 
 "Tl3319659": {
-"^ot:originalLabel": "Nomada zonata Apidae_HM401090"
+"^ot:originalLabel": "Nomada zonata Apidae_HM401090", 
+"^ot:ottId": 3268854, 
+"^ot:ottTaxonName": "Nomada zonata"
 }, 
 "Tl3319660": {
-"^ot:altLabel": "Sphecodes albilabris", 
 "^ot:originalLabel": "Sphecodes albilabris Halictidae_GU705920", 
+"^ot:ottId": 3272856, 
+"^ot:ottTaxonName": "Sphecodes albilabris", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 613241, 
 "@tb:identifier.taxonVariant": 820191, 
@@ -1055,8 +1410,9 @@
 }
 }, 
 "Tl3319661": {
-"^ot:altLabel": "Andrena barbilabris", 
 "^ot:originalLabel": "Andrena barbilabris Andrenidae_KJ836669", 
+"^ot:ottId": 163656, 
+"^ot:ottTaxonName": "Andrena barbilabris", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 509955, 
 "@tb:identifier.taxonVariant": 676281, 
@@ -1065,8 +1421,9 @@
 }
 }, 
 "Tl3319662": {
-"^ot:altLabel": "Andrena flavipes", 
 "^ot:originalLabel": "Andrena flavipes Andrenidae_KJ839275", 
+"^ot:ottId": 358138, 
+"^ot:ottTaxonName": "Andrena flavipes", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 444002, 
 "@tb:identifier.taxonVariant": 586246, 
@@ -1075,8 +1432,9 @@
 }
 }, 
 "Tl3319663": {
-"^ot:altLabel": "Lasioglossum lativentre", 
 "^ot:originalLabel": "Lasioglossum lativentre Halictidae_KJ837839", 
+"^ot:ottId": 1056545, 
+"^ot:ottTaxonName": "Lasioglossum lativentre", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 98441, 
 "@tb:identifier.taxonVariant": 177622, 
@@ -1085,8 +1443,9 @@
 }
 }, 
 "Tl3319664": {
-"^ot:altLabel": "Colletes graeffei", 
 "^ot:originalLabel": "Colletes graeffei Colletidae_KJ839614", 
+"^ot:ottId": 530757, 
+"^ot:ottTaxonName": "Colletes graeffei", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 365837, 
 "@tb:identifier.taxonVariant": 392468, 
@@ -1105,26 +1464,39 @@
 }
 }, 
 "Tl3319666": {
-"^ot:originalLabel": "Lasioglossum nitidulum Halictidae_KJ837376"
+"^ot:originalLabel": "Lasioglossum nitidulum Halictidae_KJ837376", 
+"^ot:ottId": 3270657, 
+"^ot:ottTaxonName": "Lasioglossum nitidulum"
 }, 
 "Tl3319667": {
-"^ot:originalLabel": "Lasioglossum virens Halictidae_KJ839379"
+"^ot:originalLabel": "Lasioglossum virens Halictidae_KJ839379", 
+"^ot:ottId": 3270863, 
+"^ot:ottTaxonName": "Lasioglossum virens"
 }, 
 "Tl3319668": {
-"^ot:originalLabel": "Andrena congruens Andrenidae_GU705940"
+"^ot:originalLabel": "Andrena congruens Andrenidae_GU705940", 
+"^ot:ottId": 3262676, 
+"^ot:ottTaxonName": "Andrena congruens"
 }, 
 "Tl3319669": {
-"^ot:originalLabel": "Anthophora quadrimaculata Apidae_KJ839773"
+"^ot:originalLabel": "Anthophora quadrimaculata Apidae_KJ839773", 
+"^ot:ottId": 3267691, 
+"^ot:ottTaxonName": "Anthophora quadrimaculata"
 }, 
 "Tl3319670": {
-"^ot:originalLabel": "Andrena lapponica Andrenidae_KJ837558"
+"^ot:originalLabel": "Andrena lapponica Andrenidae_KJ837558", 
+"^ot:ottId": 3262559, 
+"^ot:ottTaxonName": "Andrena lapponica"
 }, 
 "Tl3319671": {
-"^ot:originalLabel": "Hylaeus brevicornis Colletidae_KJ839278"
+"^ot:originalLabel": "Hylaeus brevicornis Colletidae_KJ839278", 
+"^ot:ottId": 3274130, 
+"^ot:ottTaxonName": "Hylaeus brevicornis"
 }, 
 "Tl3319672": {
-"^ot:altLabel": "Coelioxys afra", 
 "^ot:originalLabel": "Coelioxys afra Megachilidae_KJ837838", 
+"^ot:ottId": 906885, 
+"^ot:ottTaxonName": "Coelioxys afra", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 286138, 
 "@tb:identifier.taxonVariant": 338667, 
@@ -1133,8 +1505,9 @@
 }
 }, 
 "Tl3319673": {
-"^ot:altLabel": "Nomada bifasciata", 
 "^ot:originalLabel": "Nomada bifasciata Apidae_HM401039", 
+"^ot:ottId": 406970, 
+"^ot:ottTaxonName": "Nomada bifasciata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 480879, 
 "@tb:identifier.taxonVariant": 637107, 
@@ -1143,8 +1516,9 @@
 }
 }, 
 "Tl3319674": {
-"^ot:altLabel": "Halictus sexcinctus", 
 "^ot:originalLabel": "Halictus sexcinctus Halictidae_KJ838845", 
+"^ot:ottId": 720819, 
+"^ot:ottTaxonName": "Halictus sexcinctus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 118274, 
 "@tb:identifier.taxonVariant": 196617, 
@@ -1153,8 +1527,9 @@
 }
 }, 
 "Tl3319675": {
-"^ot:altLabel": "Lasioglossum nigripes", 
 "^ot:originalLabel": "Lasioglossum nigripes Halictidae_HM401251", 
+"^ot:ottId": 1006442, 
+"^ot:ottTaxonName": "Lasioglossum nigripes", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 98425, 
 "@tb:identifier.taxonVariant": 177605, 
@@ -1163,8 +1538,9 @@
 }
 }, 
 "Tl3319676": {
-"^ot:altLabel": "Bombus sylvarum", 
 "^ot:originalLabel": "Bombus sylvarum Apidae_GU705942", 
+"^ot:ottId": 192294, 
+"^ot:ottTaxonName": "Bombus sylvarum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 44594, 
 "@tb:identifier.taxonVariant": 104443, 
@@ -1173,20 +1549,29 @@
 }
 }, 
 "Tl3319677": {
-"^ot:originalLabel": "Nomada guttulata Apidae_HQ948030"
+"^ot:originalLabel": "Nomada guttulata Apidae_HQ948030", 
+"^ot:ottId": 3269064, 
+"^ot:ottTaxonName": "Nomada guttulata"
 }, 
 "Tl3319678": {
-"^ot:originalLabel": "Andrena distinguenda Andrenidae_KJ839472"
+"^ot:originalLabel": "Andrena distinguenda Andrenidae_KJ839472", 
+"^ot:ottId": 3262855, 
+"^ot:ottTaxonName": "Andrena distinguenda"
 }, 
 "Tl3319679": {
-"^ot:originalLabel": "Andrena pilipes Andrenidae_KJ836606"
+"^ot:originalLabel": "Andrena pilipes Andrenidae_KJ836606", 
+"^ot:ottId": 3262322, 
+"^ot:ottTaxonName": "Andrena pilipes"
 }, 
 "Tl3319680": {
-"^ot:originalLabel": "Sphecodes crassanus Halictidae_KJ838632"
+"^ot:originalLabel": "Sphecodes crassanus Halictidae_KJ838632", 
+"^ot:ottId": 3273021, 
+"^ot:ottTaxonName": "Sphecodes crassanus"
 }, 
 "Tl3319681": {
-"^ot:altLabel": "Colletes daviesanus", 
 "^ot:originalLabel": "Colletes daviesanus Colletidae_KJ837050", 
+"^ot:ottId": 184862, 
+"^ot:ottTaxonName": "Colletes daviesanus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 365873, 
 "@tb:identifier.taxonVariant": 392508, 
@@ -1195,11 +1580,14 @@
 }
 }, 
 "Tl3319682": {
-"^ot:originalLabel": "Andrena mitis Andrenidae_KJ838697"
+"^ot:originalLabel": "Andrena mitis Andrenidae_KJ838697", 
+"^ot:ottId": 3262410, 
+"^ot:ottTaxonName": "Andrena mitis"
 }, 
 "Tl3319683": {
-"^ot:altLabel": "Colletes similis", 
 "^ot:originalLabel": "Colletes similis Colletidae_KJ838772", 
+"^ot:ottId": 487504, 
+"^ot:ottTaxonName": "Colletes similis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 365904, 
 "@tb:identifier.taxonVariant": 392548, 
@@ -1208,8 +1596,9 @@
 }
 }, 
 "Tl3319684": {
-"^ot:altLabel": "Megachile ericetorum", 
 "^ot:originalLabel": "Megachile ericetorum Megachilidae_GU705988", 
+"^ot:ottId": 1092299, 
+"^ot:ottTaxonName": "Megachile ericetorum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 622288, 
 "@tb:identifier.taxonVariant": 833193, 
@@ -1217,17 +1606,24 @@
 }
 }, 
 "Tl3319685": {
-"^ot:originalLabel": "Coelioxys mandibularis Megachilidae_KJ839664"
+"^ot:originalLabel": "Coelioxys mandibularis Megachilidae_KJ839664", 
+"^ot:ottId": 3263641, 
+"^ot:ottTaxonName": "Coelioxys mandibularis"
 }, 
 "Tl3319686": {
-"^ot:originalLabel": "Nomada furva Apidae_KJ837852"
+"^ot:originalLabel": "Nomada furva Apidae_KJ837852", 
+"^ot:ottId": 3268554, 
+"^ot:ottTaxonName": "Nomada furva"
 }, 
 "Tl3319687": {
-"^ot:originalLabel": "Hylaeus pictipes Colletidae_KJ838603"
+"^ot:originalLabel": "Hylaeus pictipes Colletidae_KJ838603", 
+"^ot:ottId": 3274115, 
+"^ot:ottTaxonName": "Hylaeus pictipes"
 }, 
 "Tl3319688": {
-"^ot:altLabel": "Panurgus calcaratus", 
 "^ot:originalLabel": "Panurgus calcaratus Andrenidae_GU705956", 
+"^ot:ottId": 217330, 
+"^ot:ottTaxonName": "Panurgus calcaratus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 150173, 
 "@tb:identifier.taxonVariant": 225810, 
@@ -1236,8 +1632,9 @@
 }
 }, 
 "Tl3319689": {
-"^ot:altLabel": "Bombus cryptarum", 
 "^ot:originalLabel": "Bombus cryptarum Apidae_JQ843394", 
+"^ot:ottId": 635628, 
+"^ot:ottTaxonName": "Bombus cryptarum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 44641, 
 "@tb:identifier.taxonVariant": 104512, 
@@ -1246,8 +1643,9 @@
 }
 }, 
 "Tl3319690": {
-"^ot:altLabel": "Lasioglossum lucidulum", 
 "^ot:originalLabel": "Lasioglossum lucidulum Halictidae_KJ836604", 
+"^ot:ottId": 186827, 
+"^ot:ottTaxonName": "Lasioglossum lucidulum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 166452, 
 "@tb:identifier.taxonVariant": 241201, 
@@ -1256,8 +1654,9 @@
 }
 }, 
 "Tl3319691": {
-"^ot:altLabel": "Bombus mucidus", 
 "^ot:originalLabel": "Bombus mucidus Apidae_KJ839017", 
+"^ot:ottId": 556459, 
+"^ot:ottTaxonName": "Bombus mucidus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 44582, 
 "@tb:identifier.taxonVariant": 104425, 
@@ -1266,11 +1665,14 @@
 }
 }, 
 "Tl3319692": {
-"^ot:originalLabel": "Andrena marginata Andrenidae_KJ837896"
+"^ot:originalLabel": "Andrena marginata Andrenidae_KJ837896", 
+"^ot:ottId": 3263332, 
+"^ot:ottTaxonName": "Andrena marginata"
 }, 
 "Tl3319693": {
-"^ot:altLabel": "Bombus subterraneus", 
 "^ot:originalLabel": "Bombus subterraneus Apidae_KJ837619", 
+"^ot:ottId": 699064, 
+"^ot:ottTaxonName": "Bombus subterraneus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 44546, 
 "@tb:identifier.taxonVariant": 104361, 
@@ -1279,14 +1681,19 @@
 }
 }, 
 "Tl3319694": {
-"^ot:originalLabel": "Hylaeus clypearis Colletidae_HM401165"
+"^ot:originalLabel": "Hylaeus clypearis Colletidae_HM401165", 
+"^ot:ottId": 3274295, 
+"^ot:ottTaxonName": "Hylaeus clypearis"
 }, 
 "Tl3319695": {
-"^ot:originalLabel": "Eucera chrysopyga Apidae_KJ836791"
+"^ot:originalLabel": "Eucera chrysopyga Apidae_KJ836791", 
+"^ot:ottId": 3267247, 
+"^ot:ottTaxonName": "Eucera chrysopyga"
 }, 
 "Tl3319696": {
-"^ot:altLabel": "Bombus vestalis", 
 "^ot:originalLabel": "Bombus vestalis Apidae_GU705952", 
+"^ot:ottId": 864249, 
+"^ot:ottTaxonName": "Bombus vestalis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 24207, 
 "@tb:identifier.taxonVariant": 104367, 
@@ -1295,8 +1702,9 @@
 }
 }, 
 "Tl3319697": {
-"^ot:altLabel": "Bombus humilis", 
 "^ot:originalLabel": "Bombus humilis Apidae_KJ836557", 
+"^ot:ottId": 1093162, 
+"^ot:ottTaxonName": "Bombus humilis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 44589, 
 "@tb:identifier.taxonVariant": 104435, 
@@ -1305,11 +1713,14 @@
 }
 }, 
 "Tl3319698": {
-"^ot:originalLabel": "Stelis odontopyga Megachilidae_HM401240"
+"^ot:originalLabel": "Stelis odontopyga Megachilidae_HM401240", 
+"^ot:ottId": 3266277, 
+"^ot:ottTaxonName": "Stelis odontopyga"
 }, 
 "Tl3319699": {
-"^ot:altLabel": "Bombus hypnorum", 
 "^ot:originalLabel": "Bombus hypnorum Apidae_KT074031", 
+"^ot:ottId": 161183, 
+"^ot:ottTaxonName": "Bombus hypnorum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3712, 
 "@tb:identifier.taxonVariant": 8864, 
@@ -1318,29 +1729,44 @@
 }
 }, 
 "Tl3319700": {
-"^ot:originalLabel": "Andrena labialis Andrenidae_HM376240"
+"^ot:originalLabel": "Andrena labialis Andrenidae_HM376240", 
+"^ot:ottId": 3263390, 
+"^ot:ottTaxonName": "Andrena labialis"
 }, 
 "Tl3319701": {
-"^ot:originalLabel": "Nomada alboguttata Apidae_KJ838522"
+"^ot:originalLabel": "Nomada alboguttata Apidae_KJ838522", 
+"^ot:ottId": 834825, 
+"^ot:ottTaxonName": "Nomada alboguttata"
 }, 
 "Tl3319702": {
-"^ot:originalLabel": "Andrena synadelpha Andrenidae_KT074024"
+"^ot:originalLabel": "Andrena synadelpha Andrenidae_KT074024", 
+"^ot:ottId": 3262347, 
+"^ot:ottTaxonName": "Andrena synadelpha"
 }, 
 "Tl3319703": {
-"^ot:originalLabel": "Hylaeus gredleri Colletidae_KJ837308"
+"^ot:originalLabel": "Hylaeus gredleri Colletidae_KJ837308", 
+"^ot:ottId": 3274320, 
+"^ot:ottTaxonName": "Hylaeus gredleri"
 }, 
 "Tl3319704": {
-"^ot:originalLabel": "Nomada fulvicornis Apidae_GU706024"
+"^ot:originalLabel": "Nomada fulvicornis Apidae_GU706024", 
+"^ot:ottId": 3268510, 
+"^ot:ottTaxonName": "Nomada fulvicornis"
 }, 
 "Tl3319705": {
-"^ot:originalLabel": "Andrena bucephala Andrenidae_KJ839574"
+"^ot:originalLabel": "Andrena bucephala Andrenidae_KJ839574", 
+"^ot:ottId": 3262276, 
+"^ot:ottTaxonName": "Andrena bucephala"
 }, 
 "Tl3319706": {
-"^ot:originalLabel": "Osmia latreillei Megachilidae_KJ837570"
+"^ot:originalLabel": "Osmia latreillei Megachilidae_KJ837570", 
+"^ot:ottId": 3265833, 
+"^ot:ottTaxonName": "Osmia latreillei"
 }, 
 "Tl3319707": {
-"^ot:altLabel": "Bombus lucorum", 
 "^ot:originalLabel": "Bombus lucorum Apidae_KT164681", 
+"^ot:ottId": 161192, 
+"^ot:ottTaxonName": "Bombus lucorum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3714, 
 "@tb:identifier.taxonVariant": 8866, 
@@ -1349,27 +1775,38 @@
 }
 }, 
 "Tl3319708": {
-"^ot:originalLabel": "Lasioglossum bluethgeni Halictidae_HM401099"
+"^ot:originalLabel": "Lasioglossum bluethgeni Halictidae_HM401099", 
+"^ot:ottId": 3272129, 
+"^ot:ottTaxonName": "Lasioglossum bluethgeni"
 }, 
 "Tl3319709": {
 "^ot:originalLabel": "Andrena subopaca Andrenidae_KJ836638", 
+"^ot:ottId": 1041487, 
+"^ot:ottTaxonName": "Andrena subopaca", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 383699, 
 "@tb:identifier.taxonVariant": 525675
 }
 }, 
 "Tl3319710": {
-"^ot:originalLabel": "Megachile versicolor Megachilidae_KJ836926"
+"^ot:originalLabel": "Megachile versicolor Megachilidae_KJ836926", 
+"^ot:ottId": 1035376, 
+"^ot:ottTaxonName": "Megachile versicolor"
 }, 
 "Tl3319711": {
-"^ot:originalLabel": "Colletes marginatus Colletidae_KJ837247"
+"^ot:originalLabel": "Colletes marginatus Colletidae_KJ837247", 
+"^ot:ottId": 3275194, 
+"^ot:ottTaxonName": "Colletes marginatus"
 }, 
 "Tl3319712": {
-"^ot:originalLabel": "Andrena bimaculata Andrenidae_KJ837393"
+"^ot:originalLabel": "Andrena bimaculata Andrenidae_KJ837393", 
+"^ot:ottId": 3262737, 
+"^ot:ottTaxonName": "Andrena bimaculata"
 }, 
 "Tl3319713": {
-"^ot:altLabel": "Lasioglossum zonulum", 
 "^ot:originalLabel": "Lasioglossum zonulum Halictidae_KJ838322", 
+"^ot:ottId": 1056564, 
+"^ot:ottTaxonName": "Lasioglossum zonulum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 98448, 
 "@tb:identifier.taxonVariant": 177629, 
@@ -1378,8 +1815,9 @@
 }
 }, 
 "Tl3319714": {
-"^ot:altLabel": "Megachile maritima", 
 "^ot:originalLabel": "Megachile maritima Megachilidae_HM401117", 
+"^ot:ottId": 551442, 
+"^ot:ottTaxonName": "Megachile maritima", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 619811, 
 "@tb:identifier.taxonVariant": 829993, 
@@ -1387,11 +1825,14 @@
 }
 }, 
 "Tl3319715": {
-"^ot:originalLabel": "Andrena combinata Andrenidae_KJ837482"
+"^ot:originalLabel": "Andrena combinata Andrenidae_KJ837482", 
+"^ot:ottId": 3262639, 
+"^ot:ottTaxonName": "Andrena combinata"
 }, 
 "Tl3319716": {
-"^ot:altLabel": "Nomada signata", 
 "^ot:originalLabel": "Nomada signata Apidae_HM401085", 
+"^ot:ottId": 1055402, 
+"^ot:ottTaxonName": "Nomada signata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 622184, 
 "@tb:identifier.taxonVariant": 833087, 
@@ -1399,8 +1840,9 @@
 }
 }, 
 "Tl3319717": {
-"^ot:altLabel": "Chelostoma emarginatum", 
 "^ot:originalLabel": "Chelostoma emarginatum Megachilidae_KJ837355", 
+"^ot:ottId": 741590, 
+"^ot:ottTaxonName": "Chelostoma emarginatum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 424308, 
 "@tb:identifier.taxonVariant": 557176, 
@@ -1409,23 +1851,34 @@
 }
 }, 
 "Tl3319718": {
-"^ot:originalLabel": "Andrena fucata Andrenidae_JQ909669"
+"^ot:originalLabel": "Andrena fucata Andrenidae_JQ909669", 
+"^ot:ottId": 330872, 
+"^ot:ottTaxonName": "Andrena fucata"
 }, 
 "Tl3319719": {
-"^ot:originalLabel": "Osmia uncinata Megachilidae_HM401230"
+"^ot:originalLabel": "Osmia uncinata Megachilidae_HM401230", 
+"^ot:ottId": 3265894, 
+"^ot:ottTaxonName": "Osmia uncinata"
 }, 
 "Tl3319720": {
-"^ot:originalLabel": "Lasioglossum alpigenum Halictidae_KJ837857"
+"^ot:originalLabel": "Lasioglossum alpigenum Halictidae_KJ837857", 
+"^ot:ottId": 3271242, 
+"^ot:ottTaxonName": "Lasioglossum alpigenum"
 }, 
 "Tl3319721": {
-"^ot:originalLabel": "Lasioglossum bavaricum Halictidae_KJ838236"
+"^ot:originalLabel": "Lasioglossum bavaricum Halictidae_KJ838236", 
+"^ot:ottId": 3271199, 
+"^ot:ottTaxonName": "Lasioglossum bavaricum"
 }, 
 "Tl3319722": {
-"^ot:originalLabel": "Hylaeus moricei Colletidae_HM401175"
+"^ot:originalLabel": "Hylaeus moricei Colletidae_HM401175", 
+"^ot:ottId": 3273835, 
+"^ot:ottTaxonName": "Hylaeus moricei"
 }, 
 "Tl3319723": {
-"^ot:altLabel": "Bombus barbutellus", 
 "^ot:originalLabel": "Bombus barbutellus Apidae_GU705885", 
+"^ot:ottId": 161202, 
+"^ot:ottTaxonName": "Bombus barbutellus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 44555, 
 "@tb:identifier.taxonVariant": 104374, 
@@ -1434,11 +1887,14 @@
 }
 }, 
 "Tl3319724": {
-"^ot:originalLabel": "Dufourea dentiventris Halictidae_HM401151"
+"^ot:originalLabel": "Dufourea dentiventris Halictidae_HM401151", 
+"^ot:ottId": 3270395, 
+"^ot:ottTaxonName": "Dufourea dentiventris"
 }, 
 "Tl3319725": {
-"^ot:altLabel": "Sphecodes miniatus", 
 "^ot:originalLabel": "Sphecodes miniatus Halictidae_KJ836506", 
+"^ot:ottId": 3272873, 
+"^ot:ottTaxonName": "Sphecodes miniatus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 613252, 
 "@tb:identifier.taxonVariant": 820202, 
@@ -1446,21 +1902,28 @@
 }
 }, 
 "Tl3319726": {
-"^ot:originalLabel": "Anthidium florentinum Megachilidae_KJ839553"
+"^ot:originalLabel": "Anthidium florentinum Megachilidae_KJ839553", 
+"^ot:ottId": 3266514, 
+"^ot:ottTaxonName": "Anthidium florentinum"
 }, 
 "Tl3319727": {
 "^ot:originalLabel": "Eucera nigrescens Apidae_KJ838368", 
+"^ot:ottId": 508520, 
+"^ot:ottTaxonName": "Eucera nigrescens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 445909, 
 "@tb:identifier.taxonVariant": 589254
 }
 }, 
 "Tl3319728": {
-"^ot:originalLabel": "Andrena pandellei Andrenidae_KJ839079"
+"^ot:originalLabel": "Andrena pandellei Andrenidae_KJ839079", 
+"^ot:ottId": 3262880, 
+"^ot:ottTaxonName": "Andrena pandellei"
 }, 
 "Tl3319729": {
-"^ot:altLabel": "Lasioglossum laevigatum", 
 "^ot:originalLabel": "Lasioglossum laevigatum Halictidae_HQ954752", 
+"^ot:ottId": 1056547, 
+"^ot:ottTaxonName": "Lasioglossum laevigatum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 98440, 
 "@tb:identifier.taxonVariant": 177621, 
@@ -1469,41 +1932,64 @@
 }
 }, 
 "Tl3319730": {
-"^ot:originalLabel": "Andrena ferox Andrenidae_KJ839323"
+"^ot:originalLabel": "Andrena ferox Andrenidae_KJ839323", 
+"^ot:ottId": 3262973, 
+"^ot:ottTaxonName": "Andrena ferox"
 }, 
 "Tl3319731": {
-"^ot:originalLabel": "Nomada sexfasciata Apidae_KJ837270"
+"^ot:originalLabel": "Nomada sexfasciata Apidae_KJ837270", 
+"^ot:ottId": 3268711, 
+"^ot:ottTaxonName": "Nomada sexfasciata"
 }, 
 "Tl3319732": {
-"^ot:originalLabel": "Andrena morio Andrenidae_HM376243"
+"^ot:originalLabel": "Andrena morio Andrenidae_HM376243", 
+"^ot:ottId": 3263147, 
+"^ot:ottTaxonName": "Andrena morio"
 }, 
 "Tl3319733": {
-"^ot:originalLabel": "Andrena nuptialis Andrenidae_KJ837325"
+"^ot:originalLabel": "Andrena nuptialis Andrenidae_KJ837325", 
+"^ot:ottId": 3262110, 
+"^ot:ottTaxonName": "Andrena nuptialis"
 }, 
 "Tl3319734": {
-"^ot:originalLabel": "Panurginus montanus Andrenidae_HQ948095"
+"^ot:originalLabel": "Panurginus montanus Andrenidae_HQ948095", 
+"^ot:ottId": 4531424, 
+"^ot:ottTaxonName": "Panurginus montanus"
 }, 
 "Tl3319735": {
-"^ot:originalLabel": "Andrena tibialis Andrenidae_KJ837901"
+"^ot:originalLabel": "Andrena tibialis Andrenidae_KJ837901", 
+"^ot:ottId": 3262993, 
+"^ot:ottTaxonName": "Andrena tibialis"
 }, 
 "Tl3319736": {
-"^ot:originalLabel": "Osmia versicolor Megachilidae_KJ838819"
+"^ot:originalLabel": "Osmia versicolor Megachilidae_KJ838819", 
+"^ot:ottId": 738608, 
+"^ot:ottTaxonName": "Osmia versicolor"
 }, 
 "Tl3319737": {
-"^ot:originalLabel": "Andrena intermedia Andrenidae_KJ836983"
+"^ot:originalLabel": "Andrena intermedia Andrenidae_KJ836983", 
+"^ot:ottId": 3262979, 
+"^ot:ottTaxonName": "Andrena intermedia"
 }, 
 "Tl3319738": {
-"^ot:originalLabel": "Colletes mlokossewiczi Colletidae_KJ837366"
+"^ot:originalLabel": "Colletes mlokossewiczi Colletidae_KJ837366", 
+"^ot:ottId": 3275295, 
+"^ot:ottTaxonName": "Colletes mlokossewiczi"
 }, 
 "Tl3319739": {
-"^ot:originalLabel": "Hylaeus pfankuchi Colletidae_HM401182"
+"^ot:originalLabel": "Hylaeus pfankuchi Colletidae_HM401182", 
+"^ot:ottId": 3274158, 
+"^ot:ottTaxonName": "Hylaeus pfankuchi"
 }, 
 "Tl3319740": {
-"^ot:originalLabel": "Andrena hypopolia Andrenidae_HM376239"
+"^ot:originalLabel": "Andrena hypopolia Andrenidae_HM376239", 
+"^ot:ottId": 3262927, 
+"^ot:ottTaxonName": "Andrena hypopolia"
 }, 
 "Tl3319741": {
-"^ot:altLabel": "Macropis europaea", 
 "^ot:originalLabel": "Macropis europaea Melittidae_GU706049", 
+"^ot:ottId": 247226, 
+"^ot:ottTaxonName": "Macropis europaea (species in superclass Hexapoda)", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 37490, 
 "@tb:identifier.taxonVariant": 86635, 
@@ -1512,8 +1998,9 @@
 }
 }, 
 "Tl3319742": {
-"^ot:altLabel": "Bombus magnus", 
 "^ot:originalLabel": "Bombus magnus Apidae_GU705915", 
+"^ot:ottId": 192295, 
+"^ot:ottTaxonName": "Bombus magnus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 200165, 
 "@tb:identifier.taxonVariant": 270765, 
@@ -1522,8 +2009,9 @@
 }
 }, 
 "Tl3319743": {
-"^ot:altLabel": "Bombus mesomelas", 
 "^ot:originalLabel": "Bombus mesomelas Apidae_HQ563803", 
+"^ot:ottId": 386326, 
+"^ot:ottTaxonName": "Bombus mesomelas", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 44580, 
 "@tb:identifier.taxonVariant": 104423, 
@@ -1532,14 +2020,19 @@
 }
 }, 
 "Tl3319744": {
-"^ot:originalLabel": "Lasioglossum quadrinotatulum Halictidae_KJ839622"
+"^ot:originalLabel": "Lasioglossum quadrinotatulum Halictidae_KJ839622", 
+"^ot:ottId": 3271354, 
+"^ot:ottTaxonName": "Lasioglossum quadrinotatulum"
 }, 
 "Tl3319745": {
-"^ot:originalLabel": "Stelis signata Megachilidae_KJ838629"
+"^ot:originalLabel": "Stelis signata Megachilidae_KJ838629", 
+"^ot:ottId": 3266283, 
+"^ot:ottTaxonName": "Stelis signata"
 }, 
 "Tl3319746": {
-"^ot:altLabel": "Lasioglossum marginatum", 
 "^ot:originalLabel": "Lasioglossum marginatum Halictidae_HM401258", 
+"^ot:ottId": 1006446, 
+"^ot:ottTaxonName": "Lasioglossum marginatum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 98423, 
 "@tb:identifier.taxonVariant": 177603, 
@@ -1548,8 +2041,9 @@
 }
 }, 
 "Tl3319747": {
-"^ot:altLabel": "Megachile centuncularis", 
 "^ot:originalLabel": "Megachile centuncularis Megachilidae_HM401192", 
+"^ot:ottId": 840226, 
+"^ot:ottTaxonName": "Megachile centuncularis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 509907, 
 "@tb:identifier.taxonVariant": 676185, 
@@ -1558,8 +2052,9 @@
 }
 }, 
 "Tl3319748": {
-"^ot:altLabel": "Sphecodes schenckii", 
 "^ot:originalLabel": "Sphecodes schenckii Halictidae_KJ836762", 
+"^ot:ottId": 3272941, 
+"^ot:ottTaxonName": "Sphecodes schenckii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 613247, 
 "@tb:identifier.taxonVariant": 820197, 
@@ -1567,8 +2062,9 @@
 }
 }, 
 "Tl3319749": {
-"^ot:altLabel": "Bombus argillaceus", 
 "^ot:originalLabel": "Bombus argillaceus Apidae_KJ837978", 
+"^ot:ottId": 911547, 
+"^ot:ottTaxonName": "Bombus argillaceus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 44537, 
 "@tb:identifier.taxonVariant": 104350, 
@@ -1577,33 +2073,48 @@
 }
 }, 
 "Tl3319750": {
-"^ot:originalLabel": "Andrena ruficrus Andrenidae_HM401042"
+"^ot:originalLabel": "Andrena ruficrus Andrenidae_HM401042", 
+"^ot:ottId": 3262763, 
+"^ot:ottTaxonName": "Andrena ruficrus"
 }, 
 "Tl3319751": {
 "^ot:originalLabel": "Hoplitis mitis Megachilidae_KJ838545", 
+"^ot:ottId": 633861, 
+"^ot:ottTaxonName": "Hoplitis mitis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 484221, 
 "@tb:identifier.taxonVariant": 641574
 }
 }, 
 "Tl3319752": {
-"^ot:originalLabel": "Anthidium loti Megachilidae_KJ836898"
+"^ot:originalLabel": "Anthidium loti Megachilidae_KJ836898", 
+"^ot:ottId": 3266497, 
+"^ot:ottTaxonName": "Anthidium loti"
 }, 
 "Tl3319753": {
-"^ot:originalLabel": "Nomada rostrata Apidae_KJ839808"
+"^ot:originalLabel": "Nomada rostrata Apidae_KJ839808", 
+"^ot:ottId": 3268709, 
+"^ot:ottTaxonName": "Nomada rostrata"
 }, 
 "Tl3319754": {
-"^ot:originalLabel": "Megachile lagopoda Megachilidae_HM401107"
+"^ot:originalLabel": "Megachile lagopoda Megachilidae_HM401107", 
+"^ot:ottId": 3265461, 
+"^ot:ottTaxonName": "Megachile lagopoda"
 }, 
 "Tl3319755": {
-"^ot:originalLabel": "Lasioglossum tricinctum Halictidae_KJ838157"
+"^ot:originalLabel": "Lasioglossum tricinctum Halictidae_KJ838157", 
+"^ot:ottId": 3271316, 
+"^ot:ottTaxonName": "Lasioglossum tricinctum"
 }, 
 "Tl3319756": {
-"^ot:originalLabel": "Nomada obtusifrons Apidae_KJ836639"
+"^ot:originalLabel": "Nomada obtusifrons Apidae_KJ836639", 
+"^ot:ottId": 1032839, 
+"^ot:ottTaxonName": "Nomada obtusifrons"
 }, 
 "Tl3319757": {
-"^ot:altLabel": "Anthophora plumipes", 
 "^ot:originalLabel": "Anthophora plumipes Apidae_HM376219", 
+"^ot:ottId": 811589, 
+"^ot:ottTaxonName": "Anthophora plumipes", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 406216, 
 "@tb:identifier.taxonVariant": 409348, 
@@ -1612,17 +2123,24 @@
 }
 }, 
 "Tl3319758": {
-"^ot:originalLabel": "Nomada argentata Apidae_KJ838360"
+"^ot:originalLabel": "Nomada argentata Apidae_KJ838360", 
+"^ot:ottId": 3269030, 
+"^ot:ottTaxonName": "Nomada argentata"
 }, 
 "Tl3319759": {
-"^ot:originalLabel": "Dufourea inermis Halictidae_KJ837444"
+"^ot:originalLabel": "Dufourea inermis Halictidae_KJ837444", 
+"^ot:ottId": 3270500, 
+"^ot:ottTaxonName": "Dufourea inermis"
 }, 
 "Tl3319760": {
-"^ot:originalLabel": "Heriades crenulatus Megachilidae_KJ836538"
+"^ot:originalLabel": "Heriades crenulatus Megachilidae_KJ836538", 
+"^ot:ottId": 4530485, 
+"^ot:ottTaxonName": "Heriades crenulatus"
 }, 
 "Tl3319761": {
-"^ot:altLabel": "Osmia rufohirta", 
 "^ot:originalLabel": "Osmia rufohirta Megachilidae_KJ836740", 
+"^ot:ottId": 885104, 
+"^ot:ottTaxonName": "Osmia rufohirta", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 484253, 
 "@tb:identifier.taxonVariant": 641638, 
@@ -1631,8 +2149,9 @@
 }
 }, 
 "Tl3319762": {
-"^ot:altLabel": "Colletes hylaeiformis", 
 "^ot:originalLabel": "Colletes hylaeiformis Colletidae_KJ837953", 
+"^ot:ottId": 759247, 
+"^ot:ottTaxonName": "Colletes hylaeiformis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 427668, 
 "@tb:identifier.taxonVariant": 563115, 
@@ -1641,17 +2160,24 @@
 }
 }, 
 "Tl3319763": {
-"^ot:originalLabel": "Hylaeus pectoralis Colletidae_KJ839242"
+"^ot:originalLabel": "Hylaeus pectoralis Colletidae_KJ839242", 
+"^ot:ottId": 3273937, 
+"^ot:ottTaxonName": "Hylaeus pectoralis"
 }, 
 "Tl3319764": {
-"^ot:originalLabel": "Osmia viridana Megachilidae_KJ837269"
+"^ot:originalLabel": "Osmia viridana Megachilidae_KJ837269", 
+"^ot:ottId": 3265665, 
+"^ot:ottTaxonName": "Osmia viridana"
 }, 
 "Tl3319765": {
-"^ot:originalLabel": "Dufourea paradoxa Halictidae_KJ839493"
+"^ot:originalLabel": "Dufourea paradoxa Halictidae_KJ839493", 
+"^ot:ottId": 3270452, 
+"^ot:ottTaxonName": "Dufourea paradoxa"
 }, 
 "Tl3319766": {
-"^ot:altLabel": "Halictus simplex", 
 "^ot:originalLabel": "Halictus simplex Halictidae_KJ836612", 
+"^ot:ottId": 188792, 
+"^ot:ottTaxonName": "Halictus simplex", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 118261, 
 "@tb:identifier.taxonVariant": 196604, 
@@ -1660,20 +2186,27 @@
 }
 }, 
 "Tl3319767": {
-"^ot:originalLabel": "Andrena angustior Andrenidae_JQ909640"
+"^ot:originalLabel": "Andrena angustior Andrenidae_JQ909640", 
+"^ot:ottId": 883577, 
+"^ot:ottTaxonName": "Andrena angustior"
 }, 
 "Tl3319768": {
 "^ot:originalLabel": "Andrena albofasciata Andrenidae_KJ837459"
 }, 
 "Tl3319769": {
-"^ot:originalLabel": "Lasioglossum euboeense Halictidae_KJ838441"
+"^ot:originalLabel": "Lasioglossum euboeense Halictidae_KJ838441", 
+"^ot:ottId": 3270699, 
+"^ot:ottTaxonName": "Lasioglossum euboeense"
 }, 
 "Tl3319770": {
-"^ot:originalLabel": "Thyreus orbatus Apidae_HM401239"
+"^ot:originalLabel": "Thyreus orbatus Apidae_HM401239", 
+"^ot:ottId": 3267380, 
+"^ot:ottTaxonName": "Thyreus orbatus"
 }, 
 "Tl3319771": {
-"^ot:altLabel": "Sphecodes scabricollis", 
 "^ot:originalLabel": "Sphecodes scabricollis Halictidae_KJ838552", 
+"^ot:ottId": 3273064, 
+"^ot:ottTaxonName": "Sphecodes scabricollis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 613255, 
 "@tb:identifier.taxonVariant": 820205, 
@@ -1682,14 +2215,17 @@
 }, 
 "Tl3319772": {
 "^ot:originalLabel": "Dasypoda suripes Melittidae_KJ838502", 
+"^ot:ottId": 153917, 
+"^ot:ottTaxonName": "Dasypoda suripes", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 441904, 
 "@tb:identifier.taxonVariant": 583294
 }
 }, 
 "Tl3319773": {
-"^ot:altLabel": "Lasioglossum malachurum", 
 "^ot:originalLabel": "Lasioglossum malachurum Halictidae_GU706051", 
+"^ot:ottId": 1006448, 
+"^ot:ottTaxonName": "Lasioglossum malachurum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 98422, 
 "@tb:identifier.taxonVariant": 177602, 
@@ -1698,14 +2234,19 @@
 }
 }, 
 "Tl3319774": {
-"^ot:originalLabel": "Hylaeus pilosulus Colletidae_HQ948063"
+"^ot:originalLabel": "Hylaeus pilosulus Colletidae_HQ948063", 
+"^ot:ottId": 1053531, 
+"^ot:ottTaxonName": "Hylaeus pilosulus"
 }, 
 "Tl3319775": {
-"^ot:originalLabel": "Nomada ruficornis Apidae_KT164649"
+"^ot:originalLabel": "Nomada ruficornis Apidae_KT164649", 
+"^ot:ottId": 264195, 
+"^ot:ottTaxonName": "Nomada ruficornis"
 }, 
 "Tl3319776": {
-"^ot:altLabel": "Sphecodes crassus", 
 "^ot:originalLabel": "Sphecodes crassus Halictidae_GU705945", 
+"^ot:ottId": 3272924, 
+"^ot:ottTaxonName": "Sphecodes crassus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 613258, 
 "@tb:identifier.taxonVariant": 820208, 
@@ -1713,11 +2254,14 @@
 }
 }, 
 "Tl3319777": {
-"^ot:originalLabel": "Nomada mutica Apidae_KJ838713"
+"^ot:originalLabel": "Nomada mutica Apidae_KJ838713", 
+"^ot:ottId": 3269056, 
+"^ot:ottTaxonName": "Nomada mutica"
 }, 
 "Tl3319778": {
-"^ot:altLabel": "Sphecodes reticulatus", 
 "^ot:originalLabel": "Sphecodes reticulatus Halictidae_KJ837577", 
+"^ot:ottId": 3272874, 
+"^ot:ottTaxonName": "Sphecodes reticulatus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 613244, 
 "@tb:identifier.taxonVariant": 820194, 
@@ -1725,8 +2269,9 @@
 }
 }, 
 "Tl3319779": {
-"^ot:altLabel": "Osmia niveata", 
 "^ot:originalLabel": "Osmia niveata Megachilidae_KJ838274", 
+"^ot:ottId": 671863, 
+"^ot:ottTaxonName": "Osmia niveata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 484251, 
 "@tb:identifier.taxonVariant": 641634, 
@@ -1735,14 +2280,19 @@
 }
 }, 
 "Tl3319780": {
-"^ot:originalLabel": "Lasioglossum breviventre Halictidae_KJ836700"
+"^ot:originalLabel": "Lasioglossum breviventre Halictidae_KJ836700", 
+"^ot:ottId": 3271544, 
+"^ot:ottTaxonName": "Lasioglossum breviventre"
 }, 
 "Tl3319781": {
-"^ot:originalLabel": "Lasioglossum nitidiusculum Halictidae_KT074055"
+"^ot:originalLabel": "Lasioglossum nitidiusculum Halictidae_KT074055", 
+"^ot:ottId": 198055, 
+"^ot:ottTaxonName": "Lasioglossum nitidiusculum"
 }, 
 "Tl3319782": {
-"^ot:altLabel": "Panurgus dentipes", 
 "^ot:originalLabel": "Panurgus dentipes Andrenidae_KJ836713", 
+"^ot:ottId": 103200, 
+"^ot:ottTaxonName": "Panurgus dentipes", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 441887, 
 "@tb:identifier.taxonVariant": 583277, 
@@ -1751,14 +2301,19 @@
 }
 }, 
 "Tl3319783": {
-"^ot:originalLabel": "Hylaeus signatus Colletidae_KJ836815"
+"^ot:originalLabel": "Hylaeus signatus Colletidae_KJ836815", 
+"^ot:ottId": 3274256, 
+"^ot:ottTaxonName": "Hylaeus signatus"
 }, 
 "Tl3319784": {
-"^ot:originalLabel": "Nomada sheppardana Apidae_KJ83747"
+"^ot:originalLabel": "Nomada sheppardana Apidae_KJ83747", 
+"^ot:ottId": 3268858, 
+"^ot:ottTaxonName": "Nomada sheppardana"
 }, 
 "Tl3319785": {
-"^ot:altLabel": "Epeoloides coecutiens", 
 "^ot:originalLabel": "Epeoloides coecutiens Apidae_GU706014", 
+"^ot:ottId": 1092291, 
+"^ot:ottTaxonName": "Epeoloides coecutiens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 619841, 
 "@tb:identifier.taxonVariant": 830023, 
@@ -1766,39 +2321,58 @@
 }
 }, 
 "Tl3319786": {
-"^ot:originalLabel": "Coelioxys brevis Megachilidae_KJ837761"
+"^ot:originalLabel": "Coelioxys brevis Megachilidae_KJ837761", 
+"^ot:ottId": 3263780, 
+"^ot:ottTaxonName": "Coelioxys brevis"
 }, 
 "Tl3319787": {
-"^ot:originalLabel": "Andrena coitana Andrenidae_KJ836599"
+"^ot:originalLabel": "Andrena coitana Andrenidae_KJ836599", 
+"^ot:ottId": 834709, 
+"^ot:ottTaxonName": "Andrena coitana"
 }, 
 "Tl3319788": {
-"^ot:originalLabel": "Andrena trimmerana Andrenidae_KJ836680"
+"^ot:originalLabel": "Andrena trimmerana Andrenidae_KJ836680", 
+"^ot:ottId": 3263356, 
+"^ot:ottTaxonName": "Andrena trimmerana"
 }, 
 "Tl3319789": {
 "^ot:originalLabel": "Osmia brevicornis Megachilidae_HM401200", 
+"^ot:ottId": 280578, 
+"^ot:ottTaxonName": "Osmia brevicornis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 484240, 
 "@tb:identifier.taxonVariant": 641612
 }
 }, 
 "Tl3319790": {
-"^ot:originalLabel": "Megachile alpicola Megachilidae_KJ838895"
+"^ot:originalLabel": "Megachile alpicola Megachilidae_KJ838895", 
+"^ot:ottId": 3264181, 
+"^ot:ottTaxonName": "Megachile alpicola"
 }, 
 "Tl3319791": {
-"^ot:originalLabel": "Nomada flava Apidae_GU706019"
+"^ot:originalLabel": "Nomada flava Apidae_GU706019", 
+"^ot:ottId": 3268553, 
+"^ot:ottTaxonName": "Nomada flava"
 }, 
 "Tl3319792": {
-"^ot:originalLabel": "Ceratina cucurbitina Apidae_KJ836657"
+"^ot:originalLabel": "Ceratina cucurbitina Apidae_KJ836657", 
+"^ot:ottId": 3269546, 
+"^ot:ottTaxonName": "Ceratina cucurbitina"
 }, 
 "Tl3319793": {
-"^ot:originalLabel": "Lasioglossum subfasciatum Halictidae_KJ839824"
+"^ot:originalLabel": "Lasioglossum subfasciatum Halictidae_KJ839824", 
+"^ot:ottId": 3271758, 
+"^ot:ottTaxonName": "Lasioglossum subfasciatum"
 }, 
 "Tl3319794": {
-"^ot:originalLabel": "Nomada emarginata Apidae_KJ836575"
+"^ot:originalLabel": "Nomada emarginata Apidae_KJ836575", 
+"^ot:ottId": 3268555, 
+"^ot:ottTaxonName": "Nomada emarginata"
 }, 
 "Tl3319795": {
-"^ot:altLabel": "Halictus scabiosae", 
 "^ot:originalLabel": "Halictus scabiosae Halictidae_KJ839219", 
+"^ot:ottId": 484262, 
+"^ot:ottTaxonName": "Halictus scabiosae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 118273, 
 "@tb:identifier.taxonVariant": 196616, 
@@ -1807,8 +2381,9 @@
 }
 }, 
 "Tl3319796": {
-"^ot:altLabel": "Hylaeus punctatus", 
 "^ot:originalLabel": "Hylaeus punctatus Colletidae_KJ839293", 
+"^ot:ottId": 954949, 
+"^ot:ottTaxonName": "Hylaeus punctatus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 274944, 
 "@tb:identifier.taxonVariant": 475719, 
@@ -1817,14 +2392,19 @@
 }
 }, 
 "Tl3319797": {
-"^ot:originalLabel": "Lasioglossum quadrinotatum KX374818"
+"^ot:originalLabel": "Lasioglossum quadrinotatum KX374818", 
+"^ot:ottId": 3272076, 
+"^ot:ottTaxonName": "Lasioglossum quadrinotatum"
 }, 
 "Tl3319798": {
-"^ot:originalLabel": "Nomada melathoracica Apidae_HQ948037"
+"^ot:originalLabel": "Nomada melathoracica Apidae_HQ948037", 
+"^ot:ottId": 3268822, 
+"^ot:ottTaxonName": "Nomada melathoracica"
 }, 
 "Tl3319799": {
-"^ot:altLabel": "Chelostoma campanularum", 
 "^ot:originalLabel": "Chelostoma campanularum Megachilidae_KR792705", 
+"^ot:ottId": 1071896, 
+"^ot:ottTaxonName": "Chelostoma campanularum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 424305, 
 "@tb:identifier.taxonVariant": 557173, 
@@ -1833,8 +2413,9 @@
 }
 }, 
 "Tl3319800": {
-"^ot:altLabel": "Melitta haemorrhoidalis", 
 "^ot:originalLabel": "Melitta haemorrhoidalis Melittidae_GU706046", 
+"^ot:ottId": 153924, 
+"^ot:ottTaxonName": "Melitta haemorrhoidalis (species in superclass Hexapoda)", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 441912, 
 "@tb:identifier.taxonVariant": 583303, 
@@ -1843,8 +2424,9 @@
 }
 }, 
 "Tl3319801": {
-"^ot:altLabel": "Bombus muscorum", 
 "^ot:originalLabel": "Bombus muscorum Apidae_KJ838500", 
+"^ot:ottId": 483324, 
+"^ot:ottTaxonName": "Bombus muscorum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 44588, 
 "@tb:identifier.taxonVariant": 104434, 
@@ -1853,20 +2435,29 @@
 }
 }, 
 "Tl3319802": {
-"^ot:originalLabel": "Hylaeus cornutus Colletidae_KJ839471"
+"^ot:originalLabel": "Hylaeus cornutus Colletidae_KJ839471", 
+"^ot:ottId": 3273978, 
+"^ot:ottTaxonName": "Hylaeus cornutus"
 }, 
 "Tl3319803": {
-"^ot:originalLabel": "Lasioglossum cupromicans Halictidae_KJ837001"
+"^ot:originalLabel": "Lasioglossum cupromicans Halictidae_KJ837001", 
+"^ot:ottId": 58951, 
+"^ot:ottTaxonName": "Lasioglossum cupromicans"
 }, 
 "Tl3319804": {
-"^ot:originalLabel": "Nomada obscura Apidae_KJ837640"
+"^ot:originalLabel": "Nomada obscura Apidae_KJ837640", 
+"^ot:ottId": 3268884, 
+"^ot:ottTaxonName": "Nomada obscura"
 }, 
 "Tl3319805": {
-"^ot:originalLabel": "Andrena minutula Andrenidae_KJ836685"
+"^ot:originalLabel": "Andrena minutula Andrenidae_KJ836685", 
+"^ot:ottId": 747468, 
+"^ot:ottTaxonName": "Andrena minutula"
 }, 
 "Tl3319806": {
-"^ot:altLabel": "Colletes collaris", 
 "^ot:originalLabel": "Colletes collaris Colletidae_DQ085544", 
+"^ot:ottId": 773001, 
+"^ot:ottTaxonName": "Colletes collaris", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 297174, 
 "@tb:identifier.taxonVariant": 347061, 
@@ -1875,26 +2466,39 @@
 }
 }, 
 "Tl3319807": {
-"^ot:originalLabel": "Nomada marshamella Apidae_GU706032"
+"^ot:originalLabel": "Nomada marshamella Apidae_GU706032", 
+"^ot:ottId": 901668, 
+"^ot:ottTaxonName": "Nomada marshamella"
 }, 
 "Tl3319808": {
-"^ot:originalLabel": "Megachile nigriventris Megachilidae_GU705992"
+"^ot:originalLabel": "Megachile nigriventris Megachilidae_GU705992", 
+"^ot:ottId": 3264625, 
+"^ot:ottTaxonName": "Megachile nigriventris"
 }, 
 "Tl3319809": {
-"^ot:originalLabel": "Anthophora pubescens Apidae_KJ836626"
+"^ot:originalLabel": "Anthophora pubescens Apidae_KJ836626", 
+"^ot:ottId": 3267668, 
+"^ot:ottTaxonName": "Anthophora pubescens"
 }, 
 "Tl3319810": {
-"^ot:originalLabel": "Hoplitis lepeletieri Megachilidae_KJ837451"
+"^ot:originalLabel": "Hoplitis lepeletieri Megachilidae_KJ837451", 
+"^ot:ottId": 405699, 
+"^ot:ottTaxonName": "Hoplitis lepeletieri"
 }, 
 "Tl3319811": {
-"^ot:originalLabel": "Andrena barbareae Andrenidae_KT164628"
+"^ot:originalLabel": "Andrena barbareae Andrenidae_KT164628", 
+"^ot:ottId": 3263189, 
+"^ot:ottTaxonName": "Andrena barbareae"
 }, 
 "Tl3319812": {
-"^ot:originalLabel": "Coelioxys echinata Megachilidae_HM401148"
+"^ot:originalLabel": "Coelioxys echinata Megachilidae_HM401148", 
+"^ot:ottId": 3263733, 
+"^ot:ottTaxonName": "Coelioxys echinata"
 }, 
 "Tl3319813": {
-"^ot:altLabel": "Lasioglossum brevicorne", 
 "^ot:originalLabel": "Lasioglossum brevicorne Halictidae_HQ948053", 
+"^ot:ottId": 11834, 
+"^ot:ottTaxonName": "Lasioglossum brevicorne", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 166448, 
 "@tb:identifier.taxonVariant": 241197, 
@@ -1903,26 +2507,37 @@
 }
 }, 
 "Tl3319814": {
-"^ot:originalLabel": "Lasioglossum sexmaculatum Halictidae_KJ839463"
+"^ot:originalLabel": "Lasioglossum sexmaculatum Halictidae_KJ839463", 
+"^ot:ottId": 3271152, 
+"^ot:ottTaxonName": "Lasioglossum sexmaculatum"
 }, 
 "Tl3319815": {
-"^ot:originalLabel": "Panurginus herzi Andrenidae_KJ838943"
+"^ot:originalLabel": "Panurginus herzi Andrenidae_KJ838943", 
+"^ot:ottId": 4531430, 
+"^ot:ottTaxonName": "Panurginus herzi"
 }, 
 "Tl3319816": {
 "^ot:originalLabel": "Coelioxys conica Megachilidae_HM401145"
 }, 
 "Tl3319817": {
-"^ot:originalLabel": "Lasioglossum intermedium Halictidae_KJ838212"
+"^ot:originalLabel": "Lasioglossum intermedium Halictidae_KJ838212", 
+"^ot:ottId": 3271243, 
+"^ot:ottTaxonName": "Lasioglossum intermedium"
 }, 
 "Tl3319818": {
-"^ot:originalLabel": "Nomada roberjeotiana Apidae_KJ837507"
+"^ot:originalLabel": "Nomada roberjeotiana Apidae_KJ837507", 
+"^ot:ottId": 3268820, 
+"^ot:ottTaxonName": "Nomada roberjeotiana"
 }, 
 "Tl3319819": {
-"^ot:originalLabel": "Andrena labiata Andrenidae_HM401048"
+"^ot:originalLabel": "Andrena labiata Andrenidae_HM401048", 
+"^ot:ottId": 3262615, 
+"^ot:ottTaxonName": "Andrena labiata"
 }, 
 "Tl3319820": {
-"^ot:altLabel": "Sphecodes rubicundus", 
 "^ot:originalLabel": "Sphecodes rubicundus Halictidae_HQ563095", 
+"^ot:ottId": 3272955, 
+"^ot:ottTaxonName": "Sphecodes rubicundus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 613212, 
 "@tb:identifier.taxonVariant": 820162, 
@@ -1930,8 +2545,9 @@
 }
 }, 
 "Tl3319821": {
-"^ot:altLabel": "Bombus veteranus", 
 "^ot:originalLabel": "Bombus veteranus Apidae_HQ563800", 
+"^ot:ottId": 946541, 
+"^ot:ottTaxonName": "Bombus veteranus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 44593, 
 "@tb:identifier.taxonVariant": 104441, 
@@ -1940,14 +2556,19 @@
 }
 }, 
 "Tl3319822": {
-"^ot:originalLabel": "Osmia submicans Megachilidae_KJ836956"
+"^ot:originalLabel": "Osmia submicans Megachilidae_KJ836956", 
+"^ot:ottId": 3265849, 
+"^ot:ottTaxonName": "Osmia submicans"
 }, 
 "Tl3319823": {
-"^ot:originalLabel": "Nomada armata Apidae_KJ836882"
+"^ot:originalLabel": "Nomada armata Apidae_KJ836882", 
+"^ot:ottId": 3268684, 
+"^ot:ottTaxonName": "Nomada armata"
 }, 
 "Tl3319824": {
-"^ot:altLabel": "Colletes succinctus", 
 "^ot:originalLabel": "Colletes succinctus Colletidae_KJ837472", 
+"^ot:ottId": 198854, 
+"^ot:ottTaxonName": "Colletes succinctus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 297168, 
 "@tb:identifier.taxonVariant": 347051, 
@@ -1956,11 +2577,14 @@
 }
 }, 
 "Tl3319825": {
-"^ot:originalLabel": "Epeolus schummeli Apidae_KJ837959"
+"^ot:originalLabel": "Epeolus schummeli Apidae_KJ837959", 
+"^ot:ottId": 3269282, 
+"^ot:ottTaxonName": "Epeolus schummeli"
 }, 
 "Tl3319826": {
-"^ot:altLabel": "Anthidium manicatum", 
 "^ot:originalLabel": "Anthidium manicatum Megachilidae_KJ838277", 
+"^ot:ottId": 3266473, 
+"^ot:ottTaxonName": "Anthidium manicatum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 617845, 
 "@tb:identifier.taxonVariant": 826981, 
@@ -1968,17 +2592,24 @@
 }
 }, 
 "Tl3319827": {
-"^ot:originalLabel": "Osmia parietina Megachilidae_HM401222"
+"^ot:originalLabel": "Osmia parietina Megachilidae_HM401222", 
+"^ot:ottId": 3265930, 
+"^ot:ottTaxonName": "Osmia parietina"
 }, 
 "Tl3319828": {
-"^ot:originalLabel": "Andrena curvungula Andrenidae_KJ837652"
+"^ot:originalLabel": "Andrena curvungula Andrenidae_KJ837652", 
+"^ot:ottId": 3262351, 
+"^ot:ottTaxonName": "Andrena curvungula"
 }, 
 "Tl3319829": {
-"^ot:originalLabel": "Coelioxys inermis Megachilidae_KJ839147"
+"^ot:originalLabel": "Coelioxys inermis Megachilidae_KJ839147", 
+"^ot:ottId": 3263918, 
+"^ot:ottTaxonName": "Coelioxys inermis"
 }, 
 "Tl3319830": {
-"^ot:altLabel": "Bombus mendax", 
 "^ot:originalLabel": "Bombus mendax Apidae_HQ563801", 
+"^ot:ottId": 189895, 
+"^ot:ottTaxonName": "Bombus mendax", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 44525, 
 "@tb:identifier.taxonVariant": 104335, 
@@ -1987,11 +2618,14 @@
 }
 }, 
 "Tl3319831": {
-"^ot:originalLabel": "Hoplitis claviventris Megachilidae_KJ837591"
+"^ot:originalLabel": "Hoplitis claviventris Megachilidae_KJ837591", 
+"^ot:ottId": 3266044, 
+"^ot:ottTaxonName": "Hoplitis claviventris"
 }, 
 "Tl3319832": {
-"^ot:altLabel": "Nomada succincta", 
 "^ot:originalLabel": "Nomada succincta Apidae_GU706045", 
+"^ot:ottId": 406975, 
+"^ot:ottTaxonName": "Nomada succincta", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 480881, 
 "@tb:identifier.taxonVariant": 637111, 
@@ -2000,14 +2634,19 @@
 }
 }, 
 "Tl3319833": {
-"^ot:originalLabel": "Hylaeus nigritus Colletidae_KJ838096"
+"^ot:originalLabel": "Hylaeus nigritus Colletidae_KJ838096", 
+"^ot:ottId": 3273923, 
+"^ot:ottTaxonName": "Hylaeus nigritus"
 }, 
 "Tl3319834": {
-"^ot:originalLabel": "Andrena helvola Andrenidae_KJ837363"
+"^ot:originalLabel": "Andrena helvola Andrenidae_KJ837363", 
+"^ot:ottId": 858088, 
+"^ot:ottTaxonName": "Andrena helvola"
 }, 
 "Tl3319835": {
-"^ot:altLabel": "Bombus bohemicus", 
 "^ot:originalLabel": "Bombus bohemicus Apidae_GU705896", 
+"^ot:ottId": 161204, 
+"^ot:ottTaxonName": "Bombus bohemicus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 44550, 
 "@tb:identifier.taxonVariant": 104368, 
@@ -2016,27 +2655,38 @@
 }
 }, 
 "Tl3319836": {
-"^ot:originalLabel": "Andrena dorsata Andrenidae_KJ837258"
+"^ot:originalLabel": "Andrena dorsata Andrenidae_KJ837258", 
+"^ot:ottId": 3262756, 
+"^ot:ottTaxonName": "Andrena dorsata"
 }, 
 "Tl3319837": {
-"^ot:originalLabel": "Andrena paucisquama Andrenidae_KJ839316"
+"^ot:originalLabel": "Andrena paucisquama Andrenidae_KJ839316", 
+"^ot:ottId": 3262399, 
+"^ot:ottTaxonName": "Andrena paucisquama"
 }, 
 "Tl3319838": {
-"^ot:originalLabel": "Osmia pilicornis Megachilidae_KJ839236"
+"^ot:originalLabel": "Osmia pilicornis Megachilidae_KJ839236", 
+"^ot:ottId": 3265712, 
+"^ot:ottTaxonName": "Osmia pilicornis"
 }, 
 "Tl3319839": {
-"^ot:originalLabel": "Hylaeus angustatus Colletidae_KJ836545"
+"^ot:originalLabel": "Hylaeus angustatus Colletidae_KJ836545", 
+"^ot:ottId": 3274353, 
+"^ot:ottTaxonName": "Hylaeus angustatus"
 }, 
 "Tl3319840": {
 "^ot:originalLabel": "Hoplitis tuberculata Megachilidae_HQ948088", 
+"^ot:ottId": 855092, 
+"^ot:ottTaxonName": "Hoplitis tuberculata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 484229, 
 "@tb:identifier.taxonVariant": 641590
 }
 }, 
 "Tl3319841": {
-"^ot:altLabel": "Osmia bicolor", 
 "^ot:originalLabel": "Osmia bicolor Megachilidae_KJ839576", 
+"^ot:ottId": 280580, 
+"^ot:ottTaxonName": "Osmia bicolor", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 484239, 
 "@tb:identifier.taxonVariant": 641610, 
@@ -2045,14 +2695,19 @@
 }
 }, 
 "Tl3319842": {
-"^ot:originalLabel": "Dufourea halictula Halictidae_HM401152"
+"^ot:originalLabel": "Dufourea halictula Halictidae_HM401152", 
+"^ot:ottId": 3270498, 
+"^ot:ottTaxonName": "Dufourea halictula"
 }, 
 "Tl3319843": {
-"^ot:originalLabel": "Megachile rufescens Megachilidae_KJ838680"
+"^ot:originalLabel": "Megachile rufescens Megachilidae_KJ838680", 
+"^ot:ottId": 3265537, 
+"^ot:ottTaxonName": "Megachile rufescens"
 }, 
 "Tl3319844": {
-"^ot:altLabel": "Bombus pascuorum", 
 "^ot:originalLabel": "Bombus pascuorum Apidae_KJ836788", 
+"^ot:ottId": 1093159, 
+"^ot:ottTaxonName": "Bombus pascuorum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 44583, 
 "@tb:identifier.taxonVariant": 104427, 
@@ -2064,8 +2719,9 @@
 "^ot:originalLabel": "Halictus gavarnicus Halictidae_KJ839088"
 }, 
 "Tl3319846": {
-"^ot:altLabel": "Melitta leporina", 
 "^ot:originalLabel": "Melitta leporina Melittidae_KJ837410", 
+"^ot:ottId": 76246, 
+"^ot:ottTaxonName": "Melitta leporina (species in superclass Hexapoda)", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 37487, 
 "@tb:identifier.taxonVariant": 86631, 
@@ -2074,11 +2730,14 @@
 }
 }, 
 "Tl3319847": {
-"^ot:originalLabel": "Andrena lathyri Andrenidae_KJ839310"
+"^ot:originalLabel": "Andrena lathyri Andrenidae_KJ839310", 
+"^ot:ottId": 3262734, 
+"^ot:ottTaxonName": "Andrena lathyri"
 }, 
 "Tl3319848": {
-"^ot:altLabel": "Sphecodes marginatus", 
 "^ot:originalLabel": "Sphecodes marginatus Halictidae_KJ839540", 
+"^ot:ottId": 3273102, 
+"^ot:ottTaxonName": "Sphecodes marginatus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 613246, 
 "@tb:identifier.taxonVariant": 820196, 
@@ -2086,17 +2745,24 @@
 }
 }, 
 "Tl3319849": {
-"^ot:originalLabel": "Andrena ovatula Andrenidae_KJ838397"
+"^ot:originalLabel": "Andrena ovatula Andrenidae_KJ838397", 
+"^ot:ottId": 33859, 
+"^ot:ottTaxonName": "Andrena ovatula"
 }, 
 "Tl3319850": {
-"^ot:originalLabel": "Osmia nigriventris Megachilidae_KJ839628"
+"^ot:originalLabel": "Osmia nigriventris Megachilidae_KJ839628", 
+"^ot:ottId": 3265916, 
+"^ot:ottTaxonName": "Osmia nigriventris"
 }, 
 "Tl3319851": {
-"^ot:originalLabel": "Coelioxys conoidea Megachilidae_KJ839589"
+"^ot:originalLabel": "Coelioxys conoidea Megachilidae_KJ839589", 
+"^ot:ottId": 3263656, 
+"^ot:ottTaxonName": "Coelioxys conoidea"
 }, 
 "Tl3319852": {
-"^ot:altLabel": "Colletes cunicularius", 
 "^ot:originalLabel": "Colletes cunicularius Colletidae_KJ837588", 
+"^ot:ottId": 184859, 
+"^ot:ottTaxonName": "Colletes cunicularius", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 365872, 
 "@tb:identifier.taxonVariant": 392507, 
@@ -2105,14 +2771,19 @@
 }
 }, 
 "Tl3319853": {
-"^ot:originalLabel": "Andrena suerinensis Andrenidae_KJ838205"
+"^ot:originalLabel": "Andrena suerinensis Andrenidae_KJ838205", 
+"^ot:ottId": 3262987, 
+"^ot:ottTaxonName": "Andrena suerinensis"
 }, 
 "Tl3319854": {
-"^ot:originalLabel": "Dufourea minuta Halictidae_KJ838873"
+"^ot:originalLabel": "Dufourea minuta Halictidae_KJ838873", 
+"^ot:ottId": 3270493, 
+"^ot:ottTaxonName": "Dufourea minuta"
 }, 
 "Tl3319855": {
-"^ot:altLabel": "Anthophora furcata", 
 "^ot:originalLabel": "Anthophora furcata Apidae_KJ837165", 
+"^ot:ottId": 524516, 
+"^ot:ottTaxonName": "Anthophora furcata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 150120, 
 "@tb:identifier.taxonVariant": 225761, 
@@ -2121,45 +2792,66 @@
 }
 }, 
 "Tl3319856": {
-"^ot:originalLabel": "Osmia leaiana Megachilidae_HM401204"
+"^ot:originalLabel": "Osmia leaiana Megachilidae_HM401204", 
+"^ot:ottId": 3265615, 
+"^ot:ottTaxonName": "Osmia leaiana"
 }, 
 "Tl3319857": {
-"^ot:originalLabel": "Melecta luctuosa Apidae_KJ839507"
+"^ot:originalLabel": "Melecta luctuosa Apidae_KJ839507", 
+"^ot:ottId": 3267465, 
+"^ot:ottTaxonName": "Melecta luctuosa"
 }, 
 "Tl3319858": {
 "^ot:originalLabel": "Andrena rosae Andrenidae_EU374644", 
+"^ot:ottId": 969637, 
+"^ot:ottTaxonName": "Andrena rosae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 457463, 
 "@tb:identifier.taxonVariant": 605987
 }
 }, 
 "Tl3319859": {
-"^ot:originalLabel": "Lasioglossum fratellum Halictidae_HQ954751"
+"^ot:originalLabel": "Lasioglossum fratellum Halictidae_HQ954751", 
+"^ot:ottId": 1093311, 
+"^ot:ottTaxonName": "Lasioglossum fratellum"
 }, 
 "Tl3319860": {
-"^ot:originalLabel": "Lasioglossum pauperatum Halictidae_HQ948112"
+"^ot:originalLabel": "Lasioglossum pauperatum Halictidae_HQ948112", 
+"^ot:ottId": 3272004, 
+"^ot:ottTaxonName": "Lasioglossum pauperatum"
 }, 
 "Tl3319861": {
-"^ot:originalLabel": "Osmia spinulosa Megachilidae_HM376215"
+"^ot:originalLabel": "Osmia spinulosa Megachilidae_HM376215", 
+"^ot:ottId": 3265901, 
+"^ot:ottTaxonName": "Osmia spinulosa"
 }, 
 "Tl3319862": {
-"^ot:originalLabel": "Megachile leachella Megachilidae_HM401112"
+"^ot:originalLabel": "Megachile leachella Megachilidae_HM401112", 
+"^ot:ottId": 3264361, 
+"^ot:ottTaxonName": "Megachile leachella"
 }, 
 "Tl3319863": {
-"^ot:originalLabel": "Lasioglossum pygmaeum Halictidae_KJ836931"
+"^ot:originalLabel": "Lasioglossum pygmaeum Halictidae_KJ836931", 
+"^ot:ottId": 3271547, 
+"^ot:ottTaxonName": "Lasioglossum pygmaeum"
 }, 
 "Tl3319864": {
-"^ot:originalLabel": "Tetralonia malvae Apidae_KJ836698"
+"^ot:originalLabel": "Tetralonia malvae Apidae_KJ836698", 
+"^ot:ottId": 3266931, 
+"^ot:ottTaxonName": "Tetralonia malvae"
 }, 
 "Tl3319865": {
 "^ot:originalLabel": "Andrena spinigera Andrenidae_KJ837406"
 }, 
 "Tl3319866": {
-"^ot:originalLabel": "Andrena minutuloides Andrenidae_HM401044"
+"^ot:originalLabel": "Andrena minutuloides Andrenidae_HM401044", 
+"^ot:ottId": 3262919, 
+"^ot:ottTaxonName": "Andrena minutuloides"
 }, 
 "Tl3319867": {
-"^ot:altLabel": "Nomioides facilis", 
 "^ot:originalLabel": "Nomioides facilis Halictidae_KJ838426", 
+"^ot:ottId": 812219, 
+"^ot:ottTaxonName": "Nomioides facilis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 37505, 
 "@tb:identifier.taxonVariant": 86659, 
@@ -2168,8 +2860,9 @@
 }
 }, 
 "Tl3319868": {
-"^ot:altLabel": "Bombus sylvestris", 
 "^ot:originalLabel": "Bombus sylvestris Apidae_GU705886", 
+"^ot:ottId": 507835, 
+"^ot:ottTaxonName": "Bombus sylvestris", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 32405, 
 "@tb:identifier.taxonVariant": 104379, 
@@ -2178,11 +2871,14 @@
 }
 }, 
 "Tl3319869": {
-"^ot:originalLabel": "Hylaeus kahri Colletidae_KJ838978"
+"^ot:originalLabel": "Hylaeus kahri Colletidae_KJ838978", 
+"^ot:ottId": 3273876, 
+"^ot:ottTaxonName": "Hylaeus kahri"
 }, 
 "Tl3319870": {
-"^ot:altLabel": "Andrena nitidiuscula", 
 "^ot:originalLabel": "Andrena nitidiuscula Andrenidae_KJ838927", 
+"^ot:ottId": 698600, 
+"^ot:ottTaxonName": "Andrena nitidiuscula", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 383718, 
 "@tb:identifier.taxonVariant": 401801, 
@@ -2191,11 +2887,14 @@
 }
 }, 
 "Tl3319871": {
-"^ot:originalLabel": "Andrena curtula Andrenidae_KJ837178"
+"^ot:originalLabel": "Andrena curtula Andrenidae_KJ837178", 
+"^ot:ottId": 3263137, 
+"^ot:ottTaxonName": "Andrena curtula"
 }, 
 "Tl3319872": {
-"^ot:altLabel": "Halictus maculatus", 
 "^ot:originalLabel": "Halictus maculatus Halictidae_KJ836478", 
+"^ot:ottId": 188794, 
+"^ot:ottTaxonName": "Halictus maculatus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 118263, 
 "@tb:identifier.taxonVariant": 196606, 
@@ -2207,11 +2906,14 @@
 "^ot:originalLabel": "Halictus eurygnathus Halictidae_KJ839238"
 }, 
 "Tl3319874": {
-"^ot:originalLabel": "Hylaeus duckei Colletidae_HM401169"
+"^ot:originalLabel": "Hylaeus duckei Colletidae_HM401169", 
+"^ot:ottId": 3274339, 
+"^ot:ottTaxonName": "Hylaeus duckei"
 }, 
 "Tl3319875": {
-"^ot:altLabel": "Chelostoma distinctum", 
 "^ot:originalLabel": "Chelostoma distinctum Megachilidae_KJ837112", 
+"^ot:ottId": 92717, 
+"^ot:ottTaxonName": "Chelostoma distinctum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 424307, 
 "@tb:identifier.taxonVariant": 557175, 
@@ -2220,13 +2922,19 @@
 }
 }, 
 "Tl3319876": {
-"^ot:originalLabel": "Nomada mutabilis Apidae_KJ837610"
+"^ot:originalLabel": "Nomada mutabilis Apidae_KJ837610", 
+"^ot:ottId": 3268621, 
+"^ot:ottTaxonName": "Nomada mutabilis"
 }, 
 "Tl3319877": {
-"^ot:originalLabel": "Andrena rufizona Andrenidae_KJ836804"
+"^ot:originalLabel": "Andrena rufizona Andrenidae_KJ836804", 
+"^ot:ottId": 3262617, 
+"^ot:ottTaxonName": "Andrena rufizona"
 }, 
 "Tl3319878": {
-"^ot:originalLabel": "Megachile genalis Megachilidae_HM401106"
+"^ot:originalLabel": "Megachile genalis Megachilidae_HM401106", 
+"^ot:ottId": 3264635, 
+"^ot:ottTaxonName": "Megachile genalis"
 }, 
 "Tl3319879": {
 "^ot:altLabel": "Halictus confusus", 
@@ -2239,8 +2947,9 @@
 }
 }, 
 "Tl3319880": {
-"^ot:altLabel": "Dasypoda hirtipes", 
 "^ot:originalLabel": "Dasypoda hirtipes Melittidae_KT074042", 
+"^ot:ottId": 76251, 
+"^ot:ottTaxonName": "Dasypoda hirtipes", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 37497, 
 "@tb:identifier.taxonVariant": 86645, 
@@ -2249,11 +2958,14 @@
 }
 }, 
 "Tl3319881": {
-"^ot:originalLabel": "Lasioglossum aeratum Halictidae_KJ837299"
+"^ot:originalLabel": "Lasioglossum aeratum Halictidae_KJ837299", 
+"^ot:ottId": 3270672, 
+"^ot:ottTaxonName": "Lasioglossum aeratum"
 }, 
 "Tl3319882": {
-"^ot:altLabel": "Sphecodes ephippius", 
 "^ot:originalLabel": "Sphecodes ephippius Halictidae_KT074079", 
+"^ot:ottId": 239867, 
+"^ot:ottTaxonName": "Sphecodes ephippius", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 613257, 
 "@tb:identifier.taxonVariant": 820207, 
@@ -2261,11 +2973,14 @@
 }
 }, 
 "Tl3319883": {
-"^ot:originalLabel": "Hylaeus confusus Colletidae_GU705974"
+"^ot:originalLabel": "Hylaeus confusus Colletidae_GU705974", 
+"^ot:ottId": 883567, 
+"^ot:ottTaxonName": "Hylaeus confusus"
 }, 
 "Tl3319884": {
-"^ot:altLabel": "Bombus ruderatus", 
 "^ot:originalLabel": "Bombus ruderatus Apidae_KX821204", 
+"^ot:ottId": 556464, 
+"^ot:ottTaxonName": "Bombus ruderatus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 44536, 
 "@tb:identifier.taxonVariant": 104349, 
@@ -2274,11 +2989,14 @@
 }
 }, 
 "Tl3319885": {
-"^ot:originalLabel": "Nomada ferruginata Apidae_KJ836584"
+"^ot:originalLabel": "Nomada ferruginata Apidae_KJ836584", 
+"^ot:ottId": 3268886, 
+"^ot:ottTaxonName": "Nomada ferruginata"
 }, 
 "Tl3319886": {
-"^ot:altLabel": "Systropha planidens", 
 "^ot:originalLabel": "Systropha planidens Halictidae_KJ836726", 
+"^ot:ottId": 761074, 
+"^ot:ottTaxonName": "Systropha planidens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 166509, 
 "@tb:identifier.taxonVariant": 241258, 
@@ -2287,20 +3005,29 @@
 }
 }, 
 "Tl3319887": {
-"^ot:originalLabel": "Andrena florea Andrenidae_HM376235"
+"^ot:originalLabel": "Andrena florea Andrenidae_HM376235", 
+"^ot:ottId": 3263011, 
+"^ot:ottTaxonName": "Andrena florea"
 }, 
 "Tl3319888": {
-"^ot:originalLabel": "Hoplitis anthocopoides Megachilidae_KJ838067"
+"^ot:originalLabel": "Hoplitis anthocopoides Megachilidae_KJ838067", 
+"^ot:ottId": 881470, 
+"^ot:ottTaxonName": "Hoplitis anthocopoides"
 }, 
 "Tl3319889": {
-"^ot:originalLabel": "Andrena alfkenella Andrenidae_HM401243"
+"^ot:originalLabel": "Andrena alfkenella Andrenidae_HM401243", 
+"^ot:ottId": 3262940, 
+"^ot:ottTaxonName": "Andrena alfkenella"
 }, 
 "Tl3319890": {
-"^ot:originalLabel": "Andrena bicolor Andrenidae_GU706056"
+"^ot:originalLabel": "Andrena bicolor Andrenidae_GU706056", 
+"^ot:ottId": 883561, 
+"^ot:ottTaxonName": "Andrena bicolor"
 }, 
 "Tl3319891": {
-"^ot:altLabel": "Bombus pratorum", 
 "^ot:originalLabel": "Bombus pratorum Apidae_KT164684", 
+"^ot:ottId": 161196, 
+"^ot:ottTaxonName": "Bombus pratorum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3716, 
 "@tb:identifier.taxonVariant": 8870, 
@@ -2309,8 +3036,9 @@
 }
 }, 
 "Tl3319892": {
-"^ot:altLabel": "Andrena wilkella", 
 "^ot:originalLabel": "Andrena wilkella Andrenidae_KJ836402", 
+"^ot:ottId": 801355, 
+"^ot:ottTaxonName": "Andrena wilkella", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 188602, 
 "@tb:identifier.taxonVariant": 260628, 
@@ -2319,14 +3047,19 @@
 }
 }, 
 "Tl3319893": {
-"^ot:originalLabel": "Nomada posthuma Apidae_KJ837409"
+"^ot:originalLabel": "Nomada posthuma Apidae_KJ837409", 
+"^ot:ottId": 3268539, 
+"^ot:ottTaxonName": "Nomada posthuma"
 }, 
 "Tl3319894": {
-"^ot:originalLabel": "Lasioglossum leucopus Halictidae_KJ839703"
+"^ot:originalLabel": "Lasioglossum leucopus Halictidae_KJ839703", 
+"^ot:ottId": 93991, 
+"^ot:ottTaxonName": "Lasioglossum leucopus"
 }, 
 "Tl3319895": {
-"^ot:altLabel": "Sphecodes majalis", 
 "^ot:originalLabel": "Sphecodes majalis Halictidae_KJ837051", 
+"^ot:ottId": 3272953, 
+"^ot:ottTaxonName": "Sphecodes majalis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 613210, 
 "@tb:identifier.taxonVariant": 820160, 
@@ -2334,14 +3067,19 @@
 }
 }, 
 "Tl3319896": {
-"^ot:originalLabel": "Stelis minima Megachilidae_HQ948107"
+"^ot:originalLabel": "Stelis minima Megachilidae_HQ948107", 
+"^ot:ottId": 3266203, 
+"^ot:ottTaxonName": "Stelis minima"
 }, 
 "Tl3319897": {
-"^ot:originalLabel": "Hylaeus sinuatus Colletidae_KJ838509"
+"^ot:originalLabel": "Hylaeus sinuatus Colletidae_KJ838509", 
+"^ot:ottId": 3273887, 
+"^ot:ottTaxonName": "Hylaeus sinuatus"
 }, 
 "Tl3319898": {
-"^ot:altLabel": "Andrena vaga", 
 "^ot:originalLabel": "Andrena vaga Andrenidae_KJ837581", 
+"^ot:ottId": 157313, 
+"^ot:ottTaxonName": "Andrena vaga", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 125317, 
 "@tb:identifier.taxonVariant": 203072, 
@@ -2350,17 +3088,24 @@
 }
 }, 
 "Tl3319899": {
-"^ot:originalLabel": "Andrena pusilla Andrenidae_KJ839537"
+"^ot:originalLabel": "Andrena pusilla Andrenidae_KJ839537", 
+"^ot:ottId": 3263319, 
+"^ot:ottTaxonName": "Andrena pusilla"
 }, 
 "Tl3319900": {
-"^ot:originalLabel": "Hylaeus nivalis Colletidae_HM401179"
+"^ot:originalLabel": "Hylaeus nivalis Colletidae_HM401179", 
+"^ot:ottId": 3274413, 
+"^ot:ottTaxonName": "Hylaeus nivalis"
 }, 
 "Tl3319901": {
-"^ot:originalLabel": "Nomada rhenana Apidae_KJ838920"
+"^ot:originalLabel": "Nomada rhenana Apidae_KJ838920", 
+"^ot:ottId": 3268624, 
+"^ot:ottTaxonName": "Nomada rhenana"
 }, 
 "Tl3319902": {
-"^ot:altLabel": "Megachile rotundata", 
 "^ot:originalLabel": "Megachile rotundata Megachilidae_GU706002", 
+"^ot:ottId": 344336, 
+"^ot:ottTaxonName": "Megachile rotundata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 140829, 
 "@tb:identifier.taxonVariant": 217155, 
@@ -2369,11 +3114,14 @@
 }
 }, 
 "Tl3319903": {
-"^ot:originalLabel": "Nomia diversipes Halictidae_KJ837536"
+"^ot:originalLabel": "Nomia diversipes Halictidae_KJ837536", 
+"^ot:ottId": 3273712, 
+"^ot:ottTaxonName": "Nomia diversipes"
 }, 
 "Tl3319904": {
-"^ot:altLabel": "Sphecodes ferruginatus", 
 "^ot:originalLabel": "Sphecodes ferruginatus Halictidae_KJ837622", 
+"^ot:ottId": 1035374, 
+"^ot:ottTaxonName": "Sphecodes ferruginatus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 613245, 
 "@tb:identifier.taxonVariant": 820195, 
@@ -2381,8 +3129,9 @@
 }
 }, 
 "Tl3319905": {
-"^ot:altLabel": "Bombus terrestris", 
 "^ot:originalLabel": "Bombus terrestris Apidae_JQ843625", 
+"^ot:ottId": 161197, 
+"^ot:ottTaxonName": "Bombus terrestris (species in domain Eukaryota)", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3717, 
 "@tb:identifier.taxonVariant": 8871, 
@@ -2391,17 +3140,24 @@
 }
 }, 
 "Tl3319906": {
-"^ot:originalLabel": "Osmia alticola Megachilidae_KJ839450"
+"^ot:originalLabel": "Osmia alticola Megachilidae_KJ839450", 
+"^ot:ottId": 3265781, 
+"^ot:ottTaxonName": "Osmia alticola"
 }, 
 "Tl3319907": {
-"^ot:originalLabel": "Nomada pleurosticta Apidae_KJ836589"
+"^ot:originalLabel": "Nomada pleurosticta Apidae_KJ836589", 
+"^ot:ottId": 3268832, 
+"^ot:ottTaxonName": "Nomada pleurosticta"
 }, 
 "Tl3319908": {
-"^ot:originalLabel": "Andrena fuscipes Andrenidae_HM401055"
+"^ot:originalLabel": "Andrena fuscipes Andrenidae_HM401055", 
+"^ot:ottId": 858086, 
+"^ot:ottTaxonName": "Andrena fuscipes"
 }, 
 "Tl3319909": {
-"^ot:altLabel": "Melecta albifrons", 
 "^ot:originalLabel": "Melecta albifrons Apidae_KJ838618", 
+"^ot:ottId": 621107, 
+"^ot:ottTaxonName": "Melecta albifrons", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 508020, 
 "@tb:identifier.taxonVariant": 673168, 
@@ -2410,17 +3166,24 @@
 }
 }, 
 "Tl3319910": {
-"^ot:originalLabel": "Halictus cochlearitarsis Halictidae_KJ836651"
+"^ot:originalLabel": "Halictus cochlearitarsis Halictidae_KJ836651", 
+"^ot:ottId": 3272411, 
+"^ot:ottTaxonName": "Halictus cochlearitarsis"
 }, 
 "Tl3319911": {
-"^ot:originalLabel": "Nomada flavoguttata Apidae_KJ836513"
+"^ot:originalLabel": "Nomada flavoguttata Apidae_KJ836513", 
+"^ot:ottId": 364952, 
+"^ot:ottTaxonName": "Nomada flavoguttata"
 }, 
 "Tl3319912": {
-"^ot:originalLabel": "Lasioglossum angusticeps Halictidae_HQ948051"
+"^ot:originalLabel": "Lasioglossum angusticeps Halictidae_HQ948051", 
+"^ot:ottId": 1018065, 
+"^ot:ottTaxonName": "Lasioglossum angusticeps"
 }, 
 "Tl3319913": {
-"^ot:altLabel": "Andrena cineraria", 
 "^ot:originalLabel": "Andrena cineraria Andrenidae_JQ909656", 
+"^ot:ottId": 728525, 
+"^ot:ottTaxonName": "Andrena cineraria", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 441916, 
 "@tb:identifier.taxonVariant": 583309, 
@@ -2429,8 +3192,9 @@
 }
 }, 
 "Tl3319914": {
-"^ot:altLabel": "Colletes impunctatus", 
 "^ot:originalLabel": "Colletes impunctatus Colletidae_HM401265", 
+"^ot:ottId": 235977, 
+"^ot:ottTaxonName": "Colletes impunctatus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 365886, 
 "@tb:identifier.taxonVariant": 392523, 
@@ -2439,14 +3203,19 @@
 }
 }, 
 "Tl3319915": {
-"^ot:originalLabel": "Andrena chrysosceles Andrenidae_HQ954749"
+"^ot:originalLabel": "Andrena chrysosceles Andrenidae_HQ954749", 
+"^ot:ottId": 3263176, 
+"^ot:ottTaxonName": "Andrena chrysosceles"
 }, 
 "Tl3319916": {
-"^ot:originalLabel": "Dioxys cincta Megachilidae_KJ836409"
+"^ot:originalLabel": "Dioxys cincta Megachilidae_KJ836409", 
+"^ot:ottId": 3266715, 
+"^ot:ottTaxonName": "Dioxys cincta"
 }, 
 "Tl3319917": {
-"^ot:altLabel": "Osmia aurulenta", 
 "^ot:originalLabel": "Osmia aurulenta Megachilidae_KJ837026", 
+"^ot:ottId": 280574, 
+"^ot:ottTaxonName": "Osmia aurulenta", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 484238, 
 "@tb:identifier.taxonVariant": 641608, 
@@ -2455,11 +3224,14 @@
 }
 }, 
 "Tl3319918": {
-"^ot:originalLabel": "Lasioglossum glabriusculum Halictidae_KJ836659"
+"^ot:originalLabel": "Lasioglossum glabriusculum Halictidae_KJ836659", 
+"^ot:ottId": 3271814, 
+"^ot:ottTaxonName": "Lasioglossum glabriusculum"
 }, 
 "Tl3319919": {
-"^ot:altLabel": "Heriades truncorum", 
 "^ot:originalLabel": "Heriades truncorum Megachilidae_KJ836448", 
+"^ot:ottId": 495675, 
+"^ot:ottTaxonName": "Heriades truncorum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 424699, 
 "@tb:identifier.taxonVariant": 557738, 
@@ -2468,8 +3240,9 @@
 }
 }, 
 "Tl3319920": {
-"^ot:altLabel": "Bombus quadricolor", 
 "^ot:originalLabel": "Bombus quadricolor Apidae_HQ563807", 
+"^ot:ottId": 664089, 
+"^ot:ottTaxonName": "Bombus quadricolor", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 44558, 
 "@tb:identifier.taxonVariant": 104381, 
@@ -2478,20 +3251,27 @@
 }
 }, 
 "Tl3319921": {
-"^ot:originalLabel": "Andrena denticulata Andrenidae_GU705953"
+"^ot:originalLabel": "Andrena denticulata Andrenidae_GU705953", 
+"^ot:ottId": 330870, 
+"^ot:ottTaxonName": "Andrena denticulata"
 }, 
 "Tl3319922": {
 "^ot:originalLabel": "Dioxys tridentata Megachilidae_KJ837073"
 }, 
 "Tl3319923": {
-"^ot:originalLabel": "Andrena nitida Andrenidae_KT074020"
+"^ot:originalLabel": "Andrena nitida Andrenidae_KT074020", 
+"^ot:ottId": 3263016, 
+"^ot:ottTaxonName": "Andrena nitida"
 }, 
 "Tl3319924": {
-"^ot:originalLabel": "Andrena pallitarsis Andrenidae_HM401021"
+"^ot:originalLabel": "Andrena pallitarsis Andrenidae_HM401021", 
+"^ot:ottId": 3262896, 
+"^ot:ottTaxonName": "Andrena pallitarsis"
 }, 
 "Tl3319925": {
-"^ot:altLabel": "Pseudoanthidium scapulare", 
 "^ot:originalLabel": "Pseudoanthidium scapulare Megachilidae_KJ836523", 
+"^ot:ottId": 61528, 
+"^ot:ottTaxonName": "Pseudoanthidium scapulare", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 619795, 
 "@tb:identifier.taxonVariant": 829977, 
@@ -2499,8 +3279,9 @@
 }
 }, 
 "Tl3319926": {
-"^ot:altLabel": "Hylaeus annulatus", 
 "^ot:originalLabel": "Hylaeus annulatus Colletidae_KJ839556", 
+"^ot:ottId": 112393, 
+"^ot:ottTaxonName": "Hylaeus annulatus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 509977, 
 "@tb:identifier.taxonVariant": 676323, 
@@ -2509,17 +3290,24 @@
 }
 }, 
 "Tl3319927": {
-"^ot:originalLabel": "Nomada rufipes Apidae_KJ838388"
+"^ot:originalLabel": "Nomada rufipes Apidae_KJ838388", 
+"^ot:ottId": 838800, 
+"^ot:ottTaxonName": "Nomada rufipes"
 }, 
 "Tl3319928": {
-"^ot:originalLabel": "Nomada panzeri Apidae_KJ837799"
+"^ot:originalLabel": "Nomada panzeri Apidae_KJ837799", 
+"^ot:ottId": 609180, 
+"^ot:ottTaxonName": "Nomada panzeri"
 }, 
 "Tl3319929": {
-"^ot:originalLabel": "Andrena nana Andrenidae_KJ839631"
+"^ot:originalLabel": "Andrena nana Andrenidae_KJ839631", 
+"^ot:ottId": 3262248, 
+"^ot:ottTaxonName": "Andrena nana"
 }, 
 "Tl3319930": {
-"^ot:altLabel": "Sphecodes spinulosus", 
 "^ot:originalLabel": "Sphecodes spinulosus Halictidae_KJ839610", 
+"^ot:ottId": 3273100, 
+"^ot:ottTaxonName": "Sphecodes spinulosus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 613254, 
 "@tb:identifier.taxonVariant": 820204, 
@@ -2527,8 +3315,9 @@
 }
 }, 
 "Tl3319931": {
-"^ot:altLabel": "Lasioglossum interruptum", 
 "^ot:originalLabel": "Lasioglossum interruptum Halictidae_KJ839609", 
+"^ot:ottId": 186838, 
+"^ot:ottTaxonName": "Lasioglossum interruptum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 166450, 
 "@tb:identifier.taxonVariant": 241199, 
@@ -2537,8 +3326,9 @@
 }
 }, 
 "Tl3319932": {
-"^ot:altLabel": "Rophites algirus", 
 "^ot:originalLabel": "Rophites algirus Apidae_KJ839593", 
+"^ot:ottId": 906147, 
+"^ot:ottTaxonName": "Rophites algirus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 37501, 
 "@tb:identifier.taxonVariant": 86654, 
@@ -2547,8 +3337,9 @@
 }
 }, 
 "Tl3319933": {
-"^ot:altLabel": "Osmia caerulescens", 
 "^ot:originalLabel": "Osmia caerulescens Megachilidae_KT074074", 
+"^ot:ottId": 214447, 
+"^ot:ottTaxonName": "Osmia caerulescens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 509935, 
 "@tb:identifier.taxonVariant": 676241, 
@@ -2557,11 +3348,14 @@
 }
 }, 
 "Tl3319934": {
-"^ot:originalLabel": "Lasioglossum sabulosum Halictidae_KJ838136"
+"^ot:originalLabel": "Lasioglossum sabulosum Halictidae_KJ838136", 
+"^ot:ottId": 3271387, 
+"^ot:ottTaxonName": "Lasioglossum sabulosum"
 }, 
 "Tl3319935": {
-"^ot:altLabel": "Systropha curvicornis", 
 "^ot:originalLabel": "Systropha curvicornis Halictidae_KJ836819", 
+"^ot:ottId": 761075, 
+"^ot:ottTaxonName": "Systropha curvicornis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 37500, 
 "@tb:identifier.taxonVariant": 86652, 
@@ -2573,20 +3367,29 @@
 "^ot:originalLabel": "Andrena nigrospina Andrenidae_KJ838255"
 }, 
 "Tl3319937": {
-"^ot:originalLabel": "Andrena lagopus Andrenidae_HM376241"
+"^ot:originalLabel": "Andrena lagopus Andrenidae_HM376241", 
+"^ot:ottId": 3262202, 
+"^ot:ottTaxonName": "Andrena lagopus"
 }, 
 "Tl3319938": {
-"^ot:originalLabel": "Coelioxys haemorrhoa Megachilidae_KJ839282"
+"^ot:originalLabel": "Coelioxys haemorrhoa Megachilidae_KJ839282", 
+"^ot:ottId": 3263846, 
+"^ot:ottTaxonName": "Coelioxys haemorrhoa"
 }, 
 "Tl3319939": {
-"^ot:originalLabel": "Anthidiellum strigatum Megachilidae_KJ837946"
+"^ot:originalLabel": "Anthidiellum strigatum Megachilidae_KJ837946", 
+"^ot:ottId": 3266417, 
+"^ot:ottTaxonName": "Anthidiellum strigatum"
 }, 
 "Tl3319940": {
-"^ot:originalLabel": "Andrena fulvata Andrenidae_HM401059"
+"^ot:originalLabel": "Andrena fulvata Andrenidae_HM401059", 
+"^ot:ottId": 3262692, 
+"^ot:ottTaxonName": "Andrena fulvata"
 }, 
 "Tl3319941": {
-"^ot:altLabel": "Chelostoma rapunculi", 
 "^ot:originalLabel": "Chelostoma rapunculi Megachilidae_KR783170", 
+"^ot:ottId": 1071905, 
+"^ot:ottTaxonName": "Chelostoma rapunculi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 424318, 
 "@tb:identifier.taxonVariant": 557186, 
@@ -2595,11 +3398,14 @@
 }
 }, 
 "Tl3319942": {
-"^ot:originalLabel": "Andrena chrysopyga Andrenidae_HM376233"
+"^ot:originalLabel": "Andrena chrysopyga Andrenidae_HM376233", 
+"^ot:ottId": 3262536, 
+"^ot:ottTaxonName": "Andrena chrysopyga"
 }, 
 "Tl3319943": {
-"^ot:altLabel": "Bombus norvegicus", 
 "^ot:originalLabel": "Bombus norvegicus Apidae_GU705916", 
+"^ot:ottId": 161206, 
+"^ot:ottTaxonName": "Bombus norvegicus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 32406, 
 "@tb:identifier.taxonVariant": 104375, 
@@ -2608,8 +3414,9 @@
 }
 }, 
 "Tl3319944": {
-"^ot:altLabel": "Lasioglossum albipes", 
 "^ot:originalLabel": "Lasioglossum albipes Halictidae_KJ838990", 
+"^ot:ottId": 429666, 
+"^ot:ottTaxonName": "Lasioglossum albipes", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 98411, 
 "@tb:identifier.taxonVariant": 177591, 
@@ -2618,20 +3425,29 @@
 }
 }, 
 "Tl3319945": {
-"^ot:originalLabel": "Andrena tscheki Andrenidae_KJ836443"
+"^ot:originalLabel": "Andrena tscheki Andrenidae_KJ836443", 
+"^ot:ottId": 3262769, 
+"^ot:ottTaxonName": "Andrena tscheki"
 }, 
 "Tl3319946": {
-"^ot:originalLabel": "Hylaeus punctulatissimus Colletidae_HM401185"
+"^ot:originalLabel": "Hylaeus punctulatissimus Colletidae_HM401185", 
+"^ot:ottId": 3274362, 
+"^ot:ottTaxonName": "Hylaeus punctulatissimus"
 }, 
 "Tl3319947": {
-"^ot:originalLabel": "Andrena thoracica Andrenidae_KJ839789"
+"^ot:originalLabel": "Andrena thoracica Andrenidae_KJ839789", 
+"^ot:ottId": 3262642, 
+"^ot:ottTaxonName": "Andrena thoracica"
 }, 
 "Tl3319948": {
-"^ot:originalLabel": "Lasioglossum griseolum Halictidae_KJ838447"
+"^ot:originalLabel": "Lasioglossum griseolum Halictidae_KJ838447", 
+"^ot:ottId": 3271495, 
+"^ot:ottTaxonName": "Lasioglossum griseolum"
 }, 
 "Tl3319949": {
-"^ot:altLabel": "Lasioglossum morio", 
 "^ot:originalLabel": "Lasioglossum morio Halictidae_GU706057", 
+"^ot:ottId": 1006444, 
+"^ot:ottTaxonName": "Lasioglossum morio", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 98424, 
 "@tb:identifier.taxonVariant": 177604, 
@@ -2640,20 +3456,29 @@
 }
 }, 
 "Tl3319950": {
-"^ot:originalLabel": "Lasioglossum pallens Halictidae_KJ839719"
+"^ot:originalLabel": "Lasioglossum pallens Halictidae_KJ839719", 
+"^ot:ottId": 3271888, 
+"^ot:ottTaxonName": "Lasioglossum pallens"
 }, 
 "Tl3319951": {
-"^ot:originalLabel": "Lasioglossum subfulvicorne Halictidae_HQ948016"
+"^ot:originalLabel": "Lasioglossum subfulvicorne Halictidae_HQ948016", 
+"^ot:ottId": 3272214, 
+"^ot:ottTaxonName": "Lasioglossum subfulvicorne"
 }, 
 "Tl3319952": {
-"^ot:originalLabel": "Hoplitis loti Megachilidae_HM401209"
+"^ot:originalLabel": "Hoplitis loti Megachilidae_HM401209", 
+"^ot:ottId": 395629, 
+"^ot:ottTaxonName": "Hoplitis loti"
 }, 
 "Tl3319953": {
-"^ot:originalLabel": "Nomada bluethgeni Apidae_HQ948021"
+"^ot:originalLabel": "Nomada bluethgeni Apidae_HQ948021", 
+"^ot:ottId": 3269130, 
+"^ot:ottTaxonName": "Nomada bluethgeni"
 }, 
 "Tl3319954": {
-"^ot:altLabel": "Hylaeus hyalinatus", 
 "^ot:originalLabel": "Hylaeus hyalinatus Colletidae_KJ837179", 
+"^ot:ottId": 954943, 
+"^ot:ottTaxonName": "Hylaeus hyalinatus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 274943, 
 "@tb:identifier.taxonVariant": 329571, 
@@ -2662,14 +3487,19 @@
 }
 }, 
 "Tl3319955": {
-"^ot:originalLabel": "Andrena polita Andrenidae_HM401023"
+"^ot:originalLabel": "Andrena polita Andrenidae_HM401023", 
+"^ot:ottId": 3262395, 
+"^ot:ottTaxonName": "Andrena polita"
 }, 
 "Tl3319956": {
-"^ot:originalLabel": "Lasioglossum parvulum Halictidae_HM376230"
+"^ot:originalLabel": "Lasioglossum parvulum Halictidae_HM376230", 
+"^ot:ottId": 3270655, 
+"^ot:ottTaxonName": "Lasioglossum parvulum"
 }, 
 "Tl3319957": {
-"^ot:altLabel": "Bombus lapidarius", 
 "^ot:originalLabel": "Bombus lapidarius Apidae_GU705907", 
+"^ot:ottId": 161187, 
+"^ot:ottTaxonName": "Bombus lapidarius", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3713, 
 "@tb:identifier.taxonVariant": 8865, 
@@ -2678,11 +3508,14 @@
 }
 }, 
 "Tl3319958": {
-"^ot:originalLabel": "Hylaeus glacialis Colletidae_KJ838093"
+"^ot:originalLabel": "Hylaeus glacialis Colletidae_KJ838093", 
+"^ot:ottId": 3274214, 
+"^ot:ottTaxonName": "Hylaeus glacialis"
 }, 
 "Tl3319959": {
-"^ot:altLabel": "Bombus pyrenaeus", 
 "^ot:originalLabel": "Bombus pyrenaeus Apidae_KJ837876", 
+"^ot:ottId": 536532, 
+"^ot:ottTaxonName": "Bombus pyrenaeus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 44670, 
 "@tb:identifier.taxonVariant": 104547, 
@@ -2691,11 +3524,14 @@
 }
 }, 
 "Tl3319960": {
-"^ot:originalLabel": "Andrena florivaga Andrenidae_KJ837219"
+"^ot:originalLabel": "Andrena florivaga Andrenidae_KJ837219", 
+"^ot:ottId": 3262600, 
+"^ot:ottTaxonName": "Andrena florivaga"
 }, 
 "Tl3319961": {
-"^ot:altLabel": "Bombus alpinus", 
 "^ot:originalLabel": "Bombus alpinus Apidae_HQ948121", 
+"^ot:ottId": 857332, 
+"^ot:ottTaxonName": "Bombus alpinus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 44629, 
 "@tb:identifier.taxonVariant": 104500, 
@@ -2704,8 +3540,9 @@
 }
 }, 
 "Tl3319962": {
-"^ot:altLabel": "Dasypoda argentata", 
 "^ot:originalLabel": "Dasypoda argentata Melittidae_KJ839763", 
+"^ot:ottId": 770113, 
+"^ot:ottTaxonName": "Dasypoda argentata (species in superclass Hexapoda)", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 37498, 
 "@tb:identifier.taxonVariant": 86648, 
@@ -2714,8 +3551,9 @@
 }
 }, 
 "Tl3319963": {
-"^ot:altLabel": "Anthidium punctatum", 
 "^ot:originalLabel": "Anthidium punctatum Megachilidae_GU706009", 
+"^ot:ottId": 1093118, 
+"^ot:ottTaxonName": "Anthidium punctatum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 424130, 
 "@tb:identifier.taxonVariant": 556946, 
@@ -2724,23 +3562,34 @@
 }
 }, 
 "Tl3319964": {
-"^ot:originalLabel": "Stelis ornatula Megachilidae_KJ836690"
+"^ot:originalLabel": "Stelis ornatula Megachilidae_KJ836690", 
+"^ot:ottId": 3266257, 
+"^ot:ottTaxonName": "Stelis ornatula"
 }, 
 "Tl3319965": {
-"^ot:originalLabel": "Megachile lapponica Megachilidae_HQ948055"
+"^ot:originalLabel": "Megachile lapponica Megachilidae_HQ948055", 
+"^ot:ottId": 3265172, 
+"^ot:ottTaxonName": "Megachile lapponica"
 }, 
 "Tl3319966": {
-"^ot:originalLabel": "Andrena potentillae Andrenidae_HM401024"
+"^ot:originalLabel": "Andrena potentillae Andrenidae_HM401024", 
+"^ot:ottId": 3263303, 
+"^ot:ottTaxonName": "Andrena potentillae"
 }, 
 "Tl3319967": {
-"^ot:originalLabel": "Andrena humilis Andrenidae_KJ838908"
+"^ot:originalLabel": "Andrena humilis Andrenidae_KJ838908", 
+"^ot:ottId": 3262211, 
+"^ot:ottTaxonName": "Andrena humilis"
 }, 
 "Tl3319968": {
-"^ot:originalLabel": "Hylaeus alpinus Colletidae_HM401162"
+"^ot:originalLabel": "Hylaeus alpinus Colletidae_HM401162", 
+"^ot:ottId": 3273971, 
+"^ot:ottTaxonName": "Hylaeus alpinus"
 }, 
 "Tl3319969": {
-"^ot:altLabel": "Hylaeus dilatatus", 
 "^ot:originalLabel": "Hylaeus dilatatus Colletidae_KJ839192", 
+"^ot:ottId": 5828256, 
+"^ot:ottTaxonName": "Hylaeus dilatatus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 630813, 
 "@tb:identifier.taxonVariant": 845580, 
@@ -2748,11 +3597,14 @@
 }
 }, 
 "Tl3319970": {
-"^ot:originalLabel": "Anthophora retusa Apidae_KJ837816"
+"^ot:originalLabel": "Anthophora retusa Apidae_KJ837816", 
+"^ot:ottId": 3267985, 
+"^ot:ottTaxonName": "Anthophora retusa"
 }, 
 "Tl3319971": {
-"^ot:altLabel": "Xylocopa iris", 
 "^ot:originalLabel": "Xylocopa iris Apidae_HM401103", 
+"^ot:ottId": 142407, 
+"^ot:ottTaxonName": "Xylocopa iris", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 31139, 
 "@tb:identifier.taxonVariant": 72701, 
@@ -2761,23 +3613,34 @@
 }
 }, 
 "Tl3319972": {
-"^ot:originalLabel": "Andrena taraxaci Andrenidae_KJ839582"
+"^ot:originalLabel": "Andrena taraxaci Andrenidae_KJ839582", 
+"^ot:ottId": 3262564, 
+"^ot:ottTaxonName": "Andrena taraxaci"
 }, 
 "Tl3319973": {
-"^ot:originalLabel": "Lasioglossum costulatum Halictidae_KJ836497"
+"^ot:originalLabel": "Lasioglossum costulatum Halictidae_KJ836497", 
+"^ot:ottId": 3272098, 
+"^ot:ottTaxonName": "Lasioglossum costulatum"
 }, 
 "Tl3319974": {
-"^ot:originalLabel": "Ceratina nigrolabiata Apidae_KJ836469"
+"^ot:originalLabel": "Ceratina nigrolabiata Apidae_KJ836469", 
+"^ot:ottId": 3269676, 
+"^ot:ottTaxonName": "Ceratina nigrolabiata"
 }, 
 "Tl3319975": {
-"^ot:originalLabel": "Nomada fuscicornis Apidae_HM401086"
+"^ot:originalLabel": "Nomada fuscicornis Apidae_HM401086", 
+"^ot:ottId": 3268651, 
+"^ot:ottTaxonName": "Nomada fuscicornis"
 }, 
 "Tl3319976": {
-"^ot:originalLabel": "Eucera longicornis Apidae_KJ838283"
+"^ot:originalLabel": "Eucera longicornis Apidae_KJ838283", 
+"^ot:ottId": 3267119, 
+"^ot:ottTaxonName": "Eucera longicornis"
 }, 
 "Tl3319977": {
-"^ot:altLabel": "Apis mellifera", 
 "^ot:originalLabel": "Apis mellifera Apidae_MG443154", 
+"^ot:ottId": 461645, 
+"^ot:ottTaxonName": "Apis mellifera (species in domain Eukaryota)", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 2021, 
 "@tb:identifier.taxonVariant": 4858, 
@@ -2786,11 +3649,14 @@
 }
 }, 
 "Tl3319978": {
-"^ot:originalLabel": "Andrena fulvida Andrenidae_HM401047"
+"^ot:originalLabel": "Andrena fulvida Andrenidae_HM401047", 
+"^ot:ottId": 3262865, 
+"^ot:ottTaxonName": "Andrena fulvida"
 }, 
 "Tl3319979": {
-"^ot:altLabel": "Bombus ruderarius", 
 "^ot:originalLabel": "Bombus ruderarius Apidae_GU705935", 
+"^ot:ottId": 430340, 
+"^ot:ottTaxonName": "Bombus ruderarius", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 44592, 
 "@tb:identifier.taxonVariant": 104439, 
@@ -2799,11 +3665,14 @@
 }
 }, 
 "Tl3319980": {
-"^ot:originalLabel": "Andrena gravida Andrenidae_KJ836450"
+"^ot:originalLabel": "Andrena gravida Andrenidae_KJ836450", 
+"^ot:ottId": 3262387, 
+"^ot:ottTaxonName": "Andrena gravida"
 }, 
 "Tl3319981": {
-"^ot:altLabel": "Melitturga clavicornis", 
 "^ot:originalLabel": "Melitturga clavicornis Andrenidae_KJ836607", 
+"^ot:ottId": 495947, 
+"^ot:ottTaxonName": "Melitturga clavicornis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 37448, 
 "@tb:identifier.taxonVariant": 86567, 
@@ -2812,14 +3681,19 @@
 }
 }, 
 "Tl3319982": {
-"^ot:originalLabel": "Anthophora bimaculata Apidae_KJ837025"
+"^ot:originalLabel": "Anthophora bimaculata Apidae_KJ837025", 
+"^ot:ottId": 3267929, 
+"^ot:ottTaxonName": "Anthophora bimaculata"
 }, 
 "Tl3319983": {
-"^ot:originalLabel": "Andrena symphyti Andrenidae_KJ837432"
+"^ot:originalLabel": "Andrena symphyti Andrenidae_KJ837432", 
+"^ot:ottId": 3262937, 
+"^ot:ottTaxonName": "Andrena symphyti"
 }, 
 "Tl3319984": {
-"^ot:altLabel": "Sphecodes hyalinatus", 
 "^ot:originalLabel": "Sphecodes hyalinatus Halictidae_KJ837294", 
+"^ot:ottId": 1035361, 
+"^ot:ottTaxonName": "Sphecodes hyalinatus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 613249, 
 "@tb:identifier.taxonVariant": 820199, 
@@ -2827,24 +3701,33 @@
 }
 }, 
 "Tl3319985": {
-"^ot:originalLabel": "Nomada similis Apidae_HM401087"
+"^ot:originalLabel": "Nomada similis Apidae_HM401087", 
+"^ot:ottId": 3269108, 
+"^ot:ottTaxonName": "Nomada similis"
 }, 
 "Tl3319986": {
-"^ot:originalLabel": "Eucera interrupta Apidae_KJ836504"
+"^ot:originalLabel": "Eucera interrupta Apidae_KJ836504", 
+"^ot:ottId": 3267284, 
+"^ot:ottTaxonName": "Eucera interrupta"
 }, 
 "Tl3319987": {
 "^ot:originalLabel": "Melitta tricincta Melittidae_KJ838749", 
+"^ot:ottId": 728521, 
+"^ot:ottTaxonName": "Melitta tricincta (species in superclass Hexapoda)", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 441914, 
 "@tb:identifier.taxonVariant": 583305
 }
 }, 
 "Tl3319988": {
-"^ot:originalLabel": "Andrena allosa Andrenidae_KJ837196"
+"^ot:originalLabel": "Andrena allosa Andrenidae_KJ837196", 
+"^ot:ottId": 3262100, 
+"^ot:ottTaxonName": "Andrena allosa"
 }, 
 "Tl3319989": {
-"^ot:altLabel": "Ammobates punctatus", 
 "^ot:originalLabel": "Ammobates punctatus Apidae_HM401141", 
+"^ot:ottId": 258394, 
+"^ot:ottTaxonName": "Ammobates punctatus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 622169, 
 "@tb:identifier.taxonVariant": 833072, 
@@ -2852,8 +3735,9 @@
 }
 }, 
 "Tl3319990": {
-"^ot:altLabel": "Sphecodes pellucidus", 
 "^ot:originalLabel": "Sphecodes pellucidus Halictidae_KT074080", 
+"^ot:ottId": 3272893, 
+"^ot:ottTaxonName": "Sphecodes pellucidus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 613248, 
 "@tb:identifier.taxonVariant": 820198, 
@@ -2861,11 +3745,14 @@
 }
 }, 
 "Tl3319991": {
-"^ot:originalLabel": "Andrena argentata Andrenidae_KJ838106"
+"^ot:originalLabel": "Andrena argentata Andrenidae_KJ838106", 
+"^ot:ottId": 3262255, 
+"^ot:ottTaxonName": "Andrena argentata"
 }, 
 "Tl3319992": {
-"^ot:altLabel": "Megachile willughbiella", 
 "^ot:originalLabel": "Megachile willughbiella Megachilidae_GU706003", 
+"^ot:ottId": 293559, 
+"^ot:ottTaxonName": "Megachile willughbiella", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 47943, 
 "@tb:identifier.taxonVariant": 112125, 
@@ -2874,17 +3761,22 @@
 }
 }, 
 "Tl3319993": {
-"^ot:originalLabel": "Eucera cineraria Apidae_KJ836627"
+"^ot:originalLabel": "Eucera cineraria Apidae_KJ836627", 
+"^ot:ottId": 3267128, 
+"^ot:ottTaxonName": "Eucera cineraria"
 }, 
 "Tl3319994": {
-"^ot:originalLabel": "Nomada nobilis Apidae_KJ836654"
+"^ot:originalLabel": "Nomada nobilis Apidae_KJ836654", 
+"^ot:ottId": 3268850, 
+"^ot:ottTaxonName": "Nomada nobilis"
 }, 
 "Tl3319995": {
 "^ot:originalLabel": "Nomada meridionalis Apidae_KJ837880"
 }, 
 "Tl3319996": {
-"^ot:altLabel": "Colletes hederae", 
 "^ot:originalLabel": "Colletes hederae Colletidae_KJ839205", 
+"^ot:ottId": 198842, 
+"^ot:ottTaxonName": "Colletes hederae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 297172, 
 "@tb:identifier.taxonVariant": 347057, 
@@ -2893,21 +3785,28 @@
 }
 }, 
 "Tl3319997": {
-"^ot:originalLabel": "Rophites quinquespinosus Apidae_KJ839028"
+"^ot:originalLabel": "Rophites quinquespinosus Apidae_KJ839028", 
+"^ot:ottId": 4531190, 
+"^ot:ottTaxonName": "Rophites quinquespinosus"
 }, 
 "Tl3319998": {
 "^ot:originalLabel": "Melitta nigricans Melittidae_KJ839607", 
+"^ot:ottId": 728520, 
+"^ot:ottTaxonName": "Melitta nigricans (species in superclass Hexapoda)", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 441913, 
 "@tb:identifier.taxonVariant": 583304
 }
 }, 
 "Tl3319999": {
-"^ot:originalLabel": "Nomada striata Apidae_KJ836473"
+"^ot:originalLabel": "Nomada striata Apidae_KJ836473", 
+"^ot:ottId": 3268971, 
+"^ot:ottTaxonName": "Nomada striata"
 }, 
 "Tl3320000": {
-"^ot:altLabel": "Bombus jonellus", 
 "^ot:originalLabel": "Bombus jonellus Apidae_KJ837105", 
+"^ot:ottId": 386321, 
+"^ot:ottTaxonName": "Bombus jonellus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 44675, 
 "@tb:identifier.taxonVariant": 104552, 
@@ -2916,8 +3815,9 @@
 }
 }, 
 "Tl3320001": {
-"^ot:altLabel": "Bombus monticola", 
 "^ot:originalLabel": "Bombus monticola Apidae_GU705913", 
+"^ot:ottId": 689189, 
+"^ot:ottTaxonName": "Bombus monticola", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 44648, 
 "@tb:identifier.taxonVariant": 104520, 
@@ -2929,13 +3829,19 @@
 "^ot:originalLabel": "Epeolus marginatus Apidae_KJ838052"
 }, 
 "Tl3320003": {
-"^ot:originalLabel": "Andrena rhenana Andrenidae_KJ838999"
+"^ot:originalLabel": "Andrena rhenana Andrenidae_KJ838999", 
+"^ot:ottId": 3263149, 
+"^ot:ottTaxonName": "Andrena rhenana"
 }, 
 "Tl3320004": {
-"^ot:originalLabel": "Andrena falsifica Andrenidae_KJ838103"
+"^ot:originalLabel": "Andrena falsifica Andrenidae_KJ838103", 
+"^ot:ottId": 3263206, 
+"^ot:ottTaxonName": "Andrena falsifica"
 }, 
 "Tl3320005": {
-"^ot:originalLabel": "Andrena stragulata Andrenidae_KJ839175"
+"^ot:originalLabel": "Andrena stragulata Andrenidae_KJ839175", 
+"^ot:ottId": 3262369, 
+"^ot:ottTaxonName": "Andrena stragulata"
 }, 
 "Tl3320006": {
 "^ot:originalLabel": "Andrena fulvicornis Andrenidae_HM376237"
@@ -2944,11 +3850,14 @@
 "^ot:originalLabel": "Nomada tormentillae Apidae_HQ948039"
 }, 
 "Tl3320008": {
-"^ot:originalLabel": "Hylaeus communis Colletidae_KJ839696"
+"^ot:originalLabel": "Hylaeus communis Colletidae_KJ839696", 
+"^ot:ottId": 28860, 
+"^ot:ottTaxonName": "Hylaeus communis"
 }, 
 "Tl3320009": {
-"^ot:altLabel": "Lasioglossum fulvicorne", 
 "^ot:originalLabel": "Lasioglossum fulvicorne Halictidae_KJ838123", 
+"^ot:ottId": 1003482, 
+"^ot:ottTaxonName": "Lasioglossum fulvicorne", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 98418, 
 "@tb:identifier.taxonVariant": 177598, 
@@ -2957,11 +3866,14 @@
 }
 }, 
 "Tl3320010": {
-"^ot:originalLabel": "Epeolus cruciger Apidae_KJ836474"
+"^ot:originalLabel": "Epeolus cruciger Apidae_KJ836474", 
+"^ot:ottId": 3269212, 
+"^ot:ottTaxonName": "Epeolus cruciger"
 }, 
 "Tl3320011": {
-"^ot:altLabel": "Lasioglossum discum", 
 "^ot:originalLabel": "Lasioglossum discum Halictidae_KJ839117", 
+"^ot:ottId": 480230, 
+"^ot:ottTaxonName": "Lasioglossum discum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 98438, 
 "@tb:identifier.taxonVariant": 177618, 
@@ -2970,32 +3882,49 @@
 }
 }, 
 "Tl3320012": {
-"^ot:originalLabel": "Lasioglossum punctatissimum Halictidae_HM376229"
+"^ot:originalLabel": "Lasioglossum punctatissimum Halictidae_HM376229", 
+"^ot:ottId": 44721, 
+"^ot:ottTaxonName": "Lasioglossum punctatissimum"
 }, 
 "Tl3320013": {
-"^ot:originalLabel": "Panurginus sericatus Andrenidae_KJ837895"
+"^ot:originalLabel": "Panurginus sericatus Andrenidae_KJ837895", 
+"^ot:ottId": 4531426, 
+"^ot:ottTaxonName": "Panurginus sericatus"
 }, 
 "Tl3320014": {
-"^ot:originalLabel": "Nomada castellana Apidae_KJ837163"
+"^ot:originalLabel": "Nomada castellana Apidae_KJ837163", 
+"^ot:ottId": 3269015, 
+"^ot:ottTaxonName": "Nomada castellana"
 }, 
 "Tl3320015": {
-"^ot:originalLabel": "Andrena clarkella Andrenidae_GU705928"
+"^ot:originalLabel": "Andrena clarkella Andrenidae_GU705928", 
+"^ot:ottId": 883563, 
+"^ot:ottTaxonName": "Andrena clarkella"
 }, 
 "Tl3320016": {
-"^ot:originalLabel": "Thyreus histrionicus Apidae_HQ948099"
+"^ot:originalLabel": "Thyreus histrionicus Apidae_HQ948099", 
+"^ot:ottId": 3267366, 
+"^ot:ottTaxonName": "Thyreus histrionicus"
 }, 
 "Tl3320017": {
-"^ot:originalLabel": "Hoplitis acuticornis Megachilidae_HM401195"
+"^ot:originalLabel": "Hoplitis acuticornis Megachilidae_HM401195", 
+"^ot:ottId": 580007, 
+"^ot:ottTaxonName": "Hoplitis acuticornis"
 }, 
 "Tl3320018": {
-"^ot:originalLabel": "Epeolus alpinus Apidae_KJ837447"
+"^ot:originalLabel": "Epeolus alpinus Apidae_KJ837447", 
+"^ot:ottId": 3269183, 
+"^ot:ottTaxonName": "Epeolus alpinus"
 }, 
 "Tl3320019": {
-"^ot:originalLabel": "Osmia cerinthidis Megachilidae_KC709832"
+"^ot:originalLabel": "Osmia cerinthidis Megachilidae_KC709832", 
+"^ot:ottId": 3265621, 
+"^ot:ottTaxonName": "Osmia cerinthidis"
 }, 
 "Tl3320020": {
-"^ot:altLabel": "Chelostoma grande", 
 "^ot:originalLabel": "Chelostoma grande Megachilidae_KJ836477", 
+"^ot:ottId": 92709, 
+"^ot:ottTaxonName": "Chelostoma grande", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 484726, 
 "@tb:identifier.taxonVariant": 559247, 
@@ -3004,14 +3933,19 @@
 }
 }, 
 "Tl3320021": {
-"^ot:originalLabel": "Coelioxys elongata Megachilidae_KJ837365"
+"^ot:originalLabel": "Coelioxys elongata Megachilidae_KJ837365", 
+"^ot:ottId": 1035378, 
+"^ot:ottTaxonName": "Coelioxys elongata"
 }, 
 "Tl3320022": {
-"^ot:originalLabel": "Nomada symphyti Apidae_KJ839448"
+"^ot:originalLabel": "Nomada symphyti Apidae_KJ839448", 
+"^ot:ottId": 3268750, 
+"^ot:ottTaxonName": "Nomada symphyti"
 }, 
 "Tl3320023": {
-"^ot:altLabel": "Bombus wurflenii", 
 "^ot:originalLabel": "Bombus wurflenii Apidae_GU705917", 
+"^ot:ottId": 962507, 
+"^ot:ottTaxonName": "Bombus wurflenii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 44595, 
 "@tb:identifier.taxonVariant": 104444, 
@@ -3020,14 +3954,19 @@
 }
 }, 
 "Tl3320024": {
-"^ot:originalLabel": "Lasioglossum sexstrigatum Halictidae_HQ954761"
+"^ot:originalLabel": "Lasioglossum sexstrigatum Halictidae_HQ954761", 
+"^ot:ottId": 3272047, 
+"^ot:ottTaxonName": "Lasioglossum sexstrigatum"
 }, 
 "Tl3320025": {
-"^ot:originalLabel": "Megachile flabellipes Megachilidae_KJ836765"
+"^ot:originalLabel": "Megachile flabellipes Megachilidae_KJ836765", 
+"^ot:ottId": 3264360, 
+"^ot:ottTaxonName": "Megachile flabellipes"
 }, 
 "Tl3320026": {
-"^ot:altLabel": "Sphecodes ruficrus", 
 "^ot:originalLabel": "Sphecodes ruficrus Halictidae_KJ836476", 
+"^ot:ottId": 505546, 
+"^ot:ottTaxonName": "Sphecodes ruficrus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 613243, 
 "@tb:identifier.taxonVariant": 820193, 
@@ -3035,17 +3974,22 @@
 }
 }, 
 "Tl3320027": {
-"^ot:originalLabel": "Andrena apicata Andrenidae_JQ909642"
+"^ot:originalLabel": "Andrena apicata Andrenidae_JQ909642", 
+"^ot:ottId": 883559, 
+"^ot:ottTaxonName": "Andrena apicata"
 }, 
 "Tl3320028": {
 "^ot:originalLabel": "Nomada glabella Apidae_KJ837655"
 }, 
 "Tl3320029": {
-"^ot:originalLabel": "Lasioglossum xanthopus Halictidae_KJ836625"
+"^ot:originalLabel": "Lasioglossum xanthopus Halictidae_KJ836625", 
+"^ot:ottId": 3271608, 
+"^ot:ottTaxonName": "Lasioglossum xanthopus"
 }, 
 "Tl3320030": {
-"^ot:altLabel": "Bombus gerstaeckeri", 
 "^ot:originalLabel": "Bombus gerstaeckeri Apidae_GU705902", 
+"^ot:ottId": 486473, 
+"^ot:ottTaxonName": "Bombus gerstaeckeri", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 344764, 
 "@tb:identifier.taxonVariant": 380106, 
@@ -3054,11 +3998,14 @@
 }
 }, 
 "Tl3320031": {
-"^ot:originalLabel": "Rhodanthidium caturigense Megachilidae_KJ836719"
+"^ot:originalLabel": "Rhodanthidium caturigense Megachilidae_KJ836719", 
+"^ot:ottId": 4530216, 
+"^ot:ottTaxonName": "Rhodanthidium caturigense"
 }, 
 "Tl3320032": {
-"^ot:altLabel": "Hylaeus leptocephalus", 
 "^ot:originalLabel": "Hylaeus leptocephalus Colletidae_KJ838113", 
+"^ot:ottId": 81715, 
+"^ot:ottTaxonName": "Hylaeus leptocephalus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 274935, 
 "@tb:identifier.taxonVariant": 329563, 
@@ -3067,8 +4014,9 @@
 }
 }, 
 "Tl3320033": {
-"^ot:altLabel": "Lasioglossum puncticolle", 
 "^ot:originalLabel": "Lasioglossum puncticolle Halictidae_HM401255", 
+"^ot:ottId": 1006434, 
+"^ot:ottTaxonName": "Lasioglossum puncticolle", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 98429, 
 "@tb:identifier.taxonVariant": 177609, 
@@ -3077,11 +4025,14 @@
 }
 }, 
 "Tl3320034": {
-"^ot:originalLabel": "Andrena montana Andrenidae_GU705960"
+"^ot:originalLabel": "Andrena montana Andrenidae_GU705960", 
+"^ot:ottId": 3262627, 
+"^ot:ottTaxonName": "Andrena montana"
 }, 
 "Tl3320035": {
-"^ot:altLabel": "Sphecodes geoffrellus", 
 "^ot:originalLabel": "Sphecodes geoffrellus Halictidae_KJ837236", 
+"^ot:ottId": 1035365, 
+"^ot:ottTaxonName": "Sphecodes geoffrellus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 613250, 
 "@tb:identifier.taxonVariant": 820200, 
@@ -3089,8 +4040,9 @@
 }
 }, 
 "Tl3320036": {
-"^ot:altLabel": "Sphecodes puncticeps", 
 "^ot:originalLabel": "Sphecodes puncticeps Halictidae_KT074081", 
+"^ot:ottId": 3273066, 
+"^ot:ottTaxonName": "Sphecodes puncticeps", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 613259, 
 "@tb:identifier.taxonVariant": 820209, 
@@ -3098,26 +4050,37 @@
 }
 }, 
 "Tl3320037": {
-"^ot:originalLabel": "Hylaeus tyrolensis Colletidae_KJ836565"
+"^ot:originalLabel": "Hylaeus tyrolensis Colletidae_KJ836565", 
+"^ot:ottId": 3274188, 
+"^ot:ottTaxonName": "Hylaeus tyrolensis"
 }, 
 "Tl3320038": {
 "^ot:originalLabel": "Halictus leucaheneus Halictidae_KJ838382"
 }, 
 "Tl3320039": {
-"^ot:originalLabel": "Hoplitis mucida Megachilidae_KJ837173"
+"^ot:originalLabel": "Hoplitis mucida Megachilidae_KJ837173", 
+"^ot:ottId": 337428, 
+"^ot:ottTaxonName": "Hoplitis mucida"
 }, 
 "Tl3320040": {
-"^ot:originalLabel": "Nomioides minutissimus Halictidae_KJ839479"
+"^ot:originalLabel": "Nomioides minutissimus Halictidae_KJ839479", 
+"^ot:ottId": 3273663, 
+"^ot:ottTaxonName": "Nomioides minutissimus"
 }, 
 "Tl3320041": {
-"^ot:originalLabel": "Andrena pastellensis Andrenidae_HM401027"
+"^ot:originalLabel": "Andrena pastellensis Andrenidae_HM401027", 
+"^ot:ottId": 3262832, 
+"^ot:ottTaxonName": "Andrena pastellensis"
 }, 
 "Tl3320042": {
-"^ot:originalLabel": "Andrena chrysopus Andrenidae_GU705927"
+"^ot:originalLabel": "Andrena chrysopus Andrenidae_GU705927", 
+"^ot:ottId": 3262185, 
+"^ot:ottTaxonName": "Andrena chrysopus"
 }, 
 "Tl3320043": {
-"^ot:altLabel": "Sphecodes rufiventris", 
 "^ot:originalLabel": "Sphecodes rufiventris Halictidae_KJ837280", 
+"^ot:ottId": 3273106, 
+"^ot:ottTaxonName": "Sphecodes rufiventris", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 613253, 
 "@tb:identifier.taxonVariant": 820203, 
@@ -3125,7 +4088,9 @@
 }
 }, 
 "Tl3320044": {
-"^ot:originalLabel": "Andrena fulvago Andrenidae_KJ837292"
+"^ot:originalLabel": "Andrena fulvago Andrenidae_KJ837292", 
+"^ot:ottId": 3262624, 
+"^ot:ottTaxonName": "Andrena fulvago"
 }
 }
 }
@@ -3142,7 +4107,18 @@
 "Tr114007": {
 "@label": "PAUP 1", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:undefined", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn17836820", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:ntax.tree": 553, 
 "edgeBySourceId": {
 "Tn17836736": {
@@ -3212,7 +4188,7 @@
 "@target": "Tn17837153"
 }, 
 "edge57116": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17836745", 
 "@target": "Tn17836824"
 }
@@ -3548,7 +4524,7 @@
 "@target": "Tn17837207"
 }, 
 "edge55492": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17836804", 
 "@target": "Tn17836791"
 }
@@ -3644,7 +4620,7 @@
 "@target": "Tn17837670"
 }, 
 "edge55192": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17836814", 
 "@target": "Tn17837229"
 }
@@ -3663,7 +4639,7 @@
 }, 
 "Tn17836820": {
 "edge55070": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17836820", 
 "@target": "Tn17837121"
 }, 
@@ -4287,7 +5263,7 @@
 }, 
 "Tn17836911": {
 "edge55638": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17836911", 
 "@target": "Tn17837118"
 }, 
@@ -4443,7 +5419,7 @@
 }, 
 "Tn17836945": {
 "edge55584": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17836945", 
 "@target": "Tn17837821"
 }, 
@@ -4791,7 +5767,7 @@
 }, 
 "Tn17837000": {
 "edge57112": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17837000", 
 "@target": "Tn17836745"
 }, 
@@ -4995,12 +5971,12 @@
 }, 
 "Tn17837032": {
 "edge55324": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17837032", 
 "@target": "Tn17837318"
 }, 
 "edge55326": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17837032", 
 "@target": "Tn17837364"
 }
@@ -5283,7 +6259,7 @@
 }, 
 "Tn17837084": {
 "edge56534": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17837084", 
 "@target": "Tn17836829"
 }, 
@@ -6231,7 +7207,7 @@
 }, 
 "Tn17837269": {
 "edge55774": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17837269", 
 "@target": "Tn17837319"
 }, 
@@ -6416,7 +7392,7 @@
 "@target": "Tn17836864"
 }, 
 "edge56398": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17837304", 
 "@target": "Tn17837203"
 }
@@ -7551,7 +8527,7 @@
 }, 
 "Tn17837505": {
 "edge57104": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17837505", 
 "@target": "Tn17837738"
 }, 
@@ -7911,7 +8887,7 @@
 }, 
 "Tn17837572": {
 "edge56818": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17837572", 
 "@target": "Tn17837410"
 }, 
@@ -8792,7 +9768,7 @@
 "@target": "Tn17837133"
 }, 
 "edge56824": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17837694", 
 "@target": "Tn17836793"
 }
@@ -9087,7 +10063,7 @@
 }, 
 "Tn17837731": {
 "edge55144": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17837731", 
 "@target": "Tn17837398"
 }, 
@@ -9111,7 +10087,7 @@
 }, 
 "Tn17837736": {
 "edge57056": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17837736", 
 "@target": "Tn17837762"
 }, 
@@ -9387,12 +10363,12 @@
 }, 
 "Tn17837767": {
 "edge57190": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17837767", 
 "@target": "Tn17837555"
 }, 
 "edge57192": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17837767", 
 "@target": "Tn17837385"
 }
@@ -9692,7 +10668,7 @@
 "@target": "Tn17837597"
 }, 
 "edge55588": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17837821", 
 "@target": "Tn17837341"
 }
