@@ -56,16 +56,95 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2018-09-27T19:49:06.521Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:curatorName": "Jesseholmes", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2018-09-27T19:49:06.521Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Jesseholmes"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S20912"
 }, 
+"^ot:focalCladeOTTTaxonName": "", 
 "^ot:otusElementOrder": [
 "Tls57059"
 ], 
@@ -75,6 +154,7 @@
 }, 
 "^ot:studyPublicationReference": "Heluta V., Takamatsu S., & Siahaan S. 2017. Erysiphe salmonii (Erysiphales, Ascomycota), another East Asian powdery mildew fungus introduced into Ukraine. Ukrainian Botanical Journal, 74(3): 212\u0096219.", 
 "^ot:studyYear": 2017, 
+"^ot:tag": [], 
 "^ot:taxonLinkPrefixes": {
 "@ubio": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:"
 }, 
@@ -99,8 +179,9 @@
 "^skos:historyNote": "Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlOTUWriter@12d6c935 $Rev$", 
 "otuById": {
 "Tl2699546": {
-"^ot:altLabel": "Erysiphe liquidambaris", 
 "^ot:originalLabel": "Erysiphe liquidambaris LC028984 ex Liquidambar", 
+"^ot:ottId": 3715161, 
+"^ot:ottTaxonName": "Erysiphe liquidambaris", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 628836, 
 "@tb:identifier.taxonVariant": 842956, 
@@ -108,7 +189,9 @@
 }
 }, 
 "Tl2699547": {
-"^ot:originalLabel": "Erysiphe salmonii "
+"^ot:originalLabel": "Erysiphe salmonii ", 
+"^ot:ottId": 3715226, 
+"^ot:ottTaxonName": "Erysiphe salmonii"
 }, 
 "Tl2699548": {
 "^ot:originalLabel": "Erysiphe sp. LC028977 ex F. lanuginosa Japan"
@@ -117,8 +200,9 @@
 "^ot:originalLabel": "Erysiphe sp. LC028982 ex F. apertisquamifera Japan"
 }, 
 "Tl2699550": {
-"^ot:altLabel": "Erysiphe salmonii", 
 "^ot:originalLabel": "Erysiphe salmonii KW70591F ex F. rhynchophylla Ukraine", 
+"^ot:ottId": 3715226, 
+"^ot:ottTaxonName": "Erysiphe salmonii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 628835, 
 "@tb:identifier.taxonVariant": 842955, 
@@ -126,8 +210,9 @@
 }
 }, 
 "Tl2699551": {
-"^ot:altLabel": "Erysiphe salmonii", 
 "^ot:originalLabel": "Erysiphe salmonii KW70587F ex F. excelsior Ukraine", 
+"^ot:ottId": 3715226, 
+"^ot:ottTaxonName": "Erysiphe salmonii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 628835, 
 "@tb:identifier.taxonVariant": 842955, 
@@ -138,8 +223,9 @@
 "^ot:originalLabel": "Erysiphe sp. LC028978 ex F. lanuginosa Japan"
 }, 
 "Tl2699553": {
-"^ot:altLabel": "Erysiphe salmonii", 
 "^ot:originalLabel": "Erysiphe salmonii LC028981 ex F. mandshurica Japan", 
+"^ot:ottId": 3715226, 
+"^ot:ottTaxonName": "Erysiphe salmonii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 628835, 
 "@tb:identifier.taxonVariant": 842955, 
@@ -147,8 +233,9 @@
 }
 }, 
 "Tl2699554": {
-"^ot:altLabel": "Erysiphe fraxinicola", 
 "^ot:originalLabel": "Erysiphe fraxinicola LC028979 ex F. longicuspis Japan", 
+"^ot:ottId": 3714997, 
+"^ot:ottTaxonName": "Erysiphe fraxinicola", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 628833, 
 "@tb:identifier.taxonVariant": 842953, 
@@ -170,7 +257,18 @@
 "Tr103704": {
 "@label": "Fig. 2", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:undefined", 
+"^ot:curatedType": "Maximum parsimony ", 
+"^ot:inGroupClade": "Tn16181633", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn16181623", 
+"^ot:specifiedRoot": "Tn16181623", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 9, 
 "^tb:quality.tree": "Unrated", 
