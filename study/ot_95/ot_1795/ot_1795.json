@@ -49,16 +49,115 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2018-10-02T14:09:41.069Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:curatorName": "Matt Girard", 
+"substitutions": {
+"substitution": [
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}, 
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": "$1"
+}, 
+"old": {
+"$": "^(\\S*\\s+\\S*).*"
+}
+}, 
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": "bar"
+}, 
+"old": {
+"$": "foo"
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2018-10-02T14:09:41.069Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Matt Girard"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S20938"
 }, 
+"^ot:focalCladeOTTTaxonName": "", 
 "^ot:otusElementOrder": [
 "Tls64381"
 ], 
@@ -68,6 +167,7 @@
 }, 
 "^ot:studyPublicationReference": "Tanney J.B., Visagie C.M., Yilmaz N., & Seifert K.A. 2017. Aspergillus subgenus Polypaecilum from the built environment. Studies in Mycology, 88: 237-267.", 
 "^ot:studyYear": 2017, 
+"^ot:tag": [], 
 "^ot:taxonLinkPrefixes": {
 "@ubio": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:", 
 "@uniprot": "http://purl.uniprot.org/taxonomy/"
@@ -149,7 +249,9 @@
 "^ot:originalLabel": "Aspergillus baarnensis KAS7918"
 }, 
 "Tl3269757": {
-"^ot:originalLabel": "Phialosimplex salinarum DSM27530_CBS138583_KAS8121"
+"^ot:originalLabel": "Phialosimplex salinarum DSM27530_CBS138583_KAS8121", 
+"^ot:ottId": 5695753, 
+"^ot:ottTaxonName": "Phialosimplex salinarum"
 }, 
 "Tl3269758": {
 "^ot:originalLabel": "Aspergillus insolitus CBS384.61T_KAS8107"
@@ -200,8 +302,9 @@
 "^ot:originalLabel": "Aspergillus keratitidis 1_PN01TH16_KAS8110"
 }, 
 "Tl3269774": {
-"^ot:altLabel": "Aspergillus wentii", 
 "^ot:originalLabel": "Aspergillus wentii CBS104.07T", 
+"^ot:ottId": 749901, 
+"^ot:ottTaxonName": "Aspergillus wentii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51225, 
 "@tb:identifier.taxonVariant": 121000, 
@@ -216,7 +319,9 @@
 "^ot:originalLabel": "Aspergillus insolitus CBS181.90_KAS8106"
 }, 
 "Tl3269777": {
-"^ot:originalLabel": "Talaromyces funiculosus DAOMC221148"
+"^ot:originalLabel": "Talaromyces funiculosus DAOMC221148", 
+"^ot:ottId": 647517, 
+"^ot:ottTaxonName": "Talaromyces funiculosus"
 }
 }
 }
@@ -226,7 +331,6 @@
 "@label": "Polypaecilum BI TOP1", 
 "@otus": "Tls64381", 
 "^ot:treeElementOrder": [
-"Tr112850", 
 "Tr112851", 
 "Tr112849", 
 "Tr112847", 
@@ -239,7 +343,18 @@
 "Tr112845": {
 "@label": "majrule", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:undefined", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "Tn17655529", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn17655552", 
+"^ot:specifiedRoot": "Tn17655552", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "^tb:ntax.tree": 38, 
 "edgeBySourceId": {
 "Tn17655499": {
@@ -896,7 +1011,18 @@
 "Tr112846": {
 "@label": "con 50 majrule++", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:undefined", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "Tn17655589", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn17655570", 
+"^ot:specifiedRoot": "Tn17655570", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "^tb:ntax.tree": 37, 
 "edgeBySourceId": {
 "Tn17655570": {
@@ -1485,7 +1611,18 @@
 "Tr112847": {
 "@label": "con 50 majrule+", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:undefined", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "Tn17655700", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn17655686", 
+"^ot:specifiedRoot": "Tn17655686", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "^tb:ntax.tree": 37, 
 "edgeBySourceId": {
 "Tn17655637": {
@@ -2074,7 +2211,18 @@
 "Tr112848": {
 "@label": "con 50 majrule+", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:undefined", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "Tn17655740", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn17655745", 
+"^ot:specifiedRoot": "Tn17655745", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "^tb:ntax.tree": 37, 
 "edgeBySourceId": {
 "Tn17655702": {
@@ -2613,7 +2761,18 @@
 "Tr112849": {
 "@label": "con 50 majrule+", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:undefined", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "Tn17655822", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn17655783", 
+"^ot:specifiedRoot": "Tn17655783", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "^tb:ntax.tree": 38, 
 "edgeBySourceId": {
 "Tn17655764": {
@@ -3197,579 +3356,22 @@
 }
 }
 }, 
-"Tr112850": {
-"@label": "majrule", 
-"@xsi:type": "nex:FloatTree", 
-"^ot:rootNodeId": "Tn17655883", 
-"^tb:ntax.tree": 37, 
-"edgeBySourceId": {
-"Tn17655829": {
-"edge2667782": {
-"@length": 0.01239245, 
-"@source": "Tn17655829", 
-"@target": "Tn17655862"
-}, 
-"edge2667794": {
-"@length": 0.004901769, 
-"@source": "Tn17655829", 
-"@target": "Tn17655848"
-}
-}, 
-"Tn17655831": {
-"edge2667752": {
-"@length": 0.0009710891, 
-"@source": "Tn17655831", 
-"@target": "Tn17655855"
-}, 
-"edge2667754": {
-"@length": 0.0009585302, 
-"@source": "Tn17655831", 
-"@target": "Tn17655864"
-}
-}, 
-"Tn17655832": {
-"edge2667820": {
-"@length": 0.0008352593, 
-"@source": "Tn17655832", 
-"@target": "Tn17655836"
-}, 
-"edge2667822": {
-"@length": 0.0009831379, 
-"@source": "Tn17655832", 
-"@target": "Tn17655880"
-}, 
-"edge2667824": {
-"@length": 0.0009010784, 
-"@source": "Tn17655832", 
-"@target": "Tn17655853"
-}
-}, 
-"Tn17655835": {
-"edge2667750": {
-"@length": 0.1463555, 
-"@source": "Tn17655835", 
-"@target": "Tn17655831"
-}, 
-"edge2667756": {
-"@length": 0.1269418, 
-"@source": "Tn17655835", 
-"@target": "Tn17655869"
-}
-}, 
-"Tn17655837": {
-"edge2667804": {
-"@length": 0.0009697252, 
-"@source": "Tn17655837", 
-"@target": "Tn17655870"
-}, 
-"edge2667806": {
-"@length": 0.00105306, 
-"@source": "Tn17655837", 
-"@target": "Tn17655854"
-}
-}, 
-"Tn17655838": {
-"edge2667728": {
-"@length": 0.04971404, 
-"@source": "Tn17655838", 
-"@target": "Tn17655860"
-}, 
-"edge2667730": {
-"@length": 0.1372469, 
-"@source": "Tn17655838", 
-"@target": "Tn17655873"
-}
-}, 
-"Tn17655842": {
-"edge2667712": {
-"@length": 0.002380548, 
-"@source": "Tn17655842", 
-"@target": "Tn17655872"
-}, 
-"edge2667714": {
-"@length": 0.005999118, 
-"@source": "Tn17655842", 
-"@target": "Tn17655868"
-}
-}, 
-"Tn17655843": {
-"edge2667760": {
-"@length": 0.0009024998, 
-"@source": "Tn17655843", 
-"@target": "Tn17655851"
-}, 
-"edge2667762": {
-"@length": 0.0009603072, 
-"@source": "Tn17655843", 
-"@target": "Tn17655852"
-}
-}, 
-"Tn17655844": {
-"edge2667788": {
-"@length": 0.001024115, 
-"@source": "Tn17655844", 
-"@target": "Tn17655876"
-}, 
-"edge2667790": {
-"@length": 0.0009934178, 
-"@source": "Tn17655844", 
-"@target": "Tn17655858"
-}, 
-"edge2667792": {
-"@length": 0.0009350255, 
-"@source": "Tn17655844", 
-"@target": "Tn17655878"
-}
-}, 
-"Tn17655846": {
-"edge2667810": {
-"@length": 0.003696688, 
-"@source": "Tn17655846", 
-"@target": "Tn17655882"
-}, 
-"edge2667812": {
-"@length": 0.002168156, 
-"@source": "Tn17655846", 
-"@target": "Tn17655889"
-}, 
-"edge2667818": {
-"@length": 0.002428222, 
-"@source": "Tn17655846", 
-"@target": "Tn17655832"
-}
-}, 
-"Tn17655847": {
-"edge2667704": {
-"@length": 0.04179257, 
-"@source": "Tn17655847", 
-"@target": "Tn17655877"
-}, 
-"edge2667748": {
-"@length": 0.06485077, 
-"@source": "Tn17655847", 
-"@target": "Tn17655835"
-}
-}, 
-"Tn17655848": {
-"edge2667796": {
-"@length": 0.002417561, 
-"@source": "Tn17655848", 
-"@target": "Tn17655890"
-}, 
-"edge2667808": {
-"@length": 0.002236212, 
-"@source": "Tn17655848", 
-"@target": "Tn17655846"
-}
-}, 
-"Tn17655850": {
-"edge2667742": {
-"@length": 0.0008609936, 
-"@source": "Tn17655850", 
-"@target": "Tn17655856"
-}, 
-"edge2667744": {
-"@length": 0.0009109141, 
-"@source": "Tn17655850", 
-"@target": "Tn17655863"
-}, 
-"edge2667746": {
-"@length": 0.0009804817, 
-"@source": "Tn17655850", 
-"@target": "Tn17655887"
-}
-}, 
-"Tn17655861": {
-"edge2667734": {
-"@length": 0.02229785, 
-"@source": "Tn17655861", 
-"@target": "Tn17655849"
-}, 
-"edge2667736": {
-"@length": 0.01713674, 
-"@source": "Tn17655861", 
-"@target": "Tn17655888"
-}
-}, 
-"Tn17655862": {
-"edge2667784": {
-"@length": 0.002403538, 
-"@source": "Tn17655862", 
-"@target": "Tn17655867"
-}, 
-"edge2667786": {
-"@length": 0.002348987, 
-"@source": "Tn17655862", 
-"@target": "Tn17655844"
-}
-}, 
-"Tn17655865": {
-"edge2667770": {
-"@length": 0.04483276, 
-"@source": "Tn17655865", 
-"@target": "Tn17655871"
-}, 
-"edge2667772": {
-"@length": 0.04240697, 
-"@source": "Tn17655865", 
-"@target": "Tn17655866"
-}, 
-"edge2667780": {
-"@length": 0.03073015, 
-"@source": "Tn17655865", 
-"@target": "Tn17655829"
-}
-}, 
-"Tn17655866": {
-"edge2667774": {
-"@length": 0.0008426527, 
-"@source": "Tn17655866", 
-"@target": "Tn17655859"
-}, 
-"edge2667776": {
-"@length": 0.0009983963, 
-"@source": "Tn17655866", 
-"@target": "Tn17655874"
-}, 
-"edge2667778": {
-"@length": 0.0009128924, 
-"@source": "Tn17655866", 
-"@target": "Tn17655833"
-}
-}, 
-"Tn17655868": {
-"edge2667716": {
-"@length": 0.0009943057, 
-"@source": "Tn17655868", 
-"@target": "Tn17655879"
-}, 
-"edge2667718": {
-"@length": 0.0009041531, 
-"@source": "Tn17655868", 
-"@target": "Tn17655845"
-}, 
-"edge2667720": {
-"@length": 0.0009467419, 
-"@source": "Tn17655868", 
-"@target": "Tn17655892"
-}, 
-"edge2667722": {
-"@length": 0.0009225706, 
-"@source": "Tn17655868", 
-"@target": "Tn17655840"
-}
-}, 
-"Tn17655869": {
-"edge2667758": {
-"@length": 0.06034101, 
-"@source": "Tn17655869", 
-"@target": "Tn17655843"
-}, 
-"edge2667764": {
-"@length": 0.06105551, 
-"@source": "Tn17655869", 
-"@target": "Tn17655886"
-}
-}, 
-"Tn17655875": {
-"edge2667710": {
-"@length": 0.165053, 
-"@source": "Tn17655875", 
-"@target": "Tn17655842"
-}, 
-"edge2667724": {
-"@length": 0.0844142, 
-"@source": "Tn17655875", 
-"@target": "Tn17655885"
-}
-}, 
-"Tn17655877": {
-"edge2667706": {
-"@length": 0.1281448, 
-"@source": "Tn17655877", 
-"@target": "Tn17655834"
-}, 
-"edge2667708": {
-"@length": 0.03932828, 
-"@source": "Tn17655877", 
-"@target": "Tn17655875"
-}
-}, 
-"Tn17655883": {
-"edge2667700": {
-"@length": 0.2339114, 
-"@source": "Tn17655883", 
-"@target": "Tn17655841"
-}, 
-"edge2667702": {
-"@length": 0.2339114, 
-"@source": "Tn17655883", 
-"@target": "Tn17655847"
-}
-}, 
-"Tn17655885": {
-"edge2667726": {
-"@length": 0.1035484, 
-"@source": "Tn17655885", 
-"@target": "Tn17655838"
-}, 
-"edge2667732": {
-"@length": 0.0604371, 
-"@source": "Tn17655885", 
-"@target": "Tn17655861"
-}
-}, 
-"Tn17655886": {
-"edge2667766": {
-"@length": 0.05718605, 
-"@source": "Tn17655886", 
-"@target": "Tn17655839"
-}, 
-"edge2667768": {
-"@length": 0.02128164, 
-"@source": "Tn17655886", 
-"@target": "Tn17655865"
-}
-}, 
-"Tn17655888": {
-"edge2667738": {
-"@length": 0.01369166, 
-"@source": "Tn17655888", 
-"@target": "Tn17655857"
-}, 
-"edge2667740": {
-"@length": 0.005142659, 
-"@source": "Tn17655888", 
-"@target": "Tn17655850"
-}
-}, 
-"Tn17655889": {
-"edge2667814": {
-"@length": 0.0009647041, 
-"@source": "Tn17655889", 
-"@target": "Tn17655881"
-}, 
-"edge2667816": {
-"@length": 0.0009447585, 
-"@source": "Tn17655889", 
-"@target": "Tn17655884"
-}
-}, 
-"Tn17655890": {
-"edge2667798": {
-"@length": 0.001009286, 
-"@source": "Tn17655890", 
-"@target": "Tn17655891"
-}, 
-"edge2667800": {
-"@length": 0.0008987235, 
-"@source": "Tn17655890", 
-"@target": "Tn17655830"
-}, 
-"edge2667802": {
-"@length": 0.002288908, 
-"@source": "Tn17655890", 
-"@target": "Tn17655837"
-}
-}
-}, 
-"nodeById": {
-"Tn17655829": {
-"@label": "1.000"
-}, 
-"Tn17655830": {
-"@otu": "Tl3269740"
-}, 
-"Tn17655831": {
-"@label": "1.000"
-}, 
-"Tn17655832": {
-"@label": "0.975"
-}, 
-"Tn17655833": {
-"@otu": "Tl3269759"
-}, 
-"Tn17655834": {
-"@otu": "Tl3269764"
-}, 
-"Tn17655835": {
-"@label": "0.979"
-}, 
-"Tn17655836": {
-"@otu": "Tl3269762"
-}, 
-"Tn17655837": {
-"@label": "0.981"
-}, 
-"Tn17655838": {
-"@label": "1.000"
-}, 
-"Tn17655839": {
-"@otu": "Tl3269755"
-}, 
-"Tn17655840": {
-"@otu": "Tl3269770"
-}, 
-"Tn17655841": {
-"@otu": "Tl3269777"
-}, 
-"Tn17655842": {
-"@label": "1.000"
-}, 
-"Tn17655843": {
-"@label": "1.000"
-}, 
-"Tn17655844": {
-"@label": "0.965"
-}, 
-"Tn17655845": {
-"@otu": "Tl3269741"
-}, 
-"Tn17655846": {
-"@label": "0.987"
-}, 
-"Tn17655847": {
-"@label": "0.905"
-}, 
-"Tn17655848": {
-"@label": "0.993"
-}, 
-"Tn17655849": {
-"@otu": "Tl3269757"
-}, 
-"Tn17655850": {}, 
-"Tn17655851": {
-"@otu": "Tl3269760"
-}, 
-"Tn17655852": {
-"@otu": "Tl3269754"
-}, 
-"Tn17655853": {
-"@otu": "Tl3269765"
-}, 
-"Tn17655854": {
-"@otu": "Tl3269749"
-}, 
-"Tn17655855": {
-"@otu": "Tl3269776"
-}, 
-"Tn17655856": {
-"@otu": "Tl3269756"
-}, 
-"Tn17655857": {
-"@otu": "Tl3269772"
-}, 
-"Tn17655858": {
-"@otu": "Tl3269768"
-}, 
-"Tn17655859": {
-"@otu": "Tl3269751"
-}, 
-"Tn17655860": {
-"@otu": "Tl3269742"
-}, 
-"Tn17655861": {
-"@label": "0.999"
-}, 
-"Tn17655862": {
-"@label": "1.000"
-}, 
-"Tn17655863": {
-"@otu": "Tl3269745"
-}, 
-"Tn17655864": {
-"@otu": "Tl3269758"
-}, 
-"Tn17655865": {
-"@label": "0.981"
-}, 
-"Tn17655866": {
-"@label": "1.000"
-}, 
-"Tn17655867": {
-"@otu": "Tl3269748"
-}, 
-"Tn17655868": {
-"@label": "0.981"
-}, 
-"Tn17655869": {
-"@label": "1.000"
-}, 
-"Tn17655870": {
-"@otu": "Tl3269761"
-}, 
-"Tn17655871": {
-"@otu": "Tl3269766"
-}, 
-"Tn17655872": {
-"@otu": "Tl3269746"
-}, 
-"Tn17655873": {
-"@otu": "Tl3269771"
-}, 
-"Tn17655874": {
-"@otu": "Tl3269750"
-}, 
-"Tn17655875": {
-"@label": "1.000"
-}, 
-"Tn17655876": {
-"@otu": "Tl3269739"
-}, 
-"Tn17655877": {
-"@label": "0.705"
-}, 
-"Tn17655878": {
-"@otu": "Tl3269744"
-}, 
-"Tn17655879": {
-"@otu": "Tl3269743"
-}, 
-"Tn17655880": {
-"@otu": "Tl3269769"
-}, 
-"Tn17655881": {
-"@otu": "Tl3269773"
-}, 
-"Tn17655882": {
-"@otu": "Tl3269753"
-}, 
-"Tn17655883": {
-"@root": true
-}, 
-"Tn17655884": {
-"@otu": "Tl3269775"
-}, 
-"Tn17655885": {
-"@label": "1.000"
-}, 
-"Tn17655886": {
-"@label": "1.000"
-}, 
-"Tn17655887": {
-"@otu": "Tl3269767"
-}, 
-"Tn17655888": {
-"@label": "0.996"
-}, 
-"Tn17655889": {
-"@label": "0.988"
-}, 
-"Tn17655890": {
-"@label": "0.992"
-}, 
-"Tn17655891": {
-"@otu": "Tl3269763"
-}, 
-"Tn17655892": {
-"@otu": "Tl3269747"
-}
-}
-}, 
 "Tr112851": {
 "@label": "majrule", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:undefined", 
+"^ot:curatedType": "Bayesian inference ", 
+"^ot:inGroupClade": "Tn17655897", 
+"^ot:nodeLabelDescription": "", 
+"^ot:nodeLabelMode": "ot:posteriorSupport", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn17655948", 
+"^ot:specifiedRoot": "Tn17655948", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "^tb:ntax.tree": 38, 
 "edgeBySourceId": {
 "Tn17655893": {
@@ -3800,12 +3402,14 @@
 "edge2667837": {
 "@length": 0.1396932, 
 "@source": "Tn17655897", 
-"@target": "Tn17655905"
+"@target": "Tn17655905", 
+"^ot:posteriorSupport": 1
 }, 
 "edge2667855": {
 "@length": 0.02198788, 
 "@source": "Tn17655897", 
-"@target": "Tn17655946"
+"@target": "Tn17655946", 
+"^ot:posteriorSupport": 0.919
 }
 }, 
 "Tn17655898": {
@@ -3834,12 +3438,14 @@
 "edge2667925": {
 "@length": 0.01128646, 
 "@source": "Tn17655901", 
-"@target": "Tn17655904"
+"@target": "Tn17655904", 
+"^ot:posteriorSupport": 1
 }, 
 "edge2667931": {
 "@length": 0.002482826, 
 "@source": "Tn17655901", 
-"@target": "Tn17655898"
+"@target": "Tn17655898", 
+"^ot:posteriorSupport": 0.73
 }
 }, 
 "Tn17655904": {
@@ -3858,36 +3464,42 @@
 "edge2667839": {
 "@length": 0.003362383, 
 "@source": "Tn17655905", 
-"@target": "Tn17655893"
+"@target": "Tn17655893", 
+"^ot:posteriorSupport": 0.651
 }, 
 "edge2667845": {
 "@length": 0.00398179, 
 "@source": "Tn17655905", 
-"@target": "Tn17655942"
+"@target": "Tn17655942", 
+"^ot:posteriorSupport": 0.612
 }
 }, 
 "Tn17655906": {
 "edge2667887": {
 "@length": 0.07965279, 
 "@source": "Tn17655906", 
-"@target": "Tn17655934"
+"@target": "Tn17655934", 
+"^ot:posteriorSupport": 1
 }, 
 "edge2667897": {
 "@length": 0.09931556, 
 "@source": "Tn17655906", 
-"@target": "Tn17655944"
+"@target": "Tn17655944", 
+"^ot:posteriorSupport": 1
 }
 }, 
 "Tn17655907": {
 "edge2667923": {
 "@length": 0.006135768, 
 "@source": "Tn17655907", 
-"@target": "Tn17655901"
+"@target": "Tn17655901", 
+"^ot:posteriorSupport": 0.991
 }, 
 "edge2667941": {
 "@length": 0.004332799, 
 "@source": "Tn17655907", 
-"@target": "Tn17655925"
+"@target": "Tn17655925", 
+"^ot:posteriorSupport": 0.936
 }
 }, 
 "Tn17655908": {
@@ -3899,7 +3511,8 @@
 "edge2667869": {
 "@length": 0.1335237, 
 "@source": "Tn17655908", 
-"@target": "Tn17655941"
+"@target": "Tn17655941", 
+"^ot:posteriorSupport": 1
 }
 }, 
 "Tn17655910": {
@@ -3962,19 +3575,22 @@
 "edge2667959": {
 "@length": 0.004282263, 
 "@source": "Tn17655921", 
-"@target": "Tn17655911"
+"@target": "Tn17655911", 
+"^ot:posteriorSupport": 1
 }
 }, 
 "Tn17655925": {
 "edge2667943": {
 "@length": 0.009211717, 
 "@source": "Tn17655925", 
-"@target": "Tn17655945"
+"@target": "Tn17655945", 
+"^ot:posteriorSupport": 1
 }, 
 "edge2667953": {
 "@length": 0.004250198, 
 "@source": "Tn17655925", 
-"@target": "Tn17655921"
+"@target": "Tn17655921", 
+"^ot:posteriorSupport": 0.993
 }
 }, 
 "Tn17655926": {
@@ -4010,7 +3626,8 @@
 "edge2667891": {
 "@length": 0.04193795, 
 "@source": "Tn17655934", 
-"@target": "Tn17655953"
+"@target": "Tn17655953", 
+"^ot:posteriorSupport": 1
 }
 }, 
 "Tn17655936": {
@@ -4034,7 +3651,8 @@
 "edge2667873": {
 "@length": 0.03145354, 
 "@source": "Tn17655941", 
-"@target": "Tn17655936"
+"@target": "Tn17655936", 
+"^ot:posteriorSupport": 1
 }
 }, 
 "Tn17655942": {
@@ -4046,19 +3664,22 @@
 "edge2667849": {
 "@length": 0.008649076, 
 "@source": "Tn17655942", 
-"@target": "Tn17655896"
+"@target": "Tn17655896", 
+"^ot:posteriorSupport": 0.999
 }
 }, 
 "Tn17655944": {
 "edge2667899": {
 "@length": 0.05674469, 
 "@source": "Tn17655944", 
-"@target": "Tn17655933"
+"@target": "Tn17655933", 
+"^ot:posteriorSupport": 1
 }, 
 "edge2667905": {
 "@length": 0.03004597, 
 "@source": "Tn17655944", 
-"@target": "Tn17655958"
+"@target": "Tn17655958", 
+"^ot:posteriorSupport": 0.997
 }
 }, 
 "Tn17655945": {
@@ -4087,12 +3708,14 @@
 "edge2667857": {
 "@length": 0.04116632, 
 "@source": "Tn17655946", 
-"@target": "Tn17655949"
+"@target": "Tn17655949", 
+"^ot:posteriorSupport": 0.789
 }, 
 "edge2667885": {
 "@length": 0.04270033, 
 "@source": "Tn17655946", 
-"@target": "Tn17655906"
+"@target": "Tn17655906", 
+"^ot:posteriorSupport": 1
 }
 }, 
 "Tn17655948": {
@@ -4104,19 +3727,22 @@
 "edge2667835": {
 "@length": 0.14888795, 
 "@source": "Tn17655948", 
-"@target": "Tn17655897"
+"@target": "Tn17655897", 
+"^ot:posteriorSupport": 0.577
 }
 }, 
 "Tn17655949": {
 "edge2667859": {
 "@length": 0.0441599, 
 "@source": "Tn17655949", 
-"@target": "Tn17655926"
+"@target": "Tn17655926", 
+"^ot:posteriorSupport": 1
 }, 
 "edge2667865": {
 "@length": 0.03968652, 
 "@source": "Tn17655949", 
-"@target": "Tn17655908"
+"@target": "Tn17655908", 
+"^ot:posteriorSupport": 1
 }
 }, 
 "Tn17655953": {
@@ -4140,12 +3766,14 @@
 "edge2667913": {
 "@length": 0.04032663, 
 "@source": "Tn17655955", 
-"@target": "Tn17655910"
+"@target": "Tn17655910", 
+"^ot:posteriorSupport": 1
 }, 
 "edge2667921": {
 "@length": 0.02186801, 
 "@source": "Tn17655955", 
-"@target": "Tn17655907"
+"@target": "Tn17655907", 
+"^ot:posteriorSupport": 1
 }
 }, 
 "Tn17655958": {
@@ -4157,68 +3785,45 @@
 "edge2667909": {
 "@length": 0.01638673, 
 "@source": "Tn17655958", 
-"@target": "Tn17655955"
+"@target": "Tn17655955", 
+"^ot:posteriorSupport": 0.987
 }
 }
 }, 
 "nodeById": {
-"Tn17655893": {
-"@label": "0.651"
-}, 
+"Tn17655893": {}, 
 "Tn17655894": {
 "@otu": "Tl3269758"
 }, 
 "Tn17655895": {
 "@otu": "Tl3269748"
 }, 
-"Tn17655896": {
-"@label": "0.999"
-}, 
-"Tn17655897": {
-"@label": "0.577"
-}, 
-"Tn17655898": {
-"@label": "0.730"
-}, 
+"Tn17655896": {}, 
+"Tn17655897": {}, 
+"Tn17655898": {}, 
 "Tn17655899": {
 "@otu": "Tl3269753"
 }, 
 "Tn17655900": {
 "@otu": "Tl3269761"
 }, 
-"Tn17655901": {
-"@label": "0.991"
-}, 
+"Tn17655901": {}, 
 "Tn17655902": {
 "@otu": "Tl3269756"
 }, 
 "Tn17655903": {
 "@otu": "Tl3269743"
 }, 
-"Tn17655904": {
-"@label": "1.000"
-}, 
-"Tn17655905": {
-"@label": "1.000"
-}, 
-"Tn17655906": {
-"@label": "1.000"
-}, 
-"Tn17655907": {
-"@label": "1.000"
-}, 
-"Tn17655908": {
-"@label": "1.000"
-}, 
+"Tn17655904": {}, 
+"Tn17655905": {}, 
+"Tn17655906": {}, 
+"Tn17655907": {}, 
+"Tn17655908": {}, 
 "Tn17655909": {
 "@otu": "Tl3269746"
 }, 
-"Tn17655910": {
-"@label": "1.000"
-}, 
-"Tn17655911": {
-"@label": "1.000"
-}, 
+"Tn17655910": {}, 
+"Tn17655911": {}, 
 "Tn17655912": {
 "@otu": "Tl3269740"
 }, 
@@ -4244,9 +3849,7 @@
 "Tn17655920": {
 "@otu": "Tl3269739"
 }, 
-"Tn17655921": {
-"@label": "0.993"
-}, 
+"Tn17655921": {}, 
 "Tn17655922": {
 "@otu": "Tl3269763"
 }, 
@@ -4256,12 +3859,8 @@
 "Tn17655924": {
 "@otu": "Tl3269749"
 }, 
-"Tn17655925": {
-"@label": "0.936"
-}, 
-"Tn17655926": {
-"@label": "1.000"
-}, 
+"Tn17655925": {}, 
+"Tn17655926": {}, 
 "Tn17655927": {
 "@otu": "Tl3269770"
 }, 
@@ -4280,18 +3879,12 @@
 "Tn17655932": {
 "@otu": "Tl3269768"
 }, 
-"Tn17655933": {
-"@label": "1.000"
-}, 
-"Tn17655934": {
-"@label": "1.000"
-}, 
+"Tn17655933": {}, 
+"Tn17655934": {}, 
 "Tn17655935": {
 "@otu": "Tl3269769"
 }, 
-"Tn17655936": {
-"@label": "1.000"
-}, 
+"Tn17655936": {}, 
 "Tn17655937": {
 "@otu": "Tl3269759"
 }, 
@@ -4304,33 +3897,21 @@
 "Tn17655940": {
 "@otu": "Tl3269752"
 }, 
-"Tn17655941": {
-"@label": "1.000"
-}, 
-"Tn17655942": {
-"@label": "0.612"
-}, 
+"Tn17655941": {}, 
+"Tn17655942": {}, 
 "Tn17655943": {
 "@otu": "Tl3269750"
 }, 
-"Tn17655944": {
-"@label": "1.000"
-}, 
-"Tn17655945": {
-"@label": "1.000"
-}, 
-"Tn17655946": {
-"@label": "0.919"
-}, 
+"Tn17655944": {}, 
+"Tn17655945": {}, 
+"Tn17655946": {}, 
 "Tn17655947": {
 "@otu": "Tl3269757"
 }, 
 "Tn17655948": {
 "@root": true
 }, 
-"Tn17655949": {
-"@label": "0.789"
-}, 
+"Tn17655949": {}, 
 "Tn17655950": {
 "@otu": "Tl3269744"
 }, 
@@ -4340,24 +3921,18 @@
 "Tn17655952": {
 "@otu": "Tl3269762"
 }, 
-"Tn17655953": {
-"@label": "1.000"
-}, 
+"Tn17655953": {}, 
 "Tn17655954": {
 "@otu": "Tl3269760"
 }, 
-"Tn17655955": {
-"@label": "0.987"
-}, 
+"Tn17655955": {}, 
 "Tn17655956": {
 "@otu": "Tl3269747"
 }, 
 "Tn17655957": {
 "@otu": "Tl3269754"
 }, 
-"Tn17655958": {
-"@label": "0.997"
-}, 
+"Tn17655958": {}, 
 "Tn17655959": {
 "@otu": "Tl3269742"
 }
