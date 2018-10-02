@@ -53,22 +53,115 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2018-10-02T14:06:18.013Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "Ascomycetes"
 }, 
-"^ot:curatorName": "Matt Girard", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}, 
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": "$1"
+}, 
+"old": {
+"$": "^(\\S*\\s+\\S*).*"
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2018-10-02T14:06:18.013Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [], 
+"^ot:comment": "Study found at:\n\nhttps://www.rbg.vic.gov.au/documents/Muelleria_Vol_36_-_pp74-80_Kantvilas_-_Pannaria_hookeri.pdf", 
+"^ot:curatorName": [
+"Matt Girard"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S22176"
 }, 
+"^ot:focalCladeOTTTaxonName": "", 
 "^ot:otusElementOrder": [
 "Tls64304"
 ], 
 "^ot:studyId": "ot_1794", 
+"^ot:studyPublication": {
+"@href": ""
+}, 
 "^ot:studyPublicationReference": "Kantvilas G., & Gueidan C. 2018. Pannaria hookeri (lichenised Ascomycetes) \u0096 a remarkable new record for Australia. Muelleria, 36: 74-80.", 
 "^ot:studyYear": 2018, 
+"^ot:tag": [], 
 "^ot:taxonLinkPrefixes": {
 "@ubio": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:", 
 "@uniprot": "http://purl.uniprot.org/taxonomy/"
@@ -95,11 +188,14 @@
 "^skos:historyNote": "Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlOTUWriter@5067874b $Rev$", 
 "otuById": {
 "Tl3235642": {
-"^ot:originalLabel": "Pannaria lurida russellii Tonsberg_22565"
+"^ot:originalLabel": "Pannaria lurida russellii Tonsberg_22565", 
+"^ot:ottId": 3779820, 
+"^ot:ottTaxonName": "Pannaria lurida"
 }, 
 "Tl3235643": {
-"^ot:altLabel": "Pannaria immixta", 
 "^ot:originalLabel": "Pannaria immixta Elvebakk_02_352b", 
+"^ot:ottId": 3779817, 
+"^ot:ottTaxonName": "Pannaria immixta", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 630609, 
 "@tb:identifier.taxonVariant": 845358, 
@@ -107,10 +203,14 @@
 }
 }, 
 "Tl3235644": {
-"^ot:originalLabel": "Pannaria rubiginella Tonsberg_32508"
+"^ot:originalLabel": "Pannaria rubiginella Tonsberg_32508", 
+"^ot:ottId": 42734, 
+"^ot:ottTaxonName": "Pannaria rubiginella"
 }, 
 "Tl3235645": {
 "^ot:originalLabel": "Pannaria contorta Passo_142", 
+"^ot:ottId": 248229, 
+"^ot:ottTaxonName": "Pannaria contorta", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 505613, 
 "@tb:identifier.taxonVariant": 670040
@@ -118,27 +218,36 @@
 }, 
 "Tl3235646": {
 "^ot:originalLabel": "Pannaria athroophylla Passo_181", 
+"^ot:ottId": 248235, 
+"^ot:ottTaxonName": "Pannaria athroophylla", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 505611, 
 "@tb:identifier.taxonVariant": 670032
 }
 }, 
 "Tl3235647": {
-"^ot:originalLabel": "Pannaria hookeri Jorgensen_sn"
+"^ot:originalLabel": "Pannaria hookeri Jorgensen_sn", 
+"^ot:ottId": 10550, 
+"^ot:ottTaxonName": "Pannaria hookeri"
 }, 
 "Tl3235648": {
-"^ot:originalLabel": "Staurolemma oculatum Aptroot_55941"
+"^ot:originalLabel": "Staurolemma oculatum Aptroot_55941", 
+"^ot:ottId": 5314631, 
+"^ot:ottTaxonName": "Staurolemma oculatum"
 }, 
 "Tl3235649": {
 "^ot:originalLabel": "Pannaria calophylla Passo_101", 
+"^ot:ottId": 248230, 
+"^ot:ottTaxonName": "Pannaria calophylla", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 505612, 
 "@tb:identifier.taxonVariant": 670039
 }
 }, 
 "Tl3235650": {
-"^ot:altLabel": "Pannaria conoplea", 
 "^ot:originalLabel": "Pannaria conoplea Ekman_3188", 
+"^ot:ottId": 583151, 
+"^ot:ottTaxonName": "Pannaria conoplea", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 20304, 
 "@tb:identifier.taxonVariant": 47281, 
@@ -147,8 +256,9 @@
 }
 }, 
 "Tl3235651": {
-"^ot:altLabel": "Pannaria insularis", 
 "^ot:originalLabel": "Pannaria insularis Kashiwadani_43760", 
+"^ot:ottId": 3779912, 
+"^ot:ottTaxonName": "Pannaria insularis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 263708, 
 "@tb:identifier.taxonVariant": 845359, 
@@ -158,8 +268,9 @@
 "^skos:prefLabel": "Diorygma hieroglyphicum"
 }, 
 "Tl3235652": {
-"^ot:altLabel": "Staurolemma omphalarioides", 
 "^ot:originalLabel": "Staurolemma omphalarioides UPS_L117536", 
+"^ot:ottId": 948381, 
+"^ot:ottTaxonName": "Staurolemma omphalarioides", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 427788, 
 "@tb:identifier.taxonVariant": 563286, 
@@ -168,8 +279,9 @@
 }
 }, 
 "Tl3235653": {
-"^ot:altLabel": "Pannaria subfusca", 
 "^ot:originalLabel": "Pannaria subfusca Tonsberg_33592", 
+"^ot:ottId": 3779868, 
+"^ot:ottTaxonName": "Pannaria subfusca", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 305324, 
 "@tb:identifier.taxonVariant": 845360, 
@@ -179,18 +291,23 @@
 "^skos:prefLabel": "Porina alba"
 }, 
 "Tl3235654": {
-"^ot:originalLabel": "Pannaria tavaresii Schumm_sn"
+"^ot:originalLabel": "Pannaria tavaresii Schumm_sn", 
+"^ot:ottId": 669136, 
+"^ot:ottTaxonName": "Pannaria tavaresii"
 }, 
 "Tl3235655": {
 "^ot:originalLabel": "Pannaria farinosa Passo_119", 
+"^ot:ottId": 669129, 
+"^ot:ottTaxonName": "Pannaria farinosa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 505614, 
 "@tb:identifier.taxonVariant": 670041
 }
 }, 
 "Tl3235656": {
-"^ot:altLabel": "Pannaria andina", 
 "^ot:originalLabel": "Pannaria andina Elvebakk_06_245", 
+"^ot:ottId": 671440, 
+"^ot:ottTaxonName": "Pannaria andina", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 622360, 
 "@tb:identifier.taxonVariant": 833274, 
@@ -199,16 +316,22 @@
 }, 
 "Tl3235657": {
 "^ot:originalLabel": "Pannaria athroophylla Passo_251", 
+"^ot:ottId": 248235, 
+"^ot:ottTaxonName": "Pannaria athroophylla", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 505611, 
 "@tb:identifier.taxonVariant": 670032
 }
 }, 
 "Tl3235658": {
-"^ot:originalLabel": "Pannaria lurida lurida Kashiwadani_43861"
+"^ot:originalLabel": "Pannaria lurida lurida Kashiwadani_43861", 
+"^ot:ottId": 3779820, 
+"^ot:ottTaxonName": "Pannaria lurida"
 }, 
 "Tl3235659": {
-"^ot:originalLabel": "Pannaria rubiginella Thor_10050"
+"^ot:originalLabel": "Pannaria rubiginella Thor_10050", 
+"^ot:ottId": 42734, 
+"^ot:ottTaxonName": "Pannaria rubiginella"
 }, 
 "Tl3235660": {
 "^ot:altLabel": "Pannaria sphinctrina", 
@@ -221,8 +344,9 @@
 }
 }, 
 "Tl3235661": {
-"^ot:altLabel": "Pannaria microphyllizans", 
 "^ot:originalLabel": "Pannaria microphyllizans Passo_264", 
+"^ot:ottId": 10549, 
+"^ot:ottTaxonName": "Pannaria microphyllizans", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 20306, 
 "@tb:identifier.taxonVariant": 47286, 
@@ -231,11 +355,14 @@
 }
 }, 
 "Tl3235662": {
-"^ot:originalLabel": "Pannaria sp GK102_16"
+"^ot:originalLabel": "Pannaria sp GK102_16", 
+"^ot:ottId": 583150, 
+"^ot:ottTaxonName": "Pannaria"
 }, 
 "Tl3235663": {
-"^ot:altLabel": "Pannaria pallida", 
 "^ot:originalLabel": "Pannaria pallida Passo_249", 
+"^ot:ottId": 669131, 
+"^ot:ottTaxonName": "Pannaria pallida", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 505616, 
 "@tb:identifier.taxonVariant": 670043, 
@@ -244,8 +371,9 @@
 }
 }, 
 "Tl3235664": {
-"^ot:altLabel": "Pannaria tavaresii", 
 "^ot:originalLabel": "Pannaria tavaresii Passo_122", 
+"^ot:ottId": 669136, 
+"^ot:ottTaxonName": "Pannaria tavaresii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 505618, 
 "@tb:identifier.taxonVariant": 670048, 
@@ -254,8 +382,9 @@
 }
 }, 
 "Tl3235665": {
-"^ot:altLabel": "Psoroma implexum", 
 "^ot:originalLabel": "Psoroma implexum Passo_84", 
+"^ot:ottId": 669121, 
+"^ot:ottTaxonName": "Psoroma implexum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 505549, 
 "@tb:identifier.taxonVariant": 669953, 
@@ -274,11 +403,14 @@
 }
 }, 
 "Tl3235667": {
-"^ot:originalLabel": "Pannaria multifida Schumm_Frahm_sn"
+"^ot:originalLabel": "Pannaria multifida Schumm_Frahm_sn", 
+"^ot:ottId": 3779883, 
+"^ot:ottTaxonName": "Pannaria multifida"
 }, 
 "Tl3235668": {
-"^ot:altLabel": "Pannaria rubiginosa", 
 "^ot:originalLabel": "Pannaria rubiginosa Anonby_870", 
+"^ot:ottId": 10552, 
+"^ot:ottTaxonName": "Pannaria rubiginosa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 20307, 
 "@tb:identifier.taxonVariant": 47290, 
@@ -301,7 +433,18 @@
 "Tr112807": {
 "@label": "PAUP", 
 "@xsi:type": "nex:FloatTree", 
-"^ot:rootNodeId": "Tn17647617", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:undefined", 
+"^ot:curatedType": "Maximum likelihood ", 
+"^ot:inGroupClade": "Tn17647581", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
+"^ot:rootNodeId": "Tn17647585", 
+"^ot:specifiedRoot": "Tn17647585", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 27, 
 "^tb:quality.tree": "Unrated", 
@@ -356,6 +499,11 @@
 }
 }, 
 "Tn17647585": {
+"edge2658760": {
+"@length": 0.023797279282431184, 
+"@source": "Tn17647585", 
+"@target": "Tn17647617"
+}, 
 "edge2658762": {
 "@length": 0.020614063251899264, 
 "@source": "Tn17647585", 
@@ -552,11 +700,6 @@
 "@length": 0.023797279282431184, 
 "@source": "Tn17647617", 
 "@target": "Tn17647591"
-}, 
-"edge2658760": {
-"@length": 0.023797279282431184, 
-"@source": "Tn17647617", 
-"@target": "Tn17647585"
 }
 }, 
 "Tn17647618": {
@@ -640,7 +783,9 @@
 "@otu": "Tl3235665"
 }, 
 "Tn17647584": {}, 
-"Tn17647585": {}, 
+"Tn17647585": {
+"@root": true
+}, 
 "Tn17647586": {
 "@otu": "Tl3235642"
 }, 
@@ -704,9 +849,7 @@
 }, 
 "Tn17647615": {}, 
 "Tn17647616": {}, 
-"Tn17647617": {
-"@root": true
-}, 
+"Tn17647617": {}, 
 "Tn17647618": {}, 
 "Tn17647619": {
 "@otu": "Tl3235667"
