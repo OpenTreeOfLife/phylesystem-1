@@ -54,16 +54,105 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2018-10-02T14:36:11.448Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:curatorName": "Matt Girard", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}, 
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": "$1"
+}, 
+"old": {
+"$": "^(\\S*\\s+\\S*).*"
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2018-10-02T14:36:11.448Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Matt Girard"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S22563"
 }, 
+"^ot:focalCladeOTTTaxonName": "", 
 "^ot:otusElementOrder": [
 "Tls64382"
 ], 
@@ -73,6 +162,7 @@
 }, 
 "^ot:studyPublicationReference": "Tan Y., Crous P.W., & Shivas R.G. 2018. Cryptic species of Curvularia in the culture collection of the Queensland Plant Pathology Herbarium. MycoKeys, 35: 1-25.", 
 "^ot:studyYear": 2018, 
+"^ot:tag": [], 
 "^ot:taxonLinkPrefixes": {
 "@ubio": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:", 
 "@uniprot": "http://purl.uniprot.org/taxonomy/"
@@ -109,8 +199,9 @@
 "^ot:originalLabel": "Curvularia nodosa CPC_28800T"
 }, 
 "Tl3269781": {
-"^ot:altLabel": "Curvularia harveyi", 
 "^ot:originalLabel": "Curvularia harveyi BRIP_57412T", 
+"^ot:ottId": 3734177, 
+"^ot:ottTaxonName": "Curvularia harveyi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 623024, 
 "@tb:identifier.taxonVariant": 834189, 
@@ -118,11 +209,14 @@
 }
 }, 
 "Tl3269782": {
-"^ot:originalLabel": "Curvularia alcornii MFLUCC_10_0703T"
+"^ot:originalLabel": "Curvularia alcornii MFLUCC_10_0703T", 
+"^ot:ottId": 664786, 
+"^ot:ottTaxonName": "Curvularia alcornii"
 }, 
 "Tl3269783": {
-"^ot:altLabel": "Curvularia cymbopogonis", 
 "^ot:originalLabel": "Curvularia cymbopogonis CBS_419.78", 
+"^ot:ottId": 995631, 
+"^ot:ottTaxonName": "Curvularia cymbopogonis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 130860, 
 "@tb:identifier.taxonVariant": 208240, 
@@ -141,23 +235,30 @@
 }
 }, 
 "Tl3269785": {
-"^ot:originalLabel": "Curvularia sp. BRIP 17439"
+"^ot:originalLabel": "Curvularia sp. BRIP 17439", 
+"^ot:ottId": 838975, 
+"^ot:ottTaxonName": "Curvularia"
 }, 
 "Tl3269786": {
 "^ot:originalLabel": "Curvularia neoindica IMI_129790T"
 }, 
 "Tl3269787": {
-"^ot:originalLabel": "Curvularia chlamydospora UTHSC_07_2764T"
+"^ot:originalLabel": "Curvularia chlamydospora UTHSC_07_2764T", 
+"^ot:ottId": 6377903, 
+"^ot:ottTaxonName": "Curvularia chlamydospora"
 }, 
 "Tl3269788": {
 "^ot:originalLabel": "Curvularia australis BRIP_12521T"
 }, 
 "Tl3269789": {
-"^ot:originalLabel": "Curvularia americana UTHSC_08_3414T"
+"^ot:originalLabel": "Curvularia americana UTHSC_08_3414T", 
+"^ot:ottId": 6377901, 
+"^ot:ottTaxonName": "Curvularia americana"
 }, 
 "Tl3269790": {
-"^ot:altLabel": "Curvularia prasadii", 
 "^ot:originalLabel": "Curvularia prasadii CBS_143.64T", 
+"^ot:ottId": 3734188, 
+"^ot:ottTaxonName": "Curvularia prasadii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 623856, 
 "@tb:identifier.taxonVariant": 835467, 
@@ -165,8 +266,9 @@
 }
 }, 
 "Tl3269791": {
-"^ot:altLabel": "Curvularia australiensis", 
 "^ot:originalLabel": "Curvularia australiensis BRIP_12044T", 
+"^ot:ottId": 819620, 
+"^ot:ottTaxonName": "Curvularia australiensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 618435, 
 "@tb:identifier.taxonVariant": 827870, 
@@ -175,10 +277,14 @@
 }
 }, 
 "Tl3269792": {
-"^ot:originalLabel": "Curvularia tripogonis BRIP_12375T"
+"^ot:originalLabel": "Curvularia tripogonis BRIP_12375T", 
+"^ot:ottId": 1095132, 
+"^ot:ottTaxonName": "Curvularia tripogonis"
 }, 
 "Tl3269793": {
-"^ot:originalLabel": "Curvularia micrairae BRIP_17086bT"
+"^ot:originalLabel": "Curvularia micrairae BRIP_17086bT", 
+"^ot:ottId": 3734170, 
+"^ot:ottTaxonName": "Curvularia micrairae"
 }, 
 "Tl3269794": {
 "^ot:altLabel": "Curvularia verruculosa", 
@@ -191,8 +297,9 @@
 }
 }, 
 "Tl3269795": {
-"^ot:altLabel": "Curvularia protuberata", 
 "^ot:originalLabel": "Curvularia protuberata CBS_376.65T", 
+"^ot:ottId": 897666, 
+"^ot:ottTaxonName": "Curvularia protuberata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 549211, 
 "@tb:identifier.taxonVariant": 728524, 
@@ -204,8 +311,9 @@
 "^ot:originalLabel": "Curvularia coatsiae BRIP_24261T"
 }, 
 "Tl3269797": {
-"^ot:altLabel": "Curvularia hawaiiensis", 
 "^ot:originalLabel": "Curvularia hawaiiensis BRIP_11987T", 
+"^ot:ottId": 118900, 
+"^ot:ottTaxonName": "Curvularia hawaiiensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 623737, 
 "@tb:identifier.taxonVariant": 835306, 
@@ -220,8 +328,9 @@
 "^ot:originalLabel": "Curvularia beerburrumensis BRIP_12942T"
 }, 
 "Tl3269800": {
-"^ot:altLabel": "Curvularia ellisii", 
 "^ot:originalLabel": "Curvularia ellisii CBS_193.62T", 
+"^ot:ottId": 5495881, 
+"^ot:ottTaxonName": "Curvularia ellisii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 623036, 
 "@tb:identifier.taxonVariant": 834201, 
@@ -232,8 +341,9 @@
 "^ot:originalLabel": "Curvularia coatsiae BRIP_24170"
 }, 
 "Tl3269802": {
-"^ot:altLabel": "Curvularia senegalensis", 
 "^ot:originalLabel": "Curvularia senegalensis CBS_149.71", 
+"^ot:ottId": 790697, 
+"^ot:ottTaxonName": "Curvularia senegalensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 36641, 
 "@tb:identifier.taxonVariant": 84783, 
@@ -248,7 +358,9 @@
 "^ot:originalLabel": "Curvularia colbranii BRIP_13066T"
 }, 
 "Tl3269805": {
-"^ot:originalLabel": "Curvularia ovariicola CBS_470.90T"
+"^ot:originalLabel": "Curvularia ovariicola CBS_470.90T", 
+"^ot:ottId": 5346512, 
+"^ot:ottTaxonName": "Curvularia ovariicola"
 }, 
 "Tl3269806": {
 "^ot:originalLabel": "Curvularia carica papayae_CBS_135941T"
@@ -267,8 +379,9 @@
 }
 }, 
 "Tl3269809": {
-"^ot:altLabel": "Curvularia affinis", 
 "^ot:originalLabel": "Curvularia affinis CBS_154.34T", 
+"^ot:ottId": 692987, 
+"^ot:ottTaxonName": "Curvularia affinis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 7826, 
 "@tb:identifier.taxonVariant": 18825, 
@@ -280,8 +393,9 @@
 "^ot:originalLabel": "Curvularia homomorpha CBS_156.60T"
 }, 
 "Tl3269811": {
-"^ot:altLabel": "Curvularia verruciformis", 
 "^ot:originalLabel": "Curvularia verruciformis CBS_537.75", 
+"^ot:ottId": 3734168, 
+"^ot:ottTaxonName": "Curvularia verruciformis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 623858, 
 "@tb:identifier.taxonVariant": 835472, 
@@ -289,8 +403,9 @@
 }
 }, 
 "Tl3269812": {
-"^ot:altLabel": "Curvularia bothriochloae", 
 "^ot:originalLabel": "Curvularia bothriochloae BRIP_12522T", 
+"^ot:ottId": 3734217, 
+"^ot:ottTaxonName": "Curvularia bothriochloae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 623032, 
 "@tb:identifier.taxonVariant": 834197, 
@@ -298,14 +413,17 @@
 }
 }, 
 "Tl3269813": {
-"^ot:originalLabel": "Curvularia muehlenbeckiae CBS_144.63"
+"^ot:originalLabel": "Curvularia muehlenbeckiae CBS_144.63", 
+"^ot:ottId": 5713028, 
+"^ot:ottTaxonName": "Curvularia muehlenbeckiae"
 }, 
 "Tl3269814": {
 "^ot:originalLabel": "Curvularia soli CBS_222.96T"
 }, 
 "Tl3269815": {
-"^ot:altLabel": "Curvularia ravenelii", 
 "^ot:originalLabel": "Curvularia ravenelii BRIP_13165T", 
+"^ot:ottId": 118878, 
+"^ot:ottTaxonName": "Curvularia ravenelii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 623738, 
 "@tb:identifier.taxonVariant": 835307, 
@@ -314,8 +432,9 @@
 }
 }, 
 "Tl3269816": {
-"^ot:altLabel": "Curvularia coicis", 
 "^ot:originalLabel": "Curvularia coicis CBS_192.29T", 
+"^ot:ottId": 3734184, 
+"^ot:ottTaxonName": "Curvularia coicis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 618446, 
 "@tb:identifier.taxonVariant": 827881, 
@@ -324,8 +443,9 @@
 }
 }, 
 "Tl3269817": {
-"^ot:altLabel": "Curvularia akaii", 
 "^ot:originalLabel": "Curvularia akaii CBS_317.86", 
+"^ot:ottId": 3734189, 
+"^ot:ottTaxonName": "Curvularia akaii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 623548, 
 "@tb:identifier.taxonVariant": 834991, 
@@ -333,8 +453,9 @@
 }
 }, 
 "Tl3269818": {
-"^ot:altLabel": "Curvularia tuberculata", 
 "^ot:originalLabel": "Curvularia tuberculata CBS_146.63T", 
+"^ot:ottId": 4080767, 
+"^ot:ottTaxonName": "Curvularia tuberculata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 623031, 
 "@tb:identifier.taxonVariant": 834196, 
@@ -342,14 +463,17 @@
 }
 }, 
 "Tl3269819": {
-"^ot:originalLabel": "Curvularia perotidis CBS_350.90T"
+"^ot:originalLabel": "Curvularia perotidis CBS_350.90T", 
+"^ot:ottId": 4080765, 
+"^ot:ottTaxonName": "Curvularia perotidis"
 }, 
 "Tl3269820": {
 "^ot:originalLabel": "Curvularia platzii BRIP_27703bT"
 }, 
 "Tl3269821": {
-"^ot:altLabel": "Curvularia heteropogonis", 
 "^ot:originalLabel": "Curvularia heteropogonis CBS_284.91T", 
+"^ot:ottId": 3734198, 
+"^ot:ottTaxonName": "Curvularia heteropogonis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 623027, 
 "@tb:identifier.taxonVariant": 834192, 
@@ -357,8 +481,9 @@
 }
 }, 
 "Tl3269822": {
-"^ot:altLabel": "Curvularia sorghina", 
 "^ot:originalLabel": "Curvularia sorghina BRIP_15900T", 
+"^ot:ottId": 3734173, 
+"^ot:ottTaxonName": "Curvularia sorghina", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 623022, 
 "@tb:identifier.taxonVariant": 834187, 
@@ -378,8 +503,9 @@
 "^ot:originalLabel": "Curvularia tropicalis BRIP_14834T"
 }, 
 "Tl3269827": {
-"^ot:altLabel": "Curvularia spicifera", 
 "^ot:originalLabel": "Curvularia spicifera CBS_274.52", 
+"^ot:ottId": 5318815, 
+"^ot:ottTaxonName": "Curvularia spicifera", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 623029, 
 "@tb:identifier.taxonVariant": 834194, 
@@ -393,8 +519,9 @@
 "^ot:originalLabel": "Curvularia eragrosticola BRIP_12538T"
 }, 
 "Tl3269830": {
-"^ot:altLabel": "Curvularia richardiae", 
 "^ot:originalLabel": "Curvularia richardiae BRIP_4371T", 
+"^ot:ottId": 3734213, 
+"^ot:ottTaxonName": "Curvularia richardiae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 623023, 
 "@tb:identifier.taxonVariant": 834188, 
@@ -403,6 +530,8 @@
 }, 
 "Tl3269831": {
 "^ot:originalLabel": "Curvularia pseudorobusta UTHSC_08_3458", 
+"^ot:ottId": 229299, 
+"^ot:ottTaxonName": "Curvularia pseudorobusta", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 488305, 
 "@tb:identifier.taxonVariant": 647102
@@ -425,8 +554,9 @@
 }
 }, 
 "Tl3269835": {
-"^ot:altLabel": "Curvularia inaequalis", 
 "^ot:originalLabel": "Curvularia inaequalis CBS_102.42T", 
+"^ot:ottId": 818459, 
+"^ot:ottTaxonName": "Curvularia inaequalis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 7830, 
 "@tb:identifier.taxonVariant": 18834, 
@@ -435,8 +565,9 @@
 }
 }, 
 "Tl3269836": {
-"^ot:altLabel": "Curvularia graminicola", 
 "^ot:originalLabel": "Curvularia graminicola BRIP_23186aT", 
+"^ot:ottId": 3734187, 
+"^ot:ottTaxonName": "Curvularia graminicola", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 623026, 
 "@tb:identifier.taxonVariant": 834191, 
@@ -450,17 +581,22 @@
 "^ot:originalLabel": "Curvularia crustacea BRIP_13524T"
 }, 
 "Tl3269839": {
-"^ot:originalLabel": "Curvularia pseudolunata UTHSC_09_2092T"
+"^ot:originalLabel": "Curvularia pseudolunata UTHSC_09_2092T", 
+"^ot:ottId": 6377907, 
+"^ot:ottTaxonName": "Curvularia pseudolunata"
 }, 
 "Tl3269840": {
 "^ot:originalLabel": "Curvularia kenpeggii BRIP_14530T"
 }, 
 "Tl3269841": {
-"^ot:originalLabel": "Curvularia hominis CBS_136985T"
+"^ot:originalLabel": "Curvularia hominis CBS_136985T", 
+"^ot:ottId": 6377905, 
+"^ot:ottTaxonName": "Curvularia hominis"
 }, 
 "Tl3269842": {
-"^ot:altLabel": "Curvularia oryzae", 
 "^ot:originalLabel": "Curvularia oryzae CBS_169.53T", 
+"^ot:ottId": 98423, 
+"^ot:ottTaxonName": "Curvularia oryzae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 34921, 
 "@tb:identifier.taxonVariant": 80882, 
@@ -488,8 +624,9 @@
 }
 }, 
 "Tl3269845": {
-"^ot:altLabel": "Curvularia ischaemi", 
 "^ot:originalLabel": "Curvularia ischaemi CBS_630.82T", 
+"^ot:ottId": 664779, 
+"^ot:ottTaxonName": "Curvularia ischaemi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 623857, 
 "@tb:identifier.taxonVariant": 835469, 
@@ -503,8 +640,9 @@
 "^ot:originalLabel": "Curvularia beasleyi BRIP_10972T"
 }, 
 "Tl3269848": {
-"^ot:altLabel": "Bipolaris maydis", 
 "^ot:originalLabel": "Bipolaris maydis CBS_136.29T", 
+"^ot:ottId": 1042273, 
+"^ot:ottTaxonName": "Bipolaris maydis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3539, 
 "@tb:identifier.taxonVariant": 8482, 
@@ -529,8 +667,9 @@
 "^ot:originalLabel": "Curvularia nicotiae BRIP_11983T"
 }, 
 "Tl3269852": {
-"^ot:altLabel": "Curvularia robusta", 
 "^ot:originalLabel": "Curvularia robusta CBS_624.68T", 
+"^ot:ottId": 790700, 
+"^ot:ottTaxonName": "Curvularia robusta", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 36642, 
 "@tb:identifier.taxonVariant": 84784, 
@@ -563,8 +702,9 @@
 "^ot:originalLabel": "Curvularia neergaardii BRIP_12919T"
 }, 
 "Tl3269859": {
-"^ot:altLabel": "Curvularia bannonii", 
 "^ot:originalLabel": "Curvularia bannonii BRIP_16732T", 
+"^ot:ottId": 3734219, 
+"^ot:ottTaxonName": "Curvularia bannonii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 623038, 
 "@tb:identifier.taxonVariant": 834203, 
@@ -572,7 +712,9 @@
 }
 }, 
 "Tl3269860": {
-"^ot:originalLabel": "Curvularia borreriae MFLUCC_11_0442"
+"^ot:originalLabel": "Curvularia borreriae MFLUCC_11_0442", 
+"^ot:ottId": 3734201, 
+"^ot:ottTaxonName": "Curvularia borreriae"
 }, 
 "Tl3269861": {
 "^ot:originalLabel": "Curvularia boeremae comb._nov._IMI_164633T"
@@ -581,11 +723,14 @@
 "^ot:originalLabel": "Curvularia reesii BRIP_4358T"
 }, 
 "Tl3269863": {
-"^ot:originalLabel": "Curvularia asiatica MFLUCC_10_0711T"
+"^ot:originalLabel": "Curvularia asiatica MFLUCC_10_0711T", 
+"^ot:ottId": 6377902, 
+"^ot:ottTaxonName": "Curvularia asiatica"
 }, 
 "Tl3269864": {
-"^ot:altLabel": "Curvularia trifolii", 
 "^ot:originalLabel": "Curvularia trifolii CBS_173.55", 
+"^ot:ottId": 338540, 
+"^ot:ottTaxonName": "Curvularia trifolii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 116299, 
 "@tb:identifier.taxonVariant": 194621, 
@@ -594,8 +739,9 @@
 }
 }, 
 "Tl3269865": {
-"^ot:altLabel": "Curvularia uncinata", 
 "^ot:originalLabel": "Curvularia uncinata CBS_221.52T", 
+"^ot:ottId": 3734214, 
+"^ot:ottTaxonName": "Curvularia uncinata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 623859, 
 "@tb:identifier.taxonVariant": 835473, 
@@ -615,8 +761,9 @@
 "^ot:originalLabel": "Curvularia ryleyi BRIP_12554T"
 }, 
 "Tl3269870": {
-"^ot:altLabel": "Curvularia intermedia", 
 "^ot:originalLabel": "Curvularia intermedia CBS_334.64", 
+"^ot:ottId": 5318891, 
+"^ot:ottTaxonName": "Curvularia intermedia", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 87637, 
 "@tb:identifier.taxonVariant": 166440, 
@@ -625,8 +772,9 @@
 }
 }, 
 "Tl3269871": {
-"^ot:altLabel": "Curvularia brachyspora", 
 "^ot:originalLabel": "Curvularia brachyspora CBS_186.50", 
+"^ot:ottId": 952126, 
+"^ot:ottTaxonName": "Curvularia brachyspora", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 35294, 
 "@tb:identifier.taxonVariant": 81764, 
@@ -638,8 +786,9 @@
 "^ot:originalLabel": "Curvularia lamingtonensis BRIP_12259T"
 }, 
 "Tl3269873": {
-"^ot:altLabel": "Curvularia gladioli", 
 "^ot:originalLabel": "Curvularia gladioli CBS_210.79", 
+"^ot:ottId": 692989, 
+"^ot:ottTaxonName": "Curvularia gladioli", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 7828, 
 "@tb:identifier.taxonVariant": 18829, 
@@ -648,8 +797,9 @@
 }
 }, 
 "Tl3269874": {
-"^ot:altLabel": "Curvularia clavata", 
 "^ot:originalLabel": "Curvularia clavata BRIP_61680b", 
+"^ot:ottId": 692988, 
+"^ot:ottTaxonName": "Curvularia clavata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 7827, 
 "@tb:identifier.taxonVariant": 18827, 
@@ -658,8 +808,9 @@
 }
 }, 
 "Tl3269875": {
-"^ot:altLabel": "Curvularia lunata", 
 "^ot:originalLabel": "Curvularia lunata CBS_730.96T", 
+"^ot:ottId": 838976, 
+"^ot:ottTaxonName": "Curvularia lunata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 618444, 
 "@tb:identifier.taxonVariant": 827879, 
@@ -682,7 +833,18 @@
 "Tr112852": {
 "@label": "NJ", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:undefined", 
+"^ot:curatedType": "Maximum likelihood ", 
+"^ot:inGroupClade": "Tn17656065", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn17656137", 
+"^ot:specifiedRoot": "Tn17656137", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 98, 
 "^tb:quality.tree": "Unrated", 
@@ -731,7 +893,7 @@
 "@target": "Tn17655982"
 }, 
 "edge2811361": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17655965", 
 "@target": "Tn17655991"
 }
@@ -762,12 +924,12 @@
 }, 
 "Tn17655970": {
 "edge2811413": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17655970", 
 "@target": "Tn17656088"
 }, 
 "edge2811415": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17655970", 
 "@target": "Tn17656078"
 }
@@ -851,7 +1013,7 @@
 "@target": "Tn17655992"
 }, 
 "edge2811549": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17655983", 
 "@target": "Tn17656026"
 }
@@ -875,7 +1037,7 @@
 "@target": "Tn17656080"
 }, 
 "edge2811351": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17655988", 
 "@target": "Tn17655967"
 }
@@ -918,12 +1080,12 @@
 }, 
 "Tn17655996": {
 "edge2811473": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17655996", 
 "@target": "Tn17656003"
 }, 
 "edge2811475": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17655996", 
 "@target": "Tn17656053"
 }
@@ -959,7 +1121,7 @@
 "@target": "Tn17656083"
 }, 
 "edge2811341": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17655999", 
 "@target": "Tn17656074"
 }
@@ -1014,7 +1176,7 @@
 }, 
 "Tn17656021": {
 "edge2811453": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17656021", 
 "@target": "Tn17656048"
 }, 
@@ -1067,7 +1229,7 @@
 "@target": "Tn17656058"
 }, 
 "edge2811553": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17656026", 
 "@target": "Tn17656068"
 }
@@ -1103,7 +1265,7 @@
 "@target": "Tn17656070"
 }, 
 "edge2811477": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17656032", 
 "@target": "Tn17656138"
 }
@@ -1139,7 +1301,7 @@
 "@target": "Tn17656030"
 }, 
 "edge2811491": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17656035", 
 "@target": "Tn17656145"
 }
@@ -1331,7 +1493,7 @@
 "@target": "Tn17656008"
 }, 
 "edge2811381": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17656066", 
 "@target": "Tn17656106"
 }
@@ -1343,7 +1505,7 @@
 "@target": "Tn17656014"
 }, 
 "edge2811467": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17656070", 
 "@target": "Tn17655966"
 }
@@ -1398,12 +1560,12 @@
 }, 
 "Tn17656077": {
 "edge2811563": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17656077", 
 "@target": "Tn17656091"
 }, 
 "edge2811565": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17656077", 
 "@target": "Tn17656107"
 }
@@ -1595,7 +1757,7 @@
 "@target": "Tn17656094"
 }, 
 "edge2811431": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17656115", 
 "@target": "Tn17656118"
 }
@@ -1739,7 +1901,7 @@
 "@target": "Tn17656144"
 }, 
 "edge2811481": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17656138", 
 "@target": "Tn17655962"
 }
