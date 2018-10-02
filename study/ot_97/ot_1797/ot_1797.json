@@ -59,22 +59,105 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2018-10-02T14:28:55.889Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "Ascomycetes"
 }, 
-"^ot:curatorName": "Matt Girard", 
+"substitutions": {
+"substitution": [
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": "$1"
+}, 
+"old": {
+"$": "^(\\S*\\s+\\S*).*"
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2018-10-02T14:28:55.889Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Matt Girard"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S22818"
 }, 
+"^ot:focalCladeOTTTaxonName": "", 
 "^ot:otusElementOrder": [
 "Tls64373"
 ], 
 "^ot:studyId": "ot_1797", 
+"^ot:studyPublication": {
+"@href": "https://doi.org/10.1007/s11557-018-1432-3"
+}, 
 "^ot:studyPublicationReference": "Dayarathne M.C., Wanasinghe D.N., Jones E.G., Hyde K.D., & Chomnunti P. 2018. A novel marine genus, Halobyssothecium (Lentitheciaceae) and epitypification of Halobyssothecium obiones comb. nov. Mycological Progress, .", 
 "^ot:studyYear": 2018, 
+"^ot:tag": [], 
 "^ot:taxonLinkPrefixes": {
 "@ubio": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:", 
 "@uniprot": "http://purl.uniprot.org/taxonomy/"
@@ -97,8 +180,9 @@
 "^skos:historyNote": "Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlOTUWriter@85d716d $Rev$", 
 "otuById": {
 "Tl3269214": {
-"^ot:altLabel": "Massarina eburnea", 
 "^ot:originalLabel": "Massarina eburnea CBS_473.64", 
+"^ot:ottId": 217893, 
+"^ot:ottTaxonName": "Massarina eburnea", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 16996, 
 "@tb:identifier.taxonVariant": 39806, 
@@ -107,7 +191,9 @@
 }
 }, 
 "Tl3269215": {
-"^ot:originalLabel": "Lentithecium lineare IFRD_2008"
+"^ot:originalLabel": "Lentithecium lineare IFRD_2008", 
+"^ot:ottId": 68335, 
+"^ot:ottTaxonName": "Lentithecium lineare"
 }, 
 "Tl3269216": {
 "^ot:originalLabel": "Setoseptoria arundinacea CBS_619.86"
@@ -116,11 +202,14 @@
 "^ot:originalLabel": "Setoseptoria arundinacea KT_600"
 }, 
 "Tl3269218": {
-"^ot:originalLabel": "Tingoldiago graminicola KH_68"
+"^ot:originalLabel": "Tingoldiago graminicola KH_68", 
+"^ot:ottId": 708591, 
+"^ot:ottTaxonName": "Tingoldiago graminicola"
 }, 
 "Tl3269219": {
-"^ot:altLabel": "Corynespora cassiicola", 
 "^ot:originalLabel": "Corynespora cassiicola CBS_100822", 
+"^ot:ottId": 212254, 
+"^ot:ottTaxonName": "Corynespora cassiicola", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 77582, 
 "@tb:identifier.taxonVariant": 155028, 
@@ -129,14 +218,19 @@
 }
 }, 
 "Tl3269220": {
-"^ot:originalLabel": "Poaceascoma helicoides MFLUCC_11.0136"
+"^ot:originalLabel": "Poaceascoma helicoides MFLUCC_11.0136", 
+"^ot:ottId": 5713908, 
+"^ot:ottTaxonName": "Poaceascoma helicoides"
 }, 
 "Tl3269221": {
-"^ot:originalLabel": "Darksidea beta CBS_135637"
+"^ot:originalLabel": "Darksidea beta CBS_135637", 
+"^ot:ottId": 5713910, 
+"^ot:ottTaxonName": "Darksidea beta"
 }, 
 "Tl3269222": {
-"^ot:altLabel": "Keissleriella culmifida", 
 "^ot:originalLabel": "Keissleriella culmifida KT_2308", 
+"^ot:ottId": 3730360, 
+"^ot:ottTaxonName": "Keissleriella culmifida", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 628416, 
 "@tb:identifier.taxonVariant": 842265, 
@@ -144,8 +238,9 @@
 }
 }, 
 "Tl3269223": {
-"^ot:altLabel": "Keissleriella taminensis", 
 "^ot:originalLabel": "Keissleriella taminensis KT_678", 
+"^ot:ottId": 3738202, 
+"^ot:ottTaxonName": "Keissleriella taminensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 628418, 
 "@tb:identifier.taxonVariant": 842267, 
@@ -153,7 +248,9 @@
 }
 }, 
 "Tl3269224": {
-"^ot:originalLabel": "Lentithecium pseudoclioninum KT_1113"
+"^ot:originalLabel": "Lentithecium pseudoclioninum KT_1113", 
+"^ot:ottId": 5978854, 
+"^ot:ottTaxonName": "Lentithecium pseudoclioninum"
 }, 
 "Tl3269225": {
 "^ot:originalLabel": "Byssothecium obiones 07AV2562_KX263858"
@@ -162,8 +259,9 @@
 "^ot:originalLabel": "Paraphaeosphaeria minitans CBS_122788"
 }, 
 "Tl3269227": {
-"^ot:altLabel": "Keissleriella genistae", 
 "^ot:originalLabel": "Keissleriella genistae CBS_113798", 
+"^ot:ottId": 459458, 
+"^ot:ottTaxonName": "Keissleriella genistae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 628425, 
 "@tb:identifier.taxonVariant": 842274, 
@@ -171,14 +269,19 @@
 }
 }, 
 "Tl3269228": {
-"^ot:originalLabel": "Prosthemium canba"
+"^ot:originalLabel": "Prosthemium canba", 
+"^ot:ottId": 704552, 
+"^ot:ottTaxonName": "Prosthemium canba"
 }, 
 "Tl3269229": {
-"^ot:originalLabel": "Keissleriella breviasca KT_581"
+"^ot:originalLabel": "Keissleriella breviasca KT_581", 
+"^ot:ottId": 6377674, 
+"^ot:ottTaxonName": "Keissleriella breviasca"
 }, 
 "Tl3269230": {
-"^ot:altLabel": "Corynespora smithii", 
 "^ot:originalLabel": "Corynespora smithii CABI_5649b", 
+"^ot:ottId": 402726, 
+"^ot:ottTaxonName": "Corynespora smithii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 526455, 
 "@tb:identifier.taxonVariant": 698355, 
@@ -187,17 +290,22 @@
 }
 }, 
 "Tl3269231": {
-"^ot:originalLabel": "Darksidea epsilon CBS_135658"
+"^ot:originalLabel": "Darksidea epsilon CBS_135658", 
+"^ot:ottId": 5713914, 
+"^ot:ottTaxonName": "Darksidea epsilon"
 }, 
 "Tl3269232": {
-"^ot:originalLabel": "Murilentithecium clematidis MFLUCC_14.0562"
+"^ot:originalLabel": "Murilentithecium clematidis MFLUCC_14.0562", 
+"^ot:ottId": 5713915, 
+"^ot:ottTaxonName": "Murilentithecium clematidis"
 }, 
 "Tl3269233": {
 "^ot:originalLabel": "Setoseptoria arundinacea KT_552"
 }, 
 "Tl3269234": {
-"^ot:altLabel": "Lentithecium aquaticum", 
 "^ot:originalLabel": "Lentithecium aquaticum CBS_123099", 
+"^ot:ottId": 177234, 
+"^ot:ottTaxonName": "Lentithecium aquaticum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 623047, 
 "@tb:identifier.taxonVariant": 834221, 
@@ -208,8 +316,9 @@
 "^ot:originalLabel": "Poaceascoma halophila"
 }, 
 "Tl3269236": {
-"^ot:altLabel": "Keissleriella taminensis", 
 "^ot:originalLabel": "Keissleriella taminensis KT_571", 
+"^ot:ottId": 3738202, 
+"^ot:ottTaxonName": "Keissleriella taminensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 628418, 
 "@tb:identifier.taxonVariant": 842267, 
@@ -220,13 +329,19 @@
 "^ot:originalLabel": "Setoseptoria magniarundinacea KT_1174"
 }, 
 "Tl3269238": {
-"^ot:originalLabel": "Keissleriella dactylidicola MFLUCC_130866"
+"^ot:originalLabel": "Keissleriella dactylidicola MFLUCC_130866", 
+"^ot:ottId": 5978208, 
+"^ot:ottTaxonName": "Keissleriella dactylidicola"
 }, 
 "Tl3269239": {
-"^ot:originalLabel": "Keissleriella sparticola MFLUCC_14.0196"
+"^ot:originalLabel": "Keissleriella sparticola MFLUCC_14.0196", 
+"^ot:ottId": 5713906, 
+"^ot:ottTaxonName": "Keissleriella sparticola"
 }, 
 "Tl3269240": {
-"^ot:originalLabel": "Keissleriella sp. SC.2015"
+"^ot:originalLabel": "Keissleriella sp. SC.2015", 
+"^ot:ottId": 517150, 
+"^ot:ottTaxonName": "Keissleriella"
 }, 
 "Tl3269241": {
 "^ot:originalLabel": "Lentithecium cangshanense HKAS84021"
@@ -235,8 +350,9 @@
 "^ot:originalLabel": "Phragmocamarosporium hederae MFLUCC_13.0552"
 }, 
 "Tl3269243": {
-"^ot:altLabel": "Paraconiothyrium brasiliense", 
 "^ot:originalLabel": "Paraconiothyrium brasiliense CBS_100299", 
+"^ot:ottId": 616741, 
+"^ot:ottTaxonName": "Paraconiothyrium brasiliense", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 20381, 
 "@tb:identifier.taxonVariant": 47455, 
@@ -245,23 +361,34 @@
 }
 }, 
 "Tl3269244": {
-"^ot:originalLabel": "Poaceascoma aquaticum strain_MFLUCC_14.0048"
+"^ot:originalLabel": "Poaceascoma aquaticum strain_MFLUCC_14.0048", 
+"^ot:ottId": 5978210, 
+"^ot:ottTaxonName": "Poaceascoma aquaticum"
 }, 
 "Tl3269245": {
-"^ot:originalLabel": "Lentithecium pseudoclioninum KT_1111"
+"^ot:originalLabel": "Lentithecium pseudoclioninum KT_1111", 
+"^ot:ottId": 5978854, 
+"^ot:ottTaxonName": "Lentithecium pseudoclioninum"
 }, 
 "Tl3269246": {
-"^ot:originalLabel": "Neoophiosphaerella sasicola KT_1706"
+"^ot:originalLabel": "Neoophiosphaerella sasicola KT_1706", 
+"^ot:ottId": 6377680, 
+"^ot:ottTaxonName": "Neoophiosphaerella sasicola"
 }, 
 "Tl3269247": {
-"^ot:originalLabel": "Prosthemium orientale KT2093"
+"^ot:originalLabel": "Prosthemium orientale KT2093", 
+"^ot:ottId": 704556, 
+"^ot:ottTaxonName": "Prosthemium orientale"
 }, 
 "Tl3269248": {
-"^ot:originalLabel": "Tingoldiago graminicola KH_155"
+"^ot:originalLabel": "Tingoldiago graminicola KH_155", 
+"^ot:ottId": 708591, 
+"^ot:ottTaxonName": "Tingoldiago graminicola"
 }, 
 "Tl3269249": {
-"^ot:altLabel": "Trematosphaeria pertusa", 
 "^ot:originalLabel": "Trematosphaeria pertusa CBS_122371", 
+"^ot:ottId": 1027800, 
+"^ot:ottTaxonName": "Trematosphaeria pertusa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 42398, 
 "@tb:identifier.taxonVariant": 98868, 
@@ -270,19 +397,27 @@
 }
 }, 
 "Tl3269250": {
-"^ot:originalLabel": "Lentithecium unicellulare 129_2"
+"^ot:originalLabel": "Lentithecium unicellulare 129_2", 
+"^ot:ottId": 6377677, 
+"^ot:ottTaxonName": "Lentithecium unicellulare"
 }, 
 "Tl3269251": {
 "^ot:originalLabel": "Lentithecium clionina KT_1149A"
 }, 
 "Tl3269252": {
-"^ot:originalLabel": "Dacampia hookeri 81840"
+"^ot:originalLabel": "Dacampia hookeri 81840", 
+"^ot:ottId": 4078338, 
+"^ot:ottTaxonName": "Dacampia hookeri"
 }, 
 "Tl3269253": {
-"^ot:originalLabel": "Morosphaeria ramunculicola JK_5304B"
+"^ot:originalLabel": "Morosphaeria ramunculicola JK_5304B", 
+"^ot:ottId": 245399, 
+"^ot:ottTaxonName": "Morosphaeria ramunculicola"
 }, 
 "Tl3269254": {
-"^ot:originalLabel": "Keissleriella trichophoricola CBS_136770"
+"^ot:originalLabel": "Keissleriella trichophoricola CBS_136770", 
+"^ot:ottId": 5713903, 
+"^ot:ottTaxonName": "Keissleriella trichophoricola"
 }, 
 "Tl3269255": {
 "^ot:altLabel": "Keissleriella gloeospora", 
@@ -294,20 +429,29 @@
 }
 }, 
 "Tl3269256": {
-"^ot:originalLabel": "Murilentithecium clematidis IT1078"
+"^ot:originalLabel": "Murilentithecium clematidis IT1078", 
+"^ot:ottId": 5713915, 
+"^ot:ottTaxonName": "Murilentithecium clematidis"
 }, 
 "Tl3269257": {
-"^ot:originalLabel": "Pleurophoma ossicola CPC_24985_CPC_24985"
+"^ot:originalLabel": "Pleurophoma ossicola CPC_24985_CPC_24985", 
+"^ot:ottId": 5713907, 
+"^ot:ottTaxonName": "Pleurophoma ossicola"
 }, 
 "Tl3269258": {
-"^ot:originalLabel": "Dacampia hookeri 74269"
+"^ot:originalLabel": "Dacampia hookeri 74269", 
+"^ot:ottId": 4078338, 
+"^ot:ottTaxonName": "Dacampia hookeri"
 }, 
 "Tl3269259": {
-"^ot:originalLabel": "Bambusicola splendida MFLUCC_11_0439"
+"^ot:originalLabel": "Bambusicola splendida MFLUCC_11_0439", 
+"^ot:ottId": 982698, 
+"^ot:ottTaxonName": "Bambusicola splendida"
 }, 
 "Tl3269260": {
-"^ot:altLabel": "Keissleriella cladophila", 
 "^ot:originalLabel": "Keissleriella cladophila CBS_104.55", 
+"^ot:ottId": 87434, 
+"^ot:ottTaxonName": "Keissleriella cladophila", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 14952, 
 "@tb:identifier.taxonVariant": 35136, 
@@ -316,8 +460,9 @@
 }
 }, 
 "Tl3269261": {
-"^ot:altLabel": "Falciformispora lignatilis", 
 "^ot:originalLabel": "Falciformispora lignatilis BCC_21117", 
+"^ot:ottId": 859283, 
+"^ot:ottTaxonName": "Falciformispora lignatilis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 564144, 
 "@tb:identifier.taxonVariant": 784922, 
@@ -339,8 +484,9 @@
 }
 }, 
 "Tl3269264": {
-"^ot:altLabel": "Falciformispora lignatilis", 
 "^ot:originalLabel": "Falciformispora lignatilis BCC_21118", 
+"^ot:ottId": 859283, 
+"^ot:ottTaxonName": "Falciformispora lignatilis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 564144, 
 "@tb:identifier.taxonVariant": 784922, 
@@ -349,8 +495,9 @@
 }
 }, 
 "Tl3269265": {
-"^ot:altLabel": "Phaeodothis winteri", 
 "^ot:originalLabel": "Phaeodothis winteri CBS_182_58", 
+"^ot:ottId": 61788, 
+"^ot:ottTaxonName": "Phaeodothis winteri", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 21516, 
 "@tb:identifier.taxonVariant": 50050, 
@@ -359,28 +506,40 @@
 }
 }, 
 "Tl3269266": {
-"^ot:originalLabel": "Darksidea alpha CBS_135650"
+"^ot:originalLabel": "Darksidea alpha CBS_135650", 
+"^ot:ottId": 5713913, 
+"^ot:ottTaxonName": "Darksidea alpha"
 }, 
 "Tl3269267": {
 "^ot:originalLabel": "Byssothecium obiones 20AV2566"
 }, 
 "Tl3269268": {
-"^ot:originalLabel": "Keissleriella breviasca KT_649"
+"^ot:originalLabel": "Keissleriella breviasca KT_649", 
+"^ot:ottId": 6377674, 
+"^ot:ottTaxonName": "Keissleriella breviasca"
 }, 
 "Tl3269269": {
-"^ot:originalLabel": "Lentithecium unicellulare 129_1"
+"^ot:originalLabel": "Lentithecium unicellulare 129_1", 
+"^ot:ottId": 6377677, 
+"^ot:ottTaxonName": "Lentithecium unicellulare"
 }, 
 "Tl3269270": {
-"^ot:originalLabel": "Keissleriella breviasca KT_540"
+"^ot:originalLabel": "Keissleriella breviasca KT_540", 
+"^ot:ottId": 6377674, 
+"^ot:ottTaxonName": "Keissleriella breviasca"
 }, 
 "Tl3269271": {
 "^ot:originalLabel": "Phragmocamarosporium platani MFLUCC_14.1191"
 }, 
 "Tl3269272": {
-"^ot:originalLabel": "Palmiascoma gregariascomum MFLUCC_11_0175"
+"^ot:originalLabel": "Palmiascoma gregariascomum MFLUCC_11_0175", 
+"^ot:ottId": 5712883, 
+"^ot:ottTaxonName": "Palmiascoma gregariascomum"
 }, 
 "Tl3269273": {
 "^ot:originalLabel": "Bimuria novae-zelandiae", 
+"^ot:ottId": 84213, 
+"^ot:ottTaxonName": "Bimuria novae-zelandiae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3523, 
 "@tb:identifier.taxonVariant": 8457, 
@@ -389,20 +548,27 @@
 }
 }, 
 "Tl3269274": {
-"^ot:originalLabel": "Dacampia engeliana 72868_KT383791"
+"^ot:originalLabel": "Dacampia engeliana 72868_KT383791", 
+"^ot:ottId": 4078326, 
+"^ot:ottTaxonName": "Dacampia engeliana"
 }, 
 "Tl3269275": {
-"^ot:originalLabel": "Keissleriella quadriseptata KT_2292"
+"^ot:originalLabel": "Keissleriella quadriseptata KT_2292", 
+"^ot:ottId": 5978268, 
+"^ot:ottTaxonName": "Keissleriella quadriseptata"
 }, 
 "Tl3269276": {
 "^ot:originalLabel": "Halobyssothecium obiones"
 }, 
 "Tl3269277": {
-"^ot:originalLabel": "Tingoldiago graminicola KT_891"
+"^ot:originalLabel": "Tingoldiago graminicola KT_891", 
+"^ot:ottId": 708591, 
+"^ot:ottTaxonName": "Tingoldiago graminicola"
 }, 
 "Tl3269278": {
-"^ot:altLabel": "Massarina cisti", 
 "^ot:originalLabel": "Massarina cisti CBS_266.62", 
+"^ot:ottId": 700485, 
+"^ot:ottTaxonName": "Massarina cisti", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 564240, 
 "@tb:identifier.taxonVariant": 785053, 
@@ -411,8 +577,9 @@
 }
 }, 
 "Tl3269279": {
-"^ot:altLabel": "Paraphaeosphaeria michotii", 
 "^ot:originalLabel": "Paraphaeosphaeria michotii MFLUCC_13_0349", 
+"^ot:ottId": 645493, 
+"^ot:ottTaxonName": "Paraphaeosphaeria michotii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 20473, 
 "@tb:identifier.taxonVariant": 47625, 
@@ -421,11 +588,14 @@
 }
 }, 
 "Tl3269280": {
-"^ot:originalLabel": "Setoseptoria phragmitis CBS_114966"
+"^ot:originalLabel": "Setoseptoria phragmitis CBS_114966", 
+"^ot:ottId": 5221312, 
+"^ot:ottTaxonName": "Setoseptoria phragmitis"
 }, 
 "Tl3269281": {
-"^ot:altLabel": "Helicascus nypae", 
 "^ot:originalLabel": "Helicascus nypae BCC_36752", 
+"^ot:ottId": 1088834, 
+"^ot:ottTaxonName": "Helicascus nypae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 178879, 
 "@tb:identifier.taxonVariant": 252258, 
@@ -434,11 +604,14 @@
 }
 }, 
 "Tl3269282": {
-"^ot:originalLabel": "Darksidea zeta CBS_135640"
+"^ot:originalLabel": "Darksidea zeta CBS_135640", 
+"^ot:ottId": 5713912, 
+"^ot:ottTaxonName": "Darksidea zeta"
 }, 
 "Tl3269283": {
-"^ot:altLabel": "Karstenula rhodostoma", 
 "^ot:originalLabel": "Karstenula rhodostoma CBS_690_94", 
+"^ot:ottId": 25865, 
+"^ot:ottTaxonName": "Karstenula rhodostoma", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 34907, 
 "@tb:identifier.taxonVariant": 80850, 
@@ -447,24 +620,33 @@
 }
 }, 
 "Tl3269284": {
-"^ot:originalLabel": "Keissleriella sp. KT 895"
+"^ot:originalLabel": "Keissleriella sp. KT 895", 
+"^ot:ottId": 517150, 
+"^ot:ottTaxonName": "Keissleriella"
 }, 
 "Tl3269285": {
 "^ot:originalLabel": "Kalmusia scabrispora", 
+"^ot:ottId": 568529, 
+"^ot:ottTaxonName": "Kalmusia scabrispora", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 556533, 
 "@tb:identifier.taxonVariant": 737501
 }
 }, 
 "Tl3269286": {
-"^ot:originalLabel": "Bambusicola massarinia MFLUCC_11_0389"
+"^ot:originalLabel": "Bambusicola massarinia MFLUCC_11_0389", 
+"^ot:ottId": 399961, 
+"^ot:ottTaxonName": "Bambusicola massarinia"
 }, 
 "Tl3269287": {
-"^ot:originalLabel": "Lentithecium voraginesporum LSU"
+"^ot:originalLabel": "Lentithecium voraginesporum LSU", 
+"^ot:ottId": 6377678, 
+"^ot:ottTaxonName": "Lentithecium voraginesporum"
 }, 
 "Tl3269288": {
-"^ot:altLabel": "Trematosphaeria pertusa", 
 "^ot:originalLabel": "Trematosphaeria pertusa CBS_122368", 
+"^ot:ottId": 1027800, 
+"^ot:ottTaxonName": "Trematosphaeria pertusa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 42398, 
 "@tb:identifier.taxonVariant": 98868, 
@@ -476,10 +658,14 @@
 "^ot:originalLabel": "Lentithecium clionina KT_1220"
 }, 
 "Tl3269290": {
-"^ot:originalLabel": "Darksidea delta CBS_135638"
+"^ot:originalLabel": "Darksidea delta CBS_135638", 
+"^ot:ottId": 5713909, 
+"^ot:ottTaxonName": "Darksidea delta"
 }, 
 "Tl3269291": {
 "^ot:originalLabel": "Katumotoa bambusicola KT_1517a", 
+"^ot:ottId": 568531, 
+"^ot:ottTaxonName": "Katumotoa bambusicola", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 556535, 
 "@tb:identifier.taxonVariant": 737503
@@ -489,11 +675,14 @@
 "^ot:originalLabel": "Melanomma pulvis pyrius_CBS_124080"
 }, 
 "Tl3269293": {
-"^ot:originalLabel": "Bambusicola bambusae MFLUCC_11_0614"
+"^ot:originalLabel": "Bambusicola bambusae MFLUCC_11_0614", 
+"^ot:ottId": 982704, 
+"^ot:ottTaxonName": "Bambusicola bambusae"
 }, 
 "Tl3269294": {
-"^ot:altLabel": "Montagnula opulenta", 
 "^ot:originalLabel": "Montagnula opulenta AFTOL_ID_1734", 
+"^ot:ottId": 87444, 
+"^ot:ottTaxonName": "Montagnula opulenta", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 18072, 
 "@tb:identifier.taxonVariant": 42287, 
@@ -502,11 +691,14 @@
 }
 }, 
 "Tl3269295": {
-"^ot:originalLabel": "Lentithecium fluviatile CBS_122367"
+"^ot:originalLabel": "Lentithecium fluviatile CBS_122367", 
+"^ot:ottId": 177236, 
+"^ot:ottTaxonName": "Lentithecium fluviatile"
 }, 
 "Tl3269296": {
-"^ot:altLabel": "Stagonospora macropycnidia", 
 "^ot:originalLabel": "Stagonospora macropycnidia CBS_114202", 
+"^ot:ottId": 318090, 
+"^ot:ottTaxonName": "Stagonospora macropycnidia", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 564534, 
 "@tb:identifier.taxonVariant": 785387, 
@@ -521,8 +713,9 @@
 "^ot:originalLabel": "Setoseptoria arundinacea CBS_123131"
 }, 
 "Tl3269299": {
-"^ot:altLabel": "Massarina eburnea", 
 "^ot:originalLabel": "Massarina eburnea H_3953", 
+"^ot:ottId": 217893, 
+"^ot:ottTaxonName": "Massarina eburnea", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 16996, 
 "@tb:identifier.taxonVariant": 39806, 
@@ -531,33 +724,48 @@
 }
 }, 
 "Tl3269300": {
-"^ot:originalLabel": "Setoseptoria phragmitis CBS_114802"
+"^ot:originalLabel": "Setoseptoria phragmitis CBS_114802", 
+"^ot:ottId": 5221312, 
+"^ot:ottTaxonName": "Setoseptoria phragmitis"
 }, 
 "Tl3269301": {
-"^ot:originalLabel": "Keissleriella poagena CBS_136767"
+"^ot:originalLabel": "Keissleriella poagena CBS_136767", 
+"^ot:ottId": 5713905, 
+"^ot:ottTaxonName": "Keissleriella poagena"
 }, 
 "Tl3269302": {
-"^ot:originalLabel": "Murilentithecium clematidis MFLUCC_14.0561"
+"^ot:originalLabel": "Murilentithecium clematidis MFLUCC_14.0561", 
+"^ot:ottId": 5713915, 
+"^ot:ottTaxonName": "Murilentithecium clematidis"
 }, 
 "Tl3269303": {
-"^ot:originalLabel": "Bambusicola irregulispora MFLUCC_11_0437"
+"^ot:originalLabel": "Bambusicola irregulispora MFLUCC_11_0437", 
+"^ot:ottId": 982701, 
+"^ot:ottTaxonName": "Bambusicola irregulispora"
 }, 
 "Tl3269304": {
-"^ot:originalLabel": "Darksidea gamma CBS_135634"
+"^ot:originalLabel": "Darksidea gamma CBS_135634", 
+"^ot:ottId": 5713911, 
+"^ot:ottTaxonName": "Darksidea gamma"
 }, 
 "Tl3269305": {
 "^ot:originalLabel": "Katumotoa bambusicola", 
+"^ot:ottId": 568531, 
+"^ot:ottTaxonName": "Katumotoa bambusicola", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 556535, 
 "@tb:identifier.taxonVariant": 737503
 }
 }, 
 "Tl3269306": {
-"^ot:originalLabel": "Pleurophoma ossicola CPC_24979_CBS_139905"
+"^ot:originalLabel": "Pleurophoma ossicola CPC_24979_CBS_139905", 
+"^ot:ottId": 5713907, 
+"^ot:ottTaxonName": "Pleurophoma ossicola"
 }, 
 "Tl3269307": {
-"^ot:altLabel": "Keissleriella culmifida", 
 "^ot:originalLabel": "Keissleriella culmifida KT_2642", 
+"^ot:ottId": 3730360, 
+"^ot:ottTaxonName": "Keissleriella culmifida", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 628416, 
 "@tb:identifier.taxonVariant": 842265, 
@@ -571,8 +779,9 @@
 "^ot:originalLabel": "Setoseptoria scirpi"
 }, 
 "Tl3269310": {
-"^ot:altLabel": "Keissleriella taminensis", 
 "^ot:originalLabel": "Keissleriella taminensis KT_594", 
+"^ot:ottId": 3738202, 
+"^ot:ottTaxonName": "Keissleriella taminensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 628418, 
 "@tb:identifier.taxonVariant": 842267, 
@@ -583,8 +792,9 @@
 "^ot:originalLabel": "Byssothecium obiones 08AV2569"
 }, 
 "Tl3269312": {
-"^ot:altLabel": "Byssothecium circinans", 
 "^ot:originalLabel": "Byssothecium circinans CBS_675_92", 
+"^ot:ottId": 921290, 
+"^ot:ottTaxonName": "Byssothecium circinans", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 4320, 
 "@tb:identifier.taxonVariant": 10390, 
@@ -593,7 +803,9 @@
 }
 }, 
 "Tl3269313": {
-"^ot:originalLabel": "Lentithecium fluviatile CBS_123090"
+"^ot:originalLabel": "Lentithecium fluviatile CBS_123090", 
+"^ot:ottId": 177236, 
+"^ot:ottTaxonName": "Lentithecium fluviatile"
 }
 }
 }
@@ -610,7 +822,18 @@
 "Tr112838": {
 "@label": "PAUP 1", 
 "@xsi:type": "nex:FloatTree", 
-"^ot:rootNodeId": "Tn17654804", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:substitutionCount", 
+"^ot:curatedType": "Maximum likelihood ", 
+"^ot:inGroupClade": "Tn17654771", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
+"^ot:rootNodeId": "Tr112838_ROOT", 
+"^ot:specifiedRoot": "Tr112838_ROOT", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 100, 
 "^tb:quality.tree": "Unrated", 
@@ -654,12 +877,12 @@
 }, 
 "Tn17654619": {
 "edge2681096": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17654619", 
 "@target": "Tn17654679"
 }, 
 "edge2681098": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17654619", 
 "@target": "Tn17654775"
 }
@@ -707,7 +930,7 @@
 "@target": "Tn17654725"
 }, 
 "edge2681018": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17654624", 
 "@target": "Tn17654635"
 }
@@ -737,15 +960,15 @@
 }
 }, 
 "Tn17654629": {
+"edge2680816": {
+"@length": 0, 
+"@source": "Tn17654629", 
+"@target": "Tn17654656"
+}, 
 "edge2680818": {
 "@length": 0.052706, 
 "@source": "Tn17654629", 
 "@target": "Tn17654636"
-}, 
-"edge2680844": {
-"@length": 0.0, 
-"@source": "Tn17654629", 
-"@target": "Tn17654702"
 }
 }, 
 "Tn17654635": {
@@ -786,12 +1009,12 @@
 }, 
 "Tn17654639": {
 "edge2681160": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17654639", 
 "@target": "Tn17654798"
 }, 
 "edge2681162": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17654639", 
 "@target": "Tn17654662"
 }
@@ -810,12 +1033,12 @@
 }, 
 "Tn17654650": {
 "edge2681032": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17654650", 
 "@target": "Tn17654706"
 }, 
 "edge2681034": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17654650", 
 "@target": "Tn17654799"
 }
@@ -834,12 +1057,12 @@
 }, 
 "Tn17654653": {
 "edge2681024": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17654653", 
 "@target": "Tn17654681"
 }, 
 "edge2681026": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17654653", 
 "@target": "Tn17654665"
 }
@@ -857,15 +1080,15 @@
 }
 }, 
 "Tn17654656": {
+"edge2680808": {
+"@length": 0.011476, 
+"@source": "Tn17654656", 
+"@target": "Tn17654731"
+}, 
 "edge2680810": {
 "@length": 0.057573, 
 "@source": "Tn17654656", 
 "@target": "Tn17654711"
-}, 
-"edge2680816": {
-"@length": 0.0, 
-"@source": "Tn17654656", 
-"@target": "Tn17654629"
 }
 }, 
 "Tn17654661": {
@@ -918,7 +1141,7 @@
 }, 
 "Tn17654666": {
 "edge2681142": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17654666", 
 "@target": "Tn17654803"
 }, 
@@ -966,12 +1189,12 @@
 }, 
 "Tn17654683": {
 "edge2680866": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17654683", 
 "@target": "Tn17654718"
 }, 
 "edge2680868": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17654683", 
 "@target": "Tn17654643"
 }
@@ -983,19 +1206,19 @@
 "@target": "Tn17654764"
 }, 
 "edge2681180": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17654684", 
 "@target": "Tn17654773"
 }
 }, 
 "Tn17654686": {
 "edge2680978": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17654686", 
 "@target": "Tn17654634"
 }, 
 "edge2680980": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17654686", 
 "@target": "Tn17654763"
 }
@@ -1026,7 +1249,7 @@
 }, 
 "Tn17654690": {
 "edge2681070": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17654690", 
 "@target": "Tn17654664"
 }, 
@@ -1038,7 +1261,7 @@
 }, 
 "Tn17654691": {
 "edge2681124": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17654691", 
 "@target": "Tn17654660"
 }, 
@@ -1067,7 +1290,7 @@
 "@target": "Tn17654642"
 }, 
 "edge2680794": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17654694", 
 "@target": "Tn17654661"
 }
@@ -1086,7 +1309,7 @@
 }, 
 "Tn17654696": {
 "edge2680986": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17654696", 
 "@target": "Tn17654802"
 }, 
@@ -1098,12 +1321,12 @@
 }, 
 "Tn17654697": {
 "edge2681128": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17654697", 
 "@target": "Tn17654701"
 }, 
 "edge2681130": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17654697", 
 "@target": "Tn17654729"
 }
@@ -1121,15 +1344,15 @@
 }
 }, 
 "Tn17654702": {
+"edge2680844": {
+"@length": 0, 
+"@source": "Tn17654702", 
+"@target": "Tn17654629"
+}, 
 "edge2680846": {
 "@length": 0.006387, 
 "@source": "Tn17654702", 
 "@target": "Tn17654638"
-}, 
-"edge2680880": {
-"@length": 0.00889, 
-"@source": "Tn17654702", 
-"@target": "Tn17654770"
 }
 }, 
 "Tn17654710": {
@@ -1139,7 +1362,7 @@
 "@target": "Tn17654640"
 }, 
 "edge2681110": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17654710", 
 "@target": "Tn17654652"
 }
@@ -1187,28 +1410,28 @@
 "@target": "Tn17654687"
 }, 
 "edge2680944": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17654719", 
 "@target": "Tn17654783"
 }
 }, 
 "Tn17654720": {
 "edge2680876": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17654720", 
 "@target": "Tn17654617"
 }, 
 "edge2680878": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17654720", 
 "@target": "Tn17654704"
 }
 }, 
 "Tn17654723": {
-"edge2680884": {
-"@length": 0.03494, 
+"edge2680882": {
+"@length": 0.014758, 
 "@source": "Tn17654723", 
-"@target": "Tn17654627"
+"@target": "Tn17654770"
 }, 
 "edge2680890": {
 "@length": 0.025208, 
@@ -1218,7 +1441,7 @@
 }, 
 "Tn17654726": {
 "edge2680970": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17654726", 
 "@target": "Tn17654659"
 }, 
@@ -1230,7 +1453,7 @@
 }, 
 "Tn17654727": {
 "edge2681080": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17654727", 
 "@target": "Tn17654760"
 }, 
@@ -1265,15 +1488,15 @@
 }
 }, 
 "Tn17654731": {
+"edge2680800": {
+"@length": 0.038137, 
+"@source": "Tn17654731", 
+"@target": "Tn17654804"
+}, 
 "edge2680802": {
 "@length": 0.090848, 
 "@source": "Tn17654731", 
 "@target": "Tn17654741"
-}, 
-"edge2680808": {
-"@length": 0.011476, 
-"@source": "Tn17654731", 
-"@target": "Tn17654656"
 }
 }, 
 "Tn17654733": {
@@ -1290,12 +1513,12 @@
 }, 
 "Tn17654736": {
 "edge2681048": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17654736", 
 "@target": "Tn17654758"
 }, 
 "edge2681050": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17654736", 
 "@target": "Tn17654746"
 }
@@ -1343,7 +1566,7 @@
 "@target": "Tn17654667"
 }, 
 "edge2680926": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17654743", 
 "@target": "Tn17654645"
 }
@@ -1362,19 +1585,19 @@
 }, 
 "Tn17654746": {
 "edge2681052": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17654746", 
 "@target": "Tn17654705"
 }, 
 "edge2681054": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17654746", 
 "@target": "Tn17654806"
 }
 }, 
 "Tn17654747": {
 "edge2681134": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17654747", 
 "@target": "Tn17654623"
 }, 
@@ -1403,7 +1626,7 @@
 "@target": "Tn17654719"
 }, 
 "edge2680946": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17654749", 
 "@target": "Tn17654739"
 }
@@ -1446,7 +1669,7 @@
 }, 
 "Tn17654757": {
 "edge2680934": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17654757", 
 "@target": "Tn17654755"
 }, 
@@ -1482,12 +1705,12 @@
 }, 
 "Tn17654765": {
 "edge2680952": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17654765", 
 "@target": "Tn17654674"
 }, 
 "edge2680954": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17654765", 
 "@target": "Tn17654682"
 }
@@ -1518,21 +1741,21 @@
 }, 
 "Tn17654769": {
 "edge2681040": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17654769", 
 "@target": "Tn17654633"
 }, 
 "edge2681042": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17654769", 
 "@target": "Tn17654780"
 }
 }, 
 "Tn17654770": {
-"edge2680882": {
-"@length": 0.014758, 
+"edge2680880": {
+"@length": 0.00889, 
 "@source": "Tn17654770", 
-"@target": "Tn17654723"
+"@target": "Tn17654702"
 }, 
 "edge2680908": {
 "@length": 0.017414, 
@@ -1559,7 +1782,7 @@
 "@target": "Tn17654801"
 }, 
 "edge2681116": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17654772", 
 "@target": "Tn17654688"
 }
@@ -1571,7 +1794,7 @@
 "@target": "Tn17654788"
 }, 
 "edge2680966": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17654774", 
 "@target": "Tn17654654"
 }
@@ -1590,19 +1813,19 @@
 }, 
 "Tn17654780": {
 "edge2681044": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17654780", 
 "@target": "Tn17654778"
 }, 
 "edge2681046": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17654780", 
 "@target": "Tn17654736"
 }
 }, 
 "Tn17654781": {
 "edge2680858": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17654781", 
 "@target": "Tn17654724"
 }, 
@@ -1643,7 +1866,7 @@
 "@target": "Tn17654670"
 }, 
 "edge2681152": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17654785", 
 "@target": "Tn17654761"
 }
@@ -1655,19 +1878,19 @@
 "@target": "Tn17654675"
 }, 
 "edge2681068": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17654786", 
 "@target": "Tn17654690"
 }
 }, 
 "Tn17654788": {
 "edge2680962": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17654788", 
 "@target": "Tn17654807"
 }, 
 "edge2680964": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17654788", 
 "@target": "Tn17654621"
 }
@@ -1691,7 +1914,7 @@
 "@target": "Tn17654649"
 }, 
 "edge2681094": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17654790", 
 "@target": "Tn17654619"
 }
@@ -1722,7 +1945,7 @@
 }, 
 "Tn17654796": {
 "edge2680984": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17654796", 
 "@target": "Tn17654696"
 }, 
@@ -1734,7 +1957,7 @@
 }, 
 "Tn17654799": {
 "edge2681036": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17654799", 
 "@target": "Tn17654808"
 }, 
@@ -1785,23 +2008,29 @@
 "@length": 0.038137, 
 "@source": "Tn17654804", 
 "@target": "Tn17654716"
-}, 
-"edge2680800": {
-"@length": 0.038137, 
-"@source": "Tn17654804", 
-"@target": "Tn17654731"
 }
 }, 
 "Tn17654806": {
 "edge2681056": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17654806", 
 "@target": "Tn17654740"
 }, 
 "edge2681058": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17654806", 
 "@target": "Tn17654678"
+}
+}, 
+"Tr112838_ROOT": {
+"Tr112838_ROOT_EDGE": {
+"@source": "Tr112838_ROOT", 
+"@target": "Tn17654723"
+}, 
+"edge2680884": {
+"@length": 0.03494, 
+"@source": "Tr112838_ROOT", 
+"@target": "Tn17654627"
 }
 }
 }, 
@@ -2194,9 +2423,7 @@
 "@otu": "Tl3269241"
 }, 
 "Tn17654803": {}, 
-"Tn17654804": {
-"@root": true
-}, 
+"Tn17654804": {}, 
 "Tn17654805": {
 "@otu": "Tl3269296"
 }, 
@@ -2206,6 +2433,9 @@
 }, 
 "Tn17654808": {
 "@otu": "Tl3269251"
+}, 
+"Tr112838_ROOT": {
+"@root": true
 }
 }
 }
