@@ -45,22 +45,115 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2018-10-08T14:55:14.136Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "Club mosses"
 }, 
-"^ot:curatorName": "Matt Girard", 
+"substitutions": {
+"substitution": [
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": "cf"
+}
+}, 
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": "$1"
+}, 
+"old": {
+"$": "^(\\S*\\s+\\S*).*"
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2018-10-08T14:55:14.136Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Matt Girard"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S23357"
 }, 
+"^ot:focalCladeOTTTaxonName": "", 
 "^ot:otusElementOrder": [
 "Tls65469"
 ], 
 "^ot:studyId": "ot_1804", 
+"^ot:studyPublication": {
+"@href": ""
+}, 
 "^ot:studyPublicationReference": "Zhang L. 2018. A plastid phylogeny of the Old World fern genus Leptochilus (Polypodiaceae): Implications for cryptic speciation and taxonomy. Molecular Phylogenetics and Evolution, .", 
 "^ot:studyYear": 2018, 
+"^ot:tag": [], 
 "^ot:taxonLinkPrefixes": {
 "@ubio": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:", 
 "@uniprot": "http://purl.uniprot.org/taxonomy/"
@@ -111,6 +204,7 @@
 }
 }, 
 "Tl3348920": {
+"^ot:altLabel": "Leptochilus  flexilobus", 
 "^ot:originalLabel": "Leptochilus cf flexilobus_Zhang_et_al_6710_Bac_Kan_Vietnam"
 }, 
 "Tl3348921": {
@@ -134,8 +228,9 @@
 "^skos:prefLabel": "Colysis digitata"
 }, 
 "Tl3348925": {
-"^ot:altLabel": "Leptochilus axillaris", 
 "^ot:originalLabel": "Leptochilus axillaris Walker_11557_Java_Indonesia", 
+"^ot:ottId": 567584, 
+"^ot:ottTaxonName": "Leptochilus axillaris", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 454177, 
 "@tb:identifier.taxonVariant": 601374, 
@@ -155,8 +250,9 @@
 "^skos:prefLabel": "Colysis hemionitidea"
 }, 
 "Tl3348927": {
-"^ot:altLabel": "Leptochilus cantoniensis", 
 "^ot:originalLabel": "Leptochilus cantoniensis Dong_1034_Hainan_China", 
+"^ot:ottId": 114059, 
+"^ot:ottTaxonName": "Leptochilus cantoniensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 414966, 
 "@tb:identifier.taxonVariant": 411883, 
@@ -169,6 +265,8 @@
 }, 
 "Tl3348929": {
 "^ot:originalLabel": "Neocheiropteris palmatopedata", 
+"^ot:ottId": 719528, 
+"^ot:ottTaxonName": "Neocheiropteris palmatopedata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 228584, 
 "@tb:identifier.taxonVariant": 292053, 
@@ -177,8 +275,9 @@
 }
 }, 
 "Tl3348930": {
-"^ot:altLabel": "Microsorum membranifolium", 
 "^ot:originalLabel": "Microsorum membranifolium DQ642161", 
+"^ot:ottId": 916165, 
+"^ot:ottTaxonName": "Microsorum membranifolium", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 342059, 
 "@tb:identifier.taxonVariant": 378282, 
@@ -187,8 +286,9 @@
 }
 }, 
 "Tl3348931": {
-"^ot:altLabel": "Microsorum lastii", 
 "^ot:originalLabel": "Microsorum lastii EU482961", 
+"^ot:ottId": 567561, 
+"^ot:ottTaxonName": "Microsorum lastii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 454180, 
 "@tb:identifier.taxonVariant": 601384, 
@@ -197,8 +297,9 @@
 }
 }, 
 "Tl3348932": {
-"^ot:altLabel": "Microsorum punctatum", 
 "^ot:originalLabel": "Microsorum punctatum JX103705", 
+"^ot:ottId": 414008, 
+"^ot:ottTaxonName": "Microsorum punctatum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 17754, 
 "@tb:identifier.taxonVariant": 41534, 
@@ -211,6 +312,8 @@
 }, 
 "Tl3348934": {
 "^ot:originalLabel": "Lepisorus clathratus", 
+"^ot:ottId": 667971, 
+"^ot:ottTaxonName": "Lepisorus clathratus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 228574, 
 "@tb:identifier.taxonVariant": 292042, 
@@ -219,8 +322,9 @@
 }
 }, 
 "Tl3348935": {
-"^ot:altLabel": "Lepidomicrosorium buergerianum", 
 "^ot:originalLabel": "Lepidomicrosorium buergerianum EU363247", 
+"^ot:ottId": 341444, 
+"^ot:ottTaxonName": "Lepidomicrosorium buergerianum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 414967, 
 "@tb:identifier.taxonVariant": 784309, 
@@ -304,8 +408,9 @@
 "^skos:prefLabel": "Colysis hemionitidea"
 }, 
 "Tl3348944": {
-"^ot:altLabel": "Lepisorus macrosphaerus", 
 "^ot:originalLabel": "Lepisorus macrosphaerus JX103697", 
+"^ot:ottId": 46677, 
+"^ot:ottTaxonName": "Lepisorus macrosphaerus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 454174, 
 "@tb:identifier.taxonVariant": 601367, 
@@ -314,8 +419,9 @@
 }
 }, 
 "Tl3348945": {
-"^ot:altLabel": "Kontumia heterophylla", 
 "^ot:originalLabel": "Kontumia heterophylla Wu_et_al_WP_135_Vietnam", 
+"^ot:ottId": 345954, 
+"^ot:ottTaxonName": "Kontumia heterophylla", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 611494, 
 "@tb:identifier.taxonVariant": 817536, 
@@ -326,8 +432,9 @@
 "^ot:originalLabel": "Leptochilus cf macrophyllus Wade_1772_West_Java_Indonesia"
 }, 
 "Tl3348947": {
-"^ot:altLabel": "Microsorum spectrum", 
 "^ot:originalLabel": "Microsorum spectrum EU482968", 
+"^ot:ottId": 567575, 
+"^ot:ottTaxonName": "Microsorum spectrum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 454181, 
 "@tb:identifier.taxonVariant": 601390, 
@@ -336,8 +443,9 @@
 }
 }, 
 "Tl3348948": {
-"^ot:altLabel": "Microsorum pustulatum", 
 "^ot:originalLabel": "Microsorum pustulatum DQ401117", 
+"^ot:ottId": 719524, 
+"^ot:ottTaxonName": "Microsorum pustulatum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 228582, 
 "@tb:identifier.taxonVariant": 292050, 
@@ -346,8 +454,9 @@
 }
 }, 
 "Tl3348949": {
-"^ot:altLabel": "Kontumia heterophylla", 
 "^ot:originalLabel": "Kontumia heterophylla Wu_et_al_WP_136_Vietnam", 
+"^ot:ottId": 345954, 
+"^ot:ottTaxonName": "Kontumia heterophylla", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 611494, 
 "@tb:identifier.taxonVariant": 817536, 
@@ -355,7 +464,9 @@
 }
 }, 
 "Tl3348950": {
-"^ot:originalLabel": "Leptochilus sp Zhang_et_al_7365_Quang_Binh_Vietnam"
+"^ot:originalLabel": "Leptochilus sp Zhang_et_al_7365_Quang_Binh_Vietnam", 
+"^ot:ottId": 641007, 
+"^ot:ottTaxonName": "Leptochilus (genus in kingdom Archaeplastida)"
 }, 
 "Tl3348951": {
 "^ot:originalLabel": "Leptochilus henryi Zhang_et_al_9289_Ziyun_Guizhou_China"
@@ -372,8 +483,9 @@
 "^skos:prefLabel": "Colysis elliptica"
 }, 
 "Tl3348953": {
-"^ot:altLabel": "Microsorum musifolium", 
 "^ot:originalLabel": "Microsorum musifolium AF470333", 
+"^ot:ottId": 79613, 
+"^ot:ottTaxonName": "Microsorum musifolium", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 17753, 
 "@tb:identifier.taxonVariant": 41526, 
@@ -382,8 +494,9 @@
 }
 }, 
 "Tl3348954": {
-"^ot:altLabel": "Goniophlebium argutum", 
 "^ot:originalLabel": "Goniophlebium argutum JX103709", 
+"^ot:ottId": 596166, 
+"^ot:ottTaxonName": "Goniophlebium argutum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 305164, 
 "@tb:identifier.taxonVariant": 353358, 
@@ -392,8 +505,9 @@
 }
 }, 
 "Tl3348955": {
-"^ot:altLabel": "Pyrrosia adnascens", 
 "^ot:originalLabel": "Pyrrosia adnascens LBZ7064", 
+"^ot:ottId": 434969, 
+"^ot:ottTaxonName": "Pyrrosia adnascens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 605643, 
 "@tb:identifier.taxonVariant": 808423, 
@@ -418,8 +532,9 @@
 "^ot:originalLabel": "Leptochilus flexilobus Wu_SK_et_al_WS_2712_Laos"
 }, 
 "Tl3348959": {
-"^ot:altLabel": "Microsorum linguiforme", 
 "^ot:originalLabel": "Microsorum linguiforme AF470334", 
+"^ot:ottId": 939526, 
+"^ot:ottTaxonName": "Microsorum linguiforme", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 17752, 
 "@tb:identifier.taxonVariant": 41524, 
@@ -460,14 +575,19 @@
 "^skos:prefLabel": "Colysis digitata"
 }, 
 "Tl3348963": {
-"^ot:originalLabel": "Lemmaphyllum microphyllum Schneider_sn_Cult_BGZ"
+"^ot:originalLabel": "Lemmaphyllum microphyllum Schneider_sn_Cult_BGZ", 
+"^ot:ottId": 1005831, 
+"^ot:ottTaxonName": "Lemmaphyllum microphyllum"
 }, 
 "Tl3348964": {
-"^ot:originalLabel": "Leptochilus sp Lu_SG_V111_Hainan_China"
+"^ot:originalLabel": "Leptochilus sp Lu_SG_V111_Hainan_China", 
+"^ot:ottId": 641007, 
+"^ot:ottTaxonName": "Leptochilus (genus in kingdom Archaeplastida)"
 }, 
 "Tl3348965": {
-"^ot:altLabel": "Leptochilus macrophyllus", 
 "^ot:originalLabel": "Leptochilus macrophyllus Wade_1962_West_Java_Indonesia", 
+"^ot:ottId": 5690869, 
+"^ot:ottTaxonName": "Leptochilus macrophyllus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 15652, 
 "@tb:identifier.taxonVariant": 36685, 
@@ -497,8 +617,9 @@
 "^skos:prefLabel": "Paraleptochilus decurrens"
 }, 
 "Tl3348968": {
-"^ot:altLabel": "Microsorum thailandicum", 
 "^ot:originalLabel": "Microsorum thailandicum EU482969", 
+"^ot:ottId": 567573, 
+"^ot:ottTaxonName": "Microsorum thailandicum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 454182, 
 "@tb:identifier.taxonVariant": 601392, 
@@ -528,8 +649,9 @@
 "^ot:originalLabel": "Leptochilus dissimilialatum Zhang_et_al_6943_Ha_Giang_Vietnam"
 }, 
 "Tl3348974": {
-"^ot:altLabel": "Microsorum commutatum", 
 "^ot:originalLabel": "Microsorum commutatum AY362571", 
+"^ot:ottId": 719522, 
+"^ot:ottTaxonName": "Microsorum commutatum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 228579, 
 "@tb:identifier.taxonVariant": 292047, 
@@ -552,7 +674,9 @@
 "^skos:prefLabel": "Colysis digitata"
 }, 
 "Tl3348977": {
-"^ot:originalLabel": "Leptochilus sp Zhang_et_al_6402_Vinh_Phuc_Vietnam"
+"^ot:originalLabel": "Leptochilus sp Zhang_et_al_6402_Vinh_Phuc_Vietnam", 
+"^ot:ottId": 641007, 
+"^ot:ottTaxonName": "Leptochilus (genus in kingdom Archaeplastida)"
 }, 
 "Tl3348978": {
 "^ot:altLabel": "Leptochilus digitatus", 
@@ -566,8 +690,9 @@
 "^skos:prefLabel": "Colysis digitata"
 }, 
 "Tl3348979": {
-"^ot:altLabel": "Microsorum vieillardii", 
 "^ot:originalLabel": "Microsorum vieillardii DQ179635", 
+"^ot:ottId": 98212, 
+"^ot:ottTaxonName": "Microsorum vieillardii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 302441, 
 "@tb:identifier.taxonVariant": 351102, 
@@ -582,11 +707,14 @@
 "^ot:originalLabel": "Leptochilus flexilobus Zhang_et_al_527_Guizhou_China"
 }, 
 "Tl3348982": {
-"^ot:originalLabel": "Leptochilus sp TNS774819_Tokyo_Prefecture_Japan"
+"^ot:originalLabel": "Leptochilus sp TNS774819_Tokyo_Prefecture_Japan", 
+"^ot:ottId": 641007, 
+"^ot:ottTaxonName": "Leptochilus (genus in kingdom Archaeplastida)"
 }, 
 "Tl3348983": {
-"^ot:altLabel": "Microsorum papuanum", 
 "^ot:originalLabel": "Microsorum papuanum DQ642162", 
+"^ot:ottId": 1098288, 
+"^ot:ottTaxonName": "Microsorum papuanum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 342060, 
 "@tb:identifier.taxonVariant": 378283, 
@@ -623,7 +751,9 @@
 "^skos:prefLabel": "Colysis insignis"
 }, 
 "Tl3348988": {
-"^ot:originalLabel": "Leptochilus sp cf_Zhang_et_al_6377_Hoa_Binh_Vietnam"
+"^ot:originalLabel": "Leptochilus sp cf_Zhang_et_al_6377_Hoa_Binh_Vietnam", 
+"^ot:ottId": 641007, 
+"^ot:ottTaxonName": "Leptochilus (genus in kingdom Archaeplastida)"
 }, 
 "Tl3348989": {
 "^ot:altLabel": "Microsorum scolopendria", 
@@ -636,8 +766,9 @@
 }
 }, 
 "Tl3348990": {
-"^ot:altLabel": "Leptochilus cantoniensis", 
 "^ot:originalLabel": "Leptochilus cantoniensis Dong_743_Hainan_China", 
+"^ot:ottId": 114059, 
+"^ot:ottTaxonName": "Leptochilus cantoniensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 414966, 
 "@tb:identifier.taxonVariant": 411883, 
@@ -663,8 +794,9 @@
 "^ot:originalLabel": "Leptochilus flexilobus DJY04059_Sichuan_China"
 }, 
 "Tl3348994": {
-"^ot:altLabel": "Microsorum novae-zealandiae", 
 "^ot:originalLabel": "Microsorum novae-zealandiae DQ401116", 
+"^ot:ottId": 363456, 
+"^ot:ottTaxonName": "Microsorum novae-zealandiae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 326669, 
 "@tb:identifier.taxonVariant": 495878, 
@@ -679,8 +811,9 @@
 "^ot:originalLabel": "Leptochilus flexilobus Lu_SG_EM17_Emei_Sichuan_China"
 }, 
 "Tl3348997": {
-"^ot:altLabel": "Leptochilus cantoniensis", 
 "^ot:originalLabel": "Leptochilus cantoniensis Dong_172_Hainan_China", 
+"^ot:ottId": 114059, 
+"^ot:ottTaxonName": "Leptochilus cantoniensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 414966, 
 "@tb:identifier.taxonVariant": 411883, 
@@ -692,7 +825,9 @@
 "^ot:originalLabel": "Microsorum pteropus Cult_BGUG"
 }, 
 "Tl3348999": {
-"^ot:originalLabel": "Leptochilus sp Wade_3681_Okinawa_Japan"
+"^ot:originalLabel": "Leptochilus sp Wade_3681_Okinawa_Japan", 
+"^ot:ottId": 641007, 
+"^ot:ottTaxonName": "Leptochilus (genus in kingdom Archaeplastida)"
 }, 
 "Tl3349000": {
 "^ot:originalLabel": "Leptochilus dissimilialatum Zhang_et_al_6362_Hoa_Binh_Vietnam"
@@ -715,8 +850,9 @@
 "^ot:originalLabel": "Leptochilus cf axillaris Zhang_et_al_7047_Thanh_Hoa_Vietnam"
 }, 
 "Tl3349004": {
-"^ot:altLabel": "Phymatosorus hainanensis", 
 "^ot:originalLabel": "Phymatosorus hainanensis EU482960", 
+"^ot:ottId": 114051, 
+"^ot:ottTaxonName": "Phymatosorus hainanensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 414968, 
 "@tb:identifier.taxonVariant": 411888, 
@@ -725,10 +861,14 @@
 }
 }, 
 "Tl3349005": {
-"^ot:originalLabel": "Leptochilus sp Zhang_et_al_8596_Lam_Dong_Vietnam"
+"^ot:originalLabel": "Leptochilus sp Zhang_et_al_8596_Lam_Dong_Vietnam", 
+"^ot:ottId": 641007, 
+"^ot:ottTaxonName": "Leptochilus (genus in kingdom Archaeplastida)"
 }, 
 "Tl3349006": {
-"^ot:originalLabel": "Leptochilus sp Zhang_XC_1923_Jiangxi_China"
+"^ot:originalLabel": "Leptochilus sp Zhang_XC_1923_Jiangxi_China", 
+"^ot:ottId": 641007, 
+"^ot:ottTaxonName": "Leptochilus (genus in kingdom Archaeplastida)"
 }, 
 "Tl3349007": {
 "^ot:originalLabel": "Leptochilus cf macrophylla Wade_2776_Solomon_Islands"
@@ -760,8 +900,9 @@
 "^ot:originalLabel": "Leptochilus wrightii KNAPP3850_Taiwan_Island"
 }, 
 "Tl3349014": {
-"^ot:altLabel": "Microsorum grossum", 
 "^ot:originalLabel": "Microsorum grossum EU482956", 
+"^ot:ottId": 719526, 
+"^ot:ottTaxonName": "Microsorum grossum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 228581, 
 "@tb:identifier.taxonVariant": 292049, 
@@ -776,8 +917,9 @@
 "^ot:originalLabel": "Leptochilus cf decurrens KNAPP4128_Taiwan_Island"
 }, 
 "Tl3349017": {
-"^ot:altLabel": "Microsorum whiteheadii", 
 "^ot:originalLabel": "Microsorum whiteheadii EU482970", 
+"^ot:ottId": 567559, 
+"^ot:ottTaxonName": "Microsorum whiteheadii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 454183, 
 "@tb:identifier.taxonVariant": 601394, 
@@ -786,8 +928,9 @@
 }
 }, 
 "Tl3349018": {
-"^ot:altLabel": "Platygyria soulieana", 
 "^ot:originalLabel": "Platygyria soulieana GQ256321", 
+"^ot:ottId": 388795, 
+"^ot:ottTaxonName": "Platygyria soulieana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 605844, 
 "@tb:identifier.taxonVariant": 809207, 
@@ -795,8 +938,9 @@
 }
 }, 
 "Tl3349019": {
-"^ot:altLabel": "Microsorum membranaceum", 
 "^ot:originalLabel": "Microsorum membranaceum JX103704", 
+"^ot:ottId": 164277, 
+"^ot:ottTaxonName": "Microsorum membranaceum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 258148, 
 "@tb:identifier.taxonVariant": 316368, 
@@ -805,8 +949,9 @@
 }
 }, 
 "Tl3349020": {
-"^ot:altLabel": "Microsorum scandens", 
 "^ot:originalLabel": "Microsorum scandens DQ212057", 
+"^ot:ottId": 98205, 
+"^ot:ottTaxonName": "Microsorum scandens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 302442, 
 "@tb:identifier.taxonVariant": 351103, 
@@ -815,8 +960,9 @@
 }
 }, 
 "Tl3349021": {
-"^ot:altLabel": "Kontumia heterophylla", 
 "^ot:originalLabel": "Kontumia heterophylla Wu_et_al_WP_201_Vietnam", 
+"^ot:ottId": 345954, 
+"^ot:ottTaxonName": "Kontumia heterophylla", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 611494, 
 "@tb:identifier.taxonVariant": 817536, 
@@ -830,8 +976,9 @@
 "^ot:originalLabel": "Leptochilus cf longipes Zhang_et_al_8768_Khanh_Hoa_Vietnam"
 }, 
 "Tl3349024": {
-"^ot:altLabel": "Lepisorus scolopendrius", 
 "^ot:originalLabel": "Lepisorus scolopendrius JX103698", 
+"^ot:ottId": 65179, 
+"^ot:ottTaxonName": "Lepisorus scolopendrius", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 608462, 
 "@tb:identifier.taxonVariant": 812829, 
@@ -845,7 +992,9 @@
 "^ot:originalLabel": "Leptochilus longipes Lu_SG_V56_Hainan_China"
 }, 
 "Tl3349027": {
-"^ot:originalLabel": "Leptochilus sp Zhang_et_al_6711_Bac_Kan_Vietnam"
+"^ot:originalLabel": "Leptochilus sp Zhang_et_al_6711_Bac_Kan_Vietnam", 
+"^ot:ottId": 641007, 
+"^ot:ottTaxonName": "Leptochilus (genus in kingdom Archaeplastida)"
 }, 
 "Tl3349028": {
 "^ot:originalLabel": "Leptochilus shintenensis KNAPP3874_Taiwan_Island"
@@ -854,11 +1003,14 @@
 "^ot:originalLabel": "Leptochilus dissimilialatum Zhang_et_al_6601_Lang_Son_Vietnam"
 }, 
 "Tl3349030": {
-"^ot:originalLabel": "Leptochilus sp KNAPP3849_Taiwan_Island"
+"^ot:originalLabel": "Leptochilus sp KNAPP3849_Taiwan_Island", 
+"^ot:ottId": 641007, 
+"^ot:ottTaxonName": "Leptochilus (genus in kingdom Archaeplastida)"
 }, 
 "Tl3349031": {
-"^ot:altLabel": "Goniophlebium formosanum", 
 "^ot:originalLabel": "Goniophlebium formosanum EF463249", 
+"^ot:ottId": 177631, 
+"^ot:ottTaxonName": "Goniophlebium formosanum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 180175, 
 "@tb:identifier.taxonVariant": 253291, 
@@ -915,11 +1067,14 @@
 "^skos:prefLabel": "Colysis digitata"
 }, 
 "Tl3349040": {
-"^ot:originalLabel": "Leptochilus pteropus TNS759285_Okinawa_Japan"
+"^ot:originalLabel": "Leptochilus pteropus TNS759285_Okinawa_Japan", 
+"^ot:ottId": 5148960, 
+"^ot:ottTaxonName": "Leptochilus pteropus"
 }, 
 "Tl3349041": {
-"^ot:altLabel": "Platygyria waltonii", 
 "^ot:originalLabel": "Platygyria waltonii GQ256400", 
+"^ot:ottId": 145190, 
+"^ot:ottTaxonName": "Platygyria waltonii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 228575, 
 "@tb:identifier.taxonVariant": 782672, 
@@ -931,11 +1086,14 @@
 "^ot:originalLabel": "Leptochilus leveillei Lu_SG_EM26_Sichuan_China"
 }, 
 "Tl3349043": {
-"^ot:originalLabel": "Leptochilus oblongus Zhang_et_al_6299_Hoa_Binh_Vietnam"
+"^ot:originalLabel": "Leptochilus oblongus Zhang_et_al_6299_Hoa_Binh_Vietnam", 
+"^ot:ottId": 6007729, 
+"^ot:ottTaxonName": "Leptochilus oblongus"
 }, 
 "Tl3349044": {
-"^ot:altLabel": "Microsorum dilatatum", 
 "^ot:originalLabel": "Microsorum dilatatum EU363248", 
+"^ot:ottId": 164279, 
+"^ot:ottTaxonName": "Microsorum dilatatum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 258149, 
 "@tb:identifier.taxonVariant": 316371, 
@@ -972,11 +1130,14 @@
 "^skos:prefLabel": "Colysis insignis"
 }, 
 "Tl3349049": {
-"^ot:originalLabel": "Leptochilus sp Zhang_et_al_7937_Da_Nang_Vietnam"
+"^ot:originalLabel": "Leptochilus sp Zhang_et_al_7937_Da_Nang_Vietnam", 
+"^ot:ottId": 641007, 
+"^ot:ottTaxonName": "Leptochilus (genus in kingdom Archaeplastida)"
 }, 
 "Tl3349050": {
-"^ot:altLabel": "Phymatosorus cuspidatus", 
 "^ot:originalLabel": "Phymatosorus cuspidatus JX103749", 
+"^ot:ottId": 939518, 
+"^ot:ottTaxonName": "Phymatosorus cuspidatus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 17751, 
 "@tb:identifier.taxonVariant": 113358, 
@@ -1028,13 +1189,17 @@
 "^ot:originalLabel": "Leptochilus saxicola Zhang_et_al_6772_Bac_Kan_Vietnam"
 }, 
 "Tl3349058": {
-"^ot:originalLabel": "Leptochilus sp Zhang_et_al_512_Libo_Guizhou_China"
+"^ot:originalLabel": "Leptochilus sp Zhang_et_al_512_Libo_Guizhou_China", 
+"^ot:ottId": 641007, 
+"^ot:ottTaxonName": "Leptochilus (genus in kingdom Archaeplastida)"
 }, 
 "Tl3349059": {
 "^ot:originalLabel": "Leptochilus henryi Lu_SG_Q8_Zhejiang_China"
 }, 
 "Tl3349060": {
-"^ot:originalLabel": "Leptochilus sp Zhang_et_al_5569_Bama_Guangxi_China"
+"^ot:originalLabel": "Leptochilus sp Zhang_et_al_5569_Bama_Guangxi_China", 
+"^ot:ottId": 641007, 
+"^ot:ottTaxonName": "Leptochilus (genus in kingdom Archaeplastida)"
 }
 }
 }
@@ -1051,7 +1216,18 @@
 "Tr114173": {
 "@label": "Imported tree 1", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:undefined", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn17884157", 
+"^ot:specifiedRoot": "Tn17884157", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 146, 
 "^tb:quality.tree": "Unrated", 
