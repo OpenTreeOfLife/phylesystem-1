@@ -60,22 +60,136 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2018-10-08T14:45:31.533Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "Ascomycetes"
 }, 
-"^ot:curatorName": "Matt Girard", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": "I"
+}
+}, 
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": "II"
+}
+}, 
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}, 
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": "$1"
+}, 
+"old": {
+"$": "^(\\S*\\s+\\S*).*"
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2018-10-08T14:45:31.533Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Matt Girard"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S22518"
 }, 
+"^ot:focalClade": 4064789, 
+"^ot:focalCladeOTTTaxonName": "Krogia", 
 "^ot:otusElementOrder": [
 "Tls65448"
 ], 
 "^ot:studyId": "ot_1802", 
+"^ot:studyPublication": {
+"@href": "https://doi.org/10.3897/mycokeys.40.26025"
+}, 
 "^ot:studyPublicationReference": "Kistenich S., Rikkinen J., Th\u00fcs H., Vairappan C.S., Wolseley P.A., & Timdal E. 2018. Three new species of Krogia (Ramalinaceae, lichenized Ascomycota) from the Paleotropics. MycoKeys, (40): 69-88.", 
 "^ot:studyYear": 2018, 
+"^ot:tag": [], 
 "^ot:taxonLinkPrefixes": {
 "@ubio": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:", 
 "@uniprot": "http://purl.uniprot.org/taxonomy/"
@@ -133,6 +247,8 @@
 }, 
 "Tl3348244": {
 "^ot:originalLabel": "Waynea californica", 
+"^ot:ottId": 352322, 
+"^ot:ottTaxonName": "Waynea californica", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 30861, 
 "@tb:identifier.taxonVariant": 72034, 
@@ -142,6 +258,8 @@
 }, 
 "Tl3348245": {
 "^ot:originalLabel": "Eschatogonia prolifera II", 
+"^ot:ottId": 4067905, 
+"^ot:ottTaxonName": "Eschatogonia prolifera", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 634670, 
 "@tb:identifier.taxonVariant": 849682, 
@@ -149,13 +267,19 @@
 }
 }, 
 "Tl3348246": {
-"^ot:originalLabel": "Krogia antillarum II"
+"^ot:originalLabel": "Krogia antillarum II", 
+"^ot:ottId": 5313613, 
+"^ot:ottTaxonName": "Krogia antillarum"
 }, 
 "Tl3348247": {
-"^ot:originalLabel": "Krogia antillarum III"
+"^ot:originalLabel": "Krogia antillarum III", 
+"^ot:ottId": 5313613, 
+"^ot:ottTaxonName": "Krogia antillarum"
 }, 
 "Tl3348248": {
 "^ot:originalLabel": "Eschatogonia prolifera I", 
+"^ot:ottId": 4067905, 
+"^ot:ottTaxonName": "Eschatogonia prolifera", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 634905, 
 "@tb:identifier.taxonVariant": 849917, 
@@ -163,13 +287,17 @@
 }
 }, 
 "Tl3348249": {
-"^ot:originalLabel": "Bacidia sipmanii"
+"^ot:originalLabel": "Bacidia sipmanii", 
+"^ot:ottId": 769656, 
+"^ot:ottTaxonName": "Bacidia sipmanii"
 }, 
 "Tl3348250": {
 "^ot:originalLabel": "Krogia macrophylla IV"
 }, 
 "Tl3348251": {
 "^ot:originalLabel": "Bacidia rubella", 
+"^ot:ottId": 826627, 
+"^ot:ottTaxonName": "Bacidia rubella", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3056, 
 "@tb:identifier.taxonVariant": 7345, 
@@ -178,13 +306,17 @@
 }
 }, 
 "Tl3348252": {
-"^ot:originalLabel": "Krogia coralloides II"
+"^ot:originalLabel": "Krogia coralloides II", 
+"^ot:ottId": 4064790, 
+"^ot:ottTaxonName": "Krogia coralloides"
 }, 
 "Tl3348253": {
 "^ot:originalLabel": "Krogia bornensis II"
 }, 
 "Tl3348254": {
-"^ot:originalLabel": "Krogia antillarum I"
+"^ot:originalLabel": "Krogia antillarum I", 
+"^ot:ottId": 5313613, 
+"^ot:ottTaxonName": "Krogia antillarum"
 }, 
 "Tl3348255": {
 "^ot:originalLabel": "Bacidina phacodes", 
@@ -205,6 +337,8 @@
 }, 
 "Tl3348257": {
 "^ot:originalLabel": "Physcidia wrightii I", 
+"^ot:ottId": 3768244, 
+"^ot:ottTaxonName": "Physcidia wrightii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 634696, 
 "@tb:identifier.taxonVariant": 849708, 
@@ -221,7 +355,9 @@
 "^ot:originalLabel": "Bacidina brittoniana"
 }, 
 "Tl3348261": {
-"^ot:originalLabel": "Krogia coralloides I"
+"^ot:originalLabel": "Krogia coralloides I", 
+"^ot:ottId": 4064790, 
+"^ot:ottTaxonName": "Krogia coralloides"
 }, 
 "Tl3348262": {
 "^ot:originalLabel": "Bacidia rosella", 
@@ -233,13 +369,19 @@
 }
 }, 
 "Tl3348263": {
-"^ot:originalLabel": "Krogia antillarum IV"
+"^ot:originalLabel": "Krogia antillarum IV", 
+"^ot:ottId": 5313613, 
+"^ot:ottTaxonName": "Krogia antillarum"
 }, 
 "Tl3348264": {
-"^ot:originalLabel": "Physcidia wrightii II"
+"^ot:originalLabel": "Physcidia wrightii II", 
+"^ot:ottId": 3768244, 
+"^ot:ottTaxonName": "Physcidia wrightii"
 }, 
 "Tl3348265": {
-"^ot:originalLabel": "Aciculopsora salmonea"
+"^ot:originalLabel": "Aciculopsora salmonea", 
+"^ot:ottId": 4065081, 
+"^ot:ottTaxonName": "Aciculopsora salmonea"
 }, 
 "Tl3348266": {
 "^ot:originalLabel": "Krogia macrophylla III"
@@ -259,12 +401,23 @@
 "Tr114151": {
 "@label": "PAUP 1", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:undefined", 
+"^ot:curatedType": "Bayesian inference ", 
+"^ot:inGroupClade": "Tn17881925", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn17881897", 
+"^ot:specifiedRoot": "Tn17881897", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "^tb:ntax.tree": 29, 
 "edgeBySourceId": {
 "Tn17881882": {
 "edge84077": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17881882", 
 "@target": "Tn17881889"
 }, 
@@ -281,7 +434,7 @@
 "@target": "Tn17881880"
 }, 
 "edge84073": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17881885", 
 "@target": "Tn17881931"
 }
@@ -293,7 +446,7 @@
 "@target": "Tn17881905"
 }, 
 "edge84083": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17881887", 
 "@target": "Tn17881926"
 }
@@ -348,7 +501,7 @@
 }, 
 "Tn17881895": {
 "edge84155": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17881895", 
 "@target": "Tn17881883"
 }, 
@@ -504,7 +657,7 @@
 }, 
 "Tn17881921": {
 "edge84109": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17881921", 
 "@target": "Tn17881898"
 }, 
@@ -564,7 +717,7 @@
 }, 
 "Tn17881932": {
 "edge84129": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17881932", 
 "@target": "Tn17881923"
 }, 
@@ -588,7 +741,7 @@
 }, 
 "Tn17881935": {
 "edge84143": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17881935", 
 "@target": "Tn17881900"
 }, 
