@@ -62,16 +62,106 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2018-10-08T14:58:00.464Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:curatorName": "Matt Girard", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}, 
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": "$1"
+}, 
+"old": {
+"$": "^(\\S*\\s+\\S*).*"
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2018-10-08T14:58:00.464Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Matt Girard"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S23257"
 }, 
+"^ot:focalClade": 818151, 
+"^ot:focalCladeOTTTaxonName": "Seimatosporium", 
 "^ot:otusElementOrder": [
 "Tls65468"
 ], 
@@ -81,6 +171,7 @@
 }, 
 "^ot:studyPublicationReference": "Crous P.W., Liu F., Cai L., Barber P., Thangavel R., Summerell B., Wingfield M.J., Edwards J., Carnegie A., & Groenewald J.Z. 2018. Allelochaeta (Sporocadaceae): pigmentation lost and gained. Fungal Systematics and Evolution, 2: 273-309.", 
 "^ot:studyYear": 2018, 
+"^ot:tag": [], 
 "^ot:taxonLinkPrefixes": {
 "@ubio": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:", 
 "@uniprot": "http://purl.uniprot.org/taxonomy/"
@@ -129,7 +220,9 @@
 "^ot:originalLabel": "Allelochaeta walkeri CPC_25405"
 }, 
 "Tl3348838": {
-"^ot:originalLabel": "Seimatosporium vitis MFLUCC_14-0051"
+"^ot:originalLabel": "Seimatosporium vitis MFLUCC_14-0051", 
+"^ot:ottId": 5711859, 
+"^ot:ottTaxonName": "Seimatosporium vitis"
 }, 
 "Tl3348839": {
 "^ot:originalLabel": "Allelochaeta falcata CPC_12992"
@@ -141,8 +234,9 @@
 "^ot:originalLabel": "Allelochaeta acuta CPC_12703"
 }, 
 "Tl3348842": {
-"^ot:altLabel": "Sarcostroma restionis", 
 "^ot:originalLabel": "Sarcostroma restionis CPC_29466", 
+"^ot:ottId": 374648, 
+"^ot:ottTaxonName": "Sarcostroma restionis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 34333, 
 "@tb:identifier.taxonVariant": 113705, 
@@ -160,7 +254,9 @@
 "^ot:originalLabel": "Allelochaeta neoorbicularis CPC_25494"
 }, 
 "Tl3348846": {
-"^ot:originalLabel": "Seimatosporium cornii MFLUCC_14-0467"
+"^ot:originalLabel": "Seimatosporium cornii MFLUCC_14-0467", 
+"^ot:ottId": 5711855, 
+"^ot:ottTaxonName": "Seimatosporium cornii"
 }, 
 "Tl3348847": {
 "^ot:originalLabel": "Allelochaeta samuelii CPC_28912"
@@ -187,7 +283,9 @@
 "^ot:originalLabel": "Allelochaeta falcata CBS_131117"
 }, 
 "Tl3348855": {
-"^ot:originalLabel": "Seimatosporium physocarpi CBS_139968"
+"^ot:originalLabel": "Seimatosporium physocarpi CBS_139968", 
+"^ot:ottId": 5711856, 
+"^ot:ottTaxonName": "Seimatosporium physocarpi"
 }, 
 "Tl3348856": {
 "^ot:originalLabel": "Allelochaeta euabalongensis CBS_112504"
@@ -250,13 +348,17 @@
 "^ot:originalLabel": "Allelochaeta walkeri CPC_19443"
 }, 
 "Tl3348876": {
-"^ot:originalLabel": "Seimatosporium rosae CBS_139823"
+"^ot:originalLabel": "Seimatosporium rosae CBS_139823", 
+"^ot:ottId": 3691890, 
+"^ot:ottTaxonName": "Seimatosporium rosae"
 }, 
 "Tl3348877": {
 "^ot:originalLabel": "Allelochaeta falcata CPC_13580"
 }, 
 "Tl3348878": {
-"^ot:originalLabel": "Seimatosporium botan H_4619"
+"^ot:originalLabel": "Seimatosporium botan H_4619", 
+"^ot:ottId": 775104, 
+"^ot:ottTaxonName": "Seimatosporium botan"
 }, 
 "Tl3348879": {
 "^ot:originalLabel": "Allelochaeta eucalypti CBS_111386"
@@ -277,7 +379,9 @@
 "^ot:originalLabel": "Allelochaeta minor CPC_29353"
 }, 
 "Tl3348885": {
-"^ot:originalLabel": "Seiridium marginatum CBS_140403"
+"^ot:originalLabel": "Seiridium marginatum CBS_140403", 
+"^ot:ottId": 3692443, 
+"^ot:ottTaxonName": "Seiridium marginatum"
 }, 
 "Tl3348886": {
 "^ot:originalLabel": "Allelochaeta polycarpae CPC_28916"
@@ -310,7 +414,9 @@
 "^ot:originalLabel": "Allelochaeta kriegeriana CPC_28303"
 }, 
 "Tl3348896": {
-"^ot:originalLabel": "Seimatosporium pistaciae CBS_138865"
+"^ot:originalLabel": "Seimatosporium pistaciae CBS_138865", 
+"^ot:ottId": 5711857, 
+"^ot:ottTaxonName": "Seimatosporium pistaciae"
 }, 
 "Tl3348897": {
 "^ot:originalLabel": "Allelochaeta pseudosamuelii CPC_20205"
@@ -349,8 +455,9 @@
 "^ot:originalLabel": "Allelochaeta walkeri CPC_13024"
 }, 
 "Tl3348909": {
-"^ot:altLabel": "Bartalinia robillardoides", 
 "^ot:originalLabel": "Bartalinia robillardoides CBS_122705", 
+"^ot:ottId": 442850, 
+"^ot:ottTaxonName": "Bartalinia robillardoides", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 34319, 
 "@tb:identifier.taxonVariant": 79214, 
@@ -394,7 +501,19 @@
 "Tr114166": {
 "@label": "Fig. 1", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn17883149", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 82, 
 "^tb:quality.tree": "Unrated", 
@@ -402,672 +521,672 @@
 "edgeBySourceId": {
 "Tn17883026": {
 "edge96406": {
-"@length": 8.0, 
+"@length": 8, 
 "@source": "Tn17883026", 
 "@target": "Tn17883061"
 }, 
 "edge96408": {
-"@length": 12.0, 
+"@length": 12, 
 "@source": "Tn17883026", 
 "@target": "Tn17883089"
 }
 }, 
 "Tn17883027": {
 "edge96282": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17883027", 
 "@target": "Tn17883029"
 }, 
 "edge96284": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "Tn17883027", 
 "@target": "Tn17883111"
 }
 }, 
 "Tn17883028": {
 "edge96144": {
-"@length": 128.0, 
+"@length": 128, 
 "@source": "Tn17883028", 
 "@target": "Tn17883108"
 }, 
 "edge96170": {
-"@length": 156.0, 
+"@length": 156, 
 "@source": "Tn17883028", 
 "@target": "Tn17883169"
 }
 }, 
 "Tn17883030": {
 "edge96428": {
-"@length": 19.0, 
+"@length": 19, 
 "@source": "Tn17883030", 
 "@target": "Tn17883058"
 }, 
 "edge96442": {
-"@length": 18.0, 
+"@length": 18, 
 "@source": "Tn17883030", 
 "@target": "Tn17883177"
 }
 }, 
 "Tn17883035": {
 "edge96310": {
-"@length": 34.0, 
+"@length": 34, 
 "@source": "Tn17883035", 
 "@target": "Tn17883146"
 }, 
 "edge96316": {
-"@length": 14.0, 
+"@length": 14, 
 "@source": "Tn17883035", 
 "@target": "Tn17883043"
 }
 }, 
 "Tn17883037": {
 "edge96374": {
-"@length": 13.0, 
+"@length": 13, 
 "@source": "Tn17883037", 
 "@target": "Tn17883097"
 }, 
 "edge96376": {
-"@length": 30.0, 
+"@length": 30, 
 "@source": "Tn17883037", 
 "@target": "Tn17883115"
 }
 }, 
 "Tn17883041": {
 "edge96296": {
-"@length": 29.0, 
+"@length": 29, 
 "@source": "Tn17883041", 
 "@target": "Tn17883152"
 }, 
 "edge96302": {
-"@length": 12.0, 
+"@length": 12, 
 "@source": "Tn17883041", 
 "@target": "Tn17883085"
 }
 }, 
 "Tn17883042": {
 "edge96438": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "Tn17883042", 
 "@target": "Tn17883131"
 }, 
 "edge96440": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17883042", 
 "@target": "Tn17883132"
 }
 }, 
 "Tn17883043": {
 "edge96318": {
-"@length": 22.0, 
+"@length": 22, 
 "@source": "Tn17883043", 
 "@target": "Tn17883166"
 }, 
 "edge96324": {
-"@length": 6.0, 
+"@length": 6, 
 "@source": "Tn17883043", 
 "@target": "Tn17883065"
 }
 }, 
 "Tn17883044": {
 "edge96148": {
-"@length": 8.0, 
+"@length": 8, 
 "@source": "Tn17883044", 
 "@target": "Tn17883137"
 }, 
 "edge96150": {
-"@length": 11.0, 
+"@length": 11, 
 "@source": "Tn17883044", 
 "@target": "Tn17883122"
 }
 }, 
 "Tn17883045": {
 "edge96340": {
-"@length": 17.0, 
+"@length": 17, 
 "@source": "Tn17883045", 
 "@target": "Tn17883046"
 }, 
 "edge96350": {
-"@length": 13.0, 
+"@length": 13, 
 "@source": "Tn17883045", 
 "@target": "Tn17883094"
 }
 }, 
 "Tn17883046": {
 "edge96342": {
-"@length": 71.0, 
+"@length": 71, 
 "@source": "Tn17883046", 
 "@target": "Tn17883151"
 }, 
 "edge96344": {
-"@length": 51.0, 
+"@length": 51, 
 "@source": "Tn17883046", 
 "@target": "Tn17883140"
 }
 }, 
 "Tn17883050": {
 "edge96166": {
-"@length": 6.0, 
+"@length": 6, 
 "@source": "Tn17883050", 
 "@target": "Tn17883075"
 }, 
 "edge96168": {
-"@length": 5.0, 
+"@length": 5, 
 "@source": "Tn17883050", 
 "@target": "Tn17883080"
 }
 }, 
 "Tn17883051": {
 "edge96276": {
-"@length": 75.0, 
+"@length": 75, 
 "@source": "Tn17883051", 
 "@target": "Tn17883179"
 }, 
 "edge96286": {
-"@length": 38.0, 
+"@length": 38, 
 "@source": "Tn17883051", 
 "@target": "Tn17883175"
 }
 }, 
 "Tn17883053": {
 "edge96230": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "Tn17883053", 
 "@target": "Tn17883052"
 }, 
 "edge96232": {
-"@length": 2.0, 
+"@length": 2, 
 "@source": "Tn17883053", 
 "@target": "Tn17883047"
 }
 }, 
 "Tn17883054": {
 "edge96266": {
-"@length": 10.0, 
+"@length": 10, 
 "@source": "Tn17883054", 
 "@target": "Tn17883176"
 }, 
 "edge96268": {
-"@length": 26.0, 
+"@length": 26, 
 "@source": "Tn17883054", 
 "@target": "Tn17883185"
 }
 }, 
 "Tn17883055": {
 "edge96398": {
-"@length": 5.0, 
+"@length": 5, 
 "@source": "Tn17883055", 
 "@target": "Tn17883091"
 }, 
 "edge96400": {
-"@length": 4.0, 
+"@length": 4, 
 "@source": "Tn17883055", 
 "@target": "Tn17883118"
 }
 }, 
 "Tn17883056": {
 "edge96388": {
-"@length": 10.0, 
+"@length": 10, 
 "@source": "Tn17883056", 
 "@target": "Tn17883174"
 }, 
 "edge96390": {
-"@length": 10.0, 
+"@length": 10, 
 "@source": "Tn17883056", 
 "@target": "Tn17883063"
 }
 }, 
 "Tn17883058": {
 "edge96430": {
-"@length": 14.0, 
+"@length": 14, 
 "@source": "Tn17883058", 
 "@target": "Tn17883083"
 }, 
 "edge96432": {
-"@length": 11.0, 
+"@length": 11, 
 "@source": "Tn17883058", 
 "@target": "Tn17883183"
 }
 }, 
 "Tn17883063": {
 "edge96392": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17883063", 
 "@target": "Tn17883170"
 }, 
 "edge96394": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17883063", 
 "@target": "Tn17883090"
 }
 }, 
 "Tn17883065": {
 "edge96326": {
-"@length": 20.0, 
+"@length": 20, 
 "@source": "Tn17883065", 
 "@target": "Tn17883098"
 }, 
 "edge96328": {
-"@length": 35.0, 
+"@length": 35, 
 "@source": "Tn17883065", 
 "@target": "Tn17883086"
 }
 }, 
 "Tn17883066": {
 "edge96218": {
-"@length": 44.0, 
+"@length": 44, 
 "@source": "Tn17883066", 
 "@target": "Tn17883102"
 }, 
 "edge96220": {
-"@length": 17.0, 
+"@length": 17, 
 "@source": "Tn17883066", 
 "@target": "Tn17883123"
 }
 }, 
 "Tn17883068": {
 "edge96180": {
-"@length": 34.0, 
+"@length": 34, 
 "@source": "Tn17883068", 
 "@target": "Tn17883049"
 }, 
 "edge96182": {
-"@length": 12.0, 
+"@length": 12, 
 "@source": "Tn17883068", 
 "@target": "Tn17883100"
 }
 }, 
 "Tn17883069": {
 "edge96256": {
-"@length": 4.0, 
+"@length": 4, 
 "@source": "Tn17883069", 
 "@target": "Tn17883148"
 }, 
 "edge96258": {
-"@length": 2.0, 
+"@length": 2, 
 "@source": "Tn17883069", 
 "@target": "Tn17883082"
 }
 }, 
 "Tn17883070": {
 "edge96154": {
-"@length": 52.0, 
+"@length": 52, 
 "@source": "Tn17883070", 
 "@target": "Tn17883059"
 }, 
 "edge96156": {
-"@length": 17.0, 
+"@length": 17, 
 "@source": "Tn17883070", 
 "@target": "Tn17883138"
 }
 }, 
 "Tn17883071": {
 "edge96358": {
-"@length": 32.0, 
+"@length": 32, 
 "@source": "Tn17883071", 
 "@target": "Tn17883116"
 }, 
 "edge96360": {
-"@length": 42.0, 
+"@length": 42, 
 "@source": "Tn17883071", 
 "@target": "Tn17883127"
 }
 }, 
 "Tn17883073": {
 "edge96380": {
-"@length": 19.0, 
+"@length": 19, 
 "@source": "Tn17883073", 
 "@target": "Tn17883142"
 }, 
 "edge96382": {
-"@length": 12.0, 
+"@length": 12, 
 "@source": "Tn17883073", 
 "@target": "Tn17883033"
 }
 }, 
 "Tn17883074": {
 "edge96336": {
-"@length": 87.0, 
+"@length": 87, 
 "@source": "Tn17883074", 
 "@target": "Tn17883158"
 }, 
 "edge96338": {
-"@length": 37.0, 
+"@length": 37, 
 "@source": "Tn17883074", 
 "@target": "Tn17883045"
 }
 }, 
 "Tn17883077": {
 "edge96240": {
-"@length": 71.0, 
+"@length": 71, 
 "@source": "Tn17883077", 
 "@target": "Tn17883062"
 }, 
 "edge96242": {
-"@length": 60.0, 
+"@length": 60, 
 "@source": "Tn17883077", 
 "@target": "Tn17883110"
 }
 }, 
 "Tn17883082": {
 "edge96260": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17883082", 
 "@target": "Tn17883178"
 }, 
 "edge96262": {
-"@length": 3.0, 
+"@length": 3, 
 "@source": "Tn17883082", 
 "@target": "Tn17883153"
 }
 }, 
 "Tn17883085": {
 "edge96304": {
-"@length": 10.0, 
+"@length": 10, 
 "@source": "Tn17883085", 
 "@target": "Tn17883104"
 }, 
 "edge96334": {
-"@length": 19.0, 
+"@length": 19, 
 "@source": "Tn17883085", 
 "@target": "Tn17883074"
 }
 }, 
 "Tn17883086": {
 "edge96330": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "Tn17883086", 
 "@target": "Tn17883099"
 }, 
 "edge96332": {
-"@length": 2.0, 
+"@length": 2, 
 "@source": "Tn17883086", 
 "@target": "Tn17883117"
 }
 }, 
 "Tn17883088": {
 "edge96254": {
-"@length": 28.0, 
+"@length": 28, 
 "@source": "Tn17883088", 
 "@target": "Tn17883069"
 }, 
 "edge96264": {
-"@length": 38.0, 
+"@length": 38, 
 "@source": "Tn17883088", 
 "@target": "Tn17883054"
 }
 }, 
 "Tn17883093": {
 "edge96354": {
-"@length": 33.0, 
+"@length": 33, 
 "@source": "Tn17883093", 
 "@target": "Tn17883087"
 }, 
 "edge96356": {
-"@length": 9.0, 
+"@length": 9, 
 "@source": "Tn17883093", 
 "@target": "Tn17883071"
 }
 }, 
 "Tn17883094": {
 "edge96352": {
-"@length": 21.0, 
+"@length": 21, 
 "@source": "Tn17883094", 
 "@target": "Tn17883093"
 }, 
 "edge96362": {
-"@length": 11.0, 
+"@length": 11, 
 "@source": "Tn17883094", 
 "@target": "Tn17883168"
 }
 }, 
 "Tn17883100": {
 "edge96184": {
-"@length": 16.0, 
+"@length": 16, 
 "@source": "Tn17883100", 
 "@target": "Tn17883141"
 }, 
 "edge96186": {
-"@length": 21.0, 
+"@length": 21, 
 "@source": "Tn17883100", 
 "@target": "Tn17883105"
 }
 }, 
 "Tn17883101": {
 "edge96194": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "Tn17883101", 
 "@target": "Tn17883139"
 }, 
 "edge96204": {
-"@length": 4.0, 
+"@length": 4, 
 "@source": "Tn17883101", 
 "@target": "Tn17883167"
 }
 }, 
 "Tn17883103": {
 "edge96366": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "Tn17883103", 
 "@target": "Tn17883040"
 }, 
 "edge96368": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "Tn17883103", 
 "@target": "Tn17883078"
 }
 }, 
 "Tn17883104": {
 "edge96306": {
-"@length": 88.0, 
+"@length": 88, 
 "@source": "Tn17883104", 
 "@target": "Tn17883180"
 }, 
 "edge96308": {
-"@length": 42.0, 
+"@length": 42, 
 "@source": "Tn17883104", 
 "@target": "Tn17883035"
 }
 }, 
 "Tn17883105": {
 "edge96188": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17883105", 
 "@target": "Tn17883067"
 }, 
 "edge96190": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "Tn17883105", 
 "@target": "Tn17883164"
 }
 }, 
 "Tn17883107": {
 "edge96238": {
-"@length": 45.0, 
+"@length": 45, 
 "@source": "Tn17883107", 
 "@target": "Tn17883077"
 }, 
 "edge96248": {
-"@length": 72.0, 
+"@length": 72, 
 "@source": "Tn17883107", 
 "@target": "Tn17883150"
 }
 }, 
 "Tn17883108": {
 "edge96146": {
-"@length": 151.0, 
+"@length": 151, 
 "@source": "Tn17883108", 
 "@target": "Tn17883044"
 }, 
 "edge96152": {
-"@length": 142.0, 
+"@length": 142, 
 "@source": "Tn17883108", 
 "@target": "Tn17883070"
 }
 }, 
 "Tn17883110": {
 "edge96244": {
-"@length": 52.0, 
+"@length": 52, 
 "@source": "Tn17883110", 
 "@target": "Tn17883135"
 }, 
 "edge96246": {
-"@length": 8.0, 
+"@length": 8, 
 "@source": "Tn17883110", 
 "@target": "Tn17883172"
 }
 }, 
 "Tn17883113": {
 "edge96414": {
-"@length": 45.0, 
+"@length": 45, 
 "@source": "Tn17883113", 
 "@target": "Tn17883032"
 }, 
 "edge96416": {
-"@length": 39.0, 
+"@length": 39, 
 "@source": "Tn17883113", 
 "@target": "Tn17883145"
 }
 }, 
 "Tn17883114": {
 "edge96140": {
-"@length": 264.0, 
+"@length": 264, 
 "@source": "Tn17883114", 
 "@target": "Tn17883130"
 }, 
 "edge96142": {
-"@length": 226.0, 
+"@length": 226, 
 "@source": "Tn17883114", 
 "@target": "Tn17883028"
 }
 }, 
 "Tn17883115": {
 "edge96378": {
-"@length": 6.0, 
+"@length": 6, 
 "@source": "Tn17883115", 
 "@target": "Tn17883073"
 }, 
 "edge96384": {
-"@length": 41.0, 
+"@length": 41, 
 "@source": "Tn17883115", 
 "@target": "Tn17883184"
 }
 }, 
 "Tn17883118": {
 "edge96402": {
-"@length": 21.0, 
+"@length": 21, 
 "@source": "Tn17883118", 
 "@target": "Tn17883120"
 }, 
 "edge96404": {
-"@length": 6.0, 
+"@length": 6, 
 "@source": "Tn17883118", 
 "@target": "Tn17883026"
 }
 }, 
 "Tn17883123": {
 "edge96222": {
-"@length": 26.0, 
+"@length": 26, 
 "@source": "Tn17883123", 
 "@target": "Tn17883181"
 }, 
 "edge96228": {
-"@length": 28.0, 
+"@length": 28, 
 "@source": "Tn17883123", 
 "@target": "Tn17883053"
 }
 }, 
 "Tn17883126": {
 "edge96412": {
-"@length": 19.0, 
+"@length": 19, 
 "@source": "Tn17883126", 
 "@target": "Tn17883113"
 }, 
 "edge96422": {
-"@length": 7.0, 
+"@length": 7, 
 "@source": "Tn17883126", 
 "@target": "Tn17883182"
 }
 }, 
 "Tn17883133": {
 "edge96210": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17883133", 
 "@target": "Tn17883036"
 }, 
 "edge96212": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "Tn17883133", 
 "@target": "Tn17883092"
 }
 }, 
 "Tn17883136": {
 "edge96200": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17883136", 
 "@target": "Tn17883161"
 }, 
 "edge96202": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17883136", 
 "@target": "Tn17883095"
 }
 }, 
 "Tn17883138": {
 "edge96158": {
-"@length": 150.0, 
+"@length": 150, 
 "@source": "Tn17883138", 
 "@target": "Tn17883156"
 }, 
 "edge96164": {
-"@length": 135.0, 
+"@length": 135, 
 "@source": "Tn17883138", 
 "@target": "Tn17883050"
 }
 }, 
 "Tn17883139": {
 "edge96196": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17883139", 
 "@target": "Tn17883119"
 }, 
 "edge96198": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "Tn17883139", 
 "@target": "Tn17883136"
 }
 }, 
 "Tn17883140": {
 "edge96346": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17883140", 
 "@target": "Tn17883079"
 }, 
 "edge96348": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17883140", 
 "@target": "Tn17883134"
 }
 }, 
 "Tn17883145": {
 "edge96418": {
-"@length": 2.0, 
+"@length": 2, 
 "@source": "Tn17883145", 
 "@target": "Tn17883084"
 }, 
 "edge96420": {
-"@length": 5.0, 
+"@length": 5, 
 "@source": "Tn17883145", 
 "@target": "Tn17883060"
 }
 }, 
 "Tn17883146": {
 "edge96312": {
-"@length": 14.0, 
+"@length": 14, 
 "@source": "Tn17883146", 
 "@target": "Tn17883143"
 }, 
 "edge96314": {
-"@length": 18.0, 
+"@length": 18, 
 "@source": "Tn17883146", 
 "@target": "Tn17883121"
 }
@@ -1086,274 +1205,274 @@
 }, 
 "Tn17883150": {
 "edge96250": {
-"@length": 64.0, 
+"@length": 64, 
 "@source": "Tn17883150", 
 "@target": "Tn17883106"
 }, 
 "edge96252": {
-"@length": 27.0, 
+"@length": 27, 
 "@source": "Tn17883150", 
 "@target": "Tn17883088"
 }
 }, 
 "Tn17883152": {
 "edge96298": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17883152", 
 "@target": "Tn17883064"
 }, 
 "edge96300": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17883152", 
 "@target": "Tn17883163"
 }
 }, 
 "Tn17883154": {
 "edge96176": {
-"@length": 148.0, 
+"@length": 148, 
 "@source": "Tn17883154", 
 "@target": "Tn17883159"
 }, 
 "edge96214": {
-"@length": 79.0, 
+"@length": 79, 
 "@source": "Tn17883154", 
 "@target": "Tn17883171"
 }
 }, 
 "Tn17883156": {
 "edge96160": {
-"@length": 6.0, 
+"@length": 6, 
 "@source": "Tn17883156", 
 "@target": "Tn17883147"
 }, 
 "edge96162": {
-"@length": 3.0, 
+"@length": 3, 
 "@source": "Tn17883156", 
 "@target": "Tn17883112"
 }
 }, 
 "Tn17883159": {
 "edge96178": {
-"@length": 8.0, 
+"@length": 8, 
 "@source": "Tn17883159", 
 "@target": "Tn17883068"
 }, 
 "edge96192": {
-"@length": 12.0, 
+"@length": 12, 
 "@source": "Tn17883159", 
 "@target": "Tn17883101"
 }
 }, 
 "Tn17883160": {
 "edge96134": {
-"@length": 391.0, 
+"@length": 391, 
 "@source": "Tn17883160", 
 "@target": "Tn17883129"
 }, 
 "edge96136": {
-"@length": 542.0, 
+"@length": 542, 
 "@source": "Tn17883160", 
 "@target": "Tn17883155"
 }
 }, 
 "Tn17883162": {
 "edge96236": {
-"@length": 64.0, 
+"@length": 64, 
 "@source": "Tn17883162", 
 "@target": "Tn17883107"
 }, 
 "edge96274": {
-"@length": 33.0, 
+"@length": 33, 
 "@source": "Tn17883162", 
 "@target": "Tn17883051"
 }
 }, 
 "Tn17883165": {
 "edge96372": {
-"@length": 14.0, 
+"@length": 14, 
 "@source": "Tn17883165", 
 "@target": "Tn17883037"
 }, 
 "edge96410": {
-"@length": 6.0, 
+"@length": 6, 
 "@source": "Tn17883165", 
 "@target": "Tn17883126"
 }
 }, 
 "Tn17883166": {
 "edge96320": {
-"@length": 7.0, 
+"@length": 7, 
 "@source": "Tn17883166", 
 "@target": "Tn17883128"
 }, 
 "edge96322": {
-"@length": 9.0, 
+"@length": 9, 
 "@source": "Tn17883166", 
 "@target": "Tn17883076"
 }
 }, 
 "Tn17883167": {
 "edge96206": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17883167", 
 "@target": "Tn17883096"
 }, 
 "edge96208": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17883167", 
 "@target": "Tn17883133"
 }
 }, 
 "Tn17883168": {
 "edge96364": {
-"@length": 48.0, 
+"@length": 48, 
 "@source": "Tn17883168", 
 "@target": "Tn17883103"
 }, 
 "edge96370": {
-"@length": 18.0, 
+"@length": 18, 
 "@source": "Tn17883168", 
 "@target": "Tn17883165"
 }
 }, 
 "Tn17883169": {
 "edge96172": {
-"@length": 268.0, 
+"@length": 268, 
 "@source": "Tn17883169", 
 "@target": "Tn17883039"
 }, 
 "edge96174": {
-"@length": 107.0, 
+"@length": 107, 
 "@source": "Tn17883169", 
 "@target": "Tn17883154"
 }
 }, 
 "Tn17883171": {
 "edge96216": {
-"@length": 149.0, 
+"@length": 149, 
 "@source": "Tn17883171", 
 "@target": "Tn17883066"
 }, 
 "edge96234": {
-"@length": 82.0, 
+"@length": 82, 
 "@source": "Tn17883171", 
 "@target": "Tn17883162"
 }
 }, 
 "Tn17883173": {
 "edge96290": {
-"@length": 86.0, 
+"@length": 86, 
 "@source": "Tn17883173", 
 "@target": "Tn17883157"
 }, 
 "edge96292": {
-"@length": 53.0, 
+"@length": 53, 
 "@source": "Tn17883173", 
 "@target": "Tn17883034"
 }
 }, 
 "Tn17883175": {
 "edge96288": {
-"@length": 64.0, 
+"@length": 64, 
 "@source": "Tn17883175", 
 "@target": "Tn17883173"
 }, 
 "edge96294": {
-"@length": 33.0, 
+"@length": 33, 
 "@source": "Tn17883175", 
 "@target": "Tn17883041"
 }
 }, 
 "Tn17883177": {
 "edge96444": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17883177", 
 "@target": "Tn17883031"
 }, 
 "edge96446": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17883177", 
 "@target": "Tn17883048"
 }, 
 "edge96448": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17883177", 
 "@target": "Tn17883124"
 }, 
 "edge96450": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17883177", 
 "@target": "Tn17883144"
 }
 }, 
 "Tn17883179": {
 "edge96278": {
-"@length": 78.0, 
+"@length": 78, 
 "@source": "Tn17883179", 
 "@target": "Tn17883125"
 }, 
 "edge96280": {
-"@length": 138.0, 
+"@length": 138, 
 "@source": "Tn17883179", 
 "@target": "Tn17883027"
 }
 }, 
 "Tn17883181": {
 "edge96224": {
-"@length": 3.0, 
+"@length": 3, 
 "@source": "Tn17883181", 
 "@target": "Tn17883081"
 }, 
 "edge96226": {
-"@length": 7.0, 
+"@length": 7, 
 "@source": "Tn17883181", 
 "@target": "Tn17883025"
 }
 }, 
 "Tn17883182": {
 "edge96424": {
-"@length": 31.0, 
+"@length": 31, 
 "@source": "Tn17883182", 
 "@target": "Tn17883038"
 }, 
 "edge96426": {
-"@length": 21.0, 
+"@length": 21, 
 "@source": "Tn17883182", 
 "@target": "Tn17883030"
 }
 }, 
 "Tn17883183": {
 "edge96434": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17883183", 
 "@target": "Tn17883057"
 }, 
 "edge96436": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17883183", 
 "@target": "Tn17883042"
 }
 }, 
 "Tn17883184": {
 "edge96386": {
-"@length": 6.0, 
+"@length": 6, 
 "@source": "Tn17883184", 
 "@target": "Tn17883056"
 }, 
 "edge96396": {
-"@length": 28.0, 
+"@length": 28, 
 "@source": "Tn17883184", 
 "@target": "Tn17883055"
 }
 }, 
 "Tn17883185": {
 "edge96270": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17883185", 
 "@target": "Tn17883072"
 }, 
 "edge96272": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17883185", 
 "@target": "Tn17883109"
 }
@@ -1692,7 +1811,18 @@
 "Tr114167": {
 "@label": "Bayesian combined", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:undefined", 
+"^ot:curatedType": "Bayesian inference ", 
+"^ot:inGroupClade": "Tn17883315", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn17883339", 
+"^ot:specifiedRoot": "Tn17883339", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 82, 
 "^tb:quality.tree": "Unrated", 
@@ -2934,7 +3064,19 @@
 "Tr114168": {
 "@label": "ITS", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn17883499", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 82, 
 "^tb:quality.tree": "Unrated", 
@@ -2966,12 +3108,12 @@
 }, 
 "Tn17883346": {
 "edge97310": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17883346", 
 "@target": "Tn17883490"
 }, 
 "edge97312": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17883346", 
 "@target": "Tn17883410"
 }
@@ -3146,12 +3288,12 @@
 }, 
 "Tn17883369": {
 "edge97222": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17883369", 
 "@target": "Tn17883380"
 }, 
 "edge97224": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17883369", 
 "@target": "Tn17883411"
 }
@@ -3182,24 +3324,24 @@
 }, 
 "Tn17883376": {
 "edge97390": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17883376", 
 "@target": "Tn17883420"
 }, 
 "edge97392": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17883376", 
 "@target": "Tn17883433"
 }
 }, 
 "Tn17883377": {
 "edge97416": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17883377", 
 "@target": "Tn17883457"
 }, 
 "edge97418": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17883377", 
 "@target": "Tn17883345"
 }
@@ -3278,12 +3420,12 @@
 }, 
 "Tn17883394": {
 "edge97272": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17883394", 
 "@target": "Tn17883462"
 }, 
 "edge97274": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17883394", 
 "@target": "Tn17883498"
 }
@@ -3302,12 +3444,12 @@
 }, 
 "Tn17883397": {
 "edge97402": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17883397", 
 "@target": "Tn17883437"
 }, 
 "edge97408": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17883397", 
 "@target": "Tn17883412"
 }
@@ -3362,12 +3504,12 @@
 }, 
 "Tn17883403": {
 "edge97306": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17883403", 
 "@target": "Tn17883488"
 }, 
 "edge97308": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17883403", 
 "@target": "Tn17883346"
 }
@@ -3398,12 +3540,12 @@
 }, 
 "Tn17883410": {
 "edge97314": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17883410", 
 "@target": "Tn17883440"
 }, 
 "edge97316": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17883410", 
 "@target": "Tn17883474"
 }
@@ -3458,12 +3600,12 @@
 }, 
 "Tn17883422": {
 "edge97412": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17883422", 
 "@target": "Tn17883370"
 }, 
 "edge97414": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17883422", 
 "@target": "Tn17883377"
 }
@@ -3578,24 +3720,24 @@
 }, 
 "Tn17883437": {
 "edge97404": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17883437", 
 "@target": "Tn17883447"
 }, 
 "edge97406": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17883437", 
 "@target": "Tn17883378"
 }
 }, 
 "Tn17883442": {
 "edge97424": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17883442", 
 "@target": "Tn17883486"
 }, 
 "edge97426": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17883442", 
 "@target": "Tn17883485"
 }
@@ -3758,12 +3900,12 @@
 }, 
 "Tn17883470": {
 "edge97200": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17883470", 
 "@target": "Tn17883441"
 }, 
 "edge97202": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17883470", 
 "@target": "Tn17883445"
 }
@@ -3907,7 +4049,7 @@
 "@target": "Tn17883452"
 }, 
 "edge97434": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17883499", 
 "@target": "Tn17883501"
 }
@@ -4248,7 +4390,19 @@
 "Tr114169": {
 "@label": "LSU", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn17883588", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 82, 
 "^tb:quality.tree": "Unrated", 
@@ -4280,12 +4434,12 @@
 }, 
 "Tn17883509": {
 "edge97692": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17883509", 
 "@target": "Tn17883513"
 }, 
 "edge97694": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17883509", 
 "@target": "Tn17883620"
 }
@@ -4448,12 +4602,12 @@
 }, 
 "Tn17883534": {
 "edge97654": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17883534", 
 "@target": "Tn17883511"
 }, 
 "edge97656": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17883534", 
 "@target": "Tn17883627"
 }
@@ -4472,12 +4626,12 @@
 }, 
 "Tn17883536": {
 "edge97604": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17883536", 
 "@target": "Tn17883647"
 }, 
 "edge97606": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17883536", 
 "@target": "Tn17883507"
 }
@@ -4508,12 +4662,12 @@
 }, 
 "Tn17883540": {
 "edge97574": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17883540", 
 "@target": "Tn17883613"
 }, 
 "edge97580": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17883540", 
 "@target": "Tn17883548"
 }
@@ -4556,12 +4710,12 @@
 }, 
 "Tn17883548": {
 "edge97582": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17883548", 
 "@target": "Tn17883582"
 }, 
 "edge97588": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17883548", 
 "@target": "Tn17883577"
 }
@@ -4580,12 +4734,12 @@
 }, 
 "Tn17883550": {
 "edge97484": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17883550", 
 "@target": "Tn17883643"
 }, 
 "edge97486": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17883550", 
 "@target": "Tn17883578"
 }
@@ -4628,12 +4782,12 @@
 }, 
 "Tn17883555": {
 "edge97528": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17883555", 
 "@target": "Tn17883652"
 }, 
 "edge97534": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17883555", 
 "@target": "Tn17883611"
 }
@@ -4664,12 +4818,12 @@
 }, 
 "Tn17883559": {
 "edge97628": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17883559", 
 "@target": "Tn17883589"
 }, 
 "edge97634": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17883559", 
 "@target": "Tn17883623"
 }
@@ -4748,24 +4902,24 @@
 }, 
 "Tn17883577": {
 "edge97590": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17883577", 
 "@target": "Tn17883529"
 }, 
 "edge97592": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17883577", 
 "@target": "Tn17883656"
 }
 }, 
 "Tn17883578": {
 "edge97488": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17883578", 
 "@target": "Tn17883567"
 }, 
 "edge97490": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17883578", 
 "@target": "Tn17883575"
 }
@@ -4784,12 +4938,12 @@
 }, 
 "Tn17883582": {
 "edge97584": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17883582", 
 "@target": "Tn17883566"
 }, 
 "edge97586": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17883582", 
 "@target": "Tn17883616"
 }
@@ -4837,19 +4991,19 @@
 "@target": "Tn17883607"
 }, 
 "edge97768": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17883588", 
 "@target": "Tn17883564"
 }
 }, 
 "Tn17883589": {
 "edge97630": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17883589", 
 "@target": "Tn17883621"
 }, 
 "edge97632": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17883589", 
 "@target": "Tn17883610"
 }
@@ -4964,31 +5118,31 @@
 }, 
 "Tn17883611": {
 "edge97536": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17883611", 
 "@target": "Tn17883579"
 }, 
 "edge97538": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17883611", 
 "@target": "Tn17883561"
 }
 }, 
 "Tn17883613": {
 "edge97576": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17883613", 
 "@target": "Tn17883612"
 }, 
 "edge97578": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17883613", 
 "@target": "Tn17883586"
 }
 }, 
 "Tn17883614": {
 "edge97456": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17883614", 
 "@target": "Tn17883584"
 }, 
@@ -5036,12 +5190,12 @@
 }, 
 "Tn17883628": {
 "edge97662": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17883628", 
 "@target": "Tn17883591"
 }, 
 "edge97664": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17883628", 
 "@target": "Tn17883557"
 }
@@ -5084,12 +5238,12 @@
 }, 
 "Tn17883641": {
 "edge97678": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17883641", 
 "@target": "Tn17883662"
 }, 
 "edge97684": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17883641", 
 "@target": "Tn17883608"
 }
@@ -5120,24 +5274,24 @@
 }, 
 "Tn17883651": {
 "edge97676": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17883651", 
 "@target": "Tn17883641"
 }, 
 "edge97686": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17883651", 
 "@target": "Tn17883543"
 }
 }, 
 "Tn17883652": {
 "edge97530": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17883652", 
 "@target": "Tn17883544"
 }, 
 "edge97532": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17883652", 
 "@target": "Tn17883644"
 }
@@ -5192,12 +5346,12 @@
 }, 
 "Tn17883662": {
 "edge97680": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17883662", 
 "@target": "Tn17883638"
 }, 
 "edge97682": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17883662", 
 "@target": "Tn17883565"
 }
@@ -5562,7 +5716,19 @@
 "Tr114170": {
 "@label": "rpb2", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn17883725", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 82, 
 "^tb:quality.tree": "Unrated", 
@@ -5690,12 +5856,12 @@
 }, 
 "Tn17883694": {
 "edge97892": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17883694", 
 "@target": "Tn17883769"
 }, 
 "edge97894": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17883694", 
 "@target": "Tn17883723"
 }
@@ -5719,7 +5885,7 @@
 "@target": "Tn17883740"
 }, 
 "edge98096": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17883700", 
 "@target": "Tn17883827"
 }
@@ -5750,12 +5916,12 @@
 }, 
 "Tn17883704": {
 "edge97852": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17883704", 
 "@target": "Tn17883821"
 }, 
 "edge97854": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17883704", 
 "@target": "Tn17883780"
 }
@@ -5899,7 +6065,7 @@
 "@target": "Tn17883703"
 }, 
 "edge98102": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17883725", 
 "@target": "Tn17883787"
 }
@@ -6055,7 +6221,7 @@
 "@target": "Tn17883698"
 }, 
 "edge98062": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17883750", 
 "@target": "Tn17883767"
 }
@@ -6110,12 +6276,12 @@
 }, 
 "Tn17883764": {
 "edge97976": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17883764", 
 "@target": "Tn17883806"
 }, 
 "edge97978": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17883764", 
 "@target": "Tn17883736"
 }
@@ -6134,12 +6300,12 @@
 }, 
 "Tn17883767": {
 "edge98064": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17883767", 
 "@target": "Tn17883815"
 }, 
 "edge98086": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17883767", 
 "@target": "Tn17883792"
 }
@@ -6278,12 +6444,12 @@
 }, 
 "Tn17883788": {
 "edge98074": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17883788", 
 "@target": "Tn17883759"
 }, 
 "edge98080": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17883788", 
 "@target": "Tn17883722"
 }
@@ -6470,12 +6636,12 @@
 }, 
 "Tn17883815": {
 "edge98066": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17883815", 
 "@target": "Tn17883810"
 }, 
 "edge98072": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17883815", 
 "@target": "Tn17883788"
 }
@@ -6518,12 +6684,12 @@
 }, 
 "Tn17883826": {
 "edge98058": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17883826", 
 "@target": "Tn17883750"
 }, 
 "edge98092": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17883826", 
 "@target": "Tn17883700"
 }
@@ -6876,7 +7042,19 @@
 "Tr114171": {
 "@label": "tef1", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn17883894", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 82, 
 "^tb:quality.tree": "Unrated", 
@@ -6896,12 +7074,12 @@
 }, 
 "Tn17883831": {
 "edge96536": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17883831", 
 "@target": "Tn17883853"
 }, 
 "edge96538": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17883831", 
 "@target": "Tn17883933"
 }
@@ -6980,19 +7158,19 @@
 }, 
 "Tn17883843": {
 "edge96578": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17883843", 
 "@target": "Tn17883871"
 }, 
 "edge96580": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17883843", 
 "@target": "Tn17883893"
 }
 }, 
 "Tn17883845": {
 "edge96758": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17883845", 
 "@target": "Tn17883915"
 }, 
@@ -7261,19 +7439,19 @@
 "@target": "Tn17883910"
 }, 
 "edge96784": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17883894", 
 "@target": "Tn17883973"
 }
 }, 
 "Tn17883895": {
 "edge96766": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17883895", 
 "@target": "Tn17883946"
 }, 
 "edge96772": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17883895", 
 "@target": "Tn17883859"
 }
@@ -7376,31 +7554,31 @@
 }, 
 "Tn17883911": {
 "edge96746": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17883911", 
 "@target": "Tn17883864"
 }, 
 "edge96748": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17883911", 
 "@target": "Tn17883986"
 }
 }, 
 "Tn17883914": {
 "edge96504": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17883914", 
 "@target": "Tn17883925"
 }, 
 "edge96506": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17883914", 
 "@target": "Tn17883920"
 }
 }, 
 "Tn17883915": {
 "edge96760": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17883915", 
 "@target": "Tn17883934"
 }, 
@@ -7448,12 +7626,12 @@
 }, 
 "Tn17883920": {
 "edge96508": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17883920", 
 "@target": "Tn17883958"
 }, 
 "edge96510": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17883920", 
 "@target": "Tn17883942"
 }
@@ -7472,24 +7650,24 @@
 }, 
 "Tn17883923": {
 "edge96682": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17883923", 
 "@target": "Tn17883955"
 }, 
 "edge96684": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17883923", 
 "@target": "Tn17883858"
 }
 }, 
 "Tn17883924": {
 "edge96658": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17883924", 
 "@target": "Tn17883949"
 }, 
 "edge96660": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17883924", 
 "@target": "Tn17883936"
 }
@@ -7549,7 +7727,7 @@
 "@target": "Tn17883839"
 }, 
 "edge96764": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17883934", 
 "@target": "Tn17883895"
 }
@@ -7604,12 +7782,12 @@
 }, 
 "Tn17883944": {
 "edge96710": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17883944", 
 "@target": "Tn17883856"
 }, 
 "edge96712": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17883944", 
 "@target": "Tn17883870"
 }
@@ -8190,7 +8368,18 @@
 "Tr114172": {
 "@label": "tub2", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:undefined", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn17884053", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 82, 
 "^tb:quality.tree": "Unrated", 
@@ -8198,12 +8387,12 @@
 "edgeBySourceId": {
 "Tn17883992": {
 "edge96072": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17883992", 
 "@target": "Tn17884071"
 }, 
 "edge96082": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17883992", 
 "@target": "Tn17884112"
 }
@@ -8222,12 +8411,12 @@
 }, 
 "Tn17884001": {
 "edge95820": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17884001", 
 "@target": "Tn17884101"
 }, 
 "edge95822": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17884001", 
 "@target": "Tn17884140"
 }
@@ -8342,12 +8531,12 @@
 }, 
 "Tn17884019": {
 "edge96078": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17884019", 
 "@target": "Tn17884025"
 }, 
 "edge96080": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17884019", 
 "@target": "Tn17884103"
 }
@@ -8462,7 +8651,7 @@
 }, 
 "Tn17884042": {
 "edge96104": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17884042", 
 "@target": "Tn17884123"
 }, 
@@ -8486,12 +8675,12 @@
 }, 
 "Tn17884047": {
 "edge96086": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17884047", 
 "@target": "Tn17884028"
 }, 
 "edge96088": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17884047", 
 "@target": "Tn17884027"
 }
@@ -8551,7 +8740,7 @@
 "@target": "Tn17884015"
 }, 
 "edge96120": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17884053", 
 "@target": "Tn17883997"
 }
@@ -8582,12 +8771,12 @@
 }, 
 "Tn17884059": {
 "edge96022": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17884059", 
 "@target": "Tn17884016"
 }, 
 "edge96024": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17884059", 
 "@target": "Tn17884058"
 }
@@ -8642,36 +8831,36 @@
 }, 
 "Tn17884069": {
 "edge96094": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17884069", 
 "@target": "Tn17884048"
 }, 
 "edge96100": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17884069", 
 "@target": "Tn17884127"
 }
 }, 
 "Tn17884070": {
 "edge96034": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17884070", 
 "@target": "Tn17884000"
 }, 
 "edge96036": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17884070", 
 "@target": "Tn17884020"
 }
 }, 
 "Tn17884071": {
 "edge96074": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17884071", 
 "@target": "Tn17884046"
 }, 
 "edge96076": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17884071", 
 "@target": "Tn17884019"
 }
@@ -8762,7 +8951,7 @@
 }, 
 "Tn17884089": {
 "edge96092": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17884089", 
 "@target": "Tn17884069"
 }, 
@@ -8942,12 +9131,12 @@
 }, 
 "Tn17884120": {
 "edge96030": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17884120", 
 "@target": "Tn17884151"
 }, 
 "edge96032": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17884120", 
 "@target": "Tn17884070"
 }
@@ -8990,12 +9179,12 @@
 }, 
 "Tn17884127": {
 "edge96102": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17884127", 
 "@target": "Tn17884042"
 }, 
 "edge96112": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17884127", 
 "@target": "Tn17884132"
 }
@@ -9050,24 +9239,24 @@
 }, 
 "Tn17884137": {
 "edge95932": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17884137", 
 "@target": "Tn17884035"
 }, 
 "edge95934": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17884137", 
 "@target": "Tn17884022"
 }
 }, 
 "Tn17884138": {
 "edge95846": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17884138", 
 "@target": "Tn17884037"
 }, 
 "edge95848": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17884138", 
 "@target": "Tn17884144"
 }
@@ -9146,12 +9335,12 @@
 }, 
 "Tn17884150": {
 "edge95920": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17884150", 
 "@target": "Tn17884041"
 }, 
 "edge95922": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17884150", 
 "@target": "Tn17884106"
 }
