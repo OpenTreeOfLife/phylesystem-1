@@ -50,22 +50,115 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2018-10-11T16:36:30.521Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "Amphibians"
 }, 
-"^ot:curatorName": "Jesseholmes", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}, 
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": "\\b\\s+(\\S*)$"
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2018-10-11T16:36:30.521Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Jesseholmes"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S22941"
 }, 
+"^ot:focalCladeOTTTaxonName": "", 
 "^ot:otusElementOrder": [
 "Tls64384"
 ], 
 "^ot:studyId": "ot_1808", 
+"^ot:studyPublication": {
+"@href": ""
+}, 
 "^ot:studyPublicationReference": "Le\u00e3o C.O., Cardoso D.C., K\u00f6hler G., & Pires M.S. 2018. Unraveling the anuran species richness in mountain lakes of the Atlantic Forest by using larval stages (tadpoles) through morphology and DNA barcoding. PLOS One, .", 
 "^ot:studyYear": 2018, 
+"^ot:tag": [], 
 "^ot:taxonLinkPrefixes": {
 "@ubio": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:", 
 "@uniprot": "http://purl.uniprot.org/taxonomy/"
@@ -88,8 +181,9 @@
 "^skos:historyNote": "Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlOTUWriter@8b781c1 $Rev$", 
 "otuById": {
 "Tl3269894": {
-"^ot:altLabel": "Hypsiboas polytaenius", 
 "^ot:originalLabel": "Hypsiboas polytaenius CC_58", 
+"^ot:ottId": 840176, 
+"^ot:ottTaxonName": "Hypsiboas polytaenius", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 278511, 
 "@tb:identifier.taxonVariant": 332221, 
@@ -98,8 +192,9 @@
 }
 }, 
 "Tl3269895": {
-"^ot:altLabel": "Dendropsophus elegans", 
 "^ot:originalLabel": "Dendropsophus elegans CC_30", 
+"^ot:ottId": 108403, 
+"^ot:ottTaxonName": "Dendropsophus elegans", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 145771, 
 "@tb:identifier.taxonVariant": 221887, 
@@ -108,8 +203,9 @@
 }
 }, 
 "Tl3269896": {
-"^ot:altLabel": "Dendropsophus seniculus", 
 "^ot:originalLabel": "Dendropsophus seniculus CL_79", 
+"^ot:ottId": 296204, 
+"^ot:ottTaxonName": "Dendropsophus seniculus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 279441, 
 "@tb:identifier.taxonVariant": 333267, 
@@ -118,8 +214,9 @@
 }
 }, 
 "Tl3269897": {
-"^ot:altLabel": "Bolitoglossa striatula", 
 "^ot:originalLabel": "Bolitoglossa striatula GK_6578", 
+"^ot:ottId": 588271, 
+"^ot:ottTaxonName": "Bolitoglossa striatula", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 129232, 
 "@tb:identifier.taxonVariant": 206772, 
@@ -128,8 +225,9 @@
 }
 }, 
 "Tl3269898": {
-"^ot:altLabel": "Bokermannohyla circumdata", 
 "^ot:originalLabel": "Bokermannohyla circumdata CC_27", 
+"^ot:ottId": 819149, 
+"^ot:ottTaxonName": "Bokermannohyla circumdata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 247767, 
 "@tb:identifier.taxonVariant": 308217, 
@@ -138,8 +236,9 @@
 }
 }, 
 "Tl3269899": {
-"^ot:altLabel": "Scinax fuscovarius", 
 "^ot:originalLabel": "Scinax fuscovarius CL_83", 
+"^ot:ottId": 747724, 
+"^ot:ottTaxonName": "Scinax fuscovarius", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 279487, 
 "@tb:identifier.taxonVariant": 333341, 
@@ -148,8 +247,9 @@
 }
 }, 
 "Tl3269900": {
-"^ot:altLabel": "Scinax hayii", 
 "^ot:originalLabel": "Scinax hayii CC_52", 
+"^ot:ottId": 495039, 
+"^ot:ottTaxonName": "Scinax hayii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 635458, 
 "@tb:identifier.taxonVariant": 850470, 
@@ -157,8 +257,9 @@
 }
 }, 
 "Tl3269901": {
-"^ot:altLabel": "Physalaemus cuvieri", 
 "^ot:originalLabel": "Physalaemus cuvieri CT_27", 
+"^ot:ottId": 642784, 
+"^ot:ottTaxonName": "Physalaemus cuvieri", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 200035, 
 "@tb:identifier.taxonVariant": 270611, 
@@ -167,8 +268,9 @@
 }
 }, 
 "Tl3269902": {
-"^ot:altLabel": "Hypsiboas albopunctatus", 
 "^ot:originalLabel": "Hypsiboas albopunctatus CC_48", 
+"^ot:ottId": 1026165, 
+"^ot:ottTaxonName": "Hypsiboas albopunctatus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 247760, 
 "@tb:identifier.taxonVariant": 308200, 
@@ -177,11 +279,14 @@
 }
 }, 
 "Tl3269903": {
-"^ot:originalLabel": "Leptodactylus latrans CC_50"
+"^ot:originalLabel": "Leptodactylus latrans CC_50", 
+"^ot:ottId": 4948324, 
+"^ot:ottTaxonName": "Leptodactylus latrans"
 }, 
 "Tl3269904": {
-"^ot:altLabel": "Hypsiboas faber", 
 "^ot:originalLabel": "Hypsiboas faber CC_26", 
+"^ot:ottId": 500272, 
+"^ot:ottTaxonName": "Hypsiboas faber", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 247770, 
 "@tb:identifier.taxonVariant": 308226, 
@@ -190,8 +295,9 @@
 }
 }, 
 "Tl3269905": {
-"^ot:altLabel": "Dendropsophus minutus", 
 "^ot:originalLabel": "Dendropsophus minutus CC_29", 
+"^ot:ottId": 682679, 
+"^ot:ottTaxonName": "Dendropsophus minutus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 145776, 
 "@tb:identifier.taxonVariant": 221903, 
@@ -200,8 +306,9 @@
 }
 }, 
 "Tl3269906": {
-"^ot:altLabel": "Physalaemus cuvieri", 
 "^ot:originalLabel": "Physalaemus cuvieri CL_77", 
+"^ot:ottId": 642784, 
+"^ot:ottTaxonName": "Physalaemus cuvieri", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 200035, 
 "@tb:identifier.taxonVariant": 270611, 
@@ -210,8 +317,9 @@
 }
 }, 
 "Tl3269907": {
-"^ot:altLabel": "Physalaemus cuvieri", 
 "^ot:originalLabel": "Physalaemus cuvieri CC_13", 
+"^ot:ottId": 642784, 
+"^ot:ottTaxonName": "Physalaemus cuvieri", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 200035, 
 "@tb:identifier.taxonVariant": 270611, 
@@ -220,11 +328,14 @@
 }
 }, 
 "Tl3269908": {
-"^ot:originalLabel": "Rhinella rubescens CC_9"
+"^ot:originalLabel": "Rhinella rubescens CC_9", 
+"^ot:ottId": 990815, 
+"^ot:ottTaxonName": "Rhinella rubescens"
 }, 
 "Tl3269909": {
-"^ot:altLabel": "Dendropsophus elegans", 
 "^ot:originalLabel": "Dendropsophus elegans CT_19", 
+"^ot:ottId": 108403, 
+"^ot:ottTaxonName": "Dendropsophus elegans", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 145771, 
 "@tb:identifier.taxonVariant": 221887, 
@@ -233,8 +344,9 @@
 }
 }, 
 "Tl3269910": {
-"^ot:altLabel": "Scinax squalirostris", 
 "^ot:originalLabel": "Scinax squalirostris CC_12", 
+"^ot:ottId": 747719, 
+"^ot:ottTaxonName": "Scinax squalirostris", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 279489, 
 "@tb:identifier.taxonVariant": 333345, 
@@ -243,11 +355,14 @@
 }
 }, 
 "Tl3269911": {
-"^ot:originalLabel": "Hypsiboas sp CC_10"
+"^ot:originalLabel": "Hypsiboas sp CC_10", 
+"^ot:ottId": 412457, 
+"^ot:ottTaxonName": "Hypsiboas"
 }, 
 "Tl3269912": {
-"^ot:altLabel": "Leptodactylus gracilis", 
 "^ot:originalLabel": "Leptodactylus gracilis CC", 
+"^ot:ottId": 1045781, 
+"^ot:ottTaxonName": "Leptodactylus gracilis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 215988, 
 "@tb:identifier.taxonVariant": 455257, 
@@ -256,8 +371,9 @@
 }
 }, 
 "Tl3269913": {
-"^ot:altLabel": "Hypsiboas faber", 
 "^ot:originalLabel": "Hypsiboas faber CC_11", 
+"^ot:ottId": 500272, 
+"^ot:ottTaxonName": "Hypsiboas faber", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 247770, 
 "@tb:identifier.taxonVariant": 308226, 
@@ -266,8 +382,9 @@
 }
 }, 
 "Tl3269914": {
-"^ot:altLabel": "Scinax fuscovarius", 
 "^ot:originalLabel": "Scinax fuscovarius CL_80", 
+"^ot:ottId": 747724, 
+"^ot:ottTaxonName": "Scinax fuscovarius", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 279487, 
 "@tb:identifier.taxonVariant": 333341, 
@@ -276,8 +393,9 @@
 }
 }, 
 "Tl3269915": {
-"^ot:altLabel": "Hypsiboas albopunctatus", 
 "^ot:originalLabel": "Hypsiboas albopunctatus CT_33", 
+"^ot:ottId": 1026165, 
+"^ot:ottTaxonName": "Hypsiboas albopunctatus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 247760, 
 "@tb:identifier.taxonVariant": 308200, 
@@ -286,8 +404,9 @@
 }
 }, 
 "Tl3269916": {
-"^ot:altLabel": "Scinax fuscovarius", 
 "^ot:originalLabel": "Scinax fuscovarius CC_5", 
+"^ot:ottId": 747724, 
+"^ot:ottTaxonName": "Scinax fuscovarius", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 279487, 
 "@tb:identifier.taxonVariant": 333341, 
@@ -296,8 +415,9 @@
 }
 }, 
 "Tl3269917": {
-"^ot:altLabel": "Dendropsophus minutus", 
 "^ot:originalLabel": "Dendropsophus minutus CC_42", 
+"^ot:ottId": 682679, 
+"^ot:ottTaxonName": "Dendropsophus minutus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 145776, 
 "@tb:identifier.taxonVariant": 221903, 
@@ -306,8 +426,9 @@
 }
 }, 
 "Tl3269918": {
-"^ot:altLabel": "Scinax fuscovarius", 
 "^ot:originalLabel": "Scinax fuscovarius CC_28", 
+"^ot:ottId": 747724, 
+"^ot:ottTaxonName": "Scinax fuscovarius", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 279487, 
 "@tb:identifier.taxonVariant": 333341, 
@@ -316,8 +437,9 @@
 }
 }, 
 "Tl3269919": {
-"^ot:altLabel": "Scinax squalirostris", 
 "^ot:originalLabel": "Scinax squalirostris CT_28", 
+"^ot:ottId": 747719, 
+"^ot:ottTaxonName": "Scinax squalirostris", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 279489, 
 "@tb:identifier.taxonVariant": 333345, 
@@ -326,11 +448,14 @@
 }
 }, 
 "Tl3269920": {
-"^ot:originalLabel": "Scinax hayii CC_63"
+"^ot:originalLabel": "Scinax hayii CC_63", 
+"^ot:ottId": 495039, 
+"^ot:ottTaxonName": "Scinax hayii"
 }, 
 "Tl3269921": {
-"^ot:altLabel": "Dendropsophus minutus", 
 "^ot:originalLabel": "Dendropsophus minutus CT_31", 
+"^ot:ottId": 682679, 
+"^ot:ottTaxonName": "Dendropsophus minutus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 145776, 
 "@tb:identifier.taxonVariant": 221903, 
@@ -339,8 +464,9 @@
 }
 }, 
 "Tl3269922": {
-"^ot:altLabel": "Physalaemus cuvieri", 
 "^ot:originalLabel": "Physalaemus cuvieri CC_40", 
+"^ot:ottId": 642784, 
+"^ot:ottTaxonName": "Physalaemus cuvieri", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 200035, 
 "@tb:identifier.taxonVariant": 270611, 
@@ -349,8 +475,9 @@
 }
 }, 
 "Tl3269923": {
-"^ot:altLabel": "Physalaemus cuvieri", 
 "^ot:originalLabel": "Physalaemus cuvieri CT_15", 
+"^ot:ottId": 642784, 
+"^ot:ottTaxonName": "Physalaemus cuvieri", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 200035, 
 "@tb:identifier.taxonVariant": 270611, 
@@ -373,7 +500,18 @@
 "Tr112853": {
 "@label": "con 50 majrule", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:undefined", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "Tn17656189", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn17656202", 
+"^ot:specifiedRoot": "Tn17656202", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "^tb:ntax.tree": 30, 
 "edgeBySourceId": {
 "Tn17656159": {
