@@ -63,16 +63,106 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2018-10-29T14:27:37.580Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "Ascomycetes"
 }, 
-"^ot:curatorName": "Matt Girard", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}, 
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": "$1"
+}, 
+"old": {
+"$": "^(\\S*\\s+\\S*).*"
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2018-10-29T14:27:37.580Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Matt Girard"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S21934"
 }, 
+"^ot:focalClade": 3706598, 
+"^ot:focalCladeOTTTaxonName": "Apiosphaeria", 
 "^ot:otusElementOrder": [
 "Tls65635"
 ], 
@@ -82,6 +172,7 @@
 }, 
 "^ot:studyPublicationReference": "Guterres D.C., Pinho D.B., Santos M.D., Elias S.G., Souza B.C., Miller R.N., & Dianese J.C. 2018. Taxononmy, phylogeny and divergence time of Apiosphaeria guaranitica, a neotropical pathogen on Bignoniaceous hosts. Mycologia, 110(3): 526-54.", 
 "^ot:studyYear": 2018, 
+"^ot:tag": [], 
 "^ot:taxonLinkPrefixes": {
 "@ubio": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:", 
 "@uniprot": "http://purl.uniprot.org/taxonomy/"
@@ -110,13 +201,17 @@
 "^skos:historyNote": "Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlOTUWriter@5d8c44f1 $Rev$", 
 "otuById": {
 "Tl3365776": {
-"^ot:originalLabel": "Diaporthe maytenicola CBS_136441_Maytenus_acuminata"
+"^ot:originalLabel": "Diaporthe maytenicola CBS_136441_Maytenus_acuminata", 
+"^ot:ottId": 5316694, 
+"^ot:ottTaxonName": "Diaporthe maytenicola"
 }, 
 "Tl3365777": {
 "^ot:originalLabel": "Cytospora centrivillosa MFLU_17_0887"
 }, 
 "Tl3365778": {
-"^ot:originalLabel": "Apiosphaeria guaranitica UB23795"
+"^ot:originalLabel": "Apiosphaeria guaranitica UB23795", 
+"^ot:ottId": 3706861, 
+"^ot:ottTaxonName": "Apiosphaeria guaranitica"
 }, 
 "Tl3365779": {
 "^ot:altLabel": "Diaporthe eres", 
@@ -139,7 +234,9 @@
 }
 }, 
 "Tl3365781": {
-"^ot:originalLabel": "Pustulomyces bambusicola MFLUCC_11_0436_Bambusa_sp"
+"^ot:originalLabel": "Pustulomyces bambusicola MFLUCC_11_0436_Bambusa_sp", 
+"^ot:ottId": 5316711, 
+"^ot:ottTaxonName": "Pustulomyces bambusicola"
 }, 
 "Tl3365782": {
 "^ot:altLabel": "Phaeodiaporthe appendiculata", 
@@ -160,11 +257,14 @@
 }
 }, 
 "Tl3365784": {
-"^ot:originalLabel": "Apiosphaeria guaranitica UB23518"
+"^ot:originalLabel": "Apiosphaeria guaranitica UB23518", 
+"^ot:ottId": 3706861, 
+"^ot:ottTaxonName": "Apiosphaeria guaranitica"
 }, 
 "Tl3365785": {
-"^ot:altLabel": "Stenocarpella maydis", 
 "^ot:originalLabel": "Stenocarpella maydis CBS_117559_Zea_mays", 
+"^ot:ottId": 1046571, 
+"^ot:ottTaxonName": "Stenocarpella maydis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 35319, 
 "@tb:identifier.taxonVariant": 81815, 
@@ -176,7 +276,9 @@
 "^ot:originalLabel": "Chiangraiomyces bauhiniae MFLUCC_17_1670_Bauhinia_sp"
 }, 
 "Tl3365787": {
-"^ot:originalLabel": "Apiosphaeria guaranitica UB23561_asx"
+"^ot:originalLabel": "Apiosphaeria guaranitica UB23561_asx", 
+"^ot:ottId": 3706861, 
+"^ot:ottTaxonName": "Apiosphaeria guaranitica"
 }, 
 "Tl3365788": {
 "^ot:originalLabel": "Paradiaporthe artemisiae MFLUCC_17_1663_Artemisia_sp"
@@ -185,8 +287,9 @@
 "^ot:originalLabel": "Diaporthe litoricola MFLUCC_17_1657_Stem_of_sea_shore_plant"
 }, 
 "Tl3365790": {
-"^ot:altLabel": "Diaporthe rudis", 
 "^ot:originalLabel": "Diaporthe rudis BPI_748231", 
+"^ot:ottId": 5316658, 
+"^ot:ottTaxonName": "Diaporthe rudis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 618043, 
 "@tb:identifier.taxonVariant": 827257, 
@@ -194,8 +297,9 @@
 }
 }, 
 "Tl3365791": {
-"^ot:altLabel": "Diaporthe rudis", 
 "^ot:originalLabel": "Diaporthe rudis MFLUCC_16_1197_Umbelliferous_stem", 
+"^ot:ottId": 5316658, 
+"^ot:ottTaxonName": "Diaporthe rudis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 618043, 
 "@tb:identifier.taxonVariant": 827257, 
@@ -203,8 +307,9 @@
 }
 }, 
 "Tl3365792": {
-"^ot:altLabel": "Phaeocytostroma ambiguum", 
 "^ot:originalLabel": "Phaeocytostroma ambiguum CPC_17078_Zea_mays", 
+"^ot:ottId": 33984, 
+"^ot:ottTaxonName": "Phaeocytostroma ambiguum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 607247, 
 "@tb:identifier.taxonVariant": 810975, 
@@ -212,11 +317,14 @@
 }
 }, 
 "Tl3365793": {
-"^ot:originalLabel": "Apiosphaeria guaranitica UB23801"
+"^ot:originalLabel": "Apiosphaeria guaranitica UB23801", 
+"^ot:ottId": 3706861, 
+"^ot:ottTaxonName": "Apiosphaeria guaranitica"
 }, 
 "Tl3365794": {
-"^ot:altLabel": "Stenocarpella macrospora", 
 "^ot:originalLabel": "Stenocarpella macrospora CBS_117560_Zea_mays", 
+"^ot:ottId": 1065792, 
+"^ot:ottTaxonName": "Stenocarpella macrospora", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 35320, 
 "@tb:identifier.taxonVariant": 81817, 
@@ -225,11 +333,14 @@
 }
 }, 
 "Tl3365795": {
-"^ot:originalLabel": "Apiosphaeria guaranitica UB22757_asx"
+"^ot:originalLabel": "Apiosphaeria guaranitica UB22757_asx", 
+"^ot:ottId": 3706861, 
+"^ot:ottTaxonName": "Apiosphaeria guaranitica"
 }, 
 "Tl3365796": {
-"^ot:altLabel": "Phaeocytostroma ambiguum", 
 "^ot:originalLabel": "Phaeocytostroma ambiguum CPC_17077_Zea_mays", 
+"^ot:ottId": 33984, 
+"^ot:ottTaxonName": "Phaeocytostroma ambiguum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 607247, 
 "@tb:identifier.taxonVariant": 810975, 
@@ -238,14 +349,17 @@
 }, 
 "Tl3365797": {
 "^ot:originalLabel": "Diaporthe cynaroidis CBS_122676_Protea_cynaroides", 
+"^ot:ottId": 931426, 
+"^ot:ottTaxonName": "Diaporthe cynaroidis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 470770, 
 "@tb:identifier.taxonVariant": 624948
 }
 }, 
 "Tl3365798": {
-"^ot:altLabel": "Diaporthe rudis", 
 "^ot:originalLabel": "Diaporthe rudis IT_1526_Acer_campestre", 
+"^ot:ottId": 5316658, 
+"^ot:ottTaxonName": "Diaporthe rudis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 618043, 
 "@tb:identifier.taxonVariant": 827257, 
@@ -256,14 +370,19 @@
 "^ot:originalLabel": "Paradiaporthe artemisiae MFLUCC_14_0850_Artemisia_sp"
 }, 
 "Tl3365800": {
-"^ot:originalLabel": "Apiosphaeria guaranitica UB23750"
+"^ot:originalLabel": "Apiosphaeria guaranitica UB23750", 
+"^ot:ottId": 3706861, 
+"^ot:ottTaxonName": "Apiosphaeria guaranitica"
 }, 
 "Tl3365801": {
-"^ot:originalLabel": "Apiosphaeria guaranitica UB22757"
+"^ot:originalLabel": "Apiosphaeria guaranitica UB22757", 
+"^ot:ottId": 3706861, 
+"^ot:ottTaxonName": "Apiosphaeria guaranitica"
 }, 
 "Tl3365802": {
-"^ot:altLabel": "Mazzantia napelli", 
 "^ot:originalLabel": "Mazzantia napelli AR3498_Aconitum_lycoctonum", 
+"^ot:ottId": 343682, 
+"^ot:ottTaxonName": "Mazzantia napelli", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 17056, 
 "@tb:identifier.taxonVariant": 39927, 
@@ -305,10 +424,14 @@
 "^ot:originalLabel": "Diaporthe litoricola MFLUCC_16_1195_Stem_of_sea_shore_plant"
 }, 
 "Tl3365807": {
-"^ot:originalLabel": "Apiosphaeria guaranitica UB23561"
+"^ot:originalLabel": "Apiosphaeria guaranitica UB23561", 
+"^ot:ottId": 3706861, 
+"^ot:ottTaxonName": "Apiosphaeria guaranitica"
 }, 
 "Tl3365808": {
-"^ot:originalLabel": "Apiosphaeria guaranitica CDUB247"
+"^ot:originalLabel": "Apiosphaeria guaranitica CDUB247", 
+"^ot:ottId": 3706861, 
+"^ot:ottTaxonName": "Apiosphaeria guaranitica"
 }, 
 "Tl3365809": {
 "^ot:originalLabel": "Hyaliappendispora galii MFLU_170893_Galium_sp"
@@ -324,11 +447,14 @@
 }
 }, 
 "Tl3365811": {
-"^ot:originalLabel": "Apiosphaeria guaranitica CDUB247_asx"
+"^ot:originalLabel": "Apiosphaeria guaranitica CDUB247_asx", 
+"^ot:ottId": 3706861, 
+"^ot:ottTaxonName": "Apiosphaeria guaranitica"
 }, 
 "Tl3365812": {
-"^ot:altLabel": "Diaporthe rudis", 
 "^ot:originalLabel": "Diaporthe rudis MFLUCC_17_1658_Umbelliferous_stem", 
+"^ot:ottId": 5316658, 
+"^ot:ottTaxonName": "Diaporthe rudis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 618043, 
 "@tb:identifier.taxonVariant": 827257, 
@@ -336,11 +462,14 @@
 }
 }, 
 "Tl3365813": {
-"^ot:originalLabel": "Apiosphaeria guaranitica UB23393"
+"^ot:originalLabel": "Apiosphaeria guaranitica UB23393", 
+"^ot:ottId": 3706861, 
+"^ot:ottTaxonName": "Apiosphaeria guaranitica"
 }, 
 "Tl3365814": {
-"^ot:altLabel": "Diaporthe decedens", 
 "^ot:originalLabel": "Diaporthe decedens CBS_114281_Corylus_avellana", 
+"^ot:ottId": 918898, 
+"^ot:ottTaxonName": "Diaporthe decedens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 8887, 
 "@tb:identifier.taxonVariant": 21397, 
@@ -352,11 +481,14 @@
 "^ot:originalLabel": "Chiangraiomyces bauhiniae MFLUCC_17_1669_Bauhinia_sp"
 }, 
 "Tl3365816": {
-"^ot:originalLabel": "Diaporthe cassines CBS_136440_Cassine_peragua"
+"^ot:originalLabel": "Diaporthe cassines CBS_136440_Cassine_peragua", 
+"^ot:ottId": 5316681, 
+"^ot:ottTaxonName": "Diaporthe cassines"
 }, 
 "Tl3365817": {
-"^ot:altLabel": "Diaporthe rudis", 
 "^ot:originalLabel": "Diaporthe rudis MFLU_17_0895_Acer_campestre", 
+"^ot:ottId": 5316658, 
+"^ot:ottTaxonName": "Diaporthe rudis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 618043, 
 "@tb:identifier.taxonVariant": 827257, 
@@ -371,6 +503,8 @@
 }, 
 "Tl3365820": {
 "^ot:originalLabel": "Sordaria fimicola", 
+"^ot:ottId": 615465, 
+"^ot:ottTaxonName": "Sordaria fimicola", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 27340, 
 "@tb:identifier.taxonVariant": 63803, 
@@ -380,6 +514,8 @@
 }, 
 "Tl3365821": {
 "^ot:originalLabel": "Microascus trigonosporus", 
+"^ot:ottId": 737682, 
+"^ot:ottTaxonName": "Microascus trigonosporus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 17641, 
 "@tb:identifier.taxonVariant": 41278, 
@@ -389,6 +525,8 @@
 }, 
 "Tl3365822": {
 "^ot:originalLabel": "Lasiosphaeria ovina", 
+"^ot:ottId": 597716, 
+"^ot:ottTaxonName": "Lasiosphaeria ovina", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 15350, 
 "@tb:identifier.taxonVariant": 36032, 
@@ -398,6 +536,8 @@
 }, 
 "Tl3365823": {
 "^ot:originalLabel": "Bombardia bombarda", 
+"^ot:ottId": 436637, 
+"^ot:ottTaxonName": "Bombardia bombarda", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3705, 
 "@tb:identifier.taxonVariant": 8854, 
@@ -416,6 +556,8 @@
 }, 
 "Tl3365825": {
 "^ot:originalLabel": "Camarops microspora", 
+"^ot:ottId": 758070, 
+"^ot:ottTaxonName": "Camarops microspora", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 4633, 
 "@tb:identifier.taxonVariant": 11148, 
@@ -425,6 +567,8 @@
 }, 
 "Tl3365826": {
 "^ot:originalLabel": "Leotia lubrica", 
+"^ot:ottId": 339442, 
+"^ot:ottTaxonName": "Leotia lubrica", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 15574, 
 "@tb:identifier.taxonVariant": 36529, 
@@ -434,6 +578,8 @@
 }, 
 "Tl3365827": {
 "^ot:originalLabel": "Falcocladium multivesiculatum", 
+"^ot:ottId": 975325, 
+"^ot:ottTaxonName": "Falcocladium multivesiculatum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 400555, 
 "@tb:identifier.taxonVariant": 407590, 
@@ -443,6 +589,8 @@
 }, 
 "Tl3365828": {
 "^ot:originalLabel": "Monilochaetes infuscans", 
+"^ot:ottId": 439741, 
+"^ot:ottTaxonName": "Monilochaetes infuscans", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 600521, 
 "@tb:identifier.taxonVariant": 800673, 
@@ -451,6 +599,8 @@
 }, 
 "Tl3365829": {
 "^ot:originalLabel": "Ophiodothella vaccinii", 
+"^ot:ottId": 931945, 
+"^ot:ottTaxonName": "Ophiodothella vaccinii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 74349, 
 "@tb:identifier.taxonVariant": 151382, 
@@ -460,6 +610,8 @@
 }, 
 "Tl3365830": {
 "^ot:originalLabel": "Ophioceras dolichostomum", 
+"^ot:ottId": 992358, 
+"^ot:ottTaxonName": "Ophioceras dolichostomum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 33776, 
 "@tb:identifier.taxonVariant": 78019, 
@@ -468,13 +620,19 @@
 }
 }, 
 "Tl3365831": {
-"^ot:originalLabel": "Serenomyces phoenicis"
+"^ot:originalLabel": "Serenomyces phoenicis", 
+"^ot:ottId": 3706964, 
+"^ot:ottTaxonName": "Serenomyces phoenicis"
 }, 
 "Tl3365832": {
-"^ot:originalLabel": "Apiosphaeria guaranitica UB22484"
+"^ot:originalLabel": "Apiosphaeria guaranitica UB22484", 
+"^ot:ottId": 3706861, 
+"^ot:ottTaxonName": "Apiosphaeria guaranitica"
 }, 
 "Tl3365833": {
 "^ot:originalLabel": "Melanospora tiffanii", 
+"^ot:ottId": 871580, 
+"^ot:ottTaxonName": "Melanospora tiffanii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 147520, 
 "@tb:identifier.taxonVariant": 223593, 
@@ -493,6 +651,8 @@
 }, 
 "Tl3365835": {
 "^ot:originalLabel": "Aniptodera chesapeakensis", 
+"^ot:ottId": 695332, 
+"^ot:ottTaxonName": "Aniptodera chesapeakensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 1646, 
 "@tb:identifier.taxonVariant": 4112, 
@@ -502,6 +662,8 @@
 }, 
 "Tl3365836": {
 "^ot:originalLabel": "Calosphaeria pulchella", 
+"^ot:ottId": 324855, 
+"^ot:ottTaxonName": "Calosphaeria pulchella", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 4559, 
 "@tb:identifier.taxonVariant": 10973, 
@@ -511,6 +673,8 @@
 }, 
 "Tl3365837": {
 "^ot:originalLabel": "Buergenerula spartinae", 
+"^ot:ottId": 48816, 
+"^ot:ottTaxonName": "Buergenerula spartinae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 33780, 
 "@tb:identifier.taxonVariant": 78028, 
@@ -520,6 +684,8 @@
 }, 
 "Tl3365838": {
 "^ot:originalLabel": "Papulosa amerospora", 
+"^ot:ottId": 77437, 
+"^ot:ottTaxonName": "Papulosa amerospora", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 46310, 
 "@tb:identifier.taxonVariant": 108546, 
@@ -528,13 +694,19 @@
 }
 }, 
 "Tl3365839": {
-"^ot:originalLabel": "Serenomyces phoenicis 2"
+"^ot:originalLabel": "Serenomyces phoenicis 2", 
+"^ot:ottId": 3706964, 
+"^ot:ottTaxonName": "Serenomyces phoenicis"
 }, 
 "Tl3365840": {
-"^ot:originalLabel": "Polystigma amygdalinum"
+"^ot:originalLabel": "Polystigma amygdalinum", 
+"^ot:ottId": 3706875, 
+"^ot:ottTaxonName": "Polystigma amygdalinum"
 }, 
 "Tl3365841": {
 "^ot:originalLabel": "Graphium penicillioides", 
+"^ot:ottId": 41398, 
+"^ot:ottTaxonName": "Graphium penicillioides", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 12530, 
 "@tb:identifier.taxonVariant": 29717, 
@@ -544,6 +716,8 @@
 }, 
 "Tl3365842": {
 "^ot:originalLabel": "Halosphaeria appendiculata", 
+"^ot:ottId": 172404, 
+"^ot:ottTaxonName": "Halosphaeria appendiculata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 12898, 
 "@tb:identifier.taxonVariant": 30520, 
@@ -552,8 +726,9 @@
 }
 }, 
 "Tl3365843": {
-"^ot:altLabel": "Phyllachora graminis", 
 "^ot:originalLabel": "Phyllachora graminis 2", 
+"^ot:ottId": 77433, 
+"^ot:ottTaxonName": "Phyllachora graminis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 21982, 
 "@tb:identifier.taxonVariant": 51116, 
@@ -563,6 +738,8 @@
 }, 
 "Tl3365844": {
 "^ot:originalLabel": "Valsa ambiens", 
+"^ot:ottId": 822584, 
+"^ot:ottTaxonName": "Valsa ambiens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 30434, 
 "@tb:identifier.taxonVariant": 71007, 
@@ -572,6 +749,8 @@
 }, 
 "Tl3365845": {
 "^ot:originalLabel": "Xylaria acuta", 
+"^ot:ottId": 1025261, 
+"^ot:ottTaxonName": "Xylaria acuta", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 31113, 
 "@tb:identifier.taxonVariant": 72645, 
@@ -581,6 +760,8 @@
 }, 
 "Tl3365846": {
 "^ot:originalLabel": "Ophioceras leptosporum", 
+"^ot:ottId": 708147, 
+"^ot:ottTaxonName": "Ophioceras leptosporum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 19638, 
 "@tb:identifier.taxonVariant": 45707, 
@@ -590,6 +771,8 @@
 }, 
 "Tl3365847": {
 "^ot:originalLabel": "Kylindria peruamazonensis", 
+"^ot:ottId": 770546, 
+"^ot:ottTaxonName": "Kylindria peruamazonensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 600526, 
 "@tb:identifier.taxonVariant": 800678, 
@@ -598,6 +781,8 @@
 }, 
 "Tl3365848": {
 "^ot:originalLabel": "Roumegueriella rufula", 
+"^ot:ottId": 935178, 
+"^ot:ottTaxonName": "Roumegueriella rufula", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 25756, 
 "@tb:identifier.taxonVariant": 60265, 
@@ -616,6 +801,8 @@
 }, 
 "Tl3365850": {
 "^ot:originalLabel": "Verticillium dahliae", 
+"^ot:ottId": 615475, 
+"^ot:ottTaxonName": "Verticillium dahliae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 30630, 
 "@tb:identifier.taxonVariant": 71460, 
@@ -625,6 +812,8 @@
 }, 
 "Tl3365851": {
 "^ot:originalLabel": "Phyllachora graminis", 
+"^ot:ottId": 77433, 
+"^ot:ottTaxonName": "Phyllachora graminis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 21982, 
 "@tb:identifier.taxonVariant": 51116, 
@@ -643,6 +832,8 @@
 }, 
 "Tl3365853": {
 "^ot:originalLabel": "Diatrype disciformis", 
+"^ot:ottId": 183727, 
+"^ot:ottTaxonName": "Diatrype disciformis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 8913, 
 "@tb:identifier.taxonVariant": 21441, 
@@ -652,6 +843,8 @@
 }, 
 "Tl3365854": {
 "^ot:originalLabel": "Melanospora zamiae", 
+"^ot:ottId": 90714, 
+"^ot:ottTaxonName": "Melanospora zamiae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 17234, 
 "@tb:identifier.taxonVariant": 40356, 
@@ -670,10 +863,14 @@
 "^skos:prefLabel": "Ophiocordyceps irangiensis"
 }, 
 "Tl3365856": {
-"^ot:originalLabel": "Camarotella costaricensis"
+"^ot:originalLabel": "Camarotella costaricensis", 
+"^ot:ottId": 5309070, 
+"^ot:ottTaxonName": "Camarotella costaricensis"
 }, 
 "Tl3365857": {
 "^ot:originalLabel": "Balansia henningsiana", 
+"^ot:ottId": 64411, 
+"^ot:ottTaxonName": "Balansia henningsiana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3116, 
 "@tb:identifier.taxonVariant": 7512, 
@@ -692,6 +889,8 @@
 }, 
 "Tl3365859": {
 "^ot:originalLabel": "Sphaerostilbella berkeleyana", 
+"^ot:ottId": 409106, 
+"^ot:ottTaxonName": "Sphaerostilbella berkeleyana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 27510, 
 "@tb:identifier.taxonVariant": 64199, 
@@ -710,6 +909,8 @@
 }, 
 "Tl3365861": {
 "^ot:originalLabel": "Pseudohalonectria lignicola", 
+"^ot:ottId": 1032219, 
+"^ot:ottTaxonName": "Pseudohalonectria lignicola", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 24037, 
 "@tb:identifier.taxonVariant": 56153, 
@@ -718,10 +919,14 @@
 }
 }, 
 "Tl3365862": {
-"^ot:originalLabel": "Elaphocordyceps capitata"
+"^ot:originalLabel": "Elaphocordyceps capitata", 
+"^ot:ottId": 64406, 
+"^ot:ottTaxonName": "Elaphocordyceps capitata"
 }, 
 "Tl3365863": {
 "^ot:originalLabel": "Chrysoporthe cubensis", 
+"^ot:ottId": 1052899, 
+"^ot:ottTaxonName": "Chrysoporthe cubensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6069, 
 "@tb:identifier.taxonVariant": 14623, 
@@ -731,6 +936,8 @@
 }, 
 "Tl3365864": {
 "^ot:originalLabel": "Gelasinospora tetrasperma", 
+"^ot:ottId": 424728, 
+"^ot:ottTaxonName": "Gelasinospora tetrasperma", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 11835, 
 "@tb:identifier.taxonVariant": 28173, 
@@ -740,6 +947,8 @@
 }, 
 "Tl3365865": {
 "^ot:originalLabel": "Gnomonia gnomon", 
+"^ot:ottId": 343688, 
+"^ot:ottTaxonName": "Gnomonia gnomon", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 12365, 
 "@tb:identifier.taxonVariant": 29359, 
@@ -749,6 +958,8 @@
 }, 
 "Tl3365866": {
 "^ot:originalLabel": "Camarops ustulinoides", 
+"^ot:ottId": 538046, 
+"^ot:ottTaxonName": "Camarops ustulinoides", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 4636, 
 "@tb:identifier.taxonVariant": 11153, 
@@ -758,6 +969,8 @@
 }, 
 "Tl3365867": {
 "^ot:originalLabel": "Eutypa lata", 
+"^ot:ottId": 855116, 
+"^ot:ottTaxonName": "Eutypa lata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 10979, 
 "@tb:identifier.taxonVariant": 26249, 
@@ -767,6 +980,8 @@
 }, 
 "Tl3365868": {
 "^ot:originalLabel": "Cordyceps cardinalis", 
+"^ot:ottId": 441948, 
+"^ot:ottTaxonName": "Cordyceps cardinalis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 46311, 
 "@tb:identifier.taxonVariant": 108547, 
@@ -776,6 +991,8 @@
 }, 
 "Tl3365869": {
 "^ot:originalLabel": "Cryphonectria parasitica", 
+"^ot:ottId": 103005, 
+"^ot:ottTaxonName": "Cryphonectria parasitica", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 7570, 
 "@tb:identifier.taxonVariant": 18287, 
@@ -785,6 +1002,8 @@
 }, 
 "Tl3365870": {
 "^ot:originalLabel": "Falcocladium sphaeropedunculatum", 
+"^ot:ottId": 597597, 
+"^ot:ottTaxonName": "Falcocladium sphaeropedunculatum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 400556, 
 "@tb:identifier.taxonVariant": 407591, 
@@ -794,6 +1013,8 @@
 }, 
 "Tl3365871": {
 "^ot:originalLabel": "Bionectria ochroleuca", 
+"^ot:ottId": 5317399, 
+"^ot:ottTaxonName": "Bionectria ochroleuca", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3528, 
 "@tb:identifier.taxonVariant": 8464, 
@@ -821,10 +1042,14 @@
 "^skos:prefLabel": "Elaphocordyceps japonica"
 }, 
 "Tl3365874": {
-"^ot:originalLabel": "Cocoicola californica"
+"^ot:originalLabel": "Cocoicola californica", 
+"^ot:ottId": 3707017, 
+"^ot:ottTaxonName": "Cocoicola californica"
 }, 
 "Tl3365875": {
 "^ot:originalLabel": "Sordaria macrospora", 
+"^ot:ottId": 572456, 
+"^ot:ottTaxonName": "Sordaria macrospora", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 27342, 
 "@tb:identifier.taxonVariant": 63807, 
@@ -833,11 +1058,14 @@
 }
 }, 
 "Tl3365876": {
-"^ot:originalLabel": "Telimena bicincta"
+"^ot:originalLabel": "Telimena bicincta", 
+"^ot:ottId": 3706746, 
+"^ot:ottTaxonName": "Telimena bicincta"
 }, 
 "Tl3365877": {
-"^ot:altLabel": "Coniella australiensis", 
 "^ot:originalLabel": "Coniella australiensis IMI_261318", 
+"^ot:ottId": 868401, 
+"^ot:ottTaxonName": "Coniella australiensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6826, 
 "@tb:identifier.taxonVariant": 16556, 
@@ -846,8 +1074,9 @@
 }
 }, 
 "Tl3365878": {
-"^ot:altLabel": "Pleuroceras pleurostylum", 
 "^ot:originalLabel": "Pleuroceras pleurostylum CBS_90679", 
+"^ot:ottId": 822586, 
+"^ot:ottTaxonName": "Pleuroceras pleurostylum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22859, 
 "@tb:identifier.taxonVariant": 53279, 
@@ -856,14 +1085,19 @@
 }
 }, 
 "Tl3365879": {
-"^ot:originalLabel": "Melanconiella ellisii BPI_878343"
+"^ot:originalLabel": "Melanconiella ellisii BPI_878343", 
+"^ot:ottId": 915539, 
+"^ot:ottTaxonName": "Melanconiella ellisii"
 }, 
 "Tl3365880": {
-"^ot:originalLabel": "Ditopellopsis sp CBS_121471"
+"^ot:originalLabel": "Ditopellopsis sp CBS_121471", 
+"^ot:ottId": 481896, 
+"^ot:ottTaxonName": "Ditopellopsis"
 }, 
 "Tl3365881": {
-"^ot:altLabel": "Discula destructiva", 
 "^ot:originalLabel": "Discula destructiva CBS_109771", 
+"^ot:ottId": 873164, 
+"^ot:ottTaxonName": "Discula destructiva", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 9381, 
 "@tb:identifier.taxonVariant": 22434, 
@@ -872,11 +1106,14 @@
 }
 }, 
 "Tl3365882": {
-"^ot:originalLabel": "Coniella africana CBS_114133"
+"^ot:originalLabel": "Coniella africana CBS_114133", 
+"^ot:ottId": 6379539, 
+"^ot:ottTaxonName": "Coniella africana"
 }, 
 "Tl3365883": {
-"^ot:altLabel": "Calosphaeria pulchella", 
 "^ot:originalLabel": "Calosphaeria pulchella CBS_115999", 
+"^ot:ottId": 324855, 
+"^ot:ottTaxonName": "Calosphaeria pulchella", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 4559, 
 "@tb:identifier.taxonVariant": 10973, 
@@ -885,11 +1122,14 @@
 }
 }, 
 "Tl3365884": {
-"^ot:originalLabel": "Ambarignomonia petiolorum CBS_121227"
+"^ot:originalLabel": "Ambarignomonia petiolorum CBS_121227", 
+"^ot:ottId": 678042, 
+"^ot:ottTaxonName": "Ambarignomonia petiolorum"
 }, 
 "Tl3365885": {
-"^ot:altLabel": "Cryptodiaporthe aesculi", 
 "^ot:originalLabel": "Cryptodiaporthe aesculi AR_3580", 
+"^ot:ottId": 5316718, 
+"^ot:ottTaxonName": "Cryptodiaporthe aesculi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 7602, 
 "@tb:identifier.taxonVariant": 18340, 
@@ -901,17 +1141,22 @@
 "^ot:originalLabel": "Ditopella biseptata MFLU_17_0884"
 }, 
 "Tl3365887": {
-"^ot:originalLabel": "Cytospora hippophaes CFCC_89640"
+"^ot:originalLabel": "Cytospora hippophaes CFCC_89640", 
+"^ot:ottId": 3698037, 
+"^ot:ottTaxonName": "Cytospora hippophaes"
 }, 
 "Tl3365888": {
-"^ot:originalLabel": "Occultocarpon ailaoshanense LCM_52201"
+"^ot:originalLabel": "Occultocarpon ailaoshanense LCM_52201", 
+"^ot:ottId": 4052944, 
+"^ot:ottTaxonName": "Occultocarpon ailaoshanense"
 }, 
 "Tl3365889": {
 "^ot:originalLabel": "Juglanconis oblonga MAFF_410216"
 }, 
 "Tl3365890": {
-"^ot:altLabel": "Amphiporthe hranicensis", 
 "^ot:originalLabel": "Amphiporthe hranicensis CBS_119289", 
+"^ot:ottId": 583550, 
+"^ot:ottTaxonName": "Amphiporthe hranicensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 318530, 
 "@tb:identifier.taxonVariant": 362695, 
@@ -921,6 +1166,8 @@
 }, 
 "Tl3365891": {
 "^ot:originalLabel": "Calosphaeria africana STEU_6182", 
+"^ot:ottId": 364694, 
+"^ot:ottTaxonName": "Calosphaeria africana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 456457, 
 "@tb:identifier.taxonVariant": 604492
@@ -937,7 +1184,9 @@
 }
 }, 
 "Tl3365893": {
-"^ot:originalLabel": "Coniella koreana CBS_14397"
+"^ot:originalLabel": "Coniella koreana CBS_14397", 
+"^ot:ottId": 6379542, 
+"^ot:ottTaxonName": "Coniella koreana"
 }, 
 "Tl3365894": {
 "^ot:altLabel": "Cytospora chrysosperma", 
@@ -950,8 +1199,9 @@
 }
 }, 
 "Tl3365895": {
-"^ot:altLabel": "Chrysoporthe cubensis", 
 "^ot:originalLabel": "Chrysoporthe cubensis CMW_14394", 
+"^ot:ottId": 1052899, 
+"^ot:ottTaxonName": "Chrysoporthe cubensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6069, 
 "@tb:identifier.taxonVariant": 14623, 
@@ -960,8 +1210,9 @@
 }
 }, 
 "Tl3365896": {
-"^ot:altLabel": "Valsella salicis", 
 "^ot:originalLabel": "Valsella salicis AR_3514", 
+"^ot:ottId": 868404, 
+"^ot:ottTaxonName": "Valsella salicis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 30443, 
 "@tb:identifier.taxonVariant": 71024, 
@@ -970,8 +1221,9 @@
 }
 }, 
 "Tl3365897": {
-"^ot:altLabel": "Melanconis alni", 
 "^ot:originalLabel": "Melanconis alni AR_3500", 
+"^ot:ottId": 873170, 
+"^ot:ottTaxonName": "Melanconis alni", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 17208, 
 "@tb:identifier.taxonVariant": 40297, 
@@ -980,8 +1232,9 @@
 }
 }, 
 "Tl3365898": {
-"^ot:altLabel": "Coniella fragariae", 
 "^ot:originalLabel": "Coniella fragariae CBS_110394", 
+"^ot:ottId": 628282, 
+"^ot:ottTaxonName": "Coniella fragariae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6827, 
 "@tb:identifier.taxonVariant": 16559, 
@@ -1007,18 +1260,23 @@
 "^ot:originalLabel": "Microascospora rubi MFLU_17_0886"
 }, 
 "Tl3365902": {
-"^ot:originalLabel": "Pseudoplagiostoma variabile CBS_113067"
+"^ot:originalLabel": "Pseudoplagiostoma variabile CBS_113067", 
+"^ot:ottId": 303500, 
+"^ot:ottTaxonName": "Pseudoplagiostoma variabile"
 }, 
 "Tl3365903": {
 "^ot:originalLabel": "Pleuroceras tenellum CBS_121082", 
+"^ot:ottId": 982528, 
+"^ot:ottTaxonName": "Pleuroceras tenellum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 414620, 
 "@tb:identifier.taxonVariant": 548794
 }
 }, 
 "Tl3365904": {
-"^ot:altLabel": "Ophiognomonia melanostyla", 
 "^ot:originalLabel": "Ophiognomonia melanostyla LCM_38901", 
+"^ot:ottId": 764814, 
+"^ot:ottTaxonName": "Ophiognomonia melanostyla", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 623808, 
 "@tb:identifier.taxonVariant": 835392, 
@@ -1026,14 +1284,19 @@
 }
 }, 
 "Tl3365905": {
-"^ot:originalLabel": "Diaporthe cassines CBS_136440"
+"^ot:originalLabel": "Diaporthe cassines CBS_136440", 
+"^ot:ottId": 5316681, 
+"^ot:ottTaxonName": "Diaporthe cassines"
 }, 
 "Tl3365906": {
-"^ot:originalLabel": "Ophiognomonia vasiljevae AR_4298"
+"^ot:originalLabel": "Ophiognomonia vasiljevae AR_4298", 
+"^ot:ottId": 336870, 
+"^ot:ottTaxonName": "Ophiognomonia vasiljevae"
 }, 
 "Tl3365907": {
-"^ot:altLabel": "Apiognomonia errabunda", 
 "^ot:originalLabel": "Apiognomonia errabunda AR_2813", 
+"^ot:ottId": 157305, 
+"^ot:ottTaxonName": "Apiognomonia errabunda", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 2007, 
 "@tb:identifier.taxonVariant": 4833, 
@@ -1063,6 +1326,8 @@
 }, 
 "Tl3365910": {
 "^ot:originalLabel": "Sirococcus tsugae AR_4010", 
+"^ot:ottId": 1012674, 
+"^ot:ottTaxonName": "Sirococcus tsugae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 414623, 
 "@tb:identifier.taxonVariant": 548797
@@ -1085,14 +1350,17 @@
 "^ot:originalLabel": "Cytospora junipericola BBH_42444"
 }, 
 "Tl3365914": {
-"^ot:originalLabel": "Celoporthe eucalypti CMW_26913"
+"^ot:originalLabel": "Celoporthe eucalypti CMW_26913", 
+"^ot:ottId": 298822, 
+"^ot:ottTaxonName": "Celoporthe eucalypti"
 }, 
 "Tl3365915": {
 "^ot:originalLabel": "Juglanconis juglandina D96"
 }, 
 "Tl3365916": {
-"^ot:altLabel": "Ditopella ditopa", 
 "^ot:originalLabel": "Ditopella ditopa CBS_109748", 
+"^ot:ottId": 293512, 
+"^ot:ottTaxonName": "Ditopella ditopa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 9426, 
 "@tb:identifier.taxonVariant": 22519, 
@@ -1101,10 +1369,14 @@
 }
 }, 
 "Tl3365917": {
-"^ot:originalLabel": "Melanconiella chrysomelanconium MFLU_17_0879"
+"^ot:originalLabel": "Melanconiella chrysomelanconium MFLU_17_0879", 
+"^ot:ottId": 1067694, 
+"^ot:ottTaxonName": "Melanconiella chrysomelanconium"
 }, 
 "Tl3365918": {
-"^ot:originalLabel": "Cryptosporella suffusa CBS_121077"
+"^ot:originalLabel": "Cryptosporella suffusa CBS_121077", 
+"^ot:ottId": 982558, 
+"^ot:ottTaxonName": "Cryptosporella suffusa"
 }, 
 "Tl3365919": {
 "^ot:originalLabel": "Coniella straminea CBS_14922"
@@ -1113,11 +1385,14 @@
 "^ot:originalLabel": "Phaeoappendispora thailandensis MFLUCC_17_1762"
 }, 
 "Tl3365921": {
-"^ot:originalLabel": "Gnomoniopsis racemula AR_3892"
+"^ot:originalLabel": "Gnomoniopsis racemula AR_3892", 
+"^ot:ottId": 866558, 
+"^ot:ottTaxonName": "Gnomoniopsis racemula"
 }, 
 "Tl3365922": {
-"^ot:altLabel": "Mazzantia napelli", 
 "^ot:originalLabel": "Mazzantia napelli AR_3498", 
+"^ot:ottId": 343682, 
+"^ot:ottTaxonName": "Mazzantia napelli", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 17056, 
 "@tb:identifier.taxonVariant": 39927, 
@@ -1126,11 +1401,14 @@
 }
 }, 
 "Tl3365923": {
-"^ot:originalLabel": "Ophiodiaporthe cyatheae YMJ_1364"
+"^ot:originalLabel": "Ophiodiaporthe cyatheae YMJ_1364", 
+"^ot:ottId": 5263241, 
+"^ot:ottTaxonName": "Ophiodiaporthe cyatheae"
 }, 
 "Tl3365924": {
-"^ot:altLabel": "Gnomonia gnomon", 
 "^ot:originalLabel": "Gnomonia gnomon CBS_19953", 
+"^ot:ottId": 343688, 
+"^ot:ottTaxonName": "Gnomonia gnomon", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 12365, 
 "@tb:identifier.taxonVariant": 29359, 
@@ -1152,8 +1430,9 @@
 }
 }, 
 "Tl3365927": {
-"^ot:altLabel": "Chromendothia citrina", 
 "^ot:originalLabel": "Chromendothia citrina AR_3445", 
+"^ot:ottId": 918890, 
+"^ot:ottTaxonName": "Chromendothia citrina", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5979, 
 "@tb:identifier.taxonVariant": 14455, 
@@ -1162,8 +1441,9 @@
 }
 }, 
 "Tl3365928": {
-"^ot:altLabel": "Diaporthe rudis", 
 "^ot:originalLabel": "Diaporthe rudis IT_1526", 
+"^ot:ottId": 5316658, 
+"^ot:ottTaxonName": "Diaporthe rudis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 618043, 
 "@tb:identifier.taxonVariant": 827257, 
@@ -1183,8 +1463,9 @@
 "^ot:originalLabel": "Corynym arausiaca MFLUCC_15_1110"
 }, 
 "Tl3365933": {
-"^ot:altLabel": "Cytospora sacculus", 
 "^ot:originalLabel": "Cytospora sacculus CFCC_89625", 
+"^ot:ottId": 382305, 
+"^ot:ottTaxonName": "Cytospora sacculus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 227794, 
 "@tb:identifier.taxonVariant": 291384, 
@@ -1196,8 +1477,9 @@
 "^ot:originalLabel": "Hyaliappendispora galii MFLUCC_161208"
 }, 
 "Tl3365935": {
-"^ot:altLabel": "Celoporthe dispersa", 
 "^ot:originalLabel": "Celoporthe dispersa CMW_9978", 
+"^ot:ottId": 145923, 
+"^ot:ottTaxonName": "Celoporthe dispersa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 204484, 
 "@tb:identifier.taxonVariant": 274107, 
@@ -1206,8 +1488,9 @@
 }
 }, 
 "Tl3365936": {
-"^ot:altLabel": "Stilbospora macrosperma", 
 "^ot:originalLabel": "Stilbospora macrosperma CBS_121883", 
+"^ot:ottId": 737190, 
+"^ot:ottTaxonName": "Stilbospora macrosperma", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 616661, 
 "@tb:identifier.taxonVariant": 825229, 
@@ -1224,8 +1507,9 @@
 "^ot:originalLabel": "Jattaea mucronata MFLUCC_160534"
 }, 
 "Tl3365940": {
-"^ot:altLabel": "Phaeocytostroma ambiguum", 
 "^ot:originalLabel": "Phaeocytostroma ambiguum CPC_17077", 
+"^ot:ottId": 33984, 
+"^ot:ottTaxonName": "Phaeocytostroma ambiguum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 607247, 
 "@tb:identifier.taxonVariant": 810975, 
@@ -1233,13 +1517,19 @@
 }
 }, 
 "Tl3365941": {
-"^ot:originalLabel": "Pseudoplagiostoma oldii CBS_115722"
+"^ot:originalLabel": "Pseudoplagiostoma oldii CBS_115722", 
+"^ot:ottId": 303485, 
+"^ot:ottTaxonName": "Pseudoplagiostoma oldii"
 }, 
 "Tl3365942": {
-"^ot:originalLabel": "Pseudoplagiostoma eucalypti CPC_14161"
+"^ot:originalLabel": "Pseudoplagiostoma eucalypti CPC_14161", 
+"^ot:ottId": 1036495, 
+"^ot:ottTaxonName": "Pseudoplagiostoma eucalypti"
 }, 
 "Tl3365944": {
-"^ot:originalLabel": "Lamproconium desmazieri MFLUCC_15_0870"
+"^ot:originalLabel": "Lamproconium desmazieri MFLUCC_15_0870", 
+"^ot:ottId": 4089244, 
+"^ot:ottTaxonName": "Lamproconium desmazieri"
 }
 }
 }
@@ -1260,7 +1550,18 @@
 "Tr114303": {
 "@label": "diaporthaceae phylogram BI", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:undefined", 
+"^ot:curatedType": "Bayesian inference ", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn17910802", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 44, 
 "^tb:quality.tree": "Unrated", 
@@ -1910,7 +2211,18 @@
 "Tr114304": {
 "@label": "sordariomycetes phylogram BI", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:undefined", 
+"^ot:curatedType": "Bayesian inference ", 
+"^ot:inGroupClade": "Tn17910920", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn17910880", 
+"^ot:specifiedRoot": "Tn17910880", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 64, 
 "^tb:quality.tree": "Unrated", 
@@ -2928,7 +3240,18 @@
 "Tr114305": {
 "@label": "diaporthales chronogram gamma", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:undefined", 
+"^ot:curatedType": "Bayesian inference ", 
+"^ot:inGroupClade": "Tn17910941", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn17910990", 
+"^ot:specifiedRoot": "Tn17910990", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 67, 
 "^tb:quality.tree": "Unrated", 
@@ -4010,7 +4333,18 @@
 "Tr114306": {
 "@label": "diaporthales chronogram uniform", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:undefined", 
+"^ot:curatedType": "Bayesian inference ", 
+"^ot:inGroupClade": "Tn17911088", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn17911170", 
+"^ot:specifiedRoot": "Tn17911170", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 67, 
 "^tb:quality.tree": "Unrated", 
@@ -5092,7 +5426,18 @@
 "Tr114308": {
 "@label": "diaporthales phylogram BI", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:undefined", 
+"^ot:curatedType": "Bayesian inference ", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn17911425", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 77, 
 "^tb:quality.tree": "Unrated", 
