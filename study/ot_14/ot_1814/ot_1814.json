@@ -56,16 +56,106 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2018-10-29T14:18:29.043Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:curatorName": "Matt Girard", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}, 
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": "$1"
+}, 
+"old": {
+"$": "^(\\S*\\s+\\S*).*"
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2018-10-29T14:18:29.043Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Matt Girard"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S23282"
 }, 
+"^ot:focalClade": 908546, 
+"^ot:focalCladeOTTTaxonName": "Saccharomyces", 
 "^ot:otusElementOrder": [
 "Tls65580"
 ], 
@@ -75,6 +165,7 @@
 }, 
 "^ot:studyPublicationReference": "Godinho C.P., Dias P.J., Pon\u00e7ot E., & S\u00e1-correia I. 2018. The paralogous genes PDR18 and SNQ2, encoding multidrug resistance ABC transporters, derive from a recent duplication event, PDR18 being specific of the Saccharomyces genus. Frontiers in Genetics, 9(476).", 
 "^ot:studyYear": 2018, 
+"^ot:tag": [], 
 "^ot:taxonLinkPrefixes": {
 "@ubio": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:", 
 "@uniprot": "http://purl.uniprot.org/taxonomy/"
@@ -100,8 +191,9 @@
 "^skos:historyNote": "Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlOTUWriter@840218c $Rev$", 
 "otuById": {
 "Tl3362049": {
-"^ot:altLabel": "Saccharomyces cerevisiae", 
 "^ot:originalLabel": "Saccharomyces cerevisiae 31_7_3780", 
+"^ot:ottId": 356221, 
+"^ot:ottTaxonName": "Saccharomyces cerevisiae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 25995, 
 "@tb:identifier.taxonVariant": 60823, 
@@ -110,8 +202,9 @@
 }
 }, 
 "Tl3362050": {
-"^ot:altLabel": "Saccharomyces cerevisiae", 
 "^ot:originalLabel": "Saccharomyces cerevisiae 9_7_g00180", 
+"^ot:ottId": 356221, 
+"^ot:ottTaxonName": "Saccharomyces cerevisiae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 25995, 
 "@tb:identifier.taxonVariant": 60823, 
@@ -120,11 +213,14 @@
 }
 }, 
 "Tl3362051": {
-"^ot:originalLabel": "Kluyveromyces marxianus var._marxianus_1_1_a01880"
+"^ot:originalLabel": "Kluyveromyces marxianus var._marxianus_1_1_a01880", 
+"^ot:ottId": 806946, 
+"^ot:ottTaxonName": "Kluyveromyces marxianus"
 }, 
 "Tl3362052": {
-"^ot:altLabel": "Saccharomyces uvarum", 
 "^ot:originalLabel": "Saccharomyces uvarum 1_7.3", 
+"^ot:ottId": 351576, 
+"^ot:ottTaxonName": "Saccharomyces uvarum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 209699, 
 "@tb:identifier.taxonVariant": 278415, 
@@ -133,8 +229,9 @@
 }
 }, 
 "Tl3362053": {
-"^ot:altLabel": "Saccharomyces cerevisiae", 
 "^ot:originalLabel": "Saccharomyces cerevisiae 25_7_g03880", 
+"^ot:ottId": 356221, 
+"^ot:ottTaxonName": "Saccharomyces cerevisiae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 25995, 
 "@tb:identifier.taxonVariant": 60823, 
@@ -143,8 +240,9 @@
 }
 }, 
 "Tl3362054": {
-"^ot:altLabel": "Saccharomyces mikatae", 
 "^ot:originalLabel": "Saccharomyces mikatae 1_4.244", 
+"^ot:ottId": 213737, 
+"^ot:ottTaxonName": "Saccharomyces mikatae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 117818, 
 "@tb:identifier.taxonVariant": 196198, 
@@ -153,8 +251,9 @@
 }
 }, 
 "Tl3362055": {
-"^ot:altLabel": "Saccharomyces cerevisiae", 
 "^ot:originalLabel": "Saccharomyces cerevisiae 58_71_bs00120_AND_Saccharomyces_cerevisiae_58_71_bs00110", 
+"^ot:ottId": 356221, 
+"^ot:ottTaxonName": "Saccharomyces cerevisiae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 25995, 
 "@tb:identifier.taxonVariant": 60823, 
@@ -163,8 +262,9 @@
 }
 }, 
 "Tl3362056": {
-"^ot:altLabel": "Saccharomyces cerevisiae", 
 "^ot:originalLabel": "Saccharomyces cerevisiae 8_2_b02430", 
+"^ot:ottId": 356221, 
+"^ot:ottTaxonName": "Saccharomyces cerevisiae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 25995, 
 "@tb:identifier.taxonVariant": 60823, 
@@ -173,8 +273,9 @@
 }
 }, 
 "Tl3362057": {
-"^ot:altLabel": "Eremothecium cymbalariae", 
 "^ot:originalLabel": "Eremothecium cymbalariae 1_3604", 
+"^ot:ottId": 741640, 
+"^ot:ottTaxonName": "Eremothecium cymbalariae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 67903, 
 "@tb:identifier.taxonVariant": 417384, 
@@ -183,8 +284,9 @@
 }
 }, 
 "Tl3362058": {
-"^ot:altLabel": "Kluyveromyces wickerhamii", 
 "^ot:originalLabel": "Kluyveromyces wickerhamii 1_33_ag00170", 
+"^ot:ottId": 664823, 
+"^ot:ottTaxonName": "Kluyveromyces wickerhamii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 72142, 
 "@tb:identifier.taxonVariant": 148548, 
@@ -193,8 +295,9 @@
 }
 }, 
 "Tl3362059": {
-"^ot:altLabel": "Tetrapisispora phaffii", 
 "^ot:originalLabel": "Tetrapisispora phaffii 1_a04220", 
+"^ot:ottId": 213957, 
+"^ot:ottTaxonName": "Tetrapisispora phaffii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 117354, 
 "@tb:identifier.taxonVariant": 195699, 
@@ -203,8 +306,9 @@
 }
 }, 
 "Tl3362060": {
-"^ot:altLabel": "Saccharomyces cerevisiae", 
 "^ot:originalLabel": "Saccharomyces cerevisiae 5_33_ag00510", 
+"^ot:ottId": 356221, 
+"^ot:ottTaxonName": "Saccharomyces cerevisiae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 25995, 
 "@tb:identifier.taxonVariant": 60823, 
@@ -213,8 +317,9 @@
 }
 }, 
 "Tl3362061": {
-"^ot:altLabel": "Saccharomyces cerevisiae", 
 "^ot:originalLabel": "Saccharomyces cerevisiae 56_17_q01110", 
+"^ot:ottId": 356221, 
+"^ot:ottTaxonName": "Saccharomyces cerevisiae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 25995, 
 "@tb:identifier.taxonVariant": 60823, 
@@ -223,8 +328,9 @@
 }
 }, 
 "Tl3362062": {
-"^ot:altLabel": "Saccharomyces cerevisiae", 
 "^ot:originalLabel": "Saccharomyces cerevisiae 6_169_fm00160", 
+"^ot:ottId": 356221, 
+"^ot:ottTaxonName": "Saccharomyces cerevisiae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 25995, 
 "@tb:identifier.taxonVariant": 60823, 
@@ -233,8 +339,9 @@
 }
 }, 
 "Tl3362063": {
-"^ot:altLabel": "Saccharomyces cerevisiae", 
 "^ot:originalLabel": "Saccharomyces cerevisiae 34_1_2320", 
+"^ot:ottId": 356221, 
+"^ot:ottTaxonName": "Saccharomyces cerevisiae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 25995, 
 "@tb:identifier.taxonVariant": 60823, 
@@ -243,8 +350,9 @@
 }
 }, 
 "Tl3362064": {
-"^ot:altLabel": "Saccharomyces paradoxus", 
 "^ot:originalLabel": "Saccharomyces paradoxus 21_8_h03870", 
+"^ot:ottId": 1019879, 
+"^ot:ottTaxonName": "Saccharomyces paradoxus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 56401, 
 "@tb:identifier.taxonVariant": 127997, 
@@ -253,8 +361,9 @@
 }
 }, 
 "Tl3362065": {
-"^ot:altLabel": "Saccharomyces paradoxus", 
 "^ot:originalLabel": "Saccharomyces paradoxus 25_1_a02460", 
+"^ot:ottId": 1019879, 
+"^ot:ottTaxonName": "Saccharomyces paradoxus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 56401, 
 "@tb:identifier.taxonVariant": 127997, 
@@ -263,8 +372,9 @@
 }
 }, 
 "Tl3362066": {
-"^ot:altLabel": "Saccharomyces cerevisiae", 
 "^ot:originalLabel": "Saccharomyces cerevisiae 32_7_3770", 
+"^ot:ottId": 356221, 
+"^ot:ottTaxonName": "Saccharomyces cerevisiae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 25995, 
 "@tb:identifier.taxonVariant": 60823, 
@@ -273,8 +383,9 @@
 }
 }, 
 "Tl3362067": {
-"^ot:altLabel": "Tetrapisispora phaffii", 
 "^ot:originalLabel": "Tetrapisispora phaffii 1_m00640", 
+"^ot:ottId": 213957, 
+"^ot:ottTaxonName": "Tetrapisispora phaffii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 117354, 
 "@tb:identifier.taxonVariant": 195699, 
@@ -283,8 +394,9 @@
 }
 }, 
 "Tl3362068": {
-"^ot:altLabel": "Saccharomyces cerevisiae", 
 "^ot:originalLabel": "Saccharomyces cerevisiae 1_ydr011w", 
+"^ot:ottId": 356221, 
+"^ot:ottTaxonName": "Saccharomyces cerevisiae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 25995, 
 "@tb:identifier.taxonVariant": 60823, 
@@ -293,8 +405,9 @@
 }
 }, 
 "Tl3362069": {
-"^ot:altLabel": "Saccharomyces cerevisiae", 
 "^ot:originalLabel": "Saccharomyces cerevisiae 23_1_2290", 
+"^ot:ottId": 356221, 
+"^ot:ottTaxonName": "Saccharomyces cerevisiae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 25995, 
 "@tb:identifier.taxonVariant": 60823, 
@@ -303,8 +416,9 @@
 }
 }, 
 "Tl3362070": {
-"^ot:altLabel": "Saccharomyces cerevisiae", 
 "^ot:originalLabel": "Saccharomyces cerevisiae 17_7_g03930", 
+"^ot:ottId": 356221, 
+"^ot:ottTaxonName": "Saccharomyces cerevisiae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 25995, 
 "@tb:identifier.taxonVariant": 60823, 
@@ -313,8 +427,9 @@
 }
 }, 
 "Tl3362071": {
-"^ot:altLabel": "Saccharomyces cerevisiae", 
 "^ot:originalLabel": "Saccharomyces cerevisiae 35_7_3840", 
+"^ot:ottId": 356221, 
+"^ot:ottTaxonName": "Saccharomyces cerevisiae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 25995, 
 "@tb:identifier.taxonVariant": 60823, 
@@ -323,8 +438,9 @@
 }
 }, 
 "Tl3362072": {
-"^ot:altLabel": "Saccharomyces cerevisiae", 
 "^ot:originalLabel": "Saccharomyces cerevisiae 47_1_a02400", 
+"^ot:ottId": 356221, 
+"^ot:ottTaxonName": "Saccharomyces cerevisiae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 25995, 
 "@tb:identifier.taxonVariant": 60823, 
@@ -333,11 +449,14 @@
 }
 }, 
 "Tl3362073": {
-"^ot:originalLabel": "Saccharomyces eubayanus 1_4_d02400"
+"^ot:originalLabel": "Saccharomyces eubayanus 1_4_d02400", 
+"^ot:ottId": 723144, 
+"^ot:ottTaxonName": "Saccharomyces eubayanus"
 }, 
 "Tl3362074": {
-"^ot:altLabel": "Saccharomyces cerevisiae", 
 "^ot:originalLabel": "Saccharomyces cerevisiae 2_1_a02390", 
+"^ot:ottId": 356221, 
+"^ot:ottTaxonName": "Saccharomyces cerevisiae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 25995, 
 "@tb:identifier.taxonVariant": 60823, 
@@ -346,8 +465,9 @@
 }
 }, 
 "Tl3362075": {
-"^ot:altLabel": "Saccharomyces cerevisiae", 
 "^ot:originalLabel": "Saccharomyces cerevisiae 34_8_3770", 
+"^ot:ottId": 356221, 
+"^ot:ottTaxonName": "Saccharomyces cerevisiae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 25995, 
 "@tb:identifier.taxonVariant": 60823, 
@@ -356,11 +476,14 @@
 }
 }, 
 "Tl3362076": {
-"^ot:originalLabel": "Saccharomyces arboricola 1_2_b02590"
+"^ot:originalLabel": "Saccharomyces arboricola 1_2_b02590", 
+"^ot:ottId": 34134, 
+"^ot:ottTaxonName": "Saccharomyces arboricola"
 }, 
 "Tl3362077": {
-"^ot:altLabel": "Saccharomyces cerevisiae", 
 "^ot:originalLabel": "Saccharomyces cerevisiae 15_1_a02420", 
+"^ot:ottId": 356221, 
+"^ot:ottTaxonName": "Saccharomyces cerevisiae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 25995, 
 "@tb:identifier.taxonVariant": 60823, 
@@ -369,8 +492,9 @@
 }
 }, 
 "Tl3362078": {
-"^ot:altLabel": "Naumovozyma castellii", 
 "^ot:originalLabel": "Naumovozyma castellii 1_e01640", 
+"^ot:ottId": 1029336, 
+"^ot:ottTaxonName": "Naumovozyma castellii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 621221, 
 "@tb:identifier.taxonVariant": 831944, 
@@ -379,8 +503,9 @@
 }
 }, 
 "Tl3362079": {
-"^ot:altLabel": "Saccharomyces cerevisiae", 
 "^ot:originalLabel": "Saccharomyces cerevisiae 60_4_d02440", 
+"^ot:ottId": 356221, 
+"^ot:ottTaxonName": "Saccharomyces cerevisiae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 25995, 
 "@tb:identifier.taxonVariant": 60823, 
@@ -389,8 +514,9 @@
 }
 }, 
 "Tl3362080": {
-"^ot:altLabel": "Saccharomyces bayanus", 
 "^ot:originalLabel": "Saccharomyces bayanus 1_58_bf00280", 
+"^ot:ottId": 908548, 
+"^ot:ottTaxonName": "Saccharomyces bayanus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 25994, 
 "@tb:identifier.taxonVariant": 60819, 
@@ -399,8 +525,9 @@
 }
 }, 
 "Tl3362081": {
-"^ot:altLabel": "Saccharomyces cerevisiae", 
 "^ot:originalLabel": "Saccharomyces cerevisiae 31_1_2300", 
+"^ot:ottId": 356221, 
+"^ot:ottTaxonName": "Saccharomyces cerevisiae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 25995, 
 "@tb:identifier.taxonVariant": 60823, 
@@ -409,8 +536,9 @@
 }
 }, 
 "Tl3362082": {
-"^ot:altLabel": "Saccharomyces cerevisiae", 
 "^ot:originalLabel": "Saccharomyces cerevisiae 58_25_y00780", 
+"^ot:ottId": 356221, 
+"^ot:ottTaxonName": "Saccharomyces cerevisiae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 25995, 
 "@tb:identifier.taxonVariant": 60823, 
@@ -419,8 +547,9 @@
 }
 }, 
 "Tl3362083": {
-"^ot:altLabel": "Saccharomyces cerevisiae", 
 "^ot:originalLabel": "Saccharomyces cerevisiae 56_1_a02020", 
+"^ot:ottId": 356221, 
+"^ot:ottTaxonName": "Saccharomyces cerevisiae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 25995, 
 "@tb:identifier.taxonVariant": 60823, 
@@ -429,8 +558,9 @@
 }
 }, 
 "Tl3362084": {
-"^ot:altLabel": "Saccharomyces cerevisiae", 
 "^ot:originalLabel": "Saccharomyces cerevisiae 50_1_a02410_AND_Saccharomyces_cerevisiae_50_1_a02420", 
+"^ot:ottId": 356221, 
+"^ot:ottTaxonName": "Saccharomyces cerevisiae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 25995, 
 "@tb:identifier.taxonVariant": 60823, 
@@ -439,8 +569,9 @@
 }
 }, 
 "Tl3362085": {
-"^ot:altLabel": "Saccharomyces mikatae", 
 "^ot:originalLabel": "Saccharomyces mikatae 1_17.26", 
+"^ot:ottId": 213737, 
+"^ot:ottTaxonName": "Saccharomyces mikatae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 117818, 
 "@tb:identifier.taxonVariant": 196198, 
@@ -449,8 +580,9 @@
 }
 }, 
 "Tl3362086": {
-"^ot:altLabel": "Saccharomyces paradoxus", 
 "^ot:originalLabel": "Saccharomyces paradoxus 23_1_a02480", 
+"^ot:ottId": 1019879, 
+"^ot:ottTaxonName": "Saccharomyces paradoxus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 56401, 
 "@tb:identifier.taxonVariant": 127997, 
@@ -459,8 +591,9 @@
 }
 }, 
 "Tl3362087": {
-"^ot:altLabel": "Saccharomyces paradoxus", 
 "^ot:originalLabel": "Saccharomyces paradoxus 14_1_a02440", 
+"^ot:ottId": 1019879, 
+"^ot:ottTaxonName": "Saccharomyces paradoxus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 56401, 
 "@tb:identifier.taxonVariant": 127997, 
@@ -469,8 +602,9 @@
 }
 }, 
 "Tl3362088": {
-"^ot:altLabel": "Saccharomyces paradoxus", 
 "^ot:originalLabel": "Saccharomyces paradoxus 11_8_h03830", 
+"^ot:ottId": 1019879, 
+"^ot:ottTaxonName": "Saccharomyces paradoxus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 56401, 
 "@tb:identifier.taxonVariant": 127997, 
@@ -479,8 +613,9 @@
 }
 }, 
 "Tl3362089": {
-"^ot:altLabel": "Torulaspora delbrueckii", 
 "^ot:originalLabel": "Torulaspora delbrueckii 1_d04040", 
+"^ot:ottId": 959627, 
+"^ot:ottTaxonName": "Torulaspora delbrueckii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 29241, 
 "@tb:identifier.taxonVariant": 68143, 
@@ -489,8 +624,9 @@
 }
 }, 
 "Tl3362090": {
-"^ot:altLabel": "Saccharomyces paradoxus", 
 "^ot:originalLabel": "Saccharomyces paradoxus 5_1_2350", 
+"^ot:ottId": 1019879, 
+"^ot:ottTaxonName": "Saccharomyces paradoxus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 56401, 
 "@tb:identifier.taxonVariant": 127997, 
@@ -499,8 +635,9 @@
 }
 }, 
 "Tl3362091": {
-"^ot:altLabel": "Kluyveromyces lactis", 
 "^ot:originalLabel": "Kluyveromyces lactis 1_d03432g", 
+"^ot:ottId": 538138, 
+"^ot:ottTaxonName": "Kluyveromyces lactis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 15025, 
 "@tb:identifier.taxonVariant": 35294, 
@@ -509,8 +646,9 @@
 }
 }, 
 "Tl3362092": {
-"^ot:altLabel": "Saccharomyces mikatae", 
 "^ot:originalLabel": "Saccharomyces mikatae 1_14.399", 
+"^ot:ottId": 213737, 
+"^ot:ottTaxonName": "Saccharomyces mikatae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 117818, 
 "@tb:identifier.taxonVariant": 196198, 
@@ -519,8 +657,9 @@
 }
 }, 
 "Tl3362093": {
-"^ot:altLabel": "Saccharomyces cerevisiae", 
 "^ot:originalLabel": "Saccharomyces cerevisiae 49_1_a02460", 
+"^ot:ottId": 356221, 
+"^ot:ottTaxonName": "Saccharomyces cerevisiae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 25995, 
 "@tb:identifier.taxonVariant": 60823, 
@@ -529,8 +668,9 @@
 }
 }, 
 "Tl3362094": {
-"^ot:altLabel": "Saccharomyces cerevisiae", 
 "^ot:originalLabel": "Saccharomyces cerevisiae 19_7_3840", 
+"^ot:ottId": 356221, 
+"^ot:ottTaxonName": "Saccharomyces cerevisiae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 25995, 
 "@tb:identifier.taxonVariant": 60823, 
@@ -539,8 +679,9 @@
 }
 }, 
 "Tl3362095": {
-"^ot:altLabel": "Saccharomyces paradoxus", 
 "^ot:originalLabel": "Saccharomyces paradoxus 4_1_a02470", 
+"^ot:ottId": 1019879, 
+"^ot:ottTaxonName": "Saccharomyces paradoxus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 56401, 
 "@tb:identifier.taxonVariant": 127997, 
@@ -549,8 +690,9 @@
 }
 }, 
 "Tl3362096": {
-"^ot:altLabel": "Saccharomyces paradoxus", 
 "^ot:originalLabel": "Saccharomyces paradoxus 25_8_h03870", 
+"^ot:ottId": 1019879, 
+"^ot:ottTaxonName": "Saccharomyces paradoxus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 56401, 
 "@tb:identifier.taxonVariant": 127997, 
@@ -559,8 +701,9 @@
 }
 }, 
 "Tl3362097": {
-"^ot:altLabel": "Saccharomyces cerevisiae", 
 "^ot:originalLabel": "Saccharomyces cerevisiae 53_29_ac00130", 
+"^ot:ottId": 356221, 
+"^ot:ottTaxonName": "Saccharomyces cerevisiae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 25995, 
 "@tb:identifier.taxonVariant": 60823, 
@@ -569,8 +712,9 @@
 }
 }, 
 "Tl3362098": {
-"^ot:altLabel": "Saccharomyces cerevisiae", 
 "^ot:originalLabel": "Saccharomyces cerevisiae 8_73_bu00100", 
+"^ot:ottId": 356221, 
+"^ot:ottTaxonName": "Saccharomyces cerevisiae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 25995, 
 "@tb:identifier.taxonVariant": 60823, 
@@ -579,8 +723,9 @@
 }
 }, 
 "Tl3362099": {
-"^ot:altLabel": "Saccharomyces paradoxus", 
 "^ot:originalLabel": "Saccharomyces paradoxus 2_1_a02460", 
+"^ot:ottId": 1019879, 
+"^ot:ottTaxonName": "Saccharomyces paradoxus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 56401, 
 "@tb:identifier.taxonVariant": 127997, 
@@ -589,8 +734,9 @@
 }
 }, 
 "Tl3362100": {
-"^ot:altLabel": "Zygosaccharomyces bailii", 
 "^ot:originalLabel": "Zygosaccharomyces bailii 2_2_b00600", 
+"^ot:ottId": 959640, 
+"^ot:ottTaxonName": "Zygosaccharomyces bailii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 31336, 
 "@tb:identifier.taxonVariant": 73103, 
@@ -599,8 +745,9 @@
 }
 }, 
 "Tl3362101": {
-"^ot:altLabel": "Lachancea thermotolerans", 
 "^ot:originalLabel": "Lachancea thermotolerans 1_a01914g", 
+"^ot:ottId": 768642, 
+"^ot:ottTaxonName": "Lachancea thermotolerans", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 332724, 
 "@tb:identifier.taxonVariant": 372455, 
@@ -609,8 +756,9 @@
 }
 }, 
 "Tl3362102": {
-"^ot:altLabel": "Saccharomyces paradoxus", 
 "^ot:originalLabel": "Saccharomyces paradoxus 10_8_3760", 
+"^ot:ottId": 1019879, 
+"^ot:ottTaxonName": "Saccharomyces paradoxus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 56401, 
 "@tb:identifier.taxonVariant": 127997, 
@@ -619,8 +767,9 @@
 }
 }, 
 "Tl3362103": {
-"^ot:altLabel": "Saccharomyces cerevisiae", 
 "^ot:originalLabel": "Saccharomyces cerevisiae 4_8_h03690", 
+"^ot:ottId": 356221, 
+"^ot:ottTaxonName": "Saccharomyces cerevisiae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 25995, 
 "@tb:identifier.taxonVariant": 60823, 
@@ -629,8 +778,9 @@
 }
 }, 
 "Tl3362104": {
-"^ot:altLabel": "Saccharomyces kudriavzevii", 
 "^ot:originalLabel": "Saccharomyces kudriavzevii 1_4.262", 
+"^ot:ottId": 144042, 
+"^ot:ottTaxonName": "Saccharomyces kudriavzevii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 117817, 
 "@tb:identifier.taxonVariant": 196197, 
@@ -639,8 +789,9 @@
 }
 }, 
 "Tl3362105": {
-"^ot:altLabel": "Saccharomyces paradoxus", 
 "^ot:originalLabel": "Saccharomyces paradoxus 17_8_3730", 
+"^ot:ottId": 1019879, 
+"^ot:ottTaxonName": "Saccharomyces paradoxus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 56401, 
 "@tb:identifier.taxonVariant": 127997, 
@@ -649,8 +800,9 @@
 }
 }, 
 "Tl3362106": {
-"^ot:altLabel": "Saccharomyces cerevisiae", 
 "^ot:originalLabel": "Saccharomyces cerevisiae 15_7_g03870", 
+"^ot:ottId": 356221, 
+"^ot:ottTaxonName": "Saccharomyces cerevisiae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 25995, 
 "@tb:identifier.taxonVariant": 60823, 
@@ -659,8 +811,9 @@
 }
 }, 
 "Tl3362107": {
-"^ot:altLabel": "Saccharomyces paradoxus", 
 "^ot:originalLabel": "Saccharomyces paradoxus 23_8_h03850", 
+"^ot:ottId": 1019879, 
+"^ot:ottTaxonName": "Saccharomyces paradoxus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 56401, 
 "@tb:identifier.taxonVariant": 127997, 
@@ -669,8 +822,9 @@
 }
 }, 
 "Tl3362108": {
-"^ot:altLabel": "Saccharomyces paradoxus", 
 "^ot:originalLabel": "Saccharomyces paradoxus 7_1_2370", 
+"^ot:ottId": 1019879, 
+"^ot:ottTaxonName": "Saccharomyces paradoxus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 56401, 
 "@tb:identifier.taxonVariant": 127997, 
@@ -679,8 +833,9 @@
 }
 }, 
 "Tl3362109": {
-"^ot:altLabel": "Saccharomyces cerevisiae", 
 "^ot:originalLabel": "Saccharomyces cerevisiae 57_1_a02410", 
+"^ot:ottId": 356221, 
+"^ot:ottTaxonName": "Saccharomyces cerevisiae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 25995, 
 "@tb:identifier.taxonVariant": 60823, 
@@ -689,8 +844,9 @@
 }
 }, 
 "Tl3362110": {
-"^ot:altLabel": "Zygosaccharomyces rouxii", 
 "^ot:originalLabel": "Zygosaccharomyces rouxii 1_b14762g", 
+"^ot:ottId": 959638, 
+"^ot:ottTaxonName": "Zygosaccharomyces rouxii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 31337, 
 "@tb:identifier.taxonVariant": 73106, 
@@ -699,8 +855,9 @@
 }
 }, 
 "Tl3362111": {
-"^ot:altLabel": "Saccharomyces cerevisiae", 
 "^ot:originalLabel": "Saccharomyces cerevisiae 6_120_dp00100", 
+"^ot:ottId": 356221, 
+"^ot:ottTaxonName": "Saccharomyces cerevisiae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 25995, 
 "@tb:identifier.taxonVariant": 60823, 
@@ -709,8 +866,9 @@
 }
 }, 
 "Tl3362112": {
-"^ot:altLabel": "Zygosaccharomyces bailii", 
 "^ot:originalLabel": "Zygosaccharomyces bailii 3_2_b02230", 
+"^ot:ottId": 959640, 
+"^ot:ottTaxonName": "Zygosaccharomyces bailii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 31336, 
 "@tb:identifier.taxonVariant": 73103, 
@@ -719,8 +877,9 @@
 }
 }, 
 "Tl3362113": {
-"^ot:altLabel": "Saccharomyces cerevisiae", 
 "^ot:originalLabel": "Saccharomyces cerevisiae 22_1_2300", 
+"^ot:ottId": 356221, 
+"^ot:ottTaxonName": "Saccharomyces cerevisiae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 25995, 
 "@tb:identifier.taxonVariant": 60823, 
@@ -729,8 +888,9 @@
 }
 }, 
 "Tl3362114": {
-"^ot:altLabel": "Saccharomyces cerevisiae", 
 "^ot:originalLabel": "Saccharomyces cerevisiae 24_8_3780", 
+"^ot:ottId": 356221, 
+"^ot:ottTaxonName": "Saccharomyces cerevisiae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 25995, 
 "@tb:identifier.taxonVariant": 60823, 
@@ -739,8 +899,9 @@
 }
 }, 
 "Tl3362115": {
-"^ot:altLabel": "Zygosaccharomyces rouxii", 
 "^ot:originalLabel": "Zygosaccharomyces rouxii 1_a04114g", 
+"^ot:ottId": 959638, 
+"^ot:ottTaxonName": "Zygosaccharomyces rouxii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 31337, 
 "@tb:identifier.taxonVariant": 73106, 
@@ -749,8 +910,9 @@
 }
 }, 
 "Tl3362116": {
-"^ot:altLabel": "Zygosaccharomyces bailii", 
 "^ot:originalLabel": "Zygosaccharomyces bailii 2_14_n01490", 
+"^ot:ottId": 959640, 
+"^ot:ottTaxonName": "Zygosaccharomyces bailii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 31336, 
 "@tb:identifier.taxonVariant": 73103, 
@@ -759,8 +921,9 @@
 }
 }, 
 "Tl3362117": {
-"^ot:altLabel": "Saccharomyces cerevisiae", 
 "^ot:originalLabel": "Saccharomyces cerevisiae 29_1_2290", 
+"^ot:ottId": 356221, 
+"^ot:ottTaxonName": "Saccharomyces cerevisiae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 25995, 
 "@tb:identifier.taxonVariant": 60823, 
@@ -769,8 +932,9 @@
 }
 }, 
 "Tl3362118": {
-"^ot:altLabel": "Saccharomyces paradoxus", 
 "^ot:originalLabel": "Saccharomyces paradoxus 18_1_2390", 
+"^ot:ottId": 1019879, 
+"^ot:ottTaxonName": "Saccharomyces paradoxus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 56401, 
 "@tb:identifier.taxonVariant": 127997, 
@@ -779,8 +943,9 @@
 }
 }, 
 "Tl3362119": {
-"^ot:altLabel": "Saccharomyces cerevisiae", 
 "^ot:originalLabel": "Saccharomyces cerevisiae 21_7_3790", 
+"^ot:ottId": 356221, 
+"^ot:ottTaxonName": "Saccharomyces cerevisiae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 25995, 
 "@tb:identifier.taxonVariant": 60823, 
@@ -789,8 +954,9 @@
 }
 }, 
 "Tl3362120": {
-"^ot:altLabel": "Saccharomyces cerevisiae", 
 "^ot:originalLabel": "Saccharomyces cerevisiae 1_ynr070w", 
+"^ot:ottId": 356221, 
+"^ot:ottTaxonName": "Saccharomyces cerevisiae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 25995, 
 "@tb:identifier.taxonVariant": 60823, 
@@ -799,8 +965,9 @@
 }
 }, 
 "Tl3362121": {
-"^ot:altLabel": "Saccharomyces paradoxus", 
 "^ot:originalLabel": "Saccharomyces paradoxus 8_1_2350", 
+"^ot:ottId": 1019879, 
+"^ot:ottTaxonName": "Saccharomyces paradoxus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 56401, 
 "@tb:identifier.taxonVariant": 127997, 
@@ -809,8 +976,9 @@
 }
 }, 
 "Tl3362122": {
-"^ot:altLabel": "Saccharomyces cerevisiae", 
 "^ot:originalLabel": "Saccharomyces cerevisiae 21_1_2310", 
+"^ot:ottId": 356221, 
+"^ot:ottTaxonName": "Saccharomyces cerevisiae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 25995, 
 "@tb:identifier.taxonVariant": 60823, 
@@ -819,8 +987,9 @@
 }
 }, 
 "Tl3362123": {
-"^ot:altLabel": "Saccharomyces cerevisiae", 
 "^ot:originalLabel": "Saccharomyces cerevisiae 57_8_h03900", 
+"^ot:ottId": 356221, 
+"^ot:ottTaxonName": "Saccharomyces cerevisiae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 25995, 
 "@tb:identifier.taxonVariant": 60823, 
@@ -829,8 +998,9 @@
 }
 }, 
 "Tl3362124": {
-"^ot:altLabel": "Saccharomyces cerevisiae", 
 "^ot:originalLabel": "Saccharomyces cerevisiae 4_1_a02360", 
+"^ot:ottId": 356221, 
+"^ot:ottTaxonName": "Saccharomyces cerevisiae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 25995, 
 "@tb:identifier.taxonVariant": 60823, 
@@ -840,14 +1010,17 @@
 }, 
 "Tl3362125": {
 "^ot:originalLabel": "Lachancea waltii 1_23.5161", 
+"^ot:ottId": 858843, 
+"^ot:ottTaxonName": "Lachancea waltii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 46281, 
 "@tb:identifier.taxonVariant": 781490
 }
 }, 
 "Tl3362126": {
-"^ot:altLabel": "Saccharomyces cerevisiae", 
 "^ot:originalLabel": "Saccharomyces cerevisiae 37_1_a02430", 
+"^ot:ottId": 356221, 
+"^ot:ottTaxonName": "Saccharomyces cerevisiae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 25995, 
 "@tb:identifier.taxonVariant": 60823, 
@@ -856,8 +1029,9 @@
 }
 }, 
 "Tl3362127": {
-"^ot:altLabel": "Saccharomyces cerevisiae", 
 "^ot:originalLabel": "Saccharomyces cerevisiae 25_1_a02400", 
+"^ot:ottId": 356221, 
+"^ot:ottTaxonName": "Saccharomyces cerevisiae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 25995, 
 "@tb:identifier.taxonVariant": 60823, 
@@ -866,8 +1040,9 @@
 }
 }, 
 "Tl3362128": {
-"^ot:altLabel": "Saccharomyces cerevisiae", 
 "^ot:originalLabel": "Saccharomyces cerevisiae 7_1_a02410", 
+"^ot:ottId": 356221, 
+"^ot:ottTaxonName": "Saccharomyces cerevisiae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 25995, 
 "@tb:identifier.taxonVariant": 60823, 
@@ -876,8 +1051,9 @@
 }
 }, 
 "Tl3362129": {
-"^ot:altLabel": "Saccharomyces cerevisiae", 
 "^ot:originalLabel": "Saccharomyces cerevisiae 37_7_g03850", 
+"^ot:ottId": 356221, 
+"^ot:ottTaxonName": "Saccharomyces cerevisiae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 25995, 
 "@tb:identifier.taxonVariant": 60823, 
@@ -886,8 +1062,9 @@
 }
 }, 
 "Tl3362130": {
-"^ot:altLabel": "Naumovozyma dairenensis", 
 "^ot:originalLabel": "Naumovozyma dairenensis 1_g01840", 
+"^ot:ottId": 1059912, 
+"^ot:ottTaxonName": "Naumovozyma dairenensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 624665, 
 "@tb:identifier.taxonVariant": 836501, 
@@ -896,8 +1073,9 @@
 }
 }, 
 "Tl3362131": {
-"^ot:altLabel": "Saccharomyces cerevisiae", 
 "^ot:originalLabel": "Saccharomyces cerevisiae 40_1_a02390", 
+"^ot:ottId": 356221, 
+"^ot:ottTaxonName": "Saccharomyces cerevisiae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 25995, 
 "@tb:identifier.taxonVariant": 60823, 
@@ -906,11 +1084,14 @@
 }
 }, 
 "Tl3362132": {
-"^ot:originalLabel": "Saccharomyces arboricola 1_8_h03780"
+"^ot:originalLabel": "Saccharomyces arboricola 1_8_h03780", 
+"^ot:ottId": 34134, 
+"^ot:ottTaxonName": "Saccharomyces arboricola"
 }, 
 "Tl3362133": {
-"^ot:altLabel": "Lachancea kluyveri", 
 "^ot:originalLabel": "Lachancea kluyveri 1_c11616g", 
+"^ot:ottId": 908562, 
+"^ot:ottTaxonName": "Lachancea kluyveri", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51182, 
 "@tb:identifier.taxonVariant": 120947, 
@@ -919,8 +1100,9 @@
 }
 }, 
 "Tl3362134": {
-"^ot:altLabel": "Saccharomyces cerevisiae", 
 "^ot:originalLabel": "Saccharomyces cerevisiae 59_336_lx00100", 
+"^ot:ottId": 356221, 
+"^ot:ottTaxonName": "Saccharomyces cerevisiae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 25995, 
 "@tb:identifier.taxonVariant": 60823, 
@@ -929,8 +1111,9 @@
 }
 }, 
 "Tl3362135": {
-"^ot:altLabel": "Saccharomyces cerevisiae", 
 "^ot:originalLabel": "Saccharomyces cerevisiae 45_1_a02420", 
+"^ot:ottId": 356221, 
+"^ot:ottTaxonName": "Saccharomyces cerevisiae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 25995, 
 "@tb:identifier.taxonVariant": 60823, 
@@ -939,8 +1122,9 @@
 }
 }, 
 "Tl3362136": {
-"^ot:altLabel": "Saccharomyces cerevisiae", 
 "^ot:originalLabel": "Saccharomyces cerevisiae 52_1_a02400_AND_Saccharomyces_cerevisiae_52_1_a02410", 
+"^ot:ottId": 356221, 
+"^ot:ottTaxonName": "Saccharomyces cerevisiae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 25995, 
 "@tb:identifier.taxonVariant": 60823, 
@@ -949,8 +1133,9 @@
 }
 }, 
 "Tl3362137": {
-"^ot:altLabel": "Vanderwaltozyma polyspora", 
 "^ot:originalLabel": "Vanderwaltozyma polyspora 1_1036.28", 
+"^ot:ottId": 713057, 
+"^ot:ottTaxonName": "Vanderwaltozyma polyspora", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 15026, 
 "@tb:identifier.taxonVariant": 113303, 
@@ -959,8 +1144,9 @@
 }
 }, 
 "Tl3362138": {
-"^ot:altLabel": "Saccharomyces cerevisiae", 
 "^ot:originalLabel": "Saccharomyces cerevisiae 59_110_df00100", 
+"^ot:ottId": 356221, 
+"^ot:ottTaxonName": "Saccharomyces cerevisiae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 25995, 
 "@tb:identifier.taxonVariant": 60823, 
@@ -969,8 +1155,9 @@
 }
 }, 
 "Tl3362139": {
-"^ot:altLabel": "Saccharomyces paradoxus", 
 "^ot:originalLabel": "Saccharomyces paradoxus 19_8_h03900", 
+"^ot:ottId": 1019879, 
+"^ot:ottTaxonName": "Saccharomyces paradoxus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 56401, 
 "@tb:identifier.taxonVariant": 127997, 
@@ -979,8 +1166,9 @@
 }
 }, 
 "Tl3362140": {
-"^ot:altLabel": "Saccharomyces paradoxus", 
 "^ot:originalLabel": "Saccharomyces paradoxus 17_1_2380", 
+"^ot:ottId": 1019879, 
+"^ot:ottTaxonName": "Saccharomyces paradoxus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 56401, 
 "@tb:identifier.taxonVariant": 127997, 
@@ -989,8 +1177,9 @@
 }
 }, 
 "Tl3362141": {
-"^ot:altLabel": "Naumovozyma castellii", 
 "^ot:originalLabel": "Naumovozyma castellii 1_e01630", 
+"^ot:ottId": 1029336, 
+"^ot:ottTaxonName": "Naumovozyma castellii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 621221, 
 "@tb:identifier.taxonVariant": 831944, 
@@ -999,8 +1188,9 @@
 }
 }, 
 "Tl3362142": {
-"^ot:altLabel": "Eremothecium gossypii", 
 "^ot:originalLabel": "Eremothecium gossypii 1_abr125c", 
+"^ot:ottId": 806602, 
+"^ot:ottTaxonName": "Eremothecium gossypii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 10382, 
 "@tb:identifier.taxonVariant": 24836, 
@@ -1009,8 +1199,9 @@
 }
 }, 
 "Tl3362143": {
-"^ot:altLabel": "Saccharomyces paradoxus", 
 "^ot:originalLabel": "Saccharomyces paradoxus 11_1_a02470", 
+"^ot:ottId": 1019879, 
+"^ot:ottTaxonName": "Saccharomyces paradoxus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 56401, 
 "@tb:identifier.taxonVariant": 127997, 
@@ -1019,8 +1210,9 @@
 }
 }, 
 "Tl3362144": {
-"^ot:altLabel": "Saccharomyces cerevisiae", 
 "^ot:originalLabel": "Saccharomyces cerevisiae 46_1_a02400", 
+"^ot:ottId": 356221, 
+"^ot:ottTaxonName": "Saccharomyces cerevisiae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 25995, 
 "@tb:identifier.taxonVariant": 60823, 
@@ -1029,8 +1221,9 @@
 }
 }, 
 "Tl3362145": {
-"^ot:altLabel": "Naumovozyma castellii", 
 "^ot:originalLabel": "Naumovozyma castellii 1_e01650", 
+"^ot:ottId": 1029336, 
+"^ot:ottTaxonName": "Naumovozyma castellii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 621221, 
 "@tb:identifier.taxonVariant": 831944, 
@@ -1039,8 +1232,9 @@
 }
 }, 
 "Tl3362146": {
-"^ot:altLabel": "Saccharomyces cerevisiae", 
 "^ot:originalLabel": "Saccharomyces cerevisiae 2_8_h03860", 
+"^ot:ottId": 356221, 
+"^ot:ottTaxonName": "Saccharomyces cerevisiae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 25995, 
 "@tb:identifier.taxonVariant": 60823, 
@@ -1056,8 +1250,9 @@
 }
 }, 
 "Tl3362148": {
-"^ot:altLabel": "Saccharomyces paradoxus", 
 "^ot:originalLabel": "Saccharomyces paradoxus 2_8_h03860", 
+"^ot:ottId": 1019879, 
+"^ot:ottTaxonName": "Saccharomyces paradoxus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 56401, 
 "@tb:identifier.taxonVariant": 127997, 
@@ -1066,8 +1261,9 @@
 }
 }, 
 "Tl3362149": {
-"^ot:altLabel": "Kazachstania naganishii", 
 "^ot:originalLabel": "Kazachstania naganishii 1_k01350", 
+"^ot:ottId": 491083, 
+"^ot:ottTaxonName": "Kazachstania naganishii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 511375, 
 "@tb:identifier.taxonVariant": 678273, 
@@ -1076,8 +1272,9 @@
 }
 }, 
 "Tl3362150": {
-"^ot:altLabel": "Saccharomyces cerevisiae", 
 "^ot:originalLabel": "Saccharomyces cerevisiae 5_78_bz00120", 
+"^ot:ottId": 356221, 
+"^ot:ottTaxonName": "Saccharomyces cerevisiae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 25995, 
 "@tb:identifier.taxonVariant": 60823, 
@@ -1086,8 +1283,9 @@
 }
 }, 
 "Tl3362151": {
-"^ot:altLabel": "Saccharomyces paradoxus", 
 "^ot:originalLabel": "Saccharomyces paradoxus 20_8_h03860", 
+"^ot:ottId": 1019879, 
+"^ot:ottTaxonName": "Saccharomyces paradoxus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 56401, 
 "@tb:identifier.taxonVariant": 127997, 
@@ -1096,8 +1294,9 @@
 }
 }, 
 "Tl3362152": {
-"^ot:altLabel": "Saccharomyces cerevisiae", 
 "^ot:originalLabel": "Saccharomyces cerevisiae 49_8_h03830", 
+"^ot:ottId": 356221, 
+"^ot:ottTaxonName": "Saccharomyces cerevisiae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 25995, 
 "@tb:identifier.taxonVariant": 60823, 
@@ -1106,8 +1305,9 @@
 }
 }, 
 "Tl3362153": {
-"^ot:altLabel": "Candida glabrata", 
 "^ot:originalLabel": "Candida glabrata 1_i04862g", 
+"^ot:ottId": 718605, 
+"^ot:ottTaxonName": "[Candida] glabrata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 4755, 
 "@tb:identifier.taxonVariant": 11482, 
@@ -1116,8 +1316,9 @@
 }
 }, 
 "Tl3362154": {
-"^ot:altLabel": "Saccharomyces paradoxus", 
 "^ot:originalLabel": "Saccharomyces paradoxus 3_1_a02470", 
+"^ot:ottId": 1019879, 
+"^ot:ottTaxonName": "Saccharomyces paradoxus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 56401, 
 "@tb:identifier.taxonVariant": 127997, 
@@ -1126,8 +1327,9 @@
 }
 }, 
 "Tl3362155": {
-"^ot:altLabel": "Saccharomyces cerevisiae", 
 "^ot:originalLabel": "Saccharomyces cerevisiae 23_7_3860", 
+"^ot:ottId": 356221, 
+"^ot:ottTaxonName": "Saccharomyces cerevisiae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 25995, 
 "@tb:identifier.taxonVariant": 60823, 
@@ -1136,8 +1338,9 @@
 }
 }, 
 "Tl3362156": {
-"^ot:altLabel": "Vanderwaltozyma polyspora", 
 "^ot:originalLabel": "Vanderwaltozyma polyspora 1_1037.47", 
+"^ot:ottId": 713057, 
+"^ot:ottTaxonName": "Vanderwaltozyma polyspora", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 15026, 
 "@tb:identifier.taxonVariant": 113303, 
@@ -1146,14 +1349,19 @@
 }
 }, 
 "Tl3362157": {
-"^ot:originalLabel": "Tetrapisispora blattae 1_g02820"
+"^ot:originalLabel": "Tetrapisispora blattae 1_g02820", 
+"^ot:ottId": 134090, 
+"^ot:ottTaxonName": "Tetrapisispora blattae"
 }, 
 "Tl3362158": {
-"^ot:originalLabel": "Tetrapisispora blattae 1_i01760"
+"^ot:originalLabel": "Tetrapisispora blattae 1_i01760", 
+"^ot:ottId": 134090, 
+"^ot:ottTaxonName": "Tetrapisispora blattae"
 }, 
 "Tl3362159": {
-"^ot:altLabel": "Saccharomyces cerevisiae", 
 "^ot:originalLabel": "Saccharomyces cerevisiae 40_8_h03830", 
+"^ot:ottId": 356221, 
+"^ot:ottTaxonName": "Saccharomyces cerevisiae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 25995, 
 "@tb:identifier.taxonVariant": 60823, 
@@ -1162,8 +1370,9 @@
 }
 }, 
 "Tl3362160": {
-"^ot:altLabel": "Zygosaccharomyces bailii", 
 "^ot:originalLabel": "Zygosaccharomyces bailii 2_33_ag00120", 
+"^ot:ottId": 959640, 
+"^ot:ottTaxonName": "Zygosaccharomyces bailii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 31336, 
 "@tb:identifier.taxonVariant": 73103, 
@@ -1172,8 +1381,9 @@
 }
 }, 
 "Tl3362161": {
-"^ot:altLabel": "Saccharomyces paradoxus", 
 "^ot:originalLabel": "Saccharomyces paradoxus 5_8_3700", 
+"^ot:ottId": 1019879, 
+"^ot:ottTaxonName": "Saccharomyces paradoxus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 56401, 
 "@tb:identifier.taxonVariant": 127997, 
@@ -1182,8 +1392,9 @@
 }
 }, 
 "Tl3362162": {
-"^ot:altLabel": "Kazachstania africana", 
 "^ot:originalLabel": "Kazachstania africana 1_c00820", 
+"^ot:ottId": 1097130, 
+"^ot:ottTaxonName": "Kazachstania africana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 374979, 
 "@tb:identifier.taxonVariant": 397748, 
@@ -1192,8 +1403,9 @@
 }
 }, 
 "Tl3362163": {
-"^ot:altLabel": "Saccharomyces paradoxus", 
 "^ot:originalLabel": "Saccharomyces paradoxus 4_8_h03850", 
+"^ot:ottId": 1019879, 
+"^ot:ottTaxonName": "Saccharomyces paradoxus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 56401, 
 "@tb:identifier.taxonVariant": 127997, 
@@ -1202,8 +1414,9 @@
 }
 }, 
 "Tl3362164": {
-"^ot:altLabel": "Saccharomyces paradoxus", 
 "^ot:originalLabel": "Saccharomyces paradoxus 6_8_3750", 
+"^ot:ottId": 1019879, 
+"^ot:ottTaxonName": "Saccharomyces paradoxus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 56401, 
 "@tb:identifier.taxonVariant": 127997, 
@@ -1212,8 +1425,9 @@
 }
 }, 
 "Tl3362165": {
-"^ot:altLabel": "Kazachstania africana", 
 "^ot:originalLabel": "Kazachstania africana 1_c00830", 
+"^ot:ottId": 1097130, 
+"^ot:ottTaxonName": "Kazachstania africana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 374979, 
 "@tb:identifier.taxonVariant": 397748, 
@@ -1222,8 +1436,9 @@
 }
 }, 
 "Tl3362166": {
-"^ot:altLabel": "Saccharomyces paradoxus", 
 "^ot:originalLabel": "Saccharomyces paradoxus 16_8_h03890", 
+"^ot:ottId": 1019879, 
+"^ot:ottTaxonName": "Saccharomyces paradoxus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 56401, 
 "@tb:identifier.taxonVariant": 127997, 
@@ -1232,8 +1447,9 @@
 }
 }, 
 "Tl3362167": {
-"^ot:altLabel": "Saccharomyces cerevisiae", 
 "^ot:originalLabel": "Saccharomyces cerevisiae 60_6_f03350", 
+"^ot:ottId": 356221, 
+"^ot:ottTaxonName": "Saccharomyces cerevisiae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 25995, 
 "@tb:identifier.taxonVariant": 60823, 
@@ -1242,8 +1458,9 @@
 }
 }, 
 "Tl3362168": {
-"^ot:altLabel": "Zygosaccharomyces bailii", 
 "^ot:originalLabel": "Zygosaccharomyces bailii 2_1_a00860", 
+"^ot:ottId": 959640, 
+"^ot:ottTaxonName": "Zygosaccharomyces bailii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 31336, 
 "@tb:identifier.taxonVariant": 73103, 
@@ -1252,8 +1469,9 @@
 }
 }, 
 "Tl3362169": {
-"^ot:altLabel": "Saccharomyces cerevisiae", 
 "^ot:originalLabel": "Saccharomyces cerevisiae 16_1_a02380", 
+"^ot:ottId": 356221, 
+"^ot:ottTaxonName": "Saccharomyces cerevisiae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 25995, 
 "@tb:identifier.taxonVariant": 60823, 
@@ -1262,8 +1480,9 @@
 }
 }, 
 "Tl3362170": {
-"^ot:altLabel": "Saccharomyces cerevisiae", 
 "^ot:originalLabel": "Saccharomyces cerevisiae 45_7_g03890", 
+"^ot:ottId": 356221, 
+"^ot:ottTaxonName": "Saccharomyces cerevisiae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 25995, 
 "@tb:identifier.taxonVariant": 60823, 
@@ -1272,11 +1491,14 @@
 }
 }, 
 "Tl3362171": {
-"^ot:originalLabel": "Saccharomyces eubayanus 1_2_b00130"
+"^ot:originalLabel": "Saccharomyces eubayanus 1_2_b00130", 
+"^ot:ottId": 723144, 
+"^ot:ottTaxonName": "Saccharomyces eubayanus"
 }, 
 "Tl3362172": {
-"^ot:altLabel": "Saccharomyces cerevisiae", 
 "^ot:originalLabel": "Saccharomyces cerevisiae 17_1_a02410", 
+"^ot:ottId": 356221, 
+"^ot:ottTaxonName": "Saccharomyces cerevisiae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 25995, 
 "@tb:identifier.taxonVariant": 60823, 
@@ -1285,8 +1507,9 @@
 }
 }, 
 "Tl3362173": {
-"^ot:altLabel": "Saccharomyces cerevisiae", 
 "^ot:originalLabel": "Saccharomyces cerevisiae 14_7_g00150", 
+"^ot:ottId": 356221, 
+"^ot:ottTaxonName": "Saccharomyces cerevisiae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 25995, 
 "@tb:identifier.taxonVariant": 60823, 
@@ -1295,8 +1518,9 @@
 }
 }, 
 "Tl3362174": {
-"^ot:altLabel": "Saccharomyces paradoxus", 
 "^ot:originalLabel": "Saccharomyces paradoxus 7_8_3740", 
+"^ot:ottId": 1019879, 
+"^ot:ottTaxonName": "Saccharomyces paradoxus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 56401, 
 "@tb:identifier.taxonVariant": 127997, 
@@ -1305,8 +1529,9 @@
 }
 }, 
 "Tl3362175": {
-"^ot:altLabel": "Saccharomyces cerevisiae", 
 "^ot:originalLabel": "Saccharomyces cerevisiae 24_1_2300", 
+"^ot:ottId": 356221, 
+"^ot:ottTaxonName": "Saccharomyces cerevisiae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 25995, 
 "@tb:identifier.taxonVariant": 60823, 
@@ -1315,8 +1540,9 @@
 }
 }, 
 "Tl3362176": {
-"^ot:altLabel": "Saccharomyces paradoxus", 
 "^ot:originalLabel": "Saccharomyces paradoxus 18_8_3730", 
+"^ot:ottId": 1019879, 
+"^ot:ottTaxonName": "Saccharomyces paradoxus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 56401, 
 "@tb:identifier.taxonVariant": 127997, 
@@ -1325,8 +1551,9 @@
 }
 }, 
 "Tl3362177": {
-"^ot:altLabel": "Saccharomyces paradoxus", 
 "^ot:originalLabel": "Saccharomyces paradoxus 13_8_h03820", 
+"^ot:ottId": 1019879, 
+"^ot:ottTaxonName": "Saccharomyces paradoxus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 56401, 
 "@tb:identifier.taxonVariant": 127997, 
@@ -1335,8 +1562,9 @@
 }
 }, 
 "Tl3362178": {
-"^ot:altLabel": "Saccharomyces cerevisiae", 
 "^ot:originalLabel": "Saccharomyces cerevisiae 43_7_g03870", 
+"^ot:ottId": 356221, 
+"^ot:ottTaxonName": "Saccharomyces cerevisiae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 25995, 
 "@tb:identifier.taxonVariant": 60823, 
@@ -1345,8 +1573,9 @@
 }
 }, 
 "Tl3362179": {
-"^ot:altLabel": "Saccharomyces paradoxus", 
 "^ot:originalLabel": "Saccharomyces paradoxus 3_8_h03890", 
+"^ot:ottId": 1019879, 
+"^ot:ottTaxonName": "Saccharomyces paradoxus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 56401, 
 "@tb:identifier.taxonVariant": 127997, 
@@ -1355,8 +1584,9 @@
 }
 }, 
 "Tl3362180": {
-"^ot:altLabel": "Lachancea kluyveri", 
 "^ot:originalLabel": "Lachancea kluyveri 1_h21010g", 
+"^ot:ottId": 908562, 
+"^ot:ottTaxonName": "Lachancea kluyveri", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51182, 
 "@tb:identifier.taxonVariant": 120947, 
@@ -1365,8 +1595,9 @@
 }
 }, 
 "Tl3362181": {
-"^ot:altLabel": "Zygosaccharomyces bailii", 
 "^ot:originalLabel": "Zygosaccharomyces bailii 3_3_c03460", 
+"^ot:ottId": 959640, 
+"^ot:ottTaxonName": "Zygosaccharomyces bailii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 31336, 
 "@tb:identifier.taxonVariant": 73103, 
@@ -1375,8 +1606,9 @@
 }
 }, 
 "Tl3362182": {
-"^ot:altLabel": "Saccharomyces paradoxus", 
 "^ot:originalLabel": "Saccharomyces paradoxus 9_1_2360", 
+"^ot:ottId": 1019879, 
+"^ot:ottTaxonName": "Saccharomyces paradoxus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 56401, 
 "@tb:identifier.taxonVariant": 127997, 
@@ -1385,8 +1617,9 @@
 }
 }, 
 "Tl3362183": {
-"^ot:altLabel": "Saccharomyces paradoxus", 
 "^ot:originalLabel": "Saccharomyces paradoxus 1_8_h03820", 
+"^ot:ottId": 1019879, 
+"^ot:ottTaxonName": "Saccharomyces paradoxus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 56401, 
 "@tb:identifier.taxonVariant": 127997, 
@@ -1395,8 +1628,9 @@
 }
 }, 
 "Tl3362184": {
-"^ot:altLabel": "Saccharomyces paradoxus", 
 "^ot:originalLabel": "Saccharomyces paradoxus 24_8_h03850", 
+"^ot:ottId": 1019879, 
+"^ot:ottTaxonName": "Saccharomyces paradoxus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 56401, 
 "@tb:identifier.taxonVariant": 127997, 
@@ -1405,8 +1639,9 @@
 }
 }, 
 "Tl3362185": {
-"^ot:altLabel": "Saccharomyces paradoxus", 
 "^ot:originalLabel": "Saccharomyces paradoxus 9_8_3720", 
+"^ot:ottId": 1019879, 
+"^ot:ottTaxonName": "Saccharomyces paradoxus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 56401, 
 "@tb:identifier.taxonVariant": 127997, 
@@ -1415,8 +1650,9 @@
 }
 }, 
 "Tl3362186": {
-"^ot:altLabel": "Saccharomyces kudriavzevii", 
 "^ot:originalLabel": "Saccharomyces kudriavzevii 1_14.404", 
+"^ot:ottId": 144042, 
+"^ot:ottTaxonName": "Saccharomyces kudriavzevii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 117817, 
 "@tb:identifier.taxonVariant": 196197, 
@@ -1425,8 +1661,9 @@
 }
 }, 
 "Tl3362187": {
-"^ot:altLabel": "Saccharomyces paradoxus", 
 "^ot:originalLabel": "Saccharomyces paradoxus 8_8_3750", 
+"^ot:ottId": 1019879, 
+"^ot:ottTaxonName": "Saccharomyces paradoxus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 56401, 
 "@tb:identifier.taxonVariant": 127997, 
@@ -1435,8 +1672,9 @@
 }
 }, 
 "Tl3362188": {
-"^ot:altLabel": "Saccharomyces cerevisiae", 
 "^ot:originalLabel": "Saccharomyces cerevisiae 7_7_g03880", 
+"^ot:ottId": 356221, 
+"^ot:ottTaxonName": "Saccharomyces cerevisiae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 25995, 
 "@tb:identifier.taxonVariant": 60823, 
@@ -1445,8 +1683,9 @@
 }
 }, 
 "Tl3362189": {
-"^ot:altLabel": "Saccharomyces cerevisiae", 
 "^ot:originalLabel": "Saccharomyces cerevisiae 48_1_a02380", 
+"^ot:ottId": 356221, 
+"^ot:ottTaxonName": "Saccharomyces cerevisiae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 25995, 
 "@tb:identifier.taxonVariant": 60823, 
@@ -1455,8 +1694,9 @@
 }
 }, 
 "Tl3362190": {
-"^ot:altLabel": "Saccharomyces cerevisiae", 
 "^ot:originalLabel": "Saccharomyces cerevisiae 9_1_a02440", 
+"^ot:ottId": 356221, 
+"^ot:ottTaxonName": "Saccharomyces cerevisiae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 25995, 
 "@tb:identifier.taxonVariant": 60823, 
@@ -1465,8 +1705,9 @@
 }
 }, 
 "Tl3362191": {
-"^ot:altLabel": "Naumovozyma dairenensis", 
 "^ot:originalLabel": "Naumovozyma dairenensis 1_g01850", 
+"^ot:ottId": 1059912, 
+"^ot:ottTaxonName": "Naumovozyma dairenensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 624665, 
 "@tb:identifier.taxonVariant": 836501, 
@@ -1475,8 +1716,9 @@
 }
 }, 
 "Tl3362192": {
-"^ot:altLabel": "Saccharomyces paradoxus", 
 "^ot:originalLabel": "Saccharomyces paradoxus 22_8_h03900", 
+"^ot:ottId": 1019879, 
+"^ot:ottTaxonName": "Saccharomyces paradoxus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 56401, 
 "@tb:identifier.taxonVariant": 127997, 
@@ -1485,8 +1727,9 @@
 }
 }, 
 "Tl3362193": {
-"^ot:altLabel": "Kluyveromyces aestuarii", 
 "^ot:originalLabel": "Kluyveromyces aestuarii 1_14_n00120", 
+"^ot:ottId": 806596, 
+"^ot:ottTaxonName": "Kluyveromyces aestuarii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 59774, 
 "@tb:identifier.taxonVariant": 132901, 
@@ -1495,8 +1738,9 @@
 }
 }, 
 "Tl3362194": {
-"^ot:altLabel": "Saccharomyces cerevisiae", 
 "^ot:originalLabel": "Saccharomyces cerevisiae 46_8_h03910", 
+"^ot:ottId": 356221, 
+"^ot:ottTaxonName": "Saccharomyces cerevisiae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 25995, 
 "@tb:identifier.taxonVariant": 60823, 
@@ -1520,7 +1764,18 @@
 "Tr114242": {
 "@label": "Fig. 2", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:undefined", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "Tn17907522", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn17907511", 
+"^ot:specifiedRoot": "Tn17907511", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 146, 
 "^tb:quality.tree": "Unrated", 
@@ -3362,7 +3617,18 @@
 "Tr114243": {
 "@label": "Fig. S2", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:undefined", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "Tn17907561", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn17907721", 
+"^ot:specifiedRoot": "Tn17907721", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 123, 
 "^tb:quality.tree": "Unrated", 
