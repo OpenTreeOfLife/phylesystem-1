@@ -54,16 +54,106 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2018-10-29T14:23:23.007Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "Basidiomycetes"
 }, 
-"^ot:curatorName": "Matt Girard", 
+"substitutions": {
+"substitution": [
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": "cf."
+}
+}, 
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": "$1"
+}, 
+"old": {
+"$": "^(\\S*\\s+\\S*).*"
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2018-10-29T14:23:23.006Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Matt Girard"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S23300"
 }, 
+"^ot:focalClade": 493754, 
+"^ot:focalCladeOTTTaxonName": "Crepidotus (genus in Nucletmycea)", 
 "^ot:otusElementOrder": [
 "Tls65641"
 ], 
@@ -73,6 +163,7 @@
 }, 
 "^ot:studyPublicationReference": "A M.K., Pradeep C.K., & Vrinda K.B. 2018. Two new species of Crepidotus (Basidiomycota, Agaricales) from peninsular India. Phytotaxa, 372(1): 067-078.", 
 "^ot:studyYear": 2018, 
+"^ot:tag": [], 
 "^ot:taxonLinkPrefixes": {
 "@ubio": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:", 
 "@uniprot": "http://purl.uniprot.org/taxonomy/"
@@ -101,8 +192,9 @@
 "^skos:historyNote": "Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlOTUWriter@70f419ef $Rev$", 
 "otuById": {
 "Tl3365976": {
-"^ot:altLabel": "Crepidotus alabamensis", 
 "^ot:originalLabel": "Crepidotus alabamensis AF367960_USA", 
+"^ot:ottId": 811487, 
+"^ot:ottTaxonName": "Crepidotus alabamensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 167919, 
 "@tb:identifier.taxonVariant": 242391, 
@@ -111,11 +203,14 @@
 }
 }, 
 "Tl3365977": {
-"^ot:originalLabel": "Crepidotus podocarpi AF205696_Puerto_Rico"
+"^ot:originalLabel": "Crepidotus podocarpi AF205696_Puerto_Rico", 
+"^ot:ottId": 3831273, 
+"^ot:ottTaxonName": "Crepidotus podocarpi"
 }, 
 "Tl3365978": {
-"^ot:altLabel": "Crepidotus nyssicola", 
 "^ot:originalLabel": "Crepidotus nyssicola AF205690_USA", 
+"^ot:ottId": 1065619, 
+"^ot:ottTaxonName": "Crepidotus nyssicola", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 114765, 
 "@tb:identifier.taxonVariant": 193070, 
@@ -124,8 +219,9 @@
 }
 }, 
 "Tl3365979": {
-"^ot:altLabel": "Crepidotus betulae", 
 "^ot:originalLabel": "Crepidotus betulae AF205679_USA", 
+"^ot:ottId": 489157, 
+"^ot:ottTaxonName": "Crepidotus betulae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 114771, 
 "@tb:identifier.taxonVariant": 193073, 
@@ -134,14 +230,19 @@
 }
 }, 
 "Tl3365980": {
-"^ot:originalLabel": "Crepidotus sp. AF367951 Puerto Rico"
+"^ot:originalLabel": "Crepidotus sp. AF367951 Puerto Rico", 
+"^ot:ottId": 493754, 
+"^ot:ottTaxonName": "Crepidotus (genus in Nucletmycea)"
 }, 
 "Tl3365981": {
-"^ot:originalLabel": "Crepidotus malachioides KF154018_Slovakia"
+"^ot:originalLabel": "Crepidotus malachioides KF154018_Slovakia", 
+"^ot:ottId": 5307341, 
+"^ot:ottTaxonName": "Crepidotus malachioides"
 }, 
 "Tl3365982": {
-"^ot:altLabel": "Crepidotus distortus", 
 "^ot:originalLabel": "Crepidotus distortus AF205671_USA", 
+"^ot:ottId": 489160, 
+"^ot:ottTaxonName": "Crepidotus distortus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 114768, 
 "@tb:identifier.taxonVariant": 193072, 
@@ -150,8 +251,9 @@
 }
 }, 
 "Tl3365983": {
-"^ot:altLabel": "Crepidotus sinuosus", 
 "^ot:originalLabel": "Crepidotus sinuosus AF367945_USA", 
+"^ot:ottId": 344170, 
+"^ot:ottTaxonName": "Crepidotus sinuosus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 167925, 
 "@tb:identifier.taxonVariant": 242395, 
@@ -160,11 +262,14 @@
 }
 }, 
 "Tl3365984": {
-"^ot:originalLabel": "Crepidotus stenocystis MF621024_Czech_Republic"
+"^ot:originalLabel": "Crepidotus stenocystis MF621024_Czech_Republic", 
+"^ot:ottId": 3831265, 
+"^ot:ottTaxonName": "Crepidotus stenocystis"
 }, 
 "Tl3365985": {
-"^ot:altLabel": "Crepidotus aureus", 
 "^ot:originalLabel": "Crepidotus aureus AF205685_Puerto_Rico", 
+"^ot:ottId": 1065624, 
+"^ot:ottTaxonName": "Crepidotus aureus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 7460, 
 "@tb:identifier.taxonVariant": 18050, 
@@ -173,8 +278,9 @@
 }
 }, 
 "Tl3365986": {
-"^ot:altLabel": "Crepidotus mollis", 
 "^ot:originalLabel": "Crepidotus mollis DQ986293_USA", 
+"^ot:ottId": 1065617, 
+"^ot:ottTaxonName": "Crepidotus mollis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 7464, 
 "@tb:identifier.taxonVariant": 18060, 
@@ -183,8 +289,9 @@
 }
 }, 
 "Tl3365987": {
-"^ot:altLabel": "Crepidotus crocophyllus", 
 "^ot:originalLabel": "Crepidotus crocophyllus GQ893025_USA", 
+"^ot:ottId": 493757, 
+"^ot:ottTaxonName": "Crepidotus crocophyllus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 110459, 
 "@tb:identifier.taxonVariant": 188775, 
@@ -193,8 +300,9 @@
 }
 }, 
 "Tl3365988": {
-"^ot:altLabel": "Crepidotus cinnabarinus", 
 "^ot:originalLabel": "Crepidotus cinnabarinus AF205686_USA", 
+"^ot:ottId": 1065615, 
+"^ot:ottTaxonName": "Crepidotus cinnabarinus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 7461, 
 "@tb:identifier.taxonVariant": 18054, 
@@ -203,8 +311,9 @@
 }
 }, 
 "Tl3365989": {
-"^ot:altLabel": "Crepidotus cesatii", 
 "^ot:originalLabel": "Crepidotus cesatii AF205681_USA", 
+"^ot:ottId": 1065616, 
+"^ot:ottTaxonName": "Crepidotus cesatii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 114767, 
 "@tb:identifier.taxonVariant": 427141, 
@@ -216,8 +325,9 @@
 "^ot:originalLabel": "Crepidotus Palodensis MH310743 India"
 }, 
 "Tl3365991": {
-"^ot:altLabel": "Crepidotus thermophilus", 
 "^ot:originalLabel": "Crepidotus thermophilus AF205691_Puerto_Rico", 
+"^ot:ottId": 3831306, 
+"^ot:ottTaxonName": "Crepidotus thermophilus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 32716, 
 "@tb:identifier.taxonVariant": 75613, 
@@ -225,11 +335,13 @@
 }
 }, 
 "Tl3365992": {
+"^ot:altLabel": "Crepidotus subsphaerosporus", 
 "^ot:originalLabel": "Crepidotus cf. subsphaerosporus AF367947 West Australia"
 }, 
 "Tl3365993": {
-"^ot:altLabel": "Crepidotus uber", 
 "^ot:originalLabel": "Crepidotus uber AF367961_USA", 
+"^ot:ottId": 1015130, 
+"^ot:ottTaxonName": "Crepidotus uber", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 114775, 
 "@tb:identifier.taxonVariant": 193075, 
@@ -238,11 +350,14 @@
 }
 }, 
 "Tl3365994": {
-"^ot:originalLabel": "Inocybe subpaleacea KJ849611_Finland"
+"^ot:originalLabel": "Inocybe subpaleacea KJ849611_Finland", 
+"^ot:ottId": 899371, 
+"^ot:ottTaxonName": "Inocybe subpaleacea"
 }, 
 "Tl3365995": {
-"^ot:altLabel": "Crepidotus versutus", 
 "^ot:originalLabel": "Crepidotus versutus AF367958_Russia", 
+"^ot:ottId": 1065623, 
+"^ot:ottTaxonName": "Crepidotus versutus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 7465, 
 "@tb:identifier.taxonVariant": 18063, 
@@ -251,8 +366,9 @@
 }
 }, 
 "Tl3365996": {
-"^ot:altLabel": "Crepidotus mollis", 
 "^ot:originalLabel": "Crepidotus mollis DQ071698_USA", 
+"^ot:ottId": 1065617, 
+"^ot:ottTaxonName": "Crepidotus mollis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 7464, 
 "@tb:identifier.taxonVariant": 18060, 
@@ -271,8 +387,9 @@
 }
 }, 
 "Tl3365998": {
-"^ot:altLabel": "Crepidotus variabilis", 
 "^ot:originalLabel": "Crepidotus variabilis AF367949_Japan", 
+"^ot:ottId": 963067, 
+"^ot:ottTaxonName": "Crepidotus variabilis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 167928, 
 "@tb:identifier.taxonVariant": 440104, 
@@ -281,8 +398,9 @@
 }
 }, 
 "Tl3365999": {
-"^ot:altLabel": "Crepidotus calolepis", 
 "^ot:originalLabel": "Crepidotus calolepis MF797668_USA", 
+"^ot:ottId": 106748, 
+"^ot:ottTaxonName": "Crepidotus calolepis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 602841, 
 "@tb:identifier.taxonVariant": 804164, 
@@ -293,8 +411,9 @@
 "^ot:originalLabel": "Crepidotus cf. applanatus AY380406 USA"
 }, 
 "Tl3366001": {
-"^ot:altLabel": "Crepidotus inhonestus", 
 "^ot:originalLabel": "Crepidotus inhonestus AF205704_Japan", 
+"^ot:ottId": 5688619, 
+"^ot:ottTaxonName": "Crepidotus inhonestus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 114774, 
 "@tb:identifier.taxonVariant": 193074, 
@@ -316,8 +435,9 @@
 }
 }, 
 "Tl3366004": {
-"^ot:altLabel": "Crepidotus brunnescens", 
 "^ot:originalLabel": "Crepidotus brunnescens AF367936_USA", 
+"^ot:ottId": 344165, 
+"^ot:ottTaxonName": "Crepidotus brunnescens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 167929, 
 "@tb:identifier.taxonVariant": 242397, 
@@ -326,14 +446,19 @@
 }
 }, 
 "Tl3366005": {
-"^ot:originalLabel": "Crepidotus sp. AF205684 Thailand"
+"^ot:originalLabel": "Crepidotus sp. AF205684 Thailand", 
+"^ot:ottId": 493754, 
+"^ot:ottTaxonName": "Crepidotus (genus in Nucletmycea)"
 }, 
 "Tl3366006": {
-"^ot:originalLabel": "Crepidotus subfulviceps FJ947117_Spain"
+"^ot:originalLabel": "Crepidotus subfulviceps FJ947117_Spain", 
+"^ot:ottId": 678645, 
+"^ot:ottTaxonName": "Crepidotus subfulviceps"
 }, 
 "Tl3366007": {
-"^ot:altLabel": "Crepidotus fraxinicola", 
 "^ot:originalLabel": "Crepidotus fraxinicola AF205701_USA", 
+"^ot:ottId": 1015126, 
+"^ot:ottTaxonName": "Crepidotus fraxinicola", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 7462, 
 "@tb:identifier.taxonVariant": 18055, 
@@ -342,8 +467,9 @@
 }
 }, 
 "Tl3366008": {
-"^ot:altLabel": "Crepidotus lanuginosus", 
 "^ot:originalLabel": "Crepidotus lanuginosus AF367940_USA", 
+"^ot:ottId": 344172, 
+"^ot:ottTaxonName": "Crepidotus lanuginosus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 167923, 
 "@tb:identifier.taxonVariant": 242393, 
@@ -352,8 +478,9 @@
 }
 }, 
 "Tl3366009": {
-"^ot:altLabel": "Crepidotus crocophyllus", 
 "^ot:originalLabel": "Crepidotus crocophyllus AY029707_USA", 
+"^ot:ottId": 493757, 
+"^ot:ottTaxonName": "Crepidotus crocophyllus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 110459, 
 "@tb:identifier.taxonVariant": 188775, 
@@ -362,8 +489,9 @@
 }
 }, 
 "Tl3366010": {
-"^ot:altLabel": "Crepidotus applanatus", 
 "^ot:originalLabel": "Crepidotus applanatus AF205694_USA", 
+"^ot:ottId": 539160, 
+"^ot:ottTaxonName": "Crepidotus applanatus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 32833, 
 "@tb:identifier.taxonVariant": 75906, 
@@ -382,14 +510,19 @@
 }
 }, 
 "Tl3366012": {
-"^ot:originalLabel": "Crepidotus sp. AF367955 Jamaica"
+"^ot:originalLabel": "Crepidotus sp. AF367955 Jamaica", 
+"^ot:ottId": 493754, 
+"^ot:ottTaxonName": "Crepidotus (genus in Nucletmycea)"
 }, 
 "Tl3366013": {
-"^ot:originalLabel": "Crepidotus sp. AF367956 USA"
+"^ot:originalLabel": "Crepidotus sp. AF367956 USA", 
+"^ot:ottId": 493754, 
+"^ot:ottTaxonName": "Crepidotus (genus in Nucletmycea)"
 }, 
 "Tl3366014": {
-"^ot:altLabel": "Inocybe phaeoleuca", 
 "^ot:originalLabel": "Inocybe phaeoleuca KJ399958_Hungary", 
+"^ot:ottId": 449050, 
+"^ot:ottTaxonName": "Inocybe phaeoleuca", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 421753, 
 "@tb:identifier.taxonVariant": 554829, 
@@ -398,11 +531,14 @@
 }
 }, 
 "Tl3366015": {
-"^ot:originalLabel": "Crepidotus occidentalis AF205678_USA"
+"^ot:originalLabel": "Crepidotus occidentalis AF205678_USA", 
+"^ot:ottId": 3831280, 
+"^ot:ottTaxonName": "Crepidotus occidentalis"
 }, 
 "Tl3366016": {
-"^ot:altLabel": "Crepidotus malachius", 
 "^ot:originalLabel": "Crepidotus malachius AF205674_USA", 
+"^ot:ottId": 238225, 
+"^ot:ottTaxonName": "Crepidotus malachius", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 7463, 
 "@tb:identifier.taxonVariant": 18059, 
@@ -414,8 +550,9 @@
 "^ot:originalLabel": "Crepidotus volubilis MH310742_India"
 }, 
 "Tl3366018": {
-"^ot:altLabel": "Crepidotus thermophilus", 
 "^ot:originalLabel": "Crepidotus thermophilus Puerto_AF205669_Rico", 
+"^ot:ottId": 3831306, 
+"^ot:ottTaxonName": "Crepidotus thermophilus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 32716, 
 "@tb:identifier.taxonVariant": 75613, 
@@ -426,8 +563,9 @@
 "^ot:originalLabel": "Crepidotus cf. subaffinis AF205703 Japan"
 }, 
 "Tl3366020": {
-"^ot:altLabel": "Crepidotus croceitinctus", 
 "^ot:originalLabel": "Crepidotus croceitinctus AF367937_Russia", 
+"^ot:ottId": 868942, 
+"^ot:ottTaxonName": "Crepidotus croceitinctus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 167922, 
 "@tb:identifier.taxonVariant": 242392, 
@@ -436,8 +574,9 @@
 }
 }, 
 "Tl3366021": {
-"^ot:altLabel": "Crepidotus fraxinicola", 
 "^ot:originalLabel": "Crepidotus fraxinicola AF205699_USA", 
+"^ot:ottId": 1015126, 
+"^ot:ottTaxonName": "Crepidotus fraxinicola", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 7462, 
 "@tb:identifier.taxonVariant": 18055, 
@@ -446,8 +585,9 @@
 }
 }, 
 "Tl3366022": {
-"^ot:altLabel": "Crepidotus versutus", 
 "^ot:originalLabel": "Crepidotus versutus AY820890_USA", 
+"^ot:ottId": 1065623, 
+"^ot:ottTaxonName": "Crepidotus versutus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 7465, 
 "@tb:identifier.taxonVariant": 18063, 
@@ -456,8 +596,9 @@
 }
 }, 
 "Tl3366023": {
-"^ot:altLabel": "Crepidotus mollis", 
 "^ot:originalLabel": "Crepidotus mollis AF205677_USA", 
+"^ot:ottId": 1065617, 
+"^ot:ottTaxonName": "Crepidotus mollis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 7464, 
 "@tb:identifier.taxonVariant": 18060, 
@@ -466,11 +607,14 @@
 }
 }, 
 "Tl3366024": {
-"^ot:originalLabel": "Crepidotus melleus AF205702_Japan"
+"^ot:originalLabel": "Crepidotus melleus AF205702_Japan", 
+"^ot:ottId": 3831204, 
+"^ot:ottTaxonName": "Crepidotus melleus"
 }, 
 "Tl3366025": {
-"^ot:altLabel": "Crepidotus fraxinicola", 
 "^ot:originalLabel": "Crepidotus fraxinicola AF205676_USA", 
+"^ot:ottId": 1015126, 
+"^ot:ottTaxonName": "Crepidotus fraxinicola", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 7462, 
 "@tb:identifier.taxonVariant": 18055, 
@@ -489,8 +633,9 @@
 }
 }, 
 "Tl3366027": {
-"^ot:altLabel": "Crepidotus antillarum", 
 "^ot:originalLabel": "Crepidotus antillarum AF205680_Dominican_Republic", 
+"^ot:ottId": 539159, 
+"^ot:ottTaxonName": "Crepidotus antillarum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 114761, 
 "@tb:identifier.taxonVariant": 193069, 
@@ -499,8 +644,9 @@
 }
 }, 
 "Tl3366028": {
-"^ot:altLabel": "Crepidotus versutus", 
 "^ot:originalLabel": "Crepidotus versutus AF205683_USA", 
+"^ot:ottId": 1065623, 
+"^ot:ottTaxonName": "Crepidotus versutus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 7465, 
 "@tb:identifier.taxonVariant": 18063, 
@@ -509,11 +655,14 @@
 }
 }, 
 "Tl3366029": {
-"^ot:originalLabel": "Crepidotus sp. AF367954 USA"
+"^ot:originalLabel": "Crepidotus sp. AF367954 USA", 
+"^ot:ottId": 493754, 
+"^ot:ottTaxonName": "Crepidotus (genus in Nucletmycea)"
 }, 
 "Tl3366030": {
-"^ot:altLabel": "Crepidotus martinii", 
 "^ot:originalLabel": "Crepidotus martinii AF367944_Japan", 
+"^ot:ottId": 344173, 
+"^ot:ottTaxonName": "Crepidotus martinii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 167924, 
 "@tb:identifier.taxonVariant": 242394, 
@@ -522,11 +671,14 @@
 }
 }, 
 "Tl3366031": {
-"^ot:originalLabel": "Crepidotus epibryus AF367934_Russia"
+"^ot:originalLabel": "Crepidotus epibryus AF367934_Russia", 
+"^ot:ottId": 710563, 
+"^ot:ottTaxonName": "Crepidotus epibryus"
 }, 
 "Tl3366032": {
-"^ot:altLabel": "Crepidotus croceitinctus", 
 "^ot:originalLabel": "Crepidotus croceitinctus AF367932_Japan", 
+"^ot:ottId": 868942, 
+"^ot:ottTaxonName": "Crepidotus croceitinctus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 167922, 
 "@tb:identifier.taxonVariant": 242392, 
@@ -535,8 +687,9 @@
 }
 }, 
 "Tl3366033": {
-"^ot:altLabel": "Crepidotus fraxinicola", 
 "^ot:originalLabel": "Crepidotus fraxinicola AF205697_USA", 
+"^ot:ottId": 1015126, 
+"^ot:ottTaxonName": "Crepidotus fraxinicola", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 7462, 
 "@tb:identifier.taxonVariant": 18055, 
@@ -562,12 +715,23 @@
 "Tr114310": {
 "@label": "PAUP 1", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:undefined", 
+"^ot:curatedType": "Maximum likelihood ", 
+"^ot:inGroupClade": "Tn17911676", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn17911679", 
+"^ot:specifiedRoot": "Tn17911679", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "^tb:ntax.tree": 59, 
 "edgeBySourceId": {
 "Tn17911569": {
 "edge3895265": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17911569", 
 "@target": "Tn17911616"
 }, 
@@ -596,7 +760,7 @@
 "@target": "Tn17911654"
 }, 
 "edge3895357": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17911571", 
 "@target": "Tn17911629"
 }
@@ -663,19 +827,19 @@
 }, 
 "Tn17911579": {
 "edge3895209": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17911579", 
 "@target": "Tn17911666"
 }, 
 "edge3895211": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17911579", 
 "@target": "Tn17911662"
 }
 }, 
 "Tn17911580": {
 "edge3895273": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17911580", 
 "@target": "Tn17911575"
 }, 
@@ -687,12 +851,12 @@
 }, 
 "Tn17911582": {
 "edge3895411": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17911582", 
 "@target": "Tn17911581"
 }, 
 "edge3895413": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17911582", 
 "@target": "Tn17911682"
 }
@@ -716,7 +880,7 @@
 "@target": "Tn17911580"
 }, 
 "edge3895337": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17911590", 
 "@target": "Tn17911571"
 }
@@ -752,7 +916,7 @@
 "@target": "Tn17911641"
 }, 
 "edge3895293": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17911596", 
 "@target": "Tn17911663"
 }
@@ -771,12 +935,12 @@
 }, 
 "Tn17911600": {
 "edge3895407": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17911600", 
 "@target": "Tn17911678"
 }, 
 "edge3895409": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17911600", 
 "@target": "Tn17911582"
 }
@@ -843,12 +1007,12 @@
 }, 
 "Tn17911611": {
 "edge3895373": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17911611", 
 "@target": "Tn17911635"
 }, 
 "edge3895375": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17911611", 
 "@target": "Tn17911605"
 }
@@ -891,7 +1055,7 @@
 }, 
 "Tn17911619": {
 "edge3895385": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17911619", 
 "@target": "Tn17911588"
 }, 
@@ -915,7 +1079,7 @@
 }, 
 "Tn17911622": {
 "edge3895379": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17911622", 
 "@target": "Tn17911638"
 }, 
@@ -956,7 +1120,7 @@
 "@target": "Tn17911601"
 }, 
 "edge3895335": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17911626", 
 "@target": "Tn17911628"
 }
@@ -1064,7 +1228,7 @@
 "@target": "Tn17911630"
 }, 
 "edge3895241": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17911649", 
 "@target": "Tn17911608"
 }
@@ -1119,24 +1283,24 @@
 }, 
 "Tn17911662": {
 "edge3895213": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17911662", 
 "@target": "Tn17911669"
 }, 
 "edge3895215": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17911662", 
 "@target": "Tn17911636"
 }
 }, 
 "Tn17911663": {
 "edge3895295": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17911663", 
 "@target": "Tn17911661"
 }, 
 "edge3895297": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17911663", 
 "@target": "Tn17911592"
 }
@@ -1155,12 +1319,12 @@
 }, 
 "Tn17911670": {
 "edge3895393": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17911670", 
 "@target": "Tn17911657"
 }, 
 "edge3895395": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17911670", 
 "@target": "Tn17911680"
 }
@@ -1227,19 +1391,19 @@
 }, 
 "Tn17911682": {
 "edge3895415": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17911682", 
 "@target": "Tn17911621"
 }, 
 "edge3895417": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17911682", 
 "@target": "Tn17911591"
 }
 }, 
 "Tn17911684": {
 "edge3895307": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17911684", 
 "@target": "Tn17911610"
 }, 
