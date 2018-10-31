@@ -36,22 +36,97 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2018-10-31T14:11:21.107Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "Rosids"
+}, 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2018-10-31T14:11:21.107Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
 }, 
 "^ot:candidateTreeForSynthesis": [], 
-"^ot:curatorName": "bryan drew", 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"bryan drew", 
+"Joe Miller"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S11118"
 }, 
 "^ot:focalClade": 560323, 
 "^ot:focalCladeOTTTaxonName": "Fabaceae", 
-"^ot:messages": {
-"message": []
-}, 
 "^ot:otusElementOrder": [
 "otus590"
 ], 
@@ -422,21 +497,22 @@
 ], 
 "treeById": {
 "tree882": {
+"@label": "Maximum Parsimony", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
-"^ot:branchLengthMode": "", 
-"^ot:branchLengthTimeUnit": "", 
+"^ot:branchLengthMode": "ot:undefined", 
 "^ot:curatedType": "PAUP 1", 
+"^ot:inGroupClade": "node352781", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
-"^ot:rootNodeId": "node352781", 
-"^ot:specifiedRoot": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
+"^ot:rootNodeId": "tree882_ROOT", 
+"^ot:specifiedRoot": "tree882_ROOT", 
 "^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node352781": {
-"edge352782": {
-"@source": "node352781", 
-"@target": "node352782"
-}, 
 "edge352783": {
 "@source": "node352781", 
 "@target": "node352783"
@@ -448,10 +524,6 @@
 "edge352805": {
 "@source": "node352781", 
 "@target": "node352805"
-}, 
-"edge352810": {
-"@source": "node352781", 
-"@target": "node352810"
 }, 
 "edge352811": {
 "@source": "node352781", 
@@ -807,12 +879,24 @@
 "@source": "node352858", 
 "@target": "node352860"
 }
+}, 
+"tree882_ROOT": {
+"edge352782": {
+"@source": "tree882_ROOT", 
+"@target": "node352782"
+}, 
+"edge352810": {
+"@source": "tree882_ROOT", 
+"@target": "node352810"
+}, 
+"tree882_ROOT_EDGE": {
+"@source": "tree882_ROOT", 
+"@target": "node352781"
+}
 }
 }, 
 "nodeById": {
-"node352781": {
-"@root": true
-}, 
+"node352781": {}, 
 "node352782": {
 "@otu": "otu173590"
 }, 
@@ -991,20 +1075,28 @@
 }, 
 "node352860": {
 "@otu": "otu173559"
+}, 
+"tree882_ROOT": {
+"@root": true
 }
 }
 }, 
 "tree883": {
+"@label": "Untitled (tree883)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
 "^ot:branchLengthMode": "", 
 "^ot:branchLengthTimeUnit": "", 
 "^ot:curatedType": "PAUP 1", 
 "^ot:inGroupClade": "node352884", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "node352861", 
 "^ot:specifiedRoot": "", 
 "^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "edgeBySourceId": {
 "node352861": {
 "edge352862": {
