@@ -48,22 +48,116 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2018-11-01T13:35:57.555Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "Vertebrates"
 }, 
-"^ot:curatorName": "Matt Girard", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}, 
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": "$1"
+}, 
+"old": {
+"$": "^(\\S*\\s+\\S*).*"
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2018-11-01T13:35:57.555Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Matt Girard"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S19059"
 }, 
+"^ot:focalClade": 674436, 
+"^ot:focalCladeOTTTaxonName": "Mobula", 
 "^ot:otusElementOrder": [
 "Tls65634"
 ], 
 "^ot:studyId": "ot_1825", 
+"^ot:studyPublication": {
+"@href": ""
+}, 
 "^ot:studyPublicationReference": "White W.T., & Corrigan S. 2018. Phylogeny of the manta and devilrays (Chondrichthyes: mobulidae), with an updated taxonomic arrangement for the family. Zoological Journal of the Linnean Society, 182: 50\u009675.", 
 "^ot:studyYear": 2018, 
+"^ot:tag": [], 
 "^ot:taxonLinkPrefixes": {
 "@ubio": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:", 
 "@uniprot": "http://purl.uniprot.org/taxonomy/"
@@ -90,14 +184,17 @@
 "^ot:originalLabel": "Mobula birostris GN6791"
 }, 
 "Tl3365764": {
-"^ot:originalLabel": "Mobula munkiana GN5251"
+"^ot:originalLabel": "Mobula munkiana GN5251", 
+"^ot:ottId": 498773, 
+"^ot:ottTaxonName": "Mobula munkiana"
 }, 
 "Tl3365765": {
 "^ot:originalLabel": "Mobula alfredi GN16688"
 }, 
 "Tl3365766": {
-"^ot:altLabel": "Rhinoptera bonasus", 
 "^ot:originalLabel": "Rhinoptera bonasus GN5465", 
+"^ot:ottId": 197732, 
+"^ot:ottTaxonName": "Rhinoptera bonasus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 120814, 
 "@tb:identifier.taxonVariant": 198690, 
@@ -106,8 +203,9 @@
 }
 }, 
 "Tl3365767": {
-"^ot:altLabel": "Mobula thurstoni", 
 "^ot:originalLabel": "Mobula thurstoni GN5263", 
+"^ot:ottId": 674430, 
+"^ot:ottTaxonName": "Mobula thurstoni", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 96763, 
 "@tb:identifier.taxonVariant": 176086, 
@@ -116,14 +214,19 @@
 }
 }, 
 "Tl3365768": {
-"^ot:originalLabel": "Myliobatis aquila GN7203"
+"^ot:originalLabel": "Myliobatis aquila GN7203", 
+"^ot:ottId": 114274, 
+"^ot:ottTaxonName": "Myliobatis aquila"
 }, 
 "Tl3365769": {
-"^ot:originalLabel": "Mobula mobular GN15654"
+"^ot:originalLabel": "Mobula mobular GN15654", 
+"^ot:ottId": 3594762, 
+"^ot:ottTaxonName": "Mobula mobular"
 }, 
 "Tl3365770": {
-"^ot:altLabel": "Aetobatus narinari", 
 "^ot:originalLabel": "Aetobatus narinari GN5677", 
+"^ot:ottId": 759551, 
+"^ot:ottTaxonName": "Aetobatus narinari", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 97332, 
 "@tb:identifier.taxonVariant": 176609, 
@@ -132,20 +235,29 @@
 }
 }, 
 "Tl3365771": {
-"^ot:originalLabel": "Mobula hypostoma GN5814"
+"^ot:originalLabel": "Mobula hypostoma GN5814", 
+"^ot:ottId": 476719, 
+"^ot:ottTaxonName": "Mobula hypostoma"
 }, 
 "Tl3365772": {
-"^ot:originalLabel": "Mobula kuhlii GN15461"
+"^ot:originalLabel": "Mobula kuhlii GN15461", 
+"^ot:ottId": 71599, 
+"^ot:ottTaxonName": "Mobula kuhlii"
 }, 
 "Tl3365773": {
-"^ot:originalLabel": "Mobula kuhlii GN9426"
+"^ot:originalLabel": "Mobula kuhlii GN9426", 
+"^ot:ottId": 71599, 
+"^ot:ottTaxonName": "Mobula kuhlii"
 }, 
 "Tl3365774": {
-"^ot:originalLabel": "Mobula mobular GN7058"
+"^ot:originalLabel": "Mobula mobular GN7058", 
+"^ot:ottId": 3594762, 
+"^ot:ottTaxonName": "Mobula mobular"
 }, 
 "Tl3365775": {
-"^ot:altLabel": "Mobula tarapacana", 
 "^ot:originalLabel": "Mobula tarapacana GN10564", 
+"^ot:ottId": 180423, 
+"^ot:ottTaxonName": "Mobula tarapacana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 451040, 
 "@tb:identifier.taxonVariant": 596578, 
@@ -168,7 +280,18 @@
 "Tr114302": {
 "@label": "PAUP 1", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:undefined", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "Tn17910726", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn17910723", 
+"^ot:specifiedRoot": "Tn17910723", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 13, 
 "^tb:quality.tree": "Unrated", 
@@ -284,7 +407,7 @@
 }, 
 "Tn17910723": {
 "edge668465": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17910723", 
 "@target": "Tn17910715"
 }, 
