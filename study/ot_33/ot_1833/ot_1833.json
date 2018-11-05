@@ -50,16 +50,95 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2018-11-05T20:43:37.777Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "Mammals"
 }, 
-"^ot:curatorName": "Matt Girard", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2018-11-05T20:43:37.777Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Matt Girard"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S23474"
 }, 
+"^ot:focalCladeOTTTaxonName": "", 
 "^ot:otusElementOrder": [
 "Tls65902"
 ], 
@@ -69,6 +148,7 @@
 }, 
 "^ot:studyPublicationReference": "Mart\u00edn-peci\u00f1a M., Ruiz-ruano F.J., Camacho J.M., & Dodsworth S. 2018. Phylogenetic signal of genomic repeat abundances can be distorted by random homoplasy: a case study from hominid primates. Zoological Journal of the Linnean Society, .", 
 "^ot:studyYear": 2018, 
+"^ot:tag": [], 
 "^ot:taxonLinkPrefixes": {
 "@ubio": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:", 
 "@uniprot": "http://purl.uniprot.org/taxonomy/"
@@ -92,8 +172,9 @@
 "^skos:historyNote": "Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlOTUWriter@2acf2983 $Rev$", 
 "otuById": {
 "Tl3379243": {
-"^ot:altLabel": "Pan troglodytes", 
 "^ot:originalLabel": "Pan troglodytes 1", 
+"^ot:ottId": 417950, 
+"^ot:ottTaxonName": "Pan troglodytes", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 31678, 
 "@tb:identifier.taxonVariant": 73683, 
@@ -102,8 +183,9 @@
 }
 }, 
 "Tl3379244": {
-"^ot:altLabel": "Gorilla gorilla", 
 "^ot:originalLabel": "Gorilla gorilla 1", 
+"^ot:ottId": 417965, 
+"^ot:ottTaxonName": "Gorilla gorilla", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 12473, 
 "@tb:identifier.taxonVariant": 29586, 
@@ -112,8 +194,9 @@
 }
 }, 
 "Tl3379245": {
-"^ot:altLabel": "Pongo pygmaeus", 
 "^ot:originalLabel": "Pongo pygmaeus 1", 
+"^ot:ottId": 770302, 
+"^ot:ottTaxonName": "Pongo pygmaeus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 23412, 
 "@tb:identifier.taxonVariant": 54796, 
@@ -122,8 +205,9 @@
 }
 }, 
 "Tl3379246": {
-"^ot:altLabel": "Homo sapiens", 
 "^ot:originalLabel": "Homo sapiens 1", 
+"^ot:ottId": 770315, 
+"^ot:ottTaxonName": "Homo sapiens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 13680, 
 "@tb:identifier.taxonVariant": 32274, 
@@ -133,6 +217,8 @@
 }, 
 "Tl3379247": {
 "^ot:originalLabel": "Macaca mulatta", 
+"^ot:ottId": 689650, 
+"^ot:ottTaxonName": "Macaca mulatta", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 16640, 
 "@tb:identifier.taxonVariant": 38984, 
@@ -141,8 +227,9 @@
 }
 }, 
 "Tl3379248": {
-"^ot:altLabel": "Pan paniscus", 
 "^ot:originalLabel": "Pan paniscus 1", 
+"^ot:ottId": 158484, 
+"^ot:ottTaxonName": "Pan paniscus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 53867, 
 "@tb:identifier.taxonVariant": 124548, 
@@ -151,8 +238,9 @@
 }
 }, 
 "Tl3379249": {
-"^ot:altLabel": "Pan paniscus", 
 "^ot:originalLabel": "Pan paniscus 2", 
+"^ot:ottId": 158484, 
+"^ot:ottTaxonName": "Pan paniscus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 53867, 
 "@tb:identifier.taxonVariant": 124548, 
@@ -161,8 +249,9 @@
 }
 }, 
 "Tl3379250": {
-"^ot:altLabel": "Gorilla gorilla", 
 "^ot:originalLabel": "Gorilla gorilla 2", 
+"^ot:ottId": 417965, 
+"^ot:ottTaxonName": "Gorilla gorilla", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 12473, 
 "@tb:identifier.taxonVariant": 29586, 
@@ -171,8 +260,9 @@
 }
 }, 
 "Tl3379251": {
-"^ot:altLabel": "Homo sapiens", 
 "^ot:originalLabel": "Homo sapiens 2", 
+"^ot:ottId": 770315, 
+"^ot:ottTaxonName": "Homo sapiens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 13680, 
 "@tb:identifier.taxonVariant": 32274, 
@@ -181,8 +271,9 @@
 }
 }, 
 "Tl3379252": {
-"^ot:altLabel": "Pongo pygmaeus", 
 "^ot:originalLabel": "Pongo pygmaeus 2", 
+"^ot:ottId": 770302, 
+"^ot:ottTaxonName": "Pongo pygmaeus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 23412, 
 "@tb:identifier.taxonVariant": 54796, 
@@ -191,8 +282,9 @@
 }
 }, 
 "Tl3379253": {
-"^ot:altLabel": "Pan troglodytes", 
 "^ot:originalLabel": "Pan troglodytes 2", 
+"^ot:ottId": 417950, 
+"^ot:ottTaxonName": "Pan troglodytes", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 31678, 
 "@tb:identifier.taxonVariant": 73683, 
@@ -201,8 +293,9 @@
 }
 }, 
 "Tl3379254": {
-"^ot:altLabel": "Pan troglodytes", 
 "^ot:originalLabel": "Pan troglodytes 3", 
+"^ot:ottId": 417950, 
+"^ot:ottTaxonName": "Pan troglodytes", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 31678, 
 "@tb:identifier.taxonVariant": 73683, 
@@ -211,8 +304,9 @@
 }
 }, 
 "Tl3379255": {
-"^ot:altLabel": "Pongo pygmaeus", 
 "^ot:originalLabel": "Pongo pygmaeus 3", 
+"^ot:ottId": 770302, 
+"^ot:ottTaxonName": "Pongo pygmaeus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 23412, 
 "@tb:identifier.taxonVariant": 54796, 
@@ -221,8 +315,9 @@
 }
 }, 
 "Tl3379256": {
-"^ot:altLabel": "Homo sapiens", 
 "^ot:originalLabel": "Homo sapiens 3", 
+"^ot:ottId": 770315, 
+"^ot:ottTaxonName": "Homo sapiens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 13680, 
 "@tb:identifier.taxonVariant": 32274, 
@@ -231,8 +326,9 @@
 }
 }, 
 "Tl3379257": {
-"^ot:altLabel": "Gorilla gorilla", 
 "^ot:originalLabel": "Gorilla gorilla 3", 
+"^ot:ottId": 417965, 
+"^ot:ottTaxonName": "Gorilla gorilla", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 12473, 
 "@tb:identifier.taxonVariant": 29586, 
@@ -241,8 +337,9 @@
 }
 }, 
 "Tl3379258": {
-"^ot:altLabel": "Pan paniscus", 
 "^ot:originalLabel": "Pan paniscus 3", 
+"^ot:ottId": 158484, 
+"^ot:ottTaxonName": "Pan paniscus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 53867, 
 "@tb:identifier.taxonVariant": 124548, 
@@ -280,7 +377,19 @@
 "Tr114557": {
 "@label": "1samples group1 filtered", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn17939909", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 6, 
 "^tb:quality.tree": "Unrated", 
@@ -376,7 +485,19 @@
 "Tr114558": {
 "@label": "1samples group1 unfiltered", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn17939914", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:ntax.tree": 6, 
 "edgeBySourceId": {
 "Tn17939913": {
@@ -469,65 +590,77 @@
 "Tr114589": {
 "@label": "consensus 1sample mix", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn17940254", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:ntax.tree": 6, 
 "edgeBySourceId": {
 "Tn17940251": {
 "edge186660": {
-"@length": 243.0, 
+"@length": 243, 
 "@source": "Tn17940251", 
 "@target": "Tn17940255"
 }, 
 "edge186675": {
-"@length": 243.0, 
+"@length": 243, 
 "@source": "Tn17940251", 
 "@target": "Tn17940253"
 }
 }, 
 "Tn17940254": {
 "edge186658": {
-"@length": 243.0, 
+"@length": 243, 
 "@source": "Tn17940254", 
 "@target": "Tn17940251"
 }, 
 "edge186677": {
-"@length": 243.0, 
+"@length": 243, 
 "@source": "Tn17940254", 
 "@target": "Tn17940256"
 }
 }, 
 "Tn17940255": {
 "edge186663": {
-"@length": 131.0, 
+"@length": 131, 
 "@source": "Tn17940255", 
 "@target": "Tn17940257"
 }, 
 "edge186669": {
-"@length": 95.0, 
+"@length": 95, 
 "@source": "Tn17940255", 
 "@target": "Tn17940261"
 }
 }, 
 "Tn17940257": {
 "edge186665": {
-"@length": 243.0, 
+"@length": 243, 
 "@source": "Tn17940257", 
 "@target": "Tn17940260"
 }, 
 "edge186667": {
-"@length": 243.0, 
+"@length": 243, 
 "@source": "Tn17940257", 
 "@target": "Tn17940259"
 }
 }, 
 "Tn17940261": {
 "edge186671": {
-"@length": 243.0, 
+"@length": 243, 
 "@source": "Tn17940261", 
 "@target": "Tn17940258"
 }, 
 "edge186673": {
-"@length": 243.0, 
+"@length": 243, 
 "@source": "Tn17940261", 
 "@target": "Tn17940252"
 }
@@ -564,7 +697,19 @@
 "Tr114590": {
 "@label": "1samples group2 filtered", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn17940267", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:ntax.tree": 6, 
 "edgeBySourceId": {
 "Tn17940264": {
@@ -657,7 +802,19 @@
 "Tr114591": {
 "@label": "1samples group2 unfiltered", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn17940278", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:ntax.tree": 6, 
 "edgeBySourceId": {
 "Tn17940277": {
@@ -750,7 +907,18 @@
 "Tr114592": {
 "@label": "1samples group3 unfiltered", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:undefined", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "Tn17940286", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn17940289", 
+"^ot:specifiedRoot": "Tn17940289", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "^tb:ntax.tree": 6, 
 "edgeBySourceId": {
 "Tn17940286": {
@@ -843,7 +1011,19 @@
 "Tr114593": {
 "@label": "1samples group3 filtered", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn17940296", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:ntax.tree": 6, 
 "edgeBySourceId": {
 "Tn17940296": {
@@ -927,7 +1107,19 @@
 "Tr114594": {
 "@label": "2samples group1 filtered", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn17940306", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:ntax.tree": 11, 
 "edgeBySourceId": {
 "Tn17940305": {
@@ -1100,7 +1292,19 @@
 "Tr114595": {
 "@label": "2 samples group1 unfiltered", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn17940345", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:ntax.tree": 11, 
 "edgeBySourceId": {
 "Tn17940326": {
@@ -1273,125 +1477,137 @@
 "Tr114626": {
 "@label": "consensus 2samples mix", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn17940986", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:ntax.tree": 11, 
 "edgeBySourceId": {
 "Tn17940975": {
 "edge186765": {
-"@length": 243.0, 
+"@length": 243, 
 "@source": "Tn17940975", 
 "@target": "Tn17940984"
 }, 
 "edge186767": {
-"@length": 243.0, 
+"@length": 243, 
 "@source": "Tn17940975", 
 "@target": "Tn17940994"
 }
 }, 
 "Tn17940977": {
 "edge186757": {
-"@length": 243.0, 
+"@length": 243, 
 "@source": "Tn17940977", 
 "@target": "Tn17940981"
 }, 
 "edge186759": {
-"@length": 243.0, 
+"@length": 243, 
 "@source": "Tn17940977", 
 "@target": "Tn17940985"
 }
 }, 
 "Tn17940978": {
 "edge186786": {
-"@length": 243.0, 
+"@length": 243, 
 "@source": "Tn17940978", 
 "@target": "Tn17940976"
 }, 
 "edge186788": {
-"@length": 243.0, 
+"@length": 243, 
 "@source": "Tn17940978", 
 "@target": "Tn17940980"
 }
 }, 
 "Tn17940979": {
 "edge186771": {
-"@length": 132.0, 
+"@length": 132, 
 "@source": "Tn17940979", 
 "@target": "Tn17940990"
 }, 
 "edge186778": {
-"@length": 243.0, 
+"@length": 243, 
 "@source": "Tn17940979", 
 "@target": "Tn17940987"
 }
 }, 
 "Tn17940986": {
 "edge186751": {
-"@length": 243.0, 
+"@length": 243, 
 "@source": "Tn17940986", 
 "@target": "Tn17940989"
 }, 
 "edge186790": {
-"@length": 243.0, 
+"@length": 243, 
 "@source": "Tn17940986", 
 "@target": "Tn17940993"
 }
 }, 
 "Tn17940987": {
 "edge186780": {
-"@length": 243.0, 
+"@length": 243, 
 "@source": "Tn17940987", 
 "@target": "Tn17940974"
 }, 
 "edge186782": {
-"@length": 243.0, 
+"@length": 243, 
 "@source": "Tn17940987", 
 "@target": "Tn17940982"
 }
 }, 
 "Tn17940989": {
 "edge186753": {
-"@length": 243.0, 
+"@length": 243, 
 "@source": "Tn17940989", 
 "@target": "Tn17940991"
 }, 
 "edge186784": {
-"@length": 243.0, 
+"@length": 243, 
 "@source": "Tn17940989", 
 "@target": "Tn17940978"
 }
 }, 
 "Tn17940990": {
 "edge186773": {
-"@length": 243.0, 
+"@length": 243, 
 "@source": "Tn17940990", 
 "@target": "Tn17940988"
 }, 
 "edge186776": {
-"@length": 243.0, 
+"@length": 243, 
 "@source": "Tn17940990", 
 "@target": "Tn17940983"
 }
 }, 
 "Tn17940991": {
 "edge186755": {
-"@length": 243.0, 
+"@length": 243, 
 "@source": "Tn17940991", 
 "@target": "Tn17940977"
 }, 
 "edge186761": {
-"@length": 56.0, 
+"@length": 56, 
 "@source": "Tn17940991", 
 "@target": "Tn17940992"
 }
 }, 
 "Tn17940992": {
 "edge186763": {
-"@length": 243.0, 
+"@length": 243, 
 "@source": "Tn17940992", 
 "@target": "Tn17940975"
 }, 
 "edge186769": {
-"@length": 116.0, 
+"@length": 116, 
 "@source": "Tn17940992", 
 "@target": "Tn17940979"
 }
@@ -1448,7 +1664,19 @@
 "Tr114627": {
 "@label": "2 samples group2 unfiltered", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn17940999", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:ntax.tree": 11, 
 "edgeBySourceId": {
 "Tn17940997": {
@@ -1612,7 +1840,19 @@
 "Tr114628": {
 "@label": "2samples group3 unfiltered", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn17941031", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:ntax.tree": 11, 
 "edgeBySourceId": {
 "Tn17941016": {
@@ -1785,7 +2025,19 @@
 "Tr114629": {
 "@label": "2samples group2 filtered", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn17941050", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:ntax.tree": 11, 
 "edgeBySourceId": {
 "Tn17941038": {
@@ -1949,7 +2201,19 @@
 "Tr114630": {
 "@label": "2samples group3 filtered", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn17941063", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:ntax.tree": 11, 
 "edgeBySourceId": {
 "Tn17941056": {
@@ -2113,7 +2377,19 @@
 "Tr114631": {
 "@label": "3 samples filtered", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn17941090", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:ntax.tree": 16, 
 "edgeBySourceId": {
 "Tn17941076": {
@@ -2357,7 +2633,19 @@
 "Tr114632": {
 "@label": "3 samples unfiltered", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn17941132", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:ntax.tree": 16, 
 "edgeBySourceId": {
 "Tn17941108": {
