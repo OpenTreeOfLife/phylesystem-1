@@ -50,22 +50,115 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2018-11-06T17:07:32.611Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "SAR group"
 }, 
-"^ot:curatorName": "Matt Girard", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}, 
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": "$1"
+}, 
+"old": {
+"$": "^(\\S*\\s+\\S*).*"
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2018-11-06T17:07:32.611Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Matt Girard"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S22877"
 }, 
+"^ot:focalCladeOTTTaxonName": "", 
 "^ot:otusElementOrder": [
 "Tls63791"
 ], 
 "^ot:studyId": "ot_1838", 
+"^ot:studyPublication": {
+"@href": ""
+}, 
 "^ot:studyPublicationReference": "Salunke R., Mourier T., Banerjee M., Pain A., & Shanmuga D. 2018. Highly diverged novel subunit composition of apicomplexan F-type ATP synthase identified from Toxoplasma gondii. PLoS Biology, .", 
 "^ot:studyYear": 2018, 
+"^ot:tag": [], 
 "^ot:taxonLinkPrefixes": {
 "@ubio": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:", 
 "@uniprot": "http://purl.uniprot.org/taxonomy/"
@@ -88,8 +181,9 @@
 "^skos:historyNote": "Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlOTUWriter@4418d0a7 $Rev$", 
 "otuById": {
 "Tl3203860": {
-"^ot:altLabel": "Babesia bovis", 
 "^ot:originalLabel": "Babesia bovis BBOVIII002130", 
+"^ot:ottId": 826545, 
+"^ot:ottTaxonName": "Babesia bovis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3035, 
 "@tb:identifier.taxonVariant": 7289, 
@@ -98,8 +192,9 @@
 }
 }, 
 "Tl3203861": {
-"^ot:altLabel": "Cryptosporidium parvum", 
 "^ot:originalLabel": "Cryptosporidium parvum Cgd6610", 
+"^ot:ottId": 775251, 
+"^ot:ottTaxonName": "Cryptosporidium parvum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 7620, 
 "@tb:identifier.taxonVariant": 18379, 
@@ -108,8 +203,9 @@
 }
 }, 
 "Tl3203862": {
-"^ot:altLabel": "Saccharomyces cerevisiae", 
 "^ot:originalLabel": "Saccharomyces cerevisiae YBL099W", 
+"^ot:ottId": 356221, 
+"^ot:ottTaxonName": "Saccharomyces cerevisiae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 25995, 
 "@tb:identifier.taxonVariant": 60823, 
@@ -119,6 +215,8 @@
 }, 
 "Tl3203863": {
 "^ot:originalLabel": "Vitrella brassicaformis Vbra12983", 
+"^ot:ottId": 818325, 
+"^ot:ottTaxonName": "Vitrella brassicaformis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 635326, 
 "@tb:identifier.taxonVariant": 850338, 
@@ -126,8 +224,9 @@
 }
 }, 
 "Tl3203864": {
-"^ot:altLabel": "Alveolates", 
 "^ot:originalLabel": "Chromera velia Cvel9763", 
+"^ot:ottId": 215573, 
+"^ot:ottTaxonName": "Chromera velia", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 1044, 
 "@tb:identifier.taxonVariant": 2726, 
@@ -137,8 +236,9 @@
 "^skos:prefLabel": "Alveolata"
 }, 
 "Tl3203865": {
-"^ot:altLabel": "Plasmodium vivax", 
 "^ot:originalLabel": "Plasmodium vivax PVP010407900", 
+"^ot:ottId": 352295, 
+"^ot:ottTaxonName": "Plasmodium vivax", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51512, 
 "@tb:identifier.taxonVariant": 121293, 
@@ -147,7 +247,6 @@
 }
 }, 
 "Tl3203866": {
-"^ot:altLabel": "Symbiodinium", 
 "^ot:originalLabel": "Symbiodinum minutum symbB.v1.2.031525.t1", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 28331, 
@@ -157,8 +256,9 @@
 }
 }, 
 "Tl3203867": {
-"^ot:altLabel": "Arabidopsis thaliana", 
 "^ot:originalLabel": "Arabidopsis thaliana AT2G07698", 
+"^ot:ottId": 309263, 
+"^ot:ottTaxonName": "Arabidopsis thaliana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 2130, 
 "@tb:identifier.taxonVariant": 5084, 
@@ -167,8 +267,9 @@
 }
 }, 
 "Tl3203868": {
-"^ot:altLabel": "Toxoplasma gondii", 
 "^ot:originalLabel": "Toxoplasma gondii TGME49204400", 
+"^ot:ottId": 252145, 
+"^ot:ottTaxonName": "Toxoplasma gondii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51473, 
 "@tb:identifier.taxonVariant": 413956, 
@@ -177,7 +278,6 @@
 }
 }, 
 "Tl3203869": {
-"^ot:altLabel": "Tetrahymena Furgason 1940", 
 "^ot:originalLabel": "Tetrahymena thermophilia XP001027692.2", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 28743, 
@@ -188,8 +288,9 @@
 "^skos:prefLabel": "Tetrahymena"
 }, 
 "Tl3203870": {
-"^ot:altLabel": "Plasmodium knowlesi", 
 "^ot:originalLabel": "Plasmodium knowlesi PKNH0403800", 
+"^ot:ottId": 352298, 
+"^ot:ottTaxonName": "Plasmodium knowlesi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51507, 
 "@tb:identifier.taxonVariant": 121283, 
@@ -198,8 +299,9 @@
 }
 }, 
 "Tl3203871": {
-"^ot:altLabel": "Sarcocystis neurona", 
 "^ot:originalLabel": "Sarcocystis neurona SN302300385", 
+"^ot:ottId": 690900, 
+"^ot:ottTaxonName": "Sarcocystis neurona", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 66280, 
 "@tb:identifier.taxonVariant": 141427, 
@@ -208,8 +310,9 @@
 }
 }, 
 "Tl3203872": {
-"^ot:altLabel": "Cryptosporidium hominis", 
 "^ot:originalLabel": "Cryptosporidium hominis Chro.60082", 
+"^ot:ottId": 976206, 
+"^ot:ottTaxonName": "Cryptosporidium hominis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 215399, 
 "@tb:identifier.taxonVariant": 282502, 
@@ -218,8 +321,9 @@
 }
 }, 
 "Tl3203873": {
-"^ot:altLabel": "Theileria annulata", 
 "^ot:originalLabel": "Theileria annulata TA18615", 
+"^ot:ottId": 302421, 
+"^ot:ottTaxonName": "Theileria annulata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51525, 
 "@tb:identifier.taxonVariant": 121309, 
@@ -228,8 +332,9 @@
 }
 }, 
 "Tl3203874": {
-"^ot:altLabel": "Neospora caninum", 
 "^ot:originalLabel": "Neospora caninum NCLIV020840", 
+"^ot:ottId": 936407, 
+"^ot:ottTaxonName": "Neospora caninum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 57563, 
 "@tb:identifier.taxonVariant": 129784, 
@@ -238,8 +343,9 @@
 }
 }, 
 "Tl3203875": {
-"^ot:altLabel": "Homo sapiens", 
 "^ot:originalLabel": "Homo sapiens Hsa498", 
+"^ot:ottId": 770315, 
+"^ot:ottTaxonName": "Homo sapiens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 13680, 
 "@tb:identifier.taxonVariant": 32274, 
@@ -248,8 +354,9 @@
 }
 }, 
 "Tl3203876": {
-"^ot:altLabel": "Eimeria tenella", 
 "^ot:originalLabel": "Eimeria tenella ETH00005270", 
+"^ot:ottId": 775246, 
+"^ot:ottTaxonName": "Eimeria tenella", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 9775, 
 "@tb:identifier.taxonVariant": 23414, 
@@ -258,8 +365,9 @@
 }
 }, 
 "Tl3203877": {
-"^ot:altLabel": "Plasmodium falciparum", 
 "^ot:originalLabel": "Plasmodium falciparum PF3D70217100", 
+"^ot:ottId": 201128, 
+"^ot:ottTaxonName": "Plasmodium falciparum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22665, 
 "@tb:identifier.taxonVariant": 52862, 
@@ -268,8 +376,9 @@
 }
 }, 
 "Tl3203878": {
-"^ot:altLabel": "Cryptosporidium muris", 
 "^ot:originalLabel": "Cryptosporidium muris CMU027630", 
+"^ot:ottId": 775243, 
+"^ot:ottTaxonName": "Cryptosporidium muris", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 7619, 
 "@tb:identifier.taxonVariant": 18378, 
@@ -278,8 +387,9 @@
 }
 }, 
 "Tl3203879": {
-"^ot:altLabel": "Mus musculus", 
 "^ot:originalLabel": "Mus musculus Mmu11946", 
+"^ot:ottId": 542509, 
+"^ot:ottTaxonName": "Mus musculus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 18305, 
 "@tb:identifier.taxonVariant": 42783, 
@@ -288,8 +398,9 @@
 }
 }, 
 "Tl3203880": {
-"^ot:altLabel": "Theileria parva", 
 "^ot:originalLabel": "Theileria parva TP030569", 
+"^ot:ottId": 302422, 
+"^ot:ottTaxonName": "Theileria parva", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 28885, 
 "@tb:identifier.taxonVariant": 67360, 
@@ -298,8 +409,9 @@
 }
 }, 
 "Tl3203881": {
-"^ot:altLabel": "Chlamydomonas reinhardtii", 
 "^ot:originalLabel": "Chlamydomonas reinhardtii XP001699641.1", 
+"^ot:ottId": 33153, 
+"^ot:ottTaxonName": "Chlamydomonas reinhardtii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5860, 
 "@tb:identifier.taxonVariant": 14193, 
@@ -308,8 +420,9 @@
 }
 }, 
 "Tl3203882": {
-"^ot:altLabel": "Hammondia hammondi", 
 "^ot:originalLabel": "Hammondia hammondi HHA204400", 
+"^ot:ottId": 595486, 
+"^ot:ottTaxonName": "Hammondia hammondi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 106624, 
 "@tb:identifier.taxonVariant": 185174, 
@@ -318,8 +431,9 @@
 }
 }, 
 "Tl3203883": {
-"^ot:altLabel": "Plasmodium berghei", 
 "^ot:originalLabel": "Plasmodium berghei PBANKA0313800", 
+"^ot:ottId": 724398, 
+"^ot:ottTaxonName": "Plasmodium berghei", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51481, 
 "@tb:identifier.taxonVariant": 121267, 
@@ -328,8 +442,9 @@
 }
 }, 
 "Tl3203884": {
-"^ot:altLabel": "Plasmodium yoelii", 
 "^ot:originalLabel": "Plasmodium yoelii PY17X0314300", 
+"^ot:ottId": 826551, 
+"^ot:ottTaxonName": "Plasmodium yoelii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22669, 
 "@tb:identifier.taxonVariant": 52866, 
@@ -338,7 +453,6 @@
 }
 }, 
 "Tl3203885": {
-"^ot:altLabel": "Symbiodinium", 
 "^ot:originalLabel": "Symbiodinum minutum symbB.v1.2.020623.t1", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 28331, 
@@ -348,8 +462,9 @@
 }
 }, 
 "Tl3203886": {
-"^ot:altLabel": "Perkinsus marinus", 
 "^ot:originalLabel": "Perkinsus marinus XP002780357.1", 
+"^ot:ottId": 438694, 
+"^ot:ottTaxonName": "Perkinsus marinus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 58761, 
 "@tb:identifier.taxonVariant": 131659, 
@@ -358,8 +473,9 @@
 }
 }, 
 "Tl3203887": {
-"^ot:altLabel": "Plasmodium chabaudi", 
 "^ot:originalLabel": "Plasmodium chabaudi PCHAS0315900", 
+"^ot:ottId": 724404, 
+"^ot:ottTaxonName": "Plasmodium chabaudi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51484, 
 "@tb:identifier.taxonVariant": 121271, 
@@ -368,8 +484,9 @@
 }
 }, 
 "Tl3203888": {
-"^ot:altLabel": "Perkinsus marinus", 
 "^ot:originalLabel": "Perkinsus marinus XP002782393.1", 
+"^ot:ottId": 438694, 
+"^ot:ottTaxonName": "Perkinsus marinus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 58761, 
 "@tb:identifier.taxonVariant": 131659, 
@@ -378,8 +495,9 @@
 }
 }, 
 "Tl3203889": {
-"^ot:altLabel": "Plasmodium vivax", 
 "^ot:originalLabel": "Plasmodium vivax PVP011453800", 
+"^ot:ottId": 352295, 
+"^ot:ottTaxonName": "Plasmodium vivax", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51512, 
 "@tb:identifier.taxonVariant": 121293, 
@@ -388,8 +506,9 @@
 }
 }, 
 "Tl3203890": {
-"^ot:altLabel": "Chlamydomonas reinhardtii", 
 "^ot:originalLabel": "Chlamydomonas reinhardtii XP001691632.1", 
+"^ot:ottId": 33153, 
+"^ot:ottTaxonName": "Chlamydomonas reinhardtii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5860, 
 "@tb:identifier.taxonVariant": 14193, 
@@ -398,8 +517,9 @@
 }
 }, 
 "Tl3203891": {
-"^ot:altLabel": "Saccharomyces cerevisiae", 
 "^ot:originalLabel": "Saccharomyces cerevisiae YJR121W", 
+"^ot:ottId": 356221, 
+"^ot:ottTaxonName": "Saccharomyces cerevisiae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 25995, 
 "@tb:identifier.taxonVariant": 60823, 
@@ -408,8 +528,9 @@
 }
 }, 
 "Tl3203892": {
-"^ot:altLabel": "Theileria parva", 
 "^ot:originalLabel": "Theileria parva TP010389", 
+"^ot:ottId": 302422, 
+"^ot:ottTaxonName": "Theileria parva", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 28885, 
 "@tb:identifier.taxonVariant": 67360, 
@@ -418,8 +539,9 @@
 }
 }, 
 "Tl3203893": {
-"^ot:altLabel": "Cryptosporidium hominis", 
 "^ot:originalLabel": "Cryptosporidium hominis Chro.20148", 
+"^ot:ottId": 976206, 
+"^ot:ottTaxonName": "Cryptosporidium hominis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 215399, 
 "@tb:identifier.taxonVariant": 282502, 
@@ -428,8 +550,9 @@
 }
 }, 
 "Tl3203894": {
-"^ot:altLabel": "Mus musculus", 
 "^ot:originalLabel": "Mus musculus Mmu11947", 
+"^ot:ottId": 542509, 
+"^ot:ottTaxonName": "Mus musculus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 18305, 
 "@tb:identifier.taxonVariant": 42783, 
@@ -438,8 +561,9 @@
 }
 }, 
 "Tl3203895": {
-"^ot:altLabel": "Sarcocystis neurona", 
 "^ot:originalLabel": "Sarcocystis neurona SN300201975", 
+"^ot:ottId": 690900, 
+"^ot:ottTaxonName": "Sarcocystis neurona", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 66280, 
 "@tb:identifier.taxonVariant": 141427, 
@@ -448,8 +572,9 @@
 }
 }, 
 "Tl3203896": {
-"^ot:altLabel": "Vitrella brassicaformis Vbra12983", 
 "^ot:originalLabel": "Vitrella brassicaformis Vbra14590", 
+"^ot:ottId": 818325, 
+"^ot:ottTaxonName": "Vitrella brassicaformis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 635326, 
 "@tb:identifier.taxonVariant": 850338, 
@@ -457,8 +582,9 @@
 }
 }, 
 "Tl3203897": {
-"^ot:altLabel": "Cryptosporidium parvum", 
 "^ot:originalLabel": "Cryptosporidium parvum Cgd21360", 
+"^ot:ottId": 775251, 
+"^ot:ottTaxonName": "Cryptosporidium parvum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 7620, 
 "@tb:identifier.taxonVariant": 18379, 
@@ -467,8 +593,9 @@
 }
 }, 
 "Tl3203898": {
-"^ot:altLabel": "Alveolates", 
 "^ot:originalLabel": "Chromera velia Cvel18898", 
+"^ot:ottId": 215573, 
+"^ot:ottTaxonName": "Chromera velia", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 1044, 
 "@tb:identifier.taxonVariant": 2726, 
@@ -478,8 +605,9 @@
 "^skos:prefLabel": "Alveolata"
 }, 
 "Tl3203899": {
-"^ot:altLabel": "Plasmodium yoelii", 
 "^ot:originalLabel": "Plasmodium yoelii PY17X1452800", 
+"^ot:ottId": 826551, 
+"^ot:ottTaxonName": "Plasmodium yoelii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22669, 
 "@tb:identifier.taxonVariant": 52866, 
@@ -488,8 +616,9 @@
 }
 }, 
 "Tl3203900": {
-"^ot:altLabel": "Arabidopsis thaliana", 
 "^ot:originalLabel": "Arabidopsis thaliana AT5G08670", 
+"^ot:ottId": 309263, 
+"^ot:ottTaxonName": "Arabidopsis thaliana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 2130, 
 "@tb:identifier.taxonVariant": 5084, 
@@ -498,8 +627,9 @@
 }
 }, 
 "Tl3203901": {
-"^ot:altLabel": "Homo sapiens", 
 "^ot:originalLabel": "Homo sapiens Hsa506", 
+"^ot:ottId": 770315, 
+"^ot:ottTaxonName": "Homo sapiens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 13680, 
 "@tb:identifier.taxonVariant": 32274, 
@@ -508,8 +638,9 @@
 }
 }, 
 "Tl3203902": {
-"^ot:altLabel": "Theileria annulata", 
 "^ot:originalLabel": "Theileria annulata TA20945", 
+"^ot:ottId": 302421, 
+"^ot:ottTaxonName": "Theileria annulata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51525, 
 "@tb:identifier.taxonVariant": 121309, 
@@ -518,8 +649,9 @@
 }
 }, 
 "Tl3203903": {
-"^ot:altLabel": "Toxoplasma gondii", 
 "^ot:originalLabel": "Toxoplasma gondii TGME49261950", 
+"^ot:ottId": 252145, 
+"^ot:ottTaxonName": "Toxoplasma gondii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51473, 
 "@tb:identifier.taxonVariant": 413956, 
@@ -528,8 +660,9 @@
 }
 }, 
 "Tl3203904": {
-"^ot:altLabel": "Plasmodium chabaudi", 
 "^ot:originalLabel": "Plasmodium chabaudi PCHAS1452600", 
+"^ot:ottId": 724404, 
+"^ot:ottTaxonName": "Plasmodium chabaudi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51484, 
 "@tb:identifier.taxonVariant": 121271, 
@@ -538,7 +671,6 @@
 }
 }, 
 "Tl3203905": {
-"^ot:altLabel": "Tetrahymena Furgason 1940", 
 "^ot:originalLabel": "Tetrahymena thermophilia XP001032631.2", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 28743, 
@@ -549,8 +681,9 @@
 "^skos:prefLabel": "Tetrahymena"
 }, 
 "Tl3203906": {
-"^ot:altLabel": "Eimeria tenella", 
 "^ot:originalLabel": "Eimeria tenella ETH00026155", 
+"^ot:ottId": 775246, 
+"^ot:ottTaxonName": "Eimeria tenella", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 9775, 
 "@tb:identifier.taxonVariant": 23414, 
@@ -559,8 +692,9 @@
 }
 }, 
 "Tl3203907": {
-"^ot:altLabel": "Plasmodium berghei", 
 "^ot:originalLabel": "Plasmodium berghei PBANKA1450300", 
+"^ot:ottId": 724398, 
+"^ot:ottTaxonName": "Plasmodium berghei", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51481, 
 "@tb:identifier.taxonVariant": 121267, 
@@ -569,8 +703,9 @@
 }
 }, 
 "Tl3203908": {
-"^ot:altLabel": "Babesia bovis", 
 "^ot:originalLabel": "Babesia bovis BBOVIV005830", 
+"^ot:ottId": 826545, 
+"^ot:ottTaxonName": "Babesia bovis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3035, 
 "@tb:identifier.taxonVariant": 7289, 
@@ -579,8 +714,9 @@
 }
 }, 
 "Tl3203909": {
-"^ot:altLabel": "Plasmodium falciparum", 
 "^ot:originalLabel": "Plasmodium falciparum PF3D71235700", 
+"^ot:ottId": 201128, 
+"^ot:ottTaxonName": "Plasmodium falciparum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22665, 
 "@tb:identifier.taxonVariant": 52862, 
@@ -589,8 +725,9 @@
 }
 }, 
 "Tl3203910": {
-"^ot:altLabel": "Neospora caninum", 
 "^ot:originalLabel": "Neospora caninum NCLIV025670", 
+"^ot:ottId": 936407, 
+"^ot:ottTaxonName": "Neospora caninum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 57563, 
 "@tb:identifier.taxonVariant": 129784, 
@@ -599,8 +736,9 @@
 }
 }, 
 "Tl3203911": {
-"^ot:altLabel": "Plasmodium knowlesi", 
 "^ot:originalLabel": "Plasmodium knowlesi PKNH1455400", 
+"^ot:ottId": 352298, 
+"^ot:ottTaxonName": "Plasmodium knowlesi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51507, 
 "@tb:identifier.taxonVariant": 121283, 
@@ -609,8 +747,9 @@
 }
 }, 
 "Tl3203912": {
-"^ot:altLabel": "Hammondia hammondi", 
 "^ot:originalLabel": "Hammondia hammondi HHA261950", 
+"^ot:ottId": 595486, 
+"^ot:ottTaxonName": "Hammondia hammondi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 106624, 
 "@tb:identifier.taxonVariant": 185174, 
@@ -619,8 +758,9 @@
 }
 }, 
 "Tl3203913": {
-"^ot:altLabel": "Cryptosporidium muris", 
 "^ot:originalLabel": "Cryptosporidium muris CMU008950", 
+"^ot:ottId": 775243, 
+"^ot:ottTaxonName": "Cryptosporidium muris", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 7619, 
 "@tb:identifier.taxonVariant": 18378, 
@@ -629,8 +769,9 @@
 }
 }, 
 "Tl3203914": {
-"^ot:altLabel": "Plasmodium vivax", 
 "^ot:originalLabel": "Plasmodium vivax PVP010948300", 
+"^ot:ottId": 352295, 
+"^ot:ottTaxonName": "Plasmodium vivax", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51512, 
 "@tb:identifier.taxonVariant": 121293, 
@@ -639,8 +780,9 @@
 }
 }, 
 "Tl3203915": {
-"^ot:altLabel": "Plasmodium yoelii", 
 "^ot:originalLabel": "Plasmodium yoelii PY17X0902800", 
+"^ot:ottId": 826551, 
+"^ot:ottTaxonName": "Plasmodium yoelii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22669, 
 "@tb:identifier.taxonVariant": 52866, 
@@ -649,8 +791,9 @@
 }
 }, 
 "Tl3203916": {
-"^ot:altLabel": "Vitrella brassicaformis Vbra12983", 
 "^ot:originalLabel": "Vitrella brassicaformis Vbra4892", 
+"^ot:ottId": 818325, 
+"^ot:ottTaxonName": "Vitrella brassicaformis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 635326, 
 "@tb:identifier.taxonVariant": 850338, 
@@ -658,8 +801,9 @@
 }
 }, 
 "Tl3203917": {
-"^ot:altLabel": "Hammondia hammondi", 
 "^ot:originalLabel": "Hammondia hammondi HHA226000", 
+"^ot:ottId": 595486, 
+"^ot:ottTaxonName": "Hammondia hammondi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 106624, 
 "@tb:identifier.taxonVariant": 185174, 
@@ -668,8 +812,9 @@
 }
 }, 
 "Tl3203918": {
-"^ot:altLabel": "Homo sapiens", 
 "^ot:originalLabel": "Homo sapiens Hsa513", 
+"^ot:ottId": 770315, 
+"^ot:ottTaxonName": "Homo sapiens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 13680, 
 "@tb:identifier.taxonVariant": 32274, 
@@ -678,8 +823,9 @@
 }
 }, 
 "Tl3203919": {
-"^ot:altLabel": "Perkinsus marinus", 
 "^ot:originalLabel": "Perkinsus marinus XP002785641.1", 
+"^ot:ottId": 438694, 
+"^ot:ottTaxonName": "Perkinsus marinus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 58761, 
 "@tb:identifier.taxonVariant": 131659, 
@@ -688,8 +834,9 @@
 }
 }, 
 "Tl3203920": {
-"^ot:altLabel": "Theileria annulata", 
 "^ot:originalLabel": "Theileria annulata TA12155", 
+"^ot:ottId": 302421, 
+"^ot:ottTaxonName": "Theileria annulata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51525, 
 "@tb:identifier.taxonVariant": 121309, 
@@ -698,8 +845,9 @@
 }
 }, 
 "Tl3203921": {
-"^ot:altLabel": "Saccharomyces cerevisiae", 
 "^ot:originalLabel": "Saccharomyces cerevisiae YDL004W", 
+"^ot:ottId": 356221, 
+"^ot:ottTaxonName": "Saccharomyces cerevisiae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 25995, 
 "@tb:identifier.taxonVariant": 60823, 
@@ -708,8 +856,9 @@
 }
 }, 
 "Tl3203922": {
-"^ot:altLabel": "Theileria parva", 
 "^ot:originalLabel": "Theileria parva TP020253", 
+"^ot:ottId": 302422, 
+"^ot:ottTaxonName": "Theileria parva", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 28885, 
 "@tb:identifier.taxonVariant": 67360, 
@@ -718,8 +867,9 @@
 }
 }, 
 "Tl3203923": {
-"^ot:altLabel": "Sarcocystis neurona", 
 "^ot:originalLabel": "Sarcocystis neurona SN300102655", 
+"^ot:ottId": 690900, 
+"^ot:ottTaxonName": "Sarcocystis neurona", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 66280, 
 "@tb:identifier.taxonVariant": 141427, 
@@ -728,8 +878,9 @@
 }
 }, 
 "Tl3203924": {
-"^ot:altLabel": "Arabidopsis thaliana", 
 "^ot:originalLabel": "Arabidopsis thaliana AT5G47030", 
+"^ot:ottId": 309263, 
+"^ot:ottTaxonName": "Arabidopsis thaliana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 2130, 
 "@tb:identifier.taxonVariant": 5084, 
@@ -738,8 +889,9 @@
 }
 }, 
 "Tl3203925": {
-"^ot:altLabel": "Plasmodium berghei", 
 "^ot:originalLabel": "Plasmodium berghei PBANKA0901400", 
+"^ot:ottId": 724398, 
+"^ot:ottTaxonName": "Plasmodium berghei", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51481, 
 "@tb:identifier.taxonVariant": 121267, 
@@ -748,7 +900,6 @@
 }
 }, 
 "Tl3203926": {
-"^ot:altLabel": "Symbiodinium", 
 "^ot:originalLabel": "Symbiodinum minutum symbB.v1.2.019144.t1", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 28331, 
@@ -758,8 +909,9 @@
 }
 }, 
 "Tl3203927": {
-"^ot:altLabel": "Plasmodium knowlesi", 
 "^ot:originalLabel": "Plasmodium knowlesi PKNH0945600", 
+"^ot:ottId": 352298, 
+"^ot:ottTaxonName": "Plasmodium knowlesi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51507, 
 "@tb:identifier.taxonVariant": 121283, 
@@ -768,8 +920,9 @@
 }
 }, 
 "Tl3203928": {
-"^ot:altLabel": "Plasmodium chabaudi", 
 "^ot:originalLabel": "Plasmodium chabaudi PCHAS0702600", 
+"^ot:ottId": 724404, 
+"^ot:ottTaxonName": "Plasmodium chabaudi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51484, 
 "@tb:identifier.taxonVariant": 121271, 
@@ -778,8 +931,9 @@
 }
 }, 
 "Tl3203929": {
-"^ot:altLabel": "Babesia bovis", 
 "^ot:originalLabel": "Babesia bovis BBOVIII004400", 
+"^ot:ottId": 826545, 
+"^ot:ottTaxonName": "Babesia bovis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3035, 
 "@tb:identifier.taxonVariant": 7289, 
@@ -788,8 +942,9 @@
 }
 }, 
 "Tl3203930": {
-"^ot:altLabel": "Cryptosporidium muris", 
 "^ot:originalLabel": "Cryptosporidium muris CMU008960", 
+"^ot:ottId": 775243, 
+"^ot:ottTaxonName": "Cryptosporidium muris", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 7619, 
 "@tb:identifier.taxonVariant": 18378, 
@@ -798,8 +953,9 @@
 }
 }, 
 "Tl3203931": {
-"^ot:altLabel": "Plasmodium falciparum", 
 "^ot:originalLabel": "Plasmodium falciparum PF3D71147700", 
+"^ot:ottId": 201128, 
+"^ot:ottTaxonName": "Plasmodium falciparum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22665, 
 "@tb:identifier.taxonVariant": 52862, 
@@ -808,7 +964,6 @@
 }
 }, 
 "Tl3203932": {
-"^ot:altLabel": "Symbiodinium", 
 "^ot:originalLabel": "Symbiodinum minutum symbB.v1.2.029645.t1", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 28331, 
@@ -818,8 +973,9 @@
 }
 }, 
 "Tl3203933": {
-"^ot:altLabel": "Mus musculus", 
 "^ot:originalLabel": "Mus musculus Mmu66043", 
+"^ot:ottId": 542509, 
+"^ot:ottTaxonName": "Mus musculus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 18305, 
 "@tb:identifier.taxonVariant": 42783, 
@@ -828,8 +984,9 @@
 }
 }, 
 "Tl3203934": {
-"^ot:altLabel": "Toxoplasma gondii", 
 "^ot:originalLabel": "Toxoplasma gondii TGME49226000", 
+"^ot:ottId": 252145, 
+"^ot:ottTaxonName": "Toxoplasma gondii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51473, 
 "@tb:identifier.taxonVariant": 413956, 
@@ -838,8 +995,9 @@
 }
 }, 
 "Tl3203935": {
-"^ot:altLabel": "Neospora caninum", 
 "^ot:originalLabel": "Neospora caninum NCLIV046830", 
+"^ot:ottId": 936407, 
+"^ot:ottTaxonName": "Neospora caninum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 57563, 
 "@tb:identifier.taxonVariant": 129784, 
@@ -848,8 +1006,9 @@
 }
 }, 
 "Tl3203936": {
-"^ot:altLabel": "Chlamydomonas reinhardtii", 
 "^ot:originalLabel": "Chlamydomonas reinhardtii XP001698736.1", 
+"^ot:ottId": 33153, 
+"^ot:ottTaxonName": "Chlamydomonas reinhardtii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5860, 
 "@tb:identifier.taxonVariant": 14193, 
@@ -858,8 +1017,9 @@
 }
 }, 
 "Tl3203937": {
-"^ot:altLabel": "Alveolates", 
 "^ot:originalLabel": "Chromera velia Cvel21479", 
+"^ot:ottId": 215573, 
+"^ot:ottTaxonName": "Chromera velia", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 1044, 
 "@tb:identifier.taxonVariant": 2726, 
@@ -869,8 +1029,9 @@
 "^skos:prefLabel": "Alveolata"
 }, 
 "Tl3203938": {
-"^ot:altLabel": "Plasmodium berghei", 
 "^ot:originalLabel": "Plasmodium berghei PBANKA1421800", 
+"^ot:ottId": 724398, 
+"^ot:ottTaxonName": "Plasmodium berghei", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51481, 
 "@tb:identifier.taxonVariant": 121267, 
@@ -879,8 +1040,9 @@
 }
 }, 
 "Tl3203939": {
-"^ot:altLabel": "Plasmodium chabaudi", 
 "^ot:originalLabel": "Plasmodium chabaudi PCHAS1423600", 
+"^ot:ottId": 724404, 
+"^ot:ottTaxonName": "Plasmodium chabaudi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51484, 
 "@tb:identifier.taxonVariant": 121271, 
@@ -889,8 +1051,9 @@
 }
 }, 
 "Tl3203940": {
-"^ot:altLabel": "Plasmodium knowlesi", 
 "^ot:originalLabel": "Plasmodium knowlesi PKNH1424500", 
+"^ot:ottId": 352298, 
+"^ot:ottTaxonName": "Plasmodium knowlesi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51507, 
 "@tb:identifier.taxonVariant": 121283, 
@@ -899,8 +1062,9 @@
 }
 }, 
 "Tl3203941": {
-"^ot:altLabel": "Theileria parva", 
 "^ot:originalLabel": "Theileria parva TP030278", 
+"^ot:ottId": 302422, 
+"^ot:ottTaxonName": "Theileria parva", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 28885, 
 "@tb:identifier.taxonVariant": 67360, 
@@ -909,8 +1073,9 @@
 }
 }, 
 "Tl3203942": {
-"^ot:altLabel": "Hammondia hammondi", 
 "^ot:originalLabel": "Hammondia hammondi HHA314820", 
+"^ot:ottId": 595486, 
+"^ot:ottTaxonName": "Hammondia hammondi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 106624, 
 "@tb:identifier.taxonVariant": 185174, 
@@ -919,8 +1084,9 @@
 }
 }, 
 "Tl3203943": {
-"^ot:altLabel": "Vitrella brassicaformis Vbra12983", 
 "^ot:originalLabel": "Vitrella brassicaformis Vbra20673", 
+"^ot:ottId": 818325, 
+"^ot:ottTaxonName": "Vitrella brassicaformis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 635326, 
 "@tb:identifier.taxonVariant": 850338, 
@@ -928,8 +1094,9 @@
 }
 }, 
 "Tl3203944": {
-"^ot:altLabel": "Neospora caninum", 
 "^ot:originalLabel": "Neospora caninum NCLIV057710", 
+"^ot:ottId": 936407, 
+"^ot:ottTaxonName": "Neospora caninum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 57563, 
 "@tb:identifier.taxonVariant": 129784, 
@@ -938,8 +1105,9 @@
 }
 }, 
 "Tl3203945": {
-"^ot:altLabel": "Toxoplasma gondii", 
 "^ot:originalLabel": "Toxoplasma gondii TGME49314820", 
+"^ot:ottId": 252145, 
+"^ot:ottTaxonName": "Toxoplasma gondii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51473, 
 "@tb:identifier.taxonVariant": 413956, 
@@ -948,8 +1116,9 @@
 }
 }, 
 "Tl3203946": {
-"^ot:altLabel": "Homo sapiens", 
 "^ot:originalLabel": "Homo sapiens Hsa514", 
+"^ot:ottId": 770315, 
+"^ot:ottTaxonName": "Homo sapiens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 13680, 
 "@tb:identifier.taxonVariant": 32274, 
@@ -958,8 +1127,9 @@
 }
 }, 
 "Tl3203947": {
-"^ot:altLabel": "Plasmodium vivax", 
 "^ot:originalLabel": "Plasmodium vivax PVP011424600", 
+"^ot:ottId": 352295, 
+"^ot:ottTaxonName": "Plasmodium vivax", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51512, 
 "@tb:identifier.taxonVariant": 121293, 
@@ -968,8 +1138,9 @@
 }
 }, 
 "Tl3203948": {
-"^ot:altLabel": "Eimeria tenella", 
 "^ot:originalLabel": "Eimeria tenella ETH00017010", 
+"^ot:ottId": 775246, 
+"^ot:ottTaxonName": "Eimeria tenella", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 9775, 
 "@tb:identifier.taxonVariant": 23414, 
@@ -978,8 +1149,9 @@
 }
 }, 
 "Tl3203949": {
-"^ot:altLabel": "Saccharomyces cerevisiae", 
 "^ot:originalLabel": "Saccharomyces cerevisiae YPL271W", 
+"^ot:ottId": 356221, 
+"^ot:ottTaxonName": "Saccharomyces cerevisiae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 25995, 
 "@tb:identifier.taxonVariant": 60823, 
@@ -988,8 +1160,9 @@
 }
 }, 
 "Tl3203950": {
-"^ot:altLabel": "Alveolates", 
 "^ot:originalLabel": "Chromera velia Cvel17380", 
+"^ot:ottId": 215573, 
+"^ot:ottTaxonName": "Chromera velia", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 1044, 
 "@tb:identifier.taxonVariant": 2726, 
@@ -999,8 +1172,9 @@
 "^skos:prefLabel": "Alveolata"
 }, 
 "Tl3203951": {
-"^ot:altLabel": "Sarcocystis neurona", 
 "^ot:originalLabel": "Sarcocystis neurona SN300300305", 
+"^ot:ottId": 690900, 
+"^ot:ottTaxonName": "Sarcocystis neurona", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 66280, 
 "@tb:identifier.taxonVariant": 141427, 
@@ -1009,7 +1183,6 @@
 }
 }, 
 "Tl3203952": {
-"^ot:altLabel": "Symbiodinium", 
 "^ot:originalLabel": "Symbiodinum minutum symbB.v1.2.011998.t1", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 28331, 
@@ -1019,8 +1192,9 @@
 }
 }, 
 "Tl3203953": {
-"^ot:altLabel": "Chlamydomonas reinhardtii", 
 "^ot:originalLabel": "Chlamydomonas reinhardtii XP001702609.1", 
+"^ot:ottId": 33153, 
+"^ot:ottTaxonName": "Chlamydomonas reinhardtii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5860, 
 "@tb:identifier.taxonVariant": 14193, 
@@ -1029,8 +1203,9 @@
 }
 }, 
 "Tl3203954": {
-"^ot:altLabel": "Mus musculus", 
 "^ot:originalLabel": "Mus musculus Mmu67126", 
+"^ot:ottId": 542509, 
+"^ot:ottTaxonName": "Mus musculus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 18305, 
 "@tb:identifier.taxonVariant": 42783, 
@@ -1039,8 +1214,9 @@
 }
 }, 
 "Tl3203955": {
-"^ot:altLabel": "Plasmodium yoelii", 
 "^ot:originalLabel": "Plasmodium yoelii PY17X1423800", 
+"^ot:ottId": 826551, 
+"^ot:ottTaxonName": "Plasmodium yoelii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22669, 
 "@tb:identifier.taxonVariant": 52866, 
@@ -1049,8 +1225,9 @@
 }
 }, 
 "Tl3203956": {
-"^ot:altLabel": "Cryptosporidium muris", 
 "^ot:originalLabel": "Cryptosporidium muris CMU002850", 
+"^ot:ottId": 775243, 
+"^ot:ottTaxonName": "Cryptosporidium muris", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 7619, 
 "@tb:identifier.taxonVariant": 18378, 
@@ -1059,8 +1236,9 @@
 }
 }, 
 "Tl3203957": {
-"^ot:altLabel": "Plasmodium falciparum", 
 "^ot:originalLabel": "Plasmodium falciparum PF3D70715500", 
+"^ot:ottId": 201128, 
+"^ot:ottTaxonName": "Plasmodium falciparum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22665, 
 "@tb:identifier.taxonVariant": 52862, 
@@ -1069,8 +1247,9 @@
 }
 }, 
 "Tl3203958": {
-"^ot:altLabel": "Babesia bovis", 
 "^ot:originalLabel": "Babesia bovis BBOVIV007710", 
+"^ot:ottId": 826545, 
+"^ot:ottTaxonName": "Babesia bovis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3035, 
 "@tb:identifier.taxonVariant": 7289, 
@@ -1079,8 +1258,9 @@
 }
 }, 
 "Tl3203959": {
-"^ot:altLabel": "Perkinsus marinus", 
 "^ot:originalLabel": "Perkinsus marinus XP002776346.1", 
+"^ot:ottId": 438694, 
+"^ot:ottTaxonName": "Perkinsus marinus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 58761, 
 "@tb:identifier.taxonVariant": 131659, 
@@ -1089,8 +1269,9 @@
 }
 }, 
 "Tl3203960": {
-"^ot:altLabel": "Toxoplasma gondii", 
 "^ot:originalLabel": "Toxoplasma gondii TGME49231910", 
+"^ot:ottId": 252145, 
+"^ot:ottTaxonName": "Toxoplasma gondii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 29259, 
 "@tb:identifier.taxonVariant": 68212, 
@@ -1100,8 +1281,9 @@
 "^skos:prefLabel": "Toxoplasma gondii type III"
 }, 
 "Tl3203961": {
-"^ot:altLabel": "Babesia bovis", 
 "^ot:originalLabel": "Babesia bovis BBOVIV005350", 
+"^ot:ottId": 826545, 
+"^ot:ottTaxonName": "Babesia bovis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3035, 
 "@tb:identifier.taxonVariant": 7289, 
@@ -1110,8 +1292,9 @@
 }
 }, 
 "Tl3203962": {
-"^ot:altLabel": "Alveolates", 
 "^ot:originalLabel": "Chromera velia Cvel10158", 
+"^ot:ottId": 215573, 
+"^ot:ottTaxonName": "Chromera velia", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 1044, 
 "@tb:identifier.taxonVariant": 2726, 
@@ -1121,8 +1304,9 @@
 "^skos:prefLabel": "Alveolata"
 }, 
 "Tl3203963": {
-"^ot:altLabel": "Plasmodium vivax", 
 "^ot:originalLabel": "Plasmodium vivax PVP011412300", 
+"^ot:ottId": 352295, 
+"^ot:ottTaxonName": "Plasmodium vivax", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51512, 
 "@tb:identifier.taxonVariant": 121293, 
@@ -1131,8 +1315,9 @@
 }
 }, 
 "Tl3203964": {
-"^ot:altLabel": "Theileria parva", 
 "^ot:originalLabel": "Theileria parva TP010201", 
+"^ot:ottId": 302422, 
+"^ot:ottTaxonName": "Theileria parva", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 28885, 
 "@tb:identifier.taxonVariant": 67360, 
@@ -1141,7 +1326,6 @@
 }
 }, 
 "Tl3203965": {
-"^ot:altLabel": "Symbiodinium", 
 "^ot:originalLabel": "Symbiodinum minutum symbB.v1.2.004028.t1", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 28331, 
@@ -1151,7 +1335,6 @@
 }
 }, 
 "Tl3203966": {
-"^ot:altLabel": "Symbiodinium", 
 "^ot:originalLabel": "Symbiodinum minutum symbB.v1.2.004029.t1", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 28331, 
@@ -1161,8 +1344,9 @@
 }
 }, 
 "Tl3203967": {
-"^ot:altLabel": "Arabidopsis thaliana", 
 "^ot:originalLabel": "Arabidopsis thaliana AT2G33040", 
+"^ot:ottId": 309263, 
+"^ot:ottTaxonName": "Arabidopsis thaliana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 2130, 
 "@tb:identifier.taxonVariant": 5084, 
@@ -1171,8 +1355,9 @@
 }
 }, 
 "Tl3203968": {
-"^ot:altLabel": "Hammondia hammondi", 
 "^ot:originalLabel": "Hammondia hammondi HHA231910", 
+"^ot:ottId": 595486, 
+"^ot:ottTaxonName": "Hammondia hammondi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 106624, 
 "@tb:identifier.taxonVariant": 185174, 
@@ -1181,8 +1366,9 @@
 }
 }, 
 "Tl3203969": {
-"^ot:altLabel": "Plasmodium knowlesi", 
 "^ot:originalLabel": "Plasmodium knowlesi PKNH1411700", 
+"^ot:ottId": 352298, 
+"^ot:ottTaxonName": "Plasmodium knowlesi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51507, 
 "@tb:identifier.taxonVariant": 121283, 
@@ -1191,8 +1377,9 @@
 }
 }, 
 "Tl3203970": {
-"^ot:altLabel": "Saccharomyces cerevisiae", 
 "^ot:originalLabel": "Saccharomyces cerevisiae YBR039W", 
+"^ot:ottId": 356221, 
+"^ot:ottTaxonName": "Saccharomyces cerevisiae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 25995, 
 "@tb:identifier.taxonVariant": 60823, 
@@ -1201,8 +1388,9 @@
 }
 }, 
 "Tl3203971": {
-"^ot:altLabel": "Vitrella brassicaformis Vbra12983", 
 "^ot:originalLabel": "Vitrella brassicaformis Vbra15179", 
+"^ot:ottId": 818325, 
+"^ot:ottTaxonName": "Vitrella brassicaformis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 635326, 
 "@tb:identifier.taxonVariant": 850338, 
@@ -1210,8 +1398,9 @@
 }
 }, 
 "Tl3203972": {
-"^ot:altLabel": "Plasmodium berghei", 
 "^ot:originalLabel": "Plasmodium berghei PBANKA1409800", 
+"^ot:ottId": 724398, 
+"^ot:ottTaxonName": "Plasmodium berghei", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51481, 
 "@tb:identifier.taxonVariant": 121267, 
@@ -1220,8 +1409,9 @@
 }
 }, 
 "Tl3203973": {
-"^ot:altLabel": "Plasmodium yoelii", 
 "^ot:originalLabel": "Plasmodium yoelii PY17X1411600", 
+"^ot:ottId": 826551, 
+"^ot:ottTaxonName": "Plasmodium yoelii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22669, 
 "@tb:identifier.taxonVariant": 52866, 
@@ -1230,8 +1420,9 @@
 }
 }, 
 "Tl3203974": {
-"^ot:altLabel": "Plasmodium falciparum", 
 "^ot:originalLabel": "Plasmodium falciparum PF3D71311300", 
+"^ot:ottId": 201128, 
+"^ot:ottTaxonName": "Plasmodium falciparum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22665, 
 "@tb:identifier.taxonVariant": 52862, 
@@ -1240,8 +1431,9 @@
 }
 }, 
 "Tl3203975": {
-"^ot:altLabel": "Plasmodium chabaudi", 
 "^ot:originalLabel": "Plasmodium chabaudi PCHAS1411700", 
+"^ot:ottId": 724404, 
+"^ot:ottTaxonName": "Plasmodium chabaudi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51484, 
 "@tb:identifier.taxonVariant": 121271, 
@@ -1250,8 +1442,9 @@
 }
 }, 
 "Tl3203976": {
-"^ot:altLabel": "Mus musculus", 
 "^ot:originalLabel": "Mus musculus Mmu11949", 
+"^ot:ottId": 542509, 
+"^ot:ottTaxonName": "Mus musculus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 18305, 
 "@tb:identifier.taxonVariant": 42783, 
@@ -1260,8 +1453,9 @@
 }
 }, 
 "Tl3203977": {
-"^ot:altLabel": "Eimeria tenella", 
 "^ot:originalLabel": "Eimeria tenella ETH00017240", 
+"^ot:ottId": 775246, 
+"^ot:ottTaxonName": "Eimeria tenella", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 9775, 
 "@tb:identifier.taxonVariant": 23414, 
@@ -1270,8 +1464,9 @@
 }
 }, 
 "Tl3203978": {
-"^ot:altLabel": "Theileria annulata", 
 "^ot:originalLabel": "Theileria annulata TA19395", 
+"^ot:ottId": 302421, 
+"^ot:ottTaxonName": "Theileria annulata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51525, 
 "@tb:identifier.taxonVariant": 121309, 
@@ -1280,8 +1475,9 @@
 }
 }, 
 "Tl3203979": {
-"^ot:altLabel": "Cryptosporidium muris", 
 "^ot:originalLabel": "Cryptosporidium muris CMU017340", 
+"^ot:ottId": 775243, 
+"^ot:ottTaxonName": "Cryptosporidium muris", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 7619, 
 "@tb:identifier.taxonVariant": 18378, 
@@ -1290,8 +1486,9 @@
 }
 }, 
 "Tl3203980": {
-"^ot:altLabel": "Homo sapiens", 
 "^ot:originalLabel": "Homo sapiens Hsa509", 
+"^ot:ottId": 770315, 
+"^ot:ottTaxonName": "Homo sapiens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 13680, 
 "@tb:identifier.taxonVariant": 32274, 
@@ -1300,8 +1497,9 @@
 }
 }, 
 "Tl3203981": {
-"^ot:altLabel": "Perkinsus marinus", 
 "^ot:originalLabel": "Perkinsus marinus XP002778693.1", 
+"^ot:ottId": 438694, 
+"^ot:ottTaxonName": "Perkinsus marinus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 58761, 
 "@tb:identifier.taxonVariant": 131659, 
@@ -1310,7 +1508,6 @@
 }
 }, 
 "Tl3203982": {
-"^ot:altLabel": "Tetrahymena Furgason 1940", 
 "^ot:originalLabel": "Tetrahymena thermophilia XP001010761.1", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 28743, 
@@ -1321,8 +1518,9 @@
 "^skos:prefLabel": "Tetrahymena"
 }, 
 "Tl3203983": {
-"^ot:altLabel": "Sarcocystis neurona", 
 "^ot:originalLabel": "Sarcocystis neurona SN300700860", 
+"^ot:ottId": 690900, 
+"^ot:ottTaxonName": "Sarcocystis neurona", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 66280, 
 "@tb:identifier.taxonVariant": 141427, 
@@ -1331,8 +1529,9 @@
 }
 }, 
 "Tl3203984": {
-"^ot:altLabel": "Neospora caninum", 
 "^ot:originalLabel": "Neospora caninum NCLIV031920", 
+"^ot:ottId": 936407, 
+"^ot:ottTaxonName": "Neospora caninum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 57563, 
 "@tb:identifier.taxonVariant": 129784, 
@@ -1341,8 +1540,9 @@
 }
 }, 
 "Tl3203985": {
-"^ot:altLabel": "Chlamydomonas reinhardtii", 
 "^ot:originalLabel": "Chlamydomonas reinhardtii XP001700627.1", 
+"^ot:ottId": 33153, 
+"^ot:ottTaxonName": "Chlamydomonas reinhardtii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5860, 
 "@tb:identifier.taxonVariant": 14193, 
@@ -1351,8 +1551,9 @@
 }
 }, 
 "Tl3203986": {
-"^ot:altLabel": "Eimeria tenella", 
 "^ot:originalLabel": "Eimeria tenella ETH00023385", 
+"^ot:ottId": 775246, 
+"^ot:ottTaxonName": "Eimeria tenella", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 9775, 
 "@tb:identifier.taxonVariant": 23414, 
@@ -1361,8 +1562,9 @@
 }
 }, 
 "Tl3203987": {
-"^ot:altLabel": "Homo sapiens", 
 "^ot:originalLabel": "Homo sapiens Hsa516", 
+"^ot:ottId": 770315, 
+"^ot:ottTaxonName": "Homo sapiens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 13680, 
 "@tb:identifier.taxonVariant": 32274, 
@@ -1371,8 +1573,9 @@
 }
 }, 
 "Tl3203988": {
-"^ot:altLabel": "Vitrella brassicaformis Vbra12983", 
 "^ot:originalLabel": "Vitrella brassicaformis Vbra14129", 
+"^ot:ottId": 818325, 
+"^ot:ottTaxonName": "Vitrella brassicaformis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 635326, 
 "@tb:identifier.taxonVariant": 850338, 
@@ -1380,7 +1583,6 @@
 }
 }, 
 "Tl3203989": {
-"^ot:altLabel": "Symbiodinium", 
 "^ot:originalLabel": "Symbiodinum minutum symbB.v1.2.011430.t1", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 28331, 
@@ -1390,8 +1592,9 @@
 }
 }, 
 "Tl3203990": {
-"^ot:altLabel": "Cryptosporidium muris", 
 "^ot:originalLabel": "Cryptosporidium muris CMU016520", 
+"^ot:ottId": 775243, 
+"^ot:ottTaxonName": "Cryptosporidium muris", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 7619, 
 "@tb:identifier.taxonVariant": 18378, 
@@ -1400,8 +1603,9 @@
 }
 }, 
 "Tl3203991": {
-"^ot:altLabel": "Hammondia hammondi", 
 "^ot:originalLabel": "Hammondia hammondi HHA249720", 
+"^ot:ottId": 595486, 
+"^ot:ottTaxonName": "Hammondia hammondi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 106624, 
 "@tb:identifier.taxonVariant": 185174, 
@@ -1410,8 +1614,9 @@
 }
 }, 
 "Tl3203992": {
-"^ot:altLabel": "Plasmodium knowlesi", 
 "^ot:originalLabel": "Plasmodium knowlesi PKNH0104400", 
+"^ot:ottId": 352298, 
+"^ot:ottTaxonName": "Plasmodium knowlesi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51507, 
 "@tb:identifier.taxonVariant": 121283, 
@@ -1420,8 +1625,9 @@
 }
 }, 
 "Tl3203993": {
-"^ot:altLabel": "Alveolates", 
 "^ot:originalLabel": "Chromera velia Cvel13917", 
+"^ot:ottId": 215573, 
+"^ot:ottTaxonName": "Chromera velia", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 1044, 
 "@tb:identifier.taxonVariant": 2726, 
@@ -1431,8 +1637,9 @@
 "^skos:prefLabel": "Alveolata"
 }, 
 "Tl3203994": {
-"^ot:altLabel": "Plasmodium chabaudi", 
 "^ot:originalLabel": "Plasmodium chabaudi PCHAS0803800", 
+"^ot:ottId": 724404, 
+"^ot:ottTaxonName": "Plasmodium chabaudi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51484, 
 "@tb:identifier.taxonVariant": 121271, 
@@ -1441,8 +1648,9 @@
 }
 }, 
 "Tl3203995": {
-"^ot:altLabel": "Mus musculus", 
 "^ot:originalLabel": "Mus musculus Mmu11951", 
+"^ot:ottId": 542509, 
+"^ot:ottTaxonName": "Mus musculus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 18305, 
 "@tb:identifier.taxonVariant": 42783, 
@@ -1451,8 +1659,9 @@
 }
 }, 
 "Tl3203996": {
-"^ot:altLabel": "Sarcocystis neurona", 
 "^ot:originalLabel": "Sarcocystis neurona SN303800130", 
+"^ot:ottId": 690900, 
+"^ot:ottTaxonName": "Sarcocystis neurona", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 66280, 
 "@tb:identifier.taxonVariant": 141427, 
@@ -1461,8 +1670,9 @@
 }
 }, 
 "Tl3203997": {
-"^ot:altLabel": "Alveolates", 
 "^ot:originalLabel": "Chromera velia Cvel17295", 
+"^ot:ottId": 215573, 
+"^ot:ottTaxonName": "Chromera velia", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 1044, 
 "@tb:identifier.taxonVariant": 2726, 
@@ -1472,8 +1682,9 @@
 "^skos:prefLabel": "Alveolata"
 }, 
 "Tl3203998": {
-"^ot:altLabel": "Theileria parva", 
 "^ot:originalLabel": "Theileria parva TP020804", 
+"^ot:ottId": 302422, 
+"^ot:ottTaxonName": "Theileria parva", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 28885, 
 "@tb:identifier.taxonVariant": 67360, 
@@ -1482,8 +1693,9 @@
 }
 }, 
 "Tl3203999": {
-"^ot:altLabel": "Plasmodium yoelii", 
 "^ot:originalLabel": "Plasmodium yoelii PY17X0806200", 
+"^ot:ottId": 826551, 
+"^ot:ottTaxonName": "Plasmodium yoelii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22669, 
 "@tb:identifier.taxonVariant": 52866, 
@@ -1492,7 +1704,6 @@
 }
 }, 
 "Tl3204000": {
-"^ot:altLabel": "Tetrahymena Furgason 1940", 
 "^ot:originalLabel": "Tetrahymena thermophilia NP149381.1", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 28743, 
@@ -1503,8 +1714,9 @@
 "^skos:prefLabel": "Tetrahymena"
 }, 
 "Tl3204001": {
-"^ot:altLabel": "Arabidopsis thaliana", 
 "^ot:originalLabel": "Arabidopsis thaliana AT2G07671", 
+"^ot:ottId": 309263, 
+"^ot:ottTaxonName": "Arabidopsis thaliana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 2130, 
 "@tb:identifier.taxonVariant": 5084, 
@@ -1513,8 +1725,9 @@
 }
 }, 
 "Tl3204002": {
-"^ot:altLabel": "Plasmodium falciparum", 
 "^ot:originalLabel": "Plasmodium falciparum PF3D70705900", 
+"^ot:ottId": 201128, 
+"^ot:ottTaxonName": "Plasmodium falciparum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22665, 
 "@tb:identifier.taxonVariant": 52862, 
@@ -1523,8 +1736,9 @@
 }
 }, 
 "Tl3204003": {
-"^ot:altLabel": "Saccharomyces cerevisiae", 
 "^ot:originalLabel": "Saccharomyces cerevisiae Q0130", 
+"^ot:ottId": 356221, 
+"^ot:ottTaxonName": "Saccharomyces cerevisiae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 25995, 
 "@tb:identifier.taxonVariant": 60823, 
@@ -1533,8 +1747,9 @@
 }
 }, 
 "Tl3204004": {
-"^ot:altLabel": "Theileria annulata", 
 "^ot:originalLabel": "Theileria annulata TA15215", 
+"^ot:ottId": 302421, 
+"^ot:ottTaxonName": "Theileria annulata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51525, 
 "@tb:identifier.taxonVariant": 121309, 
@@ -1543,8 +1758,9 @@
 }
 }, 
 "Tl3204005": {
-"^ot:altLabel": "Babesia bovis", 
 "^ot:originalLabel": "Babesia bovis BBOVIII004620", 
+"^ot:ottId": 826545, 
+"^ot:ottTaxonName": "Babesia bovis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3035, 
 "@tb:identifier.taxonVariant": 7289, 
@@ -1553,8 +1769,9 @@
 }
 }, 
 "Tl3204006": {
-"^ot:altLabel": "Perkinsus marinus", 
 "^ot:originalLabel": "Perkinsus marinus XP002772709.1", 
+"^ot:ottId": 438694, 
+"^ot:ottTaxonName": "Perkinsus marinus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 58761, 
 "@tb:identifier.taxonVariant": 131659, 
@@ -1563,8 +1780,9 @@
 }
 }, 
 "Tl3204007": {
-"^ot:altLabel": "Neospora caninum", 
 "^ot:originalLabel": "Neospora caninum NCLIV065850", 
+"^ot:ottId": 936407, 
+"^ot:ottTaxonName": "Neospora caninum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 57563, 
 "@tb:identifier.taxonVariant": 129784, 
@@ -1573,7 +1791,6 @@
 }
 }, 
 "Tl3204008": {
-"^ot:altLabel": "Symbiodinium", 
 "^ot:originalLabel": "Symbiodinum minutum symbB.v1.2.000714.t1", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 28331, 
@@ -1583,8 +1800,9 @@
 }
 }, 
 "Tl3204009": {
-"^ot:altLabel": "Plasmodium vivax", 
 "^ot:originalLabel": "Plasmodium vivax PVP010106100", 
+"^ot:ottId": 352295, 
+"^ot:ottTaxonName": "Plasmodium vivax", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51512, 
 "@tb:identifier.taxonVariant": 121293, 
@@ -1593,7 +1811,6 @@
 }
 }, 
 "Tl3204010": {
-"^ot:altLabel": "Symbiodinium", 
 "^ot:originalLabel": "Symbiodinum minutum symbB.v1.2.000251.t1", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 28331, 
@@ -1603,8 +1820,9 @@
 }
 }, 
 "Tl3204011": {
-"^ot:altLabel": "Chlamydomonas reinhardtii", 
 "^ot:originalLabel": "Chlamydomonas reinhardtii XP001701531.1", 
+"^ot:ottId": 33153, 
+"^ot:ottTaxonName": "Chlamydomonas reinhardtii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5860, 
 "@tb:identifier.taxonVariant": 14193, 
@@ -1613,7 +1831,6 @@
 }
 }, 
 "Tl3204012": {
-"^ot:altLabel": "Symbiodinium", 
 "^ot:originalLabel": "Symbiodinum minutum symbB.v1.2.019162.t1", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 28331, 
@@ -1623,8 +1840,9 @@
 }
 }, 
 "Tl3204013": {
-"^ot:altLabel": "Toxoplasma gondii", 
 "^ot:originalLabel": "Toxoplasma gondii TGME49249720", 
+"^ot:ottId": 252145, 
+"^ot:ottTaxonName": "Toxoplasma gondii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51473, 
 "@tb:identifier.taxonVariant": 413956, 
@@ -1633,8 +1851,9 @@
 }
 }, 
 "Tl3204014": {
-"^ot:altLabel": "Perkinsus marinus", 
 "^ot:originalLabel": "Perkinsus marinus XP002782804.1", 
+"^ot:ottId": 438694, 
+"^ot:ottTaxonName": "Perkinsus marinus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 58761, 
 "@tb:identifier.taxonVariant": 131659, 
@@ -1643,8 +1862,9 @@
 }
 }, 
 "Tl3204015": {
-"^ot:altLabel": "Plasmodium berghei", 
 "^ot:originalLabel": "Plasmodium berghei PBANKA0803500", 
+"^ot:ottId": 724398, 
+"^ot:ottTaxonName": "Plasmodium berghei", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51481, 
 "@tb:identifier.taxonVariant": 121267, 
@@ -1653,8 +1873,9 @@
 }
 }, 
 "Tl3204016": {
-"^ot:altLabel": "Cryptosporidium muris", 
 "^ot:originalLabel": "Cryptosporidium muris CMU025000", 
+"^ot:ottId": 775243, 
+"^ot:ottTaxonName": "Cryptosporidium muris", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 7619, 
 "@tb:identifier.taxonVariant": 18378, 
@@ -1663,8 +1884,9 @@
 }
 }, 
 "Tl3204017": {
-"^ot:altLabel": "Plasmodium berghei", 
 "^ot:originalLabel": "Plasmodium berghei PBANKA1408500", 
+"^ot:ottId": 724398, 
+"^ot:ottTaxonName": "Plasmodium berghei", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51481, 
 "@tb:identifier.taxonVariant": 121267, 
@@ -1673,7 +1895,6 @@
 }
 }, 
 "Tl3204018": {
-"^ot:altLabel": "Symbiodinium", 
 "^ot:originalLabel": "Symbiodinum minutum symbB.v1.2.030497.t1", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 28331, 
@@ -1683,8 +1904,9 @@
 }
 }, 
 "Tl3204019": {
-"^ot:altLabel": "Plasmodium vivax", 
 "^ot:originalLabel": "Plasmodium vivax PVP011411000", 
+"^ot:ottId": 352295, 
+"^ot:ottTaxonName": "Plasmodium vivax", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51512, 
 "@tb:identifier.taxonVariant": 121293, 
@@ -1693,8 +1915,9 @@
 }
 }, 
 "Tl3204020": {
-"^ot:altLabel": "Theileria annulata", 
 "^ot:originalLabel": "Theileria annulata TA06450", 
+"^ot:ottId": 302421, 
+"^ot:ottTaxonName": "Theileria annulata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51525, 
 "@tb:identifier.taxonVariant": 121309, 
@@ -1703,8 +1926,9 @@
 }
 }, 
 "Tl3204021": {
-"^ot:altLabel": "Chlamydomonas reinhardtii", 
 "^ot:originalLabel": "Chlamydomonas reinhardtii XP001695985.1", 
+"^ot:ottId": 33153, 
+"^ot:ottTaxonName": "Chlamydomonas reinhardtii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5860, 
 "@tb:identifier.taxonVariant": 14193, 
@@ -1713,7 +1937,6 @@
 }
 }, 
 "Tl3204022": {
-"^ot:altLabel": "Tetrahymena Furgason 1940", 
 "^ot:originalLabel": "Tetrahymena thermophilia XP001025180.2", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 28743, 
@@ -1724,8 +1947,9 @@
 "^skos:prefLabel": "Tetrahymena"
 }, 
 "Tl3204023": {
-"^ot:altLabel": "Plasmodium knowlesi", 
 "^ot:originalLabel": "Plasmodium knowlesi PKNH1410400", 
+"^ot:ottId": 352298, 
+"^ot:ottTaxonName": "Plasmodium knowlesi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51507, 
 "@tb:identifier.taxonVariant": 121283, 
@@ -1734,8 +1958,9 @@
 }
 }, 
 "Tl3204024": {
-"^ot:altLabel": "Hammondia hammondi", 
 "^ot:originalLabel": "Hammondia hammondi HHA284540", 
+"^ot:ottId": 595486, 
+"^ot:ottTaxonName": "Hammondia hammondi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 106624, 
 "@tb:identifier.taxonVariant": 185174, 
@@ -1744,8 +1969,9 @@
 }
 }, 
 "Tl3204025": {
-"^ot:altLabel": "Babesia bovis", 
 "^ot:originalLabel": "Babesia bovis BBOVIV008470", 
+"^ot:ottId": 826545, 
+"^ot:ottTaxonName": "Babesia bovis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3035, 
 "@tb:identifier.taxonVariant": 7289, 
@@ -1754,7 +1980,6 @@
 }
 }, 
 "Tl3204026": {
-"^ot:altLabel": "Symbiodinium", 
 "^ot:originalLabel": "Symbiodinum minutum symbB.v1.2.030498.t1", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 28331, 
@@ -1764,8 +1989,9 @@
 }
 }, 
 "Tl3204027": {
-"^ot:altLabel": "Plasmodium chabaudi", 
 "^ot:originalLabel": "Plasmodium chabaudi PCHAS1410400", 
+"^ot:ottId": 724404, 
+"^ot:ottTaxonName": "Plasmodium chabaudi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51484, 
 "@tb:identifier.taxonVariant": 121271, 
@@ -1774,7 +2000,6 @@
 }
 }, 
 "Tl3204028": {
-"^ot:altLabel": "Symbiodinium", 
 "^ot:originalLabel": "Symbiodinum minutum symbB.v1.2.012533.t1", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 28331, 
@@ -1784,7 +2009,6 @@
 }
 }, 
 "Tl3204029": {
-"^ot:altLabel": "Symbiodinium", 
 "^ot:originalLabel": "Symbiodinum minutum symbB.v1.2.020826.t1", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 28331, 
@@ -1794,8 +2018,9 @@
 }
 }, 
 "Tl3204030": {
-"^ot:altLabel": "Saccharomyces cerevisiae", 
 "^ot:originalLabel": "Saccharomyces cerevisiae YDR298C", 
+"^ot:ottId": 356221, 
+"^ot:ottTaxonName": "Saccharomyces cerevisiae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 25995, 
 "@tb:identifier.taxonVariant": 60823, 
@@ -1804,7 +2029,6 @@
 }
 }, 
 "Tl3204031": {
-"^ot:altLabel": "Symbiodinium", 
 "^ot:originalLabel": "Symbiodinum minutum symbB.v1.2.007516.t1", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 28331, 
@@ -1814,8 +2038,9 @@
 }
 }, 
 "Tl3204032": {
-"^ot:altLabel": "Perkinsus marinus", 
 "^ot:originalLabel": "Perkinsus marinus XP002783408.1", 
+"^ot:ottId": 438694, 
+"^ot:ottTaxonName": "Perkinsus marinus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 58761, 
 "@tb:identifier.taxonVariant": 131659, 
@@ -1824,8 +2049,9 @@
 }
 }, 
 "Tl3204033": {
-"^ot:altLabel": "Neospora caninum", 
 "^ot:originalLabel": "Neospora caninum NCLIV015180", 
+"^ot:ottId": 936407, 
+"^ot:ottTaxonName": "Neospora caninum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 57563, 
 "@tb:identifier.taxonVariant": 129784, 
@@ -1834,8 +2060,9 @@
 }
 }, 
 "Tl3204034": {
-"^ot:altLabel": "Toxoplasma gondii", 
 "^ot:originalLabel": "Toxoplasma gondii TGME49284540", 
+"^ot:ottId": 252145, 
+"^ot:ottTaxonName": "Toxoplasma gondii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51473, 
 "@tb:identifier.taxonVariant": 413956, 
@@ -1844,8 +2071,9 @@
 }
 }, 
 "Tl3204035": {
-"^ot:altLabel": "Plasmodium yoelii", 
 "^ot:originalLabel": "Plasmodium yoelii PY17X1410300", 
+"^ot:ottId": 826551, 
+"^ot:ottTaxonName": "Plasmodium yoelii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22669, 
 "@tb:identifier.taxonVariant": 52866, 
@@ -1854,8 +2082,9 @@
 }
 }, 
 "Tl3204036": {
-"^ot:altLabel": "Mus musculus", 
 "^ot:originalLabel": "Mus musculus Mmu28080", 
+"^ot:ottId": 542509, 
+"^ot:ottTaxonName": "Mus musculus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 18305, 
 "@tb:identifier.taxonVariant": 42783, 
@@ -1864,7 +2093,6 @@
 }
 }, 
 "Tl3204037": {
-"^ot:altLabel": "Arabidopsis thaliana", 
 "^ot:originalLabel": "Arabidopsis thaliana AT5G13450", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 2130, 
@@ -1874,8 +2102,9 @@
 }
 }, 
 "Tl3204038": {
-"^ot:altLabel": "Alveolates", 
 "^ot:originalLabel": "Chromera velia Cvel20402", 
+"^ot:ottId": 215573, 
+"^ot:ottTaxonName": "Chromera velia", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 1044, 
 "@tb:identifier.taxonVariant": 2726, 
@@ -1885,8 +2114,9 @@
 "^skos:prefLabel": "Alveolata"
 }, 
 "Tl3204039": {
-"^ot:altLabel": "Theileria parva", 
 "^ot:originalLabel": "Theileria parva TP010929", 
+"^ot:ottId": 302422, 
+"^ot:ottTaxonName": "Theileria parva", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 28885, 
 "@tb:identifier.taxonVariant": 67360, 
@@ -1895,8 +2125,9 @@
 }
 }, 
 "Tl3204040": {
-"^ot:altLabel": "Vitrella brassicaformis Vbra12983", 
 "^ot:originalLabel": "Vitrella brassicaformis Vbra17642", 
+"^ot:ottId": 818325, 
+"^ot:ottTaxonName": "Vitrella brassicaformis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 635326, 
 "@tb:identifier.taxonVariant": 850338, 
@@ -1904,8 +2135,9 @@
 }
 }, 
 "Tl3204041": {
-"^ot:altLabel": "Plasmodium falciparum", 
 "^ot:originalLabel": "Plasmodium falciparum PF3D71310000", 
+"^ot:ottId": 201128, 
+"^ot:ottTaxonName": "Plasmodium falciparum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22665, 
 "@tb:identifier.taxonVariant": 52862, 
@@ -1914,8 +2146,9 @@
 }
 }, 
 "Tl3204042": {
-"^ot:altLabel": "Eimeria tenella", 
 "^ot:originalLabel": "Eimeria tenella ETH00007515", 
+"^ot:ottId": 775246, 
+"^ot:ottTaxonName": "Eimeria tenella", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 9775, 
 "@tb:identifier.taxonVariant": 23414, 
@@ -1924,8 +2157,9 @@
 }
 }, 
 "Tl3204043": {
-"^ot:altLabel": "Sarcocystis neurona", 
 "^ot:originalLabel": "Sarcocystis neurona SN301900755", 
+"^ot:ottId": 690900, 
+"^ot:ottTaxonName": "Sarcocystis neurona", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 66280, 
 "@tb:identifier.taxonVariant": 141427, 
@@ -1934,7 +2168,6 @@
 }
 }, 
 "Tl3204044": {
-"^ot:altLabel": "Homo sapiens", 
 "^ot:originalLabel": "Homo sapiens Hsa539", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 13680, 
@@ -1944,8 +2177,9 @@
 }
 }, 
 "Tl3204045": {
-"^ot:altLabel": "Plasmodium vivax", 
 "^ot:originalLabel": "Plasmodium vivax PVP010314800", 
+"^ot:ottId": 352295, 
+"^ot:ottTaxonName": "Plasmodium vivax", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51512, 
 "@tb:identifier.taxonVariant": 121293, 
@@ -1954,8 +2188,9 @@
 }
 }, 
 "Tl3204046": {
-"^ot:altLabel": "Plasmodium knowlesi", 
 "^ot:originalLabel": "Plasmodium knowlesi PKNH0314500", 
+"^ot:ottId": 352298, 
+"^ot:ottTaxonName": "Plasmodium knowlesi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51507, 
 "@tb:identifier.taxonVariant": 121283, 
@@ -1964,8 +2199,9 @@
 }
 }, 
 "Tl3204047": {
-"^ot:altLabel": "Hammondia hammondi", 
 "^ot:originalLabel": "Hammondia hammondi HHA310360", 
+"^ot:ottId": 595486, 
+"^ot:ottTaxonName": "Hammondia hammondi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 106624, 
 "@tb:identifier.taxonVariant": 185174, 
@@ -1974,8 +2210,9 @@
 }
 }, 
 "Tl3204048": {
-"^ot:altLabel": "Theileria annulata", 
 "^ot:originalLabel": "Theileria annulata TA06630", 
+"^ot:ottId": 302421, 
+"^ot:ottTaxonName": "Theileria annulata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51525, 
 "@tb:identifier.taxonVariant": 121309, 
@@ -1984,8 +2221,9 @@
 }
 }, 
 "Tl3204049": {
-"^ot:altLabel": "Plasmodium berghei", 
 "^ot:originalLabel": "Plasmodium berghei PBANKA0616600", 
+"^ot:ottId": 724398, 
+"^ot:ottTaxonName": "Plasmodium berghei", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51481, 
 "@tb:identifier.taxonVariant": 121267, 
@@ -1994,8 +2232,9 @@
 }
 }, 
 "Tl3204050": {
-"^ot:altLabel": "Toxoplasma gondii", 
 "^ot:originalLabel": "Toxoplasma gondii TGME49310360", 
+"^ot:ottId": 252145, 
+"^ot:ottTaxonName": "Toxoplasma gondii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51473, 
 "@tb:identifier.taxonVariant": 413956, 
@@ -2004,8 +2243,9 @@
 }
 }, 
 "Tl3204051": {
-"^ot:altLabel": "Plasmodium chabaudi", 
 "^ot:originalLabel": "Plasmodium chabaudi PCHAS0618300", 
+"^ot:ottId": 724404, 
+"^ot:ottTaxonName": "Plasmodium chabaudi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51484, 
 "@tb:identifier.taxonVariant": 121271, 
@@ -2014,8 +2254,9 @@
 }
 }, 
 "Tl3204052": {
-"^ot:altLabel": "Plasmodium yoelii", 
 "^ot:originalLabel": "Plasmodium yoelii PY17X0619300", 
+"^ot:ottId": 826551, 
+"^ot:ottTaxonName": "Plasmodium yoelii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22669, 
 "@tb:identifier.taxonVariant": 52866, 
@@ -2024,8 +2265,9 @@
 }
 }, 
 "Tl3204053": {
-"^ot:altLabel": "Babesia bovis", 
 "^ot:originalLabel": "Babesia bovis BBOVIV008130", 
+"^ot:ottId": 826545, 
+"^ot:ottTaxonName": "Babesia bovis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3035, 
 "@tb:identifier.taxonVariant": 7289, 
@@ -2034,8 +2276,9 @@
 }
 }, 
 "Tl3204054": {
-"^ot:altLabel": "Plasmodium falciparum", 
 "^ot:originalLabel": "Plasmodium falciparum PF3D70719100", 
+"^ot:ottId": 201128, 
+"^ot:ottTaxonName": "Plasmodium falciparum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22665, 
 "@tb:identifier.taxonVariant": 52862, 
@@ -2044,8 +2287,9 @@
 }
 }, 
 "Tl3204055": {
-"^ot:altLabel": "Alveolates", 
 "^ot:originalLabel": "Chromera velia Cvel5582", 
+"^ot:ottId": 215573, 
+"^ot:ottTaxonName": "Chromera velia", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 1044, 
 "@tb:identifier.taxonVariant": 2726, 
@@ -2055,8 +2299,9 @@
 "^skos:prefLabel": "Alveolata"
 }, 
 "Tl3204056": {
-"^ot:altLabel": "Theileria parva", 
 "^ot:originalLabel": "Theileria parva TP010962", 
+"^ot:ottId": 302422, 
+"^ot:ottTaxonName": "Theileria parva", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 28885, 
 "@tb:identifier.taxonVariant": 67360, 
@@ -2065,8 +2310,9 @@
 }
 }, 
 "Tl3204057": {
-"^ot:altLabel": "Neospora caninum", 
 "^ot:originalLabel": "Neospora caninum NCLIV054440", 
+"^ot:ottId": 936407, 
+"^ot:ottTaxonName": "Neospora caninum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 57563, 
 "@tb:identifier.taxonVariant": 129784, 
@@ -2075,8 +2321,9 @@
 }
 }, 
 "Tl3204058": {
-"^ot:altLabel": "Eimeria tenella", 
 "^ot:originalLabel": "Eimeria tenella ETH00000145", 
+"^ot:ottId": 775246, 
+"^ot:ottTaxonName": "Eimeria tenella", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 9775, 
 "@tb:identifier.taxonVariant": 23414, 
@@ -2085,8 +2332,9 @@
 }
 }, 
 "Tl3204059": {
-"^ot:altLabel": "Cryptosporidium muris", 
 "^ot:originalLabel": "Cryptosporidium muris CMU009020", 
+"^ot:ottId": 775243, 
+"^ot:ottTaxonName": "Cryptosporidium muris", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 7619, 
 "@tb:identifier.taxonVariant": 18378, 
@@ -2095,8 +2343,9 @@
 }
 }, 
 "Tl3204060": {
-"^ot:altLabel": "Eimeria tenella", 
 "^ot:originalLabel": "Eimeria tenella ETH00007240", 
+"^ot:ottId": 775246, 
+"^ot:ottTaxonName": "Eimeria tenella", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 9775, 
 "@tb:identifier.taxonVariant": 23414, 
@@ -2105,8 +2354,9 @@
 }
 }, 
 "Tl3204061": {
-"^ot:altLabel": "Babesia bovis", 
 "^ot:originalLabel": "Babesia bovis BBOVIII002980", 
+"^ot:ottId": 826545, 
+"^ot:ottTaxonName": "Babesia bovis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3035, 
 "@tb:identifier.taxonVariant": 7289, 
@@ -2115,8 +2365,9 @@
 }
 }, 
 "Tl3204062": {
-"^ot:altLabel": "Theileria parva", 
 "^ot:originalLabel": "Theileria parva TP010976", 
+"^ot:ottId": 302422, 
+"^ot:ottTaxonName": "Theileria parva", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 28885, 
 "@tb:identifier.taxonVariant": 67360, 
@@ -2125,8 +2376,9 @@
 }
 }, 
 "Tl3204063": {
-"^ot:altLabel": "Plasmodium yoelii", 
 "^ot:originalLabel": "Plasmodium yoelii PY17X0925200", 
+"^ot:ottId": 826551, 
+"^ot:ottTaxonName": "Plasmodium yoelii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22669, 
 "@tb:identifier.taxonVariant": 52866, 
@@ -2135,8 +2387,9 @@
 }
 }, 
 "Tl3204064": {
-"^ot:altLabel": "Alveolata", 
 "^ot:originalLabel": "Chromera velia Cvel13170", 
+"^ot:ottId": 215573, 
+"^ot:ottTaxonName": "Chromera velia", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 1044, 
 "@tb:identifier.taxonVariant": 113007, 
@@ -2145,8 +2398,9 @@
 }
 }, 
 "Tl3204065": {
-"^ot:altLabel": "Sarcocystis neurona", 
 "^ot:originalLabel": "Sarcocystis neurona SN301100865", 
+"^ot:ottId": 690900, 
+"^ot:ottTaxonName": "Sarcocystis neurona", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 66280, 
 "@tb:identifier.taxonVariant": 141427, 
@@ -2155,8 +2409,9 @@
 }
 }, 
 "Tl3204066": {
-"^ot:altLabel": "Perkinsus marinus", 
 "^ot:originalLabel": "Perkinsus marinus XP002782628.1", 
+"^ot:ottId": 438694, 
+"^ot:ottTaxonName": "Perkinsus marinus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 58761, 
 "@tb:identifier.taxonVariant": 131659, 
@@ -2165,8 +2420,9 @@
 }
 }, 
 "Tl3204067": {
-"^ot:altLabel": "Plasmodium berghei", 
 "^ot:originalLabel": "Plasmodium berghei PBANKA0923200", 
+"^ot:ottId": 724398, 
+"^ot:ottTaxonName": "Plasmodium berghei", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51481, 
 "@tb:identifier.taxonVariant": 121267, 
@@ -2175,8 +2431,9 @@
 }
 }, 
 "Tl3204068": {
-"^ot:altLabel": "Theileria annulata", 
 "^ot:originalLabel": "Theileria annulata TA16245", 
+"^ot:ottId": 302421, 
+"^ot:ottTaxonName": "Theileria annulata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51525, 
 "@tb:identifier.taxonVariant": 121309, 
@@ -2185,8 +2442,9 @@
 }
 }, 
 "Tl3204069": {
-"^ot:altLabel": "Toxoplasma gondii", 
 "^ot:originalLabel": "Toxoplasma gondii TGME49231410", 
+"^ot:ottId": 252145, 
+"^ot:ottTaxonName": "Toxoplasma gondii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51473, 
 "@tb:identifier.taxonVariant": 413956, 
@@ -2195,7 +2453,6 @@
 }
 }, 
 "Tl3204070": {
-"^ot:altLabel": "Symbiodinium", 
 "^ot:originalLabel": "Symbiodinum minutum symbB.v1.2.040919.t1", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 28331, 
@@ -2205,8 +2462,9 @@
 }
 }, 
 "Tl3204071": {
-"^ot:altLabel": "Plasmodium chabaudi", 
 "^ot:originalLabel": "Plasmodium chabaudi PCHAS0921200", 
+"^ot:ottId": 724404, 
+"^ot:ottTaxonName": "Plasmodium chabaudi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51484, 
 "@tb:identifier.taxonVariant": 121271, 
@@ -2215,8 +2473,9 @@
 }
 }, 
 "Tl3204072": {
-"^ot:altLabel": "Hammondia hammondi", 
 "^ot:originalLabel": "Hammondia hammondi HHA231410", 
+"^ot:ottId": 595486, 
+"^ot:ottTaxonName": "Hammondia hammondi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 106624, 
 "@tb:identifier.taxonVariant": 185174, 
@@ -2225,8 +2484,9 @@
 }
 }, 
 "Tl3204073": {
-"^ot:altLabel": "Plasmodium knowlesi", 
 "^ot:originalLabel": "Plasmodium knowlesi PKNH0923000", 
+"^ot:ottId": 352298, 
+"^ot:ottTaxonName": "Plasmodium knowlesi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51507, 
 "@tb:identifier.taxonVariant": 121283, 
@@ -2235,8 +2495,9 @@
 }
 }, 
 "Tl3204074": {
-"^ot:altLabel": "Vitrella brassicaformis Vbra12983", 
 "^ot:originalLabel": "Vitrella brassicaformis Vbra22582", 
+"^ot:ottId": 818325, 
+"^ot:ottTaxonName": "Vitrella brassicaformis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 635326, 
 "@tb:identifier.taxonVariant": 850338, 
@@ -2244,8 +2505,9 @@
 }
 }, 
 "Tl3204075": {
-"^ot:altLabel": "Plasmodium vivax", 
 "^ot:originalLabel": "Plasmodium vivax PVP010925800", 
+"^ot:ottId": 352295, 
+"^ot:ottTaxonName": "Plasmodium vivax", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51512, 
 "@tb:identifier.taxonVariant": 121293, 
@@ -2254,8 +2516,9 @@
 }
 }, 
 "Tl3204076": {
-"^ot:altLabel": "Neospora caninum", 
 "^ot:originalLabel": "Neospora caninum NCLIV031670", 
+"^ot:ottId": 936407, 
+"^ot:ottTaxonName": "Neospora caninum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 57563, 
 "@tb:identifier.taxonVariant": 129784, 
@@ -2264,8 +2527,9 @@
 }
 }, 
 "Tl3204077": {
-"^ot:altLabel": "Plasmodium falciparum", 
 "^ot:originalLabel": "Plasmodium falciparum PF3D71125100", 
+"^ot:ottId": 201128, 
+"^ot:ottTaxonName": "Plasmodium falciparum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22665, 
 "@tb:identifier.taxonVariant": 52862, 
@@ -2274,8 +2538,9 @@
 }
 }, 
 "Tl3204078": {
-"^ot:altLabel": "Cryptosporidium muris", 
 "^ot:originalLabel": "Cryptosporidium muris CMU011400", 
+"^ot:ottId": 775243, 
+"^ot:ottTaxonName": "Cryptosporidium muris", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 7619, 
 "@tb:identifier.taxonVariant": 18378, 
@@ -2284,8 +2549,9 @@
 }
 }, 
 "Tl3204079": {
-"^ot:altLabel": "Eimeria tenella", 
 "^ot:originalLabel": "Eimeria tenella ETH00032380", 
+"^ot:ottId": 775246, 
+"^ot:ottTaxonName": "Eimeria tenella", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 9775, 
 "@tb:identifier.taxonVariant": 23414, 
@@ -2294,8 +2560,9 @@
 }
 }, 
 "Tl3204080": {
-"^ot:altLabel": "Plasmodium berghei", 
 "^ot:originalLabel": "Plasmodium berghei PBANKA0409800", 
+"^ot:ottId": 724398, 
+"^ot:ottTaxonName": "Plasmodium berghei", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51481, 
 "@tb:identifier.taxonVariant": 121267, 
@@ -2304,7 +2571,6 @@
 }
 }, 
 "Tl3204081": {
-"^ot:altLabel": "Symbiodinium", 
 "^ot:originalLabel": "Symbiodinum minutum symbB.v1.2.008811.t1", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 28331, 
@@ -2314,8 +2580,9 @@
 }
 }, 
 "Tl3204082": {
-"^ot:altLabel": "Toxoplasma gondii", 
 "^ot:originalLabel": "Toxoplasma gondii TGME49268830", 
+"^ot:ottId": 252145, 
+"^ot:ottTaxonName": "Toxoplasma gondii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51473, 
 "@tb:identifier.taxonVariant": 413956, 
@@ -2324,8 +2591,9 @@
 }
 }, 
 "Tl3204083": {
-"^ot:altLabel": "Vitrella brassicaformis Vbra12983", 
 "^ot:originalLabel": "Vitrella brassicaformis Vbra23050", 
+"^ot:ottId": 818325, 
+"^ot:ottTaxonName": "Vitrella brassicaformis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 635326, 
 "@tb:identifier.taxonVariant": 850338, 
@@ -2333,8 +2601,9 @@
 }
 }, 
 "Tl3204084": {
-"^ot:altLabel": "Eimeria tenella", 
 "^ot:originalLabel": "Eimeria tenella ETH00017665", 
+"^ot:ottId": 775246, 
+"^ot:ottTaxonName": "Eimeria tenella", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 9775, 
 "@tb:identifier.taxonVariant": 23414, 
@@ -2343,8 +2612,9 @@
 }
 }, 
 "Tl3204085": {
-"^ot:altLabel": "Plasmodium knowlesi", 
 "^ot:originalLabel": "Plasmodium knowlesi PKNH0830600", 
+"^ot:ottId": 352298, 
+"^ot:ottTaxonName": "Plasmodium knowlesi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51507, 
 "@tb:identifier.taxonVariant": 121283, 
@@ -2353,8 +2623,9 @@
 }
 }, 
 "Tl3204086": {
-"^ot:altLabel": "Plasmodium vivax", 
 "^ot:originalLabel": "Plasmodium vivax PVP010828400", 
+"^ot:ottId": 352295, 
+"^ot:ottTaxonName": "Plasmodium vivax", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51512, 
 "@tb:identifier.taxonVariant": 121293, 
@@ -2363,8 +2634,9 @@
 }
 }, 
 "Tl3204087": {
-"^ot:altLabel": "Plasmodium yoelii", 
 "^ot:originalLabel": "Plasmodium yoelii PY17X0412300", 
+"^ot:ottId": 826551, 
+"^ot:ottTaxonName": "Plasmodium yoelii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22669, 
 "@tb:identifier.taxonVariant": 52866, 
@@ -2373,8 +2645,9 @@
 }
 }, 
 "Tl3204088": {
-"^ot:altLabel": "Alveolates", 
 "^ot:originalLabel": "Chromera velia Cvel16485", 
+"^ot:ottId": 215573, 
+"^ot:ottTaxonName": "Chromera velia", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 1044, 
 "@tb:identifier.taxonVariant": 2726, 
@@ -2384,8 +2657,9 @@
 "^skos:prefLabel": "Alveolata"
 }, 
 "Tl3204089": {
-"^ot:altLabel": "Cryptosporidium muris", 
 "^ot:originalLabel": "Cryptosporidium muris CMU026200", 
+"^ot:ottId": 775243, 
+"^ot:ottTaxonName": "Cryptosporidium muris", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 7619, 
 "@tb:identifier.taxonVariant": 18378, 
@@ -2394,8 +2668,9 @@
 }
 }, 
 "Tl3204090": {
-"^ot:altLabel": "Perkinsus marinus", 
 "^ot:originalLabel": "Perkinsus marinus XP002775812.1", 
+"^ot:ottId": 438694, 
+"^ot:ottTaxonName": "Perkinsus marinus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 58761, 
 "@tb:identifier.taxonVariant": 131659, 
@@ -2404,8 +2679,9 @@
 }
 }, 
 "Tl3204091": {
-"^ot:altLabel": "Theileria annulata", 
 "^ot:originalLabel": "Theileria annulata TA02515", 
+"^ot:ottId": 302421, 
+"^ot:ottTaxonName": "Theileria annulata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51525, 
 "@tb:identifier.taxonVariant": 121309, 
@@ -2414,8 +2690,9 @@
 }
 }, 
 "Tl3204092": {
-"^ot:altLabel": "Neospora caninum", 
 "^ot:originalLabel": "Neospora caninum NCLIV037520", 
+"^ot:ottId": 936407, 
+"^ot:ottTaxonName": "Neospora caninum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 57563, 
 "@tb:identifier.taxonVariant": 129784, 
@@ -2424,8 +2701,9 @@
 }
 }, 
 "Tl3204093": {
-"^ot:altLabel": "Plasmodium chabaudi", 
 "^ot:originalLabel": "Plasmodium chabaudi PCHAS0410700", 
+"^ot:ottId": 724404, 
+"^ot:ottTaxonName": "Plasmodium chabaudi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51484, 
 "@tb:identifier.taxonVariant": 121271, 
@@ -2434,8 +2712,9 @@
 }
 }, 
 "Tl3204094": {
-"^ot:altLabel": "Perkinsus marinus", 
 "^ot:originalLabel": "Perkinsus marinus XP002775398.1", 
+"^ot:ottId": 438694, 
+"^ot:ottTaxonName": "Perkinsus marinus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 58761, 
 "@tb:identifier.taxonVariant": 131659, 
@@ -2444,8 +2723,9 @@
 }
 }, 
 "Tl3204095": {
-"^ot:altLabel": "Plasmodium falciparum", 
 "^ot:originalLabel": "Plasmodium falciparum PF3D70311800", 
+"^ot:ottId": 201128, 
+"^ot:ottTaxonName": "Plasmodium falciparum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22665, 
 "@tb:identifier.taxonVariant": 52862, 
@@ -2454,8 +2734,9 @@
 }
 }, 
 "Tl3204096": {
-"^ot:altLabel": "Babesia bovis", 
 "^ot:originalLabel": "Babesia bovis BBOVIII003520", 
+"^ot:ottId": 826545, 
+"^ot:ottTaxonName": "Babesia bovis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3035, 
 "@tb:identifier.taxonVariant": 7289, 
@@ -2464,8 +2745,9 @@
 }
 }, 
 "Tl3204097": {
-"^ot:altLabel": "Hammondia hammondi", 
 "^ot:originalLabel": "Hammondia hammondi HHA268830", 
+"^ot:ottId": 595486, 
+"^ot:ottTaxonName": "Hammondia hammondi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 106624, 
 "@tb:identifier.taxonVariant": 185174, 
@@ -2474,8 +2756,9 @@
 }
 }, 
 "Tl3204098": {
-"^ot:altLabel": "Theileria parva", 
 "^ot:originalLabel": "Theileria parva TP030055", 
+"^ot:ottId": 302422, 
+"^ot:ottTaxonName": "Theileria parva", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 28885, 
 "@tb:identifier.taxonVariant": 67360, 
@@ -2484,8 +2767,9 @@
 }
 }, 
 "Tl3204099": {
-"^ot:altLabel": "Sarcocystis neurona", 
 "^ot:originalLabel": "Sarcocystis neurona SN300500200", 
+"^ot:ottId": 690900, 
+"^ot:ottTaxonName": "Sarcocystis neurona", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 66280, 
 "@tb:identifier.taxonVariant": 141427, 
@@ -2494,8 +2778,9 @@
 }
 }, 
 "Tl3204100": {
-"^ot:altLabel": "Theileria annulata", 
 "^ot:originalLabel": "Theileria annulata TA17940", 
+"^ot:ottId": 302421, 
+"^ot:ottTaxonName": "Theileria annulata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51525, 
 "@tb:identifier.taxonVariant": 121309, 
@@ -2504,8 +2789,9 @@
 }
 }, 
 "Tl3204101": {
-"^ot:altLabel": "Babesia bovis", 
 "^ot:originalLabel": "Babesia bovis BBOVIII001940", 
+"^ot:ottId": 826545, 
+"^ot:ottTaxonName": "Babesia bovis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3035, 
 "@tb:identifier.taxonVariant": 7289, 
@@ -2514,8 +2800,9 @@
 }
 }, 
 "Tl3204102": {
-"^ot:altLabel": "Toxoplasma gondii", 
 "^ot:originalLabel": "Toxoplasma gondii TGME49223040", 
+"^ot:ottId": 252145, 
+"^ot:ottTaxonName": "Toxoplasma gondii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51473, 
 "@tb:identifier.taxonVariant": 413956, 
@@ -2524,8 +2811,9 @@
 }
 }, 
 "Tl3204103": {
-"^ot:altLabel": "Plasmodium berghei", 
 "^ot:originalLabel": "Plasmodium berghei PBANKA0906200", 
+"^ot:ottId": 724398, 
+"^ot:ottTaxonName": "Plasmodium berghei", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51481, 
 "@tb:identifier.taxonVariant": 121267, 
@@ -2534,8 +2822,9 @@
 }
 }, 
 "Tl3204104": {
-"^ot:altLabel": "Plasmodium chabaudi", 
 "^ot:originalLabel": "Plasmodium chabaudi PCHAS0707400", 
+"^ot:ottId": 724404, 
+"^ot:ottTaxonName": "Plasmodium chabaudi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51484, 
 "@tb:identifier.taxonVariant": 121271, 
@@ -2544,8 +2833,9 @@
 }
 }, 
 "Tl3204105": {
-"^ot:altLabel": "Perkinsus marinus", 
 "^ot:originalLabel": "Perkinsus marinus XP002771100.1", 
+"^ot:ottId": 438694, 
+"^ot:ottTaxonName": "Perkinsus marinus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 58761, 
 "@tb:identifier.taxonVariant": 131659, 
@@ -2554,7 +2844,6 @@
 }
 }, 
 "Tl3204106": {
-"^ot:altLabel": "Symbiodinium", 
 "^ot:originalLabel": "Symbiodinum minutum symbB.v1.2.012108.t1", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 28331, 
@@ -2564,8 +2853,9 @@
 }
 }, 
 "Tl3204107": {
-"^ot:altLabel": "Sarcocystis neurona", 
 "^ot:originalLabel": "Sarcocystis neurona SN300700765", 
+"^ot:ottId": 690900, 
+"^ot:ottTaxonName": "Sarcocystis neurona", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 66280, 
 "@tb:identifier.taxonVariant": 141427, 
@@ -2574,8 +2864,9 @@
 }
 }, 
 "Tl3204108": {
-"^ot:altLabel": "Perkinsus marinus", 
 "^ot:originalLabel": "Perkinsus marinus XP002785638.1", 
+"^ot:ottId": 438694, 
+"^ot:ottTaxonName": "Perkinsus marinus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 58761, 
 "@tb:identifier.taxonVariant": 131659, 
@@ -2584,8 +2875,9 @@
 }
 }, 
 "Tl3204109": {
-"^ot:altLabel": "Theileria parva", 
 "^ot:originalLabel": "Theileria parva TP030605", 
+"^ot:ottId": 302422, 
+"^ot:ottTaxonName": "Theileria parva", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 28885, 
 "@tb:identifier.taxonVariant": 67360, 
@@ -2594,8 +2886,9 @@
 }
 }, 
 "Tl3204110": {
-"^ot:altLabel": "Plasmodium yoelii", 
 "^ot:originalLabel": "Plasmodium yoelii PY17X0907600", 
+"^ot:ottId": 826551, 
+"^ot:ottTaxonName": "Plasmodium yoelii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22669, 
 "@tb:identifier.taxonVariant": 52866, 
@@ -2604,8 +2897,9 @@
 }
 }, 
 "Tl3204111": {
-"^ot:altLabel": "Neospora caninum", 
 "^ot:originalLabel": "Neospora caninum NCLIV006060", 
+"^ot:ottId": 936407, 
+"^ot:ottTaxonName": "Neospora caninum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 57563, 
 "@tb:identifier.taxonVariant": 129784, 
@@ -2614,8 +2908,9 @@
 }
 }, 
 "Tl3204112": {
-"^ot:altLabel": "Alveolates", 
 "^ot:originalLabel": "Chromera velia Cvel1249", 
+"^ot:ottId": 215573, 
+"^ot:ottTaxonName": "Chromera velia", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 1044, 
 "@tb:identifier.taxonVariant": 2726, 
@@ -2625,8 +2920,9 @@
 "^skos:prefLabel": "Alveolata"
 }, 
 "Tl3204113": {
-"^ot:altLabel": "Cryptosporidium muris", 
 "^ot:originalLabel": "Cryptosporidium muris CMU038530", 
+"^ot:ottId": 775243, 
+"^ot:ottTaxonName": "Cryptosporidium muris", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 7619, 
 "@tb:identifier.taxonVariant": 18378, 
@@ -2635,8 +2931,9 @@
 }
 }, 
 "Tl3204114": {
-"^ot:altLabel": "Plasmodium falciparum", 
 "^ot:originalLabel": "Plasmodium falciparum PF3D71142800", 
+"^ot:ottId": 201128, 
+"^ot:ottTaxonName": "Plasmodium falciparum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22665, 
 "@tb:identifier.taxonVariant": 52862, 
@@ -2645,8 +2942,9 @@
 }
 }, 
 "Tl3204115": {
-"^ot:altLabel": "Plasmodium knowlesi", 
 "^ot:originalLabel": "Plasmodium knowlesi PKNH0940700", 
+"^ot:ottId": 352298, 
+"^ot:ottTaxonName": "Plasmodium knowlesi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51507, 
 "@tb:identifier.taxonVariant": 121283, 
@@ -2655,8 +2953,9 @@
 }
 }, 
 "Tl3204116": {
-"^ot:altLabel": "Perkinsus marinus", 
 "^ot:originalLabel": "Perkinsus marinus XP002771103.1", 
+"^ot:ottId": 438694, 
+"^ot:ottTaxonName": "Perkinsus marinus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 58761, 
 "@tb:identifier.taxonVariant": 131659, 
@@ -2665,8 +2964,9 @@
 }
 }, 
 "Tl3204117": {
-"^ot:altLabel": "Hammondia hammondi", 
 "^ot:originalLabel": "Hammondia hammondi HHA223040", 
+"^ot:ottId": 595486, 
+"^ot:ottTaxonName": "Hammondia hammondi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 106624, 
 "@tb:identifier.taxonVariant": 185174, 
@@ -2675,8 +2975,9 @@
 }
 }, 
 "Tl3204118": {
-"^ot:altLabel": "Eimeria tenella", 
 "^ot:originalLabel": "Eimeria tenella ETH00038660", 
+"^ot:ottId": 775246, 
+"^ot:ottTaxonName": "Eimeria tenella", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 9775, 
 "@tb:identifier.taxonVariant": 23414, 
@@ -2685,8 +2986,9 @@
 }
 }, 
 "Tl3204119": {
-"^ot:altLabel": "Vitrella brassicaformis Vbra12983", 
 "^ot:originalLabel": "Vitrella brassicaformis Vbra17670", 
+"^ot:ottId": 818325, 
+"^ot:ottTaxonName": "Vitrella brassicaformis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 635326, 
 "@tb:identifier.taxonVariant": 850338, 
@@ -2694,8 +2996,9 @@
 }
 }, 
 "Tl3204120": {
-"^ot:altLabel": "Plasmodium vivax", 
 "^ot:originalLabel": "Plasmodium vivax PVP010943500", 
+"^ot:ottId": 352295, 
+"^ot:ottTaxonName": "Plasmodium vivax", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51512, 
 "@tb:identifier.taxonVariant": 121293, 
@@ -2704,8 +3007,9 @@
 }
 }, 
 "Tl3204121": {
-"^ot:altLabel": "Alveolates", 
 "^ot:originalLabel": "Chromera velia Cvel9927", 
+"^ot:ottId": 215573, 
+"^ot:ottTaxonName": "Chromera velia", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 1044, 
 "@tb:identifier.taxonVariant": 2726, 
@@ -2715,7 +3019,6 @@
 "^skos:prefLabel": "Alveolata"
 }, 
 "Tl3204122": {
-"^ot:altLabel": "Symbiodinium", 
 "^ot:originalLabel": "Symbiodinum minutum symbB.v1.2.001739.t1", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 28331, 
@@ -2725,8 +3028,9 @@
 }
 }, 
 "Tl3204123": {
-"^ot:altLabel": "Cryptosporidium muris", 
 "^ot:originalLabel": "Cryptosporidium muris CMU029630", 
+"^ot:ottId": 775243, 
+"^ot:ottTaxonName": "Cryptosporidium muris", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 7619, 
 "@tb:identifier.taxonVariant": 18378, 
@@ -2735,8 +3039,9 @@
 }
 }, 
 "Tl3204124": {
-"^ot:altLabel": "Vitrella brassicaformis Vbra12983", 
 "^ot:originalLabel": "Vitrella brassicaformis Vbra16763", 
+"^ot:ottId": 818325, 
+"^ot:ottTaxonName": "Vitrella brassicaformis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 635326, 
 "@tb:identifier.taxonVariant": 850338, 
@@ -2744,8 +3049,9 @@
 }
 }, 
 "Tl3204125": {
-"^ot:altLabel": "Sarcocystis neurona", 
 "^ot:originalLabel": "Sarcocystis neurona SN302500555", 
+"^ot:ottId": 690900, 
+"^ot:ottTaxonName": "Sarcocystis neurona", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 66280, 
 "@tb:identifier.taxonVariant": 141427, 
@@ -2754,8 +3060,9 @@
 }
 }, 
 "Tl3204126": {
-"^ot:altLabel": "Toxoplasma gondii", 
 "^ot:originalLabel": "Toxoplasma gondii TGME49247410", 
+"^ot:ottId": 252145, 
+"^ot:ottTaxonName": "Toxoplasma gondii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51473, 
 "@tb:identifier.taxonVariant": 413956, 
@@ -2764,8 +3071,9 @@
 }
 }, 
 "Tl3204127": {
-"^ot:altLabel": "Neospora caninum", 
 "^ot:originalLabel": "Neospora caninum NCLIV065310", 
+"^ot:ottId": 936407, 
+"^ot:ottTaxonName": "Neospora caninum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 57563, 
 "@tb:identifier.taxonVariant": 129784, 
@@ -2774,8 +3082,9 @@
 }
 }, 
 "Tl3204128": {
-"^ot:altLabel": "Plasmodium vivax", 
 "^ot:originalLabel": "Plasmodium vivax PVP010508900", 
+"^ot:ottId": 352295, 
+"^ot:ottTaxonName": "Plasmodium vivax", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51512, 
 "@tb:identifier.taxonVariant": 121293, 
@@ -2784,8 +3093,9 @@
 }
 }, 
 "Tl3204129": {
-"^ot:altLabel": "Plasmodium yoelii", 
 "^ot:originalLabel": "Plasmodium yoelii PY17X0705500", 
+"^ot:ottId": 826551, 
+"^ot:ottTaxonName": "Plasmodium yoelii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22669, 
 "@tb:identifier.taxonVariant": 52866, 
@@ -2794,8 +3104,9 @@
 }
 }, 
 "Tl3204130": {
-"^ot:altLabel": "Plasmodium knowlesi", 
 "^ot:originalLabel": "Plasmodium knowlesi PKNH1319400", 
+"^ot:ottId": 352298, 
+"^ot:ottTaxonName": "Plasmodium knowlesi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51507, 
 "@tb:identifier.taxonVariant": 121283, 
@@ -2804,8 +3115,9 @@
 }
 }, 
 "Tl3204131": {
-"^ot:altLabel": "Plasmodium chabaudi", 
 "^ot:originalLabel": "Plasmodium chabaudi PCHAS0714500", 
+"^ot:ottId": 724404, 
+"^ot:ottTaxonName": "Plasmodium chabaudi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51484, 
 "@tb:identifier.taxonVariant": 121271, 
@@ -2814,8 +3126,9 @@
 }
 }, 
 "Tl3204132": {
-"^ot:altLabel": "Perkinsus marinus", 
 "^ot:originalLabel": "Perkinsus marinus XP002768044.1", 
+"^ot:ottId": 438694, 
+"^ot:ottTaxonName": "Perkinsus marinus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 58761, 
 "@tb:identifier.taxonVariant": 131659, 
@@ -2824,8 +3137,9 @@
 }
 }, 
 "Tl3204133": {
-"^ot:altLabel": "Babesia bovis", 
 "^ot:originalLabel": "Babesia bovis BBOVIII000730", 
+"^ot:ottId": 826545, 
+"^ot:ottTaxonName": "Babesia bovis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3035, 
 "@tb:identifier.taxonVariant": 7289, 
@@ -2834,8 +3148,9 @@
 }
 }, 
 "Tl3204134": {
-"^ot:altLabel": "Theileria parva", 
 "^ot:originalLabel": "Theileria parva TP030769", 
+"^ot:ottId": 302422, 
+"^ot:ottTaxonName": "Theileria parva", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 28885, 
 "@tb:identifier.taxonVariant": 67360, 
@@ -2844,8 +3159,9 @@
 }
 }, 
 "Tl3204135": {
-"^ot:altLabel": "Perkinsus marinus", 
 "^ot:originalLabel": "Perkinsus marinus XP002781740.1", 
+"^ot:ottId": 438694, 
+"^ot:ottTaxonName": "Perkinsus marinus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 58761, 
 "@tb:identifier.taxonVariant": 131659, 
@@ -2854,8 +3170,9 @@
 }
 }, 
 "Tl3204136": {
-"^ot:altLabel": "Hammondia hammondi", 
 "^ot:originalLabel": "Hammondia hammondi HHA247410", 
+"^ot:ottId": 595486, 
+"^ot:ottTaxonName": "Hammondia hammondi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 106624, 
 "@tb:identifier.taxonVariant": 185174, 
@@ -2864,8 +3181,9 @@
 }
 }, 
 "Tl3204137": {
-"^ot:altLabel": "Theileria annulata", 
 "^ot:originalLabel": "Theileria annulata TA18150", 
+"^ot:ottId": 302421, 
+"^ot:ottTaxonName": "Theileria annulata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51525, 
 "@tb:identifier.taxonVariant": 121309, 
@@ -2874,8 +3192,9 @@
 }
 }, 
 "Tl3204138": {
-"^ot:altLabel": "Plasmodium berghei", 
 "^ot:originalLabel": "Plasmodium berghei PBANKA0705200", 
+"^ot:ottId": 724398, 
+"^ot:ottTaxonName": "Plasmodium berghei", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51481, 
 "@tb:identifier.taxonVariant": 121267, 
@@ -2884,8 +3203,9 @@
 }
 }, 
 "Tl3204139": {
-"^ot:altLabel": "Plasmodium falciparum", 
 "^ot:originalLabel": "Plasmodium falciparum PF3D70825400", 
+"^ot:ottId": 201128, 
+"^ot:ottTaxonName": "Plasmodium falciparum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22665, 
 "@tb:identifier.taxonVariant": 52862, 
@@ -2894,8 +3214,9 @@
 }
 }, 
 "Tl3204140": {
-"^ot:altLabel": "Perkinsus marinus", 
 "^ot:originalLabel": "Perkinsus marinus XP002776776.1", 
+"^ot:ottId": 438694, 
+"^ot:ottTaxonName": "Perkinsus marinus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 58761, 
 "@tb:identifier.taxonVariant": 131659, 
@@ -2904,8 +3225,9 @@
 }
 }, 
 "Tl3204141": {
-"^ot:altLabel": "Vitrella brassicaformis Vbra12983", 
 "^ot:originalLabel": "Vitrella brassicaformis Vbra8465", 
+"^ot:ottId": 818325, 
+"^ot:ottTaxonName": "Vitrella brassicaformis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 635326, 
 "@tb:identifier.taxonVariant": 850338, 
@@ -2913,8 +3235,9 @@
 }
 }, 
 "Tl3204142": {
-"^ot:altLabel": "Plasmodium falciparum", 
 "^ot:originalLabel": "Plasmodium falciparum PF3D70107400", 
+"^ot:ottId": 201128, 
+"^ot:ottTaxonName": "Plasmodium falciparum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22665, 
 "@tb:identifier.taxonVariant": 52862, 
@@ -2923,8 +3246,9 @@
 }
 }, 
 "Tl3204143": {
-"^ot:altLabel": "Plasmodium berghei", 
 "^ot:originalLabel": "Plasmodium berghei PBANKA0206000", 
+"^ot:ottId": 724398, 
+"^ot:ottTaxonName": "Plasmodium berghei", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51481, 
 "@tb:identifier.taxonVariant": 121267, 
@@ -2933,8 +3257,9 @@
 }
 }, 
 "Tl3204144": {
-"^ot:altLabel": "Sarcocystis neurona", 
 "^ot:originalLabel": "Sarcocystis neurona SN303400175", 
+"^ot:ottId": 690900, 
+"^ot:ottTaxonName": "Sarcocystis neurona", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 66280, 
 "@tb:identifier.taxonVariant": 141427, 
@@ -2943,8 +3268,9 @@
 }
 }, 
 "Tl3204145": {
-"^ot:altLabel": "Plasmodium knowlesi", 
 "^ot:originalLabel": "Plasmodium knowlesi PKNH0206200", 
+"^ot:ottId": 352298, 
+"^ot:ottTaxonName": "Plasmodium knowlesi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51507, 
 "@tb:identifier.taxonVariant": 121283, 
@@ -2953,8 +3279,9 @@
 }
 }, 
 "Tl3204146": {
-"^ot:altLabel": "Theileria annulata", 
 "^ot:originalLabel": "Theileria annulata TA10780", 
+"^ot:ottId": 302421, 
+"^ot:ottTaxonName": "Theileria annulata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51525, 
 "@tb:identifier.taxonVariant": 121309, 
@@ -2963,8 +3290,9 @@
 }
 }, 
 "Tl3204147": {
-"^ot:altLabel": "Plasmodium chabaudi", 
 "^ot:originalLabel": "Plasmodium chabaudi PCHAS0204400", 
+"^ot:ottId": 724404, 
+"^ot:ottTaxonName": "Plasmodium chabaudi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51484, 
 "@tb:identifier.taxonVariant": 121271, 
@@ -2973,8 +3301,9 @@
 }
 }, 
 "Tl3204148": {
-"^ot:altLabel": "Cryptosporidium muris", 
 "^ot:originalLabel": "Cryptosporidium muris CMU028470", 
+"^ot:ottId": 775243, 
+"^ot:ottTaxonName": "Cryptosporidium muris", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 7619, 
 "@tb:identifier.taxonVariant": 18378, 
@@ -2983,8 +3312,9 @@
 }
 }, 
 "Tl3204149": {
-"^ot:altLabel": "Babesia bovis", 
 "^ot:originalLabel": "Babesia bovis BBOVIII007280", 
+"^ot:ottId": 826545, 
+"^ot:ottTaxonName": "Babesia bovis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3035, 
 "@tb:identifier.taxonVariant": 7289, 
@@ -2993,8 +3323,9 @@
 }
 }, 
 "Tl3204150": {
-"^ot:altLabel": "Plasmodium yoelii", 
 "^ot:originalLabel": "Plasmodium yoelii PY17X0207400", 
+"^ot:ottId": 826551, 
+"^ot:ottTaxonName": "Plasmodium yoelii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22669, 
 "@tb:identifier.taxonVariant": 52866, 
@@ -3003,8 +3334,9 @@
 }
 }, 
 "Tl3204151": {
-"^ot:altLabel": "Alveolates", 
 "^ot:originalLabel": "Chromera velia Cvel33208", 
+"^ot:ottId": 215573, 
+"^ot:ottTaxonName": "Chromera velia", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 1044, 
 "@tb:identifier.taxonVariant": 2726, 
@@ -3014,8 +3346,9 @@
 "^skos:prefLabel": "Alveolata"
 }, 
 "Tl3204152": {
-"^ot:altLabel": "Hammondia hammondi", 
 "^ot:originalLabel": "Hammondia hammondi HHA260180", 
+"^ot:ottId": 595486, 
+"^ot:ottTaxonName": "Hammondia hammondi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 106624, 
 "@tb:identifier.taxonVariant": 185174, 
@@ -3024,8 +3357,9 @@
 }
 }, 
 "Tl3204153": {
-"^ot:altLabel": "Toxoplasma gondii", 
 "^ot:originalLabel": "Toxoplasma gondii TGME49260180", 
+"^ot:ottId": 252145, 
+"^ot:ottTaxonName": "Toxoplasma gondii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51473, 
 "@tb:identifier.taxonVariant": 413956, 
@@ -3034,8 +3368,9 @@
 }
 }, 
 "Tl3204154": {
-"^ot:altLabel": "Plasmodium vivax", 
 "^ot:originalLabel": "Plasmodium vivax PVP010207500", 
+"^ot:ottId": 352295, 
+"^ot:ottTaxonName": "Plasmodium vivax", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51512, 
 "@tb:identifier.taxonVariant": 121293, 
@@ -3044,8 +3379,9 @@
 }
 }, 
 "Tl3204155": {
-"^ot:altLabel": "Neospora caninum", 
 "^ot:originalLabel": "Neospora caninum NCLIV026820", 
+"^ot:ottId": 936407, 
+"^ot:ottTaxonName": "Neospora caninum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 57563, 
 "@tb:identifier.taxonVariant": 129784, 
@@ -3054,8 +3390,9 @@
 }
 }, 
 "Tl3204156": {
-"^ot:altLabel": "Eimeria tenella", 
 "^ot:originalLabel": "Eimeria tenella ETH00017205", 
+"^ot:ottId": 775246, 
+"^ot:ottTaxonName": "Eimeria tenella", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 9775, 
 "@tb:identifier.taxonVariant": 23414, 
@@ -3064,8 +3401,9 @@
 }
 }, 
 "Tl3204157": {
-"^ot:altLabel": "Theileria parva", 
 "^ot:originalLabel": "Theileria parva TP040635", 
+"^ot:ottId": 302422, 
+"^ot:ottTaxonName": "Theileria parva", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 28885, 
 "@tb:identifier.taxonVariant": 67360, 
@@ -3074,8 +3412,9 @@
 }
 }, 
 "Tl3204158": {
-"^ot:altLabel": "Perkinsus marinus", 
 "^ot:originalLabel": "Perkinsus marinus XP002783280.1", 
+"^ot:ottId": 438694, 
+"^ot:ottTaxonName": "Perkinsus marinus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 58761, 
 "@tb:identifier.taxonVariant": 131659, 
@@ -3084,8 +3423,9 @@
 }
 }, 
 "Tl3204159": {
-"^ot:altLabel": "Symbiodinium", 
 "^ot:originalLabel": "Symbiodinum minutum symbB.v1.2.000849.t1", 
+"^ot:ottId": 797783, 
+"^ot:ottTaxonName": "Symbiodinium (genus in subkingdom SAR)", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 28331, 
 "@tb:identifier.taxonVariant": 66071, 
@@ -3094,8 +3434,9 @@
 }
 }, 
 "Tl3204160": {
-"^ot:altLabel": "Plasmodium knowlesi", 
 "^ot:originalLabel": "Plasmodium knowlesi PKNH0505000", 
+"^ot:ottId": 352298, 
+"^ot:ottTaxonName": "Plasmodium knowlesi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51507, 
 "@tb:identifier.taxonVariant": 121283, 
@@ -3104,8 +3445,9 @@
 }
 }, 
 "Tl3204161": {
-"^ot:altLabel": "Plasmodium berghei", 
 "^ot:originalLabel": "Plasmodium berghei PBANKA0715400", 
+"^ot:ottId": 724398, 
+"^ot:ottTaxonName": "Plasmodium berghei", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51481, 
 "@tb:identifier.taxonVariant": 121267, 
@@ -3114,8 +3456,9 @@
 }
 }, 
 "Tl3204162": {
-"^ot:altLabel": "Neospora caninum", 
 "^ot:originalLabel": "Neospora caninum NCLIV061440", 
+"^ot:ottId": 936407, 
+"^ot:ottTaxonName": "Neospora caninum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 57563, 
 "@tb:identifier.taxonVariant": 129784, 
@@ -3124,8 +3467,9 @@
 }
 }, 
 "Tl3204163": {
-"^ot:altLabel": "Sarcocystis neurona", 
 "^ot:originalLabel": "Sarcocystis neurona SN300200025", 
+"^ot:ottId": 690900, 
+"^ot:ottTaxonName": "Sarcocystis neurona", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 66280, 
 "@tb:identifier.taxonVariant": 141427, 
@@ -3134,8 +3478,9 @@
 }
 }, 
 "Tl3204164": {
-"^ot:altLabel": "Vitrella brassicaformis Vbra12983", 
 "^ot:originalLabel": "Vitrella brassicaformis Vbra4019", 
+"^ot:ottId": 818325, 
+"^ot:ottTaxonName": "Vitrella brassicaformis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 635326, 
 "@tb:identifier.taxonVariant": 850338, 
@@ -3143,8 +3488,9 @@
 }
 }, 
 "Tl3204165": {
-"^ot:altLabel": "Toxoplasma gondii", 
 "^ot:originalLabel": "Toxoplasma gondii TGME49218940", 
+"^ot:ottId": 252145, 
+"^ot:ottTaxonName": "Toxoplasma gondii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51473, 
 "@tb:identifier.taxonVariant": 413956, 
@@ -3153,8 +3499,9 @@
 }
 }, 
 "Tl3204166": {
-"^ot:altLabel": "Babesia bovis", 
 "^ot:originalLabel": "Babesia bovis BBOVI002640", 
+"^ot:ottId": 826545, 
+"^ot:ottTaxonName": "Babesia bovis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3035, 
 "@tb:identifier.taxonVariant": 7289, 
@@ -3163,8 +3510,9 @@
 }
 }, 
 "Tl3204167": {
-"^ot:altLabel": "Plasmodium yoelii", 
 "^ot:originalLabel": "Plasmodium yoelii PY17X0715600", 
+"^ot:ottId": 826551, 
+"^ot:ottTaxonName": "Plasmodium yoelii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22669, 
 "@tb:identifier.taxonVariant": 52866, 
@@ -3173,8 +3521,9 @@
 }
 }, 
 "Tl3204168": {
-"^ot:altLabel": "Alveolates", 
 "^ot:originalLabel": "Chromera velia Cvel4217", 
+"^ot:ottId": 215573, 
+"^ot:ottTaxonName": "Chromera velia", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 1044, 
 "@tb:identifier.taxonVariant": 2726, 
@@ -3184,8 +3533,9 @@
 "^skos:prefLabel": "Alveolata"
 }, 
 "Tl3204169": {
-"^ot:altLabel": "Theileria annulata", 
 "^ot:originalLabel": "Theileria annulata TA19720", 
+"^ot:ottId": 302421, 
+"^ot:ottTaxonName": "Theileria annulata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51525, 
 "@tb:identifier.taxonVariant": 121309, 
@@ -3194,8 +3544,9 @@
 }
 }, 
 "Tl3204170": {
-"^ot:altLabel": "Eimeria tenella", 
 "^ot:originalLabel": "Eimeria tenella ETH00008250", 
+"^ot:ottId": 775246, 
+"^ot:ottTaxonName": "Eimeria tenella", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 9775, 
 "@tb:identifier.taxonVariant": 23414, 
@@ -3204,8 +3555,9 @@
 }
 }, 
 "Tl3204171": {
-"^ot:altLabel": "Theileria parva", 
 "^ot:originalLabel": "Theileria parva TP010025", 
+"^ot:ottId": 302422, 
+"^ot:ottTaxonName": "Theileria parva", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 28885, 
 "@tb:identifier.taxonVariant": 67360, 
@@ -3214,8 +3566,9 @@
 }
 }, 
 "Tl3204172": {
-"^ot:altLabel": "Plasmodium chabaudi", 
 "^ot:originalLabel": "Plasmodium chabaudi PCHAS0724500", 
+"^ot:ottId": 724404, 
+"^ot:ottTaxonName": "Plasmodium chabaudi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51484, 
 "@tb:identifier.taxonVariant": 121271, 
@@ -3224,8 +3577,9 @@
 }
 }, 
 "Tl3204173": {
-"^ot:altLabel": "Plasmodium vivax", 
 "^ot:originalLabel": "Plasmodium vivax PVP010519900", 
+"^ot:ottId": 352295, 
+"^ot:ottTaxonName": "Plasmodium vivax", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51512, 
 "@tb:identifier.taxonVariant": 121293, 
@@ -3234,8 +3588,9 @@
 }
 }, 
 "Tl3204174": {
-"^ot:altLabel": "Cryptosporidium muris", 
 "^ot:originalLabel": "Cryptosporidium muris CMU018280", 
+"^ot:ottId": 775243, 
+"^ot:ottTaxonName": "Cryptosporidium muris", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 7619, 
 "@tb:identifier.taxonVariant": 18378, 
@@ -3244,8 +3599,9 @@
 }
 }, 
 "Tl3204175": {
-"^ot:altLabel": "Plasmodium falciparum", 
 "^ot:originalLabel": "Plasmodium falciparum PF3D70815400", 
+"^ot:ottId": 201128, 
+"^ot:ottTaxonName": "Plasmodium falciparum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22665, 
 "@tb:identifier.taxonVariant": 52862, 
@@ -3254,8 +3610,9 @@
 }
 }, 
 "Tl3204176": {
-"^ot:altLabel": "Hammondia hammondi", 
 "^ot:originalLabel": "Hammondia hammondi HHA218940", 
+"^ot:ottId": 595486, 
+"^ot:ottTaxonName": "Hammondia hammondi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 106624, 
 "@tb:identifier.taxonVariant": 185174, 
@@ -3264,8 +3621,9 @@
 }
 }, 
 "Tl3204177": {
-"^ot:altLabel": "Neospora caninum", 
 "^ot:originalLabel": "Neospora caninum NCLIV023790", 
+"^ot:ottId": 936407, 
+"^ot:ottTaxonName": "Neospora caninum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 57563, 
 "@tb:identifier.taxonVariant": 129784, 
@@ -3274,8 +3632,9 @@
 }
 }, 
 "Tl3204178": {
-"^ot:altLabel": "Eimeria tenella", 
 "^ot:originalLabel": "Eimeria tenella ETH00041215", 
+"^ot:ottId": 775246, 
+"^ot:ottTaxonName": "Eimeria tenella", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 9775, 
 "@tb:identifier.taxonVariant": 23414, 
@@ -3284,8 +3643,9 @@
 }
 }, 
 "Tl3204179": {
-"^ot:altLabel": "Plasmodium berghei", 
 "^ot:originalLabel": "Plasmodium berghei PBANKA0109600", 
+"^ot:ottId": 724398, 
+"^ot:ottTaxonName": "Plasmodium berghei", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51481, 
 "@tb:identifier.taxonVariant": 121267, 
@@ -3294,8 +3654,9 @@
 }
 }, 
 "Tl3204180": {
-"^ot:altLabel": "Perkinsus marinus", 
 "^ot:originalLabel": "Perkinsus marinus XP002785293.1", 
+"^ot:ottId": 438694, 
+"^ot:ottTaxonName": "Perkinsus marinus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 58761, 
 "@tb:identifier.taxonVariant": 131659, 
@@ -3304,8 +3665,9 @@
 }
 }, 
 "Tl3204181": {
-"^ot:altLabel": "Plasmodium knowlesi", 
 "^ot:originalLabel": "Plasmodium knowlesi PKNH1139100", 
+"^ot:ottId": 352298, 
+"^ot:ottTaxonName": "Plasmodium knowlesi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51507, 
 "@tb:identifier.taxonVariant": 121283, 
@@ -3314,8 +3676,9 @@
 }
 }, 
 "Tl3204182": {
-"^ot:altLabel": "Theileria parva", 
 "^ot:originalLabel": "Theileria parva TP030761", 
+"^ot:ottId": 302422, 
+"^ot:ottTaxonName": "Theileria parva", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 28885, 
 "@tb:identifier.taxonVariant": 67360, 
@@ -3324,8 +3687,9 @@
 }
 }, 
 "Tl3204183": {
-"^ot:altLabel": "Plasmodium yoelii", 
 "^ot:originalLabel": "Plasmodium yoelii PY17X0111200", 
+"^ot:ottId": 826551, 
+"^ot:ottTaxonName": "Plasmodium yoelii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22669, 
 "@tb:identifier.taxonVariant": 52866, 
@@ -3334,8 +3698,9 @@
 }
 }, 
 "Tl3204184": {
-"^ot:altLabel": "Toxoplasma gondii", 
 "^ot:originalLabel": "Toxoplasma gondii TGME49282180", 
+"^ot:ottId": 252145, 
+"^ot:ottTaxonName": "Toxoplasma gondii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51473, 
 "@tb:identifier.taxonVariant": 413956, 
@@ -3344,8 +3709,9 @@
 }
 }, 
 "Tl3204185": {
-"^ot:altLabel": "Plasmodium vivax", 
 "^ot:originalLabel": "Plasmodium vivax PVP011137900", 
+"^ot:ottId": 352295, 
+"^ot:ottTaxonName": "Plasmodium vivax", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51512, 
 "@tb:identifier.taxonVariant": 121293, 
@@ -3354,8 +3720,9 @@
 }
 }, 
 "Tl3204186": {
-"^ot:altLabel": "Alveolates", 
 "^ot:originalLabel": "Chromera velia Cvel23801", 
+"^ot:ottId": 215573, 
+"^ot:ottTaxonName": "Chromera velia", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 1044, 
 "@tb:identifier.taxonVariant": 2726, 
@@ -3365,8 +3732,9 @@
 "^skos:prefLabel": "Alveolata"
 }, 
 "Tl3204187": {
-"^ot:altLabel": "Vitrella brassicaformis Vbra12983", 
 "^ot:originalLabel": "Vitrella brassicaformis Vbra13736", 
+"^ot:ottId": 818325, 
+"^ot:ottTaxonName": "Vitrella brassicaformis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 635326, 
 "@tb:identifier.taxonVariant": 850338, 
@@ -3374,8 +3742,9 @@
 }
 }, 
 "Tl3204188": {
-"^ot:altLabel": "Plasmodium falciparum", 
 "^ot:originalLabel": "Plasmodium falciparum PF3D70611300", 
+"^ot:ottId": 201128, 
+"^ot:ottTaxonName": "Plasmodium falciparum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22665, 
 "@tb:identifier.taxonVariant": 52862, 
@@ -3384,8 +3753,9 @@
 }
 }, 
 "Tl3204189": {
-"^ot:altLabel": "Babesia bovis", 
 "^ot:originalLabel": "Babesia bovis BBOVIII000600", 
+"^ot:ottId": 826545, 
+"^ot:ottTaxonName": "Babesia bovis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3035, 
 "@tb:identifier.taxonVariant": 7289, 
@@ -3394,8 +3764,9 @@
 }
 }, 
 "Tl3204190": {
-"^ot:altLabel": "Cryptosporidium muris", 
 "^ot:originalLabel": "Cryptosporidium muris CMU008320", 
+"^ot:ottId": 775243, 
+"^ot:ottTaxonName": "Cryptosporidium muris", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 7619, 
 "@tb:identifier.taxonVariant": 18378, 
@@ -3404,8 +3775,9 @@
 }
 }, 
 "Tl3204191": {
-"^ot:altLabel": "Theileria annulata", 
 "^ot:originalLabel": "Theileria annulata TA18110", 
+"^ot:ottId": 302421, 
+"^ot:ottTaxonName": "Theileria annulata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51525, 
 "@tb:identifier.taxonVariant": 121309, 
@@ -3414,8 +3786,9 @@
 }
 }, 
 "Tl3204192": {
-"^ot:altLabel": "Sarcocystis neurona", 
 "^ot:originalLabel": "Sarcocystis neurona SN300400090", 
+"^ot:ottId": 690900, 
+"^ot:ottTaxonName": "Sarcocystis neurona", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 66280, 
 "@tb:identifier.taxonVariant": 141427, 
@@ -3424,8 +3797,9 @@
 }
 }, 
 "Tl3204193": {
-"^ot:altLabel": "Plasmodium chabaudi", 
 "^ot:originalLabel": "Plasmodium chabaudi PCHAS0110200", 
+"^ot:ottId": 724404, 
+"^ot:ottTaxonName": "Plasmodium chabaudi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51484, 
 "@tb:identifier.taxonVariant": 121271, 
@@ -3434,8 +3808,9 @@
 }
 }, 
 "Tl3204194": {
-"^ot:altLabel": "Hammondia hammondi", 
 "^ot:originalLabel": "Hammondia hammondi HHA282180", 
+"^ot:ottId": 595486, 
+"^ot:ottTaxonName": "Hammondia hammondi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 106624, 
 "@tb:identifier.taxonVariant": 185174, 
@@ -3444,8 +3819,9 @@
 }
 }, 
 "Tl3204195": {
-"^ot:altLabel": "Plasmodium falciparum", 
 "^ot:originalLabel": "Plasmodium falciparum PF3D71417900", 
+"^ot:ottId": 201128, 
+"^ot:ottTaxonName": "Plasmodium falciparum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22665, 
 "@tb:identifier.taxonVariant": 52862, 
@@ -3454,8 +3830,9 @@
 }
 }, 
 "Tl3204196": {
-"^ot:altLabel": "Perkinsus marinus", 
 "^ot:originalLabel": "Perkinsus marinus XP002783659.1", 
+"^ot:ottId": 438694, 
+"^ot:ottTaxonName": "Perkinsus marinus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 58761, 
 "@tb:identifier.taxonVariant": 131659, 
@@ -3464,8 +3841,9 @@
 }
 }, 
 "Tl3204197": {
-"^ot:altLabel": "Babesia bovis", 
 "^ot:originalLabel": "Babesia bovis BBOVII005910", 
+"^ot:ottId": 826545, 
+"^ot:ottTaxonName": "Babesia bovis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3035, 
 "@tb:identifier.taxonVariant": 7289, 
@@ -3474,8 +3852,9 @@
 }
 }, 
 "Tl3204198": {
-"^ot:altLabel": "Theileria annulata", 
 "^ot:originalLabel": "Theileria annulata TA13675", 
+"^ot:ottId": 302421, 
+"^ot:ottTaxonName": "Theileria annulata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51525, 
 "@tb:identifier.taxonVariant": 121309, 
@@ -3484,8 +3863,9 @@
 }
 }, 
 "Tl3204199": {
-"^ot:altLabel": "Vitrella brassicaformis Vbra12983", 
 "^ot:originalLabel": "Vitrella brassicaformis Vbra19525", 
+"^ot:ottId": 818325, 
+"^ot:ottTaxonName": "Vitrella brassicaformis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 635326, 
 "@tb:identifier.taxonVariant": 850338, 
@@ -3493,8 +3873,9 @@
 }
 }, 
 "Tl3204200": {
-"^ot:altLabel": "Theileria parva", 
 "^ot:originalLabel": "Theileria parva TP020531", 
+"^ot:ottId": 302422, 
+"^ot:ottTaxonName": "Theileria parva", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 28885, 
 "@tb:identifier.taxonVariant": 67360, 
@@ -3503,8 +3884,9 @@
 }
 }, 
 "Tl3204201": {
-"^ot:altLabel": "Eimeria tenella", 
 "^ot:originalLabel": "Eimeria tenella ETH00007500", 
+"^ot:ottId": 775246, 
+"^ot:ottTaxonName": "Eimeria tenella", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 9775, 
 "@tb:identifier.taxonVariant": 23414, 
@@ -3513,8 +3895,9 @@
 }
 }, 
 "Tl3204202": {
-"^ot:altLabel": "Plasmodium yoelii", 
 "^ot:originalLabel": "Plasmodium yoelii PY17X1027200", 
+"^ot:ottId": 826551, 
+"^ot:ottTaxonName": "Plasmodium yoelii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22669, 
 "@tb:identifier.taxonVariant": 52866, 
@@ -3523,8 +3906,9 @@
 }
 }, 
 "Tl3204203": {
-"^ot:altLabel": "Alveolates", 
 "^ot:originalLabel": "Chromera velia Cvel21091", 
+"^ot:ottId": 215573, 
+"^ot:ottTaxonName": "Chromera velia", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 1044, 
 "@tb:identifier.taxonVariant": 2726, 
@@ -3534,8 +3918,9 @@
 "^skos:prefLabel": "Alveolata"
 }, 
 "Tl3204204": {
-"^ot:altLabel": "Plasmodium berghei", 
 "^ot:originalLabel": "Plasmodium berghei PBANKA1024800", 
+"^ot:ottId": 724398, 
+"^ot:ottTaxonName": "Plasmodium berghei", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51481, 
 "@tb:identifier.taxonVariant": 121267, 
@@ -3544,8 +3929,9 @@
 }
 }, 
 "Tl3204205": {
-"^ot:altLabel": "Plasmodium knowlesi", 
 "^ot:originalLabel": "Plasmodium knowlesi PKNH1340100", 
+"^ot:ottId": 352298, 
+"^ot:ottTaxonName": "Plasmodium knowlesi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51507, 
 "@tb:identifier.taxonVariant": 121283, 
@@ -3554,8 +3940,9 @@
 }
 }, 
 "Tl3204206": {
-"^ot:altLabel": "Plasmodium chabaudi", 
 "^ot:originalLabel": "Plasmodium chabaudi PCHAS1025600", 
+"^ot:ottId": 724404, 
+"^ot:ottTaxonName": "Plasmodium chabaudi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51484, 
 "@tb:identifier.taxonVariant": 121271, 
@@ -3564,8 +3951,9 @@
 }
 }, 
 "Tl3204207": {
-"^ot:altLabel": "Toxoplasma gondii", 
 "^ot:originalLabel": "Toxoplasma gondii TGME49285510", 
+"^ot:ottId": 252145, 
+"^ot:ottTaxonName": "Toxoplasma gondii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51473, 
 "@tb:identifier.taxonVariant": 413956, 
@@ -3574,8 +3962,9 @@
 }
 }, 
 "Tl3204208": {
-"^ot:altLabel": "Hammondia hammondi", 
 "^ot:originalLabel": "Hammondia hammondi HHA285510", 
+"^ot:ottId": 595486, 
+"^ot:ottTaxonName": "Hammondia hammondi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 106624, 
 "@tb:identifier.taxonVariant": 185174, 
@@ -3584,8 +3973,9 @@
 }
 }, 
 "Tl3204209": {
-"^ot:altLabel": "Plasmodium vivax", 
 "^ot:originalLabel": "Plasmodium vivax PVP011331000", 
+"^ot:ottId": 352295, 
+"^ot:ottTaxonName": "Plasmodium vivax", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51512, 
 "@tb:identifier.taxonVariant": 121293, 
@@ -3594,8 +3984,9 @@
 }
 }, 
 "Tl3204210": {
-"^ot:altLabel": "Sarcocystis neurona", 
 "^ot:originalLabel": "Sarcocystis neurona SN300100160", 
+"^ot:ottId": 690900, 
+"^ot:ottTaxonName": "Sarcocystis neurona", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 66280, 
 "@tb:identifier.taxonVariant": 141427, 
@@ -3604,8 +3995,9 @@
 }
 }, 
 "Tl3204211": {
-"^ot:altLabel": "Neospora caninum", 
 "^ot:originalLabel": "Neospora caninum NCLIV014760", 
+"^ot:ottId": 936407, 
+"^ot:ottTaxonName": "Neospora caninum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 57563, 
 "@tb:identifier.taxonVariant": 129784, 
@@ -3614,8 +4006,9 @@
 }
 }, 
 "Tl3204212": {
-"^ot:altLabel": "Cryptosporidium muris", 
 "^ot:originalLabel": "Cryptosporidium muris CMU022710", 
+"^ot:ottId": 775243, 
+"^ot:ottTaxonName": "Cryptosporidium muris", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 7619, 
 "@tb:identifier.taxonVariant": 18378, 
@@ -3624,8 +4017,9 @@
 }
 }, 
 "Tl3204213": {
-"^ot:altLabel": "Toxoplasma gondii", 
 "^ot:originalLabel": "Toxoplasma gondii TGME49215610", 
+"^ot:ottId": 252145, 
+"^ot:ottTaxonName": "Toxoplasma gondii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51473, 
 "@tb:identifier.taxonVariant": 413956, 
@@ -3634,8 +4028,9 @@
 }
 }, 
 "Tl3204214": {
-"^ot:altLabel": "Cryptosporidium muris", 
 "^ot:originalLabel": "Cryptosporidium muris CMU006100", 
+"^ot:ottId": 775243, 
+"^ot:ottTaxonName": "Cryptosporidium muris", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 7619, 
 "@tb:identifier.taxonVariant": 18378, 
@@ -3644,8 +4039,9 @@
 }
 }, 
 "Tl3204215": {
-"^ot:altLabel": "Neospora caninum", 
 "^ot:originalLabel": "Neospora caninum NCLIV052510", 
+"^ot:ottId": 936407, 
+"^ot:ottTaxonName": "Neospora caninum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 57563, 
 "@tb:identifier.taxonVariant": 129784, 
@@ -3654,8 +4050,9 @@
 }
 }, 
 "Tl3204216": {
-"^ot:altLabel": "Sarcocystis neurona", 
 "^ot:originalLabel": "Sarcocystis neurona SN301400600", 
+"^ot:ottId": 690900, 
+"^ot:ottTaxonName": "Sarcocystis neurona", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 66280, 
 "@tb:identifier.taxonVariant": 141427, 
@@ -3664,8 +4061,9 @@
 }
 }, 
 "Tl3204217": {
-"^ot:altLabel": "Plasmodium falciparum", 
 "^ot:originalLabel": "Plasmodium falciparum PF3D71141200", 
+"^ot:ottId": 201128, 
+"^ot:ottTaxonName": "Plasmodium falciparum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22665, 
 "@tb:identifier.taxonVariant": 52862, 
@@ -3674,8 +4072,9 @@
 }
 }, 
 "Tl3204218": {
-"^ot:altLabel": "Eimeria tenella", 
 "^ot:originalLabel": "Eimeria tenella ETH00015200", 
+"^ot:ottId": 775246, 
+"^ot:ottTaxonName": "Eimeria tenella", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 9775, 
 "@tb:identifier.taxonVariant": 23414, 
@@ -3684,8 +4083,9 @@
 }
 }, 
 "Tl3204219": {
-"^ot:altLabel": "Theileria parva", 
 "^ot:originalLabel": "Theileria parva TP040651", 
+"^ot:ottId": 302422, 
+"^ot:ottTaxonName": "Theileria parva", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 28885, 
 "@tb:identifier.taxonVariant": 67360, 
@@ -3694,8 +4094,9 @@
 }
 }, 
 "Tl3204220": {
-"^ot:altLabel": "Theileria annulata", 
 "^ot:originalLabel": "Theileria annulata TA10680", 
+"^ot:ottId": 302421, 
+"^ot:ottTaxonName": "Theileria annulata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51525, 
 "@tb:identifier.taxonVariant": 121309, 
@@ -3704,8 +4105,9 @@
 }
 }, 
 "Tl3204221": {
-"^ot:altLabel": "Plasmodium vivax", 
 "^ot:originalLabel": "Plasmodium vivax PVP010941900", 
+"^ot:ottId": 352295, 
+"^ot:ottTaxonName": "Plasmodium vivax", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51512, 
 "@tb:identifier.taxonVariant": 121293, 
@@ -3714,8 +4116,9 @@
 }
 }, 
 "Tl3204222": {
-"^ot:altLabel": "Plasmodium knowlesi", 
 "^ot:originalLabel": "Plasmodium knowlesi PKNH0939000", 
+"^ot:ottId": 352298, 
+"^ot:ottTaxonName": "Plasmodium knowlesi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51507, 
 "@tb:identifier.taxonVariant": 121283, 
@@ -3724,8 +4127,9 @@
 }
 }, 
 "Tl3204223": {
-"^ot:altLabel": "Plasmodium chabaudi", 
 "^ot:originalLabel": "Plasmodium chabaudi PCHAS0709100", 
+"^ot:ottId": 724404, 
+"^ot:ottTaxonName": "Plasmodium chabaudi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51484, 
 "@tb:identifier.taxonVariant": 121271, 
@@ -3734,8 +4138,9 @@
 }
 }, 
 "Tl3204224": {
-"^ot:altLabel": "Alveolates", 
 "^ot:originalLabel": "Chromera velia Cvel9679", 
+"^ot:ottId": 215573, 
+"^ot:ottTaxonName": "Chromera velia", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 1044, 
 "@tb:identifier.taxonVariant": 2726, 
@@ -3745,8 +4150,9 @@
 "^skos:prefLabel": "Alveolata"
 }, 
 "Tl3204225": {
-"^ot:altLabel": "Plasmodium berghei", 
 "^ot:originalLabel": "Plasmodium berghei PBANKA0907800", 
+"^ot:ottId": 724398, 
+"^ot:ottTaxonName": "Plasmodium berghei", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51481, 
 "@tb:identifier.taxonVariant": 121267, 
@@ -3755,8 +4161,9 @@
 }
 }, 
 "Tl3204226": {
-"^ot:altLabel": "Babesia bovis", 
 "^ot:originalLabel": "Babesia bovis BBOVIII007490", 
+"^ot:ottId": 826545, 
+"^ot:ottTaxonName": "Babesia bovis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3035, 
 "@tb:identifier.taxonVariant": 7289, 
@@ -3765,8 +4172,9 @@
 }
 }, 
 "Tl3204227": {
-"^ot:altLabel": "Hammondia hammondi", 
 "^ot:originalLabel": "Hammondia hammondi HHA215610", 
+"^ot:ottId": 595486, 
+"^ot:ottTaxonName": "Hammondia hammondi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 106624, 
 "@tb:identifier.taxonVariant": 185174, 
@@ -3775,8 +4183,9 @@
 }
 }, 
 "Tl3204228": {
-"^ot:altLabel": "Babesia bovis", 
 "^ot:originalLabel": "Babesia bovis BBOVIII007460", 
+"^ot:ottId": 826545, 
+"^ot:ottTaxonName": "Babesia bovis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3035, 
 "@tb:identifier.taxonVariant": 7289, 
@@ -3785,8 +4194,9 @@
 }
 }, 
 "Tl3204229": {
-"^ot:altLabel": "Plasmodium yoelii", 
 "^ot:originalLabel": "Plasmodium yoelii PY17X0909200", 
+"^ot:ottId": 826551, 
+"^ot:ottTaxonName": "Plasmodium yoelii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22669, 
 "@tb:identifier.taxonVariant": 52866, 
@@ -3795,8 +4205,9 @@
 }
 }, 
 "Tl3204230": {
-"^ot:altLabel": "Hammondia hammondi", 
 "^ot:originalLabel": "Hammondia hammondi HHA290030", 
+"^ot:ottId": 595486, 
+"^ot:ottTaxonName": "Hammondia hammondi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 106624, 
 "@tb:identifier.taxonVariant": 185174, 
@@ -3805,8 +4216,9 @@
 }
 }, 
 "Tl3204231": {
-"^ot:altLabel": "Theileria parva", 
 "^ot:originalLabel": "Theileria parva TP020265", 
+"^ot:ottId": 302422, 
+"^ot:ottTaxonName": "Theileria parva", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 28885, 
 "@tb:identifier.taxonVariant": 67360, 
@@ -3815,8 +4227,9 @@
 }
 }, 
 "Tl3204232": {
-"^ot:altLabel": "Toxoplasma gondii", 
 "^ot:originalLabel": "Toxoplasma gondii TGME49290030", 
+"^ot:ottId": 252145, 
+"^ot:ottTaxonName": "Toxoplasma gondii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51473, 
 "@tb:identifier.taxonVariant": 413956, 
@@ -3825,8 +4238,9 @@
 }
 }, 
 "Tl3204233": {
-"^ot:altLabel": "Perkinsus marinus", 
 "^ot:originalLabel": "Perkinsus marinus XP002773712.1", 
+"^ot:ottId": 438694, 
+"^ot:ottTaxonName": "Perkinsus marinus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 58761, 
 "@tb:identifier.taxonVariant": 131659, 
@@ -3835,8 +4249,9 @@
 }
 }, 
 "Tl3204234": {
-"^ot:altLabel": "Babesia bovis", 
 "^ot:originalLabel": "Babesia bovis BBOVII004850", 
+"^ot:ottId": 826545, 
+"^ot:ottTaxonName": "Babesia bovis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3035, 
 "@tb:identifier.taxonVariant": 7289, 
@@ -3845,8 +4260,9 @@
 }
 }, 
 "Tl3204235": {
-"^ot:altLabel": "Plasmodium chabaudi", 
 "^ot:originalLabel": "Plasmodium chabaudi PCHAS1135700", 
+"^ot:ottId": 724404, 
+"^ot:ottTaxonName": "Plasmodium chabaudi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51484, 
 "@tb:identifier.taxonVariant": 121271, 
@@ -3855,8 +4271,9 @@
 }
 }, 
 "Tl3204236": {
-"^ot:altLabel": "Plasmodium yoelii", 
 "^ot:originalLabel": "Plasmodium yoelii PY17X1137700", 
+"^ot:ottId": 826551, 
+"^ot:ottTaxonName": "Plasmodium yoelii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22669, 
 "@tb:identifier.taxonVariant": 52866, 
@@ -3865,8 +4282,9 @@
 }
 }, 
 "Tl3204237": {
-"^ot:altLabel": "Alveolata", 
 "^ot:originalLabel": "Chromera velia Cvel17739", 
+"^ot:ottId": 215573, 
+"^ot:ottTaxonName": "Chromera velia", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 1044, 
 "@tb:identifier.taxonVariant": 113007, 
@@ -3875,8 +4293,9 @@
 }
 }, 
 "Tl3204238": {
-"^ot:altLabel": "Plasmodium vivax", 
 "^ot:originalLabel": "Plasmodium vivax PVP011111900", 
+"^ot:ottId": 352295, 
+"^ot:ottTaxonName": "Plasmodium vivax", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51512, 
 "@tb:identifier.taxonVariant": 121293, 
@@ -3885,8 +4304,9 @@
 }
 }, 
 "Tl3204239": {
-"^ot:altLabel": "Plasmodium knowlesi", 
 "^ot:originalLabel": "Plasmodium knowlesi PKNH1111300", 
+"^ot:ottId": 352298, 
+"^ot:ottTaxonName": "Plasmodium knowlesi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51507, 
 "@tb:identifier.taxonVariant": 121283, 
@@ -3895,8 +4315,9 @@
 }
 }, 
 "Tl3204240": {
-"^ot:altLabel": "Neospora caninum", 
 "^ot:originalLabel": "Neospora caninum NCLIV042390", 
+"^ot:ottId": 936407, 
+"^ot:ottTaxonName": "Neospora caninum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 57563, 
 "@tb:identifier.taxonVariant": 129784, 
@@ -3905,8 +4326,9 @@
 }
 }, 
 "Tl3204241": {
-"^ot:altLabel": "Plasmodium falciparum", 
 "^ot:originalLabel": "Plasmodium falciparum PF3D71360000", 
+"^ot:ottId": 201128, 
+"^ot:ottTaxonName": "Plasmodium falciparum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22665, 
 "@tb:identifier.taxonVariant": 52862, 
@@ -3915,8 +4337,9 @@
 }
 }, 
 "Tl3204242": {
-"^ot:altLabel": "Vitrella brassicaformis Vbra12983", 
 "^ot:originalLabel": "Vitrella brassicaformis Vbra9857", 
+"^ot:ottId": 818325, 
+"^ot:ottTaxonName": "Vitrella brassicaformis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 635326, 
 "@tb:identifier.taxonVariant": 850338, 
@@ -3924,8 +4347,9 @@
 }
 }, 
 "Tl3204243": {
-"^ot:altLabel": "Plasmodium berghei", 
 "^ot:originalLabel": "Plasmodium berghei PBANKA1136200", 
+"^ot:ottId": 724398, 
+"^ot:ottTaxonName": "Plasmodium berghei", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51481, 
 "@tb:identifier.taxonVariant": 121267, 
@@ -3934,8 +4358,9 @@
 }
 }, 
 "Tl3204244": {
-"^ot:altLabel": "Sarcocystis neurona", 
 "^ot:originalLabel": "Sarcocystis neurona SN300101465", 
+"^ot:ottId": 690900, 
+"^ot:ottTaxonName": "Sarcocystis neurona", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 66280, 
 "@tb:identifier.taxonVariant": 141427, 
@@ -3944,8 +4369,9 @@
 }
 }, 
 "Tl3204245": {
-"^ot:altLabel": "Theileria annulata", 
 "^ot:originalLabel": "Theileria annulata TA12215", 
+"^ot:ottId": 302421, 
+"^ot:ottTaxonName": "Theileria annulata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51525, 
 "@tb:identifier.taxonVariant": 121309, 
@@ -3954,8 +4380,9 @@
 }
 }, 
 "Tl3204246": {
-"^ot:altLabel": "Toxoplasma gondii", 
 "^ot:originalLabel": "Toxoplasma gondii TGME49310180", 
+"^ot:ottId": 252145, 
+"^ot:ottTaxonName": "Toxoplasma gondii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51473, 
 "@tb:identifier.taxonVariant": 413956, 
@@ -3964,8 +4391,9 @@
 }
 }, 
 "Tl3204247": {
-"^ot:altLabel": "Plasmodium falciparum", 
 "^ot:originalLabel": "Plasmodium falciparum PF3D70306600", 
+"^ot:ottId": 201128, 
+"^ot:ottTaxonName": "Plasmodium falciparum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22665, 
 "@tb:identifier.taxonVariant": 52862, 
@@ -3974,8 +4402,9 @@
 }
 }, 
 "Tl3204248": {
-"^ot:altLabel": "Neospora caninum", 
 "^ot:originalLabel": "Neospora caninum NCLIV054280", 
+"^ot:ottId": 936407, 
+"^ot:ottTaxonName": "Neospora caninum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 57563, 
 "@tb:identifier.taxonVariant": 129784, 
@@ -3984,8 +4413,9 @@
 }
 }, 
 "Tl3204249": {
-"^ot:altLabel": "Hammondia hammondi", 
 "^ot:originalLabel": "Hammondia hammondi HHA310180", 
+"^ot:ottId": 595486, 
+"^ot:ottTaxonName": "Hammondia hammondi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 106624, 
 "@tb:identifier.taxonVariant": 185174, 
@@ -3994,8 +4424,9 @@
 }
 }, 
 "Tl3204250": {
-"^ot:altLabel": "Plasmodium berghei", 
 "^ot:originalLabel": "Plasmodium berghei PBANKA0405000", 
+"^ot:ottId": 724398, 
+"^ot:ottTaxonName": "Plasmodium berghei", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51481, 
 "@tb:identifier.taxonVariant": 121267, 
@@ -4004,8 +4435,9 @@
 }
 }, 
 "Tl3204251": {
-"^ot:altLabel": "Plasmodium knowlesi", 
 "^ot:originalLabel": "Plasmodium knowlesi PKNH0836100", 
+"^ot:ottId": 352298, 
+"^ot:ottTaxonName": "Plasmodium knowlesi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51507, 
 "@tb:identifier.taxonVariant": 121283, 
@@ -4014,8 +4446,9 @@
 }
 }, 
 "Tl3204252": {
-"^ot:altLabel": "Plasmodium chabaudi", 
 "^ot:originalLabel": "Plasmodium chabaudi PCHAS0405900", 
+"^ot:ottId": 724404, 
+"^ot:ottTaxonName": "Plasmodium chabaudi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51484, 
 "@tb:identifier.taxonVariant": 121271, 
@@ -4024,8 +4457,9 @@
 }
 }, 
 "Tl3204253": {
-"^ot:altLabel": "Theileria parva", 
 "^ot:originalLabel": "Theileria parva TP010071", 
+"^ot:ottId": 302422, 
+"^ot:ottTaxonName": "Theileria parva", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 28885, 
 "@tb:identifier.taxonVariant": 67360, 
@@ -4034,8 +4468,9 @@
 }
 }, 
 "Tl3204254": {
-"^ot:altLabel": "Plasmodium vivax", 
 "^ot:originalLabel": "Plasmodium vivax PVP010833600", 
+"^ot:ottId": 352295, 
+"^ot:ottTaxonName": "Plasmodium vivax", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51512, 
 "@tb:identifier.taxonVariant": 121293, 
@@ -4044,8 +4479,9 @@
 }
 }, 
 "Tl3204255": {
-"^ot:altLabel": "Theileria annulata", 
 "^ot:originalLabel": "Theileria annulata TA19930", 
+"^ot:ottId": 302421, 
+"^ot:ottTaxonName": "Theileria annulata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51525, 
 "@tb:identifier.taxonVariant": 121309, 
@@ -4054,8 +4490,9 @@
 }
 }, 
 "Tl3204256": {
-"^ot:altLabel": "Alveolates", 
 "^ot:originalLabel": "Chromera velia Cvel5942", 
+"^ot:ottId": 215573, 
+"^ot:ottTaxonName": "Chromera velia", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 1044, 
 "@tb:identifier.taxonVariant": 2726, 
@@ -4065,8 +4502,9 @@
 "^skos:prefLabel": "Alveolata"
 }, 
 "Tl3204257": {
-"^ot:altLabel": "Vitrella brassicaformis Vbra12983", 
 "^ot:originalLabel": "Vitrella brassicaformis Vbra8263", 
+"^ot:ottId": 818325, 
+"^ot:ottTaxonName": "Vitrella brassicaformis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 635326, 
 "@tb:identifier.taxonVariant": 850338, 
@@ -4074,8 +4512,9 @@
 }
 }, 
 "Tl3204258": {
-"^ot:altLabel": "Sarcocystis neurona", 
 "^ot:originalLabel": "Sarcocystis neurona SN300501135", 
+"^ot:ottId": 690900, 
+"^ot:ottTaxonName": "Sarcocystis neurona", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 66280, 
 "@tb:identifier.taxonVariant": 141427, 
@@ -4084,8 +4523,9 @@
 }
 }, 
 "Tl3204259": {
-"^ot:altLabel": "Plasmodium yoelii", 
 "^ot:originalLabel": "Plasmodium yoelii PY17X0407200", 
+"^ot:ottId": 826551, 
+"^ot:ottTaxonName": "Plasmodium yoelii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22669, 
 "@tb:identifier.taxonVariant": 52866, 
@@ -4094,8 +4534,9 @@
 }
 }, 
 "Tl3204260": {
-"^ot:altLabel": "Plasmodium falciparum", 
 "^ot:originalLabel": "Plasmodium falciparum PF3D71024300", 
+"^ot:ottId": 201128, 
+"^ot:ottTaxonName": "Plasmodium falciparum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22665, 
 "@tb:identifier.taxonVariant": 52862, 
@@ -4104,8 +4545,9 @@
 }
 }, 
 "Tl3204261": {
-"^ot:altLabel": "Theileria parva", 
 "^ot:originalLabel": "Theileria parva TP010623", 
+"^ot:ottId": 302422, 
+"^ot:ottTaxonName": "Theileria parva", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 28885, 
 "@tb:identifier.taxonVariant": 67360, 
@@ -4114,8 +4556,9 @@
 }
 }, 
 "Tl3204262": {
-"^ot:altLabel": "Theileria annulata", 
 "^ot:originalLabel": "Theileria annulata TA03095", 
+"^ot:ottId": 302421, 
+"^ot:ottTaxonName": "Theileria annulata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51525, 
 "@tb:identifier.taxonVariant": 121309, 
@@ -4124,8 +4567,9 @@
 }
 }, 
 "Tl3204263": {
-"^ot:altLabel": "Neospora caninum", 
 "^ot:originalLabel": "Neospora caninum NCLIV051960", 
+"^ot:ottId": 936407, 
+"^ot:ottTaxonName": "Neospora caninum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 57563, 
 "@tb:identifier.taxonVariant": 129784, 
@@ -4134,8 +4578,9 @@
 }
 }, 
 "Tl3204264": {
-"^ot:altLabel": "Plasmodium vivax", 
 "^ot:originalLabel": "Plasmodium vivax PVP010609500", 
+"^ot:ottId": 352295, 
+"^ot:ottTaxonName": "Plasmodium vivax", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51512, 
 "@tb:identifier.taxonVariant": 121293, 
@@ -4144,8 +4589,9 @@
 }
 }, 
 "Tl3204265": {
-"^ot:altLabel": "Vitrella brassicaformis Vbra12983", 
 "^ot:originalLabel": "Vitrella brassicaformis Vbra2766", 
+"^ot:ottId": 818325, 
+"^ot:ottTaxonName": "Vitrella brassicaformis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 635326, 
 "@tb:identifier.taxonVariant": 850338, 
@@ -4153,8 +4599,9 @@
 }
 }, 
 "Tl3204266": {
-"^ot:altLabel": "Alveolata", 
 "^ot:originalLabel": "Chromera velia Cvel2187", 
+"^ot:ottId": 215573, 
+"^ot:ottTaxonName": "Chromera velia", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 1044, 
 "@tb:identifier.taxonVariant": 113007, 
@@ -4163,8 +4610,9 @@
 }
 }, 
 "Tl3204267": {
-"^ot:altLabel": "Plasmodium berghei", 
 "^ot:originalLabel": "Plasmodium berghei PBANKA0508500", 
+"^ot:ottId": 724398, 
+"^ot:ottTaxonName": "Plasmodium berghei", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51481, 
 "@tb:identifier.taxonVariant": 121267, 
@@ -4173,8 +4621,9 @@
 }
 }, 
 "Tl3204268": {
-"^ot:altLabel": "Hammondia hammondi", 
 "^ot:originalLabel": "Hammondia hammondi HHA214930", 
+"^ot:ottId": 595486, 
+"^ot:ottTaxonName": "Hammondia hammondi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 106624, 
 "@tb:identifier.taxonVariant": 185174, 
@@ -4183,8 +4632,9 @@
 }
 }, 
 "Tl3204269": {
-"^ot:altLabel": "Plasmodium knowlesi", 
 "^ot:originalLabel": "Plasmodium knowlesi PKNH0608800", 
+"^ot:ottId": 352298, 
+"^ot:ottTaxonName": "Plasmodium knowlesi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51507, 
 "@tb:identifier.taxonVariant": 121283, 
@@ -4193,8 +4643,9 @@
 }
 }, 
 "Tl3204270": {
-"^ot:altLabel": "Toxoplasma gondii", 
 "^ot:originalLabel": "Toxoplasma gondii TGME49214930", 
+"^ot:ottId": 252145, 
+"^ot:ottTaxonName": "Toxoplasma gondii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51473, 
 "@tb:identifier.taxonVariant": 413956, 
@@ -4203,7 +4654,6 @@
 }
 }, 
 "Tl3204271": {
-"^ot:altLabel": "Symbiodinium", 
 "^ot:originalLabel": "Symbiodinum minutum symbB.v1.2.025163.t1", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 28331, 
@@ -4213,8 +4663,9 @@
 }
 }, 
 "Tl3204272": {
-"^ot:altLabel": "Plasmodium chabaudi", 
 "^ot:originalLabel": "Plasmodium chabaudi PCHAS0508600", 
+"^ot:ottId": 724404, 
+"^ot:ottTaxonName": "Plasmodium chabaudi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51484, 
 "@tb:identifier.taxonVariant": 121271, 
@@ -4223,8 +4674,9 @@
 }
 }, 
 "Tl3204273": {
-"^ot:altLabel": "Plasmodium yoelii", 
 "^ot:originalLabel": "Plasmodium yoelii PY17X0509600", 
+"^ot:ottId": 826551, 
+"^ot:ottTaxonName": "Plasmodium yoelii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22669, 
 "@tb:identifier.taxonVariant": 52866, 
@@ -4233,8 +4685,9 @@
 }
 }, 
 "Tl3204274": {
-"^ot:altLabel": "Babesia bovis", 
 "^ot:originalLabel": "Babesia bovis BBOVIV003000", 
+"^ot:ottId": 826545, 
+"^ot:ottTaxonName": "Babesia bovis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3035, 
 "@tb:identifier.taxonVariant": 7289, 
@@ -4243,8 +4696,9 @@
 }
 }, 
 "Tl3204275": {
-"^ot:altLabel": "Sarcocystis neurona", 
 "^ot:originalLabel": "Sarcocystis neurona SN303900105", 
+"^ot:ottId": 690900, 
+"^ot:ottTaxonName": "Sarcocystis neurona", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 66280, 
 "@tb:identifier.taxonVariant": 141427, 
@@ -4253,8 +4707,9 @@
 }
 }, 
 "Tl3204276": {
-"^ot:altLabel": "Toxoplasma gondii", 
 "^ot:originalLabel": "Toxoplasma gondii TGME49245450", 
+"^ot:ottId": 252145, 
+"^ot:ottTaxonName": "Toxoplasma gondii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51473, 
 "@tb:identifier.taxonVariant": 413956, 
@@ -4263,8 +4718,9 @@
 }
 }, 
 "Tl3204277": {
-"^ot:altLabel": "Hammondia hammondi", 
 "^ot:originalLabel": "Hammondia hammondi HHA245450", 
+"^ot:ottId": 595486, 
+"^ot:ottTaxonName": "Hammondia hammondi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 106624, 
 "@tb:identifier.taxonVariant": 185174, 
@@ -4273,8 +4729,9 @@
 }
 }, 
 "Tl3204278": {
-"^ot:altLabel": "Plasmodium falciparum", 
 "^ot:originalLabel": "Plasmodium falciparum PF3D70620100", 
+"^ot:ottId": 201128, 
+"^ot:ottTaxonName": "Plasmodium falciparum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22665, 
 "@tb:identifier.taxonVariant": 52862, 
@@ -4283,8 +4740,9 @@
 }
 }, 
 "Tl3204279": {
-"^ot:altLabel": "Theileria parva", 
 "^ot:originalLabel": "Theileria parva TP020722", 
+"^ot:ottId": 302422, 
+"^ot:ottTaxonName": "Theileria parva", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 28885, 
 "@tb:identifier.taxonVariant": 67360, 
@@ -4293,7 +4751,6 @@
 }
 }, 
 "Tl3204280": {
-"^ot:altLabel": "Symbiodinium", 
 "^ot:originalLabel": "Symbiodinum minutum symbB.v1.2.015683.t1", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 28331, 
@@ -4303,8 +4760,9 @@
 }
 }, 
 "Tl3204281": {
-"^ot:altLabel": "Neospora caninum", 
 "^ot:originalLabel": "Neospora caninum NCLIV062710", 
+"^ot:ottId": 936407, 
+"^ot:ottTaxonName": "Neospora caninum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 57563, 
 "@tb:identifier.taxonVariant": 129784, 
@@ -4313,8 +4771,9 @@
 }
 }, 
 "Tl3204282": {
-"^ot:altLabel": "Plasmodium berghei", 
 "^ot:originalLabel": "Plasmodium berghei PBANKA1119300", 
+"^ot:ottId": 724398, 
+"^ot:ottTaxonName": "Plasmodium berghei", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51481, 
 "@tb:identifier.taxonVariant": 121267, 
@@ -4323,8 +4782,9 @@
 }
 }, 
 "Tl3204283": {
-"^ot:altLabel": "Alveolates", 
 "^ot:originalLabel": "Chromera velia Cvel18921", 
+"^ot:ottId": 215573, 
+"^ot:ottTaxonName": "Chromera velia", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 1044, 
 "@tb:identifier.taxonVariant": 2726, 
@@ -4334,8 +4794,9 @@
 "^skos:prefLabel": "Alveolata"
 }, 
 "Tl3204284": {
-"^ot:altLabel": "Babesia bovis", 
 "^ot:originalLabel": "Babesia bovis BBOVI004130", 
+"^ot:ottId": 826545, 
+"^ot:ottTaxonName": "Babesia bovis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3035, 
 "@tb:identifier.taxonVariant": 7289, 
@@ -4344,8 +4805,9 @@
 }
 }, 
 "Tl3204285": {
-"^ot:altLabel": "Plasmodium chabaudi", 
 "^ot:originalLabel": "Plasmodium chabaudi PCHAS1118800", 
+"^ot:ottId": 724404, 
+"^ot:ottTaxonName": "Plasmodium chabaudi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51484, 
 "@tb:identifier.taxonVariant": 121271, 
@@ -4354,8 +4816,9 @@
 }
 }, 
 "Tl3204286": {
-"^ot:altLabel": "Plasmodium vivax", 
 "^ot:originalLabel": "Plasmodium vivax PVP011129400", 
+"^ot:ottId": 352295, 
+"^ot:ottTaxonName": "Plasmodium vivax", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51512, 
 "@tb:identifier.taxonVariant": 121293, 
@@ -4364,8 +4827,9 @@
 }
 }, 
 "Tl3204287": {
-"^ot:altLabel": "Sarcocystis neurona", 
 "^ot:originalLabel": "Sarcocystis neurona SN300400785", 
+"^ot:ottId": 690900, 
+"^ot:ottTaxonName": "Sarcocystis neurona", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 66280, 
 "@tb:identifier.taxonVariant": 141427, 
@@ -4374,8 +4838,9 @@
 }
 }, 
 "Tl3204288": {
-"^ot:altLabel": "Eimeria tenella", 
 "^ot:originalLabel": "Eimeria tenella ETH00006505", 
+"^ot:ottId": 775246, 
+"^ot:ottTaxonName": "Eimeria tenella", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 9775, 
 "@tb:identifier.taxonVariant": 23414, 
@@ -4384,8 +4849,9 @@
 }
 }, 
 "Tl3204289": {
-"^ot:altLabel": "Plasmodium knowlesi", 
 "^ot:originalLabel": "Plasmodium knowlesi PKNH1130200", 
+"^ot:ottId": 352298, 
+"^ot:ottTaxonName": "Plasmodium knowlesi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51507, 
 "@tb:identifier.taxonVariant": 121283, 
@@ -4394,8 +4860,9 @@
 }
 }, 
 "Tl3204290": {
-"^ot:altLabel": "Plasmodium yoelii", 
 "^ot:originalLabel": "Plasmodium yoelii PY17X1120400", 
+"^ot:ottId": 826551, 
+"^ot:ottTaxonName": "Plasmodium yoelii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22669, 
 "@tb:identifier.taxonVariant": 52866, 
@@ -4404,8 +4871,9 @@
 }
 }, 
 "Tl3204291": {
-"^ot:altLabel": "Perkinsus marinus", 
 "^ot:originalLabel": "Perkinsus marinus XP002772062.1", 
+"^ot:ottId": 438694, 
+"^ot:ottTaxonName": "Perkinsus marinus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 58761, 
 "@tb:identifier.taxonVariant": 131659, 
@@ -4414,8 +4882,9 @@
 }
 }, 
 "Tl3204292": {
-"^ot:altLabel": "Vitrella brassicaformis Vbra12983", 
 "^ot:originalLabel": "Vitrella brassicaformis Vbra7465", 
+"^ot:ottId": 818325, 
+"^ot:ottTaxonName": "Vitrella brassicaformis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 635326, 
 "@tb:identifier.taxonVariant": 850338, 
@@ -4423,8 +4892,9 @@
 }
 }, 
 "Tl3204293": {
-"^ot:altLabel": "Theileria annulata", 
 "^ot:originalLabel": "Theileria annulata TA14760", 
+"^ot:ottId": 302421, 
+"^ot:ottTaxonName": "Theileria annulata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51525, 
 "@tb:identifier.taxonVariant": 121309, 
@@ -4433,8 +4903,9 @@
 }
 }, 
 "Tl3204294": {
-"^ot:altLabel": "Plasmodium vivax", 
 "^ot:originalLabel": "Plasmodium vivax PVP010733000", 
+"^ot:ottId": 352295, 
+"^ot:ottTaxonName": "Plasmodium vivax", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51512, 
 "@tb:identifier.taxonVariant": 121293, 
@@ -4443,8 +4914,9 @@
 }
 }, 
 "Tl3204295": {
-"^ot:altLabel": "Hammondia hammondi", 
 "^ot:originalLabel": "Hammondia hammondi HHA208440", 
+"^ot:ottId": 595486, 
+"^ot:ottTaxonName": "Hammondia hammondi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 106624, 
 "@tb:identifier.taxonVariant": 185174, 
@@ -4453,8 +4925,9 @@
 }
 }, 
 "Tl3204296": {
-"^ot:altLabel": "Cryptosporidium muris", 
 "^ot:originalLabel": "Cryptosporidium muris CMU009570", 
+"^ot:ottId": 775243, 
+"^ot:ottTaxonName": "Cryptosporidium muris", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 7619, 
 "@tb:identifier.taxonVariant": 18378, 
@@ -4463,8 +4936,9 @@
 }
 }, 
 "Tl3204297": {
-"^ot:altLabel": "Toxoplasma gondii", 
 "^ot:originalLabel": "Toxoplasma gondii TGME49208440", 
+"^ot:ottId": 252145, 
+"^ot:ottTaxonName": "Toxoplasma gondii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51473, 
 "@tb:identifier.taxonVariant": 413956, 
@@ -4473,8 +4947,9 @@
 }
 }, 
 "Tl3204298": {
-"^ot:altLabel": "Plasmodium yoelii", 
 "^ot:originalLabel": "Plasmodium yoelii PY17X0838500", 
+"^ot:ottId": 826551, 
+"^ot:ottTaxonName": "Plasmodium yoelii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22669, 
 "@tb:identifier.taxonVariant": 52866, 
@@ -4483,8 +4958,9 @@
 }
 }, 
 "Tl3204299": {
-"^ot:altLabel": "Theileria parva", 
 "^ot:originalLabel": "Theileria parva TP010154", 
+"^ot:ottId": 302422, 
+"^ot:ottTaxonName": "Theileria parva", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 28885, 
 "@tb:identifier.taxonVariant": 67360, 
@@ -4493,8 +4969,9 @@
 }
 }, 
 "Tl3204300": {
-"^ot:altLabel": "Plasmodium knowlesi", 
 "^ot:originalLabel": "Plasmodium knowlesi PKNH0733000", 
+"^ot:ottId": 352298, 
+"^ot:ottTaxonName": "Plasmodium knowlesi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51507, 
 "@tb:identifier.taxonVariant": 121283, 
@@ -4503,8 +4980,9 @@
 }
 }, 
 "Tl3204301": {
-"^ot:altLabel": "Plasmodium berghei", 
 "^ot:originalLabel": "Plasmodium berghei PBANKA0835100", 
+"^ot:ottId": 724398, 
+"^ot:ottTaxonName": "Plasmodium berghei", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51481, 
 "@tb:identifier.taxonVariant": 121267, 
@@ -4513,8 +4991,9 @@
 }
 }, 
 "Tl3204302": {
-"^ot:altLabel": "Plasmodium falciparum", 
 "^ot:originalLabel": "Plasmodium falciparum PF3D70934300", 
+"^ot:ottId": 201128, 
+"^ot:ottTaxonName": "Plasmodium falciparum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22665, 
 "@tb:identifier.taxonVariant": 52862, 
@@ -4523,8 +5002,9 @@
 }
 }, 
 "Tl3204303": {
-"^ot:altLabel": "Plasmodium chabaudi", 
 "^ot:originalLabel": "Plasmodium chabaudi PCHAS0835400", 
+"^ot:ottId": 724404, 
+"^ot:ottTaxonName": "Plasmodium chabaudi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51484, 
 "@tb:identifier.taxonVariant": 121271, 
@@ -4533,8 +5013,9 @@
 }
 }, 
 "Tl3204304": {
-"^ot:altLabel": "Theileria annulata", 
 "^ot:originalLabel": "Theileria annulata TA19140", 
+"^ot:ottId": 302421, 
+"^ot:ottTaxonName": "Theileria annulata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51525, 
 "@tb:identifier.taxonVariant": 121309, 
@@ -4543,8 +5024,9 @@
 }
 }, 
 "Tl3204305": {
-"^ot:altLabel": "Sarcocystis neurona", 
 "^ot:originalLabel": "Sarcocystis neurona SN300800530", 
+"^ot:ottId": 690900, 
+"^ot:ottTaxonName": "Sarcocystis neurona", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 66280, 
 "@tb:identifier.taxonVariant": 141427, 
@@ -4553,8 +5035,9 @@
 }
 }, 
 "Tl3204306": {
-"^ot:altLabel": "Neospora caninum", 
 "^ot:originalLabel": "Neospora caninum NCLIV003110", 
+"^ot:ottId": 936407, 
+"^ot:ottTaxonName": "Neospora caninum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 57563, 
 "@tb:identifier.taxonVariant": 129784, 
@@ -4563,8 +5046,9 @@
 }
 }, 
 "Tl3204307": {
-"^ot:altLabel": "Babesia bovis", 
 "^ot:originalLabel": "Babesia bovis BBOVIV001290", 
+"^ot:ottId": 826545, 
+"^ot:ottTaxonName": "Babesia bovis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3035, 
 "@tb:identifier.taxonVariant": 7289, 
@@ -4573,8 +5057,9 @@
 }
 }, 
 "Tl3204308": {
-"^ot:altLabel": "Eimeria tenella", 
 "^ot:originalLabel": "Eimeria tenella ETH00004265", 
+"^ot:ottId": 775246, 
+"^ot:ottTaxonName": "Eimeria tenella", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 9775, 
 "@tb:identifier.taxonVariant": 23414, 
@@ -4583,8 +5068,9 @@
 }
 }, 
 "Tl3204309": {
-"^ot:altLabel": "Sarcocystis neurona", 
 "^ot:originalLabel": "Sarcocystis neurona SN300700620", 
+"^ot:ottId": 690900, 
+"^ot:ottTaxonName": "Sarcocystis neurona", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 66280, 
 "@tb:identifier.taxonVariant": 141427, 
@@ -4593,8 +5079,9 @@
 }
 }, 
 "Tl3204310": {
-"^ot:altLabel": "Neospora caninum", 
 "^ot:originalLabel": "Neospora caninum NCLIV022950", 
+"^ot:ottId": 936407, 
+"^ot:ottTaxonName": "Neospora caninum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 57563, 
 "@tb:identifier.taxonVariant": 129784, 
@@ -4603,8 +5090,9 @@
 }
 }, 
 "Tl3204311": {
-"^ot:altLabel": "Hammondia hammondi", 
 "^ot:originalLabel": "Hammondia hammondi HHA201800", 
+"^ot:ottId": 595486, 
+"^ot:ottTaxonName": "Hammondia hammondi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 106624, 
 "@tb:identifier.taxonVariant": 185174, 
@@ -4613,8 +5101,9 @@
 }
 }, 
 "Tl3204312": {
-"^ot:altLabel": "Theileria parva", 
 "^ot:originalLabel": "Theileria parva TP020442", 
+"^ot:ottId": 302422, 
+"^ot:ottTaxonName": "Theileria parva", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 28885, 
 "@tb:identifier.taxonVariant": 67360, 
@@ -4623,8 +5112,9 @@
 }
 }, 
 "Tl3204313": {
-"^ot:altLabel": "Eimeria tenella", 
 "^ot:originalLabel": "Eimeria tenella ETH00015495", 
+"^ot:ottId": 775246, 
+"^ot:ottTaxonName": "Eimeria tenella", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 9775, 
 "@tb:identifier.taxonVariant": 23414, 
@@ -4633,8 +5123,9 @@
 }
 }, 
 "Tl3204314": {
-"^ot:altLabel": "Theileria annulata", 
 "^ot:originalLabel": "Theileria annulata TA13195", 
+"^ot:ottId": 302421, 
+"^ot:ottTaxonName": "Theileria annulata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51525, 
 "@tb:identifier.taxonVariant": 121309, 
@@ -4643,8 +5134,9 @@
 }
 }, 
 "Tl3204315": {
-"^ot:altLabel": "Vitrella brassicaformis Vbra12983", 
 "^ot:originalLabel": "Vitrella brassicaformis Vbra14980", 
+"^ot:ottId": 818325, 
+"^ot:ottTaxonName": "Vitrella brassicaformis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 635326, 
 "@tb:identifier.taxonVariant": 850338, 
@@ -4652,8 +5144,9 @@
 }
 }, 
 "Tl3204316": {
-"^ot:altLabel": "Alveolates", 
 "^ot:originalLabel": "Chromera velia Cvel5893", 
+"^ot:ottId": 215573, 
+"^ot:ottTaxonName": "Chromera velia", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 1044, 
 "@tb:identifier.taxonVariant": 2726, 
@@ -4663,8 +5156,9 @@
 "^skos:prefLabel": "Alveolata"
 }, 
 "Tl3204317": {
-"^ot:altLabel": "Babesia bovis", 
 "^ot:originalLabel": "Babesia bovis BBOVIII005120", 
+"^ot:ottId": 826545, 
+"^ot:ottTaxonName": "Babesia bovis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3035, 
 "@tb:identifier.taxonVariant": 7289, 
@@ -4673,8 +5167,9 @@
 }
 }, 
 "Tl3204318": {
-"^ot:altLabel": "Toxoplasma gondii", 
 "^ot:originalLabel": "Toxoplasma gondii TGME49201800", 
+"^ot:ottId": 252145, 
+"^ot:ottTaxonName": "Toxoplasma gondii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51473, 
 "@tb:identifier.taxonVariant": 413956, 
@@ -4683,8 +5178,9 @@
 }
 }, 
 "Tl3204319": {
-"^ot:altLabel": "Neospora caninum", 
 "^ot:originalLabel": "Neospora caninum NCLIV047080", 
+"^ot:ottId": 936407, 
+"^ot:ottTaxonName": "Neospora caninum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 57563, 
 "@tb:identifier.taxonVariant": 129784, 
@@ -4693,8 +5189,9 @@
 }
 }, 
 "Tl3204320": {
-"^ot:altLabel": "Plasmodium vivax", 
 "^ot:originalLabel": "Plasmodium vivax PVP011403900", 
+"^ot:ottId": 352295, 
+"^ot:ottTaxonName": "Plasmodium vivax", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51512, 
 "@tb:identifier.taxonVariant": 121293, 
@@ -4703,7 +5200,6 @@
 }
 }, 
 "Tl3204321": {
-"^ot:altLabel": "Symbiodinium", 
 "^ot:originalLabel": "Symbiodinum minutum symbB.v1.2.007801.t1", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 28331, 
@@ -4713,8 +5209,9 @@
 }
 }, 
 "Tl3204322": {
-"^ot:altLabel": "Vitrella brassicaformis Vbra12983", 
 "^ot:originalLabel": "Vitrella brassicaformis Vbra16069", 
+"^ot:ottId": 818325, 
+"^ot:ottTaxonName": "Vitrella brassicaformis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 635326, 
 "@tb:identifier.taxonVariant": 850338, 
@@ -4722,8 +5219,9 @@
 }
 }, 
 "Tl3204323": {
-"^ot:altLabel": "Perkinsus marinus", 
 "^ot:originalLabel": "Perkinsus marinus XP002788045.1", 
+"^ot:ottId": 438694, 
+"^ot:ottTaxonName": "Perkinsus marinus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 58761, 
 "@tb:identifier.taxonVariant": 131659, 
@@ -4732,8 +5230,9 @@
 }
 }, 
 "Tl3204324": {
-"^ot:altLabel": "Plasmodium falciparum", 
 "^ot:originalLabel": "Plasmodium falciparum PF3D71303000", 
+"^ot:ottId": 201128, 
+"^ot:ottTaxonName": "Plasmodium falciparum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22665, 
 "@tb:identifier.taxonVariant": 52862, 
@@ -4742,8 +5241,9 @@
 }
 }, 
 "Tl3204325": {
-"^ot:altLabel": "Toxoplasma gondii", 
 "^ot:originalLabel": "Toxoplasma gondii TGME49225730", 
+"^ot:ottId": 252145, 
+"^ot:ottTaxonName": "Toxoplasma gondii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51473, 
 "@tb:identifier.taxonVariant": 413956, 
@@ -4752,8 +5252,9 @@
 }
 }, 
 "Tl3204326": {
-"^ot:altLabel": "Plasmodium berghei", 
 "^ot:originalLabel": "Plasmodium berghei PBANKA1401500", 
+"^ot:ottId": 724398, 
+"^ot:ottTaxonName": "Plasmodium berghei", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51481, 
 "@tb:identifier.taxonVariant": 121267, 
@@ -4762,8 +5263,9 @@
 }
 }, 
 "Tl3204327": {
-"^ot:altLabel": "Sarcocystis neurona", 
 "^ot:originalLabel": "Sarcocystis neurona SN300102510", 
+"^ot:ottId": 690900, 
+"^ot:ottTaxonName": "Sarcocystis neurona", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 66280, 
 "@tb:identifier.taxonVariant": 141427, 
@@ -4772,8 +5274,9 @@
 }
 }, 
 "Tl3204328": {
-"^ot:altLabel": "Alveolata", 
 "^ot:originalLabel": "Chromera velia Cvel17276", 
+"^ot:ottId": 215573, 
+"^ot:ottTaxonName": "Chromera velia", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 1044, 
 "@tb:identifier.taxonVariant": 113007, 
@@ -4782,8 +5285,9 @@
 }
 }, 
 "Tl3204329": {
-"^ot:altLabel": "Plasmodium chabaudi", 
 "^ot:originalLabel": "Plasmodium chabaudi PCHAS1403400", 
+"^ot:ottId": 724404, 
+"^ot:ottTaxonName": "Plasmodium chabaudi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51484, 
 "@tb:identifier.taxonVariant": 121271, 
@@ -4792,8 +5296,9 @@
 }
 }, 
 "Tl3204330": {
-"^ot:altLabel": "Plasmodium knowlesi", 
 "^ot:originalLabel": "Plasmodium knowlesi PKNH1403200", 
+"^ot:ottId": 352298, 
+"^ot:ottTaxonName": "Plasmodium knowlesi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51507, 
 "@tb:identifier.taxonVariant": 121283, 
@@ -4802,8 +5307,9 @@
 }
 }, 
 "Tl3204331": {
-"^ot:altLabel": "Hammondia hammondi", 
 "^ot:originalLabel": "Hammondia hammondi HHA225730", 
+"^ot:ottId": 595486, 
+"^ot:ottTaxonName": "Hammondia hammondi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 106624, 
 "@tb:identifier.taxonVariant": 185174, 
@@ -4812,8 +5318,9 @@
 }
 }, 
 "Tl3204332": {
-"^ot:altLabel": "Plasmodium yoelii", 
 "^ot:originalLabel": "Plasmodium yoelii PY17X1403100", 
+"^ot:ottId": 826551, 
+"^ot:ottTaxonName": "Plasmodium yoelii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 22669, 
 "@tb:identifier.taxonVariant": 52866, 
@@ -4822,7 +5329,6 @@
 }
 }, 
 "Tl3204333": {
-"^ot:altLabel": "Symbiodinium", 
 "^ot:originalLabel": "Symbiodinum minutum symbB.v1.2.009724.t1", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 28331, 
@@ -4832,8 +5338,9 @@
 }
 }, 
 "Tl3204334": {
-"^ot:altLabel": "Alveolates", 
 "^ot:originalLabel": "Chromera velia Cvel28758", 
+"^ot:ottId": 215573, 
+"^ot:ottTaxonName": "Chromera velia", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 1044, 
 "@tb:identifier.taxonVariant": 2726, 
@@ -4843,8 +5350,9 @@
 "^skos:prefLabel": "Alveolata"
 }, 
 "Tl3204335": {
-"^ot:altLabel": "Neospora caninum", 
 "^ot:originalLabel": "Neospora caninum NCLIV024830", 
+"^ot:ottId": 936407, 
+"^ot:ottTaxonName": "Neospora caninum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 57563, 
 "@tb:identifier.taxonVariant": 129784, 
@@ -4853,8 +5361,9 @@
 }
 }, 
 "Tl3204336": {
-"^ot:altLabel": "Cryptosporidium muris", 
 "^ot:originalLabel": "Cryptosporidium muris CMU001170", 
+"^ot:ottId": 775243, 
+"^ot:ottTaxonName": "Cryptosporidium muris", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 7619, 
 "@tb:identifier.taxonVariant": 18378, 
@@ -4863,8 +5372,9 @@
 }
 }, 
 "Tl3204337": {
-"^ot:altLabel": "Sarcocystis neurona", 
 "^ot:originalLabel": "Sarcocystis neurona SN303300060", 
+"^ot:ottId": 690900, 
+"^ot:ottTaxonName": "Sarcocystis neurona", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 66280, 
 "@tb:identifier.taxonVariant": 141427, 
@@ -4873,8 +5383,9 @@
 }
 }, 
 "Tl3204338": {
-"^ot:altLabel": "Toxoplasma gondii", 
 "^ot:originalLabel": "Toxoplasma gondii TGME49263080", 
+"^ot:ottId": 252145, 
+"^ot:ottTaxonName": "Toxoplasma gondii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51473, 
 "@tb:identifier.taxonVariant": 413956, 
@@ -4883,8 +5394,9 @@
 }
 }, 
 "Tl3204339": {
-"^ot:altLabel": "Vitrella brassicaformis Vbra12983", 
 "^ot:originalLabel": "Vitrella brassicaformis Vbra2058", 
+"^ot:ottId": 818325, 
+"^ot:ottTaxonName": "Vitrella brassicaformis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 635326, 
 "@tb:identifier.taxonVariant": 850338, 
@@ -4892,8 +5404,9 @@
 }
 }, 
 "Tl3204340": {
-"^ot:altLabel": "Eimeria tenella", 
 "^ot:originalLabel": "Eimeria tenella ETH00034330", 
+"^ot:ottId": 775246, 
+"^ot:ottTaxonName": "Eimeria tenella", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 9775, 
 "@tb:identifier.taxonVariant": 23414, 
@@ -4902,8 +5415,9 @@
 }
 }, 
 "Tl3204341": {
-"^ot:altLabel": "Perkinsus marinus", 
 "^ot:originalLabel": "Perkinsus marinus XP002768597.1", 
+"^ot:ottId": 438694, 
+"^ot:ottTaxonName": "Perkinsus marinus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 58761, 
 "@tb:identifier.taxonVariant": 131659, 
@@ -4912,8 +5426,9 @@
 }
 }, 
 "Tl3204342": {
-"^ot:altLabel": "Hammondia hammondi", 
 "^ot:originalLabel": "Hammondia hammondi HHA263080", 
+"^ot:ottId": 595486, 
+"^ot:ottTaxonName": "Hammondia hammondi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 106624, 
 "@tb:identifier.taxonVariant": 185174, 
@@ -4922,8 +5437,9 @@
 }
 }, 
 "Tl3204343": {
-"^ot:altLabel": "Sarcocystis neurona", 
 "^ot:originalLabel": "Sarcocystis neurona SN300500490", 
+"^ot:ottId": 690900, 
+"^ot:ottTaxonName": "Sarcocystis neurona", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 66280, 
 "@tb:identifier.taxonVariant": 141427, 
@@ -4932,8 +5448,9 @@
 }
 }, 
 "Tl3204344": {
-"^ot:altLabel": "Toxoplasma gondii", 
 "^ot:originalLabel": "Toxoplasma gondii TGME49263990", 
+"^ot:ottId": 252145, 
+"^ot:ottTaxonName": "Toxoplasma gondii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 51473, 
 "@tb:identifier.taxonVariant": 413956, 
@@ -4942,8 +5459,9 @@
 }
 }, 
 "Tl3204345": {
-"^ot:altLabel": "Vitrella brassicaformis Vbra12983", 
 "^ot:originalLabel": "Vitrella brassicaformis Vbra8656", 
+"^ot:ottId": 818325, 
+"^ot:ottTaxonName": "Vitrella brassicaformis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 635326, 
 "@tb:identifier.taxonVariant": 850338, 
@@ -4951,8 +5469,9 @@
 }
 }, 
 "Tl3204346": {
-"^ot:altLabel": "Neospora caninum", 
 "^ot:originalLabel": "Neospora caninum NCLIV024070", 
+"^ot:ottId": 936407, 
+"^ot:ottTaxonName": "Neospora caninum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 57563, 
 "@tb:identifier.taxonVariant": 129784, 
@@ -4961,8 +5480,9 @@
 }
 }, 
 "Tl3204347": {
-"^ot:altLabel": "Alveolates", 
 "^ot:originalLabel": "Chromera velia Cvel14255", 
+"^ot:ottId": 215573, 
+"^ot:ottTaxonName": "Chromera velia", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 1044, 
 "@tb:identifier.taxonVariant": 2726, 
@@ -4972,8 +5492,9 @@
 "^skos:prefLabel": "Alveolata"
 }, 
 "Tl3204348": {
-"^ot:altLabel": "Hammondia hammondi", 
 "^ot:originalLabel": "Hammondia hammondi HHA263990", 
+"^ot:ottId": 595486, 
+"^ot:ottTaxonName": "Hammondia hammondi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 106624, 
 "@tb:identifier.taxonVariant": 185174, 
@@ -4982,8 +5503,9 @@
 }
 }, 
 "Tl3204349": {
-"^ot:altLabel": "Vitrella brassicaformis Vbra12983", 
 "^ot:originalLabel": "Vitrella brassicaformis Vbra20034", 
+"^ot:ottId": 818325, 
+"^ot:ottTaxonName": "Vitrella brassicaformis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 635326, 
 "@tb:identifier.taxonVariant": 850338, 
@@ -4991,8 +5513,9 @@
 }
 }, 
 "Tl3204350": {
-"^ot:altLabel": "Hammondia hammondi", 
 "^ot:originalLabel": "Hammondia hammondi HHA270360", 
+"^ot:ottId": 595486, 
+"^ot:ottTaxonName": "Hammondia hammondi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 106624, 
 "@tb:identifier.taxonVariant": 185174, 
@@ -5001,8 +5524,9 @@
 }
 }, 
 "Tl3204351": {
-"^ot:altLabel": "Alveolata", 
 "^ot:originalLabel": "Chromera velia Cvel21389", 
+"^ot:ottId": 215573, 
+"^ot:ottTaxonName": "Chromera velia", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 1044, 
 "@tb:identifier.taxonVariant": 113007, 
@@ -5011,8 +5535,9 @@
 }
 }, 
 "Tl3204352": {
-"^ot:altLabel": "Toxoplasma gondii", 
 "^ot:originalLabel": "Toxoplasma gondii TGME49270360", 
+"^ot:ottId": 252145, 
+"^ot:ottTaxonName": "Toxoplasma gondii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 29259, 
 "@tb:identifier.taxonVariant": 68212, 
@@ -5022,8 +5547,9 @@
 "^skos:prefLabel": "Toxoplasma gondii type III"
 }, 
 "Tl3204353": {
-"^ot:altLabel": "Sarcocystis neurona", 
 "^ot:originalLabel": "Sarcocystis neurona SN302500060", 
+"^ot:ottId": 690900, 
+"^ot:ottTaxonName": "Sarcocystis neurona", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 66280, 
 "@tb:identifier.taxonVariant": 141427, 
@@ -5032,8 +5558,9 @@
 }
 }, 
 "Tl3204354": {
-"^ot:altLabel": "Neospora caninum", 
 "^ot:originalLabel": "Neospora caninum NCLIV036300", 
+"^ot:ottId": 936407, 
+"^ot:ottTaxonName": "Neospora caninum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 57563, 
 "@tb:identifier.taxonVariant": 129784, 
@@ -5082,7 +5609,19 @@
 "Tr112224": {
 "@label": "PAUP 1+", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn17581561", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:ntax.tree": 28, 
 "edgeBySourceId": {
 "Tn17581532": {
@@ -5521,7 +6060,19 @@
 "Tr112225": {
 "@label": "PAUP 1+", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn17581618", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:ntax.tree": 26, 
 "edgeBySourceId": {
 "Tn17581586": {
@@ -5928,7 +6479,19 @@
 "Tr112226": {
 "@label": "PAUP 1+", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn17581668", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:ntax.tree": 24, 
 "edgeBySourceId": {
 "Tn17581637": {
@@ -6029,12 +6592,12 @@
 }, 
 "Tn17581652": {
 "edge4591216": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17581652", 
 "@target": "Tn17581679"
 }, 
 "edge4591218": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17581652", 
 "@target": "Tn17581638"
 }
@@ -6142,7 +6705,7 @@
 "@target": "Tn17581670"
 }, 
 "edge4591276": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17581668", 
 "@target": "Tn17581644"
 }, 
@@ -6303,7 +6866,19 @@
 "Tr112227": {
 "@label": "PAUP 1+", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn17581722", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:ntax.tree": 23, 
 "edgeBySourceId": {
 "Tn17581683": {
@@ -6428,12 +7003,12 @@
 }, 
 "Tn17581708": {
 "edge4591836": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17581708", 
 "@target": "Tn17581724"
 }, 
 "edge4591838": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17581708", 
 "@target": "Tn17581687"
 }
@@ -6512,12 +7087,12 @@
 }, 
 "Tn17581720": {
 "edge4591874": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17581720", 
 "@target": "Tn17581703"
 }, 
 "edge4591876": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17581720", 
 "@target": "Tn17581689"
 }
@@ -6662,7 +7237,19 @@
 "Tr112228": {
 "@label": "PAUP 1+", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn17581736", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:ntax.tree": 26, 
 "edgeBySourceId": {
 "Tn17581726": {
@@ -7069,7 +7656,19 @@
 "Tr112229": {
 "@label": "PAUP 1+", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn17581803", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:ntax.tree": 30, 
 "edgeBySourceId": {
 "Tn17581776": {
@@ -7540,7 +8139,19 @@
 "Tr112230": {
 "@label": "PAUP 1+", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn17581836", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:ntax.tree": 29, 
 "edgeBySourceId": {
 "Tn17581835": {
@@ -7995,7 +8606,19 @@
 "Tr112231": {
 "@label": "PAUP 1+", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn17581899", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:ntax.tree": 15, 
 "edgeBySourceId": {
 "Tn17581890": {
@@ -8024,12 +8647,12 @@
 }, 
 "Tn17581893": {
 "edge4591611": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17581893", 
 "@target": "Tn17581910"
 }, 
 "edge4591613": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17581893", 
 "@target": "Tn17581892"
 }
@@ -8226,7 +8849,19 @@
 "Tr112232": {
 "@label": "PAUP 1+", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn17581934", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:ntax.tree": 19, 
 "edgeBySourceId": {
 "Tn17581920": {
@@ -8521,7 +9156,19 @@
 "Tr112233": {
 "@label": "PAUP 1+", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn17581963", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:ntax.tree": 21, 
 "edgeBySourceId": {
 "Tn17581956": {
@@ -8848,7 +9495,19 @@
 "Tr112234": {
 "@label": "PAUP 1+", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn17582009", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:ntax.tree": 21, 
 "edgeBySourceId": {
 "Tn17581995": {
@@ -9175,7 +9834,19 @@
 "Tr112235": {
 "@label": "PAUP 1+", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn17582049", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:ntax.tree": 19, 
 "edgeBySourceId": {
 "Tn17582034": {
@@ -9470,7 +10141,19 @@
 "Tr112236": {
 "@label": "PAUP 1+", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn17582098", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:ntax.tree": 18, 
 "edgeBySourceId": {
 "Tn17582070": {
@@ -9749,7 +10432,19 @@
 "Tr112237": {
 "@label": "PAUP 1+", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn17582113", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:ntax.tree": 19, 
 "edgeBySourceId": {
 "Tn17582104": {
@@ -10044,7 +10739,19 @@
 "Tr112238": {
 "@label": "PAUP 1+", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn17582171", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:ntax.tree": 18, 
 "edgeBySourceId": {
 "Tn17582140": {
@@ -10323,7 +11030,19 @@
 "Tr112239": {
 "@label": "PAUP 1+", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn17582198", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:ntax.tree": 18, 
 "edgeBySourceId": {
 "Tn17582175": {
@@ -10602,7 +11321,19 @@
 "Tr112240": {
 "@label": "PAUP 1+", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn17582230", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:ntax.tree": 17, 
 "edgeBySourceId": {
 "Tn17582208": {
@@ -10619,12 +11350,12 @@
 }, 
 "Tn17582209": {
 "edge4591485": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17582209", 
 "@target": "Tn17582233"
 }, 
 "edge4591487": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17582209", 
 "@target": "Tn17582217"
 }
@@ -10865,7 +11596,19 @@
 "Tr112241": {
 "@label": "PAUP 1+", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn17582256", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:ntax.tree": 16, 
 "edgeBySourceId": {
 "Tn17582241": {
@@ -10959,12 +11702,12 @@
 "@target": "Tn17582255"
 }, 
 "edge4591191": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17582256", 
 "@target": "Tn17582250"
 }, 
 "edge4591193": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17582256", 
 "@target": "Tn17582247"
 }
@@ -11112,7 +11855,19 @@
 "Tr112242": {
 "@label": "PAUP 1+", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn17582282", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:ntax.tree": 14, 
 "edgeBySourceId": {
 "Tn17582270": {
@@ -11327,7 +12082,19 @@
 "Tr112243": {
 "@label": "PAUP 1+", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn17582308", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:ntax.tree": 16, 
 "edgeBySourceId": {
 "Tn17582296": {
@@ -11457,12 +12224,12 @@
 }, 
 "Tn17582319": {
 "edge4590569": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17582319", 
 "@target": "Tn17582321"
 }, 
 "edge4590571": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17582319", 
 "@target": "Tn17582306"
 }
@@ -11574,7 +12341,19 @@
 "Tr112244": {
 "@label": "PAUP 1+", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn17582352", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:ntax.tree": 18, 
 "edgeBySourceId": {
 "Tn17582328": {
@@ -11853,7 +12632,19 @@
 "Tr112245": {
 "@label": "PAUP 1+", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn17582374", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:ntax.tree": 15, 
 "edgeBySourceId": {
 "Tn17582360": {
@@ -12084,7 +12875,19 @@
 "Tr112246": {
 "@label": "PAUP 1+", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn17582391", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:ntax.tree": 10, 
 "edgeBySourceId": {
 "Tn17582389": {
@@ -12235,7 +13038,19 @@
 "Tr112247": {
 "@label": "PAUP 1+", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn17582418", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:ntax.tree": 14, 
 "edgeBySourceId": {
 "Tn17582407": {
@@ -12450,7 +13265,19 @@
 "Tr112248": {
 "@label": "PAUP 1+", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn17582441", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:ntax.tree": 10, 
 "edgeBySourceId": {
 "Tn17582432": {
@@ -12601,7 +13428,19 @@
 "Tr112249": {
 "@label": "PAUP 1+", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn17582456", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:ntax.tree": 6, 
 "edgeBySourceId": {
 "Tn17582450": {
@@ -12688,7 +13527,19 @@
 "Tr112250": {
 "@label": "PAUP 1+", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn17582467", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:ntax.tree": 6, 
 "edgeBySourceId": {
 "Tn17582461": {
