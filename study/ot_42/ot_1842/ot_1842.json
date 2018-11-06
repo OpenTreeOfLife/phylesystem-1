@@ -58,16 +58,106 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2018-11-06T17:26:32.914Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "Ascomycetes"
 }, 
-"^ot:curatorName": "Matt Girard", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}, 
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": "$1"
+}, 
+"old": {
+"$": "^(\\S*\\s+\\S*).*"
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2018-11-06T17:26:32.914Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Matt Girard"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S21917"
 }, 
+"^ot:focalClade": 346134, 
+"^ot:focalCladeOTTTaxonName": "Leotiomycetes", 
 "^ot:otusElementOrder": [
 "Tls60728"
 ], 
@@ -77,6 +167,7 @@
 }, 
 "^ot:studyPublicationReference": "Nasr S., Bien S., Soudi M.R., Alimadadi N., Fazeli S.A., & Damm U. 2018. Novel Collophorina and Coniochaeta species from Euphorbia polycaulis, an endemic plant in Iran. Mycological Progress, 17(6): 755\u0096771.", 
 "^ot:studyYear": 2018, 
+"^ot:tag": [], 
 "^ot:taxonLinkPrefixes": {
 "@ubio": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:", 
 "@uniprot": "http://purl.uniprot.org/taxonomy/"
@@ -111,8 +202,9 @@
 "^ot:originalLabel": "Collophorina aceris MSU_2389"
 }, 
 "Tl2975201": {
-"^ot:altLabel": "Cadophora luteo-olivacea", 
 "^ot:originalLabel": "Cadophora luteo-olivacea CBS_141_41", 
+"^ot:ottId": 110140, 
+"^ot:ottTaxonName": "Cadophora luteo-olivacea", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 206932, 
 "@tb:identifier.taxonVariant": 816129, 
@@ -158,20 +250,25 @@
 "^ot:originalLabel": "Coniochaeta hoffmannii CBS_245_38"
 }, 
 "Tl2975212": {
-"^ot:originalLabel": "Coniochaeta gigantospora ILLS_60816"
+"^ot:originalLabel": "Coniochaeta gigantospora ILLS_60816", 
+"^ot:ottId": 300792, 
+"^ot:ottTaxonName": "Coniochaeta gigantospora"
 }, 
 "Tl2975213": {
 "^ot:originalLabel": "Coniochaeta luteorubra CBS_131710"
 }, 
 "Tl2975214": {
-"^ot:originalLabel": "Coniochaeta fodinicola CBS_136963"
+"^ot:originalLabel": "Coniochaeta fodinicola CBS_136963", 
+"^ot:ottId": 395727, 
+"^ot:ottTaxonName": "Coniochaeta fodinicola"
 }, 
 "Tl2975215": {
 "^ot:originalLabel": "Coniochaeta euphorbiae IBRC_M_30188"
 }, 
 "Tl2975216": {
-"^ot:altLabel": "Coniochaeta nepalica", 
 "^ot:originalLabel": "Coniochaeta nepalica NBRConiochaeta_30584", 
+"^ot:ottId": 969522, 
+"^ot:ottTaxonName": "Coniochaeta nepalica", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 295106, 
 "@tb:identifier.taxonVariant": 345508, 
@@ -180,11 +277,14 @@
 }
 }, 
 "Tl2975217": {
-"^ot:originalLabel": "Coniochaeta africana CBS_120868"
+"^ot:originalLabel": "Coniochaeta africana CBS_120868", 
+"^ot:ottId": 703260, 
+"^ot:ottTaxonName": "Coniochaeta africana"
 }, 
 "Tl2975218": {
-"^ot:altLabel": "Coniochaeta velutina", 
 "^ot:originalLabel": "Coniochaeta velutina CBS_120874", 
+"^ot:ottId": 440049, 
+"^ot:ottTaxonName": "Coniochaeta velutina", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6834, 
 "@tb:identifier.taxonVariant": 16571, 
@@ -196,7 +296,9 @@
 "^ot:originalLabel": "Coniochaeta iranica IBRC_M_30187"
 }, 
 "Tl2975220": {
-"^ot:originalLabel": "Coniochaeta cymbiformispora NBRConiochaeta_32199"
+"^ot:originalLabel": "Coniochaeta cymbiformispora NBRConiochaeta_32199", 
+"^ot:ottId": 3700135, 
+"^ot:ottTaxonName": "Coniochaeta cymbiformispora"
 }, 
 "Tl2975221": {
 "^ot:altLabel": "Coniochaeta luteoviridis", 
@@ -218,7 +320,9 @@
 "^ot:originalLabel": "Coniochaeta cateniformis CBS_131709"
 }, 
 "Tl2975225": {
-"^ot:originalLabel": "Coniochaeta polymorpha CBS_132722"
+"^ot:originalLabel": "Coniochaeta polymorpha CBS_132722", 
+"^ot:ottId": 1076129, 
+"^ot:ottTaxonName": "Coniochaeta polymorpha"
 }, 
 "Tl2975226": {
 "^ot:originalLabel": "Coniochaeta decumbens CBS_153_42"
@@ -237,11 +341,14 @@
 }
 }, 
 "Tl2975229": {
-"^ot:originalLabel": "Coniochaeta prunicola CBS_121445"
+"^ot:originalLabel": "Coniochaeta prunicola CBS_121445", 
+"^ot:ottId": 703257, 
+"^ot:ottTaxonName": "Coniochaeta prunicola"
 }, 
 "Tl2975230": {
-"^ot:altLabel": "Chaetosphaeria innumera", 
 "^ot:originalLabel": "Chaetosphaeria innumera MR_1175", 
+"^ot:ottId": 250265, 
+"^ot:ottTaxonName": "Chaetosphaeria innumera", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5619, 
 "@tb:identifier.taxonVariant": 13604, 
@@ -250,8 +357,9 @@
 }
 }, 
 "Tl2975231": {
-"^ot:altLabel": "Coniochaeta velutina", 
 "^ot:originalLabel": "Coniochaeta velutina CBS_121444", 
+"^ot:ottId": 440049, 
+"^ot:ottTaxonName": "Coniochaeta velutina", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6834, 
 "@tb:identifier.taxonVariant": 16571, 
@@ -266,8 +374,9 @@
 "^ot:originalLabel": "Coniochaeta taeniospora LTA1"
 }, 
 "Tl2975234": {
-"^ot:altLabel": "Chaetosphaeria pygmaea", 
 "^ot:originalLabel": "Chaetosphaeria pygmaea MR_1365", 
+"^ot:ottId": 773199, 
+"^ot:ottTaxonName": "Chaetosphaeria pygmaea", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5625, 
 "@tb:identifier.taxonVariant": 13616, 
@@ -279,8 +388,9 @@
 "^ot:originalLabel": "Coniochaeta mutabilis CBS_157_44"
 }, 
 "Tl2975236": {
-"^ot:altLabel": "Coniochaeta savoryi", 
 "^ot:originalLabel": "Coniochaeta savoryi CBS_415_73", 
+"^ot:ottId": 103601, 
+"^ot:ottTaxonName": "Coniochaeta savoryi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 271960, 
 "@tb:identifier.taxonVariant": 327213, 
@@ -289,11 +399,14 @@
 }
 }, 
 "Tl2975237": {
-"^ot:originalLabel": "Coniochaeta prunicola CBS_120875"
+"^ot:originalLabel": "Coniochaeta prunicola CBS_120875", 
+"^ot:ottId": 703257, 
+"^ot:ottTaxonName": "Coniochaeta prunicola"
 }, 
 "Tl2975238": {
-"^ot:altLabel": "Coniochaeta hansenii", 
 "^ot:originalLabel": "Coniochaeta hansenii CBS_885_68", 
+"^ot:ottId": 792635, 
+"^ot:ottTaxonName": "Coniochaeta hansenii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 271903, 
 "@tb:identifier.taxonVariant": 327156, 
@@ -315,8 +428,9 @@
 "^ot:originalLabel": "Coniochaeta hoffmannii CBS_140_41"
 }, 
 "Tl2975241": {
-"^ot:altLabel": "Coniochaeta punctulata", 
 "^ot:originalLabel": "Coniochaeta punctulata FMR_7408", 
+"^ot:ottId": 103609, 
+"^ot:ottTaxonName": "Coniochaeta punctulata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 271959, 
 "@tb:identifier.taxonVariant": 327211, 
@@ -325,8 +439,9 @@
 }
 }, 
 "Tl2975242": {
-"^ot:altLabel": "Coniochaeta leucoplaca", 
 "^ot:originalLabel": "Coniochaeta leucoplaca Jong54", 
+"^ot:ottId": 1018241, 
+"^ot:ottTaxonName": "Coniochaeta leucoplaca", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 518222, 
 "@tb:identifier.taxonVariant": 687806, 
@@ -335,8 +450,9 @@
 }
 }, 
 "Tl2975243": {
-"^ot:altLabel": "Coniochaeta ligniaria", 
 "^ot:originalLabel": "Coniochaeta ligniaria EW_95_605", 
+"^ot:ottId": 699524, 
+"^ot:ottTaxonName": "Coniochaeta ligniaria", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6832, 
 "@tb:identifier.taxonVariant": 16567, 
@@ -345,11 +461,14 @@
 }
 }, 
 "Tl2975244": {
-"^ot:originalLabel": "Coniochaeta cymbiformispora NBRC_32199"
+"^ot:originalLabel": "Coniochaeta cymbiformispora NBRC_32199", 
+"^ot:ottId": 3700135, 
+"^ot:ottTaxonName": "Coniochaeta cymbiformispora"
 }, 
 "Tl2975245": {
-"^ot:altLabel": "Coniochaeta ostrea", 
 "^ot:originalLabel": "Coniochaeta ostrea CBS_507_70", 
+"^ot:ottId": 103607, 
+"^ot:ottTaxonName": "Coniochaeta ostrea", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 271958, 
 "@tb:identifier.taxonVariant": 327209, 
@@ -358,8 +477,9 @@
 }
 }, 
 "Tl2975246": {
-"^ot:altLabel": "Coniochaeta ligniaria", 
 "^ot:originalLabel": "Coniochaeta ligniaria F3374", 
+"^ot:ottId": 699524, 
+"^ot:ottTaxonName": "Coniochaeta ligniaria", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6832, 
 "@tb:identifier.taxonVariant": 16567, 
@@ -368,8 +488,9 @@
 }
 }, 
 "Tl2975247": {
-"^ot:altLabel": "Coniochaeta velutina", 
 "^ot:originalLabel": "Coniochaeta velutina Jong_S13", 
+"^ot:ottId": 440049, 
+"^ot:ottTaxonName": "Coniochaeta velutina", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6834, 
 "@tb:identifier.taxonVariant": 16571, 
@@ -378,8 +499,9 @@
 }
 }, 
 "Tl2975248": {
-"^ot:altLabel": "Coniochaeta malacotricha", 
 "^ot:originalLabel": "Coniochaeta malacotricha F2105", 
+"^ot:ottId": 699521, 
+"^ot:ottTaxonName": "Coniochaeta malacotricha", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 37960, 
 "@tb:identifier.taxonVariant": 87846, 
@@ -388,8 +510,9 @@
 }
 }, 
 "Tl2975249": {
-"^ot:altLabel": "Coniochaeta pulveracea", 
 "^ot:originalLabel": "Coniochaeta pulveracea CBS_114628", 
+"^ot:ottId": 699520, 
+"^ot:ottTaxonName": "Coniochaeta pulveracea", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 165807, 
 "@tb:identifier.taxonVariant": 240621, 
@@ -398,8 +521,9 @@
 }
 }, 
 "Tl2975250": {
-"^ot:altLabel": "Coniochaeta ligniaria", 
 "^ot:originalLabel": "Coniochaeta ligniaria CBS_110467", 
+"^ot:ottId": 699524, 
+"^ot:ottTaxonName": "Coniochaeta ligniaria", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6832, 
 "@tb:identifier.taxonVariant": 16567, 
@@ -408,8 +532,9 @@
 }
 }, 
 "Tl2975251": {
-"^ot:altLabel": "Coniochaeta nepalica", 
 "^ot:originalLabel": "Coniochaeta nepalica NBRC_30584", 
+"^ot:ottId": 969522, 
+"^ot:ottTaxonName": "Coniochaeta nepalica", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 295106, 
 "@tb:identifier.taxonVariant": 345508, 
@@ -418,8 +543,9 @@
 }
 }, 
 "Tl2975252": {
-"^ot:altLabel": "Coniochaeta malacotricha", 
 "^ot:originalLabel": "Coniochaeta malacotricha F2107", 
+"^ot:ottId": 699521, 
+"^ot:ottTaxonName": "Coniochaeta malacotricha", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 37960, 
 "@tb:identifier.taxonVariant": 87846, 
@@ -428,8 +554,9 @@
 }
 }, 
 "Tl2975253": {
-"^ot:altLabel": "Coniochaeta pulveracea", 
 "^ot:originalLabel": "Coniochaeta pulveracea EW_92_1", 
+"^ot:ottId": 699520, 
+"^ot:ottTaxonName": "Coniochaeta pulveracea", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 165807, 
 "@tb:identifier.taxonVariant": 240621, 
@@ -438,8 +565,9 @@
 }
 }, 
 "Tl2975254": {
-"^ot:altLabel": "Coniochaeta tetraspora", 
 "^ot:originalLabel": "Coniochaeta tetraspora FMR_8167", 
+"^ot:ottId": 812328, 
+"^ot:ottTaxonName": "Coniochaeta tetraspora", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6833, 
 "@tb:identifier.taxonVariant": 16569, 
@@ -448,8 +576,9 @@
 }
 }, 
 "Tl2975255": {
-"^ot:altLabel": "Coniochaeta ligniaria", 
 "^ot:originalLabel": "Coniochaeta ligniaria 981_126", 
+"^ot:ottId": 699524, 
+"^ot:ottTaxonName": "Coniochaeta ligniaria", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6832, 
 "@tb:identifier.taxonVariant": 16567, 
@@ -458,8 +587,9 @@
 }
 }, 
 "Tl2975256": {
-"^ot:altLabel": "Coniochaeta cruciata", 
 "^ot:originalLabel": "Coniochaeta cruciata FMR_7409", 
+"^ot:ottId": 792634, 
+"^ot:ottTaxonName": "Coniochaeta cruciata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 271902, 
 "@tb:identifier.taxonVariant": 327155, 
@@ -468,8 +598,9 @@
 }
 }, 
 "Tl2975257": {
-"^ot:altLabel": "Coniochaeta ligniaria", 
 "^ot:originalLabel": "Coniochaeta ligniaria 981_105", 
+"^ot:ottId": 699524, 
+"^ot:ottTaxonName": "Coniochaeta ligniaria", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6832, 
 "@tb:identifier.taxonVariant": 16567, 
@@ -478,8 +609,9 @@
 }
 }, 
 "Tl2975258": {
-"^ot:altLabel": "Coniochaeta malacotricha", 
 "^ot:originalLabel": "Coniochaeta malacotricha F2106", 
+"^ot:ottId": 699521, 
+"^ot:ottTaxonName": "Coniochaeta malacotricha", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 37960, 
 "@tb:identifier.taxonVariant": 87846, 
@@ -488,8 +620,9 @@
 }
 }, 
 "Tl2975259": {
-"^ot:altLabel": "Coniochaeta velutina", 
 "^ot:originalLabel": "Coniochaeta velutina CBS_110474", 
+"^ot:ottId": 440049, 
+"^ot:ottTaxonName": "Coniochaeta velutina", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6834, 
 "@tb:identifier.taxonVariant": 16571, 
@@ -498,8 +631,9 @@
 }
 }, 
 "Tl2975260": {
-"^ot:altLabel": "Coniochaeta verticillata", 
 "^ot:originalLabel": "Coniochaeta verticillata CBS_816_71", 
+"^ot:ottId": 103605, 
+"^ot:ottTaxonName": "Coniochaeta verticillata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 271961, 
 "@tb:identifier.taxonVariant": 327216, 
@@ -508,8 +642,9 @@
 }
 }, 
 "Tl2975261": {
-"^ot:altLabel": "Coniochaeta savoryi", 
 "^ot:originalLabel": "Coniochaeta savoryi CBS_725_74", 
+"^ot:ottId": 103601, 
+"^ot:ottTaxonName": "Coniochaeta savoryi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 271960, 
 "@tb:identifier.taxonVariant": 327213, 
@@ -518,8 +653,9 @@
 }
 }, 
 "Tl2975262": {
-"^ot:altLabel": "Coniochaeta pulveracea", 
 "^ot:originalLabel": "Coniochaeta pulveracea 96959", 
+"^ot:ottId": 699520, 
+"^ot:ottTaxonName": "Coniochaeta pulveracea", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 165807, 
 "@tb:identifier.taxonVariant": 240621, 
@@ -528,11 +664,14 @@
 }
 }, 
 "Tl2975263": {
-"^ot:originalLabel": "Coniochaeta velutinosa CBS_117678"
+"^ot:originalLabel": "Coniochaeta velutinosa CBS_117678", 
+"^ot:ottId": 784240, 
+"^ot:ottTaxonName": "Coniochaeta velutinosa"
 }, 
 "Tl2975264": {
-"^ot:altLabel": "Coniochaeta discoidea", 
 "^ot:originalLabel": "Coniochaeta discoidea CBS_158_80", 
+"^ot:ottId": 1064614, 
+"^ot:ottTaxonName": "Coniochaeta discoidea", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 23440, 
 "@tb:identifier.taxonVariant": 86367, 
@@ -541,8 +680,9 @@
 }
 }, 
 "Tl2975265": {
-"^ot:altLabel": "Coniochaeta rhopalochaeta", 
 "^ot:originalLabel": "Coniochaeta rhopalochaeta CBS_109872", 
+"^ot:ottId": 262711, 
+"^ot:ottTaxonName": "Coniochaeta rhopalochaeta", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 542426, 
 "@tb:identifier.taxonVariant": 719312, 
@@ -554,8 +694,9 @@
 "^ot:originalLabel": "Coniochaeta mutabilis CBS_303_62"
 }, 
 "Tl2975267": {
-"^ot:altLabel": "Coniochaeta subcorticalis", 
 "^ot:originalLabel": "Coniochaeta subcorticalis CBS_551_75", 
+"^ot:ottId": 440050, 
+"^ot:ottTaxonName": "Coniochaeta subcorticalis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 165808, 
 "@tb:identifier.taxonVariant": 240622, 
@@ -564,8 +705,9 @@
 }
 }, 
 "Tl2975268": {
-"^ot:altLabel": "Coniochaeta boothii", 
 "^ot:originalLabel": "Coniochaeta boothii CBS_381_74", 
+"^ot:ottId": 522111, 
+"^ot:ottTaxonName": "Coniochaeta boothii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 271933, 
 "@tb:identifier.taxonVariant": 327182, 
@@ -590,7 +732,18 @@
 "Tr108497": {
 "@label": "Fig. 1", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:changesCount", 
+"^ot:curatedType": "Maximum likelihood ", 
+"^ot:inGroupClade": "Tn17068986", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn17068990", 
+"^ot:specifiedRoot": "Tn17068990", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "^tb:ntax.tree": 12, 
 "edgeBySourceId": {
 "Tn17068969": {
@@ -781,7 +934,18 @@
 "Tr108498": {
 "@label": "Fig. 3", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:changesCount", 
+"^ot:curatedType": "Maximum likelihood ", 
+"^ot:inGroupClade": "Tn17068997", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn17069012", 
+"^ot:specifiedRoot": "Tn17069012", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "^tb:ntax.tree": 28, 
 "edgeBySourceId": {
 "Tn17068993": {
@@ -1222,7 +1386,18 @@
 "Tr108499": {
 "@label": "Fig. 2", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:changesCount", 
+"^ot:curatedType": "Maximum likelihood ", 
+"^ot:inGroupClade": "Tn17069084", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn17069108", 
+"^ot:specifiedRoot": "Tn17069108", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "^tb:ntax.tree": 56, 
 "edgeBySourceId": {
 "Tn17069048": {
