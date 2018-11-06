@@ -53,16 +53,106 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2018-11-06T17:02:20.396Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:curatorName": "Matt Girard", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}, 
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": "$1"
+}, 
+"old": {
+"$": "^(\\S*\\s+\\S*).*"
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2018-11-06T17:02:20.396Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Matt Girard"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S11477"
 }, 
+"^ot:focalClade": 70234, 
+"^ot:focalCladeOTTTaxonName": "Talaromyces", 
 "^ot:otusElementOrder": [
 "Tls64307"
 ], 
@@ -72,6 +162,7 @@
 }, 
 "^ot:studyPublicationReference": "Visagie C.M., & Jacobs K. 2012. Three new additions to the genus Talaromyces isolated from Atlantis sandveld fynbos soils. Persoonia , 28: 14-24.", 
 "^ot:studyYear": 2012, 
+"^ot:tag": [], 
 "^ot:taxonLinkPrefixes": {
 "@ubio": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:", 
 "@uniprot": "http://purl.uniprot.org/taxonomy/"
@@ -126,8 +217,9 @@
 }
 }, 
 "Tl3235673": {
-"^ot:altLabel": "Penicillium resedanum", 
 "^ot:originalLabel": "Penicillium resedanum NRRL578_AF033398", 
+"^ot:ottId": 913191, 
+"^ot:ottTaxonName": "Penicillium resedanum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 20925, 
 "@tb:identifier.taxonVariant": 48689, 
@@ -139,8 +231,9 @@
 "^ot:originalLabel": "Thermomyces macrosporus BCC14364_AY753345"
 }, 
 "Tl3235675": {
-"^ot:altLabel": "Penicillium purpurogenum", 
 "^ot:originalLabel": "Penicillium purpurogenum FRR1061_AY373926", 
+"^ot:ottId": 5310739, 
+"^ot:ottTaxonName": "Penicillium purpurogenum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 20921, 
 "@tb:identifier.taxonVariant": 48681, 
@@ -156,8 +249,9 @@
 }
 }, 
 "Tl3235677": {
-"^ot:altLabel": "Penicillium aculeatum", 
 "^ot:originalLabel": "Penicillium aculeatum T_NRRL2129_AF033397", 
+"^ot:ottId": 266166, 
+"^ot:ottTaxonName": "Penicillium aculeatum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 20852, 
 "@tb:identifier.taxonVariant": 48536, 
@@ -212,8 +306,9 @@
 }
 }, 
 "Tl3235684": {
-"^ot:altLabel": "Penicillium diversum", 
 "^ot:originalLabel": "Penicillium diversum NRRL2122_DQ308554", 
+"^ot:ottId": 217529, 
+"^ot:ottTaxonName": "Penicillium diversum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 128607, 
 "@tb:identifier.taxonVariant": 206092, 
@@ -229,8 +324,9 @@
 }
 }, 
 "Tl3235686": {
-"^ot:altLabel": "Penicillium diversum", 
 "^ot:originalLabel": "Penicillium diversum T_NRRL2121_DQ308553", 
+"^ot:ottId": 217529, 
+"^ot:ottTaxonName": "Penicillium diversum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 128607, 
 "@tb:identifier.taxonVariant": 206092, 
@@ -266,7 +362,9 @@
 }
 }, 
 "Tl3235690": {
-"^ot:originalLabel": "Penicillium rubrum T_FRR1714_L14505"
+"^ot:originalLabel": "Penicillium rubrum T_FRR1714_L14505", 
+"^ot:ottId": 5310758, 
+"^ot:ottTaxonName": "Penicillium rubrum"
 }, 
 "Tl3235691": {
 "^ot:altLabel": "Penicillium phialosporum", 
@@ -289,8 +387,9 @@
 "^ot:originalLabel": "Penicillium mineoluteum CV383"
 }, 
 "Tl3235694": {
-"^ot:altLabel": "Penicillium lignorum", 
 "^ot:originalLabel": "Penicillium lignorum T_CBS709_68", 
+"^ot:ottId": 831344, 
+"^ot:ottTaxonName": "Penicillium lignorum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 612811, 
 "@tb:identifier.taxonVariant": 819466, 
@@ -401,7 +500,9 @@
 "^ot:originalLabel": "Thermomyces helicus T_NRRL2106_AF033396"
 }, 
 "Tl3235707": {
-"^ot:originalLabel": "Penicillium rubrum CMV9_FJ160268"
+"^ot:originalLabel": "Penicillium rubrum CMV9_FJ160268", 
+"^ot:ottId": 5310758, 
+"^ot:ottTaxonName": "Penicillium rubrum"
 }, 
 "Tl3235708": {
 "^ot:altLabel": "Penicillium duclauxii", 
@@ -444,7 +545,9 @@
 }
 }, 
 "Tl3235712": {
-"^ot:originalLabel": "Penicillium rubrum CMV284_FJ160269"
+"^ot:originalLabel": "Penicillium rubrum CMV284_FJ160269", 
+"^ot:ottId": 5310758, 
+"^ot:ottTaxonName": "Penicillium rubrum"
 }, 
 "Tl3235713": {
 "^ot:originalLabel": "Penicillium solicola CMV193_FJ160265", 
@@ -561,8 +664,9 @@
 }
 }, 
 "Tl3235725": {
-"^ot:altLabel": "Penicillium purpurogenum", 
 "^ot:originalLabel": "Penicillium purpurogenum KAS3773", 
+"^ot:ottId": 5310739, 
+"^ot:ottTaxonName": "Penicillium purpurogenum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 20921, 
 "@tb:identifier.taxonVariant": 48681, 
@@ -741,8 +845,9 @@
 }
 }, 
 "Tl3235746": {
-"^ot:altLabel": "Penicillium lignorum", 
 "^ot:originalLabel": "Penicillium lignorum CBS709_68_T_HQ156946", 
+"^ot:ottId": 831344, 
+"^ot:ottTaxonName": "Penicillium lignorum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 612811, 
 "@tb:identifier.taxonVariant": 819466, 
@@ -760,8 +865,9 @@
 }
 }, 
 "Tl3235748": {
-"^ot:altLabel": "Penicillium diversum", 
 "^ot:originalLabel": "Penicillium diversum CBS320_48_T_GU385738", 
+"^ot:ottId": 217529, 
+"^ot:ottTaxonName": "Penicillium diversum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 128607, 
 "@tb:identifier.taxonVariant": 206092, 
@@ -770,8 +876,9 @@
 }
 }, 
 "Tl3235749": {
-"^ot:altLabel": "Talaromyces purpureus", 
 "^ot:originalLabel": "Talaromyces purpureus CBS475_71_T_GU385739", 
+"^ot:ottId": 73777, 
+"^ot:ottTaxonName": "Talaromyces purpureus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 28473, 
 "@tb:identifier.taxonVariant": 66400, 
@@ -820,7 +927,18 @@
 "Tr112808": {
 "@label": "PAUP 1", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:undefined", 
+"^ot:curatedType": "Neighbor-joining ", 
+"^ot:inGroupClade": "Tn17647712", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn17647677", 
+"^ot:specifiedRoot": "Tn17647677", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 60, 
 "^tb:quality.tree": "Unrated", 
@@ -828,7 +946,7 @@
 "edgeBySourceId": {
 "Tn17647631": {
 "edge4569183": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17647631", 
 "@target": "Tn17647717"
 }, 
@@ -845,7 +963,7 @@
 "@target": "Tn17647721"
 }, 
 "edge4569103": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17647632", 
 "@target": "Tn17647686"
 }
@@ -876,36 +994,36 @@
 }, 
 "Tn17647642": {
 "edge4569213": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17647642", 
 "@target": "Tn17647689"
 }, 
 "edge4569215": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17647642", 
 "@target": "Tn17647649"
 }
 }, 
 "Tn17647644": {
 "edge4569195": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17647644", 
 "@target": "Tn17647655"
 }, 
 "edge4569197": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17647644", 
 "@target": "Tn17647693"
 }
 }, 
 "Tn17647645": {
 "edge4569107": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17647645", 
 "@target": "Tn17647739"
 }, 
 "edge4569109": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17647645", 
 "@target": "Tn17647697"
 }
@@ -917,7 +1035,7 @@
 "@target": "Tn17647706"
 }, 
 "edge4569181": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17647646", 
 "@target": "Tn17647631"
 }
@@ -936,24 +1054,24 @@
 }, 
 "Tn17647648": {
 "edge4569079": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17647648", 
 "@target": "Tn17647725"
 }, 
 "edge4569081": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17647648", 
 "@target": "Tn17647687"
 }
 }, 
 "Tn17647652": {
 "edge4569167": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17647652", 
 "@target": "Tn17647709"
 }, 
 "edge4569169": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17647652", 
 "@target": "Tn17647635"
 }
@@ -1001,7 +1119,7 @@
 "@target": "Tn17647637"
 }, 
 "edge4569277": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17647662", 
 "@target": "Tn17647726"
 }
@@ -1013,7 +1131,7 @@
 "@target": "Tn17647728"
 }, 
 "edge4569209": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17647665", 
 "@target": "Tn17647700"
 }
@@ -1025,43 +1143,43 @@
 "@target": "Tn17647729"
 }, 
 "edge4569051": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17647666", 
 "@target": "Tn17647641"
 }
 }, 
 "Tn17647667": {
 "edge4569187": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17647667", 
 "@target": "Tn17647675"
 }, 
 "edge4569189": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17647667", 
 "@target": "Tn17647656"
 }
 }, 
 "Tn17647668": {
 "edge4569135": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17647668", 
 "@target": "Tn17647654"
 }, 
 "edge4569137": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17647668", 
 "@target": "Tn17647694"
 }
 }, 
 "Tn17647669": {
 "edge4569269": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17647669", 
 "@target": "Tn17647682"
 }, 
 "edge4569271": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17647669", 
 "@target": "Tn17647671"
 }
@@ -1097,14 +1215,14 @@
 "@target": "Tn17647713"
 }, 
 "edge4569145": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17647674", 
 "@target": "Tn17647650"
 }
 }, 
 "Tn17647676": {
 "edge4569223": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17647676", 
 "@target": "Tn17647744"
 }, 
@@ -1169,7 +1287,7 @@
 "@target": "Tn17647645"
 }, 
 "edge4569111": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17647686", 
 "@target": "Tn17647699"
 }
@@ -1188,12 +1306,12 @@
 }, 
 "Tn17647693": {
 "edge4569199": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17647693", 
 "@target": "Tn17647735"
 }, 
 "edge4569201": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17647693", 
 "@target": "Tn17647710"
 }
@@ -1344,7 +1462,7 @@
 }, 
 "Tn17647721": {
 "edge4569099": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17647721", 
 "@target": "Tn17647688"
 }, 
@@ -1368,24 +1486,24 @@
 }, 
 "Tn17647723": {
 "edge4569257": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17647723", 
 "@target": "Tn17647670"
 }, 
 "edge4569259": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17647723", 
 "@target": "Tn17647660"
 }
 }, 
 "Tn17647726": {
 "edge4569279": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17647726", 
 "@target": "Tn17647737"
 }, 
 "edge4569281": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17647726", 
 "@target": "Tn17647681"
 }
@@ -1397,7 +1515,7 @@
 "@target": "Tn17647630"
 }, 
 "edge4569155": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17647727", 
 "@target": "Tn17647685"
 }
@@ -1440,19 +1558,19 @@
 }, 
 "Tn17647736": {
 "edge4569123": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17647736", 
 "@target": "Tn17647741"
 }, 
 "edge4569125": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17647736", 
 "@target": "Tn17647691"
 }
 }, 
 "Tn17647740": {
 "edge4569249": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17647740", 
 "@target": "Tn17647745"
 }, 
@@ -1469,7 +1587,7 @@
 "@target": "Tn17647643"
 }, 
 "edge4569177": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17647742", 
 "@target": "Tn17647646"
 }
@@ -1488,7 +1606,7 @@
 }, 
 "Tn17647744": {
 "edge4569225": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17647744", 
 "@target": "Tn17647743"
 }, 
@@ -1500,24 +1618,24 @@
 }, 
 "Tn17647745": {
 "edge4569251": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17647745", 
 "@target": "Tn17647707"
 }, 
 "edge4569253": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17647745", 
 "@target": "Tn17647683"
 }
 }, 
 "Tn17647746": {
 "edge4569163": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17647746", 
 "@target": "Tn17647738"
 }, 
 "edge4569165": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17647746", 
 "@target": "Tn17647652"
 }
@@ -1782,22 +1900,33 @@
 "Tr112809": {
 "@label": "PAUP 1", 
 "@xsi:type": "nex:FloatTree", 
-"^ot:rootNodeId": "Tn17647772", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:undefined", 
+"^ot:curatedType": "Neighbor-joining ", 
+"^ot:inGroupClade": "Tn17647749", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
+"^ot:rootNodeId": "Tn17647764", 
+"^ot:specifiedRoot": "Tn17647764", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 17, 
 "^tb:quality.tree": "Unrated", 
 "^tb:type.tree": "Single", 
 "edgeBySourceId": {
 "Tn17647749": {
+"edge4568935": {
+"@length": 0.158601, 
+"@source": "Tn17647749", 
+"@target": "Tn17647761"
+}, 
 "edge4568937": {
 "@length": 0.147841, 
 "@source": "Tn17647749", 
 "@target": "Tn17647766"
-}, 
-"edge4568939": {
-"@length": 0.059068, 
-"@source": "Tn17647749", 
-"@target": "Tn17647764"
 }
 }, 
 "Tn17647751": {
@@ -1814,36 +1943,36 @@
 }, 
 "Tn17647752": {
 "edge4568969": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17647752", 
 "@target": "Tn17647748"
 }, 
 "edge4568971": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17647752", 
 "@target": "Tn17647750"
 }
 }, 
 "Tn17647753": {
 "edge4568991": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17647753", 
 "@target": "Tn17647771"
 }, 
 "edge4568993": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17647753", 
 "@target": "Tn17647762"
 }
 }, 
 "Tn17647754": {
 "edge4568987": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17647754", 
 "@target": "Tn17647777"
 }, 
 "edge4568989": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17647754", 
 "@target": "Tn17647753"
 }
@@ -1861,10 +1990,10 @@
 }
 }, 
 "Tn17647761": {
-"edge4568935": {
-"@length": 0.158601, 
+"edge4568933": {
+"@length": 0.1900605, 
 "@source": "Tn17647761", 
-"@target": "Tn17647749"
+"@target": "Tn17647772"
 }, 
 "edge4568945": {
 "@length": 0.100023, 
@@ -1874,17 +2003,22 @@
 }, 
 "Tn17647763": {
 "edge4568965": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17647763", 
 "@target": "Tn17647759"
 }, 
 "edge4568967": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17647763", 
 "@target": "Tn17647752"
 }
 }, 
 "Tn17647764": {
+"edge4568939": {
+"@length": 0.059068, 
+"@source": "Tn17647764", 
+"@target": "Tn17647749"
+}, 
 "edge4568941": {
 "@length": 0.027512, 
 "@source": "Tn17647764", 
@@ -1915,19 +2049,19 @@
 "@target": "Tn17647775"
 }, 
 "edge4568951": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17647767", 
 "@target": "Tn17647769"
 }
 }, 
 "Tn17647769": {
 "edge4568953": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17647769", 
 "@target": "Tn17647768"
 }, 
 "edge4568955": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17647769", 
 "@target": "Tn17647774"
 }
@@ -1949,21 +2083,16 @@
 "@length": 0.1900605, 
 "@source": "Tn17647772", 
 "@target": "Tn17647776"
-}, 
-"edge4568933": {
-"@length": 0.1900605, 
-"@source": "Tn17647772", 
-"@target": "Tn17647761"
 }
 }, 
 "Tn17647773": {
 "edge4568977": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17647773", 
 "@target": "Tn17647757"
 }, 
 "edge4568979": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17647773", 
 "@target": "Tn17647755"
 }
@@ -2014,7 +2143,9 @@
 "@otu": "Tl3235733"
 }, 
 "Tn17647763": {}, 
-"Tn17647764": {}, 
+"Tn17647764": {
+"@root": true
+}, 
 "Tn17647765": {}, 
 "Tn17647766": {
 "@otu": "Tl3235737"
@@ -2028,9 +2159,7 @@
 "Tn17647771": {
 "@otu": "Tl3235735"
 }, 
-"Tn17647772": {
-"@root": true
-}, 
+"Tn17647772": {}, 
 "Tn17647773": {}, 
 "Tn17647774": {
 "@otu": "Tl3235732"
@@ -2056,7 +2185,18 @@
 "Tr112810": {
 "@label": "PAUP 1", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:undefined", 
+"^ot:curatedType": "Neighbor-joining ", 
+"^ot:inGroupClade": "Tn17647785", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn17647794", 
+"^ot:specifiedRoot": "Tn17647794", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 9, 
 "^tb:quality.tree": "Unrated", 
@@ -2088,12 +2228,12 @@
 }, 
 "Tn17647789": {
 "edge4569033": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17647789", 
 "@target": "Tn17647796"
 }, 
 "edge4569035": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17647789", 
 "@target": "Tn17647787"
 }
