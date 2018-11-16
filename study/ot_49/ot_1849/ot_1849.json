@@ -61,22 +61,115 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2018-11-16T16:11:06.190Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:curatorName": "Matt Girard", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}, 
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": "$1"
+}, 
+"old": {
+"$": "^(\\S*\\s+\\S*).*"
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2018-11-16T16:11:06.190Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Matt Girard"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S22798"
 }, 
+"^ot:focalCladeOTTTaxonName": "", 
 "^ot:otusElementOrder": [
 "Tls64169"
 ], 
 "^ot:studyId": "ot_1849", 
+"^ot:studyPublication": {
+"@href": "https://doi.org/10.1016/j.cbd.2018.09.003"
+}, 
 "^ot:studyPublicationReference": "Park J., Lee J., Kim H., Kim D., Lee M., Han J., Hagiwara A., Hwang U., & Park H. 2018. Genome-wide identification and expression of the entire 90 glutathione S-transferase (GST) subfamily genes in four rotifer Brachionus species and transcriptional modulation in response to endocrine disrupting chemicals. BMC genomics, .", 
 "^ot:studyYear": 2018, 
+"^ot:tag": [], 
 "^ot:taxonLinkPrefixes": {
 "@ubio": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:", 
 "@uniprot": "http://purl.uniprot.org/taxonomy/"
@@ -99,8 +192,9 @@
 "^skos:historyNote": "Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlOTUWriter@1e4a067e $Rev$", 
 "otuById": {
 "Tl3227268": {
-"^ot:altLabel": "Brachionus rotundiformis", 
 "^ot:originalLabel": "Brachionus rotundiformis GST_Z2_translation", 
+"^ot:ottId": 1009399, 
+"^ot:ottTaxonName": "Brachionus rotundiformis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 104921, 
 "@tb:identifier.taxonVariant": 183827, 
@@ -109,8 +203,9 @@
 }
 }, 
 "Tl3227269": {
-"^ot:altLabel": "Drosophila melanogaster", 
 "^ot:originalLabel": "Drosophila melanogaster GST_E8", 
+"^ot:ottId": 505714, 
+"^ot:ottTaxonName": "Drosophila melanogaster", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 9608, 
 "@tb:identifier.taxonVariant": 22965, 
@@ -119,8 +214,9 @@
 }
 }, 
 "Tl3227270": {
-"^ot:altLabel": "Brachionus plicatilis", 
 "^ot:originalLabel": "Brachionus plicatilis GST_S11_translation", 
+"^ot:ottId": 471703, 
+"^ot:ottTaxonName": "Brachionus plicatilis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3864, 
 "@tb:identifier.taxonVariant": 9232, 
@@ -129,8 +225,9 @@
 }
 }, 
 "Tl3227271": {
-"^ot:altLabel": "Homo sapiens", 
 "^ot:originalLabel": "Homo sapiens microsomal_GST_1", 
+"^ot:ottId": 770315, 
+"^ot:ottTaxonName": "Homo sapiens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 13680, 
 "@tb:identifier.taxonVariant": 32274, 
@@ -139,8 +236,9 @@
 }
 }, 
 "Tl3227272": {
-"^ot:altLabel": "Homo sapiens", 
 "^ot:originalLabel": "Homo sapiens GST_A1", 
+"^ot:ottId": 770315, 
+"^ot:ottTaxonName": "Homo sapiens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 13680, 
 "@tb:identifier.taxonVariant": 32274, 
@@ -149,8 +247,9 @@
 }
 }, 
 "Tl3227273": {
-"^ot:altLabel": "Brachionus rotundiformis", 
 "^ot:originalLabel": "Brachionus rotundiformis GST_Z1_translation", 
+"^ot:ottId": 1009399, 
+"^ot:ottTaxonName": "Brachionus rotundiformis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 104921, 
 "@tb:identifier.taxonVariant": 183827, 
@@ -162,8 +261,9 @@
 "^ot:originalLabel": "Brachionus koreanus GST_Z2_translation"
 }, 
 "Tl3227275": {
-"^ot:altLabel": "Homo sapiens", 
 "^ot:originalLabel": "Homo sapiens GST_O1", 
+"^ot:ottId": 770315, 
+"^ot:ottTaxonName": "Homo sapiens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 13680, 
 "@tb:identifier.taxonVariant": 32274, 
@@ -172,8 +272,9 @@
 }
 }, 
 "Tl3227276": {
-"^ot:altLabel": "Drosophila melanogaster", 
 "^ot:originalLabel": "Drosophila melanogaster GST_D7", 
+"^ot:ottId": 505714, 
+"^ot:ottTaxonName": "Drosophila melanogaster", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 9608, 
 "@tb:identifier.taxonVariant": 22965, 
@@ -182,8 +283,9 @@
 }
 }, 
 "Tl3227277": {
-"^ot:altLabel": "Drosophila melanogaster", 
 "^ot:originalLabel": "Drosophila melanogaster GST_E3", 
+"^ot:ottId": 505714, 
+"^ot:ottTaxonName": "Drosophila melanogaster", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 9608, 
 "@tb:identifier.taxonVariant": 22965, 
@@ -192,8 +294,9 @@
 }
 }, 
 "Tl3227278": {
-"^ot:altLabel": "Brachionus calyciflorus", 
 "^ot:originalLabel": "Brachionus calyciflorus GST_A1_translation", 
+"^ot:ottId": 939320, 
+"^ot:ottTaxonName": "Brachionus calyciflorus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 110733, 
 "@tb:identifier.taxonVariant": 189026, 
@@ -205,8 +308,9 @@
 "^ot:originalLabel": "Brachionus koreanus GST_A1_like_1_translation"
 }, 
 "Tl3227280": {
-"^ot:altLabel": "Drosophila melanogaster", 
 "^ot:originalLabel": "Drosophila melanogaster GST_E4", 
+"^ot:ottId": 505714, 
+"^ot:ottTaxonName": "Drosophila melanogaster", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 9608, 
 "@tb:identifier.taxonVariant": 22965, 
@@ -218,8 +322,9 @@
 "^ot:originalLabel": "Brachionus plicaitlis GST_Z3_translation"
 }, 
 "Tl3227282": {
-"^ot:altLabel": "Brachionus calyciflorus", 
 "^ot:originalLabel": "Brachionus calyciflorus GST_Z3_translation", 
+"^ot:ottId": 939320, 
+"^ot:ottTaxonName": "Brachionus calyciflorus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 110733, 
 "@tb:identifier.taxonVariant": 189026, 
@@ -228,8 +333,9 @@
 }
 }, 
 "Tl3227283": {
-"^ot:altLabel": "Brachionus rotundiformis", 
 "^ot:originalLabel": "Brachionus rotundiformis GST_S7_translation", 
+"^ot:ottId": 1009399, 
+"^ot:ottTaxonName": "Brachionus rotundiformis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 104921, 
 "@tb:identifier.taxonVariant": 183827, 
@@ -238,8 +344,9 @@
 }
 }, 
 "Tl3227284": {
-"^ot:altLabel": "Brachionus calyciflorus", 
 "^ot:originalLabel": "Brachionus calyciflorus GST_Z2_translation", 
+"^ot:ottId": 939320, 
+"^ot:ottTaxonName": "Brachionus calyciflorus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 110733, 
 "@tb:identifier.taxonVariant": 189026, 
@@ -254,8 +361,9 @@
 "^ot:originalLabel": "Brachionus koreanus GST_S10_translation"
 }, 
 "Tl3227287": {
-"^ot:altLabel": "Brachionus rotundiformis", 
 "^ot:originalLabel": "Brachionus rotundiformis GST_S11_translation", 
+"^ot:ottId": 1009399, 
+"^ot:ottTaxonName": "Brachionus rotundiformis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 104921, 
 "@tb:identifier.taxonVariant": 183827, 
@@ -264,11 +372,14 @@
 }
 }, 
 "Tl3227288": {
-"^ot:originalLabel": "Perinereis nuntia GST_M_partial"
+"^ot:originalLabel": "Perinereis nuntia GST_M_partial", 
+"^ot:ottId": 313671, 
+"^ot:ottTaxonName": "Perinereis nuntia"
 }, 
 "Tl3227289": {
-"^ot:altLabel": "Brachionus calyciflorus", 
 "^ot:originalLabel": "Brachionus calyciflorus GST_S14_translation", 
+"^ot:ottId": 939320, 
+"^ot:ottTaxonName": "Brachionus calyciflorus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 110733, 
 "@tb:identifier.taxonVariant": 189026, 
@@ -283,8 +394,9 @@
 "^ot:originalLabel": "Brachionus koreanus GST_S1_translation"
 }, 
 "Tl3227292": {
-"^ot:altLabel": "Drosophila melanogaster", 
 "^ot:originalLabel": "Drosophila melanogaster GST_D6", 
+"^ot:ottId": 505714, 
+"^ot:ottTaxonName": "Drosophila melanogaster", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 9608, 
 "@tb:identifier.taxonVariant": 22965, 
@@ -293,8 +405,9 @@
 }
 }, 
 "Tl3227293": {
-"^ot:altLabel": "Brachionus calyciflorus", 
 "^ot:originalLabel": "Brachionus calyciflorus GST_A1_like2_translation", 
+"^ot:ottId": 939320, 
+"^ot:ottTaxonName": "Brachionus calyciflorus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 110733, 
 "@tb:identifier.taxonVariant": 189026, 
@@ -303,8 +416,9 @@
 }
 }, 
 "Tl3227294": {
-"^ot:altLabel": "Brachionus rotundiformis", 
 "^ot:originalLabel": "Brachionus rotundiformis GST_S10_translation", 
+"^ot:ottId": 1009399, 
+"^ot:ottTaxonName": "Brachionus rotundiformis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 104921, 
 "@tb:identifier.taxonVariant": 183827, 
@@ -313,8 +427,9 @@
 }
 }, 
 "Tl3227295": {
-"^ot:altLabel": "Brachionus plicatilis", 
 "^ot:originalLabel": "Brachionus plicatilis GST_S8_translation", 
+"^ot:ottId": 471703, 
+"^ot:ottTaxonName": "Brachionus plicatilis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3864, 
 "@tb:identifier.taxonVariant": 9232, 
@@ -323,8 +438,9 @@
 }
 }, 
 "Tl3227296": {
-"^ot:altLabel": "Brachionus calyciflorus", 
 "^ot:originalLabel": "Brachionus calyciflorus GST_S11_translation", 
+"^ot:ottId": 939320, 
+"^ot:ottTaxonName": "Brachionus calyciflorus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 110733, 
 "@tb:identifier.taxonVariant": 189026, 
@@ -333,8 +449,9 @@
 }
 }, 
 "Tl3227297": {
-"^ot:altLabel": "Brachionus plicatilis", 
 "^ot:originalLabel": "Brachionus plicatilis GST_S4_translation", 
+"^ot:ottId": 471703, 
+"^ot:ottTaxonName": "Brachionus plicatilis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3864, 
 "@tb:identifier.taxonVariant": 9232, 
@@ -343,8 +460,9 @@
 }
 }, 
 "Tl3227298": {
-"^ot:altLabel": "Brachionus plicatilis", 
 "^ot:originalLabel": "Brachionus plicatilis GST_S3_translation", 
+"^ot:ottId": 471703, 
+"^ot:ottTaxonName": "Brachionus plicatilis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3864, 
 "@tb:identifier.taxonVariant": 9232, 
@@ -353,8 +471,9 @@
 }
 }, 
 "Tl3227299": {
-"^ot:altLabel": "Homo sapiens", 
 "^ot:originalLabel": "Homo sapiens GST_2", 
+"^ot:ottId": 770315, 
+"^ot:ottTaxonName": "Homo sapiens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 13680, 
 "@tb:identifier.taxonVariant": 32274, 
@@ -363,8 +482,9 @@
 }
 }, 
 "Tl3227300": {
-"^ot:altLabel": "Homo sapiens", 
 "^ot:originalLabel": "Homo sapiens GST_M5", 
+"^ot:ottId": 770315, 
+"^ot:ottTaxonName": "Homo sapiens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 13680, 
 "@tb:identifier.taxonVariant": 32274, 
@@ -373,8 +493,9 @@
 }
 }, 
 "Tl3227301": {
-"^ot:altLabel": "Brachionus calyciflorus", 
 "^ot:originalLabel": "Brachionus calyciflorus GST_S13_translation", 
+"^ot:ottId": 939320, 
+"^ot:ottTaxonName": "Brachionus calyciflorus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 110733, 
 "@tb:identifier.taxonVariant": 189026, 
@@ -386,8 +507,9 @@
 "^ot:originalLabel": "Brachionus koreanus GST_S9_translation"
 }, 
 "Tl3227303": {
-"^ot:altLabel": "Drosophila melanogaster", 
 "^ot:originalLabel": "Drosophila melanogaster GST_Z2_isoform_B", 
+"^ot:ottId": 505714, 
+"^ot:ottTaxonName": "Drosophila melanogaster", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 9608, 
 "@tb:identifier.taxonVariant": 22965, 
@@ -396,11 +518,14 @@
 }
 }, 
 "Tl3227304": {
-"^ot:originalLabel": "Crassostrea gigas GST"
+"^ot:originalLabel": "Crassostrea gigas GST", 
+"^ot:ottId": 987409, 
+"^ot:ottTaxonName": "Crassostrea gigas"
 }, 
 "Tl3227305": {
-"^ot:altLabel": "Brachionus rotundiformis", 
 "^ot:originalLabel": "Brachionus rotundiformis GST_S4_translation", 
+"^ot:ottId": 1009399, 
+"^ot:ottTaxonName": "Brachionus rotundiformis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 104921, 
 "@tb:identifier.taxonVariant": 183827, 
@@ -409,8 +534,9 @@
 }
 }, 
 "Tl3227306": {
-"^ot:altLabel": "Brachionus calyciflorus", 
 "^ot:originalLabel": "Brachionus calyciflorus GST_S10_translation", 
+"^ot:ottId": 939320, 
+"^ot:ottTaxonName": "Brachionus calyciflorus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 110733, 
 "@tb:identifier.taxonVariant": 189026, 
@@ -419,8 +545,9 @@
 }
 }, 
 "Tl3227307": {
-"^ot:altLabel": "Homo sapiens", 
 "^ot:originalLabel": "Homo sapiens GST_A2", 
+"^ot:ottId": 770315, 
+"^ot:ottTaxonName": "Homo sapiens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 13680, 
 "@tb:identifier.taxonVariant": 32274, 
@@ -429,11 +556,14 @@
 }
 }, 
 "Tl3227308": {
-"^ot:originalLabel": "Perinereis nuntia GST_Z_partial"
+"^ot:originalLabel": "Perinereis nuntia GST_Z_partial", 
+"^ot:ottId": 313671, 
+"^ot:ottTaxonName": "Perinereis nuntia"
 }, 
 "Tl3227309": {
-"^ot:altLabel": "Brachionus calyciflorus", 
 "^ot:originalLabel": "Brachionus calyciflorus GST_S6_translation", 
+"^ot:ottId": 939320, 
+"^ot:ottTaxonName": "Brachionus calyciflorus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 110733, 
 "@tb:identifier.taxonVariant": 189026, 
@@ -442,8 +572,9 @@
 }
 }, 
 "Tl3227310": {
-"^ot:altLabel": "Brachionus calyciflorus", 
 "^ot:originalLabel": "Brachionus calyciflorus GST_S4_translation", 
+"^ot:ottId": 939320, 
+"^ot:ottTaxonName": "Brachionus calyciflorus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 110733, 
 "@tb:identifier.taxonVariant": 189026, 
@@ -452,8 +583,9 @@
 }
 }, 
 "Tl3227311": {
-"^ot:altLabel": "Homo sapiens", 
 "^ot:originalLabel": "Homo sapiens GST_M3", 
+"^ot:ottId": 770315, 
+"^ot:ottTaxonName": "Homo sapiens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 13680, 
 "@tb:identifier.taxonVariant": 32274, 
@@ -462,8 +594,9 @@
 }
 }, 
 "Tl3227312": {
-"^ot:altLabel": "Brachionus calyciflorus", 
 "^ot:originalLabel": "Brachionus calyciflorus GST_S13.2_translation", 
+"^ot:ottId": 939320, 
+"^ot:ottTaxonName": "Brachionus calyciflorus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 110733, 
 "@tb:identifier.taxonVariant": 189026, 
@@ -472,8 +605,9 @@
 }
 }, 
 "Tl3227313": {
-"^ot:altLabel": "Drosophila melanogaster", 
 "^ot:originalLabel": "Drosophila melanogaster GST_D3", 
+"^ot:ottId": 505714, 
+"^ot:ottTaxonName": "Drosophila melanogaster", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 9608, 
 "@tb:identifier.taxonVariant": 22965, 
@@ -482,8 +616,9 @@
 }
 }, 
 "Tl3227314": {
-"^ot:altLabel": "Brachionus rotundiformis", 
 "^ot:originalLabel": "Brachionus rotundiformis GST_S13_translation", 
+"^ot:ottId": 1009399, 
+"^ot:ottTaxonName": "Brachionus rotundiformis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 104921, 
 "@tb:identifier.taxonVariant": 183827, 
@@ -492,8 +627,9 @@
 }
 }, 
 "Tl3227315": {
-"^ot:altLabel": "Drosophila melanogaster", 
 "^ot:originalLabel": "Drosophila melanogaster GST_D5", 
+"^ot:ottId": 505714, 
+"^ot:ottTaxonName": "Drosophila melanogaster", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 9608, 
 "@tb:identifier.taxonVariant": 22965, 
@@ -502,8 +638,9 @@
 }
 }, 
 "Tl3227316": {
-"^ot:altLabel": "Brachionus rotundiformis", 
 "^ot:originalLabel": "Brachionus rotundiformis GST_O1_translation", 
+"^ot:ottId": 1009399, 
+"^ot:ottTaxonName": "Brachionus rotundiformis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 104921, 
 "@tb:identifier.taxonVariant": 183827, 
@@ -515,8 +652,9 @@
 "^ot:originalLabel": "Brachionus koreanus GST_O1_translation"
 }, 
 "Tl3227318": {
-"^ot:altLabel": "Perinereis nuntia", 
 "^ot:originalLabel": "Perinereis nuntia Microsomal_GST_2_partial", 
+"^ot:ottId": 313671, 
+"^ot:ottTaxonName": "Perinereis nuntia", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 440768, 
 "@tb:identifier.taxonVariant": 581297, 
@@ -525,8 +663,9 @@
 }
 }, 
 "Tl3227319": {
-"^ot:altLabel": "Brachionus calyciflorus", 
 "^ot:originalLabel": "Brachionus calyciflorus GST_S1_like_2_translation", 
+"^ot:ottId": 939320, 
+"^ot:ottTaxonName": "Brachionus calyciflorus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 110733, 
 "@tb:identifier.taxonVariant": 189026, 
@@ -535,14 +674,17 @@
 }
 }, 
 "Tl3227320": {
-"^ot:originalLabel": "Perinereis nuntia GST_O_partial"
+"^ot:originalLabel": "Perinereis nuntia GST_O_partial", 
+"^ot:ottId": 313671, 
+"^ot:ottTaxonName": "Perinereis nuntia"
 }, 
 "Tl3227321": {
 "^ot:originalLabel": "Brachionus koreanus GST_S4__translation"
 }, 
 "Tl3227322": {
-"^ot:altLabel": "Brachionus plicatilis", 
 "^ot:originalLabel": "Brachionus plicatilis GST_A2_translation", 
+"^ot:ottId": 471703, 
+"^ot:ottTaxonName": "Brachionus plicatilis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3864, 
 "@tb:identifier.taxonVariant": 9232, 
@@ -551,8 +693,9 @@
 }
 }, 
 "Tl3227323": {
-"^ot:altLabel": "Brachionus rotundiformis", 
 "^ot:originalLabel": "Brachionus rotundiformis GST_Z4_translation", 
+"^ot:ottId": 1009399, 
+"^ot:ottTaxonName": "Brachionus rotundiformis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 104921, 
 "@tb:identifier.taxonVariant": 183827, 
@@ -561,8 +704,9 @@
 }
 }, 
 "Tl3227324": {
-"^ot:altLabel": "Brachionus plicatilis", 
 "^ot:originalLabel": "Brachionus plicatilis GST_S7_translation", 
+"^ot:ottId": 471703, 
+"^ot:ottTaxonName": "Brachionus plicatilis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3864, 
 "@tb:identifier.taxonVariant": 9232, 
@@ -571,8 +715,9 @@
 }
 }, 
 "Tl3227325": {
-"^ot:altLabel": "Brachionus rotundiformis", 
 "^ot:originalLabel": "Brachionus rotundiformis GST_S2_translation", 
+"^ot:ottId": 1009399, 
+"^ot:ottTaxonName": "Brachionus rotundiformis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 104921, 
 "@tb:identifier.taxonVariant": 183827, 
@@ -584,8 +729,9 @@
 "^ot:originalLabel": "Brachionus koreanus GST_S7_like_2_translation"
 }, 
 "Tl3227327": {
-"^ot:altLabel": "Brachionus calyciflorus", 
 "^ot:originalLabel": "Brachionus calyciflorus GST_A1_like1_translation", 
+"^ot:ottId": 939320, 
+"^ot:ottTaxonName": "Brachionus calyciflorus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 110733, 
 "@tb:identifier.taxonVariant": 189026, 
@@ -594,8 +740,9 @@
 }
 }, 
 "Tl3227328": {
-"^ot:altLabel": "Brachionus calyciflorus", 
 "^ot:originalLabel": "Brachionus calyciflorus GST_S5_translation", 
+"^ot:ottId": 939320, 
+"^ot:ottTaxonName": "Brachionus calyciflorus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 110733, 
 "@tb:identifier.taxonVariant": 189026, 
@@ -604,8 +751,9 @@
 }
 }, 
 "Tl3227329": {
-"^ot:altLabel": "Brachionus rotundiformis", 
 "^ot:originalLabel": "Brachionus rotundiformis GST_S8_translation", 
+"^ot:ottId": 1009399, 
+"^ot:ottTaxonName": "Brachionus rotundiformis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 104921, 
 "@tb:identifier.taxonVariant": 183827, 
@@ -617,8 +765,9 @@
 "^ot:originalLabel": "Brachionus koreanus GST_S13_translation"
 }, 
 "Tl3227331": {
-"^ot:altLabel": "Brachionus rotundiformis", 
 "^ot:originalLabel": "Brachionus rotundiformis GST_S9_translation", 
+"^ot:ottId": 1009399, 
+"^ot:ottTaxonName": "Brachionus rotundiformis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 104921, 
 "@tb:identifier.taxonVariant": 183827, 
@@ -627,14 +776,17 @@
 }
 }, 
 "Tl3227332": {
-"^ot:originalLabel": "Perinereis nuntia GST_A_partial"
+"^ot:originalLabel": "Perinereis nuntia GST_A_partial", 
+"^ot:ottId": 313671, 
+"^ot:ottTaxonName": "Perinereis nuntia"
 }, 
 "Tl3227333": {
 "^ot:originalLabel": "Brachionus koreanus GST_S7_like_1_translation"
 }, 
 "Tl3227334": {
-"^ot:altLabel": "Brachionus plicatilis", 
 "^ot:originalLabel": "Brachionus plicatilis GST_Z1_translation", 
+"^ot:ottId": 471703, 
+"^ot:ottTaxonName": "Brachionus plicatilis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3864, 
 "@tb:identifier.taxonVariant": 9232, 
@@ -643,8 +795,9 @@
 }
 }, 
 "Tl3227335": {
-"^ot:altLabel": "Brachionus plicatilis", 
 "^ot:originalLabel": "Brachionus plicatilis GST_S9_translation", 
+"^ot:ottId": 471703, 
+"^ot:ottTaxonName": "Brachionus plicatilis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3864, 
 "@tb:identifier.taxonVariant": 9232, 
@@ -653,8 +806,9 @@
 }
 }, 
 "Tl3227336": {
-"^ot:altLabel": "Brachionus plicatilis", 
 "^ot:originalLabel": "Brachionus plicatilis GST_S1_like3_translation", 
+"^ot:ottId": 471703, 
+"^ot:ottTaxonName": "Brachionus plicatilis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3864, 
 "@tb:identifier.taxonVariant": 9232, 
@@ -663,8 +817,9 @@
 }
 }, 
 "Tl3227337": {
-"^ot:altLabel": "Brachionus calyciflorus", 
 "^ot:originalLabel": "Brachionus calyciflorus GST__A1_like3_translation", 
+"^ot:ottId": 939320, 
+"^ot:ottTaxonName": "Brachionus calyciflorus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 110733, 
 "@tb:identifier.taxonVariant": 189026, 
@@ -673,8 +828,9 @@
 }
 }, 
 "Tl3227338": {
-"^ot:altLabel": "Brachionus rotundiformis", 
 "^ot:originalLabel": "Brachionus rotundiformis GST_A2_translation", 
+"^ot:ottId": 1009399, 
+"^ot:ottTaxonName": "Brachionus rotundiformis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 104921, 
 "@tb:identifier.taxonVariant": 183827, 
@@ -683,8 +839,9 @@
 }
 }, 
 "Tl3227339": {
-"^ot:altLabel": "Brachionus rotundiformis", 
 "^ot:originalLabel": "Brachionus rotundiformis GST_S5_translation", 
+"^ot:ottId": 1009399, 
+"^ot:ottTaxonName": "Brachionus rotundiformis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 104921, 
 "@tb:identifier.taxonVariant": 183827, 
@@ -693,8 +850,9 @@
 }
 }, 
 "Tl3227340": {
-"^ot:altLabel": "Brachionus calyciflorus", 
 "^ot:originalLabel": "Brachionus calyciflorus GST_Z4_translation", 
+"^ot:ottId": 939320, 
+"^ot:ottTaxonName": "Brachionus calyciflorus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 110733, 
 "@tb:identifier.taxonVariant": 189026, 
@@ -703,8 +861,9 @@
 }
 }, 
 "Tl3227341": {
-"^ot:altLabel": "Homo sapiens", 
 "^ot:originalLabel": "Homo sapiens GST_A5", 
+"^ot:ottId": 770315, 
+"^ot:ottTaxonName": "Homo sapiens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 13680, 
 "@tb:identifier.taxonVariant": 32274, 
@@ -716,8 +875,9 @@
 "^ot:originalLabel": "Brachionus koreanus GST_Z1_translation"
 }, 
 "Tl3227343": {
-"^ot:altLabel": "Brachionus calyciflorus", 
 "^ot:originalLabel": "Brachionus calyciflorus GST_S5.2_translation", 
+"^ot:ottId": 939320, 
+"^ot:ottTaxonName": "Brachionus calyciflorus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 110733, 
 "@tb:identifier.taxonVariant": 189026, 
@@ -726,8 +886,9 @@
 }
 }, 
 "Tl3227344": {
-"^ot:altLabel": "Brachionus plicatilis", 
 "^ot:originalLabel": "Brachionus plicatilis GST_S5_translation", 
+"^ot:ottId": 471703, 
+"^ot:ottTaxonName": "Brachionus plicatilis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3864, 
 "@tb:identifier.taxonVariant": 9232, 
@@ -736,8 +897,9 @@
 }
 }, 
 "Tl3227345": {
-"^ot:altLabel": "Drosophila melanogaster", 
 "^ot:originalLabel": "Drosophila melanogaster GST_E12_isoform_B", 
+"^ot:ottId": 505714, 
+"^ot:ottTaxonName": "Drosophila melanogaster", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 9608, 
 "@tb:identifier.taxonVariant": 22965, 
@@ -746,8 +908,9 @@
 }
 }, 
 "Tl3227346": {
-"^ot:altLabel": "Homo sapiens", 
 "^ot:originalLabel": "Homo sapiens GST_T1", 
+"^ot:ottId": 770315, 
+"^ot:ottTaxonName": "Homo sapiens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 13680, 
 "@tb:identifier.taxonVariant": 32274, 
@@ -756,8 +919,9 @@
 }
 }, 
 "Tl3227347": {
-"^ot:altLabel": "Brachionus plicatilis", 
 "^ot:originalLabel": "Brachionus plicatilis GST_S12_translation", 
+"^ot:ottId": 471703, 
+"^ot:ottTaxonName": "Brachionus plicatilis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3864, 
 "@tb:identifier.taxonVariant": 9232, 
@@ -766,8 +930,9 @@
 }
 }, 
 "Tl3227348": {
-"^ot:altLabel": "Brachionus plicatilis", 
 "^ot:originalLabel": "Brachionus plicatilis GST_Z2_translation", 
+"^ot:ottId": 471703, 
+"^ot:ottTaxonName": "Brachionus plicatilis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3864, 
 "@tb:identifier.taxonVariant": 9232, 
@@ -776,8 +941,9 @@
 }
 }, 
 "Tl3227349": {
-"^ot:altLabel": "Brachionus plicatilis", 
 "^ot:originalLabel": "Brachionus plicatilis GST_S2_translation", 
+"^ot:ottId": 471703, 
+"^ot:ottTaxonName": "Brachionus plicatilis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3864, 
 "@tb:identifier.taxonVariant": 9232, 
@@ -786,8 +952,9 @@
 }
 }, 
 "Tl3227350": {
-"^ot:altLabel": "Brachionus calyciflorus", 
 "^ot:originalLabel": "Brachionus calyciflorus GST_S9_predict_SC25_translation", 
+"^ot:ottId": 939320, 
+"^ot:ottTaxonName": "Brachionus calyciflorus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 110733, 
 "@tb:identifier.taxonVariant": 189026, 
@@ -796,8 +963,9 @@
 }
 }, 
 "Tl3227351": {
-"^ot:altLabel": "Brachionus plicatilis", 
 "^ot:originalLabel": "Brachionus plicatilis GST_O2_translation", 
+"^ot:ottId": 471703, 
+"^ot:ottTaxonName": "Brachionus plicatilis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3864, 
 "@tb:identifier.taxonVariant": 9232, 
@@ -806,8 +974,9 @@
 }
 }, 
 "Tl3227352": {
-"^ot:altLabel": "Brachionus plicatilis", 
 "^ot:originalLabel": "Brachionus plicatilis GST_S6_translation", 
+"^ot:ottId": 471703, 
+"^ot:ottTaxonName": "Brachionus plicatilis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3864, 
 "@tb:identifier.taxonVariant": 9232, 
@@ -816,8 +985,9 @@
 }
 }, 
 "Tl3227353": {
-"^ot:altLabel": "Crassostrea gigas", 
 "^ot:originalLabel": "Crassostrea gigas GST_O1", 
+"^ot:ottId": 987409, 
+"^ot:ottTaxonName": "Crassostrea gigas", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 57551, 
 "@tb:identifier.taxonVariant": 129769, 
@@ -826,8 +996,9 @@
 }
 }, 
 "Tl3227354": {
-"^ot:altLabel": "Homo sapiens", 
 "^ot:originalLabel": "Homo sapiens GST_M2", 
+"^ot:ottId": 770315, 
+"^ot:ottTaxonName": "Homo sapiens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 13680, 
 "@tb:identifier.taxonVariant": 32274, 
@@ -836,8 +1007,9 @@
 }
 }, 
 "Tl3227355": {
-"^ot:altLabel": "Brachionus plicatilis", 
 "^ot:originalLabel": "Brachionus plicatilis GST_S10_translation", 
+"^ot:ottId": 471703, 
+"^ot:ottTaxonName": "Brachionus plicatilis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3864, 
 "@tb:identifier.taxonVariant": 9232, 
@@ -846,8 +1018,9 @@
 }
 }, 
 "Tl3227356": {
-"^ot:altLabel": "Brachionus calyciflorus", 
 "^ot:originalLabel": "Brachionus calyciflorus GST_O1_translation", 
+"^ot:ottId": 939320, 
+"^ot:ottTaxonName": "Brachionus calyciflorus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 110733, 
 "@tb:identifier.taxonVariant": 189026, 
@@ -856,8 +1029,9 @@
 }
 }, 
 "Tl3227357": {
-"^ot:altLabel": "Homo sapiens", 
 "^ot:originalLabel": "Homo sapiens GST_A4", 
+"^ot:ottId": 770315, 
+"^ot:ottTaxonName": "Homo sapiens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 13680, 
 "@tb:identifier.taxonVariant": 32274, 
@@ -866,8 +1040,9 @@
 }
 }, 
 "Tl3227358": {
-"^ot:altLabel": "Drosophila melanogaster", 
 "^ot:originalLabel": "Drosophila melanogaster GST_D1_isoform_B", 
+"^ot:ottId": 505714, 
+"^ot:ottTaxonName": "Drosophila melanogaster", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 9608, 
 "@tb:identifier.taxonVariant": 22965, 
@@ -876,8 +1051,9 @@
 }
 }, 
 "Tl3227359": {
-"^ot:altLabel": "Drosophila melanogaster", 
 "^ot:originalLabel": "Drosophila melanogaster GST_E9", 
+"^ot:ottId": 505714, 
+"^ot:ottTaxonName": "Drosophila melanogaster", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 9608, 
 "@tb:identifier.taxonVariant": 22965, 
@@ -886,8 +1062,9 @@
 }
 }, 
 "Tl3227360": {
-"^ot:altLabel": "Drosophila melanogaster", 
 "^ot:originalLabel": "Drosophila melanogaster GST_D1_isoform_A", 
+"^ot:ottId": 505714, 
+"^ot:ottTaxonName": "Drosophila melanogaster", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 9608, 
 "@tb:identifier.taxonVariant": 22965, 
@@ -896,8 +1073,9 @@
 }
 }, 
 "Tl3227361": {
-"^ot:altLabel": "Perinereis nuntia", 
 "^ot:originalLabel": "Perinereis nuntia Microsomal_GST_1_partial", 
+"^ot:ottId": 313671, 
+"^ot:ottTaxonName": "Perinereis nuntia", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 440768, 
 "@tb:identifier.taxonVariant": 581297, 
@@ -906,8 +1084,9 @@
 }
 }, 
 "Tl3227362": {
-"^ot:altLabel": "Brachionus calyciflorus", 
 "^ot:originalLabel": "Brachionus calyciflorus GST_O2_translation", 
+"^ot:ottId": 939320, 
+"^ot:ottTaxonName": "Brachionus calyciflorus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 110733, 
 "@tb:identifier.taxonVariant": 189026, 
@@ -916,8 +1095,9 @@
 }
 }, 
 "Tl3227363": {
-"^ot:altLabel": "Brachionus plicatilis", 
 "^ot:originalLabel": "Brachionus plicatilis GST_S14_translation", 
+"^ot:ottId": 471703, 
+"^ot:ottTaxonName": "Brachionus plicatilis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3864, 
 "@tb:identifier.taxonVariant": 9232, 
@@ -926,8 +1106,9 @@
 }
 }, 
 "Tl3227364": {
-"^ot:altLabel": "Brachionus rotundiformis", 
 "^ot:originalLabel": "Brachionus rotundiformis GST_A1_translation", 
+"^ot:ottId": 1009399, 
+"^ot:ottTaxonName": "Brachionus rotundiformis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 104921, 
 "@tb:identifier.taxonVariant": 183827, 
@@ -936,8 +1117,9 @@
 }
 }, 
 "Tl3227365": {
-"^ot:altLabel": "Homo sapiens", 
 "^ot:originalLabel": "Homo sapiens GST_O2", 
+"^ot:ottId": 770315, 
+"^ot:ottTaxonName": "Homo sapiens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 13680, 
 "@tb:identifier.taxonVariant": 32274, 
@@ -946,8 +1128,9 @@
 }
 }, 
 "Tl3227366": {
-"^ot:altLabel": "Brachionus plicatilis", 
 "^ot:originalLabel": "Brachionus plicatilis GST_A1_translation", 
+"^ot:ottId": 471703, 
+"^ot:ottTaxonName": "Brachionus plicatilis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3864, 
 "@tb:identifier.taxonVariant": 9232, 
@@ -956,8 +1139,9 @@
 }
 }, 
 "Tl3227367": {
-"^ot:altLabel": "Brachionus rotundiformis", 
 "^ot:originalLabel": "Brachionus rotundiformis GST_S1_translation", 
+"^ot:ottId": 1009399, 
+"^ot:ottTaxonName": "Brachionus rotundiformis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 104921, 
 "@tb:identifier.taxonVariant": 183827, 
@@ -969,8 +1153,9 @@
 "^ot:originalLabel": "Brachionus koreanus GST_O2_translation"
 }, 
 "Tl3227369": {
-"^ot:altLabel": "Brachionus calyciflorus", 
 "^ot:originalLabel": "Brachionus calyciflorus GST_S8_like.SC41_translation", 
+"^ot:ottId": 939320, 
+"^ot:ottTaxonName": "Brachionus calyciflorus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 110733, 
 "@tb:identifier.taxonVariant": 189026, 
@@ -979,8 +1164,9 @@
 }
 }, 
 "Tl3227370": {
-"^ot:altLabel": "Brachionus calyciflorus", 
 "^ot:originalLabel": "Brachionus calyciflorus GST_S12_translation", 
+"^ot:ottId": 939320, 
+"^ot:ottTaxonName": "Brachionus calyciflorus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 110733, 
 "@tb:identifier.taxonVariant": 189026, 
@@ -992,8 +1178,9 @@
 "^ot:originalLabel": "Brachionus koreanus GST_Z3_translation"
 }, 
 "Tl3227372": {
-"^ot:altLabel": "Brachionus rotundiformis", 
 "^ot:originalLabel": "Brachionus rotundiformis GST_S3_translation", 
+"^ot:ottId": 1009399, 
+"^ot:ottTaxonName": "Brachionus rotundiformis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 104921, 
 "@tb:identifier.taxonVariant": 183827, 
@@ -1002,8 +1189,9 @@
 }
 }, 
 "Tl3227373": {
-"^ot:altLabel": "Brachionus rotundiformis", 
 "^ot:originalLabel": "Brachionus rotundiformis GST_O2_translation", 
+"^ot:ottId": 1009399, 
+"^ot:ottTaxonName": "Brachionus rotundiformis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 104921, 
 "@tb:identifier.taxonVariant": 183827, 
@@ -1012,8 +1200,9 @@
 }
 }, 
 "Tl3227374": {
-"^ot:altLabel": "Brachionus calyciflorus", 
 "^ot:originalLabel": "Brachionus calyciflorus GST_S1_translation", 
+"^ot:ottId": 939320, 
+"^ot:ottTaxonName": "Brachionus calyciflorus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 110733, 
 "@tb:identifier.taxonVariant": 189026, 
@@ -1022,8 +1211,9 @@
 }
 }, 
 "Tl3227375": {
-"^ot:altLabel": "Brachionus plicatilis", 
 "^ot:originalLabel": "Brachionus plicatilis GST_S1_like2_translation", 
+"^ot:ottId": 471703, 
+"^ot:ottTaxonName": "Brachionus plicatilis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3864, 
 "@tb:identifier.taxonVariant": 9232, 
@@ -1032,8 +1222,9 @@
 }
 }, 
 "Tl3227376": {
-"^ot:altLabel": "Drosophila melanogaster", 
 "^ot:originalLabel": "Drosophila melanogaster GST_Z1", 
+"^ot:ottId": 505714, 
+"^ot:ottTaxonName": "Drosophila melanogaster", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 9608, 
 "@tb:identifier.taxonVariant": 22965, 
@@ -1042,8 +1233,9 @@
 }
 }, 
 "Tl3227377": {
-"^ot:altLabel": "Homo sapiens", 
 "^ot:originalLabel": "Homo sapiens GST_P1", 
+"^ot:ottId": 770315, 
+"^ot:ottTaxonName": "Homo sapiens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 13680, 
 "@tb:identifier.taxonVariant": 32274, 
@@ -1052,8 +1244,9 @@
 }
 }, 
 "Tl3227378": {
-"^ot:altLabel": "Brachionus rotundiformis", 
 "^ot:originalLabel": "Brachionus rotundiformis GST_S14_translation", 
+"^ot:ottId": 1009399, 
+"^ot:ottTaxonName": "Brachionus rotundiformis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 104921, 
 "@tb:identifier.taxonVariant": 183827, 
@@ -1062,8 +1255,9 @@
 }
 }, 
 "Tl3227379": {
-"^ot:altLabel": "Homo sapiens", 
 "^ot:originalLabel": "Homo sapiens GST_M4", 
+"^ot:ottId": 770315, 
+"^ot:ottTaxonName": "Homo sapiens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 13680, 
 "@tb:identifier.taxonVariant": 32274, 
@@ -1075,8 +1269,9 @@
 "^ot:originalLabel": "Brachionus koreanus GST_S5_translation"
 }, 
 "Tl3227381": {
-"^ot:altLabel": "Homo sapiens", 
 "^ot:originalLabel": "Homo sapiens GST_T2", 
+"^ot:ottId": 770315, 
+"^ot:ottTaxonName": "Homo sapiens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 13680, 
 "@tb:identifier.taxonVariant": 32274, 
@@ -1088,8 +1283,9 @@
 "^ot:originalLabel": "Brachionus koreanus GST_S6__translation"
 }, 
 "Tl3227383": {
-"^ot:altLabel": "Homo sapiens", 
 "^ot:originalLabel": "Homo sapiens GST_A3", 
+"^ot:ottId": 770315, 
+"^ot:ottTaxonName": "Homo sapiens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 13680, 
 "@tb:identifier.taxonVariant": 32274, 
@@ -1098,8 +1294,9 @@
 }
 }, 
 "Tl3227384": {
-"^ot:altLabel": "Brachionus plicatilis", 
 "^ot:originalLabel": "Brachionus plicatilis GST_O1_translation", 
+"^ot:ottId": 471703, 
+"^ot:ottTaxonName": "Brachionus plicatilis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3864, 
 "@tb:identifier.taxonVariant": 9232, 
@@ -1108,11 +1305,14 @@
 }
 }, 
 "Tl3227385": {
-"^ot:originalLabel": "Homo sapiens GST_S_hematopoietic_prostaglandin_D_synthase"
+"^ot:originalLabel": "Homo sapiens GST_S_hematopoietic_prostaglandin_D_synthase", 
+"^ot:ottId": 770315, 
+"^ot:ottTaxonName": "Homo sapiens"
 }, 
 "Tl3227386": {
-"^ot:altLabel": "Brachionus plicatilis", 
 "^ot:originalLabel": "Brachionus plicatilis GST_Z4_translation", 
+"^ot:ottId": 471703, 
+"^ot:ottTaxonName": "Brachionus plicatilis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3864, 
 "@tb:identifier.taxonVariant": 9232, 
@@ -1121,8 +1321,9 @@
 }
 }, 
 "Tl3227387": {
-"^ot:altLabel": "Brachionus plicatilis", 
 "^ot:originalLabel": "Brachionus plicatilis GST_S1_translation", 
+"^ot:ottId": 471703, 
+"^ot:ottTaxonName": "Brachionus plicatilis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3864, 
 "@tb:identifier.taxonVariant": 9232, 
@@ -1134,8 +1335,9 @@
 "^ot:originalLabel": "Brachionus koreanus GST_Z4_translation"
 }, 
 "Tl3227389": {
-"^ot:altLabel": "Brachionus calyciflorus", 
 "^ot:originalLabel": "Brachionus calyciflorus _GST_S1_like_3_translation", 
+"^ot:ottId": 939320, 
+"^ot:ottTaxonName": "Brachionus calyciflorus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 110733, 
 "@tb:identifier.taxonVariant": 189026, 
@@ -1147,8 +1349,9 @@
 "^ot:originalLabel": "Brachionus koreanus GST_S11_translation"
 }, 
 "Tl3227391": {
-"^ot:altLabel": "Brachionus plicatilis", 
 "^ot:originalLabel": "Brachionus plicatilis GST_S13_translation", 
+"^ot:ottId": 471703, 
+"^ot:ottTaxonName": "Brachionus plicatilis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3864, 
 "@tb:identifier.taxonVariant": 9232, 
@@ -1157,11 +1360,14 @@
 }
 }, 
 "Tl3227392": {
-"^ot:originalLabel": "Drosophila melanogaster GST_O"
+"^ot:originalLabel": "Drosophila melanogaster GST_O", 
+"^ot:ottId": 505714, 
+"^ot:ottTaxonName": "Drosophila melanogaster"
 }, 
 "Tl3227393": {
-"^ot:altLabel": "Homo sapiens", 
 "^ot:originalLabel": "Homo sapiens GST_M1", 
+"^ot:ottId": 770315, 
+"^ot:ottTaxonName": "Homo sapiens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 13680, 
 "@tb:identifier.taxonVariant": 32274, 
@@ -1170,8 +1376,9 @@
 }
 }, 
 "Tl3227394": {
-"^ot:altLabel": "Drosophila melanogaster", 
 "^ot:originalLabel": "Drosophila melanogaster GST_D8", 
+"^ot:ottId": 505714, 
+"^ot:ottTaxonName": "Drosophila melanogaster", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 9608, 
 "@tb:identifier.taxonVariant": 22965, 
@@ -1180,7 +1387,9 @@
 }
 }, 
 "Tl3227395": {
-"^ot:originalLabel": "Perinereis nuntia GST_pi_partial"
+"^ot:originalLabel": "Perinereis nuntia GST_pi_partial", 
+"^ot:ottId": 313671, 
+"^ot:ottTaxonName": "Perinereis nuntia"
 }, 
 "Tl3227396": {
 "^ot:originalLabel": "Brachionus koreanus GST_S12_translation"
@@ -1189,8 +1398,9 @@
 "^ot:originalLabel": "Brachionus koreanus GST_A1_like_2_translation"
 }, 
 "Tl3227398": {
-"^ot:altLabel": "Crassostrea gigas", 
 "^ot:originalLabel": "Crassostrea gigas GST_T1", 
+"^ot:ottId": 987409, 
+"^ot:ottTaxonName": "Crassostrea gigas", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 57551, 
 "@tb:identifier.taxonVariant": 129769, 
@@ -1219,7 +1429,18 @@
 "Tr112610": {
 "@label": "Imported tree 1", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:changesCount", 
+"^ot:curatedType": "Maximum likelihood ", 
+"^ot:inGroupClade": "Tn17627859", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn17628007", 
+"^ot:specifiedRoot": "Tn17628007", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 133, 
 "^tb:quality.tree": "Unrated", 
@@ -1443,7 +1664,7 @@
 }, 
 "Tn17627870": {
 "edge1281": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17627870", 
 "@target": "Tn17628075"
 }, 
@@ -1503,7 +1724,7 @@
 }, 
 "Tn17627876": {
 "edge1249": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17627876", 
 "@target": "Tn17627941"
 }, 
@@ -1767,12 +1988,12 @@
 }, 
 "Tn17627920": {
 "edge1519": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17627920", 
 "@target": "Tn17627858"
 }, 
 "edge1521": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17627920", 
 "@target": "Tn17628064"
 }
@@ -1923,7 +2144,7 @@
 }, 
 "Tn17627955": {
 "edge1709": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17627955", 
 "@target": "Tn17628057"
 }, 
@@ -2067,7 +2288,7 @@
 }, 
 "Tn17627978": {
 "edge1305": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17627978", 
 "@target": "Tn17627956"
 }, 
@@ -2317,7 +2538,7 @@
 "@target": "Tn17628029"
 }, 
 "edge1417": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17628014", 
 "@target": "Tn17627950"
 }
@@ -2348,7 +2569,7 @@
 }, 
 "Tn17628020": {
 "edge1719": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17628020", 
 "@target": "Tn17627898"
 }, 
@@ -2360,12 +2581,12 @@
 }, 
 "Tn17628021": {
 "edge1491": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17628021", 
 "@target": "Tn17628024"
 }, 
 "edge1493": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17628021", 
 "@target": "Tn17627901"
 }
@@ -2413,7 +2634,7 @@
 "@target": "Tn17627924"
 }, 
 "edge1415": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17628029", 
 "@target": "Tn17627952"
 }
@@ -2449,7 +2670,7 @@
 "@target": "Tn17627879"
 }, 
 "edge1453": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17628036", 
 "@target": "Tn17627979"
 }
@@ -2605,7 +2826,7 @@
 "@target": "Tn17627842"
 }, 
 "edge1717": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17628060", 
 "@target": "Tn17628020"
 }
@@ -2696,7 +2917,7 @@
 }, 
 "Tn17628072": {
 "edge1367": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17628072", 
 "@target": "Tn17627922"
 }, 
