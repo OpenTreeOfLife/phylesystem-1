@@ -49,22 +49,116 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2018-11-16T19:42:57.391Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:curatorName": "Matt Girard", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}, 
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": "$1"
+}, 
+"old": {
+"$": "^(\\S*\\s+\\S*).*"
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2018-11-16T19:42:57.391Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"Matt Girard"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S22977"
 }, 
+"^ot:focalClade": 349175, 
+"^ot:focalCladeOTTTaxonName": "Clusiaceae", 
 "^ot:otusElementOrder": [
 "Tls64099"
 ], 
 "^ot:studyId": "ot_1850", 
+"^ot:studyPublication": {
+"@href": "http://dx.doi.org/10.1007/s12228-018-9538-0"
+}, 
 "^ot:studyPublicationReference": "Lujan M.A., Aranda J., Virgo A., & Winter K. 2018. Clusia guabalensis (Clusiaceae), a new hemiepiphyte species with floral resins from the Atlantic wet forest in Panama. Brittonia, .", 
 "^ot:studyYear": 2018, 
+"^ot:tag": [], 
 "^ot:taxonLinkPrefixes": {
 "@ubio": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:", 
 "@uniprot": "http://purl.uniprot.org/taxonomy/"
@@ -87,8 +181,9 @@
 "^skos:historyNote": "Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlOTUWriter@73bbc0f2 $Rev$", 
 "otuById": {
 "Tl3223388": {
-"^ot:altLabel": "Clusia criuva", 
 "^ot:originalLabel": "Clusia criuva AY145187", 
+"^ot:ottId": 32618, 
+"^ot:ottTaxonName": "Clusia criuva", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6472, 
 "@tb:identifier.taxonVariant": 15718, 
@@ -100,11 +195,14 @@
 "^ot:originalLabel": "Clusia hirsuta MF188242"
 }, 
 "Tl3223390": {
-"^ot:originalLabel": "Clusia garcibarrigae MF871664"
+"^ot:originalLabel": "Clusia garcibarrigae MF871664", 
+"^ot:ottId": 6099404, 
+"^ot:ottTaxonName": "Clusia garcibarrigae"
 }, 
 "Tl3223391": {
-"^ot:altLabel": "Clusia cylindrica", 
 "^ot:originalLabel": "Clusia cylindrica AJ312581", 
+"^ot:ottId": 620458, 
+"^ot:ottTaxonName": "Clusia cylindrica", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 150267, 
 "@tb:identifier.taxonVariant": 225886, 
@@ -113,11 +211,14 @@
 }
 }, 
 "Tl3223392": {
-"^ot:originalLabel": "Clusia decussata MF871661"
+"^ot:originalLabel": "Clusia decussata MF871661", 
+"^ot:ottId": 6099382, 
+"^ot:ottTaxonName": "Clusia decussata"
 }, 
 "Tl3223393": {
-"^ot:altLabel": "Clusia minor", 
 "^ot:originalLabel": "Clusia minor MF871671", 
+"^ot:ottId": 47591, 
+"^ot:ottTaxonName": "Clusia minor", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6490, 
 "@tb:identifier.taxonVariant": 15762, 
@@ -126,8 +227,9 @@
 }
 }, 
 "Tl3223394": {
-"^ot:altLabel": "Clusia uvitana", 
 "^ot:originalLabel": "Clusia uvitana MF871691", 
+"^ot:ottId": 98920, 
+"^ot:ottTaxonName": "Clusia uvitana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 150259, 
 "@tb:identifier.taxonVariant": 225876, 
@@ -136,8 +238,9 @@
 }
 }, 
 "Tl3223395": {
-"^ot:altLabel": "Clusia quadrangula", 
 "^ot:originalLabel": "Clusia quadrangula MF871685", 
+"^ot:ottId": 726403, 
+"^ot:ottTaxonName": "Clusia quadrangula", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 192305, 
 "@tb:identifier.taxonVariant": 263787, 
@@ -146,8 +249,9 @@
 }
 }, 
 "Tl3223396": {
-"^ot:altLabel": "Clusia paralicola", 
 "^ot:originalLabel": "Clusia paralicola AY145166", 
+"^ot:ottId": 945157, 
+"^ot:ottTaxonName": "Clusia paralicola", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6496, 
 "@tb:identifier.taxonVariant": 15781, 
@@ -156,8 +260,9 @@
 }
 }, 
 "Tl3223397": {
-"^ot:altLabel": "Clusia spiritu-sanctensis", 
 "^ot:originalLabel": "Clusia spiritu-sanctensis AY145189", 
+"^ot:ottId": 265908, 
+"^ot:ottTaxonName": "Clusia spiritu-sanctensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6505, 
 "@tb:identifier.taxonVariant": 15800, 
@@ -166,8 +271,9 @@
 }
 }, 
 "Tl3223398": {
-"^ot:altLabel": "Clusia studartiana", 
 "^ot:originalLabel": "Clusia studartiana AY145178", 
+"^ot:ottId": 265907, 
+"^ot:ottTaxonName": "Clusia studartiana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6507, 
 "@tb:identifier.taxonVariant": 15804, 
@@ -176,8 +282,9 @@
 }
 }, 
 "Tl3223399": {
-"^ot:altLabel": "Clusia fructiangusta", 
 "^ot:originalLabel": "Clusia fructiangusta MF871663", 
+"^ot:ottId": 432115, 
+"^ot:ottTaxonName": "Clusia fructiangusta", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 150269, 
 "@tb:identifier.taxonVariant": 225888, 
@@ -186,8 +293,9 @@
 }
 }, 
 "Tl3223400": {
-"^ot:altLabel": "Clusia valerioi", 
 "^ot:originalLabel": "Clusia valerioi MF871694", 
+"^ot:ottId": 47582, 
+"^ot:ottTaxonName": "Clusia valerioi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6510, 
 "@tb:identifier.taxonVariant": 15808, 
@@ -196,8 +304,9 @@
 }
 }, 
 "Tl3223401": {
-"^ot:altLabel": "Clusia minor", 
 "^ot:originalLabel": "Clusia minor MF871672", 
+"^ot:ottId": 47591, 
+"^ot:ottTaxonName": "Clusia minor", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6490, 
 "@tb:identifier.taxonVariant": 15762, 
@@ -206,8 +315,9 @@
 }
 }, 
 "Tl3223402": {
-"^ot:altLabel": "Clusia amazonica", 
 "^ot:originalLabel": "Clusia amazonica AY145235", 
+"^ot:ottId": 620464, 
+"^ot:ottTaxonName": "Clusia amazonica", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6465, 
 "@tb:identifier.taxonVariant": 15697, 
@@ -216,8 +326,9 @@
 }
 }, 
 "Tl3223403": {
-"^ot:altLabel": "Clusia palmicida", 
 "^ot:originalLabel": "Clusia palmicida AY145192", 
+"^ot:ottId": 890728, 
+"^ot:ottTaxonName": "Clusia palmicida", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6494, 
 "@tb:identifier.taxonVariant": 15774, 
@@ -226,8 +337,9 @@
 }
 }, 
 "Tl3223404": {
-"^ot:altLabel": "Clusia pratensis", 
 "^ot:originalLabel": "Clusia pratensis MF871684", 
+"^ot:ottId": 726404, 
+"^ot:ottTaxonName": "Clusia pratensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 192304, 
 "@tb:identifier.taxonVariant": 263786, 
@@ -236,8 +348,9 @@
 }
 }, 
 "Tl3223405": {
-"^ot:altLabel": "Clusia gardneri", 
 "^ot:originalLabel": "Clusia gardneri AY145204", 
+"^ot:ottId": 793109, 
+"^ot:ottTaxonName": "Clusia gardneri", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6480, 
 "@tb:identifier.taxonVariant": 15737, 
@@ -246,8 +359,9 @@
 }
 }, 
 "Tl3223406": {
-"^ot:altLabel": "Clusia pallida", 
 "^ot:originalLabel": "Clusia pallida AY145188", 
+"^ot:ottId": 890727, 
+"^ot:ottTaxonName": "Clusia pallida", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6493, 
 "@tb:identifier.taxonVariant": 15769, 
@@ -256,8 +370,9 @@
 }
 }, 
 "Tl3223407": {
-"^ot:altLabel": "Clusia torresii", 
 "^ot:originalLabel": "Clusia torresii AY145174", 
+"^ot:ottId": 203092, 
+"^ot:ottTaxonName": "Clusia torresii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6509, 
 "@tb:identifier.taxonVariant": 15807, 
@@ -266,8 +381,9 @@
 }
 }, 
 "Tl3223408": {
-"^ot:altLabel": "Clusia longipetiolata", 
 "^ot:originalLabel": "Clusia longipetiolata MG779431", 
+"^ot:ottId": 47593, 
+"^ot:ottTaxonName": "Clusia longipetiolata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 150272, 
 "@tb:identifier.taxonVariant": 225891, 
@@ -276,8 +392,9 @@
 }
 }, 
 "Tl3223409": {
-"^ot:altLabel": "Clusia uvitana", 
 "^ot:originalLabel": "Clusia uvitana MF871692", 
+"^ot:ottId": 98920, 
+"^ot:ottTaxonName": "Clusia uvitana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 150259, 
 "@tb:identifier.taxonVariant": 225876, 
@@ -286,8 +403,9 @@
 }
 }, 
 "Tl3223410": {
-"^ot:altLabel": "Clusia palmana", 
 "^ot:originalLabel": "Clusia palmana AJ509198", 
+"^ot:ottId": 726414, 
+"^ot:ottTaxonName": "Clusia palmana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 192303, 
 "@tb:identifier.taxonVariant": 263785, 
@@ -296,8 +414,9 @@
 }
 }, 
 "Tl3223411": {
-"^ot:altLabel": "Clusia lanceolata", 
 "^ot:originalLabel": "Clusia lanceolata AY145195", 
+"^ot:ottId": 653881, 
+"^ot:ottTaxonName": "Clusia lanceolata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6485, 
 "@tb:identifier.taxonVariant": 15749, 
@@ -306,8 +425,9 @@
 }
 }, 
 "Tl3223412": {
-"^ot:altLabel": "Clusia salvinii", 
 "^ot:originalLabel": "Clusia salvinii MF871688", 
+"^ot:ottId": 47594, 
+"^ot:ottTaxonName": "Clusia salvinii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 150275, 
 "@tb:identifier.taxonVariant": 225894, 
@@ -316,8 +436,9 @@
 }
 }, 
 "Tl3223413": {
-"^ot:altLabel": "Chrysochlamys eclipes", 
 "^ot:originalLabel": "Chrysochlamys eclipes AJ509212", 
+"^ot:ottId": 726405, 
+"^ot:ottTaxonName": "Chrysochlamys eclipes", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 192297, 
 "@tb:identifier.taxonVariant": 263779, 
@@ -326,17 +447,22 @@
 }
 }, 
 "Tl3223414": {
-"^ot:originalLabel": "Clusia brachycarpa KX373652"
+"^ot:originalLabel": "Clusia brachycarpa KX373652", 
+"^ot:ottId": 6099347, 
+"^ot:ottTaxonName": "Clusia brachycarpa"
 }, 
 "Tl3223415": {
-"^ot:originalLabel": "Clusia petiolaris MF871682"
+"^ot:originalLabel": "Clusia petiolaris MF871682", 
+"^ot:ottId": 6099477, 
+"^ot:ottTaxonName": "Clusia petiolaris"
 }, 
 "Tl3223416": {
 "^ot:originalLabel": "Clusia scariosepala KX373644"
 }, 
 "Tl3223417": {
-"^ot:altLabel": "Clusia clusioides", 
 "^ot:originalLabel": "Clusia clusioides AY145203", 
+"^ot:ottId": 848691, 
+"^ot:ottTaxonName": "Clusia clusioides", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6470, 
 "@tb:identifier.taxonVariant": 15708, 
@@ -345,11 +471,14 @@
 }
 }, 
 "Tl3223418": {
-"^ot:originalLabel": "Clusia peninsulae MF871679"
+"^ot:originalLabel": "Clusia peninsulae MF871679", 
+"^ot:ottId": 6099474, 
+"^ot:ottTaxonName": "Clusia peninsulae"
 }, 
 "Tl3223419": {
-"^ot:altLabel": "Chrysochlamys glauca", 
 "^ot:originalLabel": "Chrysochlamys glauca AJ509213", 
+"^ot:ottId": 978298, 
+"^ot:ottTaxonName": "Chrysochlamys glauca", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 150281, 
 "@tb:identifier.taxonVariant": 225906, 
@@ -361,8 +490,9 @@
 "^ot:originalLabel": "Clusia merlchiorii AY145210"
 }, 
 "Tl3223421": {
-"^ot:altLabel": "Clusia insignis", 
 "^ot:originalLabel": "Clusia insignis AY145167", 
+"^ot:ottId": 316232, 
+"^ot:ottTaxonName": "Clusia insignis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6484, 
 "@tb:identifier.taxonVariant": 15747, 
@@ -371,8 +501,9 @@
 }
 }, 
 "Tl3223422": {
-"^ot:altLabel": "Clusia ducu", 
 "^ot:originalLabel": "Clusia ducu AY145220", 
+"^ot:ottId": 989704, 
+"^ot:ottTaxonName": "Clusia ducu", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6475, 
 "@tb:identifier.taxonVariant": 15723, 
@@ -384,8 +515,9 @@
 "^ot:originalLabel": "Clusia rosaeflora MF871686"
 }, 
 "Tl3223424": {
-"^ot:altLabel": "Clusia gundlachii", 
 "^ot:originalLabel": "Clusia gundlachii AY145186", 
+"^ot:ottId": 822184, 
+"^ot:ottTaxonName": "Clusia gundlachii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6482, 
 "@tb:identifier.taxonVariant": 15741, 
@@ -394,8 +526,9 @@
 }
 }, 
 "Tl3223425": {
-"^ot:altLabel": "Clusia articulata", 
 "^ot:originalLabel": "Clusia articulata AJ414712", 
+"^ot:ottId": 32621, 
+"^ot:ottTaxonName": "Clusia articulata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 168862, 
 "@tb:identifier.taxonVariant": 243320, 
@@ -404,8 +537,9 @@
 }
 }, 
 "Tl3223426": {
-"^ot:altLabel": "Clusia grandiflora", 
 "^ot:originalLabel": "Clusia grandiflora AY145218", 
+"^ot:ottId": 166592, 
+"^ot:ottTaxonName": "Clusia grandiflora", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6481, 
 "@tb:identifier.taxonVariant": 15739, 
@@ -414,8 +548,9 @@
 }
 }, 
 "Tl3223427": {
-"^ot:altLabel": "Clusia stenophylla", 
 "^ot:originalLabel": "Clusia stenophylla MF871689", 
+"^ot:ottId": 47587, 
+"^ot:ottTaxonName": "Clusia stenophylla", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6506, 
 "@tb:identifier.taxonVariant": 15803, 
@@ -433,8 +568,9 @@
 "^ot:originalLabel": "Clusia valerii MF871693"
 }, 
 "Tl3223431": {
-"^ot:altLabel": "Chrysochlamys skutchii", 
 "^ot:originalLabel": "Chrysochlamys skutchii AJ509211", 
+"^ot:ottId": 726410, 
+"^ot:ottTaxonName": "Chrysochlamys skutchii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 192298, 
 "@tb:identifier.taxonVariant": 263780, 
@@ -443,14 +579,19 @@
 }
 }, 
 "Tl3223432": {
-"^ot:originalLabel": "Clusia peninsulae MF871680"
+"^ot:originalLabel": "Clusia peninsulae MF871680", 
+"^ot:ottId": 6099474, 
+"^ot:ottTaxonName": "Clusia peninsulae"
 }, 
 "Tl3223433": {
-"^ot:originalLabel": "Clusia lundellii MF871668"
+"^ot:originalLabel": "Clusia lundellii MF871668", 
+"^ot:ottId": 6099431, 
+"^ot:ottTaxonName": "Clusia lundellii"
 }, 
 "Tl3223434": {
-"^ot:altLabel": "Clusia minor", 
 "^ot:originalLabel": "Clusia minor MF871674", 
+"^ot:ottId": 47591, 
+"^ot:ottTaxonName": "Clusia minor", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6490, 
 "@tb:identifier.taxonVariant": 15762, 
@@ -459,14 +600,19 @@
 }
 }, 
 "Tl3223435": {
-"^ot:originalLabel": "Clusia trochiformis KX373645"
+"^ot:originalLabel": "Clusia trochiformis KX373645", 
+"^ot:ottId": 6099530, 
+"^ot:ottTaxonName": "Clusia trochiformis"
 }, 
 "Tl3223436": {
-"^ot:originalLabel": "Clusia araracuarae KX373658"
+"^ot:originalLabel": "Clusia araracuarae KX373658", 
+"^ot:ottId": 6099339, 
+"^ot:ottTaxonName": "Clusia araracuarae"
 }, 
 "Tl3223437": {
-"^ot:altLabel": "Clusia tocuchensis", 
 "^ot:originalLabel": "Clusia tocuchensis AY145181", 
+"^ot:ottId": 658649, 
+"^ot:ottTaxonName": "Clusia tocuchensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6508, 
 "@tb:identifier.taxonVariant": 15805, 
@@ -475,8 +621,9 @@
 }
 }, 
 "Tl3223438": {
-"^ot:altLabel": "Clusia elliptica", 
 "^ot:originalLabel": "Clusia elliptica AY145226", 
+"^ot:ottId": 316235, 
+"^ot:ottTaxonName": "Clusia elliptica", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6476, 
 "@tb:identifier.taxonVariant": 15724, 
@@ -485,8 +632,9 @@
 }
 }, 
 "Tl3223439": {
-"^ot:altLabel": "Clusia hilariana", 
 "^ot:originalLabel": "Clusia hilariana AY145182", 
+"^ot:ottId": 653893, 
+"^ot:ottTaxonName": "Clusia hilariana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6483, 
 "@tb:identifier.taxonVariant": 15744, 
@@ -495,11 +643,14 @@
 }
 }, 
 "Tl3223440": {
-"^ot:originalLabel": "Clusia magnifolia MF871669"
+"^ot:originalLabel": "Clusia magnifolia MF871669", 
+"^ot:ottId": 6099435, 
+"^ot:ottTaxonName": "Clusia magnifolia"
 }, 
 "Tl3223441": {
-"^ot:altLabel": "Clusia pratensis", 
 "^ot:originalLabel": "Clusia pratensis MF871683", 
+"^ot:ottId": 726404, 
+"^ot:ottTaxonName": "Clusia pratensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 192304, 
 "@tb:identifier.taxonVariant": 263786, 
@@ -508,8 +659,9 @@
 }
 }, 
 "Tl3223442": {
-"^ot:altLabel": "Clusia fluminensis", 
 "^ot:originalLabel": "Clusia fluminensis AY145180", 
+"^ot:ottId": 653890, 
+"^ot:ottTaxonName": "Clusia fluminensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6478, 
 "@tb:identifier.taxonVariant": 15730, 
@@ -518,8 +670,9 @@
 }
 }, 
 "Tl3223443": {
-"^ot:altLabel": "Chrysochlamys membranacea", 
 "^ot:originalLabel": "Chrysochlamys membranacea AY145209", 
+"^ot:ottId": 181060, 
+"^ot:ottTaxonName": "Chrysochlamys membranacea", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6036, 
 "@tb:identifier.taxonVariant": 14565, 
@@ -528,8 +681,9 @@
 }
 }, 
 "Tl3223444": {
-"^ot:altLabel": "Clusia fockeana", 
 "^ot:originalLabel": "Clusia fockeana AY145207", 
+"^ot:ottId": 316230, 
+"^ot:ottTaxonName": "Clusia fockeana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6479, 
 "@tb:identifier.taxonVariant": 15733, 
@@ -538,8 +692,9 @@
 }
 }, 
 "Tl3223445": {
-"^ot:altLabel": "Clusia venosa", 
 "^ot:originalLabel": "Clusia venosa AJ414726", 
+"^ot:ottId": 957701, 
+"^ot:ottTaxonName": "Clusia venosa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 168864, 
 "@tb:identifier.taxonVariant": 243322, 
@@ -548,8 +703,9 @@
 }
 }, 
 "Tl3223446": {
-"^ot:altLabel": "Clusia minor", 
 "^ot:originalLabel": "Clusia minor MF871670", 
+"^ot:ottId": 47591, 
+"^ot:ottTaxonName": "Clusia minor", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6490, 
 "@tb:identifier.taxonVariant": 15762, 
@@ -558,8 +714,9 @@
 }
 }, 
 "Tl3223447": {
-"^ot:altLabel": "Clusia congestiflora", 
 "^ot:originalLabel": "Clusia congestiflora AJ509206", 
+"^ot:ottId": 726413, 
+"^ot:ottTaxonName": "Clusia congestiflora", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 192300, 
 "@tb:identifier.taxonVariant": 263782, 
@@ -568,8 +725,9 @@
 }
 }, 
 "Tl3223448": {
-"^ot:altLabel": "Clusia orthoneura", 
 "^ot:originalLabel": "Clusia orthoneura MF871678", 
+"^ot:ottId": 879663, 
+"^ot:ottTaxonName": "Clusia orthoneura", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6492, 
 "@tb:identifier.taxonVariant": 15767, 
@@ -578,8 +736,9 @@
 }
 }, 
 "Tl3223449": {
-"^ot:altLabel": "Clusia schomburgkiana", 
 "^ot:originalLabel": "Clusia schomburgkiana AY145217", 
+"^ot:ottId": 890733, 
+"^ot:ottTaxonName": "Clusia schomburgkiana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6502, 
 "@tb:identifier.taxonVariant": 15796, 
@@ -588,8 +747,9 @@
 }
 }, 
 "Tl3223450": {
-"^ot:altLabel": "Clusia heterosavia", 
 "^ot:originalLabel": "Clusia heterosavia AJ312583", 
+"^ot:ottId": 620455, 
+"^ot:ottTaxonName": "Clusia heterosavia", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 150270, 
 "@tb:identifier.taxonVariant": 225889, 
@@ -598,8 +758,9 @@
 }
 }, 
 "Tl3223451": {
-"^ot:altLabel": "Clusia divaricata", 
 "^ot:originalLabel": "Clusia divaricata MF871662", 
+"^ot:ottId": 620459, 
+"^ot:ottTaxonName": "Clusia divaricata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 150268, 
 "@tb:identifier.taxonVariant": 225887, 
@@ -611,8 +772,9 @@
 "^ot:originalLabel": "Clusia hirsuta MF188241"
 }, 
 "Tl3223453": {
-"^ot:altLabel": "Clusia croatii", 
 "^ot:originalLabel": "Clusia croatii MF871659", 
+"^ot:ottId": 620466, 
+"^ot:ottTaxonName": "Clusia croatii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6473, 
 "@tb:identifier.taxonVariant": 15719, 
@@ -622,8 +784,9 @@
 "^skos:prefLabel": "Clusia sp. JA 3599"
 }, 
 "Tl3223454": {
-"^ot:altLabel": "Clusia minor", 
 "^ot:originalLabel": "Clusia minor MF871673", 
+"^ot:ottId": 47591, 
+"^ot:ottTaxonName": "Clusia minor", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6490, 
 "@tb:identifier.taxonVariant": 15762, 
@@ -632,8 +795,9 @@
 }
 }, 
 "Tl3223455": {
-"^ot:altLabel": "Clusia platystigma", 
 "^ot:originalLabel": "Clusia platystigma AY145201", 
+"^ot:ottId": 890723, 
+"^ot:ottTaxonName": "Clusia platystigma", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6498, 
 "@tb:identifier.taxonVariant": 15785, 
@@ -642,14 +806,17 @@
 }
 }, 
 "Tl3223456": {
-"^ot:originalLabel": "Clusia venulosa MF871696"
+"^ot:originalLabel": "Clusia venulosa MF871696", 
+"^ot:ottId": 6099534, 
+"^ot:ottTaxonName": "Clusia venulosa"
 }, 
 "Tl3223457": {
 "^ot:originalLabel": "Tovomita caputmonsia MF871697"
 }, 
 "Tl3223458": {
-"^ot:altLabel": "Clusia coclensis", 
 "^ot:originalLabel": "Clusia coclensis AJ509187", 
+"^ot:ottId": 620465, 
+"^ot:ottTaxonName": "Clusia coclensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 150265, 
 "@tb:identifier.taxonVariant": 225885, 
@@ -658,11 +825,14 @@
 }
 }, 
 "Tl3223459": {
-"^ot:originalLabel": "Clusia petiolaris MF871681"
+"^ot:originalLabel": "Clusia petiolaris MF871681", 
+"^ot:ottId": 6099477, 
+"^ot:ottTaxonName": "Clusia petiolaris"
 }, 
 "Tl3223460": {
-"^ot:altLabel": "Clusia parviflora", 
 "^ot:originalLabel": "Clusia parviflora AJ414721", 
+"^ot:ottId": 577873, 
+"^ot:ottTaxonName": "Clusia parviflora", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 172162, 
 "@tb:identifier.taxonVariant": 246054, 
@@ -671,8 +841,9 @@
 }
 }, 
 "Tl3223461": {
-"^ot:altLabel": "Clusia leprantha", 
 "^ot:originalLabel": "Clusia leprantha AY145172", 
+"^ot:ottId": 848696, 
+"^ot:ottTaxonName": "Clusia leprantha", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6486, 
 "@tb:identifier.taxonVariant": 15750, 
@@ -684,8 +855,9 @@
 "^ot:originalLabel": "Clusia rosaeflora MF871687"
 }, 
 "Tl3223463": {
-"^ot:altLabel": "Clusia lineata", 
 "^ot:originalLabel": "Clusia lineata MF871666", 
+"^ot:ottId": 869789, 
+"^ot:ottTaxonName": "Clusia lineata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6487, 
 "@tb:identifier.taxonVariant": 15754, 
@@ -694,8 +866,9 @@
 }
 }, 
 "Tl3223464": {
-"^ot:altLabel": "Clusia minor", 
 "^ot:originalLabel": "Clusia minor MF871675", 
+"^ot:ottId": 47591, 
+"^ot:ottTaxonName": "Clusia minor", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6490, 
 "@tb:identifier.taxonVariant": 15762, 
@@ -704,8 +877,9 @@
 }
 }, 
 "Tl3223465": {
-"^ot:altLabel": "Clusia viscida", 
 "^ot:originalLabel": "Clusia viscida AY145196", 
+"^ot:ottId": 265906, 
+"^ot:ottTaxonName": "Clusia viscida", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6511, 
 "@tb:identifier.taxonVariant": 15810, 
@@ -714,8 +888,9 @@
 }
 }, 
 "Tl3223466": {
-"^ot:altLabel": "Chrysochlamys grandifolia", 
 "^ot:originalLabel": "Chrysochlamys grandifolia AJ509209", 
+"^ot:ottId": 78959, 
+"^ot:ottTaxonName": "Chrysochlamys grandifolia", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 192472, 
 "@tb:identifier.taxonVariant": 263951, 
@@ -724,8 +899,9 @@
 }
 }, 
 "Tl3223467": {
-"^ot:altLabel": "Clusia burle-marxii", 
 "^ot:originalLabel": "Clusia burle-marxii MF871656", 
+"^ot:ottId": 208761, 
+"^ot:ottTaxonName": "Clusia burle-marxii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6468, 
 "@tb:identifier.taxonVariant": 15703, 
@@ -734,8 +910,9 @@
 }
 }, 
 "Tl3223468": {
-"^ot:altLabel": "Clusia renggerioides", 
 "^ot:originalLabel": "Clusia renggerioides MG779424", 
+"^ot:ottId": 890721, 
+"^ot:ottTaxonName": "Clusia renggerioides", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6500, 
 "@tb:identifier.taxonVariant": 15789, 
@@ -744,8 +921,9 @@
 }
 }, 
 "Tl3223469": {
-"^ot:altLabel": "Clusia odorata", 
 "^ot:originalLabel": "Clusia odorata MF871676", 
+"^ot:ottId": 458159, 
+"^ot:ottTaxonName": "Clusia odorata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 192302, 
 "@tb:identifier.taxonVariant": 263784, 
@@ -754,8 +932,9 @@
 }
 }, 
 "Tl3223470": {
-"^ot:altLabel": "Clusia cylindrica", 
 "^ot:originalLabel": "Clusia cylindrica AJ509201", 
+"^ot:ottId": 620458, 
+"^ot:ottTaxonName": "Clusia cylindrica", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 150267, 
 "@tb:identifier.taxonVariant": 225886, 
@@ -764,14 +943,17 @@
 }
 }, 
 "Tl3223471": {
-"^ot:originalLabel": "Clusia trochiformis MF871690"
+"^ot:originalLabel": "Clusia trochiformis MF871690", 
+"^ot:ottId": 6099530, 
+"^ot:ottTaxonName": "Clusia trochiformis"
 }, 
 "Tl3223472": {
 "^ot:originalLabel": "Tovomita panamaea MF871698"
 }, 
 "Tl3223473": {
-"^ot:altLabel": "Clusia columnaris", 
 "^ot:originalLabel": "Clusia columnaris MF871657", 
+"^ot:ottId": 316233, 
+"^ot:ottTaxonName": "Clusia columnaris", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6471, 
 "@tb:identifier.taxonVariant": 15716, 
@@ -780,8 +962,9 @@
 }
 }, 
 "Tl3223474": {
-"^ot:altLabel": "Clusia nemorosa", 
 "^ot:originalLabel": "Clusia nemorosa AY145198", 
+"^ot:ottId": 653909, 
+"^ot:ottTaxonName": "Clusia nemorosa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6491, 
 "@tb:identifier.taxonVariant": 15764, 
@@ -790,8 +973,9 @@
 }
 }, 
 "Tl3223475": {
-"^ot:altLabel": "Clusia diamantina", 
 "^ot:originalLabel": "Clusia diamantina AY145223", 
+"^ot:ottId": 316236, 
+"^ot:ottTaxonName": "Clusia diamantina", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6474, 
 "@tb:identifier.taxonVariant": 15720, 
@@ -800,11 +984,14 @@
 }
 }, 
 "Tl3223476": {
-"^ot:originalLabel": "Clusia venulosa MF871695"
+"^ot:originalLabel": "Clusia venulosa MF871695", 
+"^ot:ottId": 6099534, 
+"^ot:ottTaxonName": "Clusia venulosa"
 }, 
 "Tl3223477": {
-"^ot:altLabel": "Clusia burchellii", 
 "^ot:originalLabel": "Clusia burchellii AY145211", 
+"^ot:ottId": 208762, 
+"^ot:ottTaxonName": "Clusia burchellii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6467, 
 "@tb:identifier.taxonVariant": 15702, 
@@ -813,8 +1000,9 @@
 }
 }, 
 "Tl3223478": {
-"^ot:altLabel": "Clusia croatii", 
 "^ot:originalLabel": "Clusia croatii MF871660", 
+"^ot:ottId": 620466, 
+"^ot:ottTaxonName": "Clusia croatii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6473, 
 "@tb:identifier.taxonVariant": 15719, 
@@ -824,8 +1012,9 @@
 "^skos:prefLabel": "Clusia sp. JA 3599"
 }, 
 "Tl3223479": {
-"^ot:altLabel": "Clusia odorata", 
 "^ot:originalLabel": "Clusia odorata MF871677", 
+"^ot:ottId": 458159, 
+"^ot:ottTaxonName": "Clusia odorata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 192302, 
 "@tb:identifier.taxonVariant": 263784, 
@@ -834,11 +1023,14 @@
 }
 }, 
 "Tl3223480": {
-"^ot:originalLabel": "Clusia loranthacea MF871667"
+"^ot:originalLabel": "Clusia loranthacea MF871667", 
+"^ot:ottId": 5763393, 
+"^ot:ottTaxonName": "Clusia loranthacea"
 }, 
 "Tl3223481": {
-"^ot:altLabel": "Clusia multiflora", 
 "^ot:originalLabel": "Clusia multiflora KX373647", 
+"^ot:ottId": 47590, 
+"^ot:ottTaxonName": "Clusia multiflora", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 32733, 
 "@tb:identifier.taxonVariant": 75648, 
@@ -847,8 +1039,9 @@
 }
 }, 
 "Tl3223482": {
-"^ot:altLabel": "Clusia weddelliana", 
 "^ot:originalLabel": "Clusia weddelliana AY145168", 
+"^ot:ottId": 265905, 
+"^ot:ottTaxonName": "Clusia weddelliana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6512, 
 "@tb:identifier.taxonVariant": 15812, 
@@ -857,8 +1050,9 @@
 }
 }, 
 "Tl3223483": {
-"^ot:altLabel": "Clusia aripoensis", 
 "^ot:originalLabel": "Clusia aripoensis AY145197", 
+"^ot:ottId": 32626, 
+"^ot:ottTaxonName": "Clusia aripoensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6466, 
 "@tb:identifier.taxonVariant": 15700, 
@@ -867,8 +1061,9 @@
 }
 }, 
 "Tl3223484": {
-"^ot:altLabel": "Clusia pusilla", 
 "^ot:originalLabel": "Clusia pusilla AY145221", 
+"^ot:ottId": 890720, 
+"^ot:ottTaxonName": "Clusia pusilla", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6499, 
 "@tb:identifier.taxonVariant": 15787, 
@@ -877,8 +1072,9 @@
 }
 }, 
 "Tl3223485": {
-"^ot:altLabel": "Clusia rosea", 
 "^ot:originalLabel": "Clusia rosea AJ509229", 
+"^ot:ottId": 47595, 
+"^ot:ottTaxonName": "Clusia rosea", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6501, 
 "@tb:identifier.taxonVariant": 15792, 
@@ -887,8 +1083,9 @@
 }
 }, 
 "Tl3223486": {
-"^ot:altLabel": "Clusia panapanari", 
 "^ot:originalLabel": "Clusia panapanari AY145191", 
+"^ot:ottId": 890724, 
+"^ot:ottTaxonName": "Clusia panapanari", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6495, 
 "@tb:identifier.taxonVariant": 15776, 
@@ -897,8 +1094,9 @@
 }
 }, 
 "Tl3223487": {
-"^ot:altLabel": "Clusia scrobiculata", 
 "^ot:originalLabel": "Clusia scrobiculata AY145184", 
+"^ot:ottId": 945234, 
+"^ot:ottTaxonName": "Clusia scrobiculata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6503, 
 "@tb:identifier.taxonVariant": 15797, 
@@ -907,8 +1105,9 @@
 }
 }, 
 "Tl3223488": {
-"^ot:altLabel": "Clusia osaensis", 
 "^ot:originalLabel": "Clusia osaensis AJ312579", 
+"^ot:ottId": 282366, 
+"^ot:ottTaxonName": "Clusia osaensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 150273, 
 "@tb:identifier.taxonVariant": 225892, 
@@ -937,7 +1136,18 @@
 "Tr112509": {
 "@label": "MLT", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:changesCount", 
+"^ot:curatedType": "Maximum likelihood ", 
+"^ot:inGroupClade": "Tn17617080", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn17616965", 
+"^ot:specifiedRoot": "Tn17616965", 
+"^ot:tag": [], 
+"^ot:unrootedTree": false, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 103, 
 "^tb:quality.tree": "Unrated", 
@@ -950,7 +1160,7 @@
 "@target": "Tn17617057"
 }, 
 "edge2544": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17616895", 
 "@target": "Tn17617094"
 }
@@ -993,7 +1203,7 @@
 }, 
 "Tn17616900": {
 "edge2538": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17616900", 
 "@target": "Tn17616922"
 }, 
@@ -1197,7 +1407,7 @@
 }, 
 "Tn17616939": {
 "edge2534": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17616939", 
 "@target": "Tn17616946"
 }, 
@@ -1418,7 +1628,7 @@
 "@target": "Tn17616958"
 }, 
 "edge2514": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17616974", 
 "@target": "Tn17617055"
 }
@@ -1437,7 +1647,7 @@
 }, 
 "Tn17616976": {
 "edge2594": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17616976", 
 "@target": "Tn17617054"
 }, 
@@ -1461,12 +1671,12 @@
 }, 
 "Tn17616988": {
 "edge2490": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17616988", 
 "@target": "Tn17617048"
 }, 
 "edge2492": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17616988", 
 "@target": "Tn17617041"
 }
@@ -1509,12 +1719,12 @@
 }, 
 "Tn17616995": {
 "edge2600": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17616995", 
 "@target": "Tn17616985"
 }, 
 "edge2602": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17616995", 
 "@target": "Tn17616953"
 }
@@ -1701,12 +1911,12 @@
 }, 
 "Tn17617025": {
 "edge2554": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17617025", 
 "@target": "Tn17616992"
 }, 
 "edge2556": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17617025", 
 "@target": "Tn17616910"
 }
@@ -1749,7 +1959,7 @@
 }, 
 "Tn17617031": {
 "edge2526": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17617031", 
 "@target": "Tn17616937"
 }, 
@@ -1821,12 +2031,12 @@
 }, 
 "Tn17617041": {
 "edge2494": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17617041", 
 "@target": "Tn17617075"
 }, 
 "edge2496": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17617041", 
 "@target": "Tn17617096"
 }
@@ -1874,7 +2084,7 @@
 "@target": "Tn17616894"
 }, 
 "edge2588": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17617052", 
 "@target": "Tn17616957"
 }
@@ -1917,7 +2127,7 @@
 }, 
 "Tn17617064": {
 "edge2570": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17617064", 
 "@target": "Tn17616932"
 }, 
@@ -1929,7 +2139,7 @@
 }, 
 "Tn17617066": {
 "edge2522": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17617066", 
 "@target": "Tn17617089"
 }, 
@@ -2018,14 +2228,14 @@
 "@target": "Tn17616945"
 }, 
 "edge2352": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17617078", 
 "@target": "Tn17617014"
 }
 }, 
 "Tn17617079": {
 "edge2530": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17617079", 
 "@target": "Tn17617039"
 }, 
@@ -2145,24 +2355,24 @@
 }, 
 "Tn17617096": {
 "edge2498": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17617096", 
 "@target": "Tn17617050"
 }, 
 "edge2500": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17617096", 
 "@target": "Tn17617085"
 }
 }, 
 "Tn17617097": {
 "edge2368": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17617097", 
 "@target": "Tn17616913"
 }, 
 "edge2370": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17617097", 
 "@target": "Tn17617065"
 }
