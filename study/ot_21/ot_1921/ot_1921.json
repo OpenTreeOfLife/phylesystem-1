@@ -51,22 +51,115 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2019-03-14T18:00:28.239Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:curatorName": "susan-holder", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}, 
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": "$1"
+}, 
+"old": {
+"$": "^(\\S*\\s+\\S*).*"
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2019-03-14T18:00:28.239Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"susan-holder"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S23763"
 }, 
+"^ot:focalCladeOTTTaxonName": "", 
 "^ot:otusElementOrder": [
 "Tls67429"
 ], 
 "^ot:studyId": "ot_1921", 
+"^ot:studyPublication": {
+"@href": ""
+}, 
 "^ot:studyPublicationReference": "Pei D., Sein L., Liu H., Yu Z., & Deng J. 2018. A novel species of Alternaria hydrangeae sp. nov. from Hydrangea paniculata in China. Phytotaxa, .", 
 "^ot:studyYear": 2018, 
+"^ot:tag": [], 
 "^ot:taxonLinkPrefixes": {
 "@ubio": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:", 
 "@uniprot": "http://purl.uniprot.org/taxonomy/"
@@ -89,8 +182,9 @@
 "^skos:historyNote": "Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlOTUWriter@7bcaafcd $Rev$", 
 "otuById": {
 "Tl3509595": {
-"^ot:altLabel": "Alternaria crassa", 
 "^ot:originalLabel": "Alternaria crassa CBS_109160", 
+"^ot:ottId": 899898, 
+"^ot:ottTaxonName": "Alternaria crassa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 1004, 
 "@tb:identifier.taxonVariant": 2642, 
@@ -109,8 +203,9 @@
 }
 }, 
 "Tl3509597": {
-"^ot:altLabel": "Alternaria blumeae", 
 "^ot:originalLabel": "Alternaria blumeae CBS_117215", 
+"^ot:ottId": 680677, 
+"^ot:ottTaxonName": "Alternaria blumeae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 250530, 
 "@tb:identifier.taxonVariant": 310296, 
@@ -119,8 +214,9 @@
 }
 }, 
 "Tl3509598": {
-"^ot:altLabel": "Alternaria ricini", 
 "^ot:originalLabel": "Alternaria ricini CBS_117361", 
+"^ot:ottId": 1011965, 
+"^ot:ottTaxonName": "Alternaria ricini", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 610117, 
 "@tb:identifier.taxonVariant": 815239, 
@@ -128,8 +224,9 @@
 }
 }, 
 "Tl3509599": {
-"^ot:altLabel": "Alternaria crassa", 
 "^ot:originalLabel": "Alternaria crassa CBS_110.38", 
+"^ot:ottId": 899898, 
+"^ot:ottTaxonName": "Alternaria crassa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 1004, 
 "@tb:identifier.taxonVariant": 2642, 
@@ -138,14 +235,17 @@
 }
 }, 
 "Tl3509600": {
-"^ot:originalLabel": "Alternaria venezuelensis CBS_116121"
+"^ot:originalLabel": "Alternaria venezuelensis CBS_116121", 
+"^ot:ottId": 3734963, 
+"^ot:ottTaxonName": "Alternaria venezuelensis"
 }, 
 "Tl3509601": {
 "^ot:originalLabel": "Alternaria hydrangeae YZU_171864"
 }, 
 "Tl3509602": {
-"^ot:altLabel": "Alternaria anodae", 
 "^ot:originalLabel": "Alternaria anodae PRI_12376", 
+"^ot:ottId": 3735013, 
+"^ot:ottTaxonName": "Alternaria anodae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 626350, 
 "@tb:identifier.taxonVariant": 839236, 
@@ -153,14 +253,19 @@
 }
 }, 
 "Tl3509603": {
-"^ot:originalLabel": "Alternaria novae-guineensis CBS_116120"
+"^ot:originalLabel": "Alternaria novae-guineensis CBS_116120", 
+"^ot:ottId": 3734864, 
+"^ot:ottTaxonName": "Alternaria novae-guineensis"
 }, 
 "Tl3509604": {
-"^ot:originalLabel": "Alternaria pipionipisi CBS_117365"
+"^ot:originalLabel": "Alternaria pipionipisi CBS_117365", 
+"^ot:ottId": 3734824, 
+"^ot:ottTaxonName": "Alternaria pipionipisi"
 }, 
 "Tl3509605": {
-"^ot:altLabel": "Alternaria obtecta", 
 "^ot:originalLabel": "Alternaria obtecta CBS_134278", 
+"^ot:ottId": 3735048, 
+"^ot:ottTaxonName": "Alternaria obtecta", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 626346, 
 "@tb:identifier.taxonVariant": 839230, 
@@ -168,8 +273,9 @@
 }
 }, 
 "Tl3509606": {
-"^ot:altLabel": "Alternaria aragakii", 
 "^ot:originalLabel": "Alternaria aragakii CBS_594.93", 
+"^ot:ottId": 535177, 
+"^ot:ottTaxonName": "Alternaria aragakii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 610133, 
 "@tb:identifier.taxonVariant": 815255, 
@@ -177,8 +283,9 @@
 }
 }, 
 "Tl3509607": {
-"^ot:altLabel": "Alternaria agerati", 
 "^ot:originalLabel": "Alternaria agerati CBS_117221", 
+"^ot:ottId": 240251, 
+"^ot:ottTaxonName": "Alternaria agerati", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 610124, 
 "@tb:identifier.taxonVariant": 815246, 
@@ -186,8 +293,9 @@
 }
 }, 
 "Tl3509608": {
-"^ot:altLabel": "Alternaria rostellata", 
 "^ot:originalLabel": "Alternaria rostellata CBS_117366", 
+"^ot:ottId": 417590, 
+"^ot:ottTaxonName": "Alternaria rostellata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 610118, 
 "@tb:identifier.taxonVariant": 815240, 
@@ -195,11 +303,14 @@
 }
 }, 
 "Tl3509609": {
-"^ot:originalLabel": "Alternaria tillandsiae CBS_116116"
+"^ot:originalLabel": "Alternaria tillandsiae CBS_116116", 
+"^ot:ottId": 3734751, 
+"^ot:ottTaxonName": "Alternaria tillandsiae"
 }, 
 "Tl3509610": {
-"^ot:altLabel": "Alternaria cassiae", 
 "^ot:originalLabel": "Alternaria cassiae CBS_117369", 
+"^ot:ottId": 1054703, 
+"^ot:ottTaxonName": "Alternaria cassiae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 402154, 
 "@tb:identifier.taxonVariant": 408086, 
@@ -208,11 +319,14 @@
 }
 }, 
 "Tl3509611": {
-"^ot:originalLabel": "Alternaria pipionipisi CBS_116115"
+"^ot:originalLabel": "Alternaria pipionipisi CBS_116115", 
+"^ot:ottId": 3734824, 
+"^ot:ottTaxonName": "Alternaria pipionipisi"
 }, 
 "Tl3509612": {
-"^ot:altLabel": "Alternaria sesami", 
 "^ot:originalLabel": "Alternaria sesami CBS_115264", 
+"^ot:ottId": 348594, 
+"^ot:ottTaxonName": "Alternaria sesami", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 1030, 
 "@tb:identifier.taxonVariant": 2700, 
@@ -230,17 +344,22 @@
 }
 }, 
 "Tl3509614": {
-"^ot:originalLabel": "Alternaria citrullicola CBS_103.32"
+"^ot:originalLabel": "Alternaria citrullicola CBS_103.32", 
+"^ot:ottId": 5713371, 
+"^ot:ottTaxonName": "Alternaria citrullicola"
 }, 
 "Tl3509615": {
-"^ot:originalLabel": "Alternaria sennae CBS_477.81"
+"^ot:originalLabel": "Alternaria sennae CBS_477.81", 
+"^ot:ottId": 5713210, 
+"^ot:ottTaxonName": "Alternaria sennae"
 }, 
 "Tl3509616": {
 "^ot:originalLabel": "Alternaria hydrangeae YZU_171865"
 }, 
 "Tl3509617": {
-"^ot:altLabel": "Alternaria euphorbiicola", 
 "^ot:originalLabel": "Alternaria euphorbiicola CBS_133874", 
+"^ot:ottId": 106659, 
+"^ot:ottTaxonName": "Alternaria euphorbiicola", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 250538, 
 "@tb:identifier.taxonVariant": 310304, 
@@ -249,8 +368,9 @@
 }
 }, 
 "Tl3509618": {
-"^ot:altLabel": "Alternaria steviae", 
 "^ot:originalLabel": "Alternaria steviae CBS_117362", 
+"^ot:ottId": 838802, 
+"^ot:ottTaxonName": "Alternaria steviae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 610122, 
 "@tb:identifier.taxonVariant": 815244, 
@@ -258,8 +378,9 @@
 }
 }, 
 "Tl3509619": {
-"^ot:altLabel": "Alternaria nitrimali", 
 "^ot:originalLabel": "Alternaria nitrimali CBS_109163", 
+"^ot:ottId": 1066089, 
+"^ot:ottTaxonName": "Alternaria nitrimali", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 610132, 
 "@tb:identifier.taxonVariant": 815254, 
@@ -283,8 +404,9 @@
 "^ot:originalLabel": "Alternaria zinnae CBS_108.61"
 }, 
 "Tl3509623": {
-"^ot:altLabel": "Alternaria sidae", 
 "^ot:originalLabel": "Alternaria sidae CBS_117730", 
+"^ot:ottId": 3734879, 
+"^ot:ottTaxonName": "Alternaria sidae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 626349, 
 "@tb:identifier.taxonVariant": 839235, 
@@ -292,14 +414,19 @@
 }
 }, 
 "Tl3509624": {
-"^ot:originalLabel": "Alternaria azadirachtae CBS_116444"
+"^ot:originalLabel": "Alternaria azadirachtae CBS_116444", 
+"^ot:ottId": 3734754, 
+"^ot:ottTaxonName": "Alternaria azadirachtae"
 }, 
 "Tl3509625": {
-"^ot:originalLabel": "Alternaria thunbergiae CBS_120986"
+"^ot:originalLabel": "Alternaria thunbergiae CBS_120986", 
+"^ot:ottId": 3734799, 
+"^ot:ottTaxonName": "Alternaria thunbergiae"
 }, 
 "Tl3509626": {
-"^ot:altLabel": "Alternaria tagetica", 
 "^ot:originalLabel": "Alternaria tagetica CBS_480.81", 
+"^ot:ottId": 577278, 
+"^ot:ottTaxonName": "Alternaria tagetica", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 1033, 
 "@tb:identifier.taxonVariant": 2708, 
@@ -308,14 +435,19 @@
 }
 }, 
 "Tl3509627": {
-"^ot:originalLabel": "Alternaria thunbergiae CBS_116331"
+"^ot:originalLabel": "Alternaria thunbergiae CBS_116331", 
+"^ot:ottId": 3734799, 
+"^ot:ottTaxonName": "Alternaria thunbergiae"
 }, 
 "Tl3509628": {
-"^ot:originalLabel": "Alternaria deserticola CBS_110799"
+"^ot:originalLabel": "Alternaria deserticola CBS_110799", 
+"^ot:ottId": 5713242, 
+"^ot:ottTaxonName": "Alternaria deserticola"
 }, 
 "Tl3509629": {
-"^ot:altLabel": "Alternaria limicola", 
 "^ot:originalLabel": "Alternaria limicola CBS_483.90", 
+"^ot:ottId": 601570, 
+"^ot:ottTaxonName": "Alternaria limicola", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 1013, 
 "@tb:identifier.taxonVariant": 2659, 
@@ -347,7 +479,19 @@
 "Tr115858": {
 "@label": "con 50 majrule", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn18108817", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 36, 
 "^tb:quality.tree": "Unrated", 
