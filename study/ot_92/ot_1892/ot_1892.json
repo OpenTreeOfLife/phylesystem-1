@@ -55,22 +55,115 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2019-03-14T16:16:06.317Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:curatorName": "susan-holder", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}, 
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": "$1"
+}, 
+"old": {
+"$": "^(\\S*\\s+\\S*).*"
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2019-03-14T16:16:06.317Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"susan-holder"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S23871"
 }, 
+"^ot:focalCladeOTTTaxonName": "", 
 "^ot:otusElementOrder": [
 "Tls67864"
 ], 
 "^ot:studyId": "ot_1892", 
+"^ot:studyPublication": {
+"@href": ""
+}, 
 "^ot:studyPublicationReference": "Han L., Zhao K., Liu C., Chu H., & Tang L. 2019. Strobilomyces minor sp. nov. (Boletaceae), associated with Fagaceae in Central China. Phytotaxa, .", 
 "^ot:studyYear": 2019, 
+"^ot:tag": [], 
 "^ot:taxonLinkPrefixes": {
 "@ubio": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:", 
 "@uniprot": "http://purl.uniprot.org/taxonomy/"
@@ -93,20 +186,25 @@
 "^skos:historyNote": "Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlOTUWriter@7444f7aa $Rev$", 
 "otuById": {
 "Tl3543495": {
-"^ot:originalLabel": "Strobilomyces glabriceps MAKs290_L6_Japan"
+"^ot:originalLabel": "Strobilomyces glabriceps MAKs290_L6_Japan", 
+"^ot:ottId": 3835350, 
+"^ot:ottTaxonName": "Strobilomyces glabriceps"
 }, 
 "Tl3543496": {
 "^ot:originalLabel": "PS2 MAKs192 L9 Japan"
 }, 
 "Tl3543497": {
-"^ot:originalLabel": "Strobilomyces alpinus HKAS77969_Hubei_China"
+"^ot:originalLabel": "Strobilomyces alpinus HKAS77969_Hubei_China", 
+"^ot:ottId": 3835369, 
+"^ot:ottTaxonName": "Strobilomyces alpinus"
 }, 
 "Tl3543498": {
 "^ot:originalLabel": "Strobilomyces minor HKAS101910_Hunan_China"
 }, 
 "Tl3543499": {
-"^ot:altLabel": "Strobilomyces seminudus", 
 "^ot:originalLabel": "Strobilomyces seminudus MAKs346_L4_Japan", 
+"^ot:ottId": 1001802, 
+"^ot:ottTaxonName": "Strobilomyces seminudus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 327270, 
 "@tb:identifier.taxonVariant": 368601, 
@@ -118,8 +216,9 @@
 "^ot:originalLabel": "Strobilomyces minor HKAS101909_Hunan_China_type"
 }, 
 "Tl3543501": {
-"^ot:altLabel": "Strobilomyces strobilaceus", 
 "^ot:originalLabel": "Strobilomyces strobilaceus MB001177_Germany", 
+"^ot:ottId": 551334, 
+"^ot:ottTaxonName": "Strobilomyces strobilaceus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 440355, 
 "@tb:identifier.taxonVariant": 580711, 
@@ -128,20 +227,27 @@
 }
 }, 
 "Tl3543502": {
-"^ot:originalLabel": "Strobilomyces glabriceps SharmaS357_India"
+"^ot:originalLabel": "Strobilomyces glabriceps SharmaS357_India", 
+"^ot:ottId": 3835350, 
+"^ot:ottTaxonName": "Strobilomyces glabriceps"
 }, 
 "Tl3543503": {
 "^ot:originalLabel": "PS9 HKAS82354 Yunnan China"
 }, 
 "Tl3543504": {
-"^ot:originalLabel": "Strobilomyces atrosquamosus HKAS55368_Yunnan_China"
+"^ot:originalLabel": "Strobilomyces atrosquamosus HKAS55368_Yunnan_China", 
+"^ot:ottId": 3835349, 
+"^ot:ottTaxonName": "Strobilomyces atrosquamosus"
 }, 
 "Tl3543505": {
-"^ot:originalLabel": "Strobilomyces echinocephalus HKAS92153_Hubei_China"
+"^ot:originalLabel": "Strobilomyces echinocephalus HKAS92153_Hubei_China", 
+"^ot:ottId": 5262646, 
+"^ot:ottTaxonName": "Strobilomyces echinocephalus"
 }, 
 "Tl3543506": {
-"^ot:altLabel": "Strobilomyces confusus", 
 "^ot:originalLabel": "Strobilomyces confusus WU17032_USA", 
+"^ot:ottId": 1001805, 
+"^ot:ottTaxonName": "Strobilomyces confusus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 327269, 
 "@tb:identifier.taxonVariant": 368600, 
@@ -150,11 +256,14 @@
 }
 }, 
 "Tl3543507": {
-"^ot:originalLabel": "Strobilomyces velutipes NY1193952_Australia"
+"^ot:originalLabel": "Strobilomyces velutipes NY1193952_Australia", 
+"^ot:ottId": 3835343, 
+"^ot:ottTaxonName": "Strobilomyces velutipes"
 }, 
 "Tl3543508": {
-"^ot:altLabel": "Strobilomyces foveatus", 
 "^ot:originalLabel": "Strobilomyces foveatus FRI69468_Malaysia_", 
+"^ot:ottId": 1012582, 
+"^ot:ottTaxonName": "Strobilomyces foveatus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 601786, 
 "@tb:identifier.taxonVariant": 802374, 
@@ -162,7 +271,9 @@
 }
 }, 
 "Tl3543509": {
-"^ot:originalLabel": "Strobilomyces velutinus HKAS84755_Yunnan_China"
+"^ot:originalLabel": "Strobilomyces velutinus HKAS84755_Yunnan_China", 
+"^ot:ottId": 3835342, 
+"^ot:ottTaxonName": "Strobilomyces velutinus"
 }, 
 "Tl3543510": {
 "^ot:originalLabel": "PS21 HKAS92326 Hubei China "
@@ -174,8 +285,9 @@
 "^ot:originalLabel": "PS2 HKAS73175 Yunnan China"
 }, 
 "Tl3543513": {
-"^ot:altLabel": "Strobilomyces strobilaceus", 
 "^ot:originalLabel": "Strobilomyces strobilaceus WU0016537_Austria", 
+"^ot:ottId": 551334, 
+"^ot:ottTaxonName": "Strobilomyces strobilaceus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 440355, 
 "@tb:identifier.taxonVariant": 580711, 
@@ -184,8 +296,9 @@
 }
 }, 
 "Tl3543514": {
-"^ot:altLabel": "Strobilomyces seminudus", 
 "^ot:originalLabel": "Strobilomyces seminudus HKAS59461_Yunnan_China", 
+"^ot:ottId": 1001802, 
+"^ot:ottTaxonName": "Strobilomyces seminudus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 327270, 
 "@tb:identifier.taxonVariant": 368601, 
@@ -197,20 +310,27 @@
 "^ot:originalLabel": "PS23 NY1034428 Australia"
 }, 
 "Tl3543516": {
-"^ot:originalLabel": "Strobilomyces hongoi MAKs429_L1_Japan"
+"^ot:originalLabel": "Strobilomyces hongoi MAKs429_L1_Japan", 
+"^ot:ottId": 1025954, 
+"^ot:ottTaxonName": "Strobilomyces hongoi"
 }, 
 "Tl3543517": {
-"^ot:originalLabel": "Strobilomyces subnudus HKAS59435_Yunnan_China"
+"^ot:originalLabel": "Strobilomyces subnudus HKAS59435_Yunnan_China", 
+"^ot:ottId": 3835373, 
+"^ot:ottTaxonName": "Strobilomyces subnudus"
 }, 
 "Tl3543518": {
-"^ot:originalLabel": "Strobilomyces latirimosus HKAS74865_Yunnan_China"
+"^ot:originalLabel": "Strobilomyces latirimosus HKAS74865_Yunnan_China", 
+"^ot:ottId": 3835371, 
+"^ot:ottTaxonName": "Strobilomyces latirimosus"
 }, 
 "Tl3543519": {
 "^ot:originalLabel": "PS3 HKAS74963 Yunnan China"
 }, 
 "Tl3543520": {
-"^ot:altLabel": "Strobilomyces strobilaceus", 
 "^ot:originalLabel": "Strobilomyces strobilaceus MAKs380_L11_Japan", 
+"^ot:ottId": 551334, 
+"^ot:ottTaxonName": "Strobilomyces strobilaceus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 440355, 
 "@tb:identifier.taxonVariant": 580711, 
@@ -226,14 +346,17 @@
 }, 
 "Tl3543523": {
 "^ot:originalLabel": "Strobilomyces verruculosus HKAS77026_Jiangxi_China", 
+"^ot:ottId": 365807, 
+"^ot:ottTaxonName": "Strobilomyces verruculosus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 456364, 
 "@tb:identifier.taxonVariant": 604327
 }
 }, 
 "Tl3543524": {
-"^ot:altLabel": "Strobilomyces strobilaceus", 
 "^ot:originalLabel": "Strobilomyces strobilaceus WU17111_Mexico", 
+"^ot:ottId": 551334, 
+"^ot:ottTaxonName": "Strobilomyces strobilaceus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 440355, 
 "@tb:identifier.taxonVariant": 580711, 
@@ -245,8 +368,9 @@
 "^ot:originalLabel": "PS26 PC0723567 New Caledonia"
 }, 
 "Tl3543526": {
-"^ot:altLabel": "Strobilomyces strobilaceus", 
 "^ot:originalLabel": "Strobilomyces strobilaceus MAKs229_England", 
+"^ot:ottId": 551334, 
+"^ot:ottTaxonName": "Strobilomyces strobilaceus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 440355, 
 "@tb:identifier.taxonVariant": 580711, 
@@ -255,13 +379,17 @@
 }
 }, 
 "Tl3543527": {
-"^ot:originalLabel": "Strobilomyces montosus HKAS74809_Yunnan_China"
+"^ot:originalLabel": "Strobilomyces montosus HKAS74809_Yunnan_China", 
+"^ot:ottId": 3835379, 
+"^ot:ottTaxonName": "Strobilomyces montosus"
 }, 
 "Tl3543528": {
 "^ot:originalLabel": "PS12 NY1034410 Australia"
 }, 
 "Tl3543529": {
-"^ot:originalLabel": "Strobilomyces velutinus MAKs421_L2_Japan"
+"^ot:originalLabel": "Strobilomyces velutinus MAKs421_L2_Japan", 
+"^ot:ottId": 3835342, 
+"^ot:ottTaxonName": "Strobilomyces velutinus"
 }, 
 "Tl3543530": {
 "^ot:originalLabel": "PS7 NY1491183 Australia"
@@ -270,7 +398,9 @@
 "^ot:originalLabel": "PS8 HKAS80300 Anhui China"
 }, 
 "Tl3543532": {
-"^ot:originalLabel": "Strobilomyces glabriceps HKAS67811_Yunnan_China"
+"^ot:originalLabel": "Strobilomyces glabriceps HKAS67811_Yunnan_China", 
+"^ot:ottId": 3835350, 
+"^ot:ottTaxonName": "Strobilomyces glabriceps"
 }, 
 "Tl3543533": {
 "^ot:originalLabel": "PS19 NY1393513 Australia"
@@ -279,8 +409,9 @@
 "^ot:originalLabel": "Strobilomyces brunneolepidotus MAKs309_L14_Taiwan_China"
 }, 
 "Tl3543535": {
-"^ot:altLabel": "Strobilomyces mirandus", 
 "^ot:originalLabel": "Strobilomyces mirandus HKAS59408_Yunnan_China", 
+"^ot:ottId": 619188, 
+"^ot:ottTaxonName": "Strobilomyces mirandus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 363809, 
 "@tb:identifier.taxonVariant": 391134, 
@@ -289,8 +420,9 @@
 }
 }, 
 "Tl3543536": {
-"^ot:altLabel": "Afroboletus luteolus", 
 "^ot:originalLabel": "Afroboletus luteolus PC0723573_Zambia", 
+"^ot:ottId": 416302, 
+"^ot:ottTaxonName": "Afroboletus luteolus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 620790, 
 "@tb:identifier.taxonVariant": 840565, 
@@ -313,8 +445,9 @@
 "^ot:originalLabel": "PS5 NY1393538 Thailand"
 }, 
 "Tl3543542": {
-"^ot:altLabel": "Strobilomyces mirandus", 
 "^ot:originalLabel": "Strobilomyces mirandus MAKs310_L13_Taiwan_China", 
+"^ot:ottId": 619188, 
+"^ot:ottTaxonName": "Strobilomyces mirandus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 363809, 
 "@tb:identifier.taxonVariant": 391134, 
@@ -324,6 +457,8 @@
 }, 
 "Tl3543543": {
 "^ot:originalLabel": "Strobilomyces verruculosus NY1393514_Thailand", 
+"^ot:ottId": 365807, 
+"^ot:ottTaxonName": "Strobilomyces verruculosus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 456364, 
 "@tb:identifier.taxonVariant": 604327
@@ -333,14 +468,19 @@
 "^ot:originalLabel": "PS18 KEP4364 Malaysia "
 }, 
 "Tl3543545": {
-"^ot:originalLabel": "Strobilomyces pteroreticulosporus HKAS80350_Shaanxi_China"
+"^ot:originalLabel": "Strobilomyces pteroreticulosporus HKAS80350_Shaanxi_China", 
+"^ot:ottId": 5984318, 
+"^ot:ottTaxonName": "Strobilomyces pteroreticulosporus"
 }, 
 "Tl3543546": {
-"^ot:originalLabel": "Strobilomyces echinocephalus MAKs111_L10_Japan"
+"^ot:originalLabel": "Strobilomyces echinocephalus MAKs111_L10_Japan", 
+"^ot:ottId": 5262646, 
+"^ot:ottTaxonName": "Strobilomyces echinocephalus"
 }, 
 "Tl3543547": {
-"^ot:altLabel": "Strobilomyces strobilaceus", 
 "^ot:originalLabel": "Strobilomyces strobilaceus MAKs228_Danmark", 
+"^ot:ottId": 551334, 
+"^ot:ottTaxonName": "Strobilomyces strobilaceus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 440355, 
 "@tb:identifier.taxonVariant": 580711, 
@@ -358,16 +498,22 @@
 "^ot:originalLabel": "PS1 HKAS83740 Yunnan China"
 }, 
 "Tl3543551": {
-"^ot:originalLabel": "Strobilomyces mollis HKAS59833_Hainan_China"
+"^ot:originalLabel": "Strobilomyces mollis HKAS59833_Hainan_China", 
+"^ot:ottId": 3835362, 
+"^ot:ottTaxonName": "Strobilomyces mollis"
 }, 
 "Tl3543552": {
 "^ot:originalLabel": "Afroboletus sequestratus PC0723575_Zambia"
 }, 
 "Tl3543553": {
-"^ot:originalLabel": "Strobilomyces parvirimosus HKAS74547_Yunnan_China"
+"^ot:originalLabel": "Strobilomyces parvirimosus HKAS74547_Yunnan_China", 
+"^ot:ottId": 3835368, 
+"^ot:ottTaxonName": "Strobilomyces parvirimosus"
 }, 
 "Tl3543554": {
-"^ot:originalLabel": "Strobilomyces atrosquamosus MAKs174_L7_Japan"
+"^ot:originalLabel": "Strobilomyces atrosquamosus MAKs174_L7_Japan", 
+"^ot:ottId": 3835349, 
+"^ot:ottTaxonName": "Strobilomyces atrosquamosus"
 }, 
 "Tl3543555": {
 "^ot:originalLabel": "PS16 HKAS84055 USA"
@@ -382,8 +528,9 @@
 "^ot:originalLabel": "PS24 NY75253 Costa Rica"
 }, 
 "Tl3543559": {
-"^ot:altLabel": "Strobilomyces annulatus", 
 "^ot:originalLabel": "Strobilomyces annulatus FRI62753_Malaysia", 
+"^ot:ottId": 1012580, 
+"^ot:ottTaxonName": "Strobilomyces annulatus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 601787, 
 "@tb:identifier.taxonVariant": 802375, 
@@ -391,8 +538,9 @@
 }
 }, 
 "Tl3543560": {
-"^ot:altLabel": "Strobilomyces strobilaceus", 
 "^ot:originalLabel": "Strobilomyces strobilaceus MAKs224_USA", 
+"^ot:ottId": 551334, 
+"^ot:ottTaxonName": "Strobilomyces strobilaceus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 440355, 
 "@tb:identifier.taxonVariant": 580711, 
@@ -401,13 +549,19 @@
 }
 }, 
 "Tl3543561": {
-"^ot:originalLabel": "Strobilomyces glabellus HKAS74887_Yunnan_China"
+"^ot:originalLabel": "Strobilomyces glabellus HKAS74887_Yunnan_China", 
+"^ot:ottId": 3835376, 
+"^ot:ottTaxonName": "Strobilomyces glabellus"
 }, 
 "Tl3543562": {
-"^ot:originalLabel": "Afroboletus multijugus PC0723570_Burundi"
+"^ot:originalLabel": "Afroboletus multijugus PC0723570_Burundi", 
+"^ot:ottId": 3835959, 
+"^ot:ottTaxonName": "Afroboletus multijugus"
 }, 
 "Tl3543563": {
 "^ot:originalLabel": "Boletus reticuloceps HKAS55431_Yunnan_China", 
+"^ot:ottId": 967291, 
+"^ot:ottTaxonName": "Boletus reticuloceps", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 450650, 
 "@tb:identifier.taxonVariant": 596075
@@ -423,8 +577,9 @@
 "^ot:originalLabel": "PS5 MAKs305 L12 Taiwan China"
 }, 
 "Tl3543567": {
-"^ot:altLabel": "Strobilomyces seminudus", 
 "^ot:originalLabel": "Strobilomyces seminudus NY1393550_Thailand", 
+"^ot:ottId": 1001802, 
+"^ot:ottTaxonName": "Strobilomyces seminudus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 327270, 
 "@tb:identifier.taxonVariant": 368601, 
@@ -439,8 +594,9 @@
 "^ot:originalLabel": "Strobilomyces brunneolepidotus HKAS80689_Guangdong_China"
 }, 
 "Tl3543570": {
-"^ot:altLabel": "Strobilomyces strobilaceus", 
 "^ot:originalLabel": "Strobilomyces strobilaceus HKAS95079_Yunnan_China", 
+"^ot:ottId": 551334, 
+"^ot:ottTaxonName": "Strobilomyces strobilaceus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 440355, 
 "@tb:identifier.taxonVariant": 580711, 
@@ -452,11 +608,14 @@
 "^ot:originalLabel": "PS14 WU17057 USA"
 }, 
 "Tl3543572": {
-"^ot:originalLabel": "Strobilomyces echinatus PC0723576_Burundi"
+"^ot:originalLabel": "Strobilomyces echinatus PC0723576_Burundi", 
+"^ot:ottId": 3835380, 
+"^ot:ottTaxonName": "Strobilomyces echinatus"
 }, 
 "Tl3543573": {
-"^ot:altLabel": "Strobilomyces strobilaceus", 
 "^ot:originalLabel": "Strobilomyces strobilaceus HKAS75466_Hubei_China_", 
+"^ot:ottId": 551334, 
+"^ot:ottTaxonName": "Strobilomyces strobilaceus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 440355, 
 "@tb:identifier.taxonVariant": 580711, 
@@ -466,6 +625,8 @@
 }, 
 "Tl3543574": {
 "^ot:originalLabel": "Strobilomyces verruculosus MAKs359_L5_Japan", 
+"^ot:ottId": 365807, 
+"^ot:ottTaxonName": "Strobilomyces verruculosus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 456364, 
 "@tb:identifier.taxonVariant": 604327
@@ -486,7 +647,19 @@
 "Tr116470": {
 "@label": "con 50 majrule", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn18230705", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 80, 
 "^tb:quality.tree": "Unrated", 
