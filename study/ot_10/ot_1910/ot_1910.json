@@ -58,22 +58,115 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2019-03-14T17:25:45.723Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:curatorName": "susan-holder", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}, 
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": "$1"
+}, 
+"old": {
+"$": "^(\\S*\\s+\\S*).*"
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2019-03-14T17:25:45.723Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"susan-holder"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S23829"
 }, 
+"^ot:focalCladeOTTTaxonName": "", 
 "^ot:otusElementOrder": [
 "Tls67518"
 ], 
 "^ot:studyId": "ot_1910", 
+"^ot:studyPublication": {
+"@href": ""
+}, 
 "^ot:studyPublicationReference": "De silva D., Groenewald J.Z., Crous P.W., Ades P., Nasruddin A., Mongkolporn O., & Taylor P.W. 2019. Identification, prevalence and pathogenicity of Colletotrichum species causing anthracnose of Capsicum annuum in Asia. IMA Fungus, .", 
 "^ot:studyYear": 2019, 
+"^ot:tag": [], 
 "^ot:taxonLinkPrefixes": {
 "@ubio": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:", 
 "@uniprot": "http://purl.uniprot.org/taxonomy/"
@@ -96,8 +189,9 @@
 "^skos:historyNote": "Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlOTUWriter@2ed2e10f $Rev$", 
 "otuById": {
 "Tl3514513": {
-"^ot:altLabel": "Colletotrichum nupharicola", 
 "^ot:originalLabel": "Colletotrichum nupharicola C1275.24", 
+"^ot:ottId": 192934, 
+"^ot:ottTaxonName": "Colletotrichum nupharicola", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 614506, 
 "@tb:identifier.taxonVariant": 821645, 
@@ -105,17 +199,22 @@
 }
 }, 
 "Tl3514514": {
-"^ot:originalLabel": "Colletotrichum asianum C1187"
+"^ot:originalLabel": "Colletotrichum asianum C1187", 
+"^ot:ottId": 931566, 
+"^ot:ottTaxonName": "Colletotrichum asianum"
 }, 
 "Tl3514515": {
-"^ot:originalLabel": "Colletotrichum tropicale CMM4243"
+"^ot:originalLabel": "Colletotrichum tropicale CMM4243", 
+"^ot:ottId": 604684, 
+"^ot:ottTaxonName": "Colletotrichum tropicale"
 }, 
 "Tl3514516": {
 "^ot:originalLabel": "Colletotrichum wuxiense CGMCC_3.17894"
 }, 
 "Tl3514517": {
-"^ot:altLabel": "Colletotrichum aeschynomenes", 
 "^ot:originalLabel": "Colletotrichum aeschynomenes ICMP_17673", 
+"^ot:ottId": 412221, 
+"^ot:ottTaxonName": "Colletotrichum aeschynomenes", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 620671, 
 "@tb:identifier.taxonVariant": 831102, 
@@ -123,44 +222,65 @@
 }
 }, 
 "Tl3514518": {
-"^ot:originalLabel": "Colletotrichum siamense CPC_30210"
+"^ot:originalLabel": "Colletotrichum siamense CPC_30210", 
+"^ot:ottId": 594063, 
+"^ot:ottTaxonName": "Colletotrichum siamense"
 }, 
 "Tl3514519": {
-"^ot:originalLabel": "Colletotrichum fructicola ITCC_6270"
+"^ot:originalLabel": "Colletotrichum fructicola ITCC_6270", 
+"^ot:ottId": 594038, 
+"^ot:ottTaxonName": "Colletotrichum fructicola"
 }, 
 "Tl3514520": {
-"^ot:originalLabel": "Colletotrichum salsolae ICMP_19051"
+"^ot:originalLabel": "Colletotrichum salsolae ICMP_19051", 
+"^ot:ottId": 7803, 
+"^ot:ottTaxonName": "Colletotrichum salsolae"
 }, 
 "Tl3514521": {
-"^ot:originalLabel": "Colletotrichum grevilleae CBS_132879"
+"^ot:originalLabel": "Colletotrichum grevilleae CBS_132879", 
+"^ot:ottId": 5220312, 
+"^ot:ottTaxonName": "Colletotrichum grevilleae"
 }, 
 "Tl3514522": {
-"^ot:originalLabel": "Colletotrichum ti ICMP_4832"
+"^ot:originalLabel": "Colletotrichum ti ICMP_4832", 
+"^ot:ottId": 412211, 
+"^ot:ottTaxonName": "Colletotrichum ti"
 }, 
 "Tl3514523": {
 "^ot:originalLabel": "Colletotrichum tainanense UOM_1119"
 }, 
 "Tl3514524": {
-"^ot:originalLabel": "Colletotrichum siamense CPC_30223"
+"^ot:originalLabel": "Colletotrichum siamense CPC_30223", 
+"^ot:ottId": 594063, 
+"^ot:ottTaxonName": "Colletotrichum siamense"
 }, 
 "Tl3514525": {
-"^ot:originalLabel": "Colletotrichum fructicola ICMP_18581"
+"^ot:originalLabel": "Colletotrichum fructicola ICMP_18581", 
+"^ot:ottId": 594038, 
+"^ot:ottTaxonName": "Colletotrichum fructicola"
 }, 
 "Tl3514526": {
-"^ot:originalLabel": "Colletotrichum endophyticum UOM_1137"
+"^ot:originalLabel": "Colletotrichum endophyticum UOM_1137", 
+"^ot:ottId": 5220184, 
+"^ot:ottTaxonName": "Colletotrichum endophyticum"
 }, 
 "Tl3514527": {
 "^ot:originalLabel": "Colletotrichum chrisophilum CMM4268"
 }, 
 "Tl3514528": {
-"^ot:originalLabel": "Colletotrichum endophyticum DNCL075"
+"^ot:originalLabel": "Colletotrichum endophyticum DNCL075", 
+"^ot:ottId": 5220184, 
+"^ot:ottTaxonName": "Colletotrichum endophyticum"
 }, 
 "Tl3514529": {
-"^ot:originalLabel": "Colletotrichum alienum ICMP_12071"
+"^ot:originalLabel": "Colletotrichum alienum ICMP_12071", 
+"^ot:ottId": 412215, 
+"^ot:ottTaxonName": "Colletotrichum alienum"
 }, 
 "Tl3514530": {
-"^ot:altLabel": "Colletotrichum psidii", 
 "^ot:originalLabel": "Colletotrichum psidii ICMP_19120", 
+"^ot:ottId": 1057581, 
+"^ot:ottTaxonName": "Colletotrichum psidii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 614502, 
 "@tb:identifier.taxonVariant": 821641, 
@@ -168,22 +288,32 @@
 }
 }, 
 "Tl3514531": {
-"^ot:originalLabel": "Colletotrichum viniferum CAUG27"
+"^ot:originalLabel": "Colletotrichum viniferum CAUG27", 
+"^ot:ottId": 192924, 
+"^ot:ottTaxonName": "Colletotrichum viniferum"
 }, 
 "Tl3514532": {
-"^ot:originalLabel": "Colletotrichum siamense CPC_30236"
+"^ot:originalLabel": "Colletotrichum siamense CPC_30236", 
+"^ot:ottId": 594063, 
+"^ot:ottTaxonName": "Colletotrichum siamense"
 }, 
 "Tl3514533": {
-"^ot:originalLabel": "Colletotrichum siamense CPC_30234"
+"^ot:originalLabel": "Colletotrichum siamense CPC_30234", 
+"^ot:ottId": 594063, 
+"^ot:ottTaxonName": "Colletotrichum siamense"
 }, 
 "Tl3514534": {
 "^ot:originalLabel": "Colletotrichum helleniense CPC_26844"
 }, 
 "Tl3514535": {
-"^ot:originalLabel": "Colletotrichum siamense CPC_30209"
+"^ot:originalLabel": "Colletotrichum siamense CPC_30209", 
+"^ot:ottId": 594063, 
+"^ot:ottTaxonName": "Colletotrichum siamense"
 }, 
 "Tl3514536": {
-"^ot:originalLabel": "Colletotrichum cordylinicola MFLUCC_09.0551"
+"^ot:originalLabel": "Colletotrichum cordylinicola MFLUCC_09.0551", 
+"^ot:ottId": 684456, 
+"^ot:ottTaxonName": "Colletotrichum cordylinicola"
 }, 
 "Tl3514537": {
 "^ot:altLabel": "Colletotrichum gloeosporioides", 
@@ -200,47 +330,72 @@
 "^ot:originalLabel": "Colletotrichum hystricis CPC_28153"
 }, 
 "Tl3514539": {
-"^ot:originalLabel": "Colletotrichum siamense CPC_30212"
+"^ot:originalLabel": "Colletotrichum siamense CPC_30212", 
+"^ot:ottId": 594063, 
+"^ot:ottTaxonName": "Colletotrichum siamense"
 }, 
 "Tl3514540": {
-"^ot:originalLabel": "Colletotrichum siamense CBS_112983"
+"^ot:originalLabel": "Colletotrichum siamense CBS_112983", 
+"^ot:ottId": 594063, 
+"^ot:ottTaxonName": "Colletotrichum siamense"
 }, 
 "Tl3514541": {
-"^ot:originalLabel": "Colletotrichum siamense CPC_30235"
+"^ot:originalLabel": "Colletotrichum siamense CPC_30235", 
+"^ot:ottId": 594063, 
+"^ot:ottTaxonName": "Colletotrichum siamense"
 }, 
 "Tl3514542": {
-"^ot:originalLabel": "Colletotrichum henanense CGMCC_3.17354"
+"^ot:originalLabel": "Colletotrichum henanense CGMCC_3.17354", 
+"^ot:ottId": 5709513, 
+"^ot:ottTaxonName": "Colletotrichum henanense"
 }, 
 "Tl3514543": {
-"^ot:originalLabel": "Colletotrichum salsolae C1257.6"
+"^ot:originalLabel": "Colletotrichum salsolae C1257.6", 
+"^ot:ottId": 7803, 
+"^ot:ottTaxonName": "Colletotrichum salsolae"
 }, 
 "Tl3514544": {
-"^ot:originalLabel": "Colletotrichum hebeiense MFLUCC_13.0726"
+"^ot:originalLabel": "Colletotrichum hebeiense MFLUCC_13.0726", 
+"^ot:ottId": 6379591, 
+"^ot:ottTaxonName": "Colletotrichum hebeiense"
 }, 
 "Tl3514545": {
-"^ot:originalLabel": "Colletotrichum endophyticum LC0324"
+"^ot:originalLabel": "Colletotrichum endophyticum LC0324", 
+"^ot:ottId": 5220184, 
+"^ot:ottTaxonName": "Colletotrichum endophyticum"
 }, 
 "Tl3514546": {
 "^ot:originalLabel": "Colletotrichum tainanense UOM_1120"
 }, 
 "Tl3514547": {
-"^ot:originalLabel": "Colletotrichum tropicale UOM_1002"
+"^ot:originalLabel": "Colletotrichum tropicale UOM_1002", 
+"^ot:ottId": 604684, 
+"^ot:ottTaxonName": "Colletotrichum tropicale"
 }, 
 "Tl3514548": {
-"^ot:originalLabel": "Colletotrichum queenslandicum ICMP_1778"
+"^ot:originalLabel": "Colletotrichum queenslandicum ICMP_1778", 
+"^ot:ottId": 1040842, 
+"^ot:ottTaxonName": "Colletotrichum queenslandicum"
 }, 
 "Tl3514549": {
-"^ot:originalLabel": "Colletotrichum aotearoa ICMP_18537"
+"^ot:originalLabel": "Colletotrichum aotearoa ICMP_18537", 
+"^ot:ottId": 284858, 
+"^ot:ottTaxonName": "Colletotrichum aotearoa"
 }, 
 "Tl3514550": {
-"^ot:originalLabel": "Colletotrichum alienum C1194.22"
+"^ot:originalLabel": "Colletotrichum alienum C1194.22", 
+"^ot:ottId": 412215, 
+"^ot:ottTaxonName": "Colletotrichum alienum"
 }, 
 "Tl3514551": {
-"^ot:originalLabel": "Colletotrichum fructicola CPC_28645"
+"^ot:originalLabel": "Colletotrichum fructicola CPC_28645", 
+"^ot:ottId": 594038, 
+"^ot:ottTaxonName": "Colletotrichum fructicola"
 }, 
 "Tl3514552": {
-"^ot:altLabel": "Colletotrichum musae", 
 "^ot:originalLabel": "Colletotrichum musae CMM4458", 
+"^ot:ottId": 458358, 
+"^ot:ottTaxonName": "Colletotrichum musae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6695, 
 "@tb:identifier.taxonVariant": 16242, 
@@ -249,14 +404,19 @@
 }
 }, 
 "Tl3514553": {
-"^ot:originalLabel": "Colletotrichum conoides CAUG17"
+"^ot:originalLabel": "Colletotrichum conoides CAUG17", 
+"^ot:ottId": 5981068, 
+"^ot:ottTaxonName": "Colletotrichum conoides"
 }, 
 "Tl3514554": {
-"^ot:originalLabel": "Colletotrichum aenigma C1253.4"
+"^ot:originalLabel": "Colletotrichum aenigma C1253.4", 
+"^ot:ottId": 412227, 
+"^ot:ottTaxonName": "Colletotrichum aenigma"
 }, 
 "Tl3514555": {
-"^ot:altLabel": "Colletotrichum theobromicola", 
 "^ot:originalLabel": "Colletotrichum theobromicola CBS_124945", 
+"^ot:ottId": 604682, 
+"^ot:ottTaxonName": "Colletotrichum theobromicola", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 570082, 
 "@tb:identifier.taxonVariant": 790132, 
@@ -264,8 +424,9 @@
 }
 }, 
 "Tl3514556": {
-"^ot:altLabel": "Colletotrichum alatae", 
 "^ot:originalLabel": "Colletotrichum alatae ICMP_17919", 
+"^ot:ottId": 284843, 
+"^ot:ottTaxonName": "Colletotrichum alatae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 620669, 
 "@tb:identifier.taxonVariant": 831100, 
@@ -273,28 +434,42 @@
 }
 }, 
 "Tl3514557": {
-"^ot:originalLabel": "Colletotrichum syzygicola MFLUCC_10.0624"
+"^ot:originalLabel": "Colletotrichum syzygicola MFLUCC_10.0624", 
+"^ot:ottId": 5220183, 
+"^ot:ottTaxonName": "Colletotrichum syzygicola"
 }, 
 "Tl3514558": {
 "^ot:originalLabel": "Colletotrichum changpingense MFLUCC_15.0022"
 }, 
 "Tl3514559": {
-"^ot:originalLabel": "Colletotrichum proteae CBS_132882"
+"^ot:originalLabel": "Colletotrichum proteae CBS_132882", 
+"^ot:ottId": 5220511, 
+"^ot:ottTaxonName": "Colletotrichum proteae"
 }, 
 "Tl3514560": {
-"^ot:originalLabel": "Colletotrichum asianum ICMP_18580"
+"^ot:originalLabel": "Colletotrichum asianum ICMP_18580", 
+"^ot:ottId": 931566, 
+"^ot:ottTaxonName": "Colletotrichum asianum"
 }, 
 "Tl3514561": {
-"^ot:originalLabel": "Colletotrichum grossum YD_2016"
+"^ot:originalLabel": "Colletotrichum grossum YD_2016", 
+"^ot:ottId": 5981066, 
+"^ot:ottTaxonName": "Colletotrichum grossum"
 }, 
 "Tl3514562": {
-"^ot:originalLabel": "Colletotrichum tropicale UOM_1003"
+"^ot:originalLabel": "Colletotrichum tropicale UOM_1003", 
+"^ot:ottId": 604684, 
+"^ot:ottTaxonName": "Colletotrichum tropicale"
 }, 
 "Tl3514563": {
-"^ot:originalLabel": "Colletotrichum clidemiae ICMP_18706"
+"^ot:originalLabel": "Colletotrichum clidemiae ICMP_18706", 
+"^ot:ottId": 412218, 
+"^ot:ottTaxonName": "Colletotrichum clidemiae"
 }, 
 "Tl3514564": {
-"^ot:originalLabel": "Colletotrichum siamense CMM3814"
+"^ot:originalLabel": "Colletotrichum siamense CMM3814", 
+"^ot:ottId": 594063, 
+"^ot:ottTaxonName": "Colletotrichum siamense"
 }, 
 "Tl3514565": {
 "^ot:altLabel": "Colletotrichum camelliae", 
@@ -307,23 +482,32 @@
 }
 }, 
 "Tl3514566": {
-"^ot:originalLabel": "Colletotrichum tropicale CPC_28607"
+"^ot:originalLabel": "Colletotrichum tropicale CPC_28607", 
+"^ot:ottId": 604684, 
+"^ot:ottTaxonName": "Colletotrichum tropicale"
 }, 
 "Tl3514567": {
 "^ot:originalLabel": "Colletotrichum makassarense CPC_28612"
 }, 
 "Tl3514568": {
-"^ot:originalLabel": "Colletotrichum fructicola UOM_1139"
+"^ot:originalLabel": "Colletotrichum fructicola UOM_1139", 
+"^ot:ottId": 594038, 
+"^ot:ottTaxonName": "Colletotrichum fructicola"
 }, 
 "Tl3514569": {
-"^ot:originalLabel": "Colletotrichum endophyticum CAUG28"
+"^ot:originalLabel": "Colletotrichum endophyticum CAUG28", 
+"^ot:ottId": 5220184, 
+"^ot:ottTaxonName": "Colletotrichum endophyticum"
 }, 
 "Tl3514570": {
-"^ot:originalLabel": "Colletotrichum fructicola UOM_1138"
+"^ot:originalLabel": "Colletotrichum fructicola UOM_1138", 
+"^ot:ottId": 594038, 
+"^ot:ottTaxonName": "Colletotrichum fructicola"
 }, 
 "Tl3514571": {
-"^ot:altLabel": "Colletotrichum nupharicola", 
 "^ot:originalLabel": "Colletotrichum nupharicola ICMP_18187", 
+"^ot:ottId": 192934, 
+"^ot:ottTaxonName": "Colletotrichum nupharicola", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 614506, 
 "@tb:identifier.taxonVariant": 821645, 
@@ -331,17 +515,24 @@
 }
 }, 
 "Tl3514572": {
-"^ot:originalLabel": "Colletotrichum siamense CPC_30211"
+"^ot:originalLabel": "Colletotrichum siamense CPC_30211", 
+"^ot:ottId": 594063, 
+"^ot:ottTaxonName": "Colletotrichum siamense"
 }, 
 "Tl3514573": {
-"^ot:originalLabel": "Colletotrichum siamense CPC_30233"
+"^ot:originalLabel": "Colletotrichum siamense CPC_30233", 
+"^ot:ottId": 594063, 
+"^ot:ottTaxonName": "Colletotrichum siamense"
 }, 
 "Tl3514574": {
-"^ot:originalLabel": "Colletotrichum jiangxiense LF687"
+"^ot:originalLabel": "Colletotrichum jiangxiense LF687", 
+"^ot:ottId": 5709559, 
+"^ot:ottTaxonName": "Colletotrichum jiangxiense"
 }, 
 "Tl3514575": {
-"^ot:altLabel": "Colletotrichum kahawae", 
 "^ot:originalLabel": "Colletotrichum kahawae subsp._kahawae_ICMP_17816", 
+"^ot:ottId": 412224, 
+"^ot:ottTaxonName": "Colletotrichum kahawae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6691, 
 "@tb:identifier.taxonVariant": 16235, 
@@ -350,8 +541,9 @@
 }
 }, 
 "Tl3514576": {
-"^ot:altLabel": "Colletotrichum xanthorrhoeae", 
 "^ot:originalLabel": "Colletotrichum xanthorrhoeae CBS_127831", 
+"^ot:ottId": 730056, 
+"^ot:ottTaxonName": "Colletotrichum xanthorrhoeae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 428215, 
 "@tb:identifier.taxonVariant": 564050, 
@@ -360,23 +552,32 @@
 }
 }, 
 "Tl3514577": {
-"^ot:originalLabel": "Colletotrichum tropicale CMMBRA_4071"
+"^ot:originalLabel": "Colletotrichum tropicale CMMBRA_4071", 
+"^ot:ottId": 604684, 
+"^ot:ottTaxonName": "Colletotrichum tropicale"
 }, 
 "Tl3514578": {
-"^ot:originalLabel": "Colletotrichum aenigma C1256.6"
+"^ot:originalLabel": "Colletotrichum aenigma C1256.6", 
+"^ot:ottId": 412227, 
+"^ot:ottTaxonName": "Colletotrichum aenigma"
 }, 
 "Tl3514579": {
 "^ot:originalLabel": "Colletotrichum perseae GA100"
 }, 
 "Tl3514580": {
-"^ot:originalLabel": "Colletotrichum siamense ICMP_18578"
+"^ot:originalLabel": "Colletotrichum siamense ICMP_18578", 
+"^ot:ottId": 594063, 
+"^ot:ottTaxonName": "Colletotrichum siamense"
 }, 
 "Tl3514581": {
-"^ot:originalLabel": "Colletotrichum siamense CPC_30222"
+"^ot:originalLabel": "Colletotrichum siamense CPC_30222", 
+"^ot:ottId": 594063, 
+"^ot:ottTaxonName": "Colletotrichum siamense"
 }, 
 "Tl3514582": {
-"^ot:altLabel": "Colletotrichum horii", 
 "^ot:originalLabel": "Colletotrichum horii ICMP_10492", 
+"^ot:ottId": 365839, 
+"^ot:ottTaxonName": "Colletotrichum horii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 620667, 
 "@tb:identifier.taxonVariant": 831098, 
@@ -384,8 +585,9 @@
 }
 }, 
 "Tl3514583": {
-"^ot:altLabel": "Colletotrichum musae", 
 "^ot:originalLabel": "Colletotrichum musae CBS_116870", 
+"^ot:ottId": 458358, 
+"^ot:ottTaxonName": "Colletotrichum musae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6695, 
 "@tb:identifier.taxonVariant": 16242, 
@@ -394,46 +596,70 @@
 }
 }, 
 "Tl3514584": {
-"^ot:originalLabel": "Colletotrichum siamense C1315.2"
+"^ot:originalLabel": "Colletotrichum siamense C1315.2", 
+"^ot:ottId": 594063, 
+"^ot:ottTaxonName": "Colletotrichum siamense"
 }, 
 "Tl3514585": {
 "^ot:originalLabel": "Colletotrichum makassarense CPC_28556"
 }, 
 "Tl3514586": {
-"^ot:originalLabel": "Colletotrichum viniferum GZAAS_5.08601"
+"^ot:originalLabel": "Colletotrichum viniferum GZAAS_5.08601", 
+"^ot:ottId": 192924, 
+"^ot:ottTaxonName": "Colletotrichum viniferum"
 }, 
 "Tl3514587": {
-"^ot:originalLabel": "Colletotrichum queenslandicum ICMP_18705"
+"^ot:originalLabel": "Colletotrichum queenslandicum ICMP_18705", 
+"^ot:ottId": 1040842, 
+"^ot:ottTaxonName": "Colletotrichum queenslandicum"
 }, 
 "Tl3514588": {
-"^ot:originalLabel": "Colletotrichum tropicale GM33_L01"
+"^ot:originalLabel": "Colletotrichum tropicale GM33_L01", 
+"^ot:ottId": 604684, 
+"^ot:ottTaxonName": "Colletotrichum tropicale"
 }, 
 "Tl3514589": {
-"^ot:originalLabel": "Colletotrichum fructicola CPC_28644"
+"^ot:originalLabel": "Colletotrichum fructicola CPC_28644", 
+"^ot:ottId": 594038, 
+"^ot:ottTaxonName": "Colletotrichum fructicola"
 }, 
 "Tl3514590": {
-"^ot:originalLabel": "Colletotrichum siamense CBS_113199"
+"^ot:originalLabel": "Colletotrichum siamense CBS_113199", 
+"^ot:ottId": 594063, 
+"^ot:ottTaxonName": "Colletotrichum siamense"
 }, 
 "Tl3514591": {
-"^ot:originalLabel": "Colletotrichum siamense CPC_30221"
+"^ot:originalLabel": "Colletotrichum siamense CPC_30221", 
+"^ot:ottId": 594063, 
+"^ot:ottTaxonName": "Colletotrichum siamense"
 }, 
 "Tl3514592": {
-"^ot:originalLabel": "Colletotrichum fructicola LF130"
+"^ot:originalLabel": "Colletotrichum fructicola LF130", 
+"^ot:ottId": 594038, 
+"^ot:ottTaxonName": "Colletotrichum fructicola"
 }, 
 "Tl3514593": {
-"^ot:originalLabel": "Colletotrichum tropicale GM04_L01"
+"^ot:originalLabel": "Colletotrichum tropicale GM04_L01", 
+"^ot:ottId": 604684, 
+"^ot:ottTaxonName": "Colletotrichum tropicale"
 }, 
 "Tl3514594": {
-"^ot:originalLabel": "Colletotrichum tropicale CBS_124946"
+"^ot:originalLabel": "Colletotrichum tropicale CBS_124946", 
+"^ot:ottId": 604684, 
+"^ot:ottTaxonName": "Colletotrichum tropicale"
 }, 
 "Tl3514595": {
 "^ot:originalLabel": "Colletotrichum makassarense CPC_28555"
 }, 
 "Tl3514596": {
-"^ot:originalLabel": "Colletotrichum tropicale CPC_16260"
+"^ot:originalLabel": "Colletotrichum tropicale CPC_16260", 
+"^ot:ottId": 604684, 
+"^ot:ottTaxonName": "Colletotrichum tropicale"
 }, 
 "Tl3514597": {
-"^ot:originalLabel": "Colletotrichum tropicale ICMP_18653"
+"^ot:originalLabel": "Colletotrichum tropicale ICMP_18653", 
+"^ot:ottId": 604684, 
+"^ot:ottTaxonName": "Colletotrichum tropicale"
 }, 
 "Tl3514598": {
 "^ot:originalLabel": "Colletotrichum plurivorum UOM_1005"
@@ -451,8 +677,9 @@
 "^ot:originalLabel": "Colletotrichum plurivorum LJTJ16"
 }, 
 "Tl3514603": {
-"^ot:altLabel": "Colletotrichum dracaenophilum", 
 "^ot:originalLabel": "Colletotrichum dracaenophilum CBS_118199", 
+"^ot:ottId": 442042, 
+"^ot:ottTaxonName": "Colletotrichum dracaenophilum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 314405, 
 "@tb:identifier.taxonVariant": 359852, 
@@ -482,8 +709,9 @@
 "^ot:originalLabel": "Colletotrichum plurivorum CMM3746"
 }, 
 "Tl3514611": {
-"^ot:altLabel": "Colletotrichum orchidearum", 
 "^ot:originalLabel": "Colletotrichum orchidearum CBS_135131", 
+"^ot:ottId": 125958, 
+"^ot:ottTaxonName": "Colletotrichum orchidearum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 456094, 
 "@tb:identifier.taxonVariant": 603931, 
@@ -528,14 +756,19 @@
 "^ot:originalLabel": "Colletotrichum plurivorum UOM_1004"
 }, 
 "Tl3514624": {
-"^ot:originalLabel": "Colletotrichum scovillei CPC_28551"
+"^ot:originalLabel": "Colletotrichum scovillei CPC_28551", 
+"^ot:ottId": 608253, 
+"^ot:ottTaxonName": "Colletotrichum scovillei"
 }, 
 "Tl3514625": {
-"^ot:originalLabel": "Colletotrichum simmondsii BRIP_28519"
+"^ot:originalLabel": "Colletotrichum simmondsii BRIP_28519", 
+"^ot:ottId": 497186, 
+"^ot:ottTaxonName": "Colletotrichum simmondsii"
 }, 
 "Tl3514626": {
-"^ot:altLabel": "Colletotrichum acutatum", 
 "^ot:originalLabel": "Colletotrichum acutatum CBS_112996", 
+"^ot:ottId": 563425, 
+"^ot:ottTaxonName": "Colletotrichum acutatum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6679, 
 "@tb:identifier.taxonVariant": 16211, 
@@ -548,65 +781,102 @@
 "^ot:originalLabel": "Colletotrichum bannaense CGMCC_3.18887"
 }, 
 "Tl3514628": {
-"^ot:originalLabel": "Colletotrichum scovillei CPC_30230"
+"^ot:originalLabel": "Colletotrichum scovillei CPC_30230", 
+"^ot:ottId": 608253, 
+"^ot:ottTaxonName": "Colletotrichum scovillei"
 }, 
 "Tl3514629": {
-"^ot:originalLabel": "Colletotrichum scovillei UOM_1146"
+"^ot:originalLabel": "Colletotrichum scovillei UOM_1146", 
+"^ot:ottId": 608253, 
+"^ot:ottTaxonName": "Colletotrichum scovillei"
 }, 
 "Tl3514630": {
-"^ot:originalLabel": "Colletotrichum scovillei CPC_30206"
+"^ot:originalLabel": "Colletotrichum scovillei CPC_30206", 
+"^ot:ottId": 608253, 
+"^ot:ottTaxonName": "Colletotrichum scovillei"
 }, 
 "Tl3514631": {
-"^ot:originalLabel": "Colletotrichum scovillei CPC_28593"
+"^ot:originalLabel": "Colletotrichum scovillei CPC_28593", 
+"^ot:ottId": 608253, 
+"^ot:ottTaxonName": "Colletotrichum scovillei"
 }, 
 "Tl3514632": {
-"^ot:originalLabel": "Colletotrichum scovillei CPC_28617"
+"^ot:originalLabel": "Colletotrichum scovillei CPC_28617", 
+"^ot:ottId": 608253, 
+"^ot:ottTaxonName": "Colletotrichum scovillei"
 }, 
 "Tl3514633": {
 "^ot:originalLabel": "Colletotrichum paranaense CPC_20901"
 }, 
 "Tl3514634": {
-"^ot:originalLabel": "Colletotrichum tamarilloi CBS_129814"
+"^ot:originalLabel": "Colletotrichum tamarilloi CBS_129814", 
+"^ot:ottId": 608243, 
+"^ot:ottTaxonName": "Colletotrichum tamarilloi"
 }, 
 "Tl3514635": {
-"^ot:originalLabel": "Colletotrichum scovillei CPC_30215"
+"^ot:originalLabel": "Colletotrichum scovillei CPC_30215", 
+"^ot:ottId": 608253, 
+"^ot:ottTaxonName": "Colletotrichum scovillei"
 }, 
 "Tl3514636": {
-"^ot:originalLabel": "Colletotrichum scovillei UOM_1113"
+"^ot:originalLabel": "Colletotrichum scovillei UOM_1113", 
+"^ot:ottId": 608253, 
+"^ot:ottTaxonName": "Colletotrichum scovillei"
 }, 
 "Tl3514637": {
-"^ot:originalLabel": "Colletotrichum scovillei UOM_1142"
+"^ot:originalLabel": "Colletotrichum scovillei UOM_1142", 
+"^ot:ottId": 608253, 
+"^ot:ottTaxonName": "Colletotrichum scovillei"
 }, 
 "Tl3514638": {
-"^ot:originalLabel": "Colletotrichum scovillei CPC_28591"
+"^ot:originalLabel": "Colletotrichum scovillei CPC_28591", 
+"^ot:ottId": 608253, 
+"^ot:ottTaxonName": "Colletotrichum scovillei"
 }, 
 "Tl3514639": {
-"^ot:originalLabel": "Colletotrichum salicis CBS_607.94"
+"^ot:originalLabel": "Colletotrichum salicis CBS_607.94", 
+"^ot:ottId": 608255, 
+"^ot:ottTaxonName": "Colletotrichum salicis"
 }, 
 "Tl3514640": {
-"^ot:originalLabel": "Colletotrichum scovillei UOM_1114"
+"^ot:originalLabel": "Colletotrichum scovillei UOM_1114", 
+"^ot:ottId": 608253, 
+"^ot:ottTaxonName": "Colletotrichum scovillei"
 }, 
 "Tl3514641": {
-"^ot:originalLabel": "Colletotrichum melonis CBS_159.84"
+"^ot:originalLabel": "Colletotrichum melonis CBS_159.84", 
+"^ot:ottId": 97791, 
+"^ot:ottTaxonName": "Colletotrichum melonis"
 }, 
 "Tl3514642": {
-"^ot:originalLabel": "Colletotrichum scovillei UOM_1112"
+"^ot:originalLabel": "Colletotrichum scovillei UOM_1112", 
+"^ot:ottId": 608253, 
+"^ot:ottTaxonName": "Colletotrichum scovillei"
 }, 
 "Tl3514643": {
-"^ot:originalLabel": "Colletotrichum scovillei CPC_30240"
+"^ot:originalLabel": "Colletotrichum scovillei CPC_30240", 
+"^ot:ottId": 608253, 
+"^ot:ottTaxonName": "Colletotrichum scovillei"
 }, 
 "Tl3514644": {
-"^ot:originalLabel": "Colletotrichum scovillei CPC_30244"
+"^ot:originalLabel": "Colletotrichum scovillei CPC_30244", 
+"^ot:ottId": 608253, 
+"^ot:ottTaxonName": "Colletotrichum scovillei"
 }, 
 "Tl3514645": {
-"^ot:originalLabel": "Colletotrichum scovillei UOM_1111"
+"^ot:originalLabel": "Colletotrichum scovillei UOM_1111", 
+"^ot:ottId": 608253, 
+"^ot:ottTaxonName": "Colletotrichum scovillei"
 }, 
 "Tl3514646": {
-"^ot:originalLabel": "Colletotrichum abscissum CDA918"
+"^ot:originalLabel": "Colletotrichum abscissum CDA918", 
+"^ot:ottId": 5709489, 
+"^ot:ottTaxonName": "Colletotrichum abscissum"
 }, 
 "Tl3514647": {
-"^ot:altLabel": "Colletotrichum nymphaeae", 
 "^ot:originalLabel": "Colletotrichum nymphaeae CBS_515.78", 
+"^ot:ottId": 452863, 
+"^ot:ottTaxonName": "Colletotrichum nymphaeae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6696, 
 "@tb:identifier.taxonVariant": 16244, 
@@ -615,92 +885,149 @@
 }
 }, 
 "Tl3514648": {
-"^ot:originalLabel": "Colletotrichum scovillei CPC_30218"
+"^ot:originalLabel": "Colletotrichum scovillei CPC_30218", 
+"^ot:ottId": 608253, 
+"^ot:ottTaxonName": "Colletotrichum scovillei"
 }, 
 "Tl3514649": {
-"^ot:originalLabel": "Colletotrichum scovillei CPC_30202"
+"^ot:originalLabel": "Colletotrichum scovillei CPC_30202", 
+"^ot:ottId": 608253, 
+"^ot:ottTaxonName": "Colletotrichum scovillei"
 }, 
 "Tl3514650": {
-"^ot:originalLabel": "Colletotrichum citri YN01"
+"^ot:originalLabel": "Colletotrichum citri YN01", 
+"^ot:ottId": 5220209, 
+"^ot:ottTaxonName": "Colletotrichum citri"
 }, 
 "Tl3514651": {
-"^ot:originalLabel": "Colletotrichum scovillei CPC_30217"
+"^ot:originalLabel": "Colletotrichum scovillei CPC_30217", 
+"^ot:ottId": 608253, 
+"^ot:ottTaxonName": "Colletotrichum scovillei"
 }, 
 "Tl3514652": {
-"^ot:originalLabel": "Colletotrichum scovillei UOM_1151"
+"^ot:originalLabel": "Colletotrichum scovillei UOM_1151", 
+"^ot:ottId": 608253, 
+"^ot:ottTaxonName": "Colletotrichum scovillei"
 }, 
 "Tl3514653": {
-"^ot:originalLabel": "Colletotrichum scovillei UOM_1109"
+"^ot:originalLabel": "Colletotrichum scovillei UOM_1109", 
+"^ot:ottId": 608253, 
+"^ot:ottTaxonName": "Colletotrichum scovillei"
 }, 
 "Tl3514654": {
-"^ot:originalLabel": "Colletotrichum scovillei UOM_1104"
+"^ot:originalLabel": "Colletotrichum scovillei UOM_1104", 
+"^ot:ottId": 608253, 
+"^ot:ottTaxonName": "Colletotrichum scovillei"
 }, 
 "Tl3514655": {
-"^ot:originalLabel": "Colletotrichum scovillei CPC_30248"
+"^ot:originalLabel": "Colletotrichum scovillei CPC_30248", 
+"^ot:ottId": 608253, 
+"^ot:ottTaxonName": "Colletotrichum scovillei"
 }, 
 "Tl3514656": {
-"^ot:originalLabel": "Colletotrichum scovillei CPC_30205"
+"^ot:originalLabel": "Colletotrichum scovillei CPC_30205", 
+"^ot:ottId": 608253, 
+"^ot:ottTaxonName": "Colletotrichum scovillei"
 }, 
 "Tl3514657": {
-"^ot:originalLabel": "Colletotrichum costaricense CBS_330.75"
+"^ot:originalLabel": "Colletotrichum costaricense CBS_330.75", 
+"^ot:ottId": 446719, 
+"^ot:ottTaxonName": "Colletotrichum costaricense"
 }, 
 "Tl3514658": {
-"^ot:originalLabel": "Colletotrichum scovillei UOM_1106"
+"^ot:originalLabel": "Colletotrichum scovillei UOM_1106", 
+"^ot:ottId": 608253, 
+"^ot:ottTaxonName": "Colletotrichum scovillei"
 }, 
 "Tl3514659": {
-"^ot:originalLabel": "Colletotrichum scovillei CPC_30247"
+"^ot:originalLabel": "Colletotrichum scovillei CPC_30247", 
+"^ot:ottId": 608253, 
+"^ot:ottTaxonName": "Colletotrichum scovillei"
 }, 
 "Tl3514660": {
-"^ot:originalLabel": "Colletotrichum scovillei UOM_1149"
+"^ot:originalLabel": "Colletotrichum scovillei UOM_1149", 
+"^ot:ottId": 608253, 
+"^ot:ottTaxonName": "Colletotrichum scovillei"
 }, 
 "Tl3514661": {
-"^ot:originalLabel": "Colletotrichum scovillei CPC_30220"
+"^ot:originalLabel": "Colletotrichum scovillei CPC_30220", 
+"^ot:ottId": 608253, 
+"^ot:ottTaxonName": "Colletotrichum scovillei"
 }, 
 "Tl3514662": {
-"^ot:originalLabel": "Colletotrichum scovillei CBS_126529"
+"^ot:originalLabel": "Colletotrichum scovillei CBS_126529", 
+"^ot:ottId": 608253, 
+"^ot:ottTaxonName": "Colletotrichum scovillei"
 }, 
 "Tl3514663": {
-"^ot:originalLabel": "Colletotrichum scovillei UOM_1101"
+"^ot:originalLabel": "Colletotrichum scovillei UOM_1101", 
+"^ot:ottId": 608253, 
+"^ot:ottTaxonName": "Colletotrichum scovillei"
 }, 
 "Tl3514664": {
-"^ot:originalLabel": "Colletotrichum scovillei UOM_1105"
+"^ot:originalLabel": "Colletotrichum scovillei UOM_1105", 
+"^ot:ottId": 608253, 
+"^ot:ottTaxonName": "Colletotrichum scovillei"
 }, 
 "Tl3514665": {
-"^ot:originalLabel": "Colletotrichum scovillei UOM_1152"
+"^ot:originalLabel": "Colletotrichum scovillei UOM_1152", 
+"^ot:ottId": 608253, 
+"^ot:ottTaxonName": "Colletotrichum scovillei"
 }, 
 "Tl3514666": {
-"^ot:originalLabel": "Colletotrichum scovillei CPC_28599"
+"^ot:originalLabel": "Colletotrichum scovillei CPC_28599", 
+"^ot:ottId": 608253, 
+"^ot:ottTaxonName": "Colletotrichum scovillei"
 }, 
 "Tl3514667": {
-"^ot:originalLabel": "Colletotrichum scovillei UOM_1150"
+"^ot:originalLabel": "Colletotrichum scovillei UOM_1150", 
+"^ot:ottId": 608253, 
+"^ot:ottTaxonName": "Colletotrichum scovillei"
 }, 
 "Tl3514668": {
-"^ot:originalLabel": "Colletotrichum scovillei CPC_28603"
+"^ot:originalLabel": "Colletotrichum scovillei CPC_28603", 
+"^ot:ottId": 608253, 
+"^ot:ottTaxonName": "Colletotrichum scovillei"
 }, 
 "Tl3514669": {
-"^ot:originalLabel": "Colletotrichum scovillei CPC_30216"
+"^ot:originalLabel": "Colletotrichum scovillei CPC_30216", 
+"^ot:ottId": 608253, 
+"^ot:ottTaxonName": "Colletotrichum scovillei"
 }, 
 "Tl3514670": {
-"^ot:originalLabel": "Colletotrichum scovillei CPC_30250"
+"^ot:originalLabel": "Colletotrichum scovillei CPC_30250", 
+"^ot:ottId": 608253, 
+"^ot:ottTaxonName": "Colletotrichum scovillei"
 }, 
 "Tl3514671": {
-"^ot:originalLabel": "Colletotrichum scovillei UOM_1110"
+"^ot:originalLabel": "Colletotrichum scovillei UOM_1110", 
+"^ot:ottId": 608253, 
+"^ot:ottTaxonName": "Colletotrichum scovillei"
 }, 
 "Tl3514672": {
-"^ot:originalLabel": "Colletotrichum scovillei CPC_30201"
+"^ot:originalLabel": "Colletotrichum scovillei CPC_30201", 
+"^ot:ottId": 608253, 
+"^ot:ottTaxonName": "Colletotrichum scovillei"
 }, 
 "Tl3514673": {
-"^ot:originalLabel": "Colletotrichum brisbanense CBS_292.67"
+"^ot:originalLabel": "Colletotrichum brisbanense CBS_292.67", 
+"^ot:ottId": 305519, 
+"^ot:ottTaxonName": "Colletotrichum brisbanense"
 }, 
 "Tl3514674": {
-"^ot:originalLabel": "Colletotrichum cairnsense _CBS_140847"
+"^ot:originalLabel": "Colletotrichum cairnsense _CBS_140847", 
+"^ot:ottId": 6379587, 
+"^ot:ottTaxonName": "Colletotrichum cairnsense"
 }, 
 "Tl3514675": {
-"^ot:originalLabel": "Colletotrichum scovillei UOM_1108"
+"^ot:originalLabel": "Colletotrichum scovillei UOM_1108", 
+"^ot:ottId": 608253, 
+"^ot:ottTaxonName": "Colletotrichum scovillei"
 }, 
 "Tl3514676": {
-"^ot:altLabel": "Colletotrichum godetiae", 
 "^ot:originalLabel": "Colletotrichum godetiae CBS_133.44", 
+"^ot:ottId": 446479, 
+"^ot:ottTaxonName": "Colletotrichum godetiae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 611487, 
 "@tb:identifier.taxonVariant": 817486, 
@@ -708,14 +1035,19 @@
 }
 }, 
 "Tl3514677": {
-"^ot:originalLabel": "Colletotrichum scovillei CPC_30242"
+"^ot:originalLabel": "Colletotrichum scovillei CPC_30242", 
+"^ot:ottId": 608253, 
+"^ot:ottTaxonName": "Colletotrichum scovillei"
 }, 
 "Tl3514678": {
-"^ot:originalLabel": "Colletotrichum cuscutae IMI_304802"
+"^ot:originalLabel": "Colletotrichum cuscutae IMI_304802", 
+"^ot:ottId": 446717, 
+"^ot:ottTaxonName": "Colletotrichum cuscutae"
 }, 
 "Tl3514679": {
-"^ot:altLabel": "Colletotrichum limetticola", 
 "^ot:originalLabel": "Colletotrichum limetticola CBS_114.14", 
+"^ot:ottId": 455510, 
+"^ot:ottTaxonName": "Colletotrichum limetticola", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 622933, 
 "@tb:identifier.taxonVariant": 834008, 
@@ -723,20 +1055,29 @@
 }
 }, 
 "Tl3514680": {
-"^ot:originalLabel": "Colletotrichum cosmi CBS_853.73"
+"^ot:originalLabel": "Colletotrichum cosmi CBS_853.73", 
+"^ot:ottId": 305516, 
+"^ot:ottTaxonName": "Colletotrichum cosmi"
 }, 
 "Tl3514681": {
-"^ot:originalLabel": "Colletotrichum scovillei CPC_30239"
+"^ot:originalLabel": "Colletotrichum scovillei CPC_30239", 
+"^ot:ottId": 608253, 
+"^ot:ottTaxonName": "Colletotrichum scovillei"
 }, 
 "Tl3514682": {
-"^ot:originalLabel": "Colletotrichum scovillei CPC_30219"
+"^ot:originalLabel": "Colletotrichum scovillei CPC_30219", 
+"^ot:ottId": 608253, 
+"^ot:ottTaxonName": "Colletotrichum scovillei"
 }, 
 "Tl3514683": {
-"^ot:originalLabel": "Colletotrichum scovillei CPC_28615"
+"^ot:originalLabel": "Colletotrichum scovillei CPC_28615", 
+"^ot:ottId": 608253, 
+"^ot:ottTaxonName": "Colletotrichum scovillei"
 }, 
 "Tl3514684": {
-"^ot:altLabel": "Colletotrichum lupini", 
 "^ot:originalLabel": "Colletotrichum lupini CBS_109225", 
+"^ot:ottId": 9670, 
+"^ot:ottTaxonName": "Colletotrichum lupini", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6694, 
 "@tb:identifier.taxonVariant": 16240, 
@@ -754,41 +1095,62 @@
 }
 }, 
 "Tl3514686": {
-"^ot:originalLabel": "Colletotrichum scovillei CPC_30251"
+"^ot:originalLabel": "Colletotrichum scovillei CPC_30251", 
+"^ot:ottId": 608253, 
+"^ot:ottTaxonName": "Colletotrichum scovillei"
 }, 
 "Tl3514687": {
-"^ot:originalLabel": "Colletotrichum scovillei CPC_30229"
+"^ot:originalLabel": "Colletotrichum scovillei CPC_30229", 
+"^ot:ottId": 608253, 
+"^ot:ottTaxonName": "Colletotrichum scovillei"
 }, 
 "Tl3514688": {
-"^ot:originalLabel": "Colletotrichum guajavae CPC_18893"
+"^ot:originalLabel": "Colletotrichum guajavae CPC_18893", 
+"^ot:ottId": 464850, 
+"^ot:ottTaxonName": "Colletotrichum guajavae"
 }, 
 "Tl3514689": {
-"^ot:originalLabel": "Colletotrichum scovillei CPC_28579"
+"^ot:originalLabel": "Colletotrichum scovillei CPC_28579", 
+"^ot:ottId": 608253, 
+"^ot:ottTaxonName": "Colletotrichum scovillei"
 }, 
 "Tl3514690": {
-"^ot:originalLabel": "Colletotrichum fioriniae CBS_128517"
+"^ot:originalLabel": "Colletotrichum fioriniae CBS_128517", 
+"^ot:ottId": 540364, 
+"^ot:ottTaxonName": "Colletotrichum fioriniae"
 }, 
 "Tl3514691": {
-"^ot:originalLabel": "Colletotrichum scovillei CBS_120708"
+"^ot:originalLabel": "Colletotrichum scovillei CBS_120708", 
+"^ot:ottId": 608253, 
+"^ot:ottTaxonName": "Colletotrichum scovillei"
 }, 
 "Tl3514692": {
-"^ot:originalLabel": "Colletotrichum scovillei CPC_30231"
+"^ot:originalLabel": "Colletotrichum scovillei CPC_30231", 
+"^ot:ottId": 608253, 
+"^ot:ottTaxonName": "Colletotrichum scovillei"
 }, 
 "Tl3514693": {
-"^ot:originalLabel": "Colletotrichum laticiphilum CBS_112989"
+"^ot:originalLabel": "Colletotrichum laticiphilum CBS_112989", 
+"^ot:ottId": 97953, 
+"^ot:ottTaxonName": "Colletotrichum laticiphilum"
 }, 
 "Tl3514694": {
-"^ot:originalLabel": "Colletotrichum scovillei CPC_30200"
+"^ot:originalLabel": "Colletotrichum scovillei CPC_30200", 
+"^ot:ottId": 608253, 
+"^ot:ottTaxonName": "Colletotrichum scovillei"
 }, 
 "Tl3514695": {
-"^ot:originalLabel": "Colletotrichum scovillei UOM_1148"
+"^ot:originalLabel": "Colletotrichum scovillei UOM_1148", 
+"^ot:ottId": 608253, 
+"^ot:ottTaxonName": "Colletotrichum scovillei"
 }, 
 "Tl3514696": {
 "^ot:originalLabel": "Colletotrichum australisinense CGMCC_3.18886"
 }, 
 "Tl3514697": {
-"^ot:altLabel": "Colletotrichum boninense", 
 "^ot:originalLabel": "Colletotrichum boninense CBS_123755", 
+"^ot:ottId": 332420, 
+"^ot:ottTaxonName": "Colletotrichum boninense", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6680, 
 "@tb:identifier.taxonVariant": 16213, 
@@ -797,77 +1159,122 @@
 }
 }, 
 "Tl3514698": {
-"^ot:originalLabel": "Colletotrichum scovillei CPC_30243"
+"^ot:originalLabel": "Colletotrichum scovillei CPC_30243", 
+"^ot:ottId": 608253, 
+"^ot:ottTaxonName": "Colletotrichum scovillei"
 }, 
 "Tl3514699": {
-"^ot:originalLabel": "Colletotrichum scovillei CPC_30197"
+"^ot:originalLabel": "Colletotrichum scovillei CPC_30197", 
+"^ot:ottId": 608253, 
+"^ot:ottTaxonName": "Colletotrichum scovillei"
 }, 
 "Tl3514700": {
-"^ot:originalLabel": "Colletotrichum scovillei CPC_30246"
+"^ot:originalLabel": "Colletotrichum scovillei CPC_30246", 
+"^ot:ottId": 608253, 
+"^ot:ottTaxonName": "Colletotrichum scovillei"
 }, 
 "Tl3514701": {
-"^ot:originalLabel": "Colletotrichum paxtonii IMI_165753"
+"^ot:originalLabel": "Colletotrichum paxtonii IMI_165753", 
+"^ot:ottId": 455515, 
+"^ot:ottTaxonName": "Colletotrichum paxtonii"
 }, 
 "Tl3514702": {
-"^ot:originalLabel": "Colletotrichum scovillei UOM_1144"
+"^ot:originalLabel": "Colletotrichum scovillei UOM_1144", 
+"^ot:ottId": 608253, 
+"^ot:ottTaxonName": "Colletotrichum scovillei"
 }, 
 "Tl3514703": {
-"^ot:originalLabel": "Colletotrichum scovillei UOM_1141"
+"^ot:originalLabel": "Colletotrichum scovillei UOM_1141", 
+"^ot:ottId": 608253, 
+"^ot:ottTaxonName": "Colletotrichum scovillei"
 }, 
 "Tl3514704": {
-"^ot:originalLabel": "Colletotrichum scovillei UOM_1102"
+"^ot:originalLabel": "Colletotrichum scovillei UOM_1102", 
+"^ot:ottId": 608253, 
+"^ot:ottTaxonName": "Colletotrichum scovillei"
 }, 
 "Tl3514705": {
-"^ot:originalLabel": "Colletotrichum sloanei IMI_364297"
+"^ot:originalLabel": "Colletotrichum sloanei IMI_364297", 
+"^ot:ottId": 608247, 
+"^ot:ottTaxonName": "Colletotrichum sloanei"
 }, 
 "Tl3514706": {
-"^ot:originalLabel": "Colletotrichum scovillei CPC_30252"
+"^ot:originalLabel": "Colletotrichum scovillei CPC_30252", 
+"^ot:ottId": 608253, 
+"^ot:ottTaxonName": "Colletotrichum scovillei"
 }, 
 "Tl3514707": {
-"^ot:originalLabel": "Colletotrichum scovillei CPC_30199"
+"^ot:originalLabel": "Colletotrichum scovillei CPC_30199", 
+"^ot:ottId": 608253, 
+"^ot:ottTaxonName": "Colletotrichum scovillei"
 }, 
 "Tl3514708": {
-"^ot:originalLabel": "Colletotrichum scovillei CPC_28577"
+"^ot:originalLabel": "Colletotrichum scovillei CPC_28577", 
+"^ot:ottId": 608253, 
+"^ot:ottTaxonName": "Colletotrichum scovillei"
 }, 
 "Tl3514709": {
-"^ot:originalLabel": "Colletotrichum scovillei CPC_28552"
+"^ot:originalLabel": "Colletotrichum scovillei CPC_28552", 
+"^ot:ottId": 608253, 
+"^ot:ottTaxonName": "Colletotrichum scovillei"
 }, 
 "Tl3514710": {
-"^ot:originalLabel": "Colletotrichum scovillei UOM_1145"
+"^ot:originalLabel": "Colletotrichum scovillei UOM_1145", 
+"^ot:ottId": 608253, 
+"^ot:ottTaxonName": "Colletotrichum scovillei"
 }, 
 "Tl3514711": {
-"^ot:originalLabel": "Colletotrichum scovillei CPC_30198"
+"^ot:originalLabel": "Colletotrichum scovillei CPC_30198", 
+"^ot:ottId": 608253, 
+"^ot:ottTaxonName": "Colletotrichum scovillei"
 }, 
 "Tl3514712": {
-"^ot:originalLabel": "Colletotrichum scovillei CPC_30232"
+"^ot:originalLabel": "Colletotrichum scovillei CPC_30232", 
+"^ot:ottId": 608253, 
+"^ot:ottTaxonName": "Colletotrichum scovillei"
 }, 
 "Tl3514713": {
-"^ot:originalLabel": "Colletotrichum indonesiense CBS_127551"
+"^ot:originalLabel": "Colletotrichum indonesiense CBS_127551", 
+"^ot:ottId": 455517, 
+"^ot:ottTaxonName": "Colletotrichum indonesiense"
 }, 
 "Tl3514714": {
-"^ot:originalLabel": "Colletotrichum scovillei UOM_1147"
+"^ot:originalLabel": "Colletotrichum scovillei UOM_1147", 
+"^ot:ottId": 608253, 
+"^ot:ottTaxonName": "Colletotrichum scovillei"
 }, 
 "Tl3514715": {
 "^ot:originalLabel": "Colletotrichum javanense UOM_1115"
 }, 
 "Tl3514716": {
-"^ot:originalLabel": "Colletotrichum scovillei UOM_1103"
+"^ot:originalLabel": "Colletotrichum scovillei UOM_1103", 
+"^ot:ottId": 608253, 
+"^ot:ottTaxonName": "Colletotrichum scovillei"
 }, 
 "Tl3514717": {
-"^ot:originalLabel": "Colletotrichum scovillei CPC_30241"
+"^ot:originalLabel": "Colletotrichum scovillei CPC_30241", 
+"^ot:ottId": 608253, 
+"^ot:ottTaxonName": "Colletotrichum scovillei"
 }, 
 "Tl3514718": {
-"^ot:originalLabel": "Colletotrichum scovillei UOM_1143"
+"^ot:originalLabel": "Colletotrichum scovillei UOM_1143", 
+"^ot:ottId": 608253, 
+"^ot:ottTaxonName": "Colletotrichum scovillei"
 }, 
 "Tl3514719": {
-"^ot:originalLabel": "Colletotrichum scovillei CPC_30249"
+"^ot:originalLabel": "Colletotrichum scovillei CPC_30249", 
+"^ot:ottId": 608253, 
+"^ot:ottTaxonName": "Colletotrichum scovillei"
 }, 
 "Tl3514720": {
-"^ot:originalLabel": "Colletotrichum walleri CBS_125472"
+"^ot:originalLabel": "Colletotrichum walleri CBS_125472", 
+"^ot:ottId": 608234, 
+"^ot:ottTaxonName": "Colletotrichum walleri"
 }, 
 "Tl3514721": {
-"^ot:altLabel": "Colletotrichum acutatum", 
 "^ot:originalLabel": "Colletotrichum acutatum CBS_127539", 
+"^ot:ottId": 563425, 
+"^ot:ottTaxonName": "Colletotrichum acutatum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6679, 
 "@tb:identifier.taxonVariant": 16211, 
@@ -877,50 +1284,77 @@
 "^skos:prefLabel": "Glomerella acutata"
 }, 
 "Tl3514722": {
-"^ot:originalLabel": "Colletotrichum scovillei UOM_1107"
+"^ot:originalLabel": "Colletotrichum scovillei UOM_1107", 
+"^ot:ottId": 608253, 
+"^ot:ottTaxonName": "Colletotrichum scovillei"
 }, 
 "Tl3514723": {
-"^ot:originalLabel": "Colletotrichum scovillei UOM_1140"
+"^ot:originalLabel": "Colletotrichum scovillei UOM_1140", 
+"^ot:ottId": 608253, 
+"^ot:ottTaxonName": "Colletotrichum scovillei"
 }, 
 "Tl3514724": {
-"^ot:originalLabel": "Colletotrichum siamense UOM_1128"
+"^ot:originalLabel": "Colletotrichum siamense UOM_1128", 
+"^ot:ottId": 594063, 
+"^ot:ottTaxonName": "Colletotrichum siamense"
 }, 
 "Tl3514725": {
-"^ot:originalLabel": "Colletotrichum siamense UOM_1126"
+"^ot:originalLabel": "Colletotrichum siamense UOM_1126", 
+"^ot:ottId": 594063, 
+"^ot:ottTaxonName": "Colletotrichum siamense"
 }, 
 "Tl3514726": {
-"^ot:originalLabel": "Colletotrichum siamense CMM4083"
+"^ot:originalLabel": "Colletotrichum siamense CMM4083", 
+"^ot:ottId": 594063, 
+"^ot:ottTaxonName": "Colletotrichum siamense"
 }, 
 "Tl3514727": {
-"^ot:originalLabel": "Colletotrichum siamense UOM_1130"
+"^ot:originalLabel": "Colletotrichum siamense UOM_1130", 
+"^ot:ottId": 594063, 
+"^ot:ottTaxonName": "Colletotrichum siamense"
 }, 
 "Tl3514728": {
-"^ot:originalLabel": "Colletotrichum siamense NK24"
+"^ot:originalLabel": "Colletotrichum siamense NK24", 
+"^ot:ottId": 594063, 
+"^ot:ottTaxonName": "Colletotrichum siamense"
 }, 
 "Tl3514729": {
-"^ot:originalLabel": "Colletotrichum siamense CPC_30237"
+"^ot:originalLabel": "Colletotrichum siamense CPC_30237", 
+"^ot:ottId": 594063, 
+"^ot:ottTaxonName": "Colletotrichum siamense"
 }, 
 "Tl3514730": {
-"^ot:originalLabel": "Colletotrichum siamense CPC_30224"
+"^ot:originalLabel": "Colletotrichum siamense CPC_30224", 
+"^ot:ottId": 594063, 
+"^ot:ottTaxonName": "Colletotrichum siamense"
 }, 
 "Tl3514731": {
-"^ot:originalLabel": "Colletotrichum siamense UOM_1133"
+"^ot:originalLabel": "Colletotrichum siamense UOM_1133", 
+"^ot:ottId": 594063, 
+"^ot:ottTaxonName": "Colletotrichum siamense"
 }, 
 "Tl3514732": {
 "^ot:originalLabel": "Colletotrichum wuxiense JS1A3"
 }, 
 "Tl3514733": {
-"^ot:originalLabel": "Colletotrichum siamense UOM_1129"
+"^ot:originalLabel": "Colletotrichum siamense UOM_1129", 
+"^ot:ottId": 594063, 
+"^ot:ottTaxonName": "Colletotrichum siamense"
 }, 
 "Tl3514734": {
-"^ot:originalLabel": "Colletotrichum siamense LC0148"
+"^ot:originalLabel": "Colletotrichum siamense LC0148", 
+"^ot:ottId": 594063, 
+"^ot:ottTaxonName": "Colletotrichum siamense"
 }, 
 "Tl3514735": {
-"^ot:originalLabel": "Colletotrichum siamense CBS 133251"
+"^ot:originalLabel": "Colletotrichum siamense CBS 133251", 
+"^ot:ottId": 594063, 
+"^ot:ottTaxonName": "Colletotrichum siamense"
 }, 
 "Tl3514736": {
-"^ot:altLabel": "Colletotrichum nupharicola", 
 "^ot:originalLabel": "Colletotrichum nupharicola ICMP_18658", 
+"^ot:ottId": 192934, 
+"^ot:ottTaxonName": "Colletotrichum nupharicola", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 614506, 
 "@tb:identifier.taxonVariant": 821645, 
@@ -928,32 +1362,49 @@
 }
 }, 
 "Tl3514737": {
-"^ot:originalLabel": "Colletotrichum siamense CPC_28609"
+"^ot:originalLabel": "Colletotrichum siamense CPC_28609", 
+"^ot:ottId": 594063, 
+"^ot:ottTaxonName": "Colletotrichum siamense"
 }, 
 "Tl3514738": {
-"^ot:originalLabel": "Colletotrichum alienum LF322"
+"^ot:originalLabel": "Colletotrichum alienum LF322", 
+"^ot:ottId": 412215, 
+"^ot:ottTaxonName": "Colletotrichum alienum"
 }, 
 "Tl3514739": {
-"^ot:originalLabel": "Colletotrichum siamense CBS_130420"
+"^ot:originalLabel": "Colletotrichum siamense CBS_130420", 
+"^ot:ottId": 594063, 
+"^ot:ottTaxonName": "Colletotrichum siamense"
 }, 
 "Tl3514740": {
-"^ot:originalLabel": "Colletotrichum tropicale CBS_124949"
+"^ot:originalLabel": "Colletotrichum tropicale CBS_124949", 
+"^ot:ottId": 604684, 
+"^ot:ottTaxonName": "Colletotrichum tropicale"
 }, 
 "Tl3514741": {
-"^ot:originalLabel": "Colletotrichum siamense UOM_1125"
+"^ot:originalLabel": "Colletotrichum siamense UOM_1125", 
+"^ot:ottId": 594063, 
+"^ot:ottTaxonName": "Colletotrichum siamense"
 }, 
 "Tl3514742": {
-"^ot:originalLabel": "Colletotrichum siamense UOM_1131"
+"^ot:originalLabel": "Colletotrichum siamense UOM_1131", 
+"^ot:ottId": 594063, 
+"^ot:ottTaxonName": "Colletotrichum siamense"
 }, 
 "Tl3514743": {
-"^ot:originalLabel": "Colletotrichum fructicola UOM_1138_Coll_853"
+"^ot:originalLabel": "Colletotrichum fructicola UOM_1138_Coll_853", 
+"^ot:ottId": 594038, 
+"^ot:ottTaxonName": "Colletotrichum fructicola"
 }, 
 "Tl3514744": {
-"^ot:originalLabel": "Colletotrichum siamense UOM_1127"
+"^ot:originalLabel": "Colletotrichum siamense UOM_1127", 
+"^ot:ottId": 594063, 
+"^ot:ottTaxonName": "Colletotrichum siamense"
 }, 
 "Tl3514745": {
-"^ot:altLabel": "Colletotrichum musae", 
 "^ot:originalLabel": "Colletotrichum musae ICMP_19119", 
+"^ot:ottId": 458358, 
+"^ot:ottTaxonName": "Colletotrichum musae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6695, 
 "@tb:identifier.taxonVariant": 16242, 
@@ -962,32 +1413,49 @@
 }
 }, 
 "Tl3514746": {
-"^ot:originalLabel": "Colletotrichum queenslandicum BRIP_63695"
+"^ot:originalLabel": "Colletotrichum queenslandicum BRIP_63695", 
+"^ot:ottId": 1040842, 
+"^ot:ottTaxonName": "Colletotrichum queenslandicum"
 }, 
 "Tl3514747": {
-"^ot:originalLabel": "Colletotrichum siamense CBS_125378"
+"^ot:originalLabel": "Colletotrichum siamense CBS_125378", 
+"^ot:ottId": 594063, 
+"^ot:ottTaxonName": "Colletotrichum siamense"
 }, 
 "Tl3514748": {
-"^ot:originalLabel": "Colletotrichum siamense CMM4085"
+"^ot:originalLabel": "Colletotrichum siamense CMM4085", 
+"^ot:ottId": 594063, 
+"^ot:ottTaxonName": "Colletotrichum siamense"
 }, 
 "Tl3514749": {
-"^ot:originalLabel": "Colletotrichum siamense CBS_130417"
+"^ot:originalLabel": "Colletotrichum siamense CBS_130417", 
+"^ot:ottId": 594063, 
+"^ot:ottTaxonName": "Colletotrichum siamense"
 }, 
 "Tl3514750": {
-"^ot:originalLabel": "Colletotrichum cordylinicola ICMP_18579"
+"^ot:originalLabel": "Colletotrichum cordylinicola ICMP_18579", 
+"^ot:ottId": 684456, 
+"^ot:ottTaxonName": "Colletotrichum cordylinicola"
 }, 
 "Tl3514751": {
-"^ot:originalLabel": "Colletotrichum siamense CPC_16808"
+"^ot:originalLabel": "Colletotrichum siamense CPC_16808", 
+"^ot:ottId": 594063, 
+"^ot:ottTaxonName": "Colletotrichum siamense"
 }, 
 "Tl3514752": {
-"^ot:originalLabel": "Colletotrichum siamense UOM_1134"
+"^ot:originalLabel": "Colletotrichum siamense UOM_1134", 
+"^ot:ottId": 594063, 
+"^ot:ottTaxonName": "Colletotrichum siamense"
 }, 
 "Tl3514753": {
-"^ot:originalLabel": "Colletotrichum siamense UOM_1124"
+"^ot:originalLabel": "Colletotrichum siamense UOM_1124", 
+"^ot:ottId": 594063, 
+"^ot:ottTaxonName": "Colletotrichum siamense"
 }, 
 "Tl3514754": {
-"^ot:altLabel": "Colletotrichum psidii", 
 "^ot:originalLabel": "Colletotrichum psidii CBS_145.29", 
+"^ot:ottId": 1057581, 
+"^ot:ottTaxonName": "Colletotrichum psidii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 614502, 
 "@tb:identifier.taxonVariant": 821641, 
@@ -995,28 +1463,44 @@
 }
 }, 
 "Tl3514755": {
-"^ot:originalLabel": "Colletotrichum siamense UOM_1132"
+"^ot:originalLabel": "Colletotrichum siamense UOM_1132", 
+"^ot:ottId": 594063, 
+"^ot:ottTaxonName": "Colletotrichum siamense"
 }, 
 "Tl3514756": {
-"^ot:originalLabel": "Colletotrichum clidemiae ICMP_18658"
+"^ot:originalLabel": "Colletotrichum clidemiae ICMP_18658", 
+"^ot:ottId": 412218, 
+"^ot:ottTaxonName": "Colletotrichum clidemiae"
 }, 
 "Tl3514757": {
-"^ot:originalLabel": "Colletotrichum siamense UOM_1135"
+"^ot:originalLabel": "Colletotrichum siamense UOM_1135", 
+"^ot:ottId": 594063, 
+"^ot:ottTaxonName": "Colletotrichum siamense"
 }, 
 "Tl3514758": {
-"^ot:originalLabel": "Colletotrichum siamense UOM_1136"
+"^ot:originalLabel": "Colletotrichum siamense UOM_1136", 
+"^ot:ottId": 594063, 
+"^ot:ottTaxonName": "Colletotrichum siamense"
 }, 
 "Tl3514759": {
-"^ot:originalLabel": "Colletotrichum tropicale CBS_124943"
+"^ot:originalLabel": "Colletotrichum tropicale CBS_124943", 
+"^ot:ottId": 604684, 
+"^ot:ottTaxonName": "Colletotrichum tropicale"
 }, 
 "Tl3514760": {
-"^ot:originalLabel": "Colletotrichum siamense LC0144"
+"^ot:originalLabel": "Colletotrichum siamense LC0144", 
+"^ot:ottId": 594063, 
+"^ot:ottTaxonName": "Colletotrichum siamense"
 }, 
 "Tl3514761": {
-"^ot:originalLabel": "Colletotrichum siamense UOM_1118"
+"^ot:originalLabel": "Colletotrichum siamense UOM_1118", 
+"^ot:ottId": 594063, 
+"^ot:ottTaxonName": "Colletotrichum siamense"
 }, 
 "Tl3514762": {
-"^ot:originalLabel": "Colletotrichum aenigma ICMP_18608"
+"^ot:originalLabel": "Colletotrichum aenigma ICMP_18608", 
+"^ot:ottId": 412227, 
+"^ot:ottTaxonName": "Colletotrichum aenigma"
 }, 
 "Tl3514763": {
 "^ot:altLabel": "Colletotrichum camelliae", 
@@ -1029,20 +1513,29 @@
 }
 }, 
 "Tl3514764": {
-"^ot:originalLabel": "Colletotrichum siamense UOM_1117"
+"^ot:originalLabel": "Colletotrichum siamense UOM_1117", 
+"^ot:ottId": 594063, 
+"^ot:ottTaxonName": "Colletotrichum siamense"
 }, 
 "Tl3514765": {
-"^ot:originalLabel": "Colletotrichum siamense UOM_1116"
+"^ot:originalLabel": "Colletotrichum siamense UOM_1116", 
+"^ot:ottId": 594063, 
+"^ot:ottTaxonName": "Colletotrichum siamense"
 }, 
 "Tl3514766": {
-"^ot:originalLabel": "Colletotrichum siamense CBS_116868"
+"^ot:originalLabel": "Colletotrichum siamense CBS_116868", 
+"^ot:ottId": 594063, 
+"^ot:ottTaxonName": "Colletotrichum siamense"
 }, 
 "Tl3514767": {
-"^ot:originalLabel": "Colletotrichum siamense GZAAS_5.09506"
+"^ot:originalLabel": "Colletotrichum siamense GZAAS_5.09506", 
+"^ot:ottId": 594063, 
+"^ot:ottTaxonName": "Colletotrichum siamense"
 }, 
 "Tl3514768": {
-"^ot:altLabel": "Colletotrichum kahawae", 
 "^ot:originalLabel": "Colletotrichum kahawae ICMP_17816", 
+"^ot:ottId": 412224, 
+"^ot:ottTaxonName": "Colletotrichum kahawae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6691, 
 "@tb:identifier.taxonVariant": 16235, 
@@ -1051,20 +1544,29 @@
 }
 }, 
 "Tl3514769": {
-"^ot:originalLabel": "Colletotrichum brasiliense CBS_128501"
+"^ot:originalLabel": "Colletotrichum brasiliense CBS_128501", 
+"^ot:ottId": 611114, 
+"^ot:ottTaxonName": "Colletotrichum brasiliense"
 }, 
 "Tl3514770": {
-"^ot:originalLabel": "Colletotrichum petchii CBS_378.94"
+"^ot:originalLabel": "Colletotrichum petchii CBS_378.94", 
+"^ot:ottId": 797837, 
+"^ot:ottTaxonName": "Colletotrichum petchii"
 }, 
 "Tl3514771": {
-"^ot:originalLabel": "Colletotrichum karstii CBS_127595"
+"^ot:originalLabel": "Colletotrichum karstii CBS_127595", 
+"^ot:ottId": 686421, 
+"^ot:ottTaxonName": "Colletotrichum karstii"
 }, 
 "Tl3514772": {
-"^ot:originalLabel": "Colletotrichum karstii CAUOS1"
+"^ot:originalLabel": "Colletotrichum karstii CAUOS1", 
+"^ot:ottId": 686421, 
+"^ot:ottTaxonName": "Colletotrichum karstii"
 }, 
 "Tl3514773": {
-"^ot:altLabel": "Colletotrichum truncatum", 
 "^ot:originalLabel": "Colletotrichum truncatum CBS_151.35", 
+"^ot:ottId": 458359, 
+"^ot:ottTaxonName": "Colletotrichum truncatum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6701, 
 "@tb:identifier.taxonVariant": 16255, 
@@ -1074,58 +1576,94 @@
 "^skos:prefLabel": "Glomerella truncata"
 }, 
 "Tl3514774": {
-"^ot:originalLabel": "Colletotrichum karstii CBS_128548"
+"^ot:originalLabel": "Colletotrichum karstii CBS_128548", 
+"^ot:ottId": 686421, 
+"^ot:ottTaxonName": "Colletotrichum karstii"
 }, 
 "Tl3514775": {
-"^ot:originalLabel": "Colletotrichum beeveri CBS_128527"
+"^ot:originalLabel": "Colletotrichum beeveri CBS_128527", 
+"^ot:ottId": 155763, 
+"^ot:ottTaxonName": "Colletotrichum beeveri"
 }, 
 "Tl3514776": {
-"^ot:originalLabel": "Colletotrichum karstii CBS_129834"
+"^ot:originalLabel": "Colletotrichum karstii CBS_129834", 
+"^ot:ottId": 686421, 
+"^ot:ottTaxonName": "Colletotrichum karstii"
 }, 
 "Tl3514777": {
-"^ot:originalLabel": "Colletotrichum karstii CBS_129815"
+"^ot:originalLabel": "Colletotrichum karstii CBS_129815", 
+"^ot:ottId": 686421, 
+"^ot:ottTaxonName": "Colletotrichum karstii"
 }, 
 "Tl3514778": {
-"^ot:originalLabel": "Colletotrichum karstii CBS_125468"
+"^ot:originalLabel": "Colletotrichum karstii CBS_125468", 
+"^ot:ottId": 686421, 
+"^ot:ottTaxonName": "Colletotrichum karstii"
 }, 
 "Tl3514779": {
-"^ot:originalLabel": "Colletotrichum brassicicola CBS_101059"
+"^ot:originalLabel": "Colletotrichum brassicicola CBS_101059", 
+"^ot:ottId": 797843, 
+"^ot:ottTaxonName": "Colletotrichum brassicicola"
 }, 
 "Tl3514780": {
-"^ot:originalLabel": "Colletotrichum karstii CPC_28553"
+"^ot:originalLabel": "Colletotrichum karstii CPC_28553", 
+"^ot:ottId": 686421, 
+"^ot:ottTaxonName": "Colletotrichum karstii"
 }, 
 "Tl3514781": {
-"^ot:originalLabel": "Colletotrichum karstii CBS_128545"
+"^ot:originalLabel": "Colletotrichum karstii CBS_128545", 
+"^ot:ottId": 686421, 
+"^ot:ottTaxonName": "Colletotrichum karstii"
 }, 
 "Tl3514782": {
-"^ot:originalLabel": "Colletotrichum karstii CPC_28601"
+"^ot:originalLabel": "Colletotrichum karstii CPC_28601", 
+"^ot:ottId": 686421, 
+"^ot:ottTaxonName": "Colletotrichum karstii"
 }, 
 "Tl3514783": {
-"^ot:originalLabel": "Colletotrichum karstii CBS_132134"
+"^ot:originalLabel": "Colletotrichum karstii CBS_132134", 
+"^ot:ottId": 686421, 
+"^ot:ottTaxonName": "Colletotrichum karstii"
 }, 
 "Tl3514784": {
-"^ot:originalLabel": "Colletotrichum annellatum CBS_129826"
+"^ot:originalLabel": "Colletotrichum annellatum CBS_129826", 
+"^ot:ottId": 611096, 
+"^ot:ottTaxonName": "Colletotrichum annellatum"
 }, 
 "Tl3514785": {
-"^ot:originalLabel": "Colletotrichum constrictum CBS_128504"
+"^ot:originalLabel": "Colletotrichum constrictum CBS_128504", 
+"^ot:ottId": 797841, 
+"^ot:ottTaxonName": "Colletotrichum constrictum"
 }, 
 "Tl3514786": {
-"^ot:originalLabel": "Colletotrichum phyllanthi CBS_175.67"
+"^ot:originalLabel": "Colletotrichum phyllanthi CBS_175.67", 
+"^ot:ottId": 797839, 
+"^ot:ottTaxonName": "Colletotrichum phyllanthi"
 }, 
 "Tl3514787": {
-"^ot:originalLabel": "Colletotrichum karstii CPC_28602"
+"^ot:originalLabel": "Colletotrichum karstii CPC_28602", 
+"^ot:ottId": 686421, 
+"^ot:ottTaxonName": "Colletotrichum karstii"
 }, 
 "Tl3514788": {
-"^ot:originalLabel": "Colletotrichum karstii CAUOS7"
+"^ot:originalLabel": "Colletotrichum karstii CAUOS7", 
+"^ot:ottId": 686421, 
+"^ot:ottTaxonName": "Colletotrichum karstii"
 }, 
 "Tl3514789": {
-"^ot:originalLabel": "Colletotrichum karstii CBS_129927"
+"^ot:originalLabel": "Colletotrichum karstii CBS_129927", 
+"^ot:ottId": 686421, 
+"^ot:ottTaxonName": "Colletotrichum karstii"
 }, 
 "Tl3514790": {
-"^ot:originalLabel": "Colletotrichum karstii CPC_28554"
+"^ot:originalLabel": "Colletotrichum karstii CPC_28554", 
+"^ot:ottId": 686421, 
+"^ot:ottTaxonName": "Colletotrichum karstii"
 }, 
 "Tl3514791": {
-"^ot:originalLabel": "Colletotrichum karstii GM44-L01"
+"^ot:originalLabel": "Colletotrichum karstii GM44-L01", 
+"^ot:ottId": 686421, 
+"^ot:ottTaxonName": "Colletotrichum karstii"
 }
 }
 }
@@ -1146,7 +1684,19 @@
 "Tr115948": {
 "@label": "Fig. 3", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn18143012", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 85, 
 "^tb:quality.tree": "Unrated", 
@@ -2340,7 +2890,19 @@
 "Tr115949": {
 "@label": "Fig. 5", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn18143157", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 26, 
 "^tb:quality.tree": "Unrated", 
@@ -2348,244 +2910,244 @@
 "edgeBySourceId": {
 "Tn18143141": {
 "edge156315": {
-"@length": 18.0, 
+"@length": 18, 
 "@source": "Tn18143141", 
 "@target": "Tn18143144"
 }, 
 "edge156317": {
-"@length": 5.0, 
+"@length": 5, 
 "@source": "Tn18143141", 
 "@target": "Tn18143146"
 }
 }, 
 "Tn18143143": {
 "edge156351": {
-"@length": 2.0, 
+"@length": 2, 
 "@source": "Tn18143143", 
 "@target": "Tn18143162"
 }, 
 "edge156353": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18143143", 
 "@target": "Tn18143174"
 }, 
 "edge156355": {
-"@length": 4.0, 
+"@length": 4, 
 "@source": "Tn18143143", 
 "@target": "Tn18143167"
 }, 
 "edge156357": {
-"@length": 4.0, 
+"@length": 4, 
 "@source": "Tn18143143", 
 "@target": "Tn18143156"
 }
 }, 
 "Tn18143145": {
 "edge156325": {
-"@length": 12.0, 
+"@length": 12, 
 "@source": "Tn18143145", 
 "@target": "Tn18143165"
 }, 
 "edge156339": {
-"@length": 3.0, 
+"@length": 3, 
 "@source": "Tn18143145", 
 "@target": "Tn18143177"
 }
 }, 
 "Tn18143147": {
 "edge156331": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "Tn18143147", 
 "@target": "Tn18143159"
 }, 
 "edge156333": {
-"@length": 3.0, 
+"@length": 3, 
 "@source": "Tn18143147", 
 "@target": "Tn18143148"
 }
 }, 
 "Tn18143148": {
 "edge156335": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18143148", 
 "@target": "Tn18143170"
 }, 
 "edge156337": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "Tn18143148", 
 "@target": "Tn18143178"
 }
 }, 
 "Tn18143152": {
 "edge156299": {
-"@length": 20.0, 
+"@length": 20, 
 "@source": "Tn18143152", 
 "@target": "Tn18143180"
 }, 
 "edge156301": {
-"@length": 7.0, 
+"@length": 7, 
 "@source": "Tn18143152", 
 "@target": "Tn18143164"
 }
 }, 
 "Tn18143154": {
 "edge156307": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "Tn18143154", 
 "@target": "Tn18143150"
 }, 
 "edge156309": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "Tn18143154", 
 "@target": "Tn18143168"
 }
 }, 
 "Tn18143157": {
 "edge156295": {
-"@length": 106.0, 
+"@length": 106, 
 "@source": "Tn18143157", 
 "@target": "Tn18143153"
 }, 
 "edge156297": {
-"@length": 153.0, 
+"@length": 153, 
 "@source": "Tn18143157", 
 "@target": "Tn18143152"
 }
 }, 
 "Tn18143160": {
 "edge156345": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "Tn18143160", 
 "@target": "Tn18143155"
 }, 
 "edge156347": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18143160", 
 "@target": "Tn18143169"
 }, 
 "edge156349": {
-"@length": 3.0, 
+"@length": 3, 
 "@source": "Tn18143160", 
 "@target": "Tn18143143"
 }
 }, 
 "Tn18143164": {
 "edge156303": {
-"@length": 8.0, 
+"@length": 8, 
 "@source": "Tn18143164", 
 "@target": "Tn18143161"
 }, 
 "edge156305": {
-"@length": 14.0, 
+"@length": 14, 
 "@source": "Tn18143164", 
 "@target": "Tn18143154"
 }, 
 "edge156311": {
-"@length": 2.0, 
+"@length": 2, 
 "@source": "Tn18143164", 
 "@target": "Tn18143182"
 }
 }, 
 "Tn18143165": {
 "edge156327": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18143165", 
 "@target": "Tn18143176"
 }, 
 "edge156329": {
-"@length": 2.0, 
+"@length": 2, 
 "@source": "Tn18143165", 
 "@target": "Tn18143147"
 }
 }, 
 "Tn18143166": {
 "edge156369": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18143166", 
 "@target": "Tn18143163"
 }, 
 "edge156371": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18143166", 
 "@target": "Tn18143158"
 }, 
 "edge156373": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18143166", 
 "@target": "Tn18143149"
 }, 
 "edge156375": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18143166", 
 "@target": "Tn18143151"
 }, 
 "edge156377": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18143166", 
 "@target": "Tn18143175"
 }
 }, 
 "Tn18143172": {
 "edge156321": {
-"@length": 7.0, 
+"@length": 7, 
 "@source": "Tn18143172", 
 "@target": "Tn18143142"
 }, 
 "edge156323": {
-"@length": 8.0, 
+"@length": 8, 
 "@source": "Tn18143172", 
 "@target": "Tn18143145"
 }
 }, 
 "Tn18143177": {
 "edge156341": {
-"@length": 8.0, 
+"@length": 8, 
 "@source": "Tn18143177", 
 "@target": "Tn18143171"
 }, 
 "edge156343": {
-"@length": 2.0, 
+"@length": 2, 
 "@source": "Tn18143177", 
 "@target": "Tn18143160"
 }, 
 "edge156359": {
-"@length": 2.0, 
+"@length": 2, 
 "@source": "Tn18143177", 
 "@target": "Tn18143179"
 }
 }, 
 "Tn18143179": {
 "edge156361": {
-"@length": 6.0, 
+"@length": 6, 
 "@source": "Tn18143179", 
 "@target": "Tn18143183"
 }, 
 "edge156367": {
-"@length": 2.0, 
+"@length": 2, 
 "@source": "Tn18143179", 
 "@target": "Tn18143166"
 }
 }, 
 "Tn18143182": {
 "edge156313": {
-"@length": 3.0, 
+"@length": 3, 
 "@source": "Tn18143182", 
 "@target": "Tn18143141"
 }, 
 "edge156319": {
-"@length": 2.0, 
+"@length": 2, 
 "@source": "Tn18143182", 
 "@target": "Tn18143172"
 }
 }, 
 "Tn18143183": {
 "edge156363": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18143183", 
 "@target": "Tn18143181"
 }, 
 "edge156365": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18143183", 
 "@target": "Tn18143173"
 }
@@ -2694,7 +3256,19 @@
 "Tr115950": {
 "@label": "Fig. 1", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn18143244", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 100, 
 "^tb:quality.tree": "Unrated", 
@@ -2702,873 +3276,873 @@
 "edgeBySourceId": {
 "Tn18143184": {
 "edge156621": {
-"@length": 7.0, 
+"@length": 7, 
 "@source": "Tn18143184", 
 "@target": "Tn18143209"
 }, 
 "edge156623": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "Tn18143184", 
 "@target": "Tn18143235"
 }, 
 "edge156625": {
-"@length": 5.0, 
+"@length": 5, 
 "@source": "Tn18143184", 
 "@target": "Tn18143258"
 }, 
 "edge156627": {
-"@length": 3.0, 
+"@length": 3, 
 "@source": "Tn18143184", 
 "@target": "Tn18143241"
 }, 
 "edge156629": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18143184", 
 "@target": "Tn18143278"
 }, 
 "edge156631": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18143184", 
 "@target": "Tn18143233"
 }
 }, 
 "Tn18143187": {
 "edge156497": {
-"@length": 15.0, 
+"@length": 15, 
 "@source": "Tn18143187", 
 "@target": "Tn18143276"
 }, 
 "edge156503": {
-"@length": 10.0, 
+"@length": 10, 
 "@source": "Tn18143187", 
 "@target": "Tn18143332"
 }
 }, 
 "Tn18143195": {
 "edge156447": {
-"@length": 10.0, 
+"@length": 10, 
 "@source": "Tn18143195", 
 "@target": "Tn18143221"
 }, 
 "edge156457": {
-"@length": 3.0, 
+"@length": 3, 
 "@source": "Tn18143195", 
 "@target": "Tn18143270"
 }
 }, 
 "Tn18143196": {
 "edge156471": {
-"@length": 6.0, 
+"@length": 6, 
 "@source": "Tn18143196", 
 "@target": "Tn18143274"
 }, 
 "edge156473": {
-"@length": 5.0, 
+"@length": 5, 
 "@source": "Tn18143196", 
 "@target": "Tn18143228"
 }
 }, 
 "Tn18143199": {
 "edge156409": {
-"@length": 54.0, 
+"@length": 54, 
 "@source": "Tn18143199", 
 "@target": "Tn18143206"
 }, 
 "edge156411": {
-"@length": 19.0, 
+"@length": 19, 
 "@source": "Tn18143199", 
 "@target": "Tn18143249"
 }
 }, 
 "Tn18143204": {
 "edge156509": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18143204", 
 "@target": "Tn18143210"
 }, 
 "edge156511": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18143204", 
 "@target": "Tn18143313"
 }, 
 "edge156513": {
-"@length": 6.0, 
+"@length": 6, 
 "@source": "Tn18143204", 
 "@target": "Tn18143224"
 }, 
 "edge156515": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18143204", 
 "@target": "Tn18143223"
 }, 
 "edge156517": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18143204", 
 "@target": "Tn18143312"
 }, 
 "edge156519": {
-"@length": 2.0, 
+"@length": 2, 
 "@source": "Tn18143204", 
 "@target": "Tn18143264"
 }, 
 "edge156521": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18143204", 
 "@target": "Tn18143212"
 }, 
 "edge156523": {
-"@length": 6.0, 
+"@length": 6, 
 "@source": "Tn18143204", 
 "@target": "Tn18143292"
 }, 
 "edge156525": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18143204", 
 "@target": "Tn18143214"
 }, 
 "edge156527": {
-"@length": 3.0, 
+"@length": 3, 
 "@source": "Tn18143204", 
 "@target": "Tn18143301"
 }, 
 "edge156529": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18143204", 
 "@target": "Tn18143329"
 }, 
 "edge156531": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18143204", 
 "@target": "Tn18143254"
 }, 
 "edge156533": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "Tn18143204", 
 "@target": "Tn18143310"
 }, 
 "edge156535": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18143204", 
 "@target": "Tn18143227"
 }, 
 "edge156537": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18143204", 
 "@target": "Tn18143194"
 }, 
 "edge156539": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18143204", 
 "@target": "Tn18143189"
 }, 
 "edge156541": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18143204", 
 "@target": "Tn18143289"
 }, 
 "edge156543": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "Tn18143204", 
 "@target": "Tn18143203"
 }, 
 "edge156545": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "Tn18143204", 
 "@target": "Tn18143248"
 }, 
 "edge156547": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18143204", 
 "@target": "Tn18143281"
 }, 
 "edge156549": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18143204", 
 "@target": "Tn18143299"
 }, 
 "edge156551": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18143204", 
 "@target": "Tn18143188"
 }, 
 "edge156553": {
-"@length": 2.0, 
+"@length": 2, 
 "@source": "Tn18143204", 
 "@target": "Tn18143296"
 }, 
 "edge156555": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18143204", 
 "@target": "Tn18143288"
 }, 
 "edge156557": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18143204", 
 "@target": "Tn18143257"
 }, 
 "edge156559": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18143204", 
 "@target": "Tn18143191"
 }, 
 "edge156561": {
-"@length": 2.0, 
+"@length": 2, 
 "@source": "Tn18143204", 
 "@target": "Tn18143222"
 }, 
 "edge156563": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18143204", 
 "@target": "Tn18143272"
 }, 
 "edge156565": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18143204", 
 "@target": "Tn18143320"
 }, 
 "edge156567": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18143204", 
 "@target": "Tn18143192"
 }, 
 "edge156569": {
-"@length": 2.0, 
+"@length": 2, 
 "@source": "Tn18143204", 
 "@target": "Tn18143285"
 }, 
 "edge156575": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "Tn18143204", 
 "@target": "Tn18143279"
 }, 
 "edge156581": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "Tn18143204", 
 "@target": "Tn18143317"
 }, 
 "edge156591": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "Tn18143204", 
 "@target": "Tn18143321"
 }, 
 "edge156605": {
-"@length": 5.0, 
+"@length": 5, 
 "@source": "Tn18143204", 
 "@target": "Tn18143323"
 }, 
 "edge156619": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "Tn18143204", 
 "@target": "Tn18143184"
 }, 
 "edge156633": {
-"@length": 2.0, 
+"@length": 2, 
 "@source": "Tn18143204", 
 "@target": "Tn18143277"
 }, 
 "edge156657": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "Tn18143204", 
 "@target": "Tn18143250"
 }
 }, 
 "Tn18143205": {
 "edge156643": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18143205", 
 "@target": "Tn18143225"
 }, 
 "edge156645": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "Tn18143205", 
 "@target": "Tn18143261"
 }, 
 "edge156651": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "Tn18143205", 
 "@target": "Tn18143303"
 }
 }, 
 "Tn18143207": {
 "edge156435": {
-"@length": 4.0, 
+"@length": 4, 
 "@source": "Tn18143207", 
 "@target": "Tn18143283"
 }, 
 "edge156437": {
-"@length": 3.0, 
+"@length": 3, 
 "@source": "Tn18143207", 
 "@target": "Tn18143318"
 }
 }, 
 "Tn18143211": {
 "edge156429": {
-"@length": 11.0, 
+"@length": 11, 
 "@source": "Tn18143211", 
 "@target": "Tn18143198"
 }, 
 "edge156431": {
-"@length": 6.0, 
+"@length": 6, 
 "@source": "Tn18143211", 
 "@target": "Tn18143246"
 }
 }, 
 "Tn18143213": {
 "edge156477": {
-"@length": 6.0, 
+"@length": 6, 
 "@source": "Tn18143213", 
 "@target": "Tn18143260"
 }, 
 "edge156483": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "Tn18143213", 
 "@target": "Tn18143314"
 }
 }, 
 "Tn18143215": {
 "edge156587": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18143215", 
 "@target": "Tn18143240"
 }, 
 "edge156589": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18143215", 
 "@target": "Tn18143226"
 }
 }, 
 "Tn18143217": {
 "edge156419": {
-"@length": 10.0, 
+"@length": 10, 
 "@source": "Tn18143217", 
 "@target": "Tn18143271"
 }, 
 "edge156421": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "Tn18143217", 
 "@target": "Tn18143237"
 }
 }, 
 "Tn18143219": {
 "edge156425": {
-"@length": 13.0, 
+"@length": 13, 
 "@source": "Tn18143219", 
 "@target": "Tn18143269"
 }, 
 "edge156427": {
-"@length": 3.0, 
+"@length": 3, 
 "@source": "Tn18143219", 
 "@target": "Tn18143211"
 }
 }, 
 "Tn18143221": {
 "edge156449": {
-"@length": 6.0, 
+"@length": 6, 
 "@source": "Tn18143221", 
 "@target": "Tn18143220"
 }, 
 "edge156451": {
-"@length": 9.0, 
+"@length": 9, 
 "@source": "Tn18143221", 
 "@target": "Tn18143322"
 }
 }, 
 "Tn18143229": {
 "edge156461": {
-"@length": 9.0, 
+"@length": 9, 
 "@source": "Tn18143229", 
 "@target": "Tn18143309"
 }, 
 "edge156463": {
-"@length": 10.0, 
+"@length": 10, 
 "@source": "Tn18143229", 
 "@target": "Tn18143286"
 }
 }, 
 "Tn18143232": {
 "edge156445": {
-"@length": 7.0, 
+"@length": 7, 
 "@source": "Tn18143232", 
 "@target": "Tn18143195"
 }, 
 "edge156475": {
-"@length": 2.0, 
+"@length": 2, 
 "@source": "Tn18143232", 
 "@target": "Tn18143213"
 }
 }, 
 "Tn18143237": {
 "edge156423": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "Tn18143237", 
 "@target": "Tn18143219"
 }, 
 "edge156433": {
-"@length": 4.0, 
+"@length": 4, 
 "@source": "Tn18143237", 
 "@target": "Tn18143207"
 }
 }, 
 "Tn18143238": {
 "edge156689": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18143238", 
 "@target": "Tn18143245"
 }, 
 "edge156691": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "Tn18143238", 
 "@target": "Tn18143242"
 }, 
 "edge156693": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "Tn18143238", 
 "@target": "Tn18143265"
 }
 }, 
 "Tn18143239": {
 "edge156597": {
-"@length": 8.0, 
+"@length": 8, 
 "@source": "Tn18143239", 
 "@target": "Tn18143291"
 }, 
 "edge156599": {
-"@length": 3.0, 
+"@length": 3, 
 "@source": "Tn18143239", 
 "@target": "Tn18143328"
 }
 }, 
 "Tn18143244": {
 "edge156389": {
-"@length": 192.0, 
+"@length": 192, 
 "@source": "Tn18143244", 
 "@target": "Tn18143294"
 }, 
 "edge156391": {
-"@length": 205.0, 
+"@length": 205, 
 "@source": "Tn18143244", 
 "@target": "Tn18143308"
 }
 }, 
 "Tn18143247": {
 "edge156611": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18143247", 
 "@target": "Tn18143243"
 }, 
 "edge156613": {
-"@length": 2.0, 
+"@length": 2, 
 "@source": "Tn18143247", 
 "@target": "Tn18143302"
 }
 }, 
 "Tn18143249": {
 "edge156413": {
-"@length": 24.0, 
+"@length": 24, 
 "@source": "Tn18143249", 
 "@target": "Tn18143326"
 }, 
 "edge156443": {
-"@length": 10.0, 
+"@length": 10, 
 "@source": "Tn18143249", 
 "@target": "Tn18143232"
 }
 }, 
 "Tn18143250": {
 "edge156659": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "Tn18143250", 
 "@target": "Tn18143230"
 }, 
 "edge156661": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "Tn18143250", 
 "@target": "Tn18143300"
 }, 
 "edge156671": {
-"@length": 2.0, 
+"@length": 2, 
 "@source": "Tn18143250", 
 "@target": "Tn18143311"
 }
 }, 
 "Tn18143260": {
 "edge156479": {
-"@length": 14.0, 
+"@length": 14, 
 "@source": "Tn18143260", 
 "@target": "Tn18143273"
 }, 
 "edge156481": {
-"@length": 11.0, 
+"@length": 11, 
 "@source": "Tn18143260", 
 "@target": "Tn18143268"
 }
 }, 
 "Tn18143261": {
 "edge156647": {
-"@length": 2.0, 
+"@length": 2, 
 "@source": "Tn18143261", 
 "@target": "Tn18143266"
 }, 
 "edge156649": {
-"@length": 4.0, 
+"@length": 4, 
 "@source": "Tn18143261", 
 "@target": "Tn18143185"
 }
 }, 
 "Tn18143270": {
 "edge156459": {
-"@length": 7.0, 
+"@length": 7, 
 "@source": "Tn18143270", 
 "@target": "Tn18143229"
 }, 
 "edge156465": {
-"@length": 2.0, 
+"@length": 2, 
 "@source": "Tn18143270", 
 "@target": "Tn18143333"
 }
 }, 
 "Tn18143276": {
 "edge156499": {
-"@length": 8.0, 
+"@length": 8, 
 "@source": "Tn18143276", 
 "@target": "Tn18143236"
 }, 
 "edge156501": {
-"@length": 3.0, 
+"@length": 3, 
 "@source": "Tn18143276", 
 "@target": "Tn18143282"
 }
 }, 
 "Tn18143277": {
 "edge156635": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "Tn18143277", 
 "@target": "Tn18143290"
 }, 
 "edge156641": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18143277", 
 "@target": "Tn18143205"
 }
 }, 
 "Tn18143279": {
 "edge156577": {
-"@length": 7.0, 
+"@length": 7, 
 "@source": "Tn18143279", 
 "@target": "Tn18143319"
 }, 
 "edge156579": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18143279", 
 "@target": "Tn18143280"
 }
 }, 
 "Tn18143284": {
 "edge156395": {
-"@length": 31.0, 
+"@length": 31, 
 "@source": "Tn18143284", 
 "@target": "Tn18143256"
 }, 
 "edge156397": {
-"@length": 39.0, 
+"@length": 39, 
 "@source": "Tn18143284", 
 "@target": "Tn18143327"
 }
 }, 
 "Tn18143285": {
 "edge156571": {
-"@length": 2.0, 
+"@length": 2, 
 "@source": "Tn18143285", 
 "@target": "Tn18143337"
 }, 
 "edge156573": {
-"@length": 5.0, 
+"@length": 5, 
 "@source": "Tn18143285", 
 "@target": "Tn18143298"
 }
 }, 
 "Tn18143290": {
 "edge156637": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "Tn18143290", 
 "@target": "Tn18143216"
 }, 
 "edge156639": {
-"@length": 2.0, 
+"@length": 2, 
 "@source": "Tn18143290", 
 "@target": "Tn18143218"
 }
 }, 
 "Tn18143295": {
 "edge156487": {
-"@length": 30.0, 
+"@length": 30, 
 "@source": "Tn18143295", 
 "@target": "Tn18143186"
 }, 
 "edge156489": {
-"@length": 12.0, 
+"@length": 12, 
 "@source": "Tn18143295", 
 "@target": "Tn18143324"
 }
 }, 
 "Tn18143297": {
 "edge156403": {
-"@length": 3.0, 
+"@length": 3, 
 "@source": "Tn18143297", 
 "@target": "Tn18143331"
 }, 
 "edge156405": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "Tn18143297", 
 "@target": "Tn18143190"
 }
 }, 
 "Tn18143300": {
 "edge156663": {
-"@length": 2.0, 
+"@length": 2, 
 "@source": "Tn18143300", 
 "@target": "Tn18143307"
 }, 
 "edge156665": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18143300", 
 "@target": "Tn18143262"
 }, 
 "edge156667": {
-"@length": 2.0, 
+"@length": 2, 
 "@source": "Tn18143300", 
 "@target": "Tn18143208"
 }, 
 "edge156669": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18143300", 
 "@target": "Tn18143234"
 }
 }, 
 "Tn18143302": {
 "edge156615": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18143302", 
 "@target": "Tn18143335"
 }, 
 "edge156617": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18143302", 
 "@target": "Tn18143202"
 }
 }, 
 "Tn18143303": {
 "edge156653": {
-"@length": 2.0, 
+"@length": 2, 
 "@source": "Tn18143303", 
 "@target": "Tn18143305"
 }, 
 "edge156655": {
-"@length": 5.0, 
+"@length": 5, 
 "@source": "Tn18143303", 
 "@target": "Tn18143255"
 }
 }, 
 "Tn18143304": {
 "edge156683": {
-"@length": 2.0, 
+"@length": 2, 
 "@source": "Tn18143304", 
 "@target": "Tn18143231"
 }, 
 "edge156685": {
-"@length": 4.0, 
+"@length": 4, 
 "@source": "Tn18143304", 
 "@target": "Tn18143325"
 }
 }, 
 "Tn18143308": {
 "edge156393": {
-"@length": 34.0, 
+"@length": 34, 
 "@source": "Tn18143308", 
 "@target": "Tn18143284"
 }, 
 "edge156399": {
-"@length": 36.0, 
+"@length": 36, 
 "@source": "Tn18143308", 
 "@target": "Tn18143316"
 }
 }, 
 "Tn18143311": {
 "edge156673": {
-"@length": 4.0, 
+"@length": 4, 
 "@source": "Tn18143311", 
 "@target": "Tn18143259"
 }, 
 "edge156675": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "Tn18143311", 
 "@target": "Tn18143334"
 }
 }, 
 "Tn18143314": {
 "edge156485": {
-"@length": 2.0, 
+"@length": 2, 
 "@source": "Tn18143314", 
 "@target": "Tn18143295"
 }, 
 "edge156495": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "Tn18143314", 
 "@target": "Tn18143187"
 }
 }, 
 "Tn18143315": {
 "edge156679": {
-"@length": 3.0, 
+"@length": 3, 
 "@source": "Tn18143315", 
 "@target": "Tn18143293"
 }, 
 "edge156681": {
-"@length": 2.0, 
+"@length": 2, 
 "@source": "Tn18143315", 
 "@target": "Tn18143304"
 }
 }, 
 "Tn18143316": {
 "edge156401": {
-"@length": 39.0, 
+"@length": 39, 
 "@source": "Tn18143316", 
 "@target": "Tn18143297"
 }, 
 "edge156407": {
-"@length": 19.0, 
+"@length": 19, 
 "@source": "Tn18143316", 
 "@target": "Tn18143199"
 }
 }, 
 "Tn18143317": {
 "edge156583": {
-"@length": 4.0, 
+"@length": 4, 
 "@source": "Tn18143317", 
 "@target": "Tn18143336"
 }, 
 "edge156585": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "Tn18143317", 
 "@target": "Tn18143215"
 }
 }, 
 "Tn18143318": {
 "edge156439": {
-"@length": 11.0, 
+"@length": 11, 
 "@source": "Tn18143318", 
 "@target": "Tn18143306"
 }, 
 "edge156441": {
-"@length": 4.0, 
+"@length": 4, 
 "@source": "Tn18143318", 
 "@target": "Tn18143263"
 }
 }, 
 "Tn18143321": {
 "edge156593": {
-"@length": 6.0, 
+"@length": 6, 
 "@source": "Tn18143321", 
 "@target": "Tn18143193"
 }, 
 "edge156595": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "Tn18143321", 
 "@target": "Tn18143239"
 }
 }, 
 "Tn18143322": {
 "edge156453": {
-"@length": 5.0, 
+"@length": 5, 
 "@source": "Tn18143322", 
 "@target": "Tn18143252"
 }, 
 "edge156455": {
-"@length": 16.0, 
+"@length": 16, 
 "@source": "Tn18143322", 
 "@target": "Tn18143275"
 }
 }, 
 "Tn18143323": {
 "edge156607": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "Tn18143323", 
 "@target": "Tn18143197"
 }, 
 "edge156609": {
-"@length": 3.0, 
+"@length": 3, 
 "@source": "Tn18143323", 
 "@target": "Tn18143247"
 }
 }, 
 "Tn18143324": {
 "edge156491": {
-"@length": 9.0, 
+"@length": 9, 
 "@source": "Tn18143324", 
 "@target": "Tn18143200"
 }, 
 "edge156493": {
-"@length": 8.0, 
+"@length": 8, 
 "@source": "Tn18143324", 
 "@target": "Tn18143287"
 }
 }, 
 "Tn18143326": {
 "edge156415": {
-"@length": 12.0, 
+"@length": 12, 
 "@source": "Tn18143326", 
 "@target": "Tn18143253"
 }, 
 "edge156417": {
-"@length": 3.0, 
+"@length": 3, 
 "@source": "Tn18143326", 
 "@target": "Tn18143217"
 }
 }, 
 "Tn18143328": {
 "edge156601": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18143328", 
 "@target": "Tn18143201"
 }, 
 "edge156603": {
-"@length": 3.0, 
+"@length": 3, 
 "@source": "Tn18143328", 
 "@target": "Tn18143267"
 }
 }, 
 "Tn18143332": {
 "edge156505": {
-"@length": 2.0, 
+"@length": 2, 
 "@source": "Tn18143332", 
 "@target": "Tn18143330"
 }, 
 "edge156507": {
-"@length": 8.0, 
+"@length": 8, 
 "@source": "Tn18143332", 
 "@target": "Tn18143204"
 }
 }, 
 "Tn18143333": {
 "edge156467": {
-"@length": 9.0, 
+"@length": 9, 
 "@source": "Tn18143333", 
 "@target": "Tn18143251"
 }, 
 "edge156469": {
-"@length": 5.0, 
+"@length": 5, 
 "@source": "Tn18143333", 
 "@target": "Tn18143196"
 }
 }, 
 "Tn18143334": {
 "edge156677": {
-"@length": 2.0, 
+"@length": 2, 
 "@source": "Tn18143334", 
 "@target": "Tn18143315"
 }, 
 "edge156687": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18143334", 
 "@target": "Tn18143238"
 }
@@ -3936,7 +4510,19 @@
 "Tr115951": {
 "@label": "Fig. 2", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn18143486", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 92, 
 "^tb:quality.tree": "Unrated", 
@@ -5194,7 +5780,19 @@
 "Tr115952": {
 "@label": "Fig. 4", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn18143517", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 24, 
 "^tb:quality.tree": "Unrated", 
@@ -5202,234 +5800,234 @@
 "edgeBySourceId": {
 "Tn18143497": {
 "edge156779": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "Tn18143497", 
 "@target": "Tn18143530"
 }, 
 "edge156781": {
-"@length": 4.0, 
+"@length": 4, 
 "@source": "Tn18143497", 
 "@target": "Tn18143516"
 }, 
 "edge156783": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "Tn18143497", 
 "@target": "Tn18143494"
 }
 }, 
 "Tn18143500": {
 "edge156753": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "Tn18143500", 
 "@target": "Tn18143524"
 }, 
 "edge156763": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "Tn18143500", 
 "@target": "Tn18143521"
 }
 }, 
 "Tn18143503": {
 "edge156717": {
-"@length": 31.0, 
+"@length": 31, 
 "@source": "Tn18143503", 
 "@target": "Tn18143522"
 }, 
 "edge156727": {
-"@length": 16.0, 
+"@length": 16, 
 "@source": "Tn18143503", 
 "@target": "Tn18143528"
 }
 }, 
 "Tn18143504": {
 "edge156759": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18143504", 
 "@target": "Tn18143533"
 }, 
 "edge156761": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18143504", 
 "@target": "Tn18143519"
 }
 }, 
 "Tn18143506": {
 "edge156709": {
-"@length": 111.0, 
+"@length": 111, 
 "@source": "Tn18143506", 
 "@target": "Tn18143511"
 }, 
 "edge156711": {
-"@length": 56.0, 
+"@length": 56, 
 "@source": "Tn18143506", 
 "@target": "Tn18143523"
 }
 }, 
 "Tn18143507": {
 "edge156723": {
-"@length": 15.0, 
+"@length": 15, 
 "@source": "Tn18143507", 
 "@target": "Tn18143529"
 }, 
 "edge156725": {
-"@length": 30.0, 
+"@length": 30, 
 "@source": "Tn18143507", 
 "@target": "Tn18143518"
 }
 }, 
 "Tn18143512": {
 "edge156741": {
-"@length": 6.0, 
+"@length": 6, 
 "@source": "Tn18143512", 
 "@target": "Tn18143520"
 }, 
 "edge156751": {
-"@length": 3.0, 
+"@length": 3, 
 "@source": "Tn18143512", 
 "@target": "Tn18143500"
 }
 }, 
 "Tn18143515": {
 "edge156737": {
-"@length": 13.0, 
+"@length": 13, 
 "@source": "Tn18143515", 
 "@target": "Tn18143532"
 }, 
 "edge156739": {
-"@length": 5.0, 
+"@length": 5, 
 "@source": "Tn18143515", 
 "@target": "Tn18143512"
 }
 }, 
 "Tn18143517": {
 "edge156705": {
-"@length": 143.0, 
+"@length": 143, 
 "@source": "Tn18143517", 
 "@target": "Tn18143499"
 }, 
 "edge156707": {
-"@length": 108.0, 
+"@length": 108, 
 "@source": "Tn18143517", 
 "@target": "Tn18143506"
 }
 }, 
 "Tn18143520": {
 "edge156743": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18143520", 
 "@target": "Tn18143498"
 }, 
 "edge156745": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18143520", 
 "@target": "Tn18143509"
 }, 
 "edge156747": {
-"@length": 2.0, 
+"@length": 2, 
 "@source": "Tn18143520", 
 "@target": "Tn18143501"
 }, 
 "edge156749": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18143520", 
 "@target": "Tn18143505"
 }
 }, 
 "Tn18143521": {
 "edge156765": {
-"@length": 3.0, 
+"@length": 3, 
 "@source": "Tn18143521", 
 "@target": "Tn18143514"
 }, 
 "edge156767": {
-"@length": 30.0, 
+"@length": 30, 
 "@source": "Tn18143521", 
 "@target": "Tn18143502"
 }, 
 "edge156769": {
-"@length": 7.0, 
+"@length": 7, 
 "@source": "Tn18143521", 
 "@target": "Tn18143525"
 }, 
 "edge156771": {
-"@length": 2.0, 
+"@length": 2, 
 "@source": "Tn18143521", 
 "@target": "Tn18143531"
 }, 
 "edge156777": {
-"@length": 2.0, 
+"@length": 2, 
 "@source": "Tn18143521", 
 "@target": "Tn18143497"
 }
 }, 
 "Tn18143522": {
 "edge156719": {
-"@length": 26.0, 
+"@length": 26, 
 "@source": "Tn18143522", 
 "@target": "Tn18143508"
 }, 
 "edge156721": {
-"@length": 11.0, 
+"@length": 11, 
 "@source": "Tn18143522", 
 "@target": "Tn18143507"
 }
 }, 
 "Tn18143523": {
 "edge156713": {
-"@length": 49.0, 
+"@length": 49, 
 "@source": "Tn18143523", 
 "@target": "Tn18143534"
 }, 
 "edge156715": {
-"@length": 29.0, 
+"@length": 29, 
 "@source": "Tn18143523", 
 "@target": "Tn18143503"
 }
 }, 
 "Tn18143524": {
 "edge156755": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "Tn18143524", 
 "@target": "Tn18143495"
 }, 
 "edge156757": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "Tn18143524", 
 "@target": "Tn18143504"
 }
 }, 
 "Tn18143527": {
 "edge156733": {
-"@length": 16.0, 
+"@length": 16, 
 "@source": "Tn18143527", 
 "@target": "Tn18143526"
 }, 
 "edge156735": {
-"@length": 2.0, 
+"@length": 2, 
 "@source": "Tn18143527", 
 "@target": "Tn18143515"
 }
 }, 
 "Tn18143528": {
 "edge156729": {
-"@length": 30.0, 
+"@length": 30, 
 "@source": "Tn18143528", 
 "@target": "Tn18143510"
 }, 
 "edge156731": {
-"@length": 19.0, 
+"@length": 19, 
 "@source": "Tn18143528", 
 "@target": "Tn18143527"
 }
 }, 
 "Tn18143531": {
 "edge156773": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18143531", 
 "@target": "Tn18143513"
 }, 
 "edge156775": {
-"@length": 1.0, 
+"@length": 1, 
 "@source": "Tn18143531", 
 "@target": "Tn18143496"
 }
