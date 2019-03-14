@@ -61,16 +61,105 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2019-03-14T17:58:05.978Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "Ascomycetes"
 }, 
-"^ot:curatorName": "susan-holder", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}, 
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": "$1"
+}, 
+"old": {
+"$": "^(\\S*\\s+\\S*).*"
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2019-03-14T17:58:05.978Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"susan-holder"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S23164"
 }, 
+"^ot:focalCladeOTTTaxonName": "", 
 "^ot:otusElementOrder": [
 "Tls67497"
 ], 
@@ -80,6 +169,7 @@
 }, 
 "^ot:studyPublicationReference": "Trov\u00e3o J., Tiago I., Soares F., Paiva D.S., Mesquita N., Coelho C., Catarino L., Gil F., & Portugal A. 2019. Description of Aeminiaceae fam. nov., Aeminium gen. nov. and Aeminium ludgeri sp. nov. (Capnodiales), isolated from a biodeteriorated art-piece in the Old Cathedral of Coimbra, Portugal.  MycoKeys, 45: 57-73.", 
 "^ot:studyYear": 2019, 
+"^ot:tag": [], 
 "^ot:taxonLinkPrefixes": {
 "@ubio": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:", 
 "@uniprot": "http://purl.uniprot.org/taxonomy/"
@@ -111,6 +201,8 @@
 }, 
 "Tl3512149": {
 "^ot:originalLabel": "Pseudocercospora schizolobii CBS_120029", 
+"^ot:ottId": 409046, 
+"^ot:ottTaxonName": "Pseudocercospora schizolobii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 349847, 
 "@tb:identifier.taxonVariant": 783598
@@ -126,7 +218,9 @@
 "^ot:originalLabel": "Pseudoteratosphaeria secundaria CBS_118507"
 }, 
 "Tl3512153": {
-"^ot:originalLabel": "Neodevriesia modesta CBS_137182"
+"^ot:originalLabel": "Neodevriesia modesta CBS_137182", 
+"^ot:ottId": 5697142, 
+"^ot:ottTaxonName": "Neodevriesia modesta"
 }, 
 "Tl3512154": {
 "^ot:originalLabel": "Teratosphaeria cryptica CBS_110975", 
@@ -136,8 +230,9 @@
 }
 }, 
 "Tl3512155": {
-"^ot:altLabel": "Capnodium coffeae", 
 "^ot:originalLabel": "Capnodium coffeae CBS_147.52", 
+"^ot:ottId": 162102, 
+"^ot:ottTaxonName": "Capnodium coffeae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 42295, 
 "@tb:identifier.taxonVariant": 98611, 
@@ -147,14 +242,17 @@
 }, 
 "Tl3512156": {
 "^ot:originalLabel": "Phaeothecoidea intermedia CBS_124994", 
+"^ot:ottId": 286621, 
+"^ot:ottTaxonName": "Phaeothecoidea intermedia", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 560290, 
 "@tb:identifier.taxonVariant": 742082
 }
 }, 
 "Tl3512157": {
-"^ot:altLabel": "Schizothyrium pomi", 
 "^ot:originalLabel": "Schizothyrium pomi CBS_486.50", 
+"^ot:ottId": 422402, 
+"^ot:ottTaxonName": "Schizothyrium pomi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 42296, 
 "@tb:identifier.taxonVariant": 98613, 
@@ -163,20 +261,27 @@
 }
 }, 
 "Tl3512158": {
-"^ot:originalLabel": "Zymoseptoria verkleyi CBS_133618"
+"^ot:originalLabel": "Zymoseptoria verkleyi CBS_133618", 
+"^ot:ottId": 939415, 
+"^ot:ottTaxonName": "Zymoseptoria verkleyi"
 }, 
 "Tl3512159": {
-"^ot:originalLabel": "Neodevriesia coryneliae CPC_23534_"
+"^ot:originalLabel": "Neodevriesia coryneliae CPC_23534_", 
+"^ot:ottId": 5697143, 
+"^ot:ottTaxonName": "Neodevriesia coryneliae"
 }, 
 "Tl3512160": {
-"^ot:originalLabel": "Vermiconia antarctica CBS_136107"
+"^ot:originalLabel": "Vermiconia antarctica CBS_136107", 
+"^ot:ottId": 5697159, 
+"^ot:ottTaxonName": "Vermiconia antarctica"
 }, 
 "Tl3512161": {
 "^ot:originalLabel": "Neodevriesia strelitziae CBS_122379"
 }, 
 "Tl3512162": {
-"^ot:altLabel": "Staninwardia suttonii", 
 "^ot:originalLabel": "Staninwardia suttonii CBS_120061", 
+"^ot:ottId": 594108, 
+"^ot:ottTaxonName": "Staninwardia suttonii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 355429, 
 "@tb:identifier.taxonVariant": 386081, 
@@ -188,8 +293,9 @@
 "^ot:originalLabel": "Uncultured fungus clone_B3_1746"
 }, 
 "Tl3512164": {
-"^ot:altLabel": "Mycosphaerella sumatrensis", 
 "^ot:originalLabel": "Mycosphaerella sumatrensis CBS_118502", 
+"^ot:ottId": 860909, 
+"^ot:ottTaxonName": "Mycosphaerella sumatrensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 316160, 
 "@tb:identifier.taxonVariant": 361159, 
@@ -208,6 +314,8 @@
 }, 
 "Tl3512168": {
 "^ot:originalLabel": "Devriesia americana CBS_117726", 
+"^ot:ottId": 708656, 
+"^ot:ottTaxonName": "Devriesia americana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 401763, 
 "@tb:identifier.taxonVariant": 538859
@@ -215,6 +323,8 @@
 }, 
 "Tl3512169": {
 "^ot:originalLabel": "Phaeothecoidea minutispora CBS_124995", 
+"^ot:ottId": 286620, 
+"^ot:ottTaxonName": "Phaeothecoidea minutispora", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 560291, 
 "@tb:identifier.taxonVariant": 742083
@@ -224,8 +334,9 @@
 "^ot:originalLabel": "Neodevriesiaceae sp. CPC 19594"
 }, 
 "Tl3512171": {
-"^ot:altLabel": "Tripospermum myrti", 
 "^ot:originalLabel": "Tripospermum myrti CBS_437.68", 
+"^ot:ottId": 992987, 
+"^ot:ottTaxonName": "Tripospermum myrti", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 564559, 
 "@tb:identifier.taxonVariant": 785424, 
@@ -247,8 +358,9 @@
 "^ot:originalLabel": "Neodevriesia imbrexigena CAP1373"
 }, 
 "Tl3512175": {
-"^ot:altLabel": "Batcheloromyces proteae", 
 "^ot:originalLabel": "Batcheloromyces proteae CBS_110696", 
+"^ot:ottId": 765851, 
+"^ot:ottTaxonName": "Batcheloromyces proteae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 3226, 
 "@tb:identifier.taxonVariant": 7776, 
@@ -257,8 +369,9 @@
 }
 }, 
 "Tl3512176": {
-"^ot:altLabel": "Hortaea werneckii", 
 "^ot:originalLabel": "Hortaea werneckii CBS_107.67", 
+"^ot:ottId": 925789, 
+"^ot:ottTaxonName": "Hortaea werneckii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 13733, 
 "@tb:identifier.taxonVariant": 32432, 
@@ -267,7 +380,9 @@
 }
 }, 
 "Tl3512177": {
-"^ot:originalLabel": "Paramycosphaerella marksii CBS_110750"
+"^ot:originalLabel": "Paramycosphaerella marksii CBS_110750", 
+"^ot:ottId": 5714558, 
+"^ot:ottTaxonName": "Paramycosphaerella marksii"
 }, 
 "Tl3512178": {
 "^ot:originalLabel": "Parateratosphaeria altensteinii CBS_123539"
@@ -282,7 +397,9 @@
 "^ot:originalLabel": "Castanedospora pachyanthicola HKUCC_10835"
 }, 
 "Tl3512182": {
-"^ot:originalLabel": "Uwebraunia dekkeri CPC_13264"
+"^ot:originalLabel": "Uwebraunia dekkeri CPC_13264", 
+"^ot:ottId": 1055510, 
+"^ot:ottTaxonName": "Uwebraunia dekkeri"
 }, 
 "Tl3512183": {
 "^ot:originalLabel": "Neodevriesia capensis CBS_130602"
@@ -291,16 +408,22 @@
 "^ot:originalLabel": "Neohortaea acidophila CBS_113389"
 }, 
 "Tl3512185": {
-"^ot:originalLabel": "Cladosporium fusiforme CBS_119414"
+"^ot:originalLabel": "Cladosporium fusiforme CBS_119414", 
+"^ot:ottId": 580427, 
+"^ot:ottTaxonName": "Cladosporium fusiforme"
 }, 
 "Tl3512186": {
 "^ot:originalLabel": "Pseudoteratosphaeria flexuosa CBS_111012"
 }, 
 "Tl3512187": {
-"^ot:originalLabel": "Neodevriesia poagena CBS_140007"
+"^ot:originalLabel": "Neodevriesia poagena CBS_140007", 
+"^ot:ottId": 5697144, 
+"^ot:ottTaxonName": "Neodevriesia poagena"
 }, 
 "Tl3512188": {
 "^ot:originalLabel": "Toxicocladosporium rubrigenum CBS_124158", 
+"^ot:ottId": 553534, 
+"^ot:ottTaxonName": "Toxicocladosporium rubrigenum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 526310, 
 "@tb:identifier.taxonVariant": 698201
@@ -308,6 +431,8 @@
 }, 
 "Tl3512189": {
 "^ot:originalLabel": "Toxicocladosporium irritans CBS_128777", 
+"^ot:ottId": 82135, 
+"^ot:ottTaxonName": "Toxicocladosporium irritans", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 401769, 
 "@tb:identifier.taxonVariant": 538865
@@ -327,24 +452,33 @@
 "^ot:originalLabel": "Neodevriesiaceae sp. CBS 118302"
 }, 
 "Tl3512193": {
-"^ot:originalLabel": "Parastagonospora nodorum strain_CBS_110109"
+"^ot:originalLabel": "Parastagonospora nodorum strain_CBS_110109", 
+"^ot:ottId": 562295, 
+"^ot:ottTaxonName": "Parastagonospora nodorum"
 }, 
 "Tl3512194": {
-"^ot:originalLabel": "Vermiconia flagrans CCFEE_5922"
+"^ot:originalLabel": "Vermiconia flagrans CCFEE_5922", 
+"^ot:ottId": 5697161, 
+"^ot:ottTaxonName": "Vermiconia flagrans"
 }, 
 "Tl3512195": {
 "^ot:originalLabel": "Teratosphaeria stellenboschiana CBS_125215", 
+"^ot:ottId": 840533, 
+"^ot:ottTaxonName": "Teratosphaeria stellenboschiana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 401844, 
 "@tb:identifier.taxonVariant": 784145
 }
 }, 
 "Tl3512196": {
-"^ot:originalLabel": "Extremus adstrictus CBS_118292"
+"^ot:originalLabel": "Extremus adstrictus CBS_118292", 
+"^ot:ottId": 6377156, 
+"^ot:ottTaxonName": "Extremus adstrictus"
 }, 
 "Tl3512197": {
-"^ot:altLabel": "Batcheloromyces leucadendri", 
 "^ot:originalLabel": "Batcheloromyces leucadendri CBS_111577", 
+"^ot:ottId": 733751, 
+"^ot:ottTaxonName": "Batcheloromyces leucadendri", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 43984, 
 "@tb:identifier.taxonVariant": 102893, 
@@ -356,11 +490,14 @@
 "^ot:originalLabel": "Aeminium ludgeri Isolate_E11"
 }, 
 "Tl3512199": {
-"^ot:originalLabel": "Hortaea thailandica CBS_125423"
+"^ot:originalLabel": "Hortaea thailandica CBS_125423", 
+"^ot:ottId": 195041, 
+"^ot:ottTaxonName": "Hortaea thailandica"
 }, 
 "Tl3512200": {
-"^ot:altLabel": "Ramichloridium apiculatum", 
 "^ot:originalLabel": "Ramichloridium apiculatum CBS_400.76", 
+"^ot:ottId": 428456, 
+"^ot:ottTaxonName": "Ramichloridium apiculatum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 44070, 
 "@tb:identifier.taxonVariant": 103059, 
@@ -369,7 +506,9 @@
 }
 }, 
 "Tl3512201": {
-"^ot:originalLabel": "Vermiconia calcicola CCFEE_5905"
+"^ot:originalLabel": "Vermiconia calcicola CCFEE_5905", 
+"^ot:ottId": 5697160, 
+"^ot:ottTaxonName": "Vermiconia calcicola"
 }, 
 "Tl3512202": {
 "^ot:originalLabel": "Septoria like sp. CBS_134910"
@@ -379,23 +518,31 @@
 }, 
 "Tl3512204": {
 "^ot:originalLabel": "Zygophiala wisconsinensis CBS_125659", 
+"^ot:ottId": 600742, 
+"^ot:ottTaxonName": "Zygophiala wisconsinensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 455938, 
 "@tb:identifier.taxonVariant": 603672
 }
 }, 
 "Tl3512205": {
-"^ot:originalLabel": "Paramycosphaerella intermedia CBS_114356"
+"^ot:originalLabel": "Paramycosphaerella intermedia CBS_114356", 
+"^ot:ottId": 5714557, 
+"^ot:ottTaxonName": "Paramycosphaerella intermedia"
 }, 
 "Tl3512206": {
 "^ot:originalLabel": "Zygophiala cryptogama CBS_125658", 
+"^ot:ottId": 74203, 
+"^ot:ottTaxonName": "Zygophiala cryptogama", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 493579, 
 "@tb:identifier.taxonVariant": 654204
 }
 }, 
 "Tl3512207": {
-"^ot:originalLabel": "Extremus antarcticus CCFEE_5312"
+"^ot:originalLabel": "Extremus antarcticus CCFEE_5312", 
+"^ot:ottId": 4072207, 
+"^ot:ottTaxonName": "Extremus antarcticus"
 }, 
 "Tl3512208": {
 "^ot:originalLabel": "Prophila incerta CBS_118305"
@@ -411,14 +558,17 @@
 }, 
 "Tl3512212": {
 "^ot:originalLabel": "Cladosporium ramotenellum CBS_133.29", 
+"^ot:ottId": 890664, 
+"^ot:ottTaxonName": "Cladosporium ramotenellum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 401858, 
 "@tb:identifier.taxonVariant": 538935
 }
 }, 
 "Tl3512213": {
-"^ot:altLabel": "Schizothyrium pomi", 
 "^ot:originalLabel": "Schizothyrium pomi CBS_228.57", 
+"^ot:ottId": 422402, 
+"^ot:ottTaxonName": "Schizothyrium pomi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 42296, 
 "@tb:identifier.taxonVariant": 98613, 
@@ -437,35 +587,50 @@
 }
 }, 
 "Tl3512215": {
-"^ot:originalLabel": "Polychaeton citri CBS_116435"
+"^ot:originalLabel": "Polychaeton citri CBS_116435", 
+"^ot:ottId": 428175, 
+"^ot:ottTaxonName": "Polychaeton citri"
 }, 
 "Tl3512216": {
 "^ot:originalLabel": "Aeminium ludgeri Isolate_E13"
 }, 
 "Tl3512217": {
-"^ot:originalLabel": "Constantinomyces macerans TRN440"
+"^ot:originalLabel": "Constantinomyces macerans TRN440", 
+"^ot:ottId": 5715073, 
+"^ot:ottTaxonName": "Constantinomyces macerans"
 }, 
 "Tl3512218": {
-"^ot:originalLabel": "Vermiconia flagrans CBS_118283"
+"^ot:originalLabel": "Vermiconia flagrans CBS_118283", 
+"^ot:ottId": 5697161, 
+"^ot:ottTaxonName": "Vermiconia flagrans"
 }, 
 "Tl3512219": {
-"^ot:originalLabel": "Meristemomyces frigidus CEIFE_5507"
+"^ot:originalLabel": "Meristemomyces frigidus CEIFE_5507", 
+"^ot:ottId": 5683057, 
+"^ot:ottTaxonName": "Meristemomyces frigidus"
 }, 
 "Tl3512220": {
 "^ot:originalLabel": "Uncultured fungus clone_B3_2523"
 }, 
 "Tl3512221": {
-"^ot:originalLabel": "Vermiconia calcicola CCFEE_5714"
+"^ot:originalLabel": "Vermiconia calcicola CCFEE_5714", 
+"^ot:ottId": 5697160, 
+"^ot:ottTaxonName": "Vermiconia calcicola"
 }, 
 "Tl3512222": {
-"^ot:originalLabel": "Extremus antarcticus CBS_136103"
+"^ot:originalLabel": "Extremus antarcticus CBS_136103", 
+"^ot:ottId": 4072207, 
+"^ot:ottTaxonName": "Extremus antarcticus"
 }, 
 "Tl3512223": {
-"^ot:originalLabel": "Pseudoramichloridium brasilianum CBS_283.92"
+"^ot:originalLabel": "Pseudoramichloridium brasilianum CBS_283.92", 
+"^ot:ottId": 5298767, 
+"^ot:ottTaxonName": "Pseudoramichloridium brasilianum"
 }, 
 "Tl3512224": {
-"^ot:altLabel": "Sonderhenia eucalypticola", 
 "^ot:originalLabel": "Sonderhenia eucalypticola CPC_11251", 
+"^ot:ottId": 4079973, 
+"^ot:ottTaxonName": "Sonderhenia eucalypticola", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 18447, 
 "@tb:identifier.taxonVariant": 564866, 
@@ -478,29 +643,41 @@
 "^ot:originalLabel": "Chaothyrina musarum MFLUCC15_0383"
 }, 
 "Tl3512226": {
-"^ot:originalLabel": "Neodevriesia pakbiae CPC25044"
+"^ot:originalLabel": "Neodevriesia pakbiae CPC25044", 
+"^ot:ottId": 5697145, 
+"^ot:ottTaxonName": "Neodevriesia pakbiae"
 }, 
 "Tl3512227": {
 "^ot:originalLabel": "Recurvomyces mirabilis CBS_119434", 
+"^ot:ottId": 881122, 
+"^ot:ottTaxonName": "Recurvomyces mirabilis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 502785, 
 "@tb:identifier.taxonVariant": 666103
 }
 }, 
 "Tl3512228": {
-"^ot:originalLabel": "Saxophila tyrrhenica CBS_139725"
+"^ot:originalLabel": "Saxophila tyrrhenica CBS_139725", 
+"^ot:ottId": 6377158, 
+"^ot:ottTaxonName": "Saxophila tyrrhenica"
 }, 
 "Tl3512229": {
-"^ot:originalLabel": "Devriesia compacta CBS_118294"
+"^ot:originalLabel": "Devriesia compacta CBS_118294", 
+"^ot:ottId": 4072069, 
+"^ot:ottTaxonName": "Devriesia compacta"
 }, 
 "Tl3512230": {
-"^ot:originalLabel": "Devriesia pseudoamericana CPC_16174"
+"^ot:originalLabel": "Devriesia pseudoamericana CPC_16174", 
+"^ot:ottId": 318719, 
+"^ot:ottTaxonName": "Devriesia pseudoamericana"
 }, 
 "Tl3512231": {
 "^ot:originalLabel": "Repophragma zygopali VIC_42946"
 }, 
 "Tl3512232": {
-"^ot:originalLabel": "Vermiconia flagrans CBS_118296"
+"^ot:originalLabel": "Vermiconia flagrans CBS_118296", 
+"^ot:ottId": 5697161, 
+"^ot:ottTaxonName": "Vermiconia flagrans"
 }, 
 "Tl3512233": {
 "^ot:altLabel": "Stomiopeltis versicolor", 
@@ -516,23 +693,32 @@
 "^ot:originalLabel": "Neodevriesia fici LWHHK_7"
 }, 
 "Tl3512235": {
-"^ot:originalLabel": "Vermiconia calcicola CCFEE_5898"
+"^ot:originalLabel": "Vermiconia calcicola CCFEE_5898", 
+"^ot:ottId": 5697160, 
+"^ot:ottTaxonName": "Vermiconia calcicola"
 }, 
 "Tl3512236": {
 "^ot:originalLabel": "Neodevriesia stirlingiae CBS_133581"
 }, 
 "Tl3512237": {
-"^ot:originalLabel": "Uwebraunia australiensis CBS_120729"
+"^ot:originalLabel": "Uwebraunia australiensis CBS_120729", 
+"^ot:ottId": 1093013, 
+"^ot:ottTaxonName": "Uwebraunia australiensis"
 }, 
 "Tl3512238": {
-"^ot:originalLabel": "Catenulostroma hermanusense CBS_128768"
+"^ot:originalLabel": "Catenulostroma hermanusense CBS_128768", 
+"^ot:ottId": 408219, 
+"^ot:ottTaxonName": "Catenulostroma hermanusense"
 }, 
 "Tl3512239": {
-"^ot:originalLabel": "Saxophila tyrrhenica TRN66"
+"^ot:originalLabel": "Saxophila tyrrhenica TRN66", 
+"^ot:ottId": 6377158, 
+"^ot:ottTaxonName": "Saxophila tyrrhenica"
 }, 
 "Tl3512240": {
-"^ot:altLabel": "Friedmanniomyces endolithicus", 
 "^ot:originalLabel": "Friedmanniomyces endolithicus CCFEE_5283", 
+"^ot:ottId": 494907, 
+"^ot:ottTaxonName": "Friedmanniomyces endolithicus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 289222, 
 "@tb:identifier.taxonVariant": 340902, 
@@ -550,8 +736,9 @@
 "^ot:originalLabel": "Uncultured fungus clone_B3_1855"
 }, 
 "Tl3512244": {
-"^ot:altLabel": "Cystocoleus ebeneus", 
 "^ot:originalLabel": "Cystocoleus ebeneus L348", 
+"^ot:ottId": 917961, 
+"^ot:ottTaxonName": "Cystocoleus ebeneus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 404710, 
 "@tb:identifier.taxonVariant": 408882, 
@@ -573,20 +760,29 @@
 "^ot:originalLabel": "Aeminium ludgeri Isolate_E18"
 }, 
 "Tl3512247": {
-"^ot:originalLabel": "Neodevriesia bulbillosa TRN152"
+"^ot:originalLabel": "Neodevriesia bulbillosa TRN152", 
+"^ot:ottId": 5697146, 
+"^ot:ottTaxonName": "Neodevriesia bulbillosa"
 }, 
 "Tl3512248": {
-"^ot:originalLabel": "Vermiconia antarctica CBS_136108"
+"^ot:originalLabel": "Vermiconia antarctica CBS_136108", 
+"^ot:ottId": 5697159, 
+"^ot:ottTaxonName": "Vermiconia antarctica"
 }, 
 "Tl3512249": {
-"^ot:originalLabel": "Acidiella bohemica CBS_132720"
+"^ot:originalLabel": "Acidiella bohemica CBS_132720", 
+"^ot:ottId": 5277370, 
+"^ot:ottTaxonName": "Acidiella bohemica"
 }, 
 "Tl3512250": {
-"^ot:originalLabel": "Vermiconia foris CBS_136106"
+"^ot:originalLabel": "Vermiconia foris CBS_136106", 
+"^ot:ottId": 4072208, 
+"^ot:ottTaxonName": "Vermiconia foris"
 }, 
 "Tl3512251": {
-"^ot:altLabel": "Dissoconium aciculare", 
 "^ot:originalLabel": "Dissoconium aciculare CBS_342.82", 
+"^ot:ottId": 1091810, 
+"^ot:ottTaxonName": "Dissoconium aciculare", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 9392, 
 "@tb:identifier.taxonVariant": 22455, 
@@ -596,6 +792,8 @@
 }, 
 "Tl3512252": {
 "^ot:originalLabel": "Pseudoramichloridium henryi CBS_124775", 
+"^ot:ottId": 234958, 
+"^ot:ottTaxonName": "Pseudoramichloridium henryi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 550167, 
 "@tb:identifier.taxonVariant": 729700
@@ -611,20 +809,27 @@
 "^ot:originalLabel": "Exopassalora zambiae CBS_112971"
 }, 
 "Tl3512256": {
-"^ot:originalLabel": "Cladosporium allicinum CBS_188.53"
+"^ot:originalLabel": "Cladosporium allicinum CBS_188.53", 
+"^ot:ottId": 445238, 
+"^ot:ottTaxonName": "Cladosporium allicinum"
 }, 
 "Tl3512257": {
-"^ot:originalLabel": "Neodevriesia simplex CBS_137183"
+"^ot:originalLabel": "Neodevriesia simplex CBS_137183", 
+"^ot:ottId": 5697141, 
+"^ot:ottTaxonName": "Neodevriesia simplex"
 }, 
 "Tl3512258": {
 "^ot:originalLabel": "Neodevriesia knoxdaviesii CBS_122898"
 }, 
 "Tl3512259": {
-"^ot:originalLabel": "Pallidocercospora heimii CPC_11441"
+"^ot:originalLabel": "Pallidocercospora heimii CPC_11441", 
+"^ot:ottId": 200808, 
+"^ot:ottTaxonName": "Pallidocercospora heimii"
 }, 
 "Tl3512260": {
-"^ot:altLabel": "Teratosphaeria fibrillosa", 
 "^ot:originalLabel": "Teratosphaeria fibrillosa CBS_121707", 
+"^ot:ottId": 159025, 
+"^ot:ottTaxonName": "Teratosphaeria fibrillosa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 43986, 
 "@tb:identifier.taxonVariant": 102897, 
@@ -636,7 +841,9 @@
 "^ot:originalLabel": "Neodevriesia imbrexigena CAP1371"
 }, 
 "Tl3512262": {
-"^ot:originalLabel": "Catenulostroma protearum CBS_314.95"
+"^ot:originalLabel": "Catenulostroma protearum CBS_314.95", 
+"^ot:ottId": 1092117, 
+"^ot:ottTaxonName": "Catenulostroma protearum"
 }, 
 "Tl3512263": {
 "^ot:originalLabel": "Neodevriesia fraserae CBS_128217"
@@ -666,6 +873,8 @@
 }, 
 "Tl3512269": {
 "^ot:originalLabel": "Verrucocladosporium dirinae CBS_112794", 
+"^ot:ottId": 528425, 
+"^ot:ottTaxonName": "Verrucocladosporium dirinae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 401771, 
 "@tb:identifier.taxonVariant": 538867
@@ -676,6 +885,8 @@
 }, 
 "Tl3512271": {
 "^ot:originalLabel": "Elasticomyces elasticus CCFEE_5506", 
+"^ot:ottId": 881125, 
+"^ot:ottTaxonName": "Elasticomyces elasticus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 502784, 
 "@tb:identifier.taxonVariant": 666101
@@ -720,7 +931,9 @@
 "^ot:originalLabel": "Aeminium ludgeri Isolate_E12"
 }, 
 "Tl3512280": {
-"^ot:originalLabel": "Neodevriesia bulbillosa CBS_118285"
+"^ot:originalLabel": "Neodevriesia bulbillosa CBS_118285", 
+"^ot:ottId": 5697146, 
+"^ot:ottTaxonName": "Neodevriesia bulbillosa"
 }
 }
 }
@@ -737,7 +950,19 @@
 "Tr115925": {
 "@label": "con 50 majrule", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn18134898", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 133, 
 "^tb:quality.tree": "Unrated", 
