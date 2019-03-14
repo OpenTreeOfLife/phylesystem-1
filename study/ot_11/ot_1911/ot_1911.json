@@ -51,22 +51,115 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2019-03-14T17:28:02.696Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:curatorName": "susan-holder", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}, 
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": "$1"
+}, 
+"old": {
+"$": "^(\\S*\\s+\\S*).*"
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2019-03-14T17:28:02.696Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"susan-holder"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S22510"
 }, 
+"^ot:focalCladeOTTTaxonName": "", 
 "^ot:otusElementOrder": [
 "Tls67560"
 ], 
 "^ot:studyId": "ot_1911", 
+"^ot:studyPublication": {
+"@href": ""
+}, 
 "^ot:studyPublicationReference": "Leavitt S. 2018. A phylogenetic perspective into mycobiont diversity in cobblestone lichens (Acarospora, Ascomycota), including a new species from the Intermountain West (USA). The Bryologist, .", 
 "^ot:studyYear": 2018, 
+"^ot:tag": [], 
 "^ot:taxonLinkPrefixes": {
 "@ubio": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:", 
 "@uniprot": "http://purl.uniprot.org/taxonomy/"
@@ -99,7 +192,9 @@
 }
 }, 
 "Tl3516940": {
-"^ot:originalLabel": "Acarospora wahlenbergii SAR91"
+"^ot:originalLabel": "Acarospora wahlenbergii SAR91", 
+"^ot:ottId": 3788430, 
+"^ot:ottTaxonName": "Acarospora wahlenbergii"
 }, 
 "Tl3516941": {
 "^ot:altLabel": "Polysporina simplex", 
@@ -112,16 +207,22 @@
 }
 }, 
 "Tl3516942": {
-"^ot:originalLabel": "Acarospora strigata 6790"
+"^ot:originalLabel": "Acarospora strigata 6790", 
+"^ot:ottId": 3788542, 
+"^ot:ottTaxonName": "Acarospora strigata"
 }, 
 "Tl3516943": {
 "^ot:originalLabel": "Acarospora tintica L0305"
 }, 
 "Tl3516944": {
-"^ot:originalLabel": "Acarospora americana L0089"
+"^ot:originalLabel": "Acarospora americana L0089", 
+"^ot:ottId": 3788377, 
+"^ot:ottTaxonName": "Acarospora americana"
 }, 
 "Tl3516945": {
-"^ot:originalLabel": "Acarospora strigata 56076b"
+"^ot:originalLabel": "Acarospora strigata 56076b", 
+"^ot:ottId": 3788542, 
+"^ot:ottTaxonName": "Acarospora strigata"
 }, 
 "Tl3516946": {
 "^ot:originalLabel": "Acarospora tintica 17556"
@@ -130,10 +231,14 @@
 "^ot:originalLabel": "Acarospora pruinorosulata JDH16612c"
 }, 
 "Tl3516948": {
-"^ot:originalLabel": "Acarospora strigata L0091"
+"^ot:originalLabel": "Acarospora strigata L0091", 
+"^ot:ottId": 3788542, 
+"^ot:ottTaxonName": "Acarospora strigata"
 }, 
 "Tl3516949": {
-"^ot:originalLabel": "Acarospora rosulata JH7670"
+"^ot:originalLabel": "Acarospora rosulata JH7670", 
+"^ot:ottId": 63947, 
+"^ot:ottTaxonName": "Acarospora rosulata"
 }, 
 "Tl3516950": {
 "^ot:originalLabel": "Acarospora effigurata JDH17433"
@@ -152,8 +257,9 @@
 }
 }, 
 "Tl3516953": {
-"^ot:altLabel": "Acarospora rugulosa", 
 "^ot:originalLabel": "Acarospora rugulosa SAR172", 
+"^ot:ottId": 560217, 
+"^ot:ottTaxonName": "Acarospora rugulosa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 324375, 
 "@tb:identifier.taxonVariant": 494947, 
@@ -162,10 +268,14 @@
 }
 }, 
 "Tl3516954": {
-"^ot:originalLabel": "Acarospora strigata 17557"
+"^ot:originalLabel": "Acarospora strigata 17557", 
+"^ot:ottId": 3788542, 
+"^ot:ottTaxonName": "Acarospora strigata"
 }, 
 "Tl3516955": {
-"^ot:originalLabel": "Acarospora strigata 56076d"
+"^ot:originalLabel": "Acarospora strigata 56076d", 
+"^ot:ottId": 3788542, 
+"^ot:ottTaxonName": "Acarospora strigata"
 }, 
 "Tl3516956": {
 "^ot:originalLabel": "Acarospora effigurata L0303"
@@ -174,14 +284,19 @@
 "^ot:originalLabel": "Acarospora tintica 17563"
 }, 
 "Tl3516958": {
-"^ot:originalLabel": "Acarospora rosulata JH16250A"
+"^ot:originalLabel": "Acarospora rosulata JH16250A", 
+"^ot:ottId": 63947, 
+"^ot:ottTaxonName": "Acarospora rosulata"
 }, 
 "Tl3516959": {
-"^ot:originalLabel": "Acarospora americana L0233"
+"^ot:originalLabel": "Acarospora americana L0233", 
+"^ot:ottId": 3788377, 
+"^ot:ottTaxonName": "Acarospora americana"
 }, 
 "Tl3516960": {
-"^ot:altLabel": "Acarospora rugulosa", 
 "^ot:originalLabel": "Acarospora rugulosa SAR173", 
+"^ot:ottId": 560217, 
+"^ot:ottTaxonName": "Acarospora rugulosa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 324375, 
 "@tb:identifier.taxonVariant": 494947, 
@@ -200,7 +315,9 @@
 }
 }, 
 "Tl3516962": {
-"^ot:originalLabel": "Acarospora strigata SAR169"
+"^ot:originalLabel": "Acarospora strigata SAR169", 
+"^ot:ottId": 3788542, 
+"^ot:ottTaxonName": "Acarospora strigata"
 }, 
 "Tl3516963": {
 "^ot:originalLabel": "Acarospora tianshanica MG838742"
@@ -212,7 +329,9 @@
 "^ot:originalLabel": "Acarospora aff socialis BRYC56088b"
 }, 
 "Tl3516966": {
-"^ot:originalLabel": "Acarospora strigata 56076a"
+"^ot:originalLabel": "Acarospora strigata 56076a", 
+"^ot:ottId": 3788542, 
+"^ot:ottTaxonName": "Acarospora strigata"
 }, 
 "Tl3516967": {
 "^ot:altLabel": "Acarospora peliscypha", 
@@ -225,8 +344,9 @@
 }
 }, 
 "Tl3516968": {
-"^ot:altLabel": "Acarospora sinopica", 
 "^ot:originalLabel": "Acarospora sinopica A50", 
+"^ot:ottId": 560219, 
+"^ot:ottTaxonName": "Acarospora sinopica", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 324376, 
 "@tb:identifier.taxonVariant": 494948, 
@@ -238,10 +358,14 @@
 "^ot:originalLabel": "Acarospora tintica L0304"
 }, 
 "Tl3516970": {
-"^ot:originalLabel": "Acarospora strigata 56076c"
+"^ot:originalLabel": "Acarospora strigata 56076c", 
+"^ot:ottId": 3788542, 
+"^ot:ottTaxonName": "Acarospora strigata"
 }, 
 "Tl3516971": {
-"^ot:originalLabel": "Acarospora strigata 17114"
+"^ot:originalLabel": "Acarospora strigata 17114", 
+"^ot:ottId": 3788542, 
+"^ot:ottTaxonName": "Acarospora strigata"
 }, 
 "Tl3516972": {
 "^ot:originalLabel": "Polysporina gyrocarpa SAR276"
@@ -260,7 +384,9 @@
 "^ot:originalLabel": "Acarospora pruinorosulata JDH16612a"
 }, 
 "Tl3516975": {
-"^ot:originalLabel": "Acarospora strigata KC592263"
+"^ot:originalLabel": "Acarospora strigata KC592263", 
+"^ot:ottId": 3788542, 
+"^ot:ottTaxonName": "Acarospora strigata"
 }, 
 "Tl3516976": {
 "^ot:altLabel": "Polysporina simplex", 
@@ -306,11 +432,14 @@
 }
 }, 
 "Tl3516981": {
-"^ot:originalLabel": "Acarospora anomala SAR138"
+"^ot:originalLabel": "Acarospora anomala SAR138", 
+"^ot:ottId": 3788590, 
+"^ot:ottTaxonName": "Acarospora anomala"
 }, 
 "Tl3516982": {
-"^ot:altLabel": "Acarospora schleicheri", 
 "^ot:originalLabel": "Acarospora schleicheri CO135", 
+"^ot:ottId": 292323, 
+"^ot:ottTaxonName": "Acarospora schleicheri", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 98615, 
 "@tb:identifier.taxonVariant": 177795, 
@@ -319,7 +448,9 @@
 }
 }, 
 "Tl3516983": {
-"^ot:originalLabel": "Acarospora nicolai SAR228"
+"^ot:originalLabel": "Acarospora nicolai SAR228", 
+"^ot:ottId": 3788675, 
+"^ot:ottTaxonName": "Acarospora nicolai"
 }, 
 "Tl3516984": {
 "^ot:altLabel": "Polysporina simplex", 
@@ -338,8 +469,9 @@
 "^ot:originalLabel": "Polysporina gyrocarpa SAR269"
 }, 
 "Tl3516987": {
-"^ot:altLabel": "Acarospora schleicheri", 
 "^ot:originalLabel": "Acarospora schleicheri SAR222", 
+"^ot:ottId": 292323, 
+"^ot:ottTaxonName": "Acarospora schleicheri", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 98615, 
 "@tb:identifier.taxonVariant": 177795, 
@@ -348,10 +480,14 @@
 }
 }, 
 "Tl3516988": {
-"^ot:originalLabel": "Acarospora strigata L0307"
+"^ot:originalLabel": "Acarospora strigata L0307", 
+"^ot:ottId": 3788542, 
+"^ot:ottTaxonName": "Acarospora strigata"
 }, 
 "Tl3516989": {
-"^ot:originalLabel": "Acarospora nodulosa ALM11"
+"^ot:originalLabel": "Acarospora nodulosa ALM11", 
+"^ot:ottId": 3788558, 
+"^ot:ottTaxonName": "Acarospora nodulosa"
 }, 
 "Tl3516990": {
 "^ot:altLabel": "Polysporina simplex", 
@@ -364,14 +500,17 @@
 }
 }, 
 "Tl3516991": {
-"^ot:originalLabel": "Acarospora strigata L0308"
+"^ot:originalLabel": "Acarospora strigata L0308", 
+"^ot:ottId": 3788542, 
+"^ot:ottTaxonName": "Acarospora strigata"
 }, 
 "Tl3516992": {
 "^ot:originalLabel": "Acarospora tintica L0302"
 }, 
 "Tl3516993": {
-"^ot:altLabel": "Acarospora umbilicata", 
 "^ot:originalLabel": "Acarospora umbilicata CO238", 
+"^ot:ottId": 3788511, 
+"^ot:ottTaxonName": "Acarospora umbilicata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 623881, 
 "@tb:identifier.taxonVariant": 835505, 
@@ -379,7 +518,9 @@
 }
 }, 
 "Tl3516994": {
-"^ot:originalLabel": "Acarospora strigata MG738311_China"
+"^ot:originalLabel": "Acarospora strigata MG738311_China", 
+"^ot:ottId": 3788542, 
+"^ot:ottTaxonName": "Acarospora strigata"
 }, 
 "Tl3516995": {
 "^ot:altLabel": "Polysporina simplex", 
@@ -415,8 +556,9 @@
 }
 }, 
 "Tl3516999": {
-"^ot:altLabel": "Acarospora schleicheri", 
 "^ot:originalLabel": "Acarospora schleicheri L0049", 
+"^ot:ottId": 292323, 
+"^ot:ottTaxonName": "Acarospora schleicheri", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 98615, 
 "@tb:identifier.taxonVariant": 177795, 
@@ -425,10 +567,14 @@
 }
 }, 
 "Tl3517000": {
-"^ot:originalLabel": "Acarospora strigata KY439889_Iran"
+"^ot:originalLabel": "Acarospora strigata KY439889_Iran", 
+"^ot:ottId": 3788542, 
+"^ot:ottTaxonName": "Acarospora strigata"
 }, 
 "Tl3517001": {
-"^ot:originalLabel": "Acarospora strigata 56089"
+"^ot:originalLabel": "Acarospora strigata 56089", 
+"^ot:ottId": 3788542, 
+"^ot:ottTaxonName": "Acarospora strigata"
 }, 
 "Tl3517002": {
 "^ot:originalLabel": "Polysporina gyrocarpa SAR267"
@@ -444,8 +590,9 @@
 }
 }, 
 "Tl3517004": {
-"^ot:altLabel": "Acarospora fuscata", 
 "^ot:originalLabel": "Acarospora fuscata SAR120", 
+"^ot:ottId": 1029925, 
+"^ot:ottTaxonName": "Acarospora fuscata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 324372, 
 "@tb:identifier.taxonVariant": 366604, 
@@ -460,7 +607,9 @@
 "^ot:originalLabel": "Acarospora tintica 17555"
 }, 
 "Tl3517007": {
-"^ot:originalLabel": "Acarospora nodulosa SAR146"
+"^ot:originalLabel": "Acarospora nodulosa SAR146", 
+"^ot:ottId": 3788558, 
+"^ot:ottTaxonName": "Acarospora nodulosa"
 }, 
 "Tl3517008": {
 "^ot:originalLabel": "Acarospora aff socialis 6793"
@@ -476,10 +625,14 @@
 }
 }, 
 "Tl3517010": {
-"^ot:originalLabel": "Acarospora strigata 17559"
+"^ot:originalLabel": "Acarospora strigata 17559", 
+"^ot:ottId": 3788542, 
+"^ot:ottTaxonName": "Acarospora strigata"
 }, 
 "Tl3517011": {
-"^ot:originalLabel": "Acarospora heufleriana SAR166"
+"^ot:originalLabel": "Acarospora heufleriana SAR166", 
+"^ot:ottId": 3788719, 
+"^ot:ottTaxonName": "Acarospora heufleriana"
 }, 
 "Tl3517012": {
 "^ot:altLabel": "Polysporina simplex", 
@@ -492,10 +645,14 @@
 }
 }, 
 "Tl3517013": {
-"^ot:originalLabel": "Acarospora strigata 17560"
+"^ot:originalLabel": "Acarospora strigata 17560", 
+"^ot:ottId": 3788542, 
+"^ot:ottTaxonName": "Acarospora strigata"
 }, 
 "Tl3517014": {
-"^ot:originalLabel": "Acarospora anomala SAR136"
+"^ot:originalLabel": "Acarospora anomala SAR136", 
+"^ot:ottId": 3788590, 
+"^ot:ottTaxonName": "Acarospora anomala"
 }, 
 "Tl3517015": {
 "^ot:originalLabel": "Acarospora sp SAR113"
@@ -530,8 +687,9 @@
 "^ot:originalLabel": "Acarospora aff socialis 4597"
 }, 
 "Tl3517021": {
-"^ot:altLabel": "Acarospora schleicheri", 
 "^ot:originalLabel": "Acarospora schleicheri L0048", 
+"^ot:ottId": 292323, 
+"^ot:ottTaxonName": "Acarospora schleicheri", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 98615, 
 "@tb:identifier.taxonVariant": 177795, 
@@ -540,13 +698,19 @@
 }
 }, 
 "Tl3517022": {
-"^ot:originalLabel": "Acarospora strigata 17116"
+"^ot:originalLabel": "Acarospora strigata 17116", 
+"^ot:ottId": 3788542, 
+"^ot:ottTaxonName": "Acarospora strigata"
 }, 
 "Tl3517023": {
-"^ot:originalLabel": "Acarospora rosulata JH15656"
+"^ot:originalLabel": "Acarospora rosulata JH15656", 
+"^ot:ottId": 63947, 
+"^ot:ottTaxonName": "Acarospora rosulata"
 }, 
 "Tl3517024": {
-"^ot:originalLabel": "Acarospora rosulata SAR31"
+"^ot:originalLabel": "Acarospora rosulata SAR31", 
+"^ot:ottId": 63947, 
+"^ot:ottTaxonName": "Acarospora rosulata"
 }, 
 "Tl3517025": {
 "^ot:altLabel": "Polysporina simplex", 
@@ -559,13 +723,19 @@
 }
 }, 
 "Tl3517026": {
-"^ot:originalLabel": "Acarospora rosulata SAR34"
+"^ot:originalLabel": "Acarospora rosulata SAR34", 
+"^ot:ottId": 63947, 
+"^ot:ottTaxonName": "Acarospora rosulata"
 }, 
 "Tl3517027": {
-"^ot:originalLabel": "Acarospora socialis SAR165"
+"^ot:originalLabel": "Acarospora socialis SAR165", 
+"^ot:ottId": 3788667, 
+"^ot:ottTaxonName": "Acarospora socialis"
 }, 
 "Tl3517028": {
-"^ot:originalLabel": "Acarospora placodiiformis SAR145"
+"^ot:originalLabel": "Acarospora placodiiformis SAR145", 
+"^ot:ottId": 3788596, 
+"^ot:ottTaxonName": "Acarospora placodiiformis"
 }, 
 "Tl3517029": {
 "^ot:originalLabel": "Acarospora tintica 8596"
@@ -577,7 +747,9 @@
 "^ot:originalLabel": "Acarospora uintaensis L0326"
 }, 
 "Tl3517032": {
-"^ot:originalLabel": "Acarospora strigata L0223"
+"^ot:originalLabel": "Acarospora strigata L0223", 
+"^ot:ottId": 3788542, 
+"^ot:ottTaxonName": "Acarospora strigata"
 }, 
 "Tl3517033": {
 "^ot:altLabel": "Polysporina simplex", 
@@ -590,11 +762,14 @@
 }
 }, 
 "Tl3517034": {
-"^ot:originalLabel": "Acarospora americana 17741"
+"^ot:originalLabel": "Acarospora americana 17741", 
+"^ot:ottId": 3788377, 
+"^ot:ottTaxonName": "Acarospora americana"
 }, 
 "Tl3517035": {
-"^ot:altLabel": "Acarospora fuscata", 
 "^ot:originalLabel": "Acarospora fuscata SAR129", 
+"^ot:ottId": 1029925, 
+"^ot:ottTaxonName": "Acarospora fuscata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 324372, 
 "@tb:identifier.taxonVariant": 366604, 
@@ -603,7 +778,9 @@
 }
 }, 
 "Tl3517036": {
-"^ot:originalLabel": "Acarospora nevadensis SAR164"
+"^ot:originalLabel": "Acarospora nevadensis SAR164", 
+"^ot:ottId": 3788711, 
+"^ot:ottTaxonName": "Acarospora nevadensis"
 }, 
 "Tl3517037": {
 "^ot:altLabel": "Polysporina simplex", 
@@ -616,7 +793,9 @@
 }
 }, 
 "Tl3517038": {
-"^ot:originalLabel": "Acarospora americana 18019"
+"^ot:originalLabel": "Acarospora americana 18019", 
+"^ot:ottId": 3788377, 
+"^ot:ottTaxonName": "Acarospora americana"
 }, 
 "Tl3517039": {
 "^ot:altLabel": "Polysporina simplex", 
@@ -629,7 +808,9 @@
 }
 }, 
 "Tl3517040": {
-"^ot:originalLabel": "Acarospora strigata 49395"
+"^ot:originalLabel": "Acarospora strigata 49395", 
+"^ot:ottId": 3788542, 
+"^ot:ottTaxonName": "Acarospora strigata"
 }, 
 "Tl3517041": {
 "^ot:altLabel": "Polysporina simplex", 
@@ -642,17 +823,22 @@
 }
 }, 
 "Tl3517042": {
-"^ot:originalLabel": "Acarospora strigata L0218"
+"^ot:originalLabel": "Acarospora strigata L0218", 
+"^ot:ottId": 3788542, 
+"^ot:ottTaxonName": "Acarospora strigata"
 }, 
 "Tl3517043": {
 "^ot:originalLabel": "Acarospora aff fuscata L0239"
 }, 
 "Tl3517044": {
-"^ot:originalLabel": "Acarospora obpallens SAR163"
+"^ot:originalLabel": "Acarospora obpallens SAR163", 
+"^ot:ottId": 3788416, 
+"^ot:ottTaxonName": "Acarospora obpallens"
 }, 
 "Tl3517045": {
-"^ot:altLabel": "Acarospora sinopica", 
 "^ot:originalLabel": "Acarospora sinopica MW20", 
+"^ot:ottId": 560219, 
+"^ot:ottTaxonName": "Acarospora sinopica", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 324376, 
 "@tb:identifier.taxonVariant": 494948, 
@@ -667,8 +853,9 @@
 "^ot:originalLabel": "Acarospora atrata SAR69"
 }, 
 "Tl3517048": {
-"^ot:altLabel": "Acarospora molybdina", 
 "^ot:originalLabel": "Acarospora molybdina SAR121", 
+"^ot:ottId": 442992, 
+"^ot:ottTaxonName": "Acarospora molybdina", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 279779, 
 "@tb:identifier.taxonVariant": 333630, 
@@ -677,7 +864,9 @@
 }
 }, 
 "Tl3517049": {
-"^ot:originalLabel": "Acarospora wahlenbergii SAR227"
+"^ot:originalLabel": "Acarospora wahlenbergii SAR227", 
+"^ot:ottId": 3788430, 
+"^ot:ottTaxonName": "Acarospora wahlenbergii"
 }, 
 "Tl3517050": {
 "^ot:altLabel": "Polysporina simplex", 
@@ -696,10 +885,14 @@
 "^ot:originalLabel": "Acarospora effigurata BRYC56074"
 }, 
 "Tl3517053": {
-"^ot:originalLabel": "Acarospora nevadensis JH16963"
+"^ot:originalLabel": "Acarospora nevadensis JH16963", 
+"^ot:ottId": 3788711, 
+"^ot:ottTaxonName": "Acarospora nevadensis"
 }, 
 "Tl3517054": {
-"^ot:originalLabel": "Acarospora strigata L0083"
+"^ot:originalLabel": "Acarospora strigata L0083", 
+"^ot:ottId": 3788542, 
+"^ot:ottTaxonName": "Acarospora strigata"
 }, 
 "Tl3517055": {
 "^ot:altLabel": "Polysporina simplex", 
@@ -715,7 +908,9 @@
 "^ot:originalLabel": "Acarospora effigurata L0303c"
 }, 
 "Tl3517057": {
-"^ot:originalLabel": "Acarospora strigata L0086"
+"^ot:originalLabel": "Acarospora strigata L0086", 
+"^ot:ottId": 3788542, 
+"^ot:ottTaxonName": "Acarospora strigata"
 }, 
 "Tl3517058": {
 "^ot:altLabel": "Polysporina simplex", 
@@ -728,7 +923,9 @@
 }
 }, 
 "Tl3517059": {
-"^ot:originalLabel": "Acarospora strigata 6791"
+"^ot:originalLabel": "Acarospora strigata 6791", 
+"^ot:ottId": 3788542, 
+"^ot:ottTaxonName": "Acarospora strigata"
 }, 
 "Tl3517060": {
 "^ot:originalLabel": "Acarospora effigurata L0303b"
@@ -758,7 +955,19 @@
 "Tr116117": {
 "@label": "tree1", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn18157423", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:ntax.tree": 123, 
 "edgeBySourceId": {
 "Tn18157333": {
@@ -1831,12 +2040,12 @@
 }, 
 "Tn18157519": {
 "edge160479": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18157519", 
 "@target": "Tn18157555"
 }, 
 "edge160481": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18157519", 
 "@target": "Tn18157563"
 }
@@ -2095,12 +2304,12 @@
 }, 
 "Tn18157563": {
 "edge160483": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18157563", 
 "@target": "Tn18157486"
 }, 
 "edge160485": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18157563", 
 "@target": "Tn18157454"
 }
