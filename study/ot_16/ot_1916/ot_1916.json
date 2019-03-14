@@ -47,16 +47,105 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2019-03-14T17:51:19.963Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:curatorName": "susan-holder", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}, 
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": "$1"
+}, 
+"old": {
+"$": "^(\\S*\\s+\\S*).*"
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2019-03-14T17:51:19.963Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"susan-holder"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S21461"
 }, 
+"^ot:focalCladeOTTTaxonName": "", 
 "^ot:otusElementOrder": [
 "Tls67489"
 ], 
@@ -66,6 +155,7 @@
 }, 
 "^ot:studyPublicationReference": "Mctaggart A.R., & Aime M.C. 2018. The species of Coleosporium (Pucciniales) on Solidago in North America. Fungal Biology, .", 
 "^ot:studyYear": 2018, 
+"^ot:tag": [], 
 "^ot:taxonLinkPrefixes": {
 "@ubio": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:", 
 "@uniprot": "http://purl.uniprot.org/taxonomy/"
@@ -95,14 +185,17 @@
 "^ot:originalLabel": "Coleosporium solidaginis U428_Solidago_MD"
 }, 
 "Tl3512019": {
-"^ot:originalLabel": "Coleosporium delicatulum MCA2846_Asteraceae_Euthamia"
+"^ot:originalLabel": "Coleosporium delicatulum MCA2846_Asteraceae_Euthamia", 
+"^ot:ottId": 3848061, 
+"^ot:ottTaxonName": "Coleosporium delicatulum"
 }, 
 "Tl3512020": {
 "^ot:originalLabel": "Coleosporium solidaginis MCA3228_Asteraceae"
 }, 
 "Tl3512021": {
-"^ot:altLabel": "Coleosporium asterum", 
 "^ot:originalLabel": "Coleosporium asterum U848_Asteraceae_Aster", 
+"^ot:ottId": 309216, 
+"^ot:ottTaxonName": "Coleosporium asterum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6664, 
 "@tb:identifier.taxonVariant": 16172, 
@@ -117,8 +210,9 @@
 "^ot:originalLabel": "Chryso cassandrae FJ666459"
 }, 
 "Tl3512024": {
-"^ot:altLabel": "Coleosporium tussilaginis", 
 "^ot:originalLabel": "Coleosporium tussilaginis KT199395", 
+"^ot:ottId": 633299, 
+"^ot:ottTaxonName": "Coleosporium tussilaginis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6668, 
 "@tb:identifier.taxonVariant": 16185, 
@@ -127,8 +221,9 @@
 }
 }, 
 "Tl3512025": {
-"^ot:altLabel": "Coleosporium plumeriae", 
 "^ot:originalLabel": "Coleosporium plumeriae U50_Apocynaceae", 
+"^ot:ottId": 991611, 
+"^ot:ottTaxonName": "Coleosporium plumeriae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 634788, 
 "@tb:identifier.taxonVariant": 849800, 
@@ -136,8 +231,9 @@
 }
 }, 
 "Tl3512026": {
-"^ot:altLabel": "Coleosporium plectranthi", 
 "^ot:originalLabel": "Coleosporium plectranthi EF095711_CO14", 
+"^ot:ottId": 911127, 
+"^ot:ottTaxonName": "Coleosporium plectranthi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 365926, 
 "@tb:identifier.taxonVariant": 392560, 
@@ -146,8 +242,9 @@
 }
 }, 
 "Tl3512027": {
-"^ot:altLabel": "Coleosporium plumeriae", 
 "^ot:originalLabel": "Coleosporium plumeriae GU145556_U1420", 
+"^ot:ottId": 991611, 
+"^ot:ottTaxonName": "Coleosporium plumeriae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 634788, 
 "@tb:identifier.taxonVariant": 849800, 
@@ -155,8 +252,9 @@
 }
 }, 
 "Tl3512028": {
-"^ot:altLabel": "Coleosporium asterum", 
 "^ot:originalLabel": "Coleosporium asterum U627_Solidago", 
+"^ot:ottId": 309216, 
+"^ot:ottTaxonName": "Coleosporium asterum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6664, 
 "@tb:identifier.taxonVariant": 16172, 
@@ -165,14 +263,19 @@
 }
 }, 
 "Tl3512029": {
-"^ot:originalLabel": "Coleosporium vernoniae MCA3792"
+"^ot:originalLabel": "Coleosporium vernoniae MCA3792", 
+"^ot:ottId": 3847936, 
+"^ot:ottTaxonName": "Coleosporium vernoniae"
 }, 
 "Tl3512030": {
-"^ot:originalLabel": "Coleosporium vernoniae MCA3813_Asteraceae_Elephantopus"
+"^ot:originalLabel": "Coleosporium vernoniae MCA3813_Asteraceae_Elephantopus", 
+"^ot:ottId": 3847936, 
+"^ot:ottTaxonName": "Coleosporium vernoniae"
 }, 
 "Tl3512031": {
-"^ot:altLabel": "Coleosporium asterum", 
 "^ot:originalLabel": "Coleosporium asterum GU058009", 
+"^ot:ottId": 309216, 
+"^ot:ottTaxonName": "Coleosporium asterum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6664, 
 "@tb:identifier.taxonVariant": 16172, 
@@ -181,8 +284,9 @@
 }
 }, 
 "Tl3512032": {
-"^ot:altLabel": "Coleosporium asterum", 
 "^ot:originalLabel": "Coleosporium asterum U369_Solidago", 
+"^ot:ottId": 309216, 
+"^ot:ottTaxonName": "Coleosporium asterum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6664, 
 "@tb:identifier.taxonVariant": 16172, 
@@ -194,8 +298,9 @@
 "^ot:originalLabel": "Coleosporium sp VND030 Evodia meliofolia"
 }, 
 "Tl3512034": {
-"^ot:altLabel": "Coleosporium asterum", 
 "^ot:originalLabel": "Coleosporium asterum JF273969_Symphyotrichum_Korea", 
+"^ot:ottId": 309216, 
+"^ot:ottTaxonName": "Coleosporium asterum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6664, 
 "@tb:identifier.taxonVariant": 16172, 
@@ -204,8 +309,9 @@
 }
 }, 
 "Tl3512035": {
-"^ot:altLabel": "Coleosporium ipomoeae", 
 "^ot:originalLabel": "Coleosporium ipomoeae MCA4537_LSU", 
+"^ot:ottId": 606141, 
+"^ot:ottTaxonName": "Coleosporium ipomoeae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 502033, 
 "@tb:identifier.taxonVariant": 665104, 
@@ -214,8 +320,9 @@
 }
 }, 
 "Tl3512036": {
-"^ot:altLabel": "Coleosporium asterum", 
 "^ot:originalLabel": "Coleosporium asterum MCA3077_Asteraceae_Solidago", 
+"^ot:ottId": 309216, 
+"^ot:ottTaxonName": "Coleosporium asterum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6664, 
 "@tb:identifier.taxonVariant": 16172, 
@@ -227,11 +334,14 @@
 "^ot:originalLabel": "Coleosporium solidaginis U389_Asteraceae_Solidago"
 }, 
 "Tl3512038": {
-"^ot:originalLabel": "Coleosporium eupatorii MCA4471_Taiwan"
+"^ot:originalLabel": "Coleosporium eupatorii MCA4471_Taiwan", 
+"^ot:ottId": 3847945, 
+"^ot:ottTaxonName": "Coleosporium eupatorii"
 }, 
 "Tl3512039": {
-"^ot:altLabel": "Coleosporium asterum", 
 "^ot:originalLabel": "Coleosporium asterum MCA5321_Solidago_rugosa_NL", 
+"^ot:ottId": 309216, 
+"^ot:ottTaxonName": "Coleosporium asterum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6664, 
 "@tb:identifier.taxonVariant": 16172, 
@@ -240,8 +350,9 @@
 }
 }, 
 "Tl3512040": {
-"^ot:altLabel": "Coleosporium ipomoeae", 
 "^ot:originalLabel": "Coleosporium ipomoeae MCA4545_LSU", 
+"^ot:ottId": 606141, 
+"^ot:ottTaxonName": "Coleosporium ipomoeae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 502033, 
 "@tb:identifier.taxonVariant": 665104, 
@@ -256,8 +367,9 @@
 "^ot:originalLabel": "Coleosporium solidaginis MCA2777_Solidago"
 }, 
 "Tl3512043": {
-"^ot:altLabel": "Coleosporium asterum", 
 "^ot:originalLabel": "Coleosporium asterum DQ354559", 
+"^ot:ottId": 309216, 
+"^ot:ottTaxonName": "Coleosporium asterum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6664, 
 "@tb:identifier.taxonVariant": 16172, 
@@ -266,8 +378,9 @@
 }
 }, 
 "Tl3512044": {
-"^ot:altLabel": "Coleosporium asterum", 
 "^ot:originalLabel": "Coleosporium asterum JF273970_Symphyotrichum_Korea", 
+"^ot:ottId": 309216, 
+"^ot:ottTaxonName": "Coleosporium asterum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6664, 
 "@tb:identifier.taxonVariant": 16172, 
@@ -286,11 +399,14 @@
 }
 }, 
 "Tl3512046": {
-"^ot:originalLabel": "Coleosporium delicatulum U366_Aster"
+"^ot:originalLabel": "Coleosporium delicatulum U366_Aster", 
+"^ot:ottId": 3848061, 
+"^ot:ottTaxonName": "Coleosporium delicatulum"
 }, 
 "Tl3512047": {
-"^ot:altLabel": "Coleosporium asterum", 
 "^ot:originalLabel": "Coleosporium asterum MCA2623_Asteraceae_Aster", 
+"^ot:ottId": 309216, 
+"^ot:ottTaxonName": "Coleosporium asterum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6664, 
 "@tb:identifier.taxonVariant": 16172, 
@@ -299,8 +415,9 @@
 }
 }, 
 "Tl3512048": {
-"^ot:altLabel": "Coleosporium asterum", 
 "^ot:originalLabel": "Coleosporium asterum MCA2845_Solidago", 
+"^ot:ottId": 309216, 
+"^ot:ottTaxonName": "Coleosporium asterum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6664, 
 "@tb:identifier.taxonVariant": 16172, 
@@ -318,8 +435,9 @@
 "^ot:originalLabel": "Coleosporium xanthoxyli VND085"
 }, 
 "Tl3512052": {
-"^ot:altLabel": "Coleosporium plumeriae", 
 "^ot:originalLabel": "Coleosporium plumeriae GU145555_MCA3480", 
+"^ot:ottId": 991611, 
+"^ot:ottTaxonName": "Coleosporium plumeriae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 634788, 
 "@tb:identifier.taxonVariant": 849800, 
@@ -327,8 +445,9 @@
 }
 }, 
 "Tl3512053": {
-"^ot:altLabel": "Coleosporium asterum", 
 "^ot:originalLabel": "Coleosporium asterum U561_Solidago", 
+"^ot:ottId": 309216, 
+"^ot:ottTaxonName": "Coleosporium asterum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6664, 
 "@tb:identifier.taxonVariant": 16172, 
@@ -343,8 +462,9 @@
 "^ot:originalLabel": "Coleosporium solidaginis MCA3473_Solidago"
 }, 
 "Tl3512056": {
-"^ot:altLabel": "Coleosporium asterum", 
 "^ot:originalLabel": "Coleosporium asterum U826_Asteraceae_Solidago", 
+"^ot:ottId": 309216, 
+"^ot:ottTaxonName": "Coleosporium asterum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6664, 
 "@tb:identifier.taxonVariant": 16172, 
@@ -353,8 +473,9 @@
 }
 }, 
 "Tl3512057": {
-"^ot:altLabel": "Coleosporium ipomoeae", 
 "^ot:originalLabel": "Coleosporium ipomoeae JRH_143_Convolvulaceae", 
+"^ot:ottId": 606141, 
+"^ot:ottTaxonName": "Coleosporium ipomoeae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 502033, 
 "@tb:identifier.taxonVariant": 665104, 
@@ -363,8 +484,9 @@
 }
 }, 
 "Tl3512058": {
-"^ot:altLabel": "Coleosporium ipomoeae", 
 "^ot:originalLabel": "Coleosporium ipomoeae MCA3853_Convovulaceae", 
+"^ot:ottId": 606141, 
+"^ot:ottTaxonName": "Coleosporium ipomoeae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 502033, 
 "@tb:identifier.taxonVariant": 665104, 
@@ -373,8 +495,9 @@
 }
 }, 
 "Tl3512059": {
-"^ot:altLabel": "Coleosporium ipomoeae", 
 "^ot:originalLabel": "Coleosporium ipomoeae U365_Convolvulaceae", 
+"^ot:ottId": 606141, 
+"^ot:ottTaxonName": "Coleosporium ipomoeae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 502033, 
 "@tb:identifier.taxonVariant": 665104, 
@@ -383,8 +506,9 @@
 }
 }, 
 "Tl3512060": {
-"^ot:altLabel": "Coleosporium asterum", 
 "^ot:originalLabel": "Coleosporium asterum MT268_Solidago_IN", 
+"^ot:ottId": 309216, 
+"^ot:ottTaxonName": "Coleosporium asterum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6664, 
 "@tb:identifier.taxonVariant": 16172, 
@@ -399,8 +523,9 @@
 "^ot:originalLabel": "Coleosporium solidaginis MCA3715_Solidago_TX"
 }, 
 "Tl3512063": {
-"^ot:altLabel": "Coleosporium ipomoeae", 
 "^ot:originalLabel": "Coleosporium ipomoeae JRH_216_Convolvulaceae", 
+"^ot:ottId": 606141, 
+"^ot:ottTaxonName": "Coleosporium ipomoeae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 502033, 
 "@tb:identifier.taxonVariant": 665104, 
@@ -412,8 +537,9 @@
 "^ot:originalLabel": "Coleosporium solidaginis asterum U714_Solidago_flexicaulis_MD"
 }, 
 "Tl3512065": {
-"^ot:altLabel": "Coleosporium asterum", 
 "^ot:originalLabel": "Coleosporium asterum JF273968_Symphyotrichum_Korea", 
+"^ot:ottId": 309216, 
+"^ot:ottTaxonName": "Coleosporium asterum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6664, 
 "@tb:identifier.taxonVariant": 16172, 
@@ -422,8 +548,9 @@
 }
 }, 
 "Tl3512066": {
-"^ot:altLabel": "Coleosporium plumeriae", 
 "^ot:originalLabel": "Coleosporium plumeriae from_MCA_3481_Plumeria", 
+"^ot:ottId": 991611, 
+"^ot:ottTaxonName": "Coleosporium plumeriae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 634788, 
 "@tb:identifier.taxonVariant": 849800, 
@@ -431,8 +558,9 @@
 }
 }, 
 "Tl3512067": {
-"^ot:altLabel": "Coleosporium asterum", 
 "^ot:originalLabel": "Coleosporium asterum MCA5415_Solidago_IN", 
+"^ot:ottId": 309216, 
+"^ot:ottTaxonName": "Coleosporium asterum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6664, 
 "@tb:identifier.taxonVariant": 16172, 
@@ -444,11 +572,14 @@
 "^ot:originalLabel": "Chryso arctostaphyli EF561640"
 }, 
 "Tl3512069": {
-"^ot:originalLabel": "Coleosporium eupatorii MCA4470_Taiwan"
+"^ot:originalLabel": "Coleosporium eupatorii MCA4470_Taiwan", 
+"^ot:ottId": 3847945, 
+"^ot:ottTaxonName": "Coleosporium eupatorii"
 }, 
 "Tl3512070": {
-"^ot:altLabel": "Coleosporium plumeriae", 
 "^ot:originalLabel": "Coleosporium plumeriae U266_Apocynaceae", 
+"^ot:ottId": 991611, 
+"^ot:ottTaxonName": "Coleosporium plumeriae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 634788, 
 "@tb:identifier.taxonVariant": 849800, 
@@ -456,8 +587,9 @@
 }
 }, 
 "Tl3512071": {
-"^ot:altLabel": "Coleosporium ipomoeae", 
 "^ot:originalLabel": "Coleosporium ipomoeae JRH_544", 
+"^ot:ottId": 606141, 
+"^ot:ottTaxonName": "Coleosporium ipomoeae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 502033, 
 "@tb:identifier.taxonVariant": 665104, 
@@ -469,8 +601,9 @@
 "^ot:originalLabel": "Coleosporium solidaginis MCA6618_cfSolidago_FL"
 }, 
 "Tl3512073": {
-"^ot:altLabel": "Coleosporium plumeriae", 
 "^ot:originalLabel": "Coleosporium plumeriae U112_Apocynaceae", 
+"^ot:ottId": 991611, 
+"^ot:ottTaxonName": "Coleosporium plumeriae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 634788, 
 "@tb:identifier.taxonVariant": 849800, 
@@ -478,8 +611,9 @@
 }
 }, 
 "Tl3512074": {
-"^ot:altLabel": "Coleosporium asterum", 
 "^ot:originalLabel": "Coleosporium asterum U67_Symphyotrichum", 
+"^ot:ottId": 309216, 
+"^ot:ottTaxonName": "Coleosporium asterum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6664, 
 "@tb:identifier.taxonVariant": 16172, 
@@ -488,8 +622,9 @@
 }
 }, 
 "Tl3512075": {
-"^ot:altLabel": "Coleosporium asterum", 
 "^ot:originalLabel": "Coleosporium asterum MCA2835_Aster", 
+"^ot:ottId": 309216, 
+"^ot:ottTaxonName": "Coleosporium asterum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6664, 
 "@tb:identifier.taxonVariant": 16172, 
@@ -498,8 +633,9 @@
 }
 }, 
 "Tl3512076": {
-"^ot:altLabel": "Coleosporium tussilaginis", 
 "^ot:originalLabel": "Coleosporium tussilaginis MCA2392_Asteraceae_Sonchus", 
+"^ot:ottId": 633299, 
+"^ot:ottTaxonName": "Coleosporium tussilaginis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6668, 
 "@tb:identifier.taxonVariant": 16185, 
@@ -508,8 +644,9 @@
 }
 }, 
 "Tl3512077": {
-"^ot:altLabel": "Coleosporium plumeriae", 
 "^ot:originalLabel": "Coleosporium plumeriae BRIP55387_KM249866", 
+"^ot:ottId": 991611, 
+"^ot:ottTaxonName": "Coleosporium plumeriae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 634788, 
 "@tb:identifier.taxonVariant": 849800, 
@@ -527,8 +664,9 @@
 }
 }, 
 "Tl3512079": {
-"^ot:altLabel": "Coleosporium asterum", 
 "^ot:originalLabel": "Coleosporium asterum U845_Asteraceae_Solidago", 
+"^ot:ottId": 309216, 
+"^ot:ottTaxonName": "Coleosporium asterum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6664, 
 "@tb:identifier.taxonVariant": 16172, 
@@ -537,11 +675,14 @@
 }
 }, 
 "Tl3512080": {
-"^ot:originalLabel": "Coleosporium delicatulum U347_Solidago"
+"^ot:originalLabel": "Coleosporium delicatulum U347_Solidago", 
+"^ot:ottId": 3848061, 
+"^ot:ottTaxonName": "Coleosporium delicatulum"
 }, 
 "Tl3512081": {
-"^ot:altLabel": "Coleosporium ipomoeae", 
 "^ot:originalLabel": "Coleosporium ipomoeae JRH_195_Convolvulaceae", 
+"^ot:ottId": 606141, 
+"^ot:ottTaxonName": "Coleosporium ipomoeae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 502033, 
 "@tb:identifier.taxonVariant": 665104, 
@@ -553,8 +694,9 @@
 "^ot:originalLabel": "Coleosporium solidaginis DJN150_Solidago_virga_aurea_Japan"
 }, 
 "Tl3512083": {
-"^ot:altLabel": "Coleosporium plumeriae", 
 "^ot:originalLabel": "Coleosporium plumeriae MCA3255_Apocynaceae_Plumeria", 
+"^ot:ottId": 991611, 
+"^ot:ottTaxonName": "Coleosporium plumeriae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 634788, 
 "@tb:identifier.taxonVariant": 849800, 
@@ -565,8 +707,9 @@
 "^ot:originalLabel": "Coleosporium solidaginis U1169_Solidago"
 }, 
 "Tl3512085": {
-"^ot:altLabel": "Coleosporium ipomoeae", 
 "^ot:originalLabel": "Coleosporium ipomoeae JRH_168_Convolvulaceae", 
+"^ot:ottId": 606141, 
+"^ot:ottTaxonName": "Coleosporium ipomoeae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 502033, 
 "@tb:identifier.taxonVariant": 665104, 
@@ -575,8 +718,9 @@
 }
 }, 
 "Tl3512086": {
-"^ot:altLabel": "Coleosporium ipomoeae", 
 "^ot:originalLabel": "Coleosporium ipomoeae JRH_465_Convolvulaceae", 
+"^ot:ottId": 606141, 
+"^ot:ottTaxonName": "Coleosporium ipomoeae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 502033, 
 "@tb:identifier.taxonVariant": 665104, 
@@ -591,8 +735,9 @@
 "^ot:originalLabel": "Coleosporium solidaginis MCA3614_Solidago_MS"
 }, 
 "Tl3512089": {
-"^ot:altLabel": "Coleosporium asterum", 
 "^ot:originalLabel": "Coleosporium asterum MCA5303_Elephantopus_NL", 
+"^ot:ottId": 309216, 
+"^ot:ottTaxonName": "Coleosporium asterum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6664, 
 "@tb:identifier.taxonVariant": 16172, 
@@ -601,8 +746,9 @@
 }
 }, 
 "Tl3512090": {
-"^ot:altLabel": "Coleosporium asterum", 
 "^ot:originalLabel": "Coleosporium asterum MCA5025_Solidago_IL", 
+"^ot:ottId": 309216, 
+"^ot:ottTaxonName": "Coleosporium asterum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6664, 
 "@tb:identifier.taxonVariant": 16172, 
@@ -611,8 +757,9 @@
 }
 }, 
 "Tl3512091": {
-"^ot:altLabel": "Coleosporium asterum", 
 "^ot:originalLabel": "Coleosporium asterum DJN141_Solidago_altissima_Japan", 
+"^ot:ottId": 309216, 
+"^ot:ottTaxonName": "Coleosporium asterum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6664, 
 "@tb:identifier.taxonVariant": 16172, 
@@ -641,7 +788,19 @@
 "Tr115917": {
 "@label": "con 50 majrule", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn18134499", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 77, 
 "^tb:quality.tree": "Unrated", 
