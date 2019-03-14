@@ -50,22 +50,115 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2019-03-14T17:55:24.224Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:curatorName": "susan-holder", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}, 
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": "$1"
+}, 
+"old": {
+"$": "^(\\S*\\s+\\S*).*"
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2019-03-14T17:55:24.224Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"susan-holder"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S21995"
 }, 
+"^ot:focalCladeOTTTaxonName": "", 
 "^ot:otusElementOrder": [
 "Tls67491"
 ], 
 "^ot:studyId": "ot_1918", 
+"^ot:studyPublication": {
+"@href": ""
+}, 
 "^ot:studyPublicationReference": "Ali D.B., Marincowitz S., Mctaggart A.R., Roux J., & Wingfield M.J. 2018. Novel Cryphonectriaceae from La R\u00e9union and South Africa, and their pathogenicity on Eucalyptus. Mycological Progress, 17: 953-966.", 
 "^ot:studyYear": 2018, 
+"^ot:tag": [], 
 "^ot:taxonLinkPrefixes": {
 "@ubio": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:", 
 "@uniprot": "http://purl.uniprot.org/taxonomy/"
@@ -92,7 +185,9 @@
 "^skos:historyNote": "Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlOTUWriter@23745021 $Rev$", 
 "otuById": {
 "Tl3512094": {
-"^ot:originalLabel": "Celoporthe indonesiensis CMW10779"
+"^ot:originalLabel": "Celoporthe indonesiensis CMW10779", 
+"^ot:ottId": 298784, 
+"^ot:ottTaxonName": "Celoporthe indonesiensis"
 }, 
 "Tl3512095": {
 "^ot:originalLabel": "Celoporthe borbonica CMW44146"
@@ -107,19 +202,25 @@
 "^ot:originalLabel": "Celoporthe hawaiiensis CMW38582"
 }, 
 "Tl3512099": {
-"^ot:originalLabel": "Celoporthe eucalypti CMW26900"
+"^ot:originalLabel": "Celoporthe eucalypti CMW26900", 
+"^ot:ottId": 298822, 
+"^ot:ottTaxonName": "Celoporthe eucalypti"
 }, 
 "Tl3512100": {
 "^ot:originalLabel": "Celoporthe borbonica CMW44143"
 }, 
 "Tl3512101": {
-"^ot:originalLabel": "Celoporthe guangdongensis CMW38384"
+"^ot:originalLabel": "Celoporthe guangdongensis CMW38384", 
+"^ot:ottId": 69737, 
+"^ot:ottTaxonName": "Celoporthe guangdongensis"
 }, 
 "Tl3512102": {
 "^ot:originalLabel": "Celoporthe hauoliensis CMW38389"
 }, 
 "Tl3512103": {
-"^ot:originalLabel": "Celoporthe syzygii CMW34024"
+"^ot:originalLabel": "Celoporthe syzygii CMW34024", 
+"^ot:ottId": 401025, 
+"^ot:ottTaxonName": "Celoporthe syzygii"
 }, 
 "Tl3512104": {
 "^ot:originalLabel": "Celoporthe borbonica CMW44123"
@@ -134,14 +235,17 @@
 "^ot:originalLabel": "Celoporthe hawaiiensis CMW38553"
 }, 
 "Tl3512108": {
-"^ot:originalLabel": "Celoporthe fontana CMW29375"
+"^ot:originalLabel": "Celoporthe fontana CMW29375", 
+"^ot:ottId": 128548, 
+"^ot:ottTaxonName": "Celoporthe fontana"
 }, 
 "Tl3512109": {
 "^ot:originalLabel": "Celoporthe tibouchinae CMW44127"
 }, 
 "Tl3512110": {
-"^ot:altLabel": "Aurapex penicillata", 
 "^ot:originalLabel": "Aurapex penicillata CMW10030", 
+"^ot:ottId": 668675, 
+"^ot:ottTaxonName": "Aurapex penicillata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 35046, 
 "@tb:identifier.taxonVariant": 81131, 
@@ -150,10 +254,14 @@
 }
 }, 
 "Tl3512111": {
-"^ot:originalLabel": "Celoporthe syzygii CMW34023"
+"^ot:originalLabel": "Celoporthe syzygii CMW34023", 
+"^ot:ottId": 401025, 
+"^ot:ottTaxonName": "Celoporthe syzygii"
 }, 
 "Tl3512112": {
-"^ot:originalLabel": "Celoporthe eucalypti CMW26908"
+"^ot:originalLabel": "Celoporthe eucalypti CMW26908", 
+"^ot:ottId": 298822, 
+"^ot:ottTaxonName": "Celoporthe eucalypti"
 }, 
 "Tl3512113": {
 "^ot:originalLabel": "Celoporthe tibouchinae CMW44126"
@@ -162,17 +270,22 @@
 "^ot:originalLabel": "Celoporthe borbonica CMW44144"
 }, 
 "Tl3512115": {
-"^ot:originalLabel": "Celoporthe woodiana CMW13937"
+"^ot:originalLabel": "Celoporthe woodiana CMW13937", 
+"^ot:ottId": 710705, 
+"^ot:ottTaxonName": "Celoporthe woodiana"
 }, 
 "Tl3512116": {
 "^ot:originalLabel": "Celoporthe borbonica CMW44125"
 }, 
 "Tl3512117": {
-"^ot:originalLabel": "Celoporthe woodiana CMW13936"
+"^ot:originalLabel": "Celoporthe woodiana CMW13936", 
+"^ot:ottId": 710705, 
+"^ot:ottTaxonName": "Celoporthe woodiana"
 }, 
 "Tl3512118": {
-"^ot:altLabel": "Celoporthe dispersa", 
 "^ot:originalLabel": "Celoporthe dispersa CMW9976", 
+"^ot:ottId": 145923, 
+"^ot:ottTaxonName": "Celoporthe dispersa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 204484, 
 "@tb:identifier.taxonVariant": 274107, 
@@ -187,8 +300,9 @@
 "^ot:originalLabel": "Celoporthe hauoliensis CMW38373"
 }, 
 "Tl3512121": {
-"^ot:altLabel": "Celoporthe dispersa", 
 "^ot:originalLabel": "Celoporthe dispersa CMW9978", 
+"^ot:ottId": 145923, 
+"^ot:ottTaxonName": "Celoporthe dispersa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 204484, 
 "@tb:identifier.taxonVariant": 274107, 
@@ -200,8 +314,9 @@
 "^ot:originalLabel": "Diversimorbus metrosiderotis CMW37321"
 }, 
 "Tl3512123": {
-"^ot:altLabel": "Cryphonectria nitschkei", 
 "^ot:originalLabel": "Cryphonectria nitschkei CMW13742", 
+"^ot:ottId": 918891, 
+"^ot:ottTaxonName": "Cryphonectria nitschkei", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 7569, 
 "@tb:identifier.taxonVariant": 18286, 
@@ -213,8 +328,9 @@
 "^ot:originalLabel": "Myrtonectria myrtacearum CMW46433"
 }, 
 "Tl3512125": {
-"^ot:altLabel": "Holocryphia eucalypti", 
 "^ot:originalLabel": "Holocryphia eucalypti CMW7033", 
+"^ot:ottId": 60066, 
+"^ot:ottTaxonName": "Holocryphia eucalypti", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 7566, 
 "@tb:identifier.taxonVariant": 113177, 
@@ -233,8 +349,9 @@
 }
 }, 
 "Tl3512127": {
-"^ot:altLabel": "Microthia havanensis", 
 "^ot:originalLabel": "Microthia havanensis CMW11301", 
+"^ot:ottId": 412509, 
+"^ot:ottTaxonName": "Microthia havanensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 7567, 
 "@tb:identifier.taxonVariant": 113178, 
@@ -243,8 +360,9 @@
 }
 }, 
 "Tl3512128": {
-"^ot:altLabel": "Cryphonectria macrospora", 
 "^ot:originalLabel": "Cryphonectria macrospora CMW10463", 
+"^ot:ottId": 60069, 
+"^ot:ottTaxonName": "Cryphonectria macrospora", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 7568, 
 "@tb:identifier.taxonVariant": 18284, 
@@ -253,8 +371,9 @@
 }
 }, 
 "Tl3512129": {
-"^ot:altLabel": "Ursicollum fallax", 
 "^ot:originalLabel": "Ursicollum fallax CMW18115", 
+"^ot:ottId": 88869, 
+"^ot:ottTaxonName": "Ursicollum fallax", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 326134, 
 "@tb:identifier.taxonVariant": 367829, 
@@ -263,8 +382,9 @@
 }
 }, 
 "Tl3512130": {
-"^ot:altLabel": "Rostraureum tropicale", 
 "^ot:originalLabel": "Rostraureum tropicale CMW10796", 
+"^ot:ottId": 666277, 
+"^ot:ottTaxonName": "Rostraureum tropicale", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 35038, 
 "@tb:identifier.taxonVariant": 81118, 
@@ -273,17 +393,24 @@
 }
 }, 
 "Tl3512131": {
-"^ot:originalLabel": "Luteocirrhus shearii CBS130775"
+"^ot:originalLabel": "Luteocirrhus shearii CBS130775", 
+"^ot:ottId": 5220024, 
+"^ot:ottTaxonName": "Luteocirrhus shearii"
 }, 
 "Tl3512132": {
-"^ot:originalLabel": "Holocryphia capensis CMW37329"
+"^ot:originalLabel": "Holocryphia capensis CMW37329", 
+"^ot:ottId": 6379468, 
+"^ot:ottTaxonName": "Holocryphia capensis"
 }, 
 "Tl3512133": {
-"^ot:originalLabel": "Immersiporthe knoxdaviesiana CMW37314"
+"^ot:originalLabel": "Immersiporthe knoxdaviesiana CMW37314", 
+"^ot:ottId": 831031, 
+"^ot:ottTaxonName": "Immersiporthe knoxdaviesiana"
 }, 
 "Tl3512134": {
-"^ot:altLabel": "Chrysoporthe austroafricana", 
 "^ot:originalLabel": "Chrysoporthe austroafricana CMW2113", 
+"^ot:ottId": 41112, 
+"^ot:ottTaxonName": "Chrysoporthe austroafricana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6068, 
 "@tb:identifier.taxonVariant": 14622, 
@@ -292,11 +419,14 @@
 }
 }, 
 "Tl3512135": {
-"^ot:originalLabel": "Corticimorbus sinomyrti CERC3055"
+"^ot:originalLabel": "Corticimorbus sinomyrti CERC3055", 
+"^ot:ottId": 5980659, 
+"^ot:ottTaxonName": "Corticimorbus sinomyrti"
 }, 
 "Tl3512136": {
-"^ot:altLabel": "Amphilogia gyrosa", 
 "^ot:originalLabel": "Amphilogia gyrosa CMW10469", 
+"^ot:ottId": 1095058, 
+"^ot:ottTaxonName": "Amphilogia gyrosa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 35037, 
 "@tb:identifier.taxonVariant": 81117, 
@@ -325,7 +455,9 @@
 }
 }, 
 "Tl3512139": {
-"^ot:originalLabel": "Aurifilum marmelostoma CMW28285"
+"^ot:originalLabel": "Aurifilum marmelostoma CMW28285", 
+"^ot:ottId": 1064576, 
+"^ot:ottTaxonName": "Aurifilum marmelostoma"
 }, 
 "Tl3512140": {
 "^ot:originalLabel": "Chrysomorbus lagerstroemiae CERC8780"
@@ -334,11 +466,14 @@
 "^ot:originalLabel": "Cryphonectria descepiens CMW10436"
 }, 
 "Tl3512142": {
-"^ot:originalLabel": "Latruncellus aurorae CMW28274"
+"^ot:originalLabel": "Latruncellus aurorae CMW28274", 
+"^ot:ottId": 1064578, 
+"^ot:ottTaxonName": "Latruncellus aurorae"
 }, 
 "Tl3512143": {
-"^ot:altLabel": "Cryphonectria parasitica", 
 "^ot:originalLabel": "Cryphonectria parasitica CMW7048", 
+"^ot:ottId": 103005, 
+"^ot:ottTaxonName": "Cryphonectria parasitica", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 7570, 
 "@tb:identifier.taxonVariant": 18287, 
@@ -348,14 +483,17 @@
 }, 
 "Tl3512144": {
 "^ot:originalLabel": "Cryptometrion aestuescens CMW18790", 
+"^ot:ottId": 868790, 
+"^ot:ottTaxonName": "Cryptometrion aestuescens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 545058, 
 "@tb:identifier.taxonVariant": 722698
 }
 }, 
 "Tl3512145": {
-"^ot:altLabel": "Chrysoporthe cubensis", 
 "^ot:originalLabel": "Chrysoporthe cubensis CMW14394", 
+"^ot:ottId": 1052899, 
+"^ot:ottTaxonName": "Chrysoporthe cubensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6069, 
 "@tb:identifier.taxonVariant": 14623, 
@@ -397,7 +535,19 @@
 "Tr115918": {
 "@label": "Imported tree 1", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn18134566", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 28, 
 "^tb:quality.tree": "Unrated", 
@@ -847,7 +997,19 @@
 "Tr115919": {
 "@label": "Imported tree 1", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn18134601", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 24, 
 "^tb:quality.tree": "Unrated", 
@@ -1233,7 +1395,19 @@
 "Tr115920": {
 "@label": "Imported tree 1", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn18134629", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 23, 
 "^tb:quality.tree": "Unrated", 
@@ -1603,7 +1777,19 @@
 "Tr115921": {
 "@label": "Imported tree 1", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn18134689", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 29, 
 "^tb:quality.tree": "Unrated", 
@@ -2061,7 +2247,19 @@
 "Tr115922": {
 "@label": "Imported tree 1", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn18134761", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 26, 
 "^tb:quality.tree": "Unrated", 
@@ -2479,7 +2677,19 @@
 "Tr115923": {
 "@label": "Imported tree 1", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn18134796", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 29, 
 "^tb:quality.tree": "Unrated", 
@@ -2945,7 +3155,19 @@
 "Tr115924": {
 "@label": "Imported tree 1", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn18134843", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:ntax.tree": 29, 
 "edgeBySourceId": {
 "Tn18134825": {
