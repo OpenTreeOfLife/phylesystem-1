@@ -51,22 +51,115 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2019-03-14T18:10:02.313Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "Ascomycetes"
 }, 
-"^ot:curatorName": "susan-holder", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}, 
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": "$1"
+}, 
+"old": {
+"$": "^(\\S*\\s+\\S*).*"
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2019-03-14T18:10:02.313Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"susan-holder"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S23593"
 }, 
+"^ot:focalCladeOTTTaxonName": "", 
 "^ot:otusElementOrder": [
 "Tls66103"
 ], 
 "^ot:studyId": "ot_1924", 
+"^ot:studyPublication": {
+"@href": ""
+}, 
 "^ot:studyPublicationReference": "Sundaresan N., Jagan E., Gokulraj K., & Pandi M. 2018. Internal transcribed spacer 2 (ITS2) molecular morphometric analysis based species delimitation of foliar endophytic fungi from Aglaia elaeagnoidea, Flacourtia inermis and Premna serratifolia. PLoS ONE, .", 
 "^ot:studyYear": 2018, 
+"^ot:tag": [], 
 "^ot:taxonLinkPrefixes": {
 "@ubio": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:", 
 "@uniprot": "http://purl.uniprot.org/taxonomy/"
@@ -112,7 +205,9 @@
 }
 }, 
 "Tl3396556": {
-"^ot:originalLabel": "Phyllosticta hymenocallidicola CBS 131310"
+"^ot:originalLabel": "Phyllosticta hymenocallidicola CBS 131310", 
+"^ot:ottId": 193432, 
+"^ot:ottTaxonName": "Phyllosticta hymenocallidicola"
 }, 
 "Tl3396557": {
 "^ot:originalLabel": "Scytalidium hyalinum CBS 145.78"
@@ -121,7 +216,9 @@
 "^ot:originalLabel": "Guignardia mangiferae CBS 115313"
 }, 
 "Tl3396559": {
-"^ot:originalLabel": "Pseudofusicoccum kimberleyense CBS 122058"
+"^ot:originalLabel": "Pseudofusicoccum kimberleyense CBS 122058", 
+"^ot:ottId": 270685, 
+"^ot:ottTaxonName": "Pseudofusicoccum kimberleyense"
 }, 
 "Tl3396560": {
 "^ot:altLabel": "Guignardia mangiferae", 
@@ -135,6 +232,8 @@
 }, 
 "Tl3396561": {
 "^ot:originalLabel": "Ochrolechia balcanica", 
+"^ot:ottId": 175171, 
+"^ot:ottTaxonName": "Ochrolechia balcanica", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 19365, 
 "@tb:identifier.taxonVariant": 45059, 
@@ -143,14 +242,19 @@
 }
 }, 
 "Tl3396562": {
-"^ot:originalLabel": "Neofusicoccum protearum CBS 115499"
+"^ot:originalLabel": "Neofusicoccum protearum CBS 115499", 
+"^ot:ottId": 501048, 
+"^ot:ottTaxonName": "Neofusicoccum protearum"
 }, 
 "Tl3396563": {
-"^ot:originalLabel": "Neofusicoccum eucalypticola CBS 115679"
+"^ot:originalLabel": "Neofusicoccum eucalypticola CBS 115679", 
+"^ot:ottId": 963754, 
+"^ot:ottTaxonName": "Neofusicoccum eucalypticola"
 }, 
 "Tl3396564": {
-"^ot:altLabel": "Phyllosticta capitalensis", 
 "^ot:originalLabel": "Phyllosticta capitalensis Fi-13", 
+"^ot:ottId": 950086, 
+"^ot:ottTaxonName": "Phyllosticta capitalensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 12613, 
 "@tb:identifier.taxonVariant": 564016, 
@@ -160,8 +264,9 @@
 "^skos:prefLabel": "Guignardia mangiferae"
 }, 
 "Tl3396565": {
-"^ot:altLabel": "Neoscytalidium dimidiatum", 
 "^ot:originalLabel": "Neoscytalidium dimidiatum PWQ2367", 
+"^ot:ottId": 1007364, 
+"^ot:ottTaxonName": "Neoscytalidium dimidiatum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 35333, 
 "@tb:identifier.taxonVariant": 81840, 
@@ -170,10 +275,14 @@
 }
 }, 
 "Tl3396566": {
-"^ot:originalLabel": "Neofusicoccum corticosae CPC 12926"
+"^ot:originalLabel": "Neofusicoccum corticosae CPC 12926", 
+"^ot:ottId": 594107, 
+"^ot:ottTaxonName": "Neofusicoccum corticosae"
 }, 
 "Tl3396567": {
 "^ot:originalLabel": "Pseudofusicoccum adansoniae MFLUCC14-0517", 
+"^ot:ottId": 463049, 
+"^ot:ottTaxonName": "Pseudofusicoccum adansoniae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 441301, 
 "@tb:identifier.taxonVariant": 582459
@@ -190,23 +299,32 @@
 }
 }, 
 "Tl3396569": {
-"^ot:originalLabel": "Pseudofusicoccum artocarpi B0431"
+"^ot:originalLabel": "Pseudofusicoccum artocarpi B0431", 
+"^ot:ottId": 5715335, 
+"^ot:ottTaxonName": "Pseudofusicoccum artocarpi"
 }, 
 "Tl3396570": {
 "^ot:originalLabel": "Aureobasidium caulivorum CBS 242.64"
 }, 
 "Tl3396571": {
-"^ot:originalLabel": "Aureobasidium leucospermi CPC 15180"
+"^ot:originalLabel": "Aureobasidium leucospermi CPC 15180", 
+"^ot:ottId": 1066705, 
+"^ot:ottTaxonName": "Aureobasidium leucospermi"
 }, 
 "Tl3396572": {
-"^ot:originalLabel": "Phyllosticta hymenocallidicola Ae-03"
+"^ot:originalLabel": "Phyllosticta hymenocallidicola Ae-03", 
+"^ot:ottId": 193432, 
+"^ot:ottTaxonName": "Phyllosticta hymenocallidicola"
 }, 
 "Tl3396573": {
-"^ot:originalLabel": "Aureobasidium thailandense Ae-12"
+"^ot:originalLabel": "Aureobasidium thailandense Ae-12", 
+"^ot:ottId": 777166, 
+"^ot:ottTaxonName": "Aureobasidium thailandense"
 }, 
 "Tl3396574": {
-"^ot:altLabel": "Phyllosticta capitalensis", 
 "^ot:originalLabel": "Phyllosticta capitalensis Ae-11", 
+"^ot:ottId": 950086, 
+"^ot:ottTaxonName": "Phyllosticta capitalensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 12613, 
 "@tb:identifier.taxonVariant": 564016, 
@@ -216,30 +334,43 @@
 "^skos:prefLabel": "Guignardia mangiferae"
 }, 
 "Tl3396575": {
-"^ot:originalLabel": "Phyllosticta maculata CPC 18347"
+"^ot:originalLabel": "Phyllosticta maculata CPC 18347", 
+"^ot:ottId": 737200, 
+"^ot:ottTaxonName": "Phyllosticta maculata"
 }, 
 "Tl3396576": {
 "^ot:originalLabel": "Pseudofusicoccum adansoniae Ae-01", 
+"^ot:ottId": 463049, 
+"^ot:ottTaxonName": "Pseudofusicoccum adansoniae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 441301, 
 "@tb:identifier.taxonVariant": 582459
 }
 }, 
 "Tl3396577": {
-"^ot:originalLabel": "Phyllosticta citrichinaensis CBS 129764"
+"^ot:originalLabel": "Phyllosticta citrichinaensis CBS 129764", 
+"^ot:ottId": 114967, 
+"^ot:ottTaxonName": "Phyllosticta citrichinaensis"
 }, 
 "Tl3396578": {
-"^ot:originalLabel": "Phyllosticta citrichinaensis CBS 130529"
+"^ot:originalLabel": "Phyllosticta citrichinaensis CBS 130529", 
+"^ot:ottId": 114967, 
+"^ot:ottTaxonName": "Phyllosticta citrichinaensis"
 }, 
 "Tl3396579": {
-"^ot:originalLabel": "Neofusicoccum mediterraneum CPC 13137"
+"^ot:originalLabel": "Neofusicoccum mediterraneum CPC 13137", 
+"^ot:ottId": 597598, 
+"^ot:ottTaxonName": "Neofusicoccum mediterraneum"
 }, 
 "Tl3396580": {
-"^ot:originalLabel": "Phyllosticta yuccae CBS 117136"
+"^ot:originalLabel": "Phyllosticta yuccae CBS 117136", 
+"^ot:ottId": 1027939, 
+"^ot:ottTaxonName": "Phyllosticta yuccae"
 }, 
 "Tl3396581": {
-"^ot:altLabel": "Neofusicoccum parvum", 
 "^ot:originalLabel": "Neofusicoccum parvum Ps-03", 
+"^ot:ottId": 648285, 
+"^ot:ottTaxonName": "Neofusicoccum parvum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 35331, 
 "@tb:identifier.taxonVariant": 81837, 
@@ -249,14 +380,17 @@
 }, 
 "Tl3396582": {
 "^ot:originalLabel": "Pseudofusicoccum adansoniae B0441", 
+"^ot:ottId": 463049, 
+"^ot:ottTaxonName": "Pseudofusicoccum adansoniae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 441301, 
 "@tb:identifier.taxonVariant": 582459
 }
 }, 
 "Tl3396583": {
-"^ot:altLabel": "Phyllosticta capitalensis", 
 "^ot:originalLabel": "Phyllosticta capitalensis Fi-16", 
+"^ot:ottId": 950086, 
+"^ot:ottTaxonName": "Phyllosticta capitalensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 12613, 
 "@tb:identifier.taxonVariant": 564016, 
@@ -266,8 +400,9 @@
 "^skos:prefLabel": "Guignardia mangiferae"
 }, 
 "Tl3396584": {
-"^ot:altLabel": "Neoscytalidium dimidiatum", 
 "^ot:originalLabel": "Neoscytalidium dimidiatum Ae-27", 
+"^ot:ottId": 1007364, 
+"^ot:ottTaxonName": "Neoscytalidium dimidiatum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 35333, 
 "@tb:identifier.taxonVariant": 81840, 
@@ -276,8 +411,9 @@
 }
 }, 
 "Tl3396585": {
-"^ot:altLabel": "Neofusicoccum parvum", 
 "^ot:originalLabel": "Neofusicoccum parvum Ps-10", 
+"^ot:ottId": 648285, 
+"^ot:ottTaxonName": "Neofusicoccum parvum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 35331, 
 "@tb:identifier.taxonVariant": 81837, 
@@ -286,32 +422,45 @@
 }
 }, 
 "Tl3396586": {
-"^ot:originalLabel": "Phyllosticta capitalensis CBS 119720"
+"^ot:originalLabel": "Phyllosticta capitalensis CBS 119720", 
+"^ot:ottId": 950086, 
+"^ot:ottTaxonName": "Phyllosticta capitalensis"
 }, 
 "Tl3396587": {
 "^ot:originalLabel": "Guignardia mangiferae CBS 115051"
 }, 
 "Tl3396588": {
-"^ot:originalLabel": "Neoscytalidium dimidiatum CBS 251.49"
+"^ot:originalLabel": "Neoscytalidium dimidiatum CBS 251.49", 
+"^ot:ottId": 1007364, 
+"^ot:ottTaxonName": "Neoscytalidium dimidiatum"
 }, 
 "Tl3396589": {
-"^ot:originalLabel": "Pseudofusicoccum stromaticum CBS 117448"
+"^ot:originalLabel": "Pseudofusicoccum stromaticum CBS 117448", 
+"^ot:ottId": 819305, 
+"^ot:ottTaxonName": "Pseudofusicoccum stromaticum"
 }, 
 "Tl3396590": {
-"^ot:originalLabel": "Neoscytalidium novaehollandiae CBS 122071"
+"^ot:originalLabel": "Neoscytalidium novaehollandiae CBS 122071", 
+"^ot:ottId": 463046, 
+"^ot:ottTaxonName": "Neoscytalidium novaehollandiae"
 }, 
 "Tl3396591": {
-"^ot:originalLabel": "Neofusicoccum parvum WTS 104"
+"^ot:originalLabel": "Neofusicoccum parvum WTS 104", 
+"^ot:ottId": 648285, 
+"^ot:ottTaxonName": "Neofusicoccum parvum"
 }, 
 "Tl3396592": {
 "^ot:originalLabel": "Botryosphaeria parva NRRL 46122"
 }, 
 "Tl3396593": {
-"^ot:originalLabel": "Pseudofusicoccum olivaceum WTS 58"
+"^ot:originalLabel": "Pseudofusicoccum olivaceum WTS 58", 
+"^ot:ottId": 8301, 
+"^ot:ottTaxonName": "Pseudofusicoccum olivaceum"
 }, 
 "Tl3396594": {
-"^ot:altLabel": "Neofusicoccum parvum", 
 "^ot:originalLabel": "Neofusicoccum parvum Ps-17", 
+"^ot:ottId": 648285, 
+"^ot:ottTaxonName": "Neofusicoccum parvum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 35331, 
 "@tb:identifier.taxonVariant": 81837, 
@@ -320,22 +469,32 @@
 }
 }, 
 "Tl3396595": {
-"^ot:originalLabel": "Phyllosticta hymenocallidicola CBS 131309"
+"^ot:originalLabel": "Phyllosticta hymenocallidicola CBS 131309", 
+"^ot:ottId": 193432, 
+"^ot:ottTaxonName": "Phyllosticta hymenocallidicola"
 }, 
 "Tl3396596": {
-"^ot:originalLabel": "Aureobasidium thailandense NRRL 58543"
+"^ot:originalLabel": "Aureobasidium thailandense NRRL 58543", 
+"^ot:ottId": 777166, 
+"^ot:ottTaxonName": "Aureobasidium thailandense"
 }, 
 "Tl3396597": {
 "^ot:originalLabel": "Botryosphaeria lutea CBS 121482"
 }, 
 "Tl3396598": {
-"^ot:originalLabel": "Pseudofusicoccum ardesiacum CBS 122062"
+"^ot:originalLabel": "Pseudofusicoccum ardesiacum CBS 122062", 
+"^ot:ottId": 794214, 
+"^ot:ottTaxonName": "Pseudofusicoccum ardesiacum"
 }, 
 "Tl3396599": {
-"^ot:originalLabel": "Phyllosticta vaccinii ATCC 46255"
+"^ot:originalLabel": "Phyllosticta vaccinii ATCC 46255", 
+"^ot:ottId": 341021, 
+"^ot:ottTaxonName": "Phyllosticta vaccinii"
 }, 
 "Tl3396600": {
-"^ot:originalLabel": "Phyllosticta cavendishii CPC 18344"
+"^ot:originalLabel": "Phyllosticta cavendishii CPC 18344", 
+"^ot:ottId": 966036, 
+"^ot:ottTaxonName": "Phyllosticta cavendishii"
 }, 
 "Tl3396601": {
 "^ot:altLabel": "Guignardia mangiferae", 
@@ -348,14 +507,19 @@
 }
 }, 
 "Tl3396602": {
-"^ot:originalLabel": "Aureobasidium pullulans NRRL Y-7703"
+"^ot:originalLabel": "Aureobasidium pullulans NRRL Y-7703", 
+"^ot:ottId": 61554, 
+"^ot:ottTaxonName": "Aureobasidium pullulans"
 }, 
 "Tl3396603": {
-"^ot:originalLabel": "Neofusicoccum australe CBS 115185"
+"^ot:originalLabel": "Neofusicoccum australe CBS 115185", 
+"^ot:ottId": 26868, 
+"^ot:ottTaxonName": "Neofusicoccum australe"
 }, 
 "Tl3396604": {
-"^ot:altLabel": "Diaporthe", 
 "^ot:originalLabel": "Diaporthe sp. Fi-21", 
+"^ot:ottId": 737681, 
+"^ot:ottTaxonName": "Diaporthe", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 8883, 
 "@tb:identifier.taxonVariant": 21390, 
@@ -364,8 +528,9 @@
 }
 }, 
 "Tl3396605": {
-"^ot:altLabel": "Diaporthe", 
 "^ot:originalLabel": "Diaporthe sp. 97PG/T", 
+"^ot:ottId": 737681, 
+"^ot:ottTaxonName": "Diaporthe", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 8883, 
 "@tb:identifier.taxonVariant": 21390, 
@@ -374,11 +539,14 @@
 }
 }, 
 "Tl3396606": {
-"^ot:originalLabel": "Diaporthe ceratozamiae CBS 131306"
+"^ot:originalLabel": "Diaporthe ceratozamiae CBS 131306", 
+"^ot:ottId": 114976, 
+"^ot:ottTaxonName": "Diaporthe ceratozamiae"
 }, 
 "Tl3396607": {
-"^ot:altLabel": "Phomopsis", 
 "^ot:originalLabel": "Phomopsis sp. UAS014", 
+"^ot:ottId": 712313, 
+"^ot:ottTaxonName": "Phomopsis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 21908, 
 "@tb:identifier.taxonVariant": 50951, 
@@ -387,8 +555,9 @@
 }
 }, 
 "Tl3396608": {
-"^ot:altLabel": "Phomopsis", 
 "^ot:originalLabel": "Phomopsis sp. YM311483", 
+"^ot:ottId": 712313, 
+"^ot:ottTaxonName": "Phomopsis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 21908, 
 "@tb:identifier.taxonVariant": 50951, 
@@ -397,8 +566,9 @@
 }
 }, 
 "Tl3396609": {
-"^ot:altLabel": "Phomopsis", 
 "^ot:originalLabel": "Phomopsis sp. NY8658c", 
+"^ot:ottId": 712313, 
+"^ot:ottTaxonName": "Phomopsis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 21908, 
 "@tb:identifier.taxonVariant": 50951, 
@@ -407,23 +577,32 @@
 }
 }, 
 "Tl3396610": {
-"^ot:originalLabel": "Diaporthe pseudomangiferae Ps-15"
+"^ot:originalLabel": "Diaporthe pseudomangiferae Ps-15", 
+"^ot:ottId": 4052770, 
+"^ot:ottTaxonName": "Diaporthe pseudomangiferae"
 }, 
 "Tl3396611": {
 "^ot:originalLabel": "Diaporthe perseae Ps-32"
 }, 
 "Tl3396612": {
-"^ot:originalLabel": "Diaporthe novem CBS 127269"
+"^ot:originalLabel": "Diaporthe novem CBS 127269", 
+"^ot:ottId": 406888, 
+"^ot:ottTaxonName": "Diaporthe novem"
 }, 
 "Tl3396613": {
-"^ot:originalLabel": "Harknessia sp. Ae-04"
+"^ot:originalLabel": "Harknessia sp. Ae-04", 
+"^ot:ottId": 5980912, 
+"^ot:ottTaxonName": "Harknessia sp. Ae-04"
 }, 
 "Tl3396614": {
-"^ot:originalLabel": "Harknessia capensis CBS 111829"
+"^ot:originalLabel": "Harknessia capensis CBS 111829", 
+"^ot:ottId": 96862, 
+"^ot:ottTaxonName": "Harknessia capensis"
 }, 
 "Tl3396615": {
-"^ot:altLabel": "Diaporthe", 
 "^ot:originalLabel": "Diaporthe sp. Ps-01", 
+"^ot:ottId": 737681, 
+"^ot:ottTaxonName": "Diaporthe", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 8883, 
 "@tb:identifier.taxonVariant": 21390, 
@@ -432,8 +611,9 @@
 }
 }, 
 "Tl3396616": {
-"^ot:altLabel": "Diaporthe", 
 "^ot:originalLabel": "Diaporthe sp. Ps-02", 
+"^ot:ottId": 737681, 
+"^ot:ottTaxonName": "Diaporthe", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 8883, 
 "@tb:identifier.taxonVariant": 21390, 
@@ -442,10 +622,14 @@
 }
 }, 
 "Tl3396617": {
-"^ot:originalLabel": "Diaporthe pseudophoenicicola CBS 462.69"
+"^ot:originalLabel": "Diaporthe pseudophoenicicola CBS 462.69", 
+"^ot:ottId": 4052771, 
+"^ot:ottTaxonName": "Diaporthe pseudophoenicicola"
 }, 
 "Tl3396618": {
-"^ot:originalLabel": "Harknessia sp. CCG-2012"
+"^ot:originalLabel": "Harknessia sp. CCG-2012", 
+"^ot:ottId": 4927401, 
+"^ot:ottTaxonName": "Harknessia sp. CCG-2012"
 }, 
 "Tl3396619": {
 "^ot:originalLabel": "Diaporthe perseae Ae-28"
@@ -463,11 +647,14 @@
 "^ot:originalLabel": "Diaporthe aspalathi CBS 117500"
 }, 
 "Tl3396622": {
-"^ot:originalLabel": "Diaporthe pseudomangiferae RPS-7"
+"^ot:originalLabel": "Diaporthe pseudomangiferae RPS-7", 
+"^ot:ottId": 4052770, 
+"^ot:ottTaxonName": "Diaporthe pseudomangiferae"
 }, 
 "Tl3396623": {
-"^ot:altLabel": "Phomopsis", 
 "^ot:originalLabel": "Phomopsis sp. Fi-32", 
+"^ot:ottId": 712313, 
+"^ot:ottTaxonName": "Phomopsis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 21908, 
 "@tb:identifier.taxonVariant": 50951, 
@@ -476,8 +663,9 @@
 }
 }, 
 "Tl3396624": {
-"^ot:altLabel": "Diaporthe", 
 "^ot:originalLabel": "Diaporthe sp. Fi-25", 
+"^ot:ottId": 737681, 
+"^ot:ottTaxonName": "Diaporthe", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 8883, 
 "@tb:identifier.taxonVariant": 21390, 
@@ -486,16 +674,24 @@
 }
 }, 
 "Tl3396625": {
-"^ot:originalLabel": "Diaporthe pseudomangiferae CBS 388.89"
+"^ot:originalLabel": "Diaporthe pseudomangiferae CBS 388.89", 
+"^ot:ottId": 4052770, 
+"^ot:ottTaxonName": "Diaporthe pseudomangiferae"
 }, 
 "Tl3396626": {
-"^ot:originalLabel": "Diaporthe mayteni CBS 133185"
+"^ot:originalLabel": "Diaporthe mayteni CBS 133185", 
+"^ot:ottId": 4052787, 
+"^ot:ottTaxonName": "Diaporthe mayteni"
 }, 
 "Tl3396627": {
-"^ot:originalLabel": "Harknessia sp. CPC 11153"
+"^ot:originalLabel": "Harknessia sp. CPC 11153", 
+"^ot:ottId": 757502, 
+"^ot:ottTaxonName": "Harknessia sp. CPC 11153"
 }, 
 "Tl3396628": {
 "^ot:originalLabel": "Diaporthe lusitanicae CBS 123213", 
+"^ot:ottId": 994588, 
+"^ot:ottTaxonName": "Diaporthe lusitanicae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 615477, 
 "@tb:identifier.taxonVariant": 823068, 
@@ -503,20 +699,25 @@
 }
 }, 
 "Tl3396629": {
-"^ot:originalLabel": "Diaporthe acaciarum CBS138862"
+"^ot:originalLabel": "Diaporthe acaciarum CBS138862", 
+"^ot:ottId": 5708890, 
+"^ot:ottTaxonName": "Diaporthe acaciarum"
 }, 
 "Tl3396630": {
 "^ot:originalLabel": "Diaporthe eres CBS 370.67"
 }, 
 "Tl3396631": {
-"^ot:originalLabel": "Diaporthe pseudomangiferae Ps-08"
+"^ot:originalLabel": "Diaporthe pseudomangiferae Ps-08", 
+"^ot:ottId": 4052770, 
+"^ot:ottTaxonName": "Diaporthe pseudomangiferae"
 }, 
 "Tl3396632": {
 "^ot:originalLabel": "Diaporthe ganjae CBS 180.91"
 }, 
 "Tl3396633": {
-"^ot:altLabel": "Phomopsis", 
 "^ot:originalLabel": "Phomopsis sp. Ps-35", 
+"^ot:ottId": 712313, 
+"^ot:ottTaxonName": "Phomopsis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 21908, 
 "@tb:identifier.taxonVariant": 50951, 
@@ -525,8 +726,9 @@
 }
 }, 
 "Tl3396634": {
-"^ot:altLabel": "Diaporthe", 
 "^ot:originalLabel": "Diaporthe sp. Fi-06", 
+"^ot:ottId": 737681, 
+"^ot:ottTaxonName": "Diaporthe", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 8883, 
 "@tb:identifier.taxonVariant": 21390, 
@@ -535,8 +737,9 @@
 }
 }, 
 "Tl3396635": {
-"^ot:altLabel": "Phomopsis", 
 "^ot:originalLabel": "Phomopsis sp. Ps-34", 
+"^ot:ottId": 712313, 
+"^ot:ottTaxonName": "Phomopsis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 21908, 
 "@tb:identifier.taxonVariant": 50951, 
@@ -545,14 +748,17 @@
 }
 }, 
 "Tl3396636": {
-"^ot:originalLabel": "Harknessia rhabdosphaera CBS 120082"
+"^ot:originalLabel": "Harknessia rhabdosphaera CBS 120082", 
+"^ot:ottId": 594105, 
+"^ot:ottTaxonName": "Harknessia rhabdosphaera"
 }, 
 "Tl3396637": {
 "^ot:originalLabel": "Diaporthe caulivora CBS 127268"
 }, 
 "Tl3396638": {
-"^ot:altLabel": "Diaporthe", 
 "^ot:originalLabel": "Diaporthe sp. Fi-27", 
+"^ot:ottId": 737681, 
+"^ot:ottTaxonName": "Diaporthe", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 8883, 
 "@tb:identifier.taxonVariant": 21390, 
@@ -561,29 +767,44 @@
 }
 }, 
 "Tl3396639": {
-"^ot:originalLabel": "Diaporthe pseudomangiferae Ae-19"
+"^ot:originalLabel": "Diaporthe pseudomangiferae Ae-19", 
+"^ot:ottId": 4052770, 
+"^ot:ottTaxonName": "Diaporthe pseudomangiferae"
 }, 
 "Tl3396640": {
-"^ot:originalLabel": "Diaporthe pseudomangiferae Ae-29"
+"^ot:originalLabel": "Diaporthe pseudomangiferae Ae-29", 
+"^ot:ottId": 4052770, 
+"^ot:ottTaxonName": "Diaporthe pseudomangiferae"
 }, 
 "Tl3396641": {
-"^ot:originalLabel": "Diaporthe pascoei BRIP 54847"
+"^ot:originalLabel": "Diaporthe pascoei BRIP 54847", 
+"^ot:ottId": 4927393, 
+"^ot:ottTaxonName": "Diaporthe pascoei"
 }, 
 "Tl3396642": {
-"^ot:originalLabel": "Phomopsis azadirachtae Ps-22"
+"^ot:originalLabel": "Phomopsis azadirachtae Ps-22", 
+"^ot:ottId": 803294, 
+"^ot:ottTaxonName": "Phomopsis azadirachtae"
 }, 
 "Tl3396643": {
-"^ot:originalLabel": "Diaporthe pseudomangiferae Fi-03"
+"^ot:originalLabel": "Diaporthe pseudomangiferae Fi-03", 
+"^ot:ottId": 4052770, 
+"^ot:ottTaxonName": "Diaporthe pseudomangiferae"
 }, 
 "Tl3396644": {
-"^ot:originalLabel": "Harknessia protearum CBS 111831"
+"^ot:originalLabel": "Harknessia protearum CBS 111831", 
+"^ot:ottId": 602201, 
+"^ot:ottTaxonName": "Harknessia protearum"
 }, 
 "Tl3396645": {
-"^ot:originalLabel": "Diaporthe eucalyptorum CPC 17203"
+"^ot:originalLabel": "Diaporthe eucalyptorum CPC 17203", 
+"^ot:ottId": 459379, 
+"^ot:ottTaxonName": "Diaporthe eucalyptorum"
 }, 
 "Tl3396646": {
-"^ot:altLabel": "Phomopsis", 
 "^ot:originalLabel": "Phomopsis sp. Fi-04", 
+"^ot:ottId": 712313, 
+"^ot:ottTaxonName": "Phomopsis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 21908, 
 "@tb:identifier.taxonVariant": 50951, 
@@ -592,14 +813,19 @@
 }
 }, 
 "Tl3396647": {
-"^ot:originalLabel": "Diaporthe pseudomangiferae Ae-25"
+"^ot:originalLabel": "Diaporthe pseudomangiferae Ae-25", 
+"^ot:ottId": 4052770, 
+"^ot:ottTaxonName": "Diaporthe pseudomangiferae"
 }, 
 "Tl3396648": {
-"^ot:originalLabel": "Harknessia rhabdosphaera CPC 12847"
+"^ot:originalLabel": "Harknessia rhabdosphaera CPC 12847", 
+"^ot:ottId": 594105, 
+"^ot:ottTaxonName": "Harknessia rhabdosphaera"
 }, 
 "Tl3396649": {
-"^ot:altLabel": "Diaporthe", 
 "^ot:originalLabel": "Diaporthe sp. Fi-07", 
+"^ot:ottId": 737681, 
+"^ot:ottTaxonName": "Diaporthe", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 8883, 
 "@tb:identifier.taxonVariant": 21390, 
@@ -608,8 +834,9 @@
 }
 }, 
 "Tl3396650": {
-"^ot:altLabel": "Phomopsis", 
 "^ot:originalLabel": "Phomopsis sp. Fi-24", 
+"^ot:ottId": 712313, 
+"^ot:ottTaxonName": "Phomopsis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 21908, 
 "@tb:identifier.taxonVariant": 50951, 
@@ -618,8 +845,9 @@
 }
 }, 
 "Tl3396651": {
-"^ot:altLabel": "Diaporthe", 
 "^ot:originalLabel": "Diaporthe sp. Fi-22", 
+"^ot:ottId": 737681, 
+"^ot:ottTaxonName": "Diaporthe", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 8883, 
 "@tb:identifier.taxonVariant": 21390, 
@@ -628,8 +856,9 @@
 }
 }, 
 "Tl3396652": {
-"^ot:altLabel": "Diaporthe", 
 "^ot:originalLabel": "Diaporthe sp. Ps-13", 
+"^ot:ottId": 737681, 
+"^ot:ottTaxonName": "Diaporthe", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 8883, 
 "@tb:identifier.taxonVariant": 21390, 
@@ -641,11 +870,14 @@
 "^ot:originalLabel": "Diaporthe melonis CBS H-891"
 }, 
 "Tl3396654": {
-"^ot:originalLabel": "Harknessia ellipsoidea CPC 17113"
+"^ot:originalLabel": "Harknessia ellipsoidea CPC 17113", 
+"^ot:ottId": 334736, 
+"^ot:ottTaxonName": "Harknessia ellipsoidea"
 }, 
 "Tl3396655": {
-"^ot:altLabel": "Diaporthe", 
 "^ot:originalLabel": "Diaporthe sp. 7 RG-2013", 
+"^ot:ottId": 737681, 
+"^ot:ottTaxonName": "Diaporthe", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 8883, 
 "@tb:identifier.taxonVariant": 21390, 
@@ -654,7 +886,9 @@
 }
 }, 
 "Tl3396656": {
-"^ot:originalLabel": "Diaporthe pseudomangiferae Fi-19"
+"^ot:originalLabel": "Diaporthe pseudomangiferae Fi-19", 
+"^ot:ottId": 4052770, 
+"^ot:ottTaxonName": "Diaporthe pseudomangiferae"
 }, 
 "Tl3396657": {
 "^ot:altLabel": "Diaporthe melonis", 
@@ -667,14 +901,19 @@
 }
 }, 
 "Tl3396658": {
-"^ot:originalLabel": "Harknessia gibbosa CBS 120033"
+"^ot:originalLabel": "Harknessia gibbosa CBS 120033", 
+"^ot:ottId": 217077, 
+"^ot:ottTaxonName": "Harknessia gibbosa"
 }, 
 "Tl3396659": {
-"^ot:originalLabel": "Harknessia leucospermi CBS 112619"
+"^ot:originalLabel": "Harknessia leucospermi CBS 112619", 
+"^ot:ottId": 618365, 
+"^ot:ottTaxonName": "Harknessia leucospermi"
 }, 
 "Tl3396660": {
-"^ot:altLabel": "Diaporthe", 
 "^ot:originalLabel": "Diaporthe sp. Ps-33", 
+"^ot:ottId": 737681, 
+"^ot:ottTaxonName": "Diaporthe", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 8883, 
 "@tb:identifier.taxonVariant": 21390, 
@@ -686,8 +925,9 @@
 "^ot:originalLabel": "Diaporthe vaccinii CBS 160.32"
 }, 
 "Tl3396662": {
-"^ot:altLabel": "Phomopsis", 
 "^ot:originalLabel": "Phomopsis sp. Ps-20", 
+"^ot:ottId": 712313, 
+"^ot:ottTaxonName": "Phomopsis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 21908, 
 "@tb:identifier.taxonVariant": 50951, 
@@ -696,14 +936,19 @@
 }
 }, 
 "Tl3396663": {
-"^ot:originalLabel": "Diaporthe pascoei Ae-22"
+"^ot:originalLabel": "Diaporthe pascoei Ae-22", 
+"^ot:ottId": 4927393, 
+"^ot:ottTaxonName": "Diaporthe pascoei"
 }, 
 "Tl3396664": {
-"^ot:originalLabel": "Diaporthe arengae CBS 114979"
+"^ot:originalLabel": "Diaporthe arengae CBS 114979", 
+"^ot:ottId": 4052794, 
+"^ot:ottTaxonName": "Diaporthe arengae"
 }, 
 "Tl3396665": {
-"^ot:altLabel": "Diaporthe", 
 "^ot:originalLabel": "Diaporthe sp. 138SD/T", 
+"^ot:ottId": 737681, 
+"^ot:ottTaxonName": "Diaporthe", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 8883, 
 "@tb:identifier.taxonVariant": 21390, 
@@ -712,32 +957,49 @@
 }
 }, 
 "Tl3396666": {
-"^ot:originalLabel": "Harknessia globispora CBS 111578"
+"^ot:originalLabel": "Harknessia globispora CBS 111578", 
+"^ot:ottId": 804814, 
+"^ot:ottTaxonName": "Harknessia globispora"
 }, 
 "Tl3396667": {
-"^ot:originalLabel": "Diaporthe pseudomangiferae Fi-26"
+"^ot:originalLabel": "Diaporthe pseudomangiferae Fi-26", 
+"^ot:ottId": 4052770, 
+"^ot:ottTaxonName": "Diaporthe pseudomangiferae"
 }, 
 "Tl3396668": {
-"^ot:originalLabel": "Phomopsis palmicola CP2"
+"^ot:originalLabel": "Phomopsis palmicola CP2", 
+"^ot:ottId": 3697533, 
+"^ot:ottTaxonName": "Phomopsis palmicola"
 }, 
 "Tl3396669": {
-"^ot:originalLabel": "Harknessia ravenstreetina CPC 17209"
+"^ot:originalLabel": "Harknessia ravenstreetina CPC 17209", 
+"^ot:ottId": 801904, 
+"^ot:ottTaxonName": "Harknessia ravenstreetina"
 }, 
 "Tl3396670": {
-"^ot:originalLabel": "Phomopsis azadirachtae 2"
+"^ot:originalLabel": "Phomopsis azadirachtae 2", 
+"^ot:ottId": 803294, 
+"^ot:ottTaxonName": "Phomopsis azadirachtae"
 }, 
 "Tl3396671": {
-"^ot:originalLabel": "Diaporthe endophytica LGMF937"
+"^ot:originalLabel": "Diaporthe endophytica LGMF937", 
+"^ot:ottId": 4052798, 
+"^ot:ottTaxonName": "Diaporthe endophytica"
 }, 
 "Tl3396672": {
-"^ot:originalLabel": "Diaporthe novem CBS 354.71"
+"^ot:originalLabel": "Diaporthe novem CBS 354.71", 
+"^ot:ottId": 406888, 
+"^ot:ottTaxonName": "Diaporthe novem"
 }, 
 "Tl3396673": {
-"^ot:originalLabel": "Diaporthe pseudomangiferae Ae-02"
+"^ot:originalLabel": "Diaporthe pseudomangiferae Ae-02", 
+"^ot:ottId": 4052770, 
+"^ot:ottTaxonName": "Diaporthe pseudomangiferae"
 }, 
 "Tl3396674": {
-"^ot:altLabel": "Diaporthe", 
 "^ot:originalLabel": "Diaporthe sp. Fi-18", 
+"^ot:ottId": 737681, 
+"^ot:ottTaxonName": "Diaporthe", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 8883, 
 "@tb:identifier.taxonVariant": 21390, 
@@ -749,8 +1011,9 @@
 "^ot:originalLabel": "Diaporthe amygdali CBS 126679"
 }, 
 "Tl3396676": {
-"^ot:altLabel": "Phomopsis", 
 "^ot:originalLabel": "Phomopsis sp. Fi-31", 
+"^ot:ottId": 712313, 
+"^ot:ottTaxonName": "Phomopsis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 21908, 
 "@tb:identifier.taxonVariant": 50951, 
@@ -759,11 +1022,14 @@
 }
 }, 
 "Tl3396677": {
-"^ot:originalLabel": "Diaporthaceae sp. MA81"
+"^ot:originalLabel": "Diaporthaceae sp. MA81", 
+"^ot:ottId": 4052761, 
+"^ot:ottTaxonName": "Diaporthaceae sp. MA81"
 }, 
 "Tl3396678": {
-"^ot:altLabel": "Diaporthe", 
 "^ot:originalLabel": "Diaporthe sp. Fi-20", 
+"^ot:ottId": 737681, 
+"^ot:ottTaxonName": "Diaporthe", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 8883, 
 "@tb:identifier.taxonVariant": 21390, 
@@ -772,14 +1038,19 @@
 }
 }, 
 "Tl3396679": {
-"^ot:originalLabel": "Harknessia eucalyptorum CBS 113620"
+"^ot:originalLabel": "Harknessia eucalyptorum CBS 113620", 
+"^ot:ottId": 618359, 
+"^ot:ottTaxonName": "Harknessia eucalyptorum"
 }, 
 "Tl3396680": {
-"^ot:originalLabel": "Harknessia hawaiiensis CBS 111122"
+"^ot:originalLabel": "Harknessia hawaiiensis CBS 111122", 
+"^ot:ottId": 96865, 
+"^ot:ottTaxonName": "Harknessia hawaiiensis"
 }, 
 "Tl3396681": {
-"^ot:altLabel": "Phomopsis", 
 "^ot:originalLabel": "Phomopsis sp. Ps-12", 
+"^ot:ottId": 712313, 
+"^ot:ottTaxonName": "Phomopsis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 21908, 
 "@tb:identifier.taxonVariant": 50951, 
@@ -788,8 +1059,9 @@
 }
 }, 
 "Tl3396682": {
-"^ot:altLabel": "Diaporthe", 
 "^ot:originalLabel": "Diaporthe sp. Fi-28", 
+"^ot:ottId": 737681, 
+"^ot:ottTaxonName": "Diaporthe", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 8883, 
 "@tb:identifier.taxonVariant": 21390, 
@@ -798,8 +1070,9 @@
 }
 }, 
 "Tl3396683": {
-"^ot:altLabel": "Diaporthe", 
 "^ot:originalLabel": "Diaporthe sp. 75AM/T", 
+"^ot:ottId": 737681, 
+"^ot:ottTaxonName": "Diaporthe", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 8883, 
 "@tb:identifier.taxonVariant": 21390, 
@@ -808,8 +1081,9 @@
 }
 }, 
 "Tl3396684": {
-"^ot:altLabel": "Phomopsis", 
 "^ot:originalLabel": "Phomopsis sp. DZ27", 
+"^ot:ottId": 712313, 
+"^ot:ottTaxonName": "Phomopsis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 21908, 
 "@tb:identifier.taxonVariant": 50951, 
@@ -818,8 +1092,9 @@
 }
 }, 
 "Tl3396685": {
-"^ot:altLabel": "Diaporthe", 
 "^ot:originalLabel": "Diaporthe sp. Fi-23", 
+"^ot:ottId": 737681, 
+"^ot:ottTaxonName": "Diaporthe", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 8883, 
 "@tb:identifier.taxonVariant": 21390, 
@@ -834,8 +1109,9 @@
 "^ot:originalLabel": "Diaporthe perseae CBS 151.73"
 }, 
 "Tl3396688": {
-"^ot:altLabel": "Diaporthe", 
 "^ot:originalLabel": "Diaporthe sp. Ae-24", 
+"^ot:ottId": 737681, 
+"^ot:ottTaxonName": "Diaporthe", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 8883, 
 "@tb:identifier.taxonVariant": 21390, 
@@ -844,13 +1120,19 @@
 }
 }, 
 "Tl3396689": {
-"^ot:originalLabel": "Colletotrichum karstii Ps-24"
+"^ot:originalLabel": "Colletotrichum karstii Ps-24", 
+"^ot:ottId": 686421, 
+"^ot:ottTaxonName": "Colletotrichum karstii"
 }, 
 "Tl3396690": {
-"^ot:originalLabel": "Colletotrichum karstii OCAC4"
+"^ot:originalLabel": "Colletotrichum karstii OCAC4", 
+"^ot:ottId": 686421, 
+"^ot:ottTaxonName": "Colletotrichum karstii"
 }, 
 "Tl3396691": {
-"^ot:originalLabel": "Colletotrichum tropicale Ae-05"
+"^ot:originalLabel": "Colletotrichum tropicale Ae-05", 
+"^ot:ottId": 604684, 
+"^ot:ottTaxonName": "Colletotrichum tropicale"
 }, 
 "Tl3396692": {
 "^ot:altLabel": "Colletotrichum sp.", 
@@ -863,13 +1145,19 @@
 }
 }, 
 "Tl3396693": {
-"^ot:originalLabel": "Colletotrichum tropicale CG10"
+"^ot:originalLabel": "Colletotrichum tropicale CG10", 
+"^ot:ottId": 604684, 
+"^ot:ottTaxonName": "Colletotrichum tropicale"
 }, 
 "Tl3396694": {
-"^ot:originalLabel": "Colletotrichum karstii Ae-21"
+"^ot:originalLabel": "Colletotrichum karstii Ae-21", 
+"^ot:ottId": 686421, 
+"^ot:ottTaxonName": "Colletotrichum karstii"
 }, 
 "Tl3396695": {
-"^ot:originalLabel": "Colletotrichum parsonsiae CBS 128525"
+"^ot:originalLabel": "Colletotrichum parsonsiae CBS 128525", 
+"^ot:ottId": 797846, 
+"^ot:ottTaxonName": "Colletotrichum parsonsiae"
 }, 
 "Tl3396696": {
 "^ot:altLabel": "Colletotrichum gloeosporioides", 
@@ -893,28 +1181,44 @@
 }
 }, 
 "Tl3396698": {
-"^ot:originalLabel": "Colletotrichum tropicale CBS 124946"
+"^ot:originalLabel": "Colletotrichum tropicale CBS 124946", 
+"^ot:ottId": 604684, 
+"^ot:ottTaxonName": "Colletotrichum tropicale"
 }, 
 "Tl3396699": {
-"^ot:originalLabel": "Colletotrichum cliviae CBS 125375"
+"^ot:originalLabel": "Colletotrichum cliviae CBS 125375", 
+"^ot:ottId": 439400, 
+"^ot:ottTaxonName": "Colletotrichum cliviae"
 }, 
 "Tl3396700": {
-"^ot:originalLabel": "Colletotrichum acutatum CBS 111993"
+"^ot:originalLabel": "Colletotrichum acutatum CBS 111993", 
+"^ot:ottId": 563425, 
+"^ot:ottTaxonName": "Colletotrichum acutatum"
 }, 
 "Tl3396701": {
-"^ot:originalLabel": "Colletotrichum siamense C1316.6"
+"^ot:originalLabel": "Colletotrichum siamense C1316.6", 
+"^ot:ottId": 594063, 
+"^ot:ottTaxonName": "Colletotrichum siamense"
 }, 
 "Tl3396702": {
-"^ot:originalLabel": "Colletotrichum fructi CBS 346.37"
+"^ot:originalLabel": "Colletotrichum fructi CBS 346.37", 
+"^ot:ottId": 1061173, 
+"^ot:ottTaxonName": "Colletotrichum fructi"
 }, 
 "Tl3396703": {
-"^ot:originalLabel": "Arthroxylaria sp. Fi-29"
+"^ot:originalLabel": "Arthroxylaria sp. Fi-29", 
+"^ot:ottId": 5982838, 
+"^ot:ottTaxonName": "Arthroxylaria sp. Fi-29"
 }, 
 "Tl3396704": {
-"^ot:originalLabel": "Xylaria hypoxylon CBS 868.72"
+"^ot:originalLabel": "Xylaria hypoxylon CBS 868.72", 
+"^ot:ottId": 44255, 
+"^ot:ottTaxonName": "Xylaria hypoxylon"
 }, 
 "Tl3396705": {
-"^ot:originalLabel": "Xylaria brevipes MP748"
+"^ot:originalLabel": "Xylaria brevipes MP748", 
+"^ot:ottId": 4048487, 
+"^ot:ottTaxonName": "Xylaria brevipes"
 }, 
 "Tl3396706": {
 "^ot:altLabel": "Colletotrichum gloeosporioides", 
@@ -928,11 +1232,14 @@
 "^skos:prefLabel": "Colletotrichum cf. gloeosporioides AR4031"
 }, 
 "Tl3396707": {
-"^ot:originalLabel": "Colletotrichum coccodes ATCC 58682"
+"^ot:originalLabel": "Colletotrichum coccodes ATCC 58682", 
+"^ot:ottId": 563413, 
+"^ot:ottTaxonName": "Colletotrichum coccodes"
 }, 
 "Tl3396708": {
-"^ot:altLabel": "Colletotrichum truncatum", 
 "^ot:originalLabel": "Colletotrichum truncatum CBS 127.57", 
+"^ot:ottId": 458359, 
+"^ot:ottTaxonName": "Colletotrichum truncatum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 614505, 
 "@tb:identifier.taxonVariant": 821644, 
@@ -941,13 +1248,19 @@
 }
 }, 
 "Tl3396709": {
-"^ot:originalLabel": "Colletotrichum circinans CBS 125331"
+"^ot:originalLabel": "Colletotrichum circinans CBS 125331", 
+"^ot:ottId": 9668, 
+"^ot:ottTaxonName": "Colletotrichum circinans"
 }, 
 "Tl3396710": {
-"^ot:originalLabel": "Colletotrichum karstii CBS 106.91"
+"^ot:originalLabel": "Colletotrichum karstii CBS 106.91", 
+"^ot:ottId": 686421, 
+"^ot:ottTaxonName": "Colletotrichum karstii"
 }, 
 "Tl3396711": {
-"^ot:originalLabel": "Colletotrichum cliviae Ps-28"
+"^ot:originalLabel": "Colletotrichum cliviae Ps-28", 
+"^ot:ottId": 439400, 
+"^ot:ottTaxonName": "Colletotrichum cliviae"
 }, 
 "Tl3396712": {
 "^ot:altLabel": "Colletotrichum gloeosporioides", 
@@ -961,7 +1274,9 @@
 "^skos:prefLabel": "Colletotrichum cf. gloeosporioides AR4031"
 }, 
 "Tl3396713": {
-"^ot:originalLabel": "Colletotrichum musae CBS 125356"
+"^ot:originalLabel": "Colletotrichum musae CBS 125356", 
+"^ot:ottId": 458358, 
+"^ot:ottTaxonName": "Colletotrichum musae"
 }, 
 "Tl3396714": {
 "^ot:altLabel": "Colletotrichum gloeosporioides", 
@@ -975,10 +1290,14 @@
 "^skos:prefLabel": "Colletotrichum cf. gloeosporioides AR4031"
 }, 
 "Tl3396715": {
-"^ot:originalLabel": "Colletotrichum pseudoacutatum  CBS 436.77"
+"^ot:originalLabel": "Colletotrichum pseudoacutatum  CBS 436.77", 
+"^ot:ottId": 455504, 
+"^ot:ottTaxonName": "Colletotrichum pseudoacutatum"
 }, 
 "Tl3396716": {
-"^ot:originalLabel": "Xylaria sp. Ps-31"
+"^ot:originalLabel": "Xylaria sp. Ps-31", 
+"^ot:ottId": 5983025, 
+"^ot:ottTaxonName": "Xylaria sp. Ps-31"
 }, 
 "Tl3396717": {
 "^ot:altLabel": "Colletotrichum gloeosporioides", 
@@ -995,7 +1314,9 @@
 "^ot:originalLabel": "Colletotrichum gloeosporioides CBS 122687"
 }, 
 "Tl3396719": {
-"^ot:originalLabel": "Colletotrichum alienum CBS 516.97"
+"^ot:originalLabel": "Colletotrichum alienum CBS 516.97", 
+"^ot:ottId": 412215, 
+"^ot:ottTaxonName": "Colletotrichum alienum"
 }, 
 "Tl3396720": {
 "^ot:altLabel": "Colletotrichum spinaciae", 
@@ -1029,7 +1350,9 @@
 }
 }, 
 "Tl3396723": {
-"^ot:originalLabel": "Colletotrichum petchii CBS 118193"
+"^ot:originalLabel": "Colletotrichum petchii CBS 118193", 
+"^ot:ottId": 797837, 
+"^ot:ottTaxonName": "Colletotrichum petchii"
 }, 
 "Tl3396724": {
 "^ot:altLabel": "Colletotrichum sp.", 
@@ -1052,19 +1375,29 @@
 }
 }, 
 "Tl3396726": {
-"^ot:originalLabel": "Colletotrichum fructicola CPC 16143"
+"^ot:originalLabel": "Colletotrichum fructicola CPC 16143", 
+"^ot:ottId": 594038, 
+"^ot:ottTaxonName": "Colletotrichum fructicola"
 }, 
 "Tl3396727": {
-"^ot:originalLabel": "Colletotrichum kahawae subsp. kahawae C1275.14"
+"^ot:originalLabel": "Colletotrichum kahawae subsp. kahawae C1275.14", 
+"^ot:ottId": 412224, 
+"^ot:ottTaxonName": "Colletotrichum kahawae"
 }, 
 "Tl3396728": {
-"^ot:originalLabel": "Colletotrichum cliviae Ps-07"
+"^ot:originalLabel": "Colletotrichum cliviae Ps-07", 
+"^ot:ottId": 439400, 
+"^ot:ottTaxonName": "Colletotrichum cliviae"
 }, 
 "Tl3396729": {
-"^ot:originalLabel": "Colletotrichum euphorbiae CPC 21834"
+"^ot:originalLabel": "Colletotrichum euphorbiae CPC 21834", 
+"^ot:ottId": 5308727, 
+"^ot:ottTaxonName": "Colletotrichum euphorbiae"
 }, 
 "Tl3396730": {
-"^ot:originalLabel": "Colletotrichum hippeastri CBS 241.78"
+"^ot:originalLabel": "Colletotrichum hippeastri CBS 241.78", 
+"^ot:ottId": 594042, 
+"^ot:ottTaxonName": "Colletotrichum hippeastri"
 }, 
 "Tl3396731": {
 "^ot:altLabel": "Colletotrichum gloeosporioides", 
@@ -1081,13 +1414,19 @@
 "^ot:originalLabel": "Colletotrichum gloeosporioides CPC 20935"
 }, 
 "Tl3396733": {
-"^ot:originalLabel": "Colletotrichum pseudomajus CBS 571.88"
+"^ot:originalLabel": "Colletotrichum pseudomajus CBS 571.88", 
+"^ot:ottId": 5709375, 
+"^ot:ottTaxonName": "Colletotrichum pseudomajus"
 }, 
 "Tl3396734": {
-"^ot:originalLabel": "Colletotrichum karstii Ps-30"
+"^ot:originalLabel": "Colletotrichum karstii Ps-30", 
+"^ot:ottId": 686421, 
+"^ot:ottTaxonName": "Colletotrichum karstii"
 }, 
 "Tl3396735": {
-"^ot:originalLabel": "Colletotrichum destructivum CBS 149.34"
+"^ot:originalLabel": "Colletotrichum destructivum CBS 149.34", 
+"^ot:ottId": 1060744, 
+"^ot:ottTaxonName": "Colletotrichum destructivum"
 }, 
 "Tl3396736": {
 "^ot:altLabel": "Colletotrichum gloeosporioides", 
@@ -1101,7 +1440,9 @@
 "^skos:prefLabel": "Colletotrichum cf. gloeosporioides AR4031"
 }, 
 "Tl3396737": {
-"^ot:originalLabel": "Colletotrichum siamense OCAC22"
+"^ot:originalLabel": "Colletotrichum siamense OCAC22", 
+"^ot:ottId": 594063, 
+"^ot:ottTaxonName": "Colletotrichum siamense"
 }, 
 "Tl3396738": {
 "^ot:altLabel": "Colletotrichum gloeosporioides", 
@@ -1115,14 +1456,19 @@
 "^skos:prefLabel": "Colletotrichum cf. gloeosporioides AR4031"
 }, 
 "Tl3396739": {
-"^ot:originalLabel": "Colletotrichum brasiliense CBS 128501"
+"^ot:originalLabel": "Colletotrichum brasiliense CBS 128501", 
+"^ot:ottId": 611114, 
+"^ot:ottTaxonName": "Colletotrichum brasiliense"
 }, 
 "Tl3396740": {
-"^ot:originalLabel": "Colletotrichum asianum CBS 130418"
+"^ot:originalLabel": "Colletotrichum asianum CBS 130418", 
+"^ot:ottId": 931566, 
+"^ot:ottTaxonName": "Colletotrichum asianum"
 }, 
 "Tl3396741": {
-"^ot:altLabel": "Colletotrichum boninense", 
 "^ot:originalLabel": "Colletotrichum boninense Z-D-07", 
+"^ot:ottId": 332420, 
+"^ot:ottTaxonName": "Colletotrichum boninense", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6680, 
 "@tb:identifier.taxonVariant": 16213, 
@@ -1142,7 +1488,9 @@
 "^skos:prefLabel": "Colletotrichum cf. gloeosporioides AR4031"
 }, 
 "Tl3396743": {
-"^ot:originalLabel": "Arthroxylaria elegans CBS 537.79"
+"^ot:originalLabel": "Arthroxylaria elegans CBS 537.79", 
+"^ot:ottId": 688657, 
+"^ot:ottTaxonName": "Arthroxylaria elegans"
 }, 
 "Tl3396744": {
 "^ot:altLabel": "Colletotrichum sp.", 
@@ -1155,20 +1503,29 @@
 }
 }, 
 "Tl3396745": {
-"^ot:originalLabel": "Colletotrichum karstii Fi-01"
+"^ot:originalLabel": "Colletotrichum karstii Fi-01", 
+"^ot:ottId": 686421, 
+"^ot:ottTaxonName": "Colletotrichum karstii"
 }, 
 "Tl3396746": {
-"^ot:originalLabel": "Colletotrichum karstii Ps-19"
+"^ot:originalLabel": "Colletotrichum karstii Ps-19", 
+"^ot:ottId": 686421, 
+"^ot:ottTaxonName": "Colletotrichum karstii"
 }, 
 "Tl3396747": {
-"^ot:originalLabel": "Colletotrichum dracaenophilum CBS 118199"
+"^ot:originalLabel": "Colletotrichum dracaenophilum CBS 118199", 
+"^ot:ottId": 442042, 
+"^ot:ottTaxonName": "Colletotrichum dracaenophilum"
 }, 
 "Tl3396748": {
-"^ot:originalLabel": "Colletotrichum trichellum CBS 125343"
+"^ot:originalLabel": "Colletotrichum trichellum CBS 125343", 
+"^ot:ottId": 1024596, 
+"^ot:ottTaxonName": "Colletotrichum trichellum"
 }, 
 "Tl3396749": {
-"^ot:altLabel": "Colletotrichum theobromicola", 
 "^ot:originalLabel": "Colletotrichum theobromicola C1316.13", 
+"^ot:ottId": 604682, 
+"^ot:ottTaxonName": "Colletotrichum theobromicola", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 570082, 
 "@tb:identifier.taxonVariant": 790132, 
@@ -1186,10 +1543,14 @@
 }
 }, 
 "Tl3396751": {
-"^ot:originalLabel": "Colletotrichum nupharicola CBS 472"
+"^ot:originalLabel": "Colletotrichum nupharicola CBS 472", 
+"^ot:ottId": 192934, 
+"^ot:ottTaxonName": "Colletotrichum nupharicola"
 }, 
 "Tl3396752": {
-"^ot:originalLabel": "Colletotrichum lineola CBS 282.85"
+"^ot:originalLabel": "Colletotrichum lineola CBS 282.85", 
+"^ot:ottId": 484693, 
+"^ot:ottTaxonName": "Colletotrichum lineola"
 }, 
 "Tl3396753": {
 "^ot:altLabel": "Colletotrichum sp.", 
@@ -1202,13 +1563,19 @@
 }
 }, 
 "Tl3396754": {
-"^ot:originalLabel": "Colletotrichum magnisporum CBS 398.84"
+"^ot:originalLabel": "Colletotrichum magnisporum CBS 398.84", 
+"^ot:ottId": 5709429, 
+"^ot:ottTaxonName": "Colletotrichum magnisporum"
 }, 
 "Tl3396755": {
-"^ot:originalLabel": "Xylaria hypoxylon CBS 121680"
+"^ot:originalLabel": "Xylaria hypoxylon CBS 121680", 
+"^ot:ottId": 44255, 
+"^ot:ottTaxonName": "Xylaria hypoxylon"
 }, 
 "Tl3396756": {
-"^ot:originalLabel": "Colletotrichum siamense CBS 194.32"
+"^ot:originalLabel": "Colletotrichum siamense CBS 194.32", 
+"^ot:ottId": 594063, 
+"^ot:ottTaxonName": "Colletotrichum siamense"
 }, 
 "Tl3396757": {
 "^ot:altLabel": "Colletotrichum sp.", 
@@ -1221,7 +1588,9 @@
 }
 }, 
 "Tl3396758": {
-"^ot:originalLabel": "Colletotrichum queenslandicum KC1"
+"^ot:originalLabel": "Colletotrichum queenslandicum KC1", 
+"^ot:ottId": 1040842, 
+"^ot:ottTaxonName": "Colletotrichum queenslandicum"
 }, 
 "Tl3396759": {
 "^ot:altLabel": "Colletotrichum sp.", 
@@ -1257,10 +1626,14 @@
 }
 }, 
 "Tl3396763": {
-"^ot:originalLabel": "Colletotrichum nymphaeae CPC 20915"
+"^ot:originalLabel": "Colletotrichum nymphaeae CPC 20915", 
+"^ot:ottId": 452863, 
+"^ot:ottTaxonName": "Colletotrichum nymphaeae"
 }, 
 "Tl3396764": {
-"^ot:originalLabel": "Colletotrichum lindemuthianum CBS 130841"
+"^ot:originalLabel": "Colletotrichum lindemuthianum CBS 130841", 
+"^ot:ottId": 179310, 
+"^ot:ottTaxonName": "Colletotrichum lindemuthianum"
 }, 
 "Tl3396765": {
 "^ot:altLabel": "Colletotrichum sp.", 
@@ -1284,8 +1657,9 @@
 "^skos:prefLabel": "Setosphaeria turcica"
 }, 
 "Tl3396767": {
-"^ot:altLabel": "Setosphaeria rostrata", 
 "^ot:originalLabel": "Setosphaeria rostrata Fi-14", 
+"^ot:ottId": 85504, 
+"^ot:ottTaxonName": "Setosphaeria rostrata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 26854, 
 "@tb:identifier.taxonVariant": 62691, 
@@ -1294,8 +1668,9 @@
 }
 }, 
 "Tl3396768": {
-"^ot:altLabel": "Setosphaeria rostrata", 
 "^ot:originalLabel": "Setosphaeria rostrata Ps-18", 
+"^ot:ottId": 85504, 
+"^ot:ottTaxonName": "Setosphaeria rostrata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 26854, 
 "@tb:identifier.taxonVariant": 62691, 
@@ -1316,8 +1691,9 @@
 "^ot:originalLabel": "Peyronellaea anserina CBS 363.91"
 }, 
 "Tl3396771": {
-"^ot:altLabel": "Preussia funiculata", 
 "^ot:originalLabel": "Preussia funiculata ATCC 16294", 
+"^ot:ottId": 815415, 
+"^ot:ottTaxonName": "Preussia funiculata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 285783, 
 "@tb:identifier.taxonVariant": 338425, 
@@ -1326,8 +1702,9 @@
 }
 }, 
 "Tl3396772": {
-"^ot:altLabel": "Setosphaeria rostrata", 
 "^ot:originalLabel": "Setosphaeria rostrata Ae-06", 
+"^ot:ottId": 85504, 
+"^ot:ottTaxonName": "Setosphaeria rostrata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 26854, 
 "@tb:identifier.taxonVariant": 62691, 
@@ -1347,8 +1724,9 @@
 "^skos:prefLabel": "Setosphaeria rostrata"
 }, 
 "Tl3396774": {
-"^ot:altLabel": "Preussia flanaganii", 
 "^ot:originalLabel": "Preussia flanaganii CBS 112.73", 
+"^ot:ottId": 319947, 
+"^ot:ottTaxonName": "Preussia flanaganii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 285785, 
 "@tb:identifier.taxonVariant": 338427, 
@@ -1369,8 +1747,9 @@
 "^ot:originalLabel": "Stagonosporopsis caricae CBS 282.76"
 }, 
 "Tl3396777": {
-"^ot:altLabel": "Alternaria alternata", 
 "^ot:originalLabel": "Alternaria alternata Fi-12", 
+"^ot:ottId": 464784, 
+"^ot:ottTaxonName": "Alternaria alternata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 991, 
 "@tb:identifier.taxonVariant": 2615, 
@@ -1379,8 +1758,9 @@
 }
 }, 
 "Tl3396778": {
-"^ot:altLabel": "Alternaria alternata", 
 "^ot:originalLabel": "Alternaria alternata NRRL 54028", 
+"^ot:ottId": 464784, 
+"^ot:ottTaxonName": "Alternaria alternata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 991, 
 "@tb:identifier.taxonVariant": 2615, 
@@ -1389,8 +1769,9 @@
 }
 }, 
 "Tl3396779": {
-"^ot:altLabel": "Cochliobolus", 
 "^ot:originalLabel": "Cochliobolus sp. VJ18", 
+"^ot:ottId": 230795, 
+"^ot:ottTaxonName": "Cochliobolus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6550, 
 "@tb:identifier.taxonVariant": 15887, 
@@ -1399,7 +1780,9 @@
 }
 }, 
 "Tl3396780": {
-"^ot:originalLabel": "Preussia sp. Ae-09"
+"^ot:originalLabel": "Preussia sp. Ae-09", 
+"^ot:ottId": 5978945, 
+"^ot:ottTaxonName": "Preussia sp. Ae-09"
 }, 
 "Tl3396781": {
 "^ot:altLabel": "Stagonosporopsis actaeae", 
@@ -1411,8 +1794,9 @@
 }
 }, 
 "Tl3396782": {
-"^ot:altLabel": "Alternaria alternata", 
 "^ot:originalLabel": "Alternaria alternata JG32", 
+"^ot:ottId": 464784, 
+"^ot:ottTaxonName": "Alternaria alternata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 991, 
 "@tb:identifier.taxonVariant": 2615, 
@@ -1444,8 +1828,9 @@
 "^ot:originalLabel": "Peyronellaea pinodes CBS 285.49"
 }, 
 "Tl3396786": {
-"^ot:altLabel": "Alternaria alternata", 
 "^ot:originalLabel": "Alternaria alternata Fi-30", 
+"^ot:ottId": 464784, 
+"^ot:ottTaxonName": "Alternaria alternata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 991, 
 "@tb:identifier.taxonVariant": 2615, 
@@ -1454,8 +1839,9 @@
 }
 }, 
 "Tl3396787": {
-"^ot:altLabel": "Alternaria alternata", 
 "^ot:originalLabel": "Alternaria alternata Ps-04", 
+"^ot:ottId": 464784, 
+"^ot:ottTaxonName": "Alternaria alternata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 991, 
 "@tb:identifier.taxonVariant": 2615, 
@@ -1492,8 +1878,9 @@
 "^skos:prefLabel": "Curvularia protuberata"
 }, 
 "Tl3396792": {
-"^ot:altLabel": "Alternaria alternata", 
 "^ot:originalLabel": "Alternaria alternata Ps-06", 
+"^ot:ottId": 464784, 
+"^ot:ottTaxonName": "Alternaria alternata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 991, 
 "@tb:identifier.taxonVariant": 2615, 
@@ -1502,10 +1889,14 @@
 }
 }, 
 "Tl3396793": {
-"^ot:originalLabel": "Stagonosporopsis sp. Ae-20"
+"^ot:originalLabel": "Stagonosporopsis sp. Ae-20", 
+"^ot:ottId": 5978010, 
+"^ot:ottTaxonName": "Stagonosporopsis sp. Ae-20"
 }, 
 "Tl3396794": {
-"^ot:originalLabel": "Cochliobolus homomorphus ATCC 26651"
+"^ot:originalLabel": "Cochliobolus homomorphus ATCC 26651", 
+"^ot:ottId": 995634, 
+"^ot:ottTaxonName": "Cochliobolus homomorphus"
 }, 
 "Tl3396795": {
 "^ot:originalLabel": "Stagonosporopsis cucurbitacearum NY6960a"
@@ -1514,8 +1905,9 @@
 "^ot:originalLabel": "Peyronellaea alectorolophi CBS 132.96"
 }, 
 "Tl3396797": {
-"^ot:altLabel": "Alternaria alternata", 
 "^ot:originalLabel": "Alternaria alternata Ps-11", 
+"^ot:ottId": 464784, 
+"^ot:ottTaxonName": "Alternaria alternata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 991, 
 "@tb:identifier.taxonVariant": 2615, 
@@ -1554,8 +1946,9 @@
 }
 }, 
 "Tl3396802": {
-"^ot:altLabel": "Alternaria alternata", 
 "^ot:originalLabel": "Alternaria alternata Fi-17", 
+"^ot:ottId": 464784, 
+"^ot:ottTaxonName": "Alternaria alternata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 991, 
 "@tb:identifier.taxonVariant": 2615, 
@@ -1567,8 +1960,9 @@
 "^ot:originalLabel": "Stagonosporopsis hortensis CBS 104.42"
 }, 
 "Tl3396804": {
-"^ot:altLabel": "Alternaria alternata", 
 "^ot:originalLabel": "Alternaria alternata NRRL 54027", 
+"^ot:ottId": 464784, 
+"^ot:ottTaxonName": "Alternaria alternata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 991, 
 "@tb:identifier.taxonVariant": 2615, 
@@ -1577,8 +1971,9 @@
 }
 }, 
 "Tl3396805": {
-"^ot:altLabel": "Alternaria alternata", 
 "^ot:originalLabel": "Alternaria alternata SR/II/9", 
+"^ot:ottId": 464784, 
+"^ot:ottTaxonName": "Alternaria alternata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 991, 
 "@tb:identifier.taxonVariant": 2615, 
@@ -1590,14 +1985,17 @@
 "^ot:originalLabel": "Peyronellaea pomorum var. circinata CBS 286.76"
 }, 
 "Tl3396807": {
-"^ot:originalLabel": "Preussia aemulans CBS 120.66"
+"^ot:originalLabel": "Preussia aemulans CBS 120.66", 
+"^ot:ottId": 894446, 
+"^ot:ottTaxonName": "Preussia aemulans"
 }, 
 "Tl3396808": {
 "^ot:originalLabel": "Stagonosporopsis dennisii CBS 631.68"
 }, 
 "Tl3396809": {
-"^ot:altLabel": "Alternaria alternata", 
 "^ot:originalLabel": "Alternaria alternata NRRL 66024", 
+"^ot:ottId": 464784, 
+"^ot:ottTaxonName": "Alternaria alternata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 991, 
 "@tb:identifier.taxonVariant": 2615, 
@@ -1607,6 +2005,8 @@
 }, 
 "Tl3396810": {
 "^ot:originalLabel": "Curvularia trifolii CPC 2995", 
+"^ot:ottId": 338540, 
+"^ot:ottTaxonName": "Curvularia trifolii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 618455, 
 "@tb:identifier.taxonVariant": 827891, 
@@ -1617,8 +2017,9 @@
 "^ot:originalLabel": "Stagonosporopsis crystalliniformis CBS 771.85"
 }, 
 "Tl3396812": {
-"^ot:altLabel": "Alternaria alternata", 
 "^ot:originalLabel": "Alternaria alternata Fi-02", 
+"^ot:ottId": 464784, 
+"^ot:ottTaxonName": "Alternaria alternata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 991, 
 "@tb:identifier.taxonVariant": 2615, 
@@ -1630,8 +2031,9 @@
 "^ot:originalLabel": "Peyronellaea eucalyptica CBS 508.91"
 }, 
 "Tl3396814": {
-"^ot:altLabel": "Alternaria", 
 "^ot:originalLabel": "Alternaria sp. ZJ-2008017", 
+"^ot:ottId": 464790, 
+"^ot:ottTaxonName": "Alternaria", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 990, 
 "@tb:identifier.taxonVariant": 2612, 
@@ -1654,7 +2056,9 @@
 "^ot:originalLabel": "Cochliobolus hawaiiensis CBS 173.57"
 }, 
 "Tl3396818": {
-"^ot:originalLabel": "Setosphaeria rostrata CBS 128063"
+"^ot:originalLabel": "Setosphaeria rostrata CBS 128063", 
+"^ot:ottId": 85504, 
+"^ot:ottTaxonName": "Setosphaeria rostrata"
 }, 
 "Tl3396819": {
 "^ot:altLabel": "Alternaria porri (Ellis) Cif. 1930", 
@@ -1671,11 +2075,14 @@
 "^ot:originalLabel": "Peyronellaea pinodella CBS 531.66"
 }, 
 "Tl3396821": {
-"^ot:originalLabel": "Preussia sp. GSH1_5_6"
+"^ot:originalLabel": "Preussia sp. GSH1_5_6", 
+"^ot:ottId": 5495418, 
+"^ot:ottTaxonName": "Preussia sp. GSH1_5_6"
 }, 
 "Tl3396822": {
-"^ot:altLabel": "Setosphaeria rostrata", 
 "^ot:originalLabel": "Setosphaeria rostrata Ps-16", 
+"^ot:ottId": 85504, 
+"^ot:ottTaxonName": "Setosphaeria rostrata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 26854, 
 "@tb:identifier.taxonVariant": 62691, 
@@ -1694,17 +2101,22 @@
 }
 }, 
 "Tl3396824": {
-"^ot:originalLabel": "Setosphaeria rostrata CBS 128060"
+"^ot:originalLabel": "Setosphaeria rostrata CBS 128060", 
+"^ot:ottId": 85504, 
+"^ot:ottTaxonName": "Setosphaeria rostrata"
 }, 
 "Tl3396825": {
-"^ot:originalLabel": "Cochliobolus sp. Fi-08"
+"^ot:originalLabel": "Cochliobolus sp. Fi-08", 
+"^ot:ottId": 5978716, 
+"^ot:ottTaxonName": "Cochliobolus sp. Fi-08"
 }, 
 "Tl3396826": {
 "^ot:originalLabel": "Preussia minimoides NRRL 37629"
 }, 
 "Tl3396827": {
-"^ot:altLabel": "Alternaria alternata", 
 "^ot:originalLabel": "Alternaria alternata Ae-14", 
+"^ot:ottId": 464784, 
+"^ot:ottTaxonName": "Alternaria alternata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 991, 
 "@tb:identifier.taxonVariant": 2615, 
@@ -1725,17 +2137,22 @@
 }
 }, 
 "Tl3396830": {
-"^ot:originalLabel": "Cochliobolus homomorphus ATCC 13409"
+"^ot:originalLabel": "Cochliobolus homomorphus ATCC 13409", 
+"^ot:ottId": 995634, 
+"^ot:ottTaxonName": "Cochliobolus homomorphus"
 }, 
 "Tl3396831": {
-"^ot:originalLabel": "Preussia persica IRAN 844"
+"^ot:originalLabel": "Preussia persica IRAN 844", 
+"^ot:ottId": 297308, 
+"^ot:ottTaxonName": "Preussia persica"
 }, 
 "Tl3396832": {
 "^ot:originalLabel": "Preussia australis ATCC 22797"
 }, 
 "Tl3396833": {
-"^ot:altLabel": "Alternaria alternata", 
 "^ot:originalLabel": "Alternaria alternata Ps-27", 
+"^ot:ottId": 464784, 
+"^ot:ottTaxonName": "Alternaria alternata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 991, 
 "@tb:identifier.taxonVariant": 2615, 
@@ -1744,11 +2161,14 @@
 }
 }, 
 "Tl3396834": {
-"^ot:originalLabel": "Peyronellaea coffeae-arabicae CBS 123398"
+"^ot:originalLabel": "Peyronellaea coffeae-arabicae CBS 123398", 
+"^ot:ottId": 98629, 
+"^ot:ottTaxonName": "Peyronellaea coffeae-arabicae"
 }, 
 "Tl3396835": {
-"^ot:altLabel": "Alternaria alternata", 
 "^ot:originalLabel": "Alternaria alternata Fi-09", 
+"^ot:ottId": 464784, 
+"^ot:ottTaxonName": "Alternaria alternata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 991, 
 "@tb:identifier.taxonVariant": 2615, 
@@ -1757,10 +2177,14 @@
 }
 }, 
 "Tl3396836": {
-"^ot:originalLabel": "Preussia polymorpha IRAN 845"
+"^ot:originalLabel": "Preussia polymorpha IRAN 845", 
+"^ot:ottId": 297306, 
+"^ot:ottTaxonName": "Preussia polymorpha"
 }, 
 "Tl3396837": {
-"^ot:originalLabel": "Stagonosporopsis heliopsidis CBS 109182"
+"^ot:originalLabel": "Stagonosporopsis heliopsidis CBS 109182", 
+"^ot:ottId": 950663, 
+"^ot:ottTaxonName": "Stagonosporopsis heliopsidis"
 }, 
 "Tl3396838": {
 "^ot:altLabel": "Curvularia inaequalis (Shear) Boedijn 1933", 
@@ -1777,7 +2201,9 @@
 "^ot:originalLabel": "Preussia minima CBS 52450"
 }, 
 "Tl3396840": {
-"^ot:originalLabel": "Preussia isomera CBS 318.65"
+"^ot:originalLabel": "Preussia isomera CBS 318.65", 
+"^ot:ottId": 815416, 
+"^ot:ottTaxonName": "Preussia isomera"
 }, 
 "Tl3396841": {
 "^ot:altLabel": "Peyronellaea glomerata", 
@@ -1789,17 +2215,22 @@
 }
 }, 
 "Tl3396842": {
-"^ot:originalLabel": "Preussia fleischhakii CBS 708.82"
+"^ot:originalLabel": "Preussia fleischhakii CBS 708.82", 
+"^ot:ottId": 319948, 
+"^ot:ottTaxonName": "Preussia fleischhakii"
 }, 
 "Tl3396843": {
-"^ot:originalLabel": "Setosphaeria pedicellata CBS 375.76"
+"^ot:originalLabel": "Setosphaeria pedicellata CBS 375.76", 
+"^ot:ottId": 325507, 
+"^ot:ottTaxonName": "Setosphaeria pedicellata"
 }, 
 "Tl3396844": {
 "^ot:originalLabel": "Stagonosporopsis valerianellae CBS 329.67"
 }, 
 "Tl3396845": {
-"^ot:altLabel": "Alternaria", 
 "^ot:originalLabel": "Alternaria sp. BAB-4031", 
+"^ot:ottId": 464790, 
+"^ot:ottTaxonName": "Alternaria", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 990, 
 "@tb:identifier.taxonVariant": 2612, 
@@ -1825,7 +2256,19 @@
 "Tr114734": {
 "@label": "Fig 7", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn17954814", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 51, 
 "^tb:quality.tree": "Preferred Tree", 
@@ -1917,37 +2360,37 @@
 }, 
 "Tn17954813": {
 "edge299161": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17954813", 
 "@target": "Tn17954880"
 }, 
 "edge299163": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17954813", 
 "@target": "Tn17954821"
 }, 
 "edge299165": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17954813", 
 "@target": "Tn17954884"
 }, 
 "edge299167": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17954813", 
 "@target": "Tn17954849"
 }, 
 "edge299169": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17954813", 
 "@target": "Tn17954823"
 }, 
 "edge299171": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17954813", 
 "@target": "Tn17954843"
 }, 
 "edge299173": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17954813", 
 "@target": "Tn17954838"
 }
@@ -2098,39 +2541,39 @@
 }, 
 "Tn17954835": {
 "edge299233": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17954835", 
 "@target": "Tn17954860"
 }, 
 "edge299235": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17954835", 
 "@target": "Tn17954882"
 }, 
 "edge299237": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17954835", 
 "@target": "Tn17954825"
 }, 
 "edge299239": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17954835", 
 "@target": "Tn17954865"
 }, 
 "edge299241": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17954835", 
 "@target": "Tn17954809"
 }
 }, 
 "Tn17954840": {
 "edge299203": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17954840", 
 "@target": "Tn17954847"
 }, 
 "edge299205": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17954840", 
 "@target": "Tn17954881"
 }
@@ -2161,17 +2604,17 @@
 }, 
 "Tn17954850": {
 "edge299219": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17954850", 
 "@target": "Tn17954841"
 }, 
 "edge299221": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17954850", 
 "@target": "Tn17954854"
 }, 
 "edge299223": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17954850", 
 "@target": "Tn17954871"
 }
@@ -2226,17 +2669,17 @@
 }, 
 "Tn17954864": {
 "edge299137": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17954864", 
 "@target": "Tn17954848"
 }, 
 "edge299139": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17954864", 
 "@target": "Tn17954837"
 }, 
 "edge299141": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17954864", 
 "@target": "Tn17954855"
 }
@@ -2641,7 +3084,19 @@
 "Tr114735": {
 "@label": "Fig 8", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn17955023", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 87, 
 "^tb:quality.tree": "Preferred Tree", 
@@ -2649,12 +3104,12 @@
 "edgeBySourceId": {
 "Tn17954894": {
 "edge299559": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17954894", 
 "@target": "Tn17954969"
 }, 
 "edge299561": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17954894", 
 "@target": "Tn17954944"
 }
@@ -2733,44 +3188,44 @@
 }, 
 "Tn17954912": {
 "edge299575": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17954912", 
 "@target": "Tn17955045"
 }, 
 "edge299577": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17954912", 
 "@target": "Tn17954981"
 }, 
 "edge299579": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17954912", 
 "@target": "Tn17955032"
 }, 
 "edge299581": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17954912", 
 "@target": "Tn17955039"
 }, 
 "edge299583": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17954912", 
 "@target": "Tn17954943"
 }
 }, 
 "Tn17954913": {
 "edge299501": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17954913", 
 "@target": "Tn17955034"
 }, 
 "edge299503": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17954913", 
 "@target": "Tn17954986"
 }, 
 "edge299505": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17954913", 
 "@target": "Tn17954978"
 }
@@ -2789,12 +3244,12 @@
 }, 
 "Tn17954916": {
 "edge299377": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17954916", 
 "@target": "Tn17954997"
 }, 
 "edge299379": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17954916", 
 "@target": "Tn17955054"
 }
@@ -2861,12 +3316,12 @@
 }, 
 "Tn17954929": {
 "edge299319": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17954929", 
 "@target": "Tn17954914"
 }, 
 "edge299321": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17954929", 
 "@target": "Tn17955046"
 }
@@ -3041,39 +3496,39 @@
 }, 
 "Tn17954958": {
 "edge299329": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17954958", 
 "@target": "Tn17954938"
 }, 
 "edge299331": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17954958", 
 "@target": "Tn17954917"
 }, 
 "edge299333": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17954958", 
 "@target": "Tn17954965"
 }
 }, 
 "Tn17954959": {
 "edge299473": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17954959", 
 "@target": "Tn17955014"
 }, 
 "edge299475": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17954959", 
 "@target": "Tn17954996"
 }, 
 "edge299477": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17954959", 
 "@target": "Tn17955042"
 }, 
 "edge299479": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17954959", 
 "@target": "Tn17954974"
 }
@@ -3248,12 +3703,12 @@
 }, 
 "Tn17954998": {
 "edge299391": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17954998", 
 "@target": "Tn17954907"
 }, 
 "edge299393": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17954998", 
 "@target": "Tn17954931"
 }
@@ -3272,29 +3727,29 @@
 }, 
 "Tn17955000": {
 "edge299437": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17955000", 
 "@target": "Tn17954926"
 }, 
 "edge299439": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17955000", 
 "@target": "Tn17954960"
 }
 }, 
 "Tn17955001": {
 "edge299423": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17955001", 
 "@target": "Tn17954909"
 }, 
 "edge299425": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17955001", 
 "@target": "Tn17954972"
 }, 
 "edge299427": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17955001", 
 "@target": "Tn17954980"
 }
@@ -3409,22 +3864,22 @@
 }, 
 "Tn17955025": {
 "edge299591": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17955025", 
 "@target": "Tn17954921"
 }, 
 "edge299593": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17955025", 
 "@target": "Tn17955008"
 }, 
 "edge299595": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17955025", 
 "@target": "Tn17955021"
 }, 
 "edge299597": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17955025", 
 "@target": "Tn17954988"
 }
@@ -3443,12 +3898,12 @@
 }, 
 "Tn17955027": {
 "edge299491": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17955027", 
 "@target": "Tn17955005"
 }, 
 "edge299493": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17955027", 
 "@target": "Tn17954973"
 }
@@ -3515,12 +3970,12 @@
 }, 
 "Tn17955044": {
 "edge299515": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17955044", 
 "@target": "Tn17954995"
 }, 
 "edge299517": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17955044", 
 "@target": "Tn17955038"
 }
@@ -4106,7 +4561,19 @@
 "Tr114736": {
 "@label": "Fig 9", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn17955066", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 79, 
 "^tb:quality.tree": "Preferred Tree", 
@@ -4114,17 +4581,17 @@
 "edgeBySourceId": {
 "Tn17955058": {
 "edge299665": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17955058", 
 "@target": "Tn17955109"
 }, 
 "edge299667": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17955058", 
 "@target": "Tn17955162"
 }, 
 "edge299669": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17955058", 
 "@target": "Tn17955138"
 }
@@ -4143,17 +4610,17 @@
 }, 
 "Tn17955079": {
 "edge299847": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17955079", 
 "@target": "Tn17955187"
 }, 
 "edge299849": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17955079", 
 "@target": "Tn17955167"
 }, 
 "edge299851": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17955079", 
 "@target": "Tn17955111"
 }
@@ -4304,52 +4771,52 @@
 }, 
 "Tn17955103": {
 "edge299787": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17955103", 
 "@target": "Tn17955173"
 }, 
 "edge299789": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17955103", 
 "@target": "Tn17955185"
 }, 
 "edge299791": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17955103", 
 "@target": "Tn17955072"
 }, 
 "edge299793": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17955103", 
 "@target": "Tn17955133"
 }, 
 "edge299795": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17955103", 
 "@target": "Tn17955076"
 }, 
 "edge299797": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17955103", 
 "@target": "Tn17955097"
 }, 
 "edge299799": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17955103", 
 "@target": "Tn17955121"
 }, 
 "edge299801": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17955103", 
 "@target": "Tn17955126"
 }, 
 "edge299803": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17955103", 
 "@target": "Tn17955083"
 }, 
 "edge299805": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17955103", 
 "@target": "Tn17955095"
 }
@@ -4368,12 +4835,12 @@
 }, 
 "Tn17955108": {
 "edge299685": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17955108", 
 "@target": "Tn17955068"
 }, 
 "edge299687": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17955108", 
 "@target": "Tn17955158"
 }
@@ -4584,22 +5051,22 @@
 }, 
 "Tn17955150": {
 "edge299819": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17955150", 
 "@target": "Tn17955172"
 }, 
 "edge299821": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17955150", 
 "@target": "Tn17955070"
 }, 
 "edge299823": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17955150", 
 "@target": "Tn17955136"
 }, 
 "edge299825": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17955150", 
 "@target": "Tn17955143"
 }
@@ -4690,47 +5157,47 @@
 }, 
 "Tn17955163": {
 "edge299855": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17955163", 
 "@target": "Tn17955059"
 }, 
 "edge299857": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17955163", 
 "@target": "Tn17955113"
 }, 
 "edge299859": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17955163", 
 "@target": "Tn17955180"
 }, 
 "edge299861": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17955163", 
 "@target": "Tn17955182"
 }, 
 "edge299863": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17955163", 
 "@target": "Tn17955153"
 }, 
 "edge299865": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17955163", 
 "@target": "Tn17955165"
 }, 
 "edge299867": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17955163", 
 "@target": "Tn17955174"
 }, 
 "edge299869": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17955163", 
 "@target": "Tn17955080"
 }, 
 "edge299871": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17955163", 
 "@target": "Tn17955118"
 }
@@ -4797,37 +5264,37 @@
 }, 
 "Tn17955179": {
 "edge299725": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17955179", 
 "@target": "Tn17955135"
 }, 
 "edge299727": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17955179", 
 "@target": "Tn17955123"
 }, 
 "edge299729": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17955179", 
 "@target": "Tn17955062"
 }, 
 "edge299731": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17955179", 
 "@target": "Tn17955092"
 }, 
 "edge299733": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17955179", 
 "@target": "Tn17955093"
 }, 
 "edge299735": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17955179", 
 "@target": "Tn17955100"
 }, 
 "edge299737": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17955179", 
 "@target": "Tn17955105"
 }
@@ -5286,7 +5753,19 @@
 "Tr114737": {
 "@label": "Fig 10", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn17955284", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 82, 
 "^tb:quality.tree": "Preferred Tree", 
@@ -5330,44 +5809,44 @@
 }, 
 "Tn17955195": {
 "edge300149": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17955195", 
 "@target": "Tn17955255"
 }, 
 "edge300151": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17955195", 
 "@target": "Tn17955227"
 }, 
 "edge300153": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17955195", 
 "@target": "Tn17955293"
 }, 
 "edge300155": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17955195", 
 "@target": "Tn17955199"
 }, 
 "edge300157": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17955195", 
 "@target": "Tn17955257"
 }, 
 "edge300159": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17955195", 
 "@target": "Tn17955309"
 }
 }, 
 "Tn17955196": {
 "edge299995": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17955196", 
 "@target": "Tn17955321"
 }, 
 "edge299997": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17955196", 
 "@target": "Tn17955237"
 }
@@ -5434,42 +5913,42 @@
 }, 
 "Tn17955207": {
 "edge300167": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17955207", 
 "@target": "Tn17955336"
 }, 
 "edge300169": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17955207", 
 "@target": "Tn17955266"
 }, 
 "edge300171": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17955207", 
 "@target": "Tn17955242"
 }, 
 "edge300173": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17955207", 
 "@target": "Tn17955201"
 }, 
 "edge300175": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17955207", 
 "@target": "Tn17955203"
 }, 
 "edge300177": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17955207", 
 "@target": "Tn17955278"
 }, 
 "edge300179": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17955207", 
 "@target": "Tn17955221"
 }, 
 "edge300181": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17955207", 
 "@target": "Tn17955332"
 }
@@ -5728,12 +6207,12 @@
 }, 
 "Tn17955248": {
 "edge300059": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17955248", 
 "@target": "Tn17955335"
 }, 
 "edge300061": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17955248", 
 "@target": "Tn17955328"
 }
@@ -5800,12 +6279,12 @@
 }, 
 "Tn17955263": {
 "edge300015": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17955263", 
 "@target": "Tn17955307"
 }, 
 "edge300017": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17955263", 
 "@target": "Tn17955330"
 }
@@ -5848,12 +6327,12 @@
 }, 
 "Tn17955272": {
 "edge299907": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17955272", 
 "@target": "Tn17955288"
 }, 
 "edge299909": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17955272", 
 "@target": "Tn17955215"
 }
@@ -5896,17 +6375,17 @@
 }, 
 "Tn17955283": {
 "edge300115": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17955283", 
 "@target": "Tn17955294"
 }, 
 "edge300117": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17955283", 
 "@target": "Tn17955289"
 }, 
 "edge300119": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17955283", 
 "@target": "Tn17955324"
 }
@@ -5925,17 +6404,17 @@
 }, 
 "Tn17955285": {
 "edge300067": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17955285", 
 "@target": "Tn17955299"
 }, 
 "edge300069": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17955285", 
 "@target": "Tn17955295"
 }, 
 "edge300071": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17955285", 
 "@target": "Tn17955211"
 }
@@ -5954,12 +6433,12 @@
 }, 
 "Tn17955291": {
 "edge299977": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17955291", 
 "@target": "Tn17955298"
 }, 
 "edge299979": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17955291", 
 "@target": "Tn17955230"
 }
@@ -6002,12 +6481,12 @@
 }, 
 "Tn17955301": {
 "edge300029": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17955301", 
 "@target": "Tn17955264"
 }, 
 "edge300031": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn17955301", 
 "@target": "Tn17955251"
 }
