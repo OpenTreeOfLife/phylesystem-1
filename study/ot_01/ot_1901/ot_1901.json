@@ -57,22 +57,115 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2019-03-14T16:52:19.955Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "Ascomycetes"
 }, 
-"^ot:curatorName": "susan-holder", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}, 
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": "$1"
+}, 
+"old": {
+"$": "^(\\S*\\s+\\S*).*"
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2019-03-14T16:52:19.955Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"susan-holder"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S23675"
 }, 
+"^ot:focalCladeOTTTaxonName": "", 
 "^ot:otusElementOrder": [
 "Tls66558"
 ], 
 "^ot:studyId": "ot_1901", 
+"^ot:studyPublication": {
+"@href": ""
+}, 
 "^ot:studyPublicationReference": "Zhao X.H., Li H., Zhou L.F., & Chen F.M. 2018. Wilt of Acer negundo caused by Fusarium oxysporum in China. Australasian Plant Pathology, .", 
 "^ot:studyYear": 2018, 
+"^ot:tag": [], 
 "^ot:taxonLinkPrefixes": {
 "@ubio": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:", 
 "@uniprot": "http://purl.uniprot.org/taxonomy/"
@@ -95,11 +188,14 @@
 "^skos:historyNote": "Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlOTUWriter@143d643 $Rev$", 
 "otuById": {
 "Tl3420705": {
-"^ot:originalLabel": "Fusarium cf. oxysporum PUF017"
+"^ot:originalLabel": "Fusarium cf. oxysporum PUF017", 
+"^ot:ottId": 778017, 
+"^ot:ottTaxonName": "Fusarium cf. oxysporum PUF017"
 }, 
 "Tl3420706": {
-"^ot:altLabel": "Fusarium commune", 
 "^ot:originalLabel": "Fusarium commune NRRL28387", 
+"^ot:ottId": 250475, 
+"^ot:ottTaxonName": "Fusarium commune", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 11542, 
 "@tb:identifier.taxonVariant": 27548, 
@@ -108,8 +204,9 @@
 }
 }, 
 "Tl3420707": {
-"^ot:altLabel": "Fusarium commune", 
 "^ot:originalLabel": "Fusarium commune TF3", 
+"^ot:ottId": 250475, 
+"^ot:ottTaxonName": "Fusarium commune", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 11542, 
 "@tb:identifier.taxonVariant": 27548, 
@@ -141,8 +238,9 @@
 "^ot:originalLabel": "Fusarium oxysporum f. cubense FJ.2.1"
 }, 
 "Tl3420711": {
-"^ot:altLabel": "Fusarium commune", 
 "^ot:originalLabel": "Fusarium commune TF5", 
+"^ot:ottId": 250475, 
+"^ot:ottTaxonName": "Fusarium commune", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 11542, 
 "@tb:identifier.taxonVariant": 27548, 
@@ -154,8 +252,9 @@
 "^ot:originalLabel": "Fusarium oxysporum f. cubense XJ 24"
 }, 
 "Tl3420713": {
-"^ot:altLabel": "Fusarium sacchari", 
 "^ot:originalLabel": "Fusarium sacchari FJ.22.2", 
+"^ot:ottId": 584888, 
+"^ot:ottTaxonName": "Fusarium sacchari", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 66121, 
 "@tb:identifier.taxonVariant": 141198, 
@@ -164,8 +263,9 @@
 }
 }, 
 "Tl3420714": {
-"^ot:altLabel": "Fusarium commune", 
 "^ot:originalLabel": "Fusarium commune MTgw.1", 
+"^ot:ottId": 250475, 
+"^ot:ottTaxonName": "Fusarium commune", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 11542, 
 "@tb:identifier.taxonVariant": 27548, 
@@ -198,7 +298,19 @@
 "Tr115173": {
 "@label": "Imported tree 1", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn18023861", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 11, 
 "^tb:quality.tree": "Unrated", 
@@ -242,12 +354,12 @@
 }, 
 "Tn18023860": {
 "edge48042": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18023860", 
 "@target": "Tn18023870"
 }, 
 "edge48044": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18023860", 
 "@target": "Tn18023852"
 }
@@ -266,12 +378,12 @@
 }, 
 "Tn18023863": {
 "edge48054": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18023863", 
 "@target": "Tn18023859"
 }, 
 "edge48056": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18023863", 
 "@target": "Tn18023867"
 }
@@ -290,12 +402,12 @@
 }, 
 "Tn18023867": {
 "edge48058": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18023867", 
 "@target": "Tn18023856"
 }, 
 "edge48060": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18023867", 
 "@target": "Tn18023862"
 }
