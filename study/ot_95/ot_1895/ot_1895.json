@@ -57,22 +57,125 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2019-03-14T16:41:19.456Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:curatorName": "susan-holder", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}, 
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}, 
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": "$1"
+}, 
+"old": {
+"$": "^(\\S*\\s+\\S*).*"
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2019-03-14T16:41:19.456Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"susan-holder"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S23854"
 }, 
+"^ot:focalCladeOTTTaxonName": "", 
 "^ot:otusElementOrder": [
 "Tls67859"
 ], 
 "^ot:studyId": "ot_1895", 
+"^ot:studyPublication": {
+"@href": ""
+}, 
 "^ot:studyPublicationReference": "Jer\u00f4nimo G.H., Jesus A.L., Simmons D.R., James T.Y., & Pires-zottarelli C.L. 2019. Novel taxa in Cladochytriales (Chytridiomycota): Karlingiella (gen. nov.) and Nowakowskiella crenulata (sp. nov.). Mycologia, .", 
 "^ot:studyYear": 2019, 
+"^ot:tag": [], 
 "^ot:taxonLinkPrefixes": {
 "@ubio": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:", 
 "@uniprot": "http://purl.uniprot.org/taxonomy/"
@@ -95,14 +198,17 @@
 "^skos:historyNote": "Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlOTUWriter@534afe70 $Rev$", 
 "otuById": {
 "Tl3543314": {
-"^ot:originalLabel": "Nowakowskiella ramosa CCIBt4294"
+"^ot:originalLabel": "Nowakowskiella ramosa CCIBt4294", 
+"^ot:ottId": 3685101, 
+"^ot:ottTaxonName": "Nowakowskiella ramosa"
 }, 
 "Tl3543315": {
 "^ot:originalLabel": "Septochytrium sp JEL177"
 }, 
 "Tl3543316": {
-"^ot:altLabel": "Nowakowskiella hemisphaerospora", 
 "^ot:originalLabel": "Nowakowskiella hemisphaerospora GHJ13", 
+"^ot:ottId": 214660, 
+"^ot:ottTaxonName": "Nowakowskiella hemisphaerospora", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 114636, 
 "@tb:identifier.taxonVariant": 192962, 
@@ -111,14 +217,17 @@
 }
 }, 
 "Tl3543317": {
-"^ot:originalLabel": "Nowakowskiella elongata ALJ09"
+"^ot:originalLabel": "Nowakowskiella elongata ALJ09", 
+"^ot:ottId": 3685104, 
+"^ot:ottTaxonName": "Nowakowskiella elongata"
 }, 
 "Tl3543318": {
 "^ot:originalLabel": "Catenochytridium sp  JEL145"
 }, 
 "Tl3543319": {
-"^ot:altLabel": "Polychytrium aggregatum", 
 "^ot:originalLabel": "Polychytrium aggregatum CCIBt4017", 
+"^ot:ottId": 956065, 
+"^ot:ottTaxonName": "Polychytrium aggregatum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 114641, 
 "@tb:identifier.taxonVariant": 192967, 
@@ -133,8 +242,9 @@
 "^ot:originalLabel": "Cladochytrium sp SMS013"
 }, 
 "Tl3543322": {
-"^ot:altLabel": "Nowakowskiella elegans", 
 "^ot:originalLabel": "Nowakowskiella elegans JEL046", 
+"^ot:ottId": 881667, 
+"^ot:ottTaxonName": "Nowakowskiella elegans", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 114478, 
 "@tb:identifier.taxonVariant": 427061, 
@@ -143,8 +253,9 @@
 }
 }, 
 "Tl3543323": {
-"^ot:altLabel": "Cladochytrium replicatum", 
 "^ot:originalLabel": "Cladochytrium replicatum JEL303", 
+"^ot:ottId": 227150, 
+"^ot:ottTaxonName": "Cladochytrium replicatum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 114527, 
 "@tb:identifier.taxonVariant": 192847, 
@@ -159,8 +270,9 @@
 "^ot:originalLabel": "Nowakowskiella sp JH SA"
 }, 
 "Tl3543326": {
-"^ot:altLabel": "Endochytrium ramosum", 
 "^ot:originalLabel": "Endochytrium ramosum JEL402", 
+"^ot:ottId": 1044185, 
+"^ot:ottTaxonName": "Endochytrium ramosum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 482446, 
 "@tb:identifier.taxonVariant": 639206, 
@@ -175,8 +287,9 @@
 "^ot:originalLabel": "Cladochytrium sp BR696"
 }, 
 "Tl3543329": {
-"^ot:altLabel": "Cladochytrium replicatum", 
 "^ot:originalLabel": "Cladochytrium replicatum JEL180", 
+"^ot:ottId": 227150, 
+"^ot:ottTaxonName": "Cladochytrium replicatum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 114527, 
 "@tb:identifier.taxonVariant": 192847, 
@@ -185,11 +298,14 @@
 }
 }, 
 "Tl3543330": {
-"^ot:originalLabel": "Nowakowskiella elongata CCIBt4016"
+"^ot:originalLabel": "Nowakowskiella elongata CCIBt4016", 
+"^ot:ottId": 3685104, 
+"^ot:ottTaxonName": "Nowakowskiella elongata"
 }, 
 "Tl3543331": {
-"^ot:altLabel": "Cladochytrium replicatum", 
 "^ot:originalLabel": "Cladochytrium replicatum CCIBt4014", 
+"^ot:ottId": 227150, 
+"^ot:ottTaxonName": "Cladochytrium replicatum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 114527, 
 "@tb:identifier.taxonVariant": 192847, 
@@ -210,8 +326,9 @@
 "^ot:originalLabel": "Cladochytrium sp JEL153"
 }, 
 "Tl3543336": {
-"^ot:altLabel": "Polychytrium aggregatum", 
 "^ot:originalLabel": "Polychytrium aggregatum ALJ30", 
+"^ot:ottId": 956065, 
+"^ot:ottTaxonName": "Polychytrium aggregatum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 114641, 
 "@tb:identifier.taxonVariant": 192967, 
@@ -220,7 +337,9 @@
 }
 }, 
 "Tl3543337": {
-"^ot:originalLabel": "Nowakowskiella multispora CCIBt4015"
+"^ot:originalLabel": "Nowakowskiella multispora CCIBt4015", 
+"^ot:ottId": 3685095, 
+"^ot:ottTaxonName": "Nowakowskiella multispora"
 }, 
 "Tl3543338": {
 "^ot:originalLabel": "Nowakowskiella sp ALJ23"
@@ -229,11 +348,14 @@
 "^ot:originalLabel": "Cladochytriaceae sp JEL072"
 }, 
 "Tl3543340": {
-"^ot:originalLabel": "Cylindrochytridium johnstonii JEL596"
+"^ot:originalLabel": "Cylindrochytridium johnstonii JEL596", 
+"^ot:ottId": 631376, 
+"^ot:ottTaxonName": "Cylindrochytridium johnstonii"
 }, 
 "Tl3543341": {
-"^ot:altLabel": "Nowakowskiella elegans", 
 "^ot:originalLabel": "Nowakowskiella elegans JEL127", 
+"^ot:ottId": 881667, 
+"^ot:ottTaxonName": "Nowakowskiella elegans", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 114478, 
 "@tb:identifier.taxonVariant": 427061, 
@@ -242,8 +364,9 @@
 }
 }, 
 "Tl3543342": {
-"^ot:altLabel": "Nowakowskiella elegans", 
 "^ot:originalLabel": "Nowakowskiella elegans JEL157", 
+"^ot:ottId": 881667, 
+"^ot:ottTaxonName": "Nowakowskiella elegans", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 114478, 
 "@tb:identifier.taxonVariant": 427061, 
@@ -252,8 +375,9 @@
 }
 }, 
 "Tl3543343": {
-"^ot:altLabel": "Nowakowskiella elegans", 
 "^ot:originalLabel": "Nowakowskiella elegans UCB50 1", 
+"^ot:ottId": 881667, 
+"^ot:ottTaxonName": "Nowakowskiella elegans", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 114478, 
 "@tb:identifier.taxonVariant": 427061, 
@@ -262,8 +386,9 @@
 }
 }, 
 "Tl3543344": {
-"^ot:altLabel": "Septochytrium variabile", 
 "^ot:originalLabel": "Septochytrium variabile JEL191", 
+"^ot:ottId": 750606, 
+"^ot:ottTaxonName": "Septochytrium variabile", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 114512, 
 "@tb:identifier.taxonVariant": 192831, 
@@ -272,8 +397,9 @@
 }
 }, 
 "Tl3543345": {
-"^ot:altLabel": "Cladochytrium replicatum", 
 "^ot:originalLabel": "Cladochytrium replicatum CCIBt4263", 
+"^ot:ottId": 227150, 
+"^ot:ottTaxonName": "Cladochytrium replicatum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 114527, 
 "@tb:identifier.taxonVariant": 192847, 
@@ -282,8 +408,9 @@
 }
 }, 
 "Tl3543346": {
-"^ot:altLabel": "Polychytrium aggregatum", 
 "^ot:originalLabel": "Polychytrium aggregatum JEL109", 
+"^ot:ottId": 956065, 
+"^ot:ottTaxonName": "Polychytrium aggregatum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 114641, 
 "@tb:identifier.taxonVariant": 192967, 
@@ -295,11 +422,14 @@
 "^ot:originalLabel": "Nowakowskiella sp JH CC2"
 }, 
 "Tl3543348": {
-"^ot:originalLabel": "Nowakowskiella multispora CCIBt3864"
+"^ot:originalLabel": "Nowakowskiella multispora CCIBt3864", 
+"^ot:ottId": 3685095, 
+"^ot:ottTaxonName": "Nowakowskiella multispora"
 }, 
 "Tl3543349": {
-"^ot:altLabel": "Cladochytrium replicatum", 
 "^ot:originalLabel": "Cladochytrium replicatum CCIBt3845", 
+"^ot:ottId": 227150, 
+"^ot:ottTaxonName": "Cladochytrium replicatum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 114527, 
 "@tb:identifier.taxonVariant": 192847, 
@@ -308,8 +438,9 @@
 }
 }, 
 "Tl3543350": {
-"^ot:altLabel": "Cladochytrium replicatum", 
 "^ot:originalLabel": "Cladochytrium replicatum ALJ05", 
+"^ot:ottId": 227150, 
+"^ot:ottTaxonName": "Cladochytrium replicatum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 114527, 
 "@tb:identifier.taxonVariant": 192847, 
@@ -318,8 +449,9 @@
 }
 }, 
 "Tl3543351": {
-"^ot:altLabel": "Allochytridium luteum", 
 "^ot:originalLabel": "Allochytridium luteum ATCC60989", 
+"^ot:ottId": 33392, 
+"^ot:ottTaxonName": "Allochytridium luteum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 227745, 
 "@tb:identifier.taxonVariant": 460143, 
@@ -331,8 +463,9 @@
 "^ot:originalLabel": "Nowakowskiella crenulata CCIBt4258"
 }, 
 "Tl3543353": {
-"^ot:altLabel": "Nowakowskiella elegans", 
 "^ot:originalLabel": "Nowakowskiella elegans M29", 
+"^ot:ottId": 881667, 
+"^ot:ottTaxonName": "Nowakowskiella elegans", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 114478, 
 "@tb:identifier.taxonVariant": 427061, 
@@ -356,7 +489,19 @@
 "Tr116437": {
 "@label": "con 50 majrule", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn18226006", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 40, 
 "^tb:quality.tree": "Unrated", 
@@ -966,7 +1111,19 @@
 "Tr116438": {
 "@label": "bestREP3", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn18226072", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 40, 
 "^tb:quality.tree": "Unrated", 
