@@ -59,16 +59,115 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2019-03-14T16:50:27.379Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:curatorName": "susan-holder", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}, 
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": "$1"
+}, 
+"old": {
+"$": "^(\\S*\\s+\\S*).*"
+}
+}, 
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": "$1"
+}, 
+"old": {
+"$": "^(\\S*\\s+\\S*).*"
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2019-03-14T16:50:27.379Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"susan-holder"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S22022"
 }, 
+"^ot:focalCladeOTTTaxonName": "", 
 "^ot:otusElementOrder": [
 "Tls61273"
 ], 
@@ -78,6 +177,7 @@
 }, 
 "^ot:studyPublicationReference": "Mora-sala B., Cabral A., Leon M., Agusti-brisach C., Armengol J., & Abad-campos P. 2018. Survey, Identification and Characterization of cylindrocarpon-like asexual morphs in Spanish forest nurseries. Plant Disease, 102(11): 2083-2100.", 
 "^ot:studyYear": 2018, 
+"^ot:tag": [], 
 "^ot:taxonLinkPrefixes": {
 "@ubio": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:", 
 "@uniprot": "http://purl.uniprot.org/taxonomy/"
@@ -106,10 +206,14 @@
 "^skos:historyNote": "Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlOTUWriter@94f32af $Rev$", 
 "otuById": {
 "Tl2995476": {
-"^ot:originalLabel": "Ilyonectria venezuelensis CBS 102032"
+"^ot:originalLabel": "Ilyonectria venezuelensis CBS 102032", 
+"^ot:ottId": 548216, 
+"^ot:ottTaxonName": "Ilyonectria venezuelensis"
 }, 
 "Tl2995477": {
-"^ot:originalLabel": "Ilyonectria capensis CBS 132816"
+"^ot:originalLabel": "Ilyonectria capensis CBS 132816", 
+"^ot:ottId": 6379981, 
+"^ot:ottTaxonName": "Ilyonectria capensis"
 }, 
 "Tl2995481": {
 "^ot:originalLabel": "Dactylonectria pauciseptata CBS 120171"
@@ -118,7 +222,9 @@
 "^ot:originalLabel": "Ilyonectria mors-panacis CBS 124662"
 }, 
 "Tl2995486": {
-"^ot:originalLabel": "Dactylonectria alcacerensis CBS 129087"
+"^ot:originalLabel": "Dactylonectria alcacerensis CBS 129087", 
+"^ot:ottId": 843784, 
+"^ot:ottTaxonName": "Dactylonectria alcacerensis"
 }, 
 "Tl2995487": {
 "^ot:originalLabel": "Ilyonectria mors-panacis CBS 306.35"
@@ -135,8 +241,9 @@
 "^skos:prefLabel": "Neonectria neomacrospora"
 }, 
 "Tl2995489": {
-"^ot:altLabel": "Cylindrocarpon obtusisporum", 
 "^ot:originalLabel": "Neonectria obtusispora CBS 183.36", 
+"^ot:ottId": 679555, 
+"^ot:ottTaxonName": "Cylindrocarpon obtusisporum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 7928, 
 "@tb:identifier.taxonVariant": 19074, 
@@ -145,7 +252,9 @@
 }
 }, 
 "Tl2995490": {
-"^ot:originalLabel": "Dactylonectria anthuriicola CBS 564.95"
+"^ot:originalLabel": "Dactylonectria anthuriicola CBS 564.95", 
+"^ot:ottId": 67237, 
+"^ot:ottTaxonName": "Dactylonectria anthuriicola"
 }, 
 "Tl2995492": {
 "^ot:originalLabel": "Dactylonectria pauciseptata CBS 100819"
@@ -165,14 +274,17 @@
 "^ot:originalLabel": "Cylindrodendrum hubeiense CBS 129.97"
 }, 
 "Tl2995495": {
-"^ot:originalLabel": "Dactylonectria hordeicola CBS 162.89"
+"^ot:originalLabel": "Dactylonectria hordeicola CBS 162.89", 
+"^ot:ottId": 5694779, 
+"^ot:ottTaxonName": "Dactylonectria hordeicola"
 }, 
 "Tl2995497": {
 "^ot:originalLabel": "Ilyonectria vredehoekensis CBS 132814"
 }, 
 "Tl2995498": {
-"^ot:altLabel": "Campylocarpon pseudofasciculare", 
 "^ot:originalLabel": "Campylocarpon pseudofasciculare CBS 112679", 
+"^ot:ottId": 380094, 
+"^ot:ottTaxonName": "Campylocarpon pseudofasciculare", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 4698, 
 "@tb:identifier.taxonVariant": 11289, 
@@ -181,7 +293,9 @@
 }
 }, 
 "Tl2995499": {
-"^ot:originalLabel": "Cylindrodendrum alicantinum CBS 139518"
+"^ot:originalLabel": "Cylindrodendrum alicantinum CBS 139518", 
+"^ot:ottId": 5981648, 
+"^ot:ottTaxonName": "Cylindrodendrum alicantinum"
 }, 
 "Tl2995501": {
 "^ot:altLabel": "Cylindrocarpon willkommii (Lindau) Wollenw. 1928", 
@@ -195,23 +309,34 @@
 "^skos:prefLabel": "Neonectria ditissima"
 }, 
 "Tl2995502": {
-"^ot:originalLabel": "Ilyonectria liliigena CBS 189.49"
+"^ot:originalLabel": "Ilyonectria liliigena CBS 189.49", 
+"^ot:ottId": 757738, 
+"^ot:ottTaxonName": "Ilyonectria liliigena"
 }, 
 "Tl2995504": {
-"^ot:originalLabel": "Ilyonectria leucospermi CBS 132810"
+"^ot:originalLabel": "Ilyonectria leucospermi CBS 132810", 
+"^ot:ottId": 5308853, 
+"^ot:ottTaxonName": "Ilyonectria leucospermi"
 }, 
 "Tl2995505": {
-"^ot:originalLabel": "Ilyonectria protearum CBS 132811"
+"^ot:originalLabel": "Ilyonectria protearum CBS 132811", 
+"^ot:ottId": 5308854, 
+"^ot:ottTaxonName": "Ilyonectria protearum"
 }, 
 "Tl2995506": {
-"^ot:originalLabel": "Dactylonectria torresensis CBS 129086"
+"^ot:originalLabel": "Dactylonectria torresensis CBS 129086", 
+"^ot:ottId": 430690, 
+"^ot:ottTaxonName": "Dactylonectria torresensis"
 }, 
 "Tl2995510": {
-"^ot:originalLabel": "Dactylonectria novozelandica CBS 113552"
+"^ot:originalLabel": "Dactylonectria novozelandica CBS 113552", 
+"^ot:ottId": 843768, 
+"^ot:ottTaxonName": "Dactylonectria novozelandica"
 }, 
 "Tl2995511": {
-"^ot:altLabel": "Cylindrocarpon magnusianum", 
 "^ot:originalLabel": "Neonectria candida CBS 151.29", 
+"^ot:ottId": 5317221, 
+"^ot:ottTaxonName": "Cylindrocarpon magnusianum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 7927, 
 "@tb:identifier.taxonVariant": 19072, 
@@ -221,8 +346,9 @@
 "^skos:prefLabel": "Neonectria ramulariae"
 }, 
 "Tl2995513": {
-"^ot:altLabel": "Cylindrodendrum album", 
 "^ot:originalLabel": "Cylindrodendrum album CBS 301.83", 
+"^ot:ottId": 1028579, 
+"^ot:ottTaxonName": "Cylindrodendrum album", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 626864, 
 "@tb:identifier.taxonVariant": 840185, 
@@ -230,7 +356,9 @@
 }
 }, 
 "Tl2995514": {
-"^ot:originalLabel": "Ilyonectria pseudodestructans CBS 117824"
+"^ot:originalLabel": "Ilyonectria pseudodestructans CBS 117824", 
+"^ot:ottId": 67231, 
+"^ot:ottTaxonName": "Ilyonectria pseudodestructans"
 }, 
 "Tl2995515": {
 "^ot:altLabel": "Neonectria liriodendri", 
@@ -246,8 +374,9 @@
 "^ot:originalLabel": "Ilyonectria crassa CBS 158.31"
 }, 
 "Tl2995518": {
-"^ot:altLabel": "Cylindrocarpon magnusianum", 
 "^ot:originalLabel": "Neonectria candida CBS 182.36", 
+"^ot:ottId": 5317221, 
+"^ot:ottTaxonName": "Cylindrocarpon magnusianum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 7927, 
 "@tb:identifier.taxonVariant": 19072, 
@@ -260,17 +389,24 @@
 "^ot:originalLabel": "Ilyonectria crassa CBS 129083"
 }, 
 "Tl2995521": {
-"^ot:originalLabel": "Dactylonectria estremocensis CBS 129085"
+"^ot:originalLabel": "Dactylonectria estremocensis CBS 129085", 
+"^ot:ottId": 843777, 
+"^ot:ottTaxonName": "Dactylonectria estremocensis"
 }, 
 "Tl2995522": {
-"^ot:originalLabel": "Dactylonectria novozelandica CBS 112608"
+"^ot:originalLabel": "Dactylonectria novozelandica CBS 112608", 
+"^ot:ottId": 843768, 
+"^ot:ottTaxonName": "Dactylonectria novozelandica"
 }, 
 "Tl2995525": {
-"^ot:originalLabel": "Ilyonectria rufa CBS 640.77"
+"^ot:originalLabel": "Ilyonectria rufa CBS 640.77", 
+"^ot:ottId": 97701, 
+"^ot:ottTaxonName": "Ilyonectria rufa"
 }, 
 "Tl2995527": {
-"^ot:altLabel": "Cylindrodendrum album", 
 "^ot:originalLabel": "Cylindrodendrum album CBS 110655", 
+"^ot:ottId": 1028579, 
+"^ot:ottTaxonName": "Cylindrodendrum album", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 626864, 
 "@tb:identifier.taxonVariant": 840185, 
@@ -278,13 +414,19 @@
 }
 }, 
 "Tl2995530": {
-"^ot:originalLabel": "Dactylonectria estremocensis CPC13539"
+"^ot:originalLabel": "Dactylonectria estremocensis CPC13539", 
+"^ot:ottId": 843777, 
+"^ot:ottTaxonName": "Dactylonectria estremocensis"
 }, 
 "Tl2995532": {
-"^ot:originalLabel": "Ilyonectria lusitanica CBS 129080"
+"^ot:originalLabel": "Ilyonectria lusitanica CBS 129080", 
+"^ot:ottId": 97596, 
+"^ot:ottTaxonName": "Ilyonectria lusitanica"
 }, 
 "Tl2995533": {
-"^ot:originalLabel": "Ilyonectria capensis CBS 132815"
+"^ot:originalLabel": "Ilyonectria capensis CBS 132815", 
+"^ot:ottId": 6379981, 
+"^ot:ottTaxonName": "Ilyonectria capensis"
 }, 
 "Tl2995534": {
 "^ot:altLabel": "Nectria neomacrospora", 
@@ -298,7 +440,9 @@
 "^skos:prefLabel": "Neonectria neomacrospora"
 }, 
 "Tl2995535": {
-"^ot:originalLabel": "Ilyonectria cyclaminicola CBS 302.93"
+"^ot:originalLabel": "Ilyonectria cyclaminicola CBS 302.93", 
+"^ot:ottId": 446535, 
+"^ot:ottTaxonName": "Ilyonectria cyclaminicola"
 }, 
 "Tl2995536": {
 "^ot:altLabel": "Cylindrocarpon willkommii (Lindau) Wollenw. 1928", 
@@ -312,7 +456,9 @@
 "^skos:prefLabel": "Neonectria ditissima"
 }, 
 "Tl2995538": {
-"^ot:originalLabel": "Dactylonectria pinicola CBS 159.34"
+"^ot:originalLabel": "Dactylonectria pinicola CBS 159.34", 
+"^ot:ottId": 5694780, 
+"^ot:ottTaxonName": "Dactylonectria pinicola"
 }, 
 "Tl2995541": {
 "^ot:originalLabel": "Dactylonectria macrodidyma CBS 112615"
@@ -331,10 +477,14 @@
 }
 }, 
 "Tl2995547": {
-"^ot:originalLabel": "Ilyonectria gamsii CBS 940.97"
+"^ot:originalLabel": "Ilyonectria gamsii CBS 940.97", 
+"^ot:ottId": 446321, 
+"^ot:ottTaxonName": "Ilyonectria gamsii"
 }, 
 "Tl2995550": {
-"^ot:originalLabel": "Ilyonectria europaea CBS 102892"
+"^ot:originalLabel": "Ilyonectria europaea CBS 102892", 
+"^ot:ottId": 548197, 
+"^ot:ottTaxonName": "Ilyonectria europaea"
 }, 
 "Tl2995552": {
 "^ot:altLabel": "Neonectria liriodendri", 
@@ -347,8 +497,9 @@
 }
 }, 
 "Tl2995554": {
-"^ot:altLabel": "Campylocarpon fasciculare", 
 "^ot:originalLabel": "Campylocarpon fasciculare CBS 112613", 
+"^ot:ottId": 855385, 
+"^ot:ottTaxonName": "Campylocarpon fasciculare", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 4697, 
 "@tb:identifier.taxonVariant": 11288, 
@@ -357,10 +508,14 @@
 }
 }, 
 "Tl2995555": {
-"^ot:originalLabel": "Ilyonectria protearum CBS 132812"
+"^ot:originalLabel": "Ilyonectria protearum CBS 132812", 
+"^ot:ottId": 5308854, 
+"^ot:ottTaxonName": "Ilyonectria protearum"
 }, 
 "Tl2995557": {
-"^ot:originalLabel": "Ilyonectria leucospermi CBS 132809"
+"^ot:originalLabel": "Ilyonectria leucospermi CBS 132809", 
+"^ot:ottId": 5308853, 
+"^ot:ottTaxonName": "Ilyonectria leucospermi"
 }, 
 "Tl2995558": {
 "^ot:altLabel": "Cylindrocarpon destructans", 
@@ -377,10 +532,14 @@
 "^ot:originalLabel": "Cylindrodendrum hubeiense CBS 124071"
 }, 
 "Tl2995560": {
-"^ot:originalLabel": "Ilyonectria liliigena CBS 732.74"
+"^ot:originalLabel": "Ilyonectria liliigena CBS 732.74", 
+"^ot:ottId": 757738, 
+"^ot:ottTaxonName": "Ilyonectria liliigena"
 }, 
 "Tl2995561": {
-"^ot:originalLabel": "Ilyonectria europaea CBS 129078"
+"^ot:originalLabel": "Ilyonectria europaea CBS 129078", 
+"^ot:ottId": 548197, 
+"^ot:ottTaxonName": "Ilyonectria europaea"
 }, 
 "Tl2995564": {
 "^ot:originalLabel": "Ilyonectria vredehoekensis CBS 132807"
@@ -389,16 +548,24 @@
 "^ot:originalLabel": "Ilyonectria robusta CBS 129084"
 }, 
 "Tl2995567": {
-"^ot:originalLabel": "Ilyonectria palmarum CBS 135753"
+"^ot:originalLabel": "Ilyonectria palmarum CBS 135753", 
+"^ot:ottId": 5220548, 
+"^ot:ottTaxonName": "Ilyonectria palmarum"
 }, 
 "Tl2995568": {
-"^ot:originalLabel": "Ilyonectria rufa CBS 153.37"
+"^ot:originalLabel": "Ilyonectria rufa CBS 153.37", 
+"^ot:ottId": 97701, 
+"^ot:ottTaxonName": "Ilyonectria rufa"
 }, 
 "Tl2995570": {
-"^ot:originalLabel": "Dactylonectria alcacerensis Cy134"
+"^ot:originalLabel": "Dactylonectria alcacerensis Cy134", 
+"^ot:ottId": 843784, 
+"^ot:ottTaxonName": "Dactylonectria alcacerensis"
 }, 
 "Tl2995571": {
-"^ot:originalLabel": "Ilyonectria palmarum CBS 135754"
+"^ot:originalLabel": "Ilyonectria palmarum CBS 135754", 
+"^ot:ottId": 5220548, 
+"^ot:ottTaxonName": "Ilyonectria palmarum"
 }, 
 "Tl2995572": {
 "^ot:originalLabel": "Dactylonectria hispanica Cy228"
@@ -415,25 +582,39 @@
 "^skos:prefLabel": "Neonectria macrodidyma"
 }, 
 "Tl2995576": {
-"^ot:originalLabel": "Dactylonectria vitis CBS 129082"
+"^ot:originalLabel": "Dactylonectria vitis CBS 129082", 
+"^ot:ottId": 368942, 
+"^ot:ottTaxonName": "Dactylonectria vitis"
 }, 
 "Tl2995578": {
-"^ot:originalLabel": "Dactylonectria pinicola CBS 173.37"
+"^ot:originalLabel": "Dactylonectria pinicola CBS 173.37", 
+"^ot:ottId": 5694780, 
+"^ot:ottTaxonName": "Dactylonectria pinicola"
 }, 
 "Tl2995580": {
-"^ot:originalLabel": "Ilyonectria pseudodestructans CBS 129081"
+"^ot:originalLabel": "Ilyonectria pseudodestructans CBS 129081", 
+"^ot:ottId": 67231, 
+"^ot:ottTaxonName": "Ilyonectria pseudodestructans"
 }, 
 "Tl2995581": {
-"^ot:originalLabel": "Dactylonectria torresensis CBS 119.41"
+"^ot:originalLabel": "Dactylonectria torresensis CBS 119.41", 
+"^ot:ottId": 430690, 
+"^ot:ottTaxonName": "Dactylonectria torresensis"
 }, 
 "Tl2995582": {
-"^ot:originalLabel": "Cylindrodendrum alicantinum Cyl-11"
+"^ot:originalLabel": "Cylindrodendrum alicantinum Cyl-11", 
+"^ot:ottId": 5981648, 
+"^ot:ottTaxonName": "Cylindrodendrum alicantinum"
 }, 
 "Tl2995584": {
-"^ot:originalLabel": "Ilyonectria panacis CBS 129079"
+"^ot:originalLabel": "Ilyonectria panacis CBS 129079", 
+"^ot:ottId": 67233, 
+"^ot:ottTaxonName": "Ilyonectria panacis"
 }, 
 "Tl2995587": {
-"^ot:originalLabel": "Neonectria major CBS 240.29"
+"^ot:originalLabel": "Neonectria major CBS 240.29", 
+"^ot:ottId": 724962, 
+"^ot:ottTaxonName": "Neonectria major"
 }, 
 "Tl3000665": {
 "^ot:originalLabel": "Neonectria sp.1 CPC 13545"
@@ -457,25 +638,39 @@
 "^ot:originalLabel": "Neonectria quercicola Cy-FO-3"
 }, 
 "Tl3000675": {
-"^ot:originalLabel": "Dactylonectria novozelandica Cy-FO-33 Cy-FO-222"
+"^ot:originalLabel": "Dactylonectria novozelandica Cy-FO-33 Cy-FO-222", 
+"^ot:ottId": 843768, 
+"^ot:ottTaxonName": "Dactylonectria novozelandica"
 }, 
 "Tl3000676": {
-"^ot:originalLabel": "Ilyonectria rufa Cy-FO-17"
+"^ot:originalLabel": "Ilyonectria rufa Cy-FO-17", 
+"^ot:ottId": 97701, 
+"^ot:ottTaxonName": "Ilyonectria rufa"
 }, 
 "Tl3000677": {
-"^ot:originalLabel": "Dactylonectria torresensis Cy-FO-12 Cy-FO-227"
+"^ot:originalLabel": "Dactylonectria torresensis Cy-FO-12 Cy-FO-227", 
+"^ot:ottId": 430690, 
+"^ot:ottTaxonName": "Dactylonectria torresensis"
 }, 
 "Tl3000678": {
-"^ot:originalLabel": "Dactylonectria torresensis Cy-FO-205"
+"^ot:originalLabel": "Dactylonectria torresensis Cy-FO-205", 
+"^ot:ottId": 430690, 
+"^ot:ottTaxonName": "Dactylonectria torresensis"
 }, 
 "Tl3000679": {
-"^ot:originalLabel": "Ilyonectria rufa Cy-FO-4 Cy-FO-128 Cy-FO-130"
+"^ot:originalLabel": "Ilyonectria rufa Cy-FO-4 Cy-FO-128 Cy-FO-130", 
+"^ot:ottId": 97701, 
+"^ot:ottTaxonName": "Ilyonectria rufa"
 }, 
 "Tl3000680": {
-"^ot:originalLabel": "Dactylonectria novozelandica Cy-FO-46 Cy-FO-47 Cy-FO-56 Cy-FO-60 Cy-FO-137 Cy-FO-146"
+"^ot:originalLabel": "Dactylonectria novozelandica Cy-FO-46 Cy-FO-47 Cy-FO-56 Cy-FO-60 Cy-FO-137 Cy-FO-146", 
+"^ot:ottId": 843768, 
+"^ot:ottTaxonName": "Dactylonectria novozelandica"
 }, 
 "Tl3000681": {
-"^ot:originalLabel": "Cylindrodendrum alicantinum Cy-FO-25"
+"^ot:originalLabel": "Cylindrodendrum alicantinum Cy-FO-25", 
+"^ot:ottId": 5981648, 
+"^ot:ottTaxonName": "Cylindrodendrum alicantinum"
 }, 
 "Tl3000682": {
 "^ot:originalLabel": "Dactylonectria macrodidyma Cy-FO-1 Cy-FO-9 Cy-FO-10 Cy-FO-13 Cy-FO-18 Cy-FO-19 Cy-FO-20"
@@ -487,46 +682,70 @@
 "^ot:originalLabel": "Dactylonectria macrodidyma Cy-FO-32 Cy-FO-34 Cy-FO-154"
 }, 
 "Tl3000685": {
-"^ot:originalLabel": "Ilyonectria rufa Cy-FO-8 Cy-FO-179"
+"^ot:originalLabel": "Ilyonectria rufa Cy-FO-8 Cy-FO-179", 
+"^ot:ottId": 97701, 
+"^ot:ottTaxonName": "Ilyonectria rufa"
 }, 
 "Tl3000686": {
-"^ot:originalLabel": "Ilyonectria liriodendri Cy-FO-50 Cy-FO-52 Cy-FO-57 Cy-FO-68 Cy-FO-136"
+"^ot:originalLabel": "Ilyonectria liriodendri Cy-FO-50 Cy-FO-52 Cy-FO-57 Cy-FO-68 Cy-FO-136", 
+"^ot:ottId": 446318, 
+"^ot:ottTaxonName": "Ilyonectria liriodendri"
 }, 
 "Tl3000687": {
 "^ot:originalLabel": "Ilyonectria ilicicola Cy-FO-224 Cy-FO-225 Cy-FO-226"
 }, 
 "Tl3000688": {
-"^ot:originalLabel": "Dactylonectria novozelandica Cy-FO-153 Cy-FO-180 Cy-FO-188 Cy-FO-191 Cy-FO-210 Cy-FO-211"
+"^ot:originalLabel": "Dactylonectria novozelandica Cy-FO-153 Cy-FO-180 Cy-FO-188 Cy-FO-191 Cy-FO-210 Cy-FO-211", 
+"^ot:ottId": 843768, 
+"^ot:ottTaxonName": "Dactylonectria novozelandica"
 }, 
 "Tl3000689": {
 "^ot:originalLabel": "Dactylonectria pauciseptata Cy-FO-37 Cy-FO-38 Cy-FO-178"
 }, 
 "Tl3000690": {
-"^ot:originalLabel": "Dactylonectria torresensis Cy-FO-64"
+"^ot:originalLabel": "Dactylonectria torresensis Cy-FO-64", 
+"^ot:ottId": 430690, 
+"^ot:ottTaxonName": "Dactylonectria torresensis"
 }, 
 "Tl3000691": {
-"^ot:originalLabel": "Dactylonectria estremocensis CPC 13539"
+"^ot:originalLabel": "Dactylonectria estremocensis CPC 13539", 
+"^ot:ottId": 843777, 
+"^ot:ottTaxonName": "Dactylonectria estremocensis"
 }, 
 "Tl3000692": {
-"^ot:originalLabel": "Ilyonectria cyclaminicola Cy-FO-67"
+"^ot:originalLabel": "Ilyonectria cyclaminicola Cy-FO-67", 
+"^ot:ottId": 446535, 
+"^ot:ottTaxonName": "Ilyonectria cyclaminicola"
 }, 
 "Tl3000693": {
-"^ot:originalLabel": "Dactylonectria torresensis Cy-FO-43 Cy-FO-65 Cy-FO-127 Cy-FO-206"
+"^ot:originalLabel": "Dactylonectria torresensis Cy-FO-43 Cy-FO-65 Cy-FO-127 Cy-FO-206", 
+"^ot:ottId": 430690, 
+"^ot:ottTaxonName": "Dactylonectria torresensis"
 }, 
 "Tl3000694": {
-"^ot:originalLabel": "Ilyonectria liriodendri Cy-FO-221"
+"^ot:originalLabel": "Ilyonectria liriodendri Cy-FO-221", 
+"^ot:ottId": 446318, 
+"^ot:ottTaxonName": "Ilyonectria liriodendri"
 }, 
 "Tl3000695": {
-"^ot:originalLabel": "Dactylonectria torresensis Cy-FO-218"
+"^ot:originalLabel": "Dactylonectria torresensis Cy-FO-218", 
+"^ot:ottId": 430690, 
+"^ot:ottTaxonName": "Dactylonectria torresensis"
 }, 
 "Tl3000696": {
-"^ot:originalLabel": "Dactylonectria novozelandica Cy-FO-22 Cy-FO-27 Cy-FO-36 Cy-FO-40 Cy-FO-41 Cy-FO-44"
+"^ot:originalLabel": "Dactylonectria novozelandica Cy-FO-22 Cy-FO-27 Cy-FO-36 Cy-FO-40 Cy-FO-41 Cy-FO-44", 
+"^ot:ottId": 843768, 
+"^ot:ottTaxonName": "Dactylonectria novozelandica"
 }, 
 "Tl3000697": {
-"^ot:originalLabel": "Dactylonectria pinicola Cy-FO-177"
+"^ot:originalLabel": "Dactylonectria pinicola Cy-FO-177", 
+"^ot:ottId": 5694780, 
+"^ot:ottTaxonName": "Dactylonectria pinicola"
 }, 
 "Tl3000698": {
-"^ot:originalLabel": "Dactylonectria torresensis Cy-FO-2 Cy-FO-54"
+"^ot:originalLabel": "Dactylonectria torresensis Cy-FO-2 Cy-FO-54", 
+"^ot:ottId": 430690, 
+"^ot:ottTaxonName": "Dactylonectria torresensis"
 }, 
 "Tl3000699": {
 "^ot:originalLabel": "Ilyonectria robusta Cy-FO-217 Cy-FO-219"
@@ -538,34 +757,54 @@
 "^ot:originalLabel": "Dactylonectria macrodidyma Cy-FO-55 Cy-FO-61 Cy-FO-134 Cy-FO-147 Cy-FO-160 Cy-FO-195 Cy-FO-223"
 }, 
 "Tl3000702": {
-"^ot:originalLabel": "Ilyonectria liriodendri Cy-FO-132 Cy-FO-142"
+"^ot:originalLabel": "Ilyonectria liriodendri Cy-FO-132 Cy-FO-142", 
+"^ot:ottId": 446318, 
+"^ot:ottTaxonName": "Ilyonectria liriodendri"
 }, 
 "Tl3000703": {
-"^ot:originalLabel": "Dactylonectria torresensis Cy-FO-28"
+"^ot:originalLabel": "Dactylonectria torresensis Cy-FO-28", 
+"^ot:ottId": 430690, 
+"^ot:ottTaxonName": "Dactylonectria torresensis"
 }, 
 "Tl3000704": {
-"^ot:originalLabel": "Dactylonectria novozelandica Cy-FO-35 Cy-FO-59 Cy-FO-66"
+"^ot:originalLabel": "Dactylonectria novozelandica Cy-FO-35 Cy-FO-59 Cy-FO-66", 
+"^ot:ottId": 843768, 
+"^ot:ottTaxonName": "Dactylonectria novozelandica"
 }, 
 "Tl3000705": {
-"^ot:originalLabel": "Ilyonectria rufa Cy-FO-7"
+"^ot:originalLabel": "Ilyonectria rufa Cy-FO-7", 
+"^ot:ottId": 97701, 
+"^ot:ottTaxonName": "Ilyonectria rufa"
 }, 
 "Tl3000706": {
-"^ot:originalLabel": "Ilyonectria capensis Cy-FO-63 Cy-FO-129 Cy-FO-184"
+"^ot:originalLabel": "Ilyonectria capensis Cy-FO-63 Cy-FO-129 Cy-FO-184", 
+"^ot:ottId": 6379981, 
+"^ot:ottTaxonName": "Ilyonectria capensis"
 }, 
 "Tl3000707": {
-"^ot:originalLabel": "Ilyonectria rufa Cy-FO-161"
+"^ot:originalLabel": "Ilyonectria rufa Cy-FO-161", 
+"^ot:ottId": 97701, 
+"^ot:ottTaxonName": "Ilyonectria rufa"
 }, 
 "Tl3000708": {
-"^ot:originalLabel": "Dactylonectria novozelandica Cy-FO-5 Cy-FO-6 Cy-FO-11 Cy-FO-14 Cy-FO-15 Cy-FO-16 Cy-FO-21"
+"^ot:originalLabel": "Dactylonectria novozelandica Cy-FO-5 Cy-FO-6 Cy-FO-11 Cy-FO-14 Cy-FO-15 Cy-FO-16 Cy-FO-21", 
+"^ot:ottId": 843768, 
+"^ot:ottTaxonName": "Dactylonectria novozelandica"
 }, 
 "Tl3000709": {
-"^ot:originalLabel": "Ilyonectria pseudodestructans Cy-FO-71"
+"^ot:originalLabel": "Ilyonectria pseudodestructans Cy-FO-71", 
+"^ot:ottId": 67231, 
+"^ot:ottTaxonName": "Ilyonectria pseudodestructans"
 }, 
 "Tl3000710": {
-"^ot:originalLabel": "Ilyonectria liriodendri Cy-FO-183"
+"^ot:originalLabel": "Ilyonectria liriodendri Cy-FO-183", 
+"^ot:ottId": 446318, 
+"^ot:ottTaxonName": "Ilyonectria liriodendri"
 }, 
 "Tl3000711": {
-"^ot:originalLabel": "Ilyonectria rufa Cy-FO-53"
+"^ot:originalLabel": "Ilyonectria rufa Cy-FO-53", 
+"^ot:ottId": 97701, 
+"^ot:ottTaxonName": "Ilyonectria rufa"
 }, 
 "Tl3000712": {
 "^ot:originalLabel": "Ilyonectria ilicicola Cy-FO-225"
@@ -601,7 +840,19 @@
 "Tr109237": {
 "@label": "Fig. 2", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn17172936", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 111, 
 "^tb:quality.tree": "Unrated", 
@@ -2379,7 +2630,19 @@
 "Tr109238": {
 "@label": "con 50 majrule_his3_Fig2", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn17173060", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 111, 
 "^tb:quality.tree": "Unrated", 
@@ -3901,7 +4164,19 @@
 "Tr109239": {
 "@label": "Fig. 2", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn17173196", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 111, 
 "^tb:quality.tree": "Unrated", 
@@ -5423,7 +5698,19 @@
 "Tr109250": {
 "@label": "Fig. 3", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn17174854", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 79, 
 "^tb:quality.tree": "Unrated", 
@@ -6689,7 +6976,19 @@
 "Tr109251": {
 "@label": "Fig. 3", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn17174963", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 79, 
 "^tb:quality.tree": "Unrated", 
@@ -7955,7 +8254,19 @@
 "Tr109252": {
 "@label": "Fig. 3", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn17175073", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 79, 
 "^tb:quality.tree": "Unrated", 
@@ -9221,7 +9532,19 @@
 "Tr109253": {
 "@label": "Fig. 3", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn17175227", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 79, 
 "^tb:quality.tree": "Unrated", 
@@ -10487,7 +10810,19 @@
 "Tr109254": {
 "@label": "Fig. 3", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn17175412", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 79, 
 "^tb:quality.tree": "Unrated", 
