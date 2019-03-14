@@ -52,16 +52,105 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2019-03-14T17:53:03.957Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "Platyhelminthes"
 }, 
-"^ot:curatorName": "susan-holder", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}, 
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": "$1"
+}, 
+"old": {
+"$": "^(\\S*\\s+\\S*).*"
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2019-03-14T17:53:03.957Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"susan-holder"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S22149"
 }, 
+"^ot:focalCladeOTTTaxonName": "", 
 "^ot:otusElementOrder": [
 "Tls61519"
 ], 
@@ -71,6 +160,7 @@
 }, 
 "^ot:studyPublicationReference": "Scarpa F., Sanna D., Cossu P., Lai T., Casu M., & Curini-galletti M. 2018. How to achieve internal fertilization without a vagina: the study case of the genus Archilina Ax, 1959 (Platyhelminthes, Proseriata) from Canary Islands. Marine Biodiversity, .", 
 "^ot:studyYear": 2018, 
+"^ot:tag": [], 
 "^ot:taxonLinkPrefixes": {
 "@ubio": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:", 
 "@uniprot": "http://purl.uniprot.org/taxonomy/"
@@ -97,8 +187,9 @@
 "^ot:originalLabel": "Archilina imperatrix 4"
 }, 
 "Tl3022579": {
-"^ot:altLabel": "Minona gemella", 
 "^ot:originalLabel": "Minona gemella 1", 
+"^ot:ottId": 3662625, 
+"^ot:ottTaxonName": "Minona gemella", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 627433, 
 "@tb:identifier.taxonVariant": 840916, 
@@ -110,6 +201,8 @@
 }, 
 "Tl3022583": {
 "^ot:originalLabel": "Archilopsis spinosa", 
+"^ot:ottId": 3662649, 
+"^ot:ottTaxonName": "Archilopsis spinosa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 627441, 
 "@tb:identifier.taxonVariant": 840924, 
@@ -123,16 +216,22 @@
 "^ot:originalLabel": "Monocelis lineata Pilo"
 }, 
 "Tl3022591": {
-"^ot:originalLabel": "Duplominona brasiliensis "
+"^ot:originalLabel": "Duplominona brasiliensis ", 
+"^ot:ottId": 5694291, 
+"^ot:ottTaxonName": "Duplominona brasiliensis"
 }, 
 "Tl3022592": {
 "^ot:originalLabel": "Monocelis lineata Ferrol 2"
 }, 
 "Tl3022594": {
-"^ot:originalLabel": "Archilina stylifera"
+"^ot:originalLabel": "Archilina stylifera", 
+"^ot:ottId": 3662540, 
+"^ot:ottTaxonName": "Archilina stylifera"
 }, 
 "Tl3022595": {
-"^ot:originalLabel": "Monocelis exquisita 1"
+"^ot:originalLabel": "Monocelis exquisita 1", 
+"^ot:ottId": 5974161, 
+"^ot:ottTaxonName": "Monocelis exquisita"
 }, 
 "Tl3022603": {
 "^ot:originalLabel": "Monocelis lineata Casaraccio 2"
@@ -144,14 +243,19 @@
 "^ot:originalLabel": "Archilina imperatrix 3"
 }, 
 "Tl3022606": {
-"^ot:originalLabel": "Monocelis algicola 5"
+"^ot:originalLabel": "Monocelis algicola 5", 
+"^ot:ottId": 5974160, 
+"^ot:ottTaxonName": "Monocelis algicola"
 }, 
 "Tl3022607": {
-"^ot:originalLabel": "Monocelis algicola 3"
+"^ot:originalLabel": "Monocelis algicola 3", 
+"^ot:ottId": 5974160, 
+"^ot:ottTaxonName": "Monocelis algicola"
 }, 
 "Tl3022609": {
-"^ot:altLabel": "Minona gemella", 
 "^ot:originalLabel": "Minona gemella 3", 
+"^ot:ottId": 3662625, 
+"^ot:ottTaxonName": "Minona gemella", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 627433, 
 "@tb:identifier.taxonVariant": 840916, 
@@ -204,16 +308,22 @@
 "^ot:originalLabel": "Archilina imperatrix 2"
 }, 
 "Tl3022643": {
-"^ot:originalLabel": "Archilina endostyla 2"
+"^ot:originalLabel": "Archilina endostyla 2", 
+"^ot:ottId": 3662544, 
+"^ot:ottTaxonName": "Archilina endostyla"
 }, 
 "Tl3022645": {
 "^ot:originalLabel": "Monocelis lineata Tj\u00e4rn\u00f6 2"
 }, 
 "Tl3022649": {
-"^ot:originalLabel": "Monocelis algicola 4"
+"^ot:originalLabel": "Monocelis algicola 4", 
+"^ot:ottId": 5974160, 
+"^ot:ottTaxonName": "Monocelis algicola"
 }, 
 "Tl3022650": {
 "^ot:originalLabel": "Minona ileanae", 
+"^ot:ottId": 964242, 
+"^ot:ottTaxonName": "Minona ileanae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 77893, 
 "@tb:identifier.taxonVariant": 155430, 
@@ -225,8 +335,9 @@
 "^ot:originalLabel": "Monocelis lineata Keflavik"
 }, 
 "Tl3022657": {
-"^ot:altLabel": "Minona gemella", 
 "^ot:originalLabel": "Minona gemella 2", 
+"^ot:ottId": 3662625, 
+"^ot:ottTaxonName": "Minona gemella", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 627433, 
 "@tb:identifier.taxonVariant": 840916, 
@@ -249,11 +360,14 @@
 "^ot:originalLabel": "Duplominona sp nov 4 c"
 }, 
 "Tl3022669": {
-"^ot:originalLabel": "Archilina endostyla 1"
+"^ot:originalLabel": "Archilina endostyla 1", 
+"^ot:ottId": 3662544, 
+"^ot:ottTaxonName": "Archilina endostyla"
 }, 
 "Tl3022671": {
-"^ot:altLabel": "Monocelis fusca", 
 "^ot:originalLabel": "Monocelis fusca 4", 
+"^ot:ottId": 150454, 
+"^ot:ottTaxonName": "Monocelis fusca", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 630012, 
 "@tb:identifier.taxonVariant": 844521, 
@@ -264,8 +378,9 @@
 "^ot:originalLabel": "Minona cf trigonopora"
 }, 
 "Tl3022678": {
-"^ot:altLabel": "Duplominona tridens", 
 "^ot:originalLabel": "Duplominona tridens 2", 
+"^ot:ottId": 3662646, 
+"^ot:ottTaxonName": "Duplominona tridens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 627434, 
 "@tb:identifier.taxonVariant": 840917, 
@@ -277,6 +392,8 @@
 }, 
 "Tl3022680": {
 "^ot:originalLabel": "Archilopsis arenaria", 
+"^ot:ottId": 3662651, 
+"^ot:ottTaxonName": "Archilopsis arenaria", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 627442, 
 "@tb:identifier.taxonVariant": 840925, 
@@ -284,7 +401,9 @@
 }
 }, 
 "Tl3022681": {
-"^ot:originalLabel": "Monocelis exquisita 2"
+"^ot:originalLabel": "Monocelis exquisita 2", 
+"^ot:ottId": 5974161, 
+"^ot:ottTaxonName": "Monocelis exquisita"
 }, 
 "Tl3022683": {
 "^ot:originalLabel": "Minona sp nov 4 a"
@@ -294,6 +413,8 @@
 }, 
 "Tl3022685": {
 "^ot:originalLabel": "Archimonocelis staresoi", 
+"^ot:ottId": 732028, 
+"^ot:ottTaxonName": "Archimonocelis staresoi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 67181, 
 "@tb:identifier.taxonVariant": 142511, 
@@ -305,8 +426,9 @@
 "^ot:originalLabel": "Archilina regina 4"
 }, 
 "Tl3022690": {
-"^ot:altLabel": "Monocelis fusca", 
 "^ot:originalLabel": "Monocelis fusca 3", 
+"^ot:ottId": 150454, 
+"^ot:ottTaxonName": "Monocelis fusca", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 630012, 
 "@tb:identifier.taxonVariant": 844521, 
@@ -321,6 +443,8 @@
 }, 
 "Tl3022696": {
 "^ot:originalLabel": "Monocelis longiceps", 
+"^ot:ottId": 259486, 
+"^ot:ottTaxonName": "Monocelis longiceps", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 67189, 
 "@tb:identifier.taxonVariant": 142520, 
@@ -329,7 +453,9 @@
 }
 }, 
 "Tl3022698": {
-"^ot:originalLabel": "Monocelis exquisita 3"
+"^ot:originalLabel": "Monocelis exquisita 3", 
+"^ot:ottId": 5974161, 
+"^ot:ottTaxonName": "Monocelis exquisita"
 }, 
 "Tl3022699": {
 "^ot:originalLabel": "Duplominona sp nov 2 a"
@@ -344,8 +470,9 @@
 "^ot:originalLabel": "Monocelis lineata Roscoff 1"
 }, 
 "Tl3022705": {
-"^ot:altLabel": "Monocelis fusca", 
 "^ot:originalLabel": "Monocelis fusca 1", 
+"^ot:ottId": 150454, 
+"^ot:ottTaxonName": "Monocelis fusca", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 630012, 
 "@tb:identifier.taxonVariant": 844521, 
@@ -368,8 +495,9 @@
 "^ot:originalLabel": "Duplominona sp nov 3 b"
 }, 
 "Tl3022712": {
-"^ot:altLabel": "Monocelis fusca", 
 "^ot:originalLabel": "Monocelis fusca 2", 
+"^ot:ottId": 150454, 
+"^ot:ottTaxonName": "Monocelis fusca", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 630012, 
 "@tb:identifier.taxonVariant": 844521, 
@@ -419,7 +547,9 @@
 "^ot:originalLabel": "Archilina coronata 6"
 }, 
 "Tl3022745": {
-"^ot:originalLabel": "Monocelis exquisita 5"
+"^ot:originalLabel": "Monocelis exquisita 5", 
+"^ot:ottId": 5974161, 
+"^ot:ottTaxonName": "Monocelis exquisita"
 }, 
 "Tl3022747": {
 "^ot:originalLabel": "Archilina regina 13"
@@ -431,14 +561,17 @@
 "^ot:originalLabel": "Minona sp nov 1 a"
 }, 
 "Tl3022752": {
-"^ot:originalLabel": "Monocelis exquisita 4"
+"^ot:originalLabel": "Monocelis exquisita 4", 
+"^ot:ottId": 5974161, 
+"^ot:ottTaxonName": "Monocelis exquisita"
 }, 
 "Tl3022753": {
 "^ot:originalLabel": "Monocelis lineata Tj\u00e4rn\u00f6 5"
 }, 
 "Tl3022755": {
-"^ot:altLabel": "Duploperaclistus circocirrus", 
 "^ot:originalLabel": "Duploperaclistus circocirrus 2", 
+"^ot:ottId": 3662693, 
+"^ot:ottTaxonName": "Duploperaclistus circocirrus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 627428, 
 "@tb:identifier.taxonVariant": 840911, 
@@ -464,8 +597,9 @@
 "^ot:originalLabel": "Monocelis lineata Charaki 2"
 }, 
 "Tl3022770": {
-"^ot:altLabel": "Archilina deceptoria", 
 "^ot:originalLabel": "Archilina deceptoria 2", 
+"^ot:ottId": 680586, 
+"^ot:ottTaxonName": "Archilina deceptoria", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 67168, 
 "@tb:identifier.taxonVariant": 142502, 
@@ -474,7 +608,9 @@
 }
 }, 
 "Tl3022774": {
-"^ot:originalLabel": "Monocelis algicola 2"
+"^ot:originalLabel": "Monocelis algicola 2", 
+"^ot:ottId": 5974160, 
+"^ot:ottTaxonName": "Monocelis algicola"
 }, 
 "Tl3022776": {
 "^ot:originalLabel": "Archilina regina 1"
@@ -484,6 +620,8 @@
 }, 
 "Tl3022781": {
 "^ot:originalLabel": "Monocelis longistyla", 
+"^ot:ottId": 3662581, 
+"^ot:ottTaxonName": "Monocelis longistyla", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 627440, 
 "@tb:identifier.taxonVariant": 840923, 
@@ -494,8 +632,9 @@
 "^ot:originalLabel": "Duplominona sp nov 5"
 }, 
 "Tl3022786": {
-"^ot:altLabel": "Duplominona tridens", 
 "^ot:originalLabel": "Duplominona tridens 1", 
+"^ot:ottId": 3662646, 
+"^ot:ottTaxonName": "Duplominona tridens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 627434, 
 "@tb:identifier.taxonVariant": 840917, 
@@ -503,8 +642,9 @@
 }
 }, 
 "Tl3022788": {
-"^ot:altLabel": "Archilina deceptoria", 
 "^ot:originalLabel": "Archilina deceptoria 1", 
+"^ot:ottId": 680586, 
+"^ot:ottTaxonName": "Archilina deceptoria", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 67168, 
 "@tb:identifier.taxonVariant": 142502, 
@@ -525,14 +665,17 @@
 "^ot:originalLabel": "Duplominona sp nov 6"
 }, 
 "Tl3022795": {
-"^ot:originalLabel": "Monocelis algicola 1"
+"^ot:originalLabel": "Monocelis algicola 1", 
+"^ot:ottId": 5974160, 
+"^ot:ottTaxonName": "Monocelis algicola"
 }, 
 "Tl3022797": {
 "^ot:originalLabel": "Monocelis lineata Tj\u00e4rn\u00f6 4"
 }, 
 "Tl3022798": {
-"^ot:altLabel": "Duploperaclistus circocirrus", 
 "^ot:originalLabel": "Duploperaclistus circocirrus 1", 
+"^ot:ottId": 3662693, 
+"^ot:ottTaxonName": "Duploperaclistus circocirrus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 627428, 
 "@tb:identifier.taxonVariant": 840911, 
@@ -557,7 +700,19 @@
 "Tr109550": {
 "@label": "con 50 majrule", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn17239581", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 112, 
 "^tb:quality.tree": "Unrated", 
