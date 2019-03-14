@@ -51,22 +51,115 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2019-03-14T16:55:02.642Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:curatorName": "susan-holder", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}, 
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": "$1"
+}, 
+"old": {
+"$": "^(\\S*\\s+\\S*).*"
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2019-03-14T16:55:02.642Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"susan-holder"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S23830"
 }, 
+"^ot:focalCladeOTTTaxonName": "", 
 "^ot:otusElementOrder": [
 "Tls67856"
 ], 
 "^ot:studyId": "ot_1903", 
+"^ot:studyPublication": {
+"@href": ""
+}, 
 "^ot:studyPublicationReference": "Song J. 2019. Morphological and molecular evidences for two new species within Russula subg. Brevipes from China. MycoKeys, .", 
 "^ot:studyYear": 2019, 
+"^ot:tag": [], 
 "^ot:taxonLinkPrefixes": {
 "@ubio": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:", 
 "@uniprot": "http://purl.uniprot.org/taxonomy/"
@@ -89,8 +182,9 @@
 "^skos:historyNote": "Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlOTUWriter@6b0acdd3 $Rev$", 
 "otuById": {
 "Tl3543105": {
-"^ot:altLabel": "Russula acrifolia", 
 "^ot:originalLabel": "Russula acrifolia R.05065", 
+"^ot:ottId": 783966, 
+"^ot:ottTaxonName": "Russula acrifolia", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 328995, 
 "@tb:identifier.taxonVariant": 369929, 
@@ -102,8 +196,9 @@
 "^ot:originalLabel": "Russula lateriticola BB_06.031"
 }, 
 "Tl3543107": {
-"^ot:altLabel": "Russula subnigricans", 
 "^ot:originalLabel": "Russula subnigricans RITF2657", 
+"^ot:ottId": 789805, 
+"^ot:ottTaxonName": "Russula subnigricans", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 233050, 
 "@tb:identifier.taxonVariant": 295574, 
@@ -125,8 +220,9 @@
 "^ot:originalLabel": "Russula cf. camarophylla MPG11_7_09"
 }, 
 "Tl3543110": {
-"^ot:altLabel": "Russula earlei", 
 "^ot:originalLabel": "Russula earlei BPL245", 
+"^ot:ottId": 1065742, 
+"^ot:ottTaxonName": "Russula earlei", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 25883, 
 "@tb:identifier.taxonVariant": 60571, 
@@ -138,11 +234,14 @@
 "^ot:originalLabel": "Russula cf. delica SA07.210"
 }, 
 "Tl3543112": {
-"^ot:originalLabel": "Russula sesenagula BB_08.117"
+"^ot:originalLabel": "Russula sesenagula BB_08.117", 
+"^ot:ottId": 3805834, 
+"^ot:ottTaxonName": "Russula sesenagula"
 }, 
 "Tl3543113": {
-"^ot:altLabel": "Russula azurea", 
 "^ot:originalLabel": "Russula azurea BB_08.668", 
+"^ot:ottId": 709306, 
+"^ot:ottTaxonName": "Russula azurea", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 25860, 
 "@tb:identifier.taxonVariant": 60514, 
@@ -151,10 +250,14 @@
 }
 }, 
 "Tl3543114": {
-"^ot:originalLabel": "Russula cortinarioides BB_07.103"
+"^ot:originalLabel": "Russula cortinarioides BB_07.103", 
+"^ot:ottId": 6382324, 
+"^ot:ottTaxonName": "Russula cortinarioides"
 }, 
 "Tl3543115": {
-"^ot:originalLabel": "Russula laeta SAV_F.3949"
+"^ot:originalLabel": "Russula laeta SAV_F.3949", 
+"^ot:ottId": 3806345, 
+"^ot:ottTaxonName": "Russula laeta"
 }, 
 "Tl3543116": {
 "^ot:altLabel": "Russula lilacea", 
@@ -176,8 +279,9 @@
 }
 }, 
 "Tl3543118": {
-"^ot:altLabel": "Russula odorata", 
 "^ot:originalLabel": "Russula odorata BB_07.186", 
+"^ot:ottId": 439481, 
+"^ot:ottTaxonName": "Russula odorata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 25918, 
 "@tb:identifier.taxonVariant": 60640, 
@@ -186,14 +290,17 @@
 }
 }, 
 "Tl3543119": {
-"^ot:originalLabel": "Russula edulis BB_08.167"
+"^ot:originalLabel": "Russula edulis BB_08.167", 
+"^ot:ottId": 6382328, 
+"^ot:ottTaxonName": "Russula edulis"
 }, 
 "Tl3543120": {
 "^ot:originalLabel": "Russula callainovittata RITF2639"
 }, 
 "Tl3543121": {
-"^ot:altLabel": "Russula dissimulans", 
 "^ot:originalLabel": "Russula dissimulans OSA.MY.1727", 
+"^ot:ottId": 789801, 
+"^ot:ottTaxonName": "Russula dissimulans", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 233043, 
 "@tb:identifier.taxonVariant": 295567, 
@@ -208,8 +315,9 @@
 "^ot:originalLabel": "Russula amara FH12213"
 }, 
 "Tl3543124": {
-"^ot:altLabel": "Russula decolorans", 
 "^ot:originalLabel": "Russula decolorans FH12196", 
+"^ot:ottId": 760937, 
+"^ot:ottTaxonName": "Russula decolorans", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 25878, 
 "@tb:identifier.taxonVariant": 60557, 
@@ -218,8 +326,9 @@
 }
 }, 
 "Tl3543125": {
-"^ot:altLabel": "Russula nauseosa", 
 "^ot:originalLabel": "Russula nauseosa FH12173", 
+"^ot:ottId": 1016001, 
+"^ot:ottTaxonName": "Russula nauseosa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 25914, 
 "@tb:identifier.taxonVariant": 60633, 
@@ -228,8 +337,9 @@
 }
 }, 
 "Tl3543126": {
-"^ot:altLabel": "Russula compacta", 
 "^ot:originalLabel": "Russula compacta BB_06.295", 
+"^ot:ottId": 943203, 
+"^ot:ottTaxonName": "Russula compacta", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 25873, 
 "@tb:identifier.taxonVariant": 60547, 
@@ -241,8 +351,9 @@
 "^ot:originalLabel": "Russula inornata sp._ined._BB_08.194"
 }, 
 "Tl3543128": {
-"^ot:altLabel": "Russula subnigricans", 
 "^ot:originalLabel": "Russula subnigricans YM.64", 
+"^ot:ottId": 789805, 
+"^ot:ottTaxonName": "Russula subnigricans", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 233050, 
 "@tb:identifier.taxonVariant": 295574, 
@@ -254,11 +365,14 @@
 "^ot:originalLabel": "Russula aff. pallidospora MPG13_6_08"
 }, 
 "Tl3543130": {
-"^ot:originalLabel": "Russula earlei MT_s.n."
+"^ot:originalLabel": "Russula earlei MT_s.n.", 
+"^ot:ottId": 1065742, 
+"^ot:ottTaxonName": "Russula earlei"
 }, 
 "Tl3543131": {
-"^ot:altLabel": "Russula vesca", 
 "^ot:originalLabel": "Russula vesca BPL284", 
+"^ot:ottId": 812088, 
+"^ot:ottTaxonName": "Russula vesca", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 25951, 
 "@tb:identifier.taxonVariant": 60703, 
@@ -280,8 +394,9 @@
 }
 }, 
 "Tl3543134": {
-"^ot:altLabel": "Russula brevipes", 
 "^ot:originalLabel": "Russula brevipes BB_06.508", 
+"^ot:ottId": 774670, 
+"^ot:ottTaxonName": "Russula brevipes", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 25863, 
 "@tb:identifier.taxonVariant": 60523, 
@@ -325,8 +440,9 @@
 "^ot:originalLabel": "Russula subbrevipes RITF3002"
 }, 
 "Tl3543142": {
-"^ot:altLabel": "Russula melliolens", 
 "^ot:originalLabel": "Russula melliolens SAV_F.4201", 
+"^ot:ottId": 439475, 
+"^ot:ottTaxonName": "Russula melliolens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 25909, 
 "@tb:identifier.taxonVariant": 60626, 
@@ -341,11 +457,14 @@
 "^ot:originalLabel": "Russula blennia sp._ined._BB_08.066"
 }, 
 "Tl3543145": {
-"^ot:originalLabel": "Russula zvarae FH12175"
+"^ot:originalLabel": "Russula zvarae FH12175", 
+"^ot:ottId": 55224, 
+"^ot:ottTaxonName": "Russula zvarae"
 }, 
 "Tl3543146": {
-"^ot:altLabel": "Russula violeipes", 
 "^ot:originalLabel": "Russula violeipes SFC20121010.06", 
+"^ot:ottId": 1016003, 
+"^ot:ottTaxonName": "Russula violeipes", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 25955, 
 "@tb:identifier.taxonVariant": 60712, 
@@ -377,8 +496,9 @@
 "^ot:originalLabel": "Russula capillaris sp._ined._BB_08.172"
 }, 
 "Tl3543150": {
-"^ot:altLabel": "Russula camarophylla", 
 "^ot:originalLabel": "Russula camarophylla PAM01081108", 
+"^ot:ottId": 709305, 
+"^ot:ottTaxonName": "Russula camarophylla", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 25866, 
 "@tb:identifier.taxonVariant": 60529, 
@@ -397,8 +517,9 @@
 }
 }, 
 "Tl3543152": {
-"^ot:altLabel": "Russula gossypina", 
 "^ot:originalLabel": "Russula gossypina BB_06.002 ", 
+"^ot:ottId": 3805816, 
+"^ot:ottTaxonName": "Russula gossypina", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 633389, 
 "@tb:identifier.taxonVariant": 848401, 
@@ -426,8 +547,9 @@
 }
 }, 
 "Tl3543155": {
-"^ot:altLabel": "Russula chloroides", 
 "^ot:originalLabel": "Russula chloroides UBCF20353", 
+"^ot:ottId": 760936, 
+"^ot:ottTaxonName": "Russula chloroides", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 25870, 
 "@tb:identifier.taxonVariant": 60538, 
@@ -436,8 +558,9 @@
 }
 }, 
 "Tl3543156": {
-"^ot:altLabel": "Russula cuprea", 
 "^ot:originalLabel": "Russula cuprea FH12250", 
+"^ot:ottId": 185633, 
+"^ot:ottTaxonName": "Russula cuprea", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 25875, 
 "@tb:identifier.taxonVariant": 60552, 
@@ -446,7 +569,9 @@
 }
 }, 
 "Tl3543157": {
-"^ot:originalLabel": "Russula luteotacta FH12187"
+"^ot:originalLabel": "Russula luteotacta FH12187", 
+"^ot:ottId": 356057, 
+"^ot:ottTaxonName": "Russula luteotacta"
 }, 
 "Tl3543158": {
 "^ot:altLabel": "Russula laricina", 
@@ -472,8 +597,9 @@
 }
 }, 
 "Tl3543161": {
-"^ot:altLabel": "Russula compacta", 
 "^ot:originalLabel": "Russula compacta BPL227", 
+"^ot:ottId": 943203, 
+"^ot:ottTaxonName": "Russula compacta", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 25873, 
 "@tb:identifier.taxonVariant": 60547, 
@@ -485,11 +611,14 @@
 "^ot:originalLabel": "Russula pseudoaurantiophylla BB_09.219"
 }, 
 "Tl3543163": {
-"^ot:originalLabel": "Russula herrerae BB_06.532"
+"^ot:originalLabel": "Russula herrerae BB_06.532", 
+"^ot:ottId": 3806289, 
+"^ot:ottTaxonName": "Russula herrerae"
 }, 
 "Tl3543164": {
-"^ot:altLabel": "Russula subnigricans", 
 "^ot:originalLabel": "Russula subnigricans Li160821.05", 
+"^ot:ottId": 789805, 
+"^ot:ottTaxonName": "Russula subnigricans", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 233050, 
 "@tb:identifier.taxonVariant": 295574, 
@@ -498,8 +627,9 @@
 }
 }, 
 "Tl3543165": {
-"^ot:altLabel": "Russula ochroleuca", 
 "^ot:originalLabel": "Russula ochroleuca FH12211", 
+"^ot:ottId": 237549, 
+"^ot:ottTaxonName": "Russula ochroleuca", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 25917, 
 "@tb:identifier.taxonVariant": 60638, 
@@ -537,7 +667,9 @@
 "^ot:originalLabel": "Russula delicinae BB_06.476"
 }, 
 "Tl3543171": {
-"^ot:originalLabel": "Russula decipiens SAV_F.1022"
+"^ot:originalLabel": "Russula decipiens SAV_F.1022", 
+"^ot:ottId": 3806386, 
+"^ot:ottTaxonName": "Russula decipiens"
 }, 
 "Tl3543172": {
 "^ot:altLabel": "Russula persicina", 
@@ -550,8 +682,9 @@
 }
 }, 
 "Tl3543173": {
-"^ot:altLabel": "Russula pallidospora", 
 "^ot:originalLabel": "Russula pallidospora JV02.218", 
+"^ot:ottId": 965280, 
+"^ot:ottTaxonName": "Russula pallidospora", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 25920, 
 "@tb:identifier.taxonVariant": 60644, 
@@ -560,7 +693,9 @@
 }
 }, 
 "Tl3543174": {
-"^ot:originalLabel": "Russula archaeosuberis BB_12.085"
+"^ot:originalLabel": "Russula archaeosuberis BB_12.085", 
+"^ot:ottId": 3806066, 
+"^ot:ottTaxonName": "Russula archaeosuberis"
 }, 
 "Tl3543175": {
 "^ot:originalLabel": "Russula fistulosinae sp._ined._BB_08.105"
@@ -579,8 +714,9 @@
 }
 }, 
 "Tl3543178": {
-"^ot:altLabel": "Russula polyphylla", 
 "^ot:originalLabel": "Russula polyphylla BB_07.134", 
+"^ot:ottId": 705441, 
+"^ot:ottTaxonName": "Russula polyphylla", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 329008, 
 "@tb:identifier.taxonVariant": 369936, 
@@ -602,8 +738,9 @@
 }
 }, 
 "Tl3543181": {
-"^ot:altLabel": "Russula polyphylla", 
 "^ot:originalLabel": "Russula polyphylla BB_07.023", 
+"^ot:ottId": 705441, 
+"^ot:ottTaxonName": "Russula polyphylla", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 329008, 
 "@tb:identifier.taxonVariant": 369936, 
@@ -612,11 +749,14 @@
 }
 }, 
 "Tl3543182": {
-"^ot:originalLabel": "Russula Raoultii FH12222"
+"^ot:originalLabel": "Russula Raoultii FH12222", 
+"^ot:ottId": 237553, 
+"^ot:ottTaxonName": "Russula raoultii"
 }, 
 "Tl3543183": {
-"^ot:altLabel": "Russula acrifolia", 
 "^ot:originalLabel": "Russula acrifolia BB_08.662", 
+"^ot:ottId": 783966, 
+"^ot:ottTaxonName": "Russula acrifolia", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 328995, 
 "@tb:identifier.taxonVariant": 369929, 
@@ -625,8 +765,9 @@
 }
 }, 
 "Tl3543184": {
-"^ot:altLabel": "Russula amoenolens", 
 "^ot:originalLabel": "Russula amoenolens BPL232", 
+"^ot:ottId": 760940, 
+"^ot:ottTaxonName": "Russula amoenolens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 25854, 
 "@tb:identifier.taxonVariant": 60496, 
@@ -635,8 +776,9 @@
 }
 }, 
 "Tl3543185": {
-"^ot:altLabel": "Russula acrifolia", 
 "^ot:originalLabel": "Russula acrifolia RITF3122", 
+"^ot:ottId": 783966, 
+"^ot:ottTaxonName": "Russula acrifolia", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 328995, 
 "@tb:identifier.taxonVariant": 369929, 
@@ -665,17 +807,24 @@
 }
 }, 
 "Tl3543188": {
-"^ot:originalLabel": "Russula pelargonia R.04023"
+"^ot:originalLabel": "Russula pelargonia R.04023", 
+"^ot:ottId": 793298, 
+"^ot:ottTaxonName": "Russula pelargonia"
 }, 
 "Tl3543189": {
-"^ot:originalLabel": "Russula minutula BB_08.636"
+"^ot:originalLabel": "Russula minutula BB_08.636", 
+"^ot:ottId": 3805761, 
+"^ot:ottTaxonName": "Russula minutula"
 }, 
 "Tl3543190": {
-"^ot:originalLabel": "Russula griseobrunnea PDD.81525"
+"^ot:originalLabel": "Russula griseobrunnea PDD.81525", 
+"^ot:ottId": 139043, 
+"^ot:ottTaxonName": "Russula griseobrunnea"
 }, 
 "Tl3543191": {
-"^ot:altLabel": "Russula solaris", 
 "^ot:originalLabel": "Russula solaris BB_07.282", 
+"^ot:ottId": 812091, 
+"^ot:ottTaxonName": "Russula solaris", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 25944, 
 "@tb:identifier.taxonVariant": 60688, 
@@ -687,7 +836,9 @@
 "^ot:originalLabel": "Russula cf. liberiensis BB 06.184"
 }, 
 "Tl3543193": {
-"^ot:originalLabel": "Russula griseobrunnea BB_09.344"
+"^ot:originalLabel": "Russula griseobrunnea BB_09.344", 
+"^ot:ottId": 139043, 
+"^ot:ottTaxonName": "Russula griseobrunnea"
 }, 
 "Tl3543194": {
 "^ot:originalLabel": "Russula subbrevipes RITF2946"
@@ -696,14 +847,17 @@
 "^ot:originalLabel": "Russula callainovittata Li160910.20"
 }, 
 "Tl3543196": {
-"^ot:originalLabel": "Russula vesicatoria BB_07.034"
+"^ot:originalLabel": "Russula vesicatoria BB_07.034", 
+"^ot:ottId": 3805678, 
+"^ot:ottTaxonName": "Russula vesicatoria"
 }, 
 "Tl3543197": {
 "^ot:originalLabel": "Russula Romellii FH12177"
 }, 
 "Tl3543198": {
-"^ot:altLabel": "Russula fellea", 
 "^ot:originalLabel": "Russula fellea FH12185", 
+"^ot:ottId": 237546, 
+"^ot:ottTaxonName": "Russula fellea", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 25887, 
 "@tb:identifier.taxonVariant": 60582, 
@@ -726,7 +880,19 @@
 "Tr116413": {
 "@label": "Imported tree 1", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn18223328", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 94, 
 "^tb:quality.tree": "Unrated", 
