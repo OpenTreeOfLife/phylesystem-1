@@ -59,22 +59,115 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2019-03-14T17:48:53.941Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:curatorName": "susan-holder", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}, 
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": "$1"
+}, 
+"old": {
+"$": "^(\\S*\\s+\\S*).*"
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2019-03-14T17:48:53.941Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"susan-holder"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S23719"
 }, 
+"^ot:focalCladeOTTTaxonName": "", 
 "^ot:otusElementOrder": [
 "Tls66701"
 ], 
 "^ot:studyId": "ot_1915", 
+"^ot:studyPublication": {
+"@href": ""
+}, 
 "^ot:studyPublicationReference": "F\u00e9lix-gast\u00e9lum R., Olivas-peraza D., Quiroz-figueroa F.R., Leyva-madrigal K.Y., Pe\u00f1uelas-rubio O., Espinosa-mat\u00edas S., & Maldonado-mendoza I.E. 2018. Powdery mildew caused by Golovinomyces spadiceus on wild sunflower. Canadian Journal of Plant Pathology, .", 
 "^ot:studyYear": 2018, 
+"^ot:tag": [], 
 "^ot:taxonLinkPrefixes": {
 "@ubio": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:", 
 "@uniprot": "http://purl.uniprot.org/taxonomy/"
@@ -97,8 +190,9 @@
 "^skos:historyNote": "Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlOTUWriter@256073c2 $Rev$", 
 "otuById": {
 "Tl3429428": {
-"^ot:altLabel": "Golovinomyces depressus", 
 "^ot:originalLabel": "Golovinomyces depressus AB769411", 
+"^ot:ottId": 213224, 
+"^ot:ottTaxonName": "Golovinomyces depressus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 171440, 
 "@tb:identifier.taxonVariant": 245546, 
@@ -117,8 +211,9 @@
 }
 }, 
 "Tl3429430": {
-"^ot:altLabel": "Golovinomyces artemisiae", 
 "^ot:originalLabel": "Golovinomyces artemisiae AB769432", 
+"^ot:ottId": 926670, 
+"^ot:ottTaxonName": "Golovinomyces artemisiae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 36711, 
 "@tb:identifier.taxonVariant": 84966, 
@@ -127,16 +222,22 @@
 }
 }, 
 "Tl3429431": {
-"^ot:originalLabel": "Golovinomyces spadiceus AB077640"
+"^ot:originalLabel": "Golovinomyces spadiceus AB077640", 
+"^ot:ottId": 3715272, 
+"^ot:ottTaxonName": "Golovinomyces spadiceus"
 }, 
 "Tl3429432": {
-"^ot:originalLabel": "Euoidium longipes AB769440"
+"^ot:originalLabel": "Euoidium longipes AB769440", 
+"^ot:ottId": 276733, 
+"^ot:ottTaxonName": "Euoidium longipes"
 }, 
 "Tl3429433": {
 "^ot:originalLabel": "Golovinomyces sp. AB077662"
 }, 
 "Tl3429434": {
-"^ot:originalLabel": "Golovinomyces spadiceus MF784588-MF784596 2017"
+"^ot:originalLabel": "Golovinomyces spadiceus MF784588-MF784596 2017", 
+"^ot:ottId": 3715272, 
+"^ot:ottTaxonName": "Golovinomyces spadiceus"
 }, 
 "Tl3429435": {
 "^ot:altLabel": "Oidium longipes", 
@@ -149,11 +250,14 @@
 }
 }, 
 "Tl3429436": {
-"^ot:originalLabel": "Golovinomyces macrocarpus AB077685"
+"^ot:originalLabel": "Golovinomyces macrocarpus AB077685", 
+"^ot:ottId": 3715322, 
+"^ot:ottTaxonName": "Golovinomyces macrocarpus"
 }, 
 "Tl3429437": {
-"^ot:altLabel": "Golovinomyces orontii", 
 "^ot:originalLabel": "Golovinomyces orontii AB769453", 
+"^ot:ottId": 712257, 
+"^ot:ottTaxonName": "Golovinomyces orontii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 10492, 
 "@tb:identifier.taxonVariant": 29417, 
@@ -162,18 +266,23 @@
 }
 }, 
 "Tl3429438": {
-"^ot:originalLabel": "Golovinomyces inulae AB769428"
+"^ot:originalLabel": "Golovinomyces inulae AB769428", 
+"^ot:ottId": 5309796, 
+"^ot:ottTaxonName": "Golovinomyces inulae"
 }, 
 "Tl3429439": {
 "^ot:originalLabel": "Golovinomyces calceolariae AB430812", 
+"^ot:ottId": 632026, 
+"^ot:ottTaxonName": "Golovinomyces calceolariae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 459769, 
 "@tb:identifier.taxonVariant": 610111
 }
 }, 
 "Tl3429440": {
-"^ot:altLabel": "Golovinomyces orontii", 
 "^ot:originalLabel": "Golovinomyces orontii AB769465", 
+"^ot:ottId": 712257, 
+"^ot:ottTaxonName": "Golovinomyces orontii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 10492, 
 "@tb:identifier.taxonVariant": 29417, 
@@ -182,26 +291,37 @@
 }
 }, 
 "Tl3429441": {
-"^ot:originalLabel": "Golovinomyces asterum Var. solidaginis AB077625"
+"^ot:originalLabel": "Golovinomyces asterum Var. solidaginis AB077625", 
+"^ot:ottId": 3714956, 
+"^ot:ottTaxonName": "Golovinomyces asterum"
 }, 
 "Tl3429442": {
-"^ot:originalLabel": "Golovinomyces spadiceus KX686129-KX686138 2016"
+"^ot:originalLabel": "Golovinomyces spadiceus KX686129-KX686138 2016", 
+"^ot:ottId": 3715272, 
+"^ot:ottTaxonName": "Golovinomyces spadiceus"
 }, 
 "Tl3429443": {
-"^ot:originalLabel": "Golovinomyces spadiceus AB077638"
+"^ot:originalLabel": "Golovinomyces spadiceus AB077638", 
+"^ot:ottId": 3715272, 
+"^ot:ottTaxonName": "Golovinomyces spadiceus"
 }, 
 "Tl3429444": {
 "^ot:originalLabel": "Golovinomyces ambrosiae AB769420"
 }, 
 "Tl3429445": {
-"^ot:originalLabel": "Golovinomyces echinopis AB769414"
+"^ot:originalLabel": "Golovinomyces echinopis AB769414", 
+"^ot:ottId": 3715319, 
+"^ot:ottTaxonName": "Golovinomyces echinopis"
 }, 
 "Tl3429446": {
-"^ot:originalLabel": "Golovinomyces verbenae AB769438"
+"^ot:originalLabel": "Golovinomyces verbenae AB769438", 
+"^ot:ottId": 3714971, 
+"^ot:ottTaxonName": "Golovinomyces verbenae"
 }, 
 "Tl3429447": {
-"^ot:altLabel": "Golovinomyces biocellatus", 
 "^ot:originalLabel": "Golovinomyces biocellatus AB307667", 
+"^ot:ottId": 138048, 
+"^ot:ottTaxonName": "Golovinomyces biocellatus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 10469, 
 "@tb:identifier.taxonVariant": 113234, 
@@ -210,8 +330,9 @@
 }
 }, 
 "Tl3429448": {
-"^ot:altLabel": "Golovinomyces valerianae", 
 "^ot:originalLabel": "Golovinomyces valerianae AB769471", 
+"^ot:ottId": 3715208, 
+"^ot:ottTaxonName": "Golovinomyces valerianae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 633432, 
 "@tb:identifier.taxonVariant": 848444, 
@@ -222,8 +343,9 @@
 "^ot:originalLabel": "Golovinomyces ambrosiae AB077679"
 }, 
 "Tl3429450": {
-"^ot:altLabel": "Golovinomyces magnicellulatus", 
 "^ot:originalLabel": "Golovinomyces magnicellulatus AB077621", 
+"^ot:ottId": 712259, 
+"^ot:ottTaxonName": "Golovinomyces magnicellulatus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 79687, 
 "@tb:identifier.taxonVariant": 157481, 
@@ -232,8 +354,9 @@
 }
 }, 
 "Tl3429451": {
-"^ot:altLabel": "Golovinomyces biocellatus", 
 "^ot:originalLabel": "Golovinomyces biocellatus AB769437", 
+"^ot:ottId": 138048, 
+"^ot:ottTaxonName": "Golovinomyces biocellatus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 10469, 
 "@tb:identifier.taxonVariant": 113234, 
@@ -242,14 +365,19 @@
 }
 }, 
 "Tl3429452": {
-"^ot:originalLabel": "Golovinomyces circumfusus AB000934"
+"^ot:originalLabel": "Golovinomyces circumfusus AB000934", 
+"^ot:ottId": 3716135, 
+"^ot:ottTaxonName": "Golovinomyces circumfusus"
 }, 
 "Tl3429453": {
-"^ot:originalLabel": "Golovinomyces asterum Var. asterum AB077674"
+"^ot:originalLabel": "Golovinomyces asterum Var. asterum AB077674", 
+"^ot:ottId": 3714956, 
+"^ot:ottTaxonName": "Golovinomyces asterum"
 }, 
 "Tl3429454": {
-"^ot:altLabel": "Arthrocladiella mougeotii", 
 "^ot:originalLabel": "Arthrocladiella mougeotii AB022380", 
+"^ot:ottId": 829310, 
+"^ot:ottTaxonName": "Arthrocladiella mougeotii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 2400, 
 "@tb:identifier.taxonVariant": 5722, 
@@ -272,7 +400,19 @@
 "Tr115262": {
 "@label": "Imported tree 1", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn18037694", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 27, 
 "^tb:quality.tree": "Unrated", 
@@ -292,36 +432,36 @@
 }, 
 "Tn18037677": {
 "edge201431": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18037677", 
 "@target": "Tn18037682"
 }, 
 "edge201437": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18037677", 
 "@target": "Tn18037720"
 }
 }, 
 "Tn18037680": {
 "edge201425": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18037680", 
 "@target": "Tn18037695"
 }, 
 "edge201443": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18037680", 
 "@target": "Tn18037709"
 }
 }, 
 "Tn18037682": {
 "edge201433": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18037682", 
 "@target": "Tn18037698"
 }, 
 "edge201435": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18037682", 
 "@target": "Tn18037717"
 }
@@ -345,7 +485,7 @@
 "@target": "Tn18037710"
 }, 
 "edge201495": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18037687", 
 "@target": "Tn18037676"
 }
@@ -364,12 +504,12 @@
 }, 
 "Tn18037692": {
 "edge201465": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18037692", 
 "@target": "Tn18037712"
 }, 
 "edge201467": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18037692", 
 "@target": "Tn18037723"
 }
@@ -405,31 +545,31 @@
 }, 
 "Tn18037695": {
 "edge201427": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18037695", 
 "@target": "Tn18037707"
 }, 
 "edge201441": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18037695", 
 "@target": "Tn18037722"
 }
 }, 
 "Tn18037696": {
 "edge201505": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18037696", 
 "@target": "Tn18037708"
 }, 
 "edge201507": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18037696", 
 "@target": "Tn18037705"
 }
 }, 
 "Tn18037697": {
 "edge201501": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18037697", 
 "@target": "Tn18037683"
 }, 
@@ -441,12 +581,12 @@
 }, 
 "Tn18037699": {
 "edge201489": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18037699", 
 "@target": "Tn18037691"
 }, 
 "edge201491": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18037699", 
 "@target": "Tn18037706"
 }
@@ -489,36 +629,36 @@
 }, 
 "Tn18037707": {
 "edge201429": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18037707", 
 "@target": "Tn18037677"
 }, 
 "edge201439": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18037707", 
 "@target": "Tn18037713"
 }
 }, 
 "Tn18037709": {
 "edge201445": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18037709", 
 "@target": "Tn18037715"
 }, 
 "edge201447": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18037709", 
 "@target": "Tn18037701"
 }
 }, 
 "Tn18037710": {
 "edge201487": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18037710", 
 "@target": "Tn18037699"
 }, 
 "edge201493": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18037710", 
 "@target": "Tn18037714"
 }
@@ -537,12 +677,12 @@
 }, 
 "Tn18037716": {
 "edge201451": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18037716", 
 "@target": "Tn18037679"
 }, 
 "edge201453": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18037716", 
 "@target": "Tn18037684"
 }
@@ -566,7 +706,7 @@
 "@target": "Tn18037702"
 }, 
 "edge201471": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18037721", 
 "@target": "Tn18037711"
 }
@@ -578,7 +718,7 @@
 "@target": "Tn18037689"
 }, 
 "edge201463": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18037724", 
 "@target": "Tn18037692"
 }
