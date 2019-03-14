@@ -54,22 +54,115 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2019-03-14T16:53:21.632Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "Rosids"
 }, 
-"^ot:curatorName": "susan-holder", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}, 
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": "$1"
+}, 
+"old": {
+"$": "^(\\S*\\s+\\S*).*"
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2019-03-14T16:53:21.632Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"susan-holder"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S23684"
 }, 
+"^ot:focalCladeOTTTaxonName": "", 
 "^ot:otusElementOrder": [
 "Tls66570"
 ], 
 "^ot:studyId": "ot_1902", 
+"^ot:studyPublication": {
+"@href": ""
+}, 
 "^ot:studyPublicationReference": "Xuan Y., Wu Y., Li P., Liu R., Luo Y., Yuan J., Xiang Z., & He N. 2018. Classification and evolution of Morus based on phylogenetic analyses of ITS and cpDNA sequences. BMC Evolutionary Biology, .", 
 "^ot:studyYear": 2018, 
+"^ot:tag": [], 
 "^ot:taxonLinkPrefixes": {
 "@ubio": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:", 
 "@uniprot": "http://purl.uniprot.org/taxonomy/"
@@ -92,8 +185,9 @@
 "^skos:historyNote": "Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlOTUWriter@4fcdfa06 $Rev$", 
 "otuById": {
 "Tl3422989": {
-"^ot:altLabel": "Morus alba", 
 "^ot:originalLabel": "Morus alba koreandabaizhenzhu2", 
+"^ot:ottId": 658488, 
+"^ot:ottTaxonName": "Morus alba", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 18207, 
 "@tb:identifier.taxonVariant": 42568, 
@@ -102,10 +196,14 @@
 }
 }, 
 "Tl3422990": {
-"^ot:originalLabel": "Morus alba sri lankensis"
+"^ot:originalLabel": "Morus alba sri lankensis", 
+"^ot:ottId": 658488, 
+"^ot:ottTaxonName": "Morus alba"
 }, 
 "Tl3422991": {
 "^ot:originalLabel": "Morus wittiorum", 
+"^ot:ottId": 217731, 
+"^ot:ottTaxonName": "Morus wittiorum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 208435, 
 "@tb:identifier.taxonVariant": 277446, 
@@ -115,6 +213,8 @@
 }, 
 "Tl3422992": {
 "^ot:originalLabel": "Morus mesozygia", 
+"^ot:ottId": 868048, 
+"^ot:ottTaxonName": "Morus mesozygia", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 604232, 
 "@tb:identifier.taxonVariant": 806296, 
@@ -122,11 +222,14 @@
 }
 }, 
 "Tl3422993": {
-"^ot:originalLabel": "Morus alba xinyizhilai"
+"^ot:originalLabel": "Morus alba xinyizhilai", 
+"^ot:ottId": 658488, 
+"^ot:ottTaxonName": "Morus alba"
 }, 
 "Tl3422994": {
-"^ot:altLabel": "Morus wittiorum", 
 "^ot:originalLabel": "Morus wittiorum yun6muben2", 
+"^ot:ottId": 217731, 
+"^ot:ottTaxonName": "Morus wittiorum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 208435, 
 "@tb:identifier.taxonVariant": 277446, 
@@ -135,8 +238,9 @@
 }
 }, 
 "Tl3422995": {
-"^ot:altLabel": "Morus cathayana", 
 "^ot:originalLabel": "Morus cathayana baojing72", 
+"^ot:ottId": 227175, 
+"^ot:ottTaxonName": "Morus cathayana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 206575, 
 "@tb:identifier.taxonVariant": 275869, 
@@ -145,8 +249,9 @@
 }
 }, 
 "Tl3422996": {
-"^ot:altLabel": "Morus alba", 
 "^ot:originalLabel": "Morus alba gailiang10zi", 
+"^ot:ottId": 658488, 
+"^ot:ottTaxonName": "Morus alba", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 18207, 
 "@tb:identifier.taxonVariant": 42568, 
@@ -155,11 +260,14 @@
 }
 }, 
 "Tl3422997": {
-"^ot:originalLabel": "Morus alba argentinensis"
+"^ot:originalLabel": "Morus alba argentinensis", 
+"^ot:ottId": 658488, 
+"^ot:ottTaxonName": "Morus alba"
 }, 
 "Tl3422998": {
-"^ot:altLabel": "Morus wittiorum", 
 "^ot:originalLabel": "Morus wittiorum yun7muben", 
+"^ot:ottId": 217731, 
+"^ot:ottTaxonName": "Morus wittiorum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 208435, 
 "@tb:identifier.taxonVariant": 277446, 
@@ -168,11 +276,14 @@
 }
 }, 
 "Tl3422999": {
-"^ot:originalLabel": "Morus alba shuisang"
+"^ot:originalLabel": "Morus alba shuisang", 
+"^ot:ottId": 658488, 
+"^ot:ottTaxonName": "Morus alba"
 }, 
 "Tl3423000": {
-"^ot:altLabel": "Morus wittiorum", 
 "^ot:originalLabel": "Morus wittiorum yun62", 
+"^ot:ottId": 217731, 
+"^ot:ottTaxonName": "Morus wittiorum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 208435, 
 "@tb:identifier.taxonVariant": 277446, 
@@ -181,8 +292,9 @@
 }
 }, 
 "Tl3423001": {
-"^ot:altLabel": "Morus alba", 
 "^ot:originalLabel": "Morus alba shuisang2", 
+"^ot:ottId": 658488, 
+"^ot:ottTaxonName": "Morus alba", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 18207, 
 "@tb:identifier.taxonVariant": 42568, 
@@ -191,8 +303,9 @@
 }
 }, 
 "Tl3423002": {
-"^ot:altLabel": "Morus alba", 
 "^ot:originalLabel": "Morus alba huai302", 
+"^ot:ottId": 658488, 
+"^ot:ottTaxonName": "Morus alba", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 18207, 
 "@tb:identifier.taxonVariant": 42568, 
@@ -201,8 +314,9 @@
 }
 }, 
 "Tl3423003": {
-"^ot:altLabel": "Morus wittiorum", 
 "^ot:originalLabel": "Morus wittiorum yun6", 
+"^ot:ottId": 217731, 
+"^ot:ottTaxonName": "Morus wittiorum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 208435, 
 "@tb:identifier.taxonVariant": 277446, 
@@ -212,6 +326,8 @@
 }, 
 "Tl3423004": {
 "^ot:originalLabel": "Morus australis", 
+"^ot:ottId": 210689, 
+"^ot:ottTaxonName": "Morus australis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 604231, 
 "@tb:identifier.taxonVariant": 806295, 
@@ -220,19 +336,27 @@
 }
 }, 
 "Tl3423005": {
-"^ot:originalLabel": "Morus alba yidachimu"
+"^ot:originalLabel": "Morus alba yidachimu", 
+"^ot:ottId": 658488, 
+"^ot:ottTaxonName": "Morus alba"
 }, 
 "Tl3423006": {
-"^ot:originalLabel": "Morus alba singaporesijiguosang"
+"^ot:originalLabel": "Morus alba singaporesijiguosang", 
+"^ot:ottId": 658488, 
+"^ot:ottTaxonName": "Morus alba"
 }, 
 "Tl3423007": {
-"^ot:originalLabel": "Morus mongolica mengsang"
+"^ot:originalLabel": "Morus mongolica mengsang", 
+"^ot:ottId": 199487, 
+"^ot:ottTaxonName": "Morus mongolica"
 }, 
 "Tl3423008": {
 "^ot:originalLabel": "Morus serrate"
 }, 
 "Tl3423009": {
 "^ot:originalLabel": "Broussonetia papyrifera", 
+"^ot:ottId": 311274, 
+"^ot:ottTaxonName": "Broussonetia papyrifera", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 162321, 
 "@tb:identifier.taxonVariant": 438745, 
@@ -241,8 +365,9 @@
 }
 }, 
 "Tl3423010": {
-"^ot:altLabel": "Morus alba", 
 "^ot:originalLabel": "Morus alba xinyizhilai2", 
+"^ot:ottId": 658488, 
+"^ot:ottTaxonName": "Morus alba", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 18207, 
 "@tb:identifier.taxonVariant": 42568, 
@@ -252,6 +377,8 @@
 }, 
 "Tl3423011": {
 "^ot:originalLabel": "Morus macroura", 
+"^ot:ottId": 380857, 
+"^ot:ottTaxonName": "Morus macroura", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 177223, 
 "@tb:identifier.taxonVariant": 250828, 
@@ -261,6 +388,8 @@
 }, 
 "Tl3423012": {
 "^ot:originalLabel": "Morus mongolica", 
+"^ot:ottId": 199487, 
+"^ot:ottTaxonName": "Morus mongolica", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 208436, 
 "@tb:identifier.taxonVariant": 277449, 
@@ -269,8 +398,9 @@
 }
 }, 
 "Tl3423013": {
-"^ot:altLabel": "Morus alba", 
 "^ot:originalLabel": "Morus alba shanxitiansang2", 
+"^ot:ottId": 658488, 
+"^ot:ottTaxonName": "Morus alba", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 18207, 
 "@tb:identifier.taxonVariant": 42568, 
@@ -279,16 +409,24 @@
 }
 }, 
 "Tl3423014": {
-"^ot:originalLabel": "Morus alba taiwaniachaochangguo"
+"^ot:originalLabel": "Morus alba taiwaniachaochangguo", 
+"^ot:ottId": 658488, 
+"^ot:ottTaxonName": "Morus alba"
 }, 
 "Tl3423015": {
-"^ot:originalLabel": "Morus mongolica jimengsang"
+"^ot:originalLabel": "Morus mongolica jimengsang", 
+"^ot:ottId": 199487, 
+"^ot:ottTaxonName": "Morus mongolica"
 }, 
 "Tl3423016": {
-"^ot:originalLabel": "Morus yunnanensis"
+"^ot:originalLabel": "Morus yunnanensis", 
+"^ot:ottId": 5515437, 
+"^ot:ottTaxonName": "Morus yunnanensis"
 }, 
 "Tl3423017": {
 "^ot:originalLabel": "Morus nigra", 
+"^ot:ottId": 299656, 
+"^ot:ottTaxonName": "Morus nigra", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 95926, 
 "@tb:identifier.taxonVariant": 175170, 
@@ -297,11 +435,14 @@
 }
 }, 
 "Tl3423018": {
-"^ot:originalLabel": "Morus alba huosang"
+"^ot:originalLabel": "Morus alba huosang", 
+"^ot:ottId": 658488, 
+"^ot:ottTaxonName": "Morus alba"
 }, 
 "Tl3423019": {
-"^ot:altLabel": "Morus alba", 
 "^ot:originalLabel": "Morus alba cambodiensis2", 
+"^ot:ottId": 658488, 
+"^ot:ottTaxonName": "Morus alba", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 18207, 
 "@tb:identifier.taxonVariant": 42568, 
@@ -311,6 +452,8 @@
 }, 
 "Tl3423020": {
 "^ot:originalLabel": "Morus celtidifolia", 
+"^ot:ottId": 498286, 
+"^ot:ottTaxonName": "Morus celtidifolia", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 604233, 
 "@tb:identifier.taxonVariant": 806297, 
@@ -318,11 +461,14 @@
 }
 }, 
 "Tl3423021": {
-"^ot:originalLabel": "Morus alba barcelonensis"
+"^ot:originalLabel": "Morus alba barcelonensis", 
+"^ot:ottId": 658488, 
+"^ot:ottTaxonName": "Morus alba"
 }, 
 "Tl3423022": {
-"^ot:altLabel": "Morus cathayana", 
 "^ot:originalLabel": "Morus cathayana pisang22", 
+"^ot:ottId": 227175, 
+"^ot:ottTaxonName": "Morus cathayana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 206575, 
 "@tb:identifier.taxonVariant": 275869, 
@@ -331,8 +477,9 @@
 }
 }, 
 "Tl3423023": {
-"^ot:altLabel": "Morus alba", 
 "^ot:originalLabel": "Morus alba gui23", 
+"^ot:ottId": 658488, 
+"^ot:ottTaxonName": "Morus alba", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 18207, 
 "@tb:identifier.taxonVariant": 42568, 
@@ -342,6 +489,8 @@
 }, 
 "Tl3423024": {
 "^ot:originalLabel": "Morus cathayana", 
+"^ot:ottId": 227175, 
+"^ot:ottTaxonName": "Morus cathayana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 206575, 
 "@tb:identifier.taxonVariant": 275869, 
@@ -351,6 +500,8 @@
 }, 
 "Tl3423025": {
 "^ot:originalLabel": "Morus insignis", 
+"^ot:ottId": 868040, 
+"^ot:ottTaxonName": "Morus insignis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 604237, 
 "@tb:identifier.taxonVariant": 806301, 
@@ -358,8 +509,9 @@
 }
 }, 
 "Tl3423026": {
-"^ot:altLabel": "Morus alba", 
 "^ot:originalLabel": "Morus alba argentinensis2", 
+"^ot:ottId": 658488, 
+"^ot:ottTaxonName": "Morus alba", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 18207, 
 "@tb:identifier.taxonVariant": 42568, 
@@ -368,11 +520,14 @@
 }
 }, 
 "Tl3423027": {
-"^ot:originalLabel": "Morus alba koreandabaizhenzhu"
+"^ot:originalLabel": "Morus alba koreandabaizhenzhu", 
+"^ot:ottId": 658488, 
+"^ot:ottTaxonName": "Morus alba"
 }, 
 "Tl3423028": {
-"^ot:altLabel": "Morus wittiorum", 
 "^ot:originalLabel": "Morus wittiorum yun7", 
+"^ot:ottId": 217731, 
+"^ot:ottTaxonName": "Morus wittiorum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 208435, 
 "@tb:identifier.taxonVariant": 277446, 
@@ -381,11 +536,14 @@
 }
 }, 
 "Tl3423029": {
-"^ot:originalLabel": "Morus alba shanxitiansang"
+"^ot:originalLabel": "Morus alba shanxitiansang", 
+"^ot:ottId": 658488, 
+"^ot:ottTaxonName": "Morus alba"
 }, 
 "Tl3423030": {
-"^ot:altLabel": "Morus alba", 
 "^ot:originalLabel": "Morus alba banqiao6", 
+"^ot:ottId": 658488, 
+"^ot:ottTaxonName": "Morus alba", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 18207, 
 "@tb:identifier.taxonVariant": 42568, 
@@ -394,8 +552,9 @@
 }
 }, 
 "Tl3423031": {
-"^ot:altLabel": "Morus cathayana", 
 "^ot:originalLabel": "Morus cathayana baojing7", 
+"^ot:ottId": 227175, 
+"^ot:ottTaxonName": "Morus cathayana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 206575, 
 "@tb:identifier.taxonVariant": 275869, 
@@ -404,8 +563,9 @@
 }
 }, 
 "Tl3423032": {
-"^ot:altLabel": "Morus alba", 
 "^ot:originalLabel": "Morus alba huosang2", 
+"^ot:ottId": 658488, 
+"^ot:ottTaxonName": "Morus alba", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 18207, 
 "@tb:identifier.taxonVariant": 42568, 
@@ -414,8 +574,9 @@
 }
 }, 
 "Tl3423033": {
-"^ot:altLabel": "Morus alba", 
 "^ot:originalLabel": "Morus alba shimiansang2", 
+"^ot:ottId": 658488, 
+"^ot:ottTaxonName": "Morus alba", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 18207, 
 "@tb:identifier.taxonVariant": 42568, 
@@ -424,10 +585,14 @@
 }
 }, 
 "Tl3423034": {
-"^ot:originalLabel": "Broussonetia kurzii"
+"^ot:originalLabel": "Broussonetia kurzii", 
+"^ot:ottId": 6107994, 
+"^ot:ottTaxonName": "Broussonetia kurzii"
 }, 
 "Tl3423035": {
 "^ot:originalLabel": "Morus rubra", 
+"^ot:ottId": 259037, 
+"^ot:ottTaxonName": "Morus rubra", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 59404, 
 "@tb:identifier.taxonVariant": 132360, 
@@ -436,11 +601,14 @@
 }
 }, 
 "Tl3423036": {
-"^ot:originalLabel": "Morus alba zhenzhubai"
+"^ot:originalLabel": "Morus alba zhenzhubai", 
+"^ot:ottId": 658488, 
+"^ot:ottTaxonName": "Morus alba"
 }, 
 "Tl3423037": {
-"^ot:altLabel": "Morus alba", 
 "^ot:originalLabel": "Morus alba lunjiao109", 
+"^ot:ottId": 658488, 
+"^ot:ottTaxonName": "Morus alba", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 18207, 
 "@tb:identifier.taxonVariant": 42568, 
@@ -449,11 +617,14 @@
 }
 }, 
 "Tl3423038": {
-"^ot:originalLabel": "Morus alba shimiansang"
+"^ot:originalLabel": "Morus alba shimiansang", 
+"^ot:ottId": 658488, 
+"^ot:ottTaxonName": "Morus alba"
 }, 
 "Tl3423039": {
-"^ot:altLabel": "Morus wittiorum", 
 "^ot:originalLabel": "Morus wittiorum yun72", 
+"^ot:ottId": 217731, 
+"^ot:ottTaxonName": "Morus wittiorum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 208435, 
 "@tb:identifier.taxonVariant": 277446, 
@@ -462,8 +633,9 @@
 }
 }, 
 "Tl3423040": {
-"^ot:altLabel": "Morus wittiorum", 
 "^ot:originalLabel": "Morus wittiorum yun6muben1", 
+"^ot:ottId": 217731, 
+"^ot:ottTaxonName": "Morus wittiorum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 208435, 
 "@tb:identifier.taxonVariant": 277446, 
@@ -472,8 +644,9 @@
 }
 }, 
 "Tl3423041": {
-"^ot:altLabel": "Morus cathayana", 
 "^ot:originalLabel": "Morus cathayana pisang2", 
+"^ot:ottId": 227175, 
+"^ot:ottTaxonName": "Morus cathayana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 206575, 
 "@tb:identifier.taxonVariant": 275869, 
@@ -482,13 +655,19 @@
 }
 }, 
 "Tl3423042": {
-"^ot:originalLabel": "Morus alba leshandahongpi"
+"^ot:originalLabel": "Morus alba leshandahongpi", 
+"^ot:ottId": 658488, 
+"^ot:ottTaxonName": "Morus alba"
 }, 
 "Tl3423043": {
-"^ot:originalLabel": "Morus alba cambodiensis"
+"^ot:originalLabel": "Morus alba cambodiensis", 
+"^ot:ottId": 658488, 
+"^ot:ottTaxonName": "Morus alba"
 }, 
 "Tl3423044": {
 "^ot:originalLabel": "Morus notabilis", 
+"^ot:ottId": 695389, 
+"^ot:ottTaxonName": "Morus notabilis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 604230, 
 "@tb:identifier.taxonVariant": 806294, 
@@ -496,8 +675,9 @@
 }
 }, 
 "Tl3423045": {
-"^ot:altLabel": "Morus alba", 
 "^ot:originalLabel": "Morus alba lunjiao1092", 
+"^ot:ottId": 658488, 
+"^ot:ottTaxonName": "Morus alba", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 18207, 
 "@tb:identifier.taxonVariant": 42568, 
@@ -506,11 +686,14 @@
 }
 }, 
 "Tl3423046": {
-"^ot:originalLabel": "Morus alba wupisang"
+"^ot:originalLabel": "Morus alba wupisang", 
+"^ot:ottId": 658488, 
+"^ot:ottTaxonName": "Morus alba"
 }, 
 "Tl3423047": {
-"^ot:altLabel": "Morus wittiorum", 
 "^ot:originalLabel": "Morus wittiorum yun6muben", 
+"^ot:ottId": 217731, 
+"^ot:ottTaxonName": "Morus wittiorum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 208435, 
 "@tb:identifier.taxonVariant": 277446, 
@@ -534,7 +717,19 @@
 "Tr115181": {
 "@label": "Imported tree 1", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn18026133", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:kind.tree": "Gene Tree", 
 "^tb:ntax.tree": 58, 
 "^tb:quality.tree": "Unrated", 
@@ -547,19 +742,19 @@
 "@target": "Tn18026121"
 }, 
 "edge51617": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18026038", 
 "@target": "Tn18026112"
 }
 }, 
 "Tn18026039": {
 "edge51457": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18026039", 
 "@target": "Tn18026076"
 }, 
 "edge51511": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18026039", 
 "@target": "Tn18026046"
 }
@@ -578,24 +773,24 @@
 }, 
 "Tn18026042": {
 "edge51467": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18026042", 
 "@target": "Tn18026102"
 }, 
 "edge51501": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18026042", 
 "@target": "Tn18026116"
 }
 }, 
 "Tn18026044": {
 "edge51451": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18026044", 
 "@target": "Tn18026057"
 }, 
 "edge51517": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18026044", 
 "@target": "Tn18026092"
 }
@@ -626,12 +821,12 @@
 }, 
 "Tn18026049": {
 "edge51481": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18026049", 
 "@target": "Tn18026095"
 }, 
 "edge51487": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18026049", 
 "@target": "Tn18026079"
 }
@@ -650,12 +845,12 @@
 }, 
 "Tn18026053": {
 "edge51477": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18026053", 
 "@target": "Tn18026135"
 }, 
 "edge51491": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18026053", 
 "@target": "Tn18026067"
 }
@@ -667,50 +862,50 @@
 "@target": "Tn18026110"
 }, 
 "edge51547": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18026054", 
 "@target": "Tn18026141"
 }
 }, 
 "Tn18026055": {
 "edge51557": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18026055", 
 "@target": "Tn18026072"
 }, 
 "edge51559": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18026055", 
 "@target": "Tn18026128"
 }
 }, 
 "Tn18026056": {
 "edge51463": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18026056", 
 "@target": "Tn18026144"
 }, 
 "edge51505": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18026056", 
 "@target": "Tn18026126"
 }
 }, 
 "Tn18026057": {
 "edge51453": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18026057", 
 "@target": "Tn18026075"
 }, 
 "edge51515": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18026057", 
 "@target": "Tn18026094"
 }
 }, 
 "Tn18026060": {
 "edge51437": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18026060", 
 "@target": "Tn18026041"
 }, 
@@ -722,24 +917,24 @@
 }, 
 "Tn18026061": {
 "edge51435": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18026061", 
 "@target": "Tn18026060"
 }, 
 "edge51581": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18026061", 
 "@target": "Tn18026047"
 }
 }, 
 "Tn18026062": {
 "edge51565": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18026062", 
 "@target": "Tn18026151"
 }, 
 "edge51567": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18026062", 
 "@target": "Tn18026134"
 }
@@ -751,7 +946,7 @@
 "@target": "Tn18026064"
 }, 
 "edge51543": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18026065", 
 "@target": "Tn18026054"
 }
@@ -782,55 +977,55 @@
 }, 
 "Tn18026071": {
 "edge51443": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18026071", 
 "@target": "Tn18026114"
 }, 
 "edge51525": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18026071", 
 "@target": "Tn18026109"
 }
 }, 
 "Tn18026075": {
 "edge51455": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18026075", 
 "@target": "Tn18026039"
 }, 
 "edge51513": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18026075", 
 "@target": "Tn18026086"
 }
 }, 
 "Tn18026076": {
 "edge51459": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18026076", 
 "@target": "Tn18026129"
 }, 
 "edge51509": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18026076", 
 "@target": "Tn18026115"
 }
 }, 
 "Tn18026078": {
 "edge51449": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18026078", 
 "@target": "Tn18026044"
 }, 
 "edge51519": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18026078", 
 "@target": "Tn18026108"
 }
 }, 
 "Tn18026081": {
 "edge51633": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18026081", 
 "@target": "Tn18026150"
 }, 
@@ -842,7 +1037,7 @@
 }, 
 "Tn18026083": {
 "edge51441": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18026083", 
 "@target": "Tn18026071"
 }, 
@@ -854,7 +1049,7 @@
 }, 
 "Tn18026084": {
 "edge51603": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18026084", 
 "@target": "Tn18026040"
 }, 
@@ -878,12 +1073,12 @@
 }, 
 "Tn18026090": {
 "edge51473": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18026090", 
 "@target": "Tn18026131"
 }, 
 "edge51495": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18026090", 
 "@target": "Tn18026043"
 }
@@ -902,48 +1097,48 @@
 }, 
 "Tn18026095": {
 "edge51483": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18026095", 
 "@target": "Tn18026063"
 }, 
 "edge51485": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18026095", 
 "@target": "Tn18026080"
 }
 }, 
 "Tn18026100": {
 "edge51531": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18026100", 
 "@target": "Tn18026087"
 }, 
 "edge51533": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18026100", 
 "@target": "Tn18026137"
 }
 }, 
 "Tn18026101": {
 "edge51447": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18026101", 
 "@target": "Tn18026078"
 }, 
 "edge51521": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18026101", 
 "@target": "Tn18026099"
 }
 }, 
 "Tn18026102": {
 "edge51469": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18026102", 
 "@target": "Tn18026106"
 }, 
 "edge51499": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18026102", 
 "@target": "Tn18026119"
 }
@@ -974,12 +1169,12 @@
 }, 
 "Tn18026106": {
 "edge51471": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18026106", 
 "@target": "Tn18026090"
 }, 
 "edge51497": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18026106", 
 "@target": "Tn18026105"
 }
@@ -998,36 +1193,36 @@
 }, 
 "Tn18026112": {
 "edge51619": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18026112", 
 "@target": "Tn18026124"
 }, 
 "edge51621": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18026112", 
 "@target": "Tn18026093"
 }
 }, 
 "Tn18026113": {
 "edge51553": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18026113", 
 "@target": "Tn18026130"
 }, 
 "edge51555": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18026113", 
 "@target": "Tn18026055"
 }
 }, 
 "Tn18026114": {
 "edge51445": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18026114", 
 "@target": "Tn18026101"
 }, 
 "edge51523": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18026114", 
 "@target": "Tn18026068"
 }
@@ -1039,7 +1234,7 @@
 "@target": "Tn18026107"
 }, 
 "edge51641": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18026122", 
 "@target": "Tn18026136"
 }
@@ -1058,36 +1253,36 @@
 }, 
 "Tn18026128": {
 "edge51561": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18026128", 
 "@target": "Tn18026085"
 }, 
 "edge51563": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18026128", 
 "@target": "Tn18026062"
 }
 }, 
 "Tn18026129": {
 "edge51461": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18026129", 
 "@target": "Tn18026056"
 }, 
 "edge51507": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18026129", 
 "@target": "Tn18026143"
 }
 }, 
 "Tn18026131": {
 "edge51475": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18026131", 
 "@target": "Tn18026053"
 }, 
 "edge51493": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18026131", 
 "@target": "Tn18026138"
 }
@@ -1111,24 +1306,24 @@
 }, 
 "Tn18026134": {
 "edge51569": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18026134", 
 "@target": "Tn18026098"
 }, 
 "edge51571": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18026134", 
 "@target": "Tn18026146"
 }
 }, 
 "Tn18026135": {
 "edge51479": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18026135", 
 "@target": "Tn18026049"
 }, 
 "edge51489": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18026135", 
 "@target": "Tn18026127"
 }
@@ -1147,36 +1342,36 @@
 }, 
 "Tn18026141": {
 "edge51549": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18026141", 
 "@target": "Tn18026148"
 }, 
 "edge51551": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18026141", 
 "@target": "Tn18026113"
 }
 }, 
 "Tn18026142": {
 "edge51577": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18026142", 
 "@target": "Tn18026139"
 }, 
 "edge51579": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18026142", 
 "@target": "Tn18026088"
 }
 }, 
 "Tn18026144": {
 "edge51465": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18026144", 
 "@target": "Tn18026042"
 }, 
 "edge51503": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18026144", 
 "@target": "Tn18026118"
 }
@@ -1195,19 +1390,19 @@
 }, 
 "Tn18026146": {
 "edge51573": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18026146", 
 "@target": "Tn18026097"
 }, 
 "edge51575": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18026146", 
 "@target": "Tn18026142"
 }
 }, 
 "Tn18026147": {
 "edge51599": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18026147", 
 "@target": "Tn18026082"
 }, 
@@ -1456,7 +1651,19 @@
 "Tr115182": {
 "@label": "Imported tree 1", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn18026170", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 33, 
 "^tb:quality.tree": "Unrated", 
@@ -1464,72 +1671,72 @@
 "edgeBySourceId": {
 "Tn18026152": {
 "edge51693": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18026152", 
 "@target": "Tn18026182"
 }, 
 "edge51707": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18026152", 
 "@target": "Tn18026201"
 }
 }, 
 "Tn18026153": {
 "edge51749": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18026153", 
 "@target": "Tn18026174"
 }, 
 "edge51751": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18026153", 
 "@target": "Tn18026203"
 }
 }, 
 "Tn18026155": {
 "edge51687": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18026155", 
 "@target": "Tn18026191"
 }, 
 "edge51713": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18026155", 
 "@target": "Tn18026156"
 }
 }, 
 "Tn18026157": {
 "edge51685": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18026157", 
 "@target": "Tn18026155"
 }, 
 "edge51715": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18026157", 
 "@target": "Tn18026214"
 }
 }, 
 "Tn18026159": {
 "edge51745": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18026159", 
 "@target": "Tn18026198"
 }, 
 "edge51747": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18026159", 
 "@target": "Tn18026153"
 }
 }, 
 "Tn18026160": {
 "edge51737": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18026160", 
 "@target": "Tn18026187"
 }, 
 "edge51739": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18026160", 
 "@target": "Tn18026186"
 }
@@ -1541,7 +1748,7 @@
 "@target": "Tn18026213"
 }, 
 "edge51733": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18026161", 
 "@target": "Tn18026192"
 }
@@ -1553,7 +1760,7 @@
 "@target": "Tn18026165"
 }, 
 "edge51725": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18026162", 
 "@target": "Tn18026180"
 }
@@ -1572,48 +1779,48 @@
 }, 
 "Tn18026165": {
 "edge51677": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18026165", 
 "@target": "Tn18026200"
 }, 
 "edge51723": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18026165", 
 "@target": "Tn18026171"
 }
 }, 
 "Tn18026167": {
 "edge51697": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18026167", 
 "@target": "Tn18026168"
 }, 
 "edge51703": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18026167", 
 "@target": "Tn18026188"
 }
 }, 
 "Tn18026168": {
 "edge51699": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18026168", 
 "@target": "Tn18026158"
 }, 
 "edge51701": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18026168", 
 "@target": "Tn18026166"
 }
 }, 
 "Tn18026170": {
 "edge51663": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18026170", 
 "@target": "Tn18026205"
 }, 
 "edge51781": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18026170", 
 "@target": "Tn18026177"
 }, 
@@ -1625,67 +1832,67 @@
 }, 
 "Tn18026179": {
 "edge51763": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18026179", 
 "@target": "Tn18026196"
 }, 
 "edge51765": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18026179", 
 "@target": "Tn18026202"
 }
 }, 
 "Tn18026181": {
 "edge51683": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18026181", 
 "@target": "Tn18026157"
 }, 
 "edge51717": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18026181", 
 "@target": "Tn18026197"
 }
 }, 
 "Tn18026182": {
 "edge51695": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18026182", 
 "@target": "Tn18026167"
 }, 
 "edge51705": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18026182", 
 "@target": "Tn18026175"
 }
 }, 
 "Tn18026184": {
 "edge51669": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18026184", 
 "@target": "Tn18026185"
 }, 
 "edge51775": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18026184", 
 "@target": "Tn18026190"
 }
 }, 
 "Tn18026185": {
 "edge51671": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18026185", 
 "@target": "Tn18026189"
 }, 
 "edge51761": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18026185", 
 "@target": "Tn18026179"
 }
 }, 
 "Tn18026186": {
 "edge51741": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18026186", 
 "@target": "Tn18026211"
 }, 
@@ -1697,115 +1904,115 @@
 }, 
 "Tn18026189": {
 "edge51673": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18026189", 
 "@target": "Tn18026162"
 }, 
 "edge51727": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18026189", 
 "@target": "Tn18026206"
 }
 }, 
 "Tn18026191": {
 "edge51689": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18026191", 
 "@target": "Tn18026194"
 }, 
 "edge51711": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18026191", 
 "@target": "Tn18026154"
 }
 }, 
 "Tn18026194": {
 "edge51691": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18026194", 
 "@target": "Tn18026152"
 }, 
 "edge51709": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18026194", 
 "@target": "Tn18026173"
 }
 }, 
 "Tn18026195": {
 "edge51681": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18026195", 
 "@target": "Tn18026181"
 }, 
 "edge51719": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18026195", 
 "@target": "Tn18026208"
 }
 }, 
 "Tn18026200": {
 "edge51679": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18026200", 
 "@target": "Tn18026195"
 }, 
 "edge51721": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18026200", 
 "@target": "Tn18026204"
 }
 }, 
 "Tn18026202": {
 "edge51767": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18026202", 
 "@target": "Tn18026183"
 }, 
 "edge51769": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18026202", 
 "@target": "Tn18026209"
 }
 }, 
 "Tn18026203": {
 "edge51753": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18026203", 
 "@target": "Tn18026215"
 }, 
 "edge51755": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18026203", 
 "@target": "Tn18026212"
 }
 }, 
 "Tn18026205": {
 "edge51665": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18026205", 
 "@target": "Tn18026210"
 }, 
 "edge51779": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18026205", 
 "@target": "Tn18026193"
 }
 }, 
 "Tn18026206": {
 "edge51729": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18026206", 
 "@target": "Tn18026161"
 }, 
 "edge51735": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18026206", 
 "@target": "Tn18026160"
 }
 }, 
 "Tn18026209": {
 "edge51771": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18026209", 
 "@target": "Tn18026172"
 }, 
@@ -1817,24 +2024,24 @@
 }, 
 "Tn18026210": {
 "edge51667": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18026210", 
 "@target": "Tn18026184"
 }, 
 "edge51777": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18026210", 
 "@target": "Tn18026169"
 }
 }, 
 "Tn18026212": {
 "edge51757": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18026212", 
 "@target": "Tn18026178"
 }, 
 "edge51759": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18026212", 
 "@target": "Tn18026176"
 }
