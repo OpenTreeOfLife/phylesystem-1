@@ -61,22 +61,115 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2019-03-14T17:42:48.223Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "Ascomycetes"
 }, 
-"^ot:curatorName": "susan-holder", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}, 
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": "$1"
+}, 
+"old": {
+"$": "^(\\S*\\s+\\S*).*"
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2019-03-14T17:42:48.223Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"susan-holder"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S20980"
 }, 
+"^ot:focalCladeOTTTaxonName": "", 
 "^ot:otusElementOrder": [
 "Tls67559"
 ], 
 "^ot:studyId": "ot_1913", 
+"^ot:studyPublication": {
+"@href": ""
+}, 
 "^ot:studyPublicationReference": "Leavitt S., Kirika P., Amo de paz G., Huang J., Hur J., Elix J., Grewe F., Divakar P.K., & Lumbsch H.T. 2017. Assessing phylogeny and historical biogeography of the largest genus of lichen-forming fungi, Xanthoparmelia (Parmeliaceae, Ascomycota). The Lichenologist, .", 
 "^ot:studyYear": 2017, 
+"^ot:tag": [], 
 "^ot:taxonLinkPrefixes": {
 "@ubio": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:", 
 "@uniprot": "http://purl.uniprot.org/taxonomy/"
@@ -99,8 +192,9 @@
 "^skos:historyNote": "Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlOTUWriter@432f884a $Rev$", 
 "otuById": {
 "Tl3516741": {
-"^ot:altLabel": "Xanthoparmelia verrucigera", 
 "^ot:originalLabel": "Xanthoparmelia verrucigera KE_9493.2", 
+"^ot:ottId": 614676, 
+"^ot:ottTaxonName": "Xanthoparmelia verrucigera", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 31009, 
 "@tb:identifier.taxonVariant": 72406, 
@@ -114,6 +208,8 @@
 }, 
 "Tl3516743": {
 "^ot:originalLabel": "Xanthoparmelia pokornyi", 
+"^ot:ottId": 1047378, 
+"^ot:ottTaxonName": "Xanthoparmelia pokornyi", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 31001, 
 "@tb:identifier.taxonVariant": 72360, 
@@ -128,32 +224,43 @@
 "^ot:originalLabel": "Xanthoparmelia aff supposita"
 }, 
 "Tl3516746": {
-"^ot:originalLabel": "Xanthoparmelia atroviridis 2"
+"^ot:originalLabel": "Xanthoparmelia atroviridis 2", 
+"^ot:ottId": 457480, 
+"^ot:ottTaxonName": "Xanthoparmelia atroviridis"
 }, 
 "Tl3516747": {
 "^ot:originalLabel": "Xanthoparmelia aff subramigera KE2_9664"
 }, 
 "Tl3516748": {
-"^ot:originalLabel": "Xanthoparmelia atroviridis 3"
+"^ot:originalLabel": "Xanthoparmelia atroviridis 3", 
+"^ot:ottId": 457480, 
+"^ot:ottTaxonName": "Xanthoparmelia atroviridis"
 }, 
 "Tl3516749": {
 "^ot:originalLabel": "Xanthoparmelia aff perspersa E440"
 }, 
 "Tl3516750": {
-"^ot:originalLabel": "Xanthoparmelia greytonensis"
+"^ot:originalLabel": "Xanthoparmelia greytonensis", 
+"^ot:ottId": 33989, 
+"^ot:ottTaxonName": "Xanthoparmelia greytonensis"
 }, 
 "Tl3516751": {
-"^ot:originalLabel": "Xanthoparmelia subchalybaeizans 2_E925"
+"^ot:originalLabel": "Xanthoparmelia subchalybaeizans 2_E925", 
+"^ot:ottId": 270201, 
+"^ot:ottTaxonName": "Xanthoparmelia subchalybaeizans"
 }, 
 "Tl3516752": {
 "^ot:originalLabel": "Xanthoparmelia saximontana E984"
 }, 
 "Tl3516753": {
-"^ot:originalLabel": "Xanthoparmelia subramigera 9668"
+"^ot:originalLabel": "Xanthoparmelia subramigera 9668", 
+"^ot:ottId": 3771072, 
+"^ot:ottTaxonName": "Xanthoparmelia subramigera"
 }, 
 "Tl3516754": {
-"^ot:altLabel": "Xanthoparmelia semiviridis", 
 "^ot:originalLabel": "Xanthoparmelia semiviridis 14435", 
+"^ot:ottId": 733704, 
+"^ot:ottTaxonName": "Xanthoparmelia semiviridis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5944, 
 "@tb:identifier.taxonVariant": 72379, 
@@ -162,14 +269,17 @@
 }
 }, 
 "Tl3516755": {
-"^ot:originalLabel": "Xanthoparmelia subruginosa 9348"
+"^ot:originalLabel": "Xanthoparmelia subruginosa 9348", 
+"^ot:ottId": 3770917, 
+"^ot:ottTaxonName": "Xanthoparmelia subruginosa"
 }, 
 "Tl3516756": {
 "^ot:originalLabel": "Xanthoparmelia aff plittii KE3_9495"
 }, 
 "Tl3516757": {
-"^ot:altLabel": "Xanthoparmelia wyomingica", 
 "^ot:originalLabel": "Xanthoparmelia wyomingica 001", 
+"^ot:ottId": 94983, 
+"^ot:ottTaxonName": "Xanthoparmelia wyomingica", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 603006, 
 "@tb:identifier.taxonVariant": 804459, 
@@ -181,6 +291,8 @@
 }, 
 "Tl3516759": {
 "^ot:originalLabel": "Xanthoparmelia chlorochroa", 
+"^ot:ottId": 632895, 
+"^ot:ottTaxonName": "Xanthoparmelia chlorochroa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 603000, 
 "@tb:identifier.taxonVariant": 804453, 
@@ -191,13 +303,17 @@
 "^ot:originalLabel": "Xanthoparmelia sp 14804"
 }, 
 "Tl3516761": {
-"^ot:originalLabel": "Xanthoparmelia hypoprotocetrarica 14444"
+"^ot:originalLabel": "Xanthoparmelia hypoprotocetrarica 14444", 
+"^ot:ottId": 457496, 
+"^ot:ottTaxonName": "Xanthoparmelia hypoprotocetrarica"
 }, 
 "Tl3516762": {
 "^ot:originalLabel": "Xanthoparmelia aff subramigera 4812"
 }, 
 "Tl3516763": {
 "^ot:originalLabel": "Xanthoparmelia verrucella", 
+"^ot:ottId": 88784, 
+"^ot:ottTaxonName": "Xanthoparmelia verrucella", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 513734, 
 "@tb:identifier.taxonVariant": 770390, 
@@ -220,14 +336,19 @@
 "^ot:originalLabel": "Xanthoparmelia saximontana E1010"
 }, 
 "Tl3516766": {
-"^ot:originalLabel": "Xanthoparmelia hypopsila 9641"
+"^ot:originalLabel": "Xanthoparmelia hypopsila 9641", 
+"^ot:ottId": 3771150, 
+"^ot:ottTaxonName": "Xanthoparmelia hypopsila"
 }, 
 "Tl3516767": {
-"^ot:originalLabel": "Xanthoparmelia squamans"
+"^ot:originalLabel": "Xanthoparmelia squamans", 
+"^ot:ottId": 1033864, 
+"^ot:ottTaxonName": "Xanthoparmelia squamans"
 }, 
 "Tl3516768": {
-"^ot:altLabel": "Xanthoparmelia tinctina", 
 "^ot:originalLabel": "Xanthoparmelia tinctina KE2_9669.2", 
+"^ot:ottId": 614673, 
+"^ot:ottTaxonName": "Xanthoparmelia tinctina", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 31011, 
 "@tb:identifier.taxonVariant": 72401, 
@@ -239,10 +360,14 @@
 "^ot:originalLabel": "Xanthoparmelia aff coloradoensis"
 }, 
 "Tl3516770": {
-"^ot:originalLabel": "Xanthoparmelia annexa 9519"
+"^ot:originalLabel": "Xanthoparmelia annexa 9519", 
+"^ot:ottId": 3771294, 
+"^ot:ottTaxonName": "Xanthoparmelia annexa"
 }, 
 "Tl3516771": {
 "^ot:originalLabel": "Xanthoparmelia substrigosa", 
+"^ot:ottId": 637211, 
+"^ot:ottTaxonName": "Xanthoparmelia substrigosa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 305641, 
 "@tb:identifier.taxonVariant": 353816, 
@@ -254,13 +379,19 @@
 "^ot:originalLabel": "Xanthoparmelia aff subramigera KE1_9344"
 }, 
 "Tl3516773": {
-"^ot:originalLabel": "Xanthoparmelia subchalybaeizans 1_E435"
+"^ot:originalLabel": "Xanthoparmelia subchalybaeizans 1_E435", 
+"^ot:ottId": 270201, 
+"^ot:ottTaxonName": "Xanthoparmelia subchalybaeizans"
 }, 
 "Tl3516774": {
-"^ot:originalLabel": "Xanthoparmelia pseudoglabrans"
+"^ot:originalLabel": "Xanthoparmelia pseudoglabrans", 
+"^ot:ottId": 1033853, 
+"^ot:ottTaxonName": "Xanthoparmelia pseudoglabrans"
 }, 
 "Tl3516775": {
 "^ot:originalLabel": "Flavoparmelia marchantii", 
+"^ot:ottId": 561650, 
+"^ot:ottTaxonName": "Flavoparmelia marchantii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 296721, 
 "@tb:identifier.taxonVariant": 346646, 
@@ -269,8 +400,9 @@
 }
 }, 
 "Tl3516776": {
-"^ot:altLabel": "Xanthoparmelia tinctina", 
 "^ot:originalLabel": "Xanthoparmelia tinctina KE3_E465", 
+"^ot:ottId": 614673, 
+"^ot:ottTaxonName": "Xanthoparmelia tinctina", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 31011, 
 "@tb:identifier.taxonVariant": 72401, 
@@ -279,11 +411,14 @@
 }
 }, 
 "Tl3516777": {
-"^ot:originalLabel": "Xanthoparmelia subramigera 9496"
+"^ot:originalLabel": "Xanthoparmelia subramigera 9496", 
+"^ot:ottId": 3771072, 
+"^ot:ottTaxonName": "Xanthoparmelia subramigera"
 }, 
 "Tl3516778": {
-"^ot:altLabel": "Xanthoparmelia tinctina", 
 "^ot:originalLabel": "Xanthoparmelia tinctina KE2_9669", 
+"^ot:ottId": 614673, 
+"^ot:ottTaxonName": "Xanthoparmelia tinctina", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 31011, 
 "@tb:identifier.taxonVariant": 72401, 
@@ -292,17 +427,22 @@
 }
 }, 
 "Tl3516779": {
-"^ot:originalLabel": "Xanthoparmelia xanthomelaena"
+"^ot:originalLabel": "Xanthoparmelia xanthomelaena", 
+"^ot:ottId": 607039, 
+"^ot:ottTaxonName": "Xanthoparmelia xanthomelaena"
 }, 
 "Tl3516780": {
 "^ot:originalLabel": "Canoparmelia sp"
 }, 
 "Tl3516781": {
-"^ot:originalLabel": "Xanthoparmelia subramigera 9668.2"
+"^ot:originalLabel": "Xanthoparmelia subramigera 9668.2", 
+"^ot:ottId": 3771072, 
+"^ot:ottTaxonName": "Xanthoparmelia subramigera"
 }, 
 "Tl3516782": {
-"^ot:altLabel": "Xanthoparmelia tinctina", 
 "^ot:originalLabel": "Xanthoparmelia tinctina KE_E466", 
+"^ot:ottId": 614673, 
+"^ot:ottTaxonName": "Xanthoparmelia tinctina", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 31011, 
 "@tb:identifier.taxonVariant": 72401, 
@@ -311,10 +451,14 @@
 }
 }, 
 "Tl3516783": {
-"^ot:originalLabel": "Xanthoparmelia tzaneenensis"
+"^ot:originalLabel": "Xanthoparmelia tzaneenensis", 
+"^ot:ottId": 88773, 
+"^ot:ottTaxonName": "Xanthoparmelia tzaneenensis"
 }, 
 "Tl3516784": {
 "^ot:originalLabel": "Xanthoparmelia scotophylla", 
+"^ot:ottId": 1013406, 
+"^ot:ottTaxonName": "Xanthoparmelia scotophylla", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 20466, 
 "@tb:identifier.taxonVariant": 72373, 
@@ -326,14 +470,19 @@
 "^ot:originalLabel": "Xanthoparmelia aff subramigera KE1_9354"
 }, 
 "Tl3516786": {
-"^ot:originalLabel": "Xanthoparmelia annexa 9289"
+"^ot:originalLabel": "Xanthoparmelia annexa 9289", 
+"^ot:ottId": 3771294, 
+"^ot:ottTaxonName": "Xanthoparmelia annexa"
 }, 
 "Tl3516787": {
-"^ot:originalLabel": "Xanthoparmelia bibax"
+"^ot:originalLabel": "Xanthoparmelia bibax", 
+"^ot:ottId": 579255, 
+"^ot:ottTaxonName": "Xanthoparmelia bibax"
 }, 
 "Tl3516788": {
-"^ot:altLabel": "Xanthoparmelia tinctina", 
 "^ot:originalLabel": "Xanthoparmelia tinctina KE1_9533", 
+"^ot:ottId": 614673, 
+"^ot:ottTaxonName": "Xanthoparmelia tinctina", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 31011, 
 "@tb:identifier.taxonVariant": 72401, 
@@ -342,8 +491,9 @@
 }
 }, 
 "Tl3516789": {
-"^ot:altLabel": "Xanthoparmelia mougeotii", 
 "^ot:originalLabel": "Xanthoparmelia mougeotii 1", 
+"^ot:ottId": 739285, 
+"^ot:ottTaxonName": "Xanthoparmelia mougeotii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 30999, 
 "@tb:identifier.taxonVariant": 72347, 
@@ -352,10 +502,14 @@
 }
 }, 
 "Tl3516790": {
-"^ot:originalLabel": "Xanthoparmelia filarszkyana"
+"^ot:originalLabel": "Xanthoparmelia filarszkyana", 
+"^ot:ottId": 3770676, 
+"^ot:ottTaxonName": "Xanthoparmelia filarszkyana"
 }, 
 "Tl3516791": {
-"^ot:originalLabel": "Xanthoparmelia salkiboensis 9650.2"
+"^ot:originalLabel": "Xanthoparmelia salkiboensis 9650.2", 
+"^ot:ottId": 3771075, 
+"^ot:ottTaxonName": "Xanthoparmelia salkiboensis"
 }, 
 "Tl3516792": {
 "^ot:originalLabel": "Xanthoparmelia aff subramigera KE4_9492.2"
@@ -365,6 +519,8 @@
 }, 
 "Tl3516794": {
 "^ot:originalLabel": "Parmotrema crinitum", 
+"^ot:ottId": 436654, 
+"^ot:ottTaxonName": "Parmotrema crinitum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 20575, 
 "@tb:identifier.taxonVariant": 47850, 
@@ -376,13 +532,17 @@
 "^ot:originalLabel": "Xanthoparmelia aff chlorochroa 082"
 }, 
 "Tl3516796": {
-"^ot:originalLabel": "Xanthoparmelia pseudocongensis"
+"^ot:originalLabel": "Xanthoparmelia pseudocongensis", 
+"^ot:ottId": 3771105, 
+"^ot:ottTaxonName": "Xanthoparmelia pseudocongensis"
 }, 
 "Tl3516797": {
 "^ot:originalLabel": "Xanthoparmelia aff subruginosa KE1_9350"
 }, 
 "Tl3516798": {
 "^ot:originalLabel": "Xanthoparmelia transvaalensis", 
+"^ot:ottId": 614672, 
+"^ot:ottTaxonName": "Xanthoparmelia transvaalensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 31012, 
 "@tb:identifier.taxonVariant": 72404, 
@@ -391,10 +551,14 @@
 }
 }, 
 "Tl3516799": {
-"^ot:originalLabel": "Xanthoparmelia subruginosa 9490"
+"^ot:originalLabel": "Xanthoparmelia subruginosa 9490", 
+"^ot:ottId": 3770917, 
+"^ot:ottTaxonName": "Xanthoparmelia subruginosa"
 }, 
 "Tl3516800": {
 "^ot:originalLabel": "Xanthoparmelia isidiovagans", 
+"^ot:ottId": 872109, 
+"^ot:ottTaxonName": "Xanthoparmelia isidiovagans", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 30996, 
 "@tb:identifier.taxonVariant": 72331, 
@@ -406,17 +570,22 @@
 "^ot:originalLabel": "Xanthoparmelia aff subramigera KE3_4748"
 }, 
 "Tl3516802": {
-"^ot:originalLabel": "Xanthoparmelia scitula"
+"^ot:originalLabel": "Xanthoparmelia scitula", 
+"^ot:ottId": 5313580, 
+"^ot:ottTaxonName": "Xanthoparmelia scitula"
 }, 
 "Tl3516803": {
-"^ot:originalLabel": "Xanthoparmelia convexula"
+"^ot:originalLabel": "Xanthoparmelia convexula", 
+"^ot:ottId": 3771023, 
+"^ot:ottTaxonName": "Xanthoparmelia convexula"
 }, 
 "Tl3516804": {
 "^ot:originalLabel": "Xanthoparmelia saxetii KE_9571"
 }, 
 "Tl3516805": {
-"^ot:altLabel": "Xanthoparmelia wyomingica", 
 "^ot:originalLabel": "Xanthoparmelia wyomingica 826", 
+"^ot:ottId": 94983, 
+"^ot:ottTaxonName": "Xanthoparmelia wyomingica", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 603006, 
 "@tb:identifier.taxonVariant": 804459, 
@@ -424,11 +593,14 @@
 }
 }, 
 "Tl3516806": {
-"^ot:originalLabel": "Xanthoparmelia microcephala"
+"^ot:originalLabel": "Xanthoparmelia microcephala", 
+"^ot:ottId": 3771124, 
+"^ot:ottTaxonName": "Xanthoparmelia microcephala"
 }, 
 "Tl3516807": {
-"^ot:altLabel": "Xanthoparmelia loxodes", 
 "^ot:originalLabel": "Xanthoparmelia loxodes 2", 
+"^ot:ottId": 323451, 
+"^ot:ottTaxonName": "Xanthoparmelia loxodes", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 30998, 
 "@tb:identifier.taxonVariant": 72345, 
@@ -440,34 +612,50 @@
 "^ot:originalLabel": "Xanthoparmelia aff dierythra"
 }, 
 "Tl3516809": {
-"^ot:originalLabel": "Xanthoparmelia phaeophana"
+"^ot:originalLabel": "Xanthoparmelia phaeophana", 
+"^ot:ottId": 3771257, 
+"^ot:ottTaxonName": "Xanthoparmelia phaeophana"
 }, 
 "Tl3516810": {
 "^ot:originalLabel": "Xanthoparmelia aff tortula_1_E237"
 }, 
 "Tl3516811": {
-"^ot:originalLabel": "Xanthoparmelia chalybaeizans"
+"^ot:originalLabel": "Xanthoparmelia chalybaeizans", 
+"^ot:ottId": 980302, 
+"^ot:ottTaxonName": "Xanthoparmelia chalybaeizans"
 }, 
 "Tl3516812": {
-"^ot:originalLabel": "Xanthoparmelia subruginosa 9671"
+"^ot:originalLabel": "Xanthoparmelia subruginosa 9671", 
+"^ot:ottId": 3770917, 
+"^ot:ottTaxonName": "Xanthoparmelia subruginosa"
 }, 
 "Tl3516813": {
-"^ot:originalLabel": "Xanthoparmelia barbatica"
+"^ot:originalLabel": "Xanthoparmelia barbatica", 
+"^ot:ottId": 3770834, 
+"^ot:ottTaxonName": "Xanthoparmelia barbatica"
 }, 
 "Tl3516814": {
-"^ot:originalLabel": "Xanthoparmelia caliginosa"
+"^ot:originalLabel": "Xanthoparmelia caliginosa", 
+"^ot:ottId": 457484, 
+"^ot:ottTaxonName": "Xanthoparmelia caliginosa"
 }, 
 "Tl3516815": {
 "^ot:originalLabel": "Xanthoparmelia saxetii KE_9356.2"
 }, 
 "Tl3516816": {
-"^ot:originalLabel": "Xanthoparmelia subruginosa 9686.2"
+"^ot:originalLabel": "Xanthoparmelia subruginosa 9686.2", 
+"^ot:ottId": 3770917, 
+"^ot:ottTaxonName": "Xanthoparmelia subruginosa"
 }, 
 "Tl3516817": {
-"^ot:originalLabel": "Xanthoparmelia maricopensis"
+"^ot:originalLabel": "Xanthoparmelia maricopensis", 
+"^ot:ottId": 3770769, 
+"^ot:ottTaxonName": "Xanthoparmelia maricopensis"
 }, 
 "Tl3516818": {
-"^ot:originalLabel": "Xanthoparmelia salkiboensis 9650"
+"^ot:originalLabel": "Xanthoparmelia salkiboensis 9650", 
+"^ot:ottId": 3771075, 
+"^ot:ottTaxonName": "Xanthoparmelia salkiboensis"
 }, 
 "Tl3516819": {
 "^ot:originalLabel": "Xanthoparmelia saxetii KE_9576"
@@ -476,17 +664,22 @@
 "^ot:originalLabel": "Xanthoparmelia aff protomatrae protomatrae"
 }, 
 "Tl3516821": {
-"^ot:originalLabel": "Xanthoparmelia saxeti SA_540.2"
+"^ot:originalLabel": "Xanthoparmelia saxeti SA_540.2", 
+"^ot:ottId": 769767, 
+"^ot:ottTaxonName": "Xanthoparmelia saxeti"
 }, 
 "Tl3516822": {
 "^ot:originalLabel": "Xanthoparmelia aff epacridea"
 }, 
 "Tl3516823": {
-"^ot:originalLabel": "Xanthoparmelia subramigera 4876"
+"^ot:originalLabel": "Xanthoparmelia subramigera 4876", 
+"^ot:ottId": 3771072, 
+"^ot:ottTaxonName": "Xanthoparmelia subramigera"
 }, 
 "Tl3516824": {
-"^ot:altLabel": "Xanthoparmelia loxodes", 
 "^ot:originalLabel": "Xanthoparmelia loxodes 1", 
+"^ot:ottId": 323451, 
+"^ot:ottTaxonName": "Xanthoparmelia loxodes", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 30998, 
 "@tb:identifier.taxonVariant": 72345, 
@@ -495,7 +688,9 @@
 }
 }, 
 "Tl3516825": {
-"^ot:originalLabel": "Xanthoparmelia hypofusca"
+"^ot:originalLabel": "Xanthoparmelia hypofusca", 
+"^ot:ottId": 545232, 
+"^ot:ottTaxonName": "Xanthoparmelia hypofusca"
 }, 
 "Tl3516826": {
 "^ot:originalLabel": "Xanthoparmelia aff subruginosa KE2_9681"
@@ -513,7 +708,9 @@
 }
 }, 
 "Tl3516829": {
-"^ot:originalLabel": "Xanthoparmelia atroventralis"
+"^ot:originalLabel": "Xanthoparmelia atroventralis", 
+"^ot:ottId": 3770957, 
+"^ot:ottTaxonName": "Xanthoparmelia atroventralis"
 }, 
 "Tl3516830": {
 "^ot:originalLabel": "Xanthoparmelia exornata", 
@@ -524,10 +721,14 @@
 }
 }, 
 "Tl3516831": {
-"^ot:originalLabel": "Xanthoparmelia salkiboensis 9517"
+"^ot:originalLabel": "Xanthoparmelia salkiboensis 9517", 
+"^ot:ottId": 3771075, 
+"^ot:ottTaxonName": "Xanthoparmelia salkiboensis"
 }, 
 "Tl3516832": {
 "^ot:originalLabel": "Canoparmelia texana", 
+"^ot:ottId": 1013402, 
+"^ot:ottTaxonName": "Canoparmelia texana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 214695, 
 "@tb:identifier.taxonVariant": 281902, 
@@ -539,13 +740,19 @@
 "^ot:originalLabel": "Xanthoparmelia aff subramigera KE1_9346"
 }, 
 "Tl3516834": {
-"^ot:originalLabel": "Xanthoparmelia hottentotta"
+"^ot:originalLabel": "Xanthoparmelia hottentotta", 
+"^ot:ottId": 3781340, 
+"^ot:ottTaxonName": "Xanthoparmelia hottentotta"
 }, 
 "Tl3516835": {
-"^ot:originalLabel": "Xanthoparmelia cordillerana"
+"^ot:originalLabel": "Xanthoparmelia cordillerana", 
+"^ot:ottId": 457492, 
+"^ot:ottTaxonName": "Xanthoparmelia cordillerana"
 }, 
 "Tl3516836": {
-"^ot:originalLabel": "Xanthoparmelia saxeti TW"
+"^ot:originalLabel": "Xanthoparmelia saxeti TW", 
+"^ot:ottId": 769767, 
+"^ot:ottTaxonName": "Xanthoparmelia saxeti"
 }, 
 "Tl3516837": {
 "^ot:originalLabel": "Xanthoparmelia aff subramigera KE4_9345"
@@ -554,13 +761,17 @@
 "^ot:originalLabel": "Xanthoparmelia aff krogiae E457"
 }, 
 "Tl3516839": {
-"^ot:originalLabel": "Xanthoparmelia flavescentireagens"
+"^ot:originalLabel": "Xanthoparmelia flavescentireagens", 
+"^ot:ottId": 3771187, 
+"^ot:ottTaxonName": "Xanthoparmelia flavescentireagens"
 }, 
 "Tl3516840": {
 "^ot:originalLabel": "Xanthoparmelia saxetii KE_9355"
 }, 
 "Tl3516841": {
 "^ot:originalLabel": "Xanthoparmelia lithophiloides", 
+"^ot:ottId": 1013397, 
+"^ot:ottTaxonName": "Xanthoparmelia lithophiloides", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 20463, 
 "@tb:identifier.taxonVariant": 72343, 
@@ -569,8 +780,9 @@
 }
 }, 
 "Tl3516842": {
-"^ot:altLabel": "Xanthoparmelia tinctina", 
 "^ot:originalLabel": "Xanthoparmelia tinctina ES_2", 
+"^ot:ottId": 614673, 
+"^ot:ottTaxonName": "Xanthoparmelia tinctina", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 31011, 
 "@tb:identifier.taxonVariant": 72401, 
@@ -579,16 +791,22 @@
 }
 }, 
 "Tl3516843": {
-"^ot:originalLabel": "Xanthoparmelia beatricea"
+"^ot:originalLabel": "Xanthoparmelia beatricea", 
+"^ot:ottId": 3770831, 
+"^ot:ottTaxonName": "Xanthoparmelia beatricea"
 }, 
 "Tl3516844": {
 "^ot:originalLabel": "Xanthoparmelia aff plittii KE3_9495.2"
 }, 
 "Tl3516845": {
-"^ot:originalLabel": "Xanthoparmelia arapilensis"
+"^ot:originalLabel": "Xanthoparmelia arapilensis", 
+"^ot:ottId": 3770962, 
+"^ot:ottTaxonName": "Xanthoparmelia arapilensis"
 }, 
 "Tl3516846": {
-"^ot:originalLabel": "Xanthoparmelia subcumberlandia"
+"^ot:originalLabel": "Xanthoparmelia subcumberlandia", 
+"^ot:ottId": 3771392, 
+"^ot:ottTaxonName": "Xanthoparmelia subcumberlandia"
 }, 
 "Tl3516847": {
 "^ot:originalLabel": "Xanthoparmelia aff subramigera KE2_9347"
@@ -597,7 +815,9 @@
 "^ot:originalLabel": "Xanthoparmelia aff protomatrae subdiffluens"
 }, 
 "Tl3516849": {
-"^ot:originalLabel": "Xanthoparmelia pseudocongensis 2"
+"^ot:originalLabel": "Xanthoparmelia pseudocongensis 2", 
+"^ot:ottId": 3771105, 
+"^ot:ottTaxonName": "Xanthoparmelia pseudocongensis"
 }, 
 "Tl3516850": {
 "^ot:originalLabel": "Xanthoparmelia aff subramigera KE1_9344.2"
@@ -618,7 +838,9 @@
 "^ot:originalLabel": "Xanthoparmelia aff hypoprotocetrarica E911"
 }, 
 "Tl3516854": {
-"^ot:originalLabel": "Xanthoparmelia subamplexuloides"
+"^ot:originalLabel": "Xanthoparmelia subamplexuloides", 
+"^ot:ottId": 33987, 
+"^ot:ottTaxonName": "Xanthoparmelia subamplexuloides"
 }, 
 "Tl3516855": {
 "^ot:originalLabel": "Xanthoparmelia sp 14805"
@@ -633,8 +855,9 @@
 }
 }, 
 "Tl3516857": {
-"^ot:altLabel": "Xanthoparmelia dierythra", 
 "^ot:originalLabel": "Xanthoparmelia dierythra 2", 
+"^ot:ottId": 669360, 
+"^ot:ottTaxonName": "Xanthoparmelia dierythra", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 604680, 
 "@tb:identifier.taxonVariant": 806985, 
@@ -661,11 +884,14 @@
 }
 }, 
 "Tl3516860": {
-"^ot:originalLabel": "Xanthoparmelia subramigera 4815"
+"^ot:originalLabel": "Xanthoparmelia subramigera 4815", 
+"^ot:ottId": 3771072, 
+"^ot:ottTaxonName": "Xanthoparmelia subramigera"
 }, 
 "Tl3516861": {
-"^ot:altLabel": "Xanthoparmelia mougeotii", 
 "^ot:originalLabel": "Xanthoparmelia mougeotii 2", 
+"^ot:ottId": 739285, 
+"^ot:ottTaxonName": "Xanthoparmelia mougeotii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 30999, 
 "@tb:identifier.taxonVariant": 72347, 
@@ -680,16 +906,24 @@
 "^ot:originalLabel": "Xanthoparmelia aff plittii KE1_4859"
 }, 
 "Tl3516864": {
-"^ot:originalLabel": "Xanthoparmelia saxeti SA_540"
+"^ot:originalLabel": "Xanthoparmelia saxeti SA_540", 
+"^ot:ottId": 769767, 
+"^ot:ottTaxonName": "Xanthoparmelia saxeti"
 }, 
 "Tl3516865": {
-"^ot:originalLabel": "Xanthoparmelia hypopsila 9649"
+"^ot:originalLabel": "Xanthoparmelia hypopsila 9649", 
+"^ot:ottId": 3771150, 
+"^ot:ottTaxonName": "Xanthoparmelia hypopsila"
 }, 
 "Tl3516866": {
-"^ot:originalLabel": "Xanthoparmelia neoquintaria"
+"^ot:originalLabel": "Xanthoparmelia neoquintaria", 
+"^ot:ottId": 1033833, 
+"^ot:ottTaxonName": "Xanthoparmelia neoquintaria"
 }, 
 "Tl3516867": {
 "^ot:originalLabel": "Xanthoparmelia brachinaensis", 
+"^ot:ottId": 219980, 
+"^ot:ottTaxonName": "Xanthoparmelia brachinaensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 14935, 
 "@tb:identifier.taxonVariant": 72309, 
@@ -698,14 +932,19 @@
 }
 }, 
 "Tl3516868": {
-"^ot:originalLabel": "Xanthoparmelia perspersa 1_E429"
+"^ot:originalLabel": "Xanthoparmelia perspersa 1_E429", 
+"^ot:ottId": 5313577, 
+"^ot:ottTaxonName": "Xanthoparmelia perspersa"
 }, 
 "Tl3516869": {
-"^ot:originalLabel": "Xanthoparmelia subimitatrix"
+"^ot:originalLabel": "Xanthoparmelia subimitatrix", 
+"^ot:ottId": 507872, 
+"^ot:ottTaxonName": "Xanthoparmelia subimitatrix"
 }, 
 "Tl3516870": {
-"^ot:altLabel": "Xanthoparmelia crespoae", 
 "^ot:originalLabel": "Xanthoparmelia crespoae 2", 
+"^ot:ottId": 347624, 
+"^ot:ottTaxonName": "Xanthoparmelia crespoae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 30993, 
 "@tb:identifier.taxonVariant": 72318, 
@@ -714,16 +953,24 @@
 }
 }, 
 "Tl3516871": {
-"^ot:originalLabel": "Xanthoparmelia subramigera 4875"
+"^ot:originalLabel": "Xanthoparmelia subramigera 4875", 
+"^ot:ottId": 3771072, 
+"^ot:ottTaxonName": "Xanthoparmelia subramigera"
 }, 
 "Tl3516872": {
-"^ot:originalLabel": "Xanthoparmelia mougeotina"
+"^ot:originalLabel": "Xanthoparmelia mougeotina", 
+"^ot:ottId": 3770687, 
+"^ot:ottTaxonName": "Xanthoparmelia mougeotina"
 }, 
 "Tl3516873": {
-"^ot:originalLabel": "Xanthoparmelia imitatrix"
+"^ot:originalLabel": "Xanthoparmelia imitatrix", 
+"^ot:ottId": 457499, 
+"^ot:ottTaxonName": "Xanthoparmelia imitatrix"
 }, 
 "Tl3516874": {
 "^ot:originalLabel": "Xanthoparmelia tasmanica", 
+"^ot:ottId": 584851, 
+"^ot:ottTaxonName": "Xanthoparmelia tasmanica", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 305652, 
 "@tb:identifier.taxonVariant": 353825, 
@@ -735,29 +982,40 @@
 "^ot:originalLabel": "Xanthoparmelia aff subruginosa KE1_9350.2"
 }, 
 "Tl3516876": {
-"^ot:originalLabel": "Xanthoparmelia subruginosa 9686"
+"^ot:originalLabel": "Xanthoparmelia subruginosa 9686", 
+"^ot:ottId": 3770917, 
+"^ot:ottTaxonName": "Xanthoparmelia subruginosa"
 }, 
 "Tl3516877": {
-"^ot:originalLabel": "Xanthoparmelia tentaculina"
+"^ot:originalLabel": "Xanthoparmelia tentaculina", 
+"^ot:ottId": 33978, 
+"^ot:ottTaxonName": "Xanthoparmelia tentaculina"
 }, 
 "Tl3516878": {
-"^ot:originalLabel": "Xanthoparmelia azaniensis"
+"^ot:originalLabel": "Xanthoparmelia azaniensis", 
+"^ot:ottId": 5313566, 
+"^ot:ottTaxonName": "Xanthoparmelia azaniensis"
 }, 
 "Tl3516879": {
 "^ot:originalLabel": "Xanthoparmelia saxetii KE_4855"
 }, 
 "Tl3516880": {
-"^ot:originalLabel": "Xanthoparmelia subramigera 4645"
+"^ot:originalLabel": "Xanthoparmelia subramigera 4645", 
+"^ot:ottId": 3771072, 
+"^ot:ottTaxonName": "Xanthoparmelia subramigera"
 }, 
 "Tl3516881": {
-"^ot:originalLabel": "Xanthoparmelia competita"
+"^ot:originalLabel": "Xanthoparmelia competita", 
+"^ot:ottId": 457489, 
+"^ot:ottTaxonName": "Xanthoparmelia competita"
 }, 
 "Tl3516882": {
 "^ot:originalLabel": "Xanthoparmelia saxetii KE_4854"
 }, 
 "Tl3516883": {
-"^ot:altLabel": "Xanthoparmelia tinctina", 
 "^ot:originalLabel": "Xanthoparmelia tinctina ES_1", 
+"^ot:ottId": 614673, 
+"^ot:ottTaxonName": "Xanthoparmelia tinctina", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 31011, 
 "@tb:identifier.taxonVariant": 72401, 
@@ -767,6 +1025,8 @@
 }, 
 "Tl3516884": {
 "^ot:originalLabel": "Xanthoparmelia pulla", 
+"^ot:ottId": 158946, 
+"^ot:ottTaxonName": "Xanthoparmelia pulla", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 31003, 
 "@tb:identifier.taxonVariant": 72366, 
@@ -775,10 +1035,14 @@
 }
 }, 
 "Tl3516885": {
-"^ot:originalLabel": "Xanthoparmelia atroviridis 1"
+"^ot:originalLabel": "Xanthoparmelia atroviridis 1", 
+"^ot:ottId": 457480, 
+"^ot:ottTaxonName": "Xanthoparmelia atroviridis"
 }, 
 "Tl3516886": {
 "^ot:originalLabel": "Xanthoparmelia dierythra", 
+"^ot:ottId": 669360, 
+"^ot:ottTaxonName": "Xanthoparmelia dierythra", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 604680, 
 "@tb:identifier.taxonVariant": 806985, 
@@ -786,7 +1050,9 @@
 }
 }, 
 "Tl3516887": {
-"^ot:originalLabel": "Xanthoparmelia hypopsila 9641.2"
+"^ot:originalLabel": "Xanthoparmelia hypopsila 9641.2", 
+"^ot:ottId": 3771150, 
+"^ot:ottTaxonName": "Xanthoparmelia hypopsila"
 }, 
 "Tl3516888": {
 "^ot:originalLabel": "Xanthoparmelia aff tortula_2_E246"
@@ -795,7 +1061,9 @@
 "^ot:originalLabel": "Xanthoparmelia aff plittii KE1_9349"
 }, 
 "Tl3516890": {
-"^ot:originalLabel": "Xanthoparmelia aliphaticella"
+"^ot:originalLabel": "Xanthoparmelia aliphaticella", 
+"^ot:ottId": 801167, 
+"^ot:ottTaxonName": "Xanthoparmelia aliphaticella"
 }, 
 "Tl3516891": {
 "^ot:originalLabel": "Xanthoparmelia plittii", 
@@ -806,14 +1074,17 @@
 }
 }, 
 "Tl3516892": {
-"^ot:originalLabel": "Xanthoparmelia saxeti KR_13317f"
+"^ot:originalLabel": "Xanthoparmelia saxeti KR_13317f", 
+"^ot:ottId": 769767, 
+"^ot:ottTaxonName": "Xanthoparmelia saxeti"
 }, 
 "Tl3516893": {
 "^ot:originalLabel": "Xanthoparmelia adhaerens"
 }, 
 "Tl3516894": {
-"^ot:altLabel": "Xanthoparmelia verrucigera", 
 "^ot:originalLabel": "Xanthoparmelia verrucigera KE_9493", 
+"^ot:ottId": 614676, 
+"^ot:ottTaxonName": "Xanthoparmelia verrucigera", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 31009, 
 "@tb:identifier.taxonVariant": 72406, 
@@ -824,6 +1095,8 @@
 }, 
 "Tl3516895": {
 "^ot:originalLabel": "Xanthoparmelia tegeta", 
+"^ot:ottId": 614670, 
+"^ot:ottTaxonName": "Xanthoparmelia tegeta", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 31010, 
 "@tb:identifier.taxonVariant": 72399, 
@@ -835,10 +1108,14 @@
 "^ot:originalLabel": "Punctelia aff bolliana"
 }, 
 "Tl3516897": {
-"^ot:originalLabel": "Xanthoparmelia saxeti KR_13467f"
+"^ot:originalLabel": "Xanthoparmelia saxeti KR_13467f", 
+"^ot:ottId": 769767, 
+"^ot:ottTaxonName": "Xanthoparmelia saxeti"
 }, 
 "Tl3516898": {
 "^ot:originalLabel": "Xanthoparmelia murina", 
+"^ot:ottId": 1013395, 
+"^ot:ottTaxonName": "Xanthoparmelia murina", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 20464, 
 "@tb:identifier.taxonVariant": 72352, 
@@ -848,6 +1125,8 @@
 }, 
 "Tl3516899": {
 "^ot:originalLabel": "Xanthoparmelia sublaevis", 
+"^ot:ottId": 614671, 
+"^ot:ottTaxonName": "Xanthoparmelia sublaevis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 31008, 
 "@tb:identifier.taxonVariant": 72389, 
@@ -859,16 +1138,22 @@
 "^ot:originalLabel": "Xanthoparmelia subdomokosii"
 }, 
 "Tl3516901": {
-"^ot:originalLabel": "Xanthoparmelia neotumidosa"
+"^ot:originalLabel": "Xanthoparmelia neotumidosa", 
+"^ot:ottId": 33985, 
+"^ot:ottTaxonName": "Xanthoparmelia neotumidosa"
 }, 
 "Tl3516902": {
-"^ot:originalLabel": "Xanthoparmelia hypoprotocetrarica E902"
+"^ot:originalLabel": "Xanthoparmelia hypoprotocetrarica E902", 
+"^ot:ottId": 457496, 
+"^ot:ottTaxonName": "Xanthoparmelia hypoprotocetrarica"
 }, 
 "Tl3516903": {
 "^ot:originalLabel": "Xanthoparmelia aff chlorochroa 9866"
 }, 
 "Tl3516904": {
-"^ot:originalLabel": "Xanthoparmelia saxeti SA_538"
+"^ot:originalLabel": "Xanthoparmelia saxeti SA_538", 
+"^ot:ottId": 769767, 
+"^ot:ottTaxonName": "Xanthoparmelia saxeti"
 }, 
 "Tl3516905": {
 "^ot:originalLabel": "Xanthoparmelia saximontana 292"
@@ -881,6 +1166,8 @@
 }, 
 "Tl3516908": {
 "^ot:originalLabel": "Xanthoparmelia lithophila", 
+"^ot:ottId": 158939, 
+"^ot:ottTaxonName": "Xanthoparmelia lithophila", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 20462, 
 "@tb:identifier.taxonVariant": 72339, 
@@ -889,8 +1176,9 @@
 }
 }, 
 "Tl3516909": {
-"^ot:altLabel": "Xanthoparmelia verrucigera", 
 "^ot:originalLabel": "Xanthoparmelia verrucigera KE_E460", 
+"^ot:ottId": 614676, 
+"^ot:ottTaxonName": "Xanthoparmelia verrucigera", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 31009, 
 "@tb:identifier.taxonVariant": 72406, 
@@ -901,6 +1189,8 @@
 }, 
 "Tl3516910": {
 "^ot:originalLabel": "Xanthoparmelia lineola", 
+"^ot:ottId": 347626, 
+"^ot:ottTaxonName": "Xanthoparmelia lineola", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 30997, 
 "@tb:identifier.taxonVariant": 72334, 
@@ -912,10 +1202,14 @@
 "^ot:originalLabel": "Xanthoparmelia aff subramigera KE2_9664.2"
 }, 
 "Tl3516912": {
-"^ot:originalLabel": "Xanthoparmelia quintarioides"
+"^ot:originalLabel": "Xanthoparmelia quintarioides", 
+"^ot:ottId": 1033850, 
+"^ot:ottTaxonName": "Xanthoparmelia quintarioides"
 }, 
 "Tl3516913": {
 "^ot:originalLabel": "Xanthoparmelia notata", 
+"^ot:ottId": 347627, 
+"^ot:ottTaxonName": "Xanthoparmelia notata", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 31000, 
 "@tb:identifier.taxonVariant": 72359, 
@@ -924,11 +1218,14 @@
 }
 }, 
 "Tl3516914": {
-"^ot:originalLabel": "Xanthoparmelia saxeti KR_13524f"
+"^ot:originalLabel": "Xanthoparmelia saxeti KR_13524f", 
+"^ot:ottId": 769767, 
+"^ot:ottTaxonName": "Xanthoparmelia saxeti"
 }, 
 "Tl3516915": {
-"^ot:altLabel": "Xanthoparmelia semiviridis", 
 "^ot:originalLabel": "Xanthoparmelia semiviridis 1", 
+"^ot:ottId": 733704, 
+"^ot:ottTaxonName": "Xanthoparmelia semiviridis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5944, 
 "@tb:identifier.taxonVariant": 72379, 
@@ -937,11 +1234,14 @@
 }
 }, 
 "Tl3516916": {
-"^ot:originalLabel": "Xanthoparmelia perspersa 2_E233"
+"^ot:originalLabel": "Xanthoparmelia perspersa 2_E233", 
+"^ot:ottId": 5313577, 
+"^ot:ottTaxonName": "Xanthoparmelia perspersa"
 }, 
 "Tl3516917": {
-"^ot:altLabel": "Xanthoparmelia crespoae", 
 "^ot:originalLabel": "Xanthoparmelia crespoae 1", 
+"^ot:ottId": 347624, 
+"^ot:ottTaxonName": "Xanthoparmelia crespoae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 30993, 
 "@tb:identifier.taxonVariant": 72318, 
@@ -954,6 +1254,8 @@
 }, 
 "Tl3516919": {
 "^ot:originalLabel": "Xanthoparmelia hueana", 
+"^ot:ottId": 872111, 
+"^ot:ottTaxonName": "Xanthoparmelia hueana", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 30987, 
 "@tb:identifier.taxonVariant": 72330, 
@@ -965,17 +1267,22 @@
 "^ot:originalLabel": "Xanthoparmelia subproxila 1"
 }, 
 "Tl3516921": {
-"^ot:originalLabel": "Xanthoparmelia lineella"
+"^ot:originalLabel": "Xanthoparmelia lineella", 
+"^ot:ottId": 1033843, 
+"^ot:ottTaxonName": "Xanthoparmelia lineella"
 }, 
 "Tl3516922": {
 "^ot:originalLabel": "Xanthoparmelia aff plittii KE2_9353"
 }, 
 "Tl3516923": {
-"^ot:originalLabel": "Xanthoparmelia ralla"
+"^ot:originalLabel": "Xanthoparmelia ralla", 
+"^ot:ottId": 5313583, 
+"^ot:ottTaxonName": "Xanthoparmelia ralla"
 }, 
 "Tl3516924": {
-"^ot:altLabel": "Xanthoparmelia tinctina", 
 "^ot:originalLabel": "Xanthoparmelia tinctina KE1_9685", 
+"^ot:ottId": 614673, 
+"^ot:ottTaxonName": "Xanthoparmelia tinctina", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 31011, 
 "@tb:identifier.taxonVariant": 72401, 
@@ -984,17 +1291,22 @@
 }
 }, 
 "Tl3516925": {
-"^ot:originalLabel": "Xanthoparmelia verrucigera ES"
+"^ot:originalLabel": "Xanthoparmelia verrucigera ES", 
+"^ot:ottId": 614676, 
+"^ot:ottTaxonName": "Xanthoparmelia verrucigera"
 }, 
 "Tl3516926": {
-"^ot:originalLabel": "Xanthoparmelia perspersa 1_E432"
+"^ot:originalLabel": "Xanthoparmelia perspersa 1_E432", 
+"^ot:ottId": 5313577, 
+"^ot:ottTaxonName": "Xanthoparmelia perspersa"
 }, 
 "Tl3516927": {
 "^ot:originalLabel": "Xanthoparmelia aff plittii KE1_9349.2"
 }, 
 "Tl3516928": {
-"^ot:altLabel": "Xanthoparmelia tinctina", 
 "^ot:originalLabel": "Xanthoparmelia tinctina KE1_9659", 
+"^ot:ottId": 614673, 
+"^ot:ottTaxonName": "Xanthoparmelia tinctina", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 31011, 
 "@tb:identifier.taxonVariant": 72401, 
@@ -1004,6 +1316,8 @@
 }, 
 "Tl3516929": {
 "^ot:originalLabel": "Xanthoparmelia cumberlandia", 
+"^ot:ottId": 669364, 
+"^ot:ottTaxonName": "Xanthoparmelia cumberlandia", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 603003, 
 "@tb:identifier.taxonVariant": 804456, 
@@ -1011,17 +1325,22 @@
 }
 }, 
 "Tl3516930": {
-"^ot:originalLabel": "Xanthoparmelia condyloides"
+"^ot:originalLabel": "Xanthoparmelia condyloides", 
+"^ot:ottId": 33991, 
+"^ot:ottTaxonName": "Xanthoparmelia condyloides"
 }, 
 "Tl3516931": {
-"^ot:originalLabel": "Xanthoparmelia infrapallida"
+"^ot:originalLabel": "Xanthoparmelia infrapallida", 
+"^ot:ottId": 3771013, 
+"^ot:ottTaxonName": "Xanthoparmelia infrapallida"
 }, 
 "Tl3516932": {
 "^ot:originalLabel": "Xanthoparmelia aff subramigera KE4_9492"
 }, 
 "Tl3516933": {
-"^ot:altLabel": "Xanthoparmelia tinctina", 
 "^ot:originalLabel": "Xanthoparmelia tinctina KE1_E471", 
+"^ot:ottId": 614673, 
+"^ot:ottTaxonName": "Xanthoparmelia tinctina", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 31011, 
 "@tb:identifier.taxonVariant": 72401, 
@@ -1033,8 +1352,9 @@
 "^ot:originalLabel": "Austroparmelina pruinata"
 }, 
 "Tl3516935": {
-"^ot:altLabel": "Xanthoparmelia verrucigera", 
 "^ot:originalLabel": "Xanthoparmelia verrucigera KE_9499", 
+"^ot:ottId": 614676, 
+"^ot:ottTaxonName": "Xanthoparmelia verrucigera", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 31009, 
 "@tb:identifier.taxonVariant": 72406, 
@@ -1047,10 +1367,14 @@
 "^ot:originalLabel": "Xanthoparmelia patagonica"
 }, 
 "Tl3516937": {
-"^ot:originalLabel": "Xanthoparmelia sigillata"
+"^ot:originalLabel": "Xanthoparmelia sigillata", 
+"^ot:ottId": 1033847, 
+"^ot:ottTaxonName": "Xanthoparmelia sigillata"
 }, 
 "Tl3516938": {
-"^ot:originalLabel": "Xanthoparmelia parvoclystoides"
+"^ot:originalLabel": "Xanthoparmelia parvoclystoides", 
+"^ot:ottId": 3771202, 
+"^ot:ottTaxonName": "Xanthoparmelia parvoclystoides"
 }
 }
 }
@@ -1067,7 +1391,19 @@
 "Tr116116": {
 "@label": "PAUP 1", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn18156962", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 198, 
 "^tb:quality.tree": "Unrated", 
@@ -1111,7 +1447,7 @@
 }, 
 "Tn18156948": {
 "edge183970": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18156948", 
 "@target": "Tn18157243"
 }, 
@@ -1140,7 +1476,7 @@
 "@target": "Tn18157273"
 }, 
 "edge183884": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18156950", 
 "@target": "Tn18157285"
 }
@@ -1176,7 +1512,7 @@
 "@target": "Tn18157050"
 }, 
 "edge183952": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18156956", 
 "@target": "Tn18157136"
 }
@@ -1255,19 +1591,19 @@
 }, 
 "Tn18156969": {
 "edge184144": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18156969", 
 "@target": "Tn18156967"
 }, 
 "edge184146": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18156969", 
 "@target": "Tn18157192"
 }
 }, 
 "Tn18156970": {
 "edge183696": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18156970", 
 "@target": "Tn18156952"
 }, 
@@ -1344,7 +1680,7 @@
 "@target": "Tn18157027"
 }, 
 "edge184088": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18156981", 
 "@target": "Tn18157178"
 }
@@ -1416,7 +1752,7 @@
 "@target": "Tn18157284"
 }, 
 "edge184270": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18156991", 
 "@target": "Tn18157314"
 }
@@ -1440,19 +1776,19 @@
 "@target": "Tn18157236"
 }, 
 "edge184042": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18156996", 
 "@target": "Tn18157032"
 }
 }, 
 "Tn18156997": {
 "edge184004": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18156997", 
 "@target": "Tn18157040"
 }, 
 "edge184006": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18156997", 
 "@target": "Tn18157144"
 }
@@ -1464,14 +1800,14 @@
 "@target": "Tn18157311"
 }, 
 "edge184118": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18156998", 
 "@target": "Tn18157204"
 }
 }, 
 "Tn18157004": {
 "edge183560": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18157004", 
 "@target": "Tn18157079"
 }, 
@@ -1548,7 +1884,7 @@
 "@target": "Tn18157055"
 }, 
 "edge183706": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18157015", 
 "@target": "Tn18157146"
 }
@@ -1584,7 +1920,7 @@
 "@target": "Tn18156976"
 }, 
 "edge184162": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18157019", 
 "@target": "Tn18157329"
 }
@@ -1663,7 +1999,7 @@
 }, 
 "Tn18157034": {
 "edge184186": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18157034", 
 "@target": "Tn18157176"
 }, 
@@ -1740,7 +2076,7 @@
 "@target": "Tn18157281"
 }, 
 "edge183792": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18157046", 
 "@target": "Tn18157060"
 }
@@ -1788,14 +2124,14 @@
 "@target": "Tn18157200"
 }, 
 "edge183796": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18157060", 
 "@target": "Tn18156964"
 }
 }, 
 "Tn18157061": {
 "edge183730": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18157061", 
 "@target": "Tn18157309"
 }, 
@@ -1944,7 +2280,7 @@
 "@target": "Tn18157312"
 }, 
 "edge184128": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18157085", 
 "@target": "Tn18157207"
 }
@@ -1999,12 +2335,12 @@
 }, 
 "Tn18157101": {
 "edge184082": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18157101", 
 "@target": "Tn18157044"
 }, 
 "edge184084": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18157101", 
 "@target": "Tn18156981"
 }
@@ -2059,7 +2395,7 @@
 }, 
 "Tn18157109": {
 "edge183556": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18157109", 
 "@target": "Tn18156958"
 }, 
@@ -2107,12 +2443,12 @@
 }, 
 "Tn18157120": {
 "edge184058": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18157120", 
 "@target": "Tn18157092"
 }, 
 "edge184060": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18157120", 
 "@target": "Tn18157139"
 }
@@ -2124,14 +2460,14 @@
 "@target": "Tn18157006"
 }, 
 "edge184280": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18157125", 
 "@target": "Tn18157217"
 }
 }, 
 "Tn18157126": {
 "edge184036": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18157126", 
 "@target": "Tn18157324"
 }, 
@@ -2167,7 +2503,7 @@
 }, 
 "Tn18157129": {
 "edge183674": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18157129", 
 "@target": "Tn18157012"
 }, 
@@ -2191,12 +2527,12 @@
 }, 
 "Tn18157133": {
 "edge184204": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18157133", 
 "@target": "Tn18157135"
 }, 
 "edge184206": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18157133", 
 "@target": "Tn18157187"
 }
@@ -2215,7 +2551,7 @@
 }, 
 "Tn18157136": {
 "edge183954": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18157136", 
 "@target": "Tn18157094"
 }, 
@@ -2227,7 +2563,7 @@
 }, 
 "Tn18157137": {
 "edge184154": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18157137", 
 "@target": "Tn18157203"
 }, 
@@ -2275,12 +2611,12 @@
 }, 
 "Tn18157146": {
 "edge183708": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18157146", 
 "@target": "Tn18157021"
 }, 
 "edge183710": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18157146", 
 "@target": "Tn18157026"
 }
@@ -2304,7 +2640,7 @@
 "@target": "Tn18157113"
 }, 
 "edge183968": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18157149", 
 "@target": "Tn18156948"
 }
@@ -2364,7 +2700,7 @@
 "@target": "Tn18157305"
 }, 
 "edge183818": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18157156", 
 "@target": "Tn18157326"
 }
@@ -2376,7 +2712,7 @@
 "@target": "Tn18157264"
 }, 
 "edge184076": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18157157", 
 "@target": "Tn18157302"
 }
@@ -2436,7 +2772,7 @@
 "@target": "Tn18157052"
 }, 
 "edge184176": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18157168", 
 "@target": "Tn18156949"
 }
@@ -2467,7 +2803,7 @@
 }, 
 "Tn18157179": {
 "edge183866": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18157179", 
 "@target": "Tn18157174"
 }, 
@@ -2479,7 +2815,7 @@
 }, 
 "Tn18157180": {
 "edge183992": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18157180", 
 "@target": "Tn18156979"
 }, 
@@ -2556,7 +2892,7 @@
 "@target": "Tn18157164"
 }, 
 "edge184184": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18157196", 
 "@target": "Tn18157034"
 }
@@ -2664,7 +3000,7 @@
 "@target": "Tn18157088"
 }, 
 "edge184056": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18157214", 
 "@target": "Tn18157120"
 }
@@ -2683,12 +3019,12 @@
 }, 
 "Tn18157218": {
 "edge184200": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18157218", 
 "@target": "Tn18157210"
 }, 
 "edge184202": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18157218", 
 "@target": "Tn18157133"
 }
@@ -2700,7 +3036,7 @@
 "@target": "Tn18157003"
 }, 
 "edge183592": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18157219", 
 "@target": "Tn18157256"
 }
@@ -2772,7 +3108,7 @@
 "@target": "Tn18157271"
 }, 
 "edge183962": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18157229", 
 "@target": "Tn18156975"
 }
@@ -2875,7 +3211,7 @@
 }, 
 "Tn18157241": {
 "edge183700": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18157241", 
 "@target": "Tn18157154"
 }, 
@@ -2952,7 +3288,7 @@
 "@target": "Tn18157320"
 }, 
 "edge183658": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18157260", 
 "@target": "Tn18157206"
 }
@@ -2976,14 +3312,14 @@
 "@target": "Tn18156951"
 }, 
 "edge184094": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18157262", 
 "@target": "Tn18157140"
 }
 }, 
 "Tn18157263": {
 "edge183722": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18157263", 
 "@target": "Tn18157124"
 }, 
@@ -3072,7 +3408,7 @@
 "@target": "Tn18157190"
 }, 
 "edge184242": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18157275", 
 "@target": "Tn18157172"
 }
@@ -3120,7 +3456,7 @@
 "@target": "Tn18157296"
 }, 
 "edge183990": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18157279", 
 "@target": "Tn18157180"
 }
@@ -3132,14 +3468,14 @@
 "@target": "Tn18156959"
 }, 
 "edge183830": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18157282", 
 "@target": "Tn18157299"
 }
 }, 
 "Tn18157283": {
 "edge184068": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18157283", 
 "@target": "Tn18157280"
 }, 
@@ -3151,12 +3487,12 @@
 }, 
 "Tn18157288": {
 "edge184112": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18157288", 
 "@target": "Tn18157104"
 }, 
 "edge184114": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18157288", 
 "@target": "Tn18156998"
 }
@@ -3247,12 +3583,12 @@
 }, 
 "Tn18157302": {
 "edge184078": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18157302", 
 "@target": "Tn18157071"
 }, 
 "edge184080": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18157302", 
 "@target": "Tn18157101"
 }
@@ -3336,7 +3672,7 @@
 "@target": "Tn18157298"
 }, 
 "edge184002": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18157315", 
 "@target": "Tn18156997"
 }
@@ -3367,12 +3703,12 @@
 }, 
 "Tn18157322": {
 "edge183824": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18157322", 
 "@target": "Tn18157167"
 }, 
 "edge183826": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18157322", 
 "@target": "Tn18157282"
 }
@@ -3391,12 +3727,12 @@
 }, 
 "Tn18157326": {
 "edge183820": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18157326", 
 "@target": "Tn18157294"
 }, 
 "edge183822": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18157326", 
 "@target": "Tn18157322"
 }
@@ -3420,7 +3756,7 @@
 "@target": "Tn18157247"
 }, 
 "edge184166": {
-"@length": 0.0, 
+"@length": 0, 
 "@source": "Tn18157329", 
 "@target": "Tn18157103"
 }
