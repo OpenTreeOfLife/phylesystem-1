@@ -57,22 +57,115 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2019-03-14T16:47:40.331Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:curatorName": "susan-holder", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}, 
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": "$1"
+}, 
+"old": {
+"$": "^(\\S*\\s+\\S*).*"
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2019-03-14T16:47:40.331Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"susan-holder"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S23746"
 }, 
+"^ot:focalCladeOTTTaxonName": "", 
 "^ot:otusElementOrder": [
 "Tls67857"
 ], 
 "^ot:studyId": "ot_1898", 
+"^ot:studyPublication": {
+"@href": ""
+}, 
 "^ot:studyPublicationReference": "Alimadadi N., Pourianfar H., Amoozegar M., Zabihi S., Mahdizadeh V., & Shahzadeh fazeli S. 2019. Molecular identification of some wild medicinal macrofungi from Northern Iran. Mycosphere, .", 
 "^ot:studyYear": 2019, 
+"^ot:tag": [], 
 "^ot:taxonLinkPrefixes": {
 "@ubio": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:", 
 "@uniprot": "http://purl.uniprot.org/taxonomy/"
@@ -95,8 +188,9 @@
 "^skos:historyNote": "Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlOTUWriter@2a92e382 $Rev$", 
 "otuById": {
 "Tl3543199": {
-"^ot:altLabel": "Ganoderma adspersum", 
 "^ot:originalLabel": "Ganoderma adspersum DP60_AM269770", 
+"^ot:ottId": 413027, 
+"^ot:ottTaxonName": "Ganoderma adspersum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 60586, 
 "@tb:identifier.taxonVariant": 134146, 
@@ -105,8 +199,9 @@
 }
 }, 
 "Tl3543200": {
-"^ot:altLabel": "Trametes suaveolens", 
 "^ot:originalLabel": "Trametes suaveolens FP.102529.sp_JN164966", 
+"^ot:ottId": 1044752, 
+"^ot:ottTaxonName": "Trametes suaveolens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 29301, 
 "@tb:identifier.taxonVariant": 68308, 
@@ -121,8 +216,9 @@
 "^ot:originalLabel": "Polyporellus brumalis PB.4_KP283490"
 }, 
 "Tl3543203": {
-"^ot:altLabel": "Trametes meyenii", 
 "^ot:originalLabel": "Trametes meyenii FPRI.401_JN164933", 
+"^ot:ottId": 151441, 
+"^ot:ottTaxonName": "Trametes meyenii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 617520, 
 "@tb:identifier.taxonVariant": 826579, 
@@ -140,8 +236,9 @@
 }
 }, 
 "Tl3543205": {
-"^ot:altLabel": "Fomes fomentarius", 
 "^ot:originalLabel": "Fomes fomentarius IB20130033_KM360129", 
+"^ot:ottId": 518286, 
+"^ot:ottTaxonName": "Fomes fomentarius", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 11404, 
 "@tb:identifier.taxonVariant": 27245, 
@@ -153,8 +250,9 @@
 "^ot:originalLabel": "Trametes sp. GPS 119 MK050612"
 }, 
 "Tl3543207": {
-"^ot:altLabel": "Trametes villosa", 
 "^ot:originalLabel": "Trametes villosa FP.71974.R_JN164969", 
+"^ot:ottId": 136855, 
+"^ot:ottTaxonName": "Trametes villosa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 69534, 
 "@tb:identifier.taxonVariant": 145390, 
@@ -176,8 +274,9 @@
 }
 }, 
 "Tl3543210": {
-"^ot:altLabel": "Trametes membranacea", 
 "^ot:originalLabel": "Trametes membranacea PRSC.82_JN164945", 
+"^ot:ottId": 128892, 
+"^ot:ottTaxonName": "Trametes membranacea", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 605525, 
 "@tb:identifier.taxonVariant": 808094, 
@@ -195,8 +294,9 @@
 }
 }, 
 "Tl3543212": {
-"^ot:altLabel": "Ganoderma zonatum", 
 "^ot:originalLabel": "Ganoderma zonatum FL.02_KJ143921", 
+"^ot:ottId": 512983, 
+"^ot:ottTaxonName": "Ganoderma zonatum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 108608, 
 "@tb:identifier.taxonVariant": 187078, 
@@ -205,8 +305,9 @@
 }
 }, 
 "Tl3543213": {
-"^ot:altLabel": "Ganoderma curtisii", 
 "^ot:originalLabel": "Ganoderma curtisii CBS.100131_JQ781848", 
+"^ot:ottId": 1051628, 
+"^ot:ottTaxonName": "Ganoderma curtisii", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 633878, 
 "@tb:identifier.taxonVariant": 848890, 
@@ -259,8 +360,9 @@
 }
 }, 
 "Tl3543220": {
-"^ot:altLabel": "Ganoderma adspersum", 
 "^ot:originalLabel": "Ganoderma adspersum GPS_047_MK050593", 
+"^ot:ottId": 413027, 
+"^ot:ottTaxonName": "Ganoderma adspersum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 60586, 
 "@tb:identifier.taxonVariant": 134146, 
@@ -289,8 +391,9 @@
 }
 }, 
 "Tl3543223": {
-"^ot:altLabel": "Trametes pubescens", 
 "^ot:originalLabel": "Trametes pubescens FP.101414.sp_JN164963", 
+"^ot:ottId": 359653, 
+"^ot:ottTaxonName": "Trametes pubescens", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 148839, 
 "@tb:identifier.taxonVariant": 435317, 
@@ -312,8 +415,9 @@
 }
 }, 
 "Tl3543226": {
-"^ot:altLabel": "Trametes ochracea", 
 "^ot:originalLabel": "Trametes ochracea HHB.13445.sp_JN164954", 
+"^ot:ottId": 301277, 
+"^ot:ottTaxonName": "Trametes ochracea", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 29300, 
 "@tb:identifier.taxonVariant": 68305, 
@@ -322,8 +426,9 @@
 }
 }, 
 "Tl3543227": {
-"^ot:altLabel": "Fomes fomentarius", 
 "^ot:originalLabel": "Fomes fomentarius IB20130011_KM360125", 
+"^ot:ottId": 518286, 
+"^ot:ottTaxonName": "Fomes fomentarius", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 11404, 
 "@tb:identifier.taxonVariant": 27245, 
@@ -338,8 +443,9 @@
 "^ot:originalLabel": "Trametes betulina HHB.9942.sp_JN164983"
 }, 
 "Tl3543230": {
-"^ot:altLabel": "Ganoderma tropicum", 
 "^ot:originalLabel": "Ganoderma tropicum HMAS_263143_JF915410", 
+"^ot:ottId": 37232, 
+"^ot:ottTaxonName": "Ganoderma tropicum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 61628, 
 "@tb:identifier.taxonVariant": 135502, 
@@ -361,8 +467,9 @@
 }
 }, 
 "Tl3543233": {
-"^ot:altLabel": "Ganoderma sichuanense", 
 "^ot:originalLabel": "Ganoderma sichuanense HMAS251146_JF915401", 
+"^ot:ottId": 649934, 
+"^ot:ottTaxonName": "Ganoderma sichuanense", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 631197, 
 "@tb:identifier.taxonVariant": 846209, 
@@ -370,8 +477,9 @@
 }
 }, 
 "Tl3543234": {
-"^ot:altLabel": "Trametes cubensis", 
 "^ot:originalLabel": "Trametes cubensis TJV.93.213.sp_JN164923", 
+"^ot:ottId": 25232, 
+"^ot:ottTaxonName": "Trametes cubensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 605526, 
 "@tb:identifier.taxonVariant": 808095, 
@@ -388,8 +496,9 @@
 "^ot:originalLabel": "Ganoderma sp. GPS 017 MK050590"
 }, 
 "Tl3543238": {
-"^ot:altLabel": "Ganoderma resinaceum", 
 "^ot:originalLabel": "Ganoderma resinaceum CBS_152.27_JQ520200", 
+"^ot:ottId": 908427, 
+"^ot:ottTaxonName": "Ganoderma resinaceum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 60593, 
 "@tb:identifier.taxonVariant": 134153, 
@@ -433,8 +542,9 @@
 }
 }, 
 "Tl3543246": {
-"^ot:altLabel": "Ganoderma oregonense", 
 "^ot:originalLabel": "Ganoderma oregonense CBS.265.88_JQ781875", 
+"^ot:ottId": 37231, 
+"^ot:ottTaxonName": "Ganoderma oregonense", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 61625, 
 "@tb:identifier.taxonVariant": 135500, 
@@ -476,8 +586,9 @@
 }
 }, 
 "Tl3543251": {
-"^ot:altLabel": "Trametes ectypa", 
 "^ot:originalLabel": "Trametes ectypa FP.106037.T_JN164929", 
+"^ot:ottId": 792832, 
+"^ot:ottTaxonName": "Trametes ectypa", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 605529, 
 "@tb:identifier.taxonVariant": 808098, 
@@ -485,8 +596,9 @@
 }
 }, 
 "Tl3543252": {
-"^ot:altLabel": "Fomes fomentarius", 
 "^ot:originalLabel": "Fomes fomentarius Darabkola_21_MK050587", 
+"^ot:ottId": 518286, 
+"^ot:ottTaxonName": "Fomes fomentarius", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 11404, 
 "@tb:identifier.taxonVariant": 27245, 
@@ -505,8 +617,9 @@
 }
 }, 
 "Tl3543254": {
-"^ot:altLabel": "Ganoderma multipileum", 
 "^ot:originalLabel": "Ganoderma multipileum Dai.9447_KJ143914", 
+"^ot:ottId": 649942, 
+"^ot:ottTaxonName": "Ganoderma multipileum", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 615163, 
 "@tb:identifier.taxonVariant": 822714, 
@@ -524,8 +637,9 @@
 }
 }, 
 "Tl3543256": {
-"^ot:altLabel": "Fomes fomentarius", 
 "^ot:originalLabel": "Fomes fomentarius XSD.29_EU273503", 
+"^ot:ottId": 518286, 
+"^ot:ottTaxonName": "Fomes fomentarius", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 11404, 
 "@tb:identifier.taxonVariant": 27245, 
@@ -548,7 +662,19 @@
 "Tr116435": {
 "@label": "result", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn18225840", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 58, 
 "^tb:quality.tree": "Unrated", 
