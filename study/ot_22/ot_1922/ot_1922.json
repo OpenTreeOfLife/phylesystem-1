@@ -50,22 +50,115 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2019-03-14T18:01:58.981Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"searchContext": {
+"$": "Fungi"
 }, 
-"^ot:curatorName": "susan-holder", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}, 
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": "$1"
+}, 
+"old": {
+"$": "^(\\S*\\s+\\S*).*"
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2019-03-14T18:01:58.981Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"susan-holder"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S23759"
 }, 
+"^ot:focalCladeOTTTaxonName": "", 
 "^ot:otusElementOrder": [
 "Tls66829"
 ], 
 "^ot:studyId": "ot_1922", 
+"^ot:studyPublication": {
+"@href": ""
+}, 
 "^ot:studyPublicationReference": "Nie Y. 2018. A taxonomic revision of the genus Conidiobolus (Ancylistanceae, Entomophthorales) reveals five new genera. Mycosphere, .", 
 "^ot:studyYear": 2018, 
+"^ot:tag": [], 
 "^ot:taxonLinkPrefixes": {
 "@ubio": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:", 
 "@uniprot": "http://purl.uniprot.org/taxonomy/"
@@ -97,8 +190,9 @@
 "^ot:originalLabel": "Conidiobolus  firmipilleus ARSEF6384"
 }, 
 "Tl3438201": {
-"^ot:altLabel": "Conidiobolus osmodes", 
 "^ot:originalLabel": "Conidiobolus osmodes ARSEF79", 
+"^ot:ottId": 178760, 
+"^ot:ottTaxonName": "Conidiobolus osmodes", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 168965, 
 "@tb:identifier.taxonVariant": 243421, 
@@ -107,16 +201,24 @@
 }
 }, 
 "Tl3438202": {
-"^ot:originalLabel": "Conidiobolus mycophilus ATCC16199"
+"^ot:originalLabel": "Conidiobolus mycophilus ATCC16199", 
+"^ot:ottId": 3687142, 
+"^ot:ottTaxonName": "Conidiobolus mycophilus"
 }, 
 "Tl3438203": {
-"^ot:originalLabel": "Conidiobolus couchii ATCC18152"
+"^ot:originalLabel": "Conidiobolus couchii ATCC18152", 
+"^ot:ottId": 279295, 
+"^ot:ottTaxonName": "Conidiobolus couchii"
 }, 
 "Tl3438204": {
-"^ot:originalLabel": "Conidiobolus nodosus ATCC16577"
+"^ot:originalLabel": "Conidiobolus nodosus ATCC16577", 
+"^ot:ottId": 324968, 
+"^ot:ottTaxonName": "Conidiobolus nodosus"
 }, 
 "Tl3438205": {
 "^ot:originalLabel": "Erynia conica", 
+"^ot:ottId": 702060, 
+"^ot:ottTaxonName": "Erynia conica", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 168972, 
 "@tb:identifier.taxonVariant": 243427, 
@@ -125,8 +227,9 @@
 }
 }, 
 "Tl3438206": {
-"^ot:altLabel": "Conidiobolus thromboides", 
 "^ot:originalLabel": "Conidiobolus thromboides ATCC12587", 
+"^ot:ottId": 925119, 
+"^ot:ottTaxonName": "Conidiobolus thromboides", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 88791, 
 "@tb:identifier.taxonVariant": 167674, 
@@ -135,8 +238,9 @@
 }
 }, 
 "Tl3438207": {
-"^ot:altLabel": "Conidiobolus osmodes", 
 "^ot:originalLabel": "Conidiobolus osmodes RCEF4447", 
+"^ot:ottId": 178760, 
+"^ot:ottTaxonName": "Conidiobolus osmodes", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 168965, 
 "@tb:identifier.taxonVariant": 243421, 
@@ -145,17 +249,24 @@
 }
 }, 
 "Tl3438208": {
-"^ot:originalLabel": "Conidiobolus iuxtagenitus ARSEF6378"
+"^ot:originalLabel": "Conidiobolus iuxtagenitus ARSEF6378", 
+"^ot:ottId": 3687163, 
+"^ot:ottTaxonName": "Conidiobolus iuxtagenitus"
 }, 
 "Tl3438209": {
-"^ot:originalLabel": "Conidiobolus chlamydosporus  ATCC12242"
+"^ot:originalLabel": "Conidiobolus chlamydosporus  ATCC12242", 
+"^ot:ottId": 264257, 
+"^ot:ottTaxonName": "Conidiobolus chlamydosporus"
 }, 
 "Tl3438210": {
-"^ot:originalLabel": "Conidiobolus adiaeretus ARSEF451"
+"^ot:originalLabel": "Conidiobolus adiaeretus ARSEF451", 
+"^ot:ottId": 3687166, 
+"^ot:ottTaxonName": "Conidiobolus adiaeretus"
 }, 
 "Tl3438211": {
-"^ot:altLabel": "Conidiobolus heterosporus", 
 "^ot:originalLabel": "Conidiobolus heterosporus RCEF4430", 
+"^ot:ottId": 279297, 
+"^ot:ottTaxonName": "Conidiobolus heterosporus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 626642, 
 "@tb:identifier.taxonVariant": 839748, 
@@ -164,6 +275,8 @@
 }, 
 "Tl3438212": {
 "^ot:originalLabel": "Entomophthora muscae", 
+"^ot:ottId": 167668, 
+"^ot:ottTaxonName": "Entomophthora muscae", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 10119, 
 "@tb:identifier.taxonVariant": 24185, 
@@ -172,11 +285,14 @@
 }
 }, 
 "Tl3438213": {
-"^ot:originalLabel": "Conidiobolus undulatus ATCC12943"
+"^ot:originalLabel": "Conidiobolus undulatus ATCC12943", 
+"^ot:ottId": 3687144, 
+"^ot:ottTaxonName": "Conidiobolus undulatus"
 }, 
 "Tl3438214": {
-"^ot:altLabel": "Conidiobolus thromboides", 
 "^ot:originalLabel": "Conidiobolus thromboides RCEF4492", 
+"^ot:ottId": 925119, 
+"^ot:ottTaxonName": "Conidiobolus thromboides", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 88791, 
 "@tb:identifier.taxonVariant": 167674, 
@@ -185,8 +301,9 @@
 }
 }, 
 "Tl3438215": {
-"^ot:altLabel": "Conidiobolus bangalorensis", 
 "^ot:originalLabel": "Conidiobolus bangalorensis ARSEF449", 
+"^ot:ottId": 980700, 
+"^ot:ottTaxonName": "Conidiobolus bangalorensis", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 323226, 
 "@tb:identifier.taxonVariant": 365857, 
@@ -195,17 +312,22 @@
 }
 }, 
 "Tl3438216": {
-"^ot:originalLabel": "Conidiobolus terrestris ATCC16198"
+"^ot:originalLabel": "Conidiobolus terrestris ATCC16198", 
+"^ot:ottId": 3687148, 
+"^ot:ottTaxonName": "Conidiobolus terrestris"
 }, 
 "Tl3438217": {
-"^ot:originalLabel": "Conidiobolus polytocus ATCC12244"
+"^ot:originalLabel": "Conidiobolus polytocus ATCC12244", 
+"^ot:ottId": 264244, 
+"^ot:ottTaxonName": "Conidiobolus polytocus"
 }, 
 "Tl3438218": {
 "^ot:originalLabel": "Conidiobolus lichenicolus ATCC16200"
 }, 
 "Tl3438219": {
-"^ot:altLabel": "Conidiobolus coronatus", 
 "^ot:originalLabel": "Conidiobolus coronatus AFTLO137", 
+"^ot:ottId": 167675, 
+"^ot:ottTaxonName": "Conidiobolus coronatus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6822, 
 "@tb:identifier.taxonVariant": 16548, 
@@ -214,14 +336,19 @@
 }
 }, 
 "Tl3438220": {
-"^ot:originalLabel": "Conidiobolus paulus ARSEF450"
+"^ot:originalLabel": "Conidiobolus paulus ARSEF450", 
+"^ot:ottId": 3687143, 
+"^ot:ottTaxonName": "Conidiobolus paulus"
 }, 
 "Tl3438221": {
-"^ot:originalLabel": "Conidiobolus mycophagus ATCC16201"
+"^ot:originalLabel": "Conidiobolus mycophagus ATCC16201", 
+"^ot:ottId": 3687155, 
+"^ot:ottTaxonName": "Conidiobolus mycophagus"
 }, 
 "Tl3438222": {
-"^ot:altLabel": "Conidiobolus lamprauges", 
 "^ot:originalLabel": "Conidiobolus lamprauges ARSEF2338", 
+"^ot:ottId": 178190, 
+"^ot:ottTaxonName": "Conidiobolus lamprauges", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 6824, 
 "@tb:identifier.taxonVariant": 16553, 
@@ -230,8 +357,9 @@
 }
 }, 
 "Tl3438223": {
-"^ot:altLabel": "Conidiobolus rhysosporus", 
 "^ot:originalLabel": "Conidiobolus rhysosporus ATCC12588", 
+"^ot:ottId": 1061425, 
+"^ot:ottTaxonName": "Conidiobolus rhysosporus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 168967, 
 "@tb:identifier.taxonVariant": 243423, 
@@ -240,20 +368,25 @@
 }
 }, 
 "Tl3438224": {
-"^ot:originalLabel": "Conidiobolus polyspermus ATCC14444"
+"^ot:originalLabel": "Conidiobolus polyspermus ATCC14444", 
+"^ot:ottId": 3687165, 
+"^ot:ottTaxonName": "Conidiobolus polyspermus"
 }, 
 "Tl3438225": {
 "^ot:originalLabel": "Conidiobolus dabieshanensis RCEF6329"
 }, 
 "Tl3438226": {
-"^ot:originalLabel": "Conidiobolus macrosporus ATCC16578"
+"^ot:originalLabel": "Conidiobolus macrosporus ATCC16578", 
+"^ot:ottId": 3687161, 
+"^ot:ottTaxonName": "Conidiobolus macrosporus"
 }, 
 "Tl3438227": {
 "^ot:originalLabel": "Conidiobolus mirabilis RCEF6338"
 }, 
 "Tl3438228": {
-"^ot:altLabel": "Conidiobolus brefeldianus", 
 "^ot:originalLabel": "Conidiobolus brefeldianus ARSEF452", 
+"^ot:ottId": 1061412, 
+"^ot:ottTaxonName": "Conidiobolus brefeldianus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 168963, 
 "@tb:identifier.taxonVariant": 243419, 
@@ -262,17 +395,24 @@
 }
 }, 
 "Tl3438229": {
-"^ot:originalLabel": "Conidiobolus khandalensis ATCC15162"
+"^ot:originalLabel": "Conidiobolus khandalensis ATCC15162", 
+"^ot:ottId": 3687164, 
+"^ot:ottTaxonName": "Conidiobolus khandalensis"
 }, 
 "Tl3438230": {
-"^ot:originalLabel": "Conidiobolus lachnodes ARSEF700"
+"^ot:originalLabel": "Conidiobolus lachnodes ARSEF700", 
+"^ot:ottId": 3687168, 
+"^ot:ottTaxonName": "Conidiobolus lachnodes"
 }, 
 "Tl3438231": {
-"^ot:originalLabel": "Conidiobolus stromoideus ATCC15430"
+"^ot:originalLabel": "Conidiobolus stromoideus ATCC15430", 
+"^ot:ottId": 325084, 
+"^ot:ottTaxonName": "Conidiobolus stromoideus"
 }, 
 "Tl3438232": {
-"^ot:altLabel": "Conidiobolus pumilus", 
 "^ot:originalLabel": "Conidiobolus pumilus ARSEF453", 
+"^ot:ottId": 920205, 
+"^ot:ottTaxonName": "Conidiobolus pumilus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 168966, 
 "@tb:identifier.taxonVariant": 243422, 
@@ -281,14 +421,19 @@
 }
 }, 
 "Tl3438233": {
-"^ot:originalLabel": "Conidiobolus sinensis RCEF4952"
+"^ot:originalLabel": "Conidiobolus sinensis RCEF4952", 
+"^ot:ottId": 802858, 
+"^ot:ottTaxonName": "Conidiobolus sinensis"
 }, 
 "Tl3438234": {
-"^ot:originalLabel": "Conidiobolus gonimodes ATCC14445"
+"^ot:originalLabel": "Conidiobolus gonimodes ATCC14445", 
+"^ot:ottId": 73493, 
+"^ot:ottTaxonName": "Conidiobolus gonimodes"
 }, 
 "Tl3438235": {
-"^ot:altLabel": "Conidiobolus antarcticus", 
 "^ot:originalLabel": "Conidiobolus antarcticus ARSEF6913", 
+"^ot:ottId": 980701, 
+"^ot:ottTaxonName": "Conidiobolus antarcticus", 
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 323227, 
 "@tb:identifier.taxonVariant": 365858, 
@@ -297,19 +442,27 @@
 }
 }, 
 "Tl3438236": {
-"^ot:originalLabel": "Conidiobolus lobatus ATCC18153"
+"^ot:originalLabel": "Conidiobolus lobatus ATCC18153", 
+"^ot:ottId": 325094, 
+"^ot:ottTaxonName": "Conidiobolus lobatus"
 }, 
 "Tl3438237": {
 "^ot:originalLabel": "Conidiobolus stilbeus RCEF5584"
 }, 
 "Tl3438238": {
-"^ot:originalLabel": "Conidiobolus iuxtagenitus RCEF4445"
+"^ot:originalLabel": "Conidiobolus iuxtagenitus RCEF4445", 
+"^ot:ottId": 3687163, 
+"^ot:ottTaxonName": "Conidiobolus iuxtagenitus"
 }, 
 "Tl3438239": {
-"^ot:originalLabel": "Conidiobolus megalotocus var  indicus ATCC28854"
+"^ot:originalLabel": "Conidiobolus megalotocus var  indicus ATCC28854", 
+"^ot:ottId": 3687153, 
+"^ot:ottTaxonName": "Conidiobolus megalotocus"
 }, 
 "Tl3438240": {
-"^ot:originalLabel": "Conidiobolus denaeosporus ATCC12940"
+"^ot:originalLabel": "Conidiobolus denaeosporus ATCC12940", 
+"^ot:ottId": 264242, 
+"^ot:ottTaxonName": "Conidiobolus denaeosporus"
 }
 }
 }
@@ -326,7 +479,19 @@
 "Tr115320": {
 "@label": "PHYLIP 1+", 
 "@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "", 
+"^ot:branchLengthTimeUnit": "", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "Tn18044051", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
 "^tb:kind.tree": "Species Tree", 
 "^tb:ntax.tree": 43, 
 "^tb:quality.tree": "Unrated", 
