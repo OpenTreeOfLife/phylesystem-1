@@ -66,13 +66,23 @@
 "substitutions": {
 "substitution": [
 {
-"@active": false, 
+"@active": true, 
 "@valid": true, 
 "new": {
-"$": ""
+"$": "$1 $2"
 }, 
 "old": {
-"$": ""
+"$": "^(\\S*)_(\\S*)_.*"
+}
+}, 
+{
+"@active": true, 
+"@valid": true, 
+"new": {
+"$": "$1"
+}, 
+"old": {
+"$": "^(\\S*\\s+\\S*).*"
 }
 }
 ]
@@ -133,7 +143,8 @@
 "^ot:candidateTreeForSynthesis": [], 
 "^ot:comment": "", 
 "^ot:curatorName": [
-"metalofis"
+"metalofis", 
+"Benjamin Redelings"
 ], 
 "^ot:dataDeposit": {
 "@href": ""
