@@ -815,29 +815,23 @@
 "@label": "TREE1", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
-"^ot:branchLengthMode": "", 
-"^ot:branchLengthTimeUnit": "", 
-"^ot:curatedType": "", 
-"^ot:inGroupClade": "", 
+"^ot:branchLengthMode": "ot:undefined", 
+"^ot:curatedType": "Bayesian inference ", 
+"^ot:inGroupClade": "tree1_ROOT", 
 "^ot:nodeLabelMode": "", 
 "^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:reasonsToExcludeFromSynthesis": [], 
-"^ot:rootNodeId": "node1", 
-"^ot:specifiedRoot": "", 
+"^ot:rootNodeId": "tree1_ROOT", 
+"^ot:specifiedRoot": "tree1_ROOT", 
 "^ot:tag": [], 
-"^ot:unrootedTree": true, 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node1": {
 "edge1": {
 "@length": 6.260191, 
 "@source": "node1", 
 "@target": "node2"
-}, 
-"edge246": {
-"@length": 22.844169, 
-"@source": "node1", 
-"@target": "node247"
 }
 }, 
 "node100": {
@@ -2363,12 +2357,21 @@
 "@source": "node99", 
 "@target": "node100"
 }
+}, 
+"tree1_ROOT": {
+"edge246": {
+"@length": 22.844169, 
+"@source": "tree1_ROOT", 
+"@target": "node247"
+}, 
+"tree1_ROOT_EDGE": {
+"@source": "tree1_ROOT", 
+"@target": "node1"
+}
 }
 }, 
 "nodeById": {
-"node1": {
-"@root": true
-}, 
+"node1": {}, 
 "node10": {
 "@otu": "otu3"
 }, 
@@ -2882,7 +2885,10 @@
 "@otu": "otu53"
 }, 
 "node98": {}, 
-"node99": {}
+"node99": {}, 
+"tree1_ROOT": {
+"@root": true
+}
 }
 }
 }
