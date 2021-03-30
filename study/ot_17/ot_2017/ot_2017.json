@@ -123,7 +123,7 @@
 "@type": "newick", 
 "@url": "/curator/download/supporting_files.doc.8c0881be5f213e38.666f72496d706f72742e74726565.tree", 
 "description": {
-"$": "Supplementary data 7"
+"$": "Supplementary data 7\nTo create, take original file, then in R:\ntree <- read.tree(\"1-s2.0-S1055790317300477-mmc7.new\")\ntips <- strsplit(tree$tip.label, \"_\")\ng <- unlist(lapply(tips, \"[\", 1))\ns <- unlist(lapply(tips, \"[\", 2))\nspp <- paste(g, s, sep=\"_\")\ntree2 <- tree\ntree2$tip.label <- as.character(spp)\nindices <- 1:length(tree$tip.label)\ndups <- spp[duplicated(spp)]\ntoReplace <- indices[tree2$tip.label %in% dups]\ntree2$tip.label[tree2$tip.label %in% dups] <- tree$tip.label[toReplace]\nwrite.tree(tree2, \"forImport.tree\")"
 }, 
 "sourceForTree": [
 {
