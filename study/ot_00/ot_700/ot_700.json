@@ -60,6 +60,7 @@
 "@humanMessageType": "NONE", 
 "@severity": "INFO", 
 "data": {
+"autoAcceptExactMatches": false, 
 "searchContext": {
 "$": "All life"
 }, 
@@ -198,6 +199,31 @@
 ]
 }
 ]
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2021-06-16T16:12:51.759Z", 
+"@description": "Describes external namesets merged into this study", 
+"@id": "merged-namesets-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "MERGED_NAMESET_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"namesets": {
+"nameset": []
 }
 }, 
 "refersTo": {
@@ -11100,7 +11126,11 @@
 "^ot:nodeLabelMode": "", 
 "^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
-"^ot:reasonsToExcludeFromSynthesis": [], 
+"^ot:reasonsToExcludeFromSynthesis": [
+{
+"$": "We should hold off on adding this until we support constraints for Ophistokonta and Excavata"
+}
+], 
 "^ot:rootNodeId": "tree1_ROOT", 
 "^ot:specifiedRoot": "tree1_ROOT", 
 "^ot:tag": [], 
