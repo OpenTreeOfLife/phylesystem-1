@@ -35,13 +35,136 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2022-12-06T16:54:51.229Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"autoAcceptExactMatches": false, 
+"searchContext": {
+"$": "All life"
 }, 
-"^ot:curatorName": "BruceLieberman", 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2022-12-06T16:54:51.229Z", 
+"@description": "Describes external namesets merged into this study", 
+"@id": "merged-namesets-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "MERGED_NAMESET_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"namesets": {
+"nameset": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2022-12-06T16:54:51.229Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": [
+{
+"@filename": "PASTED.tre", 
+"@size": 88, 
+"@type": "newick", 
+"@url": "/curator/download/supporting_files.doc.ab29897f86c41652.5041535445442e747265.tre", 
+"description": {
+"$": "Source data for tree(s) 'tree2'"
+}, 
+"sourceForTree": [
+{
+"$": "tree2"
+}
+]
+}
+]
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+}, 
+"^ot:candidateTreeForSynthesis": [], 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"BruceLieberman"
+], 
+"^ot:dataDeposit": {
+"@href": ""
+}, 
+"^ot:focalCladeOTTTaxonName": "", 
 "^ot:otusElementOrder": [
 "otus1"
 ], 
@@ -51,6 +174,7 @@
 }, 
 "^ot:studyPublicationReference": "Vacelet, J. (2012). Treatise Online no. 49: Part E, Revised, Volume 4, Chapter 4C: Hypercalcified Extant Calcarea. Treatise Online, 0(0). https://doi.org/10.17161/to.v0i0.4323\n", 
 "^ot:studyYear": 2012, 
+"^ot:tag": [], 
 "^ot:treesElementOrder": [
 "trees1"
 ], 
@@ -59,14 +183,110 @@
 }, 
 "otusById": {
 "otus1": {
-"otuById": {}
+"otuById": {
+"otu3": {
+"^ot:originalLabel": "Minchinellidae"
+}, 
+"otu4": {
+"^ot:originalLabel": "Minchinella"
+}, 
+"otu5": {
+"^ot:originalLabel": "Monoplectroninia"
+}, 
+"otu6": {
+"^ot:originalLabel": "Petrostoma"
+}, 
+"otu7": {
+"^ot:originalLabel": "Plectroninia"
+}, 
+"otu8": {
+"^ot:originalLabel": "Tulearinia"
+}
+}
 }
 }, 
 "treesById": {
 "trees1": {
 "@otus": "otus1", 
-"^ot:treeElementOrder": [], 
-"treeById": {}
+"^ot:treeElementOrder": [
+"tree2"
+], 
+"treeById": {
+"tree2": {
+"@label": "Untitled (tree2)", 
+"@xsi:type": "nex:FloatTree", 
+"^ot:branchLengthDescription": "", 
+"^ot:branchLengthMode": "ot:undefined", 
+"^ot:curatedType": "", 
+"^ot:inGroupClade": "node2", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
+"^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
+"^ot:rootNodeId": "node2", 
+"^ot:specifiedRoot": "", 
+"^ot:tag": [], 
+"^ot:unrootedTree": true, 
+"edgeBySourceId": {
+"node2": {
+"edge2": {
+"@source": "node2", 
+"@target": "node3"
+}, 
+"edge3": {
+"@source": "node2", 
+"@target": "node4"
+}
+}, 
+"node4": {
+"edge4": {
+"@source": "node4", 
+"@target": "node5"
+}, 
+"edge5": {
+"@source": "node4", 
+"@target": "node6"
+}, 
+"edge6": {
+"@source": "node4", 
+"@target": "node7"
+}, 
+"edge7": {
+"@source": "node4", 
+"@target": "node8"
+}, 
+"edge8": {
+"@source": "node4", 
+"@target": "node9"
+}
+}
+}, 
+"nodeById": {
+"node2": {
+"@root": true
+}, 
+"node3": {
+"@otu": "otu3"
+}, 
+"node4": {}, 
+"node5": {
+"@otu": "otu4"
+}, 
+"node6": {
+"@otu": "otu5"
+}, 
+"node7": {
+"@otu": "otu6"
+}, 
+"node8": {
+"@otu": "otu7"
+}, 
+"node9": {
+"@otu": "otu8"
+}
+}
+}
+}
 }
 }
 }
