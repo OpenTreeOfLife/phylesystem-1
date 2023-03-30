@@ -61,6 +61,7 @@
 "@humanMessageType": "NONE", 
 "@severity": "INFO", 
 "data": {
+"autoAcceptExactMatches": false, 
 "searchContext": {
 "$": "Birds"
 }, 
@@ -112,6 +113,31 @@
 }
 }
 ]
+}, 
+{
+"@dateCreated": "2023-03-30T20:45:08.137Z", 
+"@description": "Describes external namesets merged into this study", 
+"@id": "merged-namesets-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "MERGED_NAMESET_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"namesets": {
+"nameset": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
 }
 ]
 }, 
@@ -121,17 +147,14 @@
 "^ot:comment": "", 
 "^ot:curatorName": [
 "Joseph Brown", 
-"Joseph W. Brown"
+"Joseph W. Brown", 
+"Emily Jane McTavish"
 ], 
 "^ot:dataDeposit": {
 "@href": ""
 }, 
 "^ot:focalClade": 640561, 
 "^ot:focalCladeOTTTaxonName": "Icteridae", 
-"^ot:messages": {
-"message": []
-}, 
-"^ot:notIntendedForSynthesis": false, 
 "^ot:otusElementOrder": [
 "otus2707"
 ], 
@@ -176,9 +199,7 @@
 "^ot:ottTaxonName": "Chrysomus icterocephalus"
 }, 
 "otu405492": {
-"^ot:originalLabel": "Agelasticus xanthophthalmus", 
-"^ot:ottId": 498750, 
-"^ot:ottTaxonName": "Agelaius xanthophthalmus"
+"^ot:originalLabel": "Agelasticus xanthophthalmus"
 }, 
 "otu405493": {
 "^ot:originalLabel": "Agelasticus cyanopus", 
@@ -369,9 +390,7 @@
 "^ot:ottTaxonName": "Nesopsar nigerrimus"
 }, 
 "otu405531": {
-"^ot:originalLabel": "Icterus chrysocephalus", 
-"^ot:ottId": 321814, 
-"^ot:ottTaxonName": "Icterus chrysocephalus"
+"^ot:originalLabel": "Icterus chrysocephalus"
 }, 
 "otu405532": {
 "^ot:originalLabel": "Icterus cayanensis", 
@@ -429,9 +448,7 @@
 "^ot:ottTaxonName": "Icterus spurius"
 }, 
 "otu405543": {
-"^ot:originalLabel": "Icterus fuertesi", 
-"^ot:ottId": 692935, 
-"^ot:ottTaxonName": "Icterus fuertesi"
+"^ot:originalLabel": "Icterus fuertesi"
 }, 
 "otu405544": {
 "^ot:originalLabel": "Icterus prosthemelas", 
@@ -574,14 +591,13 @@
 "^ot:ottTaxonName": "Cacicus haemorrhous"
 }, 
 "otu405572": {
-"^ot:originalLabel": "Ocyalus latirostris", 
-"^ot:ottId": 125177, 
-"^ot:ottTaxonName": "Ocyalus latirostris"
+"^ot:altLabel": "Cacicus latirostris", 
+"^ot:originalLabel": "Ocyalus latirostris"
 }, 
 "otu405573": {
 "^ot:originalLabel": "Cacicus chrysonotus leucoramphus", 
-"^ot:ottId": 264489, 
-"^ot:ottTaxonName": "Cacicus leucoramphus"
+"^ot:ottId": 383909, 
+"^ot:ottTaxonName": "Cacicus chrysonotus"
 }, 
 "otu405574": {
 "^ot:originalLabel": "Cacicus chrysonotus chrysonotus", 
@@ -625,8 +641,8 @@
 }, 
 "otu405582": {
 "^ot:originalLabel": "Psarocolius bifasciatus yuracares", 
-"^ot:ottId": 699294, 
-"^ot:ottTaxonName": "Psarocolius yuracares"
+"^ot:ottId": 909240, 
+"^ot:ottTaxonName": "Psarocolius bifasciatus"
 }, 
 "otu405583": {
 "^ot:originalLabel": "Psarocolius viridis", 
@@ -669,24 +685,23 @@
 "^ot:ottTaxonName": "Amblycercus holosericeus"
 }, 
 "otu405591": {
-"^ot:originalLabel": "Sturnella loyca", 
-"^ot:ottId": 1073504, 
-"^ot:ottTaxonName": "Sturnella loyca"
+"^ot:altLabel": "Leistes loyca", 
+"^ot:originalLabel": "Sturnella loyca"
 }, 
 "otu405592": {
 "^ot:originalLabel": "Sturnella defilippii", 
-"^ot:ottId": 3597172, 
-"^ot:ottTaxonName": "Sturnella defilippii"
+"^ot:ottId": 7661296, 
+"^ot:ottTaxonName": "Leistes defilippii"
 }, 
 "otu405593": {
 "^ot:originalLabel": "Sturnella bellicosa", 
-"^ot:ottId": 283665, 
-"^ot:ottTaxonName": "Sturnella bellicosa"
+"^ot:ottId": 6520264, 
+"^ot:ottTaxonName": "Leistes bellicosus"
 }, 
 "otu405594": {
 "^ot:originalLabel": "Sturnella superciliaris", 
-"^ot:ottId": 516964, 
-"^ot:ottTaxonName": "Sturnella superciliaris"
+"^ot:ottId": 7661299, 
+"^ot:ottTaxonName": "Leistes superciliaris"
 }, 
 "otu405595": {
 "^ot:originalLabel": "Sturnella militaris", 
@@ -759,6 +774,7 @@
 "^ot:nodeLabelMode": "", 
 "^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "node1086379", 
 "^ot:specifiedRoot": "node1086379", 
 "^ot:tag": [
