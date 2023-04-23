@@ -60,8 +60,9 @@
 "@humanMessageType": "NONE", 
 "@severity": "INFO", 
 "data": {
+"autoAcceptExactMatches": false, 
 "searchContext": {
-"$": "All life"
+"$": "Rosids"
 }, 
 "substitutions": {
 "substitution": [
@@ -144,6 +145,31 @@
 ]
 }
 ]
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2023-04-23T10:36:23.207Z", 
+"@description": "Describes external namesets merged into this study", 
+"@id": "merged-namesets-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "MERGED_NAMESET_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"namesets": {
+"nameset": []
 }
 }, 
 "refersTo": {
@@ -483,18 +509,17 @@
 "@label": "Default symmetrical", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
-"^ot:branchLengthMode": "", 
-"^ot:branchLengthTimeUnit": "", 
-"^ot:curatedType": "", 
-"^ot:inGroupClade": "", 
+"^ot:branchLengthMode": "ot:undefined", 
+"^ot:curatedType": "Bayesian inference ", 
+"^ot:inGroupClade": "node63", 
 "^ot:nodeLabelMode": "", 
 "^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
 "^ot:reasonsToExcludeFromSynthesis": [], 
-"^ot:rootNodeId": "node3", 
-"^ot:specifiedRoot": "", 
+"^ot:rootNodeId": "node93", 
+"^ot:specifiedRoot": "node93", 
 "^ot:tag": [], 
-"^ot:unrootedTree": true, 
+"^ot:unrootedTree": false, 
 "edgeBySourceId": {
 "node102": {
 "edge102": {
@@ -690,10 +715,6 @@
 "edge3": {
 "@source": "node3", 
 "@target": "node4"
-}, 
-"edge62": {
-"@source": "node3", 
-"@target": "node63"
 }
 }, 
 "node31": {
@@ -877,13 +898,13 @@
 }
 }, 
 "node63": {
+"edge62": {
+"@source": "node63", 
+"@target": "node3"
+}, 
 "edge63": {
 "@source": "node63", 
 "@target": "node64"
-}, 
-"edge92": {
-"@source": "node63", 
-"@target": "node93"
 }
 }, 
 "node64": {
@@ -1051,6 +1072,10 @@
 "@source": "node93", 
 "@target": "node109"
 }, 
+"edge92": {
+"@source": "node93", 
+"@target": "node63"
+}, 
 "edge93": {
 "@source": "node93", 
 "@target": "node94"
@@ -1192,9 +1217,7 @@
 "node29": {
 "@otu": "otu14"
 }, 
-"node3": {
-"@root": true
-}, 
+"node3": {}, 
 "node30": {
 "@otu": "otu15"
 }, 
@@ -1332,7 +1355,9 @@
 "node92": {
 "@otu": "otu47"
 }, 
-"node93": {}, 
+"node93": {
+"@root": true
+}, 
 "node94": {}, 
 "node95": {}, 
 "node96": {}, 
