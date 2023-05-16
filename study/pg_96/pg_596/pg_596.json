@@ -36,22 +36,124 @@
 }
 ]
 }
+}, 
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.", 
+"@id": "opentree-curation-webapp", 
+"@name": "OpenTree curation webapp", 
+"@url": "https://github.com/OpenTreeOfLife/opentree", 
+"@version": "0.0.0"
 }
 ]
 }, 
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2023-05-16T08:43:22.964Z", 
+"@description": "Aids for mapping study OTUs to OTT taxa", 
+"@id": "otu-mapping-hints", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"autoAcceptExactMatches": false, 
+"searchContext": {
+"$": "Rosids"
+}, 
+"substitutions": {
+"substitution": [
+{
+"@active": false, 
+"@valid": true, 
+"new": {
+"$": ""
+}, 
+"old": {
+"$": ""
+}
+}
+]
+}, 
+"useFuzzyMatching": false
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2023-05-16T08:43:22.964Z", 
+"@description": "Describes external namesets merged into this study", 
+"@id": "merged-namesets-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "MERGED_NAMESET_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"namesets": {
+"nameset": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}, 
+{
+"@dateCreated": "2023-05-16T08:43:22.964Z", 
+"@description": "Describes supporting data files for this study", 
+"@id": "supporting-files-metadata", 
+"@passedChecks": true, 
+"@preserve": true, 
+"@wasAssociatedWithAgentId": "opentree-curation-webapp", 
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO", 
+"@humanMessageType": "NONE", 
+"@severity": "INFO", 
+"data": {
+"@movedToPermanentArchive": false, 
+"files": {
+"file": []
+}
+}, 
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
 }, 
 "^ot:candidateTreeForSynthesis": [
 "tree901"
 ], 
-"^ot:curatorName": "bryan drew", 
+"^ot:comment": "", 
+"^ot:curatorName": [
+"bryan drew", 
+"Joe Miller"
+], 
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S870"
 }, 
-"^ot:messages": {
-"message": []
-}, 
+"^ot:focalCladeOTTTaxonName": "", 
 "^ot:otusElementOrder": [
 "otus596"
 ], 
@@ -379,13 +481,16 @@
 ], 
 "treeById": {
 "tree901": {
+"@label": "Untitled (tree901)", 
 "@xsi:type": "nex:FloatTree", 
 "^ot:branchLengthDescription": "", 
-"^ot:branchLengthMode": "", 
-"^ot:branchLengthTimeUnit": "", 
+"^ot:branchLengthMode": "ot:undefined", 
 "^ot:curatedType": "Fig. 2", 
 "^ot:inGroupClade": "node357211", 
+"^ot:nodeLabelMode": "", 
+"^ot:nodeLabelTimeUnit": "", 
 "^ot:outGroupEdge": "", 
+"^ot:reasonsToExcludeFromSynthesis": [], 
 "^ot:rootNodeId": "node357209", 
 "^ot:specifiedRoot": "node357209", 
 "^ot:tag": [], 
@@ -827,10 +932,12 @@
 }, 
 "node357219": {}, 
 "node357220": {
-"@otu": "otu174992"
+"@otu": "otu174992", 
+"^ot:isTaxonExemplar": true
 }, 
 "node357221": {
-"@otu": "otu174986"
+"@otu": "otu174986", 
+"^ot:isTaxonExemplar": false
 }, 
 "node357222": {}, 
 "node357223": {}, 
@@ -840,28 +947,35 @@
 }, 
 "node357226": {}, 
 "node357227": {
-"@otu": "otu174970"
+"@otu": "otu174970", 
+"^ot:isTaxonExemplar": true
 }, 
 "node357228": {
-"@otu": "otu174978"
+"@otu": "otu174978", 
+"^ot:isTaxonExemplar": false
 }, 
 "node357229": {}, 
 "node357230": {
-"@otu": "otu174995"
+"@otu": "otu174995", 
+"^ot:isTaxonExemplar": true
 }, 
 "node357231": {
-"@otu": "otu174981"
+"@otu": "otu174981", 
+"^ot:isTaxonExemplar": false
 }, 
 "node357232": {}, 
 "node357233": {}, 
 "node357234": {
-"@otu": "otu174982"
+"@otu": "otu174982", 
+"^ot:isTaxonExemplar": true
 }, 
 "node357235": {
-"@otu": "otu174973"
+"@otu": "otu174973", 
+"^ot:isTaxonExemplar": false
 }, 
 "node357236": {
-"@otu": "otu174966"
+"@otu": "otu174966", 
+"^ot:isTaxonExemplar": false
 }, 
 "node357237": {
 "@otu": "otu174993"
@@ -874,10 +988,12 @@
 }, 
 "node357240": {}, 
 "node357241": {
-"@otu": "otu174983"
+"@otu": "otu174983", 
+"^ot:isTaxonExemplar": true
 }, 
 "node357242": {
-"@otu": "otu174990"
+"@otu": "otu174990", 
+"^ot:isTaxonExemplar": false
 }, 
 "node357243": {}, 
 "node357244": {}, 
@@ -887,17 +1003,20 @@
 "@otu": "otu174959"
 }, 
 "node357248": {
-"@otu": "otu174953"
+"@otu": "otu174953", 
+"^ot:isTaxonExemplar": false
 }, 
 "node357249": {
 "@otu": "otu174957"
 }, 
 "node357250": {}, 
 "node357251": {
-"@otu": "otu174987"
+"@otu": "otu174987", 
+"^ot:isTaxonExemplar": true
 }, 
 "node357252": {
-"@otu": "otu174965"
+"@otu": "otu174965", 
+"^ot:isTaxonExemplar": false
 }, 
 "node357253": {}, 
 "node357254": {}, 
@@ -916,10 +1035,12 @@
 "@otu": "otu174956"
 }, 
 "node357263": {
-"@otu": "otu174979"
+"@otu": "otu174979", 
+"^ot:isTaxonExemplar": true
 }, 
 "node357264": {
-"@otu": "otu174967"
+"@otu": "otu174967", 
+"^ot:isTaxonExemplar": false
 }, 
 "node357265": {
 "@otu": "otu174984"
@@ -933,7 +1054,8 @@
 }, 
 "node357269": {}, 
 "node357270": {
-"@otu": "otu174972"
+"@otu": "otu174972", 
+"^ot:isTaxonExemplar": false
 }, 
 "node357271": {}, 
 "node357272": {
@@ -947,16 +1069,19 @@
 }, 
 "node357275": {}, 
 "node357276": {
-"@otu": "otu174985"
+"@otu": "otu174985", 
+"^ot:isTaxonExemplar": true
 }, 
 "node357277": {
-"@otu": "otu174989"
+"@otu": "otu174989", 
+"^ot:isTaxonExemplar": false
 }, 
 "node357278": {
 "@otu": "otu174968"
 }, 
 "node357279": {
-"@otu": "otu174977"
+"@otu": "otu174977", 
+"^ot:isTaxonExemplar": true
 }, 
 "node357280": {
 "@otu": "otu174980"
@@ -985,13 +1110,15 @@
 "@otu": "otu174991"
 }, 
 "node357292": {
-"@otu": "otu174958"
+"@otu": "otu174958", 
+"^ot:isTaxonExemplar": false
 }, 
 "node357293": {
 "@otu": "otu174949"
 }, 
 "node357294": {
-"@otu": "otu174946"
+"@otu": "otu174946", 
+"^ot:isTaxonExemplar": true
 }
 }
 }
