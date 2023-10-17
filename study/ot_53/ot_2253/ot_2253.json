@@ -52,16 +52,121 @@
 }
 ]
 }
+},
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.",
+"@id": "opentree-curation-webapp",
+"@name": "OpenTree curation webapp",
+"@url": "https://github.com/OpenTreeOfLife/opentree",
+"@version": "0.0.0"
 }
 ]
 },
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2023-10-17T22:53:37.687Z",
+"@description": "Aids for mapping study OTUs to OTT taxa",
+"@id": "otu-mapping-hints",
+"@passedChecks": true,
+"@preserve": true,
+"@wasAssociatedWithAgentId": "opentree-curation-webapp",
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS",
+"@humanMessageType": "NONE",
+"@severity": "INFO",
+"data": {
+"autoAcceptExactMatches": false,
+"searchContext": {
+"$": "Mammals"
 },
-"^ot:curatorName": "James Waterford",
+"substitutions": {
+"substitution": [
+{
+"@active": false,
+"@valid": true,
+"new": {
+"$": ""
+},
+"old": {
+"$": ""
+}
+}
+]
+},
+"useFuzzyMatching": false
+},
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+},
+{
+"@dateCreated": "2023-10-17T22:53:37.687Z",
+"@description": "Describes external namesets merged into this study",
+"@id": "merged-namesets-metadata",
+"@passedChecks": true,
+"@preserve": true,
+"@wasAssociatedWithAgentId": "opentree-curation-webapp",
+"message": [
+{
+"@code": "MERGED_NAMESET_INFO",
+"@humanMessageType": "NONE",
+"@severity": "INFO",
+"data": {
+"namesets": {
+"nameset": []
+}
+},
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+},
+{
+"@dateCreated": "2023-10-17T22:53:37.687Z",
+"@description": "Describes supporting data files for this study",
+"@id": "supporting-files-metadata",
+"@passedChecks": true,
+"@preserve": true,
+"@wasAssociatedWithAgentId": "opentree-curation-webapp",
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO",
+"@humanMessageType": "NONE",
+"@severity": "INFO",
+"data": {
+"@movedToPermanentArchive": false,
+"files": {
+"file": []
+}
+},
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+},
+"^ot:candidateTreeForSynthesis": [],
+"^ot:comment": "",
+"^ot:curatorName": [
+"James Waterford"
+],
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S14307"
 },
+"^ot:focalCladeOTTTaxonName": "",
 "^ot:otusElementOrder": [
 "Tls34450"
 ],
@@ -71,6 +176,7 @@
 },
 "^ot:studyPublicationReference": "Velazco P.M. 2013. On the phylogenetic position of Carollia manu Pacheco et al., 2004 (Chiroptera: Phyllostomidae: Carolliinae). Zootaxa, 3718(3): 267-276.",
 "^ot:studyYear": 2013,
+"^ot:tag": [],
 "^ot:taxonLinkPrefixes": {
 "@ubio": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:",
 "@uniprot": "http://purl.uniprot.org/taxonomy/"
@@ -93,14 +199,26 @@
 "^skos:historyNote": "Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlDocumentWriter@1d5fa304 $Rev$",
 "^tb:identifier.study": "14307",
 "^tb:title.study": "On the phylogenetic position of Carollia manu Pacheco et al., 2004 (Chiroptera: Phyllostomidae: Carolliinae)",
+"highestMintedElementIDs": {
+"agent": 0,
+"annotation": 0,
+"edge": 33497,
+"message": 0,
+"node": 0,
+"otu": 0,
+"otus": 0,
+"tree": 0,
+"trees": 0
+},
 "otusById": {
 "Tls34450": {
 "@label": "Taxa",
 "^skos:historyNote": "Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlOTUWriter@72520f3 $Rev$",
 "otuById": {
 "Tl1320648": {
-"^ot:altLabel": "Carollia castanea",
 "^ot:originalLabel": "Carollia castanea AF511997 Hon",
+"^ot:ottId": 941606,
+"^ot:ottTaxonName": "Carollia castanea",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5079,
 "@tb:identifier.taxonVariant": 12323,
@@ -109,8 +227,9 @@
 }
 },
 "Tl1320649": {
-"^ot:altLabel": "Carollia perspicillata",
 "^ot:originalLabel": "Carollia perspicillata FJ589681 Bra",
+"^ot:ottId": 1039980,
+"^ot:ottTaxonName": "Carollia perspicillata",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5080,
 "@tb:identifier.taxonVariant": 12325,
@@ -119,8 +238,9 @@
 }
 },
 "Tl1320650": {
-"^ot:altLabel": "Carollia brevicauda",
 "^ot:originalLabel": "Carollia brevicauda FJ589652 Bra",
+"^ot:ottId": 758569,
+"^ot:ottTaxonName": "Carollia brevicauda",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5078,
 "@tb:identifier.taxonVariant": 12321,
@@ -129,8 +249,9 @@
 }
 },
 "Tl1320651": {
-"^ot:altLabel": "Carollia sowelli",
 "^ot:originalLabel": "Carollia sowelli AF511968 Hon",
+"^ot:ottId": 958288,
+"^ot:ottTaxonName": "Carollia sowelli",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 191730,
 "@tb:identifier.taxonVariant": 263301,
@@ -139,8 +260,9 @@
 }
 },
 "Tl1320652": {
-"^ot:altLabel": "Glyphonycteris sylvestris",
 "^ot:originalLabel": "Glyphonycteris sylvestris AY380746",
+"^ot:ottId": 599548,
+"^ot:ottTaxonName": "Glyphonycteris sylvestris",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 17715,
 "@tb:identifier.taxonVariant": 112676,
@@ -149,8 +271,9 @@
 }
 },
 "Tl1320653": {
-"^ot:altLabel": "Carollia perspicillata",
 "^ot:originalLabel": "Carollia perspicillata FJ589675 Bra",
+"^ot:ottId": 1039980,
+"^ot:ottTaxonName": "Carollia perspicillata",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5080,
 "@tb:identifier.taxonVariant": 12325,
@@ -165,8 +288,9 @@
 "^ot:originalLabel": "Carollia new JF442134 Ecu"
 },
 "Tl1320656": {
-"^ot:altLabel": "Carollia perspicillata",
 "^ot:originalLabel": "Carollia perspicillata FJ589661 Bra",
+"^ot:ottId": 1039980,
+"^ot:ottTaxonName": "Carollia perspicillata",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5080,
 "@tb:identifier.taxonVariant": 12325,
@@ -175,8 +299,9 @@
 }
 },
 "Tl1320657": {
-"^ot:altLabel": "Carollia brevicauda",
 "^ot:originalLabel": "Carollia brevicauda FMNH203361 Per",
+"^ot:ottId": 758569,
+"^ot:ottTaxonName": "Carollia brevicauda",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5078,
 "@tb:identifier.taxonVariant": 12321,
@@ -185,8 +310,9 @@
 }
 },
 "Tl1320658": {
-"^ot:altLabel": "Carollia castanea",
 "^ot:originalLabel": "Carollia castanea AF511999 Ecu",
+"^ot:ottId": 941606,
+"^ot:ottTaxonName": "Carollia castanea",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5079,
 "@tb:identifier.taxonVariant": 12323,
@@ -195,8 +321,9 @@
 }
 },
 "Tl1320659": {
-"^ot:altLabel": "Carollia sowelli",
 "^ot:originalLabel": "Carollia sowelli AF511967 Hon",
+"^ot:ottId": 958288,
+"^ot:ottTaxonName": "Carollia sowelli",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 191730,
 "@tb:identifier.taxonVariant": 263301,
@@ -205,8 +332,9 @@
 }
 },
 "Tl1320660": {
-"^ot:altLabel": "Carollia perspicillata",
 "^ot:originalLabel": "Carollia perspicillata FJ589658 Bra",
+"^ot:ottId": 1039980,
+"^ot:ottTaxonName": "Carollia perspicillata",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5080,
 "@tb:identifier.taxonVariant": 12325,
@@ -215,8 +343,9 @@
 }
 },
 "Tl1320661": {
-"^ot:altLabel": "Carollia benkeithi",
 "^ot:originalLabel": "Carollia benkeithi FMNH203543 Per",
+"^ot:ottId": 992663,
+"^ot:ottTaxonName": "Carollia benkeithi",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 305724,
 "@tb:identifier.taxonVariant": 353891,
@@ -225,8 +354,9 @@
 }
 },
 "Tl1320662": {
-"^ot:altLabel": "Carollia castanea",
 "^ot:originalLabel": "Carollia castanea AF511996 Hon",
+"^ot:ottId": 941606,
+"^ot:ottTaxonName": "Carollia castanea",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5079,
 "@tb:identifier.taxonVariant": 12323,
@@ -235,8 +365,9 @@
 }
 },
 "Tl1320663": {
-"^ot:altLabel": "Carollia perspicillata",
 "^ot:originalLabel": "Carollia perspicillata AF511977 Guy",
+"^ot:ottId": 1039980,
+"^ot:ottTaxonName": "Carollia perspicillata",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5080,
 "@tb:identifier.taxonVariant": 12325,
@@ -245,8 +376,9 @@
 }
 },
 "Tl1320664": {
-"^ot:altLabel": "Carollia sowelli",
 "^ot:originalLabel": "Carollia sowelli AF511963 Mex",
+"^ot:ottId": 958288,
+"^ot:ottTaxonName": "Carollia sowelli",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 191730,
 "@tb:identifier.taxonVariant": 263301,
@@ -255,8 +387,9 @@
 }
 },
 "Tl1320665": {
-"^ot:altLabel": "Carollia perspicillata",
 "^ot:originalLabel": "Carollia perspicillata FJ589712 Bra",
+"^ot:ottId": 1039980,
+"^ot:ottTaxonName": "Carollia perspicillata",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5080,
 "@tb:identifier.taxonVariant": 12325,
@@ -265,8 +398,9 @@
 }
 },
 "Tl1320666": {
-"^ot:altLabel": "Carollia perspicillata",
 "^ot:originalLabel": "Carollia perspicillata FJ589683 Bra",
+"^ot:ottId": 1039980,
+"^ot:ottTaxonName": "Carollia perspicillata",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5080,
 "@tb:identifier.taxonVariant": 12325,
@@ -275,8 +409,9 @@
 }
 },
 "Tl1320667": {
-"^ot:altLabel": "Carollia perspicillata",
 "^ot:originalLabel": "Carollia perspicillata FJ589663 Bra",
+"^ot:ottId": 1039980,
+"^ot:ottTaxonName": "Carollia perspicillata",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5080,
 "@tb:identifier.taxonVariant": 12325,
@@ -285,8 +420,9 @@
 }
 },
 "Tl1320668": {
-"^ot:altLabel": "Carollia perspicillata",
 "^ot:originalLabel": "Carollia perspicillata AF511978 Guy",
+"^ot:ottId": 1039980,
+"^ot:ottTaxonName": "Carollia perspicillata",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5080,
 "@tb:identifier.taxonVariant": 12325,
@@ -295,8 +431,9 @@
 }
 },
 "Tl1320669": {
-"^ot:altLabel": "Carollia perspicillata",
 "^ot:originalLabel": "Carollia perspicillata FJ589670 Bra",
+"^ot:ottId": 1039980,
+"^ot:ottTaxonName": "Carollia perspicillata",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5080,
 "@tb:identifier.taxonVariant": 12325,
@@ -305,8 +442,9 @@
 }
 },
 "Tl1320670": {
-"^ot:altLabel": "Carollia brevicauda",
 "^ot:originalLabel": "Carollia brevicauda AF511960 Pan",
+"^ot:ottId": 758569,
+"^ot:ottTaxonName": "Carollia brevicauda",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5078,
 "@tb:identifier.taxonVariant": 12321,
@@ -315,8 +453,9 @@
 }
 },
 "Tl1320671": {
-"^ot:altLabel": "Carollia perspicillata",
 "^ot:originalLabel": "Carollia perspicillata FJ589704 Bra",
+"^ot:ottId": 1039980,
+"^ot:ottTaxonName": "Carollia perspicillata",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5080,
 "@tb:identifier.taxonVariant": 12325,
@@ -325,8 +464,9 @@
 }
 },
 "Tl1320672": {
-"^ot:altLabel": "Carollia perspicillata",
 "^ot:originalLabel": "Carollia perspicillata FJ589655 Bra",
+"^ot:ottId": 1039980,
+"^ot:ottTaxonName": "Carollia perspicillata",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5080,
 "@tb:identifier.taxonVariant": 12325,
@@ -335,8 +475,9 @@
 }
 },
 "Tl1320673": {
-"^ot:altLabel": "Carollia castanea",
 "^ot:originalLabel": "Carollia castanea AF512006 Ecu",
+"^ot:ottId": 941606,
+"^ot:ottTaxonName": "Carollia castanea",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5079,
 "@tb:identifier.taxonVariant": 12323,
@@ -345,8 +486,9 @@
 }
 },
 "Tl1320674": {
-"^ot:altLabel": "Carollia castanea",
 "^ot:originalLabel": "Carollia castanea AF512000 Ecu",
+"^ot:ottId": 941606,
+"^ot:ottTaxonName": "Carollia castanea",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5079,
 "@tb:identifier.taxonVariant": 12323,
@@ -355,8 +497,9 @@
 }
 },
 "Tl1320675": {
-"^ot:altLabel": "Carollia castanea",
 "^ot:originalLabel": "Carollia castanea AF511994 Cos",
+"^ot:ottId": 941606,
+"^ot:ottTaxonName": "Carollia castanea",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5079,
 "@tb:identifier.taxonVariant": 12323,
@@ -365,8 +508,9 @@
 }
 },
 "Tl1320676": {
-"^ot:altLabel": "Carollia perspicillata",
 "^ot:originalLabel": "Carollia perspicillata JF442137 Ecu",
+"^ot:ottId": 1039980,
+"^ot:ottTaxonName": "Carollia perspicillata",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5080,
 "@tb:identifier.taxonVariant": 12325,
@@ -375,8 +519,9 @@
 }
 },
 "Tl1320677": {
-"^ot:altLabel": "Carollia brevicauda",
 "^ot:originalLabel": "Carollia brevicauda FMNH203549 Per",
+"^ot:ottId": 758569,
+"^ot:ottTaxonName": "Carollia brevicauda",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5078,
 "@tb:identifier.taxonVariant": 12321,
@@ -385,8 +530,9 @@
 }
 },
 "Tl1320678": {
-"^ot:altLabel": "Carollia sowelli",
 "^ot:originalLabel": "Carollia sowelli AF511961 Mex",
+"^ot:ottId": 958288,
+"^ot:ottTaxonName": "Carollia sowelli",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 191730,
 "@tb:identifier.taxonVariant": 263301,
@@ -395,8 +541,9 @@
 }
 },
 "Tl1320679": {
-"^ot:altLabel": "Carollia benkeithi",
 "^ot:originalLabel": "Carollia benkeithi FMNH203350 Per",
+"^ot:ottId": 992663,
+"^ot:ottTaxonName": "Carollia benkeithi",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 305724,
 "@tb:identifier.taxonVariant": 353891,
@@ -405,8 +552,9 @@
 }
 },
 "Tl1320680": {
-"^ot:altLabel": "Carollia perspicillata",
 "^ot:originalLabel": "Carollia perspicillata FJ589713 Bra",
+"^ot:ottId": 1039980,
+"^ot:ottTaxonName": "Carollia perspicillata",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5080,
 "@tb:identifier.taxonVariant": 12325,
@@ -415,8 +563,9 @@
 }
 },
 "Tl1320681": {
-"^ot:altLabel": "Carollia perspicillata",
 "^ot:originalLabel": "Carollia perspicillata FJ589693 Bra",
+"^ot:ottId": 1039980,
+"^ot:ottTaxonName": "Carollia perspicillata",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5080,
 "@tb:identifier.taxonVariant": 12325,
@@ -425,8 +574,9 @@
 }
 },
 "Tl1320682": {
-"^ot:altLabel": "Carollia perspicillata",
 "^ot:originalLabel": "Carollia perspicillata FJ589664 Bra",
+"^ot:ottId": 1039980,
+"^ot:ottTaxonName": "Carollia perspicillata",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5080,
 "@tb:identifier.taxonVariant": 12325,
@@ -435,8 +585,9 @@
 }
 },
 "Tl1320683": {
-"^ot:altLabel": "Carollia perspicillata",
 "^ot:originalLabel": "Carollia perspicillata FJ589703 Bra",
+"^ot:ottId": 1039980,
+"^ot:ottTaxonName": "Carollia perspicillata",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5080,
 "@tb:identifier.taxonVariant": 12325,
@@ -445,8 +596,9 @@
 }
 },
 "Tl1320684": {
-"^ot:altLabel": "Carollia perspicillata",
 "^ot:originalLabel": "Carollia perspicillata FJ589695 Bra",
+"^ot:ottId": 1039980,
+"^ot:ottTaxonName": "Carollia perspicillata",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5080,
 "@tb:identifier.taxonVariant": 12325,
@@ -455,8 +607,9 @@
 }
 },
 "Tl1320685": {
-"^ot:altLabel": "Carollia perspicillata",
 "^ot:originalLabel": "Carollia perspicillata FJ589714 Bra",
+"^ot:ottId": 1039980,
+"^ot:ottTaxonName": "Carollia perspicillata",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5080,
 "@tb:identifier.taxonVariant": 12325,
@@ -465,8 +618,9 @@
 }
 },
 "Tl1320686": {
-"^ot:altLabel": "Carollia perspicillata",
 "^ot:originalLabel": "Carollia perspicillata FJ589715 Bra",
+"^ot:ottId": 1039980,
+"^ot:ottTaxonName": "Carollia perspicillata",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5080,
 "@tb:identifier.taxonVariant": 12325,
@@ -475,8 +629,9 @@
 }
 },
 "Tl1320687": {
-"^ot:altLabel": "Carollia sowelli",
 "^ot:originalLabel": "Carollia sowelli AF511962 Gua",
+"^ot:ottId": 958288,
+"^ot:ottTaxonName": "Carollia sowelli",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 191730,
 "@tb:identifier.taxonVariant": 263301,
@@ -485,8 +640,9 @@
 }
 },
 "Tl1320688": {
-"^ot:altLabel": "Carollia perspicillata",
 "^ot:originalLabel": "Carollia perspicillata FJ589668 Bra",
+"^ot:ottId": 1039980,
+"^ot:ottTaxonName": "Carollia perspicillata",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5080,
 "@tb:identifier.taxonVariant": 12325,
@@ -495,8 +651,9 @@
 }
 },
 "Tl1320689": {
-"^ot:altLabel": "Carollia castanea",
 "^ot:originalLabel": "Carollia castanea AF512002 Bol",
+"^ot:ottId": 941606,
+"^ot:ottTaxonName": "Carollia castanea",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5079,
 "@tb:identifier.taxonVariant": 12323,
@@ -505,8 +662,9 @@
 }
 },
 "Tl1320690": {
-"^ot:altLabel": "Carollia brevicauda",
 "^ot:originalLabel": "Carollia brevicauda AF511958 Guy",
+"^ot:ottId": 758569,
+"^ot:ottTaxonName": "Carollia brevicauda",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5078,
 "@tb:identifier.taxonVariant": 12321,
@@ -515,8 +673,9 @@
 }
 },
 "Tl1320691": {
-"^ot:altLabel": "Carollia brevicauda",
 "^ot:originalLabel": "Carollia brevicauda FJ589651 Bra",
+"^ot:ottId": 758569,
+"^ot:ottTaxonName": "Carollia brevicauda",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5078,
 "@tb:identifier.taxonVariant": 12321,
@@ -525,8 +684,9 @@
 }
 },
 "Tl1320692": {
-"^ot:altLabel": "Carollia perspicillata",
 "^ot:originalLabel": "Carollia perspicillata FJ589701 Bra",
+"^ot:ottId": 1039980,
+"^ot:ottTaxonName": "Carollia perspicillata",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5080,
 "@tb:identifier.taxonVariant": 12325,
@@ -535,8 +695,9 @@
 }
 },
 "Tl1320693": {
-"^ot:altLabel": "Carollia perspicillata",
 "^ot:originalLabel": "Carollia perspicillata FJ589696 Bra",
+"^ot:ottId": 1039980,
+"^ot:ottTaxonName": "Carollia perspicillata",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5080,
 "@tb:identifier.taxonVariant": 12325,
@@ -545,8 +706,9 @@
 }
 },
 "Tl1320694": {
-"^ot:altLabel": "Carollia perspicillata",
 "^ot:originalLabel": "Carollia perspicillata FJ589666 Bra",
+"^ot:ottId": 1039980,
+"^ot:ottTaxonName": "Carollia perspicillata",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5080,
 "@tb:identifier.taxonVariant": 12325,
@@ -555,8 +717,9 @@
 }
 },
 "Tl1320695": {
-"^ot:altLabel": "Carollia perspicillata",
 "^ot:originalLabel": "Carollia perspicillata AF511986 Mex",
+"^ot:ottId": 1039980,
+"^ot:ottTaxonName": "Carollia perspicillata",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5080,
 "@tb:identifier.taxonVariant": 12325,
@@ -565,8 +728,9 @@
 }
 },
 "Tl1320696": {
-"^ot:altLabel": "Carollia perspicillata",
 "^ot:originalLabel": "Carollia perspicillata AF511983 Ven",
+"^ot:ottId": 1039980,
+"^ot:ottTaxonName": "Carollia perspicillata",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5080,
 "@tb:identifier.taxonVariant": 12325,
@@ -575,8 +739,9 @@
 }
 },
 "Tl1320697": {
-"^ot:altLabel": "Carollia perspicillata",
 "^ot:originalLabel": "Carollia perspicillata FJ589659 Bra",
+"^ot:ottId": 1039980,
+"^ot:ottTaxonName": "Carollia perspicillata",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5080,
 "@tb:identifier.taxonVariant": 12325,
@@ -585,8 +750,9 @@
 }
 },
 "Tl1320698": {
-"^ot:altLabel": "Carollia perspicillata",
 "^ot:originalLabel": "Carollia perspicillata FJ589709 Bra",
+"^ot:ottId": 1039980,
+"^ot:ottTaxonName": "Carollia perspicillata",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5080,
 "@tb:identifier.taxonVariant": 12325,
@@ -595,8 +761,9 @@
 }
 },
 "Tl1320699": {
-"^ot:altLabel": "Carollia perspicillata",
 "^ot:originalLabel": "Carollia perspicillata FJ589697 Bra",
+"^ot:ottId": 1039980,
+"^ot:ottTaxonName": "Carollia perspicillata",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5080,
 "@tb:identifier.taxonVariant": 12325,
@@ -605,8 +772,9 @@
 }
 },
 "Tl1320700": {
-"^ot:altLabel": "Carollia sowelli",
 "^ot:originalLabel": "Carollia sowelli AF511966 Hon",
+"^ot:ottId": 958288,
+"^ot:ottTaxonName": "Carollia sowelli",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 191730,
 "@tb:identifier.taxonVariant": 263301,
@@ -615,8 +783,9 @@
 }
 },
 "Tl1320701": {
-"^ot:altLabel": "Carollia perspicillata",
 "^ot:originalLabel": "Carollia perspicillata AF511976 Ecu",
+"^ot:ottId": 1039980,
+"^ot:ottTaxonName": "Carollia perspicillata",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5080,
 "@tb:identifier.taxonVariant": 12325,
@@ -625,8 +794,9 @@
 }
 },
 "Tl1320702": {
-"^ot:altLabel": "Carollia perspicillata",
 "^ot:originalLabel": "Carollia perspicillata FMNH203381 Per",
+"^ot:ottId": 1039980,
+"^ot:ottTaxonName": "Carollia perspicillata",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5080,
 "@tb:identifier.taxonVariant": 12325,
@@ -635,8 +805,9 @@
 }
 },
 "Tl1320703": {
-"^ot:altLabel": "Carollia brevicauda",
 "^ot:originalLabel": "Carollia brevicauda FMNH203553 Per",
+"^ot:ottId": 758569,
+"^ot:ottTaxonName": "Carollia brevicauda",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5078,
 "@tb:identifier.taxonVariant": 12321,
@@ -645,8 +816,9 @@
 }
 },
 "Tl1320704": {
-"^ot:altLabel": "Carollia brevicauda",
 "^ot:originalLabel": "Carollia brevicauda FMNH203364 Per",
+"^ot:ottId": 758569,
+"^ot:ottTaxonName": "Carollia brevicauda",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5078,
 "@tb:identifier.taxonVariant": 12321,
@@ -655,8 +827,9 @@
 }
 },
 "Tl1320705": {
-"^ot:altLabel": "Carollia subrufa",
 "^ot:originalLabel": "Carollia subrufa AF187024 Sal",
+"^ot:ottId": 587100,
+"^ot:ottTaxonName": "Carollia subrufa",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5081,
 "@tb:identifier.taxonVariant": 12328,
@@ -665,8 +838,9 @@
 }
 },
 "Tl1320706": {
-"^ot:altLabel": "Carollia brevicauda",
 "^ot:originalLabel": "Carollia brevicauda AF511959 Ven",
+"^ot:ottId": 758569,
+"^ot:ottTaxonName": "Carollia brevicauda",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5078,
 "@tb:identifier.taxonVariant": 12321,
@@ -675,8 +849,9 @@
 }
 },
 "Tl1320707": {
-"^ot:altLabel": "Carollia castanea",
 "^ot:originalLabel": "Carollia castanea AF512001 Pan",
+"^ot:ottId": 941606,
+"^ot:ottTaxonName": "Carollia castanea",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5079,
 "@tb:identifier.taxonVariant": 12323,
@@ -685,8 +860,9 @@
 }
 },
 "Tl1320708": {
-"^ot:altLabel": "Carollia benkeithi",
 "^ot:originalLabel": "Carollia benkeithi DQ177282 Per",
+"^ot:ottId": 992663,
+"^ot:ottTaxonName": "Carollia benkeithi",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 305724,
 "@tb:identifier.taxonVariant": 353891,
@@ -695,8 +871,9 @@
 }
 },
 "Tl1320709": {
-"^ot:altLabel": "Carollia benkeithi",
 "^ot:originalLabel": "Carollia benkeithi DQ177280 Per",
+"^ot:ottId": 992663,
+"^ot:ottTaxonName": "Carollia benkeithi",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 305724,
 "@tb:identifier.taxonVariant": 353891,
@@ -705,8 +882,9 @@
 }
 },
 "Tl1320710": {
-"^ot:altLabel": "Carollia perspicillata",
 "^ot:originalLabel": "Carollia perspicillata JF442123 Ecu",
+"^ot:ottId": 1039980,
+"^ot:ottTaxonName": "Carollia perspicillata",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5080,
 "@tb:identifier.taxonVariant": 12325,
@@ -715,8 +893,9 @@
 }
 },
 "Tl1320711": {
-"^ot:altLabel": "Carollia perspicillata",
 "^ot:originalLabel": "Carollia perspicillata AF511987 Mex",
+"^ot:ottId": 1039980,
+"^ot:ottTaxonName": "Carollia perspicillata",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5080,
 "@tb:identifier.taxonVariant": 12325,
@@ -725,8 +904,9 @@
 }
 },
 "Tl1320712": {
-"^ot:altLabel": "Carollia perspicillata",
 "^ot:originalLabel": "Carollia perspicillata FJ589673 Bra",
+"^ot:ottId": 1039980,
+"^ot:ottTaxonName": "Carollia perspicillata",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5080,
 "@tb:identifier.taxonVariant": 12325,
@@ -735,8 +915,9 @@
 }
 },
 "Tl1320713": {
-"^ot:altLabel": "Carollia benkeithi",
 "^ot:originalLabel": "Carollia benkeithi FMNH203547 Per",
+"^ot:ottId": 992663,
+"^ot:ottTaxonName": "Carollia benkeithi",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 305724,
 "@tb:identifier.taxonVariant": 353891,
@@ -745,8 +926,9 @@
 }
 },
 "Tl1320714": {
-"^ot:altLabel": "Carollia brevicauda",
 "^ot:originalLabel": "Carollia brevicauda FMNH174595 Per",
+"^ot:ottId": 758569,
+"^ot:ottTaxonName": "Carollia brevicauda",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5078,
 "@tb:identifier.taxonVariant": 12321,
@@ -755,8 +937,9 @@
 }
 },
 "Tl1320715": {
-"^ot:altLabel": "Carollia benkeithi",
 "^ot:originalLabel": "Carollia benkeithi FMNH203351 Per",
+"^ot:ottId": 992663,
+"^ot:ottTaxonName": "Carollia benkeithi",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 305724,
 "@tb:identifier.taxonVariant": 353891,
@@ -765,8 +948,9 @@
 }
 },
 "Tl1320716": {
-"^ot:altLabel": "Carollia benkeithi",
 "^ot:originalLabel": "Carollia benkeithi FMNH203544 Per",
+"^ot:ottId": 992663,
+"^ot:ottTaxonName": "Carollia benkeithi",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 305724,
 "@tb:identifier.taxonVariant": 353891,
@@ -775,8 +959,9 @@
 }
 },
 "Tl1320717": {
-"^ot:altLabel": "Carollia castanea",
 "^ot:originalLabel": "Carollia castanea AF512005 Ecu",
+"^ot:ottId": 941606,
+"^ot:ottTaxonName": "Carollia castanea",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5079,
 "@tb:identifier.taxonVariant": 12323,
@@ -785,8 +970,9 @@
 }
 },
 "Tl1320718": {
-"^ot:altLabel": "Carollia brevicauda",
 "^ot:originalLabel": "Carollia brevicauda FMNH203360 Per",
+"^ot:ottId": 758569,
+"^ot:ottTaxonName": "Carollia brevicauda",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5078,
 "@tb:identifier.taxonVariant": 12321,
@@ -795,8 +981,9 @@
 }
 },
 "Tl1320719": {
-"^ot:altLabel": "Carollia perspicillata",
 "^ot:originalLabel": "Carollia perspicillata FMNH203370 Per",
+"^ot:ottId": 1039980,
+"^ot:ottTaxonName": "Carollia perspicillata",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5080,
 "@tb:identifier.taxonVariant": 12325,
@@ -805,8 +992,9 @@
 }
 },
 "Tl1320720": {
-"^ot:altLabel": "Carollia sowelli",
 "^ot:originalLabel": "Carollia sowelli AF511973 Cos",
+"^ot:ottId": 958288,
+"^ot:ottTaxonName": "Carollia sowelli",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 191730,
 "@tb:identifier.taxonVariant": 263301,
@@ -815,8 +1003,9 @@
 }
 },
 "Tl1320721": {
-"^ot:altLabel": "Carollia castanea",
 "^ot:originalLabel": "Carollia castanea AF511992 Pan",
+"^ot:ottId": 941606,
+"^ot:ottTaxonName": "Carollia castanea",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5079,
 "@tb:identifier.taxonVariant": 12323,
@@ -825,8 +1014,9 @@
 }
 },
 "Tl1320722": {
-"^ot:altLabel": "Carollia perspicillata",
 "^ot:originalLabel": "Carollia perspicillata AF511991 Ecu",
+"^ot:ottId": 1039980,
+"^ot:ottTaxonName": "Carollia perspicillata",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5080,
 "@tb:identifier.taxonVariant": 12325,
@@ -835,8 +1025,9 @@
 }
 },
 "Tl1320723": {
-"^ot:altLabel": "Carollia perspicillata",
 "^ot:originalLabel": "Carollia perspicillata AF511985 Mex",
+"^ot:ottId": 1039980,
+"^ot:ottTaxonName": "Carollia perspicillata",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5080,
 "@tb:identifier.taxonVariant": 12325,
@@ -845,8 +1036,9 @@
 }
 },
 "Tl1320724": {
-"^ot:altLabel": "Carollia perspicillata",
 "^ot:originalLabel": "Carollia perspicillata FJ589665 Bra",
+"^ot:ottId": 1039980,
+"^ot:ottTaxonName": "Carollia perspicillata",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5080,
 "@tb:identifier.taxonVariant": 12325,
@@ -855,8 +1047,9 @@
 }
 },
 "Tl1320725": {
-"^ot:altLabel": "Carollia perspicillata",
 "^ot:originalLabel": "Carollia perspicillata AF511988 Gua",
+"^ot:ottId": 1039980,
+"^ot:ottTaxonName": "Carollia perspicillata",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5080,
 "@tb:identifier.taxonVariant": 12325,
@@ -865,8 +1058,9 @@
 }
 },
 "Tl1320726": {
-"^ot:altLabel": "Carollia benkeithi",
 "^ot:originalLabel": "Carollia benkeithi FMNH203546 Per",
+"^ot:ottId": 992663,
+"^ot:ottTaxonName": "Carollia benkeithi",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 305724,
 "@tb:identifier.taxonVariant": 353891,
@@ -875,8 +1069,9 @@
 }
 },
 "Tl1320727": {
-"^ot:altLabel": "Carollia brevicauda",
 "^ot:originalLabel": "Carollia brevicauda AF511951 Bol",
+"^ot:ottId": 758569,
+"^ot:ottTaxonName": "Carollia brevicauda",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5078,
 "@tb:identifier.taxonVariant": 12321,
@@ -885,8 +1080,9 @@
 }
 },
 "Tl1320728": {
-"^ot:altLabel": "Carollia perspicillata",
 "^ot:originalLabel": "Carollia perspicillata FJ589699 Bra",
+"^ot:ottId": 1039980,
+"^ot:ottTaxonName": "Carollia perspicillata",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5080,
 "@tb:identifier.taxonVariant": 12325,
@@ -895,8 +1091,9 @@
 }
 },
 "Tl1320729": {
-"^ot:altLabel": "Carollia brevicauda",
 "^ot:originalLabel": "Carollia brevicauda AF511953 Ecu",
+"^ot:ottId": 758569,
+"^ot:ottTaxonName": "Carollia brevicauda",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5078,
 "@tb:identifier.taxonVariant": 12321,
@@ -905,8 +1102,9 @@
 }
 },
 "Tl1320730": {
-"^ot:altLabel": "Carollia castanea",
 "^ot:originalLabel": "Carollia castanea AF512004 Bol",
+"^ot:ottId": 941606,
+"^ot:ottTaxonName": "Carollia castanea",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5079,
 "@tb:identifier.taxonVariant": 12323,
@@ -915,8 +1113,9 @@
 }
 },
 "Tl1320731": {
-"^ot:altLabel": "Carollia benkeithi",
 "^ot:originalLabel": "Carollia benkeithi DQ177279 Per",
+"^ot:ottId": 992663,
+"^ot:ottTaxonName": "Carollia benkeithi",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 305724,
 "@tb:identifier.taxonVariant": 353891,
@@ -925,8 +1124,9 @@
 }
 },
 "Tl1320732": {
-"^ot:altLabel": "Carollia perspicillata",
 "^ot:originalLabel": "Carollia perspicillata FJ589662 Bra",
+"^ot:ottId": 1039980,
+"^ot:ottTaxonName": "Carollia perspicillata",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5080,
 "@tb:identifier.taxonVariant": 12325,
@@ -935,8 +1135,9 @@
 }
 },
 "Tl1320733": {
-"^ot:altLabel": "Carollia brevicauda",
 "^ot:originalLabel": "Carollia brevicauda FMNH203559 Per",
+"^ot:ottId": 758569,
+"^ot:ottTaxonName": "Carollia brevicauda",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5078,
 "@tb:identifier.taxonVariant": 12321,
@@ -945,8 +1146,9 @@
 }
 },
 "Tl1320734": {
-"^ot:altLabel": "Carollia brevicauda",
 "^ot:originalLabel": "Carollia brevicauda AF511957 Ven",
+"^ot:ottId": 758569,
+"^ot:ottTaxonName": "Carollia brevicauda",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5078,
 "@tb:identifier.taxonVariant": 12321,
@@ -955,8 +1157,9 @@
 }
 },
 "Tl1320735": {
-"^ot:altLabel": "Carollia perspicillata",
 "^ot:originalLabel": "Carollia perspicillata FJ589691 Bra",
+"^ot:ottId": 1039980,
+"^ot:ottTaxonName": "Carollia perspicillata",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5080,
 "@tb:identifier.taxonVariant": 12325,
@@ -965,8 +1168,9 @@
 }
 },
 "Tl1320736": {
-"^ot:altLabel": "Carollia sowelli",
 "^ot:originalLabel": "Carollia sowelli AF511969 Hon",
+"^ot:ottId": 958288,
+"^ot:ottTaxonName": "Carollia sowelli",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 191730,
 "@tb:identifier.taxonVariant": 263301,
@@ -975,8 +1179,9 @@
 }
 },
 "Tl1320737": {
-"^ot:altLabel": "Carollia sowelli",
 "^ot:originalLabel": "Carollia sowelli AF511971 Pan",
+"^ot:ottId": 958288,
+"^ot:ottTaxonName": "Carollia sowelli",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 191730,
 "@tb:identifier.taxonVariant": 263301,
@@ -985,8 +1190,9 @@
 }
 },
 "Tl1320738": {
-"^ot:altLabel": "Carollia brevicauda",
 "^ot:originalLabel": "Carollia brevicauda FJ589653 Bra",
+"^ot:ottId": 758569,
+"^ot:ottTaxonName": "Carollia brevicauda",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5078,
 "@tb:identifier.taxonVariant": 12321,
@@ -995,8 +1201,9 @@
 }
 },
 "Tl1320739": {
-"^ot:altLabel": "Carollia perspicillata",
 "^ot:originalLabel": "Carollia perspicillata FJ589660 Bra",
+"^ot:ottId": 1039980,
+"^ot:ottTaxonName": "Carollia perspicillata",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5080,
 "@tb:identifier.taxonVariant": 12325,
@@ -1005,8 +1212,9 @@
 }
 },
 "Tl1320740": {
-"^ot:altLabel": "Trinycteris nicefori",
 "^ot:originalLabel": "Trinycteris nicefori AY380749",
+"^ot:ottId": 218136,
+"^ot:ottTaxonName": "Micronycteris nicefori",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 605559,
 "@tb:identifier.taxonVariant": 808128,
@@ -1014,8 +1222,9 @@
 }
 },
 "Tl1320741": {
-"^ot:altLabel": "Carollia perspicillata",
 "^ot:originalLabel": "Carollia perspicillata FJ589710 Bra",
+"^ot:ottId": 1039980,
+"^ot:ottTaxonName": "Carollia perspicillata",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5080,
 "@tb:identifier.taxonVariant": 12325,
@@ -1024,8 +1233,9 @@
 }
 },
 "Tl1320742": {
-"^ot:altLabel": "Carollia perspicillata",
 "^ot:originalLabel": "Carollia perspicillata FJ589708 Bra",
+"^ot:ottId": 1039980,
+"^ot:ottTaxonName": "Carollia perspicillata",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5080,
 "@tb:identifier.taxonVariant": 12325,
@@ -1034,8 +1244,9 @@
 }
 },
 "Tl1320743": {
-"^ot:altLabel": "Carollia perspicillata",
 "^ot:originalLabel": "Carollia perspicillata FJ589686 Bra",
+"^ot:ottId": 1039980,
+"^ot:ottTaxonName": "Carollia perspicillata",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5080,
 "@tb:identifier.taxonVariant": 12325,
@@ -1044,8 +1255,9 @@
 }
 },
 "Tl1320744": {
-"^ot:altLabel": "Carollia perspicillata",
 "^ot:originalLabel": "Carollia perspicillata FJ589702 Bra",
+"^ot:ottId": 1039980,
+"^ot:ottTaxonName": "Carollia perspicillata",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5080,
 "@tb:identifier.taxonVariant": 12325,
@@ -1054,8 +1266,9 @@
 }
 },
 "Tl1320745": {
-"^ot:altLabel": "Carollia perspicillata",
 "^ot:originalLabel": "Carollia perspicillata AF511990 Ecu",
+"^ot:ottId": 1039980,
+"^ot:ottTaxonName": "Carollia perspicillata",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5080,
 "@tb:identifier.taxonVariant": 12325,
@@ -1064,8 +1277,9 @@
 }
 },
 "Tl1320746": {
-"^ot:altLabel": "Carollia perspicillata",
 "^ot:originalLabel": "Carollia perspicillata JF442130 Ecu",
+"^ot:ottId": 1039980,
+"^ot:ottTaxonName": "Carollia perspicillata",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5080,
 "@tb:identifier.taxonVariant": 12325,
@@ -1074,8 +1288,9 @@
 }
 },
 "Tl1320747": {
-"^ot:altLabel": "Carollia perspicillata",
 "^ot:originalLabel": "Carollia perspicillata FJ589698 Bra",
+"^ot:ottId": 1039980,
+"^ot:ottTaxonName": "Carollia perspicillata",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5080,
 "@tb:identifier.taxonVariant": 12325,
@@ -1084,8 +1299,9 @@
 }
 },
 "Tl1320748": {
-"^ot:altLabel": "Carollia sowelli",
 "^ot:originalLabel": "Carollia sowelli AF511972 Cos",
+"^ot:ottId": 958288,
+"^ot:ottTaxonName": "Carollia sowelli",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 191730,
 "@tb:identifier.taxonVariant": 263301,
@@ -1094,8 +1310,9 @@
 }
 },
 "Tl1320749": {
-"^ot:altLabel": "Carollia brevicauda",
 "^ot:originalLabel": "Carollia brevicauda FMNH203552 Per",
+"^ot:ottId": 758569,
+"^ot:ottTaxonName": "Carollia brevicauda",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5078,
 "@tb:identifier.taxonVariant": 12321,
@@ -1104,8 +1321,9 @@
 }
 },
 "Tl1320750": {
-"^ot:altLabel": "Carollia perspicillata",
 "^ot:originalLabel": "Carollia perspicillata FJ589669 Bra",
+"^ot:ottId": 1039980,
+"^ot:ottTaxonName": "Carollia perspicillata",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5080,
 "@tb:identifier.taxonVariant": 12325,
@@ -1114,8 +1332,9 @@
 }
 },
 "Tl1320751": {
-"^ot:altLabel": "Carollia perspicillata",
 "^ot:originalLabel": "Carollia perspicillata FJ589672 Bra",
+"^ot:ottId": 1039980,
+"^ot:ottTaxonName": "Carollia perspicillata",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5080,
 "@tb:identifier.taxonVariant": 12325,
@@ -1124,8 +1343,9 @@
 }
 },
 "Tl1320752": {
-"^ot:altLabel": "Carollia perspicillata",
 "^ot:originalLabel": "Carollia perspicillata FJ589680 Bra",
+"^ot:ottId": 1039980,
+"^ot:ottTaxonName": "Carollia perspicillata",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5080,
 "@tb:identifier.taxonVariant": 12325,
@@ -1134,8 +1354,9 @@
 }
 },
 "Tl1320753": {
-"^ot:altLabel": "Carollia brevicauda",
 "^ot:originalLabel": "Carollia brevicauda FMNH174597 Per",
+"^ot:ottId": 758569,
+"^ot:ottTaxonName": "Carollia brevicauda",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5078,
 "@tb:identifier.taxonVariant": 12321,
@@ -1144,8 +1365,9 @@
 }
 },
 "Tl1320754": {
-"^ot:altLabel": "Carollia benkeithi",
 "^ot:originalLabel": "Carollia benkeithi FMNH203353 Per",
+"^ot:ottId": 992663,
+"^ot:ottTaxonName": "Carollia benkeithi",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 305724,
 "@tb:identifier.taxonVariant": 353891,
@@ -1154,8 +1376,9 @@
 }
 },
 "Tl1320755": {
-"^ot:altLabel": "Carollia perspicillata",
 "^ot:originalLabel": "Carollia perspicillata FJ589692 Bra",
+"^ot:ottId": 1039980,
+"^ot:ottTaxonName": "Carollia perspicillata",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5080,
 "@tb:identifier.taxonVariant": 12325,
@@ -1164,8 +1387,9 @@
 }
 },
 "Tl1320756": {
-"^ot:altLabel": "Carollia perspicillata",
 "^ot:originalLabel": "Carollia perspicillata FJ589671 Bra",
+"^ot:ottId": 1039980,
+"^ot:ottTaxonName": "Carollia perspicillata",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5080,
 "@tb:identifier.taxonVariant": 12325,
@@ -1174,8 +1398,9 @@
 }
 },
 "Tl1320757": {
-"^ot:altLabel": "Carollia brevicauda",
 "^ot:originalLabel": "Carollia brevicauda JF442132 Ecu",
+"^ot:ottId": 758569,
+"^ot:ottTaxonName": "Carollia brevicauda",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5078,
 "@tb:identifier.taxonVariant": 12321,
@@ -1184,8 +1409,9 @@
 }
 },
 "Tl1320758": {
-"^ot:altLabel": "Carollia benkeithi",
 "^ot:originalLabel": "Carollia benkeithi DQ177281 Per",
+"^ot:ottId": 992663,
+"^ot:ottTaxonName": "Carollia benkeithi",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 305724,
 "@tb:identifier.taxonVariant": 353891,
@@ -1194,8 +1420,9 @@
 }
 },
 "Tl1320759": {
-"^ot:altLabel": "Carollia perspicillata",
 "^ot:originalLabel": "Carollia perspicillata JF442187 Ecu",
+"^ot:ottId": 1039980,
+"^ot:ottTaxonName": "Carollia perspicillata",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5080,
 "@tb:identifier.taxonVariant": 12325,
@@ -1204,8 +1431,9 @@
 }
 },
 "Tl1320760": {
-"^ot:altLabel": "Carollia perspicillata",
 "^ot:originalLabel": "Carollia perspicillata AF511975 Ecu",
+"^ot:ottId": 1039980,
+"^ot:ottTaxonName": "Carollia perspicillata",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5080,
 "@tb:identifier.taxonVariant": 12325,
@@ -1214,8 +1442,9 @@
 }
 },
 "Tl1320761": {
-"^ot:altLabel": "Carollia perspicillata",
 "^ot:originalLabel": "Carollia perspicillata AF511989 Mex",
+"^ot:ottId": 1039980,
+"^ot:ottTaxonName": "Carollia perspicillata",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5080,
 "@tb:identifier.taxonVariant": 12325,
@@ -1224,8 +1453,9 @@
 }
 },
 "Tl1320762": {
-"^ot:altLabel": "Carollia brevicauda",
 "^ot:originalLabel": "Carollia brevicauda FMNH203557 Per",
+"^ot:ottId": 758569,
+"^ot:ottTaxonName": "Carollia brevicauda",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5078,
 "@tb:identifier.taxonVariant": 12321,
@@ -1234,8 +1464,9 @@
 }
 },
 "Tl1320763": {
-"^ot:altLabel": "Carollia brevicauda",
 "^ot:originalLabel": "Carollia brevicauda FJ589654 Bra",
+"^ot:ottId": 758569,
+"^ot:ottTaxonName": "Carollia brevicauda",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5078,
 "@tb:identifier.taxonVariant": 12321,
@@ -1244,8 +1475,9 @@
 }
 },
 "Tl1320764": {
-"^ot:altLabel": "Carollia castanea",
 "^ot:originalLabel": "Carollia castanea AF511993 Pan",
+"^ot:ottId": 941606,
+"^ot:ottTaxonName": "Carollia castanea",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5079,
 "@tb:identifier.taxonVariant": 12323,
@@ -1254,8 +1486,9 @@
 }
 },
 "Tl1320765": {
-"^ot:altLabel": "Rhinophylla fischerae",
 "^ot:originalLabel": "Rhinophylla fischerae AF187032",
+"^ot:ottId": 546395,
+"^ot:ottTaxonName": "Rhinophylla fischerae",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 25201,
 "@tb:identifier.taxonVariant": 59018,
@@ -1264,8 +1497,9 @@
 }
 },
 "Tl1320766": {
-"^ot:altLabel": "Carollia perspicillata",
 "^ot:originalLabel": "Carollia perspicillata FJ589682 Bra",
+"^ot:ottId": 1039980,
+"^ot:ottTaxonName": "Carollia perspicillata",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5080,
 "@tb:identifier.taxonVariant": 12325,
@@ -1277,8 +1511,9 @@
 "^ot:originalLabel": "Carollia new JF442157 Ecu"
 },
 "Tl1320768": {
-"^ot:altLabel": "Carollia perspicillata",
 "^ot:originalLabel": "Carollia perspicillata FMNH203390 Per",
+"^ot:ottId": 1039980,
+"^ot:ottTaxonName": "Carollia perspicillata",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5080,
 "@tb:identifier.taxonVariant": 12325,
@@ -1287,8 +1522,9 @@
 }
 },
 "Tl1320769": {
-"^ot:altLabel": "Carollia brevicauda",
 "^ot:originalLabel": "Carollia brevicauda AF511952 Bol",
+"^ot:ottId": 758569,
+"^ot:ottTaxonName": "Carollia brevicauda",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5078,
 "@tb:identifier.taxonVariant": 12321,
@@ -1297,8 +1533,9 @@
 }
 },
 "Tl1320770": {
-"^ot:altLabel": "Carollia castanea",
 "^ot:originalLabel": "Carollia castanea AF511998 Ecu",
+"^ot:ottId": 941606,
+"^ot:ottTaxonName": "Carollia castanea",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5079,
 "@tb:identifier.taxonVariant": 12323,
@@ -1307,8 +1544,9 @@
 }
 },
 "Tl1320771": {
-"^ot:altLabel": "Carollia brevicauda",
 "^ot:originalLabel": "Carollia brevicauda AF511955 Sur",
+"^ot:ottId": 758569,
+"^ot:ottTaxonName": "Carollia brevicauda",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5078,
 "@tb:identifier.taxonVariant": 12321,
@@ -1317,8 +1555,9 @@
 }
 },
 "Tl1320772": {
-"^ot:altLabel": "Carollia perspicillata",
 "^ot:originalLabel": "Carollia perspicillata FMNH203369 Per",
+"^ot:ottId": 1039980,
+"^ot:ottTaxonName": "Carollia perspicillata",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5080,
 "@tb:identifier.taxonVariant": 12325,
@@ -1327,8 +1566,9 @@
 }
 },
 "Tl1320773": {
-"^ot:altLabel": "Carollia perspicillata",
 "^ot:originalLabel": "Carollia perspicillata FJ589694 Bra",
+"^ot:ottId": 1039980,
+"^ot:ottTaxonName": "Carollia perspicillata",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5080,
 "@tb:identifier.taxonVariant": 12325,
@@ -1337,8 +1577,9 @@
 }
 },
 "Tl1320774": {
-"^ot:altLabel": "Carollia perspicillata",
 "^ot:originalLabel": "Carollia perspicillata FJ589688 Bra",
+"^ot:ottId": 1039980,
+"^ot:ottTaxonName": "Carollia perspicillata",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5080,
 "@tb:identifier.taxonVariant": 12325,
@@ -1347,8 +1588,9 @@
 }
 },
 "Tl1320775": {
-"^ot:altLabel": "Carollia perspicillata",
 "^ot:originalLabel": "Carollia perspicillata AF511980 Bra",
+"^ot:ottId": 1039980,
+"^ot:ottTaxonName": "Carollia perspicillata",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5080,
 "@tb:identifier.taxonVariant": 12325,
@@ -1357,8 +1599,9 @@
 }
 },
 "Tl1320776": {
-"^ot:altLabel": "Carollia brevicauda",
 "^ot:originalLabel": "Carollia brevicauda FMNH174596 Per",
+"^ot:ottId": 758569,
+"^ot:ottTaxonName": "Carollia brevicauda",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5078,
 "@tb:identifier.taxonVariant": 12321,
@@ -1367,8 +1610,9 @@
 }
 },
 "Tl1320777": {
-"^ot:altLabel": "Carollia perspicillata",
 "^ot:originalLabel": "Carollia perspicillata FJ589700 Bra",
+"^ot:ottId": 1039980,
+"^ot:ottTaxonName": "Carollia perspicillata",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5080,
 "@tb:identifier.taxonVariant": 12325,
@@ -1377,8 +1621,9 @@
 }
 },
 "Tl1320778": {
-"^ot:altLabel": "Carollia castanea",
 "^ot:originalLabel": "Carollia castanea AF512003 Bol",
+"^ot:ottId": 941606,
+"^ot:ottTaxonName": "Carollia castanea",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5079,
 "@tb:identifier.taxonVariant": 12323,
@@ -1387,8 +1632,9 @@
 }
 },
 "Tl1320779": {
-"^ot:altLabel": "Carollia perspicillata",
 "^ot:originalLabel": "Carollia perspicillata AF511979 Guy",
+"^ot:ottId": 1039980,
+"^ot:ottTaxonName": "Carollia perspicillata",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5080,
 "@tb:identifier.taxonVariant": 12325,
@@ -1397,8 +1643,9 @@
 }
 },
 "Tl1320780": {
-"^ot:altLabel": "Carollia manu",
 "^ot:originalLabel": "Carollia manu FMNH172078 Per",
+"^ot:ottId": 3613603,
+"^ot:ottTaxonName": "Carollia manu",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 619127,
 "@tb:identifier.taxonVariant": 828953,
@@ -1406,8 +1653,9 @@
 }
 },
 "Tl1320781": {
-"^ot:altLabel": "Carollia subrufa",
 "^ot:originalLabel": "Carollia subrufa AF187023 Mex",
+"^ot:ottId": 587100,
+"^ot:ottTaxonName": "Carollia subrufa",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5081,
 "@tb:identifier.taxonVariant": 12328,
@@ -1416,8 +1664,9 @@
 }
 },
 "Tl1320782": {
-"^ot:altLabel": "Carollia perspicillata",
 "^ot:originalLabel": "Carollia perspicillata AF511984 Mex",
+"^ot:ottId": 1039980,
+"^ot:ottTaxonName": "Carollia perspicillata",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5080,
 "@tb:identifier.taxonVariant": 12325,
@@ -1426,8 +1675,9 @@
 }
 },
 "Tl1320783": {
-"^ot:altLabel": "Carollia perspicillata",
 "^ot:originalLabel": "Carollia perspicillata FJ589678 Bra",
+"^ot:ottId": 1039980,
+"^ot:ottTaxonName": "Carollia perspicillata",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5080,
 "@tb:identifier.taxonVariant": 12325,
@@ -1436,8 +1686,9 @@
 }
 },
 "Tl1320784": {
-"^ot:altLabel": "Carollia perspicillata",
 "^ot:originalLabel": "Carollia perspicillata FJ589706 Bra",
+"^ot:ottId": 1039980,
+"^ot:ottTaxonName": "Carollia perspicillata",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5080,
 "@tb:identifier.taxonVariant": 12325,
@@ -1446,8 +1697,9 @@
 }
 },
 "Tl1320785": {
-"^ot:altLabel": "Carollia sowelli",
 "^ot:originalLabel": "Carollia sowelli AF511964 Mex",
+"^ot:ottId": 958288,
+"^ot:ottTaxonName": "Carollia sowelli",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 191730,
 "@tb:identifier.taxonVariant": 263301,
@@ -1456,8 +1708,9 @@
 }
 },
 "Tl1320786": {
-"^ot:altLabel": "Carollia perspicillata",
 "^ot:originalLabel": "Carollia perspicillata JF442131 Ecu",
+"^ot:ottId": 1039980,
+"^ot:ottTaxonName": "Carollia perspicillata",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5080,
 "@tb:identifier.taxonVariant": 12325,
@@ -1466,8 +1719,9 @@
 }
 },
 "Tl1320787": {
-"^ot:altLabel": "Carollia brevicauda",
 "^ot:originalLabel": "Carollia brevicauda AF511954 Ecu",
+"^ot:ottId": 758569,
+"^ot:ottTaxonName": "Carollia brevicauda",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5078,
 "@tb:identifier.taxonVariant": 12321,
@@ -1476,8 +1730,9 @@
 }
 },
 "Tl1320788": {
-"^ot:altLabel": "Carollia perspicillata",
 "^ot:originalLabel": "Carollia perspicillata FJ589657 Bra",
+"^ot:ottId": 1039980,
+"^ot:ottTaxonName": "Carollia perspicillata",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5080,
 "@tb:identifier.taxonVariant": 12325,
@@ -1486,8 +1741,9 @@
 }
 },
 "Tl1320789": {
-"^ot:altLabel": "Carollia perspicillata",
 "^ot:originalLabel": "Carollia perspicillata FJ589690 Bra",
+"^ot:ottId": 1039980,
+"^ot:ottTaxonName": "Carollia perspicillata",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5080,
 "@tb:identifier.taxonVariant": 12325,
@@ -1496,8 +1752,9 @@
 }
 },
 "Tl1320790": {
-"^ot:altLabel": "Carollia perspicillata",
 "^ot:originalLabel": "Carollia perspicillata FJ589685 Bra",
+"^ot:ottId": 1039980,
+"^ot:ottTaxonName": "Carollia perspicillata",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5080,
 "@tb:identifier.taxonVariant": 12325,
@@ -1506,8 +1763,9 @@
 }
 },
 "Tl1320791": {
-"^ot:altLabel": "Carollia perspicillata",
 "^ot:originalLabel": "Carollia perspicillata FJ589656 Bra",
+"^ot:ottId": 1039980,
+"^ot:ottTaxonName": "Carollia perspicillata",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5080,
 "@tb:identifier.taxonVariant": 12325,
@@ -1516,8 +1774,9 @@
 }
 },
 "Tl1320792": {
-"^ot:altLabel": "Carollia manu",
 "^ot:originalLabel": "Carollia manu FMNH172077 Per",
+"^ot:ottId": 3613603,
+"^ot:ottTaxonName": "Carollia manu",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 619127,
 "@tb:identifier.taxonVariant": 828953,
@@ -1525,8 +1784,9 @@
 }
 },
 "Tl1320793": {
-"^ot:altLabel": "Carollia sowelli",
 "^ot:originalLabel": "Carollia sowelli AF511965 Gua",
+"^ot:ottId": 958288,
+"^ot:ottTaxonName": "Carollia sowelli",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 191730,
 "@tb:identifier.taxonVariant": 263301,
@@ -1535,8 +1795,9 @@
 }
 },
 "Tl1320794": {
-"^ot:altLabel": "Carollia brevicauda",
 "^ot:originalLabel": "Carollia brevicauda AF511956 Ecu",
+"^ot:ottId": 758569,
+"^ot:ottTaxonName": "Carollia brevicauda",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5078,
 "@tb:identifier.taxonVariant": 12321,
@@ -1545,8 +1806,9 @@
 }
 },
 "Tl1320795": {
-"^ot:altLabel": "Carollia perspicillata",
 "^ot:originalLabel": "Carollia perspicillata JF442124 Ecu",
+"^ot:ottId": 1039980,
+"^ot:ottTaxonName": "Carollia perspicillata",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5080,
 "@tb:identifier.taxonVariant": 12325,
@@ -1555,8 +1817,9 @@
 }
 },
 "Tl1320796": {
-"^ot:altLabel": "Carollia perspicillata",
 "^ot:originalLabel": "Carollia perspicillata FJ589689 Bra",
+"^ot:ottId": 1039980,
+"^ot:ottTaxonName": "Carollia perspicillata",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5080,
 "@tb:identifier.taxonVariant": 12325,
@@ -1565,8 +1828,9 @@
 }
 },
 "Tl1320797": {
-"^ot:altLabel": "Carollia perspicillata",
 "^ot:originalLabel": "Carollia perspicillata AF511981 Bra",
+"^ot:ottId": 1039980,
+"^ot:ottTaxonName": "Carollia perspicillata",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5080,
 "@tb:identifier.taxonVariant": 12325,
@@ -1575,8 +1839,9 @@
 }
 },
 "Tl1320798": {
-"^ot:altLabel": "Carollia perspicillata",
 "^ot:originalLabel": "Carollia perspicillata FJ589674 Bra",
+"^ot:ottId": 1039980,
+"^ot:ottTaxonName": "Carollia perspicillata",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5080,
 "@tb:identifier.taxonVariant": 12325,
@@ -1585,8 +1850,9 @@
 }
 },
 "Tl1320799": {
-"^ot:altLabel": "Carollia perspicillata",
 "^ot:originalLabel": "Carollia perspicillata AF511974 Bra",
+"^ot:ottId": 1039980,
+"^ot:ottTaxonName": "Carollia perspicillata",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5080,
 "@tb:identifier.taxonVariant": 12325,
@@ -1595,8 +1861,9 @@
 }
 },
 "Tl1320800": {
-"^ot:altLabel": "Carollia perspicillata",
 "^ot:originalLabel": "Carollia perspicillata JF442120 Ecu",
+"^ot:ottId": 1039980,
+"^ot:ottTaxonName": "Carollia perspicillata",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5080,
 "@tb:identifier.taxonVariant": 12325,
@@ -1605,8 +1872,9 @@
 }
 },
 "Tl1320801": {
-"^ot:altLabel": "Carollia perspicillata",
 "^ot:originalLabel": "Carollia perspicillata FJ589679 Bra",
+"^ot:ottId": 1039980,
+"^ot:ottTaxonName": "Carollia perspicillata",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5080,
 "@tb:identifier.taxonVariant": 12325,
@@ -1615,8 +1883,9 @@
 }
 },
 "Tl1320802": {
-"^ot:altLabel": "Carollia perspicillata",
 "^ot:originalLabel": "Carollia perspicillata FJ589667 Bra",
+"^ot:ottId": 1039980,
+"^ot:ottTaxonName": "Carollia perspicillata",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5080,
 "@tb:identifier.taxonVariant": 12325,
@@ -1625,8 +1894,9 @@
 }
 },
 "Tl1320803": {
-"^ot:altLabel": "Carollia brevicauda",
 "^ot:originalLabel": "Carollia brevicauda JF442129 Ecu",
+"^ot:ottId": 758569,
+"^ot:ottTaxonName": "Carollia brevicauda",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5078,
 "@tb:identifier.taxonVariant": 12321,
@@ -1635,8 +1905,9 @@
 }
 },
 "Tl1320804": {
-"^ot:altLabel": "Carollia perspicillata",
 "^ot:originalLabel": "Carollia perspicillata FJ589676 Bra",
+"^ot:ottId": 1039980,
+"^ot:ottTaxonName": "Carollia perspicillata",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5080,
 "@tb:identifier.taxonVariant": 12325,
@@ -1645,8 +1916,9 @@
 }
 },
 "Tl1320805": {
-"^ot:altLabel": "Carollia brevicauda",
 "^ot:originalLabel": "Carollia brevicauda FMNH174598 Per",
+"^ot:ottId": 758569,
+"^ot:ottTaxonName": "Carollia brevicauda",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5078,
 "@tb:identifier.taxonVariant": 12321,
@@ -1655,8 +1927,9 @@
 }
 },
 "Tl1320806": {
-"^ot:altLabel": "Carollia sowelli",
 "^ot:originalLabel": "Carollia sowelli AF511970 Hon",
+"^ot:ottId": 958288,
+"^ot:ottTaxonName": "Carollia sowelli",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 191730,
 "@tb:identifier.taxonVariant": 263301,
@@ -1665,8 +1938,9 @@
 }
 },
 "Tl1320807": {
-"^ot:altLabel": "Carollia perspicillata",
 "^ot:originalLabel": "Carollia perspicillata FJ589677 Bra",
+"^ot:ottId": 1039980,
+"^ot:ottTaxonName": "Carollia perspicillata",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5080,
 "@tb:identifier.taxonVariant": 12325,
@@ -1675,8 +1949,9 @@
 }
 },
 "Tl1320808": {
-"^ot:altLabel": "Carollia perspicillata",
 "^ot:originalLabel": "Carollia perspicillata FJ589711 Bra",
+"^ot:ottId": 1039980,
+"^ot:ottTaxonName": "Carollia perspicillata",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5080,
 "@tb:identifier.taxonVariant": 12325,
@@ -1685,8 +1960,9 @@
 }
 },
 "Tl1320809": {
-"^ot:altLabel": "Carollia perspicillata",
 "^ot:originalLabel": "Carollia perspicillata AF511982 Bra",
+"^ot:ottId": 1039980,
+"^ot:ottTaxonName": "Carollia perspicillata",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5080,
 "@tb:identifier.taxonVariant": 12325,
@@ -1695,8 +1971,9 @@
 }
 },
 "Tl1320810": {
-"^ot:altLabel": "Carollia castanea",
 "^ot:originalLabel": "Carollia castanea AF511995 Cos",
+"^ot:ottId": 941606,
+"^ot:ottTaxonName": "Carollia castanea",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5079,
 "@tb:identifier.taxonVariant": 12323,
@@ -1705,8 +1982,9 @@
 }
 },
 "Tl1320811": {
-"^ot:altLabel": "Carollia perspicillata",
 "^ot:originalLabel": "Carollia perspicillata FJ589707 Bra",
+"^ot:ottId": 1039980,
+"^ot:ottTaxonName": "Carollia perspicillata",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5080,
 "@tb:identifier.taxonVariant": 12325,
@@ -1715,8 +1993,9 @@
 }
 },
 "Tl1320812": {
-"^ot:altLabel": "Carollia perspicillata",
 "^ot:originalLabel": "Carollia perspicillata FJ589705 Bra",
+"^ot:ottId": 1039980,
+"^ot:ottTaxonName": "Carollia perspicillata",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5080,
 "@tb:identifier.taxonVariant": 12325,
@@ -1725,8 +2004,9 @@
 }
 },
 "Tl1320813": {
-"^ot:altLabel": "Carollia perspicillata",
 "^ot:originalLabel": "Carollia perspicillata FJ589684 Bra",
+"^ot:ottId": 1039980,
+"^ot:ottTaxonName": "Carollia perspicillata",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5080,
 "@tb:identifier.taxonVariant": 12325,
@@ -1735,8 +2015,9 @@
 }
 },
 "Tl1320814": {
-"^ot:altLabel": "Carollia perspicillata",
 "^ot:originalLabel": "Carollia perspicillata FJ589687 Bra",
+"^ot:ottId": 1039980,
+"^ot:ottTaxonName": "Carollia perspicillata",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 5080,
 "@tb:identifier.taxonVariant": 12325,
@@ -1759,7 +2040,18 @@
 "Tr68905": {
 "@label": "best",
 "@xsi:type": "nex:FloatTree",
+"^ot:branchLengthDescription": "",
+"^ot:branchLengthMode": "ot:undefined",
+"^ot:curatedType": "",
+"^ot:inGroupClade": "",
+"^ot:nodeLabelMode": "",
+"^ot:nodeLabelTimeUnit": "",
+"^ot:outGroupEdge": "",
+"^ot:reasonsToExcludeFromSynthesis": [],
 "^ot:rootNodeId": "Tn10918703",
+"^ot:specifiedRoot": "",
+"^ot:tag": [],
+"^ot:unrootedTree": true,
 "^tb:kind.tree": "Species Tree",
 "^tb:ntax.tree": 167,
 "^tb:quality.tree": "Unrated",
