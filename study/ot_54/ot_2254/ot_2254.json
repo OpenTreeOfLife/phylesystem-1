@@ -60,22 +60,131 @@
 }
 ]
 }
+},
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.",
+"@id": "opentree-curation-webapp",
+"@name": "OpenTree curation webapp",
+"@url": "https://github.com/OpenTreeOfLife/opentree",
+"@version": "0.0.0"
 }
 ]
 },
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2023-10-17T23:01:00.465Z",
+"@description": "Aids for mapping study OTUs to OTT taxa",
+"@id": "otu-mapping-hints",
+"@passedChecks": true,
+"@preserve": true,
+"@wasAssociatedWithAgentId": "opentree-curation-webapp",
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS",
+"@humanMessageType": "NONE",
+"@severity": "INFO",
+"data": {
+"autoAcceptExactMatches": false,
+"searchContext": {
+"$": "All life"
 },
-"^ot:curatorName": "James Waterford",
+"substitutions": {
+"substitution": [
+{
+"@active": false,
+"@valid": true,
+"new": {
+"$": ""
+},
+"old": {
+"$": ""
+}
+}
+]
+},
+"useFuzzyMatching": false
+},
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+},
+{
+"@dateCreated": "2023-10-17T23:01:00.465Z",
+"@description": "Describes external namesets merged into this study",
+"@id": "merged-namesets-metadata",
+"@passedChecks": true,
+"@preserve": true,
+"@wasAssociatedWithAgentId": "opentree-curation-webapp",
+"message": [
+{
+"@code": "MERGED_NAMESET_INFO",
+"@humanMessageType": "NONE",
+"@severity": "INFO",
+"data": {
+"namesets": {
+"nameset": []
+}
+},
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+},
+{
+"@dateCreated": "2023-10-17T23:01:00.465Z",
+"@description": "Describes supporting data files for this study",
+"@id": "supporting-files-metadata",
+"@passedChecks": true,
+"@preserve": true,
+"@wasAssociatedWithAgentId": "opentree-curation-webapp",
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO",
+"@humanMessageType": "NONE",
+"@severity": "INFO",
+"data": {
+"@movedToPermanentArchive": false,
+"files": {
+"file": []
+}
+},
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+},
+"^ot:candidateTreeForSynthesis": [],
+"^ot:comment": "",
+"^ot:curatorName": [
+"James Waterford"
+],
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S14781"
 },
+"^ot:focalCladeOTTTaxonName": "",
 "^ot:otusElementOrder": [
 "Tls33461"
 ],
 "^ot:studyId": "ot_2254",
+"^ot:studyPublication": {
+"@href": ""
+},
 "^ot:studyPublicationReference": "Parlos J.A., Timm R.M., Swier V., & Baker R.J. 2013. Evaluation of the Paraphyletic Assemblage within Lonchophyllinae, with Description of a New Tribe and Genus. Occasional Papers of the Museum of Texas Tech University, .",
 "^ot:studyYear": 2013,
+"^ot:tag": [],
 "^ot:taxonLinkPrefixes": {
 "@ubio": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:",
 "@uniprot": "http://purl.uniprot.org/taxonomy/"
@@ -92,6 +201,17 @@
 "^skos:historyNote": "Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlDocumentWriter@480bd598 $Rev$",
 "^tb:identifier.study": "14781",
 "^tb:title.study": "Evaluation of the Paraphyletic Assemblage within Lonchophyllinae, with Description of a New Tribe and Genus",
+"highestMintedElementIDs": {
+"agent": 0,
+"annotation": 0,
+"edge": 38748,
+"message": 0,
+"node": 0,
+"otu": 0,
+"otus": 0,
+"tree": 0,
+"trees": 0
+},
 "otusById": {
 "Tls33461": {
 "@label": "Taxa",
@@ -104,8 +224,9 @@
 "^ot:originalLabel": "Hsunycteris thomasi TK10425"
 },
 "Tl1250016": {
-"^ot:altLabel": "Lonchophylla robusta",
 "^ot:originalLabel": "Lonchophylla robusta AF423088",
+"^ot:ottId": 248894,
+"^ot:ottTaxonName": "Lonchophylla robusta",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 621053,
 "@tb:identifier.taxonVariant": 831616,
@@ -120,8 +241,9 @@
 "^ot:originalLabel": "Hsunycteris thomasi AF187034"
 },
 "Tl1250019": {
-"^ot:altLabel": "Lonchophylla",
 "^ot:originalLabel": "Lonchophylla orienticollina ASK7737",
+"^ot:ottId": 546393,
+"^ot:ottTaxonName": "Lonchophylla",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 136567,
 "@tb:identifier.taxonVariant": 213362,
@@ -130,8 +252,9 @@
 }
 },
 "Tl1250020": {
-"^ot:altLabel": "Platalina genovensium",
 "^ot:originalLabel": "Platalina genovensium MUSA9383",
+"^ot:ottId": 823391,
+"^ot:ottTaxonName": "Platalina genovensium",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 621052,
 "@tb:identifier.taxonVariant": 831611,
@@ -146,8 +269,9 @@
 "^ot:originalLabel": "Hsunycteris thomasi TK10310"
 },
 "Tl1250025": {
-"^ot:altLabel": "Lonchophylla handleyi",
 "^ot:originalLabel": "Lonchophylla handleyi AF423094",
+"^ot:ottId": 248893,
+"^ot:ottTaxonName": "Lonchophylla handleyi",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 16236,
 "@tb:identifier.taxonVariant": 38037,
@@ -165,8 +289,9 @@
 "^ot:originalLabel": "Hsunycteris thomasi TK19267"
 },
 "Tl1250040": {
-"^ot:altLabel": "Lonchophylla",
 "^ot:originalLabel": "Lonchophylla concava TK104612",
+"^ot:ottId": 546393,
+"^ot:ottTaxonName": "Lonchophylla",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 136567,
 "@tb:identifier.taxonVariant": 213362,
@@ -193,8 +318,9 @@
 }
 },
 "Tl1250048": {
-"^ot:altLabel": "Lonchophylla robusta",
 "^ot:originalLabel": "Lonchophylla robusta TK104619",
+"^ot:ottId": 248894,
+"^ot:ottTaxonName": "Lonchophylla robusta",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 621053,
 "@tb:identifier.taxonVariant": 831616,
@@ -203,8 +329,9 @@
 }
 },
 "Tl1250049": {
-"^ot:altLabel": "Lonchophylla robusta",
 "^ot:originalLabel": "Lonchophylla robusta QCAZ5406",
+"^ot:ottId": 248894,
+"^ot:ottTaxonName": "Lonchophylla robusta",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 621053,
 "@tb:identifier.taxonVariant": 831616,
@@ -213,8 +340,9 @@
 }
 },
 "Tl1250050": {
-"^ot:altLabel": "Lonchophylla robusta",
 "^ot:originalLabel": "Lonchophylla robusta AF423090",
+"^ot:ottId": 248894,
+"^ot:ottTaxonName": "Lonchophylla robusta",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 621053,
 "@tb:identifier.taxonVariant": 831616,
@@ -226,8 +354,9 @@
 "^ot:originalLabel": "Lonchophylla concava AF423095"
 },
 "Tl1250117": {
-"^ot:altLabel": "Lonchophylla handleyi",
 "^ot:originalLabel": "Lonchophylla handleyi TK22954",
+"^ot:ottId": 248893,
+"^ot:ottTaxonName": "Lonchophylla handleyi",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 16236,
 "@tb:identifier.taxonVariant": 38037,
@@ -242,8 +371,9 @@
 "^ot:originalLabel": "Lonchophylla concava TK104588 "
 },
 "Tl1250120": {
-"^ot:altLabel": "Lonchophylla",
 "^ot:originalLabel": "Lonchophylla orienticollina ASK7733",
+"^ot:ottId": 546393,
+"^ot:ottTaxonName": "Lonchophylla",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 136567,
 "@tb:identifier.taxonVariant": 213362,
@@ -264,8 +394,9 @@
 }
 },
 "Tl1250123": {
-"^ot:altLabel": "Lionycteris spurrelli",
 "^ot:originalLabel": "Lionycteris spurrelli TK22624",
+"^ot:ottId": 534170,
+"^ot:ottTaxonName": "Lionycteris spurrelli",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 16065,
 "@tb:identifier.taxonVariant": 37632,
@@ -274,8 +405,9 @@
 }
 },
 "Tl1250124": {
-"^ot:altLabel": "Lonchophylla robusta",
 "^ot:originalLabel": "Lonchophylla robusta TK135516 ",
+"^ot:ottId": 248894,
+"^ot:ottTaxonName": "Lonchophylla robusta",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 621053,
 "@tb:identifier.taxonVariant": 831616,
@@ -284,8 +416,9 @@
 }
 },
 "Tl1250125": {
-"^ot:altLabel": "Lonchophylla",
 "^ot:originalLabel": "Lonchophylla concava TK104602",
+"^ot:ottId": 546393,
+"^ot:ottTaxonName": "Lonchophylla",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 136567,
 "@tb:identifier.taxonVariant": 213362,
@@ -297,8 +430,9 @@
 "^ot:originalLabel": "Hsunycteris thomasi TK104012"
 },
 "Tl1250127": {
-"^ot:altLabel": "Lonchophylla robusta",
 "^ot:originalLabel": "Lonchophylla robusta TK104600",
+"^ot:ottId": 248894,
+"^ot:ottTaxonName": "Lonchophylla robusta",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 621053,
 "@tb:identifier.taxonVariant": 831616,
@@ -307,8 +441,9 @@
 }
 },
 "Tl1250128": {
-"^ot:altLabel": "Lonchophylla handleyi",
 "^ot:originalLabel": "Lonchophylla handleyi TK22611",
+"^ot:ottId": 248893,
+"^ot:ottTaxonName": "Lonchophylla handleyi",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 16236,
 "@tb:identifier.taxonVariant": 38037,
@@ -323,8 +458,9 @@
 "^ot:originalLabel": "Hsunycteris cadenai TK135673"
 },
 "Tl1250131": {
-"^ot:altLabel": "Glossophaga soricina",
 "^ot:originalLabel": "Glossophaga soricina ASK7682",
+"^ot:ottId": 876514,
+"^ot:ottTaxonName": "Glossophaga soricina",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 12276,
 "@tb:identifier.taxonVariant": 29154,
@@ -336,8 +472,9 @@
 "^ot:originalLabel": "Hsunycteris thomasi KU155154"
 },
 "Tl1250133": {
-"^ot:altLabel": "Lonchophylla",
 "^ot:originalLabel": "Lonchophylla concava TK135677",
+"^ot:ottId": 546393,
+"^ot:ottTaxonName": "Lonchophylla",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 136567,
 "@tb:identifier.taxonVariant": 213362,
@@ -349,8 +486,9 @@
 "^ot:originalLabel": "Hsunycteris thomasi TK104153"
 },
 "Tl1250135": {
-"^ot:altLabel": "Glossophaga soricina",
 "^ot:originalLabel": "Glossophaga soricina FJ392519",
+"^ot:ottId": 876514,
+"^ot:ottTaxonName": "Glossophaga soricina",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 12276,
 "@tb:identifier.taxonVariant": 29154,
@@ -359,8 +497,9 @@
 }
 },
 "Tl1250136": {
-"^ot:altLabel": "Lonchophylla robusta",
 "^ot:originalLabel": "Lonchophylla robusta TK135515",
+"^ot:ottId": 248894,
+"^ot:ottTaxonName": "Lonchophylla robusta",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 621053,
 "@tb:identifier.taxonVariant": 831616,
@@ -375,8 +514,9 @@
 "^ot:originalLabel": "Hsunycteris thomasi KU158056"
 },
 "Tl1250139": {
-"^ot:altLabel": "Lionycteris spurrelli",
 "^ot:originalLabel": "Lionycteris spurrelli TK22550",
+"^ot:ottId": 534170,
+"^ot:ottTaxonName": "Lionycteris spurrelli",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 16065,
 "@tb:identifier.taxonVariant": 37632,
@@ -385,8 +525,9 @@
 }
 },
 "Tl1250140": {
-"^ot:altLabel": "Lonchophylla",
 "^ot:originalLabel": "Lonchophylla concava TK104601",
+"^ot:ottId": 546393,
+"^ot:ottTaxonName": "Lonchophylla",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 136567,
 "@tb:identifier.taxonVariant": 213362,
@@ -395,8 +536,9 @@
 }
 },
 "Tl1250141": {
-"^ot:altLabel": "Lonchophylla robusta",
 "^ot:originalLabel": "Lonchophylla robusta TK135658",
+"^ot:ottId": 248894,
+"^ot:ottTaxonName": "Lonchophylla robusta",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 621053,
 "@tb:identifier.taxonVariant": 831616,
@@ -405,8 +547,9 @@
 }
 },
 "Tl1250142": {
-"^ot:altLabel": "Lonchophylla robusta",
 "^ot:originalLabel": "Lonchophylla robusta TK104594",
+"^ot:ottId": 248894,
+"^ot:ottTaxonName": "Lonchophylla robusta",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 621053,
 "@tb:identifier.taxonVariant": 831616,
@@ -415,8 +558,9 @@
 }
 },
 "Tl1250143": {
-"^ot:altLabel": "Lionycteris spurrelli",
 "^ot:originalLabel": "Lionycteris spurrelli TK22540",
+"^ot:ottId": 534170,
+"^ot:ottTaxonName": "Lionycteris spurrelli",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 16065,
 "@tb:identifier.taxonVariant": 37632,
@@ -428,8 +572,9 @@
 "^ot:originalLabel": "Hsunycteris cadenai TK135800"
 },
 "Tl1250145": {
-"^ot:altLabel": "Glossophaga soricina",
 "^ot:originalLabel": "Glossophaga soricina TK104054",
+"^ot:ottId": 876514,
+"^ot:ottTaxonName": "Glossophaga soricina",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 12276,
 "@tb:identifier.taxonVariant": 29154,
@@ -438,8 +583,9 @@
 }
 },
 "Tl1250146": {
-"^ot:altLabel": "Lonchophylla robusta",
 "^ot:originalLabel": "Lonchophylla robustaTK135516",
+"^ot:ottId": 248894,
+"^ot:ottTaxonName": "Lonchophylla robusta",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 621053,
 "@tb:identifier.taxonVariant": 831616,
@@ -448,8 +594,9 @@
 }
 },
 "Tl1250147": {
-"^ot:altLabel": "Lonchophylla",
 "^ot:originalLabel": "Lonchophylla orienticollina ASK7735",
+"^ot:ottId": 546393,
+"^ot:ottTaxonName": "Lonchophylla",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 136567,
 "@tb:identifier.taxonVariant": 213362,
@@ -458,8 +605,9 @@
 }
 },
 "Tl1250148": {
-"^ot:altLabel": "Lonchophylla",
 "^ot:originalLabel": "Lonchophylla concava TK135927",
+"^ot:ottId": 546393,
+"^ot:ottTaxonName": "Lonchophylla",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 136567,
 "@tb:identifier.taxonVariant": 213362,
@@ -474,8 +622,9 @@
 "^ot:originalLabel": "Hsunycteris cadenai TK104679_d"
 },
 "Tl1250151": {
-"^ot:altLabel": "Lonchophylla handleyi",
 "^ot:originalLabel": "Lonchophylla handleyi TK22619",
+"^ot:ottId": 248893,
+"^ot:ottTaxonName": "Lonchophylla handleyi",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 621054,
 "@tb:identifier.taxonVariant": 831613,
@@ -484,8 +633,9 @@
 }
 },
 "Tl1250152": {
-"^ot:altLabel": "Lonchophylla hesperia",
 "^ot:originalLabel": "Lonchophylla hesperia LSUMZ M921",
+"^ot:ottId": 3613607,
+"^ot:ottTaxonName": "Lonchophylla hesperia",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 16237,
 "@tb:identifier.taxonVariant": 38039,
@@ -499,8 +649,9 @@
 "^ot:originalLabel": "Hsunycteris pattoni TK14561"
 },
 "Tl1250155": {
-"^ot:altLabel": "Lonchophylla robusta",
 "^ot:originalLabel": "Lonchophylla robusta TK135676",
+"^ot:ottId": 248894,
+"^ot:ottTaxonName": "Lonchophylla robusta",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 621053,
 "@tb:identifier.taxonVariant": 831616,
@@ -509,8 +660,9 @@
 }
 },
 "Tl1250156": {
-"^ot:altLabel": "Lonchophylla",
 "^ot:originalLabel": "Lonchophyllla concava TK104602",
+"^ot:ottId": 546393,
+"^ot:ottTaxonName": "Lonchophylla",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 136567,
 "@tb:identifier.taxonVariant": 213362,
@@ -519,8 +671,9 @@
 }
 },
 "Tl1250157": {
-"^ot:altLabel": "Glossophaga soricina",
 "^ot:originalLabel": "Glossophaga soricina TK104054 ",
+"^ot:ottId": 876514,
+"^ot:ottTaxonName": "Glossophaga soricina",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 12276,
 "@tb:identifier.taxonVariant": 29154,
@@ -529,8 +682,9 @@
 }
 },
 "Tl1250158": {
-"^ot:altLabel": "Lonchophylla robusta",
 "^ot:originalLabel": "Lonchophylla robusta TK135516",
+"^ot:ottId": 248894,
+"^ot:ottTaxonName": "Lonchophylla robusta",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 621053,
 "@tb:identifier.taxonVariant": 831616,
@@ -553,8 +707,9 @@
 "^skos:prefLabel": "Lionycteris spurrelli"
 },
 "Tl1255959": {
-"^ot:altLabel": "Platalina genovensium",
 "^ot:originalLabel": "Platalina genovensium AF423101",
+"^ot:ottId": 823391,
+"^ot:ottTaxonName": "Platalina genovensium",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 621052,
 "@tb:identifier.taxonVariant": 831611,
@@ -563,8 +718,9 @@
 }
 },
 "Tl1255960": {
-"^ot:altLabel": "Lonchophylla handleyi",
 "^ot:originalLabel": "Lonchophylla handleyi AF423093",
+"^ot:ottId": 248893,
+"^ot:ottTaxonName": "Lonchophylla handleyi",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 621054,
 "@tb:identifier.taxonVariant": 831613,
@@ -601,8 +757,9 @@
 "^skos:prefLabel": "Lionycteris spurrelli"
 },
 "Tl1255965": {
-"^ot:altLabel": "Lonchophylla robusta",
 "^ot:originalLabel": "Lonchophylla robusta AF423091",
+"^ot:ottId": 248894,
+"^ot:ottTaxonName": "Lonchophylla robusta",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 16239,
 "@tb:identifier.taxonVariant": 38042,
@@ -614,8 +771,9 @@
 "^ot:originalLabel": "Xeronycteris vieirai MVZ 186020"
 },
 "Tl1255967": {
-"^ot:altLabel": "Platalina genovensium",
 "^ot:originalLabel": "Platalina genovensium MUSA 9383",
+"^ot:ottId": 823391,
+"^ot:ottTaxonName": "Platalina genovensium",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 621052,
 "@tb:identifier.taxonVariant": 831611,
@@ -635,8 +793,9 @@
 "^skos:prefLabel": "Lionycteris spurrelli"
 },
 "Tl1255969": {
-"^ot:altLabel": "Lionycteris spurrelli",
 "^ot:originalLabel": "Lionycteris spurrelli AF423096",
+"^ot:ottId": 534170,
+"^ot:ottTaxonName": "Lionycteris spurrelli",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 621051,
 "@tb:identifier.taxonVariant": 831610,
@@ -645,8 +804,9 @@
 }
 },
 "Tl1255970": {
-"^ot:altLabel": "Lonchophylla chocoana",
 "^ot:originalLabel": "Lonchophylla chocoana AF423092",
+"^ot:ottId": 471374,
+"^ot:ottTaxonName": "Lonchophylla chocoana",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 215449,
 "@tb:identifier.taxonVariant": 282549,
@@ -677,8 +837,9 @@
 "^skos:prefLabel": "Lionycteris spurrelli"
 },
 "Tl1255973": {
-"^ot:altLabel": "Lonchophylla robusta",
 "^ot:originalLabel": "Lonchophylla robusta AF423087",
+"^ot:ottId": 248894,
+"^ot:ottTaxonName": "Lonchophylla robusta",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 621053,
 "@tb:identifier.taxonVariant": 831616,
@@ -710,7 +871,19 @@
 "Tr66952": {
 "@label": "Fgb-I7",
 "@xsi:type": "nex:FloatTree",
+"^ot:branchLengthDescription": "",
+"^ot:branchLengthMode": "",
+"^ot:branchLengthTimeUnit": "",
+"^ot:curatedType": "",
+"^ot:inGroupClade": "",
+"^ot:nodeLabelMode": "",
+"^ot:nodeLabelTimeUnit": "",
+"^ot:outGroupEdge": "",
+"^ot:reasonsToExcludeFromSynthesis": [],
 "^ot:rootNodeId": "Tn10637533",
+"^ot:specifiedRoot": "",
+"^ot:tag": [],
+"^ot:unrootedTree": true,
 "^tb:kind.tree": "Gene Tree",
 "^tb:ntax.tree": 36,
 "^tb:quality.tree": "Unrated",
@@ -1188,7 +1361,19 @@
 "Tr66953": {
 "@label": "TSHB-I2",
 "@xsi:type": "nex:FloatTree",
+"^ot:branchLengthDescription": "",
+"^ot:branchLengthMode": "",
+"^ot:branchLengthTimeUnit": "",
+"^ot:curatedType": "",
+"^ot:inGroupClade": "",
+"^ot:nodeLabelMode": "",
+"^ot:nodeLabelTimeUnit": "",
+"^ot:outGroupEdge": "",
+"^ot:reasonsToExcludeFromSynthesis": [],
 "^ot:rootNodeId": "Tn10637578",
+"^ot:specifiedRoot": "",
+"^ot:tag": [],
+"^ot:unrootedTree": true,
 "^tb:kind.tree": "Gene Tree",
 "^tb:ntax.tree": 39,
 "^tb:quality.tree": "Unrated",
@@ -1616,7 +1801,19 @@
 "Tr66954": {
 "@label": "con 50 majrule",
 "@xsi:type": "nex:FloatTree",
+"^ot:branchLengthDescription": "",
+"^ot:branchLengthMode": "",
+"^ot:branchLengthTimeUnit": "",
+"^ot:curatedType": "",
+"^ot:inGroupClade": "",
+"^ot:nodeLabelMode": "",
+"^ot:nodeLabelTimeUnit": "",
+"^ot:outGroupEdge": "",
+"^ot:reasonsToExcludeFromSynthesis": [],
 "^ot:rootNodeId": "Tn10637614",
+"^ot:specifiedRoot": "",
+"^ot:tag": [],
+"^ot:unrootedTree": true,
 "^tb:kind.tree": "Species Tree",
 "^tb:ntax.tree": 27,
 "^tb:quality.tree": "Unrated",
@@ -1991,7 +2188,19 @@
 "Tr67240": {
 "@label": "Cytochrome-b",
 "@xsi:type": "nex:FloatTree",
+"^ot:branchLengthDescription": "",
+"^ot:branchLengthMode": "",
+"^ot:branchLengthTimeUnit": "",
+"^ot:curatedType": "",
+"^ot:inGroupClade": "",
+"^ot:nodeLabelMode": "",
+"^ot:nodeLabelTimeUnit": "",
+"^ot:outGroupEdge": "",
+"^ot:reasonsToExcludeFromSynthesis": [],
 "^ot:rootNodeId": "Tn10686971",
+"^ot:specifiedRoot": "",
+"^ot:tag": [],
+"^ot:unrootedTree": true,
 "^tb:kind.tree": "Gene Tree",
 "^tb:ntax.tree": 38,
 "^tb:quality.tree": "Unrated",
