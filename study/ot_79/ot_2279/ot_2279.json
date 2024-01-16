@@ -35,13 +35,146 @@
 }
 ]
 }
+},
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.",
+"@id": "opentree-curation-webapp",
+"@name": "OpenTree curation webapp",
+"@url": "https://github.com/OpenTreeOfLife/opentree",
+"@version": "0.0.0"
 }
 ]
 },
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2024-01-16T12:53:56.534Z",
+"@description": "Aids for mapping study OTUs to OTT taxa",
+"@id": "otu-mapping-hints",
+"@passedChecks": true,
+"@preserve": true,
+"@wasAssociatedWithAgentId": "opentree-curation-webapp",
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS",
+"@humanMessageType": "NONE",
+"@severity": "INFO",
+"data": {
+"autoAcceptExactMatches": false,
+"searchContext": {
+"$": "All life"
 },
-"^ot:curatorName": "Matt Girard",
+"substitutions": {
+"substitution": [
+{
+"@active": false,
+"@valid": true,
+"new": {
+"$": ""
+},
+"old": {
+"$": ""
+}
+},
+{
+"@active": true,
+"@valid": true,
+"new": {
+"$": "$1"
+},
+"old": {
+"$": "^(\\S*\\s+\\S*).*"
+}
+}
+]
+},
+"useFuzzyMatching": false
+},
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+},
+{
+"@dateCreated": "2024-01-16T12:53:56.534Z",
+"@description": "Describes external namesets merged into this study",
+"@id": "merged-namesets-metadata",
+"@passedChecks": true,
+"@preserve": true,
+"@wasAssociatedWithAgentId": "opentree-curation-webapp",
+"message": [
+{
+"@code": "MERGED_NAMESET_INFO",
+"@humanMessageType": "NONE",
+"@severity": "INFO",
+"data": {
+"namesets": {
+"nameset": []
+}
+},
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+},
+{
+"@dateCreated": "2024-01-16T12:53:56.534Z",
+"@description": "Describes supporting data files for this study",
+"@id": "supporting-files-metadata",
+"@passedChecks": true,
+"@preserve": true,
+"@wasAssociatedWithAgentId": "opentree-curation-webapp",
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO",
+"@humanMessageType": "NONE",
+"@severity": "INFO",
+"data": {
+"@movedToPermanentArchive": false,
+"files": {
+"file": [
+{
+"@filename": "PASTED.tre",
+"@size": 483,
+"@type": "newick",
+"@url": "/curator/download/supporting_files.doc.b392e825252d71e4.5041535445442e747265.tre",
+"description": {
+"$": "Source data for tree(s) 'tree9'"
+},
+"sourceForTree": [
+{
+"$": "tree9"
+}
+]
+}
+]
+}
+},
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+},
+"^ot:candidateTreeForSynthesis": [],
+"^ot:comment": "",
+"^ot:curatorName": [
+"Matt Girard"
+],
+"^ot:dataDeposit": {
+"@href": ""
+},
+"^ot:focalCladeOTTTaxonName": "",
 "^ot:otusElementOrder": [
 "otus1"
 ],
@@ -51,6 +184,7 @@
 },
 "^ot:studyPublicationReference": "Matsunuma, M., & Johnson, J. W. (2023). Revision of the Indo-Pacific Genus Centrogenys Richardson, 1842 (Centrogenyidae) with Descriptions of Two New Species from Australia. Ichthyology &amp; Herpetology, 111(4). https://doi.org/10.1643/i2022103\n",
 "^ot:studyYear": 2023,
+"^ot:tag": [],
 "^ot:treesElementOrder": [
 "trees1"
 ],
@@ -58,16 +192,242 @@
 "@href": "",
 "@name": ""
 },
+"highestMintedElementIDs": {
+"agent": 0,
+"annotation": 0,
+"edge": 25,
+"message": 0,
+"node": 26,
+"otu": 26,
+"otus": 18,
+"tree": 9,
+"trees": 10
+},
 "otusById": {
 "otus1": {
-"otuById": {}
+"otuById": {
+"otu17": {
+"^ot:originalLabel": "Centrogenys vaigiensis 1",
+"^ot:ottId": 1098778,
+"^ot:ottTaxonName": "Centrogenys vaigiensis"
+},
+"otu18": {
+"^ot:originalLabel": "Centrogenys vaigiensis 2",
+"^ot:ottId": 1098778,
+"^ot:ottTaxonName": "Centrogenys vaigiensis"
+},
+"otu19": {
+"^ot:originalLabel": "Centrogenys vaigiensis 3",
+"^ot:ottId": 1098778,
+"^ot:ottTaxonName": "Centrogenys vaigiensis"
+},
+"otu20": {
+"^ot:originalLabel": "Centrogenys vaigiensis 4",
+"^ot:ottId": 1098778,
+"^ot:ottTaxonName": "Centrogenys vaigiensis"
+},
+"otu21": {
+"^ot:originalLabel": "Centrogenys algrahami 1"
+},
+"otu22": {
+"^ot:originalLabel": "Centrogenys algrahami 2"
+},
+"otu23": {
+"^ot:originalLabel": "Centrogenys pogonoskii 1"
+},
+"otu24": {
+"^ot:originalLabel": "Centrogenys pogonoski 2i"
+},
+"otu25": {
+"^ot:originalLabel": "Thalassoma lunare",
+"^ot:ottId": 948286,
+"^ot:ottTaxonName": "Thalassoma lunare"
+},
+"otu26": {
+"^ot:originalLabel": "Bodianus flavifrons",
+"^ot:ottId": 3636627,
+"^ot:ottTaxonName": "Bodianus flavifrons"
+}
+}
 }
 },
 "treesById": {
 "trees1": {
 "@otus": "otus1",
-"^ot:treeElementOrder": [],
-"treeById": {}
+"^ot:treeElementOrder": [
+"tree9"
+],
+"treeById": {
+"tree9": {
+"@label": "Fig. 10",
+"@xsi:type": "nex:FloatTree",
+"^ot:branchLengthDescription": "",
+"^ot:branchLengthMode": "ot:undefined",
+"^ot:curatedType": "Maximum likelihood ",
+"^ot:inGroupClade": "node9",
+"^ot:nodeLabelDescription": "",
+"^ot:nodeLabelMode": "ot:bootstrapValues",
+"^ot:nodeLabelTimeUnit": "",
+"^ot:outGroupEdge": "",
+"^ot:reasonsToExcludeFromSynthesis": [],
+"^ot:rootNodeId": "node24",
+"^ot:specifiedRoot": "node24",
+"^ot:tag": [],
+"^ot:unrootedTree": false,
+"edgeBySourceId": {
+"node10": {
+"edge10": {
+"@length": 0.003441,
+"@source": "node10",
+"@target": "node11",
+"^ot:bootstrapValues": 0.72
+},
+"edge15": {
+"@length": 5.1e-05,
+"@source": "node10",
+"@target": "node16"
+}
+},
+"node11": {
+"edge11": {
+"@length": 5.1e-05,
+"@source": "node11",
+"@target": "node12",
+"^ot:bootstrapValues": 0.835
+},
+"edge14": {
+"@length": 0.006977,
+"@source": "node11",
+"@target": "node15"
+}
+},
+"node12": {
+"edge12": {
+"@length": 5.1e-05,
+"@source": "node12",
+"@target": "node13"
+},
+"edge13": {
+"@length": 5.1e-05,
+"@source": "node12",
+"@target": "node14"
+}
+},
+"node17": {
+"edge17": {
+"@length": 0.067035,
+"@source": "node17",
+"@target": "node18",
+"^ot:bootstrapValues": 1
+},
+"edge20": {
+"@length": 0.055791,
+"@source": "node17",
+"@target": "node21",
+"^ot:bootstrapValues": 1
+}
+},
+"node18": {
+"edge18": {
+"@length": 5.1e-05,
+"@source": "node18",
+"@target": "node19"
+},
+"edge19": {
+"@length": 0.005177,
+"@source": "node18",
+"@target": "node20"
+}
+},
+"node21": {
+"edge21": {
+"@length": 0.007377,
+"@source": "node21",
+"@target": "node22"
+},
+"edge22": {
+"@length": 0.004849,
+"@source": "node21",
+"@target": "node23"
+}
+},
+"node24": {
+"edge23": {
+"@length": 0.060203,
+"@source": "node24",
+"@target": "node9"
+},
+"edge24": {
+"@length": 0.123364,
+"@source": "node24",
+"@target": "node25"
+},
+"edge25": {
+"@length": 0.109618,
+"@source": "node24",
+"@target": "node26"
+}
+},
+"node9": {
+"edge16": {
+"@length": 0.038181,
+"@source": "node9",
+"@target": "node17",
+"^ot:bootstrapValues": 0.75
+},
+"edge9": {
+"@length": 0.058028,
+"@source": "node9",
+"@target": "node10",
+"^ot:bootstrapValues": 1
+}
+}
+},
+"nodeById": {
+"node10": {},
+"node11": {},
+"node12": {},
+"node13": {
+"@otu": "otu17"
+},
+"node14": {
+"@otu": "otu18"
+},
+"node15": {
+"@otu": "otu19"
+},
+"node16": {
+"@otu": "otu20"
+},
+"node17": {},
+"node18": {},
+"node19": {
+"@otu": "otu21"
+},
+"node20": {
+"@otu": "otu22"
+},
+"node21": {},
+"node22": {
+"@otu": "otu23"
+},
+"node23": {
+"@otu": "otu24"
+},
+"node24": {
+"@label": "0.9800",
+"@root": true
+},
+"node25": {
+"@otu": "otu25"
+},
+"node26": {
+"@otu": "otu26"
+},
+"node9": {}
+}
+}
+}
 }
 }
 }
