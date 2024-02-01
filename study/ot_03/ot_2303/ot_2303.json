@@ -49,22 +49,131 @@
 }
 ]
 }
+},
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.",
+"@id": "opentree-curation-webapp",
+"@name": "OpenTree curation webapp",
+"@url": "https://github.com/OpenTreeOfLife/opentree",
+"@version": "0.0.0"
 }
 ]
 },
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2024-02-01T21:40:24.313Z",
+"@description": "Aids for mapping study OTUs to OTT taxa",
+"@id": "otu-mapping-hints",
+"@passedChecks": true,
+"@preserve": true,
+"@wasAssociatedWithAgentId": "opentree-curation-webapp",
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS",
+"@humanMessageType": "NONE",
+"@severity": "INFO",
+"data": {
+"autoAcceptExactMatches": false,
+"searchContext": {
+"$": "All life"
 },
-"^ot:curatorName": "Emily Jane McTavish",
+"substitutions": {
+"substitution": [
+{
+"@active": false,
+"@valid": true,
+"new": {
+"$": ""
+},
+"old": {
+"$": ""
+}
+}
+]
+},
+"useFuzzyMatching": false
+},
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+},
+{
+"@dateCreated": "2024-02-01T21:40:24.313Z",
+"@description": "Describes external namesets merged into this study",
+"@id": "merged-namesets-metadata",
+"@passedChecks": true,
+"@preserve": true,
+"@wasAssociatedWithAgentId": "opentree-curation-webapp",
+"message": [
+{
+"@code": "MERGED_NAMESET_INFO",
+"@humanMessageType": "NONE",
+"@severity": "INFO",
+"data": {
+"namesets": {
+"nameset": []
+}
+},
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+},
+{
+"@dateCreated": "2024-02-01T21:40:24.313Z",
+"@description": "Describes supporting data files for this study",
+"@id": "supporting-files-metadata",
+"@passedChecks": true,
+"@preserve": true,
+"@wasAssociatedWithAgentId": "opentree-curation-webapp",
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO",
+"@humanMessageType": "NONE",
+"@severity": "INFO",
+"data": {
+"@movedToPermanentArchive": false,
+"files": {
+"file": []
+}
+},
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+},
+"^ot:candidateTreeForSynthesis": [],
+"^ot:comment": "",
+"^ot:curatorName": [
+"Emily Jane McTavish"
+],
 "^ot:dataDeposit": {
 "@href": "http://purl.org/phylo/treebase/phylows/study/TB2:S1395"
 },
+"^ot:focalCladeOTTTaxonName": "",
 "^ot:otusElementOrder": [
 "Tls12047"
 ],
 "^ot:studyId": "ot_2303",
+"^ot:studyPublication": {
+"@href": ""
+},
 "^ot:studyPublicationReference": "Whittall J., Carlson M., Meinke R., & Liston A. 2005. The Mimulus moschatus Alliance (Phrymaceae): Molecular and Morphological Phylogenetics and their Conservation Implications. Systematic Botany, null.",
 "^ot:studyYear": 2005,
+"^ot:tag": [],
 "^ot:taxonLinkPrefixes": {
 "@ubio": "http://www.ubio.org/authority/metadata.php?lsid=urn:lsid:ubio.org:namebank:",
 "@uniprot": "http://purl.uniprot.org/taxonomy/"
@@ -81,14 +190,26 @@
 "^skos:historyNote": "Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlDocumentWriter@d76cac0 $Rev$",
 "^tb:identifier.study": "1395",
 "^tb:identifier.study.tb1": "S1326",
+"highestMintedElementIDs": {
+"agent": 0,
+"annotation": 0,
+"edge": 32763,
+"message": 0,
+"node": 0,
+"otu": 0,
+"otus": 0,
+"tree": 0,
+"trees": 0
+},
 "otusById": {
 "Tls12047": {
 "@label": "morphological",
 "^skos:historyNote": "Mapped from TreeBASE schema using org.cipres.treebase.domain.nexus.nexml.NexmlOTUWriter@1ae9fc66 $Rev$",
 "otuById": {
 "Tl65564": {
-"^ot:altLabel": "Mimulus floribundus",
 "^ot:originalLabel": "Mimulus floribundus CO",
+"^ot:ottId": 999928,
+"^ot:ottTaxonName": "Erythranthe floribunda",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 17833,
 "@tb:identifier.taxonVariant": 41726,
@@ -97,8 +218,9 @@
 }
 },
 "Tl65565": {
-"^ot:altLabel": "Mimulus guttatus",
 "^ot:originalLabel": "Mimulus guttatus OR",
+"^ot:ottId": 504496,
+"^ot:ottTaxonName": "Erythranthe guttata",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 17834,
 "@tb:identifier.taxonVariant": 41729,
@@ -108,6 +230,8 @@
 },
 "Tl65566": {
 "^ot:originalLabel": "Mimulus dentatus",
+"^ot:ottId": 714735,
+"^ot:ottTaxonName": "Erythranthe dentata",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 17831,
 "@tb:identifier.taxonVariant": 41722,
@@ -117,6 +241,8 @@
 },
 "Tl65567": {
 "^ot:originalLabel": "Mimulus ampliatus",
+"^ot:ottId": 765560,
+"^ot:ottTaxonName": "Erythranthe ampliata",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 17826,
 "@tb:identifier.taxonVariant": 41709,
@@ -126,6 +252,8 @@
 },
 "Tl65568": {
 "^ot:originalLabel": "Mimulus tenellus",
+"^ot:ottId": 832019,
+"^ot:ottTaxonName": "Erythranthe tenella",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 17845,
 "@tb:identifier.taxonVariant": 41761,
@@ -135,6 +263,8 @@
 },
 "Tl65569": {
 "^ot:originalLabel": "Mimulus bodinieri",
+"^ot:ottId": 714729,
+"^ot:ottTaxonName": "Erythranthe bodinieri",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 17829,
 "@tb:identifier.taxonVariant": 41719,
@@ -143,8 +273,9 @@
 }
 },
 "Tl65570": {
-"^ot:altLabel": "Mimulus floribundus",
 "^ot:originalLabel": "Mimulus floribundus OR",
+"^ot:ottId": 999928,
+"^ot:ottTaxonName": "Erythranthe floribunda",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 17833,
 "@tb:identifier.taxonVariant": 41726,
@@ -154,6 +285,8 @@
 },
 "Tl65571": {
 "^ot:originalLabel": "Mimulus moschatus",
+"^ot:ottId": 88704,
+"^ot:ottTaxonName": "Erythranthe moschata",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 17839,
 "@tb:identifier.taxonVariant": 41747,
@@ -163,6 +296,8 @@
 },
 "Tl65572": {
 "^ot:originalLabel": "Mimulus alsinoides",
+"^ot:ottId": 765566,
+"^ot:ottTaxonName": "Erythranthe alsinoides",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 17825,
 "@tb:identifier.taxonVariant": 41707,
@@ -172,6 +307,8 @@
 },
 "Tl65573": {
 "^ot:originalLabel": "Mimulus hymenophyllus",
+"^ot:ottId": 662922,
+"^ot:ottTaxonName": "Erythranthe hymenophylla",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 17835,
 "@tb:identifier.taxonVariant": 41732,
@@ -181,6 +318,8 @@
 },
 "Tl65574": {
 "^ot:originalLabel": "Mimulus pulsiferae",
+"^ot:ottId": 307746,
+"^ot:ottTaxonName": "Erythranthe pulsiferae",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 17844,
 "@tb:identifier.taxonVariant": 41757,
@@ -190,6 +329,8 @@
 },
 "Tl65575": {
 "^ot:originalLabel": "Mimulus bicolor",
+"^ot:ottId": 701054,
+"^ot:ottTaxonName": "Erythranthe bicolor",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 17828,
 "@tb:identifier.taxonVariant": 41718,
@@ -198,8 +339,9 @@
 }
 },
 "Tl65576": {
-"^ot:altLabel": "Mimulus guttatus",
 "^ot:originalLabel": "Mimulus guttatus CA",
+"^ot:ottId": 504496,
+"^ot:ottTaxonName": "Erythranthe guttata",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 17834,
 "@tb:identifier.taxonVariant": 41729,
@@ -209,6 +351,8 @@
 },
 "Tl65577": {
 "^ot:originalLabel": "Mimulus patulus",
+"^ot:ottId": 307740,
+"^ot:ottTaxonName": "Erythranthe patula",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 17842,
 "@tb:identifier.taxonVariant": 41752,
@@ -218,6 +362,8 @@
 },
 "Tl65578": {
 "^ot:originalLabel": "Mimulus latidens",
+"^ot:ottId": 662918,
+"^ot:ottTaxonName": "Erythranthe latidens",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 17837,
 "@tb:identifier.taxonVariant": 41741,
@@ -227,6 +373,8 @@
 },
 "Tl65579": {
 "^ot:originalLabel": "Mimulus lewisii",
+"^ot:ottId": 1067216,
+"^ot:ottTaxonName": "Erythranthe lewisii",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 17838,
 "@tb:identifier.taxonVariant": 41743,
@@ -236,6 +384,8 @@
 },
 "Tl65580": {
 "^ot:originalLabel": "Mimulus nepalensis",
+"^ot:ottId": 999925,
+"^ot:ottTaxonName": "Erythranthe nepalensis",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 17840,
 "@tb:identifier.taxonVariant": 41748,
@@ -245,6 +395,8 @@
 },
 "Tl65581": {
 "^ot:originalLabel": "Mimulus norrisii",
+"^ot:ottId": 88700,
+"^ot:ottTaxonName": "Erythranthe norrisii",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 17841,
 "@tb:identifier.taxonVariant": 41750,
@@ -254,6 +406,8 @@
 },
 "Tl65582": {
 "^ot:originalLabel": "Mimulus dudleyi",
+"^ot:ottId": 140559,
+"^ot:ottTaxonName": "Erythranthe geniculata",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 17832,
 "@tb:identifier.taxonVariant": 41725,
@@ -263,6 +417,8 @@
 },
 "Tl65583": {
 "^ot:originalLabel": "Mimulus breviflorus",
+"^ot:ottId": 714732,
+"^ot:ottTaxonName": "Erythranthe breviflora",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 17830,
 "@tb:identifier.taxonVariant": 41721,
@@ -272,6 +428,8 @@
 },
 "Tl65584": {
 "^ot:originalLabel": "Mimulus washingtonensis",
+"^ot:ottId": 832012,
+"^ot:ottTaxonName": "Erythranthe washingtoniensis",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 17846,
 "@tb:identifier.taxonVariant": 41764,
@@ -281,6 +439,8 @@
 },
 "Tl65585": {
 "^ot:originalLabel": "Mimulus jungermannioides",
+"^ot:ottId": 662917,
+"^ot:ottTaxonName": "Erythranthe jungermannioides",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 17836,
 "@tb:identifier.taxonVariant": 41735,
@@ -290,6 +450,8 @@
 },
 "Tl65586": {
 "^ot:originalLabel": "Mimulus primuloides",
+"^ot:ottId": 307745,
+"^ot:ottTaxonName": "Erythranthe primuloides",
 "^ot:taxonLink": {
 "@tb:identifier.taxon": 17843,
 "@tb:identifier.taxonVariant": 41755,
@@ -331,7 +493,19 @@
 "Tr2207": {
 "@label": "combomol.MP.BO",
 "@xsi:type": "nex:FloatTree",
+"^ot:branchLengthDescription": "",
+"^ot:branchLengthMode": "",
+"^ot:branchLengthTimeUnit": "",
+"^ot:curatedType": "",
+"^ot:inGroupClade": "",
+"^ot:nodeLabelMode": "",
+"^ot:nodeLabelTimeUnit": "",
+"^ot:outGroupEdge": "",
+"^ot:reasonsToExcludeFromSynthesis": [],
 "^ot:rootNodeId": "Tn144660",
+"^ot:specifiedRoot": "",
+"^ot:tag": [],
+"^ot:unrootedTree": true,
 "^tb:kind.tree": "Species Tree",
 "^tb:ntax.tree": 23,
 "^tb:quality.tree": "Unrated",
@@ -643,7 +817,19 @@
 "Tr2208": {
 "@label": "RPL.MP.BO",
 "@xsi:type": "nex:FloatTree",
+"^ot:branchLengthDescription": "",
+"^ot:branchLengthMode": "",
+"^ot:branchLengthTimeUnit": "",
+"^ot:curatedType": "",
+"^ot:inGroupClade": "",
+"^ot:nodeLabelMode": "",
+"^ot:nodeLabelTimeUnit": "",
+"^ot:outGroupEdge": "",
+"^ot:reasonsToExcludeFromSynthesis": [],
 "^ot:rootNodeId": "Tn144709",
+"^ot:specifiedRoot": "",
+"^ot:tag": [],
+"^ot:unrootedTree": true,
 "^tb:kind.tree": "Species Tree",
 "^tb:ntax.tree": 23,
 "^tb:quality.tree": "Unrated",
@@ -892,7 +1078,19 @@
 "Tr2209": {
 "@label": "TRN.MP.con",
 "@xsi:type": "nex:FloatTree",
+"^ot:branchLengthDescription": "",
+"^ot:branchLengthMode": "",
+"^ot:branchLengthTimeUnit": "",
+"^ot:curatedType": "",
+"^ot:inGroupClade": "",
+"^ot:nodeLabelMode": "",
+"^ot:nodeLabelTimeUnit": "",
+"^ot:outGroupEdge": "",
+"^ot:reasonsToExcludeFromSynthesis": [],
 "^ot:rootNodeId": "Tn144744",
+"^ot:specifiedRoot": "",
+"^ot:tag": [],
+"^ot:unrootedTree": true,
 "^tb:kind.tree": "Species Tree",
 "^tb:ntax.tree": 23,
 "^tb:quality.tree": "Unrated",
@@ -1162,7 +1360,19 @@
 "Tr2210": {
 "@label": "ITS.MP.con",
 "@xsi:type": "nex:FloatTree",
+"^ot:branchLengthDescription": "",
+"^ot:branchLengthMode": "",
+"^ot:branchLengthTimeUnit": "",
+"^ot:curatedType": "",
+"^ot:inGroupClade": "",
+"^ot:nodeLabelMode": "",
+"^ot:nodeLabelTimeUnit": "",
+"^ot:outGroupEdge": "",
+"^ot:reasonsToExcludeFromSynthesis": [],
 "^ot:rootNodeId": "Tn144785",
+"^ot:specifiedRoot": "",
+"^ot:tag": [],
+"^ot:unrootedTree": true,
 "^tb:kind.tree": "Species Tree",
 "^tb:ntax.tree": 23,
 "^tb:quality.tree": "Unrated",
@@ -1460,7 +1670,19 @@
 "Tr2211": {
 "@label": "ETS.MP.con",
 "@xsi:type": "nex:FloatTree",
+"^ot:branchLengthDescription": "",
+"^ot:branchLengthMode": "",
+"^ot:branchLengthTimeUnit": "",
+"^ot:curatedType": "",
+"^ot:inGroupClade": "",
+"^ot:nodeLabelMode": "",
+"^ot:nodeLabelTimeUnit": "",
+"^ot:outGroupEdge": "",
+"^ot:reasonsToExcludeFromSynthesis": [],
 "^ot:rootNodeId": "Tn144833",
+"^ot:specifiedRoot": "",
+"^ot:tag": [],
+"^ot:unrootedTree": true,
 "^tb:kind.tree": "Species Tree",
 "^tb:ntax.tree": 23,
 "^tb:quality.tree": "Unrated",
@@ -1772,7 +1994,19 @@
 "Tr2212": {
 "@label": "Fig.4",
 "@xsi:type": "nex:FloatTree",
+"^ot:branchLengthDescription": "",
+"^ot:branchLengthMode": "",
+"^ot:branchLengthTimeUnit": "",
+"^ot:curatedType": "",
+"^ot:inGroupClade": "",
+"^ot:nodeLabelMode": "",
+"^ot:nodeLabelTimeUnit": "",
+"^ot:outGroupEdge": "",
+"^ot:reasonsToExcludeFromSynthesis": [],
 "^ot:rootNodeId": "Tn144884",
+"^ot:specifiedRoot": "",
+"^ot:tag": [],
+"^ot:unrootedTree": true,
 "^tb:kind.tree": "Species Tree",
 "^tb:ntax.tree": 23,
 "^tb:quality.tree": "Unrated",
@@ -2098,7 +2332,19 @@
 "Tr2213": {
 "@label": "Fig.5a",
 "@xsi:type": "nex:FloatTree",
+"^ot:branchLengthDescription": "",
+"^ot:branchLengthMode": "",
+"^ot:branchLengthTimeUnit": "",
+"^ot:curatedType": "",
+"^ot:inGroupClade": "",
+"^ot:nodeLabelMode": "",
+"^ot:nodeLabelTimeUnit": "",
+"^ot:outGroupEdge": "",
+"^ot:reasonsToExcludeFromSynthesis": [],
 "^ot:rootNodeId": "Tn144909",
+"^ot:specifiedRoot": "",
+"^ot:tag": [],
+"^ot:unrootedTree": true,
 "^tb:kind.tree": "Species Tree",
 "^tb:ntax.tree": 23,
 "^tb:quality.tree": "Unrated",
@@ -2417,7 +2663,19 @@
 "Tr2214": {
 "@label": "Fig.4",
 "@xsi:type": "nex:FloatTree",
+"^ot:branchLengthDescription": "",
+"^ot:branchLengthMode": "",
+"^ot:branchLengthTimeUnit": "",
+"^ot:curatedType": "",
+"^ot:inGroupClade": "",
+"^ot:nodeLabelMode": "",
+"^ot:nodeLabelTimeUnit": "",
+"^ot:outGroupEdge": "",
+"^ot:reasonsToExcludeFromSynthesis": [],
 "^ot:rootNodeId": "Tn144943",
+"^ot:specifiedRoot": "",
+"^ot:tag": [],
+"^ot:unrootedTree": true,
 "^tb:kind.tree": "Species Tree",
 "^tb:ntax.tree": 23,
 "^tb:quality.tree": "Unrated",
@@ -2743,7 +3001,19 @@
 "Tr2215": {
 "@label": "Fig.5b",
 "@xsi:type": "nex:FloatTree",
+"^ot:branchLengthDescription": "",
+"^ot:branchLengthMode": "",
+"^ot:branchLengthTimeUnit": "",
+"^ot:curatedType": "",
+"^ot:inGroupClade": "",
+"^ot:nodeLabelMode": "",
+"^ot:nodeLabelTimeUnit": "",
+"^ot:outGroupEdge": "",
+"^ot:reasonsToExcludeFromSynthesis": [],
 "^ot:rootNodeId": "Tn145018",
+"^ot:specifiedRoot": "",
+"^ot:tag": [],
+"^ot:unrootedTree": true,
 "^tb:kind.tree": "Species Tree",
 "^tb:ntax.tree": 23,
 "^tb:quality.tree": "Unrated",
@@ -3069,7 +3339,19 @@
 "Tr2216": {
 "@label": "combomolmorph.MP.BO.nopolys",
 "@xsi:type": "nex:FloatTree",
+"^ot:branchLengthDescription": "",
+"^ot:branchLengthMode": "",
+"^ot:branchLengthTimeUnit": "",
+"^ot:curatedType": "",
+"^ot:inGroupClade": "",
+"^ot:nodeLabelMode": "",
+"^ot:nodeLabelTimeUnit": "",
+"^ot:outGroupEdge": "",
+"^ot:reasonsToExcludeFromSynthesis": [],
 "^ot:rootNodeId": "Tn145041",
+"^ot:specifiedRoot": "",
+"^ot:tag": [],
+"^ot:unrootedTree": true,
 "^tb:kind.tree": "Species Tree",
 "^tb:ntax.tree": 23,
 "^tb:quality.tree": "Unrated",
@@ -3381,7 +3663,19 @@
 "Tr2217": {
 "@label": "combomolmorph.MP.BO.polys",
 "@xsi:type": "nex:FloatTree",
+"^ot:branchLengthDescription": "",
+"^ot:branchLengthMode": "",
+"^ot:branchLengthTimeUnit": "",
+"^ot:curatedType": "",
+"^ot:inGroupClade": "",
+"^ot:nodeLabelMode": "",
+"^ot:nodeLabelTimeUnit": "",
+"^ot:outGroupEdge": "",
+"^ot:reasonsToExcludeFromSynthesis": [],
 "^ot:rootNodeId": "Tn145109",
+"^ot:specifiedRoot": "",
+"^ot:tag": [],
+"^ot:unrootedTree": true,
 "^tb:kind.tree": "Species Tree",
 "^tb:ntax.tree": 23,
 "^tb:quality.tree": "Unrated",
@@ -3693,7 +3987,19 @@
 "Tr2218": {
 "@label": "morph.MB.con.ingroup",
 "@xsi:type": "nex:FloatTree",
+"^ot:branchLengthDescription": "",
+"^ot:branchLengthMode": "",
+"^ot:branchLengthTimeUnit": "",
+"^ot:curatedType": "",
+"^ot:inGroupClade": "",
+"^ot:nodeLabelMode": "",
+"^ot:nodeLabelTimeUnit": "",
+"^ot:outGroupEdge": "",
+"^ot:reasonsToExcludeFromSynthesis": [],
 "^ot:rootNodeId": "Tn145113",
+"^ot:specifiedRoot": "",
+"^ot:tag": [],
+"^ot:unrootedTree": true,
 "^tb:kind.tree": "Species Tree",
 "^tb:ntax.tree": 23,
 "^tb:quality.tree": "Unrated",
@@ -3921,7 +4227,19 @@
 "Tr2219": {
 "@label": "morph.MB.con.all",
 "@xsi:type": "nex:FloatTree",
+"^ot:branchLengthDescription": "",
+"^ot:branchLengthMode": "",
+"^ot:branchLengthTimeUnit": "",
+"^ot:curatedType": "",
+"^ot:inGroupClade": "",
+"^ot:nodeLabelMode": "",
+"^ot:nodeLabelTimeUnit": "",
+"^ot:outGroupEdge": "",
+"^ot:reasonsToExcludeFromSynthesis": [],
 "^ot:rootNodeId": "Tn145173",
+"^ot:specifiedRoot": "",
+"^ot:tag": [],
+"^ot:unrootedTree": true,
 "^tb:kind.tree": "Species Tree",
 "^tb:ntax.tree": 23,
 "^tb:quality.tree": "Unrated",
@@ -4156,7 +4474,19 @@
 "Tr2220": {
 "@label": "combomol.ML.BO",
 "@xsi:type": "nex:FloatTree",
+"^ot:branchLengthDescription": "",
+"^ot:branchLengthMode": "",
+"^ot:branchLengthTimeUnit": "",
+"^ot:curatedType": "",
+"^ot:inGroupClade": "",
+"^ot:nodeLabelMode": "",
+"^ot:nodeLabelTimeUnit": "",
+"^ot:outGroupEdge": "",
+"^ot:reasonsToExcludeFromSynthesis": [],
 "^ot:rootNodeId": "Tn145209",
+"^ot:specifiedRoot": "",
+"^ot:tag": [],
+"^ot:unrootedTree": true,
 "^tb:kind.tree": "Species Tree",
 "^tb:ntax.tree": 23,
 "^tb:quality.tree": "Unrated",
@@ -4461,7 +4791,19 @@
 "Tr311": {
 "@label": "combomol.ML",
 "@xsi:type": "nex:FloatTree",
+"^ot:branchLengthDescription": "",
+"^ot:branchLengthMode": "",
+"^ot:branchLengthTimeUnit": "",
+"^ot:curatedType": "",
+"^ot:inGroupClade": "",
+"^ot:nodeLabelMode": "",
+"^ot:nodeLabelTimeUnit": "",
+"^ot:outGroupEdge": "",
+"^ot:reasonsToExcludeFromSynthesis": [],
 "^ot:rootNodeId": "Tn9266",
+"^ot:specifiedRoot": "",
+"^ot:tag": [],
+"^ot:unrootedTree": true,
 "^tb:kind.tree": "Species Tree",
 "^tb:ntax.tree": 23,
 "^tb:quality.tree": "Unrated",
@@ -4787,7 +5129,19 @@
 "Tr312": {
 "@label": "RPL.ML",
 "@xsi:type": "nex:FloatTree",
+"^ot:branchLengthDescription": "",
+"^ot:branchLengthMode": "",
+"^ot:branchLengthTimeUnit": "",
+"^ot:curatedType": "",
+"^ot:inGroupClade": "",
+"^ot:nodeLabelMode": "",
+"^ot:nodeLabelTimeUnit": "",
+"^ot:outGroupEdge": "",
+"^ot:reasonsToExcludeFromSynthesis": [],
 "^ot:rootNodeId": "Tn9309",
+"^ot:specifiedRoot": "",
+"^ot:tag": [],
+"^ot:unrootedTree": true,
 "^tb:kind.tree": "Species Tree",
 "^tb:ntax.tree": 23,
 "^tb:quality.tree": "Unrated",
@@ -5057,7 +5411,19 @@
 "Tr313": {
 "@label": "Fig.3d",
 "@xsi:type": "nex:FloatTree",
+"^ot:branchLengthDescription": "",
+"^ot:branchLengthMode": "",
+"^ot:branchLengthTimeUnit": "",
+"^ot:curatedType": "",
+"^ot:inGroupClade": "",
+"^ot:nodeLabelMode": "",
+"^ot:nodeLabelTimeUnit": "",
+"^ot:outGroupEdge": "",
+"^ot:reasonsToExcludeFromSynthesis": [],
 "^ot:rootNodeId": "Tn9347",
+"^ot:specifiedRoot": "",
+"^ot:tag": [],
+"^ot:unrootedTree": true,
 "^tb:kind.tree": "Species Tree",
 "^tb:ntax.tree": 23,
 "^tb:quality.tree": "Unrated",
@@ -5306,7 +5672,19 @@
 "Tr314": {
 "@label": "Fig.3c",
 "@xsi:type": "nex:FloatTree",
+"^ot:branchLengthDescription": "",
+"^ot:branchLengthMode": "",
+"^ot:branchLengthTimeUnit": "",
+"^ot:curatedType": "",
+"^ot:inGroupClade": "",
+"^ot:nodeLabelMode": "",
+"^ot:nodeLabelTimeUnit": "",
+"^ot:outGroupEdge": "",
+"^ot:reasonsToExcludeFromSynthesis": [],
 "^ot:rootNodeId": "Tn9388",
+"^ot:specifiedRoot": "",
+"^ot:tag": [],
+"^ot:unrootedTree": true,
 "^tb:kind.tree": "Species Tree",
 "^tb:ntax.tree": 23,
 "^tb:quality.tree": "Unrated",
@@ -5576,7 +5954,19 @@
 "Tr315": {
 "@label": "Fig.3b",
 "@xsi:type": "nex:FloatTree",
+"^ot:branchLengthDescription": "",
+"^ot:branchLengthMode": "",
+"^ot:branchLengthTimeUnit": "",
+"^ot:curatedType": "",
+"^ot:inGroupClade": "",
+"^ot:nodeLabelMode": "",
+"^ot:nodeLabelTimeUnit": "",
+"^ot:outGroupEdge": "",
+"^ot:reasonsToExcludeFromSynthesis": [],
 "^ot:rootNodeId": "Tn9413",
+"^ot:specifiedRoot": "",
+"^ot:tag": [],
+"^ot:unrootedTree": true,
 "^tb:kind.tree": "Species Tree",
 "^tb:ntax.tree": 23,
 "^tb:quality.tree": "Unrated",
@@ -5895,7 +6285,19 @@
 "Tr316": {
 "@label": "Fig.3a",
 "@xsi:type": "nex:FloatTree",
+"^ot:branchLengthDescription": "",
+"^ot:branchLengthMode": "",
+"^ot:branchLengthTimeUnit": "",
+"^ot:curatedType": "",
+"^ot:inGroupClade": "",
+"^ot:nodeLabelMode": "",
+"^ot:nodeLabelTimeUnit": "",
+"^ot:outGroupEdge": "",
+"^ot:reasonsToExcludeFromSynthesis": [],
 "^ot:rootNodeId": "Tn9478",
+"^ot:specifiedRoot": "",
+"^ot:tag": [],
+"^ot:unrootedTree": true,
 "^tb:kind.tree": "Species Tree",
 "^tb:ntax.tree": 23,
 "^tb:quality.tree": "Unrated",
