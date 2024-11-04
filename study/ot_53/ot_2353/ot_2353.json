@@ -35,13 +35,137 @@
 }
 ]
 }
+},
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.",
+"@id": "opentree-curation-webapp",
+"@name": "OpenTree curation webapp",
+"@url": "https://github.com/OpenTreeOfLife/opentree",
+"@version": "0.0.0"
 }
 ]
 },
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2024-11-04T19:45:42.563Z",
+"@description": "Aids for mapping study OTUs to OTT taxa",
+"@id": "otu-mapping-hints",
+"@passedChecks": true,
+"@preserve": true,
+"@wasAssociatedWithAgentId": "opentree-curation-webapp",
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS",
+"@humanMessageType": "NONE",
+"@severity": "INFO",
+"data": {
+"autoAcceptExactMatches": true,
+"searchContext": {
+"$": "Insects"
 },
-"^ot:curatorName": "LouisBell-Roberts",
+"substitutions": {
+"substitution": [
+{
+"@active": true,
+"@valid": true,
+"new": {
+"$": ""
+},
+"old": {
+"$": "sp."
+}
+}
+]
+},
+"useFuzzyMatching": true
+},
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+},
+{
+"@dateCreated": "2024-11-04T19:45:42.563Z",
+"@description": "Describes external namesets merged into this study",
+"@id": "merged-namesets-metadata",
+"@passedChecks": true,
+"@preserve": true,
+"@wasAssociatedWithAgentId": "opentree-curation-webapp",
+"message": [
+{
+"@code": "MERGED_NAMESET_INFO",
+"@humanMessageType": "NONE",
+"@severity": "INFO",
+"data": {
+"namesets": {
+"nameset": []
+}
+},
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+},
+{
+"@dateCreated": "2024-11-04T19:45:42.563Z",
+"@description": "Describes supporting data files for this study",
+"@id": "supporting-files-metadata",
+"@passedChecks": true,
+"@preserve": true,
+"@wasAssociatedWithAgentId": "opentree-curation-webapp",
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO",
+"@humanMessageType": "NONE",
+"@severity": "INFO",
+"data": {
+"@movedToPermanentArchive": false,
+"files": {
+"file": [
+{
+"@filename": "Augochloropsis_tree.tre",
+"@size": 1996,
+"@type": "newick",
+"@url": "/curator/download/supporting_files.doc.952f756dbbbc25e2.4175676f63686c6f726f707369735f747265652e747265.tre",
+"description": {
+"$": "Source data for tree(s) 'tree1'"
+},
+"sourceForTree": [
+{
+"$": "tree1"
+}
+]
+}
+]
+}
+},
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+},
+"^ot:candidateTreeForSynthesis": [],
+"^ot:comment": "",
+"^ot:curatorName": [
+"LouisBell-Roberts"
+],
+"^ot:dataDeposit": {
+"@href": ""
+},
+"^ot:focalClade": 1031148,
+"^ot:focalCladeOTTTaxonName": "Augochloropsis",
 "^ot:otusElementOrder": [
 "otus1"
 ],
@@ -51,6 +175,7 @@
 },
 "^ot:studyPublicationReference": "Celis, C. J., & Cure, J. R. (2017). Filogenia y clasificaci\u00f3n taxon\u00f3mica de los subg\u00e9neros de Augochloropsis (Hymenoptera: Halictidae). Revista de Biolog\u00eda Tropical, 65(4), 1277. https://doi.org/10.15517/rbt.v65i4.26549\n",
 "^ot:studyYear": 2017,
+"^ot:tag": [],
 "^ot:treesElementOrder": [
 "trees1"
 ],
@@ -58,16 +183,785 @@
 "@href": "https://creativecommons.org/licenses/by/4.0/deed.en",
 "@name": "CC BY 4.0"
 },
+"highestMintedElementIDs": {
+"agent": 0,
+"annotation": 0,
+"edge": 63,
+"message": 0,
+"node": 64,
+"otu": 47,
+"otus": 2,
+"tree": 1,
+"trees": 2
+},
 "otusById": {
 "otus1": {
-"otuById": {}
+"otuById": {
+"otu1": {
+"^ot:originalLabel": "Augochloropsis cupreola",
+"^ot:ottId": 4530904,
+"^ot:ottTaxonName": "Augochloropsis cupreola"
+},
+"otu10": {
+"^ot:originalLabel": "Augochloropsis pallitarsis",
+"^ot:ottId": 4530973,
+"^ot:ottTaxonName": "Augochloropsis pallitarsis"
+},
+"otu11": {
+"^ot:originalLabel": "Augochloropsis euterpe",
+"^ot:ottId": 4530983,
+"^ot:ottTaxonName": "Augochloropsis euterpe"
+},
+"otu12": {
+"^ot:originalLabel": "Augochloropsis imperialis",
+"^ot:ottId": 4530922,
+"^ot:ottTaxonName": "Augochloropsis imperialis"
+},
+"otu13": {
+"^ot:originalLabel": "Augochloropsis nasuta",
+"^ot:ottId": 4530882,
+"^ot:ottTaxonName": "Augochloropsis nasuta"
+},
+"otu14": {
+"^ot:originalLabel": "Augochloropsis sparsilis"
+},
+"otu15": {
+"^ot:originalLabel": "Augochloropsis sympleres",
+"^ot:ottId": 4530990,
+"^ot:ottTaxonName": "Augochloropsis sympleres"
+},
+"otu16": {
+"^ot:originalLabel": "Augochloropsis multiplex",
+"^ot:ottId": 4530958,
+"^ot:ottTaxonName": "Augochloropsis multiplex"
+},
+"otu17": {
+"^ot:originalLabel": "Augochloropsis iris",
+"^ot:ottId": 4531016,
+"^ot:ottTaxonName": "Augochloropsis iris"
+},
+"otu18": {
+"^ot:originalLabel": "Augochloropsis aurifluens",
+"^ot:ottId": 4530948,
+"^ot:ottTaxonName": "Augochloropsis aurifluens"
+},
+"otu19": {
+"^ot:originalLabel": "Augochloropsis vesta vesta",
+"^ot:ottId": 4530906,
+"^ot:ottTaxonName": "Augochloropsis vesta"
+},
+"otu2": {
+"^ot:originalLabel": "Augochloropsis smithiana",
+"^ot:ottId": 4530975,
+"^ot:ottTaxonName": "Augochloropsis smithiana"
+},
+"otu20": {
+"^ot:originalLabel": "Augochloropsis metallica",
+"^ot:ottId": 1031149,
+"^ot:ottTaxonName": "Augochloropsis metallica"
+},
+"otu21": {
+"^ot:originalLabel": "Augochloropsis sumptuosa",
+"^ot:ottId": 4530889,
+"^ot:ottTaxonName": "Augochloropsis sumptuosa"
+},
+"otu22": {
+"^ot:originalLabel": "Augochloropsis terrestris prognatha",
+"^ot:ottId": 4530901,
+"^ot:ottTaxonName": "Augochloropsis terrestris"
+},
+"otu23": {
+"^ot:originalLabel": "Augochloropsis chloera",
+"^ot:ottId": 4530998,
+"^ot:ottTaxonName": "Augochloropsis chloera"
+},
+"otu24": {
+"^ot:originalLabel": "Augochloropsis bertonii",
+"^ot:ottId": 4530884,
+"^ot:ottTaxonName": "Augochloropsis bertonii"
+},
+"otu25": {
+"^ot:originalLabel": "Augochloropsis ornata",
+"^ot:ottId": 4531014,
+"^ot:ottTaxonName": "Augochloropsis ornata"
+},
+"otu26": {
+"^ot:originalLabel": "Augochloropsis diversipennis",
+"^ot:ottId": 4530989,
+"^ot:ottTaxonName": "Augochloropsis diversipennis"
+},
+"otu27": {
+"^ot:originalLabel": "Augochloropsis flammea",
+"^ot:ottId": 4531021,
+"^ot:ottTaxonName": "Augochloropsis flammea"
+},
+"otu28": {
+"^ot:originalLabel": "Augochloropsis callichroa",
+"^ot:ottId": 4530881,
+"^ot:ottTaxonName": "Augochloropsis callichroa"
+},
+"otu29": {
+"^ot:originalLabel": "Augochloropsis illustris",
+"^ot:ottId": 4530966,
+"^ot:ottTaxonName": "Augochloropsis illustris"
+},
+"otu3": {
+"^ot:originalLabel": "Augochloropsis heterochroa",
+"^ot:ottId": 4531024,
+"^ot:ottTaxonName": "Augochloropsis heterochroa"
+},
+"otu30": {
+"^ot:originalLabel": "Augochloropsis notophos",
+"^ot:ottId": 4530962,
+"^ot:ottTaxonName": "Augochloropsis notophos"
+},
+"otu31": {
+"^ot:originalLabel": "Augochloropsis atropos",
+"^ot:ottId": 4530914,
+"^ot:ottTaxonName": "Augochloropsis atropos"
+},
+"otu32": {
+"^ot:originalLabel": "Augochloropsis rotalis",
+"^ot:ottId": 4530955,
+"^ot:ottTaxonName": "Augochloropsis rotalis"
+},
+"otu33": {
+"^ot:originalLabel": "Augochloropsis pandrosos",
+"^ot:ottId": 4530988,
+"^ot:ottTaxonName": "Augochloropsis pandrosos"
+},
+"otu34": {
+"^ot:originalLabel": "Augochloropsis sp.n.2"
+},
+"otu35": {
+"^ot:originalLabel": "Augochloropsis fulvofimbriata"
+},
+"otu36": {
+"^ot:originalLabel": "Augochloropsis brachycephala",
+"^ot:ottId": 4530978,
+"^ot:ottTaxonName": "Augochloropsis brachycephala"
+},
+"otu37": {
+"^ot:originalLabel": "Augochloropsis wallacei",
+"^ot:ottId": 4530899,
+"^ot:ottTaxonName": "Augochloropsis wallacei"
+},
+"otu38": {
+"^ot:originalLabel": "Augochloropsis ignita",
+"^ot:ottId": 4531008,
+"^ot:ottTaxonName": "Augochloropsis ignita"
+},
+"otu39": {
+"^ot:originalLabel": "Augochloropsis fairchildi",
+"^ot:ottId": 4530919,
+"^ot:ottTaxonName": "Augochloropsis fairchildi"
+},
+"otu4": {
+"^ot:originalLabel": "Augochloropsis electra",
+"^ot:ottId": 4530954,
+"^ot:ottTaxonName": "Augochloropsis electra"
+},
+"otu40": {
+"^ot:originalLabel": "Augochloropsis auriventris",
+"^ot:ottId": 4531009,
+"^ot:ottTaxonName": "Augochloropsis auriventris"
+},
+"otu41": {
+"^ot:originalLabel": "Augochloropsis anquisita",
+"^ot:ottId": 4530892,
+"^ot:ottTaxonName": "Augochloropsis anquisita"
+},
+"otu42": {
+"^ot:originalLabel": "Augochloropsis nitidicollis",
+"^ot:ottId": 4530943,
+"^ot:ottTaxonName": "Augochloropsis nitidicollis"
+},
+"otu43": {
+"^ot:originalLabel": "Augochloropsis sp.n.1"
+},
+"otu44": {
+"^ot:originalLabel": "Pseudaugochlora sp.",
+"^ot:ottId": 4531389,
+"^ot:ottTaxonName": "Pseudaugochlora"
+},
+"otu45": {
+"^ot:originalLabel": "Caenaugochlora sp.",
+"^ot:ottId": 4531310,
+"^ot:ottTaxonName": "Caenaugochlora"
+},
+"otu46": {
+"^ot:originalLabel": "Megalopta sp.",
+"^ot:ottId": 712325,
+"^ot:ottTaxonName": "Megalopta"
+},
+"otu47": {
+"^ot:originalLabel": "Corynura sp.",
+"^ot:ottId": 731800,
+"^ot:ottTaxonName": "Corynura"
+},
+"otu5": {
+"^ot:originalLabel": "Augochloropsis crassiceps",
+"^ot:ottId": 4530972,
+"^ot:ottTaxonName": "Augochloropsis crassiceps"
+},
+"otu6": {
+"^ot:originalLabel": "Augochloropsis cleopatra",
+"^ot:ottId": 4530895,
+"^ot:ottTaxonName": "Augochloropsis cleopatra"
+},
+"otu7": {
+"^ot:originalLabel": "Augochloropsis cyanea",
+"^ot:ottId": 4530952,
+"^ot:ottTaxonName": "Augochloropsis cyanea"
+},
+"otu8": {
+"^ot:originalLabel": "Augochloropsis hebescens hebescens",
+"^ot:ottId": 4530907,
+"^ot:ottTaxonName": "Augochloropsis hebescens"
+},
+"otu9": {
+"^ot:originalLabel": "Augochloropsis tupacamarus"
+}
+}
 }
 },
 "treesById": {
 "trees1": {
 "@otus": "otus1",
-"^ot:treeElementOrder": [],
-"treeById": {}
+"^ot:treeElementOrder": [
+"tree1"
+],
+"treeById": {
+"tree1": {
+"@label": "Fig. 1",
+"@xsi:type": "nex:FloatTree",
+"^ot:branchLengthDescription": "Arbitrary",
+"^ot:branchLengthMode": "ot:other",
+"^ot:curatedType": "Maximum parsimony ",
+"^ot:inGroupClade": "node4",
+"^ot:nodeLabelMode": "",
+"^ot:nodeLabelTimeUnit": "",
+"^ot:outGroupEdge": "",
+"^ot:reasonsToExcludeFromSynthesis": [],
+"^ot:rootNodeId": "node1",
+"^ot:specifiedRoot": "node1",
+"^ot:tag": [],
+"^ot:unrootedTree": false,
+"edgeBySourceId": {
+"node1": {
+"edge1": {
+"@length": 0.365438,
+"@source": "node1",
+"@target": "node2"
+},
+"edge63": {
+"@length": 0.365438,
+"@source": "node1",
+"@target": "node64"
+}
+},
+"node12": {
+"edge12": {
+"@length": 0.365438,
+"@source": "node12",
+"@target": "node13"
+},
+"edge19": {
+"@length": 0.377227,
+"@source": "node12",
+"@target": "node20"
+}
+},
+"node13": {
+"edge13": {
+"@length": 0.589417,
+"@source": "node13",
+"@target": "node14"
+},
+"edge14": {
+"@length": 0.577628,
+"@source": "node13",
+"@target": "node15"
+},
+"edge15": {
+"@length": 0.21219,
+"@source": "node13",
+"@target": "node16"
+},
+"edge16": {
+"@length": 0.400803,
+"@source": "node13",
+"@target": "node17"
+},
+"edge17": {
+"@length": 0.223978,
+"@source": "node13",
+"@target": "node18"
+},
+"edge18": {
+"@length": 0.56584,
+"@source": "node13",
+"@target": "node19"
+}
+},
+"node2": {
+"edge2": {
+"@length": 0.577628,
+"@source": "node2",
+"@target": "node3"
+},
+"edge61": {
+"@length": 0.21219,
+"@source": "node2",
+"@target": "node62"
+},
+"edge62": {
+"@length": 0.377227,
+"@source": "node2",
+"@target": "node63"
+}
+},
+"node21": {
+"edge21": {
+"@length": 0.412592,
+"@source": "node21",
+"@target": "node22"
+},
+"edge24": {
+"@length": 0.165037,
+"@source": "node21",
+"@target": "node25"
+}
+},
+"node22": {
+"edge22": {
+"@length": 0.35365,
+"@source": "node22",
+"@target": "node23"
+},
+"edge23": {
+"@length": 0.200402,
+"@source": "node22",
+"@target": "node24"
+}
+},
+"node3": {
+"edge3": {
+"@length": 1.27314,
+"@source": "node3",
+"@target": "node4"
+},
+"edge60": {
+"@length": 1.426388,
+"@source": "node3",
+"@target": "node61"
+}
+},
+"node36": {
+"edge36": {
+"@length": 0.91949,
+"@source": "node36",
+"@target": "node37"
+},
+"edge39": {
+"@length": 1.603213,
+"@source": "node36",
+"@target": "node40"
+}
+},
+"node37": {
+"edge37": {
+"@length": 0.176825,
+"@source": "node37",
+"@target": "node38"
+},
+"edge38": {
+"@length": 0.21219,
+"@source": "node37",
+"@target": "node39"
+}
+},
+"node4": {
+"edge4": {
+"@length": 1.638578,
+"@source": "node4",
+"@target": "node5"
+},
+"edge40": {
+"@length": 1.76825,
+"@source": "node4",
+"@target": "node41"
+}
+},
+"node41": {
+"edge41": {
+"@length": 0.294708,
+"@source": "node41",
+"@target": "node42"
+},
+"edge42": {
+"@length": 1.320293,
+"@source": "node41",
+"@target": "node43"
+},
+"edge43": {
+"@length": 0.612993,
+"@source": "node41",
+"@target": "node44"
+},
+"edge44": {
+"@length": 0.271132,
+"@source": "node41",
+"@target": "node45"
+},
+"edge45": {
+"@length": 0.377227,
+"@source": "node41",
+"@target": "node46"
+},
+"edge46": {
+"@length": 0.589417,
+"@source": "node41",
+"@target": "node47"
+},
+"edge47": {
+"@length": 1.096315,
+"@source": "node41",
+"@target": "node48"
+},
+"edge48": {
+"@length": 0.412592,
+"@source": "node41",
+"@target": "node49"
+},
+"edge49": {
+"@length": 0.742665,
+"@source": "node41",
+"@target": "node50"
+},
+"edge50": {
+"@length": 1.108103,
+"@source": "node41",
+"@target": "node51"
+},
+"edge51": {
+"@length": 0.223978,
+"@source": "node41",
+"@target": "node52"
+},
+"edge52": {
+"@length": 0.954855,
+"@source": "node41",
+"@target": "node53"
+},
+"edge55": {
+"@length": 0.247555,
+"@source": "node41",
+"@target": "node56"
+},
+"edge56": {
+"@length": 0.91949,
+"@source": "node41",
+"@target": "node57"
+},
+"edge57": {
+"@length": 0.907702,
+"@source": "node41",
+"@target": "node58"
+},
+"edge58": {
+"@length": 0.28292,
+"@source": "node41",
+"@target": "node59"
+},
+"edge59": {
+"@length": 0.801607,
+"@source": "node41",
+"@target": "node60"
+}
+},
+"node5": {
+"edge35": {
+"@length": 1.284928,
+"@source": "node5",
+"@target": "node36"
+},
+"edge5": {
+"@length": 0.56584,
+"@source": "node5",
+"@target": "node6"
+}
+},
+"node53": {
+"edge53": {
+"@length": 0.176825,
+"@source": "node53",
+"@target": "node54"
+},
+"edge54": {
+"@length": 0.530475,
+"@source": "node53",
+"@target": "node55"
+}
+},
+"node6": {
+"edge34": {
+"@length": 0.400803,
+"@source": "node6",
+"@target": "node35"
+},
+"edge6": {
+"@length": 0.247555,
+"@source": "node6",
+"@target": "node7"
+}
+},
+"node7": {
+"edge33": {
+"@length": 0.471533,
+"@source": "node7",
+"@target": "node34"
+},
+"edge7": {
+"@length": 0.389015,
+"@source": "node7",
+"@target": "node8"
+}
+},
+"node8": {
+"edge32": {
+"@length": 0.176825,
+"@source": "node8",
+"@target": "node33"
+},
+"edge8": {
+"@length": 0.530475,
+"@source": "node8",
+"@target": "node9"
+}
+},
+"node9": {
+"edge10": {
+"@length": 0.766242,
+"@source": "node9",
+"@target": "node11"
+},
+"edge11": {
+"@length": 0.742665,
+"@source": "node9",
+"@target": "node12"
+},
+"edge20": {
+"@length": 0.389015,
+"@source": "node9",
+"@target": "node21"
+},
+"edge25": {
+"@length": 0.389015,
+"@source": "node9",
+"@target": "node26"
+},
+"edge26": {
+"@length": 0.56584,
+"@source": "node9",
+"@target": "node27"
+},
+"edge27": {
+"@length": 0.577628,
+"@source": "node9",
+"@target": "node28"
+},
+"edge28": {
+"@length": 0.554052,
+"@source": "node9",
+"@target": "node29"
+},
+"edge29": {
+"@length": 0.400803,
+"@source": "node9",
+"@target": "node30"
+},
+"edge30": {
+"@length": 0.554052,
+"@source": "node9",
+"@target": "node31"
+},
+"edge31": {
+"@length": 0.259343,
+"@source": "node9",
+"@target": "node32"
+},
+"edge9": {
+"@length": 0.577628,
+"@source": "node9",
+"@target": "node10"
+}
+}
+},
+"nodeById": {
+"node1": {
+"@root": true
+},
+"node10": {
+"@otu": "otu1"
+},
+"node11": {
+"@otu": "otu2"
+},
+"node12": {},
+"node13": {},
+"node14": {
+"@otu": "otu3"
+},
+"node15": {
+"@otu": "otu4"
+},
+"node16": {
+"@otu": "otu5"
+},
+"node17": {
+"@otu": "otu6"
+},
+"node18": {
+"@otu": "otu7"
+},
+"node19": {
+"@otu": "otu8"
+},
+"node2": {},
+"node20": {
+"@otu": "otu9"
+},
+"node21": {},
+"node22": {},
+"node23": {
+"@otu": "otu10"
+},
+"node24": {
+"@otu": "otu11"
+},
+"node25": {
+"@otu": "otu12"
+},
+"node26": {
+"@otu": "otu13"
+},
+"node27": {
+"@otu": "otu14"
+},
+"node28": {
+"@otu": "otu15"
+},
+"node29": {
+"@otu": "otu16"
+},
+"node3": {},
+"node30": {
+"@otu": "otu17"
+},
+"node31": {
+"@otu": "otu18"
+},
+"node32": {
+"@otu": "otu19"
+},
+"node33": {
+"@otu": "otu20"
+},
+"node34": {
+"@otu": "otu21"
+},
+"node35": {
+"@otu": "otu22"
+},
+"node36": {},
+"node37": {},
+"node38": {
+"@otu": "otu23"
+},
+"node39": {
+"@otu": "otu24"
+},
+"node4": {},
+"node40": {
+"@otu": "otu25"
+},
+"node41": {},
+"node42": {
+"@otu": "otu26"
+},
+"node43": {
+"@otu": "otu27"
+},
+"node44": {
+"@otu": "otu28"
+},
+"node45": {
+"@otu": "otu29"
+},
+"node46": {
+"@otu": "otu30"
+},
+"node47": {
+"@otu": "otu31"
+},
+"node48": {
+"@otu": "otu32"
+},
+"node49": {
+"@otu": "otu33"
+},
+"node5": {},
+"node50": {
+"@otu": "otu34"
+},
+"node51": {
+"@otu": "otu35"
+},
+"node52": {
+"@otu": "otu36"
+},
+"node53": {},
+"node54": {
+"@otu": "otu37"
+},
+"node55": {
+"@otu": "otu38"
+},
+"node56": {
+"@otu": "otu39"
+},
+"node57": {
+"@otu": "otu40"
+},
+"node58": {
+"@otu": "otu41"
+},
+"node59": {
+"@otu": "otu42"
+},
+"node6": {},
+"node60": {
+"@otu": "otu43"
+},
+"node61": {
+"@otu": "otu44"
+},
+"node62": {
+"@otu": "otu45"
+},
+"node63": {
+"@otu": "otu46"
+},
+"node64": {
+"@otu": "otu47"
+},
+"node7": {},
+"node8": {},
+"node9": {}
+}
+}
+}
 }
 }
 }
