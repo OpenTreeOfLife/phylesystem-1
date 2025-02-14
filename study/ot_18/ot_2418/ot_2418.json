@@ -35,13 +35,176 @@
 }
 ]
 }
+},
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.",
+"@id": "opentree-curation-webapp",
+"@name": "OpenTree curation webapp",
+"@url": "https://github.com/OpenTreeOfLife/opentree",
+"@version": "0.0.0"
 }
 ]
 },
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2025-02-14T15:49:16.118Z",
+"@description": "Aids for mapping study OTUs to OTT taxa",
+"@id": "otu-mapping-hints",
+"@passedChecks": true,
+"@preserve": true,
+"@wasAssociatedWithAgentId": "opentree-curation-webapp",
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS",
+"@humanMessageType": "NONE",
+"@severity": "INFO",
+"data": {
+"autoAcceptExactMatches": false,
+"searchContext": {
+"$": "All life"
 },
-"^ot:curatorName": "Matt Girard",
+"substitutions": {
+"substitution": [
+{
+"@active": true,
+"@valid": true,
+"new": {
+"$": ">"
+},
+"old": {
+"$": "^(\\S*)\\s+\\b"
+}
+},
+{
+"@active": true,
+"@valid": true,
+"new": {
+"$": ""
+},
+"old": {
+"$": "\\b\\s+(\\S*)$"
+}
+},
+{
+"@active": true,
+"@valid": true,
+"new": {
+"$": ""
+},
+"old": {
+"$": "\\b\\s+(\\S*)$"
+}
+},
+{
+"@active": true,
+"@valid": true,
+"new": {
+"$": "Dussumieria "
+},
+"old": {
+"$": ">"
+}
+},
+{
+"@active": false,
+"@valid": true,
+"new": {
+"$": ""
+},
+"old": {
+"$": "\\b\\s+(\\S*)$"
+}
+}
+]
+},
+"useFuzzyMatching": false
+},
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+},
+{
+"@dateCreated": "2025-02-14T15:49:16.118Z",
+"@description": "Describes external namesets merged into this study",
+"@id": "merged-namesets-metadata",
+"@passedChecks": true,
+"@preserve": true,
+"@wasAssociatedWithAgentId": "opentree-curation-webapp",
+"message": [
+{
+"@code": "MERGED_NAMESET_INFO",
+"@humanMessageType": "NONE",
+"@severity": "INFO",
+"data": {
+"namesets": {
+"nameset": []
+}
+},
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+},
+{
+"@dateCreated": "2025-02-14T15:49:16.118Z",
+"@description": "Describes supporting data files for this study",
+"@id": "supporting-files-metadata",
+"@passedChecks": true,
+"@preserve": true,
+"@wasAssociatedWithAgentId": "opentree-curation-webapp",
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO",
+"@humanMessageType": "NONE",
+"@severity": "INFO",
+"data": {
+"@movedToPermanentArchive": false,
+"files": {
+"file": [
+{
+"@filename": "PASTED.tre",
+"@size": 2076,
+"@type": "newick",
+"@url": "/curator/download/supporting_files.doc.935dae0ebf348097.5041535445442e747265.tre",
+"description": {
+"$": "Source data for tree(s) 'tree1'"
+},
+"sourceForTree": [
+{
+"$": "tree1"
+}
+]
+}
+]
+}
+},
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+},
+"^ot:candidateTreeForSynthesis": [],
+"^ot:comment": "",
+"^ot:curatorName": [
+"Matt Girard"
+],
+"^ot:dataDeposit": {
+"@href": ""
+},
+"^ot:focalCladeOTTTaxonName": "",
 "^ot:otusElementOrder": [
 "otus1"
 ],
@@ -51,6 +214,7 @@
 },
 "^ot:studyPublicationReference": "Hata, H., Lavou\u00e9, S., Appleyard, S. A., & Pogonoski, J. J. (2025). A New Species of Rainbow Sardine in the Genus Dussumieria (Teleostei: Clupeiformes: Dussumieriidae) from New Guinea and Australia. Ichthyology &amp; Herpetology, 113(1). https://doi.org/10.1643/i2024023\n",
 "^ot:studyYear": 2025,
+"^ot:tag": [],
 "^ot:treesElementOrder": [
 "trees1"
 ],
@@ -58,16 +222,818 @@
 "@href": "",
 "@name": ""
 },
+"highestMintedElementIDs": {
+"agent": 0,
+"annotation": 0,
+"edge": 75,
+"message": 0,
+"node": 76,
+"otu": 39,
+"otus": 2,
+"tree": 1,
+"trees": 2
+},
 "otusById": {
 "otus1": {
-"otuById": {}
+"otuById": {
+"otu1": {
+"^ot:originalLabel": "JF493396 torpedo SAIAB 87618 SA"
+},
+"otu10": {
+"^ot:originalLabel": "FJ347962 productissima India",
+"^ot:ottId": 949013,
+"^ot:ottTaxonName": "Dussumieria elopsoides"
+},
+"otu11": {
+"^ot:originalLabel": "MT803590 modakandai TYPE TCPM216 India"
+},
+"otu12": {
+"^ot:originalLabel": "MT803591 modakandai TYPE TCPM217 India"
+},
+"otu13": {
+"^ot:originalLabel": "MT803592 modakandai TYPE TCPM218 India"
+},
+"otu14": {
+"^ot:originalLabel": "MH380287 modakandai NMMBP22953 HH2223 Taiwan"
+},
+"otu15": {
+"^ot:originalLabel": "MH380285 modakandai NMMBP22953 HH2221 Taiwan"
+},
+"otu16": {
+"^ot:originalLabel": "MH380286 modakandai NMMBP22953 HH2222 Taiwan"
+},
+"otu17": {
+"^ot:altLabel": "Dussumieria albulina",
+"^ot:originalLabel": "MT604049 albulina USMFC IK0037 Penang"
+},
+"otu18": {
+"^ot:originalLabel": "MH380291 albulina KAUM80638 Philip"
+},
+"otu19": {
+"^ot:originalLabel": "MH380292 albulina KAUM80639 Philip"
+},
+"otu2": {
+"^ot:altLabel": "Dussumieria torpedo",
+"^ot:originalLabel": "JF493398 torpedo SAIAB 87618 SA"
+},
+"otu20": {
+"^ot:altLabel": "Dussumieria albulina",
+"^ot:originalLabel": "MT604048 albulina USMFC IK0027 Penang"
+},
+"otu21": {
+"^ot:originalLabel": "MH380290 albulina KAUM80637 Philip"
+},
+"otu22": {
+"^ot:altLabel": "Dussumieria albulina",
+"^ot:originalLabel": "MT604047 albulina USMFC IK0026 Penang"
+},
+"otu23": {
+"^ot:altLabel": "Dussumieria albulina",
+"^ot:originalLabel": "CSIRO H8839 08 albulina BW A17792"
+},
+"otu24": {
+"^ot:originalLabel": "MT803583 hasseltii TTP138 India",
+"^ot:ottId": 949013,
+"^ot:ottTaxonName": "Dussumieria elopsoides"
+},
+"otu25": {
+"^ot:originalLabel": "MT803584 hasseltii TTP139 India",
+"^ot:ottId": 949013,
+"^ot:ottTaxonName": "Dussumieria elopsoides"
+},
+"otu26": {
+"^ot:originalLabel": "MH380297 hasseltii Ra14 Ranong",
+"^ot:ottId": 949013,
+"^ot:ottTaxonName": "Dussumieria elopsoides"
+},
+"otu27": {
+"^ot:originalLabel": "MH380295 hasseltii KAUM80180 Sabah",
+"^ot:ottId": 949013,
+"^ot:ottTaxonName": "Dussumieria elopsoides"
+},
+"otu28": {
+"^ot:originalLabel": "MH380294 hasseltii KAUM80179 Sabah",
+"^ot:ottId": 949013,
+"^ot:ottTaxonName": "Dussumieria elopsoides"
+},
+"otu29": {
+"^ot:originalLabel": "MH380302 hasseltii Bk02 Bangkok",
+"^ot:ottId": 949013,
+"^ot:ottTaxonName": "Dussumieria elopsoides"
+},
+"otu3": {
+"^ot:altLabel": "Dussumieria torpedo",
+"^ot:originalLabel": "JF493397 torpedo SAIAB 87618 SA"
+},
+"otu30": {
+"^ot:originalLabel": "AP017946 hasseltii KAUM62999 Philip",
+"^ot:ottId": 949013,
+"^ot:ottTaxonName": "Dussumieria elopsoides"
+},
+"otu31": {
+"^ot:originalLabel": "CSIRO H8843 17 hasseltii BW A17791",
+"^ot:ottId": 949013,
+"^ot:ottTaxonName": "Dussumieria elopsoides"
+},
+"otu32": {
+"^ot:originalLabel": "MH380296 hasseltii Ra13 Ranong",
+"^ot:ottId": 949013,
+"^ot:ottTaxonName": "Dussumieria elopsoides"
+},
+"otu33": {
+"^ot:originalLabel": "MT803557 acuta GUV821 India",
+"^ot:ottId": 100785,
+"^ot:ottTaxonName": "Dussumieria acuta"
+},
+"otu34": {
+"^ot:originalLabel": "MT803559 acuta KAM527 India",
+"^ot:ottId": 100785,
+"^ot:ottTaxonName": "Dussumieria acuta"
+},
+"otu35": {
+"^ot:originalLabel": "MH380254 acuta KAUM94559 Vietnam",
+"^ot:ottId": 100785,
+"^ot:ottTaxonName": "Dussumieria acuta"
+},
+"otu36": {
+"^ot:originalLabel": "MH380266 acuta HH2227 Taiwan",
+"^ot:ottId": 100785,
+"^ot:ottTaxonName": "Dussumieria acuta"
+},
+"otu37": {
+"^ot:originalLabel": "MH380252 acuta KAUM94554 Vietnam",
+"^ot:ottId": 100785,
+"^ot:ottTaxonName": "Dussumieria acuta"
+},
+"otu38": {
+"^ot:originalLabel": "MH380267 acuta HH2228 Taiwan",
+"^ot:ottId": 100785,
+"^ot:ottTaxonName": "Dussumieria acuta"
+},
+"otu39": {
+"^ot:originalLabel": "MH380253 acuta KAUM94555 Vietnam",
+"^ot:ottId": 100785,
+"^ot:ottTaxonName": "Dussumieria acuta"
+},
+"otu4": {
+"^ot:originalLabel": "CSIRO H6898 03 apollo HM902703"
+},
+"otu5": {
+"^ot:originalLabel": "CSIRO H8762 34 apollo FOAQ669"
+},
+"otu6": {
+"^ot:altLabel": "Dussumieria H7365 02 apollo",
+"^ot:originalLabel": "CSIRO H7365 02 apollo BW A17761"
+},
+"otu7": {
+"^ot:originalLabel": "CSIRO H8967 01 apollo BW A17762"
+},
+"otu8": {
+"^ot:originalLabel": "FJ347963 productissima India",
+"^ot:ottId": 949013,
+"^ot:ottTaxonName": "Dussumieria elopsoides"
+},
+"otu9": {
+"^ot:originalLabel": "FJ347961 productissima India",
+"^ot:ottId": 949013,
+"^ot:ottTaxonName": "Dussumieria elopsoides"
+}
+}
 }
 },
 "treesById": {
 "trees1": {
 "@otus": "otus1",
-"^ot:treeElementOrder": [],
-"treeById": {}
+"^ot:treeElementOrder": [
+"tree1"
+],
+"treeById": {
+"tree1": {
+"@label": "Untitled (tree1)",
+"@xsi:type": "nex:FloatTree",
+"^ot:branchLengthDescription": "",
+"^ot:branchLengthMode": "ot:substitutionCount",
+"^ot:curatedType": "Maximum likelihood ",
+"^ot:inGroupClade": "node1",
+"^ot:nodeLabelMode": "",
+"^ot:nodeLabelTimeUnit": "",
+"^ot:outGroupEdge": "",
+"^ot:reasonsToExcludeFromSynthesis": [],
+"^ot:rootNodeId": "node1",
+"^ot:specifiedRoot": "node1",
+"^ot:tag": [],
+"^ot:unrootedTree": false,
+"edgeBySourceId": {
+"node1": {
+"edge1": {
+"@length": 0.011286,
+"@source": "node1",
+"@target": "node2"
+},
+"edge14": {
+"@length": 0.027681,
+"@source": "node1",
+"@target": "node15"
+},
+"edge31": {
+"@length": 0.023328,
+"@source": "node1",
+"@target": "node32"
+}
+},
+"node11": {
+"edge11": {
+"@length": 1e-06,
+"@source": "node11",
+"@target": "node12"
+},
+"edge12": {
+"@length": 0.001548,
+"@source": "node11",
+"@target": "node13"
+}
+},
+"node15": {
+"edge15": {
+"@length": 0.023379,
+"@source": "node15",
+"@target": "node16"
+},
+"edge20": {
+"@length": 0.01102,
+"@source": "node15",
+"@target": "node21"
+}
+},
+"node16": {
+"edge16": {
+"@length": 1e-06,
+"@source": "node16",
+"@target": "node17"
+},
+"edge17": {
+"@length": 0.001548,
+"@source": "node16",
+"@target": "node18"
+}
+},
+"node18": {
+"edge18": {
+"@length": 1e-06,
+"@source": "node18",
+"@target": "node19"
+},
+"edge19": {
+"@length": 0.001548,
+"@source": "node18",
+"@target": "node20"
+}
+},
+"node2": {
+"edge2": {
+"@length": 0.042727,
+"@source": "node2",
+"@target": "node3"
+},
+"edge7": {
+"@length": 0.044634,
+"@source": "node2",
+"@target": "node8"
+}
+},
+"node21": {
+"edge21": {
+"@length": 0.002111,
+"@source": "node21",
+"@target": "node22"
+},
+"edge30": {
+"@length": 0.002539,
+"@source": "node21",
+"@target": "node31"
+}
+},
+"node22": {
+"edge22": {
+"@length": 0.001546,
+"@source": "node22",
+"@target": "node23"
+},
+"edge27": {
+"@length": 1e-06,
+"@source": "node22",
+"@target": "node28"
+}
+},
+"node23": {
+"edge23": {
+"@length": 0.003096,
+"@source": "node23",
+"@target": "node24"
+},
+"edge24": {
+"@length": 1e-06,
+"@source": "node23",
+"@target": "node25"
+}
+},
+"node25": {
+"edge25": {
+"@length": 1e-06,
+"@source": "node25",
+"@target": "node26"
+},
+"edge26": {
+"@length": 1e-06,
+"@source": "node25",
+"@target": "node27"
+}
+},
+"node28": {
+"edge28": {
+"@length": 0.004649,
+"@source": "node28",
+"@target": "node29"
+},
+"edge29": {
+"@length": 0.007778,
+"@source": "node28",
+"@target": "node30"
+}
+},
+"node3": {
+"edge3": {
+"@length": 1e-06,
+"@source": "node3",
+"@target": "node4"
+},
+"edge4": {
+"@length": 0.001605,
+"@source": "node3",
+"@target": "node5"
+}
+},
+"node32": {
+"edge32": {
+"@length": 0.013585,
+"@source": "node32",
+"@target": "node33"
+},
+"edge63": {
+"@length": 0.07001,
+"@source": "node32",
+"@target": "node64"
+}
+},
+"node33": {
+"edge33": {
+"@length": 0.059943,
+"@source": "node33",
+"@target": "node34"
+},
+"edge46": {
+"@length": 0.058742,
+"@source": "node33",
+"@target": "node47"
+}
+},
+"node34": {
+"edge34": {
+"@length": 1e-06,
+"@source": "node34",
+"@target": "node35"
+},
+"edge35": {
+"@length": 0.003099,
+"@source": "node34",
+"@target": "node36"
+}
+},
+"node36": {
+"edge36": {
+"@length": 0.003118,
+"@source": "node36",
+"@target": "node37"
+},
+"edge45": {
+"@length": 0.006222,
+"@source": "node36",
+"@target": "node46"
+}
+},
+"node37": {
+"edge37": {
+"@length": 0.001547,
+"@source": "node37",
+"@target": "node38"
+},
+"edge40": {
+"@length": 1e-06,
+"@source": "node37",
+"@target": "node41"
+}
+},
+"node38": {
+"edge38": {
+"@length": 1e-06,
+"@source": "node38",
+"@target": "node39"
+},
+"edge39": {
+"@length": 1e-06,
+"@source": "node38",
+"@target": "node40"
+}
+},
+"node41": {
+"edge41": {
+"@length": 1e-06,
+"@source": "node41",
+"@target": "node42"
+},
+"edge44": {
+"@length": 1e-06,
+"@source": "node41",
+"@target": "node45"
+}
+},
+"node42": {
+"edge42": {
+"@length": 1e-06,
+"@source": "node42",
+"@target": "node43"
+},
+"edge43": {
+"@length": 1e-06,
+"@source": "node42",
+"@target": "node44"
+}
+},
+"node47": {
+"edge47": {
+"@length": 1e-06,
+"@source": "node47",
+"@target": "node48"
+},
+"edge48": {
+"@length": 0.001548,
+"@source": "node47",
+"@target": "node49"
+}
+},
+"node49": {
+"edge49": {
+"@length": 1e-06,
+"@source": "node49",
+"@target": "node50"
+},
+"edge62": {
+"@length": 0.001548,
+"@source": "node49",
+"@target": "node63"
+}
+},
+"node5": {
+"edge5": {
+"@length": 0.001549,
+"@source": "node5",
+"@target": "node6"
+},
+"edge6": {
+"@length": 1e-06,
+"@source": "node5",
+"@target": "node7"
+}
+},
+"node50": {
+"edge50": {
+"@length": 1e-06,
+"@source": "node50",
+"@target": "node51"
+},
+"edge51": {
+"@length": 1e-06,
+"@source": "node50",
+"@target": "node52"
+}
+},
+"node52": {
+"edge52": {
+"@length": 0.003098,
+"@source": "node52",
+"@target": "node53"
+},
+"edge53": {
+"@length": 0.003103,
+"@source": "node52",
+"@target": "node54"
+}
+},
+"node54": {
+"edge54": {
+"@length": 0.003111,
+"@source": "node54",
+"@target": "node55"
+},
+"edge61": {
+"@length": 0.009378,
+"@source": "node54",
+"@target": "node62"
+}
+},
+"node55": {
+"edge55": {
+"@length": 1e-06,
+"@source": "node55",
+"@target": "node56"
+},
+"edge60": {
+"@length": 0.001548,
+"@source": "node55",
+"@target": "node61"
+}
+},
+"node56": {
+"edge56": {
+"@length": 1e-06,
+"@source": "node56",
+"@target": "node57"
+},
+"edge59": {
+"@length": 1e-06,
+"@source": "node56",
+"@target": "node60"
+}
+},
+"node57": {
+"edge57": {
+"@length": 1e-06,
+"@source": "node57",
+"@target": "node58"
+},
+"edge58": {
+"@length": 1e-06,
+"@source": "node57",
+"@target": "node59"
+}
+},
+"node64": {
+"edge64": {
+"@length": 0.01502,
+"@source": "node64",
+"@target": "node65"
+},
+"edge67": {
+"@length": 0.010847,
+"@source": "node64",
+"@target": "node68"
+}
+},
+"node65": {
+"edge65": {
+"@length": 0.001342,
+"@source": "node65",
+"@target": "node66"
+},
+"edge66": {
+"@length": 0.003309,
+"@source": "node65",
+"@target": "node67"
+}
+},
+"node68": {
+"edge68": {
+"@length": 0.003098,
+"@source": "node68",
+"@target": "node69"
+},
+"edge71": {
+"@length": 1e-06,
+"@source": "node68",
+"@target": "node72"
+}
+},
+"node69": {
+"edge69": {
+"@length": 1e-06,
+"@source": "node69",
+"@target": "node70"
+},
+"edge70": {
+"@length": 0.003098,
+"@source": "node69",
+"@target": "node71"
+}
+},
+"node72": {
+"edge72": {
+"@length": 1e-06,
+"@source": "node72",
+"@target": "node73"
+},
+"edge73": {
+"@length": 1e-06,
+"@source": "node72",
+"@target": "node74"
+}
+},
+"node74": {
+"edge74": {
+"@length": 0.003102,
+"@source": "node74",
+"@target": "node75"
+},
+"edge75": {
+"@length": 0.001548,
+"@source": "node74",
+"@target": "node76"
+}
+},
+"node8": {
+"edge13": {
+"@length": 1e-06,
+"@source": "node8",
+"@target": "node14"
+},
+"edge8": {
+"@length": 0.00155,
+"@source": "node8",
+"@target": "node9"
+}
+},
+"node9": {
+"edge10": {
+"@length": 0.001551,
+"@source": "node9",
+"@target": "node11"
+},
+"edge9": {
+"@length": 0.001553,
+"@source": "node9",
+"@target": "node10"
+}
+}
+},
+"nodeById": {
+"node1": {
+"@root": true
+},
+"node10": {
+"@otu": "otu4"
+},
+"node11": {},
+"node12": {
+"@otu": "otu5"
+},
+"node13": {
+"@otu": "otu6"
+},
+"node14": {
+"@otu": "otu7"
+},
+"node15": {},
+"node16": {},
+"node17": {
+"@otu": "otu8"
+},
+"node18": {},
+"node19": {
+"@otu": "otu9"
+},
+"node2": {},
+"node20": {
+"@otu": "otu10"
+},
+"node21": {},
+"node22": {},
+"node23": {},
+"node24": {
+"@otu": "otu11"
+},
+"node25": {},
+"node26": {
+"@otu": "otu12"
+},
+"node27": {
+"@otu": "otu13"
+},
+"node28": {},
+"node29": {
+"@otu": "otu14"
+},
+"node3": {},
+"node30": {
+"@otu": "otu15"
+},
+"node31": {
+"@otu": "otu16"
+},
+"node32": {},
+"node33": {},
+"node34": {},
+"node35": {
+"@otu": "otu17"
+},
+"node36": {},
+"node37": {},
+"node38": {},
+"node39": {
+"@otu": "otu18"
+},
+"node4": {
+"@otu": "otu1"
+},
+"node40": {
+"@otu": "otu19"
+},
+"node41": {},
+"node42": {},
+"node43": {
+"@otu": "otu20"
+},
+"node44": {
+"@otu": "otu21"
+},
+"node45": {
+"@otu": "otu22"
+},
+"node46": {
+"@otu": "otu23"
+},
+"node47": {},
+"node48": {
+"@otu": "otu24"
+},
+"node49": {},
+"node5": {},
+"node50": {},
+"node51": {
+"@otu": "otu25"
+},
+"node52": {},
+"node53": {
+"@otu": "otu26"
+},
+"node54": {},
+"node55": {},
+"node56": {},
+"node57": {},
+"node58": {
+"@otu": "otu27"
+},
+"node59": {
+"@otu": "otu28"
+},
+"node6": {
+"@otu": "otu2"
+},
+"node60": {
+"@otu": "otu29"
+},
+"node61": {
+"@otu": "otu30"
+},
+"node62": {
+"@otu": "otu31"
+},
+"node63": {
+"@otu": "otu32"
+},
+"node64": {},
+"node65": {},
+"node66": {
+"@otu": "otu33"
+},
+"node67": {
+"@otu": "otu34"
+},
+"node68": {},
+"node69": {},
+"node7": {
+"@otu": "otu3"
+},
+"node70": {
+"@otu": "otu35"
+},
+"node71": {
+"@otu": "otu36"
+},
+"node72": {},
+"node73": {
+"@otu": "otu37"
+},
+"node74": {},
+"node75": {
+"@otu": "otu38"
+},
+"node76": {
+"@otu": "otu39"
+},
+"node8": {},
+"node9": {}
+}
+}
+}
 }
 }
 }
