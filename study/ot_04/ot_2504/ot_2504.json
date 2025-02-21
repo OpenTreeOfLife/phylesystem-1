@@ -35,13 +35,137 @@
 }
 ]
 }
+},
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.",
+"@id": "opentree-curation-webapp",
+"@name": "OpenTree curation webapp",
+"@url": "https://github.com/OpenTreeOfLife/opentree",
+"@version": "0.0.0"
 }
 ]
 },
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2025-02-21T13:09:24.944Z",
+"@description": "Aids for mapping study OTUs to OTT taxa",
+"@id": "otu-mapping-hints",
+"@passedChecks": true,
+"@preserve": true,
+"@wasAssociatedWithAgentId": "opentree-curation-webapp",
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS",
+"@humanMessageType": "NONE",
+"@severity": "INFO",
+"data": {
+"autoAcceptExactMatches": true,
+"searchContext": {
+"$": "Insects"
 },
-"^ot:curatorName": "LouisBell-Roberts",
+"substitutions": {
+"substitution": [
+{
+"@active": false,
+"@valid": true,
+"new": {
+"$": ""
+},
+"old": {
+"$": ""
+}
+}
+]
+},
+"useFuzzyMatching": true
+},
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+},
+{
+"@dateCreated": "2025-02-21T13:09:24.944Z",
+"@description": "Describes external namesets merged into this study",
+"@id": "merged-namesets-metadata",
+"@passedChecks": true,
+"@preserve": true,
+"@wasAssociatedWithAgentId": "opentree-curation-webapp",
+"message": [
+{
+"@code": "MERGED_NAMESET_INFO",
+"@humanMessageType": "NONE",
+"@severity": "INFO",
+"data": {
+"namesets": {
+"nameset": []
+}
+},
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+},
+{
+"@dateCreated": "2025-02-21T13:09:24.944Z",
+"@description": "Describes supporting data files for this study",
+"@id": "supporting-files-metadata",
+"@passedChecks": true,
+"@preserve": true,
+"@wasAssociatedWithAgentId": "opentree-curation-webapp",
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO",
+"@humanMessageType": "NONE",
+"@severity": "INFO",
+"data": {
+"@movedToPermanentArchive": false,
+"files": {
+"file": [
+{
+"@filename": "Allonemobius_tree.tre",
+"@size": 413,
+"@type": "newick",
+"@url": "/curator/download/supporting_files.doc.b051d3ae1ef5f154.416c6c6f6e656d6f626975735f747265652e747265.tre",
+"description": {
+"$": "Source data for tree(s) 'tree1'"
+},
+"sourceForTree": [
+{
+"$": "tree1"
+}
+]
+}
+]
+}
+},
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+},
+"^ot:candidateTreeForSynthesis": [],
+"^ot:comment": "",
+"^ot:curatorName": [
+"LouisBell-Roberts"
+],
+"^ot:dataDeposit": {
+"@href": ""
+},
+"^ot:focalClade": 776456,
+"^ot:focalCladeOTTTaxonName": "Allonemobius",
 "^ot:otusElementOrder": [
 "otus1"
 ],
@@ -51,6 +175,7 @@
 },
 "^ot:studyPublicationReference": "Braswell, W. E., Birge, L. M., & Howard, D. J. (2006). &lt;I&gt;Allonemobius shalontaki&lt;/I&gt;, a New Cryptic Species of Ground Cricket (Orthoptera: Gryllidae: Nemobiinae) from the Southwestern United States. Annals of the Entomological Society of America, 99(3), 449\u2013456. https://doi.org/10.1603/0013-8746(2006)99[449:asancs]2.0.co;2\n",
 "^ot:studyYear": 2006,
+"^ot:tag": [],
 "^ot:treesElementOrder": [
 "trees1"
 ],
@@ -58,16 +183,229 @@
 "@href": "https://creativecommons.org/licenses/by/3.0/",
 "@name": "CC-BY 3.0"
 },
+"highestMintedElementIDs": {
+"agent": 0,
+"annotation": 0,
+"edge": 16,
+"message": 0,
+"node": 17,
+"otu": 9,
+"otus": 2,
+"tree": 1,
+"trees": 2
+},
 "otusById": {
 "otus1": {
-"otuById": {}
+"otuById": {
+"otu1": {
+"^ot:originalLabel": "Allonemobius maculatus",
+"^ot:ottId": 3493973,
+"^ot:ottTaxonName": "Allonemobius maculatus"
+},
+"otu2": {
+"^ot:originalLabel": "Allonemobius allardi",
+"^ot:ottId": 3493976,
+"^ot:ottTaxonName": "Allonemobius allardi"
+},
+"otu3": {
+"^ot:originalLabel": "Allonemobius tinnulus",
+"^ot:ottId": 3493977,
+"^ot:ottTaxonName": "Allonemobius tinnulus"
+},
+"otu4": {
+"^ot:originalLabel": "Allonemobius fultoni",
+"^ot:ottId": 3493979,
+"^ot:ottTaxonName": "Allonemobius fultoni"
+},
+"otu5": {
+"^ot:originalLabel": "Allonemobius walkeri",
+"^ot:ottId": 3493975,
+"^ot:ottTaxonName": "Allonemobius walkeri"
+},
+"otu6": {
+"^ot:originalLabel": "Allonemobius shalontaki",
+"^ot:ottId": 3493980,
+"^ot:ottTaxonName": "Allonemobius shalontaki"
+},
+"otu7": {
+"^ot:originalLabel": "Allonemobius fasciatus",
+"^ot:ottId": 63463,
+"^ot:ottTaxonName": "Allonemobius fasciatus"
+},
+"otu8": {
+"^ot:originalLabel": "Allonemobius socius",
+"^ot:ottId": 776457,
+"^ot:ottTaxonName": "Allonemobius socius"
+},
+"otu9": {
+"^ot:originalLabel": "Allonemobius griseus",
+"^ot:ottId": 3493978,
+"^ot:ottTaxonName": "Allonemobius griseus"
+}
+}
 }
 },
 "treesById": {
 "trees1": {
 "@otus": "otus1",
-"^ot:treeElementOrder": [],
-"treeById": {}
+"^ot:treeElementOrder": [
+"tree1"
+],
+"treeById": {
+"tree1": {
+"@label": "Fig 2",
+"@xsi:type": "nex:FloatTree",
+"^ot:branchLengthDescription": "NA",
+"^ot:branchLengthMode": "ot:other",
+"^ot:curatedType": "UPGMA ",
+"^ot:inGroupClade": "node1",
+"^ot:nodeLabelMode": "",
+"^ot:nodeLabelTimeUnit": "",
+"^ot:outGroupEdge": "",
+"^ot:reasonsToExcludeFromSynthesis": [],
+"^ot:rootNodeId": "node1",
+"^ot:specifiedRoot": "node1",
+"^ot:tag": [],
+"^ot:unrootedTree": false,
+"edgeBySourceId": {
+"node1": {
+"edge1": {
+"@length": 7.627493,
+"@source": "node1",
+"@target": "node2"
+},
+"edge2": {
+"@length": 0.902034,
+"@source": "node1",
+"@target": "node3"
+}
+},
+"node12": {
+"edge12": {
+"@length": 1.923455,
+"@source": "node12",
+"@target": "node13"
+},
+"edge13": {
+"@length": 0.981625,
+"@source": "node12",
+"@target": "node14"
+}
+},
+"node14": {
+"edge14": {
+"@length": 0.96836,
+"@source": "node14",
+"@target": "node15"
+},
+"edge15": {
+"@length": 0.902034,
+"@source": "node14",
+"@target": "node16"
+}
+},
+"node3": {
+"edge16": {
+"@length": 6.698929,
+"@source": "node3",
+"@target": "node17"
+},
+"edge3": {
+"@length": 0.94183,
+"@source": "node3",
+"@target": "node4"
+}
+},
+"node4": {
+"edge11": {
+"@length": 3.860175,
+"@source": "node4",
+"@target": "node12"
+},
+"edge4": {
+"@length": 2.865284,
+"@source": "node4",
+"@target": "node5"
+}
+},
+"node5": {
+"edge10": {
+"@length": 2.90508,
+"@source": "node5",
+"@target": "node11"
+},
+"edge5": {
+"@length": 0.955095,
+"@source": "node5",
+"@target": "node6"
+}
+},
+"node6": {
+"edge6": {
+"@length": 0.96836,
+"@source": "node6",
+"@target": "node7"
+},
+"edge9": {
+"@length": 1.96325,
+"@source": "node6",
+"@target": "node10"
+}
+},
+"node7": {
+"edge7": {
+"@length": 1.008156,
+"@source": "node7",
+"@target": "node8"
+},
+"edge8": {
+"@length": 0.96836,
+"@source": "node7",
+"@target": "node9"
+}
+}
+},
+"nodeById": {
+"node1": {
+"@root": true
+},
+"node10": {
+"@otu": "otu4"
+},
+"node11": {
+"@otu": "otu5"
+},
+"node12": {},
+"node13": {
+"@otu": "otu6"
+},
+"node14": {},
+"node15": {
+"@otu": "otu7"
+},
+"node16": {
+"@otu": "otu8"
+},
+"node17": {
+"@otu": "otu9"
+},
+"node2": {
+"@otu": "otu1"
+},
+"node3": {},
+"node4": {},
+"node5": {},
+"node6": {},
+"node7": {},
+"node8": {
+"@otu": "otu2"
+},
+"node9": {
+"@otu": "otu3"
+}
+}
+}
+}
 }
 }
 }
