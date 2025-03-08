@@ -35,13 +35,187 @@
 }
 ]
 }
+},
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.",
+"@id": "opentree-curation-webapp",
+"@name": "OpenTree curation webapp",
+"@url": "https://github.com/OpenTreeOfLife/opentree",
+"@version": "0.0.0"
 }
 ]
 },
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2025-03-08T00:58:58.192Z",
+"@description": "Aids for mapping study OTUs to OTT taxa",
+"@id": "otu-mapping-hints",
+"@passedChecks": true,
+"@preserve": true,
+"@wasAssociatedWithAgentId": "opentree-curation-webapp",
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS",
+"@humanMessageType": "NONE",
+"@severity": "INFO",
+"data": {
+"autoAcceptExactMatches": true,
+"searchContext": {
+"$": "Insects"
 },
-"^ot:curatorName": "dchesters",
+"substitutions": {
+"substitution": [
+{
+"@active": false,
+"@valid": true,
+"new": {
+"$": ""
+},
+"old": {
+"$": ""
+}
+}
+]
+},
+"useFuzzyMatching": false
+},
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+},
+{
+"@dateCreated": "2025-03-08T00:58:58.192Z",
+"@description": "Describes external namesets merged into this study",
+"@id": "merged-namesets-metadata",
+"@passedChecks": true,
+"@preserve": true,
+"@wasAssociatedWithAgentId": "opentree-curation-webapp",
+"message": [
+{
+"@code": "MERGED_NAMESET_INFO",
+"@humanMessageType": "NONE",
+"@severity": "INFO",
+"data": {
+"namesets": {
+"nameset": []
+}
+},
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+},
+{
+"@dateCreated": "2025-03-08T00:58:58.192Z",
+"@description": "Describes supporting data files for this study",
+"@id": "supporting-files-metadata",
+"@passedChecks": true,
+"@preserve": true,
+"@wasAssociatedWithAgentId": "opentree-curation-webapp",
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO",
+"@humanMessageType": "NONE",
+"@severity": "INFO",
+"data": {
+"@movedToPermanentArchive": false,
+"files": {
+"file": [
+{
+"@filename": "DeSantis2022Dufouriini.nwk",
+"@size": 585,
+"@type": "newick",
+"@url": "/curator/download/supporting_files.doc.8122e865c9f62ff2.446553616e746973323032324475666f757269696e692e6e776b.nwk",
+"description": {
+"$": "Source data for tree(s) 'tree1'"
+},
+"sourceForTree": [
+{
+"$": "tree1"
+}
+]
+},
+{
+"@filename": "image.png",
+"@size": 708,
+"@type": "",
+"@url": "/curator/supporting_files/download/supporting_files.doc.9a61b153279aead9.696d6167652e706e67.png",
+"description": {
+"$": ""
+},
+"sourceForTree": []
+},
+{
+"@filename": "image.png",
+"@size": 753,
+"@type": "",
+"@url": "/curator/supporting_files/download/supporting_files.doc.a167aea33ab188d6.696d6167652e706e67.png",
+"description": {
+"$": ""
+},
+"sourceForTree": []
+},
+{
+"@filename": "image.png",
+"@size": 1789,
+"@type": "",
+"@url": "/curator/supporting_files/download/supporting_files.doc.b9044373beba663e.696d6167652e706e67.png",
+"description": {
+"$": ""
+},
+"sourceForTree": []
+},
+{
+"@filename": "image.png",
+"@size": 1952,
+"@type": "",
+"@url": "/curator/supporting_files/download/supporting_files.doc.89bcf50fcc268fc0.696d6167652e706e67.png",
+"description": {
+"$": ""
+},
+"sourceForTree": []
+},
+{
+"@filename": "image.png",
+"@size": 2078,
+"@type": "",
+"@url": "/curator/supporting_files/download/supporting_files.doc.b9b3f38b8b0dd43a.696d6167652e706e67.png",
+"description": {
+"$": ""
+},
+"sourceForTree": []
+}
+]
+}
+},
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+},
+"^ot:candidateTreeForSynthesis": [],
+"^ot:comment": "",
+"^ot:curatorName": [
+"dchesters"
+],
+"^ot:dataDeposit": {
+"@href": ""
+},
+"^ot:focalClade": 1067551,
+"^ot:focalCladeOTTTaxonName": "Dufouriini",
 "^ot:otusElementOrder": [
 "otus1"
 ],
@@ -51,6 +225,7 @@
 },
 "^ot:studyPublicationReference": "de Santis, M. D., & Nihei, S. S. (2022). Phylogenetic analysis of the tribe Dufouriini (Diptera: Tachinidae) using a total evidence approach based on adult and immature stages. Arthropod Systematics &amp; Phylogeny, 80, 1\u201338. https://doi.org/10.3897/asp.80.e69618\n",
 "^ot:studyYear": 2022,
+"^ot:tag": [],
 "^ot:treesElementOrder": [
 "trees1"
 ],
@@ -58,16 +233,528 @@
 "@href": "https://creativecommons.org/licenses/by/3.0/",
 "@name": "CC-BY 3.0"
 },
+"highestMintedElementIDs": {
+"agent": 0,
+"annotation": 0,
+"edge": 50,
+"message": 0,
+"node": 51,
+"otu": 26,
+"otus": 2,
+"tree": 1,
+"trees": 2
+},
 "otusById": {
 "otus1": {
-"otuById": {}
+"otuById": {
+"otu1": {
+"^ot:originalLabel": "Strongygaster triangulifera",
+"^ot:ottId": 4387666,
+"^ot:ottTaxonName": "Strongygaster triangulifera"
+},
+"otu10": {
+"^ot:originalLabel": "Jamacaria albofenestrata",
+"^ot:ottId": 4384711,
+"^ot:ottTaxonName": "Jamacaria albofenestrata"
+},
+"otu11": {
+"^ot:originalLabel": "Cenosoma signiferum"
+},
+"otu12": {
+"^ot:originalLabel": "Cenosoma thompsoni"
+},
+"otu13": {
+"^ot:originalLabel": "Euoestrophasia aperta",
+"^ot:ottId": 4383837,
+"^ot:ottTaxonName": "Euoestrophasia aperta"
+},
+"otu14": {
+"^ot:originalLabel": "Euoestrophasia panamensis",
+"^ot:ottId": 4383834,
+"^ot:ottTaxonName": "Euoestrophasia panamensis"
+},
+"otu15": {
+"^ot:originalLabel": "Euoestrophasia plaumanni",
+"^ot:ottId": 4383832,
+"^ot:ottTaxonName": "Euoestrophasia plaumanni"
+},
+"otu16": {
+"^ot:originalLabel": "Rondania fasciata",
+"^ot:ottId": 4382984,
+"^ot:ottTaxonName": "Rondania fasciata"
+},
+"otu17": {
+"^ot:originalLabel": "Rondania cucullata",
+"^ot:ottId": 4382985,
+"^ot:ottTaxonName": "Rondania cucullata"
+},
+"otu18": {
+"^ot:originalLabel": "Rondania dimidiata",
+"^ot:ottId": 4382980,
+"^ot:ottTaxonName": "Rondania dimidiata"
+},
+"otu19": {
+"^ot:originalLabel": "Chetoptilia angustifrons",
+"^ot:ottId": 4387290,
+"^ot:ottTaxonName": "Chetoptilia angustifrons"
+},
+"otu2": {
+"^ot:originalLabel": "Microsoma exiguum",
+"^ot:ottId": 4379928,
+"^ot:ottTaxonName": "Microsoma exiguum"
+},
+"otu20": {
+"^ot:originalLabel": "Chetoptilia puella",
+"^ot:ottId": 4387292,
+"^ot:ottTaxonName": "Chetoptilia puella"
+},
+"otu21": {
+"^ot:originalLabel": "Dufouria occlusa",
+"^ot:ottId": 4377606,
+"^ot:ottTaxonName": "Dufouria occlusa"
+},
+"otu22": {
+"^ot:originalLabel": "Dufouria chalybeata",
+"^ot:ottId": 533765,
+"^ot:ottTaxonName": "Dufouria chalybeata"
+},
+"otu23": {
+"^ot:originalLabel": "Dufouria nigrita",
+"^ot:ottId": 4377603,
+"^ot:ottTaxonName": "Dufouria nigrita"
+},
+"otu24": {
+"^ot:originalLabel": "Comyops nigripennis",
+"^ot:ottId": 4382803,
+"^ot:ottTaxonName": "Comyops nigripennis"
+},
+"otu25": {
+"^ot:originalLabel": "Ebenia claripennis",
+"^ot:ottId": 4379595,
+"^ot:ottTaxonName": "Ebenia claripennis"
+},
+"otu26": {
+"^ot:originalLabel": "Ebenia neofumata"
+},
+"otu3": {
+"^ot:originalLabel": "Eugymnopeza braueri",
+"^ot:ottId": 4384616,
+"^ot:ottTaxonName": "Eugymnopeza braueri"
+},
+"otu4": {
+"^ot:originalLabel": "Freraea gagatea",
+"^ot:ottId": 4385397,
+"^ot:ottTaxonName": "Freraea gagatea"
+},
+"otu5": {
+"^ot:originalLabel": "Pandelleia crosskeyi"
+},
+"otu6": {
+"^ot:originalLabel": "Pandelleia dimorphia",
+"^ot:ottId": 4383226,
+"^ot:ottTaxonName": "Pandelleia dimorphia"
+},
+"otu7": {
+"^ot:originalLabel": "Pandelleia sexpunctata",
+"^ot:ottId": 4384743,
+"^ot:ottTaxonName": "Pandelleia sexpunctata"
+},
+"otu8": {
+"^ot:originalLabel": "Oestrophasia calva",
+"^ot:ottId": 4386988,
+"^ot:ottTaxonName": "Oestrophasia calva"
+},
+"otu9": {
+"^ot:originalLabel": "Oestrophasia uncana",
+"^ot:ottId": 4386984,
+"^ot:ottTaxonName": "Oestrophasia uncana"
+}
+}
 }
 },
 "treesById": {
 "trees1": {
 "@otus": "otus1",
-"^ot:treeElementOrder": [],
-"treeById": {}
+"^ot:treeElementOrder": [
+"tree1"
+],
+"treeById": {
+"tree1": {
+"@label": "Fig. 23, MP",
+"@xsi:type": "nex:FloatTree",
+"^ot:branchLengthDescription": "",
+"^ot:branchLengthMode": "ot:undefined",
+"^ot:curatedType": "Maximum parsimony ",
+"^ot:inGroupClade": "node3",
+"^ot:nodeLabelMode": "",
+"^ot:nodeLabelTimeUnit": "",
+"^ot:outGroupEdge": "",
+"^ot:reasonsToExcludeFromSynthesis": [],
+"^ot:rootNodeId": "node1",
+"^ot:specifiedRoot": "node1",
+"^ot:tag": [],
+"^ot:unrootedTree": false,
+"edgeBySourceId": {
+"node1": {
+"edge1": {
+"@source": "node1",
+"@target": "node2"
+},
+"edge2": {
+"@source": "node1",
+"@target": "node3"
+}
+},
+"node10": {
+"edge10": {
+"@source": "node10",
+"@target": "node11"
+},
+"edge11": {
+"@source": "node10",
+"@target": "node12"
+}
+},
+"node12": {
+"edge12": {
+"@source": "node12",
+"@target": "node13"
+},
+"edge13": {
+"@source": "node12",
+"@target": "node14"
+}
+},
+"node15": {
+"edge15": {
+"@source": "node15",
+"@target": "node16"
+},
+"edge30": {
+"@source": "node15",
+"@target": "node31"
+}
+},
+"node16": {
+"edge16": {
+"@source": "node16",
+"@target": "node17"
+},
+"edge19": {
+"@source": "node16",
+"@target": "node20"
+}
+},
+"node17": {
+"edge17": {
+"@source": "node17",
+"@target": "node18"
+},
+"edge18": {
+"@source": "node17",
+"@target": "node19"
+}
+},
+"node20": {
+"edge20": {
+"@source": "node20",
+"@target": "node21"
+},
+"edge25": {
+"@source": "node20",
+"@target": "node26"
+}
+},
+"node21": {
+"edge21": {
+"@source": "node21",
+"@target": "node22"
+},
+"edge22": {
+"@source": "node21",
+"@target": "node23"
+}
+},
+"node23": {
+"edge23": {
+"@source": "node23",
+"@target": "node24"
+},
+"edge24": {
+"@source": "node23",
+"@target": "node25"
+}
+},
+"node26": {
+"edge26": {
+"@source": "node26",
+"@target": "node27"
+},
+"edge27": {
+"@source": "node26",
+"@target": "node28"
+}
+},
+"node28": {
+"edge28": {
+"@source": "node28",
+"@target": "node29"
+},
+"edge29": {
+"@source": "node28",
+"@target": "node30"
+}
+},
+"node3": {
+"edge14": {
+"@source": "node3",
+"@target": "node15"
+},
+"edge3": {
+"@source": "node3",
+"@target": "node4"
+}
+},
+"node31": {
+"edge31": {
+"@source": "node31",
+"@target": "node32"
+},
+"edge36": {
+"@source": "node31",
+"@target": "node37"
+}
+},
+"node32": {
+"edge32": {
+"@source": "node32",
+"@target": "node33"
+},
+"edge33": {
+"@source": "node32",
+"@target": "node34"
+}
+},
+"node34": {
+"edge34": {
+"@source": "node34",
+"@target": "node35"
+},
+"edge35": {
+"@source": "node34",
+"@target": "node36"
+}
+},
+"node37": {
+"edge37": {
+"@source": "node37",
+"@target": "node38"
+},
+"edge40": {
+"@source": "node37",
+"@target": "node41"
+}
+},
+"node38": {
+"edge38": {
+"@source": "node38",
+"@target": "node39"
+},
+"edge39": {
+"@source": "node38",
+"@target": "node40"
+}
+},
+"node4": {
+"edge4": {
+"@source": "node4",
+"@target": "node5"
+},
+"edge9": {
+"@source": "node4",
+"@target": "node10"
+}
+},
+"node41": {
+"edge41": {
+"@source": "node41",
+"@target": "node42"
+},
+"edge46": {
+"@source": "node41",
+"@target": "node47"
+}
+},
+"node42": {
+"edge42": {
+"@source": "node42",
+"@target": "node43"
+},
+"edge43": {
+"@source": "node42",
+"@target": "node44"
+}
+},
+"node44": {
+"edge44": {
+"@source": "node44",
+"@target": "node45"
+},
+"edge45": {
+"@source": "node44",
+"@target": "node46"
+}
+},
+"node47": {
+"edge47": {
+"@source": "node47",
+"@target": "node48"
+},
+"edge48": {
+"@source": "node47",
+"@target": "node49"
+}
+},
+"node49": {
+"edge49": {
+"@source": "node49",
+"@target": "node50"
+},
+"edge50": {
+"@source": "node49",
+"@target": "node51"
+}
+},
+"node5": {
+"edge5": {
+"@source": "node5",
+"@target": "node6"
+},
+"edge6": {
+"@source": "node5",
+"@target": "node7"
+}
+},
+"node7": {
+"edge7": {
+"@source": "node7",
+"@target": "node8"
+},
+"edge8": {
+"@source": "node7",
+"@target": "node9"
+}
+}
+},
+"nodeById": {
+"node1": {
+"@root": true
+},
+"node10": {},
+"node11": {
+"@otu": "otu5"
+},
+"node12": {},
+"node13": {
+"@otu": "otu6"
+},
+"node14": {
+"@otu": "otu7"
+},
+"node15": {},
+"node16": {},
+"node17": {},
+"node18": {
+"@otu": "otu8"
+},
+"node19": {
+"@otu": "otu9"
+},
+"node2": {
+"@otu": "otu1"
+},
+"node20": {},
+"node21": {},
+"node22": {
+"@otu": "otu10"
+},
+"node23": {},
+"node24": {
+"@otu": "otu11"
+},
+"node25": {
+"@otu": "otu12"
+},
+"node26": {},
+"node27": {
+"@otu": "otu13"
+},
+"node28": {},
+"node29": {
+"@otu": "otu14"
+},
+"node3": {},
+"node30": {
+"@otu": "otu15"
+},
+"node31": {},
+"node32": {},
+"node33": {
+"@otu": "otu16"
+},
+"node34": {},
+"node35": {
+"@otu": "otu17"
+},
+"node36": {
+"@otu": "otu18"
+},
+"node37": {},
+"node38": {},
+"node39": {
+"@otu": "otu19"
+},
+"node4": {},
+"node40": {
+"@otu": "otu20"
+},
+"node41": {},
+"node42": {},
+"node43": {
+"@otu": "otu21"
+},
+"node44": {},
+"node45": {
+"@otu": "otu22"
+},
+"node46": {
+"@otu": "otu23"
+},
+"node47": {},
+"node48": {
+"@otu": "otu24"
+},
+"node49": {},
+"node5": {},
+"node50": {
+"@otu": "otu25"
+},
+"node51": {
+"@otu": "otu26"
+},
+"node6": {
+"@otu": "otu2"
+},
+"node7": {},
+"node8": {
+"@otu": "otu3"
+},
+"node9": {
+"@otu": "otu4"
+}
+}
+}
+}
 }
 }
 }
