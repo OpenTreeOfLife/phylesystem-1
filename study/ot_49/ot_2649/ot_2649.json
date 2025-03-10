@@ -35,13 +35,136 @@
 }
 ]
 }
+},
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.",
+"@id": "opentree-curation-webapp",
+"@name": "OpenTree curation webapp",
+"@url": "https://github.com/OpenTreeOfLife/opentree",
+"@version": "0.0.0"
 }
 ]
 },
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2025-03-10T17:41:40.565Z",
+"@description": "Aids for mapping study OTUs to OTT taxa",
+"@id": "otu-mapping-hints",
+"@passedChecks": true,
+"@preserve": true,
+"@wasAssociatedWithAgentId": "opentree-curation-webapp",
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS",
+"@humanMessageType": "NONE",
+"@severity": "INFO",
+"data": {
+"autoAcceptExactMatches": true,
+"searchContext": {
+"$": "Insects"
 },
-"^ot:curatorName": "LouisBell-Roberts",
+"substitutions": {
+"substitution": [
+{
+"@active": false,
+"@valid": true,
+"new": {
+"$": ""
+},
+"old": {
+"$": ""
+}
+}
+]
+},
+"useFuzzyMatching": true
+},
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+},
+{
+"@dateCreated": "2025-03-10T17:41:40.565Z",
+"@description": "Describes external namesets merged into this study",
+"@id": "merged-namesets-metadata",
+"@passedChecks": true,
+"@preserve": true,
+"@wasAssociatedWithAgentId": "opentree-curation-webapp",
+"message": [
+{
+"@code": "MERGED_NAMESET_INFO",
+"@humanMessageType": "NONE",
+"@severity": "INFO",
+"data": {
+"namesets": {
+"nameset": []
+}
+},
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+},
+{
+"@dateCreated": "2025-03-10T17:41:40.565Z",
+"@description": "Describes supporting data files for this study",
+"@id": "supporting-files-metadata",
+"@passedChecks": true,
+"@preserve": true,
+"@wasAssociatedWithAgentId": "opentree-curation-webapp",
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO",
+"@humanMessageType": "NONE",
+"@severity": "INFO",
+"data": {
+"@movedToPermanentArchive": false,
+"files": {
+"file": [
+{
+"@filename": "Reticulitermes_tree.tre",
+"@size": 797,
+"@type": "newick",
+"@url": "/curator/download/supporting_files.doc.9adcc49f58539a45.5265746963756c697465726d65735f747265652e747265.tre",
+"description": {
+"$": "Source data for tree(s) 'tree1'"
+},
+"sourceForTree": [
+{
+"$": "tree1"
+}
+]
+}
+]
+}
+},
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+},
+"^ot:candidateTreeForSynthesis": [],
+"^ot:comment": "",
+"^ot:curatorName": [
+"LouisBell-Roberts"
+],
+"^ot:dataDeposit": {
+"@href": ""
+},
+"^ot:focalCladeOTTTaxonName": "",
 "^ot:otusElementOrder": [
 "otus1"
 ],
@@ -51,6 +174,7 @@
 },
 "^ot:studyPublicationReference": "Velon\u00e0, A., Ghesini, S., Luchetti, A., Marini, M., & Mantovani, B. (2010). Starting from Crete, a phylogenetic re-analysis of the genus Reticulitermes in the Mediterranean area. Molecular Phylogenetics and Evolution, 56(3), 1051\u20131058. https://doi.org/10.1016/j.ympev.2010.04.037\n",
 "^ot:studyYear": 2010,
+"^ot:tag": [],
 "^ot:treesElementOrder": [
 "trees1"
 ],
@@ -58,16 +182,346 @@
 "@href": "https://www.law.cornell.edu/uscode/text/17/106",
 "@name": "Copyright Exclusive Rights"
 },
+"highestMintedElementIDs": {
+"agent": 0,
+"annotation": 0,
+"edge": 28,
+"message": 0,
+"node": 29,
+"otu": 15,
+"otus": 2,
+"tree": 1,
+"trees": 2
+},
 "otusById": {
 "otus1": {
-"otuById": {}
+"otuById": {
+"otu1": {
+"^ot:originalLabel": "Reticulitermes crete4"
+},
+"otu10": {
+"^ot:originalLabel": "Reticulitermes grassei",
+"^ot:ottId": 465727,
+"^ot:ottTaxonName": "Reticulitermes grassei"
+},
+"otu11": {
+"^ot:originalLabel": "Reticulitermes lucifugus corsicus",
+"^ot:ottId": 1096217,
+"^ot:ottTaxonName": "Reticulitermes lucifugus corsicus"
+},
+"otu12": {
+"^ot:originalLabel": "Reticulitermes lucifugus lucifugus",
+"^ot:ottId": 518855,
+"^ot:ottTaxonName": "Reticulitermes lucifugus lucifugus"
+},
+"otu13": {
+"^ot:originalLabel": "Reticulitermes lucifugus Sicily"
+},
+"otu14": {
+"^ot:originalLabel": "Reticulitermes flavipes",
+"^ot:ottId": 991735,
+"^ot:ottTaxonName": "Reticulitermes flavipes"
+},
+"otu15": {
+"^ot:originalLabel": "Coptotermes formosanus",
+"^ot:ottId": 991757,
+"^ot:ottTaxonName": "Coptotermes formosanus"
+},
+"otu2": {
+"^ot:originalLabel": "Reticulitermes sp.Amorgos"
+},
+"otu3": {
+"^ot:originalLabel": "Reticulitermes lucifugus Northern"
+},
+"otu4": {
+"^ot:originalLabel": "Reticulitermes clypeatus",
+"^ot:ottId": 1045249,
+"^ot:ottTaxonName": "Reticulitermes clypeatus"
+},
+"otu5": {
+"^ot:originalLabel": "Reticulitermes lucifugus Southern"
+},
+"otu6": {
+"^ot:originalLabel": "Reticulitermes balkanensis",
+"^ot:ottId": 1045251,
+"^ot:ottTaxonName": "Reticulitermes balkanensis"
+},
+"otu7": {
+"^ot:originalLabel": "Reticulitermes sp.Samos",
+"^ot:ottId": 14781,
+"^ot:ottTaxonName": "Reticulitermes sp. 'Samos'"
+},
+"otu8": {
+"^ot:originalLabel": "Reticulitermes urbis",
+"^ot:ottId": 777294,
+"^ot:ottTaxonName": "Reticulitermes urbis"
+},
+"otu9": {
+"^ot:originalLabel": "Reticulitermes banyulensis",
+"^ot:ottId": 368156,
+"^ot:ottTaxonName": "Reticulitermes banyulensis"
+}
+}
 }
 },
 "treesById": {
 "trees1": {
 "@otus": "otus1",
-"^ot:treeElementOrder": [],
-"treeById": {}
+"^ot:treeElementOrder": [
+"tree1"
+],
+"treeById": {
+"tree1": {
+"@label": "Fig. 3",
+"@xsi:type": "nex:FloatTree",
+"^ot:branchLengthDescription": "",
+"^ot:branchLengthMode": "ot:time",
+"^ot:branchLengthTimeUnit": "Myr",
+"^ot:curatedType": "Maximum likelihood ",
+"^ot:inGroupClade": "node2",
+"^ot:nodeLabelMode": "",
+"^ot:nodeLabelTimeUnit": "",
+"^ot:outGroupEdge": "",
+"^ot:reasonsToExcludeFromSynthesis": [],
+"^ot:rootNodeId": "node1",
+"^ot:specifiedRoot": "node1",
+"^ot:tag": [],
+"^ot:unrootedTree": false,
+"edgeBySourceId": {
+"node1": {
+"edge1": {
+"@length": 1.733484,
+"@source": "node1",
+"@target": "node2"
+},
+"edge28": {
+"@length": 4.909332,
+"@source": "node1",
+"@target": "node29"
+}
+},
+"node11": {
+"edge11": {
+"@length": 0.119094,
+"@source": "node11",
+"@target": "node12"
+},
+"edge16": {
+"@length": 1.098314,
+"@source": "node11",
+"@target": "node17"
+}
+},
+"node12": {
+"edge12": {
+"@length": 0.172025,
+"@source": "node12",
+"@target": "node13"
+},
+"edge15": {
+"@length": 0.992452,
+"@source": "node12",
+"@target": "node16"
+}
+},
+"node13": {
+"edge13": {
+"@length": 0.807195,
+"@source": "node13",
+"@target": "node14"
+},
+"edge14": {
+"@length": 0.820427,
+"@source": "node13",
+"@target": "node15"
+}
+},
+"node19": {
+"edge19": {
+"@length": 0.502843,
+"@source": "node19",
+"@target": "node20"
+},
+"edge22": {
+"@length": 0.820427,
+"@source": "node19",
+"@target": "node23"
+}
+},
+"node2": {
+"edge2": {
+"@length": 0.820427,
+"@source": "node2",
+"@target": "node3"
+},
+"edge27": {
+"@length": 3.189081,
+"@source": "node2",
+"@target": "node28"
+}
+},
+"node20": {
+"edge20": {
+"@length": 1.217408,
+"@source": "node20",
+"@target": "node21"
+},
+"edge21": {
+"@length": 1.217408,
+"@source": "node20",
+"@target": "node22"
+}
+},
+"node23": {
+"edge23": {
+"@length": 0.926289,
+"@source": "node23",
+"@target": "node24"
+},
+"edge24": {
+"@length": 0.19849,
+"@source": "node23",
+"@target": "node25"
+}
+},
+"node25": {
+"edge25": {
+"@length": 0.741031,
+"@source": "node25",
+"@target": "node26"
+},
+"edge26": {
+"@length": 0.714566,
+"@source": "node25",
+"@target": "node27"
+}
+},
+"node3": {
+"edge18": {
+"@length": 0.63517,
+"@source": "node3",
+"@target": "node19"
+},
+"edge3": {
+"@length": 0.767497,
+"@source": "node3",
+"@target": "node4"
+}
+},
+"node4": {
+"edge17": {
+"@length": 1.601157,
+"@source": "node4",
+"@target": "node18"
+},
+"edge4": {
+"@length": 0.34405,
+"@source": "node4",
+"@target": "node5"
+}
+},
+"node5": {
+"edge10": {
+"@length": 0.14556,
+"@source": "node5",
+"@target": "node11"
+},
+"edge5": {
+"@length": 0.502843,
+"@source": "node5",
+"@target": "node6"
+}
+},
+"node6": {
+"edge6": {
+"@length": 0.211723,
+"@source": "node6",
+"@target": "node7"
+},
+"edge9": {
+"@length": 0.741031,
+"@source": "node6",
+"@target": "node10"
+}
+},
+"node7": {
+"edge7": {
+"@length": 0.542541,
+"@source": "node7",
+"@target": "node8"
+},
+"edge8": {
+"@length": 0.516075,
+"@source": "node7",
+"@target": "node9"
+}
+}
+},
+"nodeById": {
+"node1": {
+"@root": true
+},
+"node10": {
+"@otu": "otu3"
+},
+"node11": {},
+"node12": {},
+"node13": {},
+"node14": {
+"@otu": "otu4"
+},
+"node15": {
+"@otu": "otu5"
+},
+"node16": {
+"@otu": "otu6"
+},
+"node17": {
+"@otu": "otu7"
+},
+"node18": {
+"@otu": "otu8"
+},
+"node19": {},
+"node2": {},
+"node20": {},
+"node21": {
+"@otu": "otu9"
+},
+"node22": {
+"@otu": "otu10"
+},
+"node23": {},
+"node24": {
+"@otu": "otu11"
+},
+"node25": {},
+"node26": {
+"@otu": "otu12"
+},
+"node27": {
+"@otu": "otu13"
+},
+"node28": {
+"@otu": "otu14"
+},
+"node29": {
+"@otu": "otu15"
+},
+"node3": {},
+"node4": {},
+"node5": {},
+"node6": {},
+"node7": {},
+"node8": {
+"@otu": "otu1"
+},
+"node9": {
+"@otu": "otu2"
+}
+}
+}
+}
 }
 }
 }
