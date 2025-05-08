@@ -35,13 +35,147 @@
 }
 ]
 }
+},
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.",
+"@id": "opentree-curation-webapp",
+"@name": "OpenTree curation webapp",
+"@url": "https://github.com/OpenTreeOfLife/opentree",
+"@version": "0.0.0"
 }
 ]
 },
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2025-05-08T04:48:04.711Z",
+"@description": "Aids for mapping study OTUs to OTT taxa",
+"@id": "otu-mapping-hints",
+"@passedChecks": true,
+"@preserve": true,
+"@wasAssociatedWithAgentId": "opentree-curation-webapp",
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS",
+"@humanMessageType": "NONE",
+"@severity": "INFO",
+"data": {
+"autoAcceptExactMatches": false,
+"searchContext": {
+"$": "Insects"
 },
-"^ot:curatorName": "dchesters",
+"substitutions": {
+"substitution": [
+{
+"@active": false,
+"@valid": true,
+"new": {
+"$": ""
+},
+"old": {
+"$": ""
+}
+}
+]
+},
+"useFuzzyMatching": false
+},
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+},
+{
+"@dateCreated": "2025-05-08T04:48:04.711Z",
+"@description": "Describes external namesets merged into this study",
+"@id": "merged-namesets-metadata",
+"@passedChecks": true,
+"@preserve": true,
+"@wasAssociatedWithAgentId": "opentree-curation-webapp",
+"message": [
+{
+"@code": "MERGED_NAMESET_INFO",
+"@humanMessageType": "NONE",
+"@severity": "INFO",
+"data": {
+"namesets": {
+"nameset": []
+}
+},
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+},
+{
+"@dateCreated": "2025-05-08T04:48:04.711Z",
+"@description": "Describes supporting data files for this study",
+"@id": "supporting-files-metadata",
+"@passedChecks": true,
+"@preserve": true,
+"@wasAssociatedWithAgentId": "opentree-curation-webapp",
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO",
+"@humanMessageType": "NONE",
+"@severity": "INFO",
+"data": {
+"@movedToPermanentArchive": false,
+"files": {
+"file": [
+{
+"@filename": "Jaloszynski2012Clidicini.nwk",
+"@size": 271,
+"@type": "newick",
+"@url": "/curator/download/supporting_files.doc.a5dd653f161bd308.4a616c6f737a796e736b6932303132436c69646963696e692e6e776b.nwk",
+"description": {
+"$": "Source data for tree(s) 'tree1'"
+},
+"sourceForTree": [
+{
+"$": "tree1"
+}
+]
+},
+{
+"@filename": "image.png",
+"@size": 1077,
+"@type": "",
+"@url": "/curator/supporting_files/download/supporting_files.doc.92c286a99b641c56.696d6167652e706e67.png",
+"description": {
+"$": ""
+},
+"sourceForTree": []
+}
+]
+}
+},
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+},
+"^ot:candidateTreeForSynthesis": [],
+"^ot:comment": "",
+"^ot:curatorName": [
+"dchesters"
+],
+"^ot:dataDeposit": {
+"@href": ""
+},
+"^ot:focalClade": 5807645,
+"^ot:focalCladeOTTTaxonName": "Scydmaeninae",
 "^ot:otusElementOrder": [
 "otus1"
 ],
@@ -51,19 +185,236 @@
 },
 "^ot:studyPublicationReference": "JA\u0141OSZY\u0143SKI, P. (2012). Description ofEuroleptochromusgen.n. (Coleoptera, Staphylinidae, Scydmaeninae) from Baltic amber, with discussion of biogeography and mouthpart evolution within Clidicini. Systematic Entomology, 37(2), 346\u2013359. Portico. https://doi.org/10.1111/j.1365-3113.2012.00623.x\n",
 "^ot:studyYear": 2012,
+"^ot:tag": [],
 "^ot:treesElementOrder": [
 "trees1"
 ],
+"highestMintedElementIDs": {
+"agent": 0,
+"annotation": 0,
+"edge": 20,
+"message": 0,
+"node": 21,
+"otu": 12,
+"otus": 2,
+"tree": 1,
+"trees": 2
+},
 "otusById": {
 "otus1": {
-"otuById": {}
+"otuById": {
+"otu1": {
+"^ot:originalLabel": "Scydmaenus tarsatus"
+},
+"otu10": {
+"^ot:originalLabel": "Palaeoleptochromus schaufussi"
+},
+"otu11": {
+"^ot:originalLabel": "Leptochromus agilis"
+},
+"otu12": {
+"^ot:originalLabel": "Euroleptochromus sabathi"
+},
+"otu2": {
+"^ot:originalLabel": "Ablepton treforti"
+},
+"otu3": {
+"^ot:originalLabel": "Leptomastax sp"
+},
+"otu4": {
+"^ot:originalLabel": "Palaeostigus ruficornis"
+},
+"otu5": {
+"^ot:originalLabel": "Palaeostigus bifoveolatus"
+},
+"otu6": {
+"^ot:originalLabel": "Stenomastigus varii"
+},
+"otu7": {
+"^ot:originalLabel": "Mastigus spinicornis"
+},
+"otu8": {
+"^ot:originalLabel": "Papusus macer"
+},
+"otu9": {
+"^ot:originalLabel": "Clidicus bellator"
+}
+}
 }
 },
 "treesById": {
 "trees1": {
 "@otus": "otus1",
-"^ot:treeElementOrder": [],
-"treeById": {}
+"^ot:treeElementOrder": [
+"tree1"
+],
+"treeById": {
+"tree1": {
+"@label": "Fig. 1A, MP",
+"@xsi:type": "nex:FloatTree",
+"^ot:branchLengthDescription": "",
+"^ot:branchLengthMode": "ot:undefined",
+"^ot:curatedType": "Maximum parsimony ",
+"^ot:inGroupClade": "node3",
+"^ot:nodeLabelMode": "",
+"^ot:nodeLabelTimeUnit": "",
+"^ot:outGroupEdge": "",
+"^ot:reasonsToExcludeFromSynthesis": [],
+"^ot:rootNodeId": "node1",
+"^ot:specifiedRoot": "node1",
+"^ot:tag": [],
+"^ot:unrootedTree": false,
+"edgeBySourceId": {
+"node1": {
+"edge1": {
+"@source": "node1",
+"@target": "node2"
+},
+"edge2": {
+"@source": "node1",
+"@target": "node3"
+}
+},
+"node13": {
+"edge13": {
+"@source": "node13",
+"@target": "node14"
+},
+"edge14": {
+"@source": "node13",
+"@target": "node15"
+}
+},
+"node15": {
+"edge15": {
+"@source": "node15",
+"@target": "node16"
+},
+"edge16": {
+"@source": "node15",
+"@target": "node17"
+}
+},
+"node17": {
+"edge17": {
+"@source": "node17",
+"@target": "node18"
+},
+"edge18": {
+"@source": "node17",
+"@target": "node19"
+}
+},
+"node19": {
+"edge19": {
+"@source": "node19",
+"@target": "node20"
+},
+"edge20": {
+"@source": "node19",
+"@target": "node21"
+}
+},
+"node3": {
+"edge3": {
+"@source": "node3",
+"@target": "node4"
+},
+"edge6": {
+"@source": "node3",
+"@target": "node7"
+}
+},
+"node4": {
+"edge4": {
+"@source": "node4",
+"@target": "node5"
+},
+"edge5": {
+"@source": "node4",
+"@target": "node6"
+}
+},
+"node7": {
+"edge12": {
+"@source": "node7",
+"@target": "node13"
+},
+"edge7": {
+"@source": "node7",
+"@target": "node8"
+}
+},
+"node8": {
+"edge10": {
+"@source": "node8",
+"@target": "node11"
+},
+"edge11": {
+"@source": "node8",
+"@target": "node12"
+},
+"edge8": {
+"@source": "node8",
+"@target": "node9"
+},
+"edge9": {
+"@source": "node8",
+"@target": "node10"
+}
+}
+},
+"nodeById": {
+"node1": {
+"@root": true
+},
+"node10": {
+"@otu": "otu5"
+},
+"node11": {
+"@otu": "otu6"
+},
+"node12": {
+"@otu": "otu7"
+},
+"node13": {},
+"node14": {
+"@otu": "otu8"
+},
+"node15": {},
+"node16": {
+"@otu": "otu9"
+},
+"node17": {},
+"node18": {
+"@otu": "otu10"
+},
+"node19": {},
+"node2": {
+"@otu": "otu1"
+},
+"node20": {
+"@otu": "otu11"
+},
+"node21": {
+"@otu": "otu12"
+},
+"node3": {},
+"node4": {},
+"node5": {
+"@otu": "otu2"
+},
+"node6": {
+"@otu": "otu3"
+},
+"node7": {},
+"node8": {},
+"node9": {
+"@otu": "otu4"
+}
+}
+}
+}
 }
 }
 }
