@@ -35,13 +35,137 @@
 }
 ]
 }
+},
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.",
+"@id": "opentree-curation-webapp",
+"@name": "OpenTree curation webapp",
+"@url": "https://github.com/OpenTreeOfLife/opentree",
+"@version": "0.0.0"
 }
 ]
 },
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2025-05-09T11:20:53.792Z",
+"@description": "Aids for mapping study OTUs to OTT taxa",
+"@id": "otu-mapping-hints",
+"@passedChecks": true,
+"@preserve": true,
+"@wasAssociatedWithAgentId": "opentree-curation-webapp",
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS",
+"@humanMessageType": "NONE",
+"@severity": "INFO",
+"data": {
+"autoAcceptExactMatches": true,
+"searchContext": {
+"$": "Insects"
 },
-"^ot:curatorName": "dchesters",
+"substitutions": {
+"substitution": [
+{
+"@active": false,
+"@valid": true,
+"new": {
+"$": ""
+},
+"old": {
+"$": ""
+}
+}
+]
+},
+"useFuzzyMatching": false
+},
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+},
+{
+"@dateCreated": "2025-05-09T11:20:53.792Z",
+"@description": "Describes external namesets merged into this study",
+"@id": "merged-namesets-metadata",
+"@passedChecks": true,
+"@preserve": true,
+"@wasAssociatedWithAgentId": "opentree-curation-webapp",
+"message": [
+{
+"@code": "MERGED_NAMESET_INFO",
+"@humanMessageType": "NONE",
+"@severity": "INFO",
+"data": {
+"namesets": {
+"nameset": []
+}
+},
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+},
+{
+"@dateCreated": "2025-05-09T11:20:53.792Z",
+"@description": "Describes supporting data files for this study",
+"@id": "supporting-files-metadata",
+"@passedChecks": true,
+"@preserve": true,
+"@wasAssociatedWithAgentId": "opentree-curation-webapp",
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO",
+"@humanMessageType": "NONE",
+"@severity": "INFO",
+"data": {
+"@movedToPermanentArchive": false,
+"files": {
+"file": [
+{
+"@filename": "ConflittiSpironello2012Simulium.nwk",
+"@size": 171,
+"@type": "newick",
+"@url": "/curator/download/supporting_files.doc.b2b47b19f8564889.436f6e666c69747469537069726f6e656c6c6f3230313253696d756c69756d2e6e776b.nwk",
+"description": {
+"$": "Source data for tree(s) 'tree1'"
+},
+"sourceForTree": [
+{
+"$": "tree1"
+}
+]
+}
+]
+}
+},
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+},
+"^ot:candidateTreeForSynthesis": [],
+"^ot:comment": "",
+"^ot:curatorName": [
+"dchesters"
+],
+"^ot:dataDeposit": {
+"@href": ""
+},
+"^ot:focalClade": 20678,
+"^ot:focalCladeOTTTaxonName": "Simulium",
 "^ot:otusElementOrder": [
 "otus1"
 ],
@@ -51,19 +175,198 @@
 },
 "^ot:studyPublicationReference": "CONFLITTI, I. M., SPIRONELLO, M., & CURRIE, D. C. (2012). Molecular phylogeny of the North American Simulium malyschevi\u2010group species (Diptera: Simuliidae). Systematic Entomology, 37(3), 571\u2013577. Portico. https://doi.org/10.1111/j.1365-3113.2012.00629.x\n",
 "^ot:studyYear": 2012,
+"^ot:tag": [],
 "^ot:treesElementOrder": [
 "trees1"
 ],
+"highestMintedElementIDs": {
+"agent": 0,
+"annotation": 0,
+"edge": 14,
+"message": 0,
+"node": 15,
+"otu": 8,
+"otus": 2,
+"tree": 1,
+"trees": 2
+},
 "otusById": {
 "otus1": {
-"otuById": {}
+"otuById": {
+"otu1": {
+"^ot:originalLabel": "Simulium jenningsi",
+"^ot:ottId": 837502,
+"^ot:ottTaxonName": "Simulium jenningsi"
+},
+"otu2": {
+"^ot:originalLabel": "Simulium subvariegatum",
+"^ot:ottId": 864392,
+"^ot:ottTaxonName": "Simulium subvariegatum"
+},
+"otu3": {
+"^ot:originalLabel": "Simulium malyschevi",
+"^ot:ottId": 503473,
+"^ot:ottTaxonName": "Simulium malyschevi"
+},
+"otu4": {
+"^ot:originalLabel": "Simulium murmanum",
+"^ot:ottId": 442536,
+"^ot:ottTaxonName": "Simulium murmanum"
+},
+"otu5": {
+"^ot:originalLabel": "Simulium decimatum",
+"^ot:ottId": 503475,
+"^ot:ottTaxonName": "Simulium decimatum"
+},
+"otu6": {
+"^ot:originalLabel": "Simulium saxosum",
+"^ot:ottId": 242503,
+"^ot:ottTaxonName": "Simulium saxosum"
+},
+"otu7": {
+"^ot:originalLabel": "Simulium defoliarti",
+"^ot:ottId": 864394,
+"^ot:ottTaxonName": "Simulium defoliarti"
+},
+"otu8": {
+"^ot:originalLabel": "Simulium negativum",
+"^ot:ottId": 663197,
+"^ot:ottTaxonName": "Simulium negativum"
+}
+}
 }
 },
 "treesById": {
 "trees1": {
 "@otus": "otus1",
-"^ot:treeElementOrder": [],
-"treeById": {}
+"^ot:treeElementOrder": [
+"tree1"
+],
+"treeById": {
+"tree1": {
+"@label": "Fig. 1, BI",
+"@xsi:type": "nex:FloatTree",
+"^ot:branchLengthDescription": "",
+"^ot:branchLengthMode": "ot:undefined",
+"^ot:curatedType": "Bayesian inference ",
+"^ot:inGroupClade": "node3",
+"^ot:nodeLabelMode": "",
+"^ot:nodeLabelTimeUnit": "",
+"^ot:outGroupEdge": "",
+"^ot:reasonsToExcludeFromSynthesis": [],
+"^ot:rootNodeId": "node1",
+"^ot:specifiedRoot": "node1",
+"^ot:tag": [],
+"^ot:unrootedTree": false,
+"edgeBySourceId": {
+"node1": {
+"edge1": {
+"@source": "node1",
+"@target": "node2"
+},
+"edge2": {
+"@source": "node1",
+"@target": "node3"
+}
+},
+"node11": {
+"edge11": {
+"@source": "node11",
+"@target": "node12"
+},
+"edge12": {
+"@source": "node11",
+"@target": "node13"
+}
+},
+"node13": {
+"edge13": {
+"@source": "node13",
+"@target": "node14"
+},
+"edge14": {
+"@source": "node13",
+"@target": "node15"
+}
+},
+"node3": {
+"edge3": {
+"@source": "node3",
+"@target": "node4"
+},
+"edge4": {
+"@source": "node3",
+"@target": "node5"
+}
+},
+"node5": {
+"edge5": {
+"@source": "node5",
+"@target": "node6"
+},
+"edge6": {
+"@source": "node5",
+"@target": "node7"
+}
+},
+"node7": {
+"edge7": {
+"@source": "node7",
+"@target": "node8"
+},
+"edge8": {
+"@source": "node7",
+"@target": "node9"
+}
+},
+"node9": {
+"edge10": {
+"@source": "node9",
+"@target": "node11"
+},
+"edge9": {
+"@source": "node9",
+"@target": "node10"
+}
+}
+},
+"nodeById": {
+"node1": {
+"@root": true
+},
+"node10": {
+"@otu": "otu5"
+},
+"node11": {},
+"node12": {
+"@otu": "otu6"
+},
+"node13": {},
+"node14": {
+"@otu": "otu7"
+},
+"node15": {
+"@otu": "otu8"
+},
+"node2": {
+"@otu": "otu1"
+},
+"node3": {},
+"node4": {
+"@otu": "otu2"
+},
+"node5": {},
+"node6": {
+"@otu": "otu3"
+},
+"node7": {},
+"node8": {
+"@otu": "otu4"
+},
+"node9": {}
+}
+}
+}
 }
 }
 }
