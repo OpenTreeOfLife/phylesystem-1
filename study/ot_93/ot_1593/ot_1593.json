@@ -1,72 +1,743 @@
 {
 "nexml": {
-"@about": "#study", 
-"@generator": "Open Tree API", 
-"@id": "study", 
-"@nexml2json": "1.2.1", 
-"@nexmljson": "http://purl.org/opentree/nexson", 
-"@version": "0.9", 
+"@about": "#study",
+"@generator": "Open Tree API",
+"@id": "study",
+"@nexml2json": "1.2.1",
+"@nexmljson": "http://purl.org/opentree/nexson",
+"@version": "0.9",
 "@xmlns": {
-"$": "http://www.nexml.org/2009", 
-"nex": "http://www.nexml.org/2009", 
-"ot": "http://purl.org/opentree-terms#", 
-"xhtml": "http://www.w3.org/1999/xhtml/vocab#", 
-"xsd": "http://www.w3.org/2001/XMLSchema#", 
+"$": "http://www.nexml.org/2009",
+"nex": "http://www.nexml.org/2009",
+"ot": "http://purl.org/opentree-terms#",
+"xhtml": "http://www.w3.org/1999/xhtml/vocab#",
+"xsd": "http://www.w3.org/2001/XMLSchema#",
 "xsi": "http://www.w3.org/2001/XMLSchema-instance"
-}, 
+},
 "^ot:agents": {
 "agent": [
 {
-"@description": "Open Tree NexSON validation", 
-"@id": "peyotl-validator", 
-"@name": "api.opentreeoflife.org/validate", 
-"@url": "https://github.com/OpenTreeOfLife/peyotl", 
-"@version": "0.0.4a", 
+"@description": "Open Tree NexSON validation",
+"@id": "peyotl-validator",
+"@name": "api.opentreeoflife.org/validate",
+"@url": "https://github.com/OpenTreeOfLife/peyotl",
+"@version": "0.0.4a",
 "invocation": {
-"commandLine": [], 
+"commandLine": [],
 "otherProperty": [
 {
-"name": "pythonVersion", 
+"name": "pythonVersion",
 "value": "2.7.9"
-}, 
+},
 {
-"name": "pythonImplementation", 
+"name": "pythonImplementation",
 "value": "CPython"
 }
 ]
 }
+},
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.",
+"@id": "opentree-curation-webapp",
+"@name": "OpenTree curation webapp",
+"@url": "https://github.com/OpenTreeOfLife/opentree",
+"@version": "0.0.0"
 }
 ]
-}, 
+},
 "^ot:annotationEvents": {
-"annotation": []
-}, 
-"^ot:curatorName": "Nathan Lord", 
+"annotation": [
+{
+"@dateCreated": "2025-09-25T01:00:42.384Z",
+"@description": "Aids for mapping study OTUs to OTT taxa",
+"@id": "otu-mapping-hints",
+"@passedChecks": true,
+"@preserve": true,
+"@wasAssociatedWithAgentId": "opentree-curation-webapp",
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS",
+"@humanMessageType": "NONE",
+"@severity": "INFO",
+"data": {
+"autoAcceptExactMatches": true,
+"searchContext": {
+"$": "Insects"
+},
+"substitutions": {
+"substitution": [
+{
+"@active": false,
+"@valid": true,
+"new": {
+"$": ""
+},
+"old": {
+"$": ""
+}
+}
+]
+},
+"useFuzzyMatching": false
+},
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+},
+{
+"@dateCreated": "2025-09-25T01:00:42.384Z",
+"@description": "Describes external namesets merged into this study",
+"@id": "merged-namesets-metadata",
+"@passedChecks": true,
+"@preserve": true,
+"@wasAssociatedWithAgentId": "opentree-curation-webapp",
+"message": [
+{
+"@code": "MERGED_NAMESET_INFO",
+"@humanMessageType": "NONE",
+"@severity": "INFO",
+"data": {
+"namesets": {
+"nameset": []
+}
+},
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+},
+{
+"@dateCreated": "2025-09-25T01:00:42.384Z",
+"@description": "Describes supporting data files for this study",
+"@id": "supporting-files-metadata",
+"@passedChecks": true,
+"@preserve": true,
+"@wasAssociatedWithAgentId": "opentree-curation-webapp",
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO",
+"@humanMessageType": "NONE",
+"@severity": "INFO",
+"data": {
+"@movedToPermanentArchive": false,
+"files": {
+"file": [
+{
+"@filename": "LordHartley2010Latridiidae.nwk",
+"@size": 598,
+"@type": "newick",
+"@url": "/curator/download/supporting_files.doc.9491dcd40182c43a.4c6f7264486172746c6579323031304c617472696469696461652e6e776b.nwk",
+"description": {
+"$": "Source data for tree(s) 'tree1'"
+},
+"sourceForTree": [
+{
+"$": "tree1"
+}
+]
+},
+{
+"@filename": "image.png",
+"@size": 713,
+"@type": "",
+"@url": "/curator/supporting_files/download/supporting_files.doc.9a45b758658ecf03.696d6167652e706e67.png",
+"description": {
+"$": ""
+},
+"sourceForTree": []
+},
+{
+"@filename": "image.png",
+"@size": 1985,
+"@type": "",
+"@url": "/curator/supporting_files/download/supporting_files.doc.8b3219ed56e719af.696d6167652e706e67.png",
+"description": {
+"$": ""
+},
+"sourceForTree": []
+},
+{
+"@filename": "image.png",
+"@size": 3379,
+"@type": "",
+"@url": "/curator/supporting_files/download/supporting_files.doc.908b7c897d5993a7.696d6167652e706e67.png",
+"description": {
+"$": ""
+},
+"sourceForTree": []
+}
+]
+}
+},
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+},
+"^ot:candidateTreeForSynthesis": [],
+"^ot:comment": "",
+"^ot:curatorName": [
+"Nathan Lord",
+"dchesters"
+],
+"^ot:dataDeposit": {
+"@href": ""
+},
+"^ot:focalClade": 974160,
+"^ot:focalCladeOTTTaxonName": "Latridiidae",
 "^ot:otusElementOrder": [
 "otus1"
-], 
-"^ot:studyId": "ot_1593", 
+],
+"^ot:studyId": "ot_1593",
 "^ot:studyPublication": {
 "@href": "http://dx.doi.org/10.1111/j.1365-3113.2010.00532.x"
-}, 
-"^ot:studyPublicationReference": "NATHAN PATRICK LORD, CHRISTOPHER S. HARTLEY, JOHN F. LAWRENCE, JOSEPH V. McHUGH, MICHAEL F. WHITING, KELLY B. MILLER, 2010, 'Phylogenetic analysis of the minute brown scavenger beetles (Coleoptera: Latridiidae), and recognition of a new beetle family, Akalyptoischiidae fam.n. (Coleoptera: Cucujoidea)', Systematic Entomology, vol. 35, no. 4, pp. 753-763", 
-"^ot:studyYear": "2010", 
+},
+"^ot:studyPublicationReference": "NATHAN PATRICK LORD, CHRISTOPHER S. HARTLEY, JOHN F. LAWRENCE, JOSEPH V. McHUGH, MICHAEL F. WHITING, KELLY B. MILLER, 2010, 'Phylogenetic analysis of the minute brown scavenger beetles (Coleoptera: Latridiidae), and recognition of a new beetle family, Akalyptoischiidae fam.n. (Coleoptera: Cucujoidea)', Systematic Entomology, vol. 35, no. 4, pp. 753-763",
+"^ot:studyYear": 2010,
+"^ot:tag": [],
 "^ot:treesElementOrder": [
 "trees1"
-], 
+],
 "^xhtml:license": {
 "@href": "http://creativecommons.org/publicdomain/zero/1.0/"
-}, 
+},
+"highestMintedElementIDs": {
+"agent": 0,
+"annotation": 0,
+"edge": 50,
+"message": 0,
+"node": 51,
+"otu": 26,
+"otus": 2,
+"tree": 1,
+"trees": 2
+},
 "otusById": {
 "otus1": {
-"otuById": {}
+"otuById": {
+"otu1": {
+"^ot:originalLabel": "Pselaphacus nigropunctatus",
+"^ot:ottId": 976929,
+"^ot:ottTaxonName": "Pselaphacus nigropunctatus"
+},
+"otu10": {
+"^ot:originalLabel": "Akalyptoischion sleeperi",
+"^ot:ottId": 30055,
+"^ot:ottTaxonName": "Akalyptoischion sleeperi"
+},
+"otu11": {
+"^ot:originalLabel": "Akalyptoischion atrichos",
+"^ot:ottId": 895931,
+"^ot:ottTaxonName": "Akalyptoischion atrichos"
+},
+"otu12": {
+"^ot:originalLabel": "Dienerella intermedia",
+"^ot:ottId": 118464,
+"^ot:ottTaxonName": "Dienerella intermedia"
+},
+"otu13": {
+"^ot:originalLabel": "Revelieria californica",
+"^ot:ottId": 30079,
+"^ot:ottTaxonName": "Revelieria californica"
+},
+"otu14": {
+"^ot:originalLabel": "Metophthalmus haigi",
+"^ot:ottId": 640108,
+"^ot:ottTaxonName": "Metophthalmus haigi"
+},
+"otu15": {
+"^ot:originalLabel": "Eufallia seminiveus",
+"^ot:ottId": 30063,
+"^ot:ottTaxonName": "Eufallia seminiveus"
+},
+"otu16": {
+"^ot:originalLabel": "Enicmus maculatus",
+"^ot:ottId": 118460,
+"^ot:ottTaxonName": "Enicmus maculatus"
+},
+"otu17": {
+"^ot:originalLabel": "Enicmus aterrimus",
+"^ot:ottId": 118457,
+"^ot:ottTaxonName": "Enicmus aterrimus"
+},
+"otu18": {
+"^ot:originalLabel": "Cartodere constrictus"
+},
+"otu19": {
+"^ot:originalLabel": "Aridius nodifer",
+"^ot:ottId": 827822,
+"^ot:ottTaxonName": "Cartodere nodifer"
+},
+"otu2": {
+"^ot:originalLabel": "Aphanocephalus sp",
+"^ot:ottId": 382875,
+"^ot:ottTaxonName": "Aphanocephalus"
+},
+"otu20": {
+"^ot:originalLabel": "Latridius crenatus",
+"^ot:ottId": 118466,
+"^ot:ottTaxonName": "Latridius crenatus"
+},
+"otu21": {
+"^ot:originalLabel": "Stephostethus liratus",
+"^ot:ottId": 895939,
+"^ot:ottTaxonName": "Stephostethus liratus"
+},
+"otu22": {
+"^ot:originalLabel": "Stephostethus lardarius",
+"^ot:ottId": 1060190,
+"^ot:ottTaxonName": "Stephostethus lardarius"
+},
+"otu23": {
+"^ot:altLabel": "Melanophthalma",
+"^ot:originalLabel": "Melanophthalma sp"
+},
+"otu24": {
+"^ot:originalLabel": "Fuchsina occulta",
+"^ot:ottId": 370759,
+"^ot:ottTaxonName": "Fuchsina occulta"
+},
+"otu25": {
+"^ot:originalLabel": "Migneuxia orientalis"
+},
+"otu26": {
+"^ot:originalLabel": "Corticaria ferruginea",
+"^ot:ottId": 3354654,
+"^ot:ottTaxonName": "Corticaria ferruginea"
+},
+"otu3": {
+"^ot:originalLabel": "Bothrideres geminatus",
+"^ot:ottId": 908140,
+"^ot:ottTaxonName": "Bothrideres geminatus"
+},
+"otu4": {
+"^ot:originalLabel": "Australiorylon sp",
+"^ot:ottId": 908139,
+"^ot:ottTaxonName": "Australiorylon"
+},
+"otu5": {
+"^ot:originalLabel": "Philothermus glabriculus",
+"^ot:ottId": 233211,
+"^ot:ottTaxonName": "Philothermus glabriculus"
+},
+"otu6": {
+"^ot:originalLabel": "Corynomalus laevigatus",
+"^ot:ottId": 264894,
+"^ot:ottTaxonName": "Corynomalus laevigatus"
+},
+"otu7": {
+"^ot:originalLabel": "Olla vnigrum",
+"^ot:ottId": 455965,
+"^ot:ottTaxonName": "Olla vnigrum"
+},
+"otu8": {
+"^ot:originalLabel": "Hippodamia convergens",
+"^ot:ottId": 84739,
+"^ot:ottTaxonName": "Hippodamia convergens"
+},
+"otu9": {
+"^ot:originalLabel": "Akalyptoischion anasillos",
+"^ot:ottId": 895934,
+"^ot:ottTaxonName": "Akalyptoischion anasillos"
 }
-}, 
+}
+}
+},
 "treesById": {
 "trees1": {
-"@otus": "otus1", 
-"^ot:treeElementOrder": [], 
-"treeById": {}
+"@otus": "otus1",
+"^ot:treeElementOrder": [
+"tree1"
+],
+"treeById": {
+"tree1": {
+"@label": "Fig. 6, BI",
+"@xsi:type": "nex:FloatTree",
+"^ot:branchLengthDescription": "",
+"^ot:branchLengthMode": "ot:undefined",
+"^ot:curatedType": "Bayesian inference ",
+"^ot:inGroupClade": "node23",
+"^ot:nodeLabelMode": "",
+"^ot:nodeLabelTimeUnit": "",
+"^ot:outGroupEdge": "",
+"^ot:reasonsToExcludeFromSynthesis": [],
+"^ot:rootNodeId": "node1",
+"^ot:specifiedRoot": "node1",
+"^ot:tag": [],
+"^ot:unrootedTree": false,
+"edgeBySourceId": {
+"node1": {
+"edge1": {
+"@source": "node1",
+"@target": "node2"
+},
+"edge2": {
+"@source": "node1",
+"@target": "node3"
+}
+},
+"node12": {
+"edge12": {
+"@source": "node12",
+"@target": "node13"
+},
+"edge17": {
+"@source": "node12",
+"@target": "node18"
+}
+},
+"node13": {
+"edge13": {
+"@source": "node13",
+"@target": "node14"
+},
+"edge14": {
+"@source": "node13",
+"@target": "node15"
+}
+},
+"node15": {
+"edge15": {
+"@source": "node15",
+"@target": "node16"
+},
+"edge16": {
+"@source": "node15",
+"@target": "node17"
+}
+},
+"node18": {
+"edge18": {
+"@source": "node18",
+"@target": "node19"
+},
+"edge19": {
+"@source": "node18",
+"@target": "node20"
+}
+},
+"node20": {
+"edge20": {
+"@source": "node20",
+"@target": "node21"
+},
+"edge21": {
+"@source": "node20",
+"@target": "node22"
+}
+},
+"node23": {
+"edge23": {
+"@source": "node23",
+"@target": "node24"
+},
+"edge44": {
+"@source": "node23",
+"@target": "node45"
+}
+},
+"node24": {
+"edge24": {
+"@source": "node24",
+"@target": "node25"
+},
+"edge25": {
+"@source": "node24",
+"@target": "node26"
+}
+},
+"node26": {
+"edge26": {
+"@source": "node26",
+"@target": "node27"
+},
+"edge29": {
+"@source": "node26",
+"@target": "node30"
+}
+},
+"node27": {
+"edge27": {
+"@source": "node27",
+"@target": "node28"
+},
+"edge28": {
+"@source": "node27",
+"@target": "node29"
+}
+},
+"node3": {
+"edge22": {
+"@source": "node3",
+"@target": "node23"
+},
+"edge3": {
+"@source": "node3",
+"@target": "node4"
+}
+},
+"node30": {
+"edge30": {
+"@source": "node30",
+"@target": "node31"
+},
+"edge31": {
+"@source": "node30",
+"@target": "node32"
+}
+},
+"node32": {
+"edge32": {
+"@source": "node32",
+"@target": "node33"
+},
+"edge35": {
+"@source": "node32",
+"@target": "node36"
+}
+},
+"node33": {
+"edge33": {
+"@source": "node33",
+"@target": "node34"
+},
+"edge34": {
+"@source": "node33",
+"@target": "node35"
+}
+},
+"node36": {
+"edge36": {
+"@source": "node36",
+"@target": "node37"
+},
+"edge39": {
+"@source": "node36",
+"@target": "node40"
+}
+},
+"node37": {
+"edge37": {
+"@source": "node37",
+"@target": "node38"
+},
+"edge38": {
+"@source": "node37",
+"@target": "node39"
+}
+},
+"node4": {
+"edge11": {
+"@source": "node4",
+"@target": "node12"
+},
+"edge4": {
+"@source": "node4",
+"@target": "node5"
+}
+},
+"node40": {
+"edge40": {
+"@source": "node40",
+"@target": "node41"
+},
+"edge41": {
+"@source": "node40",
+"@target": "node42"
+}
+},
+"node42": {
+"edge42": {
+"@source": "node42",
+"@target": "node43"
+},
+"edge43": {
+"@source": "node42",
+"@target": "node44"
+}
+},
+"node45": {
+"edge45": {
+"@source": "node45",
+"@target": "node46"
+},
+"edge46": {
+"@source": "node45",
+"@target": "node47"
+}
+},
+"node47": {
+"edge47": {
+"@source": "node47",
+"@target": "node48"
+},
+"edge48": {
+"@source": "node47",
+"@target": "node49"
+}
+},
+"node49": {
+"edge49": {
+"@source": "node49",
+"@target": "node50"
+},
+"edge50": {
+"@source": "node49",
+"@target": "node51"
+}
+},
+"node5": {
+"edge5": {
+"@source": "node5",
+"@target": "node6"
+},
+"edge8": {
+"@source": "node5",
+"@target": "node9"
+}
+},
+"node6": {
+"edge6": {
+"@source": "node6",
+"@target": "node7"
+},
+"edge7": {
+"@source": "node6",
+"@target": "node8"
+}
+},
+"node9": {
+"edge10": {
+"@source": "node9",
+"@target": "node11"
+},
+"edge9": {
+"@source": "node9",
+"@target": "node10"
+}
+}
+},
+"nodeById": {
+"node1": {
+"@root": true
+},
+"node10": {
+"@otu": "otu4"
+},
+"node11": {
+"@otu": "otu5"
+},
+"node12": {},
+"node13": {},
+"node14": {
+"@otu": "otu6"
+},
+"node15": {},
+"node16": {
+"@otu": "otu7"
+},
+"node17": {
+"@otu": "otu8"
+},
+"node18": {},
+"node19": {
+"@otu": "otu9"
+},
+"node2": {
+"@otu": "otu1"
+},
+"node20": {},
+"node21": {
+"@otu": "otu10"
+},
+"node22": {
+"@otu": "otu11"
+},
+"node23": {},
+"node24": {},
+"node25": {
+"@otu": "otu12"
+},
+"node26": {},
+"node27": {},
+"node28": {
+"@otu": "otu13"
+},
+"node29": {
+"@otu": "otu14"
+},
+"node3": {},
+"node30": {},
+"node31": {
+"@otu": "otu15"
+},
+"node32": {},
+"node33": {},
+"node34": {
+"@otu": "otu16"
+},
+"node35": {
+"@otu": "otu17"
+},
+"node36": {},
+"node37": {},
+"node38": {
+"@otu": "otu18"
+},
+"node39": {
+"@otu": "otu19"
+},
+"node4": {},
+"node40": {},
+"node41": {
+"@otu": "otu20"
+},
+"node42": {},
+"node43": {
+"@otu": "otu21"
+},
+"node44": {
+"@otu": "otu22"
+},
+"node45": {},
+"node46": {
+"@otu": "otu23"
+},
+"node47": {},
+"node48": {
+"@otu": "otu24"
+},
+"node49": {},
+"node5": {},
+"node50": {
+"@otu": "otu25"
+},
+"node51": {
+"@otu": "otu26"
+},
+"node6": {},
+"node7": {
+"@otu": "otu2"
+},
+"node8": {
+"@otu": "otu3"
+},
+"node9": {}
+}
+}
+}
 }
 }
 }
