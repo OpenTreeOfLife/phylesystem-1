@@ -35,13 +35,137 @@
 }
 ]
 }
+},
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.",
+"@id": "opentree-curation-webapp",
+"@name": "OpenTree curation webapp",
+"@url": "https://github.com/OpenTreeOfLife/opentree",
+"@version": "0.0.0"
 }
 ]
 },
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2026-04-02T23:24:31.749Z",
+"@description": "Aids for mapping study OTUs to OTT taxa",
+"@id": "otu-mapping-hints",
+"@passedChecks": true,
+"@preserve": true,
+"@wasAssociatedWithAgentId": "opentree-curation-webapp",
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS",
+"@humanMessageType": "NONE",
+"@severity": "INFO",
+"data": {
+"autoAcceptExactMatches": false,
+"searchContext": {
+"$": "All life"
 },
-"^ot:curatorName": "TheSensinator",
+"substitutions": {
+"substitution": [
+{
+"@active": false,
+"@valid": true,
+"new": {
+"$": ""
+},
+"old": {
+"$": ""
+}
+}
+]
+},
+"useFuzzyMatching": false
+},
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+},
+{
+"@dateCreated": "2026-04-02T23:24:31.749Z",
+"@description": "Describes external namesets merged into this study",
+"@id": "merged-namesets-metadata",
+"@passedChecks": true,
+"@preserve": true,
+"@wasAssociatedWithAgentId": "opentree-curation-webapp",
+"message": [
+{
+"@code": "MERGED_NAMESET_INFO",
+"@humanMessageType": "NONE",
+"@severity": "INFO",
+"data": {
+"namesets": {
+"nameset": []
+}
+},
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+},
+{
+"@dateCreated": "2026-04-02T23:24:31.749Z",
+"@description": "Describes supporting data files for this study",
+"@id": "supporting-files-metadata",
+"@passedChecks": true,
+"@preserve": true,
+"@wasAssociatedWithAgentId": "opentree-curation-webapp",
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO",
+"@humanMessageType": "NONE",
+"@severity": "INFO",
+"data": {
+"@movedToPermanentArchive": false,
+"files": {
+"file": [
+{
+"@filename": "PASTED.tre",
+"@size": 1334,
+"@type": "newick",
+"@url": "/curator/download/supporting_files.doc.a0bd7b73238f6ec6.5041535445442e747265.tre",
+"description": {
+"$": "Source data for tree(s) 'tree1'"
+},
+"sourceForTree": [
+{
+"$": "tree1"
+}
+]
+}
+]
+}
+},
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+},
+"^ot:candidateTreeForSynthesis": [],
+"^ot:comment": "",
+"^ot:curatorName": [
+"TheSensinator"
+],
+"^ot:dataDeposit": {
+"@href": ""
+},
+"^ot:focalClade": 1020645,
+"^ot:focalCladeOTTTaxonName": "Solanum",
 "^ot:otusElementOrder": [
 "otus1"
 ],
@@ -51,6 +175,7 @@
 },
 "^ot:studyPublicationReference": "Fumia, N., Rubinoff, D., Zenil-Ferguson, R., Khoury, C. K., Pironon, S., Gore, M. A., & Kantar, M. B. (2022). Interactions between breeding system and ploidy affect niche breadth in\n            Solanum. Royal Society Open Science, 9(1). https://doi.org/10.1098/rsos.211862\n",
 "^ot:studyYear": 2022,
+"^ot:tag": [],
 "^ot:treesElementOrder": [
 "trees1"
 ],
@@ -58,16 +183,692 @@
 "@href": "https://royalsocietypublishing.org/rsos/article/9/1/211862/96318/Interactions-between-breeding-system-and-ploidy",
 "@name": "CC-BY 4.0"
 },
+"highestMintedElementIDs": {
+"agent": 0,
+"annotation": 0,
+"edge": 60,
+"message": 0,
+"node": 61,
+"otu": 31,
+"otus": 2,
+"tree": 1,
+"trees": 2
+},
 "otusById": {
 "otus1": {
-"otuById": {}
+"otuById": {
+"otu1": {
+"^ot:originalLabel": "Solanum melongena",
+"^ot:ottId": 494843,
+"^ot:ottTaxonName": "Solanum melongena"
+},
+"otu10": {
+"^ot:originalLabel": "Solanum acroscopicum",
+"^ot:ottId": 973479,
+"^ot:ottTaxonName": "Solanum acroscopicum"
+},
+"otu11": {
+"^ot:originalLabel": "Solanum chomatophilum",
+"^ot:ottId": 447374,
+"^ot:ottTaxonName": "Solanum chomatophilum"
+},
+"otu12": {
+"^ot:originalLabel": "Solanum acroglossum",
+"^ot:ottId": 224636,
+"^ot:ottTaxonName": "Solanum acroglossum"
+},
+"otu13": {
+"^ot:originalLabel": "Solanum medians",
+"^ot:ottId": 1051307,
+"^ot:ottTaxonName": "Solanum medians"
+},
+"otu14": {
+"^ot:originalLabel": "Solanum multiinterruptum",
+"^ot:ottId": 447388,
+"^ot:ottTaxonName": "Solanum multiinterruptum"
+},
+"otu15": {
+"^ot:originalLabel": "Solanum limbaniense",
+"^ot:ottId": 894034,
+"^ot:ottTaxonName": "Solanum limbaniense"
+},
+"otu16": {
+"^ot:originalLabel": "Solanum acaule",
+"^ot:ottId": 614622,
+"^ot:ottTaxonName": "Solanum acaule"
+},
+"otu17": {
+"^ot:originalLabel": "Solanum cajamarquense",
+"^ot:ottId": 799032,
+"^ot:ottTaxonName": "Solanum cajamarquense"
+},
+"otu18": {
+"^ot:originalLabel": "Solanum kurtzianum",
+"^ot:ottId": 682709,
+"^ot:ottTaxonName": "Solanum kurtzianum"
+},
+"otu19": {
+"^ot:originalLabel": "Solanum chacoense",
+"^ot:ottId": 1020653,
+"^ot:ottTaxonName": "Solanum chacoense"
+},
+"otu2": {
+"^ot:originalLabel": "Solanum lycopersicum",
+"^ot:ottId": 378964,
+"^ot:ottTaxonName": "Solanum lycopersicum"
+},
+"otu20": {
+"^ot:originalLabel": "Solanum commersonii",
+"^ot:ottId": 1020650,
+"^ot:ottTaxonName": "Solanum commersonii"
+},
+"otu21": {
+"^ot:originalLabel": "Solanum brevicaule",
+"^ot:ottId": 311880,
+"^ot:ottTaxonName": "Solanum brevicaule"
+},
+"otu22": {
+"^ot:originalLabel": "Solanum vernei",
+"^ot:ottId": 125740,
+"^ot:ottTaxonName": "Solanum vernei"
+},
+"otu23": {
+"^ot:originalLabel": "Solanum venturii",
+"^ot:ottId": 777380,
+"^ot:ottTaxonName": "Solanum venturii"
+},
+"otu24": {
+"^ot:originalLabel": "Solanum microdontum",
+"^ot:ottId": 887245,
+"^ot:ottTaxonName": "Solanum microdontum"
+},
+"otu25": {
+"^ot:originalLabel": "Solanum demissum",
+"^ot:ottId": 66505,
+"^ot:ottTaxonName": "Solanum demissum"
+},
+"otu26": {
+"^ot:originalLabel": "Solanum verrucosum",
+"^ot:ottId": 774995,
+"^ot:ottTaxonName": "Solanum verrucosum"
+},
+"otu27": {
+"^ot:originalLabel": "Solanum hougasii",
+"^ot:ottId": 46924,
+"^ot:ottTaxonName": "Solanum hougasii"
+},
+"otu28": {
+"^ot:originalLabel": "Solanum violaceimarmoratum",
+"^ot:ottId": 774992,
+"^ot:ottTaxonName": "Solanum violaceimarmoratum"
+},
+"otu29": {
+"^ot:originalLabel": "Solanum laxissimum",
+"^ot:ottId": 887236,
+"^ot:ottTaxonName": "Solanum laxissimum"
+},
+"otu3": {
+"^ot:originalLabel": "Solanum pennellii",
+"^ot:ottId": 1069768,
+"^ot:ottTaxonName": "Solanum pennellii"
+},
+"otu30": {
+"^ot:originalLabel": "Solanum berthaultii",
+"^ot:ottId": 982762,
+"^ot:ottTaxonName": "Solanum berthaultii"
+},
+"otu31": {
+"^ot:originalLabel": "Solanum tuberosum",
+"^ot:ottId": 494835,
+"^ot:ottTaxonName": "Solanum tuberosum"
+},
+"otu4": {
+"^ot:originalLabel": "Solanum polyadenium",
+"^ot:ottId": 913165,
+"^ot:ottTaxonName": "Solanum polyadenium"
+},
+"otu5": {
+"^ot:originalLabel": "Solanum bulbocastanum",
+"^ot:ottId": 475230,
+"^ot:ottTaxonName": "Solanum bulbocastanum"
+},
+"otu6": {
+"^ot:originalLabel": "Solanum albornozii",
+"^ot:ottId": 65863,
+"^ot:ottTaxonName": "Solanum albornozii"
+},
+"otu7": {
+"^ot:originalLabel": "Solanum andreanum",
+"^ot:ottId": 46930,
+"^ot:ottTaxonName": "Solanum andreanum"
+},
+"otu8": {
+"^ot:originalLabel": "Solanum sogarandinum",
+"^ot:ottId": 1050601,
+"^ot:ottTaxonName": "Solanum sogarandinum"
+},
+"otu9": {
+"^ot:originalLabel": "Solanum paucissectum",
+"^ot:ottId": 894024,
+"^ot:ottTaxonName": "Solanum paucissectum"
+}
+}
 }
 },
 "treesById": {
 "trees1": {
 "@otus": "otus1",
-"^ot:treeElementOrder": [],
-"treeById": {}
+"^ot:treeElementOrder": [
+"tree1"
+],
+"treeById": {
+"tree1": {
+"@label": "Untitled (tree1)",
+"@xsi:type": "nex:FloatTree",
+"^ot:branchLengthDescription": "",
+"^ot:branchLengthMode": "ot:time",
+"^ot:branchLengthTimeUnit": "Myr",
+"^ot:curatedType": "Bayesian inference ",
+"^ot:inGroupClade": "node7",
+"^ot:nodeLabelMode": "",
+"^ot:nodeLabelTimeUnit": "",
+"^ot:outGroupEdge": "",
+"^ot:reasonsToExcludeFromSynthesis": [],
+"^ot:rootNodeId": "node1",
+"^ot:specifiedRoot": "node1",
+"^ot:tag": [],
+"^ot:unrootedTree": false,
+"edgeBySourceId": {
+"node1": {
+"edge1": {
+"@length": 13.89116,
+"@source": "node1",
+"@target": "node2"
+},
+"edge2": {
+"@length": 5.80763,
+"@source": "node1",
+"@target": "node3"
+}
+},
+"node11": {
+"edge11": {
+"@length": 0.59169,
+"@source": "node11",
+"@target": "node12"
+},
+"edge24": {
+"@length": 1.24477,
+"@source": "node11",
+"@target": "node25"
+}
+},
+"node12": {
+"edge12": {
+"@length": 1.48543,
+"@source": "node12",
+"@target": "node13"
+},
+"edge15": {
+"@length": 1.04071,
+"@source": "node12",
+"@target": "node16"
+}
+},
+"node13": {
+"edge13": {
+"@length": 2.51906,
+"@source": "node13",
+"@target": "node14"
+},
+"edge14": {
+"@length": 2.51906,
+"@source": "node13",
+"@target": "node15"
+}
+},
+"node16": {
+"edge16": {
+"@length": 0.75432,
+"@source": "node16",
+"@target": "node17"
+},
+"edge21": {
+"@length": 1.3352,
+"@source": "node16",
+"@target": "node22"
+}
+},
+"node17": {
+"edge17": {
+"@length": 0.573,
+"@source": "node17",
+"@target": "node18"
+},
+"edge20": {
+"@length": 2.20946,
+"@source": "node17",
+"@target": "node21"
+}
+},
+"node18": {
+"edge18": {
+"@length": 1.63646,
+"@source": "node18",
+"@target": "node19"
+},
+"edge19": {
+"@length": 1.63646,
+"@source": "node18",
+"@target": "node20"
+}
+},
+"node22": {
+"edge22": {
+"@length": 1.62858,
+"@source": "node22",
+"@target": "node23"
+},
+"edge23": {
+"@length": 1.62858,
+"@source": "node22",
+"@target": "node24"
+}
+},
+"node25": {
+"edge25": {
+"@length": 0.73204,
+"@source": "node25",
+"@target": "node26"
+},
+"edge34": {
+"@length": 0.99305,
+"@source": "node25",
+"@target": "node35"
+}
+},
+"node26": {
+"edge26": {
+"@length": 1.37303,
+"@source": "node26",
+"@target": "node27"
+},
+"edge31": {
+"@length": 1.64826,
+"@source": "node26",
+"@target": "node32"
+}
+},
+"node27": {
+"edge27": {
+"@length": 1.24634,
+"@source": "node27",
+"@target": "node28"
+},
+"edge28": {
+"@length": 0.41482,
+"@source": "node27",
+"@target": "node29"
+}
+},
+"node29": {
+"edge29": {
+"@length": 0.83152,
+"@source": "node29",
+"@target": "node30"
+},
+"edge30": {
+"@length": 0.83152,
+"@source": "node29",
+"@target": "node31"
+}
+},
+"node3": {
+"edge3": {
+"@length": 5.94717,
+"@source": "node3",
+"@target": "node4"
+},
+"edge6": {
+"@length": 2.29201,
+"@source": "node3",
+"@target": "node7"
+}
+},
+"node32": {
+"edge32": {
+"@length": 0.97111,
+"@source": "node32",
+"@target": "node33"
+},
+"edge33": {
+"@length": 0.97111,
+"@source": "node32",
+"@target": "node34"
+}
+},
+"node35": {
+"edge35": {
+"@length": 2.35836,
+"@source": "node35",
+"@target": "node36"
+},
+"edge36": {
+"@length": 0.12977,
+"@source": "node35",
+"@target": "node37"
+}
+},
+"node37": {
+"edge37": {
+"@length": 2.22859,
+"@source": "node37",
+"@target": "node38"
+},
+"edge38": {
+"@length": 0.29363,
+"@source": "node37",
+"@target": "node39"
+}
+},
+"node39": {
+"edge39": {
+"@length": 1.93496,
+"@source": "node39",
+"@target": "node40"
+},
+"edge40": {
+"@length": 0.09206,
+"@source": "node39",
+"@target": "node41"
+}
+},
+"node4": {
+"edge4": {
+"@length": 2.13636,
+"@source": "node4",
+"@target": "node5"
+},
+"edge5": {
+"@length": 2.13636,
+"@source": "node4",
+"@target": "node6"
+}
+},
+"node41": {
+"edge41": {
+"@length": 0.53579,
+"@source": "node41",
+"@target": "node42"
+},
+"edge48": {
+"@length": 0.20947,
+"@source": "node41",
+"@target": "node49"
+}
+},
+"node42": {
+"edge42": {
+"@length": 1.30711,
+"@source": "node42",
+"@target": "node43"
+},
+"edge43": {
+"@length": 0.30047,
+"@source": "node42",
+"@target": "node44"
+}
+},
+"node44": {
+"edge44": {
+"@length": 0.34089,
+"@source": "node44",
+"@target": "node45"
+},
+"edge47": {
+"@length": 1.00664,
+"@source": "node44",
+"@target": "node48"
+}
+},
+"node45": {
+"edge45": {
+"@length": 0.66575,
+"@source": "node45",
+"@target": "node46"
+},
+"edge46": {
+"@length": 0.66575,
+"@source": "node45",
+"@target": "node47"
+}
+},
+"node49": {
+"edge49": {
+"@length": 1.16891,
+"@source": "node49",
+"@target": "node50"
+},
+"edge54": {
+"@length": 0.12146,
+"@source": "node49",
+"@target": "node55"
+}
+},
+"node50": {
+"edge50": {
+"@length": 0.12373,
+"@source": "node50",
+"@target": "node51"
+},
+"edge53": {
+"@length": 0.46452,
+"@source": "node50",
+"@target": "node54"
+}
+},
+"node51": {
+"edge51": {
+"@length": 0.34079,
+"@source": "node51",
+"@target": "node52"
+},
+"edge52": {
+"@length": 0.34079,
+"@source": "node51",
+"@target": "node53"
+}
+},
+"node55": {
+"edge55": {
+"@length": 1.51197,
+"@source": "node55",
+"@target": "node56"
+},
+"edge56": {
+"@length": 0.31204,
+"@source": "node55",
+"@target": "node57"
+}
+},
+"node57": {
+"edge57": {
+"@length": 0.44213,
+"@source": "node57",
+"@target": "node58"
+},
+"edge60": {
+"@length": 1.19993,
+"@source": "node57",
+"@target": "node61"
+}
+},
+"node58": {
+"edge58": {
+"@length": 0.7578,
+"@source": "node58",
+"@target": "node59"
+},
+"edge59": {
+"@length": 0.7578,
+"@source": "node58",
+"@target": "node60"
+}
+},
+"node7": {
+"edge10": {
+"@length": 1.19534,
+"@source": "node7",
+"@target": "node11"
+},
+"edge7": {
+"@length": 1.85946,
+"@source": "node7",
+"@target": "node8"
+}
+},
+"node8": {
+"edge8": {
+"@length": 3.93206,
+"@source": "node8",
+"@target": "node9"
+},
+"edge9": {
+"@length": 3.93206,
+"@source": "node8",
+"@target": "node10"
+}
+}
+},
+"nodeById": {
+"node1": {
+"@root": true
+},
+"node10": {
+"@otu": "otu5"
+},
+"node11": {},
+"node12": {},
+"node13": {},
+"node14": {
+"@otu": "otu6"
+},
+"node15": {
+"@otu": "otu7"
+},
+"node16": {},
+"node17": {},
+"node18": {},
+"node19": {
+"@otu": "otu8"
+},
+"node2": {
+"@otu": "otu1"
+},
+"node20": {
+"@otu": "otu9"
+},
+"node21": {
+"@otu": "otu10"
+},
+"node22": {},
+"node23": {
+"@otu": "otu11"
+},
+"node24": {
+"@otu": "otu12"
+},
+"node25": {},
+"node26": {},
+"node27": {},
+"node28": {
+"@otu": "otu13"
+},
+"node29": {},
+"node3": {},
+"node30": {
+"@otu": "otu14"
+},
+"node31": {
+"@otu": "otu15"
+},
+"node32": {},
+"node33": {
+"@otu": "otu16"
+},
+"node34": {
+"@otu": "otu17"
+},
+"node35": {},
+"node36": {
+"@otu": "otu18"
+},
+"node37": {},
+"node38": {
+"@otu": "otu19"
+},
+"node39": {},
+"node4": {},
+"node40": {
+"@otu": "otu20"
+},
+"node41": {},
+"node42": {},
+"node43": {
+"@otu": "otu21"
+},
+"node44": {},
+"node45": {},
+"node46": {
+"@otu": "otu22"
+},
+"node47": {
+"@otu": "otu23"
+},
+"node48": {
+"@otu": "otu24"
+},
+"node49": {},
+"node5": {
+"@otu": "otu2"
+},
+"node50": {},
+"node51": {},
+"node52": {
+"@otu": "otu25"
+},
+"node53": {
+"@otu": "otu26"
+},
+"node54": {
+"@otu": "otu27"
+},
+"node55": {},
+"node56": {
+"@otu": "otu28"
+},
+"node57": {},
+"node58": {},
+"node59": {
+"@otu": "otu29"
+},
+"node6": {
+"@otu": "otu3"
+},
+"node60": {
+"@otu": "otu30"
+},
+"node61": {
+"@otu": "otu31"
+},
+"node7": {},
+"node8": {},
+"node9": {
+"@otu": "otu4"
+}
+}
+}
+}
 }
 }
 }
