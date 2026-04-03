@@ -35,13 +35,137 @@
 }
 ]
 }
+},
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.",
+"@id": "opentree-curation-webapp",
+"@name": "OpenTree curation webapp",
+"@url": "https://github.com/OpenTreeOfLife/opentree",
+"@version": "0.0.0"
 }
 ]
 },
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2026-04-03T04:30:52.594Z",
+"@description": "Aids for mapping study OTUs to OTT taxa",
+"@id": "otu-mapping-hints",
+"@passedChecks": true,
+"@preserve": true,
+"@wasAssociatedWithAgentId": "opentree-curation-webapp",
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS",
+"@humanMessageType": "NONE",
+"@severity": "INFO",
+"data": {
+"autoAcceptExactMatches": false,
+"searchContext": {
+"$": "All life"
 },
-"^ot:curatorName": "TheSensinator",
+"substitutions": {
+"substitution": [
+{
+"@active": false,
+"@valid": true,
+"new": {
+"$": ""
+},
+"old": {
+"$": ""
+}
+}
+]
+},
+"useFuzzyMatching": false
+},
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+},
+{
+"@dateCreated": "2026-04-03T04:30:52.594Z",
+"@description": "Describes external namesets merged into this study",
+"@id": "merged-namesets-metadata",
+"@passedChecks": true,
+"@preserve": true,
+"@wasAssociatedWithAgentId": "opentree-curation-webapp",
+"message": [
+{
+"@code": "MERGED_NAMESET_INFO",
+"@humanMessageType": "NONE",
+"@severity": "INFO",
+"data": {
+"namesets": {
+"nameset": []
+}
+},
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+},
+{
+"@dateCreated": "2026-04-03T04:30:52.594Z",
+"@description": "Describes supporting data files for this study",
+"@id": "supporting-files-metadata",
+"@passedChecks": true,
+"@preserve": true,
+"@wasAssociatedWithAgentId": "opentree-curation-webapp",
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO",
+"@humanMessageType": "NONE",
+"@severity": "INFO",
+"data": {
+"@movedToPermanentArchive": false,
+"files": {
+"file": [
+{
+"@filename": "PASTED.tre",
+"@size": 1128,
+"@type": "newick",
+"@url": "/curator/download/supporting_files.doc.b00d4ecea1df88b0.5041535445442e747265.tre",
+"description": {
+"$": "Source data for tree(s) 'tree2'"
+},
+"sourceForTree": [
+{
+"$": "tree2"
+}
+]
+}
+]
+}
+},
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+},
+"^ot:candidateTreeForSynthesis": [],
+"^ot:comment": "",
+"^ot:curatorName": [
+"TheSensinator"
+],
+"^ot:dataDeposit": {
+"@href": ""
+},
+"^ot:focalClade": 327439,
+"^ot:focalCladeOTTTaxonName": "Gomphocerinae",
 "^ot:otusElementOrder": [
 "otus1"
 ],
@@ -51,19 +175,549 @@
 },
 "^ot:studyPublicationReference": "Hawlitschek, O., Ortiz, E. M., Noori, S., Webster, K. C., Husemann, M., & Pereira, R. J. (2022). Transcriptomic data reveals nuclear-mitochondrial discordance in Gomphocerinae grasshoppers (Insecta: Orthoptera: Acrididae). Molecular Phylogenetics and Evolution, 170, 107439. https://doi.org/10.1016/j.ympev.2022.107439\n",
 "^ot:studyYear": 2022,
+"^ot:tag": [],
 "^ot:treesElementOrder": [
 "trees1"
 ],
+"highestMintedElementIDs": {
+"agent": 0,
+"annotation": 0,
+"edge": 47,
+"message": 0,
+"node": 48,
+"otu": 26,
+"otus": 4,
+"tree": 2,
+"trees": 3
+},
 "otusById": {
 "otus1": {
-"otuById": {}
+"otuById": {
+"otu10": {
+"^ot:originalLabel": "Stenobothrus nigromaculatus",
+"^ot:ottId": 869913,
+"^ot:ottTaxonName": "Stenobothrus nigromaculatus"
+},
+"otu11": {
+"^ot:originalLabel": "Stenobothrus lineatus",
+"^ot:ottId": 228525,
+"^ot:ottTaxonName": "Stenobothrus lineatus"
+},
+"otu12": {
+"^ot:originalLabel": "Omocestus viridulus",
+"^ot:ottId": 978104,
+"^ot:ottTaxonName": "Omocestus viridulus"
+},
+"otu13": {
+"^ot:originalLabel": "Omocestus rufipes",
+"^ot:ottId": 621158,
+"^ot:ottTaxonName": "Omocestus rufipes"
+},
+"otu14": {
+"^ot:originalLabel": "Omocestus haemorrhoidalis",
+"^ot:ottId": 372079,
+"^ot:ottTaxonName": "Omocestus haemorrhoidalis"
+},
+"otu15": {
+"^ot:originalLabel": "Stauroderus scalaris",
+"^ot:ottId": 239797,
+"^ot:ottTaxonName": "Stauroderus scalaris"
+},
+"otu16": {
+"^ot:originalLabel": "Gomphocerus sibiricus",
+"^ot:ottId": 70404,
+"^ot:ottTaxonName": "Gomphocerus sibiricus"
+},
+"otu17": {
+"^ot:originalLabel": "Chorthippus brunneus SRR2051360",
+"^ot:ottId": 412685,
+"^ot:ottTaxonName": "Chorthippus brunneus"
+},
+"otu18": {
+"^ot:originalLabel": "Chorthippus rubratibialis",
+"^ot:ottId": 3498705,
+"^ot:ottTaxonName": "Chorthippus rubratibialis"
+},
+"otu19": {
+"^ot:originalLabel": "Gomphocerippus rufus",
+"^ot:ottId": 800919,
+"^ot:ottTaxonName": "Gomphocerippus rufus"
+},
+"otu20": {
+"^ot:originalLabel": "Chorthippus brunneus SRR2051350",
+"^ot:ottId": 412685,
+"^ot:ottTaxonName": "Chorthippus brunneus"
+},
+"otu21": {
+"^ot:originalLabel": "Chorthippus mollis",
+"^ot:ottId": 552806,
+"^ot:ottTaxonName": "Chorthippus mollis"
+},
+"otu22": {
+"^ot:originalLabel": "Chorthippus biguttulus",
+"^ot:ottId": 1003486,
+"^ot:ottTaxonName": "Chorthippus biguttulus"
+},
+"otu23": {
+"^ot:originalLabel": "Chorthippus apricarius",
+"^ot:ottId": 258228,
+"^ot:ottTaxonName": "Chorthippus apricarius"
+},
+"otu24": {
+"^ot:originalLabel": "Chorthippus alticola",
+"^ot:ottId": 3498673,
+"^ot:ottTaxonName": "Chorthippus alticola"
+},
+"otu25": {
+"^ot:originalLabel": "Chorthippus dorsatus",
+"^ot:ottId": 559073,
+"^ot:ottTaxonName": "Chorthippus dorsatus"
+},
+"otu26": {
+"^ot:originalLabel": "Chorthippus albomarginatus",
+"^ot:ottId": 552804,
+"^ot:ottTaxonName": "Chorthippus albomarginatus"
+},
+"otu3": {
+"^ot:originalLabel": "Locusta migratoria",
+"^ot:ottId": 178934,
+"^ot:ottTaxonName": "Locusta migratoria"
+},
+"otu4": {
+"^ot:originalLabel": "Euthystira brachyptera",
+"^ot:ottId": 978107,
+"^ot:ottTaxonName": "Euthystira brachyptera"
+},
+"otu5": {
+"^ot:originalLabel": "Euchorthippus declivus",
+"^ot:ottId": 678814,
+"^ot:ottTaxonName": "Euchorthippus declivus"
+},
+"otu6": {
+"^ot:originalLabel": "Pseudochorthippus parallelus erythropus",
+"^ot:ottId": 6521454,
+"^ot:ottTaxonName": "Pseudochorthippus parallelus erythropus"
+},
+"otu7": {
+"^ot:originalLabel": "Pseudochorthippus parallelus parallelus",
+"^ot:ottId": 6521455,
+"^ot:ottTaxonName": "Pseudochorthippus parallelus parallelus"
+},
+"otu8": {
+"^ot:originalLabel": "Pseudochorthippus montanus",
+"^ot:ottId": 7481721,
+"^ot:ottTaxonName": "Pseudochorthippus montanus"
+},
+"otu9": {
+"^ot:originalLabel": "Stenobothrus rubicundulus",
+"^ot:ottId": 99608,
+"^ot:ottTaxonName": "Stenobothrus rubicundulus"
+}
+}
 }
 },
 "treesById": {
 "trees1": {
 "@otus": "otus1",
-"^ot:treeElementOrder": [],
-"treeById": {}
+"^ot:treeElementOrder": [
+"tree2"
+],
+"treeById": {
+"tree2": {
+"@label": "Untitled (tree2)",
+"@xsi:type": "nex:FloatTree",
+"^ot:branchLengthDescription": "",
+"^ot:branchLengthMode": "ot:time",
+"^ot:branchLengthTimeUnit": "Myr",
+"^ot:curatedType": "Bayesian inference ",
+"^ot:inGroupClade": "node4",
+"^ot:nodeLabelMode": "",
+"^ot:nodeLabelTimeUnit": "",
+"^ot:outGroupEdge": "",
+"^ot:reasonsToExcludeFromSynthesis": [],
+"^ot:rootNodeId": "node2",
+"^ot:specifiedRoot": "node2",
+"^ot:tag": [],
+"^ot:unrootedTree": false,
+"edgeBySourceId": {
+"node10": {
+"edge10": {
+"@length": 0.83437,
+"@source": "node10",
+"@target": "node11"
+},
+"edge11": {
+"@length": 0.20164,
+"@source": "node10",
+"@target": "node12"
+}
+},
+"node12": {
+"edge12": {
+"@length": 0.63273,
+"@source": "node12",
+"@target": "node13"
+},
+"edge13": {
+"@length": 0.63273,
+"@source": "node12",
+"@target": "node14"
+}
+},
+"node15": {
+"edge15": {
+"@length": 5.39914,
+"@source": "node15",
+"@target": "node16"
+},
+"edge20": {
+"@length": 5.58787,
+"@source": "node15",
+"@target": "node21"
+}
+},
+"node16": {
+"edge16": {
+"@length": 0.13303,
+"@source": "node16",
+"@target": "node17"
+},
+"edge19": {
+"@length": 0.71376,
+"@source": "node16",
+"@target": "node20"
+}
+},
+"node17": {
+"edge17": {
+"@length": 0.58073,
+"@source": "node17",
+"@target": "node18"
+},
+"edge18": {
+"@length": 0.58073,
+"@source": "node17",
+"@target": "node19"
+}
+},
+"node2": {
+"edge2": {
+"@length": 36.93824,
+"@source": "node2",
+"@target": "node3"
+},
+"edge3": {
+"@length": 19.52395,
+"@source": "node2",
+"@target": "node4"
+}
+},
+"node21": {
+"edge21": {
+"@length": 0.52503,
+"@source": "node21",
+"@target": "node22"
+},
+"edge22": {
+"@length": 0.2172,
+"@source": "node21",
+"@target": "node23"
+}
+},
+"node23": {
+"edge23": {
+"@length": 0.30783,
+"@source": "node23",
+"@target": "node24"
+},
+"edge24": {
+"@length": 0.30783,
+"@source": "node23",
+"@target": "node25"
+}
+},
+"node26": {
+"edge26": {
+"@length": 1.16512,
+"@source": "node26",
+"@target": "node27"
+},
+"edge45": {
+"@length": 2.41509,
+"@source": "node26",
+"@target": "node46"
+}
+},
+"node27": {
+"edge27": {
+"@length": 3.92003,
+"@source": "node27",
+"@target": "node28"
+},
+"edge30": {
+"@length": 1.48515,
+"@source": "node27",
+"@target": "node31"
+}
+},
+"node28": {
+"edge28": {
+"@length": 1.35226,
+"@source": "node28",
+"@target": "node29"
+},
+"edge29": {
+"@length": 1.35226,
+"@source": "node28",
+"@target": "node30"
+}
+},
+"node31": {
+"edge31": {
+"@length": 2.41131,
+"@source": "node31",
+"@target": "node32"
+},
+"edge44": {
+"@length": 3.78714,
+"@source": "node31",
+"@target": "node45"
+}
+},
+"node32": {
+"edge32": {
+"@length": 0.43573,
+"@source": "node32",
+"@target": "node33"
+},
+"edge43": {
+"@length": 1.37583,
+"@source": "node32",
+"@target": "node44"
+}
+},
+"node33": {
+"edge33": {
+"@length": 0.9401,
+"@source": "node33",
+"@target": "node34"
+},
+"edge34": {
+"@length": 0.30149,
+"@source": "node33",
+"@target": "node35"
+}
+},
+"node35": {
+"edge35": {
+"@length": 0.26018,
+"@source": "node35",
+"@target": "node36"
+},
+"edge40": {
+"@length": 0.39659,
+"@source": "node35",
+"@target": "node41"
+}
+},
+"node36": {
+"edge36": {
+"@length": 0.37843,
+"@source": "node36",
+"@target": "node37"
+},
+"edge37": {
+"@length": 0.25247,
+"@source": "node36",
+"@target": "node38"
+}
+},
+"node38": {
+"edge38": {
+"@length": 0.12596,
+"@source": "node38",
+"@target": "node39"
+},
+"edge39": {
+"@length": 0.12596,
+"@source": "node38",
+"@target": "node40"
+}
+},
+"node4": {
+"edge4": {
+"@length": 4.57699,
+"@source": "node4",
+"@target": "node5"
+},
+"edge7": {
+"@length": 3.64196,
+"@source": "node4",
+"@target": "node8"
+}
+},
+"node41": {
+"edge41": {
+"@length": 0.24202,
+"@source": "node41",
+"@target": "node42"
+},
+"edge42": {
+"@length": 0.24202,
+"@source": "node41",
+"@target": "node43"
+}
+},
+"node46": {
+"edge46": {
+"@length": 4.02232,
+"@source": "node46",
+"@target": "node47"
+},
+"edge47": {
+"@length": 4.02232,
+"@source": "node46",
+"@target": "node48"
+}
+},
+"node5": {
+"edge5": {
+"@length": 12.8373,
+"@source": "node5",
+"@target": "node6"
+},
+"edge6": {
+"@length": 12.8373,
+"@source": "node5",
+"@target": "node7"
+}
+},
+"node8": {
+"edge25": {
+"@length": 7.33492,
+"@source": "node8",
+"@target": "node26"
+},
+"edge8": {
+"@length": 5.53798,
+"@source": "node8",
+"@target": "node9"
+}
+},
+"node9": {
+"edge14": {
+"@length": 2.12145,
+"@source": "node9",
+"@target": "node15"
+},
+"edge9": {
+"@length": 7.39998,
+"@source": "node9",
+"@target": "node10"
+}
+}
+},
+"nodeById": {
+"node10": {},
+"node11": {
+"@otu": "otu6"
+},
+"node12": {},
+"node13": {
+"@otu": "otu7"
+},
+"node14": {
+"@otu": "otu8"
+},
+"node15": {},
+"node16": {},
+"node17": {},
+"node18": {
+"@otu": "otu9"
+},
+"node19": {
+"@otu": "otu10"
+},
+"node2": {
+"@root": true
+},
+"node20": {
+"@otu": "otu11"
+},
+"node21": {},
+"node22": {
+"@otu": "otu12"
+},
+"node23": {},
+"node24": {
+"@otu": "otu13"
+},
+"node25": {
+"@otu": "otu14"
+},
+"node26": {},
+"node27": {},
+"node28": {},
+"node29": {
+"@otu": "otu15"
+},
+"node3": {
+"@otu": "otu3"
+},
+"node30": {
+"@otu": "otu16"
+},
+"node31": {},
+"node32": {},
+"node33": {},
+"node34": {
+"@otu": "otu17"
+},
+"node35": {},
+"node36": {},
+"node37": {
+"@otu": "otu18"
+},
+"node38": {},
+"node39": {
+"@otu": "otu19"
+},
+"node4": {},
+"node40": {
+"@otu": "otu20"
+},
+"node41": {},
+"node42": {
+"@otu": "otu21"
+},
+"node43": {
+"@otu": "otu22"
+},
+"node44": {
+"@otu": "otu23"
+},
+"node45": {
+"@otu": "otu24"
+},
+"node46": {},
+"node47": {
+"@otu": "otu25"
+},
+"node48": {
+"@otu": "otu26"
+},
+"node5": {},
+"node6": {
+"@otu": "otu4"
+},
+"node7": {
+"@otu": "otu5"
+},
+"node8": {},
+"node9": {}
+}
+}
+}
 }
 }
 }
