@@ -35,13 +35,146 @@
 }
 ]
 }
+},
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.",
+"@id": "opentree-curation-webapp",
+"@name": "OpenTree curation webapp",
+"@url": "https://github.com/OpenTreeOfLife/opentree",
+"@version": "0.0.0"
 }
 ]
 },
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2026-07-19T16:45:18.503Z",
+"@description": "Aids for mapping study OTUs to OTT taxa",
+"@id": "otu-mapping-hints",
+"@passedChecks": true,
+"@preserve": true,
+"@wasAssociatedWithAgentId": "opentree-curation-webapp",
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS",
+"@humanMessageType": "NONE",
+"@severity": "INFO",
+"data": {
+"autoAcceptExactMatches": false,
+"searchContext": {
+"$": "All life"
 },
-"^ot:curatorName": "Lanny Huynh",
+"substitutions": {
+"substitution": [
+{
+"@active": false,
+"@valid": true,
+"new": {
+"$": ""
+},
+"old": {
+"$": ""
+}
+}
+]
+},
+"useFuzzyMatching": false
+},
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+},
+{
+"@dateCreated": "2026-07-19T16:45:18.503Z",
+"@description": "Describes external namesets merged into this study",
+"@id": "merged-namesets-metadata",
+"@passedChecks": true,
+"@preserve": true,
+"@wasAssociatedWithAgentId": "opentree-curation-webapp",
+"message": [
+{
+"@code": "MERGED_NAMESET_INFO",
+"@humanMessageType": "NONE",
+"@severity": "INFO",
+"data": {
+"namesets": {
+"nameset": []
+}
+},
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+},
+{
+"@dateCreated": "2026-07-19T16:45:18.503Z",
+"@description": "Describes supporting data files for this study",
+"@id": "supporting-files-metadata",
+"@passedChecks": true,
+"@preserve": true,
+"@wasAssociatedWithAgentId": "opentree-curation-webapp",
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO",
+"@humanMessageType": "NONE",
+"@severity": "INFO",
+"data": {
+"@movedToPermanentArchive": false,
+"files": {
+"file": [
+{
+"@filename": "AustinEuastacus.nex",
+"@size": 2757,
+"@type": "",
+"@url": "/curator/supporting_files/download/supporting_files.doc.914528441ba86ac4.41757374696e4575617374616375732e6e6578.nex",
+"description": {
+"$": ""
+},
+"sourceForTree": []
+},
+{
+"@filename": "AustinEuastacus.tre",
+"@size": 429,
+"@type": "nexus",
+"@url": "/curator/download/supporting_files.doc.8092b22ca447aa1d.41757374696e4575617374616375732e747265.tre",
+"description": {
+"$": "Source data for tree(s) 'tree5'"
+},
+"sourceForTree": [
+{
+"$": "tree5"
+}
+]
+}
+]
+}
+},
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+},
+"^ot:candidateTreeForSynthesis": [],
+"^ot:comment": "",
+"^ot:curatorName": [
+"Lanny Huynh"
+],
+"^ot:dataDeposit": {
+"@href": ""
+},
+"^ot:focalCladeOTTTaxonName": "",
 "^ot:otusElementOrder": [
 "otus1"
 ],
@@ -51,6 +184,7 @@
 },
 "^ot:studyPublicationReference": "Austin, C. M., Ahyong, S. T., Miller, A., Raadik, T. A., Lintermans, M., McCormack, R., Zukowski, S., Hammer, M. P., Grandjean, F., Gilligan, D. M., Beitzel, M., & Whiterod, N. S. (2026). A Prickly Problem: Genome Skimming Reveals Varying Levels of Phylogenetic Diversity in the Freshwater Crayfish\n                    <scp>\n                      <i>Euastacus armatus</i>\n                    </scp>\n                    Complex (Parastacidae) With Implications for Taxonomy and Conservation. Ecology and Evolution, 16(4). Portico. https://doi.org/10.1002/ece3.73428\n",
 "^ot:studyYear": 2026,
+"^ot:tag": [],
 "^ot:treesElementOrder": [
 "trees1"
 ],
@@ -58,16 +192,118 @@
 "@href": "https://creativecommons.org/licenses/list.en#licenses-40",
 "@name": "CC BY 4.0"
 },
+"highestMintedElementIDs": {
+"agent": 0,
+"annotation": 0,
+"edge": 10,
+"message": 0,
+"node": 11,
+"otu": 12,
+"otus": 10,
+"tree": 5,
+"trees": 6
+},
 "otusById": {
 "otus1": {
-"otuById": {}
+"otuById": {
+"otu10": {
+"^ot:originalLabel": "Euastacus bispinosus",
+"^ot:ottId": 834397,
+"^ot:ottTaxonName": "Euastacus bispinosus"
+},
+"otu11": {
+"^ot:originalLabel": "Euastacus armatus",
+"^ot:ottId": 872798,
+"^ot:ottTaxonName": "Euastacus armatus"
+},
+"otu12": {
+"^ot:originalLabel": "Euastacus spinifer",
+"^ot:ottId": 27321,
+"^ot:ottTaxonName": "Euastacus spinifer"
+},
+"otu9": {
+"^ot:originalLabel": "Euastacus yarraensis",
+"^ot:ottId": 872789,
+"^ot:ottTaxonName": "Euastacus yarraensis"
+}
+}
 }
 },
 "treesById": {
 "trees1": {
 "@otus": "otus1",
-"^ot:treeElementOrder": [],
-"treeById": {}
+"^ot:treeElementOrder": [
+"tree5"
+],
+"treeById": {
+"tree5": {
+"@label": "Default Symmetrical Tree+",
+"@xsi:type": "nex:FloatTree",
+"^ot:branchLengthDescription": "",
+"^ot:branchLengthMode": "ot:undefined",
+"^ot:curatedType": "Maximum likelihood ",
+"^ot:inGroupClade": "node6",
+"^ot:nodeLabelMode": "",
+"^ot:nodeLabelTimeUnit": "",
+"^ot:outGroupEdge": "",
+"^ot:reasonsToExcludeFromSynthesis": [],
+"^ot:rootNodeId": "node5",
+"^ot:specifiedRoot": "node5",
+"^ot:tag": [],
+"^ot:unrootedTree": false,
+"edgeBySourceId": {
+"node5": {
+"edge10": {
+"@source": "node5",
+"@target": "node11"
+},
+"edge5": {
+"@source": "node5",
+"@target": "node6"
+}
+},
+"node6": {
+"edge6": {
+"@source": "node6",
+"@target": "node7"
+},
+"edge9": {
+"@source": "node6",
+"@target": "node10"
+}
+},
+"node7": {
+"edge7": {
+"@source": "node7",
+"@target": "node8"
+},
+"edge8": {
+"@source": "node7",
+"@target": "node9"
+}
+}
+},
+"nodeById": {
+"node10": {
+"@otu": "otu11"
+},
+"node11": {
+"@otu": "otu12"
+},
+"node5": {
+"@root": true
+},
+"node6": {},
+"node7": {},
+"node8": {
+"@otu": "otu9"
+},
+"node9": {
+"@otu": "otu10"
+}
+}
+}
+}
 }
 }
 }
