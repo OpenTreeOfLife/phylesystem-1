@@ -62,23 +62,23 @@
 "data": {
 "autoAcceptExactMatches": false,
 "searchContext": {
-"$": "All life"
+"$": "Birds"
 },
 "substitutions": {
 "substitution": [
 {
-"@active": false,
+"@active": true,
 "@valid": true,
 "new": {
-"$": ""
+"$": "$1"
 },
 "old": {
-"$": ""
+"$": "^(\\S*\\s+\\S*).*"
 }
 }
 ]
 },
-"useFuzzyMatching": false
+"useFuzzyMatching": true
 },
 "refersTo": {
 "@top": {
@@ -142,6 +142,20 @@
 "$": "tree1"
 }
 ]
+},
+{
+"@filename": "Andersson_2025_Cacatua_subspecies.nwk",
+"@size": 275,
+"@type": "newick",
+"@url": "/curator/download/supporting_files.doc.80230e9aede8bccd.416e64657273736f6e5f323032355f436163617475615f737562737065636965732e6e776b.nwk",
+"description": {
+"$": "Source data for tree(s) 'tree4'"
+},
+"sourceForTree": [
+{
+"$": "tree4"
+}
+]
 }
 ]
 }
@@ -182,13 +196,13 @@
 "highestMintedElementIDs": {
 "agent": 0,
 "annotation": 0,
-"edge": 6,
+"edge": 24,
 "message": 0,
-"node": 7,
-"otu": 4,
-"otus": 2,
-"tree": 1,
-"trees": 2
+"node": 26,
+"otu": 17,
+"otus": 7,
+"tree": 4,
+"trees": 5
 },
 "otusById": {
 "otus1": {
@@ -197,6 +211,31 @@
 "^ot:originalLabel": "Cacatua sanguinea",
 "^ot:ottId": 995013,
 "^ot:ottTaxonName": "Cacatua sanguinea"
+},
+"otu10": {
+"^ot:originalLabel": "Cacatua sulphurea abbotti"
+},
+"otu11": {
+"^ot:originalLabel": "Cacatua sulphurea parvula"
+},
+"otu13": {
+"^ot:originalLabel": "Cacatua sulphurea occidentalis"
+},
+"otu14": {
+"^ot:originalLabel": "Cacatua sulphurea paulandrewi"
+},
+"otu15": {
+"^ot:originalLabel": "Cacatua sulphurea sulphurea",
+"^ot:ottId": 7068760,
+"^ot:ottTaxonName": "Cacatua sulphurea sulphurea"
+},
+"otu16": {
+"^ot:originalLabel": "Cacatua sulphurea djampeana"
+},
+"otu17": {
+"^ot:originalLabel": "Cacatua galerita galerita",
+"^ot:ottId": 290349,
+"^ot:ottTaxonName": "Cacatua galerita"
 },
 "otu2": {
 "^ot:originalLabel": "Cacatua galerita",
@@ -220,7 +259,8 @@
 "trees1": {
 "@otus": "otus1",
 "^ot:treeElementOrder": [
-"tree1"
+"tree1",
+"tree4"
 ],
 "treeById": {
 "tree1": {
@@ -228,6 +268,7 @@
 "@xsi:type": "nex:FloatTree",
 "^ot:branchLengthDescription": "",
 "^ot:branchLengthMode": "ot:undefined",
+"^ot:branchLengthTimeUnit": "",
 "^ot:curatedType": "Maximum likelihood ",
 "^ot:inGroupClade": "node3",
 "^ot:nodeLabelMode": "",
@@ -288,6 +329,144 @@
 },
 "node7": {
 "@otu": "otu4"
+}
+}
+},
+"tree4": {
+"@label": "Subspecies tree based on Figure 2C",
+"@xsi:type": "nex:FloatTree",
+"^ot:branchLengthDescription": "",
+"^ot:branchLengthMode": "ot:undefined",
+"^ot:curatedType": "Maximum likelihood ",
+"^ot:inGroupClade": "node14",
+"^ot:nodeLabelMode": "",
+"^ot:nodeLabelTimeUnit": "",
+"^ot:outGroupEdge": "",
+"^ot:reasonsToExcludeFromSynthesis": [],
+"^ot:rootNodeId": "node10",
+"^ot:specifiedRoot": "node10",
+"^ot:tag": [],
+"^ot:unrootedTree": false,
+"edgeBySourceId": {
+"node10": {
+"edge12": {
+"@source": "node10",
+"@target": "node14"
+},
+"edge9": {
+"@source": "node10",
+"@target": "node11"
+}
+},
+"node11": {
+"edge10": {
+"@source": "node11",
+"@target": "node12"
+},
+"edge11": {
+"@source": "node11",
+"@target": "node13"
+}
+},
+"node14": {
+"edge13": {
+"@source": "node14",
+"@target": "node15"
+},
+"edge24": {
+"@source": "node14",
+"@target": "node26"
+}
+},
+"node15": {
+"edge14": {
+"@source": "node15",
+"@target": "node16"
+},
+"edge15": {
+"@source": "node15",
+"@target": "node17"
+}
+},
+"node17": {
+"edge16": {
+"@source": "node17",
+"@target": "node18"
+},
+"edge17": {
+"@source": "node17",
+"@target": "node19"
+}
+},
+"node19": {
+"edge18": {
+"@source": "node19",
+"@target": "node20"
+},
+"edge19": {
+"@source": "node19",
+"@target": "node21"
+}
+},
+"node21": {
+"edge20": {
+"@source": "node21",
+"@target": "node22"
+},
+"edge21": {
+"@source": "node21",
+"@target": "node23"
+}
+},
+"node23": {
+"edge22": {
+"@source": "node23",
+"@target": "node24"
+},
+"edge23": {
+"@source": "node23",
+"@target": "node25"
+}
+}
+},
+"nodeById": {
+"node10": {
+"@label": "Root",
+"@root": true
+},
+"node11": {},
+"node12": {
+"@otu": "otu1"
+},
+"node13": {
+"@otu": "otu10"
+},
+"node14": {},
+"node15": {},
+"node16": {
+"@otu": "otu11"
+},
+"node17": {},
+"node18": {
+"@otu": "otu4"
+},
+"node19": {},
+"node20": {
+"@otu": "otu13"
+},
+"node21": {},
+"node22": {
+"@otu": "otu14"
+},
+"node23": {},
+"node24": {
+"@otu": "otu15"
+},
+"node25": {
+"@otu": "otu16"
+},
+"node26": {
+"@otu": "otu17"
 }
 }
 }
