@@ -35,13 +35,137 @@
 }
 ]
 }
+},
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.",
+"@id": "opentree-curation-webapp",
+"@name": "OpenTree curation webapp",
+"@url": "https://github.com/OpenTreeOfLife/opentree",
+"@version": "0.0.0"
 }
 ]
 },
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2026-11-09T15:19:17.464Z",
+"@description": "Aids for mapping study OTUs to OTT taxa",
+"@id": "otu-mapping-hints",
+"@passedChecks": true,
+"@preserve": true,
+"@wasAssociatedWithAgentId": "opentree-curation-webapp",
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS",
+"@humanMessageType": "NONE",
+"@severity": "INFO",
+"data": {
+"autoAcceptExactMatches": false,
+"searchContext": {
+"$": "All life"
 },
-"^ot:curatorName": "Nicholas Sly",
+"substitutions": {
+"substitution": [
+{
+"@active": false,
+"@valid": true,
+"new": {
+"$": ""
+},
+"old": {
+"$": ""
+}
+}
+]
+},
+"useFuzzyMatching": false
+},
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+},
+{
+"@dateCreated": "2026-11-09T15:19:17.464Z",
+"@description": "Describes external namesets merged into this study",
+"@id": "merged-namesets-metadata",
+"@passedChecks": true,
+"@preserve": true,
+"@wasAssociatedWithAgentId": "opentree-curation-webapp",
+"message": [
+{
+"@code": "MERGED_NAMESET_INFO",
+"@humanMessageType": "NONE",
+"@severity": "INFO",
+"data": {
+"namesets": {
+"nameset": []
+}
+},
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+},
+{
+"@dateCreated": "2026-11-09T15:19:17.464Z",
+"@description": "Describes supporting data files for this study",
+"@id": "supporting-files-metadata",
+"@passedChecks": true,
+"@preserve": true,
+"@wasAssociatedWithAgentId": "opentree-curation-webapp",
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO",
+"@humanMessageType": "NONE",
+"@severity": "INFO",
+"data": {
+"@movedToPermanentArchive": false,
+"files": {
+"file": [
+{
+"@filename": "Andersson_2025_Cacatua.nwk",
+"@size": 95,
+"@type": "newick",
+"@url": "/curator/download/supporting_files.doc.8420f468b94fe4d7.416e64657273736f6e5f323032355f436163617475612e6e776b.nwk",
+"description": {
+"$": "Species topology based on Figure 2C"
+},
+"sourceForTree": [
+{
+"$": "tree1"
+}
+]
+}
+]
+}
+},
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+},
+"^ot:candidateTreeForSynthesis": [],
+"^ot:comment": "",
+"^ot:curatorName": [
+"Nicholas Sly"
+],
+"^ot:dataDeposit": {
+"@href": ""
+},
+"^ot:focalClade": 619340,
+"^ot:focalCladeOTTTaxonName": "Cacatua",
 "^ot:otusElementOrder": [
 "otus1"
 ],
@@ -49,21 +173,125 @@
 "^ot:studyPublication": {
 "@href": "https://doi.org/10.1111/mec.17616"
 },
-"^ot:studyPublicationReference": "Andersson, A. A., Sands, A. F., Reid, K., Hains, T., Momigliano, P., Lee, J. G. H., Lee, G., Rheindt, F. E., Meril\u00e4, J., & Dingle, C. (2024). Museomics Sheds Light on Evolutionary Diversity in a Critically Endangered Cockatoo Species From Wallacea. Molecular Ecology, 34(23). Portico. https://doi.org/10.1111/mec.17616\n",
+"^ot:studyPublicationReference": "Andersson, A. A., Sands, A. F., Reid, K., Hains, T., Momigliano, P., Lee, J. G. H., Lee, G., Rheindt, F. E., Meril\u00e4, J., & Dingle, C. (2025). Museomics Sheds Light on Evolutionary Diversity in a Critically Endangered Cockatoo Species From Wallacea. Molecular Ecology, 34(23). Portico. https://doi.org/10.1111/mec.17616\n",
 "^ot:studyYear": 2025,
+"^ot:tag": [],
 "^ot:treesElementOrder": [
 "trees1"
 ],
+"highestMintedElementIDs": {
+"agent": 0,
+"annotation": 0,
+"edge": 6,
+"message": 0,
+"node": 7,
+"otu": 4,
+"otus": 2,
+"tree": 1,
+"trees": 2
+},
 "otusById": {
 "otus1": {
-"otuById": {}
+"otuById": {
+"otu1": {
+"^ot:originalLabel": "Cacatua sanguinea",
+"^ot:ottId": 995013,
+"^ot:ottTaxonName": "Cacatua sanguinea"
+},
+"otu2": {
+"^ot:originalLabel": "Cacatua galerita",
+"^ot:ottId": 290349,
+"^ot:ottTaxonName": "Cacatua galerita"
+},
+"otu3": {
+"^ot:originalLabel": "Cacatua sulphurea",
+"^ot:ottId": 290348,
+"^ot:ottTaxonName": "Cacatua sulphurea"
+},
+"otu4": {
+"^ot:originalLabel": "Cacatua citrinocristata",
+"^ot:ottId": 6520846,
+"^ot:ottTaxonName": "Cacatua citrinocristata"
+}
+}
 }
 },
 "treesById": {
 "trees1": {
 "@otus": "otus1",
-"^ot:treeElementOrder": [],
-"treeById": {}
+"^ot:treeElementOrder": [
+"tree1"
+],
+"treeById": {
+"tree1": {
+"@label": "Species tree topology based on Figure 2C",
+"@xsi:type": "nex:FloatTree",
+"^ot:branchLengthDescription": "",
+"^ot:branchLengthMode": "ot:undefined",
+"^ot:curatedType": "Maximum likelihood ",
+"^ot:inGroupClade": "node3",
+"^ot:nodeLabelMode": "",
+"^ot:nodeLabelTimeUnit": "",
+"^ot:outGroupEdge": "",
+"^ot:reasonsToExcludeFromSynthesis": [],
+"^ot:rootNodeId": "node1",
+"^ot:specifiedRoot": "node1",
+"^ot:tag": [],
+"^ot:unrootedTree": false,
+"edgeBySourceId": {
+"node1": {
+"edge1": {
+"@source": "node1",
+"@target": "node2"
+},
+"edge2": {
+"@source": "node1",
+"@target": "node3"
+}
+},
+"node3": {
+"edge3": {
+"@source": "node3",
+"@target": "node4"
+},
+"edge4": {
+"@source": "node3",
+"@target": "node5"
+}
+},
+"node5": {
+"edge5": {
+"@source": "node5",
+"@target": "node6"
+},
+"edge6": {
+"@source": "node5",
+"@target": "node7"
+}
+}
+},
+"nodeById": {
+"node1": {
+"@label": "Root",
+"@root": true
+},
+"node2": {
+"@otu": "otu1"
+},
+"node3": {},
+"node4": {
+"@otu": "otu2"
+},
+"node5": {},
+"node6": {
+"@otu": "otu3"
+},
+"node7": {
+"@otu": "otu4"
+}
+}
+}
+}
 }
 }
 }
