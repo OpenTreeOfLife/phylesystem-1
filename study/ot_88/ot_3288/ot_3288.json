@@ -35,13 +35,151 @@
 }
 ]
 }
+},
+{
+"@description": "Web-based interface for submitting, editing, and reviewing studies in the Open Tree of Life project.",
+"@id": "opentree-curation-webapp",
+"@name": "OpenTree curation webapp",
+"@url": "https://github.com/OpenTreeOfLife/opentree",
+"@version": "0.0.0"
 }
 ]
 },
 "^ot:annotationEvents": {
-"annotation": []
+"annotation": [
+{
+"@dateCreated": "2026-11-11T13:22:10.162Z",
+"@description": "Aids for mapping study OTUs to OTT taxa",
+"@id": "otu-mapping-hints",
+"@passedChecks": true,
+"@preserve": true,
+"@wasAssociatedWithAgentId": "opentree-curation-webapp",
+"message": [
+{
+"@code": "OTU_MAPPING_HINTS",
+"@humanMessageType": "NONE",
+"@severity": "INFO",
+"data": {
+"autoAcceptExactMatches": true,
+"searchContext": {
+"$": "Insects"
 },
-"^ot:curatorName": "jdduke24",
+"substitutions": {
+"substitution": [
+{
+"@active": true,
+"@valid": true,
+"new": {
+"$": "$1"
+},
+"old": {
+"$": "[A-Z]+[0-9]+ [A-Z][a-z]+ (.*)"
+}
+}
+]
+},
+"useFuzzyMatching": true
+},
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+},
+{
+"@dateCreated": "2026-11-11T13:22:10.162Z",
+"@description": "Describes external namesets merged into this study",
+"@id": "merged-namesets-metadata",
+"@passedChecks": true,
+"@preserve": true,
+"@wasAssociatedWithAgentId": "opentree-curation-webapp",
+"message": [
+{
+"@code": "MERGED_NAMESET_INFO",
+"@humanMessageType": "NONE",
+"@severity": "INFO",
+"data": {
+"namesets": {
+"nameset": []
+}
+},
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+},
+{
+"@dateCreated": "2026-11-11T13:22:10.162Z",
+"@description": "Describes supporting data files for this study",
+"@id": "supporting-files-metadata",
+"@passedChecks": true,
+"@preserve": true,
+"@wasAssociatedWithAgentId": "opentree-curation-webapp",
+"message": [
+{
+"@code": "SUPPORTING_FILE_INFO",
+"@humanMessageType": "NONE",
+"@severity": "INFO",
+"data": {
+"@movedToPermanentArchive": false,
+"files": {
+"file": [
+{
+"@filename": "FigTree.tre",
+"@size": 5834,
+"@type": "nexus",
+"@url": "/curator/download/supporting_files.doc.813432aa0f7f58f8.466967547265652e747265.tre",
+"description": {
+"$": "Source data for tree(s) 'tree1'"
+},
+"sourceForTree": [
+{
+"$": "tree1"
+}
+]
+},
+{
+"@filename": "myFigTree.tre",
+"@size": 5993,
+"@type": "nexus",
+"@url": "/curator/download/supporting_files.doc.b8535dd3acb43d27.6d79466967547265652e747265.tre",
+"description": {
+"$": "Source data for tree(s) 'tree2'"
+},
+"sourceForTree": [
+{
+"$": "tree2"
+}
+]
+}
+]
+}
+},
+"refersTo": {
+"@top": {
+"$": "meta"
+}
+}
+}
+]
+}
+]
+},
+"^ot:candidateTreeForSynthesis": [],
+"^ot:comment": "",
+"^ot:curatorName": [
+"jdduke24"
+],
+"^ot:dataDeposit": {
+"@href": "https://doi.org/10.5061/dryad.4f4qrfjtf"
+},
+"^ot:focalClade": 1000160,
+"^ot:focalCladeOTTTaxonName": "Orthetrum",
 "^ot:otusElementOrder": [
 "otus1"
 ],
@@ -51,6 +189,7 @@
 },
 "^ot:studyPublicationReference": "Onsongo, V., Abbott, J. C., Bybee, S. M., Dijkstra, K.-D. B., Frandsen, P. B., Goodman, A., Guralnick, R., Kalkman, V. J., Kohli, M., Newton, L., Prendini, L., Raxworthy, C. J., & Ware, J. (2026). Evolution and biogeography of the widespread dragonfly genus\n                    <i>Orthetrum</i>\n                    (\n                    <scp>Odonata: Anisoptera: Libellulidae</scp>\n                    ): Massive dispersal in the tertiary. Systematic Entomology, 51(3). Portico. https://doi.org/10.1111/syen.70066\n",
 "^ot:studyYear": 2026,
+"^ot:tag": [],
 "^ot:treesElementOrder": [
 "trees1"
 ],
@@ -58,16 +197,1253 @@
 "@href": "",
 "@name": ""
 },
+"highestMintedElementIDs": {
+"agent": 0,
+"annotation": 0,
+"edge": 228,
+"message": 0,
+"node": 230,
+"otu": 116,
+"otus": 3,
+"tree": 2,
+"trees": 3
+},
 "otusById": {
 "otus1": {
-"otuById": {}
+"otuById": {
+"otu1": {
+"^ot:originalLabel": "GEODE7708 Libellulidae Plathemis subornata",
+"^ot:ottId": 874628,
+"^ot:ottTaxonName": "Plathemis subornata"
+},
+"otu10": {
+"^ot:originalLabel": "GEODE17795 Libellulidae Orthetrum albistylum",
+"^ot:ottId": 196927,
+"^ot:ottTaxonName": "Orthetrum albistylum"
+},
+"otu11": {
+"^ot:originalLabel": "RMNH4007598690 Libellulidae Orthetrum caledonicum",
+"^ot:ottId": 3010537,
+"^ot:ottTaxonName": "Orthetrum caledonicum"
+},
+"otu12": {
+"^ot:originalLabel": "GEODE17798 Libellulidae Orthetrum balteatum",
+"^ot:ottId": 3010555,
+"^ot:ottTaxonName": "Orthetrum balteatum"
+},
+"otu13": {
+"^ot:originalLabel": "GEODE17799 Libellulidae Orthetrum boumiera",
+"^ot:ottId": 3010565,
+"^ot:ottTaxonName": "Orthetrum boumiera"
+},
+"otu14": {
+"^ot:originalLabel": "RMNH4003826877 Libellulidae Orthetrum trinacria",
+"^ot:ottId": 302499,
+"^ot:ottTaxonName": "Orthetrum trinacria"
+},
+"otu15": {
+"^ot:originalLabel": "RMNH4002184320 Libellulidae Orthetrum sabina",
+"^ot:ottId": 291410,
+"^ot:ottTaxonName": "Orthetrum sabina"
+},
+"otu16": {
+"^ot:originalLabel": "RMNH4003821918 Libellulidae Orthetrum serapia",
+"^ot:ottId": 3010544,
+"^ot:ottTaxonName": "Orthetrum serapia"
+},
+"otu17": {
+"^ot:originalLabel": "RMNH4003827078 Libellulidae Orthetrum brunneum",
+"^ot:ottId": 619690,
+"^ot:ottTaxonName": "Orthetrum brunneum"
+},
+"otu18": {
+"^ot:originalLabel": "RMNH25925819 Libellulidae Orthetrum glaucum",
+"^ot:ottId": 495376,
+"^ot:ottTaxonName": "Orthetrum glaucum"
+},
+"otu19": {
+"^ot:originalLabel": "RMNH4002187961 Libellulidae Orthetrum borneense",
+"^ot:ottId": 3010572,
+"^ot:ottTaxonName": "Orthetrum borneense"
+},
+"otu2": {
+"^ot:originalLabel": "GEODE7735 Libellulidae Ladona julia",
+"^ot:ottId": 691833,
+"^ot:ottTaxonName": "Ladona julia"
+},
+"otu20": {
+"^ot:originalLabel": "RMNH4000477516 Libellulidae Orthetrum melania",
+"^ot:ottId": 492471,
+"^ot:ottTaxonName": "Orthetrum melania"
+},
+"otu21": {
+"^ot:originalLabel": "RMNH4000479287 Libellulidae Orthetrum triangulare",
+"^ot:ottId": 205206,
+"^ot:ottTaxonName": "Orthetrum triangulare"
+},
+"otu22": {
+"^ot:originalLabel": "RMNH25925934 Libellulidae Orthetrum testaceum",
+"^ot:ottId": 3010568,
+"^ot:ottTaxonName": "Orthetrum testaceum"
+},
+"otu23": {
+"^ot:originalLabel": "RMNH25925866 Libellulidae Orthetrum chrysis",
+"^ot:ottId": 14798,
+"^ot:ottTaxonName": "Orthetrum chrysis"
+},
+"otu24": {
+"^ot:originalLabel": "RMNH4002184305 Libellulidae Orthetrum pruinosum",
+"^ot:ottId": 93203,
+"^ot:ottTaxonName": "Orthetrum pruinosum"
+},
+"otu25": {
+"^ot:originalLabel": "RMNH30231291 Libellulidae Orthetrum villosovittatum",
+"^ot:ottId": 3010549,
+"^ot:ottTaxonName": "Orthetrum villosovittatum"
+},
+"otu26": {
+"^ot:originalLabel": "RMNH4007598695 Libellulidae Orthetrum migratum",
+"^ot:ottId": 3010540,
+"^ot:ottTaxonName": "Orthetrum migratum"
+},
+"otu27": {
+"^ot:originalLabel": "RMNH4012544497 Libellulidae Orthetrum ransonnetii",
+"^ot:ottId": 3010562,
+"^ot:ottTaxonName": "Orthetrum ransonnetii"
+},
+"otu28": {
+"^ot:originalLabel": "RMNH30230382 Libellulidae Orthetrum stemmale",
+"^ot:ottId": 3010557,
+"^ot:ottTaxonName": "Orthetrum stemmale"
+},
+"otu29": {
+"^ot:originalLabel": "RMNH30232604 Libellulidae Orthetrum brachiale",
+"^ot:ottId": 862251,
+"^ot:ottTaxonName": "Orthetrum brachiale"
+},
+"otu3": {
+"^ot:originalLabel": "RMNH30232917 Libellulidae Nesciothemis minor",
+"^ot:ottId": 1015727,
+"^ot:ottTaxonName": "Nesciothemis minor"
+},
+"otu30": {
+"^ot:originalLabel": "GEODE7806 Libellulidae Orthetrum julia",
+"^ot:ottId": 14796,
+"^ot:ottTaxonName": "Orthetrum julia"
+},
+"otu31": {
+"^ot:originalLabel": "RMNH30232652 Libellulidae Orthetrum guineense",
+"^ot:ottId": 3010569,
+"^ot:ottTaxonName": "Orthetrum guineense"
+},
+"otu32": {
+"^ot:originalLabel": "RMNH4002191015 Libellulidae Orthetrum julia",
+"^ot:ottId": 14796,
+"^ot:ottTaxonName": "Orthetrum julia"
+},
+"otu33": {
+"^ot:originalLabel": "RMNH4010128270 Libellulidae Orthetrum julia"
+},
+"otu34": {
+"^ot:originalLabel": "RMNH4002191006 Libellulidae Orthetrum microstigma",
+"^ot:ottId": 3010558,
+"^ot:ottTaxonName": "Orthetrum microstigma"
+},
+"otu35": {
+"^ot:originalLabel": "RMNH4003827054 Libellulidae Orthetrum monardi",
+"^ot:ottId": 3010553,
+"^ot:ottTaxonName": "Orthetrum monardi"
+},
+"otu36": {
+"^ot:originalLabel": "RMNH30232625 Libellulidae Orthetrum chrysostigma",
+"^ot:ottId": 302494,
+"^ot:ottTaxonName": "Orthetrum chrysostigma"
+},
+"otu37": {
+"^ot:originalLabel": "RMNH4003827022 Libellulidae Orthetrum caffrum",
+"^ot:ottId": 3010539,
+"^ot:ottTaxonName": "Orthetrum caffrum"
+},
+"otu38": {
+"^ot:originalLabel": "RMNH4003832009 Libellulidae Orthetrum camerunense",
+"^ot:ottId": 3010541,
+"^ot:ottTaxonName": "Orthetrum camerunense"
+},
+"otu39": {
+"^ot:originalLabel": "GEODE17797 Libellulidae Orthetrum azureum",
+"^ot:ottId": 3010547,
+"^ot:ottTaxonName": "Orthetrum azureum"
+},
+"otu4": {
+"^ot:originalLabel": "RMNH INS 502121 Libellulidae Oxythemis phoenicosceles",
+"^ot:ottId": 1094258,
+"^ot:ottTaxonName": "Oxythemis phoenicosceles"
+},
+"otu40": {
+"^ot:originalLabel": "RMNH25925744 Libellulidae Orthetrum luzonicum",
+"^ot:ottId": 611080,
+"^ot:ottTaxonName": "Orthetrum luzonicum"
+},
+"otu41": {
+"^ot:originalLabel": "RMNH30231633 Libellulidae Orthetrum austeni",
+"^ot:ottId": 3010535,
+"^ot:ottTaxonName": "Orthetrum austeni"
+},
+"otu42": {
+"^ot:originalLabel": "GEODE17796 Libellulidae Orthetrum angustiventre",
+"^ot:ottId": 3010576,
+"^ot:ottTaxonName": "Orthetrum angustiventre"
+},
+"otu43": {
+"^ot:originalLabel": "RMNH4002191069 Libellulidae Orthetrum angustiventre"
+},
+"otu44": {
+"^ot:originalLabel": "RMNH25925384 Libellulidae Orthetrum abbotti",
+"^ot:ottId": 89656,
+"^ot:ottTaxonName": "Orthetrum abbotti"
+},
+"otu45": {
+"^ot:originalLabel": "RMNH30232973 Libellulidae Orthetrum latihami",
+"^ot:ottId": 3010536,
+"^ot:ottTaxonName": "Orthetrum latihami"
+},
+"otu46": {
+"^ot:originalLabel": "RMNH4002191072 Libellulidae Orthetrum macrostigma",
+"^ot:ottId": 3010556,
+"^ot:ottTaxonName": "Orthetrum macrostigma"
+},
+"otu47": {
+"^ot:originalLabel": "RMNH4002191001 Libellulidae Orthetrum icteromelas",
+"^ot:ottId": 3010573,
+"^ot:ottTaxonName": "Orthetrum icteromelas"
+},
+"otu48": {
+"^ot:originalLabel": "RMNH30230379 Libellulidae Orthetrum africanum",
+"^ot:ottId": 3010563,
+"^ot:ottTaxonName": "Orthetrum africanum"
+},
+"otu49": {
+"^ot:originalLabel": "RMNH4002184604 Libellulidae Orthetrum sagitta",
+"^ot:ottId": 3010552,
+"^ot:ottTaxonName": "Orthetrum sagitta"
+},
+"otu5": {
+"^ot:originalLabel": "RMNH4000477573 Libellulidae Nesciothemis nigeriensis",
+"^ot:ottId": 3010655,
+"^ot:ottTaxonName": "Nesciothemis nigeriensis"
+},
+"otu50": {
+"^ot:originalLabel": "RMNH4010124851 Libellulidae Orthetrum machadoi",
+"^ot:ottId": 3010551,
+"^ot:ottTaxonName": "Orthetrum machadoi"
+},
+"otu51": {
+"^ot:originalLabel": "RMNH4010126258 Libellulidae Orthetrum rubens",
+"^ot:ottId": 3010543,
+"^ot:ottTaxonName": "Orthetrum rubens"
+},
+"otu52": {
+"^ot:originalLabel": "RMNH4002191007 Libellulidae Orthetrum robustum",
+"^ot:ottId": 3010534,
+"^ot:ottTaxonName": "Orthetrum robustum"
+},
+"otu53": {
+"^ot:originalLabel": "RMNH30231307 Libellulidae Orthetrum hintzi",
+"^ot:ottId": 3010574,
+"^ot:ottTaxonName": "Orthetrum hintzi"
+},
+"otu54": {
+"^ot:originalLabel": "RMNH4002184651 Libellulidae Orthetrum agaricum",
+"^ot:ottId": 6322579,
+"^ot:ottTaxonName": "Orthetrum agaricum"
+},
+"otu55": {
+"^ot:originalLabel": "RMNH4010122655 Libellulidae Orthetrum saegeri",
+"^ot:ottId": 3010566,
+"^ot:ottTaxonName": "Orthetrum saegeri"
+},
+"otu56": {
+"^ot:originalLabel": "RMNH4002191159 Libellulidae Orthetrum kafwi",
+"^ot:ottId": 6322580,
+"^ot:ottTaxonName": "Orthetrum kafwi"
+},
+"otu57": {
+"^ot:originalLabel": "RMNH30232692 Libellulidae Orthetrum lusinga",
+"^ot:ottId": 6322581,
+"^ot:ottTaxonName": "Orthetrum lusinga"
+},
+"otu58": {
+"^ot:originalLabel": "RMNH4002191130 Libellulidae Orthetrum umbratum",
+"^ot:ottId": 6322584,
+"^ot:ottTaxonName": "Orthetrum umbratum"
+},
+"otu6": {
+"^ot:originalLabel": "GEODE17801 Libellulidae Orthetrum japonicum",
+"^ot:ottId": 779225,
+"^ot:ottTaxonName": "Orthetrum japonicum"
+},
+"otu7": {
+"^ot:originalLabel": "GEODE19800 Libellulidae Orthetrum japonicum"
+},
+"otu8": {
+"^ot:originalLabel": "RMNH INS 504999 Libellulidae Orthetrum cancellatum",
+"^ot:ottId": 390129,
+"^ot:ottTaxonName": "Orthetrum cancellatum"
+},
+"otu9": {
+"^ot:originalLabel": "GEODE17803 Libellulidae Orthetrum poecilops",
+"^ot:ottId": 495364,
+"^ot:ottTaxonName": "Orthetrum poecilops"
+}
+}
 }
 },
 "treesById": {
 "trees1": {
 "@otus": "otus1",
-"^ot:treeElementOrder": [],
-"treeById": {}
+"^ot:treeElementOrder": [
+"tree2"
+],
+"treeById": {
+"tree2": {
+"@label": "mcmc_with_Orthetrum_calibration/RUN_4/Figtree.tre",
+"@xsi:type": "nex:FloatTree",
+"^ot:branchLengthDescription": "",
+"^ot:branchLengthMode": "ot:time",
+"^ot:branchLengthTimeUnit": "Myr",
+"^ot:curatedType": "Maximum likelihood ",
+"^ot:inGroupClade": "node126",
+"^ot:nodeLabelMode": "",
+"^ot:nodeLabelTimeUnit": "",
+"^ot:outGroupEdge": "",
+"^ot:reasonsToExcludeFromSynthesis": [],
+"^ot:rootNodeId": "node116",
+"^ot:specifiedRoot": "node116",
+"^ot:tag": [],
+"^ot:unrootedTree": false,
+"edgeBySourceId": {
+"node116": {
+"edge115": {
+"@length": 207.313,
+"@source": "node116",
+"@target": "node117"
+},
+"edge124": {
+"@length": 189.473,
+"@source": "node116",
+"@target": "node126"
+}
+},
+"node117": {
+"edge116": {
+"@length": 87.641,
+"@source": "node117",
+"@target": "node118"
+},
+"edge119": {
+"@length": 83.639,
+"@source": "node117",
+"@target": "node121"
+}
+},
+"node118": {
+"edge117": {
+"@length": 213.229,
+"@source": "node118",
+"@target": "node119"
+},
+"edge118": {
+"@length": 213.229,
+"@source": "node118",
+"@target": "node120"
+}
+},
+"node121": {
+"edge120": {
+"@length": 217.231,
+"@source": "node121",
+"@target": "node122"
+},
+"edge121": {
+"@length": 119.821,
+"@source": "node121",
+"@target": "node123"
+}
+},
+"node123": {
+"edge122": {
+"@length": 97.41,
+"@source": "node123",
+"@target": "node124"
+},
+"edge123": {
+"@length": 97.41,
+"@source": "node123",
+"@target": "node125"
+}
+},
+"node126": {
+"edge125": {
+"@length": 33.122,
+"@source": "node126",
+"@target": "node127"
+},
+"edge146": {
+"@length": 29.766,
+"@source": "node126",
+"@target": "node148"
+}
+},
+"node127": {
+"edge126": {
+"@length": 47.42,
+"@source": "node127",
+"@target": "node128"
+},
+"edge135": {
+"@length": 71.053,
+"@source": "node127",
+"@target": "node137"
+}
+},
+"node128": {
+"edge127": {
+"@length": 123.646,
+"@source": "node128",
+"@target": "node129"
+},
+"edge130": {
+"@length": 55.791,
+"@source": "node128",
+"@target": "node132"
+}
+},
+"node129": {
+"edge128": {
+"@length": 114.521,
+"@source": "node129",
+"@target": "node130"
+},
+"edge129": {
+"@length": 114.521,
+"@source": "node129",
+"@target": "node131"
+}
+},
+"node132": {
+"edge131": {
+"@length": 182.377,
+"@source": "node132",
+"@target": "node133"
+},
+"edge132": {
+"@length": 86.446,
+"@source": "node132",
+"@target": "node134"
+}
+},
+"node134": {
+"edge133": {
+"@length": 95.93,
+"@source": "node134",
+"@target": "node135"
+},
+"edge134": {
+"@length": 95.93,
+"@source": "node134",
+"@target": "node136"
+}
+},
+"node137": {
+"edge136": {
+"@length": 99.574,
+"@source": "node137",
+"@target": "node138"
+},
+"edge141": {
+"@length": 22.569,
+"@source": "node137",
+"@target": "node143"
+}
+},
+"node138": {
+"edge137": {
+"@length": 114.96,
+"@source": "node138",
+"@target": "node139"
+},
+"edge138": {
+"@length": 68.748,
+"@source": "node138",
+"@target": "node140"
+}
+},
+"node140": {
+"edge139": {
+"@length": 46.212,
+"@source": "node140",
+"@target": "node141"
+},
+"edge140": {
+"@length": 46.212,
+"@source": "node140",
+"@target": "node142"
+}
+},
+"node143": {
+"edge142": {
+"@length": 191.965,
+"@source": "node143",
+"@target": "node144"
+},
+"edge143": {
+"@length": 136.526,
+"@source": "node143",
+"@target": "node145"
+}
+},
+"node145": {
+"edge144": {
+"@length": 55.439,
+"@source": "node145",
+"@target": "node146"
+},
+"edge145": {
+"@length": 55.439,
+"@source": "node145",
+"@target": "node147"
+}
+},
+"node148": {
+"edge147": {
+"@length": 17.245,
+"@source": "node148",
+"@target": "node149"
+},
+"edge166": {
+"@length": 34.158,
+"@source": "node148",
+"@target": "node168"
+}
+},
+"node149": {
+"edge148": {
+"@length": 271.698,
+"@source": "node149",
+"@target": "node150"
+},
+"edge149": {
+"@length": 31.093,
+"@source": "node149",
+"@target": "node151"
+}
+},
+"node151": {
+"edge150": {
+"@length": 107.862,
+"@source": "node151",
+"@target": "node152"
+},
+"edge153": {
+"@length": 67.631,
+"@source": "node151",
+"@target": "node155"
+}
+},
+"node152": {
+"edge151": {
+"@length": 132.743,
+"@source": "node152",
+"@target": "node153"
+},
+"edge152": {
+"@length": 132.743,
+"@source": "node152",
+"@target": "node154"
+}
+},
+"node155": {
+"edge154": {
+"@length": 102.576,
+"@source": "node155",
+"@target": "node156"
+},
+"edge157": {
+"@length": 36.211,
+"@source": "node155",
+"@target": "node159"
+}
+},
+"node156": {
+"edge155": {
+"@length": 70.398,
+"@source": "node156",
+"@target": "node157"
+},
+"edge156": {
+"@length": 70.398,
+"@source": "node156",
+"@target": "node158"
+}
+},
+"node159": {
+"edge158": {
+"@length": 136.763,
+"@source": "node159",
+"@target": "node160"
+},
+"edge159": {
+"@length": 31.806,
+"@source": "node159",
+"@target": "node161"
+}
+},
+"node161": {
+"edge160": {
+"@length": 104.957,
+"@source": "node161",
+"@target": "node162"
+},
+"edge161": {
+"@length": 35.047,
+"@source": "node161",
+"@target": "node163"
+}
+},
+"node163": {
+"edge162": {
+"@length": 69.91,
+"@source": "node163",
+"@target": "node164"
+},
+"edge163": {
+"@length": 20.229,
+"@source": "node163",
+"@target": "node165"
+}
+},
+"node165": {
+"edge164": {
+"@length": 49.682,
+"@source": "node165",
+"@target": "node166"
+},
+"edge165": {
+"@length": 49.682,
+"@source": "node165",
+"@target": "node167"
+}
+},
+"node168": {
+"edge167": {
+"@length": 44.538,
+"@source": "node168",
+"@target": "node169"
+},
+"edge190": {
+"@length": 21.678,
+"@source": "node168",
+"@target": "node192"
+}
+},
+"node169": {
+"edge168": {
+"@length": 210.247,
+"@source": "node169",
+"@target": "node170"
+},
+"edge169": {
+"@length": 21.798,
+"@source": "node169",
+"@target": "node171"
+}
+},
+"node171": {
+"edge170": {
+"@length": 77.84,
+"@source": "node171",
+"@target": "node172"
+},
+"edge173": {
+"@length": 28.32,
+"@source": "node171",
+"@target": "node175"
+}
+},
+"node172": {
+"edge171": {
+"@length": 110.609,
+"@source": "node172",
+"@target": "node173"
+},
+"edge172": {
+"@length": 110.609,
+"@source": "node172",
+"@target": "node174"
+}
+},
+"node175": {
+"edge174": {
+"@length": 70.488,
+"@source": "node175",
+"@target": "node176"
+},
+"edge181": {
+"@length": 16.145,
+"@source": "node175",
+"@target": "node183"
+}
+},
+"node176": {
+"edge175": {
+"@length": 46.987,
+"@source": "node176",
+"@target": "node177"
+},
+"edge178": {
+"@length": 42.723,
+"@source": "node176",
+"@target": "node180"
+}
+},
+"node177": {
+"edge176": {
+"@length": 42.654,
+"@source": "node177",
+"@target": "node178"
+},
+"edge177": {
+"@length": 42.654,
+"@source": "node177",
+"@target": "node179"
+}
+},
+"node180": {
+"edge179": {
+"@length": 46.918,
+"@source": "node180",
+"@target": "node181"
+},
+"edge180": {
+"@length": 46.918,
+"@source": "node180",
+"@target": "node182"
+}
+},
+"node183": {
+"edge182": {
+"@length": 43.58,
+"@source": "node183",
+"@target": "node184"
+},
+"edge185": {
+"@length": 28.491,
+"@source": "node183",
+"@target": "node187"
+}
+},
+"node184": {
+"edge183": {
+"@length": 100.404,
+"@source": "node184",
+"@target": "node185"
+},
+"edge184": {
+"@length": 100.404,
+"@source": "node184",
+"@target": "node186"
+}
+},
+"node187": {
+"edge186": {
+"@length": 115.493,
+"@source": "node187",
+"@target": "node188"
+},
+"edge187": {
+"@length": 62.916,
+"@source": "node187",
+"@target": "node189"
+}
+},
+"node189": {
+"edge188": {
+"@length": 52.577,
+"@source": "node189",
+"@target": "node190"
+},
+"edge189": {
+"@length": 52.577,
+"@source": "node189",
+"@target": "node191"
+}
+},
+"node192": {
+"edge191": {
+"@length": 233.107,
+"@source": "node192",
+"@target": "node193"
+},
+"edge192": {
+"@length": 33.257,
+"@source": "node192",
+"@target": "node194"
+}
+},
+"node194": {
+"edge193": {
+"@length": 199.85,
+"@source": "node194",
+"@target": "node195"
+},
+"edge194": {
+"@length": 20.383,
+"@source": "node194",
+"@target": "node196"
+}
+},
+"node196": {
+"edge195": {
+"@length": 64.609,
+"@source": "node196",
+"@target": "node197"
+},
+"edge200": {
+"@length": 14.848,
+"@source": "node196",
+"@target": "node202"
+}
+},
+"node197": {
+"edge196": {
+"@length": 114.858,
+"@source": "node197",
+"@target": "node198"
+},
+"edge197": {
+"@length": 82.606,
+"@source": "node197",
+"@target": "node199"
+}
+},
+"node199": {
+"edge198": {
+"@length": 32.252,
+"@source": "node199",
+"@target": "node200"
+},
+"edge199": {
+"@length": 32.252,
+"@source": "node199",
+"@target": "node201"
+}
+},
+"node202": {
+"edge201": {
+"@length": 164.619,
+"@source": "node202",
+"@target": "node203"
+},
+"edge202": {
+"@length": 16.232,
+"@source": "node202",
+"@target": "node204"
+}
+},
+"node204": {
+"edge203": {
+"@length": 13.789,
+"@source": "node204",
+"@target": "node205"
+},
+"edge212": {
+"@length": 14.222,
+"@source": "node204",
+"@target": "node214"
+}
+},
+"node205": {
+"edge204": {
+"@length": 37.72,
+"@source": "node205",
+"@target": "node206"
+},
+"edge207": {
+"@length": 36.953,
+"@source": "node205",
+"@target": "node209"
+}
+},
+"node206": {
+"edge205": {
+"@length": 96.879,
+"@source": "node206",
+"@target": "node207"
+},
+"edge206": {
+"@length": 96.879,
+"@source": "node206",
+"@target": "node208"
+}
+},
+"node209": {
+"edge208": {
+"@length": 97.645,
+"@source": "node209",
+"@target": "node210"
+},
+"edge209": {
+"@length": 35.31,
+"@source": "node209",
+"@target": "node211"
+}
+},
+"node211": {
+"edge210": {
+"@length": 62.336,
+"@source": "node211",
+"@target": "node212"
+},
+"edge211": {
+"@length": 62.336,
+"@source": "node211",
+"@target": "node213"
+}
+},
+"node214": {
+"edge213": {
+"@length": 38.55,
+"@source": "node214",
+"@target": "node215"
+},
+"edge216": {
+"@length": 4.664,
+"@source": "node214",
+"@target": "node218"
+}
+},
+"node215": {
+"edge214": {
+"@length": 95.615,
+"@source": "node215",
+"@target": "node216"
+},
+"edge215": {
+"@length": 95.615,
+"@source": "node215",
+"@target": "node217"
+}
+},
+"node218": {
+"edge217": {
+"@length": 129.502,
+"@source": "node218",
+"@target": "node219"
+},
+"edge218": {
+"@length": 12.929,
+"@source": "node218",
+"@target": "node220"
+}
+},
+"node220": {
+"edge219": {
+"@length": 116.572,
+"@source": "node220",
+"@target": "node221"
+},
+"edge220": {
+"@length": 45.43,
+"@source": "node220",
+"@target": "node222"
+}
+},
+"node222": {
+"edge221": {
+"@length": 7.301,
+"@source": "node222",
+"@target": "node223"
+},
+"edge224": {
+"@length": 5.403,
+"@source": "node222",
+"@target": "node226"
+}
+},
+"node223": {
+"edge222": {
+"@length": 63.842,
+"@source": "node223",
+"@target": "node224"
+},
+"edge223": {
+"@length": 63.842,
+"@source": "node223",
+"@target": "node225"
+}
+},
+"node226": {
+"edge225": {
+"@length": 65.74,
+"@source": "node226",
+"@target": "node227"
+},
+"edge226": {
+"@length": 19.884,
+"@source": "node226",
+"@target": "node228"
+}
+},
+"node228": {
+"edge227": {
+"@length": 45.856,
+"@source": "node228",
+"@target": "node229"
+},
+"edge228": {
+"@length": 45.856,
+"@source": "node228",
+"@target": "node230"
+}
+}
+},
+"nodeById": {
+"node116": {
+"@root": true
+},
+"node117": {},
+"node118": {},
+"node119": {
+"@otu": "otu1"
+},
+"node120": {
+"@otu": "otu2"
+},
+"node121": {},
+"node122": {
+"@otu": "otu3"
+},
+"node123": {},
+"node124": {
+"@otu": "otu4"
+},
+"node125": {
+"@otu": "otu5"
+},
+"node126": {},
+"node127": {},
+"node128": {},
+"node129": {},
+"node130": {
+"@otu": "otu6"
+},
+"node131": {
+"@otu": "otu7"
+},
+"node132": {},
+"node133": {
+"@otu": "otu8"
+},
+"node134": {},
+"node135": {
+"@otu": "otu9"
+},
+"node136": {
+"@otu": "otu10"
+},
+"node137": {},
+"node138": {},
+"node139": {
+"@otu": "otu11"
+},
+"node140": {},
+"node141": {
+"@otu": "otu12"
+},
+"node142": {
+"@otu": "otu13"
+},
+"node143": {},
+"node144": {
+"@otu": "otu14"
+},
+"node145": {},
+"node146": {
+"@otu": "otu15"
+},
+"node147": {
+"@otu": "otu16"
+},
+"node148": {},
+"node149": {},
+"node150": {
+"@otu": "otu17"
+},
+"node151": {},
+"node152": {},
+"node153": {
+"@otu": "otu18"
+},
+"node154": {
+"@otu": "otu19"
+},
+"node155": {},
+"node156": {},
+"node157": {
+"@otu": "otu20"
+},
+"node158": {
+"@otu": "otu21"
+},
+"node159": {},
+"node160": {
+"@otu": "otu22"
+},
+"node161": {},
+"node162": {
+"@otu": "otu23"
+},
+"node163": {},
+"node164": {
+"@otu": "otu24"
+},
+"node165": {},
+"node166": {
+"@otu": "otu25"
+},
+"node167": {
+"@otu": "otu26"
+},
+"node168": {},
+"node169": {},
+"node170": {
+"@otu": "otu27"
+},
+"node171": {},
+"node172": {},
+"node173": {
+"@otu": "otu28"
+},
+"node174": {
+"@otu": "otu29"
+},
+"node175": {},
+"node176": {},
+"node177": {},
+"node178": {
+"@otu": "otu30"
+},
+"node179": {
+"@otu": "otu31"
+},
+"node180": {},
+"node181": {
+"@otu": "otu32"
+},
+"node182": {
+"@otu": "otu33"
+},
+"node183": {},
+"node184": {},
+"node185": {
+"@otu": "otu34"
+},
+"node186": {
+"@otu": "otu35"
+},
+"node187": {},
+"node188": {
+"@otu": "otu36"
+},
+"node189": {},
+"node190": {
+"@otu": "otu37"
+},
+"node191": {
+"@otu": "otu38"
+},
+"node192": {},
+"node193": {
+"@otu": "otu39"
+},
+"node194": {},
+"node195": {
+"@otu": "otu40"
+},
+"node196": {},
+"node197": {},
+"node198": {
+"@otu": "otu41"
+},
+"node199": {},
+"node200": {
+"@otu": "otu42"
+},
+"node201": {
+"@otu": "otu43"
+},
+"node202": {},
+"node203": {
+"@otu": "otu44"
+},
+"node204": {},
+"node205": {},
+"node206": {},
+"node207": {
+"@otu": "otu45"
+},
+"node208": {
+"@otu": "otu46"
+},
+"node209": {},
+"node210": {
+"@otu": "otu47"
+},
+"node211": {},
+"node212": {
+"@otu": "otu48"
+},
+"node213": {
+"@otu": "otu49"
+},
+"node214": {},
+"node215": {},
+"node216": {
+"@otu": "otu50"
+},
+"node217": {
+"@otu": "otu51"
+},
+"node218": {},
+"node219": {
+"@otu": "otu52"
+},
+"node220": {},
+"node221": {
+"@otu": "otu53"
+},
+"node222": {},
+"node223": {},
+"node224": {
+"@otu": "otu54"
+},
+"node225": {
+"@otu": "otu55"
+},
+"node226": {},
+"node227": {
+"@otu": "otu56"
+},
+"node228": {},
+"node229": {
+"@otu": "otu57"
+},
+"node230": {
+"@otu": "otu58"
+}
+}
+}
+}
 }
 }
 }
